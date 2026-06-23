@@ -1,0 +1,106 @@
+import type { Metadata } from 'next'
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://voyageshalal.fr'
+const SITE_NAME = 'Voyages Halal'
+const DEFAULT_DESCRIPTION =
+  'Découvrez les meilleures destinations de voyage halal dans le monde. Guides, restaurants halal, mosquées et conseils pratiques pour voyager en conformité avec vos valeurs.'
+
+export function buildMetadata({
+  title,
+  description = DEFAULT_DESCRIPTION,
+  path = '',
+  image,
+  type = 'website',
+}: {
+  title: string
+  description?: string
+  path?: string
+  image?: string
+  type?: 'website' | 'article'
+}): Metadata {
+  const url = `${SITE_URL}${path}`
+  const ogImage = image || `${SITE_URL}/images/og-default.jpg`
+
+  return {
+    title: `${title} | ${SITE_NAME}`,
+    description,
+    metadataBase: new URL(SITE_URL),
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: SITE_NAME,
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      type,
+      locale: 'fr_FR',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [ogImage],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
+    },
+  }
+}
+
+export function buildDestinationSchema(destination: {
+  city: string
+  country: string
+  description: string
+  coverImage: string
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'TouristDestination',
+    name: `${destination.city}, ${destination.country}`,
+    description: destination.description,
+    image: `${SITE_URL}${destination.coverImage}`,
+    url: `${SITE_URL}/destinations/${destination.city.toLowerCase()}`,
+    touristType: 'Voyageurs musulmans',
+  }
+}
+
+export function buildArticleSchema(article: {
+  title: string
+  description: string
+  publishedAt: string
+  coverImage: string
+  slug: string
+  type: 'guide' | 'blog'
+}) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.description,
+    image: `${SITE_URL}${article.coverImage}`,
+    datePublished: article.publishedAt,
+    publisher: {
+      '@type': 'Organization',
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    url: `${SITE_URL}/${article.type}s/${article.slug}`,
+  }
+}
+
+export function buildBreadcrumbSchema(items: { name: string; url: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: `${SITE_URL}${item.url}`,
+    })),
+  }
+}
+
+export { SITE_NAME, SITE_URL, DEFAULT_DESCRIPTION }
