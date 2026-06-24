@@ -1,14 +1,14 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import Link from 'next/link'
 import { destinations, getDestinationBySlug } from '@/lib/data'
 import { buildMetadata, buildDestinationSchema, buildBreadcrumbSchema } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
-import AppCTA from '@/components/ui/AppCTA'
-import Link from 'next/link'
 
 interface Props {
   params: Promise<{ city: string }>
+  searchParams: Promise<{ tab?: string }>
 }
 
 export async function generateStaticParams() {
@@ -21,10 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!destination) return {}
 
   return buildMetadata({
-    title: `Voyage Halal à ${destination.city} — Guide Complet ${new Date().getFullYear()}`,
-    description: `Voyager halal à ${destination.city} : restaurants halal certifiés, mosquées, activités et conseils pratiques. Guide complet mis à jour ${new Date().getFullYear()}.`,
+    title: `Voyage Halal à ${destination.city} — Restaurants, Mosquées & Guide ${new Date().getFullYear()}`,
+    description: `Restaurants halal et mosquées à ${destination.city}. Guide complet pour voyager sereinement en tant que musulman.`,
     path: `/destinations/${destination.slug}`,
-    image: destination.coverImage,
     type: 'article',
   })
 }
@@ -33,21 +32,23 @@ function StarRating({ rating }: { rating: number }) {
   return (
     <div className="flex items-center gap-1">
       {Array.from({ length: 5 }).map((_, i) => (
-        <span key={i} className={i < Math.floor(rating) ? 'text-amber-400' : 'text-gray-200'}>
-          ★
-        </span>
+        <span key={i} className={i < Math.floor(rating) ? 'text-amber-400' : 'text-gray-200'}>★</span>
       ))}
-      <span className="text-sm text-gray-500 ml-1">{rating}/5</span>
+      <span className="text-xs text-gray-400 ml-1">{rating}/5</span>
     </div>
   )
 }
 
-export default async function DestinationPage({ params }: Props) {
+type Tab = 'restaurants' | 'mosques' | 'activities'
+
+export default async function DestinationPage({ params, searchParams }: Props) {
   const { city } = await params
+  const { tab = 'restaurants' } = await searchParams
   const destination = getDestinationBySlug(city)
 
   if (!destination) notFound()
 
+  const activeTab = (tab as Tab) || 'restaurants'
   const destinationSchema = buildDestinationSchema(destination)
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Accueil', url: '/' },
@@ -55,14 +56,18 @@ export default async function DestinationPage({ params }: Props) {
     { name: destination.city, url: `/destinations/${destination.slug}` },
   ])
 
+  function tabUrl(t: Tab) {
+    return `/destinations/${destination!.slug}?tab=${t}`
+  }
+
   return (
     <>
       <JsonLd data={destinationSchema} />
       <JsonLd data={breadcrumbSchema} />
 
-      {/* Hero avec vraie image */}
-      <section className="relative text-white overflow-hidden">
-        <div className="absolute inset-0">
+      <main className="min-h-screen bg-gray-50">
+        {/* Hero image */}
+        <div className="relative h-52 sm:h-64 overflow-hidden">
           <Image
             src={destination.coverImage}
             alt={`${destination.city}, ${destination.country}`}
@@ -70,190 +75,140 @@ export default async function DestinationPage({ params }: Props) {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/85 to-teal-900/75" />
-        </div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-          <nav className="flex items-center gap-2 text-sm text-emerald-300 mb-6">
-            <Link href="/" className="hover:text-white">Accueil</Link>
-            <span>/</span>
-            <Link href="/destinations" className="hover:text-white">Destinations</Link>
-            <span>/</span>
-            <span className="text-white">{destination.city}</span>
-          </nav>
-
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
-            <div>
-              <div className="flex items-center gap-3 mb-3">
-                <span className="bg-white/10 backdrop-blur-sm text-white text-sm px-3 py-1 rounded-full">
-                  {destination.country}
-                </span>
-                <span className="flex items-center gap-1 text-emerald-300 text-sm">
-                  {Array.from({ length: destination.halalScore }).map((_, i) => (
-                    <span key={i}>★</span>
-                  ))}
-                  Halal Score
-                </span>
-              </div>
-              <h1 className="text-4xl sm:text-5xl font-extrabold mb-3">
-                Voyage Halal à {destination.city}
-              </h1>
-              <p className="text-emerald-200 text-lg max-w-2xl">{destination.shortDescription}</p>
-            </div>
-
-            <div className="flex gap-4 text-center shrink-0">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4">
-                <div className="text-2xl font-bold">{destination.mosqueeCount.toLocaleString('fr-FR')}</div>
-                <div className="text-xs text-emerald-300 mt-1">Mosquées</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4">
-                <div className="text-2xl font-bold">{destination.restaurantHalalCount.toLocaleString('fr-FR')}+</div>
-                <div className="text-xs text-emerald-300 mt-1">Restaurants halal</div>
-              </div>
-            </div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/70" />
+          <div className="absolute inset-0 flex flex-col justify-end px-4 pb-5">
+            <nav className="flex items-center gap-1.5 text-xs text-white/70 mb-3">
+              <Link href="/" className="hover:text-white">Accueil</Link>
+              <span>/</span>
+              <Link href="/destinations" className="hover:text-white">Destinations</Link>
+              <span>/</span>
+              <span className="text-white">{destination.city}</span>
+            </nav>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
+              {destination.city}
+            </h1>
+            <p className="text-white/80 text-sm mt-1">{destination.country} · {destination.shortDescription}</p>
           </div>
+        </div>
 
-          <div className="mt-6 flex flex-wrap gap-2">
-            {destination.tags.map((tag) => (
-              <span key={tag} className="bg-white/10 backdrop-blur-sm text-white text-sm px-3 py-1 rounded-full">
-                {tag}
-              </span>
+        {/* Stats */}
+        <div className="bg-white border-b border-gray-100 px-4 py-3">
+          <div className="max-w-2xl mx-auto flex gap-6 text-sm text-gray-500">
+            <span>🕌 {destination.mosqueeCount.toLocaleString('fr-FR')} mosquées</span>
+            <span>🍽 {destination.restaurantHalalCount.toLocaleString('fr-FR')}+ restaurants</span>
+            <span className="text-emerald-600 font-medium">
+              {'★'.repeat(destination.halalScore)} Halal
+            </span>
+          </div>
+        </div>
+
+        {/* Tabs */}
+        <div className="bg-white border-b border-gray-100 sticky top-16 z-10">
+          <div className="max-w-2xl mx-auto px-4 flex gap-1">
+            {([
+              { key: 'restaurants', label: '🍽 Restaurants', count: destination.restaurants.length },
+              { key: 'mosques', label: '🕌 Mosquées', count: destination.mosques.length },
+              { key: 'activities', label: '🎯 Activités', count: destination.activities.length },
+            ] as { key: Tab; label: string; count: number }[]).map(({ key, label, count }) => (
+              <Link
+                key={key}
+                href={tabUrl(key)}
+                className={`px-4 py-3.5 text-sm font-medium border-b-2 transition-colors whitespace-nowrap ${
+                  activeTab === key
+                    ? 'border-emerald-600 text-emerald-600'
+                    : 'border-transparent text-gray-500 hover:text-gray-700'
+                }`}
+              >
+                {label} <span className="text-xs opacity-60">({count})</span>
+              </Link>
             ))}
           </div>
         </div>
-      </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Contenu principal */}
-          <div className="lg:col-span-2 space-y-12">
-
-            <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                Pourquoi {destination.city} est une destination halal idéale ?
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-lg">{destination.description}</p>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                🍽 Restaurants halal à {destination.city}
-              </h2>
-              <div className="space-y-4">
-                {destination.restaurants.map((restaurant) => (
-                  <div key={restaurant.name} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <h3 className="font-bold text-gray-900">{restaurant.name}</h3>
-                        <p className="text-sm text-gray-400 mt-0.5">📍 {restaurant.address}</p>
-                        <p className="text-gray-600 text-sm mt-2 leading-relaxed">{restaurant.description}</p>
-                      </div>
-                      <div className="shrink-0">
-                        <StarRating rating={restaurant.rating} />
-                      </div>
-                    </div>
+        <div className="max-w-2xl mx-auto px-4 py-6 space-y-3">
+          {/* Restaurants tab */}
+          {activeTab === 'restaurants' && destination.restaurants.map((r, i) => (
+            <div key={i} className="bg-white rounded-2xl p-5 border border-gray-100 hover:border-emerald-100 hover:shadow-sm transition-all">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="font-semibold text-gray-900">{r.name}</span>
+                    <span className="bg-emerald-50 text-emerald-700 text-xs font-medium px-2 py-0.5 rounded-full">
+                      Halal ✓
+                    </span>
                   </div>
-                ))}
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                🕌 Mosquées à visiter à {destination.city}
-              </h2>
-              <div className="space-y-4">
-                {destination.mosques.map((mosque) => (
-                  <div key={mosque.name} className="bg-emerald-50 border border-emerald-100 rounded-2xl p-5">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <h3 className="font-bold text-gray-900">{mosque.name}</h3>
-                        <p className="text-sm text-gray-400 mt-0.5">📍 {mosque.address}</p>
-                        <p className="text-gray-600 text-sm mt-2 leading-relaxed">{mosque.description}</p>
-                      </div>
-                      <div className="shrink-0">
-                        <StarRating rating={mosque.rating} />
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                🎯 Activités à {destination.city}
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {destination.activities.map((activity) => (
-                  <div key={activity.name} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
-                    <h3 className="font-bold text-gray-900">{activity.name}</h3>
-                    <p className="text-gray-500 text-sm mt-1 leading-relaxed">{activity.description}</p>
-                    <p className="text-emerald-600 text-xs font-medium mt-3">⏱ {activity.duration}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-          </div>
-
-          {/* Sidebar */}
-          <aside className="space-y-6">
-            <div className="bg-gray-50 rounded-2xl p-6 sticky top-24">
-              <h3 className="font-bold text-gray-900 mb-4">Infos pratiques</h3>
-              <div className="space-y-3 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Pays</span>
-                  <span className="font-medium">{destination.country}</span>
+                  <p className="text-xs text-gray-400 mt-1">📍 {r.address}</p>
+                  <p className="text-sm text-gray-600 mt-2 leading-relaxed">{r.description}</p>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Population</span>
-                  <span className="font-medium">{destination.population}</span>
-                </div>
-                <div className="flex justify-between items-start gap-2">
-                  <span className="text-gray-500 shrink-0">Meilleure période</span>
-                  <span className="font-medium text-right">{destination.bestTime}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Score halal</span>
-                  <div className="flex">
-                    {Array.from({ length: destination.halalScore }).map((_, i) => (
-                      <span key={i} className="text-emerald-500">★</span>
-                    ))}
-                  </div>
+                <div className="shrink-0">
+                  <StarRating rating={r.rating} />
                 </div>
               </div>
             </div>
+          ))}
 
-            <div className="bg-amber-50 border border-amber-100 rounded-2xl p-6">
-              <h3 className="font-bold text-gray-900 mb-4">💡 Conseils pratiques</h3>
-              <ul className="space-y-3">
+          {/* Mosquées tab */}
+          {activeTab === 'mosques' && destination.mosques.map((m, i) => (
+            <div key={i} className="bg-white rounded-2xl p-5 border border-gray-100 hover:border-blue-100 hover:shadow-sm transition-all">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="font-semibold text-gray-900">{m.name}</span>
+                    <span className="bg-blue-50 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">
+                      Mosquée
+                    </span>
+                  </div>
+                  <p className="text-xs text-gray-400 mt-1">📍 {m.address}</p>
+                  <p className="text-sm text-gray-600 mt-2 leading-relaxed">{m.description}</p>
+                </div>
+                <div className="shrink-0">
+                  <StarRating rating={m.rating} />
+                </div>
+              </div>
+            </div>
+          ))}
+
+          {/* Activités tab */}
+          {activeTab === 'activities' && destination.activities.map((a, i) => (
+            <div key={i} className="bg-white rounded-2xl p-5 border border-gray-100 hover:shadow-sm transition-all">
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1 min-w-0">
+                  <span className="font-semibold text-gray-900">{a.name}</span>
+                  <p className="text-sm text-gray-600 mt-2 leading-relaxed">{a.description}</p>
+                </div>
+                <span className="shrink-0 text-xs text-emerald-600 font-medium bg-emerald-50 px-2 py-1 rounded-full whitespace-nowrap">
+                  ⏱ {a.duration}
+                </span>
+              </div>
+            </div>
+          ))}
+
+          {/* Conseils */}
+          {activeTab === 'restaurants' && destination.tips.length > 0 && (
+            <div className="mt-4 bg-amber-50 border border-amber-100 rounded-2xl p-5">
+              <h2 className="font-bold text-gray-900 mb-3 text-sm">💡 Conseils pratiques</h2>
+              <ul className="space-y-2">
                 {destination.tips.map((tip, i) => (
                   <li key={i} className="flex gap-2 text-sm text-gray-600">
                     <span className="text-amber-500 shrink-0 mt-0.5">→</span>
-                    <span>{tip}</span>
+                    {tip}
                   </li>
                 ))}
               </ul>
             </div>
+          )}
 
-            <div className="bg-emerald-600 text-white rounded-2xl p-6 text-center">
-              <div className="text-3xl mb-2">📱</div>
-              <h3 className="font-bold mb-2">Planifiez votre voyage</h3>
-              <p className="text-emerald-200 text-sm mb-4">
-                Qibla, prières et carnet de voyage dans votre poche.
-              </p>
-              <Link
-                href="/application"
-                className="block bg-white text-emerald-700 font-semibold py-2 rounded-full text-sm hover:bg-emerald-50 transition-colors"
-              >
-                Découvrir l&apos;application
-              </Link>
-            </div>
-          </aside>
+          {/* Recherche rapide */}
+          <div className="pt-4 text-center">
+            <Link
+              href={`/search?q=${encodeURIComponent(destination.city)}`}
+              className="inline-flex items-center gap-2 bg-emerald-600 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-emerald-700 transition-colors"
+            >
+              🔍 Recherche rapide à {destination.city}
+            </Link>
+          </div>
         </div>
-
-        <div className="mt-16">
-          <AppCTA />
-        </div>
-      </div>
+      </main>
     </>
   )
 }
