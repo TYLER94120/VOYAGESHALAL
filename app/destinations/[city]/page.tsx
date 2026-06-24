@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { destinations, getDestinationBySlug } from '@/lib/data'
 import { buildMetadata, buildDestinationSchema, buildBreadcrumbSchema } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
@@ -21,8 +22,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return buildMetadata({
     title: `Voyage Halal à ${destination.city} — Guide Complet ${new Date().getFullYear()}`,
-    description: `Voyager halal à ${destination.city} : restaurants halal, mosquées, activités et conseils pratiques. Guide complet mis à jour ${new Date().getFullYear()}.`,
+    description: `Voyager halal à ${destination.city} : restaurants halal certifiés, mosquées, activités et conseils pratiques. Guide complet mis à jour ${new Date().getFullYear()}.`,
     path: `/destinations/${destination.slug}`,
+    image: destination.coverImage,
     type: 'article',
   })
 }
@@ -58,8 +60,19 @@ export default async function DestinationPage({ params }: Props) {
       <JsonLd data={destinationSchema} />
       <JsonLd data={breadcrumbSchema} />
 
-      <section className="bg-gradient-to-br from-emerald-900 to-teal-800 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      {/* Hero avec vraie image */}
+      <section className="relative text-white overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={destination.coverImage}
+            alt={`${destination.city}, ${destination.country}`}
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-emerald-950/85 to-teal-900/75" />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <nav className="flex items-center gap-2 text-sm text-emerald-300 mb-6">
             <Link href="/" className="hover:text-white">Accueil</Link>
             <span>/</span>
@@ -71,7 +84,7 @@ export default async function DestinationPage({ params }: Props) {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             <div>
               <div className="flex items-center gap-3 mb-3">
-                <span className="bg-white/10 text-white text-sm px-3 py-1 rounded-full">
+                <span className="bg-white/10 backdrop-blur-sm text-white text-sm px-3 py-1 rounded-full">
                   {destination.country}
                 </span>
                 <span className="flex items-center gap-1 text-emerald-300 text-sm">
@@ -87,12 +100,12 @@ export default async function DestinationPage({ params }: Props) {
               <p className="text-emerald-200 text-lg max-w-2xl">{destination.shortDescription}</p>
             </div>
 
-            <div className="flex gap-6 text-center shrink-0">
-              <div className="bg-white/10 rounded-2xl px-5 py-4">
+            <div className="flex gap-4 text-center shrink-0">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4">
                 <div className="text-2xl font-bold">{destination.mosqueeCount.toLocaleString('fr-FR')}</div>
                 <div className="text-xs text-emerald-300 mt-1">Mosquées</div>
               </div>
-              <div className="bg-white/10 rounded-2xl px-5 py-4">
+              <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-5 py-4">
                 <div className="text-2xl font-bold">{destination.restaurantHalalCount.toLocaleString('fr-FR')}+</div>
                 <div className="text-xs text-emerald-300 mt-1">Restaurants halal</div>
               </div>
@@ -101,7 +114,7 @@ export default async function DestinationPage({ params }: Props) {
 
           <div className="mt-6 flex flex-wrap gap-2">
             {destination.tags.map((tag) => (
-              <span key={tag} className="bg-white/10 text-white text-sm px-3 py-1 rounded-full">
+              <span key={tag} className="bg-white/10 backdrop-blur-sm text-white text-sm px-3 py-1 rounded-full">
                 {tag}
               </span>
             ))}
@@ -111,7 +124,9 @@ export default async function DestinationPage({ params }: Props) {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          {/* Contenu principal */}
           <div className="lg:col-span-2 space-y-12">
+
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">
                 Pourquoi {destination.city} est une destination halal idéale ?
@@ -130,7 +145,7 @@ export default async function DestinationPage({ params }: Props) {
                       <div>
                         <h3 className="font-bold text-gray-900">{restaurant.name}</h3>
                         <p className="text-sm text-gray-400 mt-0.5">📍 {restaurant.address}</p>
-                        <p className="text-gray-600 text-sm mt-2">{restaurant.description}</p>
+                        <p className="text-gray-600 text-sm mt-2 leading-relaxed">{restaurant.description}</p>
                       </div>
                       <div className="shrink-0">
                         <StarRating rating={restaurant.rating} />
@@ -152,7 +167,7 @@ export default async function DestinationPage({ params }: Props) {
                       <div>
                         <h3 className="font-bold text-gray-900">{mosque.name}</h3>
                         <p className="text-sm text-gray-400 mt-0.5">📍 {mosque.address}</p>
-                        <p className="text-gray-600 text-sm mt-2">{mosque.description}</p>
+                        <p className="text-gray-600 text-sm mt-2 leading-relaxed">{mosque.description}</p>
                       </div>
                       <div className="shrink-0">
                         <StarRating rating={mosque.rating} />
@@ -171,7 +186,7 @@ export default async function DestinationPage({ params }: Props) {
                 {destination.activities.map((activity) => (
                   <div key={activity.name} className="bg-white border border-gray-100 rounded-2xl p-5 shadow-sm">
                     <h3 className="font-bold text-gray-900">{activity.name}</h3>
-                    <p className="text-gray-500 text-sm mt-1">{activity.description}</p>
+                    <p className="text-gray-500 text-sm mt-1 leading-relaxed">{activity.description}</p>
                     <p className="text-emerald-600 text-xs font-medium mt-3">⏱ {activity.duration}</p>
                   </div>
                 ))}
@@ -179,6 +194,7 @@ export default async function DestinationPage({ params }: Props) {
             </section>
           </div>
 
+          {/* Sidebar */}
           <aside className="space-y-6">
             <div className="bg-gray-50 rounded-2xl p-6 sticky top-24">
               <h3 className="font-bold text-gray-900 mb-4">Infos pratiques</h3>
@@ -191,9 +207,9 @@ export default async function DestinationPage({ params }: Props) {
                   <span className="text-gray-500">Population</span>
                   <span className="font-medium">{destination.population}</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-500">Meilleure période</span>
-                  <span className="font-medium text-right max-w-[60%]">{destination.bestTime}</span>
+                <div className="flex justify-between items-start gap-2">
+                  <span className="text-gray-500 shrink-0">Meilleure période</span>
+                  <span className="font-medium text-right">{destination.bestTime}</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-500">Score halal</span>
@@ -211,8 +227,8 @@ export default async function DestinationPage({ params }: Props) {
               <ul className="space-y-3">
                 {destination.tips.map((tip, i) => (
                   <li key={i} className="flex gap-2 text-sm text-gray-600">
-                    <span className="text-amber-500 shrink-0">→</span>
-                    {tip}
+                    <span className="text-amber-500 shrink-0 mt-0.5">→</span>
+                    <span>{tip}</span>
                   </li>
                 ))}
               </ul>
@@ -228,7 +244,7 @@ export default async function DestinationPage({ params }: Props) {
                 href="/application"
                 className="block bg-white text-emerald-700 font-semibold py-2 rounded-full text-sm hover:bg-emerald-50 transition-colors"
               >
-                Télécharger l&apos;app
+                Découvrir l&apos;application
               </Link>
             </div>
           </aside>
