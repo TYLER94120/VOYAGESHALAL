@@ -4,8 +4,10 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 const navLinks = [
+  { href: '/', label: 'Accueil' },
   { href: '/destinations', label: 'Destinations' },
   { href: '/search', label: 'Recherche' },
+  { href: '/contact', label: 'Contact' },
 ]
 
 export default function Header() {
@@ -16,30 +18,31 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl">🌙</span>
-            <span className="font-bold text-xl text-gray-900">
-              Voyages<span className="text-emerald-600">Halal</span>
+            <span className="text-[#1a3a2a] text-lg">◆</span>
+            <span className="font-bold text-base tracking-widest text-[#1a3a2a] uppercase">
+              Voyages<span className="text-[#c9a870]">Halal</span>
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-7">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-600 hover:text-emerald-600 font-medium transition-colors"
+                className="text-sm text-gray-600 hover:text-[#1a3a2a] font-medium transition-colors"
               >
                 {link.label}
               </Link>
             ))}
+            <span className="text-sm text-gray-400">FR · EN</span>
           </nav>
 
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center">
             <Link
-              href="/search"
-              className="bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-colors"
+              href="/application"
+              className="bg-[#1a3a2a] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#2d5a3d] transition-colors"
             >
-              Rechercher
+              L'application
             </Link>
           </div>
 
@@ -60,18 +63,18 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-3 text-gray-700 hover:text-emerald-600 font-medium"
+                className="block py-3 text-gray-700 hover:text-[#1a3a2a] font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
             <Link
-              href="/search"
-              className="mt-3 block text-center bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold"
+              href="/application"
+              className="mt-3 block text-center bg-[#1a3a2a] text-white px-4 py-2 rounded-full text-sm font-semibold"
               onClick={() => setIsOpen(false)}
             >
-              Rechercher
+              L'application
             </Link>
           </div>
         )}
