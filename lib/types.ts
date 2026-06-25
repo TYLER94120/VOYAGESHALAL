@@ -15,6 +15,7 @@ export interface Destination {
   mosques: HalalPlace[]
   activities: Activity[]
   tips: string[]
+  relatedArticles?: { slug: string; title: string; type: 'guide' | 'blog' }[]
 }
 
 export interface HalalPlace {
