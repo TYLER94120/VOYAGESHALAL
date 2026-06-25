@@ -4,125 +4,131 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Voyages Halal — Voyagez halal, voyagez serein',
-  description: 'Trouvez instantanément restaurants halal et mosquées partout dans le monde. Le guide de confiance pour le voyageur musulman.',
+  description: 'Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans plus de 50 destinations — pour les musulmans du monde entier.',
 }
 
 const DESTINATIONS = [
-  { slug: 'istanbul', city: 'Istanbul', country: 'Turquie', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80' },
-  { slug: 'marrakech', city: 'Marrakech', country: 'Maroc', image: 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=600&q=80' },
-  { slug: 'dubai', city: 'Dubaï', country: 'Émirats', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80' },
-  { slug: 'kuala-lumpur', city: 'Kuala Lumpur', country: 'Malaisie', image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80' },
-  { slug: 'le-caire', city: 'Le Caire', country: 'Égypte', image: 'https://images.unsplash.com/photo-1553913861-c0fddf2619ee?w=600&q=80' },
-  { slug: 'medine', city: 'Médine', country: 'Arabie Saoudite', image: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=600&q=80' },
+  { slug: 'istanbul', city: 'Istanbul', country: 'Turquie', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80', badge: 'INCONTOURNABLE' },
+  { slug: 'marrakech', city: 'Marrakech', country: 'Maroc', image: 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=600&q=80', badge: 'POPULAIRE' },
+  { slug: 'dubai', city: 'Dubaï', country: 'Émirats', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80', badge: 'LUXE' },
+  { slug: 'kuala-lumpur', city: 'Kuala Lumpur', country: 'Malaisie', image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80', badge: 'TENDANCE' },
+  { slug: 'le-caire', city: 'Le Caire', country: 'Égypte', image: 'https://images.unsplash.com/photo-1553913861-c0fddf2619ee?w=600&q=80', badge: 'CULTURELLE' },
+  { slug: 'medine', city: 'Médine', country: 'Arabie Saoudite', image: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=600&q=80', badge: 'SPIRITUELLE' },
 ]
 
 const FEATURES = [
-  { icon: '🍽', title: 'Restaurants halal', desc: 'Adresses certifiées halal dans chaque ville, avec avis et notes.' },
-  { icon: '🕌', title: 'Mosquées proches', desc: 'Localisez la mosquée la plus proche en quelques secondes.' },
-  { icon: '🧭', title: 'Guides pratiques', desc: 'Conseils culturels, horaires, transports — tout pour voyager serein.' },
-  { icon: '✈️', title: 'Voyagez serein', desc: "Plus de stress. Concentrez-vous sur l'essentiel : votre voyage." },
+  { icon: '🍽', title: 'Restaurants halal', desc: 'Adresses certifiées halal avec avis vérifiés et notes de la communauté.' },
+  { icon: '🕌', title: 'Mosquées proches', desc: 'Localisez la mosquée la plus proche, avec horaires de prière.' },
+  { icon: '🧭', title: 'Guides pratiques', desc: "Conseils culturels, visa, transports — tout pour voyager l'esprit libre." },
 ]
 
 export default function HomePage() {
   return (
     <main style={{ backgroundColor: '#faf8f4' }}>
-      {/* Hero */}
-      <section style={{ backgroundColor: '#1a3a2a' }} className="relative px-4 pt-20 pb-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-white blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-64 h-64 rounded-full bg-white blur-2xl" />
-        </div>
-        <div className="relative max-w-3xl mx-auto text-center">
-          <p style={{ color: '#c9a870' }} className="text-sm font-semibold uppercase tracking-widest mb-6">
-            ◆ Guide de voyage halal
-          </p>
-          <h1 className="text-4xl sm:text-6xl font-bold text-white leading-tight mb-6" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-            Voyagez halal,<br />voyagez serein
+      {/* Hero split */}
+      <section className="min-h-[90vh] grid grid-cols-1 lg:grid-cols-2">
+        {/* Left: text */}
+        <div style={{ backgroundColor: '#faf8f4' }} className="flex flex-col justify-center px-8 sm:px-16 lg:px-20 py-20 lg:py-32">
+          <div className="flex items-center gap-3 mb-8">
+            <div style={{ width: 32, height: 1, backgroundColor: '#c9a870' }} />
+            <span style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em]">
+              Le guide de référence mondial
+            </span>
+          </div>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] mb-8" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1a3a2a' }}>
+            Voyagez halal,<br />
+            voyagez <em style={{ color: '#c9a870', fontStyle: 'italic' }}>serein</em>
           </h1>
-          <p className="text-white/60 text-lg mb-10 max-w-xl mx-auto">
-            Restaurants halal, mosquées et conseils pratiques pour le voyageur musulman du monde entier.
+          <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-md">
+            Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans plus de 50 destinations — pour les musulmans du monde entier.
           </p>
-
-          <form action="/search" method="GET" className="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto">
-            <input
-              type="text"
-              name="q"
-              placeholder="Istanbul, Paris, Tokyo…"
-              autoComplete="off"
-              className="flex-1 px-5 py-4 text-gray-900 bg-white rounded-2xl text-base focus:outline-none focus:ring-2 focus:ring-[#c9a870]"
-            />
+          <form action="/search" method="GET" className="flex gap-0 max-w-md">
+            <div className="relative flex-1">
+              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg">🔍</span>
+              <input
+                type="text"
+                name="q"
+                placeholder="Istanbul, Marrakech, Dubaï..."
+                autoComplete="off"
+                className="w-full pl-11 pr-4 py-4 bg-white border border-gray-200 rounded-l-2xl text-gray-900 text-base focus:outline-none focus:ring-2 focus:ring-[#1a3a2a] focus:border-transparent"
+              />
+            </div>
             <button
               type="submit"
-              style={{ backgroundColor: '#c9a870' }}
-              className="text-[#1a3a2a] px-8 py-4 rounded-2xl font-bold text-base hover:opacity-90 transition-opacity whitespace-nowrap"
+              style={{ backgroundColor: '#1a3a2a' }}
+              className="text-white px-7 py-4 rounded-r-2xl font-semibold text-base hover:opacity-90 transition-opacity whitespace-nowrap"
             >
               Rechercher
             </button>
           </form>
-
-          <div className="mt-5 flex flex-wrap justify-center gap-4 text-sm">
-            {['Istanbul', 'Marrakech', 'Dubaï'].map((city) => (
-              <a
-                key={city}
-                href={`/search?q=${encodeURIComponent(city)}`}
-                className="text-white/40 hover:text-white/80 transition-colors"
-              >
-                {city} →
-              </a>
+          <div className="mt-8 flex gap-8">
+            {[
+              { value: '50+', label: 'destinations' },
+              { value: '3', label: 'continents' },
+              { value: '4 ans', label: "d'expérience" },
+            ].map((s) => (
+              <div key={s.label}>
+                <div className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{s.value}</div>
+                <div className="text-xs text-gray-400 mt-0.5">{s.label}</div>
+              </div>
             ))}
           </div>
         </div>
-      </section>
 
-      {/* Stats bar */}
-      <section style={{ backgroundColor: '#f5f0e8' }} className="border-b border-[#e8d5a3]/50">
-        <div className="max-w-4xl mx-auto px-4 py-5 flex flex-wrap justify-center gap-8 text-sm">
-          {[
-            { value: '50+', label: 'destinations' },
-            { value: '10 000+', label: 'restaurants halal' },
-            { value: '5 000+', label: 'mosquées référencées' },
-            { value: '100%', label: 'gratuit' },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <span className="font-bold text-[#1a3a2a] text-lg">{stat.value}</span>
-              <span className="text-gray-500 ml-2">{stat.label}</span>
-            </div>
-          ))}
+        {/* Right: photo */}
+        <div className="relative hidden lg:block">
+          <Image
+            src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=85"
+            alt="Istanbul — Voyages Halal"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
       </section>
 
-      {/* Destinations */}
-      <section className="py-16 px-4">
+      {/* Destinations populaires */}
+      <section style={{ backgroundColor: '#f5f0e8' }} className="py-20 px-4">
         <div className="max-w-5xl mx-auto">
-          <div className="flex items-center justify-between mb-10">
+          <div className="flex items-end justify-between mb-10">
             <div>
-              <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-widest mb-1">Explorez</p>
-              <h2 className="text-2xl font-bold text-[#1a3a2a]" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-                Destinations populaires
+              <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-2">Explorez</p>
+              <h2 className="text-3xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1a3a2a' }}>
+                Destinations halal populaires
               </h2>
             </div>
-            <Link href="/destinations" className="text-sm text-[#1a3a2a] hover:underline font-medium">
+            <Link href="/destinations" className="text-sm font-medium hover:underline" style={{ color: '#1a3a2a' }}>
               Voir tout →
             </Link>
           </div>
-
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
             {DESTINATIONS.map((d) => (
               <Link
                 key={d.slug}
                 href={`/destinations/${d.slug}`}
-                className="group block relative overflow-hidden rounded-3xl rounded-tl-[9999px] rounded-tr-[9999px] aspect-[3/4] sm:aspect-[4/5]"
+                className="group block relative overflow-hidden"
+                style={{ borderRadius: '9999px 9999px 1.5rem 1.5rem' }}
               >
-                <Image
-                  src={d.image}
-                  alt={d.city}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <div className="text-white font-bold text-base">{d.city}</div>
-                  <div className="text-white/60 text-xs mt-0.5">{d.country}</div>
+                <div className="relative aspect-[3/4]">
+                  <Image
+                    src={d.image}
+                    alt={d.city}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
+                  <div className="absolute top-4 left-1/2 -translate-x-1/2">
+                    <span style={{ backgroundColor: 'rgba(201,168,112,0.9)', color: '#1a3a2a' }} className="text-[10px] font-bold px-3 py-1 rounded-full whitespace-nowrap tracking-widest">
+                      {d.badge}
+                    </span>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
+                    <div className="text-white font-bold text-base">{d.city}</div>
+                    <div className="text-white/60 text-xs mt-0.5">{d.country}</div>
+                    <div style={{ color: '#c9a870' }} className="text-xs mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                      Guide complet →
+                    </div>
+                  </div>
                 </div>
               </Link>
             ))}
@@ -130,43 +136,48 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Features */}
-      <section style={{ backgroundColor: '#1a3a2a' }} className="py-16 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-widest mb-3">Pourquoi nous ?</p>
-            <h2 className="text-2xl font-bold text-white" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-              Tout ce qu'il faut pour voyager halal
-            </h2>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {FEATURES.map((f) => (
-              <div key={f.title} style={{ backgroundColor: '#2d5a3d' }} className="rounded-2xl p-6">
-                <div className="text-3xl mb-3">{f.icon}</div>
-                <div className="font-bold text-white mb-2">{f.title}</div>
-                <div className="text-sm text-white/50 leading-relaxed">{f.desc}</div>
-              </div>
-            ))}
-          </div>
+      {/* Voyager Halal, simplifié */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-5xl mx-auto text-center mb-14">
+          <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-3">Notre promesse</p>
+          <h2 className="text-3xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1a3a2a' }}>
+            Voyager Halal, simplifié
+          </h2>
+        </div>
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-10">
+          {FEATURES.map((f) => (
+            <div key={f.title} className="text-center">
+              <div className="text-4xl mb-4">{f.icon}</div>
+              <div className="font-bold mb-2 text-lg" style={{ color: '#1a3a2a' }}>{f.title}</div>
+              <div className="text-sm text-gray-500 leading-relaxed">{f.desc}</div>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* CTA app */}
-      <section style={{ backgroundColor: '#f5f0e8' }} className="py-16 px-4 text-center">
-        <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-widest mb-3">Bientôt disponible</p>
-        <h2 className="text-2xl font-bold text-[#1a3a2a] mb-4" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-          L'application mobile arrive
-        </h2>
-        <p className="text-gray-500 mb-8 max-w-md mx-auto text-sm">
-          Géolocalisation, boussole Qibla, horaires de prière — tout dans votre poche.
-        </p>
-        <Link
-          href="/application"
-          style={{ backgroundColor: '#1a3a2a' }}
-          className="inline-block text-white px-8 py-3 rounded-full font-semibold text-sm hover:opacity-90 transition-opacity"
-        >
-          En savoir plus
-        </Link>
+      {/* App CTA */}
+      <section style={{ backgroundColor: '#1a3a2a' }} className="py-20 px-4">
+        <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+          <div className="flex-1">
+            <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-4">Bientôt disponible</p>
+            <h2 className="text-3xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
+              Voyages Halal dans votre poche
+            </h2>
+            <p className="text-white/50 text-sm leading-relaxed mb-8 max-w-md">
+              Géolocalisation, boussole Qibla, horaires de prière, restaurants proches — tout ce dont vous avez besoin, même sans connexion.
+            </p>
+            <Link
+              href="/application"
+              style={{ backgroundColor: '#c9a870', color: '#1a3a2a' }}
+              className="inline-block font-bold text-sm px-8 py-3 rounded-full hover:opacity-90 transition-opacity"
+            >
+              En savoir plus
+            </Link>
+          </div>
+          <div style={{ backgroundColor: '#2d5a3d' }} className="w-48 h-80 rounded-3xl flex items-center justify-center text-6xl shrink-0">
+            📱
+          </div>
+        </div>
       </section>
     </main>
   )

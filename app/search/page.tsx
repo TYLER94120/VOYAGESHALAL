@@ -32,6 +32,7 @@ export default async function SearchPage({
 
   const showRestaurants = filter === 'all' || filter === 'restaurants'
   const showMosques = filter === 'all' || filter === 'mosques'
+  const totalResults = (showRestaurants ? restaurants.length : 0) + (showMosques ? mosques.length : 0)
 
   function filterUrl(t: Filter) {
     const params = new URLSearchParams()
@@ -42,62 +43,71 @@ export default async function SearchPage({
 
   return (
     <main style={{ backgroundColor: '#faf8f4' }} className="min-h-screen">
-      {/* Hero search bar */}
-      <section style={{ backgroundColor: '#1a3a2a' }} className="px-4 pt-12 pb-10">
-        <div className="max-w-2xl mx-auto text-center mb-7">
-          <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-widest mb-3">Recherche</p>
-          <h1 className="text-2xl sm:text-3xl font-bold text-white" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-            Trouvez restaurants halal & mosquées
-          </h1>
-        </div>
-        <div className="max-w-xl mx-auto">
-          <form action="/search" method="GET" className="flex gap-3">
+      {/* Hero */}
+      <section style={{ backgroundColor: '#1a3a2a' }} className="px-8 sm:px-16 pt-16 pb-20">
+        <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-5">
+          Recherche
+        </p>
+        <h1
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 max-w-2xl"
+          style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
+        >
+          Trouver halal en voyage
+        </h1>
+        <p className="text-white/50 text-base max-w-lg leading-relaxed">
+          Restaurants certifiés, mosquées et lieux adaptés aux voyageurs musulmans dans le monde entier.
+        </p>
+      </section>
+
+      {/* Search bar (below hero on cream bg) */}
+      <div className="bg-white border-b border-gray-100 px-4 sm:px-16 py-8">
+        <div className="max-w-2xl">
+          <form action="/search" method="GET" className="flex gap-0">
             <input
               type="text"
               name="q"
               defaultValue={q}
-              placeholder="Istanbul, Paris, Tokyo…"
+              placeholder="Istanbul, Paris, Tokyo, Londres..."
               autoComplete="off"
-              autoFocus
-              className="flex-1 px-5 py-3.5 bg-white rounded-2xl text-gray-900 text-base focus:outline-none focus:ring-2 focus:ring-[#c9a870]"
+              className="flex-1 px-5 py-4 bg-[#faf8f4] border border-gray-200 rounded-l-2xl text-gray-900 text-base focus:outline-none focus:ring-2 focus:ring-[#1a3a2a] focus:border-transparent"
             />
             <button
               type="submit"
-              style={{ backgroundColor: '#c9a870' }}
-              className="text-[#1a3a2a] px-6 py-3.5 rounded-2xl font-bold hover:opacity-90 transition-opacity"
+              style={{ backgroundColor: '#1a3a2a' }}
+              className="text-white px-7 py-4 rounded-r-2xl font-semibold text-base hover:opacity-90 transition-opacity whitespace-nowrap"
             >
-              →
+              Rechercher
             </button>
           </form>
-        </div>
-      </section>
-
-      <div className="max-w-2xl mx-auto px-4 py-8">
-        {!query && (
-          <div className="text-center py-12">
-            <div className="text-5xl mb-4">🔍</div>
-            <p className="text-gray-500 text-lg mb-6">Entrez une ville pour commencer</p>
-            <div className="flex flex-wrap justify-center gap-2">
-              {destinations.map((d) => (
-                <a
-                  key={d.slug}
-                  href={`/search?q=${encodeURIComponent(d.city)}`}
-                  style={{ borderColor: '#e8d5a3' }}
-                  className="bg-white border hover:border-[#c9a870] text-gray-700 hover:text-[#1a3a2a] px-4 py-2 rounded-full text-sm font-medium transition-all"
-                >
-                  {d.city}
-                </a>
-              ))}
-            </div>
+          <div className="mt-5 flex items-center gap-3 flex-wrap">
+            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Type :</span>
+            {([
+              { key: 'all', label: 'Tout' },
+              { key: 'restaurants', label: 'Restaurants halal' },
+              { key: 'mosques', label: 'Mosquées' },
+            ] as { key: Filter; label: string }[]).map(({ key, label }) => (
+              <a
+                key={key}
+                href={filterUrl(key)}
+                className="px-4 py-2 rounded-full text-sm font-medium border transition-all"
+                style={
+                  filter === key
+                    ? { backgroundColor: '#1a3a2a', color: 'white', borderColor: '#1a3a2a' }
+                    : { backgroundColor: 'white', color: '#555', borderColor: '#e5e7eb' }
+                }
+              >
+                {label}
+              </a>
+            ))}
           </div>
-        )}
+        </div>
+      </div>
 
-        {query && !match && (
-          <div className="text-center py-12">
-            <div className="text-5xl mb-4">😕</div>
-            <p className="text-gray-700 font-semibold text-lg">Aucun résultat pour &ldquo;{q}&rdquo;</p>
-            <p className="text-gray-500 mt-2 mb-6">Essayez Istanbul, Marrakech ou Dubaï</p>
-            <div className="flex flex-wrap justify-center gap-2">
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 py-10">
+        {!query && (
+          <div className="py-12">
+            <p className="text-gray-500 text-base mb-6">Destinations suggérées :</p>
+            <div className="flex flex-wrap gap-2">
               {destinations.map((d) => (
                 <a
                   key={d.slug}
@@ -111,112 +121,76 @@ export default async function SearchPage({
           </div>
         )}
 
-        {match && (
-          <>
-            {/* City header */}
-            <div className="mb-6">
-              <h2 className="text-2xl font-bold text-[#1a3a2a]" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-                {match.city}
-              </h2>
-              <p className="text-gray-500 text-sm mt-1">
-                {match.country} · {match.restaurantHalalCount.toLocaleString('fr-FR')}+ restaurants halal · {match.mosqueeCount.toLocaleString('fr-FR')} mosquées
-              </p>
-              <Link
-                href={`/destinations/${match.slug}`}
-                className="inline-block mt-3 text-sm font-medium hover:underline"
-                style={{ color: '#c9a870' }}
-              >
-                Voir le guide complet de {match.city} →
-              </Link>
-            </div>
-
-            {/* Filters */}
-            <div className="flex gap-2 mb-6">
-              {([
-                { key: 'all', label: 'Tout' },
-                { key: 'restaurants', label: `🍽 Restaurants (${restaurants.length})` },
-                { key: 'mosques', label: `🕌 Mosquées (${mosques.length})` },
-              ] as { key: Filter; label: string }[]).map(({ key, label }) => (
+        {query && !match && (
+          <div className="py-16 text-center">
+            <div className="text-5xl mb-4">😕</div>
+            <p className="text-gray-700 font-semibold text-lg mb-2">Aucun résultat pour &ldquo;{q}&rdquo;</p>
+            <p className="text-gray-500 mb-6">Essayez Istanbul, Marrakech ou Dubaï</p>
+            <div className="flex flex-wrap justify-center gap-2">
+              {destinations.map((d) => (
                 <a
-                  key={key}
-                  href={filterUrl(key)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                    filter === key
-                      ? 'text-white'
-                      : 'bg-white text-gray-600 border border-gray-200 hover:border-[#c9a870]'
-                  }`}
-                  style={filter === key ? { backgroundColor: '#1a3a2a' } : {}}
+                  key={d.slug}
+                  href={`/search?q=${encodeURIComponent(d.city)}`}
+                  className="bg-white border border-gray-200 hover:border-[#c9a870] text-gray-700 px-4 py-2 rounded-full text-sm font-medium transition-all"
                 >
-                  {label}
+                  {d.city}
                 </a>
               ))}
             </div>
+          </div>
+        )}
 
-            {/* Restaurants */}
-            {showRestaurants && restaurants.length > 0 && (
-              <section className="mb-6">
-                {filter === 'all' && (
-                  <h3 className="text-xs font-bold text-gray-500 mb-3 uppercase tracking-widest">
-                    Restaurants halal
-                  </h3>
-                )}
-                <div className="space-y-3">
-                  {restaurants.map((r, i) => (
-                    <div key={i} className="bg-white rounded-2xl p-5 border border-gray-100 hover:border-[#c9a870]/30 hover:shadow-sm transition-all">
-                      <div className="flex items-start justify-between gap-4">
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <span className="font-semibold text-gray-900">{r.name}</span>
-                            <span style={{ backgroundColor: '#f0faf5', color: '#1a6b3c' }} className="text-xs font-medium px-2 py-0.5 rounded-full">
-                              Halal ✓
-                            </span>
-                          </div>
-                          <p className="text-xs text-gray-400 mt-1">📍 {r.address}</p>
-                          <p className="text-sm text-gray-600 mt-2 line-clamp-2">{r.description}</p>
-                        </div>
-                        <div className="shrink-0 text-right">
-                          <div style={{ color: '#c9a870' }} className="text-sm">{'★'.repeat(Math.floor(r.rating))}</div>
-                          <div className="text-xs text-gray-400">{r.rating}/5</div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-            )}
+        {match && (
+          <>
+            <div className="mb-8">
+              <div className="flex items-baseline justify-between gap-4 mb-2">
+                <h2
+                  className="text-3xl font-bold"
+                  style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1a3a2a' }}
+                >
+                  Résultats pour « {match.city} »
+                </h2>
+                <span className="text-sm text-gray-400 shrink-0">{totalResults} résultats</span>
+              </div>
+              <p className="text-gray-500 text-sm">{match.country} · {match.restaurantHalalCount.toLocaleString('fr-FR')}+ restaurants halal · {match.mosqueeCount.toLocaleString('fr-FR')} mosquées</p>
+              <Link
+                href={`/destinations/${match.slug}`}
+                className="inline-block mt-2 text-sm font-medium hover:underline"
+                style={{ color: '#c9a870' }}
+              >
+                Voir le guide complet →
+              </Link>
+            </div>
 
-            {/* Mosquées */}
-            {showMosques && mosques.length > 0 && (
-              <section>
-                {filter === 'all' && (
-                  <h3 className="text-xs font-bold text-gray-500 mb-3 uppercase tracking-widest">
-                    Mosquées
-                  </h3>
-                )}
-                <div className="space-y-3">
-                  {mosques.map((m, i) => (
-                    <div key={i} className="bg-white rounded-2xl p-5 border border-gray-100 hover:border-blue-100 hover:shadow-sm transition-all">
-                      <div className="flex items-start justify-between gap-4">
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2 flex-wrap">
-                            <span className="font-semibold text-gray-900">{m.name}</span>
-                            <span className="bg-blue-50 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">
-                              Mosquée
-                            </span>
-                          </div>
-                          <p className="text-xs text-gray-400 mt-1">📍 {m.address}</p>
-                          <p className="text-sm text-gray-600 mt-2 line-clamp-2">{m.description}</p>
-                        </div>
-                        <div className="shrink-0 text-right">
-                          <div style={{ color: '#c9a870' }} className="text-sm">{'★'.repeat(Math.floor(m.rating))}</div>
-                          <div className="text-xs text-gray-400">{m.rating}/5</div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {showRestaurants && restaurants.map((r, i) => (
+                <div key={`r-${i}`} className="bg-white rounded-2xl p-5 border border-gray-100 hover:border-[#c9a870]/30 hover:shadow-sm transition-all">
+                  <p style={{ color: '#c9a870' }} className="text-[10px] font-bold uppercase tracking-widest mb-2">
+                    Restaurant halal
+                  </p>
+                  <h3 className="font-semibold text-gray-900 text-base mb-1">{r.name}</h3>
+                  <p className="text-xs text-gray-400 mb-1">📍 {r.address}</p>
+                  <div className="flex items-center gap-2 text-xs text-gray-500">
+                    <span style={{ color: '#c9a870' }}>★</span>
+                    <span>{r.rating}/5</span>
+                  </div>
                 </div>
-              </section>
-            )}
+              ))}
+
+              {showMosques && mosques.map((m, i) => (
+                <div key={`m-${i}`} className="bg-white rounded-2xl p-5 border border-gray-100 hover:border-blue-100 hover:shadow-sm transition-all">
+                  <p style={{ color: '#3b82f6' }} className="text-[10px] font-bold uppercase tracking-widest mb-2">
+                    Mosquée
+                  </p>
+                  <h3 className="font-semibold text-gray-900 text-base mb-1">{m.name}</h3>
+                  <p className="text-xs text-gray-400 mb-1">📍 {m.address}</p>
+                  <div className="flex items-center gap-2 text-xs text-gray-500">
+                    <span style={{ color: '#c9a870' }}>★</span>
+                    <span>{m.rating}/5</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </>
         )}
       </div>
