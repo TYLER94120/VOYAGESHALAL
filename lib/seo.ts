@@ -60,7 +60,7 @@ export function buildDestinationSchema(destination: {
     '@type': 'TouristDestination',
     name: `${destination.city}, ${destination.country}`,
     description: destination.description,
-    image: `${SITE_URL}${destination.coverImage}`,
+    image: destination.coverImage,
     url: `${SITE_URL}/destinations/${destination.city.toLowerCase()}`,
     touristType: 'Voyageurs musulmans',
   }
@@ -79,7 +79,7 @@ export function buildArticleSchema(article: {
     '@type': 'Article',
     headline: article.title,
     description: article.description,
-    image: `${SITE_URL}${article.coverImage}`,
+    image: article.coverImage,
     datePublished: article.publishedAt,
     publisher: {
       '@type': 'Organization',
@@ -90,7 +90,9 @@ export function buildArticleSchema(article: {
   }
 }
 
-export function buildBreadcrumbSchema(items: { name: string; url: string }[]) {
+export function buildBreadcrumbSchema(
+  items: { name: string; url: string }[]
+) {
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -99,6 +101,34 @@ export function buildBreadcrumbSchema(items: { name: string; url: string }[]) {
       position: index + 1,
       name: item.name,
       item: `${SITE_URL}${item.url}`,
+    })),
+  }
+}
+
+export function buildWebSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: DEFAULT_DESCRIPTION,
+    inLanguage: 'fr-FR',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/search?q={search_term_string}` },
+      'query-input': 'required name=search_term_string',
+    },
+  }
+}
+
+export function buildFAQSchema(faqs: { question: string; answer: string }[]) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
     })),
   }
 }
