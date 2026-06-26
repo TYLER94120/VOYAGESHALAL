@@ -43,7 +43,7 @@ export default function Header() {
               href="/application"
               className="bg-[#1a3a2a] text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-[#2d5a3d] transition-colors"
             >
-              L'application
+              L&apos;application
             </Link>
           </div>
 
@@ -75,7 +75,7 @@ export default function Header() {
               className="mt-3 block text-center bg-[#1a3a2a] text-white px-4 py-2 rounded-full text-sm font-semibold"
               onClick={() => setIsOpen(false)}
             >
-              L'application
+              L&apos;application
             </Link>
           </div>
         )}

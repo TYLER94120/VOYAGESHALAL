@@ -97,7 +97,7 @@ export default function OmraPage() {
               <em style={{ color: '#c9a870', fontStyle: 'italic' }}>pèlerinage</em> sereinement
             </h1>
             <p className="text-white/60 text-base max-w-xl leading-relaxed mb-10">
-              Visa, forfaits, rituels, budget, agences — tout ce qu'il faut savoir pour vivre une Omra spirituellement intense et pratiquement parfaite.
+              Visa, forfaits, rituels, budget, agences — tout ce qu&apos;il faut savoir pour vivre une Omra spirituellement intense et pratiquement parfaite.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -140,7 +140,7 @@ export default function OmraPage() {
           </div>
         </section>
 
-        {/* Les 5 étapes de l'Omra */}
+        {/* Les 5 étapes */}
         <section style={{ backgroundColor: '#f5f0e8' }} className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-3 text-center">Rituels</p>
@@ -148,7 +148,7 @@ export default function OmraPage() {
               className="text-3xl font-bold text-center mb-12"
               style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1a3a2a' }}
             >
-              Les 5 étapes de l'Omra
+              Les 5 étapes de l&apos;Omra
             </h2>
             <div className="space-y-4">
               {STEPS.map((step) => (
@@ -214,7 +214,7 @@ export default function OmraPage() {
               className="text-2xl font-bold text-center mb-10"
               style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1a3a2a' }}
             >
-              Questions fréquentes sur l'Omra
+              Questions fréquentes sur l&apos;Omra
             </h2>
             <div className="space-y-4">
               {FAQS.map((faq, i) => (
