@@ -19,13 +19,13 @@ export const destinations: Destination[] = [
       {
         name: 'Hamdi Restaurant',
         address: 'Kalçın Sk. No:17, Eminönü',
-        description: "Fondé en 1970, Hamdi est une institution istanbuliote. Cuisine turque traditionnelle avec une vue imprenable sur la Corne d'Or et le pont de Galata. Spécialité : kebab d'agneau au four.",
+        description: 'Fondé en 1970, Hamdi est une institution istanbuliote. Cuisine turque traditionnelle avec une vue imprenable sur la Corne d\'Or et le pont de Galata. Spécialité : kebab d\'agneau au four.',
         rating: 4.7,
       },
       {
         name: 'Develi Bakliyat',
         address: 'Samatya, Fatih',
-        description: "Spécialiste du kebab depuis 1912, entièrement halal. L'une des plus vieilles adresses de viande grillée d'Istanbul. Incontournable pour découvrir les saveurs anatoliennes authentiques.",
+        description: 'Spécialiste du kebab depuis 1912, entièrement halal. L\'une des plus vieilles adresses de viande grillée d\'Istanbul. Incontournable pour découvrir les saveurs anatoliennes authentiques.',
         rating: 4.5,
       },
       {
@@ -39,13 +39,13 @@ export const destinations: Destination[] = [
       {
         name: 'Mosquée Bleue (Sultan Ahmed Camii)',
         address: 'Sultanahmet Meydanı No:7, Fatih',
-        description: "Chef-d'œuvre de l'architecture ottomane du XVIIe siècle. Ses 6 minarets et son immense dôme central en font l'une des mosquées les plus spectaculaires du monde. Ouverte aux visiteurs en dehors des heures de prière.",
+        description: 'Chef-d\'œuvre de l\'architecture ottomane du XVIIe siècle. Ses 6 minarets et son immense dôme central en font l\'une des mosquées les plus spectaculaires du monde. Ouverte aux visiteurs en dehors des heures de prière.',
         rating: 4.9,
       },
       {
         name: 'Mosquée Süleymaniye',
         address: 'Prof. Sıddık Sami Onar Cd., Fatih',
-        description: "Commandée par Soliman le Magnifique et achevée en 1557, c'est la plus grande mosquée d'Istanbul. Son complexe comprend une medersa, un hammam et le tombeau du sultan. Vue panoramique sur la Corne d'Or depuis les jardins.",
+        description: 'Commandée par Soliman le Magnifique et achevée en 1557, c\'est la plus grande mosquée d\'Istanbul. Son complexe comprend une medersa, un hammam et le tombeau du sultan. Vue panoramique sur la Corne d\'Or depuis les jardins.',
         rating: 4.8,
       },
     ],
@@ -57,7 +57,7 @@ export const destinations: Destination[] = [
       },
       {
         name: 'Grand Bazar (Kapalıçarşı)',
-        description: "L'un des plus anciens et des plus grands marchés couverts du monde avec plus de 4 000 boutiques. Épices, tapis, bijoux, céramiques et textiles. Un voyage sensoriel unique.",
+        description: 'L\'un des plus anciens et des plus grands marchés couverts du monde avec plus de 4 000 boutiques. Épices, tapis, bijoux, céramiques et textiles. Un voyage sensoriel unique.',
         duration: '2–3 heures',
       },
       {
@@ -82,7 +82,7 @@ export const destinations: Destination[] = [
     city: 'Marrakech',
     country: 'Maroc',
     slug: 'marrakech',
-    shortDescription: "La ville ocre, cœur de l'authenticité marocaine",
+    shortDescription: 'La ville ocre, cœur de l\'authenticité marocaine',
     description:
       "Marrakech est une destination halal naturelle par excellence. Dans ce pays à majorité musulmane, le halal n'est pas un filtre de recherche mais la norme absolue : chaque restaurant, chaque hôtel, chaque marché respecte les préceptes islamiques sans que vous ayez à le vérifier. La médina de Marrakech, classée au patrimoine mondial de l'UNESCO, vous plonge dans un labyrinthe de ruelles ocres où mosquées millénaires, souks d'artisans et riads somptueux se succèdent. Une destination idéale pour les familles, les couples et les voyageurs en quête d'authenticité islamique et de richesse culturelle.",
     coverImage: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80',
@@ -101,135 +101,180 @@ export const destinations: Destination[] = [
       },
       {
         name: 'Nomad',
-        address: '1 Derb Aarjan, Rahba Lakdima',
-        description: "Restaurant contemporain sur le toit avec vue plongeante sur les souks. Cuisine marocaine revisitée avec des influences méditerranéennes. L'une des meilleures terrasses de la médina.",
+        address: '1 Derb Aajane, Médina',
+        description: 'Le restaurant contemporain de référence à Marrakech. Cuisine marocaine moderne sur une terrasse avec vue sur les toits de la médina. Parfait pour un déjeuner élégant.',
         rating: 4.5,
       },
       {
-        name: 'Café de France',
-        address: 'Place Jemaa el-Fna',
-        description: 'Terrasse iconique donnant sur la place Jemaa el-Fna. Idéal pour observer le spectacle permanent de la place tout en dégustant un thé à la menthe et une pastilla.',
-        rating: 4.2,
+        name: 'Chez Lamine Hadj Mustapha',
+        address: '304 Kennaria, Médina',
+        description: 'Une institution familiale depuis 3 générations. Les meilleures tangia (agneau cuit au four de potier) de Marrakech, dans une ambiance authentiquement locale. Aucun touriste ne connaît cet endroit — c\'est ce qui en fait la magie.',
+        rating: 4.8,
       },
     ],
     mosques: [
       {
         name: 'Mosquée Koutoubia',
-        address: 'Avenue Mohammed V',
-        description: "Symbole absolu de Marrakech, la Koutoubia domine la ville de son minaret de 70 mètres depuis le XIIe siècle. Monument le plus photographié du Maroc, visible depuis presque tous les points de la médina. Les non-musulmans ne peuvent pas entrer mais peuvent admirer l'extérieur.",
-        rating: 4.8,
+        address: 'Avenue Mohammed V, Médina',
+        description: 'L\'emblème de Marrakech — son minaret de 70 mètres domine toute la ville. Construite au XIIe siècle, elle est considérée comme le modèle de l\'architecture hispano-mauresque. Accès réservé aux musulmans pour la prière.',
+        rating: 4.9,
       },
       {
-        name: 'Mosquée Ben Youssef',
-        address: 'Rue Assaba, Médina',
-        description: "L'une des plus grandes et des plus anciennes mosquées de Marrakech, fondée au XIIe siècle. Sa médersa attenante (école coranique) est ouverte aux visiteurs et constitue un joyau d'architecture hispano-mauresque.",
-        rating: 4.6,
+        name: 'Médersa Ben Youssef',
+        address: 'Kaat Benahid, Médina',
+        description: 'L\'ancienne école coranique la plus grande du Maghreb. Son architecture intérieure est d\'une beauté époustouflante : zelliges multicolores, stuc sculpté et cèdre ouvragé. Ouverte aux visiteurs.',
+        rating: 4.7,
       },
     ],
     activities: [
       {
-        name: 'Médina et souks',
-        description: 'Plonger dans le labyrinthe de la médina médiévale classée UNESCO : souk des tanneurs, souk des épices, souk des bijoutiers. Chaque artisan travaille selon des techniques transmises de génération en génération.',
-        duration: 'Demi-journée',
-      },
-      {
-        name: 'Jardins Majorelle',
-        description: 'Oasis de verdure et de couleurs créée par le peintre Jacques Majorelle en 1924, restaurée par Yves Saint Laurent. Le musée berbère adjacent présente une collection exceptionnelle de bijoux et textiles berbères.',
-        duration: '2 heures',
-      },
-      {
         name: 'Place Jemaa el-Fna',
-        description: "Classée patrimoine immatériel de l'humanité par l'UNESCO, cette place est un spectacle vivant : conteurs, musiciens, herboristes, diseuses de bonne aventure s'y retrouvent chaque soir.",
-        duration: 'Soirée',
+        description: 'Le cœur palpitant de Marrakech. Le jour : acrobates, charmeurs de serpents et conteurs. La nuit : les stands de restauration envahissent la place, créant le plus grand restaurant en plein air au monde. Classée au patrimoine culturel immatériel de l\'UNESCO.',
+        duration: '2–4 heures (soir recommandé)',
+      },
+      {
+        name: 'Jardins de la Majorelle',
+        address: 'Rue Yves Saint Laurent',
+        description: 'Oasis botanique de 2,5 hectares créée par le peintre Jacques Majorelle et restaurée par Yves Saint Laurent. Bambous géants, cactus centenaires et le bleu Majorelle emblématique.',
+        duration: '1–2 heures',
       },
     ],
     relatedArticles: [
-      { slug: 'lune-de-miel-halal', title: 'Lune de miel halal : 10 destinations romantiques', type: 'guide' },
-      { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
+      { slug: 'marrakech-guide-halal', title: 'Guide halal Marrakech 2026', type: 'guide' },
+      { slug: 'lune-de-miel-halal', title: 'Lune de miel halal : destinations romantiques', type: 'guide' },
     ],
     tips: [
-      'Tout est halal au Maroc — aucune inquiétude alimentaire, y compris dans les restaurants d\'hôtels internationaux.',
-      'Négocier est une pratique culturelle dans les souks. Le prix affiché est toujours le prix de départ, jamais le prix final.',
-      'Se méfier des faux guides aux abords de la médina qui proposent de vous montrer les souks pour un "pourboire symbolique".',
-      'Les riads offrent une expérience d\'hébergement authentique et souvent plus économique que les hôtels de chaîne.',
-      'La place Jemaa el-Fna est à son meilleur au coucher du soleil — arriver vers 18h pour voir la transformation.',
+      'Dans la médina, tout est halal — ne pas perdre de temps à vérifier.',
+      'Négocier est une pratique culturelle — ne jamais payer le premier prix dans les souks.',
+      'Prendre un guide local pour la médina : cela évite de se perdre et enrichit la visite de récits historiques.',
+      'Éviter les faux guides qui s\'approchent spontanément — opter pour les agences agréées.',
+      'Le meilleur moment pour Jemaa el-Fna : au coucher du soleil, avec l\'appel à la prière de la Koutoubia en fond sonore.',
     ],
   },
   {
-    city: 'Dubaï',
+    city: 'Dubai',
     country: 'Émirats Arabes Unis',
     slug: 'dubai',
-    shortDescription: 'Modernité et luxe au cœur du Golfe',
+    shortDescription: 'Luxe, modernité et halal certifié dans la ville du futur',
     description:
-      "Dubaï incarne la vision la plus ambitieuse du monde halal contemporain. Émirat musulman à 100 %, la ville a développé une infrastructure halal d'une exhaustivité rare : certification obligatoire pour tous les restaurants, hôtels aux menus halal complets, plages et piscines avec horaires séparés sur demande, banque islamique, et même un label 'Muslim-Friendly Tourism' officiel. Gratte-ciels futuristes, désert à 45 minutes du centre, plages immaculées du Golfe et shopping de luxe se combinent dans une destination qui attire chaque année des millions de voyageurs musulmans du monde entier, notamment des familles françaises et maghrébines.",
+      "Dubaï est la destination halal la plus sophistiquée de la planète. Dans cet État islamique, la certification halal est obligatoire pour tous les établissements de restauration — une garantie unique qui permet de manger en toute confiance dans n'importe quel restaurant. La ville combine des gratte-ciels futuristes, des plages de sable blanc, le shopping de luxe et des musées de classe mondiale dans un cadre entièrement conforme aux valeurs islamiques. La Mosquée Jumeirah, ouverte aux non-musulmans, est l'une des plus belles de la région. Pour les familles aisées et les couples cherchant l'excellence, Dubaï est une évidence.",
     coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
     halalScore: 5,
-    mosqueeCount: 700,
-    restaurantHalalCount: 10000,
+    mosqueeCount: 800,
+    restaurantHalalCount: 12000,
     population: '3.5 millions',
     bestTime: 'Novembre–avril',
-    tags: ['Luxe', 'Shopping', 'Architecture', 'Désert'],
+    tags: ['Luxe', 'Shopping', 'Architecture', 'Famille'],
     restaurants: [
       {
-        name: 'Nobu Dubai',
-        address: 'Atlantis The Palm, Crescent Road',
-        description: "Version halal du célèbre restaurant japonais de fusion du chef Nobu Matsuhisa. L'une des rares adresses gastronomiques de renommée mondiale à proposer une carte entièrement certifiée halal.",
-        rating: 4.7,
-      },
-      {
         name: 'Al Fanar Restaurant & Café',
-        address: 'Festival City Mall · Dubai Festival City',
-        description: 'La référence pour la cuisine émiratie traditionnelle. Décor rétro inspiré des années 1960 à Dubaï, carte authentique : harees (porridge de viande), majboos (riz épicé), luqaimat (beignets au miel).',
+        address: 'Festival City Mall, Ras Al Khor',
+        description: 'Cuisine émiratie traditionnelle authentique dans un décor reconstituant le Dubaï des années 60. Harrisa, machboos et lukaimat — l\'endroit idéal pour découvrir la gastronomie locale certifiée halal.',
         rating: 4.5,
       },
       {
-        name: 'Logma',
-        address: 'Box Park, Al Wasl Road, Jumeirah',
-        description: 'Cuisine émiratie contemporaine dans un cadre décontracté. Idéal pour découvrir la gastronomie du Golfe avec une touche moderne. Le petit-déjeuner chausson balaleet (vermicelles sucrés) est une expérience unique.',
-        rating: 4.4,
+        name: 'Arabian Tea House',
+        address: 'Al Fahidi, Bur Dubai',
+        description: 'Niché dans le quartier historique d\'Al Fahidi, ce restaurant-café sert une cuisine émiratie traditionnelle dans une maison en corail du XIXe siècle. Petit-déjeuner balaleet (vermicelles sucrés) incontournable.',
+        rating: 4.7,
       },
     ],
     mosques: [
       {
-        name: 'Grande Mosquée de Jumeirah (Jumeirah Mosque)',
-        address: 'Jumeirah Beach Road, Al Jumeirah 1',
-        description: 'La plus belle et la plus célèbre mosquée de Dubaï, construite dans le style fatimide égyptien. Remarquable par ses deux minarets et son grand dôme central éclairés la nuit. Unique à Dubaï à être ouverte aux visiteurs non-musulmans avec visites guidées organisées.',
+        name: 'Mosquée Jumeirah',
+        address: 'Jumeirah Beach Road',
+        description: 'L\'une des plus grandes et des plus belles mosquées de Dubaï. Particularité unique : elle est ouverte aux visiteurs non-musulmans avec des visites guidées organisées par le Centre pour la Compréhension Culturelle (SMCCU). Architecture néo-fatimide magnifique.',
         rating: 4.9,
-      },
-      {
-        name: 'Mosquée Al Farooq Omar bin Al Khattab',
-        address: 'Sheikh Khalifa Bin Zayed Road, Al Safa 1',
-        description: 'Surnommée la "Mini-Mosquée du Prophète" pour son architecture inspirée de Médine, elle peut accueillir 2 000 fidèles. Son dôme central de 21 mètres et ses 21 dômes secondaires en font un monument architectural remarquable.',
-        rating: 4.7,
       },
     ],
     activities: [
       {
-        name: 'Burj Khalifa — At The Top',
-        description: "Montée au sommet du plus haut bâtiment du monde (828 m) pour une vue à 360° sur Dubaï, le Golfe Persique et les Émirats. Réserver à l'avance en ligne pour bénéficier des meilleurs tarifs.",
+        name: 'Burj Khalifa',
+        description: 'La tour la plus haute du monde (828 mètres). Les plateformes d\'observation At the Top offrent une vue à 360° sur le désert, le Golfe Persique et la skyline de Dubaï. Réserver en ligne pour éviter les queues.',
         duration: '2–3 heures',
       },
       {
-        name: 'Safari dans le désert',
-        description: "Excursion incontournable dans les dunes de l'Erg Al Uhaymir. Au programme : montée en dune, balade à dos de chameau, sandboard, puis dîner traditionnel bédouin sous les étoiles avec spectacle de danse du ventre.",
-        duration: 'Journée complète',
-      },
-      {
-        name: 'Vieux Dubaï (Al Fahidi & Deira)',
-        description: "Découverte de l'âme historique de Dubaï : le quartier Al Fahidi avec ses tours à vent en corail, la traversée en abra (barque traditionnelle) sur la Crique, et les souks aux épices et à l'or.",
-        duration: 'Demi-journée',
+        name: 'Old Dubai — Al Fahidi & Deira',
+        description: 'Le vieux Dubaï révèle son âme authentique : maisons en corail avec tours à vent (barjeel), abras (bateaux en bois) sur la Crique, souk de l\'or et souk des épices. Un contraste saisissant avec la modernité.',
+        duration: '3–4 heures',
       },
     ],
     relatedArticles: [
-      { slug: 'hotel-halal-tout-savoir', title: "Hôtel halal : tout ce qu'il faut savoir avant de réserver", type: 'guide' },
-      { slug: 'ramadan-voyage-guide', title: 'Voyager pendant le Ramadan : guide complet', type: 'guide' },
+      { slug: 'dubai-guide-halal-2026', title: 'Dubai halal : guide complet 2026', type: 'guide' },
+      { slug: 'hotel-halal-tout-savoir', title: 'Hôtel halal : tout ce qu\'il faut savoir', type: 'guide' },
     ],
     tips: [
-      "Tous les restaurants de Dubaï affichent leur certification halal — aucune inquiétude alimentaire même dans les enseignes internationales.",
-      "L'alcool est disponible uniquement dans les hôtels licenciés et bars — il est très facile de l'éviter, ce n'est jamais imposé.",
-      'Code vestimentaire : tenues couvrantes dans les espaces publics, les centres commerciaux et les mosquées. Les tenues de plage sont réservées aux zones balnéaires.',
-      "Pendant le Ramadan, l'ambiance est incomparable. Horaires décalés, mais prix souvent réduits dans les hôtels.",
-      'Les taxis sont fiables et économiques. Uber/Careem fonctionnent parfaitement. Éviter les taxis sans compteur.',
+      'Tous les restaurants de Dubaï sont halal certifiés par obligation légale — manger partout sans vérifier.',
+      'Le Ramadan à Dubaï est une expérience unique : iftar dans les grandes tentes des hôtels 5 étoiles, ambiance festive nocturne.',
+      'Le Dubai Metro est propre, climatisé et économique — eviter les taxis en heure de pointe.',
+      'Les plages publiques (Jumeirah Beach) sont gratuites et bien équipées.',
+      'Le Dubai Frame offre une vue spectaculaire pour beaucoup moins cher que le Burj Khalifa.',
+    ],
+  },
+  {
+    city: 'Médine',
+    country: 'Arabie Saoudite',
+    slug: 'medine',
+    shortDescription: 'La ville du Prophète ﷺ — deuxième lieu saint de l\'islam',
+    description:
+      "Médine (Al-Madinah Al-Munawwarah — la Ville Lumineuse) est la deuxième ville la plus sainte de l'islam, après La Mecque. C'est ici que le Prophète Mohammed ﷺ a émigré en 622, y a fondé la première communauté islamique et y repose pour l'éternité. La Mosquée du Prophète (Masjid an-Nabawi), avec son dôme vert caractéristique, est l'un des lieux les plus émouvants de la planète pour tout musulman. Chaque année, des millions de pèlerins viennent pour l'Omra et le Hajj, mais aussi pour le plaisir de prier dans cette mosquée bénie et de se recueillir sur la tombe du Prophète ﷺ.",
+    coverImage: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200&q=80',
+    halalScore: 5,
+    mosqueeCount: 2000,
+    restaurantHalalCount: 5000,
+    population: '1.4 million',
+    bestTime: 'Octobre–avril (éviter l\'été, 45°C)',
+    tags: ['Spiritualité', 'Pèlerinage', 'Islam', 'Omra', 'Hajj'],
+    restaurants: [
+      {
+        name: 'Restaurants de Qasr Al Diyafah',
+        address: 'Abraj Al Bait, près de Masjid an-Nabawi',
+        description: 'Complexe de restaurants proposant cuisine saoudienne et internationale halal certifiée, à quelques pas de la Mosquée du Prophète. Idéal pour les pèlerins souhaitant un repas entre les prières.',
+        rating: 4.3,
+      },
+      {
+        name: 'Kabab et Biryani Al Najd',
+        address: 'Quartier central, Médine',
+        description: 'Institution locale réputée pour ses brochettes d\'agneau et son biryani saoudien. Prix locaux, saveurs authentiques de la péninsule arabique.',
+        rating: 4.5,
+      },
+    ],
+    mosques: [
+      {
+        name: 'Masjid an-Nabawi (Mosquée du Prophète ﷺ)',
+        address: 'Centre de Médine',
+        description: 'La deuxième mosquée la plus importante de l\'islam. Construite par le Prophète ﷺ lui-même en 622, agrandie au fil des siècles, elle peut aujourd\'hui accueillir plus d\'un million de fidèles simultanément. Le dôme vert couvre le tombeau sacré du Prophète ﷺ.',
+        rating: 5.0,
+      },
+      {
+        name: 'Masjid Quba',
+        address: 'Quartier de Quba, Médine',
+        description: 'La toute première mosquée de l\'histoire de l\'islam, construite par le Prophète ﷺ à son arrivée à Médine en 622. Prier deux rakaat dans cette mosquée équivaut, selon un hadith, à la récompense d\'une Omra.',
+        rating: 4.9,
+      },
+    ],
+    activities: [
+      {
+        name: 'Montagne Uhud',
+        description: 'Site de la bataille d\'Uhud (625 après J.-C.), où 70 compagnons du Prophète ﷺ ont été martyrisés. Le cimetière des martyrs est un lieu de pèlerinage profondément émouvant.',
+        duration: '2–3 heures',
+      },
+      {
+        name: 'Musée de Médine (Al-Madinah Museum)',
+        description: 'Retraçant l\'histoire de la ville du Prophète ﷺ depuis les origines jusqu\'à nos jours. Maquettes, manuscrits et objets historiques exceptionnels.',
+        duration: '1–2 heures',
+      },
+    ],
+    relatedArticles: [
+      { slug: 'omra-2026-guide-complet', title: 'Guide complet de l\'Omra 2026', type: 'guide' },
+      { slug: 'ramadan-voyage-guide', title: 'Voyager pendant le Ramadan', type: 'guide' },
+    ],
+    tips: [
+      'Prière de la Fajr (aube) à Masjid an-Nabawi : une expérience spirituelle que les voyageurs décrivent comme la plus belle de leur vie.',
+      'Envoyer des salawat sur le Prophète ﷺ en permanence lors des visites des lieux saints.',
+      'S\'hydrater continuellement — la chaleur peut atteindre 45°C en été.',
+      'L\'eau de Zamzam est disponible gratuitement dans la mosquée — en rapporter pour les proches est une tradition.',
+      'Réserver l\'hôtel le plus proche de Masjid an-Nabawi pour minimiser les distances à pied entre les prières.',
     ],
   },
   {
@@ -238,206 +283,118 @@ export const destinations: Destination[] = [
     slug: 'kuala-lumpur',
     shortDescription: 'La capitale mondiale du tourisme halal certifié',
     description:
-      "Kuala Lumpur est régulièrement couronnée comme la meilleure destination du monde pour le tourisme halal par le Global Muslim Travel Index. La Malaisie dispose du système de certification halal le plus sophistiqué au monde, géré par JAKIM (Département des affaires islamiques) : chaque restaurant, chaque produit alimentaire, chaque hôtel doit obtenir et renouveler annuellement sa certification. Pour le voyageur musulman, c'est une liberté totale : manger n'importe où sans se poser de questions, trouver des salles de prière dans chaque centre commercial, bénéficier d'hôtels Muslim-friendly avec piscines séparées et cuisine halal certifiée. Tout cela dans une ville ultra-moderne, cosmopolite et à des prix très inférieurs à l'Europe.",
+      "Kuala Lumpur est la capitale mondiale du tourisme halal. La Malaisie est régulièrement classée première destination halal mondiale par le Global Muslim Travel Index — et KL en est le cœur battant. Le système de certification halal JAKIM (le plus rigoureux du monde) garantit que chaque restaurant certifié respecte scrupuleusement les préceptes islamiques. Ajoutez à cela une gastronomie exceptionnelle (fusion malaise-chinoise-indienne), les tours Petronas iconiques, une nature luxuriante et des prix très accessibles — KL s'impose comme une destination halal de référence en Asie.",
     coverImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&q=80',
     halalScore: 5,
-    mosqueeCount: 1000,
+    mosqueeCount: 500,
     restaurantHalalCount: 20000,
-    population: '8 millions',
-    bestTime: "Toute l'année · Éviter mousson (mai–octobre)",
-    tags: ['Halal certifié', 'Modernité', 'Nature', 'Shopping'],
+    population: '1.8 million (Grand KL : 8 millions)',
+    bestTime: 'Toute l\'année (éviter mousson mai–octobre)',
+    tags: ['Halal certifié', 'Gastronomie', 'Architecture', 'Shopping'],
     restaurants: [
       {
         name: 'Nasi Kandar Pelita',
-        address: 'Jalan Ampang (et plusieurs succursales)',
-        description: "Institution malaisienne ouverte 24h/24, 7j/7. Le nasi kandar est un plat de riz avec une sélection de curries et de fritures posés dessus. Incontournable pour s'imprégner de la culture culinaire malaisienne.",
+        address: 'Jalan Ampang (plusieurs adresses)',
+        description: 'L\'institution du nasi kandar malaisien, ouverte 24h/24. Riz basmati avec une vingtaine de currys et accompagnements halal certifiés JAKIM. Une expérience culinaire fondamentale à KL.',
         rating: 4.4,
       },
       {
-        name: 'Atmosphere 360°',
-        address: 'Menara KL Tower, Jalan Punchak',
-        description: 'Restaurant tournant au sommet de la tour KL avec vue panoramique sur la skyline de Kuala Lumpur. Buffet international halal certifié. Une expérience culinaire mémorable dans un cadre exceptionnel.',
-        rating: 4.5,
-      },
-    ],
-    mosques: [
-      {
-        name: 'Mosquée Nationale (Masjid Negara)',
-        address: 'Jalan Perdana, Tasik Perdana',
-        description: "La mosquée nationale de Malaisie, construite en 1965, symbole de l'indépendance du pays. Son toit en forme d'étoile à 18 branches et son minaret de 73 mètres sont devenus des icônes architecturales. Ouverte aux non-musulmans en dehors des heures de prière.",
-        rating: 4.7,
-      },
-      {
-        name: 'Mosquée de Cristal (Masjid Kristal)',
-        address: 'Pulau Wan Man, Kuala Terengganu',
-        description: 'À 5h de route de KL, cette mosquée construite en verre, acier et cristal au-dessus du lac Wan Man est l\'une des plus photogéniques de Malaisie. Vaut le détour pour un road trip.',
-        rating: 4.8,
-      },
-    ],
-    activities: [
-      {
-        name: 'Tours Petronas et KLCC',
-        description: "Les tours jumelles Petronas (452 m) dominent la skyline de KL depuis 1998. La passerelle du 41e étage offre une vue époustouflante. Le parc KLCC attenant est idéal pour une promenade au coucher du soleil.",
-        duration: '2–3 heures',
-      },
-      {
-        name: 'Grottes de Batu',
-        description: 'Site naturel et religieux hindou à 30 minutes du centre. Les impressionnantes cavernes calcaires abritent un temple et offrent une excursion nature et culture unique.',
-        duration: '2 heures',
-      },
-      {
-        name: 'Central Market et Chinatown',
-        description: "Le Central Market est le meilleur endroit pour acheter de l'artisanat malaisien authentique à prix raisonnables. Chinatown (Petaling Street) offre un dépaysement culinaire et culturel total.",
-        duration: 'Demi-journée',
-      },
-    ],
-    relatedArticles: [
-      { slug: 'hotel-halal-tout-savoir', title: "Hôtel halal : tout ce qu'il faut savoir avant de réserver", type: 'guide' as const },
-      { slug: 'voyage-halal-debutant', title: 'Guide complet du voyage halal pour débutants', type: 'guide' as const },
-    ],
-    tips: [
-      'Certification JAKIM = garantie absolue de halal. Si vous voyez ce logo, vous êtes sûr à 100 %.',
-      "Les centres commerciaux (Pavilion, KLCC, Mid Valley) disposent tous de food courts avec des dizaines d'options halal certifiées.",
-      "Les transports en commun (LRT, MRT, monorail) sont excellents et très économiques. La carte Touch 'n Go est indispensable.",
-      "Grab (l'Uber local) est la référence pour les déplacements. Bien moins cher que les taxis traditionnels.",
-      'La cuisine halal malaisienne est une fusion extraordinaire : influences malaises, chinoises et indiennes toutes certifiées halal.',
-    ],
-  },
-  {
-    city: 'Le Caire',
-    country: 'Égypte',
-    slug: 'le-caire',
-    shortDescription: 'La mère du monde, entre pyramides et minarets',
-    description:
-      "Le Caire est une expérience de voyage sans équivalent dans le monde islamique. Capitale de l'islam sunnite avec la vénérable université Al-Azhar (fondée en 970), berceau d'une des plus grandes civilisations antiques avec les pyramides de Gizeh et les trésors du musée égyptien, la ville conjugue avec une rare intensité spiritualité islamique et histoire millénaire. Avec ses 3 000 mosquées, ses marchés débordants de vie et sa gastronomie généreuse et 100 % halal, Le Caire est une immersion totale dans l'âme du monde arabe. Une destination pour les voyageurs curieux et aventuriers qui cherchent une expérience authentique, loin des clichés touristiques.",
-    coverImage: 'https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=1200&q=80',
-    halalScore: 5,
-    mosqueeCount: 3000,
-    restaurantHalalCount: 25000,
-    population: '21 millions',
-    bestTime: 'Octobre–avril',
-    tags: ['Histoire', 'Archéologie', 'Islam', 'Culture'],
-    restaurants: [
-      {
-        name: 'Koshary Abou Tarek',
-        address: '16 Maarouf St, Downtown Cairo',
-        description: "Institution cairote fondée en 1950, spécialisée dans le koshary — plat national égyptien à base de riz, lentilles, pâtes et sauce tomate épicée. File d'attente garantie mais prix dérisoires. Une expérience culinaire populaire et authentique.",
-        rating: 4.5,
-      },
-      {
-        name: 'Sequoia',
-        address: '3 Abu El Feda St, Zamalek',
-        description: 'Restaurant sur le Nil dans le quartier chic de Zamalek. Cuisine orientale et internationale dans un cadre élégant avec vue sur le fleuve. Idéal pour un dîner avec vue au coucher du soleil.',
+        name: 'Syed Bistro',
+        address: 'Jalan Tuanku Abdul Halim, Chow Kit',
+        description: 'Le meilleur nasi lemak de KL selon beaucoup de locaux. Riz à la noix de coco, anchois frits, œuf, sambal et poulet — le plat national malaisien dans sa version la plus authentique.',
         rating: 4.6,
       },
     ],
     mosques: [
       {
-        name: 'Mosquée et université Al-Azhar',
-        address: 'El-Darb El-Ahmar, Al-Azhar',
-        description: "Fondée en 970 par la dynastie fatimide, Al-Azhar est à la fois la plus vieille université en activité au monde et l'une des mosquées les plus importantes de l'islam sunnite. Centre mondial de la pensée islamique, elle attire des étudiants de plus de 100 pays. Architecture fatimide magnifiquement préservée.",
-        rating: 4.8,
-      },
-      {
-        name: 'Mosquée Ibn Tulun',
-        address: 'Tulun Square, El-Sayeda Zeinab',
-        description: "La plus ancienne mosquée du Caire encore debout (879 après J.-C.) et l'une des mieux préservées au monde. Son minaret à rampe hélicoïdale unique est une référence architecturale islamique mondiale. Vue panoramique sur Le Caire depuis le minaret.",
+        name: 'Masjid Negara (Mosquée Nationale)',
+        address: 'Jalan Perdana, Tasik Perdana',
+        description: 'La mosquée nationale de Malaisie, inaugurée en 1965. Son toit en forme d\'étoile à 18 branches et son minaret de 73 mètres sont des symboles architecturaux du pays. Capacité : 15 000 fidèles.',
         rating: 4.7,
       },
-    ],
-    activities: [
       {
-        name: 'Pyramides de Gizeh et Sphinx',
-        description: "La seule des Sept Merveilles du monde antique encore debout. Les trois pyramides de Khéops, Khéphren et Mykérinos avec le Grand Sphinx constituent un site archéologique d'une puissance émotionnelle incomparable. Préférer la visite tôt le matin ou en fin d'après-midi.",
-        duration: 'Journée complète',
-      },
-      {
-        name: 'Musée Égyptien',
-        description: 'Le plus grand musée d\'antiquités égyptiennes au monde avec 120 000 pièces, dont le trésor de Toutankhamon (masque funéraire en or massif, sarcophages, bijoux). Incontournable pour comprendre 5 000 ans de civilisation.',
-        duration: '3–4 heures',
-      },
-      {
-        name: 'Khan el-Khalili',
-        description: 'Grand souk historique fondé en 1382, véritable ville dans la ville. Orfèvres, marchands d\'épices, libraires de textes coraniques et cafés traditionnels comme le Fishawi (ouvert depuis 1773) s\'y succèdent dans un dédale de ruelles médiévales.',
-        duration: 'Demi-journée',
-      },
-    ],
-    relatedArticles: [
-      { slug: 'ramadan-voyage-guide', title: 'Voyager pendant le Ramadan : guide complet', type: 'guide' as const },
-      { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' as const },
-    ],
-    tips: [
-      "L'Égypte est à 90 % musulmane — tout est halal sans exception, y compris les restaurants de chaînes internationales.",
-      'Négocier est indispensable pour tout : taxis, calèches, entrées de sites, souvenirs. Toujours demander le prix avant.',
-      "Boire exclusivement de l'eau en bouteille — éviter l'eau du robinet et les glaçons dans les établissements peu soignés.",
-      'Le trafic cairote est légendaire. Prévoir le double du temps estimé pour tous les déplacements.',
-      "Les sites archéologiques sont souvent mieux tôt le matin (avant 9h) ou en fin de journée (après 15h) pour éviter chaleur et foule.",
-    ],
-  },
-  {
-    city: 'Médine',
-    country: 'Arabie Saoudite',
-    slug: 'medine',
-    shortDescription: "La ville du Prophète ﷺ, cœur spirituel de l'islam",
-    description:
-      "Médine (Al-Madinah Al-Munawwarah, 'la ville lumineuse') est la deuxième ville sainte de l'islam. C'est là que le Prophète Mohammed ﷺ se réfugia lors de l'Hégire en 622, qu'il fonda la première communauté islamique, et qu'il repose depuis sa mort en 632. Visiter Médine, c'est entreprendre un voyage spirituel d'une profondeur rare : se recueillir devant le tombeau du Prophète ﷺ dans la Mosquée an-Nabawi, prier dans la mosquée Quba (la première de l'histoire), marcher sur les lieux où l'islam a pris racine. L'infrastructure moderne de la ville (hôtels de luxe, transports, commodités) permet un séjour confortable, entièrement dédié à la spiritualité et au recueillement.",
-    coverImage: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200&q=80',
-    halalScore: 5,
-    mosqueeCount: 2000,
-    restaurantHalalCount: 5000,
-    population: '1.5 million',
-    bestTime: 'Septembre–avril · Éviter Hajj si non pèlerin',
-    tags: ['Spiritualité', 'Pèlerinage', 'Islam', 'Umrah'],
-    restaurants: [
-      {
-        name: 'Restaurants Al-Ansar',
-        address: 'Quartier central, proximité Masjid an-Nabawi',
-        description: 'Cuisine saoudienne et yéménite traditionnelle à deux pas de la mosquée du Prophète. Spécialités : mandi (riz et viande fumée), kabsa (riz aux épices), harees. Atmosphère de recueillement et de fraternité islamique.',
-        rating: 4.3,
-      },
-      {
-        name: 'Buffets des grands hôtels',
-        address: 'Hilton, Anwar Al-Madinah Mövenpick, Pullman Zamzam',
-        description: 'Les hôtels 5 étoiles autour de la mosquée proposent des buffets internationaux halal certifiés, idéaux pour les familles et les groupes. Pratique pour les nuits de Ramadan avec iftar et suhoor organisés.',
-        rating: 4.5,
-      },
-    ],
-    mosques: [
-      {
-        name: 'Masjid an-Nabawi (Mosquée du Prophète)',
-        address: 'Centre-ville de Médine',
-        description: "Deuxième site le plus saint de l'islam. La mosquée originelle fut construite par le Prophète Mohammed ﷺ lui-même en 622. Elle abrite aujourd'hui son tombeau (la Chambre Verte), ainsi que les tombeaux d'Abou Bakr et d'Omar. Avec une capacité d'accueil de plus d'un million de fidèles après ses agrandissements successifs, c'est l'une des plus grandes mosquées du monde.",
-        rating: 5.0,
-      },
-      {
-        name: 'Masjid Quba',
-        address: 'Quartier de Quba, Médine',
-        description: "La toute première mosquée construite dans l'histoire de l'islam, édifiée par le Prophète ﷺ lui-même lors de son arrivée à Médine en 622. Prier deux rakaat dans Masjid Quba équivaut à la récompense d'une Umrah selon un hadith authentique.",
-        rating: 4.8,
+        name: 'Masjid Jamek',
+        address: 'Jalan Tun Perak',
+        description: 'La plus ancienne mosquée de Kuala Lumpur (1909), construite à la confluence des rivières Klang et Gombak — le site où fut fondée la ville. Architecture moghole, briques roses, atmosphère sereine.',
+        rating: 4.6,
       },
     ],
     activities: [
       {
-        name: 'Visite de Masjid al-Qiblatayn',
-        description: "La \"mosquée des deux Qiblas\" où le Prophète ﷺ reçut l'ordre divin de changer la direction de la prière de Jérusalem vers La Mecque. Monument historique islamique de première importance.",
-        duration: '1 heure',
+        name: 'Tours Petronas',
+        description: 'Les tours jumelles les plus hautes du monde de 1998 à 2004 (452 mètres). La passerelle Sky Bridge au 41e étage offre une vue saisissante. Le Suria KLCC en bas est un centre commercial de luxe avec des restaurants halal certifiés JAKIM.',
+        duration: '2–3 heures',
       },
       {
-        name: 'Montagne Uhud',
-        description: "Site de la célèbre bataille d'Uhud (625 après J.-C.). On peut visiter la tombe des martyrs, notamment celle de Hamza ibn Abd al-Muttalib (oncle du Prophète ﷺ). Un lieu de recueillement profond pour tout musulman.",
+        name: 'Batu Caves',
+        description: 'Temple hindou monumental dans des grottes calcaires — l\'attraction touristique la plus visitée de Malaisie. Bien que hindou, c\'est un témoignage de la diversité religieuse harmonieuse de la Malaisie.',
         duration: '2 heures',
       },
     ],
     relatedArticles: [
-      { slug: 'omra-2026-guide-complet', title: 'Omra 2026 : guide complet pour préparer votre pèlerinage', type: 'guide' as const },
-      { slug: 'ramadan-voyage-guide', title: 'Voyager pendant le Ramadan : guide complet', type: 'guide' as const },
+      { slug: 'malaisie-halal-destination', title: 'Malaisie : la destination n°1 mondiale pour les musulmans', type: 'guide' },
+      { slug: 'hotel-halal-tout-savoir', title: 'Hôtel halal : tout ce qu\'il faut savoir', type: 'guide' },
     ],
     tips: [
-      "Médine est accessible uniquement aux musulmans — aucun non-musulman n'est autorisé à entrer dans la ville sainte.",
-      'Tenue islamique strictement obligatoire en tout temps. La modestie est une marque de respect envers les lieux saints.',
-      'Réserver les hôtels 3 à 6 mois à l\'avance pendant Ramadan et la période du Hajj — les places sont rares et les prix triplent.',
-      'Les horaires de prière à la Mosquée du Prophète sont l\'axe de la journée — tout le programme s\'organise autour d\'eux.',
-      'Apporter un stock de chapelets (tasbih) et de livres de douas (invocations) pour profiter pleinement de la dimension spirituelle du séjour.',
+      'La carte Touch\'n Go est indispensable pour les transports en commun (LRT, MRT, Monorail, bus).',
+      'Grab est l\'application de transport de référence — fiable et moins cher que les taxis.',
+      'Les food courts des centres commerciaux (Suria KLCC, Pavilion, Mid Valley) proposent des dizaines de cuisines halal certifiées.',
+      'Visiter Batu Caves à l\'ouverture (6h30) pour éviter la chaleur et la foule.',
+      'KL est une ville de shopping extraordinaire — les prix sont souvent 30 à 50% moins chers qu\'en Europe.',
+    ],
+  },
+  {
+    city: 'Bali',
+    country: 'Indonésie',
+    slug: 'bali',
+    shortDescription: 'L\'île des dieux, une oasis halal inattendue',
+    description:
+      "Bali surprend agréablement les voyageurs musulmans. Cette île principalement hindoue d'Indonésie — le plus grand pays musulman du monde — dispose d'une infrastructure halal solide, notamment dans les zones touristiques de Seminyak, Kuta et Ubud. Les restaurants halal certifiés sont nombreux (kebab, nasi goreng halal, poulpe grillé halal) et facilement identifiables. L'île offre en plus des paysages d'une beauté incomparable : rizières en terrasse, temples sur l'océan, volcans et plages paradisiaques. Bali est la preuve qu'une destination non-musulmane peut être parfaitement accessible.",
+    coverImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80',
+    halalScore: 3,
+    mosqueeCount: 200,
+    restaurantHalalCount: 500,
+    population: '4.4 millions',
+    bestTime: 'Avril–octobre (saison sèche)',
+    tags: ['Nature', 'Temples', 'Plage', 'Rizières'],
+    restaurants: [
+      {
+        name: 'Warung Halal Seminyak',
+        address: 'Jalan Laksmana, Seminyak',
+        description: 'Le meilleur restaurant halal de Seminyak, reconnaissable à son label halal MUI affiché en vitrine. Spécialités indonésiennes : nasi goreng, mie goreng, satay — saveurs locales authentiques.',
+        rating: 4.3,
+      },
+    ],
+    mosques: [
+      {
+        name: 'Masjid Raya Ukhuwah Islamiyah',
+        address: 'Jalan Gunung Agung, Denpasar',
+        description: 'La plus grande mosquée de Bali, dans le quartier de Denpasar. Capacité de plusieurs milliers de fidèles. Point de repère pour la communauté musulmane balinaise.',
+        rating: 4.5,
+      },
+    ],
+    activities: [
+      {
+        name: 'Rizières de Tegallalang',
+        description: 'Les rizières en terrasse les plus photographiées de Bali. L\'ingénieux système d\'irrigation subak, classé au patrimoine UNESCO, crée des paysages à couper le souffle.',
+        duration: '2 heures',
+      },
+      {
+        name: 'Temple Tanah Lot',
+        description: 'L\'un des temples balinais les plus emblématiques, perché sur un rocher en bord de mer. Le coucher du soleil depuis Tanah Lot est l\'un des plus beaux de Bali.',
+        duration: '2 heures',
+      },
+    ],
+    relatedArticles: [
+      { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
+      { slug: 'checklist-voyage-halal', title: 'Checklist voyage halal : ne rien oublier', type: 'guide' },
+    ],
+    tips: [
+      'Vérifier le label halal MUI (Majelis Ulama Indonesia) dans les restaurants — il est obligatoire et fiable.',
+      'Grab fonctionne à Bali et est l\'option de transport la plus pratique.',
+      'La saison des pluies (novembre–mars) rend certaines routes impraticables — eviter cette période.',
+      'Location de scooter : solution économique mais attention aux routes de montagne sinueuses.',
+      'Emporter une tenue couverte pour visiter les temples — sarong fourni à l\'entrée mais conserver une tenue modeste de base.',
     ],
   },
 ]
@@ -445,98 +402,123 @@ export const destinations: Destination[] = [
 export const guides: Guide[] = [
   {
     slug: 'voyage-halal-debutant',
-    title: 'Guide complet du voyage halal pour débutants',
+    title: 'Voyage halal pour débutants : tout ce qu\'il faut savoir avant de partir',
     description:
-      'Tout ce que vous devez savoir pour voyager halal en toute sérénité : alimentation certifiée, prière en voyage, hébergement halal-friendly et applications indispensables.',
-    coverImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80',
+      'Premier voyage halal ? Ce guide complet vous explique les fondamentaux : nourriture, prière, hébergement, destinations et applications indispensables.',
+    coverImage: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80',
     category: 'Pratique',
     readTime: '8 min',
-    publishedAt: '2026-01-10',
-    tags: ['Débutant', 'Pratique', 'Conseils'],
-    content: `<h2>Voyager halal : de quoi parle-t-on ?</h2>
-<p>Voyager halal, c'est organiser son séjour en accord avec les préceptes islamiques, sans pour autant se priver d'explorer le monde. L'islam est une religion de facilité : de nombreuses règles sont allégées pour le voyageur. Ce guide vous donne toutes les clés pour voyager sereinement.</p>
+    publishedAt: '2026-01-01',
+    tags: ['Débutant', 'Guide pratique', 'Conseils'],
+    content: `<h2>Qu'est-ce que le voyage halal ?</h2>
+<p>Le voyage halal désigne simplement un voyage organisé en tenant compte des préceptes islamiques. Pas d'alcool, nourriture halal, possibilité de prier, tenue modeste dans les lieux de culte — voici les quatre piliers d'un voyage halal réussi.</p>
 
-<h2>1. L'alimentation halal en voyage</h2>
-<p>La nourriture est la première préoccupation des voyageurs musulmans. Voici comment s'y retrouver selon les destinations :</p>
+<h2>Nourriture halal en voyage</h2>
+<p>Dans les pays à majorité musulmane (Turquie, Maroc, EAU, Malaisie, Indonésie...), la quasi-totalité de la nourriture est halal. La certification halal est la norme et non l'exception. Dans les pays non-musulmans, cherchez les labels HMC (UK), JAKIM (Malaisie) ou les certificats nationaux équivalents.</p>
 <ul>
-<li><strong>Dans les pays à majorité musulmane</strong> (Maroc, Turquie, Émirats, Malaisie, Égypte) : tout est halal par défaut. Aucune vérification nécessaire.</li>
-<li><strong>En Europe occidentale</strong> : chercher les restaurants certifiés halal. Le logo de certification (AVS, HMC, etc.) doit être affiché.</li>
-<li><strong>Applications utiles</strong> : Zabihah, HalalTrip, Halal Navi permettent de localiser les restaurants halal certifiés dans le monde entier.</li>
-<li><strong>En cas de doute</strong> : optez pour la cuisine végétarienne, les fruits de mer ou les œufs — des alternatives halal universelles.</li>
+<li>Téléchargez l'application <strong>HalalTrip</strong> ou <strong>Zabihah</strong> pour trouver des restaurants halal certifiés dans le monde entier.</li>
+<li>Dans les supermarchés, cherchez le label halal ou optez pour les produits végétariens, le poisson et les fruits de mer.</li>
+<li>Les fast-foods halal (Nando's, certains McDonald's en pays musulmans) peuvent dépanner.</li>
 </ul>
 
-<h2>2. La prière en voyage : les facilités islamiques</h2>
-<p>L'islam facilite considérablement la prière pour le voyageur (mossafir) :</p>
+<h2>Comment prier en voyage ?</h2>
+<p>L'islam facilite la prière pour le voyageur :</p>
 <ul>
-<li><strong>Qasr</strong> : raccourcissement des prières de 4 rakaat à 2 (Dhuhr, Asr, Isha).</li>
-<li><strong>Jam'</strong> : regroupement de Dhuhr + Asr d'une part, et Maghrib + Isha d'autre part.</li>
-<li><strong>Qibla</strong> : l'application Muslim Pro ou Qibla Compass indique instantanément la direction de La Mecque depuis n'importe quel endroit du globe.</li>
-<li><strong>Salles de prière</strong> : disponibles dans la plupart des aéroports internationaux, centres commerciaux modernes et gares.</li>
+<li><strong>Qasr</strong> : le voyageur peut raccourcir les prières de 4 rakaat à 2.</li>
+<li><strong>Jam'</strong> : il peut regrouper Dhuhr + Asr ensemble, et Maghrib + Isha ensemble.</li>
+<li>Utilisez <strong>Muslim Pro</strong> pour les horaires de prière et la direction de la Qibla.</li>
+<li>Les aéroports internationaux disposent presque tous de salles de prière multireligieuses.</li>
 </ul>
 
-<h2>3. Choisir son hébergement halal-friendly</h2>
-<p>Un hôtel halal-friendly n'est pas forcément un hôtel islamique. Les critères à rechercher :</p>
+<h2>Hébergement halal</h2>
+<p>Pour un hébergement halal-friendly, recherchez :</p>
 <ul>
-<li>Absence de bar et de casino dans les parties communes</li>
-<li>Présence d'un restaurant avec options halal certifiées</li>
-<li>Disponibilité d'un tapis de prière et d'une indication Qibla en chambre</li>
-<li>Piscine avec créneaux séparés hommes/femmes (critère optionnel selon les familles)</li>
+<li>Hôtels sans alcool (standard dans la plupart des pays musulmans)</li>
+<li>Plateformes spécialisées : <strong>HalalBooking.com</strong> (18 000+ établissements), <strong>HalalTrip</strong></li>
+<li>Les riads au Maroc et les pensions familiales en Turquie sont culturellement halal sans certification</li>
 </ul>
-<p>Booking.com et HalalBooking.com permettent de filtrer sur ces critères.</p>
 
-<h2>4. Applications indispensables pour voyager halal</h2>
-<ul>
-<li><strong>Muslim Pro</strong> : horaires de prière, Qibla, Coran, compteur de tasbih</li>
-<li><strong>Zabihah</strong> : annuaire mondial des restaurants halal</li>
-<li><strong>HalalTrip</strong> : guide de voyage halal complet</li>
-<li><strong>Google Maps</strong> : chercher "halal restaurant" + ville</li>
-</ul>`,
+<h2>Les meilleures destinations halal pour débuter</h2>
+<ol>
+<li><strong>Turquie</strong> — Facile d'accès, halal à 99%, culture islamique riche, prix accessibles</li>
+<li><strong>Maroc</strong> — Proche de la France, halal naturel, gastronomie exceptionnelle</li>
+<li><strong>Malaisie</strong> — Halal certifié JAKIM = garantie absolue, modernité et nature</li>
+<li><strong>Émirats Arabes Unis</strong> — Luxe halal certifié, English spoken, sécurisé</li>
+</ol>`,
   },
   {
     slug: 'top-destinations-halal-2026',
-    title: 'Top 10 destinations halal 2026 : notre classement',
+    title: 'Top 10 des destinations halal en 2026 : notre sélection',
     description:
-      'Notre sélection des meilleures destinations de voyage halal pour 2026, de Istanbul à Kuala Lumpur. Classées par accessibilité, infrastructures halal et expérience globale.',
+      'Notre classement des 10 meilleures destinations pour les voyageurs musulmans en 2026, avec conseils pratiques et score halal.',
     coverImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80',
     category: 'Destinations',
     readTime: '6 min',
     publishedAt: '2026-01-15',
-    tags: ['Top', '2026', 'Destinations'],
-    content: `<h2>Pourquoi voyager halal est plus accessible que jamais en 2026</h2>
-<p>Le tourisme halal représente désormais un marché de plus de 220 milliards de dollars et continue de croître à un rythme de 8 % par an. Les destinations du monde entier adaptent leurs infrastructures pour accueillir les voyageurs musulmans. Voici notre classement 2026.</p>
+    tags: ['Top destinations', 'Classement', '2026'],
+    content: `<h2>Comment nous classons les destinations halal</h2>
+<p>Notre score halal repose sur 5 critères : disponibilité de nourriture halal, présence de mosquées, politique d'alcool, code vestimentaire, et accueil des voyageurs musulmans. Voici notre top 10 pour 2026.</p>
 
-<h2>1. Istanbul, Turquie — La valeur sûre absolue</h2>
-<p>Istanbul trône en tête de notre classement pour la 3e année consécutive. Cuisine 100 % halal, mosquées millénaires, histoire ottomane incomparable et prix abordables en font la destination préférée des Français musulmans.</p>
+<h2>1. Malaisie — La référence mondiale</h2>
+<p>La Malaisie conserve sa première place au Global Muslim Travel Index pour la 10e année consécutive. Certification JAKIM, gastronomie fusion extraordinaire, nature luxuriante et prix accessibles.</p>
 
-<h2>2. Kuala Lumpur, Malaisie — La capitale mondiale du halal</h2>
-<p>Certifiée et organisée comme aucune autre ville au monde. La certification JAKIM garantit une tranquillité d'esprit totale pour tous les aspects du séjour.</p>
+<h2>2. Turquie — La destination préférée des Français</h2>
+<p>Istanbul, Cappadoce, côte turquoise — la Turquie offre une diversité de paysages et une richesse culturelle islamique incomparable, le tout à 3h30 de vol.</p>
 
-<h2>3. Dubaï, Émirats Arabes Unis — Le luxe halal</h2>
-<p>La destination premium du voyage halal. Infrastructure irréprochable, modernité absolue et service 5 étoiles dans un cadre islamique assumé.</p>
+<h2>3. Émirats Arabes Unis — Le luxe halal absolu</h2>
+<p>Halal certifié par l'État, infrastructure hôtelière 5 étoiles, sécurité exemplaire. Dubaï et Abu Dhabi restent la référence pour les voyageurs exigeants.</p>
 
-<h2>4. Marrakech, Maroc — L'authenticité sans compromis</h2>
-<p>La France a un lien particulier avec le Maroc. Marrakech reste la destination halal la plus prisée des voyageurs français musulmans pour son accessibilité, sa culture et sa gastronomie.</p>
+<h2>4. Maroc — L'incontournable francophone</h2>
+<p>Proche, halal naturellement, langue française parlée, gastronomie de renom. Le Maroc est la destination halal la plus accessible pour les Français.</p>
 
-<h2>5. Le Caire, Égypte — Histoire et spiritualité réunies</h2>
-<p>Les pyramides + Al-Azhar = une combinaison unique au monde que seul Le Caire peut offrir.</p>
+<h2>5. Arabie Saoudite — La destination spirituelle</h2>
+<p>Depuis l'ouverture aux touristes en 2019, l'Arabie Saoudite révèle des merveilles au-delà des lieux saints : AlUla, Diriyah, Riyad moderne.</p>
 
-<h2>6. Médine, Arabie Saoudite — Le voyage spirituel ultime</h2>
-<p>Pour les musulmans, un séjour à Médine transcende la notion de tourisme. C'est un voyage de l'âme.</p>`,
+<h2>6. Indonésie — La surprise du classement</h2>
+<p>Plus grand pays musulman du monde, l'Indonésie avec Bali, Jakarta et Lombok offre une expérience halal riche dans un cadre naturel exceptionnel.</p>
+
+<h2>7. Jordanie — Le joyau méconnu</h2>
+<p>Pétra, Wadi Rum, la Mer Morte, Jerash — la Jordanie est une destination halal de très haute qualité, encore sous-visitée.</p>
+
+<h2>8. Qatar — L'émergent</h2>
+<p>Post-Coupe du Monde 2022, Doha a investi massivement dans le tourisme halal de qualité. Le Musée d'Art Islamique est l'un des meilleurs du monde.</p>
+
+<h2>9. Bosnie-Herzégovine — L'Europe musulmane</h2>
+<p>Sarajevo la multiconfessionnelle, les montagnes de Mostar, les saveurs ottomanes — la Bosnie est la destination halal européenne la plus attachante.</p>
+
+<h2>10. Maldives — Le paradis halal</h2>
+<p>État islamique à 100%, les Maldives offrent la quintessence du voyage de luxe halal : lagons turquoise, villas sur pilotis et intimité absolue.</p>`,
   },
   {
     slug: 'ramadan-voyage-guide',
-    title: 'Voyager pendant le Ramadan : guide complet 2026',
+    title: 'Voyager pendant le Ramadan : guide complet pour les musulmans',
     description:
-      "Comment organiser et vivre pleinement un voyage pendant le mois de Ramadan ? Destinations idéales, conseils pour l'iftar en voyage, gestion du jeûne et ambiances inoubliables.",
-    coverImage: 'https://images.unsplash.com/photo-1518730518541-d0843268c287?w=1200&q=80',
-    category: 'Spiritualité',
+      'Comment organiser et profiter de son voyage pendant le Ramadan ? Destinations, astuces pratiques et les meilleures expériences du mois sacré.',
+    coverImage: 'https://images.unsplash.com/photo-1548778052-311f4bc2b502?w=1200&q=80',
+    category: 'Pratique',
     readTime: '7 min',
     publishedAt: '2026-02-01',
-    tags: ['Ramadan', 'Spiritualité', 'Conseils'],
-    content: `<h2>Faut-il jeûner en voyage pendant Ramadan ?</h2>
-<p>L'islam accorde une facilité (rukhsa) au voyageur : il est permis de rompre le jeûne en voyage et de le rattraper ultérieurement (qada). Cette règle s'applique quand le voyage engendre une fatigue ou une difficulté notable. Consultez un érudit de confiance pour votre situation personnelle.</p>
+    tags: ['Ramadan', 'Jeûne', 'Spiritualité', 'Pratique'],
+    content: `<h2>Voyager pendant le Ramadan : bonne ou mauvaise idée ?</h2>
+<p>Le Ramadan est le mois le plus sacré de l'islam, et voyager pendant cette période peut être une expérience spirituellement intense et culturellement unique — à condition de bien choisir sa destination et de préparer son séjour en conséquence.</p>
 
-<h2>Les destinations idéales pour vivre Ramadan intensément</h2>
+<h2>Les destinations idéales pour le Ramadan</h2>
+<ul>
+<li><strong>Istanbul, Turquie</strong> : les tables d'iftar se multiplient dans les rues, les mosquées sont illuminées, et l'ambiance nocturne après la rupture du jeûne est magique.</li>
+<li><strong>Marrakech, Maroc</strong> : la place Jemaa el-Fna devient un immense restaurant en plein air à l'iftar. La chaleur humaine est incomparable.</li>
+<li><strong>Dubaï, EAU</strong> : les tentes Ramadan des grands hôtels offrent des expériences gastronomiques d'exception. Prix généralement réduits en journée.</li>
+<li><strong>La Mecque / Médine</strong> : pour ceux qui souhaitent accomplir l'Omra du Ramadan — l'expérience spirituelle la plus intense qui soit.</li>
+</ul>
+
+<h2>Conseils pratiques pour voyager en jeûnant</h2>
+<ul>
+<li><strong>Planifier les visites le matin</strong> : énergie maximale avant la chaleur et la fatigue du jeûne. Réserver les visites intenses (sites archéologiques, musées) avant 13h.</li>
+<li><strong>Préparer l'iftar à l'avance</strong> : identifier les restaurants ouverts à l'iftar dans votre destination. La plupart des restaurants dans les pays musulmans préparent des menus spéciaux Ramadan.</li>
+<li><strong>Hydratation nocturne</strong> : entre l'iftar (coucher du soleil) et le suhoor (repas avant l'aube), boire au minimum 2 litres d'eau.</li>
+<li><strong>Sieste stratégique</strong> : en pays chaud, la sieste après Dhuhr est culturellement normale et médicalement conseillée.</li>
+</ul>
+
+<h2>Les expériences Ramadan uniques dans le monde</h2>
 <ul>
 <li><strong>Istanbul</strong> : l'ambiance à Sultanahmet au moment de l'iftar est inoubliable. Les mosquées s'illuminent, les familles s'installent dans les rues pour rompre le jeûne ensemble.</li>
 <li><strong>Le Caire</strong> : le Ramadan au Caire est une fête populaire géante. Lanternes (fanous), tables d'iftar géantes dans les rues, ambiance festive toute la nuit.</li>
@@ -555,7 +537,7 @@ export const guides: Guide[] = [
   {
     slug: 'omra-2026-guide-complet',
     title: 'Omra 2026 : guide complet pour préparer votre pèlerinage',
-    description: "Tout ce qu'il faut savoir pour préparer votre Omra en 2026 : visa, agences, budget, rituels, meilleure période et conseils pratiques.",
+    description: 'Tout ce qu\'il faut savoir pour préparer votre Omra en 2026 : visa, agences, budget, rituels, meilleure période et conseils pratiques.',
     coverImage: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200&q=80',
     category: 'Spiritualité',
     readTime: '10 min',
@@ -640,7 +622,7 @@ export const guides: Guide[] = [
   {
     slug: 'trouver-mosquee-en-voyage',
     title: 'Trouver une mosquée partout dans le monde : le guide complet',
-    description: "Applications, astuces et ressources pour localiser la mosquée la plus proche lors de vos voyages, dans n'importe quel pays du monde.",
+    description: 'Applications, astuces et ressources pour localiser la mosquée la plus proche lors de vos voyages, dans n\'importe quel pays du monde.',
     coverImage: 'https://images.unsplash.com/photo-1548778052-311f4bc2b502?w=1200&q=80',
     category: 'Pratique',
     readTime: '5 min',
@@ -676,8 +658,8 @@ export const guides: Guide[] = [
   },
   {
     slug: 'hotel-halal-tout-savoir',
-    title: "Hôtel halal : tout ce qu'il faut savoir avant de réserver",
-    description: "Qu'est-ce qu'un hôtel halal ? Critères, certifications, plateformes de réservation et notre sélection des meilleures adresses par destination.",
+    title: 'Hôtel halal : tout ce qu\'il faut savoir avant de réserver',
+    description: 'Qu\'est-ce qu\'un hôtel halal ? Critères, certifications, plateformes de réservation et notre sélection des meilleures adresses par destination.',
     coverImage: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80',
     category: 'Hébergement',
     readTime: '6 min',
@@ -711,6 +693,409 @@ export const guides: Guide[] = [
 <li><strong>Kuala Lumpur</strong> : certification JAKIM = garantie absolue sur tous les établissements certifiés.</li>
 <li><strong>Marrakech</strong> : les riads de la médina sont halal par nature — un choix idéal pour les familles.</li>
 </ul>`,
+  },
+  {
+    slug: 'istanbul-guide-halal-complet',
+    title: 'Istanbul halal : guide complet 2026 — restaurants, mosquées et conseils',
+    description: 'Notre guide complet pour visiter Istanbul en respectant vos valeurs islamiques : les meilleurs restaurants halal, mosquées incontournables, quartiers à privilégier et astuces pratiques.',
+    coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '10 min',
+    publishedAt: '2026-06-25',
+    tags: ['Istanbul', 'Turquie', 'Guide', 'Restaurants halal', 'Mosquées'],
+    content: `<h2>Istanbul, capitale mondiale du voyage halal</h2>
+<p><strong>Istanbul</strong> est sans conteste la destination halal préférée des voyageurs musulmans francophones. Chaque année, des millions de touristes de France, de Belgique et du Maghreb choisissent cette ville unique qui enjambe deux continents pour une expérience halal totale. Et pour cause : dans cette mégapole à 99% musulmane, la question "où manger halal ?" ne se pose tout simplement pas.</p>
+
+<h2>Pourquoi Istanbul est la destination halal idéale</h2>
+<p>Istanbul offre une combinaison rare : 3 113 mosquées (dont les plus belles du monde islamique), une gastronomie 100% halal d'une richesse incomparable, une histoire ottomane millénaire et des prix parmi les plus accessibles d'Europe. À 3h30 de vol de Paris pour 150 à 300€ l'aller-retour, difficile de faire mieux.</p>
+<ul>
+<li><strong>Nourriture halal garantie</strong> : dans les quartiers historiques de Sultanahmet, Fatih et Üsküdar, la quasi-totalité des restaurants ne servent pas d'alcool et proposent de la viande halal.</li>
+<li><strong>Appel à la prière 5 fois par jour</strong> : l'ézan rythme naturellement votre journée — un plaisir rare en dehors du monde islamique.</li>
+<li><strong>Architecture islamique exceptionnelle</strong> : la Mosquée Bleue, Sainte-Sophie reconvertie en mosquée, la Mosquée Süleymaniye — des chefs-d'œuvre uniques au monde.</li>
+</ul>
+
+<h2>Les meilleurs quartiers halal d'Istanbul</h2>
+<h3>Sultanahmet — Le cœur historique islamique</h3>
+<p>C'est ici que bat le cœur spirituel d'Istanbul. La Mosquée Bleue, Sainte-Sophie et le Palais de Topkapi s'y côtoient dans un périmètre de quelques centaines de mètres. Les restaurants du quartier sont traditionnels et servent une cuisine turque authentiquement halal. Attention cependant aux établissements affichant des menus en 5 langues à l'entrée — ils sont souvent plus chers et moins bons.</p>
+
+<h3>Fatih — Le quartier le plus islamique d'Istanbul</h3>
+<p>Fatih est le cœur conservateur d'Istanbul. Mosquée Süleymaniye, Grand Bazar, marché de Beyazit — ici, vous vous sentirez dans une ville du monde islamique à part entière. Aucun alcool dans les restaurants, tenues modestes respectées.</p>
+
+<h3>Üsküdar — L'âme anatolienne sur la rive asiatique</h3>
+<p>Traversez le Bosphore en ferry (8 minutes depuis Eminönü) pour découvrir le vrai Istanbul résidentiel et conservateur. Mosquée Mihrimah Sultan, café surplombant le détroit, marchés locaux — une immersion authentique loin du tourisme de masse.</p>
+
+<h2>Les mosquées incontournables d'Istanbul</h2>
+<ul>
+<li><strong>Mosquée Bleue (Sultan Ahmed Camii)</strong> : 6 minarets, dôme central de 43 mètres, 20 000 carreaux de faïence bleue Iznik. Construite entre 1609 et 1616, elle reste l'une des plus belles mosquées du monde.</li>
+<li><strong>Sainte-Sophie (Ayasofya)</strong> : reconvertie en mosquée en 2020. Joyau architectural de 1 500 ans, elle combine art byzantin et art islamique dans un espace unique.</li>
+<li><strong>Mosquée Süleymaniye</strong> : commandée par Soliman le Magnifique, achevée en 1557. Vue panoramique sur la Corne d'Or depuis les jardins.</li>
+</ul>
+
+<h2>Les meilleurs restaurants halal d'Istanbul</h2>
+<p>Rappelons-le : dans les quartiers historiques, presque tout est halal. Voici nos coups de cœur :</p>
+<ul>
+<li><strong>Hamdi Restaurant (Eminönü)</strong> : institution depuis 1970, kebab d'agneau avec vue sur la Corne d'Or. Incontournable.</li>
+<li><strong>Sultanahmet Köftecisi</strong> : depuis 1920, les meilleurs köfte d'Istanbul. Simplicité, qualité.</li>
+<li><strong>Çiya Sofrası (Kadıköy)</strong> : la référence de la cuisine anatolienne authentique — plus de 50 plats régionaux différents chaque jour.</li>
+<li><strong>Karaköy Güllüoğlu</strong> : la meilleure baklava d'Istanbul depuis 1949. À déguster chaud à la sortie du four.</li>
+</ul>
+
+<h2>Budget Istanbul 2026</h2>
+<ul>
+<li>Vol Paris–Istanbul (aller-retour) : 150–350 €</li>
+<li>Hôtel 3* en centre historique : 60–100 €/nuit</li>
+<li>Hôtel 4-5* avec vue Bosphore : 150–400 €/nuit</li>
+<li>Repas local (restaurant de quartier) : 5–15 €</li>
+<li>Repas restaurant touristique : 20–40 €</li>
+<li>Billet Palais de Topkapi : 25 €</li>
+<li>Transport Istanbulkart (journée) : 3–5 €</li>
+</ul>`,
+  },
+  {
+    slug: 'dubai-guide-halal-2026',
+    title: 'Dubai halal : guide complet 2026 — tout savoir pour votre voyage',
+    description: 'Guide complet Dubai 2026 pour les voyageurs musulmans : restaurants halal certifiés, mosquées, activités famille, budget et meilleures adresses.',
+    coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '9 min',
+    publishedAt: '2026-06-22',
+    tags: ['Dubai', 'EAU', 'Guide', 'Luxe', 'Famille'],
+    content: `<h2>Dubai : la destination halal de luxe par excellence</h2>
+<p>Dubai est unique au monde pour les voyageurs musulmans : <strong>tous les restaurants sont halal certifiés par obligation légale</strong>. La certification halal est imposée par le gouvernement des Émirats à l'ensemble des établissements de restauration — une garantie absolue que l'on ne trouve nulle part ailleurs.</p>
+
+<h2>La certification halal aux EAU : une obligation légale</h2>
+<p>Contrairement à la plupart des pays où la certification halal est volontaire, aux Émirats Arabes Unis, elle est <strong>obligatoire et gouvernementale</strong>. L'ESMA (Emirates Authority for Standardization and Metrology) supervise l'ensemble des certifications. Résultat : vous pouvez manger dans n'importe quel restaurant de Dubai sans la moindre inquiétude.</p>
+
+<h2>La Mosquée Jumeirah — Une visite incontournable</h2>
+<p>La Mosquée Jumeirah est l'une des rares mosquées de Dubai ouverte aux non-musulmans. Les visites guidées organisées par le SMCCU (Sheikh Mohammed Centre for Cultural Understanding) permettent aux touristes de toutes confessions de découvrir l'islam et l'architecture islamique.</p>
+<ul>
+<li>Visites guidées : samedi, dimanche, lundi, mardi et jeudi à 10h</li>
+<li>Prix : 35 AED (environ 9€)</li>
+<li>Tenue modeste obligatoire — abaya fournie sur place</li>
+</ul>
+
+<h2>Old Dubai : l'âme authentique de la ville</h2>
+<p>Avant les gratte-ciels, Dubai était un village de pêcheurs et de commerçants. Le quartier d'Al Fahidi (Bur Dubai) et le souk de Deira préservent cette mémoire :</p>
+<ul>
+<li><strong>Abra (barque traditionnelle)</strong> : traversée de la Crique Dubai pour 1 AED — l'une des expériences les moins chères et les plus authentiques.</li>
+<li><strong>Souk de l'or de Deira</strong> : plus de 300 bijouteries sur quelques rues.</li>
+<li><strong>Souk des épices</strong> : safran, cardamome, encens — les arômes du Moyen-Orient.</li>
+</ul>
+
+<h2>Activités famille halal à Dubai</h2>
+<ul>
+<li><strong>Dubai Frame</strong> : moins cher que le Burj Khalifa, vue spectaculaire sur l'ancienne et la nouvelle ville.</li>
+<li><strong>Safari dans le désert</strong> : dunes de sable rouge, balade à chameau, dîner sous les étoiles dans un camp bédouin.</li>
+<li><strong>IMG Worlds of Adventure</strong> : le plus grand parc indoor du monde (Marvel, Cartoon Network).</li>
+<li><strong>Dubai Aquarium & Underwater Zoo</strong> : l'un des plus grands aquariums du monde, au Dubai Mall.</li>
+</ul>
+
+<h2>Budget Dubai 2026</h2>
+<ul>
+<li>Vol Paris–Dubai (aller-retour) : 350–700 € (Emirates, Air France, Fly Dubai)</li>
+<li>Hôtel 4* centralement situé : 100–200 €/nuit</li>
+<li>Hôtel 5* luxe : 300–1 500 €/nuit</li>
+<li>Repas restaurant local : 15–30 €</li>
+<li>Repas restaurant gastronomique : 80–200 €</li>
+<li>Dubai Metro (journée illimitée) : 6 AED (1,50€)</li>
+<li>Safari désert tout compris : 70–120 €/personne</li>
+</ul>`,
+  },
+  {
+    slug: 'marrakech-guide-halal',
+    title: 'Marrakech halal : guide complet 2026 — la ville ocre pour les voyageurs musulmans',
+    description: 'Tout savoir pour visiter Marrakech en famille ou en couple : mosquées, restaurants halal, riads, souks et conseils pratiques pour un séjour parfait.',
+    coverImage: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '8 min',
+    publishedAt: '2026-06-20',
+    tags: ['Marrakech', 'Maroc', 'Guide', 'Famille', 'Médina'],
+    content: `<h2>Marrakech : destination halal naturelle</h2>
+<p>À Marrakech, la question "est-ce halal ?" n'existe tout simplement pas dans la médina. Le Maroc est un État islamique à 99% musulman — la totalité des restaurants, boucheries et étals alimentaires respectent les préceptes halal par défaut. Aucune vérification n'est nécessaire. C'est la liberté totale du voyageur musulman.</p>
+
+<h2>La Mosquée Koutoubia — Le symbole de Marrakech</h2>
+<p>Le minaret de la Koutoubia (70 mètres) est visible depuis presque toute la ville et constitue le modèle de l'architecture almohade qui influencera la Tour Hassan de Rabat et la Giralda de Séville. L'espace qui l'entoure est un jardin de roses, idéal pour une promenade au coucher du soleil avec le son de l'appel à la prière.</p>
+
+<h2>La Médersa Ben Youssef</h2>
+<p>Fondée au XIVe siècle, agrandie au XVIe, la Médersa Ben Youssef est l'une des plus grandes écoles coraniques du Maghreb. Son intérieur est d'une beauté stupéfiante : zelliges polychromes, stuc sculpté de formules coraniques, boiseries de cèdre odorantes. Elle accueillait jadis 900 étudiants islamiques. Aujourd'hui ouverte aux visiteurs.</p>
+
+<h2>Les souks de Marrakech</h2>
+<p>La médina de Marrakech est un labyrinthe de souks spécialisés :</p>
+<ul>
+<li><strong>Souk des tanneurs (Chouara)</strong> : spectacle unique des bacs de teinture colorés depuis les terrasses des maroquineries. À voir absolument.</li>
+<li><strong>Souk des épices (Rahba Kedima)</strong> : safran, cumin, ras-el-hanout et plantes médicinales.</li>
+<li><strong>Souk Semmarine</strong> : la rue principale des souks, artisanat en tous genres.</li>
+<li><strong>Derb Dabachi</strong> : le souk des artisans du bois et du métal.</li>
+</ul>
+
+<h2>Restaurants halal incontournables de Marrakech</h2>
+<ul>
+<li><strong>Le Jardin (Médina)</strong> : cuisine marocaine raffinée dans un riad du XVIe siècle, cadre végétal luxuriant. Parfait pour un déjeuner élégant.</li>
+<li><strong>Chez Lamine (Médina)</strong> : les meilleures tangia (agneau au four de potier) de Marrakech dans une ambiance 100% locale.</li>
+<li><strong>Café de France (Jemaa el-Fna)</strong> : terrasse avec vue sur la place — l'endroit parfait pour observer l'animation.</li>
+<li><strong>Jemaa el-Fna la nuit</strong> : les dizaines d'étals de restauration qui envahissent la place à partir du coucher du soleil — harira, méchoui, brochettes — sont une expérience en soi.</li>
+</ul>
+
+<h2>Budget Marrakech 2026</h2>
+<ul>
+<li>Vol Paris–Marrakech (aller-retour) : 80–250 € (Royal Air Maroc, EasyJet, Ryanair)</li>
+<li>Riad médina 3* : 50–100 €/nuit</li>
+<li>Riad de luxe 5* : 200–600 €/nuit</li>
+<li>Repas restaurant local : 5–12 €</li>
+<li>Repas restaurant touristique : 20–40 €</li>
+<li>Entrée Médersa Ben Youssef : 7 €</li>
+<li>Hammam traditionnel : 5–15 € (hammam public) / 30–80 € (hammam de riad)</li>
+</ul>`,
+  },
+  {
+    slug: 'vacances-halal-famille-2026',
+    title: 'Vacances halal en famille 2026 : 5 idées pour des souvenirs inoubliables',
+    description: 'Les meilleures destinations et conseils pour des vacances halal réussies en famille : sécurité, activités enfants, hébergement adapté et budget.',
+    coverImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80',
+    category: 'Famille',
+    readTime: '7 min',
+    publishedAt: '2026-06-18',
+    tags: ['Famille', 'Enfants', 'Vacances', 'Halal', '2026'],
+    content: `<h2>Choisir une destination familiale halal : les critères essentiels</h2>
+<p>Voyager en famille avec des enfants demande une organisation particulière. Pour les familles musulmanes, s'y ajoutent les critères halal : nourriture accessible, mosquées pour la prière, environnement respectueux. Voici nos 5 meilleures recommandations 2026.</p>
+
+<h2>1. Turquie — La destination famille numéro 1</h2>
+<p>La Turquie réunit toutes les qualités pour une famille musulmane : nourriture halal partout, mosquées à chaque coin de rue, des activités pour tous les âges (Cappadoce, côte turquoise, parcs d'attractions à Istanbul), des prix très accessibles et une sécurité exemplaire. La Cappadoce avec ses montgolfières émerveille les enfants, les plages d'Antalya sont idéales pour les tout-petits.</p>
+
+<h2>2. Maroc — Le dépaysement proche</h2>
+<p>À 2h30 de vol, le Maroc est la destination familiale halal la plus accessible de France. Djerba (côté tunisie, mais Maroc aussi by extension), l'Atlas enneigé, les dunes du Sahara — des expériences inoubliables pour les enfants. Les riads de Marrakech avec leur architecture magique fascinent petits et grands.</p>
+
+<h2>3. Djerba, Tunisie — La classique des familles</h2>
+<p>Djerba reste la valeur sûre pour les familles françaises musulmanes : plages de sable blanc, eaux peu profondes et chaudes idéales pour les jeunes enfants, resorts familiaux bien équipés, gastronomie halal locale et prix très compétitifs (à partir de 500 € par personne vol + hôtel en demi-pension).</p>
+
+<h2>4. Dubai — L'expérience luxe pour les familles</h2>
+<p>Dubai est la Disneyland du monde réel : IMG Worlds of Adventure (le plus grand parc indoor du monde), Legoland, Dubai Aquarium, ski intérieur à Ski Dubai, safari en 4x4 dans les dunes — les activités pour enfants sont infinies dans un cadre halal certifié. Plus cher que les autres destinations, mais le rapport qualité-expérience est imbattable.</p>
+
+<h2>5. Malaisie — La découverte en famille</h2>
+<p>La Malaisie ouvre les yeux des enfants sur un monde différent : les tours Petronas qui touchent les nuages, les orangs-outans de Sepilok, les plages de Langkawi, les grottes de Batu Caves. Halal certifié JAKIM partout, anglais parlé facilement, prix très accessibles. Le long vol (12-13h) est le seul inconvénient.</p>
+
+<h2>Checklist famille halal avant le départ</h2>
+<ul>
+<li>Vérifier les horaires de prière à destination (application Muslim Pro)</li>
+<li>Identifier les mosquées à proximité de votre hébergement</li>
+<li>Réserver un hôtel avec piscine privée ou familiale</li>
+<li>Prévoir des snacks halal pour les longs trajets (surtout avion)</li>
+<li>Télécharger les applications : Muslim Pro, HalalTrip, Grab ou Uber selon destination</li>
+<li>Emporter un tapis de prière léger et pliable</li>
+</ul>`,
+  },
+  {
+    slug: 'malaisie-halal-destination',
+    title: 'Malaisie : la destination n°1 mondiale pour les voyageurs musulmans',
+    description: 'Pourquoi la Malaisie est régulièrement élue meilleure destination halal mondiale ? JAKIM, gastronomie, nature — notre guide complet.',
+    coverImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '8 min',
+    publishedAt: '2026-06-15',
+    tags: ['Malaisie', 'JAKIM', 'Halal certifié', 'Asie', 'Gastronomie'],
+    content: `<h2>La Malaisie : 10 fois élue meilleure destination halal mondiale</h2>
+<p>Le Global Muslim Travel Index (GMTI) couronne la Malaisie meilleure destination halal mondiale pour la 10e année consécutive. Ce n'est pas un hasard : la Malaisie a construit un écosystème halal complet, rigoureux et accessible qui n'a pas d'équivalent sur la planète.</p>
+
+<h2>JAKIM : la certification halal la plus stricte du monde</h2>
+<p>Le <strong>JAKIM</strong> (Jabatan Kemajuan Islam Malaysia — Département du Développement Islamique de Malaisie) est l'organisme gouvernemental qui certifie tous les établissements halal du pays. Sa certification est :</p>
+<ul>
+<li><strong>Annuellement renouvelée</strong> : pas de certification permanente — elle doit être re-validée chaque année</li>
+<li><strong>Contrôlée aléatoirement</strong> : des inspecteurs effectuent des visites surprises</li>
+<li><strong>Couvrant toute la chaîne</strong> : des abattoirs aux restaurants, en passant par les fournisseurs</li>
+<li><strong>Reconnue mondialement</strong> : la certification JAKIM est acceptée comme référence internationale</li>
+</ul>
+<p>Résultat : voir le logo JAKIM affiché = certitude absolue halal.</p>
+
+<h2>Kuala Lumpur : la capitale halal du monde</h2>
+<p>KL est une métropole de 8 millions d'habitants où les food courts des centres commerciaux proposent 30 à 50 cuisines différentes — toutes halal certifiées JAKIM. La diversité gastronomique est époustouflante : malaise, chinoise halal, indienne, indonésienne, arabe, thaïe — sans jamais sacrifier la certification.</p>
+
+<h2>Penang : paradis gastronomique halal</h2>
+<p>Classée au patrimoine UNESCO, Penang est réputée pour avoir la meilleure cuisine de rue d'Asie du Sud-Est. Les marchés nocturnes (pasar malam) de Georgetown proposent des dizaines de spécialités halal : char kway teow, laksa asam, nasi kandar — des saveurs uniques au monde.</p>
+
+<h2>Langkawi : plage et luxe halal</h2>
+<p>L'archipel de Langkawi (99 îles) est exempt de taxes — alcool et cigarettes y sont taxés normalement, mais les hôtels premium proposent tous des options halal. Les plages de Pantai Cenang et les lagons de Kilim sont d'une beauté comparable aux Maldives, à un tiers du prix.</p>
+
+<h2>Budget Malaisie 2026</h2>
+<ul>
+<li>Vol Paris–KL (aller-retour) : 500–900 € (Malaysia Airlines, Qatar Airways, Turkish Airlines)</li>
+<li>Hôtel 4* central à KL : 50–100 €/nuit</li>
+<li>Resort de luxe Langkawi : 150–400 €/nuit</li>
+<li>Repas food court certifié JAKIM : 2–5 €</li>
+<li>Repas restaurant gastronomique : 20–50 €</li>
+<li>Tour Petronas (Sky Bridge) : 25 €</li>
+</ul>`,
+  },
+  {
+    slug: 'checklist-voyage-halal',
+    title: 'Checklist voyage halal : ne rien oublier avant de partir',
+    description: 'La liste complète de tout ce qu\'il faut préparer avant un voyage halal : documents, applications, vêtements, prière, nourriture et santé.',
+    coverImage: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80',
+    category: 'Pratique',
+    readTime: '5 min',
+    publishedAt: '2026-06-12',
+    tags: ['Checklist', 'Pratique', 'Organisation', 'Voyage halal'],
+    content: `<h2>La checklist voyage halal ultime</h2>
+<p>Que vous partiez pour un week-end à Istanbul ou 3 semaines en Malaisie, cette checklist complète vous assure de ne rien oublier pour un voyage halal serein.</p>
+
+<h2>1. Documents essentiels</h2>
+<ul>
+<li>Passeport (validité min. 6 mois après retour)</li>
+<li>Visa si nécessaire (vérifier sur France-Visas.gouv.fr)</li>
+<li>Vaccinations : méningocoque ACWY (obligatoire pour Arabie Saoudite), selon destination</li>
+<li>Assurance voyage avec rapatriement</li>
+<li>Photocopies de tous les documents (email à soi-même)</li>
+</ul>
+
+<h2>2. Applications indispensables</h2>
+<ul>
+<li><strong>Muslim Pro</strong> : horaires de prière, Qibla, mosquées</li>
+<li><strong>HalalTrip</strong> : restaurants et hôtels halal</li>
+<li><strong>Zabihah.com</strong> : carte mondiale des restaurants halal</li>
+<li><strong>Nusuk</strong> (si Omra/Arabie Saoudite)</li>
+<li><strong>Grab</strong> (Asie du Sud-Est) ou <strong>Careem</strong> (Moyen-Orient) pour les transports</li>
+</ul>
+
+<h2>3. Nourriture halal</h2>
+<ul>
+<li>Identifier les restaurants halal certifiés à destination avant le départ</li>
+<li>Emporter des snacks halal pour les longs trajets (barres de céréales, fruits secs, dattes)</li>
+<li>Applications pour scanner les codes-barres et vérifier la composition (HalalCheck)</li>
+<li>En pays non-musulman : contacter l'hôtel à l'avance pour le petit-déjeuner halal</li>
+</ul>
+
+<h2>4. Prière en voyage</h2>
+<ul>
+<li>Tapis de prière léger et pliable (existe en version compact 200g)</li>
+<li>Boussole (ou utiliser l'application Qibla dans Muslim Pro)</li>
+<li>Rappel : le voyageur peut raccourcir (Qasr) et regrouper (Jam') les prières</li>
+<li>Identifier les salles de prière dans les aéroports de transit</li>
+</ul>
+
+<h2>5. Tenue vestimentaire</h2>
+<ul>
+<li>Tenues modestes pour les sites religieux (épaules et genoux couverts)</li>
+<li>Hidjab / foulard (même si vous n'en portez pas habituellement, utile pour les mosquées)</li>
+<li>Tenue d'ihram si Omra (hommes : 2 pièces blanches)</li>
+<li>Chaussures confortables pour les longues marches (sites historiques, tawaf)</li>
+</ul>
+
+<h2>6. Santé</h2>
+<ul>
+<li>Médicaments personnels avec ordonnance traduite si nécessaire</li>
+<li>Protection solaire forte (particulièrement pour pays du Golfe et Maghreb)</li>
+<li>Solution de réhydratation pour pays chauds</li>
+<li>Probiotiques pour prévenir les troubles digestifs liés au changement d'alimentation</li>
+</ul>
+
+<h2>7. Planification</h2>
+<ul>
+<li>Vérifier le calendrier islamique (éviter Hajj si non-pèlerin pour La Mecque)</li>
+<li>Ramadan : restaurants fermés en journée dans les pays musulmans — adapter les horaires</li>
+<li>Réserver l'hébergement halal certifié en avance (HalalBooking.com)</li>
+<li>Informer la famille du plan de voyage</li>
+</ul>`,
+  },
+  {
+    slug: 'voyage-halal-solo-femme',
+    title: 'Voyage halal en solo pour les femmes musulmanes : destinations sûres et conseils',
+    description: 'Guide complet pour les femmes musulmanes souhaitant voyager seules : destinations les plus sûres, conseils de sécurité, question du mahram et communautés.',
+    coverImage: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80',
+    category: 'Pratique',
+    readTime: '8 min',
+    publishedAt: '2026-06-08',
+    tags: ['Femmes', 'Solo', 'Sécurité', 'Halal', 'Voyage'],
+    content: `<h2>La femme musulmane voyageuse : une réalité croissante</h2>
+<p>De plus en plus de femmes musulmanes voyagent seules — que ce soit pour des raisons professionnelles, pour explorer le monde ou pour accomplir l'Omra. L'industrie du tourisme halal répond à cette demande avec des offres spécifiques. Ce guide vous donne toutes les clés pour voyager seule en toute sérénité.</p>
+
+<h2>La question du mahram</h2>
+<p>La question du mahram (tuteur masculin) dans les voyages féminins fait l'objet de discussions entre érudits. L'avis le plus répandu dans les sociétés musulmanes contemporaines est que :</p>
+<ul>
+<li>L'Omra et le Hajj nécessitent un mahram selon l'avis majoritaire (mais certains érudits autorisent les voyages en groupe féminin organisé)</li>
+<li>Les voyages touristiques ordinaires sont généralement autorisés pour une femme adulte capable de se protéger</li>
+<li>Consultez un érudit de confiance pour votre situation personnelle</li>
+</ul>
+
+<h2>Les 4 destinations les plus sûres pour les femmes seules</h2>
+<h3>1. Malaisie — Le choix numéro 1</h3>
+<p>La Malaisie est régulièrement classée première destination mondiale pour les voyageuses solo, toutes confessions confondues. Pour les femmes musulmanes, c'est en plus la garantie d'un environnement halal total (JAKIM), d'une population accueillante (63% musulmane) et d'une infrastructure touristique excellente.</p>
+
+<h3>2. Maroc — La proximité rassurante</h3>
+<p>À 2h30 de Paris, le Maroc est familier culturellement pour de nombreuses femmes franco-marocaines. Les medinas de Fès et Marrakech sont très sûres dans leurs parties touristiques. Les femmes voilées sont pleinement respectées — aucun regard déplacé dans la plupart des contextes.</p>
+
+<h3>3. Turquie — La modernité islamique</h3>
+<p>Istanbul et les grandes villes turques sont très sûres pour les voyageuses solo. Les transports en commun (metro, tram) sont fiables et sécurisés. La Turquie combine modernité et valeurs islamiques — une femme voilée y est complètement normale et respectée.</p>
+
+<h3>4. Émirats Arabes Unis — Le luxe sécurisé</h3>
+<p>Dubai et Abu Dhabi ont l'un des taux de criminalité les plus bas du monde. Les femmes seules y sont en parfaite sécurité. Infrastructure hôtelière de classe mondiale avec services adaptés.</p>
+
+<h2>7 conseils de sécurité pour voyager seule</h2>
+<ul>
+<li>Partager son itinéraire complet avec un proche de confiance</li>
+<li>Utiliser uniquement des plateformes officielles pour les transports (Uber, Grab, Careem)</li>
+<li>Éviter de montrer des objets de valeur (téléphone, bijoux) dans les zones touristiques</li>
+<li>Rejoindre des groupes de voyageuses sur les réseaux sociaux (Facebook : "Femmes Musulmanes Voyageuses")</li>
+<li>Préférer des hébergements avec avis récents positifs de femmes seules</li>
+<li>Avoir le numéro de l'ambassade française à destination</li>
+<li>Faire confiance à son instinct — si une situation met mal à l'aise, s'en éloigner</li>
+</ul>
+
+<h2>Communautés et ressources</h2>
+<ul>
+<li>Instagram : @musulmane_voyageuse, @halal_travel_sister</li>
+<li>Facebook : "Sœurs Voyageuses" (groupe privé, vérification d'identité)</li>
+<li>Blog : MuslimaTraveller.com (en anglais, la référence mondiale)</li>
+</ul>`,
+  },
+  {
+    slug: 'tourisme-halal-definition-2026',
+    title: 'Tourisme halal : définition, critères et marché mondial en 2026',
+    description: 'Qu\'est-ce que le tourisme halal exactement ? Définition complète, critères, marché mondial (240 milliards $) et tendances 2026.',
+    coverImage: 'https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&q=80',
+    category: 'Pratique',
+    readTime: '6 min',
+    publishedAt: '2026-06-05',
+    tags: ['Définition', 'Tourisme halal', 'Marché', 'Tendances 2026'],
+    content: `<h2>Tourisme halal : définition officielle</h2>
+<p>Le tourisme halal (ou tourisme islamique, ou Muslim-friendly tourism) désigne l'ensemble des services touristiques — transport, hébergement, restauration, activités — organisés en conformité avec les préceptes islamiques. Il ne s'agit pas d'un tourisme religieux à proprement parler (comme le pèlerinage), mais d'un tourisme de loisirs accessible à tous, respectueux des valeurs musulmanes.</p>
+
+<h2>Les critères du tourisme halal</h2>
+<p>Un voyage peut être qualifié de "halal" lorsqu'il respecte au minimum ces critères :</p>
+<ul>
+<li><strong>Alimentation halal</strong> : viande abattue selon les rites islamiques, absence de porc et de ses dérivés</li>
+<li><strong>Absence ou discrétion de l'alcool</strong> : dans les espaces communs à minima</li>
+<li><strong>Accès à la prière</strong> : mosquées disponibles ou espace de prière fourni</li>
+<li><strong>Respect de la pudeur</strong> : options de piscine/plage séparées ou privées si souhaitées</li>
+<li><strong>Pas de divertissements illicites</strong> : pas de casino, pas de clubs de strip-tease dans l'hôtel</li>
+</ul>
+
+<h2>Le marché mondial du tourisme halal en 2026</h2>
+<p>Le tourisme halal est l'un des marchés touristiques à la croissance la plus rapide au monde :</p>
+<ul>
+<li><strong>240 milliards de dollars</strong> : valeur estimée du marché en 2026 (source : DinarStandard)</li>
+<li><strong>230 millions</strong> : nombre de voyageurs musulmans internationaux en 2025</li>
+<li><strong>+8% par an</strong> : taux de croissance annuel moyen du secteur</li>
+<li><strong>2030</strong> : le marché devrait atteindre 300 milliards de dollars</li>
+</ul>
+
+<h2>Les 5 pays leaders du tourisme halal réceptif</h2>
+<ol>
+<li><strong>Malaisie</strong> : 1ère au GMTI depuis 10 ans</li>
+<li><strong>Turquie</strong> : la plus grande destination halal en volume</li>
+<li><strong>Émirats Arabes Unis</strong> : leader du luxe halal</li>
+<li><strong>Arabie Saoudite</strong> : tourisme spirituel + Vision 2030</li>
+<li><strong>Indonésie</strong> : le géant émergent (280 millions d'habitants, 87% musulmans)</li>
+</ol>
+
+<h2>Tendances 2026 : vers un tourisme halal premium</h2>
+<ul>
+<li><strong>Tourisme spirituel</strong> : Omra, Hajj, visites des lieux saints historiques</li>
+<li><strong>Éco-tourisme halal</strong> : voyages durables combinant valeurs islamiques et respect de l'environnement</li>
+<li><strong>Halal Luxury</strong> : croissance du segment luxe (Maldives, Dubai, Marbella halal)</li>
+<li><strong>Femmes voyageuses</strong> : forte croissance du segment féminin musulman solo</li>
+</ul>
+
+<h2>Comment VoyagesHalal.fr accompagne cette tendance</h2>
+<p>VoyagesHalal.fr est la première plateforme francophone dédiée au voyage halal : guides de destinations, carte interactive des adresses halal, conseils pratiques et comparatif de forfaits Omra — tout ce dont vous avez besoin pour voyager en accord avec vos valeurs.</p>`,
   },
 ]
 
