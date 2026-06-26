@@ -27,6 +27,7 @@ export interface HalalPlace {
 
 export interface Activity {
   name: string
+  address?: string
   description: string
   duration: string
 }
