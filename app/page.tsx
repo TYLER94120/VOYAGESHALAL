@@ -5,6 +5,7 @@ import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { buildWebSiteSchema, buildMetadata } from '@/lib/seo'
 import { guides } from '@/lib/data'
+import SearchBarHome from '@/components/search/SearchBarHome'
 
 export const metadata: Metadata = buildMetadata({
   title: 'Voyages Halal — Voyagez halal, voyagez serein',
@@ -52,25 +53,7 @@ export default function HomePage() {
           <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-md">
             Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans plus de 50 destinations — pour les musulmans du monde entier.
           </p>
-          <form action="/search" method="GET" className="flex gap-0 max-w-md">
-            <div className="relative flex-1">
-              <span className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg">🔍</span>
-              <input
-                type="text"
-                name="q"
-                placeholder="Istanbul, Marrakech, Dubaï..."
-                autoComplete="off"
-                className="w-full pl-11 pr-4 py-4 bg-white border border-gray-200 rounded-l-2xl text-gray-900 text-base focus:outline-none focus:ring-2 focus:ring-[#1a3a2a] focus:border-transparent"
-              />
-            </div>
-            <button
-              type="submit"
-              style={{ backgroundColor: '#1a3a2a' }}
-              className="text-white px-7 py-4 rounded-r-2xl font-semibold text-base hover:opacity-90 transition-opacity whitespace-nowrap"
-            >
-              Rechercher
-            </button>
-          </form>
+          <SearchBarHome />
           <div className="mt-8 flex gap-8">
             {[
               { value: '50+', label: 'destinations' },
