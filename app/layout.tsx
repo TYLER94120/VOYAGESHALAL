@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Playfair_Display } from 'next/font/google'
+import { DM_Sans, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
@@ -7,7 +7,7 @@ import BottomNav from '@/components/layout/BottomNav'
 import { RamadanBanner } from '@/components/RamadanBanner'
 import { SITE_NAME, DEFAULT_DESCRIPTION, SITE_URL } from '@/lib/seo'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
-      <body className={`${inter.variable} ${playfair.variable} font-sans`}>
+      <body className={`${dmSans.variable} ${playfair.variable} font-sans`}>
         <RamadanBanner />
         <Header />
         {children}
