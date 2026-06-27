@@ -1,0 +1,60 @@
+{
+  "slug": "le-caire",
+  "nom": "Le Caire",
+  "pays": "Égypte",
+  "pays_slug": "egypte",
+  "region": "Afrique du Nord",
+  "coordonnees": { "lat": 30.0444, "lng": 31.2357 },
+  "score_halal": 5,
+  "description": "Mère du monde (Umm al-Dunya), Le Caire est l'une des plus grandes métropoles islamiques, gardienne des pyramides, d'Al-Azhar et d'une civilisation millénaire.",
+  "image_hero": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?w=1600&q=85",
+  "image_alt": "Les pyramides de Gizeh au coucher du soleil, Le Caire",
+  "meta_title": "Le Caire Halal — Restaurants, Mosquées & Guide Pratique | Voyages Halal",
+  "meta_description": "Guide complet du Caire halal : pyramides, mosquée Al-Azhar, restaurants halal du Khan el-Khalili.",
+  "statistiques": { "mosquees": 4000, "restaurants_halal": 15000, "hotels_halal": 200, "habitants_musulmans_pct": 90 },
+  "infos_pratiques": {
+    "langue": "Arabe (égyptien), Anglais dans les zones touristiques",
+    "monnaie": "Livre égyptienne (EGP) — 1€ ≈ 55 EGP",
+    "meilleure_periode": "Octobre à avril",
+    "appel_priere": "5 fois par jour, 4000 mosquées sonnent à l'unisson",
+    "nourriture_halal": "Quasi-totalité des restaurants halal",
+    "alcool": "Disponible dans les hôtels internationaux",
+    "tenue": "Tenue modeste recommandée dans la vieille ville",
+    "securite": "Zones touristiques bien sécurisées"
+  },
+  "restaurants": [
+    { "id": "r1", "nom": "Koshary Abou Tarek", "cuisine": "Égyptienne — Koshari", "adresse": "16 Maarouf Street, Downtown", "halal_certifie": true, "sans_alcool": true, "note": 4.7, "avis_count": 12000, "fourchette_prix": "15–40 EGP", "horaires": "9h–0h", "specialites": ["Koshari (plat national)", "Lentilles au vinaigre", "Sauce tomate épicée"] },
+    { "id": "r2", "nom": "Sequoia", "cuisine": "Égyptienne & Internationale", "adresse": "3 Abu el Feda Street, Zamalek", "halal_certifie": true, "sans_alcool": false, "note": 4.5, "avis_count": 6800, "fourchette_prix": "200–500 EGP", "horaires": "12h–2h", "specialites": ["Mezze égyptien", "Grillades sur Nil", "Fruits de mer"] },
+    { "id": "r3", "nom": "Al Khal Restaurant", "cuisine": "Égyptienne traditionnelle", "adresse": "Khan el-Khalili, Le Caire islamique", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 3200, "fourchette_prix": "80–200 EGP", "horaires": "10h–23h", "specialites": ["Ful medames", "Hawawshi", "Om Ali"] },
+    { "id": "r4", "nom": "Bab El-Sharq", "cuisine": "Orientale gastronomique", "adresse": "Semiramis InterContinental, Corniche El Nil", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 1900, "fourchette_prix": "300–700 EGP", "horaires": "12h–16h, 19h–23h", "specialites": ["Hamam farci (pigeon)", "Molokhia royale", "Konafa aux pistaches"] }
+  ],
+  "mosquees": [
+    { "id": "m1", "nom": "Mosquée Al-Azhar", "type": "Grande Mosquée & Université", "adresse": "Al-Azhar Street, Le Caire islamique", "description": "Fondée en 970 ap. J.-C., la plus ancienne université du monde toujours en activité. Autorité islamique sunnite la plus respectée.", "note": 4.9, "acces_non_musulmans": true, "capacite": 12000 },
+    { "id": "m2", "nom": "Mosquée Ibn Tulun", "type": "Mosquée historique", "adresse": "Al-Sayyida Zaynab", "description": "La plus ancienne mosquée du Caire encore debout (879 ap. J.-C.). Minaret à escalier hélicoïdal unique.", "note": 4.8, "acces_non_musulmans": true, "capacite": 8000 },
+    { "id": "m3", "nom": "Mosquée Mohammed Ali (Citadelle)", "type": "Mosquée ottomane", "adresse": "Citadelle de Saladin", "description": "La Mosquée Alabâtre domine Le Caire depuis la Citadelle. Panorama exceptionnel sur la ville.", "note": 4.8, "acces_non_musulmans": true, "capacite": 6500 }
+  ],
+  "hotels": [
+    { "id": "h1", "nom": "Four Seasons Cairo at Nile Plaza", "type": "Hôtel de luxe", "adresse": "1089 Corniche El Nil, Garden City", "etoiles": 5, "halal_certifie": false, "sans_alcool": false, "piscine_privee": false, "note": 4.8, "avis_count": 3200, "prix_nuit_min": 250, "devise": "EUR" },
+    { "id": "h2", "nom": "Kempinski Nile Hotel", "type": "Grand hôtel de luxe", "adresse": "12 Ahmed Ragheb Street, Garden City", "etoiles": 5, "halal_certifie": true, "sans_alcool": false, "piscine_privee": false, "note": 4.6, "avis_count": 1800, "prix_nuit_min": 180, "devise": "EUR" },
+    { "id": "h3", "nom": "Steigenberger Hotel El Tahrir", "type": "Hôtel central", "adresse": "2 Kasr El Nil Street, Downtown", "etoiles": 4, "halal_certifie": true, "sans_alcool": false, "piscine_privee": false, "note": 4.3, "avis_count": 2600, "prix_nuit_min": 90, "devise": "EUR" }
+  ],
+  "activites": [
+    { "id": "a1", "nom": "Pyramides de Gizeh & Sphinx", "type": "Patrimoine mondial", "description": "L'une des 7 merveilles du monde antique. Balade en chameau au lever du soleil.", "duree": "4h", "prix": "160 EGP (~3€)", "tags": ["incontournable", "patrimoine", "famille"] },
+    { "id": "a2", "nom": "Musée Égyptien (Tahrir)", "type": "Culture & Histoire", "description": "La plus grande collection d'antiquités égyptiennes : trésor de Toutânkhamon, momies royales.", "duree": "3h", "prix": "200 EGP (~4€)", "tags": ["histoire", "incontournable"] },
+    { "id": "a3", "nom": "Khan el-Khalili", "type": "Shopping & Immersion", "description": "Le plus grand bazar du monde arabe (XIVe siècle). Épices, lanternes, bijoux.", "duree": "3h", "prix": "Gratuit", "tags": ["shopping", "culture"] },
+    { "id": "a4", "nom": "Croisière sur le Nil", "type": "Détente & Panorama", "description": "Felucca au coucher du soleil entre Zamalek et Rhoda Island.", "duree": "2h", "prix": "100–300 EGP", "tags": ["romantique", "nature"] }
+  ],
+  "road_trips": [
+    { "id": "rt1", "titre": "Le Caire → Louxor → Assouan", "duree": "5 jours", "distance_km": 900, "etapes": ["Le Caire", "Louxor", "Kom Ombo", "Assouan"], "description": "Karnak, Louxor, temple du crocodile, Abu Simbel. L'Égypte éternelle.", "conseils_halal": "Restaurants halal tout le long du Nil.", "budget_estime": "300–600€ par personne" },
+    { "id": "rt2", "titre": "Le Caire → Sinaï → Sharm el-Sheikh", "duree": "3 jours", "distance_km": 550, "etapes": ["Le Caire", "Mont Sinaï", "Dahab", "Sharm el-Sheikh"], "description": "Montagne sacrée où Moïse reçut les commandements, puis mer Rouge.", "conseils_halal": "Dahab : nombreux restaurants halal face à la mer.", "budget_estime": "200–400€ par personne" }
+  ],
+  "voyages_par_type": {
+    "en_couple": { "intro": "Le Caire enveloppe les couples dans son atmosphère unique : pyramides, Nil, palais ottomans.", "top_experiences": ["Lever de soleil aux pyramides", "Dîner sur le Nil", "Spa hammam", "Promenade Zamalek"], "conseils": "Restaurant panoramique Citadel Sheraton avec vue minarets illuminés.", "hotels_recommandes": ["Four Seasons Cairo at Nile Plaza", "Kempinski Nile Hotel"] },
+    "en_famille": { "intro": "Pyramides, momies et bazars colorés ravissent petits et grands.", "top_experiences": ["Pyramides & chameau", "Musée Égyptien", "Khan el-Khalili", "Zoo de Gizeh"], "conseils": "Visitez les pyramides dès 8h pour éviter chaleur et foule.", "hotels_recommandes": ["Kempinski Nile Hotel", "Steigenberger Hotel El Tahrir"] },
+    "entre_amis": { "intro": "Street food légendaire, nuits Khan el-Khalili, excursions désert.", "top_experiences": ["Nuit Khan el-Khalili", "Quad désert Gizeh", "Restaurants du Nil"], "conseils": "Café El Fishawi : ouvert 24h/24 depuis 1771.", "hotels_recommandes": ["Steigenberger Hotel El Tahrir"] },
+    "voyage_solo": { "intro": "Les Égyptiens sont extrêmement hospitaliers, les sites bien organisés.", "top_experiences": ["Cité des Morts", "Cours d'arabe égyptien", "Hammam traditionnel"], "conseils": "Uber Égypte pour les déplacements. Le métro dessert les zones principales.", "hotels_recommandes": ["Steigenberger Hotel El Tahrir"] },
+    "voyage_spirituel": { "intro": "Al-Azhar rayonne sur le monde musulman depuis plus de 1000 ans. 4000 mosquées historiques.", "top_experiences": ["Prière à Al-Azhar", "Mausolées Cité des Morts", "Soirée Mawlid", "Cours Al-Azhar"], "conseils": "Le Caire islamique entre Bab Zuweila et Bab el-Futuh : musée vivant de l'architecture islamique.", "hotels_recommandes": ["Kempinski Nile Hotel"] }
+  },
+  "articles_lies": [],
+  "villes_proches": ["louxor", "alexandrie", "sharm-el-sheikh"]
+}
