@@ -10,16 +10,22 @@ export const metadata: Metadata = {
 
 export default function QiblaPage() {
   return (
-    <main className="page-container max-w-3xl mx-auto px-6 sm:px-12 py-12">
-      <h1
-        className="text-4xl sm:text-5xl font-bold mb-3"
-        style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}
-      >
-        🧭 Calculateur de Qibla
-      </h1>
-      <p className="text-gray-500 mb-6">
-        Trouvez la direction de La Mecque depuis n&apos;importe où dans le monde, en un clic.
-      </p>
+    <main style={{ backgroundColor: '#fdfaf3' }}>
+      <section className="islamic-hero px-6 sm:px-16 pt-14 pb-16 text-center">
+        <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.25em] mb-4">
+          Outil musulman
+        </p>
+        <h1
+          className="text-4xl sm:text-5xl font-bold text-white mb-4"
+          style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
+        >
+          Calculateur de <span className="gold-em">Qibla</span>
+        </h1>
+        <p className="text-white/60 max-w-xl mx-auto">
+          Trouvez la direction de La Mecque depuis n&apos;importe où dans le monde, en un clic.
+        </p>
+      </section>
+      <div className="max-w-3xl mx-auto px-6 sm:px-12 py-12">
       <QiblaClient />
       <section className="qibla-info-section">
         <h2>Qu&apos;est-ce que la Qibla ?</h2>
@@ -30,6 +36,7 @@ export default function QiblaPage() {
         </p>
       </section>
       <ShareButtons titre="Calculateur de Qibla — VoyagesHalal" url="https://www.voyageshalal.fr/qibla" />
+      </div>
     </main>
   )
 }

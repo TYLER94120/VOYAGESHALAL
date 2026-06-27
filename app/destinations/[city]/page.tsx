@@ -75,13 +75,13 @@ export default async function DestinationPage({ params }: Props) {
     <main style={{ backgroundColor: '#faf8f4' }} className="min-h-screen">
       <section className="relative h-[480px] sm:h-[560px] overflow-hidden">
         <Image src={ville.image_hero} alt={ville.image_alt} fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-        <div className="absolute bottom-0 left-0 right-0 px-6 sm:px-12 pb-10">
-          <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-3">{ville.region}</p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-            {ville.nom}
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(11,26,15,0.88) 0%, rgba(11,26,15,0.35) 50%, rgba(11,26,15,0.15) 100%)' }} />
+        <div className="absolute bottom-0 left-0 right-0 px-6 sm:px-12 pb-10 max-w-6xl mx-auto">
+          <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.25em] mb-3">{ville.region}</p>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-4" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
+            Voyage Halal à <span className="gold-em">{ville.nom}</span><br className="hidden sm:block" /> — Guide Complet {new Date().getFullYear()}
           </h1>
-          <p className="text-white/80 text-base max-w-2xl leading-relaxed">
+          <p className="text-white/75 text-base max-w-2xl leading-relaxed">
             {typeof ville.description === 'string' ? ville.description : (ville.description as { court?: string; long?: string })?.court ?? ''}
           </p>
         </div>
@@ -90,19 +90,19 @@ export default async function DestinationPage({ params }: Props) {
       <section className="bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 sm:px-12 py-6 grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{(ville.statistiques?.mosquees ?? 0).toLocaleString('fr-FR')}</p>
+            <p className="text-2xl font-bold" style={{ color: '#1b4332' }}>{(ville.statistiques?.mosquees ?? 0).toLocaleString('fr-FR')}</p>
             <p className="text-xs text-gray-500 mt-0.5">Mosquées</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{(ville.statistiques?.restaurants_halal ?? 0).toLocaleString('fr-FR')}+</p>
+            <p className="text-2xl font-bold" style={{ color: '#1b4332' }}>{(ville.statistiques?.restaurants_halal ?? 0).toLocaleString('fr-FR')}+</p>
             <p className="text-xs text-gray-500 mt-0.5">Restaurants halal</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{ville.statistiques?.hotels_halal ?? ville.statistiques?.hotels_halal_friendly ?? 0}</p>
+            <p className="text-2xl font-bold" style={{ color: '#1b4332' }}>{ville.statistiques?.hotels_halal ?? ville.statistiques?.hotels_halal_friendly ?? 0}</p>
             <p className="text-xs text-gray-500 mt-0.5">Hôtels halal-friendly</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{ville.statistiques?.habitants_musulmans_pct ?? ville.statistiques?.musulmans_pct ?? '—'}%</p>
+            <p className="text-2xl font-bold" style={{ color: '#1b4332' }}>{ville.statistiques?.habitants_musulmans_pct ?? ville.statistiques?.musulmans_pct ?? '—'}%</p>
             <p className="text-xs text-gray-500 mt-0.5">Population musulmane</p>
           </div>
         </div>
@@ -113,10 +113,10 @@ export default async function DestinationPage({ params }: Props) {
           <span className="text-sm text-gray-500 font-medium">Score Halal :</span>
           <div className="flex gap-1">
             {Array.from({ length: 5 }).map((_, i) => (
-              <span key={i} className="text-xl" style={{ color: i < ville.score_halal ? '#c9a870' : '#e5e7eb' }}>★</span>
+              <span key={i} className="text-xl" style={{ color: i < ville.score_halal ? '#c9a84c' : '#e5e7eb' }}>★</span>
             ))}
           </div>
-          <span className="text-sm font-bold" style={{ color: '#1a3a2a' }}>{ville.score_halal}/5</span>
+          <span className="text-sm font-bold" style={{ color: '#1b4332' }}>{ville.score_halal}/5</span>
         </div>
       </section>
 

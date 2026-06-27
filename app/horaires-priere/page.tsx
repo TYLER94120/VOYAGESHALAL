@@ -9,18 +9,25 @@ export const metadata: Metadata = {
 
 export default function HorairesPrierePage() {
   return (
-    <main className="page-container max-w-5xl mx-auto px-6 sm:px-12 py-12">
-      <h1
-        className="text-4xl sm:text-5xl font-bold mb-3"
-        style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}
-      >
-        🕌 Heures de prière aujourd&apos;hui
-      </h1>
-      <p className="text-gray-500 mb-8 max-w-2xl">
-        Sélectionnez une ville pour obtenir les horaires de prière en temps réel. Les horaires sont
-        fournis par Aladhan.com et calculés selon les méthodes reconnues (UOIF, Umm al-Qura).
-      </p>
-      <HorairesClient />
+    <main style={{ backgroundColor: '#fdfaf3' }}>
+      <section className="islamic-hero px-6 sm:px-16 pt-14 pb-16 text-center">
+        <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.25em] mb-4">
+          Outil musulman
+        </p>
+        <h1
+          className="text-4xl sm:text-5xl font-bold text-white mb-4"
+          style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
+        >
+          Heures de prière <span className="gold-em">aujourd&apos;hui</span>
+        </h1>
+        <p className="text-white/60 max-w-2xl mx-auto">
+          Horaires en temps réel pour les principales villes du monde — Fajr, Dhuhr, Asr, Maghrib,
+          Isha. Données Aladhan (UOIF, Umm al-Qura).
+        </p>
+      </section>
+      <div className="max-w-5xl mx-auto px-6 sm:px-12 py-12">
+        <HorairesClient />
+      </div>
     </main>
   )
 }
