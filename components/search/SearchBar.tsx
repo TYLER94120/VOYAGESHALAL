@@ -72,7 +72,7 @@ export default function SearchBar() {
   function navigate(ville: VilleIndex) {
     setOpen(false)
     setQuery(ville.nom)
-    router.push(`/villes/${ville.slug}`)
+    router.push(`/destinations/${ville.slug}`)
   }
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {

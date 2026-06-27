@@ -35,7 +35,6 @@ function loadAllVilleDestinations(): Destination[] {
       const slug = f.replace('.json', '')
       try {
         const v = JSON.parse(readFileSync(join(dir, f), 'utf-8'))
-        const hasRichPage = Boolean(v.image_hero)
         const description =
           typeof v.description === 'string'
             ? v.description
@@ -57,7 +56,7 @@ function loadAllVilleDestinations(): Destination[] {
           mosques: [],
           activities: [],
           tips: [],
-          url: hasRichPage ? `/villes/${slug}` : `/destinations/${slug}`,
+          url: `/destinations/${slug}`,
         })
       } catch {
         // skip invalid JSON

@@ -21,7 +21,7 @@ export function HomeScoreRanking() {
         </p>
         <div className="score-ranking-grid">
           {TOP_DESTINATIONS.map((d, i) => (
-            <Link key={d.slug} href={`/villes/${d.slug}`} className="score-card">
+            <Link key={d.slug} href={`/destinations/${d.slug}`} className="score-card">
               <div className="score-card-rank">#{i + 1}</div>
               <div className="score-card-emoji">{d.emoji}</div>
               <div className="score-card-body">
