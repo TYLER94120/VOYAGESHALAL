@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=DM+Sans:wght@300;400;500;600;700&family=Scheherazade+New:wght@400;700&display=swap');
 
 @theme {
   /* Premium Islamic palette */
@@ -17,6 +18,19 @@
 }
 
 :root {
+  /* Premium Islamic — noms officiels du design system */
+  --nuit: #0b1a0f;
+  --foret: #1b4332;
+  --vert-moy: #2d6a4f;
+  --or: #c9a84c;
+  --or-clair: #e8d5a3;
+  --creme: #fdfaf3;
+  --blanc: #ffffff;
+  --terre: #6b4c2a;
+  --texte: #1a1a1a;
+  --texte-2: #6b7280;
+
+  /* alias internes */
   --night: #0b1a0f;
   --forest: #1b4332;
   --gold: #c9a84c;
@@ -62,6 +76,9 @@
 
   /* Gold italic keyword inside Playfair headings */
   .gold-em { color: #c9a84c; font-style: italic; }
+
+  /* Arabic script — noms des prières, citations */
+  .font-arabic { font-family: 'Scheherazade New', 'Amiri', serif; }
 
   /* Mihrab arch card (rounded top arch + square-ish bottom) */
   .arch-card {
