@@ -112,7 +112,7 @@ export function PrayerTimesWidget({ ville, countryCode }: Props) {
           <div key={p.name} className={`prayer-card ${p.isNext ? 'prayer-card-next' : ''}`}>
             <div className="prayer-emoji">{p.emoji}</div>
             <div className="prayer-name">{p.name}</div>
-            <div className="prayer-name-ar">{p.nameAr}</div>
+            <div className="prayer-name-ar font-arabic" dir="rtl">{p.nameAr}</div>
             <div className="prayer-time">{p.time}</div>
             {p.isNext && <div className="prayer-next-indicator">→ Prochaine</div>}
           </div>
