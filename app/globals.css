@@ -211,3 +211,43 @@
 .share-wa { background: #25d366; color: white; }
 .share-fb { background: #1877f2; color: white; }
 .share-copy { background: #f3f4f6; color: #374151; border: 1px solid #e5e7eb; }
+
+/* ===== Je Voyage Maintenant ===== */
+.voyage-maintenant-section { text-align: center; }
+.voyage-maintenant-section h2 { font-size: 24px; font-weight: 800; color: #1a3a2a; }
+.voyage-maintenant-section > p { font-size: 14px; color: #6b7280; margin: 6px 0 18px; }
+.ville-grid { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.ville-btn {
+  background: white; border: 1px solid #e5e7eb; color: #374151;
+  padding: 9px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; cursor: pointer;
+  transition: all 0.2s;
+}
+.ville-btn:hover { border-color: #166534; color: #166534; }
+.btn-change-ville {
+  background: transparent; border: none; color: #166534; font-weight: 600;
+  font-size: 14px; cursor: pointer; margin-top: 8px;
+}
+
+/* ===== Home Score Ranking ===== */
+.score-ranking-section { background: #1a3a2a; padding: 80px 16px; }
+.score-ranking-inner { max-width: 64rem; margin: 0 auto; }
+.score-ranking-eyebrow { color: #c9a870; font-size: 12px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; text-align: center; }
+.score-ranking-title { color: white; font-size: 36px; font-weight: 800; text-align: center; margin: 10px 0; font-family: var(--font-playfair), Georgia, serif; }
+.score-ranking-sub { color: rgba(255,255,255,0.55); font-size: 15px; text-align: center; max-width: 38rem; margin: 0 auto 36px; line-height: 1.6; }
+.score-ranking-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+.score-card {
+  display: flex; align-items: center; gap: 14px;
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px; padding: 16px 18px; text-decoration: none; transition: all 0.2s;
+}
+.score-card:hover { background: rgba(255,255,255,0.11); border-color: #c9a870; }
+.score-card-rank { font-size: 14px; font-weight: 900; color: #c9a870; width: 28px; }
+.score-card-emoji { font-size: 26px; }
+.score-card-body { flex: 1; }
+.score-card-name { color: white; font-weight: 700; font-size: 16px; }
+.score-card-badge { color: rgba(201,168,112,0.9); font-size: 10px; font-weight: 700; letter-spacing: 0.08em; }
+.score-card-score { font-size: 26px; font-weight: 900; color: #4ade80; }
+@media (max-width: 640px) {
+  .score-ranking-grid { grid-template-columns: 1fr; }
+  .score-ranking-title { font-size: 28px; }
+}

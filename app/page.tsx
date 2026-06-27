@@ -6,6 +6,8 @@ import EmailCapture from '@/components/ui/EmailCapture'
 import { buildWebSiteSchema, buildMetadata } from '@/lib/seo'
 import { guides } from '@/lib/data'
 import SearchBarHome from '@/components/search/SearchBarHome'
+import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
+import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 
 export const metadata: Metadata = buildMetadata({
   title: 'Voyages Halal — Voyagez halal, voyagez serein',
@@ -126,6 +128,16 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Halal Trust Score™ ranking */}
+      <HomeScoreRanking />
+
+      {/* Je voyage maintenant — widget prière temps réel */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <JeVoyageMaintenant />
         </div>
       </section>
 
