@@ -184,7 +184,7 @@ export default function CityTabs({ ville }: Props) {
 
       {active === 'road_trips' && (
         <div className="grid grid-cols-1 gap-4">
-          {ville.road_trips.map((rt) => (
+          {ville.road_trips?.map((rt) => (
             <div key={rt.id} className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
               <div className="flex items-start justify-between mb-3">
                 <h3 className="font-bold text-gray-900 text-xl leading-tight">{rt.titre}</h3>
@@ -214,7 +214,8 @@ export default function CityTabs({ ville }: Props) {
 
       {(['en_couple', 'en_famille', 'entre_amis', 'voyage_solo', 'voyage_spirituel'] as const).includes(active as 'en_couple' | 'en_famille' | 'entre_amis' | 'voyage_solo' | 'voyage_spirituel') && (() => {
         const key = active as 'en_couple' | 'en_famille' | 'entre_amis' | 'voyage_solo' | 'voyage_spirituel'
-        const data = ville.voyages_par_type[key]
+        const data = ville.voyages_par_type?.[key]
+        if (!data) return null
         return (
           <div className="space-y-6">
             <div className="bg-white rounded-2xl p-6 border border-gray-100">
