@@ -125,7 +125,29 @@ export default function CityTabs({ ville, apiCityName }: Props) {
         </div>
       )}
 
-      {active === 'hotels' && (
+      {active === 'hotels' && (ville.hotels?.length ?? 0) === 0 && (
+        <div className="bg-white rounded-2xl p-8 border border-gray-100 text-center">
+          <p className="text-3xl mb-3">🏨</p>
+          <h3 className="font-bold text-gray-900 text-lg mb-2" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
+            Sélection d&apos;hôtels halal-friendly à {ville.nom}
+          </h3>
+          <p className="text-sm text-gray-500 max-w-md mx-auto mb-5">
+            Notre équipe vérifie actuellement les meilleures adresses respectueuses des valeurs
+            islamiques (sans alcool, restauration halal, espaces familiaux).
+          </p>
+          <a
+            href={`https://www.halalbooking.com/?s=${encodeURIComponent(ville.nom)}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-5 py-2.5 rounded-xl text-sm font-bold text-white"
+            style={{ backgroundColor: '#1b4332' }}
+          >
+            → Consulter HalalBooking.com pour {ville.nom}
+          </a>
+        </div>
+      )}
+
+      {active === 'hotels' && (ville.hotels?.length ?? 0) > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {ville.hotels.map((h) => (
             <div key={h.id} className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-md transition-shadow">

@@ -109,6 +109,19 @@
   }
 }
 
+/* ===== Halal Trust Score — badge hexagone (hero ville) ===== */
+.halal-hex {
+  width: 88px; height: 100px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 6px;
+  background: linear-gradient(150deg, #c9a84c, #b8973f);
+  color: #0b1a0f;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+.halal-hex-label { font-size: 8px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.15; }
+.halal-hex-score { font-size: 20px; font-weight: 900; margin-top: 2px; font-family: 'Playfair Display', Georgia, serif; }
+
 /* ===== Halal Trust Score ===== */
 .halal-trust-card {
   border: 1px solid #e5e7eb;

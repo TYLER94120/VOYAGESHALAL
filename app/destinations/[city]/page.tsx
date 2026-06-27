@@ -5,6 +5,7 @@ import { readdirSync, readFileSync } from 'fs'
 import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
 import CityTabs from '@/components/villes/CityTabs'
+import IslamicPattern from '@/components/ui/IslamicPattern'
 import { RamadanSection } from '@/components/RamadanSection'
 import { ShareButtons } from '@/components/ShareButtons'
 import { DestinationFaqSchema } from '@/components/SchemaOrg'
@@ -75,7 +76,16 @@ export default async function DestinationPage({ params }: Props) {
     <main style={{ backgroundColor: '#faf8f4' }} className="min-h-screen">
       <section className="relative h-[480px] sm:h-[560px] overflow-hidden">
         <Image src={ville.image_hero} alt={ville.image_alt} fill className="object-cover" priority sizes="100vw" />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(11,26,15,0.88) 0%, rgba(11,26,15,0.35) 50%, rgba(11,26,15,0.15) 100%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to bottom, rgba(11,26,15,0.40) 0%, rgba(11,26,15,0.70) 60%, rgba(11,26,15,0.90) 100%)' }} />
+        <IslamicPattern opacity={0.05} />
+
+        {/* Badge Halal Trust Score™ (hexagone or) */}
+        <div className="absolute top-5 right-5 z-10">
+          <div className="halal-hex">
+            <span className="halal-hex-label">Halal Trust Score™</span>
+            <span className="halal-hex-score">{ville.score_halal}/5</span>
+          </div>
+        </div>
         <div className="absolute bottom-0 left-0 right-0 px-6 sm:px-12 pb-10 max-w-6xl mx-auto">
           <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.25em] mb-3">{ville.region}</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-4" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
