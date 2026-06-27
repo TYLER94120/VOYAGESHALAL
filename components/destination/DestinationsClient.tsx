@@ -11,6 +11,7 @@ export interface VilleCard {
   pays: string
   scoreHalal: number | null
   description: string
+  subtitle?: string
   image?: string
   continent?: string | null
 }
@@ -18,25 +19,6 @@ export interface VilleCard {
 interface Props {
   villes: VilleCard[]
   continents: Record<string, string[]>
-}
-
-const COUNTRY_EMOJI: Record<string, string> = {
-  Maroc: '🇲🇦',
-  Turquie: '🇹🇷',
-  France: '🇫🇷',
-  'Émirats Arabes Unis': '🇦🇪',
-  Émirats: '🇦🇪',
-  'Arabie Saoudite': '🇸🇦',
-  Malaisie: '🇲🇾',
-  Indonésie: '🇮🇩',
-  Égypte: '🇪🇬',
-  Algérie: '🇩🇿',
-  Tunisie: '🇹🇳',
-  Jordanie: '🇯🇴',
-  Qatar: '🇶🇦',
-  'Royaume-Uni': '🇬🇧',
-  Oman: '🇴🇲',
-  Maldives: '🇲🇻',
 }
 
 const FILTER_ICON: Record<string, string> = {
@@ -53,7 +35,15 @@ export default function DestinationsClient({ villes, continents }: Props) {
     filtre === 'Tous' ? villes : villes.filter((v) => continents[filtre]?.includes(v.pays))
 
   return (
-    <div className="destinations-content">
+    <div className="max-w-6xl mx-auto px-4 sm:px-8 pb-24">
+      {/* Breadcrumb */}
+      <nav className="flex items-center gap-2 text-xs text-gray-400 py-5">
+        <Link href="/" className="hover:text-[#1b4332]">Accueil</Link>
+        <span>›</span>
+        <span className="text-gray-700">Destinations</span>
+      </nav>
+
+      {/* Filtres scrollables */}
       <div className="filtres-scroll">
         {Object.keys(continents).map((c) => (
           <button
@@ -67,26 +57,64 @@ export default function DestinationsClient({ villes, continents }: Props) {
         ))}
       </div>
 
-      <div className="destinations-grid">
+      {/* Grille de cards-arches */}
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8">
         {villesFiltrees.map((v) => (
-          <Link key={v.slug} href={`/destinations/${v.slug}`} className="destination-card">
-            <Image
-              src={v.image || FALLBACK_IMG}
-              alt={`Voyage halal ${v.nom}`}
-              width={400}
-              height={160}
-              className="card-image"
-              style={{ objectFit: 'cover', width: '100%', height: '160px', borderRadius: '12px 12px 0 0' }}
-            />
-            <div className="card-header">
-              <span className="card-flag">{COUNTRY_EMOJI[v.pays] || '🌍'}</span>
-              <span className="card-score">⭐ {v.scoreHalal ?? '?'}/5</span>
+          <div key={v.slug} className="flex flex-col">
+            <Link href={`/destinations/${v.slug}`} className="arch-card group" style={{ aspectRatio: '3/4' }}>
+              <Image
+                src={v.image || FALLBACK_IMG}
+                alt={`Voyage halal ${v.nom}`}
+                fill
+                sizes="(max-width: 640px) 50vw, 33vw"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+              <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(11,26,15,0.82) 0%, rgba(11,26,15,0.15) 45%, transparent 70%)' }} />
+
+              {/* Country badge */}
+              <div className="absolute top-4 left-1/2 -translate-x-1/2">
+                <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest bg-white/95 text-[#1b4332] whitespace-nowrap">
+                  {v.pays}
+                </span>
+              </div>
+
+              {/* City + subtitle overlay */}
+              <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
+                <h3
+                  className="text-white font-bold text-xl sm:text-2xl leading-tight"
+                  style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
+                >
+                  {v.nom}
+                </h3>
+                {v.subtitle && (
+                  <p className="text-white/70 text-[10px] sm:text-xs uppercase tracking-wide mt-1 leading-snug">
+                    {v.subtitle}
+                  </p>
+                )}
+              </div>
+            </Link>
+
+            {/* Stars + CTA below card */}
+            <div className="flex items-center justify-between mt-3 px-1">
+              <div className="flex gap-0.5">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span
+                    key={i}
+                    style={{ color: i < (v.scoreHalal ?? 0) ? '#c9a84c' : '#d6cdba' }}
+                    className="text-sm"
+                  >
+                    ★
+                  </span>
+                ))}
+              </div>
+              <Link
+                href={`/destinations/${v.slug}`}
+                className="text-xs font-semibold text-gray-500 hover:text-[#1b4332]"
+              >
+                Guide complet →
+              </Link>
             </div>
-            <h3 className="card-city">{v.nom}</h3>
-            <p className="card-country">{v.pays}</p>
-            <p className="card-desc">{v.description.slice(0, 80)}…</p>
-            <span className="card-cta">Guide complet →</span>
-          </Link>
+          </div>
         ))}
       </div>
 
