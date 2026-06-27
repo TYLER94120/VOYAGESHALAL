@@ -5,6 +5,7 @@ import { blogPosts, getBlogPostBySlug, guides } from '@/lib/data'
 import { buildMetadata, buildArticleSchema, buildBreadcrumbSchema } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
+import { ShareButtons } from '@/components/ShareButtons'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -90,6 +91,12 @@ export default async function BlogPostPage({ params }: Props) {
             className="prose prose-lg max-w-none text-gray-700 leading-relaxed"
             style={{ '--tw-prose-headings': '#1a3a2a', '--tw-prose-links': '#c9a870' } as React.CSSProperties}
             dangerouslySetInnerHTML={{ __html: post.content }}
+          />
+
+          <ShareButtons
+            titre={post.title}
+            url={`https://www.voyageshalal.fr/blog/${post.slug}`}
+            description={post.description}
           />
 
           {/* Tags */}

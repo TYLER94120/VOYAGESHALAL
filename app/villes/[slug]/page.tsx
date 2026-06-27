@@ -57,9 +57,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const ville = getVille(slug)
   if (!ville) return {}
+  const restos = ville.statistiques?.restaurants_halal ?? (ville.restaurants?.length ?? 0)
+  const mosquees = ville.statistiques?.mosquees
+  const richDesc = `🕌 Guide halal ${ville.nom} 2026 : Halal Trust Score™ ${ville.score_halal}/5 · ${restos.toLocaleString('fr-FR')} restaurants certifiés · Horaires de prière en temps réel${mosquees ? ` · ${mosquees.toLocaleString('fr-FR')} mosquées` : ''} · Vérifié par la communauté musulmane.`
   return {
     title: ville.meta_title,
-    description: ville.meta_description,
+    description: richDesc,
   }
 }
 
