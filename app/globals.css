@@ -205,6 +205,10 @@
 .compass-e { right: 8px; top: 50%; transform: translateY(-50%); }
 .compass-w { left: 8px; top: 50%; transform: translateY(-50%); }
 .qibla-arrow { position: absolute; top: 50%; left: 50%; font-size: 28px; transform-origin: center bottom; transition: transform 0.8s ease; margin-left: -14px; margin-top: -28px; }
+.qibla-needle { position: absolute; inset: 0; width: 100%; height: 100%; transform-origin: 50% 50%; transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.qibla-kaaba { position: absolute; top: 50%; left: 50%; margin-left: -11px; margin-top: -11px; font-size: 22px; transform-origin: center center; transition: transform 1s cubic-bezier(0.34, 1.56, 0.64, 1); }
+.btn-qibla-whatsapp { display: inline-flex; align-items: center; gap: 6px; background: #25d366; color: white; padding: 10px 18px; border-radius: 10px; font-size: 14px; font-weight: 700; text-decoration: none; transition: opacity 0.2s; }
+.btn-qibla-whatsapp:hover { opacity: 0.9; }
 .qibla-angle { font-size: 48px; font-weight: 900; color: #1b4332; }
 .qibla-label { font-size: 13px; color: #6b7280; }
 .qibla-instruction { font-size: 14px; color: #374151; line-height: 1.6; max-width: 300px; }
