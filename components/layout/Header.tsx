@@ -10,7 +10,7 @@ export default function Header() {
       <div className="header-inner">
         {/* Logo */}
         <Link href="/" className="header-logo">
-          <span className="logo-icon">🕌</span>
+          <span className="logo-icon" style={{ color: '#c9a84c' }}>✦</span>
           <span className="logo-text">
             VoyagesHalal<span className="logo-dot">.fr</span>
           </span>
@@ -18,6 +18,9 @@ export default function Header() {
 
         {/* Nav desktop */}
         <nav className="header-nav-desktop">
+          <Link href="/" className="nav-link">
+            Accueil
+          </Link>
           <Link href="/destinations" className="nav-link">
             Destinations
           </Link>
@@ -30,9 +33,6 @@ export default function Header() {
           <Link href="/blog" className="nav-link">
             Blog
           </Link>
-          <Link href="/omra" className="nav-link">
-            Omra &amp; Hajj
-          </Link>
         </nav>
 
         {/* Actions */}
@@ -42,6 +42,9 @@ export default function Header() {
             <span>·</span>
             <span>EN</span>
           </div>
+          <Link href="/application" className="btn-app-gold">
+            L&apos;application
+          </Link>
           {/* Burger mobile */}
           <button
             className="burger-btn"
@@ -56,6 +59,9 @@ export default function Header() {
       {/* Menu mobile */}
       {menuOpen && (
         <div className="mobile-menu">
+          <Link href="/" onClick={() => setMenuOpen(false)}>
+            🏠 Accueil
+          </Link>
           <Link href="/destinations" onClick={() => setMenuOpen(false)}>
             🗺️ Destinations
           </Link>

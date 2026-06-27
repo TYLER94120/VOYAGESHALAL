@@ -10,6 +10,7 @@ import { guides } from '@/lib/data'
 import SearchBarHome from '@/components/search/SearchBarHome'
 import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
+import IslamicPattern from '@/components/ui/IslamicPattern'
 
 export const metadata: Metadata = buildMetadata({
   title: 'Voyages Halal — Voyagez halal, voyagez serein',
@@ -54,53 +55,46 @@ function getVillesStats() {
 export default function HomePage() {
   const websiteSchema = buildWebSiteSchema()
   const featuredGuides = guides.slice(0, 3)
-  const { totalVilles, totalContinents } = getVillesStats()
+  const { totalVilles } = getVillesStats()
 
   return (
     <>
     <JsonLd data={websiteSchema} />
-    <main style={{ backgroundColor: '#faf8f4' }}>
-      {/* Hero split */}
-      <section className="min-h-[90vh] grid grid-cols-1 lg:grid-cols-2">
-        {/* Left: text */}
-        <div style={{ backgroundColor: '#faf8f4' }} className="flex flex-col justify-center px-8 sm:px-16 lg:px-20 py-20 lg:py-32">
-          <div className="flex items-center gap-3 mb-8">
-            <div style={{ width: 32, height: 1, backgroundColor: '#c9a84c' }} />
-            <span style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.2em]">
-              Le guide de référence mondial
-            </span>
-          </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] mb-8" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
-            Voyagez halal,<br />
-            voyagez <em style={{ color: '#c9a84c', fontStyle: 'italic' }}>serein</em>
-          </h1>
-          <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-md">
-            Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans {totalVilles}+ destinations — pour les musulmans du monde entier.
+    <main style={{ backgroundColor: '#fdfaf3' }}>
+      {/* Hero Premium Islamic */}
+      <section className="relative overflow-hidden px-6 sm:px-12 pt-24 pb-28 text-center" style={{ backgroundColor: '#0b1a0f' }}>
+        <IslamicPattern opacity={0.07} />
+        <div className="relative z-10 max-w-4xl mx-auto">
+          <p style={{ color: '#c9a84c' }} className="text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] mb-6">
+            Voyagez avec foi
           </p>
-          <SearchBarHome />
-          <div className="mt-8 flex gap-8">
-            {[
-              { value: `${totalVilles}+`, label: 'destinations' },
-              { value: `${totalContinents}`, label: 'continents' },
-              { value: '4 ans', label: "d'expérience" },
-            ].map((s) => (
-              <div key={s.label}>
-                <div className="text-2xl font-bold" style={{ color: '#1b4332' }}>{s.value}</div>
-                <div className="text-xs text-gray-400 mt-0.5">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
+          <h1
+            className="text-5xl sm:text-6xl lg:text-7xl text-white leading-[1.05] mb-8"
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
+          >
+            L&apos;Islam guide votre <span className="gold-em">voyage</span>
+          </h1>
+          <p className="text-white/65 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+            Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans {totalVilles}+
+            destinations — pour les musulmans du monde entier.
+          </p>
 
-        {/* Right: photo */}
-        <div className="relative hidden lg:block">
-          <Image
-            src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=85"
-            alt="Istanbul — Voyages Halal"
-            fill
-            className="object-cover"
-            priority
-          />
+          {/* Recherche glassmorphism */}
+          <div
+            className="max-w-xl mx-auto rounded-2xl p-2"
+            style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(201,168,76,0.35)', backdropFilter: 'blur(10px)' }}
+          >
+            <SearchBarHome />
+          </div>
+
+          {/* Ligne de confiance */}
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm text-white/55">
+            <span><strong className="text-white/80">1 200+</strong> mosquées</span>
+            <span style={{ color: '#c9a84c' }}>·</span>
+            <span><strong className="text-white/80">2 500+</strong> restaurants</span>
+            <span style={{ color: '#c9a84c' }}>·</span>
+            <span style={{ color: '#c9a84c' }} className="font-semibold">Halal Trust Score™</span>
+          </div>
         </div>
       </section>
 

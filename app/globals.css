@@ -332,6 +332,13 @@
 .nav-link:hover { background: #f3f4f6; }
 .nav-link-highlight { background: #f0fdf4; color: #1b4332; font-weight: 700; }
 .nav-link-highlight:hover { background: #dcfce7; }
+.btn-app-gold {
+  background: #c9a84c; color: #0b1a0f; font-weight: 700; font-size: 13px;
+  padding: 8px 16px; border-radius: 10px; text-decoration: none; white-space: nowrap;
+  transition: background 0.15s;
+}
+.btn-app-gold:hover { background: #b8973f; }
+@media (max-width: 768px) { .btn-app-gold { display: none; } }
 .header-actions { display: flex; align-items: center; gap: 12px; }
 .lang-switcher { font-size: 13px; font-weight: 600; color: #6b7280; display: flex; gap: 4px; }
 .burger-btn { display: none; background: none; border: none; font-size: 20px; cursor: pointer; padding: 4px; }
