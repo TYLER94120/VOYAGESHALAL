@@ -9,16 +9,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        has: [{ type: 'host', value: 'www.voyageshalal.fr' }],
-        destination: 'https://voyageshalal.fr/:path*',
-        permanent: true,
-      },
-    ]
-  },
 }
 
 export default nextConfig

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://voyageshalal.fr'
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.voyageshalal.fr'
 const SITE_NAME = 'Voyages Halal'
 const DEFAULT_DESCRIPTION =
   'Découvrez les meilleures destinations de voyage halal dans le monde. Guides, restaurants halal, mosquées et conseils pratiques pour voyager en conformité avec vos valeurs.'
