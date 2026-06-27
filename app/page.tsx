@@ -1,3 +1,5 @@
+import fs from 'fs'
+import path from 'path'
 import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
@@ -30,9 +32,29 @@ const FEATURES = [
   { icon: '🧭', title: 'Guides pratiques', desc: 'Conseils culturels, visa, transports — tout pour voyager l\'esprit libre.' },
 ]
 
+function getVillesStats() {
+  try {
+    const dir = path.join(process.cwd(), 'data', 'villes')
+    const files = fs.readdirSync(dir).filter((f) => f.endsWith('.json'))
+    const continents = new Set<string>()
+    for (const f of files) {
+      try {
+        const v = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8'))
+        if (v.continent) continents.add(v.continent)
+      } catch {
+        // skip
+      }
+    }
+    return { totalVilles: files.length, totalContinents: continents.size }
+  } catch {
+    return { totalVilles: 0, totalContinents: 0 }
+  }
+}
+
 export default function HomePage() {
   const websiteSchema = buildWebSiteSchema()
   const featuredGuides = guides.slice(0, 3)
+  const { totalVilles, totalContinents } = getVillesStats()
 
   return (
     <>
@@ -53,13 +75,13 @@ export default function HomePage() {
             voyagez <em style={{ color: '#c9a870', fontStyle: 'italic' }}>serein</em>
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-md">
-            Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans plus de 50 destinations — pour les musulmans du monde entier.
+            Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans {totalVilles}+ destinations — pour les musulmans du monde entier.
           </p>
           <SearchBarHome />
           <div className="mt-8 flex gap-8">
             {[
-              { value: '50+', label: 'destinations' },
-              { value: '3', label: 'continents' },
+              { value: `${totalVilles}+`, label: 'destinations' },
+              { value: `${totalContinents}`, label: 'continents' },
               { value: '4 ans', label: "d'expérience" },
             ].map((s) => (
               <div key={s.label}>
