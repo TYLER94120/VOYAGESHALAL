@@ -16,6 +16,7 @@ export interface Destination {
   activities: Activity[]
   tips: string[]
   relatedArticles?: { slug: string; title: string; type: 'guide' | 'blog' }[]
+  url?: string
 }
 
 export interface HalalPlace {

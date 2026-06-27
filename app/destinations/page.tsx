@@ -1,34 +1,95 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
+import { readdirSync, readFileSync } from 'fs'
+import { join } from 'path'
 import { destinations } from '@/lib/data'
 import { buildMetadata } from '@/lib/seo'
+import DestinationsClient from '@/components/destination/DestinationsClient'
+import type { Destination } from '@/lib/types'
 
 export const metadata: Metadata = buildMetadata({
   title: 'Destinations Voyage Halal — Meilleures Villes du Monde',
-  description: 'Toutes les destinations halal du monde : Istanbul, Marrakech, Dubaï, Kuala Lumpur et bien plus.',
+  description:
+    'Toutes les destinations halal du monde : Istanbul, Marrakech, Dubaï, Kuala Lumpur et bien plus. Restaurants halal, mosquées et guides pour chaque ville.',
   path: '/destinations',
 })
 
-const BADGES: Record<string, string> = {
-  istanbul: 'INCONTOURNABLE',
-  marrakech: 'POPULAIRE',
-  dubai: 'LUXE',
-  'kuala-lumpur': 'TENDANCE',
-  'le-caire': 'CULTURELLE',
-  medine: 'SPIRITUELLE',
+const COVER_IMAGES: Record<string, string> = {
+  maldives: 'https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800&q=80',
+  bali: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800&q=80',
+  jakarta: 'https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=800&q=80',
+  amman: 'https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=800&q=80',
+  mascate: 'https://images.unsplash.com/photo-1583417267826-aebc4d1542e1?w=800&q=80',
+  'abu-dhabi': 'https://images.unsplash.com/photo-1512632578888-169bbbc64f33?w=800&q=80',
+  fes: 'https://images.unsplash.com/photo-1548786811-5bcb78a0e2c1?w=800&q=80',
+  tanger: 'https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=800&q=80',
+  agadir: 'https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=800&q=80',
+}
+const DEFAULT_COVER = 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80'
+
+function loadAllVilleDestinations(): Destination[] {
+  const dir = join(process.cwd(), 'data', 'villes')
+  const results: Destination[] = []
+  try {
+    for (const f of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
+      const slug = f.replace('.json', '')
+      try {
+        const v = JSON.parse(readFileSync(join(dir, f), 'utf-8'))
+        const hasRichPage = Boolean(v.image_hero)
+        const description =
+          typeof v.description === 'string'
+            ? v.description
+            : (v.description?.long ?? v.description?.court ?? '')
+        results.push({
+          slug,
+          city: v.nom ?? slug,
+          country: v.pays ?? '',
+          description,
+          shortDescription: v.description?.court ?? description.slice(0, 120),
+          coverImage: v.image_hero ?? COVER_IMAGES[slug] ?? DEFAULT_COVER,
+          halalScore: v.score_halal ?? 4,
+          mosqueeCount: v.statistiques?.mosquees ?? 0,
+          restaurantHalalCount: v.statistiques?.restaurants_halal ?? 0,
+          population: v.statistiques?.population ?? '',
+          bestTime: v.infos_pratiques?.meilleure_periode ?? '',
+          tags: ([v.region, v.pays] as string[]).filter(Boolean),
+          restaurants: [],
+          mosques: [],
+          activities: [],
+          tips: [],
+          url: hasRichPage ? `/villes/${slug}` : `/destinations/${slug}`,
+        })
+      } catch {
+        // skip invalid JSON
+      }
+    }
+  } catch {
+    // data/villes not readable
+  }
+  return results
 }
 
 export default function DestinationsPage() {
+  const villeDestinations = loadAllVilleDestinations()
+  const villeSlugs = new Set(villeDestinations.map((d) => d.slug))
+  const legacyOnly = destinations.filter((d) => !villeSlugs.has(d.slug))
+  const allDestinations = [...villeDestinations, ...legacyOnly]
+
   return (
     <main style={{ backgroundColor: '#faf8f4' }}>
       <section style={{ backgroundColor: '#1a3a2a' }} className="px-8 sm:px-16 pt-16 pb-20">
-        <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-5">Toutes les destinations</p>
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-2xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
+        <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-5">
+          Toutes les destinations
+        </p>
+        <h1
+          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 max-w-2xl"
+          style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
+        >
           Destinations halal dans le monde
         </h1>
         <p className="text-white/50 text-base max-w-xl leading-relaxed">
-          Plus de 50 destinations vérifiées pour voyager sereinement en tant que musulman — restaurants halal, mosquées, guides pratiques et conseils locaux.
+          Plus de {allDestinations.length} destinations vérifiées pour voyager sereinement en tant que
+          musulman — restaurants halal, mosquées, guides pratiques et conseils locaux.
         </p>
       </section>
 
@@ -40,38 +101,7 @@ export default function DestinationsPage() {
         </nav>
       </div>
 
-      <div className="px-4 sm:px-16 py-6 flex gap-2 flex-wrap">
-        {['Toutes', 'Moyen-Orient', 'Afrique', 'Asie', 'Europe', 'Omra'].map((f, i) => (
-          <button key={f} className="px-4 py-2 rounded-full text-sm font-medium border transition-all"
-            style={i === 0 ? { backgroundColor: '#1a3a2a', color: 'white', borderColor: '#1a3a2a' } : { backgroundColor: 'white', color: '#555', borderColor: '#e5e7eb' }}>
-            {f}
-          </button>
-        ))}
-      </div>
-
-      <section className="max-w-6xl mx-auto px-4 sm:px-8 pb-20">
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
-          {destinations.map((d) => (
-            <Link key={d.slug} href={`/destinations/${d.slug}`} className="group block relative overflow-hidden shadow-sm hover:shadow-md transition-shadow" style={{ borderRadius: '9999px 9999px 1rem 1rem' }}>
-              <div className="relative" style={{ aspectRatio: '3/4' }}>
-                <Image src={d.coverImage} alt={d.city} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
-                {BADGES[d.slug] && (
-                  <div className="absolute top-4 left-1/2 -translate-x-1/2">
-                    <span style={{ backgroundColor: 'rgba(201,168,112,0.92)', color: '#1a3a2a' }} className="text-[10px] font-bold px-3 py-1 rounded-full whitespace-nowrap tracking-widest">{BADGES[d.slug]}</span>
-                  </div>
-                )}
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <div className="text-white font-bold text-base">{d.city}</div>
-                  <div className="text-white/60 text-xs mt-0.5">{d.country}</div>
-                  <div className="mt-2 flex gap-0.5">{Array.from({ length: 5 }).map((_, i) => <span key={i} style={{ color: i < d.halalScore ? '#c9a870' : 'rgba(255,255,255,0.3)' }} className="text-xs">★</span>)}</div>
-                  <div style={{ color: '#c9a870' }} className="text-xs mt-2 font-medium">Guide complet →</div>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <DestinationsClient destinations={allDestinations} />
     </main>
   )
 }
