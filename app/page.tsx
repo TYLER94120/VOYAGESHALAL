@@ -82,6 +82,28 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Accès rapide */}
+      <section className="px-4 pt-10">
+        <div className="quick-access">
+          <Link href="/destinations" className="qa-btn">
+            <span>🗺️</span>
+            <span>Destinations</span>
+          </Link>
+          <Link href="/horaires-priere" className="qa-btn qa-btn-green">
+            <span>🕐</span>
+            <span>Horaires</span>
+          </Link>
+          <Link href="/qibla" className="qa-btn qa-btn-green">
+            <span>🧭</span>
+            <span>Qibla</span>
+          </Link>
+          <Link href="/blog" className="qa-btn">
+            <span>📖</span>
+            <span>Blog</span>
+          </Link>
+        </div>
+      </section>
+
       {/* Destinations populaires */}
       <section style={{ backgroundColor: '#f5f0e8' }} className="py-20 px-4">
         <div className="max-w-5xl mx-auto">
