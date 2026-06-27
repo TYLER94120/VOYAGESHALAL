@@ -7,6 +7,7 @@ export function QiblaCalculator() {
   const [error, setError] = useState('')
 
   const calculer = () => {
+    console.log('bouton cliqué')
     setLoading(true)
     setError('')
     setDirection(null)
@@ -102,3 +103,5 @@ export function QiblaCalculator() {
     </div>
   )
 }
+
+export default QiblaCalculator

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { QiblaCalculator } from '@/components/QiblaCalculator'
+import QiblaClient from '@/components/QiblaClient'
 import { ShareButtons } from '@/components/ShareButtons'
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function QiblaPage() {
       <p className="text-gray-500 mb-6">
         Trouvez la direction de La Mecque depuis n&apos;importe où dans le monde, en un clic.
       </p>
-      <QiblaCalculator />
+      <QiblaClient />
       <section className="qibla-info-section">
         <h2>Qu&apos;est-ce que la Qibla ?</h2>
         <p>
