@@ -1,0 +1,73 @@
+{
+  "slug": "amman",
+  "nom": "Amman",
+  "nom_arabe": "عمّان",
+  "pays": "Jordanie",
+  "pays_slug": "jordanie",
+  "drapeau": "🇯🇴",
+  "region": "Moyen-Orient",
+  "coordonnees": { "lat": 31.9539, "lng": 35.9106 },
+  "score_halal": 5,
+  "score_securite": 4,
+  "score_famille": 5,
+  "score_budget": 4,
+  "description": {
+    "court": "La capitale de la Jordanie, porte d'entrée vers Pétra et la mer Morte",
+    "long": "Amman est l'une des capitales les plus modernes et les plus accueillantes du monde arabe. Pays à majorité musulmane (97%), le halal est la norme absolue. Amman est idéalement positionnée comme base pour explorer les merveilles de Jordanie : Pétra, Wadi Rum, la mer Morte, Jerash. La ville elle-même offre une médina historique, une scène culinaire en plein essor et une hospitalité légendaire. Amman est une destination remarquablement sûre et familiale."
+  },
+  "statistiques": {
+    "mosquees": 2000,
+    "restaurants_halal": 5000,
+    "hotels_halal_friendly": 350,
+    "population": "4 millions"
+  },
+  "infos_pratiques": {
+    "langue": "Arabe (officiel), Anglais très répandu",
+    "monnaie": "Dinar jordanien (JOD) — 1 JOD ≈ 1,30 €",
+    "fuseau_horaire": "GMT+3",
+    "meilleure_periode": "Mars–mai, Septembre–novembre",
+    "visa": "Jordan Pass recommandé (visa + sites inclus, 70 JOD)",
+    "transport": "Taxi, Uber, bus"
+  },
+  "restaurants": [
+    { "id": "r-001", "nom": "Sufra Restaurant", "adresse": "26 Rainbow Street, Jabal Amman", "cuisine": "Jordanienne traditionnelle", "specialite": "Mansaf (agneau au yaourt) — plat national", "certification": "Halal", "prix_moyen": "15–30 JOD", "note": 4.8 },
+    { "id": "r-002", "nom": "Fakhr El-Din", "adresse": "40 Taha Hussein Street, 1ère cercle", "cuisine": "Libanaise & jordanienne", "specialite": "Mezze complet et grillades au bois", "certification": "Halal", "prix_moyen": "20–40 JOD", "note": 4.7 },
+    { "id": "r-003", "nom": "Hashem Restaurant", "adresse": "Downtown Amman, Al-Amir Mohammed Street", "cuisine": "Street food jordanienne", "specialite": "Falafel, hummus, ful medames", "certification": "Halal", "prix_moyen": "2–5 JOD", "note": 4.9 },
+    { "id": "r-004", "nom": "Romero Restaurant", "adresse": "3ème cercle, Amman", "cuisine": "Jordanienne gastronomique", "specialite": "Ouzi (agneau farci)", "certification": "Halal", "prix_moyen": "15–35 JOD", "note": 4.6 },
+    { "id": "r-005", "nom": "Wild Jordan Café", "adresse": "Othman Bin Affan Street, Jabal Amman", "cuisine": "Fusion jordanienne bio", "specialite": "Salade de zaatar et fromage de chèvre", "certification": "Halal", "prix_moyen": "8–20 JOD", "note": 4.7 },
+    { "id": "r-006", "nom": "Books@Café", "adresse": "Omar Bin Al-Khattab Street", "cuisine": "Fusion internationale halal", "specialite": "Sandwichs halal et cheesecake", "certification": "Halal", "prix_moyen": "10–25 JOD", "note": 4.5 },
+    { "id": "r-007", "nom": "Al Quds Restaurant", "adresse": "Downtown Amman", "cuisine": "Palestinienne halal", "specialite": "Maqluba (riz renversé à la viande)", "certification": "Halal", "prix_moyen": "5–12 JOD", "note": 4.6 },
+    { "id": "r-008", "nom": "Shawarmaji", "adresse": "Multiple branches, Amman", "cuisine": "Shawarma fast food halal", "specialite": "Shawarma poulet et viande halal", "certification": "Halal", "prix_moyen": "3–7 JOD", "note": 4.4 },
+    { "id": "r-009", "nom": "Beit Sitti", "adresse": "Jabal Amman", "cuisine": "Cours de cuisine jordanienne", "specialite": "Atelier mansaf et mezze", "certification": "Halal", "prix_moyen": "30–50 JOD (cours)", "note": 4.9 },
+    { "id": "r-010", "nom": "Al Ustaz Restaurant", "adresse": "Shmeisani, Amman", "cuisine": "Poissons & grillades halal", "specialite": "Sayadieh (riz au poisson)", "certification": "Halal", "prix_moyen": "10–25 JOD", "note": 4.5 },
+    { "id": "r-011", "nom": "Tawaheen Al Hawa", "adresse": "Sweifieh, Amman", "cuisine": "Jordanienne & moyen-orientale", "specialite": "Manti (raviolis à l'agneau)", "certification": "Halal", "prix_moyen": "12–28 JOD", "note": 4.4 },
+    { "id": "r-012", "nom": "Al Sukariah", "adresse": "Rainbow Street", "cuisine": "Pâtisserie orientale halal", "specialite": "Knafeh, baklawa, qatayef", "certification": "Halal", "prix_moyen": "3–10 JOD", "note": 4.8 },
+    { "id": "r-013", "nom": "Zamn Restaurant", "adresse": "Abdali Boulevard, Amman", "cuisine": "Jordanienne gastronomique", "specialite": "Maglouba au poulet rôti", "certification": "Halal", "prix_moyen": "15–30 JOD", "note": 4.6 },
+    { "id": "r-014", "nom": "Joz Hind Restaurant", "adresse": "Weibdeh, Amman", "cuisine": "Moyen-orientale fusion", "specialite": "Gratin d'aubergines halal", "certification": "Halal", "prix_moyen": "10–22 JOD", "note": 4.5 },
+    { "id": "r-015", "nom": "Al Tannour Restaurant", "adresse": "3rd Circle, Amman", "cuisine": "Jordanienne traditionnelle", "specialite": "Pain taboun et mezze chaud", "certification": "Halal", "prix_moyen": "8–18 JOD", "note": 4.4 }
+  ],
+  "mosquees": [
+    { "id": "m-001", "nom": "Mosquée King Abdullah I", "adresse": "Nasser Ibn Jamil Street, Abdali", "type": "Grande mosquée royale", "capacite": 7000, "annee_construction": 1989, "style_architectural": "Islamique contemporain avec dôme turc", "note": 4.9 },
+    { "id": "m-002", "nom": "Mosquée Abu Darwish", "adresse": "Jabal Al Ashrafiyeh", "type": "Historique & emblématique", "capacite": 3000, "annee_construction": 1961, "style_architectural": "Damier noir et blanc unique", "note": 4.8 },
+    { "id": "m-003", "nom": "Mosquée Al Hussein (Centre Islamique)", "adresse": "Shmeisani", "type": "Grande mosquée", "capacite": 10000, "annee_construction": 2005, "style_architectural": "Islamique moderne", "note": 4.7 },
+    { "id": "m-004", "nom": "Mosquée Al Husseini", "adresse": "Downtown Amman", "type": "Historique", "capacite": 4000, "annee_construction": 1924, "style_architectural": "Islamique classique", "note": 4.8 },
+    { "id": "m-005", "nom": "Mosquée Sami Al Arab", "adresse": "Quartier Rabieh", "type": "Mosquée de quartier", "capacite": 2500, "annee_construction": 1998, "style_architectural": "Jordanien contemporain", "note": 4.5 }
+  ],
+  "hotels": [
+    { "id": "h-001", "nom": "Four Seasons Hotel Amman", "adresse": "5th Circle, Amman", "categorie": "5 étoiles", "prix_nuit": "250–600 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.9 },
+    { "id": "h-002", "nom": "Kempinski Hotel Amman", "adresse": "Abdul Hamid Shoman Street", "categorie": "5 étoiles", "prix_nuit": "200–450 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.8 },
+    { "id": "h-003", "nom": "Hôtel Intercontinental Amman", "adresse": "Islamic College Street", "categorie": "5 étoiles", "prix_nuit": "180–400 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.7 },
+    { "id": "h-004", "nom": "Nomads Hotel & Hostel", "adresse": "Downtown Amman", "categorie": "Boutique / Auberge", "prix_nuit": "25–80 €", "halal_friendly": true, "sans_alcool": true, "piscine": false, "note": 4.6 },
+    { "id": "h-005", "nom": "Hôtel Amman Marriott", "adresse": "Issam Ajlouni Street", "categorie": "5 étoiles", "prix_nuit": "160–380 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.7 }
+  ],
+  "activites": [
+    { "id": "a-001", "nom": "La Citadelle d'Amman (Jabal Al Qala'a)", "type": "Histoire", "duree": "2h", "prix": "3 JOD", "note": 4.8 },
+    { "id": "a-002", "nom": "Théâtre Romain d'Amman", "type": "Histoire antique", "duree": "1h", "prix": "2 JOD", "note": 4.7 },
+    { "id": "a-003", "nom": "Rainbow Street & Downtown", "type": "Culture urbaine", "duree": "2h", "prix": "Gratuit", "note": 4.6 },
+    { "id": "a-004", "nom": "Excursion à Pétra (3h de route)", "type": "Site historique mondial", "duree": "Journée ou 2 jours", "prix": "50 JOD/jour (Jordan Pass inclus)", "note": 5.0 },
+    { "id": "a-005", "nom": "Mer Morte (floating experience)", "type": "Nature & bien-être", "duree": "Journée", "prix": "Transport + entrée beach club", "note": 4.8 },
+    { "id": "a-006", "nom": "Jerash (cité romaine)", "type": "Archéologie", "duree": "Journée", "prix": "10 JOD (Jordan Pass inclus)", "note": 4.7 },
+    { "id": "a-007", "nom": "Marché de Souq Al Bukharia", "type": "Shopping & antiquités", "duree": "2h", "prix": "Gratuit", "note": 4.5 },
+    { "id": "a-008", "nom": "Wadi Rum (désert de sable rouge)", "type": "Désert & aventure", "duree": "1–2 jours", "prix": "Camp + activités 50–100 JOD", "note": 4.9 }
+  ]
+}

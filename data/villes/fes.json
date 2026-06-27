@@ -1,0 +1,73 @@
+{
+  "slug": "fes",
+  "nom": "Fès",
+  "nom_arabe": "فاس",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "drapeau": "🇲🇦",
+  "region": "Afrique du Nord",
+  "coordonnees": { "lat": 34.0181, "lng": -5.0078 },
+  "score_halal": 5,
+  "score_securite": 4,
+  "score_famille": 5,
+  "score_budget": 5,
+  "description": {
+    "court": "La capitale spirituelle et intellectuelle du Maroc, fondée en 789",
+    "long": "Fès est la plus ancienne des villes impériales du Maroc et l'une des villes médiévales les mieux préservées au monde. Sa médina, inscrite au patrimoine mondial de l'UNESCO, abrite la plus ancienne université du monde — la Qarawiyyin, fondée en 859. Pays à majorité musulmane, le halal est la norme absolue dans toute la ville. Fès est une destination spirituelle et culturelle de premier ordre pour les voyageurs musulmans."
+  },
+  "statistiques": {
+    "mosquees": 785,
+    "restaurants_halal": 1200,
+    "hotels_halal_friendly": 95,
+    "population": "1,2 million"
+  },
+  "infos_pratiques": {
+    "langue": "Arabe, Berbère, Français",
+    "monnaie": "Dirham marocain (MAD)",
+    "fuseau_horaire": "GMT+1",
+    "meilleure_periode": "Mars–mai, Septembre–novembre",
+    "visa": "Entrée libre pour ressortissants français, belges, canadiens",
+    "transport": "Taxi, bus, à pied dans la médina"
+  },
+  "restaurants": [
+    { "id": "r-001", "nom": "Restaurant Dar Roumana", "adresse": "30 Derb el Amer, Médina", "cuisine": "Marocaine traditionnelle", "specialite": "Bastilla aux pigeons et amandes", "certification": "Halal (pays majoritairement musulman)", "prix_moyen": "150–300 MAD", "note": 4.8, "telephone": "+212 535 741637" },
+    { "id": "r-002", "nom": "Café Clock", "adresse": "7 Derb el Magana, Talaa Kbira", "cuisine": "Fusion marocaine-internationale", "specialite": "Burger de chameau halal", "certification": "Halal", "prix_moyen": "80–150 MAD", "note": 4.5 },
+    { "id": "r-003", "nom": "Restaurant Marrakchia", "adresse": "Médina de Fès", "cuisine": "Marocaine", "specialite": "Tajine d'agneau aux pruneaux", "certification": "Halal", "prix_moyen": "100–200 MAD", "note": 4.4 },
+    { "id": "r-004", "nom": "Dar Hatim", "adresse": "Médina, quartier Andalous", "cuisine": "Marocaine", "specialite": "Couscous royal du vendredi", "certification": "Halal", "prix_moyen": "120–250 MAD", "note": 4.6 },
+    { "id": "r-005", "nom": "Restaurant Fès el-Bali", "adresse": "Place Seffarine, Médina", "cuisine": "Marocaine traditionnelle", "specialite": "Méchoui d'agneau", "certification": "Halal", "prix_moyen": "100–200 MAD", "note": 4.3 },
+    { "id": "r-006", "nom": "La Maison Bleue", "adresse": "2 Place de l'Istiqlal, Médina", "cuisine": "Marocaine raffinée", "specialite": "Pastilla sucrée-salée", "certification": "Halal", "prix_moyen": "250–450 MAD", "note": 4.7 },
+    { "id": "r-007", "nom": "Riad Fès Restaurant", "adresse": "5 Derb Ben Slimane, Ziat", "cuisine": "Marocaine gastronomique", "specialite": "Tajine de poulet au citron confit", "certification": "Halal", "prix_moyen": "200–350 MAD", "note": 4.8 },
+    { "id": "r-008", "nom": "Restaurant Palais M'nebhi", "adresse": "15 Souk Lâarissa, Médina", "cuisine": "Marocaine", "specialite": "Mechoui et brochettes", "certification": "Halal", "prix_moyen": "150–280 MAD", "note": 4.5 },
+    { "id": "r-009", "nom": "Dar Anebar", "adresse": "Médina, Bab Jdid", "cuisine": "Marocaine & Andalouse", "specialite": "Harira et sellouh", "certification": "Halal", "prix_moyen": "80–160 MAD", "note": 4.4 },
+    { "id": "r-010", "nom": "Restaurant Sidi Ahmed", "adresse": "Quartier Fès el-Jdid", "cuisine": "Marocaine populaire", "specialite": "Brochettes et merguez", "certification": "Halal", "prix_moyen": "50–100 MAD", "note": 4.2 },
+    { "id": "r-011", "nom": "Café des Mérinides", "adresse": "Vue panoramique Mérinides", "cuisine": "Légère, snacks halal", "specialite": "Msemen et café", "certification": "Halal", "prix_moyen": "30–80 MAD", "note": 4.6 },
+    { "id": "r-012", "nom": "Restaurant Bouayad", "adresse": "Talaa Kbira, Médina", "cuisine": "Marocaine", "specialite": "Harira, rfissa", "certification": "Halal", "prix_moyen": "40–90 MAD", "note": 4.3 },
+    { "id": "r-013", "nom": "Dar Bennis", "adresse": "Médina ancienne", "cuisine": "Marocaine traditionnelle", "specialite": "Tajine kefta", "certification": "Halal", "prix_moyen": "100–200 MAD", "note": 4.4 },
+    { "id": "r-014", "nom": "Restaurant Chez Rachid", "adresse": "Ville Nouvelle, Ave Hassan II", "cuisine": "Marocaine & grill", "specialite": "Poulet rôti et salades", "certification": "Halal", "prix_moyen": "60–130 MAD", "note": 4.1 },
+    { "id": "r-015", "nom": "Palace de Fès", "adresse": "Complexe Palace, Fès el-Jdid", "cuisine": "Gastronomique marocaine", "specialite": "Diffa royale (dîner complet)", "certification": "Halal", "prix_moyen": "350–600 MAD", "note": 4.7 }
+  ],
+  "mosquees": [
+    { "id": "m-001", "nom": "Mosquée Qarawiyyin (Al-Qarawiyyin)", "adresse": "Médina de Fès, Rue Boukhessisat", "type": "Historique & université", "capacite": 20000, "annee_construction": 859, "style_architectural": "Andalou-mauresque", "note": 5.0 },
+    { "id": "m-002", "nom": "Mosquée des Andalous", "adresse": "Quartier Andalous, Médina", "type": "Historique", "capacite": 5000, "annee_construction": 860, "style_architectural": "Mauresque", "note": 4.9 },
+    { "id": "m-003", "nom": "Mosquée Moulay Idriss II", "adresse": "Médina, Zaoui Moulay Idriss", "type": "Mausolée & mosquée", "capacite": 3000, "annee_construction": 828, "style_architectural": "Mauresque", "note": 4.8 },
+    { "id": "m-004", "nom": "Mosquée Bou Inania", "adresse": "Talaa Kbira, Médina", "type": "Médersa-Mosquée", "capacite": 2000, "annee_construction": 1351, "style_architectural": "Mérinide", "note": 4.9 },
+    { "id": "m-005", "nom": "Mosquée Chrabliyine", "adresse": "Souk Chrabliyine, Médina", "type": "Mosquée de quartier", "capacite": 1000, "annee_construction": 1342, "style_architectural": "Mérinide", "note": 4.5 }
+  ],
+  "hotels": [
+    { "id": "h-001", "nom": "Riad Fès", "adresse": "5 Derb Ben Slimane, Médina", "categorie": "5 étoiles", "prix_nuit": "250–500 €", "halal_friendly": true, "sans_alcool": true, "piscine": true, "note": 4.9 },
+    { "id": "h-002", "nom": "La Maison Bleue", "adresse": "2 Place de l'Istiqlal", "categorie": "5 étoiles", "prix_nuit": "200–400 €", "halal_friendly": true, "sans_alcool": true, "piscine": false, "note": 4.8 },
+    { "id": "h-003", "nom": "Dar Roumana", "adresse": "30 Derb el Amer, Médina", "categorie": "Boutique 4 étoiles", "prix_nuit": "120–250 €", "halal_friendly": true, "sans_alcool": true, "piscine": false, "note": 4.7 },
+    { "id": "h-004", "nom": "Riad Laaroussa", "adresse": "3 Derb Bechara, Médina", "categorie": "Boutique 4 étoiles", "prix_nuit": "150–300 €", "halal_friendly": true, "sans_alcool": true, "piscine": false, "note": 4.8 },
+    { "id": "h-005", "nom": "Hôtel Menzeh Zalagh", "adresse": "Quartier Hamria, Fès", "categorie": "4 étoiles", "prix_nuit": "80–160 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.2 }
+  ],
+  "activites": [
+    { "id": "a-001", "nom": "Visite de la Qarawiyyin", "type": "Culture & spirituel", "duree": "2h", "prix": "Gratuit (extérieur uniquement pour non-musulmans)", "note": 4.9 },
+    { "id": "a-002", "nom": "Tanneries Chouara", "type": "Artisanat", "duree": "1h30", "prix": "Gratuit depuis les terrasses des boutiques de cuir", "note": 4.7 },
+    { "id": "a-003", "nom": "Médersa Bou Inania", "type": "Architecture islamique", "duree": "1h", "prix": "20 MAD", "note": 4.8 },
+    { "id": "a-004", "nom": "Fondouk Nejjarine (Musée du Bois)", "type": "Musée", "duree": "1h30", "prix": "20 MAD", "note": 4.5 },
+    { "id": "a-005", "nom": "Vue panoramique Tombeaux Mérinides", "type": "Point de vue", "duree": "45 min", "prix": "Gratuit", "note": 4.6 },
+    { "id": "a-006", "nom": "Souks de la médina", "type": "Shopping & artisanat", "duree": "3h", "prix": "Variable", "note": 4.8 },
+    { "id": "a-007", "nom": "Zaoui Moulay Idriss II", "type": "Site spirituel", "duree": "45 min", "prix": "Gratuit", "note": 4.9 },
+    { "id": "a-008", "nom": "Mellah (ancien quartier juif)", "type": "Histoire", "duree": "1h", "prix": "Gratuit", "note": 4.3 }
+  ]
+}

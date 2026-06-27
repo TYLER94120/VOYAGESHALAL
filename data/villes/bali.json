@@ -1,0 +1,73 @@
+{
+  "slug": "bali",
+  "nom": "Bali",
+  "nom_arabe": "بالي",
+  "pays": "Indonésie",
+  "pays_slug": "indonesie",
+  "drapeau": "🇮🇩",
+  "region": "Asie du Sud-Est",
+  "coordonnees": { "lat": -8.3405, "lng": 115.0920 },
+  "score_halal": 4,
+  "score_securite": 4,
+  "score_famille": 4,
+  "score_budget": 4,
+  "description": {
+    "court": "L'île des dieux — destination paradisiaque avec une offre halal croissante",
+    "long": "Bali est l'une des destinations les plus emblématiques du monde. Bien que majoritairement hindoue (contrairement au reste de l'Indonésie), l'île accueille des millions de touristes musulmans et la certification halal MUI y est disponible dans de nombreux restaurants. Les zones de Kuta, Seminyak et Ubud proposent une offre halal solide. Les musulmans peuvent y voyager confortablement en sélectionnant les restaurants certifiés et les hébergements appropriés. La beauté naturelle de Bali — rizières, temples, plages — en fait une destination exceptionnelle."
+  },
+  "statistiques": {
+    "mosquees": 450,
+    "restaurants_halal": 1200,
+    "hotels_halal_friendly": 180,
+    "population": "4,5 millions"
+  },
+  "infos_pratiques": {
+    "langue": "Balinais, Bahasa Indonesia, Anglais très répandu",
+    "monnaie": "Roupie indonésienne (IDR) — 1 € ≈ 17 000 IDR",
+    "fuseau_horaire": "WITA (GMT+8)",
+    "meilleure_periode": "Avril–octobre (saison sèche)",
+    "visa": "Visa on Arrival 35 USD, 30 jours",
+    "transport": "Scooter, taxi (Gojek/Grab), voiture + chauffeur recommandée"
+  },
+  "restaurants": [
+    { "id": "r-001", "nom": "Merah Putih Restaurant", "adresse": "Jl. Petitenget 100X, Seminyak", "cuisine": "Indonésienne contemporaine", "specialite": "Nasi tumpeng et rendang daging", "certification": "Halal MUI", "prix_moyen": "150 000–400 000 IDR", "note": 4.7 },
+    { "id": "r-002", "nom": "Warung Babi Guling Ibu Oka (version halal)", "adresse": "Ubud Centre", "cuisine": "Balinaise (alternative halal)", "specialite": "Nasi campur ayam et sate lilit", "certification": "Halal MUI", "prix_moyen": "50 000–100 000 IDR", "note": 4.5 },
+    { "id": "r-003", "nom": "Bumbu Bali Restaurant", "adresse": "Tanjung Benoa, Nusa Dua", "cuisine": "Balinaise authentique halal", "specialite": "Lawar ayam et ayam betutu", "certification": "Halal MUI", "prix_moyen": "100 000–250 000 IDR", "note": 4.8 },
+    { "id": "r-004", "nom": "Ryoshi Japanese (Halal-friendly)", "adresse": "Seminyak", "cuisine": "Japonaise halal", "specialite": "Tempura crevettes et sushi thon halal", "certification": "Halal MUI", "prix_moyen": "120 000–280 000 IDR", "note": 4.5 },
+    { "id": "r-005", "nom": "Warung Mak Beng", "adresse": "Jl. Hang Tuah 45, Sanur", "cuisine": "Poissons balinais halal", "specialite": "Ikan goreng crispy avec sambal matah", "certification": "Halal", "prix_moyen": "50 000–120 000 IDR", "note": 4.9 },
+    { "id": "r-006", "nom": "KFC Halal Kuta", "adresse": "Kuta Square", "cuisine": "Fast food halal certifié", "specialite": "Crispy chicken halal MUI", "certification": "Halal MUI certifié", "prix_moyen": "40 000–90 000 IDR", "note": 4.1 },
+    { "id": "r-007", "nom": "Mozaic Restaurant", "adresse": "Jl. Raya Sanggingan, Ubud", "cuisine": "Gastronomique fusion halal", "specialite": "Menu dégustation halal (8 plats)", "certification": "Halal (sur demande)", "prix_moyen": "500 000–800 000 IDR", "note": 4.8 },
+    { "id": "r-008", "nom": "Locavore Restaurant Halal", "adresse": "Ubud", "cuisine": "Farm-to-table halal", "specialite": "Légumes locaux et canard halal des highlands", "certification": "Halal sur demande", "prix_moyen": "300 000–600 000 IDR", "note": 4.7 },
+    { "id": "r-009", "nom": "Naughty Nuri's (section halal)", "adresse": "Ubud", "cuisine": "Grillades & ribs halal", "specialite": "Ribs de bœuf halal et cocktails sans alcool", "certification": "Halal MUI", "prix_moyen": "100 000–250 000 IDR", "note": 4.4 },
+    { "id": "r-010", "nom": "Poppies Restaurant", "adresse": "Poppies Lane II, Kuta", "cuisine": "Indonésienne & internationale halal", "specialite": "Nasi goreng et satay ayam", "certification": "Halal MUI", "prix_moyen": "80 000–180 000 IDR", "note": 4.4 },
+    { "id": "r-011", "nom": "Café Wayan", "adresse": "Monkey Forest Road, Ubud", "cuisine": "Balinaise halal", "specialite": "Gado-gado et jus de fruits frais", "certification": "Halal MUI", "prix_moyen": "60 000–150 000 IDR", "note": 4.5 },
+    { "id": "r-012", "nom": "Seasalt Restaurant", "adresse": "Alila Seminyak Hotel", "cuisine": "Fruits de mer halal", "specialite": "Lobster grillé et sashimi halal", "certification": "Halal MUI", "prix_moyen": "200 000–500 000 IDR", "note": 4.7 },
+    { "id": "r-013", "nom": "Biku Tea House", "adresse": "Jl. Petitenget 888, Seminyak", "cuisine": "Fusion halal & tea room", "specialite": "High tea halal avec scones", "certification": "Halal MUI", "prix_moyen": "100 000–200 000 IDR", "note": 4.6 },
+    { "id": "r-014", "nom": "Revolver Espresso (sans alcool)", "adresse": "Jl. Kayu Aya 3A, Seminyak", "cuisine": "Café & brunch halal", "specialite": "Acai bowl et cold brew halal", "certification": "Sans alcool / halal friendly", "prix_moyen": "60 000–130 000 IDR", "note": 4.5 },
+    { "id": "r-015", "nom": "Spice by Chris Salans", "adresse": "Nusa Dua Resort", "cuisine": "Internationale gastronomique halal", "specialite": "Fusion balinaise-française halal", "certification": "Halal MUI", "prix_moyen": "200 000–450 000 IDR", "note": 4.7 }
+  ],
+  "mosquees": [
+    { "id": "m-001", "nom": "Masjid Agung Bali (Denpasar)", "adresse": "Jl. Masjid Agung, Denpasar", "type": "Grande mosquée provinciale", "capacite": 15000, "annee_construction": 1977, "style_architectural": "Islamique avec éléments balinais", "note": 4.8 },
+    { "id": "m-002", "nom": "Masjid Mujahidin (Kuta)", "adresse": "Jl. Patimura, Kuta", "type": "Mosquée touristique centrale", "capacite": 3000, "annee_construction": 1985, "style_architectural": "Islamique classique", "note": 4.6 },
+    { "id": "m-003", "nom": "Masjid An-Nur (Seminyak)", "adresse": "Seminyak, Bali", "type": "Mosquée de quartier", "capacite": 1500, "annee_construction": 1995, "style_architectural": "Contemporain", "note": 4.5 },
+    { "id": "m-004", "nom": "Masjid Al-Ikhlas (Ubud)", "adresse": "Jl. Raya Ubud", "type": "Mosquée pour touristes musulmans", "capacite": 800, "annee_construction": 2000, "style_architectural": "Simple, moderne", "note": 4.4 },
+    { "id": "m-005", "nom": "Masjid Baitul Makmur (Nusa Dua)", "adresse": "Nusa Dua Resort Area", "type": "Mosquée de resort", "capacite": 2000, "annee_construction": 1992, "style_architectural": "Islamique-balinais", "note": 4.7 }
+  ],
+  "hotels": [
+    { "id": "h-001", "nom": "Four Seasons Resort Bali (Sayan)", "adresse": "Sayan, Ubud", "categorie": "5 étoiles de luxe", "prix_nuit": "400–1200 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.9 },
+    { "id": "h-002", "nom": "Alila Villas Uluwatu", "adresse": "Uluwatu, Pecatu", "categorie": "5 étoiles villa", "prix_nuit": "600–2000 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.9 },
+    { "id": "h-003", "nom": "The Mulia Bali", "adresse": "Nusa Dua", "categorie": "5 étoiles luxe", "prix_nuit": "300–800 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.8 },
+    { "id": "h-004", "nom": "Villa Puri Ayu (halal villa)", "adresse": "Seminyak", "categorie": "Villa privée halal", "prix_nuit": "200–500 €", "halal_friendly": true, "sans_alcool": true, "piscine": true, "note": 4.7 },
+    { "id": "h-005", "nom": "Ibis Bali Kuta", "adresse": "Kuta Beach", "categorie": "3 étoiles", "prix_nuit": "50–120 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.3 }
+  ],
+  "activites": [
+    { "id": "a-001", "nom": "Rizières de Tegallalang (Ubud)", "type": "Nature", "duree": "2h", "prix": "Donation 15 000 IDR", "note": 4.8 },
+    { "id": "a-002", "nom": "Temple Tanah Lot (coucher de soleil)", "type": "Culture (temple hindou)", "duree": "2h", "prix": "60 000 IDR", "note": 4.7 },
+    { "id": "a-003", "nom": "Volcane Mont Batur (trek lever de soleil)", "type": "Randonnée", "duree": "6h (départ 2h du matin)", "prix": "350 000–500 000 IDR avec guide", "note": 4.9 },
+    { "id": "a-004", "nom": "Plage de Seminyak & Kuta", "type": "Plage", "duree": "Journée", "prix": "Gratuit", "note": 4.5 },
+    { "id": "a-005", "nom": "Snorkeling à Nusa Penida", "type": "Sports nautiques", "duree": "Journée", "prix": "500 000–800 000 IDR", "note": 4.9 },
+    { "id": "a-006", "nom": "Ubud Market & Monkey Forest", "type": "Culture & nature", "duree": "3h", "prix": "80 000 IDR Monkey Forest", "note": 4.6 },
+    { "id": "a-007", "nom": "Spa et massage balinais halal", "type": "Bien-être", "duree": "1–2h", "prix": "150 000–400 000 IDR", "note": 4.8 },
+    { "id": "a-008", "nom": "Cours de cuisine balinaise halal", "type": "Gastronomie", "duree": "4h", "prix": "300 000–500 000 IDR", "note": 4.8 }
+  ]
+}

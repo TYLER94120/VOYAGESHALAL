@@ -1,0 +1,73 @@
+{
+  "slug": "mascate",
+  "nom": "Mascate",
+  "nom_arabe": "مسقط",
+  "pays": "Oman",
+  "pays_slug": "oman",
+  "drapeau": "🇴🇲",
+  "region": "Moyen-Orient",
+  "coordonnees": { "lat": 23.5880, "lng": 58.3829 },
+  "score_halal": 5,
+  "score_securite": 5,
+  "score_famille": 5,
+  "score_budget": 3,
+  "description": {
+    "court": "La capitale sereine d'Oman, joyau méconnu du Golfe islamique",
+    "long": "Mascate, capitale du Sultanat d'Oman, est l'une des destinations les mieux gardées du monde arabe. Pays islamique (Islam ibadite), le halal est la norme absolue. Contrairement à Dubaï ou Abu Dhabi, Mascate a choisi une voie authentique : préserver son architecture traditionnelle, ses forts historiques et sa nature préservée. La Grande Mosquée Sultan Qaboos est parmi les plus belles au monde. Oman est réputé pour sa population chaleureuse et une sécurité remarquable — idéale pour les familles."
+  },
+  "statistiques": {
+    "mosquees": 5000,
+    "restaurants_halal": 2500,
+    "hotels_halal_friendly": 200,
+    "population": "1,5 million"
+  },
+  "infos_pratiques": {
+    "langue": "Arabe (officiel), Anglais très répandu",
+    "monnaie": "Rial omanais (OMR) — 1 OMR ≈ 2,40 €",
+    "fuseau_horaire": "GMT+4",
+    "meilleure_periode": "Octobre–mars (hiver doux 20–28°C)",
+    "visa": "eVisa en ligne obligatoire (environ 20 OMR, simple), disponible en 24h",
+    "transport": "Taxi, Uber, location de voiture recommandée"
+  },
+  "restaurants": [
+    { "id": "r-001", "nom": "Bait Al Luban", "adresse": "Muttrah Corniche, Mascate", "cuisine": "Omanaise authentique", "specialite": "Shuwa (agneau cuit dans la terre 24h) et mashuai", "certification": "Halal (État islamique)", "prix_moyen": "8–20 OMR", "note": 4.9 },
+    { "id": "r-002", "nom": "Kargeen Caffe", "adresse": "Al Mawaleh, Mascate", "cuisine": "Fusion omanaise & orientale", "specialite": "Harees et dates fraîches", "certification": "Halal", "prix_moyen": "5–15 OMR", "note": 4.7 },
+    { "id": "r-003", "nom": "Al Angham Restaurant", "adresse": "Royal Opera House, Mascate", "cuisine": "Omanaise gastronomique", "specialite": "Qabuli (riz aux épices et noix)", "certification": "Halal", "prix_moyen": "15–30 OMR", "note": 4.8 },
+    { "id": "r-004", "nom": "Muscat Hills Restaurant", "adresse": "Muscat Hills Golf, Wave", "cuisine": "Internationale halal", "specialite": "Wagyu omani grillé", "certification": "Halal", "prix_moyen": "12–30 OMR", "note": 4.6 },
+    { "id": "r-005", "nom": "Automatic Restaurant", "adresse": "Ruwi, Mascate", "cuisine": "Libanaise halal", "specialite": "Shawarma et mezze complet", "certification": "Halal", "prix_moyen": "3–8 OMR", "note": 4.5 },
+    { "id": "r-006", "nom": "Ubhar Restaurant", "adresse": "Qurum, Mascate", "cuisine": "Omanaise traditionnelle", "specialite": "Muqalab (riz aux poissons séchés)", "certification": "Halal", "prix_moyen": "6–18 OMR", "note": 4.7 },
+    { "id": "r-007", "nom": "Al Bustan Palace Restaurant", "adresse": "Al Bustan Palace Hotel", "cuisine": "Internationale gastronomique halal", "specialite": "Fruits de mer du Golfe", "certification": "Halal", "prix_moyen": "20–50 OMR", "note": 4.8 },
+    { "id": "r-008", "nom": "Pavo Real (Indienne)", "adresse": "Qurum Business District", "cuisine": "Indienne halal", "specialite": "Biryani hyderabadi et tandoori", "certification": "Halal", "prix_moyen": "4–10 OMR", "note": 4.5 },
+    { "id": "r-009", "nom": "Bin Atiq Restaurant", "adresse": "Multiple locations", "cuisine": "Yéménite & omanaise", "specialite": "Mandi et kabsa sur braise", "certification": "Halal", "prix_moyen": "2–5 OMR", "note": 4.6 },
+    { "id": "r-010", "nom": "Copper Chimney", "adresse": "Grand Hyatt Mascate", "cuisine": "Indienne gastronomique halal", "specialite": "Murgh makhani et naan maison", "certification": "Halal", "prix_moyen": "8–20 OMR", "note": 4.7 },
+    { "id": "r-011", "nom": "Marjan (Pêche du jour)", "adresse": "Muttrah, port de pêche", "cuisine": "Fruits de mer frais", "specialite": "Hammour grillé au cumin", "certification": "Halal", "prix_moyen": "5–12 OMR", "note": 4.8 },
+    { "id": "r-012", "nom": "Mumtaz Mahal", "adresse": "Al Khuwair, Mascate", "cuisine": "Pakistanaise halal", "specialite": "Nihari et paratha", "certification": "Halal certifié", "prix_moyen": "3–8 OMR", "note": 4.5 },
+    { "id": "r-013", "nom": "The Chedi Restaurant", "adresse": "The Chedi Hotel, Al Ghubrah", "cuisine": "Asiatique gastronomique halal", "specialite": "Sashimi halal et wok de crevettes", "certification": "Halal", "prix_moyen": "20–45 OMR", "note": 4.8 },
+    { "id": "r-014", "nom": "Nando's Oman", "adresse": "Muscat City Centre", "cuisine": "Portugaise-africaine halal", "specialite": "Poulet peri-peri halal", "certification": "Halal certifié", "prix_moyen": "5–10 OMR", "note": 4.3 },
+    { "id": "r-015", "nom": "Al Matbakh (traditionnel)", "adresse": "Azaiba, Mascate", "cuisine": "Omanaise populaire", "specialite": "Thareed et Majboos viande", "certification": "Halal", "prix_moyen": "3–7 OMR", "note": 4.4 }
+  ],
+  "mosquees": [
+    { "id": "m-001", "nom": "Grande Mosquée Sultan Qaboos", "adresse": "Al Ghubrah, Mascate", "type": "Mosquée nationale", "capacite": 20000, "annee_construction": 2001, "style_architectural": "Islamique contemporain (marbre, or)", "note": 5.0 },
+    { "id": "m-002", "nom": "Mosquée Al Khor (Muttrah)", "adresse": "Muttrah Corniche", "type": "Historique", "capacite": 3000, "annee_construction": 1908, "style_architectural": "Ibadite traditionnel", "note": 4.7 },
+    { "id": "m-003", "nom": "Mosquée Al Zawawi", "adresse": "Ruwi, Old Muscat", "type": "Mosquée historique", "capacite": 4000, "annee_construction": 1875, "style_architectural": "Ibadite classique", "note": 4.8 },
+    { "id": "m-004", "nom": "Mosquée Bilal", "adresse": "Al Khuwair", "type": "Mosquée centrale", "capacite": 8000, "annee_construction": 1995, "style_architectural": "Omanais contemporain", "note": 4.6 },
+    { "id": "m-005", "nom": "Mosquée Mohammed Al-Amin", "adresse": "Qurum, Mascate", "type": "Grande mosquée", "capacite": 12000, "annee_construction": 2010, "style_architectural": "Islamique moderne", "note": 4.9 }
+  ],
+  "hotels": [
+    { "id": "h-001", "nom": "The Chedi Muscat", "adresse": "North Ghubrah", "categorie": "5 étoiles de luxe", "prix_nuit": "300–800 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.9 },
+    { "id": "h-002", "nom": "Al Bustan Palace (Ritz-Carlton)", "adresse": "Al Bustan Street", "categorie": "5 étoiles luxe", "prix_nuit": "250–600 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.8 },
+    { "id": "h-003", "nom": "Grand Hyatt Muscat", "adresse": "Al Shati Street, Qurum", "categorie": "5 étoiles", "prix_nuit": "150–350 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.7 },
+    { "id": "h-004", "nom": "Crowne Plaza Muscat", "adresse": "Qurum, Mascate", "categorie": "5 étoiles", "prix_nuit": "100–250 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.6 },
+    { "id": "h-005", "nom": "Oman Air Hotel", "adresse": "Ruwi, Mascate", "categorie": "3 étoiles", "prix_nuit": "50–120 €", "halal_friendly": true, "sans_alcool": true, "piscine": false, "note": 4.2 }
+  ],
+  "activites": [
+    { "id": "a-001", "nom": "Grande Mosquée Sultan Qaboos (visite)", "type": "Spirituel", "duree": "2h", "prix": "Gratuit (matin seulement)", "note": 5.0 },
+    { "id": "a-002", "nom": "Souq Muttrah (marché traditionnel)", "type": "Shopping & culture", "duree": "2h", "prix": "Gratuit", "note": 4.8 },
+    { "id": "a-003", "nom": "Musée National d'Oman", "type": "Histoire & culture", "duree": "2h", "prix": "5 OMR", "note": 4.7 },
+    { "id": "a-004", "nom": "Fort Bahla (UNESCO) + Nizwa", "type": "Excursion & histoire", "duree": "Journée", "prix": "Entrée forts 3 OMR", "note": 4.9 },
+    { "id": "a-005", "nom": "Wadi Shab (canyon et source)", "type": "Nature", "duree": "Journée", "prix": "Transport + petit bateau 1 OMR", "note": 4.9 },
+    { "id": "a-006", "nom": "Dunes de Wahiba Sands (désert)", "type": "Aventure", "duree": "1–2 jours", "prix": "Camp 40–80 OMR", "note": 4.8 },
+    { "id": "a-007", "nom": "Fjords de Khasab (dhow cruise)", "type": "Nature maritime", "duree": "Journée", "prix": "25–50 OMR", "note": 4.8 },
+    { "id": "a-008", "nom": "Old Muscat & Forts Al Mirani/Al Jalali", "type": "Histoire", "duree": "2h", "prix": "Gratuit (extérieur)", "note": 4.6 }
+  ]
+}

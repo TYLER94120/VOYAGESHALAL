@@ -86,13 +86,13 @@ export default function CityTabs({ ville }: Props) {
                 <div className="flex items-center gap-1">
                   <span style={{ color: GOLD }}>★</span>
                   <span className="font-semibold">{r.note}</span>
-                  <span className="text-gray-400">({r.avis_count.toLocaleString('fr-FR')} avis)</span>
+                  <span className="text-gray-400">({(r.avis_count ?? 0).toLocaleString('fr-FR')} avis)</span>
                 </div>
                 <span className="text-gray-400 text-xs">{r.horaires}</span>
               </div>
-              {r.specialites.length > 0 && (
+              {(r.specialites ?? []).length > 0 && (
                 <div className="mt-3 flex flex-wrap gap-1">
-                  {r.specialites.map((s) => (
+                  {(r.specialites ?? []).map((s) => (
                     <span key={s} className="px-2 py-0.5 bg-gray-50 text-gray-500 rounded text-xs">{s}</span>
                   ))}
                 </div>
@@ -120,7 +120,7 @@ export default function CityTabs({ ville }: Props) {
                 )}
               </div>
               {m.capacite && (
-                <p className="text-xs text-gray-400 mt-2">Capacité : {m.capacite.toLocaleString('fr-FR')} fidèles</p>
+                <p className="text-xs text-gray-400 mt-2">Capacité : {(m.capacite ?? 0).toLocaleString('fr-FR')} fidèles</p>
               )}
             </div>
           ))}
@@ -150,7 +150,7 @@ export default function CityTabs({ ville }: Props) {
                 <div className="flex items-center gap-1 text-sm">
                   <span style={{ color: GOLD }}>★</span>
                   <span className="font-semibold">{h.note}</span>
-                  <span className="text-gray-400">({h.avis_count.toLocaleString('fr-FR')} avis)</span>
+                  <span className="text-gray-400">({(h.avis_count ?? 0).toLocaleString('fr-FR')} avis)</span>
                 </div>
                 <p className="font-bold" style={{ color: GREEN }}>À partir de {h.prix_nuit_min}{h.devise === 'EUR' ? '€' : h.devise === 'GBP' ? '£' : h.devise}/nuit</p>
               </div>
@@ -170,9 +170,9 @@ export default function CityTabs({ ville }: Props) {
                 <span>⏱ {a.duree}</span>
                 <span style={{ color: GREEN }} className="font-medium">{a.prix}</span>
               </div>
-              {a.tags.length > 0 && (
+              {(a.tags ?? []).length > 0 && (
                 <div className="mt-3 flex flex-wrap gap-1">
-                  {a.tags.map((tag) => (
+                  {(a.tags ?? []).map((tag) => (
                     <span key={tag} className="px-2 py-0.5 bg-gray-50 text-gray-500 rounded text-xs">{tag}</span>
                   ))}
                 </div>

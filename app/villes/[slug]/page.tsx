@@ -62,26 +62,28 @@ export default async function VillePage({ params }: Props) {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
             {ville.nom}
           </h1>
-          <p className="text-white/80 text-base max-w-2xl leading-relaxed">{ville.description}</p>
+          <p className="text-white/80 text-base max-w-2xl leading-relaxed">
+            {typeof ville.description === 'string' ? ville.description : (ville.description as { court?: string; long?: string })?.court ?? ''}
+          </p>
         </div>
       </section>
 
       <section className="bg-white border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 sm:px-12 py-6 grid grid-cols-2 sm:grid-cols-4 gap-6">
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{ville.statistiques.mosquees.toLocaleString('fr-FR')}</p>
+            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{(ville.statistiques?.mosquees ?? 0).toLocaleString('fr-FR')}</p>
             <p className="text-xs text-gray-500 mt-0.5">Mosquées</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{ville.statistiques.restaurants_halal.toLocaleString('fr-FR')}+</p>
+            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{(ville.statistiques?.restaurants_halal ?? 0).toLocaleString('fr-FR')}+</p>
             <p className="text-xs text-gray-500 mt-0.5">Restaurants halal</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{ville.statistiques.hotels_halal}</p>
+            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{ville.statistiques?.hotels_halal ?? ville.statistiques?.hotels_halal_friendly ?? 0}</p>
             <p className="text-xs text-gray-500 mt-0.5">Hôtels halal-friendly</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{ville.statistiques.habitants_musulmans_pct}%</p>
+            <p className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{ville.statistiques?.habitants_musulmans_pct ?? ville.statistiques?.musulmans_pct ?? '—'}%</p>
             <p className="text-xs text-gray-500 mt-0.5">Population musulmane</p>
           </div>
         </div>

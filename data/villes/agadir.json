@@ -1,0 +1,73 @@
+{
+  "slug": "agadir",
+  "nom": "Agadir",
+  "nom_arabe": "أكادير",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "drapeau": "🇲🇦",
+  "region": "Afrique du Nord",
+  "coordonnees": { "lat": 30.4278, "lng": -9.5981 },
+  "score_halal": 5,
+  "score_securite": 5,
+  "score_famille": 5,
+  "score_budget": 4,
+  "description": {
+    "court": "La capitale balnéaire du Maroc, 300 jours de soleil par an",
+    "long": "Agadir est la station balnéaire la plus fréquentée du Maroc, réputée pour ses 300 jours de soleil annuels et ses 10 km de plage dorée. Reconstruite après le séisme de 1960, la ville moderne offre d'excellentes infrastructures touristiques. Pays à majorité musulmane, le halal est la norme. Idéale pour les familles, Agadir combine détente balnéaire, excursions dans la vallée du Souss et découverte de la culture amazigh (berbère)."
+  },
+  "statistiques": {
+    "mosquees": 180,
+    "restaurants_halal": 650,
+    "hotels_halal_friendly": 120,
+    "population": "700 000"
+  },
+  "infos_pratiques": {
+    "langue": "Arabe, Berbère (Tachelhit), Français",
+    "monnaie": "Dirham marocain (MAD)",
+    "fuseau_horaire": "GMT+1",
+    "meilleure_periode": "Toute l'année (meilleur : mars–mai, octobre–novembre)",
+    "visa": "Entrée libre pour ressortissants français, belges, canadiens",
+    "transport": "Taxi, bus, location de voiture recommandée"
+  },
+  "restaurants": [
+    { "id": "r-001", "nom": "La Sqala Agadir", "adresse": "Bord de mer, Secteur Touristique", "cuisine": "Marocaine & grillades", "specialite": "Brochettes d'agneau et poissons", "certification": "Halal", "prix_moyen": "100–200 MAD", "note": 4.6 },
+    { "id": "r-002", "nom": "Restaurant Pure Passion", "adresse": "Ave du Prince Sidi Mohammed", "cuisine": "Marocaine gastronomique", "specialite": "Tajine de crevettes au safran", "certification": "Halal", "prix_moyen": "150–300 MAD", "note": 4.7 },
+    { "id": "r-003", "nom": "Jour et Nuit", "adresse": "Secteur balnéaire, Agadir", "cuisine": "Internationale halal", "specialite": "Buffet marocain & grillades", "certification": "Halal", "prix_moyen": "120–250 MAD", "note": 4.4 },
+    { "id": "r-004", "nom": "Le Jardin d'Agadir", "adresse": "Complexe Founty", "cuisine": "Marocaine & méditerranéenne", "specialite": "Couscous royal et tagine d'agneau", "certification": "Halal", "prix_moyen": "130–260 MAD", "note": 4.5 },
+    { "id": "r-005", "nom": "Restaurant Imigrène", "adresse": "Talborjt, Agadir", "cuisine": "Marocaine populaire", "specialite": "Poisson à la chermoula", "certification": "Halal", "prix_moyen": "60–130 MAD", "note": 4.3 },
+    { "id": "r-006", "nom": "Snack Lamsla", "adresse": "Souk El Had, Agadir", "cuisine": "Street food berbère", "specialite": "Amlou (beurre d'argan et miel)", "certification": "Halal", "prix_moyen": "30–70 MAD", "note": 4.5 },
+    { "id": "r-007", "nom": "Marina Restaurant", "adresse": "Port de plaisance Agadir", "cuisine": "Poissons & fruits de mer halal", "specialite": "Sole meunière halal", "certification": "Halal", "prix_moyen": "150–300 MAD", "note": 4.6 },
+    { "id": "r-008", "nom": "Chez Driss", "adresse": "Rue de la Foire, Agadir", "cuisine": "Pâtisseries et brunch halal", "specialite": "Cornes de gazelle et sellou", "certification": "Halal", "prix_moyen": "40–90 MAD", "note": 4.7 },
+    { "id": "r-009", "nom": "Restaurant Atlantique", "adresse": "Front de mer", "cuisine": "Atlantique & marocaine", "specialite": "Sardines grillées fraîches", "certification": "Halal", "prix_moyen": "80–150 MAD", "note": 4.3 },
+    { "id": "r-010", "nom": "Le Mirador", "adresse": "Colline d'Agadir Oufella", "cuisine": "Légère halal", "specialite": "Salades fraîches, jus naturels", "certification": "Halal", "prix_moyen": "60–120 MAD", "note": 4.4 },
+    { "id": "r-011", "nom": "Tanorte Restaurant", "adresse": "Complexe Tanorte", "cuisine": "Marocaine & internationale", "specialite": "Méchoui de mouton", "certification": "Halal", "prix_moyen": "120–240 MAD", "note": 4.4 },
+    { "id": "r-012", "nom": "Boulangerie Halal Charaf", "adresse": "Quartier Hay Mohammadi", "cuisine": "Boulangerie & pâtisserie", "specialite": "Pain marocain, m'semen, baghrir", "certification": "Halal", "prix_moyen": "10–40 MAD", "note": 4.5 },
+    { "id": "r-013", "nom": "El Bab Cuisine", "adresse": "Inezgane (banlieue)", "cuisine": "Marocaine traditionnelle", "specialite": "Diffa complète sur commande", "certification": "Halal", "prix_moyen": "100–200 MAD", "note": 4.3 },
+    { "id": "r-014", "nom": "Restaurant Tigmi", "adresse": "Route de Taroudant", "cuisine": "Berbère authentique", "specialite": "Tagnawt (tajine berbère)", "certification": "Halal", "prix_moyen": "80–160 MAD", "note": 4.6 },
+    { "id": "r-015", "nom": "Fish & Chips Halal", "adresse": "Boulevard Mohammed V", "cuisine": "Fast food halal", "specialite": "Fish & chips au poisson de l'Atlantique", "certification": "Halal certifié", "prix_moyen": "50–100 MAD", "note": 4.1 }
+  ],
+  "mosquees": [
+    { "id": "m-001", "nom": "Grande Mosquée d'Agadir", "adresse": "Quartier central Agadir", "type": "Grande mosquée", "capacite": 8000, "annee_construction": 1985, "style_architectural": "Marocain moderne", "note": 4.7 },
+    { "id": "m-002", "nom": "Mosquée Salam", "adresse": "Secteur touristique", "type": "Mosquée de quartier", "capacite": 2000, "annee_construction": 1990, "style_architectural": "Marocain", "note": 4.4 },
+    { "id": "m-003", "nom": "Mosquée Al Fath", "adresse": "Talborjt, Agadir", "type": "Mosquée historique", "capacite": 3000, "annee_construction": 1975, "style_architectural": "Mauresque", "note": 4.5 },
+    { "id": "m-004", "nom": "Mosquée Hay Dakhla", "adresse": "Quartier Hay Dakhla", "type": "Mosquée de quartier", "capacite": 1500, "annee_construction": 2000, "style_architectural": "Contemporain", "note": 4.3 },
+    { "id": "m-005", "nom": "Mosquée Mohammed VI (Inezgane)", "adresse": "Inezgane", "type": "Grande mosquée", "capacite": 5000, "annee_construction": 2005, "style_architectural": "Royal marocain", "note": 4.8 }
+  ],
+  "hotels": [
+    { "id": "h-001", "nom": "Sofitel Agadir Royal Bay", "adresse": "Baie d'Agadir", "categorie": "5 étoiles", "prix_nuit": "180–400 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.8 },
+    { "id": "h-002", "nom": "Royal Atlas Agadir", "adresse": "Front de mer", "categorie": "5 étoiles", "prix_nuit": "150–320 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.7 },
+    { "id": "h-003", "nom": "Hôtel Riu Palace Tikida Bay", "adresse": "Baie des Palmiers", "categorie": "5 étoiles tout-inclus", "prix_nuit": "120–280 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.5 },
+    { "id": "h-004", "nom": "Ibis Agadir", "adresse": "Ave Mohammed V", "categorie": "3 étoiles", "prix_nuit": "50–120 €", "halal_friendly": true, "sans_alcool": false, "piscine": false, "note": 4.2 },
+    { "id": "h-005", "nom": "Résidence Aqua Fun", "adresse": "Secteur balnéaire", "categorie": "Appartements 3 étoiles", "prix_nuit": "60–130 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.1 }
+  ],
+  "activites": [
+    { "id": "a-001", "nom": "Plage d'Agadir (10 km de sable)", "type": "Plage", "duree": "Journée", "prix": "Gratuit", "note": 4.8 },
+    { "id": "a-002", "nom": "Kasbah d'Agadir Oufella", "type": "Histoire & vue panoramique", "duree": "2h", "prix": "Gratuit", "note": 4.7 },
+    { "id": "a-003", "nom": "Souk El Had (grand marché)", "type": "Shopping & culture", "duree": "2h", "prix": "Gratuit", "note": 4.6 },
+    { "id": "a-004", "nom": "Vallée du Paradis (excursion)", "type": "Nature & randonnée", "duree": "Journée", "prix": "200–400 MAD par personne", "note": 4.8 },
+    { "id": "a-005", "nom": "Taroudant (ville ancienne, 90 km)", "type": "Excursion culturelle", "duree": "Journée", "prix": "Transport variable", "note": 4.7 },
+    { "id": "a-006", "nom": "Crocoparc (parc de crocodiles)", "type": "Nature & famille", "duree": "2h", "prix": "80 MAD adulte", "note": 4.3 },
+    { "id": "a-007", "nom": "Randonée dans l'Anti-Atlas", "type": "Randonnée", "duree": "Journée à 3 jours", "prix": "Variable", "note": 4.7 },
+    { "id": "a-008", "nom": "Surf et sports nautiques", "type": "Sport", "duree": "2h", "prix": "150–300 MAD cours", "note": 4.5 }
+  ]
+}
