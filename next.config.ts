@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   images: {
@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-};
+  experimental: {
+    outputFileTracingIncludes: {
+      '/villes/[slug]': ['./data/villes/**/*.json'],
+    },
+  },
+}
 
-export default nextConfig;
+export default nextConfig

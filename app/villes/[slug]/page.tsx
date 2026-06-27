@@ -6,6 +6,8 @@ import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
 import CityTabs from '@/components/villes/CityTabs'
 
+export const dynamicParams = false
+
 interface Props {
   params: Promise<{ slug: string }>
 }
