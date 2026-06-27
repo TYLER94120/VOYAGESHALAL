@@ -99,6 +99,8 @@ export interface Ville {
   score_halal: number
   description: string | { court?: string; long?: string }
   image_hero: string
+  image?: string
+  continent?: string
   image_alt: string
   meta_title: string
   meta_description: string

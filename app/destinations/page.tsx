@@ -4,6 +4,8 @@ import path from 'path'
 import { buildMetadata } from '@/lib/seo'
 import DestinationsClient, { type VilleCard } from '@/components/destination/DestinationsClient'
 
+const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80'
+
 export const metadata: Metadata = buildMetadata({
   title: 'Destinations Voyage Halal — Meilleures Villes du Monde',
   description:
@@ -31,6 +33,8 @@ function getAllVilles(): VilleCard[] {
           pays: v.pays ?? '',
           scoreHalal: v.score_halal ?? null,
           description: desc,
+          image: v.image ?? v.image_hero ?? FALLBACK_IMG,
+          continent: v.continent ?? null,
         } as VilleCard
       } catch {
         return null

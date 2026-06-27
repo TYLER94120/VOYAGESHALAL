@@ -1,6 +1,9 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+
+const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80'
 
 export interface VilleCard {
   slug: string
@@ -8,6 +11,8 @@ export interface VilleCard {
   pays: string
   scoreHalal: number | null
   description: string
+  image?: string
+  continent?: string | null
 }
 
 interface Props {
@@ -65,6 +70,14 @@ export default function DestinationsClient({ villes, continents }: Props) {
       <div className="destinations-grid">
         {villesFiltrees.map((v) => (
           <Link key={v.slug} href={`/destinations/${v.slug}`} className="destination-card">
+            <Image
+              src={v.image || FALLBACK_IMG}
+              alt={`Voyage halal ${v.nom}`}
+              width={400}
+              height={160}
+              className="card-image"
+              style={{ objectFit: 'cover', width: '100%', height: '160px', borderRadius: '12px 12px 0 0' }}
+            />
             <div className="card-header">
               <span className="card-flag">{COUNTRY_EMOJI[v.pays] || '🌍'}</span>
               <span className="card-score">⭐ {v.scoreHalal ?? '?'}/5</span>
