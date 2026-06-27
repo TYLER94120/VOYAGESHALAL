@@ -58,10 +58,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!ville) return {}
   const restos = ville.statistiques?.restaurants_halal ?? (ville.restaurants?.length ?? 0)
   const mosquees = ville.statistiques?.mosquees
-  const richDesc = `🕌 Guide halal ${ville.nom} 2026 : Halal Trust Score™ ${ville.score_halal}/5 · ${restos.toLocaleString('fr-FR')} restaurants certifiés · Horaires de prière en temps réel${mosquees ? ` · ${mosquees.toLocaleString('fr-FR')} mosquées` : ''} · Vérifié par la communauté musulmane.`
+  const richDesc =
+    ville.metaDescription ??
+    `🕌 Guide halal ${ville.nom} 2026 : Halal Trust Score™ ${ville.score_halal}/5 · ${restos.toLocaleString('fr-FR')} restaurants certifiés · Horaires de prière en temps réel${mosquees ? ` · ${mosquees.toLocaleString('fr-FR')} mosquées` : ''} · Vérifié par la communauté musulmane.`
+  const ogImage = ville.image ?? ville.image_hero
   return {
-    title: ville.meta_title,
+    title: ville.meta_title ?? `Voyage Halal à ${ville.nom} — Guide Complet ${new Date().getFullYear()}`,
     description: richDesc,
+    openGraph: {
+      title: `Voyage Halal à ${ville.nom} — Guide Complet ${new Date().getFullYear()}`,
+      description: richDesc,
+      ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630, alt: `Voyage halal ${ville.nom}` }] } : {}),
+    },
   }
 }
 

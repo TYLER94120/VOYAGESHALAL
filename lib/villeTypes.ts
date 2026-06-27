@@ -104,6 +104,7 @@ export interface Ville {
   image_alt: string
   meta_title: string
   meta_description: string
+  metaDescription?: string
   statistiques: {
     mosquees?: number
     restaurants_halal?: number
