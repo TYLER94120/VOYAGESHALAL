@@ -87,12 +87,6 @@
     overflow: hidden;
   }
 
-  .arch-card {
-    border-top-left-radius: 9999px;
-    border-top-right-radius: 9999px;
-    overflow: hidden;
-  }
-
   .font-serif {
     font-family: 'Playfair Display', Georgia, serif;
   }
@@ -120,7 +114,7 @@
 .htc-bar { height: 100%; border-radius: 0 3px 3px 0; transition: width 0.8s ease; }
 .htc-details { padding: 12px 16px; display: flex; flex-direction: column; gap: 8px; }
 .htc-item { display: flex; align-items: center; gap: 8px; color: #374151; }
-.htc-points { margin-left: auto; font-weight: 700; color: #166534; }
+.htc-points { margin-left: auto; font-weight: 700; color: #1b4332; }
 
 /* ===== Prayer Times Widget ===== */
 .prayer-widget {
@@ -181,7 +175,7 @@
 .qibla-container { text-align: center; padding: 24px; background: #f9fafb; border-radius: 16px; margin: 24px 0; }
 .qibla-container h2 { font-size: 20px; font-weight: 800; color: #1a3a2a; }
 .qibla-container > p { color: #6b7280; font-size: 14px; margin-top: 4px; }
-.btn-qibla-primary { background: #166534; color: white; border: none; padding: 14px 28px; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; margin: 16px 0; }
+.btn-qibla-primary { background: #1b4332; color: white; border: none; padding: 14px 28px; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; margin: 16px 0; }
 .btn-qibla-primary:disabled { opacity: 0.6; cursor: not-allowed; }
 .btn-retry { background: transparent; border: 1px solid #dc2626; color: #dc2626; padding: 8px 16px; border-radius: 8px; cursor: pointer; margin-top: 8px; }
 .qibla-error { color: #dc2626; background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 12px; margin: 12px 0; }
@@ -193,7 +187,7 @@
 .compass-e { right: 8px; top: 50%; transform: translateY(-50%); }
 .compass-w { left: 8px; top: 50%; transform: translateY(-50%); }
 .qibla-arrow { position: absolute; top: 50%; left: 50%; font-size: 28px; transform-origin: center bottom; transition: transform 0.8s ease; margin-left: -14px; margin-top: -28px; }
-.qibla-angle { font-size: 48px; font-weight: 900; color: #166534; }
+.qibla-angle { font-size: 48px; font-weight: 900; color: #1b4332; }
 .qibla-label { font-size: 13px; color: #6b7280; }
 .qibla-instruction { font-size: 14px; color: #374151; line-height: 1.6; max-width: 300px; }
 .btn-recalculate { background: transparent; border: 1px solid #d1d5db; color: #6b7280; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 13px; }
@@ -264,9 +258,9 @@
   padding: 9px 16px; border-radius: 999px; font-size: 14px; font-weight: 600; cursor: pointer;
   transition: all 0.2s;
 }
-.ville-btn:hover { border-color: #166534; color: #166534; }
+.ville-btn:hover { border-color: #1b4332; color: #1b4332; }
 .btn-change-ville {
-  background: transparent; border: none; color: #166534; font-weight: 600;
+  background: transparent; border: none; color: #1b4332; font-weight: 600;
   font-size: 14px; cursor: pointer; margin-top: 8px;
 }
 
@@ -315,11 +309,11 @@
 .header-logo { display: flex; align-items: center; gap: 8px; text-decoration: none; }
 .logo-icon { font-size: 22px; }
 .logo-text { font-size: 18px; font-weight: 800; color: #111; }
-.logo-dot { color: #166534; }
+.logo-dot { color: #1b4332; }
 .header-nav-desktop { display: flex; gap: 8px; align-items: center; }
 .nav-link { padding: 6px 12px; border-radius: 8px; font-size: 14px; font-weight: 500; color: #374151; text-decoration: none; transition: all 0.15s; }
 .nav-link:hover { background: #f3f4f6; }
-.nav-link-highlight { background: #f0fdf4; color: #166534; font-weight: 700; }
+.nav-link-highlight { background: #f0fdf4; color: #1b4332; font-weight: 700; }
 .nav-link-highlight:hover { background: #dcfce7; }
 .header-actions { display: flex; align-items: center; gap: 12px; }
 .lang-switcher { font-size: 13px; font-weight: 600; color: #6b7280; display: flex; gap: 4px; }
@@ -371,7 +365,7 @@
   padding: 4px 0;
   transition: color 0.15s;
 }
-.bottom-nav-item.active { color: #166534; }
+.bottom-nav-item.active { color: #1b4332; }
 .bottom-nav-icon { font-size: 22px; }
 .bottom-nav-label { font-size: 10px; font-weight: 600; }
 @media (max-width: 768px) {
@@ -405,7 +399,7 @@
   color: #374151;
   transition: all 0.15s;
 }
-.filtre-btn.active { background: #166534; color: white; border-color: #166534; }
+.filtre-btn.active { background: #1b4332; color: white; border-color: #1b4332; }
 .destinations-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -423,14 +417,14 @@
   flex-direction: column;
   gap: 6px;
 }
-.destination-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); border-color: #166534; }
+.destination-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); border-color: #1b4332; }
 .card-header { display: flex; justify-content: space-between; align-items: center; }
 .card-flag { font-size: 28px; }
-.card-score { font-size: 13px; font-weight: 700; color: #166534; background: #f0fdf4; padding: 3px 8px; border-radius: 12px; }
+.card-score { font-size: 13px; font-weight: 700; color: #1b4332; background: #f0fdf4; padding: 3px 8px; border-radius: 12px; }
 .card-city { font-size: 20px; font-weight: 800; margin: 4px 0 0; }
 .card-country { font-size: 13px; color: #6b7280; font-weight: 500; }
 .card-desc { font-size: 13px; color: #9ca3af; line-height: 1.5; flex: 1; }
-.card-cta { font-size: 13px; font-weight: 700; color: #166534; margin-top: 4px; }
+.card-cta { font-size: 13px; font-weight: 700; color: #1b4332; margin-top: 4px; }
 @media (max-width: 640px) {
   .destinations-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .destination-card { padding: 14px; }
@@ -461,8 +455,8 @@
   transition: all 0.15s;
 }
 .qa-btn span:first-child { font-size: 24px; }
-.qa-btn:hover { border-color: #166534; background: #f0fdf4; }
-.qa-btn-green { background: #f0fdf4; border-color: #166534; color: #166534; }
+.qa-btn:hover { border-color: #1b4332; background: #f0fdf4; }
+.qa-btn-green { background: #f0fdf4; border-color: #1b4332; color: #1b4332; }
 @media (max-width: 480px) {
   .quick-access { gap: 8px; }
   .qa-btn { padding: 12px 4px; font-size: 11px; }
