@@ -4,14 +4,22 @@
   "pays": "Maroc",
   "pays_slug": "maroc",
   "region": "Afrique du Nord",
-  "coordonnees": { "lat": 31.6295, "lng": -7.9811 },
+  "coordonnees": {
+    "lat": 31.6295,
+    "lng": -7.9811
+  },
   "score_halal": 5,
   "description": "Marrakech, la ville ocre du Maroc, est l'une des destinations les plus halal-friendly au monde. Cuisine 100% halal, mosquées magnifiques, riads authentiques et une culture islamique omniprésente.",
   "image_hero": "https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=1400&q=85",
   "image_alt": "Vue aérienne de Marrakech avec la mosquée Koutoubia",
   "meta_title": "Marrakech Halal — Restaurants, Mosquées & Guide Complet 2026",
   "meta_description": "Découvrez Marrakech halal : les meilleurs restaurants, mosquées, activités et hôtels halal-friendly. Guide complet mis à jour 2026.",
-  "statistiques": { "mosquees": 147, "restaurants_halal": 320, "hotels_halal": 48, "habitants_musulmans_pct": 99 },
+  "statistiques": {
+    "mosquees": 147,
+    "restaurants_halal": 320,
+    "hotels_halal": 48,
+    "habitants_musulmans_pct": 99
+  },
   "infos_pratiques": {
     "langue": "Arabe, Français, Tamazight",
     "monnaie": "Dirham marocain (MAD)",
@@ -23,39 +31,398 @@
     "securite": "Ville très sûre pour les voyageurs musulmans"
   },
   "restaurants": [
-    { "id": "r1", "nom": "Le Jardin", "cuisine": "Marocaine", "adresse": "32 Souk Jeld, Sidi Abdelaziz, Médina", "halal_certifie": true, "sans_alcool": true, "note": 4.7, "avis_count": 1240, "fourchette_prix": "€€", "horaires": "12h–23h", "specialites": ["Tajine d'agneau", "Couscous royal", "Pastilla"] },
-    { "id": "r2", "nom": "Nomad", "cuisine": "Marocaine moderne", "adresse": "1 Derb Argan, Rahba Lakdima", "halal_certifie": true, "sans_alcool": false, "note": 4.5, "avis_count": 2870, "fourchette_prix": "€€€", "horaires": "12h–23h", "specialites": ["Harira", "Briouat", "Mechoui"] },
-    { "id": "r3", "nom": "Al Fassia", "cuisine": "Marocaine traditionnelle", "adresse": "55 Boulevard Mohammed Zerktouni, Guéliz", "halal_certifie": true, "sans_alcool": true, "note": 4.8, "avis_count": 890, "fourchette_prix": "€€€", "horaires": "12h–14h30, 19h–23h", "specialites": ["Couscous aux 7 légumes", "Tajine kefta", "Pastilla au pigeon"] },
-    { "id": "r4", "nom": "Café des Épices", "cuisine": "Marocaine légère", "adresse": "75 Rahba Lakdima, Médina", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 3100, "fourchette_prix": "€", "horaires": "9h–22h", "specialites": ["Jus frais", "Sandwichs marocains", "Msemen"] }
+    {
+      "id": "r1",
+      "nom": "Le Jardin",
+      "cuisine": "Marocaine",
+      "adresse": "32 Souk Jeld, Sidi Abdelaziz, Médina",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.7,
+      "avis_count": 1240,
+      "fourchette_prix": "€€",
+      "horaires": "12h–23h",
+      "specialites": [
+        "Tajine d'agneau",
+        "Couscous royal",
+        "Pastilla"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1240,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "r2",
+      "nom": "Nomad",
+      "cuisine": "Marocaine moderne",
+      "adresse": "1 Derb Argan, Rahba Lakdima",
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "note": 4.5,
+      "avis_count": 2870,
+      "fourchette_prix": "€€€",
+      "horaires": "12h–23h",
+      "specialites": [
+        "Harira",
+        "Briouat",
+        "Mechoui"
+      ],
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2870,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "r3",
+      "nom": "Al Fassia",
+      "cuisine": "Marocaine traditionnelle",
+      "adresse": "55 Boulevard Mohammed Zerktouni, Guéliz",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.8,
+      "avis_count": 890,
+      "fourchette_prix": "€€€",
+      "horaires": "12h–14h30, 19h–23h",
+      "specialites": [
+        "Couscous aux 7 légumes",
+        "Tajine kefta",
+        "Pastilla au pigeon"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 890,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "r4",
+      "nom": "Café des Épices",
+      "cuisine": "Marocaine légère",
+      "adresse": "75 Rahba Lakdima, Médina",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 3100,
+      "fourchette_prix": "€",
+      "horaires": "9h–22h",
+      "specialites": [
+        "Jus frais",
+        "Sandwichs marocains",
+        "Msemen"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3100,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    }
   ],
   "mosquees": [
-    { "id": "m1", "nom": "Mosquée Koutoubia", "type": "Grande Mosquée", "adresse": "Avenue Mohammed V, Médina", "description": "La plus grande mosquée de Marrakech et chef-d'œuvre de l'architecture almohade. Son minaret de 70m est le symbole de la ville.", "note": 5.0, "acces_non_musulmans": false, "capacite": 25000 },
-    { "id": "m2", "nom": "Mosquée Ben Youssef", "type": "Mosquée historique", "adresse": "Kaat Benahid, Médina", "description": "L'une des plus importantes mosquées de la médina, datant du XIVe siècle.", "note": 4.9, "acces_non_musulmans": false, "capacite": null },
-    { "id": "m3", "nom": "Mosquée de la Kasbah", "type": "Mosquée royale", "adresse": "Kasbah, Médina", "description": "Mosquée royale du XIIe siècle avec minaret décoré de zelliges polychromes.", "note": 4.8, "acces_non_musulmans": false, "capacite": null }
+    {
+      "id": "m1",
+      "nom": "Mosquée Koutoubia",
+      "type": "Grande Mosquée",
+      "adresse": "Avenue Mohammed V, Médina",
+      "description": "La plus grande mosquée de Marrakech et chef-d'œuvre de l'architecture almohade. Son minaret de 70m est le symbole de la ville.",
+      "note": 5.0,
+      "acces_non_musulmans": false,
+      "capacite": 25000
+    },
+    {
+      "id": "m2",
+      "nom": "Mosquée Ben Youssef",
+      "type": "Mosquée historique",
+      "adresse": "Kaat Benahid, Médina",
+      "description": "L'une des plus importantes mosquées de la médina, datant du XIVe siècle.",
+      "note": 4.9,
+      "acces_non_musulmans": false,
+      "capacite": null
+    },
+    {
+      "id": "m3",
+      "nom": "Mosquée de la Kasbah",
+      "type": "Mosquée royale",
+      "adresse": "Kasbah, Médina",
+      "description": "Mosquée royale du XIIe siècle avec minaret décoré de zelliges polychromes.",
+      "note": 4.8,
+      "acces_non_musulmans": false,
+      "capacite": null
+    }
   ],
   "hotels": [
-    { "id": "h1", "nom": "Riad Dar Anika", "type": "Riad", "adresse": "83 Derb Jdid, Bab Doukkala", "etoiles": 4, "halal_certifie": true, "sans_alcool": true, "piscine_privee": true, "note": 4.8, "avis_count": 356, "prix_nuit_min": 85, "devise": "EUR" },
-    { "id": "h2", "nom": "La Maison Arabe", "type": "Riad-Hôtel", "adresse": "1 Derb Assehbe, Bab Doukkala", "etoiles": 5, "halal_certifie": true, "sans_alcool": false, "piscine_privee": true, "note": 4.9, "avis_count": 780, "prix_nuit_min": 180, "devise": "EUR" },
-    { "id": "h3", "nom": "Riad Kniza", "type": "Riad", "adresse": "34 Derb l'Hôtel, Bab Doukkala", "etoiles": 4, "halal_certifie": true, "sans_alcool": true, "piscine_privee": false, "note": 4.7, "avis_count": 412, "prix_nuit_min": 110, "devise": "EUR" }
+    {
+      "id": "h1",
+      "nom": "Riad Dar Anika",
+      "type": "Riad",
+      "adresse": "83 Derb Jdid, Bab Doukkala",
+      "etoiles": 4,
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "piscine_privee": true,
+      "note": 4.8,
+      "avis_count": 356,
+      "prix_nuit_min": 85,
+      "devise": "EUR",
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 356,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "h2",
+      "nom": "La Maison Arabe",
+      "type": "Riad-Hôtel",
+      "adresse": "1 Derb Assehbe, Bab Doukkala",
+      "etoiles": 5,
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "piscine_privee": true,
+      "note": 4.9,
+      "avis_count": 780,
+      "prix_nuit_min": 180,
+      "devise": "EUR",
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 780,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "h3",
+      "nom": "Riad Kniza",
+      "type": "Riad",
+      "adresse": "34 Derb l'Hôtel, Bab Doukkala",
+      "etoiles": 4,
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "piscine_privee": false,
+      "note": 4.7,
+      "avis_count": 412,
+      "prix_nuit_min": 110,
+      "devise": "EUR",
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 412,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    }
   ],
   "activites": [
-    { "id": "a1", "nom": "Visite de la Médina et des souks", "type": "Culture", "description": "Perdez-vous dans les ruelles de la médina classée UNESCO.", "duree": "3–4h", "prix": "Gratuit", "tags": ["culture", "shopping", "histoire", "famille"] },
-    { "id": "a2", "nom": "Jardins Majorelle", "type": "Nature", "description": "Jardin exotique créé par Jacques Majorelle en 1924, restauré par Yves Saint Laurent.", "duree": "1–2h", "prix": "70 MAD", "tags": ["jardin", "art", "couple"] },
-    { "id": "a3", "nom": "Hammam traditionnel", "type": "Bien-être", "description": "Expérience authentique du hammam marocain avec séparation hommes/femmes.", "duree": "2h", "prix": "À partir de 150 MAD", "tags": ["bien-être", "authentique", "séparé H/F"] },
-    { "id": "a4", "nom": "Excursion dans l'Atlas", "type": "Nature & Aventure", "description": "Randonnée dans les montagnes de l'Atlas avec guide local.", "duree": "Journée entière", "prix": "À partir de 300 MAD", "tags": ["montagne", "randonnée", "famille"] },
-    { "id": "a5", "nom": "Place Jemaa el-Fna au coucher du soleil", "type": "Culture", "description": "Conteurs, musiciens gnawa, herboristes. S'anime à partir de 18h. Patrimoine UNESCO.", "duree": "Soirée", "prix": "Gratuit", "tags": ["culture", "soirée", "famille"] }
+    {
+      "id": "a1",
+      "nom": "Visite de la Médina et des souks",
+      "type": "Culture",
+      "description": "Perdez-vous dans les ruelles de la médina classée UNESCO.",
+      "duree": "3–4h",
+      "prix": "Gratuit",
+      "tags": [
+        "culture",
+        "shopping",
+        "histoire",
+        "famille"
+      ]
+    },
+    {
+      "id": "a2",
+      "nom": "Jardins Majorelle",
+      "type": "Nature",
+      "description": "Jardin exotique créé par Jacques Majorelle en 1924, restauré par Yves Saint Laurent.",
+      "duree": "1–2h",
+      "prix": "70 MAD",
+      "tags": [
+        "jardin",
+        "art",
+        "couple"
+      ]
+    },
+    {
+      "id": "a3",
+      "nom": "Hammam traditionnel",
+      "type": "Bien-être",
+      "description": "Expérience authentique du hammam marocain avec séparation hommes/femmes.",
+      "duree": "2h",
+      "prix": "À partir de 150 MAD",
+      "tags": [
+        "bien-être",
+        "authentique",
+        "séparé H/F"
+      ]
+    },
+    {
+      "id": "a4",
+      "nom": "Excursion dans l'Atlas",
+      "type": "Nature & Aventure",
+      "description": "Randonnée dans les montagnes de l'Atlas avec guide local.",
+      "duree": "Journée entière",
+      "prix": "À partir de 300 MAD",
+      "tags": [
+        "montagne",
+        "randonnée",
+        "famille"
+      ]
+    },
+    {
+      "id": "a5",
+      "nom": "Place Jemaa el-Fna au coucher du soleil",
+      "type": "Culture",
+      "description": "Conteurs, musiciens gnawa, herboristes. S'anime à partir de 18h. Patrimoine UNESCO.",
+      "duree": "Soirée",
+      "prix": "Gratuit",
+      "tags": [
+        "culture",
+        "soirée",
+        "famille"
+      ]
+    }
   ],
   "road_trips": [
-    { "id": "rt1", "titre": "Marrakech → Merzouga (Désert) — 3 jours", "duree": "3 jours", "distance_km": 560, "etapes": ["Marrakech", "Aït Benhaddou", "Ouarzazate", "Merzouga"], "description": "De la ville ocre aux dunes du Sahara en passant par la kasbah d'Aït Benhaddou.", "conseils_halal": "Restaurants halal dans chaque étape.", "budget_estime": "300–500€/personne" },
-    { "id": "rt2", "titre": "Marrakech → Essaouira — Week-end", "duree": "2 jours", "distance_km": 190, "etapes": ["Marrakech", "Essaouira"], "description": "Escapade sur la côte atlantique. Essaouira, la ville des vents, et ses plages magnifiques.", "conseils_halal": "Poissons et fruits de mer frais grillés sur le port — halal par nature.", "budget_estime": "150–250€/personne" }
+    {
+      "id": "rt1",
+      "titre": "Marrakech → Merzouga (Désert) — 3 jours",
+      "duree": "3 jours",
+      "distance_km": 560,
+      "etapes": [
+        "Marrakech",
+        "Aït Benhaddou",
+        "Ouarzazate",
+        "Merzouga"
+      ],
+      "description": "De la ville ocre aux dunes du Sahara en passant par la kasbah d'Aït Benhaddou.",
+      "conseils_halal": "Restaurants halal dans chaque étape.",
+      "budget_estime": "300–500€/personne"
+    },
+    {
+      "id": "rt2",
+      "titre": "Marrakech → Essaouira — Week-end",
+      "duree": "2 jours",
+      "distance_km": 190,
+      "etapes": [
+        "Marrakech",
+        "Essaouira"
+      ],
+      "description": "Escapade sur la côte atlantique. Essaouira, la ville des vents, et ses plages magnifiques.",
+      "conseils_halal": "Poissons et fruits de mer frais grillés sur le port — halal par nature.",
+      "budget_estime": "150–250€/personne"
+    }
   ],
   "voyages_par_type": {
-    "en_couple": { "intro": "Marrakech est une destination idéale pour les couples musulmans. Riads romantiques, dîners aux chandelles halal et couchers de soleil sur la Koutoubia.", "top_experiences": ["Dîner sur rooftop avec vue Koutoubia", "Nuit dans un riad avec piscine privée", "Cours de cuisine marocaine en duo", "Excursion en dromadaire"], "conseils": "Réservez un riad avec piscine privée pour profiter en toute intimité.", "hotels_recommandes": ["Riad Dar Anika", "La Maison Arabe"] },
-    "en_famille": { "intro": "Marrakech accueille les familles à bras ouverts. Les enfants adorent les souks colorés et les animations de la place Jemaa el-Fna.", "top_experiences": ["Place Jemaa el-Fna", "Balàde en calèche", "Excursion Ouàrika", "Cours de poterie"], "conseils": "Choisissez un riad avec piscine pour que les enfants puissent se baigner.", "hotels_recommandes": ["Riad Dar Anika", "Riad Kniza"] },
-    "entre_amis": { "intro": "Shopping dans les souks, hammam collectif, soirées gastronomiques et excursions mémorables.", "top_experiences": ["Shopping et négociation dans les souks", "Cours de cuisine collective", "Quad dans le désert d'Agafay", "Soirée fantasia"], "conseils": "Réservez un riad entier pour un groupe.", "hotels_recommandes": ["Riad Kniza"] },
-    "voyage_solo": { "intro": "Marrakech est sûre et accueillante pour les voyageurs solos.", "top_experiences": ["Cours d'arabe dialectal marocain", "Visite des coopératives d'artisans", "Randonnée guidée dans l'Atlas"], "conseils": "Rejoignez des groupes de voyage organisés par des agences halal.", "hotels_recommandes": ["Riad Kniza"] },
-    "voyage_spirituel": { "intro": "Marrakech est une ville de spiritualité islamique profonde. Les 5 appels à la prière rythment la vie de la médina.", "top_experiences": ["Prière du Fajr à la Koutoubia", "Visite des zaouïas", "Soirée de Malhoun"], "conseils": "Séjournez en médina pour être à portée de marche de plusieurs mosquées.", "hotels_recommandes": ["Riad Dar Anika"] }
+    "en_couple": {
+      "intro": "Marrakech est une destination idéale pour les couples musulmans. Riads romantiques, dîners aux chandelles halal et couchers de soleil sur la Koutoubia.",
+      "top_experiences": [
+        "Dîner sur rooftop avec vue Koutoubia",
+        "Nuit dans un riad avec piscine privée",
+        "Cours de cuisine marocaine en duo",
+        "Excursion en dromadaire"
+      ],
+      "conseils": "Réservez un riad avec piscine privée pour profiter en toute intimité.",
+      "hotels_recommandes": [
+        "Riad Dar Anika",
+        "La Maison Arabe"
+      ]
+    },
+    "en_famille": {
+      "intro": "Marrakech accueille les familles à bras ouverts. Les enfants adorent les souks colorés et les animations de la place Jemaa el-Fna.",
+      "top_experiences": [
+        "Place Jemaa el-Fna",
+        "Balàde en calèche",
+        "Excursion Ouàrika",
+        "Cours de poterie"
+      ],
+      "conseils": "Choisissez un riad avec piscine pour que les enfants puissent se baigner.",
+      "hotels_recommandes": [
+        "Riad Dar Anika",
+        "Riad Kniza"
+      ]
+    },
+    "entre_amis": {
+      "intro": "Shopping dans les souks, hammam collectif, soirées gastronomiques et excursions mémorables.",
+      "top_experiences": [
+        "Shopping et négociation dans les souks",
+        "Cours de cuisine collective",
+        "Quad dans le désert d'Agafay",
+        "Soirée fantasia"
+      ],
+      "conseils": "Réservez un riad entier pour un groupe.",
+      "hotels_recommandes": [
+        "Riad Kniza"
+      ]
+    },
+    "voyage_solo": {
+      "intro": "Marrakech est sûre et accueillante pour les voyageurs solos.",
+      "top_experiences": [
+        "Cours d'arabe dialectal marocain",
+        "Visite des coopératives d'artisans",
+        "Randonnée guidée dans l'Atlas"
+      ],
+      "conseils": "Rejoignez des groupes de voyage organisés par des agences halal.",
+      "hotels_recommandes": [
+        "Riad Kniza"
+      ]
+    },
+    "voyage_spirituel": {
+      "intro": "Marrakech est une ville de spiritualité islamique profonde. Les 5 appels à la prière rythment la vie de la médina.",
+      "top_experiences": [
+        "Prière du Fajr à la Koutoubia",
+        "Visite des zaouïas",
+        "Soirée de Malhoun"
+      ],
+      "conseils": "Séjournez en médina pour être à portée de marche de plusieurs mosquées.",
+      "hotels_recommandes": [
+        "Riad Dar Anika"
+      ]
+    }
   },
   "articles_lies": [],
-  "villes_proches": ["casablanca", "essaouira", "agadir"]
+  "villes_proches": [
+    "casablanca",
+    "essaouira",
+    "agadir"
+  ],
+  "codeISO": "MA"
 }

@@ -6,7 +6,10 @@
   "pays_slug": "algerie",
   "drapeau": "🇩🇿",
   "region": "Afrique du Nord",
-  "coordonnees": { "lat": 36.7372, "lng": 3.0865 },
+  "coordonnees": {
+    "lat": 36.7372,
+    "lng": 3.0865
+  },
   "score_halal": 5,
   "score_securite": 4,
   "score_famille": 4,
@@ -29,7 +32,11 @@
   },
   "infos_pratiques": {
     "langue_officielle": "Arabe",
-    "langues_parlees": ["Arabe", "Tamazight", "Français"],
+    "langues_parlees": [
+      "Arabe",
+      "Tamazight",
+      "Français"
+    ],
     "monnaie": "Dinar algérien (DZD)",
     "taux_change_eur": "1 EUR ≈ 145 DZD",
     "meilleure_periode": "Avril-Juin et Septembre-Novembre",
@@ -45,122 +52,2464 @@
     "visa": "Visa requis pour la plupart des nationalités européennes"
   },
   "meteo_par_mois": [
-    { "mois": "Janvier", "temp_max": 14, "temp_min": 6, "pluie_jours": 8, "emoji": "🌧️" },
-    { "mois": "Février", "temp_max": 15, "temp_min": 7, "pluie_jours": 7, "emoji": "🌦️" },
-    { "mois": "Mars", "temp_max": 18, "temp_min": 9, "pluie_jours": 7, "emoji": "🌤️" },
-    { "mois": "Avril", "temp_max": 21, "temp_min": 12, "pluie_jours": 6, "emoji": "⛅" },
-    { "mois": "Mai", "temp_max": 25, "temp_min": 15, "pluie_jours": 4, "emoji": "☀️" },
-    { "mois": "Juin", "temp_max": 29, "temp_min": 19, "pluie_jours": 2, "emoji": "☀️" },
-    { "mois": "Juillet", "temp_max": 33, "temp_min": 22, "pluie_jours": 1, "emoji": "🌞" },
-    { "mois": "Août", "temp_max": 34, "temp_min": 23, "pluie_jours": 1, "emoji": "🌞" },
-    { "mois": "Septembre", "temp_max": 29, "temp_min": 20, "pluie_jours": 3, "emoji": "☀️" },
-    { "mois": "Octobre", "temp_max": 24, "temp_min": 16, "pluie_jours": 5, "emoji": "⛅" },
-    { "mois": "Novembre", "temp_max": 18, "temp_min": 11, "pluie_jours": 8, "emoji": "🌧️" },
-    { "mois": "Décembre", "temp_max": 15, "temp_min": 7, "pluie_jours": 9, "emoji": "🌧️" }
+    {
+      "mois": "Janvier",
+      "temp_max": 14,
+      "temp_min": 6,
+      "pluie_jours": 8,
+      "emoji": "🌧️"
+    },
+    {
+      "mois": "Février",
+      "temp_max": 15,
+      "temp_min": 7,
+      "pluie_jours": 7,
+      "emoji": "🌦️"
+    },
+    {
+      "mois": "Mars",
+      "temp_max": 18,
+      "temp_min": 9,
+      "pluie_jours": 7,
+      "emoji": "🌤️"
+    },
+    {
+      "mois": "Avril",
+      "temp_max": 21,
+      "temp_min": 12,
+      "pluie_jours": 6,
+      "emoji": "⛅"
+    },
+    {
+      "mois": "Mai",
+      "temp_max": 25,
+      "temp_min": 15,
+      "pluie_jours": 4,
+      "emoji": "☀️"
+    },
+    {
+      "mois": "Juin",
+      "temp_max": 29,
+      "temp_min": 19,
+      "pluie_jours": 2,
+      "emoji": "☀️"
+    },
+    {
+      "mois": "Juillet",
+      "temp_max": 33,
+      "temp_min": 22,
+      "pluie_jours": 1,
+      "emoji": "🌞"
+    },
+    {
+      "mois": "Août",
+      "temp_max": 34,
+      "temp_min": 23,
+      "pluie_jours": 1,
+      "emoji": "🌞"
+    },
+    {
+      "mois": "Septembre",
+      "temp_max": 29,
+      "temp_min": 20,
+      "pluie_jours": 3,
+      "emoji": "☀️"
+    },
+    {
+      "mois": "Octobre",
+      "temp_max": 24,
+      "temp_min": 16,
+      "pluie_jours": 5,
+      "emoji": "⛅"
+    },
+    {
+      "mois": "Novembre",
+      "temp_max": 18,
+      "temp_min": 11,
+      "pluie_jours": 8,
+      "emoji": "🌧️"
+    },
+    {
+      "mois": "Décembre",
+      "temp_max": 15,
+      "temp_min": 7,
+      "pluie_jours": 9,
+      "emoji": "🌧️"
+    }
   ],
   "restaurants": [
-    { "id": "r1", "nom": "Le Bardo", "cuisine": "Algérienne traditionnelle", "description": "Restaurant emblématique dans une villa ottomane restaurée, servant la chorba et le couscous royal depuis 1965.", "adresse": "Rue Larbi Ben M'hidi, Alger-Centre", "quartier": "Centre-ville", "halal_certifie": true, "sans_alcool": true, "note": 4.8, "avis_count": 1823, "fourchette_prix": "€€", "prix_moyen_personne_eur": 18, "specialites": ["Couscous royal", "Chorba frik", "Rechta au poulet"], "horaires": "12h-15h / 19h-22h30", "coordonnees": { "lat": 36.7378, "lng": 3.0581 }, "tags": ["Traditionnel", "Ottoman", "Familial"] },
-    { "id": "r2", "nom": "Chez Brahim", "cuisine": "Grillades algériennes", "description": "Institution populaire des quartiers populaires, célèbre pour ses brochettes et merguez maison.", "adresse": "Rue Belouizdad, Belcourt", "quartier": "Belcourt", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 2341, "fourchette_prix": "€", "prix_moyen_personne_eur": 8, "specialites": ["Brochettes agneau", "Merguez maison", "Galette msemmen"], "horaires": "11h-23h", "coordonnees": { "lat": 36.7289, "lng": 3.0712 }, "tags": ["Populaire", "Grillades", "Économique"] },
-    { "id": "r3", "nom": "Le Tantonville", "cuisine": "Méditerranéenne-algérienne", "description": "Vue panoramique sur la baie d'Alger, cuisine fusion méditerranéenne avec produits locaux de saison.", "adresse": "Boulevard du 11 Décembre, El Mouradia", "quartier": "El Mouradia", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 987, "fourchette_prix": "€€€", "prix_moyen_personne_eur": 35, "specialites": ["Dorade farcie chermoula", "Tajine de mérou", "Pastilla au poulet"], "horaires": "12h-15h / 19h30-23h", "coordonnees": { "lat": 36.7456, "lng": 3.0523 }, "tags": ["Vue mer", "Gastronomique", "Romantique"] },
-    { "id": "r4", "nom": "La Casbah d'Or", "cuisine": "Kabyle et berbère", "description": "Dans les ruelles de la Casbah, cuisine kabyle authentique — tajines berbères et couscous au seven légumes.", "adresse": "Casbah, Rue de la Casbah", "quartier": "Casbah", "halal_certifie": true, "sans_alcool": true, "note": 4.7, "avis_count": 1456, "fourchette_prix": "€€", "prix_moyen_personne_eur": 15, "specialites": ["Couscous berbère 7 légumes", "Tajine zitoune", "Berkoukes"], "horaires": "12h-22h", "coordonnees": { "lat": 36.7883, "lng": 3.0605 }, "tags": ["Casbah", "Berbère", "Kabyle"] },
-    { "id": "r5", "nom": "Restaurant Timgad", "cuisine": "Berbère haute gamme", "description": "Décor de palais berbère avec zelliges et moucharabieh, cuisine raffinée inspirée des recettes ancestrales.", "adresse": "Hydra, Alger", "quartier": "Hydra", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 743, "fourchette_prix": "€€€", "prix_moyen_personne_eur": 42, "specialites": ["Méchoui d'agneau entier", "Bastilla royale", "Mhadjeb aux épinards"], "horaires": "12h-15h / 19h-23h", "coordonnees": { "lat": 36.7234, "lng": 3.0234 }, "tags": ["Luxe", "Berbère", "Méchoui"] },
-    { "id": "r6", "nom": "Chez Slimane", "cuisine": "Poissons et fruits de mer", "description": "Pêcheurs depuis 3 générations, poissons grillés au charbon achetés le matin au marché de Bab El Oued.", "adresse": "Front de mer, Bab El Oued", "quartier": "Bab El Oued", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 1678, "fourchette_prix": "€€", "prix_moyen_personne_eur": 22, "specialites": ["Dorade grillée entière", "Crevettes tigres", "Salade mechouia"], "horaires": "12h-22h", "coordonnees": { "lat": 36.7934, "lng": 3.0478 }, "tags": ["Poissons", "Grillades", "Front de mer"] },
-    { "id": "r7", "nom": "Le Malouf", "cuisine": "Tuniso-algérienne", "description": "Spécialités de la frontière tuniso-algérienne, brik aux oeufs et lablabi de renommée internationale.", "adresse": "Rue Didouche Mourad, Centre", "quartier": "Centre-ville", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 876, "fourchette_prix": "€", "prix_moyen_personne_eur": 9, "specialites": ["Brik à l'oeuf", "Lablabi pois chiche", "Chakchouka"], "horaires": "7h-23h", "coordonnees": { "lat": 36.7401, "lng": 3.0598 }, "tags": ["Économique", "Brik", "Petit-déjeuner"] },
-    { "id": "r8", "nom": "Mazafran Palace", "cuisine": "Orientale de luxe", "description": "Salle de banquet reconvertie en restaurant, spécialiste du couscous aux 7 légumes et du méchoui festif.", "adresse": "Zeralda, Ouest Alger", "quartier": "Zeralda", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 534, "fourchette_prix": "€€€", "prix_moyen_personne_eur": 38, "specialites": ["Méchoui entier au four", "Couscous aux truffes", "Zlabia au miel"], "horaires": "12h-15h / 19h-23h (fermé lundi)", "coordonnees": { "lat": 36.7012, "lng": 2.8923 }, "tags": ["Festif", "Grandes tablées", "Méchoui"] },
-    { "id": "r9", "nom": "Aux Mille et Une Saveurs", "cuisine": "Algérienne fusion", "description": "Chef formé à Paris, réinterprète la cuisine algérienne avec des techniques modernes et des produits du terroir.", "adresse": "Périmètre d'El Biar", "quartier": "El Biar", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 621, "fourchette_prix": "€€€", "prix_moyen_personne_eur": 45, "specialites": ["Makroud revisité", "Pigeonneaux au ras el-hanout", "Sorbet dattes"], "horaires": "19h-23h (dîner uniquement, réservation obligatoire)", "coordonnees": { "lat": 36.7567, "lng": 3.0312 }, "tags": ["Gastronomique", "Fusion", "Chef étoilé"] },
-    { "id": "r10", "nom": "Le Fenec", "cuisine": "Saharienne-berbère", "description": "Evocation du désert algérien en pleine capitale — décor de tente touareg, spécialités du Sud.", "adresse": "Ain Benian, Ouest Alger", "quartier": "Ain Benian", "halal_certifie": true, "sans_alcool": true, "note": 4.3, "avis_count": 445, "fourchette_prix": "€€", "prix_moyen_personne_eur": 20, "specialites": ["Méchoui au feu de bois", "Thé touareg", "Taguella pain saharien"], "horaires": "12h-23h", "coordonnees": { "lat": 36.7856, "lng": 2.9834 }, "tags": ["Saharien", "Touareg", "Authentique"] },
-    { "id": "r11", "nom": "La Fermette de Sidi Fredj", "cuisine": "Campagnarde algérienne", "description": "Ferme-restaurant en bord de mer, produits frais de la ferme — poulets fermiers, légumes du jardin.", "adresse": "Sidi Fredj, Staoueli", "quartier": "Sidi Fredj", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 678, "fourchette_prix": "€€", "prix_moyen_personne_eur": 18, "specialites": ["Poulet fermier au citron confit", "Légumes grillés du jardin", "Fraises maison"], "horaires": "12h-21h (fermé mardi)", "coordonnees": { "lat": 36.7712, "lng": 2.8756 }, "tags": ["Ferme", "Produits frais", "Vue mer"] },
-    { "id": "r12", "nom": "Panorama Tipaza", "cuisine": "Poissons-Algérienne", "description": "Sur la route des ruines romaines de Tipaza, restaurant de pêcheurs avec vue sur la côte et les îlots.", "adresse": "Route côtière Tipaza", "quartier": "Tipaza", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 789, "fourchette_prix": "€€", "prix_moyen_personne_eur": 25, "specialites": ["Grillades de poissons du jour", "Soupe de poisson", "Aïoli maison"], "horaires": "12h-21h", "coordonnees": { "lat": 36.5892, "lng": 2.4512 }, "tags": ["Vue mer", "Ruines romaines", "Excursion"] },
-    { "id": "r13", "nom": "Chez Mohand", "cuisine": "Kabyle authentique", "description": "Emigré kabyle revenu au pays, sert les recettes de sa grand-mère — achta, aghroum, thé à la menthe.", "adresse": "Tizi Ouzou, Grande Kabylie", "quartier": "Tizi Ouzou", "halal_certifie": true, "sans_alcool": true, "note": 4.7, "avis_count": 1023, "fourchette_prix": "€", "prix_moyen_personne_eur": 10, "specialites": ["Aghroum pain kabyle", "Abzin galette de blé", "Thé menthe montagne"], "horaires": "8h-22h", "coordonnees": { "lat": 36.7169, "lng": 4.0497 }, "tags": ["Kabyle", "Traditionnel", "Montagne"] },
-    { "id": "r14", "nom": "Restaurant El Djazair", "cuisine": "Algérienne classique", "description": "Hôtel El Djazair historique (ex-Saint-George), restaurant dans les jardins d'orangers et jasmin.", "adresse": "Hôtel El Djazair, Rue Souidani Boudjemaa", "quartier": "Mustapha", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 567, "fourchette_prix": "€€€", "prix_moyen_personne_eur": 40, "specialites": ["Couscous royal", "Tajine d'agneau aux pruneaux", "Pastilla royale"], "horaires": "12h30-15h / 19h30-23h", "coordonnees": { "lat": 36.7523, "lng": 3.0434 }, "tags": ["Hôtel historique", "Jardin", "Colonial"] },
-    { "id": "r15", "nom": "La Table de Faiza", "cuisine": "Cuisine de mamie", "description": "Faiza prépare les recettes transmises de mère en fille depuis 4 générations — dolma, rechta, rfis.", "adresse": "Bir Mourad Raïs, Alger", "quartier": "Bir Mourad Raïs", "halal_certifie": true, "sans_alcool": true, "note": 4.8, "avis_count": 1234, "fourchette_prix": "€€", "prix_moyen_personne_eur": 16, "specialites": ["Dolma farcis", "Rechta blanche", "Rfis au miel"], "horaires": "12h-15h / 19h-22h", "coordonnees": { "lat": 36.7134, "lng": 3.0623 }, "tags": ["Fait maison", "Authentique", "Familial"] },
-    { "id": "r16", "nom": "Le Phénicien", "cuisine": "Méditerranéenne fine", "description": "Vue sur la grande bleue depuis la corniche, cuisine méditerranéenne haut de gamme dans un cadre élégant.", "adresse": "Corniche d'Alger, Riadh El Feth", "quartier": "Riadh El Feth", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 678, "fourchette_prix": "€€€", "prix_moyen_personne_eur": 48, "specialites": ["Loup de mer en croûte de sel", "Poulpe grillé", "Tiramisu maison"], "horaires": "12h-23h", "coordonnees": { "lat": 36.7723, "lng": 3.0534 }, "tags": ["Vue mer", "Gastronomique", "Corniche"] },
-    { "id": "r17", "nom": "Snack El Watan", "cuisine": "Fast food algérien", "description": "Le meilleur snack du centre-ville selon les étudiants d'Alger — sandwichs merguez et brik à 50 DA.", "adresse": "Place du 1er Mai, Centre", "quartier": "Centre-ville", "halal_certifie": true, "sans_alcool": true, "note": 4.3, "avis_count": 3456, "fourchette_prix": "€", "prix_moyen_personne_eur": 4, "specialites": ["Sandwich merguez-frites", "Brik à l'oeuf", "Bourek fromage"], "horaires": "7h-23h30", "coordonnees": { "lat": 36.7356, "lng": 3.0590 }, "tags": ["Rapide", "Économique", "Étudiant"] },
-    { "id": "r18", "nom": "Maison de Couscous", "cuisine": "Couscous spécialiste", "description": "Unique restaurant spécialisé exclusivement dans les couscous — 12 variétés différentes selon la région.", "adresse": "Rue Tanger, Hussein Dey", "quartier": "Hussein Dey", "halal_certifie": true, "sans_alcool": true, "note": 4.7, "avis_count": 892, "fourchette_prix": "€€", "prix_moyen_personne_eur": 14, "specialites": ["Couscous bersine", "Couscous tfaya oignons-raisins", "Couscous bouzelouf tête d'agneau"], "horaires": "12h-15h / 19h-22h (fermé dimanche)", "coordonnees": { "lat": 36.7289, "lng": 3.0945 }, "tags": ["Couscous", "Régional", "Spécialiste"] },
-    { "id": "r19", "nom": "Les Délices de la Mer", "cuisine": "Fruits de mer halal", "description": "Poissonnerie-restaurant au port de pêche, languettes et crevettes préparées minute selon votre choix.", "adresse": "Port de pêche El Marsa, Ain Benian", "quartier": "Ain Benian", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 534, "fourchette_prix": "€€", "prix_moyen_personne_eur": 28, "specialites": ["Homard thermidor", "Crevettes à l'ail", "Friture de poissons"], "horaires": "11h-21h", "coordonnees": { "lat": 36.7978, "lng": 2.9823 }, "tags": ["Port de pêche", "Fruits de mer", "Frais du jour"] },
-    { "id": "r20", "nom": "Pâtisserie-salon Le Croissant Doré", "cuisine": "Pâtisseries orientales et café", "description": "Salon de thé élégant avec les meilleures pâtisseries d'Alger — zlabia, loukoum, baklava maison.", "adresse": "Rue Didouche Mourad, Alger Centre", "quartier": "Centre-ville", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 2134, "fourchette_prix": "€", "prix_moyen_personne_eur": 7, "specialites": ["Zlabia au miel", "Cornes de gazelle", "Baklava maison"], "horaires": "7h-23h", "coordonnees": { "lat": 36.7412, "lng": 3.0601 }, "tags": ["Pâtisseries", "Café", "Gourmandise"] },
-    { "id": "r21", "nom": "El Baraka", "cuisine": "Tlemcenienne", "description": "Cuisine de Tlemcen, capitale de l'art et culture algérienne — mchewcha et rechta de renommée nationale.", "adresse": "Kouba, Alger Est", "quartier": "Kouba", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 678, "fourchette_prix": "€€", "prix_moyen_personne_eur": 16, "specialites": ["Mchewcha tlemcenien", "Rechta blanche", "H'rira maison"], "horaires": "12h-22h", "coordonnees": { "lat": 36.7289, "lng": 3.1023 }, "tags": ["Tlemcen", "Andalou", "Raffiné"] },
-    { "id": "r22", "nom": "Restaurant Ziraoui", "cuisine": "Constantinoise", "description": "Recettes de Constantine transportées à Alger — dolmas, kalb el louz et tcharek msokker légendaires.", "adresse": "El Harrach, Alger Est", "quartier": "El Harrach", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 456, "fourchette_prix": "€€", "prix_moyen_personne_eur": 14, "specialites": ["Dolmas constantinois", "Kalb el louz", "Ftair au beurre"], "horaires": "9h-22h", "coordonnees": { "lat": 36.7134, "lng": 3.1334 }, "tags": ["Constantine", "Pâtisseries", "Familial"] },
-    { "id": "r23", "nom": "Dar Zitoun", "cuisine": "Algérienne-berbère dans riad", "description": "Riad rénové du 18ème siècle, cuisine dans une ancienne demeure coloniale avec cour intérieure à fontaine.", "adresse": "Casbah, Alger", "quartier": "Casbah", "halal_certifie": true, "sans_alcool": true, "note": 4.7, "avis_count": 789, "fourchette_prix": "€€€", "prix_moyen_personne_eur": 35, "specialites": ["Entrées maison variées", "Mechoui à la broche", "Assortiment pâtisseries"], "horaires": "12h-15h / 19h-22h30 (réservation)", "coordonnees": { "lat": 36.7878, "lng": 3.0612 }, "tags": ["Riad", "Casbah", "Romantique"] },
-    { "id": "r24", "nom": "Fast Halal Chorba", "cuisine": "Soupe traditionnelle", "description": "Spécialiste de la chorba — 6 variétés de soupe algérienne servies avec ftir et galettes.", "adresse": "Bab Azzoun, Casbah", "quartier": "Casbah", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 1234, "fourchette_prix": "€", "prix_moyen_personne_eur": 5, "specialites": ["Chorba frik", "Chorba bayda", "Harira tradition"], "horaires": "7h-22h", "coordonnees": { "lat": 36.7845, "lng": 3.0589 }, "tags": ["Soupe", "Économique", "Réconfortant"] },
-    { "id": "r25", "nom": "Grill El Mordjane", "cuisine": "Grillades et kebabs", "description": "Grill en plein air sur le toit avec vue sur la baie d'Alger, le soir en été sous les étoiles.", "adresse": "Makam Echahid, El Madania", "quartier": "El Madania", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 876, "fourchette_prix": "€€", "prix_moyen_personne_eur": 18, "specialites": ["Brochettes mixtes", "Côtelettes d'agneau", "Poulet chermoula"], "horaires": "19h-23h30 (dîner uniquement)", "coordonnees": { "lat": 36.7489, "lng": 3.0567 }, "tags": ["Vue panoramique", "Grillades", "Soirée"] },
-    { "id": "r26", "nom": "Hammam-Café Bab El Oued", "cuisine": "Café-salon traditionnel", "description": "Café historique de Bab El Oued, lieu de vie populaire algérois depuis 1920 — café à la chaussette.", "adresse": "Rue de Lyon, Bab El Oued", "quartier": "Bab El Oued", "halal_certifie": true, "sans_alcool": true, "note": 4.3, "avis_count": 2345, "fourchette_prix": "€", "prix_moyen_personne_eur": 3, "specialites": ["Café turc à la chaussette", "Thé à la menthe", "Makroud au miel"], "horaires": "6h-23h", "coordonnees": { "lat": 36.7923, "lng": 3.0512 }, "tags": ["Café historique", "Populaire", "Atmosphère"] },
-    { "id": "r27", "nom": "Restaurant de l'Université", "cuisine": "Cuisine universitaire halal", "description": "Autour de l'université, restaurants économiques fréquentés par 50 000 étudiants — menu complet à 3€.", "adresse": "Campus universitaire Bab Ezzouar", "quartier": "Bab Ezzouar", "halal_certifie": true, "sans_alcool": true, "note": 4.1, "avis_count": 4567, "fourchette_prix": "€", "prix_moyen_personne_eur": 3, "specialites": ["Menu étudiant complet", "Tajine du jour", "Dessert maison"], "horaires": "11h30-14h30", "coordonnees": { "lat": 36.7234, "lng": 3.1523 }, "tags": ["Étudiant", "Économique", "Campus"] },
-    { "id": "r28", "nom": "Casbah Food Tour Stop", "cuisine": "Petites échoppes traditionnelles", "description": "Circuit gastronomique dans la Casbah — boulangers, fromagers, épiciers d'épices millénaires.", "adresse": "Départ Porte Jenina, Casbah", "quartier": "Casbah", "halal_certifie": true, "sans_alcool": true, "note": 4.8, "avis_count": 345, "fourchette_prix": "€€", "prix_moyen_personne_eur": 20, "specialites": ["Dégustation épices", "Pain khobz traditionnel", "Fromage kabyle"], "horaires": "9h-18h (visite guidée 2h)", "coordonnees": { "lat": 36.7867, "lng": 3.0623 }, "tags": ["Food tour", "Casbah", "Découverte"] },
-    { "id": "r29", "nom": "Pizzéria El Warda", "cuisine": "Pizza halal au feu de bois", "description": "Pizza halal populaire à Alger, pâtes fraîches et pizzas au feu de bois — succursales dans toute la ville.", "adresse": "Draria, Alger Ouest", "quartier": "Draria", "halal_certifie": true, "sans_alcool": true, "note": 4.2, "avis_count": 1678, "fourchette_prix": "€", "prix_moyen_personne_eur": 8, "specialites": ["Pizza merguez-poivrons", "Pizza 4 fromages halal", "Penne bolognaise halal"], "horaires": "12h-23h30", "coordonnees": { "lat": 36.7012, "lng": 2.9823 }, "tags": ["Pizza", "Halal", "Feu de bois"] },
-    { "id": "r30", "nom": "El Andalous", "cuisine": "Cuisine hispano-moresque", "description": "Héritage de l'Andalousie musulmane — recettes morisques transmises depuis les expulsions de 1492.", "adresse": "Rue Mohamed Belouizdad, Blida", "quartier": "Blida", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 567, "fourchette_prix": "€€", "prix_moyen_personne_eur": 20, "specialites": ["Pastilla de viande à l'andalouse", "Mhajeb au miel", "Thé à la cannelle"], "horaires": "12h-22h (vendredi fermé midi)", "coordonnees": { "lat": 36.4712, "lng": 2.8234 }, "tags": ["Andalou", "Historique", "Raffiné"] }
+    {
+      "id": "r1",
+      "nom": "Le Bardo",
+      "cuisine": "Algérienne traditionnelle",
+      "description": "Restaurant emblématique dans une villa ottomane restaurée, servant la chorba et le couscous royal depuis 1965.",
+      "adresse": "Rue Larbi Ben M'hidi, Alger-Centre",
+      "quartier": "Centre-ville",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.8,
+      "avis_count": 1823,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 18,
+      "specialites": [
+        "Couscous royal",
+        "Chorba frik",
+        "Rechta au poulet"
+      ],
+      "horaires": "12h-15h / 19h-22h30",
+      "coordonnees": {
+        "lat": 36.7378,
+        "lng": 3.0581
+      },
+      "tags": [
+        "Traditionnel",
+        "Ottoman",
+        "Familial"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1823,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r2",
+      "nom": "Chez Brahim",
+      "cuisine": "Grillades algériennes",
+      "description": "Institution populaire des quartiers populaires, célèbre pour ses brochettes et merguez maison.",
+      "adresse": "Rue Belouizdad, Belcourt",
+      "quartier": "Belcourt",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 2341,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 8,
+      "specialites": [
+        "Brochettes agneau",
+        "Merguez maison",
+        "Galette msemmen"
+      ],
+      "horaires": "11h-23h",
+      "coordonnees": {
+        "lat": 36.7289,
+        "lng": 3.0712
+      },
+      "tags": [
+        "Populaire",
+        "Grillades",
+        "Économique"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2341,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r3",
+      "nom": "Le Tantonville",
+      "cuisine": "Méditerranéenne-algérienne",
+      "description": "Vue panoramique sur la baie d'Alger, cuisine fusion méditerranéenne avec produits locaux de saison.",
+      "adresse": "Boulevard du 11 Décembre, El Mouradia",
+      "quartier": "El Mouradia",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 987,
+      "fourchette_prix": "€€€",
+      "prix_moyen_personne_eur": 35,
+      "specialites": [
+        "Dorade farcie chermoula",
+        "Tajine de mérou",
+        "Pastilla au poulet"
+      ],
+      "horaires": "12h-15h / 19h30-23h",
+      "coordonnees": {
+        "lat": 36.7456,
+        "lng": 3.0523
+      },
+      "tags": [
+        "Vue mer",
+        "Gastronomique",
+        "Romantique"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 987,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r4",
+      "nom": "La Casbah d'Or",
+      "cuisine": "Kabyle et berbère",
+      "description": "Dans les ruelles de la Casbah, cuisine kabyle authentique — tajines berbères et couscous au seven légumes.",
+      "adresse": "Casbah, Rue de la Casbah",
+      "quartier": "Casbah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.7,
+      "avis_count": 1456,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 15,
+      "specialites": [
+        "Couscous berbère 7 légumes",
+        "Tajine zitoune",
+        "Berkoukes"
+      ],
+      "horaires": "12h-22h",
+      "coordonnees": {
+        "lat": 36.7883,
+        "lng": 3.0605
+      },
+      "tags": [
+        "Casbah",
+        "Berbère",
+        "Kabyle"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1456,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r5",
+      "nom": "Restaurant Timgad",
+      "cuisine": "Berbère haute gamme",
+      "description": "Décor de palais berbère avec zelliges et moucharabieh, cuisine raffinée inspirée des recettes ancestrales.",
+      "adresse": "Hydra, Alger",
+      "quartier": "Hydra",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 743,
+      "fourchette_prix": "€€€",
+      "prix_moyen_personne_eur": 42,
+      "specialites": [
+        "Méchoui d'agneau entier",
+        "Bastilla royale",
+        "Mhadjeb aux épinards"
+      ],
+      "horaires": "12h-15h / 19h-23h",
+      "coordonnees": {
+        "lat": 36.7234,
+        "lng": 3.0234
+      },
+      "tags": [
+        "Luxe",
+        "Berbère",
+        "Méchoui"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 743,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r6",
+      "nom": "Chez Slimane",
+      "cuisine": "Poissons et fruits de mer",
+      "description": "Pêcheurs depuis 3 générations, poissons grillés au charbon achetés le matin au marché de Bab El Oued.",
+      "adresse": "Front de mer, Bab El Oued",
+      "quartier": "Bab El Oued",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 1678,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 22,
+      "specialites": [
+        "Dorade grillée entière",
+        "Crevettes tigres",
+        "Salade mechouia"
+      ],
+      "horaires": "12h-22h",
+      "coordonnees": {
+        "lat": 36.7934,
+        "lng": 3.0478
+      },
+      "tags": [
+        "Poissons",
+        "Grillades",
+        "Front de mer"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r7",
+      "nom": "Le Malouf",
+      "cuisine": "Tuniso-algérienne",
+      "description": "Spécialités de la frontière tuniso-algérienne, brik aux oeufs et lablabi de renommée internationale.",
+      "adresse": "Rue Didouche Mourad, Centre",
+      "quartier": "Centre-ville",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 876,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 9,
+      "specialites": [
+        "Brik à l'oeuf",
+        "Lablabi pois chiche",
+        "Chakchouka"
+      ],
+      "horaires": "7h-23h",
+      "coordonnees": {
+        "lat": 36.7401,
+        "lng": 3.0598
+      },
+      "tags": [
+        "Économique",
+        "Brik",
+        "Petit-déjeuner"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 876,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r8",
+      "nom": "Mazafran Palace",
+      "cuisine": "Orientale de luxe",
+      "description": "Salle de banquet reconvertie en restaurant, spécialiste du couscous aux 7 légumes et du méchoui festif.",
+      "adresse": "Zeralda, Ouest Alger",
+      "quartier": "Zeralda",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 534,
+      "fourchette_prix": "€€€",
+      "prix_moyen_personne_eur": 38,
+      "specialites": [
+        "Méchoui entier au four",
+        "Couscous aux truffes",
+        "Zlabia au miel"
+      ],
+      "horaires": "12h-15h / 19h-23h (fermé lundi)",
+      "coordonnees": {
+        "lat": 36.7012,
+        "lng": 2.8923
+      },
+      "tags": [
+        "Festif",
+        "Grandes tablées",
+        "Méchoui"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 534,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r9",
+      "nom": "Aux Mille et Une Saveurs",
+      "cuisine": "Algérienne fusion",
+      "description": "Chef formé à Paris, réinterprète la cuisine algérienne avec des techniques modernes et des produits du terroir.",
+      "adresse": "Périmètre d'El Biar",
+      "quartier": "El Biar",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 621,
+      "fourchette_prix": "€€€",
+      "prix_moyen_personne_eur": 45,
+      "specialites": [
+        "Makroud revisité",
+        "Pigeonneaux au ras el-hanout",
+        "Sorbet dattes"
+      ],
+      "horaires": "19h-23h (dîner uniquement, réservation obligatoire)",
+      "coordonnees": {
+        "lat": 36.7567,
+        "lng": 3.0312
+      },
+      "tags": [
+        "Gastronomique",
+        "Fusion",
+        "Chef étoilé"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 621,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r10",
+      "nom": "Le Fenec",
+      "cuisine": "Saharienne-berbère",
+      "description": "Evocation du désert algérien en pleine capitale — décor de tente touareg, spécialités du Sud.",
+      "adresse": "Ain Benian, Ouest Alger",
+      "quartier": "Ain Benian",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.3,
+      "avis_count": 445,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 20,
+      "specialites": [
+        "Méchoui au feu de bois",
+        "Thé touareg",
+        "Taguella pain saharien"
+      ],
+      "horaires": "12h-23h",
+      "coordonnees": {
+        "lat": 36.7856,
+        "lng": 2.9834
+      },
+      "tags": [
+        "Saharien",
+        "Touareg",
+        "Authentique"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 445,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r11",
+      "nom": "La Fermette de Sidi Fredj",
+      "cuisine": "Campagnarde algérienne",
+      "description": "Ferme-restaurant en bord de mer, produits frais de la ferme — poulets fermiers, légumes du jardin.",
+      "adresse": "Sidi Fredj, Staoueli",
+      "quartier": "Sidi Fredj",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 678,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 18,
+      "specialites": [
+        "Poulet fermier au citron confit",
+        "Légumes grillés du jardin",
+        "Fraises maison"
+      ],
+      "horaires": "12h-21h (fermé mardi)",
+      "coordonnees": {
+        "lat": 36.7712,
+        "lng": 2.8756
+      },
+      "tags": [
+        "Ferme",
+        "Produits frais",
+        "Vue mer"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r12",
+      "nom": "Panorama Tipaza",
+      "cuisine": "Poissons-Algérienne",
+      "description": "Sur la route des ruines romaines de Tipaza, restaurant de pêcheurs avec vue sur la côte et les îlots.",
+      "adresse": "Route côtière Tipaza",
+      "quartier": "Tipaza",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 789,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 25,
+      "specialites": [
+        "Grillades de poissons du jour",
+        "Soupe de poisson",
+        "Aïoli maison"
+      ],
+      "horaires": "12h-21h",
+      "coordonnees": {
+        "lat": 36.5892,
+        "lng": 2.4512
+      },
+      "tags": [
+        "Vue mer",
+        "Ruines romaines",
+        "Excursion"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 789,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r13",
+      "nom": "Chez Mohand",
+      "cuisine": "Kabyle authentique",
+      "description": "Emigré kabyle revenu au pays, sert les recettes de sa grand-mère — achta, aghroum, thé à la menthe.",
+      "adresse": "Tizi Ouzou, Grande Kabylie",
+      "quartier": "Tizi Ouzou",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.7,
+      "avis_count": 1023,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 10,
+      "specialites": [
+        "Aghroum pain kabyle",
+        "Abzin galette de blé",
+        "Thé menthe montagne"
+      ],
+      "horaires": "8h-22h",
+      "coordonnees": {
+        "lat": 36.7169,
+        "lng": 4.0497
+      },
+      "tags": [
+        "Kabyle",
+        "Traditionnel",
+        "Montagne"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1023,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r14",
+      "nom": "Restaurant El Djazair",
+      "cuisine": "Algérienne classique",
+      "description": "Hôtel El Djazair historique (ex-Saint-George), restaurant dans les jardins d'orangers et jasmin.",
+      "adresse": "Hôtel El Djazair, Rue Souidani Boudjemaa",
+      "quartier": "Mustapha",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 567,
+      "fourchette_prix": "€€€",
+      "prix_moyen_personne_eur": 40,
+      "specialites": [
+        "Couscous royal",
+        "Tajine d'agneau aux pruneaux",
+        "Pastilla royale"
+      ],
+      "horaires": "12h30-15h / 19h30-23h",
+      "coordonnees": {
+        "lat": 36.7523,
+        "lng": 3.0434
+      },
+      "tags": [
+        "Hôtel historique",
+        "Jardin",
+        "Colonial"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 567,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r15",
+      "nom": "La Table de Faiza",
+      "cuisine": "Cuisine de mamie",
+      "description": "Faiza prépare les recettes transmises de mère en fille depuis 4 générations — dolma, rechta, rfis.",
+      "adresse": "Bir Mourad Raïs, Alger",
+      "quartier": "Bir Mourad Raïs",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.8,
+      "avis_count": 1234,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 16,
+      "specialites": [
+        "Dolma farcis",
+        "Rechta blanche",
+        "Rfis au miel"
+      ],
+      "horaires": "12h-15h / 19h-22h",
+      "coordonnees": {
+        "lat": 36.7134,
+        "lng": 3.0623
+      },
+      "tags": [
+        "Fait maison",
+        "Authentique",
+        "Familial"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1234,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r16",
+      "nom": "Le Phénicien",
+      "cuisine": "Méditerranéenne fine",
+      "description": "Vue sur la grande bleue depuis la corniche, cuisine méditerranéenne haut de gamme dans un cadre élégant.",
+      "adresse": "Corniche d'Alger, Riadh El Feth",
+      "quartier": "Riadh El Feth",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 678,
+      "fourchette_prix": "€€€",
+      "prix_moyen_personne_eur": 48,
+      "specialites": [
+        "Loup de mer en croûte de sel",
+        "Poulpe grillé",
+        "Tiramisu maison"
+      ],
+      "horaires": "12h-23h",
+      "coordonnees": {
+        "lat": 36.7723,
+        "lng": 3.0534
+      },
+      "tags": [
+        "Vue mer",
+        "Gastronomique",
+        "Corniche"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r17",
+      "nom": "Snack El Watan",
+      "cuisine": "Fast food algérien",
+      "description": "Le meilleur snack du centre-ville selon les étudiants d'Alger — sandwichs merguez et brik à 50 DA.",
+      "adresse": "Place du 1er Mai, Centre",
+      "quartier": "Centre-ville",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.3,
+      "avis_count": 3456,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 4,
+      "specialites": [
+        "Sandwich merguez-frites",
+        "Brik à l'oeuf",
+        "Bourek fromage"
+      ],
+      "horaires": "7h-23h30",
+      "coordonnees": {
+        "lat": 36.7356,
+        "lng": 3.059
+      },
+      "tags": [
+        "Rapide",
+        "Économique",
+        "Étudiant"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3456,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r18",
+      "nom": "Maison de Couscous",
+      "cuisine": "Couscous spécialiste",
+      "description": "Unique restaurant spécialisé exclusivement dans les couscous — 12 variétés différentes selon la région.",
+      "adresse": "Rue Tanger, Hussein Dey",
+      "quartier": "Hussein Dey",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.7,
+      "avis_count": 892,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 14,
+      "specialites": [
+        "Couscous bersine",
+        "Couscous tfaya oignons-raisins",
+        "Couscous bouzelouf tête d'agneau"
+      ],
+      "horaires": "12h-15h / 19h-22h (fermé dimanche)",
+      "coordonnees": {
+        "lat": 36.7289,
+        "lng": 3.0945
+      },
+      "tags": [
+        "Couscous",
+        "Régional",
+        "Spécialiste"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 892,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r19",
+      "nom": "Les Délices de la Mer",
+      "cuisine": "Fruits de mer halal",
+      "description": "Poissonnerie-restaurant au port de pêche, languettes et crevettes préparées minute selon votre choix.",
+      "adresse": "Port de pêche El Marsa, Ain Benian",
+      "quartier": "Ain Benian",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 534,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 28,
+      "specialites": [
+        "Homard thermidor",
+        "Crevettes à l'ail",
+        "Friture de poissons"
+      ],
+      "horaires": "11h-21h",
+      "coordonnees": {
+        "lat": 36.7978,
+        "lng": 2.9823
+      },
+      "tags": [
+        "Port de pêche",
+        "Fruits de mer",
+        "Frais du jour"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 534,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r20",
+      "nom": "Pâtisserie-salon Le Croissant Doré",
+      "cuisine": "Pâtisseries orientales et café",
+      "description": "Salon de thé élégant avec les meilleures pâtisseries d'Alger — zlabia, loukoum, baklava maison.",
+      "adresse": "Rue Didouche Mourad, Alger Centre",
+      "quartier": "Centre-ville",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 2134,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 7,
+      "specialites": [
+        "Zlabia au miel",
+        "Cornes de gazelle",
+        "Baklava maison"
+      ],
+      "horaires": "7h-23h",
+      "coordonnees": {
+        "lat": 36.7412,
+        "lng": 3.0601
+      },
+      "tags": [
+        "Pâtisseries",
+        "Café",
+        "Gourmandise"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2134,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r21",
+      "nom": "El Baraka",
+      "cuisine": "Tlemcenienne",
+      "description": "Cuisine de Tlemcen, capitale de l'art et culture algérienne — mchewcha et rechta de renommée nationale.",
+      "adresse": "Kouba, Alger Est",
+      "quartier": "Kouba",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 678,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 16,
+      "specialites": [
+        "Mchewcha tlemcenien",
+        "Rechta blanche",
+        "H'rira maison"
+      ],
+      "horaires": "12h-22h",
+      "coordonnees": {
+        "lat": 36.7289,
+        "lng": 3.1023
+      },
+      "tags": [
+        "Tlemcen",
+        "Andalou",
+        "Raffiné"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r22",
+      "nom": "Restaurant Ziraoui",
+      "cuisine": "Constantinoise",
+      "description": "Recettes de Constantine transportées à Alger — dolmas, kalb el louz et tcharek msokker légendaires.",
+      "adresse": "El Harrach, Alger Est",
+      "quartier": "El Harrach",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 456,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 14,
+      "specialites": [
+        "Dolmas constantinois",
+        "Kalb el louz",
+        "Ftair au beurre"
+      ],
+      "horaires": "9h-22h",
+      "coordonnees": {
+        "lat": 36.7134,
+        "lng": 3.1334
+      },
+      "tags": [
+        "Constantine",
+        "Pâtisseries",
+        "Familial"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 456,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r23",
+      "nom": "Dar Zitoun",
+      "cuisine": "Algérienne-berbère dans riad",
+      "description": "Riad rénové du 18ème siècle, cuisine dans une ancienne demeure coloniale avec cour intérieure à fontaine.",
+      "adresse": "Casbah, Alger",
+      "quartier": "Casbah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.7,
+      "avis_count": 789,
+      "fourchette_prix": "€€€",
+      "prix_moyen_personne_eur": 35,
+      "specialites": [
+        "Entrées maison variées",
+        "Mechoui à la broche",
+        "Assortiment pâtisseries"
+      ],
+      "horaires": "12h-15h / 19h-22h30 (réservation)",
+      "coordonnees": {
+        "lat": 36.7878,
+        "lng": 3.0612
+      },
+      "tags": [
+        "Riad",
+        "Casbah",
+        "Romantique"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 789,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r24",
+      "nom": "Fast Halal Chorba",
+      "cuisine": "Soupe traditionnelle",
+      "description": "Spécialiste de la chorba — 6 variétés de soupe algérienne servies avec ftir et galettes.",
+      "adresse": "Bab Azzoun, Casbah",
+      "quartier": "Casbah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 1234,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 5,
+      "specialites": [
+        "Chorba frik",
+        "Chorba bayda",
+        "Harira tradition"
+      ],
+      "horaires": "7h-22h",
+      "coordonnees": {
+        "lat": 36.7845,
+        "lng": 3.0589
+      },
+      "tags": [
+        "Soupe",
+        "Économique",
+        "Réconfortant"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1234,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r25",
+      "nom": "Grill El Mordjane",
+      "cuisine": "Grillades et kebabs",
+      "description": "Grill en plein air sur le toit avec vue sur la baie d'Alger, le soir en été sous les étoiles.",
+      "adresse": "Makam Echahid, El Madania",
+      "quartier": "El Madania",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 876,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 18,
+      "specialites": [
+        "Brochettes mixtes",
+        "Côtelettes d'agneau",
+        "Poulet chermoula"
+      ],
+      "horaires": "19h-23h30 (dîner uniquement)",
+      "coordonnees": {
+        "lat": 36.7489,
+        "lng": 3.0567
+      },
+      "tags": [
+        "Vue panoramique",
+        "Grillades",
+        "Soirée"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 876,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r26",
+      "nom": "Hammam-Café Bab El Oued",
+      "cuisine": "Café-salon traditionnel",
+      "description": "Café historique de Bab El Oued, lieu de vie populaire algérois depuis 1920 — café à la chaussette.",
+      "adresse": "Rue de Lyon, Bab El Oued",
+      "quartier": "Bab El Oued",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.3,
+      "avis_count": 2345,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 3,
+      "specialites": [
+        "Café turc à la chaussette",
+        "Thé à la menthe",
+        "Makroud au miel"
+      ],
+      "horaires": "6h-23h",
+      "coordonnees": {
+        "lat": 36.7923,
+        "lng": 3.0512
+      },
+      "tags": [
+        "Café historique",
+        "Populaire",
+        "Atmosphère"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2345,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r27",
+      "nom": "Restaurant de l'Université",
+      "cuisine": "Cuisine universitaire halal",
+      "description": "Autour de l'université, restaurants économiques fréquentés par 50 000 étudiants — menu complet à 3€.",
+      "adresse": "Campus universitaire Bab Ezzouar",
+      "quartier": "Bab Ezzouar",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.1,
+      "avis_count": 4567,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 3,
+      "specialites": [
+        "Menu étudiant complet",
+        "Tajine du jour",
+        "Dessert maison"
+      ],
+      "horaires": "11h30-14h30",
+      "coordonnees": {
+        "lat": 36.7234,
+        "lng": 3.1523
+      },
+      "tags": [
+        "Étudiant",
+        "Économique",
+        "Campus"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 4567,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r28",
+      "nom": "Casbah Food Tour Stop",
+      "cuisine": "Petites échoppes traditionnelles",
+      "description": "Circuit gastronomique dans la Casbah — boulangers, fromagers, épiciers d'épices millénaires.",
+      "adresse": "Départ Porte Jenina, Casbah",
+      "quartier": "Casbah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.8,
+      "avis_count": 345,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 20,
+      "specialites": [
+        "Dégustation épices",
+        "Pain khobz traditionnel",
+        "Fromage kabyle"
+      ],
+      "horaires": "9h-18h (visite guidée 2h)",
+      "coordonnees": {
+        "lat": 36.7867,
+        "lng": 3.0623
+      },
+      "tags": [
+        "Food tour",
+        "Casbah",
+        "Découverte"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 345,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r29",
+      "nom": "Pizzéria El Warda",
+      "cuisine": "Pizza halal au feu de bois",
+      "description": "Pizza halal populaire à Alger, pâtes fraîches et pizzas au feu de bois — succursales dans toute la ville.",
+      "adresse": "Draria, Alger Ouest",
+      "quartier": "Draria",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.2,
+      "avis_count": 1678,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 8,
+      "specialites": [
+        "Pizza merguez-poivrons",
+        "Pizza 4 fromages halal",
+        "Penne bolognaise halal"
+      ],
+      "horaires": "12h-23h30",
+      "coordonnees": {
+        "lat": 36.7012,
+        "lng": 2.9823
+      },
+      "tags": [
+        "Pizza",
+        "Halal",
+        "Feu de bois"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "r30",
+      "nom": "El Andalous",
+      "cuisine": "Cuisine hispano-moresque",
+      "description": "Héritage de l'Andalousie musulmane — recettes morisques transmises depuis les expulsions de 1492.",
+      "adresse": "Rue Mohamed Belouizdad, Blida",
+      "quartier": "Blida",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 567,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 20,
+      "specialites": [
+        "Pastilla de viande à l'andalouse",
+        "Mhajeb au miel",
+        "Thé à la cannelle"
+      ],
+      "horaires": "12h-22h (vendredi fermé midi)",
+      "coordonnees": {
+        "lat": 36.4712,
+        "lng": 2.8234
+      },
+      "tags": [
+        "Andalou",
+        "Historique",
+        "Raffiné"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 567,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    }
   ],
   "mosquees": [
-    { "id": "m1", "nom": "Grande Mosquée d'Alger (Djamaa El Djazaïr)", "nom_arabe": "جامع الجزائر", "type": "Mosquée monumentale", "statut": "Inaugurée 2019", "adresse": "Mohammadia, Alger", "quartier": "Mohammadia", "capacite": 120000, "annee_construction": "2019", "style_architectural": "Islamique moderne monumentale", "hauteur_minaret_m": 265, "coordonnees": { "lat": 36.7423, "lng": 3.1234 }, "acces_non_musulmans": false, "note": 4.9, "avis_count": 8934, "description": "3ème plus grande mosquée du monde avec son minaret de 265m — le plus haut du monde. Capacité 120 000 fidèles. Complexe culturel avec musée, bibliothèque de 1 million de livres, centre de calligraphie.", "anecdote": "Le minaret de 265 mètres est le plus haut du monde, dépassant celui de la Mosquée Hassan II de Casablanca (210m). Le chantier a mobilisé 17 000 ouvriers sur 10 ans.", "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600" },
-    { "id": "m2", "nom": "Grande Mosquée de Ketchaoua", "nom_arabe": "جامع كتشاوة", "type": "Mosquée ottomane historique", "statut": "Classée UNESCO", "adresse": "Casbah d'Alger", "quartier": "Casbah", "annee_construction": "1612", "style_architectural": "Ottoman-mauresque", "coordonnees": { "lat": 36.7856, "lng": 3.0601 }, "acces_non_musulmans": true, "note": 4.8, "avis_count": 4567, "description": "Mosquée ottomane du 17ème siècle, transformée en cathédrale par les Français en 1832, rendue à l'Islam en 1962. Les mosaïques byzantines côtoient les arabesques islamiques.", "anecdote": "Transformée en cathédrale Saint-Philippe pendant 130 ans de colonisation française. À l'indépendance en 1962, la première prière marque symboliquement la libération d'Alger." },
-    { "id": "m3", "nom": "Mosquée Sidi Abderrahmane", "type": "Mausolée-mosquée", "adresse": "Casbah, Alger", "quartier": "Casbah", "annee_construction": "1696", "style_architectural": "Mauresque ottoman", "coordonnees": { "lat": 36.7867, "lng": 3.0623 }, "acces_non_musulmans": false, "note": 4.7, "avis_count": 2345, "description": "Mausolée du saint patron d'Alger, Sidi Abderrahmane al-Tha'alibi. Pèlerinage local important, lieu de dévotion populaire algéroise." },
-    { "id": "m4", "nom": "Mosquée Ali Betchine", "type": "Mosquée ottomane", "adresse": "Casbah, Alger", "quartier": "Casbah", "annee_construction": "1622", "coordonnees": { "lat": 36.7845, "lng": 3.0589 }, "acces_non_musulmans": false, "note": 4.5, "avis_count": 1234, "description": "Belle mosquée ottomane construite par Ali Betchine (gouverneur d'Alger). Coupoles en faïence verte et minaret octogonal caractéristique." },
-    { "id": "m5", "nom": "Grande Mosquée de Blida", "type": "Mosquée régionale", "adresse": "Place de la République, Blida", "quartier": "Blida", "annee_construction": "1840", "coordonnees": { "lat": 36.4723, "lng": 2.8234 }, "acces_non_musulmans": false, "note": 4.6, "avis_count": 876, "description": "La Mosquée des Roses dans la ville aux 1000 roses. Blida, à 45km d'Alger, est connue pour ses orangeraies et cette mosquée à l'architecture délicate." },
-    { "id": "m6", "nom": "Mosquée Djamaa El Kebir", "nom_arabe": "الجامع الكبير", "type": "Mosquée historique", "adresse": "Rue de la Lyre, Alger-Centre", "quartier": "Centre-ville", "annee_construction": "1097", "coordonnees": { "lat": 36.7834, "lng": 3.0598 }, "acces_non_musulmans": false, "note": 4.7, "avis_count": 1678, "description": "La plus ancienne mosquée d'Alger, construite au 11ème siècle par le sultan almoravide Yusuf ibn Tashfin. Colonnes romaines récupérées de Tipaza, salle de prière en bois de cèdre.", "anecdote": "Les colonnes de la salle de prière proviennent des ruines romaines de Tipaza. Ce mélange de patrimoine romain et islamique est unique au monde." },
-    { "id": "m7", "nom": "Mosquée Sidi M'hamed", "type": "Mosquée de quartier historique", "adresse": "Bab El Oued, Alger", "quartier": "Bab El Oued", "annee_construction": "1660", "coordonnees": { "lat": 36.7923, "lng": 3.0512 }, "acces_non_musulmans": false, "note": 4.4, "avis_count": 567, "description": "Mosquée populaire du quartier de Bab El Oued, coeur ouvrier d'Alger. Lieu de prière au coeur du quartier le plus populaire de la capitale." },
-    { "id": "m8", "nom": "Mosquée Cheikh El Bouhali", "type": "Mosquée moderne", "adresse": "Kouba, Alger Est", "quartier": "Kouba", "annee_construction": "1985", "coordonnees": { "lat": 36.7234, "lng": 3.1023 }, "acces_non_musulmans": false, "note": 4.3, "avis_count": 345, "description": "Grande mosquée moderne du quartier résidentiel de Kouba, une des premières construites après l'indépendance." },
-    { "id": "m9", "nom": "Mosquée El Rahma Bab Ezzouar", "type": "Mosquée universitaire", "adresse": "Bab Ezzouar, Alger", "quartier": "Bab Ezzouar", "annee_construction": "2000", "coordonnees": { "lat": 36.7189, "lng": 3.1534 }, "acces_non_musulmans": false, "note": 4.4, "avis_count": 678, "description": "Mosquée desservant le plus grand campus universitaire d'Algérie (50 000 étudiants). Prière du vendredi rassemble des milliers d'étudiants." },
-    { "id": "m10", "nom": "Mosquée de Tipaza (Ruines islamiques)", "type": "Site historique islamique", "adresse": "Tipaza, Wilaya de Tipaza", "quartier": "Tipaza", "annee_construction": "950", "coordonnees": { "lat": 36.5923, "lng": 2.4489 }, "acces_non_musulmans": true, "note": 4.6, "avis_count": 234, "description": "Ruines d'une mosquée médiévale au milieu du site archéologique romain-phénicien de Tipaza. UNESCO. Superbe mélange de civilisations." }
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée d'Alger (Djamaa El Djazaïr)",
+      "nom_arabe": "جامع الجزائر",
+      "type": "Mosquée monumentale",
+      "statut": "Inaugurée 2019",
+      "adresse": "Mohammadia, Alger",
+      "quartier": "Mohammadia",
+      "capacite": 120000,
+      "annee_construction": "2019",
+      "style_architectural": "Islamique moderne monumentale",
+      "hauteur_minaret_m": 265,
+      "coordonnees": {
+        "lat": 36.7423,
+        "lng": 3.1234
+      },
+      "acces_non_musulmans": false,
+      "note": 4.9,
+      "avis_count": 8934,
+      "description": "3ème plus grande mosquée du monde avec son minaret de 265m — le plus haut du monde. Capacité 120 000 fidèles. Complexe culturel avec musée, bibliothèque de 1 million de livres, centre de calligraphie.",
+      "anecdote": "Le minaret de 265 mètres est le plus haut du monde, dépassant celui de la Mosquée Hassan II de Casablanca (210m). Le chantier a mobilisé 17 000 ouvriers sur 10 ans.",
+      "image": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600"
+    },
+    {
+      "id": "m2",
+      "nom": "Grande Mosquée de Ketchaoua",
+      "nom_arabe": "جامع كتشاوة",
+      "type": "Mosquée ottomane historique",
+      "statut": "Classée UNESCO",
+      "adresse": "Casbah d'Alger",
+      "quartier": "Casbah",
+      "annee_construction": "1612",
+      "style_architectural": "Ottoman-mauresque",
+      "coordonnees": {
+        "lat": 36.7856,
+        "lng": 3.0601
+      },
+      "acces_non_musulmans": true,
+      "note": 4.8,
+      "avis_count": 4567,
+      "description": "Mosquée ottomane du 17ème siècle, transformée en cathédrale par les Français en 1832, rendue à l'Islam en 1962. Les mosaïques byzantines côtoient les arabesques islamiques.",
+      "anecdote": "Transformée en cathédrale Saint-Philippe pendant 130 ans de colonisation française. À l'indépendance en 1962, la première prière marque symboliquement la libération d'Alger."
+    },
+    {
+      "id": "m3",
+      "nom": "Mosquée Sidi Abderrahmane",
+      "type": "Mausolée-mosquée",
+      "adresse": "Casbah, Alger",
+      "quartier": "Casbah",
+      "annee_construction": "1696",
+      "style_architectural": "Mauresque ottoman",
+      "coordonnees": {
+        "lat": 36.7867,
+        "lng": 3.0623
+      },
+      "acces_non_musulmans": false,
+      "note": 4.7,
+      "avis_count": 2345,
+      "description": "Mausolée du saint patron d'Alger, Sidi Abderrahmane al-Tha'alibi. Pèlerinage local important, lieu de dévotion populaire algéroise."
+    },
+    {
+      "id": "m4",
+      "nom": "Mosquée Ali Betchine",
+      "type": "Mosquée ottomane",
+      "adresse": "Casbah, Alger",
+      "quartier": "Casbah",
+      "annee_construction": "1622",
+      "coordonnees": {
+        "lat": 36.7845,
+        "lng": 3.0589
+      },
+      "acces_non_musulmans": false,
+      "note": 4.5,
+      "avis_count": 1234,
+      "description": "Belle mosquée ottomane construite par Ali Betchine (gouverneur d'Alger). Coupoles en faïence verte et minaret octogonal caractéristique."
+    },
+    {
+      "id": "m5",
+      "nom": "Grande Mosquée de Blida",
+      "type": "Mosquée régionale",
+      "adresse": "Place de la République, Blida",
+      "quartier": "Blida",
+      "annee_construction": "1840",
+      "coordonnees": {
+        "lat": 36.4723,
+        "lng": 2.8234
+      },
+      "acces_non_musulmans": false,
+      "note": 4.6,
+      "avis_count": 876,
+      "description": "La Mosquée des Roses dans la ville aux 1000 roses. Blida, à 45km d'Alger, est connue pour ses orangeraies et cette mosquée à l'architecture délicate."
+    },
+    {
+      "id": "m6",
+      "nom": "Mosquée Djamaa El Kebir",
+      "nom_arabe": "الجامع الكبير",
+      "type": "Mosquée historique",
+      "adresse": "Rue de la Lyre, Alger-Centre",
+      "quartier": "Centre-ville",
+      "annee_construction": "1097",
+      "coordonnees": {
+        "lat": 36.7834,
+        "lng": 3.0598
+      },
+      "acces_non_musulmans": false,
+      "note": 4.7,
+      "avis_count": 1678,
+      "description": "La plus ancienne mosquée d'Alger, construite au 11ème siècle par le sultan almoravide Yusuf ibn Tashfin. Colonnes romaines récupérées de Tipaza, salle de prière en bois de cèdre.",
+      "anecdote": "Les colonnes de la salle de prière proviennent des ruines romaines de Tipaza. Ce mélange de patrimoine romain et islamique est unique au monde."
+    },
+    {
+      "id": "m7",
+      "nom": "Mosquée Sidi M'hamed",
+      "type": "Mosquée de quartier historique",
+      "adresse": "Bab El Oued, Alger",
+      "quartier": "Bab El Oued",
+      "annee_construction": "1660",
+      "coordonnees": {
+        "lat": 36.7923,
+        "lng": 3.0512
+      },
+      "acces_non_musulmans": false,
+      "note": 4.4,
+      "avis_count": 567,
+      "description": "Mosquée populaire du quartier de Bab El Oued, coeur ouvrier d'Alger. Lieu de prière au coeur du quartier le plus populaire de la capitale."
+    },
+    {
+      "id": "m8",
+      "nom": "Mosquée Cheikh El Bouhali",
+      "type": "Mosquée moderne",
+      "adresse": "Kouba, Alger Est",
+      "quartier": "Kouba",
+      "annee_construction": "1985",
+      "coordonnees": {
+        "lat": 36.7234,
+        "lng": 3.1023
+      },
+      "acces_non_musulmans": false,
+      "note": 4.3,
+      "avis_count": 345,
+      "description": "Grande mosquée moderne du quartier résidentiel de Kouba, une des premières construites après l'indépendance."
+    },
+    {
+      "id": "m9",
+      "nom": "Mosquée El Rahma Bab Ezzouar",
+      "type": "Mosquée universitaire",
+      "adresse": "Bab Ezzouar, Alger",
+      "quartier": "Bab Ezzouar",
+      "annee_construction": "2000",
+      "coordonnees": {
+        "lat": 36.7189,
+        "lng": 3.1534
+      },
+      "acces_non_musulmans": false,
+      "note": 4.4,
+      "avis_count": 678,
+      "description": "Mosquée desservant le plus grand campus universitaire d'Algérie (50 000 étudiants). Prière du vendredi rassemble des milliers d'étudiants."
+    },
+    {
+      "id": "m10",
+      "nom": "Mosquée de Tipaza (Ruines islamiques)",
+      "type": "Site historique islamique",
+      "adresse": "Tipaza, Wilaya de Tipaza",
+      "quartier": "Tipaza",
+      "annee_construction": "950",
+      "coordonnees": {
+        "lat": 36.5923,
+        "lng": 2.4489
+      },
+      "acces_non_musulmans": true,
+      "note": 4.6,
+      "avis_count": 234,
+      "description": "Ruines d'une mosquée médiévale au milieu du site archéologique romain-phénicien de Tipaza. UNESCO. Superbe mélange de civilisations."
+    }
   ],
   "hotels": [
-    { "id": "h1", "nom": "Sofitel Alger Hamma Garden", "type": "5 étoiles luxe", "description": "Le palace d'Alger surplombant le jardin d'essai du Hamma — SPA oriental, piscine chauffée, cuisine algérienne raffinée.", "adresse": "Jardin d'Essai, El Hamma", "quartier": "El Hamma", "halal_certifie": true, "sans_alcool": false, "piscine_privee": false, "piscine_chauffee": true, "etoiles": 5, "note": 4.6, "avis_count": 1234, "prix_nuit_min": 180, "devise": "EUR", "coordonnees": { "lat": 36.7423, "lng": 3.0823 }, "tags": ["Luxe", "SPA", "Piscine"], "services": ["SPA", "Piscine chauffée", "Restaurant gastronomique", "Salle de sport"] },
-    { "id": "h2", "nom": "Hôtel El Djazair (ex Saint-George)", "type": "5 étoiles historique", "description": "L'hôtel historique d'Alger dans une villa coloniale entourée d'orangers — Churchill y séjourna en 1943.", "adresse": "Rue Souidani Boudjemaa, Mustapha", "quartier": "Mustapha", "halal_certifie": true, "sans_alcool": false, "etoiles": 5, "note": 4.5, "avis_count": 876, "prix_nuit_min": 150, "devise": "EUR", "coordonnees": { "lat": 36.7523, "lng": 3.0434 }, "tags": ["Historique", "Colonial", "Jardin"] },
-    { "id": "h3", "nom": "Hôtel Mercure Alger Aéroport", "type": "4 étoiles business", "description": "Pratique pour voyages d'affaires, navette aéroport gratuite, piscine extérieure, restaurant halal.", "adresse": "Dar El Beïda, Zone Aéroport", "quartier": "Dar El Beïda", "halal_certifie": true, "sans_alcool": false, "piscine_commune": true, "etoiles": 4, "note": 4.2, "avis_count": 567, "prix_nuit_min": 90, "devise": "EUR", "coordonnees": { "lat": 36.7012, "lng": 3.2134 }, "tags": ["Aéroport", "Business", "Piscine"] },
-    { "id": "h4", "nom": "Dar Sultan Casbah", "type": "Riad boutique", "description": "Maison ottomane restaurée au coeur de la Casbah UNESCO, 8 chambres authentiques avec cour intérieure.", "adresse": "Casbah, Alger", "quartier": "Casbah", "halal_certifie": true, "sans_alcool": true, "etoiles": 4, "note": 4.8, "avis_count": 234, "prix_nuit_min": 80, "devise": "EUR", "coordonnees": { "lat": 36.7867, "lng": 3.0623 }, "tags": ["Riad", "Casbah", "Authentique"] },
-    { "id": "h5", "nom": "Hôtel Aurassi", "type": "5 étoiles panoramique", "description": "Tour emblématique d'Alger depuis 1975, vue 360° sur la Méditerranée et la ville, rénovation 2020.", "adresse": "Avenue Frantz Fanon, El Madania", "quartier": "El Madania", "halal_certifie": true, "sans_alcool": false, "piscine_commune": true, "etoiles": 5, "note": 4.3, "avis_count": 1456, "prix_nuit_min": 120, "devise": "EUR", "coordonnees": { "lat": 36.7489, "lng": 3.0567 }, "tags": ["Panoramique", "Piscine", "Emblématique"] },
-    { "id": "h6", "nom": "Hôtel Sheraton Club des Pins", "type": "5 étoiles balnéaire", "description": "Resort sur la côte ouest d'Alger dans une pinède méditerranéenne — accès plage privée, tennis, piscine.", "adresse": "Club des Pins, Staoueli", "quartier": "Club des Pins", "halal_certifie": true, "sans_alcool": false, "piscine_commune": true, "etoiles": 5, "note": 4.4, "avis_count": 789, "prix_nuit_min": 160, "devise": "EUR", "coordonnees": { "lat": 36.7234, "lng": 2.8734 }, "tags": ["Plage privée", "Resort", "Pinède"] },
-    { "id": "h7", "nom": "Riad Casbah Heritage", "type": "Hébergement patrimoine", "description": "5 chambres dans une maison de 1780, gestion familiale, vue sur la baie depuis la terrasse ottomane.", "adresse": "Casbah haute, Alger", "quartier": "Casbah haute", "halal_certifie": true, "sans_alcool": true, "etoiles": 3, "note": 4.7, "avis_count": 123, "prix_nuit_min": 55, "devise": "EUR", "coordonnees": { "lat": 36.7889, "lng": 3.0612 }, "tags": ["Patrimoine", "Familial", "Vue mer"] },
-    { "id": "h8", "nom": "Hôtel Hilton Alger", "type": "5 étoiles international", "description": "Complexe de 434 chambres avec vue sur la Méditerranée, piscine extérieure chauffée, fitness center.", "adresse": "Mohammadia, Alger", "quartier": "Mohammadia", "halal_certifie": true, "sans_alcool": false, "piscine_chauffee": true, "etoiles": 5, "note": 4.5, "avis_count": 2134, "prix_nuit_min": 145, "devise": "EUR", "coordonnees": { "lat": 36.7456, "lng": 3.1134 }, "tags": ["International", "Vue mer", "Piscine chauffée"] }
+    {
+      "id": "h1",
+      "nom": "Sofitel Alger Hamma Garden",
+      "type": "5 étoiles luxe",
+      "description": "Le palace d'Alger surplombant le jardin d'essai du Hamma — SPA oriental, piscine chauffée, cuisine algérienne raffinée.",
+      "adresse": "Jardin d'Essai, El Hamma",
+      "quartier": "El Hamma",
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "piscine_privee": false,
+      "piscine_chauffee": true,
+      "etoiles": 5,
+      "note": 4.6,
+      "avis_count": 1234,
+      "prix_nuit_min": 180,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 36.7423,
+        "lng": 3.0823
+      },
+      "tags": [
+        "Luxe",
+        "SPA",
+        "Piscine"
+      ],
+      "services": [
+        "SPA",
+        "Piscine chauffée",
+        "Restaurant gastronomique",
+        "Salle de sport"
+      ],
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1234,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "h2",
+      "nom": "Hôtel El Djazair (ex Saint-George)",
+      "type": "5 étoiles historique",
+      "description": "L'hôtel historique d'Alger dans une villa coloniale entourée d'orangers — Churchill y séjourna en 1943.",
+      "adresse": "Rue Souidani Boudjemaa, Mustapha",
+      "quartier": "Mustapha",
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "etoiles": 5,
+      "note": 4.5,
+      "avis_count": 876,
+      "prix_nuit_min": 150,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 36.7523,
+        "lng": 3.0434
+      },
+      "tags": [
+        "Historique",
+        "Colonial",
+        "Jardin"
+      ],
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 876,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "h3",
+      "nom": "Hôtel Mercure Alger Aéroport",
+      "type": "4 étoiles business",
+      "description": "Pratique pour voyages d'affaires, navette aéroport gratuite, piscine extérieure, restaurant halal.",
+      "adresse": "Dar El Beïda, Zone Aéroport",
+      "quartier": "Dar El Beïda",
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "piscine_commune": true,
+      "etoiles": 4,
+      "note": 4.2,
+      "avis_count": 567,
+      "prix_nuit_min": 90,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 36.7012,
+        "lng": 3.2134
+      },
+      "tags": [
+        "Aéroport",
+        "Business",
+        "Piscine"
+      ],
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 567,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "h4",
+      "nom": "Dar Sultan Casbah",
+      "type": "Riad boutique",
+      "description": "Maison ottomane restaurée au coeur de la Casbah UNESCO, 8 chambres authentiques avec cour intérieure.",
+      "adresse": "Casbah, Alger",
+      "quartier": "Casbah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "etoiles": 4,
+      "note": 4.8,
+      "avis_count": 234,
+      "prix_nuit_min": 80,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 36.7867,
+        "lng": 3.0623
+      },
+      "tags": [
+        "Riad",
+        "Casbah",
+        "Authentique"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 234,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "h5",
+      "nom": "Hôtel Aurassi",
+      "type": "5 étoiles panoramique",
+      "description": "Tour emblématique d'Alger depuis 1975, vue 360° sur la Méditerranée et la ville, rénovation 2020.",
+      "adresse": "Avenue Frantz Fanon, El Madania",
+      "quartier": "El Madania",
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "piscine_commune": true,
+      "etoiles": 5,
+      "note": 4.3,
+      "avis_count": 1456,
+      "prix_nuit_min": 120,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 36.7489,
+        "lng": 3.0567
+      },
+      "tags": [
+        "Panoramique",
+        "Piscine",
+        "Emblématique"
+      ],
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1456,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "h6",
+      "nom": "Hôtel Sheraton Club des Pins",
+      "type": "5 étoiles balnéaire",
+      "description": "Resort sur la côte ouest d'Alger dans une pinède méditerranéenne — accès plage privée, tennis, piscine.",
+      "adresse": "Club des Pins, Staoueli",
+      "quartier": "Club des Pins",
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "piscine_commune": true,
+      "etoiles": 5,
+      "note": 4.4,
+      "avis_count": 789,
+      "prix_nuit_min": 160,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 36.7234,
+        "lng": 2.8734
+      },
+      "tags": [
+        "Plage privée",
+        "Resort",
+        "Pinède"
+      ],
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 789,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "h7",
+      "nom": "Riad Casbah Heritage",
+      "type": "Hébergement patrimoine",
+      "description": "5 chambres dans une maison de 1780, gestion familiale, vue sur la baie depuis la terrasse ottomane.",
+      "adresse": "Casbah haute, Alger",
+      "quartier": "Casbah haute",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "etoiles": 3,
+      "note": 4.7,
+      "avis_count": 123,
+      "prix_nuit_min": 55,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 36.7889,
+        "lng": 3.0612
+      },
+      "tags": [
+        "Patrimoine",
+        "Familial",
+        "Vue mer"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 123,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    },
+    {
+      "id": "h8",
+      "nom": "Hôtel Hilton Alger",
+      "type": "5 étoiles international",
+      "description": "Complexe de 434 chambres avec vue sur la Méditerranée, piscine extérieure chauffée, fitness center.",
+      "adresse": "Mohammadia, Alger",
+      "quartier": "Mohammadia",
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "piscine_chauffee": true,
+      "etoiles": 5,
+      "note": 4.5,
+      "avis_count": 2134,
+      "prix_nuit_min": 145,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 36.7456,
+        "lng": 3.1134
+      },
+      "tags": [
+        "International",
+        "Vue mer",
+        "Piscine chauffée"
+      ],
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2134,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Autorité halal algérienne"
+      }
+    }
   ],
   "activites": [
-    { "id": "a1", "nom": "Casbah d'Alger — Patrimoine UNESCO", "type": "Patrimoine", "emoji": "🏛️", "duree": "3-4 heures", "prix": "Gratuit (guide local 800-1500 DZD)", "description": "Labyrinthe de ruelles du 16ème siècle — palais ottomans, fontaines, mosquées et demeures d'architecture moresque unique.", "adapte_famille": true, "adapte_seniors": false, "meilleur_moment": "Matin (9h-12h) avant la chaleur", "a_savoir": "Chaussures de marche obligatoires — de nombreuses ruelles sont en escaliers raides", "tags": ["UNESCO", "Historique", "Architecture"] },
-    { "id": "a2", "nom": "Grande Mosquée d'Alger — Visite extérieure", "type": "Spirituel", "emoji": "🕌", "duree": "1-2 heures", "prix": "Gratuit (extérieur)", "description": "Contempler le plus haut minaret du monde (265m) depuis le boulevard côtier. Le complexe culturel inclut une bibliothèque ouverte au public.", "adapte_famille": true, "adapte_seniors": true, "tags": ["Mosquée", "Minaret", "Architecture moderne"] },
-    { "id": "a3", "nom": "Musée National du Bardo", "type": "Musée", "emoji": "🏺", "duree": "2-3 heures", "prix": "200 DZD (1.5€)", "description": "Villa ottomane abritant les plus belles collections de préhistoire algérienne et d'archéologie romaine d'Afrique du Nord.", "adapte_famille": true, "adapte_seniors": true, "adapte_handicap": true, "tags": ["Musée", "Préhistoire", "Ottoman"] },
-    { "id": "a4", "nom": "Jardin d'Essai du Hamma", "type": "Nature", "emoji": "🌿", "duree": "2 heures", "prix": "Gratuit", "description": "Jardin botanique de 58 hectares fondé en 1832, avec palmiers centenaires et allées d'eucalyptus géants. Poumon vert d'Alger.", "adapte_famille": true, "adapte_seniors": true, "adapte_handicap": true, "tags": ["Jardin", "Nature", "Botanique"] },
-    { "id": "a5", "nom": "Ruines romaines de Tipaza", "type": "Archéologie", "emoji": "🏛️", "duree": "Journée", "prix": "600 DZD (4€)", "description": "Site archéologique UNESCO au bord de la Méditerranée — ruines phéniciennes, romaines et chrétiennes. Vue imprenable sur la mer.", "adapte_famille": true, "adapte_seniors": false, "meilleur_moment": "Printemps (mars-mai) pour les fleurs sauvages", "tags": ["UNESCO", "Romain", "Côte"] },
-    { "id": "a6", "nom": "Marché Bab El Oued", "type": "Marché", "emoji": "🛒", "duree": "2 heures", "prix": "Gratuit", "description": "Le marché populaire le plus vivant d'Alger — épices, dattes, figues sèches, artisanat berbère et ambiance 100% locale.", "adapte_famille": true, "adapte_seniors": true, "tags": ["Marché", "Populaire", "Épices"] },
-    { "id": "a7", "nom": "Mémorial du Martyr (Makam Echahid)", "type": "Monument", "emoji": "🏛️", "duree": "1 heure", "prix": "Gratuit (extérieur)", "description": "Les trois palmes de 92m symbolisant la révolution algérienne, dominant la baie. Vue panoramique sur Alger et la Méditerranée.", "adapte_famille": true, "adapte_seniors": true, "adapte_handicap": true, "tags": ["Monument", "Révolution", "Panorama"] },
-    { "id": "a8", "nom": "Musée des Arts et de l'Histoire Islamique", "type": "Musée", "emoji": "🏺", "duree": "2 heures", "prix": "300 DZD (2€)", "description": "Palais du Dey d'Alger restauré, abritant la collection d'art islamique algérien — calligraphie, céramiques, textiles anciens.", "adapte_famille": true, "adapte_seniors": true, "tags": ["Art islamique", "Palais", "Calligraphie"] },
-    { "id": "a9", "nom": "Corniche d'Alger — Promenade", "type": "Promenade", "emoji": "🚶", "duree": "2-3 heures", "prix": "Gratuit", "description": "Promenade de 6km le long de la Méditerranée avec vue sur la baie — cafés, glaces et coucher de soleil spectaculaire.", "adapte_famille": true, "adapte_seniors": true, "adapte_handicap": true, "tags": ["Promenade", "Mer", "Coucher de soleil"] },
-    { "id": "a10", "nom": "Téléphérique de Notre-Dame d'Afrique", "type": "Panoramique", "emoji": "🚡", "duree": "1 heure", "prix": "250 DZD (1.5€)", "description": "Téléphérique depuis Bab El Oued jusqu'à Notre-Dame d'Afrique — vue à 360° sur Alger, la Casbah et la Méditerranée.", "adapte_famille": true, "adapte_seniors": true, "tags": ["Téléphérique", "Panorama", "Vue mer"] },
-    { "id": "a11", "nom": "Hammam Traditionnel de la Casbah", "type": "Bien-être", "emoji": "♨️", "duree": "2 heures", "prix": "800-1500 DZD (6-10€)", "description": "Hammam ottoman du 17ème siècle toujours en activité dans la Casbah — gommage et massage à l'huile d'argan.", "adapte_famille": false, "adapte_seniors": true, "a_savoir": "Séances séparées homme/femme, respecter les horaires affichés", "tags": ["Hammam", "Ottoman", "Bien-être"] },
-    { "id": "a12", "nom": "Plage de Sidi Fredj", "type": "Plage", "emoji": "🏖️", "duree": "Demi-journée", "prix": "Gratuit (parking 200 DZD)", "description": "Station balnéaire à 35km d'Alger — plages de sable fin, sports nautiques, restaurants de poissons. Ambiance familiale algéroise.", "adapte_famille": true, "adapte_seniors": true, "meilleur_moment": "Juin-Septembre", "tags": ["Plage", "Famille", "Sports nautiques"] },
-    { "id": "a13", "nom": "Casbah Food Tour Guidé", "type": "Gastronomie", "emoji": "🍽️", "duree": "3 heures", "prix": "3000 DZD (20€)", "description": "Tour culinaire dans la Casbah avec guide — dégustation de galettes msemmen, chorba, makroud et thé à la menthe.", "adapte_famille": true, "adapte_seniors": true, "tags": ["Gastronomie", "Guidé", "Culture"] },
-    { "id": "a14", "nom": "Musée du Moudjahid — Révolution algérienne", "type": "Musée", "emoji": "🏛️", "duree": "2 heures", "prix": "100 DZD (0.70€)", "description": "Histoire de la guerre d'indépendance algérienne (1954-1962) — photos, documents, armes et témoignages des moudjahidine.", "adapte_famille": false, "adapte_seniors": true, "tags": ["Histoire", "Révolution", "Indépendance"] },
-    { "id": "a15", "nom": "Soirée Chaabi Algérois", "type": "Culture", "emoji": "🎵", "duree": "3-4 heures", "prix": "1000-2000 DZD (7-14€)", "description": "Musique chaabi — tradition musicale d'Alger née au 20ème siècle. Concerts dans les cafés de la Casbah le vendredi soir.", "adapte_famille": false, "adapte_seniors": true, "meilleur_moment": "Vendredi et samedi soir", "tags": ["Musique", "Chaabi", "Culture"] }
+    {
+      "id": "a1",
+      "nom": "Casbah d'Alger — Patrimoine UNESCO",
+      "type": "Patrimoine",
+      "emoji": "🏛️",
+      "duree": "3-4 heures",
+      "prix": "Gratuit (guide local 800-1500 DZD)",
+      "description": "Labyrinthe de ruelles du 16ème siècle — palais ottomans, fontaines, mosquées et demeures d'architecture moresque unique.",
+      "adapte_famille": true,
+      "adapte_seniors": false,
+      "meilleur_moment": "Matin (9h-12h) avant la chaleur",
+      "a_savoir": "Chaussures de marche obligatoires — de nombreuses ruelles sont en escaliers raides",
+      "tags": [
+        "UNESCO",
+        "Historique",
+        "Architecture"
+      ]
+    },
+    {
+      "id": "a2",
+      "nom": "Grande Mosquée d'Alger — Visite extérieure",
+      "type": "Spirituel",
+      "emoji": "🕌",
+      "duree": "1-2 heures",
+      "prix": "Gratuit (extérieur)",
+      "description": "Contempler le plus haut minaret du monde (265m) depuis le boulevard côtier. Le complexe culturel inclut une bibliothèque ouverte au public.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "tags": [
+        "Mosquée",
+        "Minaret",
+        "Architecture moderne"
+      ]
+    },
+    {
+      "id": "a3",
+      "nom": "Musée National du Bardo",
+      "type": "Musée",
+      "emoji": "🏺",
+      "duree": "2-3 heures",
+      "prix": "200 DZD (1.5€)",
+      "description": "Villa ottomane abritant les plus belles collections de préhistoire algérienne et d'archéologie romaine d'Afrique du Nord.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "adapte_handicap": true,
+      "tags": [
+        "Musée",
+        "Préhistoire",
+        "Ottoman"
+      ]
+    },
+    {
+      "id": "a4",
+      "nom": "Jardin d'Essai du Hamma",
+      "type": "Nature",
+      "emoji": "🌿",
+      "duree": "2 heures",
+      "prix": "Gratuit",
+      "description": "Jardin botanique de 58 hectares fondé en 1832, avec palmiers centenaires et allées d'eucalyptus géants. Poumon vert d'Alger.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "adapte_handicap": true,
+      "tags": [
+        "Jardin",
+        "Nature",
+        "Botanique"
+      ]
+    },
+    {
+      "id": "a5",
+      "nom": "Ruines romaines de Tipaza",
+      "type": "Archéologie",
+      "emoji": "🏛️",
+      "duree": "Journée",
+      "prix": "600 DZD (4€)",
+      "description": "Site archéologique UNESCO au bord de la Méditerranée — ruines phéniciennes, romaines et chrétiennes. Vue imprenable sur la mer.",
+      "adapte_famille": true,
+      "adapte_seniors": false,
+      "meilleur_moment": "Printemps (mars-mai) pour les fleurs sauvages",
+      "tags": [
+        "UNESCO",
+        "Romain",
+        "Côte"
+      ]
+    },
+    {
+      "id": "a6",
+      "nom": "Marché Bab El Oued",
+      "type": "Marché",
+      "emoji": "🛒",
+      "duree": "2 heures",
+      "prix": "Gratuit",
+      "description": "Le marché populaire le plus vivant d'Alger — épices, dattes, figues sèches, artisanat berbère et ambiance 100% locale.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "tags": [
+        "Marché",
+        "Populaire",
+        "Épices"
+      ]
+    },
+    {
+      "id": "a7",
+      "nom": "Mémorial du Martyr (Makam Echahid)",
+      "type": "Monument",
+      "emoji": "🏛️",
+      "duree": "1 heure",
+      "prix": "Gratuit (extérieur)",
+      "description": "Les trois palmes de 92m symbolisant la révolution algérienne, dominant la baie. Vue panoramique sur Alger et la Méditerranée.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "adapte_handicap": true,
+      "tags": [
+        "Monument",
+        "Révolution",
+        "Panorama"
+      ]
+    },
+    {
+      "id": "a8",
+      "nom": "Musée des Arts et de l'Histoire Islamique",
+      "type": "Musée",
+      "emoji": "🏺",
+      "duree": "2 heures",
+      "prix": "300 DZD (2€)",
+      "description": "Palais du Dey d'Alger restauré, abritant la collection d'art islamique algérien — calligraphie, céramiques, textiles anciens.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "tags": [
+        "Art islamique",
+        "Palais",
+        "Calligraphie"
+      ]
+    },
+    {
+      "id": "a9",
+      "nom": "Corniche d'Alger — Promenade",
+      "type": "Promenade",
+      "emoji": "🚶",
+      "duree": "2-3 heures",
+      "prix": "Gratuit",
+      "description": "Promenade de 6km le long de la Méditerranée avec vue sur la baie — cafés, glaces et coucher de soleil spectaculaire.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "adapte_handicap": true,
+      "tags": [
+        "Promenade",
+        "Mer",
+        "Coucher de soleil"
+      ]
+    },
+    {
+      "id": "a10",
+      "nom": "Téléphérique de Notre-Dame d'Afrique",
+      "type": "Panoramique",
+      "emoji": "🚡",
+      "duree": "1 heure",
+      "prix": "250 DZD (1.5€)",
+      "description": "Téléphérique depuis Bab El Oued jusqu'à Notre-Dame d'Afrique — vue à 360° sur Alger, la Casbah et la Méditerranée.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "tags": [
+        "Téléphérique",
+        "Panorama",
+        "Vue mer"
+      ]
+    },
+    {
+      "id": "a11",
+      "nom": "Hammam Traditionnel de la Casbah",
+      "type": "Bien-être",
+      "emoji": "♨️",
+      "duree": "2 heures",
+      "prix": "800-1500 DZD (6-10€)",
+      "description": "Hammam ottoman du 17ème siècle toujours en activité dans la Casbah — gommage et massage à l'huile d'argan.",
+      "adapte_famille": false,
+      "adapte_seniors": true,
+      "a_savoir": "Séances séparées homme/femme, respecter les horaires affichés",
+      "tags": [
+        "Hammam",
+        "Ottoman",
+        "Bien-être"
+      ]
+    },
+    {
+      "id": "a12",
+      "nom": "Plage de Sidi Fredj",
+      "type": "Plage",
+      "emoji": "🏖️",
+      "duree": "Demi-journée",
+      "prix": "Gratuit (parking 200 DZD)",
+      "description": "Station balnéaire à 35km d'Alger — plages de sable fin, sports nautiques, restaurants de poissons. Ambiance familiale algéroise.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "meilleur_moment": "Juin-Septembre",
+      "tags": [
+        "Plage",
+        "Famille",
+        "Sports nautiques"
+      ]
+    },
+    {
+      "id": "a13",
+      "nom": "Casbah Food Tour Guidé",
+      "type": "Gastronomie",
+      "emoji": "🍽️",
+      "duree": "3 heures",
+      "prix": "3000 DZD (20€)",
+      "description": "Tour culinaire dans la Casbah avec guide — dégustation de galettes msemmen, chorba, makroud et thé à la menthe.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "tags": [
+        "Gastronomie",
+        "Guidé",
+        "Culture"
+      ]
+    },
+    {
+      "id": "a14",
+      "nom": "Musée du Moudjahid — Révolution algérienne",
+      "type": "Musée",
+      "emoji": "🏛️",
+      "duree": "2 heures",
+      "prix": "100 DZD (0.70€)",
+      "description": "Histoire de la guerre d'indépendance algérienne (1954-1962) — photos, documents, armes et témoignages des moudjahidine.",
+      "adapte_famille": false,
+      "adapte_seniors": true,
+      "tags": [
+        "Histoire",
+        "Révolution",
+        "Indépendance"
+      ]
+    },
+    {
+      "id": "a15",
+      "nom": "Soirée Chaabi Algérois",
+      "type": "Culture",
+      "emoji": "🎵",
+      "duree": "3-4 heures",
+      "prix": "1000-2000 DZD (7-14€)",
+      "description": "Musique chaabi — tradition musicale d'Alger née au 20ème siècle. Concerts dans les cafés de la Casbah le vendredi soir.",
+      "adapte_famille": false,
+      "adapte_seniors": true,
+      "meilleur_moment": "Vendredi et samedi soir",
+      "tags": [
+        "Musique",
+        "Chaabi",
+        "Culture"
+      ]
+    }
   ],
   "road_trips": [
-    { "id": "rt1", "titre": "Circuit Villes Impériales Nord", "emoji": "🏰", "duree": "7 jours", "distance_km": 1200, "difficulte": "Modéré", "budget_estime_eur": "400-600€", "etapes": [{ "ville": "Alger", "nuits": 2, "highlights": ["Casbah", "Grande Mosquée", "Jardin d'Essai"] }, { "ville": "Tlemcen", "nuits": 2, "highlights": ["Grande Mosquée de Tlemcen", "Parc de Lalla Setti", "Mansourah"] }, { "ville": "Oran", "nuits": 2, "highlights": ["Santa Cruz", "Place du 1er Novembre", "Casbah d'Oran"] }], "conseils_halal": "Toutes les villes sont 100% halal — restaurants, épiceries et boucheries certifiés partout", "tags": ["Culture", "Historique", "Nord"] },
-    { "id": "rt2", "titre": "Grand Sud Saharien", "emoji": "🐪", "duree": "10 jours", "distance_km": 2800, "difficulte": "Aventureux", "budget_estime_eur": "600-900€", "etapes": [{ "ville": "Alger", "nuits": 1, "highlights": ["Départ"] }, { "ville": "Ghardaïa", "nuits": 2, "highlights": ["Mosquée de Ghardaïa", "Ksar des Ibadites", "Marché berbère"] }, { "ville": "Tamanrasset", "nuits": 3, "highlights": ["Hoggar", "Assekrem", "Coucher de soleil Sahara"] }, { "ville": "Djanet", "nuits": 2, "highlights": ["Tassili N'Ajjer UNESCO", "Art rupestre néolithique", "Dunes de l'Erg"] }], "conseils_halal": "Emporter provisions halal pour les zones reculées. Eau en bouteille indispensable. Les communautés touareg sont musulmanes et accueillantes.", "tags": ["Sahara", "Aventure", "Hoggar"] },
-    { "id": "rt3", "titre": "Côte Méditerranéenne Algérienne", "emoji": "🌊", "duree": "5 jours", "distance_km": 600, "difficulte": "Facile", "budget_estime_eur": "300-450€", "etapes": [{ "ville": "Alger", "nuits": 1, "highlights": ["Casbah", "Corniche"] }, { "ville": "Tipaza", "nuits": 1, "highlights": ["Ruines romaines UNESCO", "Plage"] }, { "ville": "Cherchell", "nuits": 1, "highlights": ["Musée archéologique", "Ruines de Césarée"] }, { "ville": "Béjaïa", "nuits": 2, "highlights": ["Cap Carbon", "Gorges de Kherrata", "Plages de Kabylie"] }], "conseils_halal": "Restaurants de poissons frais et grillades halal toute la côte. Éviter juillet-août (surpeuplé).", "tags": ["Mer", "Côte", "Ruines"] }
+    {
+      "id": "rt1",
+      "titre": "Circuit Villes Impériales Nord",
+      "emoji": "🏰",
+      "duree": "7 jours",
+      "distance_km": 1200,
+      "difficulte": "Modéré",
+      "budget_estime_eur": "400-600€",
+      "etapes": [
+        {
+          "ville": "Alger",
+          "nuits": 2,
+          "highlights": [
+            "Casbah",
+            "Grande Mosquée",
+            "Jardin d'Essai"
+          ]
+        },
+        {
+          "ville": "Tlemcen",
+          "nuits": 2,
+          "highlights": [
+            "Grande Mosquée de Tlemcen",
+            "Parc de Lalla Setti",
+            "Mansourah"
+          ]
+        },
+        {
+          "ville": "Oran",
+          "nuits": 2,
+          "highlights": [
+            "Santa Cruz",
+            "Place du 1er Novembre",
+            "Casbah d'Oran"
+          ]
+        }
+      ],
+      "conseils_halal": "Toutes les villes sont 100% halal — restaurants, épiceries et boucheries certifiés partout",
+      "tags": [
+        "Culture",
+        "Historique",
+        "Nord"
+      ]
+    },
+    {
+      "id": "rt2",
+      "titre": "Grand Sud Saharien",
+      "emoji": "🐪",
+      "duree": "10 jours",
+      "distance_km": 2800,
+      "difficulte": "Aventureux",
+      "budget_estime_eur": "600-900€",
+      "etapes": [
+        {
+          "ville": "Alger",
+          "nuits": 1,
+          "highlights": [
+            "Départ"
+          ]
+        },
+        {
+          "ville": "Ghardaïa",
+          "nuits": 2,
+          "highlights": [
+            "Mosquée de Ghardaïa",
+            "Ksar des Ibadites",
+            "Marché berbère"
+          ]
+        },
+        {
+          "ville": "Tamanrasset",
+          "nuits": 3,
+          "highlights": [
+            "Hoggar",
+            "Assekrem",
+            "Coucher de soleil Sahara"
+          ]
+        },
+        {
+          "ville": "Djanet",
+          "nuits": 2,
+          "highlights": [
+            "Tassili N'Ajjer UNESCO",
+            "Art rupestre néolithique",
+            "Dunes de l'Erg"
+          ]
+        }
+      ],
+      "conseils_halal": "Emporter provisions halal pour les zones reculées. Eau en bouteille indispensable. Les communautés touareg sont musulmanes et accueillantes.",
+      "tags": [
+        "Sahara",
+        "Aventure",
+        "Hoggar"
+      ]
+    },
+    {
+      "id": "rt3",
+      "titre": "Côte Méditerranéenne Algérienne",
+      "emoji": "🌊",
+      "duree": "5 jours",
+      "distance_km": 600,
+      "difficulte": "Facile",
+      "budget_estime_eur": "300-450€",
+      "etapes": [
+        {
+          "ville": "Alger",
+          "nuits": 1,
+          "highlights": [
+            "Casbah",
+            "Corniche"
+          ]
+        },
+        {
+          "ville": "Tipaza",
+          "nuits": 1,
+          "highlights": [
+            "Ruines romaines UNESCO",
+            "Plage"
+          ]
+        },
+        {
+          "ville": "Cherchell",
+          "nuits": 1,
+          "highlights": [
+            "Musée archéologique",
+            "Ruines de Césarée"
+          ]
+        },
+        {
+          "ville": "Béjaïa",
+          "nuits": 2,
+          "highlights": [
+            "Cap Carbon",
+            "Gorges de Kherrata",
+            "Plages de Kabylie"
+          ]
+        }
+      ],
+      "conseils_halal": "Restaurants de poissons frais et grillades halal toute la côte. Éviter juillet-août (surpeuplé).",
+      "tags": [
+        "Mer",
+        "Côte",
+        "Ruines"
+      ]
+    }
   ],
   "voyages_par_type": {
-    "en_couple": { "emoji": "💑", "couleur": "#e91e8c", "intro": "Alger offre aux couples une escapade romantique hors des sentiers touristiques — coucher de soleil sur la Méditerranée depuis la Casbah, dîner dans un riad ottoman illuminé aux bougies et promenade sur la corniche au crépuscule.", "top_experiences": [{ "titre": "Dîner au Dar Zitoun", "details": "Riad du 18ème siècle, cour intérieure aux chandelles", "prix": "35€/pers" }, { "titre": "Coucher de soleil Mémorial du Martyr", "details": "Vue 360° sur la baie d'Alger", "prix": "Gratuit" }, { "titre": "Téléphérique nocturne", "details": "Alger illuminée vue du ciel", "prix": "2€/pers" }], "hotels_recommandes": ["Dar Sultan Casbah", "Hôtel El Djazair"], "conseils": "Réserver à l'avance les riads de la Casbah — peu de chambres disponibles. Tenue décente recommandée." },
-    "en_famille": { "emoji": "👨‍👩‍👧‍👦", "couleur": "#4CAF50", "intro": "La culture algérienne est profondément familiale. Alger accueille les familles avec une générosité légendaire — enfants adorés, repas partagés et activités pour tous les âges.", "top_experiences": [{ "titre": "Jardin d'Essai du Hamma", "details": "58 hectares de nature, parfait pour les enfants", "prix": "Gratuit" }, { "titre": "Plage de Sidi Fredj", "details": "Plage familiale avec sports nautiques", "prix": "Gratuit" }, { "titre": "Casbah Food Tour", "details": "Découvrir la cuisine algérienne en famille", "prix": "20€/adulte" }], "hotels_recommandes": ["Hôtel Sheraton Club des Pins", "Sofitel Alger"], "conseils": "Les Algériens adorent les enfants — attendez-vous à beaucoup d'attention positive envers vos enfants." },
-    "entre_amis": { "emoji": "👫", "couleur": "#9C27B0", "intro": "Alger avec des amis c'est les vrais restaurants populaires, la casbah by night et les plages algéroises qui n'existent pas dans les guides touristiques.", "top_experiences": [{ "titre": "Soirée Chaabi à la Casbah", "details": "Musique algéroise traditionnelle", "prix": "14€" }, { "titre": "Marché nocturne Bab El Oued", "details": "Ambiance populaire authentique", "prix": "Gratuit" }, { "titre": "Tour des snacks merguez", "details": "Les meilleurs sandwichs d'Alger", "prix": "4€" }], "conseils": "Respecter l'interdiction d'alcool dans les espaces publics. Les cafés populaires ferment à minuit." },
-    "voyage_solo": { "emoji": "🎒", "couleur": "#FF9800", "intro": "Alger solo c'est découvrir l'hospitalité algérienne dans toute sa spontanéité — invitations à dîner, guides improvisés et rencontres qui deviennent des amitiés.", "top_experiences": [{ "titre": "Se perdre dans la Casbah", "details": "Laisser les ruelles guider la découverte", "prix": "Gratuit" }, { "titre": "Café populaire place du 1er Mai", "details": "S'asseoir avec les Algérois", "prix": "0.50€" }, { "titre": "Randonnée Chréa (50km)", "details": "Forêt de cèdres à 1500m d'altitude", "prix": "5€" }], "conseil_securite": "Alger est sûre en journée. Informer quelqu'un de ses déplacements. Éviter les zones périphériques la nuit." },
-    "voyage_spirituel": { "emoji": "🕌", "couleur": "#2196F3", "intro": "Alger est une ville profondément musulmane depuis le 7ème siècle. Les mosquées ottomanes, les zaouïas soufies et la nouvelle Grande Mosquée offrent une expérience spirituelle incomparable.", "top_experiences": [{ "titre": "Prière à la Grande Mosquée d'Alger", "details": "3ème plus grande mosquée du monde, 120 000 fidèles", "prix": "Gratuit" }, { "titre": "Ziyara Sidi Abderrahmane", "details": "Saint patron d'Alger, Casbah", "prix": "Gratuit" }, { "titre": "Mosquée Djamaa El Kebir 11ème siècle", "details": "Colonnes romaines, chêdre millénaire", "prix": "Gratuit" }], "conseil_pratique": "Les 5 appels à la prière scandent la vie algéroise. Horaires de prière respectés dans toute la ville." }
+    "en_couple": {
+      "emoji": "💑",
+      "couleur": "#e91e8c",
+      "intro": "Alger offre aux couples une escapade romantique hors des sentiers touristiques — coucher de soleil sur la Méditerranée depuis la Casbah, dîner dans un riad ottoman illuminé aux bougies et promenade sur la corniche au crépuscule.",
+      "top_experiences": [
+        {
+          "titre": "Dîner au Dar Zitoun",
+          "details": "Riad du 18ème siècle, cour intérieure aux chandelles",
+          "prix": "35€/pers"
+        },
+        {
+          "titre": "Coucher de soleil Mémorial du Martyr",
+          "details": "Vue 360° sur la baie d'Alger",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Téléphérique nocturne",
+          "details": "Alger illuminée vue du ciel",
+          "prix": "2€/pers"
+        }
+      ],
+      "hotels_recommandes": [
+        "Dar Sultan Casbah",
+        "Hôtel El Djazair"
+      ],
+      "conseils": "Réserver à l'avance les riads de la Casbah — peu de chambres disponibles. Tenue décente recommandée."
+    },
+    "en_famille": {
+      "emoji": "👨‍👩‍👧‍👦",
+      "couleur": "#4CAF50",
+      "intro": "La culture algérienne est profondément familiale. Alger accueille les familles avec une générosité légendaire — enfants adorés, repas partagés et activités pour tous les âges.",
+      "top_experiences": [
+        {
+          "titre": "Jardin d'Essai du Hamma",
+          "details": "58 hectares de nature, parfait pour les enfants",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Plage de Sidi Fredj",
+          "details": "Plage familiale avec sports nautiques",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Casbah Food Tour",
+          "details": "Découvrir la cuisine algérienne en famille",
+          "prix": "20€/adulte"
+        }
+      ],
+      "hotels_recommandes": [
+        "Hôtel Sheraton Club des Pins",
+        "Sofitel Alger"
+      ],
+      "conseils": "Les Algériens adorent les enfants — attendez-vous à beaucoup d'attention positive envers vos enfants."
+    },
+    "entre_amis": {
+      "emoji": "👫",
+      "couleur": "#9C27B0",
+      "intro": "Alger avec des amis c'est les vrais restaurants populaires, la casbah by night et les plages algéroises qui n'existent pas dans les guides touristiques.",
+      "top_experiences": [
+        {
+          "titre": "Soirée Chaabi à la Casbah",
+          "details": "Musique algéroise traditionnelle",
+          "prix": "14€"
+        },
+        {
+          "titre": "Marché nocturne Bab El Oued",
+          "details": "Ambiance populaire authentique",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Tour des snacks merguez",
+          "details": "Les meilleurs sandwichs d'Alger",
+          "prix": "4€"
+        }
+      ],
+      "conseils": "Respecter l'interdiction d'alcool dans les espaces publics. Les cafés populaires ferment à minuit."
+    },
+    "voyage_solo": {
+      "emoji": "🎒",
+      "couleur": "#FF9800",
+      "intro": "Alger solo c'est découvrir l'hospitalité algérienne dans toute sa spontanéité — invitations à dîner, guides improvisés et rencontres qui deviennent des amitiés.",
+      "top_experiences": [
+        {
+          "titre": "Se perdre dans la Casbah",
+          "details": "Laisser les ruelles guider la découverte",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Café populaire place du 1er Mai",
+          "details": "S'asseoir avec les Algérois",
+          "prix": "0.50€"
+        },
+        {
+          "titre": "Randonnée Chréa (50km)",
+          "details": "Forêt de cèdres à 1500m d'altitude",
+          "prix": "5€"
+        }
+      ],
+      "conseil_securite": "Alger est sûre en journée. Informer quelqu'un de ses déplacements. Éviter les zones périphériques la nuit."
+    },
+    "voyage_spirituel": {
+      "emoji": "🕌",
+      "couleur": "#2196F3",
+      "intro": "Alger est une ville profondément musulmane depuis le 7ème siècle. Les mosquées ottomanes, les zaouïas soufies et la nouvelle Grande Mosquée offrent une expérience spirituelle incomparable.",
+      "top_experiences": [
+        {
+          "titre": "Prière à la Grande Mosquée d'Alger",
+          "details": "3ème plus grande mosquée du monde, 120 000 fidèles",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Ziyara Sidi Abderrahmane",
+          "details": "Saint patron d'Alger, Casbah",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Mosquée Djamaa El Kebir 11ème siècle",
+          "details": "Colonnes romaines, chêdre millénaire",
+          "prix": "Gratuit"
+        }
+      ],
+      "conseil_pratique": "Les 5 appels à la prière scandent la vie algéroise. Horaires de prière respectés dans toute la ville."
+    }
   },
   "boucheries": [
-    { "id": "b1", "nom": "Boucherie El Amine", "adresse": "Rue Belouizdad, Belcourt", "quartier": "Belcourt", "halal_certifie": true, "produits": ["Agneau", "Veau", "Poulet fermier", "Mergez maison"], "note": 4.7, "horaires": "6h-19h (fermé vendredi matin)" },
-    { "id": "b2", "nom": "Boucherie de la Casbah", "adresse": "Casbah, Rue de la Casbah", "quartier": "Casbah", "halal_certifie": true, "produits": ["Agneau du Hoggar", "Tête d'agneau", "Abats"], "note": 4.5, "horaires": "6h-18h" },
-    { "id": "b3", "nom": "Halal Prestige Hussein Dey", "adresse": "Hussein Dey, Alger", "quartier": "Hussein Dey", "halal_certifie": true, "produits": ["Boeuf importé", "Agneau local", "Poulet Label"], "note": 4.4, "horaires": "7h-20h" },
-    { "id": "b4", "nom": "Boucherie Ben Youcef", "adresse": "Kouba, Alger Est", "quartier": "Kouba", "halal_certifie": true, "produits": ["Agneau fermier", "Veau de lait", "Merguez épicées"], "note": 4.6, "horaires": "6h30-19h30" },
-    { "id": "b5", "nom": "Grande Boucherie El Harrach", "adresse": "El Harrach, Alger Est", "quartier": "El Harrach", "halal_certifie": true, "produits": ["Agneau entier", "Boeuf local", "Poulet fermier", "Caille"], "note": 4.3, "horaires": "5h30-18h30" }
+    {
+      "id": "b1",
+      "nom": "Boucherie El Amine",
+      "adresse": "Rue Belouizdad, Belcourt",
+      "quartier": "Belcourt",
+      "halal_certifie": true,
+      "produits": [
+        "Agneau",
+        "Veau",
+        "Poulet fermier",
+        "Mergez maison"
+      ],
+      "note": 4.7,
+      "horaires": "6h-19h (fermé vendredi matin)"
+    },
+    {
+      "id": "b2",
+      "nom": "Boucherie de la Casbah",
+      "adresse": "Casbah, Rue de la Casbah",
+      "quartier": "Casbah",
+      "halal_certifie": true,
+      "produits": [
+        "Agneau du Hoggar",
+        "Tête d'agneau",
+        "Abats"
+      ],
+      "note": 4.5,
+      "horaires": "6h-18h"
+    },
+    {
+      "id": "b3",
+      "nom": "Halal Prestige Hussein Dey",
+      "adresse": "Hussein Dey, Alger",
+      "quartier": "Hussein Dey",
+      "halal_certifie": true,
+      "produits": [
+        "Boeuf importé",
+        "Agneau local",
+        "Poulet Label"
+      ],
+      "note": 4.4,
+      "horaires": "7h-20h"
+    },
+    {
+      "id": "b4",
+      "nom": "Boucherie Ben Youcef",
+      "adresse": "Kouba, Alger Est",
+      "quartier": "Kouba",
+      "halal_certifie": true,
+      "produits": [
+        "Agneau fermier",
+        "Veau de lait",
+        "Merguez épicées"
+      ],
+      "note": 4.6,
+      "horaires": "6h30-19h30"
+    },
+    {
+      "id": "b5",
+      "nom": "Grande Boucherie El Harrach",
+      "adresse": "El Harrach, Alger Est",
+      "quartier": "El Harrach",
+      "halal_certifie": true,
+      "produits": [
+        "Agneau entier",
+        "Boeuf local",
+        "Poulet fermier",
+        "Caille"
+      ],
+      "note": 4.3,
+      "horaires": "5h30-18h30"
+    }
   ],
   "boulangeries": [
-    { "id": "bo1", "nom": "Boulangerie El Khobz", "adresse": "Bab El Oued, Alger", "quartier": "Bab El Oued", "description": "Pain traditionnel algérien au four à bois depuis 1952 — khobz edar et baguette algérienne.", "specialites": ["Khobz edar", "Galette", "Pain de seigle"], "prix": "20-50 DZD", "horaires": "5h-20h", "note": 4.7 },
-    { "id": "bo2", "nom": "Msemmen de la Casbah", "adresse": "Casbah basse, Alger", "quartier": "Casbah", "description": "Msemmen feuilleté maison préparé à la main depuis le matin — tradition familiale de la Casbah.", "specialites": ["Msemmen", "Harcha semoule", "Mhajeb farci"], "prix": "50-100 DZD", "horaires": "6h-14h", "note": 4.8 },
-    { "id": "bo3", "nom": "Pâtisserie-Boulangerie Beni Mezghena", "adresse": "Hydra, Alger Ouest", "quartier": "Hydra", "description": "Pâtisseries algériennes et orientales haut de gamme — cornes de gazelle, baklava, makroud premium.", "specialites": ["Cornes de gazelle", "Baklava", "Ghriba"], "prix": "1000-3000 DZD/kg", "horaires": "8h-22h", "note": 4.6 },
-    { "id": "bo4", "nom": "Boulangerie Moderne Kouba", "adresse": "Kouba, Alger", "quartier": "Kouba", "specialites": ["Baguette algérienne", "Pain de campagne", "Croissant halal"], "prix": "30-80 DZD", "horaires": "5h30-21h", "note": 4.3 },
-    { "id": "bo5", "nom": "Four à bois Casbah", "adresse": "Casbah haute, Alger", "quartier": "Casbah haute", "description": "Le dernier four à bois artisanal de la Casbah, cuisson de 100 kg de pain par fournée depuis 1930.", "specialites": ["Khobz traditionnel", "Pain de fête", "Ftir au beurre"], "prix": "25-60 DZD", "horaires": "5h-13h", "note": 4.9 }
+    {
+      "id": "bo1",
+      "nom": "Boulangerie El Khobz",
+      "adresse": "Bab El Oued, Alger",
+      "quartier": "Bab El Oued",
+      "description": "Pain traditionnel algérien au four à bois depuis 1952 — khobz edar et baguette algérienne.",
+      "specialites": [
+        "Khobz edar",
+        "Galette",
+        "Pain de seigle"
+      ],
+      "prix": "20-50 DZD",
+      "horaires": "5h-20h",
+      "note": 4.7
+    },
+    {
+      "id": "bo2",
+      "nom": "Msemmen de la Casbah",
+      "adresse": "Casbah basse, Alger",
+      "quartier": "Casbah",
+      "description": "Msemmen feuilleté maison préparé à la main depuis le matin — tradition familiale de la Casbah.",
+      "specialites": [
+        "Msemmen",
+        "Harcha semoule",
+        "Mhajeb farci"
+      ],
+      "prix": "50-100 DZD",
+      "horaires": "6h-14h",
+      "note": 4.8
+    },
+    {
+      "id": "bo3",
+      "nom": "Pâtisserie-Boulangerie Beni Mezghena",
+      "adresse": "Hydra, Alger Ouest",
+      "quartier": "Hydra",
+      "description": "Pâtisseries algériennes et orientales haut de gamme — cornes de gazelle, baklava, makroud premium.",
+      "specialites": [
+        "Cornes de gazelle",
+        "Baklava",
+        "Ghriba"
+      ],
+      "prix": "1000-3000 DZD/kg",
+      "horaires": "8h-22h",
+      "note": 4.6
+    },
+    {
+      "id": "bo4",
+      "nom": "Boulangerie Moderne Kouba",
+      "adresse": "Kouba, Alger",
+      "quartier": "Kouba",
+      "specialites": [
+        "Baguette algérienne",
+        "Pain de campagne",
+        "Croissant halal"
+      ],
+      "prix": "30-80 DZD",
+      "horaires": "5h30-21h",
+      "note": 4.3
+    },
+    {
+      "id": "bo5",
+      "nom": "Four à bois Casbah",
+      "adresse": "Casbah haute, Alger",
+      "quartier": "Casbah haute",
+      "description": "Le dernier four à bois artisanal de la Casbah, cuisson de 100 kg de pain par fournée depuis 1930.",
+      "specialites": [
+        "Khobz traditionnel",
+        "Pain de fête",
+        "Ftir au beurre"
+      ],
+      "prix": "25-60 DZD",
+      "horaires": "5h-13h",
+      "note": 4.9
+    }
   ],
-  "articles_lies": ["guide-halal-algerie", "casbah-alger-guide", "cuisine-algerienne"],
-  "villes_proches": ["tunis", "casablanca", "marrakech"],
+  "articles_lies": [
+    "guide-halal-algerie",
+    "casbah-alger-guide",
+    "cuisine-algerienne"
+  ],
+  "villes_proches": [
+    "tunis",
+    "casablanca",
+    "marrakech"
+  ],
   "destinations_combiner": [
-    { "ville": "Tlemcen", "distance_km": 510, "raison": "Capitale culturelle de l'Algérie, mosquée historique et musique andalouse" },
-    { "ville": "Ghardaïa", "distance_km": 600, "raison": "Architecture ibadite unique, marché berbère millénaire" },
-    { "ville": "Oran", "distance_km": 360, "raison": "2ème ville d'Algérie, mer et culture raï" }
+    {
+      "ville": "Tlemcen",
+      "distance_km": 510,
+      "raison": "Capitale culturelle de l'Algérie, mosquée historique et musique andalouse"
+    },
+    {
+      "ville": "Ghardaïa",
+      "distance_km": 600,
+      "raison": "Architecture ibadite unique, marché berbère millénaire"
+    },
+    {
+      "ville": "Oran",
+      "distance_km": 360,
+      "raison": "2ème ville d'Algérie, mer et culture raï"
+    }
   ],
-  "conseils_halal": "Alger est naturellement 100% halal — inutile de chercher des certifications. Tout est halal par défaut. La seule difficulté est l'alcool dans quelques hôtels internationaux — préciser 'chambre sans minibar' à la réservation."
+  "conseils_halal": "Alger est naturellement 100% halal — inutile de chercher des certifications. Tout est halal par défaut. La seule difficulté est l'alcool dans quelques hôtels internationaux — préciser 'chambre sans minibar' à la réservation.",
+  "codeISO": "DZ"
 }

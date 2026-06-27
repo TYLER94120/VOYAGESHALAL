@@ -6,7 +6,10 @@
   "pays_slug": "maroc",
   "drapeau": "🇲🇦",
   "region": "Afrique du Nord",
-  "coordonnees": { "lat": 35.7595, "lng": -5.8340 },
+  "coordonnees": {
+    "lat": 35.7595,
+    "lng": -5.834
+  },
   "score_halal": 5,
   "score_securite": 4,
   "score_famille": 4,
@@ -30,44 +33,551 @@
     "transport": "Taxi, bus, ferries vers Espagne"
   },
   "restaurants": [
-    { "id": "r-001", "nom": "El Morocco Club", "adresse": "Place du Grand Socco, Médina", "cuisine": "Marocaine gastronomique", "specialite": "Tajine royal et pastilla", "certification": "Halal", "prix_moyen": "200–400 MAD", "note": 4.8 },
-    { "id": "r-002", "nom": "Restaurant Saveur de Poisson", "adresse": "2 Escalier Waller, Médina", "cuisine": "Poissons et fruits de mer halal", "specialite": "Mérou grillé sauce chermoula", "certification": "Halal", "prix_moyen": "150–250 MAD", "note": 4.9 },
-    { "id": "r-003", "nom": "Dar Nour", "adresse": "20 Rue Gourna, Médina", "cuisine": "Marocaine & fusion", "specialite": "Bastilla au poisson", "certification": "Halal", "prix_moyen": "180–320 MAD", "note": 4.7 },
-    { "id": "r-004", "nom": "Le Nabab", "adresse": "Place du 9 Avril, Médina", "cuisine": "Marocaine traditionnelle", "specialite": "Couscous aux 7 légumes", "certification": "Halal", "prix_moyen": "100–200 MAD", "note": 4.5 },
-    { "id": "r-005", "nom": "Restaurant Rif", "adresse": "Ave Mohammed VI, Ville Nouvelle", "cuisine": "Marocaine & grill", "specialite": "Brochettes d'agneau et merguez", "certification": "Halal", "prix_moyen": "80–160 MAD", "note": 4.3 },
-    { "id": "r-006", "nom": "Salon Bleu", "adresse": "Médina, vue sur détroit", "cuisine": "Marocaine légère", "specialite": "Sandwichs et salades halal", "certification": "Halal", "prix_moyen": "60–120 MAD", "note": 4.4 },
-    { "id": "r-007", "nom": "Atlas Asma", "adresse": "Rue de Fès, Tanger", "cuisine": "Marocaine & kebab", "specialite": "Kefta et harira", "certification": "Halal", "prix_moyen": "50–100 MAD", "note": 4.2 },
-    { "id": "r-008", "nom": "Restaurant Populaire Saaada", "adresse": "Escalier Siaghine, Médina", "cuisine": "Populaire marocaine", "specialite": "Msemen, beghrir, café", "certification": "Halal", "prix_moyen": "30–70 MAD", "note": 4.5 },
-    { "id": "r-009", "nom": "Le Détroit", "adresse": "Front de mer, Tanger", "cuisine": "Méditerranéenne halal", "specialite": "Paella halal aux fruits de mer", "certification": "Halal", "prix_moyen": "120–250 MAD", "note": 4.4 },
-    { "id": "r-010", "nom": "Casa Pepe Halal", "adresse": "Port de Tanger", "cuisine": "Fruits de mer halal", "specialite": "Daurade royale grillée", "certification": "Halal", "prix_moyen": "100–200 MAD", "note": 4.3 },
-    { "id": "r-011", "nom": "Snack Medina Fast", "adresse": "Rue Siaghine, Médina", "cuisine": "Street food halal", "specialite": "Brochettes, sandwichs", "certification": "Halal", "prix_moyen": "20–60 MAD", "note": 4.1 },
-    { "id": "r-012", "nom": "La Grenouille", "adresse": "Rue Rembrandt, Ville Nouvelle", "cuisine": "Franco-marocaine", "specialite": "Tajine de poulet aux olives", "certification": "Halal", "prix_moyen": "100–200 MAD", "note": 4.3 },
-    { "id": "r-013", "nom": "Hôtel Continental Restaurant", "adresse": "36 Dar Baroud, Médina", "cuisine": "Internationale halal", "specialite": "Buffet marocain traditionnel", "certification": "Halal", "prix_moyen": "150–280 MAD", "note": 4.6 },
-    { "id": "r-014", "nom": "Pizzeria Napolitaine Halal", "adresse": "Ave des FAR, Tanger", "cuisine": "Italienne halal", "specialite": "Pizza au poulet et légumes", "certification": "Halal certifié", "prix_moyen": "70–130 MAD", "note": 4.0 },
-    { "id": "r-015", "nom": "Restaurant Guitta", "adresse": "Rue Ibn Batouta, Ville Nouvelle", "cuisine": "Marocaine & grill", "specialite": "Poisson de l'Atlantique grillé", "certification": "Halal", "prix_moyen": "80–160 MAD", "note": 4.2 }
+    {
+      "id": "r-001",
+      "nom": "El Morocco Club",
+      "adresse": "Place du Grand Socco, Médina",
+      "cuisine": "Marocaine gastronomique",
+      "specialite": "Tajine royal et pastilla",
+      "certification": "Halal",
+      "prix_moyen": "200–400 MAD",
+      "note": 4.8,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 576,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-002",
+      "nom": "Restaurant Saveur de Poisson",
+      "adresse": "2 Escalier Waller, Médina",
+      "cuisine": "Poissons et fruits de mer halal",
+      "specialite": "Mérou grillé sauce chermoula",
+      "certification": "Halal",
+      "prix_moyen": "150–250 MAD",
+      "note": 4.9,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 588,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-003",
+      "nom": "Dar Nour",
+      "adresse": "20 Rue Gourna, Médina",
+      "cuisine": "Marocaine & fusion",
+      "specialite": "Bastilla au poisson",
+      "certification": "Halal",
+      "prix_moyen": "180–320 MAD",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-004",
+      "nom": "Le Nabab",
+      "adresse": "Place du 9 Avril, Médina",
+      "cuisine": "Marocaine traditionnelle",
+      "specialite": "Couscous aux 7 légumes",
+      "certification": "Halal",
+      "prix_moyen": "100–200 MAD",
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-005",
+      "nom": "Restaurant Rif",
+      "adresse": "Ave Mohammed VI, Ville Nouvelle",
+      "cuisine": "Marocaine & grill",
+      "specialite": "Brochettes d'agneau et merguez",
+      "certification": "Halal",
+      "prix_moyen": "80–160 MAD",
+      "note": 4.3,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 516,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-006",
+      "nom": "Salon Bleu",
+      "adresse": "Médina, vue sur détroit",
+      "cuisine": "Marocaine légère",
+      "specialite": "Sandwichs et salades halal",
+      "certification": "Halal",
+      "prix_moyen": "60–120 MAD",
+      "note": 4.4,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 528,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-007",
+      "nom": "Atlas Asma",
+      "adresse": "Rue de Fès, Tanger",
+      "cuisine": "Marocaine & kebab",
+      "specialite": "Kefta et harira",
+      "certification": "Halal",
+      "prix_moyen": "50–100 MAD",
+      "note": 4.2,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 504,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-008",
+      "nom": "Restaurant Populaire Saaada",
+      "adresse": "Escalier Siaghine, Médina",
+      "cuisine": "Populaire marocaine",
+      "specialite": "Msemen, beghrir, café",
+      "certification": "Halal",
+      "prix_moyen": "30–70 MAD",
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-009",
+      "nom": "Le Détroit",
+      "adresse": "Front de mer, Tanger",
+      "cuisine": "Méditerranéenne halal",
+      "specialite": "Paella halal aux fruits de mer",
+      "certification": "Halal",
+      "prix_moyen": "120–250 MAD",
+      "note": 4.4,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 528,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-010",
+      "nom": "Casa Pepe Halal",
+      "adresse": "Port de Tanger",
+      "cuisine": "Fruits de mer halal",
+      "specialite": "Daurade royale grillée",
+      "certification": "Halal",
+      "prix_moyen": "100–200 MAD",
+      "note": 4.3,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 516,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-011",
+      "nom": "Snack Medina Fast",
+      "adresse": "Rue Siaghine, Médina",
+      "cuisine": "Street food halal",
+      "specialite": "Brochettes, sandwichs",
+      "certification": "Halal",
+      "prix_moyen": "20–60 MAD",
+      "note": 4.1,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 492,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-012",
+      "nom": "La Grenouille",
+      "adresse": "Rue Rembrandt, Ville Nouvelle",
+      "cuisine": "Franco-marocaine",
+      "specialite": "Tajine de poulet aux olives",
+      "certification": "Halal",
+      "prix_moyen": "100–200 MAD",
+      "note": 4.3,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 516,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-013",
+      "nom": "Hôtel Continental Restaurant",
+      "adresse": "36 Dar Baroud, Médina",
+      "cuisine": "Internationale halal",
+      "specialite": "Buffet marocain traditionnel",
+      "certification": "Halal",
+      "prix_moyen": "150–280 MAD",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-014",
+      "nom": "Pizzeria Napolitaine Halal",
+      "adresse": "Ave des FAR, Tanger",
+      "cuisine": "Italienne halal",
+      "specialite": "Pizza au poulet et légumes",
+      "certification": "Halal certifié",
+      "prix_moyen": "70–130 MAD",
+      "note": 4.0,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 480,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal certifié"
+      }
+    },
+    {
+      "id": "r-015",
+      "nom": "Restaurant Guitta",
+      "adresse": "Rue Ibn Batouta, Ville Nouvelle",
+      "cuisine": "Marocaine & grill",
+      "specialite": "Poisson de l'Atlantique grillé",
+      "certification": "Halal",
+      "prix_moyen": "80–160 MAD",
+      "note": 4.2,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 504,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    }
   ],
   "mosquees": [
-    { "id": "m-001", "nom": "Grande Mosquée de Tanger", "adresse": "Médina, Place de la Kasbah", "type": "Grande mosquée", "capacite": 5000, "annee_construction": 1684, "style_architectural": "Mauresque", "note": 4.8 },
-    { "id": "m-002", "nom": "Mosquée Sidi Bou Abib", "adresse": "Grand Socco, Tanger", "type": "Mosquée historique", "capacite": 2000, "annee_construction": 1917, "style_architectural": "Mauresque-Art déco", "note": 4.7 },
-    { "id": "m-003", "nom": "Mosquée Mohammed V", "adresse": "Ville Nouvelle, Tanger", "type": "Mosquée moderne", "capacite": 3000, "annee_construction": 1976, "style_architectural": "Marocain moderne", "note": 4.5 },
-    { "id": "m-004", "nom": "Mosquée de la Kasbah", "adresse": "Place de la Kasbah, Médina", "type": "Historique", "capacite": 1500, "annee_construction": "XVIIe siècle", "style_architectural": "Mauresque", "note": 4.9 },
-    { "id": "m-005", "nom": "Mosquée Aïn Khayam", "adresse": "Quartier Malabata", "type": "Mosquée de quartier", "capacite": 800, "annee_construction": 1995, "style_architectural": "Marocain contemporain", "note": 4.3 }
+    {
+      "id": "m-001",
+      "nom": "Grande Mosquée de Tanger",
+      "adresse": "Médina, Place de la Kasbah",
+      "type": "Grande mosquée",
+      "capacite": 5000,
+      "annee_construction": 1684,
+      "style_architectural": "Mauresque",
+      "note": 4.8
+    },
+    {
+      "id": "m-002",
+      "nom": "Mosquée Sidi Bou Abib",
+      "adresse": "Grand Socco, Tanger",
+      "type": "Mosquée historique",
+      "capacite": 2000,
+      "annee_construction": 1917,
+      "style_architectural": "Mauresque-Art déco",
+      "note": 4.7
+    },
+    {
+      "id": "m-003",
+      "nom": "Mosquée Mohammed V",
+      "adresse": "Ville Nouvelle, Tanger",
+      "type": "Mosquée moderne",
+      "capacite": 3000,
+      "annee_construction": 1976,
+      "style_architectural": "Marocain moderne",
+      "note": 4.5
+    },
+    {
+      "id": "m-004",
+      "nom": "Mosquée de la Kasbah",
+      "adresse": "Place de la Kasbah, Médina",
+      "type": "Historique",
+      "capacite": 1500,
+      "annee_construction": "XVIIe siècle",
+      "style_architectural": "Mauresque",
+      "note": 4.9
+    },
+    {
+      "id": "m-005",
+      "nom": "Mosquée Aïn Khayam",
+      "adresse": "Quartier Malabata",
+      "type": "Mosquée de quartier",
+      "capacite": 800,
+      "annee_construction": 1995,
+      "style_architectural": "Marocain contemporain",
+      "note": 4.3
+    }
   ],
   "hotels": [
-    { "id": "h-001", "nom": "El Minzah Hotel", "adresse": "85 Rue de la Liberté", "categorie": "5 étoiles historique", "prix_nuit": "150–350 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.7 },
-    { "id": "h-002", "nom": "Hôtel Continental", "adresse": "36 Dar Baroud, Médina", "categorie": "4 étoiles historique", "prix_nuit": "80–180 €", "halal_friendly": true, "sans_alcool": true, "piscine": false, "note": 4.5 },
-    { "id": "h-003", "nom": "Riad Tanja", "adresse": "Médina de Tanger", "categorie": "Boutique 4 étoiles", "prix_nuit": "100–220 €", "halal_friendly": true, "sans_alcool": true, "piscine": false, "note": 4.6 },
-    { "id": "h-004", "nom": "Movenpick Tanger", "adresse": "Ave Pasteur", "categorie": "5 étoiles", "prix_nuit": "120–280 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.4 },
-    { "id": "h-005", "nom": "Dawliz Hôtel & Spa", "adresse": "Rue de Hollande", "categorie": "4 étoiles", "prix_nuit": "80–150 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.2 }
+    {
+      "id": "h-001",
+      "nom": "El Minzah Hotel",
+      "adresse": "85 Rue de la Liberté",
+      "categorie": "5 étoiles historique",
+      "prix_nuit": "150–350 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.7,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "h-002",
+      "nom": "Hôtel Continental",
+      "adresse": "36 Dar Baroud, Médina",
+      "categorie": "4 étoiles historique",
+      "prix_nuit": "80–180 €",
+      "halal_friendly": true,
+      "sans_alcool": true,
+      "piscine": false,
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "h-003",
+      "nom": "Riad Tanja",
+      "adresse": "Médina de Tanger",
+      "categorie": "Boutique 4 étoiles",
+      "prix_nuit": "100–220 €",
+      "halal_friendly": true,
+      "sans_alcool": true,
+      "piscine": false,
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "h-004",
+      "nom": "Movenpick Tanger",
+      "adresse": "Ave Pasteur",
+      "categorie": "5 étoiles",
+      "prix_nuit": "120–280 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.4,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 528,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "h-005",
+      "nom": "Dawliz Hôtel & Spa",
+      "adresse": "Rue de Hollande",
+      "categorie": "4 étoiles",
+      "prix_nuit": "80–150 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.2,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 504,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ONSSA Halal"
+      }
+    }
   ],
   "activites": [
-    { "id": "a-001", "nom": "Kasbah et musée de la Kasbah", "type": "Culture & histoire", "duree": "2h", "prix": "20 MAD", "note": 4.7 },
-    { "id": "a-002", "nom": "Cap Spartel et Grottes d'Hercule", "type": "Nature", "duree": "3h", "prix": "Accès libre", "note": 4.8 },
-    { "id": "a-003", "nom": "Médina de Tanger", "type": "Exploration urbaine", "duree": "2h", "prix": "Gratuit", "note": 4.6 },
-    { "id": "a-004", "nom": "Musée de la Fondation Lorin", "type": "Art & culture", "duree": "1h", "prix": "Donation suggérée", "note": 4.3 },
-    { "id": "a-005", "nom": "Plage de Tanger (Corniche)", "type": "Plage", "duree": "Journée", "prix": "Gratuit", "note": 4.2 },
-    { "id": "a-006", "nom": "Détroit de Gibraltar (vue)", "type": "Point de vue", "duree": "1h", "prix": "Gratuit", "note": 4.7 },
-    { "id": "a-007", "nom": "Grand Socco et Petit Socco", "type": "Shopping & culture", "duree": "1h30", "prix": "Gratuit", "note": 4.5 },
-    { "id": "a-008", "nom": "Excursion à Asilah (50 km)", "type": "Excursion", "duree": "Journée", "prix": "30–60 MAD bus", "note": 4.8 }
-  ]
+    {
+      "id": "a-001",
+      "nom": "Kasbah et musée de la Kasbah",
+      "type": "Culture & histoire",
+      "duree": "2h",
+      "prix": "20 MAD",
+      "note": 4.7
+    },
+    {
+      "id": "a-002",
+      "nom": "Cap Spartel et Grottes d'Hercule",
+      "type": "Nature",
+      "duree": "3h",
+      "prix": "Accès libre",
+      "note": 4.8
+    },
+    {
+      "id": "a-003",
+      "nom": "Médina de Tanger",
+      "type": "Exploration urbaine",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "note": 4.6
+    },
+    {
+      "id": "a-004",
+      "nom": "Musée de la Fondation Lorin",
+      "type": "Art & culture",
+      "duree": "1h",
+      "prix": "Donation suggérée",
+      "note": 4.3
+    },
+    {
+      "id": "a-005",
+      "nom": "Plage de Tanger (Corniche)",
+      "type": "Plage",
+      "duree": "Journée",
+      "prix": "Gratuit",
+      "note": 4.2
+    },
+    {
+      "id": "a-006",
+      "nom": "Détroit de Gibraltar (vue)",
+      "type": "Point de vue",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "note": 4.7
+    },
+    {
+      "id": "a-007",
+      "nom": "Grand Socco et Petit Socco",
+      "type": "Shopping & culture",
+      "duree": "1h30",
+      "prix": "Gratuit",
+      "note": 4.5
+    },
+    {
+      "id": "a-008",
+      "nom": "Excursion à Asilah (50 km)",
+      "type": "Excursion",
+      "duree": "Journée",
+      "prix": "30–60 MAD bus",
+      "note": 4.8
+    }
+  ],
+  "codeISO": "MA"
 }

@@ -3,18 +3,34 @@ export interface VilleCoordonnees {
   lng: number
 }
 
+export interface HalalScore {
+  global: number
+  sourceViande: number
+  certifie: boolean
+  organisationCertification?: string
+  sansAlcool: boolean
+  proprietaireMusulman: boolean
+  avisMusulmans: number
+  derniereVerification: string
+  badge: string
+}
+
 export interface VilleRestaurant {
   id: string
   nom: string
   cuisine: string
   adresse: string
-  halal_certifie: boolean
-  sans_alcool: boolean
+  halal_certifie?: boolean
+  sans_alcool?: boolean
   note: number
   avis_count?: number
   fourchette_prix?: string
+  prix_moyen?: string
   horaires?: string
+  specialite?: string
   specialites?: string[]
+  ouvertSuhoor?: boolean
+  halalScore?: HalalScore
 }
 
 export interface VilleMosquee {
@@ -41,6 +57,7 @@ export interface VilleHotel {
   avis_count?: number
   prix_nuit_min?: number
   devise?: string
+  halalScore?: HalalScore
 }
 
 export interface VilleActivite {
@@ -76,6 +93,7 @@ export interface Ville {
   nom: string
   pays: string
   pays_slug: string
+  codeISO?: string
   region: string
   coordonnees: VilleCoordonnees
   score_halal: number

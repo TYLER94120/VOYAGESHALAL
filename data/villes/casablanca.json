@@ -4,14 +4,22 @@
   "pays": "Maroc",
   "pays_slug": "maroc",
   "region": "Afrique du Nord",
-  "coordonnees": { "lat": 33.5731, "lng": -7.5898 },
+  "coordonnees": {
+    "lat": 33.5731,
+    "lng": -7.5898
+  },
   "score_halal": 5,
   "description": "Métropole économique du Maroc, Casablanca allie modernité et tradition islamique, avec la majestueuse Mosquée Hassan II dominant l'Atlantique.",
   "image_hero": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1600&q=85",
   "image_alt": "Mosquée Hassan II de Casablanca au coucher du soleil",
   "meta_title": "Casablanca Halal — Restaurants, Mosquées & Guide Pratique | Voyages Halal",
   "meta_description": "Guide complet de Casablanca halal : restaurants certifiés, mosquée Hassan II, hôtels halal-friendly.",
-  "statistiques": { "mosquees": 1000, "restaurants_halal": 2500, "hotels_halal": 45, "habitants_musulmans_pct": 99 },
+  "statistiques": {
+    "mosquees": 1000,
+    "restaurants_halal": 2500,
+    "hotels_halal": 45,
+    "habitants_musulmans_pct": 99
+  },
   "infos_pratiques": {
     "langue": "Arabe, Français, Darija",
     "monnaie": "Dirham marocain (MAD) — 1€ ≈ 10,8 MAD",
@@ -23,38 +31,380 @@
     "securite": "Très sûre pour les touristes"
   },
   "restaurants": [
-    { "id": "r1", "nom": "La Sqala", "cuisine": "Marocaine traditionnelle", "adresse": "Boulevard des Almohades, Ancienne Médina", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 3200, "fourchette_prix": "150–300 MAD", "horaires": "12h–23h", "specialites": ["Tajine agneau aux pruneaux", "Pastilla au poulet", "Couscous royal"] },
-    { "id": "r2", "nom": "Le Cabestan", "cuisine": "Méditerranéenne & Marocaine", "adresse": "90 Boulevard de la Corniche", "halal_certifie": true, "sans_alcool": false, "note": 4.4, "avis_count": 1800, "fourchette_prix": "250–500 MAD", "horaires": "12h–15h, 19h–23h", "specialites": ["Poisson grillé", "Brochettes crevettes", "Tagine de la mer"] },
-    { "id": "r3", "nom": "Brasserie de l'Omnia", "cuisine": "Française & Marocaine", "adresse": "Place Mohammed V", "halal_certifie": true, "sans_alcool": true, "note": 4.3, "avis_count": 950, "fourchette_prix": "200–400 MAD", "horaires": "7h–23h", "specialites": ["Semoule aux légumes", "Mechoui", "Crème brûlée à l'orange"] },
-    { "id": "r4", "nom": "Dar Roumana", "cuisine": "Marocaine gastronomique", "adresse": "16 Rue Ibn Rachiq, Médina", "halal_certifie": true, "sans_alcool": true, "note": 4.7, "avis_count": 620, "fourchette_prix": "300–600 MAD", "horaires": "12h–15h, 19h–22h30", "specialites": ["Bastilla aux fruits de mer", "Tajine de pigeon", "Chebakia"] }
+    {
+      "id": "r1",
+      "nom": "La Sqala",
+      "cuisine": "Marocaine traditionnelle",
+      "adresse": "Boulevard des Almohades, Ancienne Médina",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 3200,
+      "fourchette_prix": "150–300 MAD",
+      "horaires": "12h–23h",
+      "specialites": [
+        "Tajine agneau aux pruneaux",
+        "Pastilla au poulet",
+        "Couscous royal"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3200,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "r2",
+      "nom": "Le Cabestan",
+      "cuisine": "Méditerranéenne & Marocaine",
+      "adresse": "90 Boulevard de la Corniche",
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "note": 4.4,
+      "avis_count": 1800,
+      "fourchette_prix": "250–500 MAD",
+      "horaires": "12h–15h, 19h–23h",
+      "specialites": [
+        "Poisson grillé",
+        "Brochettes crevettes",
+        "Tagine de la mer"
+      ],
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1800,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "r3",
+      "nom": "Brasserie de l'Omnia",
+      "cuisine": "Française & Marocaine",
+      "adresse": "Place Mohammed V",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.3,
+      "avis_count": 950,
+      "fourchette_prix": "200–400 MAD",
+      "horaires": "7h–23h",
+      "specialites": [
+        "Semoule aux légumes",
+        "Mechoui",
+        "Crème brûlée à l'orange"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 950,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "r4",
+      "nom": "Dar Roumana",
+      "cuisine": "Marocaine gastronomique",
+      "adresse": "16 Rue Ibn Rachiq, Médina",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.7,
+      "avis_count": 620,
+      "fourchette_prix": "300–600 MAD",
+      "horaires": "12h–15h, 19h–22h30",
+      "specialites": [
+        "Bastilla aux fruits de mer",
+        "Tajine de pigeon",
+        "Chebakia"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 620,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    }
   ],
   "mosquees": [
-    { "id": "m1", "nom": "Mosquée Hassan II", "type": "Grande Mosquée", "adresse": "Boulevard Sidi Mohammed Ben Abdallah", "description": "La plus grande mosquée d'Afrique avec son minaret de 210m dominant l'Atlantique.", "note": 4.9, "acces_non_musulmans": true, "capacite": 105000 },
-    { "id": "m2", "nom": "Mosquée de la Ligue Arabe", "type": "Mosquée centrale", "adresse": "Boulevard Mohammed V", "description": "Mosquée historique au cœur de Casablanca.", "note": 4.3, "acces_non_musulmans": false, "capacite": 5000 },
-    { "id": "m3", "nom": "Mosquée Sidi Belyout", "type": "Mosquée historique", "adresse": "Quartier Sidi Belyout, Médina", "description": "L'une des plus anciennes mosquées de Casablanca avec architecture andalouse.", "note": 4.5, "acces_non_musulmans": false, "capacite": 2000 }
+    {
+      "id": "m1",
+      "nom": "Mosquée Hassan II",
+      "type": "Grande Mosquée",
+      "adresse": "Boulevard Sidi Mohammed Ben Abdallah",
+      "description": "La plus grande mosquée d'Afrique avec son minaret de 210m dominant l'Atlantique.",
+      "note": 4.9,
+      "acces_non_musulmans": true,
+      "capacite": 105000
+    },
+    {
+      "id": "m2",
+      "nom": "Mosquée de la Ligue Arabe",
+      "type": "Mosquée centrale",
+      "adresse": "Boulevard Mohammed V",
+      "description": "Mosquée historique au cœur de Casablanca.",
+      "note": 4.3,
+      "acces_non_musulmans": false,
+      "capacite": 5000
+    },
+    {
+      "id": "m3",
+      "nom": "Mosquée Sidi Belyout",
+      "type": "Mosquée historique",
+      "adresse": "Quartier Sidi Belyout, Médina",
+      "description": "L'une des plus anciennes mosquées de Casablanca avec architecture andalouse.",
+      "note": 4.5,
+      "acces_non_musulmans": false,
+      "capacite": 2000
+    }
   ],
   "hotels": [
-    { "id": "h1", "nom": "Hyatt Regency Casablanca", "type": "Hôtel de luxe", "adresse": "Place des Nations Unies", "etoiles": 5, "halal_certifie": false, "sans_alcool": false, "piscine_privee": false, "note": 4.5, "avis_count": 2400, "prix_nuit_min": 180, "devise": "EUR" },
-    { "id": "h2", "nom": "Hôtel Kenzi Tower", "type": "Hôtel d'affaires", "adresse": "Boulevard Mohammed Zerktouni", "etoiles": 5, "halal_certifie": true, "sans_alcool": false, "piscine_privee": false, "note": 4.4, "avis_count": 1600, "prix_nuit_min": 130, "devise": "EUR" },
-    { "id": "h3", "nom": "Ibis Casablanca City Center", "type": "Hôtel économique", "adresse": "Rue Sidi Belyout", "etoiles": 3, "halal_certifie": true, "sans_alcool": true, "piscine_privee": false, "note": 4.1, "avis_count": 3100, "prix_nuit_min": 55, "devise": "EUR" }
+    {
+      "id": "h1",
+      "nom": "Hyatt Regency Casablanca",
+      "type": "Hôtel de luxe",
+      "adresse": "Place des Nations Unies",
+      "etoiles": 5,
+      "halal_certifie": false,
+      "sans_alcool": false,
+      "piscine_privee": false,
+      "note": 4.5,
+      "avis_count": 2400,
+      "prix_nuit_min": 180,
+      "devise": "EUR",
+      "halalScore": {
+        "global": 6.0,
+        "sourceViande": 4,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2400,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL DÉCLARÉ"
+      }
+    },
+    {
+      "id": "h2",
+      "nom": "Hôtel Kenzi Tower",
+      "type": "Hôtel d'affaires",
+      "adresse": "Boulevard Mohammed Zerktouni",
+      "etoiles": 5,
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "piscine_privee": false,
+      "note": 4.4,
+      "avis_count": 1600,
+      "prix_nuit_min": 130,
+      "devise": "EUR",
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1600,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ONSSA Halal"
+      }
+    },
+    {
+      "id": "h3",
+      "nom": "Ibis Casablanca City Center",
+      "type": "Hôtel économique",
+      "adresse": "Rue Sidi Belyout",
+      "etoiles": 3,
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "piscine_privee": false,
+      "note": 4.1,
+      "avis_count": 3100,
+      "prix_nuit_min": 55,
+      "devise": "EUR",
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3100,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "ONSSA Halal"
+      }
+    }
   ],
   "activites": [
-    { "id": "a1", "nom": "Visite guidée Mosquée Hassan II", "type": "Culturel & Spirituel", "description": "Intérieur grandiose : mosaïques de zelliges, boiseries de cèdre sculptées, vue sur l'Atlantique.", "duree": "1h30", "prix": "130 MAD (~12€)", "tags": ["spirituel", "architecture", "guidé"] },
-    { "id": "a2", "nom": "Corniche d'Aïn Diab", "type": "Détente", "description": "Promenade longeant l'Atlantique, parsémée de cafés et restaurants.", "duree": "2h", "prix": "Gratuit", "tags": ["nature", "famille", "soirée"] },
-    { "id": "a3", "nom": "Ancienne Médina & Quartier Habous", "type": "Histoire & Shopping", "description": "Souks artisanaux, pâtisseries marocaines et librairies islamiques.", "duree": "3h", "prix": "Gratuit", "tags": ["shopping", "histoire", "artisanat"] },
-    { "id": "a4", "nom": "La Fabrique Culturelle", "type": "Art & Culture", "description": "Ancien abattoir reconverti en espace culturel dynamique.", "duree": "2h", "prix": "Gratuit – 50 MAD", "tags": ["art", "culture"] }
+    {
+      "id": "a1",
+      "nom": "Visite guidée Mosquée Hassan II",
+      "type": "Culturel & Spirituel",
+      "description": "Intérieur grandiose : mosaïques de zelliges, boiseries de cèdre sculptées, vue sur l'Atlantique.",
+      "duree": "1h30",
+      "prix": "130 MAD (~12€)",
+      "tags": [
+        "spirituel",
+        "architecture",
+        "guidé"
+      ]
+    },
+    {
+      "id": "a2",
+      "nom": "Corniche d'Aïn Diab",
+      "type": "Détente",
+      "description": "Promenade longeant l'Atlantique, parsémée de cafés et restaurants.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "tags": [
+        "nature",
+        "famille",
+        "soirée"
+      ]
+    },
+    {
+      "id": "a3",
+      "nom": "Ancienne Médina & Quartier Habous",
+      "type": "Histoire & Shopping",
+      "description": "Souks artisanaux, pâtisseries marocaines et librairies islamiques.",
+      "duree": "3h",
+      "prix": "Gratuit",
+      "tags": [
+        "shopping",
+        "histoire",
+        "artisanat"
+      ]
+    },
+    {
+      "id": "a4",
+      "nom": "La Fabrique Culturelle",
+      "type": "Art & Culture",
+      "description": "Ancien abattoir reconverti en espace culturel dynamique.",
+      "duree": "2h",
+      "prix": "Gratuit – 50 MAD",
+      "tags": [
+        "art",
+        "culture"
+      ]
+    }
   ],
   "road_trips": [
-    { "id": "rt1", "titre": "Casablanca → El Jadida → Essaouira", "duree": "3 jours", "distance_km": 350, "etapes": ["Casablanca", "El Jadida", "Essaouira"], "description": "Côte Atlantique : cité portugaise d'El Jadida (UNESCO) puis Essaouira la bleue.", "conseils_halal": "Cuisine 100% halal tout au long du trajet.", "budget_estime": "150–250€ par personne" },
-    { "id": "rt2", "titre": "Casablanca → Rabat → Meknès → Fès", "duree": "4 jours", "distance_km": 330, "etapes": ["Casablanca", "Rabat", "Meknès", "Fès"], "description": "Circuit des villes impériales du Maroc.", "conseils_halal": "Fès : cuisine authentique 100% halal.", "budget_estime": "200–350€ par personne" }
+    {
+      "id": "rt1",
+      "titre": "Casablanca → El Jadida → Essaouira",
+      "duree": "3 jours",
+      "distance_km": 350,
+      "etapes": [
+        "Casablanca",
+        "El Jadida",
+        "Essaouira"
+      ],
+      "description": "Côte Atlantique : cité portugaise d'El Jadida (UNESCO) puis Essaouira la bleue.",
+      "conseils_halal": "Cuisine 100% halal tout au long du trajet.",
+      "budget_estime": "150–250€ par personne"
+    },
+    {
+      "id": "rt2",
+      "titre": "Casablanca → Rabat → Meknès → Fès",
+      "duree": "4 jours",
+      "distance_km": 330,
+      "etapes": [
+        "Casablanca",
+        "Rabat",
+        "Meknès",
+        "Fès"
+      ],
+      "description": "Circuit des villes impériales du Maroc.",
+      "conseils_halal": "Fès : cuisine authentique 100% halal.",
+      "budget_estime": "200–350€ par personne"
+    }
   ],
   "voyages_par_type": {
-    "en_couple": { "intro": "Casablanca offre une escapade romantique mêlant dîners sur l'Atlantique et soirées dans les riads.", "top_experiences": ["Dîner sur la Corniche", "Mosquée Hassan II illuminée", "Spa hammam en couple", "Parc de la Ligue Arabe"], "conseils": "Réservez La Sqala pour un dîner romantique.", "hotels_recommandes": ["Hyatt Regency Casablanca"] },
-    "en_famille": { "intro": "Plages, aquariums, parcs et la fascinante Mosquée Hassan II accessible aux non-musulmans.", "top_experiences": ["Mosquée Hassan II", "Plages d'Aïn Diab", "Parc Sindibad", "Quartier Habous"], "conseils": "Plages familiales à Aïn Diab.", "hotels_recommandes": ["Hôtel Kenzi Tower"] },
-    "entre_amis": { "intro": "Cafés tendance, restaurants gastro et événements culturels.", "top_experiences": ["Corniche Aïn Diab", "Cafés branchés Maarif", "La Fabrique"], "conseils": "Le quartier Maarif concentre les cafés les plus tendance.", "hotels_recommandes": ["Ibis Casablanca City Center"] },
-    "voyage_solo": { "intro": "Casablanca est sécurisée et les transports fonctionnent bien.", "top_experiences": ["Exploration de la Médina", "Musée Abderrahman Slaoui", "Art Déco du centre"], "conseils": "Le tramway dessert les principaux quartiers.", "hotels_recommandes": ["Ibis Casablanca City Center"] },
-    "voyage_spirituel": { "intro": "La Mosquée Hassan II est l'une des merveilles architecturales islamiques du monde.", "top_experiences": ["Prière du vendredi Mosquée Hassan II", "Zaouïas de la Médina", "Pèlerinage mausolées"], "conseils": "La Jumu'ah à Hassan II rassemble jusqu'à 25 000 fidèles. Arrivez tôt.", "hotels_recommandes": ["Ibis Casablanca City Center"] }
+    "en_couple": {
+      "intro": "Casablanca offre une escapade romantique mêlant dîners sur l'Atlantique et soirées dans les riads.",
+      "top_experiences": [
+        "Dîner sur la Corniche",
+        "Mosquée Hassan II illuminée",
+        "Spa hammam en couple",
+        "Parc de la Ligue Arabe"
+      ],
+      "conseils": "Réservez La Sqala pour un dîner romantique.",
+      "hotels_recommandes": [
+        "Hyatt Regency Casablanca"
+      ]
+    },
+    "en_famille": {
+      "intro": "Plages, aquariums, parcs et la fascinante Mosquée Hassan II accessible aux non-musulmans.",
+      "top_experiences": [
+        "Mosquée Hassan II",
+        "Plages d'Aïn Diab",
+        "Parc Sindibad",
+        "Quartier Habous"
+      ],
+      "conseils": "Plages familiales à Aïn Diab.",
+      "hotels_recommandes": [
+        "Hôtel Kenzi Tower"
+      ]
+    },
+    "entre_amis": {
+      "intro": "Cafés tendance, restaurants gastro et événements culturels.",
+      "top_experiences": [
+        "Corniche Aïn Diab",
+        "Cafés branchés Maarif",
+        "La Fabrique"
+      ],
+      "conseils": "Le quartier Maarif concentre les cafés les plus tendance.",
+      "hotels_recommandes": [
+        "Ibis Casablanca City Center"
+      ]
+    },
+    "voyage_solo": {
+      "intro": "Casablanca est sécurisée et les transports fonctionnent bien.",
+      "top_experiences": [
+        "Exploration de la Médina",
+        "Musée Abderrahman Slaoui",
+        "Art Déco du centre"
+      ],
+      "conseils": "Le tramway dessert les principaux quartiers.",
+      "hotels_recommandes": [
+        "Ibis Casablanca City Center"
+      ]
+    },
+    "voyage_spirituel": {
+      "intro": "La Mosquée Hassan II est l'une des merveilles architecturales islamiques du monde.",
+      "top_experiences": [
+        "Prière du vendredi Mosquée Hassan II",
+        "Zaouïas de la Médina",
+        "Pèlerinage mausolées"
+      ],
+      "conseils": "La Jumu'ah à Hassan II rassemble jusqu'à 25 000 fidèles. Arrivez tôt.",
+      "hotels_recommandes": [
+        "Ibis Casablanca City Center"
+      ]
+    }
   },
   "articles_lies": [],
-  "villes_proches": ["marrakech", "rabat", "tanger"]
+  "villes_proches": [
+    "marrakech",
+    "rabat",
+    "tanger"
+  ],
+  "codeISO": "MA"
 }

@@ -6,7 +6,10 @@
   "pays_slug": "maldives",
   "drapeau": "🇲🇻",
   "region": "Asie du Sud",
-  "coordonnees": { "lat": 3.2028, "lng": 73.2207 },
+  "coordonnees": {
+    "lat": 3.2028,
+    "lng": 73.2207
+  },
   "score_halal": 5,
   "score_securite": 5,
   "score_famille": 5,
@@ -30,44 +33,551 @@
     "transport": "Hydravion ou bateau speed depuis Malé vers les resorts/îles"
   },
   "restaurants": [
-    { "id": "r-001", "nom": "Ithaa Undersea Restaurant (Conrad)", "adresse": "Conrad Maldives Rangali Island", "cuisine": "Gastronomique internationale halal", "specialite": "Homard des Maldives et plateau de fruits de mer sous l'eau", "certification": "Halal (État islamique)", "prix_moyen": "200–500 USD", "note": 5.0 },
-    { "id": "r-002", "nom": "Manta Restaurant", "adresse": "Four Seasons Landaa Giraavaru", "cuisine": "Méditerranéenne & fruits de mer halal", "specialite": "Thon rouge de l'Indien grillé", "certification": "Halal", "prix_moyen": "100–300 USD", "note": 4.8 },
-    { "id": "r-003", "nom": "Restaurant Muraka", "adresse": "The Muraka Suite, Conrad Maldives", "cuisine": "Gastronomique sous-marine halal", "specialite": "Menu 6 plats au milieu des poissons tropicaux", "certification": "Halal", "prix_moyen": "800–2000 USD (expérience nuit incluse)", "note": 5.0 },
-    { "id": "r-004", "nom": "Malé Fish Market", "adresse": "Malé, île principale", "cuisine": "Maldivienne traditionnelle halal", "specialite": "Garudhiya (soupe de thon) et mas huni", "certification": "Halal (île locale)", "prix_moyen": "50–150 MVR", "note": 4.7 },
-    { "id": "r-005", "nom": "Symphony Lagoon Restaurant", "adresse": "Kandima Maldives", "cuisine": "Fusion internationale halal", "specialite": "Sashimi de thon maldivien certifié halal", "certification": "Halal", "prix_moyen": "80–200 USD", "note": 4.6 },
-    { "id": "r-006", "nom": "Fen Foshi Restaurant", "adresse": "Atmosphere Kanifushi Resort", "cuisine": "Maldivienne & Sri-lankaise halal", "specialite": "Curry de poisson kokis et rotis", "certification": "Halal", "prix_moyen": "60–150 USD (tout-inclus)", "note": 4.7 },
-    { "id": "r-007", "nom": "Cafe Bohemia", "adresse": "Malé City", "cuisine": "Café & snacks halal", "specialite": "Short eats maldiviens (keemia, gulha)", "certification": "Halal (île locale)", "prix_moyen": "30–100 MVR", "note": 4.6 },
-    { "id": "r-008", "nom": "Vilu Restaurant & Bar (sans alcool)", "adresse": "Kurumba Maldives, North Malé", "cuisine": "Européenne gastronomique halal", "specialite": "Filet de poisson blanc au beurre noisette halal", "certification": "Halal", "prix_moyen": "100–250 USD", "note": 4.5 },
-    { "id": "r-009", "nom": "Drift Restaurant", "adresse": "Sun Siyam Iru Veli", "cuisine": "Internationale & asiatique halal", "specialite": "Poke bowl au thon maldivien", "certification": "Halal", "prix_moyen": "80–200 USD", "note": 4.6 },
-    { "id": "r-010", "nom": "Sea House Restaurant", "adresse": "Anantara Dhigu Resort", "cuisine": "Asiatique & maldivienne halal", "specialite": "Teppanyaki de fruits de mer halal", "certification": "Halal", "prix_moyen": "100–280 USD", "note": 4.7 },
-    { "id": "r-011", "nom": "Local Eatery Fulidhoo", "adresse": "Île locale Fulidhoo", "cuisine": "Maldivienne authentique", "specialite": "Mas riha (curry de thon) avec roshi (pain)", "certification": "Halal (île 100% locale)", "prix_moyen": "100–300 MVR", "note": 4.8 },
-    { "id": "r-012", "nom": "Azur Restaurant", "adresse": "Grand Park Kodhipparu", "cuisine": "Méditerranéenne halal", "specialite": "Poisson grillé aux herbes fraîches", "certification": "Halal", "prix_moyen": "80–200 USD", "note": 4.6 },
-    { "id": "r-013", "nom": "Coco Bodu Hithi Dining", "adresse": "Coco Bodu Hithi Resort", "cuisine": "Asiatique-fusion halal", "specialite": "Wok de langoustines au lait de coco halal", "certification": "Halal", "prix_moyen": "100–300 USD", "note": 4.7 },
-    { "id": "r-014", "nom": "Jahazee Restaurant", "adresse": "Adaaran Select Hudhuranfushi", "cuisine": "Internationale halal buffet", "specialite": "Buffet international halal avec coins live cooking", "certification": "Halal", "prix_moyen": "60–120 USD (tout-inclus)", "note": 4.4 },
-    { "id": "r-015", "nom": "Maldives Café Malé", "adresse": "Malé, quartier commercial", "cuisine": "Café & pâtisseries halal", "specialite": "Bondibaiy (riz au lait sucré) et sandwichs", "certification": "Halal", "prix_moyen": "50–150 MVR", "note": 4.5 }
+    {
+      "id": "r-001",
+      "nom": "Ithaa Undersea Restaurant (Conrad)",
+      "adresse": "Conrad Maldives Rangali Island",
+      "cuisine": "Gastronomique internationale halal",
+      "specialite": "Homard des Maldives et plateau de fruits de mer sous l'eau",
+      "certification": "Halal (État islamique)",
+      "prix_moyen": "200–500 USD",
+      "note": 5.0,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 600,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal (État islamique)"
+      }
+    },
+    {
+      "id": "r-002",
+      "nom": "Manta Restaurant",
+      "adresse": "Four Seasons Landaa Giraavaru",
+      "cuisine": "Méditerranéenne & fruits de mer halal",
+      "specialite": "Thon rouge de l'Indien grillé",
+      "certification": "Halal",
+      "prix_moyen": "100–300 USD",
+      "note": 4.8,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 576,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-003",
+      "nom": "Restaurant Muraka",
+      "adresse": "The Muraka Suite, Conrad Maldives",
+      "cuisine": "Gastronomique sous-marine halal",
+      "specialite": "Menu 6 plats au milieu des poissons tropicaux",
+      "certification": "Halal",
+      "prix_moyen": "800–2000 USD (expérience nuit incluse)",
+      "note": 5.0,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 600,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-004",
+      "nom": "Malé Fish Market",
+      "adresse": "Malé, île principale",
+      "cuisine": "Maldivienne traditionnelle halal",
+      "specialite": "Garudhiya (soupe de thon) et mas huni",
+      "certification": "Halal (île locale)",
+      "prix_moyen": "50–150 MVR",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal (île locale)"
+      }
+    },
+    {
+      "id": "r-005",
+      "nom": "Symphony Lagoon Restaurant",
+      "adresse": "Kandima Maldives",
+      "cuisine": "Fusion internationale halal",
+      "specialite": "Sashimi de thon maldivien certifié halal",
+      "certification": "Halal",
+      "prix_moyen": "80–200 USD",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-006",
+      "nom": "Fen Foshi Restaurant",
+      "adresse": "Atmosphere Kanifushi Resort",
+      "cuisine": "Maldivienne & Sri-lankaise halal",
+      "specialite": "Curry de poisson kokis et rotis",
+      "certification": "Halal",
+      "prix_moyen": "60–150 USD (tout-inclus)",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-007",
+      "nom": "Cafe Bohemia",
+      "adresse": "Malé City",
+      "cuisine": "Café & snacks halal",
+      "specialite": "Short eats maldiviens (keemia, gulha)",
+      "certification": "Halal (île locale)",
+      "prix_moyen": "30–100 MVR",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal (île locale)"
+      }
+    },
+    {
+      "id": "r-008",
+      "nom": "Vilu Restaurant & Bar (sans alcool)",
+      "adresse": "Kurumba Maldives, North Malé",
+      "cuisine": "Européenne gastronomique halal",
+      "specialite": "Filet de poisson blanc au beurre noisette halal",
+      "certification": "Halal",
+      "prix_moyen": "100–250 USD",
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-009",
+      "nom": "Drift Restaurant",
+      "adresse": "Sun Siyam Iru Veli",
+      "cuisine": "Internationale & asiatique halal",
+      "specialite": "Poke bowl au thon maldivien",
+      "certification": "Halal",
+      "prix_moyen": "80–200 USD",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-010",
+      "nom": "Sea House Restaurant",
+      "adresse": "Anantara Dhigu Resort",
+      "cuisine": "Asiatique & maldivienne halal",
+      "specialite": "Teppanyaki de fruits de mer halal",
+      "certification": "Halal",
+      "prix_moyen": "100–280 USD",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-011",
+      "nom": "Local Eatery Fulidhoo",
+      "adresse": "Île locale Fulidhoo",
+      "cuisine": "Maldivienne authentique",
+      "specialite": "Mas riha (curry de thon) avec roshi (pain)",
+      "certification": "Halal (île 100% locale)",
+      "prix_moyen": "100–300 MVR",
+      "note": 4.8,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 576,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal (île 100% locale)"
+      }
+    },
+    {
+      "id": "r-012",
+      "nom": "Azur Restaurant",
+      "adresse": "Grand Park Kodhipparu",
+      "cuisine": "Méditerranéenne halal",
+      "specialite": "Poisson grillé aux herbes fraîches",
+      "certification": "Halal",
+      "prix_moyen": "80–200 USD",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-013",
+      "nom": "Coco Bodu Hithi Dining",
+      "adresse": "Coco Bodu Hithi Resort",
+      "cuisine": "Asiatique-fusion halal",
+      "specialite": "Wok de langoustines au lait de coco halal",
+      "certification": "Halal",
+      "prix_moyen": "100–300 USD",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-014",
+      "nom": "Jahazee Restaurant",
+      "adresse": "Adaaran Select Hudhuranfushi",
+      "cuisine": "Internationale halal buffet",
+      "specialite": "Buffet international halal avec coins live cooking",
+      "certification": "Halal",
+      "prix_moyen": "60–120 USD (tout-inclus)",
+      "note": 4.4,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 528,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-015",
+      "nom": "Maldives Café Malé",
+      "adresse": "Malé, quartier commercial",
+      "cuisine": "Café & pâtisseries halal",
+      "specialite": "Bondibaiy (riz au lait sucré) et sandwichs",
+      "certification": "Halal",
+      "prix_moyen": "50–150 MVR",
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    }
   ],
   "mosquees": [
-    { "id": "m-001", "nom": "Mosquée du Vendredi (Hukuru Miskiy)", "adresse": "Malé, île principale", "type": "Historique nationale (XVIIe siècle)", "capacite": 3000, "annee_construction": 1658, "style_architectural": "Corallien maldivien (construit en corail)", "note": 5.0 },
-    { "id": "m-002", "nom": "Grande Mosquée de Malé (Masjid Al-Sultan)", "adresse": "Centre de Malé", "type": "Grande mosquée nationale", "capacite": 10000, "annee_construction": 1984, "style_architectural": "Islamique contemporain (don saoudien)", "note": 4.9 },
-    { "id": "m-003", "nom": "Mosquée Eid Gah", "adresse": "Malé, devant le port", "type": "Mosquée de prière de l'Aïd", "capacite": 5000, "annee_construction": 1998, "style_architectural": "En plein air", "note": 4.7 },
-    { "id": "m-004", "nom": "Mosquée Masjid Ibrahim", "adresse": "Malé", "type": "Mosquée historique", "capacite": 2000, "annee_construction": 1800, "style_architectural": "Traditionnel maldivien", "note": 4.6 },
-    { "id": "m-005", "nom": "Mosquée de Rasdhoo (île locale)", "adresse": "Rasdhoo Atoll", "type": "Mosquée d'île", "capacite": 500, "annee_construction": 1975, "style_architectural": "Simple islamique", "note": 4.5 }
+    {
+      "id": "m-001",
+      "nom": "Mosquée du Vendredi (Hukuru Miskiy)",
+      "adresse": "Malé, île principale",
+      "type": "Historique nationale (XVIIe siècle)",
+      "capacite": 3000,
+      "annee_construction": 1658,
+      "style_architectural": "Corallien maldivien (construit en corail)",
+      "note": 5.0
+    },
+    {
+      "id": "m-002",
+      "nom": "Grande Mosquée de Malé (Masjid Al-Sultan)",
+      "adresse": "Centre de Malé",
+      "type": "Grande mosquée nationale",
+      "capacite": 10000,
+      "annee_construction": 1984,
+      "style_architectural": "Islamique contemporain (don saoudien)",
+      "note": 4.9
+    },
+    {
+      "id": "m-003",
+      "nom": "Mosquée Eid Gah",
+      "adresse": "Malé, devant le port",
+      "type": "Mosquée de prière de l'Aïd",
+      "capacite": 5000,
+      "annee_construction": 1998,
+      "style_architectural": "En plein air",
+      "note": 4.7
+    },
+    {
+      "id": "m-004",
+      "nom": "Mosquée Masjid Ibrahim",
+      "adresse": "Malé",
+      "type": "Mosquée historique",
+      "capacite": 2000,
+      "annee_construction": 1800,
+      "style_architectural": "Traditionnel maldivien",
+      "note": 4.6
+    },
+    {
+      "id": "m-005",
+      "nom": "Mosquée de Rasdhoo (île locale)",
+      "adresse": "Rasdhoo Atoll",
+      "type": "Mosquée d'île",
+      "capacite": 500,
+      "annee_construction": 1975,
+      "style_architectural": "Simple islamique",
+      "note": 4.5
+    }
   ],
   "hotels": [
-    { "id": "h-001", "nom": "Soneva Jani", "adresse": "Noonu Atoll, Maldives", "categorie": "Ultra-luxe 5 étoiles+", "prix_nuit": "2000–8000 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 5.0 },
-    { "id": "h-002", "nom": "Four Seasons Resort (Landaa Giraavaru)", "adresse": "Baa Atoll (UNESCO)", "categorie": "5 étoiles luxe", "prix_nuit": "1500–5000 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.9 },
-    { "id": "h-003", "nom": "Anantara Veli Maldives", "adresse": "South Malé Atoll", "categorie": "5 étoiles", "prix_nuit": "500–1500 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.8 },
-    { "id": "h-004", "nom": "Centara Grand Island Resort", "adresse": "Ari Atoll", "categorie": "5 étoiles tout-inclus", "prix_nuit": "400–900 € (tout inclus)", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.6 },
-    { "id": "h-005", "nom": "Guesthouses de Maafushi (île locale halal)", "adresse": "Maafushi Island", "categorie": "Guesthouse 2–3 étoiles", "prix_nuit": "80–200 €", "halal_friendly": true, "sans_alcool": true, "piscine": false, "note": 4.4 }
+    {
+      "id": "h-001",
+      "nom": "Soneva Jani",
+      "adresse": "Noonu Atoll, Maldives",
+      "categorie": "Ultra-luxe 5 étoiles+",
+      "prix_nuit": "2000–8000 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 5.0,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 600,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Halal Maldives"
+      }
+    },
+    {
+      "id": "h-002",
+      "nom": "Four Seasons Resort (Landaa Giraavaru)",
+      "adresse": "Baa Atoll (UNESCO)",
+      "categorie": "5 étoiles luxe",
+      "prix_nuit": "1500–5000 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.9,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 588,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Halal Maldives"
+      }
+    },
+    {
+      "id": "h-003",
+      "nom": "Anantara Veli Maldives",
+      "adresse": "South Malé Atoll",
+      "categorie": "5 étoiles",
+      "prix_nuit": "500–1500 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.8,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 576,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Halal Maldives"
+      }
+    },
+    {
+      "id": "h-004",
+      "nom": "Centara Grand Island Resort",
+      "adresse": "Ari Atoll",
+      "categorie": "5 étoiles tout-inclus",
+      "prix_nuit": "400–900 € (tout inclus)",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.6,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Halal Maldives"
+      }
+    },
+    {
+      "id": "h-005",
+      "nom": "Guesthouses de Maafushi (île locale halal)",
+      "adresse": "Maafushi Island",
+      "categorie": "Guesthouse 2–3 étoiles",
+      "prix_nuit": "80–200 €",
+      "halal_friendly": true,
+      "sans_alcool": true,
+      "piscine": false,
+      "note": 4.4,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 528,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Maldives"
+      }
+    }
   ],
   "activites": [
-    { "id": "a-001", "nom": "Snorkeling avec raies manta (Baa Atoll)", "type": "Nature marine", "duree": "3h", "prix": "60–120 USD", "note": 5.0 },
-    { "id": "a-002", "nom": "Plongée avec requins baleines (Ari Atoll)", "type": "Plongée", "duree": "4h", "prix": "80–150 USD", "note": 5.0 },
-    { "id": "a-003", "nom": "Observation des dauphins au coucher du soleil", "type": "Nature", "duree": "2h", "prix": "40–80 USD", "note": 4.8 },
-    { "id": "a-004", "nom": "Visite de Malé et Mosquée du Vendredi", "type": "Culture & spirituel", "duree": "3h", "prix": "Gratuit (tour en bateau variable)", "note": 4.8 },
-    { "id": "a-005", "nom": "Sandbank pique-nique (banc de sable privé)", "type": "Plage exclusive", "duree": "4h", "prix": "100–200 USD", "note": 4.9 },
-    { "id": "a-006", "nom": "Surf à Cokes (Pasta Point)", "type": "Surf", "duree": "3h", "prix": "50–100 USD", "note": 4.7 },
-    { "id": "a-007", "nom": "Spa sur villa flottante", "type": "Bien-être", "duree": "1–3h", "prix": "150–400 USD", "note": 4.8 },
-    { "id": "a-008", "nom": "Plongée en apnée avec école halal-friendly", "type": "Plongée & formation", "duree": "3–5 jours", "prix": "400–800 USD (brevet complet)", "note": 4.8 }
-  ]
+    {
+      "id": "a-001",
+      "nom": "Snorkeling avec raies manta (Baa Atoll)",
+      "type": "Nature marine",
+      "duree": "3h",
+      "prix": "60–120 USD",
+      "note": 5.0
+    },
+    {
+      "id": "a-002",
+      "nom": "Plongée avec requins baleines (Ari Atoll)",
+      "type": "Plongée",
+      "duree": "4h",
+      "prix": "80–150 USD",
+      "note": 5.0
+    },
+    {
+      "id": "a-003",
+      "nom": "Observation des dauphins au coucher du soleil",
+      "type": "Nature",
+      "duree": "2h",
+      "prix": "40–80 USD",
+      "note": 4.8
+    },
+    {
+      "id": "a-004",
+      "nom": "Visite de Malé et Mosquée du Vendredi",
+      "type": "Culture & spirituel",
+      "duree": "3h",
+      "prix": "Gratuit (tour en bateau variable)",
+      "note": 4.8
+    },
+    {
+      "id": "a-005",
+      "nom": "Sandbank pique-nique (banc de sable privé)",
+      "type": "Plage exclusive",
+      "duree": "4h",
+      "prix": "100–200 USD",
+      "note": 4.9
+    },
+    {
+      "id": "a-006",
+      "nom": "Surf à Cokes (Pasta Point)",
+      "type": "Surf",
+      "duree": "3h",
+      "prix": "50–100 USD",
+      "note": 4.7
+    },
+    {
+      "id": "a-007",
+      "nom": "Spa sur villa flottante",
+      "type": "Bien-être",
+      "duree": "1–3h",
+      "prix": "150–400 USD",
+      "note": 4.8
+    },
+    {
+      "id": "a-008",
+      "nom": "Plongée en apnée avec école halal-friendly",
+      "type": "Plongée & formation",
+      "duree": "3–5 jours",
+      "prix": "400–800 USD (brevet complet)",
+      "note": 4.8
+    }
+  ],
+  "codeISO": "MV"
 }

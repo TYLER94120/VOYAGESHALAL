@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import type { Ville } from '@/lib/villeTypes'
+import { HalalTrustScore } from '@/components/HalalTrustScore'
 
 interface Props {
   ville: Ville
@@ -97,6 +98,7 @@ export default function CityTabs({ ville }: Props) {
                   ))}
                 </div>
               )}
+              {r.halalScore && <HalalTrustScore score={r.halalScore} />}
             </div>
           ))}
         </div>
@@ -154,6 +156,7 @@ export default function CityTabs({ ville }: Props) {
                 </div>
                 <p className="font-bold" style={{ color: GREEN }}>À partir de {h.prix_nuit_min}{h.devise === 'EUR' ? '€' : h.devise === 'GBP' ? '£' : h.devise}/nuit</p>
               </div>
+              {h.halalScore && <HalalTrustScore score={h.halalScore} />}
             </div>
           ))}
         </div>

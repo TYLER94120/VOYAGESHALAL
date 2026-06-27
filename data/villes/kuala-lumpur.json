@@ -4,14 +4,22 @@
   "pays": "Malaisie",
   "pays_slug": "malaisie",
   "region": "Asie du Sud-Est",
-  "coordonnees": { "lat": 3.1390, "lng": 101.6869 },
+  "coordonnees": {
+    "lat": 3.139,
+    "lng": 101.6869
+  },
   "score_halal": 5,
   "description": "Capitale cosmopolite de la Malaisie, Kuala Lumpur est l'une des meilleures destinations halal au monde, avec une nourriture halal omniprésente certifiée JAKIM et les emblématiques Tours Petronas.",
   "image_hero": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1600&q=85",
   "image_alt": "Tours Petronas de Kuala Lumpur illuminées la nuit",
   "meta_title": "Kuala Lumpur Halal — Restaurants, Mosquées & Guide Pratique | Voyages Halal",
   "meta_description": "Guide complet de Kuala Lumpur halal : restaurants certifiés JAKIM, mosquées, hôtels.",
-  "statistiques": { "mosquees": 850, "restaurants_halal": 8000, "hotels_halal": 120, "habitants_musulmans_pct": 61 },
+  "statistiques": {
+    "mosquees": 850,
+    "restaurants_halal": 8000,
+    "hotels_halal": 120,
+    "habitants_musulmans_pct": 61
+  },
   "infos_pratiques": {
     "langue": "Malais, Anglais courant partout",
     "monnaie": "Ringgit malaisien (MYR) — 1€ ≈ 5,1 MYR",
@@ -23,39 +31,392 @@
     "securite": "Très sûre pour les touristes"
   },
   "restaurants": [
-    { "id": "r1", "nom": "Nasi Kandar Pelita", "cuisine": "Malaisienne — Nasi Kandar", "adresse": "149 Jalan Ampang", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 5600, "fourchette_prix": "8–25 MYR", "horaires": "24h/24", "specialites": ["Nasi Kandar", "Mee goreng mamak", "Teh tarik"] },
-    { "id": "r2", "nom": "Village Park Restaurant", "cuisine": "Malaisienne — Nasi Lemak", "adresse": "5 Jalan SS21/1A, Damansara Utama", "halal_certifie": true, "sans_alcool": true, "note": 4.7, "avis_count": 9200, "fourchette_prix": "10–30 MYR", "horaires": "7h30–17h (fermé lundi)", "specialites": ["Nasi Lemak spécial", "Rendang bœuf", "Sambal udang"] },
-    { "id": "r3", "nom": "Enak KL", "cuisine": "Malaisienne gastronomique", "adresse": "Starhill Gallery, Jalan Bukit Bintang", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 2100, "fourchette_prix": "60–150 MYR", "horaires": "12h–22h30", "specialites": ["Laksa Penang", "Satay d'agneau", "Rendang Tok"] },
-    { "id": "r4", "nom": "Rahsia Brasserie", "cuisine": "Fusion malaisienne", "adresse": "The RuMa Hotel, Jalan Kia Peng", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 890, "fourchette_prix": "80–200 MYR", "horaires": "6h30–22h30", "specialites": ["Lobster laksa", "Wagyu rendang", "Pengat pisang"] }
+    {
+      "id": "r1",
+      "nom": "Nasi Kandar Pelita",
+      "cuisine": "Malaisienne — Nasi Kandar",
+      "adresse": "149 Jalan Ampang",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 5600,
+      "fourchette_prix": "8–25 MYR",
+      "horaires": "24h/24",
+      "specialites": [
+        "Nasi Kandar",
+        "Mee goreng mamak",
+        "Teh tarik"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 5600,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "JAKIM"
+      }
+    },
+    {
+      "id": "r2",
+      "nom": "Village Park Restaurant",
+      "cuisine": "Malaisienne — Nasi Lemak",
+      "adresse": "5 Jalan SS21/1A, Damansara Utama",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.7,
+      "avis_count": 9200,
+      "fourchette_prix": "10–30 MYR",
+      "horaires": "7h30–17h (fermé lundi)",
+      "specialites": [
+        "Nasi Lemak spécial",
+        "Rendang bœuf",
+        "Sambal udang"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 9200,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "JAKIM"
+      }
+    },
+    {
+      "id": "r3",
+      "nom": "Enak KL",
+      "cuisine": "Malaisienne gastronomique",
+      "adresse": "Starhill Gallery, Jalan Bukit Bintang",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 2100,
+      "fourchette_prix": "60–150 MYR",
+      "horaires": "12h–22h30",
+      "specialites": [
+        "Laksa Penang",
+        "Satay d'agneau",
+        "Rendang Tok"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2100,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "JAKIM"
+      }
+    },
+    {
+      "id": "r4",
+      "nom": "Rahsia Brasserie",
+      "cuisine": "Fusion malaisienne",
+      "adresse": "The RuMa Hotel, Jalan Kia Peng",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 890,
+      "fourchette_prix": "80–200 MYR",
+      "horaires": "6h30–22h30",
+      "specialites": [
+        "Lobster laksa",
+        "Wagyu rendang",
+        "Pengat pisang"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 890,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "JAKIM"
+      }
+    }
   ],
   "mosquees": [
-    { "id": "m1", "nom": "Masjid Negara (Mosquée Nationale)", "type": "Grande Mosquée", "adresse": "Jalan Perdana", "description": "La mosquée nationale de Malaisie, symbole de l'indépendance, toit en étoile à 18 branches.", "note": 4.7, "acces_non_musulmans": true, "capacite": 15000 },
-    { "id": "m2", "nom": "Masjid Jamek", "type": "Mosquée historique", "adresse": "Jalan Tun Perak", "description": "La plus ancienne mosquée de KL (1907), à la confluence des rivières Klang et Gombak.", "note": 4.6, "acces_non_musulmans": true, "capacite": 2000 },
-    { "id": "m3", "nom": "Masjid Wilayah Persekutuan", "type": "Grande Mosquée", "adresse": "Jalan Duta", "description": "Imposante mosquée bleue et blanche au nord de KL.", "note": 4.8, "acces_non_musulmans": true, "capacite": 17000 }
+    {
+      "id": "m1",
+      "nom": "Masjid Negara (Mosquée Nationale)",
+      "type": "Grande Mosquée",
+      "adresse": "Jalan Perdana",
+      "description": "La mosquée nationale de Malaisie, symbole de l'indépendance, toit en étoile à 18 branches.",
+      "note": 4.7,
+      "acces_non_musulmans": true,
+      "capacite": 15000
+    },
+    {
+      "id": "m2",
+      "nom": "Masjid Jamek",
+      "type": "Mosquée historique",
+      "adresse": "Jalan Tun Perak",
+      "description": "La plus ancienne mosquée de KL (1907), à la confluence des rivières Klang et Gombak.",
+      "note": 4.6,
+      "acces_non_musulmans": true,
+      "capacite": 2000
+    },
+    {
+      "id": "m3",
+      "nom": "Masjid Wilayah Persekutuan",
+      "type": "Grande Mosquée",
+      "adresse": "Jalan Duta",
+      "description": "Imposante mosquée bleue et blanche au nord de KL.",
+      "note": 4.8,
+      "acces_non_musulmans": true,
+      "capacite": 17000
+    }
   ],
   "hotels": [
-    { "id": "h1", "nom": "The RuMa Hotel & Residences", "type": "Boutique hôtel de luxe", "adresse": "7 Jalan Kia Peng", "etoiles": 5, "halal_certifie": true, "sans_alcool": false, "piscine_privee": false, "note": 4.8, "avis_count": 1200, "prix_nuit_min": 180, "devise": "EUR" },
-    { "id": "h2", "nom": "Mandarin Oriental Kuala Lumpur", "type": "Grand hôtel de luxe", "adresse": "KLCC, Kuala Lumpur", "etoiles": 5, "halal_certifie": true, "sans_alcool": false, "piscine_privee": false, "note": 4.7, "avis_count": 4500, "prix_nuit_min": 200, "devise": "EUR" },
-    { "id": "h3", "nom": "Dorsett Bukit Bintang", "type": "Hôtel urbain", "adresse": "172 Jalan Imbi, Bukit Bintang", "etoiles": 4, "halal_certifie": true, "sans_alcool": true, "piscine_privee": false, "note": 4.3, "avis_count": 3800, "prix_nuit_min": 65, "devise": "EUR" }
+    {
+      "id": "h1",
+      "nom": "The RuMa Hotel & Residences",
+      "type": "Boutique hôtel de luxe",
+      "adresse": "7 Jalan Kia Peng",
+      "etoiles": 5,
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "piscine_privee": false,
+      "note": 4.8,
+      "avis_count": 1200,
+      "prix_nuit_min": 180,
+      "devise": "EUR",
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1200,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "JAKIM"
+      }
+    },
+    {
+      "id": "h2",
+      "nom": "Mandarin Oriental Kuala Lumpur",
+      "type": "Grand hôtel de luxe",
+      "adresse": "KLCC, Kuala Lumpur",
+      "etoiles": 5,
+      "halal_certifie": true,
+      "sans_alcool": false,
+      "piscine_privee": false,
+      "note": 4.7,
+      "avis_count": 4500,
+      "prix_nuit_min": 200,
+      "devise": "EUR",
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 4500,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "JAKIM"
+      }
+    },
+    {
+      "id": "h3",
+      "nom": "Dorsett Bukit Bintang",
+      "type": "Hôtel urbain",
+      "adresse": "172 Jalan Imbi, Bukit Bintang",
+      "etoiles": 4,
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "piscine_privee": false,
+      "note": 4.3,
+      "avis_count": 3800,
+      "prix_nuit_min": 65,
+      "devise": "EUR",
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3800,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "JAKIM"
+      }
+    }
   ],
   "activites": [
-    { "id": "a1", "nom": "Tours Petronas — Skybridge & Observation Deck", "type": "Panorama", "description": "Skybridge au 41e étage, vue 360° au 86e.", "duree": "2h", "prix": "80 MYR (~16€)", "tags": ["panorama", "incontournable"] },
-    { "id": "a2", "nom": "Batu Caves", "type": "Culture & Nature", "description": "Grotte calcaire avec temple hindou, 272 marches, singes.", "duree": "3h", "prix": "Gratuit", "tags": ["nature", "culture", "famille"] },
-    { "id": "a3", "nom": "Jalan Alor — Street Food Halal", "type": "Gastronomie", "description": "La rue la plus célèbre de KL pour le street food halal (actif dès 17h).", "duree": "2h", "prix": "20–50 MYR", "tags": ["gastronomie", "soirée"] },
-    { "id": "a4", "nom": "KL Bird Park", "type": "Nature & Famille", "description": "Le plus grand parc à oiseaux en vol libre du monde (21 ha).", "duree": "3h", "prix": "67 MYR (~13€)", "tags": ["famille", "nature"] },
-    { "id": "a5", "nom": "Kampung Baru", "type": "Immersion culturelle", "description": "Village malais au cœur de KL, marchés du vendredi, restaurants halal authentiques.", "duree": "2h", "prix": "Gratuit", "tags": ["culture", "authentique"] }
+    {
+      "id": "a1",
+      "nom": "Tours Petronas — Skybridge & Observation Deck",
+      "type": "Panorama",
+      "description": "Skybridge au 41e étage, vue 360° au 86e.",
+      "duree": "2h",
+      "prix": "80 MYR (~16€)",
+      "tags": [
+        "panorama",
+        "incontournable"
+      ]
+    },
+    {
+      "id": "a2",
+      "nom": "Batu Caves",
+      "type": "Culture & Nature",
+      "description": "Grotte calcaire avec temple hindou, 272 marches, singes.",
+      "duree": "3h",
+      "prix": "Gratuit",
+      "tags": [
+        "nature",
+        "culture",
+        "famille"
+      ]
+    },
+    {
+      "id": "a3",
+      "nom": "Jalan Alor — Street Food Halal",
+      "type": "Gastronomie",
+      "description": "La rue la plus célèbre de KL pour le street food halal (actif dès 17h).",
+      "duree": "2h",
+      "prix": "20–50 MYR",
+      "tags": [
+        "gastronomie",
+        "soirée"
+      ]
+    },
+    {
+      "id": "a4",
+      "nom": "KL Bird Park",
+      "type": "Nature & Famille",
+      "description": "Le plus grand parc à oiseaux en vol libre du monde (21 ha).",
+      "duree": "3h",
+      "prix": "67 MYR (~13€)",
+      "tags": [
+        "famille",
+        "nature"
+      ]
+    },
+    {
+      "id": "a5",
+      "nom": "Kampung Baru",
+      "type": "Immersion culturelle",
+      "description": "Village malais au cœur de KL, marchés du vendredi, restaurants halal authentiques.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "tags": [
+        "culture",
+        "authentique"
+      ]
+    }
   ],
   "road_trips": [
-    { "id": "rt1", "titre": "KL → Malacca → Johor Bahru", "duree": "3 jours", "distance_km": 380, "etapes": ["Kuala Lumpur", "Malacca", "Johor Bahru"], "description": "Malacca (UNESCO) puis Johor Bahru aux portes de Singapour.", "conseils_halal": "Nombreux restaurants halal dans la vieille ville de Malacca.", "budget_estime": "150–250€ par personne" },
-    { "id": "rt2", "titre": "KL → Cameron Highlands → Penang", "duree": "4 jours", "distance_km": 450, "etapes": ["Kuala Lumpur", "Cameron Highlands", "Ipoh", "Penang"], "description": "Plantations de thé en altitude puis street food légendaire de Penang.", "conseils_halal": "Penang : des dizaines d'échoppes avec certification JAKIM.", "budget_estime": "200–350€ par personne" }
+    {
+      "id": "rt1",
+      "titre": "KL → Malacca → Johor Bahru",
+      "duree": "3 jours",
+      "distance_km": 380,
+      "etapes": [
+        "Kuala Lumpur",
+        "Malacca",
+        "Johor Bahru"
+      ],
+      "description": "Malacca (UNESCO) puis Johor Bahru aux portes de Singapour.",
+      "conseils_halal": "Nombreux restaurants halal dans la vieille ville de Malacca.",
+      "budget_estime": "150–250€ par personne"
+    },
+    {
+      "id": "rt2",
+      "titre": "KL → Cameron Highlands → Penang",
+      "duree": "4 jours",
+      "distance_km": 450,
+      "etapes": [
+        "Kuala Lumpur",
+        "Cameron Highlands",
+        "Ipoh",
+        "Penang"
+      ],
+      "description": "Plantations de thé en altitude puis street food légendaire de Penang.",
+      "conseils_halal": "Penang : des dizaines d'échoppes avec certification JAKIM.",
+      "budget_estime": "200–350€ par personne"
+    }
   ],
   "voyages_par_type": {
-    "en_couple": { "intro": "KL est romantique et accessible, entre dîners halal avec vue Petronas et spas de luxe.", "top_experiences": ["Dîner panoramique Petronas", "Spa traditionnel malais", "Croisière Putrajaya"], "conseils": "Atmosphere 360 (tour de télécom KL) : dîner rotatif entièrement halal.", "hotels_recommandes": ["The RuMa Hotel & Residences", "Mandarin Oriental Kuala Lumpur"] },
-    "en_famille": { "intro": "KL famille par excellence : Aquaria KLCC, KL Bird Park, Petronas.", "top_experiences": ["Aquaria KLCC", "KL Bird Park", "Batu Caves", "Petrosains"], "conseils": "KL City Pass pour accès réduit aux attractions.", "hotels_recommandes": ["Mandarin Oriental Kuala Lumpur", "Dorsett Bukit Bintang"] },
-    "entre_amis": { "intro": "Street food mythique, shopping de luxe et activités outdoor.", "top_experiences": ["Food crawl Jalan Alor", "Shopping KLCC", "Marché nocturne Kampung Baru"], "conseils": "Marché du vendredi à Kampung Baru, entièrement halal dès 20h.", "hotels_recommandes": ["Dorsett Bukit Bintang"] },
-    "voyage_solo": { "intro": "KL très safe et pratique : métro excellent, wifi partout, coûts modérés.", "top_experiences": ["Exploration vélo KL Bike Share", "Cours de cuisine malaisienne", "Randonnée Parc National"], "conseils": "Le métro MRT/LRT permet d'aller partout à moins de 5 MYR.", "hotels_recommandes": ["Dorsett Bukit Bintang"] },
-    "voyage_spirituel": { "intro": "Malaisie modèle mondial : infrastructure halal JAKIM, mosquées majestueuses.", "top_experiences": ["Jumu'ah à Masjid Negara", "Institut IKIM", "Université Islamique Internationale"], "conseils": "KL totalement halal-compatible : même les malls ont des salles de prière.", "hotels_recommandes": ["The RuMa Hotel & Residences"] }
+    "en_couple": {
+      "intro": "KL est romantique et accessible, entre dîners halal avec vue Petronas et spas de luxe.",
+      "top_experiences": [
+        "Dîner panoramique Petronas",
+        "Spa traditionnel malais",
+        "Croisière Putrajaya"
+      ],
+      "conseils": "Atmosphere 360 (tour de télécom KL) : dîner rotatif entièrement halal.",
+      "hotels_recommandes": [
+        "The RuMa Hotel & Residences",
+        "Mandarin Oriental Kuala Lumpur"
+      ]
+    },
+    "en_famille": {
+      "intro": "KL famille par excellence : Aquaria KLCC, KL Bird Park, Petronas.",
+      "top_experiences": [
+        "Aquaria KLCC",
+        "KL Bird Park",
+        "Batu Caves",
+        "Petrosains"
+      ],
+      "conseils": "KL City Pass pour accès réduit aux attractions.",
+      "hotels_recommandes": [
+        "Mandarin Oriental Kuala Lumpur",
+        "Dorsett Bukit Bintang"
+      ]
+    },
+    "entre_amis": {
+      "intro": "Street food mythique, shopping de luxe et activités outdoor.",
+      "top_experiences": [
+        "Food crawl Jalan Alor",
+        "Shopping KLCC",
+        "Marché nocturne Kampung Baru"
+      ],
+      "conseils": "Marché du vendredi à Kampung Baru, entièrement halal dès 20h.",
+      "hotels_recommandes": [
+        "Dorsett Bukit Bintang"
+      ]
+    },
+    "voyage_solo": {
+      "intro": "KL très safe et pratique : métro excellent, wifi partout, coûts modérés.",
+      "top_experiences": [
+        "Exploration vélo KL Bike Share",
+        "Cours de cuisine malaisienne",
+        "Randonnée Parc National"
+      ],
+      "conseils": "Le métro MRT/LRT permet d'aller partout à moins de 5 MYR.",
+      "hotels_recommandes": [
+        "Dorsett Bukit Bintang"
+      ]
+    },
+    "voyage_spirituel": {
+      "intro": "Malaisie modèle mondial : infrastructure halal JAKIM, mosquées majestueuses.",
+      "top_experiences": [
+        "Jumu'ah à Masjid Negara",
+        "Institut IKIM",
+        "Université Islamique Internationale"
+      ],
+      "conseils": "KL totalement halal-compatible : même les malls ont des salles de prière.",
+      "hotels_recommandes": [
+        "The RuMa Hotel & Residences"
+      ]
+    }
   },
   "articles_lies": [],
-  "villes_proches": ["singapore", "penang", "malacca"]
+  "villes_proches": [
+    "singapore",
+    "penang",
+    "malacca"
+  ],
+  "codeISO": "MY"
 }

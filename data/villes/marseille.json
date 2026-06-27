@@ -5,7 +5,10 @@
   "pays_slug": "france",
   "drapeau": "🇫🇷",
   "region": "Europe",
-  "coordonnees": { "lat": 43.2965, "lng": 5.3698 },
+  "coordonnees": {
+    "lat": 43.2965,
+    "lng": 5.3698
+  },
   "score_halal": 4,
   "score_securite": 3,
   "score_famille": 4,
@@ -35,18 +38,102 @@
     "transports": "Métro (2 lignes), tram, bus RTM. Navette ferry pour les îles du Frioul."
   },
   "meteo_par_mois": [
-    { "mois": "Janvier", "temp_max": 12, "temp_min": 5, "pluie_jours": 8, "ensoleillement_h": 5, "conseil": "Mistral fréquent, mais doux pour la saison" },
-    { "mois": "Février", "temp_max": 13, "temp_min": 5, "pluie_jours": 7, "ensoleillement_h": 6, "conseil": "Idéal pour visiter les musées sans foule" },
-    { "mois": "Mars", "temp_max": 16, "temp_min": 8, "pluie_jours": 7, "ensoleillement_h": 7, "conseil": "La nature reverdit, les Calanques sont belles" },
-    { "mois": "Avril", "temp_max": 18, "temp_min": 10, "pluie_jours": 9, "ensoleillement_h": 8, "conseil": "Bonne période, les terrasses s'ouvrent" },
-    { "mois": "Mai", "temp_max": 22, "temp_min": 13, "pluie_jours": 7, "ensoleillement_h": 9, "conseil": "Idéal pour les Calanques avant l'affluence" },
-    { "mois": "Juin", "temp_max": 27, "temp_min": 18, "pluie_jours": 4, "ensoleillement_h": 11, "conseil": "Début d'été, plages accessibles" },
-    { "mois": "Juillet", "temp_max": 30, "temp_min": 21, "pluie_jours": 2, "ensoleillement_h": 12, "conseil": "Haute saison, Calanques fermées l'après-midi (risque feu)" },
-    { "mois": "Août", "temp_max": 30, "temp_min": 21, "pluie_jours": 3, "ensoleillement_h": 11, "conseil": "Très touristique, chaleur forte — profiter le matin" },
-    { "mois": "Septembre", "temp_max": 26, "temp_min": 18, "pluie_jours": 5, "ensoleillement_h": 9, "conseil": "Meilleur mois : mer chaude, moins de monde" },
-    { "mois": "Octobre", "temp_max": 21, "temp_min": 14, "pluie_jours": 8, "ensoleillement_h": 7, "conseil": "Agréable, parfait pour randonnées Calanques" },
-    { "mois": "Novembre", "temp_max": 16, "temp_min": 9, "pluie_jours": 9, "ensoleillement_h": 5, "conseil": "Mistral revient, bonnes affaires hôtelières" },
-    { "mois": "Décembre", "temp_max": 12, "temp_min": 6, "pluie_jours": 8, "ensoleillement_h": 4, "conseil": "Fêtes de fin d'année, ambiance unique au Vieux-Port" }
+    {
+      "mois": "Janvier",
+      "temp_max": 12,
+      "temp_min": 5,
+      "pluie_jours": 8,
+      "ensoleillement_h": 5,
+      "conseil": "Mistral fréquent, mais doux pour la saison"
+    },
+    {
+      "mois": "Février",
+      "temp_max": 13,
+      "temp_min": 5,
+      "pluie_jours": 7,
+      "ensoleillement_h": 6,
+      "conseil": "Idéal pour visiter les musées sans foule"
+    },
+    {
+      "mois": "Mars",
+      "temp_max": 16,
+      "temp_min": 8,
+      "pluie_jours": 7,
+      "ensoleillement_h": 7,
+      "conseil": "La nature reverdit, les Calanques sont belles"
+    },
+    {
+      "mois": "Avril",
+      "temp_max": 18,
+      "temp_min": 10,
+      "pluie_jours": 9,
+      "ensoleillement_h": 8,
+      "conseil": "Bonne période, les terrasses s'ouvrent"
+    },
+    {
+      "mois": "Mai",
+      "temp_max": 22,
+      "temp_min": 13,
+      "pluie_jours": 7,
+      "ensoleillement_h": 9,
+      "conseil": "Idéal pour les Calanques avant l'affluence"
+    },
+    {
+      "mois": "Juin",
+      "temp_max": 27,
+      "temp_min": 18,
+      "pluie_jours": 4,
+      "ensoleillement_h": 11,
+      "conseil": "Début d'été, plages accessibles"
+    },
+    {
+      "mois": "Juillet",
+      "temp_max": 30,
+      "temp_min": 21,
+      "pluie_jours": 2,
+      "ensoleillement_h": 12,
+      "conseil": "Haute saison, Calanques fermées l'après-midi (risque feu)"
+    },
+    {
+      "mois": "Août",
+      "temp_max": 30,
+      "temp_min": 21,
+      "pluie_jours": 3,
+      "ensoleillement_h": 11,
+      "conseil": "Très touristique, chaleur forte — profiter le matin"
+    },
+    {
+      "mois": "Septembre",
+      "temp_max": 26,
+      "temp_min": 18,
+      "pluie_jours": 5,
+      "ensoleillement_h": 9,
+      "conseil": "Meilleur mois : mer chaude, moins de monde"
+    },
+    {
+      "mois": "Octobre",
+      "temp_max": 21,
+      "temp_min": 14,
+      "pluie_jours": 8,
+      "ensoleillement_h": 7,
+      "conseil": "Agréable, parfait pour randonnées Calanques"
+    },
+    {
+      "mois": "Novembre",
+      "temp_max": 16,
+      "temp_min": 9,
+      "pluie_jours": 9,
+      "ensoleillement_h": 5,
+      "conseil": "Mistral revient, bonnes affaires hôtelières"
+    },
+    {
+      "mois": "Décembre",
+      "temp_max": 12,
+      "temp_min": 6,
+      "pluie_jours": 8,
+      "ensoleillement_h": 4,
+      "conseil": "Fêtes de fin d'année, ambiance unique au Vieux-Port"
+    }
   ],
   "restaurants": [
     {
@@ -62,12 +149,37 @@
       "avis_count": 1840,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 25,
-      "specialites": ["Mezze libanais", "Kafta grillée", "Chich taouk", "Hummus maison"],
+      "specialites": [
+        "Mezze libanais",
+        "Kafta grillée",
+        "Chich taouk",
+        "Hummus maison"
+      ],
       "horaires": "12h–14h30, 19h–22h30 (fermé lundi)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2900, "lng": 5.3600 },
-      "tags": ["libanais", "mezze", "famille", "Vieux-Port", "halal certifié"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.29,
+        "lng": 5.36
+      },
+      "tags": [
+        "libanais",
+        "mezze",
+        "famille",
+        "Vieux-Port",
+        "halal certifié"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1840,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r2",
@@ -82,12 +194,35 @@
       "avis_count": 1200,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 22,
-      "specialites": ["Pastilla au poulet", "Tajine d'agneau aux pruneaux", "Couscous royal"],
+      "specialites": [
+        "Pastilla au poulet",
+        "Tajine d'agneau aux pruneaux",
+        "Couscous royal"
+      ],
       "horaires": "12h–15h, 19h–23h",
       "telephone": null,
-      "coordonnees": { "lat": 43.3100, "lng": 5.3800 },
-      "tags": ["marocain", "tajine", "couscous", "authentique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.31,
+        "lng": 5.38
+      },
+      "tags": [
+        "marocain",
+        "tajine",
+        "couscous",
+        "authentique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1200,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r3",
@@ -102,12 +237,36 @@
       "avis_count": 980,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 12,
-      "specialites": ["Merguez grillée", "Brochettes mixtes", "Sandwich merguez"],
+      "specialites": [
+        "Merguez grillée",
+        "Brochettes mixtes",
+        "Sandwich merguez"
+      ],
       "horaires": "11h–20h (fermé dimanche)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2970, "lng": 5.3760 },
-      "tags": ["grillades", "économique", "marché", "populaire", "Noailles"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.297,
+        "lng": 5.376
+      },
+      "tags": [
+        "grillades",
+        "économique",
+        "marché",
+        "populaire",
+        "Noailles"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 980,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r4",
@@ -122,12 +281,35 @@
       "avis_count": 620,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 14,
-      "specialites": ["Couscous kabyle", "Chakhchoukha", "Thé à la menthe"],
+      "specialites": [
+        "Couscous kabyle",
+        "Chakhchoukha",
+        "Thé à la menthe"
+      ],
       "horaires": "12h–21h (fermé vendredi soir)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2990, "lng": 5.3740 },
-      "tags": ["kabyle", "algérien", "authentique", "économique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.299,
+        "lng": 5.374
+      },
+      "tags": [
+        "kabyle",
+        "algérien",
+        "authentique",
+        "économique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 620,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r5",
@@ -142,12 +324,36 @@
       "avis_count": 1560,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 10,
-      "specialites": ["Döner kebab", "Adana kebab", "Pide turque"],
+      "specialites": [
+        "Döner kebab",
+        "Adana kebab",
+        "Pide turque"
+      ],
       "horaires": "11h–23h tous les jours",
       "telephone": null,
-      "coordonnees": { "lat": 43.3000, "lng": 5.3750 },
-      "tags": ["turc", "kebab", "rapide", "économique", "broche"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.3,
+        "lng": 5.375
+      },
+      "tags": [
+        "turc",
+        "kebab",
+        "rapide",
+        "économique",
+        "broche"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1560,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r6",
@@ -162,12 +368,35 @@
       "avis_count": 410,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 18,
-      "specialites": ["Thiéboudienne", "Yassa poulet", "Mafé d'agneau"],
+      "specialites": [
+        "Thiéboudienne",
+        "Yassa poulet",
+        "Mafé d'agneau"
+      ],
       "horaires": "12h–15h, 19h–23h (fermé lundi)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2980, "lng": 5.3730 },
-      "tags": ["sénégalais", "africain", "familial", "authentique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.298,
+        "lng": 5.373
+      },
+      "tags": [
+        "sénégalais",
+        "africain",
+        "familial",
+        "authentique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 410,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r7",
@@ -182,12 +411,36 @@
       "avis_count": 870,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 12,
-      "specialites": ["Brick à l'œuf", "Lablabi", "Ojja merguez", "Brik au thon"],
+      "specialites": [
+        "Brick à l'œuf",
+        "Lablabi",
+        "Ojja merguez",
+        "Brik au thon"
+      ],
       "horaires": "7h–22h tous les jours",
       "telephone": null,
-      "coordonnees": { "lat": 43.2995, "lng": 5.3745 },
-      "tags": ["tunisien", "économique", "petit-déjeuner", "Belsunce"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.2995,
+        "lng": 5.3745
+      },
+      "tags": [
+        "tunisien",
+        "économique",
+        "petit-déjeuner",
+        "Belsunce"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 870,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r8",
@@ -202,12 +455,37 @@
       "avis_count": 740,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 14,
-      "specialites": ["Méchoui du dimanche", "Couscous vendredi", "Harira", "Makroud"],
+      "specialites": [
+        "Méchoui du dimanche",
+        "Couscous vendredi",
+        "Harira",
+        "Makroud"
+      ],
       "horaires": "12h–20h (fermé samedi)",
       "telephone": null,
-      "coordonnees": { "lat": 43.3050, "lng": 5.3800 },
-      "tags": ["algérien", "familial", "économique", "couscous", "fait maison"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.305,
+        "lng": 5.38
+      },
+      "tags": [
+        "algérien",
+        "familial",
+        "économique",
+        "couscous",
+        "fait maison"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 740,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r9",
@@ -222,12 +500,36 @@
       "avis_count": 1120,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 26,
-      "specialites": ["Tajine fusion", "Salade Panier (locale)", "Pastilla revisitée"],
+      "specialites": [
+        "Tajine fusion",
+        "Salade Panier (locale)",
+        "Pastilla revisitée"
+      ],
       "horaires": "12h–15h, 19h–22h30 (fermé mardi)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2990, "lng": 5.3680 },
-      "tags": ["fusion", "terrasse", "Panier", "créatif", "halal certifié"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.299,
+        "lng": 5.368
+      },
+      "tags": [
+        "fusion",
+        "terrasse",
+        "Panier",
+        "créatif",
+        "halal certifié"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1120,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r10",
@@ -242,12 +544,36 @@
       "avis_count": 2100,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 18,
-      "specialites": ["Pizza au feu de bois", "Pizza 4 fromages", "Tiramisu maison"],
+      "specialites": [
+        "Pizza au feu de bois",
+        "Pizza 4 fromages",
+        "Tiramisu maison"
+      ],
       "horaires": "11h30–14h, 18h30–23h",
       "telephone": null,
-      "coordonnees": { "lat": 43.2975, "lng": 5.3700 },
-      "tags": ["pizza", "halal certifié", "four à bois", "italien", "famille"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.2975,
+        "lng": 5.37
+      },
+      "tags": [
+        "pizza",
+        "halal certifié",
+        "four à bois",
+        "italien",
+        "famille"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2100,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r11",
@@ -262,12 +588,36 @@
       "avis_count": 890,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 20,
-      "specialites": ["Shish taouk", "Adana kebab", "Lahmacun"],
+      "specialites": [
+        "Shish taouk",
+        "Adana kebab",
+        "Lahmacun"
+      ],
       "horaires": "12h–23h tous les jours",
       "telephone": null,
-      "coordonnees": { "lat": 43.2960, "lng": 5.3760 },
-      "tags": ["turc", "grillades", "famille", "groupe", "spacieux"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.296,
+        "lng": 5.376
+      },
+      "tags": [
+        "turc",
+        "grillades",
+        "famille",
+        "groupe",
+        "spacieux"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 890,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r12",
@@ -282,12 +632,35 @@
       "avis_count": 580,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 13,
-      "specialites": ["Biryani d'agneau", "Curry palak", "Naan au four"],
+      "specialites": [
+        "Biryani d'agneau",
+        "Curry palak",
+        "Naan au four"
+      ],
       "horaires": "12h–15h, 18h–23h",
       "telephone": null,
-      "coordonnees": { "lat": 43.2970, "lng": 5.3775 },
-      "tags": ["pakistanais", "biryani", "épicé", "authentique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.297,
+        "lng": 5.3775
+      },
+      "tags": [
+        "pakistanais",
+        "biryani",
+        "épicé",
+        "authentique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 580,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r13",
@@ -302,12 +675,37 @@
       "avis_count": 760,
       "fourchette_prix": "€€€",
       "prix_moyen_personne_eur": 35,
-      "specialites": ["Mezze royaux", "Kibbé boulettes", "Fattoush", "Baklava maison"],
+      "specialites": [
+        "Mezze royaux",
+        "Kibbé boulettes",
+        "Fattoush",
+        "Baklava maison"
+      ],
       "horaires": "12h–14h30, 19h–23h (fermé dimanche midi)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2950, "lng": 5.3750 },
-      "tags": ["libanais", "gastronomique", "élégant", "couple", "mezze"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.295,
+        "lng": 5.375
+      },
+      "tags": [
+        "libanais",
+        "gastronomique",
+        "élégant",
+        "couple",
+        "mezze"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 760,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r14",
@@ -322,12 +720,36 @@
       "avis_count": 1040,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 22,
-      "specialites": ["Couscous 7 légumes", "Tajine kefta œuf", "M'hammar"],
+      "specialites": [
+        "Couscous 7 légumes",
+        "Tajine kefta œuf",
+        "M'hammar"
+      ],
       "horaires": "11h30–23h",
       "telephone": null,
-      "coordonnees": { "lat": 43.2965, "lng": 5.3755 },
-      "tags": ["marocain", "couscous", "tajine", "traditionnel", "décoration"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.2965,
+        "lng": 5.3755
+      },
+      "tags": [
+        "marocain",
+        "couscous",
+        "tajine",
+        "traditionnel",
+        "décoration"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1040,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r15",
@@ -342,12 +764,36 @@
       "avis_count": 380,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 16,
-      "specialites": ["Ndolé", "Poulet DG", "Eru", "Fufu"],
+      "specialites": [
+        "Ndolé",
+        "Poulet DG",
+        "Eru",
+        "Fufu"
+      ],
       "horaires": "12h–21h (fermé lundi)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2980, "lng": 5.3690 },
-      "tags": ["camerounais", "africain", "familial", "découverte"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.298,
+        "lng": 5.369
+      },
+      "tags": [
+        "camerounais",
+        "africain",
+        "familial",
+        "découverte"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 380,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r16",
@@ -362,12 +808,36 @@
       "avis_count": 2350,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 9,
-      "specialites": ["Shawarma poulet", "Shawarma bœuf", "Wrap falafel"],
+      "specialites": [
+        "Shawarma poulet",
+        "Shawarma bœuf",
+        "Wrap falafel"
+      ],
       "horaires": "11h–2h du matin tous les jours",
       "telephone": null,
-      "coordonnees": { "lat": 43.2968, "lng": 5.3778 },
-      "tags": ["shawarma", "street food", "rapide", "économique", "nuit"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.2968,
+        "lng": 5.3778
+      },
+      "tags": [
+        "shawarma",
+        "street food",
+        "rapide",
+        "économique",
+        "nuit"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2350,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r17",
@@ -382,12 +852,35 @@
       "avis_count": 820,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 24,
-      "specialites": ["Bouillabaisse halal", "Daube provençale", "Tarte Tatin"],
+      "specialites": [
+        "Bouillabaisse halal",
+        "Daube provençale",
+        "Tarte Tatin"
+      ],
       "horaires": "8h–23h",
       "telephone": null,
-      "coordonnees": { "lat": 43.2953, "lng": 5.3695 },
-      "tags": ["brasserie", "français", "Vieux-Port", "vue mer"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.2953,
+        "lng": 5.3695
+      },
+      "tags": [
+        "brasserie",
+        "français",
+        "Vieux-Port",
+        "vue mer"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 820,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r18",
@@ -402,12 +895,35 @@
       "avis_count": 560,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 13,
-      "specialites": ["Chakhchoukha familiale", "Chorba", "Bourek"],
+      "specialites": [
+        "Chakhchoukha familiale",
+        "Chorba",
+        "Bourek"
+      ],
       "horaires": "11h–22h (fermé vendredi matin)",
       "telephone": null,
-      "coordonnees": { "lat": 43.3150, "lng": 5.3850 },
-      "tags": ["algérien", "familial", "économique", "populaire"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.315,
+        "lng": 5.385
+      },
+      "tags": [
+        "algérien",
+        "familial",
+        "économique",
+        "populaire"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 560,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r19",
@@ -422,12 +938,35 @@
       "avis_count": 490,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 19,
-      "specialites": ["Butter chicken", "Saag agneau", "Naan au beurre"],
+      "specialites": [
+        "Butter chicken",
+        "Saag agneau",
+        "Naan au beurre"
+      ],
       "horaires": "12h–14h30, 19h–22h30",
       "telephone": null,
-      "coordonnees": { "lat": 43.2930, "lng": 5.3800 },
-      "tags": ["indien", "curry", "épicé", "végé-friendly"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.293,
+        "lng": 5.38
+      },
+      "tags": [
+        "indien",
+        "curry",
+        "épicé",
+        "végé-friendly"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 490,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r20",
@@ -442,12 +981,35 @@
       "avis_count": 320,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 20,
-      "specialites": ["Masgouf", "Dolma irakien", "Biryani irakien"],
+      "specialites": [
+        "Masgouf",
+        "Dolma irakien",
+        "Biryani irakien"
+      ],
       "horaires": "12h–22h (fermé mercredi)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2985, "lng": 5.3760 },
-      "tags": ["irakien", "rare", "moyen-oriental", "découverte"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.2985,
+        "lng": 5.376
+      },
+      "tags": [
+        "irakien",
+        "rare",
+        "moyen-oriental",
+        "découverte"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 320,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r21",
@@ -462,12 +1024,35 @@
       "avis_count": 710,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 11,
-      "specialites": ["Pita falafel", "Wrap sabich", "Salade libanaise"],
+      "specialites": [
+        "Pita falafel",
+        "Wrap sabich",
+        "Salade libanaise"
+      ],
       "horaires": "11h–22h (fermé dimanche)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2955, "lng": 5.3740 },
-      "tags": ["falafel", "street food", "végétarien", "rapide"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.2955,
+        "lng": 5.374
+      },
+      "tags": [
+        "falafel",
+        "street food",
+        "végétarien",
+        "rapide"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 710,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r22",
@@ -482,12 +1067,35 @@
       "avis_count": 930,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 14,
-      "specialites": ["Couscous boulettes", "Couscous royal", "Chorba frik"],
+      "specialites": [
+        "Couscous boulettes",
+        "Couscous royal",
+        "Chorba frik"
+      ],
       "horaires": "12h–15h, 19h–22h (fermé dimanche soir)",
       "telephone": null,
-      "coordonnees": { "lat": 43.3040, "lng": 5.3790 },
-      "tags": ["couscous", "familial", "traditionnel", "économique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.304,
+        "lng": 5.379
+      },
+      "tags": [
+        "couscous",
+        "familial",
+        "traditionnel",
+        "économique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 930,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r23",
@@ -502,12 +1110,35 @@
       "avis_count": 840,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 28,
-      "specialites": ["Agneau Provence-miel", "Bastilla revisitée", "Chbakia dessert"],
+      "specialites": [
+        "Agneau Provence-miel",
+        "Bastilla revisitée",
+        "Chbakia dessert"
+      ],
       "horaires": "12h–14h30, 19h30–23h (fermé lundi)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2910, "lng": 5.3810 },
-      "tags": ["marocain", "contemporain", "Cours Julien", "créatif"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.291,
+        "lng": 5.381
+      },
+      "tags": [
+        "marocain",
+        "contemporain",
+        "Cours Julien",
+        "créatif"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 840,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r24",
@@ -522,12 +1153,35 @@
       "avis_count": 540,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 9,
-      "specialites": ["Sandwich kafta", "Merguez maison", "Mlawi"],
+      "specialites": [
+        "Sandwich kafta",
+        "Merguez maison",
+        "Mlawi"
+      ],
       "horaires": "10h–23h tous les jours",
       "telephone": null,
-      "coordonnees": { "lat": 43.2978, "lng": 5.3678 },
-      "tags": ["algérien", "street food", "sandwich", "économique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.2978,
+        "lng": 5.3678
+      },
+      "tags": [
+        "algérien",
+        "street food",
+        "sandwich",
+        "économique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r25",
@@ -542,12 +1196,35 @@
       "avis_count": 680,
       "fourchette_prix": "€€€",
       "prix_moyen_personne_eur": 40,
-      "specialites": ["Dorade grillée", "Rouget barbet", "Bouillabaisse halal-friendly"],
+      "specialites": [
+        "Dorade grillée",
+        "Rouget barbet",
+        "Bouillabaisse halal-friendly"
+      ],
       "horaires": "12h–15h, 19h–23h (fermé lundi)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2940, "lng": 5.3720 },
-      "tags": ["poissons", "mer", "Vieux-Port", "gastronomique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.294,
+        "lng": 5.372
+      },
+      "tags": [
+        "poissons",
+        "mer",
+        "Vieux-Port",
+        "gastronomique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 680,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r26",
@@ -562,12 +1239,36 @@
       "avis_count": 1450,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 17,
-      "specialites": ["Marseillais Burger", "Smash Burger bœuf", "Cheese Fries"],
+      "specialites": [
+        "Marseillais Burger",
+        "Smash Burger bœuf",
+        "Cheese Fries"
+      ],
       "horaires": "11h30–23h tous les jours",
       "telephone": null,
-      "coordonnees": { "lat": 43.2960, "lng": 5.3755 },
-      "tags": ["burger", "américain", "halal certifié", "jeunes", "famille"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.296,
+        "lng": 5.3755
+      },
+      "tags": [
+        "burger",
+        "américain",
+        "halal certifié",
+        "jeunes",
+        "famille"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1450,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r27",
@@ -582,12 +1283,35 @@
       "avis_count": 390,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 10,
-      "specialites": ["Simit", "Börek épinards", "Baklava pistache"],
+      "specialites": [
+        "Simit",
+        "Börek épinards",
+        "Baklava pistache"
+      ],
       "horaires": "8h–22h tous les jours",
       "telephone": null,
-      "coordonnees": { "lat": 43.2975, "lng": 5.3780 },
-      "tags": ["turc", "pâtisserie", "café", "salon de thé"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.2975,
+        "lng": 5.378
+      },
+      "tags": [
+        "turc",
+        "pâtisserie",
+        "café",
+        "salon de thé"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 390,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r28",
@@ -602,12 +1326,36 @@
       "avis_count": 670,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 20,
-      "specialites": ["Brick créative", "Pasta tunisienne", "Salade méchouia"],
+      "specialites": [
+        "Brick créative",
+        "Pasta tunisienne",
+        "Salade méchouia"
+      ],
       "horaires": "12h–23h (fermé lundi)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2908, "lng": 5.3805 },
-      "tags": ["tunisien", "branché", "Cours Julien", "fusion", "jus frais"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.2908,
+        "lng": 5.3805
+      },
+      "tags": [
+        "tunisien",
+        "branché",
+        "Cours Julien",
+        "fusion",
+        "jus frais"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 670,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r29",
@@ -622,12 +1370,36 @@
       "avis_count": 780,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 22,
-      "specialites": ["Entrecôte halal", "Salade Prado", "Moules-frites"],
+      "specialites": [
+        "Entrecôte halal",
+        "Salade Prado",
+        "Moules-frites"
+      ],
       "horaires": "11h–23h tous les jours",
       "telephone": null,
-      "coordonnees": { "lat": 43.2700, "lng": 5.3850 },
-      "tags": ["brasserie", "famille", "terrasse", "plage", "Prado"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 43.27,
+        "lng": 5.385
+      },
+      "tags": [
+        "brasserie",
+        "famille",
+        "terrasse",
+        "plage",
+        "Prado"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 780,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r30",
@@ -642,12 +1414,37 @@
       "avis_count": 3800,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 8,
-      "specialites": ["Baklava", "Dattes Medjoul", "Olives marinées", "Épices"],
+      "specialites": [
+        "Baklava",
+        "Dattes Medjoul",
+        "Olives marinées",
+        "Épices"
+      ],
       "horaires": "8h–13h (fermé dimanche)",
       "telephone": null,
-      "coordonnees": { "lat": 43.2969, "lng": 5.3779 },
-      "tags": ["marché", "street food", "épices", "Noailles", "incontournable"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 43.2969,
+        "lng": 5.3779
+      },
+      "tags": [
+        "marché",
+        "street food",
+        "épices",
+        "Noailles",
+        "incontournable"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3800,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     }
   ],
   "mosquees": [
@@ -660,7 +1457,10 @@
       "quartier": "13e arrondissement",
       "capacite_fideles": 7000,
       "annee_construction": "1994 (agrandie 2017)",
-      "coordonnees": { "lat": 43.3050, "lng": 5.4000 },
+      "coordonnees": {
+        "lat": 43.305,
+        "lng": 5.4
+      },
       "acces_non_musulmans": false,
       "note": 4.7,
       "avis_count": 2100,
@@ -676,7 +1476,10 @@
       "quartier": "3e arrondissement",
       "capacite_fideles": 1200,
       "annee_construction": "1985",
-      "coordonnees": { "lat": 43.3020, "lng": 5.3820 },
+      "coordonnees": {
+        "lat": 43.302,
+        "lng": 5.382
+      },
       "acces_non_musulmans": false,
       "note": 4.5,
       "avis_count": 680,
@@ -692,7 +1495,10 @@
       "quartier": "Noailles (1er)",
       "capacite_fideles": 400,
       "annee_construction": "2001",
-      "coordonnees": { "lat": 43.2972, "lng": 5.3782 },
+      "coordonnees": {
+        "lat": 43.2972,
+        "lng": 5.3782
+      },
       "acces_non_musulmans": false,
       "note": 4.3,
       "avis_count": 340,
@@ -708,7 +1514,10 @@
       "quartier": "14e arrondissement",
       "capacite_fideles": 800,
       "annee_construction": "1998",
-      "coordonnees": { "lat": 43.3100, "lng": 5.4050 },
+      "coordonnees": {
+        "lat": 43.31,
+        "lng": 5.405
+      },
       "acces_non_musulmans": false,
       "note": 4.4,
       "avis_count": 480,
@@ -724,7 +1533,10 @@
       "quartier": "3e arrondissement",
       "capacite_fideles": 600,
       "annee_construction": "1992",
-      "coordonnees": { "lat": 43.3010, "lng": 5.3830 },
+      "coordonnees": {
+        "lat": 43.301,
+        "lng": 5.383
+      },
       "acces_non_musulmans": false,
       "note": 4.4,
       "avis_count": 390,
@@ -740,7 +1552,10 @@
       "quartier": "14e arrondissement",
       "capacite_fideles": 500,
       "annee_construction": "2003",
-      "coordonnees": { "lat": 43.3220, "lng": 5.4020 },
+      "coordonnees": {
+        "lat": 43.322,
+        "lng": 5.402
+      },
       "acces_non_musulmans": false,
       "note": 4.2,
       "avis_count": 260,
@@ -756,7 +1571,10 @@
       "quartier": "Belsunce (1er)",
       "capacite_fideles": 250,
       "annee_construction": "1989",
-      "coordonnees": { "lat": 43.2998, "lng": 5.3748 },
+      "coordonnees": {
+        "lat": 43.2998,
+        "lng": 5.3748
+      },
       "acces_non_musulmans": false,
       "note": 4.1,
       "avis_count": 180,
@@ -772,7 +1590,10 @@
       "quartier": "5e arrondissement",
       "capacite_fideles": 350,
       "annee_construction": "2005",
-      "coordonnees": { "lat": 43.2940, "lng": 5.3825 },
+      "coordonnees": {
+        "lat": 43.294,
+        "lng": 5.3825
+      },
       "acces_non_musulmans": false,
       "note": 4.3,
       "avis_count": 220,
@@ -788,7 +1609,10 @@
       "quartier": "11e arrondissement",
       "capacite_fideles": 450,
       "annee_construction": "2000",
-      "coordonnees": { "lat": 43.2880, "lng": 5.4100 },
+      "coordonnees": {
+        "lat": 43.288,
+        "lng": 5.41
+      },
       "acces_non_musulmans": false,
       "note": 4.3,
       "avis_count": 290,
@@ -804,7 +1628,10 @@
       "quartier": "3e arrondissement",
       "capacite_fideles": 900,
       "annee_construction": "1996",
-      "coordonnees": { "lat": 43.3060, "lng": 5.3860 },
+      "coordonnees": {
+        "lat": 43.306,
+        "lng": 5.386
+      },
       "acces_non_musulmans": false,
       "note": 4.5,
       "avis_count": 520,
@@ -828,8 +1655,27 @@
       "prix_nuit_min": 280,
       "devise": "EUR",
       "description": "Palais baroque du XVIIIe siècle réhabilité en hôtel de luxe, classé monument historique. Vue imprenable sur le Vieux-Port. Restaurant gastronomique, spa.",
-      "coordonnees": { "lat": 43.2962, "lng": 5.3708 },
-      "tags": ["luxe", "Vieux-Port", "historique", "vue mer", "spa"]
+      "coordonnees": {
+        "lat": 43.2962,
+        "lng": 5.3708
+      },
+      "tags": [
+        "luxe",
+        "Vieux-Port",
+        "historique",
+        "vue mer",
+        "spa"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 1800,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h2",
@@ -846,8 +1692,26 @@
       "prix_nuit_min": 240,
       "devise": "EUR",
       "description": "Hôtel de luxe avec vue panoramique sur la Méditerranée et le Vieux-Port depuis les chambres hautes. Piscine sur le toit, restaurant L'Olivero (cuisine méditerranéenne).",
-      "coordonnees": { "lat": 43.2890, "lng": 5.3630 },
-      "tags": ["luxe", "vue mer", "piscine", "restaurant gastronomique"]
+      "coordonnees": {
+        "lat": 43.289,
+        "lng": 5.363
+      },
+      "tags": [
+        "luxe",
+        "vue mer",
+        "piscine",
+        "restaurant gastronomique"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 2100,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h3",
@@ -864,8 +1728,26 @@
       "prix_nuit_min": 150,
       "devise": "EUR",
       "description": "Situé directement sur le Vieux-Port, idéal pour profiter du spectacle des bateaux et du marché aux poissons. Chambres modernes, bar rooftop avec vue.",
-      "coordonnees": { "lat": 43.2937, "lng": 5.3688 },
-      "tags": ["Vieux-Port", "vue mer", "moderne", "bien situé"]
+      "coordonnees": {
+        "lat": 43.2937,
+        "lng": 5.3688
+      },
+      "tags": [
+        "Vieux-Port",
+        "vue mer",
+        "moderne",
+        "bien situé"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 3200,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h4",
@@ -882,8 +1764,26 @@
       "prix_nuit_min": 80,
       "devise": "EUR",
       "description": "Hôtel bien situé sur la Canebière, à 2 minutes du marché de Noailles et du centre halal de Marseille. Pratique, propre, personnel serviable.",
-      "coordonnees": { "lat": 43.2970, "lng": 5.3773 },
-      "tags": ["central", "Canebière", "Noailles proche", "économique"]
+      "coordonnees": {
+        "lat": 43.297,
+        "lng": 5.3773
+      },
+      "tags": [
+        "central",
+        "Canebière",
+        "Noailles proche",
+        "économique"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 1800,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h5",
@@ -900,8 +1800,26 @@
       "prix_nuit_min": 65,
       "devise": "EUR",
       "description": "Hôtel économique au cœur du quartier Belsunce, idéalement situé pour explorer la scène halal de Marseille à pied. Propre et fonctionnel.",
-      "coordonnees": { "lat": 43.2995, "lng": 5.3745 },
-      "tags": ["économique", "Belsunce", "central", "halal-friendly localisation"]
+      "coordonnees": {
+        "lat": 43.2995,
+        "lng": 5.3745
+      },
+      "tags": [
+        "économique",
+        "Belsunce",
+        "central",
+        "halal-friendly localisation"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 2600,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h6",
@@ -918,8 +1836,26 @@
       "prix_nuit_min": 130,
       "devise": "EUR",
       "description": "Hôtel de charme dans le quartier résidentiel du Périer, avec piscine chauffée. Calme et verdure, navette vers le centre. Idéal pour les familles.",
-      "coordonnees": { "lat": 43.2720, "lng": 5.3940 },
-      "tags": ["piscine", "calme", "famille", "8e arrondissement"]
+      "coordonnees": {
+        "lat": 43.272,
+        "lng": 5.394
+      },
+      "tags": [
+        "piscine",
+        "calme",
+        "famille",
+        "8e arrondissement"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 1200,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h7",
@@ -936,8 +1872,25 @@
       "prix_nuit_min": 75,
       "devise": "EUR",
       "description": "Hôtel confortable en centre-ville, à distance de marche du Vieux-Port et de la Canebière. Chambres correctes, petit-déjeuner buffet.",
-      "coordonnees": { "lat": 43.2948, "lng": 5.3730 },
-      "tags": ["central", "confortable", "Vieux-Port proche"]
+      "coordonnees": {
+        "lat": 43.2948,
+        "lng": 5.373
+      },
+      "tags": [
+        "central",
+        "confortable",
+        "Vieux-Port proche"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 940,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h8",
@@ -954,8 +1907,27 @@
       "prix_nuit_min": 70,
       "devise": "EUR",
       "description": "Appart'hôtel idéal pour les familles en séjour prolongé : cuisinette équipée permettant de préparer ses propres repas halal, espace salon. Proche du Stade Vélodrome et des plages du Prado.",
-      "coordonnees": { "lat": 43.2680, "lng": 5.3960 },
-      "tags": ["famille", "cuisinette", "long séjour", "Prado", "autonomie halal"]
+      "coordonnees": {
+        "lat": 43.268,
+        "lng": 5.396
+      },
+      "tags": [
+        "famille",
+        "cuisinette",
+        "long séjour",
+        "Prado",
+        "autonomie halal"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 720,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     }
   ],
   "activites": [
@@ -971,8 +1943,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Tôt le matin pour le marché aux poissons (7h–13h)",
       "a_savoir": "La navette de la Maison Auer est le biscuit traditionnel marseillais halal, disponible depuis 1780",
-      "tags": ["gratuit", "emblématique", "marché", "histoire", "famille"],
-      "coordonnees": { "lat": 43.2953, "lng": 5.3727 }
+      "tags": [
+        "gratuit",
+        "emblématique",
+        "marché",
+        "histoire",
+        "famille"
+      ],
+      "coordonnees": {
+        "lat": 43.2953,
+        "lng": 5.3727
+      }
     },
     {
       "id": "a2",
@@ -986,8 +1967,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "En fin d'après-midi pour le coucher de soleil sur la mer",
       "a_savoir": "Accessible à pied (20 min de montée depuis le Vieux-Port) ou en navette touristique depuis la Canebière",
-      "tags": ["panorama", "gratuit", "emblématique", "vue", "famille"],
-      "coordonnees": { "lat": 43.2840, "lng": 5.3706 }
+      "tags": [
+        "panorama",
+        "gratuit",
+        "emblématique",
+        "vue",
+        "famille"
+      ],
+      "coordonnees": {
+        "lat": 43.284,
+        "lng": 5.3706
+      }
     },
     {
       "id": "a3",
@@ -1001,8 +1991,18 @@
       "adapte_seniors": false,
       "meilleur_moment": "Mai-juin et septembre (accès restreint juillet-août en raison des risques d'incendie)",
       "a_savoir": "Certaines calanques nécessitent une réservation obligatoire en été (système Géopass). Prévoir pique-nique halal car aucune restauration sur place.",
-      "tags": ["nature", "UNESCO", "plage", "randonnée", "famille", "calanques"],
-      "coordonnees": { "lat": 43.2140, "lng": 5.4260 }
+      "tags": [
+        "nature",
+        "UNESCO",
+        "plage",
+        "randonnée",
+        "famille",
+        "calanques"
+      ],
+      "coordonnees": {
+        "lat": 43.214,
+        "lng": 5.426
+      }
     },
     {
       "id": "a4",
@@ -1016,8 +2016,18 @@
       "adapte_seniors": true,
       "meilleur_moment": "Le matin en semaine pour éviter les files",
       "a_savoir": "Le premier dimanche du mois, l'entrée est gratuite. Café-restaurant sur les terrasses avec vue sur mer.",
-      "tags": ["culture", "musée", "Méditerranée", "architecture", "famille", "islamique"],
-      "coordonnees": { "lat": 43.2965, "lng": 5.3611 }
+      "tags": [
+        "culture",
+        "musée",
+        "Méditerranée",
+        "architecture",
+        "famille",
+        "islamique"
+      ],
+      "coordonnees": {
+        "lat": 43.2965,
+        "lng": 5.3611
+      }
     },
     {
       "id": "a5",
@@ -1031,8 +2041,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Journée ensoleillée de mai à octobre",
       "a_savoir": "Prévoir pique-nique halal car la restauration sur l'île du Frioul est limitée. Crèmes solaires et chapeau indispensables en été.",
-      "tags": ["bateau", "île", "histoire", "littérature", "famille"],
-      "coordonnees": { "lat": 43.2798, "lng": 5.3250 }
+      "tags": [
+        "bateau",
+        "île",
+        "histoire",
+        "littérature",
+        "famille"
+      ],
+      "coordonnees": {
+        "lat": 43.2798,
+        "lng": 5.325
+      }
     },
     {
       "id": "a6",
@@ -1046,8 +2065,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Matinée pour la lumière et l'animation",
       "a_savoir": "Le quartier est en pente — chaussures confortables recommandées. Nombreux artistes exposent leurs œuvres dans la rue le week-end.",
-      "tags": ["art de rue", "balade", "historique", "photo", "gratuit"],
-      "coordonnees": { "lat": 43.2980, "lng": 5.3670 }
+      "tags": [
+        "art de rue",
+        "balade",
+        "historique",
+        "photo",
+        "gratuit"
+      ],
+      "coordonnees": {
+        "lat": 43.298,
+        "lng": 5.367
+      }
     },
     {
       "id": "a7",
@@ -1061,8 +2089,18 @@
       "adapte_seniors": true,
       "meilleur_moment": "Tôt le matin (9h–12h) pour la fraîcheur des produits et l'animation",
       "a_savoir": "Ambiance très animée — éviter avec de très jeunes enfants ou si on déteste la foule. Acheter les dattes Medjoul — moins chères qu'ailleurs.",
-      "tags": ["marché", "épices", "oriental", "Noailles", "famille", "halal"],
-      "coordonnees": { "lat": 43.2969, "lng": 5.3779 }
+      "tags": [
+        "marché",
+        "épices",
+        "oriental",
+        "Noailles",
+        "famille",
+        "halal"
+      ],
+      "coordonnees": {
+        "lat": 43.2969,
+        "lng": 5.3779
+      }
     },
     {
       "id": "a8",
@@ -1076,8 +2114,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Juin-septembre (eau chaude). Préférer semaine pour éviter la foule du week-end.",
       "a_savoir": "Des espaces de jeux pour enfants sont présents. Plusieurs snacks halal aux alentours. La Plage du Roucas Blanc est plus calme.",
-      "tags": ["plage", "famille", "gratuit", "été", "enfants"],
-      "coordonnees": { "lat": 43.2680, "lng": 5.3700 }
+      "tags": [
+        "plage",
+        "famille",
+        "gratuit",
+        "été",
+        "enfants"
+      ],
+      "coordonnees": {
+        "lat": 43.268,
+        "lng": 5.37
+      }
     },
     {
       "id": "a9",
@@ -1091,8 +2138,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Tout temps (musée intérieur)",
       "a_savoir": "Inclus dans le pass musées de Marseille. Situé dans le Centre Bourse, au cœur de la ville.",
-      "tags": ["histoire", "archéologie", "musée", "famille", "culture"],
-      "coordonnees": { "lat": 43.2976, "lng": 5.3730 }
+      "tags": [
+        "histoire",
+        "archéologie",
+        "musée",
+        "famille",
+        "culture"
+      ],
+      "coordonnees": {
+        "lat": 43.2976,
+        "lng": 5.373
+      }
     },
     {
       "id": "a10",
@@ -1106,8 +2162,17 @@
       "adapte_seniors": false,
       "meilleur_moment": "Week-end en journée pour le marché et les animations",
       "a_savoir": "Plusieurs restaurants halal dans le périmètre du Cours Julien. Nombreux photographes street art y viennent pour les fresques.",
-      "tags": ["street art", "culture", "bohème", "gratuit", "photo"],
-      "coordonnees": { "lat": 43.2910, "lng": 5.3805 }
+      "tags": [
+        "street art",
+        "culture",
+        "bohème",
+        "gratuit",
+        "photo"
+      ],
+      "coordonnees": {
+        "lat": 43.291,
+        "lng": 5.3805
+      }
     },
     {
       "id": "a11",
@@ -1121,8 +2186,17 @@
       "adapte_seniors": false,
       "meilleur_moment": "Mai, juin et septembre — accès possible réservation en été",
       "a_savoir": "Prévoir de l'eau en quantité (pas de point d'eau sur le sentier). Accès restreint en période de risque feux de forêt (vérifier avant).",
-      "tags": ["randonnée", "calanque", "snorkeling", "nature", "sportif"],
-      "coordonnees": { "lat": 43.2120, "lng": 5.4410 }
+      "tags": [
+        "randonnée",
+        "calanque",
+        "snorkeling",
+        "nature",
+        "sportif"
+      ],
+      "coordonnees": {
+        "lat": 43.212,
+        "lng": 5.441
+      }
     },
     {
       "id": "a12",
@@ -1136,8 +2210,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Matchs de Ligue 1 ou Coupe d'Europe (vérifier le calendrier)",
       "a_savoir": "Réserver les billets en avance sur le site officiel de l'OM. Des snacks halal sont disponibles dans le stade.",
-      "tags": ["football", "OM", "sport", "famille", "événement"],
-      "coordonnees": { "lat": 43.2695, "lng": 5.3952 }
+      "tags": [
+        "football",
+        "OM",
+        "sport",
+        "famille",
+        "événement"
+      ],
+      "coordonnees": {
+        "lat": 43.2695,
+        "lng": 5.3952
+      }
     },
     {
       "id": "a13",
@@ -1151,8 +2234,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "En fin d'après-midi pour la lumière dorée",
       "a_savoir": "Accès gratuit aux jardins et terrasses. Le billet MuCEM inclut la visite du Fort Saint-Jean.",
-      "tags": ["histoire", "fortification", "vue", "gratuit jardins", "MuCEM"],
-      "coordonnees": { "lat": 43.2966, "lng": 5.3607 }
+      "tags": [
+        "histoire",
+        "fortification",
+        "vue",
+        "gratuit jardins",
+        "MuCEM"
+      ],
+      "coordonnees": {
+        "lat": 43.2966,
+        "lng": 5.3607
+      }
     },
     {
       "id": "a14",
@@ -1166,8 +2258,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Juin à septembre (mer calme et eau chaude)",
       "a_savoir": "Réserver en avance en haute saison. Certaines excursions permettent la baignade en calanque. Prévoir crèmes solaires.",
-      "tags": ["bateau", "calanques", "famille", "mer", "excursion"],
-      "coordonnees": { "lat": 43.2940, "lng": 5.3720 }
+      "tags": [
+        "bateau",
+        "calanques",
+        "famille",
+        "mer",
+        "excursion"
+      ],
+      "coordonnees": {
+        "lat": 43.294,
+        "lng": 5.372
+      }
     },
     {
       "id": "a15",
@@ -1181,8 +2282,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Toute l'année",
       "a_savoir": "La Savonnerie Marius Fabre à Salon-de-Provence (40 min de Marseille) est la plus authentique. Plusieurs boutiques de savon à Noailles.",
-      "tags": ["artisanat", "culture", "souvenir", "savon de Marseille", "famille"],
-      "coordonnees": { "lat": 43.2968, "lng": 5.3779 }
+      "tags": [
+        "artisanat",
+        "culture",
+        "souvenir",
+        "savon de Marseille",
+        "famille"
+      ],
+      "coordonnees": {
+        "lat": 43.2968,
+        "lng": 5.3779
+      }
     }
   ],
   "road_trips": [
@@ -1191,84 +2301,189 @@
       "titre": "Marseille → Aix-en-Provence — Escapade Art & Gastronomie",
       "duree": "1 jour",
       "distance_km": 35,
-      "etapes": ["Marseille", "Aix-en-Provence"],
+      "etapes": [
+        "Marseille",
+        "Aix-en-Provence"
+      ],
       "description": "À seulement 30 minutes de Marseille, Aix-en-Provence est la ville de Paul Cézanne et de la calissons. Vieille ville élégante, fontaines thermales, cours Mirabeau et magnifiques marchés. Quelques restaurants halal dans le centre d'Aix.",
       "conseils_halal": "L'offre halal à Aix est limitée mais existe dans le quartier Méjanes. Prévoir son repas depuis Marseille ou vérifier les adresses en avance. Marché provençal le mardi, jeudi et samedi.",
       "budget_estime": "30–80€/personne",
-      "tags": ["culture", "art", "provence", "voiture ou bus"]
+      "tags": [
+        "culture",
+        "art",
+        "provence",
+        "voiture ou bus"
+      ]
     },
     {
       "id": "rt2",
       "titre": "Marseille → Cassis → La Ciotat — Côte d'Azur à portée",
       "duree": "1 jour",
       "distance_km": 50,
-      "etapes": ["Marseille", "Cassis", "La Ciotat"],
+      "etapes": [
+        "Marseille",
+        "Cassis",
+        "La Ciotat"
+      ],
       "description": "La plus belle route côtière de la région. Cassis, petit port authentique aux falaises de calcaire blanc, puis La Ciotat, berceau du cinéma (les frères Lumière y ont tourné leur premier film). Baignades en calanque et ambiance Côte d'Azur.",
       "conseils_halal": "Options halal très limitées à Cassis — prévoir pique-nique depuis Marseille. La Ciotat a quelques options. Idéal pour une journée nature.",
       "budget_estime": "20–50€/personne",
-      "tags": ["nature", "calanques", "cinéma", "mer", "pique-nique"]
+      "tags": [
+        "nature",
+        "calanques",
+        "cinéma",
+        "mer",
+        "pique-nique"
+      ]
     },
     {
       "id": "rt3",
       "titre": "Marseille → Avignon → Pont du Gard — Patrimoine UNESCO",
       "duree": "2 jours",
       "distance_km": 150,
-      "etapes": ["Marseille", "Aix-en-Provence", "Salon-de-Provence", "Avignon", "Pont du Gard"],
+      "etapes": [
+        "Marseille",
+        "Aix-en-Provence",
+        "Salon-de-Provence",
+        "Avignon",
+        "Pont du Gard"
+      ],
       "description": "Deux jours de patrimoine UNESCO exceptionnel : Avignon (Palais des Papes, pont d'Avignon classé UNESCO), Pont du Gard (aqueduc romain du Ier siècle), les Alpilles et Les Baux-de-Provence. La Provence dans toute sa splendeur.",
       "conseils_halal": "Avignon a une communauté musulmane notable — plusieurs restaurants halal disponibles dans le centre. Prévoir ses repas pour le Pont du Gard. Budget hôtel à Avignon.",
       "budget_estime": "150–300€/personne",
-      "tags": ["UNESCO", "histoire", "antiquité", "Avignon", "Pont du Gard"]
+      "tags": [
+        "UNESCO",
+        "histoire",
+        "antiquité",
+        "Avignon",
+        "Pont du Gard"
+      ]
     }
   ],
   "voyages_par_type": {
     "en_couple": {
       "intro": "Marseille en couple offre une atmosphère authentique et romantique : coucher de soleil sur le Vieux-Port, dîner gastronomique halal dans le Panier, promenade nocturne sur la Corniche. Une ville qui se révèle aux amoureux qui prennent le temps de la découvrir.",
       "top_experiences": [
-        { "titre": "Coucher de soleil depuis Notre-Dame de la Garde", "details": "Vue panoramique à 360° sur Marseille et la Méditerranée au coucher du soleil — moment magique et totalement gratuit", "prix": "Gratuit" },
-        { "titre": "Dîner gastronomique halal dans le Panier", "details": "Réserver à La Casbah du Panier pour un dîner en terrasse dans une ruelle du plus vieux quartier de Marseille", "prix": "30–40€/pers" },
-        { "titre": "Excursion en bateau au Château d'If", "details": "Navette maritime pour le château d'If puis baignade dans une crique du Frioul. Journée maritime mémorable.", "prix": "20–30€/pers" }
+        {
+          "titre": "Coucher de soleil depuis Notre-Dame de la Garde",
+          "details": "Vue panoramique à 360° sur Marseille et la Méditerranée au coucher du soleil — moment magique et totalement gratuit",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Dîner gastronomique halal dans le Panier",
+          "details": "Réserver à La Casbah du Panier pour un dîner en terrasse dans une ruelle du plus vieux quartier de Marseille",
+          "prix": "30–40€/pers"
+        },
+        {
+          "titre": "Excursion en bateau au Château d'If",
+          "details": "Navette maritime pour le château d'If puis baignade dans une crique du Frioul. Journée maritime mémorable.",
+          "prix": "20–30€/pers"
+        }
       ],
-      "hotels_recommandes": ["InterContinental Marseille — Hôtel-Dieu", "Sofitel Marseille Vieux-Port"],
+      "hotels_recommandes": [
+        "InterContinental Marseille — Hôtel-Dieu",
+        "Sofitel Marseille Vieux-Port"
+      ],
       "conseils": "Éviter juillet-août (surchargé). Septembre est idéal : mer chaude, moins de touristes, lumière méditerranéenne magnifique."
     },
     "en_famille": {
       "intro": "Marseille est excellente en famille pour les voyageurs musulmans : large offre halal, plages gratuites, Calanques accessibles aux enfants, MuCEM avec ateliers famille, et une ambiance méditerranéenne chaleureuse. Budget très raisonnable comparé à Paris.",
       "top_experiences": [
-        { "titre": "Journée aux Calanques (en bateau)", "details": "Croisière commentée au pied des Calanques, baignade dans une crique turquoise — inoubliable pour les enfants", "prix": "30–50€/adulte, 15–20€/enfant" },
-        { "titre": "Marché de Noailles + déjeuner halal", "details": "Visite du marché oriental de Noailles (dattes, épices, baklava) puis déjeuner dans un restaurant halal du quartier", "prix": "15–20€/pers" },
-        { "titre": "Plages du Prado", "details": "Grandes plages aménagées avec jeux pour enfants, maîtres-nageurs, buvettes. Journée complète de baignade à prix zéro", "prix": "Gratuit" }
+        {
+          "titre": "Journée aux Calanques (en bateau)",
+          "details": "Croisière commentée au pied des Calanques, baignade dans une crique turquoise — inoubliable pour les enfants",
+          "prix": "30–50€/adulte, 15–20€/enfant"
+        },
+        {
+          "titre": "Marché de Noailles + déjeuner halal",
+          "details": "Visite du marché oriental de Noailles (dattes, épices, baklava) puis déjeuner dans un restaurant halal du quartier",
+          "prix": "15–20€/pers"
+        },
+        {
+          "titre": "Plages du Prado",
+          "details": "Grandes plages aménagées avec jeux pour enfants, maîtres-nageurs, buvettes. Journée complète de baignade à prix zéro",
+          "prix": "Gratuit"
+        }
       ],
-      "hotels_recommandes": ["Appart'City Marseille Prado Velodrome", "Hôtel Villa Massalia"],
+      "hotels_recommandes": [
+        "Appart'City Marseille Prado Velodrome",
+        "Hôtel Villa Massalia"
+      ],
       "conseils": "L'Appart'City permet de préparer ses repas halal maison — idéal pour maîtriser son budget. Acheter les produits halal au marché de Noailles."
     },
     "entre_amis": {
       "intro": "Marseille entre amis, c'est l'aventure garantie : tournoi de pétanque au Vieux-Port, randonnée en calanque, soirée street food à Noailles, match de l'OM au Vélodrome. Une ville vivante et authentique.",
       "top_experiences": [
-        { "titre": "Randonnée Calanque de Sugiton", "details": "3–4h de marche depuis Luminy jusqu'à la calanque de Sugiton — effort récompensé par un paysage époustouflant et une baignade méritée", "prix": "Gratuit" },
-        { "titre": "Match de l'OM au Vélodrome", "details": "Vivre un match dans le mythique Stade Orange Vélodrome avec 65 000 supporters — expérience unique de l'ambiance marseillaise", "prix": "20–60€" },
-        { "titre": "Soirée street food à Noailles", "details": "Tournée des stands de street food halal du quartier de Noailles : shawarma, falafel, merguez, baklava. Le tout pour moins de 15€/pers.", "prix": "10–15€/pers" }
+        {
+          "titre": "Randonnée Calanque de Sugiton",
+          "details": "3–4h de marche depuis Luminy jusqu'à la calanque de Sugiton — effort récompensé par un paysage époustouflant et une baignade méritée",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Match de l'OM au Vélodrome",
+          "details": "Vivre un match dans le mythique Stade Orange Vélodrome avec 65 000 supporters — expérience unique de l'ambiance marseillaise",
+          "prix": "20–60€"
+        },
+        {
+          "titre": "Soirée street food à Noailles",
+          "details": "Tournée des stands de street food halal du quartier de Noailles : shawarma, falafel, merguez, baklava. Le tout pour moins de 15€/pers.",
+          "prix": "10–15€/pers"
+        }
       ],
-      "hotels_recommandes": ["Hôtel Noailles", "ibis Marseille Centre Belsunce"],
+      "hotels_recommandes": [
+        "Hôtel Noailles",
+        "ibis Marseille Centre Belsunce"
+      ],
       "conseils": "Louer une voiture pour un jour pour accéder aux calanques les plus reculées. Application Happy Cow pour trouver des options végé/halal à proximité."
     },
     "voyage_solo": {
       "intro": "Marseille en solo est une ville d'aventure et de rencontres. Les Marseillais sont naturellement accueillants. Les transports en commun (métro, tram) permettent d'explorer facilement. Très sûr dans les zones touristiques.",
       "top_experiences": [
-        { "titre": "Randonnée solo en calanque", "details": "Les sentiers des Calanques sont bien balisés et sécurisés. La calanque de Morgiou est accessible aux randonneurs solo depuis Marseille", "prix": "Gratuit" },
-        { "titre": "Prière du vendredi à la Grande Mosquée", "details": "Rejoindre la communauté marseillaise pour la prière du vendredi — moment de fraternité unique", "prix": "Gratuit" },
-        { "titre": "Visite solo du MuCEM", "details": "Explorer à son rythme les collections du MuCEM sur les civilisations méditerranéennes — prévoir 3h minimum", "prix": "11€" }
+        {
+          "titre": "Randonnée solo en calanque",
+          "details": "Les sentiers des Calanques sont bien balisés et sécurisés. La calanque de Morgiou est accessible aux randonneurs solo depuis Marseille",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Prière du vendredi à la Grande Mosquée",
+          "details": "Rejoindre la communauté marseillaise pour la prière du vendredi — moment de fraternité unique",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Visite solo du MuCEM",
+          "details": "Explorer à son rythme les collections du MuCEM sur les civilisations méditerranéennes — prévoir 3h minimum",
+          "prix": "11€"
+        }
       ],
-      "hotels_recommandes": ["ibis Marseille Centre Belsunce", "Hôtel Noailles"],
+      "hotels_recommandes": [
+        "ibis Marseille Centre Belsunce",
+        "Hôtel Noailles"
+      ],
       "conseils": "Application CityMapper pour les transports. Éviter les quartiers nord isolés la nuit. Le pass journée RTM (2,80€) couvre métro, tram et bus."
     },
     "voyage_spirituel": {
       "intro": "Marseille porte la plus grande communauté musulmane de France proportionnellement. La ville est un carrefour de l'islam méditerranéen : présence algérienne, marocaine, tunisienne, turque, sénégalaise. Un lieu de foi vivante et plurielle.",
       "top_experiences": [
-        { "titre": "Prière à la Grande Mosquée de Marseille", "details": "Rejoindre les milliers de fidèles à la plus grande mosquée de France lors de la prière du vendredi ou au moment du Ramadan", "prix": "Gratuit" },
-        { "titre": "Ramadan à Marseille", "details": "Le Ramadan à Marseille est une expérience extraordinaire : iftars collectifs, marchés nocturnes de Noailles, animation dans tout le quartier Belsunce jusqu'à l'aube", "prix": "Gratuit (coût vie locale)" },
-        { "titre": "Quartier Belsunce — Librairies islamiques", "details": "Explorer les librairies islamiques, épiceries orientales et les lieux de savoir islamique du quartier Belsunce — un patrimoine culturel unique", "prix": "Gratuit" }
+        {
+          "titre": "Prière à la Grande Mosquée de Marseille",
+          "details": "Rejoindre les milliers de fidèles à la plus grande mosquée de France lors de la prière du vendredi ou au moment du Ramadan",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Ramadan à Marseille",
+          "details": "Le Ramadan à Marseille est une expérience extraordinaire : iftars collectifs, marchés nocturnes de Noailles, animation dans tout le quartier Belsunce jusqu'à l'aube",
+          "prix": "Gratuit (coût vie locale)"
+        },
+        {
+          "titre": "Quartier Belsunce — Librairies islamiques",
+          "details": "Explorer les librairies islamiques, épiceries orientales et les lieux de savoir islamique du quartier Belsunce — un patrimoine culturel unique",
+          "prix": "Gratuit"
+        }
       ],
-      "hotels_recommandes": ["ibis Marseille Centre Belsunce", "Hôtel Noailles"],
+      "hotels_recommandes": [
+        "ibis Marseille Centre Belsunce",
+        "Hôtel Noailles"
+      ],
       "conseils": "Le Ramadan à Marseille est probablement l'une des plus belles expériences islamiques en France — l'ambiance dépasse Paris par son authenticité et sa chaleur communautaire."
     }
   },
@@ -1279,7 +2494,11 @@
       "adresse": "18 Rue des Halles Delacroix, 13001 Marseille",
       "quartier": "Noailles (1er)",
       "halal_certifie": true,
-      "specialites": ["Agneau entier", "Merguez maison", "Brochettes"],
+      "specialites": [
+        "Agneau entier",
+        "Merguez maison",
+        "Brochettes"
+      ],
       "horaires": "8h–20h (fermé dimanche après-midi)",
       "adresse_a_verifier": true
     },
@@ -1289,7 +2508,11 @@
       "adresse": "45 Rue d'Aix, 13001 Marseille",
       "quartier": "Belsunce (1er)",
       "halal_certifie": true,
-      "specialites": ["Veau halal", "Poulet fermier", "Abats halal"],
+      "specialites": [
+        "Veau halal",
+        "Poulet fermier",
+        "Abats halal"
+      ],
       "horaires": "7h–19h30 (fermé dimanche)",
       "adresse_a_verifier": true
     },
@@ -1299,7 +2522,10 @@
       "adresse": "78 Rue de la République, 13002 Marseille",
       "quartier": "République (2e)",
       "halal_certifie": true,
-      "specialites": ["Bœuf charolais halal", "Côtelettes d'agneau"],
+      "specialites": [
+        "Bœuf charolais halal",
+        "Côtelettes d'agneau"
+      ],
       "horaires": "8h–19h (fermé lundi)",
       "adresse_a_verifier": true
     },
@@ -1309,7 +2535,11 @@
       "adresse": "14 Boulevard National, 13001 Marseille",
       "quartier": "Centre (1er)",
       "halal_certifie": true,
-      "specialites": ["Sucuk (saucisse turque)", "Pastirma", "Bœuf halal"],
+      "specialites": [
+        "Sucuk (saucisse turque)",
+        "Pastirma",
+        "Bœuf halal"
+      ],
       "horaires": "8h–20h tous les jours",
       "adresse_a_verifier": true
     },
@@ -1319,7 +2549,11 @@
       "adresse": "150 Boulevard des Plombières, 13013 Marseille",
       "quartier": "13e arrondissement",
       "halal_certifie": true,
-      "specialites": ["Agneau de pays", "Merguez", "Méchoui sur commande"],
+      "specialites": [
+        "Agneau de pays",
+        "Merguez",
+        "Méchoui sur commande"
+      ],
       "horaires": "7h30–19h30 (fermé dimanche après-midi)",
       "adresse_a_verifier": true
     }
@@ -1330,7 +2564,11 @@
       "nom": "Boulangerie des Halles de Noailles",
       "adresse": "25 Rue Longue des Capucins, 13001 Marseille",
       "quartier": "Noailles (1er)",
-      "specialites": ["Pain khobz", "Msemen", "Chebakia"],
+      "specialites": [
+        "Pain khobz",
+        "Msemen",
+        "Chebakia"
+      ],
       "horaires": "6h–20h",
       "adresse_a_verifier": true
     },
@@ -1339,7 +2577,11 @@
       "nom": "Boulangerie Orientale Al-Baraka",
       "adresse": "31 Cours Belsunce, 13001 Marseille",
       "quartier": "Belsunce (1er)",
-      "specialites": ["Cornes de gazelle", "Baklava", "Sablés aux amandes"],
+      "specialites": [
+        "Cornes de gazelle",
+        "Baklava",
+        "Sablés aux amandes"
+      ],
       "horaires": "7h–22h",
       "adresse_a_verifier": true
     },
@@ -1348,7 +2590,11 @@
       "nom": "La Pâtisserie Kabyle",
       "adresse": "9 Rue Bernard du Bois, 13001 Marseille",
       "quartier": "Centre (1er)",
-      "specialites": ["Makroud", "Tamina", "Zlabia"],
+      "specialites": [
+        "Makroud",
+        "Tamina",
+        "Zlabia"
+      ],
       "horaires": "8h–21h (fermé lundi)",
       "adresse_a_verifier": true
     },
@@ -1357,7 +2603,11 @@
       "nom": "Boulangerie Halal Belle de Mai",
       "adresse": "55 Rue Clovis Hugues, 13003 Marseille",
       "quartier": "Belle de Mai (3e)",
-      "specialites": ["Pain maison", "Brioche halal", "Pain au lait"],
+      "specialites": [
+        "Pain maison",
+        "Brioche halal",
+        "Pain au lait"
+      ],
       "horaires": "6h30–19h30 (fermé dimanche)",
       "adresse_a_verifier": true
     },
@@ -1366,11 +2616,25 @@
       "nom": "Pâtisserie Turque Bogazici",
       "adresse": "67 Boulevard National, 13001 Marseille",
       "quartier": "Centre (1er)",
-      "specialites": ["Baklava pistache", "Simit", "Revani (gâteau semoule)"],
+      "specialites": [
+        "Baklava pistache",
+        "Simit",
+        "Revani (gâteau semoule)"
+      ],
       "horaires": "8h–22h tous les jours",
       "adresse_a_verifier": true
     }
   ],
-  "articles_lies": ["marseille-guide-halal", "france-ville-halal", "calanques-guide-famille"],
-  "villes_proches": ["nice", "lyon", "toulouse", "paris"]
+  "articles_lies": [
+    "marseille-guide-halal",
+    "france-ville-halal",
+    "calanques-guide-famille"
+  ],
+  "villes_proches": [
+    "nice",
+    "lyon",
+    "toulouse",
+    "paris"
+  ],
+  "codeISO": "FR"
 }

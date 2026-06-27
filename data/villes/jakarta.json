@@ -6,7 +6,10 @@
   "pays_slug": "indonesie",
   "drapeau": "🇮🇩",
   "region": "Asie du Sud-Est",
-  "coordonnees": { "lat": -6.2088, "lng": 106.8456 },
+  "coordonnees": {
+    "lat": -6.2088,
+    "lng": 106.8456
+  },
   "score_halal": 5,
   "score_securite": 4,
   "score_famille": 4,
@@ -30,44 +33,551 @@
     "transport": "MRT, Transjakarta (BRT), ojek (moto-taxi), Gojek/Grab"
   },
   "restaurants": [
-    { "id": "r-001", "nom": "Sate Khas Senayan", "adresse": "Jl. Kebon Sirih 31A, Jakarta Pusat", "cuisine": "Indonésienne traditionnelle", "specialite": "Sate ayam (brochettes de poulet) et nasi tumpeng", "certification": "Halal MUI", "prix_moyen": "80 000–200 000 IDR", "note": 4.7 },
-    { "id": "r-002", "nom": "Pagi Sore", "adresse": "Multiple branches, Jakarta", "cuisine": "Padang (Sumatra)", "specialite": "Rendang daging et gulai ikan", "certification": "Halal MUI", "prix_moyen": "50 000–120 000 IDR", "note": 4.8 },
-    { "id": "r-003", "nom": "Warung Laguna", "adresse": "SCBD, Jakarta Selatan", "cuisine": "Street food indonésienne halal", "specialite": "Nasi goreng spécial et mie goreng", "certification": "Halal MUI", "prix_moyen": "30 000–80 000 IDR", "note": 4.5 },
-    { "id": "r-004", "nom": "Bebek Bengil", "adresse": "Menteng, Jakarta", "cuisine": "Balinaise halal", "specialite": "Bebek goreng (canard frit croustillant)", "certification": "Halal MUI", "prix_moyen": "100 000–200 000 IDR", "note": 4.6 },
-    { "id": "r-005", "nom": "Soto Ayam Ambengan", "adresse": "Jl. Bungur Besar, Jakarta", "cuisine": "Soupe & bouillon javanais", "specialite": "Soto ayam Lamongan (soupe poulet)", "certification": "Halal MUI", "prix_moyen": "25 000–60 000 IDR", "note": 4.7 },
-    { "id": "r-006", "nom": "Seafood 99", "adresse": "Pluit, Jakarta Utara", "cuisine": "Fruits de mer halal", "specialite": "Kepiting saus padang (crabe sauce épicée)", "certification": "Halal MUI", "prix_moyen": "100 000–300 000 IDR", "note": 4.6 },
-    { "id": "r-007", "nom": "Nasi Uduk Kebon Kacang", "adresse": "Tanah Abang, Jakarta", "cuisine": "Street food betawi (javanaise)", "specialite": "Nasi uduk (riz coco) avec empal et kerupuk", "certification": "Halal MUI", "prix_moyen": "20 000–50 000 IDR", "note": 4.8 },
-    { "id": "r-008", "nom": "Restoran Garuda", "adresse": "Mall of Indonesia", "cuisine": "Padang classique", "specialite": "Ayam pop et daun ubi tumbuk", "certification": "Halal MUI", "prix_moyen": "60 000–150 000 IDR", "note": 4.6 },
-    { "id": "r-009", "nom": "Al-Jazeerah Arab Restaurant", "adresse": "Jl. Falatehan, Jakarta Selatan", "cuisine": "Moyen-orientale halal", "specialite": "Mandi avec agneau importé", "certification": "Halal MUI", "prix_moyen": "100 000–250 000 IDR", "note": 4.7 },
-    { "id": "r-010", "nom": "Burger & Grill Halal (Holycow!)", "adresse": "Multiple Jakarta", "cuisine": "American halal", "specialite": "Wagyu burger halal", "certification": "Halal MUI certifié", "prix_moyen": "80 000–180 000 IDR", "note": 4.5 },
-    { "id": "r-011", "nom": "Penang Bistro", "adresse": "Grand Indonesia Mall", "cuisine": "Malaisienne halal", "specialite": "Nasi lemak et char kuey teow halal", "certification": "Halal MUI", "prix_moyen": "80 000–160 000 IDR", "note": 4.4 },
-    { "id": "r-012", "nom": "Gado-Gado Boplo", "adresse": "Menteng, Jakarta Pusat", "cuisine": "Végétarienne indonésienne halal", "specialite": "Gado-gado (salade sauce cacahuète)", "certification": "Halal MUI", "prix_moyen": "30 000–70 000 IDR", "note": 4.6 },
-    { "id": "r-013", "nom": "Al Hambra", "adresse": "Hotel Arya Duta, Jakarta", "cuisine": "Internationale gastronomique halal", "specialite": "Buffet halal international", "certification": "Halal MUI", "prix_moyen": "150 000–300 000 IDR", "note": 4.5 },
-    { "id": "r-014", "nom": "Martabak San Francisco", "adresse": "Menteng, Jakarta", "cuisine": "Pâtisseries & martabak", "specialite": "Martabak telur (galette farcie)", "certification": "Halal", "prix_moyen": "40 000–100 000 IDR", "note": 4.7 },
-    { "id": "r-015", "nom": "Pizza Hut Halal Indonesia", "adresse": "Multiple branches", "cuisine": "Fast food halal", "specialite": "Pizza poulet teriyaki halal", "certification": "Halal MUI certifié", "prix_moyen": "60 000–130 000 IDR", "note": 4.0 }
+    {
+      "id": "r-001",
+      "nom": "Sate Khas Senayan",
+      "adresse": "Jl. Kebon Sirih 31A, Jakarta Pusat",
+      "cuisine": "Indonésienne traditionnelle",
+      "specialite": "Sate ayam (brochettes de poulet) et nasi tumpeng",
+      "certification": "Halal MUI",
+      "prix_moyen": "80 000–200 000 IDR",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-002",
+      "nom": "Pagi Sore",
+      "adresse": "Multiple branches, Jakarta",
+      "cuisine": "Padang (Sumatra)",
+      "specialite": "Rendang daging et gulai ikan",
+      "certification": "Halal MUI",
+      "prix_moyen": "50 000–120 000 IDR",
+      "note": 4.8,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 576,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-003",
+      "nom": "Warung Laguna",
+      "adresse": "SCBD, Jakarta Selatan",
+      "cuisine": "Street food indonésienne halal",
+      "specialite": "Nasi goreng spécial et mie goreng",
+      "certification": "Halal MUI",
+      "prix_moyen": "30 000–80 000 IDR",
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-004",
+      "nom": "Bebek Bengil",
+      "adresse": "Menteng, Jakarta",
+      "cuisine": "Balinaise halal",
+      "specialite": "Bebek goreng (canard frit croustillant)",
+      "certification": "Halal MUI",
+      "prix_moyen": "100 000–200 000 IDR",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-005",
+      "nom": "Soto Ayam Ambengan",
+      "adresse": "Jl. Bungur Besar, Jakarta",
+      "cuisine": "Soupe & bouillon javanais",
+      "specialite": "Soto ayam Lamongan (soupe poulet)",
+      "certification": "Halal MUI",
+      "prix_moyen": "25 000–60 000 IDR",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-006",
+      "nom": "Seafood 99",
+      "adresse": "Pluit, Jakarta Utara",
+      "cuisine": "Fruits de mer halal",
+      "specialite": "Kepiting saus padang (crabe sauce épicée)",
+      "certification": "Halal MUI",
+      "prix_moyen": "100 000–300 000 IDR",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-007",
+      "nom": "Nasi Uduk Kebon Kacang",
+      "adresse": "Tanah Abang, Jakarta",
+      "cuisine": "Street food betawi (javanaise)",
+      "specialite": "Nasi uduk (riz coco) avec empal et kerupuk",
+      "certification": "Halal MUI",
+      "prix_moyen": "20 000–50 000 IDR",
+      "note": 4.8,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 576,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-008",
+      "nom": "Restoran Garuda",
+      "adresse": "Mall of Indonesia",
+      "cuisine": "Padang classique",
+      "specialite": "Ayam pop et daun ubi tumbuk",
+      "certification": "Halal MUI",
+      "prix_moyen": "60 000–150 000 IDR",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-009",
+      "nom": "Al-Jazeerah Arab Restaurant",
+      "adresse": "Jl. Falatehan, Jakarta Selatan",
+      "cuisine": "Moyen-orientale halal",
+      "specialite": "Mandi avec agneau importé",
+      "certification": "Halal MUI",
+      "prix_moyen": "100 000–250 000 IDR",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-010",
+      "nom": "Burger & Grill Halal (Holycow!)",
+      "adresse": "Multiple Jakarta",
+      "cuisine": "American halal",
+      "specialite": "Wagyu burger halal",
+      "certification": "Halal MUI certifié",
+      "prix_moyen": "80 000–180 000 IDR",
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI certifié"
+      }
+    },
+    {
+      "id": "r-011",
+      "nom": "Penang Bistro",
+      "adresse": "Grand Indonesia Mall",
+      "cuisine": "Malaisienne halal",
+      "specialite": "Nasi lemak et char kuey teow halal",
+      "certification": "Halal MUI",
+      "prix_moyen": "80 000–160 000 IDR",
+      "note": 4.4,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 528,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-012",
+      "nom": "Gado-Gado Boplo",
+      "adresse": "Menteng, Jakarta Pusat",
+      "cuisine": "Végétarienne indonésienne halal",
+      "specialite": "Gado-gado (salade sauce cacahuète)",
+      "certification": "Halal MUI",
+      "prix_moyen": "30 000–70 000 IDR",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-013",
+      "nom": "Al Hambra",
+      "adresse": "Hotel Arya Duta, Jakarta",
+      "cuisine": "Internationale gastronomique halal",
+      "specialite": "Buffet halal international",
+      "certification": "Halal MUI",
+      "prix_moyen": "150 000–300 000 IDR",
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI"
+      }
+    },
+    {
+      "id": "r-014",
+      "nom": "Martabak San Francisco",
+      "adresse": "Menteng, Jakarta",
+      "cuisine": "Pâtisseries & martabak",
+      "specialite": "Martabak telur (galette farcie)",
+      "certification": "Halal",
+      "prix_moyen": "40 000–100 000 IDR",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-015",
+      "nom": "Pizza Hut Halal Indonesia",
+      "adresse": "Multiple branches",
+      "cuisine": "Fast food halal",
+      "specialite": "Pizza poulet teriyaki halal",
+      "certification": "Halal MUI certifié",
+      "prix_moyen": "60 000–130 000 IDR",
+      "note": 4.0,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 480,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal MUI certifié"
+      }
+    }
   ],
   "mosquees": [
-    { "id": "m-001", "nom": "Mosquée Istiqlal", "adresse": "Jl. Taman Wijaya Kusuma, Jakarta Pusat", "type": "Mosquée nationale & plus grande d'Asie du Sud-Est", "capacite": 200000, "annee_construction": 1978, "style_architectural": "Islamique moderne", "note": 5.0 },
-    { "id": "m-002", "nom": "Mosquée Sunda Kelapa", "adresse": "Menteng, Jakarta", "type": "Historique emblématique", "capacite": 8000, "annee_construction": 1971, "style_architectural": "Moderniste", "note": 4.7 },
-    { "id": "m-003", "nom": "Mosquée Al-Azhar Jakarta", "adresse": "Kebayoran Baru, Jakarta Selatan", "type": "Universelle & éducative", "capacite": 15000, "annee_construction": 1958, "style_architectural": "Islamique classique", "note": 4.8 },
-    { "id": "m-004", "nom": "Mosquée Raya Pondok Indah", "adresse": "Pondok Indah, Jakarta Selatan", "type": "Grande mosquée moderne", "capacite": 12000, "annee_construction": 1999, "style_architectural": "Islamique contemporain", "note": 4.7 },
-    { "id": "m-005", "nom": "Mosquée Kubah Emas (Dian Al-Mahri)", "adresse": "Depok (banlieue Jakarta)", "type": "Mosquée aux dômes dorés", "capacite": 20000, "annee_construction": 2006, "style_architectural": "Islamique luxe (dômes en or)", "note": 4.9 }
+    {
+      "id": "m-001",
+      "nom": "Mosquée Istiqlal",
+      "adresse": "Jl. Taman Wijaya Kusuma, Jakarta Pusat",
+      "type": "Mosquée nationale & plus grande d'Asie du Sud-Est",
+      "capacite": 200000,
+      "annee_construction": 1978,
+      "style_architectural": "Islamique moderne",
+      "note": 5.0
+    },
+    {
+      "id": "m-002",
+      "nom": "Mosquée Sunda Kelapa",
+      "adresse": "Menteng, Jakarta",
+      "type": "Historique emblématique",
+      "capacite": 8000,
+      "annee_construction": 1971,
+      "style_architectural": "Moderniste",
+      "note": 4.7
+    },
+    {
+      "id": "m-003",
+      "nom": "Mosquée Al-Azhar Jakarta",
+      "adresse": "Kebayoran Baru, Jakarta Selatan",
+      "type": "Universelle & éducative",
+      "capacite": 15000,
+      "annee_construction": 1958,
+      "style_architectural": "Islamique classique",
+      "note": 4.8
+    },
+    {
+      "id": "m-004",
+      "nom": "Mosquée Raya Pondok Indah",
+      "adresse": "Pondok Indah, Jakarta Selatan",
+      "type": "Grande mosquée moderne",
+      "capacite": 12000,
+      "annee_construction": 1999,
+      "style_architectural": "Islamique contemporain",
+      "note": 4.7
+    },
+    {
+      "id": "m-005",
+      "nom": "Mosquée Kubah Emas (Dian Al-Mahri)",
+      "adresse": "Depok (banlieue Jakarta)",
+      "type": "Mosquée aux dômes dorés",
+      "capacite": 20000,
+      "annee_construction": 2006,
+      "style_architectural": "Islamique luxe (dômes en or)",
+      "note": 4.9
+    }
   ],
   "hotels": [
-    { "id": "h-001", "nom": "The Langham Jakarta", "adresse": "SCBD, Jakarta Selatan", "categorie": "5 étoiles de luxe", "prix_nuit": "200–500 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.9 },
-    { "id": "h-002", "nom": "Raffles Jakarta", "adresse": "SCBD, Jakarta", "categorie": "5 étoiles luxe", "prix_nuit": "250–600 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.8 },
-    { "id": "h-003", "nom": "Mandarin Oriental Jakarta", "adresse": "Jl. MH Thamrin, Jakarta", "categorie": "5 étoiles", "prix_nuit": "180–400 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.8 },
-    { "id": "h-004", "nom": "Ibis Styles Jakarta", "adresse": "Mangga Dua, Jakarta", "categorie": "3 étoiles", "prix_nuit": "40–90 €", "halal_friendly": true, "sans_alcool": false, "piscine": false, "note": 4.2 },
-    { "id": "h-005", "nom": "Hôtel Sultan Jakarta", "adresse": "Senayan, Jakarta", "categorie": "5 étoiles", "prix_nuit": "120–280 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.5 }
+    {
+      "id": "h-001",
+      "nom": "The Langham Jakarta",
+      "adresse": "SCBD, Jakarta Selatan",
+      "categorie": "5 étoiles de luxe",
+      "prix_nuit": "200–500 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.9,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 588,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "MUI Halal"
+      }
+    },
+    {
+      "id": "h-002",
+      "nom": "Raffles Jakarta",
+      "adresse": "SCBD, Jakarta",
+      "categorie": "5 étoiles luxe",
+      "prix_nuit": "250–600 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.8,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 576,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "MUI Halal"
+      }
+    },
+    {
+      "id": "h-003",
+      "nom": "Mandarin Oriental Jakarta",
+      "adresse": "Jl. MH Thamrin, Jakarta",
+      "categorie": "5 étoiles",
+      "prix_nuit": "180–400 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.8,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 576,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "MUI Halal"
+      }
+    },
+    {
+      "id": "h-004",
+      "nom": "Ibis Styles Jakarta",
+      "adresse": "Mangga Dua, Jakarta",
+      "categorie": "3 étoiles",
+      "prix_nuit": "40–90 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": false,
+      "note": 4.2,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 504,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "MUI Halal"
+      }
+    },
+    {
+      "id": "h-005",
+      "nom": "Hôtel Sultan Jakarta",
+      "adresse": "Senayan, Jakarta",
+      "categorie": "5 étoiles",
+      "prix_nuit": "120–280 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.5,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "MUI Halal"
+      }
+    }
   ],
   "activites": [
-    { "id": "a-001", "nom": "Mosquée Istiqlal + Cathédrale (symbole harmonie)", "type": "Spirituel & culture", "duree": "2h", "prix": "Gratuit", "note": 4.9 },
-    { "id": "a-002", "nom": "Kota Tua (vieille ville hollandaise)", "type": "Histoire", "duree": "3h", "prix": "Gratuit", "note": 4.6 },
-    { "id": "a-003", "nom": "National Museum of Indonesia", "type": "Musée", "duree": "2h", "prix": "15 000 IDR", "note": 4.5 },
-    { "id": "a-004", "nom": "Ancol Dreamland (parc de loisirs)", "type": "Loisir famille", "duree": "4h", "prix": "25 000–150 000 IDR", "note": 4.3 },
-    { "id": "a-005", "nom": "Tour Monas (monument national)", "type": "Monument", "duree": "1h30", "prix": "25 000 IDR", "note": 4.4 },
-    { "id": "a-006", "nom": "Shopping dans les grands malls halal", "type": "Shopping", "duree": "4h", "prix": "Variable", "note": 4.5 },
-    { "id": "a-007", "nom": "Excursion à Borobudur (temple bouddhiste UNESCO)", "type": "Culture", "duree": "2 jours depuis Jakarta", "prix": "350 000 IDR + transport", "note": 4.9 },
-    { "id": "a-008", "nom": "Kepulauan Seribu (îles aux mille)", "type": "Nature marine", "duree": "1–2 jours", "prix": "200 000–500 000 IDR", "note": 4.6 }
-  ]
+    {
+      "id": "a-001",
+      "nom": "Mosquée Istiqlal + Cathédrale (symbole harmonie)",
+      "type": "Spirituel & culture",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "note": 4.9
+    },
+    {
+      "id": "a-002",
+      "nom": "Kota Tua (vieille ville hollandaise)",
+      "type": "Histoire",
+      "duree": "3h",
+      "prix": "Gratuit",
+      "note": 4.6
+    },
+    {
+      "id": "a-003",
+      "nom": "National Museum of Indonesia",
+      "type": "Musée",
+      "duree": "2h",
+      "prix": "15 000 IDR",
+      "note": 4.5
+    },
+    {
+      "id": "a-004",
+      "nom": "Ancol Dreamland (parc de loisirs)",
+      "type": "Loisir famille",
+      "duree": "4h",
+      "prix": "25 000–150 000 IDR",
+      "note": 4.3
+    },
+    {
+      "id": "a-005",
+      "nom": "Tour Monas (monument national)",
+      "type": "Monument",
+      "duree": "1h30",
+      "prix": "25 000 IDR",
+      "note": 4.4
+    },
+    {
+      "id": "a-006",
+      "nom": "Shopping dans les grands malls halal",
+      "type": "Shopping",
+      "duree": "4h",
+      "prix": "Variable",
+      "note": 4.5
+    },
+    {
+      "id": "a-007",
+      "nom": "Excursion à Borobudur (temple bouddhiste UNESCO)",
+      "type": "Culture",
+      "duree": "2 jours depuis Jakarta",
+      "prix": "350 000 IDR + transport",
+      "note": 4.9
+    },
+    {
+      "id": "a-008",
+      "nom": "Kepulauan Seribu (îles aux mille)",
+      "type": "Nature marine",
+      "duree": "1–2 jours",
+      "prix": "200 000–500 000 IDR",
+      "note": 4.6
+    }
+  ],
+  "codeISO": "ID"
 }

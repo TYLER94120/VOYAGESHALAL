@@ -6,7 +6,10 @@
   "pays_slug": "emirats-arabes-unis",
   "drapeau": "🇦🇪",
   "region": "Moyen-Orient",
-  "coordonnees": { "lat": 24.4539, "lng": 54.3773 },
+  "coordonnees": {
+    "lat": 24.4539,
+    "lng": 54.3773
+  },
   "score_halal": 5,
   "score_securite": 5,
   "score_famille": 5,
@@ -30,44 +33,552 @@
     "transport": "Taxi, metro (limité), applications Careem/Uber"
   },
   "restaurants": [
-    { "id": "r-001", "nom": "Mezlai Emirati Restaurant", "adresse": "Emirates Palace Hotel, Corniche", "cuisine": "Émirati traditionnel", "specialite": "Saloona (ragoût de viande) et machboos", "certification": "Halal (État islamique)", "prix_moyen": "200–500 AED", "note": 4.8 },
-    { "id": "r-002", "nom": "Al Fanar Restaurant", "adresse": "Yas Marina, Abu Dhabi", "cuisine": "Émirati traditionnelle", "specialite": "Harees et luqaimat", "certification": "Halal", "prix_moyen": "100–250 AED", "note": 4.7 },
-    { "id": "r-003", "nom": "Finz Restaurant", "adresse": "Beach Rotana Hotel", "cuisine": "Fruits de mer halal", "specialite": "Homard grillé et poissons du Golfe", "certification": "Halal", "prix_moyen": "200–450 AED", "note": 4.6 },
-    { "id": "r-004", "nom": "Aquarium Restaurant", "adresse": "Abu Dhabi Mall", "cuisine": "Internationale halal", "specialite": "Sashimi de thon halal", "certification": "Halal certifié", "prix_moyen": "120–280 AED", "note": 4.4 },
-    { "id": "r-005", "nom": "Irani Club Restaurant", "adresse": "Quartier Al Khalidiyah", "cuisine": "Iranienne (Perse) halal", "specialite": "Ghormeh sabzi et chelo kabab", "certification": "Halal", "prix_moyen": "80–180 AED", "note": 4.5 },
-    { "id": "r-006", "nom": "Lebanese Flower Restaurant", "adresse": "Khalidiyah Street", "cuisine": "Libanaise halal", "specialite": "Mezze libanais complet", "certification": "Halal", "prix_moyen": "80–160 AED", "note": 4.6 },
-    { "id": "r-007", "nom": "Al Arish Restaurant", "adresse": "Eastern Corniche", "cuisine": "Poissons du Golfe", "specialite": "Hammour au four et riz kabsa", "certification": "Halal", "prix_moyen": "100–200 AED", "note": 4.7 },
-    { "id": "r-008", "nom": "Automatic Restaurant", "adresse": "Multiple locations, Abu Dhabi", "cuisine": "Libanaise fast food halal", "specialite": "Shawarma poulet et kafta", "certification": "Halal", "prix_moyen": "30–80 AED", "note": 4.4 },
-    { "id": "r-009", "nom": "Sajway Restaurant", "adresse": "Mussafah, Abu Dhabi", "cuisine": "Grillades & kebab", "specialite": "Mandi agneau et poulet mashwi", "certification": "Halal", "prix_moyen": "40–100 AED", "note": 4.5 },
-    { "id": "r-010", "nom": "Biryani Pot", "adresse": "Tourist Club Area", "cuisine": "Indienne halal", "specialite": "Hyderabadi biryani agneau", "certification": "Halal certifié", "prix_moyen": "40–90 AED", "note": 4.6 },
-    { "id": "r-011", "nom": "Rangoli Restaurant", "adresse": "Khalifa City", "cuisine": "Indienne halal", "specialite": "Butter chicken et naan", "certification": "Halal", "prix_moyen": "50–120 AED", "note": 4.4 },
-    { "id": "r-012", "nom": "Noodle House", "adresse": "Yas Mall", "cuisine": "Asiatique halal", "specialite": "Pad thaï poulet et phô halal", "certification": "Halal certifié", "prix_moyen": "60–130 AED", "note": 4.3 },
-    { "id": "r-013", "nom": "Bab Al Bahr", "adresse": "Plage de l'hôtel Beach Rotana", "cuisine": "Méditerranéenne halal", "specialite": "Moussaka végétarienne halal", "certification": "Halal", "prix_moyen": "120–250 AED", "note": 4.5 },
-    { "id": "r-014", "nom": "Al Mrzab", "adresse": "Al Wahda Mall", "cuisine": "Émiratie & Khaleeji", "specialite": "Thareed (pain émirati au bouillon)", "certification": "Halal", "prix_moyen": "80–160 AED", "note": 4.6 },
-    { "id": "r-015", "nom": "Hero's Burger Halal", "adresse": "Yas Island", "cuisine": "American fast food halal", "specialite": "Burger au bœuf halal et milkshake", "certification": "Halal certifié", "prix_moyen": "50–100 AED", "note": 4.3 }
+    {
+      "id": "r-001",
+      "nom": "Mezlai Emirati Restaurant",
+      "adresse": "Emirates Palace Hotel, Corniche",
+      "cuisine": "Émirati traditionnel",
+      "specialite": "Saloona (ragoût de viande) et machboos",
+      "certification": "Halal (État islamique)",
+      "prix_moyen": "200–500 AED",
+      "note": 4.8,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 576,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal (État islamique)"
+      }
+    },
+    {
+      "id": "r-002",
+      "nom": "Al Fanar Restaurant",
+      "adresse": "Yas Marina, Abu Dhabi",
+      "cuisine": "Émirati traditionnelle",
+      "specialite": "Harees et luqaimat",
+      "certification": "Halal",
+      "prix_moyen": "100–250 AED",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-003",
+      "nom": "Finz Restaurant",
+      "adresse": "Beach Rotana Hotel",
+      "cuisine": "Fruits de mer halal",
+      "specialite": "Homard grillé et poissons du Golfe",
+      "certification": "Halal",
+      "prix_moyen": "200–450 AED",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-004",
+      "nom": "Aquarium Restaurant",
+      "adresse": "Abu Dhabi Mall",
+      "cuisine": "Internationale halal",
+      "specialite": "Sashimi de thon halal",
+      "certification": "Halal certifié",
+      "prix_moyen": "120–280 AED",
+      "note": 4.4,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 528,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal certifié"
+      }
+    },
+    {
+      "id": "r-005",
+      "nom": "Irani Club Restaurant",
+      "adresse": "Quartier Al Khalidiyah",
+      "cuisine": "Iranienne (Perse) halal",
+      "specialite": "Ghormeh sabzi et chelo kabab",
+      "certification": "Halal",
+      "prix_moyen": "80–180 AED",
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-006",
+      "nom": "Lebanese Flower Restaurant",
+      "adresse": "Khalidiyah Street",
+      "cuisine": "Libanaise halal",
+      "specialite": "Mezze libanais complet",
+      "certification": "Halal",
+      "prix_moyen": "80–160 AED",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-007",
+      "nom": "Al Arish Restaurant",
+      "adresse": "Eastern Corniche",
+      "cuisine": "Poissons du Golfe",
+      "specialite": "Hammour au four et riz kabsa",
+      "certification": "Halal",
+      "prix_moyen": "100–200 AED",
+      "note": 4.7,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-008",
+      "nom": "Automatic Restaurant",
+      "adresse": "Multiple locations, Abu Dhabi",
+      "cuisine": "Libanaise fast food halal",
+      "specialite": "Shawarma poulet et kafta",
+      "certification": "Halal",
+      "prix_moyen": "30–80 AED",
+      "note": 4.4,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 528,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-009",
+      "nom": "Sajway Restaurant",
+      "adresse": "Mussafah, Abu Dhabi",
+      "cuisine": "Grillades & kebab",
+      "specialite": "Mandi agneau et poulet mashwi",
+      "certification": "Halal",
+      "prix_moyen": "40–100 AED",
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-010",
+      "nom": "Biryani Pot",
+      "adresse": "Tourist Club Area",
+      "cuisine": "Indienne halal",
+      "specialite": "Hyderabadi biryani agneau",
+      "certification": "Halal certifié",
+      "prix_moyen": "40–90 AED",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal certifié"
+      }
+    },
+    {
+      "id": "r-011",
+      "nom": "Rangoli Restaurant",
+      "adresse": "Khalifa City",
+      "cuisine": "Indienne halal",
+      "specialite": "Butter chicken et naan",
+      "certification": "Halal",
+      "prix_moyen": "50–120 AED",
+      "note": 4.4,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 528,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-012",
+      "nom": "Noodle House",
+      "adresse": "Yas Mall",
+      "cuisine": "Asiatique halal",
+      "specialite": "Pad thaï poulet et phô halal",
+      "certification": "Halal certifié",
+      "prix_moyen": "60–130 AED",
+      "note": 4.3,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 516,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal certifié"
+      }
+    },
+    {
+      "id": "r-013",
+      "nom": "Bab Al Bahr",
+      "adresse": "Plage de l'hôtel Beach Rotana",
+      "cuisine": "Méditerranéenne halal",
+      "specialite": "Moussaka végétarienne halal",
+      "certification": "Halal",
+      "prix_moyen": "120–250 AED",
+      "note": 4.5,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 540,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-014",
+      "nom": "Al Mrzab",
+      "adresse": "Al Wahda Mall",
+      "cuisine": "Émiratie & Khaleeji",
+      "specialite": "Thareed (pain émirati au bouillon)",
+      "certification": "Halal",
+      "prix_moyen": "80–160 AED",
+      "note": 4.6,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal"
+      }
+    },
+    {
+      "id": "r-015",
+      "nom": "Hero's Burger Halal",
+      "adresse": "Yas Island",
+      "cuisine": "American fast food halal",
+      "specialite": "Burger au bœuf halal et milkshake",
+      "certification": "Halal certifié",
+      "prix_moyen": "50–100 AED",
+      "note": 4.3,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 516,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal certifié"
+      }
+    }
   ],
   "mosquees": [
-    { "id": "m-001", "nom": "Grande Mosquée Sheikh Zayed", "adresse": "Sheikh Rashid Bin Saeed Street", "type": "Mosquée nationale & monument", "capacite": 41000, "annee_construction": 2007, "style_architectural": "Islamique contemporain (marbre blanc, or)", "note": 5.0 },
-    { "id": "m-002", "nom": "Mosquée Sheikh Khalifa bin Zayed", "adresse": "Musaffah, Abu Dhabi", "type": "Grande mosquée", "capacite": 20000, "annee_construction": 2012, "style_architectural": "Islamique moderne", "note": 4.7 },
-    { "id": "m-003", "nom": "Mosquée Al Bateen", "adresse": "Quartier Al Bateen", "type": "Mosquée historique", "capacite": 5000, "annee_construction": 1974, "style_architectural": "Traditionnel arabe", "note": 4.5 },
-    { "id": "m-004", "nom": "Mosquée Al Noor", "adresse": "Corniche Road", "type": "Mosquée centrale", "capacite": 8000, "annee_construction": 1981, "style_architectural": "Islamique classique", "note": 4.6 },
-    { "id": "m-005", "nom": "Mosquée Fatima Bint Mubarak", "adresse": "Khalidiyah", "type": "Mosquée centrale", "capacite": 6000, "annee_construction": 1995, "style_architectural": "Islamique contemporain", "note": 4.7 }
+    {
+      "id": "m-001",
+      "nom": "Grande Mosquée Sheikh Zayed",
+      "adresse": "Sheikh Rashid Bin Saeed Street",
+      "type": "Mosquée nationale & monument",
+      "capacite": 41000,
+      "annee_construction": 2007,
+      "style_architectural": "Islamique contemporain (marbre blanc, or)",
+      "note": 5.0
+    },
+    {
+      "id": "m-002",
+      "nom": "Mosquée Sheikh Khalifa bin Zayed",
+      "adresse": "Musaffah, Abu Dhabi",
+      "type": "Grande mosquée",
+      "capacite": 20000,
+      "annee_construction": 2012,
+      "style_architectural": "Islamique moderne",
+      "note": 4.7
+    },
+    {
+      "id": "m-003",
+      "nom": "Mosquée Al Bateen",
+      "adresse": "Quartier Al Bateen",
+      "type": "Mosquée historique",
+      "capacite": 5000,
+      "annee_construction": 1974,
+      "style_architectural": "Traditionnel arabe",
+      "note": 4.5
+    },
+    {
+      "id": "m-004",
+      "nom": "Mosquée Al Noor",
+      "adresse": "Corniche Road",
+      "type": "Mosquée centrale",
+      "capacite": 8000,
+      "annee_construction": 1981,
+      "style_architectural": "Islamique classique",
+      "note": 4.6
+    },
+    {
+      "id": "m-005",
+      "nom": "Mosquée Fatima Bint Mubarak",
+      "adresse": "Khalidiyah",
+      "type": "Mosquée centrale",
+      "capacite": 6000,
+      "annee_construction": 1995,
+      "style_architectural": "Islamique contemporain",
+      "note": 4.7
+    }
   ],
   "hotels": [
-    { "id": "h-001", "nom": "Emirates Palace Mandarin Oriental", "adresse": "West Corniche Road", "categorie": "7 étoiles", "prix_nuit": "600–3000 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.9 },
-    { "id": "h-002", "nom": "St. Regis Abu Dhabi", "adresse": "Nation Towers, Corniche", "categorie": "5 étoiles", "prix_nuit": "250–600 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.8 },
-    { "id": "h-003", "nom": "Yas Island Rotana", "adresse": "Yas Island", "categorie": "5 étoiles", "prix_nuit": "150–350 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.6 },
-    { "id": "h-004", "nom": "Hyatt Regency Abu Dhabi", "adresse": "Corniche Road", "categorie": "5 étoiles", "prix_nuit": "180–400 €", "halal_friendly": true, "sans_alcool": false, "piscine": true, "note": 4.7 },
-    { "id": "h-005", "nom": "Premier Inn Abu Dhabi Capital Centre", "adresse": "ADNEC Area", "categorie": "3 étoiles", "prix_nuit": "60–130 €", "halal_friendly": true, "sans_alcool": false, "piscine": false, "note": 4.3 }
+    {
+      "id": "h-001",
+      "nom": "Emirates Palace Mandarin Oriental",
+      "adresse": "West Corniche Road",
+      "categorie": "7 étoiles",
+      "prix_nuit": "600–3000 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.9,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 588,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ESMA Halal"
+      }
+    },
+    {
+      "id": "h-002",
+      "nom": "St. Regis Abu Dhabi",
+      "adresse": "Nation Towers, Corniche",
+      "categorie": "5 étoiles",
+      "prix_nuit": "250–600 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.8,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 576,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ESMA Halal"
+      }
+    },
+    {
+      "id": "h-003",
+      "nom": "Yas Island Rotana",
+      "adresse": "Yas Island",
+      "categorie": "5 étoiles",
+      "prix_nuit": "150–350 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.6,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 552,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ESMA Halal"
+      }
+    },
+    {
+      "id": "h-004",
+      "nom": "Hyatt Regency Abu Dhabi",
+      "adresse": "Corniche Road",
+      "categorie": "5 étoiles",
+      "prix_nuit": "180–400 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": true,
+      "note": 4.7,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 564,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ESMA Halal"
+      }
+    },
+    {
+      "id": "h-005",
+      "nom": "Premier Inn Abu Dhabi Capital Centre",
+      "adresse": "ADNEC Area",
+      "categorie": "3 étoiles",
+      "prix_nuit": "60–130 €",
+      "halal_friendly": true,
+      "sans_alcool": false,
+      "piscine": false,
+      "note": 4.3,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 516,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "ESMA Halal"
+      }
+    }
   ],
   "activites": [
-    { "id": "a-001", "nom": "Grande Mosquée Sheikh Zayed (visite guidée)", "type": "Spirituel & culture", "duree": "2h", "prix": "Gratuit", "note": 5.0 },
-    { "id": "a-002", "nom": "Louvre Abu Dhabi", "adresse": "Île de Saadiyat", "type": "Musée", "duree": "3h", "prix": "63 AED", "note": 4.8 },
-    { "id": "a-003", "nom": "Yas Marina Circuit (Ferrari World)", "type": "Loisir & adrénaline", "duree": "4h", "prix": "295 AED", "note": 4.7 },
-    { "id": "a-004", "nom": "Corniche d'Abu Dhabi", "type": "Promenade", "duree": "1–2h", "prix": "Gratuit", "note": 4.6 },
-    { "id": "a-005", "nom": "Dunes du désert (safari 4x4)", "type": "Nature & aventure", "duree": "Journée", "prix": "200–400 AED", "note": 4.8 },
-    { "id": "a-006", "nom": "Qasr Al Hosn (Fort historique)", "type": "Histoire", "duree": "1h30", "prix": "30 AED", "note": 4.5 },
-    { "id": "a-007", "nom": "Plages de Yas Island", "type": "Plage", "duree": "Journée", "prix": "Variable", "note": 4.6 },
-    { "id": "a-008", "nom": "Mangrove National Park (kayak)", "type": "Nature", "duree": "2h", "prix": "100–200 AED", "note": 4.7 }
-  ]
+    {
+      "id": "a-001",
+      "nom": "Grande Mosquée Sheikh Zayed (visite guidée)",
+      "type": "Spirituel & culture",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "note": 5.0
+    },
+    {
+      "id": "a-002",
+      "nom": "Louvre Abu Dhabi",
+      "adresse": "Île de Saadiyat",
+      "type": "Musée",
+      "duree": "3h",
+      "prix": "63 AED",
+      "note": 4.8
+    },
+    {
+      "id": "a-003",
+      "nom": "Yas Marina Circuit (Ferrari World)",
+      "type": "Loisir & adrénaline",
+      "duree": "4h",
+      "prix": "295 AED",
+      "note": 4.7
+    },
+    {
+      "id": "a-004",
+      "nom": "Corniche d'Abu Dhabi",
+      "type": "Promenade",
+      "duree": "1–2h",
+      "prix": "Gratuit",
+      "note": 4.6
+    },
+    {
+      "id": "a-005",
+      "nom": "Dunes du désert (safari 4x4)",
+      "type": "Nature & aventure",
+      "duree": "Journée",
+      "prix": "200–400 AED",
+      "note": 4.8
+    },
+    {
+      "id": "a-006",
+      "nom": "Qasr Al Hosn (Fort historique)",
+      "type": "Histoire",
+      "duree": "1h30",
+      "prix": "30 AED",
+      "note": 4.5
+    },
+    {
+      "id": "a-007",
+      "nom": "Plages de Yas Island",
+      "type": "Plage",
+      "duree": "Journée",
+      "prix": "Variable",
+      "note": 4.6
+    },
+    {
+      "id": "a-008",
+      "nom": "Mangrove National Park (kayak)",
+      "type": "Nature",
+      "duree": "2h",
+      "prix": "100–200 AED",
+      "note": 4.7
+    }
+  ],
+  "codeISO": "AE"
 }

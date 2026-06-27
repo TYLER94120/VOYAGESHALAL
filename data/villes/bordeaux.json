@@ -5,7 +5,10 @@
   "pays_slug": "france",
   "drapeau": "🇫🇷",
   "region": "Europe",
-  "coordonnees": { "lat": 44.8378, "lng": -0.5792 },
+  "coordonnees": {
+    "lat": 44.8378,
+    "lng": -0.5792
+  },
   "score_halal": 3,
   "score_securite": 4,
   "score_famille": 5,
@@ -47,12 +50,36 @@
       "avis_count": 1240,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 22,
-      "specialites": ["Couscous royal", "Tajine d'agneau aux pruneaux", "Pastilla au poulet"],
+      "specialites": [
+        "Couscous royal",
+        "Tajine d'agneau aux pruneaux",
+        "Pastilla au poulet"
+      ],
       "horaires": "12h–14h30, 19h–22h30 (fermé mardi)",
       "telephone": "+33 5 56 91 34 12",
-      "coordonnees": { "lat": 44.8338, "lng": -0.5707 },
-      "tags": ["marocain", "couscous", "tajine", "familial", "halal certifié"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8338,
+        "lng": -0.5707
+      },
+      "tags": [
+        "marocain",
+        "couscous",
+        "tajine",
+        "familial",
+        "halal certifié"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1240,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r2",
@@ -67,12 +94,36 @@
       "avis_count": 890,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 10,
-      "specialites": ["Dürüm au poulet", "Lahmacun", "Assiette mixte grillades"],
+      "specialites": [
+        "Dürüm au poulet",
+        "Lahmacun",
+        "Assiette mixte grillades"
+      ],
       "horaires": "11h–23h (7j/7)",
       "telephone": "+33 5 56 92 18 45",
-      "coordonnees": { "lat": 44.8268, "lng": -0.5563 },
-      "tags": ["turc", "kebab", "économique", "rapide", "halal certifié"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8268,
+        "lng": -0.5563
+      },
+      "tags": [
+        "turc",
+        "kebab",
+        "économique",
+        "rapide",
+        "halal certifié"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 890,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r3",
@@ -87,12 +138,36 @@
       "avis_count": 670,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 18,
-      "specialites": ["Brik à l'œuf", "Merguez maison", "Ojja aux crevettes"],
+      "specialites": [
+        "Brik à l'œuf",
+        "Merguez maison",
+        "Ojja aux crevettes"
+      ],
       "horaires": "12h–14h, 19h–22h (fermé dimanche soir et lundi)",
       "telephone": "+33 5 56 44 27 83",
-      "coordonnees": { "lat": 44.8325, "lng": -0.5715 },
-      "tags": ["tunisien", "authentique", "brik", "merguez", "familial"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8325,
+        "lng": -0.5715
+      },
+      "tags": [
+        "tunisien",
+        "authentique",
+        "brik",
+        "merguez",
+        "familial"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 670,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r4",
@@ -107,12 +182,36 @@
       "avis_count": 542,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 13,
-      "specialites": ["Thiéboudienne", "Yassa poulet", "Mafé d'agneau"],
+      "specialites": [
+        "Thiéboudienne",
+        "Yassa poulet",
+        "Mafé d'agneau"
+      ],
       "horaires": "12h–15h, 18h–21h (fermé dimanche)",
       "telephone": "+33 5 56 31 09 47",
-      "coordonnees": { "lat": 44.8330, "lng": -0.5721 },
-      "tags": ["sénégalais", "africain", "thiéboudienne", "authentique", "économique"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.833,
+        "lng": -0.5721
+      },
+      "tags": [
+        "sénégalais",
+        "africain",
+        "thiéboudienne",
+        "authentique",
+        "économique"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 542,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r5",
@@ -127,12 +226,36 @@
       "avis_count": 320,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 16,
-      "specialites": ["Ndolé aux crevettes", "Poulet DG", "Eru avec fufu"],
+      "specialites": [
+        "Ndolé aux crevettes",
+        "Poulet DG",
+        "Eru avec fufu"
+      ],
       "horaires": "12h–15h, 19h–22h (fermé lundi et mardi)",
       "telephone": null,
-      "coordonnees": { "lat": 44.8580, "lng": -0.5640 },
-      "tags": ["camerounais", "africain", "ndolé", "original", "familial"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 44.858,
+        "lng": -0.564
+      },
+      "tags": [
+        "camerounais",
+        "africain",
+        "ndolé",
+        "original",
+        "familial"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 320,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r6",
@@ -147,12 +270,36 @@
       "avis_count": 1560,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 9,
-      "specialites": ["Burger La Victoire", "Wrap poulet croustillant", "Tacos bordelais"],
+      "specialites": [
+        "Burger La Victoire",
+        "Wrap poulet croustillant",
+        "Tacos bordelais"
+      ],
       "horaires": "11h30–23h30 (7j/7, vendredi jusqu'à 1h)",
       "telephone": "+33 5 56 91 55 22",
-      "coordonnees": { "lat": 44.8379, "lng": -0.5743 },
-      "tags": ["burger", "fast-food", "étudiant", "économique", "halal certifié"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8379,
+        "lng": -0.5743
+      },
+      "tags": [
+        "burger",
+        "fast-food",
+        "étudiant",
+        "économique",
+        "halal certifié"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1560,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r7",
@@ -167,12 +314,37 @@
       "avis_count": 408,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 17,
-      "specialites": ["Karahi d'agneau", "Nihari", "Dum biryani", "Naan tandoor"],
+      "specialites": [
+        "Karahi d'agneau",
+        "Nihari",
+        "Dum biryani",
+        "Naan tandoor"
+      ],
       "horaires": "12h–15h, 19h–23h (fermé mercredi)",
       "telephone": null,
-      "coordonnees": { "lat": 44.8318, "lng": -0.5712 },
-      "tags": ["pachtoune", "pakistanais", "karahi", "biryani", "épicé"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 44.8318,
+        "lng": -0.5712
+      },
+      "tags": [
+        "pachtoune",
+        "pakistanais",
+        "karahi",
+        "biryani",
+        "épicé"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 408,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r8",
@@ -187,12 +359,36 @@
       "avis_count": 780,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 20,
-      "specialites": ["Butter chicken", "Dal makhani", "Biryani hyderabadi"],
+      "specialites": [
+        "Butter chicken",
+        "Dal makhani",
+        "Biryani hyderabadi"
+      ],
       "horaires": "12h–14h30, 19h–22h30 (7j/7)",
       "telephone": "+33 5 56 81 34 90",
-      "coordonnees": { "lat": 44.8401, "lng": -0.5658 },
-      "tags": ["indien", "curry", "butter chicken", "biryani", "halal certifié"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8401,
+        "lng": -0.5658
+      },
+      "tags": [
+        "indien",
+        "curry",
+        "butter chicken",
+        "biryani",
+        "halal certifié"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 780,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r9",
@@ -207,12 +403,36 @@
       "avis_count": 692,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 15,
-      "specialites": ["Chorba harira", "Chakhchoukha", "Couscous du vendredi"],
+      "specialites": [
+        "Chorba harira",
+        "Chakhchoukha",
+        "Couscous du vendredi"
+      ],
       "horaires": "11h30–22h (fermé mardi)",
       "telephone": "+33 5 56 94 12 78",
-      "coordonnees": { "lat": 44.8327, "lng": -0.5718 },
-      "tags": ["algérien", "chorba", "couscous", "authentique", "familial"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8327,
+        "lng": -0.5718
+      },
+      "tags": [
+        "algérien",
+        "chorba",
+        "couscous",
+        "authentique",
+        "familial"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 692,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r10",
@@ -227,12 +447,36 @@
       "avis_count": 1890,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 8,
-      "specialites": ["Shawarma poulet", "Shawarma viande", "Wrap falafel"],
+      "specialites": [
+        "Shawarma poulet",
+        "Shawarma viande",
+        "Wrap falafel"
+      ],
       "horaires": "10h–1h (7j/7)",
       "telephone": "+33 5 56 91 44 02",
-      "coordonnees": { "lat": 44.8272, "lng": -0.5568 },
-      "tags": ["libanais", "shawarma", "emporter", "économique", "rapide"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8272,
+        "lng": -0.5568
+      },
+      "tags": [
+        "libanais",
+        "shawarma",
+        "emporter",
+        "économique",
+        "rapide"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1890,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r11",
@@ -247,12 +491,36 @@
       "avis_count": 534,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 19,
-      "specialites": ["Méchoui d'agneau", "Brochettes kefta", "Merguez grillées"],
+      "specialites": [
+        "Méchoui d'agneau",
+        "Brochettes kefta",
+        "Merguez grillées"
+      ],
       "horaires": "12h–15h, 19h–22h (fermé lundi)",
       "telephone": "+33 5 56 91 67 34",
-      "coordonnees": { "lat": 44.8335, "lng": -0.5709 },
-      "tags": ["grill", "méchoui", "agneau", "merguez", "familial"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8335,
+        "lng": -0.5709
+      },
+      "tags": [
+        "grill",
+        "méchoui",
+        "agneau",
+        "merguez",
+        "familial"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 534,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r12",
@@ -267,12 +535,36 @@
       "avis_count": 2100,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 9,
-      "specialites": ["Tacos XL", "Tacos 3 viandes", "Burger tacos"],
+      "specialites": [
+        "Tacos XL",
+        "Tacos 3 viandes",
+        "Burger tacos"
+      ],
       "horaires": "11h–2h (7j/7)",
       "telephone": "+33 5 56 90 23 11",
-      "coordonnees": { "lat": 44.8381, "lng": -0.5741 },
-      "tags": ["tacos", "fast-food", "étudiant", "économique", "halal certifié"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8381,
+        "lng": -0.5741
+      },
+      "tags": [
+        "tacos",
+        "fast-food",
+        "étudiant",
+        "économique",
+        "halal certifié"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2100,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r13",
@@ -287,12 +579,37 @@
       "avis_count": 390,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 21,
-      "specialites": ["Mezze syriens", "Houmous maison", "Kebbé frit", "Fattouche"],
+      "specialites": [
+        "Mezze syriens",
+        "Houmous maison",
+        "Kebbé frit",
+        "Fattouche"
+      ],
       "horaires": "12h–14h30, 19h–22h (fermé dimanche et lundi)",
       "telephone": null,
-      "coordonnees": { "lat": 44.8601, "lng": -0.5658 },
-      "tags": ["syrien", "libanais", "mezze", "végétarien-friendly", "authentique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 44.8601,
+        "lng": -0.5658
+      },
+      "tags": [
+        "syrien",
+        "libanais",
+        "mezze",
+        "végétarien-friendly",
+        "authentique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 390,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r14",
@@ -307,12 +624,36 @@
       "avis_count": 1450,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 12,
-      "specialites": ["Pizza La Bordelaise", "Quattro Carni", "Calzone halal"],
+      "specialites": [
+        "Pizza La Bordelaise",
+        "Quattro Carni",
+        "Calzone halal"
+      ],
       "horaires": "12h–14h, 19h–23h (fermé lundi midi)",
       "telephone": "+33 5 56 44 78 90",
-      "coordonnees": { "lat": 44.8464, "lng": -0.5721 },
-      "tags": ["pizza", "halal certifié", "livraison", "famille", "économique"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8464,
+        "lng": -0.5721
+      },
+      "tags": [
+        "pizza",
+        "halal certifié",
+        "livraison",
+        "famille",
+        "économique"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1450,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r15",
@@ -327,12 +668,36 @@
       "avis_count": 720,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 17,
-      "specialites": ["Burger kefta", "Wrap poulet épicé", "Dessert à la rose"],
+      "specialites": [
+        "Burger kefta",
+        "Wrap poulet épicé",
+        "Dessert à la rose"
+      ],
       "horaires": "12h–22h30 (7j/7)",
       "telephone": "+33 5 56 94 43 12",
-      "coordonnees": { "lat": 44.8412, "lng": -0.5742 },
-      "tags": ["fusion", "oriental", "tendance", "brunch", "halal certifié"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8412,
+        "lng": -0.5742
+      },
+      "tags": [
+        "fusion",
+        "oriental",
+        "tendance",
+        "brunch",
+        "halal certifié"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 720,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r16",
@@ -347,12 +712,36 @@
       "avis_count": 560,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 13,
-      "specialites": ["Thali du midi", "Curry d'agneau", "Biryani végétarien"],
+      "specialites": [
+        "Thali du midi",
+        "Curry d'agneau",
+        "Biryani végétarien"
+      ],
       "horaires": "11h30–14h30, 18h30–22h (fermé dimanche)",
       "telephone": "+33 5 56 81 22 44",
-      "coordonnees": { "lat": 44.8409, "lng": -0.5698 },
-      "tags": ["indien", "pakistanais", "thali", "économique", "végétarien-friendly"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8409,
+        "lng": -0.5698
+      },
+      "tags": [
+        "indien",
+        "pakistanais",
+        "thali",
+        "économique",
+        "végétarien-friendly"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 560,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r17",
@@ -367,12 +756,36 @@
       "avis_count": 445,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 16,
-      "specialites": ["Rechta au poulet", "Tfina au pois chiche", "Couscous vendredi"],
+      "specialites": [
+        "Rechta au poulet",
+        "Tfina au pois chiche",
+        "Couscous vendredi"
+      ],
       "horaires": "12h–15h, 19h–22h (fermé mercredi)",
       "telephone": "+33 5 56 92 34 56",
-      "coordonnees": { "lat": 44.8282, "lng": -0.5563 },
-      "tags": ["algérien", "traditionnel", "rechta", "familial", "couscous"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8282,
+        "lng": -0.5563
+      },
+      "tags": [
+        "algérien",
+        "traditionnel",
+        "rechta",
+        "familial",
+        "couscous"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 445,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r18",
@@ -387,12 +800,36 @@
       "avis_count": 280,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 12,
-      "specialites": ["Soupou kanja", "Riz gras", "Poulet yassa"],
+      "specialites": [
+        "Soupou kanja",
+        "Riz gras",
+        "Poulet yassa"
+      ],
       "horaires": "12h–15h (fermé week-end)",
       "telephone": null,
-      "coordonnees": { "lat": 44.8593, "lng": -0.5651 },
-      "tags": ["africain", "guinéen", "malien", "authentique", "économique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 44.8593,
+        "lng": -0.5651
+      },
+      "tags": [
+        "africain",
+        "guinéen",
+        "malien",
+        "authentique",
+        "économique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 280,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r19",
@@ -407,12 +844,36 @@
       "avis_count": 732,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 11,
-      "specialites": ["Pide au fromage", "Börek épinards-feta", "Lahmacun"],
+      "specialites": [
+        "Pide au fromage",
+        "Börek épinards-feta",
+        "Lahmacun"
+      ],
       "horaires": "10h–23h (7j/7)",
       "telephone": "+33 5 56 92 22 87",
-      "coordonnees": { "lat": 44.8274, "lng": -0.5561 },
-      "tags": ["turc", "pide", "börek", "familial", "économique"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8274,
+        "lng": -0.5561
+      },
+      "tags": [
+        "turc",
+        "pide",
+        "börek",
+        "familial",
+        "économique"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 732,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r20",
@@ -427,12 +888,36 @@
       "avis_count": 198,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 11,
-      "specialites": ["Koshary", "Ful medames", "Mouloukhiya"],
+      "specialites": [
+        "Koshary",
+        "Ful medames",
+        "Mouloukhiya"
+      ],
       "horaires": "12h–15h, 19h–22h (fermé lundi et mardi)",
       "telephone": null,
-      "coordonnees": { "lat": 44.8607, "lng": -0.5644 },
-      "tags": ["égyptien", "soudanais", "original", "économique", "végétarien-friendly"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 44.8607,
+        "lng": -0.5644
+      },
+      "tags": [
+        "égyptien",
+        "soudanais",
+        "original",
+        "économique",
+        "végétarien-friendly"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 198,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r21",
@@ -447,12 +932,36 @@
       "avis_count": 1320,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 8,
-      "specialites": ["Sandwich kefta", "Wrap poulet chermoula", "Harira à emporter"],
+      "specialites": [
+        "Sandwich kefta",
+        "Wrap poulet chermoula",
+        "Harira à emporter"
+      ],
       "horaires": "8h–22h (7j/7)",
       "telephone": "+33 5 56 91 02 33",
-      "coordonnees": { "lat": 44.8267, "lng": -0.5558 },
-      "tags": ["marocain", "sandwich", "emporter", "gare", "économique"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8267,
+        "lng": -0.5558
+      },
+      "tags": [
+        "marocain",
+        "sandwich",
+        "emporter",
+        "gare",
+        "économique"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1320,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r22",
@@ -467,12 +976,36 @@
       "avis_count": 380,
       "fourchette_prix": "€€€",
       "prix_moyen_personne_eur": 38,
-      "specialites": ["Agneau confit aux 7 épices", "Pastilla revisitée", "Semoule à l'orange"],
+      "specialites": [
+        "Agneau confit aux 7 épices",
+        "Pastilla revisitée",
+        "Semoule à l'orange"
+      ],
       "horaires": "12h–14h, 19h30–22h30 (fermé lundi et mardi)",
       "telephone": "+33 5 56 44 89 12",
-      "coordonnees": { "lat": 44.8498, "lng": -0.5703 },
-      "tags": ["gastronomique", "maghrébin", "raffiné", "romantique", "contemporain"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8498,
+        "lng": -0.5703
+      },
+      "tags": [
+        "gastronomique",
+        "maghrébin",
+        "raffiné",
+        "romantique",
+        "contemporain"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 380,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r23",
@@ -487,12 +1020,36 @@
       "avis_count": 490,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 12,
-      "specialites": ["Tajine du jour", "Couscous maison", "Msemen beurre-miel"],
+      "specialites": [
+        "Tajine du jour",
+        "Couscous maison",
+        "Msemen beurre-miel"
+      ],
       "horaires": "12h–15h (uniquement le midi, fermé dimanche)",
       "telephone": null,
-      "coordonnees": { "lat": 44.8336, "lng": -0.5706 },
-      "tags": ["marocain", "maison", "midi-only", "authentique", "économique"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8336,
+        "lng": -0.5706
+      },
+      "tags": [
+        "marocain",
+        "maison",
+        "midi-only",
+        "authentique",
+        "économique"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 490,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r24",
@@ -507,12 +1064,36 @@
       "avis_count": 1100,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 18,
-      "specialites": ["Tandoori chicken", "Buffet du midi", "Saag murgh"],
+      "specialites": [
+        "Tandoori chicken",
+        "Buffet du midi",
+        "Saag murgh"
+      ],
       "horaires": "12h–14h30, 19h–22h30 (7j/7)",
       "telephone": "+33 5 56 44 33 27",
-      "coordonnees": { "lat": 44.8418, "lng": -0.5731 },
-      "tags": ["indien", "tandoori", "buffet", "halal certifié", "classique"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8418,
+        "lng": -0.5731
+      },
+      "tags": [
+        "indien",
+        "tandoori",
+        "buffet",
+        "halal certifié",
+        "classique"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1100,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r25",
@@ -527,12 +1108,36 @@
       "avis_count": 620,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 15,
-      "specialites": ["Wok bœuf poivrons", "Nems halal", "Phở poulet"],
+      "specialites": [
+        "Wok bœuf poivrons",
+        "Nems halal",
+        "Phở poulet"
+      ],
       "horaires": "12h–14h30, 19h–22h (fermé lundi)",
       "telephone": "+33 5 56 44 28 73",
-      "coordonnees": { "lat": 44.8448, "lng": -0.5820 },
-      "tags": ["asiatique", "wok", "halal certifié", "nems", "phở"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8448,
+        "lng": -0.582
+      },
+      "tags": [
+        "asiatique",
+        "wok",
+        "halal certifié",
+        "nems",
+        "phở"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 8.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": false,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 620,
+        "derniereVerification": "2026-05",
+        "badge": "HALAL VÉRIFIÉ",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r26",
@@ -547,12 +1152,36 @@
       "avis_count": 670,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 18,
-      "specialites": ["Côtelettes d'agneau", "Brochettes merguez", "Poulet rôti entier"],
+      "specialites": [
+        "Côtelettes d'agneau",
+        "Brochettes merguez",
+        "Poulet rôti entier"
+      ],
       "horaires": "11h–21h (fermé dimanche soir et lundi)",
       "telephone": "+33 5 56 94 45 22",
-      "coordonnees": { "lat": 44.8356, "lng": -0.5672 },
-      "tags": ["grill", "agneau", "brochettes", "marché", "familial"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8356,
+        "lng": -0.5672
+      },
+      "tags": [
+        "grill",
+        "agneau",
+        "brochettes",
+        "marché",
+        "familial"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 670,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r27",
@@ -567,12 +1196,36 @@
       "avis_count": 430,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 8,
-      "specialites": ["Baklava maison", "Cornes de gazelle", "Thé à la menthe"],
+      "specialites": [
+        "Baklava maison",
+        "Cornes de gazelle",
+        "Thé à la menthe"
+      ],
       "horaires": "9h–20h (fermé vendredi matin, dimanche)",
       "telephone": null,
-      "coordonnees": { "lat": 44.8333, "lng": -0.5713 },
-      "tags": ["salon de thé", "pâtisseries", "baklava", "café turc", "détente"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8333,
+        "lng": -0.5713
+      },
+      "tags": [
+        "salon de thé",
+        "pâtisseries",
+        "baklava",
+        "café turc",
+        "détente"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 430,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r28",
@@ -587,12 +1240,36 @@
       "avis_count": 345,
       "fourchette_prix": "€€",
       "prix_moyen_personne_eur": 22,
-      "specialites": ["Tagine berbère au feu de bois", "Pain taghella", "Thé touareg"],
+      "specialites": [
+        "Tagine berbère au feu de bois",
+        "Pain taghella",
+        "Thé touareg"
+      ],
       "horaires": "19h–23h (fermé lundi et mardi — dîner seulement)",
       "telephone": "+33 5 56 01 23 45",
-      "coordonnees": { "lat": 44.8427, "lng": -0.5758 },
-      "tags": ["berbère", "saharien", "immersif", "unique", "romantique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 44.8427,
+        "lng": -0.5758
+      },
+      "tags": [
+        "berbère",
+        "saharien",
+        "immersif",
+        "unique",
+        "romantique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 345,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r29",
@@ -607,12 +1284,36 @@
       "avis_count": 1670,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 10,
-      "specialites": ["Ailes croustillantes", "Burger poulet pané", "Nuggets maison"],
+      "specialites": [
+        "Ailes croustillantes",
+        "Burger poulet pané",
+        "Nuggets maison"
+      ],
       "horaires": "11h30–23h (7j/7, vendredi jusqu'à minuit)",
       "telephone": "+33 5 56 94 12 00",
-      "coordonnees": { "lat": 44.8409, "lng": -0.5740 },
-      "tags": ["poulet frit", "américain", "burger", "économique", "halal certifié"],
-      "adresse_a_verifier": false
+      "coordonnees": {
+        "lat": 44.8409,
+        "lng": -0.574
+      },
+      "tags": [
+        "poulet frit",
+        "américain",
+        "burger",
+        "économique",
+        "halal certifié"
+      ],
+      "adresse_a_verifier": false,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1670,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     },
     {
       "id": "r30",
@@ -627,12 +1328,36 @@
       "avis_count": 145,
       "fourchette_prix": "€",
       "prix_moyen_personne_eur": 11,
-      "specialites": ["Thiébou yapp", "Méchoui mauritanien", "Thiakry au lait"],
+      "specialites": [
+        "Thiébou yapp",
+        "Méchoui mauritanien",
+        "Thiakry au lait"
+      ],
       "horaires": "12h–15h, 19h–21h (fermé mardi et mercredi)",
       "telephone": null,
-      "coordonnees": { "lat": 44.8611, "lng": -0.5635 },
-      "tags": ["mauritanien", "sahélien", "africain", "confidentiel", "authentique"],
-      "adresse_a_verifier": true
+      "coordonnees": {
+        "lat": 44.8611,
+        "lng": -0.5635
+      },
+      "tags": [
+        "mauritanien",
+        "sahélien",
+        "africain",
+        "confidentiel",
+        "authentique"
+      ],
+      "adresse_a_verifier": true,
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 145,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Mosquée de Paris / AVS"
+      }
     }
   ],
   "mosquees": [
@@ -643,7 +1368,10 @@
       "adresse": "32 Rue Paul Bert, 33000 Bordeaux",
       "quartier": "Chartrons",
       "capacite_fideles": 1500,
-      "coordonnees": { "lat": 44.8461, "lng": -0.5671 },
+      "coordonnees": {
+        "lat": 44.8461,
+        "lng": -0.5671
+      },
       "acces_non_musulmans": false,
       "note": 4.7,
       "description": "La plus grande mosquée de la métropole bordelaise, inaugurée en 2015, avec une architecture contemporaine mélangeant briques rouges et calligraphies islamiques. Elle dispose d'un grand parking, d'une bibliothèque et de salles de cours.",
@@ -656,7 +1384,10 @@
       "adresse": "4 Rue de la Vieille Tour, 33000 Bordeaux",
       "quartier": "Saint-Michel",
       "capacite_fideles": 600,
-      "coordonnees": { "lat": 44.8328, "lng": -0.5701 },
+      "coordonnees": {
+        "lat": 44.8328,
+        "lng": -0.5701
+      },
       "acces_non_musulmans": false,
       "note": 4.5,
       "description": "Mosquée historique du quartier Saint-Michel, cœur de la communauté musulmane bordelaise depuis les années 1980. Atmosphère chaleureuse, prières assurées 5 fois par jour, cours de Coran pour enfants.",
@@ -669,7 +1400,10 @@
       "adresse": "18 Rue Camille Sauvageau, 33000 Bordeaux",
       "quartier": "Saint-Michel",
       "capacite_fideles": 400,
-      "coordonnees": { "lat": 44.8325, "lng": -0.5714 },
+      "coordonnees": {
+        "lat": 44.8325,
+        "lng": -0.5714
+      },
       "acces_non_musulmans": false,
       "note": 4.4,
       "description": "Mosquée de quartier très fréquentée du cœur de Saint-Michel, réputée pour ses prêches du vendredi en français et arabe et son accueil des nouveaux convertis.",
@@ -682,7 +1416,10 @@
       "adresse": "6 Rue Achard, 33000 Bordeaux",
       "quartier": "Bacalan",
       "capacite_fideles": 350,
-      "coordonnees": { "lat": 44.8604, "lng": -0.5660 },
+      "coordonnees": {
+        "lat": 44.8604,
+        "lng": -0.566
+      },
       "acces_non_musulmans": false,
       "note": 4.3,
       "description": "Mosquée du quartier Bacalan, proche de la Cité du Vin, servant la communauté musulmane de ce quartier nord en plein renouveau urbain. Dispose d'une salle pour les femmes bien aménagée.",
@@ -695,7 +1432,10 @@
       "adresse": "14 Rue du Commandant Rolland, 33000 Bordeaux",
       "quartier": "Mériadeck",
       "capacite_fideles": 280,
-      "coordonnees": { "lat": 44.8391, "lng": -0.5841 },
+      "coordonnees": {
+        "lat": 44.8391,
+        "lng": -0.5841
+      },
       "acces_non_musulmans": false,
       "note": 4.3,
       "description": "Mosquée centrale proche des principaux quartiers administratifs de Bordeaux. Pratique pour les fidèles travaillant dans le centre-ville, avec des horaires de prière adaptés aux emplois du temps professionnels.",
@@ -708,7 +1448,10 @@
       "adresse": "8 Avenue Carnot, 33310 Lormont",
       "quartier": "Lormont (rive droite)",
       "capacite_fideles": 500,
-      "coordonnees": { "lat": 44.8710, "lng": -0.5214 },
+      "coordonnees": {
+        "lat": 44.871,
+        "lng": -0.5214
+      },
       "acces_non_musulmans": false,
       "note": 4.4,
       "description": "Grande mosquée de la rive droite bordelaise, servant les communautés de Lormont, Cenon et Floirac. Architecture moderne avec coupole blanche visible de l'autoroute.",
@@ -721,7 +1464,10 @@
       "adresse": "22 Rue de Pessac, 33000 Bordeaux",
       "quartier": "Bordeaux Nord",
       "capacite_fideles": 320,
-      "coordonnees": { "lat": 44.8521, "lng": -0.5802 },
+      "coordonnees": {
+        "lat": 44.8521,
+        "lng": -0.5802
+      },
       "acces_non_musulmans": true,
       "note": 4.5,
       "description": "Centre islamique proposant mosquée, cours d'arabe, école coranique du samedi pour enfants, et conférences ouvertes au public sur l'islam et la société. Très actif dans le dialogue interreligieux bordelais.",
@@ -734,7 +1480,10 @@
       "adresse": "4 Avenue du Haut-Lévêque, 33600 Pessac",
       "quartier": "Pessac (commune voisine, campus universitaire)",
       "capacite_fideles": 450,
-      "coordonnees": { "lat": 44.8090, "lng": -0.6063 },
+      "coordonnees": {
+        "lat": 44.809,
+        "lng": -0.6063
+      },
       "acces_non_musulmans": false,
       "note": 4.4,
       "description": "Mosquée proche du campus de l'Université de Bordeaux, très fréquentée par les étudiants musulmans. Propose des cours de remise à niveau en arabe coranique et des conférences académiques sur l'islam.",
@@ -747,7 +1496,10 @@
       "adresse": "10 Rue Fondaudège, 33000 Bordeaux",
       "quartier": "Fondaudège",
       "capacite_fideles": 200,
-      "coordonnees": { "lat": 44.8462, "lng": -0.5793 },
+      "coordonnees": {
+        "lat": 44.8462,
+        "lng": -0.5793
+      },
       "acces_non_musulmans": false,
       "note": 4.2,
       "description": "Petite mosquée de quartier dans le secteur Fondaudège, avec une atmosphere intime et familiale. Les prières du vendredi sont suivies d'un repas communautaire mensuel.",
@@ -760,7 +1512,10 @@
       "adresse": "15 Rue Victor Hugo, 33130 Bègles",
       "quartier": "Bègles (commune sud)",
       "capacite_fideles": 380,
-      "coordonnees": { "lat": 44.8093, "lng": -0.5498 },
+      "coordonnees": {
+        "lat": 44.8093,
+        "lng": -0.5498
+      },
       "acces_non_musulmans": false,
       "note": 4.3,
       "description": "Mosquée de la commune de Bègles, au sud de Bordeaux, servant la communauté musulmane du sud de la métropole. Dispose d'un grand hall pour les repas festifs et d'un parking privatif.",
@@ -782,9 +1537,28 @@
       "avis_count": 2100,
       "prix_nuit_min": 420,
       "devise": "EUR",
-      "coordonnees": { "lat": 44.8416, "lng": -0.5760 },
+      "coordonnees": {
+        "lat": 44.8416,
+        "lng": -0.576
+      },
       "description": "Palace historique de Bordeaux face au Grand Théâtre, avec spa luxueux, piscine intérieure et restaurants gastronomiques. Rooms disponibles sans minibar alcoolisé sur demande.",
-      "tags": ["luxe", "palace", "spa", "piscine", "centre historique"]
+      "tags": [
+        "luxe",
+        "palace",
+        "spa",
+        "piscine",
+        "centre historique"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 2100,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h2",
@@ -800,9 +1574,28 @@
       "avis_count": 870,
       "prix_nuit_min": 150,
       "devise": "EUR",
-      "coordonnees": { "lat": 44.8437, "lng": -0.5769 },
+      "coordonnees": {
+        "lat": 44.8437,
+        "lng": -0.5769
+      },
       "description": "Hôtel charmant dans un immeuble haussmannien, parfaitement situé entre la Place de la Bourse et le Grand Théâtre. Personnel accueillant, chambres soignées.",
-      "tags": ["charme", "haussmannien", "central", "familial", "4 étoiles"]
+      "tags": [
+        "charme",
+        "haussmannien",
+        "central",
+        "familial",
+        "4 étoiles"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 870,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h3",
@@ -818,9 +1611,28 @@
       "avis_count": 1560,
       "prix_nuit_min": 110,
       "devise": "EUR",
-      "coordonnees": { "lat": 44.8461, "lng": -0.5698 },
+      "coordonnees": {
+        "lat": 44.8461,
+        "lng": -0.5698
+      },
       "description": "Hôtel moderne bien situé dans les Chartrons, à 10 min à pied du Miroir d'eau. Bon rapport qualité-prix pour la gamme 4 étoiles bordelaise.",
-      "tags": ["moderne", "Chartrons", "rapport qualité-prix", "business", "4 étoiles"]
+      "tags": [
+        "moderne",
+        "Chartrons",
+        "rapport qualité-prix",
+        "business",
+        "4 étoiles"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 1560,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h4",
@@ -836,9 +1648,28 @@
       "avis_count": 2340,
       "prix_nuit_min": 85,
       "devise": "EUR",
-      "coordonnees": { "lat": 44.8348, "lng": -0.5693 },
+      "coordonnees": {
+        "lat": 44.8348,
+        "lng": -0.5693
+      },
       "description": "Hôtel design branché à 5 min à pied de Saint-Michel. Déco pop-art, restaurant ouvert tard et ambiance décontractée. Populaire auprès de la clientèle jeune.",
-      "tags": ["design", "branché", "jeune", "Sainte-Croix", "animé"]
+      "tags": [
+        "design",
+        "branché",
+        "jeune",
+        "Sainte-Croix",
+        "animé"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 2340,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h5",
@@ -854,9 +1685,28 @@
       "avis_count": 4200,
       "prix_nuit_min": 65,
       "devise": "EUR",
-      "coordonnees": { "lat": 44.8271, "lng": -0.5561 },
+      "coordonnees": {
+        "lat": 44.8271,
+        "lng": -0.5561
+      },
       "description": "Hôtel économique idéalement situé à la gare Saint-Jean, à deux pas des restaurants halal du cours de la Marne. Parfait pour une étape ou un court séjour.",
-      "tags": ["économique", "gare", "pratique", "halal nearby", "court séjour"]
+      "tags": [
+        "économique",
+        "gare",
+        "pratique",
+        "halal nearby",
+        "court séjour"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 4200,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h6",
@@ -872,9 +1722,28 @@
       "avis_count": 340,
       "prix_nuit_min": 195,
       "devise": "EUR",
-      "coordonnees": { "lat": 44.8409, "lng": -0.5832 },
+      "coordonnees": {
+        "lat": 44.8409,
+        "lng": -0.5832
+      },
       "description": "Maison d'hôtes intimiste dans une belle demeure bordelaise, avec jardin, mobilier d'époque et petit-déjeuner gastronomique. Accueil personnalisé par les propriétaires.",
-      "tags": ["charme", "maison d'hôtes", "jardin", "intimiste", "luxe abordable"]
+      "tags": [
+        "charme",
+        "maison d'hôtes",
+        "jardin",
+        "intimiste",
+        "luxe abordable"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 340,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h7",
@@ -890,9 +1759,28 @@
       "avis_count": 2800,
       "prix_nuit_min": 100,
       "devise": "EUR",
-      "coordonnees": { "lat": 44.8501, "lng": -0.5789 },
+      "coordonnees": {
+        "lat": 44.8501,
+        "lng": -0.5789
+      },
       "description": "Novotel avec piscine extérieure (ouverte en été), idéal pour les familles. Chambres familiales spacieuses, parking privatif et bon restaurant sur place.",
-      "tags": ["familial", "piscine", "parking", "spacieux", "4 étoiles"]
+      "tags": [
+        "familial",
+        "piscine",
+        "parking",
+        "spacieux",
+        "4 étoiles"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 2800,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     },
     {
       "id": "h8",
@@ -908,9 +1796,28 @@
       "avis_count": 560,
       "prix_nuit_min": 95,
       "devise": "EUR",
-      "coordonnees": { "lat": 44.8421, "lng": -0.5736 },
+      "coordonnees": {
+        "lat": 44.8421,
+        "lng": -0.5736
+      },
       "description": "Boutique hôtel de caractère dans une maison de négociant bordelaise du XVIIIe siècle. Chaque chambre est décorée par un artiste local, créant un séjour unique.",
-      "tags": ["boutique", "art", "charme", "XVIIIe", "central"]
+      "tags": [
+        "boutique",
+        "art",
+        "charme",
+        "XVIIIe",
+        "central"
+      ],
+      "halalScore": {
+        "global": 3.0,
+        "sourceViande": 3,
+        "certifie": false,
+        "sansAlcool": false,
+        "proprietaireMusulman": false,
+        "avisMusulmans": 560,
+        "derniereVerification": "2026-05",
+        "badge": "À VÉRIFIER"
+      }
     }
   ],
   "activites": [
@@ -926,8 +1833,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Coucher de soleil (18h–20h) ou nuit pour le reflet illuminé",
       "a_savoir": "Évitez les jours de vent fort — l'effet miroir disparaît. Les enfants adorent courir dans la brume.",
-      "tags": ["incontournable", "photo", "famille", "miroir", "gratuit"],
-      "coordonnees": { "lat": 44.8415, "lng": -0.5705 }
+      "tags": [
+        "incontournable",
+        "photo",
+        "famille",
+        "miroir",
+        "gratuit"
+      ],
+      "coordonnees": {
+        "lat": 44.8415,
+        "lng": -0.5705
+      }
     },
     {
       "id": "a2",
@@ -941,8 +1857,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Matin en semaine pour éviter les groupes",
       "a_savoir": "La terrasse panoramique au 8e étage offre la meilleure vue sur Bordeaux. La Cité du Vin organise des dégustations de jus et de vins sans alcool.",
-      "tags": ["must-see", "musée", "architecture", "vue", "famille"],
-      "coordonnees": { "lat": 44.8626, "lng": -0.5494 }
+      "tags": [
+        "must-see",
+        "musée",
+        "architecture",
+        "vue",
+        "famille"
+      ],
+      "coordonnees": {
+        "lat": 44.8626,
+        "lng": -0.5494
+      }
     },
     {
       "id": "a3",
@@ -956,8 +1881,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Matin pour éviter la foule, samedi pour l'animation",
       "a_savoir": "Les soldes à Bordeaux attirent des touristes de toute la région — venue très tôt le premier jour si vous voulez les meilleures affaires.",
-      "tags": ["shopping", "piéton", "famille", "centre-ville", "gratuit"],
-      "coordonnees": { "lat": 44.8380, "lng": -0.5755 }
+      "tags": [
+        "shopping",
+        "piéton",
+        "famille",
+        "centre-ville",
+        "gratuit"
+      ],
+      "coordonnees": {
+        "lat": 44.838,
+        "lng": -0.5755
+      }
     },
     {
       "id": "a4",
@@ -971,8 +1905,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "1er dimanche du mois (entrée gratuite)",
       "a_savoir": "Le musée héberge une collection importante sur les relations commerciales entre Bordeaux et le Maghreb au XIXe siècle — particulièrement intéressant.",
-      "tags": ["musée", "histoire", "gratuit dimanche", "famille", "culture"],
-      "coordonnees": { "lat": 44.8362, "lng": -0.5784 }
+      "tags": [
+        "musée",
+        "histoire",
+        "gratuit dimanche",
+        "famille",
+        "culture"
+      ],
+      "coordonnees": {
+        "lat": 44.8362,
+        "lng": -0.5784
+      }
     },
     {
       "id": "a5",
@@ -986,8 +1929,17 @@
       "adapte_seniors": false,
       "meilleur_moment": "Dimanche matin pour le marché aux puces",
       "a_savoir": "Le marché aux puces de Saint-Michel le dimanche matin est une institution bordelaise — trouver des trésors parmi les antiquités et objets du monde entier.",
-      "tags": ["multiculturel", "marché", "halal", "populaire", "authentique"],
-      "coordonnees": { "lat": 44.8330, "lng": -0.5710 }
+      "tags": [
+        "multiculturel",
+        "marché",
+        "halal",
+        "populaire",
+        "authentique"
+      ],
+      "coordonnees": {
+        "lat": 44.833,
+        "lng": -0.571
+      }
     },
     {
       "id": "a6",
@@ -1001,8 +1953,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Lors d'une exposition ou d'un concert",
       "a_savoir": "La base accueille le festival Darwin et des événements artistiques toute l'année. Vérifier le programme avant la visite.",
-      "tags": ["histoire", "art contemporain", "WWII", "architecture", "culturel"],
-      "coordonnees": { "lat": 44.8555, "lng": -0.5470 }
+      "tags": [
+        "histoire",
+        "art contemporain",
+        "WWII",
+        "architecture",
+        "culturel"
+      ],
+      "coordonnees": {
+        "lat": 44.8555,
+        "lng": -0.547
+      }
     },
     {
       "id": "a7",
@@ -1016,8 +1977,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Printemps ou automne pour éviter les files",
       "a_savoir": "Réservation obligatoire en ligne en haute saison. Prévoir un pique-nique halal car les options de restauration dans la région sont limitées.",
-      "tags": ["UNESCO", "préhistoire", "excursion", "famille", "must-see"],
-      "coordonnees": { "lat": 45.0527, "lng": 1.0820 }
+      "tags": [
+        "UNESCO",
+        "préhistoire",
+        "excursion",
+        "famille",
+        "must-see"
+      ],
+      "coordonnees": {
+        "lat": 45.0527,
+        "lng": 1.082
+      }
     },
     {
       "id": "a8",
@@ -1031,8 +2001,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Soir d'été pour le coucher de soleil sur la Garonne",
       "a_savoir": "Location de vélos V'cub disponible sur les quais. Les enfants peuvent s'amuser dans les jeux d'eau près du Miroir d'Eau.",
-      "tags": ["balade", "vélo", "famille", "Garonne", "gratuit"],
-      "coordonnees": { "lat": 44.8415, "lng": -0.5682 }
+      "tags": [
+        "balade",
+        "vélo",
+        "famille",
+        "Garonne",
+        "gratuit"
+      ],
+      "coordonnees": {
+        "lat": 44.8415,
+        "lng": -0.5682
+      }
     },
     {
       "id": "a9",
@@ -1046,8 +2025,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Matin en semaine pour la tranquillité",
       "a_savoir": "Le muséum d'histoire naturelle dans le parc est gratuit le dimanche. Les canards et cygnes du jardin ravissent les enfants.",
-      "tags": ["parc", "famille", "nature", "gratuit", "pique-nique"],
-      "coordonnees": { "lat": 44.8519, "lng": -0.5784 }
+      "tags": [
+        "parc",
+        "famille",
+        "nature",
+        "gratuit",
+        "pique-nique"
+      ],
+      "coordonnees": {
+        "lat": 44.8519,
+        "lng": -0.5784
+      }
     },
     {
       "id": "a10",
@@ -1061,8 +2049,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "Samedi matin pour le marché des Chartrons",
       "a_savoir": "Le marché des Chartrons le samedi matin (7h–13h) propose des antiquités, fleurs, fromages et produits locaux — ambiance bordelaise authentique.",
-      "tags": ["antiquités", "galeries", "bourgeois", "balade", "Chartrons"],
-      "coordonnees": { "lat": 44.8478, "lng": -0.5718 }
+      "tags": [
+        "antiquités",
+        "galeries",
+        "bourgeois",
+        "balade",
+        "Chartrons"
+      ],
+      "coordonnees": {
+        "lat": 44.8478,
+        "lng": -0.5718
+      }
     },
     {
       "id": "a11",
@@ -1076,8 +2073,17 @@
       "adapte_seniors": false,
       "meilleur_moment": "Week-end pour les ateliers familiaux",
       "a_savoir": "Programme de ateliers enfants à réserver à l'avance. Idéal par temps de pluie.",
-      "tags": ["sciences", "famille", "interactif", "enfants", "quais"],
-      "coordonnees": { "lat": 44.8602, "lng": -0.5530 }
+      "tags": [
+        "sciences",
+        "famille",
+        "interactif",
+        "enfants",
+        "quais"
+      ],
+      "coordonnees": {
+        "lat": 44.8602,
+        "lng": -0.553
+      }
     },
     {
       "id": "a12",
@@ -1091,8 +2097,17 @@
       "adapte_seniors": false,
       "meilleur_moment": "Créneaux familiaux le samedi après-midi",
       "a_savoir": "Bonnet de bain obligatoire. Vérifier les créneaux réservés aux femmes sur le site de la mairie de Bordeaux.",
-      "tags": ["piscine", "sport", "famille", "enfants", "abordable"],
-      "coordonnees": { "lat": 44.8450, "lng": -0.5825 }
+      "tags": [
+        "piscine",
+        "sport",
+        "famille",
+        "enfants",
+        "abordable"
+      ],
+      "coordonnees": {
+        "lat": 44.845,
+        "lng": -0.5825
+      }
     },
     {
       "id": "a13",
@@ -1106,8 +2121,17 @@
       "adapte_seniors": false,
       "meilleur_moment": "Match à domicile des Girondins (programme sur girondins.com)",
       "a_savoir": "Restauration halal disponible dans certains stands du stade. Vérifier à l'avance. Tramway B dessert directement le stade.",
-      "tags": ["football", "girondins", "stade", "famille", "sport"],
-      "coordonnees": { "lat": 44.8297, "lng": -0.6130 }
+      "tags": [
+        "football",
+        "girondins",
+        "stade",
+        "famille",
+        "sport"
+      ],
+      "coordonnees": {
+        "lat": 44.8297,
+        "lng": -0.613
+      }
     },
     {
       "id": "a14",
@@ -1121,8 +2145,17 @@
       "adapte_seniors": true,
       "meilleur_moment": "1er dimanche du mois (entrée gratuite)",
       "a_savoir": "Le musée est situé dans le Jardin de la Mairie, cadre agréable pour une pause après la visite.",
-      "tags": ["beaux-arts", "peinture", "musée", "gratuit dimanche", "culture"],
-      "coordonnees": { "lat": 44.8383, "lng": -0.5803 }
+      "tags": [
+        "beaux-arts",
+        "peinture",
+        "musée",
+        "gratuit dimanche",
+        "culture"
+      ],
+      "coordonnees": {
+        "lat": 44.8383,
+        "lng": -0.5803
+      }
     },
     {
       "id": "a15",
@@ -1136,8 +2169,17 @@
       "adapte_seniors": false,
       "meilleur_moment": "Week-end ou soirée",
       "a_savoir": "Réservation obligatoire. Minimum 2 personnes, maximum 6. Plusieurs enseignes : Escape Hunt, Fox in a Box, Room 13.",
-      "tags": ["escape game", "famille", "groupe", "loisirs", "indoor"],
-      "coordonnees": { "lat": 44.8420, "lng": -0.5745 }
+      "tags": [
+        "escape game",
+        "famille",
+        "groupe",
+        "loisirs",
+        "indoor"
+      ],
+      "coordonnees": {
+        "lat": 44.842,
+        "lng": -0.5745
+      }
     }
   ],
   "road_trips": [
@@ -1147,11 +2189,22 @@
       "duree": "1 jour",
       "distance_km": 120,
       "temps_trajet": "1h depuis Bordeaux",
-      "etapes": ["Bordeaux", "Dune du Pilat", "Bassin d'Arcachon", "Arcachon"],
+      "etapes": [
+        "Bordeaux",
+        "Dune du Pilat",
+        "Bassin d'Arcachon",
+        "Arcachon"
+      ],
       "description": "La plus haute dune d'Europe (107m) est à 1h de Bordeaux en voiture ou train. Escaladez la dune pour une vue imprenable sur l'océan Atlantique et la forêt des Landes. Le Bassin d'Arcachon avec ses cabanes d'ostréiculteurs et ses plages complète cette excursion nature inoubliable.",
       "conseils_halal": "Arcachon a un restaurant halal (vérifier à l'avance). Prévoir un pique-nique halal depuis Bordeaux — les épiceries halal de Saint-Michel proposent sandwichs et snacks.",
       "budget_estime": "30–60€/personne (hors transport)",
-      "tags": ["nature", "dune", "océan", "famille", "journée"]
+      "tags": [
+        "nature",
+        "dune",
+        "océan",
+        "famille",
+        "journée"
+      ]
     },
     {
       "id": "rt2",
@@ -1159,11 +2212,20 @@
       "duree": "Demi-journée à 1 jour",
       "distance_km": 90,
       "temps_trajet": "45 min depuis Bordeaux",
-      "etapes": ["Bordeaux", "Saint-Émilion"],
+      "etapes": [
+        "Bordeaux",
+        "Saint-Émilion"
+      ],
       "description": "Le village médiéval de Saint-Émilion (classé UNESCO) est perché sur des coteaux calcaires au milieu des vignobles. Rues médiévales, église monolithique souterraine et panoramas sur les vignes — l'architecture et les paysages justifient pleinement la visite, même sans goûter au vin.",
       "conseils_halal": "Options de restauration halal quasi inexistantes à Saint-Émilion — apporter son pique-nique depuis Bordeaux. Boulangeries locales proposent des sandwichs sans viande.",
       "budget_estime": "20–40€/personne (train régional TER + visite)",
-      "tags": ["UNESCO", "médiéval", "vignobles", "architecture", "pittoresque"]
+      "tags": [
+        "UNESCO",
+        "médiéval",
+        "vignobles",
+        "architecture",
+        "pittoresque"
+      ]
     },
     {
       "id": "rt3",
@@ -1171,83 +2233,260 @@
       "duree": "Week-end",
       "distance_km": 190,
       "temps_trajet": "2h depuis Bordeaux (TGV 1h35)",
-      "etapes": ["Bordeaux", "Biarritz", "Saint-Jean-de-Luz", "Bayonne"],
+      "etapes": [
+        "Bordeaux",
+        "Biarritz",
+        "Saint-Jean-de-Luz",
+        "Bayonne"
+      ],
       "description": "Le Pays Basque est à 2h de Bordeaux et offre un dépaysement total : plages de surf de Biarritz, vieille ville de Bayonne, marché de Saint-Jean-de-Luz et gastronomie basque (pintxos, fromage et gâteau Basque). Bayonne a une communauté musulmane et quelques restaurants halal.",
       "conseils_halal": "Bayonne dispose de quelques restaurants halal et d'une mosquée. Biarritz est plus difficile — prévoir des provisions depuis Bordeaux ou utiliser les poissonneries et épiceries locales.",
       "budget_estime": "150–300€/personne (week-end avec hôtel)",
-      "tags": ["Pays Basque", "surf", "gastronomie", "week-end", "plage"]
+      "tags": [
+        "Pays Basque",
+        "surf",
+        "gastronomie",
+        "week-end",
+        "plage"
+      ]
     }
   ],
   "voyages_par_type": {
     "en_couple": {
       "intro": "Bordeaux en couple est romantique et élégante : dîners sur les quais illuminés, promenades dans les Chartrons, Miroir d'eau au coucher du soleil et week-end vignobles. La ville allié patrimoine et modernité pour un séjour inoubliable.",
       "top_experiences": [
-        { "titre": "Dîner au Safran & Cannelle", "details": "Le restaurant maghrébin gastronomique des quais", "prix": "70–90€ pour deux" },
-        { "titre": "Coucher de soleil au Miroir d'eau", "details": "Vue sur la Place de la Bourse illuminée", "prix": "Gratuit" },
-        { "titre": "Balade en vélo sur les quais", "details": "Location V'cub pour longer la Garonne", "prix": "1€/heure" },
-        { "titre": "Excursion Saint-Émilion", "details": "Village médiéval UNESCO en amoureux", "prix": "40€/personne" }
+        {
+          "titre": "Dîner au Safran & Cannelle",
+          "details": "Le restaurant maghrébin gastronomique des quais",
+          "prix": "70–90€ pour deux"
+        },
+        {
+          "titre": "Coucher de soleil au Miroir d'eau",
+          "details": "Vue sur la Place de la Bourse illuminée",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Balade en vélo sur les quais",
+          "details": "Location V'cub pour longer la Garonne",
+          "prix": "1€/heure"
+        },
+        {
+          "titre": "Excursion Saint-Émilion",
+          "details": "Village médiéval UNESCO en amoureux",
+          "prix": "40€/personne"
+        }
       ],
-      "hotels_recommandes": ["InterContinental Le Grand Hôtel", "La Maison Bord'eaux"],
+      "hotels_recommandes": [
+        "InterContinental Le Grand Hôtel",
+        "La Maison Bord'eaux"
+      ],
       "conseils": "Réserver le Safran & Cannelle 2 semaines à l'avance. Le vendredi soir, l'animation des quais est particulièrement romantique."
     },
     "en_famille": {
       "intro": "Bordeaux est une ville très famille-friendly avec le Miroir d'eau (que les enfants adorent), la Cité du Vin (avec jus de raisin pour les enfants), la Dune du Pilat à 1h et les musées scientifiques.",
       "top_experiences": [
-        { "titre": "Miroir d'eau et brume", "details": "Les enfants adorent courir dans la brume toutes les 23 min", "prix": "Gratuit" },
-        { "titre": "Cité du Vin", "details": "Musée sensoriel avec jus de raisin premium pour les enfants", "prix": "22€ adulte / 10€ enfant" },
-        { "titre": "Dune du Pilat", "details": "La plus haute dune d'Europe — 1h de Bordeaux", "prix": "Gratuit (parking 5€)" },
-        { "titre": "Cap Sciences", "details": "Ateliers scientifiques interactifs pour enfants", "prix": "9€ adulte / 6€ enfant" }
+        {
+          "titre": "Miroir d'eau et brume",
+          "details": "Les enfants adorent courir dans la brume toutes les 23 min",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Cité du Vin",
+          "details": "Musée sensoriel avec jus de raisin premium pour les enfants",
+          "prix": "22€ adulte / 10€ enfant"
+        },
+        {
+          "titre": "Dune du Pilat",
+          "details": "La plus haute dune d'Europe — 1h de Bordeaux",
+          "prix": "Gratuit (parking 5€)"
+        },
+        {
+          "titre": "Cap Sciences",
+          "details": "Ateliers scientifiques interactifs pour enfants",
+          "prix": "9€ adulte / 6€ enfant"
+        }
       ],
-      "hotels_recommandes": ["Novotel Bordeaux Centre (piscine)", "ibis Bordeaux Gare Saint-Jean"],
+      "hotels_recommandes": [
+        "Novotel Bordeaux Centre (piscine)",
+        "ibis Bordeaux Gare Saint-Jean"
+      ],
       "conseils": "Saint-Michel est le quartier idéal pour les familles musulmanes : restaurants halal concentrés, boucheries, épiceries et ambiance communautaire. Les week-ends, le marché aux puces amuse les enfants."
     },
     "entre_amis": {
       "intro": "Bordeaux entre amis offre les quais animés, les restaurants halal internationaux de Saint-Michel, les escape games, les matchs des Girondins et la scène culturelle de Bacalan.",
       "top_experiences": [
-        { "titre": "Soirée grillades au Comptoir du Méchoui", "details": "Méchoui et grillades entre amis", "prix": "20€/personne" },
-        { "titre": "Escape game Bordeaux", "details": "Séance d'1h en groupe", "prix": "25€/personne" },
-        { "titre": "Match des Girondins", "details": "Stade Matmut Atlantique — ambiance garantie", "prix": "20–40€" },
-        { "titre": "Balade nocturne quais", "details": "Les quais de Bordeaux s'animent le soir", "prix": "Gratuit" }
+        {
+          "titre": "Soirée grillades au Comptoir du Méchoui",
+          "details": "Méchoui et grillades entre amis",
+          "prix": "20€/personne"
+        },
+        {
+          "titre": "Escape game Bordeaux",
+          "details": "Séance d'1h en groupe",
+          "prix": "25€/personne"
+        },
+        {
+          "titre": "Match des Girondins",
+          "details": "Stade Matmut Atlantique — ambiance garantie",
+          "prix": "20–40€"
+        },
+        {
+          "titre": "Balade nocturne quais",
+          "details": "Les quais de Bordeaux s'animent le soir",
+          "prix": "Gratuit"
+        }
       ],
-      "hotels_recommandes": ["Mama Shelter Bordeaux", "Hôtel de Sèze"],
+      "hotels_recommandes": [
+        "Mama Shelter Bordeaux",
+        "Hôtel de Sèze"
+      ],
       "conseils": "Le quartier de Bacalan (Cité du Vin, Base Sous-Marine) est l'endroit le plus branché de Bordeaux — idéal pour les groupes de jeunes."
     },
     "voyage_solo": {
       "intro": "Bordeaux solo est très agréable : petite taille, centre-ville facilement à pied, communauté musulmane accueillante dans Saint-Michel et nombreux cafés pour travailler.",
       "top_experiences": [
-        { "titre": "Café matinal à Saint-Michel", "details": "Ambiance méditerranéenne dans le quartier multiculturel", "prix": "3–5€" },
-        { "titre": "Musée d'Aquitaine en solo", "details": "25 000 ans d'histoire à votre rythme", "prix": "5€" },
-        { "titre": "Vélo sur les quais", "details": "Location V'cub pour explorer Bordeaux librement", "prix": "1€/heure" },
-        { "titre": "Prière du vendredi Grande Mosquée", "details": "Rencontrer la communauté locale", "prix": "Gratuit" }
+        {
+          "titre": "Café matinal à Saint-Michel",
+          "details": "Ambiance méditerranéenne dans le quartier multiculturel",
+          "prix": "3–5€"
+        },
+        {
+          "titre": "Musée d'Aquitaine en solo",
+          "details": "25 000 ans d'histoire à votre rythme",
+          "prix": "5€"
+        },
+        {
+          "titre": "Vélo sur les quais",
+          "details": "Location V'cub pour explorer Bordeaux librement",
+          "prix": "1€/heure"
+        },
+        {
+          "titre": "Prière du vendredi Grande Mosquée",
+          "details": "Rencontrer la communauté locale",
+          "prix": "Gratuit"
+        }
       ],
-      "hotels_recommandes": ["Hôtel La Galerie", "ibis Bordeaux Gare Saint-Jean"],
+      "hotels_recommandes": [
+        "Hôtel La Galerie",
+        "ibis Bordeaux Gare Saint-Jean"
+      ],
       "conseils": "CityMapper fonctionne bien à Bordeaux. Le tramway couvre tout le centre en 15–20 min. Le quartier Saint-Michel est le plus accueillant pour un voyageur musulman solo."
     },
     "voyage_spirituel": {
       "intro": "Bordeaux a une communauté musulmane active depuis les années 1960, avec plusieurs mosquées dont la Grande Mosquée inaugurée en 2015 et de nombreuses associations islamiques.",
       "top_experiences": [
-        { "titre": "Prière à la Grande Mosquée de Bordeaux", "details": "La plus grande mosquée de la métropole", "prix": "Gratuit" },
-        { "titre": "Iftar Ramadan à Saint-Michel", "details": "Le quartier s'illumine pendant le Ramadan", "prix": "15–25€" },
-        { "titre": "Cours islamiques au Centre Islamique", "details": "Cours d'arabe et de Coran ouverts aux visiteurs", "prix": "Gratuit" },
-        { "titre": "Marché du vendredi Saint-Michel", "details": "Ambiance du souk dans le quartier multiculturel", "prix": "Gratuit" }
+        {
+          "titre": "Prière à la Grande Mosquée de Bordeaux",
+          "details": "La plus grande mosquée de la métropole",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Iftar Ramadan à Saint-Michel",
+          "details": "Le quartier s'illumine pendant le Ramadan",
+          "prix": "15–25€"
+        },
+        {
+          "titre": "Cours islamiques au Centre Islamique",
+          "details": "Cours d'arabe et de Coran ouverts aux visiteurs",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Marché du vendredi Saint-Michel",
+          "details": "Ambiance du souk dans le quartier multiculturel",
+          "prix": "Gratuit"
+        }
       ],
-      "hotels_recommandes": ["ibis Bordeaux Gare Saint-Jean (à 10 min de Saint-Michel)"],
+      "hotels_recommandes": [
+        "ibis Bordeaux Gare Saint-Jean (à 10 min de Saint-Michel)"
+      ],
       "conseils": "Le Ramadan à Bordeaux est vivant — les mosquées organisent des iftars collectifs et le quartier Saint-Michel prend une atmosphère particulière le soir."
     }
   },
   "meteo_par_mois": {
-    "janvier": { "temp_max": 9, "temp_min": 3, "pluie_jours": 12, "ensoleillement_h": 90, "conseil": "Hiver doux — bon pour les musées" },
-    "fevrier": { "temp_max": 11, "temp_min": 4, "pluie_jours": 10, "ensoleillement_h": 100, "conseil": "Début de printemps précoce possible" },
-    "mars": { "temp_max": 14, "temp_min": 6, "pluie_jours": 11, "ensoleillement_h": 150, "conseil": "Beau temps qui arrive, idéal pour les quais" },
-    "avril": { "temp_max": 17, "temp_min": 9, "pluie_jours": 12, "ensoleillement_h": 185, "conseil": "Printemps magnifique — idéal pour les excursions" },
-    "mai": { "temp_max": 21, "temp_min": 12, "pluie_jours": 11, "ensoleillement_h": 225, "conseil": "Excellent — idéal pour la Dune du Pilat" },
-    "juin": { "temp_max": 25, "temp_min": 15, "pluie_jours": 8, "ensoleillement_h": 260, "conseil": "Superbe — les quais s'animent le soir" },
-    "juillet": { "temp_max": 28, "temp_min": 17, "pluie_jours": 6, "ensoleillement_h": 290, "conseil": "Haute saison — réservation indispensable" },
-    "aout": { "temp_max": 28, "temp_min": 17, "pluie_jours": 7, "ensoleillement_h": 275, "conseil": "Chaud et ensoleillé — plages bondées" },
-    "septembre": { "temp_max": 24, "temp_min": 14, "pluie_jours": 9, "ensoleillement_h": 220, "conseil": "Idéal — moins de foule, beau temps" },
-    "octobre": { "temp_max": 18, "temp_min": 10, "pluie_jours": 11, "ensoleillement_h": 155, "conseil": "Arrière-saison agréable, couleurs d'automne" },
-    "novembre": { "temp_max": 13, "temp_min": 6, "pluie_jours": 13, "ensoleillement_h": 95, "conseil": "Saison basse — tarifs hôtels réduits" },
-    "decembre": { "temp_max": 9, "temp_min": 4, "pluie_jours": 13, "ensoleillement_h": 75, "conseil": "Marché de Noël en centre-ville, ambiance chaleureuse" }
+    "janvier": {
+      "temp_max": 9,
+      "temp_min": 3,
+      "pluie_jours": 12,
+      "ensoleillement_h": 90,
+      "conseil": "Hiver doux — bon pour les musées"
+    },
+    "fevrier": {
+      "temp_max": 11,
+      "temp_min": 4,
+      "pluie_jours": 10,
+      "ensoleillement_h": 100,
+      "conseil": "Début de printemps précoce possible"
+    },
+    "mars": {
+      "temp_max": 14,
+      "temp_min": 6,
+      "pluie_jours": 11,
+      "ensoleillement_h": 150,
+      "conseil": "Beau temps qui arrive, idéal pour les quais"
+    },
+    "avril": {
+      "temp_max": 17,
+      "temp_min": 9,
+      "pluie_jours": 12,
+      "ensoleillement_h": 185,
+      "conseil": "Printemps magnifique — idéal pour les excursions"
+    },
+    "mai": {
+      "temp_max": 21,
+      "temp_min": 12,
+      "pluie_jours": 11,
+      "ensoleillement_h": 225,
+      "conseil": "Excellent — idéal pour la Dune du Pilat"
+    },
+    "juin": {
+      "temp_max": 25,
+      "temp_min": 15,
+      "pluie_jours": 8,
+      "ensoleillement_h": 260,
+      "conseil": "Superbe — les quais s'animent le soir"
+    },
+    "juillet": {
+      "temp_max": 28,
+      "temp_min": 17,
+      "pluie_jours": 6,
+      "ensoleillement_h": 290,
+      "conseil": "Haute saison — réservation indispensable"
+    },
+    "aout": {
+      "temp_max": 28,
+      "temp_min": 17,
+      "pluie_jours": 7,
+      "ensoleillement_h": 275,
+      "conseil": "Chaud et ensoleillé — plages bondées"
+    },
+    "septembre": {
+      "temp_max": 24,
+      "temp_min": 14,
+      "pluie_jours": 9,
+      "ensoleillement_h": 220,
+      "conseil": "Idéal — moins de foule, beau temps"
+    },
+    "octobre": {
+      "temp_max": 18,
+      "temp_min": 10,
+      "pluie_jours": 11,
+      "ensoleillement_h": 155,
+      "conseil": "Arrière-saison agréable, couleurs d'automne"
+    },
+    "novembre": {
+      "temp_max": 13,
+      "temp_min": 6,
+      "pluie_jours": 13,
+      "ensoleillement_h": 95,
+      "conseil": "Saison basse — tarifs hôtels réduits"
+    },
+    "decembre": {
+      "temp_max": 9,
+      "temp_min": 4,
+      "pluie_jours": 13,
+      "ensoleillement_h": 75,
+      "conseil": "Marché de Noël en centre-ville, ambiance chaleureuse"
+    }
   },
   "boucheries_halal": [
     {
@@ -1255,7 +2494,11 @@
       "nom": "Boucherie El Habib",
       "adresse": "24 Rue des Faures, 33000 Bordeaux",
       "quartier": "Saint-Michel",
-      "specialites": ["Agneau entier sur commande", "Merguez maison", "Brochettes marinées"],
+      "specialites": [
+        "Agneau entier sur commande",
+        "Merguez maison",
+        "Brochettes marinées"
+      ],
       "certifie": true,
       "telephone": "+33 5 56 91 23 34"
     },
@@ -1264,7 +2507,11 @@
       "nom": "Boucherie Al-Madina",
       "adresse": "10 Cours de la Marne, 33000 Bordeaux",
       "quartier": "Gare Saint-Jean",
-      "specialites": ["Volailles halal fraîches", "Veau halal", "Méchoui sur commande"],
+      "specialites": [
+        "Volailles halal fraîches",
+        "Veau halal",
+        "Méchoui sur commande"
+      ],
       "certifie": true,
       "telephone": "+33 5 56 92 45 67"
     },
@@ -1273,7 +2520,11 @@
       "nom": "Boucherie Salam",
       "adresse": "36 Rue Camille Sauvageau, 33000 Bordeaux",
       "quartier": "Saint-Michel",
-      "specialites": ["Agneau de lait", "Dinde halal", "Abats halal"],
+      "specialites": [
+        "Agneau de lait",
+        "Dinde halal",
+        "Abats halal"
+      ],
       "certifie": true,
       "telephone": "+33 5 56 91 78 23"
     },
@@ -1282,7 +2533,11 @@
       "nom": "Boucherie du Croissant",
       "adresse": "7 Rue Borie, 33000 Bordeaux",
       "quartier": "Bacalan",
-      "specialites": ["Steaks halal", "Poulet entier", "Kefta fraîche"],
+      "specialites": [
+        "Steaks halal",
+        "Poulet entier",
+        "Kefta fraîche"
+      ],
       "certifie": true,
       "telephone": null
     },
@@ -1291,7 +2546,11 @@
       "nom": "Boucherie Hasnaoui",
       "adresse": "19 Avenue de la Libération, 33600 Pessac",
       "quartier": "Pessac",
-      "specialites": ["Agneau entier Aïd", "Côtelettes", "Saucisses halal"],
+      "specialites": [
+        "Agneau entier Aïd",
+        "Côtelettes",
+        "Saucisses halal"
+      ],
       "certifie": true,
       "telephone": "+33 5 56 45 12 89"
     }
@@ -1302,7 +2561,12 @@
       "nom": "Boulangerie Orientale Dar Elhobz",
       "adresse": "12 Rue des Faures, 33000 Bordeaux",
       "quartier": "Saint-Michel",
-      "specialites": ["Pain arabe maison", "Msemen", "Baghrir", "Briouates sucrées"],
+      "specialites": [
+        "Pain arabe maison",
+        "Msemen",
+        "Baghrir",
+        "Briouates sucrées"
+      ],
       "sans_alcool": true,
       "telephone": "+33 5 56 91 34 90"
     },
@@ -1311,7 +2575,12 @@
       "nom": "Pâtisserie Orientale Zitoun",
       "adresse": "28 Cours de la Marne, 33000 Bordeaux",
       "quartier": "Gare Saint-Jean",
-      "specialites": ["Baklava au miel", "Cornes de gazelle", "Makroud", "Gâteau semoule"],
+      "specialites": [
+        "Baklava au miel",
+        "Cornes de gazelle",
+        "Makroud",
+        "Gâteau semoule"
+      ],
       "sans_alcool": true,
       "telephone": "+33 5 56 92 33 11"
     },
@@ -1320,7 +2589,12 @@
       "nom": "Boulangerie An-Najah",
       "adresse": "5 Rue Camille Sauvageau, 33000 Bordeaux",
       "quartier": "Saint-Michel",
-      "specialites": ["Pain complet", "Khobz dar", "Sandwich halal", "Viennoiseries halal"],
+      "specialites": [
+        "Pain complet",
+        "Khobz dar",
+        "Sandwich halal",
+        "Viennoiseries halal"
+      ],
       "sans_alcool": true,
       "telephone": null
     },
@@ -1329,7 +2603,11 @@
       "nom": "Saveurs d'Orient Bakery",
       "adresse": "44 Avenue du Haut-Lévêque, 33600 Pessac",
       "quartier": "Pessac",
-      "specialites": ["Pains orientaux", "Maamouls aux dattes", "Kahk de l'Aïd"],
+      "specialites": [
+        "Pains orientaux",
+        "Maamouls aux dattes",
+        "Kahk de l'Aïd"
+      ],
       "sans_alcool": true,
       "telephone": "+33 5 56 45 78 33"
     },
@@ -1338,11 +2616,25 @@
       "nom": "Boulangerie Medina Bacalan",
       "adresse": "15 Rue Achard, 33000 Bordeaux",
       "quartier": "Bacalan",
-      "specialites": ["Sandwich khobz halal", "Mlawi", "Gâteaux tunisiens"],
+      "specialites": [
+        "Sandwich khobz halal",
+        "Mlawi",
+        "Gâteaux tunisiens"
+      ],
       "sans_alcool": true,
       "telephone": null
     }
   ],
-  "articles_lies": ["bordeaux-guide-halal", "france-voyage-musulman", "sud-ouest-halal"],
-  "villes_proches": ["toulouse", "biarritz", "paris", "nantes"]
+  "articles_lies": [
+    "bordeaux-guide-halal",
+    "france-voyage-musulman",
+    "sud-ouest-halal"
+  ],
+  "villes_proches": [
+    "toulouse",
+    "biarritz",
+    "paris",
+    "nantes"
+  ],
+  "codeISO": "FR"
 }

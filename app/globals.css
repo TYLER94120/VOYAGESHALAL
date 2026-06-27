@@ -55,3 +55,27 @@
     font-family: 'Playfair Display', Georgia, serif;
   }
 }
+
+/* ===== Halal Trust Score ===== */
+.halal-trust-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 16px 0;
+  font-size: 13px;
+}
+.htc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 2px solid;
+}
+.htc-badge { font-weight: 800; font-size: 13px; }
+.htc-score { font-size: 24px; font-weight: 900; }
+.htc-score span { font-size: 14px; opacity: 0.7; }
+.htc-bar-container { height: 6px; background: #f3f4f6; }
+.htc-bar { height: 100%; border-radius: 0 3px 3px 0; transition: width 0.8s ease; }
+.htc-details { padding: 12px 16px; display: flex; flex-direction: column; gap: 8px; }
+.htc-item { display: flex; align-items: center; gap: 8px; color: #374151; }
+.htc-points { margin-left: auto; font-weight: 700; color: #166534; }

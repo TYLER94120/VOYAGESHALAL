@@ -6,7 +6,10 @@
   "pays_slug": "arabie-saoudite",
   "drapeau": "🇸🇦",
   "region": "Péninsule Arabique",
-  "coordonnees": { "lat": 21.3891, "lng": 39.8579 },
+  "coordonnees": {
+    "lat": 21.3891,
+    "lng": 39.8579
+  },
   "score_halal": 5,
   "score_securite": 5,
   "score_famille": 4,
@@ -30,7 +33,13 @@
   },
   "infos_pratiques": {
     "langue_officielle": "Arabe",
-    "langues_parlees": ["Arabe", "Ourdou", "Indonésien", "Français", "Anglais (guides)"],
+    "langues_parlees": [
+      "Arabe",
+      "Ourdou",
+      "Indonésien",
+      "Français",
+      "Anglais (guides)"
+    ],
     "monnaie": "Riyal saoudien (SAR)",
     "taux_change_eur": "1 EUR ≈ 4.10 SAR",
     "meilleure_periode": "Omra : novembre-février (températures douces). Hajj : date fixe du calendrier islamique (varie chaque année grégorienne)",
@@ -46,122 +55,2442 @@
     "visa": "VISA SPÉCIAL OBLIGATOIRE — Visa Omra (toute l'année), Visa Hajj (période du pèlerinage uniquement). NON-MUSULMANS INTERDITS D'ENTRÉE."
   },
   "meteo_par_mois": [
-    { "mois": "Janvier", "temp_max": 31, "temp_min": 18, "pluie_jours": 1, "emoji": "☀️" },
-    { "mois": "Février", "temp_max": 33, "temp_min": 19, "pluie_jours": 1, "emoji": "☀️" },
-    { "mois": "Mars", "temp_max": 37, "temp_min": 22, "pluie_jours": 1, "emoji": "☀️" },
-    { "mois": "Avril", "temp_max": 40, "temp_min": 25, "pluie_jours": 0, "emoji": "🌞" },
-    { "mois": "Mai", "temp_max": 43, "temp_min": 28, "pluie_jours": 0, "emoji": "🌞" },
-    { "mois": "Juin", "temp_max": 45, "temp_min": 31, "pluie_jours": 0, "emoji": "🌡️" },
-    { "mois": "Juillet", "temp_max": 43, "temp_min": 30, "pluie_jours": 0, "emoji": "🌡️" },
-    { "mois": "Août", "temp_max": 43, "temp_min": 29, "pluie_jours": 0, "emoji": "🌡️" },
-    { "mois": "Septembre", "temp_max": 41, "temp_min": 27, "pluie_jours": 0, "emoji": "🌞" },
-    { "mois": "Octobre", "temp_max": 37, "temp_min": 24, "pluie_jours": 1, "emoji": "☀️" },
-    { "mois": "Novembre", "temp_max": 33, "temp_min": 20, "pluie_jours": 1, "emoji": "☀️" },
-    { "mois": "Décembre", "temp_max": 30, "temp_min": 17, "pluie_jours": 1, "emoji": "⛅" }
+    {
+      "mois": "Janvier",
+      "temp_max": 31,
+      "temp_min": 18,
+      "pluie_jours": 1,
+      "emoji": "☀️"
+    },
+    {
+      "mois": "Février",
+      "temp_max": 33,
+      "temp_min": 19,
+      "pluie_jours": 1,
+      "emoji": "☀️"
+    },
+    {
+      "mois": "Mars",
+      "temp_max": 37,
+      "temp_min": 22,
+      "pluie_jours": 1,
+      "emoji": "☀️"
+    },
+    {
+      "mois": "Avril",
+      "temp_max": 40,
+      "temp_min": 25,
+      "pluie_jours": 0,
+      "emoji": "🌞"
+    },
+    {
+      "mois": "Mai",
+      "temp_max": 43,
+      "temp_min": 28,
+      "pluie_jours": 0,
+      "emoji": "🌞"
+    },
+    {
+      "mois": "Juin",
+      "temp_max": 45,
+      "temp_min": 31,
+      "pluie_jours": 0,
+      "emoji": "🌡️"
+    },
+    {
+      "mois": "Juillet",
+      "temp_max": 43,
+      "temp_min": 30,
+      "pluie_jours": 0,
+      "emoji": "🌡️"
+    },
+    {
+      "mois": "Août",
+      "temp_max": 43,
+      "temp_min": 29,
+      "pluie_jours": 0,
+      "emoji": "🌡️"
+    },
+    {
+      "mois": "Septembre",
+      "temp_max": 41,
+      "temp_min": 27,
+      "pluie_jours": 0,
+      "emoji": "🌞"
+    },
+    {
+      "mois": "Octobre",
+      "temp_max": 37,
+      "temp_min": 24,
+      "pluie_jours": 1,
+      "emoji": "☀️"
+    },
+    {
+      "mois": "Novembre",
+      "temp_max": 33,
+      "temp_min": 20,
+      "pluie_jours": 1,
+      "emoji": "☀️"
+    },
+    {
+      "mois": "Décembre",
+      "temp_max": 30,
+      "temp_min": 17,
+      "pluie_jours": 1,
+      "emoji": "⛅"
+    }
   ],
   "restaurants": [
-    { "id": "r1", "nom": "Al Baik (Haram)", "cuisine": "Fast food saoudien halal", "description": "Al Baik est LA chaîne de fast food la plus aimée d'Arabie Saoudite depuis 1974 — poulet frit épicé et pains au sésame. Queue de 1 heure au Haram.", "adresse": "Ajyad Mall, Masjid al-Haram", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 45678, "fourchette_prix": "€", "prix_moyen_personne_eur": 6, "specialites": ["Broasted chicken", "Fish sandwich", "Onion rings"], "horaires": "24h/24 pendant Ramadan/Hajj/Omra", "coordonnees": { "lat": 21.4225, "lng": 39.8262 }, "tags": ["Fast food", "Légendaire", "Saoudien"] },
-    { "id": "r2", "nom": "Mandi Al-Saqqaf", "cuisine": "Mandi yéménite", "description": "Le riz mandi — spécialité yéménite cuit à la vapeur dans un four en terre — servi dans des plateaux pour 4 personnes.", "adresse": "Ajyad Street, La Mecque", "quartier": "Ajyad", "halal_certifie": true, "sans_alcool": true, "note": 4.7, "avis_count": 8901, "fourchette_prix": "€", "prix_moyen_personne_eur": 8, "specialites": ["Mandi agneau (1/4 agneau + riz)", "Mandi poulet", "Saltah ragoût"], "horaires": "11h-23h", "coordonnees": { "lat": 21.4178, "lng": 39.8289 }, "tags": ["Yéménite", "Mandi", "Convivial"] },
-    { "id": "r3", "nom": "Kabsa Palace", "cuisine": "Saoudienne traditionnelle", "description": "Kabsa — plat national saoudien — riz parfumé aux épices avec agneau ou poulet, servi dans un plateau pour 6.", "adresse": "Aziziyah District, La Mecque", "quartier": "Aziziyah", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 6789, "fourchette_prix": "€€", "prix_moyen_personne_eur": 12, "specialites": ["Kabsa agneau royal", "Kabsa poulet", "Harees blé concassé"], "horaires": "12h-23h", "coordonnees": { "lat": 21.3956, "lng": 39.8534 }, "tags": ["Saoudien", "Kabsa", "Famille"] },
-    { "id": "r4", "nom": "Restaurant Zamzam Tower Food Court", "cuisine": "Cuisine internationale halal", "description": "Food court dans la Zamzam Tower face au Haram — 30 restaurants internationaux, tout halal certifié.", "adresse": "Zamzam Tower, Masjid al-Haram", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.2, "avis_count": 23456, "fourchette_prix": "€€", "prix_moyen_personne_eur": 15, "specialites": ["Restaurant marocain", "Cuisine libanaise", "Thali indien"], "horaires": "24h/24", "coordonnees": { "lat": 21.4223, "lng": 39.8267 }, "tags": ["International", "24h/24", "Haram"] },
-    { "id": "r5", "nom": "Al Tazaj Grills", "cuisine": "Grillades saoudiennes", "description": "Chaîne saoudienne de grillades populaire — poulet grillé lemon-herb, riz saffran et salades fraîches.", "adresse": "Ibrahim Al-Khalil Street, La Mecque", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 12345, "fourchette_prix": "€", "prix_moyen_personne_eur": 9, "specialites": ["Poulet grillé entier", "Mix grill saoudien", "Fattoush"], "horaires": "11h-2h", "coordonnees": { "lat": 21.4189, "lng": 39.8256 }, "tags": ["Grillades", "Populaire", "Prix doux"] },
-    { "id": "r6", "nom": "Fakhr El-Din (Hôtel Hilton)", "cuisine": "Libanaise gastronomique", "description": "Restaurant libanais gastronomique du Hilton Makkah Convention Hotel — mezzes, grillades et pastilla dans un cadre luxueux.", "adresse": "Hilton Makkah Convention, La Mecque", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 2345, "fourchette_prix": "€€€", "prix_moyen_personne_eur": 45, "specialites": ["Mezze 15 plats", "Grillades mixtes", "Moghrabieh"], "horaires": "12h-15h / 19h-23h", "coordonnees": { "lat": 21.4234, "lng": 39.8278 }, "tags": ["Luxe", "Libanais", "Hôtel"] },
-    { "id": "r7", "nom": "Jabal Al-Nour Restaurant", "cuisine": "Cuisine indienne halal", "description": "Vue sur Jabal al-Nour (Montagne de la Lumière), cuisine indienne subcontinentale — biryani et kebabs.", "adresse": "Ajyad, La Mecque", "quartier": "Ajyad", "halal_certifie": true, "sans_alcool": true, "note": 4.3, "avis_count": 4567, "fourchette_prix": "€", "prix_moyen_personne_eur": 7, "specialites": ["Biryani agneau Hyderabadi", "Seekh kebab", "Butter naan"], "horaires": "7h-23h", "coordonnees": { "lat": 21.4345, "lng": 39.8423 }, "tags": ["Indien", "Vue montagne", "Biryani"] },
-    { "id": "r8", "nom": "Al Romansiah Restaurant", "cuisine": "Saoudienne traditionnelle", "description": "Chaîne saoudienne populaire depuis 1987 — kabsa, harees et jareesh dans une atmosphère familiale.", "adresse": "Route de la Mosquée, La Mecque", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 9876, "fourchette_prix": "€€", "prix_moyen_personne_eur": 14, "specialites": ["Harees blé", "Jareesh froment", "Margoog ragoût"], "horaires": "12h-23h", "coordonnees": { "lat": 21.4198, "lng": 39.8267 }, "tags": ["Saoudien", "Traditionnel", "Famille"] },
-    { "id": "r9", "nom": "Turkish Urfa Kebab", "cuisine": "Turque-ottomane", "description": "Kebabs d'Urfa (Turquie) — spécialité de viande hachée épicée sur braise, pide et baklava maison.", "adresse": "Jarwal District, La Mecque", "quartier": "Jarwal", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 3456, "fourchette_prix": "€€", "prix_moyen_personne_eur": 16, "specialites": ["Urfa kebab", "Adana kebab", "Lahmacun"], "horaires": "12h-midnight", "coordonnees": { "lat": 21.4123, "lng": 39.8312 }, "tags": ["Turc", "Kebab", "Baklava"] },
-    { "id": "r10", "nom": "Somali Kitchen", "cuisine": "Somalienne-est-africaine", "description": "La communauté somalienne présente au Hajj depuis des siècles a installé ses restaurants à La Mecque — canjeero et hilib ari.", "adresse": "Shisha Street, La Mecque", "quartier": "Jarwal", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 1234, "fourchette_prix": "€", "prix_moyen_personne_eur": 6, "specialites": ["Canjeero (crêpes somalies)", "Hilib ari (chèvre)", "Suqaar (sauté viande)"], "horaires": "6h-23h", "coordonnees": { "lat": 21.4134, "lng": 39.8298 }, "tags": ["Somalien", "Africain", "Pilgrims food"] },
-    { "id": "r11", "nom": "Pakistani Sajji House", "cuisine": "Pakistanaise", "description": "Sajji — agneau entier rôti à la broche sur charbon de bois, spécialité de Baloutchistan — servi avec riz et naan.", "adresse": "Misfalah Area, La Mecque", "quartier": "Misfalah", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 5678, "fourchette_prix": "€€", "prix_moyen_personne_eur": 15, "specialites": ["Sajji agneau entier", "Biryani karachi", "Nihari"], "horaires": "18h-3h", "coordonnees": { "lat": 21.4089, "lng": 39.8234 }, "tags": ["Pakistanais", "Sajji", "Nocturne"] },
-    { "id": "r12", "nom": "Moroccan Couscous Dar", "cuisine": "Marocaine", "description": "Couscous vendredi et tajines marocains toute la semaine — une touche de Marrakech à La Mecque.", "adresse": "Ajyad Area, La Mecque", "quartier": "Ajyad", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 2345, "fourchette_prix": "€€", "prix_moyen_personne_eur": 18, "specialites": ["Couscous vendredi", "Tajine d'agneau aux pruneaux", "Harira"], "horaires": "12h-22h", "coordonnees": { "lat": 21.4167, "lng": 39.8245 }, "tags": ["Marocain", "Couscous", "Nostalgique"] },
-    { "id": "r13", "nom": "Indonesian Soto Ayam", "cuisine": "Indonésienne", "description": "Cuisiniers indonésiens venus avec les pèlerins de Java — soto ayam, nasi goreng et rendang authentiques.", "adresse": "Aziziyah, La Mecque", "quartier": "Aziziyah", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 3456, "fourchette_prix": "€", "prix_moyen_personne_eur": 7, "specialites": ["Soto ayam", "Nasi goreng", "Rendang daging"], "horaires": "7h-22h", "coordonnees": { "lat": 21.3967, "lng": 39.8512 }, "tags": ["Indonésien", "Sudeast Asian", "Doux"] },
-    { "id": "r14", "nom": "Egyptian Koshari La Mecque", "cuisine": "Égyptienne", "description": "Koshary égyptien — riz, lentilles, macaroni et sauce tomate épicée — le comfort food des pèlerins d'Égypte.", "adresse": "Ibrahim Khalil, La Mecque", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.3, "avis_count": 4567, "fourchette_prix": "€", "prix_moyen_personne_eur": 4, "specialites": ["Koshary géant", "Ful medames", "Ta'amiyya"], "horaires": "6h-midnight", "coordonnees": { "lat": 21.4212, "lng": 39.8256 }, "tags": ["Égyptien", "Économique", "Koshary"] },
-    { "id": "r15", "nom": "Al Kabab Al Hindi", "cuisine": "Indienne subcontinentale", "description": "Kebabs de la tradition moghole — shami kebab, seekh kebab et korma royal dans une atmosphère de caravane.", "adresse": "Jarwal, La Mecque", "quartier": "Jarwal", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 6789, "fourchette_prix": "€", "prix_moyen_personne_eur": 10, "specialites": ["Shami kebab", "Korma royal", "Chai masala"], "horaires": "11h-2h", "coordonnees": { "lat": 21.4112, "lng": 39.8301 }, "tags": ["Indien", "Kebab", "Moghole"] },
-    { "id": "r16", "nom": "Yemeni Salta House", "cuisine": "Yéménite authentique", "description": "Salta — ragout de viande saoudien-yéménite dans une marmite en terre — spécialité quasi-introuvable en dehors de la péninsule.", "adresse": "Misfalah, La Mecque", "quartier": "Misfalah", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 2134, "fourchette_prix": "€", "prix_moyen_personne_eur": 8, "specialites": ["Salta traditionnel", "Fahsa de boeuf", "Aseed farine"], "horaires": "7h-midnight", "coordonnees": { "lat": 21.4078, "lng": 39.8212 }, "tags": ["Yéménite", "Salta", "Authentique"] },
-    { "id": "r17", "nom": "Halal Burger Palace KAABA", "cuisine": "Burgers halal", "description": "Burgers halal haut de gamme pour pèlerins qui souhaitent une pause familière — wagyu saoudien, sauces maison.", "adresse": "Makkah Mall, La Mecque", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.2, "avis_count": 8901, "fourchette_prix": "€€", "prix_moyen_personne_eur": 16, "specialites": ["Wagyu burger saoudien", "Double smash halal", "Milkshake datte"], "horaires": "10h-2h", "coordonnees": { "lat": 21.4201, "lng": 39.8278 }, "tags": ["Burgers", "Halal", "Moderne"] },
-    { "id": "r18", "nom": "Palace Hotel Dining Room", "cuisine": "Buffet international halal", "description": "Buffet 5 étoiles du Fairmont Makkah Clock Royal Tower — 150 plats halal internationaux avec vue sur la Kaaba.", "adresse": "Fairmont Makkah Clock Royal Tower", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.7, "avis_count": 1678, "fourchette_prix": "€€€€", "prix_moyen_personne_eur": 80, "specialites": ["Buffet international 150 plats", "Station à la carte", "Vue Kaaba garantie"], "horaires": "6h-10h / 12h-15h / 19h-23h", "coordonnees": { "lat": 21.4225, "lng": 39.8267 }, "tags": ["Luxe", "Vue Kaaba", "Buffet"] },
-    { "id": "r19", "nom": "Sudanese Asida Restaurant", "cuisine": "Soudanaise", "description": "Asida (bouillie de sorgho) et mullah (sauce à la viande) soudanaises — la nourriture des pèlerins d'Afrique subsaharienne.", "adresse": "Jarwal Street, La Mecque", "quartier": "Jarwal", "halal_certifie": true, "sans_alcool": true, "note": 4.3, "avis_count": 876, "fourchette_prix": "€", "prix_moyen_personne_eur": 5, "specialites": ["Asida", "Mullah agneau", "Kawal sauce fermentée"], "horaires": "7h-21h", "coordonnees": { "lat": 21.4123, "lng": 39.8289 }, "tags": ["Soudanais", "Africain", "Économique"] },
-    { "id": "r20", "nom": "Malaysian Nasi Lemak Makkah", "cuisine": "Malaisienne-indonésienne", "description": "Nasi lemak et rendang pour les pèlerins d'Asie du Sud-Est — un goût de maison pendant le Hajj.", "adresse": "Aziziyah, La Mecque", "quartier": "Aziziyah", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 3456, "fourchette_prix": "€", "prix_moyen_personne_eur": 8, "specialites": ["Nasi lemak", "Rendang daging", "Mee goreng"], "horaires": "6h30-22h", "coordonnees": { "lat": 21.3978, "lng": 39.8501 }, "tags": ["Malaisien", "Pilgrims", "Asie"] },
-    { "id": "r21", "nom": "Harees Traditional", "cuisine": "Saoudienne ancienne", "description": "Harees — bouillie de blé concassé avec agneau cuite 8 heures — plat traditionnel servi depuis les temps du Prophète ﷺ.", "adresse": "Old Makkah Quarter, La Mecque", "quartier": "Vieille ville", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 1234, "fourchette_prix": "€", "prix_moyen_personne_eur": 7, "specialites": ["Harees ancien", "Tharid pain et bouillon", "Aseeda miel"], "horaires": "7h-14h / 19h-22h", "coordonnees": { "lat": 21.4167, "lng": 39.8234 }, "tags": ["Ancien", "Traditionnel", "Prophétique"] },
-    { "id": "r22", "nom": "Turkish Baklava Café", "cuisine": "Pâtisseries ottomanes", "description": "Baklava artisanal et qatayef devant le Haram — tradition ottomane du partage de sucreries entre pèlerins.", "adresse": "Al Haram Street, La Mecque", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 5678, "fourchette_prix": "€", "prix_moyen_personne_eur": 8, "specialites": ["Baklava au pistache", "Qatayef Ramadan", "Tulumba sirop"], "horaires": "9h-3h", "coordonnees": { "lat": 21.4219, "lng": 39.8261 }, "tags": ["Pâtisseries", "Turc", "Baklava"] },
-    { "id": "r23", "nom": "Chicken Broast Al-Haram Street", "cuisine": "Grillades populaires", "description": "Restaurants populaires qui jalonnent la rue du Haram — poulet broast grillé, frites et Pepsi pour 5€ par personne.", "adresse": "Ibrahim Al-Khalil, La Mecque", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.1, "avis_count": 34567, "fourchette_prix": "€", "prix_moyen_personne_eur": 5, "specialites": ["Poulet broast", "Frites saoudiennes", "Hummus"], "horaires": "24h/24", "coordonnees": { "lat": 21.4202, "lng": 39.8258 }, "tags": ["Économique", "Rapide", "24h"] },
-    { "id": "r24", "nom": "Afghan Mutton Karahi", "cuisine": "Afghane", "description": "Karahi d'agneau afghane — cuisson dans un wok en acier avec tomates et gingembre — populaire parmi les pèlerins d'Afghanistan.", "adresse": "Misfalah District", "quartier": "Misfalah", "halal_certifie": true, "sans_alcool": true, "note": 4.5, "avis_count": 1678, "fourchette_prix": "€€", "prix_moyen_personne_eur": 12, "specialites": ["Mutton karahi", "Chapli kebab", "Nan kebabi"], "horaires": "12h-23h", "coordonnees": { "lat": 21.4056, "lng": 39.8201 }, "tags": ["Afghane", "Karahi", "Épicé"] },
-    { "id": "r25", "nom": "Tunisian Lablabi Night", "cuisine": "Tunisienne", "description": "Lablabi et brik tunisiens servis la nuit pour les pèlerins maghrébins — un coin de Tunis à La Mecque.", "adresse": "Ajyad Street", "quartier": "Ajyad", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 1234, "fourchette_prix": "€", "prix_moyen_personne_eur": 6, "specialites": ["Lablabi pois chiches", "Brik à l'oeuf", "Chakchouka"], "horaires": "20h-6h (nocturne uniquement)", "coordonnees": { "lat": 21.4172, "lng": 39.8238 }, "tags": ["Tunisien", "Nocturne", "Maghrébin"] },
-    { "id": "r26", "nom": "Saudi Dates & Coffee Stand", "cuisine": "Café arabe traditionnel", "description": "Stand de café arabe (qahwa) et dattes medjool — tradition saoudienne d'accueil, souvent offert gratuitement aux pèlerins.", "adresse": "Partout autour du Haram", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.8, "avis_count": 23456, "fourchette_prix": "€", "prix_moyen_personne_eur": 3, "specialites": ["Qahwa café arabe cardamome", "Dattes medjool", "Zabad crème"], "horaires": "6h-minuit", "coordonnees": { "lat": 21.4220, "lng": 39.8265 }, "tags": ["Café arabe", "Dattes", "Tradition"] },
-    { "id": "r27", "nom": "Noodle House Asia (Haram side)", "cuisine": "Asiatique halal fusion", "description": "Nouilles asiatiques certifiées halal pour pèlerins d'Asie — ramen, pad thai et laksa dans un décor épuré.", "adresse": "Abraj Al-Bait Complex", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.3, "avis_count": 4567, "fourchette_prix": "€€", "prix_moyen_personne_eur": 14, "specialites": ["Ramen halal", "Pad thai crevettes", "Laksa malaisien"], "horaires": "11h-23h", "coordonnees": { "lat": 21.4228, "lng": 39.8271 }, "tags": ["Asiatique", "Fusion", "Halal certifié"] },
-    { "id": "r28", "nom": "Ethiopian Injera House", "cuisine": "Éthiopienne-érythréenne", "description": "Injera (pain de teff fermenté) avec ragoûts de lentilles et d'agneau — la cuisine de la corne d'Afrique à La Mecque.", "adresse": "Jarwal District", "quartier": "Jarwal", "halal_certifie": true, "sans_alcool": true, "note": 4.4, "avis_count": 678, "fourchette_prix": "€", "prix_moyen_personne_eur": 7, "specialites": ["Injera + ragoûts assortis", "Tibs sauté boeuf", "Ayib fromage frais"], "horaires": "8h-22h", "coordonnees": { "lat": 21.4101, "lng": 39.8289 }, "tags": ["Éthiopien", "Injera", "Africain"] },
-    { "id": "r29", "nom": "Makkah Sweetshop (Halwiyyat)", "cuisine": "Confiseries arabes", "description": "Confiseries typiques de La Mecque — zlabia de Hajj, luqaimat beignets au miel et ghraybeh aux pistaches.", "adresse": "Old Market Area, La Mecque", "quartier": "Vieille ville", "halal_certifie": true, "sans_alcool": true, "note": 4.6, "avis_count": 8901, "fourchette_prix": "€", "prix_moyen_personne_eur": 5, "specialites": ["Zlabia de Hajj", "Luqaimat au miel", "Ghraybeh pistache"], "horaires": "8h-midnight", "coordonnees": { "lat": 21.4178, "lng": 39.8223 }, "tags": ["Confiseries", "Cadeaux", "Traditionnel"] },
-    { "id": "r30", "nom": "Makkah Palace Restaurant (5 étoiles)", "cuisine": "Fine dining islamique", "description": "Le restaurant gastronomique du Raffles Makkah Palace — cuisine moyen-orientale fine avec vue directe sur la Grande Mosquée.", "adresse": "Raffles Makkah Palace, Al Haram", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "note": 4.8, "avis_count": 1234, "fourchette_prix": "€€€€", "prix_moyen_personne_eur": 100, "specialites": ["Menu dégustation moyen-oriental", "Wagyu saoudien", "Desserts aux dattes premium"], "horaires": "12h-23h (réservation obligatoire)", "coordonnees": { "lat": 21.4226, "lng": 39.8269 }, "tags": ["Luxe ultime", "Vue Kaaba", "Raffles"] }
+    {
+      "id": "r1",
+      "nom": "Al Baik (Haram)",
+      "cuisine": "Fast food saoudien halal",
+      "description": "Al Baik est LA chaîne de fast food la plus aimée d'Arabie Saoudite depuis 1974 — poulet frit épicé et pains au sésame. Queue de 1 heure au Haram.",
+      "adresse": "Ajyad Mall, Masjid al-Haram",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 45678,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 6,
+      "specialites": [
+        "Broasted chicken",
+        "Fish sandwich",
+        "Onion rings"
+      ],
+      "horaires": "24h/24 pendant Ramadan/Hajj/Omra",
+      "coordonnees": {
+        "lat": 21.4225,
+        "lng": 39.8262
+      },
+      "tags": [
+        "Fast food",
+        "Légendaire",
+        "Saoudien"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 45678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r2",
+      "nom": "Mandi Al-Saqqaf",
+      "cuisine": "Mandi yéménite",
+      "description": "Le riz mandi — spécialité yéménite cuit à la vapeur dans un four en terre — servi dans des plateaux pour 4 personnes.",
+      "adresse": "Ajyad Street, La Mecque",
+      "quartier": "Ajyad",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.7,
+      "avis_count": 8901,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 8,
+      "specialites": [
+        "Mandi agneau (1/4 agneau + riz)",
+        "Mandi poulet",
+        "Saltah ragoût"
+      ],
+      "horaires": "11h-23h",
+      "coordonnees": {
+        "lat": 21.4178,
+        "lng": 39.8289
+      },
+      "tags": [
+        "Yéménite",
+        "Mandi",
+        "Convivial"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 8901,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r3",
+      "nom": "Kabsa Palace",
+      "cuisine": "Saoudienne traditionnelle",
+      "description": "Kabsa — plat national saoudien — riz parfumé aux épices avec agneau ou poulet, servi dans un plateau pour 6.",
+      "adresse": "Aziziyah District, La Mecque",
+      "quartier": "Aziziyah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 6789,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 12,
+      "specialites": [
+        "Kabsa agneau royal",
+        "Kabsa poulet",
+        "Harees blé concassé"
+      ],
+      "horaires": "12h-23h",
+      "coordonnees": {
+        "lat": 21.3956,
+        "lng": 39.8534
+      },
+      "tags": [
+        "Saoudien",
+        "Kabsa",
+        "Famille"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 6789,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r4",
+      "nom": "Restaurant Zamzam Tower Food Court",
+      "cuisine": "Cuisine internationale halal",
+      "description": "Food court dans la Zamzam Tower face au Haram — 30 restaurants internationaux, tout halal certifié.",
+      "adresse": "Zamzam Tower, Masjid al-Haram",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.2,
+      "avis_count": 23456,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 15,
+      "specialites": [
+        "Restaurant marocain",
+        "Cuisine libanaise",
+        "Thali indien"
+      ],
+      "horaires": "24h/24",
+      "coordonnees": {
+        "lat": 21.4223,
+        "lng": 39.8267
+      },
+      "tags": [
+        "International",
+        "24h/24",
+        "Haram"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 23456,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r5",
+      "nom": "Al Tazaj Grills",
+      "cuisine": "Grillades saoudiennes",
+      "description": "Chaîne saoudienne de grillades populaire — poulet grillé lemon-herb, riz saffran et salades fraîches.",
+      "adresse": "Ibrahim Al-Khalil Street, La Mecque",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 12345,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 9,
+      "specialites": [
+        "Poulet grillé entier",
+        "Mix grill saoudien",
+        "Fattoush"
+      ],
+      "horaires": "11h-2h",
+      "coordonnees": {
+        "lat": 21.4189,
+        "lng": 39.8256
+      },
+      "tags": [
+        "Grillades",
+        "Populaire",
+        "Prix doux"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 12345,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r6",
+      "nom": "Fakhr El-Din (Hôtel Hilton)",
+      "cuisine": "Libanaise gastronomique",
+      "description": "Restaurant libanais gastronomique du Hilton Makkah Convention Hotel — mezzes, grillades et pastilla dans un cadre luxueux.",
+      "adresse": "Hilton Makkah Convention, La Mecque",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 2345,
+      "fourchette_prix": "€€€",
+      "prix_moyen_personne_eur": 45,
+      "specialites": [
+        "Mezze 15 plats",
+        "Grillades mixtes",
+        "Moghrabieh"
+      ],
+      "horaires": "12h-15h / 19h-23h",
+      "coordonnees": {
+        "lat": 21.4234,
+        "lng": 39.8278
+      },
+      "tags": [
+        "Luxe",
+        "Libanais",
+        "Hôtel"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2345,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r7",
+      "nom": "Jabal Al-Nour Restaurant",
+      "cuisine": "Cuisine indienne halal",
+      "description": "Vue sur Jabal al-Nour (Montagne de la Lumière), cuisine indienne subcontinentale — biryani et kebabs.",
+      "adresse": "Ajyad, La Mecque",
+      "quartier": "Ajyad",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.3,
+      "avis_count": 4567,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 7,
+      "specialites": [
+        "Biryani agneau Hyderabadi",
+        "Seekh kebab",
+        "Butter naan"
+      ],
+      "horaires": "7h-23h",
+      "coordonnees": {
+        "lat": 21.4345,
+        "lng": 39.8423
+      },
+      "tags": [
+        "Indien",
+        "Vue montagne",
+        "Biryani"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 4567,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r8",
+      "nom": "Al Romansiah Restaurant",
+      "cuisine": "Saoudienne traditionnelle",
+      "description": "Chaîne saoudienne populaire depuis 1987 — kabsa, harees et jareesh dans une atmosphère familiale.",
+      "adresse": "Route de la Mosquée, La Mecque",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 9876,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 14,
+      "specialites": [
+        "Harees blé",
+        "Jareesh froment",
+        "Margoog ragoût"
+      ],
+      "horaires": "12h-23h",
+      "coordonnees": {
+        "lat": 21.4198,
+        "lng": 39.8267
+      },
+      "tags": [
+        "Saoudien",
+        "Traditionnel",
+        "Famille"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 9876,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r9",
+      "nom": "Turkish Urfa Kebab",
+      "cuisine": "Turque-ottomane",
+      "description": "Kebabs d'Urfa (Turquie) — spécialité de viande hachée épicée sur braise, pide et baklava maison.",
+      "adresse": "Jarwal District, La Mecque",
+      "quartier": "Jarwal",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 3456,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 16,
+      "specialites": [
+        "Urfa kebab",
+        "Adana kebab",
+        "Lahmacun"
+      ],
+      "horaires": "12h-midnight",
+      "coordonnees": {
+        "lat": 21.4123,
+        "lng": 39.8312
+      },
+      "tags": [
+        "Turc",
+        "Kebab",
+        "Baklava"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3456,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r10",
+      "nom": "Somali Kitchen",
+      "cuisine": "Somalienne-est-africaine",
+      "description": "La communauté somalienne présente au Hajj depuis des siècles a installé ses restaurants à La Mecque — canjeero et hilib ari.",
+      "adresse": "Shisha Street, La Mecque",
+      "quartier": "Jarwal",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 1234,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 6,
+      "specialites": [
+        "Canjeero (crêpes somalies)",
+        "Hilib ari (chèvre)",
+        "Suqaar (sauté viande)"
+      ],
+      "horaires": "6h-23h",
+      "coordonnees": {
+        "lat": 21.4134,
+        "lng": 39.8298
+      },
+      "tags": [
+        "Somalien",
+        "Africain",
+        "Pilgrims food"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1234,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r11",
+      "nom": "Pakistani Sajji House",
+      "cuisine": "Pakistanaise",
+      "description": "Sajji — agneau entier rôti à la broche sur charbon de bois, spécialité de Baloutchistan — servi avec riz et naan.",
+      "adresse": "Misfalah Area, La Mecque",
+      "quartier": "Misfalah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 5678,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 15,
+      "specialites": [
+        "Sajji agneau entier",
+        "Biryani karachi",
+        "Nihari"
+      ],
+      "horaires": "18h-3h",
+      "coordonnees": {
+        "lat": 21.4089,
+        "lng": 39.8234
+      },
+      "tags": [
+        "Pakistanais",
+        "Sajji",
+        "Nocturne"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 5678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r12",
+      "nom": "Moroccan Couscous Dar",
+      "cuisine": "Marocaine",
+      "description": "Couscous vendredi et tajines marocains toute la semaine — une touche de Marrakech à La Mecque.",
+      "adresse": "Ajyad Area, La Mecque",
+      "quartier": "Ajyad",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 2345,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 18,
+      "specialites": [
+        "Couscous vendredi",
+        "Tajine d'agneau aux pruneaux",
+        "Harira"
+      ],
+      "horaires": "12h-22h",
+      "coordonnees": {
+        "lat": 21.4167,
+        "lng": 39.8245
+      },
+      "tags": [
+        "Marocain",
+        "Couscous",
+        "Nostalgique"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2345,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r13",
+      "nom": "Indonesian Soto Ayam",
+      "cuisine": "Indonésienne",
+      "description": "Cuisiniers indonésiens venus avec les pèlerins de Java — soto ayam, nasi goreng et rendang authentiques.",
+      "adresse": "Aziziyah, La Mecque",
+      "quartier": "Aziziyah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 3456,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 7,
+      "specialites": [
+        "Soto ayam",
+        "Nasi goreng",
+        "Rendang daging"
+      ],
+      "horaires": "7h-22h",
+      "coordonnees": {
+        "lat": 21.3967,
+        "lng": 39.8512
+      },
+      "tags": [
+        "Indonésien",
+        "Sudeast Asian",
+        "Doux"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3456,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r14",
+      "nom": "Egyptian Koshari La Mecque",
+      "cuisine": "Égyptienne",
+      "description": "Koshary égyptien — riz, lentilles, macaroni et sauce tomate épicée — le comfort food des pèlerins d'Égypte.",
+      "adresse": "Ibrahim Khalil, La Mecque",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.3,
+      "avis_count": 4567,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 4,
+      "specialites": [
+        "Koshary géant",
+        "Ful medames",
+        "Ta'amiyya"
+      ],
+      "horaires": "6h-midnight",
+      "coordonnees": {
+        "lat": 21.4212,
+        "lng": 39.8256
+      },
+      "tags": [
+        "Égyptien",
+        "Économique",
+        "Koshary"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 4567,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r15",
+      "nom": "Al Kabab Al Hindi",
+      "cuisine": "Indienne subcontinentale",
+      "description": "Kebabs de la tradition moghole — shami kebab, seekh kebab et korma royal dans une atmosphère de caravane.",
+      "adresse": "Jarwal, La Mecque",
+      "quartier": "Jarwal",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 6789,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 10,
+      "specialites": [
+        "Shami kebab",
+        "Korma royal",
+        "Chai masala"
+      ],
+      "horaires": "11h-2h",
+      "coordonnees": {
+        "lat": 21.4112,
+        "lng": 39.8301
+      },
+      "tags": [
+        "Indien",
+        "Kebab",
+        "Moghole"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 6789,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r16",
+      "nom": "Yemeni Salta House",
+      "cuisine": "Yéménite authentique",
+      "description": "Salta — ragout de viande saoudien-yéménite dans une marmite en terre — spécialité quasi-introuvable en dehors de la péninsule.",
+      "adresse": "Misfalah, La Mecque",
+      "quartier": "Misfalah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 2134,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 8,
+      "specialites": [
+        "Salta traditionnel",
+        "Fahsa de boeuf",
+        "Aseed farine"
+      ],
+      "horaires": "7h-midnight",
+      "coordonnees": {
+        "lat": 21.4078,
+        "lng": 39.8212
+      },
+      "tags": [
+        "Yéménite",
+        "Salta",
+        "Authentique"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 2134,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r17",
+      "nom": "Halal Burger Palace KAABA",
+      "cuisine": "Burgers halal",
+      "description": "Burgers halal haut de gamme pour pèlerins qui souhaitent une pause familière — wagyu saoudien, sauces maison.",
+      "adresse": "Makkah Mall, La Mecque",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.2,
+      "avis_count": 8901,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 16,
+      "specialites": [
+        "Wagyu burger saoudien",
+        "Double smash halal",
+        "Milkshake datte"
+      ],
+      "horaires": "10h-2h",
+      "coordonnees": {
+        "lat": 21.4201,
+        "lng": 39.8278
+      },
+      "tags": [
+        "Burgers",
+        "Halal",
+        "Moderne"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 8901,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r18",
+      "nom": "Palace Hotel Dining Room",
+      "cuisine": "Buffet international halal",
+      "description": "Buffet 5 étoiles du Fairmont Makkah Clock Royal Tower — 150 plats halal internationaux avec vue sur la Kaaba.",
+      "adresse": "Fairmont Makkah Clock Royal Tower",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.7,
+      "avis_count": 1678,
+      "fourchette_prix": "€€€€",
+      "prix_moyen_personne_eur": 80,
+      "specialites": [
+        "Buffet international 150 plats",
+        "Station à la carte",
+        "Vue Kaaba garantie"
+      ],
+      "horaires": "6h-10h / 12h-15h / 19h-23h",
+      "coordonnees": {
+        "lat": 21.4225,
+        "lng": 39.8267
+      },
+      "tags": [
+        "Luxe",
+        "Vue Kaaba",
+        "Buffet"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r19",
+      "nom": "Sudanese Asida Restaurant",
+      "cuisine": "Soudanaise",
+      "description": "Asida (bouillie de sorgho) et mullah (sauce à la viande) soudanaises — la nourriture des pèlerins d'Afrique subsaharienne.",
+      "adresse": "Jarwal Street, La Mecque",
+      "quartier": "Jarwal",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.3,
+      "avis_count": 876,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 5,
+      "specialites": [
+        "Asida",
+        "Mullah agneau",
+        "Kawal sauce fermentée"
+      ],
+      "horaires": "7h-21h",
+      "coordonnees": {
+        "lat": 21.4123,
+        "lng": 39.8289
+      },
+      "tags": [
+        "Soudanais",
+        "Africain",
+        "Économique"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 876,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r20",
+      "nom": "Malaysian Nasi Lemak Makkah",
+      "cuisine": "Malaisienne-indonésienne",
+      "description": "Nasi lemak et rendang pour les pèlerins d'Asie du Sud-Est — un goût de maison pendant le Hajj.",
+      "adresse": "Aziziyah, La Mecque",
+      "quartier": "Aziziyah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 3456,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 8,
+      "specialites": [
+        "Nasi lemak",
+        "Rendang daging",
+        "Mee goreng"
+      ],
+      "horaires": "6h30-22h",
+      "coordonnees": {
+        "lat": 21.3978,
+        "lng": 39.8501
+      },
+      "tags": [
+        "Malaisien",
+        "Pilgrims",
+        "Asie"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3456,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r21",
+      "nom": "Harees Traditional",
+      "cuisine": "Saoudienne ancienne",
+      "description": "Harees — bouillie de blé concassé avec agneau cuite 8 heures — plat traditionnel servi depuis les temps du Prophète ﷺ.",
+      "adresse": "Old Makkah Quarter, La Mecque",
+      "quartier": "Vieille ville",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 1234,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 7,
+      "specialites": [
+        "Harees ancien",
+        "Tharid pain et bouillon",
+        "Aseeda miel"
+      ],
+      "horaires": "7h-14h / 19h-22h",
+      "coordonnees": {
+        "lat": 21.4167,
+        "lng": 39.8234
+      },
+      "tags": [
+        "Ancien",
+        "Traditionnel",
+        "Prophétique"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1234,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r22",
+      "nom": "Turkish Baklava Café",
+      "cuisine": "Pâtisseries ottomanes",
+      "description": "Baklava artisanal et qatayef devant le Haram — tradition ottomane du partage de sucreries entre pèlerins.",
+      "adresse": "Al Haram Street, La Mecque",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 5678,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 8,
+      "specialites": [
+        "Baklava au pistache",
+        "Qatayef Ramadan",
+        "Tulumba sirop"
+      ],
+      "horaires": "9h-3h",
+      "coordonnees": {
+        "lat": 21.4219,
+        "lng": 39.8261
+      },
+      "tags": [
+        "Pâtisseries",
+        "Turc",
+        "Baklava"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 5678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r23",
+      "nom": "Chicken Broast Al-Haram Street",
+      "cuisine": "Grillades populaires",
+      "description": "Restaurants populaires qui jalonnent la rue du Haram — poulet broast grillé, frites et Pepsi pour 5€ par personne.",
+      "adresse": "Ibrahim Al-Khalil, La Mecque",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.1,
+      "avis_count": 34567,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 5,
+      "specialites": [
+        "Poulet broast",
+        "Frites saoudiennes",
+        "Hummus"
+      ],
+      "horaires": "24h/24",
+      "coordonnees": {
+        "lat": 21.4202,
+        "lng": 39.8258
+      },
+      "tags": [
+        "Économique",
+        "Rapide",
+        "24h"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 34567,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r24",
+      "nom": "Afghan Mutton Karahi",
+      "cuisine": "Afghane",
+      "description": "Karahi d'agneau afghane — cuisson dans un wok en acier avec tomates et gingembre — populaire parmi les pèlerins d'Afghanistan.",
+      "adresse": "Misfalah District",
+      "quartier": "Misfalah",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.5,
+      "avis_count": 1678,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 12,
+      "specialites": [
+        "Mutton karahi",
+        "Chapli kebab",
+        "Nan kebabi"
+      ],
+      "horaires": "12h-23h",
+      "coordonnees": {
+        "lat": 21.4056,
+        "lng": 39.8201
+      },
+      "tags": [
+        "Afghane",
+        "Karahi",
+        "Épicé"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r25",
+      "nom": "Tunisian Lablabi Night",
+      "cuisine": "Tunisienne",
+      "description": "Lablabi et brik tunisiens servis la nuit pour les pèlerins maghrébins — un coin de Tunis à La Mecque.",
+      "adresse": "Ajyad Street",
+      "quartier": "Ajyad",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 1234,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 6,
+      "specialites": [
+        "Lablabi pois chiches",
+        "Brik à l'oeuf",
+        "Chakchouka"
+      ],
+      "horaires": "20h-6h (nocturne uniquement)",
+      "coordonnees": {
+        "lat": 21.4172,
+        "lng": 39.8238
+      },
+      "tags": [
+        "Tunisien",
+        "Nocturne",
+        "Maghrébin"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1234,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r26",
+      "nom": "Saudi Dates & Coffee Stand",
+      "cuisine": "Café arabe traditionnel",
+      "description": "Stand de café arabe (qahwa) et dattes medjool — tradition saoudienne d'accueil, souvent offert gratuitement aux pèlerins.",
+      "adresse": "Partout autour du Haram",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.8,
+      "avis_count": 23456,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 3,
+      "specialites": [
+        "Qahwa café arabe cardamome",
+        "Dattes medjool",
+        "Zabad crème"
+      ],
+      "horaires": "6h-minuit",
+      "coordonnees": {
+        "lat": 21.422,
+        "lng": 39.8265
+      },
+      "tags": [
+        "Café arabe",
+        "Dattes",
+        "Tradition"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 23456,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r27",
+      "nom": "Noodle House Asia (Haram side)",
+      "cuisine": "Asiatique halal fusion",
+      "description": "Nouilles asiatiques certifiées halal pour pèlerins d'Asie — ramen, pad thai et laksa dans un décor épuré.",
+      "adresse": "Abraj Al-Bait Complex",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.3,
+      "avis_count": 4567,
+      "fourchette_prix": "€€",
+      "prix_moyen_personne_eur": 14,
+      "specialites": [
+        "Ramen halal",
+        "Pad thai crevettes",
+        "Laksa malaisien"
+      ],
+      "horaires": "11h-23h",
+      "coordonnees": {
+        "lat": 21.4228,
+        "lng": 39.8271
+      },
+      "tags": [
+        "Asiatique",
+        "Fusion",
+        "Halal certifié"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 4567,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r28",
+      "nom": "Ethiopian Injera House",
+      "cuisine": "Éthiopienne-érythréenne",
+      "description": "Injera (pain de teff fermenté) avec ragoûts de lentilles et d'agneau — la cuisine de la corne d'Afrique à La Mecque.",
+      "adresse": "Jarwal District",
+      "quartier": "Jarwal",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.4,
+      "avis_count": 678,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 7,
+      "specialites": [
+        "Injera + ragoûts assortis",
+        "Tibs sauté boeuf",
+        "Ayib fromage frais"
+      ],
+      "horaires": "8h-22h",
+      "coordonnees": {
+        "lat": 21.4101,
+        "lng": 39.8289
+      },
+      "tags": [
+        "Éthiopien",
+        "Injera",
+        "Africain"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r29",
+      "nom": "Makkah Sweetshop (Halwiyyat)",
+      "cuisine": "Confiseries arabes",
+      "description": "Confiseries typiques de La Mecque — zlabia de Hajj, luqaimat beignets au miel et ghraybeh aux pistaches.",
+      "adresse": "Old Market Area, La Mecque",
+      "quartier": "Vieille ville",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.6,
+      "avis_count": 8901,
+      "fourchette_prix": "€",
+      "prix_moyen_personne_eur": 5,
+      "specialites": [
+        "Zlabia de Hajj",
+        "Luqaimat au miel",
+        "Ghraybeh pistache"
+      ],
+      "horaires": "8h-midnight",
+      "coordonnees": {
+        "lat": 21.4178,
+        "lng": 39.8223
+      },
+      "tags": [
+        "Confiseries",
+        "Cadeaux",
+        "Traditionnel"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 8901,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "r30",
+      "nom": "Makkah Palace Restaurant (5 étoiles)",
+      "cuisine": "Fine dining islamique",
+      "description": "Le restaurant gastronomique du Raffles Makkah Palace — cuisine moyen-orientale fine avec vue directe sur la Grande Mosquée.",
+      "adresse": "Raffles Makkah Palace, Al Haram",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "note": 4.8,
+      "avis_count": 1234,
+      "fourchette_prix": "€€€€",
+      "prix_moyen_personne_eur": 100,
+      "specialites": [
+        "Menu dégustation moyen-oriental",
+        "Wagyu saoudien",
+        "Desserts aux dattes premium"
+      ],
+      "horaires": "12h-23h (réservation obligatoire)",
+      "coordonnees": {
+        "lat": 21.4226,
+        "lng": 39.8269
+      },
+      "tags": [
+        "Luxe ultime",
+        "Vue Kaaba",
+        "Raffles"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 1234,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    }
   ],
   "mosquees": [
-    { "id": "m1", "nom": "Masjid al-Haram (Grande Mosquée)", "nom_arabe": "المسجد الحرام", "type": "La plus grande mosquée du monde", "statut": "La mosquée la plus sacrée de l'Islam", "adresse": "Centre de La Mecque", "quartier": "Al Haram", "capacite": 4000000, "annee_construction": "638 (reconstruction perpétuelle)", "style_architectural": "Islamique saoudien moderne + sections historiques", "hauteur_minaret_m": 89, "coordonnees": { "lat": 21.4225, "lng": 39.8262 }, "acces_non_musulmans": false, "note": 5.0, "avis_count": 999999, "description": "La Grande Mosquée de La Mecque est la mosquée la plus grande du monde (360 000 m²) et la plus sacrée pour l'Islam. Elle contient la Kaaba, la Pierre Noire (Al-Hajar Al-Aswad), le Puits Zamzam et Safa-Marwa. Pendant le Hajj, 4 millions de fidèles peuvent s'y rassembler simultanément.", "anecdote": "La Kaaba est le point central vers lequel se tournent 1,8 milliard de musulmans dans le monde entier lors de chaque prière. La Pierre Noire est considérée comme remontant au temps d'Ibrahim (Abraham). Le puits Zamzam coule depuis 4000 ans sans jamais se tarir.", "image": "https://images.unsplash.com/photo-1564769625392-651b89765b80?w=600" },
-    { "id": "m2", "nom": "Masjid Namira (Arafat)", "nom_arabe": "مسجد نمرة", "type": "Mosquée du Hajj", "adresse": "Plaine d'Arafat, La Mecque", "quartier": "Arafat", "capacite": 350000, "annee_construction": "630", "style_architectural": "Islamique saoudien", "coordonnees": { "lat": 21.3551, "lng": 39.9845 }, "acces_non_musulmans": false, "note": 4.9, "avis_count": 45678, "description": "Sur la plaine d'Arafat — lieu du plus grand rassemblement humain de la Terre pendant le Hajj. C'est ici que le Prophète ﷺ a prononcé son Sermon d'Adieu le 9 Dhoul Hijja. Le Waquf (station debout) est le coeur du Hajj.", "anecdote": "Le 9 Dhoul Hijja, jusqu'à 3 millions de pèlerins se rassemblent sur la plaine d'Arafat pour le Waquf (station). C'est le moment clé du Hajj — sans Arafat, pas de Hajj selon le hadith." },
-    { "id": "m3", "nom": "Masjid Al-Khaif (Mina)", "type": "Mosquée de Mina", "adresse": "Vallée de Mina, La Mecque", "quartier": "Mina", "annee_construction": "630", "coordonnees": { "lat": 21.4101, "lng": 39.8834 }, "acces_non_musulmans": false, "note": 4.8, "avis_count": 23456, "description": "La grande mosquée de la vallée de Mina où les pèlerins passent les nuits du 10 au 13 Dhoul Hijja. La tradition dit que 70 prophètes y ont prié. Capacité de 25 000 fidèles.", "anecdote": "Selon la tradition islamique, soixante-dix prophètes et messagers ont prié dans cette mosquée au cours des âges. C'est l'une des mosquées les plus spirituellement chargées du monde islamique." },
-    { "id": "m4", "nom": "Masjid Al-Jinn", "type": "Mosquée historique", "adresse": "Hara Bab Al-Jinn, La Mecque", "quartier": "La Mecque", "annee_construction": "760", "coordonnees": { "lat": 21.4367, "lng": 39.8423 }, "acces_non_musulmans": false, "note": 4.7, "avis_count": 5678, "description": "Construite à l'endroit où le Prophète ﷺ a récité le Coran devant un groupe de djinns (sourate Al-Jinn, verset 1). Mosquée peu connue mais très visitée par les pèlerins soufis." },
-    { "id": "m5", "nom": "Masjid Bilal (ancienne mosquée Hamza)", "type": "Mosquée des Compagnons", "adresse": "La Mecque", "quartier": "La Mecque", "annee_construction": "630", "coordonnees": { "lat": 21.4289, "lng": 39.8312 }, "acces_non_musulmans": false, "note": 4.6, "avis_count": 3456, "description": "Mosquée construite à l'emplacement de la maison de Bilal ibn Rabah — premier muezzin de l'Islam. Son adhan résonnait depuis La Mecque vers 622." },
-    { "id": "m6", "nom": "Masjid Al-Ijabah", "type": "Mosquée de l'exaucement", "adresse": "La Mecque", "quartier": "La Mecque", "annee_construction": "630", "coordonnees": { "lat": 21.4312, "lng": 39.8345 }, "acces_non_musulmans": false, "note": 4.7, "avis_count": 2134, "description": "Mosquée construite à l'endroit où le Prophète ﷺ a fait 3 du'as — trois supplications dont deux ont été exaucées. Lieu de prière intense pour les pèlerins." },
-    { "id": "m7", "nom": "Masjid Al-Ray (Mosquée du Drapeau)", "type": "Mosquée historique", "adresse": "Al-Mudda'a, La Mecque", "quartier": "La Mecque", "annee_construction": "630", "coordonnees": { "lat": 21.4156, "lng": 39.8267 }, "acces_non_musulmans": false, "note": 4.5, "avis_count": 1234, "description": "Mosquée construite là où le Prophète ﷺ a planté son drapeau lors de la conquête de La Mecque en 630. Lieu de début de la prière du Fajr pendant le Hajj." },
-    { "id": "m8", "nom": "Masjid Al-Mash'ar Al-Haram (Muzdalifah)", "type": "Mosquée de Muzdalifah", "adresse": "Muzdalifah, La Mecque", "quartier": "Muzdalifah", "annee_construction": "630", "coordonnees": { "lat": 21.3789, "lng": 39.9312 }, "acces_non_musulmans": false, "note": 4.8, "avis_count": 18901, "description": "À Muzdalifah, les pèlerins passent la nuit à ciel ouvert après Arafat. Cette mosquée marque le Mash'ar al-Haram où se fait la prière du Fajr puis la collecte des pierres pour la lapidation." },
-    { "id": "m9", "nom": "Mosquée Miqat Dhul Hulayfah (côté Médine)", "type": "Mosquée du Miqat", "adresse": "Bir Ali, proche Médine", "quartier": "Miqat", "annee_construction": "630", "coordonnees": { "lat": 24.4256, "lng": 39.5634 }, "acces_non_musulmans": false, "note": 4.7, "avis_count": 34567, "description": "Le Miqat est la frontière où les pèlerins venant de Médine revêtent l'ihram avant d'entrer en état sacré. Lieu de prière et de purification rituelle avant l'entrée à La Mecque." },
-    { "id": "m10", "nom": "Mosquée de la Frontière (Miqat Yalamlam)", "type": "Mosquée du Miqat Sud", "adresse": "Yalamlam, direction Yémen", "quartier": "Sud de La Mecque", "annee_construction": "630", "coordonnees": { "lat": 20.5234, "lng": 39.8234 }, "acces_non_musulmans": false, "note": 4.6, "avis_count": 8901, "description": "Mosquée du Miqat pour les pèlerins venant du Yémen et de l'Inde. Revêtement de l'ihram et double intention (niyyah) avant d'entrer dans la zone sacrée." }
+    {
+      "id": "m1",
+      "nom": "Masjid al-Haram (Grande Mosquée)",
+      "nom_arabe": "المسجد الحرام",
+      "type": "La plus grande mosquée du monde",
+      "statut": "La mosquée la plus sacrée de l'Islam",
+      "adresse": "Centre de La Mecque",
+      "quartier": "Al Haram",
+      "capacite": 4000000,
+      "annee_construction": "638 (reconstruction perpétuelle)",
+      "style_architectural": "Islamique saoudien moderne + sections historiques",
+      "hauteur_minaret_m": 89,
+      "coordonnees": {
+        "lat": 21.4225,
+        "lng": 39.8262
+      },
+      "acces_non_musulmans": false,
+      "note": 5.0,
+      "avis_count": 999999,
+      "description": "La Grande Mosquée de La Mecque est la mosquée la plus grande du monde (360 000 m²) et la plus sacrée pour l'Islam. Elle contient la Kaaba, la Pierre Noire (Al-Hajar Al-Aswad), le Puits Zamzam et Safa-Marwa. Pendant le Hajj, 4 millions de fidèles peuvent s'y rassembler simultanément.",
+      "anecdote": "La Kaaba est le point central vers lequel se tournent 1,8 milliard de musulmans dans le monde entier lors de chaque prière. La Pierre Noire est considérée comme remontant au temps d'Ibrahim (Abraham). Le puits Zamzam coule depuis 4000 ans sans jamais se tarir.",
+      "image": "https://images.unsplash.com/photo-1564769625392-651b89765b80?w=600"
+    },
+    {
+      "id": "m2",
+      "nom": "Masjid Namira (Arafat)",
+      "nom_arabe": "مسجد نمرة",
+      "type": "Mosquée du Hajj",
+      "adresse": "Plaine d'Arafat, La Mecque",
+      "quartier": "Arafat",
+      "capacite": 350000,
+      "annee_construction": "630",
+      "style_architectural": "Islamique saoudien",
+      "coordonnees": {
+        "lat": 21.3551,
+        "lng": 39.9845
+      },
+      "acces_non_musulmans": false,
+      "note": 4.9,
+      "avis_count": 45678,
+      "description": "Sur la plaine d'Arafat — lieu du plus grand rassemblement humain de la Terre pendant le Hajj. C'est ici que le Prophète ﷺ a prononcé son Sermon d'Adieu le 9 Dhoul Hijja. Le Waquf (station debout) est le coeur du Hajj.",
+      "anecdote": "Le 9 Dhoul Hijja, jusqu'à 3 millions de pèlerins se rassemblent sur la plaine d'Arafat pour le Waquf (station). C'est le moment clé du Hajj — sans Arafat, pas de Hajj selon le hadith."
+    },
+    {
+      "id": "m3",
+      "nom": "Masjid Al-Khaif (Mina)",
+      "type": "Mosquée de Mina",
+      "adresse": "Vallée de Mina, La Mecque",
+      "quartier": "Mina",
+      "annee_construction": "630",
+      "coordonnees": {
+        "lat": 21.4101,
+        "lng": 39.8834
+      },
+      "acces_non_musulmans": false,
+      "note": 4.8,
+      "avis_count": 23456,
+      "description": "La grande mosquée de la vallée de Mina où les pèlerins passent les nuits du 10 au 13 Dhoul Hijja. La tradition dit que 70 prophètes y ont prié. Capacité de 25 000 fidèles.",
+      "anecdote": "Selon la tradition islamique, soixante-dix prophètes et messagers ont prié dans cette mosquée au cours des âges. C'est l'une des mosquées les plus spirituellement chargées du monde islamique."
+    },
+    {
+      "id": "m4",
+      "nom": "Masjid Al-Jinn",
+      "type": "Mosquée historique",
+      "adresse": "Hara Bab Al-Jinn, La Mecque",
+      "quartier": "La Mecque",
+      "annee_construction": "760",
+      "coordonnees": {
+        "lat": 21.4367,
+        "lng": 39.8423
+      },
+      "acces_non_musulmans": false,
+      "note": 4.7,
+      "avis_count": 5678,
+      "description": "Construite à l'endroit où le Prophète ﷺ a récité le Coran devant un groupe de djinns (sourate Al-Jinn, verset 1). Mosquée peu connue mais très visitée par les pèlerins soufis."
+    },
+    {
+      "id": "m5",
+      "nom": "Masjid Bilal (ancienne mosquée Hamza)",
+      "type": "Mosquée des Compagnons",
+      "adresse": "La Mecque",
+      "quartier": "La Mecque",
+      "annee_construction": "630",
+      "coordonnees": {
+        "lat": 21.4289,
+        "lng": 39.8312
+      },
+      "acces_non_musulmans": false,
+      "note": 4.6,
+      "avis_count": 3456,
+      "description": "Mosquée construite à l'emplacement de la maison de Bilal ibn Rabah — premier muezzin de l'Islam. Son adhan résonnait depuis La Mecque vers 622."
+    },
+    {
+      "id": "m6",
+      "nom": "Masjid Al-Ijabah",
+      "type": "Mosquée de l'exaucement",
+      "adresse": "La Mecque",
+      "quartier": "La Mecque",
+      "annee_construction": "630",
+      "coordonnees": {
+        "lat": 21.4312,
+        "lng": 39.8345
+      },
+      "acces_non_musulmans": false,
+      "note": 4.7,
+      "avis_count": 2134,
+      "description": "Mosquée construite à l'endroit où le Prophète ﷺ a fait 3 du'as — trois supplications dont deux ont été exaucées. Lieu de prière intense pour les pèlerins."
+    },
+    {
+      "id": "m7",
+      "nom": "Masjid Al-Ray (Mosquée du Drapeau)",
+      "type": "Mosquée historique",
+      "adresse": "Al-Mudda'a, La Mecque",
+      "quartier": "La Mecque",
+      "annee_construction": "630",
+      "coordonnees": {
+        "lat": 21.4156,
+        "lng": 39.8267
+      },
+      "acces_non_musulmans": false,
+      "note": 4.5,
+      "avis_count": 1234,
+      "description": "Mosquée construite là où le Prophète ﷺ a planté son drapeau lors de la conquête de La Mecque en 630. Lieu de début de la prière du Fajr pendant le Hajj."
+    },
+    {
+      "id": "m8",
+      "nom": "Masjid Al-Mash'ar Al-Haram (Muzdalifah)",
+      "type": "Mosquée de Muzdalifah",
+      "adresse": "Muzdalifah, La Mecque",
+      "quartier": "Muzdalifah",
+      "annee_construction": "630",
+      "coordonnees": {
+        "lat": 21.3789,
+        "lng": 39.9312
+      },
+      "acces_non_musulmans": false,
+      "note": 4.8,
+      "avis_count": 18901,
+      "description": "À Muzdalifah, les pèlerins passent la nuit à ciel ouvert après Arafat. Cette mosquée marque le Mash'ar al-Haram où se fait la prière du Fajr puis la collecte des pierres pour la lapidation."
+    },
+    {
+      "id": "m9",
+      "nom": "Mosquée Miqat Dhul Hulayfah (côté Médine)",
+      "type": "Mosquée du Miqat",
+      "adresse": "Bir Ali, proche Médine",
+      "quartier": "Miqat",
+      "annee_construction": "630",
+      "coordonnees": {
+        "lat": 24.4256,
+        "lng": 39.5634
+      },
+      "acces_non_musulmans": false,
+      "note": 4.7,
+      "avis_count": 34567,
+      "description": "Le Miqat est la frontière où les pèlerins venant de Médine revêtent l'ihram avant d'entrer en état sacré. Lieu de prière et de purification rituelle avant l'entrée à La Mecque."
+    },
+    {
+      "id": "m10",
+      "nom": "Mosquée de la Frontière (Miqat Yalamlam)",
+      "type": "Mosquée du Miqat Sud",
+      "adresse": "Yalamlam, direction Yémen",
+      "quartier": "Sud de La Mecque",
+      "annee_construction": "630",
+      "coordonnees": {
+        "lat": 20.5234,
+        "lng": 39.8234
+      },
+      "acces_non_musulmans": false,
+      "note": 4.6,
+      "avis_count": 8901,
+      "description": "Mosquée du Miqat pour les pèlerins venant du Yémen et de l'Inde. Revêtement de l'ihram et double intention (niyyah) avant d'entrer dans la zone sacrée."
+    }
   ],
   "hotels": [
-    { "id": "h1", "nom": "Fairmont Makkah Clock Royal Tower", "type": "7 étoiles — Abraj Al-Bait", "description": "La 2ème plus grande tour du monde dans le complexe Abraj Al-Bait, vue directe sur la Kaaba depuis toutes les chambres. L'hôtel le plus emblématique de La Mecque.", "adresse": "Abraj Al-Bait Complex, Al Haram", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "piscine_privee": false, "piscine_commune": false, "etoiles": 5, "note": 4.8, "avis_count": 12345, "prix_nuit_min": 400, "devise": "EUR", "coordonnees": { "lat": 21.4225, "lng": 39.8267 }, "tags": ["Vue Kaaba", "Abraj Al-Bait", "Luxe extrême"], "services": ["Vue Kaaba garantie", "Navette Haram", "Restaurant panoramique", "Room service 24h"] },
-    { "id": "h2", "nom": "Raffles Makkah Palace", "type": "5 étoiles palatial", "description": "Hôtel le plus luxueux de La Mecque, dans le complexe Abraj Al-Bait — suite royale avec bain en or et vue exclusive sur la Kaaba.", "adresse": "Abraj Al-Bait, Al Haram", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "etoiles": 5, "note": 4.9, "avis_count": 3456, "prix_nuit_min": 800, "devise": "EUR", "coordonnees": { "lat": 21.4226, "lng": 39.8269 }, "tags": ["Ultra luxe", "Raffles", "Vue Kaaba"] },
-    { "id": "h3", "nom": "Hilton Makkah Convention Hotel", "type": "5 étoiles business-haj", "description": "Hôtel Hilton pratique avec vue partielle sur le Haram, navette gratuite, restaurant libanais gastronomique.", "adresse": "Ibrahim Al-Khalil Street", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "etoiles": 5, "note": 4.5, "avis_count": 8901, "prix_nuit_min": 180, "devise": "EUR", "coordonnees": { "lat": 21.4234, "lng": 39.8278 }, "tags": ["Pratique", "Navette", "Vue partielle"] },
-    { "id": "h4", "nom": "Swissôtel Al Maqam", "type": "5 étoiles moderne", "description": "Tour dans le complexe Abraj Al-Bait, chambres à partir du 10ème étage avec vue directe sur la mosquée.", "adresse": "Abraj Al-Bait Tower 5, Al Haram", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "etoiles": 5, "note": 4.6, "avis_count": 5678, "prix_nuit_min": 250, "devise": "EUR", "coordonnees": { "lat": 21.4228, "lng": 39.8271 }, "tags": ["Abraj Al-Bait", "Vue mosquée", "5 étoiles"] },
-    { "id": "h5", "nom": "Dar Al Tawhid Intercontinental", "type": "5 étoiles heritage", "description": "Dans la Dar Al-Tawhid Tower face au Haram, accès direct par couloir souterrain à la mosquée.", "adresse": "Dar Al-Tawhid, Al Haram", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "etoiles": 5, "note": 4.7, "avis_count": 4567, "prix_nuit_min": 220, "devise": "EUR", "coordonnees": { "lat": 21.4221, "lng": 39.8264 }, "tags": ["Accès direct", "Face au Haram", "IHG"] },
-    { "id": "h6", "nom": "Hotel Anjum Makkah", "type": "5 étoiles pèlerin", "description": "Hôtel orienté pèlerins — plan Hajj & Omra inclus, guide spirituel disponible, repas halal typiques du pays d'origine.", "adresse": "Ibrahim Al-Khalil, La Mecque", "quartier": "Al Haram", "halal_certifie": true, "sans_alcool": true, "etoiles": 5, "note": 4.5, "avis_count": 6789, "prix_nuit_min": 160, "devise": "EUR", "coordonnees": { "lat": 21.4198, "lng": 39.8256 }, "tags": ["Hajj", "Omra", "Guide spirituel"] },
-    { "id": "h7", "nom": "Millennium Hotel Makkah", "type": "4 étoiles accessible", "description": "Hôtel 4 étoiles à prix raisonnable, à 10 minutes à pied du Haram, navette toutes les 30 minutes.", "adresse": "Ajyad Street, La Mecque", "quartier": "Ajyad", "halal_certifie": true, "sans_alcool": true, "etoiles": 4, "note": 4.2, "avis_count": 9876, "prix_nuit_min": 90, "devise": "EUR", "coordonnees": { "lat": 21.4167, "lng": 39.8245 }, "tags": ["Accessible", "Navette", "Abordable"] },
-    { "id": "h8", "nom": "Al Marwa Rayhaan by Rotana", "type": "5 étoiles vue Kaaba", "description": "Vue panoramique sur la Kaaba depuis la piscine sur le toit (non-mixte, horaires séparés). Restaurant turc et marocain.", "adresse": "Ajyad, Al Haram", "quartier": "Ajyad", "halal_certifie": true, "sans_alcool": true, "piscine_commune": true, "etoiles": 5, "note": 4.7, "avis_count": 3456, "prix_nuit_min": 300, "devise": "EUR", "coordonnees": { "lat": 21.4218, "lng": 39.8261 }, "tags": ["Vue Kaaba", "Piscine non-mixte", "Rotana"] }
+    {
+      "id": "h1",
+      "nom": "Fairmont Makkah Clock Royal Tower",
+      "type": "7 étoiles — Abraj Al-Bait",
+      "description": "La 2ème plus grande tour du monde dans le complexe Abraj Al-Bait, vue directe sur la Kaaba depuis toutes les chambres. L'hôtel le plus emblématique de La Mecque.",
+      "adresse": "Abraj Al-Bait Complex, Al Haram",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "piscine_privee": false,
+      "piscine_commune": false,
+      "etoiles": 5,
+      "note": 4.8,
+      "avis_count": 12345,
+      "prix_nuit_min": 400,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 21.4225,
+        "lng": 39.8267
+      },
+      "tags": [
+        "Vue Kaaba",
+        "Abraj Al-Bait",
+        "Luxe extrême"
+      ],
+      "services": [
+        "Vue Kaaba garantie",
+        "Navette Haram",
+        "Restaurant panoramique",
+        "Room service 24h"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 12345,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "h2",
+      "nom": "Raffles Makkah Palace",
+      "type": "5 étoiles palatial",
+      "description": "Hôtel le plus luxueux de La Mecque, dans le complexe Abraj Al-Bait — suite royale avec bain en or et vue exclusive sur la Kaaba.",
+      "adresse": "Abraj Al-Bait, Al Haram",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "etoiles": 5,
+      "note": 4.9,
+      "avis_count": 3456,
+      "prix_nuit_min": 800,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 21.4226,
+        "lng": 39.8269
+      },
+      "tags": [
+        "Ultra luxe",
+        "Raffles",
+        "Vue Kaaba"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3456,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "h3",
+      "nom": "Hilton Makkah Convention Hotel",
+      "type": "5 étoiles business-haj",
+      "description": "Hôtel Hilton pratique avec vue partielle sur le Haram, navette gratuite, restaurant libanais gastronomique.",
+      "adresse": "Ibrahim Al-Khalil Street",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "etoiles": 5,
+      "note": 4.5,
+      "avis_count": 8901,
+      "prix_nuit_min": 180,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 21.4234,
+        "lng": 39.8278
+      },
+      "tags": [
+        "Pratique",
+        "Navette",
+        "Vue partielle"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 8901,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "h4",
+      "nom": "Swissôtel Al Maqam",
+      "type": "5 étoiles moderne",
+      "description": "Tour dans le complexe Abraj Al-Bait, chambres à partir du 10ème étage avec vue directe sur la mosquée.",
+      "adresse": "Abraj Al-Bait Tower 5, Al Haram",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "etoiles": 5,
+      "note": 4.6,
+      "avis_count": 5678,
+      "prix_nuit_min": 250,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 21.4228,
+        "lng": 39.8271
+      },
+      "tags": [
+        "Abraj Al-Bait",
+        "Vue mosquée",
+        "5 étoiles"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 5678,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "h5",
+      "nom": "Dar Al Tawhid Intercontinental",
+      "type": "5 étoiles heritage",
+      "description": "Dans la Dar Al-Tawhid Tower face au Haram, accès direct par couloir souterrain à la mosquée.",
+      "adresse": "Dar Al-Tawhid, Al Haram",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "etoiles": 5,
+      "note": 4.7,
+      "avis_count": 4567,
+      "prix_nuit_min": 220,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 21.4221,
+        "lng": 39.8264
+      },
+      "tags": [
+        "Accès direct",
+        "Face au Haram",
+        "IHG"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 4567,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "h6",
+      "nom": "Hotel Anjum Makkah",
+      "type": "5 étoiles pèlerin",
+      "description": "Hôtel orienté pèlerins — plan Hajj & Omra inclus, guide spirituel disponible, repas halal typiques du pays d'origine.",
+      "adresse": "Ibrahim Al-Khalil, La Mecque",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "etoiles": 5,
+      "note": 4.5,
+      "avis_count": 6789,
+      "prix_nuit_min": 160,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 21.4198,
+        "lng": 39.8256
+      },
+      "tags": [
+        "Hajj",
+        "Omra",
+        "Guide spirituel"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 6789,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "h7",
+      "nom": "Millennium Hotel Makkah",
+      "type": "4 étoiles accessible",
+      "description": "Hôtel 4 étoiles à prix raisonnable, à 10 minutes à pied du Haram, navette toutes les 30 minutes.",
+      "adresse": "Ajyad Street, La Mecque",
+      "quartier": "Ajyad",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "etoiles": 4,
+      "note": 4.2,
+      "avis_count": 9876,
+      "prix_nuit_min": 90,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 21.4167,
+        "lng": 39.8245
+      },
+      "tags": [
+        "Accessible",
+        "Navette",
+        "Abordable"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 9876,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    },
+    {
+      "id": "h8",
+      "nom": "Al Marwa Rayhaan by Rotana",
+      "type": "5 étoiles vue Kaaba",
+      "description": "Vue panoramique sur la Kaaba depuis la piscine sur le toit (non-mixte, horaires séparés). Restaurant turc et marocain.",
+      "adresse": "Ajyad, Al Haram",
+      "quartier": "Ajyad",
+      "halal_certifie": true,
+      "sans_alcool": true,
+      "piscine_commune": true,
+      "etoiles": 5,
+      "note": 4.7,
+      "avis_count": 3456,
+      "prix_nuit_min": 300,
+      "devise": "EUR",
+      "coordonnees": {
+        "lat": 21.4218,
+        "lng": 39.8261
+      },
+      "tags": [
+        "Vue Kaaba",
+        "Piscine non-mixte",
+        "Rotana"
+      ],
+      "halalScore": {
+        "global": 10.0,
+        "sourceViande": 5,
+        "certifie": true,
+        "sansAlcool": true,
+        "proprietaireMusulman": true,
+        "avisMusulmans": 3456,
+        "derniereVerification": "2026-05",
+        "badge": "CERTIFIÉ EXCELLENCE",
+        "organisationCertification": "Halal Saoudien (SFDA)"
+      }
+    }
   ],
   "activites": [
-    { "id": "a1", "nom": "Tawaf autour de la Kaaba", "type": "Acte de dévotion", "emoji": "🕋", "duree": "1-2 heures", "prix": "Gratuit (inclus dans l'Omra/Hajj)", "description": "Tourner 7 fois autour de la Kaaba dans le sens antihoraire — l'acte de dévotion le plus sacré de l'Islam. Le coeur de l'Omra et du Hajj.", "adapte_famille": true, "adapte_seniors": true, "a_savoir": "Réservation obligatoire via l'application Nusuk. Horaires réservés selon les nationalités pendant le Hajj.", "tags": ["Spirituel", "Obligatoire", "Kaaba"] },
-    { "id": "a2", "nom": "Sa'i entre Safa et Marwa", "type": "Acte de dévotion", "emoji": "🏃", "duree": "1 heure", "prix": "Gratuit", "description": "Marcher 7 fois entre les collines Safa et Marwa en souvenir d'Hajar cherchant de l'eau pour son fils Ismaël. Intégré dans l'enceinte du Haram.", "adapte_famille": true, "adapte_seniors": true, "adapte_handicap": true, "a_savoir": "Chariots roulants disponibles pour les personnes à mobilité réduite", "tags": ["Spirituel", "Hajar", "Omra"] },
-    { "id": "a3", "nom": "Eau Zamzam — Source sacrée", "type": "Spirituel", "emoji": "💧", "duree": "30 minutes", "prix": "Gratuit", "description": "Boire l'eau du puits Zamzam qui coule depuis 4000 ans. Des robinets sont installés partout dans le Haram. Emporter 10L maximum en cabine.", "adapte_famille": true, "adapte_seniors": true, "adapte_handicap": true, "tags": ["Eau sacrée", "Zamzam", "Gratuit"] },
-    { "id": "a4", "nom": "Jabal Al-Nour — Grotte Hira", "type": "Historique-spirituel", "emoji": "⛰️", "duree": "2-3 heures", "prix": "Gratuit", "description": "Monter les 1100 marches jusqu'à la grotte Hira où le Prophète ﷺ reçut la première révélation coranique (Iqra') en 610. Vue sur La Mecque.", "adapte_famille": false, "adapte_seniors": false, "a_savoir": "Escalade difficile — éviter en plein soleil. Non obligatoire religieusement mais très visité.", "tags": ["Grotte Hira", "Révélation", "Historique"] },
-    { "id": "a5", "nom": "Jabal Thawr — Grotte refuge", "type": "Historique-spirituel", "emoji": "⛰️", "duree": "3-4 heures", "prix": "Gratuit", "description": "La grotte où le Prophète ﷺ et Abu Bakr se sont cachés pendant 3 jours lors de l'Hégire (migration vers Médine en 622). Montée difficile.", "adapte_famille": false, "adapte_seniors": false, "a_savoir": "Montée très escarpée, 1500 marches, prévoir chaussures de marche et eau", "tags": ["Hégire", "Abu Bakr", "Grotte Thawr"] },
-    { "id": "a6", "nom": "Arafat — Plaine du Pardon (Hajj)", "type": "Hajj essentiel", "emoji": "🌅", "duree": "Journée entière (9 Dhoul Hijja)", "prix": "Inclus dans le package Hajj", "description": "Le Waquf d'Arafat — rester debout de midi au coucher du soleil dans la plaine d'Arafat en priant et en suppliant. 'Le Hajj, c'est Arafat' (hadith).", "adapte_famille": true, "adapte_seniors": true, "tags": ["Hajj", "Arafat", "Waquf"] },
-    { "id": "a7", "nom": "Lapidation des Djamarat (Mina)", "type": "Hajj rituel", "emoji": "🪨", "duree": "1-2 heures", "prix": "Inclus dans le package Hajj", "description": "Lancer 7 pierres sur chacun des 3 piliers de Djamarat en souvenir d'Abraham (Ibrahim) qui lapida le diable. Rituel des 10, 11, 12 et 13 Dhoul Hijja.", "adapte_famille": true, "adapte_seniors": true, "a_savoir": "Éviter les heures de pointe (après-midi) — risque de bousculade. Préférer les nuits ou tôt le matin.", "tags": ["Hajj", "Mina", "Djamarat"] },
-    { "id": "a8", "nom": "Masjid al-Haram — Prière du Fajr", "type": "Spirituel", "emoji": "🌅", "duree": "2 heures", "prix": "Gratuit", "description": "Prier le Fajr (prière de l'aube) dans la Grande Mosquée — 100 000 mosquées derrière l'imam en direct sur MBC Quran. L'expérience la plus émouvante pour un musulman.", "adapte_famille": true, "adapte_seniors": true, "meilleur_moment": "Fajr (avant lever du soleil) — ambiance unique dans La Mecque la nuit", "tags": ["Prière", "Fajr", "Nuit à La Mecque"] },
-    { "id": "a9", "nom": "Musée de La Mecque (Qaitbay Fort)", "type": "Musée", "emoji": "🏛️", "duree": "2 heures", "prix": "Gratuit", "description": "Musée dans l'ancien fort mamelouk de Qaitbay (15ème siècle) conservant des objets historiques du Hajj et de la vie mecquoise.", "adapte_famille": true, "adapte_seniors": true, "tags": ["Musée", "Histoire", "Mamelouk"] },
-    { "id": "a10", "nom": "Visite Abraj Al-Bait Clocktower", "type": "Architecture", "emoji": "🕐", "duree": "1 heure", "prix": "Gratuit (extérieur)", "description": "La tour de l'horloge royale à 601m — 2ème plus haute tour du monde. Voir la Kaaba depuis le sommet du complexe (restaurant panoramique).", "adapte_famille": true, "adapte_seniors": true, "adapte_handicap": true, "tags": ["Tour horloge", "Architecture", "Panorama"] },
-    { "id": "a11", "nom": "Maison natale du Prophète ﷺ (Mawlid)", "type": "Historique", "emoji": "🏠", "duree": "1 heure", "prix": "Gratuit", "description": "L'emplacement de la maison où naquit le Prophète Muhammad ﷺ en 570 est aujourd'hui la Bibliothèque de La Mecque. Lieu de recueillement.", "adapte_famille": true, "adapte_seniors": true, "tags": ["Prophète", "Naissance", "Histoire islamique"] },
-    { "id": "a12", "nom": "Souq Al-Lail — Marché nocturne", "type": "Shopping", "emoji": "🛍️", "duree": "2 heures", "prix": "Variable", "description": "Marché nocturne autour du Haram — dattes medjool, tapis de prière, miswak, parfums oud, tasbihs et cadeaux pour ramener à la maison.", "adapte_famille": true, "adapte_seniors": true, "meilleur_moment": "22h-2h (plus animé)", "tags": ["Marché", "Cadeaux", "Nocturne"] },
-    { "id": "a13", "nom": "Muzdalifah — Nuit à ciel ouvert", "type": "Hajj nuit", "emoji": "🌌", "duree": "Nuit entière", "prix": "Inclus Hajj", "description": "Après Arafat, passer la nuit à ciel ouvert dans la plaine de Muzdalifah sous les étoiles — collecte des pierres pour Djamarat le lendemain.", "adapte_famille": true, "adapte_seniors": true, "tags": ["Hajj", "Nuit", "Étoiles"] },
-    { "id": "a14", "nom": "Cimetière Al-Ma'la (Al-Hajun)", "type": "Pèlerinage/Ziyara", "emoji": "🪦", "duree": "1 heure", "prix": "Gratuit", "description": "Cimetière historique de La Mecque où reposent des membres de la famille du Prophète ﷺ dont sa première épouse Khadija et son fils. Lieu de recueillement.", "adapte_famille": false, "adapte_seniors": true, "tags": ["Cimetière", "Khadija", "Recueillement"] },
-    { "id": "a15", "nom": "Prière de Tarawih pendant Ramadan", "type": "Spirituel Ramadan", "emoji": "🌙", "duree": "3-4 heures", "prix": "Gratuit", "description": "Pendant Ramadan, la prière de Tarawih au Masjid al-Haram est diffusée dans le monde entier. L'imam récite le Coran complet en 30 nuits — expérience inoubliable.", "adapte_famille": true, "adapte_seniors": true, "meilleur_moment": "Derniers 10 jours de Ramadan (Laylat Al-Qadr)", "tags": ["Ramadan", "Tarawih", "Coran"] }
+    {
+      "id": "a1",
+      "nom": "Tawaf autour de la Kaaba",
+      "type": "Acte de dévotion",
+      "emoji": "🕋",
+      "duree": "1-2 heures",
+      "prix": "Gratuit (inclus dans l'Omra/Hajj)",
+      "description": "Tourner 7 fois autour de la Kaaba dans le sens antihoraire — l'acte de dévotion le plus sacré de l'Islam. Le coeur de l'Omra et du Hajj.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "a_savoir": "Réservation obligatoire via l'application Nusuk. Horaires réservés selon les nationalités pendant le Hajj.",
+      "tags": [
+        "Spirituel",
+        "Obligatoire",
+        "Kaaba"
+      ]
+    },
+    {
+      "id": "a2",
+      "nom": "Sa'i entre Safa et Marwa",
+      "type": "Acte de dévotion",
+      "emoji": "🏃",
+      "duree": "1 heure",
+      "prix": "Gratuit",
+      "description": "Marcher 7 fois entre les collines Safa et Marwa en souvenir d'Hajar cherchant de l'eau pour son fils Ismaël. Intégré dans l'enceinte du Haram.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "adapte_handicap": true,
+      "a_savoir": "Chariots roulants disponibles pour les personnes à mobilité réduite",
+      "tags": [
+        "Spirituel",
+        "Hajar",
+        "Omra"
+      ]
+    },
+    {
+      "id": "a3",
+      "nom": "Eau Zamzam — Source sacrée",
+      "type": "Spirituel",
+      "emoji": "💧",
+      "duree": "30 minutes",
+      "prix": "Gratuit",
+      "description": "Boire l'eau du puits Zamzam qui coule depuis 4000 ans. Des robinets sont installés partout dans le Haram. Emporter 10L maximum en cabine.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "adapte_handicap": true,
+      "tags": [
+        "Eau sacrée",
+        "Zamzam",
+        "Gratuit"
+      ]
+    },
+    {
+      "id": "a4",
+      "nom": "Jabal Al-Nour — Grotte Hira",
+      "type": "Historique-spirituel",
+      "emoji": "⛰️",
+      "duree": "2-3 heures",
+      "prix": "Gratuit",
+      "description": "Monter les 1100 marches jusqu'à la grotte Hira où le Prophète ﷺ reçut la première révélation coranique (Iqra') en 610. Vue sur La Mecque.",
+      "adapte_famille": false,
+      "adapte_seniors": false,
+      "a_savoir": "Escalade difficile — éviter en plein soleil. Non obligatoire religieusement mais très visité.",
+      "tags": [
+        "Grotte Hira",
+        "Révélation",
+        "Historique"
+      ]
+    },
+    {
+      "id": "a5",
+      "nom": "Jabal Thawr — Grotte refuge",
+      "type": "Historique-spirituel",
+      "emoji": "⛰️",
+      "duree": "3-4 heures",
+      "prix": "Gratuit",
+      "description": "La grotte où le Prophète ﷺ et Abu Bakr se sont cachés pendant 3 jours lors de l'Hégire (migration vers Médine en 622). Montée difficile.",
+      "adapte_famille": false,
+      "adapte_seniors": false,
+      "a_savoir": "Montée très escarpée, 1500 marches, prévoir chaussures de marche et eau",
+      "tags": [
+        "Hégire",
+        "Abu Bakr",
+        "Grotte Thawr"
+      ]
+    },
+    {
+      "id": "a6",
+      "nom": "Arafat — Plaine du Pardon (Hajj)",
+      "type": "Hajj essentiel",
+      "emoji": "🌅",
+      "duree": "Journée entière (9 Dhoul Hijja)",
+      "prix": "Inclus dans le package Hajj",
+      "description": "Le Waquf d'Arafat — rester debout de midi au coucher du soleil dans la plaine d'Arafat en priant et en suppliant. 'Le Hajj, c'est Arafat' (hadith).",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "tags": [
+        "Hajj",
+        "Arafat",
+        "Waquf"
+      ]
+    },
+    {
+      "id": "a7",
+      "nom": "Lapidation des Djamarat (Mina)",
+      "type": "Hajj rituel",
+      "emoji": "🪨",
+      "duree": "1-2 heures",
+      "prix": "Inclus dans le package Hajj",
+      "description": "Lancer 7 pierres sur chacun des 3 piliers de Djamarat en souvenir d'Abraham (Ibrahim) qui lapida le diable. Rituel des 10, 11, 12 et 13 Dhoul Hijja.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "a_savoir": "Éviter les heures de pointe (après-midi) — risque de bousculade. Préférer les nuits ou tôt le matin.",
+      "tags": [
+        "Hajj",
+        "Mina",
+        "Djamarat"
+      ]
+    },
+    {
+      "id": "a8",
+      "nom": "Masjid al-Haram — Prière du Fajr",
+      "type": "Spirituel",
+      "emoji": "🌅",
+      "duree": "2 heures",
+      "prix": "Gratuit",
+      "description": "Prier le Fajr (prière de l'aube) dans la Grande Mosquée — 100 000 mosquées derrière l'imam en direct sur MBC Quran. L'expérience la plus émouvante pour un musulman.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "meilleur_moment": "Fajr (avant lever du soleil) — ambiance unique dans La Mecque la nuit",
+      "tags": [
+        "Prière",
+        "Fajr",
+        "Nuit à La Mecque"
+      ]
+    },
+    {
+      "id": "a9",
+      "nom": "Musée de La Mecque (Qaitbay Fort)",
+      "type": "Musée",
+      "emoji": "🏛️",
+      "duree": "2 heures",
+      "prix": "Gratuit",
+      "description": "Musée dans l'ancien fort mamelouk de Qaitbay (15ème siècle) conservant des objets historiques du Hajj et de la vie mecquoise.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "tags": [
+        "Musée",
+        "Histoire",
+        "Mamelouk"
+      ]
+    },
+    {
+      "id": "a10",
+      "nom": "Visite Abraj Al-Bait Clocktower",
+      "type": "Architecture",
+      "emoji": "🕐",
+      "duree": "1 heure",
+      "prix": "Gratuit (extérieur)",
+      "description": "La tour de l'horloge royale à 601m — 2ème plus haute tour du monde. Voir la Kaaba depuis le sommet du complexe (restaurant panoramique).",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "adapte_handicap": true,
+      "tags": [
+        "Tour horloge",
+        "Architecture",
+        "Panorama"
+      ]
+    },
+    {
+      "id": "a11",
+      "nom": "Maison natale du Prophète ﷺ (Mawlid)",
+      "type": "Historique",
+      "emoji": "🏠",
+      "duree": "1 heure",
+      "prix": "Gratuit",
+      "description": "L'emplacement de la maison où naquit le Prophète Muhammad ﷺ en 570 est aujourd'hui la Bibliothèque de La Mecque. Lieu de recueillement.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "tags": [
+        "Prophète",
+        "Naissance",
+        "Histoire islamique"
+      ]
+    },
+    {
+      "id": "a12",
+      "nom": "Souq Al-Lail — Marché nocturne",
+      "type": "Shopping",
+      "emoji": "🛍️",
+      "duree": "2 heures",
+      "prix": "Variable",
+      "description": "Marché nocturne autour du Haram — dattes medjool, tapis de prière, miswak, parfums oud, tasbihs et cadeaux pour ramener à la maison.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "meilleur_moment": "22h-2h (plus animé)",
+      "tags": [
+        "Marché",
+        "Cadeaux",
+        "Nocturne"
+      ]
+    },
+    {
+      "id": "a13",
+      "nom": "Muzdalifah — Nuit à ciel ouvert",
+      "type": "Hajj nuit",
+      "emoji": "🌌",
+      "duree": "Nuit entière",
+      "prix": "Inclus Hajj",
+      "description": "Après Arafat, passer la nuit à ciel ouvert dans la plaine de Muzdalifah sous les étoiles — collecte des pierres pour Djamarat le lendemain.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "tags": [
+        "Hajj",
+        "Nuit",
+        "Étoiles"
+      ]
+    },
+    {
+      "id": "a14",
+      "nom": "Cimetière Al-Ma'la (Al-Hajun)",
+      "type": "Pèlerinage/Ziyara",
+      "emoji": "🪦",
+      "duree": "1 heure",
+      "prix": "Gratuit",
+      "description": "Cimetière historique de La Mecque où reposent des membres de la famille du Prophète ﷺ dont sa première épouse Khadija et son fils. Lieu de recueillement.",
+      "adapte_famille": false,
+      "adapte_seniors": true,
+      "tags": [
+        "Cimetière",
+        "Khadija",
+        "Recueillement"
+      ]
+    },
+    {
+      "id": "a15",
+      "nom": "Prière de Tarawih pendant Ramadan",
+      "type": "Spirituel Ramadan",
+      "emoji": "🌙",
+      "duree": "3-4 heures",
+      "prix": "Gratuit",
+      "description": "Pendant Ramadan, la prière de Tarawih au Masjid al-Haram est diffusée dans le monde entier. L'imam récite le Coran complet en 30 nuits — expérience inoubliable.",
+      "adapte_famille": true,
+      "adapte_seniors": true,
+      "meilleur_moment": "Derniers 10 jours de Ramadan (Laylat Al-Qadr)",
+      "tags": [
+        "Ramadan",
+        "Tarawih",
+        "Coran"
+      ]
+    }
   ],
   "road_trips": [
-    { "id": "rt1", "titre": "La Mecque — Médine : Le Chemin des Prophètes", "emoji": "🕌", "duree": "2-3 jours", "distance_km": 450, "difficulte": "Facile", "budget_estime_eur": "100-200€ (hors package Hajj)", "etapes": [{ "ville": "La Mecque", "nuits": 1, "highlights": ["Grande Mosquée", "Kaaba", "Safa-Marwa"] }, { "ville": "Badr", "nuits": 0, "highlights": ["Champ de bataille de Badr 624", "Cimetière des martyrs"] }, { "ville": "Médine", "nuits": 2, "highlights": ["Masjid al-Nabawi", "Masjid Quba", "Cimetière Al-Baqi"] }], "conseils_halal": "Route 100% halal, autoroute Makkah-Madinah avec mosquées et restaurants halal aux stations.", "tags": ["Spirituel", "Prophètes", "Hajj"] },
-    { "id": "rt2", "titre": "Circuit Sites Islamiques Hijaz", "emoji": "🏜️", "duree": "5 jours", "distance_km": 800, "difficulte": "Modéré", "budget_estime_eur": "200-350€", "etapes": [{ "ville": "La Mecque", "nuits": 2, "highlights": ["Hajj/Omra rites", "Arafat", "Mina"] }, { "ville": "Taïf", "nuits": 1, "highlights": ["Jardin de roses", "Masjid Addas", "Souk Al-Taif"] }, { "ville": "Djeddah", "nuits": 1, "highlights": ["Jeddah historique UNESCO", "Mosquée Flottante", "Corniche"] }], "conseils_halal": "Djeddah est la porte maritime du Hajj — restaurants halal excellents dans la Vieille Ville UNESCO.", "tags": ["Hijaz", "Taïf", "Djeddah"] },
-    { "id": "rt3", "titre": "Djeddah — La Mecque — Médine Express", "emoji": "✈️", "duree": "7 jours", "distance_km": 600, "difficulte": "Facile", "budget_estime_eur": "300-500€ (hors Hajj)", "etapes": [{ "ville": "Djeddah", "nuits": 2, "highlights": ["Vieille Ville UNESCO", "King Fahd Fountain (plus haute du monde)", "Corniche"] }, { "ville": "La Mecque", "nuits": 3, "highlights": ["Omra", "Kaaba", "Safa-Marwa"] }, { "ville": "Médine", "nuits": 2, "highlights": ["Masjid al-Nabawi", "Prière verte", "Dates Ajwa"] }], "conseils_halal": "Package Omra inclut hébergement, transport La Mecque-Médine et guide. Réserver 6 mois à l'avance en haute saison.", "tags": ["Omra", "Djeddah", "Package"] }
+    {
+      "id": "rt1",
+      "titre": "La Mecque — Médine : Le Chemin des Prophètes",
+      "emoji": "🕌",
+      "duree": "2-3 jours",
+      "distance_km": 450,
+      "difficulte": "Facile",
+      "budget_estime_eur": "100-200€ (hors package Hajj)",
+      "etapes": [
+        {
+          "ville": "La Mecque",
+          "nuits": 1,
+          "highlights": [
+            "Grande Mosquée",
+            "Kaaba",
+            "Safa-Marwa"
+          ]
+        },
+        {
+          "ville": "Badr",
+          "nuits": 0,
+          "highlights": [
+            "Champ de bataille de Badr 624",
+            "Cimetière des martyrs"
+          ]
+        },
+        {
+          "ville": "Médine",
+          "nuits": 2,
+          "highlights": [
+            "Masjid al-Nabawi",
+            "Masjid Quba",
+            "Cimetière Al-Baqi"
+          ]
+        }
+      ],
+      "conseils_halal": "Route 100% halal, autoroute Makkah-Madinah avec mosquées et restaurants halal aux stations.",
+      "tags": [
+        "Spirituel",
+        "Prophètes",
+        "Hajj"
+      ]
+    },
+    {
+      "id": "rt2",
+      "titre": "Circuit Sites Islamiques Hijaz",
+      "emoji": "🏜️",
+      "duree": "5 jours",
+      "distance_km": 800,
+      "difficulte": "Modéré",
+      "budget_estime_eur": "200-350€",
+      "etapes": [
+        {
+          "ville": "La Mecque",
+          "nuits": 2,
+          "highlights": [
+            "Hajj/Omra rites",
+            "Arafat",
+            "Mina"
+          ]
+        },
+        {
+          "ville": "Taïf",
+          "nuits": 1,
+          "highlights": [
+            "Jardin de roses",
+            "Masjid Addas",
+            "Souk Al-Taif"
+          ]
+        },
+        {
+          "ville": "Djeddah",
+          "nuits": 1,
+          "highlights": [
+            "Jeddah historique UNESCO",
+            "Mosquée Flottante",
+            "Corniche"
+          ]
+        }
+      ],
+      "conseils_halal": "Djeddah est la porte maritime du Hajj — restaurants halal excellents dans la Vieille Ville UNESCO.",
+      "tags": [
+        "Hijaz",
+        "Taïf",
+        "Djeddah"
+      ]
+    },
+    {
+      "id": "rt3",
+      "titre": "Djeddah — La Mecque — Médine Express",
+      "emoji": "✈️",
+      "duree": "7 jours",
+      "distance_km": 600,
+      "difficulte": "Facile",
+      "budget_estime_eur": "300-500€ (hors Hajj)",
+      "etapes": [
+        {
+          "ville": "Djeddah",
+          "nuits": 2,
+          "highlights": [
+            "Vieille Ville UNESCO",
+            "King Fahd Fountain (plus haute du monde)",
+            "Corniche"
+          ]
+        },
+        {
+          "ville": "La Mecque",
+          "nuits": 3,
+          "highlights": [
+            "Omra",
+            "Kaaba",
+            "Safa-Marwa"
+          ]
+        },
+        {
+          "ville": "Médine",
+          "nuits": 2,
+          "highlights": [
+            "Masjid al-Nabawi",
+            "Prière verte",
+            "Dates Ajwa"
+          ]
+        }
+      ],
+      "conseils_halal": "Package Omra inclut hébergement, transport La Mecque-Médine et guide. Réserver 6 mois à l'avance en haute saison.",
+      "tags": [
+        "Omra",
+        "Djeddah",
+        "Package"
+      ]
+    }
   ],
   "voyages_par_type": {
-    "en_couple": { "emoji": "💑", "couleur": "#e91e8c", "intro": "La Mecque pour un couple de musulmans, c'est le voyage de l'âme — accomplir l'Omra ensemble, prier côte à côte dans la Grande Mosquée et se retrouver spirituellement à l'endroit le plus sacré de la Terre.", "top_experiences": [{ "titre": "Tawaf de nuit à 3h du matin", "details": "La Kaaba illuminée, quasiment seuls, moment magique", "prix": "Gratuit" }, { "titre": "Prière Fajr côte à côte", "details": "Face à la Kaaba, au lever du soleil", "prix": "Gratuit" }, { "titre": "Eau Zamzam à deux", "details": "Boire l'eau de la source éternelle ensemble", "prix": "Gratuit" }], "hotels_recommandes": ["Raffles Makkah Palace", "Fairmont Clock Tower"], "conseils": "Les couples mariés peuvent partager une chambre — preuve de mariage conseillée. L'Omra ensemble renforce le lien spirituel et conjugal." },
-    "en_famille": { "emoji": "👨‍👩‍👧‍👦", "couleur": "#4CAF50", "intro": "Emmener ses enfants à La Mecque est un acte éducatif et spirituel majeur. Même les nourrissons peuvent accompagner leurs parents pour l'Omra.", "top_experiences": [{ "titre": "Tawaf avec les enfants", "details": "Expliquer la signification à chaque tour", "prix": "Gratuit" }, { "titre": "Eau Zamzam pour les enfants", "details": "Leur expliquer l'histoire d'Hajar et Ismaël", "prix": "Gratuit" }, { "titre": "Jabal Al-Nour (parents adultes)", "details": "Pendant que les enfants se reposent à l'hôtel", "prix": "Gratuit" }], "hotels_recommandes": ["Hotel Anjum Makkah", "Millennium Hotel"], "conseils": "Poussettes autorisées dans le Haram (niveau 0 et niveaux supérieurs). Réserver des chambres familiales. Halte-garderie à certains hôtels." },
-    "entre_amis": { "emoji": "👫", "couleur": "#9C27B0", "intro": "Un groupe d'amis à La Mecque pour l'Omra est une tradition centenaire. Soutien mutuel, prières collectives et dîners partagés de spécialités du monde entier.", "top_experiences": [{ "titre": "Omra de groupe avec guide", "details": "Guide francophone disponible", "prix": "50-100€/pers" }, { "titre": "Dîner interculturel Hajj", "details": "Rencontrer des pèlerins du monde entier", "prix": "10-20€" }, { "titre": "Shopping cadeaux du Haram", "details": "Dattes, tasbihs, tapis de prière pour les familles", "prix": "Variable" }], "conseils": "Voyager en groupe réduit la coût. Groupe de femmes uniquement: un mahram (tuteur masculin) est recommandé mais certaines agences proposent des Omra féminines encadrées." },
-    "voyage_solo": { "emoji": "🎒", "couleur": "#FF9800", "intro": "L'Omra en solo est une expérience profondément introspective — se retrouver seul face à la Kaaba est un moment de vérité pour beaucoup de musulmans.", "top_experiences": [{ "titre": "Itikaf (retraite spirituelle)", "details": "S'isoler pour lire le Coran et prier", "prix": "Gratuit" }, { "titre": "Tawaf nocturne solitaire", "details": "La Kaaba à 2h du matin, presque seul", "prix": "Gratuit" }, { "titre": "Du'a personnel devant la Kaaba", "details": "Supplications intimes et personnelles", "prix": "Gratuit" }], "conseil_securite": "La Mecque est très sûre. La police du Haram est nombreuse. Garder son visa Omra sur soi. Les femmes voyageant seules sont de plus en plus acceptées depuis les réformes Vision 2030." },
-    "voyage_spirituel": { "emoji": "🕌", "couleur": "#2196F3", "intro": "La Mecque EST le voyage spirituel par excellence. Chaque instant, chaque respiration dans la ville sainte est un acte d'adoration. L'objectif d'une vie pour tout musulman.", "top_experiences": [{ "titre": "Hajj — Le 5ème pilier de l'Islam", "details": "Arafat, Muzdalifah, Mina, Djamarat — complet", "prix": "Package Hajj 3000-8000€" }, { "titre": "Omra pendant Ramadan = Hajj en récompense", "details": "Hadith du Prophète ﷺ", "prix": "Package Omra 800-2000€" }, { "titre": "Prière de 2 raka'at derrière le Maqam Ibrahim", "details": "Derrière la Kaaba, face à Ibrahim", "prix": "Gratuit" }], "conseil_pratique": "Réserver le package Hajj/Omra via une agence agréée par le Ministère du Hajj saoudien. Éviter les packages non-officiels frauduleux." }
+    "en_couple": {
+      "emoji": "💑",
+      "couleur": "#e91e8c",
+      "intro": "La Mecque pour un couple de musulmans, c'est le voyage de l'âme — accomplir l'Omra ensemble, prier côte à côte dans la Grande Mosquée et se retrouver spirituellement à l'endroit le plus sacré de la Terre.",
+      "top_experiences": [
+        {
+          "titre": "Tawaf de nuit à 3h du matin",
+          "details": "La Kaaba illuminée, quasiment seuls, moment magique",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Prière Fajr côte à côte",
+          "details": "Face à la Kaaba, au lever du soleil",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Eau Zamzam à deux",
+          "details": "Boire l'eau de la source éternelle ensemble",
+          "prix": "Gratuit"
+        }
+      ],
+      "hotels_recommandes": [
+        "Raffles Makkah Palace",
+        "Fairmont Clock Tower"
+      ],
+      "conseils": "Les couples mariés peuvent partager une chambre — preuve de mariage conseillée. L'Omra ensemble renforce le lien spirituel et conjugal."
+    },
+    "en_famille": {
+      "emoji": "👨‍👩‍👧‍👦",
+      "couleur": "#4CAF50",
+      "intro": "Emmener ses enfants à La Mecque est un acte éducatif et spirituel majeur. Même les nourrissons peuvent accompagner leurs parents pour l'Omra.",
+      "top_experiences": [
+        {
+          "titre": "Tawaf avec les enfants",
+          "details": "Expliquer la signification à chaque tour",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Eau Zamzam pour les enfants",
+          "details": "Leur expliquer l'histoire d'Hajar et Ismaël",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Jabal Al-Nour (parents adultes)",
+          "details": "Pendant que les enfants se reposent à l'hôtel",
+          "prix": "Gratuit"
+        }
+      ],
+      "hotels_recommandes": [
+        "Hotel Anjum Makkah",
+        "Millennium Hotel"
+      ],
+      "conseils": "Poussettes autorisées dans le Haram (niveau 0 et niveaux supérieurs). Réserver des chambres familiales. Halte-garderie à certains hôtels."
+    },
+    "entre_amis": {
+      "emoji": "👫",
+      "couleur": "#9C27B0",
+      "intro": "Un groupe d'amis à La Mecque pour l'Omra est une tradition centenaire. Soutien mutuel, prières collectives et dîners partagés de spécialités du monde entier.",
+      "top_experiences": [
+        {
+          "titre": "Omra de groupe avec guide",
+          "details": "Guide francophone disponible",
+          "prix": "50-100€/pers"
+        },
+        {
+          "titre": "Dîner interculturel Hajj",
+          "details": "Rencontrer des pèlerins du monde entier",
+          "prix": "10-20€"
+        },
+        {
+          "titre": "Shopping cadeaux du Haram",
+          "details": "Dattes, tasbihs, tapis de prière pour les familles",
+          "prix": "Variable"
+        }
+      ],
+      "conseils": "Voyager en groupe réduit la coût. Groupe de femmes uniquement: un mahram (tuteur masculin) est recommandé mais certaines agences proposent des Omra féminines encadrées."
+    },
+    "voyage_solo": {
+      "emoji": "🎒",
+      "couleur": "#FF9800",
+      "intro": "L'Omra en solo est une expérience profondément introspective — se retrouver seul face à la Kaaba est un moment de vérité pour beaucoup de musulmans.",
+      "top_experiences": [
+        {
+          "titre": "Itikaf (retraite spirituelle)",
+          "details": "S'isoler pour lire le Coran et prier",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Tawaf nocturne solitaire",
+          "details": "La Kaaba à 2h du matin, presque seul",
+          "prix": "Gratuit"
+        },
+        {
+          "titre": "Du'a personnel devant la Kaaba",
+          "details": "Supplications intimes et personnelles",
+          "prix": "Gratuit"
+        }
+      ],
+      "conseil_securite": "La Mecque est très sûre. La police du Haram est nombreuse. Garder son visa Omra sur soi. Les femmes voyageant seules sont de plus en plus acceptées depuis les réformes Vision 2030."
+    },
+    "voyage_spirituel": {
+      "emoji": "🕌",
+      "couleur": "#2196F3",
+      "intro": "La Mecque EST le voyage spirituel par excellence. Chaque instant, chaque respiration dans la ville sainte est un acte d'adoration. L'objectif d'une vie pour tout musulman.",
+      "top_experiences": [
+        {
+          "titre": "Hajj — Le 5ème pilier de l'Islam",
+          "details": "Arafat, Muzdalifah, Mina, Djamarat — complet",
+          "prix": "Package Hajj 3000-8000€"
+        },
+        {
+          "titre": "Omra pendant Ramadan = Hajj en récompense",
+          "details": "Hadith du Prophète ﷺ",
+          "prix": "Package Omra 800-2000€"
+        },
+        {
+          "titre": "Prière de 2 raka'at derrière le Maqam Ibrahim",
+          "details": "Derrière la Kaaba, face à Ibrahim",
+          "prix": "Gratuit"
+        }
+      ],
+      "conseil_pratique": "Réserver le package Hajj/Omra via une agence agréée par le Ministère du Hajj saoudien. Éviter les packages non-officiels frauduleux."
+    }
   },
   "boucheries": [
-    { "id": "b1", "nom": "Abattoir Al-Haram (Hajj)", "adresse": "Mina, La Mecque", "quartier": "Mina", "halal_certifie": true, "produits": ["Agneau de sacrifice (Udhiyya/Qurbani)", "Chèvre de sacrifice"], "note": 4.8, "horaires": "Pendant le Hajj uniquement (10 Dhoul Hijja)" },
-    { "id": "b2", "nom": "Marché Souq Al-Lail Viandes", "adresse": "Souq Al-Lail, Al Haram", "quartier": "Al Haram", "halal_certifie": true, "produits": ["Agneau grillé", "Poulet rôti", "Viandes diverses"], "note": 4.5, "horaires": "20h-3h" },
-    { "id": "b3", "nom": "Boucherie Ajyad Premium", "adresse": "Ajyad Street", "quartier": "Ajyad", "halal_certifie": true, "produits": ["Agneau saoudien", "Chameau (jus de chameau ou viande)", "Veau importé"], "note": 4.6, "horaires": "6h-midnight" },
-    { "id": "b4", "nom": "Halal Butchery Aziziyah", "adresse": "Aziziyah District", "quartier": "Aziziyah", "halal_certifie": true, "produits": ["Agneau australien", "Poulet fermier", "Viande séchée (qadid)"], "note": 4.4, "horaires": "7h-22h" },
-    { "id": "b5", "nom": "Misfalah Meat Market", "adresse": "Misfalah, La Mecque", "quartier": "Misfalah", "halal_certifie": true, "produits": ["Agneau entier", "Chèvre", "Dinde halal"], "note": 4.3, "horaires": "5h-19h" }
+    {
+      "id": "b1",
+      "nom": "Abattoir Al-Haram (Hajj)",
+      "adresse": "Mina, La Mecque",
+      "quartier": "Mina",
+      "halal_certifie": true,
+      "produits": [
+        "Agneau de sacrifice (Udhiyya/Qurbani)",
+        "Chèvre de sacrifice"
+      ],
+      "note": 4.8,
+      "horaires": "Pendant le Hajj uniquement (10 Dhoul Hijja)"
+    },
+    {
+      "id": "b2",
+      "nom": "Marché Souq Al-Lail Viandes",
+      "adresse": "Souq Al-Lail, Al Haram",
+      "quartier": "Al Haram",
+      "halal_certifie": true,
+      "produits": [
+        "Agneau grillé",
+        "Poulet rôti",
+        "Viandes diverses"
+      ],
+      "note": 4.5,
+      "horaires": "20h-3h"
+    },
+    {
+      "id": "b3",
+      "nom": "Boucherie Ajyad Premium",
+      "adresse": "Ajyad Street",
+      "quartier": "Ajyad",
+      "halal_certifie": true,
+      "produits": [
+        "Agneau saoudien",
+        "Chameau (jus de chameau ou viande)",
+        "Veau importé"
+      ],
+      "note": 4.6,
+      "horaires": "6h-midnight"
+    },
+    {
+      "id": "b4",
+      "nom": "Halal Butchery Aziziyah",
+      "adresse": "Aziziyah District",
+      "quartier": "Aziziyah",
+      "halal_certifie": true,
+      "produits": [
+        "Agneau australien",
+        "Poulet fermier",
+        "Viande séchée (qadid)"
+      ],
+      "note": 4.4,
+      "horaires": "7h-22h"
+    },
+    {
+      "id": "b5",
+      "nom": "Misfalah Meat Market",
+      "adresse": "Misfalah, La Mecque",
+      "quartier": "Misfalah",
+      "halal_certifie": true,
+      "produits": [
+        "Agneau entier",
+        "Chèvre",
+        "Dinde halal"
+      ],
+      "note": 4.3,
+      "horaires": "5h-19h"
+    }
   ],
   "boulangeries": [
-    { "id": "bo1", "nom": "Pain Saoudien Samoun", "adresse": "Marché Al Haram", "quartier": "Al Haram", "description": "Samoun — pain plat saoudien cuit au four à bois, companion du kabsa et du mandi.", "specialites": ["Samoun", "Khobz arabe", "Taftan persan"], "prix": "0.50-2 SAR", "horaires": "5h-23h", "note": 4.5 },
-    { "id": "bo2", "nom": "Boulangerie Turque Istanbul", "adresse": "Jarwal, La Mecque", "quartier": "Jarwal", "description": "Simit turc (couronne de sésame) et pide maison pour les pèlerins turcs — un peu de Constantinople à La Mecque.", "specialites": ["Simit au sésame", "Pide au fromage", "Baklava"], "prix": "2-8 SAR", "horaires": "7h-22h", "note": 4.4 },
-    { "id": "bo3", "nom": "Boulangerie Marocaine Msemmen", "adresse": "Ajyad Area", "quartier": "Ajyad", "description": "Msemmen, baghrir et harcha marocains pour les pèlerins du Maghreb.", "specialites": ["Msemmen feuilleté", "Baghrir mille trous", "Harcha semoule"], "prix": "2-5 SAR", "horaires": "6h-14h", "note": 4.6 },
-    { "id": "bo4", "nom": "Pâtisserie Al-Hilal", "adresse": "Makkah Mall", "quartier": "Al Haram", "specialites": ["Zlabia de Hajj", "Ma'amoul dattes", "Ghraybeh beurre"], "prix": "5-20 SAR", "horaires": "9h-midnight", "note": 4.5 },
-    { "id": "bo5", "nom": "Dates Specialists Tamr Al-Madinah", "adresse": "Abraj Al-Bait Mall", "quartier": "Al Haram", "description": "Spécialiste des dattes saoudiennes de tous types — Ajwa, Medjool, Sukkari — conditionnées en cadeaux magnifiques.", "specialites": ["Dattes Ajwa Médine", "Dattes Medjool", "Dattes enrobées chocolat halal"], "prix": "30-200 SAR/boite", "horaires": "10h-23h", "note": 4.8 }
+    {
+      "id": "bo1",
+      "nom": "Pain Saoudien Samoun",
+      "adresse": "Marché Al Haram",
+      "quartier": "Al Haram",
+      "description": "Samoun — pain plat saoudien cuit au four à bois, companion du kabsa et du mandi.",
+      "specialites": [
+        "Samoun",
+        "Khobz arabe",
+        "Taftan persan"
+      ],
+      "prix": "0.50-2 SAR",
+      "horaires": "5h-23h",
+      "note": 4.5
+    },
+    {
+      "id": "bo2",
+      "nom": "Boulangerie Turque Istanbul",
+      "adresse": "Jarwal, La Mecque",
+      "quartier": "Jarwal",
+      "description": "Simit turc (couronne de sésame) et pide maison pour les pèlerins turcs — un peu de Constantinople à La Mecque.",
+      "specialites": [
+        "Simit au sésame",
+        "Pide au fromage",
+        "Baklava"
+      ],
+      "prix": "2-8 SAR",
+      "horaires": "7h-22h",
+      "note": 4.4
+    },
+    {
+      "id": "bo3",
+      "nom": "Boulangerie Marocaine Msemmen",
+      "adresse": "Ajyad Area",
+      "quartier": "Ajyad",
+      "description": "Msemmen, baghrir et harcha marocains pour les pèlerins du Maghreb.",
+      "specialites": [
+        "Msemmen feuilleté",
+        "Baghrir mille trous",
+        "Harcha semoule"
+      ],
+      "prix": "2-5 SAR",
+      "horaires": "6h-14h",
+      "note": 4.6
+    },
+    {
+      "id": "bo4",
+      "nom": "Pâtisserie Al-Hilal",
+      "adresse": "Makkah Mall",
+      "quartier": "Al Haram",
+      "specialites": [
+        "Zlabia de Hajj",
+        "Ma'amoul dattes",
+        "Ghraybeh beurre"
+      ],
+      "prix": "5-20 SAR",
+      "horaires": "9h-midnight",
+      "note": 4.5
+    },
+    {
+      "id": "bo5",
+      "nom": "Dates Specialists Tamr Al-Madinah",
+      "adresse": "Abraj Al-Bait Mall",
+      "quartier": "Al Haram",
+      "description": "Spécialiste des dattes saoudiennes de tous types — Ajwa, Medjool, Sukkari — conditionnées en cadeaux magnifiques.",
+      "specialites": [
+        "Dattes Ajwa Médine",
+        "Dattes Medjool",
+        "Dattes enrobées chocolat halal"
+      ],
+      "prix": "30-200 SAR/boite",
+      "horaires": "10h-23h",
+      "note": 4.8
+    }
   ],
-  "articles_lies": ["guide-hajj-complet", "omra-guide-pratique", "la-mecque-histoire"],
-  "villes_proches": ["medine", "djeddah"],
+  "articles_lies": [
+    "guide-hajj-complet",
+    "omra-guide-pratique",
+    "la-mecque-histoire"
+  ],
+  "villes_proches": [
+    "medine",
+    "djeddah"
+  ],
   "destinations_combiner": [
-    { "ville": "Médine", "distance_km": 450, "raison": "Package Omra La Mecque + Médine classique — Masjid al-Nabawi du Prophète ﷺ" },
-    { "ville": "Djeddah", "distance_km": 80, "raison": "Porte d'entrée du Hajj, Vieille Ville UNESCO, grande métropole moderne" },
-    { "ville": "Taïf", "distance_km": 90, "raison": "Ville des roses à 1800m d'altitude, fraîcheur et jardins, Masjid Addas historique" }
+    {
+      "ville": "Médine",
+      "distance_km": 450,
+      "raison": "Package Omra La Mecque + Médine classique — Masjid al-Nabawi du Prophète ﷺ"
+    },
+    {
+      "ville": "Djeddah",
+      "distance_km": 80,
+      "raison": "Porte d'entrée du Hajj, Vieille Ville UNESCO, grande métropole moderne"
+    },
+    {
+      "ville": "Taïf",
+      "distance_km": 90,
+      "raison": "Ville des roses à 1800m d'altitude, fraîcheur et jardins, Masjid Addas historique"
+    }
   ],
-  "conseils_halal": "La Mecque est 100% halal par essence divine — c'est la ville la plus sainte de l'Islam. Aucun alcool, porc ou comportement interdit n'est toléré. Tout est organisé pour les besoins spirituels et matériels des pèlerins musulmans du monde entier. IMPORTANT : L'entrée à La Mecque est strictement réservée aux musulmans — un contrôle de foi est exercé aux points d'entrée."
+  "conseils_halal": "La Mecque est 100% halal par essence divine — c'est la ville la plus sainte de l'Islam. Aucun alcool, porc ou comportement interdit n'est toléré. Tout est organisé pour les besoins spirituels et matériels des pèlerins musulmans du monde entier. IMPORTANT : L'entrée à La Mecque est strictement réservée aux musulmans — un contrôle de foi est exercé aux points d'entrée.",
+  "codeISO": "SA"
 }
