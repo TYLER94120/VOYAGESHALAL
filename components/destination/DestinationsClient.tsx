@@ -26,13 +26,20 @@ const FILTER_ICON: Record<string, string> = {
   Afrique: '🌍 ',
   Asie: '🌏 ',
   Europe: '🏰 ',
+  Omra: '🕋 ',
+}
+
+const COUNTRY_EMOJI: Record<string, string> = {
+  Maroc: '🇲🇦', Turquie: '🇹🇷', France: '🇫🇷', 'Émirats Arabes Unis': '🇦🇪', Émirats: '🇦🇪',
+  'Arabie Saoudite': '🇸🇦', Malaisie: '🇲🇾', Indonésie: '🇮🇩', Égypte: '🇪🇬', Algérie: '🇩🇿',
+  Tunisie: '🇹🇳', Jordanie: '🇯🇴', Qatar: '🇶🇦', 'Royaume-Uni': '🇬🇧', Oman: '🇴🇲', Maldives: '🇲🇻',
 }
 
 export default function DestinationsClient({ villes, continents }: Props) {
-  const [filtre, setFiltre] = useState('Tous')
+  const [filtre, setFiltre] = useState('Toutes')
 
   const villesFiltrees =
-    filtre === 'Tous' ? villes : villes.filter((v) => continents[filtre]?.includes(v.pays))
+    filtre === 'Toutes' ? villes : villes.filter((v) => continents[filtre]?.includes(v.pays))
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-8 pb-24">
@@ -71,7 +78,16 @@ export default function DestinationsClient({ villes, continents }: Props) {
               />
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(11,26,15,0.82) 0%, rgba(11,26,15,0.15) 45%, transparent 70%)' }} />
 
-              {/* Country badge */}
+              {/* ✦ Score badge (haut-droite) */}
+              {v.scoreHalal != null && (
+                <div className="absolute top-3 right-3">
+                  <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#0b1a0f]/80 text-[#c9a84c] backdrop-blur-sm">
+                    <span style={{ color: '#c9a84c' }}>✦</span> {v.scoreHalal}/5
+                  </span>
+                </div>
+              )}
+
+              {/* Country badge (haut-centre) */}
               <div className="absolute top-4 left-1/2 -translate-x-1/2">
                 <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest bg-white/95 text-[#1b4332] whitespace-nowrap">
                   {v.pays}
@@ -81,9 +97,10 @@ export default function DestinationsClient({ villes, continents }: Props) {
               {/* City + subtitle overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
                 <h3
-                  className="text-white font-bold text-xl sm:text-2xl leading-tight"
+                  className="text-white font-bold text-xl sm:text-2xl leading-tight flex items-center gap-2"
                   style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
                 >
+                  <span className="text-lg">{COUNTRY_EMOJI[v.pays] ?? '🌍'}</span>
                   {v.nom}
                 </h3>
                 {v.subtitle && (
@@ -91,6 +108,14 @@ export default function DestinationsClient({ villes, continents }: Props) {
                     {v.subtitle}
                   </p>
                 )}
+                <div className="mt-2 flex flex-wrap gap-1">
+                  <span className="px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wide bg-[#1b4332] text-[#e8d5a3]">
+                    Halal vérifié
+                  </span>
+                  <span className="px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wide bg-white/15 text-white/80">
+                    Sans alcool
+                  </span>
+                </div>
               </div>
             </Link>
 

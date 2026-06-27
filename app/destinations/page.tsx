@@ -3,6 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import { buildMetadata } from '@/lib/seo'
 import DestinationsClient, { type VilleCard } from '@/components/destination/DestinationsClient'
+import IslamicPattern from '@/components/ui/IslamicPattern'
 
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80'
 
@@ -51,11 +52,12 @@ function getAllVilles(): VilleCard[] {
 }
 
 const continents: Record<string, string[]> = {
-  Tous: [],
+  Toutes: [],
   'Moyen-Orient': ['Émirats Arabes Unis', 'Émirats', 'Arabie Saoudite', 'Qatar', 'Jordanie', 'Oman'],
   Afrique: ['Maroc', 'Algérie', 'Tunisie', 'Égypte'],
   Asie: ['Malaisie', 'Indonésie', 'Maldives'],
   Europe: ['France', 'Royaume-Uni', 'Turquie'],
+  Omra: ['Arabie Saoudite'],
 }
 
 export default function DestinationsPage() {
@@ -63,21 +65,24 @@ export default function DestinationsPage() {
 
   return (
     <main style={{ backgroundColor: '#fdfaf3' }}>
-      {/* Dark Islamic hero */}
-      <section className="islamic-hero px-6 sm:px-16 pt-16 pb-20">
-        <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.25em] mb-5">
-          Toutes les destinations
-        </p>
-        <h1
-          className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-6 max-w-2xl"
-          style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
-        >
-          Destinations halal dans le <span className="gold-em">monde</span>
-        </h1>
-        <p className="text-white/60 text-base max-w-xl leading-relaxed">
-          Plus de {villes.length} destinations vérifiées pour voyager sereinement en tant que
-          musulman — restaurants halal, mosquées, guides pratiques et conseils locaux.
-        </p>
+      {/* Hero compact nuit */}
+      <section className="relative overflow-hidden px-6 sm:px-16 pt-14 pb-16 text-center" style={{ backgroundColor: '#0b1a0f' }}>
+        <IslamicPattern opacity={0.07} />
+        <div className="relative z-10">
+          <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.3em] mb-4">
+            Toutes les destinations
+          </p>
+          <h1
+            className="text-4xl sm:text-5xl font-bold text-white leading-[1.05] mb-4"
+            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
+          >
+            {villes.length} destinations halal <span className="gold-em">vérifiées</span>
+          </h1>
+          <p className="text-white/60 text-base max-w-xl mx-auto leading-relaxed">
+            Restaurants halal, mosquées, guides pratiques et conseils locaux — pour voyager
+            sereinement en tant que musulman.
+          </p>
+        </div>
       </section>
 
       <DestinationsClient villes={villes} continents={continents} />
