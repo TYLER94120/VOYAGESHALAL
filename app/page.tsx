@@ -65,14 +65,14 @@ export default function HomePage() {
         {/* Left: text */}
         <div style={{ backgroundColor: '#faf8f4' }} className="flex flex-col justify-center px-8 sm:px-16 lg:px-20 py-20 lg:py-32">
           <div className="flex items-center gap-3 mb-8">
-            <div style={{ width: 32, height: 1, backgroundColor: '#c9a870' }} />
-            <span style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em]">
+            <div style={{ width: 32, height: 1, backgroundColor: '#c9a84c' }} />
+            <span style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.2em]">
               Le guide de référence mondial
             </span>
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] mb-8" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1a3a2a' }}>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] mb-8" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
             Voyagez halal,<br />
-            voyagez <em style={{ color: '#c9a870', fontStyle: 'italic' }}>serein</em>
+            voyagez <em style={{ color: '#c9a84c', fontStyle: 'italic' }}>serein</em>
           </h1>
           <p className="text-lg text-gray-500 leading-relaxed mb-10 max-w-md">
             Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans {totalVilles}+ destinations — pour les musulmans du monde entier.
@@ -85,7 +85,7 @@ export default function HomePage() {
               { value: '4 ans', label: "d'expérience" },
             ].map((s) => (
               <div key={s.label}>
-                <div className="text-2xl font-bold" style={{ color: '#1a3a2a' }}>{s.value}</div>
+                <div className="text-2xl font-bold" style={{ color: '#1b4332' }}>{s.value}</div>
                 <div className="text-xs text-gray-400 mt-0.5">{s.label}</div>
               </div>
             ))}
@@ -131,12 +131,12 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-2">Explorez</p>
-              <h2 className="text-3xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1a3a2a' }}>
+              <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-2">Explorez</p>
+              <h2 className="text-3xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
                 Destinations halal populaires
               </h2>
             </div>
-            <Link href="/destinations" className="text-sm font-medium hover:underline" style={{ color: '#1a3a2a' }}>
+            <Link href="/destinations" className="text-sm font-medium hover:underline" style={{ color: '#1b4332' }}>
               Voir tout →
             </Link>
           </div>
@@ -157,14 +157,14 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
                   <div className="absolute top-4 left-1/2 -translate-x-1/2">
-                    <span style={{ backgroundColor: 'rgba(201,168,112,0.9)', color: '#1a3a2a' }} className="text-[10px] font-bold px-3 py-1 rounded-full whitespace-nowrap tracking-widest">
+                    <span style={{ backgroundColor: 'rgba(201,168,112,0.9)', color: '#1b4332' }} className="text-[10px] font-bold px-3 py-1 rounded-full whitespace-nowrap tracking-widest">
                       {d.badge}
                     </span>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-center">
                     <div className="text-white font-bold text-base">{d.city}</div>
                     <div className="text-white/60 text-xs mt-0.5">{d.country}</div>
-                    <div style={{ color: '#c9a870' }} className="text-xs mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div style={{ color: '#c9a84c' }} className="text-xs mt-2 opacity-0 group-hover:opacity-100 transition-opacity">
                       Guide complet →
                     </div>
                   </div>
@@ -188,8 +188,8 @@ export default function HomePage() {
       {/* Voyager Halal, simplifié */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-5xl mx-auto text-center mb-14">
-          <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-3">Notre promesse</p>
-          <h2 className="text-3xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1a3a2a' }}>
+          <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-3">Notre promesse</p>
+          <h2 className="text-3xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
             Voyager Halal, simplifié
           </h2>
         </div>
@@ -197,7 +197,7 @@ export default function HomePage() {
           {FEATURES.map((f) => (
             <div key={f.title} className="text-center">
               <div className="text-4xl mb-4">{f.icon}</div>
-              <div className="font-bold mb-2 text-lg" style={{ color: '#1a3a2a' }}>{f.title}</div>
+              <div className="font-bold mb-2 text-lg" style={{ color: '#1b4332' }}>{f.title}</div>
               <div className="text-sm text-gray-500 leading-relaxed">{f.desc}</div>
             </div>
           ))}
@@ -205,10 +205,10 @@ export default function HomePage() {
       </section>
 
       {/* App CTA */}
-      <section style={{ backgroundColor: '#1a3a2a' }} className="py-20 px-4">
+      <section className="islamic-hero py-20 px-4">
         <div className="max-w-4xl mx-auto flex flex-col lg:flex-row items-center gap-12">
           <div className="flex-1">
-            <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-4">Bientôt disponible</p>
+            <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-4">Bientôt disponible</p>
             <h2 className="text-3xl font-bold text-white mb-5" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
               Voyages Halal dans votre poche
             </h2>
@@ -217,7 +217,7 @@ export default function HomePage() {
             </p>
             <Link
               href="/application"
-              style={{ backgroundColor: '#c9a870', color: '#1a3a2a' }}
+              style={{ backgroundColor: '#c9a84c', color: '#1b4332' }}
               className="inline-block font-bold text-sm px-8 py-3 rounded-full hover:opacity-90 transition-opacity"
             >
               En savoir plus
@@ -234,12 +234,12 @@ export default function HomePage() {
         <div className="max-w-5xl mx-auto">
           <div className="flex items-end justify-between mb-8">
             <div>
-              <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-2">Nos guides</p>
-              <h2 className="text-2xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1a3a2a' }}>
+              <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-2">Nos guides</p>
+              <h2 className="text-2xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
                 Tout pour voyager halal sereinement
               </h2>
             </div>
-            <Link href="/guides" className="text-sm font-medium hover:underline" style={{ color: '#1a3a2a' }}>
+            <Link href="/guides" className="text-sm font-medium hover:underline" style={{ color: '#1b4332' }}>
               Voir tous les guides →
             </Link>
           </div>
@@ -248,16 +248,16 @@ export default function HomePage() {
               <Link
                 key={guide.slug}
                 href={`/guides/${guide.slug}`}
-                className="group bg-white rounded-2xl p-5 border border-gray-100 hover:border-[#c9a870]/40 hover:shadow-sm transition-all"
+                className="group bg-white rounded-2xl p-5 border border-gray-100 hover:border-[#c9a84c]/40 hover:shadow-sm transition-all"
               >
-                <span style={{ backgroundColor: '#f5f0e8', color: '#1a3a2a' }} className="text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-full">
+                <span style={{ backgroundColor: '#f5f0e8', color: '#1b4332' }} className="text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded-full">
                   {guide.category}
                 </span>
-                <h3 className="font-bold text-gray-900 mt-3 mb-2 text-sm leading-snug group-hover:text-[#1a3a2a]">
+                <h3 className="font-bold text-gray-900 mt-3 mb-2 text-sm leading-snug group-hover:text-[#1b4332]">
                   {guide.title}
                 </h3>
                 <p className="text-xs text-gray-400">⏱ {guide.readTime} de lecture</p>
-                <p style={{ color: '#c9a870' }} className="text-xs font-medium mt-3">Lire le guide →</p>
+                <p style={{ color: '#c9a84c' }} className="text-xs font-medium mt-3">Lire le guide →</p>
               </Link>
             ))}
           </div>
