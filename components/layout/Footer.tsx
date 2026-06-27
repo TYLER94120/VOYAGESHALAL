@@ -2,22 +2,20 @@ import Link from 'next/link'
 
 const footerLinks = {
   Destinations: [
+    { href: '/destinations', label: 'Toutes les villes' },
     { href: '/destinations/istanbul', label: 'Istanbul' },
     { href: '/destinations/marrakech', label: 'Marrakech' },
     { href: '/destinations/dubai', label: 'Dubaï' },
-    { href: '/destinations/kuala-lumpur', label: 'Kuala Lumpur' },
-    { href: '/destinations/le-caire', label: 'Le Caire' },
-    { href: '/destinations/medine', label: 'Médine' },
   ],
-  Guides: [
+  'Outils musulmans': [
+    { href: '/horaires-priere', label: '🕐 Horaires de prière' },
+    { href: '/qibla', label: '🧭 Calculateur Qibla' },
+    { href: '/omra', label: '🕌 Omra & Hajj' },
+  ],
+  Ressources: [
+    { href: '/blog', label: 'Blog & Guides' },
     { href: '/guides/voyage-halal-debutant', label: 'Guide débutant' },
-    { href: '/guides/top-destinations-halal-2026', label: 'Top destinations 2026' },
     { href: '/guides/ramadan-voyage-guide', label: 'Voyager en Ramadan' },
-  ],
-  Application: [
-    { href: '/application', label: "Télécharger l'app" },
-    { href: '/application#fonctionnalites', label: 'Fonctionnalités' },
-    { href: '/application#qibla', label: 'Boussole Qibla' },
   ],
   Légal: [
     { href: '/mentions-legales', label: 'Mentions légales' },

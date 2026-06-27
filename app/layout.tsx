@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import BottomNav from '@/components/layout/BottomNav'
 import { RamadanBanner } from '@/components/RamadanBanner'
 import { SITE_NAME, DEFAULT_DESCRIPTION, SITE_URL } from '@/lib/seo'
 
@@ -45,6 +46,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <BottomNav />
       </body>
     </html>
   )
