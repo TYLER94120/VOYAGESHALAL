@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import { RamadanBanner } from '@/components/RamadanBanner'
 import { SITE_NAME, DEFAULT_DESCRIPTION, SITE_URL } from '@/lib/seo'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
@@ -40,6 +41,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${inter.variable} ${playfair.variable} font-sans`}>
+        <RamadanBanner />
         <Header />
         {children}
         <Footer />

@@ -5,6 +5,22 @@ import { readdirSync, readFileSync } from 'fs'
 import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
 import CityTabs from '@/components/villes/CityTabs'
+import { PrayerTimesWidget } from '@/components/PrayerTimesWidget'
+import { QiblaCalculator } from '@/components/QiblaCalculator'
+import { RamadanSection } from '@/components/RamadanSection'
+import { ShareButtons } from '@/components/ShareButtons'
+import { DestinationFaqSchema } from '@/components/SchemaOrg'
+
+// Aladhan geocodes better with transliterated/English city names
+const API_CITY_NAME: Record<string, string> = {
+  'le-caire': 'Cairo',
+  medine: 'Medina',
+  'la-mecque': 'Mecca',
+  alger: 'Algiers',
+  tanger: 'Tangier',
+  mascate: 'Muscat',
+  londres: 'London',
+}
 
 export const dynamicParams = false
 
@@ -102,8 +118,30 @@ export default async function VillePage({ params }: Props) {
       </section>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-12 py-8">
+        <RamadanSection ville={ville} apiCityName={API_CITY_NAME[slug] ?? ville.nom} />
+
+        <PrayerTimesWidget
+          ville={API_CITY_NAME[slug] ?? ville.nom}
+          pays={ville.pays}
+          countryCode={ville.codeISO ?? 'MA'}
+        />
+
+        <QiblaCalculator />
+
         <CityTabs ville={ville} />
+
+        <ShareButtons
+          titre={`Guide halal ${ville.nom} — VoyagesHalal`}
+          url={`https://www.voyageshalal.fr/villes/${slug}`}
+          description={
+            typeof ville.description === 'string'
+              ? ville.description
+              : ville.description?.court ?? ''
+          }
+        />
       </div>
+
+      <DestinationFaqSchema ville={ville} />
     </main>
   )
 }

@@ -79,3 +79,135 @@
 .htc-details { padding: 12px 16px; display: flex; flex-direction: column; gap: 8px; }
 .htc-item { display: flex; align-items: center; gap: 8px; color: #374151; }
 .htc-points { margin-left: auto; font-weight: 700; color: #166534; }
+
+/* ===== Prayer Times Widget ===== */
+.prayer-widget {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  border-radius: 16px;
+  padding: 20px;
+  color: white;
+  margin: 24px 0;
+}
+.prayer-widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+.prayer-widget-header h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.prayer-date { font-size: 11px; opacity: 0.6; text-transform: capitalize; }
+.prayer-next-badge {
+  background: rgba(74, 222, 128, 0.2);
+  border: 1px solid #4ade80;
+  border-radius: 10px;
+  padding: 8px 12px;
+  text-align: center;
+}
+.prayer-next-label { font-size: 9px; color: #86efac; text-transform: uppercase; }
+.prayer-next-name { font-size: 14px; font-weight: 800; color: #4ade80; }
+.prayer-next-countdown { font-size: 11px; color: #86efac; }
+.prayer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+.prayer-card {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 10px;
+  padding: 10px 6px;
+  text-align: center;
+  transition: all 0.2s;
+}
+.prayer-card-next {
+  background: rgba(74,222,128,0.2);
+  border-color: #4ade80;
+  box-shadow: 0 0 15px rgba(74,222,128,0.3);
+}
+.prayer-emoji { font-size: 18px; margin-bottom: 4px; }
+.prayer-name { font-size: 11px; font-weight: 700; }
+.prayer-name-ar { font-size: 10px; opacity: 0.6; direction: rtl; }
+.prayer-time { font-size: 16px; font-weight: 900; color: #4ade80; margin-top: 4px; }
+.prayer-next-indicator { font-size: 9px; color: #4ade80; margin-top: 3px; }
+.prayer-credit { font-size: 9px; opacity: 0.4; text-align: center; margin-top: 12px; }
+@media (max-width: 640px) {
+  .prayer-grid { grid-template-columns: repeat(3, 1fr); }
+  .prayer-widget-header { flex-direction: column; gap: 12px; }
+}
+
+/* ===== Qibla Calculator ===== */
+.qibla-container { text-align: center; padding: 24px; background: #f9fafb; border-radius: 16px; margin: 24px 0; }
+.qibla-container h2 { font-size: 20px; font-weight: 800; color: #1a3a2a; }
+.qibla-container > p { color: #6b7280; font-size: 14px; margin-top: 4px; }
+.btn-qibla-primary { background: #166534; color: white; border: none; padding: 14px 28px; border-radius: 10px; font-size: 16px; font-weight: 700; cursor: pointer; margin: 16px 0; }
+.btn-qibla-primary:disabled { opacity: 0.6; cursor: not-allowed; }
+.btn-retry { background: transparent; border: 1px solid #dc2626; color: #dc2626; padding: 8px 16px; border-radius: 8px; cursor: pointer; margin-top: 8px; }
+.qibla-error { color: #dc2626; background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 12px; margin: 12px 0; }
+.qibla-result { display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 16px; }
+.compass-rose { position: relative; width: 160px; height: 160px; border: 3px solid #e5e7eb; border-radius: 50%; background: white; }
+.compass-n, .compass-s, .compass-e, .compass-w { position: absolute; font-weight: 800; font-size: 14px; color: #374151; }
+.compass-n { top: 4px; left: 50%; transform: translateX(-50%); color: #dc2626; }
+.compass-s { bottom: 4px; left: 50%; transform: translateX(-50%); }
+.compass-e { right: 8px; top: 50%; transform: translateY(-50%); }
+.compass-w { left: 8px; top: 50%; transform: translateY(-50%); }
+.qibla-arrow { position: absolute; top: 50%; left: 50%; font-size: 28px; transform-origin: center bottom; transition: transform 0.8s ease; margin-left: -14px; margin-top: -28px; }
+.qibla-angle { font-size: 48px; font-weight: 900; color: #166534; }
+.qibla-label { font-size: 13px; color: #6b7280; }
+.qibla-instruction { font-size: 14px; color: #374151; line-height: 1.6; max-width: 300px; }
+.btn-recalculate { background: transparent; border: 1px solid #d1d5db; color: #6b7280; padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 13px; }
+.qibla-info-section { margin-top: 32px; padding: 20px; background: white; border-radius: 12px; text-align: left; }
+.qibla-info-section h2 { font-size: 18px; font-weight: 700; color: #1a3a2a; margin-bottom: 8px; }
+.qibla-info-section p { font-size: 14px; color: #374151; line-height: 1.7; }
+
+/* ===== Ramadan Mode ===== */
+.ramadan-banner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 20px;
+  color: white;
+  background: linear-gradient(135deg, #4338ca, #6d28d9, #7c3aed);
+}
+.ramadan-banner.ramadan-countdown { background: linear-gradient(135deg, #1e293b, #334155); }
+.ramadan-crescent { font-size: 28px; }
+.ramadan-content { display: flex; flex-direction: column; flex: 1; }
+.ramadan-content strong { font-size: 14px; font-weight: 800; }
+.ramadan-content span { font-size: 12px; opacity: 0.85; }
+.ramadan-days {
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.ramadan-section {
+  background: linear-gradient(135deg, #faf5ff, #f5f3ff);
+  border: 1px solid #ddd6fe;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px 0;
+}
+.ramadan-section h2 { font-size: 22px; font-weight: 800; color: #6d28d9; margin-bottom: 16px; }
+.ramadan-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.ramadan-card { background: white; border: 1px solid #e9d5ff; border-radius: 12px; padding: 16px; }
+.ramadan-card h3 { font-size: 15px; font-weight: 700; color: #1a3a2a; margin-bottom: 4px; }
+.ramadan-card > p { font-size: 12px; color: #6b7280; margin-bottom: 12px; }
+.ramadan-restaurants { display: flex; flex-direction: column; gap: 6px; }
+.resto-mini { font-size: 13px; color: #374151; padding: 6px 10px; background: #faf8f4; border-radius: 8px; }
+@media (max-width: 640px) {
+  .ramadan-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== Share Buttons ===== */
+.share-buttons { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 28px 0; }
+.share-label { font-size: 13px; font-weight: 600; color: #6b7280; }
+.share-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 14px; border-radius: 10px; font-size: 13px; font-weight: 700;
+  cursor: pointer; border: none; text-decoration: none; transition: opacity 0.2s;
+}
+.share-btn:hover { opacity: 0.88; }
+.share-wa { background: #25d366; color: white; }
+.share-fb { background: #1877f2; color: white; }
+.share-copy { background: #f3f4f6; color: #374151; border: 1px solid #e5e7eb; }
