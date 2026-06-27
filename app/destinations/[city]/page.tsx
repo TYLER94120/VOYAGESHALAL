@@ -7,6 +7,8 @@ import { buildMetadata, buildDestinationSchema, buildBreadcrumbSchema } from '@/
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 
+export const dynamic = 'force-static'
+
 interface Props {
   params: Promise<{ city: string }>
   searchParams: Promise<{ tab?: string }>
@@ -56,7 +58,6 @@ export default async function DestinationPage({ params, searchParams }: Props) {
       <JsonLd data={breadcrumbSchema} />
 
       <main style={{ backgroundColor: '#faf8f4' }} className="min-h-screen">
-        {/* Breadcrumb above hero */}
         <div className="bg-white border-b border-gray-100 px-6 sm:px-12 py-3">
           <nav className="flex items-center gap-2 text-xs text-gray-400 max-w-6xl mx-auto">
             <Link href="/" className="hover:text-[#1a3a2a]">Accueil</Link>
@@ -67,7 +68,6 @@ export default async function DestinationPage({ params, searchParams }: Props) {
           </nav>
         </div>
 
-        {/* Full-width hero photo */}
         <div className="relative h-[60vh] min-h-[400px] overflow-hidden">
           <Image
             src={destination.coverImage}
@@ -94,7 +94,6 @@ export default async function DestinationPage({ params, searchParams }: Props) {
           </div>
         </div>
 
-        {/* Stats bar */}
         <div className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-6 sm:px-12 py-4 flex flex-wrap gap-8 text-sm">
             <div className="text-center">
@@ -119,11 +118,8 @@ export default async function DestinationPage({ params, searchParams }: Props) {
           </div>
         </div>
 
-        {/* Content + Sidebar */}
         <div className="max-w-6xl mx-auto px-4 sm:px-8 py-10 lg:grid lg:grid-cols-3 lg:gap-12">
-          {/* Main */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Tabs */}
             <div className="flex gap-1 bg-white rounded-2xl p-1 border border-gray-100">
               {([
                 { key: 'restaurants', label: '🍽 Restaurants', count: destination.restaurants.length },
@@ -141,7 +137,6 @@ export default async function DestinationPage({ params, searchParams }: Props) {
               ))}
             </div>
 
-            {/* Restaurants */}
             {activeTab === 'restaurants' && (
               <div className="space-y-3">
                 {destination.restaurants.map((r, i) => (
@@ -154,9 +149,7 @@ export default async function DestinationPage({ params, searchParams }: Props) {
                         <div className="flex items-start justify-between gap-3">
                           <div>
                             <span className="font-semibold text-gray-900">{r.name}</span>
-                            <span style={{ backgroundColor: '#f0faf5', color: '#1a6b3c' }} className="ml-2 text-xs font-medium px-2 py-0.5 rounded-full">
-                              Halal ✓
-                            </span>
+                            <span style={{ backgroundColor: '#f0faf5', color: '#1a6b3c' }} className="ml-2 text-xs font-medium px-2 py-0.5 rounded-full">Halal ✓</span>
                           </div>
                           <div className="shrink-0 flex items-center gap-1">
                             <span style={{ color: '#c9a870' }}>★</span>
@@ -172,7 +165,6 @@ export default async function DestinationPage({ params, searchParams }: Props) {
               </div>
             )}
 
-            {/* Mosquées */}
             {activeTab === 'mosques' && (
               <div className="space-y-3">
                 {destination.mosques.map((m, i) => (
@@ -185,9 +177,7 @@ export default async function DestinationPage({ params, searchParams }: Props) {
                         <div className="flex items-start justify-between gap-3">
                           <div>
                             <span className="font-semibold text-gray-900">{m.name}</span>
-                            <span className="ml-2 bg-blue-50 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">
-                              Mosquée
-                            </span>
+                            <span className="ml-2 bg-blue-50 text-blue-700 text-xs font-medium px-2 py-0.5 rounded-full">Mosquée</span>
                           </div>
                           <div className="shrink-0 flex items-center gap-1">
                             <span style={{ color: '#c9a870' }}>★</span>
@@ -203,7 +193,6 @@ export default async function DestinationPage({ params, searchParams }: Props) {
               </div>
             )}
 
-            {/* Activités */}
             {activeTab === 'activities' && (
               <div className="space-y-3">
                 {destination.activities.map((a, i) => (
@@ -213,9 +202,7 @@ export default async function DestinationPage({ params, searchParams }: Props) {
                         <span className="font-semibold text-gray-900">{a.name}</span>
                         <p className="text-sm text-gray-600 mt-2 leading-relaxed">{a.description}</p>
                       </div>
-                      <span style={{ backgroundColor: '#f5f0e8', color: '#1a3a2a' }} className="shrink-0 text-xs font-medium px-2 py-1 rounded-full whitespace-nowrap">
-                        ⏱ {a.duration}
-                      </span>
+                      <span style={{ backgroundColor: '#f5f0e8', color: '#1a3a2a' }} className="shrink-0 text-xs font-medium px-2 py-1 rounded-full whitespace-nowrap">⏱ {a.duration}</span>
                     </div>
                   </div>
                 ))}
@@ -223,26 +210,13 @@ export default async function DestinationPage({ params, searchParams }: Props) {
             )}
           </div>
 
-          {/* Sidebar */}
           <aside className="mt-8 lg:mt-0 space-y-5">
-            {/* Infos pratiques */}
             <div style={{ backgroundColor: '#1a3a2a' }} className="rounded-2xl p-6">
-              <h2 style={{ color: '#c9a870' }} className="font-bold text-xs uppercase tracking-[0.15em] mb-5">
-                Infos pratiques
-              </h2>
+              <h2 style={{ color: '#c9a870' }} className="font-bold text-xs uppercase tracking-[0.15em] mb-5">Infos pratiques</h2>
               <dl className="space-y-4 text-sm">
-                <div>
-                  <dt className="text-white/40 text-xs mb-0.5">Pays</dt>
-                  <dd className="text-white font-medium">{destination.country}</dd>
-                </div>
-                <div>
-                  <dt className="text-white/40 text-xs mb-0.5">Meilleure période</dt>
-                  <dd className="text-white">{destination.bestTime}</dd>
-                </div>
-                <div>
-                  <dt className="text-white/40 text-xs mb-0.5">Population</dt>
-                  <dd className="text-white">{destination.population}</dd>
-                </div>
+                <div><dt className="text-white/40 text-xs mb-0.5">Pays</dt><dd className="text-white font-medium">{destination.country}</dd></div>
+                <div><dt className="text-white/40 text-xs mb-0.5">Meilleure période</dt><dd className="text-white">{destination.bestTime}</dd></div>
+                <div><dt className="text-white/40 text-xs mb-0.5">Population</dt><dd className="text-white">{destination.population}</dd></div>
                 <div>
                   <dt className="text-white/40 text-xs mb-0.5">Score halal</dt>
                   <dd className="flex gap-0.5 mt-1">
@@ -254,12 +228,9 @@ export default async function DestinationPage({ params, searchParams }: Props) {
               </dl>
             </div>
 
-            {/* Bon à savoir */}
             {destination.tips.length > 0 && (
               <div style={{ backgroundColor: '#f5f0e8' }} className="rounded-2xl p-6 border border-[#e8d5a3]/50">
-                <h2 style={{ color: '#1a3a2a' }} className="font-bold text-xs uppercase tracking-[0.15em] mb-4">
-                  💡 Bon à savoir
-                </h2>
+                <h2 style={{ color: '#1a3a2a' }} className="font-bold text-xs uppercase tracking-[0.15em] mb-4">💡 Bon à savoir</h2>
                 <ul className="space-y-3">
                   {destination.tips.map((tip, i) => (
                     <li key={i} className="flex gap-2.5 text-sm text-gray-600">
@@ -271,35 +242,26 @@ export default async function DestinationPage({ params, searchParams }: Props) {
               </div>
             )}
 
-            {/* Tags */}
             {destination.tags && destination.tags.length > 0 && (
               <div className="bg-white rounded-2xl p-5 border border-gray-100">
                 <h2 className="font-bold text-gray-500 text-xs uppercase tracking-[0.15em] mb-3">Tags</h2>
                 <div className="flex flex-wrap gap-2">
                   {destination.tags.map((tag) => (
-                    <span key={tag} style={{ backgroundColor: '#f5f0e8', color: '#1a3a2a' }} className="text-xs font-medium px-3 py-1.5 rounded-full">
-                      {tag}
-                    </span>
+                    <span key={tag} style={{ backgroundColor: '#f5f0e8', color: '#1a3a2a' }} className="text-xs font-medium px-3 py-1.5 rounded-full">{tag}</span>
                   ))}
                 </div>
               </div>
             )}
 
-            {/* Articles liés — maillage interne topic cluster */}
             {destination.relatedArticles && destination.relatedArticles.length > 0 && (
               <div className="bg-white rounded-2xl p-5 border border-gray-100">
                 <h2 className="font-bold text-gray-500 text-xs uppercase tracking-[0.15em] mb-3">Articles liés</h2>
                 <ul className="space-y-3">
                   {destination.relatedArticles.map((article) => (
                     <li key={article.slug}>
-                      <Link
-                        href={`/${article.type === 'blog' ? 'blog' : 'guides'}/${article.slug}`}
-                        className="flex items-start gap-2 group"
-                      >
+                      <Link href={`/${article.type === 'blog' ? 'blog' : 'guides'}/${article.slug}`} className="flex items-start gap-2 group">
                         <span style={{ color: '#c9a870' }} className="shrink-0 mt-0.5 font-bold text-sm">→</span>
-                        <span className="text-sm text-gray-700 group-hover:text-[#1a3a2a] transition-colors leading-snug">
-                          {article.title}
-                        </span>
+                        <span className="text-sm text-gray-700 group-hover:text-[#1a3a2a] transition-colors leading-snug">{article.title}</span>
                       </Link>
                     </li>
                   ))}
@@ -307,7 +269,6 @@ export default async function DestinationPage({ params, searchParams }: Props) {
               </div>
             )}
 
-            {/* Email CTA compact */}
             <EmailCapture
               title={`Guide halal ${destination.city} gratuit`}
               subtitle="Restaurants, mosquées, conseils locaux — dans votre boîte mail."
@@ -315,7 +276,6 @@ export default async function DestinationPage({ params, searchParams }: Props) {
               source={`destination-${destination.slug}`}
             />
 
-            {/* Recherche CTA */}
             <Link
               href={`/search?q=${encodeURIComponent(destination.city)}`}
               style={{ backgroundColor: '#c9a870' }}

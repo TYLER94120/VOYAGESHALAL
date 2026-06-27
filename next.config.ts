@@ -9,10 +9,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  experimental: {
-    outputFileTracingIncludes: {
-      '/villes/[slug]': ['./data/villes/**/*.json'],
-    },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.voyageshalal.fr' }],
+        destination: 'https://voyageshalal.fr/:path*',
+        permanent: true,
+      },
+    ]
   },
 }
 
