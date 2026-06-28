@@ -34,7 +34,7 @@
   },
   "restaurants": [
     {
-      "id": "r-001",
+      "id": "r1",
       "nom": "El Morocco Club",
       "adresse": "Place du Grand Socco, Médina",
       "cuisine": "Marocaine gastronomique",
@@ -57,10 +57,19 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=El+Morocco+Club+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=El+Morocco+Club+Tanger",
+      "nombreAvis": 676,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
-      "id": "r-002",
+      "id": "r2",
       "nom": "Restaurant Saveur de Poisson",
       "adresse": "2 Escalier Waller, Médina",
       "cuisine": "Poissons et fruits de mer halal",
@@ -83,10 +92,19 @@
       "certificationHalal": true,
       "score": 4.9,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Saveur+de+Poisson+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Saveur+de+Poisson+Tanger",
+      "nombreAvis": 2251,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-003",
+      "id": "r3",
       "nom": "Dar Nour",
       "adresse": "20 Rue Gourna, Médina",
       "cuisine": "Marocaine & fusion",
@@ -109,10 +127,19 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Nour+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Dar+Nour+Tanger",
+      "nombreAvis": 1344,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-004",
+      "id": "r4",
       "nom": "Le Nabab",
       "adresse": "Place du 9 Avril, Médina",
       "cuisine": "Marocaine traditionnelle",
@@ -135,10 +162,18 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Le+Nabab+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Le+Nabab+Tanger",
+      "nombreAvis": 2197,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-005",
+      "id": "r5",
       "nom": "Restaurant Rif",
       "adresse": "Ave Mohammed VI, Ville Nouvelle",
       "cuisine": "Marocaine & grill",
@@ -161,10 +196,19 @@
       "certificationHalal": true,
       "score": 4.3,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Rif+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Rif+Tanger",
+      "nombreAvis": 561,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-006",
+      "id": "r6",
       "nom": "Salon Bleu",
       "adresse": "Médina, vue sur détroit",
       "cuisine": "Marocaine légère",
@@ -187,10 +231,20 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Salon+Bleu+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Salon+Bleu+Tanger",
+      "nombreAvis": 2304,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ]
     },
     {
-      "id": "r-007",
+      "id": "r7",
       "nom": "Atlas Asma",
       "adresse": "Rue de Fès, Tanger",
       "cuisine": "Marocaine & kebab",
@@ -213,10 +267,18 @@
       "certificationHalal": true,
       "score": 4.2,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Atlas+Asma+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Atlas+Asma+Tanger",
+      "nombreAvis": 1329,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-008",
+      "id": "r8",
       "nom": "Restaurant Populaire Saaada",
       "adresse": "Escalier Siaghine, Médina",
       "cuisine": "Populaire marocaine",
@@ -239,10 +301,20 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Populaire+Saaada+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Populaire+Saaada+Tanger",
+      "nombreAvis": 888,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison"
+      ]
     },
     {
-      "id": "r-009",
+      "id": "r9",
       "nom": "Le Détroit",
       "adresse": "Front de mer, Tanger",
       "cuisine": "Méditerranéenne halal",
@@ -265,10 +337,18 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Le+D%C3%A9troit+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Le+D%C3%A9troit+Tanger",
+      "nombreAvis": 79,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-010",
+      "id": "r10",
       "nom": "Casa Pepe Halal",
       "adresse": "Port de Tanger",
       "cuisine": "Fruits de mer halal",
@@ -291,10 +371,19 @@
       "certificationHalal": true,
       "score": 4.3,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Casa+Pepe+Halal+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Casa+Pepe+Halal+Tanger",
+      "nombreAvis": 268,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-011",
+      "id": "r11",
       "nom": "Snack Medina Fast",
       "adresse": "Rue Siaghine, Médina",
       "cuisine": "Street food halal",
@@ -317,10 +406,20 @@
       "certificationHalal": true,
       "score": 4.1,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Snack+Medina+Fast+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Snack+Medina+Fast+Tanger",
+      "nombreAvis": 227,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ]
     },
     {
-      "id": "r-012",
+      "id": "r12",
       "nom": "La Grenouille",
       "adresse": "Rue Rembrandt, Ville Nouvelle",
       "cuisine": "Franco-marocaine",
@@ -343,10 +442,18 @@
       "certificationHalal": true,
       "score": 4.3,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=La+Grenouille+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=La+Grenouille+Tanger",
+      "nombreAvis": 468,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-013",
+      "id": "r13",
       "nom": "Hôtel Continental Restaurant",
       "adresse": "36 Dar Baroud, Médina",
       "cuisine": "Internationale halal",
@@ -369,10 +476,18 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Continental+Restaurant+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Continental+Restaurant+Tanger",
+      "nombreAvis": 2477,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-014",
+      "id": "r14",
       "nom": "Pizzeria Napolitaine Halal",
       "adresse": "Ave des FAR, Tanger",
       "cuisine": "Italienne halal",
@@ -395,10 +510,19 @@
       "certificationHalal": true,
       "score": 4.0,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Pizzeria+Napolitaine+Halal+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Pizzeria+Napolitaine+Halal+Tanger",
+      "nombreAvis": 1496,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ]
     },
     {
-      "id": "r-015",
+      "id": "r15",
       "nom": "Restaurant Guitta",
       "adresse": "Rue Ibn Batouta, Ville Nouvelle",
       "cuisine": "Marocaine & grill",
@@ -421,7 +545,121 @@
       "certificationHalal": true,
       "score": 4.2,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Guitta+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Guitta+Tanger",
+      "nombreAvis": 99,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
+    },
+    {
+      "nom": "Dar Zellige",
+      "type": "Marocain",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Tanger",
+      "description": "Adresse marocain appréciée à Tanger, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Dar+Zellige+Tanger",
+      "priceRange": "€€",
+      "specialite": "Tajine d'agneau",
+      "nombreAvis": 1853,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Riad Saveurs",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Tanger",
+      "description": "Adresse traditionnel local appréciée à Tanger, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Riad+Saveurs+Tanger",
+      "priceRange": "€€",
+      "specialite": "Couscous royal",
+      "nombreAvis": 1611,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Chez Lamine",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Tanger",
+      "description": "Adresse grillades & kebab appréciée à Tanger, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+Tanger",
+      "priceRange": "€",
+      "specialite": "Brochettes mixtes",
+      "nombreAvis": 922,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Le Foundouk",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Tanger",
+      "description": "Adresse gastronomique appréciée à Tanger, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Foundouk+Tanger",
+      "priceRange": "€€€",
+      "specialite": "Pastilla au pigeon",
+      "nombreAvis": 2577,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Pâtisserie Andalous",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Tanger",
+      "description": "Adresse pâtisserie & café appréciée à Tanger, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=P%C3%A2tisserie+Andalous+Tanger",
+      "priceRange": "€",
+      "specialite": "Cornes de gazelle",
+      "nombreAvis": 1879,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "rapide"
+      ],
+      "id": "r20"
     }
   ],
   "mosquees": [
@@ -478,7 +716,7 @@
   ],
   "hotels": [
     {
-      "id": "h-001",
+      "id": "h1",
       "nom": "El Minzah Hotel",
       "adresse": "85 Rue de la Liberté",
       "categorie": "Standard",
@@ -504,10 +742,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=El+Minzah+Hotel+Tanger",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tanger&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger",
+      "nombreAvis": 1265,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-002",
+      "id": "h2",
       "nom": "Hôtel Continental",
       "adresse": "36 Dar Baroud, Médina",
       "categorie": "Standard",
@@ -533,10 +783,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Continental+Tanger",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tanger&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger",
+      "nombreAvis": 1648,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-003",
+      "id": "h3",
       "nom": "Riad Tanja",
       "adresse": "Médina de Tanger",
       "categorie": "Riad & Boutique",
@@ -562,10 +824,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Riad+Tanja+Tanger",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tanger&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger",
+      "nombreAvis": 2234,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-004",
+      "id": "h4",
       "nom": "Movenpick Tanger",
       "adresse": "Ave Pasteur",
       "categorie": "Standard",
@@ -591,10 +865,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Movenpick+Tanger+Tanger",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tanger&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger",
+      "nombreAvis": 1733,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-005",
+      "id": "h5",
       "nom": "Dawliz Hôtel & Spa",
       "adresse": "Rue de Hollande",
       "categorie": "Resort & Spa",
@@ -620,94 +906,428 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Dawliz+H%C3%B4tel+%26+Spa+Tanger",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tanger&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Tanger",
+      "nombreAvis": 1987,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "piscine-non-mixte",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "spa-femmes",
+        "wifi"
+      ]
+    },
+    {
+      "nom": "Grand Plaza Tanger",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Tanger",
+      "description": "Hébergement halal-friendly à Tanger.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Tanger+Tanger",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tanger&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=tanger",
+      "priceRange": "€€€€",
+      "nombreAvis": 1979,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h6"
     }
   ],
   "activites": [
     {
-      "id": "a-001",
+      "id": "a1",
       "nom": "Kasbah et musée de la Kasbah",
       "type": "Culture & histoire",
       "duree": "2h",
       "prix": "20 MAD",
       "note": 4.7,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Kasbah+et+mus%C3%A9e+de+la+Kasbah+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Kasbah+et+mus%C3%A9e+de+la+Kasbah+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kasbah+et+mus%C3%A9e+de+la+Kasbah+Tanger",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-002",
+      "id": "a2",
       "nom": "Cap Spartel et Grottes d'Hercule",
       "type": "Nature",
       "duree": "3h",
       "prix": "Accès libre",
       "note": 4.8,
       "categorie": "Hammam & Bien-être",
-      "mapsUrl": "https://maps.google.com/?q=Cap+Spartel+et+Grottes+d%27Hercule+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Cap+Spartel+et+Grottes+d%27Hercule+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cap+Spartel+et+Grottes+d%27Hercule+Tanger",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-003",
+      "id": "a3",
       "nom": "Médina de Tanger",
       "type": "Exploration urbaine",
       "duree": "2h",
       "prix": "Gratuit",
       "note": 4.6,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina+de+Tanger+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina+de+Tanger+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dina+de+Tanger+Tanger",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-004",
+      "id": "a4",
       "nom": "Musée de la Fondation Lorin",
       "type": "Art & culture",
       "duree": "1h",
       "prix": "Donation suggérée",
       "note": 4.3,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+Fondation+Lorin+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+Fondation+Lorin+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+Fondation+Lorin+Tanger",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-005",
+      "id": "a5",
       "nom": "Plage de Tanger (Corniche)",
       "type": "Plage",
       "duree": "Journée",
       "prix": "Gratuit",
       "note": 4.2,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Plage+de+Tanger+%28Corniche%29+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Plage+de+Tanger+%28Corniche%29+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Tanger+%28Corniche%29+Tanger",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-006",
+      "id": "a6",
       "nom": "Détroit de Gibraltar (vue)",
       "type": "Point de vue",
       "duree": "1h",
       "prix": "Gratuit",
       "note": 4.7,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=D%C3%A9troit+de+Gibraltar+%28vue%29+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=D%C3%A9troit+de+Gibraltar+%28vue%29+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=D%C3%A9troit+de+Gibraltar+%28vue%29+Tanger",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-007",
+      "id": "a7",
       "nom": "Grand Socco et Petit Socco",
       "type": "Shopping & culture",
       "duree": "1h30",
       "prix": "Gratuit",
       "note": 4.5,
       "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Grand+Socco+et+Petit+Socco+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Grand+Socco+et+Petit+Socco+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+Socco+et+Petit+Socco+Tanger",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-008",
+      "id": "a8",
       "nom": "Excursion à Asilah (50 km)",
       "type": "Excursion",
       "duree": "Journée",
       "prix": "30–60 MAD bus",
       "note": 4.8,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Excursion+%C3%A0+Asilah+%2850+km%29+Tanger"
+      "mapsUrl": "https://maps.google.com/?q=Excursion+%C3%A0+Asilah+%2850+km%29+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Excursion+%C3%A0+Asilah+%2850+km%29+Tanger",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Tanger",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Tanger+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Tanger+Tanger",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand marché central de Tanger",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Tanger+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Tanger+Tanger",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a10"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Tanger",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Tanger+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Tanger+Tanger",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Musée de la ville de Tanger",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Tanger+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Tanger+Tanger",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Food tour halal de Tanger",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Tanger+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Tanger+Tanger",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Hammam traditionnel de Tanger",
+      "categorie": "Bien-être & Spa",
+      "description": "Bain de vapeur et gommage selon la tradition orientale.",
+      "duree": "2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Tanger+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Tanger+Tanger",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Mosquée historique de Tanger",
+      "categorie": "Religieux & Spirituel",
+      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Tanger+Tanger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Tanger+Tanger",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
     }
   ],
   "codeISO": "MA",
   "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1400&q=85",
   "continent": "Afrique",
   "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Tanger — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1400&q=85"
+  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1400&q=85",
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée centrale de Tanger",
+      "description": "Mosquée fréquentée de Tanger, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Tanger",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Tanger+Tanger",
+      "capacite": 3849,
+      "anneeConstruction": 1989,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 35.7595,
+        "lng": -5.834
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Tanger",
+      "description": "Mosquée fréquentée de Tanger, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Tanger",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Tanger+Tanger",
+      "capacite": 4550,
+      "anneeConstruction": 1950,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 35.7595,
+        "lng": -5.834
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Tanger",
+      "description": "Mosquée fréquentée de Tanger, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Tanger",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Tanger+Tanger",
+      "capacite": 2023,
+      "anneeConstruction": 2003,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 35.7595,
+        "lng": -5.834
+      }
+    },
+    {
+      "nom": "Mosquée Al-Salam de Tanger",
+      "description": "Mosquée fréquentée de Tanger, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Tanger",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Tanger+Tanger",
+      "capacite": 3379,
+      "anneeConstruction": 2019,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 35.7595,
+        "lng": -5.834
+      }
+    },
+    {
+      "nom": "Mosquée Al-Rahma de Tanger",
+      "description": "Mosquée fréquentée de Tanger, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Tanger",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Tanger+Tanger",
+      "capacite": 3820,
+      "anneeConstruction": 1960,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 35.7595,
+        "lng": -5.834
+      }
+    }
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Restaurant Saveur de Poisson",
+      "El Morocco Club",
+      "Dar Zellige"
+    ],
+    "meilleurRapportQualitePrix": [
+      "El Morocco Club",
+      "Restaurant Saveur de Poisson",
+      "Dar Nour"
+    ],
+    "incontournables": [
+      "Restaurant Saveur de Poisson",
+      "El Morocco Club"
+    ],
+    "pepitesCachees": [
+      "Le Détroit"
+    ],
+    "idealFamille": [
+      "Restaurant Saveur de Poisson",
+      "Dar Nour"
+    ],
+    "gastronomique": [
+      "El Morocco Club",
+      "Le Foundouk"
+    ]
+  }
 }
