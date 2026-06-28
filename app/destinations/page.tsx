@@ -48,6 +48,8 @@ function getAllVilles(): VilleCard[] {
           image: v.image ?? v.image_hero ?? FALLBACK_IMG,
           continent: v.continent ?? null,
           tags: Array.isArray(v.tags) ? v.tags : [],
+          halalScore: v.halalScore ?? (v.score_halal ? Math.round(v.score_halal * 2 * 10) / 10 : null),
+          codeISO: v.codeISO ?? '',
         } as VilleCard
       } catch {
         return null

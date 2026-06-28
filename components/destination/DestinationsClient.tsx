@@ -15,6 +15,8 @@ export interface VilleCard {
   image?: string
   continent?: string | null
   tags?: string[]
+  halalScore?: number | null
+  codeISO?: string
 }
 
 // Types de voyage (filtre secondaire sur les tags des villes)
@@ -204,46 +206,28 @@ export default function DestinationsClient({ villes }: Props) {
         <div>
           <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {filtered.map((v) => {
-              const region = regionOf(v)
+              const score10 = v.halalScore ?? (v.scoreHalal != null ? v.scoreHalal * 2 : null)
               return (
-                <div key={v.slug} className="flex flex-col">
-                  <Link href={`/destinations/${v.slug}`} className="arch-card group" style={{ aspectRatio: '3/4' }}>
+                <Link key={v.slug} href={`/destinations/${v.slug}`} className="ville-card group">
+                  <div className="ville-card-img">
                     <Image src={v.image || FALLBACK_IMG} alt={`Voyage halal ${v.nom}`} fill sizes="(max-width: 640px) 50vw, 33vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
-                    <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(11,26,15,0.82) 0%, rgba(11,26,15,0.15) 45%, transparent 70%)' }} />
-                    {v.scoreHalal != null && (
-                      <div className="absolute top-3 right-3">
-                        <span className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-bold bg-[#0b1a0f]/80 text-[#c9a84c] backdrop-blur-sm">
-                          <span style={{ color: '#c9a84c' }}>✦</span> {v.scoreHalal}/5
-                        </span>
-                      </div>
+                    <div className="ville-card-grad" />
+                    {score10 != null && (
+                      <span className="ville-card-score">✦ {score10}</span>
                     )}
-                    {/* Badge région coloré */}
-                    <div className="absolute top-3 left-3">
-                      <span className="px-2.5 py-1 rounded-full text-[10px] font-bold uppercase tracking-wide text-white" style={{ background: REGION_COLOR[region] ?? '#1b4332' }}>
-                        {region}
-                      </span>
-                    </div>
-                    <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
-                      <h3 className="text-white font-bold text-xl sm:text-2xl leading-tight flex items-center gap-2" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-                        <span className="text-lg">{COUNTRY_EMOJI[v.pays] ?? '🌍'}</span>
-                        {v.nom}
-                      </h3>
-                      {v.subtitle && <p className="text-white/70 text-[10px] sm:text-xs uppercase tracking-wide mt-1 leading-snug">{v.subtitle}</p>}
-                      <div className="mt-2 flex flex-wrap gap-1">
-                        <span className="px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wide bg-[#1b4332] text-[#e8d5a3]">Halal vérifié</span>
-                        <span className="px-2 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-wide bg-white/15 text-white/80">Sans alcool</span>
-                      </div>
-                    </div>
-                  </Link>
-                  <div className="flex items-center justify-between mt-3 px-1">
-                    <div className="flex gap-0.5">
-                      {Array.from({ length: 5 }).map((_, i) => (
-                        <span key={i} style={{ color: i < (v.scoreHalal ?? 0) ? '#c9a84c' : '#d6cdba' }} className="text-sm">★</span>
-                      ))}
-                    </div>
-                    <Link href={`/destinations/${v.slug}`} className="text-xs font-semibold text-gray-500 hover:text-[#1b4332]">Guide complet →</Link>
                   </div>
-                </div>
+                  <div className="ville-card-body">
+                    <div className="flex items-center gap-2">
+                      <span className="ville-card-iso">{v.codeISO || (COUNTRY_EMOJI[v.pays] ?? '🌍')}</span>
+                      <h3 className="ville-card-name" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>{v.nom}</h3>
+                    </div>
+                    <p className="ville-card-pays">{v.pays}</p>
+                    <div className="mt-2 flex flex-wrap gap-1.5">
+                      <span className="ville-card-tag">✓ Halal vérifié</span>
+                      <span className="ville-card-tag-2">Sans alcool</span>
+                    </div>
+                  </div>
+                </Link>
               )
             })}
           </div>
