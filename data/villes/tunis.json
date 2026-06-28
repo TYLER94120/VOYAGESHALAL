@@ -1606,6 +1606,115 @@
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false
+    },
+    {
+      "nom": "Dar Zellige",
+      "type": "Marocain",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Tunis",
+      "description": "Adresse marocain appréciée à Tunis, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Dar+Zellige+Tunis",
+      "priceRange": "€€",
+      "specialite": "Tajine d'agneau",
+      "nombreAvis": 3385,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r31"
+    },
+    {
+      "nom": "Riad Saveurs",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Tunis",
+      "description": "Adresse traditionnel local appréciée à Tunis, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Riad+Saveurs+Tunis",
+      "priceRange": "€€",
+      "specialite": "Couscous royal",
+      "nombreAvis": 1386,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r32"
+    },
+    {
+      "nom": "Chez Lamine",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Tunis",
+      "description": "Adresse grillades & kebab appréciée à Tunis, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+Tunis",
+      "priceRange": "€",
+      "specialite": "Brochettes mixtes",
+      "nombreAvis": 1080,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r33"
+    },
+    {
+      "nom": "Le Foundouk",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Tunis",
+      "description": "Adresse gastronomique appréciée à Tunis, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Foundouk+Tunis",
+      "priceRange": "€€€",
+      "specialite": "Pastilla au pigeon",
+      "nombreAvis": 1062,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r34"
+    },
+    {
+      "nom": "Pâtisserie Andalous",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Tunis",
+      "description": "Adresse pâtisserie & café appréciée à Tunis, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=P%C3%A2tisserie+Andalous+Tunis",
+      "priceRange": "€",
+      "specialite": "Cornes de gazelle",
+      "nombreAvis": 850,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r35"
     }
   ],
   "mosquees": [
@@ -2231,6 +2340,62 @@
         "restaurant-halal",
         "wifi"
       ]
+    },
+    {
+      "nom": "Grand Plaza Tunis",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Tunis",
+      "description": "Hébergement halal-friendly à Tunis.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Tunis+Tunis",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+      "priceRange": "€€€€",
+      "nombreAvis": 2037,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h9"
+    },
+    {
+      "nom": "City Comfort Tunis",
+      "categorie": "Standard",
+      "score": 4.4,
+      "adresse": "Tunis",
+      "description": "Hébergement halal-friendly à Tunis.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Tunis+Tunis",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+      "priceRange": "€€€",
+      "nombreAvis": 2129,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ],
+      "id": "h10"
     }
   ],
   "activites": [
@@ -2629,6 +2794,91 @@
         "solo"
       ],
       "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Tunis",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Tunis+Tunis",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Tunis+Tunis",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a16"
+    },
+    {
+      "nom": "Grand marché central de Tunis",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Tunis+Tunis",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Tunis+Tunis",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a17"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Tunis",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Tunis+Tunis",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Tunis+Tunis",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a18"
+    },
+    {
+      "nom": "Musée de la ville de Tunis",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Tunis+Tunis",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Tunis+Tunis",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a19"
+    },
+    {
+      "nom": "Food tour halal de Tunis",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Tunis+Tunis",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Tunis+Tunis",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a20"
     }
   ],
   "road_trips": [
@@ -3162,32 +3412,84 @@
         "lat": 36.819,
         "lng": 10.1658
       }
+    },
+    {
+      "nom": "Mosquée Al-Fath de Tunis",
+      "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Tunis",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Tunis+Tunis",
+      "capacite": 5631,
+      "anneeConstruction": 1951,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 36.819,
+        "lng": 10.1658
+      }
+    },
+    {
+      "nom": "Mosquée Al-Iman de Tunis",
+      "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Tunis",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Tunis+Tunis",
+      "capacite": 6474,
+      "anneeConstruction": 1974,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 36.819,
+        "lng": 10.1658
+      }
     }
   ],
   "selectionsPremium": {
     "mieuxNotes": [
       "Couscous de Khadija",
+      "Dar Zellige",
       "Dar El Jeld",
-      "Lablabi Ali Hmida"
+      "Lablabi Ali Hmida",
+      "Dar Hamouda Pacha"
     ],
     "meilleurRapportQualitePrix": [
       "Lablabi Ali Hmida",
       "Le Golfe",
-      "Café Zitouna — Médina"
+      "Café Zitouna — Médina",
+      "Brik à Tunis — Madame Bouaziz",
+      "Sfax Corner"
     ],
     "incontournables": [
-      "Couscous de Khadija",
-      "Dar El Jeld"
+      "Dar Zellige",
+      "Pâtisserie M'rabet",
+      "Dar El Jeld",
+      "Sfax Corner",
+      "Restaurant El Feniq"
     ],
     "pepitesCachees": [
-      "Dar Hamouda Pacha",
-      "Pâtisserie M'rabet"
+      "Pâtisserie M'rabet",
+      "Riad Saveurs",
+      "Restaurant Essaraya"
     ],
     "idealFamille": [
       "Restaurant Essaraya",
-      "Lablabi Ali Hmida"
+      "Lablabi Ali Hmida",
+      "Café Zitouna — Médina",
+      "Restaurant Marhaba Palace",
+      "Fondouk El Attarine"
     ],
     "gastronomique": [
+      "Dar El Jeld",
+      "Le Foundouk"
+    ],
+    "ouvertNuit": [
+      "Lablabi Ali Hmida",
+      "Café Zitouna — Médina",
+      "Brik à Tunis — Madame Bouaziz"
+    ],
+    "vueExceptionnelle": [
+      "Couscous de Khadija",
+      "Dar Zellige",
       "Dar El Jeld"
     ]
   }
