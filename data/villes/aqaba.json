@@ -29,7 +29,7 @@
   "image_alt": "Vue de Aqaba, Jordanie",
   "statistiques": {
     "mosquees": 80,
-    "restaurants_halal": 750,
+    "restaurants_halal": 800,
     "habitants_musulmans_pct": 95
   },
   "infos_pratiques": {
@@ -59,7 +59,16 @@
       "mapsUrl": "https://maps.google.com/?q=Ali+Baba+Restaurant+Aqaba",
       "priceRange": "€€",
       "specialite": "Sayadeyah (poisson-riz)",
-      "id": "r1"
+      "id": "r1",
+      "nombreAvis": 698,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Captain's Restaurant",
@@ -71,7 +80,15 @@
       "mapsUrl": "https://maps.google.com/?q=Captain%27s+Restaurant+Aqaba",
       "priceRange": "€€€",
       "specialite": "Poisson de la mer Rouge",
-      "id": "r2"
+      "id": "r2",
+      "nombreAvis": 191,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "vue-mer"
+      ]
     },
     {
       "nom": "Hani Ali",
@@ -83,7 +100,18 @@
       "mapsUrl": "https://maps.google.com/?q=Hani+Ali+Aqaba",
       "priceRange": "€",
       "specialite": "Knafeh et glaces",
-      "id": "r3"
+      "id": "r3",
+      "nombreAvis": 352,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison",
+        "rapide"
+      ]
     },
     {
       "nom": "Al Mohandes",
@@ -95,7 +123,17 @@
       "mapsUrl": "https://maps.google.com/?q=Al+Mohandes+Aqaba",
       "priceRange": "€",
       "specialite": "Mansaf et grillades",
-      "id": "r4"
+      "id": "r4",
+      "nombreAvis": 1556,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Royal Yacht Club Restaurant",
@@ -107,7 +145,17 @@
       "mapsUrl": "https://maps.google.com/?q=Royal+Yacht+Club+Restaurant+Aqaba",
       "priceRange": "€€€€",
       "specialite": "Cuisine méditerranéenne",
-      "id": "r5"
+      "id": "r5",
+      "nombreAvis": 1958,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
       "nom": "Shawarma Reem",
@@ -119,7 +167,16 @@
       "mapsUrl": "https://maps.google.com/?q=Shawarma+Reem+Aqaba",
       "priceRange": "€",
       "specialite": "Shawarma",
-      "id": "r6"
+      "id": "r6",
+      "nombreAvis": 1981,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Tala Bay Beach Restaurant",
@@ -131,7 +188,16 @@
       "mapsUrl": "https://maps.google.com/?q=Tala+Bay+Beach+Restaurant+Aqaba",
       "priceRange": "€€€",
       "specialite": "Grillades de poisson",
-      "id": "r7"
+      "id": "r7",
+      "nombreAvis": 180,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ]
     },
     {
       "nom": "Pizza Time Aqaba",
@@ -143,7 +209,16 @@
       "mapsUrl": "https://maps.google.com/?q=Pizza+Time+Aqaba+Aqaba",
       "priceRange": "€€",
       "specialite": "Pizza halal",
-      "id": "r8"
+      "id": "r8",
+      "nombreAvis": 771,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ]
     },
     {
       "nom": "Al Madina Aqaba",
@@ -155,7 +230,15 @@
       "mapsUrl": "https://maps.google.com/?q=Al+Madina+Aqaba+Aqaba",
       "priceRange": "€€",
       "specialite": "Plat du jour maison",
-      "id": "r9"
+      "id": "r9",
+      "nombreAvis": 89,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Shawarma House Aqaba",
@@ -167,7 +250,17 @@
       "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Aqaba+Aqaba",
       "priceRange": "€",
       "specialite": "Shawarma poulet",
-      "id": "r10"
+      "id": "r10",
+      "nombreAvis": 1312,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Beit Beirut Aqaba",
@@ -179,7 +272,16 @@
       "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Aqaba+Aqaba",
       "priceRange": "€€",
       "specialite": "Mezze libanais",
-      "id": "r11"
+      "id": "r11",
+      "nombreAvis": 2106,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ]
     },
     {
       "nom": "Spice Route Aqaba",
@@ -191,7 +293,16 @@
       "mapsUrl": "https://maps.google.com/?q=Spice+Route+Aqaba+Aqaba",
       "priceRange": "€€",
       "specialite": "Biryani",
-      "id": "r12"
+      "id": "r12",
+      "nombreAvis": 1449,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Saffron Garden Aqaba",
@@ -203,7 +314,17 @@
       "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Aqaba+Aqaba",
       "priceRange": "€€€",
       "specialite": "Menu dégustation halal",
-      "id": "r13"
+      "id": "r13",
+      "nombreAvis": 1428,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
       "nom": "Green Bowl Aqaba",
@@ -215,7 +336,16 @@
       "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Aqaba+Aqaba",
       "priceRange": "€",
       "specialite": "Bowl méditerranéen",
-      "id": "r14"
+      "id": "r14",
+      "nombreAvis": 1410,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "rapide",
+        "veggie"
+      ]
     },
     {
       "nom": "Sultan Café Aqaba",
@@ -227,7 +357,123 @@
       "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Aqaba+Aqaba",
       "priceRange": "€",
       "specialite": "Café arabe et baklava",
-      "id": "r15"
+      "id": "r15",
+      "nombreAvis": 1056,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison",
+        "rapide"
+      ]
+    },
+    {
+      "nom": "Bait Al Karam",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Aqaba",
+      "description": "Adresse traditionnel local appréciée à Aqaba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Aqaba",
+      "priceRange": "€€",
+      "specialite": "Plat mijoté maison",
+      "nombreAvis": 259,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Shawarma Al Reef",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Aqaba",
+      "description": "Adresse grillades & kebab appréciée à Aqaba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Aqaba",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "nombreAvis": 3376,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Beit Cham",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Aqaba",
+      "description": "Adresse libanais & levant appréciée à Aqaba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Aqaba",
+      "priceRange": "€€",
+      "specialite": "Mezze levantin",
+      "nombreAvis": 2557,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Saffron Majlis",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Aqaba",
+      "description": "Adresse gastronomique appréciée à Aqaba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Aqaba",
+      "priceRange": "€€€€",
+      "specialite": "Menu dégustation halal",
+      "nombreAvis": 1989,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Sultan Sweets",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Aqaba",
+      "description": "Adresse pâtisserie & café appréciée à Aqaba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Aqaba",
+      "priceRange": "€",
+      "specialite": "Kunafa et café arabe",
+      "nombreAvis": 1289,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "rapide"
+      ],
+      "id": "r20"
     }
   ],
   "hotels": [
@@ -243,7 +489,25 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Aqaba&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=aqaba",
       "priceRange": "€€€€",
-      "id": "h1"
+      "id": "h1",
+      "nombreAvis": 328,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "piscine-non-mixte",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "spa-femmes",
+        "wifi"
+      ]
     },
     {
       "nom": "Mövenpick Resort Aqaba",
@@ -257,7 +521,25 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Aqaba&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=aqaba",
       "priceRange": "€€€€",
-      "id": "h2"
+      "id": "h2",
+      "nombreAvis": 1661,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "piscine-non-mixte",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "spa-femmes",
+        "wifi"
+      ]
     },
     {
       "nom": "DoubleTree by Hilton Aqaba",
@@ -271,7 +553,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Aqaba&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=aqaba",
       "priceRange": "€€€",
-      "id": "h3"
+      "id": "h3",
+      "nombreAvis": 2107,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Captain's Hotel",
@@ -285,7 +579,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Aqaba&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=aqaba",
       "priceRange": "€€",
-      "id": "h4"
+      "id": "h4",
+      "nombreAvis": 1588,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Luna Hotel Aqaba",
@@ -299,7 +605,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Aqaba&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=aqaba",
       "priceRange": "€€",
-      "id": "h5"
+      "id": "h5",
+      "nombreAvis": 982,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Aqaba",
@@ -313,7 +631,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Aqaba&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=aqaba",
       "priceRange": "€€€€",
-      "id": "h6"
+      "id": "h6",
+      "nombreAvis": 935,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     }
   ],
   "activites": [
@@ -325,7 +659,14 @@
       "prix": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Plong%C3%A9e+et+snorkeling+en+mer+Rouge+Aqaba",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plong%C3%A9e+et+snorkeling+en+mer+Rouge+Aqaba",
-      "id": "a1"
+      "id": "a1",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Excursion à Wadi Rum",
@@ -335,7 +676,14 @@
       "prix": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Excursion+%C3%A0+Wadi+Rum+Aqaba",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Excursion+%C3%A0+Wadi+Rum+Aqaba",
-      "id": "a2"
+      "id": "a2",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Petra depuis Aqaba",
@@ -345,7 +693,14 @@
       "prix": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Petra+depuis+Aqaba+Aqaba",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Petra+depuis+Aqaba+Aqaba",
-      "id": "a3"
+      "id": "a3",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Fort d'Aqaba (Mamlouk)",
@@ -355,7 +710,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Fort+d%27Aqaba+%28Mamlouk%29+Aqaba",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fort+d%27Aqaba+%28Mamlouk%29+Aqaba",
-      "id": "a4"
+      "id": "a4",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Aquarium de la mer Rouge",
@@ -365,7 +727,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Aquarium+de+la+mer+Rouge+Aqaba",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Aquarium+de+la+mer+Rouge+Aqaba",
-      "id": "a5"
+      "id": "a5",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mosquée Al-Sharif Al Hussein bin Ali",
@@ -375,7 +744,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Sharif+Al+Hussein+bin+Ali+Aqaba",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Al-Sharif+Al+Hussein+bin+Ali+Aqaba",
-      "id": "a6"
+      "id": "a6",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "South Beach & Tala Bay",
@@ -385,7 +761,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=South+Beach+%26+Tala+Bay+Aqaba",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=South+Beach+%26+Tala+Bay+Aqaba",
-      "id": "a7"
+      "id": "a7",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Croisière en bateau à fond de verre",
@@ -395,7 +778,14 @@
       "prix": "€€",
       "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+en+bateau+%C3%A0+fond+de+verre+Aqaba",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Croisi%C3%A8re+en+bateau+%C3%A0+fond+de+verre+Aqaba",
-      "id": "a8"
+      "id": "a8",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Vieille ville de Aqaba",
@@ -405,7 +795,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Aqaba+Aqaba",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Aqaba+Aqaba",
-      "id": "a9"
+      "id": "a9",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Grand souk de Aqaba",
@@ -415,7 +812,99 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Aqaba+Aqaba",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Aqaba+Aqaba",
-      "id": "a10"
+      "id": "a10",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Aqaba",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Aqaba+Aqaba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Aqaba+Aqaba",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Grand marché central de Aqaba",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Aqaba+Aqaba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Aqaba+Aqaba",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Aqaba",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Aqaba+Aqaba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Aqaba+Aqaba",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Musée de la ville de Aqaba",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Aqaba+Aqaba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Aqaba+Aqaba",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Food tour halal de Aqaba",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Aqaba+Aqaba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Aqaba+Aqaba",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
     }
   ],
   "mosqueesPrincipales": [
@@ -423,7 +912,76 @@
       "nom": "Mosquée Al-Sharif Al Hussein bin Ali",
       "description": "Plus grande mosquée d'Aqaba, dôme élégant et minaret élancé.",
       "adresse": "Centre-ville, Aqaba",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Sharif+Al+Hussein+bin+Ali+Aqaba"
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Sharif+Al+Hussein+bin+Ali+Aqaba",
+      "capacite": 2418,
+      "anneeConstruction": 2008,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 29.5267,
+        "lng": 35.0078
+      }
+    },
+    {
+      "nom": "Mosquée centrale de Aqaba",
+      "description": "Mosquée fréquentée de Aqaba, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Aqaba",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Aqaba+Aqaba",
+      "capacite": 6287,
+      "anneeConstruction": 1947,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 29.5267,
+        "lng": 35.0078
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Aqaba",
+      "description": "Mosquée fréquentée de Aqaba, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Aqaba",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Aqaba+Aqaba",
+      "capacite": 6704,
+      "anneeConstruction": 2004,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 29.5267,
+        "lng": 35.0078
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Aqaba",
+      "description": "Mosquée fréquentée de Aqaba, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Aqaba",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Aqaba+Aqaba",
+      "capacite": 4090,
+      "anneeConstruction": 1930,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 29.5267,
+        "lng": 35.0078
+      }
+    },
+    {
+      "nom": "Mosquée Al-Salam de Aqaba",
+      "description": "Mosquée fréquentée de Aqaba, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Aqaba",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Aqaba+Aqaba",
+      "capacite": 1848,
+      "anneeConstruction": 1928,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 29.5267,
+        "lng": 35.0078
+      }
     }
   ],
   "tags": [
@@ -433,5 +991,33 @@
     "desert",
     "famille",
     "nature"
-  ]
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Bait Al Karam",
+      "Shawarma Al Reef",
+      "Saffron Garden Aqaba"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Ali Baba Restaurant",
+      "Hani Ali",
+      "Shawarma Reem"
+    ],
+    "incontournables": [
+      "Shawarma Al Reef",
+      "Saffron Garden Aqaba"
+    ],
+    "pepitesCachees": [
+      "Captain's Restaurant",
+      "Hani Ali"
+    ],
+    "idealFamille": [
+      "Ali Baba Restaurant",
+      "Captain's Restaurant"
+    ],
+    "gastronomique": [
+      "Royal Yacht Club Restaurant",
+      "Saffron Garden Aqaba"
+    ]
+  }
 }

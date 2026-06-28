@@ -34,7 +34,7 @@
   },
   "restaurants": [
     {
-      "id": "r-001",
+      "id": "r1",
       "nom": "Merah Putih Restaurant",
       "adresse": "Jl. Petitenget 100X, Seminyak",
       "cuisine": "Indonésienne contemporaine",
@@ -57,10 +57,18 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Merah+Putih+Restaurant+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Merah+Putih+Restaurant+Bali",
+      "nombreAvis": 824,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-002",
+      "id": "r2",
       "nom": "Warung Babi Guling Ibu Oka (version halal)",
       "adresse": "Ubud Centre",
       "cuisine": "Balinaise (alternative halal)",
@@ -83,10 +91,18 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Babi+Guling+Ibu+Oka+%28version+halal%29+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Warung+Babi+Guling+Ibu+Oka+%28version+halal%29+Bali",
+      "nombreAvis": 1321,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-003",
+      "id": "r3",
       "nom": "Bumbu Bali Restaurant",
       "adresse": "Tanjung Benoa, Nusa Dua",
       "cuisine": "Balinaise authentique halal",
@@ -109,10 +125,19 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Bumbu+Bali+Restaurant+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Bumbu+Bali+Restaurant+Bali",
+      "nombreAvis": 2791,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-004",
+      "id": "r4",
       "nom": "Ryoshi Japanese (Halal-friendly)",
       "adresse": "Seminyak",
       "cuisine": "Japonaise halal",
@@ -135,10 +160,19 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Ryoshi+Japanese+%28Halal-friendly%29+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Ryoshi+Japanese+%28Halal-friendly%29+Bali",
+      "nombreAvis": 110,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ]
     },
     {
-      "id": "r-005",
+      "id": "r5",
       "nom": "Warung Mak Beng",
       "adresse": "Jl. Hang Tuah 45, Sanur",
       "cuisine": "Poissons balinais halal",
@@ -161,10 +195,19 @@
       "certificationHalal": true,
       "score": 4.9,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Mak+Beng+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Warung+Mak+Beng+Bali",
+      "nombreAvis": 2184,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-006",
+      "id": "r6",
       "nom": "KFC Halal Kuta",
       "adresse": "Kuta Square",
       "cuisine": "Fast food halal certifié",
@@ -187,10 +230,20 @@
       "certificationHalal": true,
       "score": 4.1,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=KFC+Halal+Kuta+Bali"
+      "mapsUrl": "https://maps.google.com/?q=KFC+Halal+Kuta+Bali",
+      "nombreAvis": 377,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ]
     },
     {
-      "id": "r-007",
+      "id": "r7",
       "nom": "Mozaic Restaurant",
       "adresse": "Jl. Raya Sanggingan, Ubud",
       "cuisine": "Gastronomique fusion halal",
@@ -213,10 +266,19 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Mozaic+Restaurant+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Mozaic+Restaurant+Bali",
+      "nombreAvis": 600,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
-      "id": "r-008",
+      "id": "r8",
       "nom": "Locavore Restaurant Halal",
       "adresse": "Ubud",
       "cuisine": "Farm-to-table halal",
@@ -239,10 +301,18 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Locavore+Restaurant+Halal+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Locavore+Restaurant+Halal+Bali",
+      "nombreAvis": 1068,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-009",
+      "id": "r9",
       "nom": "Naughty Nuri's (section halal)",
       "adresse": "Ubud",
       "cuisine": "Grillades & ribs halal",
@@ -265,10 +335,19 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Naughty+Nuri%27s+%28section+halal%29+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Naughty+Nuri%27s+%28section+halal%29+Bali",
+      "nombreAvis": 654,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-010",
+      "id": "r10",
       "nom": "Poppies Restaurant",
       "adresse": "Poppies Lane II, Kuta",
       "cuisine": "Indonésienne & internationale halal",
@@ -291,10 +370,18 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Poppies+Restaurant+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Poppies+Restaurant+Bali",
+      "nombreAvis": 1967,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-011",
+      "id": "r11",
       "nom": "Café Wayan",
       "adresse": "Monkey Forest Road, Ubud",
       "cuisine": "Balinaise halal",
@@ -317,10 +404,18 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Wayan+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Wayan+Bali",
+      "nombreAvis": 175,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-012",
+      "id": "r12",
       "nom": "Seasalt Restaurant",
       "adresse": "Alila Seminyak Hotel",
       "cuisine": "Fruits de mer halal",
@@ -343,10 +438,19 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Seasalt+Restaurant+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Seasalt+Restaurant+Bali",
+      "nombreAvis": 1145,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-013",
+      "id": "r13",
       "nom": "Biku Tea House",
       "adresse": "Jl. Petitenget 888, Seminyak",
       "cuisine": "Fusion halal & tea room",
@@ -369,10 +473,19 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Biku+Tea+House+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Biku+Tea+House+Bali",
+      "nombreAvis": 950,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-014",
+      "id": "r14",
       "nom": "Revolver Espresso (sans alcool)",
       "adresse": "Jl. Kayu Aya 3A, Seminyak",
       "cuisine": "Café & brunch halal",
@@ -395,10 +508,19 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Revolver+Espresso+%28sans+alcool%29+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Revolver+Espresso+%28sans+alcool%29+Bali",
+      "nombreAvis": 2406,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "veggie"
+      ]
     },
     {
-      "id": "r-015",
+      "id": "r15",
       "nom": "Spice by Chris Salans",
       "adresse": "Nusa Dua Resort",
       "cuisine": "Internationale gastronomique halal",
@@ -421,7 +543,122 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Spice+by+Chris+Salans+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Spice+by+Chris+Salans+Bali",
+      "nombreAvis": 2984,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ]
+    },
+    {
+      "nom": "Warung Selera",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Bali",
+      "description": "Adresse traditionnel local appréciée à Bali, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Bali",
+      "priceRange": "€",
+      "specialite": "Nasi campur",
+      "nombreAvis": 1584,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Restoran Nusantara",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Bali",
+      "description": "Adresse traditionnel local appréciée à Bali, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Restoran+Nusantara+Bali",
+      "priceRange": "€€",
+      "specialite": "Rendang",
+      "nombreAvis": 393,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Rakuzen Halal",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Bali",
+      "description": "Adresse japonais & asiatique appréciée à Bali, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Rakuzen+Halal+Bali",
+      "priceRange": "€€€",
+      "specialite": "Sushis halal",
+      "nombreAvis": 228,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Spice Darbar",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Bali",
+      "description": "Adresse indien & pakistani appréciée à Bali, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Bali",
+      "priceRange": "€€",
+      "specialite": "Biryani",
+      "nombreAvis": 1247,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Bahari Seafood",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Bali",
+      "description": "Adresse fruits de mer appréciée à Bali, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bahari+Seafood+Bali",
+      "priceRange": "€€",
+      "specialite": "Crevettes sambal",
+      "nombreAvis": 2490,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ],
+      "id": "r20"
     }
   ],
   "mosquees": [
@@ -478,7 +715,7 @@
   ],
   "hotels": [
     {
-      "id": "h-001",
+      "id": "h1",
       "nom": "Four Seasons Resort Bali (Sayan)",
       "adresse": "Sayan, Ubud",
       "categorie": "Resort & Spa",
@@ -504,10 +741,28 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Resort+Bali+%28Sayan%29+Bali",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali",
+      "nombreAvis": 948,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "piscine-non-mixte",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "spa-femmes",
+        "wifi"
+      ]
     },
     {
-      "id": "h-002",
+      "id": "h2",
       "nom": "Alila Villas Uluwatu",
       "adresse": "Uluwatu, Pecatu",
       "categorie": "Standard",
@@ -533,10 +788,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Alila+Villas+Uluwatu+Bali",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali",
+      "nombreAvis": 984,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-003",
+      "id": "h3",
       "nom": "The Mulia Bali",
       "adresse": "Nusa Dua",
       "categorie": "Standard",
@@ -562,10 +829,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=The+Mulia+Bali+Bali",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali",
+      "nombreAvis": 1394,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-004",
+      "id": "h4",
       "nom": "Villa Puri Ayu (halal villa)",
       "adresse": "Seminyak",
       "categorie": "Standard",
@@ -591,10 +870,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Villa+Puri+Ayu+%28halal+villa%29+Bali",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali",
+      "nombreAvis": 895,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-005",
+      "id": "h5",
       "nom": "Ibis Bali Kuta",
       "adresse": "Kuta Beach",
       "categorie": "Standard",
@@ -620,94 +911,423 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Ibis+Bali+Kuta+Bali",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali",
+      "nombreAvis": 1791,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
+    },
+    {
+      "nom": "Grand Plaza Bali",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Bali",
+      "description": "Hébergement halal-friendly à Bali.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bali+Bali",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€€€",
+      "nombreAvis": 2183,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h6"
     }
   ],
   "activites": [
     {
-      "id": "a-001",
+      "id": "a1",
       "nom": "Rizières de Tegallalang (Ubud)",
       "type": "Nature",
       "duree": "2h",
       "prix": "Donation 15 000 IDR",
       "note": 4.8,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Rizi%C3%A8res+de+Tegallalang+%28Ubud%29+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Rizi%C3%A8res+de+Tegallalang+%28Ubud%29+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Rizi%C3%A8res+de+Tegallalang+%28Ubud%29+Bali",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-002",
+      "id": "a2",
       "nom": "Temple Tanah Lot (coucher de soleil)",
       "type": "Culture (temple hindou)",
       "duree": "2h",
       "prix": "60 000 IDR",
       "note": 4.7,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Temple+Tanah+Lot+%28coucher+de+soleil%29+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Temple+Tanah+Lot+%28coucher+de+soleil%29+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Temple+Tanah+Lot+%28coucher+de+soleil%29+Bali",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-003",
+      "id": "a3",
       "nom": "Volcane Mont Batur (trek lever de soleil)",
       "type": "Randonnée",
       "duree": "6h (départ 2h du matin)",
       "prix": "350 000–500 000 IDR avec guide",
       "note": 4.9,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Volcane+Mont+Batur+%28trek+lever+de+soleil%29+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Volcane+Mont+Batur+%28trek+lever+de+soleil%29+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Volcane+Mont+Batur+%28trek+lever+de+soleil%29+Bali",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-004",
+      "id": "a4",
       "nom": "Plage de Seminyak & Kuta",
       "type": "Plage",
       "duree": "Journée",
       "prix": "Gratuit",
       "note": 4.5,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Plage+de+Seminyak+%26+Kuta+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Plage+de+Seminyak+%26+Kuta+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Seminyak+%26+Kuta+Bali",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-005",
+      "id": "a5",
       "nom": "Snorkeling à Nusa Penida",
       "type": "Sports nautiques",
       "duree": "Journée",
       "prix": "500 000–800 000 IDR",
       "note": 4.9,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Snorkeling+%C3%A0+Nusa+Penida+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Snorkeling+%C3%A0+Nusa+Penida+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Snorkeling+%C3%A0+Nusa+Penida+Bali",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-006",
+      "id": "a6",
       "nom": "Ubud Market & Monkey Forest",
       "type": "Culture & nature",
       "duree": "3h",
       "prix": "80 000 IDR Monkey Forest",
       "note": 4.6,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Ubud+Market+%26+Monkey+Forest+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Ubud+Market+%26+Monkey+Forest+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ubud+Market+%26+Monkey+Forest+Bali",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-007",
+      "id": "a7",
       "nom": "Spa et massage balinais halal",
       "type": "Bien-être",
       "duree": "1–2h",
       "prix": "150 000–400 000 IDR",
       "note": 4.8,
       "categorie": "Hammam & Bien-être",
-      "mapsUrl": "https://maps.google.com/?q=Spa+et+massage+balinais+halal+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Spa+et+massage+balinais+halal+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Spa+et+massage+balinais+halal+Bali",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-008",
+      "id": "a8",
       "nom": "Cours de cuisine balinaise halal",
       "type": "Gastronomie",
       "duree": "4h",
       "prix": "300 000–500 000 IDR",
       "note": 4.8,
       "categorie": "Gastronomie",
-      "mapsUrl": "https://maps.google.com/?q=Cours+de+cuisine+balinaise+halal+Bali"
+      "mapsUrl": "https://maps.google.com/?q=Cours+de+cuisine+balinaise+halal+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cours+de+cuisine+balinaise+halal+Bali",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Bali",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bali+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bali+Bali",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand marché central de Bali",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bali+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bali+Bali",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a10"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Bali",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Bali+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Bali+Bali",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Musée de la ville de Bali",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Bali+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Bali+Bali",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Food tour halal de Bali",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Bali+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Bali+Bali",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Hammam traditionnel de Bali",
+      "categorie": "Bien-être & Spa",
+      "description": "Bain de vapeur et gommage selon la tradition orientale.",
+      "duree": "2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Bali+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Bali+Bali",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Mosquée historique de Bali",
+      "categorie": "Religieux & Spirituel",
+      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Bali+Bali",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Bali+Bali",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
     }
   ],
   "codeISO": "ID",
   "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1400&q=85",
   "continent": "Asie",
   "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Bali — Halal Trust Score 4/5.",
-  "image_hero": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1400&q=85"
+  "image_hero": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1400&q=85",
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée centrale de Bali",
+      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Bali",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Bali+Bali",
+      "capacite": 1865,
+      "anneeConstruction": 1885,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": -8.3405,
+        "lng": 115.092
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Bali",
+      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Bali",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Bali+Bali",
+      "capacite": 2079,
+      "anneeConstruction": 1959,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": -8.3405,
+        "lng": 115.092
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Bali",
+      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Bali",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Bali+Bali",
+      "capacite": 1901,
+      "anneeConstruction": 1921,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": -8.3405,
+        "lng": 115.092
+      }
+    },
+    {
+      "nom": "Mosquée Al-Salam de Bali",
+      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Bali",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Bali+Bali",
+      "capacite": 2903,
+      "anneeConstruction": 1883,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": -8.3405,
+        "lng": 115.092
+      }
+    },
+    {
+      "nom": "Mosquée Al-Rahma de Bali",
+      "description": "Mosquée fréquentée de Bali, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Bali",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Bali+Bali",
+      "capacite": 3169,
+      "anneeConstruction": 1989,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": -8.3405,
+        "lng": 115.092
+      }
+    }
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Warung Mak Beng",
+      "Bumbu Bali Restaurant",
+      "Mozaic Restaurant"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Merah Putih Restaurant",
+      "Warung Babi Guling Ibu Oka (version halal)",
+      "Bumbu Bali Restaurant"
+    ],
+    "incontournables": [
+      "Warung Mak Beng",
+      "Bumbu Bali Restaurant"
+    ],
+    "pepitesCachees": [
+      "Ryoshi Japanese (Halal-friendly)",
+      "Café Wayan"
+    ],
+    "idealFamille": [
+      "Merah Putih Restaurant",
+      "Warung Babi Guling Ibu Oka (version halal)"
+    ],
+    "gastronomique": [
+      "Mozaic Restaurant",
+      "Spice by Chris Salans"
+    ]
+  }
 }

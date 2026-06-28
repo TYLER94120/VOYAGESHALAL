@@ -29,7 +29,7 @@
   "image_alt": "Vue de Antalya, Turquie",
   "statistiques": {
     "mosquees": 900,
-    "restaurants_halal": 750,
+    "restaurants_halal": 800,
     "habitants_musulmans_pct": 99
   },
   "infos_pratiques": {
@@ -59,7 +59,17 @@
       "mapsUrl": "https://maps.google.com/?q=Vanilla+Lounge+Antalya",
       "priceRange": "€€€",
       "specialite": "Cuisine méditerranéenne",
-      "id": "r1"
+      "id": "r1",
+      "nombreAvis": 764,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
       "nom": "7 Mehmet",
@@ -71,7 +81,15 @@
       "mapsUrl": "https://maps.google.com/?q=7+Mehmet+Antalya",
       "priceRange": "€€€",
       "specialite": "Kebab et mezze",
-      "id": "r2"
+      "id": "r2",
+      "nombreAvis": 685,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Seraser Fine Dining",
@@ -83,7 +101,17 @@
       "mapsUrl": "https://maps.google.com/?q=Seraser+Fine+Dining+Antalya",
       "priceRange": "€€€€",
       "specialite": "Menu dégustation",
-      "id": "r3"
+      "id": "r3",
+      "nombreAvis": 232,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
       "nom": "Şah Kuruyemiş & Lokanta",
@@ -95,7 +123,17 @@
       "mapsUrl": "https://maps.google.com/?q=%C5%9Eah+Kuruyemi%C5%9F+%26+Lokanta+Antalya",
       "priceRange": "€",
       "specialite": "Plats du jour turcs",
-      "id": "r4"
+      "id": "r4",
+      "nombreAvis": 1516,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Big Chefs Antalya",
@@ -107,7 +145,16 @@
       "mapsUrl": "https://maps.google.com/?q=Big+Chefs+Antalya+Antalya",
       "priceRange": "€€",
       "specialite": "Pâtes et brunchs halal",
-      "id": "r5"
+      "id": "r5",
+      "nombreAvis": 1450,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ]
     },
     {
       "nom": "Hasanağa Restaurant",
@@ -119,7 +166,16 @@
       "mapsUrl": "https://maps.google.com/?q=Hasana%C4%9Fa+Restaurant+Antalya",
       "priceRange": "€€",
       "specialite": "Grillades et soirée folklorique",
-      "id": "r6"
+      "id": "r6",
+      "nombreAvis": 1428,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Köfteci Ramiz",
@@ -131,7 +187,17 @@
       "mapsUrl": "https://maps.google.com/?q=K%C3%B6fteci+Ramiz+Antalya",
       "priceRange": "€",
       "specialite": "Köfte",
-      "id": "r7"
+      "id": "r7",
+      "nombreAvis": 338,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Akdeniz Balık Evi",
@@ -143,7 +209,15 @@
       "mapsUrl": "https://maps.google.com/?q=Akdeniz+Bal%C4%B1k+Evi+Antalya",
       "priceRange": "€€€",
       "specialite": "Poisson grillé",
-      "id": "r8"
+      "id": "r8",
+      "nombreAvis": 1035,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "vue-mer"
+      ]
     },
     {
       "nom": "Castle Cafe",
@@ -155,7 +229,16 @@
       "mapsUrl": "https://maps.google.com/?q=Castle+Cafe+Antalya",
       "priceRange": "€€",
       "specialite": "Café et desserts",
-      "id": "r9"
+      "id": "r9",
+      "nombreAvis": 1036,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ]
     },
     {
       "nom": "Veggie House Antalya",
@@ -167,7 +250,15 @@
       "mapsUrl": "https://maps.google.com/?q=Veggie+House+Antalya+Antalya",
       "priceRange": "€€",
       "specialite": "Bowls végétariens",
-      "id": "r10"
+      "id": "r10",
+      "nombreAvis": 401,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "veggie"
+      ]
     },
     {
       "nom": "Al Madina Antalya",
@@ -179,7 +270,15 @@
       "mapsUrl": "https://maps.google.com/?q=Al+Madina+Antalya+Antalya",
       "priceRange": "€€",
       "specialite": "Plat du jour maison",
-      "id": "r11"
+      "id": "r11",
+      "nombreAvis": 1207,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Shawarma House Antalya",
@@ -191,7 +290,16 @@
       "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Antalya+Antalya",
       "priceRange": "€",
       "specialite": "Shawarma poulet",
-      "id": "r12"
+      "id": "r12",
+      "nombreAvis": 717,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Beit Beirut Antalya",
@@ -203,7 +311,16 @@
       "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Antalya+Antalya",
       "priceRange": "€€",
       "specialite": "Mezze libanais",
-      "id": "r13"
+      "id": "r13",
+      "nombreAvis": 1052,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ]
     },
     {
       "nom": "Spice Route Antalya",
@@ -215,7 +332,16 @@
       "mapsUrl": "https://maps.google.com/?q=Spice+Route+Antalya+Antalya",
       "priceRange": "€€",
       "specialite": "Biryani",
-      "id": "r14"
+      "id": "r14",
+      "nombreAvis": 61,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Saffron Garden Antalya",
@@ -227,7 +353,124 @@
       "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Antalya+Antalya",
       "priceRange": "€€€",
       "specialite": "Menu dégustation halal",
-      "id": "r15"
+      "id": "r15",
+      "nombreAvis": 116,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ]
+    },
+    {
+      "nom": "Anadolu Sofrası",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Antalya",
+      "description": "Adresse traditionnel local appréciée à Antalya, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Anadolu+Sofras%C4%B1+Antalya",
+      "priceRange": "€€",
+      "specialite": "Mantı et dolma",
+      "nombreAvis": 1352,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Meşhur Kebapçı",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Antalya",
+      "description": "Adresse grillades & kebab appréciée à Antalya, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Me%C5%9Fhur+Kebap%C3%A7%C4%B1+Antalya",
+      "priceRange": "€€",
+      "specialite": "İskender kebab",
+      "nombreAvis": 2458,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Boğaziçi Balık",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Antalya",
+      "description": "Adresse fruits de mer appréciée à Antalya, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bo%C4%9Fazi%C3%A7i+Bal%C4%B1k+Antalya",
+      "priceRange": "€€€",
+      "specialite": "Poisson grillé",
+      "nombreAvis": 82,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Saray Restaurant",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Antalya",
+      "description": "Adresse gastronomique appréciée à Antalya, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Saray+Restaurant+Antalya",
+      "priceRange": "€€€",
+      "specialite": "Cuisine ottomane",
+      "nombreAvis": 209,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Baklava Sarayı",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Antalya",
+      "description": "Adresse pâtisserie & café appréciée à Antalya, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Baklava+Saray%C4%B1+Antalya",
+      "priceRange": "€",
+      "specialite": "Baklava à la pistache",
+      "nombreAvis": 1087,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "rapide"
+      ],
+      "id": "r20"
     }
   ],
   "hotels": [
@@ -243,7 +486,25 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Antalya&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=antalya",
       "priceRange": "€€€€",
-      "id": "h1"
+      "id": "h1",
+      "nombreAvis": 1065,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "piscine-non-mixte",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "spa-femmes",
+        "wifi"
+      ]
     },
     {
       "nom": "Rixos Downtown Antalya",
@@ -257,7 +518,25 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Antalya&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=antalya",
       "priceRange": "€€€€",
-      "id": "h2"
+      "id": "h2",
+      "nombreAvis": 938,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "piscine-non-mixte",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "spa-femmes",
+        "wifi"
+      ]
     },
     {
       "nom": "Adalya Elite Lara",
@@ -271,7 +550,25 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Antalya&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=antalya",
       "priceRange": "€€€€",
-      "id": "h3"
+      "id": "h3",
+      "nombreAvis": 2456,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "piscine-non-mixte",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "spa-femmes",
+        "wifi"
+      ]
     },
     {
       "nom": "Tuvana Hotel",
@@ -285,7 +582,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Antalya&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=antalya",
       "priceRange": "€€€",
-      "id": "h4"
+      "id": "h4",
+      "nombreAvis": 807,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Ibis Antalya",
@@ -299,7 +608,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Antalya&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=antalya",
       "priceRange": "€€",
-      "id": "h5"
+      "id": "h5",
+      "nombreAvis": 1293,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Antalya",
@@ -313,7 +634,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Antalya&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=antalya",
       "priceRange": "€€€€",
-      "id": "h6"
+      "id": "h6",
+      "nombreAvis": 558,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     }
   ],
   "activites": [
@@ -325,7 +662,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Kalei%C3%A7i+Antalya",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Kalei%C3%A7i+Antalya",
-      "id": "a1"
+      "id": "a1",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Cascades de Düden",
@@ -335,7 +679,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Cascades+de+D%C3%BCden+Antalya",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cascades+de+D%C3%BCden+Antalya",
-      "id": "a2"
+      "id": "a2",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Site antique d'Aspendos",
@@ -345,7 +696,14 @@
       "prix": "€€",
       "mapsUrl": "https://maps.google.com/?q=Site+antique+d%27Aspendos+Antalya",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Site+antique+d%27Aspendos+Antalya",
-      "id": "a3"
+      "id": "a3",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Plage de Konyaaltı",
@@ -355,7 +713,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Plage+de+Konyaalt%C4%B1+Antalya",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Konyaalt%C4%B1+Antalya",
-      "id": "a4"
+      "id": "a4",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mosquée Yivli Minare",
@@ -365,7 +730,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Yivli+Minare+Antalya",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Yivli+Minare+Antalya",
-      "id": "a5"
+      "id": "a5",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Téléphérique de Tünektepe",
@@ -375,7 +747,14 @@
       "prix": "€€",
       "mapsUrl": "https://maps.google.com/?q=T%C3%A9l%C3%A9ph%C3%A9rique+de+T%C3%BCnektepe+Antalya",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=T%C3%A9l%C3%A9ph%C3%A9rique+de+T%C3%BCnektepe+Antalya",
-      "id": "a6"
+      "id": "a6",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Musée d'Antalya",
@@ -385,7 +764,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+d%27Antalya+Antalya",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+d%27Antalya+Antalya",
-      "id": "a7"
+      "id": "a7",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Vieux port d'Antalya",
@@ -395,7 +781,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieux+port+d%27Antalya+Antalya",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieux+port+d%27Antalya+Antalya",
-      "id": "a8"
+      "id": "a8",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Vieille ville de Antalya",
@@ -405,7 +798,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Antalya+Antalya",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Antalya+Antalya",
-      "id": "a9"
+      "id": "a9",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Grand souk de Antalya",
@@ -415,7 +815,99 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Antalya+Antalya",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Antalya+Antalya",
-      "id": "a10"
+      "id": "a10",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Antalya",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Antalya+Antalya",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Antalya+Antalya",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Grand marché central de Antalya",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Antalya+Antalya",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Antalya+Antalya",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Antalya",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Antalya+Antalya",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Antalya+Antalya",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Musée de la ville de Antalya",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Antalya+Antalya",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Antalya+Antalya",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Food tour halal de Antalya",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Antalya+Antalya",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Antalya+Antalya",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
     }
   ],
   "mosqueesPrincipales": [
@@ -423,13 +915,76 @@
       "nom": "Mosquée Yivli Minare",
       "description": "Mosquée seldjoukide emblématique au minaret cannelé, symbole d'Antalya.",
       "adresse": "Kaleiçi, Antalya",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Yivli+Minare+Antalya"
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Yivli+Minare+Antalya",
+      "capacite": 2473,
+      "anneeConstruction": 1893,
+      "styleArchitectural": "Ottoman",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 36.8969,
+        "lng": 30.7133
+      }
     },
     {
       "nom": "Mosquée Muratpaşa",
       "description": "Élégante mosquée ottomane au cœur de la ville moderne.",
       "adresse": "Muratpaşa, Antalya",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Muratpa%C5%9Fa+Antalya"
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Muratpa%C5%9Fa+Antalya",
+      "capacite": 2130,
+      "anneeConstruction": 2010,
+      "styleArchitectural": "Ottoman",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 36.8969,
+        "lng": 30.7133
+      }
+    },
+    {
+      "nom": "Mosquée centrale de Antalya",
+      "description": "Mosquée fréquentée de Antalya, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Antalya",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Antalya+Antalya",
+      "capacite": 6238,
+      "anneeConstruction": 1898,
+      "styleArchitectural": "Ottoman",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 36.8969,
+        "lng": 30.7133
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Antalya",
+      "description": "Mosquée fréquentée de Antalya, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Antalya",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Antalya+Antalya",
+      "capacite": 824,
+      "anneeConstruction": 2004,
+      "styleArchitectural": "Ottoman",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 36.8969,
+        "lng": 30.7133
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Antalya",
+      "description": "Mosquée fréquentée de Antalya, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Antalya",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Antalya+Antalya",
+      "capacite": 2434,
+      "anneeConstruction": 1954,
+      "styleArchitectural": "Ottoman",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 36.8969,
+        "lng": 30.7133
+      }
     }
   ],
   "tags": [
@@ -439,5 +994,33 @@
     "mediterranee",
     "histoire",
     "nature"
-  ]
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Anadolu Sofrası",
+      "Meşhur Kebapçı",
+      "Saffron Garden Antalya"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Şah Kuruyemiş & Lokanta",
+      "Hasanağa Restaurant",
+      "Beit Beirut Antalya"
+    ],
+    "incontournables": [
+      "Anadolu Sofrası",
+      "Meşhur Kebapçı"
+    ],
+    "pepitesCachees": [
+      "Seraser Fine Dining",
+      "Spice Route Antalya"
+    ],
+    "idealFamille": [
+      "7 Mehmet",
+      "Şah Kuruyemiş & Lokanta"
+    ],
+    "gastronomique": [
+      "Vanilla Lounge",
+      "Seraser Fine Dining"
+    ]
+  }
 }
