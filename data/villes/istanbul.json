@@ -57,7 +57,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "GIMDES"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Hamdi+Restaurant+Istanbul"
     },
     {
       "id": "r2",
@@ -85,7 +90,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "GIMDES"
-      }
+      },
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.6,
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Develi+Istanbul"
     },
     {
       "id": "r3",
@@ -113,7 +123,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "GIMDES"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "priceRange": "€",
+      "mapsUrl": "https://maps.google.com/?q=Sultanahmet+K%C3%B6ftecisi+Istanbul"
     },
     {
       "id": "r4",
@@ -141,7 +156,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "GIMDES"
-      }
+      },
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.8,
+      "priceRange": "€",
+      "mapsUrl": "https://maps.google.com/?q=Kara%D0%BA%C3%B6y+G%C3%BCll%C3%BCo%C4%9Flu+Istanbul"
     }
   ],
   "mosquees": [
@@ -199,7 +219,15 @@
         "avisMusulmans": 2100,
         "derniereVerification": "2026-05",
         "badge": "HALAL DÉCLARÉ"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.9,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Sultanahmet+Istanbul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul"
     },
     {
       "id": "h2",
@@ -224,7 +252,15 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "GIMDES"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.7,
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Gezi+Hotel+Bosphorus+Istanbul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul"
     },
     {
       "id": "h3",
@@ -249,7 +285,15 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "GIMDES"
-      }
+      },
+      "categorie": "Standard",
+      "score": 4.5,
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Erboy+Hotel+Istanbul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul"
     }
   ],
   "activites": [
@@ -264,7 +308,9 @@
         "spirituel",
         "architecture",
         "incontournable"
-      ]
+      ],
+      "categorie": "Religieux & Spirituel",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bleue+et+Sainte-Sophie+Istanbul"
     },
     {
       "id": "a2",
@@ -277,7 +323,9 @@
         "vue",
         "détente",
         "famille"
-      ]
+      ],
+      "categorie": "Nature & Plein air",
+      "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+le+Bosphore+Istanbul"
     },
     {
       "id": "a3",
@@ -289,7 +337,9 @@
       "tags": [
         "shopping",
         "culture"
-      ]
+      ],
+      "categorie": "Shopping & Souks",
+      "mapsUrl": "https://maps.google.com/?q=Grand+Bazar+Istanbul"
     },
     {
       "id": "a4",
@@ -301,7 +351,9 @@
       "tags": [
         "histoire",
         "reliques islamiques"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Palais+de+Topkapi+Istanbul"
     }
   ],
   "road_trips": [

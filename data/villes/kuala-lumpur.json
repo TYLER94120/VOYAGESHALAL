@@ -57,7 +57,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "JAKIM"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "priceRange": "8–25 MYR",
+      "mapsUrl": "https://maps.google.com/?q=Nasi+Kandar+Pelita+Kuala+Lumpur"
     },
     {
       "id": "r2",
@@ -85,7 +90,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "JAKIM"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "priceRange": "10–30 MYR",
+      "mapsUrl": "https://maps.google.com/?q=Village+Park+Restaurant+Kuala+Lumpur"
     },
     {
       "id": "r3",
@@ -113,7 +123,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "JAKIM"
-      }
+      },
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "priceRange": "60–150 MYR",
+      "mapsUrl": "https://maps.google.com/?q=Enak+KL+Kuala+Lumpur"
     },
     {
       "id": "r4",
@@ -141,7 +156,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "JAKIM"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.6,
+      "priceRange": "80–200 MYR",
+      "mapsUrl": "https://maps.google.com/?q=Rahsia+Brasserie+Kuala+Lumpur"
     }
   ],
   "mosquees": [
@@ -200,7 +220,15 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "JAKIM"
-      }
+      },
+      "categorie": "Riad & Boutique",
+      "score": 4.8,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=The+RuMa+Hotel+%26+Residences+Kuala+Lumpur",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Kuala+Lumpur"
     },
     {
       "id": "h2",
@@ -225,7 +253,15 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "JAKIM"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.7,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Kuala+Lumpur+Kuala+Lumpur",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Kuala+Lumpur"
     },
     {
       "id": "h3",
@@ -250,7 +286,15 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "JAKIM"
-      }
+      },
+      "categorie": "Standard",
+      "score": 4.3,
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Dorsett+Bukit+Bintang+Kuala+Lumpur",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Kuala+Lumpur"
     }
   ],
   "activites": [
@@ -264,7 +308,9 @@
       "tags": [
         "panorama",
         "incontournable"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Tours+Petronas+%E2%80%94+Skybridge+%26+Observation+Deck+Kuala+Lumpur"
     },
     {
       "id": "a2",
@@ -277,7 +323,9 @@
         "nature",
         "culture",
         "famille"
-      ]
+      ],
+      "categorie": "Shopping & Souks",
+      "mapsUrl": "https://maps.google.com/?q=Batu+Caves+Kuala+Lumpur"
     },
     {
       "id": "a3",
@@ -289,7 +337,9 @@
       "tags": [
         "gastronomie",
         "soirée"
-      ]
+      ],
+      "categorie": "Gastronomie",
+      "mapsUrl": "https://maps.google.com/?q=Jalan+Alor+%E2%80%94+Street+Food+Halal+Kuala+Lumpur"
     },
     {
       "id": "a4",
@@ -301,7 +351,9 @@
       "tags": [
         "famille",
         "nature"
-      ]
+      ],
+      "categorie": "Nature & Plein air",
+      "mapsUrl": "https://maps.google.com/?q=KL+Bird+Park+Kuala+Lumpur"
     },
     {
       "id": "a5",
@@ -313,7 +365,9 @@
       "tags": [
         "culture",
         "authentique"
-      ]
+      ],
+      "categorie": "Shopping & Souks",
+      "mapsUrl": "https://maps.google.com/?q=Kampung+Baru+Kuala+Lumpur"
     }
   ],
   "road_trips": [

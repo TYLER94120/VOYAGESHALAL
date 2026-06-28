@@ -57,7 +57,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ESMA Halal"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.6,
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Al+Fanar+Restaurant+Duba%C3%AF"
     },
     {
       "id": "r2",
@@ -85,7 +90,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ESMA Halal"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Logma+Duba%C3%AF"
     },
     {
       "id": "r3",
@@ -113,7 +123,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ESMA Halal"
-      }
+      },
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.8,
+      "priceRange": "€",
+      "mapsUrl": "https://maps.google.com/?q=Arabian+Tea+House+Duba%C3%AF"
     },
     {
       "id": "r4",
@@ -141,7 +156,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ESMA Halal"
-      }
+      },
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.5,
+      "priceRange": "€",
+      "mapsUrl": "https://maps.google.com/?q=Operation+Falafel+Duba%C3%AF"
     }
   ],
   "mosquees": [
@@ -200,7 +220,15 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "ESMA Halal"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.9,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Burj+Al+Arab+Jumeirah+Duba%C3%AF",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF"
     },
     {
       "id": "h2",
@@ -225,7 +253,15 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "ESMA Halal"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.8,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Raffles+Dubai+Duba%C3%AF",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF"
     },
     {
       "id": "h3",
@@ -250,7 +286,15 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ESMA Halal"
-      }
+      },
+      "categorie": "Standard",
+      "score": 4.4,
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Premier+Inn+Dubai+Al+Jadaf+Duba%C3%AF",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF"
     }
   ],
   "activites": [
@@ -265,7 +309,9 @@
         "histoire",
         "culture",
         "famille"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Vieux+Duba%C3%AF+%E2%80%94+Al+Fahidi+et+Creek+Duba%C3%AF"
     },
     {
       "id": "a2",
@@ -278,7 +324,9 @@
         "vue",
         "incontournable",
         "photo"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Burj+Khalifa+%E2%80%94+Observation+Deck+Duba%C3%AF"
     },
     {
       "id": "a3",
@@ -290,7 +338,9 @@
       "tags": [
         "shopping",
         "traditionnel"
-      ]
+      ],
+      "categorie": "Shopping & Souks",
+      "mapsUrl": "https://maps.google.com/?q=Souk+de+l%27Or+et+Souk+des+%C3%89pices+Duba%C3%AF"
     },
     {
       "id": "a4",
@@ -303,7 +353,9 @@
         "désert",
         "aventure",
         "famille"
-      ]
+      ],
+      "categorie": "Nature & Plein air",
+      "mapsUrl": "https://maps.google.com/?q=Safari+dans+le+D%C3%A9sert+Duba%C3%AF"
     },
     {
       "id": "a5",
@@ -316,7 +368,9 @@
         "shopping",
         "famille",
         "soirée"
-      ]
+      ],
+      "categorie": "Shopping & Souks",
+      "mapsUrl": "https://maps.google.com/?q=Dubai+Mall+%26+Fontaine+de+Duba%C3%AF+Duba%C3%AF"
     }
   ],
   "road_trips": [

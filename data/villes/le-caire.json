@@ -57,7 +57,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "Dar Al-Ifta Halal"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "priceRange": "15–40 EGP",
+      "mapsUrl": "https://maps.google.com/?q=Koshary+Abou+Tarek+Le+Caire"
     },
     {
       "id": "r2",
@@ -85,7 +90,12 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "Dar Al-Ifta Halal"
-      }
+      },
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.5,
+      "priceRange": "200–500 EGP",
+      "mapsUrl": "https://maps.google.com/?q=Sequoia+Le+Caire"
     },
     {
       "id": "r3",
@@ -113,7 +123,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "Dar Al-Ifta Halal"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "priceRange": "80–200 EGP",
+      "mapsUrl": "https://maps.google.com/?q=Al+Khal+Restaurant+Le+Caire"
     },
     {
       "id": "r4",
@@ -141,7 +156,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "Dar Al-Ifta Halal"
-      }
+      },
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.6,
+      "priceRange": "300–700 EGP",
+      "mapsUrl": "https://maps.google.com/?q=Bab+El-Sharq+Le+Caire"
     }
   ],
   "mosquees": [
@@ -199,7 +219,15 @@
         "avisMusulmans": 3200,
         "derniereVerification": "2026-05",
         "badge": "HALAL DÉCLARÉ"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.8,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Cairo+at+Nile+Plaza+Le+Caire",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire"
     },
     {
       "id": "h2",
@@ -224,7 +252,15 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "Dar Al-Ifta Halal"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.6,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Kempinski+Nile+Hotel+Le+Caire",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire"
     },
     {
       "id": "h3",
@@ -249,7 +285,15 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "Dar Al-Ifta Halal"
-      }
+      },
+      "categorie": "Standard",
+      "score": 4.3,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Steigenberger+Hotel+El+Tahrir+Le+Caire",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire"
     }
   ],
   "activites": [
@@ -264,7 +308,9 @@
         "incontournable",
         "patrimoine",
         "famille"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Pyramides+de+Gizeh+%26+Sphinx+Le+Caire"
     },
     {
       "id": "a2",
@@ -276,7 +322,9 @@
       "tags": [
         "histoire",
         "incontournable"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+%C3%89gyptien+%28Tahrir%29+Le+Caire"
     },
     {
       "id": "a3",
@@ -288,7 +336,9 @@
       "tags": [
         "shopping",
         "culture"
-      ]
+      ],
+      "categorie": "Shopping & Souks",
+      "mapsUrl": "https://maps.google.com/?q=Khan+el-Khalili+Le+Caire"
     },
     {
       "id": "a4",
@@ -300,7 +350,9 @@
       "tags": [
         "romantique",
         "nature"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+le+Nil+Le+Caire"
     }
   ],
   "road_trips": [

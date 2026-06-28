@@ -57,7 +57,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.6,
+      "priceRange": "150–300 MAD",
+      "mapsUrl": "https://maps.google.com/?q=La+Sqala+Casablanca"
     },
     {
       "id": "r2",
@@ -85,7 +90,12 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "priceRange": "250–500 MAD",
+      "mapsUrl": "https://maps.google.com/?q=Le+Cabestan+Casablanca"
     },
     {
       "id": "r3",
@@ -113,7 +123,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.3,
+      "priceRange": "200–400 MAD",
+      "mapsUrl": "https://maps.google.com/?q=Brasserie+de+l%27Omnia+Casablanca"
     },
     {
       "id": "r4",
@@ -141,7 +156,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.7,
+      "priceRange": "300–600 MAD",
+      "mapsUrl": "https://maps.google.com/?q=Dar+Roumana+Casablanca"
     }
   ],
   "mosquees": [
@@ -199,7 +219,15 @@
         "avisMusulmans": 2400,
         "derniereVerification": "2026-05",
         "badge": "HALAL DÉCLARÉ"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.5,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Hyatt+Regency+Casablanca+Casablanca",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca"
     },
     {
       "id": "h2",
@@ -224,7 +252,15 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.4,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Kenzi+Tower+Casablanca",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca"
     },
     {
       "id": "h3",
@@ -249,7 +285,15 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "categorie": "Standard",
+      "score": 4.1,
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Ibis+Casablanca+City+Center+Casablanca",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca"
     }
   ],
   "activites": [
@@ -264,7 +308,9 @@
         "spirituel",
         "architecture",
         "guidé"
-      ]
+      ],
+      "categorie": "Religieux & Spirituel",
+      "mapsUrl": "https://maps.google.com/?q=Visite+guid%C3%A9e+Mosqu%C3%A9e+Hassan+II+Casablanca"
     },
     {
       "id": "a2",
@@ -277,7 +323,9 @@
         "nature",
         "famille",
         "soirée"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Corniche+d%27A%C3%AFn+Diab+Casablanca"
     },
     {
       "id": "a3",
@@ -290,7 +338,9 @@
         "shopping",
         "histoire",
         "artisanat"
-      ]
+      ],
+      "categorie": "Shopping & Souks",
+      "mapsUrl": "https://maps.google.com/?q=Ancienne+M%C3%A9dina+%26+Quartier+Habous+Casablanca"
     },
     {
       "id": "a4",
@@ -302,7 +352,9 @@
       "tags": [
         "art",
         "culture"
-      ]
+      ],
+      "categorie": "Hammam & Bien-être",
+      "mapsUrl": "https://maps.google.com/?q=La+Fabrique+Culturelle+Casablanca"
     }
   ],
   "road_trips": [

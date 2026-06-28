@@ -57,7 +57,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "Mosquée de Paris / AVS"
-      }
+      },
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.7,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Le+Diamant+Rose+Paris"
     },
     {
       "id": "r2",
@@ -85,7 +90,12 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "Mosquée de Paris / AVS"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.6,
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Tintilou+Paris"
     },
     {
       "id": "r3",
@@ -113,7 +123,12 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "Mosquée de Paris / AVS"
-      }
+      },
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.5,
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Noura+Paris"
     },
     {
       "id": "r4",
@@ -141,7 +156,12 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "Mosquée de Paris / AVS"
-      }
+      },
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.4,
+      "priceRange": "€",
+      "mapsUrl": "https://maps.google.com/?q=Breakfast+in+America+Paris"
     }
   ],
   "mosquees": [
@@ -199,7 +219,15 @@
         "avisMusulmans": 1200,
         "derniereVerification": "2026-05",
         "badge": "À VÉRIFIER"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.8,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Marignan+Champs-%C3%89lys%C3%A9es+Paris",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris"
     },
     {
       "id": "h2",
@@ -223,7 +251,15 @@
         "avisMusulmans": 1800,
         "derniereVerification": "2026-05",
         "badge": "À VÉRIFIER"
-      }
+      },
+      "categorie": "Standard",
+      "score": 4.5,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Elys%C3%A9es+Op%C3%A9ra+Paris",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris"
     },
     {
       "id": "h3",
@@ -247,7 +283,15 @@
         "avisMusulmans": 6400,
         "derniereVerification": "2026-05",
         "badge": "À VÉRIFIER"
-      }
+      },
+      "categorie": "Standard",
+      "score": 4.2,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=ibis+Paris+Gare+du+Nord+Paris",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris"
     }
   ],
   "activites": [
@@ -262,7 +306,9 @@
         "incontournable",
         "vue",
         "famille"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Tour+Eiffel+%26+Trocad%C3%A9ro+Paris"
     },
     {
       "id": "a2",
@@ -275,7 +321,9 @@
         "culture",
         "art islamique",
         "incontournable"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+du+Louvre+Paris"
     },
     {
       "id": "a3",
@@ -288,7 +336,9 @@
         "balade",
         "histoire",
         "shopping"
-      ]
+      ],
+      "categorie": "Shopping & Souks",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+du+Marais+Paris"
     },
     {
       "id": "a4",
@@ -301,7 +351,9 @@
         "romantique",
         "famille",
         "soir"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+la+Seine+Paris"
     }
   ],
   "road_trips": [

@@ -57,7 +57,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "HMC"
-      }
+      },
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.7,
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Tayyabs+Londres"
     },
     {
       "id": "r2",
@@ -85,7 +90,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "HMC"
-      }
+      },
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.6,
+      "priceRange": "€",
+      "mapsUrl": "https://maps.google.com/?q=Patisserie+Yasmina+Londres"
     },
     {
       "id": "r3",
@@ -113,7 +123,12 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "HMC"
-      }
+      },
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.8,
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Dishoom+Shoreditch+Londres"
     },
     {
       "id": "r4",
@@ -141,7 +156,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "HMC"
-      }
+      },
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "priceRange": "€",
+      "mapsUrl": "https://maps.google.com/?q=HMart+Food+Court+Londres"
     }
   ],
   "mosquees": [
@@ -199,7 +219,15 @@
         "avisMusulmans": 3800,
         "derniereVerification": "2026-05",
         "badge": "À VÉRIFIER"
-      }
+      },
+      "categorie": "Luxe",
+      "score": 4.9,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=The+Savoy+Londres",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres"
     },
     {
       "id": "h2",
@@ -223,7 +251,15 @@
         "avisMusulmans": 7200,
         "derniereVerification": "2026-05",
         "badge": "À VÉRIFIER"
-      }
+      },
+      "categorie": "Standard",
+      "score": 4.5,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Premier+Inn+London+City+%28Aldgate%29+Londres",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres"
     },
     {
       "id": "h3",
@@ -247,7 +283,15 @@
         "avisMusulmans": 4100,
         "derniereVerification": "2026-05",
         "badge": "À VÉRIFIER"
-      }
+      },
+      "categorie": "Standard",
+      "score": 4.6,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Park+Plaza+London+Waterloo+Londres",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres"
     }
   ],
   "activites": [
@@ -262,7 +306,9 @@
         "histoire",
         "incontournable",
         "famille"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Tour+de+Londres+%26+Tower+Bridge+Londres"
     },
     {
       "id": "a2",
@@ -275,7 +321,9 @@
         "gratuit",
         "art islamique",
         "famille"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=British+Museum+Londres"
     },
     {
       "id": "a3",
@@ -288,7 +336,9 @@
         "curry",
         "halal",
         "multiculturel"
-      ]
+      ],
+      "categorie": "Shopping & Souks",
+      "mapsUrl": "https://maps.google.com/?q=Brick+Lane+%26+Spitalfields+Londres"
     },
     {
       "id": "a4",
@@ -301,7 +351,9 @@
         "nature",
         "gratuit",
         "famille"
-      ]
+      ],
+      "categorie": "Nature & Plein air",
+      "mapsUrl": "https://maps.google.com/?q=Hyde+Park+%26+Kensington+Gardens+Londres"
     }
   ],
   "road_trips": [

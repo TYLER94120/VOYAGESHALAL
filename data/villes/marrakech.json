@@ -57,7 +57,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Le+Jardin+Marrakech"
     },
     {
       "id": "r2",
@@ -85,7 +90,12 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Nomad+Marrakech"
     },
     {
       "id": "r3",
@@ -113,7 +123,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Al+Fassia+Marrakech"
     },
     {
       "id": "r4",
@@ -141,7 +156,12 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.4,
+      "priceRange": "€",
+      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+des+%C3%89pices+Marrakech"
     }
   ],
   "mosquees": [
@@ -200,7 +220,15 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "categorie": "Riad & Boutique",
+      "score": 4.8,
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Riad+Dar+Anika+Marrakech",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech"
     },
     {
       "id": "h2",
@@ -225,7 +253,15 @@
         "derniereVerification": "2026-05",
         "badge": "HALAL VÉRIFIÉ",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "categorie": "Riad & Boutique",
+      "score": 4.9,
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=La+Maison+Arabe+Marrakech",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech"
     },
     {
       "id": "h3",
@@ -250,7 +286,15 @@
         "derniereVerification": "2026-05",
         "badge": "CERTIFIÉ EXCELLENCE",
         "organisationCertification": "ONSSA Halal"
-      }
+      },
+      "categorie": "Riad & Boutique",
+      "score": 4.7,
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "priceRange": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Riad+Kniza+Marrakech",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech"
     }
   ],
   "activites": [
@@ -266,7 +310,9 @@
         "shopping",
         "histoire",
         "famille"
-      ]
+      ],
+      "categorie": "Shopping & Souks",
+      "mapsUrl": "https://maps.google.com/?q=Visite+de+la+M%C3%A9dina+et+des+souks+Marrakech"
     },
     {
       "id": "a2",
@@ -279,7 +325,9 @@
         "jardin",
         "art",
         "couple"
-      ]
+      ],
+      "categorie": "Nature & Plein air",
+      "mapsUrl": "https://maps.google.com/?q=Jardins+Majorelle+Marrakech"
     },
     {
       "id": "a3",
@@ -292,7 +340,9 @@
         "bien-être",
         "authentique",
         "séparé H/F"
-      ]
+      ],
+      "categorie": "Hammam & Bien-être",
+      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+Marrakech"
     },
     {
       "id": "a4",
@@ -305,7 +355,9 @@
         "montagne",
         "randonnée",
         "famille"
-      ]
+      ],
+      "categorie": "Nature & Plein air",
+      "mapsUrl": "https://maps.google.com/?q=Excursion+dans+l%27Atlas+Marrakech"
     },
     {
       "id": "a5",
@@ -318,7 +370,9 @@
         "culture",
         "soirée",
         "famille"
-      ]
+      ],
+      "categorie": "Histoire & Culture",
+      "mapsUrl": "https://maps.google.com/?q=Place+Jemaa+el-Fna+au+coucher+du+soleil+Marrakech"
     }
   ],
   "road_trips": [
