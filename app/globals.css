@@ -30,6 +30,12 @@
   --texte: #1a1a1a;
   --texte-2: #6b7280;
 
+  /* Sémantiques mobile */
+  --halal-bg: #E7F4EA;
+  --halal-tx: #1B7A47;
+  --booking: #003580;
+  --whatsapp: #25D366;
+
   /* alias internes */
   --night: #0b1a0f;
   --forest: #1b4332;
@@ -502,4 +508,14 @@
 @media (max-width: 480px) {
   .quick-access { gap: 8px; }
   .qa-btn { padding: 12px 4px; font-size: 11px; }
+}
+
+/* ===== Animations mobile premium ===== */
+@keyframes pulse-green {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.6; transform: scale(1.3); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
 }

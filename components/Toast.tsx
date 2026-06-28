@@ -1,21 +1,24 @@
 'use client'
 import { useState, useEffect } from 'react'
 
-let showToastGlobal: ((msg: string) => void) | null = null
+type ToastType = 'default' | 'success'
+let showToastGlobal: ((msg: string, type?: ToastType) => void) | null = null
 
 export function useToast() {
-  return (msg: string) => showToastGlobal?.(msg)
+  return (msg: string, type: ToastType = 'default') => showToastGlobal?.(msg, type)
 }
 
 export function ToastProvider() {
   const [visible, setVisible] = useState(false)
   const [msg, setMsg] = useState('')
+  const [type, setType] = useState<ToastType>('default')
 
   useEffect(() => {
-    showToastGlobal = (message: string) => {
+    showToastGlobal = (message: string, t: ToastType = 'default') => {
       setMsg(message)
+      setType(t)
       setVisible(true)
-      setTimeout(() => setVisible(false), 2200)
+      setTimeout(() => setVisible(false), 2600)
     }
     return () => {
       showToastGlobal = null
@@ -33,19 +36,23 @@ export function ToastProvider() {
         transition: 'all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1)',
         pointerEvents: 'none',
         zIndex: 9999,
-        background: 'var(--foret)',
-        color: 'white',
-        borderRadius: '20px',
-        padding: '0.6rem 1.25rem',
+        background: 'var(--nuit)',
+        border: `1px solid ${type === 'success' ? 'rgba(201,168,76,0.6)' : 'rgba(201,168,76,0.3)'}`,
+        borderLeft: type === 'success' ? '3px solid var(--or)' : undefined,
+        color: 'var(--creme)',
+        borderRadius: '14px',
+        padding: '0.7rem 1.1rem',
         fontSize: '14px',
         fontWeight: 600,
-        boxShadow: '0 8px 24px rgba(0,0,0,0.2)',
+        boxShadow: '0 10px 30px rgba(11,26,15,0.3)',
         display: 'flex',
         alignItems: 'center',
         gap: '0.5rem',
+        maxWidth: '320px',
       }}
     >
-      ✓ {msg}
+      {type === 'success' && <span style={{ color: 'var(--or)' }}>✓</span>}
+      {msg}
     </div>
   )
 }

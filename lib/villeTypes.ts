@@ -162,4 +162,15 @@ export interface Ville {
   }
   articles_lies?: string[]
   villes_proches?: string[]
+  // Champs premium / mobile
+  halalScore?: number
+  monnaie?: string
+  langue?: string
+  meilleureEpoque?: string
+  prixMoyenNuit?: string
+  infoPratique?: Record<string, string>
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  mosqueesPrincipales?: any[]
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  selectionsPremium?: Record<string, any>
 }
