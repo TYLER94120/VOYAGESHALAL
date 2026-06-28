@@ -3,8 +3,8 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import type { Ville } from '@/lib/villeTypes'
-import { HalalTrustScore } from '@/components/HalalTrustScore'
 import { PrayerTimesWidget } from '@/components/PrayerTimesWidget'
+import CategorizedDirectory from '@/components/villes/CategorizedDirectory'
 
 interface Props {
   ville: Ville
@@ -58,46 +58,7 @@ export default function CityTabs({ ville, apiCityName }: Props) {
       </div>
 
       {active === 'restaurants' && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {ville.restaurants.map((r) => (
-            <div key={r.id} className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="font-bold text-gray-900 text-lg leading-tight">{r.nom}</h3>
-                <span className="text-sm font-medium text-gray-400 shrink-0 ml-2">{r.fourchette_prix}</span>
-              </div>
-              <p className="text-sm text-gray-500 mb-1">{r.cuisine}</p>
-              <p className="text-xs text-gray-400 mb-3">📍 {r.adresse}</p>
-              <div className="flex flex-wrap gap-1 mb-3">
-                {r.halal_certifie && (
-                  <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide" style={{ backgroundColor: '#f0fdf4', color: '#16a34a' }}>
-                    Halal certifié
-                  </span>
-                )}
-                {r.sans_alcool && (
-                  <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wide" style={{ backgroundColor: '#eff6ff', color: '#2563eb' }}>
-                    Sans alcool
-                  </span>
-                )}
-              </div>
-              <div className="flex items-center justify-between text-sm">
-                <div className="flex items-center gap-1">
-                  <span style={{ color: GOLD }}>★</span>
-                  <span className="font-semibold">{r.note}</span>
-                  <span className="text-gray-400">({(r.avis_count ?? 0).toLocaleString('fr-FR')} avis)</span>
-                </div>
-                <span className="text-gray-400 text-xs">{r.horaires}</span>
-              </div>
-              {(r.specialites ?? []).length > 0 && (
-                <div className="mt-3 flex flex-wrap gap-1">
-                  {(r.specialites ?? []).map((s) => (
-                    <span key={s} className="px-2 py-0.5 bg-gray-50 text-gray-500 rounded text-xs">{s}</span>
-                  ))}
-                </div>
-              )}
-              {r.halalScore && <HalalTrustScore score={r.halalScore} />}
-            </div>
-          ))}
-        </div>
+        <CategorizedDirectory kind="resto" items={ville.restaurants} ville={ville.nom} />
       )}
 
       {active === 'mosquees' && (
@@ -148,60 +109,12 @@ export default function CityTabs({ ville, apiCityName }: Props) {
       )}
 
       {active === 'hotels' && (ville.hotels?.length ?? 0) > 0 && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {ville.hotels.map((h) => (
-            <div key={h.id} className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="font-bold text-gray-900 text-lg leading-tight">{h.nom}</h3>
-                <div className="flex shrink-0 ml-2">
-                  {Array.from({ length: h.etoiles }).map((_, i) => (
-                    <span key={i} style={{ color: GOLD }} className="text-sm">★</span>
-                  ))}
-                </div>
-              </div>
-              <p className="text-sm text-gray-500 mb-1">{h.type}</p>
-              <p className="text-xs text-gray-400 mb-3">📍 {h.adresse}</p>
-              <div className="flex flex-wrap gap-1 mb-3">
-                {h.halal_certifie && <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase" style={{ backgroundColor: '#f0fdf4', color: '#16a34a' }}>Halal certifié</span>}
-                {h.sans_alcool && <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase" style={{ backgroundColor: '#eff6ff', color: '#2563eb' }}>Sans alcool</span>}
-                {h.piscine_privee && <span className="px-2 py-0.5 rounded-full text-[10px] font-bold uppercase" style={{ backgroundColor: '#fefce8', color: '#ca8a04' }}>Piscine privée</span>}
-              </div>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-1 text-sm">
-                  <span style={{ color: GOLD }}>★</span>
-                  <span className="font-semibold">{h.note}</span>
-                  <span className="text-gray-400">({(h.avis_count ?? 0).toLocaleString('fr-FR')} avis)</span>
-                </div>
-                <p className="font-bold" style={{ color: GREEN }}>À partir de {h.prix_nuit_min}{h.devise === 'EUR' ? '€' : h.devise === 'GBP' ? '£' : h.devise}/nuit</p>
-              </div>
-              {h.halalScore && <HalalTrustScore score={h.halalScore} />}
-            </div>
-          ))}
-        </div>
+        <CategorizedDirectory kind="hotel" items={ville.hotels} ville={ville.nom} />
       )}
 
       {active === 'activites' && (
         <div className="space-y-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {ville.activites.map((a) => (
-              <div key={a.id} className="bg-white rounded-2xl p-6 border border-gray-100 hover:shadow-md transition-shadow">
-                <p className="text-[10px] font-bold uppercase tracking-widest mb-2" style={{ color: GOLD }}>{a.type}</p>
-                <h3 className="font-bold text-gray-900 text-lg leading-tight mb-1">{a.nom}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-3">{a.description}</p>
-                <div className="flex items-center gap-4 text-sm text-gray-500">
-                  <span>⏱ {a.duree}</span>
-                  <span style={{ color: GREEN }} className="font-medium">{a.prix}</span>
-                </div>
-                {(a.tags ?? []).length > 0 && (
-                  <div className="mt-3 flex flex-wrap gap-1">
-                    {(a.tags ?? []).map((tag) => (
-                      <span key={tag} className="px-2 py-0.5 bg-gray-50 text-gray-500 rounded text-xs">{tag}</span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
+          <CategorizedDirectory kind="activite" items={ville.activites} ville={ville.nom} />
 
           {ville.road_trips && ville.road_trips.length > 0 && (
             <div>

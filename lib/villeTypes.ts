@@ -31,6 +31,14 @@ export interface VilleRestaurant {
   specialites?: string[]
   ouvertSuhoor?: boolean
   halalScore?: HalalScore
+  description?: string
+  // Champs enrichis (catégories + liens externes)
+  type?: string
+  certificationHalal?: boolean
+  score?: number
+  mapsUrl?: string
+  websiteUrl?: string
+  priceRange?: string
 }
 
 export interface VilleMosquee {
@@ -47,27 +55,41 @@ export interface VilleMosquee {
 export interface VilleHotel {
   id: string
   nom: string
-  type: string
+  type?: string
   adresse: string
-  etoiles: number
-  halal_certifie: boolean
-  sans_alcool: boolean
-  piscine_privee: boolean
+  etoiles?: number
+  halal_certifie?: boolean
+  sans_alcool?: boolean
+  piscine_privee?: boolean
   note: number
   avis_count?: number
   prix_nuit_min?: number
   devise?: string
   halalScore?: HalalScore
+  description?: string
+  // Champs enrichis
+  categorie?: string
+  score?: number
+  halalFriendly?: boolean
+  sansAlcool?: boolean
+  mapsUrl?: string
+  bookingUrl?: string
+  halalBookingUrl?: string
+  priceRange?: string
 }
 
 export interface VilleActivite {
   id: string
   nom: string
-  type: string
-  description: string
-  duree: string
-  prix: string
+  type?: string
+  description?: string
+  duree?: string
+  prix?: string
   tags?: string[]
+  // Champs enrichis
+  categorie?: string
+  mapsUrl?: string
+  tripadvisorUrl?: string
 }
 
 export interface VilleRoadTrip {
