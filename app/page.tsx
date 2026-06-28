@@ -7,12 +7,11 @@ import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { buildWebSiteSchema, buildOrganizationSchema, buildMetadata } from '@/lib/seo'
 import { guides } from '@/lib/data'
-import SearchBarHome from '@/components/search/SearchBarHome'
+import HomeHeroActions from '@/components/home/HomeHeroActions'
 import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import MobileHome from '@/components/mobile/MobileHome'
-import GeoDashboard from '@/components/mobile/GeoDashboard'
 
 // Destinations mises en avant sur l'accueil mobile (app-style)
 const MOBILE_DESTINATIONS = [
@@ -79,47 +78,38 @@ export default function HomePage() {
     {/* Accueil app-style — < 1024px */}
     <MobileHome totalVilles={totalVilles} destinations={MOBILE_DESTINATIONS} />
     <main className="hidden lg:block" style={{ backgroundColor: '#fdfaf3' }}>
-      {/* Hero Premium Islamic */}
-      <section className="relative overflow-hidden px-6 sm:px-12 pt-24 pb-28 text-center" style={{ backgroundColor: '#0b1a0f' }}>
-        <IslamicPattern opacity={0.07} />
-        <div className="relative z-10 max-w-4xl mx-auto">
-          <p style={{ color: '#c9a84c' }} className="text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] mb-6">
+      {/* Hero plein écran minimaliste */}
+      <section
+        className="relative overflow-hidden flex items-center justify-center text-center px-6"
+        style={{ minHeight: '90vh', backgroundColor: '#0b1a0f' }}
+      >
+        {/* Image d'architecture islamique (sans personne) + voile sombre */}
+        <Image
+          src="https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1920&q=80"
+          alt="Architecture islamique"
+          fill
+          priority
+          sizes="100vw"
+          style={{ objectFit: 'cover', opacity: 0.34 }}
+        />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(11,26,15,0.7) 0%, rgba(11,26,15,0.85) 100%)' }} />
+        <IslamicPattern opacity={0.06} />
+
+        <div className="relative z-10 max-w-3xl mx-auto w-full">
+          <p style={{ color: '#c9a84c' }} className="text-xs sm:text-sm font-semibold uppercase tracking-[0.35em] mb-7">
             Voyagez avec foi
           </p>
           <h1
-            className="text-5xl sm:text-6xl lg:text-7xl text-white leading-[1.05] mb-8"
+            className="text-5xl sm:text-6xl lg:text-7xl text-white leading-[1.04] mb-7"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
           >
             L&apos;Islam guide votre <span className="gold-em">voyage</span>
           </h1>
-          <p className="text-white/65 text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
-            Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans {totalVilles}+
-            destinations — pour les musulmans du monde entier.
+          <p className="text-white/70 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+            Restaurants halal, mosquées et horaires de prière dans {totalVilles}+ destinations — en un clic.
           </p>
 
-          {/* Recherche glassmorphism */}
-          <div
-            className="max-w-xl mx-auto rounded-2xl p-2"
-            style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(201,168,76,0.35)', backdropFilter: 'blur(10px)' }}
-          >
-            <SearchBarHome />
-          </div>
-
-          {/* Ligne de confiance */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-sm text-white/55">
-            <span><strong className="text-white/80">1 200+</strong> mosquées</span>
-            <span style={{ color: '#c9a84c' }}>·</span>
-            <span><strong className="text-white/80">2 500+</strong> restaurants</span>
-            <span style={{ color: '#c9a84c' }}>·</span>
-            <span style={{ color: '#c9a84c' }} className="font-semibold">Halal Trust Score™</span>
-          </div>
-        </div>
-      </section>
-
-      {/* 📍 Localise-moi — géolocalisation 1-clic, en vedette sous le hero */}
-      <section className="px-4" style={{ marginTop: '-28px', position: 'relative', zIndex: 20 }}>
-        <div className="max-w-3xl mx-auto">
-          <GeoDashboard />
+          <HomeHeroActions />
         </div>
       </section>
 
