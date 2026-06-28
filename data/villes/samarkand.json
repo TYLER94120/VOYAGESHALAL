@@ -1,0 +1,908 @@
+{
+  "nom": "Samarkand",
+  "pays": "Ouzbékistan",
+  "slug": "samarkand",
+  "image": "https://images.unsplash.com/photo-1509279083988-3b2c0e54b0d2?w=1400&q=85",
+  "image_hero": "https://images.unsplash.com/photo-1509279083988-3b2c0e54b0d2?w=1400&q=85",
+  "description": "Samarkand, joyau de la Route de la Soie, éblouit par le Registan et ses médersas aux mosaïques d'azur. Berceau de la science islamique et de Tamerlan.",
+  "descriptionLongue": "Cité légendaire de la Route de la Soie, Samarkand fut la capitale de l'empire de Tamerlan. Le Registan, place bordée de trois médersas aux faïences turquoise, est l'un des plus beaux ensembles de l'art islamique. La nécropole Shah-i-Zinda, la mosquée Bibi-Khanym et l'observatoire d'Ulugh Beg témoignent d'un âge d'or scientifique et spirituel. Ville entièrement halal à l'hospitalité ouzbèke légendaire.",
+  "halalScore": 9.0,
+  "score_halal": 4.5,
+  "mosquees": 300,
+  "population": "550 000",
+  "langue": "Ouzbek, Russe",
+  "monnaie": "Sum (UZS)",
+  "fuseau": "UTC+5",
+  "meilleureEpoque": "Avril à Juin, Sept à Oct",
+  "prixMoyenNuit": "50€",
+  "continent": "Asie",
+  "codeISO": "UZ",
+  "pays_slug": "ouzbekistan",
+  "region": "Asie centrale",
+  "meta_title": "Voyage Halal à Samarkand — Guide Complet 2026 | VoyagesHalal",
+  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Samarkand — Halal Trust Score 9.0/10.",
+  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Samarkand — Halal Trust Score 9.0/10.",
+  "coordonnees": {
+    "lat": 39.627,
+    "lng": 66.975
+  },
+  "image_alt": "Vue de Samarkand, Ouzbékistan",
+  "statistiques": {
+    "mosquees": 300,
+    "restaurants_halal": 750,
+    "habitants_musulmans_pct": 96
+  },
+  "infos_pratiques": {
+    "langue": "Ouzbek, Russe",
+    "monnaie": "Sum (UZS)",
+    "meilleure_periode": "Avril à Juin, Sept à Oct",
+    "appel_priere": "5 fois par jour",
+    "nourriture_halal": "Largement disponible",
+    "alcool": "Réglementé",
+    "securite": "Précautions habituelles"
+  },
+  "infoPratique": {
+    "visa": "Exemption de visa pour les Français (30 jours)",
+    "vaccins": "Aucun obligatoire",
+    "transport": "Train rapide Afrosiyob, taxis, marche",
+    "priseElectrique": "Type C/F — 220V",
+    "decalageHoraire": "+4h par rapport à Paris (hiver)"
+  },
+  "restaurants": [
+    {
+      "nom": "Platan Restaurant",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Centre",
+      "description": "Cuisine ouzbèke raffinée au centre",
+      "mapsUrl": "https://maps.google.com/?q=Platan+Restaurant+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Cuisine ouzbèke",
+      "id": "r1"
+    },
+    {
+      "nom": "Samarkand Restaurant",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Centre",
+      "description": "Plov et chachlik traditionnels",
+      "mapsUrl": "https://maps.google.com/?q=Samarkand+Restaurant+Samarkand",
+      "priceRange": "€",
+      "specialite": "Plov",
+      "id": "r2"
+    },
+    {
+      "nom": "Bibikhanum Teahouse",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Vieille ville",
+      "description": "Maison de thé face à Bibi-Khanym",
+      "mapsUrl": "https://maps.google.com/?q=Bibikhanum+Teahouse+Samarkand",
+      "priceRange": "€",
+      "specialite": "Thé et samsa",
+      "id": "r3"
+    },
+    {
+      "nom": "Karimbek",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Centre",
+      "description": "Institution ouzbèke réputée",
+      "mapsUrl": "https://maps.google.com/?q=Karimbek+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Plov et manti",
+      "id": "r4"
+    },
+    {
+      "nom": "Old City Restaurant",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Vieille ville",
+      "description": "Cuisine de la Route de la Soie",
+      "mapsUrl": "https://maps.google.com/?q=Old+City+Restaurant+Samarkand",
+      "priceRange": "€",
+      "specialite": "Lagman",
+      "id": "r5"
+    },
+    {
+      "nom": "Al Madina Samarkand",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Samarkand",
+      "description": "Adresse halal appréciée des habitants de Samarkand.",
+      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Samarkand+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Plat du jour maison",
+      "id": "r6"
+    },
+    {
+      "nom": "Shawarma House Samarkand",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Samarkand",
+      "description": "Adresse halal appréciée des habitants de Samarkand.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Samarkand+Samarkand",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "id": "r7"
+    },
+    {
+      "nom": "Beit Beirut Samarkand",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Samarkand",
+      "description": "Adresse halal appréciée des habitants de Samarkand.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Samarkand+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Mezze libanais",
+      "id": "r8"
+    },
+    {
+      "nom": "Spice Route Samarkand",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Samarkand",
+      "description": "Adresse halal appréciée des habitants de Samarkand.",
+      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Samarkand+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Biryani",
+      "id": "r9"
+    },
+    {
+      "nom": "Saffron Garden Samarkand",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.6000000000000005,
+      "adresse": "Samarkand",
+      "description": "Adresse halal appréciée des habitants de Samarkand.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Samarkand+Samarkand",
+      "priceRange": "€€€",
+      "specialite": "Menu dégustation halal",
+      "id": "r10"
+    },
+    {
+      "nom": "Green Bowl Samarkand",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Samarkand",
+      "description": "Adresse halal appréciée des habitants de Samarkand.",
+      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Samarkand+Samarkand",
+      "priceRange": "€",
+      "specialite": "Bowl méditerranéen",
+      "id": "r11"
+    },
+    {
+      "nom": "Sultan Café Samarkand",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Samarkand",
+      "description": "Adresse halal appréciée des habitants de Samarkand.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Samarkand+Samarkand",
+      "priceRange": "€",
+      "specialite": "Café arabe et baklava",
+      "id": "r12"
+    },
+    {
+      "nom": "Ocean Pearl Samarkand",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Samarkand",
+      "description": "Adresse halal appréciée des habitants de Samarkand.",
+      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Samarkand+Samarkand",
+      "priceRange": "€€€",
+      "specialite": "Poisson grillé du jour",
+      "id": "r13"
+    },
+    {
+      "nom": "Bella Halal Samarkand",
+      "type": "Pizza & Italien",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Samarkand",
+      "description": "Adresse halal appréciée des habitants de Samarkand.",
+      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Samarkand+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Pizza halal au four à bois",
+      "id": "r14"
+    },
+    {
+      "nom": "Tokyo Halal Samarkand",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.6000000000000005,
+      "adresse": "Samarkand",
+      "description": "Adresse halal appréciée des habitants de Samarkand.",
+      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Samarkand+Samarkand",
+      "priceRange": "€€€",
+      "specialite": "Sushis certifiés halal",
+      "id": "r15"
+    },
+    {
+      "nom": "Choyxona Milliy",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Samarkand",
+      "description": "Adresse traditionnel local appréciée à Samarkand, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Choyxona+Milliy+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Plov ouzbek",
+      "nombreAvis": 1805,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Registon Osh",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Samarkand",
+      "description": "Adresse traditionnel local appréciée à Samarkand, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Registon+Osh+Samarkand",
+      "priceRange": "€",
+      "specialite": "Osh et samsa",
+      "nombreAvis": 1135,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Navruz Restaurant",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Samarkand",
+      "description": "Adresse gastronomique appréciée à Samarkand, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Navruz+Restaurant+Samarkand",
+      "priceRange": "€€€",
+      "specialite": "Menu national",
+      "nombreAvis": 1456,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Bahor Café",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Samarkand",
+      "description": "Adresse pâtisserie & café appréciée à Samarkand, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bahor+Caf%C3%A9+Samarkand",
+      "priceRange": "€",
+      "specialite": "Thé et baklava",
+      "nombreAvis": 1620,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Sharq Grill",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Samarkand",
+      "description": "Adresse grillades & kebab appréciée à Samarkand, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sharq+Grill+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Chachlik",
+      "nombreAvis": 533,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r20"
+    },
+    {
+      "nom": "Beit Levant",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Samarkand",
+      "description": "Adresse libanais & levant appréciée à Samarkand, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Levant+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Mezze",
+      "nombreAvis": 747,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r21"
+    },
+    {
+      "nom": "Yashil Healthy",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Samarkand",
+      "description": "Adresse végétarien & healthy appréciée à Samarkand, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Yashil+Healthy+Samarkand",
+      "priceRange": "€",
+      "specialite": "Salades",
+      "nombreAvis": 1324,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "rapide",
+        "veggie"
+      ],
+      "id": "r22"
+    },
+    {
+      "nom": "Sea Caspian",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Samarkand",
+      "description": "Adresse fruits de mer appréciée à Samarkand, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sea+Caspian+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Esturgeon grillé",
+      "nombreAvis": 450,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Choyxona Milliy Samarkand 9",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Samarkand",
+      "description": "Adresse traditionnel local appréciée à Samarkand, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Choyxona+Milliy+Samarkand+9+Samarkand",
+      "priceRange": "€€",
+      "specialite": "Plov ouzbek",
+      "nombreAvis": 1334,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r24"
+    },
+    {
+      "nom": "Registon Osh Samarkand 10",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Samarkand",
+      "description": "Adresse traditionnel local appréciée à Samarkand, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Registon+Osh+Samarkand+10+Samarkand",
+      "priceRange": "€",
+      "specialite": "Osh et samsa",
+      "nombreAvis": 3603,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r25"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Hilton Garden Inn Samarkand",
+      "categorie": "Standard",
+      "score": 4.5,
+      "adresse": "Centre",
+      "description": "Hôtel moderne près du centre touristique",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Hilton+Garden+Inn+Samarkand+Samarkand",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Samarkand&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=samarkand",
+      "priceRange": "€€€",
+      "id": "h1"
+    },
+    {
+      "nom": "Registan Plaza",
+      "categorie": "Standard",
+      "score": 4.5,
+      "adresse": "Centre",
+      "description": "Hôtel confortable proche du Registan",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Registan+Plaza+Samarkand",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Samarkand&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=samarkand",
+      "priceRange": "€€",
+      "id": "h2"
+    },
+    {
+      "nom": "Bibikhanum Hotel",
+      "categorie": "Riad & Boutique",
+      "score": 4.5,
+      "adresse": "Vieille ville",
+      "description": "Maison d'hôtes traditionnelle de charme",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Bibikhanum+Hotel+Samarkand",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Samarkand&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=samarkand",
+      "priceRange": "€€",
+      "id": "h3"
+    },
+    {
+      "nom": "Grand Plaza Samarkand",
+      "categorie": "Luxe",
+      "score": 4.2,
+      "adresse": "Samarkand",
+      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Samarkand+Samarkand",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Samarkand&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=samarkand",
+      "priceRange": "€€€€",
+      "id": "h4"
+    },
+    {
+      "nom": "City Comfort Hotel Samarkand",
+      "categorie": "Standard",
+      "score": 4.3,
+      "adresse": "Samarkand",
+      "description": "Confortable et bien situé, petit-déjeuner halal.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Samarkand+Samarkand",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Samarkand&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=samarkand",
+      "priceRange": "€€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Boutique Riad Samarkand",
+      "categorie": "Riad & Boutique",
+      "score": 4.4,
+      "adresse": "Samarkand",
+      "description": "Maison d'hôtes intime sans alcool.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Samarkand+Samarkand",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Samarkand&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=samarkand",
+      "priceRange": "€€€",
+      "id": "h6"
+    },
+    {
+      "nom": "Grand Plaza Samarkand 0",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Samarkand",
+      "description": "Hébergement halal-friendly à Samarkand.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Samarkand+0+Samarkand",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Samarkand&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=samarkand",
+      "priceRange": "€€€€",
+      "nombreAvis": 1123,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h7"
+    },
+    {
+      "nom": "City Comfort Samarkand",
+      "categorie": "Standard",
+      "score": 4.4,
+      "adresse": "Samarkand",
+      "description": "Hébergement halal-friendly à Samarkand.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Samarkand+Samarkand",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Samarkand&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=samarkand",
+      "priceRange": "€€€",
+      "nombreAvis": 2420,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ],
+      "id": "h8"
+    }
+  ],
+  "activites": [
+    {
+      "nom": "Place du Registan",
+      "categorie": "Histoire & Culture",
+      "description": "Ensemble de trois médersas aux mosaïques turquoise",
+      "duree": "2-3h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Place+du+Registan+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+du+Registan+Samarkand",
+      "id": "a1"
+    },
+    {
+      "nom": "Nécropole Shah-i-Zinda",
+      "categorie": "Religieux & Spirituel",
+      "description": "Allée de mausolées aux faïences éblouissantes",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=N%C3%A9cropole+Shah-i-Zinda+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=N%C3%A9cropole+Shah-i-Zinda+Samarkand",
+      "id": "a2"
+    },
+    {
+      "nom": "Mosquée Bibi-Khanym",
+      "categorie": "Religieux & Spirituel",
+      "description": "Immense mosquée du XVe siècle de Tamerlan",
+      "duree": "1h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bibi-Khanym+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Bibi-Khanym+Samarkand",
+      "id": "a3"
+    },
+    {
+      "nom": "Mausolée Gour Emir",
+      "categorie": "Histoire & Culture",
+      "description": "Tombeau de Tamerlan au dôme nervuré",
+      "duree": "1h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e+Gour+Emir+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mausol%C3%A9e+Gour+Emir+Samarkand",
+      "id": "a4"
+    },
+    {
+      "nom": "Observatoire d'Ulugh Beg",
+      "categorie": "Art & Musées",
+      "description": "Observatoire astronomique du XVe siècle",
+      "duree": "1h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Observatoire+d%27Ulugh+Beg+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Observatoire+d%27Ulugh+Beg+Samarkand",
+      "id": "a5"
+    },
+    {
+      "nom": "Bazar de Siab",
+      "categorie": "Shopping & Souks",
+      "description": "Marché coloré d'épices, pains et fruits secs",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Bazar+de+Siab+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Bazar+de+Siab+Samarkand",
+      "id": "a6"
+    },
+    {
+      "nom": "Mosquée Hazrat Khizr",
+      "categorie": "Religieux & Spirituel",
+      "description": "Mosquée panoramique sur la vieille ville",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Hazrat+Khizr+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Hazrat+Khizr+Samarkand",
+      "id": "a7"
+    },
+    {
+      "nom": "Site antique d'Afrasiab",
+      "categorie": "Histoire & Culture",
+      "description": "Ruines de l'antique Samarkand et musée",
+      "duree": "1-2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Site+antique+d%27Afrasiab+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Site+antique+d%27Afrasiab+Samarkand",
+      "id": "a8"
+    },
+    {
+      "nom": "Vieille ville de Samarkand",
+      "categorie": "Histoire & Culture",
+      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Samarkand+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Samarkand+Samarkand",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand souk de Samarkand",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Samarkand+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Samarkand+Samarkand",
+      "id": "a10"
+    },
+    {
+      "nom": "Quartier historique de Samarkand",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Samarkand+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Samarkand+Samarkand",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Grand marché central de Samarkand",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Samarkand+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Samarkand+Samarkand",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Samarkand",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Samarkand+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Samarkand+Samarkand",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Musée de la ville de Samarkand",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Samarkand+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Samarkand+Samarkand",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Food tour halal de Samarkand",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Samarkand+Samarkand",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Samarkand+Samarkand",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée Bibi-Khanym",
+      "description": "Mosquée monumentale de 1404 commandée par Tamerlan",
+      "adresse": "Vieille ville",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bibi-Khanym+Samarkand",
+      "capacite": 8389,
+      "anneeConstruction": 1879,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 39.627,
+        "lng": 66.975
+      }
+    },
+    {
+      "nom": "Mosquée Hazrat Khizr",
+      "description": "Mosquée historique au sommet d'une colline panoramique",
+      "adresse": "Tashkent Road",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Hazrat+Khizr+Samarkand",
+      "capacite": 4004,
+      "anneeConstruction": 1864,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 39.627,
+        "lng": 66.975
+      }
+    },
+    {
+      "nom": "Mosquée centrale de Samarkand",
+      "description": "Mosquée fréquentée de Samarkand, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Samarkand",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Samarkand+Samarkand",
+      "capacite": 5407,
+      "anneeConstruction": 2007,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 39.627,
+        "lng": 66.975
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Samarkand",
+      "description": "Mosquée fréquentée de Samarkand, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Samarkand",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Samarkand+Samarkand",
+      "capacite": 5542,
+      "anneeConstruction": 2002,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 39.627,
+        "lng": 66.975
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Samarkand",
+      "description": "Mosquée fréquentée de Samarkand, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Samarkand",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Samarkand+Samarkand",
+      "capacite": 4288,
+      "anneeConstruction": 1968,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 39.627,
+        "lng": 66.975
+      }
+    }
+  ],
+  "tags": [
+    "route-de-la-soie",
+    "registan",
+    "mosaiques",
+    "histoire",
+    "spirituel",
+    "tamerlan"
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Choyxona Milliy",
+      "Choyxona Milliy Samarkand 9",
+      "Registon Osh",
+      "Registon Osh Samarkand 10",
+      "Saffron Garden Samarkand"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Platan Restaurant",
+      "Samarkand Restaurant",
+      "Bibikhanum Teahouse",
+      "Karimbek",
+      "Old City Restaurant"
+    ],
+    "incontournables": [
+      "Registon Osh Samarkand 10",
+      "Choyxona Milliy",
+      "Bahor Café",
+      "Navruz Restaurant",
+      "Choyxona Milliy Samarkand 9"
+    ],
+    "pepitesCachees": [
+      "Platan Restaurant",
+      "Samarkand Restaurant",
+      "Bibikhanum Teahouse"
+    ],
+    "idealFamille": [
+      "Choyxona Milliy",
+      "Registon Osh",
+      "Bahor Café",
+      "Sharq Grill",
+      "Beit Levant"
+    ],
+    "gastronomique": [
+      "Platan Restaurant",
+      "Saffron Garden Samarkand",
+      "Navruz Restaurant"
+    ],
+    "ouvertNuit": [
+      "Registon Osh",
+      "Bahor Café",
+      "Sharq Grill"
+    ],
+    "vueExceptionnelle": [
+      "Sea Caspian"
+    ]
+  }
+}
