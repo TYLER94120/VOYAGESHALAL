@@ -5,7 +5,7 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
-import { buildWebSiteSchema, buildMetadata } from '@/lib/seo'
+import { buildWebSiteSchema, buildOrganizationSchema, buildMetadata } from '@/lib/seo'
 import { guides } from '@/lib/data'
 import SearchBarHome from '@/components/search/SearchBarHome'
 import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
@@ -68,12 +68,14 @@ function getVillesStats() {
 
 export default function HomePage() {
   const websiteSchema = buildWebSiteSchema()
+  const orgSchema = buildOrganizationSchema()
   const featuredGuides = guides.slice(0, 3)
   const { totalVilles } = getVillesStats()
 
   return (
     <>
     <JsonLd data={websiteSchema} />
+    <JsonLd data={orgSchema} />
     {/* Accueil app-style — < 1024px */}
     <MobileHome totalVilles={totalVilles} destinations={MOBILE_DESTINATIONS} />
     <main className="hidden lg:block" style={{ backgroundColor: '#fdfaf3' }}>
