@@ -419,6 +419,10 @@
 @media (max-width: 768px) {
   .bottom-nav { display: flex; }
   body { padding-bottom: 70px; }
+  /* Rendu 100% "app" : on masque le header et le footer desktop sur mobile
+     (navigation assurée par la bottom-nav + les heros de chaque écran). */
+  .header-premium { display: none; }
+  .site-footer { display: none; }
 }
 
 /* ===== Destinations Page ===== */

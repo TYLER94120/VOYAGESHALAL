@@ -28,7 +28,7 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: '#0b1a0f' }} className="relative overflow-hidden text-white/70">
+    <footer style={{ backgroundColor: '#0b1a0f' }} className="site-footer relative overflow-hidden text-white/70">
       <IslamicPattern opacity={0.06} />
       <div className="relative z-10 text-center pt-12 pb-2">
         <p className="font-arabic text-2xl sm:text-3xl mb-1" style={{ color: '#c9a84c' }} dir="rtl">
