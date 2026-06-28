@@ -22,7 +22,8 @@ export function buildMetadata({
   const ogImage = image || `${SITE_URL}/images/og-default.jpg`
 
   return {
-    title: `${title} | ${SITE_NAME}`,
+    // Titre « nu » : le template du layout ajoute « | VoyagesHalal.fr » (évite la répétition)
+    title,
     description,
     metadataBase: new URL(SITE_URL),
     alternates: { canonical: url },

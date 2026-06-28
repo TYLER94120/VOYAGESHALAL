@@ -18,8 +18,8 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} — Voyagez halal dans le monde entier`,
-    template: `%s | ${SITE_NAME}`,
+    default: 'VoyagesHalal.fr — Guide Voyage Halal #1 | Restaurants, Mosquées & Destinations',
+    template: '%s | VoyagesHalal.fr',
   },
   description: DEFAULT_DESCRIPTION,
   keywords: ['voyage halal', 'tourisme halal', 'destinations halal', 'restaurant halal', 'hébergement halal', 'guide voyage musulman'],

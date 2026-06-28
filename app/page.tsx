@@ -22,11 +22,15 @@ const MOBILE_DESTINATIONS = [
   { slug: 'kuala-lumpur', city: 'Kuala Lumpur', country: 'Malaisie', flag: '🇲🇾', image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=300&q=70', score: '9.0', mosquees: '1 200' },
 ]
 
-export const metadata: Metadata = buildMetadata({
-  title: 'Voyages Halal — Voyagez halal, voyagez serein',
-  description: 'Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans plus de 50 destinations — pour les musulmans du monde entier.',
-  path: '/',
-})
+export const metadata: Metadata = {
+  ...buildMetadata({
+    title: 'VoyagesHalal.fr — Guide Voyage Halal #1',
+    description: 'Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans 88+ destinations — pour les musulmans du monde entier.',
+    path: '/',
+  }),
+  // Titre absolu pour l'accueil (pas de suffixe « | VoyagesHalal.fr »)
+  title: { absolute: 'VoyagesHalal.fr — Guide Voyage Halal #1 | Restaurants, Mosquées & Destinations' },
+}
 
 const DESTINATIONS = [
   { slug: 'istanbul', city: 'Istanbul', country: 'Turquie', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80', badge: 'INCONTOURNABLE' },

@@ -12,10 +12,19 @@ const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
+// Nombre réel de villes (lecture du dossier data/villes au build)
+const VILLE_COUNT = (() => {
+  try {
+    return fs.readdirSync(path.join(process.cwd(), 'data', 'villes')).filter((f) => f.endsWith('.json')).length
+  } catch {
+    return 0
+  }
+})()
+
 export const metadata: Metadata = buildMetadata({
   title: 'Destinations Voyage Halal — Meilleures Villes du Monde',
   description:
-    'Toutes les destinations halal du monde : Istanbul, Marrakech, Dubaï, Kuala Lumpur et bien plus. Restaurants halal, mosquées et guides pour chaque ville.',
+    `${VILLE_COUNT}+ destinations halal vérifiées : Istanbul, Marrakech, Dubaï, Kuala Lumpur, La Mecque et bien plus. Restaurants halal certifiés, mosquées et guides pour chaque ville.`,
   path: '/destinations',
 })
 

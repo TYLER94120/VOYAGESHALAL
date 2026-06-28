@@ -127,7 +127,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         <div style={{ position: 'relative', maxWidth: 1280, margin: '0 auto', height: '100%', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', padding: '42px 48px' }}>
           <div style={{ maxWidth: 620 }}>
             <p style={{ color: 'var(--or)', fontSize: '12px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '10px' }}>{ville.pays} · {ville.region ?? ''}</p>
-            <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: '64px', fontWeight: 900, color: '#fff', lineHeight: 1, margin: 0 }}>{ville.nom}</h1>
+            <h1 style={{ fontFamily: "'Playfair Display', serif", color: '#fff', lineHeight: 1.02, margin: 0 }}>
+              <span style={{ fontSize: '20px', fontWeight: 700, color: 'rgba(255,255,255,0.65)' }}>Guide Halal </span>
+              <span style={{ fontSize: '64px', fontWeight: 900 }}>{ville.nom}</span>
+              <span style={{ fontSize: '24px', fontWeight: 700, color: 'rgba(255,255,255,0.65)' }}> 2026</span>
+            </h1>
             {descShort && <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '15px', marginTop: '12px', lineHeight: 1.5, maxWidth: 520 }}>{descShort}</p>}
           </div>
           {halalScore != null && (

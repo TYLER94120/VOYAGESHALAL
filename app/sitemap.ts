@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/omra`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE_URL}/horaires-priere`, changeFrequency: 'daily', priority: 0.8 },
     { url: `${SITE_URL}/qibla`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${SITE_URL}/mosquee-proche`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE_URL}/contact`, changeFrequency: 'yearly', priority: 0.4 },
   ]
 

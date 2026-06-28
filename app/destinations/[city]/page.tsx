@@ -52,12 +52,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const nbMosq = ville.mosqueesPrincipales?.length ?? mosquees ?? 0
   const nbHotels = ville.hotels?.length ?? 0
   return {
-    title: `${ville.nom} Halal — Restaurants, Mosquées, Hôtels | VoyagesHalal.fr`,
-    description: `${nbRestos}+ restaurants halal, ${nbMosq} mosquées, ${nbHotels} hôtels à ${ville.nom}. ${richDesc}`.slice(0, 300),
-    alternates: { canonical: `https://voyageshalal.fr/destinations/${city}` },
+    title: `${ville.nom} Halal 2026 : Restaurants, Mosquées & Guide Complet`,
+    description: `Guide halal complet pour ${ville.nom} : ${nbRestos}+ restaurants certifiés halal, ${nbMosq} mosquées, ${nbHotels} hôtels, horaires de prière et conseils pratiques pour voyager en musulman. ${richDesc}`.slice(0, 300),
+    alternates: { canonical: `https://www.voyageshalal.fr/destinations/${city}` },
     openGraph: {
-      title: `${ville.nom} Halal — VoyagesHalal.fr`,
-      description: richDesc,
+      title: `${ville.nom} Halal 2026 — Guide Voyage Musulman`,
+      description: `Restaurants halal certifiés, mosquées proches et horaires de prière à ${ville.nom}. Le guide complet pour voyager halal.`,
       ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630, alt: `Voyage halal ${ville.nom}` }] } : {}),
     },
   }
