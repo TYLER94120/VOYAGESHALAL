@@ -154,7 +154,7 @@ export default function MosqueeProchePage() {
                 ))}
               </div>
             </div>
-            <button onClick={findMosques} style={{ width: '100%', padding: '1.1rem', background: 'var(--foret)', color: 'white', border: 'none', borderRadius: '14px', fontSize: '1.05rem', fontWeight: 700, cursor: 'pointer', boxShadow: '0 4px 20px rgba(27,67,50,0.3)' }}>
+            <button onClick={findMosques} className="btn-cta-primary" style={{ width: '100%', padding: '1.1rem', background: 'var(--foret)', color: 'white', border: 'none', borderRadius: '14px', fontSize: '1.05rem', fontWeight: 700, cursor: 'pointer', boxShadow: '0 4px 20px rgba(27,67,50,0.3)' }}>
               🕌 Trouver les mosquées proches
             </button>
           </div>

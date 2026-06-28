@@ -1,0 +1,114 @@
+/* ============================================
+   VOYAGESHALAL.FR — Système d'animations
+   À importer une seule fois dans app/layout.tsx
+   ============================================ */
+
+/* 1. HOVER LIFT — cartes restaurants, hôtels, activités */
+.card-halal {
+  transition: transform 0.22s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.22s ease;
+  cursor: pointer;
+}
+.card-halal:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(11, 26, 15, 0.13);
+}
+.card-halal:active {
+  transform: translateY(-2px);
+}
+
+/* 2. SCROLL REVEAL — apparition au scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.34, 1.2, 0.64, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* 3. PILLS CATÉGORIES — bounce au clic */
+.pill-filter {
+  transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1),
+              background 0.15s ease,
+              color 0.15s ease,
+              border-color 0.15s ease;
+  cursor: pointer;
+  user-select: none;
+}
+.pill-filter:hover {
+  transform: scale(1.06);
+}
+.pill-filter.active {
+  transform: scale(1.06);
+}
+
+/* 4. BOUTONS CTA — respiration subtile */
+@keyframes breathe {
+  0%, 100% { box-shadow: 0 4px 20px rgba(27, 67, 50, 0.25); }
+  50%       { box-shadow: 0 6px 28px rgba(27, 67, 50, 0.4); }
+}
+.btn-cta-primary {
+  animation: breathe 3s ease-in-out infinite;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.btn-cta-primary:hover {
+  animation: none;
+  transform: scale(1.02);
+  box-shadow: 0 8px 32px rgba(27, 67, 50, 0.45);
+}
+.btn-cta-primary:active {
+  transform: scale(0.98);
+}
+
+/* 5. TRANSITIONS ONGLETS — crossfade */
+.tab-panel {
+  animation: fadeInUp 0.2s ease both;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* 6. COMPTEURS — animation depuis 0 (déclenché en JS) */
+.counter-animated {
+  font-variant-numeric: tabular-nums;
+  transition: color 0.3s;
+}
+
+/* BONUS — marqueurs mosquées qui pulsent */
+@keyframes mosque-ping {
+  0%       { transform: scale(1); opacity: 1; }
+  75%, 100% { transform: scale(2.2); opacity: 0; }
+}
+.mosque-marker-ping::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(201, 168, 76, 0.5);
+  animation: mosque-ping 1.5s ease-out infinite;
+}
+
+/* BONUS — skeleton loading */
+@keyframes shimmer {
+  0%   { background-position: -468px 0; }
+  100% { background-position: 468px 0; }
+}
+.skeleton {
+  background: linear-gradient(90deg, rgba(27,67,50,0.05) 25%, rgba(27,67,50,0.1) 50%, rgba(27,67,50,0.05) 75%);
+  background-size: 936px 100%;
+  animation: shimmer 1.4s linear infinite;
+  border-radius: 8px;
+}
+
+/* Respect des préférences d'accessibilité */
+@media (prefers-reduced-motion: reduce) {
+  .card-halal, .reveal, .pill-filter, .btn-cta-primary, .tab-panel { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}

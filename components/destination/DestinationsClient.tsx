@@ -55,7 +55,7 @@ export default function DestinationsClient({ villes, continents }: Props) {
         {Object.keys(continents).map((c) => (
           <button
             key={c}
-            className={`filtre-btn ${filtre === c ? 'active' : ''}`}
+            className={`filtre-btn pill-filter ${filtre === c ? 'active' : ''}`}
             onClick={() => setFiltre(c)}
           >
             {FILTER_ICON[c] ?? ''}

@@ -1,6 +1,8 @@
 'use client'
 import { useState } from 'react'
 import type { VilleRestaurant, VilleHotel, VilleActivite } from '@/lib/villeTypes'
+import { useToast } from '@/components/Toast'
+import { useReveal } from '@/hooks/useReveal'
 
 type Kind = 'resto' | 'hotel' | 'activite'
 
@@ -51,9 +53,18 @@ const btnOutline: React.CSSProperties = {
 
 function CardShell({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-white rounded-2xl p-5 border border-[#1b4332]/10 hover:shadow-md transition-shadow mb-4">
+    <div className="card-halal bg-white rounded-2xl p-5 border border-[#1b4332]/10 mb-4">
       {children}
     </div>
+  )
+}
+
+function MapsLink({ href, children }: { href: string; children: React.ReactNode }) {
+  const toast = useToast()
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" style={btnFilled} onClick={() => toast('Ouverture dans Google Maps…')}>
+      {children}
+    </a>
   )
 }
 
@@ -77,7 +88,7 @@ function RestaurantCard({ r, ville }: { r: VilleRestaurant; ville: string }) {
       {r.adresse && <p className="text-[13px] text-gray-500 my-1">📍 {r.adresse}</p>}
       {(r.description || r.specialite) && <p className="text-sm text-[#1a1a1a] leading-relaxed my-3">{r.description || r.specialite}</p>}
       <div className="flex gap-2 flex-wrap mt-3">
-        <a href={mapsLink(r.nom, ville, r.mapsUrl)} target="_blank" rel="noopener noreferrer" style={btnFilled}>🗺️ Google Maps</a>
+        <MapsLink href={mapsLink(r.nom, ville, r.mapsUrl)}>🗺️ Google Maps</MapsLink>
         {r.websiteUrl && <a href={r.websiteUrl} target="_blank" rel="noopener noreferrer" style={btnOutline}>🌐 Site web</a>}
       </div>
     </CardShell>
@@ -85,6 +96,7 @@ function RestaurantCard({ r, ville }: { r: VilleRestaurant; ville: string }) {
 }
 
 function HotelCard({ h, ville }: { h: VilleHotel; ville: string }) {
+  const toast = useToast()
   const booking = h.bookingUrl || `https://www.booking.com/searchresults.fr.html?ss=${encodeURIComponent(ville)}&label=voyageshalal`
   return (
     <CardShell>
@@ -104,7 +116,7 @@ function HotelCard({ h, ville }: { h: VilleHotel; ville: string }) {
       {h.adresse && <p className="text-[13px] text-gray-500 my-1">📍 {h.adresse}</p>}
       {h.description && <p className="text-sm text-[#1a1a1a] leading-relaxed my-3">{h.description}</p>}
       <div className="flex gap-2 flex-wrap mt-3">
-        <a href={booking} target="_blank" rel="noopener noreferrer" style={{ ...btnFilled, background: '#003580' }}>🏨 Réserver sur Booking</a>
+        <a href={booking} target="_blank" rel="noopener noreferrer" style={{ ...btnFilled, background: '#003580' }} onClick={() => toast('Ouverture de Booking.com…')}>🏨 Réserver sur Booking</a>
         {h.halalBookingUrl && <a href={h.halalBookingUrl} target="_blank" rel="noopener noreferrer" style={btnFilled}>✓ HalalBooking</a>}
         <a href={mapsLink(h.nom, ville, h.mapsUrl)} target="_blank" rel="noopener noreferrer" style={btnOutline}>🗺️ Localiser</a>
       </div>
@@ -124,16 +136,16 @@ function ActivityCard({ a, ville }: { a: VilleActivite; ville: string }) {
       </div>
       {a.description && <p className="text-sm text-[#1a1a1a] leading-relaxed my-3">{a.description}</p>}
       <div className="flex gap-2 flex-wrap">
-        <a href={mapsLink(a.nom, ville, a.mapsUrl)} target="_blank" rel="noopener noreferrer" style={btnFilled}>🗺️ Voir sur Google Maps</a>
+        <MapsLink href={mapsLink(a.nom, ville, a.mapsUrl)}>🗺️ Voir sur Google Maps</MapsLink>
         {a.tripadvisorUrl && <a href={a.tripadvisorUrl} target="_blank" rel="noopener noreferrer" style={{ ...btnOutline, borderColor: '#34E0A1', color: '#00AA6C' }}>⭐ TripAdvisor</a>}
       </div>
     </CardShell>
   )
 }
 
-function CategorySection({ icon, label, count, children }: { icon: string; label: string; count: number; children: React.ReactNode }) {
+function CategorySection({ icon, label, count, children, delay = 1 }: { icon: string; label: string; count: number; children: React.ReactNode; delay?: number }) {
   return (
-    <div className="mb-8">
+    <div className={`mb-8 reveal reveal-delay-${delay}`}>
       <div className="flex items-center gap-3 mb-4 pb-3" style={{ borderBottom: `2px solid ${GOLD}4D` }}>
         <span className="text-xl">{icon}</span>
         <h4 className="font-bold text-base uppercase tracking-wider m-0" style={{ fontFamily: "'Playfair Display', serif", color: GREEN }}>{label}</h4>
@@ -165,6 +177,7 @@ export default function CategorizedDirectory({ kind, items, ville }: Props) {
 
   const [active, setActive] = useState('tous')
   const visible = active === 'tous' ? categories : categories.filter((c) => c === active)
+  useReveal()
 
   return (
     <div>
@@ -176,8 +189,8 @@ export default function CategorizedDirectory({ kind, items, ville }: Props) {
         ))}
       </div>
 
-      {visible.map((cat) => (
-        <CategorySection key={cat} icon={icons[cat] ?? '•'} label={cat} count={groups[cat].length}>
+      {visible.map((cat, idx) => (
+        <CategorySection key={cat} icon={icons[cat] ?? '•'} label={cat} count={groups[cat].length} delay={Math.min(idx + 1, 4)}>
           {groups[cat].map((it, i) =>
             kind === 'resto' ? (
               <RestaurantCard key={it.id ?? i} r={it} ville={ville} />
@@ -197,7 +210,7 @@ function FilterPill({ label, act, onClick }: { label: string; act: boolean; onCl
   return (
     <button
       onClick={onClick}
-      className="px-4 py-1.5 rounded-full text-[13px] font-semibold transition-colors"
+      className={`pill-filter px-4 py-1.5 rounded-full text-[13px] font-semibold ${act ? 'active' : ''}`}
       style={act ? { background: GREEN, color: '#fff' } : { background: 'rgba(27,67,50,0.06)', color: GREEN }}
     >
       {label}

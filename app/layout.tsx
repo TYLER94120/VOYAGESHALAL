@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { DM_Sans, Playfair_Display } from 'next/font/google'
 import './globals.css'
+import '../styles/animations.css'
+import { ToastProvider } from '@/components/Toast'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BottomNav from '@/components/layout/BottomNav'
@@ -47,6 +49,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <BottomNav />
+        <ToastProvider />
       </body>
     </html>
   )

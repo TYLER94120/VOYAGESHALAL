@@ -57,6 +57,7 @@ export default function CityTabs({ ville, apiCityName }: Props) {
         </div>
       </div>
 
+      <div key={active} className="tab-panel">
       {active === 'restaurants' && (
         <CategorizedDirectory kind="resto" items={ville.restaurants} ville={ville.nom} />
       )}
@@ -223,6 +224,7 @@ export default function CityTabs({ ville, apiCityName }: Props) {
           </Link>
         </div>
       )}
+      </div>
     </div>
   )
 }

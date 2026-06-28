@@ -41,7 +41,7 @@ export default function BlogClient({ articles }: Props) {
         {categories.map((c) => (
           <button
             key={c}
-            className={`filtre-btn ${filtre === c ? 'active' : ''}`}
+            className={`filtre-btn pill-filter ${filtre === c ? 'active' : ''}`}
             onClick={() => setFiltre(c)}
           >
             {c}

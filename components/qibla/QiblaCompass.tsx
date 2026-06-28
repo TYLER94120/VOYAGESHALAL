@@ -118,7 +118,7 @@ export default function QiblaCompass() {
           <div style={{ width: 220, height: 220, margin: '0 auto 2rem', position: 'relative' }}>
             <CompassSVG angle={0} animated={false} />
           </div>
-          <button onClick={startQibla} style={btnPrimary}>📍 Trouver la Qibla depuis ma position</button>
+          <button onClick={startQibla} className="btn-cta-primary" style={btnPrimary}>📍 Trouver la Qibla depuis ma position</button>
           <p style={{ color: 'var(--texte-2)', fontSize: '13px', marginTop: '1rem' }}>
             Votre position GPS reste privée — jamais stockée ni partagée.
           </p>
