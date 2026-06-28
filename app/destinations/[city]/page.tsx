@@ -69,7 +69,9 @@ export default async function DestinationPage({ params }: Props) {
 
   return (
     <>
-      <VilleMobile ville={ville} />
+      <div className="app-frame">
+        <VilleMobile ville={ville} />
+      </div>
       <DestinationFaqSchema ville={ville} />
     </>
   )

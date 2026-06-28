@@ -390,6 +390,21 @@
 }
 
 /* ===== Bottom Nav (mobile) ===== */
+/* Cadre "app" : sur desktop, on centre l'expérience mobile dans une colonne
+   façon téléphone (au lieu de l'étirer en pleine largeur). Mobile = pleine largeur. */
+.app-frame { width: 100%; }
+@media (min-width: 768px) {
+  .app-frame {
+    max-width: 480px;
+    margin: 32px auto;
+    background: var(--creme);
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 24px 70px rgba(11,26,15,0.18);
+    border: 1px solid rgba(11,26,15,0.06);
+  }
+}
+
 .bottom-nav {
   display: none;
   position: fixed;
