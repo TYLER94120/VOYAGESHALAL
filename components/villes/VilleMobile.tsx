@@ -74,6 +74,11 @@ export default function VilleMobile({ ville }: { ville: any }) {
           <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: '42px', fontWeight: 900, color: 'white', lineHeight: 1.05, margin: 0 }}>{ville.nom}</h1>
           <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '14px', marginTop: '4px' }}>{ville.pays}</p>
         </div>
+        {ville.imageCredit?.name && (
+          <a href={ville.imageCredit.link || '#'} target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', bottom: 6, right: 8, color: 'rgba(255,255,255,0.45)', fontSize: '9px', textDecoration: 'none' }}>
+            📷 {ville.imageCredit.name} / Unsplash
+          </a>
+        )}
       </section>
 
       {/* ACTIONS RAPIDES */}

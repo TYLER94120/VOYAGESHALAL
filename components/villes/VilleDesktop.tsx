@@ -145,6 +145,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             </div>
           )}
         </div>
+        {ville.imageCredit?.name && (
+          <a href={ville.imageCredit.link || '#'} target="_blank" rel="noopener noreferrer" style={{ position: 'absolute', bottom: 8, right: 12, color: 'rgba(255,255,255,0.5)', fontSize: '10px', textDecoration: 'none', zIndex: 5 }}>
+            📷 {ville.imageCredit.name} / Unsplash
+          </a>
+        )}
       </section>
 
       {/* ACTIONS RAPIDES */}
