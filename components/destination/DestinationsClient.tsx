@@ -67,9 +67,9 @@ export default function DestinationsClient({ villes, continents }: Props) {
         ))}
       </div>
 
-      <div className="lg:grid lg:grid-cols-[236px_1fr] lg:gap-9 lg:items-start">
+      <div className="dest-layout">
         {/* Sidebar Régions — desktop uniquement */}
-        <aside className="hidden lg:block lg:sticky lg:top-24">
+        <aside className="dest-sidebar">
           <div className="bg-white rounded-2xl p-5 border border-[#1b4332]/5 shadow-[0_6px_20px_rgba(11,26,15,0.04)]">
             <p className="text-base font-bold mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif", color: '#0b1a0f' }}>Régions</p>
             <div className="flex flex-col gap-0.5">

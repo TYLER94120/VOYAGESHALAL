@@ -392,6 +392,13 @@
 /* ===== Bottom Nav (mobile) ===== */
 /* Cadre "app" : sur desktop, on centre l'expérience mobile dans une colonne
    façon téléphone (au lieu de l'étirer en pleine largeur). Mobile = pleine largeur. */
+/* Layout 2 colonnes page Destinations (sidebar Régions + grille) — desktop */
+.dest-sidebar { display: none; }
+@media (min-width: 1024px) {
+  .dest-layout { display: grid; grid-template-columns: 236px 1fr; gap: 36px; align-items: start; }
+  .dest-sidebar { display: block; position: sticky; top: 96px; }
+}
+
 .app-frame { width: 100%; }
 @media (min-width: 768px) {
   .app-frame {
