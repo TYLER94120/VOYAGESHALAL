@@ -119,9 +119,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const sideCard: React.CSSProperties = { background: '#fff', borderRadius: '16px', padding: '18px', border: '1px solid rgba(11,26,15,0.06)', boxShadow: '0 6px 20px rgba(11,26,15,0.04)' }
 
   return (
-    <main style={{ background: 'var(--creme)', minHeight: '100vh' }}>
+    <main style={{ background: 'var(--creme)', minHeight: '100vh', overflowX: 'hidden' }}>
       {/* HERO pleine largeur */}
-      <section style={{ position: 'relative', height: 380, overflow: 'hidden' }}>
+      <section style={{ position: 'relative', height: 300, overflow: 'hidden' }}>
         {image && <Image src={image} alt={`Guide voyage halal ${ville.nom}`} fill priority sizes="100vw" style={{ objectFit: 'cover' }} />}
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(11,26,15,0.92) 0%, rgba(11,26,15,0.25) 56%, rgba(11,26,15,0.1) 100%)' }} />
         <IslamicPattern opacity={0.05} />
@@ -174,7 +174,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       </div>
 
       {/* LAYOUT 3 COLONNES */}
-      <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '260px 1fr 300px', gap: '32px', padding: '36px 48px 64px', alignItems: 'start' }}>
+      <div style={{ maxWidth: 1280, margin: '0 auto', display: 'grid', gridTemplateColumns: '260px minmax(0, 1fr) 300px', gap: '32px', padding: '36px 48px 64px', alignItems: 'start' }}>
         {/* SIDEBAR GAUCHE */}
         <aside style={{ position: 'sticky', top: 96, display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <div style={sideCard}>
