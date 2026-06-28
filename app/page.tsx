@@ -69,9 +69,9 @@ export default function HomePage() {
   return (
     <>
     <JsonLd data={websiteSchema} />
-    {/* Accueil app-style — mobile uniquement */}
+    {/* Accueil app-style — < 1024px */}
     <MobileHome totalVilles={totalVilles} destinations={MOBILE_DESTINATIONS} />
-    <main className="hidden md:block" style={{ backgroundColor: '#fdfaf3' }}>
+    <main className="hidden lg:block" style={{ backgroundColor: '#fdfaf3' }}>
       {/* Hero Premium Islamic */}
       <section className="relative overflow-hidden px-6 sm:px-12 pt-24 pb-28 text-center" style={{ backgroundColor: '#0b1a0f' }}>
         <IslamicPattern opacity={0.07} />

@@ -431,11 +431,12 @@
 .bottom-nav-item.active { color: #1b4332; }
 .bottom-nav-icon { font-size: 22px; }
 .bottom-nav-label { font-size: 10px; font-weight: 600; }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .bottom-nav { display: flex; }
   body { padding-bottom: 70px; }
-  /* Rendu 100% "app" : on masque le header et le footer desktop sur mobile
-     (navigation assurée par la bottom-nav + les heros de chaque écran). */
+  /* Rendu 100% "app" sous 1024px : header & footer desktop masqués
+     (navigation assurée par la bottom-nav + les heros de chaque écran).
+     ≥1024px : layout web complet (header/footer visibles, bottom-nav masquée). */
   .header-premium { display: none; }
   .site-footer { display: none; }
 }

@@ -105,7 +105,7 @@ const TILES = [
 
 export default function MobileHome({ totalVilles, destinations }: { totalVilles: number; destinations: Destination[] }) {
   return (
-    <div className="mobile-home md:hidden" style={{ background: '#fdfaf3' }}>
+    <div className="mobile-home lg:hidden" style={{ background: '#fdfaf3' }}>
       {/* Hero nuit */}
       <section style={{ position: 'relative', overflow: 'hidden', background: '#0b1a0f', padding: '20px 18px 26px' }}>
         <IslamicPattern opacity={0.07} />

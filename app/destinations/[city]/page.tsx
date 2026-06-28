@@ -4,6 +4,7 @@ import { readdirSync, readFileSync } from 'fs'
 import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
 import VilleMobile from '@/components/villes/VilleMobile'
+import VilleDesktop from '@/components/villes/VilleDesktop'
 import { DestinationFaqSchema } from '@/components/SchemaOrg'
 
 export const dynamicParams = false
@@ -69,8 +70,12 @@ export default async function DestinationPage({ params }: Props) {
 
   return (
     <>
-      <div className="app-frame">
+      {/* < 1024px : expérience app mobile · ≥ 1024px : layout web 3 colonnes */}
+      <div className="lg:hidden">
         <VilleMobile ville={ville} />
+      </div>
+      <div className="hidden lg:block">
+        <VilleDesktop ville={ville} />
       </div>
       <DestinationFaqSchema ville={ville} />
     </>
