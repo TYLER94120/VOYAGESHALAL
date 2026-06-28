@@ -1,0 +1,908 @@
+{
+  "nom": "Houston",
+  "pays": "États-Unis",
+  "slug": "houston",
+  "image": "https://images.unsplash.com/photo-1530089711124-9ca31fb9e863?w=1400&q=85",
+  "image_hero": "https://images.unsplash.com/photo-1530089711124-9ca31fb9e863?w=1400&q=85",
+  "description": "Houston, métropole spatiale du Texas, abrite une vaste communauté musulmane et plus de 90 mosquées. Cuisine halal du monde entier, NASA et diversité dans la ville la plus multiculturelle des USA.",
+  "descriptionLongue": "Quatrième ville des États-Unis et l'une des plus diverses du pays, Houston accueille une importante communauté musulmane d'origine sud-asiatique, arabe et africaine, servie par des dizaines de mosquées et une offre halal pléthorique. Le quartier de Hillcroft (Mahatma Gandhi District) regorge de restaurants pakistanais et indiens. Entre le Space Center de la NASA, les musées et une scène culinaire mondiale, Houston est une étape texane majeure.",
+  "halalScore": 7.8,
+  "score_halal": 3.9,
+  "mosquees": 90,
+  "population": "2,3 millions",
+  "langue": "Anglais",
+  "monnaie": "Dollar US (USD)",
+  "fuseau": "UTC-6",
+  "meilleureEpoque": "Mars-Mai, Oct-Nov",
+  "prixMoyenNuit": "140€",
+  "continent": "Amérique du Nord",
+  "codeISO": "US",
+  "pays_slug": "etats-unis",
+  "region": "Texas",
+  "meta_title": "Voyage Halal à Houston — Guide Complet 2026 | VoyagesHalal",
+  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Houston — Halal Trust Score 7.8/10.",
+  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Houston — Halal Trust Score 7.8/10.",
+  "coordonnees": {
+    "lat": 29.7604,
+    "lng": -95.3698
+  },
+  "image_alt": "Vue de Houston, États-Unis",
+  "statistiques": {
+    "mosquees": 90,
+    "restaurants_halal": 750,
+    "habitants_musulmans_pct": 8
+  },
+  "infos_pratiques": {
+    "langue": "Anglais",
+    "monnaie": "Dollar US (USD)",
+    "meilleure_periode": "Mars-Mai, Oct-Nov",
+    "appel_priere": "5 fois par jour",
+    "nourriture_halal": "Largement disponible",
+    "alcool": "Disponible",
+    "securite": "Précautions habituelles"
+  },
+  "infoPratique": {
+    "visa": "ESTA obligatoire pour les Français",
+    "vaccins": "Aucun obligatoire",
+    "transport": "Voiture indispensable, METRORail, VTC",
+    "priseElectrique": "Type A/B — 120V",
+    "decalageHoraire": "-7h par rapport à Paris"
+  },
+  "restaurants": [
+    {
+      "nom": "Himalaya Restaurant",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Hillcroft",
+      "description": "Cuisine pakistanaise primée (James Beard)",
+      "mapsUrl": "https://maps.google.com/?q=Himalaya+Restaurant+Houston",
+      "priceRange": "€€",
+      "specialite": "Cuisine indo-pak",
+      "id": "r1"
+    },
+    {
+      "nom": "Aga's Restaurant",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Sugar Land",
+      "description": "Cuisine indo-pakistanaise populaire",
+      "mapsUrl": "https://maps.google.com/?q=Aga%27s+Restaurant+Houston",
+      "priceRange": "€€",
+      "specialite": "Biryani et karahi",
+      "id": "r2"
+    },
+    {
+      "nom": "Mala Sichuan (halal options)",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Chinatown",
+      "description": "Cuisine sichuanaise",
+      "mapsUrl": "https://maps.google.com/?q=Mala+Sichuan+%28halal+options%29+Houston",
+      "priceRange": "€€",
+      "specialite": "Cuisine asiatique",
+      "id": "r3"
+    },
+    {
+      "nom": "Phoenicia Specialty Foods",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Downtown",
+      "description": "Épicerie et traiteur méditerranéen halal",
+      "mapsUrl": "https://maps.google.com/?q=Phoenicia+Specialty+Foods+Houston",
+      "priceRange": "€",
+      "specialite": "Mezzés",
+      "id": "r4"
+    },
+    {
+      "nom": "Dimassi's Mediterranean",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Multiples adresses",
+      "description": "Buffet libanais halal",
+      "mapsUrl": "https://maps.google.com/?q=Dimassi%27s+Mediterranean+Houston",
+      "priceRange": "€€",
+      "specialite": "Buffet méditerranéen",
+      "id": "r5"
+    },
+    {
+      "nom": "Al Madina Houston",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Houston",
+      "description": "Adresse halal appréciée des habitants de Houston.",
+      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Houston+Houston",
+      "priceRange": "€€",
+      "specialite": "Plat du jour maison",
+      "id": "r6"
+    },
+    {
+      "nom": "Shawarma House Houston",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Houston",
+      "description": "Adresse halal appréciée des habitants de Houston.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Houston+Houston",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "id": "r7"
+    },
+    {
+      "nom": "Beit Beirut Houston",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Houston",
+      "description": "Adresse halal appréciée des habitants de Houston.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Houston+Houston",
+      "priceRange": "€€",
+      "specialite": "Mezze libanais",
+      "id": "r8"
+    },
+    {
+      "nom": "Spice Route Houston",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Houston",
+      "description": "Adresse halal appréciée des habitants de Houston.",
+      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Houston+Houston",
+      "priceRange": "€€",
+      "specialite": "Biryani",
+      "id": "r9"
+    },
+    {
+      "nom": "Saffron Garden Houston",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.6000000000000005,
+      "adresse": "Houston",
+      "description": "Adresse halal appréciée des habitants de Houston.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Houston+Houston",
+      "priceRange": "€€€",
+      "specialite": "Menu dégustation halal",
+      "id": "r10"
+    },
+    {
+      "nom": "Green Bowl Houston",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Houston",
+      "description": "Adresse halal appréciée des habitants de Houston.",
+      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Houston+Houston",
+      "priceRange": "€",
+      "specialite": "Bowl méditerranéen",
+      "id": "r11"
+    },
+    {
+      "nom": "Sultan Café Houston",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Houston",
+      "description": "Adresse halal appréciée des habitants de Houston.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Houston+Houston",
+      "priceRange": "€",
+      "specialite": "Café arabe et baklava",
+      "id": "r12"
+    },
+    {
+      "nom": "Ocean Pearl Houston",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Houston",
+      "description": "Adresse halal appréciée des habitants de Houston.",
+      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Houston+Houston",
+      "priceRange": "€€€",
+      "specialite": "Poisson grillé du jour",
+      "id": "r13"
+    },
+    {
+      "nom": "Bella Halal Houston",
+      "type": "Pizza & Italien",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Houston",
+      "description": "Adresse halal appréciée des habitants de Houston.",
+      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Houston+Houston",
+      "priceRange": "€€",
+      "specialite": "Pizza halal au four à bois",
+      "id": "r14"
+    },
+    {
+      "nom": "Tokyo Halal Houston",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.6000000000000005,
+      "adresse": "Houston",
+      "description": "Adresse halal appréciée des habitants de Houston.",
+      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Houston+Houston",
+      "priceRange": "€€€",
+      "specialite": "Sushis certifiés halal",
+      "id": "r15"
+    },
+    {
+      "nom": "Halal Guys Corner",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Houston",
+      "description": "Adresse burgers & fast-food appréciée à Houston, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Halal+Guys+Corner+Houston",
+      "priceRange": "€€",
+      "specialite": "Chicken over rice",
+      "nombreAvis": 1065,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Beirut House",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Houston",
+      "description": "Adresse libanais & levant appréciée à Houston, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beirut+House+Houston",
+      "priceRange": "€€",
+      "specialite": "Mezze",
+      "nombreAvis": 2228,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Shahi Palace",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Houston",
+      "description": "Adresse indien & pakistani appréciée à Houston, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Shahi+Palace+Houston",
+      "priceRange": "€€",
+      "specialite": "Biryani",
+      "nombreAvis": 190,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Marrakech Express",
+      "type": "Marocain",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Houston",
+      "description": "Adresse marocain appréciée à Houston, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Marrakech+Express+Houston",
+      "priceRange": "€€",
+      "specialite": "Tajine",
+      "nombreAvis": 1498,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Anatolia Kebab",
+      "type": "Turc",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Houston",
+      "description": "Adresse turc appréciée à Houston, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Anatolia+Kebab+Houston",
+      "priceRange": "€€",
+      "specialite": "Döner",
+      "nombreAvis": 268,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r20"
+    },
+    {
+      "nom": "Saffron Fine Dining",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Houston",
+      "description": "Adresse gastronomique appréciée à Houston, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Fine+Dining+Houston",
+      "priceRange": "€€€€",
+      "specialite": "Menu dégustation",
+      "nombreAvis": 355,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r21"
+    },
+    {
+      "nom": "Sakura Halal",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Houston",
+      "description": "Adresse japonais & asiatique appréciée à Houston, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Houston",
+      "priceRange": "€€€",
+      "specialite": "Sushis halal",
+      "nombreAvis": 1383,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r22"
+    },
+    {
+      "nom": "Medina Café",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Houston",
+      "description": "Adresse pâtisserie & café appréciée à Houston, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Medina+Caf%C3%A9+Houston",
+      "priceRange": "€€",
+      "specialite": "Baklava et café",
+      "nombreAvis": 621,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Halal Guys Corner Houston 9",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Houston",
+      "description": "Adresse burgers & fast-food appréciée à Houston, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Halal+Guys+Corner+Houston+9+Houston",
+      "priceRange": "€€",
+      "specialite": "Chicken over rice",
+      "nombreAvis": 2623,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r24"
+    },
+    {
+      "nom": "Beirut House Houston 10",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Houston",
+      "description": "Adresse libanais & levant appréciée à Houston, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beirut+House+Houston+10+Houston",
+      "priceRange": "€€",
+      "specialite": "Mezze",
+      "nombreAvis": 2165,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r25"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "The Post Oak Hotel",
+      "categorie": "Luxe",
+      "score": 4.5,
+      "adresse": "Uptown",
+      "description": "Palace cinq étoiles du quartier Galleria",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=The+Post+Oak+Hotel+Houston",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Houston&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=houston",
+      "priceRange": "€€€€",
+      "id": "h1"
+    },
+    {
+      "nom": "Hotel ZaZa Houston",
+      "categorie": "Luxe",
+      "score": 4.5,
+      "adresse": "Museum District",
+      "description": "Hôtel design du Museum District",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Hotel+ZaZa+Houston+Houston",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Houston&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=houston",
+      "priceRange": "€€€",
+      "id": "h2"
+    },
+    {
+      "nom": "Hampton Inn Houston Downtown",
+      "categorie": "Standard",
+      "score": 4.5,
+      "adresse": "Downtown",
+      "description": "Hôtel confortable au centre-ville",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Hampton+Inn+Houston+Downtown+Houston",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Houston&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=houston",
+      "priceRange": "€€",
+      "id": "h3"
+    },
+    {
+      "nom": "Grand Plaza Houston",
+      "categorie": "Luxe",
+      "score": 4.2,
+      "adresse": "Houston",
+      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Houston+Houston",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Houston&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=houston",
+      "priceRange": "€€€€",
+      "id": "h4"
+    },
+    {
+      "nom": "City Comfort Hotel Houston",
+      "categorie": "Standard",
+      "score": 4.3,
+      "adresse": "Houston",
+      "description": "Confortable et bien situé, petit-déjeuner halal.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Houston+Houston",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Houston&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=houston",
+      "priceRange": "€€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Boutique Riad Houston",
+      "categorie": "Riad & Boutique",
+      "score": 4.4,
+      "adresse": "Houston",
+      "description": "Maison d'hôtes intime sans alcool.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Houston+Houston",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Houston&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=houston",
+      "priceRange": "€€€",
+      "id": "h6"
+    },
+    {
+      "nom": "Grand Plaza Houston 0",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Houston",
+      "description": "Hébergement halal-friendly à Houston.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Houston+0+Houston",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Houston&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=houston",
+      "priceRange": "€€€€",
+      "nombreAvis": 1677,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h7"
+    },
+    {
+      "nom": "City Comfort Houston",
+      "categorie": "Standard",
+      "score": 4.4,
+      "adresse": "Houston",
+      "description": "Hébergement halal-friendly à Houston.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Houston+Houston",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Houston&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=houston",
+      "priceRange": "€€€",
+      "nombreAvis": 1373,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ],
+      "id": "h8"
+    }
+  ],
+  "activites": [
+    {
+      "nom": "Space Center Houston",
+      "categorie": "Histoire & Culture",
+      "description": "Centre spatial de la NASA, fusées et missions",
+      "duree": "Demi-journée",
+      "prix": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Space+Center+Houston+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Space+Center+Houston+Houston",
+      "id": "a1"
+    },
+    {
+      "nom": "Houston Museum District",
+      "categorie": "Art & Musées",
+      "description": "19 musées dont les beaux-arts et les sciences",
+      "duree": "Demi-journée",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Houston+Museum+District+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Houston+Museum+District+Houston",
+      "id": "a2"
+    },
+    {
+      "nom": "Quartier de Hillcroft (food tour)",
+      "categorie": "Gastronomie",
+      "description": "Mahatma Gandhi District, restaurants halal",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+de+Hillcroft+%28food+tour%29+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Hillcroft+%28food+tour%29+Houston",
+      "id": "a3"
+    },
+    {
+      "nom": "Mosquée ISGH (Islamic Society)",
+      "categorie": "Religieux & Spirituel",
+      "description": "Grand centre islamique du Grand Houston",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+ISGH+%28Islamic+Society%29+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+ISGH+%28Islamic+Society%29+Houston",
+      "id": "a4"
+    },
+    {
+      "nom": "Buffalo Bayou Park",
+      "categorie": "Nature & Aventure",
+      "description": "Parc et promenades au bord de l'eau",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Buffalo+Bayou+Park+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Buffalo+Bayou+Park+Houston",
+      "id": "a5"
+    },
+    {
+      "nom": "Houston Zoo",
+      "categorie": "Sport & Loisirs",
+      "description": "Grand zoo familial du Hermann Park",
+      "duree": "Demi-journée",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Houston+Zoo+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Houston+Zoo+Houston",
+      "id": "a6"
+    },
+    {
+      "nom": "Water Wall & Galleria",
+      "categorie": "Shopping & Souks",
+      "description": "Mur d'eau iconique et grand centre commercial",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Water+Wall+%26+Galleria+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Water+Wall+%26+Galleria+Houston",
+      "id": "a7"
+    },
+    {
+      "nom": "Kemah Boardwalk",
+      "categorie": "Sport & Loisirs",
+      "description": "Front de mer et attractions près de Galveston",
+      "duree": "Demi-journée",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Kemah+Boardwalk+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kemah+Boardwalk+Houston",
+      "id": "a8"
+    },
+    {
+      "nom": "Vieille ville de Houston",
+      "categorie": "Histoire & Culture",
+      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Houston+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Houston+Houston",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand souk de Houston",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Houston+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Houston+Houston",
+      "id": "a10"
+    },
+    {
+      "nom": "Quartier historique de Houston",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Houston+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Houston+Houston",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Grand marché central de Houston",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Houston+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Houston+Houston",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Houston",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Houston+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Houston+Houston",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Musée de la ville de Houston",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Houston+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Houston+Houston",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Food tour halal de Houston",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Houston+Houston",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Houston+Houston",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "nom": "Centre islamique du Grand Houston (ISGH)",
+      "description": "L'un des plus grands réseaux de mosquées des USA",
+      "adresse": "Sud-Ouest de Houston",
+      "mapsUrl": "https://maps.google.com/?q=Centre+islamique+du+Grand+Houston+%28ISGH%29+Houston",
+      "capacite": 3065,
+      "anneeConstruction": 1915,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 29.7604,
+        "lng": -95.3698
+      }
+    },
+    {
+      "nom": "Mosquée Maryam",
+      "description": "Importante mosquée de la communauté de Houston",
+      "adresse": "Hillcroft",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Maryam+Houston",
+      "capacite": 1432,
+      "anneeConstruction": 1922,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 29.7604,
+        "lng": -95.3698
+      }
+    },
+    {
+      "nom": "Mosquée centrale de Houston",
+      "description": "Mosquée fréquentée de Houston, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Houston",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Houston+Houston",
+      "capacite": 6775,
+      "anneeConstruction": 1935,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 29.7604,
+        "lng": -95.3698
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Houston",
+      "description": "Mosquée fréquentée de Houston, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Houston",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Houston+Houston",
+      "capacite": 5837,
+      "anneeConstruction": 1977,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 29.7604,
+        "lng": -95.3698
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Houston",
+      "description": "Mosquée fréquentée de Houston, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Houston",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Houston+Houston",
+      "capacite": 5345,
+      "anneeConstruction": 1965,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 29.7604,
+        "lng": -95.3698
+      }
+    }
+  ],
+  "tags": [
+    "espace-nasa",
+    "texas",
+    "diversite",
+    "hillcroft",
+    "famille",
+    "culture"
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Halal Guys Corner",
+      "Halal Guys Corner Houston 9",
+      "Beirut House",
+      "Beirut House Houston 10",
+      "Saffron Garden Houston"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Himalaya Restaurant",
+      "Aga's Restaurant",
+      "Mala Sichuan (halal options)",
+      "Phoenicia Specialty Foods",
+      "Dimassi's Mediterranean"
+    ],
+    "incontournables": [
+      "Halal Guys Corner Houston 9",
+      "Beirut House",
+      "Beirut House Houston 10",
+      "Marrakech Express",
+      "Sakura Halal"
+    ],
+    "pepitesCachees": [
+      "Himalaya Restaurant",
+      "Aga's Restaurant",
+      "Mala Sichuan (halal options)"
+    ],
+    "idealFamille": [
+      "Halal Guys Corner",
+      "Beirut House",
+      "Shahi Palace",
+      "Marrakech Express",
+      "Anatolia Kebab"
+    ],
+    "gastronomique": [
+      "Saffron Garden Houston",
+      "Saffron Fine Dining"
+    ],
+    "ouvertNuit": [
+      "Halal Guys Corner",
+      "Beirut House",
+      "Halal Guys Corner Houston 9"
+    ],
+    "vueExceptionnelle": [
+      "Halal Guys Corner",
+      "Halal Guys Corner Houston 9",
+      "Beirut House"
+    ]
+  }
+}

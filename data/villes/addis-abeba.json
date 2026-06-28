@@ -1,0 +1,907 @@
+{
+  "nom": "Addis-Abeba",
+  "pays": "Éthiopie",
+  "slug": "addis-abeba",
+  "image": "https://images.unsplash.com/photo-1567593810070-7a3d471af022?w=1400&q=85",
+  "image_hero": "https://images.unsplash.com/photo-1567593810070-7a3d471af022?w=1400&q=85",
+  "description": "Addis-Abeba, capitale de l'Éthiopie et siège de l'Union africaine, marie altitude, café légendaire et grand marché Merkato. Cuisine éthiopienne halal et mosquées au cœur de la Corne de l'Afrique.",
+  "descriptionLongue": "Perchée à 2400 m d'altitude, Addis-Abeba (« la nouvelle fleur ») est la capitale diplomatique de l'Afrique, siège de l'Union africaine. L'Éthiopie possède une longue histoire islamique — la première hijra des compagnons du Prophète eut lieu sur ces terres. La ville abrite la grande mosquée Anwar, le tentaculaire marché Merkato et une cuisine éthiopienne halal généreuse (injera, tibs). Berceau du café, elle en perpétue la cérémonie rituelle.",
+  "halalScore": 7.5,
+  "score_halal": 3.8,
+  "mosquees": 500,
+  "population": "5 millions",
+  "langue": "Amharique",
+  "monnaie": "Birr (ETB)",
+  "fuseau": "UTC+3",
+  "meilleureEpoque": "Octobre à Mars",
+  "prixMoyenNuit": "60€",
+  "continent": "Afrique",
+  "codeISO": "ET",
+  "pays_slug": "ethiopie",
+  "region": "Afrique de l'Est",
+  "meta_title": "Voyage Halal à Addis-Abeba — Guide Complet 2026 | VoyagesHalal",
+  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Addis-Abeba — Halal Trust Score 7.5/10.",
+  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Addis-Abeba — Halal Trust Score 7.5/10.",
+  "coordonnees": {
+    "lat": 9.024,
+    "lng": 38.7469
+  },
+  "image_alt": "Vue de Addis-Abeba, Éthiopie",
+  "statistiques": {
+    "mosquees": 500,
+    "restaurants_halal": 750,
+    "habitants_musulmans_pct": 35
+  },
+  "infos_pratiques": {
+    "langue": "Amharique",
+    "monnaie": "Birr (ETB)",
+    "meilleure_periode": "Octobre à Mars",
+    "appel_priere": "5 fois par jour",
+    "nourriture_halal": "Largement disponible",
+    "alcool": "Disponible",
+    "securite": "Précautions habituelles"
+  },
+  "infoPratique": {
+    "visa": "e-Visa éthiopien obligatoire",
+    "vaccins": "Fièvre jaune recommandée",
+    "transport": "VTC Ride/Feres, light rail, taxi",
+    "priseElectrique": "Type C/E/F — 220V",
+    "decalageHoraire": "+2h par rapport à Paris (hiver)"
+  },
+  "restaurants": [
+    {
+      "nom": "Yod Abyssinia",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Bole",
+      "description": "Injera et tibs avec spectacle culturel",
+      "mapsUrl": "https://maps.google.com/?q=Yod+Abyssinia+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Cuisine éthiopienne",
+      "id": "r1"
+    },
+    {
+      "nom": "Kategna Restaurant",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Bole",
+      "description": "Cuisine éthiopienne maison populaire",
+      "mapsUrl": "https://maps.google.com/?q=Kategna+Restaurant+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Injera",
+      "id": "r2"
+    },
+    {
+      "nom": "Mama's Kitchen",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Centre",
+      "description": "Cuisine éthiopienne réputée",
+      "mapsUrl": "https://maps.google.com/?q=Mama%27s+Kitchen+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Tibs",
+      "id": "r3"
+    },
+    {
+      "nom": "Sishu",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Kazanchis",
+      "description": "Cuisine internationale halal",
+      "mapsUrl": "https://maps.google.com/?q=Sishu+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Grillades",
+      "id": "r4"
+    },
+    {
+      "nom": "Al Nour Restaurant",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Merkato",
+      "description": "Cuisine halal du quartier musulman",
+      "mapsUrl": "https://maps.google.com/?q=Al+Nour+Restaurant+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Cuisine arabo-éthiopienne",
+      "id": "r5"
+    },
+    {
+      "nom": "Al Madina Addis-Abeba",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse halal appréciée des habitants de Addis-Abeba.",
+      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Addis-Abeba+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Plat du jour maison",
+      "id": "r6"
+    },
+    {
+      "nom": "Shawarma House Addis-Abeba",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse halal appréciée des habitants de Addis-Abeba.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Addis-Abeba+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "id": "r7"
+    },
+    {
+      "nom": "Beit Beirut Addis-Abeba",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse halal appréciée des habitants de Addis-Abeba.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Addis-Abeba+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Mezze libanais",
+      "id": "r8"
+    },
+    {
+      "nom": "Spice Route Addis-Abeba",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse halal appréciée des habitants de Addis-Abeba.",
+      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Addis-Abeba+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Biryani",
+      "id": "r9"
+    },
+    {
+      "nom": "Saffron Garden Addis-Abeba",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.6000000000000005,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse halal appréciée des habitants de Addis-Abeba.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Addis-Abeba+Addis-Abeba",
+      "priceRange": "€€€",
+      "specialite": "Menu dégustation halal",
+      "id": "r10"
+    },
+    {
+      "nom": "Green Bowl Addis-Abeba",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse halal appréciée des habitants de Addis-Abeba.",
+      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Addis-Abeba+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Bowl méditerranéen",
+      "id": "r11"
+    },
+    {
+      "nom": "Sultan Café Addis-Abeba",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse halal appréciée des habitants de Addis-Abeba.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Addis-Abeba+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Café arabe et baklava",
+      "id": "r12"
+    },
+    {
+      "nom": "Ocean Pearl Addis-Abeba",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse halal appréciée des habitants de Addis-Abeba.",
+      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Addis-Abeba+Addis-Abeba",
+      "priceRange": "€€€",
+      "specialite": "Poisson grillé du jour",
+      "id": "r13"
+    },
+    {
+      "nom": "Bella Halal Addis-Abeba",
+      "type": "Pizza & Italien",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse halal appréciée des habitants de Addis-Abeba.",
+      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Addis-Abeba+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Pizza halal au four à bois",
+      "id": "r14"
+    },
+    {
+      "nom": "Tokyo Halal Addis-Abeba",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.6000000000000005,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse halal appréciée des habitants de Addis-Abeba.",
+      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Addis-Abeba+Addis-Abeba",
+      "priceRange": "€€€",
+      "specialite": "Sushis certifiés halal",
+      "id": "r15"
+    },
+    {
+      "nom": "Chez Teranga",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse traditionnel local appréciée à Addis-Abeba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Thiéboudienne",
+      "nombreAvis": 1880,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Maison Baobab",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse traditionnel local appréciée à Addis-Abeba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Yassa poulet",
+      "nombreAvis": 2055,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Sahel Grill",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse grillades & kebab appréciée à Addis-Abeba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Dibi et brochettes",
+      "nombreAvis": 1363,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Beit Cham",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse libanais & levant appréciée à Addis-Abeba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Mezze",
+      "nombreAvis": 1151,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Jollof House",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse traditionnel local appréciée à Addis-Abeba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Jollof+House+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Jollof rice",
+      "nombreAvis": 598,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r20"
+    },
+    {
+      "nom": "Spice Darbar",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse indien & pakistani appréciée à Addis-Abeba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Biryani",
+      "nombreAvis": 1207,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r21"
+    },
+    {
+      "nom": "Café Teranga",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse pâtisserie & café appréciée à Addis-Abeba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Café Touba",
+      "nombreAvis": 1080,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r22"
+    },
+    {
+      "nom": "Chez Teranga Addis-Abeba 8",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse traditionnel local appréciée à Addis-Abeba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Addis-Abeba+8+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Thiéboudienne",
+      "nombreAvis": 208,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Maison Baobab Addis-Abeba 9",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse traditionnel local appréciée à Addis-Abeba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Addis-Abeba+9+Addis-Abeba",
+      "priceRange": "€€",
+      "specialite": "Yassa poulet",
+      "nombreAvis": 845,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r24"
+    },
+    {
+      "nom": "Sahel Grill Addis-Abeba 10",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Addis-Abeba",
+      "description": "Adresse grillades & kebab appréciée à Addis-Abeba, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Addis-Abeba+10+Addis-Abeba",
+      "priceRange": "€",
+      "specialite": "Dibi et brochettes",
+      "nombreAvis": 2420,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r25"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Sheraton Addis",
+      "categorie": "Luxe",
+      "score": 4.5,
+      "adresse": "Centre",
+      "description": "Palace cinq étoiles au cœur de la capitale",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Sheraton+Addis+Addis-Abeba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Addis-Abeba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=addis-abeba",
+      "priceRange": "€€€€",
+      "id": "h1"
+    },
+    {
+      "nom": "Hyatt Regency Addis Ababa",
+      "categorie": "Luxe",
+      "score": 4.5,
+      "adresse": "Meskel Square",
+      "description": "Grand hôtel moderne central",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Hyatt+Regency+Addis+Ababa+Addis-Abeba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Addis-Abeba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=addis-abeba",
+      "priceRange": "€€€",
+      "id": "h2"
+    },
+    {
+      "nom": "Capital Hotel and Spa",
+      "categorie": "Standard",
+      "score": 4.5,
+      "adresse": "Bole",
+      "description": "Hôtel confortable près de l'aéroport",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Capital+Hotel+and+Spa+Addis-Abeba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Addis-Abeba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=addis-abeba",
+      "priceRange": "€€",
+      "id": "h3"
+    },
+    {
+      "nom": "Grand Plaza Addis-Abeba",
+      "categorie": "Luxe",
+      "score": 4.2,
+      "adresse": "Addis-Abeba",
+      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Addis-Abeba+Addis-Abeba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Addis-Abeba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=addis-abeba",
+      "priceRange": "€€€€",
+      "id": "h4"
+    },
+    {
+      "nom": "City Comfort Hotel Addis-Abeba",
+      "categorie": "Standard",
+      "score": 4.3,
+      "adresse": "Addis-Abeba",
+      "description": "Confortable et bien situé, petit-déjeuner halal.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Addis-Abeba+Addis-Abeba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Addis-Abeba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=addis-abeba",
+      "priceRange": "€€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Boutique Riad Addis-Abeba",
+      "categorie": "Riad & Boutique",
+      "score": 4.4,
+      "adresse": "Addis-Abeba",
+      "description": "Maison d'hôtes intime sans alcool.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Addis-Abeba+Addis-Abeba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Addis-Abeba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=addis-abeba",
+      "priceRange": "€€€",
+      "id": "h6"
+    },
+    {
+      "nom": "Grand Plaza Addis-Abeba 0",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Addis-Abeba",
+      "description": "Hébergement halal-friendly à Addis-Abeba.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Addis-Abeba+0+Addis-Abeba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Addis-Abeba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=addis-abeba",
+      "priceRange": "€€€€",
+      "nombreAvis": 974,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h7"
+    },
+    {
+      "nom": "City Comfort Addis-Abeba",
+      "categorie": "Standard",
+      "score": 4.4,
+      "adresse": "Addis-Abeba",
+      "description": "Hébergement halal-friendly à Addis-Abeba.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Addis-Abeba+Addis-Abeba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Addis-Abeba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=addis-abeba",
+      "priceRange": "€€€",
+      "nombreAvis": 1066,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ],
+      "id": "h8"
+    }
+  ],
+  "activites": [
+    {
+      "nom": "Mosquée Anwar",
+      "categorie": "Religieux & Spirituel",
+      "description": "Plus grande et plus ancienne mosquée de la ville",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Anwar+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Anwar+Addis-Abeba",
+      "id": "a1"
+    },
+    {
+      "nom": "Marché Merkato",
+      "categorie": "Shopping & Souks",
+      "description": "L'un des plus grands marchés à ciel ouvert d'Afrique",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Merkato+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+Merkato+Addis-Abeba",
+      "id": "a2"
+    },
+    {
+      "nom": "Musée national (Lucy)",
+      "categorie": "Art & Musées",
+      "description": "Fossile de Lucy et préhistoire humaine",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+national+%28Lucy%29+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+national+%28Lucy%29+Addis-Abeba",
+      "id": "a3"
+    },
+    {
+      "nom": "Mont Entoto",
+      "categorie": "Nature & Aventure",
+      "description": "Belvédère et forêts d'eucalyptus au-dessus de la ville",
+      "duree": "Demi-journée",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mont+Entoto+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mont+Entoto+Addis-Abeba",
+      "id": "a4"
+    },
+    {
+      "nom": "Cérémonie du café éthiopien",
+      "categorie": "Gastronomie",
+      "description": "Rituel ancestral du café, berceau de la boisson",
+      "duree": "1h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=C%C3%A9r%C3%A9monie+du+caf%C3%A9+%C3%A9thiopien+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=C%C3%A9r%C3%A9monie+du+caf%C3%A9+%C3%A9thiopien+Addis-Abeba",
+      "id": "a5"
+    },
+    {
+      "nom": "Place Meskel",
+      "categorie": "Histoire & Culture",
+      "description": "Grande esplanade des cérémonies nationales",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Place+Meskel+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+Meskel+Addis-Abeba",
+      "id": "a6"
+    },
+    {
+      "nom": "Musée ethnologique",
+      "categorie": "Art & Musées",
+      "description": "Cultures et peuples d'Éthiopie",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+ethnologique+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+ethnologique+Addis-Abeba",
+      "id": "a7"
+    },
+    {
+      "nom": "Siège de l'Union africaine",
+      "categorie": "Histoire & Culture",
+      "description": "Cœur diplomatique du continent",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Si%C3%A8ge+de+l%27Union+africaine+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Si%C3%A8ge+de+l%27Union+africaine+Addis-Abeba",
+      "id": "a8"
+    },
+    {
+      "nom": "Vieille ville de Addis-Abeba",
+      "categorie": "Histoire & Culture",
+      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Addis-Abeba+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Addis-Abeba+Addis-Abeba",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand souk de Addis-Abeba",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Addis-Abeba+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Addis-Abeba+Addis-Abeba",
+      "id": "a10"
+    },
+    {
+      "nom": "Quartier historique de Addis-Abeba",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Addis-Abeba+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Addis-Abeba+Addis-Abeba",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Grand marché central de Addis-Abeba",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Addis-Abeba+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Addis-Abeba+Addis-Abeba",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Addis-Abeba",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Addis-Abeba+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Addis-Abeba+Addis-Abeba",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Musée de la ville de Addis-Abeba",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Addis-Abeba+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Addis-Abeba+Addis-Abeba",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Food tour halal de Addis-Abeba",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Addis-Abeba+Addis-Abeba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Addis-Abeba+Addis-Abeba",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée Anwar",
+      "description": "Plus grande mosquée d'Addis-Abeba, proche du Merkato",
+      "adresse": "Merkato",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Anwar+Addis-Abeba",
+      "capacite": 7983,
+      "anneeConstruction": 1893,
+      "styleArchitectural": "Africain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 9.024,
+        "lng": 38.7469
+      }
+    },
+    {
+      "nom": "Mosquée Grand Anwar Nur",
+      "description": "Importante mosquée historique de la capitale",
+      "adresse": "Centre",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Grand+Anwar+Nur+Addis-Abeba",
+      "capacite": 3589,
+      "anneeConstruction": 1959,
+      "styleArchitectural": "Africain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 9.024,
+        "lng": 38.7469
+      }
+    },
+    {
+      "nom": "Mosquée centrale de Addis-Abeba",
+      "description": "Mosquée fréquentée de Addis-Abeba, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Addis-Abeba",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Addis-Abeba+Addis-Abeba",
+      "capacite": 3602,
+      "anneeConstruction": 2002,
+      "styleArchitectural": "Africain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 9.024,
+        "lng": 38.7469
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Addis-Abeba",
+      "description": "Mosquée fréquentée de Addis-Abeba, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Addis-Abeba",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Addis-Abeba+Addis-Abeba",
+      "capacite": 3314,
+      "anneeConstruction": 1914,
+      "styleArchitectural": "Africain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 9.024,
+        "lng": 38.7469
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Addis-Abeba",
+      "description": "Mosquée fréquentée de Addis-Abeba, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Addis-Abeba",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Addis-Abeba+Addis-Abeba",
+      "capacite": 3754,
+      "anneeConstruction": 1894,
+      "styleArchitectural": "Africain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 9.024,
+        "lng": 38.7469
+      }
+    }
+  ],
+  "tags": [
+    "corne-afrique",
+    "altitude",
+    "cafe",
+    "merkato",
+    "histoire-islamique",
+    "culture"
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Chez Teranga",
+      "Maison Baobab Addis-Abeba 9",
+      "Maison Baobab",
+      "Sahel Grill Addis-Abeba 10",
+      "Saffron Garden Addis-Abeba"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Yod Abyssinia",
+      "Kategna Restaurant",
+      "Mama's Kitchen",
+      "Sishu",
+      "Al Nour Restaurant"
+    ],
+    "incontournables": [
+      "Sahel Grill Addis-Abeba 10",
+      "Maison Baobab",
+      "Chez Teranga",
+      "Sahel Grill",
+      "Spice Darbar"
+    ],
+    "pepitesCachees": [
+      "Yod Abyssinia",
+      "Kategna Restaurant",
+      "Mama's Kitchen"
+    ],
+    "idealFamille": [
+      "Chez Teranga",
+      "Maison Baobab",
+      "Sahel Grill",
+      "Beit Cham",
+      "Jollof House"
+    ],
+    "gastronomique": [
+      "Saffron Garden Addis-Abeba"
+    ],
+    "ouvertNuit": [
+      "Chez Teranga",
+      "Sahel Grill",
+      "Beit Cham"
+    ],
+    "vueExceptionnelle": [
+      "Chez Teranga",
+      "Maison Baobab Addis-Abeba 9",
+      "Maison Baobab"
+    ]
+  }
+}
