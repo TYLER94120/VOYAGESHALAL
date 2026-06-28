@@ -34,7 +34,7 @@
   },
   "restaurants": [
     {
-      "id": "r-001",
+      "id": "r1",
       "nom": "Sufra Restaurant",
       "adresse": "26 Rainbow Street, Jabal Amman",
       "cuisine": "Jordanienne traditionnelle",
@@ -57,10 +57,18 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Sufra+Restaurant+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Sufra+Restaurant+Amman",
+      "nombreAvis": 1048,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-002",
+      "id": "r2",
       "nom": "Fakhr El-Din",
       "adresse": "40 Taha Hussein Street, 1ère cercle",
       "cuisine": "Libanaise & jordanienne",
@@ -83,10 +91,19 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Fakhr+El-Din+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Fakhr+El-Din+Amman",
+      "nombreAvis": 565,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ]
     },
     {
-      "id": "r-003",
+      "id": "r3",
       "nom": "Hashem Restaurant",
       "adresse": "Downtown Amman, Al-Amir Mohammed Street",
       "cuisine": "Street food jordanienne",
@@ -109,10 +126,18 @@
       "certificationHalal": true,
       "score": 4.9,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hashem+Restaurant+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Hashem+Restaurant+Amman",
+      "nombreAvis": 200,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ]
     },
     {
-      "id": "r-004",
+      "id": "r4",
       "nom": "Romero Restaurant",
       "adresse": "3ème cercle, Amman",
       "cuisine": "Jordanienne gastronomique",
@@ -135,10 +160,19 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Romero+Restaurant+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Romero+Restaurant+Amman",
+      "nombreAvis": 2175,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
-      "id": "r-005",
+      "id": "r5",
       "nom": "Wild Jordan Café",
       "adresse": "Othman Bin Affan Street, Jabal Amman",
       "cuisine": "Fusion jordanienne bio",
@@ -161,10 +195,18 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Wild+Jordan+Caf%C3%A9+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Wild+Jordan+Caf%C3%A9+Amman",
+      "nombreAvis": 1790,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "veggie"
+      ]
     },
     {
-      "id": "r-006",
+      "id": "r6",
       "nom": "Books@Café",
       "adresse": "Omar Bin Al-Khattab Street",
       "cuisine": "Fusion internationale halal",
@@ -187,10 +229,20 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Books%40Caf%C3%A9+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Books%40Caf%C3%A9+Amman",
+      "nombreAvis": 1793,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ]
     },
     {
-      "id": "r-007",
+      "id": "r7",
       "nom": "Al Quds Restaurant",
       "adresse": "Downtown Amman",
       "cuisine": "Palestinienne halal",
@@ -213,10 +265,18 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Al+Quds+Restaurant+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Al+Quds+Restaurant+Amman",
+      "nombreAvis": 1447,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-008",
+      "id": "r8",
       "nom": "Shawarmaji",
       "adresse": "Multiple branches, Amman",
       "cuisine": "Shawarma fast food halal",
@@ -239,10 +299,18 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Shawarmaji+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Shawarmaji+Amman",
+      "nombreAvis": 371,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ]
     },
     {
-      "id": "r-009",
+      "id": "r9",
       "nom": "Beit Sitti",
       "adresse": "Jabal Amman",
       "cuisine": "Cours de cuisine jordanienne",
@@ -265,10 +333,19 @@
       "certificationHalal": true,
       "score": 4.9,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Sitti+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Beit+Sitti+Amman",
+      "nombreAvis": 296,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ]
     },
     {
-      "id": "r-010",
+      "id": "r10",
       "nom": "Al Ustaz Restaurant",
       "adresse": "Shmeisani, Amman",
       "cuisine": "Poissons & grillades halal",
@@ -291,10 +368,18 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Al+Ustaz+Restaurant+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Al+Ustaz+Restaurant+Amman",
+      "nombreAvis": 777,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-011",
+      "id": "r11",
       "nom": "Tawaheen Al Hawa",
       "adresse": "Sweifieh, Amman",
       "cuisine": "Jordanienne & moyen-orientale",
@@ -317,10 +402,18 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Tawaheen+Al+Hawa+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Tawaheen+Al+Hawa+Amman",
+      "nombreAvis": 2043,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-012",
+      "id": "r12",
       "nom": "Al Sukariah",
       "adresse": "Rainbow Street",
       "cuisine": "Pâtisserie orientale halal",
@@ -343,10 +436,19 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Al+Sukariah+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Al+Sukariah+Amman",
+      "nombreAvis": 3033,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ]
     },
     {
-      "id": "r-013",
+      "id": "r13",
       "nom": "Zamn Restaurant",
       "adresse": "Abdali Boulevard, Amman",
       "cuisine": "Jordanienne gastronomique",
@@ -369,10 +471,19 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Zamn+Restaurant+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Zamn+Restaurant+Amman",
+      "nombreAvis": 1503,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
-      "id": "r-014",
+      "id": "r14",
       "nom": "Joz Hind Restaurant",
       "adresse": "Weibdeh, Amman",
       "cuisine": "Moyen-orientale fusion",
@@ -395,10 +506,18 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Joz+Hind+Restaurant+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Joz+Hind+Restaurant+Amman",
+      "nombreAvis": 1233,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-015",
+      "id": "r15",
       "nom": "Al Tannour Restaurant",
       "adresse": "3rd Circle, Amman",
       "cuisine": "Jordanienne traditionnelle",
@@ -421,7 +540,122 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Al+Tannour+Restaurant+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Al+Tannour+Restaurant+Amman",
+      "nombreAvis": 1659,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ]
+    },
+    {
+      "nom": "Bait Al Karam",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Amman",
+      "description": "Adresse traditionnel local appréciée à Amman, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Amman",
+      "priceRange": "€€",
+      "specialite": "Plat mijoté maison",
+      "nombreAvis": 2468,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Shawarma Al Reef",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Amman",
+      "description": "Adresse grillades & kebab appréciée à Amman, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Amman",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "nombreAvis": 2814,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Beit Cham",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Amman",
+      "description": "Adresse libanais & levant appréciée à Amman, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Amman",
+      "priceRange": "€€",
+      "specialite": "Mezze levantin",
+      "nombreAvis": 1436,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Saffron Majlis",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Amman",
+      "description": "Adresse gastronomique appréciée à Amman, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Amman",
+      "priceRange": "€€€€",
+      "specialite": "Menu dégustation halal",
+      "nombreAvis": 1591,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Sultan Sweets",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Amman",
+      "description": "Adresse pâtisserie & café appréciée à Amman, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Amman",
+      "priceRange": "€",
+      "specialite": "Kunafa et café arabe",
+      "nombreAvis": 206,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r20"
     }
   ],
   "mosquees": [
@@ -478,7 +712,7 @@
   ],
   "hotels": [
     {
-      "id": "h-001",
+      "id": "h1",
       "nom": "Four Seasons Hotel Amman",
       "adresse": "5th Circle, Amman",
       "categorie": "Standard",
@@ -504,10 +738,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Hotel+Amman+Amman",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amman&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Amman"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Amman",
+      "nombreAvis": 793,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-002",
+      "id": "h2",
       "nom": "Kempinski Hotel Amman",
       "adresse": "Abdul Hamid Shoman Street",
       "categorie": "Standard",
@@ -533,10 +779,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Kempinski+Hotel+Amman+Amman",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amman&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Amman"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Amman",
+      "nombreAvis": 1425,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-003",
+      "id": "h3",
       "nom": "Hôtel Intercontinental Amman",
       "adresse": "Islamic College Street",
       "categorie": "Standard",
@@ -562,10 +820,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Intercontinental+Amman+Amman",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amman&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Amman"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Amman",
+      "nombreAvis": 1439,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-004",
+      "id": "h4",
       "nom": "Nomads Hotel & Hostel",
       "adresse": "Downtown Amman",
       "categorie": "Standard",
@@ -591,10 +861,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Nomads+Hotel+%26+Hostel+Amman",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amman&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Amman"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Amman",
+      "nombreAvis": 1845,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-005",
+      "id": "h5",
       "nom": "Hôtel Amman Marriott",
       "adresse": "Issam Ajlouni Street",
       "categorie": "Standard",
@@ -620,94 +902,423 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Amman+Marriott+Amman",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amman&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Amman"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Amman",
+      "nombreAvis": 214,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
+    },
+    {
+      "nom": "Grand Plaza Amman",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Amman",
+      "description": "Hébergement halal-friendly à Amman.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Amman+Amman",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amman&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=amman",
+      "priceRange": "€€€€",
+      "nombreAvis": 1024,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h6"
     }
   ],
   "activites": [
     {
-      "id": "a-001",
+      "id": "a1",
       "nom": "La Citadelle d'Amman (Jabal Al Qala'a)",
       "type": "Histoire",
       "duree": "2h",
       "prix": "3 JOD",
       "note": 4.8,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=La+Citadelle+d%27Amman+%28Jabal+Al+Qala%27a%29+Amman"
+      "mapsUrl": "https://maps.google.com/?q=La+Citadelle+d%27Amman+%28Jabal+Al+Qala%27a%29+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=La+Citadelle+d%27Amman+%28Jabal+Al+Qala%27a%29+Amman",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-002",
+      "id": "a2",
       "nom": "Théâtre Romain d'Amman",
       "type": "Histoire antique",
       "duree": "1h",
       "prix": "2 JOD",
       "note": 4.7,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Th%C3%A9%C3%A2tre+Romain+d%27Amman+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Th%C3%A9%C3%A2tre+Romain+d%27Amman+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Th%C3%A9%C3%A2tre+Romain+d%27Amman+Amman",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-003",
+      "id": "a3",
       "nom": "Rainbow Street & Downtown",
       "type": "Culture urbaine",
       "duree": "2h",
       "prix": "Gratuit",
       "note": 4.6,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Rainbow+Street+%26+Downtown+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Rainbow+Street+%26+Downtown+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Rainbow+Street+%26+Downtown+Amman",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-004",
+      "id": "a4",
       "nom": "Excursion à Pétra (3h de route)",
       "type": "Site historique mondial",
       "duree": "Journée ou 2 jours",
       "prix": "50 JOD/jour (Jordan Pass inclus)",
       "note": 5.0,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Excursion+%C3%A0+P%C3%A9tra+%283h+de+route%29+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Excursion+%C3%A0+P%C3%A9tra+%283h+de+route%29+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Excursion+%C3%A0+P%C3%A9tra+%283h+de+route%29+Amman",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-005",
+      "id": "a5",
       "nom": "Mer Morte (floating experience)",
       "type": "Nature & bien-être",
       "duree": "Journée",
       "prix": "Transport + entrée beach club",
       "note": 4.8,
       "categorie": "Hammam & Bien-être",
-      "mapsUrl": "https://maps.google.com/?q=Mer+Morte+%28floating+experience%29+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Mer+Morte+%28floating+experience%29+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mer+Morte+%28floating+experience%29+Amman",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-006",
+      "id": "a6",
       "nom": "Jerash (cité romaine)",
       "type": "Archéologie",
       "duree": "Journée",
       "prix": "10 JOD (Jordan Pass inclus)",
       "note": 4.7,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Jerash+%28cit%C3%A9+romaine%29+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Jerash+%28cit%C3%A9+romaine%29+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jerash+%28cit%C3%A9+romaine%29+Amman",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-007",
+      "id": "a7",
       "nom": "Marché de Souq Al Bukharia",
       "type": "Shopping & antiquités",
       "duree": "2h",
       "prix": "Gratuit",
       "note": 4.5,
       "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Souq+Al+Bukharia+Amman"
+      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Souq+Al+Bukharia+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Souq+Al+Bukharia+Amman",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-008",
+      "id": "a8",
       "nom": "Wadi Rum (désert de sable rouge)",
       "type": "Désert & aventure",
       "duree": "1–2 jours",
       "prix": "Camp + activités 50–100 JOD",
       "note": 4.9,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Wadi+Rum+%28d%C3%A9sert+de+sable+rouge%29+Amman"
+      "mapsUrl": "https://maps.google.com/?q=Wadi+Rum+%28d%C3%A9sert+de+sable+rouge%29+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Wadi+Rum+%28d%C3%A9sert+de+sable+rouge%29+Amman",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Amman",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Amman+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Amman+Amman",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand marché central de Amman",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Amman+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Amman+Amman",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a10"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Amman",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Amman+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Amman+Amman",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Musée de la ville de Amman",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Amman+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Amman+Amman",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Food tour halal de Amman",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Amman+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Amman+Amman",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Hammam traditionnel de Amman",
+      "categorie": "Bien-être & Spa",
+      "description": "Bain de vapeur et gommage selon la tradition orientale.",
+      "duree": "2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Amman+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Amman+Amman",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Mosquée historique de Amman",
+      "categorie": "Religieux & Spirituel",
+      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Amman+Amman",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Amman+Amman",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
     }
   ],
   "codeISO": "JO",
   "image": "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?w=1400&q=85",
   "continent": "Asie",
   "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Amman — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?w=1400&q=85"
+  "image_hero": "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?w=1400&q=85",
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée centrale de Amman",
+      "description": "Mosquée fréquentée de Amman, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Amman",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Amman+Amman",
+      "capacite": 2093,
+      "anneeConstruction": 1973,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 31.9539,
+        "lng": 35.9106
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Amman",
+      "description": "Mosquée fréquentée de Amman, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Amman",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Amman+Amman",
+      "capacite": 3614,
+      "anneeConstruction": 1954,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 31.9539,
+        "lng": 35.9106
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Amman",
+      "description": "Mosquée fréquentée de Amman, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Amman",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Amman+Amman",
+      "capacite": 1704,
+      "anneeConstruction": 1884,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 31.9539,
+        "lng": 35.9106
+      }
+    },
+    {
+      "nom": "Mosquée Al-Salam de Amman",
+      "description": "Mosquée fréquentée de Amman, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Amman",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Amman+Amman",
+      "capacite": 3437,
+      "anneeConstruction": 1977,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 31.9539,
+        "lng": 35.9106
+      }
+    },
+    {
+      "nom": "Mosquée Al-Rahma de Amman",
+      "description": "Mosquée fréquentée de Amman, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Amman",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Amman+Amman",
+      "capacite": 4716,
+      "anneeConstruction": 1976,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 31.9539,
+        "lng": 35.9106
+      }
+    }
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Hashem Restaurant",
+      "Beit Sitti",
+      "Sufra Restaurant"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Sufra Restaurant",
+      "Fakhr El-Din",
+      "Hashem Restaurant"
+    ],
+    "incontournables": [
+      "Sufra Restaurant",
+      "Al Sukariah"
+    ],
+    "pepitesCachees": [
+      "Hashem Restaurant",
+      "Shawarmaji"
+    ],
+    "idealFamille": [
+      "Sufra Restaurant",
+      "Fakhr El-Din"
+    ],
+    "gastronomique": [
+      "Romero Restaurant",
+      "Zamn Restaurant"
+    ]
+  }
 }

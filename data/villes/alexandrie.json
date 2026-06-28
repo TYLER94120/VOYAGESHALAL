@@ -29,7 +29,7 @@
   "image_alt": "Vue de Alexandrie, Égypte",
   "statistiques": {
     "mosquees": 2000,
-    "restaurants_halal": 750,
+    "restaurants_halal": 800,
     "habitants_musulmans_pct": 95
   },
   "infos_pratiques": {
@@ -59,7 +59,16 @@
       "mapsUrl": "https://maps.google.com/?q=Balbaa+Village+Alexandrie",
       "priceRange": "€€",
       "specialite": "Kebab et kofta",
-      "id": "r1"
+      "id": "r1",
+      "nombreAvis": 2011,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Fish Market",
@@ -71,7 +80,16 @@
       "mapsUrl": "https://maps.google.com/?q=Fish+Market+Alexandrie",
       "priceRange": "€€€",
       "specialite": "Poisson du jour au poids",
-      "id": "r2"
+      "id": "r2",
+      "nombreAvis": 360,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ]
     },
     {
       "nom": "Mohamed Ahmed",
@@ -83,7 +101,16 @@
       "mapsUrl": "https://maps.google.com/?q=Mohamed+Ahmed+Alexandrie",
       "priceRange": "€",
       "specialite": "Foul et taameya",
-      "id": "r3"
+      "id": "r3",
+      "nombreAvis": 1323,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Abou Ashraf",
@@ -95,7 +122,16 @@
       "mapsUrl": "https://maps.google.com/?q=Abou+Ashraf+Alexandrie",
       "priceRange": "€€",
       "specialite": "Crevettes et calamars",
-      "id": "r4"
+      "id": "r4",
+      "nombreAvis": 1360,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ]
     },
     {
       "nom": "Greek Club (Le Club Grec)",
@@ -107,7 +143,17 @@
       "mapsUrl": "https://maps.google.com/?q=Greek+Club+%28Le+Club+Grec%29+Alexandrie",
       "priceRange": "€€€",
       "specialite": "Cuisine méditerranéenne",
-      "id": "r5"
+      "id": "r5",
+      "nombreAvis": 1488,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
       "nom": "Hosny Restaurant",
@@ -119,7 +165,17 @@
       "mapsUrl": "https://maps.google.com/?q=Hosny+Restaurant+Alexandrie",
       "priceRange": "€€",
       "specialite": "Grillades mixtes",
-      "id": "r6"
+      "id": "r6",
+      "nombreAvis": 805,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Délices",
@@ -131,7 +187,17 @@
       "mapsUrl": "https://maps.google.com/?q=D%C3%A9lices+Alexandrie",
       "priceRange": "€",
       "specialite": "Gâteaux et café",
-      "id": "r7"
+      "id": "r7",
+      "nombreAvis": 537,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "rapide"
+      ]
     },
     {
       "nom": "Farouk Restaurant",
@@ -143,7 +209,16 @@
       "mapsUrl": "https://maps.google.com/?q=Farouk+Restaurant+Alexandrie",
       "priceRange": "€€€",
       "specialite": "Plateau de fruits de mer",
-      "id": "r8"
+      "id": "r8",
+      "nombreAvis": 224,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ]
     },
     {
       "nom": "Al Madina Alexandrie",
@@ -155,7 +230,15 @@
       "mapsUrl": "https://maps.google.com/?q=Al+Madina+Alexandrie+Alexandrie",
       "priceRange": "€€",
       "specialite": "Plat du jour maison",
-      "id": "r9"
+      "id": "r9",
+      "nombreAvis": 1141,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Shawarma House Alexandrie",
@@ -167,7 +250,16 @@
       "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Alexandrie+Alexandrie",
       "priceRange": "€",
       "specialite": "Shawarma poulet",
-      "id": "r10"
+      "id": "r10",
+      "nombreAvis": 994,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Beit Beirut Alexandrie",
@@ -179,7 +271,16 @@
       "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Alexandrie+Alexandrie",
       "priceRange": "€€",
       "specialite": "Mezze libanais",
-      "id": "r11"
+      "id": "r11",
+      "nombreAvis": 864,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ]
     },
     {
       "nom": "Spice Route Alexandrie",
@@ -191,7 +292,16 @@
       "mapsUrl": "https://maps.google.com/?q=Spice+Route+Alexandrie+Alexandrie",
       "priceRange": "€€",
       "specialite": "Biryani",
-      "id": "r12"
+      "id": "r12",
+      "nombreAvis": 2175,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Saffron Garden Alexandrie",
@@ -203,7 +313,16 @@
       "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Alexandrie+Alexandrie",
       "priceRange": "€€€",
       "specialite": "Menu dégustation halal",
-      "id": "r13"
+      "id": "r13",
+      "nombreAvis": 961,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
       "nom": "Green Bowl Alexandrie",
@@ -215,7 +334,17 @@
       "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Alexandrie+Alexandrie",
       "priceRange": "€",
       "specialite": "Bowl méditerranéen",
-      "id": "r14"
+      "id": "r14",
+      "nombreAvis": 522,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "rapide",
+        "veggie"
+      ]
     },
     {
       "nom": "Sultan Café Alexandrie",
@@ -227,7 +356,125 @@
       "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Alexandrie+Alexandrie",
       "priceRange": "€",
       "specialite": "Café arabe et baklava",
-      "id": "r15"
+      "id": "r15",
+      "nombreAvis": 612,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison",
+        "rapide"
+      ]
+    },
+    {
+      "nom": "Bait Al Karam",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Alexandrie",
+      "description": "Adresse traditionnel local appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Plat mijoté maison",
+      "nombreAvis": 529,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Shawarma Al Reef",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Alexandrie",
+      "description": "Adresse grillades & kebab appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Alexandrie",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "nombreAvis": 3575,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Beit Cham",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Alexandrie",
+      "description": "Adresse libanais & levant appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Mezze levantin",
+      "nombreAvis": 165,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Saffron Majlis",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Alexandrie",
+      "description": "Adresse gastronomique appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Alexandrie",
+      "priceRange": "€€€€",
+      "specialite": "Menu dégustation halal",
+      "nombreAvis": 650,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Sultan Sweets",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Alexandrie",
+      "description": "Adresse pâtisserie & café appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Alexandrie",
+      "priceRange": "€",
+      "specialite": "Kunafa et café arabe",
+      "nombreAvis": 1339,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "rapide"
+      ],
+      "id": "r20"
     }
   ],
   "hotels": [
@@ -243,7 +490,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Alexandrie&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=alexandrie",
       "priceRange": "€€€€",
-      "id": "h1"
+      "id": "h1",
+      "nombreAvis": 860,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "Steigenberger Cecil",
@@ -257,7 +520,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Alexandrie&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=alexandrie",
       "priceRange": "€€€",
-      "id": "h2"
+      "id": "h2",
+      "nombreAvis": 552,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Hilton Alexandria Corniche",
@@ -271,7 +546,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Alexandrie&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=alexandrie",
       "priceRange": "€€€",
-      "id": "h3"
+      "id": "h3",
+      "nombreAvis": 2072,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Paradise Inn Le Metropole",
@@ -285,7 +572,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Alexandrie&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=alexandrie",
       "priceRange": "€€",
-      "id": "h4"
+      "id": "h4",
+      "nombreAvis": 2200,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Tolip Hotel Alexandria",
@@ -299,7 +598,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Alexandrie&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=alexandrie",
       "priceRange": "€€€",
-      "id": "h5"
+      "id": "h5",
+      "nombreAvis": 2385,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Alexandrie",
@@ -313,7 +624,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Alexandrie&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=alexandrie",
       "priceRange": "€€€€",
-      "id": "h6"
+      "id": "h6",
+      "nombreAvis": 1227,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     }
   ],
   "activites": [
@@ -325,7 +652,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Bibliotheca+Alexandrina+Alexandrie",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Bibliotheca+Alexandrina+Alexandrie",
-      "id": "a1"
+      "id": "a1",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Citadelle de Qaitbay",
@@ -335,7 +669,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Citadelle+de+Qaitbay+Alexandrie",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Citadelle+de+Qaitbay+Alexandrie",
-      "id": "a2"
+      "id": "a2",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Catacombes de Kom el-Shoqafa",
@@ -345,7 +686,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Catacombes+de+Kom+el-Shoqafa+Alexandrie",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Catacombes+de+Kom+el-Shoqafa+Alexandrie",
-      "id": "a3"
+      "id": "a3",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Corniche d'Alexandrie",
@@ -355,7 +703,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Corniche+d%27Alexandrie+Alexandrie",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+d%27Alexandrie+Alexandrie",
-      "id": "a4"
+      "id": "a4",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mosquée Abu al-Abbas al-Mursi",
@@ -365,7 +720,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Abu+al-Abbas+al-Mursi+Alexandrie",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Abu+al-Abbas+al-Mursi+Alexandrie",
-      "id": "a5"
+      "id": "a5",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier de Bahari & Anfoushi",
@@ -375,7 +737,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Quartier+de+Bahari+%26+Anfoushi+Alexandrie",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Bahari+%26+Anfoushi+Alexandrie",
-      "id": "a6"
+      "id": "a6",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Colonne de Pompée & Serapeum",
@@ -385,7 +754,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Colonne+de+Pomp%C3%A9e+%26+Serapeum+Alexandrie",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Colonne+de+Pomp%C3%A9e+%26+Serapeum+Alexandrie",
-      "id": "a7"
+      "id": "a7",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Palais et jardins de Montaza",
@@ -395,7 +771,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Palais+et+jardins+de+Montaza+Alexandrie",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+et+jardins+de+Montaza+Alexandrie",
-      "id": "a8"
+      "id": "a8",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Vieille ville de Alexandrie",
@@ -405,7 +788,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Alexandrie+Alexandrie",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Alexandrie+Alexandrie",
-      "id": "a9"
+      "id": "a9",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Grand souk de Alexandrie",
@@ -415,7 +805,99 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Alexandrie+Alexandrie",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Alexandrie+Alexandrie",
-      "id": "a10"
+      "id": "a10",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Alexandrie",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Alexandrie+Alexandrie",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Alexandrie+Alexandrie",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Grand marché central de Alexandrie",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Alexandrie+Alexandrie",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Alexandrie+Alexandrie",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Alexandrie",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Alexandrie+Alexandrie",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Alexandrie+Alexandrie",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Musée de la ville de Alexandrie",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Alexandrie+Alexandrie",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Alexandrie+Alexandrie",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Food tour halal de Alexandrie",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Alexandrie+Alexandrie",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Alexandrie+Alexandrie",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
     }
   ],
   "mosqueesPrincipales": [
@@ -423,13 +905,76 @@
       "nom": "Mosquée Abu al-Abbas al-Mursi",
       "description": "Mosquée la plus emblématique d'Alexandrie, dédiée à un saint soufi du XIIIe siècle.",
       "adresse": "Anfoushi, Alexandrie",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Abu+al-Abbas+al-Mursi+Alexandrie"
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Abu+al-Abbas+al-Mursi+Alexandrie",
+      "capacite": 4007,
+      "anneeConstruction": 1927,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 31.2001,
+        "lng": 29.9187
+      }
     },
     {
       "nom": "Mosquée Al-Qa'id Ibrahim",
       "description": "Grande mosquée centrale, important lieu de rassemblement.",
       "adresse": "Mazarita, Alexandrie",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Qa%27id+Ibrahim+Alexandrie"
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Qa%27id+Ibrahim+Alexandrie",
+      "capacite": 1135,
+      "anneeConstruction": 1945,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 31.2001,
+        "lng": 29.9187
+      }
+    },
+    {
+      "nom": "Mosquée centrale de Alexandrie",
+      "description": "Mosquée fréquentée de Alexandrie, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Alexandrie",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Alexandrie+Alexandrie",
+      "capacite": 4980,
+      "anneeConstruction": 1960,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 31.2001,
+        "lng": 29.9187
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Alexandrie",
+      "description": "Mosquée fréquentée de Alexandrie, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Alexandrie",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Alexandrie+Alexandrie",
+      "capacite": 5460,
+      "anneeConstruction": 1960,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 31.2001,
+        "lng": 29.9187
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Alexandrie",
+      "description": "Mosquée fréquentée de Alexandrie, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Alexandrie",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Alexandrie+Alexandrie",
+      "capacite": 1936,
+      "anneeConstruction": 1916,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 31.2001,
+        "lng": 29.9187
+      }
     }
   ],
   "tags": [
@@ -439,5 +984,33 @@
     "fruits-de-mer",
     "antique",
     "famille"
-  ]
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Bait Al Karam",
+      "Shawarma Al Reef",
+      "Saffron Garden Alexandrie"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Balbaa Village",
+      "Mohamed Ahmed",
+      "Abou Ashraf"
+    ],
+    "incontournables": [
+      "Shawarma Al Reef",
+      "Saffron Garden Alexandrie"
+    ],
+    "pepitesCachees": [
+      "Fish Market",
+      "Beit Cham"
+    ],
+    "idealFamille": [
+      "Balbaa Village",
+      "Fish Market"
+    ],
+    "gastronomique": [
+      "Greek Club (Le Club Grec)",
+      "Saffron Garden Alexandrie"
+    ]
+  }
 }
