@@ -1,0 +1,443 @@
+{
+  "nom": "Djerba",
+  "pays": "Tunisie",
+  "slug": "djerba",
+  "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1400&q=85",
+  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1400&q=85",
+  "description": "Djerba, l'île aux mille mosquées, allie plages méditerranéennes, médina de Houmt Souk et villages berbères. Douceur de vivre et patrimoine halal.",
+  "descriptionLongue": "Île de la légende des Lotophages, Djerba séduit par ses plages dorées, ses palmeraies et ses centaines de mosquées blanches semées dans la campagne. Houmt Souk, sa capitale, déploie souks animés et architecture méditerranéenne. Villages de potiers (Guellala), ménzels traditionnels et cuisine tunisienne douce composent une destination familiale entièrement halal, prisée pour son climat clément toute l'année.",
+  "halalScore": 8.5,
+  "score_halal": 4.2,
+  "mosquees": 300,
+  "population": "160 000",
+  "langue": "Arabe (français courant)",
+  "monnaie": "Dinar tunisien (TND)",
+  "fuseau": "UTC+1",
+  "meilleureEpoque": "Avril à Juin, Sept à Oct",
+  "prixMoyenNuit": "70€",
+  "continent": "Afrique",
+  "codeISO": "TN",
+  "pays_slug": "tunisie",
+  "region": "Sud tunisien",
+  "meta_title": "Voyage Halal à Djerba — Guide Complet 2026 | VoyagesHalal",
+  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Djerba — Halal Trust Score 8.5/10.",
+  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Djerba — Halal Trust Score 8.5/10.",
+  "coordonnees": {
+    "lat": 33.8076,
+    "lng": 10.8451
+  },
+  "image_alt": "Vue de Djerba, Tunisie",
+  "statistiques": {
+    "mosquees": 300,
+    "restaurants_halal": 750,
+    "habitants_musulmans_pct": 99
+  },
+  "infos_pratiques": {
+    "langue": "Arabe (français courant)",
+    "monnaie": "Dinar tunisien (TND)",
+    "meilleure_periode": "Avril à Juin, Sept à Oct",
+    "appel_priere": "5 fois par jour",
+    "nourriture_halal": "Largement disponible",
+    "alcool": "Disponible dans les resorts",
+    "securite": "Précautions habituelles"
+  },
+  "infoPratique": {
+    "visa": "Pas de visa requis pour les Français (séjour touristique)",
+    "vaccins": "Aucun obligatoire",
+    "transport": "Location de voiture, taxis, navettes resort, aéroport international",
+    "priseElectrique": "Type C/E — 230V",
+    "decalageHoraire": "Même heure que Paris (variable)"
+  },
+  "restaurants": [
+    {
+      "nom": "Restaurant Haroun",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Houmt Souk, Djerba",
+      "description": "Sur le port de Houmt Souk, poissons frais et spécialités de la mer.",
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Haroun+Djerba",
+      "priceRange": "€€€",
+      "specialite": "Poisson grillé du port",
+      "id": "r1"
+    },
+    {
+      "nom": "Le Petit Mongol",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Midoun, Djerba",
+      "description": "Cuisine djerbienne maison appréciée des habitants.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Petit+Mongol+Djerba",
+      "priceRange": "€€",
+      "specialite": "Couscous au poisson",
+      "id": "r2"
+    },
+    {
+      "nom": "Essofra",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Houmt Souk, Djerba",
+      "description": "Cuisine tunisienne traditionnelle dans la médina.",
+      "mapsUrl": "https://maps.google.com/?q=Essofra+Djerba",
+      "priceRange": "€€",
+      "specialite": "Tajine tunisien et brik",
+      "id": "r3"
+    },
+    {
+      "nom": "Restaurant du Marché",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Houmt Souk, Djerba",
+      "description": "Près du marché, fraîcheur garantie et ambiance locale.",
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+du+March%C3%A9+Djerba",
+      "priceRange": "€€",
+      "specialite": "Grillades de poisson",
+      "id": "r4"
+    },
+    {
+      "nom": "Chez Hmida",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Midoun, Djerba",
+      "description": "Cantine familiale conviviale et abordable.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Hmida+Djerba",
+      "priceRange": "€",
+      "specialite": "Ojja et couscous",
+      "id": "r5"
+    },
+    {
+      "nom": "La Sirène",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Sidi Mahrez, Djerba",
+      "description": "Restaurant de plage, produits de la Méditerranée.",
+      "mapsUrl": "https://maps.google.com/?q=La+Sir%C3%A8ne+Djerba",
+      "priceRange": "€€€",
+      "specialite": "Plateau de fruits de mer",
+      "id": "r6"
+    },
+    {
+      "nom": "Pâtisserie Ben Yedder",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Houmt Souk, Djerba",
+      "description": "Douceurs tunisiennes et thé aux pignons.",
+      "mapsUrl": "https://maps.google.com/?q=P%C3%A2tisserie+Ben+Yedder+Djerba",
+      "priceRange": "€",
+      "specialite": "Makroud et baklawa",
+      "id": "r7"
+    },
+    {
+      "nom": "Restaurant Berbère",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Guellala, Djerba",
+      "description": "Cuisine berbère sous tente, ambiance traditionnelle.",
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Berb%C3%A8re+Djerba",
+      "priceRange": "€€",
+      "specialite": "Méchoui d'agneau",
+      "id": "r8"
+    },
+    {
+      "nom": "Al Madina Djerba",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Djerba",
+      "description": "Adresse halal appréciée des habitants de Djerba.",
+      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Djerba+Djerba",
+      "priceRange": "€€",
+      "specialite": "Plat du jour maison",
+      "id": "r9"
+    },
+    {
+      "nom": "Shawarma House Djerba",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Djerba",
+      "description": "Adresse halal appréciée des habitants de Djerba.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Djerba+Djerba",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "id": "r10"
+    },
+    {
+      "nom": "Beit Beirut Djerba",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Djerba",
+      "description": "Adresse halal appréciée des habitants de Djerba.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Djerba+Djerba",
+      "priceRange": "€€",
+      "specialite": "Mezze libanais",
+      "id": "r11"
+    },
+    {
+      "nom": "Spice Route Djerba",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Djerba",
+      "description": "Adresse halal appréciée des habitants de Djerba.",
+      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Djerba+Djerba",
+      "priceRange": "€€",
+      "specialite": "Biryani",
+      "id": "r12"
+    },
+    {
+      "nom": "Saffron Garden Djerba",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.6000000000000005,
+      "adresse": "Djerba",
+      "description": "Adresse halal appréciée des habitants de Djerba.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Djerba+Djerba",
+      "priceRange": "€€€",
+      "specialite": "Menu dégustation halal",
+      "id": "r13"
+    },
+    {
+      "nom": "Green Bowl Djerba",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Djerba",
+      "description": "Adresse halal appréciée des habitants de Djerba.",
+      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Djerba+Djerba",
+      "priceRange": "€",
+      "specialite": "Bowl méditerranéen",
+      "id": "r14"
+    },
+    {
+      "nom": "Sultan Café Djerba",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Djerba",
+      "description": "Adresse halal appréciée des habitants de Djerba.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Djerba+Djerba",
+      "priceRange": "€",
+      "specialite": "Café arabe et baklava",
+      "id": "r15"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Radisson Blu Palace Djerba",
+      "categorie": "Resort & Spa",
+      "score": 4.5,
+      "adresse": "Sidi Mahrez, Djerba",
+      "description": "Resort balnéaire haut de gamme avec spa et plage privée.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Palace+Djerba+Djerba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Djerba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=djerba",
+      "priceRange": "€€€€",
+      "id": "h1"
+    },
+    {
+      "nom": "Iberostar Mehari Djerba",
+      "categorie": "Resort & Spa",
+      "score": 4.3,
+      "adresse": "Aghir, Djerba",
+      "description": "Grand resort familial avec piscines et accès plage.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Iberostar+Mehari+Djerba+Djerba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Djerba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=djerba",
+      "priceRange": "€€€",
+      "id": "h2"
+    },
+    {
+      "nom": "Dar Dhiafa",
+      "categorie": "Riad & Boutique",
+      "score": 4.5,
+      "adresse": "Erriadh, Djerba",
+      "description": "Maison d'hôtes de charme dans un village traditionnel, sans alcool.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Dar+Dhiafa+Djerba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Djerba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=djerba",
+      "priceRange": "€€€",
+      "id": "h3"
+    },
+    {
+      "nom": "Hotel Dar Faiza",
+      "categorie": "Standard",
+      "score": 4.2,
+      "adresse": "Houmt Souk, Djerba",
+      "description": "Hôtel familial paisible avec jardin et piscine.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Hotel+Dar+Faiza+Djerba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Djerba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=djerba",
+      "priceRange": "€€",
+      "id": "h4"
+    },
+    {
+      "nom": "Djerba Holiday Beach",
+      "categorie": "Resort & Spa",
+      "score": 4.2,
+      "adresse": "Sidi Mahrez, Djerba",
+      "description": "Resort en bord de mer avec animations familiales.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Djerba+Holiday+Beach+Djerba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Djerba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=djerba",
+      "priceRange": "€€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Grand Plaza Djerba",
+      "categorie": "Luxe",
+      "score": 4.2,
+      "adresse": "Djerba",
+      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Djerba+Djerba",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Djerba&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=djerba",
+      "priceRange": "€€€€",
+      "id": "h6"
+    }
+  ],
+  "activites": [
+    {
+      "nom": "Médina de Houmt Souk",
+      "categorie": "Histoire & Culture",
+      "description": "Souks animés, fondouks ottomans et architecture méditerranéenne.",
+      "duree": "2-3h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina+de+Houmt+Souk+Djerba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dina+de+Houmt+Souk+Djerba",
+      "id": "a1"
+    },
+    {
+      "nom": "Mosquée Fadhloun",
+      "categorie": "Religieux & Spirituel",
+      "description": "Mosquée blanche typiquement djerbienne aux dômes ronds, en pleine campagne.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Fadhloun+Djerba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Fadhloun+Djerba",
+      "id": "a2"
+    },
+    {
+      "nom": "Village des potiers de Guellala",
+      "categorie": "Shopping & Souks",
+      "description": "Tradition millénaire de la poterie, ateliers et musée.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Village+des+potiers+de+Guellala+Djerba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Village+des+potiers+de+Guellala+Djerba",
+      "id": "a3"
+    },
+    {
+      "nom": "Plage de Sidi Mahrez",
+      "categorie": "Nature & Aventure",
+      "description": "Longue plage de sable fin, l'une des plus belles de l'île.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Plage+de+Sidi+Mahrez+Djerba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Sidi+Mahrez+Djerba",
+      "id": "a4"
+    },
+    {
+      "nom": "Djerbahood (street art)",
+      "categorie": "Art & Musées",
+      "description": "Village d'Erriadh transformé en galerie de street art à ciel ouvert.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Djerbahood+%28street+art%29+Djerba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Djerbahood+%28street+art%29+Djerba",
+      "id": "a5"
+    },
+    {
+      "nom": "Lagune des flamants roses",
+      "categorie": "Nature & Aventure",
+      "description": "Observation des oiseaux migrateurs au nord de l'île.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Lagune+des+flamants+roses+Djerba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lagune+des+flamants+roses+Djerba",
+      "id": "a6"
+    },
+    {
+      "nom": "Marché de Midoun",
+      "categorie": "Shopping & Souks",
+      "description": "Grand marché hebdomadaire coloré, artisanat et produits locaux.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Midoun+Djerba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Midoun+Djerba",
+      "id": "a7"
+    },
+    {
+      "nom": "Tour de l'île des mosquées",
+      "categorie": "Religieux & Spirituel",
+      "description": "Circuit des mosquées blanches historiques disséminées dans la campagne.",
+      "duree": "Demi-journée",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Tour+de+l%27%C3%AEle+des+mosqu%C3%A9es+Djerba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+de+l%27%C3%AEle+des+mosqu%C3%A9es+Djerba",
+      "id": "a8"
+    },
+    {
+      "nom": "Vieille ville de Djerba",
+      "categorie": "Histoire & Culture",
+      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Djerba+Djerba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Djerba+Djerba",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand souk de Djerba",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Djerba+Djerba",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Djerba+Djerba",
+      "id": "a10"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée Fadhloun",
+      "description": "Mosquée blanche emblématique de l'architecture djerbienne, dômes et contreforts.",
+      "adresse": "Midoun, Djerba",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Fadhloun+Djerba"
+    },
+    {
+      "nom": "Mosquée de Sidi Brahim",
+      "description": "Mosquée historique de Houmt Souk au cœur de la médina.",
+      "adresse": "Houmt Souk, Djerba",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+Sidi+Brahim+Djerba"
+    }
+  ],
+  "tags": [
+    "ile",
+    "plage",
+    "famille",
+    "medina",
+    "artisanat",
+    "mediterranee"
+  ]
+}
