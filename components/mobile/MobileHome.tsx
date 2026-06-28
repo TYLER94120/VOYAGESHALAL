@@ -1,0 +1,184 @@
+'use client'
+import Link from 'next/link'
+import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import SearchBarHome from '@/components/search/SearchBarHome'
+import IslamicPattern from '@/components/ui/IslamicPattern'
+
+interface Destination {
+  slug: string
+  city: string
+  country: string
+  flag: string
+  image: string
+  score: string
+  mosquees: string
+}
+
+const PRAYERS = [
+  { key: 'Fajr', label: 'Fajr' },
+  { key: 'Dhuhr', label: 'Dhuhr' },
+  { key: 'Asr', label: 'ʿAsr' },
+  { key: 'Maghrib', label: 'Maghrib' },
+  { key: 'Isha', label: 'ʿIsha' },
+]
+
+// Bandeau prochaine prière — AlAdhan géolocalisé, repli silencieux si refus
+function NextPrayerBanner() {
+  const [info, setInfo] = useState<{ name: string; time: string; city: string } | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    async function load(lat: number, lng: number, city: string) {
+      try {
+        const d = new Date()
+        const url = `https://api.aladhan.com/v1/timings/${Math.floor(d.getTime() / 1000)}?latitude=${lat}&longitude=${lng}&method=3`
+        const res = await fetch(url)
+        const json = await res.json()
+        const t = json?.data?.timings
+        if (!t || cancelled) return
+        const now = d.getHours() * 60 + d.getMinutes()
+        let next = PRAYERS[0]
+        let nextTime = t['Fajr']
+        for (const p of PRAYERS) {
+          const [h, m] = (t[p.key] || '').split(':').map(Number)
+          if (h * 60 + m > now) {
+            next = p
+            nextTime = t[p.key]
+            break
+          }
+        }
+        setInfo({ name: next.label, time: (nextTime || '').slice(0, 5), city })
+      } catch {
+        /* repli silencieux */
+      }
+    }
+    if (typeof navigator !== 'undefined' && navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (pos) => load(pos.coords.latitude, pos.coords.longitude, 'Ma position'),
+        () => load(41.0082, 28.9784, 'Istanbul'),
+        { timeout: 6000 }
+      )
+    } else {
+      load(41.0082, 28.9784, 'Istanbul')
+    }
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  return (
+    <Link
+      href="/horaires-priere"
+      style={{
+        display: 'block',
+        background: 'linear-gradient(135deg, #1b4332 0%, #0b1a0f 100%)',
+        borderRadius: '18px',
+        padding: '16px 18px',
+        textDecoration: 'none',
+        boxShadow: '0 8px 24px rgba(11,26,15,0.18)',
+      }}
+    >
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <span style={{ color: '#c9a84c', fontSize: '10.5px', fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase' }}>
+          Prochaine prière
+        </span>
+        <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '11px' }}>📍 {info?.city ?? '…'}</span>
+      </div>
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', marginTop: '6px' }}>
+        <span style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900, fontSize: '34px', color: '#fff' }}>
+          {info?.time ?? '—:—'}
+        </span>
+        <span style={{ color: '#e8d5a3', fontSize: '15px', fontWeight: 600 }}>{info?.name ?? ''}</span>
+      </div>
+      <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '11.5px' }}>Touchez pour tous les horaires →</span>
+    </Link>
+  )
+}
+
+const TILES = [
+  { href: '/destinations', icon: '🌍', title: 'Destinations', sub: (n: number) => `${n} villes halal`, bg: '#EAF3DE' },
+  { href: '/horaires-priere', icon: '🕐', title: 'Prières', sub: () => 'Horaires du jour', bg: '#FAEEDA' },
+  { href: '/qibla', icon: '🧭', title: 'Qibla', sub: () => 'Direction Mecque', bg: '#E6F1FB' },
+  { href: '/mosquee-proche', icon: '🕌', title: 'Mosquée', sub: () => 'La plus proche', bg: '#EEEDFE' },
+]
+
+export default function MobileHome({ totalVilles, destinations }: { totalVilles: number; destinations: Destination[] }) {
+  return (
+    <div className="mobile-home md:hidden" style={{ background: '#fdfaf3' }}>
+      {/* Hero nuit */}
+      <section style={{ position: 'relative', overflow: 'hidden', background: '#0b1a0f', padding: '20px 18px 26px' }}>
+        <IslamicPattern opacity={0.07} />
+        <div style={{ position: 'relative', zIndex: 10 }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+            <span style={{ display: 'flex', alignItems: 'center', gap: '7px', color: '#fff', fontWeight: 700, fontSize: '16px' }}>
+              <span style={{ color: '#c9a84c' }}>✦</span> VoyagesHalal
+            </span>
+          </div>
+          <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900, fontSize: '27px', color: '#fff', lineHeight: 1.15, marginBottom: '16px' }}>
+            As-salāmu ʿalaykum,
+            <br />
+            où allez-vous <span style={{ color: '#c9a84c', fontStyle: 'italic' }}>prier</span> ?
+          </h1>
+          <div style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(201,168,76,0.35)', backdropFilter: 'blur(10px)', borderRadius: '14px', padding: '4px' }}>
+            <SearchBarHome />
+          </div>
+        </div>
+      </section>
+
+      {/* Bandeau prière + tuiles */}
+      <section style={{ padding: '16px 14px 4px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+        <NextPrayerBanner />
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+          {TILES.map((t) => (
+            <Link
+              key={t.href}
+              href={t.href}
+              style={{ background: t.bg, borderRadius: '18px', padding: '16px', textDecoration: 'none', display: 'block' }}
+            >
+              <div style={{ fontSize: '26px', marginBottom: '8px' }}>{t.icon}</div>
+              <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, fontSize: '17px', color: '#1b4332' }}>{t.title}</div>
+              <div style={{ fontSize: '12px', color: '#6b7280', marginTop: '2px' }}>{t.sub(totalVilles)}</div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Destinations populaires */}
+      <section style={{ padding: '18px 14px 28px' }}>
+        <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', color: '#9ca3af', marginBottom: '12px' }}>
+          Destinations populaires
+        </p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+          {destinations.map((d) => (
+            <Link
+              key={d.slug}
+              href={`/destinations/${d.slug}`}
+              style={{ display: 'flex', alignItems: 'center', gap: '13px', background: '#fff', borderRadius: '16px', padding: '10px', textDecoration: 'none', border: '1px solid rgba(11,26,15,0.07)', boxShadow: '0 4px 14px rgba(11,26,15,0.04)' }}
+            >
+              <div style={{ position: 'relative', width: '64px', height: '64px', borderRadius: '13px', overflow: 'hidden', flexShrink: 0 }}>
+                <Image src={d.image} alt={d.city} fill className="object-cover" sizes="64px" />
+                <span style={{ position: 'absolute', top: '4px', left: '4px', background: 'rgba(11,26,15,0.8)', color: '#c9a84c', fontSize: '10px', fontWeight: 700, padding: '1px 6px', borderRadius: '20px' }}>
+                  ✦ {d.score}
+                </span>
+              </div>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <div style={{ fontSize: '10px', color: '#9ca3af', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+                  {d.flag} {d.country}
+                </div>
+                <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, fontSize: '19px', color: '#1a1a1a', lineHeight: 1.1 }}>{d.city}</div>
+                <div style={{ display: 'flex', gap: '6px', marginTop: '4px' }}>
+                  <span style={{ background: '#E7F4EA', color: '#1B7A47', fontSize: '10.5px', fontWeight: 700, padding: '2px 8px', borderRadius: '20px' }}>✓ Halal+</span>
+                  <span style={{ background: '#f3f0e8', color: '#6b7280', fontSize: '10.5px', fontWeight: 600, padding: '2px 8px', borderRadius: '20px' }}>🕌 {d.mosquees}</span>
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
+        <Link href="/destinations" style={{ display: 'block', textAlign: 'center', marginTop: '16px', color: '#1b4332', fontWeight: 700, fontSize: '13px', textDecoration: 'none' }}>
+          Voir les {totalVilles} destinations →
+        </Link>
+      </section>
+    </div>
+  )
+}

@@ -11,6 +11,15 @@ import SearchBarHome from '@/components/search/SearchBarHome'
 import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
+import MobileHome from '@/components/mobile/MobileHome'
+
+// Destinations mises en avant sur l'accueil mobile (app-style)
+const MOBILE_DESTINATIONS = [
+  { slug: 'istanbul', city: 'Istanbul', country: 'Turquie', flag: '🇹🇷', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=300&q=70', score: '9.0', mosquees: '3 113' },
+  { slug: 'medine', city: 'Médine', country: 'Arabie Saoudite', flag: '🇸🇦', image: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=300&q=70', score: '9.8', mosquees: 'Umrah' },
+  { slug: 'dubai', city: 'Dubaï', country: 'Émirats', flag: '🇦🇪', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=300&q=70', score: '9.4', mosquees: '700' },
+  { slug: 'kuala-lumpur', city: 'Kuala Lumpur', country: 'Malaisie', flag: '🇲🇾', image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=300&q=70', score: '9.0', mosquees: '1 200' },
+]
 
 export const metadata: Metadata = buildMetadata({
   title: 'Voyages Halal — Voyagez halal, voyagez serein',
@@ -60,7 +69,9 @@ export default function HomePage() {
   return (
     <>
     <JsonLd data={websiteSchema} />
-    <main style={{ backgroundColor: '#fdfaf3' }}>
+    {/* Accueil app-style — mobile uniquement */}
+    <MobileHome totalVilles={totalVilles} destinations={MOBILE_DESTINATIONS} />
+    <main className="hidden md:block" style={{ backgroundColor: '#fdfaf3' }}>
       {/* Hero Premium Islamic */}
       <section className="relative overflow-hidden px-6 sm:px-12 pt-24 pb-28 text-center" style={{ backgroundColor: '#0b1a0f' }}>
         <IslamicPattern opacity={0.07} />
