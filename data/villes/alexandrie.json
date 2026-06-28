@@ -6,8 +6,8 @@
   "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1400&q=85",
   "description": "Alexandrie, la perle méditerranéenne d'Égypte, marie héritage antique, corniche balnéaire et fruits de mer. La Bibliotheca et la citadelle de Qaitbay veillent sur la baie.",
   "descriptionLongue": "Fondée par Alexandre le Grand, Alexandrie fut un phare de la connaissance antique. Aujourd'hui, sa corniche de 15 km, ses cafés historiques et ses fruits de mer en font une échappée méditerranéenne prisée des Égyptiens. La Bibliotheca Alexandrina moderne ravive l'esprit de l'ancienne bibliothèque, tandis que la citadelle de Qaitbay s'élève sur le site de l'antique phare. Cuisine de poisson généreuse et atmosphère détendue, dans une grande ville musulmane.",
-  "halalScore": 8.8,
-  "score_halal": 4.4,
+  "halalScore": 8.3,
+  "score_halal": 4.2,
   "mosquees": 2000,
   "population": "5,4 millions",
   "langue": "Arabe",
@@ -50,80 +50,79 @@
   },
   "restaurants": [
     {
-      "nom": "Balbaa Village",
-      "type": "Grillades & Kebab",
+      "nom": "Tikka Grill",
+      "type": "Indien & Pakistani",
       "certificationHalal": true,
       "score": 4.4,
-      "adresse": "Smouha, Alexandrie",
-      "description": "Grande adresse de grillades très populaire à Alexandrie.",
-      "mapsUrl": "https://maps.google.com/?q=Balbaa+Village+Alexandrie",
+      "adresse": "Alexandrie",
+      "description": "Grillades vue mer Méditerranée à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Tikka+Grill+Alexandrie",
       "priceRange": "€€",
-      "specialite": "Kebab et kofta",
-      "id": "r1",
-      "nombreAvis": 2011,
+      "specialite": "Grillades vue mer méditerranée",
+      "nombreAvis": 1308,
       "ouvertureRamadan": true,
-      "livraison": false,
+      "livraison": true,
       "reservationRequise": false,
       "tags": [
         "familial",
-        "local-authentique",
-        "rapide"
-      ]
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r1"
     },
     {
-      "nom": "Fish Market",
+      "nom": "Qahwa Restaurant",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Alexandrie",
+      "description": "Café historique à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Qahwa+Restaurant+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Café historique",
+      "nombreAvis": 715,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison"
+      ],
+      "id": "r2"
+    },
+    {
+      "nom": "Kadoura Fish",
       "type": "Fruits de mer",
       "certificationHalal": true,
       "score": 4.5,
-      "adresse": "Corniche, Alexandrie",
-      "description": "Institution des fruits de mer face à la mer, choix sur étal.",
-      "mapsUrl": "https://maps.google.com/?q=Fish+Market+Alexandrie",
-      "priceRange": "€€€",
-      "specialite": "Poisson du jour au poids",
-      "id": "r2",
-      "nombreAvis": 360,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ]
-    },
-    {
-      "nom": "Mohamed Ahmed",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Centre-ville, Alexandrie",
-      "description": "Le roi du foul et du falafel à Alexandrie depuis 1957.",
-      "mapsUrl": "https://maps.google.com/?q=Mohamed+Ahmed+Alexandrie",
-      "priceRange": "€",
-      "specialite": "Foul et taameya",
-      "id": "r3",
-      "nombreAvis": 1323,
+      "adresse": "Alexandrie",
+      "description": "Poissons légendaires depuis 1967 à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Kadoura+Fish+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Poissons légendaires depuis 1967",
+      "nombreAvis": 1293,
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false,
       "tags": [
         "familial",
-        "local-authentique",
-        "rapide"
-      ]
+        "vue-mer"
+      ],
+      "id": "r3"
     },
     {
-      "nom": "Abou Ashraf",
+      "nom": "Zephyrion Abu Qir",
       "type": "Fruits de mer",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bahari, Alexandrie",
-      "description": "Poissons frais grillés, adresse de quartier réputée.",
-      "mapsUrl": "https://maps.google.com/?q=Abou+Ashraf+Alexandrie",
+      "score": 4.2,
+      "adresse": "Alexandrie",
+      "description": "Poissons bord de mer Abu Qir à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Zephyrion+Abu+Qir+Alexandrie",
       "priceRange": "€€",
-      "specialite": "Crevettes et calamars",
-      "id": "r4",
-      "nombreAvis": 1360,
+      "specialite": "Poissons bord de mer abu qir",
+      "nombreAvis": 56,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -131,20 +130,306 @@
         "familial",
         "livraison",
         "vue-mer"
-      ]
+      ],
+      "id": "r4"
     },
     {
-      "nom": "Greek Club (Le Club Grec)",
-      "type": "Gastronomique",
+      "nom": "Trianon",
+      "type": "Cuisine française",
       "certificationHalal": true,
       "score": 4.3,
-      "adresse": "Anfoushi, Alexandrie",
-      "description": "Terrasse historique au-dessus de la citadelle, vue mer.",
-      "mapsUrl": "https://maps.google.com/?q=Greek+Club+%28Le+Club+Grec%29+Alexandrie",
-      "priceRange": "€€€",
-      "specialite": "Cuisine méditerranéenne",
-      "id": "r5",
-      "nombreAvis": 1488,
+      "adresse": "Alexandrie",
+      "description": "Brasserie 1905, historique halal à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Trianon+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Brasserie 1905",
+      "nombreAvis": 1168,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r5"
+    },
+    {
+      "nom": "Elite Restaurant",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Alexandrie",
+      "description": "Club british halal à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Elite+Restaurant+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Club british halal",
+      "nombreAvis": 802,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r6"
+    },
+    {
+      "nom": "Grand Café",
+      "type": "Cuisine française",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Alexandrie",
+      "description": "Colonial halal à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Grand+Caf%C3%A9+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Colonial halal",
+      "nombreAvis": 118,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r7"
+    },
+    {
+      "nom": "Santa Lucia",
+      "type": "Pizza & Italien",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Alexandrie",
+      "description": "Italien halal à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Santa+Lucia+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Italien halal",
+      "nombreAvis": 481,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r8"
+    },
+    {
+      "nom": "Délices Alexandria",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Alexandrie",
+      "description": "Pâtisseries historiques à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=D%C3%A9lices+Alexandria+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Pâtisseries historiques",
+      "nombreAvis": 1758,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison"
+      ],
+      "id": "r9"
+    },
+    {
+      "nom": "La Fontaine Restaurant",
+      "type": "Cuisine française",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Alexandrie",
+      "description": "Français halal à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=La+Fontaine+Restaurant+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Français halal",
+      "nombreAvis": 678,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r10"
+    },
+    {
+      "nom": "Samakmak",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Alexandrie",
+      "description": "Poissons de la corniche à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Samakmak+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Poissons de la corniche",
+      "nombreAvis": 86,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ],
+      "id": "r11"
+    },
+    {
+      "nom": "Fish Market Alex",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Alexandrie",
+      "description": "Marché de poissons à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Fish+Market+Alex+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Marché de poissons",
+      "nombreAvis": 535,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "vue-mer"
+      ],
+      "id": "r12"
+    },
+    {
+      "nom": "Bahr Restaurant",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Alexandrie",
+      "description": "Sea restaurant à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Bahr+Restaurant+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Sea restaurant",
+      "nombreAvis": 1110,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r13"
+    },
+    {
+      "nom": "Hana Korean BBQ",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Alexandrie",
+      "description": "Coréen halal à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Hana+Korean+BBQ+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Coréen halal",
+      "nombreAvis": 1590,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r14"
+    },
+    {
+      "nom": "Sushi House Alex",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Alexandrie",
+      "description": "Sushi halal à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Sushi+House+Alex+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Sushi halal",
+      "nombreAvis": 874,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r15"
+    },
+    {
+      "nom": "Sealine Restaurant",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Alexandrie",
+      "description": "Front de mer à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Sealine+Restaurant+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Front de mer",
+      "nombreAvis": 2430,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Sofitel Alexandria Cecil Hotel Dining",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Alexandrie",
+      "description": "Gastronomique à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Sofitel+Alexandria+Cecil+Hotel+Dining+Alexandrie",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique",
+      "nombreAvis": 3437,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Sheraton Montazah Restaurant",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Alexandrie",
+      "description": "Palace à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Sheraton+Montazah+Restaurant+Alexandrie",
+      "priceRange": "€€€€",
+      "specialite": "Palace",
+      "nombreAvis": 1754,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "familial"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Hilton Alexandria Green Plaza",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Alexandrie",
+      "description": "Hôtel à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Hilton+Alexandria+Green+Plaza+Alexandrie",
+      "priceRange": "€€€€",
+      "specialite": "Hôtel",
+      "nombreAvis": 1426,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": true,
@@ -153,221 +438,240 @@
         "livraison",
         "reservation-requise",
         "romantique"
-      ]
+      ],
+      "id": "r19"
     },
     {
-      "nom": "Hosny Restaurant",
-      "type": "Grillades & Kebab",
+      "nom": "Four Seasons Alex San Stefano",
+      "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Sidi Gaber, Alexandrie",
-      "description": "Grillades généreuses appréciées des familles.",
-      "mapsUrl": "https://maps.google.com/?q=Hosny+Restaurant+Alexandrie",
-      "priceRange": "€€",
-      "specialite": "Grillades mixtes",
-      "id": "r6",
-      "nombreAvis": 805,
+      "score": 4.1,
+      "adresse": "Alexandrie",
+      "description": "Ultra-luxe à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Alex+San+Stefano+Alexandrie",
+      "priceRange": "€€€€",
+      "specialite": "Ultra-luxe",
+      "nombreAvis": 595,
       "ouvertureRamadan": true,
       "livraison": true,
-      "reservationRequise": false,
+      "reservationRequise": true,
       "tags": [
-        "familial",
+        "calme",
         "livraison",
-        "local-authentique",
-        "rapide"
-      ]
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r20"
     },
     {
-      "nom": "Délices",
+      "nom": "AlexBank Corniche Café",
       "type": "Pâtisserie & Café",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre-ville, Alexandrie",
-      "description": "Pâtisserie historique de 1922, douceurs et ambiance d'antan.",
-      "mapsUrl": "https://maps.google.com/?q=D%C3%A9lices+Alexandrie",
-      "priceRange": "€",
-      "specialite": "Gâteaux et café",
-      "id": "r7",
-      "nombreAvis": 537,
+      "score": 4.3,
+      "adresse": "Alexandrie",
+      "description": "Vue mer à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=AlexBank+Corniche+Caf%C3%A9+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Vue mer",
+      "nombreAvis": 106,
       "ouvertureRamadan": true,
-      "livraison": false,
+      "livraison": true,
       "reservationRequise": false,
       "tags": [
         "a-emporter",
         "calme",
         "familial",
-        "rapide"
-      ]
+        "livraison"
+      ],
+      "id": "r21"
     },
     {
-      "nom": "Farouk Restaurant",
-      "type": "Fruits de mer",
+      "nom": "Chez Gaby",
+      "type": "Cuisine française",
       "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Corniche, Alexandrie",
-      "description": "Vue sur la baie, large choix de poissons et crustacés.",
-      "mapsUrl": "https://maps.google.com/?q=Farouk+Restaurant+Alexandrie",
-      "priceRange": "€€€",
-      "specialite": "Plateau de fruits de mer",
-      "id": "r8",
-      "nombreAvis": 224,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ]
-    },
-    {
-      "nom": "Al Madina Alexandrie",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
+      "score": 4.1,
       "adresse": "Alexandrie",
-      "description": "Adresse halal appréciée des habitants de Alexandrie.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Alexandrie+Alexandrie",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r9",
-      "nombreAvis": 1141,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Shawarma House Alexandrie",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Alexandrie",
-      "description": "Adresse halal appréciée des habitants de Alexandrie.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Alexandrie+Alexandrie",
+      "description": "Franco-égyptien à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Gaby+Alexandrie",
       "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r10",
-      "nombreAvis": 994,
+      "specialite": "Franco-égyptien",
+      "nombreAvis": 1198,
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false,
       "tags": [
         "familial",
-        "local-authentique",
         "rapide"
-      ]
+      ],
+      "id": "r22"
     },
     {
-      "nom": "Beit Beirut Alexandrie",
+      "nom": "L'Admiral",
+      "type": "Cuisine française",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Alexandrie",
+      "description": "Brasserie navale à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=L%27Admiral+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Brasserie navale",
+      "nombreAvis": 1156,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Tikka Alex",
       "type": "Libanais & Levant",
       "certificationHalal": true,
-      "score": 4.4,
+      "score": 4.6,
       "adresse": "Alexandrie",
-      "description": "Adresse halal appréciée des habitants de Alexandrie.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Alexandrie+Alexandrie",
+      "description": "Grillades levant à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Tikka+Alex+Alexandrie",
       "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r11",
-      "nombreAvis": 864,
+      "specialite": "Grillades levant",
+      "nombreAvis": 413,
       "ouvertureRamadan": true,
-      "livraison": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r24"
+    },
+    {
+      "nom": "El Halabi",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Alexandrie",
+      "description": "Libanais populaire à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=El+Halabi+Alexandrie",
+      "priceRange": "€",
+      "specialite": "Libanais populaire",
+      "nombreAvis": 1927,
+      "ouvertureRamadan": true,
+      "livraison": false,
       "reservationRequise": false,
       "tags": [
         "animé",
         "familial",
-        "livraison"
-      ]
+        "rapide"
+      ],
+      "id": "r25"
     },
     {
-      "nom": "Spice Route Alexandrie",
-      "type": "Indien & Pakistani",
+      "nom": "Falafel Alexandrie",
+      "type": "Libanais & Levant",
       "certificationHalal": true,
-      "score": 4.5,
+      "score": 4.6,
       "adresse": "Alexandrie",
-      "description": "Adresse halal appréciée des habitants de Alexandrie.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Alexandrie+Alexandrie",
+      "description": "Végé express à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Falafel+Alexandrie+Alexandrie",
+      "priceRange": "€",
+      "specialite": "Végé express",
+      "nombreAvis": 1897,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "rapide"
+      ],
+      "id": "r26"
+    },
+    {
+      "nom": "Pasta Roma Alex",
+      "type": "Pizza & Italien",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Alexandrie",
+      "description": "Pâtes halal à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Pasta+Roma+Alex+Alexandrie",
       "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r12",
-      "nombreAvis": 2175,
+      "specialite": "Pâtes halal",
+      "nombreAvis": 186,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
         "familial",
         "livraison",
-        "local-authentique"
-      ]
+        "rapide"
+      ],
+      "id": "r27"
     },
     {
-      "nom": "Saffron Garden Alexandrie",
-      "type": "Gastronomique",
+      "nom": "Burger Alex",
+      "type": "Burgers & Fast-food",
       "certificationHalal": true,
-      "score": 4.6000000000000005,
+      "score": 4.6,
       "adresse": "Alexandrie",
-      "description": "Adresse halal appréciée des habitants de Alexandrie.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Alexandrie+Alexandrie",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r13",
-      "nombreAvis": 961,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Green Bowl Alexandrie",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Alexandrie",
-      "description": "Adresse halal appréciée des habitants de Alexandrie.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Alexandrie+Alexandrie",
+      "description": "Burgers populaires à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=Burger+Alex+Alexandrie",
       "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r14",
-      "nombreAvis": 522,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ]
-    },
-    {
-      "nom": "Sultan Café Alexandrie",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Alexandrie",
-      "description": "Adresse halal appréciée des habitants de Alexandrie.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Alexandrie+Alexandrie",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r15",
-      "nombreAvis": 612,
+      "specialite": "Burgers populaires",
+      "nombreAvis": 1361,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
         "a-emporter",
-        "calme",
         "familial",
         "livraison",
         "rapide"
-      ]
+      ],
+      "id": "r28"
+    },
+    {
+      "nom": "McDonald's Alexandria",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Alexandrie",
+      "description": "Halal à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Alexandria+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Halal",
+      "nombreAvis": 918,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r29"
+    },
+    {
+      "nom": "KFC Alexandria",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Alexandrie",
+      "description": "Halal à Alexandrie.",
+      "mapsUrl": "https://maps.google.com/?q=KFC+Alexandria+Alexandrie",
+      "priceRange": "€€",
+      "specialite": "Halal",
+      "nombreAvis": 1446,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r30"
     },
     {
       "nom": "Bait Al Karam",
@@ -388,7 +692,7 @@
         "livraison",
         "local-authentique"
       ],
-      "id": "r16"
+      "id": "r31"
     },
     {
       "nom": "Shawarma Al Reef",
@@ -410,7 +714,7 @@
         "local-authentique",
         "rapide"
       ],
-      "id": "r17"
+      "id": "r32"
     },
     {
       "nom": "Beit Cham",
@@ -430,7 +734,7 @@
         "animé",
         "familial"
       ],
-      "id": "r18"
+      "id": "r33"
     },
     {
       "nom": "Saffron Majlis",
@@ -452,7 +756,7 @@
         "reservation-requise",
         "romantique"
       ],
-      "id": "r19"
+      "id": "r34"
     },
     {
       "nom": "Sultan Sweets",
@@ -472,328 +776,6 @@
         "a-emporter",
         "calme",
         "familial",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Bait Al Karam Alexandrie 1",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Alexandrie",
-      "description": "Adresse traditionnel local appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Alexandrie+1+Alexandrie",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 3222,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Shawarma Al Reef Alexandrie 2",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Alexandrie",
-      "description": "Adresse grillades & kebab appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Alexandrie+2+Alexandrie",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 282,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Beit Cham Alexandrie 3",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Alexandrie",
-      "description": "Adresse libanais & levant appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Alexandrie+3+Alexandrie",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 2611,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Saffron Majlis Alexandrie 4",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Alexandrie",
-      "description": "Adresse gastronomique appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Alexandrie+4+Alexandrie",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 634,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Sultan Sweets Alexandrie 5",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Alexandrie",
-      "description": "Adresse pâtisserie & café appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Alexandrie+5+Alexandrie",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 2558,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Bahr Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Alexandrie",
-      "description": "Adresse fruits de mer appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Alexandrie",
-      "priceRange": "€€€",
-      "specialite": "Poisson du jour grillé",
-      "nombreAvis": 1269,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Mughal Spice",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Alexandrie",
-      "description": "Adresse indien & pakistani appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Alexandrie",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1249,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Green Yasmine",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Alexandrie",
-      "description": "Adresse végétarien & healthy appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Alexandrie",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "nombreAvis": 1575,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Burger Najma",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Alexandrie",
-      "description": "Adresse burgers & fast-food appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Alexandrie",
-      "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 2690,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Tokyo Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Alexandrie",
-      "description": "Adresse japonais & asiatique appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Alexandrie",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 2679,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Bait Al Karam Alexandrie 11",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Alexandrie",
-      "description": "Adresse traditionnel local appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Alexandrie+11+Alexandrie",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 1902,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Shawarma Al Reef Alexandrie 12",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Alexandrie",
-      "description": "Adresse grillades & kebab appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Alexandrie+12+Alexandrie",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 1405,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Beit Cham Alexandrie 13",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Alexandrie",
-      "description": "Adresse libanais & levant appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Alexandrie+13+Alexandrie",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 1034,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Saffron Majlis Alexandrie 14",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Alexandrie",
-      "description": "Adresse gastronomique appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Alexandrie+14+Alexandrie",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 452,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Sultan Sweets Alexandrie 15",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Alexandrie",
-      "description": "Adresse pâtisserie & café appréciée à Alexandrie, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Alexandrie+15+Alexandrie",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 162,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
         "rapide"
       ],
       "id": "r35"
@@ -1531,54 +1513,52 @@
   ],
   "selectionsPremium": {
     "mieuxNotes": [
+      "Samakmak",
+      "Sheraton Montazah Restaurant",
       "Bait Al Karam",
-      "Bait Al Karam Alexandrie 1",
-      "Burger Najma",
-      "Shawarma Al Reef",
-      "Shawarma Al Reef Alexandrie 2"
+      "Sofitel Alexandria Cecil Hotel Dining",
+      "El Halabi"
     ],
     "meilleurRapportQualitePrix": [
-      "Balbaa Village",
-      "Mohamed Ahmed",
-      "Abou Ashraf",
-      "Délices",
-      "Beit Beirut Alexandrie"
+      "Tikka Grill",
+      "Kadoura Fish",
+      "Délices Alexandria",
+      "La Fontaine Restaurant",
+      "Samakmak"
     ],
     "incontournables": [
       "Shawarma Al Reef",
-      "Bait Al Karam Alexandrie 1",
-      "Burger Najma",
-      "Tokyo Halal",
-      "Beit Cham Alexandrie 3"
+      "Sofitel Alexandria Cecil Hotel Dining",
+      "Sealine Restaurant",
+      "El Halabi",
+      "Falafel Alexandrie"
     ],
     "pepitesCachees": [
-      "Fish Market",
-      "Beit Cham",
-      "Shawarma Al Reef Alexandrie 2"
+      "Samakmak",
+      "Beit Cham"
     ],
     "idealFamille": [
-      "Balbaa Village",
-      "Fish Market",
-      "Mohamed Ahmed",
-      "Abou Ashraf",
-      "Hosny Restaurant"
+      "Tikka Grill",
+      "Qahwa Restaurant",
+      "Kadoura Fish",
+      "Zephyrion Abu Qir",
+      "Trianon"
     ],
     "gastronomique": [
-      "Greek Club (Le Club Grec)",
-      "Saffron Garden Alexandrie",
-      "Saffron Majlis",
-      "Saffron Majlis Alexandrie 4",
-      "Saffron Majlis Alexandrie 14"
+      "Sofitel Alexandria Cecil Hotel Dining",
+      "Hilton Alexandria Green Plaza",
+      "Four Seasons Alex San Stefano",
+      "Saffron Majlis"
     ],
     "ouvertNuit": [
-      "Balbaa Village",
-      "Mohamed Ahmed",
-      "Hosny Restaurant"
+      "Santa Lucia",
+      "Chez Gaby",
+      "Tikka Alex"
     ],
     "vueExceptionnelle": [
-      "Fish Market",
-      "Abou Ashraf",
-      "Farouk Restaurant"
+      "Kadoura Fish",
+      "Zephyrion Abu Qir",
+      "Samakmak"
     ]
   }
 }

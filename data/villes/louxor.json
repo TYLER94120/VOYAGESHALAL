@@ -6,8 +6,8 @@
   "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1400&q=85",
   "description": "Louxor, capitale du monde pharaonique, abrite Karnak, la Vallée des Rois et le Nil. Felouque au coucher du soleil et temples colossaux dans une ville musulmane paisible.",
   "descriptionLongue": "Bâtie sur l'antique Thèbes, Louxor est le plus grand musée à ciel ouvert du monde. Le temple de Karnak, le plus vaste complexe religieux de l'Antiquité, et la Vallée des Rois sur la rive ouest fascinent les voyageurs. Une felouque sur le Nil au crépuscule reste un moment magique. Ville profondément musulmane, Louxor mélange grandeur pharaonique, mosquée Abou el-Haggag bâtie sur le temple de Louxor, et hospitalité saïdie.",
-  "halalScore": 8.5,
-  "score_halal": 4.2,
+  "halalScore": 8.7,
+  "score_halal": 4.3,
   "mosquees": 400,
   "population": "510 000",
   "langue": "Arabe",
@@ -50,78 +50,98 @@
   },
   "restaurants": [
     {
-      "nom": "Sofra Restaurant & Café",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Centre-ville, Louxor",
-      "description": "Cuisine égyptienne authentique dans une demeure nubienne décorée.",
-      "mapsUrl": "https://maps.google.com/?q=Sofra+Restaurant+%26+Caf%C3%A9+Louxor",
-      "priceRange": "€€",
-      "specialite": "Tagine égyptien",
-      "id": "r1",
-      "nombreAvis": 2387,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Aisha Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Louxor",
-      "description": "Terrasse conviviale, cuisine égyptienne maison.",
-      "mapsUrl": "https://maps.google.com/?q=Aisha+Restaurant+Louxor",
-      "priceRange": "€€",
-      "specialite": "Grillades et koshary",
-      "id": "r2",
-      "nombreAvis": 1185,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Al-Sahaby Lane Restaurant",
+      "nom": "Al-Moudira Restaurant",
       "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre-ville, Louxor",
-      "description": "Rooftop avec vue sur le temple de Louxor.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Sahaby+Lane+Restaurant+Louxor",
-      "priceRange": "€€€",
-      "specialite": "Cuisine égyptienne et vue temple",
-      "id": "r3",
-      "nombreAvis": 1754,
+      "score": 4.6,
+      "adresse": "Louxor",
+      "description": "Luxe jardin, cuisine halal à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Al-Moudira+Restaurant+Louxor",
+      "priceRange": "€€€€",
+      "specialite": "Luxe jardin",
+      "nombreAvis": 1523,
       "ouvertureRamadan": true,
-      "livraison": true,
+      "livraison": false,
       "reservationRequise": true,
       "tags": [
         "calme",
-        "livraison",
         "reservation-requise",
         "romantique"
-      ]
+      ],
+      "id": "r1"
+    },
+    {
+      "nom": "Sofitel Winter Palace Dining",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Louxor",
+      "description": "Gastronomique historique à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Sofitel+Winter+Palace+Dining+Louxor",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique historique",
+      "nombreAvis": 171,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r2"
+    },
+    {
+      "nom": "Chez Magdy",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Louxor",
+      "description": "Égyptien authentique à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Magdy+Louxor",
+      "priceRange": "€",
+      "specialite": "Égyptien authentique",
+      "nombreAvis": 3144,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r3"
+    },
+    {
+      "nom": "Sofra Restaurant Louxor",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Louxor",
+      "description": "Égyptien populaire à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Sofra+Restaurant+Louxor+Louxor",
+      "priceRange": "€",
+      "specialite": "Égyptien populaire",
+      "nombreAvis": 245,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide"
+      ],
+      "id": "r4"
     },
     {
       "nom": "1886 Restaurant",
       "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Corniche, Louxor",
-      "description": "Restaurant élégant du Sofitel Winter Palace historique.",
+      "score": 4.6,
+      "adresse": "Louxor",
+      "description": "Winter Palace, gastronomique à Louxor.",
       "mapsUrl": "https://maps.google.com/?q=1886+Restaurant+Louxor",
       "priceRange": "€€€€",
-      "specialite": "Cuisine raffinée",
-      "id": "r4",
+      "specialite": "Winter palace",
       "nombreAvis": 648,
       "ouvertureRamadan": true,
       "livraison": true,
@@ -131,230 +151,343 @@
         "livraison",
         "reservation-requise",
         "romantique"
-      ]
+      ],
+      "id": "r5"
     },
     {
-      "nom": "Koshary el Tahrir",
-      "type": "Traditionnel local",
+      "nom": "Sunset Restaurant Louxor",
+      "type": "Égyptien",
       "certificationHalal": true,
-      "score": 4.3,
+      "score": 4.7,
       "adresse": "Louxor",
-      "description": "Le plat national égyptien, rapide et savoureux.",
-      "mapsUrl": "https://maps.google.com/?q=Koshary+el+Tahrir+Louxor",
-      "priceRange": "€",
-      "specialite": "Koshary",
-      "id": "r5",
-      "nombreAvis": 81,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Pizza Roma-it",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Louxor",
-      "description": "Pizzeria appréciée des voyageurs en centre-ville.",
-      "mapsUrl": "https://maps.google.com/?q=Pizza+Roma-it+Louxor",
+      "description": "Vue Nil coucher à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Sunset+Restaurant+Louxor+Louxor",
       "priceRange": "€€",
-      "specialite": "Pizza halal",
-      "id": "r6",
-      "nombreAvis": 654,
+      "specialite": "Vue nil coucher",
+      "nombreAvis": 893,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
         "familial",
-        "livraison",
-        "rapide"
-      ]
+        "livraison"
+      ],
+      "id": "r6"
     },
     {
-      "nom": "Nubian House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Rive Ouest, Louxor",
-      "description": "Saveurs nubiennes et ambiance colorée rive ouest.",
-      "mapsUrl": "https://maps.google.com/?q=Nubian+House+Louxor",
-      "priceRange": "€€",
-      "specialite": "Cuisine nubienne",
-      "id": "r7",
-      "nombreAvis": 1776,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "New Mumbai",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Louxor",
-      "description": "Cuisine indienne halal appréciée des touristes.",
-      "mapsUrl": "https://maps.google.com/?q=New+Mumbai+Louxor",
-      "priceRange": "€€",
-      "specialite": "Curry et biryani",
-      "id": "r8",
-      "nombreAvis": 828,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Al Madina Louxor",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Louxor",
-      "description": "Adresse halal appréciée des habitants de Louxor.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Louxor+Louxor",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r9",
-      "nombreAvis": 151,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Shawarma House Louxor",
+      "nom": "Kebabgy Louxor",
       "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Louxor",
-      "description": "Adresse halal appréciée des habitants de Louxor.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Louxor+Louxor",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r10",
-      "nombreAvis": 853,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Beit Beirut Louxor",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Louxor",
-      "description": "Adresse halal appréciée des habitants de Louxor.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Louxor+Louxor",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r11",
-      "nombreAvis": 1259,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ]
-    },
-    {
-      "nom": "Spice Route Louxor",
-      "type": "Indien & Pakistani",
       "certificationHalal": true,
       "score": 4.5,
       "adresse": "Louxor",
-      "description": "Adresse halal appréciée des habitants de Louxor.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Louxor+Louxor",
+      "description": "Grillades égyptiennes à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Kebabgy+Louxor+Louxor",
       "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r12",
-      "nombreAvis": 1067,
+      "specialite": "Grillades égyptiennes",
+      "nombreAvis": 2593,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r7"
+    },
+    {
+      "nom": "Snack Time Louxor",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Louxor",
+      "description": "Rapide touristique à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Snack+Time+Louxor+Louxor",
+      "priceRange": "€",
+      "specialite": "Rapide touristique",
+      "nombreAvis": 683,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide"
+      ],
+      "id": "r8"
+    },
+    {
+      "nom": "Marsam Hotel Restaurant",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Louxor",
+      "description": "Simple halal à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Marsam+Hotel+Restaurant+Louxor",
+      "priceRange": "€€",
+      "specialite": "Simple halal",
+      "nombreAvis": 608,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r9"
+    },
+    {
+      "nom": "Mummification Museum Café",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Louxor",
+      "description": "Musée à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Mummification+Museum+Caf%C3%A9+Louxor",
+      "priceRange": "€€",
+      "specialite": "Musée",
+      "nombreAvis": 1017,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison"
+      ],
+      "id": "r10"
+    },
+    {
+      "nom": "Karnak Temple Café",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Louxor",
+      "description": "Ambiance temples à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Karnak+Temple+Caf%C3%A9+Louxor",
+      "priceRange": "€€",
+      "specialite": "Ambiance temples",
+      "nombreAvis": 693,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ],
+      "id": "r11"
+    },
+    {
+      "nom": "Banana Island Restaurant",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Louxor",
+      "description": "Île aux bananes, Nil à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Banana+Island+Restaurant+Louxor",
+      "priceRange": "€€",
+      "specialite": "Île aux bananes",
+      "nombreAvis": 219,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r12"
+    },
+    {
+      "nom": "African Restaurant Louxor",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Louxor",
+      "description": "Africain halal à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=African+Restaurant+Louxor+Louxor",
+      "priceRange": "€€",
+      "specialite": "Africain halal",
+      "nombreAvis": 2564,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r13"
+    },
+    {
+      "nom": "L'Unica Louxor",
+      "type": "Pizza & Italien",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Louxor",
+      "description": "Italien halal à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=L%27Unica+Louxor+Louxor",
+      "priceRange": "€€",
+      "specialite": "Italien halal",
+      "nombreAvis": 1634,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
         "familial",
         "livraison",
-        "local-authentique"
-      ]
+        "rapide"
+      ],
+      "id": "r14"
     },
     {
-      "nom": "Saffron Garden Louxor",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Louxor",
-      "description": "Adresse halal appréciée des habitants de Louxor.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Louxor+Louxor",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r13",
-      "nombreAvis": 182,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Green Bowl Louxor",
-      "type": "Végétarien & Healthy",
+      "nom": "Halim Restaurant",
+      "type": "Égyptien",
       "certificationHalal": true,
       "score": 4.2,
       "adresse": "Louxor",
-      "description": "Adresse halal appréciée des habitants de Louxor.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Louxor+Louxor",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r14",
-      "nombreAvis": 618,
+      "description": "Égyptien de base à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Halim+Restaurant+Louxor",
+      "priceRange": "€€",
+      "specialite": "Égyptien de base",
+      "nombreAvis": 615,
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false,
       "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ]
+        "familial"
+      ],
+      "id": "r15"
     },
     {
-      "nom": "Sultan Café Louxor",
+      "nom": "Floating Restaurant Nil",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Louxor",
+      "description": "Bateau à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Floating+Restaurant+Nil+Louxor",
+      "priceRange": "€€",
+      "specialite": "Bateau",
+      "nombreAvis": 713,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Pizza Roma Louxor",
+      "type": "Pizza & Italien",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Louxor",
+      "description": "Pizza halal à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Pizza+Roma+Louxor+Louxor",
+      "priceRange": "€€",
+      "specialite": "Pizza halal",
+      "nombreAvis": 1145,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Al-Ferdoos",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Louxor",
+      "description": "Traditionnel à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Al-Ferdoos+Louxor",
+      "priceRange": "€€",
+      "specialite": "Traditionnel",
+      "nombreAvis": 205,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Tutankhamun Restaurant",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Louxor",
+      "description": "Touristique à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Tutankhamun+Restaurant+Louxor",
+      "priceRange": "€€",
+      "specialite": "Touristique",
+      "nombreAvis": 425,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "El Gezira Hotel Restaurant",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Louxor",
+      "description": "Budget à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=El+Gezira+Hotel+Restaurant+Louxor",
+      "priceRange": "€",
+      "specialite": "Budget",
+      "nombreAvis": 2229,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide"
+      ],
+      "id": "r20"
+    },
+    {
+      "nom": "Khaled Restaurant",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Louxor",
+      "description": "Populaire local à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Khaled+Restaurant+Louxor",
+      "priceRange": "€",
+      "specialite": "Populaire local",
+      "nombreAvis": 296,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r21"
+    },
+    {
+      "nom": "Cafeteria Abdul Wahab",
       "type": "Pâtisserie & Café",
       "certificationHalal": true,
-      "score": 4.3,
+      "score": 4.4,
       "adresse": "Louxor",
-      "description": "Adresse halal appréciée des habitants de Louxor.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Louxor+Louxor",
+      "description": "Rapide à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Cafeteria+Abdul+Wahab+Louxor",
       "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r15",
-      "nombreAvis": 1458,
+      "specialite": "Rapide",
+      "nombreAvis": 1454,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -364,7 +497,71 @@
         "familial",
         "livraison",
         "rapide"
-      ]
+      ],
+      "id": "r22"
+    },
+    {
+      "nom": "Hilton Luxor Restaurant",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Louxor",
+      "description": "Luxe à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Hilton+Luxor+Restaurant+Louxor",
+      "priceRange": "€€€€",
+      "specialite": "Luxe",
+      "nombreAvis": 543,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Steigenberger Nile Palace",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Louxor",
+      "description": "Luxe à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Steigenberger+Nile+Palace+Louxor",
+      "priceRange": "€€€€",
+      "specialite": "Luxe",
+      "nombreAvis": 990,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r24"
+    },
+    {
+      "nom": "Sonesta St. George Louxor",
+      "type": "Égyptien",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Louxor",
+      "description": "Standard à Louxor.",
+      "mapsUrl": "https://maps.google.com/?q=Sonesta+St.+George+Louxor+Louxor",
+      "priceRange": "€",
+      "specialite": "Standard",
+      "nombreAvis": 383,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide"
+      ],
+      "id": "r25"
     },
     {
       "nom": "Bait Al Karam",
@@ -384,7 +581,7 @@
         "familial",
         "local-authentique"
       ],
-      "id": "r16"
+      "id": "r26"
     },
     {
       "nom": "Shawarma Al Reef",
@@ -405,7 +602,7 @@
         "local-authentique",
         "rapide"
       ],
-      "id": "r17"
+      "id": "r27"
     },
     {
       "nom": "Beit Cham",
@@ -426,7 +623,7 @@
         "familial",
         "livraison"
       ],
-      "id": "r18"
+      "id": "r28"
     },
     {
       "nom": "Saffron Majlis",
@@ -447,7 +644,7 @@
         "reservation-requise",
         "romantique"
       ],
-      "id": "r19"
+      "id": "r29"
     },
     {
       "nom": "Sultan Sweets",
@@ -470,115 +667,7 @@
         "livraison",
         "rapide"
       ],
-      "id": "r20"
-    },
-    {
-      "nom": "Bait Al Karam Louxor 1",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Louxor",
-      "description": "Adresse traditionnel local appréciée à Louxor, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Louxor+1+Louxor",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 305,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Shawarma Al Reef Louxor 2",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Louxor",
-      "description": "Adresse grillades & kebab appréciée à Louxor, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Louxor+2+Louxor",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 1360,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Beit Cham Louxor 3",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Louxor",
-      "description": "Adresse libanais & levant appréciée à Louxor, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Louxor+3+Louxor",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 1258,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Saffron Majlis Louxor 4",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Louxor",
-      "description": "Adresse gastronomique appréciée à Louxor, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Louxor+4+Louxor",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 2195,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Sultan Sweets Louxor 5",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Louxor",
-      "description": "Adresse pâtisserie & café appréciée à Louxor, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Louxor+5+Louxor",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 826,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r25"
+      "id": "r30"
     },
     {
       "nom": "Bahr Seafood",
@@ -599,7 +688,7 @@
         "livraison",
         "vue-mer"
       ],
-      "id": "r26"
+      "id": "r31"
     },
     {
       "nom": "Mughal Spice",
@@ -620,7 +709,7 @@
         "livraison",
         "local-authentique"
       ],
-      "id": "r27"
+      "id": "r32"
     },
     {
       "nom": "Green Yasmine",
@@ -642,7 +731,7 @@
         "rapide",
         "veggie"
       ],
-      "id": "r28"
+      "id": "r33"
     },
     {
       "nom": "Burger Najma",
@@ -664,7 +753,7 @@
         "livraison",
         "rapide"
       ],
-      "id": "r29"
+      "id": "r34"
     },
     {
       "nom": "Tokyo Halal",
@@ -683,112 +772,6 @@
       "tags": [
         "calme",
         "touristique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Bait Al Karam Louxor 11",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Louxor",
-      "description": "Adresse traditionnel local appréciée à Louxor, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Louxor+11+Louxor",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 1887,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Shawarma Al Reef Louxor 12",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Louxor",
-      "description": "Adresse grillades & kebab appréciée à Louxor, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Louxor+12+Louxor",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 1183,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Beit Cham Louxor 13",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Louxor",
-      "description": "Adresse libanais & levant appréciée à Louxor, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Louxor+13+Louxor",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 642,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Saffron Majlis Louxor 14",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Louxor",
-      "description": "Adresse gastronomique appréciée à Louxor, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Louxor+14+Louxor",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 1413,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Sultan Sweets Louxor 15",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Louxor",
-      "description": "Adresse pâtisserie & café appréciée à Louxor, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Louxor+15+Louxor",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 962,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
       ],
       "id": "r35"
     }
@@ -1537,48 +1520,48 @@
   ],
   "selectionsPremium": {
     "mieuxNotes": [
+      "Chez Magdy",
+      "Karnak Temple Café",
+      "African Restaurant Louxor",
       "Bait Al Karam",
-      "Bait Al Karam Louxor 1",
-      "Burger Najma",
-      "Shawarma Al Reef",
-      "Shawarma Al Reef Louxor 2"
+      "Burger Najma"
     ],
     "meilleurRapportQualitePrix": [
-      "Sofra Restaurant & Café",
-      "Aisha Restaurant",
-      "Nubian House",
-      "Beit Beirut Louxor",
-      "Spice Route Louxor"
+      "Chez Magdy",
+      "Sofra Restaurant Louxor",
+      "Sunset Restaurant Louxor",
+      "Kebabgy Louxor",
+      "Snack Time Louxor"
     ],
     "incontournables": [
+      "Chez Magdy",
       "Bait Al Karam",
       "Shawarma Al Reef",
-      "Beit Cham",
-      "Sofra Restaurant & Café",
-      "Saffron Majlis"
+      "Kebabgy Louxor",
+      "Beit Cham"
     ],
     "pepitesCachees": [
-      "Saffron Garden Louxor",
-      "Bait Al Karam Louxor 1"
+      "Sofitel Winter Palace Dining",
+      "Sofra Restaurant Louxor"
     ],
     "idealFamille": [
-      "Sofra Restaurant & Café",
-      "Aisha Restaurant",
-      "Koshary el Tahrir",
-      "Pizza Roma-it",
-      "Nubian House"
+      "Chez Magdy",
+      "Sofra Restaurant Louxor",
+      "Sunset Restaurant Louxor",
+      "Kebabgy Louxor",
+      "Snack Time Louxor"
     ],
     "gastronomique": [
-      "Al-Sahaby Lane Restaurant",
+      "Al-Moudira Restaurant",
+      "Sofitel Winter Palace Dining",
       "1886 Restaurant",
-      "Saffron Garden Louxor",
-      "Saffron Majlis",
-      "Saffron Majlis Louxor 4"
+      "Hilton Luxor Restaurant",
+      "Steigenberger Nile Palace"
     ],
     "ouvertNuit": [
-      "Koshary el Tahrir",
-      "Pizza Roma-it",
-      "Shawarma House Louxor"
+      "Chez Magdy",
+      "Sofra Restaurant Louxor",
+      "Kebabgy Louxor"
     ],
     "vueExceptionnelle": [
       "Bahr Seafood"
