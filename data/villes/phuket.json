@@ -6,8 +6,8 @@
   "image_hero": "https://images.unsplash.com/photo-1589394760808-3d4a8b7b5b6?w=1400&q=85",
   "description": "Phuket, plus grande île de Thaïlande, abrite une importante communauté musulmane à Rawai. Plages, restaurants halal certifiés et nature pour un séjour familial.",
   "descriptionLongue": "Phuket combine plages de rêve et héritage sino-portugais. L'île compte une forte population musulmane, notamment autour de Rawai, où abondent restaurants halal et mosquées. En évitant les zones festives comme Patong, les familles musulmanes profitent de criques tranquilles, d'excursions vers les îles Phi Phi et d'une cuisine du Sud épicée et halal.",
-  "halalScore": 7.0,
-  "score_halal": 3.5,
+  "halalScore": 7.5,
+  "score_halal": 3.8,
   "mosquees": 200,
   "population": "420 000",
   "langue": "Thaï",
@@ -50,280 +50,101 @@
   },
   "restaurants": [
     {
-      "nom": "Halal Food Rawai",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Rawai",
-      "description": "Cuisine thaïe-musulmane du Sud",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Food+Rawai+Phuket",
-      "priceRange": "€",
-      "specialite": "Curry du Sud",
-      "id": "r1"
-    },
-    {
-      "nom": "Roti Chai Phuket",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Phuket Town",
-      "description": "Roti et massaman halal",
-      "mapsUrl": "https://maps.google.com/?q=Roti+Chai+Phuket+Phuket",
-      "priceRange": "€",
-      "specialite": "Roti",
-      "id": "r2"
-    },
-    {
-      "nom": "Tunay Halal Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Chalong",
-      "description": "Biryani thaï et grillades",
-      "mapsUrl": "https://maps.google.com/?q=Tunay+Halal+Restaurant+Phuket",
-      "priceRange": "€€",
-      "specialite": "Khao mok",
-      "id": "r3"
-    },
-    {
-      "nom": "Kanya Seafood Halal",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Rawai",
-      "description": "Poissons et crustacés grillés",
-      "mapsUrl": "https://maps.google.com/?q=Kanya+Seafood+Halal+Phuket",
-      "priceRange": "€€",
-      "specialite": "Fruits de mer",
-      "id": "r4"
-    },
-    {
-      "nom": "Muslim Kitchen Phuket",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Phuket Town",
-      "description": "Cuisine indo-musulmane familiale",
-      "mapsUrl": "https://maps.google.com/?q=Muslim+Kitchen+Phuket+Phuket",
-      "priceRange": "€",
-      "specialite": "Biryani",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Phuket",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Phuket",
-      "description": "Adresse halal appréciée des habitants de Phuket.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Phuket+Phuket",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Phuket",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Phuket",
-      "description": "Adresse halal appréciée des habitants de Phuket.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Phuket+Phuket",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Phuket",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Phuket",
-      "description": "Adresse halal appréciée des habitants de Phuket.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Phuket+Phuket",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Phuket",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Phuket",
-      "description": "Adresse halal appréciée des habitants de Phuket.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Phuket+Phuket",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Phuket",
+      "nom": "Suay Restaurant",
       "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.6000000000000005,
+      "score": 4.1,
       "adresse": "Phuket",
-      "description": "Adresse halal appréciée des habitants de Phuket.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Phuket+Phuket",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Phuket",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Phuket",
-      "description": "Adresse halal appréciée des habitants de Phuket.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Phuket+Phuket",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Phuket",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Phuket",
-      "description": "Adresse halal appréciée des habitants de Phuket.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Phuket+Phuket",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Phuket",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Phuket",
-      "description": "Adresse halal appréciée des habitants de Phuket.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Phuket+Phuket",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Phuket",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Phuket",
-      "description": "Adresse halal appréciée des habitants de Phuket.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Phuket+Phuket",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Phuket",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Phuket",
-      "description": "Adresse halal appréciée des habitants de Phuket.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Phuket+Phuket",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Warung Selera",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Phuket",
-      "description": "Adresse traditionnel local appréciée à Phuket, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Phuket",
-      "priceRange": "€",
-      "specialite": "Nasi campur",
-      "nombreAvis": 1346,
+      "description": "Gastronomique moderne, options halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Suay+Restaurant+Phuket",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique moderne",
+      "nombreAvis": 739,
       "ouvertureRamadan": true,
       "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Restoran Nusantara",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Phuket",
-      "description": "Adresse traditionnel local appréciée à Phuket, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Nusantara+Phuket",
-      "priceRange": "€€",
-      "specialite": "Rendang",
-      "nombreAvis": 1269,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Rakuzen Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Phuket",
-      "description": "Adresse japonais & asiatique appréciée à Phuket, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Rakuzen+Halal+Phuket",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 2588,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
+      "reservationRequise": true,
       "tags": [
         "calme",
         "livraison",
-        "touristique"
+        "reservation-requise",
+        "romantique"
       ],
-      "id": "r18"
+      "id": "r1"
     },
     {
-      "nom": "Spice Darbar",
-      "type": "Indien & Pakistani",
+      "nom": "Acqua Restaurant Phuket",
+      "type": "Pizza & Italien",
       "certificationHalal": true,
-      "score": 4.5,
+      "score": 4.2,
       "adresse": "Phuket",
-      "description": "Adresse indien & pakistani appréciée à Phuket, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Phuket",
+      "description": "Méditerranéen halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Acqua+Restaurant+Phuket+Phuket",
       "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 259,
+      "specialite": "Méditerranéen halal",
+      "nombreAvis": 1422,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
         "familial",
         "livraison",
-        "local-authentique"
+        "rapide"
       ],
-      "id": "r19"
+      "id": "r2"
     },
     {
-      "nom": "Bahari Seafood",
+      "nom": "Mom Tri's Kitchen",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Phuket",
+      "description": "Villa gastronomique à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Mom+Tri%27s+Kitchen+Phuket",
+      "priceRange": "€€€€",
+      "specialite": "Villa gastronomique",
+      "nombreAvis": 1506,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r3"
+    },
+    {
+      "nom": "Bampot Kitchen",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Phuket",
+      "description": "Sans alcool halal-friendly à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Bampot+Kitchen+Phuket",
+      "priceRange": "€€",
+      "specialite": "Sans alcool halal-friendly",
+      "nombreAvis": 3298,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r4"
+    },
+    {
+      "nom": "Kan Eang Seafood",
       "type": "Fruits de mer",
       "certificationHalal": true,
-      "score": 4.4,
+      "score": 4.7,
       "adresse": "Phuket",
-      "description": "Adresse fruits de mer appréciée à Phuket, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahari+Seafood+Phuket",
+      "description": "Pier, fruits de mer halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Kan+Eang+Seafood+Phuket",
       "priceRange": "€€",
-      "specialite": "Crevettes sambal",
-      "nombreAvis": 2445,
+      "specialite": "Pier",
+      "nombreAvis": 2849,
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false,
@@ -331,19 +152,322 @@
         "familial",
         "vue-mer"
       ],
-      "id": "r20"
+      "id": "r5"
     },
     {
-      "nom": "Seri Gastronomi",
-      "type": "Gastronomique",
+      "nom": "Raya Restaurant",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Phuket",
+      "description": "Thaï-péranakan halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Raya+Restaurant+Phuket",
+      "priceRange": "€€",
+      "specialite": "Thaï-péranakan halal",
+      "nombreAvis": 2170,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r6"
+    },
+    {
+      "nom": "Baluchi Restaurant",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Phuket",
+      "description": "Indien Rajputana halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Baluchi+Restaurant+Phuket",
+      "priceRange": "€€",
+      "specialite": "Indien rajputana halal",
+      "nombreAvis": 1249,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r7"
+    },
+    {
+      "nom": "Sea Hag Restaurant",
+      "type": "Fruits de mer",
       "certificationHalal": true,
       "score": 4.3,
       "adresse": "Phuket",
-      "description": "Adresse gastronomique appréciée à Phuket, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Seri+Gastronomi+Phuket",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 232,
+      "description": "Bord de mer halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Sea+Hag+Restaurant+Phuket",
+      "priceRange": "€€",
+      "specialite": "Bord de mer halal",
+      "nombreAvis": 952,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "vue-mer"
+      ],
+      "id": "r8"
+    },
+    {
+      "nom": "Muslims Phuket",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Phuket",
+      "description": "Thaï halal Old Phuket à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Muslims+Phuket+Phuket",
+      "priceRange": "€€",
+      "specialite": "Thaï halal old phuket",
+      "nombreAvis": 324,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r9"
+    },
+    {
+      "nom": "Halal Fried Chicken Patong",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Phuket",
+      "description": "Halal rapide à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Halal+Fried+Chicken+Patong+Phuket",
+      "priceRange": "€",
+      "specialite": "Halal rapide",
+      "nombreAvis": 619,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r10"
+    },
+    {
+      "nom": "Naan Center Patong",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Phuket",
+      "description": "Naan halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Naan+Center+Patong+Phuket",
+      "priceRange": "€€",
+      "specialite": "Naan halal",
+      "nombreAvis": 1160,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r11"
+    },
+    {
+      "nom": "Pak Nam Restaurant",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Phuket",
+      "description": "Fruits de mer halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Pak+Nam+Restaurant+Phuket",
+      "priceRange": "€€",
+      "specialite": "Fruits de mer halal",
+      "nombreAvis": 72,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "vue-mer"
+      ],
+      "id": "r12"
+    },
+    {
+      "nom": "Ton Krai Seafood",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Phuket",
+      "description": "Poissons de Phuket à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Ton+Krai+Seafood+Phuket",
+      "priceRange": "€€",
+      "specialite": "Poissons de phuket",
+      "nombreAvis": 1010,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ],
+      "id": "r13"
+    },
+    {
+      "nom": "Muslim Food Rawai",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Phuket",
+      "description": "Quartier musulman à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Muslim+Food+Rawai+Phuket",
+      "priceRange": "€€",
+      "specialite": "Quartier musulman",
+      "nombreAvis": 1220,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r14"
+    },
+    {
+      "nom": "Rawai Seafood Market",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Phuket",
+      "description": "Marché halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Rawai+Seafood+Market+Phuket",
+      "priceRange": "€€",
+      "specialite": "Marché halal",
+      "nombreAvis": 1554,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ],
+      "id": "r15"
+    },
+    {
+      "nom": "Promthep Cape Restaurant",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Phuket",
+      "description": "Vue coucher de soleil à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Promthep+Cape+Restaurant+Phuket",
+      "priceRange": "€€",
+      "specialite": "Vue coucher de soleil",
+      "nombreAvis": 952,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Karon Beach Halal",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Phuket",
+      "description": "Plage Karon à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Karon+Beach+Halal+Phuket",
+      "priceRange": "€€",
+      "specialite": "Plage karon",
+      "nombreAvis": 340,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Kata Noi Restaurant",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Phuket",
+      "description": "Plage Kata à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Kata+Noi+Restaurant+Phuket",
+      "priceRange": "€€",
+      "specialite": "Plage kata",
+      "nombreAvis": 705,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Anoma's Restaurant Phuket",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Phuket",
+      "description": "Thaï halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Anoma%27s+Restaurant+Phuket+Phuket",
+      "priceRange": "€€",
+      "specialite": "Thaï halal",
+      "nombreAvis": 1417,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Muslim Restaurant Bangtao",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Phuket",
+      "description": "Zone Laguna à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Muslim+Restaurant+Bangtao+Phuket",
+      "priceRange": "€€",
+      "specialite": "Zone laguna",
+      "nombreAvis": 148,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r20"
+    },
+    {
+      "nom": "Trisara Hotel Dining",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Phuket",
+      "description": "Ultra-luxe à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Trisara+Hotel+Dining+Phuket",
+      "priceRange": "€€€€",
+      "specialite": "Ultra-luxe",
+      "nombreAvis": 540,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": true,
@@ -356,60 +480,98 @@
       "id": "r21"
     },
     {
-      "nom": "Teh Tarik Café",
-      "type": "Pâtisserie & Café",
+      "nom": "Amanpuri Phuket Dining",
+      "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.2,
+      "score": 4.3,
       "adresse": "Phuket",
-      "description": "Adresse pâtisserie & café appréciée à Phuket, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Teh+Tarik+Caf%C3%A9+Phuket",
-      "priceRange": "€",
-      "specialite": "Teh tarik et kuih",
-      "nombreAvis": 499,
+      "description": "Ultra-luxe à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Amanpuri+Phuket+Dining+Phuket",
+      "priceRange": "€€€€",
+      "specialite": "Ultra-luxe",
+      "nombreAvis": 440,
       "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
+      "livraison": true,
+      "reservationRequise": true,
       "tags": [
-        "a-emporter",
         "calme",
-        "familial",
-        "rapide"
+        "livraison",
+        "reservation-requise",
+        "romantique"
       ],
       "id": "r22"
     },
     {
-      "nom": "Green Leaf",
-      "type": "Végétarien & Healthy",
+      "nom": "Banyan Tree Phuket Restaurant",
+      "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.1,
+      "score": 4.5,
       "adresse": "Phuket",
-      "description": "Adresse végétarien & healthy appréciée à Phuket, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Leaf+Phuket",
-      "priceRange": "€",
-      "specialite": "Bowl tropical",
-      "nombreAvis": 1489,
+      "description": "Luxe à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Banyan+Tree+Phuket+Restaurant+Phuket",
+      "priceRange": "€€€€",
+      "specialite": "Luxe",
+      "nombreAvis": 397,
       "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
+      "livraison": false,
+      "reservationRequise": true,
       "tags": [
         "calme",
-        "livraison",
-        "rapide",
-        "veggie"
+        "reservation-requise",
+        "romantique"
       ],
       "id": "r23"
     },
     {
-      "nom": "Ramly Burger",
+      "nom": "Indigo Pearl Restaurant",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Phuket",
+      "description": "Resort à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Indigo+Pearl+Restaurant+Phuket",
+      "priceRange": "€€€€",
+      "specialite": "Resort",
+      "nombreAvis": 959,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "familial"
+      ],
+      "id": "r24"
+    },
+    {
+      "nom": "SALA Phuket Resort Dining",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Phuket",
+      "description": "Luxe à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=SALA+Phuket+Resort+Dining+Phuket",
+      "priceRange": "€€€€",
+      "specialite": "Luxe",
+      "nombreAvis": 454,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r25"
+    },
+    {
+      "nom": "KFC Phuket",
       "type": "Burgers & Fast-food",
       "certificationHalal": true,
-      "score": 4.8,
+      "score": 4.7,
       "adresse": "Phuket",
-      "description": "Adresse burgers & fast-food appréciée à Phuket, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Ramly+Burger+Phuket",
-      "priceRange": "€",
-      "specialite": "Burger halal",
-      "nombreAvis": 3295,
+      "description": "Halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=KFC+Phuket+Phuket",
+      "priceRange": "€€",
+      "specialite": "Halal",
+      "nombreAvis": 3446,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -419,29 +581,94 @@
         "livraison",
         "rapide"
       ],
-      "id": "r24"
+      "id": "r26"
     },
     {
-      "nom": "Warung Selera Phuket 10",
-      "type": "Traditionnel local",
+      "nom": "McDonald's Phuket",
+      "type": "Burgers & Fast-food",
       "certificationHalal": true,
-      "score": 4.7,
+      "score": 4.4,
       "adresse": "Phuket",
-      "description": "Adresse traditionnel local appréciée à Phuket, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Phuket+10+Phuket",
+      "description": "Halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Phuket+Phuket",
+      "priceRange": "€€",
+      "specialite": "Halal",
+      "nombreAvis": 2375,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r27"
+    },
+    {
+      "nom": "Pizza Hut Phuket",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Phuket",
+      "description": "Halal à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Pizza+Hut+Phuket+Phuket",
+      "priceRange": "€€",
+      "specialite": "Halal",
+      "nombreAvis": 1403,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r28"
+    },
+    {
+      "nom": "Phuket Night Market Halal",
+      "type": "Thaï",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Phuket",
+      "description": "Stands à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Phuket+Night+Market+Halal+Phuket",
       "priceRange": "€",
-      "specialite": "Nasi campur",
-      "nombreAvis": 728,
+      "specialite": "Stands",
+      "nombreAvis": 1467,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
         "familial",
         "livraison",
-        "local-authentique",
         "rapide"
       ],
-      "id": "r25"
+      "id": "r29"
+    },
+    {
+      "nom": "Masjid Nurul Islam Café",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Phuket",
+      "description": "Communauté à Phuket.",
+      "mapsUrl": "https://maps.google.com/?q=Masjid+Nurul+Islam+Caf%C3%A9+Phuket",
+      "priceRange": "€€",
+      "specialite": "Communauté",
+      "nombreAvis": 230,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison"
+      ],
+      "id": "r30"
     }
   ],
   "hotels": [
@@ -457,7 +684,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Phuket&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=phuket",
       "priceRange": "€€€€",
-      "id": "h1"
+      "id": "h1",
+      "nombreAvis": 2132,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "The Naka Island",
@@ -471,7 +714,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Phuket&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=phuket",
       "priceRange": "€€€€",
-      "id": "h2"
+      "id": "h2",
+      "nombreAvis": 1710,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "Ibis Phuket Patong",
@@ -485,7 +744,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Phuket&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=phuket",
       "priceRange": "€€",
-      "id": "h3"
+      "id": "h3",
+      "nombreAvis": 798,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Phuket",
@@ -499,7 +770,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Phuket&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=phuket",
       "priceRange": "€€€€",
-      "id": "h4"
+      "id": "h4",
+      "nombreAvis": 1099,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "City Comfort Hotel Phuket",
@@ -513,7 +800,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Phuket&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=phuket",
       "priceRange": "€€€",
-      "id": "h5"
+      "id": "h5",
+      "nombreAvis": 1060,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Boutique Riad Phuket",
@@ -527,7 +826,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Phuket&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=phuket",
       "priceRange": "€€€",
-      "id": "h6"
+      "id": "h6",
+      "nombreAvis": 2098,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Phuket 0",
@@ -595,7 +906,14 @@
       "prix": "€€€",
       "mapsUrl": "https://maps.google.com/?q=%C3%8Eles+Phi+Phi+%28excursion%29+Phuket",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=%C3%8Eles+Phi+Phi+%28excursion%29+Phuket",
-      "id": "a1"
+      "id": "a1",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Grand Bouddha de Phuket",
@@ -605,7 +923,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Grand+Bouddha+de+Phuket+Phuket",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+Bouddha+de+Phuket+Phuket",
-      "id": "a2"
+      "id": "a2",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Vieille ville de Phuket",
@@ -615,7 +940,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Phuket+Phuket",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Phuket+Phuket",
-      "id": "a3"
+      "id": "a3",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mosquée de Rawai",
@@ -625,7 +957,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+Rawai+Phuket",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+Rawai+Phuket",
-      "id": "a4"
+      "id": "a4",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Plage de Nai Harn",
@@ -635,7 +974,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Plage+de+Nai+Harn+Phuket",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Nai+Harn+Phuket",
-      "id": "a5"
+      "id": "a5",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Baie de Phang Nga",
@@ -645,7 +991,14 @@
       "prix": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Baie+de+Phang+Nga+Phuket",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Baie+de+Phang+Nga+Phuket",
-      "id": "a6"
+      "id": "a6",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Marché du dimanche de Phuket",
@@ -655,7 +1008,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=March%C3%A9+du+dimanche+de+Phuket+Phuket",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+du+dimanche+de+Phuket+Phuket",
-      "id": "a7"
+      "id": "a7",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Cap Promthep",
@@ -665,7 +1025,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Cap+Promthep+Phuket",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cap+Promthep+Phuket",
-      "id": "a8"
+      "id": "a8",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Vieille ville de Phuket",
@@ -675,7 +1042,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Phuket+Phuket",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Phuket+Phuket",
-      "id": "a9"
+      "id": "a9",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Grand souk de Phuket",
@@ -685,7 +1059,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Phuket+Phuket",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Phuket+Phuket",
-      "id": "a10"
+      "id": "a10",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier historique de Phuket",
@@ -860,49 +1241,54 @@
   ],
   "selectionsPremium": {
     "mieuxNotes": [
-      "Warung Selera",
-      "Ramly Burger",
-      "Restoran Nusantara",
-      "Warung Selera Phuket 10",
-      "Saffron Garden Phuket"
+      "Bampot Kitchen",
+      "Kan Eang Seafood",
+      "KFC Phuket",
+      "Raya Restaurant",
+      "Naan Center Patong"
     ],
     "meilleurRapportQualitePrix": [
-      "Halal Food Rawai",
-      "Roti Chai Phuket",
-      "Tunay Halal Restaurant",
-      "Kanya Seafood Halal",
-      "Muslim Kitchen Phuket"
+      "Bampot Kitchen",
+      "Kan Eang Seafood",
+      "Raya Restaurant",
+      "Naan Center Patong",
+      "Muslim Food Rawai"
     ],
     "incontournables": [
-      "Ramly Burger",
-      "Rakuzen Halal",
-      "Bahari Seafood",
-      "Green Leaf",
-      "Warung Selera"
+      "KFC Phuket",
+      "Bampot Kitchen",
+      "Kan Eang Seafood",
+      "McDonald's Phuket",
+      "Raya Restaurant"
     ],
     "pepitesCachees": [
-      "Halal Food Rawai",
-      "Roti Chai Phuket",
-      "Tunay Halal Restaurant"
+      "Karon Beach Halal",
+      "Banyan Tree Phuket Restaurant",
+      "Masjid Nurul Islam Café"
     ],
     "idealFamille": [
-      "Warung Selera",
-      "Restoran Nusantara",
-      "Spice Darbar",
-      "Bahari Seafood",
-      "Teh Tarik Café"
+      "Acqua Restaurant Phuket",
+      "Bampot Kitchen",
+      "Kan Eang Seafood",
+      "Raya Restaurant",
+      "Baluchi Restaurant"
     ],
     "gastronomique": [
-      "Saffron Garden Phuket",
-      "Seri Gastronomi"
+      "Suay Restaurant",
+      "Mom Tri's Kitchen",
+      "Trisara Hotel Dining",
+      "Amanpuri Phuket Dining",
+      "Banyan Tree Phuket Restaurant"
     ],
     "ouvertNuit": [
-      "Warung Selera",
-      "Teh Tarik Café",
-      "Green Leaf"
+      "Acqua Restaurant Phuket",
+      "Halal Fried Chicken Patong",
+      "KFC Phuket"
     ],
     "vueExceptionnelle": [
-      "Bahari Seafood"
+      "Kan Eang Seafood",
+      "Sea Hag Restaurant",
+      "Pak Nam Restaurant"
     ]
   }
 }

@@ -6,7 +6,7 @@
   "image_hero": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1400&q=85",
   "description": "Singapour, cité-État ultramoderne, abrite le quartier malais de Kampong Glam et une scène halal foisonnante. Tous les hawker centres proposent des stands certifiés.",
   "descriptionLongue": "Carrefour de l'Asie, Singapour mêle gratte-ciel futuristes et héritage malais-musulman. Le quartier de Kampong Glam, autour de la majestueuse mosquée du Sultan, vibre de cafés, de boutiques de tissus et de restaurants halal. La street food, des hawker centres aux échoppes d'Arab Street, offre une diversité unique certifiée halal. Ville sûre, propre et organisée, idéale en famille.",
-  "halalScore": 8.5,
+  "halalScore": 8.3,
   "score_halal": 4.2,
   "mosquees": 80,
   "population": "5,9 millions",
@@ -50,184 +50,919 @@
   },
   "restaurants": [
     {
-      "nom": "Zam Zam",
-      "type": "Traditionnel local",
+      "nom": "Zam Zam Restaurant",
+      "type": "Malais & Hawker",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kampong Glam",
-      "description": "Murtabak légendaire d'Arab Street depuis 1908",
-      "mapsUrl": "https://maps.google.com/?q=Zam+Zam+Singapour",
-      "priceRange": "€",
-      "specialite": "Murtabak",
+      "score": 4.9,
+      "adresse": "Singapour",
+      "description": "Murtabak depuis 1908, légendaire à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Zam+Zam+Restaurant+Singapour",
+      "priceRange": "€€",
+      "specialite": "Murtabak depuis 1908",
+      "nombreAvis": 2777,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
       "id": "r1"
     },
     {
-      "nom": "Hjh Maimunah",
-      "type": "Traditionnel local",
+      "nom": "Hjh Maimunah Restaurant",
+      "type": "Malais & Hawker",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jalan Pisang",
-      "description": "Cuisine malaise nasi padang primée",
-      "mapsUrl": "https://maps.google.com/?q=Hjh+Maimunah+Singapour",
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Malais-indonésien primé à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Hjh+Maimunah+Restaurant+Singapour",
       "priceRange": "€€",
-      "specialite": "Nasi padang",
+      "specialite": "Malais-indonésien primé",
+      "nombreAvis": 767,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
       "id": "r2"
     },
     {
-      "nom": "Islamic Restaurant",
-      "type": "Indien & Pakistani",
+      "nom": "Warong Nasi Pariaman",
+      "type": "Malais & Hawker",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "North Bridge Road",
-      "description": "Biryani historique depuis 1921",
-      "mapsUrl": "https://maps.google.com/?q=Islamic+Restaurant+Singapour",
-      "priceRange": "€€",
-      "specialite": "Biryani",
+      "score": 4.5,
+      "adresse": "Singapour",
+      "description": "Nasi padang légendaire à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Warong+Nasi+Pariaman+Singapour",
+      "priceRange": "€",
+      "specialite": "Nasi padang légendaire",
+      "nombreAvis": 1273,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide"
+      ],
       "id": "r3"
     },
     {
-      "nom": "Tekka Centre Halal",
-      "type": "Traditionnel local",
+      "nom": "Bismillah Biryani Restaurant",
+      "type": "Indien & Pakistani",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Little India",
-      "description": "Hawker centre, stands halal de Little India",
-      "mapsUrl": "https://maps.google.com/?q=Tekka+Centre+Halal+Singapour",
-      "priceRange": "€",
-      "specialite": "Roti prata",
+      "score": 4.6,
+      "adresse": "Singapour",
+      "description": "Biryani iconique à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Bismillah+Biryani+Restaurant+Singapour",
+      "priceRange": "€€",
+      "specialite": "Biryani iconique",
+      "nombreAvis": 2628,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
       "id": "r4"
     },
     {
-      "nom": "Victory Restaurant",
-      "type": "Indien & Pakistani",
+      "nom": "Lau Pa Sat",
+      "type": "Malais & Hawker",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kampong Glam",
-      "description": "Murtabak et cuisine indienne-musulmane",
-      "mapsUrl": "https://maps.google.com/?q=Victory+Restaurant+Singapour",
-      "priceRange": "€€",
-      "specialite": "Murtabak agneau",
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Hawker centre, icône halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Lau+Pa+Sat+Singapour",
+      "priceRange": "€",
+      "specialite": "Hawker centre",
+      "nombreAvis": 1344,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ],
       "id": "r5"
     },
     {
-      "nom": "Tarik Café",
-      "type": "Pâtisserie & Café",
+      "nom": "Golden Shoe Hawker Centre",
+      "type": "Malais & Hawker",
       "certificationHalal": true,
       "score": 4.4,
-      "adresse": "Kampong Glam",
-      "description": "Café malais moderne, teh tarik et kaya toast",
-      "mapsUrl": "https://maps.google.com/?q=Tarik+Caf%C3%A9+Singapour",
+      "adresse": "Singapour",
+      "description": "Options halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Golden+Shoe+Hawker+Centre+Singapour",
       "priceRange": "€",
-      "specialite": "Teh tarik",
+      "specialite": "Options halal",
+      "nombreAvis": 900,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ],
       "id": "r6"
     },
     {
-      "nom": "Al Madina Singapour",
-      "type": "Traditionnel local",
+      "nom": "Tekka Centre",
+      "type": "Indien & Pakistani",
       "certificationHalal": true,
       "score": 4.2,
       "adresse": "Singapour",
-      "description": "Adresse halal appréciée des habitants de Singapour.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Singapour+Singapour",
+      "description": "Little India halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Tekka+Centre+Singapour",
       "priceRange": "€€",
-      "specialite": "Plat du jour maison",
+      "specialite": "Little india halal",
+      "nombreAvis": 789,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
       "id": "r7"
     },
     {
-      "nom": "Shawarma House Singapour",
-      "type": "Grillades & Kebab",
+      "nom": "Maxwell Road Hawker Centre",
+      "type": "Malais & Hawker",
       "certificationHalal": true,
-      "score": 4.3,
+      "score": 4.1,
       "adresse": "Singapour",
-      "description": "Adresse halal appréciée des habitants de Singapour.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Singapour+Singapour",
+      "description": "Hawker halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Maxwell+Road+Hawker+Centre+Singapour",
       "priceRange": "€",
-      "specialite": "Shawarma poulet",
+      "specialite": "Hawker halal",
+      "nombreAvis": 741,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ],
       "id": "r8"
     },
     {
-      "nom": "Beit Beirut Singapour",
-      "type": "Libanais & Levant",
+      "nom": "Adam Road Food Centre",
+      "type": "Malais & Hawker",
       "certificationHalal": true,
-      "score": 4.4,
+      "score": 4.5,
       "adresse": "Singapour",
-      "description": "Adresse halal appréciée des habitants de Singapour.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Singapour+Singapour",
+      "description": "Nasi lemak primé à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Adam+Road+Food+Centre+Singapour",
       "priceRange": "€€",
-      "specialite": "Mezze libanais",
+      "specialite": "Nasi lemak primé",
+      "nombreAvis": 1169,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
       "id": "r9"
     },
     {
-      "nom": "Spice Route Singapour",
-      "type": "Indien & Pakistani",
+      "nom": "Geylang Serai Market",
+      "type": "Malais & Hawker",
       "certificationHalal": true,
       "score": 4.5,
       "adresse": "Singapour",
-      "description": "Adresse halal appréciée des habitants de Singapour.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Singapour+Singapour",
-      "priceRange": "€€",
-      "specialite": "Biryani",
+      "description": "Food court halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Geylang+Serai+Market+Singapour",
+      "priceRange": "€",
+      "specialite": "Food court halal",
+      "nombreAvis": 2235,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide"
+      ],
       "id": "r10"
     },
     {
-      "nom": "Saffron Garden Singapour",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Singapour",
-      "description": "Adresse halal appréciée des habitants de Singapour.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Singapour+Singapour",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r11"
-    },
-    {
-      "nom": "Green Bowl Singapour",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Singapour",
-      "description": "Adresse halal appréciée des habitants de Singapour.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Singapour+Singapour",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r12"
-    },
-    {
-      "nom": "Sultan Café Singapour",
+      "nom": "Kampong Glam Café",
       "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Singapour",
-      "description": "Adresse halal appréciée des habitants de Singapour.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Singapour+Singapour",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r13"
-    },
-    {
-      "nom": "Ocean Pearl Singapour",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Singapour",
-      "description": "Adresse halal appréciée des habitants de Singapour.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Singapour+Singapour",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r14"
-    },
-    {
-      "nom": "Bella Halal Singapour",
-      "type": "Pizza & Italien",
       "certificationHalal": true,
       "score": 4.5,
       "adresse": "Singapour",
-      "description": "Adresse halal appréciée des habitants de Singapour.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Singapour+Singapour",
+      "description": "Arab Street, halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Kampong+Glam+Caf%C3%A9+Singapour",
+      "priceRange": "€",
+      "specialite": "Arab street",
+      "nombreAvis": 1095,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "rapide"
+      ],
+      "id": "r11"
+    },
+    {
+      "nom": "Jaafar Kawasaki",
+      "type": "Malais & Hawker",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Singapour",
+      "description": "Chicken rice halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Jaafar+Kawasaki+Singapour",
       "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
+      "specialite": "Chicken rice halal",
+      "nombreAvis": 873,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r12"
+    },
+    {
+      "nom": "Tong Ah Eating House Halal",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Singapour",
+      "description": "Kaya toast à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Tong+Ah+Eating+House+Halal+Singapour",
+      "priceRange": "€€",
+      "specialite": "Kaya toast",
+      "nombreAvis": 1997,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ],
+      "id": "r13"
+    },
+    {
+      "nom": "Mr and Mrs Mahota",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Singapour",
+      "description": "Végétarien halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Mr+and+Mrs+Mahota+Singapour",
+      "priceRange": "€€",
+      "specialite": "Végétarien halal",
+      "nombreAvis": 359,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "veggie"
+      ],
+      "id": "r14"
+    },
+    {
+      "nom": "Sakunthala's",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Indien tamoul halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Sakunthala%27s+Singapour",
+      "priceRange": "€€",
+      "specialite": "Indien tamoul halal",
+      "nombreAvis": 1314,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
       "id": "r15"
+    },
+    {
+      "nom": "The Song of India",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Singapour",
+      "description": "Indien fine dining à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=The+Song+of+India+Singapour",
+      "priceRange": "€€€€",
+      "specialite": "Indien fine dining",
+      "nombreAvis": 2269,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Rang Mahal",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Singapour",
+      "description": "Indien gastronomique à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Rang+Mahal+Singapour",
+      "priceRange": "€€€€",
+      "specialite": "Indien gastronomique",
+      "nombreAvis": 1942,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Gaylord Restaurant",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Singapour",
+      "description": "Indien premium à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Gaylord+Restaurant+Singapour",
+      "priceRange": "€€€€",
+      "specialite": "Indien premium",
+      "nombreAvis": 1299,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Prata Wala",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Prata 24h halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Prata+Wala+Singapour",
+      "priceRange": "€",
+      "specialite": "Prata 24h halal",
+      "nombreAvis": 2668,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Casuarina Curry",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Singapour",
+      "description": "Fish head curry halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Casuarina+Curry+Singapour",
+      "priceRange": "€€",
+      "specialite": "Fish head curry halal",
+      "nombreAvis": 757,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ],
+      "id": "r20"
+    },
+    {
+      "nom": "Samy's Curry",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.9,
+      "adresse": "Singapour",
+      "description": "Fish head curry légendaire à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Samy%27s+Curry+Singapour",
+      "priceRange": "€€",
+      "specialite": "Fish head curry légendaire",
+      "nombreAvis": 445,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ],
+      "id": "r21"
+    },
+    {
+      "nom": "Boon Tong Kee",
+      "type": "Malais & Hawker",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Poulet hainanais halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Boon+Tong+Kee+Singapour",
+      "priceRange": "€€",
+      "specialite": "Poulet hainanais halal",
+      "nombreAvis": 221,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r22"
+    },
+    {
+      "nom": "Tim Ho Wan Singapore",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Singapour",
+      "description": "Dim sum halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Tim+Ho+Wan+Singapore+Singapour",
+      "priceRange": "€€",
+      "specialite": "Dim sum halal",
+      "nombreAvis": 409,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Paradise Group Restaurants",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Singapour",
+      "description": "Cantonais halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Paradise+Group+Restaurants+Singapour",
+      "priceRange": "€€",
+      "specialite": "Cantonais halal",
+      "nombreAvis": 1415,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r24"
+    },
+    {
+      "nom": "Crystal Jade Singapore",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Singapour",
+      "description": "Cantonais halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Crystal+Jade+Singapore+Singapour",
+      "priceRange": "€€",
+      "specialite": "Cantonais halal",
+      "nombreAvis": 1198,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r25"
+    },
+    {
+      "nom": "Din Tai Fung Singapore",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Singapour",
+      "description": "Xiao long bao halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Din+Tai+Fung+Singapore+Singapour",
+      "priceRange": "€€",
+      "specialite": "Xiao long bao halal",
+      "nombreAvis": 305,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r26"
+    },
+    {
+      "nom": "Putien Restaurant",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Singapour",
+      "description": "Hokkien halal certifié à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Putien+Restaurant+Singapour",
+      "priceRange": "€€",
+      "specialite": "Hokkien halal certifié",
+      "nombreAvis": 1733,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r27"
+    },
+    {
+      "nom": "Peach Garden",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Singapour",
+      "description": "Cantonais halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Peach+Garden+Singapour",
+      "priceRange": "€€",
+      "specialite": "Cantonais halal",
+      "nombreAvis": 2175,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r28"
+    },
+    {
+      "nom": "Madame Fan",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Singapour",
+      "description": "Cantonais ultra-luxe halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Madame+Fan+Singapour",
+      "priceRange": "€€€€",
+      "specialite": "Cantonais ultra-luxe halal",
+      "nombreAvis": 1518,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r29"
+    },
+    {
+      "nom": "Hakkasan Singapore",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Singapour",
+      "description": "Cantonais premium à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Hakkasan+Singapore+Singapour",
+      "priceRange": "€€€€",
+      "specialite": "Cantonais premium",
+      "nombreAvis": 1334,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r30"
+    },
+    {
+      "nom": "Nobu Singapore",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Singapour",
+      "description": "Japonais halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Nobu+Singapore+Singapour",
+      "priceRange": "€€",
+      "specialite": "Japonais halal",
+      "nombreAvis": 824,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r31"
+    },
+    {
+      "nom": "Mikuni",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Japonais Fairmont halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Mikuni+Singapour",
+      "priceRange": "€€",
+      "specialite": "Japonais fairmont halal",
+      "nombreAvis": 1930,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r32"
+    },
+    {
+      "nom": "Akira Back Singapore",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Japonais halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Akira+Back+Singapore+Singapour",
+      "priceRange": "€€",
+      "specialite": "Japonais halal",
+      "nombreAvis": 1853,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r33"
+    },
+    {
+      "nom": "OverEasy Singapore",
+      "type": "Malais & Hawker",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Singapour",
+      "description": "Américain halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=OverEasy+Singapore+Singapour",
+      "priceRange": "€€",
+      "specialite": "Américain halal",
+      "nombreAvis": 1148,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r34"
+    },
+    {
+      "nom": "The Clifford Pier",
+      "type": "Malais & Hawker",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Singapour",
+      "description": "Historique marina à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=The+Clifford+Pier+Singapour",
+      "priceRange": "€€",
+      "specialite": "Historique marina",
+      "nombreAvis": 678,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r35"
+    },
+    {
+      "nom": "Bedrock Bar Grill",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Singapour",
+      "description": "Steakhouse halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Bedrock+Bar+Grill+Singapour",
+      "priceRange": "€€",
+      "specialite": "Steakhouse halal",
+      "nombreAvis": 69,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r36"
+    },
+    {
+      "nom": "Burnt Ends Singapore",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "BBQ moderne à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Burnt+Ends+Singapore+Singapour",
+      "priceRange": "€€",
+      "specialite": "Bbq moderne",
+      "nombreAvis": 385,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r37"
+    },
+    {
+      "nom": "Odette Restaurant",
+      "type": "Cuisine française",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Singapour",
+      "description": "Français, options halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Odette+Restaurant+Singapour",
+      "priceRange": "€€",
+      "specialite": "Français",
+      "nombreAvis": 3214,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r38"
+    },
+    {
+      "nom": "Les Amis",
+      "type": "Cuisine française",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Singapour",
+      "description": "Français gastronomique à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Les+Amis+Singapour",
+      "priceRange": "€€€€",
+      "specialite": "Français gastronomique",
+      "nombreAvis": 2966,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "familial"
+      ],
+      "id": "r39"
+    },
+    {
+      "nom": "Alma by Juan Amador",
+      "type": "Cuisine française",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Singapour",
+      "description": "Européen halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Alma+by+Juan+Amador+Singapour",
+      "priceRange": "€€",
+      "specialite": "Européen halal",
+      "nombreAvis": 1105,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r40"
+    },
+    {
+      "nom": "Tippling Club",
+      "type": "Malais & Hawker",
+      "certificationHalal": true,
+      "score": 4.9,
+      "adresse": "Singapour",
+      "description": "Dining signature sans alcool à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Tippling+Club+Singapour",
+      "priceRange": "€€€€",
+      "specialite": "Dining signature sans alcool",
+      "nombreAvis": 85,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "familial"
+      ],
+      "id": "r41"
+    },
+    {
+      "nom": "Restaurant Andre",
+      "type": "Cuisine française",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Singapour",
+      "description": "Français signature à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Andre+Singapour",
+      "priceRange": "€€€€",
+      "specialite": "Français signature",
+      "nombreAvis": 136,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "familial"
+      ],
+      "id": "r42"
+    },
+    {
+      "nom": "Jaan by Kirk Westaway",
+      "type": "Cuisine française",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Singapour",
+      "description": "Gastronomique à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Jaan+by+Kirk+Westaway+Singapour",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique",
+      "nombreAvis": 1289,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "familial"
+      ],
+      "id": "r43"
+    },
+    {
+      "nom": "Cheek by Jowl",
+      "type": "Cuisine française",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Australien halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Cheek+by+Jowl+Singapour",
+      "priceRange": "€€",
+      "specialite": "Australien halal",
+      "nombreAvis": 1708,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r44"
+    },
+    {
+      "nom": "Common Man Coffee",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Brunch halal à Singapour.",
+      "mapsUrl": "https://maps.google.com/?q=Common+Man+Coffee+Singapour",
+      "priceRange": "€€",
+      "specialite": "Brunch halal",
+      "nombreAvis": 3697,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ],
+      "id": "r45"
     },
     {
       "nom": "Warung Selera",
@@ -249,7 +984,7 @@
         "local-authentique",
         "rapide"
       ],
-      "id": "r16"
+      "id": "r46"
     },
     {
       "nom": "Restoran Nusantara",
@@ -270,7 +1005,7 @@
         "livraison",
         "local-authentique"
       ],
-      "id": "r17"
+      "id": "r47"
     },
     {
       "nom": "Rakuzen Halal",
@@ -291,7 +1026,7 @@
         "livraison",
         "touristique"
       ],
-      "id": "r18"
+      "id": "r48"
     },
     {
       "nom": "Spice Darbar",
@@ -312,7 +1047,7 @@
         "livraison",
         "local-authentique"
       ],
-      "id": "r19"
+      "id": "r49"
     },
     {
       "nom": "Bahari Seafood",
@@ -332,744 +1067,203 @@
         "familial",
         "vue-mer"
       ],
-      "id": "r20"
-    },
-    {
-      "nom": "Seri Gastronomi",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Singapour",
-      "description": "Adresse gastronomique appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Seri+Gastronomi+Singapour",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 323,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Teh Tarik Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Singapour",
-      "description": "Adresse pâtisserie & café appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Teh+Tarik+Caf%C3%A9+Singapour",
-      "priceRange": "€",
-      "specialite": "Teh tarik et kuih",
-      "nombreAvis": 1064,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Green Leaf",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Singapour",
-      "description": "Adresse végétarien & healthy appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Leaf+Singapour",
-      "priceRange": "€",
-      "specialite": "Bowl tropical",
-      "nombreAvis": 813,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Ramly Burger",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Singapour",
-      "description": "Adresse burgers & fast-food appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Ramly+Burger+Singapour",
-      "priceRange": "€",
-      "specialite": "Burger halal",
-      "nombreAvis": 620,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Warung Selera Singapour 10",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Singapour",
-      "description": "Adresse traditionnel local appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Singapour+10+Singapour",
-      "priceRange": "€",
-      "specialite": "Nasi campur",
-      "nombreAvis": 1838,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Restoran Nusantara Singapour 11",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Singapour",
-      "description": "Adresse traditionnel local appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Nusantara+Singapour+11+Singapour",
-      "priceRange": "€€",
-      "specialite": "Rendang",
-      "nombreAvis": 891,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Rakuzen Halal Singapour 12",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Singapour",
-      "description": "Adresse japonais & asiatique appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Rakuzen+Halal+Singapour+12+Singapour",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1523,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Spice Darbar Singapour 13",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Singapour",
-      "description": "Adresse indien & pakistani appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Singapour+13+Singapour",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1974,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Bahari Seafood Singapour 14",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Singapour",
-      "description": "Adresse fruits de mer appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahari+Seafood+Singapour+14+Singapour",
-      "priceRange": "€€",
-      "specialite": "Crevettes sambal",
-      "nombreAvis": 1207,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Seri Gastronomi Singapour 15",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Singapour",
-      "description": "Adresse gastronomique appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Seri+Gastronomi+Singapour+15+Singapour",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 118,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Teh Tarik Café Singapour 16",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Singapour",
-      "description": "Adresse pâtisserie & café appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Teh+Tarik+Caf%C3%A9+Singapour+16+Singapour",
-      "priceRange": "€",
-      "specialite": "Teh tarik et kuih",
-      "nombreAvis": 1413,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Green Leaf Singapour 17",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Singapour",
-      "description": "Adresse végétarien & healthy appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Leaf+Singapour+17+Singapour",
-      "priceRange": "€",
-      "specialite": "Bowl tropical",
-      "nombreAvis": 3285,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Ramly Burger Singapour 18",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Singapour",
-      "description": "Adresse burgers & fast-food appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Ramly+Burger+Singapour+18+Singapour",
-      "priceRange": "€",
-      "specialite": "Burger halal",
-      "nombreAvis": 1663,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Warung Selera Singapour 19",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Singapour",
-      "description": "Adresse traditionnel local appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Singapour+19+Singapour",
-      "priceRange": "€",
-      "specialite": "Nasi campur",
-      "nombreAvis": 1195,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Restoran Nusantara Singapour 20",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Singapour",
-      "description": "Adresse traditionnel local appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Nusantara+Singapour+20+Singapour",
-      "priceRange": "€€",
-      "specialite": "Rendang",
-      "nombreAvis": 1085,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Rakuzen Halal Singapour 21",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Singapour",
-      "description": "Adresse japonais & asiatique appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Rakuzen+Halal+Singapour+21+Singapour",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1358,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Spice Darbar Singapour 22",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Singapour",
-      "description": "Adresse indien & pakistani appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Singapour+22+Singapour",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 82,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Bahari Seafood Singapour 23",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Singapour",
-      "description": "Adresse fruits de mer appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahari+Seafood+Singapour+23+Singapour",
-      "priceRange": "€€",
-      "specialite": "Crevettes sambal",
-      "nombreAvis": 769,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Seri Gastronomi Singapour 24",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Singapour",
-      "description": "Adresse gastronomique appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Seri+Gastronomi+Singapour+24+Singapour",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 1447,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Teh Tarik Café Singapour 25",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Singapour",
-      "description": "Adresse pâtisserie & café appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Teh+Tarik+Caf%C3%A9+Singapour+25+Singapour",
-      "priceRange": "€",
-      "specialite": "Teh tarik et kuih",
-      "nombreAvis": 2304,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Green Leaf Singapour 26",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Singapour",
-      "description": "Adresse végétarien & healthy appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Leaf+Singapour+26+Singapour",
-      "priceRange": "€",
-      "specialite": "Bowl tropical",
-      "nombreAvis": 2454,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Ramly Burger Singapour 27",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Singapour",
-      "description": "Adresse burgers & fast-food appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Ramly+Burger+Singapour+27+Singapour",
-      "priceRange": "€",
-      "specialite": "Burger halal",
-      "nombreAvis": 1431,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Warung Selera Singapour 28",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Singapour",
-      "description": "Adresse traditionnel local appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Singapour+28+Singapour",
-      "priceRange": "€",
-      "specialite": "Nasi campur",
-      "nombreAvis": 702,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Restoran Nusantara Singapour 29",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Singapour",
-      "description": "Adresse traditionnel local appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Nusantara+Singapour+29+Singapour",
-      "priceRange": "€€",
-      "specialite": "Rendang",
-      "nombreAvis": 1677,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Rakuzen Halal Singapour 30",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Singapour",
-      "description": "Adresse japonais & asiatique appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Rakuzen+Halal+Singapour+30+Singapour",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1494,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Spice Darbar Singapour 31",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Singapour",
-      "description": "Adresse indien & pakistani appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Singapour+31+Singapour",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 71,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Bahari Seafood Singapour 32",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Singapour",
-      "description": "Adresse fruits de mer appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahari+Seafood+Singapour+32+Singapour",
-      "priceRange": "€€",
-      "specialite": "Crevettes sambal",
-      "nombreAvis": 712,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Seri Gastronomi Singapour 33",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Singapour",
-      "description": "Adresse gastronomique appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Seri+Gastronomi+Singapour+33+Singapour",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 2028,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Teh Tarik Café Singapour 34",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Singapour",
-      "description": "Adresse pâtisserie & café appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Teh+Tarik+Caf%C3%A9+Singapour+34+Singapour",
-      "priceRange": "€",
-      "specialite": "Teh tarik et kuih",
-      "nombreAvis": 285,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Green Leaf Singapour 35",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Singapour",
-      "description": "Adresse végétarien & healthy appréciée à Singapour, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Leaf+Singapour+35+Singapour",
-      "priceRange": "€",
-      "specialite": "Bowl tropical",
-      "nombreAvis": 492,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
       "id": "r50"
     }
   ],
   "hotels": [
     {
-      "nom": "The Sultan",
-      "categorie": "Riad & Boutique",
-      "score": 4.5,
-      "adresse": "Kampong Glam",
-      "description": "Boutique-hôtel patrimonial à Kampong Glam",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=The+Sultan+Singapour",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
-      "priceRange": "€€€",
-      "id": "h1"
-    },
-    {
       "nom": "Marina Bay Sands",
       "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Marina Bay",
-      "description": "Resort iconique avec piscine à débordement",
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Ultra-luxe iconique à Singapour.",
       "halalFriendly": true,
       "sansAlcool": false,
       "mapsUrl": "https://maps.google.com/?q=Marina+Bay+Sands+Singapour",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
       "priceRange": "€€€€",
+      "nombreAvis": 2293,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h1"
+    },
+    {
+      "nom": "Capella Singapore",
+      "categorie": "Luxe",
+      "score": 4.7,
+      "adresse": "Singapour",
+      "description": "Ultra-luxe Sentosa à Singapour.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Capella+Singapore+Singapour",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
+      "priceRange": "€€€€",
+      "nombreAvis": 137,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
       "id": "h2"
     },
     {
-      "nom": "Village Hotel Bugis",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Bugis",
-      "description": "Hôtel central proche d'Arab Street",
+      "nom": "Raffles Hotel Singapore",
+      "categorie": "Luxe",
+      "score": 4.4,
+      "adresse": "Singapour",
+      "description": "Luxe légendaire à Singapour.",
       "halalFriendly": true,
       "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Village+Hotel+Bugis+Singapour",
+      "mapsUrl": "https://maps.google.com/?q=Raffles+Hotel+Singapore+Singapour",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
-      "priceRange": "€€€",
+      "priceRange": "€€€€",
+      "nombreAvis": 2500,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
       "id": "h3"
     },
     {
-      "nom": "Grand Plaza Singapour",
+      "nom": "Four Seasons Hotel Singapore",
       "categorie": "Luxe",
-      "score": 4.2,
+      "score": 4.4,
       "adresse": "Singapour",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+      "description": "Luxe à Singapour.",
       "halalFriendly": true,
       "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Singapour+Singapour",
+      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Hotel+Singapore+Singapour",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
       "priceRange": "€€€€",
+      "nombreAvis": 367,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
       "id": "h4"
     },
     {
-      "nom": "City Comfort Hotel Singapour",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Singapour",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Singapour+Singapour",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Singapour",
-      "categorie": "Riad & Boutique",
+      "nom": "Mandarin Oriental Singapore",
+      "categorie": "Luxe",
       "score": 4.4,
       "adresse": "Singapour",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Singapour+Singapour",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Singapour 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Singapour",
-      "description": "Hébergement halal-friendly à Singapour.",
+      "description": "Luxe à Singapour.",
       "halalFriendly": true,
       "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Singapour+0+Singapour",
+      "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Singapore+Singapour",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
       "priceRange": "€€€€",
-      "nombreAvis": 704,
+      "nombreAvis": 1755,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h5"
+    },
+    {
+      "nom": "Shangri-La Singapore",
+      "categorie": "Luxe",
+      "score": 4.4,
+      "adresse": "Singapour",
+      "description": "Luxe à Singapour.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Shangri-La+Singapore+Singapour",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
+      "priceRange": "€€€€",
+      "nombreAvis": 861,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h6"
+    },
+    {
+      "nom": "The Fullerton Hotel",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Singapour",
+      "description": "Luxe historique à Singapour.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=The+Fullerton+Hotel+Singapour",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
+      "priceRange": "€€€€",
+      "nombreAvis": 2322,
       "piscineNonMixte": false,
       "salleDePreiere": true,
       "qiblaIndicateur": true,
@@ -1086,6 +1280,178 @@
         "wifi"
       ],
       "id": "h7"
+    },
+    {
+      "nom": "Andaz Singapore",
+      "categorie": "Luxe",
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Luxe branché à Singapour.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Andaz+Singapore+Singapour",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
+      "priceRange": "€€€€",
+      "nombreAvis": 686,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h8"
+    },
+    {
+      "nom": "The Ritz-Carlton Millenia",
+      "categorie": "Luxe",
+      "score": 4.3,
+      "adresse": "Singapour",
+      "description": "Luxe à Singapour.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=The+Ritz-Carlton+Millenia+Singapour",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
+      "priceRange": "€€€€",
+      "nombreAvis": 845,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h9"
+    },
+    {
+      "nom": "W Singapore Sentosa Cove",
+      "categorie": "Luxe",
+      "score": 4.4,
+      "adresse": "Singapour",
+      "description": "Luxe à Singapour.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=W+Singapore+Sentosa+Cove+Singapour",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
+      "priceRange": "€€€€",
+      "nombreAvis": 1770,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h10"
+    },
+    {
+      "nom": "Ibis Singapore on Bencoolen",
+      "categorie": "Budget",
+      "score": 4.6,
+      "adresse": "Singapour",
+      "description": "Budget à Singapour.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Ibis+Singapore+on+Bencoolen+Singapour",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
+      "priceRange": "€€",
+      "nombreAvis": 1463,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ],
+      "id": "h11"
+    },
+    {
+      "nom": "Hotel 81",
+      "categorie": "Budget",
+      "score": 4.8,
+      "adresse": "Singapour",
+      "description": "Budget à Singapour.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Hotel+81+Singapour",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
+      "priceRange": "€€",
+      "nombreAvis": 1621,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ],
+      "id": "h12"
+    },
+    {
+      "nom": "Grand Plaza Singapour",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Singapour",
+      "description": "Hébergement halal-friendly à Singapour.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Singapour+Singapour",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
+      "priceRange": "€€€€",
+      "nombreAvis": 2025,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h13"
     },
     {
       "nom": "City Comfort Singapour",
@@ -1111,7 +1477,7 @@
         "restaurant-halal",
         "wifi"
       ],
-      "id": "h8"
+      "id": "h14"
     },
     {
       "nom": "Boutique Dar Singapour",
@@ -1137,171 +1503,6 @@
         "restaurant-halal",
         "wifi"
       ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Singapour",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Singapour",
-      "description": "Hébergement halal-friendly à Singapour.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Singapour+Singapour",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
-      "priceRange": "€€",
-      "nombreAvis": 2083,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Seaside Resort Singapour",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Singapour",
-      "description": "Hébergement halal-friendly à Singapour.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Singapour+Singapour",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
-      "priceRange": "€€€€",
-      "nombreAvis": 1388,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Family Suites Singapour",
-      "categorie": "Appartement",
-      "score": 4.1,
-      "adresse": "Singapour",
-      "description": "Hébergement halal-friendly à Singapour.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Family+Suites+Singapour+Singapour",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
-      "priceRange": "€€",
-      "nombreAvis": 662,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "cuisine-equipee",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Grand Plaza Singapour 6",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Singapour",
-      "description": "Hébergement halal-friendly à Singapour.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Singapour+6+Singapour",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
-      "priceRange": "€€€€",
-      "nombreAvis": 2506,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "City Comfort Singapour 7",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Singapour",
-      "description": "Hébergement halal-friendly à Singapour.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Singapour+7+Singapour",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
-      "priceRange": "€€€",
-      "nombreAvis": 531,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Boutique Dar Singapour 8",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Singapour",
-      "description": "Hébergement halal-friendly à Singapour.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Singapour+8+Singapour",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Singapour&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=singapour",
-      "priceRange": "€€€",
-      "nombreAvis": 2362,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
       "id": "h15"
     }
   ],
@@ -1314,7 +1515,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+Sultan+Singapour",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+du+Sultan+Singapour",
-      "id": "a1"
+      "id": "a1",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Gardens by the Bay",
@@ -1324,7 +1532,14 @@
       "prix": "€€",
       "mapsUrl": "https://maps.google.com/?q=Gardens+by+the+Bay+Singapour",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Gardens+by+the+Bay+Singapour",
-      "id": "a2"
+      "id": "a2",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Arab Street & Haji Lane",
@@ -1334,7 +1549,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Arab+Street+%26+Haji+Lane+Singapour",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Arab+Street+%26+Haji+Lane+Singapour",
-      "id": "a3"
+      "id": "a3",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Marina Bay & Merlion",
@@ -1344,7 +1566,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Marina+Bay+%26+Merlion+Singapour",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Marina+Bay+%26+Merlion+Singapour",
-      "id": "a4"
+      "id": "a4",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Sentosa Island",
@@ -1354,7 +1583,14 @@
       "prix": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Sentosa+Island+Singapour",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Sentosa+Island+Singapour",
-      "id": "a5"
+      "id": "a5",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Singapore Botanic Gardens",
@@ -1364,7 +1600,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Singapore+Botanic+Gardens+Singapour",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Singapore+Botanic+Gardens+Singapour",
-      "id": "a6"
+      "id": "a6",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "National Museum of Singapore",
@@ -1374,7 +1617,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=National+Museum+of+Singapore+Singapour",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=National+Museum+of+Singapore+Singapour",
-      "id": "a7"
+      "id": "a7",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Hawker food tour halal",
@@ -1384,7 +1634,14 @@
       "prix": "€€",
       "mapsUrl": "https://maps.google.com/?q=Hawker+food+tour+halal+Singapour",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hawker+food+tour+halal+Singapour",
-      "id": "a8"
+      "id": "a8",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Vieille ville de Singapour",
@@ -1394,7 +1651,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Singapour+Singapour",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Singapour+Singapour",
-      "id": "a9"
+      "id": "a9",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Grand souk de Singapour",
@@ -1404,7 +1668,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Singapour+Singapour",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Singapour+Singapour",
-      "id": "a10"
+      "id": "a10",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier historique de Singapour",
@@ -1907,54 +2178,52 @@
   ],
   "selectionsPremium": {
     "mieuxNotes": [
-      "Warung Selera",
-      "Ramly Burger",
-      "Green Leaf Singapour 17",
-      "Teh Tarik Café Singapour 25",
-      "Seri Gastronomi Singapour 33"
+      "Zam Zam Restaurant",
+      "Samy's Curry",
+      "Tippling Club",
+      "Hjh Maimunah Restaurant",
+      "Lau Pa Sat"
     ],
     "meilleurRapportQualitePrix": [
-      "Zam Zam",
-      "Hjh Maimunah",
-      "Islamic Restaurant",
-      "Tekka Centre Halal",
-      "Victory Restaurant"
+      "Zam Zam Restaurant",
+      "Hjh Maimunah Restaurant",
+      "Warong Nasi Pariaman",
+      "Bismillah Biryani Restaurant",
+      "Lau Pa Sat"
     ],
     "incontournables": [
+      "Common Man Coffee",
       "Restoran Nusantara",
-      "Green Leaf Singapour 17",
-      "Green Leaf Singapour 26",
-      "Teh Tarik Café Singapour 25",
-      "Warung Selera"
+      "Odette Restaurant",
+      "Les Amis",
+      "Zam Zam Restaurant"
     ],
     "pepitesCachees": [
-      "Zam Zam",
-      "Hjh Maimunah",
-      "Islamic Restaurant"
+      "Mr and Mrs Mahota",
+      "Boon Tong Kee",
+      "Din Tai Fung Singapore"
     ],
     "idealFamille": [
-      "Warung Selera",
-      "Restoran Nusantara",
-      "Spice Darbar",
-      "Bahari Seafood",
-      "Teh Tarik Café"
+      "Zam Zam Restaurant",
+      "Hjh Maimunah Restaurant",
+      "Warong Nasi Pariaman",
+      "Bismillah Biryani Restaurant",
+      "Lau Pa Sat"
     ],
     "gastronomique": [
-      "Saffron Garden Singapour",
-      "Seri Gastronomi",
-      "Seri Gastronomi Singapour 15",
-      "Seri Gastronomi Singapour 24",
-      "Seri Gastronomi Singapour 33"
+      "Zam Zam Restaurant",
+      "Samy's Curry",
+      "Tippling Club"
     ],
     "ouvertNuit": [
-      "Warung Selera",
-      "Teh Tarik Café",
-      "Green Leaf"
+      "Warong Nasi Pariaman",
+      "Lau Pa Sat",
+      "Golden Shoe Hawker Centre"
     ],
     "vueExceptionnelle": [
-      "Bahari Seafood",
-      "Bahari Seafood Singapour 14",
-      "Bahari Seafood Singapour 23"
+      "Casuarina Curry",
+      "Samy's Curry",
+      "Bahari Seafood"
     ]
   }
 }

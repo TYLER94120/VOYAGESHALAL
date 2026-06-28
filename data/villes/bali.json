@@ -10,7 +10,7 @@
     "lat": -8.3405,
     "lng": 115.092
   },
-  "score_halal": 4,
+  "score_halal": 3.5,
   "score_securite": 4,
   "score_famille": 4,
   "score_budget": 4,
@@ -34,239 +34,120 @@
   },
   "restaurants": [
     {
-      "id": "r1",
-      "nom": "Merah Putih Restaurant",
-      "adresse": "Jl. Petitenget 100X, Seminyak",
-      "cuisine": "Indonésienne contemporaine",
-      "specialite": "Nasi tumpeng et rendang daging",
-      "certification": "Halal MUI",
-      "prix_moyen": "150 000–400 000 IDR",
-      "note": 4.7,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 564,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI"
-      },
-      "type": "Traditionnel local",
+      "nom": "Warung Muslim Bali",
+      "type": "Indonésien",
       "certificationHalal": true,
-      "score": 4.7,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Merah+Putih+Restaurant+Bali",
-      "nombreAvis": 824,
+      "score": 4.2,
+      "adresse": "Bali",
+      "description": "Malais-indonésien halal certifié à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Warung+Muslim+Bali+Bali",
+      "priceRange": "€",
+      "specialite": "Malais-indonésien halal certifié",
+      "nombreAvis": 781,
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false,
       "tags": [
         "familial",
-        "local-authentique"
-      ]
+        "rapide"
+      ],
+      "id": "r1"
     },
     {
-      "id": "r2",
-      "nom": "Warung Ayam Betutu Ibu Oka",
-      "adresse": "Ubud Centre",
-      "cuisine": "Balinaise halal",
-      "specialite": "Ayam betutu et nasi campur",
-      "certification": "Halal MUI",
-      "prix_moyen": "50 000–100 000 IDR",
-      "note": 4.5,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 540,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI"
-      },
-      "type": "Traditionnel local",
+      "nom": "Locavore",
+      "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.5,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Warung%20Ayam%20Betutu%20Ibu%20Oka%20Bali",
-      "nombreAvis": 1321,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r3",
-      "nom": "Bumbu Bali Restaurant",
-      "adresse": "Tanjung Benoa, Nusa Dua",
-      "cuisine": "Balinaise authentique halal",
-      "specialite": "Lawar ayam et ayam betutu",
-      "certification": "Halal MUI",
-      "prix_moyen": "100 000–250 000 IDR",
-      "note": 4.8,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 576,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Bumbu+Bali+Restaurant+Bali",
-      "nombreAvis": 2791,
+      "score": 4.2,
+      "adresse": "Bali",
+      "description": "Gastronomique balinais, options halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Locavore+Bali",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique balinais",
+      "nombreAvis": 397,
       "ouvertureRamadan": true,
       "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r4",
-      "nom": "Ryoshi Japanese (Halal-friendly)",
-      "adresse": "Seminyak",
-      "cuisine": "Japonaise halal",
-      "specialite": "Tempura crevettes et sushi thon halal",
-      "certification": "Halal MUI",
-      "prix_moyen": "120 000–280 000 IDR",
-      "note": 4.5,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 540,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI"
-      },
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Ryoshi+Japanese+%28Halal-friendly%29+Bali",
-      "nombreAvis": 110,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
+      "reservationRequise": true,
       "tags": [
         "calme",
         "livraison",
-        "touristique"
-      ]
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r2"
     },
     {
-      "id": "r5",
-      "nom": "Warung Mak Beng",
-      "adresse": "Jl. Hang Tuah 45, Sanur",
-      "cuisine": "Poissons balinais halal",
-      "specialite": "Ikan goreng crispy avec sambal matah",
-      "certification": "Halal",
-      "prix_moyen": "50 000–120 000 IDR",
-      "note": 4.9,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 588,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal"
-      },
-      "type": "Traditionnel local",
+      "nom": "Sardine Restaurant Bali",
+      "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.9,
+      "score": 4.3,
+      "adresse": "Bali",
+      "description": "Rizières, gastronomique à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Sardine+Restaurant+Bali+Bali",
+      "priceRange": "€€€€",
+      "specialite": "Rizières",
+      "nombreAvis": 581,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r3"
+    },
+    {
+      "nom": "Sate Plecing Bali",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Bali",
+      "description": "Satay balinais halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Sate+Plecing+Bali+Bali",
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Mak+Beng+Bali",
-      "nombreAvis": 2184,
+      "specialite": "Satay balinais halal",
+      "nombreAvis": 2068,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
         "familial",
         "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r6",
-      "nom": "KFC Halal Kuta",
-      "adresse": "Kuta Square",
-      "cuisine": "Fast food halal certifié",
-      "specialite": "Crispy chicken halal MUI",
-      "certification": "Halal MUI certifié",
-      "prix_moyen": "40 000–90 000 IDR",
-      "note": 4.1,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 492,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI certifié"
-      },
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.1,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=KFC+Halal+Kuta+Bali",
-      "nombreAvis": 377,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
+        "local-authentique",
         "rapide"
-      ]
+      ],
+      "id": "r4"
     },
     {
-      "id": "r7",
+      "nom": "Bebek Bengil",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Bali",
+      "description": "Canard croustillant des rizières halal-friendly à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Bebek+Bengil+Bali",
+      "priceRange": "€€",
+      "specialite": "Canard croustillant des rizières halal-friendly",
+      "nombreAvis": 1694,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r5"
+    },
+    {
       "nom": "Mozaic Restaurant",
-      "adresse": "Jl. Raya Sanggingan, Ubud",
-      "cuisine": "Gastronomique fusion halal",
-      "specialite": "Menu dégustation halal (8 plats)",
-      "certification": "Halal (sur demande)",
-      "prix_moyen": "500 000–800 000 IDR",
-      "note": 4.8,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 576,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal (sur demande)"
-      },
       "type": "Gastronomique",
       "certificationHalal": true,
       "score": 4.8,
-      "priceRange": "€€",
+      "adresse": "Bali",
+      "description": "Gastronomique, options halal à Bali.",
       "mapsUrl": "https://maps.google.com/?q=Mozaic+Restaurant+Bali",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique",
       "nombreAvis": 600,
       "ouvertureRamadan": true,
       "livraison": false,
@@ -275,276 +156,41 @@
         "calme",
         "reservation-requise",
         "romantique"
-      ]
+      ],
+      "id": "r6"
     },
     {
-      "id": "r8",
-      "nom": "Locavore Restaurant Halal",
-      "adresse": "Ubud",
-      "cuisine": "Farm-to-table halal",
-      "specialite": "Légumes locaux et canard halal des highlands",
-      "certification": "Halal sur demande",
-      "prix_moyen": "300 000–600 000 IDR",
-      "note": 4.7,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 564,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal sur demande"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Locavore+Restaurant+Halal+Bali",
-      "nombreAvis": 1068,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r9",
-      "nom": "Naughty Nuri's (section halal)",
-      "adresse": "Ubud",
-      "cuisine": "Grillades & ribs halal",
-      "specialite": "Ribs de bœuf halal et cocktails sans alcool",
-      "certification": "Halal MUI",
-      "prix_moyen": "100 000–250 000 IDR",
-      "note": 4.4,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 528,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Naughty+Nuri%27s+%28section+halal%29+Bali",
-      "nombreAvis": 654,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r10",
-      "nom": "Poppies Restaurant",
-      "adresse": "Poppies Lane II, Kuta",
-      "cuisine": "Indonésienne & internationale halal",
-      "specialite": "Nasi goreng et satay ayam",
-      "certification": "Halal MUI",
-      "prix_moyen": "80 000–180 000 IDR",
-      "note": 4.4,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 528,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Poppies+Restaurant+Bali",
-      "nombreAvis": 1967,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r11",
-      "nom": "Café Wayan",
-      "adresse": "Monkey Forest Road, Ubud",
-      "cuisine": "Balinaise halal",
-      "specialite": "Gado-gado et jus de fruits frais",
-      "certification": "Halal MUI",
-      "prix_moyen": "60 000–150 000 IDR",
-      "note": 4.5,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 540,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Wayan+Bali",
-      "nombreAvis": 175,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r12",
-      "nom": "Seasalt Restaurant",
-      "adresse": "Alila Seminyak Hotel",
-      "cuisine": "Fruits de mer halal",
-      "specialite": "Lobster grillé et sashimi halal",
-      "certification": "Halal MUI",
-      "prix_moyen": "200 000–500 000 IDR",
-      "note": 4.7,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 564,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Seasalt+Restaurant+Bali",
-      "nombreAvis": 1145,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r13",
-      "nom": "Biku Tea House",
-      "adresse": "Jl. Petitenget 888, Seminyak",
-      "cuisine": "Fusion halal & tea room",
-      "specialite": "High tea halal avec scones",
-      "certification": "Halal MUI",
-      "prix_moyen": "100 000–200 000 IDR",
-      "note": 4.6,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 552,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Biku+Tea+House+Bali",
-      "nombreAvis": 950,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r14",
-      "nom": "Revolver Espresso (sans alcool)",
-      "adresse": "Jl. Kayu Aya 3A, Seminyak",
-      "cuisine": "Café & brunch halal",
-      "specialite": "Acai bowl et cold brew halal",
-      "certification": "Sans alcool / halal friendly",
-      "prix_moyen": "60 000–130 000 IDR",
-      "note": 4.5,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 540,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Sans alcool / halal friendly"
-      },
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.5,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Revolver+Espresso+%28sans+alcool%29+Bali",
-      "nombreAvis": 2406,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ]
-    },
-    {
-      "id": "r15",
-      "nom": "Spice by Chris Salans",
-      "adresse": "Nusa Dua Resort",
-      "cuisine": "Internationale gastronomique halal",
-      "specialite": "Fusion balinaise-française halal",
-      "certification": "Halal MUI",
-      "prix_moyen": "200 000–450 000 IDR",
-      "note": 4.7,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 564,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Halal MUI"
-      },
+      "nom": "Ku De Ta",
       "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.7,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Spice+by+Chris+Salans+Bali",
-      "nombreAvis": 2984,
+      "score": 4.1,
+      "adresse": "Bali",
+      "description": "Gastronomique plage Seminyak à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Ku+De+Ta+Bali",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique plage seminyak",
+      "nombreAvis": 1537,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r7"
+    },
+    {
+      "nom": "Mejekawi",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Bali",
+      "description": "Rooftop Ku De Ta à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Mejekawi+Bali",
+      "priceRange": "€€€€",
+      "specialite": "Rooftop ku de ta",
+      "nombreAvis": 2314,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": true,
@@ -553,7 +199,618 @@
         "livraison",
         "reservation-requise",
         "romantique"
-      ]
+      ],
+      "id": "r8"
+    },
+    {
+      "nom": "Merah Putih Bali",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Bali",
+      "description": "Indonésien moderne à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Merah+Putih+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Indonésien moderne",
+      "nombreAvis": 1558,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r9"
+    },
+    {
+      "nom": "Kafe Batan Waru",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Bali",
+      "description": "Indonésien halal-friendly à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Kafe+Batan+Waru+Bali",
+      "priceRange": "€€",
+      "specialite": "Indonésien halal-friendly",
+      "nombreAvis": 3214,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r10"
+    },
+    {
+      "nom": "Nusantara Restaurant",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Bali",
+      "description": "Archipel halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Nusantara+Restaurant+Bali",
+      "priceRange": "€€",
+      "specialite": "Archipel halal",
+      "nombreAvis": 495,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r11"
+    },
+    {
+      "nom": "Padang Merdeka",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Bali",
+      "description": "Padang halal Bali à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Padang+Merdeka+Bali",
+      "priceRange": "€€",
+      "specialite": "Padang halal bali",
+      "nombreAvis": 2269,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r12"
+    },
+    {
+      "nom": "Sari Organik Bali",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Bali",
+      "description": "Bio dans les rizières à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Sari+Organik+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Bio dans les rizières",
+      "nombreAvis": 3487,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "veggie"
+      ],
+      "id": "r13"
+    },
+    {
+      "nom": "Warung Sulawesi",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Bali",
+      "description": "Sulawesi halal certifié à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Warung+Sulawesi+Bali",
+      "priceRange": "€",
+      "specialite": "Sulawesi halal certifié",
+      "nombreAvis": 1519,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide"
+      ],
+      "id": "r14"
+    },
+    {
+      "nom": "Rumah Makan Minang",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Bali",
+      "description": "Padang, halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Rumah+Makan+Minang+Bali",
+      "priceRange": "€€",
+      "specialite": "Padang",
+      "nombreAvis": 2795,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r15"
+    },
+    {
+      "nom": "Bubur Ayam Bali",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Bali",
+      "description": "Bouillie de poulet halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Bubur+Ayam+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Bouillie de poulet halal",
+      "nombreAvis": 1561,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Soto Bali Pak Dobiel",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Bali",
+      "description": "Soupe bali halal-friendly à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Soto+Bali+Pak+Dobiel+Bali",
+      "priceRange": "€€",
+      "specialite": "Soupe bali halal-friendly",
+      "nombreAvis": 1582,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Warung Ijo",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Bali",
+      "description": "Riz et poisson halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Warung+Ijo+Bali",
+      "priceRange": "€",
+      "specialite": "Riz et poisson halal",
+      "nombreAvis": 519,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide",
+        "vue-mer"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Bakso Bali",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Bali",
+      "description": "Boulettes halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Bakso+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Boulettes halal",
+      "nombreAvis": 418,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Warung Muslim Jimbaran",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Bali",
+      "description": "Poissons grillés halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Warung+Muslim+Jimbaran+Bali",
+      "priceRange": "€",
+      "specialite": "Poissons grillés halal",
+      "nombreAvis": 983,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide",
+        "vue-mer"
+      ],
+      "id": "r20"
+    },
+    {
+      "nom": "Rumah Makan Pondok Sari",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Bali",
+      "description": "Padang à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Rumah+Makan+Pondok+Sari+Bali",
+      "priceRange": "€€",
+      "specialite": "Padang",
+      "nombreAvis": 2196,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r21"
+    },
+    {
+      "nom": "Ayam Taliwang Bali",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Bali",
+      "description": "Poulet épicé style Lombok à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Ayam+Taliwang+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Poulet épicé style lombok",
+      "nombreAvis": 1216,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r22"
+    },
+    {
+      "nom": "Warung Semesta Ubud",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Bali",
+      "description": "Organique halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Warung+Semesta+Ubud+Bali",
+      "priceRange": "€",
+      "specialite": "Organique halal",
+      "nombreAvis": 3185,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Clear Café Bali",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Bali",
+      "description": "Healthy halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Clear+Caf%C3%A9+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Healthy halal",
+      "nombreAvis": 2329,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ],
+      "id": "r24"
+    },
+    {
+      "nom": "Alchemy Bali",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Bali",
+      "description": "Raw food halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Alchemy+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Raw food halal",
+      "nombreAvis": 114,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "veggie"
+      ],
+      "id": "r25"
+    },
+    {
+      "nom": "Down to Earth Cafe",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Bali",
+      "description": "Végétarien halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Down+to+Earth+Cafe+Bali",
+      "priceRange": "€€",
+      "specialite": "Végétarien halal",
+      "nombreAvis": 810,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ],
+      "id": "r26"
+    },
+    {
+      "nom": "Kana Café",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Bali",
+      "description": "Brunch halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Kana+Caf%C3%A9+Bali",
+      "priceRange": "€€",
+      "specialite": "Brunch halal",
+      "nombreAvis": 805,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ],
+      "id": "r27"
+    },
+    {
+      "nom": "Seminyak Kitchen",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Bali",
+      "description": "International halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Seminyak+Kitchen+Bali",
+      "priceRange": "€€",
+      "specialite": "International halal",
+      "nombreAvis": 2530,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r28"
+    },
+    {
+      "nom": "KFC Bali",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Bali",
+      "description": "Halal Indonesia à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=KFC+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Halal indonesia",
+      "nombreAvis": 607,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r29"
+    },
+    {
+      "nom": "McDonald's Bali",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Bali",
+      "description": "Halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Halal",
+      "nombreAvis": 455,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r30"
+    },
+    {
+      "nom": "Pizza Hut Bali",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Bali",
+      "description": "Halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Pizza+Hut+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Halal",
+      "nombreAvis": 973,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r31"
+    },
+    {
+      "nom": "Domino's Pizza Bali",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Bali",
+      "description": "Halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Domino%27s+Pizza+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Halal",
+      "nombreAvis": 1003,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r32"
+    },
+    {
+      "nom": "Pappa Jack Bali",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Bali",
+      "description": "Américain halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Pappa+Jack+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Américain halal",
+      "nombreAvis": 600,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r33"
+    },
+    {
+      "nom": "Warung Nusantara Ubud",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Bali",
+      "description": "Local halal Ubud à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Warung+Nusantara+Ubud+Bali",
+      "priceRange": "€",
+      "specialite": "Local halal ubud",
+      "nombreAvis": 2375,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide"
+      ],
+      "id": "r34"
+    },
+    {
+      "nom": "Cuca Restaurant",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Bali",
+      "description": "Fusion végé halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Cuca+Restaurant+Bali",
+      "priceRange": "€€",
+      "specialite": "Fusion végé halal",
+      "nombreAvis": 1054,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "veggie"
+      ],
+      "id": "r35"
+    },
+    {
+      "nom": "Chez Gado Gado",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Bali",
+      "description": "Indonésien halal à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Gado+Gado+Bali",
+      "priceRange": "€€",
+      "specialite": "Indonésien halal",
+      "nombreAvis": 2000,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r36"
+    },
+    {
+      "nom": "Bambu Restaurant Bali",
+      "type": "Indonésien",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Bali",
+      "description": "Authentique, bambou à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Bambu+Restaurant+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Authentique",
+      "nombreAvis": 416,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r37"
+    },
+    {
+      "nom": "Sushi Kyoto Bali",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Bali",
+      "description": "Japonais halal certifié à Bali.",
+      "mapsUrl": "https://maps.google.com/?q=Sushi+Kyoto+Bali+Bali",
+      "priceRange": "€€",
+      "specialite": "Japonais halal certifié",
+      "nombreAvis": 1399,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r38"
     },
     {
       "nom": "Warung Selera",
@@ -575,7 +832,7 @@
         "local-authentique",
         "rapide"
       ],
-      "id": "r16"
+      "id": "r39"
     },
     {
       "nom": "Restoran Nusantara",
@@ -595,7 +852,7 @@
         "familial",
         "local-authentique"
       ],
-      "id": "r17"
+      "id": "r40"
     },
     {
       "nom": "Rakuzen Halal",
@@ -616,7 +873,7 @@
         "livraison",
         "touristique"
       ],
-      "id": "r18"
+      "id": "r41"
     },
     {
       "nom": "Spice Darbar",
@@ -637,7 +894,7 @@
         "livraison",
         "local-authentique"
       ],
-      "id": "r19"
+      "id": "r42"
     },
     {
       "nom": "Bahari Seafood",
@@ -658,112 +915,7 @@
         "livraison",
         "vue-mer"
       ],
-      "id": "r20"
-    },
-    {
-      "nom": "Warung Selera Bali 1",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Adresse traditionnel local appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Bali+1+Bali",
-      "priceRange": "€",
-      "specialite": "Nasi campur",
-      "nombreAvis": 89,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Restoran Nusantara Bali 2",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bali",
-      "description": "Adresse traditionnel local appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Nusantara+Bali+2+Bali",
-      "priceRange": "€€",
-      "specialite": "Rendang",
-      "nombreAvis": 3143,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Rakuzen Halal Bali 3",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Adresse japonais & asiatique appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Rakuzen+Halal+Bali+3+Bali",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1560,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Spice Darbar Bali 4",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Adresse indien & pakistani appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Bali+4+Bali",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1043,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Bahari Seafood Bali 5",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bali",
-      "description": "Adresse fruits de mer appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahari+Seafood+Bali+5+Bali",
-      "priceRange": "€€",
-      "specialite": "Crevettes sambal",
-      "nombreAvis": 2630,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r25"
+      "id": "r43"
     },
     {
       "nom": "Seri Gastronomi",
@@ -785,7 +937,7 @@
         "reservation-requise",
         "romantique"
       ],
-      "id": "r26"
+      "id": "r44"
     },
     {
       "nom": "Teh Tarik Café",
@@ -807,7 +959,7 @@
         "familial",
         "rapide"
       ],
-      "id": "r27"
+      "id": "r45"
     },
     {
       "nom": "Green Leaf",
@@ -829,7 +981,7 @@
         "rapide",
         "veggie"
       ],
-      "id": "r28"
+      "id": "r46"
     },
     {
       "nom": "Ramly Burger",
@@ -851,7 +1003,7 @@
         "livraison",
         "rapide"
       ],
-      "id": "r29"
+      "id": "r47"
     },
     {
       "nom": "Warung Selera Bali 10",
@@ -873,7 +1025,7 @@
         "local-authentique",
         "rapide"
       ],
-      "id": "r30"
+      "id": "r48"
     },
     {
       "nom": "Restoran Nusantara Bali 11",
@@ -893,7 +1045,7 @@
         "familial",
         "local-authentique"
       ],
-      "id": "r31"
+      "id": "r49"
     },
     {
       "nom": "Rakuzen Halal Bali 12",
@@ -906,389 +1058,6 @@
       "priceRange": "€€€",
       "specialite": "Sushis halal",
       "nombreAvis": 1370,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Spice Darbar Bali 13",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bali",
-      "description": "Adresse indien & pakistani appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Bali+13+Bali",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 951,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Bahari Seafood Bali 14",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bali",
-      "description": "Adresse fruits de mer appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahari+Seafood+Bali+14+Bali",
-      "priceRange": "€€",
-      "specialite": "Crevettes sambal",
-      "nombreAvis": 1467,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Seri Gastronomi Bali 15",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Adresse gastronomique appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Seri+Gastronomi+Bali+15+Bali",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 495,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Teh Tarik Café Bali 16",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bali",
-      "description": "Adresse pâtisserie & café appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Teh+Tarik+Caf%C3%A9+Bali+16+Bali",
-      "priceRange": "€",
-      "specialite": "Teh tarik et kuih",
-      "nombreAvis": 63,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Green Leaf Bali 17",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Adresse végétarien & healthy appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Leaf+Bali+17+Bali",
-      "priceRange": "€",
-      "specialite": "Bowl tropical",
-      "nombreAvis": 1773,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Ramly Burger Bali 18",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bali",
-      "description": "Adresse burgers & fast-food appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Ramly+Burger+Bali+18+Bali",
-      "priceRange": "€",
-      "specialite": "Burger halal",
-      "nombreAvis": 2142,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Warung Selera Bali 19",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Adresse traditionnel local appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Bali+19+Bali",
-      "priceRange": "€",
-      "specialite": "Nasi campur",
-      "nombreAvis": 410,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Restoran Nusantara Bali 20",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Adresse traditionnel local appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Nusantara+Bali+20+Bali",
-      "priceRange": "€€",
-      "specialite": "Rendang",
-      "nombreAvis": 2449,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Rakuzen Halal Bali 21",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bali",
-      "description": "Adresse japonais & asiatique appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Rakuzen+Halal+Bali+21+Bali",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1494,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Spice Darbar Bali 22",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bali",
-      "description": "Adresse indien & pakistani appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Bali+22+Bali",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1530,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Bahari Seafood Bali 23",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bali",
-      "description": "Adresse fruits de mer appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahari+Seafood+Bali+23+Bali",
-      "priceRange": "€€",
-      "specialite": "Crevettes sambal",
-      "nombreAvis": 239,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Seri Gastronomi Bali 24",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bali",
-      "description": "Adresse gastronomique appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Seri+Gastronomi+Bali+24+Bali",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 371,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Teh Tarik Café Bali 25",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bali",
-      "description": "Adresse pâtisserie & café appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Teh+Tarik+Caf%C3%A9+Bali+25+Bali",
-      "priceRange": "€",
-      "specialite": "Teh tarik et kuih",
-      "nombreAvis": 1892,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Green Leaf Bali 26",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bali",
-      "description": "Adresse végétarien & healthy appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Leaf+Bali+26+Bali",
-      "priceRange": "€",
-      "specialite": "Bowl tropical",
-      "nombreAvis": 3574,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Ramly Burger Bali 27",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Adresse burgers & fast-food appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Ramly+Burger+Bali+27+Bali",
-      "priceRange": "€",
-      "specialite": "Burger halal",
-      "nombreAvis": 1866,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Warung Selera Bali 28",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bali",
-      "description": "Adresse traditionnel local appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Bali+28+Bali",
-      "priceRange": "€",
-      "specialite": "Nasi campur",
-      "nombreAvis": 1258,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Restoran Nusantara Bali 29",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bali",
-      "description": "Adresse traditionnel local appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Nusantara+Bali+29+Bali",
-      "priceRange": "€€",
-      "specialite": "Rendang",
-      "nombreAvis": 613,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Rakuzen Halal Bali 30",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bali",
-      "description": "Adresse japonais & asiatique appréciée à Bali, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Rakuzen+Halal+Bali+30+Bali",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1429,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -1354,34 +1123,138 @@
   ],
   "hotels": [
     {
-      "id": "h1",
-      "nom": "Four Seasons Resort Bali (Sayan)",
-      "adresse": "Sayan, Ubud",
-      "categorie": "Resort & Spa",
-      "prix_nuit": "400–1200 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.9,
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 588,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "MUI Halal"
-      },
-      "score": 4.9,
+      "nom": "The Apurva Kempinski Bali",
+      "categorie": "Luxe",
+      "score": 4.8,
+      "adresse": "Bali",
+      "description": "Ultra-luxe à Bali.",
       "halalFriendly": true,
       "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Resort+Bali+%28Sayan%29+Bali",
+      "mapsUrl": "https://maps.google.com/?q=The+Apurva+Kempinski+Bali+Bali",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali",
-      "nombreAvis": 948,
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€€€",
+      "nombreAvis": 1103,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h1"
+    },
+    {
+      "nom": "Four Seasons Resort Bali at Sayan",
+      "categorie": "Luxe",
+      "score": 4.7,
+      "adresse": "Bali",
+      "description": "Ultra-luxe à Bali.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Resort+Bali+at+Sayan+Bali",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€€€",
+      "nombreAvis": 730,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h2"
+    },
+    {
+      "nom": "Amandari Ubud",
+      "categorie": "Luxe",
+      "score": 4.5,
+      "adresse": "Bali",
+      "description": "Ultra-luxe à Bali.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Amandari+Ubud+Bali",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€€€",
+      "nombreAvis": 2075,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h3"
+    },
+    {
+      "nom": "COMO Uma Ubud",
+      "categorie": "Luxe",
+      "score": 4.5,
+      "adresse": "Bali",
+      "description": "Luxe à Bali.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=COMO+Uma+Ubud+Bali",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€€€",
+      "nombreAvis": 2314,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h4"
+    },
+    {
+      "nom": "Alila Villas Uluwatu",
+      "categorie": "Resort & Spa",
+      "score": 4.5,
+      "adresse": "Bali",
+      "description": "Luxe à Bali.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Alila+Villas+Uluwatu+Bali",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€€€",
+      "nombreAvis": 984,
       "piscineNonMixte": true,
       "salleDePreiere": true,
       "qiblaIndicateur": true,
@@ -1398,119 +1271,84 @@
         "spa",
         "spa-femmes",
         "wifi"
-      ]
+      ],
+      "id": "h5"
     },
     {
-      "id": "h2",
-      "nom": "Alila Villas Uluwatu",
-      "adresse": "Uluwatu, Pecatu",
-      "categorie": "Standard",
-      "prix_nuit": "600–2000 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.9,
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 588,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "MUI Halal"
-      },
-      "score": 4.9,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Alila+Villas+Uluwatu+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali",
-      "nombreAvis": 984,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h3",
-      "nom": "The Mulia Bali",
-      "adresse": "Nusa Dua",
-      "categorie": "Standard",
-      "prix_nuit": "300–800 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.8,
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 576,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "MUI Halal"
-      },
-      "score": 4.8,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=The+Mulia+Bali+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali",
-      "nombreAvis": 1394,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h4",
-      "nom": "Villa Puri Ayu (halal villa)",
-      "adresse": "Seminyak",
-      "categorie": "Standard",
-      "prix_nuit": "200–500 €",
-      "halal_friendly": true,
-      "sans_alcool": true,
-      "piscine": true,
-      "note": 4.7,
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 564,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "MUI Halal"
-      },
+      "nom": "W Bali Seminyak",
+      "categorie": "Luxe",
       "score": 4.7,
+      "adresse": "Bali",
+      "description": "Luxe à Bali.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=W+Bali+Seminyak+Bali",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€€€",
+      "nombreAvis": 1590,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h6"
+    },
+    {
+      "nom": "Padma Resort Bali Legian",
+      "categorie": "Resort & Spa",
+      "score": 4.8,
+      "adresse": "Bali",
+      "description": "Luxe halal-friendly à Bali.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Padma+Resort+Bali+Legian+Bali",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€€€",
+      "nombreAvis": 2307,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "piscine-non-mixte",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "spa-femmes",
+        "wifi"
+      ],
+      "id": "h7"
+    },
+    {
+      "nom": "Potato Head Suites Bali",
+      "categorie": "Riad & Boutique",
+      "score": 4.7,
+      "adresse": "Bali",
+      "description": "Boutique à Bali.",
       "halalFriendly": true,
       "sansAlcool": true,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Villa+Puri+Ayu+%28halal+villa%29+Bali",
+      "mapsUrl": "https://maps.google.com/?q=Potato+Head+Suites+Bali+Bali",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali",
-      "nombreAvis": 895,
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€€",
+      "nombreAvis": 2486,
       "piscineNonMixte": false,
       "salleDePreiere": true,
       "qiblaIndicateur": true,
@@ -1521,37 +1359,22 @@
         "parking",
         "restaurant-halal",
         "wifi"
-      ]
+      ],
+      "id": "h8"
     },
     {
-      "id": "h5",
-      "nom": "Ibis Bali Kuta",
-      "adresse": "Kuta Beach",
-      "categorie": "Standard",
-      "prix_nuit": "50–120 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.3,
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 516,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "MUI Halal"
-      },
-      "score": 4.3,
+      "nom": "Ibis Styles Bali Legian",
+      "categorie": "Budget",
+      "score": 4.5,
+      "adresse": "Bali",
+      "description": "Budget à Bali.",
       "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Ibis+Bali+Kuta+Bali",
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Ibis+Styles+Bali+Legian+Bali",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Bali",
-      "nombreAvis": 1791,
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€",
+      "nombreAvis": 1080,
       "piscineNonMixte": false,
       "salleDePreiere": true,
       "qiblaIndicateur": true,
@@ -1562,7 +1385,34 @@
         "parking",
         "restaurant-halal",
         "wifi"
-      ]
+      ],
+      "id": "h9"
+    },
+    {
+      "nom": "Kuta Central Park Hotel",
+      "categorie": "Budget",
+      "score": 4.6,
+      "adresse": "Bali",
+      "description": "Budget à Bali.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Kuta+Central+Park+Hotel+Bali",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
+      "priceRange": "€€",
+      "nombreAvis": 2107,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ],
+      "id": "h10"
     },
     {
       "nom": "Grand Plaza Bali",
@@ -1592,37 +1442,7 @@
         "spa",
         "wifi"
       ],
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Bali 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Hébergement halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bali+0+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 150,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
+      "id": "h11"
     },
     {
       "nom": "City Comfort Bali",
@@ -1648,7 +1468,7 @@
         "restaurant-halal",
         "wifi"
       ],
-      "id": "h8"
+      "id": "h12"
     },
     {
       "nom": "Boutique Dar Bali",
@@ -1674,7 +1494,7 @@
         "restaurant-halal",
         "wifi"
       ],
-      "id": "h9"
+      "id": "h13"
     },
     {
       "nom": "Budget Inn Bali",
@@ -1700,7 +1520,7 @@
         "restaurant-halal",
         "wifi"
       ],
-      "id": "h10"
+      "id": "h14"
     },
     {
       "nom": "Seaside Resort Bali",
@@ -1730,115 +1550,6 @@
         "salle-sport",
         "spa",
         "spa-femmes",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Family Suites Bali",
-      "categorie": "Appartement",
-      "score": 4.1,
-      "adresse": "Bali",
-      "description": "Hébergement halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Family+Suites+Bali+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€",
-      "nombreAvis": 530,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "cuisine-equipee",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Grand Plaza Bali 6",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Bali",
-      "description": "Hébergement halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bali+6+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€€",
-      "nombreAvis": 888,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "City Comfort Bali 7",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Bali",
-      "description": "Hébergement halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Bali+7+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€",
-      "nombreAvis": 245,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Boutique Dar Bali 8",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Bali",
-      "description": "Hébergement halal-friendly à Bali.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Bali+8+Bali",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bali&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bali",
-      "priceRange": "€€€",
-      "nombreAvis": 2120,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
         "wifi"
       ],
       "id": "h15"
@@ -2521,54 +2232,55 @@
   ],
   "selectionsPremium": {
     "mieuxNotes": [
-      "Warung Mak Beng",
-      "Bumbu Bali Restaurant",
       "Mozaic Restaurant",
-      "Warung Selera",
-      "Warung Selera Bali 1"
+      "Kafe Batan Waru",
+      "Sari Organik Bali",
+      "Rumah Makan Minang",
+      "Soto Bali Pak Dobiel"
     ],
     "meilleurRapportQualitePrix": [
-      "Merah Putih Restaurant",
-      "Warung Ayam Betutu Ibu Oka",
-      "Bumbu Bali Restaurant",
-      "Ryoshi Japanese (Halal-friendly)",
-      "Warung Mak Beng"
+      "Sate Plecing Bali",
+      "Bebek Bengil",
+      "Kafe Batan Waru",
+      "Padang Merdeka",
+      "Sari Organik Bali"
     ],
     "incontournables": [
-      "Green Leaf Bali 26",
+      "Sari Organik Bali",
       "Ramly Burger",
-      "Restoran Nusantara Bali 2",
-      "Spice by Chris Salans",
-      "Bumbu Bali Restaurant"
+      "Kafe Batan Waru",
+      "Warung Semesta Ubud",
+      "Rumah Makan Minang"
     ],
     "pepitesCachees": [
-      "Ryoshi Japanese (Halal-friendly)",
-      "Café Wayan",
-      "Restoran Nusantara"
+      "Alchemy Bali",
+      "Restoran Nusantara",
+      "Rakuzen Halal"
     ],
     "idealFamille": [
-      "Merah Putih Restaurant",
-      "Warung Ayam Betutu Ibu Oka",
-      "Bumbu Bali Restaurant",
-      "Warung Mak Beng",
-      "KFC Halal Kuta"
+      "Warung Muslim Bali",
+      "Sate Plecing Bali",
+      "Bebek Bengil",
+      "Merah Putih Bali",
+      "Kafe Batan Waru"
     ],
     "gastronomique": [
+      "Locavore",
+      "Sardine Restaurant Bali",
       "Mozaic Restaurant",
-      "Spice by Chris Salans",
-      "Seri Gastronomi",
-      "Seri Gastronomi Bali 15",
-      "Seri Gastronomi Bali 24"
+      "Ku De Ta",
+      "Mejekawi"
     ],
     "ouvertNuit": [
-      "KFC Halal Kuta",
-      "Warung Selera",
-      "Warung Selera Bali 1"
+      "Warung Muslim Bali",
+      "Sate Plecing Bali",
+      "Warung Sulawesi"
     ],
     "vueExceptionnelle": [
-      "Bahari Seafood",
-      "Bahari Seafood Bali 5",
-      "Bahari Seafood Bali 14"
+      "Warung Ijo",
+      "Warung Muslim Jimbaran",
+      "Bahari Seafood"
     ]
-  }
+  },
+  "halalScore": 7.0
 }
