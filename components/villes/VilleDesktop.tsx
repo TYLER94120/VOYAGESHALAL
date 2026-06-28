@@ -126,17 +126,17 @@ export default function VilleDesktop({ ville }: { ville: any }) {
 
       {/* ACTIONS rapides — centrées */}
       <div style={{ background: 'var(--nuit)' }}>
-        <div style={{ maxWidth: WRAP, margin: '0 auto', display: 'flex', gap: '10px', padding: '16px 24px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div style={{ maxWidth: WRAP, margin: '0 auto', display: 'flex', gap: '12px', padding: '18px 24px', flexWrap: 'wrap', justifyContent: 'center' }}>
           {[
-            { href: '/mosquee-proche', icon: '🕌', label: 'Mosquée proche' },
-            { href: '/qibla', icon: '🧭', label: 'Qibla' },
-            { href: '/horaires-priere', icon: '🕐', label: 'Horaires' },
-            { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Carte', ext: true },
-            { href: `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`, icon: '✈️', label: 'Vols', ext: true },
+            { href: '/mosquee-proche', icon: '🕌', label: 'Mosquée proche', primary: true },
+            { href: '/qibla', icon: '🧭', label: 'Direction Qibla' },
+            { href: '/horaires-priere', icon: '🕐', label: 'Horaires de prière' },
+            { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Voir sur la carte', ext: true },
+            { href: `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`, icon: '✈️', label: `Vols vers ${ville.nom}`, ext: true },
           ].map((a) => (
             <a key={a.label} href={a.href} target={a.ext ? '_blank' : undefined} rel={a.ext ? 'noopener noreferrer' : undefined}
-              style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.32)', borderRadius: '12px', padding: '10px 16px', textDecoration: 'none', color: 'var(--or)', fontSize: '13.5px', fontWeight: 700 }}>
-              <span>{a.icon}</span>{a.label}
+              className={`ville-action${a.primary ? ' ville-action-primary' : ''}`}>
+              <span className="ico">{a.icon}</span>{a.label}
             </a>
           ))}
         </div>
