@@ -1097,6 +1097,109 @@ export const guides: Guide[] = [
 <h2>Comment VoyagesHalal.fr accompagne cette tendance</h2>
 <p>VoyagesHalal.fr est la première plateforme francophone dédiée au voyage halal : guides de destinations, carte interactive des adresses halal, conseils pratiques et comparatif de forfaits Omra — tout ce dont vous avez besoin pour voyager en accord avec vos valeurs.</p>`,
   },
+  {
+    slug: 'voyage-halal-istanbul-guide-2026',
+    title: 'Voyage halal à Istanbul : le guide complet 2026',
+    description:
+      'Restaurants halal, mosquées emblématiques, hôtels sans alcool et bons plans : tout pour préparer un voyage halal réussi à Istanbul en 2026.',
+    coverImage: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '9 min',
+    publishedAt: '2026-06-20',
+    tags: ['Istanbul', 'Turquie', 'Guide ville'],
+    content: `<h2>Pourquoi Istanbul est la destination halal n°1</h2>
+<p>À cheval entre l'Europe et l'Asie, Istanbul est sans doute la ville la plus accueillante au monde pour un voyageur musulman. Quasiment <strong>100% de la nourriture y est halal</strong>, l'appel à la prière rythme les journées, et les mosquées historiques font partie du décor quotidien. Notre <a href="/destinations/istanbul">guide complet d'Istanbul</a> recense des dizaines de restaurants certifiés, hôtels et activités.</p>
+
+<h2>Les restaurants halal incontournables</h2>
+<p>À Istanbul, le défi n'est pas de trouver du halal, mais de choisir ! Quelques institutions :</p>
+<ul>
+<li><strong>Hamdi Restaurant</strong> (Eminönü) — kebabs et baklavas avec vue sur la Corne d'Or.</li>
+<li><strong>Sultanahmet Köftecisi</strong> — les köfte traditionnels depuis 1920.</li>
+<li><strong>Karaköy Lokantası</strong> — cuisine turque raffinée près du Bosphore.</li>
+</ul>
+
+<h2>Mosquées à visiter</h2>
+<p>La <strong>Mosquée Bleue</strong> et <strong>Sainte-Sophie</strong> sont des merveilles d'architecture islamique. N'oubliez pas la mosquée de <strong>Soliman le Magnifique</strong> (Süleymaniye) et la mosquée <strong>Fatih</strong>. Toutes sont ouvertes aux visiteurs en dehors des heures de prière.</p>
+
+<h2>Où loger ?</h2>
+<p>Le quartier de <strong>Sultanahmet</strong> est idéal pour un premier séjour : proche des sites, calme, nombreux hôtels sans alcool. Pour une ambiance plus moderne, optez pour <strong>Şişli</strong> ou <strong>Beşiktaş</strong>.</p>
+
+<h2>Conseils pratiques</h2>
+<ul>
+<li><strong>Meilleure période</strong> : avril-juin et septembre-octobre (climat doux).</li>
+<li><strong>Monnaie</strong> : livre turque (TRY) — le change est avantageux.</li>
+<li><strong>Transport</strong> : carte Istanbulkart pour métro, tram et ferry.</li>
+<li>Consultez les <a href="/horaires-priere">horaires de prière à Istanbul</a> et la <a href="/qibla">direction de la Qibla</a> directement sur VoyagesHalal.fr.</li>
+</ul>
+
+<p>Prêt à partir ? Découvrez toutes nos adresses sur le <a href="/destinations/istanbul">guide halal d'Istanbul</a>.</p>`,
+  },
+  {
+    slug: 'voyage-halal-dubai-guide-2026',
+    title: 'Voyage halal à Dubaï : le guide complet 2026',
+    description:
+      'Luxe, plages, gratte-ciel et halal certifié : le guide 2026 pour un voyage halal inoubliable à Dubaï — restaurants, hôtels, mosquées et activités.',
+    coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '8 min',
+    publishedAt: '2026-06-21',
+    tags: ['Dubaï', 'Émirats', 'Guide ville'],
+    content: `<h2>Dubaï, le luxe halal par excellence</h2>
+<p>Dubaï combine modernité spectaculaire et valeurs islamiques. Toute la nourriture servie aux Émirats est <strong>halal par défaut</strong>, les hôtels proposent des options sans alcool, et la ville est l'une des plus sûres au monde. Explorez notre <a href="/destinations/dubai">guide complet de Dubaï</a>.</p>
+
+<h2>Que faire à Dubaï en famille musulmane ?</h2>
+<ul>
+<li><strong>Burj Khalifa</strong> — la plus haute tour du monde et sa vue à 360°.</li>
+<li><strong>Mosquée de Jumeirah</strong> — l'une des rares ouvertes aux visiteurs non-musulmans.</li>
+<li><strong>Dubai Mall & fontaines</strong> — shopping, aquarium et spectacles.</li>
+<li><strong>Désert</strong> — safari en 4x4 et dîner sous les étoiles (versions sans alcool disponibles).</li>
+</ul>
+
+<h2>Restaurants et hôtels halal</h2>
+<p>Des tables gastronomiques aux food courts, tout est halal. Pour l'hébergement, de nombreux resorts proposent des étages familiaux, des piscines à horaires dédiés et une absence totale d'alcool sur demande. Comparez les adresses sur notre <a href="/destinations/dubai">page Dubaï</a>.</p>
+
+<h2>Conseils pratiques</h2>
+<ul>
+<li><strong>Meilleure période</strong> : novembre à mars (éviter l'été très chaud).</li>
+<li><strong>Tenue</strong> : décontractée en ville, modeste dans les lieux de culte.</li>
+<li><strong>Prière</strong> : mosquées partout + salles de prière dans tous les malls. Voir les <a href="/horaires-priere">horaires de prière</a>.</li>
+</ul>
+
+<p>Planifiez votre séjour avec le <a href="/destinations/dubai">guide halal de Dubaï</a>.</p>`,
+  },
+  {
+    slug: 'voyage-halal-marrakech-guide-2026',
+    title: 'Voyage halal à Marrakech : le guide complet 2026',
+    description:
+      'Médina, riads, souks et gastronomie : le guide 2026 pour un voyage halal authentique à Marrakech. Restaurants, mosquées, hôtels et conseils pratiques.',
+    coverImage: 'https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '8 min',
+    publishedAt: '2026-06-22',
+    tags: ['Marrakech', 'Maroc', 'Guide ville'],
+    content: `<h2>Marrakech, l'authenticité halal à 3h de Paris</h2>
+<p>La ville ocre est une destination de choix pour les voyageurs musulmans francophones : proximité, langue, et un cadre <strong>naturellement halal</strong>. Tout est sur notre <a href="/destinations/marrakech">guide complet de Marrakech</a>.</p>
+
+<h2>Que voir et que faire ?</h2>
+<ul>
+<li><strong>Place Jemaa el-Fna</strong> — le cœur vibrant de la médina, classée UNESCO.</li>
+<li><strong>Mosquée Koutoubia</strong> — le minaret emblématique du XIIe siècle.</li>
+<li><strong>Jardin Majorelle</strong> et <strong>palais de la Bahia</strong>.</li>
+<li><strong>Souks</strong> — épices, cuir, tapis et artisanat berbère.</li>
+</ul>
+
+<h2>Gastronomie halal</h2>
+<p>Tajines, couscous, pastilla, thé à la menthe : la cuisine marocaine est un voyage à elle seule, et entièrement halal. Logez dans un <strong>riad</strong> traditionnel au cœur de la médina pour une expérience authentique et sans alcool.</p>
+
+<h2>Conseils pratiques</h2>
+<ul>
+<li><strong>Meilleure période</strong> : mars-mai et septembre-novembre.</li>
+<li><strong>Monnaie</strong> : dirham marocain (MAD).</li>
+<li><strong>Prière</strong> : mosquées à chaque coin de rue. Voir les <a href="/horaires-priere">horaires de prière à Marrakech</a>.</li>
+</ul>
+
+<p>Préparez votre séjour avec le <a href="/destinations/marrakech">guide halal de Marrakech</a>.</p>`,
+  },
 ]
 
 export const blogPosts: BlogPost[] = [
