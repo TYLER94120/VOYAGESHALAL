@@ -6,6 +6,7 @@ import { ToastProvider } from '@/components/Toast'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import BottomNav from '@/components/layout/BottomNav'
+import { LanguageProvider } from '@/components/i18n/LanguageProvider'
 import { RamadanBanner } from '@/components/RamadanBanner'
 import { SITE_NAME, DEFAULT_DESCRIPTION, SITE_URL } from '@/lib/seo'
 
@@ -44,12 +45,14 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${dmSans.variable} ${playfair.variable} font-sans`}>
-        <RamadanBanner />
-        <Header />
-        {children}
-        <Footer />
-        <BottomNav />
-        <ToastProvider />
+        <LanguageProvider>
+          <RamadanBanner />
+          <Header />
+          {children}
+          <Footer />
+          <BottomNav />
+          <ToastProvider />
+        </LanguageProvider>
       </body>
     </html>
   )

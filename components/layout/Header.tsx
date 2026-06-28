@@ -1,9 +1,12 @@
 'use client'
 import { useState } from 'react'
 import Link from 'next/link'
+import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const { t } = useLanguage()
 
   return (
     <header className="header-premium">
@@ -19,34 +22,30 @@ export default function Header() {
         {/* Nav desktop */}
         <nav className="header-nav-desktop">
           <Link href="/" className="nav-link">
-            Accueil
+            {t('nav.home')}
           </Link>
           <Link href="/destinations" className="nav-link">
-            Destinations
+            {t('nav.destinations')}
           </Link>
           <Link href="/horaires-priere" className="nav-link nav-link-highlight">
-            🕐 Horaires
+            🕐 {t('nav.prayer')}
           </Link>
           <Link href="/qibla" className="nav-link nav-link-highlight">
-            🧭 Qibla
+            🧭 {t('nav.qibla')}
           </Link>
           <Link href="/mosquee-proche" className="nav-link nav-link-highlight">
-            🕌 Mosquée
+            🕌 {t('nav.mosque')}
           </Link>
           <Link href="/blog" className="nav-link">
-            Blog
+            {t('nav.blog')}
           </Link>
         </nav>
 
         {/* Actions */}
         <div className="header-actions">
-          <div className="lang-switcher">
-            <span>FR</span>
-            <span>·</span>
-            <span>EN</span>
-          </div>
+          <LanguageSwitcher />
           <Link href="/application" className="btn-app-gold">
-            L&apos;application
+            {t('nav.app')}
           </Link>
           {/* Burger mobile */}
           <button
