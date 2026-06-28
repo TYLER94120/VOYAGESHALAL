@@ -7,6 +7,11 @@ import IslamicPattern from '@/components/ui/IslamicPattern'
 
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80'
 
+// Rendu dynamique forcé : lecture fraîche de data/villes/ à chaque requête,
+// évite tout cache statique/CDN obsolète (ex. ancienne version à 6 villes).
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export const metadata: Metadata = buildMetadata({
   title: 'Destinations Voyage Halal — Meilleures Villes du Monde',
   description:
