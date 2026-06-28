@@ -11,7 +11,8 @@ const footerLinks = {
   'Outils musulmans': [
     { href: '/horaires-priere', label: '🕐 Horaires de prière' },
     { href: '/qibla', label: '🧭 Calculateur Qibla' },
-    { href: '/omra', label: '🕌 Omra & Hajj' },
+    { href: '/mosquee-proche', label: '🕌 Mosquée la plus proche' },
+    { href: '/omra', label: '🕋 Omra & Hajj' },
   ],
   Ressources: [
     { href: '/blog', label: 'Blog & Guides' },

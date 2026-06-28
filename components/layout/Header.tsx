@@ -30,6 +30,9 @@ export default function Header() {
           <Link href="/qibla" className="nav-link nav-link-highlight">
             🧭 Qibla
           </Link>
+          <Link href="/mosquee-proche" className="nav-link nav-link-highlight">
+            🕌 Mosquée
+          </Link>
           <Link href="/blog" className="nav-link">
             Blog
           </Link>
@@ -70,6 +73,9 @@ export default function Header() {
           </Link>
           <Link href="/qibla" onClick={() => setMenuOpen(false)}>
             🧭 Calculateur Qibla
+          </Link>
+          <Link href="/mosquee-proche" onClick={() => setMenuOpen(false)}>
+            🕌 Mosquée la plus proche
           </Link>
           <Link href="/blog" onClick={() => setMenuOpen(false)}>
             📖 Blog &amp; Guides

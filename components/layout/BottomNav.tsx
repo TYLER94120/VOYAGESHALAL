@@ -30,9 +30,9 @@ export default function BottomNav() {
         <span className="bottom-nav-icon">🧭</span>
         <span className="bottom-nav-label">Qibla</span>
       </Link>
-      <Link href="/blog" className={`bottom-nav-item ${isActive('/blog') ? 'active' : ''}`}>
-        <span className="bottom-nav-icon">📖</span>
-        <span className="bottom-nav-label">Blog</span>
+      <Link href="/mosquee-proche" className={`bottom-nav-item ${isActive('/mosquee-proche') ? 'active' : ''}`}>
+        <span className="bottom-nav-icon">🕌</span>
+        <span className="bottom-nav-label">Mosquée</span>
       </Link>
     </nav>
   )
