@@ -1,6 +1,7 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from 'react'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 interface GeoData {
   cityName: string
@@ -23,6 +24,7 @@ function getNextPrayer(timings: Record<string, string>): string {
 }
 
 export default function GeoDashboard() {
+  const { t } = useLanguage()
   const [status, setStatus] = useState<'idle' | 'loading' | 'ready' | 'error'>('idle')
   const [data, setData] = useState<GeoData | null>(null)
 
@@ -125,10 +127,10 @@ export default function GeoDashboard() {
   return (
     <div style={{ background: 'linear-gradient(135deg, var(--foret), var(--nuit))', borderRadius: '20px', padding: '30px 24px', textAlign: 'center', border: '1px solid rgba(201,168,76,0.3)' }}>
       <div style={{ fontSize: '46px', marginBottom: '14px' }}>📍</div>
-      <h2 style={{ color: 'white', fontFamily: "'Playfair Display', serif", fontSize: '22px', marginBottom: '8px', fontWeight: 700 }}>Tout le halal autour de vous</h2>
-      <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '22px', fontSize: '14px' }}>Mosquées, horaires de prière et Qibla — en un clic</p>
+      <h2 style={{ color: 'white', fontFamily: "'Playfair Display', serif", fontSize: '22px', marginBottom: '8px', fontWeight: 700 }}>{t('geo.title')}</h2>
+      <p style={{ color: 'rgba(255,255,255,0.7)', marginBottom: '22px', fontSize: '14px' }}>{t('geo.sub')}</p>
       <button onClick={handleGeolocate} style={{ background: 'var(--or)', color: 'var(--nuit)', border: 'none', padding: '16px 32px', borderRadius: '14px', fontSize: '16px', fontWeight: 700, cursor: 'pointer', width: '100%', animation: 'breathe 3s ease-in-out infinite' }}>
-        📍 Me géolocaliser maintenant
+        {t('geo.btn')}
       </button>
     </div>
   )

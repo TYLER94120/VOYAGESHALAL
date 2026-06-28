@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import SearchBarHome from '@/components/search/SearchBarHome'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import GeoDashboard from '@/components/mobile/GeoDashboard'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 interface Destination {
   slug: string
@@ -26,6 +27,7 @@ const PRAYERS = [
 
 // Bandeau prochaine prière — AlAdhan géolocalisé, repli silencieux si refus
 function NextPrayerBanner() {
+  const { t } = useLanguage()
   const [info, setInfo] = useState<{ name: string; time: string; city: string } | null>(null)
 
   useEffect(() => {
@@ -82,7 +84,7 @@ function NextPrayerBanner() {
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <span style={{ color: '#c9a84c', fontSize: '10.5px', fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase' }}>
-          Prochaine prière
+          {t('home.next')}
         </span>
         <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '11px' }}>📍 {info?.city ?? '…'}</span>
       </div>
@@ -92,19 +94,20 @@ function NextPrayerBanner() {
         </span>
         <span style={{ color: '#e8d5a3', fontSize: '15px', fontWeight: 600 }}>{info?.name ?? ''}</span>
       </div>
-      <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '11.5px' }}>Touchez pour tous les horaires →</span>
+      <span style={{ color: 'rgba(255,255,255,0.5)', fontSize: '11.5px' }}>{t('home.allTimes')}</span>
     </Link>
   )
 }
 
 const TILES = [
-  { href: '/destinations', icon: '🌍', title: 'Destinations', sub: (n: number) => `${n} villes halal`, bg: '#EAF3DE' },
-  { href: '/horaires-priere', icon: '🕐', title: 'Prières', sub: () => 'Horaires du jour', bg: '#FAEEDA' },
-  { href: '/qibla', icon: '🧭', title: 'Qibla', sub: () => 'Direction Mecque', bg: '#E6F1FB' },
-  { href: '/mosquee-proche', icon: '🕌', title: 'Mosquée', sub: () => 'La plus proche', bg: '#EEEDFE' },
+  { href: '/destinations', icon: '🌍', titleKey: 'nav.destinations', subKey: 'tile.destSub', bg: '#EAF3DE', count: true },
+  { href: '/horaires-priere', icon: '🕐', titleKey: 'nav.prayer', subKey: 'tile.praySub', bg: '#FAEEDA' },
+  { href: '/qibla', icon: '🧭', titleKey: 'nav.qibla', subKey: 'tile.qiblaSub', bg: '#E6F1FB' },
+  { href: '/mosquee-proche', icon: '🕌', titleKey: 'nav.mosque', subKey: 'tile.mosqueSub', bg: '#EEEDFE' },
 ]
 
 export default function MobileHome({ totalVilles, destinations }: { totalVilles: number; destinations: Destination[] }) {
+  const { t } = useLanguage()
   return (
     <div className="mobile-home lg:hidden" style={{ background: '#fdfaf3' }}>
       {/* Hero nuit */}
@@ -119,7 +122,7 @@ export default function MobileHome({ totalVilles, destinations }: { totalVilles:
           <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900, fontSize: '27px', color: '#fff', lineHeight: 1.15, marginBottom: '16px' }}>
             As-salāmu ʿalaykum,
             <br />
-            où allez-vous <span style={{ color: '#c9a84c', fontStyle: 'italic' }}>prier</span> ?
+            <span style={{ color: '#c9a84c', fontStyle: 'italic' }}>{t('home.greet')}</span>
           </h1>
           <div style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(201,168,76,0.35)', backdropFilter: 'blur(10px)', borderRadius: '14px', padding: '4px' }}>
             <SearchBarHome />
@@ -131,15 +134,15 @@ export default function MobileHome({ totalVilles, destinations }: { totalVilles:
       <section style={{ padding: '16px 14px 4px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
         <NextPrayerBanner />
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-          {TILES.map((t) => (
+          {TILES.map((tile) => (
             <Link
-              key={t.href}
-              href={t.href}
-              style={{ background: t.bg, borderRadius: '18px', padding: '16px', textDecoration: 'none', display: 'block' }}
+              key={tile.href}
+              href={tile.href}
+              style={{ background: tile.bg, borderRadius: '18px', padding: '16px', textDecoration: 'none', display: 'block' }}
             >
-              <div style={{ fontSize: '26px', marginBottom: '8px' }}>{t.icon}</div>
-              <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, fontSize: '17px', color: '#1b4332' }}>{t.title}</div>
-              <div style={{ fontSize: '12px', color: '#6b7280', marginTop: '2px' }}>{t.sub(totalVilles)}</div>
+              <div style={{ fontSize: '26px', marginBottom: '8px' }}>{tile.icon}</div>
+              <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, fontSize: '17px', color: '#1b4332' }}>{t(tile.titleKey)}</div>
+              <div style={{ fontSize: '12px', color: '#6b7280', marginTop: '2px' }}>{tile.count ? `${totalVilles} ${t('tile.destSub')}` : t(tile.subKey)}</div>
             </Link>
           ))}
         </div>
@@ -153,7 +156,7 @@ export default function MobileHome({ totalVilles, destinations }: { totalVilles:
       {/* Destinations populaires */}
       <section style={{ padding: '18px 14px 28px' }}>
         <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase', color: '#9ca3af', marginBottom: '12px' }}>
-          Destinations populaires
+          {t('home.popular')}
         </p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
           {destinations.map((d) => (
@@ -182,7 +185,7 @@ export default function MobileHome({ totalVilles, destinations }: { totalVilles:
           ))}
         </div>
         <Link href="/destinations" style={{ display: 'block', textAlign: 'center', marginTop: '16px', color: '#1b4332', fontWeight: 700, fontSize: '13px', textDecoration: 'none' }}>
-          Voir les {totalVilles} destinations →
+          {t('home.seeAll')}
         </Link>
       </section>
     </div>
