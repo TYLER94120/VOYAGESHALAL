@@ -18,15 +18,16 @@ export interface VilleCard {
 
 interface Props {
   villes: VilleCard[]
-  continents: Record<string, string[]>
+  continents: string[]
 }
 
 const FILTER_ICON: Record<string, string> = {
-  'Moyen-Orient': '🕌 ',
-  Afrique: '🌍 ',
   Asie: '🌏 ',
+  Afrique: '🌍 ',
   Europe: '🏰 ',
-  Omra: '🕋 ',
+  'Amérique du Nord': '🗽 ',
+  'Amérique du Sud': '🌎 ',
+  Océanie: '🏝️ ',
 }
 
 const COUNTRY_EMOJI: Record<string, string> = {
@@ -39,7 +40,7 @@ export default function DestinationsClient({ villes, continents }: Props) {
   const [filtre, setFiltre] = useState('Toutes')
 
   const villesFiltrees =
-    filtre === 'Toutes' ? villes : villes.filter((v) => continents[filtre]?.includes(v.pays))
+    filtre === 'Toutes' ? villes : villes.filter((v) => v.continent === filtre)
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-8 pb-24">
@@ -52,7 +53,7 @@ export default function DestinationsClient({ villes, continents }: Props) {
 
       {/* Filtres scrollables */}
       <div className="filtres-scroll">
-        {Object.keys(continents).map((c) => (
+        {continents.map((c) => (
           <button
             key={c}
             className={`filtre-btn pill-filter ${filtre === c ? 'active' : ''}`}

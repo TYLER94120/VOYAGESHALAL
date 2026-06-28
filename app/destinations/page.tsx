@@ -56,17 +56,15 @@ function getAllVilles(): VilleCard[] {
     .sort((a, b) => a.nom.localeCompare(b.nom, 'fr'))
 }
 
-const continents: Record<string, string[]> = {
-  Toutes: [],
-  'Moyen-Orient': ['Émirats Arabes Unis', 'Émirats', 'Arabie Saoudite', 'Qatar', 'Jordanie', 'Oman'],
-  Afrique: ['Maroc', 'Algérie', 'Tunisie', 'Égypte'],
-  Asie: ['Malaisie', 'Indonésie', 'Maldives'],
-  Europe: ['France', 'Royaume-Uni', 'Turquie'],
-  Omra: ['Arabie Saoudite'],
-}
+// Ordre d'affichage des filtres ; on ne garde que ceux réellement présents.
+const CONTINENT_ORDER = ['Asie', 'Afrique', 'Europe', 'Amérique du Nord', 'Amérique du Sud', 'Océanie']
 
 export default function DestinationsPage() {
   const villes = getAllVilles()
+
+  // Filtres dérivés dynamiquement des continents réellement présents dans data/villes/
+  const presents = new Set(villes.map((v) => v.continent).filter(Boolean) as string[])
+  const continents = ['Toutes', ...CONTINENT_ORDER.filter((c) => presents.has(c))]
 
   return (
     <main style={{ backgroundColor: '#fdfaf3' }}>
