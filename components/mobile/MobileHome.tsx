@@ -7,6 +7,7 @@ import IslamicPattern from '@/components/ui/IslamicPattern'
 import GeoDashboard from '@/components/mobile/GeoDashboard'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import LocationBar from '@/components/location/LocationBar'
+import { useLocation, type City } from '@/components/location/LocationProvider'
 
 interface Destination {
   slug: string
@@ -27,37 +28,34 @@ const PRAYERS = [
 ]
 
 // Bandeau prochaine prière — AlAdhan géolocalisé, repli silencieux si refus
-function NextPrayerBanner() {
+function NextPrayerBanner({ city }: { city: City | null }) {
   const { t } = useLanguage()
   const [info, setInfo] = useState<{ name: string; time: string; city: string } | null>(null)
 
   useEffect(() => {
     let cancelled = false
-    async function load(lat: number, lng: number, city: string) {
+    async function load(lat: number, lng: number, cityName: string) {
       try {
         const d = new Date()
         const url = `https://api.aladhan.com/v1/timings/${Math.floor(d.getTime() / 1000)}?latitude=${lat}&longitude=${lng}&method=3`
         const res = await fetch(url)
         const json = await res.json()
-        const t = json?.data?.timings
-        if (!t || cancelled) return
+        const tm = json?.data?.timings
+        if (!tm || cancelled) return
         const now = d.getHours() * 60 + d.getMinutes()
         let next = PRAYERS[0]
-        let nextTime = t['Fajr']
+        let nextTime = tm['Fajr']
         for (const p of PRAYERS) {
-          const [h, m] = (t[p.key] || '').split(':').map(Number)
-          if (h * 60 + m > now) {
-            next = p
-            nextTime = t[p.key]
-            break
-          }
+          const [h, m] = (tm[p.key] || '').split(':').map(Number)
+          if (h * 60 + m > now) { next = p; nextTime = tm[p.key]; break }
         }
-        setInfo({ name: next.label, time: (nextTime || '').slice(0, 5), city })
-      } catch {
-        /* repli silencieux */
-      }
+        setInfo({ name: next.label, time: (nextTime || '').slice(0, 5), city: cityName })
+      } catch { /* repli silencieux */ }
     }
-    if (typeof navigator !== 'undefined' && navigator.geolocation) {
+    // Priorité à la ville mémorisée, sinon géoloc, sinon Istanbul
+    if (city?.lat != null && city?.lng != null) {
+      load(city.lat, city.lng, city.nom)
+    } else if (typeof navigator !== 'undefined' && navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
         (pos) => load(pos.coords.latitude, pos.coords.longitude, 'Ma position'),
         () => load(41.0082, 28.9784, 'Istanbul'),
@@ -66,10 +64,8 @@ function NextPrayerBanner() {
     } else {
       load(41.0082, 28.9784, 'Istanbul')
     }
-    return () => {
-      cancelled = true
-    }
-  }, [])
+    return () => { cancelled = true }
+  }, [city])
 
   return (
     <Link
@@ -100,15 +96,16 @@ function NextPrayerBanner() {
   )
 }
 
-const TILES = [
-  { href: '/destinations', icon: '🌍', titleKey: 'nav.destinations', subKey: 'tile.destSub', bg: '#EAF3DE', count: true },
-  { href: '/horaires-priere', icon: '🕐', titleKey: 'nav.prayer', subKey: 'tile.praySub', bg: '#FAEEDA' },
-  { href: '/qibla', icon: '🧭', titleKey: 'nav.qibla', subKey: 'tile.qiblaSub', bg: '#E6F1FB' },
-  { href: '/mosquee-proche', icon: '🕌', titleKey: 'nav.mosque', subKey: 'tile.mosqueSub', bg: '#EEEDFE' },
-]
-
 export default function MobileHome({ totalVilles, destinations }: { totalVilles: number; destinations: Destination[] }) {
   const { t } = useLanguage()
+  const { city } = useLocation()
+  const cityHref = city ? `/destinations/${city.slug}` : '/destinations'
+  const dashTiles = [
+    { href: cityHref, icon: '🍽', title: 'Restos', sub: city ? `Halal à ${city.nom}` : 'Choisir une ville', bg: '#EAF3DE' },
+    { href: '/mosquee-proche', icon: '🕌', title: t('nav.mosque'), sub: t('tile.mosqueSub'), bg: '#EEEDFE' },
+    { href: '/qibla', icon: '🧭', title: t('nav.qibla'), sub: t('tile.qiblaSub'), bg: '#E6F1FB' },
+    { href: cityHref, icon: '🏨', title: 'Hôtels', sub: city ? `Halal-friendly` : 'Choisir une ville', bg: '#FAEEDA' },
+  ]
   return (
     <div className="mobile-home lg:hidden" style={{ background: '#fdfaf3' }}>
       {/* Hero nuit */}
@@ -136,17 +133,17 @@ export default function MobileHome({ totalVilles, destinations }: { totalVilles:
 
       {/* Bandeau prière + tuiles */}
       <section style={{ padding: '16px 14px 4px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-        <NextPrayerBanner />
+        <NextPrayerBanner city={city} />
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-          {TILES.map((tile) => (
+          {dashTiles.map((tile) => (
             <Link
-              key={tile.href}
+              key={tile.title}
               href={tile.href}
-              style={{ background: tile.bg, borderRadius: '18px', padding: '16px', textDecoration: 'none', display: 'block' }}
+              style={{ background: tile.bg, borderRadius: '18px', padding: '16px', textDecoration: 'none', display: 'block', minHeight: '92px' }}
             >
-              <div style={{ fontSize: '26px', marginBottom: '8px' }}>{tile.icon}</div>
-              <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, fontSize: '17px', color: '#1b4332' }}>{t(tile.titleKey)}</div>
-              <div style={{ fontSize: '12px', color: '#6b7280', marginTop: '2px' }}>{tile.count ? `${totalVilles} ${t('tile.destSub')}` : t(tile.subKey)}</div>
+              <div style={{ fontSize: '30px', marginBottom: '8px' }}>{tile.icon}</div>
+              <div style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 700, fontSize: '18px', color: '#1b4332' }}>{tile.title}</div>
+              <div style={{ fontSize: '12px', color: '#6b7280', marginTop: '2px' }}>{tile.sub}</div>
             </Link>
           ))}
         </div>
