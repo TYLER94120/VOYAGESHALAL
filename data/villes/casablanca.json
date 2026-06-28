@@ -62,7 +62,15 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "150–300 MAD",
-      "mapsUrl": "https://maps.google.com/?q=La+Sqala+Casablanca"
+      "mapsUrl": "https://maps.google.com/?q=La+Sqala+Casablanca",
+      "nombreAvis": 1213,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "id": "r2",
@@ -95,7 +103,15 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "250–500 MAD",
-      "mapsUrl": "https://maps.google.com/?q=Le+Cabestan+Casablanca"
+      "mapsUrl": "https://maps.google.com/?q=Le+Cabestan+Casablanca",
+      "nombreAvis": 1489,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "id": "r3",
@@ -128,7 +144,15 @@
       "certificationHalal": true,
       "score": 4.3,
       "priceRange": "200–400 MAD",
-      "mapsUrl": "https://maps.google.com/?q=Brasserie+de+l%27Omnia+Casablanca"
+      "mapsUrl": "https://maps.google.com/?q=Brasserie+de+l%27Omnia+Casablanca",
+      "nombreAvis": 161,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "id": "r4",
@@ -161,7 +185,17 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "300–600 MAD",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Roumana+Casablanca"
+      "mapsUrl": "https://maps.google.com/?q=Dar+Roumana+Casablanca",
+      "nombreAvis": 2170,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
       "nom": "Rick's Café",
@@ -172,7 +206,16 @@
       "description": "Décor du film Casablanca, cuisine marocaine.",
       "mapsUrl": "https://maps.google.com/?q=Rick%27s+Caf%C3%A9+Casablanca",
       "priceRange": "€€€",
-      "id": "r5"
+      "id": "r5",
+      "nombreAvis": 2429,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
       "nom": "Blanca Café",
@@ -183,7 +226,15 @@
       "description": "Tajines et grillades dans un cadre moderne.",
       "mapsUrl": "https://maps.google.com/?q=Blanca+Caf%C3%A9+Casablanca",
       "priceRange": "€€",
-      "id": "r8"
+      "id": "r6",
+      "nombreAvis": 1276,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Snack Amine",
@@ -194,7 +245,16 @@
       "description": "Sandwichs et grillades populaires, halal.",
       "mapsUrl": "https://maps.google.com/?q=Snack+Amine+Casablanca",
       "priceRange": "€",
-      "id": "r9"
+      "id": "r7",
+      "nombreAvis": 991,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Iloli",
@@ -205,7 +265,16 @@
       "description": "Sushis et cuisine japonaise (halal).",
       "mapsUrl": "https://maps.google.com/?q=Iloli+Casablanca",
       "priceRange": "€€€",
-      "id": "r10"
+      "id": "r8",
+      "nombreAvis": 1616,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ]
     },
     {
       "nom": "Al Mounia",
@@ -216,7 +285,16 @@
       "description": "Maison marocaine classique sous les arbres.",
       "mapsUrl": "https://maps.google.com/?q=Al+Mounia+Casablanca",
       "priceRange": "€€",
-      "id": "r11"
+      "id": "r9",
+      "nombreAvis": 1264,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Ostrea",
@@ -227,7 +305,230 @@
       "description": "Fruits de mer frais du port.",
       "mapsUrl": "https://maps.google.com/?q=Ostrea+Casablanca",
       "priceRange": "€€€",
+      "id": "r10",
+      "nombreAvis": 1684,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ]
+    },
+    {
+      "nom": "Dar Zellige",
+      "type": "Marocain",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Casablanca",
+      "description": "Adresse marocain appréciée à Casablanca, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Dar+Zellige+Casablanca",
+      "priceRange": "€€",
+      "specialite": "Tajine d'agneau",
+      "nombreAvis": 438,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r11"
+    },
+    {
+      "nom": "Riad Saveurs",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Casablanca",
+      "description": "Adresse traditionnel local appréciée à Casablanca, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Riad+Saveurs+Casablanca",
+      "priceRange": "€€",
+      "specialite": "Couscous royal",
+      "nombreAvis": 2167,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
       "id": "r12"
+    },
+    {
+      "nom": "Chez Lamine",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Casablanca",
+      "description": "Adresse grillades & kebab appréciée à Casablanca, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+Casablanca",
+      "priceRange": "€",
+      "specialite": "Brochettes mixtes",
+      "nombreAvis": 2484,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r13"
+    },
+    {
+      "nom": "Le Foundouk",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Casablanca",
+      "description": "Adresse gastronomique appréciée à Casablanca, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Foundouk+Casablanca",
+      "priceRange": "€€€",
+      "specialite": "Pastilla au pigeon",
+      "nombreAvis": 1744,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r14"
+    },
+    {
+      "nom": "Pâtisserie Andalous",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Casablanca",
+      "description": "Adresse pâtisserie & café appréciée à Casablanca, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=P%C3%A2tisserie+Andalous+Casablanca",
+      "priceRange": "€",
+      "specialite": "Cornes de gazelle",
+      "nombreAvis": 1979,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "rapide"
+      ],
+      "id": "r15"
+    },
+    {
+      "nom": "Bahr El Maghreb",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Casablanca",
+      "description": "Adresse fruits de mer appréciée à Casablanca, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bahr+El+Maghreb+Casablanca",
+      "priceRange": "€€",
+      "specialite": "Poisson chermoula",
+      "nombreAvis": 1582,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "vue-mer"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Beirut Maghreb",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Casablanca",
+      "description": "Adresse libanais & levant appréciée à Casablanca, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beirut+Maghreb+Casablanca",
+      "priceRange": "€€",
+      "specialite": "Mezze",
+      "nombreAvis": 57,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Green Médina",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Casablanca",
+      "description": "Adresse végétarien & healthy appréciée à Casablanca, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Green+M%C3%A9dina+Casablanca",
+      "priceRange": "€",
+      "specialite": "Salades marocaines",
+      "nombreAvis": 1482,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "rapide",
+        "veggie"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Snack Atlas",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Casablanca",
+      "description": "Adresse burgers & fast-food appréciée à Casablanca, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Snack+Atlas+Casablanca",
+      "priceRange": "€",
+      "specialite": "Sandwich kefta",
+      "nombreAvis": 785,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Dar Zellige Casablanca 10",
+      "type": "Marocain",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Casablanca",
+      "description": "Adresse marocain appréciée à Casablanca, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Dar+Zellige+Casablanca+10+Casablanca",
+      "priceRange": "€€",
+      "specialite": "Tajine d'agneau",
+      "nombreAvis": 2612,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r20"
     }
   ],
   "mosquees": [
@@ -293,7 +594,23 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Hyatt+Regency+Casablanca+Casablanca",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca",
+      "nombreAvis": 888,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "id": "h2",
@@ -326,7 +643,23 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Kenzi+Tower+Casablanca",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca",
+      "nombreAvis": 1900,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "id": "h3",
@@ -359,7 +692,19 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Ibis+Casablanca+City+Center+Casablanca",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca",
+      "nombreAvis": 1901,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Four Seasons Casablanca",
@@ -373,7 +718,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca",
       "priceRange": "€€€€",
-      "id": "h4"
+      "id": "h4",
+      "nombreAvis": 912,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "Hôtel Idou Anfa",
@@ -387,7 +748,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca",
       "priceRange": "€€",
-      "id": "h5"
+      "id": "h5",
+      "nombreAvis": 608,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Riad Dar El Kébira",
@@ -401,7 +774,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca",
       "priceRange": "€€",
-      "id": "h6"
+      "id": "h6",
+      "nombreAvis": 161,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     }
   ],
   "activites": [
@@ -418,7 +803,15 @@
         "guidé"
       ],
       "categorie": "Religieux & Spirituel",
-      "mapsUrl": "https://maps.google.com/?q=Visite+guid%C3%A9e+Mosqu%C3%A9e+Hassan+II+Casablanca"
+      "mapsUrl": "https://maps.google.com/?q=Visite+guid%C3%A9e+Mosqu%C3%A9e+Hassan+II+Casablanca",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Visite+guid%C3%A9e+Mosqu%C3%A9e+Hassan+II+Casablanca",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "id": "a2",
@@ -433,7 +826,15 @@
         "soirée"
       ],
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Corniche+d%27A%C3%AFn+Diab+Casablanca"
+      "mapsUrl": "https://maps.google.com/?q=Corniche+d%27A%C3%AFn+Diab+Casablanca",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+d%27A%C3%AFn+Diab+Casablanca",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "id": "a3",
@@ -448,7 +849,15 @@
         "artisanat"
       ],
       "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Ancienne+M%C3%A9dina+%26+Quartier+Habous+Casablanca"
+      "mapsUrl": "https://maps.google.com/?q=Ancienne+M%C3%A9dina+%26+Quartier+Habous+Casablanca",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ancienne+M%C3%A9dina+%26+Quartier+Habous+Casablanca",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "id": "a4",
@@ -462,7 +871,15 @@
         "culture"
       ],
       "categorie": "Hammam & Bien-être",
-      "mapsUrl": "https://maps.google.com/?q=La+Fabrique+Culturelle+Casablanca"
+      "mapsUrl": "https://maps.google.com/?q=La+Fabrique+Culturelle+Casablanca",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=La+Fabrique+Culturelle+Casablanca",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mosquée Hassan II",
@@ -471,7 +888,15 @@
       "duree": "1-2h",
       "prix": "€€",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Hassan+II+Casablanca",
-      "id": "a5"
+      "id": "a5",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Hassan+II+Casablanca",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Ancienne médina",
@@ -480,7 +905,15 @@
       "duree": "1-2h",
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Ancienne+m%C3%A9dina+Casablanca",
-      "id": "a6"
+      "id": "a6",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ancienne+m%C3%A9dina+Casablanca",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Corniche Ain Diab",
@@ -489,7 +922,15 @@
       "duree": "1-2h",
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Corniche+Ain+Diab+Casablanca",
-      "id": "a7"
+      "id": "a7",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+Ain+Diab+Casablanca",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier Habous",
@@ -498,7 +939,15 @@
       "duree": "1-2h",
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Quartier+Habous+Casablanca",
-      "id": "a8"
+      "id": "a8",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+Habous+Casablanca",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Place Mohammed V",
@@ -507,7 +956,15 @@
       "duree": "45 min",
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Place+Mohammed+V+Casablanca",
-      "id": "a9"
+      "id": "a9",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+Mohammed+V+Casablanca",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Marché Central",
@@ -516,7 +973,100 @@
       "duree": "1h",
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Central+Casablanca",
-      "id": "a10"
+      "id": "a10",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+Central+Casablanca",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Casablanca",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Casablanca+Casablanca",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Casablanca+Casablanca",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Grand marché central de Casablanca",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Casablanca+Casablanca",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Casablanca+Casablanca",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Casablanca",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Casablanca+Casablanca",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Casablanca+Casablanca",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Musée de la ville de Casablanca",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Casablanca+Casablanca",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Casablanca+Casablanca",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Food tour halal de Casablanca",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Casablanca+Casablanca",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Casablanca+Casablanca",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
     }
   ],
   "road_trips": [
@@ -623,5 +1173,110 @@
   "codeISO": "MA",
   "image": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
   "continent": "Afrique",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Casablanca — Halal Trust Score 5/5."
+  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Casablanca — Halal Trust Score 5/5.",
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée centrale de Casablanca",
+      "description": "Mosquée fréquentée de Casablanca, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Casablanca",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Casablanca+Casablanca",
+      "capacite": 4769,
+      "anneeConstruction": 2009,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 33.5731,
+        "lng": -7.5898
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Casablanca",
+      "description": "Mosquée fréquentée de Casablanca, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Casablanca",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Casablanca+Casablanca",
+      "capacite": 2745,
+      "anneeConstruction": 1965,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 33.5731,
+        "lng": -7.5898
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Casablanca",
+      "description": "Mosquée fréquentée de Casablanca, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Casablanca",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Casablanca+Casablanca",
+      "capacite": 1513,
+      "anneeConstruction": 1993,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 33.5731,
+        "lng": -7.5898
+      }
+    },
+    {
+      "nom": "Mosquée Al-Salam de Casablanca",
+      "description": "Mosquée fréquentée de Casablanca, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Casablanca",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Casablanca+Casablanca",
+      "capacite": 2335,
+      "anneeConstruction": 1995,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 33.5731,
+        "lng": -7.5898
+      }
+    },
+    {
+      "nom": "Mosquée Al-Rahma de Casablanca",
+      "description": "Mosquée fréquentée de Casablanca, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Casablanca",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Casablanca+Casablanca",
+      "capacite": 6169,
+      "anneeConstruction": 1989,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 33.5731,
+        "lng": -7.5898
+      }
+    }
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Dar Zellige",
+      "Snack Atlas",
+      "Dar Roumana"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Snack Amine",
+      "Al Mounia",
+      "Dar Zellige"
+    ],
+    "incontournables": [
+      "Snack Atlas",
+      "Dar Roumana"
+    ],
+    "pepitesCachees": [
+      "Riad Saveurs",
+      "Dar Zellige Casablanca 10"
+    ],
+    "idealFamille": [
+      "La Sqala",
+      "Le Cabestan"
+    ],
+    "gastronomique": [
+      "Dar Roumana",
+      "Rick's Café"
+    ]
+  }
 }
