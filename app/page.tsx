@@ -85,12 +85,12 @@ export default function HomePage() {
       >
         {/* Image d'architecture islamique (sans personne) + voile sombre */}
         <Image
-          src="https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1920&q=80"
-          alt="Architecture islamique"
+          src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1920&q=80"
+          alt="Dôme vert de la Mosquée du Prophète à Médine"
           fill
           priority
           sizes="100vw"
-          style={{ objectFit: 'cover', opacity: 0.34 }}
+          style={{ objectFit: 'cover', opacity: 0.42 }}
         />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(180deg, rgba(11,26,15,0.7) 0%, rgba(11,26,15,0.85) 100%)' }} />
         <IslamicPattern opacity={0.06} />
