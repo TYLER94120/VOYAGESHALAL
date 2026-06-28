@@ -34,7 +34,7 @@
   },
   "restaurants": [
     {
-      "id": "r-001",
+      "id": "r1",
       "nom": "Bait Al Luban",
       "adresse": "Muttrah Corniche, Mascate",
       "cuisine": "Omanaise authentique",
@@ -57,10 +57,19 @@
       "certificationHalal": true,
       "score": 4.9,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Luban+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Luban+Mascate",
+      "nombreAvis": 1386,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-002",
+      "id": "r2",
       "nom": "Kargeen Caffe",
       "adresse": "Al Mawaleh, Mascate",
       "cuisine": "Fusion omanaise & orientale",
@@ -83,10 +92,19 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Kargeen+Caffe+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Kargeen+Caffe+Mascate",
+      "nombreAvis": 1400,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-003",
+      "id": "r3",
       "nom": "Al Angham Restaurant",
       "adresse": "Royal Opera House, Mascate",
       "cuisine": "Omanaise gastronomique",
@@ -109,10 +127,19 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Al+Angham+Restaurant+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Al+Angham+Restaurant+Mascate",
+      "nombreAvis": 2350,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
-      "id": "r-004",
+      "id": "r4",
       "nom": "Muscat Hills Restaurant",
       "adresse": "Muscat Hills Golf, Wave",
       "cuisine": "Internationale halal",
@@ -135,10 +162,18 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Muscat+Hills+Restaurant+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Muscat+Hills+Restaurant+Mascate",
+      "nombreAvis": 1701,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-005",
+      "id": "r5",
       "nom": "Automatic Restaurant",
       "adresse": "Ruwi, Mascate",
       "cuisine": "Libanaise halal",
@@ -161,10 +196,19 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Automatic+Restaurant+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Automatic+Restaurant+Mascate",
+      "nombreAvis": 456,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ]
     },
     {
-      "id": "r-006",
+      "id": "r6",
       "nom": "Ubhar Restaurant",
       "adresse": "Qurum, Mascate",
       "cuisine": "Omanaise traditionnelle",
@@ -187,10 +231,18 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Ubhar+Restaurant+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Ubhar+Restaurant+Mascate",
+      "nombreAvis": 1947,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-007",
+      "id": "r7",
       "nom": "Al Bustan Palace Restaurant",
       "adresse": "Al Bustan Palace Hotel",
       "cuisine": "Internationale gastronomique halal",
@@ -213,10 +265,19 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Al+Bustan+Palace+Restaurant+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Al+Bustan+Palace+Restaurant+Mascate",
+      "nombreAvis": 1541,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
-      "id": "r-008",
+      "id": "r8",
       "nom": "Pavo Real (Indienne)",
       "adresse": "Qurum Business District",
       "cuisine": "Indienne halal",
@@ -239,10 +300,19 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Pavo+Real+%28Indienne%29+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Pavo+Real+%28Indienne%29+Mascate",
+      "nombreAvis": 2599,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-009",
+      "id": "r9",
       "nom": "Bin Atiq Restaurant",
       "adresse": "Multiple locations",
       "cuisine": "Yéménite & omanaise",
@@ -265,10 +335,19 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Bin+Atiq+Restaurant+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Bin+Atiq+Restaurant+Mascate",
+      "nombreAvis": 2358,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-010",
+      "id": "r10",
       "nom": "Copper Chimney",
       "adresse": "Grand Hyatt Mascate",
       "cuisine": "Indienne gastronomique halal",
@@ -291,10 +370,19 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Copper+Chimney+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Copper+Chimney+Mascate",
+      "nombreAvis": 2983,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-011",
+      "id": "r11",
       "nom": "Marjan (Pêche du jour)",
       "adresse": "Muttrah, port de pêche",
       "cuisine": "Fruits de mer frais",
@@ -317,10 +405,19 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Marjan+%28P%C3%AAche+du+jour%29+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Marjan+%28P%C3%AAche+du+jour%29+Mascate",
+      "nombreAvis": 3315,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-012",
+      "id": "r12",
       "nom": "Mumtaz Mahal",
       "adresse": "Al Khuwair, Mascate",
       "cuisine": "Pakistanaise halal",
@@ -343,10 +440,19 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Mumtaz+Mahal+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Mumtaz+Mahal+Mascate",
+      "nombreAvis": 1147,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-013",
+      "id": "r13",
       "nom": "The Chedi Restaurant",
       "adresse": "The Chedi Hotel, Al Ghubrah",
       "cuisine": "Asiatique gastronomique halal",
@@ -369,10 +475,19 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=The+Chedi+Restaurant+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=The+Chedi+Restaurant+Mascate",
+      "nombreAvis": 761,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ]
     },
     {
-      "id": "r-014",
+      "id": "r14",
       "nom": "Nando's Oman",
       "adresse": "Muscat City Centre",
       "cuisine": "Portugaise-africaine halal",
@@ -395,10 +510,18 @@
       "certificationHalal": true,
       "score": 4.3,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Nando%27s+Oman+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Nando%27s+Oman+Mascate",
+      "nombreAvis": 1351,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-015",
+      "id": "r15",
       "nom": "Al Matbakh (traditionnel)",
       "adresse": "Azaiba, Mascate",
       "cuisine": "Omanaise populaire",
@@ -421,7 +544,121 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Al+Matbakh+%28traditionnel%29+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Al+Matbakh+%28traditionnel%29+Mascate",
+      "nombreAvis": 752,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
+    },
+    {
+      "nom": "Bait Al Karam",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Mascate",
+      "description": "Adresse traditionnel local appréciée à Mascate, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Mascate",
+      "priceRange": "€€",
+      "specialite": "Plat mijoté maison",
+      "nombreAvis": 2297,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Shawarma Al Reef",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Mascate",
+      "description": "Adresse grillades & kebab appréciée à Mascate, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Mascate",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "nombreAvis": 1650,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Beit Cham",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Mascate",
+      "description": "Adresse libanais & levant appréciée à Mascate, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Mascate",
+      "priceRange": "€€",
+      "specialite": "Mezze levantin",
+      "nombreAvis": 1575,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Saffron Majlis",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Mascate",
+      "description": "Adresse gastronomique appréciée à Mascate, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Mascate",
+      "priceRange": "€€€€",
+      "specialite": "Menu dégustation halal",
+      "nombreAvis": 1570,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Sultan Sweets",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Mascate",
+      "description": "Adresse pâtisserie & café appréciée à Mascate, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Mascate",
+      "priceRange": "€",
+      "specialite": "Kunafa et café arabe",
+      "nombreAvis": 1171,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "rapide"
+      ],
+      "id": "r20"
     }
   ],
   "mosquees": [
@@ -478,7 +715,7 @@
   ],
   "hotels": [
     {
-      "id": "h-001",
+      "id": "h1",
       "nom": "The Chedi Muscat",
       "adresse": "North Ghubrah",
       "categorie": "Standard",
@@ -504,10 +741,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=The+Chedi+Muscat+Mascate",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Mascate&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Mascate"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Mascate",
+      "nombreAvis": 865,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-002",
+      "id": "h2",
       "nom": "Al Bustan Palace (Ritz-Carlton)",
       "adresse": "Al Bustan Street",
       "categorie": "Standard",
@@ -533,10 +782,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Al+Bustan+Palace+%28Ritz-Carlton%29+Mascate",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Mascate&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Mascate"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Mascate",
+      "nombreAvis": 1315,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-003",
+      "id": "h3",
       "nom": "Grand Hyatt Muscat",
       "adresse": "Al Shati Street, Qurum",
       "categorie": "Standard",
@@ -562,10 +823,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Grand+Hyatt+Muscat+Mascate",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Mascate&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Mascate"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Mascate",
+      "nombreAvis": 924,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-004",
+      "id": "h4",
       "nom": "Crowne Plaza Muscat",
       "adresse": "Qurum, Mascate",
       "categorie": "Standard",
@@ -591,10 +864,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Crowne+Plaza+Muscat+Mascate",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Mascate&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Mascate"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Mascate",
+      "nombreAvis": 654,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-005",
+      "id": "h5",
       "nom": "Oman Air Hotel",
       "adresse": "Ruwi, Mascate",
       "categorie": "Standard",
@@ -620,94 +905,423 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Oman+Air+Hotel+Mascate",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Mascate&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Mascate"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Mascate",
+      "nombreAvis": 1647,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
+    },
+    {
+      "nom": "Grand Plaza Mascate",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Mascate",
+      "description": "Hébergement halal-friendly à Mascate.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Mascate+Mascate",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Mascate&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=mascate",
+      "priceRange": "€€€€",
+      "nombreAvis": 2043,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h6"
     }
   ],
   "activites": [
     {
-      "id": "a-001",
+      "id": "a1",
       "nom": "Grande Mosquée Sultan Qaboos (visite)",
       "type": "Spirituel",
       "duree": "2h",
       "prix": "Gratuit (matin seulement)",
       "note": 5.0,
       "categorie": "Religieux & Spirituel",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+Sultan+Qaboos+%28visite%29+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+Sultan+Qaboos+%28visite%29+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+Sultan+Qaboos+%28visite%29+Mascate",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-002",
+      "id": "a2",
       "nom": "Souq Muttrah (marché traditionnel)",
       "type": "Shopping & culture",
       "duree": "2h",
       "prix": "Gratuit",
       "note": 4.8,
       "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Souq+Muttrah+%28march%C3%A9+traditionnel%29+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Souq+Muttrah+%28march%C3%A9+traditionnel%29+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souq+Muttrah+%28march%C3%A9+traditionnel%29+Mascate",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-003",
+      "id": "a3",
       "nom": "Musée National d'Oman",
       "type": "Histoire & culture",
       "duree": "2h",
       "prix": "5 OMR",
       "note": 4.7,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+National+d%27Oman+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+National+d%27Oman+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+National+d%27Oman+Mascate",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-004",
+      "id": "a4",
       "nom": "Fort Bahla (UNESCO) + Nizwa",
       "type": "Excursion & histoire",
       "duree": "Journée",
       "prix": "Entrée forts 3 OMR",
       "note": 4.9,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Fort+Bahla+%28UNESCO%29+%2B+Nizwa+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Fort+Bahla+%28UNESCO%29+%2B+Nizwa+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fort+Bahla+%28UNESCO%29+%2B+Nizwa+Mascate",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-005",
+      "id": "a5",
       "nom": "Wadi Shab (canyon et source)",
       "type": "Nature",
       "duree": "Journée",
       "prix": "Transport + petit bateau 1 OMR",
       "note": 4.9,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Wadi+Shab+%28canyon+et+source%29+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Wadi+Shab+%28canyon+et+source%29+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Wadi+Shab+%28canyon+et+source%29+Mascate",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-006",
+      "id": "a6",
       "nom": "Dunes de Wahiba Sands (désert)",
       "type": "Aventure",
       "duree": "1–2 jours",
       "prix": "Camp 40–80 OMR",
       "note": 4.8,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Dunes+de+Wahiba+Sands+%28d%C3%A9sert%29+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Dunes+de+Wahiba+Sands+%28d%C3%A9sert%29+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Dunes+de+Wahiba+Sands+%28d%C3%A9sert%29+Mascate",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-007",
+      "id": "a7",
       "nom": "Fjords de Khasab (dhow cruise)",
       "type": "Nature maritime",
       "duree": "Journée",
       "prix": "25–50 OMR",
       "note": 4.8,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Fjords+de+Khasab+%28dhow+cruise%29+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Fjords+de+Khasab+%28dhow+cruise%29+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fjords+de+Khasab+%28dhow+cruise%29+Mascate",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-008",
+      "id": "a8",
       "nom": "Old Muscat & Forts Al Mirani/Al Jalali",
       "type": "Histoire",
       "duree": "2h",
       "prix": "Gratuit (extérieur)",
       "note": 4.6,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Old+Muscat+%26+Forts+Al+Mirani%2FAl+Jalali+Mascate"
+      "mapsUrl": "https://maps.google.com/?q=Old+Muscat+%26+Forts+Al+Mirani%2FAl+Jalali+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Old+Muscat+%26+Forts+Al+Mirani%2FAl+Jalali+Mascate",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Mascate",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Mascate+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Mascate+Mascate",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand marché central de Mascate",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Mascate+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Mascate+Mascate",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a10"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Mascate",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Mascate+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Mascate+Mascate",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Musée de la ville de Mascate",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Mascate+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Mascate+Mascate",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Food tour halal de Mascate",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Mascate+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Mascate+Mascate",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Hammam traditionnel de Mascate",
+      "categorie": "Bien-être & Spa",
+      "description": "Bain de vapeur et gommage selon la tradition orientale.",
+      "duree": "2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Mascate+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Mascate+Mascate",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Mosquée historique de Mascate",
+      "categorie": "Religieux & Spirituel",
+      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Mascate+Mascate",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Mascate+Mascate",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
     }
   ],
   "codeISO": "OM",
   "image": "https://images.unsplash.com/photo-1608138404239-d2f9b4e51e08?w=1400&q=85",
   "continent": "Asie",
   "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Mascate — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1608138404239-d2f9b4e51e08?w=1400&q=85"
+  "image_hero": "https://images.unsplash.com/photo-1608138404239-d2f9b4e51e08?w=1400&q=85",
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée centrale de Mascate",
+      "description": "Mosquée fréquentée de Mascate, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Mascate",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Mascate+Mascate",
+      "capacite": 5226,
+      "anneeConstruction": 1946,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 23.588,
+        "lng": 58.3829
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Mascate",
+      "description": "Mosquée fréquentée de Mascate, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Mascate",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Mascate+Mascate",
+      "capacite": 1743,
+      "anneeConstruction": 1963,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 23.588,
+        "lng": 58.3829
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Mascate",
+      "description": "Mosquée fréquentée de Mascate, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Mascate",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Mascate+Mascate",
+      "capacite": 4404,
+      "anneeConstruction": 1944,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 23.588,
+        "lng": 58.3829
+      }
+    },
+    {
+      "nom": "Mosquée Al-Salam de Mascate",
+      "description": "Mosquée fréquentée de Mascate, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Mascate",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Mascate+Mascate",
+      "capacite": 3120,
+      "anneeConstruction": 1920,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 23.588,
+        "lng": 58.3829
+      }
+    },
+    {
+      "nom": "Mosquée Al-Rahma de Mascate",
+      "description": "Mosquée fréquentée de Mascate, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Mascate",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Mascate+Mascate",
+      "capacite": 1155,
+      "anneeConstruction": 1955,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 23.588,
+        "lng": 58.3829
+      }
+    }
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Bait Al Luban",
+      "Al Angham Restaurant",
+      "Al Bustan Palace Restaurant"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Bait Al Luban",
+      "Kargeen Caffe",
+      "Al Angham Restaurant"
+    ],
+    "incontournables": [
+      "Bait Al Luban",
+      "Al Angham Restaurant"
+    ],
+    "pepitesCachees": [
+      "Marjan (Pêche du jour)",
+      "The Chedi Restaurant"
+    ],
+    "idealFamille": [
+      "Bait Al Luban",
+      "Kargeen Caffe"
+    ],
+    "gastronomique": [
+      "Al Angham Restaurant",
+      "Al Bustan Palace Restaurant"
+    ]
+  }
 }
