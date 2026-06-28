@@ -42,6 +42,8 @@ export default function DestinationsClient({ villes, continents }: Props) {
   const villesFiltrees =
     filtre === 'Toutes' ? villes : villes.filter((v) => v.continent === filtre)
 
+  const countOf = (c: string) => (c === 'Toutes' ? villes.length : villes.filter((v) => v.continent === c).length)
+
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-8 pb-24">
       {/* Breadcrumb */}
@@ -51,8 +53,8 @@ export default function DestinationsClient({ villes, continents }: Props) {
         <span className="text-gray-700">Destinations</span>
       </nav>
 
-      {/* Filtres scrollables */}
-      <div className="filtres-scroll">
+      {/* Filtres scrollables — mobile/tablette uniquement */}
+      <div className="filtres-scroll lg:hidden">
         {continents.map((c) => (
           <button
             key={c}
@@ -65,8 +67,37 @@ export default function DestinationsClient({ villes, continents }: Props) {
         ))}
       </div>
 
-      {/* Grille de cards-arches */}
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-8">
+      <div className="lg:grid lg:grid-cols-[236px_1fr] lg:gap-9 lg:items-start">
+        {/* Sidebar Régions — desktop uniquement */}
+        <aside className="hidden lg:block lg:sticky lg:top-24">
+          <div className="bg-white rounded-2xl p-5 border border-[#1b4332]/5 shadow-[0_6px_20px_rgba(11,26,15,0.04)]">
+            <p className="text-base font-bold mb-3" style={{ fontFamily: "var(--font-playfair), Georgia, serif", color: '#0b1a0f' }}>Régions</p>
+            <div className="flex flex-col gap-0.5">
+              {continents.map((c) => {
+                const active = filtre === c
+                return (
+                  <button
+                    key={c}
+                    onClick={() => setFiltre(c)}
+                    className="flex items-center justify-between px-3.5 py-2.5 rounded-[10px] text-sm transition-colors"
+                    style={{ background: active ? '#1b4332' : 'transparent', color: active ? '#fdfaf3' : '#1a1a1a', fontWeight: active ? 700 : 500 }}
+                  >
+                    <span>{FILTER_ICON[c] ?? ''}{c}</span>
+                    <span style={{ opacity: 0.7, fontSize: '12px', fontWeight: 600 }}>{countOf(c)}</span>
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+          <div className="relative overflow-hidden mt-5 rounded-2xl p-5" style={{ background: '#0b1a0f' }}>
+            <p className="font-bold mb-1.5" style={{ fontFamily: "var(--font-playfair), Georgia, serif", color: '#c9a84c', fontSize: '16px' }}>Halal Score™</p>
+            <p style={{ color: '#a9b6a8', fontSize: '12.5px', lineHeight: 1.6 }}>Chaque ville est évaluée : restaurants certifiés, mosquées, accueil des familles musulmanes et absence d&apos;alcool.</p>
+          </div>
+        </aside>
+
+        {/* Grille de cards-arches */}
+        <div>
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:mt-0 mt-8">
         {villesFiltrees.map((v) => (
           <div key={v.slug} className="flex flex-col">
             <Link href={`/destinations/${v.slug}`} className="arch-card group" style={{ aspectRatio: '3/4' }}>
@@ -149,6 +180,8 @@ export default function DestinationsClient({ villes, continents }: Props) {
           Aucune destination dans cette région pour le moment.
         </p>
       )}
+        </div>
+      </div>
     </div>
   )
 }
