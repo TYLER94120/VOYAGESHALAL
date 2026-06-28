@@ -1608,6 +1608,112 @@
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false
+    },
+    {
+      "nom": "Dar Zellige",
+      "type": "Marocain",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Alger",
+      "description": "Adresse marocain appréciée à Alger, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Dar+Zellige+Alger",
+      "priceRange": "€€",
+      "specialite": "Tajine d'agneau",
+      "nombreAvis": 2289,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r31"
+    },
+    {
+      "nom": "Riad Saveurs",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Alger",
+      "description": "Adresse traditionnel local appréciée à Alger, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Riad+Saveurs+Alger",
+      "priceRange": "€€",
+      "specialite": "Couscous royal",
+      "nombreAvis": 2038,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r32"
+    },
+    {
+      "nom": "Chez Lamine",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Alger",
+      "description": "Adresse grillades & kebab appréciée à Alger, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+Alger",
+      "priceRange": "€",
+      "specialite": "Brochettes mixtes",
+      "nombreAvis": 1189,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r33"
+    },
+    {
+      "nom": "Le Foundouk",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Alger",
+      "description": "Adresse gastronomique appréciée à Alger, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Foundouk+Alger",
+      "priceRange": "€€€",
+      "specialite": "Pastilla au pigeon",
+      "nombreAvis": 605,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r34"
+    },
+    {
+      "nom": "Pâtisserie Andalous",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Alger",
+      "description": "Adresse pâtisserie & café appréciée à Alger, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=P%C3%A2tisserie+Andalous+Alger",
+      "priceRange": "€",
+      "specialite": "Cornes de gazelle",
+      "nombreAvis": 2640,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r35"
     }
   ],
   "mosquees": [
@@ -2252,6 +2358,62 @@
         "spa",
         "wifi"
       ]
+    },
+    {
+      "nom": "Grand Plaza Alger",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Alger",
+      "description": "Hébergement halal-friendly à Alger.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Alger+Alger",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Alger&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=alger",
+      "priceRange": "€€€€",
+      "nombreAvis": 2374,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h9"
+    },
+    {
+      "nom": "City Comfort Alger",
+      "categorie": "Standard",
+      "score": 4.4,
+      "adresse": "Alger",
+      "description": "Hébergement halal-friendly à Alger.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Alger+Alger",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Alger&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=alger",
+      "priceRange": "€€€",
+      "nombreAvis": 1085,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ],
+      "id": "h10"
     }
   ],
   "activites": [
@@ -2654,6 +2816,91 @@
         "solo"
       ],
       "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Alger",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Alger+Alger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Alger+Alger",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a16"
+    },
+    {
+      "nom": "Grand marché central de Alger",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Alger+Alger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Alger+Alger",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a17"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Alger",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Alger+Alger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Alger+Alger",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a18"
+    },
+    {
+      "nom": "Musée de la ville de Alger",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Alger+Alger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Alger+Alger",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a19"
+    },
+    {
+      "nom": "Food tour halal de Alger",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Alger+Alger",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Alger+Alger",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a20"
     }
   ],
   "road_trips": [
@@ -3185,33 +3432,82 @@
         "lat": 36.7372,
         "lng": 3.0865
       }
+    },
+    {
+      "nom": "Mosquée Al-Fath de Alger",
+      "description": "Mosquée fréquentée de Alger, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Alger",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Alger+Alger",
+      "capacite": 5343,
+      "anneeConstruction": 1923,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 36.7372,
+        "lng": 3.0865
+      }
+    },
+    {
+      "nom": "Mosquée Al-Iman de Alger",
+      "description": "Mosquée fréquentée de Alger, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Alger",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Alger+Alger",
+      "capacite": 3369,
+      "anneeConstruction": 1889,
+      "styleArchitectural": "Marocain",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 36.7372,
+        "lng": 3.0865
+      }
     }
   ],
   "selectionsPremium": {
     "mieuxNotes": [
       "Le Bardo",
       "La Table de Faiza",
-      "Casbah Food Tour Stop"
+      "Casbah Food Tour Stop",
+      "Dar Zellige",
+      "La Casbah d'Or"
     ],
     "meilleurRapportQualitePrix": [
       "Le Bardo",
       "Chez Brahim",
-      "La Casbah d'Or"
+      "La Casbah d'Or",
+      "Chez Slimane",
+      "Le Malouf"
     ],
     "incontournables": [
-      "Le Bardo",
-      "La Table de Faiza"
+      "La Casbah d'Or",
+      "Dar Zitoun",
+      "Chez Mohand",
+      "Pâtisserie Andalous",
+      "Panorama Tipaza"
     ],
     "pepitesCachees": [
       "Chez Slimane"
     ],
     "idealFamille": [
       "Le Bardo",
-      "Chez Brahim"
+      "Chez Brahim",
+      "Le Tantonville",
+      "La Casbah d'Or",
+      "Restaurant Timgad"
     ],
     "gastronomique": [
+      "Le Foundouk"
+    ],
+    "ouvertNuit": [
+      "Chez Brahim",
+      "Le Malouf",
+      "Chez Mohand"
+    ],
+    "vueExceptionnelle": [
       "Le Bardo",
-      "La Table de Faiza"
+      "La Table de Faiza",
+      "Casbah Food Tour Stop"
     ]
   }
 }
