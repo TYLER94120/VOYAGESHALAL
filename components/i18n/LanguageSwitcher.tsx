@@ -2,6 +2,7 @@
 import { useState, useRef, useEffect } from 'react'
 import { LANGS } from '@/lib/i18n/translations'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
+import { applyGoogleTranslate } from '@/components/i18n/GoogleTranslate'
 
 export default function LanguageSwitcher() {
   const { lang, setLang } = useLanguage()
@@ -27,7 +28,7 @@ export default function LanguageSwitcher() {
           {LANGS.map((l) => {
             const active = l.code === lang
             return (
-              <button key={l.code} onClick={() => { setLang(l.code); setOpen(false) }}
+              <button key={l.code} onClick={() => { setLang(l.code); applyGoogleTranslate(l.code); setOpen(false); setTimeout(() => window.location.reload(), 60) }}
                 style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', padding: '9px 12px', border: 'none', borderRadius: '9px', background: active ? '#1b4332' : 'transparent', color: active ? '#fdfaf3' : '#1a1a1a', cursor: 'pointer', fontSize: '14px', fontWeight: active ? 700 : 500, textAlign: 'left' }}>
                 <span style={{ fontSize: '16px' }}>{l.flag}</span>
                 <span>{l.name}</span>

@@ -399,6 +399,12 @@
   .dest-sidebar { display: block; position: sticky; top: 96px; }
 }
 
+/* Masquer l'UI native de Google Translate (bannière, tooltips) — on garde notre sélecteur */
+.goog-te-banner-frame, .goog-te-gadget-icon, #goog-gt-tt, .goog-te-balloon-frame { display: none !important; }
+.goog-text-highlight { background: none !important; box-shadow: none !important; }
+body { top: 0 !important; }
+.skiptranslate.goog-te-gadget { font-size: 0 !important; }
+
 .app-frame { width: 100%; }
 @media (min-width: 768px) {
   .app-frame {
