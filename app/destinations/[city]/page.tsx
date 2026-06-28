@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import { readdirSync, readFileSync } from 'fs'
 import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
-import VilleMobile from '@/components/villes/VilleMobile'
 import VilleDesktop from '@/components/villes/VilleDesktop'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import cityCoords from '@/lib/cityCoords.json'
@@ -77,13 +76,8 @@ export default async function DestinationPage({ params }: Props) {
 
   return (
     <>
-      {/* < 1024px : expérience app mobile · ≥ 1024px : layout web 3 colonnes */}
-      <div className="lg:hidden">
-        <VilleMobile ville={ville} />
-      </div>
-      <div className="hidden lg:block">
-        <VilleDesktop ville={ville} />
-      </div>
+      {/* Design unifié responsive (mobile + desktop : 1 colonne épurée) */}
+      <VilleDesktop ville={ville} />
 
       {/* Maillage interne — autres destinations halal */}
       <nav aria-label="Autres destinations halal" style={{ background: 'var(--creme)', borderTop: '1px solid rgba(11,26,15,0.06)', padding: '28px 18px 80px' }}>

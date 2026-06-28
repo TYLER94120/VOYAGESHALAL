@@ -105,16 +105,16 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   return (
     <main style={{ background: 'var(--creme)', minHeight: '100vh', overflowX: 'hidden' }}>
       {/* HERO épuré, centré */}
-      <section style={{ position: 'relative', height: 300, overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+      <section style={{ position: 'relative', height: 'clamp(240px, 38vw, 300px)', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
         {image && <Image src={image} alt={`Guide voyage halal ${ville.nom}`} fill priority sizes="100vw" style={{ objectFit: 'cover', opacity: 0.5 }} />}
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(11,26,15,0.55) 0%, rgba(11,26,15,0.82) 100%)' }} />
         <IslamicPattern opacity={0.05} />
         <div style={{ position: 'relative', maxWidth: WRAP, padding: '0 24px' }}>
           <p style={{ color: 'var(--or)', fontSize: '12px', fontWeight: 700, letterSpacing: '2.5px', textTransform: 'uppercase', marginBottom: '12px' }}>{ville.pays}{ville.region ? ` · ${ville.region}` : ''}</p>
           <h1 style={{ fontFamily: "'Playfair Display', serif", color: '#fff', lineHeight: 1.02, margin: 0 }}>
-            <span style={{ fontSize: '18px', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}>Guide Halal </span>
-            <span style={{ fontSize: '56px', fontWeight: 900 }}>{ville.nom}</span>
-            <span style={{ fontSize: '22px', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}> 2026</span>
+            <span style={{ fontSize: 'clamp(14px, 4vw, 18px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}>Guide Halal </span>
+            <span style={{ fontSize: 'clamp(38px, 11vw, 56px)', fontWeight: 900 }}>{ville.nom}</span>
+            <span style={{ fontSize: 'clamp(16px, 5vw, 22px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}> 2026</span>
           </h1>
           {halalScore != null && (
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px', marginTop: '14px', padding: '7px 16px', borderRadius: '30px', background: 'rgba(201,168,76,0.18)', border: '1px solid rgba(201,168,76,0.5)', color: 'var(--or-clair)', fontSize: '13px', fontWeight: 700 }}>
@@ -179,7 +179,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 )
               })}
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '20px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
               {restosFiltres.map((r: any, i: number) => (
                 <div key={i} className="card-halal" style={{ ...card, display: 'flex', gap: '16px' }}>
                   <div style={{ width: 62, height: 62, borderRadius: '15px', background: 'var(--nuit)', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '28px', position: 'relative', overflow: 'hidden' }}>
@@ -206,7 +206,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         )}
 
         {activeTab === 'hotels' && (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '20px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
             {hotels.map((h: any, i: number) => (
               <div key={i} style={card}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '6px' }}>
@@ -241,7 +241,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         )}
 
         {activeTab === 'activites' && (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '16px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {activites.map((a: any, i: number) => (
               <div key={i} style={card}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -257,7 +257,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         )}
 
         {activeTab === 'pratique' && (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '16px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {pratiqueItems.map((item, i) => (
               <div key={i} style={{ ...card, display: 'flex', gap: '14px', alignItems: 'center' }}>
                 <span style={{ fontSize: '26px' }}>{item.icon}</span>
