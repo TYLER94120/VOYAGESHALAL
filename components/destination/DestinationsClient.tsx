@@ -14,7 +14,17 @@ export interface VilleCard {
   subtitle?: string
   image?: string
   continent?: string | null
+  tags?: string[]
 }
+
+// Types de voyage (filtre secondaire sur les tags des villes)
+const TRAVEL_TYPES = [
+  { id: 'famille', label: 'Famille', icon: '👨‍👩‍👧', tags: ['famille', 'familial'] },
+  { id: 'omra', label: 'Omra & Hajj', icon: '🕋', tags: ['spirituel', 'sacre', 'sacré', 'pelerinage', 'omra', 'hajj', '100-halal', 'charia'] },
+  { id: 'detente', label: 'Détente', icon: '🏖️', tags: ['plage', 'detente', 'resort', 'ile', 'balneaire', 'nature', 'iles'] },
+  { id: 'culture', label: 'Culture', icon: '🏛️', tags: ['culture', 'histoire', 'patrimoine', 'unesco', 'moghol', 'ottoman', 'al-andalus', 'medina'] },
+]
+const HOLY_SLUGS = ['la-mecque', 'medine']
 
 interface Props {
   villes: VilleCard[]
@@ -58,7 +68,17 @@ const SORTS = [
 export default function DestinationsClient({ villes }: Props) {
   const [query, setQuery] = useState('')
   const [filtre, setFiltre] = useState('Toutes')
+  const [typeVoyage, setTypeVoyage] = useState<string | null>(null)
   const [sort, setSort] = useState('default')
+
+  const matchType = (v: VilleCard): boolean => {
+    if (!typeVoyage) return true
+    const def = TRAVEL_TYPES.find((t) => t.id === typeVoyage)
+    if (!def) return true
+    if (typeVoyage === 'omra' && HOLY_SLUGS.includes(v.slug)) return true
+    const tags = (v.tags ?? []).map((x) => x.toLowerCase())
+    return def.tags.some((kw) => tags.includes(kw))
+  }
 
   const regions = useMemo(() => {
     const present = new Set(villes.map(regionOf))
@@ -72,7 +92,7 @@ export default function DestinationsClient({ villes }: Props) {
     const list = villes.filter((v) => {
       const matchQuery = !q || v.nom.toLowerCase().includes(q) || v.pays.toLowerCase().includes(q)
       const matchRegion = filtre === 'Toutes' || regionOf(v) === filtre
-      return matchQuery && matchRegion
+      return matchQuery && matchRegion && matchType(v)
     })
     const score = (v: VilleCard) => v.scoreHalal ?? 0
     const sorted = [...list]
@@ -89,7 +109,8 @@ export default function DestinationsClient({ villes }: Props) {
       })
     }
     return sorted
-  }, [villes, query, filtre, sort])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [villes, query, filtre, sort, typeVoyage])
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-8 pb-24">
@@ -157,6 +178,22 @@ export default function DestinationsClient({ villes }: Props) {
               })}
             </div>
           </div>
+          {/* Type de voyage */}
+          <div className="bg-white rounded-2xl p-5 border border-[#1b4332]/5 shadow-[0_6px_20px_rgba(11,26,15,0.04)] mt-5">
+            <p className="text-base font-bold mb-3" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#0b1a0f' }}>Type de voyage</p>
+            <div className="flex flex-col gap-0.5">
+              {TRAVEL_TYPES.map((tv) => {
+                const active = typeVoyage === tv.id
+                return (
+                  <button key={tv.id} onClick={() => setTypeVoyage(active ? null : tv.id)} className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-[10px] text-sm transition-colors text-left"
+                    style={{ background: active ? '#1b4332' : 'transparent', color: active ? '#fdfaf3' : '#1a1a1a', fontWeight: active ? 700 : 500 }}>
+                    <span>{tv.icon}</span>{tv.label}
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+
           <div className="relative overflow-hidden mt-5 rounded-2xl p-5" style={{ background: '#0b1a0f' }}>
             <p className="font-bold mb-1.5" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#c9a84c', fontSize: '16px' }}>Halal Score™</p>
             <p style={{ color: '#a9b6a8', fontSize: '12.5px', lineHeight: 1.6 }}>Chaque ville est évaluée : restaurants certifiés, mosquées, accueil des familles musulmanes et absence d&apos;alcool.</p>
@@ -215,7 +252,7 @@ export default function DestinationsClient({ villes }: Props) {
             <div style={{ textAlign: 'center', padding: '60px 20px', color: 'var(--texte-2)' }}>
               <div style={{ fontSize: '48px', marginBottom: '16px' }}>🔍</div>
               <p>Aucune ville trouvée{query && <> pour « <strong>{query}</strong> »</>}.</p>
-              <button onClick={() => { setQuery(''); setFiltre('Toutes') }} style={{ marginTop: '16px', padding: '10px 24px', background: 'var(--foret)', color: 'white', border: 'none', borderRadius: '10px', cursor: 'pointer', fontWeight: 600 }}>
+              <button onClick={() => { setQuery(''); setFiltre('Toutes'); setTypeVoyage(null) }} style={{ marginTop: '16px', padding: '10px 24px', background: 'var(--foret)', color: 'white', border: 'none', borderRadius: '10px', cursor: 'pointer', fontWeight: 600 }}>
                 Voir toutes les villes
               </button>
             </div>

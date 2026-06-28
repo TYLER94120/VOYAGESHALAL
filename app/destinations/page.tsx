@@ -47,6 +47,7 @@ function getAllVilles(): VilleCard[] {
           subtitle,
           image: v.image ?? v.image_hero ?? FALLBACK_IMG,
           continent: v.continent ?? null,
+          tags: Array.isArray(v.tags) ? v.tags : [],
         } as VilleCard
       } catch {
         return null
