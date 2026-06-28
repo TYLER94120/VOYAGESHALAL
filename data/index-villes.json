@@ -1,10 +1,1190 @@
 [
-  {"slug":"marrakech","nom":"Marrakech","pays":"Maroc","pays_slug":"maroc","region":"Afrique du Nord","score_halal":5,"mosquees":147,"restaurants_halal":320,"image":"https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=200&q=70","aliases":["marrakesh","la ville rose","morocco"]},
-  {"slug":"istanbul","nom":"Istanbul","pays":"Turquie","pays_slug":"turquie","region":"Europe / Asie","score_halal":5,"mosquees":3113,"restaurants_halal":15000,"image":"https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=200&q=70","aliases":["istanbul","turquie","turkey","bosphore"]},
-  {"slug":"dubai","nom":"Dubaï","pays":"Émirats arabes unis","pays_slug":"emirats","region":"Moyen-Orient","score_halal":5,"mosquees":950,"restaurants_halal":12000,"image":"https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=200&q=70","aliases":["dubai","dubaï","UAE","emirats"]},
-  {"slug":"paris","nom":"Paris","pays":"France","pays_slug":"france","region":"Europe de l'Ouest","score_halal":4,"mosquees":87,"restaurants_halal":3800,"image":"https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=200&q=70","aliases":["paris","france","ville lumière"]},
-  {"slug":"londres","nom":"Londres","pays":"Royaume-Uni","pays_slug":"royaume-uni","region":"Europe de l'Ouest","score_halal":4,"mosquees":423,"restaurants_halal":1500,"image":"https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=200&q=70","aliases":["london","uk","angleterre","grande-bretagne"]},
-  {"slug":"casablanca","nom":"Casablanca","pays":"Maroc","pays_slug":"maroc","region":"Afrique du Nord","score_halal":5,"mosquees":1000,"restaurants_halal":2500,"image":"https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=200&q=70","aliases":["casablanca","casa","maroc","morocco"]},
-  {"slug":"kuala-lumpur","nom":"Kuala Lumpur","pays":"Malaisie","pays_slug":"malaisie","region":"Asie du Sud-Est","score_halal":5,"mosquees":850,"restaurants_halal":8000,"image":"https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=200&q=70","aliases":["kl","kuala lumpur","malaysia","malaisie","petronas"]},
-  {"slug":"le-caire","nom":"Le Caire","pays":"Égypte","pays_slug":"egypte","region":"Afrique du Nord","score_halal":5,"mosquees":4000,"restaurants_halal":15000,"image":"https://images.unsplash.com/photo-1553913861-c0fddf2619ee?w=200&q=70","aliases":["cairo","caire","egypte","egypt","pyramides"]}
+  {
+    "slug": "abu-dhabi",
+    "nom": "Abu Dhabi",
+    "pays": "Émirats Arabes Unis",
+    "pays_slug": "emirats-arabes-unis",
+    "region": "Moyen-Orient",
+    "score_halal": 4.6,
+    "mosquees": 1600,
+    "restaurants_halal": 8000,
+    "image": "https://images.unsplash.com/photo-1569836741193-dcff5e3e07d7?w=200&q=70",
+    "aliases": [
+      "emirats arabes unis"
+    ]
+  },
+  {
+    "slug": "accra",
+    "nom": "Accra",
+    "pays": "Ghana",
+    "pays_slug": "ghana",
+    "region": "Afrique de l'Ouest",
+    "score_halal": 3.8,
+    "mosquees": 400,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1571907483086-3c5f6c1f7b2e?w=200&q=70",
+    "aliases": [
+      "ghana"
+    ]
+  },
+  {
+    "slug": "addis-abeba",
+    "nom": "Addis-Abeba",
+    "pays": "Éthiopie",
+    "pays_slug": "ethiopie",
+    "region": "Afrique de l'Est",
+    "score_halal": 3.8,
+    "mosquees": 500,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1567593810070-7a3d471af022?w=200&q=70",
+    "aliases": [
+      "ethiopie",
+      "addis abeba"
+    ]
+  },
+  {
+    "slug": "agadir",
+    "nom": "Agadir",
+    "pays": "Maroc",
+    "pays_slug": "maroc",
+    "region": "Afrique du Nord",
+    "score_halal": 5,
+    "mosquees": 180,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "maroc"
+    ]
+  },
+  {
+    "slug": "alexandrie",
+    "nom": "Alexandrie",
+    "pays": "Égypte",
+    "pays_slug": "egypte",
+    "region": "Côte méditerranéenne",
+    "score_halal": 4.4,
+    "mosquees": 2000,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "egypte"
+    ]
+  },
+  {
+    "slug": "alger",
+    "nom": "Alger",
+    "pays": "Algérie",
+    "pays_slug": "algerie",
+    "region": "Afrique du Nord",
+    "score_halal": 5,
+    "mosquees": 5000,
+    "restaurants_halal": 8000,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "algerie"
+    ]
+  },
+  {
+    "slug": "almaty",
+    "nom": "Almaty",
+    "pays": "Kazakhstan",
+    "pays_slug": "kazakhstan",
+    "region": "Asie centrale",
+    "score_halal": 4.2,
+    "mosquees": 200,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1596393395144-3c2e3a9b4c2f?w=200&q=70",
+    "aliases": [
+      "kazakhstan"
+    ]
+  },
+  {
+    "slug": "amman",
+    "nom": "Amman",
+    "pays": "Jordanie",
+    "pays_slug": "jordanie",
+    "region": "Moyen-Orient",
+    "score_halal": 4.4,
+    "mosquees": 2000,
+    "restaurants_halal": 5000,
+    "image": "https://images.unsplash.com/photo-1580834341580-8c17a3a630ca?w=200&q=70",
+    "aliases": [
+      "jordanie"
+    ]
+  },
+  {
+    "slug": "ankara",
+    "nom": "Ankara",
+    "pays": "Turquie",
+    "pays_slug": "turquie",
+    "region": "Anatolie centrale",
+    "score_halal": 4.4,
+    "mosquees": 3000,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "turquie"
+    ]
+  },
+  {
+    "slug": "antalya",
+    "nom": "Antalya",
+    "pays": "Turquie",
+    "pays_slug": "turquie",
+    "region": "Méditerranée",
+    "score_halal": 4.2,
+    "mosquees": 900,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "turquie"
+    ]
+  },
+  {
+    "slug": "aqaba",
+    "nom": "Aqaba",
+    "pays": "Jordanie",
+    "pays_slug": "jordanie",
+    "region": "Mer Rouge",
+    "score_halal": 4.2,
+    "mosquees": 80,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "jordanie"
+    ]
+  },
+  {
+    "slug": "bagdad",
+    "nom": "Bagdad",
+    "pays": "Irak",
+    "pays_slug": "irak",
+    "region": "Mésopotamie",
+    "score_halal": 4.2,
+    "mosquees": 1000,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "irak"
+    ]
+  },
+  {
+    "slug": "bakou",
+    "nom": "Bakou",
+    "pays": "Azerbaïdjan",
+    "pays_slug": "azerbaidjan",
+    "region": "Caucase",
+    "score_halal": 4.1,
+    "mosquees": 200,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1601999008659-2c6c3a6b0c4e?w=200&q=70",
+    "aliases": [
+      "azerbaidjan"
+    ]
+  },
+  {
+    "slug": "bali",
+    "nom": "Bali",
+    "pays": "Indonésie",
+    "pays_slug": "indonesie",
+    "region": "Asie du Sud-Est",
+    "score_halal": 4,
+    "mosquees": 450,
+    "restaurants_halal": 1200,
+    "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=200&q=70",
+    "aliases": [
+      "indonesie"
+    ]
+  },
+  {
+    "slug": "banda-aceh",
+    "nom": "Banda Aceh",
+    "pays": "Indonésie",
+    "pays_slug": "indonesie",
+    "region": "Asie du Sud-Est",
+    "score_halal": 4.8,
+    "mosquees": 1000,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1584810359583-96fc9f0d2e76?w=200&q=70",
+    "aliases": [
+      "indonesie"
+    ]
+  },
+  {
+    "slug": "bangkok",
+    "nom": "Bangkok",
+    "pays": "Thaïlande",
+    "pays_slug": "thailande",
+    "region": "Asie du Sud-Est",
+    "score_halal": 3.8,
+    "mosquees": 200,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=200&q=70",
+    "aliases": [
+      "thailande"
+    ]
+  },
+  {
+    "slug": "berlin",
+    "nom": "Berlin",
+    "pays": "Allemagne",
+    "pays_slug": "allemagne",
+    "region": "Europe centrale",
+    "score_halal": 3.9,
+    "mosquees": 120,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=200&q=70",
+    "aliases": [
+      "allemagne"
+    ]
+  },
+  {
+    "slug": "beyrouth",
+    "nom": "Beyrouth",
+    "pays": "Liban",
+    "pays_slug": "liban",
+    "region": "Levant",
+    "score_halal": 3.8,
+    "mosquees": 150,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "liban"
+    ]
+  },
+  {
+    "slug": "bordeaux",
+    "nom": "Bordeaux",
+    "pays": "France",
+    "pays_slug": "france",
+    "region": "Europe",
+    "score_halal": 3,
+    "mosquees": 12,
+    "restaurants_halal": 1200,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "france"
+    ]
+  },
+  {
+    "slug": "boukhara",
+    "nom": "Boukhara",
+    "pays": "Ouzbékistan",
+    "pays_slug": "ouzbekistan",
+    "region": "Asie centrale",
+    "score_halal": 4.5,
+    "mosquees": 300,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=200&q=70",
+    "aliases": [
+      "ouzbekistan"
+    ]
+  },
+  {
+    "slug": "bruxelles",
+    "nom": "Bruxelles",
+    "pays": "Belgique",
+    "pays_slug": "belgique",
+    "region": "Europe de l'Ouest",
+    "score_halal": 3.9,
+    "mosquees": 80,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1559113202-c916b8e44373?w=200&q=70",
+    "aliases": [
+      "belgique"
+    ]
+  },
+  {
+    "slug": "bursa",
+    "nom": "Bursa",
+    "pays": "Turquie",
+    "pays_slug": "turquie",
+    "region": "Marmara",
+    "score_halal": 4.5,
+    "mosquees": 2000,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "turquie"
+    ]
+  },
+  {
+    "slug": "cappadoce",
+    "nom": "Cappadoce",
+    "pays": "Turquie",
+    "pays_slug": "turquie",
+    "region": "Anatolie centrale",
+    "score_halal": 4.3,
+    "mosquees": 200,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "turquie"
+    ]
+  },
+  {
+    "slug": "casablanca",
+    "nom": "Casablanca",
+    "pays": "Maroc",
+    "pays_slug": "maroc",
+    "region": "Afrique du Nord",
+    "score_halal": 5,
+    "mosquees": 1000,
+    "restaurants_halal": 2500,
+    "image": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=200&q=70",
+    "aliases": [
+      "maroc"
+    ]
+  },
+  {
+    "slug": "chefchaouen",
+    "nom": "Chefchaouen",
+    "pays": "Maroc",
+    "pays_slug": "maroc",
+    "region": "Rif",
+    "score_halal": 4.4,
+    "mosquees": 30,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "maroc"
+    ]
+  },
+  {
+    "slug": "chicago",
+    "nom": "Chicago",
+    "pays": "États-Unis",
+    "pays_slug": "etats-unis",
+    "region": "Midwest",
+    "score_halal": 3.9,
+    "mosquees": 120,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=200&q=70",
+    "aliases": [
+      "etats-unis"
+    ]
+  },
+  {
+    "slug": "cordoue",
+    "nom": "Cordoue",
+    "pays": "Espagne",
+    "pays_slug": "espagne",
+    "region": "Andalousie",
+    "score_halal": 3.9,
+    "mosquees": 8,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1583266313560-d9c0c9c5e4f5?w=200&q=70",
+    "aliases": [
+      "espagne"
+    ]
+  },
+  {
+    "slug": "dacca",
+    "nom": "Dacca",
+    "pays": "Bangladesh",
+    "pays_slug": "bangladesh",
+    "region": "Asie du Sud",
+    "score_halal": 4.4,
+    "mosquees": 8000,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&q=70",
+    "aliases": [
+      "bangladesh"
+    ]
+  },
+  {
+    "slug": "dakar",
+    "nom": "Dakar",
+    "pays": "Sénégal",
+    "pays_slug": "senegal",
+    "region": "Afrique de l'Ouest",
+    "score_halal": 4.5,
+    "mosquees": 2000,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=200&q=70",
+    "aliases": [
+      "senegal"
+    ]
+  },
+  {
+    "slug": "dearborn",
+    "nom": "Dearborn",
+    "pays": "États-Unis",
+    "pays_slug": "etats-unis",
+    "region": "Michigan",
+    "score_halal": 4.4,
+    "mosquees": 40,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=200&q=70",
+    "aliases": [
+      "etats-unis"
+    ]
+  },
+  {
+    "slug": "delhi",
+    "nom": "Delhi",
+    "pays": "Inde",
+    "pays_slug": "inde",
+    "region": "Asie du Sud",
+    "score_halal": 4.0,
+    "mosquees": 2000,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=200&q=70",
+    "aliases": [
+      "inde"
+    ]
+  },
+  {
+    "slug": "djerba",
+    "nom": "Djerba",
+    "pays": "Tunisie",
+    "pays_slug": "tunisie",
+    "region": "Sud tunisien",
+    "score_halal": 4.2,
+    "mosquees": 300,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "tunisie"
+    ]
+  },
+  {
+    "slug": "doha",
+    "nom": "Doha",
+    "pays": "Qatar",
+    "pays_slug": "qatar",
+    "region": "Moyen-Orient",
+    "score_halal": 4.7,
+    "mosquees": 1800,
+    "restaurants_halal": 5000,
+    "image": "https://images.unsplash.com/photo-1571303041873-c2e32a83c6a4?w=200&q=70",
+    "aliases": [
+      "qatar"
+    ]
+  },
+  {
+    "slug": "dubai",
+    "nom": "Dubaï",
+    "pays": "Émirats Arabes Unis",
+    "pays_slug": "emirats-arabes-unis",
+    "region": "Moyen-Orient",
+    "score_halal": 5,
+    "mosquees": 950,
+    "restaurants_halal": 12000,
+    "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=200&q=70",
+    "aliases": [
+      "emirats arabes unis"
+    ]
+  },
+  {
+    "slug": "fes",
+    "nom": "Fès",
+    "pays": "Maroc",
+    "pays_slug": "maroc",
+    "region": "Afrique du Nord",
+    "score_halal": 5,
+    "mosquees": 785,
+    "restaurants_halal": 1200,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "maroc"
+    ]
+  },
+  {
+    "slug": "gaziantep",
+    "nom": "Gaziantep",
+    "pays": "Turquie",
+    "pays_slug": "turquie",
+    "region": "Anatolie du Sud-Est",
+    "score_halal": 4.5,
+    "mosquees": 1500,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "turquie"
+    ]
+  },
+  {
+    "slug": "grenade",
+    "nom": "Grenade",
+    "pays": "Espagne",
+    "pays_slug": "espagne",
+    "region": "Andalousie",
+    "score_halal": 4.0,
+    "mosquees": 10,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1591792818298-9c1f0a1f4a8c?w=200&q=70",
+    "aliases": [
+      "espagne"
+    ]
+  },
+  {
+    "slug": "houston",
+    "nom": "Houston",
+    "pays": "États-Unis",
+    "pays_slug": "etats-unis",
+    "region": "Texas",
+    "score_halal": 3.9,
+    "mosquees": 90,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1530089711124-9ca31fb9e863?w=200&q=70",
+    "aliases": [
+      "etats-unis"
+    ]
+  },
+  {
+    "slug": "hyderabad-inde",
+    "nom": "Hyderabad",
+    "pays": "Inde",
+    "pays_slug": "inde",
+    "region": "Asie du Sud",
+    "score_halal": 4.2,
+    "mosquees": 2000,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1551191492-5b0b3d6f9e0e?w=200&q=70",
+    "aliases": [
+      "inde",
+      "hyderabad inde"
+    ]
+  },
+  {
+    "slug": "islamabad",
+    "nom": "Islamabad",
+    "pays": "Pakistan",
+    "pays_slug": "pakistan",
+    "region": "Asie du Sud",
+    "score_halal": 4.6,
+    "mosquees": 1500,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1586804588776-87f6e7f8c1e0?w=200&q=70",
+    "aliases": [
+      "pakistan"
+    ]
+  },
+  {
+    "slug": "istanbul",
+    "nom": "Istanbul",
+    "pays": "Turquie",
+    "pays_slug": "turquie",
+    "region": "Europe / Asie",
+    "score_halal": 5,
+    "mosquees": 3113,
+    "restaurants_halal": 15000,
+    "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=200&q=70",
+    "aliases": [
+      "turquie"
+    ]
+  },
+  {
+    "slug": "jakarta",
+    "nom": "Jakarta",
+    "pays": "Indonésie",
+    "pays_slug": "indonesie",
+    "region": "Asie du Sud-Est",
+    "score_halal": 5,
+    "mosquees": 3000,
+    "restaurants_halal": 50000,
+    "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=200&q=70",
+    "aliases": [
+      "indonesie"
+    ]
+  },
+  {
+    "slug": "jeddah",
+    "nom": "Jeddah",
+    "pays": "Arabie Saoudite",
+    "pays_slug": "arabie-saoudite",
+    "region": "Hedjaz",
+    "score_halal": 4.6,
+    "mosquees": 1300,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1578895101408-47d8af21e4f8?w=200&q=70",
+    "aliases": [
+      "arabie saoudite"
+    ]
+  },
+  {
+    "slug": "karachi",
+    "nom": "Karachi",
+    "pays": "Pakistan",
+    "pays_slug": "pakistan",
+    "region": "Asie du Sud",
+    "score_halal": 4.2,
+    "mosquees": 4000,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1591801074773-7f0b1e0d5f8d?w=200&q=70",
+    "aliases": [
+      "pakistan"
+    ]
+  },
+  {
+    "slug": "konya",
+    "nom": "Konya",
+    "pays": "Turquie",
+    "pays_slug": "turquie",
+    "region": "Anatolie centrale",
+    "score_halal": 4.6,
+    "mosquees": 3000,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "turquie"
+    ]
+  },
+  {
+    "slug": "kota-kinabalu",
+    "nom": "Kota Kinabalu",
+    "pays": "Malaisie",
+    "pays_slug": "malaisie",
+    "region": "Asie du Sud-Est",
+    "score_halal": 4.2,
+    "mosquees": 300,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1559628233-1009d3a6b9b3?w=200&q=70",
+    "aliases": [
+      "malaisie"
+    ]
+  },
+  {
+    "slug": "koweit-city",
+    "nom": "Koweït City",
+    "pays": "Koweït",
+    "pays_slug": "koweit",
+    "region": "Golfe",
+    "score_halal": 4.7,
+    "mosquees": 1500,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "koweit"
+    ]
+  },
+  {
+    "slug": "kuala-lumpur",
+    "nom": "Kuala Lumpur",
+    "pays": "Malaisie",
+    "pays_slug": "malaisie",
+    "region": "Asie du Sud-Est",
+    "score_halal": 5,
+    "mosquees": 850,
+    "restaurants_halal": 8000,
+    "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=200&q=70",
+    "aliases": [
+      "malaisie"
+    ]
+  },
+  {
+    "slug": "la-mecque",
+    "nom": "La Mecque",
+    "pays": "Arabie Saoudite",
+    "pays_slug": "arabie-saoudite",
+    "region": "Péninsule Arabique",
+    "score_halal": 4.9,
+    "mosquees": 400,
+    "restaurants_halal": 5000,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "arabie saoudite"
+    ]
+  },
+  {
+    "slug": "lagos",
+    "nom": "Lagos",
+    "pays": "Nigéria",
+    "pays_slug": "nigeria",
+    "region": "Afrique de l'Ouest",
+    "score_halal": 3.8,
+    "mosquees": 3000,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1618828665347-d8cb2c5a0f0d?w=200&q=70",
+    "aliases": [
+      "nigeria"
+    ]
+  },
+  {
+    "slug": "lahore",
+    "nom": "Lahore",
+    "pays": "Pakistan",
+    "pays_slug": "pakistan",
+    "region": "Asie du Sud",
+    "score_halal": 4.5,
+    "mosquees": 3000,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1567527259770-0b9bb9c2f1a8?w=200&q=70",
+    "aliases": [
+      "pakistan"
+    ]
+  },
+  {
+    "slug": "le-caire",
+    "nom": "Le Caire",
+    "pays": "Égypte",
+    "pays_slug": "egypte",
+    "region": "Afrique du Nord",
+    "score_halal": 5,
+    "mosquees": 4000,
+    "restaurants_halal": 15000,
+    "image": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?w=200&q=70",
+    "aliases": [
+      "egypte"
+    ]
+  },
+  {
+    "slug": "lombok",
+    "nom": "Lombok",
+    "pays": "Indonésie",
+    "pays_slug": "indonesie",
+    "region": "Asie du Sud-Est",
+    "score_halal": 4.5,
+    "mosquees": 4000,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=200&q=70",
+    "aliases": [
+      "indonesie"
+    ]
+  },
+  {
+    "slug": "londres",
+    "nom": "Londres",
+    "pays": "Royaume-Uni",
+    "pays_slug": "royaume-uni",
+    "region": "Europe de l'Ouest",
+    "score_halal": 4,
+    "mosquees": 423,
+    "restaurants_halal": 1500,
+    "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=200&q=70",
+    "aliases": [
+      "royaume-uni"
+    ]
+  },
+  {
+    "slug": "los-angeles",
+    "nom": "Los Angeles",
+    "pays": "États-Unis",
+    "pays_slug": "etats-unis",
+    "region": "Californie",
+    "score_halal": 3.8,
+    "mosquees": 80,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=200&q=70",
+    "aliases": [
+      "etats-unis"
+    ]
+  },
+  {
+    "slug": "louxor",
+    "nom": "Louxor",
+    "pays": "Égypte",
+    "pays_slug": "egypte",
+    "region": "Haute-Égypte",
+    "score_halal": 4.2,
+    "mosquees": 400,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "egypte"
+    ]
+  },
+  {
+    "slug": "lyon",
+    "nom": "Lyon",
+    "pays": "France",
+    "pays_slug": "france",
+    "region": "Auvergne-Rhône-Alpes",
+    "score_halal": 3.9,
+    "mosquees": 60,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1524396309943-e03f5249f002?w=200&q=70",
+    "aliases": [
+      "france"
+    ]
+  },
+  {
+    "slug": "maldives",
+    "nom": "Maldives",
+    "pays": "Maldives",
+    "pays_slug": "maldives",
+    "region": "Asie du Sud",
+    "score_halal": 5,
+    "mosquees": 700,
+    "restaurants_halal": 1500,
+    "image": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=200&q=70",
+    "aliases": []
+  },
+  {
+    "slug": "manama",
+    "nom": "Manama",
+    "pays": "Bahreïn",
+    "pays_slug": "bahrein",
+    "region": "Golfe",
+    "score_halal": 4.4,
+    "mosquees": 600,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "bahrein"
+    ]
+  },
+  {
+    "slug": "marrakech",
+    "nom": "Marrakech",
+    "pays": "Maroc",
+    "pays_slug": "maroc",
+    "region": "Afrique du Nord",
+    "score_halal": 5,
+    "mosquees": 147,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=200&q=70",
+    "aliases": [
+      "maroc"
+    ]
+  },
+  {
+    "slug": "marseille",
+    "nom": "Marseille",
+    "pays": "France",
+    "pays_slug": "france",
+    "region": "Europe",
+    "score_halal": 4,
+    "mosquees": 45,
+    "restaurants_halal": 1200,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "france"
+    ]
+  },
+  {
+    "slug": "mascate",
+    "nom": "Mascate",
+    "pays": "Oman",
+    "pays_slug": "oman",
+    "region": "Moyen-Orient",
+    "score_halal": 5,
+    "mosquees": 5000,
+    "restaurants_halal": 2500,
+    "image": "https://images.unsplash.com/photo-1608138404239-d2f9b4e51e08?w=200&q=70",
+    "aliases": [
+      "oman"
+    ]
+  },
+  {
+    "slug": "medine",
+    "nom": "Médine",
+    "pays": "Arabie Saoudite",
+    "pays_slug": "arabie-saoudite",
+    "region": "Péninsule Arabique",
+    "score_halal": 4.9,
+    "mosquees": 300,
+    "restaurants_halal": 3000,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "arabie saoudite"
+    ]
+  },
+  {
+    "slug": "montreal",
+    "nom": "Montréal",
+    "pays": "Canada",
+    "pays_slug": "canada",
+    "region": "Québec",
+    "score_halal": 4.0,
+    "mosquees": 100,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1519178614-68673b201f36?w=200&q=70",
+    "aliases": [
+      "canada"
+    ]
+  },
+  {
+    "slug": "nairobi",
+    "nom": "Nairobi",
+    "pays": "Kenya",
+    "pays_slug": "kenya",
+    "region": "Afrique de l'Est",
+    "score_halal": 3.8,
+    "mosquees": 600,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=200&q=70",
+    "aliases": [
+      "kenya"
+    ]
+  },
+  {
+    "slug": "new-york",
+    "nom": "New York",
+    "pays": "États-Unis",
+    "pays_slug": "etats-unis",
+    "region": "Côte Est",
+    "score_halal": 4.0,
+    "mosquees": 300,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=200&q=70",
+    "aliases": [
+      "etats-unis"
+    ]
+  },
+  {
+    "slug": "osaka",
+    "nom": "Osaka",
+    "pays": "Japon",
+    "pays_slug": "japon",
+    "region": "Kansai",
+    "score_halal": 3.8,
+    "mosquees": 20,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1590559899731-a382839e5549?w=200&q=70",
+    "aliases": [
+      "japon"
+    ]
+  },
+  {
+    "slug": "paris",
+    "nom": "Paris",
+    "pays": "France",
+    "pays_slug": "france",
+    "region": "Europe de l'Ouest",
+    "score_halal": 4,
+    "mosquees": 87,
+    "restaurants_halal": 3800,
+    "image": "https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=200&q=70",
+    "aliases": [
+      "france"
+    ]
+  },
+  {
+    "slug": "penang",
+    "nom": "Penang",
+    "pays": "Malaisie",
+    "pays_slug": "malaisie",
+    "region": "Asie du Sud-Est",
+    "score_halal": 4.4,
+    "mosquees": 200,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=200&q=70",
+    "aliases": [
+      "malaisie"
+    ]
+  },
+  {
+    "slug": "phuket",
+    "nom": "Phuket",
+    "pays": "Thaïlande",
+    "pays_slug": "thailande",
+    "region": "Asie du Sud-Est",
+    "score_halal": 3.5,
+    "mosquees": 200,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1589394760808-3d4a8b7b5b6?w=200&q=70",
+    "aliases": [
+      "thailande"
+    ]
+  },
+  {
+    "slug": "riyadh",
+    "nom": "Riyadh",
+    "pays": "Arabie Saoudite",
+    "pays_slug": "arabie-saoudite",
+    "region": "Najd",
+    "score_halal": 4.7,
+    "mosquees": 4000,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=200&q=70",
+    "aliases": [
+      "arabie saoudite"
+    ]
+  },
+  {
+    "slug": "salalah",
+    "nom": "Salalah",
+    "pays": "Oman",
+    "pays_slug": "oman",
+    "region": "Dhofar",
+    "score_halal": 4.3,
+    "mosquees": 400,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "oman"
+    ]
+  },
+  {
+    "slug": "samarkand",
+    "nom": "Samarkand",
+    "pays": "Ouzbékistan",
+    "pays_slug": "ouzbekistan",
+    "region": "Asie centrale",
+    "score_halal": 4.5,
+    "mosquees": 300,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1509279083988-3b2c0e54b0d2?w=200&q=70",
+    "aliases": [
+      "ouzbekistan"
+    ]
+  },
+  {
+    "slug": "sarajevo",
+    "nom": "Sarajevo",
+    "pays": "Bosnie",
+    "pays_slug": "bosnie",
+    "region": "Balkans",
+    "score_halal": 4.4,
+    "mosquees": 150,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1578681994506-b8f463906a3b?w=200&q=70",
+    "aliases": [
+      "bosnie"
+    ]
+  },
+  {
+    "slug": "seoul",
+    "nom": "Séoul",
+    "pays": "Corée du Sud",
+    "pays_slug": "coree-du-sud",
+    "region": "Asie de l'Est",
+    "score_halal": 3.8,
+    "mosquees": 20,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=200&q=70",
+    "aliases": [
+      "coree du sud"
+    ]
+  },
+  {
+    "slug": "singapour",
+    "nom": "Singapour",
+    "pays": "Singapour",
+    "pays_slug": "singapour",
+    "region": "Asie du Sud-Est",
+    "score_halal": 4.2,
+    "mosquees": 80,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=200&q=70",
+    "aliases": []
+  },
+  {
+    "slug": "tachkent",
+    "nom": "Tachkent",
+    "pays": "Ouzbékistan",
+    "pays_slug": "ouzbekistan",
+    "region": "Asie centrale",
+    "score_halal": 4.3,
+    "mosquees": 400,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1534770177941-44c1cbf079e4?w=200&q=70",
+    "aliases": [
+      "ouzbekistan"
+    ]
+  },
+  {
+    "slug": "tanger",
+    "nom": "Tanger",
+    "pays": "Maroc",
+    "pays_slug": "maroc",
+    "region": "Afrique du Nord",
+    "score_halal": 5,
+    "mosquees": 340,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "maroc"
+    ]
+  },
+  {
+    "slug": "tokyo",
+    "nom": "Tokyo",
+    "pays": "Japon",
+    "pays_slug": "japon",
+    "region": "Asie de l'Est",
+    "score_halal": 3.8,
+    "mosquees": 40,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=200&q=70",
+    "aliases": [
+      "japon"
+    ]
+  },
+  {
+    "slug": "toronto",
+    "nom": "Toronto",
+    "pays": "Canada",
+    "pays_slug": "canada",
+    "region": "Ontario",
+    "score_halal": 4.2,
+    "mosquees": 120,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?w=200&q=70",
+    "aliases": [
+      "canada"
+    ]
+  },
+  {
+    "slug": "trabzon",
+    "nom": "Trabzon",
+    "pays": "Turquie",
+    "pays_slug": "turquie",
+    "region": "Mer Noire",
+    "score_halal": 4.5,
+    "mosquees": 900,
+    "restaurants_halal": 800,
+    "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=200&q=70",
+    "aliases": [
+      "turquie"
+    ]
+  },
+  {
+    "slug": "tunis",
+    "nom": "Tunis",
+    "pays": "Tunisie",
+    "pays_slug": "tunisie",
+    "region": "Afrique du Nord",
+    "score_halal": 4,
+    "mosquees": 800,
+    "restaurants_halal": 5000,
+    "image": "https://images.unsplash.com/photo-1580836738558-e6c749ca8e53?w=200&q=70",
+    "aliases": [
+      "tunisie"
+    ]
+  },
+  {
+    "slug": "vienne",
+    "nom": "Vienne",
+    "pays": "Autriche",
+    "pays_slug": "autriche",
+    "region": "Europe centrale",
+    "score_halal": 3.8,
+    "mosquees": 70,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=200&q=70",
+    "aliases": [
+      "autriche"
+    ]
+  },
+  {
+    "slug": "yogyakarta",
+    "nom": "Yogyakarta",
+    "pays": "Indonésie",
+    "pays_slug": "indonesie",
+    "region": "Asie du Sud-Est",
+    "score_halal": 4.3,
+    "mosquees": 3000,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1596402184320-417e7178b2cd?w=200&q=70",
+    "aliases": [
+      "indonesie"
+    ]
+  },
+  {
+    "slug": "zanzibar",
+    "nom": "Zanzibar",
+    "pays": "Tanzanie",
+    "pays_slug": "tanzanie",
+    "region": "Afrique de l'Est",
+    "score_halal": 4.5,
+    "mosquees": 300,
+    "restaurants_halal": 750,
+    "image": "https://images.unsplash.com/photo-1572125675722-238a4f1f4ea2?w=200&q=70",
+    "aliases": [
+      "tanzanie"
+    ]
+  }
 ]
