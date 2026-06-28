@@ -7,6 +7,7 @@ import IslamicPattern from '@/components/ui/IslamicPattern'
 import GeoDashboard from '@/components/mobile/GeoDashboard'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import LocationBar from '@/components/location/LocationBar'
+import LocationPicker from '@/components/location/LocationPicker'
 import { useLocation, type City } from '@/components/location/LocationProvider'
 
 interface Destination {
@@ -98,7 +99,11 @@ function NextPrayerBanner({ city }: { city: City | null }) {
 
 export default function MobileHome({ totalVilles, destinations }: { totalVilles: number; destinations: Destination[] }) {
   const { t } = useLanguage()
-  const { city } = useLocation()
+  const { city, ready } = useLocation()
+
+  // Écran 1 — tant qu'aucune ville n'est mémorisée, on affiche le location picker
+  if (ready && !city) return <LocationPicker />
+
   const cityHref = city ? `/destinations/${city.slug}` : '/destinations'
   const dashTiles = [
     { href: cityHref, icon: '🍽', title: 'Restos', sub: city ? `Halal à ${city.nom}` : 'Choisir une ville', bg: '#EAF3DE' },

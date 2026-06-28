@@ -15,10 +15,11 @@ interface Ctx {
   setCity: (c: City) => void
   geolocate: () => Promise<City | null>
   geoStatus: 'idle' | 'loading' | 'error'
+  ready: boolean
 }
 
 const LocationContext = createContext<Ctx>({
-  city: null, setCity: () => {}, geolocate: async () => null, geoStatus: 'idle',
+  city: null, setCity: () => {}, geolocate: async () => null, geoStatus: 'idle', ready: false,
 })
 
 const COORDS = cityCoords as City[]
@@ -47,12 +48,14 @@ export function nearestCity(lat: number, lng: number): City {
 export function LocationProvider({ children }: { children: React.ReactNode }) {
   const [city, setCityState] = useState<City | null>(null)
   const [geoStatus, setGeoStatus] = useState<'idle' | 'loading' | 'error'>('idle')
+  const [ready, setReady] = useState(false)
 
   useEffect(() => {
     try {
       const saved = localStorage.getItem('vh_city')
       if (saved) setCityState(JSON.parse(saved))
     } catch { /* ignore */ }
+    setReady(true)
   }, [])
 
   const setCity = useCallback((c: City) => {
@@ -76,7 +79,7 @@ export function LocationProvider({ children }: { children: React.ReactNode }) {
   }, [setCity])
 
   return (
-    <LocationContext.Provider value={{ city, setCity, geolocate, geoStatus }}>{children}</LocationContext.Provider>
+    <LocationContext.Provider value={{ city, setCity, geolocate, geoStatus, ready }}>{children}</LocationContext.Provider>
   )
 }
 
