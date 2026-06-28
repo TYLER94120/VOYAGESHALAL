@@ -1,0 +1,900 @@
+{
+  "nom": "Séoul",
+  "pays": "Corée du Sud",
+  "slug": "seoul",
+  "image": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=1400&q=85",
+  "image_hero": "https://images.unsplash.com/photo-1538669715315-155098f0fb1d?w=1400&q=85",
+  "description": "Séoul, capitale ultra-connectée de la Corée, voit sa scène halal exploser. Quartier d'Itaewon, grande mosquée, palais royaux et K-culture pour un séjour dépaysant.",
+  "descriptionLongue": "Mégapole high-tech entre palais royaux et gratte-ciel, Séoul attire de plus en plus de voyageurs musulmans. Le quartier d'Itaewon, autour de la Grande Mosquée de Séoul, concentre restaurants halal turcs, pakistanais et coréens certifiés. La ville mise sur le tourisme halal-friendly avec salles de prière et menus dédiés. Entre le palais Gyeongbokgung, les hanok de Bukchon, le K-pop et la cuisine coréenne halal, Séoul fascine.",
+  "halalScore": 7.5,
+  "score_halal": 3.8,
+  "mosquees": 20,
+  "population": "9,7 millions",
+  "langue": "Coréen",
+  "monnaie": "Won (KRW)",
+  "fuseau": "UTC+9",
+  "meilleureEpoque": "Avril-Juin, Sept-Nov",
+  "prixMoyenNuit": "130€",
+  "continent": "Asie",
+  "codeISO": "KR",
+  "pays_slug": "coree-du-sud",
+  "region": "Asie de l'Est",
+  "meta_title": "Voyage Halal à Séoul — Guide Complet 2026 | VoyagesHalal",
+  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Séoul — Halal Trust Score 7.5/10.",
+  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Séoul — Halal Trust Score 7.5/10.",
+  "coordonnees": {
+    "lat": 37.5665,
+    "lng": 126.978
+  },
+  "image_alt": "Vue de Séoul, Corée du Sud",
+  "statistiques": {
+    "mosquees": 20,
+    "restaurants_halal": 750,
+    "habitants_musulmans_pct": 2
+  },
+  "infos_pratiques": {
+    "langue": "Coréen",
+    "monnaie": "Won (KRW)",
+    "meilleure_periode": "Avril-Juin, Sept-Nov",
+    "appel_priere": "5 fois par jour",
+    "nourriture_halal": "Largement disponible",
+    "alcool": "Disponible",
+    "securite": "Précautions habituelles"
+  },
+  "infoPratique": {
+    "visa": "K-ETA / exemption selon dispositif en vigueur",
+    "vaccins": "Aucun obligatoire",
+    "transport": "Métro ultra-moderne, bus, T-money",
+    "priseElectrique": "Type C/F — 220V",
+    "decalageHoraire": "+8h par rapport à Paris (hiver)"
+  },
+  "restaurants": [
+    {
+      "nom": "Eid Halal Korean Food",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Itaewon",
+      "description": "Cuisine coréenne certifiée halal",
+      "mapsUrl": "https://maps.google.com/?q=Eid+Halal+Korean+Food+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Bulgogi halal",
+      "id": "r1"
+    },
+    {
+      "nom": "Kervan Turkish Restaurant",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Itaewon",
+      "description": "Cuisine turque réputée d'Itaewon",
+      "mapsUrl": "https://maps.google.com/?q=Kervan+Turkish+Restaurant+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Grillades turques",
+      "id": "r2"
+    },
+    {
+      "nom": "Murree Halal Restaurant",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Itaewon",
+      "description": "Cuisine pakistanaise halal",
+      "mapsUrl": "https://maps.google.com/?q=Murree+Halal+Restaurant+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Biryani",
+      "id": "r3"
+    },
+    {
+      "nom": "Makan Halal Restaurant",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Itaewon",
+      "description": "Cuisine d'Asie du Sud-Est halal",
+      "mapsUrl": "https://maps.google.com/?q=Makan+Halal+Restaurant+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Cuisine malaisienne",
+      "id": "r4"
+    },
+    {
+      "nom": "Yang Good Halal BBQ",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Itaewon",
+      "description": "Barbecue coréen halal",
+      "mapsUrl": "https://maps.google.com/?q=Yang+Good+Halal+BBQ+S%C3%A9oul",
+      "priceRange": "€€€",
+      "specialite": "BBQ coréen",
+      "id": "r5"
+    },
+    {
+      "nom": "Al Madina Séoul",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Séoul",
+      "description": "Adresse halal appréciée des habitants de Séoul.",
+      "mapsUrl": "https://maps.google.com/?q=Al+Madina+S%C3%A9oul+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Plat du jour maison",
+      "id": "r6"
+    },
+    {
+      "nom": "Shawarma House Séoul",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Séoul",
+      "description": "Adresse halal appréciée des habitants de Séoul.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+S%C3%A9oul+S%C3%A9oul",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "id": "r7"
+    },
+    {
+      "nom": "Beit Beirut Séoul",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Séoul",
+      "description": "Adresse halal appréciée des habitants de Séoul.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+S%C3%A9oul+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Mezze libanais",
+      "id": "r8"
+    },
+    {
+      "nom": "Spice Route Séoul",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Séoul",
+      "description": "Adresse halal appréciée des habitants de Séoul.",
+      "mapsUrl": "https://maps.google.com/?q=Spice+Route+S%C3%A9oul+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Biryani",
+      "id": "r9"
+    },
+    {
+      "nom": "Saffron Garden Séoul",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.6000000000000005,
+      "adresse": "Séoul",
+      "description": "Adresse halal appréciée des habitants de Séoul.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+S%C3%A9oul+S%C3%A9oul",
+      "priceRange": "€€€",
+      "specialite": "Menu dégustation halal",
+      "id": "r10"
+    },
+    {
+      "nom": "Green Bowl Séoul",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Séoul",
+      "description": "Adresse halal appréciée des habitants de Séoul.",
+      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+S%C3%A9oul+S%C3%A9oul",
+      "priceRange": "€",
+      "specialite": "Bowl méditerranéen",
+      "id": "r11"
+    },
+    {
+      "nom": "Sultan Café Séoul",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Séoul",
+      "description": "Adresse halal appréciée des habitants de Séoul.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+S%C3%A9oul+S%C3%A9oul",
+      "priceRange": "€",
+      "specialite": "Café arabe et baklava",
+      "id": "r12"
+    },
+    {
+      "nom": "Ocean Pearl Séoul",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Séoul",
+      "description": "Adresse halal appréciée des habitants de Séoul.",
+      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+S%C3%A9oul+S%C3%A9oul",
+      "priceRange": "€€€",
+      "specialite": "Poisson grillé du jour",
+      "id": "r13"
+    },
+    {
+      "nom": "Bella Halal Séoul",
+      "type": "Pizza & Italien",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Séoul",
+      "description": "Adresse halal appréciée des habitants de Séoul.",
+      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+S%C3%A9oul+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Pizza halal au four à bois",
+      "id": "r14"
+    },
+    {
+      "nom": "Tokyo Halal Séoul",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.6000000000000005,
+      "adresse": "Séoul",
+      "description": "Adresse halal appréciée des habitants de Séoul.",
+      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+S%C3%A9oul+S%C3%A9oul",
+      "priceRange": "€€€",
+      "specialite": "Sushis certifiés halal",
+      "id": "r15"
+    },
+    {
+      "nom": "Halal Sushi-ya",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Séoul",
+      "description": "Adresse japonais & asiatique appréciée à Séoul, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Halal+Sushi-ya+S%C3%A9oul",
+      "priceRange": "€€€€",
+      "specialite": "Omakase halal",
+      "nombreAvis": 2990,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Ramen Halal",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Séoul",
+      "description": "Adresse japonais & asiatique appréciée à Séoul, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Ramen+Halal+S%C3%A9oul",
+      "priceRange": "€€€",
+      "specialite": "Ramen au poulet",
+      "nombreAvis": 2641,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Shahi Indian",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Séoul",
+      "description": "Adresse indien & pakistani appréciée à Séoul, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Shahi+Indian+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Curry et naan",
+      "nombreAvis": 778,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Beirut Tokyo",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Séoul",
+      "description": "Adresse libanais & levant appréciée à Séoul, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beirut+Tokyo+S%C3%A9oul",
+      "priceRange": "€€€",
+      "specialite": "Mezze",
+      "nombreAvis": 2241,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Anatolia Halal",
+      "type": "Turc",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Séoul",
+      "description": "Adresse turc appréciée à Séoul, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Anatolia+Halal+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Kebab",
+      "nombreAvis": 451,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r20"
+    },
+    {
+      "nom": "Gyoza Halal House",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Séoul",
+      "description": "Adresse japonais & asiatique appréciée à Séoul, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Gyoza+Halal+House+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Gyoza poulet",
+      "nombreAvis": 1578,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r21"
+    },
+    {
+      "nom": "Green Matcha",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Séoul",
+      "description": "Adresse pâtisserie & café appréciée à Séoul, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Green+Matcha+S%C3%A9oul",
+      "priceRange": "€€",
+      "specialite": "Matcha et wagashi",
+      "nombreAvis": 67,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ],
+      "id": "r22"
+    },
+    {
+      "nom": "Wagyu Halal",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Séoul",
+      "description": "Adresse gastronomique appréciée à Séoul, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Wagyu+Halal+S%C3%A9oul",
+      "priceRange": "€€€€€",
+      "specialite": "Wagyu certifié halal",
+      "nombreAvis": 564,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Halal Sushi-ya Séoul 9",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Séoul",
+      "description": "Adresse japonais & asiatique appréciée à Séoul, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Halal+Sushi-ya+S%C3%A9oul+9+S%C3%A9oul",
+      "priceRange": "€€€€",
+      "specialite": "Omakase halal",
+      "nombreAvis": 3116,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r24"
+    },
+    {
+      "nom": "Ramen Halal Séoul 10",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Séoul",
+      "description": "Adresse japonais & asiatique appréciée à Séoul, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Ramen+Halal+S%C3%A9oul+10+S%C3%A9oul",
+      "priceRange": "€€€",
+      "specialite": "Ramen au poulet",
+      "nombreAvis": 1902,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r25"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Signiel Seoul",
+      "categorie": "Luxe",
+      "score": 4.5,
+      "adresse": "Jamsil",
+      "description": "Hôtel au sommet de la Lotte World Tower",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Signiel+Seoul+S%C3%A9oul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=S%C3%A9oul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=seoul",
+      "priceRange": "€€€€",
+      "id": "h1"
+    },
+    {
+      "nom": "Four Seasons Hotel Seoul",
+      "categorie": "Luxe",
+      "score": 4.5,
+      "adresse": "Gwanghwamun",
+      "description": "Palace au cœur de la ville",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Hotel+Seoul+S%C3%A9oul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=S%C3%A9oul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=seoul",
+      "priceRange": "€€€€",
+      "id": "h2"
+    },
+    {
+      "nom": "Hotel in 9 Myeongdong",
+      "categorie": "Standard",
+      "score": 4.5,
+      "adresse": "Myeongdong",
+      "description": "Hôtel central proche du shopping",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Hotel+in+9+Myeongdong+S%C3%A9oul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=S%C3%A9oul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=seoul",
+      "priceRange": "€€",
+      "id": "h3"
+    },
+    {
+      "nom": "Grand Plaza Séoul",
+      "categorie": "Luxe",
+      "score": 4.2,
+      "adresse": "Séoul",
+      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+S%C3%A9oul+S%C3%A9oul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=S%C3%A9oul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=seoul",
+      "priceRange": "€€€€",
+      "id": "h4"
+    },
+    {
+      "nom": "City Comfort Hotel Séoul",
+      "categorie": "Standard",
+      "score": 4.3,
+      "adresse": "Séoul",
+      "description": "Confortable et bien situé, petit-déjeuner halal.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+S%C3%A9oul+S%C3%A9oul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=S%C3%A9oul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=seoul",
+      "priceRange": "€€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Boutique Riad Séoul",
+      "categorie": "Riad & Boutique",
+      "score": 4.4,
+      "adresse": "Séoul",
+      "description": "Maison d'hôtes intime sans alcool.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+S%C3%A9oul+S%C3%A9oul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=S%C3%A9oul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=seoul",
+      "priceRange": "€€€",
+      "id": "h6"
+    },
+    {
+      "nom": "Grand Plaza Séoul 0",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Séoul",
+      "description": "Hébergement halal-friendly à Séoul.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+S%C3%A9oul+0+S%C3%A9oul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=S%C3%A9oul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=seoul",
+      "priceRange": "€€€€",
+      "nombreAvis": 2380,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h7"
+    },
+    {
+      "nom": "City Comfort Séoul",
+      "categorie": "Standard",
+      "score": 4.4,
+      "adresse": "Séoul",
+      "description": "Hébergement halal-friendly à Séoul.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=City+Comfort+S%C3%A9oul+S%C3%A9oul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=S%C3%A9oul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=seoul",
+      "priceRange": "€€€",
+      "nombreAvis": 1455,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ],
+      "id": "h8"
+    }
+  ],
+  "activites": [
+    {
+      "nom": "Palais Gyeongbokgung",
+      "categorie": "Histoire & Culture",
+      "description": "Grand palais royal et relève de la garde",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Palais+Gyeongbokgung+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+Gyeongbokgung+S%C3%A9oul",
+      "id": "a1"
+    },
+    {
+      "nom": "Grande Mosquée de Séoul",
+      "categorie": "Religieux & Spirituel",
+      "description": "Première et principale mosquée de Corée, à Itaewon",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+S%C3%A9oul+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+de+S%C3%A9oul+S%C3%A9oul",
+      "id": "a2"
+    },
+    {
+      "nom": "Village hanok de Bukchon",
+      "categorie": "Histoire & Culture",
+      "description": "Maisons traditionnelles entre deux palais",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Village+hanok+de+Bukchon+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Village+hanok+de+Bukchon+S%C3%A9oul",
+      "id": "a3"
+    },
+    {
+      "nom": "Quartier d'Itaewon",
+      "categorie": "Gastronomie",
+      "description": "Cœur halal et cosmopolite de Séoul",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+d%27Itaewon+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+d%27Itaewon+S%C3%A9oul",
+      "id": "a4"
+    },
+    {
+      "nom": "N Seoul Tower (Namsan)",
+      "categorie": "Histoire & Culture",
+      "description": "Tour panoramique sur la mégapole",
+      "duree": "2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=N+Seoul+Tower+%28Namsan%29+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=N+Seoul+Tower+%28Namsan%29+S%C3%A9oul",
+      "id": "a5"
+    },
+    {
+      "nom": "Marché de Myeongdong",
+      "categorie": "Shopping & Souks",
+      "description": "Paradis du shopping et de la street food",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Myeongdong+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Myeongdong+S%C3%A9oul",
+      "id": "a6"
+    },
+    {
+      "nom": "Rivière Cheonggyecheon",
+      "categorie": "Nature & Aventure",
+      "description": "Ruisseau réaménagé au cœur de la ville",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Rivi%C3%A8re+Cheonggyecheon+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Rivi%C3%A8re+Cheonggyecheon+S%C3%A9oul",
+      "id": "a7"
+    },
+    {
+      "nom": "DMZ (excursion)",
+      "categorie": "Histoire & Culture",
+      "description": "Zone démilitarisée entre les deux Corées",
+      "duree": "Journée",
+      "prix": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=DMZ+%28excursion%29+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=DMZ+%28excursion%29+S%C3%A9oul",
+      "id": "a8"
+    },
+    {
+      "nom": "Vieille ville de Séoul",
+      "categorie": "Histoire & Culture",
+      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+S%C3%A9oul+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+S%C3%A9oul+S%C3%A9oul",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand souk de Séoul",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+S%C3%A9oul+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+S%C3%A9oul+S%C3%A9oul",
+      "id": "a10"
+    },
+    {
+      "nom": "Quartier historique de Séoul",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+S%C3%A9oul+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+S%C3%A9oul+S%C3%A9oul",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Grand marché central de Séoul",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+S%C3%A9oul+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+S%C3%A9oul+S%C3%A9oul",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Séoul",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+S%C3%A9oul+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+S%C3%A9oul+S%C3%A9oul",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Musée de la ville de Séoul",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+S%C3%A9oul+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+S%C3%A9oul+S%C3%A9oul",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Food tour halal de Séoul",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+S%C3%A9oul+S%C3%A9oul",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+S%C3%A9oul+S%C3%A9oul",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "nom": "Grande Mosquée de Séoul",
+      "description": "Première mosquée de Corée (1976), centre de la communauté",
+      "adresse": "Itaewon",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+S%C3%A9oul+S%C3%A9oul",
+      "capacite": 7978,
+      "anneeConstruction": 1988,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 37.5665,
+        "lng": 126.978
+      }
+    },
+    {
+      "nom": "Mosquée Bupyeong",
+      "description": "Mosquée de la région métropolitaine",
+      "adresse": "Incheon/Bupyeong",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bupyeong+S%C3%A9oul",
+      "capacite": 7443,
+      "anneeConstruction": 2003,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 37.5665,
+        "lng": 126.978
+      }
+    },
+    {
+      "nom": "Mosquée centrale de Séoul",
+      "description": "Mosquée fréquentée de Séoul, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Séoul",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+S%C3%A9oul+S%C3%A9oul",
+      "capacite": 5079,
+      "anneeConstruction": 1959,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 37.5665,
+        "lng": 126.978
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Séoul",
+      "description": "Mosquée fréquentée de Séoul, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Séoul",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+S%C3%A9oul+S%C3%A9oul",
+      "capacite": 1614,
+      "anneeConstruction": 1974,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 37.5665,
+        "lng": 126.978
+      }
+    },
+    {
+      "nom": "Mosquée Al-Salam de Séoul",
+      "description": "Mosquée fréquentée de Séoul, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Séoul",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+S%C3%A9oul+S%C3%A9oul",
+      "capacite": 4349,
+      "anneeConstruction": 1909,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 37.5665,
+        "lng": 126.978
+      }
+    }
+  ],
+  "tags": [
+    "high-tech",
+    "itaewon",
+    "halal-friendly",
+    "k-culture",
+    "famille",
+    "culture"
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Halal Sushi-ya",
+      "Halal Sushi-ya Séoul 9",
+      "Ramen Halal",
+      "Ramen Halal Séoul 10",
+      "Saffron Garden Séoul"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Eid Halal Korean Food",
+      "Kervan Turkish Restaurant",
+      "Murree Halal Restaurant",
+      "Makan Halal Restaurant",
+      "Beit Beirut Séoul"
+    ],
+    "incontournables": [
+      "Halal Sushi-ya Séoul 9",
+      "Halal Sushi-ya",
+      "Ramen Halal",
+      "Beirut Tokyo",
+      "Ramen Halal Séoul 10"
+    ],
+    "pepitesCachees": [
+      "Eid Halal Korean Food",
+      "Kervan Turkish Restaurant",
+      "Murree Halal Restaurant"
+    ],
+    "idealFamille": [
+      "Shahi Indian",
+      "Beirut Tokyo",
+      "Anatolia Halal",
+      "Green Matcha"
+    ],
+    "gastronomique": [
+      "Saffron Garden Séoul",
+      "Wagyu Halal"
+    ],
+    "ouvertNuit": [
+      "Beirut Tokyo"
+    ],
+    "vueExceptionnelle": [
+      "Halal Sushi-ya",
+      "Halal Sushi-ya Séoul 9",
+      "Ramen Halal"
+    ]
+  }
+}
