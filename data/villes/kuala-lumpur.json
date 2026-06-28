@@ -162,6 +162,72 @@
       "score": 4.6,
       "priceRange": "80–200 MYR",
       "mapsUrl": "https://maps.google.com/?q=Rahsia+Brasserie+Kuala+Lumpur"
+    },
+    {
+      "nom": "Madam Kwan's",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "KLCC, Suria Shopping Centre",
+      "description": "Cuisine malaisienne raffinée face aux tours Petronas.",
+      "mapsUrl": "https://maps.google.com/?q=Madam+Kwan%27s+Kuala+Lumpur",
+      "priceRange": "€€",
+      "id": "r6"
+    },
+    {
+      "nom": "Restoran Rebung Chef Ismail",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Bangsar, KL",
+      "description": "Fine dining malaisien authentique de référence à KL.",
+      "mapsUrl": "https://maps.google.com/?q=Restoran+Rebung+Chef+Ismail+Kuala+Lumpur",
+      "priceRange": "€€€",
+      "id": "r7"
+    },
+    {
+      "nom": "Coliseum Café",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Jalan Tuanku Abdul Halim",
+      "description": "Depuis 1921, sizzling steak halal historique.",
+      "mapsUrl": "https://maps.google.com/?q=Coliseum+Caf%C3%A9+Kuala+Lumpur",
+      "priceRange": "€€",
+      "id": "r9"
+    },
+    {
+      "nom": "Devi's Corner",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Bangsar, KL",
+      "description": "Banana leaf rice halal, roti prata, mee goreng.",
+      "mapsUrl": "https://maps.google.com/?q=Devi%27s+Corner+Kuala+Lumpur",
+      "priceRange": "€",
+      "id": "r10"
+    },
+    {
+      "nom": "Rakuzen Japanese Halal",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "The Gardens Mall",
+      "description": "Restaurant japonais certifié JAKIM, sushis et robata.",
+      "mapsUrl": "https://maps.google.com/?q=Rakuzen+Japanese+Halal+Kuala+Lumpur",
+      "priceRange": "€€€",
+      "id": "r11"
+    },
+    {
+      "nom": "Wondermama",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Bangsar Shopping Centre",
+      "description": "Cuisine fusion malaisienne moderne.",
+      "mapsUrl": "https://maps.google.com/?q=Wondermama+Kuala+Lumpur",
+      "priceRange": "€€",
+      "id": "r12"
     }
   ],
   "mosquees": [
@@ -295,6 +361,48 @@
       "mapsUrl": "https://maps.google.com/?q=Dorsett+Bukit+Bintang+Kuala+Lumpur",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Kuala+Lumpur"
+    },
+    {
+      "nom": "The Majestic Hotel KL",
+      "categorie": "Luxe",
+      "score": 4.8,
+      "adresse": "Jalan Sultan Hishamuddin",
+      "description": "Palace colonial de 1932 rénové, cuisine halal.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=The+Majestic+Hotel+KL+Kuala+Lumpur",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Kuala+Lumpur",
+      "priceRange": "€€€",
+      "id": "h4"
+    },
+    {
+      "nom": "Pullman KL Bangsar",
+      "categorie": "Standard",
+      "score": 4.6,
+      "adresse": "Jalan Pantai Jaya, Bangsar",
+      "description": "Hôtel moderne, halal breakfast, piscine.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Pullman+KL+Bangsar+Kuala+Lumpur",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Kuala+Lumpur",
+      "priceRange": "€€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Hotel Matahari",
+      "categorie": "Budget",
+      "score": 4.3,
+      "adresse": "Jalan Tuanku Abdul Halim",
+      "description": "Économique propre et bien situé.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Hotel+Matahari+Kuala+Lumpur",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Kuala+Lumpur",
+      "priceRange": "€",
+      "id": "h6"
     }
   ],
   "activites": [
@@ -368,6 +476,42 @@
       ],
       "categorie": "Shopping & Souks",
       "mapsUrl": "https://maps.google.com/?q=Kampung+Baru+Kuala+Lumpur"
+    },
+    {
+      "nom": "Mosquée Nationale Masjid Negara",
+      "categorie": "Religieux & Spirituel",
+      "description": "Mosquée nationale, capacité 15 000 fidèles.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Nationale+Masjid+Negara+Kuala+Lumpur",
+      "id": "a6"
+    },
+    {
+      "nom": "Mosquée Rose Masjid Wilayah",
+      "categorie": "Religieux & Spirituel",
+      "description": "L'une des plus belles mosquées de KL, dôme rosé.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Rose+Masjid+Wilayah+Kuala+Lumpur",
+      "id": "a7"
+    },
+    {
+      "nom": "Jalan Petaling Chinatown",
+      "categorie": "Shopping & Souks",
+      "description": "Shopping de rue, nombreux stands halal.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Jalan+Petaling+Chinatown+Kuala+Lumpur",
+      "id": "a8"
+    },
+    {
+      "nom": "Menara KL Tower",
+      "categorie": "Histoire & Culture",
+      "description": "Pont de verre, vue 360° sur KL.",
+      "duree": "1-2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Menara+KL+Tower+Kuala+Lumpur",
+      "id": "a10"
     }
   ],
   "road_trips": [

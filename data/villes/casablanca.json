@@ -162,6 +162,72 @@
       "score": 4.7,
       "priceRange": "300–600 MAD",
       "mapsUrl": "https://maps.google.com/?q=Dar+Roumana+Casablanca"
+    },
+    {
+      "nom": "Rick's Café",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Médina, Casablanca",
+      "description": "Décor du film Casablanca, cuisine marocaine.",
+      "mapsUrl": "https://maps.google.com/?q=Rick%27s+Caf%C3%A9+Casablanca",
+      "priceRange": "€€€",
+      "id": "r5"
+    },
+    {
+      "nom": "Blanca Café",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Maârif",
+      "description": "Tajines et grillades dans un cadre moderne.",
+      "mapsUrl": "https://maps.google.com/?q=Blanca+Caf%C3%A9+Casablanca",
+      "priceRange": "€€",
+      "id": "r8"
+    },
+    {
+      "nom": "Snack Amine",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Centre-ville",
+      "description": "Sandwichs et grillades populaires, halal.",
+      "mapsUrl": "https://maps.google.com/?q=Snack+Amine+Casablanca",
+      "priceRange": "€",
+      "id": "r9"
+    },
+    {
+      "nom": "Iloli",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Gauthier",
+      "description": "Sushis et cuisine japonaise (halal).",
+      "mapsUrl": "https://maps.google.com/?q=Iloli+Casablanca",
+      "priceRange": "€€€",
+      "id": "r10"
+    },
+    {
+      "nom": "Al Mounia",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Centre-ville",
+      "description": "Maison marocaine classique sous les arbres.",
+      "mapsUrl": "https://maps.google.com/?q=Al+Mounia+Casablanca",
+      "priceRange": "€€",
+      "id": "r11"
+    },
+    {
+      "nom": "Ostrea",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Port de pêche",
+      "description": "Fruits de mer frais du port.",
+      "mapsUrl": "https://maps.google.com/?q=Ostrea+Casablanca",
+      "priceRange": "€€€",
+      "id": "r12"
     }
   ],
   "mosquees": [
@@ -294,6 +360,48 @@
       "mapsUrl": "https://maps.google.com/?q=Ibis+Casablanca+City+Center+Casablanca",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca"
+    },
+    {
+      "nom": "Four Seasons Casablanca",
+      "categorie": "Luxe",
+      "score": 4.7,
+      "adresse": "Corniche, Ain Diab",
+      "description": "Hôtel balnéaire face à l'Atlantique.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Casablanca+Casablanca",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca",
+      "priceRange": "€€€€",
+      "id": "h4"
+    },
+    {
+      "nom": "Hôtel Idou Anfa",
+      "categorie": "Standard",
+      "score": 4.2,
+      "adresse": "Bd d'Anfa",
+      "description": "Hôtel central avec vue sur la ville.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Idou+Anfa+Casablanca",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca",
+      "priceRange": "€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Riad Dar El Kébira",
+      "categorie": "Riad & Boutique",
+      "score": 4.5,
+      "adresse": "Ancienne médina",
+      "description": "Riad restauré au cœur de la médina.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Riad+Dar+El+K%C3%A9bira+Casablanca",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Casablanca&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Casablanca",
+      "priceRange": "€€",
+      "id": "h6"
     }
   ],
   "activites": [
@@ -355,6 +463,60 @@
       ],
       "categorie": "Hammam & Bien-être",
       "mapsUrl": "https://maps.google.com/?q=La+Fabrique+Culturelle+Casablanca"
+    },
+    {
+      "nom": "Mosquée Hassan II",
+      "categorie": "Religieux & Spirituel",
+      "description": "Immense mosquée sur l'océan, minaret de 210 m. Visites guidées.",
+      "duree": "1-2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Hassan+II+Casablanca",
+      "id": "a5"
+    },
+    {
+      "nom": "Ancienne médina",
+      "categorie": "Histoire & Culture",
+      "description": "Ruelles historiques et artisanat.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Ancienne+m%C3%A9dina+Casablanca",
+      "id": "a6"
+    },
+    {
+      "nom": "Corniche Ain Diab",
+      "categorie": "Nature & Plein air",
+      "description": "Front de mer, cafés et promenade.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Corniche+Ain+Diab+Casablanca",
+      "id": "a7"
+    },
+    {
+      "nom": "Quartier Habous",
+      "categorie": "Shopping & Souks",
+      "description": "Médina néo-mauresque, pâtisseries et babouches.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+Habous+Casablanca",
+      "id": "a8"
+    },
+    {
+      "nom": "Place Mohammed V",
+      "categorie": "Histoire & Culture",
+      "description": "Architecture mauresque-Art déco emblématique.",
+      "duree": "45 min",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Place+Mohammed+V+Casablanca",
+      "id": "a9"
+    },
+    {
+      "nom": "Marché Central",
+      "categorie": "Gastronomie",
+      "description": "Marché animé d'épices, fruits et poissons.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Central+Casablanca",
+      "id": "a10"
     }
   ],
   "road_trips": [

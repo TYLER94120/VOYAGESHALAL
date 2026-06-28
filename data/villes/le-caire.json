@@ -162,6 +162,72 @@
       "score": 4.6,
       "priceRange": "300–700 EGP",
       "mapsUrl": "https://maps.google.com/?q=Bab+El-Sharq+Le+Caire"
+    },
+    {
+      "nom": "Abou El Sid",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Zamalek",
+      "description": "Cuisine égyptienne classique dans un décor oriental.",
+      "mapsUrl": "https://maps.google.com/?q=Abou+El+Sid+Le+Caire",
+      "priceRange": "€€",
+      "id": "r5"
+    },
+    {
+      "nom": "Naguib Mahfouz Café",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Khan el-Khalili",
+      "description": "Oasis raffinée au cœur du grand souk.",
+      "mapsUrl": "https://maps.google.com/?q=Naguib+Mahfouz+Caf%C3%A9+Le+Caire",
+      "priceRange": "€€",
+      "id": "r7"
+    },
+    {
+      "nom": "Felfela",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Downtown",
+      "description": "Institution du falafel et de la cuisine baladi.",
+      "mapsUrl": "https://maps.google.com/?q=Felfela+Le+Caire",
+      "priceRange": "€",
+      "id": "r9"
+    },
+    {
+      "nom": "Zööba",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Zamalek",
+      "description": "Street food égyptienne moderne et colorée.",
+      "mapsUrl": "https://maps.google.com/?q=Z%C3%B6%C3%B6ba+Le+Caire",
+      "priceRange": "€",
+      "id": "r10"
+    },
+    {
+      "nom": "Andrea El Mariouteya",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Giza",
+      "description": "Poulet grillé et mezzés en plein air.",
+      "mapsUrl": "https://maps.google.com/?q=Andrea+El+Mariouteya+Le+Caire",
+      "priceRange": "€€",
+      "id": "r11"
+    },
+    {
+      "nom": "Kazaz",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Mohandessin",
+      "description": "Grillades et mezzés levantins.",
+      "mapsUrl": "https://maps.google.com/?q=Kazaz+Le+Caire",
+      "priceRange": "€€",
+      "id": "r12"
     }
   ],
   "mosquees": [
@@ -294,6 +360,48 @@
       "mapsUrl": "https://maps.google.com/?q=Steigenberger+Hotel+El+Tahrir+Le+Caire",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire"
+    },
+    {
+      "nom": "Marriott Mena House",
+      "categorie": "Luxe",
+      "score": 4.7,
+      "adresse": "Pyramides, Giza",
+      "description": "Palace historique face aux pyramides.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Marriott+Mena+House+Le+Caire",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire",
+      "priceRange": "€€€€",
+      "id": "h4"
+    },
+    {
+      "nom": "Kempinski Nile",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Garden City",
+      "description": "Hôtel élégant au bord du Nil.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Kempinski+Nile+Le+Caire",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire",
+      "priceRange": "€€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Steigenberger El Tahrir",
+      "categorie": "Standard",
+      "score": 4.4,
+      "adresse": "Downtown",
+      "description": "Confortable et central, proche du musée.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Steigenberger+El+Tahrir+Le+Caire",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire",
+      "priceRange": "€€",
+      "id": "h6"
     }
   ],
   "activites": [
@@ -353,6 +461,42 @@
       ],
       "categorie": "Histoire & Culture",
       "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+le+Nil+Le+Caire"
+    },
+    {
+      "nom": "Mosquée Al-Azhar",
+      "categorie": "Religieux & Spirituel",
+      "description": "Mosquée et université millénaire de l'Islam sunnite.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Azhar+Le+Caire",
+      "id": "a6"
+    },
+    {
+      "nom": "Mosquée Mohamed Ali",
+      "categorie": "Religieux & Spirituel",
+      "description": "Mosquée d'albâtre dominant la Citadelle.",
+      "duree": "1h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Mohamed+Ali+Le+Caire",
+      "id": "a7"
+    },
+    {
+      "nom": "Musée égyptien",
+      "categorie": "Histoire & Culture",
+      "description": "Trésors de Toutânkhamon et momies royales.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+%C3%A9gyptien+Le+Caire",
+      "id": "a9"
+    },
+    {
+      "nom": "Le Caire copte",
+      "categorie": "Histoire & Culture",
+      "description": "Quartier historique, contexte culturel.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Le+Caire+copte+Le+Caire",
+      "id": "a10"
     }
   ],
   "road_trips": [

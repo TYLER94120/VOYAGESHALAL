@@ -162,6 +162,83 @@
       "score": 4.4,
       "priceRange": "€",
       "mapsUrl": "https://maps.google.com/?q=HMart+Food+Court+Londres"
+    },
+    {
+      "nom": "Dishoom",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Covent Garden",
+      "description": "Café irani bombayite, adresse culte (halal sur demande).",
+      "mapsUrl": "https://maps.google.com/?q=Dishoom+Londres",
+      "priceRange": "€€",
+      "id": "r6"
+    },
+    {
+      "nom": "Roti King",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Euston",
+      "description": "Roti canai malaisien, file d'attente garantie.",
+      "mapsUrl": "https://maps.google.com/?q=Roti+King+Londres",
+      "priceRange": "€",
+      "id": "r7"
+    },
+    {
+      "nom": "Berenjak",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Soho",
+      "description": "Grillades iraniennes façon taverne de Téhéran.",
+      "mapsUrl": "https://maps.google.com/?q=Berenjak+Londres",
+      "priceRange": "€€",
+      "id": "r8"
+    },
+    {
+      "nom": "Gökyüzü",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Green Lanes",
+      "description": "Festin turc généreux, grillades au charbon.",
+      "mapsUrl": "https://maps.google.com/?q=G%C3%B6ky%C3%BCz%C3%BC+Londres",
+      "priceRange": "€€",
+      "id": "r9"
+    },
+    {
+      "nom": "Damas Rose",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Edgware Road",
+      "description": "Cuisine syrienne et levantine authentique.",
+      "mapsUrl": "https://maps.google.com/?q=Damas+Rose+Londres",
+      "priceRange": "€€",
+      "id": "r10"
+    },
+    {
+      "nom": "Humble Chicken",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Soho",
+      "description": "Yakitori raffiné (option halal).",
+      "mapsUrl": "https://maps.google.com/?q=Humble+Chicken+Londres",
+      "priceRange": "€€€",
+      "id": "r11"
+    },
+    {
+      "nom": "Naughty Piglets",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Brixton",
+      "description": "Petites assiettes de saison, légumes.",
+      "mapsUrl": "https://maps.google.com/?q=Naughty+Piglets+Londres",
+      "priceRange": "€€",
+      "id": "r12"
     }
   ],
   "mosquees": [
@@ -292,6 +369,48 @@
       "mapsUrl": "https://maps.google.com/?q=Park+Plaza+London+Waterloo+Londres",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres"
+    },
+    {
+      "nom": "The Landmark London",
+      "categorie": "Luxe",
+      "score": 4.7,
+      "adresse": "Marylebone",
+      "description": "Palace victorien à l'atrium spectaculaire.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=The+Landmark+London+Londres",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
+      "priceRange": "€€€€",
+      "id": "h4"
+    },
+    {
+      "nom": "Park Grand Paddington",
+      "categorie": "Standard",
+      "score": 4.4,
+      "adresse": "Paddington",
+      "description": "Confortable et central, proche d'Edgware Road.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Park+Grand+Paddington+Londres",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
+      "priceRange": "€€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Point A Hotel Kings Cross",
+      "categorie": "Budget",
+      "score": 4.3,
+      "adresse": "Kings Cross",
+      "description": "Chambres modernes économiques.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Point+A+Hotel+Kings+Cross+Londres",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
+      "priceRange": "€€",
+      "id": "h6"
     }
   ],
   "activites": [
@@ -354,6 +473,51 @@
       ],
       "categorie": "Nature & Plein air",
       "mapsUrl": "https://maps.google.com/?q=Hyde+Park+%26+Kensington+Gardens+Londres"
+    },
+    {
+      "nom": "Mosquée centrale de Londres",
+      "categorie": "Religieux & Spirituel",
+      "description": "Grande mosquée au dôme doré près de Regent's Park.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Londres+Londres",
+      "id": "a5"
+    },
+    {
+      "nom": "Tower of London",
+      "categorie": "Histoire & Culture",
+      "description": "Forteresse millénaire et joyaux de la Couronne.",
+      "duree": "2-3h",
+      "prix": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Tower+of+London+Londres",
+      "id": "a7"
+    },
+    {
+      "nom": "Edgware Road",
+      "categorie": "Gastronomie",
+      "description": "Le quartier arabe de Londres, cafés et chicha sans alcool.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Edgware+Road+Londres",
+      "id": "a8"
+    },
+    {
+      "nom": "Borough Market",
+      "categorie": "Gastronomie",
+      "description": "Marché gastronomique, nombreux stands halal.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Borough+Market+Londres",
+      "id": "a9"
+    },
+    {
+      "nom": "Hyde Park",
+      "categorie": "Nature & Plein air",
+      "description": "Grand parc royal au cœur de Londres.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Hyde+Park+Londres",
+      "id": "a10"
     }
   ],
   "road_trips": [

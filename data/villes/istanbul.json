@@ -162,6 +162,72 @@
       "score": 4.8,
       "priceRange": "€",
       "mapsUrl": "https://maps.google.com/?q=Kara%D0%BA%C3%B6y+G%C3%BCll%C3%BCo%C4%9Flu+Istanbul"
+    },
+    {
+      "nom": "Develi Bakliyat",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Samatya, Fatih",
+      "description": "Spécialiste du kebab depuis 1912.",
+      "mapsUrl": "https://maps.google.com/?q=Develi+Bakliyat+Istanbul",
+      "priceRange": "€€",
+      "id": "r5"
+    },
+    {
+      "nom": "Karaköy Lokantası",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Karaköy",
+      "description": "Cuisine turque raffinée, mezzés.",
+      "mapsUrl": "https://maps.google.com/?q=Karak%C3%B6y+Lokantas%C4%B1+Istanbul",
+      "priceRange": "€€",
+      "id": "r8"
+    },
+    {
+      "nom": "Pandeli",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Bazar égyptien, Eminönü",
+      "description": "Restaurant historique sous les voûtes turquoise.",
+      "mapsUrl": "https://maps.google.com/?q=Pandeli+Istanbul",
+      "priceRange": "€€€",
+      "id": "r9"
+    },
+    {
+      "nom": "Fatih Damak Pide",
+      "type": "Pizza & Italien",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Fatih",
+      "description": "Les meilleurs pide (pizza turque) de la ville.",
+      "mapsUrl": "https://maps.google.com/?q=Fatih+Damak+Pide+Istanbul",
+      "priceRange": "€",
+      "id": "r10"
+    },
+    {
+      "nom": "Hünkar",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Nişantaşı",
+      "description": "Cuisine ottomane maison depuis 1950.",
+      "mapsUrl": "https://maps.google.com/?q=H%C3%BCnkar+Istanbul",
+      "priceRange": "€€",
+      "id": "r11"
+    },
+    {
+      "nom": "Asitane",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Edirnekapı",
+      "description": "Cuisine ottomane impériale reconstituée.",
+      "mapsUrl": "https://maps.google.com/?q=Asitane+Istanbul",
+      "priceRange": "€€€",
+      "id": "r12"
     }
   ],
   "mosquees": [
@@ -294,6 +360,48 @@
       "mapsUrl": "https://maps.google.com/?q=Erboy+Hotel+Istanbul",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul"
+    },
+    {
+      "nom": "Dersaadet Hotel Istanbul",
+      "categorie": "Riad & Boutique",
+      "score": 4.7,
+      "adresse": "Sultanahmet",
+      "description": "Maison ottomane du XIXe, sans alcool.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=Dersaadet+Hotel+Istanbul+Istanbul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
+      "priceRange": "€€",
+      "id": "h4"
+    },
+    {
+      "nom": "Sirkeci Mansion",
+      "categorie": "Standard",
+      "score": 4.7,
+      "adresse": "Sirkeci",
+      "description": "Hôtel familial proche de Topkapı, halal breakfast.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Sirkeci+Mansion+Istanbul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
+      "priceRange": "€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Hotel Amira Istanbul",
+      "categorie": "Standard",
+      "score": 4.8,
+      "adresse": "Sultanahmet",
+      "description": "Boutique-hôtel chaleureux, terrasse vue mer.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Hotel+Amira+Istanbul+Istanbul",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
+      "priceRange": "€€",
+      "id": "h6"
     }
   ],
   "activites": [
@@ -354,6 +462,51 @@
       ],
       "categorie": "Histoire & Culture",
       "mapsUrl": "https://maps.google.com/?q=Palais+de+Topkapi+Istanbul"
+    },
+    {
+      "nom": "Mosquée Bleue Sultanahmet",
+      "categorie": "Religieux & Spirituel",
+      "description": "Mosquée aux 6 minarets, ouverte aux visiteurs hors prière.",
+      "duree": "45 min",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bleue+Sultanahmet+Istanbul",
+      "id": "a5"
+    },
+    {
+      "nom": "Sainte-Sophie",
+      "categorie": "Religieux & Spirituel",
+      "description": "Ancienne basilique redevenue mosquée en 2020.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Sainte-Sophie+Istanbul",
+      "id": "a6"
+    },
+    {
+      "nom": "Palais de Topkapı",
+      "categorie": "Histoire & Culture",
+      "description": "Résidence des sultans, reliques sacrées de l'Islam.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Palais+de+Topkap%C4%B1+Istanbul",
+      "id": "a7"
+    },
+    {
+      "nom": "Mosquée Süleymaniye",
+      "categorie": "Religieux & Spirituel",
+      "description": "Chef-d'œuvre de Sinan, vue sur la Corne d'Or.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+S%C3%BCleymaniye+Istanbul",
+      "id": "a9"
+    },
+    {
+      "nom": "Citerne Basilique",
+      "categorie": "Histoire & Culture",
+      "description": "Citerne byzantine souterraine spectaculaire.",
+      "duree": "45 min",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Citerne+Basilique+Istanbul",
+      "id": "a10"
     }
   ],
   "road_trips": [

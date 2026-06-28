@@ -162,6 +162,83 @@
       "score": 4.4,
       "priceRange": "€",
       "mapsUrl": "https://maps.google.com/?q=Breakfast+in+America+Paris"
+    },
+    {
+      "nom": "L'As du Fallafel",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Rue des Rosiers, 75004",
+      "description": "Le falafel le plus réputé de Paris.",
+      "mapsUrl": "https://maps.google.com/?q=L%27As+du+Fallafel+Paris",
+      "priceRange": "€",
+      "id": "r6"
+    },
+    {
+      "nom": "Chez Hamadi",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "75005",
+      "description": "Couscous et tajines tunisiens conviviaux.",
+      "mapsUrl": "https://maps.google.com/?q=Chez+Hamadi+Paris",
+      "priceRange": "€€",
+      "id": "r7"
+    },
+    {
+      "nom": "Urfa Dürüm",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Faubourg Saint-Denis",
+      "description": "Dürüm kurde grillé au feu de bois.",
+      "mapsUrl": "https://maps.google.com/?q=Urfa+D%C3%BCr%C3%BCm+Paris",
+      "priceRange": "€",
+      "id": "r8"
+    },
+    {
+      "nom": "Le Camondo",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "75008",
+      "description": "Cuisine levantine raffinée près du parc Monceau.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Camondo+Paris",
+      "priceRange": "€€€",
+      "id": "r9"
+    },
+    {
+      "nom": "Gemini Halal Burger",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "75011",
+      "description": "Smash burgers halal très populaires.",
+      "mapsUrl": "https://maps.google.com/?q=Gemini+Halal+Burger+Paris",
+      "priceRange": "€€",
+      "id": "r10"
+    },
+    {
+      "nom": "Sadarnac",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "75020",
+      "description": "Bistro de saison, options végétariennes.",
+      "mapsUrl": "https://maps.google.com/?q=Sadarnac+Paris",
+      "priceRange": "€€",
+      "id": "r11"
+    },
+    {
+      "nom": "Mosquée de Paris — Restaurant",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Rue Geoffroy, 75005",
+      "description": "Thé à la menthe et cuisine nord-africaine.",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+Paris+%E2%80%94+Restaurant+Paris",
+      "priceRange": "€€",
+      "id": "r12"
     }
   ],
   "mosquees": [
@@ -292,6 +369,48 @@
       "mapsUrl": "https://maps.google.com/?q=ibis+Paris+Gare+du+Nord+Paris",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris"
+    },
+    {
+      "nom": "Le Royal Monceau",
+      "categorie": "Luxe",
+      "score": 4.7,
+      "adresse": "Avenue Hoche, 75008",
+      "description": "Palace contemporain près des Champs-Élysées.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Le+Royal+Monceau+Paris",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
+      "priceRange": "€€€€",
+      "id": "h4"
+    },
+    {
+      "nom": "Hôtel Dupond-Smith",
+      "categorie": "Riad & Boutique",
+      "score": 4.6,
+      "adresse": "Le Marais, 75004",
+      "description": "Boutique-hôtel intime au cœur du Marais.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Dupond-Smith+Paris",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
+      "priceRange": "€€€",
+      "id": "h5"
+    },
+    {
+      "nom": "Hôtel Magenta 38",
+      "categorie": "Budget",
+      "score": 4.3,
+      "adresse": "Gare du Nord, 75010",
+      "description": "Hôtel propre et central, bon rapport qualité-prix.",
+      "halalFriendly": true,
+      "sansAlcool": true,
+      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Magenta+38+Paris",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
+      "priceRange": "€€",
+      "id": "h6"
     }
   ],
   "activites": [
@@ -354,6 +473,60 @@
       ],
       "categorie": "Histoire & Culture",
       "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+la+Seine+Paris"
+    },
+    {
+      "nom": "Grande Mosquée de Paris",
+      "categorie": "Religieux & Spirituel",
+      "description": "Joyau hispano-mauresque de 1926, patio et salon de thé.",
+      "duree": "1h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Paris+Paris",
+      "id": "a5"
+    },
+    {
+      "nom": "Institut du Monde Arabe",
+      "categorie": "Histoire & Culture",
+      "description": "Architecture de Jean Nouvel, art et terrasse panoramique.",
+      "duree": "1-2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Institut+du+Monde+Arabe+Paris",
+      "id": "a6"
+    },
+    {
+      "nom": "Musée du Louvre — Arts de l'Islam",
+      "categorie": "Histoire & Culture",
+      "description": "Collection d'art islamique sous la verrière dorée.",
+      "duree": "2-3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+du+Louvre+%E2%80%94+Arts+de+l%27Islam+Paris",
+      "id": "a7"
+    },
+    {
+      "nom": "Tour Eiffel",
+      "categorie": "Histoire & Culture",
+      "description": "Le monument emblématique de Paris.",
+      "duree": "1-2h",
+      "prix": "€€€",
+      "mapsUrl": "https://maps.google.com/?q=Tour+Eiffel+Paris",
+      "id": "a8"
+    },
+    {
+      "nom": "Quartier de Belleville",
+      "categorie": "Gastronomie",
+      "description": "Quartier cosmopolite, nombreuses adresses halal.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+de+Belleville+Paris",
+      "id": "a9"
+    },
+    {
+      "nom": "Jardin du Luxembourg",
+      "categorie": "Nature & Plein air",
+      "description": "Grand jardin à la française.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Jardin+du+Luxembourg+Paris",
+      "id": "a10"
     }
   ],
   "road_trips": [

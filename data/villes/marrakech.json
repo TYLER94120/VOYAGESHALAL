@@ -162,6 +162,72 @@
       "score": 4.4,
       "priceRange": "€",
       "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+des+%C3%89pices+Marrakech"
+    },
+    {
+      "nom": "Dar Yacout",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Médina, Marrakech",
+      "description": "Dîner marocain dans un palais somptueux.",
+      "mapsUrl": "https://maps.google.com/?q=Dar+Yacout+Marrakech",
+      "priceRange": "€€€",
+      "id": "r5"
+    },
+    {
+      "nom": "Le Tobsil",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Médina",
+      "description": "Cuisine marocaine raffinée en menu dégustation.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Tobsil+Marrakech",
+      "priceRange": "€€€",
+      "id": "r6"
+    },
+    {
+      "nom": "Café Clock",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Kasbah",
+      "description": "Camel burger halal et scène culturelle.",
+      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Clock+Marrakech",
+      "priceRange": "€€",
+      "id": "r7"
+    },
+    {
+      "nom": "Mechoui Alley",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Jemaa el-Fna",
+      "description": "Agneau rôti traditionnel des stands de la place.",
+      "mapsUrl": "https://maps.google.com/?q=Mechoui+Alley+Marrakech",
+      "priceRange": "€",
+      "id": "r9"
+    },
+    {
+      "nom": "Amal Restaurant",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Gueliz",
+      "description": "Association formant des femmes, cuisine maison.",
+      "mapsUrl": "https://maps.google.com/?q=Amal+Restaurant+Marrakech",
+      "priceRange": "€",
+      "id": "r10"
+    },
+    {
+      "nom": "Naranj",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Médina",
+      "description": "Cuisine levantine, mezzés et grillades.",
+      "mapsUrl": "https://maps.google.com/?q=Naranj+Marrakech",
+      "priceRange": "€€",
+      "id": "r12"
     }
   ],
   "mosquees": [
@@ -295,6 +361,34 @@
       "mapsUrl": "https://maps.google.com/?q=Riad+Kniza+Marrakech",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech"
+    },
+    {
+      "nom": "La Mamounia",
+      "categorie": "Luxe",
+      "score": 4.8,
+      "adresse": "Avenue Bab Jdid",
+      "description": "Palace légendaire, jardins et spa.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=La+Mamounia+Marrakech",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
+      "priceRange": "€€€€",
+      "id": "h4"
+    },
+    {
+      "nom": "Les Jardins de la Koutoubia",
+      "categorie": "Standard",
+      "score": 4.5,
+      "adresse": "Médina",
+      "description": "Hôtel central avec piscine, proche Jemaa el-Fna.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Les+Jardins+de+la+Koutoubia+Marrakech",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
+      "priceRange": "€€€",
+      "id": "h6"
     }
   ],
   "activites": [
@@ -373,6 +467,60 @@
       ],
       "categorie": "Histoire & Culture",
       "mapsUrl": "https://maps.google.com/?q=Place+Jemaa+el-Fna+au+coucher+du+soleil+Marrakech"
+    },
+    {
+      "nom": "Mosquée Koutoubia",
+      "categorie": "Religieux & Spirituel",
+      "description": "Mosquée emblématique au minaret de 77 m.",
+      "duree": "30 min",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Koutoubia+Marrakech",
+      "id": "a6"
+    },
+    {
+      "nom": "Médersa Ben Youssef",
+      "categorie": "Histoire & Culture",
+      "description": "Ancienne école coranique au décor zellige.",
+      "duree": "1h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dersa+Ben+Youssef+Marrakech",
+      "id": "a7"
+    },
+    {
+      "nom": "Place Jemaa el-Fna",
+      "categorie": "Shopping & Souks",
+      "description": "Place mythique, conteurs et stands halal.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Place+Jemaa+el-Fna+Marrakech",
+      "id": "a8"
+    },
+    {
+      "nom": "Jardin Majorelle",
+      "categorie": "Nature & Plein air",
+      "description": "Jardin botanique bleu cobalt.",
+      "duree": "1-2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Jardin+Majorelle+Marrakech",
+      "id": "a9"
+    },
+    {
+      "nom": "Souks de la médina",
+      "categorie": "Shopping & Souks",
+      "description": "Labyrinthe d'artisanat : cuir, tapis, épices.",
+      "duree": "2-3h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Souks+de+la+m%C3%A9dina+Marrakech",
+      "id": "a10"
+    },
+    {
+      "nom": "Palais Bahia",
+      "categorie": "Histoire & Culture",
+      "description": "Palais du XIXe aux patios et plafonds peints.",
+      "duree": "1h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Palais+Bahia+Marrakech",
+      "id": "a11"
     }
   ],
   "road_trips": [
