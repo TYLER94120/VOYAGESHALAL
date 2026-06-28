@@ -2,11 +2,16 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
+import { useLocation } from '@/components/location/LocationProvider'
 
 export default function BottomNav() {
   const pathname = usePathname()
   const { t } = useLanguage()
+  const { city } = useLocation()
   const isActive = (path: string) => pathname === path || pathname.startsWith(path + '/')
+
+  // « Restos » mène à la ville mémorisée (onglet restos), sinon à la liste des destinations
+  const restosHref = city ? `/destinations/${city.slug}` : '/destinations'
 
   return (
     <nav className="bottom-nav">
@@ -14,27 +19,21 @@ export default function BottomNav() {
         <span className="bottom-nav-icon">🏠</span>
         <span className="bottom-nav-label">{t('bottom.home')}</span>
       </Link>
-      <Link
-        href="/destinations"
-        className={`bottom-nav-item ${isActive('/destinations') ? 'active' : ''}`}
-      >
-        <span className="bottom-nav-icon">🗺️</span>
-        <span className="bottom-nav-label">{t('bottom.destinations')}</span>
+      <Link href={restosHref} className={`bottom-nav-item ${isActive('/destinations') ? 'active' : ''}`}>
+        <span className="bottom-nav-icon">🍽</span>
+        <span className="bottom-nav-label">Restos</span>
       </Link>
-      <Link
-        href="/horaires-priere"
-        className={`bottom-nav-item ${isActive('/horaires-priere') ? 'active' : ''}`}
-      >
+      <Link href="/mosquee-proche" className={`bottom-nav-item ${isActive('/mosquee-proche') ? 'active' : ''}`}>
+        <span className="bottom-nav-icon">🕌</span>
+        <span className="bottom-nav-label">{t('bottom.mosque')}</span>
+      </Link>
+      <Link href="/horaires-priere" className={`bottom-nav-item ${isActive('/horaires-priere') ? 'active' : ''}`}>
         <span className="bottom-nav-icon">🕐</span>
         <span className="bottom-nav-label">{t('bottom.prayer')}</span>
       </Link>
       <Link href="/qibla" className={`bottom-nav-item ${isActive('/qibla') ? 'active' : ''}`}>
         <span className="bottom-nav-icon">🧭</span>
         <span className="bottom-nav-label">{t('bottom.qibla')}</span>
-      </Link>
-      <Link href="/mosquee-proche" className={`bottom-nav-item ${isActive('/mosquee-proche') ? 'active' : ''}`}>
-        <span className="bottom-nav-icon">🕌</span>
-        <span className="bottom-nav-label">{t('bottom.mosque')}</span>
       </Link>
     </nav>
   )

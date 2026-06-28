@@ -6,6 +6,7 @@ import SearchBarHome from '@/components/search/SearchBarHome'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import GeoDashboard from '@/components/mobile/GeoDashboard'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
+import LocationBar from '@/components/location/LocationBar'
 
 interface Destination {
   slug: string
@@ -114,10 +115,13 @@ export default function MobileHome({ totalVilles, destinations }: { totalVilles:
       <section style={{ position: 'relative', overflow: 'hidden', background: '#0b1a0f', padding: '20px 18px 26px' }}>
         <IslamicPattern opacity={0.07} />
         <div style={{ position: 'relative', zIndex: 10 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '14px' }}>
             <span style={{ display: 'flex', alignItems: 'center', gap: '7px', color: '#fff', fontWeight: 700, fontSize: '16px' }}>
               <span style={{ color: '#c9a84c' }}>✦</span> VoyagesHalal
             </span>
+          </div>
+          <div style={{ margin: '0 -4px 14px', borderRadius: '14px', overflow: 'hidden', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(201,168,76,0.25)' }}>
+            <LocationBar dark={false} />
           </div>
           <h1 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900, fontSize: '27px', color: '#fff', lineHeight: 1.15, marginBottom: '16px' }}>
             As-salāmu ʿalaykum,
