@@ -6,8 +6,8 @@
   "image_hero": "https://images.unsplash.com/photo-1517090504586-fde19ea6066f?w=1400&q=85",
   "description": "Toronto, ville la plus multiculturelle du monde, possède une immense scène halal. Tour CN, quartiers sud-asiatiques et arabes, mosquées et diversité à chaque coin de rue.",
   "descriptionLongue": "Capitale économique du Canada et l'une des villes les plus multiculturelles de la planète, Toronto abrite une vaste communauté musulmane originaire d'Asie du Sud, du Moyen-Orient et d'Afrique. Les quartiers de Thorncliffe Park, Scarborough et la « Little India » de Gerrard Street regorgent de restaurants halal. Entre la tour CN, les chutes du Niagara toutes proches et des dizaines de mosquées, Toronto est un modèle de coexistence.",
-  "halalScore": 8.3,
-  "score_halal": 4.2,
+  "halalScore": 8.0,
+  "score_halal": 4.0,
   "mosquees": 120,
   "population": "3 millions",
   "langue": "Anglais",
@@ -50,196 +50,340 @@
   },
   "restaurants": [
     {
-      "nom": "Lahore Tikka House",
-      "type": "Indien & Pakistani",
+      "nom": "Paramount Fine Foods",
+      "type": "Libanais & Levant",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Little India",
-      "description": "Institution pakistanaise de Gerrard Street",
-      "mapsUrl": "https://maps.google.com/?q=Lahore+Tikka+House+Toronto",
-      "priceRange": "€€",
-      "specialite": "Tikka et biryani",
+      "halalFriendly": true,
+      "score": 4.9,
+      "adresse": "Toronto",
+      "description": "Libanais-levant, institution à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Paramount+Fine+Foods+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Libanais-levant",
+      "nombreAvis": 487,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ],
       "id": "r1"
     },
     {
-      "nom": "Paramount Fine Foods",
-      "type": "Traditionnel local",
+      "nom": "Yasmine Restaurant",
+      "type": "Marocain & Maghreb",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre",
-      "description": "Chaîne libanaise halal très populaire",
-      "mapsUrl": "https://maps.google.com/?q=Paramount+Fine+Foods+Toronto",
-      "priceRange": "€€",
-      "specialite": "Cuisine libanaise",
+      "halalFriendly": true,
+      "score": 4.8,
+      "adresse": "Toronto",
+      "description": "Marocain gastronomique à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Yasmine+Restaurant+Toronto",
+      "priceRange": "€€€€",
+      "specialite": "Marocain gastronomique",
+      "nombreAvis": 1373,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "familial"
+      ],
       "id": "r2"
     },
     {
-      "nom": "Karahi Boys",
-      "type": "Indien & Pakistani",
+      "nom": "Khao San Road",
+      "type": "Japonais & Asiatique",
       "certificationHalal": true,
+      "halalFriendly": true,
       "score": 4.4,
-      "adresse": "Scarborough",
-      "description": "Karahi de poulet réputé",
-      "mapsUrl": "https://maps.google.com/?q=Karahi+Boys+Toronto",
-      "priceRange": "€",
-      "specialite": "Karahi",
+      "adresse": "Toronto",
+      "description": "Thaï halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Khao+San+Road+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Thaï halal",
+      "nombreAvis": 2540,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
       "id": "r3"
     },
     {
-      "nom": "Mythic Indian Cuisine",
-      "type": "Indien & Pakistani",
+      "nom": "Lee Restaurant",
+      "type": "Japonais & Asiatique",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Downtown",
-      "description": "Cuisine indienne moderne halal",
-      "mapsUrl": "https://maps.google.com/?q=Mythic+Indian+Cuisine+Toronto",
-      "priceRange": "€€",
-      "specialite": "Cuisine indienne",
+      "halalFriendly": true,
+      "score": 4.2,
+      "adresse": "Toronto",
+      "description": "Fusion asiatique halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Lee+Restaurant+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Fusion asiatique halal",
+      "nombreAvis": 79,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
       "id": "r4"
     },
     {
-      "nom": "iQ Food Co Halal",
-      "type": "Grillades & Kebab",
+      "nom": "Byblos Toronto",
+      "type": "Libanais & Levant",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Financial District",
-      "description": "Cuisine saine halal",
-      "mapsUrl": "https://maps.google.com/?q=iQ+Food+Co+Halal+Toronto",
-      "priceRange": "€€",
-      "specialite": "Bowls et grillades",
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Toronto",
+      "description": "Moyen-Orient gastronomique à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Byblos+Toronto+Toronto",
+      "priceRange": "€€€€",
+      "specialite": "Moyen-orient gastronomique",
+      "nombreAvis": 2536,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ],
       "id": "r5"
     },
     {
-      "nom": "Al Madina Toronto",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
+      "nom": "Café Boulud Toronto",
+      "type": "Gastronomique",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.4,
       "adresse": "Toronto",
-      "description": "Adresse halal appréciée des habitants de Toronto.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Toronto+Toronto",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
+      "description": "Français, options halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Boulud+Toronto+Toronto",
+      "priceRange": "€€€€",
+      "specialite": "Français",
+      "nombreAvis": 316,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
       "id": "r6"
     },
     {
-      "nom": "Shawarma House Toronto",
-      "type": "Grillades & Kebab",
+      "nom": "Canoe Restaurant",
+      "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.3,
+      "halalFriendly": true,
+      "score": 4.5,
       "adresse": "Toronto",
-      "description": "Adresse halal appréciée des habitants de Toronto.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Toronto+Toronto",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
+      "description": "Canadien gastronomique à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Canoe+Restaurant+Toronto",
+      "priceRange": "€€€€",
+      "specialite": "Canadien gastronomique",
+      "nombreAvis": 477,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
       "id": "r7"
     },
     {
-      "nom": "Beit Beirut Toronto",
-      "type": "Libanais & Levant",
+      "nom": "George Restaurant Toronto",
+      "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.4,
+      "halalFriendly": true,
+      "score": 4.2,
       "adresse": "Toronto",
-      "description": "Adresse halal appréciée des habitants de Toronto.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Toronto+Toronto",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
+      "description": "Gastronomique à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=George+Restaurant+Toronto+Toronto",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique",
+      "nombreAvis": 994,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
       "id": "r8"
     },
     {
-      "nom": "Spice Route Toronto",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
+      "nom": "Alo Restaurant",
+      "type": "Gastronomique",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.2,
       "adresse": "Toronto",
-      "description": "Adresse halal appréciée des habitants de Toronto.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Toronto+Toronto",
-      "priceRange": "€€",
-      "specialite": "Biryani",
+      "description": "Français gastronomique, options halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Alo+Restaurant+Toronto",
+      "priceRange": "€€€€",
+      "specialite": "Français gastronomique",
+      "nombreAvis": 729,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
       "id": "r9"
     },
     {
-      "nom": "Saffron Garden Toronto",
+      "nom": "Edulis",
       "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.7,
       "adresse": "Toronto",
-      "description": "Adresse halal appréciée des habitants de Toronto.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Toronto+Toronto",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
+      "description": "Méditerranéen, options halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Edulis+Toronto",
+      "priceRange": "€€€€",
+      "specialite": "Méditerranéen",
+      "nombreAvis": 1909,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
       "id": "r10"
     },
     {
-      "nom": "Green Bowl Toronto",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
+      "nom": "Ravine Vineyard",
+      "type": "International",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.7,
       "adresse": "Toronto",
-      "description": "Adresse halal appréciée des habitants de Toronto.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Toronto+Toronto",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
+      "description": "Sans alcool à Toronto. Options halal disponibles.",
+      "mapsUrl": "https://maps.google.com/?q=Ravine+Vineyard+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Sans alcool",
+      "nombreAvis": 2594,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
       "id": "r11"
     },
     {
-      "nom": "Sultan Café Toronto",
-      "type": "Pâtisserie & Café",
+      "nom": "Flock Rotisserie",
+      "type": "International",
       "certificationHalal": true,
-      "score": 4.3,
+      "halalFriendly": true,
+      "score": 4.5,
       "adresse": "Toronto",
-      "description": "Adresse halal appréciée des habitants de Toronto.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Toronto+Toronto",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
+      "description": "Poulet halal certifié à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Flock+Rotisserie+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Poulet halal certifié",
+      "nombreAvis": 193,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
       "id": "r12"
     },
     {
-      "nom": "Ocean Pearl Toronto",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
+      "nom": "Antler Kitchen",
+      "type": "International",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.7,
       "adresse": "Toronto",
-      "description": "Adresse halal appréciée des habitants de Toronto.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Toronto+Toronto",
+      "description": "Canadien, sans porc à Toronto. Options halal disponibles.",
+      "mapsUrl": "https://maps.google.com/?q=Antler+Kitchen+Toronto",
       "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
+      "specialite": "Canadien",
+      "nombreAvis": 1474,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
       "id": "r13"
     },
     {
-      "nom": "Bella Halal Toronto",
-      "type": "Pizza & Italien",
+      "nom": "Pai Northern Thai",
+      "type": "Japonais & Asiatique",
       "certificationHalal": true,
-      "score": 4.5,
+      "halalFriendly": true,
+      "score": 4.8,
       "adresse": "Toronto",
-      "description": "Adresse halal appréciée des habitants de Toronto.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Toronto+Toronto",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
+      "description": "Thaï halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Pai+Northern+Thai+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Thaï halal",
+      "nombreAvis": 88,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
       "id": "r14"
     },
     {
-      "nom": "Tokyo Halal Toronto",
-      "type": "Japonais & Asiatique",
+      "nom": "Uncle Betty's Diner",
+      "type": "International",
       "certificationHalal": true,
-      "score": 4.6000000000000005,
+      "halalFriendly": true,
+      "score": 4.3,
       "adresse": "Toronto",
-      "description": "Adresse halal appréciée des habitants de Toronto.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Toronto+Toronto",
+      "description": "Américain halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Uncle+Betty%27s+Diner+Toronto",
       "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
+      "specialite": "Américain halal",
+      "nombreAvis": 929,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
       "id": "r15"
     },
     {
-      "nom": "Halal Guys Corner",
+      "nom": "Burrito Boyz",
       "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.7,
       "adresse": "Toronto",
-      "description": "Adresse burgers & fast-food appréciée à Toronto, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Guys+Corner+Toronto",
+      "description": "Mexicain sans porc à Toronto. Options halal disponibles.",
+      "mapsUrl": "https://maps.google.com/?q=Burrito+Boyz+Toronto",
       "priceRange": "€€",
-      "specialite": "Chicken over rice",
-      "nombreAvis": 1910,
+      "specialite": "Mexicain sans porc",
+      "nombreAvis": 2669,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -252,160 +396,17 @@
       "id": "r16"
     },
     {
-      "nom": "Beirut House",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Toronto",
-      "description": "Adresse libanais & levant appréciée à Toronto, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beirut+House+Toronto",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 2363,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Shahi Palace",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Toronto",
-      "description": "Adresse indien & pakistani appréciée à Toronto, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Palace+Toronto",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1314,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Marrakech Express",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Toronto",
-      "description": "Adresse marocain appréciée à Toronto, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Marrakech+Express+Toronto",
-      "priceRange": "€€",
-      "specialite": "Tajine",
-      "nombreAvis": 931,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Anatolia Kebab",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Toronto",
-      "description": "Adresse turc appréciée à Toronto, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anatolia+Kebab+Toronto",
-      "priceRange": "€€",
-      "specialite": "Döner",
-      "nombreAvis": 2085,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Saffron Fine Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Toronto",
-      "description": "Adresse gastronomique appréciée à Toronto, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Fine+Dining+Toronto",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 136,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Sakura Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Toronto",
-      "description": "Adresse japonais & asiatique appréciée à Toronto, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Toronto",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 81,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Medina Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Toronto",
-      "description": "Adresse pâtisserie & café appréciée à Toronto, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Medina+Caf%C3%A9+Toronto",
-      "priceRange": "€€",
-      "specialite": "Baklava et café",
-      "nombreAvis": 474,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Halal Guys Corner Toronto 9",
+      "nom": "The Burger's Priest",
       "type": "Burgers & Fast-food",
       "certificationHalal": true,
-      "score": 4.8,
+      "halalFriendly": true,
+      "score": 4.3,
       "adresse": "Toronto",
-      "description": "Adresse burgers & fast-food appréciée à Toronto, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Guys+Corner+Toronto+9+Toronto",
+      "description": "Burgers halal certifiés à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=The+Burger%27s+Priest+Toronto",
       "priceRange": "€€",
-      "specialite": "Chicken over rice",
-      "nombreAvis": 1499,
+      "specialite": "Burgers halal certifiés",
+      "nombreAvis": 97,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -415,19 +416,110 @@
         "livraison",
         "rapide"
       ],
-      "id": "r24"
+      "id": "r17"
     },
     {
-      "nom": "Beirut House Toronto 10",
+      "nom": "Hero Certified Burgers",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Toronto",
+      "description": "Chaîne halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Hero+Certified+Burgers+Toronto",
+      "priceRange": "€€",
+      "specialite": "Chaîne halal",
+      "nombreAvis": 2586,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "South St. Burger",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.8,
+      "adresse": "Toronto",
+      "description": "Halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=South+St.+Burger+Toronto",
+      "priceRange": "€€",
+      "specialite": "Halal",
+      "nombreAvis": 3596,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Osmow's Shawarma",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.3,
+      "adresse": "Toronto",
+      "description": "Chaîne shawarma halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Osmow%27s+Shawarma+Toronto",
+      "priceRange": "€€",
+      "specialite": "Chaîne shawarma halal",
+      "nombreAvis": 1231,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r20"
+    },
+    {
+      "nom": "Shawarma Palace",
       "type": "Libanais & Levant",
       "certificationHalal": true,
-      "score": 4.7,
+      "halalFriendly": true,
+      "score": 4.2,
       "adresse": "Toronto",
-      "description": "Adresse libanais & levant appréciée à Toronto, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beirut+House+Toronto+10+Toronto",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 2304,
+      "description": "Shawarma populaire à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+Palace+Toronto",
+      "priceRange": "€€€€",
+      "specialite": "Shawarma populaire",
+      "nombreAvis": 618,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r21"
+    },
+    {
+      "nom": "Jerusalem Restaurant",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Toronto",
+      "description": "Israélo-palestinien halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Jerusalem+Restaurant+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Israélo-palestinien halal",
+      "nombreAvis": 2362,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -436,7 +528,397 @@
         "familial",
         "livraison"
       ],
+      "id": "r22"
+    },
+    {
+      "nom": "Tabule Restaurant",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Toronto",
+      "description": "Libanais premium à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Tabule+Restaurant+Toronto",
+      "priceRange": "€€€€",
+      "specialite": "Libanais premium",
+      "nombreAvis": 785,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Banjara Indian",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Toronto",
+      "description": "Indien populaire halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Banjara+Indian+Toronto",
+      "priceRange": "€",
+      "specialite": "Indien populaire halal",
+      "nombreAvis": 948,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r24"
+    },
+    {
+      "nom": "Lahore Tikka House",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.2,
+      "adresse": "Toronto",
+      "description": "Pakistanais populaire à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Lahore+Tikka+House+Toronto",
+      "priceRange": "€",
+      "specialite": "Pakistanais populaire",
+      "nombreAvis": 1419,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
       "id": "r25"
+    },
+    {
+      "nom": "Biryani House Toronto",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Toronto",
+      "description": "Biryani à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Biryani+House+Toronto+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Biryani",
+      "nombreAvis": 1136,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r26"
+    },
+    {
+      "nom": "Iqbal Kebab House",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.7,
+      "adresse": "Toronto",
+      "description": "Indo-pak à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Iqbal+Kebab+House+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Indo-pak",
+      "nombreAvis": 1149,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r27"
+    },
+    {
+      "nom": "Halal Tikka Master",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Toronto",
+      "description": "Populaire à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Halal+Tikka+Master+Toronto",
+      "priceRange": "€",
+      "specialite": "Populaire",
+      "nombreAvis": 607,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r28"
+    },
+    {
+      "nom": "Saffron Spice Kitchen",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Toronto",
+      "description": "Pakistanais gastronomique à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Spice+Kitchen+Toronto",
+      "priceRange": "€€€€",
+      "specialite": "Pakistanais gastronomique",
+      "nombreAvis": 1479,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r29"
+    },
+    {
+      "nom": "Hakka Chinese Toronto",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Toronto",
+      "description": "Hakka halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Hakka+Chinese+Toronto+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Hakka halal",
+      "nombreAvis": 1051,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r30"
+    },
+    {
+      "nom": "Pearl Restaurant Toronto",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Toronto",
+      "description": "Cantonais halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Pearl+Restaurant+Toronto+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Cantonais halal",
+      "nombreAvis": 151,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r31"
+    },
+    {
+      "nom": "House of Gourmet",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.2,
+      "adresse": "Toronto",
+      "description": "Hongkongais halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=House+of+Gourmet+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Hongkongais halal",
+      "nombreAvis": 660,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r32"
+    },
+    {
+      "nom": "Izakaya Ju-Zan",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.3,
+      "adresse": "Toronto",
+      "description": "Japonais halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Izakaya+Ju-Zan+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Japonais halal",
+      "nombreAvis": 1144,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r33"
+    },
+    {
+      "nom": "Sushi Marche",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Toronto",
+      "description": "Sushi halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Sushi+Marche+Toronto",
+      "priceRange": "€",
+      "specialite": "Sushi halal",
+      "nombreAvis": 126,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "rapide",
+        "touristique"
+      ],
+      "id": "r34"
+    },
+    {
+      "nom": "Aoyama Sushi",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Toronto",
+      "description": "Japonais halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Aoyama+Sushi+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Japonais halal",
+      "nombreAvis": 213,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r35"
+    },
+    {
+      "nom": "Ethiopian House Toronto",
+      "type": "Cuisine du monde",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.8,
+      "adresse": "Toronto",
+      "description": "Éthiopien halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Ethiopian+House+Toronto+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Éthiopien halal",
+      "nombreAvis": 2525,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r36"
+    },
+    {
+      "nom": "Addis Ababa Restaurant",
+      "type": "Cuisine du monde",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Toronto",
+      "description": "Éthiopien halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Addis+Ababa+Restaurant+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Éthiopien halal",
+      "nombreAvis": 2506,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r37"
+    },
+    {
+      "nom": "Coconut Grove Toronto",
+      "type": "Cuisine du monde",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Toronto",
+      "description": "Caraïbes halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Coconut+Grove+Toronto+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Caraïbes halal",
+      "nombreAvis": 2166,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r38"
+    },
+    {
+      "nom": "Jamaican Choice",
+      "type": "Cuisine du monde",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Toronto",
+      "description": "Jamaïcain halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Jamaican+Choice+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Jamaïcain halal",
+      "nombreAvis": 1545,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r39"
+    },
+    {
+      "nom": "Café Diplomatico",
+      "type": "Pizza & Italien",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Toronto",
+      "description": "Italien terrasse, options halal à Toronto.",
+      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Diplomatico+Toronto",
+      "priceRange": "€€€",
+      "specialite": "Italien terrasse",
+      "nombreAvis": 1807,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r40"
     }
   ],
   "hotels": [
@@ -452,7 +934,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Toronto&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=toronto",
       "priceRange": "€€€€",
-      "id": "h1"
+      "id": "h1",
+      "nombreAvis": 1885,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "The St. Regis Toronto",
@@ -466,7 +964,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Toronto&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=toronto",
       "priceRange": "€€€€",
-      "id": "h2"
+      "id": "h2",
+      "nombreAvis": 759,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "The Anndore House",
@@ -480,7 +994,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Toronto&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=toronto",
       "priceRange": "€€€",
-      "id": "h3"
+      "id": "h3",
+      "nombreAvis": 2279,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Toronto",
@@ -494,7 +1020,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Toronto&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=toronto",
       "priceRange": "€€€€",
-      "id": "h4"
+      "id": "h4",
+      "nombreAvis": 2124,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "City Comfort Hotel Toronto",
@@ -508,7 +1050,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Toronto&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=toronto",
       "priceRange": "€€€",
-      "id": "h5"
+      "id": "h5",
+      "nombreAvis": 460,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Boutique Riad Toronto",
@@ -522,7 +1076,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Toronto&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=toronto",
       "priceRange": "€€€",
-      "id": "h6"
+      "id": "h6",
+      "nombreAvis": 386,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Toronto 0",
@@ -590,7 +1156,14 @@
       "prix": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Tour+CN+Toronto",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+CN+Toronto",
-      "id": "a1"
+      "id": "a1",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Chutes du Niagara (excursion)",
@@ -600,7 +1173,14 @@
       "prix": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Chutes+du+Niagara+%28excursion%29+Toronto",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Chutes+du+Niagara+%28excursion%29+Toronto",
-      "id": "a2"
+      "id": "a2",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier du marché St. Lawrence",
@@ -610,7 +1190,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Quartier+du+march%C3%A9+St.+Lawrence+Toronto",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+du+march%C3%A9+St.+Lawrence+Toronto",
-      "id": "a3"
+      "id": "a3",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Royal Ontario Museum",
@@ -620,7 +1207,14 @@
       "prix": "€€",
       "mapsUrl": "https://maps.google.com/?q=Royal+Ontario+Museum+Toronto",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Royal+Ontario+Museum+Toronto",
-      "id": "a4"
+      "id": "a4",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mosquée Jami (Jami Mosque)",
@@ -630,7 +1224,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Jami+%28Jami+Mosque%29+Toronto",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Jami+%28Jami+Mosque%29+Toronto",
-      "id": "a5"
+      "id": "a5",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Islands de Toronto",
@@ -640,7 +1241,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Islands+de+Toronto+Toronto",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Islands+de+Toronto+Toronto",
-      "id": "a6"
+      "id": "a6",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Little India (Gerrard Street)",
@@ -650,7 +1258,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Little+India+%28Gerrard+Street%29+Toronto",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Little+India+%28Gerrard+Street%29+Toronto",
-      "id": "a7"
+      "id": "a7",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Distillery District",
@@ -660,7 +1275,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Distillery+District+Toronto",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Distillery+District+Toronto",
-      "id": "a8"
+      "id": "a8",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Vieille ville de Toronto",
@@ -670,7 +1292,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Toronto+Toronto",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Toronto+Toronto",
-      "id": "a9"
+      "id": "a9",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Grand souk de Toronto",
@@ -680,7 +1309,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Toronto+Toronto",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Toronto+Toronto",
-      "id": "a10"
+      "id": "a10",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier historique de Toronto",
@@ -855,51 +1491,53 @@
   ],
   "selectionsPremium": {
     "mieuxNotes": [
-      "Halal Guys Corner",
-      "Halal Guys Corner Toronto 9",
-      "Beirut House",
-      "Beirut House Toronto 10",
-      "Saffron Garden Toronto"
+      "Paramount Fine Foods",
+      "Yasmine Restaurant",
+      "Pai Northern Thai",
+      "South St. Burger",
+      "Ethiopian House Toronto"
     ],
     "meilleurRapportQualitePrix": [
-      "Lahore Tikka House",
-      "Paramount Fine Foods",
-      "Karahi Boys",
-      "Mythic Indian Cuisine",
-      "iQ Food Co Halal"
+      "Burrito Boyz",
+      "Hero Certified Burgers",
+      "South St. Burger",
+      "Halal Tikka Master"
     ],
     "incontournables": [
-      "Beirut House",
-      "Beirut House Toronto 10",
-      "Anatolia Kebab",
-      "Halal Guys Corner",
-      "Halal Guys Corner Toronto 9"
+      "South St. Burger",
+      "Burrito Boyz",
+      "Ravine Vineyard",
+      "Hero Certified Burgers",
+      "Khao San Road"
     ],
     "pepitesCachees": [
-      "Lahore Tikka House",
-      "Paramount Fine Foods",
-      "Karahi Boys"
+      "Café Boulud Toronto",
+      "Flock Rotisserie",
+      "Pai Northern Thai"
     ],
     "idealFamille": [
-      "Halal Guys Corner",
-      "Beirut House",
-      "Shahi Palace",
-      "Marrakech Express",
-      "Anatolia Kebab"
+      "Paramount Fine Foods",
+      "Yasmine Restaurant",
+      "Byblos Toronto",
+      "Ravine Vineyard",
+      "Flock Rotisserie"
     ],
     "gastronomique": [
-      "Saffron Garden Toronto",
-      "Saffron Fine Dining"
+      "Café Boulud Toronto",
+      "Canoe Restaurant",
+      "George Restaurant Toronto",
+      "Alo Restaurant",
+      "Edulis"
     ],
     "ouvertNuit": [
-      "Halal Guys Corner",
-      "Beirut House",
-      "Halal Guys Corner Toronto 9"
+      "Paramount Fine Foods",
+      "Byblos Toronto",
+      "Burrito Boyz"
     ],
     "vueExceptionnelle": [
-      "Halal Guys Corner",
-      "Halal Guys Corner Toronto 9",
-      "Beirut House"
+      "Paramount Fine Foods",
+      "Yasmine Restaurant",
+      "Pai Northern Thai"
     ]
   }
 }

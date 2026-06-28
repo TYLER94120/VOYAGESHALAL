@@ -6,8 +6,8 @@
   "image_hero": "https://images.unsplash.com/photo-1560969184-10fe8719e047?w=1400&q=85",
   "description": "Berlin, capitale créative de l'Allemagne, abrite l'une des plus grandes communautés turques d'Europe. Kreuzberg, marché turc et döner historique en font une capitale halal.",
   "descriptionLongue": "Métropole bouillonnante d'histoire et de culture, Berlin compte une vaste communauté musulmane, surtout turque et arabe. Le quartier de Kreuzberg, surnommé « petite Istanbul », vibre de restaurants halal, du marché turc du canal et du döner kebab — inventé ici dans les années 1970. Entre la porte de Brandebourg, l'Île aux musées et la mosquée Şehitlik, Berlin marie mémoire, street art et diversité.",
-  "halalScore": 7.8,
-  "score_halal": 3.9,
+  "halalScore": 7.5,
+  "score_halal": 3.8,
   "mosquees": 120,
   "population": "3,7 millions",
   "langue": "Allemand",
@@ -50,299 +50,276 @@
   },
   "restaurants": [
     {
-      "nom": "Hasir",
-      "type": "Grillades & Kebab",
+      "nom": "Mustafa's Gemüse Kebap",
+      "type": "Turc",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kreuzberg",
-      "description": "Maison historique du döner berlinois",
-      "mapsUrl": "https://maps.google.com/?q=Hasir+Berlin",
-      "priceRange": "€€",
-      "specialite": "Döner et grillades",
+      "halalFriendly": true,
+      "score": 4.7,
+      "adresse": "Berlin",
+      "description": "Kebab légendaire à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Mustafa%27s+Gem%C3%BCse+Kebap+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Kebab légendaire",
+      "nombreAvis": 1787,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
       "id": "r1"
     },
     {
-      "nom": "Adana Grillhaus",
-      "type": "Grillades & Kebab",
+      "nom": "Tadim Börek",
+      "type": "Turc",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kreuzberg",
-      "description": "Grillades anatoliennes réputées",
-      "mapsUrl": "https://maps.google.com/?q=Adana+Grillhaus+Berlin",
-      "priceRange": "€€",
-      "specialite": "Grillades turques",
+      "halalFriendly": true,
+      "score": 4.7,
+      "adresse": "Berlin",
+      "description": "Börek turc, Neukölln à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Tadim+B%C3%B6rek+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Börek turc",
+      "nombreAvis": 3070,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
       "id": "r2"
     },
     {
-      "nom": "Konak Restaurant",
-      "type": "Traditionnel local",
+      "nom": "Restaurant Rüyam",
+      "type": "Turc",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Neukölln",
-      "description": "Cuisine turque familiale",
-      "mapsUrl": "https://maps.google.com/?q=Konak+Restaurant+Berlin",
-      "priceRange": "€€",
-      "specialite": "Cuisine turque",
+      "halalFriendly": true,
+      "score": 4.2,
+      "adresse": "Berlin",
+      "description": "Turc premium à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+R%C3%BCyam+Berlin",
+      "priceRange": "€€€€",
+      "specialite": "Turc premium",
+      "nombreAvis": 1041,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
       "id": "r3"
     },
     {
-      "nom": "Azzam",
-      "type": "Traditionnel local",
+      "nom": "CZN Burak Berlin",
+      "type": "Turc",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Neukölln",
-      "description": "Institution syro-libanaise de Sonnenallee",
-      "mapsUrl": "https://maps.google.com/?q=Azzam+Berlin",
-      "priceRange": "€",
-      "specialite": "Houmous et falafel",
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Berlin",
+      "description": "Turc viral à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=CZN+Burak+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Turc viral",
+      "nombreAvis": 2431,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
       "id": "r4"
     },
     {
-      "nom": "City Chicken",
-      "type": "Grillades & Kebab",
+      "nom": "Osmans Töchter",
+      "type": "Turc",
       "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Neukölln",
-      "description": "Poulet à la broche culte de Berlin",
-      "mapsUrl": "https://maps.google.com/?q=City+Chicken+Berlin",
-      "priceRange": "€",
-      "specialite": "Poulet grillé",
+      "halalFriendly": true,
+      "score": 4.7,
+      "adresse": "Berlin",
+      "description": "Turc-ottoman moderne à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Osmans+T%C3%B6chter+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Turc-ottoman moderne",
+      "nombreAvis": 1482,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
       "id": "r5"
     },
     {
-      "nom": "Al Madina Berlin",
-      "type": "Traditionnel local",
+      "nom": "Sahara Imbiss",
+      "type": "Turc",
       "certificationHalal": true,
-      "score": 4.2,
+      "halalFriendly": true,
+      "score": 4.8,
       "adresse": "Berlin",
-      "description": "Adresse halal appréciée des habitants de Berlin.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Berlin+Berlin",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
+      "description": "Turc rapide 24h à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Sahara+Imbiss+Berlin",
+      "priceRange": "€",
+      "specialite": "Turc rapide 24h",
+      "nombreAvis": 979,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
       "id": "r6"
     },
     {
-      "nom": "Shawarma House Berlin",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Berlin",
-      "description": "Adresse halal appréciée des habitants de Berlin.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Berlin+Berlin",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Berlin",
+      "nom": "Maroush Berlin",
       "type": "Libanais & Levant",
       "certificationHalal": true,
-      "score": 4.4,
+      "halalFriendly": true,
+      "score": 4.6,
       "adresse": "Berlin",
-      "description": "Adresse halal appréciée des habitants de Berlin.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Berlin+Berlin",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Berlin",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Berlin",
-      "description": "Adresse halal appréciée des habitants de Berlin.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Berlin+Berlin",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Berlin",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Berlin",
-      "description": "Adresse halal appréciée des habitants de Berlin.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Berlin+Berlin",
+      "description": "Levant-libanais à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Maroush+Berlin+Berlin",
       "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Berlin",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Berlin",
-      "description": "Adresse halal appréciée des habitants de Berlin.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Berlin+Berlin",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Berlin",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Berlin",
-      "description": "Adresse halal appréciée des habitants de Berlin.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Berlin+Berlin",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Berlin",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Berlin",
-      "description": "Adresse halal appréciée des habitants de Berlin.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Berlin+Berlin",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Berlin",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Berlin",
-      "description": "Adresse halal appréciée des habitants de Berlin.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Berlin+Berlin",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Berlin",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Berlin",
-      "description": "Adresse halal appréciée des habitants de Berlin.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Berlin+Berlin",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Le Comptoir Halal",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Berlin",
-      "description": "Adresse traditionnel local appréciée à Berlin, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Berlin",
-      "priceRange": "€€",
-      "specialite": "Spécialité du pays",
-      "nombreAvis": 2702,
+      "specialite": "Levant-libanais",
+      "nombreAvis": 1848,
       "ouvertureRamadan": true,
       "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Beit Beirut",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Berlin",
-      "description": "Adresse libanais & levant appréciée à Berlin, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Berlin",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 869,
-      "ouvertureRamadan": true,
-      "livraison": false,
       "reservationRequise": false,
       "tags": [
         "animé",
-        "familial"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Shahi Tandoor",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Berlin",
-      "description": "Adresse indien & pakistani appréciée à Berlin, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Berlin",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 2373,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
         "familial",
-        "livraison",
-        "local-authentique"
+        "livraison"
       ],
-      "id": "r18"
+      "id": "r7"
     },
     {
-      "nom": "Dar Marrakech",
-      "type": "Marocain",
+      "nom": "Hamy Café Berlin",
+      "type": "Japonais & Asiatique",
       "certificationHalal": true,
+      "halalFriendly": true,
       "score": 4.5,
       "adresse": "Berlin",
-      "description": "Adresse marocain appréciée à Berlin, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Berlin",
-      "priceRange": "€€",
-      "specialite": "Tajine",
-      "nombreAvis": 2600,
+      "description": "Vietnamien halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Hamy+Caf%C3%A9+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Vietnamien halal",
+      "nombreAvis": 1432,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
-        "familial",
+        "calme",
         "livraison",
-        "local-authentique"
+        "touristique"
       ],
-      "id": "r19"
+      "id": "r8"
     },
     {
-      "nom": "Anatolia Grill",
-      "type": "Turc",
+      "nom": "Cocolo Ramen",
+      "type": "Japonais & Asiatique",
       "certificationHalal": true,
-      "score": 4.4,
+      "halalFriendly": true,
+      "score": 4.1,
       "adresse": "Berlin",
-      "description": "Adresse turc appréciée à Berlin, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Berlin",
-      "priceRange": "€€",
-      "specialite": "İskender kebab",
-      "nombreAvis": 2549,
+      "description": "Ramen halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Cocolo+Ramen+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Ramen halal",
+      "nombreAvis": 1168,
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false,
       "tags": [
-        "familial",
-        "local-authentique"
+        "calme",
+        "touristique"
       ],
-      "id": "r20"
+      "id": "r9"
     },
     {
-      "nom": "Halal Burger Co",
-      "type": "Burgers & Fast-food",
+      "nom": "Sumo Berlin",
+      "type": "Japonais & Asiatique",
       "certificationHalal": true,
+      "halalFriendly": true,
       "score": 4.3,
       "adresse": "Berlin",
-      "description": "Adresse burgers & fast-food appréciée à Berlin, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Burger+Co+Berlin",
+      "description": "Sushi halal chain à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Sumo+Berlin+Berlin",
+      "priceRange": "€",
+      "specialite": "Sushi halal chain",
+      "nombreAvis": 122,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "rapide",
+        "touristique"
+      ],
+      "id": "r10"
+    },
+    {
+      "nom": "Kuchi Berlin",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Berlin",
+      "description": "Japonais fusion halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Kuchi+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Japonais fusion halal",
+      "nombreAvis": 1329,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r11"
+    },
+    {
+      "nom": "Tang Berlin",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.3,
+      "adresse": "Berlin",
+      "description": "Vietnamien halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Tang+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Vietnamien halal",
+      "nombreAvis": 278,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r12"
+    },
+    {
+      "nom": "The Bird Berlin",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Berlin",
+      "description": "Burgers américains halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=The+Bird+Berlin+Berlin",
       "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 1590,
+      "specialite": "Burgers américains halal",
+      "nombreAvis": 2112,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -352,19 +329,86 @@
         "livraison",
         "rapide"
       ],
-      "id": "r21"
+      "id": "r13"
     },
     {
-      "nom": "Sakura Halal",
-      "type": "Japonais & Asiatique",
+      "nom": "Burgermeister Berlin",
+      "type": "Burgers & Fast-food",
       "certificationHalal": true,
-      "score": 4.2,
+      "halalFriendly": true,
+      "score": 4.5,
       "adresse": "Berlin",
-      "description": "Adresse japonais & asiatique appréciée à Berlin, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Berlin",
+      "description": "Burgers halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Burgermeister+Berlin+Berlin",
+      "priceRange": "€€",
+      "specialite": "Burgers halal",
+      "nombreAvis": 829,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r14"
+    },
+    {
+      "nom": "Domklause Berlin",
+      "type": "Allemand",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Berlin",
+      "description": "Allemand, sans alcool à Berlin. Options halal disponibles.",
+      "mapsUrl": "https://maps.google.com/?q=Domklause+Berlin+Berlin",
       "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1034,
+      "specialite": "Allemand",
+      "nombreAvis": 986,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r15"
+    },
+    {
+      "nom": "Fischers Fritz",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.3,
+      "adresse": "Berlin",
+      "description": "Poissons gastronomique à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Fischers+Fritz+Berlin",
+      "priceRange": "€€€€",
+      "specialite": "Poissons gastronomique",
+      "nombreAvis": 458,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Restaurant Tim Raue",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Berlin",
+      "description": "Asiatique-allemand, options halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Tim+Raue+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Asiatique-allemand",
+      "nombreAvis": 1086,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -373,62 +417,359 @@
         "livraison",
         "touristique"
       ],
-      "id": "r22"
+      "id": "r17"
     },
     {
-      "nom": "Saveurs Gastronomiques",
+      "nom": "Hugos Restaurant",
       "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.1,
+      "halalFriendly": true,
+      "score": 4.3,
       "adresse": "Berlin",
-      "description": "Adresse gastronomique appréciée à Berlin, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saveurs+Gastronomiques+Berlin",
+      "description": "Panoramique luxe à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Hugos+Restaurant+Berlin",
       "priceRange": "€€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 39,
+      "specialite": "Panoramique luxe",
+      "nombreAvis": 695,
       "ouvertureRamadan": true,
-      "livraison": true,
+      "livraison": false,
       "reservationRequise": true,
       "tags": [
         "calme",
-        "livraison",
         "reservation-requise",
         "romantique"
       ],
-      "id": "r23"
+      "id": "r18"
     },
     {
-      "nom": "Maison du Thé",
-      "type": "Pâtisserie & Café",
+      "nom": "Restaurant Lorenz Adlon",
+      "type": "Gastronomique",
       "certificationHalal": true,
-      "score": 4.8,
+      "halalFriendly": true,
+      "score": 4.1,
       "adresse": "Berlin",
-      "description": "Adresse pâtisserie & café appréciée à Berlin, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+du+Th%C3%A9+Berlin",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries orientales",
-      "nombreAvis": 3453,
+      "description": "Gastronomique Adlon à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Lorenz+Adlon+Berlin",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique adlon",
+      "nombreAvis": 1042,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Borchardt Berlin",
+      "type": "Allemand",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Berlin",
+      "description": "Brasserie berlinoise à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Borchardt+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Brasserie berlinoise",
+      "nombreAvis": 193,
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false,
       "tags": [
-        "a-emporter",
-        "calme",
         "familial"
+      ],
+      "id": "r20"
+    },
+    {
+      "nom": "Rutz Restaurant",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.3,
+      "adresse": "Berlin",
+      "description": "Gastronomique Berlin à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Rutz+Restaurant+Berlin",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique berlin",
+      "nombreAvis": 412,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r21"
+    },
+    {
+      "nom": "Cookies Cream",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Berlin",
+      "description": "Végétarien halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Cookies+Cream+Berlin",
+      "priceRange": "€€",
+      "specialite": "Végétarien halal",
+      "nombreAvis": 2541,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "veggie"
+      ],
+      "id": "r22"
+    },
+    {
+      "nom": "Chipps Berlin",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.2,
+      "adresse": "Berlin",
+      "description": "Végétarien créatif à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Chipps+Berlin+Berlin",
+      "priceRange": "€€",
+      "specialite": "Végétarien créatif",
+      "nombreAvis": 1431,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "veggie"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Schwarzwaldstuben Berlin",
+      "type": "Allemand",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.7,
+      "adresse": "Berlin",
+      "description": "Allemand du sud à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Schwarzwaldstuben+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Allemand du sud",
+      "nombreAvis": 3393,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
       ],
       "id": "r24"
     },
     {
-      "nom": "Le Comptoir Halal Berlin 10",
-      "type": "Traditionnel local",
+      "nom": "Curry 36",
+      "type": "Allemand",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Berlin",
+      "description": "Currywurst, version halal à Berlin. Options halal disponibles.",
+      "mapsUrl": "https://maps.google.com/?q=Curry+36+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Currywurst",
+      "nombreAvis": 2497,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r25"
+    },
+    {
+      "nom": "Konnopke's Imbiss",
+      "type": "Allemand",
       "certificationHalal": true,
+      "halalFriendly": true,
       "score": 4.7,
       "adresse": "Berlin",
-      "description": "Adresse traditionnel local appréciée à Berlin, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Berlin+10+Berlin",
-      "priceRange": "€€",
-      "specialite": "Spécialité du pays",
-      "nombreAvis": 628,
+      "description": "Currywurst historique à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Konnopke%27s+Imbiss+Berlin",
+      "priceRange": "€",
+      "specialite": "Currywurst historique",
+      "nombreAvis": 2954,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r26"
+    },
+    {
+      "nom": "Döner Doha Berlin",
+      "type": "Turc",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Berlin",
+      "description": "Döner premium à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=D%C3%B6ner+Doha+Berlin+Berlin",
+      "priceRange": "€€€€",
+      "specialite": "Döner premium",
+      "nombreAvis": 510,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r27"
+    },
+    {
+      "nom": "Al Hambra Berlin",
+      "type": "Marocain & Maghreb",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Berlin",
+      "description": "Marocain à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Al+Hambra+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Marocain",
+      "nombreAvis": 1393,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r28"
+    },
+    {
+      "nom": "Restaurant Sahel",
+      "type": "Cuisine du monde",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.8,
+      "adresse": "Berlin",
+      "description": "Sahélien halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Sahel+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Sahélien halal",
+      "nombreAvis": 2360,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r29"
+    },
+    {
+      "nom": "Ethiopian Restaurant Mesob",
+      "type": "Cuisine du monde",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.3,
+      "adresse": "Berlin",
+      "description": "Éthiopien halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Ethiopian+Restaurant+Mesob+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Éthiopien halal",
+      "nombreAvis": 647,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r30"
+    },
+    {
+      "nom": "Eritrea Restaurant Berlin",
+      "type": "Cuisine du monde",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Berlin",
+      "description": "Érythréen halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Eritrea+Restaurant+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Érythréen halal",
+      "nombreAvis": 671,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r31"
+    },
+    {
+      "nom": "Khan Restaurant Berlin",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Berlin",
+      "description": "Afghano-pakistanais à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Khan+Restaurant+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Afghano-pakistanais",
+      "nombreAvis": 2067,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r32"
+    },
+    {
+      "nom": "Pamir Afghanistan Restaurant",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Berlin",
+      "description": "Afghan halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Pamir+Afghanistan+Restaurant+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Afghan halal",
+      "nombreAvis": 1474,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ],
+      "id": "r33"
+    },
+    {
+      "nom": "Merhaba Berlin",
+      "type": "Turc",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Berlin",
+      "description": "Turc kebab à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Merhaba+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Turc kebab",
+      "nombreAvis": 153,
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false,
@@ -436,7 +777,139 @@
         "familial",
         "local-authentique"
       ],
-      "id": "r25"
+      "id": "r34"
+    },
+    {
+      "nom": "Imren Grill",
+      "type": "Turc",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.8,
+      "adresse": "Berlin",
+      "description": "Turc grillades à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Imren+Grill+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Turc grillades",
+      "nombreAvis": 3021,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r35"
+    },
+    {
+      "nom": "Tomasa Berlin",
+      "type": "Gastronomique",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.2,
+      "adresse": "Berlin",
+      "description": "Brunch, sans alcool à Berlin. Options halal disponibles.",
+      "mapsUrl": "https://maps.google.com/?q=Tomasa+Berlin+Berlin",
+      "priceRange": "€€€€",
+      "specialite": "Brunch",
+      "nombreAvis": 504,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r36"
+    },
+    {
+      "nom": "Café Einstein Unter den Linden",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Berlin",
+      "description": "Viennois à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Einstein+Unter+den+Linden+Berlin",
+      "priceRange": "€€",
+      "specialite": "Viennois",
+      "nombreAvis": 1922,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison"
+      ],
+      "id": "r37"
+    },
+    {
+      "nom": "Paris Bar Berlin",
+      "type": "Cuisine du monde",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.3,
+      "adresse": "Berlin",
+      "description": "Brasserie française à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Paris+Bar+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Brasserie française",
+      "nombreAvis": 706,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r38"
+    },
+    {
+      "nom": "Asia Deli Berlin",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Berlin",
+      "description": "Pan-asiatique halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Asia+Deli+Berlin+Berlin",
+      "priceRange": "€€€",
+      "specialite": "Pan-asiatique halal",
+      "nombreAvis": 79,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r39"
+    },
+    {
+      "nom": "Angry Chicken Berlin",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Berlin",
+      "description": "Poulet halal à Berlin.",
+      "mapsUrl": "https://maps.google.com/?q=Angry+Chicken+Berlin+Berlin",
+      "priceRange": "€€",
+      "specialite": "Poulet halal",
+      "nombreAvis": 1411,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r40"
     }
   ],
   "hotels": [
@@ -452,7 +925,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Berlin&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=berlin",
       "priceRange": "€€€€",
-      "id": "h1"
+      "id": "h1",
+      "nombreAvis": 2347,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "25hours Hotel Bikini",
@@ -466,7 +955,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Berlin&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=berlin",
       "priceRange": "€€€",
-      "id": "h2"
+      "id": "h2",
+      "nombreAvis": 177,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Motel One Berlin-Mitte",
@@ -480,7 +981,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Berlin&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=berlin",
       "priceRange": "€€",
-      "id": "h3"
+      "id": "h3",
+      "nombreAvis": 1685,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Berlin",
@@ -494,7 +1007,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Berlin&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=berlin",
       "priceRange": "€€€€",
-      "id": "h4"
+      "id": "h4",
+      "nombreAvis": 1808,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "City Comfort Hotel Berlin",
@@ -508,7 +1037,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Berlin&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=berlin",
       "priceRange": "€€€",
-      "id": "h5"
+      "id": "h5",
+      "nombreAvis": 2274,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Boutique Riad Berlin",
@@ -522,7 +1063,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Berlin&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=berlin",
       "priceRange": "€€€",
-      "id": "h6"
+      "id": "h6",
+      "nombreAvis": 1176,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Berlin 0",
@@ -590,7 +1143,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Porte+de+Brandebourg+Berlin",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Porte+de+Brandebourg+Berlin",
-      "id": "a1"
+      "id": "a1",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Île aux musées",
@@ -600,7 +1160,14 @@
       "prix": "€€",
       "mapsUrl": "https://maps.google.com/?q=%C3%8Ele+aux+mus%C3%A9es+Berlin",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=%C3%8Ele+aux+mus%C3%A9es+Berlin",
-      "id": "a2"
+      "id": "a2",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mosquée Şehitlik",
@@ -610,7 +1177,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+%C5%9Eehitlik+Berlin",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+%C5%9Eehitlik+Berlin",
-      "id": "a3"
+      "id": "a3",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "East Side Gallery",
@@ -620,7 +1194,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=East+Side+Gallery+Berlin",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=East+Side+Gallery+Berlin",
-      "id": "a4"
+      "id": "a4",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Marché turc du canal",
@@ -630,7 +1211,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=March%C3%A9+turc+du+canal+Berlin",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+turc+du+canal+Berlin",
-      "id": "a5"
+      "id": "a5",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mémorial de l'Holocauste",
@@ -640,7 +1228,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=M%C3%A9morial+de+l%27Holocauste+Berlin",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9morial+de+l%27Holocauste+Berlin",
-      "id": "a6"
+      "id": "a6",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Reichstag & coupole",
@@ -650,7 +1245,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Reichstag+%26+coupole+Berlin",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Reichstag+%26+coupole+Berlin",
-      "id": "a7"
+      "id": "a7",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier de Kreuzberg",
@@ -660,7 +1262,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Quartier+de+Kreuzberg+Berlin",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Kreuzberg+Berlin",
-      "id": "a8"
+      "id": "a8",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Vieille ville de Berlin",
@@ -670,7 +1279,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Berlin+Berlin",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Berlin+Berlin",
-      "id": "a9"
+      "id": "a9",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Grand souk de Berlin",
@@ -680,7 +1296,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Berlin+Berlin",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Berlin+Berlin",
-      "id": "a10"
+      "id": "a10",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier historique de Berlin",
@@ -855,50 +1478,51 @@
   ],
   "selectionsPremium": {
     "mieuxNotes": [
-      "Le Comptoir Halal",
-      "Maison du Thé",
-      "Beit Beirut",
-      "Le Comptoir Halal Berlin 10",
-      "Saffron Garden Berlin"
+      "Sahara Imbiss",
+      "Restaurant Sahel",
+      "Imren Grill",
+      "Mustafa's Gemüse Kebap",
+      "Tadim Börek"
     ],
     "meilleurRapportQualitePrix": [
-      "Hasir",
-      "Adana Grillhaus",
-      "Konak Restaurant",
-      "Azzam",
-      "City Chicken"
+      "Sahara Imbiss",
+      "The Bird Berlin",
+      "Burgermeister Berlin",
+      "Cookies Cream",
+      "Konnopke's Imbiss"
     ],
     "incontournables": [
-      "Maison du Thé",
-      "Le Comptoir Halal",
-      "Dar Marrakech",
-      "Anatolia Grill",
-      "Shahi Tandoor"
+      "Schwarzwaldstuben Berlin",
+      "Tadim Börek",
+      "Imren Grill",
+      "Konnopke's Imbiss",
+      "Cookies Cream"
     ],
     "pepitesCachees": [
-      "Hasir",
-      "Adana Grillhaus",
-      "Konak Restaurant"
+      "Borchardt Berlin",
+      "Merhaba Berlin",
+      "Asia Deli Berlin"
     ],
     "idealFamille": [
-      "Le Comptoir Halal",
-      "Beit Beirut",
-      "Shahi Tandoor",
-      "Dar Marrakech",
-      "Anatolia Grill"
+      "Mustafa's Gemüse Kebap",
+      "Tadim Börek",
+      "Restaurant Rüyam",
+      "CZN Burak Berlin",
+      "Osmans Töchter"
     ],
     "gastronomique": [
-      "Saffron Garden Berlin",
-      "Saveurs Gastronomiques"
+      "Hugos Restaurant",
+      "Restaurant Lorenz Adlon",
+      "Rutz Restaurant",
+      "Tomasa Berlin"
     ],
     "ouvertNuit": [
-      "Beit Beirut",
-      "Halal Burger Co"
+      "Sahara Imbiss",
+      "Maroush Berlin",
+      "Sumo Berlin"
     ],
     "vueExceptionnelle": [
-      "Le Comptoir Halal",
-      "Maison du Thé",
-      "Beit Beirut"
+      "Fischers Fritz"
     ]
   }
 }

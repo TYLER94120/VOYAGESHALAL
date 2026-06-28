@@ -6,8 +6,8 @@
   "image_hero": "https://images.unsplash.com/photo-1519178614-68673b201f36?w=1400&q=85",
   "description": "Montréal, métropole francophone d'Amérique, mêle charme européen et diversité. Forte communauté maghrébine, quartiers halal et cuisine du monde dans une ville chaleureuse.",
   "descriptionLongue": "Plus grande ville francophone d'Amérique du Nord, Montréal séduit par son Vieux-Montréal pavé, son Plateau bohème et son ambiance festive. La ville accueille une importante communauté musulmane maghrébine et arabe, concentrée à Côte-des-Neiges, Saint-Michel et Parc-Extension, riches en restaurants halal et épiceries. Entre le mont Royal, les festivals et une gastronomie cosmopolite, Montréal allie douceur de vivre et diversité.",
-  "halalScore": 8.0,
-  "score_halal": 4.0,
+  "halalScore": 7.8,
+  "score_halal": 3.9,
   "mosquees": 100,
   "population": "1,8 million",
   "langue": "Français, Anglais",
@@ -50,218 +50,17 @@
   },
   "restaurants": [
     {
-      "nom": "Restaurant Marven's",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Parc-Extension",
-      "description": "Grillades libanaises cultes",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Marven%27s+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Poulet grillé",
-      "id": "r1"
-    },
-    {
-      "nom": "Daawat Resto",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Côte-des-Neiges",
-      "description": "Cuisine indo-pakistanaise halal",
-      "mapsUrl": "https://maps.google.com/?q=Daawat+Resto+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r2"
-    },
-    {
-      "nom": "Au Pied de Couscous",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Plateau",
-      "description": "Cuisine marocaine généreuse",
-      "mapsUrl": "https://maps.google.com/?q=Au+Pied+de+Couscous+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Couscous",
-      "id": "r3"
-    },
-    {
-      "nom": "Boustan",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre-ville",
-      "description": "Institution libanaise du centre-ville",
-      "mapsUrl": "https://maps.google.com/?q=Boustan+Montr%C3%A9al",
-      "priceRange": "€",
-      "specialite": "Shawarma",
-      "id": "r4"
-    },
-    {
-      "nom": "Damas (version halal)",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Outremont",
-      "description": "Haute cuisine syrienne primée",
-      "mapsUrl": "https://maps.google.com/?q=Damas+%28version+halal%29+Montr%C3%A9al",
-      "priceRange": "€€€",
-      "specialite": "Cuisine syrienne",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Montréal",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Montréal",
-      "description": "Adresse halal appréciée des habitants de Montréal.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Montr%C3%A9al+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Montréal",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Montréal",
-      "description": "Adresse halal appréciée des habitants de Montréal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Montr%C3%A9al+Montr%C3%A9al",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Montréal",
+      "nom": "Rotisserie Merhi",
       "type": "Libanais & Levant",
       "certificationHalal": true,
-      "score": 4.4,
+      "halalFriendly": true,
+      "score": 4.9,
       "adresse": "Montréal",
-      "description": "Adresse halal appréciée des habitants de Montréal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Montr%C3%A9al+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Montréal",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Montréal",
-      "description": "Adresse halal appréciée des habitants de Montréal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Montr%C3%A9al+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Montréal",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Montréal",
-      "description": "Adresse halal appréciée des habitants de Montréal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Montr%C3%A9al+Montr%C3%A9al",
+      "description": "Libanais-grillades, institution à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Rotisserie+Merhi+Montr%C3%A9al",
       "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Montréal",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Montréal",
-      "description": "Adresse halal appréciée des habitants de Montréal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Montr%C3%A9al+Montr%C3%A9al",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Montréal",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Montréal",
-      "description": "Adresse halal appréciée des habitants de Montréal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Montr%C3%A9al+Montr%C3%A9al",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Montréal",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Montréal",
-      "description": "Adresse halal appréciée des habitants de Montréal.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Montr%C3%A9al+Montr%C3%A9al",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Montréal",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Montréal",
-      "description": "Adresse halal appréciée des habitants de Montréal.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Montr%C3%A9al+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Montréal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Montréal",
-      "description": "Adresse halal appréciée des habitants de Montréal.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Montr%C3%A9al+Montr%C3%A9al",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Halal Guys Corner",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Montréal",
-      "description": "Adresse burgers & fast-food appréciée à Montréal, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Guys+Corner+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Chicken over rice",
-      "nombreAvis": 3658,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Beirut House",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Montréal",
-      "description": "Adresse libanais & levant appréciée à Montréal, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beirut+House+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1160,
+      "specialite": "Libanais-grillades",
+      "nombreAvis": 827,
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false,
@@ -269,82 +68,212 @@
         "animé",
         "familial"
       ],
-      "id": "r17"
+      "id": "r1"
     },
     {
-      "nom": "Shahi Palace",
-      "type": "Indien & Pakistani",
+      "nom": "Le Nil Bleu",
+      "type": "Cuisine du monde",
       "certificationHalal": true,
-      "score": 4.6,
+      "halalFriendly": true,
+      "score": 4.8,
       "adresse": "Montréal",
-      "description": "Adresse indien & pakistani appréciée à Montréal, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Palace+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1538,
+      "description": "Éthiopien halal, Plateau à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Nil+Bleu+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Éthiopien halal",
+      "nombreAvis": 2293,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
         "familial",
-        "livraison",
-        "local-authentique"
+        "livraison"
       ],
-      "id": "r18"
+      "id": "r2"
     },
     {
-      "nom": "Marrakech Express",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Montréal",
-      "description": "Adresse marocain appréciée à Montréal, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Marrakech+Express+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Tajine",
-      "nombreAvis": 1472,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Anatolia Kebab",
+      "nom": "Marché Turc",
       "type": "Turc",
       "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Montréal",
+      "description": "Turc gastronomique à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Turc+Montr%C3%A9al",
+      "priceRange": "€€€€",
+      "specialite": "Turc gastronomique",
+      "nombreAvis": 863,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r3"
+    },
+    {
+      "nom": "Mazé",
+      "type": "Marocain & Maghreb",
+      "certificationHalal": true,
+      "halalFriendly": true,
       "score": 4.4,
       "adresse": "Montréal",
-      "description": "Adresse turc appréciée à Montréal, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anatolia+Kebab+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Döner",
-      "nombreAvis": 1504,
+      "description": "Marocain gastronomique à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Maz%C3%A9+Montr%C3%A9al",
+      "priceRange": "€€€€",
+      "specialite": "Marocain gastronomique",
+      "nombreAvis": 2577,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "familial"
+      ],
+      "id": "r4"
+    },
+    {
+      "nom": "Istanbul Restaurant Montréal",
+      "type": "Turc",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.3,
+      "adresse": "Montréal",
+      "description": "Turc populaire à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Istanbul+Restaurant+Montr%C3%A9al+Montr%C3%A9al",
+      "priceRange": "€",
+      "specialite": "Turc populaire",
+      "nombreAvis": 1405,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
         "familial",
         "livraison",
-        "local-authentique"
+        "local-authentique",
+        "rapide"
       ],
-      "id": "r20"
+      "id": "r5"
     },
     {
-      "nom": "Saffron Fine Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
+      "nom": "Panthère Verte",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.4,
       "adresse": "Montréal",
-      "description": "Adresse gastronomique appréciée à Montréal, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Fine+Dining+Montr%C3%A9al",
+      "description": "Végétalien, options halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Panth%C3%A8re+Verte+Montr%C3%A9al",
+      "priceRange": "€€",
+      "specialite": "Végétalien",
+      "nombreAvis": 1549,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "veggie"
+      ],
+      "id": "r6"
+    },
+    {
+      "nom": "Hakim Unique",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Montréal",
+      "description": "Levant-maghrébin à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Hakim+Unique+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Levant-maghrébin",
+      "nombreAvis": 589,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r7"
+    },
+    {
+      "nom": "Rumi",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.7,
+      "adresse": "Montréal",
+      "description": "Perso-libanais gastronomique à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Rumi+Montr%C3%A9al",
       "priceRange": "€€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 795,
+      "specialite": "Perso-libanais gastronomique",
+      "nombreAvis": 386,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ],
+      "id": "r8"
+    },
+    {
+      "nom": "Le Liban",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Montréal",
+      "description": "Libanais classique à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Liban+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Libanais classique",
+      "nombreAvis": 302,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ],
+      "id": "r9"
+    },
+    {
+      "nom": "Faros",
+      "type": "Québécois & International",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Montréal",
+      "description": "Grec, options halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Faros+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Grec",
+      "nombreAvis": 572,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r10"
+    },
+    {
+      "nom": "Le Bremner",
+      "type": "Gastronomique",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Montréal",
+      "description": "Gastronomique québécois, options halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Bremner+Montr%C3%A9al",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique québécois",
+      "nombreAvis": 829,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": true,
@@ -354,39 +283,196 @@
         "reservation-requise",
         "romantique"
       ],
-      "id": "r21"
+      "id": "r11"
     },
     {
-      "nom": "Sakura Halal",
-      "type": "Japonais & Asiatique",
+      "nom": "Toqué!",
+      "type": "Gastronomique",
       "certificationHalal": true,
+      "halalFriendly": true,
       "score": 4.2,
       "adresse": "Montréal",
-      "description": "Adresse japonais & asiatique appréciée à Montréal, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Montr%C3%A9al",
+      "description": "Gastronomique québécois à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Toqu%C3%A9%21+Montr%C3%A9al",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique québécois",
+      "nombreAvis": 151,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r12"
+    },
+    {
+      "nom": "Europea",
+      "type": "Gastronomique",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Montréal",
+      "description": "Gastronomique, options halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Europea+Montr%C3%A9al",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique",
+      "nombreAvis": 238,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r13"
+    },
+    {
+      "nom": "DNA Restaurant",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.7,
+      "adresse": "Montréal",
+      "description": "Gastronomique à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=DNA+Restaurant+Montr%C3%A9al",
+      "priceRange": "€€€€",
+      "specialite": "Gastronomique",
+      "nombreAvis": 2172,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r14"
+    },
+    {
+      "nom": "Le Vin Papillon",
+      "type": "Québécois & International",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.3,
+      "adresse": "Montréal",
+      "description": "Bistro, sans alcool à Montréal. Options halal disponibles.",
+      "mapsUrl": "https://maps.google.com/?q=Le+Vin+Papillon+Montr%C3%A9al",
       "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 387,
+      "specialite": "Bistro",
+      "nombreAvis": 282,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison"
+      ],
+      "id": "r15"
+    },
+    {
+      "nom": "Liverpool House",
+      "type": "Québécois & International",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Montréal",
+      "description": "Bistro, options halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Liverpool+House+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Bistro",
+      "nombreAvis": 1059,
       "ouvertureRamadan": true,
       "livraison": false,
       "reservationRequise": false,
       "tags": [
-        "calme",
-        "touristique"
+        "familial"
       ],
-      "id": "r22"
+      "id": "r16"
     },
     {
-      "nom": "Medina Café",
-      "type": "Pâtisserie & Café",
+      "nom": "Maison Boulud Montréal",
+      "type": "Gastronomique",
       "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Montréal",
+      "description": "Français gastronomique à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Maison+Boulud+Montr%C3%A9al+Montr%C3%A9al",
+      "priceRange": "€€€€",
+      "specialite": "Français gastronomique",
+      "nombreAvis": 937,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Schwartz's Deli",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": false,
+      "halalFriendly": true,
       "score": 4.1,
       "adresse": "Montréal",
-      "description": "Adresse pâtisserie & café appréciée à Montréal, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Medina+Caf%C3%A9+Montr%C3%A9al",
+      "description": "Smoked meat, version sans porc à Montréal. Options halal disponibles.",
+      "mapsUrl": "https://maps.google.com/?q=Schwartz%27s+Deli+Montr%C3%A9al",
       "priceRange": "€€",
-      "specialite": "Baklava et café",
-      "nombreAvis": 1566,
+      "specialite": "Smoked meat",
+      "nombreAvis": 232,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Beauty's Luncheonette",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Montréal",
+      "description": "Brunch à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Beauty%27s+Luncheonette+Montr%C3%A9al",
+      "priceRange": "€€",
+      "specialite": "Brunch",
+      "nombreAvis": 2225,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Bagel St-Viateur",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.7,
+      "adresse": "Montréal",
+      "description": "Bagels halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Bagel+St-Viateur+Montr%C3%A9al",
+      "priceRange": "€€",
+      "specialite": "Bagels halal",
+      "nombreAvis": 848,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -396,41 +482,215 @@
         "familial",
         "livraison"
       ],
-      "id": "r23"
+      "id": "r20"
     },
     {
-      "nom": "Halal Guys Corner Montréal 9",
-      "type": "Burgers & Fast-food",
+      "nom": "Fairmount Bagel",
+      "type": "Pâtisserie & Café",
       "certificationHalal": true,
-      "score": 4.8,
+      "halalFriendly": true,
+      "score": 4.3,
       "adresse": "Montréal",
-      "description": "Adresse burgers & fast-food appréciée à Montréal, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Guys+Corner+Montr%C3%A9al+9+Montr%C3%A9al",
+      "description": "Bagels halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Fairmount+Bagel+Montr%C3%A9al",
       "priceRange": "€€",
-      "specialite": "Chicken over rice",
-      "nombreAvis": 480,
+      "specialite": "Bagels halal",
+      "nombreAvis": 619,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial"
+      ],
+      "id": "r21"
+    },
+    {
+      "nom": "Montréal Shawarma",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Montréal",
+      "description": "Shawarma express à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Montr%C3%A9al+Shawarma+Montr%C3%A9al",
+      "priceRange": "€",
+      "specialite": "Shawarma express",
+      "nombreAvis": 1736,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
       "tags": [
-        "a-emporter",
+        "animé",
         "familial",
         "livraison",
+        "rapide"
+      ],
+      "id": "r22"
+    },
+    {
+      "nom": "Amir Resto",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.3,
+      "adresse": "Montréal",
+      "description": "Libanais fast halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Amir+Resto+Montr%C3%A9al",
+      "priceRange": "€",
+      "specialite": "Libanais fast halal",
+      "nombreAvis": 49,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r23"
+    },
+    {
+      "nom": "Boustan",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.8,
+      "adresse": "Montréal",
+      "description": "Libanais rapide halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Boustan+Montr%C3%A9al",
+      "priceRange": "€",
+      "specialite": "Libanais rapide halal",
+      "nombreAvis": 2095,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
         "rapide"
       ],
       "id": "r24"
     },
     {
-      "nom": "Beirut House Montréal 10",
+      "nom": "Lafleur",
+      "type": "Québécois & International",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Montréal",
+      "description": "Québécois populaire, options halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Lafleur+Montr%C3%A9al",
+      "priceRange": "€",
+      "specialite": "Québécois populaire",
+      "nombreAvis": 1117,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "rapide"
+      ],
+      "id": "r25"
+    },
+    {
+      "nom": "Marché 514",
+      "type": "Québécois & International",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.8,
+      "adresse": "Montréal",
+      "description": "Food market halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+514+Montr%C3%A9al",
+      "priceRange": "€",
+      "specialite": "Food market halal",
+      "nombreAvis": 1089,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r26"
+    },
+    {
+      "nom": "Satay Brothers",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.2,
+      "adresse": "Montréal",
+      "description": "Asiatique fusion halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Satay+Brothers+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Asiatique fusion halal",
+      "nombreAvis": 874,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r27"
+    },
+    {
+      "nom": "PHO 89",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.5,
+      "adresse": "Montréal",
+      "description": "Vietnamien, options halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=PHO+89+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Vietnamien",
+      "nombreAvis": 605,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r28"
+    },
+    {
+      "nom": "Darna",
+      "type": "Marocain & Maghreb",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.6,
+      "adresse": "Montréal",
+      "description": "Marocain à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Darna+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Marocain",
+      "nombreAvis": 1677,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r29"
+    },
+    {
+      "nom": "Maamoun Falafel",
       "type": "Libanais & Levant",
       "certificationHalal": true,
-      "score": 4.7,
+      "halalFriendly": true,
+      "score": 4.5,
       "adresse": "Montréal",
-      "description": "Adresse libanais & levant appréciée à Montréal, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beirut+House+Montr%C3%A9al+10+Montr%C3%A9al",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 2909,
+      "description": "Falafel halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Maamoun+Falafel+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Falafel halal",
+      "nombreAvis": 68,
       "ouvertureRamadan": true,
       "livraison": true,
       "reservationRequise": false,
@@ -439,7 +699,113 @@
         "familial",
         "livraison"
       ],
-      "id": "r25"
+      "id": "r30"
+    },
+    {
+      "nom": "Sushi Itto Montréal",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Montréal",
+      "description": "Japonais halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Sushi+Itto+Montr%C3%A9al+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Japonais halal",
+      "nombreAvis": 1245,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r31"
+    },
+    {
+      "nom": "Hanami Restaurant",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.7,
+      "adresse": "Montréal",
+      "description": "Japonais halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Hanami+Restaurant+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Japonais halal",
+      "nombreAvis": 1373,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r32"
+    },
+    {
+      "nom": "Raza Montréal",
+      "type": "Québécois & International",
+      "certificationHalal": false,
+      "halalFriendly": true,
+      "score": 4.2,
+      "adresse": "Montréal",
+      "description": "Charme, options halal à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Raza+Montr%C3%A9al+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Charme",
+      "nombreAvis": 543,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial"
+      ],
+      "id": "r33"
+    },
+    {
+      "nom": "Kazu Restaurant",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.4,
+      "adresse": "Montréal",
+      "description": "Japonais halal casual à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Kazu+Restaurant+Montr%C3%A9al",
+      "priceRange": "€€€",
+      "specialite": "Japonais halal casual",
+      "nombreAvis": 2069,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ],
+      "id": "r34"
+    },
+    {
+      "nom": "Biryani Express Montréal",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "halalFriendly": true,
+      "score": 4.1,
+      "adresse": "Montréal",
+      "description": "Indo-pak à Montréal.",
+      "mapsUrl": "https://maps.google.com/?q=Biryani+Express+Montr%C3%A9al+Montr%C3%A9al",
+      "priceRange": "€",
+      "specialite": "Indo-pak",
+      "nombreAvis": 897,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r35"
     }
   ],
   "hotels": [
@@ -455,7 +821,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Montr%C3%A9al&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=montreal",
       "priceRange": "€€€€",
-      "id": "h1"
+      "id": "h1",
+      "nombreAvis": 1600,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "Hôtel Le St-James",
@@ -469,7 +851,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Montr%C3%A9al&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=montreal",
       "priceRange": "€€€€",
-      "id": "h2"
+      "id": "h2",
+      "nombreAvis": 1120,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "Hôtel Bonaventure",
@@ -483,7 +881,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Montr%C3%A9al&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=montreal",
       "priceRange": "€€€",
-      "id": "h3"
+      "id": "h3",
+      "nombreAvis": 2412,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Montréal",
@@ -497,7 +907,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Montr%C3%A9al&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=montreal",
       "priceRange": "€€€€",
-      "id": "h4"
+      "id": "h4",
+      "nombreAvis": 1193,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "City Comfort Hotel Montréal",
@@ -511,7 +937,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Montr%C3%A9al&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=montreal",
       "priceRange": "€€€",
-      "id": "h5"
+      "id": "h5",
+      "nombreAvis": 1494,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Boutique Riad Montréal",
@@ -525,7 +963,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Montr%C3%A9al&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=montreal",
       "priceRange": "€€€",
-      "id": "h6"
+      "id": "h6",
+      "nombreAvis": 1588,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Grand Plaza Montréal 0",
@@ -593,7 +1043,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieux-Montr%C3%A9al+%26+Vieux-Port+Montr%C3%A9al",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieux-Montr%C3%A9al+%26+Vieux-Port+Montr%C3%A9al",
-      "id": "a1"
+      "id": "a1",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Basilique Notre-Dame",
@@ -603,7 +1060,14 @@
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Basilique+Notre-Dame+Montr%C3%A9al",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Basilique+Notre-Dame+Montr%C3%A9al",
-      "id": "a2"
+      "id": "a2",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mont Royal",
@@ -613,7 +1077,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Mont+Royal+Montr%C3%A9al",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mont+Royal+Montr%C3%A9al",
-      "id": "a3"
+      "id": "a3",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Marché Jean-Talon",
@@ -623,7 +1094,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Jean-Talon+Montr%C3%A9al",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+Jean-Talon+Montr%C3%A9al",
-      "id": "a4"
+      "id": "a4",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mosquée Al-Omah Al-Islamiah",
@@ -633,7 +1111,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Omah+Al-Islamiah+Montr%C3%A9al",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Al-Omah+Al-Islamiah+Montr%C3%A9al",
-      "id": "a5"
+      "id": "a5",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier du Plateau-Mont-Royal",
@@ -643,7 +1128,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Quartier+du+Plateau-Mont-Royal+Montr%C3%A9al",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+du+Plateau-Mont-Royal+Montr%C3%A9al",
-      "id": "a6"
+      "id": "a6",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Jardin botanique & Biodôme",
@@ -653,7 +1145,14 @@
       "prix": "€€",
       "mapsUrl": "https://maps.google.com/?q=Jardin+botanique+%26+Biod%C3%B4me+Montr%C3%A9al",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jardin+botanique+%26+Biod%C3%B4me+Montr%C3%A9al",
-      "id": "a7"
+      "id": "a7",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier Côte-des-Neiges",
@@ -663,7 +1162,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Quartier+C%C3%B4te-des-Neiges+Montr%C3%A9al",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+C%C3%B4te-des-Neiges+Montr%C3%A9al",
-      "id": "a8"
+      "id": "a8",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Vieille ville de Montréal",
@@ -673,7 +1179,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Montr%C3%A9al+Montr%C3%A9al",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Montr%C3%A9al+Montr%C3%A9al",
-      "id": "a9"
+      "id": "a9",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Grand souk de Montréal",
@@ -683,7 +1196,14 @@
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Montr%C3%A9al+Montr%C3%A9al",
       "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Montr%C3%A9al+Montr%C3%A9al",
-      "id": "a10"
+      "id": "a10",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Quartier historique de Montréal",
@@ -858,52 +1378,54 @@
   ],
   "selectionsPremium": {
     "mieuxNotes": [
-      "Halal Guys Corner",
-      "Halal Guys Corner Montréal 9",
-      "Beirut House",
-      "Beirut House Montréal 10",
-      "Saffron Garden Montréal"
+      "Rotisserie Merhi",
+      "Le Nil Bleu",
+      "Boustan",
+      "Marché 514",
+      "Rumi"
     ],
     "meilleurRapportQualitePrix": [
-      "Restaurant Marven's",
-      "Daawat Resto",
-      "Au Pied de Couscous",
-      "Boustan",
-      "Beit Beirut Montréal"
+      "Panthère Verte",
+      "Beauty's Luncheonette",
+      "Bagel St-Viateur",
+      "Montréal Shawarma",
+      "Boustan"
     ],
     "incontournables": [
-      "Halal Guys Corner",
-      "Beirut House Montréal 10",
-      "Medina Café",
-      "Shahi Palace",
-      "Anatolia Kebab"
+      "Mazé",
+      "Le Nil Bleu",
+      "Beauty's Luncheonette",
+      "DNA Restaurant",
+      "Boustan"
     ],
     "pepitesCachees": [
-      "Restaurant Marven's",
-      "Daawat Resto",
-      "Au Pied de Couscous"
+      "Rumi",
+      "Le Liban",
+      "Europea"
     ],
     "idealFamille": [
-      "Halal Guys Corner",
-      "Beirut House",
-      "Shahi Palace",
-      "Marrakech Express",
-      "Anatolia Kebab"
+      "Rotisserie Merhi",
+      "Le Nil Bleu",
+      "Marché Turc",
+      "Mazé",
+      "Istanbul Restaurant Montréal"
     ],
     "gastronomique": [
-      "Damas (version halal)",
-      "Saffron Garden Montréal",
-      "Saffron Fine Dining"
+      "Le Bremner",
+      "Toqué!",
+      "Europea",
+      "DNA Restaurant",
+      "Maison Boulud Montréal"
     ],
     "ouvertNuit": [
-      "Halal Guys Corner",
-      "Beirut House",
-      "Halal Guys Corner Montréal 9"
+      "Rotisserie Merhi",
+      "Istanbul Restaurant Montréal",
+      "Hakim Unique"
     ],
     "vueExceptionnelle": [
-      "Halal Guys Corner",
-      "Halal Guys Corner Montréal 9",
-      "Beirut House"
+      "Rotisserie Merhi",
+      "Le Nil Bleu",
+      "Boustan"
     ]
   }
 }
