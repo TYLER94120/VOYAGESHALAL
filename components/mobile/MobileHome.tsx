@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import SearchBarHome from '@/components/search/SearchBarHome'
 import IslamicPattern from '@/components/ui/IslamicPattern'
+import GeoDashboard from '@/components/mobile/GeoDashboard'
 
 interface Destination {
   slug: string
@@ -142,6 +143,11 @@ export default function MobileHome({ totalVilles, destinations }: { totalVilles:
             </Link>
           ))}
         </div>
+      </section>
+
+      {/* Géolocalisation 1-clic */}
+      <section style={{ padding: '4px 14px 0' }}>
+        <GeoDashboard />
       </section>
 
       {/* Destinations populaires */}

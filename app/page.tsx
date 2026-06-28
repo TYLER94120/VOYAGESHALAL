@@ -12,6 +12,7 @@ import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import MobileHome from '@/components/mobile/MobileHome'
+import GeoDashboard from '@/components/mobile/GeoDashboard'
 
 // Destinations mises en avant sur l'accueil mobile (app-style)
 const MOBILE_DESTINATIONS = [
@@ -128,6 +129,13 @@ export default function HomePage() {
             <span>📖</span>
             <span>Blog</span>
           </Link>
+        </div>
+      </section>
+
+      {/* Géolocalisation 1-clic */}
+      <section className="px-4 pt-10">
+        <div className="max-w-3xl mx-auto">
+          <GeoDashboard />
         </div>
       </section>
 
