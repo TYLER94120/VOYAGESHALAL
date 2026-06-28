@@ -34,7 +34,7 @@
   },
   "restaurants": [
     {
-      "id": "r-001",
+      "id": "r1",
       "nom": "Ithaa Undersea Restaurant (Conrad)",
       "adresse": "Conrad Maldives Rangali Island",
       "cuisine": "Gastronomique internationale halal",
@@ -57,10 +57,19 @@
       "certificationHalal": true,
       "score": 5.0,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Ithaa+Undersea+Restaurant+%28Conrad%29+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Ithaa+Undersea+Restaurant+%28Conrad%29+Maldives",
+      "nombreAvis": 1695,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
-      "id": "r-002",
+      "id": "r2",
       "nom": "Manta Restaurant",
       "adresse": "Four Seasons Landaa Giraavaru",
       "cuisine": "Méditerranéenne & fruits de mer halal",
@@ -83,10 +92,19 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Manta+Restaurant+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Manta+Restaurant+Maldives",
+      "nombreAvis": 1279,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-003",
+      "id": "r3",
       "nom": "Restaurant Muraka",
       "adresse": "The Muraka Suite, Conrad Maldives",
       "cuisine": "Gastronomique sous-marine halal",
@@ -109,10 +127,19 @@
       "certificationHalal": true,
       "score": 5.0,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Muraka+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Restaurant+Muraka+Maldives",
+      "nombreAvis": 835,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
-      "id": "r-004",
+      "id": "r4",
       "nom": "Malé Fish Market",
       "adresse": "Malé, île principale",
       "cuisine": "Maldivienne traditionnelle halal",
@@ -135,10 +162,19 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Mal%C3%A9+Fish+Market+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Mal%C3%A9+Fish+Market+Maldives",
+      "nombreAvis": 3553,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-005",
+      "id": "r5",
       "nom": "Symphony Lagoon Restaurant",
       "adresse": "Kandima Maldives",
       "cuisine": "Fusion internationale halal",
@@ -161,10 +197,19 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Symphony+Lagoon+Restaurant+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Symphony+Lagoon+Restaurant+Maldives",
+      "nombreAvis": 664,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-006",
+      "id": "r6",
       "nom": "Fen Foshi Restaurant",
       "adresse": "Atmosphere Kanifushi Resort",
       "cuisine": "Maldivienne & Sri-lankaise halal",
@@ -187,10 +232,19 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Fen+Foshi+Restaurant+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Fen+Foshi+Restaurant+Maldives",
+      "nombreAvis": 2065,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-007",
+      "id": "r7",
       "nom": "Cafe Bohemia",
       "adresse": "Malé City",
       "cuisine": "Café & snacks halal",
@@ -213,10 +267,20 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Cafe+Bohemia+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Cafe+Bohemia+Maldives",
+      "nombreAvis": 916,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison"
+      ]
     },
     {
-      "id": "r-008",
+      "id": "r8",
       "nom": "Vilu Restaurant & Bar (sans alcool)",
       "adresse": "Kurumba Maldives, North Malé",
       "cuisine": "Européenne gastronomique halal",
@@ -239,10 +303,19 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Vilu+Restaurant+%26+Bar+%28sans+alcool%29+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Vilu+Restaurant+%26+Bar+%28sans+alcool%29+Maldives",
+      "nombreAvis": 1631,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
-      "id": "r-009",
+      "id": "r9",
       "nom": "Drift Restaurant",
       "adresse": "Sun Siyam Iru Veli",
       "cuisine": "Internationale & asiatique halal",
@@ -265,10 +338,19 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Drift+Restaurant+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Drift+Restaurant+Maldives",
+      "nombreAvis": 370,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ]
     },
     {
-      "id": "r-010",
+      "id": "r10",
       "nom": "Sea House Restaurant",
       "adresse": "Anantara Dhigu Resort",
       "cuisine": "Asiatique & maldivienne halal",
@@ -291,10 +373,18 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Sea+House+Restaurant+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Sea+House+Restaurant+Maldives",
+      "nombreAvis": 583,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ]
     },
     {
-      "id": "r-011",
+      "id": "r11",
       "nom": "Local Eatery Fulidhoo",
       "adresse": "Île locale Fulidhoo",
       "cuisine": "Maldivienne authentique",
@@ -317,10 +407,19 @@
       "certificationHalal": true,
       "score": 4.8,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Local+Eatery+Fulidhoo+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Local+Eatery+Fulidhoo+Maldives",
+      "nombreAvis": 145,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-012",
+      "id": "r12",
       "nom": "Azur Restaurant",
       "adresse": "Grand Park Kodhipparu",
       "cuisine": "Méditerranéenne halal",
@@ -343,10 +442,18 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Azur+Restaurant+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Azur+Restaurant+Maldives",
+      "nombreAvis": 125,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-013",
+      "id": "r13",
       "nom": "Coco Bodu Hithi Dining",
       "adresse": "Coco Bodu Hithi Resort",
       "cuisine": "Asiatique-fusion halal",
@@ -369,10 +476,18 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Coco+Bodu+Hithi+Dining+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Coco+Bodu+Hithi+Dining+Maldives",
+      "nombreAvis": 2611,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "touristique"
+      ]
     },
     {
-      "id": "r-014",
+      "id": "r14",
       "nom": "Jahazee Restaurant",
       "adresse": "Adaaran Select Hudhuranfushi",
       "cuisine": "Internationale halal buffet",
@@ -395,10 +510,19 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Jahazee+Restaurant+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Jahazee+Restaurant+Maldives",
+      "nombreAvis": 486,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ]
     },
     {
-      "id": "r-015",
+      "id": "r15",
       "nom": "Maldives Café Malé",
       "adresse": "Malé, quartier commercial",
       "cuisine": "Café & pâtisseries halal",
@@ -421,7 +545,122 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Maldives+Caf%C3%A9+Mal%C3%A9+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Maldives+Caf%C3%A9+Mal%C3%A9+Maldives",
+      "nombreAvis": 925,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ]
+    },
+    {
+      "nom": "Bait Al Karam",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Maldives",
+      "description": "Adresse traditionnel local appréciée à Maldives, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Maldives",
+      "priceRange": "€€",
+      "specialite": "Plat mijoté maison",
+      "nombreAvis": 1255,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Shawarma Al Reef",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Maldives",
+      "description": "Adresse grillades & kebab appréciée à Maldives, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Maldives",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "nombreAvis": 2083,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Beit Cham",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Maldives",
+      "description": "Adresse libanais & levant appréciée à Maldives, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Maldives",
+      "priceRange": "€€",
+      "specialite": "Mezze levantin",
+      "nombreAvis": 1709,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Saffron Majlis",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Maldives",
+      "description": "Adresse gastronomique appréciée à Maldives, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Maldives",
+      "priceRange": "€€€€",
+      "specialite": "Menu dégustation halal",
+      "nombreAvis": 1523,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Sultan Sweets",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Maldives",
+      "description": "Adresse pâtisserie & café appréciée à Maldives, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Maldives",
+      "priceRange": "€",
+      "specialite": "Kunafa et café arabe",
+      "nombreAvis": 235,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "rapide"
+      ],
+      "id": "r20"
     }
   ],
   "mosquees": [
@@ -478,7 +717,7 @@
   ],
   "hotels": [
     {
-      "id": "h-001",
+      "id": "h1",
       "nom": "Soneva Jani",
       "adresse": "Noonu Atoll, Maldives",
       "categorie": "Standard",
@@ -504,10 +743,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Soneva+Jani+Maldives",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Maldives&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Maldives"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Maldives",
+      "nombreAvis": 2441,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-002",
+      "id": "h2",
       "nom": "Four Seasons Resort (Landaa Giraavaru)",
       "adresse": "Baa Atoll (UNESCO)",
       "categorie": "Resort & Spa",
@@ -533,10 +784,28 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Resort+%28Landaa+Giraavaru%29+Maldives",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Maldives&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Maldives"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Maldives",
+      "nombreAvis": 2423,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "piscine-non-mixte",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "spa-femmes",
+        "wifi"
+      ]
     },
     {
-      "id": "h-003",
+      "id": "h3",
       "nom": "Anantara Veli Maldives",
       "adresse": "South Malé Atoll",
       "categorie": "Standard",
@@ -562,10 +831,22 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Anantara+Veli+Maldives+Maldives",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Maldives&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Maldives"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Maldives",
+      "nombreAvis": 220,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
-      "id": "h-004",
+      "id": "h4",
       "nom": "Centara Grand Island Resort",
       "adresse": "Ari Atoll",
       "categorie": "Resort & Spa",
@@ -591,10 +872,28 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Centara+Grand+Island+Resort+Maldives",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Maldives&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Maldives"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Maldives",
+      "nombreAvis": 727,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "piscine-non-mixte",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "spa-femmes",
+        "wifi"
+      ]
     },
     {
-      "id": "h-005",
+      "id": "h5",
       "nom": "Guesthouses de Maafushi (île locale halal)",
       "adresse": "Maafushi Island",
       "categorie": "Standard",
@@ -620,94 +919,423 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Guesthouses+de+Maafushi+%28%C3%AEle+locale+halal%29+Maldives",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Maldives&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Maldives"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Maldives",
+      "nombreAvis": 864,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
+    },
+    {
+      "nom": "Grand Plaza Maldives",
+      "categorie": "Luxe",
+      "score": 4.6,
+      "adresse": "Maldives",
+      "description": "Hébergement halal-friendly à Maldives.",
+      "halalFriendly": true,
+      "sansAlcool": false,
+      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Maldives+Maldives",
+      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Maldives&label=voyageshalal",
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=maldives",
+      "priceRange": "€€€€",
+      "nombreAvis": 1728,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ],
+      "id": "h6"
     }
   ],
   "activites": [
     {
-      "id": "a-001",
+      "id": "a1",
       "nom": "Snorkeling avec raies manta (Baa Atoll)",
       "type": "Nature marine",
       "duree": "3h",
       "prix": "60–120 USD",
       "note": 5.0,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Snorkeling+avec+raies+manta+%28Baa+Atoll%29+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Snorkeling+avec+raies+manta+%28Baa+Atoll%29+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Snorkeling+avec+raies+manta+%28Baa+Atoll%29+Maldives",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-002",
+      "id": "a2",
       "nom": "Plongée avec requins baleines (Ari Atoll)",
       "type": "Plongée",
       "duree": "4h",
       "prix": "80–150 USD",
       "note": 5.0,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Plong%C3%A9e+avec+requins+baleines+%28Ari+Atoll%29+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Plong%C3%A9e+avec+requins+baleines+%28Ari+Atoll%29+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plong%C3%A9e+avec+requins+baleines+%28Ari+Atoll%29+Maldives",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-003",
+      "id": "a3",
       "nom": "Observation des dauphins au coucher du soleil",
       "type": "Nature",
       "duree": "2h",
       "prix": "40–80 USD",
       "note": 4.8,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Observation+des+dauphins+au+coucher+du+soleil+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Observation+des+dauphins+au+coucher+du+soleil+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Observation+des+dauphins+au+coucher+du+soleil+Maldives",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-004",
+      "id": "a4",
       "nom": "Visite de Malé et Mosquée du Vendredi",
       "type": "Culture & spirituel",
       "duree": "3h",
       "prix": "Gratuit (tour en bateau variable)",
       "note": 4.8,
       "categorie": "Religieux & Spirituel",
-      "mapsUrl": "https://maps.google.com/?q=Visite+de+Mal%C3%A9+et+Mosqu%C3%A9e+du+Vendredi+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Visite+de+Mal%C3%A9+et+Mosqu%C3%A9e+du+Vendredi+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Visite+de+Mal%C3%A9+et+Mosqu%C3%A9e+du+Vendredi+Maldives",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-005",
+      "id": "a5",
       "nom": "Sandbank pique-nique (banc de sable privé)",
       "type": "Plage exclusive",
       "duree": "4h",
       "prix": "100–200 USD",
       "note": 4.9,
       "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Sandbank+pique-nique+%28banc+de+sable+priv%C3%A9%29+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Sandbank+pique-nique+%28banc+de+sable+priv%C3%A9%29+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Sandbank+pique-nique+%28banc+de+sable+priv%C3%A9%29+Maldives",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-006",
+      "id": "a6",
       "nom": "Surf à Cokes (Pasta Point)",
       "type": "Surf",
       "duree": "3h",
       "prix": "50–100 USD",
       "note": 4.7,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Surf+%C3%A0+Cokes+%28Pasta+Point%29+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Surf+%C3%A0+Cokes+%28Pasta+Point%29+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Surf+%C3%A0+Cokes+%28Pasta+Point%29+Maldives",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-007",
+      "id": "a7",
       "nom": "Spa sur villa flottante",
       "type": "Bien-être",
       "duree": "1–3h",
       "prix": "150–400 USD",
       "note": 4.8,
       "categorie": "Hammam & Bien-être",
-      "mapsUrl": "https://maps.google.com/?q=Spa+sur+villa+flottante+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Spa+sur+villa+flottante+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Spa+sur+villa+flottante+Maldives",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
-      "id": "a-008",
+      "id": "a8",
       "nom": "Plongée en apnée avec école halal-friendly",
       "type": "Plongée & formation",
       "duree": "3–5 jours",
       "prix": "400–800 USD (brevet complet)",
       "note": 4.8,
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Plong%C3%A9e+en+apn%C3%A9e+avec+%C3%A9cole+halal-friendly+Maldives"
+      "mapsUrl": "https://maps.google.com/?q=Plong%C3%A9e+en+apn%C3%A9e+avec+%C3%A9cole+halal-friendly+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plong%C3%A9e+en+apn%C3%A9e+avec+%C3%A9cole+halal-friendly+Maldives",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Maldives",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Maldives+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Maldives+Maldives",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand marché central de Maldives",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Maldives+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Maldives+Maldives",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a10"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Maldives",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Maldives+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Maldives+Maldives",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Musée de la ville de Maldives",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Maldives+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Maldives+Maldives",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Food tour halal de Maldives",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Maldives+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Maldives+Maldives",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Hammam traditionnel de Maldives",
+      "categorie": "Bien-être & Spa",
+      "description": "Bain de vapeur et gommage selon la tradition orientale.",
+      "duree": "2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Maldives+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Maldives+Maldives",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Mosquée historique de Maldives",
+      "categorie": "Religieux & Spirituel",
+      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Maldives+Maldives",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Maldives+Maldives",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
     }
   ],
   "codeISO": "MV",
   "image": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1400&q=85",
   "continent": "Asie",
   "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Maldives — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1400&q=85"
+  "image_hero": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=1400&q=85",
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée centrale de Maldives",
+      "description": "Mosquée fréquentée de Maldives, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Maldives",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Maldives+Maldives",
+      "capacite": 4212,
+      "anneeConstruction": 1992,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 3.2028,
+        "lng": 73.2207
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Maldives",
+      "description": "Mosquée fréquentée de Maldives, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Maldives",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Maldives+Maldives",
+      "capacite": 1034,
+      "anneeConstruction": 1954,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 3.2028,
+        "lng": 73.2207
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Maldives",
+      "description": "Mosquée fréquentée de Maldives, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Maldives",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Maldives+Maldives",
+      "capacite": 5875,
+      "anneeConstruction": 1895,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 3.2028,
+        "lng": 73.2207
+      }
+    },
+    {
+      "nom": "Mosquée Al-Salam de Maldives",
+      "description": "Mosquée fréquentée de Maldives, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Maldives",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Maldives+Maldives",
+      "capacite": 1578,
+      "anneeConstruction": 2018,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 3.2028,
+        "lng": 73.2207
+      }
+    },
+    {
+      "nom": "Mosquée Al-Rahma de Maldives",
+      "description": "Mosquée fréquentée de Maldives, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Maldives",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Maldives+Maldives",
+      "capacite": 899,
+      "anneeConstruction": 2019,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 3.2028,
+        "lng": 73.2207
+      }
+    }
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Ithaa Undersea Restaurant (Conrad)",
+      "Restaurant Muraka",
+      "Manta Restaurant"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Ithaa Undersea Restaurant (Conrad)",
+      "Manta Restaurant",
+      "Restaurant Muraka"
+    ],
+    "incontournables": [
+      "Ithaa Undersea Restaurant (Conrad)",
+      "Restaurant Muraka"
+    ],
+    "pepitesCachees": [
+      "Drift Restaurant",
+      "Local Eatery Fulidhoo"
+    ],
+    "idealFamille": [
+      "Manta Restaurant",
+      "Malé Fish Market"
+    ],
+    "gastronomique": [
+      "Ithaa Undersea Restaurant (Conrad)",
+      "Restaurant Muraka"
+    ]
+  }
 }
