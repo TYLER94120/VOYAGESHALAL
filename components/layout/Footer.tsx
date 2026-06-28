@@ -78,7 +78,8 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-white/30">
-            © {new Date().getFullYear()} VoyagesHalal.fr — Tous droits réservés
+            © {new Date().getFullYear()} VoyagesHalal.fr — Tous droits réservés · Photos :{' '}
+            <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 underline">Unsplash</a>
           </p>
           <p className="text-xs text-white/30">
             Fait avec ♥ pour les voyageurs musulmans du monde entier
