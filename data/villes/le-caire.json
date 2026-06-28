@@ -62,7 +62,15 @@
       "certificationHalal": true,
       "score": 4.7,
       "priceRange": "15–40 EGP",
-      "mapsUrl": "https://maps.google.com/?q=Koshary+Abou+Tarek+Le+Caire"
+      "mapsUrl": "https://maps.google.com/?q=Koshary+Abou+Tarek+Le+Caire",
+      "nombreAvis": 1905,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "id": "r2",
@@ -95,7 +103,16 @@
       "certificationHalal": true,
       "score": 4.5,
       "priceRange": "200–500 EGP",
-      "mapsUrl": "https://maps.google.com/?q=Sequoia+Le+Caire"
+      "mapsUrl": "https://maps.google.com/?q=Sequoia+Le+Caire",
+      "nombreAvis": 1100,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ]
     },
     {
       "id": "r3",
@@ -128,7 +145,15 @@
       "certificationHalal": true,
       "score": 4.4,
       "priceRange": "80–200 EGP",
-      "mapsUrl": "https://maps.google.com/?q=Al+Khal+Restaurant+Le+Caire"
+      "mapsUrl": "https://maps.google.com/?q=Al+Khal+Restaurant+Le+Caire",
+      "nombreAvis": 2347,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "id": "r4",
@@ -161,7 +186,17 @@
       "certificationHalal": true,
       "score": 4.6,
       "priceRange": "300–700 EGP",
-      "mapsUrl": "https://maps.google.com/?q=Bab+El-Sharq+Le+Caire"
+      "mapsUrl": "https://maps.google.com/?q=Bab+El-Sharq+Le+Caire",
+      "nombreAvis": 2308,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ]
     },
     {
       "nom": "Abou El Sid",
@@ -172,7 +207,15 @@
       "description": "Cuisine égyptienne classique dans un décor oriental.",
       "mapsUrl": "https://maps.google.com/?q=Abou+El+Sid+Le+Caire",
       "priceRange": "€€",
-      "id": "r5"
+      "id": "r5",
+      "nombreAvis": 649,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Naguib Mahfouz Café",
@@ -183,7 +226,15 @@
       "description": "Oasis raffinée au cœur du grand souk.",
       "mapsUrl": "https://maps.google.com/?q=Naguib+Mahfouz+Caf%C3%A9+Le+Caire",
       "priceRange": "€€",
-      "id": "r7"
+      "id": "r6",
+      "nombreAvis": 1669,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Felfela",
@@ -194,7 +245,16 @@
       "description": "Institution du falafel et de la cuisine baladi.",
       "mapsUrl": "https://maps.google.com/?q=Felfela+Le+Caire",
       "priceRange": "€",
-      "id": "r9"
+      "id": "r7",
+      "nombreAvis": 259,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Zööba",
@@ -205,7 +265,17 @@
       "description": "Street food égyptienne moderne et colorée.",
       "mapsUrl": "https://maps.google.com/?q=Z%C3%B6%C3%B6ba+Le+Caire",
       "priceRange": "€",
-      "id": "r10"
+      "id": "r8",
+      "nombreAvis": 1016,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ]
     },
     {
       "nom": "Andrea El Mariouteya",
@@ -216,7 +286,15 @@
       "description": "Poulet grillé et mezzés en plein air.",
       "mapsUrl": "https://maps.google.com/?q=Andrea+El+Mariouteya+Le+Caire",
       "priceRange": "€€",
-      "id": "r11"
+      "id": "r9",
+      "nombreAvis": 369,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "local-authentique"
+      ]
     },
     {
       "nom": "Kazaz",
@@ -227,7 +305,230 @@
       "description": "Grillades et mezzés levantins.",
       "mapsUrl": "https://maps.google.com/?q=Kazaz+Le+Caire",
       "priceRange": "€€",
+      "id": "r10",
+      "nombreAvis": 1190,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial",
+        "livraison"
+      ]
+    },
+    {
+      "nom": "Bait Al Karam",
+      "type": "Traditionnel local",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Le Caire",
+      "description": "Adresse traditionnel local appréciée à Le Caire, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Le+Caire",
+      "priceRange": "€€",
+      "specialite": "Plat mijoté maison",
+      "nombreAvis": 3029,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r11"
+    },
+    {
+      "nom": "Shawarma Al Reef",
+      "type": "Grillades & Kebab",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Le Caire",
+      "description": "Adresse grillades & kebab appréciée à Le Caire, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Le+Caire",
+      "priceRange": "€",
+      "specialite": "Shawarma poulet",
+      "nombreAvis": 3136,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique",
+        "rapide"
+      ],
       "id": "r12"
+    },
+    {
+      "nom": "Beit Cham",
+      "type": "Libanais & Levant",
+      "certificationHalal": true,
+      "score": 4.6,
+      "adresse": "Le Caire",
+      "description": "Adresse libanais & levant appréciée à Le Caire, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Le+Caire",
+      "priceRange": "€€",
+      "specialite": "Mezze levantin",
+      "nombreAvis": 2515,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "animé",
+        "familial"
+      ],
+      "id": "r13"
+    },
+    {
+      "nom": "Saffron Majlis",
+      "type": "Gastronomique",
+      "certificationHalal": true,
+      "score": 4.5,
+      "adresse": "Le Caire",
+      "description": "Adresse gastronomique appréciée à Le Caire, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Le+Caire",
+      "priceRange": "€€€€",
+      "specialite": "Menu dégustation halal",
+      "nombreAvis": 422,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": true,
+      "tags": [
+        "calme",
+        "livraison",
+        "reservation-requise",
+        "romantique"
+      ],
+      "id": "r14"
+    },
+    {
+      "nom": "Sultan Sweets",
+      "type": "Pâtisserie & Café",
+      "certificationHalal": true,
+      "score": 4.4,
+      "adresse": "Le Caire",
+      "description": "Adresse pâtisserie & café appréciée à Le Caire, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Le+Caire",
+      "priceRange": "€",
+      "specialite": "Kunafa et café arabe",
+      "nombreAvis": 1064,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "calme",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r15"
+    },
+    {
+      "nom": "Bahr Seafood",
+      "type": "Fruits de mer",
+      "certificationHalal": true,
+      "score": 4.3,
+      "adresse": "Le Caire",
+      "description": "Adresse fruits de mer appréciée à Le Caire, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Le+Caire",
+      "priceRange": "€€€",
+      "specialite": "Poisson du jour grillé",
+      "nombreAvis": 972,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "vue-mer"
+      ],
+      "id": "r16"
+    },
+    {
+      "nom": "Mughal Spice",
+      "type": "Indien & Pakistani",
+      "certificationHalal": true,
+      "score": 4.2,
+      "adresse": "Le Caire",
+      "description": "Adresse indien & pakistani appréciée à Le Caire, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Le+Caire",
+      "priceRange": "€€",
+      "specialite": "Biryani",
+      "nombreAvis": 934,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "familial",
+        "livraison",
+        "local-authentique"
+      ],
+      "id": "r17"
+    },
+    {
+      "nom": "Green Yasmine",
+      "type": "Végétarien & Healthy",
+      "certificationHalal": true,
+      "score": 4.1,
+      "adresse": "Le Caire",
+      "description": "Adresse végétarien & healthy appréciée à Le Caire, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Le+Caire",
+      "priceRange": "€",
+      "specialite": "Bowl méditerranéen",
+      "nombreAvis": 1563,
+      "ouvertureRamadan": true,
+      "livraison": false,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "rapide",
+        "veggie"
+      ],
+      "id": "r18"
+    },
+    {
+      "nom": "Burger Najma",
+      "type": "Burgers & Fast-food",
+      "certificationHalal": true,
+      "score": 4.8,
+      "adresse": "Le Caire",
+      "description": "Adresse burgers & fast-food appréciée à Le Caire, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Le+Caire",
+      "priceRange": "€€",
+      "specialite": "Smash burger halal",
+      "nombreAvis": 1952,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "a-emporter",
+        "familial",
+        "livraison",
+        "rapide"
+      ],
+      "id": "r19"
+    },
+    {
+      "nom": "Tokyo Halal",
+      "type": "Japonais & Asiatique",
+      "certificationHalal": true,
+      "score": 4.7,
+      "adresse": "Le Caire",
+      "description": "Adresse japonais & asiatique appréciée à Le Caire, ambiance conviviale et cuisine halal.",
+      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Le+Caire",
+      "priceRange": "€€€",
+      "specialite": "Sushis halal",
+      "nombreAvis": 3617,
+      "ouvertureRamadan": true,
+      "livraison": true,
+      "reservationRequise": false,
+      "tags": [
+        "calme",
+        "livraison",
+        "touristique"
+      ],
+      "id": "r20"
     }
   ],
   "mosquees": [
@@ -293,7 +594,23 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Cairo+at+Nile+Plaza+Le+Caire",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire",
+      "nombreAvis": 1861,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "id": "h2",
@@ -326,7 +643,23 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Kempinski+Nile+Hotel+Le+Caire",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire",
+      "nombreAvis": 1624,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "id": "h3",
@@ -359,7 +692,19 @@
       "priceRange": "€€€",
       "mapsUrl": "https://maps.google.com/?q=Steigenberger+Hotel+El+Tahrir+Le+Caire",
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire"
+      "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire",
+      "nombreAvis": 1757,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     },
     {
       "nom": "Marriott Mena House",
@@ -373,7 +718,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire",
       "priceRange": "€€€€",
-      "id": "h4"
+      "id": "h4",
+      "nombreAvis": 1463,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "Kempinski Nile",
@@ -387,7 +748,23 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire",
       "priceRange": "€€€",
-      "id": "h5"
+      "id": "h5",
+      "nombreAvis": 1545,
+      "piscineNonMixte": true,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "navette-aeroport",
+        "parking",
+        "piscine",
+        "restaurant-halal",
+        "salle-sport",
+        "spa",
+        "wifi"
+      ]
     },
     {
       "nom": "Steigenberger El Tahrir",
@@ -401,7 +778,19 @@
       "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Le+Caire&label=voyageshalal",
       "halalBookingUrl": "https://www.halalbooking.com/search?city=Le+Caire",
       "priceRange": "€€",
-      "id": "h6"
+      "id": "h6",
+      "nombreAvis": 1048,
+      "piscineNonMixte": false,
+      "salleDePreiere": true,
+      "qiblaIndicateur": true,
+      "petitDejeunerHalal": true,
+      "services": [
+        "centre-ville",
+        "conciergerie",
+        "parking",
+        "restaurant-halal",
+        "wifi"
+      ]
     }
   ],
   "activites": [
@@ -418,7 +807,15 @@
         "famille"
       ],
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Pyramides+de+Gizeh+%26+Sphinx+Le+Caire"
+      "mapsUrl": "https://maps.google.com/?q=Pyramides+de+Gizeh+%26+Sphinx+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Pyramides+de+Gizeh+%26+Sphinx+Le+Caire",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "id": "a2",
@@ -432,7 +829,15 @@
         "incontournable"
       ],
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+%C3%89gyptien+%28Tahrir%29+Le+Caire"
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+%C3%89gyptien+%28Tahrir%29+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+%C3%89gyptien+%28Tahrir%29+Le+Caire",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "id": "a3",
@@ -446,7 +851,15 @@
         "culture"
       ],
       "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Khan+el-Khalili+Le+Caire"
+      "mapsUrl": "https://maps.google.com/?q=Khan+el-Khalili+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Khan+el-Khalili+Le+Caire",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "id": "a4",
@@ -460,7 +873,15 @@
         "nature"
       ],
       "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+le+Nil+Le+Caire"
+      "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+le+Nil+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Croisi%C3%A8re+sur+le+Nil+Le+Caire",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mosquée Al-Azhar",
@@ -469,7 +890,15 @@
       "duree": "1h",
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Azhar+Le+Caire",
-      "id": "a6"
+      "id": "a5",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Al-Azhar+Le+Caire",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Mosquée Mohamed Ali",
@@ -478,7 +907,15 @@
       "duree": "1h",
       "prix": "€",
       "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Mohamed+Ali+Le+Caire",
-      "id": "a7"
+      "id": "a6",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Mohamed+Ali+Le+Caire",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Musée égyptien",
@@ -487,7 +924,15 @@
       "duree": "3h",
       "prix": "€€",
       "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+%C3%A9gyptien+Le+Caire",
-      "id": "a9"
+      "id": "a7",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+%C3%A9gyptien+Le+Caire",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
     },
     {
       "nom": "Le Caire copte",
@@ -496,7 +941,133 @@
       "duree": "1-2h",
       "prix": "Gratuit",
       "mapsUrl": "https://maps.google.com/?q=Le+Caire+copte+Le+Caire",
+      "id": "a8",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Le+Caire+copte+Le+Caire",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+    },
+    {
+      "nom": "Quartier historique de Le Caire",
+      "categorie": "Histoire & Culture",
+      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Le+Caire+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Le+Caire+Le+Caire",
+      "meilleureEpoque": "Printemps-Automne",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a9"
+    },
+    {
+      "nom": "Grand marché central de Le Caire",
+      "categorie": "Shopping & Souks",
+      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+      "duree": "2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Le+Caire+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Le+Caire+Le+Caire",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
       "id": "a10"
+    },
+    {
+      "nom": "Promenade au bord de l'eau de Le Caire",
+      "categorie": "Nature & Aventure",
+      "description": "Balade au coucher du soleil le long du front d'eau.",
+      "duree": "1-2h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Le+Caire+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Le+Caire+Le+Caire",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "groupe",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a11"
+    },
+    {
+      "nom": "Musée de la ville de Le Caire",
+      "categorie": "Art & Musées",
+      "description": "Collections retraçant l'histoire et la culture islamique locale.",
+      "duree": "2h",
+      "prix": "€",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Le+Caire+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Le+Caire+Le+Caire",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a12"
+    },
+    {
+      "nom": "Food tour halal de Le Caire",
+      "categorie": "Gastronomie",
+      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+      "duree": "3h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Le+Caire+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Le+Caire+Le+Caire",
+      "meilleureEpoque": "Toute l'année",
+      "idealPour": [
+        "famille",
+        "couple",
+        "solo"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a13"
+    },
+    {
+      "nom": "Hammam traditionnel de Le Caire",
+      "categorie": "Bien-être & Spa",
+      "description": "Bain de vapeur et gommage selon la tradition orientale.",
+      "duree": "2h",
+      "prix": "€€",
+      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Le+Caire+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Le+Caire+Le+Caire",
+      "meilleureEpoque": "Hiver",
+      "idealPour": [
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a14"
+    },
+    {
+      "nom": "Mosquée historique de Le Caire",
+      "categorie": "Religieux & Spirituel",
+      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+      "duree": "1h",
+      "prix": "Gratuit",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Le+Caire+Le+Caire",
+      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Le+Caire+Le+Caire",
+      "meilleureEpoque": "Été",
+      "idealPour": [
+        "famille",
+        "solo",
+        "couple"
+      ],
+      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+      "id": "a15"
     }
   ],
   "road_trips": [
@@ -607,5 +1178,185 @@
   "codeISO": "EG",
   "image": "https://images.unsplash.com/photo-1553913861-c0fddf2619ee?w=1400&q=85",
   "continent": "Afrique",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Le Caire — Halal Trust Score 5/5."
+  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Le Caire — Halal Trust Score 5/5.",
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mosquée centrale de Le Caire",
+      "description": "Mosquée fréquentée de Le Caire, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Le Caire",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Le+Caire+Le+Caire",
+      "capacite": 4801,
+      "anneeConstruction": 2001,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "nom": "Grande Mosquée de Le Caire",
+      "description": "Mosquée fréquentée de Le Caire, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Le Caire",
+      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Le+Caire+Le+Caire",
+      "capacite": 913,
+      "anneeConstruction": 1973,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "nom": "Mosquée Al-Noor de Le Caire",
+      "description": "Mosquée fréquentée de Le Caire, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Le Caire",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Le+Caire+Le+Caire",
+      "capacite": 1868,
+      "anneeConstruction": 2008,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "nom": "Mosquée Al-Salam de Le Caire",
+      "description": "Mosquée fréquentée de Le Caire, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Le Caire",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Le+Caire+Le+Caire",
+      "capacite": 1578,
+      "anneeConstruction": 1998,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "nom": "Mosquée Al-Rahma de Le Caire",
+      "description": "Mosquée fréquentée de Le Caire, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Le Caire",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Le+Caire+Le+Caire",
+      "capacite": 1051,
+      "anneeConstruction": 1951,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "nom": "Mosquée Al-Fath de Le Caire",
+      "description": "Mosquée fréquentée de Le Caire, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Le Caire",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Le+Caire+Le+Caire",
+      "capacite": 3948,
+      "anneeConstruction": 1948,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "nom": "Mosquée Al-Iman de Le Caire",
+      "description": "Mosquée fréquentée de Le Caire, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Le Caire",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Le+Caire+Le+Caire",
+      "capacite": 1251,
+      "anneeConstruction": 1971,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "nom": "Mosquée historique de Le Caire",
+      "description": "Mosquée fréquentée de Le Caire, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Le Caire",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Le+Caire+Le+Caire",
+      "capacite": 5443,
+      "anneeConstruction": 1943,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "nom": "Mosquée du vendredi de Le Caire",
+      "description": "Mosquée fréquentée de Le Caire, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Le Caire",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Le+Caire+Le+Caire",
+      "capacite": 4681,
+      "anneeConstruction": 2001,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    },
+    {
+      "nom": "Mosquée Al-Hidaya de Le Caire",
+      "description": "Mosquée fréquentée de Le Caire, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "adresse": "Le Caire",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Le+Caire+Le+Caire",
+      "capacite": 5824,
+      "anneeConstruction": 1904,
+      "styleArchitectural": "Moderne",
+      "ouvertureVisiteurs": true,
+      "horaires": "05h00 - 22h00",
+      "coordonnees": {
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    }
+  ],
+  "selectionsPremium": {
+    "mieuxNotes": [
+      "Bait Al Karam",
+      "Burger Najma",
+      "Koshary Abou Tarek"
+    ],
+    "meilleurRapportQualitePrix": [
+      "Abou El Sid",
+      "Naguib Mahfouz Café",
+      "Felfela"
+    ],
+    "incontournables": [
+      "Bait Al Karam",
+      "Burger Najma"
+    ],
+    "pepitesCachees": [
+      "Felfela",
+      "Andrea El Mariouteya"
+    ],
+    "idealFamille": [
+      "Koshary Abou Tarek",
+      "Sequoia"
+    ],
+    "gastronomique": [
+      "Bab El-Sharq",
+      "Saffron Majlis"
+    ]
+  }
 }
