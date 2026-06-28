@@ -20,11 +20,11 @@ export const metadata: Metadata = buildMetadata({
 
 const DESTINATIONS = [
   { slug: 'istanbul', city: 'Istanbul', country: 'Turquie', image: 'https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=600&q=80', badge: 'INCONTOURNABLE' },
-  { slug: 'marrakech', city: 'Marrakech', country: 'Maroc', image: 'https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=600&q=80', badge: 'POPULAIRE' },
+  { slug: 'marrakech', city: 'Marrakech', country: 'Maroc', image: 'https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=600&q=80', badge: 'POPULAIRE' },
   { slug: 'dubai', city: 'Dubaï', country: 'Émirats', image: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&q=80', badge: 'LUXE' },
   { slug: 'kuala-lumpur', city: 'Kuala Lumpur', country: 'Malaisie', image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80', badge: 'TENDANCE' },
   { slug: 'le-caire', city: 'Le Caire', country: 'Égypte', image: 'https://images.unsplash.com/photo-1553913861-c0fddf2619ee?w=600&q=80', badge: 'CULTURELLE' },
-  { slug: 'medine', city: 'Médine', country: 'Arabie Saoudite', image: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=600&q=80', badge: 'SPIRITUELLE' },
+  { slug: 'medine', city: 'Médine', country: 'Arabie Saoudite', image: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=600&q=80', badge: 'SPIRITUELLE' },
 ]
 
 const FEATURES = [
