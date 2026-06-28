@@ -1,6 +1,7 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useToast } from '@/components/Toast'
 
@@ -121,7 +122,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
     <main style={{ background: 'var(--creme)', minHeight: '100vh' }}>
       {/* HERO pleine largeur */}
       <section style={{ position: 'relative', height: 380, overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        {image && <Image src={image} alt={`Guide voyage halal ${ville.nom}`} fill priority sizes="100vw" style={{ objectFit: 'cover' }} />}
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(11,26,15,0.92) 0%, rgba(11,26,15,0.25) 56%, rgba(11,26,15,0.1) 100%)' }} />
         <IslamicPattern opacity={0.05} />
         <div style={{ position: 'relative', maxWidth: 1280, margin: '0 auto', height: '100%', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', padding: '42px 48px' }}>

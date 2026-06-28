@@ -1,6 +1,7 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from 'react'
+import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { HalalScoreBadge } from '@/components/HalalScoreBadge'
 import { useToast } from '@/components/Toast'
@@ -62,7 +63,7 @@ export default function VilleMobile({ ville }: { ville: any }) {
     <main style={{ background: 'var(--creme)', minHeight: '100vh', paddingBottom: '90px' }}>
       {/* HERO */}
       <section style={{ position: 'relative', height: 236, overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+        {image && <Image src={image} alt={`Guide voyage halal ${ville.nom}`} fill priority sizes="100vw" style={{ objectFit: 'cover' }} />}
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(11,26,15,0.2) 0%, rgba(11,26,15,0.85) 100%)' }} />
         <a href="/destinations" style={{ position: 'absolute', top: 16, left: 16, width: 38, height: 38, borderRadius: '50%', background: 'rgba(11,26,15,0.5)', backdropFilter: 'blur(8px)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', fontSize: '18px', textDecoration: 'none' }}>←</a>
         {halalScore != null && (
