@@ -116,6 +116,13 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 📍 Localise-moi — géolocalisation 1-clic, en vedette sous le hero */}
+      <section className="px-4" style={{ marginTop: '-28px', position: 'relative', zIndex: 20 }}>
+        <div className="max-w-3xl mx-auto">
+          <GeoDashboard />
+        </div>
+      </section>
+
       {/* Accès rapide */}
       <section className="px-4 pt-10">
         <div className="quick-access">
@@ -135,13 +142,6 @@ export default function HomePage() {
             <span>📖</span>
             <span>Blog</span>
           </Link>
-        </div>
-      </section>
-
-      {/* Géolocalisation 1-clic */}
-      <section className="px-4 pt-10">
-        <div className="max-w-3xl mx-auto">
-          <GeoDashboard />
         </div>
       </section>
 

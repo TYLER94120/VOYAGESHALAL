@@ -31,7 +31,7 @@ export default function LocationBar({ dark = true }: { dark?: boolean }) {
           <div onClick={(e) => e.stopPropagation()} style={{ background: 'var(--creme)', width: '100%', maxWidth: 520, maxHeight: '80vh', borderRadius: '22px 22px 0 0', padding: '18px 16px', display: 'flex', flexDirection: 'column' }}>
             <div style={{ width: 40, height: 4, background: '#d6cdba', borderRadius: 4, margin: '0 auto 14px' }} />
             <button onClick={async () => { const c = await geolocate(); if (c) setOpen(false) }} style={{ width: '100%', minHeight: 56, background: 'var(--foret)', color: '#fff', border: 'none', borderRadius: '14px', fontSize: '16px', fontWeight: 700, cursor: 'pointer', marginBottom: '12px' }}>
-              {geoStatus === 'loading' ? '📍 Localisation…' : '📍 Utiliser ma position'}
+              {geoStatus === 'loading' ? '📍 Localisation…' : '📍 Localise-moi'}
             </button>
             {geoStatus === 'error' && <p style={{ fontSize: '12px', color: '#8A6D1E', marginBottom: '8px', textAlign: 'center' }}>Position indisponible — choisis une ville ci-dessous.</p>}
             <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="🔍 Rechercher une ville…" style={{ width: '100%', padding: '13px 16px', borderRadius: '12px', border: '1.5px solid rgba(27,67,50,0.25)', fontSize: '16px', marginBottom: '12px', outline: 'none' }} />

@@ -42,7 +42,7 @@ export default function LocationPicker() {
         {/* Bouton 1 — Ma position (72px) */}
         <button onClick={() => geolocate()} style={{ height: '72px', background: 'var(--foret)', color: '#fff', border: 'none', borderRadius: '18px', fontSize: '17px', fontWeight: 700, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', boxShadow: '0 8px 22px rgba(27,67,50,0.25)' }}>
           <span style={{ fontSize: '24px' }}>📍</span>
-          {geoStatus === 'loading' ? 'Localisation…' : 'Utiliser ma position'}
+          {geoStatus === 'loading' ? 'Localisation…' : 'Localise-moi'}
         </button>
         {geoStatus === 'error' && <p style={{ fontSize: '13px', color: '#8A6D1E', textAlign: 'center', margin: '-4px 0 0' }}>Position indisponible — choisissez une ville ci-dessous.</p>}
 
