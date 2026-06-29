@@ -1,6 +1,6 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useToast } from '@/components/Toast'
@@ -18,55 +18,6 @@ const CATEGORY_EMOJI: Record<string, string> = {
   'Indien & Pakistani': '🍛', 'Pizza & Italien': '🍕', 'Japonais & Asiatique': '🍣',
   'Burgers & Fast-food': '🍔', Gastronomique: '🍽', 'Végétarien & Healthy': '🥗',
   'Pâtisserie & Café': '☕', 'Grillades & Kebab': '🔥', 'Fruits de mer': '🦐', Turc: '🥙',
-}
-
-const PRAYER_LIST = [
-  { key: 'Fajr', label: 'Fajr' }, { key: 'Dhuhr', label: 'Dhuhr' }, { key: 'Asr', label: 'ʿAsr' },
-  { key: 'Maghrib', label: 'Maghrib' }, { key: 'Isha', label: 'ʿIsha' },
-]
-
-// Bandeau horizontal « prochaine prière » (live AlAdhan)
-function PrayerStrip({ ville }: { ville: any }) {
-  const [timings, setTimings] = useState<Record<string, string> | null>(null)
-  const [nextKey, setNextKey] = useState('')
-  const coord = ville.coordonnees ?? {}
-  const lat = coord.lat ?? 41.0082, lng = coord.lng ?? 28.9784
-  useEffect(() => {
-    let cancelled = false
-    ;(async () => {
-      try {
-        const d = new Date()
-        const r = await fetch(`https://api.aladhan.com/v1/timings/${Math.floor(d.getTime() / 1000)}?latitude=${lat}&longitude=${lng}&method=3`)
-        const j = await r.json(); const t = j?.data?.timings
-        if (!t || cancelled) return
-        const clean: Record<string, string> = {}
-        for (const p of PRAYER_LIST) clean[p.key] = (t[p.key] || '').slice(0, 5)
-        const now = d.getHours() * 60 + d.getMinutes()
-        let nk = 'Fajr'
-        for (const p of PRAYER_LIST) { const [h, m] = clean[p.key].split(':').map(Number); if (h * 60 + m > now) { nk = p.key; break } }
-        setTimings(clean); setNextKey(nk)
-      } catch { /* silencieux */ }
-    })()
-    return () => { cancelled = true }
-  }, [lat, lng])
-
-  return (
-    <div style={{ position: 'relative', overflow: 'hidden', background: 'var(--nuit)', borderRadius: '18px', padding: '16px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
-      <IslamicPattern opacity={0.06} />
-      <span style={{ position: 'relative', color: 'var(--or)', fontSize: '11px', fontWeight: 700, letterSpacing: '1.5px', textTransform: 'uppercase' }}>🕐 Prières · {ville.nom}</span>
-      <div style={{ position: 'relative', display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-        {PRAYER_LIST.map((p) => {
-          const isNext = p.key === nextKey
-          return (
-            <div key={p.key} style={{ textAlign: 'center' }}>
-              <div style={{ fontSize: '11px', color: isNext ? 'var(--or)' : 'rgba(253,250,243,0.6)', fontWeight: isNext ? 700 : 500 }}>{p.label}</div>
-              <div style={{ fontFamily: "'Playfair Display', serif", fontSize: '16px', fontWeight: 700, color: isNext ? 'var(--or)' : '#fff' }}>{timings ? timings[p.key] : '—'}</div>
-            </div>
-          )
-        })}
-      </div>
-    </div>
-  )
 }
 
 export default function VilleDesktop({ ville }: { ville: any }) {
@@ -124,17 +75,14 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         </div>
       </section>
 
-      {/* ACTIONS rapides — centrées */}
+      {/* ACTIONS rapides — 2 colonnes (Mosquée/Qibla/Horaires sont déjà dans la barre du bas) */}
       <div style={{ background: 'var(--nuit)' }}>
-        <div style={{ maxWidth: WRAP, margin: '0 auto', display: 'flex', gap: '12px', padding: '18px 24px', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <div style={{ maxWidth: WRAP, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', padding: '18px 24px' }}>
           {[
-            { href: '/mosquee-proche', icon: '🕌', label: 'Mosquée proche', primary: true },
-            { href: '/qibla', icon: '🧭', label: 'Direction Qibla' },
-            { href: '/horaires-priere', icon: '🕐', label: 'Horaires de prière' },
-            { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Voir sur la carte', ext: true },
-            { href: `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`, icon: '✈️', label: `Vols vers ${ville.nom}`, ext: true },
+            { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Voir sur la carte', primary: true },
+            { href: `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`, icon: '✈️', label: `Vols vers ${ville.nom}` },
           ].map((a) => (
-            <a key={a.label} href={a.href} target={a.ext ? '_blank' : undefined} rel={a.ext ? 'noopener noreferrer' : undefined}
+            <a key={a.label} href={a.href} target="_blank" rel="noopener noreferrer"
               className={`ville-action${a.primary ? ' ville-action-primary' : ''}`}>
               <span className="ico">{a.icon}</span>{a.label}
             </a>
@@ -144,22 +92,23 @@ export default function VilleDesktop({ ville }: { ville: any }) {
 
       {/* CONTENU — 1 colonne centrée, aérée */}
       <div style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px' }}>
-        {/* intro + prière */}
+        {/* intro courte */}
         {descShort && <p style={{ textAlign: 'center', color: 'var(--texte-2)', fontSize: '15.5px', lineHeight: 1.7, maxWidth: 720, margin: '0 auto 22px' }}>{descShort}</p>}
-        <div style={{ marginBottom: '26px' }}><PrayerStrip ville={ville} /></div>
 
-        {/* ONGLETS — plus gros, sticky, centrés */}
-        <div style={{ position: 'sticky', top: 0, zIndex: 40, background: 'var(--creme)', display: 'flex', gap: '6px', justifyContent: 'center', flexWrap: 'wrap', borderBottom: '1px solid rgba(11,26,15,0.08)', marginBottom: '28px', paddingTop: '6px' }}>
-          {TABS.map((tab) => {
-            const active = activeTab === tab.id
-            const count = tabCounts[tab.id]
-            return (
-              <button key={tab.id} onClick={() => setActiveTab(tab.id)} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '15px 22px', border: 'none', background: 'none', borderBottom: `3px solid ${active ? 'var(--or)' : 'transparent'}`, color: active ? 'var(--foret)' : 'var(--texte-2)', fontSize: '16px', fontWeight: active ? 700 : 600, cursor: 'pointer', whiteSpace: 'nowrap' }}>
-                <span style={{ fontSize: '18px' }}>{tab.icon}</span>{tab.label}
-                {count > 0 && <span style={{ fontSize: '12px', padding: '2px 8px', borderRadius: '20px', background: active ? 'var(--foret)' : '#EDE8DC', color: active ? '#fff' : 'var(--foret)', fontWeight: 700 }}>{count}</span>}
-              </button>
-            )
-          })}
+        {/* ONGLETS — barre claire, sticky, défilable (accès direct à tout) */}
+        <div className="ville-tabs" style={{ position: 'sticky', top: 0, zIndex: 40, background: 'var(--creme)', marginBottom: '28px', paddingTop: '6px' }}>
+          <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', WebkitOverflowScrolling: 'touch', padding: '6px', background: '#fff', borderRadius: '16px', border: '1px solid rgba(11,26,15,0.08)', boxShadow: '0 4px 16px rgba(11,26,15,0.05)' }}>
+            {TABS.map((tab) => {
+              const active = activeTab === tab.id
+              const count = tabCounts[tab.id]
+              return (
+                <button key={tab.id} onClick={() => setActiveTab(tab.id)} style={{ display: 'flex', alignItems: 'center', gap: '7px', padding: '12px 18px', border: 'none', borderRadius: '12px', background: active ? 'var(--foret)' : 'transparent', color: active ? '#fff' : 'var(--texte-2)', fontSize: '15px', fontWeight: active ? 700 : 600, cursor: 'pointer', whiteSpace: 'nowrap', flexShrink: 0, transition: 'background .18s' }}>
+                  <span style={{ fontSize: '17px' }}>{tab.icon}</span>{tab.label}
+                  {count > 0 && <span style={{ fontSize: '12px', padding: '1px 8px', borderRadius: '20px', background: active ? 'rgba(255,255,255,0.22)' : '#EDE8DC', color: active ? '#fff' : 'var(--foret)', fontWeight: 700 }}>{count}</span>}
+                </button>
+              )
+            })}
+          </div>
         </div>
 
         {activeTab === 'restaurants' && (

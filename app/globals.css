@@ -66,6 +66,14 @@
     max-width: 100%;
   }
 
+  /* Barre d'onglets ville : défilement horizontal sans barre de scroll visible */
+  .ville-tabs > div {
+    scrollbar-width: none;
+  }
+  .ville-tabs > div::-webkit-scrollbar {
+    display: none;
+  }
+
   h1, h2, h3 {
     font-family: var(--font-playfair), 'Playfair Display', Georgia, serif;
   }
