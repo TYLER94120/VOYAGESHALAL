@@ -1,5 +1,7 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { DM_Sans, Playfair_Display } from 'next/font/google'
+import RegisterSW from '@/components/pwa/RegisterSW'
+import InstallPrompt from '@/components/pwa/InstallPrompt'
 import './globals.css'
 import '../styles/animations.css'
 import { ToastProvider } from '@/components/Toast'
@@ -34,9 +36,17 @@ export const metadata: Metadata = {
   },
   twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large' } },
+  appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: 'VoyagesHalal' },
   ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION && {
     verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION },
   }),
+}
+
+export const viewport: Viewport = {
+  themeColor: '#0b1a0f',
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover',
 }
 
 export default function RootLayout({
@@ -56,6 +66,8 @@ export default function RootLayout({
             <Footer />
             <BottomNav />
             <ToastProvider />
+            <RegisterSW />
+            <InstallPrompt />
           </LocationProvider>
         </LanguageProvider>
       </body>
