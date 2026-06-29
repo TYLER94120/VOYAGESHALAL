@@ -1,0 +1,80 @@
+{
+  "slug": "zagora",
+  "nom": "Zagora",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Sud du Maroc / Sahara",
+  "coordonnees": {
+    "lat": 30.3324,
+    "lng": -5.8386
+  },
+  "codeISO": "MA",
+  "score_halal": 4.5,
+  "halalScore": 9.1,
+  "description": "'Porte du désert' dans la vallée du Drâa, célèbre pour son panneau 'Tombouctou 52 jours', ses palmeraies et la bibliothèque coranique de Tamegroute.",
+  "image": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
+  "image_hero": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
+  "metaDescription": "'Porte du désert' dans la vallée du Drâa, célèbre pour son panneau 'Tombouctou 52 jours', ses palmeraies et la bibliothèque coranique de Tamegroute.",
+  "monnaie": "MAD (Dirham marocain)",
+  "langue": "Arabe, Tamazight, Français",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
+  },
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Zagora",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Zagora",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Zagora%20Zagora%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Vallée et palmeraies du Drâa",
+      "categorie": "Nature",
+      "description": "Oasis verdoyante le long de l'oued Drâa.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e%20et%20palmeraies%20du%20Dr%C3%A2a%20Zagora%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Bibliothèque coranique de Tamegroute",
+      "categorie": "Spirituel",
+      "description": "Manuscrits anciens et poterie verte traditionnelle.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Biblioth%C3%A8que%20coranique%20de%20Tamegroute%20Zagora%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Désert de pierres & dunes de Tinfou",
+      "categorie": "Nature",
+      "description": "Étendues désertiques accessibles depuis la ville.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=D%C3%A9sert%20de%20pierres%20%26%20dunes%20de%20Tinfou%20Zagora%20Maroc"
+    }
+  ],
+  "donneesAVenir": true
+}

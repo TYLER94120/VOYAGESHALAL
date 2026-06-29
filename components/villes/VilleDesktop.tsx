@@ -163,10 +163,23 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 </div>
               ))}
             </div>
+            {restaurants.length === 0 && (
+              <div style={{ ...card, textAlign: 'center', padding: '40px 22px' }}>
+                <div style={{ fontSize: 34, marginBottom: 10 }}>🍽️</div>
+                <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: 'var(--nuit)', fontSize: 18, margin: '0 0 6px' }}>Restaurants en cours d’ajout</p>
+                <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.6, margin: 0 }}>Nous ajoutons les adresses halal vérifiées de {ville.nom}. En attendant, découvre les activités et mosquées ci-dessus. 🤲</p>
+              </div>
+            )}
           </>
         )}
 
-        {displayTab === 'hotels' && (
+        {displayTab === 'hotels' && (hotels.length === 0 ? (
+          <div style={{ ...card, textAlign: 'center', padding: '40px 22px' }}>
+            <div style={{ fontSize: 34, marginBottom: 10 }}>🏨</div>
+            <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: 'var(--nuit)', fontSize: 18, margin: '0 0 6px' }}>Hôtels en cours d’ajout</p>
+            <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.6, margin: 0 }}>Les hébergements halal-friendly de {ville.nom} arrivent bientôt.</p>
+          </div>
+        ) : (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
             {hotels.map((h: any, i: number) => (
               <div key={i} style={card}>
@@ -187,7 +200,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               </div>
             ))}
           </div>
-        )}
+        ))}
 
         {displayTab === 'mosquees' && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>

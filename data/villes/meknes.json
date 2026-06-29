@@ -1,0 +1,89 @@
+{
+  "slug": "meknes",
+  "nom": "Meknès",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Centre du Maroc",
+  "coordonnees": {
+    "lat": 33.8935,
+    "lng": -5.5473
+  },
+  "codeISO": "MA",
+  "score_halal": 4.5,
+  "halalScore": 9.0,
+  "description": "Ville impériale aux portes monumentales et à l'architecture ismaïlienne grandiose. Point de départ pour Volubilis et Moulay Idriss Zerhoun.",
+  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "metaDescription": "Ville impériale aux portes monumentales et à l'architecture ismaïlienne grandiose. Point de départ pour Volubilis et Moulay Idriss Zerhoun.",
+  "monnaie": "MAD (Dirham marocain)",
+  "langue": "Arabe, Tamazight, Français",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
+  },
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Meknès",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Meknès",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Mekn%C3%A8s%20Mekn%C3%A8s%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Bab Mansour",
+      "categorie": "Histoire",
+      "description": "L'une des plus belles portes monumentales du Maroc.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Bab%20Mansour%20Mekn%C3%A8s%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Volubilis (cité romaine)",
+      "categorie": "Histoire",
+      "description": "Vaste site romain classé UNESCO, mosaïques remarquables.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Volubilis%20%28cit%C3%A9%20romaine%29%20Mekn%C3%A8s%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Moulay Idriss Zerhoun",
+      "categorie": "Spirituel",
+      "description": "Ville sainte de pèlerinage perchée sur deux collines.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Moulay%20Idriss%20Zerhoun%20Mekn%C3%A8s%20Maroc"
+    },
+    {
+      "id": "a4",
+      "nom": "Greniers et écuries de Moulay Ismaïl",
+      "categorie": "Histoire",
+      "description": "Immenses greniers royaux et bassin de l'Agdal.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Greniers%20et%20%C3%A9curies%20de%20Moulay%20Isma%C3%AFl%20Mekn%C3%A8s%20Maroc"
+    }
+  ],
+  "donneesAVenir": true
+}

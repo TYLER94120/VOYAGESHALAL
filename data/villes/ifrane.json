@@ -1,0 +1,80 @@
+{
+  "slug": "ifrane",
+  "nom": "Ifrane",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Centre du Maroc",
+  "coordonnees": {
+    "lat": 33.5228,
+    "lng": -5.1106
+  },
+  "codeISO": "MA",
+  "score_halal": 4.6,
+  "halalScore": 9.2,
+  "description": "Station de montagne du Moyen Atlas surnommée 'la petite Suisse marocaine'. Air pur, lacs, cèdres et ski en hiver. Université Al Akhawayn.",
+  "image": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
+  "image_hero": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
+  "metaDescription": "Station de montagne du Moyen Atlas surnommée 'la petite Suisse marocaine'. Air pur, lacs, cèdres et ski en hiver. Université Al Akhawayn.",
+  "monnaie": "MAD (Dirham marocain)",
+  "langue": "Arabe, Tamazight, Français",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
+  },
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Ifrane",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Ifrane",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Ifrane%20Ifrane%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Station de ski Michlifen",
+      "categorie": "Sport",
+      "description": "Pistes de ski en hiver dans les cèdres du Moyen Atlas.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Station%20de%20ski%20Michlifen%20Ifrane%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Cèdres de l'Atlas & singes magots",
+      "categorie": "Nature",
+      "description": "Forêts de cèdres centenaires peuplées de singes magots.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=C%C3%A8dres%20de%20l%27Atlas%20%26%20singes%20magots%20Ifrane%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Lac Dayet Aoua",
+      "categorie": "Nature",
+      "description": "Lac de montagne paisible, oiseaux et pique-nique.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Lac%20Dayet%20Aoua%20Ifrane%20Maroc"
+    }
+  ],
+  "donneesAVenir": true
+}

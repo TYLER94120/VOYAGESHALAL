@@ -1,0 +1,80 @@
+{
+  "slug": "taza",
+  "nom": "Taza",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Intérieur du Maroc",
+  "coordonnees": {
+    "lat": 34.21,
+    "lng": -4.01
+  },
+  "codeISO": "MA",
+  "score_halal": 4.5,
+  "halalScore": 9.0,
+  "description": "Ville historique nichée entre le Rif et le Moyen Atlas, gardienne du 'couloir de Taza'. À proximité, le spectaculaire gouffre du Friouato.",
+  "image": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
+  "image_hero": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
+  "metaDescription": "Ville historique nichée entre le Rif et le Moyen Atlas, gardienne du 'couloir de Taza'. À proximité, le spectaculaire gouffre du Friouato.",
+  "monnaie": "MAD (Dirham marocain)",
+  "langue": "Arabe, Tamazight, Français",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
+  },
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Taza",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Taza",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Taza%20Taza%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Gouffre du Friouato",
+      "categorie": "Nature",
+      "description": "L'un des plus grands gouffres d'Afrique du Nord, descente impressionnante.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Gouffre%20du%20Friouato%20Taza%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Médina de Taza",
+      "categorie": "Culture",
+      "description": "Médina fortifiée, grande mosquée almohade, remparts.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20de%20Taza%20Taza%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Parc national de Tazekka",
+      "categorie": "Nature",
+      "description": "Cèdres, cascades et grottes du Moyen Atlas.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Parc%20national%20de%20Tazekka%20Taza%20Maroc"
+    }
+  ],
+  "donneesAVenir": true
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "safi",
+  "nom": "Safi",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Intérieur du Maroc",
+  "coordonnees": {
+    "lat": 32.2994,
+    "lng": -9.2372
+  },
+  "codeISO": "MA",
+  "score_halal": 4.5,
+  "halalScore": 8.9,
+  "description": "Capitale de la poterie marocaine et grand port sardinier atlantique. Colline des potiers, four traditionnels et château portugais en bord de mer.",
+  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "metaDescription": "Capitale de la poterie marocaine et grand port sardinier atlantique. Colline des potiers, four traditionnels et château portugais en bord de mer.",
+  "monnaie": "MAD (Dirham marocain)",
+  "langue": "Arabe, Tamazight, Français",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
+  },
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Safi",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Safi",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Safi%20Safi%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Colline des potiers",
+      "categorie": "Artisanat",
+      "description": "Ateliers de céramique de Safi en activité, démonstrations et achats.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Colline%20des%20potiers%20Safi%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Château de la Mer (Ksar el Bahr)",
+      "categorie": "Histoire",
+      "description": "Forteresse portugaise face à l'Atlantique.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Ch%C3%A2teau%20de%20la%20Mer%20%28Ksar%20el%20Bahr%29%20Safi%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Médina et souk",
+      "categorie": "Culture",
+      "description": "Souks, remparts et quartier des potiers.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20et%20souk%20Safi%20Maroc"
+    }
+  ],
+  "donneesAVenir": true
+}

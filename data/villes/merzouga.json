@@ -1,0 +1,89 @@
+{
+  "slug": "merzouga",
+  "nom": "Merzouga",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Sud du Maroc / Sahara",
+  "coordonnees": {
+    "lat": 31.0996,
+    "lng": -4.0124
+  },
+  "codeISO": "MA",
+  "score_halal": 4.7,
+  "halalScore": 9.3,
+  "description": "Aux portes des dunes d'Erg Chebbi (jusqu'à 150m), Merzouga est le départ des bivouacs sahariens, dos de chameau et levers de soleil inoubliables.",
+  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "metaDescription": "Aux portes des dunes d'Erg Chebbi (jusqu'à 150m), Merzouga est le départ des bivouacs sahariens, dos de chameau et levers de soleil inoubliables.",
+  "monnaie": "MAD (Dirham marocain)",
+  "langue": "Arabe, Tamazight, Français",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
+  },
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Merzouga",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Merzouga",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Merzouga%20Merzouga%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Dunes de l'Erg Chebbi",
+      "categorie": "Nature",
+      "description": "Mer de sable orange culminant à 150m, lever et coucher de soleil épiques.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Dunes%20de%20l%27Erg%20Chebbi%20Merzouga%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Bivouac berbère dans le désert",
+      "categorie": "Culture",
+      "description": "Nuit sous tente nomade, musique et ciel étoilé.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Bivouac%20berb%C3%A8re%20dans%20le%20d%C3%A9sert%20Merzouga%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Balade à dos de dromadaire",
+      "categorie": "Nature",
+      "description": "Caravane au coeur des dunes au coucher du soleil.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Balade%20%C3%A0%20dos%20de%20dromadaire%20Merzouga%20Maroc"
+    },
+    {
+      "id": "a4",
+      "nom": "Lac Dayet Srji (flamants roses)",
+      "categorie": "Nature",
+      "description": "Lac temporaire accueillant des flamants au printemps.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Lac%20Dayet%20Srji%20%28flamants%20roses%29%20Merzouga%20Maroc"
+    }
+  ],
+  "donneesAVenir": true
+}

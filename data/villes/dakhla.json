@@ -1,0 +1,80 @@
+{
+  "slug": "dakhla",
+  "nom": "Dakhla",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Sud du Maroc / Sahara",
+  "coordonnees": {
+    "lat": 23.6848,
+    "lng": -15.9579
+  },
+  "codeISO": "MA",
+  "score_halal": 4.5,
+  "halalScore": 9.1,
+  "description": "Presqu'île du Sahara atlantique entre désert et océan, Dakhla est l'un des meilleurs spots de kitesurf au monde, avec sa lagune turquoise.",
+  "image": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=1600&q=80",
+  "metaDescription": "Presqu'île du Sahara atlantique entre désert et océan, Dakhla est l'un des meilleurs spots de kitesurf au monde, avec sa lagune turquoise.",
+  "monnaie": "MAD (Dirham marocain)",
+  "langue": "Arabe, Tamazight, Français",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
+  },
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Dakhla",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Dakhla",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Dakhla%20Dakhla%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Lagune de Dakhla (kitesurf)",
+      "categorie": "Sport nautique",
+      "description": "Spot de kitesurf de réputation mondiale, eaux plates turquoise.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Lagune%20de%20Dakhla%20%28kitesurf%29%20Dakhla%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Dune blanche",
+      "categorie": "Nature",
+      "description": "Dune de sable plongeant dans la lagune, excursion incontournable.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Dune%20blanche%20Dakhla%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Sources chaudes & désert atlantique",
+      "categorie": "Nature",
+      "description": "Bains naturels et étendues sahariennes face à l'océan.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Sources%20chaudes%20%26%20d%C3%A9sert%20atlantique%20Dakhla%20Maroc"
+    }
+  ],
+  "donneesAVenir": true
+}
