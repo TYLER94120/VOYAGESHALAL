@@ -48,8 +48,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    /* Empêche tout défilement horizontal (image/section qui bouge de gauche à droite sur mobile) */
-    overflow-x: hidden;
+    /* clip (et non hidden) : stoppe le scroll horizontal SANS casser position:sticky sur mobile */
+    overflow-x: clip;
   }
 
   body {
@@ -57,7 +57,7 @@
     color: #1a1a18;
     font-family: var(--font-inter), 'DM Sans', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
-    overflow-x: hidden;
+    overflow-x: clip;
     max-width: 100%;
   }
 
@@ -449,13 +449,17 @@ body { top: 0 !important; }
 /* Bandeau prochaine prière — fin, sticky, sur toutes les pages */
 .prayer-bar {
   position: sticky; top: 0; z-index: 500;
-  display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
   background: var(--nuit); color: #fdfaf3;
   font-size: 13px; font-weight: 600;
-  padding: 7px 14px; min-height: 34px;
+  padding: 7px 48px 7px 14px; min-height: 34px;
   border-bottom: 1px solid rgba(201,168,76,0.3);
-  text-align: center; line-height: 1.2;
+  text-align: center; line-height: 1.2; position: sticky;
 }
+.prayer-bar-main { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; color: inherit; text-decoration: none; }
+.prayer-bar-lang { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); }
+/* Sur PC, la langue est déjà dans le header → on évite le doublon dans le bandeau */
+@media (min-width: 1024px) { .prayer-bar-lang { display: none; } .prayer-bar { padding: 7px 14px; } }
 
 /* Grille d'onglets : 2 colonnes sur mobile, une seule rangée compacte sur PC */
 .ville-tabs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }

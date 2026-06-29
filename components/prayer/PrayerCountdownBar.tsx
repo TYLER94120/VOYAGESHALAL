@@ -2,23 +2,23 @@
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useLocation } from '@/components/location/LocationProvider'
+import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
 
 const KEYS = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const
 const LABELS: Record<string, string> = { Fajr: 'Fajr', Dhuhr: 'Dhuhr', Asr: 'ʿAsr', Maghrib: 'Maghrib', Isha: 'ʿIshâ' }
 
-// Bandeau fin, sticky, présent sur toutes les pages : prochaine prière + compte à rebours.
+// Bandeau fin, sticky, présent sur toutes les pages : prochaine prière + compte à rebours
+// (+ accès langue sur mobile, où le header est masqué).
 export default function PrayerCountdownBar() {
   const { city } = useLocation()
   const [timings, setTimings] = useState<Record<string, string> | null>(null)
   const [now, setNow] = useState(Date.now())
 
-  // Horloge (1 s)
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 1000)
     return () => clearInterval(id)
   }, [])
 
-  // Horaires du jour pour la ville mémorisée
   useEffect(() => {
     if (!city || city.lat == null || city.lng == null) { setTimings(null); return }
     let cancelled = false
@@ -39,47 +39,45 @@ export default function PrayerCountdownBar() {
     return () => { cancelled = true }
   }, [city])
 
-  // Pas de ville → invitation discrète
+  let inner: React.ReactNode
   if (!city) {
-    return (
-      <Link href="/horaires-priere" className="prayer-bar" style={{ textDecoration: 'none' }}>
-        🕌 <span style={{ opacity: 0.85 }}>Choisissez votre ville pour les horaires de prière</span>
+    inner = <Link href="/horaires-priere" className="prayer-bar-main">🕌 <span style={{ opacity: 0.85 }}>Choisissez votre ville pour les horaires</span></Link>
+  } else if (!timings) {
+    inner = <span className="prayer-bar-main">🕌 <span style={{ opacity: 0.7 }}>Chargement des horaires…</span></span>
+  } else {
+    const d = new Date(now)
+    let nextKey = 'Fajr'
+    let target: Date | null = null
+    for (const k of KEYS) {
+      const [h, m] = timings[k].split(':').map(Number)
+      const when = new Date(d); when.setHours(h, m, 0, 0)
+      if (when.getTime() > now) { nextKey = k; target = when; break }
+    }
+    if (!target) {
+      const [h, m] = timings.Fajr.split(':').map(Number)
+      target = new Date(d); target.setDate(target.getDate() + 1); target.setHours(h, m, 0, 0)
+      nextKey = 'Fajr'
+    }
+    const diff = Math.max(0, target.getTime() - now)
+    const hh = Math.floor(diff / 3600000)
+    const mm = Math.floor((diff % 3600000) / 60000)
+    const ss = Math.floor((diff % 60000) / 1000)
+    const remaining = hh > 0 ? `${hh}h ${String(mm).padStart(2, '0')}min` : `${mm}min ${String(ss).padStart(2, '0')}s`
+    inner = (
+      <Link href="/horaires-priere" className="prayer-bar-main">
+        <span>🕌 <strong style={{ color: 'var(--or)' }}>{LABELS[nextKey]}</strong> {timings[nextKey]}</span>
+        <span style={{ opacity: 0.6 }}>·</span>
+        <span>dans <strong>{remaining}</strong></span>
+        <span style={{ opacity: 0.55, fontSize: 11 }}>📍 {city.nom}</span>
       </Link>
     )
   }
 
-  if (!timings) {
-    return <div className="prayer-bar">🕌 <span style={{ opacity: 0.7 }}>Chargement des horaires…</span></div>
-  }
-
-  // Prochaine prière + temps restant
-  const d = new Date(now)
-  let nextKey = 'Fajr'
-  let target: Date | null = null
-  for (const k of KEYS) {
-    const [h, m] = timings[k].split(':').map(Number)
-    const when = new Date(d); when.setHours(h, m, 0, 0)
-    if (when.getTime() > now) { nextKey = k; target = when; break }
-  }
-  if (!target) {
-    // Toutes passées → Fajr de demain (≈ Fajr du jour + 24 h)
-    const [h, m] = timings.Fajr.split(':').map(Number)
-    target = new Date(d); target.setDate(target.getDate() + 1); target.setHours(h, m, 0, 0)
-    nextKey = 'Fajr'
-  }
-
-  const diff = Math.max(0, target.getTime() - now)
-  const hh = Math.floor(diff / 3600000)
-  const mm = Math.floor((diff % 3600000) / 60000)
-  const ss = Math.floor((diff % 60000) / 1000)
-  const remaining = hh > 0 ? `${hh}h ${String(mm).padStart(2, '0')}min` : `${mm}min ${String(ss).padStart(2, '0')}s`
-
   return (
-    <Link href="/horaires-priere" className="prayer-bar" style={{ textDecoration: 'none' }}>
-      <span>🕌 <strong style={{ color: 'var(--or)' }}>{LABELS[nextKey]}</strong> {timings[nextKey]}</span>
-      <span style={{ opacity: 0.6 }}>·</span>
-      <span>dans <strong>{remaining}</strong></span>
-      <span style={{ opacity: 0.55, fontSize: 11 }}>📍 {city.nom}</span>
-    </Link>
+    <div className="prayer-bar">
+      {inner}
+      {/* Accès langue (surtout utile sur mobile où le header est masqué) */}
+      <span className="prayer-bar-lang"><LanguageSwitcher /></span>
+    </div>
   )
 }

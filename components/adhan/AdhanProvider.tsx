@@ -75,6 +75,26 @@ export function AdhanProvider({ children }: { children: React.ReactNode }) {
     a.play().then(() => { a.pause(); a.currentTime = 0; a.volume = volume }).catch(() => {})
   }, [muezzin, volume, muezzinUrl])
 
+  // Déverrouillage de l'audio au 1er geste utilisateur quand l'adhan est activé
+  // (sinon, après un rechargement sans interaction, le navigateur bloque la lecture).
+  const unlockedRef = useRef(false)
+  useEffect(() => {
+    if (!enabled) return
+    const onGesture = () => {
+      if (unlockedRef.current) return
+      unlockedRef.current = true
+      unlock()
+      window.removeEventListener('pointerdown', onGesture)
+      window.removeEventListener('touchstart', onGesture)
+    }
+    window.addEventListener('pointerdown', onGesture)
+    window.addEventListener('touchstart', onGesture)
+    return () => {
+      window.removeEventListener('pointerdown', onGesture)
+      window.removeEventListener('touchstart', onGesture)
+    }
+  }, [enabled, unlock])
+
   const playAdhan = useCallback((key: PrayerKey) => {
     const a = audioRef.current
     if (!a) return
