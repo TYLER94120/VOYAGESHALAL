@@ -79,12 +79,14 @@ export function AdhanProvider({ children }: { children: React.ReactNode }) {
 
   // Débloque l'audio + l'AudioContext (politique navigateur : nécessite un geste utilisateur)
   const unlock = useCallback(() => {
+    // Débloque l'élément <audio> SILENCIEUSEMENT via muted (iOS ignore volume=0 → l'adhan s'entendrait)
     const a = audioRef.current
     if (a) {
+      a.muted = true
       a.src = muezzinUrl(muezzin)
-      a.volume = 0
-      a.play().then(() => { a.pause(); a.currentTime = 0; a.volume = volume }).catch(() => {})
+      a.play().then(() => { a.pause(); a.currentTime = 0; a.muted = false }).catch(() => { a.muted = false })
     }
+    // Débloque le contexte audio (sonnerie discrète)
     try {
       type ACtor = typeof AudioContext
       const Ctor: ACtor | undefined = window.AudioContext || (window as unknown as { webkitAudioContext?: ACtor }).webkitAudioContext
@@ -93,7 +95,7 @@ export function AdhanProvider({ children }: { children: React.ReactNode }) {
         if (audioCtxRef.current.state === 'suspended') audioCtxRef.current.resume()
       }
     } catch {}
-  }, [muezzin, volume, muezzinUrl])
+  }, [muezzin, muezzinUrl])
 
   // Sonnerie discrète générée (Web Audio) — pas de fichier, fonctionne hors-ligne
   const playChimeSound = useCallback(() => {
@@ -148,6 +150,7 @@ export function AdhanProvider({ children }: { children: React.ReactNode }) {
     }
     const a = audioRef.current
     if (!a) { setPlaying(null); return }
+    a.muted = false
     a.src = muezzinUrl(muezzin)
     a.volume = volume
     a.currentTime = 0
