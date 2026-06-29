@@ -20,7 +20,7 @@ export default function LanguageSwitcher() {
     <div ref={ref} style={{ position: 'relative' }}>
       <button onClick={() => setOpen((o) => !o)} aria-label="Changer de langue"
         style={{ display: 'flex', alignItems: 'center', gap: '6px', background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', fontSize: '13px', fontWeight: 700, padding: '4px 6px' }}>
-        <span>{current.flag}</span><span>{current.short}</span>
+        <span style={{ fontSize: '14px' }} aria-hidden>🌐</span><span>{current.short}</span>
         <span style={{ fontSize: '9px', opacity: 0.7 }}>▼</span>
       </button>
       {open && (

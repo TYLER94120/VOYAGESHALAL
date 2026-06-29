@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { PrayerTimesWidget } from '@/components/PrayerTimesWidget'
+import { useLocation } from '@/components/location/LocationProvider'
 
 interface VilleOption {
   nom: string
@@ -31,12 +32,28 @@ const VILLES: VilleOption[] = [
 ]
 
 export default function HorairesClient() {
+  const { city, clearLocation } = useLocation()
   const [query, setQuery] = useState('')
   const [selected, setSelected] = useState<VilleOption>(VILLES[0])
 
   const filtered = VILLES.filter((v) =>
     v.nom.toLowerCase().includes(query.trim().toLowerCase())
   )
+
+  // Une ville est mémorisée → horaires chargés automatiquement, pas besoin de re-sélectionner
+  if (city && city.lat != null && city.lng != null) {
+    return (
+      <div className="max-w-3xl mx-auto">
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.35)', borderRadius: 14, padding: '12px 18px', marginBottom: 20 }}>
+          <span style={{ fontWeight: 700, color: 'var(--foret)', fontSize: 15 }}>📍 Horaires pour {city.nom}</span>
+          <button onClick={clearLocation} style={{ background: 'none', border: 'none', color: 'var(--or)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}>
+            Changer de ville →
+          </button>
+        </div>
+        <PrayerTimesWidget ville={city.nom} pays={city.pays ?? ''} countryCode="" lat={city.lat} lng={city.lng} />
+      </div>
+    )
+  }
 
   return (
     <div className="max-w-3xl mx-auto">

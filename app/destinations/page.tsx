@@ -1,8 +1,10 @@
 import type { Metadata } from 'next'
+import { Suspense } from 'react'
 import fs from 'fs'
 import path from 'path'
 import { buildMetadata } from '@/lib/seo'
 import DestinationsClient, { type VilleCard } from '@/components/destination/DestinationsClient'
+import DestinationsRedirect from '@/components/location/DestinationsRedirect'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80'
@@ -80,6 +82,9 @@ export default function DestinationsPage() {
 
   return (
     <main style={{ backgroundColor: '#fdfaf3' }}>
+      <Suspense fallback={null}>
+        <DestinationsRedirect />
+      </Suspense>
       {/* Hero compact nuit */}
       <section className="relative overflow-hidden px-6 sm:px-16 pt-14 pb-16 text-center" style={{ backgroundColor: '#0b1a0f' }}>
         <IslamicPattern opacity={0.07} />

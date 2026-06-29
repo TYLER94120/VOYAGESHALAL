@@ -5,6 +5,7 @@ import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
 import VilleDesktop from '@/components/villes/VilleDesktop'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
+import CitySync from '@/components/location/CitySync'
 import cityCoords from '@/lib/cityCoords.json'
 
 export const dynamicParams = false
@@ -69,22 +70,33 @@ export default async function DestinationPage({ params }: Props) {
   if (!ville) notFound()
 
   // Maillage interne : villes du même pays d'abord, complété par d'autres, hors ville courante
-  const all = cityCoords as { slug: string; nom: string; pays?: string }[]
+  const all = cityCoords as { slug: string; nom: string; pays?: string; lat?: number; lng?: number }[]
   const sameCountry = all.filter((c) => c.slug !== city && c.pays === ville.pays)
   const others = all.filter((c) => c.slug !== city && c.pays !== ville.pays)
   const related = [...sameCountry, ...others].slice(0, 12)
+  const coords = all.find((c) => c.slug === city)
 
   return (
     <>
+      {/* Mémorise automatiquement cette ville pour tout le site si aucune n'est encore choisie */}
+      {coords?.lat != null && coords?.lng != null && (
+        <CitySync city={{ slug: city, nom: ville.nom, pays: ville.pays, lat: coords.lat, lng: coords.lng }} />
+      )}
+
       {/* Design unifié responsive (mobile + desktop : 1 colonne épurée) */}
       <VilleDesktop ville={ville} />
 
       {/* Maillage interne — autres destinations halal */}
       <nav aria-label="Autres destinations halal" style={{ background: 'var(--creme)', borderTop: '1px solid rgba(11,26,15,0.06)', padding: '28px 18px 80px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-          <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '20px', fontWeight: 700, color: 'var(--nuit)', marginBottom: '14px' }}>
-            Autres destinations halal
-          </h2>
+          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8, marginBottom: '14px' }}>
+            <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '20px', fontWeight: 700, color: 'var(--nuit)', margin: 0 }}>
+              Autres destinations halal
+            </h2>
+            <a href="/destinations?all=1" style={{ fontSize: '14px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
+              Voir les 88 destinations →
+            </a>
+          </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '9px' }}>
             {related.map((c) => (
               <a key={c.slug} href={`/destinations/${c.slug}`} style={{ padding: '8px 15px', background: '#fff', border: '1px solid rgba(27,67,50,0.2)', borderRadius: '30px', fontSize: '14px', fontWeight: 600, color: 'var(--foret)', textDecoration: 'none' }}>

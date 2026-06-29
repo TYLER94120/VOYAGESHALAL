@@ -1,8 +1,9 @@
 'use client'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap, Marker } from 'leaflet'
 import IslamicPattern from '@/components/ui/IslamicPattern'
+import { useLocation } from '@/components/location/LocationProvider'
 
 interface Mosque {
   id: number
@@ -14,6 +15,7 @@ interface Mosque {
 }
 
 export default function MosqueeProchePage() {
+  const { city, clearLocation } = useLocation()
   const [step, setStep] = useState<'idle' | 'loading' | 'results' | 'error'>('idle')
   const [mosques, setMosques] = useState<Mosque[]>([])
   const [selectedMosque, setSelectedMosque] = useState<Mosque | null>(null)
@@ -35,6 +37,50 @@ export default function MosqueeProchePage() {
   function fmt(m: number): string {
     return m < 1000 ? `${Math.round(m)} m` : `${(m / 1000).toFixed(1)} km`
   }
+
+  // Recherche les mosquées autour de coordonnées données (ville mémorisée ou GPS)
+  async function searchAt(lat: number, lng: number) {
+    setStep('loading')
+    const query = `[out:json][timeout:25];(node["amenity"="place_of_worship"]["religion"="muslim"](around:${radius},${lat},${lng});way["amenity"="place_of_worship"]["religion"="muslim"](around:${radius},${lat},${lng});relation["amenity"="place_of_worship"]["religion"="muslim"](around:${radius},${lat},${lng}););out center;`
+    try {
+      const res = await fetch('https://overpass-api.de/api/interpreter', {
+        method: 'POST',
+        body: `data=${encodeURIComponent(query)}`,
+      })
+      const data = await res.json()
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const results: Mosque[] = (data.elements as any[])
+        .map((el) => {
+          const elLat = el.lat ?? el.center?.lat
+          const elLng = el.lon ?? el.center?.lon
+          if (!elLat || !elLng) return null
+          return {
+            id: el.id,
+            lat: elLat,
+            lng: elLng,
+            name: el.tags?.name || el.tags?.['name:fr'] || el.tags?.['name:ar'] || 'Mosquée',
+            distance: haversine(lat, lng, elLat, elLng),
+            address: [el.tags?.['addr:housenumber'], el.tags?.['addr:street'], el.tags?.['addr:city']].filter(Boolean).join(' ') || undefined,
+          } as Mosque
+        })
+        .filter((m): m is Mosque => m !== null)
+        .sort((a, b) => a.distance - b.distance)
+        .slice(0, 20)
+      setMosques(results)
+      setStep('results')
+      setTimeout(() => initMap(lat, lng, results), 100)
+    } catch {
+      setStep('error')
+    }
+  }
+
+  // Ville mémorisée → recherche automatique sans redemander la position
+  useEffect(() => {
+    if (city && city.lat != null && city.lng != null && step === 'idle') {
+      searchAt(city.lat, city.lng)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [city])
 
   function findMosques() {
     setStep('loading')
@@ -171,6 +217,12 @@ export default function MosqueeProchePage() {
 
         {step === 'results' && (
           <div>
+            {city && (
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.35)', borderRadius: 14, padding: '12px 18px', marginBottom: 16 }}>
+                <span style={{ fontWeight: 700, color: 'var(--foret)', fontSize: 15 }}>📍 Mosquées autour de {city.nom}</span>
+                <button onClick={() => { clearLocation(); reset() }} style={{ background: 'none', border: 'none', color: 'var(--or)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}>Changer de ville →</button>
+              </div>
+            )}
             <div ref={mapContainerRef} style={{ height: 380, borderRadius: '20px', overflow: 'hidden', marginBottom: '1.5rem', boxShadow: '0 4px 20px rgba(0,0,0,0.12)', border: '2px solid rgba(201,168,76,0.3)' }} />
 
             <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1.25rem', flexWrap: 'wrap' }}>

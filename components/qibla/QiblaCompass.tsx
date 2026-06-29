@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
+import { useLocation } from '@/components/location/LocationProvider'
 
 // Coordonnées de La Mecque (Kaaba)
 const MECCA_LAT = 21.4225
@@ -16,6 +17,7 @@ function calculateQibla(userLat: number, userLng: number): number {
 }
 
 export default function QiblaCompass() {
+  const { city } = useLocation()
   const [step, setStep] = useState<'idle' | 'locating' | 'compass' | 'error'>('idle')
   const [qiblaAngle, setQiblaAngle] = useState<number | null>(null)
   const [compassAngle, setCompassAngle] = useState(0)
@@ -77,6 +79,18 @@ export default function QiblaCompass() {
       { enableHighAccuracy: true, timeout: 10000 }
     )
   }
+
+  // Ville mémorisée → on affiche directement la direction de la Qibla (sans redemander la position).
+  // La boussole live (capteur) reste activable via le bouton sur mobile.
+  useEffect(() => {
+    if (city && city.lat != null && city.lng != null && qiblaAngle === null && step === 'idle') {
+      setQiblaAngle(calculateQibla(city.lat, city.lng))
+      setDistance(calcDistance(city.lat, city.lng))
+      setUserCity(city.nom)
+      setStep('compass')
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [city])
 
   useEffect(() => {
     if (step !== 'compass') return

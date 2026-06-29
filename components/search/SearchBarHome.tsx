@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import indexVilles from '@/data/index-villes.json'
+import { useLocation } from '@/components/location/LocationProvider'
 
 interface VilleIndex {
   slug: string
@@ -36,6 +37,7 @@ const GOLD = '#c9a870'
 
 export default function SearchBarHome() {
   const router = useRouter()
+  const { setCityBySlug } = useLocation()
   const [query, setQuery] = useState('')
   const [results, setResults] = useState<VilleIndex[]>([])
   const [open, setOpen] = useState(false)
@@ -68,6 +70,8 @@ export default function SearchBarHome() {
   function navigate(ville: VilleIndex) {
     setOpen(false)
     setQuery(ville.nom)
+    // Mémorise la ville pour tout le site (horaires, mosquée, qibla…)
+    setCityBySlug(ville.slug)
     router.push(`/destinations/${ville.slug}`)
   }
 

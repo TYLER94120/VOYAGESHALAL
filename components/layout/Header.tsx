@@ -3,10 +3,12 @@ import { useState } from 'react'
 import Link from 'next/link'
 import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
+import { useLocation } from '@/components/location/LocationProvider'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const { t } = useLanguage()
+  const { city, clearLocation } = useLocation()
 
   return (
     <header className="header-premium">
@@ -43,6 +45,23 @@ export default function Header() {
 
         {/* Actions */}
         <div className="header-actions">
+          {/* Badge ville mémorisée — visible sur toutes les pages, clic = effacer */}
+          {city && (
+            <button
+              type="button"
+              onClick={clearLocation}
+              title="Changer de ville"
+              aria-label={`Ville actuelle : ${city.nom}. Cliquer pour changer.`}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '6px',
+                background: 'rgba(201,168,76,0.15)', border: '1px solid rgba(201,168,76,0.4)',
+                borderRadius: '20px', padding: '5px 12px', cursor: 'pointer',
+              }}
+            >
+              <span style={{ color: 'var(--or)', fontSize: '13px', fontWeight: 700 }}>📍 {city.nom}</span>
+              <span style={{ color: 'rgba(0,0,0,0.35)', fontSize: '11px' }}>✕</span>
+            </button>
+          )}
           <LanguageSwitcher />
           <Link href="/application" className="btn-app-gold">
             {t('nav.app')}

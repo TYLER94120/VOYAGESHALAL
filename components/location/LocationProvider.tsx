@@ -13,13 +13,15 @@ export interface City {
 interface Ctx {
   city: City | null
   setCity: (c: City) => void
+  setCityBySlug: (slug: string) => City | null
+  clearLocation: () => void
   geolocate: () => Promise<City | null>
   geoStatus: 'idle' | 'loading' | 'error'
   ready: boolean
 }
 
 const LocationContext = createContext<Ctx>({
-  city: null, setCity: () => {}, geolocate: async () => null, geoStatus: 'idle', ready: false,
+  city: null, setCity: () => {}, setCityBySlug: () => null, clearLocation: () => {}, geolocate: async () => null, geoStatus: 'idle', ready: false,
 })
 
 const COORDS = cityCoords as City[]
@@ -63,13 +65,28 @@ export function LocationProvider({ children }: { children: React.ReactNode }) {
     try { localStorage.setItem('vh_city', JSON.stringify(c)) } catch { /* ignore */ }
   }, [])
 
+  // Sélectionne une ville connue de notre base à partir de son slug (avec ses coordonnées)
+  const setCityBySlug = useCallback((slug: string): City | null => {
+    const found = COORDS.find((c) => c.slug === slug)
+    if (found) { setCity(found); return found }
+    return null
+  }, [setCity])
+
+  const clearLocation = useCallback(() => {
+    setCityState(null)
+    try { localStorage.removeItem('vh_city') } catch { /* ignore */ }
+  }, [])
+
   const geolocate = useCallback(async (): Promise<City | null> => {
     if (typeof navigator === 'undefined' || !navigator.geolocation) { setGeoStatus('error'); return null }
     setGeoStatus('loading')
     return new Promise((resolve) => {
       navigator.geolocation.getCurrentPosition(
         (pos) => {
-          const c = nearestCity(pos.coords.latitude, pos.coords.longitude)
+          // On garde les coordonnées GPS RÉELLES de l'utilisateur (précis pour mosquées/qibla/prière),
+          // mais le nom/slug/pays viennent de la ville connue la plus proche (pour l'affichage + redirections).
+          const near = nearestCity(pos.coords.latitude, pos.coords.longitude)
+          const c: City = { ...near, lat: pos.coords.latitude, lng: pos.coords.longitude }
           setCity(c); setGeoStatus('idle'); resolve(c)
         },
         () => { setGeoStatus('error'); resolve(null) },
@@ -79,7 +96,7 @@ export function LocationProvider({ children }: { children: React.ReactNode }) {
   }, [setCity])
 
   return (
-    <LocationContext.Provider value={{ city, setCity, geolocate, geoStatus, ready }}>{children}</LocationContext.Provider>
+    <LocationContext.Provider value={{ city, setCity, setCityBySlug, clearLocation, geolocate, geoStatus, ready }}>{children}</LocationContext.Provider>
   )
 }
 

@@ -13,9 +13,11 @@ interface Props {
   ville: string
   pays: string
   countryCode: string
+  lat?: number
+  lng?: number
 }
 
-export function PrayerTimesWidget({ ville, countryCode }: Props) {
+export function PrayerTimesWidget({ ville, countryCode, lat, lng }: Props) {
   const [timings, setTimings] = useState<Record<string, string> | null>(null)
   const [loading, setLoading] = useState(true)
   const [nextPrayer, setNextPrayer] = useState<string | null>(null)
@@ -24,9 +26,12 @@ export function PrayerTimesWidget({ ville, countryCode }: Props) {
   useEffect(() => {
     let cancelled = false
     setLoading(true)
-    fetch(
-      `https://api.aladhan.com/v1/timingsByCity?city=${encodeURIComponent(ville)}&country=${countryCode}&method=12`
-    )
+    // Si on a des coordonnées (ville mémorisée / GPS) → horaires précis par lat/lng,
+    // sinon → par nom de ville + pays.
+    const url = (lat != null && lng != null)
+      ? `https://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lng}&method=12`
+      : `https://api.aladhan.com/v1/timingsByCity?city=${encodeURIComponent(ville)}&country=${countryCode}&method=12`
+    fetch(url)
       .then((r) => r.json())
       .then((data) => {
         if (cancelled) return
@@ -42,7 +47,7 @@ export function PrayerTimesWidget({ ville, countryCode }: Props) {
     return () => {
       cancelled = true
     }
-  }, [ville, countryCode])
+  }, [ville, countryCode, lat, lng])
 
   const calculateNext = (t: Record<string, string>) => {
     const prayers = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha']
