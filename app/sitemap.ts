@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next'
 import { readdirSync } from 'fs'
 import path from 'path'
 import { guides, blogPosts } from '@/lib/data'
-import { SITE_URL } from '@/lib/seo'
+import { getDomainSEO } from '@/lib/domain'
 
 function getVilleSlugs(): string[] {
   try {
@@ -14,7 +14,9 @@ function getVilleSlugs(): string[] {
   }
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  // Chaque domaine génère son propre sitemap avec ses URLs
+  const { siteUrl: SITE_URL } = await getDomainSEO()
   const staticPages: MetadataRoute.Sitemap = [
     { url: SITE_URL, changeFrequency: 'weekly', priority: 1 },
     { url: `${SITE_URL}/destinations`, changeFrequency: 'weekly', priority: 0.9 },

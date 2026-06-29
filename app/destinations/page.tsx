@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Suspense } from 'react'
 import fs from 'fs'
 import path from 'path'
-import { buildMetadata } from '@/lib/seo'
+import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import DestinationsClient, { type VilleCard } from '@/components/destination/DestinationsClient'
 import DestinationsRedirect from '@/components/location/DestinationsRedirect'
 import IslamicPattern from '@/components/ui/IslamicPattern'
@@ -23,12 +23,24 @@ const VILLE_COUNT = (() => {
   }
 })()
 
-export const metadata: Metadata = buildMetadata({
-  title: 'Destinations Voyage Halal — Meilleures Villes du Monde',
-  description:
-    `${VILLE_COUNT}+ destinations halal vérifiées : Istanbul, Marrakech, Dubaï, Kuala Lumpur, La Mecque et bien plus. Restaurants halal certifiés, mosquées et guides pour chaque ville.`,
-  path: '/destinations',
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { isEN, brand, siteUrl } = await getDomainSEO()
+  const title = isEN
+    ? `Halal Destinations Worldwide — ${VILLE_COUNT}+ Cities | ${brand}`
+    : `Destinations Voyage Halal — Meilleures Villes du Monde | ${brand}`
+  const description = isEN
+    ? `${VILLE_COUNT}+ verified halal destinations: Istanbul, Marrakech, Dubai, Kuala Lumpur, Mecca and more. Certified halal restaurants, mosques and guides for every city.`
+    : `${VILLE_COUNT}+ destinations halal vérifiées : Istanbul, Marrakech, Dubaï, Kuala Lumpur, La Mecque et bien plus. Restaurants halal certifiés, mosquées et guides pour chaque ville.`
+  return {
+    title: { absolute: title },
+    description,
+    alternates: {
+      canonical: `${siteUrl}/destinations`,
+      languages: { fr: `${FR_URL}/destinations`, en: `${EN_URL}/destinations`, 'x-default': `${EN_URL}/destinations` },
+    },
+    openGraph: { title, description, url: `${siteUrl}/destinations` },
+  }
+}
 
 function getAllVilles(): VilleCard[] {
   const dir = path.join(process.cwd(), 'data', 'villes')

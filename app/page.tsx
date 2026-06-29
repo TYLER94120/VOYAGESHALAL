@@ -5,21 +5,32 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
-import { buildWebSiteSchema, buildOrganizationSchema, buildMetadata } from '@/lib/seo'
+import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
 import HomeHeroActions from '@/components/home/HomeHeroActions'
 import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
+import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 
-export const metadata: Metadata = {
-  ...buildMetadata({
-    title: 'VoyagesHalal.fr — Guide Voyage Halal #1',
-    description: 'Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans 88+ destinations — pour les musulmans du monde entier.',
-    path: '/',
-  }),
-  // Titre absolu pour l'accueil (pas de suffixe « | VoyagesHalal.fr »)
-  title: { absolute: 'VoyagesHalal.fr — Guide Voyage Halal #1 | Restaurants, Mosquées & Destinations' },
+// Métadonnées par domaine : anglais sur gohalaltravel.com, français sur voyageshalal.fr
+export async function generateMetadata(): Promise<Metadata> {
+  const { isEN, siteUrl } = await getDomainSEO()
+  const title = isEN
+    ? 'GoHalalTravel — #1 Halal Travel Guide | Restaurants, Mosques & Destinations'
+    : 'VoyagesHalal.fr — Guide Voyage Halal #1 | Restaurants, Mosquées & Destinations'
+  const description = isEN
+    ? 'Certified halal restaurants, mosques, prayer times and practical guides in 88+ destinations worldwide — for Muslim travelers.'
+    : 'Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans 88+ destinations — pour les musulmans du monde entier.'
+  return {
+    title: { absolute: title },
+    description,
+    alternates: {
+      canonical: siteUrl,
+      languages: { fr: FR_URL, en: EN_URL, 'x-default': EN_URL },
+    },
+    openGraph: { title, description, url: siteUrl },
+  }
 }
 
 const DESTINATIONS = [

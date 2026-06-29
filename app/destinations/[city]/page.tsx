@@ -7,6 +7,7 @@ import VilleDesktop from '@/components/villes/VilleDesktop'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
 import cityCoords from '@/lib/cityCoords.json'
+import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 
 export const dynamicParams = false
 
@@ -52,14 +53,37 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const nbRestos = ville.restaurants?.length ?? 0
   const nbMosq = ville.mosqueesPrincipales?.length ?? mosquees ?? 0
   const nbHotels = ville.hotels?.length ?? 0
+
+  const { isEN, brand, siteUrl } = await getDomainSEO()
+  const title = isEN
+    ? `${ville.nom} Halal Travel Guide 2026 — Restaurants, Mosques & Tips | ${brand}`
+    : `${ville.nom} Halal 2026 : Restaurants, Mosquées & Guide Complet | ${brand}`
+  const description = isEN
+    ? `Complete halal guide for ${ville.nom}: ${nbRestos}+ certified halal restaurants, ${nbMosq} mosques, ${nbHotels} hotels, prayer times and practical tips for Muslim travelers.`.slice(0, 300)
+    : `Guide halal complet pour ${ville.nom} : ${nbRestos}+ restaurants certifiés halal, ${nbMosq} mosquées, ${nbHotels} hôtels, horaires de prière et conseils pratiques pour voyager en musulman. ${richDesc}`.slice(0, 300)
+  const ogTitle = isEN
+    ? `${ville.nom} Halal Travel Guide 2026 — Muslim-Friendly`
+    : `${ville.nom} Halal 2026 — Guide Voyage Musulman`
+  const ogDesc = isEN
+    ? `Certified halal restaurants, nearby mosques and prayer times in ${ville.nom}. The complete guide for Muslim travel.`
+    : `Restaurants halal certifiés, mosquées proches et horaires de prière à ${ville.nom}. Le guide complet pour voyager halal.`
+
   return {
-    title: `${ville.nom} Halal 2026 : Restaurants, Mosquées & Guide Complet`,
-    description: `Guide halal complet pour ${ville.nom} : ${nbRestos}+ restaurants certifiés halal, ${nbMosq} mosquées, ${nbHotels} hôtels, horaires de prière et conseils pratiques pour voyager en musulman. ${richDesc}`.slice(0, 300),
-    alternates: { canonical: `https://www.voyageshalal.fr/destinations/${city}` },
+    title: { absolute: title },
+    description,
+    alternates: {
+      canonical: `${siteUrl}/destinations/${city}`,
+      languages: {
+        fr: `${FR_URL}/destinations/${city}`,
+        en: `${EN_URL}/destinations/${city}`,
+        'x-default': `${EN_URL}/destinations/${city}`,
+      },
+    },
     openGraph: {
-      title: `${ville.nom} Halal 2026 — Guide Voyage Musulman`,
-      description: `Restaurants halal certifiés, mosquées proches et horaires de prière à ${ville.nom}. Le guide complet pour voyager halal.`,
-      ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630, alt: `Voyage halal ${ville.nom}` }] } : {}),
+      title: ogTitle,
+      description: ogDesc,
+      url: `${siteUrl}/destinations/${city}`,
+      ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630, alt: `Halal travel ${ville.nom}` }] } : {}),
     },
   }
 }
