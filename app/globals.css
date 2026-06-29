@@ -48,6 +48,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Empêche tout défilement horizontal (image/section qui bouge de gauche à droite sur mobile) */
+    overflow-x: hidden;
   }
 
   body {
@@ -55,6 +57,13 @@
     color: #1a1a18;
     font-family: var(--font-inter), 'DM Sans', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
+  /* Garde-fou : aucun média ne peut dépasser la largeur de l'écran */
+  img, video, svg, iframe {
+    max-width: 100%;
   }
 
   h1, h2, h3 {
