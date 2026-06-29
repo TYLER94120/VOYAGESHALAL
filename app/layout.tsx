@@ -11,6 +11,7 @@ import BottomNav from '@/components/layout/BottomNav'
 import { LanguageProvider } from '@/components/i18n/LanguageProvider'
 import GoogleTranslate from '@/components/i18n/GoogleTranslate'
 import { LocationProvider } from '@/components/location/LocationProvider'
+import { AdhanProvider } from '@/components/adhan/AdhanProvider'
 import { RamadanBanner } from '@/components/RamadanBanner'
 import { SITE_NAME, DEFAULT_DESCRIPTION, SITE_URL } from '@/lib/seo'
 
@@ -59,6 +60,7 @@ export default function RootLayout({
       <body className={`${dmSans.variable} ${playfair.variable} font-sans`}>
         <LanguageProvider>
           <LocationProvider>
+           <AdhanProvider>
             <GoogleTranslate />
             <RamadanBanner />
             <Header />
@@ -68,6 +70,7 @@ export default function RootLayout({
             <ToastProvider />
             <RegisterSW />
             <InstallPrompt />
+           </AdhanProvider>
           </LocationProvider>
         </LanguageProvider>
       </body>

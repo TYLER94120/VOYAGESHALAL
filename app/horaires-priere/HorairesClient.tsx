@@ -4,6 +4,7 @@ import { PrayerTimesWidget } from '@/components/PrayerTimesWidget'
 import { useLocation } from '@/components/location/LocationProvider'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 import { PRAYER_METHODS, ASR_SCHOOLS, defaultMethodForCountry } from '@/lib/prayer'
+import AdhanSettings from '@/components/adhan/AdhanSettings'
 
 interface VilleOption {
   nom: string
@@ -85,6 +86,9 @@ export default function HorairesClient() {
 
   return (
     <div className="max-w-3xl mx-auto">
+      {/* Réglages de l'adhan automatique */}
+      <AdhanSettings />
+
       {/* Position GPS précise — priorité pour des horaires « à la minute » */}
       <button
         onClick={useMyPosition}
