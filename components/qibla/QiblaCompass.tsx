@@ -51,13 +51,27 @@ export default function QiblaCompass() {
   const needleAngle = qibla !== null ? qibla - compassAngle : 0
   const aligned = qibla !== null && (Math.abs(((needleAngle % 360) + 360) % 360) <= 6 || Math.abs(((needleAngle % 360) + 360) % 360) >= 354)
 
-  // Ville mémorisée → position de départ automatique
+  // Ville mémorisée → affichage immédiat (en attendant le GPS précis)
   useEffect(() => {
     if (city && city.lat != null && city.lng != null && !pos) {
       setPos({ lat: city.lat, lng: city.lng, label: city.nom })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [city])
+
+  // RESPONSABILITÉ : on affine TOUJOURS avec la position GPS réelle au chargement
+  // (comme HalalGuide). La ville mémorisée n'est qu'un repli si le GPS est refusé.
+  const autoTriedRef = useRef(false)
+  useEffect(() => {
+    if (autoTriedRef.current) return
+    autoTriedRef.current = true
+    ;(async () => {
+      try {
+        const { lat, lng } = await getPosition({ highAccuracy: true })
+        setPos({ lat, lng, label: 'Ma position exacte' })
+      } catch { /* on garde la ville mémorisée si elle existe */ }
+    })()
+  }, [])
 
   // Position GPS précise
   const usePrecise = async () => {
@@ -152,8 +166,11 @@ export default function QiblaCompass() {
         <p style={{ color: 'var(--or)', fontSize: 11, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', margin: 0 }}>Direction Qibla</p>
         <p style={{ fontFamily: "'Playfair Display', serif", fontSize: '2.6rem', fontWeight: 900, color: '#fff', margin: '2px 0 0', lineHeight: 1 }}>{Math.round(qibla!)}°</p>
         <p style={{ color: 'var(--or-clair)', fontSize: 15, margin: '2px 0 0' }}>{getCardinal(qibla!)} · 📍 {pos.label}</p>
-        {distance && <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 13, margin: '6px 0 0' }}>🕋 La Mecque est à {distance.toLocaleString('fr-FR')} km</p>}
-        <button onClick={usePrecise} style={{ marginTop: 10, background: 'none', border: '1px solid rgba(201,168,76,0.4)', color: 'var(--or-clair)', borderRadius: 20, padding: '5px 14px', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>📍 Affiner avec ma position exacte</button>
+        {distance && <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 13, margin: '6px 0 0' }}>🕋 La Mecque est à {distance.toLocaleString('fr-FR')} km · angle par rapport au Nord géographique</p>}
+        {pos.label !== 'Ma position exacte' && (
+          <p style={{ color: '#fbbf24', fontSize: 12, margin: '8px 0 0', fontWeight: 600 }}>⚠️ Position approximative ({pos.label}). Activez le GPS pour la Qibla exacte.</p>
+        )}
+        <button onClick={usePrecise} disabled={loading} style={{ marginTop: 10, background: pos.label !== 'Ma position exacte' ? 'var(--or)' : 'none', border: '1px solid rgba(201,168,76,0.5)', color: pos.label !== 'Ma position exacte' ? 'var(--nuit)' : 'var(--or-clair)', borderRadius: 20, padding: '6px 16px', fontSize: 12.5, fontWeight: 700, cursor: 'pointer' }}>📍 {loading ? 'Localisation…' : 'Utiliser ma position exacte (GPS)'}</button>
       </div>
 
       {/* MODE BOUSSOLE — cadran live : Kaaba qui se déplace sur le cercle */}
