@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useCallback } from 'react'
 import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap } from 'leaflet'
 import { useLocation } from '@/components/location/LocationProvider'
@@ -72,25 +72,48 @@ export default function QiblaCompass() {
     }
   }
 
-  // Capteur de boussole (orientation appareil) — permission iOS au clic
-  const startSensor = async () => {
-    setSensorAsked(true)
-    const DOE = DeviceOrientationEvent as unknown as { requestPermission?: () => Promise<string> }
-    if (typeof DOE.requestPermission === 'function') {
-      try { if ((await DOE.requestPermission()) !== 'granted') return } catch { return }
-    }
+  // Capteur de boussole (orientation appareil)
+  const handlerRef = useRef<((e: DeviceOrientationEvent) => void) | null>(null)
+  const iosPermNeeded = typeof window !== 'undefined' &&
+    typeof (DeviceOrientationEvent as unknown as { requestPermission?: () => Promise<string> })?.requestPermission === 'function'
+
+  const attachSensor = useCallback(() => {
+    if (handlerRef.current) return
     const handler = (e: DeviceOrientationEvent) => {
       const ev = e as DeviceOrientationEvent & { webkitCompassHeading?: number }
       const heading = ev.webkitCompassHeading ?? (e.alpha != null ? 360 - e.alpha : null)
-      if (heading != null) { setHasSensor(true); setCompassAngle(heading) }
+      if (heading != null && !Number.isNaN(heading)) { setHasSensor(true); setCompassAngle(heading) }
     }
+    handlerRef.current = handler
     window.addEventListener('deviceorientationabsolute', handler, true)
     window.addEventListener('deviceorientation', handler, true)
+  }, [])
+
+  // iOS : permission au clic. Autres : on attache directement.
+  const startSensor = async () => {
+    setSensorAsked(true)
+    if (iosPermNeeded) {
+      try { if ((await (DeviceOrientationEvent as unknown as { requestPermission: () => Promise<string> }).requestPermission()) !== 'granted') return } catch { return }
+    }
+    attachSensor()
   }
 
+  // Android / navigateurs sans permission : capteur attaché automatiquement
   useEffect(() => {
-    if (aligned && typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(120)
-  }, [aligned])
+    if (pos && mode === 'boussole' && !iosPermNeeded) { setSensorAsked(true); attachSensor() }
+  }, [pos, mode, iosPermNeeded, attachSensor])
+
+  // Nettoyage des écouteurs
+  useEffect(() => () => {
+    if (handlerRef.current) {
+      window.removeEventListener('deviceorientationabsolute', handlerRef.current, true)
+      window.removeEventListener('deviceorientation', handlerRef.current, true)
+    }
+  }, [])
+
+  useEffect(() => {
+    if (aligned && hasSensor && typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(120)
+  }, [aligned, hasSensor])
 
   // ----- Pas encore de position -----
   if (!pos) {
@@ -133,25 +156,34 @@ export default function QiblaCompass() {
         <button onClick={usePrecise} style={{ marginTop: 10, background: 'none', border: '1px solid rgba(201,168,76,0.4)', color: 'var(--or-clair)', borderRadius: 20, padding: '5px 14px', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>📍 Affiner avec ma position exacte</button>
       </div>
 
-      {/* MODE BOUSSOLE — compas live */}
+      {/* MODE BOUSSOLE — cadran live : Kaaba qui se déplace sur le cercle */}
       {mode === 'boussole' && (
         <div style={{ textAlign: 'center' }}>
-          <div style={{ width: 260, height: 260, margin: '0 auto 1rem', position: 'relative' }}>
-            <CompassSVG angle={needleAngle} animated />
+          <div style={{ width: 280, height: 280, margin: '0 auto 0.75rem', position: 'relative' }}>
+            <CompassDial heading={compassAngle} qibla={qibla!} live={hasSensor} aligned={aligned} />
           </div>
-          {!sensorAsked && (
+
+          {iosPermNeeded && !sensorAsked && (
             <button onClick={startSensor} style={btnPrimary}>🧭 Activer la boussole</button>
           )}
+
           {sensorAsked && !hasSensor && (
-            <div style={{ background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.35)', borderRadius: 12, padding: '12px 16px', fontSize: 13, color: 'var(--foret)' }}>
-              <strong>Calibrez votre boussole :</strong> bougez le téléphone en formant un <strong>8</strong> dans l’air, loin de tout objet métallique. <br />Si rien ne bouge, votre appareil n’a pas de capteur — utilisez le mode <strong>Direction</strong>.
+            <div style={{ background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.35)', borderRadius: 12, padding: '12px 16px', fontSize: 13, color: 'var(--foret)', marginBottom: 12 }}>
+              <strong>Calibrez la boussole :</strong> bougez le téléphone en formant un <strong>8</strong> dans l’air, loin du métal. <br />Si rien ne bouge, votre appareil n’a pas de capteur — utilisez le mode <strong>Direction</strong>.
             </div>
           )}
+
           {hasSensor && (
-            <p style={{ color: aligned ? 'var(--or)' : 'var(--texte-2)', fontWeight: 700, fontSize: aligned ? '1.15rem' : 14, fontFamily: aligned ? "'Playfair Display', serif" : undefined }}>
-              {aligned ? '✦ Vous êtes aligné vers la Qibla' : 'Tournez doucement jusqu’à aligner l’aiguille dorée vers le haut'}
-            </p>
+            <>
+              <p style={{ color: aligned ? '#16a34a' : 'var(--foret)', fontWeight: 800, fontSize: aligned ? '1.15rem' : 15, margin: '0 0 4px', fontFamily: aligned ? "'Playfair Display', serif" : undefined }}>
+                {aligned ? '✓ Vous faites face à la Qibla' : 'Tournez jusqu’à amener la 🕋 tout en haut'}
+              </p>
+              <p style={{ color: 'var(--texte-2)', fontSize: 13, margin: 0 }}>Cap actuel : <strong>{Math.round(compassAngle)}°</strong> · Qibla : <strong>{Math.round(qibla!)}°</strong></p>
+            </>
           )}
+
+          {/* mini-carte façon HalalGuide */}
+          <div style={{ marginTop: 16 }}><QiblaMap pos={pos} compact /></div>
         </div>
       )}
 
@@ -187,7 +219,7 @@ export default function QiblaCompass() {
 }
 
 // Carte Leaflet : votre position → Kaaba
-function QiblaMap({ pos }: { pos: Pos }) {
+function QiblaMap({ pos, compact }: { pos: Pos; compact?: boolean }) {
   const ref = useRef<HTMLDivElement>(null)
   const mapRef = useRef<LeafletMap | null>(null)
 
@@ -210,7 +242,50 @@ function QiblaMap({ pos }: { pos: Pos }) {
     return () => { cancelled = true; if (mapRef.current) { mapRef.current.remove(); mapRef.current = null } }
   }, [pos])
 
-  return <div ref={ref} style={{ height: 320, borderRadius: 18, overflow: 'hidden', border: '2px solid rgba(201,168,76,0.3)' }} />
+  return <div ref={ref} style={{ height: compact ? 180 : 320, borderRadius: 18, overflow: 'hidden', border: '2px solid rgba(201,168,76,0.3)' }} />
+}
+
+// Cadran de boussole live : anneau qui tourne au Nord réel + flèche verte fixe (votre orientation)
+// + marqueur Kaaba qui se déplace sur le cercle. Alignement quand la Kaaba arrive en haut.
+function CompassDial({ heading, qibla, live, aligned }: { heading: number; qibla: number; live: boolean; aligned: boolean }) {
+  const rel = ((qibla - heading) % 360 + 360) % 360 // position de la Kaaba (0 = en haut)
+  const trans = live ? 'transform .18s ease-out' : 'none'
+  return (
+    <svg viewBox="0 0 280 280" style={{ width: '100%', height: '100%' }}>
+      <defs>
+        <radialGradient id="dialBg" cx="50%" cy="38%" r="70%">
+          <stop offset="0%" stopColor="#15301f" />
+          <stop offset="100%" stopColor="#0B1A0F" />
+        </radialGradient>
+      </defs>
+      <circle cx="140" cy="140" r="135" fill="url(#dialBg)" stroke="rgba(201,168,76,0.35)" strokeWidth="2" />
+      <circle cx="140" cy="140" r="100" fill="none" stroke="rgba(201,168,76,0.12)" strokeWidth="1" />
+
+      {/* Anneau gradué qui tourne pour pointer le Nord réel */}
+      <g style={{ transform: `rotate(${-heading}deg)`, transformOrigin: '140px 140px', transition: trans }}>
+        {Array.from({ length: 72 }).map((_, i) => {
+          const a = (i * 5 * Math.PI) / 180
+          const major = i % 18 === 0
+          const r1 = major ? 112 : 120
+          return <line key={i} x1={140 + 124 * Math.sin(a)} y1={140 - 124 * Math.cos(a)} x2={140 + r1 * Math.sin(a)} y2={140 - r1 * Math.cos(a)} stroke={major ? '#C9A84C' : 'rgba(201,168,76,0.3)'} strokeWidth={major ? 2 : 0.8} />
+        })}
+        {[['N', 140, 28], ['E', 256, 146], ['S', 140, 262], ['O', 24, 146]].map(([l, x, y]) => (
+          <text key={l as string} x={x as number} y={y as number} textAnchor="middle" fill={l === 'N' ? '#C9A84C' : 'rgba(253,250,243,0.55)'} fontSize="15" fontWeight="800">{l as string}</text>
+        ))}
+      </g>
+
+      {/* Flèche verte FIXE en haut = la direction vers laquelle vous faites face */}
+      <polygon points="140,52 150,74 140,68 130,74" fill="#22c55e" />
+      <circle cx="140" cy="140" r="34" fill="#16a34a" opacity={aligned ? 1 : 0.92} />
+      <path d="M140 122 L150 142 L140 136 L130 142 Z" fill="#fff" />
+
+      {/* Marqueur Kaaba qui se déplace sur le cercle (en haut quand aligné) */}
+      <g style={{ transform: `rotate(${rel}deg)`, transformOrigin: '140px 140px', transition: trans }}>
+        <circle cx="140" cy="44" r="22" fill={aligned ? '#22c55e' : '#fff'} stroke={aligned ? '#16a34a' : '#C9A84C'} strokeWidth="2.5" />
+        <text x="140" y="52" textAnchor="middle" fontSize="22">🕋</text>
+      </g>
+    </svg>
+  )
 }
 
 const btnPrimary: React.CSSProperties = {
