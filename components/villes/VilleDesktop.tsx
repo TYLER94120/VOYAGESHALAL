@@ -22,7 +22,8 @@ const CATEGORY_EMOJI: Record<string, string> = {
 }
 
 export default function VilleDesktop({ ville }: { ville: any }) {
-  const [activeTab, setActiveTab] = useState('restaurants')
+  const [activeTab, setActiveTab] = useState<string | null>(null) // null = aucun onglet allumé au départ
+  const displayTab = activeTab ?? 'restaurants' // contenu affiché par défaut (sans orange)
   const [activeFilter, setActiveFilter] = useState('Tous')
   const toast = useToast()
   const router = useRouter()
@@ -99,7 +100,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               const big = tab.id === 'mosquees' || tab.id === 'restaurants'
               const count = tabCounts[tab.id]
               return (
-                <button key={tab.id} onClick={() => goToTab(tab.id)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: big ? '22px 14px' : '13px 14px', borderRadius: '14px', cursor: 'pointer', transition: 'all .18s', border: active ? '2px solid var(--or)' : '1.5px solid rgba(253,250,243,0.18)', background: active ? 'var(--or)' : 'rgba(253,250,243,0.06)', color: active ? 'var(--nuit)' : '#fff', fontSize: big ? '16.5px' : '14px', fontWeight: 700, boxShadow: active ? '0 6px 18px rgba(201,168,76,0.3)' : 'none' }}>
+                <button key={tab.id} onClick={() => goToTab(tab.id)} style={{ gridColumn: tab.id === 'pratique' ? '1 / -1' : undefined, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: big ? '22px 14px' : '13px 14px', borderRadius: '14px', cursor: 'pointer', transition: 'all .18s', border: active ? '2px solid var(--or)' : '1.5px solid rgba(253,250,243,0.18)', background: active ? 'var(--or)' : 'rgba(253,250,243,0.06)', color: active ? 'var(--nuit)' : '#fff', fontSize: big ? '16.5px' : '14px', fontWeight: 700, boxShadow: active ? '0 6px 18px rgba(201,168,76,0.3)' : 'none' }}>
                   <span style={{ fontSize: big ? '22px' : '16px' }}>{tab.icon}</span>{tab.label}
                   {count > 0 && <span style={{ fontSize: '12px', padding: '1px 8px', borderRadius: '20px', background: active ? 'rgba(11,26,15,0.18)' : 'rgba(253,250,243,0.15)', color: active ? 'var(--nuit)' : '#fff', fontWeight: 700 }}>{count}</span>}
                 </button>
@@ -123,7 +124,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
 
       {/* PARTIE BAS (claire) — contenu de l'onglet sélectionné */}
       <div ref={contentRef} style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px', scrollMarginTop: '12px' }}>
-        {activeTab === 'restaurants' && (
+        {displayTab === 'restaurants' && (
           <>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '16px' }}>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '26px', fontWeight: 900, color: 'var(--nuit)' }}>Restaurants halal</h2>
@@ -166,7 +167,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           </>
         )}
 
-        {activeTab === 'hotels' && (
+        {displayTab === 'hotels' && (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
             {hotels.map((h: any, i: number) => (
               <div key={i} style={card}>
@@ -189,7 +190,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           </div>
         )}
 
-        {activeTab === 'mosquees' && (
+        {displayTab === 'mosquees' && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             {mosquees.map((m: any, i: number) => (
               <div key={i} style={card}>
@@ -201,7 +202,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           </div>
         )}
 
-        {activeTab === 'activites' && (
+        {displayTab === 'activites' && (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {activites.map((a: any, i: number) => (
               <div key={i} style={card}>
@@ -217,7 +218,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           </div>
         )}
 
-        {activeTab === 'pratique' && (
+        {displayTab === 'pratique' && (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {pratiqueItems.map((item, i) => (
               <div key={i} style={{ ...card, display: 'flex', gap: '14px', alignItems: 'center' }}>
