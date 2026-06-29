@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap } from 'leaflet'
 import { useLocation } from '@/components/location/LocationProvider'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
+import { getDeclination } from '@/lib/declination'
 
 // Coordonnées de La Mecque (Kaaba)
 const MECCA_LAT = 21.4225
@@ -46,9 +47,12 @@ export default function QiblaCompass() {
   const [hasSensor, setHasSensor] = useState(false)
   const [sensorAsked, setSensorAsked] = useState(false)
 
+  const [declination, setDeclination] = useState(0)
   const qibla = pos ? calculateQibla(pos.lat, pos.lng) : null
   const distance = pos ? calcDistance(pos.lat, pos.lng) : null
-  const needleAngle = qibla !== null ? qibla - compassAngle : 0
+  // Cap vrai = cap magnétique (boussole) + déclinaison locale (WMM) → on pointe vers le Nord géographique
+  const trueHeading = compassAngle + declination
+  const needleAngle = qibla !== null ? qibla - trueHeading : 0
   const aligned = qibla !== null && (Math.abs(((needleAngle % 360) + 360) % 360) <= 6 || Math.abs(((needleAngle % 360) + 360) % 360) >= 354)
 
   // Ville mémorisée → affichage immédiat (en attendant le GPS précis)
@@ -72,6 +76,11 @@ export default function QiblaCompass() {
       } catch { /* on garde la ville mémorisée si elle existe */ }
     })()
   }, [])
+
+  // Déclinaison magnétique locale (WMM) recalculée à chaque changement de position
+  useEffect(() => {
+    if (pos) setDeclination(getDeclination(pos.lat, pos.lng))
+  }, [pos])
 
   // Position GPS précise
   const usePrecise = async () => {
@@ -177,7 +186,7 @@ export default function QiblaCompass() {
       {mode === 'boussole' && (
         <div style={{ textAlign: 'center' }}>
           <div style={{ width: 280, height: 280, margin: '0 auto 0.75rem', position: 'relative' }}>
-            <CompassDial heading={compassAngle} qibla={qibla!} live={hasSensor} aligned={aligned} />
+            <CompassDial heading={trueHeading} qibla={qibla!} live={hasSensor} aligned={aligned} />
           </div>
 
           {iosPermNeeded && !sensorAsked && (
@@ -195,7 +204,8 @@ export default function QiblaCompass() {
               <p style={{ color: aligned ? '#16a34a' : 'var(--foret)', fontWeight: 800, fontSize: aligned ? '1.15rem' : 15, margin: '0 0 4px', fontFamily: aligned ? "'Playfair Display', serif" : undefined }}>
                 {aligned ? '✓ Vous faites face à la Qibla' : 'Tournez jusqu’à amener la 🕋 tout en haut'}
               </p>
-              <p style={{ color: 'var(--texte-2)', fontSize: 13, margin: 0 }}>Cap actuel : <strong>{Math.round(compassAngle)}°</strong> · Qibla : <strong>{Math.round(qibla!)}°</strong></p>
+              <p style={{ color: 'var(--texte-2)', fontSize: 13, margin: 0 }}>Cap vrai : <strong>{Math.round((trueHeading % 360 + 360) % 360)}°</strong> · Qibla : <strong>{Math.round(qibla!)}°</strong></p>
+              <p style={{ color: 'var(--texte-2)', fontSize: 11, margin: '2px 0 0', opacity: 0.8 }}>✓ Corrigé du Nord magnétique (déclinaison {declination >= 0 ? '+' : ''}{declination.toFixed(1)}°)</p>
             </>
           )}
 
