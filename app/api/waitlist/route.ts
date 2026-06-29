@@ -1,4 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getRedis } from '@/lib/pushStore'
+
+export const runtime = 'nodejs'
 
 function isValidEmail(email: string): boolean {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
@@ -7,7 +10,7 @@ function isValidEmail(email: string): boolean {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { email } = body
+    const { email, source, city } = body
 
     if (!email || !isValidEmail(email)) {
       return NextResponse.json(
@@ -17,6 +20,20 @@ export async function POST(request: NextRequest) {
     }
 
     const normalizedEmail = email.toLowerCase().trim()
+
+    // ── Stockage des leads dans Upstash Redis (ta base de données) ──
+    const redis = getRedis()
+    if (redis) {
+      try {
+        await redis.sadd('vh:leads:emails', normalizedEmail)
+        await redis.set(`vh:lead:${normalizedEmail}`, {
+          email: normalizedEmail,
+          source: source || 'inconnu',
+          city: city || null,
+          date: new Date().toISOString(),
+        })
+      } catch { /* stockage best-effort */ }
+    }
 
     // ── Option A : Formspree (ajoutez FORMSPREE_ENDPOINT dans .env) ──
     if (process.env.FORMSPREE_ENDPOINT) {

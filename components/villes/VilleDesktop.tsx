@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useToast } from '@/components/Toast'
+import EbookButton from '@/components/villes/EbookButton'
 
 const TABS = [
   { id: 'mosquees', icon: '🕌', label: 'Mosquées' },
@@ -107,16 +108,12 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             })}
           </div>
 
-          {/* BOUTONS Carte + Vols — secondaires, même style discret (un seul doré : l'onglet actif) */}
+          {/* Guide PDF gratuit (aimant à emails, doré) + Vols */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginTop: '10px' }}>
-            {[
-              { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Voir sur la carte' },
-              { href: `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`, icon: '✈️', label: `Vols vers ${ville.nom}` },
-            ].map((a) => (
-              <a key={a.label} href={a.href} target="_blank" rel="noopener noreferrer" className="ville-action">
-                <span className="ico">{a.icon}</span>{a.label}
-              </a>
-            ))}
+            <EbookButton ville={ville} />
+            <a href={`https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`} target="_blank" rel="noopener noreferrer" className="ville-action">
+              <span className="ico">✈️</span>Vols vers {ville.nom}
+            </a>
           </div>
         </div>
       </div>
