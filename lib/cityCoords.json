@@ -1,618 +1,653 @@
 [
-{
-"slug": "abu-dhabi",
-"nom": "Abu Dhabi",
-"pays": "Émirats Arabes Unis",
-"lat": 24.4539,
-"lng": 54.3773
-},
-{
-"slug": "accra",
-"nom": "Accra",
-"pays": "Ghana",
-"lat": 5.6037,
-"lng": -0.187
-},
-{
-"slug": "addis-abeba",
-"nom": "Addis-Abeba",
-"pays": "Éthiopie",
-"lat": 9.024,
-"lng": 38.7469
-},
-{
-"slug": "agadir",
-"nom": "Agadir",
-"pays": "Maroc",
-"lat": 30.4278,
-"lng": -9.5981
-},
-{
-"slug": "alexandrie",
-"nom": "Alexandrie",
-"pays": "Égypte",
-"lat": 31.2001,
-"lng": 29.9187
-},
-{
-"slug": "alger",
-"nom": "Alger",
-"pays": "Algérie",
-"lat": 36.7372,
-"lng": 3.0865
-},
-{
-"slug": "almaty",
-"nom": "Almaty",
-"pays": "Kazakhstan",
-"lat": 43.2389,
-"lng": 76.8897
-},
-{
-"slug": "amman",
-"nom": "Amman",
-"pays": "Jordanie",
-"lat": 31.9539,
-"lng": 35.9106
-},
-{
-"slug": "amsterdam",
-"nom": "Amsterdam",
-"pays": "Pays-Bas",
-"lat": 52.3676,
-"lng": 4.9041
-},
-{
-"slug": "ankara",
-"nom": "Ankara",
-"pays": "Turquie",
-"lat": 39.9334,
-"lng": 32.8597
-},
-{
-"slug": "antalya",
-"nom": "Antalya",
-"pays": "Turquie",
-"lat": 36.8969,
-"lng": 30.7133
-},
-{
-"slug": "aqaba",
-"nom": "Aqaba",
-"pays": "Jordanie",
-"lat": 29.5267,
-"lng": 35.0078
-},
-{
-"slug": "bagdad",
-"nom": "Bagdad",
-"pays": "Irak",
-"lat": 33.3152,
-"lng": 44.3661
-},
-{
-"slug": "bakou",
-"nom": "Bakou",
-"pays": "Azerbaïdjan",
-"lat": 40.4093,
-"lng": 49.8671
-},
-{
-"slug": "bali",
-"nom": "Bali",
-"pays": "Indonésie",
-"lat": -8.3405,
-"lng": 115.092
-},
-{
-"slug": "banda-aceh",
-"nom": "Banda Aceh",
-"pays": "Indonésie",
-"lat": 5.5483,
-"lng": 95.3238
-},
-{
-"slug": "bangkok",
-"nom": "Bangkok",
-"pays": "Thaïlande",
-"lat": 13.7563,
-"lng": 100.5018
-},
-{
-"slug": "barcelone",
-"nom": "Barcelone",
-"pays": "Espagne",
-"lat": 41.3851,
-"lng": 2.1734
-},
-{
-"slug": "berlin",
-"nom": "Berlin",
-"pays": "Allemagne",
-"lat": 52.52,
-"lng": 13.405
-},
-{
-"slug": "beyrouth",
-"nom": "Beyrouth",
-"pays": "Liban",
-"lat": 33.8938,
-"lng": 35.5018
-},
-{
-"slug": "bordeaux",
-"nom": "Bordeaux",
-"pays": "France",
-"lat": 44.8378,
-"lng": -0.5792
-},
-{
-"slug": "boukhara",
-"nom": "Boukhara",
-"pays": "Ouzbékistan",
-"lat": 39.7747,
-"lng": 64.4286
-},
-{
-"slug": "bruxelles",
-"nom": "Bruxelles",
-"pays": "Belgique",
-"lat": 50.8503,
-"lng": 4.3517
-},
-{
-"slug": "bursa",
-"nom": "Bursa",
-"pays": "Turquie",
-"lat": 40.1885,
-"lng": 29.061
-},
-{
-"slug": "cappadoce",
-"nom": "Cappadoce",
-"pays": "Turquie",
-"lat": 38.6431,
-"lng": 34.8289
-},
-{
-"slug": "casablanca",
-"nom": "Casablanca",
-"pays": "Maroc",
-"lat": 33.5731,
-"lng": -7.5898
-},
-{
-"slug": "chefchaouen",
-"nom": "Chefchaouen",
-"pays": "Maroc",
-"lat": 35.1688,
-"lng": -5.2636
-},
-{
-"slug": "chicago",
-"nom": "Chicago",
-"pays": "États-Unis",
-"lat": 41.8781,
-"lng": -87.6298
-},
-{
-"slug": "cordoue",
-"nom": "Cordoue",
-"pays": "Espagne",
-"lat": 37.8882,
-"lng": -4.7794
-},
-{
-"slug": "dacca",
-"nom": "Dacca",
-"pays": "Bangladesh",
-"lat": 23.8103,
-"lng": 90.4125
-},
-{
-"slug": "dakar",
-"nom": "Dakar",
-"pays": "Sénégal",
-"lat": 14.7167,
-"lng": -17.4677
-},
-{
-"slug": "dearborn",
-"nom": "Dearborn",
-"pays": "États-Unis",
-"lat": 42.3223,
-"lng": -83.1763
-},
-{
-"slug": "delhi",
-"nom": "Delhi",
-"pays": "Inde",
-"lat": 28.6139,
-"lng": 77.209
-},
-{
-"slug": "djerba",
-"nom": "Djerba",
-"pays": "Tunisie",
-"lat": 33.8076,
-"lng": 10.8451
-},
-{
-"slug": "doha",
-"nom": "Doha",
-"pays": "Qatar",
-"lat": 25.2854,
-"lng": 51.531
-},
-{
-"slug": "dubai",
-"nom": "Dubaï",
-"pays": "Émirats Arabes Unis",
-"lat": 25.2048,
-"lng": 55.2708
-},
-{
-"slug": "fes",
-"nom": "Fès",
-"pays": "Maroc",
-"lat": 34.0181,
-"lng": -5.0078
-},
-{
-"slug": "gaziantep",
-"nom": "Gaziantep",
-"pays": "Turquie",
-"lat": 37.0662,
-"lng": 37.3833
-},
-{
-"slug": "grenade",
-"nom": "Grenade",
-"pays": "Espagne",
-"lat": 37.1773,
-"lng": -3.5986
-},
-{
-"slug": "houston",
-"nom": "Houston",
-"pays": "États-Unis",
-"lat": 29.7604,
-"lng": -95.3698
-},
-{
-"slug": "hyderabad-inde",
-"nom": "Hyderabad",
-"pays": "Inde",
-"lat": 17.385,
-"lng": 78.4867
-},
-{
-"slug": "islamabad",
-"nom": "Islamabad",
-"pays": "Pakistan",
-"lat": 33.6844,
-"lng": 73.0479
-},
-{
-"slug": "istanbul",
-"nom": "Istanbul",
-"pays": "Turquie",
-"lat": 41.0082,
-"lng": 28.9784
-},
-{
-"slug": "jakarta",
-"nom": "Jakarta",
-"pays": "Indonésie",
-"lat": -6.2088,
-"lng": 106.8456
-},
-{
-"slug": "jeddah",
-"nom": "Jeddah",
-"pays": "Arabie Saoudite",
-"lat": 21.4858,
-"lng": 39.1925
-},
-{
-"slug": "karachi",
-"nom": "Karachi",
-"pays": "Pakistan",
-"lat": 24.8607,
-"lng": 67.0011
-},
-{
-"slug": "konya",
-"nom": "Konya",
-"pays": "Turquie",
-"lat": 37.8746,
-"lng": 32.4932
-},
-{
-"slug": "kota-kinabalu",
-"nom": "Kota Kinabalu",
-"pays": "Malaisie",
-"lat": 5.9804,
-"lng": 116.0735
-},
-{
-"slug": "koweit-city",
-"nom": "Koweït City",
-"pays": "Koweït",
-"lat": 29.3759,
-"lng": 47.9774
-},
-{
-"slug": "kuala-lumpur",
-"nom": "Kuala Lumpur",
-"pays": "Malaisie",
-"lat": 3.139,
-"lng": 101.6869
-},
-{
-"slug": "la-mecque",
-"nom": "La Mecque",
-"pays": "Arabie Saoudite",
-"lat": 21.3891,
-"lng": 39.8579
-},
-{
-"slug": "lagos",
-"nom": "Lagos",
-"pays": "Nigéria",
-"lat": 6.5244,
-"lng": 3.3792
-},
-{
-"slug": "lahore",
-"nom": "Lahore",
-"pays": "Pakistan",
-"lat": 31.5204,
-"lng": 74.3587
-},
-{
-"slug": "le-caire",
-"nom": "Le Caire",
-"pays": "Égypte",
-"lat": 30.0444,
-"lng": 31.2357
-},
-{
-"slug": "lombok",
-"nom": "Lombok",
-"pays": "Indonésie",
-"lat": -8.65,
-"lng": 116.3249
-},
-{
-"slug": "londres",
-"nom": "Londres",
-"pays": "Royaume-Uni",
-"lat": 51.5074,
-"lng": -0.1278
-},
-{
-"slug": "los-angeles",
-"nom": "Los Angeles",
-"pays": "États-Unis",
-"lat": 34.0522,
-"lng": -118.2437
-},
-{
-"slug": "louxor",
-"nom": "Louxor",
-"pays": "Égypte",
-"lat": 25.6872,
-"lng": 32.6396
-},
-{
-"slug": "lyon",
-"nom": "Lyon",
-"pays": "France",
-"lat": 45.764,
-"lng": 4.8357
-},
-{
-"slug": "maldives",
-"nom": "Maldives",
-"pays": "Maldives",
-"lat": 3.2028,
-"lng": 73.2207
-},
-{
-"slug": "manama",
-"nom": "Manama",
-"pays": "Bahreïn",
-"lat": 26.2235,
-"lng": 50.5876
-},
-{
-"slug": "marrakech",
-"nom": "Marrakech",
-"pays": "Maroc",
-"lat": 31.6295,
-"lng": -7.9811
-},
-{
-"slug": "marseille",
-"nom": "Marseille",
-"pays": "France",
-"lat": 43.2965,
-"lng": 5.3698
-},
-{
-"slug": "mascate",
-"nom": "Mascate",
-"pays": "Oman",
-"lat": 23.588,
-"lng": 58.3829
-},
-{
-"slug": "medine",
-"nom": "Médine",
-"pays": "Arabie Saoudite",
-"lat": 24.5247,
-"lng": 39.5692
-},
-{
-"slug": "montreal",
-"nom": "Montréal",
-"pays": "Canada",
-"lat": 45.5017,
-"lng": -73.5673
-},
-{
-"slug": "nairobi",
-"nom": "Nairobi",
-"pays": "Kenya",
-"lat": -1.2864,
-"lng": 36.8172
-},
-{
-"slug": "new-york",
-"nom": "New York",
-"pays": "États-Unis",
-"lat": 40.7128,
-"lng": -74.006
-},
-{
-"slug": "osaka",
-"nom": "Osaka",
-"pays": "Japon",
-"lat": 34.6937,
-"lng": 135.5023
-},
-{
-"slug": "paris",
-"nom": "Paris",
-"pays": "France",
-"lat": 48.8566,
-"lng": 2.3522
-},
-{
-"slug": "penang",
-"nom": "Penang",
-"pays": "Malaisie",
-"lat": 5.4164,
-"lng": 100.3327
-},
-{
-"slug": "phuket",
-"nom": "Phuket",
-"pays": "Thaïlande",
-"lat": 7.8804,
-"lng": 98.3923
-},
-{
-"slug": "riyadh",
-"nom": "Riyadh",
-"pays": "Arabie Saoudite",
-"lat": 24.7136,
-"lng": 46.6753
-},
-{
-"slug": "rome",
-"nom": "Rome",
-"pays": "Italie",
-"lat": 41.9028,
-"lng": 12.4964
-},
-{
-"slug": "salalah",
-"nom": "Salalah",
-"pays": "Oman",
-"lat": 17.0151,
-"lng": 54.0924
-},
-{
-"slug": "samarkand",
-"nom": "Samarkand",
-"pays": "Ouzbékistan",
-"lat": 39.627,
-"lng": 66.975
-},
-{
-"slug": "sarajevo",
-"nom": "Sarajevo",
-"pays": "Bosnie",
-"lat": 43.8563,
-"lng": 18.4131
-},
-{
-"slug": "seoul",
-"nom": "Séoul",
-"pays": "Corée du Sud",
-"lat": 37.5665,
-"lng": 126.978
-},
-{
-"slug": "singapour",
-"nom": "Singapour",
-"pays": "Singapour",
-"lat": 1.3521,
-"lng": 103.8198
-},
-{
-"slug": "tachkent",
-"nom": "Tachkent",
-"pays": "Ouzbékistan",
-"lat": 41.2995,
-"lng": 69.2401
-},
-{
-"slug": "tanger",
-"nom": "Tanger",
-"pays": "Maroc",
-"lat": 35.7595,
-"lng": -5.834
-},
-{
-"slug": "tokyo",
-"nom": "Tokyo",
-"pays": "Japon",
-"lat": 35.6762,
-"lng": 139.6503
-},
-{
-"slug": "toronto",
-"nom": "Toronto",
-"pays": "Canada",
-"lat": 43.6532,
-"lng": -79.3832
-},
-{
-"slug": "trabzon",
-"nom": "Trabzon",
-"pays": "Turquie",
-"lat": 41.0027,
-"lng": 39.7168
-},
-{
-"slug": "tunis",
-"nom": "Tunis",
-"pays": "Tunisie",
-"lat": 36.819,
-"lng": 10.1658
-},
-{
-"slug": "vienne",
-"nom": "Vienne",
-"pays": "Autriche",
-"lat": 48.2082,
-"lng": 16.3738
-},
-{
-"slug": "yogyakarta",
-"nom": "Yogyakarta",
-"pays": "Indonésie",
-"lat": -7.7956,
-"lng": 110.3695
-},
-{
-"slug": "zanzibar",
-"nom": "Zanzibar",
-"pays": "Tanzanie",
-"lat": -6.1659,
-"lng": 39.2026
-}
+  {
+    "slug": "abu-dhabi",
+    "nom": "Abu Dhabi",
+    "pays": "Émirats Arabes Unis",
+    "lat": 24.4539,
+    "lng": 54.3773
+  },
+  {
+    "slug": "accra",
+    "nom": "Accra",
+    "pays": "Ghana",
+    "lat": 5.6037,
+    "lng": -0.187
+  },
+  {
+    "slug": "addis-abeba",
+    "nom": "Addis-Abeba",
+    "pays": "Éthiopie",
+    "lat": 9.024,
+    "lng": 38.7469
+  },
+  {
+    "slug": "agadir",
+    "nom": "Agadir",
+    "pays": "Maroc",
+    "lat": 30.4278,
+    "lng": -9.5981
+  },
+  {
+    "slug": "alexandrie",
+    "nom": "Alexandrie",
+    "pays": "Égypte",
+    "lat": 31.2001,
+    "lng": 29.9187
+  },
+  {
+    "slug": "alger",
+    "nom": "Alger",
+    "pays": "Algérie",
+    "lat": 36.7372,
+    "lng": 3.0865
+  },
+  {
+    "slug": "almaty",
+    "nom": "Almaty",
+    "pays": "Kazakhstan",
+    "lat": 43.2389,
+    "lng": 76.8897
+  },
+  {
+    "slug": "amman",
+    "nom": "Amman",
+    "pays": "Jordanie",
+    "lat": 31.9539,
+    "lng": 35.9106
+  },
+  {
+    "slug": "amsterdam",
+    "nom": "Amsterdam",
+    "pays": "Pays-Bas",
+    "lat": 52.3676,
+    "lng": 4.9041
+  },
+  {
+    "slug": "ankara",
+    "nom": "Ankara",
+    "pays": "Turquie",
+    "lat": 39.9334,
+    "lng": 32.8597
+  },
+  {
+    "slug": "antalya",
+    "nom": "Antalya",
+    "pays": "Turquie",
+    "lat": 36.8969,
+    "lng": 30.7133
+  },
+  {
+    "slug": "aqaba",
+    "nom": "Aqaba",
+    "pays": "Jordanie",
+    "lat": 29.5267,
+    "lng": 35.0078
+  },
+  {
+    "slug": "bagdad",
+    "nom": "Bagdad",
+    "pays": "Irak",
+    "lat": 33.3152,
+    "lng": 44.3661
+  },
+  {
+    "slug": "bakou",
+    "nom": "Bakou",
+    "pays": "Azerbaïdjan",
+    "lat": 40.4093,
+    "lng": 49.8671
+  },
+  {
+    "slug": "bali",
+    "nom": "Bali",
+    "pays": "Indonésie",
+    "lat": -8.3405,
+    "lng": 115.092
+  },
+  {
+    "slug": "banda-aceh",
+    "nom": "Banda Aceh",
+    "pays": "Indonésie",
+    "lat": 5.5483,
+    "lng": 95.3238
+  },
+  {
+    "slug": "bangkok",
+    "nom": "Bangkok",
+    "pays": "Thaïlande",
+    "lat": 13.7563,
+    "lng": 100.5018
+  },
+  {
+    "slug": "barcelone",
+    "nom": "Barcelone",
+    "pays": "Espagne",
+    "lat": 41.3851,
+    "lng": 2.1734
+  },
+  {
+    "slug": "berlin",
+    "nom": "Berlin",
+    "pays": "Allemagne",
+    "lat": 52.52,
+    "lng": 13.405
+  },
+  {
+    "slug": "beyrouth",
+    "nom": "Beyrouth",
+    "pays": "Liban",
+    "lat": 33.8938,
+    "lng": 35.5018
+  },
+  {
+    "slug": "bordeaux",
+    "nom": "Bordeaux",
+    "pays": "France",
+    "lat": 44.8378,
+    "lng": -0.5792
+  },
+  {
+    "slug": "boukhara",
+    "nom": "Boukhara",
+    "pays": "Ouzbékistan",
+    "lat": 39.7747,
+    "lng": 64.4286
+  },
+  {
+    "slug": "bruxelles",
+    "nom": "Bruxelles",
+    "pays": "Belgique",
+    "lat": 50.8503,
+    "lng": 4.3517
+  },
+  {
+    "slug": "bursa",
+    "nom": "Bursa",
+    "pays": "Turquie",
+    "lat": 40.1885,
+    "lng": 29.061
+  },
+  {
+    "slug": "cappadoce",
+    "nom": "Cappadoce",
+    "pays": "Turquie",
+    "lat": 38.6431,
+    "lng": 34.8289
+  },
+  {
+    "slug": "casablanca",
+    "nom": "Casablanca",
+    "pays": "Maroc",
+    "lat": 33.5731,
+    "lng": -7.5898
+  },
+  {
+    "slug": "chefchaouen",
+    "nom": "Chefchaouen",
+    "pays": "Maroc",
+    "lat": 35.1688,
+    "lng": -5.2636
+  },
+  {
+    "slug": "chicago",
+    "nom": "Chicago",
+    "pays": "États-Unis",
+    "lat": 41.8781,
+    "lng": -87.6298
+  },
+  {
+    "slug": "cordoue",
+    "nom": "Cordoue",
+    "pays": "Espagne",
+    "lat": 37.8882,
+    "lng": -4.7794
+  },
+  {
+    "slug": "dacca",
+    "nom": "Dacca",
+    "pays": "Bangladesh",
+    "lat": 23.8103,
+    "lng": 90.4125
+  },
+  {
+    "slug": "dakar",
+    "nom": "Dakar",
+    "pays": "Sénégal",
+    "lat": 14.7167,
+    "lng": -17.4677
+  },
+  {
+    "slug": "dearborn",
+    "nom": "Dearborn",
+    "pays": "États-Unis",
+    "lat": 42.3223,
+    "lng": -83.1763
+  },
+  {
+    "slug": "delhi",
+    "nom": "Delhi",
+    "pays": "Inde",
+    "lat": 28.6139,
+    "lng": 77.209
+  },
+  {
+    "slug": "djerba",
+    "nom": "Djerba",
+    "pays": "Tunisie",
+    "lat": 33.8076,
+    "lng": 10.8451
+  },
+  {
+    "slug": "doha",
+    "nom": "Doha",
+    "pays": "Qatar",
+    "lat": 25.2854,
+    "lng": 51.531
+  },
+  {
+    "slug": "dubai",
+    "nom": "Dubaï",
+    "pays": "Émirats Arabes Unis",
+    "lat": 25.2048,
+    "lng": 55.2708
+  },
+  {
+    "slug": "fes",
+    "nom": "Fès",
+    "pays": "Maroc",
+    "lat": 34.0181,
+    "lng": -5.0078
+  },
+  {
+    "slug": "gaziantep",
+    "nom": "Gaziantep",
+    "pays": "Turquie",
+    "lat": 37.0662,
+    "lng": 37.3833
+  },
+  {
+    "slug": "grenade",
+    "nom": "Grenade",
+    "pays": "Espagne",
+    "lat": 37.1773,
+    "lng": -3.5986
+  },
+  {
+    "slug": "houston",
+    "nom": "Houston",
+    "pays": "États-Unis",
+    "lat": 29.7604,
+    "lng": -95.3698
+  },
+  {
+    "slug": "hyderabad-inde",
+    "nom": "Hyderabad",
+    "pays": "Inde",
+    "lat": 17.385,
+    "lng": 78.4867
+  },
+  {
+    "slug": "islamabad",
+    "nom": "Islamabad",
+    "pays": "Pakistan",
+    "lat": 33.6844,
+    "lng": 73.0479
+  },
+  {
+    "slug": "istanbul",
+    "nom": "Istanbul",
+    "pays": "Turquie",
+    "lat": 41.0082,
+    "lng": 28.9784
+  },
+  {
+    "slug": "jakarta",
+    "nom": "Jakarta",
+    "pays": "Indonésie",
+    "lat": -6.2088,
+    "lng": 106.8456
+  },
+  {
+    "slug": "jeddah",
+    "nom": "Jeddah",
+    "pays": "Arabie Saoudite",
+    "lat": 21.4858,
+    "lng": 39.1925
+  },
+  {
+    "slug": "karachi",
+    "nom": "Karachi",
+    "pays": "Pakistan",
+    "lat": 24.8607,
+    "lng": 67.0011
+  },
+  {
+    "slug": "konya",
+    "nom": "Konya",
+    "pays": "Turquie",
+    "lat": 37.8746,
+    "lng": 32.4932
+  },
+  {
+    "slug": "kota-kinabalu",
+    "nom": "Kota Kinabalu",
+    "pays": "Malaisie",
+    "lat": 5.9804,
+    "lng": 116.0735
+  },
+  {
+    "slug": "koweit-city",
+    "nom": "Koweït City",
+    "pays": "Koweït",
+    "lat": 29.3759,
+    "lng": 47.9774
+  },
+  {
+    "slug": "kuala-lumpur",
+    "nom": "Kuala Lumpur",
+    "pays": "Malaisie",
+    "lat": 3.139,
+    "lng": 101.6869
+  },
+  {
+    "slug": "la-mecque",
+    "nom": "La Mecque",
+    "pays": "Arabie Saoudite",
+    "lat": 21.3891,
+    "lng": 39.8579
+  },
+  {
+    "slug": "lagos",
+    "nom": "Lagos",
+    "pays": "Nigéria",
+    "lat": 6.5244,
+    "lng": 3.3792
+  },
+  {
+    "slug": "lahore",
+    "nom": "Lahore",
+    "pays": "Pakistan",
+    "lat": 31.5204,
+    "lng": 74.3587
+  },
+  {
+    "slug": "le-caire",
+    "nom": "Le Caire",
+    "pays": "Égypte",
+    "lat": 30.0444,
+    "lng": 31.2357
+  },
+  {
+    "slug": "lombok",
+    "nom": "Lombok",
+    "pays": "Indonésie",
+    "lat": -8.65,
+    "lng": 116.3249
+  },
+  {
+    "slug": "londres",
+    "nom": "Londres",
+    "pays": "Royaume-Uni",
+    "lat": 51.5074,
+    "lng": -0.1278
+  },
+  {
+    "slug": "los-angeles",
+    "nom": "Los Angeles",
+    "pays": "États-Unis",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "slug": "louxor",
+    "nom": "Louxor",
+    "pays": "Égypte",
+    "lat": 25.6872,
+    "lng": 32.6396
+  },
+  {
+    "slug": "lyon",
+    "nom": "Lyon",
+    "pays": "France",
+    "lat": 45.764,
+    "lng": 4.8357
+  },
+  {
+    "slug": "maldives",
+    "nom": "Maldives",
+    "pays": "Maldives",
+    "lat": 3.2028,
+    "lng": 73.2207
+  },
+  {
+    "slug": "manama",
+    "nom": "Manama",
+    "pays": "Bahreïn",
+    "lat": 26.2235,
+    "lng": 50.5876
+  },
+  {
+    "slug": "marrakech",
+    "nom": "Marrakech",
+    "pays": "Maroc",
+    "lat": 31.6295,
+    "lng": -7.9811
+  },
+  {
+    "slug": "marseille",
+    "nom": "Marseille",
+    "pays": "France",
+    "lat": 43.2965,
+    "lng": 5.3698
+  },
+  {
+    "slug": "mascate",
+    "nom": "Mascate",
+    "pays": "Oman",
+    "lat": 23.588,
+    "lng": 58.3829
+  },
+  {
+    "slug": "medine",
+    "nom": "Médine",
+    "pays": "Arabie Saoudite",
+    "lat": 24.5247,
+    "lng": 39.5692
+  },
+  {
+    "slug": "montreal",
+    "nom": "Montréal",
+    "pays": "Canada",
+    "lat": 45.5017,
+    "lng": -73.5673
+  },
+  {
+    "slug": "nairobi",
+    "nom": "Nairobi",
+    "pays": "Kenya",
+    "lat": -1.2864,
+    "lng": 36.8172
+  },
+  {
+    "slug": "new-york",
+    "nom": "New York",
+    "pays": "États-Unis",
+    "lat": 40.7128,
+    "lng": -74.006
+  },
+  {
+    "slug": "osaka",
+    "nom": "Osaka",
+    "pays": "Japon",
+    "lat": 34.6937,
+    "lng": 135.5023
+  },
+  {
+    "slug": "paris",
+    "nom": "Paris",
+    "pays": "France",
+    "lat": 48.8566,
+    "lng": 2.3522
+  },
+  {
+    "slug": "penang",
+    "nom": "Penang",
+    "pays": "Malaisie",
+    "lat": 5.4164,
+    "lng": 100.3327
+  },
+  {
+    "slug": "phuket",
+    "nom": "Phuket",
+    "pays": "Thaïlande",
+    "lat": 7.8804,
+    "lng": 98.3923
+  },
+  {
+    "slug": "riyadh",
+    "nom": "Riyadh",
+    "pays": "Arabie Saoudite",
+    "lat": 24.7136,
+    "lng": 46.6753
+  },
+  {
+    "slug": "rome",
+    "nom": "Rome",
+    "pays": "Italie",
+    "lat": 41.9028,
+    "lng": 12.4964
+  },
+  {
+    "slug": "salalah",
+    "nom": "Salalah",
+    "pays": "Oman",
+    "lat": 17.0151,
+    "lng": 54.0924
+  },
+  {
+    "slug": "samarkand",
+    "nom": "Samarkand",
+    "pays": "Ouzbékistan",
+    "lat": 39.627,
+    "lng": 66.975
+  },
+  {
+    "slug": "sarajevo",
+    "nom": "Sarajevo",
+    "pays": "Bosnie",
+    "lat": 43.8563,
+    "lng": 18.4131
+  },
+  {
+    "slug": "seoul",
+    "nom": "Séoul",
+    "pays": "Corée du Sud",
+    "lat": 37.5665,
+    "lng": 126.978
+  },
+  {
+    "slug": "singapour",
+    "nom": "Singapour",
+    "pays": "Singapour",
+    "lat": 1.3521,
+    "lng": 103.8198
+  },
+  {
+    "slug": "tachkent",
+    "nom": "Tachkent",
+    "pays": "Ouzbékistan",
+    "lat": 41.2995,
+    "lng": 69.2401
+  },
+  {
+    "slug": "tanger",
+    "nom": "Tanger",
+    "pays": "Maroc",
+    "lat": 35.7595,
+    "lng": -5.834
+  },
+  {
+    "slug": "tokyo",
+    "nom": "Tokyo",
+    "pays": "Japon",
+    "lat": 35.6762,
+    "lng": 139.6503
+  },
+  {
+    "slug": "toronto",
+    "nom": "Toronto",
+    "pays": "Canada",
+    "lat": 43.6532,
+    "lng": -79.3832
+  },
+  {
+    "slug": "trabzon",
+    "nom": "Trabzon",
+    "pays": "Turquie",
+    "lat": 41.0027,
+    "lng": 39.7168
+  },
+  {
+    "slug": "tunis",
+    "nom": "Tunis",
+    "pays": "Tunisie",
+    "lat": 36.819,
+    "lng": 10.1658
+  },
+  {
+    "slug": "vienne",
+    "nom": "Vienne",
+    "pays": "Autriche",
+    "lat": 48.2082,
+    "lng": 16.3738
+  },
+  {
+    "slug": "yogyakarta",
+    "nom": "Yogyakarta",
+    "pays": "Indonésie",
+    "lat": -7.7956,
+    "lng": 110.3695
+  },
+  {
+    "slug": "zanzibar",
+    "nom": "Zanzibar",
+    "pays": "Tanzanie",
+    "lat": -6.1659,
+    "lng": 39.2026
+  },
+  {
+    "slug": "berkane",
+    "nom": "Berkane",
+    "pays": "Maroc",
+    "lat": 34.92,
+    "lng": -2.32
+  },
+  {
+    "slug": "saidia",
+    "nom": "Saïdia",
+    "pays": "Maroc",
+    "lat": 35.0897,
+    "lng": -2.23
+  },
+  {
+    "slug": "tafoughalt",
+    "nom": "Tafoughalt",
+    "pays": "Maroc",
+    "lat": 34.7833,
+    "lng": -2.4333
+  },
+  {
+    "slug": "fezouane",
+    "nom": "Fezouane",
+    "pays": "Maroc",
+    "lat": 34.95,
+    "lng": -2.5
+  },
+  {
+    "slug": "oujda",
+    "nom": "Oujda",
+    "pays": "Maroc",
+    "lat": 34.6814,
+    "lng": -1.9086
+  }
 ]
