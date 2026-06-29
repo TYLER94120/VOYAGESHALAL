@@ -100,9 +100,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               const big = tab.id === 'mosquees' || tab.id === 'restaurants'
               const count = tabCounts[tab.id]
               return (
-                <button key={tab.id} onClick={() => goToTab(tab.id)} style={{ gridColumn: tab.id === 'pratique' ? '1 / -1' : undefined, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: big ? '22px 14px' : '13px 14px', borderRadius: '14px', cursor: 'pointer', transition: 'all .18s', border: active ? '2px solid var(--or)' : '1.5px solid rgba(253,250,243,0.18)', background: active ? 'var(--or)' : 'rgba(253,250,243,0.06)', color: active ? 'var(--nuit)' : '#fff', fontSize: big ? '16.5px' : '14px', fontWeight: 700, boxShadow: active ? '0 6px 18px rgba(201,168,76,0.3)' : 'none' }}>
+                <button key={tab.id} onClick={() => goToTab(tab.id)} className="ville-tab" style={{ gridColumn: tab.id === 'pratique' ? '1 / -1' : undefined, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: big ? '22px 14px' : '13px 14px', borderRadius: '14px', cursor: 'pointer', transition: 'transform .15s ease, filter .15s ease', border: active ? '2px solid var(--or)' : '1.5px solid rgba(253,250,243,0.28)', background: active ? 'var(--or)' : 'rgba(253,250,243,0.08)', color: active ? 'var(--nuit)' : '#fff', fontSize: big ? '16.5px' : '14px', fontWeight: 700, boxShadow: active ? '0 6px 18px rgba(201,168,76,0.3)' : '0 2px 8px rgba(0,0,0,0.18)' }}>
                   <span style={{ fontSize: big ? '22px' : '16px' }}>{tab.icon}</span>{tab.label}
                   {count > 0 && <span style={{ fontSize: '12px', padding: '1px 8px', borderRadius: '20px', background: active ? 'rgba(11,26,15,0.18)' : 'rgba(253,250,243,0.15)', color: active ? 'var(--nuit)' : '#fff', fontWeight: 700 }}>{count}</span>}
+                  <span style={{ fontSize: '13px', opacity: 0.55, marginLeft: '2px' }}>{tab.id === 'mosquees' ? '→' : '↓'}</span>
                 </button>
               )
             })}
