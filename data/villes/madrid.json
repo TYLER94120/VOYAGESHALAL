@@ -1,0 +1,75 @@
+{
+  "slug": "madrid",
+  "nom": "Madrid",
+  "pays": "Espagne",
+  "pays_slug": "espagne",
+  "continent": "Europe",
+  "region": "Europe du Sud",
+  "coordonnees": {
+    "lat": 40.4168,
+    "lng": -3.7038
+  },
+  "codeISO": "",
+  "score_halal": 4.3,
+  "halalScore": 8.6,
+  "description": "Capitale espagnole dynamique, Madrid possède le centre culturel islamique (grande mosquée M-30) et une scène halal en plein essor.",
+  "image": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1600&q=80",
+  "metaDescription": "Capitale espagnole dynamique, Madrid possède le centre culturel islamique (grande mosquée M-30) et une scène halal en plein essor.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Madrid",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Madrid",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Madrid%20Madrid"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Centre culturel islamique (Mosquée M-30)",
+      "categorie": "Spirituel",
+      "description": "Plus grande mosquée d'Espagne.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Centre%20culturel%20islamique%20%28Mosqu%C3%A9e%20M-30%29%20Madrid"
+    },
+    {
+      "id": "a2",
+      "nom": "Palais Royal",
+      "categorie": "Histoire",
+      "description": "Vaste palais et jardins au coeur de la ville.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Palais%20Royal%20Madrid"
+    },
+    {
+      "id": "a3",
+      "nom": "Quartier de Lavapiés",
+      "categorie": "Culture",
+      "description": "Quartier cosmopolite aux nombreuses adresses halal.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20Lavapi%C3%A9s%20Madrid"
+    }
+  ],
+  "donneesAVenir": true
+}

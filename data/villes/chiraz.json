@@ -1,0 +1,75 @@
+{
+  "slug": "chiraz",
+  "nom": "Chiraz",
+  "pays": "Iran",
+  "pays_slug": "iran",
+  "continent": "Asie",
+  "region": "Iran",
+  "coordonnees": {
+    "lat": 29.5918,
+    "lng": 52.5837
+  },
+  "codeISO": "",
+  "score_halal": 4.6,
+  "halalScore": 9.2,
+  "description": "Ville des poètes et des roses, Chiraz séduit par la mosquée Nasir-ol-Molk aux vitraux colorés et sa proximité avec Persépolis.",
+  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "metaDescription": "Ville des poètes et des roses, Chiraz séduit par la mosquée Nasir-ol-Molk aux vitraux colorés et sa proximité avec Persépolis.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Chiraz",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Chiraz",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Chiraz%20Chiraz"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Mosquée Nasir-ol-Molk",
+      "categorie": "Spirituel",
+      "description": "La 'mosquée rose' illuminée de vitraux au lever du soleil.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Nasir-ol-Molk%20Chiraz"
+    },
+    {
+      "id": "a2",
+      "nom": "Mausolée de Shah Cheragh",
+      "categorie": "Spirituel",
+      "description": "Sanctuaire aux miroirs étincelants.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e%20de%20Shah%20Cheragh%20Chiraz"
+    },
+    {
+      "id": "a3",
+      "nom": "Persépolis (UNESCO)",
+      "categorie": "Histoire",
+      "description": "Capitale de l'empire perse antique, à proximité.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Pers%C3%A9polis%20%28UNESCO%29%20Chiraz"
+    }
+  ],
+  "donneesAVenir": true
+}

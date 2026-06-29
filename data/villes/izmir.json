@@ -1,0 +1,75 @@
+{
+  "slug": "izmir",
+  "nom": "Izmir",
+  "pays": "Turquie",
+  "pays_slug": "turquie",
+  "continent": "Asie",
+  "region": "Turquie",
+  "coordonnees": {
+    "lat": 38.4237,
+    "lng": 27.1428
+  },
+  "codeISO": "",
+  "score_halal": 4.4,
+  "halalScore": 8.8,
+  "description": "Grande ville égéenne de Turquie, Izmir mêle front de mer animé, bazar historique de Kemeralti et proximité d'Éphèse.",
+  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "metaDescription": "Grande ville égéenne de Turquie, Izmir mêle front de mer animé, bazar historique de Kemeralti et proximité d'Éphèse.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Izmir",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Izmir",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Izmir%20Izmir"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Bazar de Kemeralti",
+      "categorie": "Culture",
+      "description": "Labyrinthe de souks, caravansérails et mosquées ottomanes.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Bazar%20de%20Kemeralti%20Izmir"
+    },
+    {
+      "id": "a2",
+      "nom": "Mosquée Hisar",
+      "categorie": "Spirituel",
+      "description": "Plus grande mosquée ottomane du vieux bazar.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Hisar%20Izmir"
+    },
+    {
+      "id": "a3",
+      "nom": "Éphèse (à proximité)",
+      "categorie": "Histoire",
+      "description": "Cité antique parmi les mieux conservées au monde.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=%C3%89ph%C3%A8se%20%28%C3%A0%20proximit%C3%A9%29%20Izmir"
+    }
+  ],
+  "donneesAVenir": true
+}

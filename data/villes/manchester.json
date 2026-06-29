@@ -1,0 +1,75 @@
+{
+  "slug": "manchester",
+  "nom": "Manchester",
+  "pays": "Royaume-Uni",
+  "pays_slug": "royaume-uni",
+  "continent": "Europe",
+  "region": "Royaume-Uni",
+  "coordonnees": {
+    "lat": 53.4808,
+    "lng": -2.2426
+  },
+  "codeISO": "",
+  "score_halal": 4.4,
+  "halalScore": 8.8,
+  "description": "Grande ville du nord de l'Angleterre à forte communauté musulmane, Manchester offre le 'Curry Mile' halal et de nombreuses mosquées.",
+  "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80",
+  "metaDescription": "Grande ville du nord de l'Angleterre à forte communauté musulmane, Manchester offre le 'Curry Mile' halal et de nombreuses mosquées.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Manchester",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Manchester",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Manchester%20Manchester"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Curry Mile (Rusholme)",
+      "categorie": "Culture",
+      "description": "Avenue célèbre pour ses restaurants halal sud-asiatiques.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Curry%20Mile%20%28Rusholme%29%20Manchester"
+    },
+    {
+      "id": "a2",
+      "nom": "Manchester Central Mosque",
+      "categorie": "Spirituel",
+      "description": "Grande mosquée Victoria Park.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Manchester%20Central%20Mosque%20Manchester"
+    },
+    {
+      "id": "a3",
+      "nom": "Centre-ville historique",
+      "categorie": "Culture",
+      "description": "Architecture industrielle et musées gratuits.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Centre-ville%20historique%20Manchester"
+    }
+  ],
+  "donneesAVenir": true
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "sanliurfa",
+  "nom": "Sanliurfa",
+  "pays": "Turquie",
+  "pays_slug": "turquie",
+  "continent": "Asie",
+  "region": "Turquie",
+  "coordonnees": {
+    "lat": 37.1674,
+    "lng": 38.7955
+  },
+  "codeISO": "",
+  "score_halal": 4.7,
+  "halalScore": 9.3,
+  "description": "'Urfa la bénie', ville des prophètes, abrite la grotte d'Ibrahim (Abraham) et le bassin sacré des poissons, haut lieu spirituel.",
+  "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "metaDescription": "'Urfa la bénie', ville des prophètes, abrite la grotte d'Ibrahim (Abraham) et le bassin sacré des poissons, haut lieu spirituel.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Sanliurfa",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Sanliurfa",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Sanliurfa%20Sanliurfa"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Bassin sacré de Balikligöl",
+      "categorie": "Spirituel",
+      "description": "Lac aux carpes sacrées lié au prophète Ibrahim.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Bassin%20sacr%C3%A9%20de%20Baliklig%C3%B6l%20Sanliurfa"
+    },
+    {
+      "id": "a2",
+      "nom": "Grotte d'Ibrahim (Abraham)",
+      "categorie": "Spirituel",
+      "description": "Lieu de naissance présumé du prophète Ibrahim.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Grotte%20d%27Ibrahim%20%28Abraham%29%20Sanliurfa"
+    },
+    {
+      "id": "a3",
+      "nom": "Göbekli Tepe (UNESCO)",
+      "categorie": "Histoire",
+      "description": "Plus ancien temple connu de l'humanité.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=G%C3%B6bekli%20Tepe%20%28UNESCO%29%20Sanliurfa"
+    }
+  ],
+  "donneesAVenir": true
+}

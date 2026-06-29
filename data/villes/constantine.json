@@ -1,0 +1,75 @@
+{
+  "slug": "constantine",
+  "nom": "Constantine",
+  "pays": "Algérie",
+  "pays_slug": "algerie",
+  "continent": "Afrique",
+  "region": "Afrique du Nord",
+  "coordonnees": {
+    "lat": 36.365,
+    "lng": 6.6147
+  },
+  "codeISO": "",
+  "score_halal": 4.5,
+  "halalScore": 9.0,
+  "description": "'Ville des ponts suspendus', Constantine est spectaculairement bâtie sur des gorges, avec la majestueuse mosquée Emir Abdelkader.",
+  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "metaDescription": "'Ville des ponts suspendus', Constantine est spectaculairement bâtie sur des gorges, avec la majestueuse mosquée Emir Abdelkader.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Constantine",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Constantine",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Constantine%20Constantine"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Mosquée Emir Abdelkader",
+      "categorie": "Spirituel",
+      "description": "L'une des plus grandes mosquées d'Afrique, minarets jumeaux.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Emir%20Abdelkader%20Constantine"
+    },
+    {
+      "id": "a2",
+      "nom": "Ponts suspendus & gorges du Rhumel",
+      "categorie": "Nature",
+      "description": "Vertigineux ponts au-dessus du ravin.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Ponts%20suspendus%20%26%20gorges%20du%20Rhumel%20Constantine"
+    },
+    {
+      "id": "a3",
+      "nom": "Vieille ville (Souika)",
+      "categorie": "Culture",
+      "description": "Ruelles historiques et palais Ahmed Bey.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20%28Souika%29%20Constantine"
+    }
+  ],
+  "donneesAVenir": true
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "skopje",
+  "nom": "Skopje",
+  "pays": "Macédoine du Nord",
+  "pays_slug": "macedoine-du-nord",
+  "continent": "Europe",
+  "region": "Balkans",
+  "coordonnees": {
+    "lat": 41.9981,
+    "lng": 21.4254
+  },
+  "codeISO": "",
+  "score_halal": 4.4,
+  "halalScore": 8.8,
+  "description": "Capitale macédonienne au vieux bazar ottoman, l'un des plus grands des Balkans, avec mosquées et hammams historiques.",
+  "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80",
+  "metaDescription": "Capitale macédonienne au vieux bazar ottoman, l'un des plus grands des Balkans, avec mosquées et hammams historiques.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Skopje",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Skopje",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Skopje%20Skopje"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Vieux Bazar de Skopje",
+      "categorie": "Culture",
+      "description": "Plus grand bazar ottoman des Balkans hors Istanbul.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vieux%20Bazar%20de%20Skopje%20Skopje"
+    },
+    {
+      "id": "a2",
+      "nom": "Mosquée Mustafa Pacha",
+      "categorie": "Spirituel",
+      "description": "Élégante mosquée ottomane du XVe siècle.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Mustafa%20Pacha%20Skopje"
+    },
+    {
+      "id": "a3",
+      "nom": "Forteresse de Kale",
+      "categorie": "Histoire",
+      "description": "Citadelle dominant la vieille ville.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Forteresse%20de%20Kale%20Skopje"
+    }
+  ],
+  "donneesAVenir": true
+}

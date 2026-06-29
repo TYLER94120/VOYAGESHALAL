@@ -1,0 +1,75 @@
+{
+  "slug": "sousse",
+  "nom": "Sousse",
+  "pays": "Tunisie",
+  "pays_slug": "tunisie",
+  "continent": "Afrique",
+  "region": "Afrique du Nord",
+  "coordonnees": {
+    "lat": 35.8256,
+    "lng": 10.6369
+  },
+  "codeISO": "",
+  "score_halal": 4.5,
+  "halalScore": 9.0,
+  "description": "'Perle du Sahel' tunisien, Sousse possède une médina classée UNESCO avec sa grande mosquée et son ribat, le long de plages méditerranéennes.",
+  "image": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1600&q=80",
+  "metaDescription": "'Perle du Sahel' tunisien, Sousse possède une médina classée UNESCO avec sa grande mosquée et son ribat, le long de plages méditerranéennes.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Sousse",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Sousse",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Sousse%20Sousse"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Médina de Sousse (UNESCO)",
+      "categorie": "Culture",
+      "description": "Remparts, souks et ruelles blanches.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20de%20Sousse%20%28UNESCO%29%20Sousse"
+    },
+    {
+      "id": "a2",
+      "nom": "Ribat de Sousse",
+      "categorie": "Histoire",
+      "description": "Forteresse-monastère du VIIIe siècle.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Ribat%20de%20Sousse%20Sousse"
+    },
+    {
+      "id": "a3",
+      "nom": "Grande Mosquée de Sousse",
+      "categorie": "Spirituel",
+      "description": "Mosquée fortifiée du IXe siècle.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20de%20Sousse%20Sousse"
+    }
+  ],
+  "donneesAVenir": true
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "birmingham",
+  "nom": "Birmingham",
+  "pays": "Royaume-Uni",
+  "pays_slug": "royaume-uni",
+  "continent": "Europe",
+  "region": "Royaume-Uni",
+  "coordonnees": {
+    "lat": 52.4862,
+    "lng": -1.8904
+  },
+  "codeISO": "",
+  "score_halal": 4.5,
+  "halalScore": 8.9,
+  "description": "Deuxième ville du Royaume-Uni avec l'une des plus grandes communautés musulmanes d'Europe, Birmingham abrite la grande mosquée centrale et le Balti Triangle.",
+  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "metaDescription": "Deuxième ville du Royaume-Uni avec l'une des plus grandes communautés musulmanes d'Europe, Birmingham abrite la grande mosquée centrale et le Balti Triangle.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Birmingham",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Birmingham",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Birmingham%20Birmingham"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Birmingham Central Mosque",
+      "categorie": "Spirituel",
+      "description": "Grande mosquée historique de la ville.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Birmingham%20Central%20Mosque%20Birmingham"
+    },
+    {
+      "id": "a2",
+      "nom": "Balti Triangle",
+      "categorie": "Culture",
+      "description": "Quartier réputé pour sa cuisine halal balti.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Balti%20Triangle%20Birmingham"
+    },
+    {
+      "id": "a3",
+      "nom": "Bullring & marchés",
+      "categorie": "Shopping",
+      "description": "Grand centre commercial et marché historique.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Bullring%20%26%20march%C3%A9s%20Birmingham"
+    }
+  ],
+  "donneesAVenir": true
+}

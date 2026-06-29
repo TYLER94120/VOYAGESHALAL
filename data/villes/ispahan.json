@@ -1,0 +1,75 @@
+{
+  "slug": "ispahan",
+  "nom": "Ispahan",
+  "pays": "Iran",
+  "pays_slug": "iran",
+  "continent": "Asie",
+  "region": "Iran",
+  "coordonnees": {
+    "lat": 32.6539,
+    "lng": 51.666
+  },
+  "codeISO": "",
+  "score_halal": 4.7,
+  "halalScore": 9.3,
+  "description": "'Ispahan, moitié du monde' : joyau de l'architecture islamique persane avec sa place Naghch-e Djahan, ses mosquées aux dômes turquoise et ses ponts safavides.",
+  "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80",
+  "metaDescription": "'Ispahan, moitié du monde' : joyau de l'architecture islamique persane avec sa place Naghch-e Djahan, ses mosquées aux dômes turquoise et ses ponts safavides.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Ispahan",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Ispahan",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Ispahan%20Ispahan"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Place Naghch-e Djahan (UNESCO)",
+      "categorie": "Culture",
+      "description": "Immense place royale bordée de mosquées et de bazars.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Place%20Naghch-e%20Djahan%20%28UNESCO%29%20Ispahan"
+    },
+    {
+      "id": "a2",
+      "nom": "Mosquée du Chah (Imam)",
+      "categorie": "Spirituel",
+      "description": "Mosquée safavide aux faïences bleues éblouissantes.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20du%20Chah%20%28Imam%29%20Ispahan"
+    },
+    {
+      "id": "a3",
+      "nom": "Pont Si-o-se Pol",
+      "categorie": "Histoire",
+      "description": "Pont aux 33 arches enjambant le Zayandeh.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Pont%20Si-o-se%20Pol%20Ispahan"
+    }
+  ],
+  "donneesAVenir": true
+}

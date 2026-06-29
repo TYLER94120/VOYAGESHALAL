@@ -1,0 +1,75 @@
+{
+  "slug": "surabaya",
+  "nom": "Surabaya",
+  "pays": "Indonésie",
+  "pays_slug": "indonesie",
+  "continent": "Asie",
+  "region": "Indonésie",
+  "coordonnees": {
+    "lat": -7.2575,
+    "lng": 112.7521
+  },
+  "codeISO": "",
+  "score_halal": 4.5,
+  "halalScore": 9.0,
+  "description": "Deuxième ville d'Indonésie, Surabaya abrite la grande mosquée Al-Akbar et le sanctuaire de Sunan Ampel, foyer de l'islam à Java.",
+  "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "metaDescription": "Deuxième ville d'Indonésie, Surabaya abrite la grande mosquée Al-Akbar et le sanctuaire de Sunan Ampel, foyer de l'islam à Java.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Surabaya",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Surabaya",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Surabaya%20Surabaya"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Mosquée Al-Akbar",
+      "categorie": "Spirituel",
+      "description": "Immense mosquée au dôme bleu, vue depuis le minaret.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Al-Akbar%20Surabaya"
+    },
+    {
+      "id": "a2",
+      "nom": "Mosquée et tombe de Sunan Ampel",
+      "categorie": "Spirituel",
+      "description": "Sanctuaire d'un des saints fondateurs de l'islam javanais.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20et%20tombe%20de%20Sunan%20Ampel%20Surabaya"
+    },
+    {
+      "id": "a3",
+      "nom": "Vieille ville arabe",
+      "categorie": "Culture",
+      "description": "Quartier marchand historique et bazars.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20arabe%20Surabaya"
+    }
+  ],
+  "donneesAVenir": true
+}

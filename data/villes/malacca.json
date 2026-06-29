@@ -1,0 +1,75 @@
+{
+  "slug": "malacca",
+  "nom": "Malacca",
+  "pays": "Malaisie",
+  "pays_slug": "malaisie",
+  "continent": "Asie",
+  "region": "Malaisie",
+  "coordonnees": {
+    "lat": 2.1896,
+    "lng": 102.2501
+  },
+  "codeISO": "",
+  "score_halal": 4.5,
+  "halalScore": 9.1,
+  "description": "Cité historique du détroit classée UNESCO, Malacca mêle héritages malais, et abrite la mosquée flottante du détroit face à la mer.",
+  "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80",
+  "metaDescription": "Cité historique du détroit classée UNESCO, Malacca mêle héritages malais, et abrite la mosquée flottante du détroit face à la mer.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Malacca",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Malacca",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Malacca%20Malacca"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Mosquée du détroit de Malacca",
+      "categorie": "Spirituel",
+      "description": "Mosquée semblant flotter sur l'eau, magnifique au couchant.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20du%20d%C3%A9troit%20de%20Malacca%20Malacca"
+    },
+    {
+      "id": "a2",
+      "nom": "Vieille ville (UNESCO)",
+      "categorie": "Culture",
+      "description": "Jonker Street, maisons-boutiques et patrimoine du détroit.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20%28UNESCO%29%20Malacca"
+    },
+    {
+      "id": "a3",
+      "nom": "Mosquée Kampung Kling",
+      "categorie": "Spirituel",
+      "description": "Ancienne mosquée au minaret de style pagode.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Kampung%20Kling%20Malacca"
+    }
+  ],
+  "donneesAVenir": true
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "hurghada",
+  "nom": "Hurghada",
+  "pays": "Égypte",
+  "pays_slug": "egypte",
+  "continent": "Afrique",
+  "region": "Mer Rouge",
+  "coordonnees": {
+    "lat": 27.2579,
+    "lng": 33.8116
+  },
+  "codeISO": "",
+  "score_halal": 4.3,
+  "halalScore": 8.7,
+  "description": "Grande station de la mer Rouge, Hurghada combine plages familiales, plongée de classe mondiale et la grande mosquée El Mina.",
+  "image": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1600&q=80",
+  "metaDescription": "Grande station de la mer Rouge, Hurghada combine plages familiales, plongée de classe mondiale et la grande mosquée El Mina.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Hurghada",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Hurghada",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Hurghada%20Hurghada"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Mosquée Al Mina",
+      "categorie": "Spirituel",
+      "description": "Grande mosquée en bord de mer aux minarets élancés.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Al%20Mina%20Hurghada"
+    },
+    {
+      "id": "a2",
+      "nom": "Île de Giftun",
+      "categorie": "Nature",
+      "description": "Excursion plage et snorkeling en mer Rouge.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=%C3%8Ele%20de%20Giftun%20Hurghada"
+    },
+    {
+      "id": "a3",
+      "nom": "Marina de Hurghada",
+      "categorie": "Loisirs",
+      "description": "Promenade, boutiques et restaurants.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Marina%20de%20Hurghada%20Hurghada"
+    }
+  ],
+  "donneesAVenir": true
+}

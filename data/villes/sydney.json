@@ -1,0 +1,75 @@
+{
+  "slug": "sydney",
+  "nom": "Sydney",
+  "pays": "Australie",
+  "pays_slug": "australie",
+  "continent": "Océanie",
+  "region": "Australie",
+  "coordonnees": {
+    "lat": -33.8688,
+    "lng": 151.2093
+  },
+  "codeISO": "",
+  "score_halal": 4.3,
+  "halalScore": 8.6,
+  "description": "Plus grande ville d'Australie, Sydney possède une communauté musulmane dynamique (Lakemba, Auburn) et de nombreuses adresses halal.",
+  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "metaDescription": "Plus grande ville d'Australie, Sydney possède une communauté musulmane dynamique (Lakemba, Auburn) et de nombreuses adresses halal.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Sydney",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Sydney",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Sydney%20Sydney"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Lakemba & Haldon Street",
+      "categorie": "Culture",
+      "description": "Quartier musulman réputé pour sa street food halal.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Lakemba%20%26%20Haldon%20Street%20Sydney"
+    },
+    {
+      "id": "a2",
+      "nom": "Gallipoli Mosque (Auburn)",
+      "categorie": "Spirituel",
+      "description": "Grande mosquée de style ottoman.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Gallipoli%20Mosque%20%28Auburn%29%20Sydney"
+    },
+    {
+      "id": "a3",
+      "nom": "Opéra & port de Sydney",
+      "categorie": "Culture",
+      "description": "Sites emblématiques au bord de l'eau.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Op%C3%A9ra%20%26%20port%20de%20Sydney%20Sydney"
+    }
+  ],
+  "donneesAVenir": true
+}

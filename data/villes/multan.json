@@ -1,0 +1,75 @@
+{
+  "slug": "multan",
+  "nom": "Multan",
+  "pays": "Pakistan",
+  "pays_slug": "pakistan",
+  "continent": "Asie",
+  "region": "Pakistan",
+  "coordonnees": {
+    "lat": 30.1575,
+    "lng": 71.5249
+  },
+  "codeISO": "",
+  "score_halal": 4.5,
+  "halalScore": 9.1,
+  "description": "'Cité des saints', Multan est célèbre pour ses sanctuaires soufis aux dômes bleus et son riche patrimoine spirituel.",
+  "image": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1600&q=80",
+  "metaDescription": "'Cité des saints', Multan est célèbre pour ses sanctuaires soufis aux dômes bleus et son riche patrimoine spirituel.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Multan",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Multan",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Multan%20Multan"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Sanctuaire de Shah Rukn-e-Alam",
+      "categorie": "Spirituel",
+      "description": "Mausolée soufi monumental aux faïences bleues.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20Shah%20Rukn-e-Alam%20Multan"
+    },
+    {
+      "id": "a2",
+      "nom": "Sanctuaire de Bahauddin Zakariya",
+      "categorie": "Spirituel",
+      "description": "Tombeau d'un grand saint soufi.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20Bahauddin%20Zakariya%20Multan"
+    },
+    {
+      "id": "a3",
+      "nom": "Fort de Multan",
+      "categorie": "Histoire",
+      "description": "Anciennes fortifications surplombant la ville.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Fort%20de%20Multan%20Multan"
+    }
+  ],
+  "donneesAVenir": true
+}

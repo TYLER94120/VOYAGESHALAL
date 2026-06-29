@@ -1,0 +1,75 @@
+{
+  "slug": "munich",
+  "nom": "Munich",
+  "pays": "Allemagne",
+  "pays_slug": "allemagne",
+  "continent": "Europe",
+  "region": "Allemagne",
+  "coordonnees": {
+    "lat": 48.1351,
+    "lng": 11.582
+  },
+  "codeISO": "",
+  "score_halal": 4.3,
+  "halalScore": 8.6,
+  "description": "Capitale de la Bavière, Munich allie élégance, parcs et une offre halal croissante autour de ses quartiers cosmopolites.",
+  "image": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1600&q=80",
+  "metaDescription": "Capitale de la Bavière, Munich allie élégance, parcs et une offre halal croissante autour de ses quartiers cosmopolites.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Munich",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Munich",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Munich%20Munich"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Marienplatz",
+      "categorie": "Culture",
+      "description": "Place centrale et hôtel de ville néogothique.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Marienplatz%20Munich"
+    },
+    {
+      "id": "a2",
+      "nom": "Forum islamique de Munich",
+      "categorie": "Spirituel",
+      "description": "Centre et mosquée de la communauté.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Forum%20islamique%20de%20Munich%20Munich"
+    },
+    {
+      "id": "a3",
+      "nom": "Jardin Anglais",
+      "categorie": "Nature",
+      "description": "Vaste parc urbain idéal en famille.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Jardin%20Anglais%20Munich"
+    }
+  ],
+  "donneesAVenir": true
+}

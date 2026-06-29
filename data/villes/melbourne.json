@@ -1,0 +1,75 @@
+{
+  "slug": "melbourne",
+  "nom": "Melbourne",
+  "pays": "Australie",
+  "pays_slug": "australie",
+  "continent": "Océanie",
+  "region": "Australie",
+  "coordonnees": {
+    "lat": -37.8136,
+    "lng": 144.9631
+  },
+  "codeISO": "",
+  "score_halal": 4.3,
+  "halalScore": 8.6,
+  "description": "Capitale culturelle de l'Australie, Melbourne offre une scène halal foisonnante (Sydney Road, Broadmeadows) et de grandes mosquées.",
+  "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "metaDescription": "Capitale culturelle de l'Australie, Melbourne offre une scène halal foisonnante (Sydney Road, Broadmeadows) et de grandes mosquées.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Melbourne",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Melbourne",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Melbourne%20Melbourne"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Sydney Road (Brunswick)",
+      "categorie": "Culture",
+      "description": "Avenue multiculturelle aux nombreux restaurants halal.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Sydney%20Road%20%28Brunswick%29%20Melbourne"
+    },
+    {
+      "id": "a2",
+      "nom": "Mosquée de Broadmeadows",
+      "categorie": "Spirituel",
+      "description": "Grande mosquée de la communauté.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20de%20Broadmeadows%20Melbourne"
+    },
+    {
+      "id": "a3",
+      "nom": "Centre-ville & Yarra",
+      "categorie": "Culture",
+      "description": "Ruelles d'art, marchés et bords de fleuve.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Centre-ville%20%26%20Yarra%20Melbourne"
+    }
+  ],
+  "donneesAVenir": true
+}

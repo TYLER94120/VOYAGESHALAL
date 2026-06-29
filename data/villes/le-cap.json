@@ -1,0 +1,75 @@
+{
+  "slug": "le-cap",
+  "nom": "Le Cap",
+  "pays": "Afrique du Sud",
+  "pays_slug": "afrique-du-sud",
+  "continent": "Afrique",
+  "region": "Afrique australe",
+  "coordonnees": {
+    "lat": -33.9249,
+    "lng": 18.4241
+  },
+  "codeISO": "",
+  "score_halal": 4.3,
+  "halalScore": 8.7,
+  "description": "Au pied de la Montagne de la Table, Le Cap abrite le quartier malais musulman de Bo-Kaap, berceau de l'islam en Afrique du Sud.",
+  "image": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1600&q=80",
+  "metaDescription": "Au pied de la Montagne de la Table, Le Cap abrite le quartier malais musulman de Bo-Kaap, berceau de l'islam en Afrique du Sud.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Le Cap",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Le Cap",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Le%20Cap%20Le%20Cap"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Bo-Kaap",
+      "categorie": "Culture",
+      "description": "Quartier malais aux maisons colorées et mosquées historiques.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Bo-Kaap%20Le%20Cap"
+    },
+    {
+      "id": "a2",
+      "nom": "Montagne de la Table",
+      "categorie": "Nature",
+      "description": "Sommet plat emblématique accessible par téléphérique.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Montagne%20de%20la%20Table%20Le%20Cap"
+    },
+    {
+      "id": "a3",
+      "nom": "Auwal Mosque",
+      "categorie": "Spirituel",
+      "description": "Première mosquée d'Afrique du Sud (1794).",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Auwal%20Mosque%20Le%20Cap"
+    }
+  ],
+  "donneesAVenir": true
+}

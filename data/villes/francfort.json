@@ -1,0 +1,75 @@
+{
+  "slug": "francfort",
+  "nom": "Francfort",
+  "pays": "Allemagne",
+  "pays_slug": "allemagne",
+  "continent": "Europe",
+  "region": "Allemagne",
+  "coordonnees": {
+    "lat": 50.1109,
+    "lng": 8.6821
+  },
+  "codeISO": "",
+  "score_halal": 4.3,
+  "halalScore": 8.6,
+  "description": "Métropole financière de l'Allemagne, Francfort possède une communauté musulmane active, des mosquées et de nombreuses adresses halal.",
+  "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "metaDescription": "Métropole financière de l'Allemagne, Francfort possède une communauté musulmane active, des mosquées et de nombreuses adresses halal.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Francfort",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Francfort",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Francfort%20Francfort"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Mosquée Abu Bakr",
+      "categorie": "Spirituel",
+      "description": "L'une des principales mosquées de la ville.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Abu%20Bakr%20Francfort"
+    },
+    {
+      "id": "a2",
+      "nom": "Römerberg (vieille ville)",
+      "categorie": "Culture",
+      "description": "Place historique reconstruite à colombages.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=R%C3%B6merberg%20%28vieille%20ville%29%20Francfort"
+    },
+    {
+      "id": "a3",
+      "nom": "Quartier de la gare (halal food)",
+      "categorie": "Culture",
+      "description": "Restaurants turcs et orientaux halal.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20la%20gare%20%28halal%20food%29%20Francfort"
+    }
+  ],
+  "donneesAVenir": true
+}

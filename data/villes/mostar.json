@@ -1,0 +1,75 @@
+{
+  "slug": "mostar",
+  "nom": "Mostar",
+  "pays": "Bosnie-Herzégovine",
+  "pays_slug": "bosnie-herzegovine",
+  "continent": "Europe",
+  "region": "Balkans",
+  "coordonnees": {
+    "lat": 43.3438,
+    "lng": 17.8078
+  },
+  "codeISO": "",
+  "score_halal": 4.5,
+  "halalScore": 9.0,
+  "description": "Symbole de la Bosnie, Mostar est célèbre pour son Vieux Pont ottoman classé UNESCO enjambant la Neretva, et sa vieille ville orientale.",
+  "image": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1600&q=80",
+  "metaDescription": "Symbole de la Bosnie, Mostar est célèbre pour son Vieux Pont ottoman classé UNESCO enjambant la Neretva, et sa vieille ville orientale.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Mostar",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Mostar",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Mostar%20Mostar"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Stari Most (Vieux Pont)",
+      "categorie": "Histoire",
+      "description": "Pont ottoman emblématique reconstruit, UNESCO.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Stari%20Most%20%28Vieux%20Pont%29%20Mostar"
+    },
+    {
+      "id": "a2",
+      "nom": "Mosquée Koski Mehmed Pacha",
+      "categorie": "Spirituel",
+      "description": "Mosquée ottomane avec vue sur le pont.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Koski%20Mehmed%20Pacha%20Mostar"
+    },
+    {
+      "id": "a3",
+      "nom": "Vieux bazar Kujundziluk",
+      "categorie": "Culture",
+      "description": "Ruelles pavées, cuivre et artisanat ottoman.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vieux%20bazar%20Kujundziluk%20Mostar"
+    }
+  ],
+  "donneesAVenir": true
+}

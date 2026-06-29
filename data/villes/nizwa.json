@@ -1,0 +1,75 @@
+{
+  "slug": "nizwa",
+  "nom": "Nizwa",
+  "pays": "Oman",
+  "pays_slug": "oman",
+  "continent": "Asie",
+  "region": "Moyen-Orient",
+  "coordonnees": {
+    "lat": 22.9333,
+    "lng": 57.5333
+  },
+  "codeISO": "",
+  "score_halal": 4.7,
+  "halalScore": 9.3,
+  "description": "Ancienne capitale d'Oman au pied du Djebel Akhdar, Nizwa est célèbre pour son fort circulaire, son souk d'argent et son marché aux bestiaux du vendredi.",
+  "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "metaDescription": "Ancienne capitale d'Oman au pied du Djebel Akhdar, Nizwa est célèbre pour son fort circulaire, son souk d'argent et son marché aux bestiaux du vendredi.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Nizwa",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Nizwa",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Nizwa%20Nizwa"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Fort de Nizwa",
+      "categorie": "Histoire",
+      "description": "Tour-citadelle du XVIIe siècle offrant une vue panoramique.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Fort%20de%20Nizwa%20Nizwa"
+    },
+    {
+      "id": "a2",
+      "nom": "Souk de Nizwa",
+      "categorie": "Shopping",
+      "description": "Argenterie, poterie, dattes et khanjars traditionnels.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Souk%20de%20Nizwa%20Nizwa"
+    },
+    {
+      "id": "a3",
+      "nom": "Djebel Akhdar",
+      "categorie": "Nature",
+      "description": "Montagne verte en terrasses, roseraies et villages perchés.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Djebel%20Akhdar%20Nizwa"
+    }
+  ],
+  "donneesAVenir": true
+}

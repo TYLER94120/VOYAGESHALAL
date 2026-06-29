@@ -1,0 +1,75 @@
+{
+  "slug": "mumbai",
+  "nom": "Mumbai",
+  "pays": "Inde",
+  "pays_slug": "inde",
+  "continent": "Asie",
+  "region": "Inde",
+  "coordonnees": {
+    "lat": 19.076,
+    "lng": 72.8777
+  },
+  "codeISO": "",
+  "score_halal": 4.3,
+  "halalScore": 8.7,
+  "description": "Mégapole cosmopolite de l'Inde, Mumbai abrite la mosquée Haji Ali sur son îlot et de nombreuses adresses halal dans les quartiers musulmans animés.",
+  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+  "metaDescription": "Mégapole cosmopolite de l'Inde, Mumbai abrite la mosquée Haji Ali sur son îlot et de nombreuses adresses halal dans les quartiers musulmans animés.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Mumbai",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Mumbai",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Mumbai%20Mumbai"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Mosquée Haji Ali",
+      "categorie": "Spirituel",
+      "description": "Sanctuaire sur un îlot relié par une digue.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Haji%20Ali%20Mumbai"
+    },
+    {
+      "id": "a2",
+      "nom": "Porte de l'Inde",
+      "categorie": "Histoire",
+      "description": "Arc monumental face à la mer d'Arabie.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Porte%20de%20l%27Inde%20Mumbai"
+    },
+    {
+      "id": "a3",
+      "nom": "Quartier de Mohammed Ali Road",
+      "categorie": "Culture",
+      "description": "Rue gastronomique halal très réputée le soir.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20Mohammed%20Ali%20Road%20Mumbai"
+    }
+  ],
+  "donneesAVenir": true
+}

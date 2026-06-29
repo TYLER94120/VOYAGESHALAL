@@ -1,0 +1,75 @@
+{
+  "slug": "mardin",
+  "nom": "Mardin",
+  "pays": "Turquie",
+  "pays_slug": "turquie",
+  "continent": "Asie",
+  "region": "Turquie",
+  "coordonnees": {
+    "lat": 37.3122,
+    "lng": 40.7351
+  },
+  "codeISO": "",
+  "score_halal": 4.5,
+  "halalScore": 9.1,
+  "description": "Ville-terrasse surplombant la plaine de Mésopotamie, Mardin est un joyau de pierre dorée aux medersas et mosquées séculaires.",
+  "image": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?w=1600&q=80",
+  "metaDescription": "Ville-terrasse surplombant la plaine de Mésopotamie, Mardin est un joyau de pierre dorée aux medersas et mosquées séculaires.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Mardin",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Mardin",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Mardin%20Mardin"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Grande Mosquée de Mardin",
+      "categorie": "Spirituel",
+      "description": "Mosquée seldjoukide au minaret historique.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20de%20Mardin%20Mardin"
+    },
+    {
+      "id": "a2",
+      "nom": "Medersa Zinciriye",
+      "categorie": "Culture",
+      "description": "École coranique aux portails sculptés et vue panoramique.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Medersa%20Zinciriye%20Mardin"
+    },
+    {
+      "id": "a3",
+      "nom": "Vieille ville en terrasses",
+      "categorie": "Culture",
+      "description": "Ruelles, maisons de pierre et artisanat.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20en%20terrasses%20Mardin"
+    }
+  ],
+  "donneesAVenir": true
+}

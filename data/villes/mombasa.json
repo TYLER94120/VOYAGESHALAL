@@ -1,0 +1,75 @@
+{
+  "slug": "mombasa",
+  "nom": "Mombasa",
+  "pays": "Kenya",
+  "pays_slug": "kenya",
+  "continent": "Afrique",
+  "region": "Afrique de l'Est",
+  "coordonnees": {
+    "lat": -4.0435,
+    "lng": 39.6682
+  },
+  "codeISO": "",
+  "score_halal": 4.4,
+  "halalScore": 8.8,
+  "description": "Cité swahilie de la côte kényane, Mombasa mêle héritage arabo-musulman, vieille ville et plages de l'océan Indien.",
+  "image": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80",
+  "metaDescription": "Cité swahilie de la côte kényane, Mombasa mêle héritage arabo-musulman, vieille ville et plages de l'océan Indien.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Mombasa",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Mombasa",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Mombasa%20Mombasa"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Vieille ville de Mombasa",
+      "categorie": "Culture",
+      "description": "Ruelles swahilies, portes sculptées et mosquées anciennes.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20de%20Mombasa%20Mombasa"
+    },
+    {
+      "id": "a2",
+      "nom": "Fort Jesus (UNESCO)",
+      "categorie": "Histoire",
+      "description": "Forteresse portugaise du XVIe siècle.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Fort%20Jesus%20%28UNESCO%29%20Mombasa"
+    },
+    {
+      "id": "a3",
+      "nom": "Plages de Nyali & Diani",
+      "categorie": "Nature",
+      "description": "Sable blanc et lagons de l'océan Indien.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Plages%20de%20Nyali%20%26%20Diani%20Mombasa"
+    }
+  ],
+  "donneesAVenir": true
+}

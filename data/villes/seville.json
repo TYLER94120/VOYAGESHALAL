@@ -1,0 +1,75 @@
+{
+  "slug": "seville",
+  "nom": "Séville",
+  "pays": "Espagne",
+  "pays_slug": "espagne",
+  "continent": "Europe",
+  "region": "Andalousie",
+  "coordonnees": {
+    "lat": 37.3891,
+    "lng": -5.9845
+  },
+  "codeISO": "",
+  "score_halal": 4.5,
+  "halalScore": 8.9,
+  "description": "Capitale andalouse à l'héritage musulman éclatant, Séville abrite la Giralda (ancien minaret almohade) et l'Alcázar aux jardins mauresques.",
+  "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+  "metaDescription": "Capitale andalouse à l'héritage musulman éclatant, Séville abrite la Giralda (ancien minaret almohade) et l'Alcázar aux jardins mauresques.",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Séville",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Séville",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20S%C3%A9ville%20S%C3%A9ville"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "La Giralda",
+      "categorie": "Histoire",
+      "description": "Ancien minaret almohade devenu clocher de la cathédrale.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=La%20Giralda%20S%C3%A9ville"
+    },
+    {
+      "id": "a2",
+      "nom": "Alcázar de Séville (UNESCO)",
+      "categorie": "Culture",
+      "description": "Palais royal aux décors et jardins mauresques.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Alc%C3%A1zar%20de%20S%C3%A9ville%20%28UNESCO%29%20S%C3%A9ville"
+    },
+    {
+      "id": "a3",
+      "nom": "Quartier de Santa Cruz",
+      "categorie": "Culture",
+      "description": "Ruelles de l'ancienne médina andalouse.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20Santa%20Cruz%20S%C3%A9ville"
+    }
+  ],
+  "donneesAVenir": true
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "al-quds",
+  "nom": "Al-Quds (Jérusalem)",
+  "pays": "Palestine",
+  "pays_slug": "palestine",
+  "continent": "Asie",
+  "region": "Levant",
+  "coordonnees": {
+    "lat": 31.7767,
+    "lng": 35.2345
+  },
+  "codeISO": "",
+  "score_halal": 4.8,
+  "halalScore": 9.5,
+  "description": "Troisième lieu saint de l'islam, la vieille ville d'Al-Quds abrite l'esplanade des Mosquées avec Al-Aqsa et le Dôme du Rocher, au coeur d'un patrimoine sacré exceptionnel.",
+  "image": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1600&q=80",
+  "image_hero": "https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=1600&q=80",
+  "metaDescription": "Troisième lieu saint de l'islam, la vieille ville d'Al-Quds abrite l'esplanade des Mosquées avec Al-Aqsa et le Dôme du Rocher, au coeur d'un patrimoine sacré ex",
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 0
+  },
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
+  },
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [],
+  "hotels": [],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Al-Quds (Jérusalem)",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Al-Quds (Jérusalem)",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Al-Quds%20%28J%C3%A9rusalem%29%20Al-Quds%20%28J%C3%A9rusalem%29"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Mosquée Al-Aqsa",
+      "categorie": "Spirituel",
+      "description": "Première Qibla de l'islam, sur l'esplanade des Mosquées.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Al-Aqsa%20Al-Quds%20%28J%C3%A9rusalem%29"
+    },
+    {
+      "id": "a2",
+      "nom": "Dôme du Rocher",
+      "categorie": "Spirituel",
+      "description": "Sanctuaire emblématique au dôme doré, VIIe siècle.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=D%C3%B4me%20du%20Rocher%20Al-Quds%20%28J%C3%A9rusalem%29"
+    },
+    {
+      "id": "a3",
+      "nom": "Vieille ville (UNESCO)",
+      "categorie": "Culture",
+      "description": "Souks, remparts et quartiers historiques.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20%28UNESCO%29%20Al-Quds%20%28J%C3%A9rusalem%29"
+    }
+  ],
+  "donneesAVenir": true
+}
