@@ -95,20 +95,18 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         {/* intro courte */}
         {descShort && <p style={{ textAlign: 'center', color: 'var(--texte-2)', fontSize: '15.5px', lineHeight: 1.7, maxWidth: 720, margin: '0 auto 22px' }}>{descShort}</p>}
 
-        {/* ONGLETS — barre claire, sticky, défilable (accès direct à tout) */}
-        <div className="ville-tabs" style={{ position: 'sticky', top: 0, zIndex: 40, background: 'var(--creme)', marginBottom: '28px', paddingTop: '6px' }}>
-          <div style={{ display: 'flex', gap: '8px', overflowX: 'auto', WebkitOverflowScrolling: 'touch', padding: '6px', background: '#fff', borderRadius: '16px', border: '1px solid rgba(11,26,15,0.08)', boxShadow: '0 4px 16px rgba(11,26,15,0.05)' }}>
-            {TABS.map((tab) => {
-              const active = activeTab === tab.id
-              const count = tabCounts[tab.id]
-              return (
-                <button key={tab.id} onClick={() => setActiveTab(tab.id)} style={{ display: 'flex', alignItems: 'center', gap: '7px', padding: '12px 18px', border: 'none', borderRadius: '12px', background: active ? 'var(--foret)' : 'transparent', color: active ? '#fff' : 'var(--texte-2)', fontSize: '15px', fontWeight: active ? 700 : 600, cursor: 'pointer', whiteSpace: 'nowrap', flexShrink: 0, transition: 'background .18s' }}>
-                  <span style={{ fontSize: '17px' }}>{tab.icon}</span>{tab.label}
-                  {count > 0 && <span style={{ fontSize: '12px', padding: '1px 8px', borderRadius: '20px', background: active ? 'rgba(255,255,255,0.22)' : '#EDE8DC', color: active ? '#fff' : 'var(--foret)', fontWeight: 700 }}>{count}</span>}
-                </button>
-              )
-            })}
-          </div>
+        {/* ONGLETS — grille 2 colonnes, tous visibles dès l'ouverture */}
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '28px' }}>
+          {TABS.map((tab) => {
+            const active = activeTab === tab.id
+            const count = tabCounts[tab.id]
+            return (
+              <button key={tab.id} onClick={() => setActiveTab(tab.id)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '15px 14px', borderRadius: '14px', cursor: 'pointer', transition: 'all .18s', border: active ? '2px solid var(--foret)' : '1.5px solid rgba(11,26,15,0.1)', background: active ? 'var(--foret)' : '#fff', color: active ? '#fff' : 'var(--foret)', fontSize: '15px', fontWeight: 700, boxShadow: active ? '0 6px 18px rgba(27,67,50,0.25)' : '0 2px 8px rgba(11,26,15,0.04)' }}>
+                <span style={{ fontSize: '19px' }}>{tab.icon}</span>{tab.label}
+                {count > 0 && <span style={{ fontSize: '12px', padding: '1px 8px', borderRadius: '20px', background: active ? 'rgba(255,255,255,0.22)' : '#EDE8DC', color: active ? '#fff' : 'var(--foret)', fontWeight: 700 }}>{count}</span>}
+              </button>
+            )
+          })}
         </div>
 
         {activeTab === 'restaurants' && (

@@ -20,8 +20,8 @@ export default function BottomNav() {
         <span className="bottom-nav-label">{t('bottom.home')}</span>
       </Link>
       <Link href={restosHref} className={`bottom-nav-item ${isActive('/destinations') ? 'active' : ''}`}>
-        <span className="bottom-nav-icon">🏙️</span>
-        <span className="bottom-nav-label">Ville</span>
+        <span className="bottom-nav-icon">{city ? '📍' : '🏙️'}</span>
+        <span className="bottom-nav-label" style={{ maxWidth: 64, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{city ? city.nom : 'Ville'}</span>
       </Link>
       <Link href="/mosquee-proche" className={`bottom-nav-item ${isActive('/mosquee-proche') ? 'active' : ''}`}>
         <span className="bottom-nav-icon">🕌</span>
