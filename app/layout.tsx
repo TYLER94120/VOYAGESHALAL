@@ -12,6 +12,7 @@ import { LanguageProvider } from '@/components/i18n/LanguageProvider'
 import GoogleTranslate from '@/components/i18n/GoogleTranslate'
 import { LocationProvider } from '@/components/location/LocationProvider'
 import { AdhanProvider } from '@/components/adhan/AdhanProvider'
+import PrayerCountdownBar from '@/components/prayer/PrayerCountdownBar'
 import { RamadanBanner } from '@/components/RamadanBanner'
 import { SITE_NAME, DEFAULT_DESCRIPTION, SITE_URL } from '@/lib/seo'
 
@@ -61,6 +62,7 @@ export default function RootLayout({
         <LanguageProvider>
           <LocationProvider>
            <AdhanProvider>
+            <PrayerCountdownBar />
             <GoogleTranslate />
             <RamadanBanner />
             <Header />

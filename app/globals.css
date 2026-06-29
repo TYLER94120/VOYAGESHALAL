@@ -446,6 +446,17 @@ body { top: 0 !important; }
 }
 .ville-action:active { transform: scale(0.97); }
 
+/* Bandeau prochaine prière — fin, sticky, sur toutes les pages */
+.prayer-bar {
+  position: sticky; top: 0; z-index: 500;
+  display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap;
+  background: var(--nuit); color: #fdfaf3;
+  font-size: 13px; font-weight: 600;
+  padding: 7px 14px; min-height: 34px;
+  border-bottom: 1px solid rgba(201,168,76,0.3);
+  text-align: center; line-height: 1.2;
+}
+
 /* Grille d'onglets : 2 colonnes sur mobile, une seule rangée compacte sur PC */
 .ville-tabs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 @media (min-width: 900px) {
