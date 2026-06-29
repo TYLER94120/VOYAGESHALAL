@@ -94,6 +94,7 @@ export default async function DestinationPage({ params }: Props) {
   if (!ville) notFound()
 
   // Maillage interne : villes du même pays d'abord, complété par d'autres, hors ville courante
+  const { isEN, siteUrl } = await getDomainSEO()
   const all = cityCoords as { slug: string; nom: string; pays?: string; lat?: number; lng?: number }[]
   const sameCountry = all.filter((c) => c.slug !== city && c.pays === ville.pays)
   const others = all.filter((c) => c.slug !== city && c.pays !== ville.pays)
@@ -131,8 +132,8 @@ export default async function DestinationPage({ params }: Props) {
         </div>
       </nav>
 
-      <DestinationSchema ville={ville} slug={city} />
-      <DestinationFaqSchema ville={ville} />
+      <DestinationSchema ville={ville} slug={city} en={isEN} siteUrl={siteUrl} />
+      <DestinationFaqSchema ville={ville} en={isEN} />
     </>
   )
 }

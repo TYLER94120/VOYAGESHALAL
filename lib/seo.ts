@@ -107,31 +107,38 @@ export function buildBreadcrumbSchema(
   }
 }
 
-export function buildOrganizationSchema() {
+interface SchemaOpts { en?: boolean; siteUrl?: string; name?: string }
+const EN_DESCRIPTION = 'Certified halal restaurants, mosques, prayer times and practical guides in 88+ destinations worldwide — for Muslim travelers.'
+
+export function buildOrganizationSchema(opts: SchemaOpts = {}) {
+  const url = opts.siteUrl ?? SITE_URL
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'VoyagesHalal.fr',
-    url: SITE_URL,
-    description: DEFAULT_DESCRIPTION,
+    name: opts.name ?? 'VoyagesHalal.fr',
+    url,
+    description: opts.en ? EN_DESCRIPTION : DEFAULT_DESCRIPTION,
     logo: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=512&h=512&fit=crop&q=80',
     image: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&h=630&fit=crop&q=80',
     areaServed: 'Worldwide',
-    knowsAbout: ['voyage halal', 'restaurants halal', 'mosquées', 'horaires de prière', 'Qibla', 'tourisme musulman'],
+    knowsAbout: opts.en
+      ? ['halal travel', 'halal restaurants', 'mosques', 'prayer times', 'Qibla', 'Muslim tourism']
+      : ['voyage halal', 'restaurants halal', 'mosquées', 'horaires de prière', 'Qibla', 'tourisme musulman'],
   }
 }
 
-export function buildWebSiteSchema() {
+export function buildWebSiteSchema(opts: SchemaOpts = {}) {
+  const url = opts.siteUrl ?? SITE_URL
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: SITE_NAME,
-    url: SITE_URL,
-    description: DEFAULT_DESCRIPTION,
-    inLanguage: 'fr-FR',
+    name: opts.name ?? SITE_NAME,
+    url,
+    description: opts.en ? EN_DESCRIPTION : DEFAULT_DESCRIPTION,
+    inLanguage: opts.en ? 'en' : 'fr-FR',
     potentialAction: {
       '@type': 'SearchAction',
-      target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/search?q={search_term_string}` },
+      target: { '@type': 'EntryPoint', urlTemplate: `${url}/search?q={search_term_string}` },
       'query-input': 'required name=search_term_string',
     },
   }

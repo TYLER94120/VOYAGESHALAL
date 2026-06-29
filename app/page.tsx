@@ -67,9 +67,10 @@ function getVillesStats() {
   }
 }
 
-export default function HomePage() {
-  const websiteSchema = buildWebSiteSchema()
-  const orgSchema = buildOrganizationSchema()
+export default async function HomePage() {
+  const { isEN, brand, siteUrl } = await getDomainSEO()
+  const websiteSchema = buildWebSiteSchema({ en: isEN, siteUrl, name: isEN ? brand : undefined })
+  const orgSchema = buildOrganizationSchema({ en: isEN, siteUrl, name: isEN ? brand : undefined })
   const featuredGuides = guides.slice(0, 3)
   const { totalVilles } = getVillesStats()
 
