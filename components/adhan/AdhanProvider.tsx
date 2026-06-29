@@ -5,14 +5,20 @@ import { MUEZZINS, PRAYER_KEYS, PRAYER_LABELS, type PrayerKey } from '@/lib/adha
 
 type PerPrayer = Record<PrayerKey, boolean>
 
+type SoundMode = 'adhan' | 'discreet'
+
 interface Ctx {
   enabled: boolean
   muezzin: string
+  soundMode: SoundMode
+  chime: string
   volume: number
   perPrayer: PerPrayer
   nextInfo: { key: PrayerKey; time: string } | null
   setEnabled: (v: boolean) => void
   setMuezzin: (id: string) => void
+  setSoundMode: (m: SoundMode) => void
+  setChime: (id: string) => void
   setVolume: (v: number) => void
   togglePrayer: (k: PrayerKey) => void
   test: () => void
@@ -21,14 +27,16 @@ interface Ctx {
 const allOn = (): PerPrayer => ({ Fajr: true, Dhuhr: true, Asr: true, Maghrib: true, Isha: true })
 
 const AdhanContext = createContext<Ctx>({
-  enabled: false, muezzin: 'makkah', volume: 1, perPrayer: allOn(), nextInfo: null,
-  setEnabled: () => {}, setMuezzin: () => {}, setVolume: () => {}, togglePrayer: () => {}, test: () => {},
+  enabled: false, muezzin: 'makkah', soundMode: 'adhan', chime: 'soft', volume: 1, perPrayer: allOn(), nextInfo: null,
+  setEnabled: () => {}, setMuezzin: () => {}, setSoundMode: () => {}, setChime: () => {}, setVolume: () => {}, togglePrayer: () => {}, test: () => {},
 })
 
 export function AdhanProvider({ children }: { children: React.ReactNode }) {
   const { city } = useLocation()
   const [enabled, setEnabledState] = useState(false)
   const [muezzin, setMuezzinState] = useState('makkah')
+  const [soundMode, setSoundModeState] = useState<SoundMode>('adhan')
+  const [chime, setChimeState] = useState('soft')
   const [volume, setVolumeState] = useState(1)
   const [perPrayer, setPerPrayer] = useState<PerPrayer>(allOn())
   const [nextInfo, setNextInfo] = useState<{ key: PrayerKey; time: string } | null>(null)
@@ -36,6 +44,7 @@ export function AdhanProvider({ children }: { children: React.ReactNode }) {
   const [dayTick, setDayTick] = useState(0)
 
   const audioRef = useRef<HTMLAudioElement | null>(null)
+  const audioCtxRef = useRef<AudioContext | null>(null)
   const timersRef = useRef<ReturnType<typeof setTimeout>[]>([])
 
   // Audio unique réutilisé
@@ -51,29 +60,64 @@ export function AdhanProvider({ children }: { children: React.ReactNode }) {
         const o = JSON.parse(s)
         if (typeof o.enabled === 'boolean') setEnabledState(o.enabled)
         if (o.muezzin) setMuezzinState(o.muezzin)
+        if (o.soundMode) setSoundModeState(o.soundMode)
+        if (o.chime) setChimeState(o.chime)
         if (typeof o.volume === 'number') setVolumeState(o.volume)
         if (o.perPrayer) setPerPrayer({ ...allOn(), ...o.perPrayer })
       }
     } catch {}
   }, [])
 
-  const persist = useCallback((patch: Partial<{ enabled: boolean; muezzin: string; volume: number; perPrayer: PerPrayer }>) => {
+  const persist = useCallback((patch: Partial<{ enabled: boolean; muezzin: string; soundMode: SoundMode; chime: string; volume: number; perPrayer: PerPrayer }>) => {
     try {
-      const cur = { enabled, muezzin, volume, perPrayer, ...patch }
+      const cur = { enabled, muezzin, soundMode, chime, volume, perPrayer, ...patch }
       localStorage.setItem('vh_adhan', JSON.stringify(cur))
     } catch {}
-  }, [enabled, muezzin, volume, perPrayer])
+  }, [enabled, muezzin, soundMode, chime, volume, perPrayer])
 
   const muezzinUrl = useCallback((id: string) => MUEZZINS.find((m) => m.id === id)?.url ?? MUEZZINS[0].url, [])
 
-  // Débloque l'audio (politique navigateur : nécessite un geste utilisateur)
+  // Débloque l'audio + l'AudioContext (politique navigateur : nécessite un geste utilisateur)
   const unlock = useCallback(() => {
     const a = audioRef.current
-    if (!a) return
-    a.src = muezzinUrl(muezzin)
-    a.volume = 0
-    a.play().then(() => { a.pause(); a.currentTime = 0; a.volume = volume }).catch(() => {})
+    if (a) {
+      a.src = muezzinUrl(muezzin)
+      a.volume = 0
+      a.play().then(() => { a.pause(); a.currentTime = 0; a.volume = volume }).catch(() => {})
+    }
+    try {
+      type ACtor = typeof AudioContext
+      const Ctor: ACtor | undefined = window.AudioContext || (window as unknown as { webkitAudioContext?: ACtor }).webkitAudioContext
+      if (Ctor) {
+        if (!audioCtxRef.current) audioCtxRef.current = new Ctor()
+        if (audioCtxRef.current.state === 'suspended') audioCtxRef.current.resume()
+      }
+    } catch {}
   }, [muezzin, volume, muezzinUrl])
+
+  // Sonnerie discrète générée (Web Audio) — pas de fichier, fonctionne hors-ligne
+  const playChimeSound = useCallback(() => {
+    const ctx = audioCtxRef.current
+    if (!ctx) return
+    const now = ctx.currentTime
+    const seqs: Record<string, [number, number][]> = {
+      soft: [[660, 0], [990, 0.18], [1320, 0.36]],
+      bell: [[988, 0], [659, 0.2]],
+      beep: [[880, 0], [880, 0.25]],
+    }
+    const notes = seqs[chime] ?? seqs.soft
+    const wave: OscillatorType = chime === 'beep' ? 'triangle' : 'sine'
+    notes.forEach(([f, t]) => {
+      const o = ctx.createOscillator(); const g = ctx.createGain()
+      o.type = wave; o.frequency.value = f
+      o.connect(g); g.connect(ctx.destination)
+      const s = now + t
+      g.gain.setValueAtTime(0.0001, s)
+      g.gain.exponentialRampToValueAtTime(Math.max(0.02, volume * 0.5), s + 0.02)
+      g.gain.exponentialRampToValueAtTime(0.0001, s + 0.6)
+      o.start(s); o.stop(s + 0.65)
+    })
+  }, [chime, volume])
 
   // Déverrouillage de l'audio au 1er geste utilisateur quand l'adhan est activé
   // (sinon, après un rechargement sans interaction, le navigateur bloque la lecture).
@@ -96,15 +140,20 @@ export function AdhanProvider({ children }: { children: React.ReactNode }) {
   }, [enabled, unlock])
 
   const playAdhan = useCallback((key: PrayerKey) => {
+    setPlaying(key)
+    if (soundMode === 'discreet') {
+      playChimeSound()
+      setTimeout(() => setPlaying(null), 2000)
+      return
+    }
     const a = audioRef.current
-    if (!a) return
+    if (!a) { setPlaying(null); return }
     a.src = muezzinUrl(muezzin)
     a.volume = volume
     a.currentTime = 0
-    setPlaying(key)
     a.onended = () => setPlaying(null)
     a.play().catch(() => setPlaying(null))
-  }, [muezzin, volume, muezzinUrl])
+  }, [soundMode, muezzin, volume, muezzinUrl, playChimeSound])
 
   const stop = useCallback(() => {
     const a = audioRef.current
@@ -157,18 +206,20 @@ export function AdhanProvider({ children }: { children: React.ReactNode }) {
 
   const setEnabled = (v: boolean) => { setEnabledState(v); persist({ enabled: v }); if (v) unlock() }
   const setMuezzin = (id: string) => { setMuezzinState(id); persist({ muezzin: id }) }
+  const setSoundMode = (m: SoundMode) => { setSoundModeState(m); persist({ soundMode: m }); unlock() }
+  const setChime = (id: string) => { setChimeState(id); persist({ chime: id }) }
   const setVolume = (v: number) => { setVolumeState(v); persist({ volume: v }) }
   const togglePrayer = (k: PrayerKey) => { const np = { ...perPrayer, [k]: !perPrayer[k] }; setPerPrayer(np); persist({ perPrayer: np }) }
-  const test = () => { unlock(); setTimeout(() => playAdhan(nextInfo?.key ?? 'Dhuhr'), 120) }
+  const test = () => { unlock(); setTimeout(() => playAdhan(nextInfo?.key ?? 'Dhuhr'), 150) }
 
   return (
-    <AdhanContext.Provider value={{ enabled, muezzin, volume, perPrayer, nextInfo, setEnabled, setMuezzin, setVolume, togglePrayer, test }}>
+    <AdhanContext.Provider value={{ enabled, muezzin, soundMode, chime, volume, perPrayer, nextInfo, setEnabled, setMuezzin, setSoundMode, setChime, setVolume, togglePrayer, test }}>
       {children}
       {playing && (
         <div style={{ position: 'fixed', left: 12, right: 12, bottom: 'calc(env(safe-area-inset-bottom, 0px) + 74px)', zIndex: 400, background: 'var(--nuit)', border: '1px solid rgba(201,168,76,0.5)', borderRadius: 16, padding: '14px 16px', boxShadow: '0 12px 40px rgba(0,0,0,0.45)', display: 'flex', alignItems: 'center', gap: 12, maxWidth: 520, margin: '0 auto' }}>
           <div style={{ fontSize: 28 }}>🕌</div>
           <div style={{ flex: 1, minWidth: 0 }}>
-            <p style={{ color: 'var(--or)', fontWeight: 800, margin: 0, fontSize: 15 }}>Adhan — {PRAYER_LABELS[playing]}</p>
+            <p style={{ color: 'var(--or)', fontWeight: 800, margin: 0, fontSize: 15 }}>{soundMode === 'discreet' ? 'Rappel' : 'Adhan'} — {PRAYER_LABELS[playing]}</p>
             <p style={{ color: 'rgba(243,236,224,0.7)', margin: '2px 0 0', fontSize: 12 }}>C’est l’heure de la prière 🤲</p>
           </div>
           <button onClick={stop} style={{ background: 'var(--or)', color: 'var(--nuit)', border: 'none', borderRadius: 10, padding: '9px 16px', fontWeight: 800, fontSize: 13, cursor: 'pointer' }}>Arrêter</button>

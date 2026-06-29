@@ -1,13 +1,13 @@
 'use client'
 import { useEffect, useState } from 'react'
 import { useAdhan } from '@/components/adhan/AdhanProvider'
-import { MUEZZINS, PRAYER_KEYS, PRAYER_LABELS } from '@/lib/adhan'
+import { MUEZZINS, CHIMES, PRAYER_KEYS, PRAYER_LABELS } from '@/lib/adhan'
 import { useLocation } from '@/components/location/LocationProvider'
 import { pushSupported, subscribePush, unsubscribePush } from '@/lib/push-client'
 
 // Réglages de l'adhan dans l'app (sonne quand le site/PWA est ouvert).
 export default function AdhanSettings() {
-  const { enabled, muezzin, volume, perPrayer, nextInfo, setEnabled, setMuezzin, setVolume, togglePrayer, test } = useAdhan()
+  const { enabled, muezzin, soundMode, chime, volume, perPrayer, nextInfo, setEnabled, setMuezzin, setSoundMode, setChime, setVolume, togglePrayer, test } = useAdhan()
   const { city } = useLocation()
 
   // Notifications Push (app fermée)
@@ -62,13 +62,34 @@ export default function AdhanSettings() {
             <p style={{ fontSize: 13, color: 'var(--foret)', fontWeight: 700, margin: 0 }}>⏱️ Prochain adhan : {PRAYER_LABELS[nextInfo.key]} à {nextInfo.time}</p>
           )}
 
-          {/* Muezzin */}
-          <label style={{ display: 'flex', flexDirection: 'column', gap: 5, fontSize: 12, fontWeight: 700, color: 'var(--foret)' }}>
-            Muezzin
-            <select value={muezzin} onChange={(e) => setMuezzin(e.target.value)} style={{ padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)' }}>
-              {MUEZZINS.map((m) => <option key={m.id} value={m.id}>{m.name}</option>)}
-            </select>
-          </label>
+          {/* Type de son : adhan complet ou sonnerie discrète (pour le travail) */}
+          <div>
+            <p style={{ fontSize: 12, fontWeight: 700, color: 'var(--foret)', margin: '0 0 8px' }}>Type de son</p>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+              <button onClick={() => setSoundMode('adhan')} style={{ padding: '12px', borderRadius: 12, border: `1.5px solid ${soundMode === 'adhan' ? 'var(--foret)' : 'rgba(27,67,50,0.25)'}`, background: soundMode === 'adhan' ? 'var(--foret)' : '#fff', color: soundMode === 'adhan' ? '#fff' : 'var(--foret)', fontSize: 13.5, fontWeight: 700, cursor: 'pointer' }}>🕌 Adhan complet</button>
+              <button onClick={() => setSoundMode('discreet')} style={{ padding: '12px', borderRadius: 12, border: `1.5px solid ${soundMode === 'discreet' ? 'var(--foret)' : 'rgba(27,67,50,0.25)'}`, background: soundMode === 'discreet' ? 'var(--foret)' : '#fff', color: soundMode === 'discreet' ? '#fff' : 'var(--foret)', fontSize: 13.5, fontWeight: 700, cursor: 'pointer' }}>🔔 Sonnerie discrète</button>
+            </div>
+            <p style={{ fontSize: 11.5, color: 'var(--texte-2)', margin: '6px 0 0' }}>
+              {soundMode === 'discreet' ? 'Idéal au travail : un son court et discret.' : 'L’appel à la prière complet.'}
+            </p>
+          </div>
+
+          {/* Muezzin (adhan) ou carillon (discret) */}
+          {soundMode === 'adhan' ? (
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 5, fontSize: 12, fontWeight: 700, color: 'var(--foret)' }}>
+              Muezzin
+              <select value={muezzin} onChange={(e) => setMuezzin(e.target.value)} style={{ padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)' }}>
+                {MUEZZINS.map((m) => <option key={m.id} value={m.id}>{m.name}</option>)}
+              </select>
+            </label>
+          ) : (
+            <label style={{ display: 'flex', flexDirection: 'column', gap: 5, fontSize: 12, fontWeight: 700, color: 'var(--foret)' }}>
+              Sonnerie discrète
+              <select value={chime} onChange={(e) => setChime(e.target.value)} style={{ padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)' }}>
+                {CHIMES.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
+              </select>
+            </label>
+          )}
 
           {/* Prières concernées */}
           <div>

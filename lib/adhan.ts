@@ -13,6 +13,14 @@ export const MUEZZINS: Muezzin[] = [
   { id: 'turkey', name: 'Adhan de Turquie', url: 'https://www.islamcan.com/audio/adhan/azan9.mp3' },
 ]
 
+// Sonneries discrètes (générées via Web Audio, pour les personnes au travail)
+export interface Chime { id: string; name: string }
+export const CHIMES: Chime[] = [
+  { id: 'soft', name: 'Carillon doux' },
+  { id: 'bell', name: 'Cloche légère' },
+  { id: 'beep', name: 'Bip discret' },
+]
+
 export const PRAYER_KEYS = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const
 export type PrayerKey = (typeof PRAYER_KEYS)[number]
 
