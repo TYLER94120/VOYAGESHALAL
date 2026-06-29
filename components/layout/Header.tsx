@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
@@ -7,8 +7,14 @@ import { useLocation } from '@/components/location/LocationProvider'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [isEN, setIsEN] = useState(false)
   const { t } = useLanguage()
   const { city, clearLocation } = useLocation()
+
+  // Branding selon le domaine : gohalaltravel.com → GoHalalTravel
+  useEffect(() => {
+    if (typeof window !== 'undefined' && window.location.hostname.includes('gohalaltravel')) setIsEN(true)
+  }, [])
 
   return (
     <header className="header-premium">
@@ -17,7 +23,7 @@ export default function Header() {
         <Link href="/" className="header-logo">
           <span className="logo-icon" style={{ color: '#c9a84c' }}>✦</span>
           <span className="logo-text">
-            VoyagesHalal<span className="logo-dot">.fr</span>
+            {isEN ? <>GoHalal<span className="logo-dot">Travel</span></> : <>VoyagesHalal<span className="logo-dot">.fr</span></>}
           </span>
         </Link>
 

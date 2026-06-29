@@ -38,6 +38,14 @@ export const metadata: Metadata = {
   },
   twitter: { card: 'summary_large_image' },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large' } },
+  // Lien croisé SEO entre les deux domaines (FR ↔ EN)
+  alternates: {
+    languages: {
+      fr: 'https://www.voyageshalal.fr',
+      en: 'https://www.gohalaltravel.com',
+      'x-default': 'https://www.gohalaltravel.com',
+    },
+  },
   appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: 'VoyagesHalal' },
   ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION && {
     verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION },

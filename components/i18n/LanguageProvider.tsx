@@ -1,6 +1,7 @@
 'use client'
 import { createContext, useContext, useEffect, useState, useCallback } from 'react'
 import { dict, moreDict, RTL_LANGS, type Lang } from '@/lib/i18n/translations'
+import { applyGoogleTranslate } from '@/components/i18n/GoogleTranslate'
 
 interface Ctx {
   lang: Lang
@@ -23,7 +24,19 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const saved = (typeof window !== 'undefined' && localStorage.getItem('vh_lang')) as Lang | null
-    if (saved && dict[saved]) setLangState(saved)
+    if (saved && dict[saved]) { setLangState(saved); return }
+    // Première visite sans préférence → langue par défaut selon le DOMAINE.
+    // gohalaltravel.com → anglais ; voyageshalal.fr → français.
+    if (typeof window === 'undefined') return
+    const domainLang: Lang = window.location.hostname.includes('gohalaltravel') ? 'en' : 'fr'
+    if (domainLang === 'fr') return
+    localStorage.setItem('vh_lang', domainLang)
+    setLangState(domainLang)
+    // Applique la traduction de toute la page une seule fois (puis rechargement)
+    if (!document.cookie.includes('googtrans')) {
+      applyGoogleTranslate(domainLang)
+      window.location.reload()
+    }
   }, [])
 
   useEffect(() => {
