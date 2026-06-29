@@ -6,8 +6,8 @@ import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useToast } from '@/components/Toast'
 
 const TABS = [
-  { id: 'restaurants', icon: '🍽', label: 'Restaurants' },
   { id: 'mosquees', icon: '🕌', label: 'Mosquées' },
+  { id: 'restaurants', icon: '🍽', label: 'Restaurants' },
   { id: 'hotels', icon: '🏨', label: 'Hôtels' },
   { id: 'activites', icon: '🎯', label: 'À faire' },
   { id: 'pratique', icon: 'ℹ️', label: 'Pratique' },
@@ -21,7 +21,7 @@ const CATEGORY_EMOJI: Record<string, string> = {
 }
 
 export default function VilleDesktop({ ville }: { ville: any }) {
-  const [activeTab, setActiveTab] = useState('restaurants')
+  const [activeTab, setActiveTab] = useState('mosquees')
   const [activeFilter, setActiveFilter] = useState('Tous')
   const toast = useToast()
 
@@ -77,25 +77,12 @@ export default function VilleDesktop({ ville }: { ville: any }) {
 
       {/* PARTIE HAUT (sombre) — toute la navigation : boutons + intro + onglets */}
       <div style={{ background: 'var(--nuit)' }}>
-        <div style={{ maxWidth: WRAP, margin: '0 auto', padding: '18px 24px 26px' }}>
-          {/* 2 boutons d'action */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-            {[
-              { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Voir sur la carte', primary: true },
-              { href: `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`, icon: '✈️', label: `Vols vers ${ville.nom}` },
-            ].map((a) => (
-              <a key={a.label} href={a.href} target="_blank" rel="noopener noreferrer"
-                className={`ville-action${a.primary ? ' ville-action-primary' : ''}`}>
-                <span className="ico">{a.icon}</span>{a.label}
-              </a>
-            ))}
-          </div>
+        <div style={{ maxWidth: WRAP, margin: '0 auto', padding: '20px 24px 26px' }}>
+          {/* intro courte — en tête du bloc */}
+          {descShort && <p style={{ textAlign: 'center', color: 'rgba(253,250,243,0.72)', fontSize: '14.5px', lineHeight: 1.7, maxWidth: 700, margin: '0 auto 18px' }}>{descShort}</p>}
 
-          {/* intro courte */}
-          {descShort && <p style={{ textAlign: 'center', color: 'rgba(253,250,243,0.72)', fontSize: '14.5px', lineHeight: 1.7, maxWidth: 700, margin: '18px auto 0' }}>{descShort}</p>}
-
-          {/* ONGLETS — grille 2 colonnes, tous visibles dès l'ouverture */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginTop: '18px' }}>
+          {/* ONGLETS par priorité (Mosquées, Restaurants…) — grille 2 colonnes, tous visibles */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
             {TABS.map((tab) => {
               const active = activeTab === tab.id
               const count = tabCounts[tab.id]
@@ -106,6 +93,19 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 </button>
               )
             })}
+          </div>
+
+          {/* BOUTONS Carte + Vols — en dernier (priorité basse) */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginTop: '10px' }}>
+            {[
+              { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Voir sur la carte', primary: true },
+              { href: `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`, icon: '✈️', label: `Vols vers ${ville.nom}` },
+            ].map((a) => (
+              <a key={a.label} href={a.href} target="_blank" rel="noopener noreferrer"
+                className={`ville-action${a.primary ? ' ville-action-primary' : ''}`}>
+                <span className="ico">{a.icon}</span>{a.label}
+              </a>
+            ))}
           </div>
         </div>
       </div>
