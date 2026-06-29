@@ -23,17 +23,16 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLangState] = useState<Lang>('fr')
 
   useEffect(() => {
-    const saved = (typeof window !== 'undefined' && localStorage.getItem('vh_lang')) as Lang | null
-    if (saved && dict[saved]) { setLangState(saved); return }
-    // Première visite sans préférence → langue par défaut selon le DOMAINE.
-    // gohalaltravel.com → anglais ; voyageshalal.fr → français.
     if (typeof window === 'undefined') return
+    const explicit = localStorage.getItem('vh_lang_explicit') === '1'
+    const saved = localStorage.getItem('vh_lang') as Lang | null
+    // Choix explicite de l'utilisateur → on le respecte
+    if (explicit && saved && dict[saved]) { setLangState(saved); return }
+    // Sinon : langue par défaut selon le DOMAINE (gohalaltravel.com → en, voyageshalal.fr → fr)
     const domainLang: Lang = window.location.hostname.includes('gohalaltravel') ? 'en' : 'fr'
-    if (domainLang === 'fr') return
-    localStorage.setItem('vh_lang', domainLang)
     setLangState(domainLang)
-    // Applique la traduction de toute la page une seule fois (puis rechargement)
-    if (!document.cookie.includes('googtrans')) {
+    localStorage.setItem('vh_lang', domainLang)
+    if (domainLang !== 'fr' && !document.cookie.includes('googtrans')) {
       applyGoogleTranslate(domainLang)
       window.location.reload()
     }
@@ -47,7 +46,10 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   const setLang = useCallback((l: Lang) => {
     setLangState(l)
-    if (typeof window !== 'undefined') localStorage.setItem('vh_lang', l)
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('vh_lang', l)
+      localStorage.setItem('vh_lang_explicit', '1') // choix explicite de l'utilisateur
+    }
   }, [])
 
   const t = useCallback((key: string) => lookup(lang, key), [lang])
