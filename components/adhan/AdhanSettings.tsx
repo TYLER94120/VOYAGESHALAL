@@ -1,14 +1,44 @@
 'use client'
+import { useEffect, useState } from 'react'
 import { useAdhan } from '@/components/adhan/AdhanProvider'
 import { MUEZZINS, PRAYER_KEYS, PRAYER_LABELS } from '@/lib/adhan'
 import { useLocation } from '@/components/location/LocationProvider'
+import { pushSupported, subscribePush, unsubscribePush } from '@/lib/push-client'
 
 // Réglages de l'adhan dans l'app (sonne quand le site/PWA est ouvert).
 export default function AdhanSettings() {
   const { enabled, muezzin, volume, perPrayer, nextInfo, setEnabled, setMuezzin, setVolume, togglePrayer, test } = useAdhan()
   const { city } = useLocation()
 
+  // Notifications Push (app fermée)
+  const [pushOn, setPushOn] = useState(false)
+  const [pushMsg, setPushMsg] = useState('')
+  const [pushBusy, setPushBusy] = useState(false)
+  const canPush = pushSupported()
+  useEffect(() => { try { setPushOn(localStorage.getItem('vh_push_on') === '1') } catch {} }, [])
+
+  const togglePush = async () => {
+    if (pushBusy) return
+    setPushBusy(true); setPushMsg('')
+    try {
+      if (pushOn) {
+        await unsubscribePush(); setPushOn(false); localStorage.setItem('vh_push_on', '0')
+      } else {
+        if (!city || city.lat == null || city.lng == null) { setPushMsg('Choisissez d’abord une ville.'); return }
+        const method = Number(localStorage.getItem('vh_prayer_method') || 3)
+        const school = Number(localStorage.getItem('vh_prayer_school') || 0)
+        const prayers = PRAYER_KEYS.filter((k) => perPrayer[k])
+        const res = await subscribePush({ lat: city.lat, lng: city.lng, method, school, prayers, city: city.nom })
+        if (res.ok) { setPushOn(true); localStorage.setItem('vh_push_on', '1'); setPushMsg('✓ Notifications activées.') }
+        else if (res.reason === 'denied') setPushMsg('Notifications refusées dans le navigateur.')
+        else if (res.reason === 'not_configured') setPushMsg('Service non encore configuré (serveur).')
+        else setPushMsg('Notifications indisponibles sur cet appareil.')
+      }
+    } finally { setPushBusy(false) }
+  }
+
   return (
+   <>
     <div style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.12)', borderRadius: 16, padding: 18, marginBottom: 18, boxShadow: '0 4px 16px rgba(11,26,15,0.05)' }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
         <div>
@@ -67,10 +97,30 @@ export default function AdhanSettings() {
           </button>
 
           <p style={{ fontSize: 11.5, color: 'var(--texte-2)', lineHeight: 1.6, margin: 0 }}>
-            ℹ️ L’adhan sonne tant que le site (ou l’app installée) reste ouvert. Pour qu’il sonne app fermée, une vraie application native serait nécessaire (voir « Installer l’app »).
+            ℹ️ L’adhan sonne tant que le site (ou l’app installée) reste ouvert. Pour une alerte app fermée, activez les notifications ci-dessous.
           </p>
         </div>
       )}
     </div>
+
+    {/* Notifications Push — alerte de prière même app fermée */}
+    {canPush && (
+      <div style={{ background: '#fff', border: '1px solid rgba(27,67,50,0.12)', borderRadius: 16, padding: 18, marginBottom: 18, boxShadow: '0 4px 16px rgba(11,26,15,0.05)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12 }}>
+          <div>
+            <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, color: 'var(--foret)', fontSize: 18, margin: 0 }}>🔔 Notifications de prière</p>
+            <p style={{ color: 'var(--texte-2)', fontSize: 12.5, margin: '3px 0 0' }}>Alerte à l’heure de prière, <strong>même app fermée</strong>.</p>
+          </div>
+          <button onClick={togglePush} disabled={pushBusy} aria-label="Activer les notifications" style={{ flexShrink: 0, width: 52, height: 30, borderRadius: 20, border: 'none', cursor: 'pointer', background: pushOn ? 'var(--foret)' : 'rgba(11,26,15,0.18)', position: 'relative', transition: 'background .2s' }}>
+            <span style={{ position: 'absolute', top: 3, left: pushOn ? 25 : 3, width: 24, height: 24, borderRadius: '50%', background: '#fff', transition: 'left .2s', boxShadow: '0 1px 4px rgba(0,0,0,0.3)' }} />
+          </button>
+        </div>
+        {pushMsg && <p style={{ fontSize: 12.5, color: 'var(--texte-2)', margin: '10px 0 0' }}>{pushMsg}</p>}
+        <p style={{ fontSize: 11.5, color: 'var(--texte-2)', lineHeight: 1.6, margin: '10px 0 0' }}>
+          📱 Sur iPhone, installez d’abord l’app (« Sur l’écran d’accueil ») pour recevoir les notifications. Le son sera celui du système (pas l’adhan).
+        </p>
+      </div>
+    )}
+   </>
   )
 }
