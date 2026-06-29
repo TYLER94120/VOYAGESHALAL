@@ -1,6 +1,7 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useToast } from '@/components/Toast'
@@ -21,13 +22,16 @@ const CATEGORY_EMOJI: Record<string, string> = {
 }
 
 export default function VilleDesktop({ ville }: { ville: any }) {
-  const [activeTab, setActiveTab] = useState('mosquees')
+  const [activeTab, setActiveTab] = useState('restaurants')
   const [activeFilter, setActiveFilter] = useState('Tous')
   const toast = useToast()
+  const router = useRouter()
   const contentRef = useRef<HTMLDivElement>(null)
 
-  // Clic sur un onglet → on change ET on descend vers le contenu correspondant
+  // Clic sur un onglet → Mosquées renvoie vers le chercheur de mosquée proche ;
+  // les autres changent l'onglet et descendent vers le contenu.
   const goToTab = (id: string) => {
+    if (id === 'mosquees') { router.push('/mosquee-proche'); return }
     setActiveTab(id)
     setTimeout(() => contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
   }
