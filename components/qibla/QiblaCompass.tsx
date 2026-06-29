@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { useLocation } from '@/components/location/LocationProvider'
+import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 
 // Coordonnées de La Mecque (Kaaba)
 const MECCA_LAT = 21.4225
@@ -25,6 +26,7 @@ export default function QiblaCompass() {
   const [distance, setDistance] = useState<number | null>(null)
   const [accuracy, setAccuracy] = useState<'high' | 'low' | null>(null)
   const [aligned, setAligned] = useState(false)
+  const [geoErr, setGeoErr] = useState<GeoError | null>(null)
   const needleAngle = qiblaAngle !== null ? qiblaAngle - compassAngle : 0
 
   function calcDistance(lat: number, lng: number): number {
@@ -62,22 +64,18 @@ export default function QiblaCompass() {
         return
       }
     }
-    if (!navigator.geolocation) {
+    setGeoErr(null)
+    try {
+      const { lat: latitude, lng: longitude } = await getPosition()
+      setQiblaAngle(calculateQibla(latitude, longitude))
+      setDistance(calcDistance(latitude, longitude))
+      setAccuracy('low')
+      getCityName(latitude, longitude)
+      setStep('compass')
+    } catch (code) {
+      setGeoErr(describeGeoError(code as GeoErrorCode))
       setStep('error')
-      return
     }
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        const { latitude, longitude, accuracy: acc } = pos.coords
-        setQiblaAngle(calculateQibla(latitude, longitude))
-        setDistance(calcDistance(latitude, longitude))
-        setAccuracy(acc < 50 ? 'high' : 'low')
-        getCityName(latitude, longitude)
-        setStep('compass')
-      },
-      () => setStep('error'),
-      { enableHighAccuracy: true, timeout: 10000 }
-    )
   }
 
   // Ville mémorisée → on affiche directement la direction de la Qibla (sans redemander la position).
@@ -191,10 +189,9 @@ export default function QiblaCompass() {
 
       {step === 'error' && (
         <div style={{ textAlign: 'center', padding: '2rem' }}>
-          <p style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>📍</p>
-          <h3 style={{ fontFamily: "'Playfair Display', serif", color: 'var(--foret)', marginBottom: '0.5rem' }}>Position non disponible</h3>
-          <p style={{ color: 'var(--texte-2)', fontSize: '14px', marginBottom: '1.5rem' }}>Vérifiez que la localisation est activée dans les paramètres de votre téléphone.</p>
-          <button onClick={() => setStep('idle')} style={{ padding: '0.75rem 2rem', background: 'var(--foret)', color: 'white', border: 'none', borderRadius: '12px', fontWeight: 600, cursor: 'pointer' }}>Réessayer</button>
+          <h3 style={{ fontFamily: "'Playfair Display', serif", color: 'var(--foret)', marginBottom: '0.5rem' }}>{geoErr?.message ?? '📍 Position non disponible'}</h3>
+          <p style={{ color: 'var(--texte-2)', fontSize: '14px', margin: '0 auto 1.5rem', maxWidth: 420 }}>{geoErr?.detail ?? 'Vérifiez que la localisation est activée dans les paramètres de votre téléphone.'}</p>
+          <button onClick={() => { setGeoErr(null); setStep('idle') }} style={{ padding: '0.75rem 2rem', background: 'var(--foret)', color: 'white', border: 'none', borderRadius: '12px', fontWeight: 600, cursor: 'pointer' }}>Réessayer</button>
         </div>
       )}
 

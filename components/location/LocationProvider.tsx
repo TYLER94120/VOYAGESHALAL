@@ -1,6 +1,7 @@
 'use client'
 import { createContext, useContext, useEffect, useState, useCallback } from 'react'
 import cityCoords from '@/lib/cityCoords.json'
+import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 
 export interface City {
   slug: string
@@ -17,11 +18,12 @@ interface Ctx {
   clearLocation: () => void
   geolocate: () => Promise<City | null>
   geoStatus: 'idle' | 'loading' | 'error'
+  geoError: GeoError | null
   ready: boolean
 }
 
 const LocationContext = createContext<Ctx>({
-  city: null, setCity: () => {}, setCityBySlug: () => null, clearLocation: () => {}, geolocate: async () => null, geoStatus: 'idle', ready: false,
+  city: null, setCity: () => {}, setCityBySlug: () => null, clearLocation: () => {}, geolocate: async () => null, geoStatus: 'idle', geoError: null, ready: false,
 })
 
 const COORDS = cityCoords as City[]
@@ -50,6 +52,7 @@ export function nearestCity(lat: number, lng: number): City {
 export function LocationProvider({ children }: { children: React.ReactNode }) {
   const [city, setCityState] = useState<City | null>(null)
   const [geoStatus, setGeoStatus] = useState<'idle' | 'loading' | 'error'>('idle')
+  const [geoError, setGeoError] = useState<GeoError | null>(null)
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
@@ -78,25 +81,21 @@ export function LocationProvider({ children }: { children: React.ReactNode }) {
   }, [])
 
   const geolocate = useCallback(async (): Promise<City | null> => {
-    if (typeof navigator === 'undefined' || !navigator.geolocation) { setGeoStatus('error'); return null }
-    setGeoStatus('loading')
-    return new Promise((resolve) => {
-      navigator.geolocation.getCurrentPosition(
-        (pos) => {
-          // On garde les coordonnées GPS RÉELLES de l'utilisateur (précis pour mosquées/qibla/prière),
-          // mais le nom/slug/pays viennent de la ville connue la plus proche (pour l'affichage + redirections).
-          const near = nearestCity(pos.coords.latitude, pos.coords.longitude)
-          const c: City = { ...near, lat: pos.coords.latitude, lng: pos.coords.longitude }
-          setCity(c); setGeoStatus('idle'); resolve(c)
-        },
-        () => { setGeoStatus('error'); resolve(null) },
-        { timeout: 10000 }
-      )
-    })
+    setGeoStatus('loading'); setGeoError(null)
+    try {
+      const { lat, lng } = await getPosition()
+      // On garde les coordonnées GPS RÉELLES de l'utilisateur (précis pour mosquées/qibla/prière),
+      // mais le nom/slug/pays viennent de la ville connue la plus proche (pour l'affichage + redirections).
+      const near = nearestCity(lat, lng)
+      const c: City = { ...near, lat, lng }
+      setCity(c); setGeoStatus('idle'); return c
+    } catch (code) {
+      setGeoError(describeGeoError(code as GeoErrorCode)); setGeoStatus('error'); return null
+    }
   }, [setCity])
 
   return (
-    <LocationContext.Provider value={{ city, setCity, setCityBySlug, clearLocation, geolocate, geoStatus, ready }}>{children}</LocationContext.Provider>
+    <LocationContext.Provider value={{ city, setCity, setCityBySlug, clearLocation, geolocate, geoStatus, geoError, ready }}>{children}</LocationContext.Provider>
   )
 }
 

@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap, Marker } from 'leaflet'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useLocation } from '@/components/location/LocationProvider'
+import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 
 interface Mosque {
   id: number
@@ -17,6 +18,7 @@ interface Mosque {
 export default function MosqueeProchePage() {
   const { city, clearLocation } = useLocation()
   const [step, setStep] = useState<'idle' | 'loading' | 'results' | 'error'>('idle')
+  const [geoErr, setGeoErr] = useState<GeoError | null>(null)
   const [mosques, setMosques] = useState<Mosque[]>([])
   const [selectedMosque, setSelectedMosque] = useState<Mosque | null>(null)
   const [radius, setRadius] = useState(2000)
@@ -82,50 +84,15 @@ export default function MosqueeProchePage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [city])
 
-  function findMosques() {
-    setStep('loading')
-    if (!navigator.geolocation) {
+  async function findMosques() {
+    setStep('loading'); setGeoErr(null)
+    try {
+      const { lat, lng } = await getPosition()
+      await searchAt(lat, lng)
+    } catch (code) {
+      setGeoErr(describeGeoError(code as GeoErrorCode))
       setStep('error')
-      return
     }
-    navigator.geolocation.getCurrentPosition(
-      async (pos) => {
-        const { latitude: lat, longitude: lng } = pos.coords
-        const query = `[out:json][timeout:25];(node["amenity"="place_of_worship"]["religion"="muslim"](around:${radius},${lat},${lng});way["amenity"="place_of_worship"]["religion"="muslim"](around:${radius},${lat},${lng});relation["amenity"="place_of_worship"]["religion"="muslim"](around:${radius},${lat},${lng}););out center;`
-        try {
-          const res = await fetch('https://overpass-api.de/api/interpreter', {
-            method: 'POST',
-            body: `data=${encodeURIComponent(query)}`,
-          })
-          const data = await res.json()
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          const results: Mosque[] = (data.elements as any[])
-            .map((el) => {
-              const elLat = el.lat ?? el.center?.lat
-              const elLng = el.lon ?? el.center?.lon
-              if (!elLat || !elLng) return null
-              return {
-                id: el.id,
-                lat: elLat,
-                lng: elLng,
-                name: el.tags?.name || el.tags?.['name:fr'] || el.tags?.['name:ar'] || 'Mosquée',
-                distance: haversine(lat, lng, elLat, elLng),
-                address: [el.tags?.['addr:housenumber'], el.tags?.['addr:street'], el.tags?.['addr:city']].filter(Boolean).join(' ') || undefined,
-              } as Mosque
-            })
-            .filter((m): m is Mosque => m !== null)
-            .sort((a, b) => a.distance - b.distance)
-            .slice(0, 20)
-          setMosques(results)
-          setStep('results')
-          setTimeout(() => initMap(lat, lng, results), 100)
-        } catch {
-          setStep('error')
-        }
-      },
-      () => setStep('error'),
-      { enableHighAccuracy: true, timeout: 10000 }
-    )
   }
 
   async function initMap(lat: number, lng: number, list: Mosque[]) {
@@ -269,10 +236,12 @@ export default function MosqueeProchePage() {
 
         {step === 'error' && (
           <div style={{ textAlign: 'center', padding: '3rem 1rem' }}>
-            <p style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>📍</p>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", color: 'var(--foret)' }}>Localisation impossible</h3>
-            <p style={{ color: 'var(--texte-2)', fontSize: '14px', marginBottom: '1.5rem' }}>Activez la localisation dans les paramètres de votre téléphone.</p>
-            <button onClick={() => setStep('idle')} style={{ padding: '0.75rem 2rem', background: 'var(--foret)', color: 'white', border: 'none', borderRadius: '12px', fontWeight: 600, cursor: 'pointer' }}>Réessayer</button>
+            <h3 style={{ fontFamily: "'Playfair Display', serif", color: 'var(--foret)', fontSize: '1.3rem' }}>{geoErr?.message ?? '📍 Localisation impossible'}</h3>
+            <p style={{ color: 'var(--texte-2)', fontSize: '14px', margin: '0.5rem auto 1.5rem', maxWidth: 420 }}>{geoErr?.detail ?? 'Activez la localisation, ou choisissez une ville.'}</p>
+            <div style={{ display: 'flex', gap: 10, justifyContent: 'center', flexWrap: 'wrap' }}>
+              <button onClick={() => { setGeoErr(null); setStep('idle') }} style={{ padding: '0.75rem 1.5rem', background: 'var(--foret)', color: 'white', border: 'none', borderRadius: '12px', fontWeight: 600, cursor: 'pointer' }}>Réessayer</button>
+              <a href="/destinations?all=1" style={{ padding: '0.75rem 1.5rem', background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', borderRadius: '12px', fontWeight: 600, textDecoration: 'none' }}>Choisir une ville</a>
+            </div>
           </div>
         )}
       </section>
