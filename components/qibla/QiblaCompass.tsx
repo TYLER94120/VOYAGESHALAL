@@ -1,5 +1,7 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import 'leaflet/dist/leaflet.css'
+import type { Map as LeafletMap } from 'leaflet'
 import { useLocation } from '@/components/location/LocationProvider'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 
@@ -13,196 +15,202 @@ function calculateQibla(userLat: number, userLng: number): number {
   const Δλ = ((MECCA_LNG - userLng) * Math.PI) / 180
   const y = Math.sin(Δλ) * Math.cos(φ2)
   const x = Math.cos(φ1) * Math.sin(φ2) - Math.sin(φ1) * Math.cos(φ2) * Math.cos(Δλ)
-  const θ = Math.atan2(y, x)
-  return ((θ * 180) / Math.PI + 360) % 360
+  return ((Math.atan2(y, x) * 180) / Math.PI + 360) % 360
 }
+
+function calcDistance(lat: number, lng: number): number {
+  const R = 6371
+  const dLat = ((MECCA_LAT - lat) * Math.PI) / 180
+  const dLng = ((MECCA_LNG - lng) * Math.PI) / 180
+  const a = Math.sin(dLat / 2) ** 2 + Math.cos((lat * Math.PI) / 180) * Math.cos((MECCA_LAT * Math.PI) / 180) * Math.sin(dLng / 2) ** 2
+  return Math.round(R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)))
+}
+
+function getCardinal(deg: number): string {
+  const dirs = ['Nord', 'Nord-Est', 'Est', 'Sud-Est', 'Sud', 'Sud-Ouest', 'Ouest', 'Nord-Ouest']
+  return dirs[Math.round(deg / 45) % 8]
+}
+
+interface Pos { lat: number; lng: number; label: string }
+type Mode = 'boussole' | 'direction' | 'carte'
 
 export default function QiblaCompass() {
   const { city } = useLocation()
-  const [step, setStep] = useState<'idle' | 'locating' | 'compass' | 'error'>('idle')
-  const [qiblaAngle, setQiblaAngle] = useState<number | null>(null)
-  const [compassAngle, setCompassAngle] = useState(0)
-  const [userCity, setUserCity] = useState('')
-  const [distance, setDistance] = useState<number | null>(null)
-  const [accuracy, setAccuracy] = useState<'high' | 'low' | null>(null)
-  const [aligned, setAligned] = useState(false)
+  const [pos, setPos] = useState<Pos | null>(null)
+  const [loading, setLoading] = useState(false)
   const [geoErr, setGeoErr] = useState<GeoError | null>(null)
-  const needleAngle = qiblaAngle !== null ? qiblaAngle - compassAngle : 0
+  const [mode, setMode] = useState<Mode>('boussole')
 
-  function calcDistance(lat: number, lng: number): number {
-    const R = 6371
-    const dLat = ((MECCA_LAT - lat) * Math.PI) / 180
-    const dLng = ((MECCA_LNG - lng) * Math.PI) / 180
-    const a =
-      Math.sin(dLat / 2) ** 2 +
-      Math.cos((lat * Math.PI) / 180) * Math.cos((MECCA_LAT * Math.PI) / 180) * Math.sin(dLng / 2) ** 2
-    return Math.round(R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a)))
-  }
+  // Boussole live
+  const [compassAngle, setCompassAngle] = useState(0)
+  const [hasSensor, setHasSensor] = useState(false)
+  const [sensorAsked, setSensorAsked] = useState(false)
 
-  async function getCityName(lat: number, lng: number) {
-    try {
-      const r = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`)
-      const d = await r.json()
-      setUserCity(d.address?.city || d.address?.town || d.address?.village || d.address?.county || '')
-    } catch {
-      /* silencieux */
-    }
-  }
+  const qibla = pos ? calculateQibla(pos.lat, pos.lng) : null
+  const distance = pos ? calcDistance(pos.lat, pos.lng) : null
+  const needleAngle = qibla !== null ? qibla - compassAngle : 0
+  const aligned = qibla !== null && (Math.abs(((needleAngle % 360) + 360) % 360) <= 6 || Math.abs(((needleAngle % 360) + 360) % 360) >= 354)
 
-  async function startQibla() {
-    setStep('locating')
-    const DOE = DeviceOrientationEvent as unknown as { requestPermission?: () => Promise<string> }
-    if (typeof DOE.requestPermission === 'function') {
-      try {
-        const perm = await DOE.requestPermission()
-        if (perm !== 'granted') {
-          setStep('error')
-          return
-        }
-      } catch {
-        setStep('error')
-        return
-      }
-    }
-    setGeoErr(null)
-    try {
-      const { lat: latitude, lng: longitude } = await getPosition()
-      setQiblaAngle(calculateQibla(latitude, longitude))
-      setDistance(calcDistance(latitude, longitude))
-      setAccuracy('low')
-      getCityName(latitude, longitude)
-      setStep('compass')
-    } catch (code) {
-      setGeoErr(describeGeoError(code as GeoErrorCode))
-      setStep('error')
-    }
-  }
-
-  // Ville mémorisée → on affiche directement la direction de la Qibla (sans redemander la position).
-  // La boussole live (capteur) reste activable via le bouton sur mobile.
+  // Ville mémorisée → position de départ automatique
   useEffect(() => {
-    if (city && city.lat != null && city.lng != null && qiblaAngle === null && step === 'idle') {
-      setQiblaAngle(calculateQibla(city.lat, city.lng))
-      setDistance(calcDistance(city.lat, city.lng))
-      setUserCity(city.nom)
-      setStep('compass')
+    if (city && city.lat != null && city.lng != null && !pos) {
+      setPos({ lat: city.lat, lng: city.lng, label: city.nom })
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [city])
 
-  useEffect(() => {
-    if (step !== 'compass') return
+  // Position GPS précise
+  const usePrecise = async () => {
+    setLoading(true); setGeoErr(null)
+    try {
+      const { lat, lng } = await getPosition({ highAccuracy: true })
+      setPos({ lat, lng, label: 'Ma position exacte' })
+    } catch (code) {
+      setGeoErr(describeGeoError(code as GeoErrorCode))
+    } finally {
+      setLoading(false)
+    }
+  }
+
+  // Capteur de boussole (orientation appareil) — permission iOS au clic
+  const startSensor = async () => {
+    setSensorAsked(true)
+    const DOE = DeviceOrientationEvent as unknown as { requestPermission?: () => Promise<string> }
+    if (typeof DOE.requestPermission === 'function') {
+      try { if ((await DOE.requestPermission()) !== 'granted') return } catch { return }
+    }
     const handler = (e: DeviceOrientationEvent) => {
       const ev = e as DeviceOrientationEvent & { webkitCompassHeading?: number }
-      const heading = ev.webkitCompassHeading ?? (e.alpha ? 360 - e.alpha : 0)
-      setCompassAngle(heading)
+      const heading = ev.webkitCompassHeading ?? (e.alpha != null ? 360 - e.alpha : null)
+      if (heading != null) { setHasSensor(true); setCompassAngle(heading) }
     }
     window.addEventListener('deviceorientationabsolute', handler, true)
     window.addEventListener('deviceorientation', handler, true)
-    return () => {
-      window.removeEventListener('deviceorientationabsolute', handler, true)
-      window.removeEventListener('deviceorientation', handler, true)
-    }
-  }, [step])
+  }
 
-  // Feedback d'alignement (±5°)
   useEffect(() => {
-    if (step !== 'compass' || qiblaAngle === null) return
-    const diff = Math.abs(((needleAngle % 360) + 360) % 360)
-    const isAligned = diff <= 5 || diff >= 355
-    if (isAligned && !aligned) {
-      setAligned(true)
-      if (typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(200)
-    } else if (!isAligned && aligned) {
-      setAligned(false)
-    }
-  }, [needleAngle, step, qiblaAngle, aligned])
+    if (aligned && typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(120)
+  }, [aligned])
 
-  function getCardinal(deg: number): string {
-    const dirs = ['Nord', 'Nord-Est', 'Est', 'Sud-Est', 'Sud', 'Sud-Ouest', 'Ouest', 'Nord-Ouest']
-    return dirs[Math.round(deg / 45) % 8]
+  // ----- Pas encore de position -----
+  if (!pos) {
+    return (
+      <section style={{ maxWidth: 480, margin: '0 auto', padding: '2rem 1.5rem', textAlign: 'center' }}>
+        <div style={{ width: 200, height: 200, margin: '0 auto 1.5rem', position: 'relative', opacity: 0.4 }}>
+          <CompassSVG angle={0} animated={false} />
+        </div>
+        <button onClick={usePrecise} disabled={loading} style={btnPrimary}>
+          {loading ? '📍 Localisation…' : '📍 Trouver la Qibla (position précise)'}
+        </button>
+        {geoErr && (
+          <div style={{ background: 'rgba(255,100,100,0.12)', border: '1px solid rgba(255,100,100,0.3)', borderRadius: 12, padding: '12px 16px', marginTop: 16, textAlign: 'left' }}>
+            <p style={{ color: '#b91c1c', fontWeight: 700, margin: 0, fontSize: 14 }}>{geoErr.message}</p>
+            <p style={{ color: 'var(--texte-2)', fontSize: 13, margin: '4px 0 0' }}>{geoErr.detail}</p>
+          </div>
+        )}
+        <p style={{ color: 'var(--texte-2)', fontSize: 13, marginTop: 14 }}>Votre position GPS reste privée — jamais stockée ni partagée.</p>
+      </section>
+    )
   }
 
   return (
-    <section style={{ maxWidth: '480px', margin: '0 auto', padding: '2rem 1.5rem' }}>
-      {step === 'idle' && (
-        <div style={{ textAlign: 'center' }}>
-          <div style={{ width: 220, height: 220, margin: '0 auto 2rem', position: 'relative' }}>
-            <CompassSVG angle={0} animated={false} />
-          </div>
-          <button onClick={startQibla} className="btn-cta-primary" style={btnPrimary}>📍 Trouver la Qibla depuis ma position</button>
-          <p style={{ color: 'var(--texte-2)', fontSize: '13px', marginTop: '1rem' }}>
-            Votre position GPS reste privée — jamais stockée ni partagée.
-          </p>
-        </div>
-      )}
+    <section style={{ maxWidth: 480, margin: '0 auto', padding: '1.5rem 1.5rem' }}>
+      {/* Sélecteur de mode */}
+      <div style={{ display: 'flex', gap: 6, background: '#fff', padding: 6, borderRadius: 14, border: '1px solid rgba(27,67,50,0.12)', marginBottom: 20 }}>
+        {([['boussole', '🧭 Boussole'], ['direction', '📐 Direction'], ['carte', '🗺️ Carte']] as [Mode, string][]).map(([m, label]) => (
+          <button key={m} onClick={() => setMode(m)} style={{ flex: 1, padding: '10px 8px', borderRadius: 10, border: 'none', cursor: 'pointer', fontSize: 13.5, fontWeight: 700, background: mode === m ? 'var(--foret)' : 'transparent', color: mode === m ? '#fff' : 'var(--texte-2)' }}>
+            {label}
+          </button>
+        ))}
+      </div>
 
-      {step === 'locating' && (
-        <div style={{ textAlign: 'center', padding: '3rem 0' }}>
-          <div style={{ fontSize: '3rem', marginBottom: '1rem', animation: 'qspin 1s linear infinite' }}>🧭</div>
-          <p style={{ color: 'var(--foret)', fontWeight: 600 }}>Localisation en cours…</p>
-          <p style={{ color: 'var(--texte-2)', fontSize: '13px', marginTop: '0.5rem' }}>Autorisez l&apos;accès à votre position</p>
-          <style>{`@keyframes qspin { to { transform: rotate(360deg); } }`}</style>
-        </div>
-      )}
+      {/* En-tête commun : angle + distance */}
+      <div style={{ background: 'var(--nuit)', borderRadius: 18, padding: '1.25rem', marginBottom: 18, textAlign: 'center', border: '1px solid rgba(201,168,76,0.3)' }}>
+        <p style={{ color: 'var(--or)', fontSize: 11, fontWeight: 600, letterSpacing: 2, textTransform: 'uppercase', margin: 0 }}>Direction Qibla</p>
+        <p style={{ fontFamily: "'Playfair Display', serif", fontSize: '2.6rem', fontWeight: 900, color: '#fff', margin: '2px 0 0', lineHeight: 1 }}>{Math.round(qibla!)}°</p>
+        <p style={{ color: 'var(--or-clair)', fontSize: 15, margin: '2px 0 0' }}>{getCardinal(qibla!)} · 📍 {pos.label}</p>
+        {distance && <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 13, margin: '6px 0 0' }}>🕋 La Mecque est à {distance.toLocaleString('fr-FR')} km</p>}
+        <button onClick={usePrecise} style={{ marginTop: 10, background: 'none', border: '1px solid rgba(201,168,76,0.4)', color: 'var(--or-clair)', borderRadius: 20, padding: '5px 14px', fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>📍 Affiner avec ma position exacte</button>
+      </div>
 
-      {step === 'compass' && qiblaAngle !== null && (
+      {/* MODE BOUSSOLE — compas live */}
+      {mode === 'boussole' && (
         <div style={{ textAlign: 'center' }}>
           <div style={{ width: 260, height: 260, margin: '0 auto 1rem', position: 'relative' }}>
             <CompassSVG angle={needleAngle} animated />
           </div>
-
-          {aligned && (
-            <p style={{ color: 'var(--or)', fontWeight: 700, fontSize: '1.1rem', marginBottom: '1rem', fontFamily: "'Playfair Display', serif" }}>
-              Vous êtes aligné ✦
-            </p>
+          {!sensorAsked && (
+            <button onClick={startSensor} style={btnPrimary}>🧭 Activer la boussole</button>
           )}
-
-          <div style={{ background: 'var(--nuit)', borderRadius: '20px', padding: '1.5rem', marginBottom: '1rem', border: '1px solid rgba(201,168,76,0.3)' }}>
-            <p style={{ color: 'var(--or)', fontSize: '11px', fontWeight: 600, letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '0.5rem' }}>Direction Qibla</p>
-            <p style={{ fontFamily: "'Playfair Display', serif", fontSize: '3rem', fontWeight: 900, color: 'white', margin: 0, lineHeight: 1 }}>{Math.round(qiblaAngle)}°</p>
-            <p style={{ color: 'var(--or-clair)', fontSize: '1rem', marginTop: '0.25rem' }}>{getCardinal(qiblaAngle)}</p>
-            {userCity && <p style={{ color: 'var(--texte-2)', fontSize: '13px', marginTop: '0.75rem' }}>📍 Depuis {userCity}</p>}
-            {distance && <p style={{ color: 'var(--or-clair)', fontSize: '14px', marginTop: '0.25rem' }}>🕌 La Mecque est à {distance.toLocaleString('fr-FR')} km</p>}
-          </div>
-
-          {accuracy === 'high' && (
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', background: 'rgba(27,67,50,0.1)', borderRadius: '20px', padding: '0.35rem 0.875rem', marginBottom: '1rem' }}>
-              <span style={{ width: 8, height: 8, borderRadius: '50%', background: '#22c55e', display: 'block' }} />
-              <span style={{ fontSize: '12px', color: 'var(--foret)', fontWeight: 600 }}>GPS haute précision</span>
+          {sensorAsked && !hasSensor && (
+            <div style={{ background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.35)', borderRadius: 12, padding: '12px 16px', fontSize: 13, color: 'var(--foret)' }}>
+              <strong>Calibrez votre boussole :</strong> bougez le téléphone en formant un <strong>8</strong> dans l’air, loin de tout objet métallique. <br />Si rien ne bouge, votre appareil n’a pas de capteur — utilisez le mode <strong>Direction</strong>.
             </div>
           )}
+          {hasSensor && (
+            <p style={{ color: aligned ? 'var(--or)' : 'var(--texte-2)', fontWeight: 700, fontSize: aligned ? '1.15rem' : 14, fontFamily: aligned ? "'Playfair Display', serif" : undefined }}>
+              {aligned ? '✦ Vous êtes aligné vers la Qibla' : 'Tournez doucement jusqu’à aligner l’aiguille dorée vers le haut'}
+            </p>
+          )}
+        </div>
+      )}
 
-          <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1rem' }}>
-            <a
-              href={`https://wa.me/?text=${encodeURIComponent(`🕌 Ma Qibla depuis ${userCity} : ${Math.round(qiblaAngle)}° ${getCardinal(qiblaAngle)} — Via VoyagesHalal.fr`)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ flex: 1, padding: '0.75rem', background: '#25D366', color: 'white', borderRadius: '12px', textAlign: 'center', fontWeight: 600, fontSize: '14px', textDecoration: 'none' }}
-            >
-              📱 WhatsApp
-            </a>
-            <button onClick={startQibla} style={{ flex: 1, padding: '0.75rem', background: 'rgba(27,67,50,0.1)', color: 'var(--foret)', border: 'none', borderRadius: '12px', fontWeight: 600, fontSize: '14px', cursor: 'pointer' }}>🔄 Recalculer</button>
+      {/* MODE DIRECTION — statique, sans capteur (marche sur ordinateur) */}
+      {mode === 'direction' && (
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ width: 240, height: 240, margin: '0 auto 1rem', position: 'relative' }}>
+            <CompassSVG angle={qibla!} animated={false} />
+          </div>
+          <div style={{ background: '#fff', borderRadius: 14, padding: '1rem 1.25rem', border: '1px solid rgba(27,67,50,0.1)', fontSize: 14, color: 'var(--texte)', lineHeight: 1.6 }}>
+            Placez-vous face au <strong>Nord</strong>, puis tournez de <strong>{Math.round(qibla!)}°</strong> vers la <strong>{qibla! <= 180 ? 'droite (sens horaire)' : 'gauche'}</strong> — vous faites alors face à la <strong>Qibla ({getCardinal(qibla!)})</strong>.
           </div>
         </div>
       )}
 
-      {step === 'error' && (
-        <div style={{ textAlign: 'center', padding: '2rem' }}>
-          <h3 style={{ fontFamily: "'Playfair Display', serif", color: 'var(--foret)', marginBottom: '0.5rem' }}>{geoErr?.message ?? '📍 Position non disponible'}</h3>
-          <p style={{ color: 'var(--texte-2)', fontSize: '14px', margin: '0 auto 1.5rem', maxWidth: 420 }}>{geoErr?.detail ?? 'Vérifiez que la localisation est activée dans les paramètres de votre téléphone.'}</p>
-          <button onClick={() => { setGeoErr(null); setStep('idle') }} style={{ padding: '0.75rem 2rem', background: 'var(--foret)', color: 'white', border: 'none', borderRadius: '12px', fontWeight: 600, cursor: 'pointer' }}>Réessayer</button>
-        </div>
-      )}
+      {/* MODE CARTE — trait vers la Kaaba */}
+      {mode === 'carte' && <QiblaMap pos={pos} />}
 
-      <div style={{ marginTop: '2rem', padding: '1.25rem', background: 'white', borderRadius: '16px', border: '1px solid rgba(27,67,50,0.08)' }}>
-        <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1rem', color: 'var(--foret)', marginBottom: '0.5rem' }}>🕌 Qu&apos;est-ce que la Qibla ?</h3>
-        <p style={{ fontSize: '14px', color: 'var(--texte-2)', lineHeight: 1.7, margin: 0 }}>
-          La Qibla est la direction vers laquelle tout musulman se tourne pour la prière. Elle pointe vers la Kaaba, à La Mecque en Arabie Saoudite. Notre outil calcule cette direction avec précision depuis n&apos;importe où dans le monde.
+      {/* Partage + info */}
+      <div style={{ display: 'flex', gap: 10, marginTop: 18 }}>
+        <a href={`https://wa.me/?text=${encodeURIComponent(`🕋 Ma Qibla depuis ${pos.label} : ${Math.round(qibla!)}° ${getCardinal(qibla!)} — via VoyagesHalal.fr`)}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, padding: '0.75rem', background: '#25D366', color: '#fff', borderRadius: 12, textAlign: 'center', fontWeight: 600, fontSize: 14, textDecoration: 'none' }}>📱 Partager</a>
+        <button onClick={() => { setPos(null); setSensorAsked(false); setHasSensor(false) }} style={{ flex: 1, padding: '0.75rem', background: 'rgba(27,67,50,0.1)', color: 'var(--foret)', border: 'none', borderRadius: 12, fontWeight: 600, fontSize: 14, cursor: 'pointer' }}>🔄 Changer de lieu</button>
+      </div>
+
+      <div style={{ marginTop: 20, padding: '1.1rem', background: '#fff', borderRadius: 16, border: '1px solid rgba(27,67,50,0.08)' }}>
+        <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1rem', color: 'var(--foret)', marginBottom: 6 }}>🧭 Pour une précision maximale</h3>
+        <p style={{ fontSize: 13.5, color: 'var(--texte-2)', lineHeight: 1.7, margin: 0 }}>
+          Calibrez la boussole (mouvement en 8), éloignez le téléphone des objets métalliques et des aimants, et posez-le à plat. La boussole magnétique peut dévier ; le mode <strong>Direction</strong> (angle fixe par rapport au Nord) reste fiable partout.
         </p>
       </div>
     </section>
   )
+}
+
+// Carte Leaflet : votre position → Kaaba
+function QiblaMap({ pos }: { pos: Pos }) {
+  const ref = useRef<HTMLDivElement>(null)
+  const mapRef = useRef<LeafletMap | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    ;(async () => {
+      if (!ref.current || mapRef.current) return
+      const L = (await import('leaflet')).default
+      if (cancelled || !ref.current) return
+      const map = L.map(ref.current, { center: [pos.lat, pos.lng], zoom: 4, scrollWheelZoom: false })
+      mapRef.current = map
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '© OpenStreetMap' }).addTo(map)
+      const me = L.divIcon({ html: `<div style="width:14px;height:14px;background:#1B4332;border:3px solid #fff;border-radius:50%;box-shadow:0 2px 6px rgba(0,0,0,.4)"></div>`, className: '', iconAnchor: [7, 7] })
+      const kaaba = L.divIcon({ html: `<div style="font-size:22px">🕋</div>`, className: '', iconAnchor: [11, 11] })
+      L.marker([pos.lat, pos.lng], { icon: me }).addTo(map).bindPopup('📍 Vous')
+      L.marker([MECCA_LAT, MECCA_LNG], { icon: kaaba }).addTo(map).bindPopup('🕋 La Mecque')
+      L.polyline([[pos.lat, pos.lng], [MECCA_LAT, MECCA_LNG]], { color: '#C9A84C', weight: 3, dashArray: '6 6' }).addTo(map)
+      map.fitBounds([[pos.lat, pos.lng], [MECCA_LAT, MECCA_LNG]], { padding: [40, 40] })
+    })()
+    return () => { cancelled = true; if (mapRef.current) { mapRef.current.remove(); mapRef.current = null } }
+  }, [pos])
+
+  return <div ref={ref} style={{ height: 320, borderRadius: 18, overflow: 'hidden', border: '2px solid rgba(201,168,76,0.3)' }} />
 }
 
 const btnPrimary: React.CSSProperties = {
