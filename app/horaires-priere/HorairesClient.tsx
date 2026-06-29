@@ -1,7 +1,9 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { PrayerTimesWidget } from '@/components/PrayerTimesWidget'
 import { useLocation } from '@/components/location/LocationProvider'
+import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
+import { PRAYER_METHODS, ASR_SCHOOLS, defaultMethodForCountry } from '@/lib/prayer'
 
 interface VilleOption {
   nom: string
@@ -18,77 +20,139 @@ const VILLES: VilleOption[] = [
   { nom: 'Istanbul', apiName: 'Istanbul', pays: 'Turquie', code: 'TR' },
   { nom: 'Le Caire', apiName: 'Cairo', pays: 'Égypte', code: 'EG' },
   { nom: 'Dubaï', apiName: 'Dubai', pays: 'Émirats', code: 'AE' },
-  { nom: 'Abu Dhabi', apiName: 'Abu Dhabi', pays: 'Émirats', code: 'AE' },
-  { nom: 'Doha', apiName: 'Doha', pays: 'Qatar', code: 'QA' },
   { nom: 'La Mecque', apiName: 'Mecca', pays: 'Arabie Saoudite', code: 'SA' },
   { nom: 'Médine', apiName: 'Medina', pays: 'Arabie Saoudite', code: 'SA' },
   { nom: 'Paris', apiName: 'Paris', pays: 'France', code: 'FR' },
   { nom: 'Marseille', apiName: 'Marseille', pays: 'France', code: 'FR' },
   { nom: 'Londres', apiName: 'London', pays: 'Royaume-Uni', code: 'GB' },
   { nom: 'Kuala Lumpur', apiName: 'Kuala Lumpur', pays: 'Malaisie', code: 'MY' },
-  { nom: 'Jakarta', apiName: 'Jakarta', pays: 'Indonésie', code: 'ID' },
-  { nom: 'Amman', apiName: 'Amman', pays: 'Jordanie', code: 'JO' },
-  { nom: 'Mascate', apiName: 'Muscat', pays: 'Oman', code: 'OM' },
 ]
 
+interface Pos { lat?: number; lng?: number; label: string; pays?: string; apiName?: string; code?: string }
+
 export default function HorairesClient() {
-  const { city, clearLocation } = useLocation()
-  const [query, setQuery] = useState('')
-  const [selected, setSelected] = useState<VilleOption>(VILLES[0])
+  const { city } = useLocation()
+  const [pos, setPos] = useState<Pos | null>(null)
+  const [geoLoading, setGeoLoading] = useState(false)
+  const [geoErr, setGeoErr] = useState<GeoError | null>(null)
+  const [method, setMethod] = useState(3)
+  const [school, setSchool] = useState(0)
+  const [methodTouched, setMethodTouched] = useState(false)
 
-  const filtered = VILLES.filter((v) =>
-    v.nom.toLowerCase().includes(query.trim().toLowerCase())
-  )
+  // Restaure les préférences (méthode + école)
+  useEffect(() => {
+    try {
+      const m = localStorage.getItem('vh_prayer_method')
+      const s = localStorage.getItem('vh_prayer_school')
+      if (m) { setMethod(Number(m)); setMethodTouched(true) }
+      if (s) setSchool(Number(s))
+    } catch {}
+  }, [])
 
-  // Une ville est mémorisée → horaires chargés automatiquement, pas besoin de re-sélectionner
-  if (city && city.lat != null && city.lng != null) {
-    return (
-      <div className="max-w-3xl mx-auto">
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.35)', borderRadius: 14, padding: '12px 18px', marginBottom: 20 }}>
-          <span style={{ fontWeight: 700, color: 'var(--foret)', fontSize: 15 }}>📍 Horaires pour {city.nom}</span>
-          <button onClick={clearLocation} style={{ background: 'none', border: 'none', color: 'var(--or)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}>
-            Changer de ville →
-          </button>
-        </div>
-        <PrayerTimesWidget ville={city.nom} pays={city.pays ?? ''} countryCode="" lat={city.lat} lng={city.lng} />
-      </div>
-    )
+  // Au chargement : si une ville est mémorisée, on l'utilise comme position de départ
+  useEffect(() => {
+    if (city && city.lat != null && city.lng != null && !pos) {
+      setPos({ lat: city.lat, lng: city.lng, label: city.nom, pays: city.pays })
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [city])
+
+  // Méthode auto selon le pays (tant que l'utilisateur n'a pas choisi manuellement)
+  useEffect(() => {
+    if (!methodTouched && pos?.pays) setMethod(defaultMethodForCountry(pos.pays))
+  }, [pos, methodTouched])
+
+  const setMethodPref = (m: number) => {
+    setMethod(m); setMethodTouched(true)
+    try { localStorage.setItem('vh_prayer_method', String(m)) } catch {}
+  }
+  const setSchoolPref = (s: number) => {
+    setSchool(s)
+    try { localStorage.setItem('vh_prayer_school', String(s)) } catch {}
+  }
+
+  const useMyPosition = async () => {
+    setGeoLoading(true); setGeoErr(null)
+    try {
+      const { lat, lng } = await getPosition({ highAccuracy: true })
+      setPos({ lat, lng, label: 'Ma position exacte' })
+    } catch (code) {
+      setGeoErr(describeGeoError(code as GeoErrorCode))
+    } finally {
+      setGeoLoading(false)
+    }
   }
 
   return (
     <div className="max-w-3xl mx-auto">
-      <div className="hero-search" style={{ marginBottom: 24 }}>
-        <span className="search-icon">🔍</span>
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Rechercher une ville (Istanbul, Le Caire, Dubaï...)"
-          className="hero-search-input"
-        />
+      {/* Position GPS précise — priorité pour des horaires « à la minute » */}
+      <button
+        onClick={useMyPosition}
+        disabled={geoLoading}
+        style={{ width: '100%', padding: '16px', borderRadius: 14, border: 'none', cursor: geoLoading ? 'wait' : 'pointer', background: 'var(--foret)', color: '#fff', fontSize: 16, fontWeight: 700, marginBottom: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}
+      >
+        📍 {geoLoading ? 'Localisation précise…' : 'Horaires pour ma position exacte (GPS)'}
+      </button>
+
+      {geoErr && (
+        <div style={{ background: 'rgba(255,100,100,0.12)', border: '1px solid rgba(255,100,100,0.3)', borderRadius: 12, padding: '12px 16px', marginBottom: 14 }}>
+          <p style={{ color: '#b91c1c', fontWeight: 700, margin: 0, fontSize: 14 }}>{geoErr.message}</p>
+          <p style={{ color: 'var(--texte-2)', fontSize: 13, margin: '4px 0 0' }}>{geoErr.detail}</p>
+        </div>
+      )}
+
+      {/* Réglages de calcul — engagent l'exactitude, donc explicites et modifiables */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 18 }}>
+        <label style={{ display: 'flex', flexDirection: 'column', gap: 4, fontSize: 12, fontWeight: 600, color: 'var(--foret)' }}>
+          Méthode de calcul
+          <select value={method} onChange={(e) => setMethodPref(Number(e.target.value))} style={{ padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)' }}>
+            {PRAYER_METHODS.map((m) => <option key={m.id} value={m.id}>{m.label}</option>)}
+          </select>
+        </label>
+        <label style={{ display: 'flex', flexDirection: 'column', gap: 4, fontSize: 12, fontWeight: 600, color: 'var(--foret)' }}>
+          École (ʿAsr)
+          <select value={school} onChange={(e) => setSchoolPref(Number(e.target.value))} style={{ padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)' }}>
+            {ASR_SCHOOLS.map((s) => <option key={s.id} value={s.id}>{s.label}</option>)}
+          </select>
+        </label>
       </div>
 
-      <div className="ville-grid" style={{ marginBottom: 8 }}>
-        {filtered.map((v) => (
-          <button
-            key={v.nom}
-            className="ville-btn"
-            onClick={() => setSelected(v)}
-            style={
-              selected.nom === v.nom
-                ? { background: '#166534', color: 'white', borderColor: '#166534' }
-                : undefined
-            }
-          >
-            {v.nom}
-          </button>
-        ))}
-        {filtered.length === 0 && (
-          <p className="text-sm text-gray-400">Aucune ville trouvée dans notre liste.</p>
-        )}
-      </div>
+      {pos ? (
+        <>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14, fontSize: 13, color: 'var(--texte-2)', flexWrap: 'wrap' }}>
+            <span style={{ fontWeight: 700, color: 'var(--foret)' }}>📍 {pos.label}</span>
+            {pos.lat != null && pos.lng != null && <span>· lat {pos.lat.toFixed(3)}, lng {pos.lng.toFixed(3)}</span>}
+            <button onClick={() => { setPos(null); setGeoErr(null) }} style={{ background: 'none', border: 'none', color: 'var(--or)', fontWeight: 700, fontSize: 13, cursor: 'pointer', marginLeft: 'auto' }}>Changer →</button>
+          </div>
+          <PrayerTimesWidget
+            ville={pos.apiName ?? pos.label}
+            pays={pos.pays ?? ''}
+            countryCode={pos.code ?? ''}
+            lat={pos.lat}
+            lng={pos.lng}
+            method={method}
+            school={school}
+          />
+        </>
+      ) : (
+        <>
+          <p style={{ fontSize: 13, color: 'var(--texte-2)', marginBottom: 10 }}>
+            Ou choisissez une ville (la position GPS reste la plus précise) :
+          </p>
+          <div className="ville-grid" style={{ marginBottom: 18 }}>
+            {VILLES.map((v) => (
+              <button key={v.nom} className="ville-btn" onClick={() => { setMethodTouched(false); setPos({ label: v.nom, pays: v.pays, apiName: v.apiName, code: v.code }) }}>
+                {v.nom}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
 
-      <PrayerTimesWidget ville={selected.apiName} pays={selected.pays} countryCode={selected.code} />
+      <p style={{ fontSize: 12, color: 'var(--texte-2)', marginTop: 16, lineHeight: 1.6 }}>
+        ⚠️ Les horaires varient selon la méthode de calcul et l’école juridique. Vérifiez la convention de votre
+        mosquée locale. Source : Aladhan.com · calcul basé sur votre position GPS.
+      </p>
     </div>
   )
 }

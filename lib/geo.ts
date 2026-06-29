@@ -15,7 +15,9 @@ export const isIOS = (): boolean =>
 const TIMEOUT_MS = 8000
 
 // Récupère la position de l'utilisateur. Rejette avec un GeoErrorCode clair.
-export function getPosition(): Promise<{ lat: number; lng: number }> {
+// highAccuracy: true pour les horaires de prière (position précise « à la minute »).
+export function getPosition(opts?: { highAccuracy?: boolean }): Promise<{ lat: number; lng: number }> {
+  const highAccuracy = opts?.highAccuracy ?? false
   return new Promise((resolve, reject) => {
     if (typeof navigator === 'undefined' || !navigator.geolocation) {
       reject('UNSUPPORTED' as GeoErrorCode)
@@ -27,7 +29,7 @@ export function getPosition(): Promise<{ lat: number; lng: number }> {
       if (settled) return
       settled = true
       reject('TIMEOUT' as GeoErrorCode)
-    }, TIMEOUT_MS)
+    }, TIMEOUT_MS + (highAccuracy ? 4000 : 0))
 
     navigator.geolocation.getCurrentPosition(
       (pos) => {
@@ -45,9 +47,9 @@ export function getPosition(): Promise<{ lat: number; lng: number }> {
         else reject('TIMEOUT' as GeoErrorCode)
       },
       {
-        timeout: TIMEOUT_MS,
-        maximumAge: 300000, // accepte une position vieille de 5 min (plus rapide)
-        enableHighAccuracy: false, // plus rapide, largement suffisant pour trouver une ville/restos
+        timeout: TIMEOUT_MS + (highAccuracy ? 4000 : 0),
+        maximumAge: highAccuracy ? 0 : 300000, // horaires : position fraîche obligatoire
+        enableHighAccuracy: highAccuracy,
       }
     )
   })

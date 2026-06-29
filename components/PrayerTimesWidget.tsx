@@ -15,9 +15,11 @@ interface Props {
   countryCode: string
   lat?: number
   lng?: number
+  method?: number
+  school?: number
 }
 
-export function PrayerTimesWidget({ ville, countryCode, lat, lng }: Props) {
+export function PrayerTimesWidget({ ville, countryCode, lat, lng, method = 3, school = 0 }: Props) {
   const [timings, setTimings] = useState<Record<string, string> | null>(null)
   const [loading, setLoading] = useState(true)
   const [nextPrayer, setNextPrayer] = useState<string | null>(null)
@@ -26,18 +28,23 @@ export function PrayerTimesWidget({ ville, countryCode, lat, lng }: Props) {
   useEffect(() => {
     let cancelled = false
     setLoading(true)
-    // Si on a des coordonnées (ville mémorisée / GPS) → horaires précis par lat/lng,
-    // sinon → par nom de ville + pays.
+    // Date du jour (timestamp) pour des horaires exacts du jour même.
+    const ts = Math.floor(Date.now() / 1000)
+    // Coordonnées précises (GPS/ville) → horaires « à la minute » ; sinon par nom de ville.
     const url = (lat != null && lng != null)
-      ? `https://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lng}&method=12`
-      : `https://api.aladhan.com/v1/timingsByCity?city=${encodeURIComponent(ville)}&country=${countryCode}&method=12`
+      ? `https://api.aladhan.com/v1/timings/${ts}?latitude=${lat}&longitude=${lng}&method=${method}&school=${school}`
+      : `https://api.aladhan.com/v1/timingsByCity/${ts}?city=${encodeURIComponent(ville)}&country=${countryCode}&method=${method}&school=${school}`
     fetch(url)
       .then((r) => r.json())
       .then((data) => {
         if (cancelled) return
         if (data.data?.timings) {
-          setTimings(data.data.timings)
-          calculateNext(data.data.timings)
+          // Nettoie « 05:12 (CET) » → « 05:12 » pour un affichage/décompte exacts
+          const raw = data.data.timings as Record<string, string>
+          const clean: Record<string, string> = {}
+          for (const k of Object.keys(raw)) clean[k] = (raw[k] || '').slice(0, 5)
+          setTimings(clean)
+          calculateNext(clean)
         }
         setLoading(false)
       })
@@ -47,7 +54,7 @@ export function PrayerTimesWidget({ ville, countryCode, lat, lng }: Props) {
     return () => {
       cancelled = true
     }
-  }, [ville, countryCode, lat, lng])
+  }, [ville, countryCode, lat, lng, method, school])
 
   const calculateNext = (t: Record<string, string>) => {
     const prayers = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha']
