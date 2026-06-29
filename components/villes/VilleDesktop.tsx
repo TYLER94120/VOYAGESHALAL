@@ -75,40 +75,43 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         </div>
       </section>
 
-      {/* ACTIONS rapides — 2 colonnes (Mosquée/Qibla/Horaires sont déjà dans la barre du bas) */}
+      {/* PARTIE HAUT (sombre) — toute la navigation : boutons + intro + onglets */}
       <div style={{ background: 'var(--nuit)' }}>
-        <div style={{ maxWidth: WRAP, margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', padding: '18px 24px' }}>
-          {[
-            { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Voir sur la carte', primary: true },
-            { href: `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`, icon: '✈️', label: `Vols vers ${ville.nom}` },
-          ].map((a) => (
-            <a key={a.label} href={a.href} target="_blank" rel="noopener noreferrer"
-              className={`ville-action${a.primary ? ' ville-action-primary' : ''}`}>
-              <span className="ico">{a.icon}</span>{a.label}
-            </a>
-          ))}
+        <div style={{ maxWidth: WRAP, margin: '0 auto', padding: '18px 24px 26px' }}>
+          {/* 2 boutons d'action */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+            {[
+              { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Voir sur la carte', primary: true },
+              { href: `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`, icon: '✈️', label: `Vols vers ${ville.nom}` },
+            ].map((a) => (
+              <a key={a.label} href={a.href} target="_blank" rel="noopener noreferrer"
+                className={`ville-action${a.primary ? ' ville-action-primary' : ''}`}>
+                <span className="ico">{a.icon}</span>{a.label}
+              </a>
+            ))}
+          </div>
+
+          {/* intro courte */}
+          {descShort && <p style={{ textAlign: 'center', color: 'rgba(253,250,243,0.72)', fontSize: '14.5px', lineHeight: 1.7, maxWidth: 700, margin: '18px auto 0' }}>{descShort}</p>}
+
+          {/* ONGLETS — grille 2 colonnes, tous visibles dès l'ouverture */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginTop: '18px' }}>
+            {TABS.map((tab) => {
+              const active = activeTab === tab.id
+              const count = tabCounts[tab.id]
+              return (
+                <button key={tab.id} onClick={() => setActiveTab(tab.id)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '15px 14px', borderRadius: '14px', cursor: 'pointer', transition: 'all .18s', border: active ? '2px solid var(--or)' : '1.5px solid rgba(253,250,243,0.18)', background: active ? 'var(--or)' : 'rgba(253,250,243,0.06)', color: active ? 'var(--nuit)' : '#fff', fontSize: '15px', fontWeight: 700, boxShadow: active ? '0 6px 18px rgba(201,168,76,0.3)' : 'none' }}>
+                  <span style={{ fontSize: '19px' }}>{tab.icon}</span>{tab.label}
+                  {count > 0 && <span style={{ fontSize: '12px', padding: '1px 8px', borderRadius: '20px', background: active ? 'rgba(11,26,15,0.18)' : 'rgba(253,250,243,0.15)', color: active ? 'var(--nuit)' : '#fff', fontWeight: 700 }}>{count}</span>}
+                </button>
+              )
+            })}
+          </div>
         </div>
       </div>
 
-      {/* CONTENU — 1 colonne centrée, aérée */}
+      {/* PARTIE BAS (claire) — contenu, commence par les restaurants */}
       <div style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px' }}>
-        {/* intro courte */}
-        {descShort && <p style={{ textAlign: 'center', color: 'var(--texte-2)', fontSize: '15.5px', lineHeight: 1.7, maxWidth: 720, margin: '0 auto 22px' }}>{descShort}</p>}
-
-        {/* ONGLETS — grille 2 colonnes, tous visibles dès l'ouverture */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '28px' }}>
-          {TABS.map((tab) => {
-            const active = activeTab === tab.id
-            const count = tabCounts[tab.id]
-            return (
-              <button key={tab.id} onClick={() => setActiveTab(tab.id)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '15px 14px', borderRadius: '14px', cursor: 'pointer', transition: 'all .18s', border: active ? '2px solid var(--foret)' : '1.5px solid rgba(11,26,15,0.1)', background: active ? 'var(--foret)' : '#fff', color: active ? '#fff' : 'var(--foret)', fontSize: '15px', fontWeight: 700, boxShadow: active ? '0 6px 18px rgba(27,67,50,0.25)' : '0 2px 8px rgba(11,26,15,0.04)' }}>
-                <span style={{ fontSize: '19px' }}>{tab.icon}</span>{tab.label}
-                {count > 0 && <span style={{ fontSize: '12px', padding: '1px 8px', borderRadius: '20px', background: active ? 'rgba(255,255,255,0.22)' : '#EDE8DC', color: active ? '#fff' : 'var(--foret)', fontWeight: 700 }}>{count}</span>}
-              </button>
-            )
-          })}
-        </div>
-
         {activeTab === 'restaurants' && (
           <>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '16px' }}>
