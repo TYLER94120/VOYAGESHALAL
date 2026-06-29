@@ -68,7 +68,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   return (
     <main style={{ background: 'var(--creme)', minHeight: '100vh', overflowX: 'hidden' }}>
       {/* HERO épuré, centré */}
-      <section style={{ position: 'relative', height: 'clamp(240px, 38vw, 300px)', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
+      <section style={{ position: 'relative', height: 'clamp(170px, 26vw, 230px)', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
         {image && <Image src={image} alt={`Guide voyage halal ${ville.nom}`} fill priority sizes="100vw" style={{ objectFit: 'cover', opacity: 0.5 }} />}
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(11,26,15,0.55) 0%, rgba(11,26,15,0.82) 100%)' }} />
         <IslamicPattern opacity={0.05} />
@@ -93,17 +93,16 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           {/* intro courte — en tête du bloc */}
           {descShort && <p style={{ textAlign: 'center', color: 'rgba(253,250,243,0.72)', fontSize: '14.5px', lineHeight: 1.7, maxWidth: 700, margin: '0 auto 18px' }}>{descShort}</p>}
 
-          {/* ONGLETS par priorité — Mosquées & Restaurants plus grands, les autres plus petits */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
+          {/* ONGLETS — cartes blanches contrastées, une rangée sur PC, 2 colonnes mobile */}
+          <div className="ville-tabs-grid">
             {TABS.map((tab) => {
               const active = activeTab === tab.id
-              const big = tab.id === 'mosquees' || tab.id === 'restaurants'
               const count = tabCounts[tab.id]
               return (
-                <button key={tab.id} onClick={() => goToTab(tab.id)} className="ville-tab" style={{ gridColumn: tab.id === 'pratique' ? '1 / -1' : undefined, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: big ? '22px 14px' : '13px 14px', borderRadius: '14px', cursor: 'pointer', transition: 'transform .15s ease, filter .15s ease', border: active ? '2px solid var(--or)' : '1.5px solid rgba(253,250,243,0.28)', background: active ? 'var(--or)' : 'rgba(253,250,243,0.08)', color: active ? 'var(--nuit)' : '#fff', fontSize: big ? '16.5px' : '14px', fontWeight: 700, boxShadow: active ? '0 6px 18px rgba(201,168,76,0.3)' : '0 2px 8px rgba(0,0,0,0.18)' }}>
-                  <span style={{ fontSize: big ? '22px' : '16px' }}>{tab.icon}</span>{tab.label}
-                  {count > 0 && <span style={{ fontSize: '12px', padding: '1px 8px', borderRadius: '20px', background: active ? 'rgba(11,26,15,0.18)' : 'rgba(253,250,243,0.15)', color: active ? 'var(--nuit)' : '#fff', fontWeight: 700 }}>{count}</span>}
-                  <span style={{ fontSize: '13px', opacity: 0.55, marginLeft: '2px' }}>{tab.id === 'mosquees' ? '→' : '↓'}</span>
+                <button key={tab.id} onClick={() => goToTab(tab.id)} className={`ville-tab${active ? ' ville-tab--on' : ''}${tab.id === 'pratique' ? ' ville-tab--wide' : ''}`}>
+                  <span className="vt-ico">{tab.icon}</span>{tab.label}
+                  {count > 0 && <span className="vt-count">{count}</span>}
+                  <span className="vt-arrow">{tab.id === 'mosquees' ? '→' : '↓'}</span>
                 </button>
               )
             })}
