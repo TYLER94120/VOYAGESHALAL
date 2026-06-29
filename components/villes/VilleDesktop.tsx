@@ -1,6 +1,6 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useToast } from '@/components/Toast'
@@ -24,6 +24,13 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const [activeTab, setActiveTab] = useState('mosquees')
   const [activeFilter, setActiveFilter] = useState('Tous')
   const toast = useToast()
+  const contentRef = useRef<HTMLDivElement>(null)
+
+  // Clic sur un onglet → on change ET on descend vers le contenu correspondant
+  const goToTab = (id: string) => {
+    setActiveTab(id)
+    setTimeout(() => contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
+  }
 
   const image = ville.image || ville.image_hero
   const halalScore = ville.halalScore ?? (ville.score_halal ? Math.round(ville.score_halal * 2 * 10) / 10 : null)
@@ -81,28 +88,28 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           {/* intro courte — en tête du bloc */}
           {descShort && <p style={{ textAlign: 'center', color: 'rgba(253,250,243,0.72)', fontSize: '14.5px', lineHeight: 1.7, maxWidth: 700, margin: '0 auto 18px' }}>{descShort}</p>}
 
-          {/* ONGLETS par priorité (Mosquées, Restaurants…) — grille 2 colonnes, tous visibles */}
+          {/* ONGLETS par priorité — Mosquées & Restaurants plus grands, les autres plus petits */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
             {TABS.map((tab) => {
               const active = activeTab === tab.id
+              const big = tab.id === 'mosquees' || tab.id === 'restaurants'
               const count = tabCounts[tab.id]
               return (
-                <button key={tab.id} onClick={() => setActiveTab(tab.id)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '15px 14px', borderRadius: '14px', cursor: 'pointer', transition: 'all .18s', border: active ? '2px solid var(--or)' : '1.5px solid rgba(253,250,243,0.18)', background: active ? 'var(--or)' : 'rgba(253,250,243,0.06)', color: active ? 'var(--nuit)' : '#fff', fontSize: '15px', fontWeight: 700, boxShadow: active ? '0 6px 18px rgba(201,168,76,0.3)' : 'none' }}>
-                  <span style={{ fontSize: '19px' }}>{tab.icon}</span>{tab.label}
+                <button key={tab.id} onClick={() => goToTab(tab.id)} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: big ? '22px 14px' : '13px 14px', borderRadius: '14px', cursor: 'pointer', transition: 'all .18s', border: active ? '2px solid var(--or)' : '1.5px solid rgba(253,250,243,0.18)', background: active ? 'var(--or)' : 'rgba(253,250,243,0.06)', color: active ? 'var(--nuit)' : '#fff', fontSize: big ? '16.5px' : '14px', fontWeight: 700, boxShadow: active ? '0 6px 18px rgba(201,168,76,0.3)' : 'none' }}>
+                  <span style={{ fontSize: big ? '22px' : '16px' }}>{tab.icon}</span>{tab.label}
                   {count > 0 && <span style={{ fontSize: '12px', padding: '1px 8px', borderRadius: '20px', background: active ? 'rgba(11,26,15,0.18)' : 'rgba(253,250,243,0.15)', color: active ? 'var(--nuit)' : '#fff', fontWeight: 700 }}>{count}</span>}
                 </button>
               )
             })}
           </div>
 
-          {/* BOUTONS Carte + Vols — en dernier (priorité basse) */}
+          {/* BOUTONS Carte + Vols — secondaires, même style discret (un seul doré : l'onglet actif) */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginTop: '10px' }}>
             {[
-              { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Voir sur la carte', primary: true },
+              { href: `https://maps.google.com/?q=${encodeURIComponent(ville.nom)}`, icon: '🗺️', label: 'Voir sur la carte' },
               { href: `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`, icon: '✈️', label: `Vols vers ${ville.nom}` },
             ].map((a) => (
-              <a key={a.label} href={a.href} target="_blank" rel="noopener noreferrer"
-                className={`ville-action${a.primary ? ' ville-action-primary' : ''}`}>
+              <a key={a.label} href={a.href} target="_blank" rel="noopener noreferrer" className="ville-action">
                 <span className="ico">{a.icon}</span>{a.label}
               </a>
             ))}
@@ -110,8 +117,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         </div>
       </div>
 
-      {/* PARTIE BAS (claire) — contenu, commence par les restaurants */}
-      <div style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px' }}>
+      {/* PARTIE BAS (claire) — contenu de l'onglet sélectionné */}
+      <div ref={contentRef} style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px', scrollMarginTop: '12px' }}>
         {activeTab === 'restaurants' && (
           <>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '16px' }}>
