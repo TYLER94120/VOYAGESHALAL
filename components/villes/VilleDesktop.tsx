@@ -102,7 +102,6 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 <button key={tab.id} onClick={() => goToTab(tab.id)} className={`ville-tab${active ? ' ville-tab--on' : ''}${tab.id === 'pratique' ? ' ville-tab--wide' : ''}`}>
                   <span className="vt-ico">{tab.icon}</span>{tab.label}
                   {count > 0 && <span className="vt-count">{count}</span>}
-                  <span className="vt-arrow">{tab.id === 'mosquees' ? '→' : '↓'}</span>
                 </button>
               )
             })}

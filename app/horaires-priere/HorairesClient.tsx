@@ -103,15 +103,15 @@ export default function HorairesClient() {
 
       {/* Réglages de calcul — engagent l'exactitude, donc explicites et modifiables */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 18 }}>
-        <label style={{ display: 'flex', flexDirection: 'column', gap: 4, fontSize: 12, fontWeight: 600, color: 'var(--foret)' }}>
+        <label style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 5, fontSize: 12, fontWeight: 700, color: 'var(--foret)' }}>
           Méthode de calcul
-          <select value={method} onChange={(e) => setMethodPref(Number(e.target.value))} style={{ padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)' }}>
+          <select value={method} onChange={(e) => setMethodPref(Number(e.target.value))} style={{ width: '100%', padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)', textAlign: 'center', textAlignLast: 'center' }}>
             {PRAYER_METHODS.map((m) => <option key={m.id} value={m.id}>{m.label}</option>)}
           </select>
         </label>
-        <label style={{ display: 'flex', flexDirection: 'column', gap: 4, fontSize: 12, fontWeight: 600, color: 'var(--foret)' }}>
+        <label style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 5, fontSize: 12, fontWeight: 700, color: 'var(--foret)' }}>
           École (ʿAsr)
-          <select value={school} onChange={(e) => setSchoolPref(Number(e.target.value))} style={{ padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)' }}>
+          <select value={school} onChange={(e) => setSchoolPref(Number(e.target.value))} style={{ width: '100%', padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)', textAlign: 'center', textAlignLast: 'center' }}>
             {ASR_SCHOOLS.map((s) => <option key={s.id} value={s.id}>{s.label}</option>)}
           </select>
         </label>

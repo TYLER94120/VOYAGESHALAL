@@ -456,6 +456,7 @@ body { top: 0 !important; }
 
 /* Onglet = carte blanche bien contrastée sur le fond sombre, clairement cliquable */
 .ville-tab {
+  position: relative;
   display: flex; align-items: center; justify-content: center; gap: 8px;
   border-radius: 14px; cursor: pointer; font-weight: 700; font-size: 15px;
   padding: 16px 12px; text-align: center;
@@ -464,13 +465,14 @@ body { top: 0 !important; }
   transition: transform .15s ease, filter .15s ease;
 }
 .ville-tab .vt-ico { font-size: 20px; }
-.ville-tab .vt-count { font-size: 12px; padding: 1px 8px; border-radius: 20px; background: #EDE8DC; color: var(--foret); font-weight: 700; }
-.ville-tab .vt-arrow { font-size: 13px; opacity: 0.5; }
+/* Badge en coin : n'affecte pas le centrage de l'icône + nom */
+.ville-tab .vt-count { position: absolute; top: 8px; right: 10px; font-size: 11px; padding: 1px 7px; border-radius: 20px; background: #EDE8DC; color: var(--foret); font-weight: 700; }
 .ville-tab:hover { transform: translateY(-2px); filter: brightness(0.97); }
 .ville-tab:active { transform: scale(0.95); }
 .ville-tab--wide { grid-column: 1 / -1; }
 .ville-tab--on { background: var(--or); color: var(--nuit); border-color: var(--or); box-shadow: 0 6px 18px rgba(201,168,76,0.45); }
-.ville-tab--on .vt-count { background: rgba(11,26,15,0.18); color: var(--nuit); }
+.ville-tab--on .vt-count { background: rgba(11,26,15,0.22); color: var(--nuit); }
+@media (min-width: 900px) { .ville-tab .vt-count { top: 6px; right: 6px; } }
 .ville-action .ico { font-size: 19px; }
 .ville-action:hover {
   background: rgba(201,168,76,0.95); color: #0B1A0F;
