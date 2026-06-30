@@ -5,13 +5,14 @@ import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { useLocation } from '@/components/location/LocationProvider'
 
-export default function Header() {
+export default function Header({ brandEN = false }: { brandEN?: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [isEN, setIsEN] = useState(false)
+  // Valeur initiale fournie par le serveur (middleware/domaine) → aucun flash.
+  const [isEN, setIsEN] = useState(brandEN)
   const { t } = useLanguage()
   const { city, clearLocation } = useLocation()
 
-  // Branding selon le domaine : gohalaltravel.com → GoHalalTravel
+  // Filet de sécurité côté client (au cas où le rendu serait servi en cache générique).
   useEffect(() => {
     if (typeof window !== 'undefined' && window.location.hostname.includes('gohalaltravel')) setIsEN(true)
   }, [])

@@ -27,7 +27,7 @@ const footerLinks = {
   ],
 }
 
-export default function Footer() {
+export default function Footer({ brandEN = false }: { brandEN?: boolean }) {
   return (
     <footer style={{ backgroundColor: '#0b1a0f' }} className="site-footer relative overflow-hidden text-white/70">
       <IslamicPattern opacity={0.06} />
@@ -79,7 +79,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-xs text-white/30">
-            © {new Date().getFullYear()} <BrandName /> — Tous droits réservés · Photos :{' '}
+            © {new Date().getFullYear()} <BrandName isEN={brandEN} /> — Tous droits réservés · Photos :{' '}
             <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 underline">Unsplash</a> &amp;{' '}
             <a href="https://commons.wikimedia.org" target="_blank" rel="noopener noreferrer" className="hover:text-white/60 underline">Wikimedia</a>
           </p>

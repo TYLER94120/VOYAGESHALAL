@@ -16,6 +16,7 @@ import { AdhanProvider } from '@/components/adhan/AdhanProvider'
 import PrayerCountdownBar from '@/components/prayer/PrayerCountdownBar'
 import { RamadanBanner } from '@/components/RamadanBanner'
 import { SITE_NAME, DEFAULT_DESCRIPTION, SITE_URL } from '@/lib/seo'
+import { getDomainSEO } from '@/lib/domain'
 
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
@@ -60,23 +61,24 @@ export const viewport: Viewport = {
   viewportFit: 'cover',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const { isEN } = await getDomainSEO()
   return (
-    <html lang="fr">
+    <html lang={isEN ? 'en' : 'fr'}>
       <body className={`${dmSans.variable} ${playfair.variable} font-sans`}>
-        <LanguageProvider>
+        <LanguageProvider initialLang={isEN ? 'en' : 'fr'}>
           <LocationProvider>
            <AdhanProvider>
             <PrayerCountdownBar />
             <GoogleTranslate />
             <RamadanBanner />
-            <Header />
+            <Header brandEN={isEN} />
             {children}
-            <Footer />
+            <Footer brandEN={isEN} />
             <BottomNav />
             <ToastProvider />
             <RegisterSW />

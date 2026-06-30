@@ -1,7 +1,6 @@
 'use client'
 import { createContext, useContext, useEffect, useState, useCallback } from 'react'
 import { dict, moreDict, RTL_LANGS, type Lang } from '@/lib/i18n/translations'
-import { applyGoogleTranslate } from '@/components/i18n/GoogleTranslate'
 
 interface Ctx {
   lang: Lang
@@ -19,8 +18,8 @@ const LanguageContext = createContext<Ctx>({
   lang: 'fr', dir: 'ltr', setLang: () => {}, t: (k) => lookup('fr', k),
 })
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLangState] = useState<Lang>('fr')
+export function LanguageProvider({ children, initialLang = 'fr' }: { children: React.ReactNode; initialLang?: Lang }) {
+  const [lang, setLangState] = useState<Lang>(initialLang)
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -28,14 +27,12 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     const saved = localStorage.getItem('vh_lang') as Lang | null
     // Choix explicite de l'utilisateur → on le respecte
     if (explicit && saved && dict[saved]) { setLangState(saved); return }
-    // Sinon : langue par défaut selon le DOMAINE (gohalaltravel.com → en, voyageshalal.fr → fr)
+    // Sinon : langue par défaut selon le DOMAINE (gohalaltravel.com → en, voyageshalal.fr → fr).
+    // Le cookie `googtrans` est déjà posé côté serveur (middleware) sur le domaine EN,
+    // donc Google Translate traduit dès le premier rendu : pas de reload ici.
     const domainLang: Lang = window.location.hostname.includes('gohalaltravel') ? 'en' : 'fr'
     setLangState(domainLang)
     localStorage.setItem('vh_lang', domainLang)
-    if (domainLang !== 'fr' && !document.cookie.includes('googtrans')) {
-      applyGoogleTranslate(domainLang)
-      window.location.reload()
-    }
   }, [])
 
   useEffect(() => {
