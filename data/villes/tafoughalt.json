@@ -22,7 +22,7 @@
  "statistiques": {
   "restaurants_halal": 25,
   "mosquees": 6,
-  "hotels": 7
+  "hotels": 9
  },
  "infoPratique": {
   "transport": "Taxi collectif depuis Berkane (30 km, 15 MAD), voiture recommandée (route de montagne)",
@@ -282,6 +282,47 @@
  ],
  "hotels": [
   {
+   "id": "h3",
+   "nom": "Riad Tafoughalt",
+   "categorie": "Riad & Boutique",
+   "adresse": "Village historique, Tafoughalt",
+   "score": 4.9,
+   "note": 4.9,
+   "description": "Riad berbère authentique, hammam, cuisine gastronomique du terroir, jardin",
+   "halalFriendly": true,
+   "halal_certifie": true,
+   "sansAlcool": true,
+   "sans_alcool": true,
+   "priceRange": "€€",
+   "bookingUrl": "https://www.booking.com/searchresults.html?ss=Tafoughalt%20Maroc",
+   "halalBookingUrl": "https://www.halalbooking.com/search?q=Tafoughalt",
+   "lat": 34.8109531,
+   "lng": -2.4082871,
+   "mapsUrl": "https://maps.google.com/?q=34.8109531,-2.4082871"
+  },
+  {
+   "nom": "Estivage Eaux et Forêts",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.8125701,-2.4055909",
+   "lat": 34.8125701,
+   "lng": -2.4055909,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.8125701,-2.4055909",
+   "source": "osm"
+  },
+  {
+   "nom": "Raid Oriental",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.7923808,-2.3844972",
+   "lat": 34.7923808,
+   "lng": -2.3844972,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.7923808,-2.3844972",
+   "source": "osm"
+  },
+  {
    "id": "h1",
    "nom": "Gîte Beni Snassen",
    "categorie": "Maison d'hôtes & Gîte",
@@ -312,25 +353,6 @@
    "priceRange": "€",
    "bookingUrl": "https://www.booking.com/searchresults.html?ss=Tafoughalt%20Maroc",
    "halalBookingUrl": "https://www.halalbooking.com/search?q=Tafoughalt"
-  },
-  {
-   "id": "h3",
-   "nom": "Riad Tafoughalt",
-   "categorie": "Riad & Boutique",
-   "adresse": "Village historique, Tafoughalt",
-   "score": 4.9,
-   "note": 4.9,
-   "description": "Riad berbère authentique, hammam, cuisine gastronomique du terroir, jardin",
-   "halalFriendly": true,
-   "halal_certifie": true,
-   "sansAlcool": true,
-   "sans_alcool": true,
-   "priceRange": "€€",
-   "bookingUrl": "https://www.booking.com/searchresults.html?ss=Tafoughalt%20Maroc",
-   "halalBookingUrl": "https://www.halalbooking.com/search?q=Tafoughalt",
-   "lat": 34.8109531,
-   "lng": -2.4082871,
-   "mapsUrl": "https://maps.google.com/?q=34.8109531,-2.4082871"
   },
   {
    "id": "h4",

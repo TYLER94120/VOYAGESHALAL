@@ -31,7 +31,7 @@
   "mosquees": 40,
   "restaurants_halal": 750,
   "habitants_musulmans_pct": 45,
-  "hotels": 8
+  "hotels": 20
  },
  "infos_pratiques": {
   "langue": "Anglais, Arabe",
@@ -442,20 +442,6 @@
  ],
  "hotels": [
   {
-   "nom": "The Henry, Autograph Collection",
-   "categorie": "Luxe",
-   "score": 4.5,
-   "adresse": "Dearborn",
-   "description": "Hôtel d'art haut de gamme",
-   "halalFriendly": true,
-   "sansAlcool": false,
-   "mapsUrl": "https://maps.google.com/?q=The+Henry%2C+Autograph+Collection+Dearborn",
-   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dearborn&label=voyageshalal",
-   "halalBookingUrl": "https://www.halalbooking.com/search?city=dearborn",
-   "priceRange": "€€€",
-   "id": "h1"
-  },
-  {
    "nom": "The Dearborn Inn",
    "categorie": "Standard",
    "score": 4.5,
@@ -470,6 +456,152 @@
    "id": "h2",
    "lat": 42.3340274,
    "lng": -83.2142435
+  },
+  {
+   "nom": "Americas Best Value",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3226763,-83.1723037",
+   "lat": 42.3226763,
+   "lng": -83.1723037,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=42.3226763,-83.1723037",
+   "source": "osm"
+  },
+  {
+   "nom": "TownePlace Suites Detroit Dearborn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3334274,-83.2129178",
+   "lat": 42.3334274,
+   "lng": -83.2129178,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/dtwtd",
+   "source": "osm"
+  },
+  {
+   "nom": "Residence Inn Detroit Dearborn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3340338,-83.2143677",
+   "lat": 42.3340338,
+   "lng": -83.2143677,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=42.3340338,-83.2143677",
+   "source": "osm"
+  },
+  {
+   "nom": "SpringHill Suites Detroit Dearborn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3347514,-83.2143595",
+   "lat": 42.3347514,
+   "lng": -83.2143595,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/dttsd",
+   "source": "osm"
+  },
+  {
+   "nom": "Holiday Inn Express & Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3353436,-83.2144388",
+   "lat": 42.3353436,
+   "lng": -83.2144388,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=42.3353436,-83.2144388",
+   "source": "osm"
+  },
+  {
+   "nom": "Doubletree by Hilton Hotel Detroit-Dearborn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3313504,-83.2176006",
+   "lat": 42.3313504,
+   "lng": -83.2176006,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/dttdbdt-doubletree-detroit-dearborn/",
+   "source": "osm"
+  },
+  {
+   "nom": "Extended Stay America",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3207599,-83.2219465",
+   "lat": 42.3207599,
+   "lng": -83.2219465,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=42.3207599,-83.2219465",
+   "source": "osm"
+  },
+  {
+   "nom": "WoodSpring Suites Dearborn - Detroit",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3208571,-83.2230646",
+   "lat": 42.3208571,
+   "lng": -83.2230646,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.woodspring.com/extended-stay-hotels/locations/michigan/dearborn/woodspring-suites-dearborn-detroit",
+   "source": "osm"
+  },
+  {
+   "nom": "Best Western",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.2823545,-83.1963126",
+   "lat": 42.2823545,
+   "lng": -83.1963126,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.bestwestern.com/en_US/book/hotels-in-allen-park/best-western-greenfield-inn/propertyCode.23089.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Comfort Inn Dearborn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3075762,-83.2319331",
+   "lat": 42.3075762,
+   "lng": -83.2319331,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.choicehotels.com/ontario/windsor/quality-inn-hotels",
+   "source": "osm"
+  },
+  {
+   "nom": "Comfort Inn & Suites Allen Park - Dearborn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.2806422,-83.197554",
+   "lat": 42.2806422,
+   "lng": -83.197554,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.choicehotels.com/ontario/windsor/quality-inn-hotels",
+   "source": "osm"
+  },
+  {
+   "nom": "Dearborn Inn, Autograph Collection",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.2968092,-83.2279804",
+   "lat": 42.2968092,
+   "lng": -83.2279804,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/en-us/hotels/dtwdk-dearborn-inn-autograph-collection/overview/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Henry, Autograph Collection",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Dearborn",
+   "description": "Hôtel d'art haut de gamme",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Henry%2C+Autograph+Collection+Dearborn",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dearborn&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dearborn",
+   "priceRange": "€€€",
+   "id": "h1"
   },
   {
    "nom": "Hampton Inn Detroit-Dearborn",

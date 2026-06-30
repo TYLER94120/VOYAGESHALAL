@@ -31,7 +31,7 @@
   "mosquees": 300,
   "restaurants_halal": 800,
   "habitants_musulmans_pct": 99,
-  "hotels": 8
+  "hotels": 13
  },
  "infos_pratiques": {
   "langue": "Arabe (français courant)",
@@ -659,32 +659,6 @@
    "lng": 10.8547945
   },
   {
-   "nom": "Hotel Dar Faiza",
-   "categorie": "Standard",
-   "score": 4.2,
-   "adresse": "Houmt Souk, Djerba",
-   "description": "Hôtel familial paisible avec jardin et piscine.",
-   "halalFriendly": true,
-   "sansAlcool": true,
-   "mapsUrl": "https://maps.google.com/?q=Hotel+Dar+Faiza+Djerba",
-   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Djerba&label=voyageshalal",
-   "halalBookingUrl": "https://www.halalbooking.com/search?city=djerba",
-   "priceRange": "€€",
-   "id": "h4",
-   "nombreAvis": 214,
-   "piscineNonMixte": false,
-   "salleDePreiere": true,
-   "qiblaIndicateur": true,
-   "petitDejeunerHalal": true,
-   "services": [
-    "centre-ville",
-    "conciergerie",
-    "parking",
-    "restaurant-halal",
-    "wifi"
-   ]
-  },
-  {
    "nom": "Djerba Holiday Beach",
    "categorie": "Resort & Spa",
    "score": 4.2,
@@ -717,6 +691,87 @@
    ],
    "lat": 33.8616132,
    "lng": 10.9729847
+  },
+  {
+   "nom": "دار بيبين",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.8207313,10.8549658",
+   "lat": 33.8207313,
+   "lng": 10.8549658,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.darbibine.com/en_darbibine.php",
+   "source": "osm"
+  },
+  {
+   "nom": "وستل جربة",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.8218375,10.8526511",
+   "lat": 33.8218375,
+   "lng": 10.8526511,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.8218375,10.8526511",
+   "source": "osm"
+  },
+  {
+   "nom": "دار الضيافة",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.8216317,10.8547945",
+   "lat": 33.8216317,
+   "lng": 10.8547945,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.8216317,10.8547945",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Naël",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.8228013,10.8532772",
+   "lat": 33.8228013,
+   "lng": 10.8532772,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.8228013,10.8532772",
+   "source": "osm"
+  },
+  {
+   "nom": "Les Anartistes",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.822354,10.8547272",
+   "lat": 33.822354,
+   "lng": 10.8547272,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=33.822354,10.8547272",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Dar Faiza",
+   "categorie": "Standard",
+   "score": 4.2,
+   "adresse": "Houmt Souk, Djerba",
+   "description": "Hôtel familial paisible avec jardin et piscine.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Dar+Faiza+Djerba",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Djerba&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=djerba",
+   "priceRange": "€€",
+   "id": "h4",
+   "nombreAvis": 214,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
   },
   {
    "nom": "Grand Plaza Djerba",

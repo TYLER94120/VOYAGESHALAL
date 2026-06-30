@@ -1,1578 +1,1741 @@
 {
-  "nom": "Cappadoce",
-  "pays": "Turquie",
-  "slug": "cappadoce",
-  "image": "https://images.unsplash.com/photo-1510253687831-0f982d7862fc?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1510253687831-0f982d7862fc?w=1600&q=80",
-  "description": "La Cappadoce, paysage féerique de cheminées de fées, offre des vols en montgolfière à l'aube et des hôtels troglodytes uniques au monde.",
-  "descriptionLongue": "Sculptée par les volcans et l'érosion, la Cappadoce déploie un paysage irréel de cheminées de fées, vallées roses et villes souterraines. À l'aube, des centaines de montgolfières s'élèvent au-dessus de Göreme — spectacle inoubliable. Les hôtels troglodytes creusés dans le tuf offrent un séjour hors du temps. Terre de monastères rupestres et de villages anatoliens, la région est entièrement halal et profondément authentique.",
-  "halalScore": 8.7,
-  "score_halal": 4.3,
+ "nom": "Cappadoce",
+ "pays": "Turquie",
+ "slug": "cappadoce",
+ "image": "https://images.unsplash.com/photo-1510253687831-0f982d7862fc?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1510253687831-0f982d7862fc?w=1600&q=80",
+ "description": "La Cappadoce, paysage féerique de cheminées de fées, offre des vols en montgolfière à l'aube et des hôtels troglodytes uniques au monde.",
+ "descriptionLongue": "Sculptée par les volcans et l'érosion, la Cappadoce déploie un paysage irréel de cheminées de fées, vallées roses et villes souterraines. À l'aube, des centaines de montgolfières s'élèvent au-dessus de Göreme — spectacle inoubliable. Les hôtels troglodytes creusés dans le tuf offrent un séjour hors du temps. Terre de monastères rupestres et de villages anatoliens, la région est entièrement halal et profondément authentique.",
+ "halalScore": 8.7,
+ "score_halal": 4.3,
+ "mosquees": 200,
+ "population": "100 000 (région)",
+ "langue": "Turc",
+ "monnaie": "Livre turque (TRY)",
+ "fuseau": "UTC+3",
+ "meilleureEpoque": "Avril à Juin, Sept à Oct",
+ "prixMoyenNuit": "100€",
+ "continent": "Asie",
+ "codeISO": "TR",
+ "pays_slug": "turquie",
+ "region": "Anatolie centrale",
+ "meta_title": "Voyage Halal à Cappadoce — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Cappadoce — Halal Trust Score 9.0/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Cappadoce — Halal Trust Score 9.0/10.",
+ "coordonnees": {
+  "lat": 38.6431,
+  "lng": 34.8289
+ },
+ "image_alt": "Vue de Cappadoce, Turquie",
+ "statistiques": {
   "mosquees": 200,
-  "population": "100 000 (région)",
+  "restaurants_halal": 800,
+  "habitants_musulmans_pct": 99,
+  "hotels": 40
+ },
+ "infos_pratiques": {
   "langue": "Turc",
   "monnaie": "Livre turque (TRY)",
-  "fuseau": "UTC+3",
-  "meilleureEpoque": "Avril à Juin, Sept à Oct",
-  "prixMoyenNuit": "100€",
-  "continent": "Asie",
-  "codeISO": "TR",
-  "pays_slug": "turquie",
-  "region": "Anatolie centrale",
-  "meta_title": "Voyage Halal à Cappadoce — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Cappadoce — Halal Trust Score 9.0/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Cappadoce — Halal Trust Score 9.0/10.",
-  "coordonnees": {
+  "meilleure_periode": "Avril à Juin, Sept à Oct",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible mais discret",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "e-Visa turc ou exemption selon nationalité",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Location de voiture, navettes, aéroports de Nevşehir et Kayseri",
+  "priseElectrique": "Type C/F — 230V",
+  "decalageHoraire": "+2h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Seki Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Cappadoce",
+   "description": "Gastronomique cave, Ürgüp à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Seki+Restaurant+Cappadoce",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique cave",
+   "nombreAvis": 2499,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Pumpkin Göreme",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Cappadoce",
+   "description": "Légumes d'Anatolie, cave à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Pumpkin+G%C3%B6reme+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Légumes d'anatolie",
+   "nombreAvis": 517,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Ziggy's Göreme",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Cappadoce",
+   "description": "Fusion international halal à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Ziggy%27s+G%C3%B6reme+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Fusion international halal",
+   "nombreAvis": 364,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Dibek Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Cappadoce",
+   "description": "Traditionnel cappadocien 1960 à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Dibek+Restaurant+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Traditionnel cappadocien 1960",
+   "nombreAvis": 1325,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Topdeck Cave Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Cappadoce",
+   "description": "Vue vallée à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Topdeck+Cave+Restaurant+Cappadoce",
+   "priceRange": "€€€€",
+   "specialite": "Vue vallée",
+   "nombreAvis": 441,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Hancilar Restaurant Ürgüp",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Cappadoce",
+   "description": "Anatolien à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Hancilar+Restaurant+%C3%9Crg%C3%BCp+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Anatolien",
+   "nombreAvis": 395,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Mağara Restoran Avanos",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Cappadoce",
+   "description": "Dans la roche à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Ma%C4%9Fara+Restoran+Avanos+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Dans la roche",
+   "nombreAvis": 1018,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Özkonak Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Cappadoce",
+   "description": "Terrasse vallée à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=%C3%96zkonak+Restaurant+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Terrasse vallée",
+   "nombreAvis": 186,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Saruhan Caravanserail",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Cappadoce",
+   "description": "Ottoman historique à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Saruhan+Caravanserail+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Ottoman historique",
+   "nombreAvis": 1282,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Aydinli Cave House Dining",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Cappadoce",
+   "description": "Cave élégant à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Aydinli+Cave+House+Dining+Cappadoce",
+   "priceRange": "€€€€",
+   "specialite": "Cave élégant",
+   "nombreAvis": 2433,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Yunak Evleri Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Cappadoce",
+   "description": "Cave romantique à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Yunak+Evleri+Restaurant+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Cave romantique",
+   "nombreAvis": 1108,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Argos in Cappadocia Dining",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Cappadoce",
+   "description": "Gastronomique luxe à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Argos+in+Cappadocia+Dining+Cappadoce",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique luxe",
+   "nombreAvis": 218,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Museum Hotel Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Cappadoce",
+   "description": "Gastronomique à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Museum+Hotel+Restaurant+Cappadoce",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique",
+   "nombreAvis": 1258,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Sultan Cave Suites Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Cappadoce",
+   "description": "Vue sphères à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Cave+Suites+Restaurant+Cappadoce",
+   "priceRange": "€€€€",
+   "specialite": "Vue sphères",
+   "nombreAvis": 2146,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Perimasali Cave Hotel Dining",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Cappadoce",
+   "description": "Cave traditionnel à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Perimasali+Cave+Hotel+Dining+Cappadoce",
+   "priceRange": "€€€€",
+   "specialite": "Cave traditionnel",
+   "nombreAvis": 1297,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Old Greek House Mustafapaşa",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Cappadoce",
+   "description": "Maison grecque à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Old+Greek+House+Mustafapa%C5%9Fa+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Maison grecque",
+   "nombreAvis": 936,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Cappadocia Home Cooking",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Cappadoce",
+   "description": "Maison locale à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Cappadocia+Home+Cooking+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Maison locale",
+   "nombreAvis": 105,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Urgup Sofrasi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Cappadoce",
+   "description": "Local turc authentique à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Urgup+Sofrasi+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Local turc authentique",
+   "nombreAvis": 1649,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Çoban Restoran",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Cappadoce",
+   "description": "Berger, rustique à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=%C3%87oban+Restoran+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Berger",
+   "nombreAvis": 336,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Lil'a Göreme",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Cappadoce",
+   "description": "Café brunch moderne à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Lil%27a+G%C3%B6reme+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Café brunch moderne",
+   "nombreAvis": 680,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Middle Earth Travel Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Cappadoce",
+   "description": "Voyageurs à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Middle+Earth+Travel+Caf%C3%A9+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Voyageurs",
+   "nombreAvis": 262,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Panorama Restaurant Göreme",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Cappadoce",
+   "description": "Vue panoramique à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Panorama+Restaurant+G%C3%B6reme+Cappadoce",
+   "priceRange": "€€€€",
+   "specialite": "Vue panoramique",
+   "nombreAvis": 106,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Balloon Café Ürgüp",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Cappadoce",
+   "description": "Post-montgolfière à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Balloon+Caf%C3%A9+%C3%9Crg%C3%BCp+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Post-montgolfière",
+   "nombreAvis": 2493,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Red Valley View Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Cappadoce",
+   "description": "Trekking lunch à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Red+Valley+View+Caf%C3%A9+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Trekking lunch",
+   "nombreAvis": 2249,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Fairy Chimneys Tea Garden",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Cappadoce",
+   "description": "Thé dans les rochers à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Fairy+Chimneys+Tea+Garden+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Thé dans les rochers",
+   "nombreAvis": 1656,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Kapadokya Lodge Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Cappadoce",
+   "description": "Lodge à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Kapadokya+Lodge+Restaurant+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Lodge",
+   "nombreAvis": 2600,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Kayakapı Premium Cave Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Cappadoce",
+   "description": "Ultra-luxe à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Kayakap%C4%B1+Premium+Cave+Restaurant+Cappadoce",
+   "priceRange": "€€€€",
+   "specialite": "Ultra-luxe",
+   "nombreAvis": 1118,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Fresco Restaurant Ürgüp",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Cappadoce",
+   "description": "Méditerranéen à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Fresco+Restaurant+%C3%9Crg%C3%BCp+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Méditerranéen",
+   "nombreAvis": 2185,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Avanos Belediye Lokantası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Cappadoce",
+   "description": "Municipal turc à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Avanos+Belediye+Lokantas%C4%B1+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Municipal turc",
+   "nombreAvis": 1779,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Hacı Bektaş Veli Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Cappadoce",
+   "description": "Soufi et thé à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Hac%C4%B1+Bekta%C5%9F+Veli+Caf%C3%A9+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Soufi et thé",
+   "nombreAvis": 1705,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Selçuklu Evi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Cappadoce",
+   "description": "Cuisine seljoukide à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Sel%C3%A7uklu+Evi+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Cuisine seljoukide",
+   "nombreAvis": 2486,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Döner Ustası Nevşehir",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Cappadoce",
+   "description": "Döner express à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=D%C3%B6ner+Ustas%C4%B1+Nev%C5%9Fehir+Cappadoce",
+   "priceRange": "€",
+   "specialite": "Döner express",
+   "nombreAvis": 2714,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Lahmacun House Cappadoce",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Cappadoce",
+   "description": "Lahmacun express à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Lahmacun+House+Cappadoce+Cappadoce",
+   "priceRange": "€",
+   "specialite": "Lahmacun express",
+   "nombreAvis": 1968,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Cappadocia Bazaar Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Cappadoce",
+   "description": "Shopping et thé à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Cappadocia+Bazaar+Caf%C3%A9+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Shopping et thé",
+   "nombreAvis": 743,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Underground Valley Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Cappadoce",
+   "description": "Derinkuyu ville souterraine à Cappadoce.",
+   "mapsUrl": "https://maps.google.com/?q=Underground+Valley+Caf%C3%A9+Cappadoce",
+   "priceRange": "€€",
+   "specialite": "Derinkuyu ville souterraine",
+   "nombreAvis": 1423,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r35"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Diadem Cappadocia",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.642763,34.8278069",
+   "lat": 38.642763,
+   "lng": 34.8278069,
+   "halalFriendly": false,
+   "bookingUrl": "www.diademcappadocia.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Henna Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6422636,34.8283045",
+   "lat": 38.6422636,
+   "lng": 34.8283045,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6422636,34.8283045",
+   "source": "osm"
+  },
+  {
+   "nom": "Bedrock",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6422535,34.8283147",
+   "lat": 38.6422535,
+   "lng": 34.8283147,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6422535,34.8283147",
+   "source": "osm"
+  },
+  {
+   "nom": "Kamelya Cave Hostel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6427559,34.8276825",
+   "lat": 38.6427559,
+   "lng": 34.8276825,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6427559,34.8276825",
+   "source": "osm"
+  },
+  {
+   "nom": "Pashahan Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.642319,34.8298396",
+   "lat": 38.642319,
+   "lng": 34.8298396,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.642319,34.8298396",
+   "source": "osm"
+  },
+  {
+   "nom": "Carus Cappadocia",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6421863,34.8298635",
+   "lat": 38.6421863,
+   "lng": 34.8298635,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6421863,34.8298635",
+   "source": "osm"
+  },
+  {
+   "nom": "Hostel Terra Vista",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6427495,34.8303932",
+   "lat": 38.6427495,
+   "lng": 34.8303932,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6427495,34.8303932",
+   "source": "osm"
+  },
+  {
+   "nom": "Kookaburra",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6418835,34.828073",
+   "lat": 38.6418835,
+   "lng": 34.828073,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6418835,34.828073",
+   "source": "osm"
+  },
+  {
+   "nom": "Old Town Stone House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6429137,34.8270362",
+   "lat": 38.6429137,
+   "lng": 34.8270362,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6429137,34.8270362",
+   "source": "osm"
+  },
+  {
+   "nom": "Bedrock Cave Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6422274,34.83046",
+   "lat": 38.6422274,
+   "lng": 34.83046,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6422274,34.83046",
+   "source": "osm"
+  },
+  {
+   "nom": "View Cave Hotel ****",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6420323,34.8303269",
+   "lat": 38.6420323,
+   "lng": 34.8303269,
+   "halalFriendly": false,
+   "bookingUrl": "viewcavehotel@outlook.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Sato Cave Hotel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6416566,34.8281508",
+   "lat": 38.6416566,
+   "lng": 34.8281508,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6416566,34.8281508",
+   "source": "osm"
+  },
+  {
+   "nom": "Volar",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6442698,34.8302219",
+   "lat": 38.6442698,
+   "lng": 34.8302219,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.volarehotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Cappadocia Center Cave Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6415479,34.8286307",
+   "lat": 38.6415479,
+   "lng": 34.8286307,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6415479,34.8286307",
+   "source": "osm"
+  },
+  {
+   "nom": "Cappadocian special house",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6430849,34.8267538",
+   "lat": 38.6430849,
+   "lng": 34.8267538,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6430849,34.8267538",
+   "source": "osm"
+  },
+  {
+   "nom": "Lucky Cave Hotel Cappadocia",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=38.6437794,34.8268568",
+   "lat": 38.6437794,
+   "lng": 34.8268568,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.luckycavehotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Blue Moon Cave Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6431884,34.8311845",
+   "lat": 38.6431884,
+   "lng": 34.8311845,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6431884,34.8311845",
+   "source": "osm"
+  },
+  {
+   "nom": "Hanzade Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6412462,34.8292552",
+   "lat": 38.6412462,
+   "lng": 34.8292552,
+   "halalFriendly": false,
+   "bookingUrl": "https://hanzadecavesuites.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Central Stone House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6449864,34.8288383",
+   "lat": 38.6449864,
+   "lng": 34.8288383,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6449864,34.8288383",
+   "source": "osm"
+  },
+  {
+   "nom": "Stone House Cave",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6411038,34.8285946",
+   "lat": 38.6411038,
+   "lng": 34.8285946,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6411038,34.8285946",
+   "source": "osm"
+  },
+  {
+   "nom": "Relic House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6411151,34.8284194",
+   "lat": 38.6411151,
+   "lng": 34.8284194,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6411151,34.8284194",
+   "source": "osm"
+  },
+  {
+   "nom": "Cappa Cave Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=38.6450497,34.8295958",
+   "lat": 38.6450497,
+   "lng": 34.8295958,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6450497,34.8295958",
+   "source": "osm"
+  },
+  {
+   "nom": "Heybe Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6431111,34.8263084",
+   "lat": 38.6431111,
+   "lng": 34.8263084,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6431111,34.8263084",
+   "source": "osm"
+  },
+  {
+   "nom": "Relic House Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6410862,34.8284094",
+   "lat": 38.6410862,
+   "lng": 34.8284094,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6410862,34.8284094",
+   "source": "osm"
+  },
+  {
+   "nom": "Arch Palace",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6411569,34.8299559",
+   "lat": 38.6411569,
+   "lng": 34.8299559,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6411569,34.8299559",
+   "source": "osm"
+  },
+  {
+   "nom": "Ottoman Cave Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6452456,34.8290266",
+   "lat": 38.6452456,
+   "lng": 34.8290266,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ottomancavesuites.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Aydınlı Cave",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6419304,34.8265586",
+   "lat": 38.6419304,
+   "lng": 34.8265586,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6419304,34.8265586",
+   "source": "osm"
+  },
+  {
+   "nom": "Stay In Peace Cave Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6413909,34.8271864",
+   "lat": 38.6413909,
+   "lng": 34.8271864,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6413909,34.8271864",
+   "source": "osm"
+  },
+  {
+   "nom": "Vintage Cave House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6415121,34.8270008",
+   "lat": 38.6415121,
+   "lng": 34.8270008,
+   "halalFriendly": false,
+   "bookingUrl": "https://vintagecavehouse.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Cappadocia Cave Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.641931,34.8312536",
+   "lat": 38.641931,
+   "lng": 34.8312536,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.641931,34.8312536",
+   "source": "osm"
+  },
+  {
+   "nom": "Cappadocia Cave Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6418881,34.8312202",
+   "lat": 38.6418881,
+   "lng": 34.8312202,
+   "halalFriendly": false,
+   "bookingUrl": "http://cappadociacavesuites.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Göreme Cave Rooms",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6443667,34.8311879",
+   "lat": 38.6443667,
+   "lng": 34.8311879,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6443667,34.8311879",
+   "source": "osm"
+  },
+  {
+   "nom": "Elysee Pension",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6446707,34.8269453",
+   "lat": 38.6446707,
+   "lng": 34.8269453,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.elyseegoreme.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Shoe String Cave",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6412112,34.8274683",
+   "lat": 38.6412112,
+   "lng": 34.8274683,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6412112,34.8274683",
+   "source": "osm"
+  },
+  {
+   "nom": "Castle Cave Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6411795,34.830292",
+   "lat": 38.6411795,
+   "lng": 34.830292,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6411795,34.830292",
+   "source": "osm"
+  },
+  {
+   "nom": "Kemal's Guesthouse",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6439411,34.8262875",
+   "lat": 38.6439411,
+   "lng": 34.8262875,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6439411,34.8262875",
+   "source": "osm"
+  },
+  {
+   "nom": "Andromeda",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6442657,34.8314201",
+   "lat": 38.6442657,
+   "lng": 34.8314201,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6442657,34.8314201",
+   "source": "osm"
+  },
+  {
+   "nom": "Adelya Cave Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6408208,34.8285492",
+   "lat": 38.6408208,
+   "lng": 34.8285492,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.adelyacave.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Saksağan",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6452921,34.82787",
+   "lat": 38.6452921,
+   "lng": 34.82787,
+   "halalFriendly": false,
+   "bookingUrl": "https://cavehotelsaksagan.net/",
+   "source": "osm"
+  },
+  {
+   "nom": "Canyon View",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.6419529,34.8262911",
+   "lat": 38.6419529,
+   "lng": 34.8262911,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.6419529,34.8262911",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Vol en montgolfière à l'aube",
+   "categorie": "Nature & Aventure",
+   "description": "Survol féerique des cheminées de fées au lever du soleil, expérience iconique.",
+   "duree": "3h",
+   "prix": "€€€€",
+   "mapsUrl": "https://maps.google.com/?q=Vol+en+montgolfi%C3%A8re+%C3%A0+l%27aube+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vol+en+montgolfi%C3%A8re+%C3%A0+l%27aube+Cappadoce",
+   "id": "a1",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée en plein air de Göreme",
+   "categorie": "Histoire & Culture",
+   "description": "Églises rupestres byzantines classées à l'UNESCO.",
+   "duree": "2-3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+en+plein+air+de+G%C3%B6reme+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+en+plein+air+de+G%C3%B6reme+Cappadoce",
+   "id": "a2",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Ville souterraine de Derinkuyu",
+   "categorie": "Histoire & Culture",
+   "description": "Cité souterraine sur plusieurs niveaux, refuge antique fascinant.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Ville+souterraine+de+Derinkuyu+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ville+souterraine+de+Derinkuyu+Cappadoce",
+   "id": "a3",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vallée de l'Amour & vallée Rose",
+   "categorie": "Nature & Aventure",
+   "description": "Randonnées entre formations rocheuses spectaculaires au coucher du soleil.",
+   "duree": "3h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e+de+l%27Amour+%26+vall%C3%A9e+Rose+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vall%C3%A9e+de+l%27Amour+%26+vall%C3%A9e+Rose+Cappadoce",
+   "id": "a4",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Château d'Uçhisar",
+   "categorie": "Nature & Aventure",
+   "description": "Piton rocheux offrant la plus belle vue panoramique de Cappadoce.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Ch%C3%A2teau+d%27U%C3%A7hisar+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ch%C3%A2teau+d%27U%C3%A7hisar+Cappadoce",
+   "id": "a5",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Ateliers de poterie d'Avanos",
+   "categorie": "Shopping & Souks",
+   "description": "Tradition millénaire de la céramique sur les rives du Kızılırmak.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Ateliers+de+poterie+d%27Avanos+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ateliers+de+poterie+d%27Avanos+Cappadoce",
+   "id": "a6",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vallée d'Ihlara",
+   "categorie": "Nature & Aventure",
+   "description": "Canyon verdoyant ponctué d'églises rupestres, randonnée le long de la rivière.",
+   "duree": "Demi-journée",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e+d%27Ihlara+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vall%C3%A9e+d%27Ihlara+Cappadoce",
+   "id": "a7",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée de Göreme & village",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée du village au pied des cheminées de fées, cœur de la vie locale.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+G%C3%B6reme+%26+village+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+G%C3%B6reme+%26+village+Cappadoce",
+   "id": "a8",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Cappadoce",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Cappadoce+Cappadoce",
+   "id": "a9",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Cappadoce",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Cappadoce+Cappadoce",
+   "id": "a10",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Cappadoce",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Cappadoce+Cappadoce",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Cappadoce",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Cappadoce+Cappadoce",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Cappadoce",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Cappadoce+Cappadoce",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Cappadoce",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Cappadoce+Cappadoce",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Cappadoce",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Cappadoce+Cappadoce",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Cappadoce",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Cappadoce+Cappadoce",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Cappadoce",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Cappadoce+Cappadoce",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Cappadoce",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Cappadoce+Cappadoce",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Cappadoce",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Cappadoce+Cappadoce",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Cappadoce",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Cappadoce+Cappadoce",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Cappadoce+Cappadoce",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée de Göreme",
+   "description": "Mosquée du village au pied des cheminées de fées.",
+   "adresse": "Göreme, Cappadoce",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+G%C3%B6reme+Cappadoce",
+   "capacite": 5220,
+   "anneeConstruction": 1880,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 38.6431,
     "lng": 34.8289
+   }
   },
-  "image_alt": "Vue de Cappadoce, Turquie",
-  "statistiques": {
-    "mosquees": 200,
-    "restaurants_halal": 800,
-    "habitants_musulmans_pct": 99
+  {
+   "nom": "Mosquée d'Ürgüp",
+   "description": "Mosquée principale d'Ürgüp, repère de la vie locale.",
+   "adresse": "Ürgüp, Cappadoce",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+d%27%C3%9Crg%C3%BCp+Cappadoce",
+   "capacite": 7240,
+   "anneeConstruction": 1880,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 38.6431,
+    "lng": 34.8289
+   }
   },
-  "infos_pratiques": {
-    "langue": "Turc",
-    "monnaie": "Livre turque (TRY)",
-    "meilleure_periode": "Avril à Juin, Sept à Oct",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible mais discret",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Cappadoce",
+   "description": "Mosquée fréquentée de Cappadoce, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Cappadoce",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Cappadoce+Cappadoce",
+   "capacite": 4984,
+   "anneeConstruction": 1904,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 38.6431,
+    "lng": 34.8289
+   }
   },
-  "infoPratique": {
-    "visa": "e-Visa turc ou exemption selon nationalité",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Location de voiture, navettes, aéroports de Nevşehir et Kayseri",
-    "priseElectrique": "Type C/F — 230V",
-    "decalageHoraire": "+2h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Cappadoce",
+   "description": "Mosquée fréquentée de Cappadoce, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Cappadoce",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Cappadoce+Cappadoce",
+   "capacite": 6797,
+   "anneeConstruction": 1917,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 38.6431,
+    "lng": 34.8289
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Seki Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Cappadoce",
-      "description": "Gastronomique cave, Ürgüp à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Seki+Restaurant+Cappadoce",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique cave",
-      "nombreAvis": 2499,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Pumpkin Göreme",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Cappadoce",
-      "description": "Légumes d'Anatolie, cave à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Pumpkin+G%C3%B6reme+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Légumes d'anatolie",
-      "nombreAvis": 517,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Ziggy's Göreme",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Fusion international halal à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Ziggy%27s+G%C3%B6reme+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Fusion international halal",
-      "nombreAvis": 364,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Dibek Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Cappadoce",
-      "description": "Traditionnel cappadocien 1960 à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Dibek+Restaurant+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Traditionnel cappadocien 1960",
-      "nombreAvis": 1325,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Topdeck Cave Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Cappadoce",
-      "description": "Vue vallée à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Topdeck+Cave+Restaurant+Cappadoce",
-      "priceRange": "€€€€",
-      "specialite": "Vue vallée",
-      "nombreAvis": 441,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Hancilar Restaurant Ürgüp",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Cappadoce",
-      "description": "Anatolien à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Hancilar+Restaurant+%C3%9Crg%C3%BCp+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Anatolien",
-      "nombreAvis": 395,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Mağara Restoran Avanos",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Cappadoce",
-      "description": "Dans la roche à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Ma%C4%9Fara+Restoran+Avanos+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Dans la roche",
-      "nombreAvis": 1018,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Özkonak Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Cappadoce",
-      "description": "Terrasse vallée à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=%C3%96zkonak+Restaurant+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Terrasse vallée",
-      "nombreAvis": 186,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Saruhan Caravanserail",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Cappadoce",
-      "description": "Ottoman historique à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Saruhan+Caravanserail+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Ottoman historique",
-      "nombreAvis": 1282,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Aydinli Cave House Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Cave élégant à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Aydinli+Cave+House+Dining+Cappadoce",
-      "priceRange": "€€€€",
-      "specialite": "Cave élégant",
-      "nombreAvis": 2433,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Yunak Evleri Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Cappadoce",
-      "description": "Cave romantique à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Yunak+Evleri+Restaurant+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Cave romantique",
-      "nombreAvis": 1108,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Argos in Cappadocia Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Gastronomique luxe à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Argos+in+Cappadocia+Dining+Cappadoce",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique luxe",
-      "nombreAvis": 218,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Museum Hotel Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Cappadoce",
-      "description": "Gastronomique à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Museum+Hotel+Restaurant+Cappadoce",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 1258,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Sultan Cave Suites Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Vue sphères à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Cave+Suites+Restaurant+Cappadoce",
-      "priceRange": "€€€€",
-      "specialite": "Vue sphères",
-      "nombreAvis": 2146,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Perimasali Cave Hotel Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Cappadoce",
-      "description": "Cave traditionnel à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Perimasali+Cave+Hotel+Dining+Cappadoce",
-      "priceRange": "€€€€",
-      "specialite": "Cave traditionnel",
-      "nombreAvis": 1297,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Old Greek House Mustafapaşa",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Cappadoce",
-      "description": "Maison grecque à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Old+Greek+House+Mustafapa%C5%9Fa+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Maison grecque",
-      "nombreAvis": 936,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Cappadocia Home Cooking",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Maison locale à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Cappadocia+Home+Cooking+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Maison locale",
-      "nombreAvis": 105,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Urgup Sofrasi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Cappadoce",
-      "description": "Local turc authentique à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Urgup+Sofrasi+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Local turc authentique",
-      "nombreAvis": 1649,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Çoban Restoran",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Cappadoce",
-      "description": "Berger, rustique à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=%C3%87oban+Restoran+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Berger",
-      "nombreAvis": 336,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Lil'a Göreme",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Cappadoce",
-      "description": "Café brunch moderne à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Lil%27a+G%C3%B6reme+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Café brunch moderne",
-      "nombreAvis": 680,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Middle Earth Travel Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Cappadoce",
-      "description": "Voyageurs à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Middle+Earth+Travel+Caf%C3%A9+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Voyageurs",
-      "nombreAvis": 262,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Panorama Restaurant Göreme",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Cappadoce",
-      "description": "Vue panoramique à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Panorama+Restaurant+G%C3%B6reme+Cappadoce",
-      "priceRange": "€€€€",
-      "specialite": "Vue panoramique",
-      "nombreAvis": 106,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Balloon Café Ürgüp",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Cappadoce",
-      "description": "Post-montgolfière à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Balloon+Caf%C3%A9+%C3%9Crg%C3%BCp+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Post-montgolfière",
-      "nombreAvis": 2493,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Red Valley View Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Trekking lunch à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Red+Valley+View+Caf%C3%A9+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Trekking lunch",
-      "nombreAvis": 2249,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Fairy Chimneys Tea Garden",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Cappadoce",
-      "description": "Thé dans les rochers à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Fairy+Chimneys+Tea+Garden+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Thé dans les rochers",
-      "nombreAvis": 1656,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Kapadokya Lodge Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Cappadoce",
-      "description": "Lodge à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Kapadokya+Lodge+Restaurant+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Lodge",
-      "nombreAvis": 2600,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Kayakapı Premium Cave Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Ultra-luxe à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Kayakap%C4%B1+Premium+Cave+Restaurant+Cappadoce",
-      "priceRange": "€€€€",
-      "specialite": "Ultra-luxe",
-      "nombreAvis": 1118,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Fresco Restaurant Ürgüp",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Cappadoce",
-      "description": "Méditerranéen à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Fresco+Restaurant+%C3%9Crg%C3%BCp+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Méditerranéen",
-      "nombreAvis": 2185,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Avanos Belediye Lokantası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Cappadoce",
-      "description": "Municipal turc à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Avanos+Belediye+Lokantas%C4%B1+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Municipal turc",
-      "nombreAvis": 1779,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Hacı Bektaş Veli Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Cappadoce",
-      "description": "Soufi et thé à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Hac%C4%B1+Bekta%C5%9F+Veli+Caf%C3%A9+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Soufi et thé",
-      "nombreAvis": 1705,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Selçuklu Evi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Cuisine seljoukide à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Sel%C3%A7uklu+Evi+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Cuisine seljoukide",
-      "nombreAvis": 2486,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Döner Ustası Nevşehir",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Cappadoce",
-      "description": "Döner express à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=D%C3%B6ner+Ustas%C4%B1+Nev%C5%9Fehir+Cappadoce",
-      "priceRange": "€",
-      "specialite": "Döner express",
-      "nombreAvis": 2714,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Lahmacun House Cappadoce",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Lahmacun express à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Lahmacun+House+Cappadoce+Cappadoce",
-      "priceRange": "€",
-      "specialite": "Lahmacun express",
-      "nombreAvis": 1968,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Cappadocia Bazaar Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Cappadoce",
-      "description": "Shopping et thé à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Cappadocia+Bazaar+Caf%C3%A9+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Shopping et thé",
-      "nombreAvis": 743,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Underground Valley Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Cappadoce",
-      "description": "Derinkuyu ville souterraine à Cappadoce.",
-      "mapsUrl": "https://maps.google.com/?q=Underground+Valley+Caf%C3%A9+Cappadoce",
-      "priceRange": "€€",
-      "specialite": "Derinkuyu ville souterraine",
-      "nombreAvis": 1423,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r35"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Argos in Cappadocia",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Cappadoce",
-      "description": "Ultra-luxe cave à Cappadoce.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Argos+in+Cappadocia+Cappadoce",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Cappadoce&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=cappadoce",
-      "priceRange": "€€€€",
-      "nombreAvis": 380,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Museum Hotel Ürgüp",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Cappadoce",
-      "description": "Ultra-luxe patrimoine à Cappadoce.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Museum+Hotel+%C3%9Crg%C3%BCp+Cappadoce",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Cappadoce&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=cappadoce",
-      "priceRange": "€€€€",
-      "nombreAvis": 1462,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Kayakapı Premium Caves Ürgüp",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Cappadoce",
-      "description": "Luxe cave à Cappadoce.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Kayakap%C4%B1+Premium+Caves+%C3%9Crg%C3%BCp+Cappadoce",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Cappadoce&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=cappadoce",
-      "priceRange": "€€€€",
-      "nombreAvis": 1044,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Yunak Evleri Cave Hotel",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Cappadoce",
-      "description": "Luxe à Cappadoce.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Yunak+Evleri+Cave+Hotel+Cappadoce",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Cappadoce&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=cappadoce",
-      "priceRange": "€€€€",
-      "nombreAvis": 2278,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Sultan Cave Suites",
-      "categorie": "Budget",
-      "score": 4.7,
-      "adresse": "Cappadoce",
-      "description": "Luxe cave à Cappadoce.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Cave+Suites+Cappadoce",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Cappadoce&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=cappadoce",
-      "priceRange": "€€",
-      "nombreAvis": 1323,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Kelebek Special Cave Hotel",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Cappadoce",
-      "description": "Standard-luxe à Cappadoce.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Kelebek+Special+Cave+Hotel+Cappadoce",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Cappadoce&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=cappadoce",
-      "priceRange": "€€€€",
-      "nombreAvis": 1730,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Gamirasu Cave Hotel",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Cappadoce",
-      "description": "Boutique cave à Cappadoce.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Gamirasu+Cave+Hotel+Cappadoce",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Cappadoce&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=cappadoce",
-      "priceRange": "€€€",
-      "nombreAvis": 1318,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "Sacred House Hotel",
-      "categorie": "Riad & Boutique",
-      "score": 4.8,
-      "adresse": "Cappadoce",
-      "description": "Boutique luxe à Cappadoce.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Sacred+House+Hotel+Cappadoce",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Cappadoce&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=cappadoce",
-      "priceRange": "€€€",
-      "nombreAvis": 1124,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Aydinli Cave House",
-      "categorie": "Standard",
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Standard à Cappadoce.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Aydinli+Cave+House+Cappadoce",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Cappadoce&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=cappadoce",
-      "priceRange": "€€€",
-      "nombreAvis": 687,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Kaya Odaları",
-      "categorie": "Budget",
-      "score": 4.6,
-      "adresse": "Cappadoce",
-      "description": "Budget cave à Cappadoce.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Kaya+Odalar%C4%B1+Cappadoce",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Cappadoce&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=cappadoce",
-      "priceRange": "€€",
-      "nombreAvis": 1508,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Vol en montgolfière à l'aube",
-      "categorie": "Nature & Aventure",
-      "description": "Survol féerique des cheminées de fées au lever du soleil, expérience iconique.",
-      "duree": "3h",
-      "prix": "€€€€",
-      "mapsUrl": "https://maps.google.com/?q=Vol+en+montgolfi%C3%A8re+%C3%A0+l%27aube+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vol+en+montgolfi%C3%A8re+%C3%A0+l%27aube+Cappadoce",
-      "id": "a1",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée en plein air de Göreme",
-      "categorie": "Histoire & Culture",
-      "description": "Églises rupestres byzantines classées à l'UNESCO.",
-      "duree": "2-3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+en+plein+air+de+G%C3%B6reme+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+en+plein+air+de+G%C3%B6reme+Cappadoce",
-      "id": "a2",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Ville souterraine de Derinkuyu",
-      "categorie": "Histoire & Culture",
-      "description": "Cité souterraine sur plusieurs niveaux, refuge antique fascinant.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Ville+souterraine+de+Derinkuyu+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ville+souterraine+de+Derinkuyu+Cappadoce",
-      "id": "a3",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vallée de l'Amour & vallée Rose",
-      "categorie": "Nature & Aventure",
-      "description": "Randonnées entre formations rocheuses spectaculaires au coucher du soleil.",
-      "duree": "3h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e+de+l%27Amour+%26+vall%C3%A9e+Rose+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vall%C3%A9e+de+l%27Amour+%26+vall%C3%A9e+Rose+Cappadoce",
-      "id": "a4",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Château d'Uçhisar",
-      "categorie": "Nature & Aventure",
-      "description": "Piton rocheux offrant la plus belle vue panoramique de Cappadoce.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Ch%C3%A2teau+d%27U%C3%A7hisar+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ch%C3%A2teau+d%27U%C3%A7hisar+Cappadoce",
-      "id": "a5",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Ateliers de poterie d'Avanos",
-      "categorie": "Shopping & Souks",
-      "description": "Tradition millénaire de la céramique sur les rives du Kızılırmak.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Ateliers+de+poterie+d%27Avanos+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ateliers+de+poterie+d%27Avanos+Cappadoce",
-      "id": "a6",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vallée d'Ihlara",
-      "categorie": "Nature & Aventure",
-      "description": "Canyon verdoyant ponctué d'églises rupestres, randonnée le long de la rivière.",
-      "duree": "Demi-journée",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e+d%27Ihlara+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vall%C3%A9e+d%27Ihlara+Cappadoce",
-      "id": "a7",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée de Göreme & village",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée du village au pied des cheminées de fées, cœur de la vie locale.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+G%C3%B6reme+%26+village+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+G%C3%B6reme+%26+village+Cappadoce",
-      "id": "a8",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Cappadoce",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Cappadoce+Cappadoce",
-      "id": "a9",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Cappadoce",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Cappadoce+Cappadoce",
-      "id": "a10",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Cappadoce",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Cappadoce+Cappadoce",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Cappadoce",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Cappadoce+Cappadoce",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Cappadoce",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Cappadoce+Cappadoce",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Cappadoce",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Cappadoce+Cappadoce",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Cappadoce",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Cappadoce+Cappadoce",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Cappadoce",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Cappadoce+Cappadoce",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Cappadoce",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Cappadoce+Cappadoce",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Cappadoce",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Cappadoce+Cappadoce",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Cappadoce",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Cappadoce+Cappadoce",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Cappadoce",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Cappadoce+Cappadoce",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Cappadoce+Cappadoce",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée de Göreme",
-      "description": "Mosquée du village au pied des cheminées de fées.",
-      "adresse": "Göreme, Cappadoce",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+G%C3%B6reme+Cappadoce",
-      "capacite": 5220,
-      "anneeConstruction": 1880,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 38.6431,
-        "lng": 34.8289
-      }
-    },
-    {
-      "nom": "Mosquée d'Ürgüp",
-      "description": "Mosquée principale d'Ürgüp, repère de la vie locale.",
-      "adresse": "Ürgüp, Cappadoce",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+d%27%C3%9Crg%C3%BCp+Cappadoce",
-      "capacite": 7240,
-      "anneeConstruction": 1880,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 38.6431,
-        "lng": 34.8289
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Cappadoce",
-      "description": "Mosquée fréquentée de Cappadoce, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Cappadoce",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Cappadoce+Cappadoce",
-      "capacite": 4984,
-      "anneeConstruction": 1904,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 38.6431,
-        "lng": 34.8289
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Cappadoce",
-      "description": "Mosquée fréquentée de Cappadoce, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Cappadoce",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Cappadoce+Cappadoce",
-      "capacite": 6797,
-      "anneeConstruction": 1917,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 38.6431,
-        "lng": 34.8289
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Cappadoce",
-      "description": "Mosquée fréquentée de Cappadoce, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Cappadoce",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Cappadoce+Cappadoce",
-      "capacite": 4656,
-      "anneeConstruction": 1976,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 38.6431,
-        "lng": 34.8289
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Cappadoce",
-      "description": "Mosquée fréquentée de Cappadoce, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Cappadoce",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Cappadoce+Cappadoce",
-      "capacite": 1552,
-      "anneeConstruction": 1972,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 38.6431,
-        "lng": 34.8289
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Cappadoce",
-      "description": "Mosquée fréquentée de Cappadoce, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Cappadoce",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Cappadoce+Cappadoce",
-      "capacite": 1111,
-      "anneeConstruction": 1931,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 38.6431,
-        "lng": 34.8289
-      }
-    }
-  ],
-  "tags": [
-    "nature",
-    "montgolfiere",
-    "unesco",
-    "troglodyte",
-    "aventure",
-    "paysage"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Seki Restaurant",
-      "Urgup Sofrasi",
-      "Balloon Café Ürgüp",
-      "Döner Ustası Nevşehir",
-      "Ziggy's Göreme"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Pumpkin Göreme",
-      "Ziggy's Göreme",
-      "Dibek Restaurant",
-      "Mağara Restoran Avanos",
-      "Saruhan Caravanserail"
-    ],
-    "incontournables": [
-      "Döner Ustası Nevşehir",
-      "Kapadokya Lodge Restaurant",
-      "Seki Restaurant",
-      "Balloon Café Ürgüp",
-      "Selçuklu Evi"
-    ],
-    "pepitesCachees": [
-      "Ziggy's Göreme",
-      "Argos in Cappadocia Dining",
-      "Cappadocia Home Cooking"
-    ],
-    "idealFamille": [
-      "Pumpkin Göreme",
-      "Ziggy's Göreme",
-      "Dibek Restaurant",
-      "Hancilar Restaurant Ürgüp",
-      "Mağara Restoran Avanos"
-    ],
-    "gastronomique": [
-      "Seki Restaurant",
-      "Topdeck Cave Restaurant",
-      "Aydinli Cave House Dining",
-      "Argos in Cappadocia Dining",
-      "Museum Hotel Restaurant"
-    ],
-    "ouvertNuit": [
-      "Döner Ustası Nevşehir",
-      "Lahmacun House Cappadoce"
-    ],
-    "vueExceptionnelle": [
-      "Seki Restaurant",
-      "Urgup Sofrasi",
-      "Balloon Café Ürgüp"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Cappadoce",
+   "description": "Mosquée fréquentée de Cappadoce, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Cappadoce",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Cappadoce+Cappadoce",
+   "capacite": 4656,
+   "anneeConstruction": 1976,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 38.6431,
+    "lng": 34.8289
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Cappadoce",
+   "description": "Mosquée fréquentée de Cappadoce, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Cappadoce",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Cappadoce+Cappadoce",
+   "capacite": 1552,
+   "anneeConstruction": 1972,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 38.6431,
+    "lng": 34.8289
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Cappadoce",
+   "description": "Mosquée fréquentée de Cappadoce, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Cappadoce",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Cappadoce+Cappadoce",
+   "capacite": 1111,
+   "anneeConstruction": 1931,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 38.6431,
+    "lng": 34.8289
+   }
   }
+ ],
+ "tags": [
+  "nature",
+  "montgolfiere",
+  "unesco",
+  "troglodyte",
+  "aventure",
+  "paysage"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Seki Restaurant",
+   "Urgup Sofrasi",
+   "Balloon Café Ürgüp",
+   "Döner Ustası Nevşehir",
+   "Ziggy's Göreme"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Pumpkin Göreme",
+   "Ziggy's Göreme",
+   "Dibek Restaurant",
+   "Mağara Restoran Avanos",
+   "Saruhan Caravanserail"
+  ],
+  "incontournables": [
+   "Döner Ustası Nevşehir",
+   "Kapadokya Lodge Restaurant",
+   "Seki Restaurant",
+   "Balloon Café Ürgüp",
+   "Selçuklu Evi"
+  ],
+  "pepitesCachees": [
+   "Ziggy's Göreme",
+   "Argos in Cappadocia Dining",
+   "Cappadocia Home Cooking"
+  ],
+  "idealFamille": [
+   "Pumpkin Göreme",
+   "Ziggy's Göreme",
+   "Dibek Restaurant",
+   "Hancilar Restaurant Ürgüp",
+   "Mağara Restoran Avanos"
+  ],
+  "gastronomique": [
+   "Seki Restaurant",
+   "Topdeck Cave Restaurant",
+   "Aydinli Cave House Dining",
+   "Argos in Cappadocia Dining",
+   "Museum Hotel Restaurant"
+  ],
+  "ouvertNuit": [
+   "Döner Ustası Nevşehir",
+   "Lahmacun House Cappadoce"
+  ],
+  "vueExceptionnelle": [
+   "Seki Restaurant",
+   "Urgup Sofrasi",
+   "Balloon Café Ürgüp"
+  ]
+ }
 }
