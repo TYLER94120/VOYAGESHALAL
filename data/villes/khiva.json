@@ -1,76 +1,118 @@
 {
-  "slug": "khiva",
-  "nom": "Khiva",
-  "pays": "Ouzbékistan",
-  "pays_slug": "ouzbekistan",
-  "continent": "Asie",
-  "region": "Asie centrale",
-  "coordonnees": {
-    "lat": 41.3783,
-    "lng": 60.3639
+ "slug": "khiva",
+ "nom": "Khiva",
+ "pays": "Ouzbékistan",
+ "pays_slug": "ouzbekistan",
+ "continent": "Asie",
+ "region": "Asie centrale",
+ "coordonnees": {
+  "lat": 41.3783,
+  "lng": 60.3639
+ },
+ "codeISO": "",
+ "score_halal": 4.7,
+ "halalScore": 9.3,
+ "description": "Cité-musée de la Route de la soie, Khiva conserve intacte sa ville fortifiée d'Itchan Kala : medersas, minarets et palais en majolique bleue.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Le_travail_du_bois_%28Khiva%2C_Ouzb%C3%A9kistan%29_%285606816478%29.jpg/1920px-Le_travail_du_bois_%28Khiva%2C_Ouzb%C3%A9kistan%29_%285606816478%29.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Le_travail_du_bois_%28Khiva%2C_Ouzb%C3%A9kistan%29_%285606816478%29.jpg/1920px-Le_travail_du_bois_%28Khiva%2C_Ouzb%C3%A9kistan%29_%285606816478%29.jpg",
+ "metaDescription": "Cité-musée de la Route de la soie, Khiva conserve intacte sa ville fortifiée d'Itchan Kala : medersas, minarets et palais en majolique bleue.",
+ "statistiques": {
+  "restaurants_halal": 4,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Real Pizza",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.382372,60.3619068",
+   "lat": 41.382372,
+   "lng": 60.3619068,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.7,
-  "halalScore": 9.3,
-  "description": "Cité-musée de la Route de la soie, Khiva conserve intacte sa ville fortifiée d'Itchan Kala : medersas, minarets et palais en majolique bleue.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Le_travail_du_bois_%28Khiva%2C_Ouzb%C3%A9kistan%29_%285606816478%29.jpg/1920px-Le_travail_du_bois_%28Khiva%2C_Ouzb%C3%A9kistan%29_%285606816478%29.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Le_travail_du_bois_%28Khiva%2C_Ouzb%C3%A9kistan%29_%285606816478%29.jpg/1920px-Le_travail_du_bois_%28Khiva%2C_Ouzb%C3%A9kistan%29_%285606816478%29.jpg",
-  "metaDescription": "Cité-musée de la Route de la soie, Khiva conserve intacte sa ville fortifiée d'Itchan Kala : medersas, minarets et palais en majolique bleue.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Lavash",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.383968,60.3642557",
+   "lat": 41.383968,
+   "lng": 60.3642557,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Ata Gamburg",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3842625,60.358478",
+   "lat": 41.3842625,
+   "lng": 60.358478,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Khiva",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Khiva",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Khiva%20Khiva"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Itchan Kala (UNESCO)",
-      "categorie": "Culture",
-      "description": "Vieille ville fortifiée entièrement préservée.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Itchan%20Kala%20%28UNESCO%29%20Khiva"
-    },
-    {
-      "id": "a2",
-      "nom": "Minaret Kalta Minor",
-      "categorie": "Histoire",
-      "description": "Minaret turquoise inachevé, emblème de Khiva.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Minaret%20Kalta%20Minor%20Khiva"
-    },
-    {
-      "id": "a3",
-      "nom": "Medersa et palais Tach Khaouli",
-      "categorie": "Culture",
-      "description": "Cours décorées de faïences et de bois sculpté.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Medersa%20et%20palais%20Tach%20Khaouli%20Khiva"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Garage Burger",
+   "type": "burger, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3917445,60.3641625",
+   "lat": 41.3917445,
+   "lng": 60.3641625,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Khiva",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Khiva",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Khiva%20Khiva"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Itchan Kala (UNESCO)",
+   "categorie": "Culture",
+   "description": "Vieille ville fortifiée entièrement préservée.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Itchan%20Kala%20%28UNESCO%29%20Khiva"
+  },
+  {
+   "id": "a2",
+   "nom": "Minaret Kalta Minor",
+   "categorie": "Histoire",
+   "description": "Minaret turquoise inachevé, emblème de Khiva.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Minaret%20Kalta%20Minor%20Khiva"
+  },
+  {
+   "id": "a3",
+   "nom": "Medersa et palais Tach Khaouli",
+   "categorie": "Culture",
+   "description": "Cours décorées de faïences et de bois sculpté.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Medersa%20et%20palais%20Tach%20Khaouli%20Khiva"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

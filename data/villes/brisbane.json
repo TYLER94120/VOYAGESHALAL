@@ -11,7 +11,7 @@
  },
  "codeISO": "AU",
  "score_halal": 3.5,
- "halalScore": 7.0,
+ "halalScore": 7,
  "villeNonMusulmane": true,
  "description": "Métropole ensoleillée du Queensland. Communauté musulmane et adresses halal à Holland Park et au centre.",
  "metaDescription": "Métropole ensoleillée du Queensland. Communauté musulmane et adresses halal à Holland Park et au centre.",
@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Australie%2C_Queensland%2C_Brisbane%2C_night_view%2C_from_the_Victoria_Bridge.jpg/1920px-Australie%2C_Queensland%2C_Brisbane%2C_night_view%2C_from_the_Victoria_Bridge.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 39,
+  "mosquees": 3,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,653 @@
   "ville non-musulmane",
   "océanie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Grill'd",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4691356,153.0263513",
+   "lat": -27.4691356,
+   "lng": 153.0263513,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "School Cafeteria / X Block",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.5001135,152.9855419",
+   "lat": -27.5001135,
+   "lng": 152.9855419,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Fab Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4709711,153.0263466",
+   "lat": -27.4709711,
+   "lng": 153.0263466,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Turquoise",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4719317,153.0276835",
+   "lat": -27.4719317,
+   "lng": 153.0276835,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebapp",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4648152,153.0300509",
+   "lat": -27.4648152,
+   "lng": 153.0300509,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Farah Restaurant",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.46319,153.0210992",
+   "lat": -27.46319,
+   "lng": 153.0210992,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ahmet's",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4781963,153.0215234",
+   "lat": -27.4781963,
+   "lng": 153.0215234,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Origin Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4782407,153.0294286",
+   "lat": -27.4782407,
+   "lng": 153.0294286,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Baba Ganouj",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4799076,153.0228849",
+   "lat": -27.4799076,
+   "lng": 153.0228849,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mado",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4806473,153.0237774",
+   "lat": -27.4806473,
+   "lng": 153.0237774,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Baba Ganouj",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4806182,153.0232726",
+   "lat": -27.4806182,
+   "lng": 153.0232726,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Abbra Kebabra",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4645909,153.0126832",
+   "lat": -27.4645909,
+   "lng": 153.0126832,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Kebab Shop",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4784134,153.0126388",
+   "lat": -27.4784134,
+   "lng": 153.0126388,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Corner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4600543,153.0367776",
+   "lat": -27.4600543,
+   "lng": 153.0367776,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shah Cafe",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4578186,153.0340258",
+   "lat": -27.4578186,
+   "lng": 153.0340258,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Amaya Restaurant & Lounge",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4791929,153.0125715",
+   "lat": -27.4791929,
+   "lng": 153.0125715,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Antep Chargrill and Kebab",
+   "type": "turkish, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4797316,153.0124404",
+   "lat": -27.4797316,
+   "lng": 153.0124404,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Barbekü",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4632864,153.0414718",
+   "lat": -27.4632864,
+   "lng": 153.0414718,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Boundary Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4812617,153.0121316",
+   "lat": -27.4812617,
+   "lng": 153.0121316,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Gabba Kebab",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4871046,153.0294825",
+   "lat": -27.4871046,
+   "lng": 153.0294825,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kamiil's Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.454092,153.0137973",
+   "lat": -27.454092,
+   "lng": 153.0137973,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Caravanserai",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4869626,153.0062804",
+   "lat": -27.4869626,
+   "lng": 153.0062804,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab & Charcoal Place",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4479955,153.0387106",
+   "lat": -27.4479955,
+   "lng": 153.0387106,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Downtown Istanbul",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4621175,153.0602187",
+   "lat": -27.4621175,
+   "lng": 153.0602187,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Origin Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.5007186,153.036666",
+   "lat": -27.5007186,
+   "lng": 153.036666,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ispa Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4852372,152.9924506",
+   "lat": -27.4852372,
+   "lng": 152.9924506,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Taste of Saffron Restaurant",
+   "type": "persian, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4988169,153.0458405",
+   "lat": -27.4988169,
+   "lng": 153.0458405,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Atlas Yeros",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4992759,153.0451149",
+   "lat": -27.4992759,
+   "lng": 153.0451149,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Melody's",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4513725,153.0586071",
+   "lat": -27.4513725,
+   "lng": 153.0586071,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Authentic Chargrill & Kebab",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4583111,152.9873457",
+   "lat": -27.4583111,
+   "lng": 152.9873457,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bamiyan",
+   "type": "afghan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4880939,153.0637584",
+   "lat": -27.4880939,
+   "lng": 153.0637584,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Yiros Shop",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4316728,153.0435077",
+   "lat": -27.4316728,
+   "lng": 153.0435077,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Olive Thyme Turkish Cuisine",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4300895,153.0419337",
+   "lat": -27.4300895,
+   "lng": 153.0419337,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Turquoise Coast",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.5160899,153.0173188",
+   "lat": -27.5160899,
+   "lng": 153.0173188,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pani Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4928749,152.9784522",
+   "lat": -27.4928749,
+   "lng": 152.9784522,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Oh! Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4223573,153.0345958",
+   "lat": -27.4223573,
+   "lng": 153.0345958,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kingston Kebab Enoggera",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.4236076,152.9900704",
+   "lat": -27.4236076,
+   "lng": 152.9900704,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Origin Kebab's",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.5013555,152.9726231",
+   "lat": -27.5013555,
+   "lng": 152.9726231,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-27.5332629,153.0248515",
+   "lat": -27.5332629,
+   "lng": 153.0248515,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m251882571",
+   "nom": "Islamic Centre, West End Mosque",
+   "type": "Mosquée",
+   "adresse": "Princhester Street",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-27.4812877,153.0107256",
+   "lat": -27.4812877,
+   "lng": 153.0107256,
+   "source": "osm"
+  },
+  {
+   "id": "m422746572",
+   "nom": "Mubarak Mosque",
+   "type": "Mosquée",
+   "adresse": "Old Cleveland Road",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-27.4915579,153.0667211",
+   "lat": -27.4915579,
+   "lng": 153.0667211,
+   "source": "osm"
+  },
+  {
+   "id": "m626563838",
+   "nom": "Masjid As-Sunnah",
+   "type": "Mosquée",
+   "adresse": "Fuller Street, Brisbane",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-27.4251088,153.0306488",
+   "lat": -27.4251088,
+   "lng": 153.0306488,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a243893440",
+   "nom": "Brisbane City Hall Clock Tower",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4687807,153.0237552",
+   "lat": -27.4687807,
+   "lng": 153.0237552,
+   "source": "osm"
+  },
+  {
+   "id": "a2512519061",
+   "nom": "Museum of Brisbane",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4687147,153.0234187",
+   "lat": -27.4687147,
+   "lng": 153.0234187,
+   "source": "osm"
+  },
+  {
+   "id": "a3264698965",
+   "nom": "MacArthur Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4685608,153.0273974",
+   "lat": -27.4685608,
+   "lng": 153.0273974,
+   "source": "osm"
+  },
+  {
+   "id": "a5636344139",
+   "nom": "Cannon",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4723462,153.0246091",
+   "lat": -27.4723462,
+   "lng": 153.0246091,
+   "source": "osm"
+  },
+  {
+   "id": "a108180190",
+   "nom": "Queensland Holocaust Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4694056,153.0287157",
+   "lat": -27.4694056,
+   "lng": 153.0287157,
+   "source": "osm"
+  },
+  {
+   "id": "a4201468289",
+   "nom": "South West Pacific Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4667228,153.0265753",
+   "lat": -27.4667228,
+   "lng": 153.0265753,
+   "source": "osm"
+  },
+  {
+   "id": "a4201467258",
+   "nom": "Vietnam Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.466638,153.0265322",
+   "lat": -27.466638,
+   "lng": 153.0265322,
+   "source": "osm"
+  },
+  {
+   "id": "a4201467287",
+   "nom": "South African War Memorial Sculpture",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4667594,153.0268749",
+   "lat": -27.4667594,
+   "lng": 153.0268749,
+   "source": "osm"
+  },
+  {
+   "id": "a1546691277",
+   "nom": "Mani Tribe's Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4689218,153.0212822",
+   "lat": -27.4689218,
+   "lng": 153.0212822,
+   "source": "osm"
+  },
+  {
+   "id": "a23579447",
+   "nom": "Commissariat Store",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4732537,153.0242409",
+   "lat": -27.4732537,
+   "lng": 153.0242409,
+   "source": "osm"
+  },
+  {
+   "id": "a4201467263",
+   "nom": "World War II Memorial Sculpture",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4664841,153.0268776",
+   "lat": -27.4664841,
+   "lng": 153.0268776,
+   "source": "osm"
+  },
+  {
+   "id": "a1548316448",
+   "nom": "Shrine of Remembrance",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4663338,153.0264735",
+   "lat": -27.4663338,
+   "lng": 153.0264735,
+   "source": "osm"
+  },
+  {
+   "id": "a4201467217",
+   "nom": "Korea Malaya Borneo Memorial Sculpture",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.466439,153.0267943",
+   "lat": -27.466439,
+   "lng": 153.0267943,
+   "source": "osm"
+  },
+  {
+   "id": "a11643860448",
+   "nom": "The Aboriginal and Torres Strait Islander Dedicated Memorial Queensland",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4662453,153.0266899",
+   "lat": -27.4662453,
+   "lng": 153.0266899,
+   "source": "osm"
+  },
+  {
+   "id": "a8481456849",
+   "nom": "Museum of Lands, Mapping and Surveying",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4654316,153.0250599",
+   "lat": -27.4654316,
+   "lng": 153.0250599,
+   "source": "osm"
+  },
+  {
+   "id": "a10767390705",
+   "nom": "Victoria Bridge",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4727566,153.0205759",
+   "lat": -27.4727566,
+   "lng": 153.0205759,
+   "source": "osm"
+  },
+  {
+   "id": "a415720606",
+   "nom": "Victoria Bridge Abutment",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4732936,153.0199321",
+   "lat": -27.4732936,
+   "lng": 153.0199321,
+   "source": "osm"
+  },
+  {
+   "id": "a1456813071",
+   "nom": "Brisbane Sign",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-27.4738881,153.0203174",
+   "lat": -27.4738881,
+   "lng": 153.0203174,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

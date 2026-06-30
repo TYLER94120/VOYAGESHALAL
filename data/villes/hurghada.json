@@ -1,76 +1,208 @@
 {
-  "slug": "hurghada",
-  "nom": "Hurghada",
-  "pays": "Égypte",
-  "pays_slug": "egypte",
-  "continent": "Afrique",
-  "region": "Mer Rouge",
-  "coordonnees": {
-    "lat": 27.2579,
-    "lng": 33.8116
+ "slug": "hurghada",
+ "nom": "Hurghada",
+ "pays": "Égypte",
+ "pays_slug": "egypte",
+ "continent": "Afrique",
+ "region": "Mer Rouge",
+ "coordonnees": {
+  "lat": 27.2579,
+  "lng": 33.8116
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.7,
+ "description": "Grande station de la mer Rouge, Hurghada combine plages familiales, plongée de classe mondiale et la grande mosquée El Mina.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Hurghada_Hotels_R02.jpg/1920px-Hurghada_Hotels_R02.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Hurghada_Hotels_R02.jpg/1920px-Hurghada_Hotels_R02.jpg",
+ "metaDescription": "Grande station de la mer Rouge, Hurghada combine plages familiales, plongée de classe mondiale et la grande mosquée El Mina.",
+ "statistiques": {
+  "restaurants_halal": 13,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Nejm El Saeed",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2171648,33.8382337",
+   "lat": 27.2171648,
+   "lng": 33.8382337,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.7,
-  "description": "Grande station de la mer Rouge, Hurghada combine plages familiales, plongée de classe mondiale et la grande mosquée El Mina.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Hurghada_Hotels_R02.jpg/1920px-Hurghada_Hotels_R02.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Hurghada_Hotels_R02.jpg/1920px-Hurghada_Hotels_R02.jpg",
-  "metaDescription": "Grande station de la mer Rouge, Hurghada combine plages familiales, plongée de classe mondiale et la grande mosquée El Mina.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "El Dar Darak Restaurant",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2157415,33.8379927",
+   "lat": 27.2157415,
+   "lng": 33.8379927,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Oriental Dish",
+   "type": "Arabic, shewarma, falafel, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2545903,33.8131391",
+   "lat": 27.2545903,
+   "lng": 33.8131391,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Hurghada",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Hurghada",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Hurghada%20Hurghada"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Al Mina",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée en bord de mer aux minarets élancés.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Al%20Mina%20Hurghada"
-    },
-    {
-      "id": "a2",
-      "nom": "Île de Giftun",
-      "categorie": "Nature",
-      "description": "Excursion plage et snorkeling en mer Rouge.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=%C3%8Ele%20de%20Giftun%20Hurghada"
-    },
-    {
-      "id": "a3",
-      "nom": "Marina de Hurghada",
-      "categorie": "Loisirs",
-      "description": "Promenade, boutiques et restaurants.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Marina%20de%20Hurghada%20Hurghada"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "جزارة أولاد هارون",
+   "type": "regional, egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2201138,33.8332088",
+   "lat": 27.2201138,
+   "lng": 33.8332088,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Egyptian restaurant \"Tablia\"",
+   "type": "regional, egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2196148,33.8348102",
+   "lat": 27.2196148,
+   "lng": 33.8348102,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Abo Adam Rest",
+   "type": "arab, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2184087,33.837025",
+   "lat": 27.2184087,
+   "lng": 33.837025,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "كشري ستار التحرير",
+   "type": "regional, egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2182962,33.8370216",
+   "lat": 27.2182962,
+   "lng": 33.8370216,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Abu Omar Hawawshi",
+   "type": "pizza, egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2178607,33.8371161",
+   "lat": 27.2178607,
+   "lng": 33.8371161,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ресторан ARARAT",
+   "type": "regional, kebab, tea, salad, crepe, pancake, dessert, russian, soup, fries, european",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2148268,33.8385682",
+   "lat": 27.2148268,
+   "lng": 33.8385682,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Felfela",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.2059277,33.8483715",
+   "lat": 27.2059277,
+   "lng": 33.8483715,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kostalita Restaurant & Cafe",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1956973,33.8254248",
+   "lat": 27.1956973,
+   "lng": 33.8254248,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fakhr El Din",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1904373,33.8312806",
+   "lat": 27.1904373,
+   "lng": 33.8312806,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Magalina",
+   "type": "italian pizza, chicken, diner, sandwich, curry, ice cream, local, barbecue, pizza, burger, steak house, fish, pasta, breakfast, international, grill, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1899154,33.8334914",
+   "lat": 27.1899154,
+   "lng": 33.8334914,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Hurghada",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Hurghada",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Hurghada%20Hurghada"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Al Mina",
+   "categorie": "Spirituel",
+   "description": "Grande mosquée en bord de mer aux minarets élancés.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Al%20Mina%20Hurghada"
+  },
+  {
+   "id": "a2",
+   "nom": "Île de Giftun",
+   "categorie": "Nature",
+   "description": "Excursion plage et snorkeling en mer Rouge.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=%C3%8Ele%20de%20Giftun%20Hurghada"
+  },
+  {
+   "id": "a3",
+   "nom": "Marina de Hurghada",
+   "categorie": "Loisirs",
+   "description": "Promenade, boutiques et restaurants.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Marina%20de%20Hurghada%20Hurghada"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

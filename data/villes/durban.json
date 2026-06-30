@@ -10,8 +10,8 @@
   "lng": 31.0218
  },
  "codeISO": "ZA",
- "score_halal": 4.0,
- "halalScore": 8.0,
+ "score_halal": 4,
+ "halalScore": 8,
  "villeNonMusulmane": true,
  "description": "Ville côtière à forte culture indo-musulmane. Cuisine halal (bunny chow, curry) et nombreuses mosquées.",
  "metaDescription": "Ville côtière à forte culture indo-musulmane. Cuisine halal (bunny chow, curry) et nombreuses mosquées.",
@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Durban_-_Hotel_Tropicana_-02.JPG/1920px-Durban_-_Hotel_Tropicana_-02.JPG",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 2,
+  "mosquees": 8,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,338 @@
   "ville non-musulmane",
   "afrique"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Pizzaboyz South Beach",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-29.8558147,31.0388047",
+   "lat": -29.8558147,
+   "lng": 31.0388047,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Shawarma",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-29.8563813,31.0352522",
+   "lat": -29.8563813,
+   "lng": 31.0352522,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m471726381",
+   "nom": "Grey Street Mosque",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-29.857263,31.0167038",
+   "lat": -29.857263,
+   "lng": 31.0167038,
+   "source": "osm"
+  },
+  {
+   "id": "m6657000220",
+   "nom": "The Atrium Jamaat Khana",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-29.8378683,30.9999145",
+   "lat": -29.8378683,
+   "lng": 30.9999145,
+   "source": "osm"
+  },
+  {
+   "id": "m4345522197",
+   "nom": "Lodge Grove Masjid",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-29.8308333,30.998125",
+   "lat": -29.8308333,
+   "lng": 30.998125,
+   "source": "osm"
+  },
+  {
+   "id": "m544849328",
+   "nom": "Soofie Masjid",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-29.832676,30.9946638",
+   "lat": -29.832676,
+   "lng": 30.9946638,
+   "source": "osm"
+  },
+  {
+   "id": "m4345522198",
+   "nom": "Musjid Al Hilal",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-29.8294749,30.9985607",
+   "lat": -29.8294749,
+   "lng": 30.9985607,
+   "source": "osm"
+  },
+  {
+   "id": "m556801254",
+   "nom": "Mohammedeya Musjid",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-29.834563,30.9860454",
+   "lat": -29.834563,
+   "lng": 30.9860454,
+   "source": "osm"
+  },
+  {
+   "id": "m10966232592",
+   "nom": "Musjid-us-Saliheen",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-29.8329554,30.9739532",
+   "lat": -29.8329554,
+   "lng": 30.9739532,
+   "source": "osm"
+  },
+  {
+   "id": "m1102580900",
+   "nom": "Habibia Soofie Saheb Mosque",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-29.8063847,31.0350428",
+   "lat": -29.8063847,
+   "lng": 31.0350428,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a10113884617",
+   "nom": "Anton Lembede Graffiti",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8596664,31.0239753",
+   "lat": -29.8596664,
+   "lng": 31.0239753,
+   "source": "osm"
+  },
+  {
+   "id": "a1167800816",
+   "nom": "Old Court House Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8583431,31.0275835",
+   "lat": -29.8583431,
+   "lng": 31.0275835,
+   "source": "osm"
+  },
+  {
+   "id": "a5191130930",
+   "nom": "Old House Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8630648,31.0175077",
+   "lat": -29.8630648,
+   "lng": 31.0175077,
+   "source": "osm"
+  },
+  {
+   "id": "a842019980",
+   "nom": "Lieutenant George Wyatt Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8528839,31.0227279",
+   "lat": -29.8528839,
+   "lng": 31.0227279,
+   "source": "osm"
+  },
+  {
+   "id": "a5473353726",
+   "nom": "Fish and meat market",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8564991,31.015339",
+   "lat": -29.8564991,
+   "lng": 31.015339,
+   "source": "osm"
+  },
+  {
+   "id": "a5473353725",
+   "nom": "Kwa Muhle museum",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8528596,31.023869",
+   "lat": -29.8528596,
+   "lng": 31.023869,
+   "source": "osm"
+  },
+  {
+   "id": "a5473353727",
+   "nom": "Victoria Street Market",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.856595,31.0148621",
+   "lat": -29.856595,
+   "lng": 31.0148621,
+   "source": "osm"
+  },
+  {
+   "id": "a842019797",
+   "nom": "Natal Maritime Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8615919,31.0287017",
+   "lat": -29.8615919,
+   "lng": 31.0287017,
+   "source": "osm"
+  },
+  {
+   "id": "a842019848",
+   "nom": "Gunners Memorial and Garden of Remembrance",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8508904,31.0251025",
+   "lat": -29.8508904,
+   "lng": 31.0251025,
+   "source": "osm"
+  },
+  {
+   "id": "a842020048",
+   "nom": "John Ross",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8509926,31.0256902",
+   "lat": -29.8509926,
+   "lng": 31.0256902,
+   "source": "osm"
+  },
+  {
+   "id": "a10113769617",
+   "nom": "FIFA Graffiti",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8544434,31.0330034",
+   "lat": -29.8544434,
+   "lng": 31.0330034,
+   "source": "osm"
+  },
+  {
+   "id": "a10113757017",
+   "nom": "Durban Elephants Art",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8542023,31.0333764",
+   "lat": -29.8542023,
+   "lng": 31.0333764,
+   "source": "osm"
+  },
+  {
+   "id": "a10113778417",
+   "nom": "Kiss the City",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8531229,31.0338078",
+   "lat": -29.8531229,
+   "lng": 31.0338078,
+   "source": "osm"
+  },
+  {
+   "id": "a682125271",
+   "nom": "Durban Holocaust & Genocide Centre",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8492911,31.0339745",
+   "lat": -29.8492911,
+   "lng": 31.0339745,
+   "source": "osm"
+  },
+  {
+   "id": "a6211036752",
+   "nom": "uMphafa",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8485736,31.0081096",
+   "lat": -29.8485736,
+   "lng": 31.0081096,
+   "source": "osm"
+  },
+  {
+   "id": "a6211036729",
+   "nom": "Butterfly Habitat",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8482536,31.0079373",
+   "lat": -29.8482536,
+   "lng": 31.0079373,
+   "source": "osm"
+  },
+  {
+   "id": "a6211036723",
+   "nom": "Botanic Gazebo",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8475464,31.0079193",
+   "lat": -29.8475464,
+   "lng": 31.0079193,
+   "source": "osm"
+  },
+  {
+   "id": "a6211036728",
+   "nom": "Lake Area - Currie's Fountain",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-29.8480131,31.0068268",
+   "lat": -29.8480131,
+   "lng": 31.0068268,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

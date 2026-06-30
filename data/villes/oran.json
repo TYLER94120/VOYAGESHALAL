@@ -1,76 +1,148 @@
 {
-  "slug": "oran",
-  "nom": "Oran",
-  "pays": "Algérie",
-  "pays_slug": "algerie",
-  "continent": "Afrique",
-  "region": "Afrique du Nord",
-  "coordonnees": {
-    "lat": 35.6971,
-    "lng": -0.6308
+ "slug": "oran",
+ "nom": "Oran",
+ "pays": "Algérie",
+ "pays_slug": "algerie",
+ "continent": "Afrique",
+ "region": "Afrique du Nord",
+ "coordonnees": {
+  "lat": 35.6971,
+  "lng": -0.6308
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Grande ville côtière de l'ouest algérien, Oran séduit par son front de mer, le fort de Santa Cruz et la mosquée du Pacha.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Plage_madagh_2%C3%A9me_%2C_Oran_%2C_Algerie.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Plage_madagh_2%C3%A9me_%2C_Oran_%2C_Algerie.jpg",
+ "metaDescription": "Grande ville côtière de l'ouest algérien, Oran séduit par son front de mer, le fort de Santa Cruz et la mosquée du Pacha.",
+ "statistiques": {
+  "restaurants_halal": 7,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Restaurant Les Voyageurs",
+   "type": "regional, soup, fast food, couscous",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7020952,-0.6439004",
+   "lat": 35.7020952,
+   "lng": -0.6439004,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Grande ville côtière de l'ouest algérien, Oran séduit par son front de mer, le fort de Santa Cruz et la mosquée du Pacha.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Plage_madagh_2%C3%A9me_%2C_Oran_%2C_Algerie.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Plage_madagh_2%C3%A9me_%2C_Oran_%2C_Algerie.jpg",
-  "metaDescription": "Grande ville côtière de l'ouest algérien, Oran séduit par son front de mer, le fort de Santa Cruz et la mosquée du Pacha.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Snack Family au feu de bois",
+   "type": "pizza, sandwich, tacos",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7115556,-0.6118447",
+   "lat": 35.7115556,
+   "lng": -0.6118447,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Marmitta",
+   "type": "noodles, breakfast, arab, tea, coffee shop",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.7041131,-0.635153",
+   "lat": 35.7041131,
+   "lng": -0.635153,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Oran",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Oran",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Oran%20Oran"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Fort de Santa Cruz",
-      "categorie": "Histoire",
-      "description": "Citadelle perchée offrant une vue sur la baie.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Fort%20de%20Santa%20Cruz%20Oran"
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée du Pacha",
-      "categorie": "Spirituel",
-      "description": "Mosquée ottomane historique du centre.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20du%20Pacha%20Oran"
-    },
-    {
-      "id": "a3",
-      "nom": "Front de mer et corniche",
-      "categorie": "Loisirs",
-      "description": "Promenade animée le long de la Méditerranée.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Front%20de%20mer%20et%20corniche%20Oran"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "بيتزيريا الحياة",
+   "type": "italian pizza, kebab, burger, pizza, sandwich, sausage, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6898561,-0.6490563",
+   "lat": 35.6898561,
+   "lng": -0.6490563,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "bouziane",
+   "type": "burger, sandwich, french, sausage, local, italian, pizza, arab, barbecue",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6836439,-0.603165",
+   "lat": 35.6836439,
+   "lng": -0.603165,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "فود هوس",
+   "type": "kebab, friture, pizza, sandwich, ice cream",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6612403,-0.6323302",
+   "lat": 35.6612403,
+   "lng": -0.6323302,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم شعبي اسعار معقولة",
+   "type": "arab, regional, moroccan, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6945562,-0.5720112",
+   "lat": 35.6945562,
+   "lng": -0.5720112,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Oran",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Oran",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Oran%20Oran"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Fort de Santa Cruz",
+   "categorie": "Histoire",
+   "description": "Citadelle perchée offrant une vue sur la baie.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Fort%20de%20Santa%20Cruz%20Oran"
+  },
+  {
+   "id": "a2",
+   "nom": "Mosquée du Pacha",
+   "categorie": "Spirituel",
+   "description": "Mosquée ottomane historique du centre.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20du%20Pacha%20Oran"
+  },
+  {
+   "id": "a3",
+   "nom": "Front de mer et corniche",
+   "categorie": "Loisirs",
+   "description": "Promenade animée le long de la Méditerranée.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Front%20de%20mer%20et%20corniche%20Oran"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

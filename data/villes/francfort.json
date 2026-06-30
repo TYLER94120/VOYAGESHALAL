@@ -1,76 +1,478 @@
 {
-  "slug": "francfort",
-  "nom": "Francfort",
-  "pays": "Allemagne",
-  "pays_slug": "allemagne",
-  "continent": "Europe",
-  "region": "Allemagne",
-  "coordonnees": {
-    "lat": 50.1109,
-    "lng": 8.6821
+ "slug": "francfort",
+ "nom": "Francfort",
+ "pays": "Allemagne",
+ "pays_slug": "allemagne",
+ "continent": "Europe",
+ "region": "Allemagne",
+ "coordonnees": {
+  "lat": 50.1109,
+  "lng": 8.6821
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.6,
+ "description": "Métropole financière de l'Allemagne, Francfort possède une communauté musulmane active, des mosquées et de nombreuses adresses halal.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Frankfurt_Tempel_mit_Turm_2005_08_26.JPG/1920px-Frankfurt_Tempel_mit_Turm_2005_08_26.JPG",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Frankfurt_Tempel_mit_Turm_2005_08_26.JPG/1920px-Frankfurt_Tempel_mit_Turm_2005_08_26.JPG",
+ "metaDescription": "Métropole financière de l'Allemagne, Francfort possède une communauté musulmane active, des mosquées et de nombreuses adresses halal.",
+ "statistiques": {
+  "restaurants_halal": 40,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Medina",
+   "type": "steak house",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1124481,8.6849374",
+   "lat": 50.1124481,
+   "lng": 8.6849374,
+   "halalConfidence": "only",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.6,
-  "description": "Métropole financière de l'Allemagne, Francfort possède une communauté musulmane active, des mosquées et de nombreuses adresses halal.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Frankfurt_Tempel_mit_Turm_2005_08_26.JPG/1920px-Frankfurt_Tempel_mit_Turm_2005_08_26.JPG",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Frankfurt_Tempel_mit_Turm_2005_08_26.JPG/1920px-Frankfurt_Tempel_mit_Turm_2005_08_26.JPG",
-  "metaDescription": "Métropole financière de l'Allemagne, Francfort possède une communauté musulmane active, des mosquées et de nombreuses adresses halal.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.114882,8.6862027",
+   "lat": 50.114882,
+   "lng": 8.6862027,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Emir‘ Et Grill",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1135263,8.6893228",
+   "lat": 50.1135263,
+   "lng": 8.6893228,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Francfort",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Francfort",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Francfort%20Francfort"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Abu Bakr",
-      "categorie": "Spirituel",
-      "description": "L'une des principales mosquées de la ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Abu%20Bakr%20Francfort"
-    },
-    {
-      "id": "a2",
-      "nom": "Römerberg (vieille ville)",
-      "categorie": "Culture",
-      "description": "Place historique reconstruite à colombages.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=R%C3%B6merberg%20%28vieille%20ville%29%20Francfort"
-    },
-    {
-      "id": "a3",
-      "nom": "Quartier de la gare (halal food)",
-      "categorie": "Culture",
-      "description": "Restaurants turcs et orientaux halal.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20la%20gare%20%28halal%20food%29%20Francfort"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Saff-et",
+   "type": "steak house, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.114956,8.6890606",
+   "lat": 50.114956,
+   "lng": 8.6890606,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Pasta Davini",
+   "type": "italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1152513,8.6917978",
+   "lat": 50.1152513,
+   "lng": 8.6917978,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Loulan Food",
+   "type": "asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1086978,8.6703417",
+   "lat": 50.1086978,
+   "lng": 8.6703417,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "KFC",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1137586,8.6952239",
+   "lat": 50.1137586,
+   "lng": 8.6952239,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ya Mann we smoke 'n' Grill",
+   "type": "caribbean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1093381,8.6674799",
+   "lat": 50.1093381,
+   "lng": 8.6674799,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Megaron",
+   "type": "greek",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1280909,8.6910141",
+   "lat": 50.1280909,
+   "lng": 8.6910141,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mahnaz",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1092551,8.6528418",
+   "lat": 50.1092551,
+   "lng": 8.6528418,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Palu Grill Haus",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1217009,8.6478047",
+   "lat": 50.1217009,
+   "lng": 8.6478047,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "West Imbiss",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1191883,8.6398598",
+   "lat": 50.1191883,
+   "lng": 8.6398598,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Lumbini Tandoori King",
+   "type": "indian, nepalese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1415059,8.6807137",
+   "lat": 50.1415059,
+   "lng": 8.6807137,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "BrotHaus",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1023251,8.6344578",
+   "lat": 50.1023251,
+   "lng": 8.6344578,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kaiser Pizza",
+   "type": "pizza, salad, italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1081422,8.732246",
+   "lat": 50.1081422,
+   "lng": 8.732246,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Balkan Haus",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0868331,8.645753",
+   "lat": 50.0868331,
+   "lng": 8.645753,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Habibi Grill",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1268687,8.6265226",
+   "lat": 50.1268687,
+   "lng": 8.6265226,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Aha Food",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1321827,8.7370711",
+   "lat": 50.1321827,
+   "lng": 8.7370711,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Underdogs",
+   "type": "corn dog, american",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0809389,8.6366342",
+   "lat": 50.0809389,
+   "lng": 8.6366342,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Hey Jerry Sandwich & Co",
+   "type": "sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0847696,8.6301537",
+   "lat": 50.0847696,
+   "lng": 8.6301537,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Five Star Burger",
+   "type": "burger, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1275143,8.6045097",
+   "lat": 50.1275143,
+   "lng": 8.6045097,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Pizzeria Sun",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1447711,8.7504811",
+   "lat": 50.1447711,
+   "lng": 8.7504811,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Thang Long",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1566611,8.6331749",
+   "lat": 50.1566611,
+   "lng": 8.6331749,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Pizzeria Sun",
+   "type": "italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1673158,8.6774648",
+   "lat": 50.1673158,
+   "lng": 8.6774648,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Pizzeria per Fratelli",
+   "type": "italian, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0530915,8.6869593",
+   "lat": 50.0530915,
+   "lng": 8.6869593,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Keyf-I",
+   "type": "barbecue, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0529575,8.6950789",
+   "lat": 50.0529575,
+   "lng": 8.6950789,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "MyDöner",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0523109,8.6950592",
+   "lat": 50.0523109,
+   "lng": 8.6950592,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Burguette French Style",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0507913,8.6951041",
+   "lat": 50.0507913,
+   "lng": 8.6951041,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Izz’ET Steinofen & Holzkohlegrill",
+   "type": "barbecue, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0507069,8.695094",
+   "lat": 50.0507069,
+   "lng": 8.695094,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Harput",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1121976,8.6792376",
+   "lat": 50.1121976,
+   "lng": 8.6792376,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Havanda",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1131231,8.6807549",
+   "lat": 50.1131231,
+   "lng": 8.6807549,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Picknick Café City",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1115475,8.6784872",
+   "lat": 50.1115475,
+   "lng": 8.6784872,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tonbul",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1125135,8.6857358",
+   "lat": 50.1125135,
+   "lng": 8.6857358,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Different Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1135947,8.6836107",
+   "lat": 50.1135947,
+   "lng": 8.6836107,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nazar Döner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1146226,8.6844133",
+   "lat": 50.1146226,
+   "lng": 8.6844133,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nazar Döner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1146223,8.6783622",
+   "lat": 50.1146223,
+   "lng": 8.6783622,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mangal Et Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1151396,8.6865297",
+   "lat": 50.1151396,
+   "lng": 8.6865297,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Toprak Kebap Haus",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.1155268,8.6861723",
+   "lat": 50.1155268,
+   "lng": 8.6861723,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dreihelden",
+   "type": "kebab, pizza, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.114656,8.6892909",
+   "lat": 50.114656,
+   "lng": 8.6892909,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "KaptaN Döner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.116674,8.6858249",
+   "lat": 50.116674,
+   "lng": 8.6858249,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Francfort",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Francfort",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Francfort%20Francfort"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Abu Bakr",
+   "categorie": "Spirituel",
+   "description": "L'une des principales mosquées de la ville.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Abu%20Bakr%20Francfort"
+  },
+  {
+   "id": "a2",
+   "nom": "Römerberg (vieille ville)",
+   "categorie": "Culture",
+   "description": "Place historique reconstruite à colombages.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=R%C3%B6merberg%20%28vieille%20ville%29%20Francfort"
+  },
+  {
+   "id": "a3",
+   "nom": "Quartier de la gare (halal food)",
+   "categorie": "Culture",
+   "description": "Restaurants turcs et orientaux halal.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20la%20gare%20%28halal%20food%29%20Francfort"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

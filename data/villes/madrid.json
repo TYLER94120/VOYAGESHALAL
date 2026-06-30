@@ -1,76 +1,478 @@
 {
-  "slug": "madrid",
-  "nom": "Madrid",
-  "pays": "Espagne",
-  "pays_slug": "espagne",
-  "continent": "Europe",
-  "region": "Europe du Sud",
-  "coordonnees": {
-    "lat": 40.4168,
-    "lng": -3.7038
+ "slug": "madrid",
+ "nom": "Madrid",
+ "pays": "Espagne",
+ "pays_slug": "espagne",
+ "continent": "Europe",
+ "region": "Europe du Sud",
+ "coordonnees": {
+  "lat": 40.4168,
+  "lng": -3.7038
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.6,
+ "description": "Capitale espagnole dynamique, Madrid possède le centre culturel islamique (grande mosquée M-30) et une scène halal en plein essor.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Royal_Palace_of_Madrid_03.jpg/1920px-Royal_Palace_of_Madrid_03.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Royal_Palace_of_Madrid_03.jpg/1920px-Royal_Palace_of_Madrid_03.jpg",
+ "metaDescription": "Capitale espagnole dynamique, Madrid possède le centre culturel islamique (grande mosquée M-30) et une scène halal en plein essor.",
+ "statistiques": {
+  "restaurants_halal": 40,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Matbah",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4155382,-3.7022583",
+   "lat": 40.4155382,
+   "lng": -3.7022583,
+   "halalConfidence": "only",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.6,
-  "description": "Capitale espagnole dynamique, Madrid possède le centre culturel islamique (grande mosquée M-30) et une scène halal en plein essor.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Royal_Palace_of_Madrid_03.jpg/1920px-Royal_Palace_of_Madrid_03.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Royal_Palace_of_Madrid_03.jpg/1920px-Royal_Palace_of_Madrid_03.jpg",
-  "metaDescription": "Capitale espagnole dynamique, Madrid possède le centre culturel islamique (grande mosquée M-30) et une scène halal en plein essor.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "UrVan",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4152949,-3.7022058",
+   "lat": 40.4152949,
+   "lng": -3.7022058,
+   "halalConfidence": "only",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Yatai Market",
+   "type": "asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4129783,-3.7039453",
+   "lat": 40.4129783,
+   "lng": -3.7039453,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Madrid",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Madrid",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Madrid%20Madrid"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Centre culturel islamique (Mosquée M-30)",
-      "categorie": "Spirituel",
-      "description": "Plus grande mosquée d'Espagne.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Centre%20culturel%20islamique%20%28Mosqu%C3%A9e%20M-30%29%20Madrid"
-    },
-    {
-      "id": "a2",
-      "nom": "Palais Royal",
-      "categorie": "Histoire",
-      "description": "Vaste palais et jardins au coeur de la ville.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Palais%20Royal%20Madrid"
-    },
-    {
-      "id": "a3",
-      "nom": "Quartier de Lavapiés",
-      "categorie": "Culture",
-      "description": "Quartier cosmopolite aux nombreuses adresses halal.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20Lavapi%C3%A9s%20Madrid"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Restaurante Atxuri",
+   "type": "spanish, arab, palestinian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4081419,-3.6982442",
+   "lat": 40.4081419,
+   "lng": -3.6982442,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "La nueva troje Chamberí",
+   "type": "burger, breakfast, spanish, tex-mex, peruvian, brunch, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4294555,-3.703975",
+   "lat": 40.4294555,
+   "lng": -3.703975,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ankara Food",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4060124,-3.693159",
+   "lat": 40.4060124,
+   "lng": -3.693159,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sabor Nusantara",
+   "type": "indonesian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4359248,-3.6998372",
+   "lat": 40.4359248,
+   "lng": -3.6998372,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Vips",
+   "type": "international",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4141002,-3.6698593",
+   "lat": 40.4141002,
+   "lng": -3.6698593,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "ArArt Gyros",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4509522,-3.784932",
+   "lat": 40.4509522,
+   "lng": -3.784932,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Yeamin Istanbul",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4152578,-3.7022636",
+   "lat": 40.4152578,
+   "lng": -3.7022636,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "City Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4159227,-3.7013396",
+   "lat": 40.4159227,
+   "lng": -3.7013396,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Edessa Doner Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4146205,-3.7031391",
+   "lat": 40.4146205,
+   "lng": -3.7031391,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istambul",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.417346,-3.7066728",
+   "lat": 40.417346,
+   "lng": -3.7066728,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sindibad",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4169183,-3.7074603",
+   "lat": 40.4169183,
+   "lng": -3.7074603,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "El Jeque",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4195344,-3.7030352",
+   "lat": 40.4195344,
+   "lng": -3.7030352,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Quds",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4196485,-3.7037987",
+   "lat": 40.4196485,
+   "lng": -3.7037987,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "mune",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4147076,-3.6996208",
+   "lat": 40.4147076,
+   "lng": -3.6996208,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Grill & Pizza",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4193473,-3.7080096",
+   "lat": 40.4193473,
+   "lng": -3.7080096,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Damascus Gate",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4201027,-3.7074789",
+   "lat": 40.4201027,
+   "lng": -3.7074789,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shisha",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4199733,-3.7078185",
+   "lat": 40.4199733,
+   "lng": -3.7078185,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bósforos",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4206796,-3.700751",
+   "lat": 40.4206796,
+   "lng": -3.700751,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nemrut",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4177915,-3.71009",
+   "lat": 40.4177915,
+   "lng": -3.71009,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Miranda",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4136579,-3.6988496",
+   "lat": 40.4136579,
+   "lng": -3.6988496,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Byblos",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4217326,-3.7046742",
+   "lat": 40.4217326,
+   "lng": -3.7046742,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sultan Palast",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4203351,-3.6985887",
+   "lat": 40.4203351,
+   "lng": -3.6985887,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Be Beirut",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4121093,-3.7072714",
+   "lat": 40.4121093,
+   "lng": -3.7072714,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kurdistan Döner Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4125899,-3.6993113",
+   "lat": 40.4125899,
+   "lng": -3.6993113,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Xiangzili Bar Restaurante",
+   "type": "arab, asian, oriental, noodles",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4220815,-3.706348",
+   "lat": 40.4220815,
+   "lng": -3.706348,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Peñuco",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.411552,-3.7074434",
+   "lat": 40.411552,
+   "lng": -3.7074434,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Nassim",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4213716,-3.7092439",
+   "lat": 40.4213716,
+   "lng": -3.7092439,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bósforos",
+   "type": "chicken, kebab, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4221131,-3.6996301",
+   "lat": 40.4221131,
+   "lng": -3.6996301,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mundo Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4221403,-3.6996612",
+   "lat": 40.4221403,
+   "lng": -3.6996612,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al-Aman II",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4218999,-3.7103685",
+   "lat": 40.4218999,
+   "lng": -3.7103685,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Summaq",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4240194,-3.7023192",
+   "lat": 40.4240194,
+   "lng": -3.7023192,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebabchi Jalo",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4097056,-3.7008873",
+   "lat": 40.4097056,
+   "lng": -3.7008873,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sol de Beirut",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4201695,-3.7127179",
+   "lat": 40.4201695,
+   "lng": -3.7127179,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Falafelería",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4243147,-3.701155",
+   "lat": 40.4243147,
+   "lng": -3.701155,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Vira Vira",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4245138,-3.7021689",
+   "lat": 40.4245138,
+   "lng": -3.7021689,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Desh",
+   "type": "bangladeshi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4087136,-3.7022259",
+   "lat": 40.4087136,
+   "lng": -3.7022259,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nemrut",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=40.4239319,-3.7101805",
+   "lat": 40.4239319,
+   "lng": -3.7101805,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Madrid",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Madrid",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Madrid%20Madrid"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Centre culturel islamique (Mosquée M-30)",
+   "categorie": "Spirituel",
+   "description": "Plus grande mosquée d'Espagne.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Centre%20culturel%20islamique%20%28Mosqu%C3%A9e%20M-30%29%20Madrid"
+  },
+  {
+   "id": "a2",
+   "nom": "Palais Royal",
+   "categorie": "Histoire",
+   "description": "Vaste palais et jardins au coeur de la ville.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Palais%20Royal%20Madrid"
+  },
+  {
+   "id": "a3",
+   "nom": "Quartier de Lavapiés",
+   "categorie": "Culture",
+   "description": "Quartier cosmopolite aux nombreuses adresses halal.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20Lavapi%C3%A9s%20Madrid"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

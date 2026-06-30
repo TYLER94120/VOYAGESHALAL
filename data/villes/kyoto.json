@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg/1920px-Kiyomizu-dera%2C_Kyoto%2C_November_2016_-01.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 5,
+  "mosquees": 7,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,357 @@
   "ville non-musulmane",
   "asie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "ROSE CAFE RESTAURANT",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.0215957,135.7695472",
+   "lat": 35.0215957,
+   "lng": 135.7695472,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Baraka",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.0011254,135.7685054",
+   "lat": 35.0011254,
+   "lng": 135.7685054,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arash's Kitchen",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.0176094,135.7788957",
+   "lat": 35.0176094,
+   "lng": 135.7788957,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "肉料理 川もり",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.0094121,135.7812066",
+   "lat": 35.0094121,
+   "lng": 135.7812066,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Gojo Paradiso Japanese-Mediterranean Restaurant & Bar",
+   "type": "lebanese, breakfast, tea, italian pizza, mediterranean, coffee shop",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.9935655,135.7656591",
+   "lat": 34.9935655,
+   "lng": 135.7656591,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m2720431751",
+   "nom": "京都マスジド",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.0218249,135.7695781",
+   "lat": 35.0218249,
+   "lng": 135.7695781,
+   "source": "osm"
+  },
+  {
+   "id": "m4968235322",
+   "nom": "Daiun-in;Daiun-In Temple",
+   "type": "Mosquée",
+   "adresse": "Gion-machi Minachi-gawa",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.0021092,135.7800589",
+   "lat": 35.0021092,
+   "lng": 135.7800589,
+   "source": "osm"
+  },
+  {
+   "id": "m336641107",
+   "nom": "清水寺",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=34.9944239,135.7844825",
+   "lat": 34.9944239,
+   "lng": 135.7844825,
+   "source": "osm"
+  },
+  {
+   "id": "m899425893",
+   "nom": "本殿",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=34.967173,135.7733546",
+   "lat": 34.967173,
+   "lng": 135.7733546,
+   "source": "osm"
+  },
+  {
+   "id": "m98103477",
+   "nom": "龍安寺",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.0334933,135.7180571",
+   "lat": 35.0334933,
+   "lng": 135.7180571,
+   "source": "osm"
+  },
+  {
+   "id": "m98103060",
+   "nom": "仁和寺",
+   "type": "Mosquée",
+   "adresse": "京都市",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.0297494,135.7140311",
+   "lat": 35.0297494,
+   "lng": 135.7140311,
+   "source": "osm"
+  },
+  {
+   "id": "m1312192381",
+   "nom": "源光庵",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.0547677,135.7317934",
+   "lat": 35.0547677,
+   "lng": 135.7317934,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a13333439182",
+   "nom": "パートナーシティ提携記念碑",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0113716,135.7676657",
+   "lat": 35.0113716,
+   "lng": 135.7676657,
+   "source": "osm"
+  },
+  {
+   "id": "a13333343671",
+   "nom": "京都市市民憲章",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0112397,135.7686185",
+   "lat": 35.0112397,
+   "lng": 135.7686185,
+   "source": "osm"
+  },
+  {
+   "id": "a13333343672",
+   "nom": "世界遺産条約採択40周年記念",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0112079,135.7686131",
+   "lat": 35.0112079,
+   "lng": 135.7686131,
+   "source": "osm"
+  },
+  {
+   "id": "a13333343673",
+   "nom": "京都市役所",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0111705,135.7686061",
+   "lat": 35.0111705,
+   "lng": 135.7686061,
+   "source": "osm"
+  },
+  {
+   "id": "a13333343674",
+   "nom": "京都歴史都市会議 京都宣言",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0111694,135.7686286",
+   "lat": 35.0111694,
+   "lng": 135.7686286,
+   "source": "osm"
+  },
+  {
+   "id": "a11118140689",
+   "nom": "桂小五郎像",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0118959,135.7691959",
+   "lat": 35.0118959,
+   "lng": 135.7691959,
+   "source": "osm"
+  },
+  {
+   "id": "a11118140690",
+   "nom": "桂小五郎像",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0118995,135.7691957",
+   "lat": 35.0118995,
+   "lng": 135.7691957,
+   "source": "osm"
+  },
+  {
+   "id": "a4853385413",
+   "nom": "明治天皇行幸所織工場阯",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0123519,135.7691127",
+   "lat": 35.0123519,
+   "lng": 135.7691127,
+   "source": "osm"
+  },
+  {
+   "id": "a4641009568",
+   "nom": "後伏見天皇七世皇孫日承王墓",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0104435,135.7685522",
+   "lat": 35.0104435,
+   "lng": 135.7685522,
+   "source": "osm"
+  },
+  {
+   "id": "a4853385408",
+   "nom": "明治天皇行幸所勸業場阯",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0113024,135.7696009",
+   "lat": 35.0113024,
+   "lng": 135.7696009,
+   "source": "osm"
+  },
+  {
+   "id": "a4853385407",
+   "nom": "長州屋敷址",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0112218,135.7695946",
+   "lat": 35.0112218,
+   "lng": 135.7695946,
+   "source": "osm"
+  },
+  {
+   "id": "a4641009081",
+   "nom": "贈正一位織田信長公御廟所",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.010463,135.7672538",
+   "lat": 35.010463,
+   "lng": 135.7672538,
+   "source": "osm"
+  },
+  {
+   "id": "a4641009080",
+   "nom": "大本山本能寺",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0104542,135.7672541",
+   "lat": 35.0104542,
+   "lng": 135.7672541,
+   "source": "osm"
+  },
+  {
+   "id": "a7319933585",
+   "nom": "本能寺大寶殿宝物館",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0102889,135.7675663",
+   "lat": 35.0102889,
+   "lng": 135.7675663,
+   "source": "osm"
+  },
+  {
+   "id": "a4641009603",
+   "nom": "本坊 文化会館 建設功労者之碑",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0102463,135.7686006",
+   "lat": 35.0102463,
+   "lng": 135.7686006,
+   "source": "osm"
+  },
+  {
+   "id": "a4641009067",
+   "nom": "南無妙法蓮華経",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0103306,135.7673265",
+   "lat": 35.0103306,
+   "lng": 135.7673265,
+   "source": "osm"
+  },
+  {
+   "id": "a4641009066",
+   "nom": "立正安国",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.0103465,135.7672805",
+   "lat": 35.0103465,
+   "lng": 135.7672805,
+   "source": "osm"
+  },
+  {
+   "id": "a12782918003",
+   "nom": "Wright Antiques",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.013122,135.7680852",
+   "lat": 35.013122,
+   "lng": 135.7680852,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

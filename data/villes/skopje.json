@@ -1,76 +1,258 @@
 {
-  "slug": "skopje",
-  "nom": "Skopje",
-  "pays": "Macédoine du Nord",
-  "pays_slug": "macedoine-du-nord",
-  "continent": "Europe",
-  "region": "Balkans",
-  "coordonnees": {
-    "lat": 41.9981,
-    "lng": 21.4254
+ "slug": "skopje",
+ "nom": "Skopje",
+ "pays": "Macédoine du Nord",
+ "pays_slug": "macedoine-du-nord",
+ "continent": "Europe",
+ "region": "Balkans",
+ "coordonnees": {
+  "lat": 41.9981,
+  "lng": 21.4254
+ },
+ "codeISO": "",
+ "score_halal": 4.4,
+ "halalScore": 8.8,
+ "description": "Capitale macédonienne au vieux bazar ottoman, l'un des plus grands des Balkans, avec mosquées et hammams historiques.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Alexander_the_Great_statue_and_fountain_in_Skopje_%28night%29.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/8/81/Alexander_the_Great_statue_and_fountain_in_Skopje_%28night%29.jpg",
+ "metaDescription": "Capitale macédonienne au vieux bazar ottoman, l'un des plus grands des Balkans, avec mosquées et hammams historiques.",
+ "statistiques": {
+  "restaurants_halal": 18,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Ќебапчилница Дукат",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.005752,21.5034294",
+   "lat": 42.005752,
+   "lng": 21.5034294,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.4,
-  "halalScore": 8.8,
-  "description": "Capitale macédonienne au vieux bazar ottoman, l'un des plus grands des Balkans, avec mosquées et hammams historiques.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Alexander_the_Great_statue_and_fountain_in_Skopje_%28night%29.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/8/81/Alexander_the_Great_statue_and_fountain_in_Skopje_%28night%29.jpg",
-  "metaDescription": "Capitale macédonienne au vieux bazar ottoman, l'un des plus grands des Balkans, avec mosquées et hammams historiques.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Крал",
+   "type": "burger, hot dog",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.0622385,21.4505805",
+   "lat": 42.0622385,
+   "lng": 21.4505805,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Gostilnica Estel",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9990664,21.4236496",
+   "lat": 41.9990664,
+   "lng": 21.4236496,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Skopje",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Skopje",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Skopje%20Skopje"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Vieux Bazar de Skopje",
-      "categorie": "Culture",
-      "description": "Plus grand bazar ottoman des Balkans hors Istanbul.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Vieux%20Bazar%20de%20Skopje%20Skopje"
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée Mustafa Pacha",
-      "categorie": "Spirituel",
-      "description": "Élégante mosquée ottomane du XVe siècle.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Mustafa%20Pacha%20Skopje"
-    },
-    {
-      "id": "a3",
-      "nom": "Forteresse de Kale",
-      "categorie": "Histoire",
-      "description": "Citadelle dominant la vieille ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Forteresse%20de%20Kale%20Skopje"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Гирадико",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9990725,21.4217901",
+   "lat": 41.9990725,
+   "lng": 21.4217901,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Plaset",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9992911,21.4208755",
+   "lat": 41.9992911,
+   "lng": 21.4208755,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Кај Жабар",
+   "type": "salad, steak house, chicken, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.0013841,21.4287406",
+   "lat": 42.0013841,
+   "lng": 21.4287406,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Кафана \"Дебар Маало\"",
+   "type": "savory pancakes, german, chicken, diner, american, local, barbecue, tea, fine dining, cake, pasta, international, french, greek, seafood, fish and chips, pancake, sandwich, coffee shop, balkan, mediterranean, croatian, ramen, turkish, fish, kebab, grill",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.000778,21.4201149",
+   "lat": 42.000778,
+   "lng": 21.4201149,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Дебар Маало",
+   "type": "chicken, diner, beef bowl, american, ice cream, local, tea, pizza, burger, cake, pasta, french, italian pizza, seafood, crepe, pancake, sandwich, coffee shop, balkan, mediterranean, croatian, fish, kebab, breakfast, grill",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.0013292,21.4205747",
+   "lat": 42.0013292,
+   "lng": 21.4205747,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Destan",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9947506,21.4319604",
+   "lat": 41.9947506,
+   "lng": 21.4319604,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Боко",
+   "type": "burger, regional, grill, coffee shop, balkan, kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9970867,21.4171233",
+   "lat": 41.9970867,
+   "lng": 21.4171233,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Anatolia Pide & Kebab",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9916564,21.4278085",
+   "lat": 41.9916564,
+   "lng": 21.4278085,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Gelateria Mony",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9989349,21.4353025",
+   "lat": 41.9989349,
+   "lng": 21.4353025,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Engin Cigköfte (vegetarian)",
+   "type": "sandwich, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9997339,21.4358076",
+   "lat": 41.9997339,
+   "lng": 21.4358076,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mezze Stanica 33",
+   "type": "seafood, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9899516,21.4269282",
+   "lat": 41.9899516,
+   "lng": 21.4269282,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Medo",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.0005187,21.4371301",
+   "lat": 42.0005187,
+   "lng": 21.4371301,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Галерија 7",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.0011507,21.4379661",
+   "lat": 42.0011507,
+   "lng": 21.4379661,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Рустикана",
+   "type": "burger, regional, breakfast, grill, mediterranean, balkan, chicken, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9997295,21.4078483",
+   "lat": 41.9997295,
+   "lng": 21.4078483,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Македонска куќа",
+   "type": "burger, regional, ice cream, grill, crepe, coffee shop, balkan, pancake, chicken, diner, fish, breakfast, tea, sausage, local, fine dining, kebab, barbecue",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.9960058,21.4021848",
+   "lat": 41.9960058,
+   "lng": 21.4021848,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Skopje",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Skopje",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Skopje%20Skopje"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Vieux Bazar de Skopje",
+   "categorie": "Culture",
+   "description": "Plus grand bazar ottoman des Balkans hors Istanbul.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Vieux%20Bazar%20de%20Skopje%20Skopje"
+  },
+  {
+   "id": "a2",
+   "nom": "Mosquée Mustafa Pacha",
+   "categorie": "Spirituel",
+   "description": "Élégante mosquée ottomane du XVe siècle.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Mustafa%20Pacha%20Skopje"
+  },
+  {
+   "id": "a3",
+   "nom": "Forteresse de Kale",
+   "categorie": "Histoire",
+   "description": "Citadelle dominant la vieille ville.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Forteresse%20de%20Kale%20Skopje"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

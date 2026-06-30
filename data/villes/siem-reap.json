@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Cambodge.-_Siem_Reap%2C_Cambodge.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 11,
+  "mosquees": 1,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,351 @@
   "ville non-musulmane",
   "asie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Kebab & Falafel Time Halal & Vegan Food & Cafe",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.3538586,103.8496251",
+   "lat": 13.3538586,
+   "lng": 103.8496251,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Theatre Restaurant",
+   "type": "buffet, asian, western, apsara",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.380342,103.8593835",
+   "lat": 13.380342,
+   "lng": 103.8593835,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Deniz Vegan & Vegetarian Kitchen",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.3568625,103.8506805",
+   "lat": 13.3568625,
+   "lng": 103.8506805,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sway away",
+   "type": "turkish, international",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.3577342,103.8529858",
+   "lat": 13.3577342,
+   "lng": 103.8529858,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Oliveo",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.3548501,103.8505311",
+   "lat": 13.3548501,
+   "lng": 103.8505311,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The R.E.A.L Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.3547025,103.8519503",
+   "lat": 13.3547025,
+   "lng": 103.8519503,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Atmosphère",
+   "type": "lebanese, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.353768,103.851834",
+   "lat": 13.353768,
+   "lng": 103.851834,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mezze Bar Club",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.3549207,103.8541929",
+   "lat": 13.3549207,
+   "lng": 103.8541929,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tavern Bistro",
+   "type": "arab, greek, italian pizza, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.3541119,103.8531832",
+   "lat": 13.3541119,
+   "lng": 103.8531832,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Snow Yogurt",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.3576877,103.8577689",
+   "lat": 13.3576877,
+   "lng": 103.8577689,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Elia Greek Kitchen",
+   "type": "greek, grill, coffee shop, fish, chicken, diner, seafood, tea, turkish, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=13.3543998,103.8556116",
+   "lat": 13.3543998,
+   "lng": 103.8556116,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m395152962",
+   "nom": "Al-Nikmatul",
+   "type": "Mosquée",
+   "adresse": "Siem Reap",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=13.3530267,103.8487217",
+   "lat": 13.3530267,
+   "lng": 103.8487217,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a4816591324",
+   "nom": "ArtBox",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3618489,103.8320969",
+   "lat": 13.3618489,
+   "lng": 103.8320969,
+   "source": "osm"
+  },
+  {
+   "id": "a6349216296",
+   "nom": "Garuda",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3612147,103.8572923",
+   "lat": 13.3612147,
+   "lng": 103.8572923,
+   "source": "osm"
+  },
+  {
+   "id": "a4554959791",
+   "nom": "Artwork Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3564104,103.8540101",
+   "lat": 13.3564104,
+   "lng": 103.8540101,
+   "source": "osm"
+  },
+  {
+   "id": "a786233120",
+   "nom": "យាយទេព",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3623122,103.8586356",
+   "lat": 13.3623122,
+   "lng": 103.8586356,
+   "source": "osm"
+  },
+  {
+   "id": "a322700733",
+   "nom": "Angkor National Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3663847,103.8595207",
+   "lat": 13.3663847,
+   "lng": 103.8595207,
+   "source": "osm"
+  },
+  {
+   "id": "a11209642783",
+   "nom": "Cirque Phare",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3538787,103.8389515",
+   "lat": 13.3538787,
+   "lng": 103.8389515,
+   "source": "osm"
+  },
+  {
+   "id": "a457433263",
+   "nom": "Royal Gardens",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3629326,103.8590254",
+   "lat": 13.3629326,
+   "lng": 103.8590254,
+   "source": "osm"
+  },
+  {
+   "id": "a6246267881",
+   "nom": "Tribe",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3570227,103.8567169",
+   "lat": 13.3570227,
+   "lng": 103.8567169,
+   "source": "osm"
+  },
+  {
+   "id": "a4493451289",
+   "nom": "នាងនាគ",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3616936,103.8598813",
+   "lat": 13.3616936,
+   "lng": 103.8598813,
+   "source": "osm"
+  },
+  {
+   "id": "a4279278591",
+   "nom": "Pub Street",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3548263,103.8547837",
+   "lat": 13.3548263,
+   "lng": 103.8547837,
+   "source": "osm"
+  },
+  {
+   "id": "a4349322489",
+   "nom": "Elephant Statue",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.353747,103.8536932",
+   "lat": 13.353747,
+   "lng": 103.8536932,
+   "source": "osm"
+  },
+  {
+   "id": "a219627849",
+   "nom": "Angkor Green Gardens",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3747611,103.8303796",
+   "lat": 13.3747611,
+   "lng": 103.8303796,
+   "source": "osm"
+  },
+  {
+   "id": "a645727695",
+   "nom": "Artisans d'Angkor",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3526196,103.8518371",
+   "lat": 13.3526196,
+   "lng": 103.8518371,
+   "source": "osm"
+  },
+  {
+   "id": "a5126474304",
+   "nom": "Memorial for fallen soldiers",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3753899,103.8590546",
+   "lat": 13.3753899,
+   "lng": 103.8590546,
+   "source": "osm"
+  },
+  {
+   "id": "a6349202235",
+   "nom": "Breastfeeding Woman",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3566659,103.8579571",
+   "lat": 13.3566659,
+   "lng": 103.8579571,
+   "source": "osm"
+  },
+  {
+   "id": "a4816601737",
+   "nom": "Diwo Gallery 2",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3531137,103.854251",
+   "lat": 13.3531137,
+   "lng": 103.854251,
+   "source": "osm"
+  },
+  {
+   "id": "a5201648621",
+   "nom": "Brahma Statue",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3527869,103.8543958",
+   "lat": 13.3527869,
+   "lng": 103.8543958,
+   "source": "osm"
+  },
+  {
+   "id": "a785382253",
+   "nom": "2",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=13.3530969,103.8549972",
+   "lat": 13.3530969,
+   "lng": 103.8549972,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

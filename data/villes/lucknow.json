@@ -1,76 +1,98 @@
 {
-  "slug": "lucknow",
-  "nom": "Lucknow",
-  "pays": "Inde",
-  "pays_slug": "inde",
-  "continent": "Asie",
-  "region": "Inde",
-  "coordonnees": {
-    "lat": 26.8467,
-    "lng": 80.9462
+ "slug": "lucknow",
+ "nom": "Lucknow",
+ "pays": "Inde",
+ "pays_slug": "inde",
+ "continent": "Asie",
+ "region": "Inde",
+ "coordonnees": {
+  "lat": 26.8467,
+  "lng": 80.9462
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "Capitale de la culture nawabi, Lucknow est réputée pour son raffinement, ses monuments moghols-awadhi et sa cuisine halal légendaire (kebabs, biryani).",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Lucknowuniversity.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/67/Lucknowuniversity.jpg",
+ "metaDescription": "Capitale de la culture nawabi, Lucknow est réputée pour son raffinement, ses monuments moghols-awadhi et sa cuisine halal légendaire (kebabs, biryani).",
+ "statistiques": {
+  "restaurants_halal": 2,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Sahu Kathi Chicken Egg Roll Wala",
+   "type": "indian, chicken, roll",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8847293,80.9956034",
+   "lat": 26.8847293,
+   "lng": 80.9956034,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.0,
-  "description": "Capitale de la culture nawabi, Lucknow est réputée pour son raffinement, ses monuments moghols-awadhi et sa cuisine halal légendaire (kebabs, biryani).",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Lucknowuniversity.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/67/Lucknowuniversity.jpg",
-  "metaDescription": "Capitale de la culture nawabi, Lucknow est réputée pour son raffinement, ses monuments moghols-awadhi et sa cuisine halal légendaire (kebabs, biryani).",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Gareeb Nawaz hotel",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.8854688,81.0058951",
+   "lat": 26.8854688,
+   "lng": 81.0058951,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Lucknow",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Lucknow",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Lucknow%20Lucknow"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Bara Imambara",
+   "categorie": "Histoire",
+   "description": "Complexe monumental au célèbre labyrinthe Bhul Bhulaiya.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Bara%20Imambara%20Lucknow"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "id": "a2",
+   "nom": "Rumi Darwaza",
+   "categorie": "Histoire",
+   "description": "Porte monumentale emblématique de la ville.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Rumi%20Darwaza%20Lucknow"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Lucknow",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Lucknow",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Lucknow%20Lucknow"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Bara Imambara",
-      "categorie": "Histoire",
-      "description": "Complexe monumental au célèbre labyrinthe Bhul Bhulaiya.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Bara%20Imambara%20Lucknow"
-    },
-    {
-      "id": "a2",
-      "nom": "Rumi Darwaza",
-      "categorie": "Histoire",
-      "description": "Porte monumentale emblématique de la ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Rumi%20Darwaza%20Lucknow"
-    },
-    {
-      "id": "a3",
-      "nom": "Mosquée Asfi",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée du complexe Imambara.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Asfi%20Lucknow"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "id": "a3",
+   "nom": "Mosquée Asfi",
+   "categorie": "Spirituel",
+   "description": "Grande mosquée du complexe Imambara.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Asfi%20Lucknow"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -10,8 +10,8 @@
   "lng": 141.3545
  },
  "codeISO": "JP",
- "score_halal": 3.0,
- "halalScore": 6.0,
+ "score_halal": 3,
+ "halalScore": 6,
  "villeNonMusulmane": true,
  "description": "Capitale d'Hokkaido, célèbre pour la neige. Quelques restaurants halal et lieux de prière pour les voyageurs.",
  "metaDescription": "Capitale d'Hokkaido, célèbre pour la neige. Quelques restaurants halal et lieux de prière pour les voyageurs.",
@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/5/54/SapporoCity_Skylines2020.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 1,
+  "mosquees": 2,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,262 @@
   "ville non-musulmane",
   "asie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "トルコカフェ＆レストラン LALE",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.0514262,141.3352455",
+   "lat": 43.0514262,
+   "lng": 141.3352455,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m6033502206",
+   "nom": "日本キリスト教団 札幌教会",
+   "type": "Mosquée",
+   "adresse": "札幌市",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=43.0634883,141.3570316",
+   "lat": 43.0634883,
+   "lng": 141.3570316,
+   "source": "osm"
+  },
+  {
+   "id": "m5640983224",
+   "nom": "札幌ﾏｽｼﾞｯﾄﾞ",
+   "type": "Mosquée",
+   "adresse": "3 Chome-1-10 Kita 14 Jōnishi, Kita-ku, Sapporo-shi, Hokkaidō 001-0014, Japan",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=43.0772781,141.3486199",
+   "lat": 43.0772781,
+   "lng": 141.3486199,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a6388839108",
+   "nom": "札幌冬季オリンピック聖火台",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0614823,141.3545234",
+   "lat": 43.0614823,
+   "lng": 141.3545234,
+   "source": "osm"
+  },
+  {
+   "id": "a6388839107",
+   "nom": "札幌市民憲章",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0613871,141.3544423",
+   "lat": 43.0613871,
+   "lng": 141.3544423,
+   "source": "osm"
+  },
+  {
+   "id": "a12021395298",
+   "nom": "明治天皇聖蹟",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0624554,141.3537831",
+   "lat": 43.0624554,
+   "lng": 141.3537831,
+   "source": "osm"
+  },
+  {
+   "id": "a64747104",
+   "nom": "札幌市時計台",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0625566,141.3536455",
+   "lat": 43.0625566,
+   "lng": 141.3536455,
+   "source": "osm"
+  },
+  {
+   "id": "a9504115746",
+   "nom": "小説家・武林無想庵 生誕地",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0603281,141.3545114",
+   "lat": 43.0603281,
+   "lng": 141.3545114,
+   "source": "osm"
+  },
+  {
+   "id": "a199758828",
+   "nom": "さっぽろテレビ塔",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0611129,141.3564484",
+   "lat": 43.0611129,
+   "lng": 141.3564484,
+   "source": "osm"
+  },
+  {
+   "id": "a12025412553",
+   "nom": "創成の川",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0628719,141.3565825",
+   "lat": 43.0628719,
+   "lng": 141.3565825,
+   "source": "osm"
+  },
+  {
+   "id": "a9072841150",
+   "nom": "日本の道100選の碑",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0606961,141.3518106",
+   "lat": 43.0606961,
+   "lng": 141.3518106,
+   "source": "osm"
+  },
+  {
+   "id": "a3365430760",
+   "nom": "500メートル美術館",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0610039,141.3576366",
+   "lat": 43.0610039,
+   "lng": 141.3576366,
+   "source": "osm"
+  },
+  {
+   "id": "a8948240184",
+   "nom": "北海道里程元標",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0598702,141.3575221",
+   "lat": 43.0598702,
+   "lng": 141.3575221,
+   "source": "osm"
+  },
+  {
+   "id": "a12761504401",
+   "nom": "まねきねこ　カラオケ",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0639544,141.3515963",
+   "lat": 43.0639544,
+   "lng": 141.3515963,
+   "source": "osm"
+  },
+  {
+   "id": "a12295860270",
+   "nom": "ギャラリー大通美術館",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0612529,141.3499209",
+   "lat": 43.0612529,
+   "lng": 141.3499209,
+   "source": "osm"
+  },
+  {
+   "id": "a5692358121",
+   "nom": "聖恩碑",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0602009,141.3497531",
+   "lat": 43.0602009,
+   "lng": 141.3497531,
+   "source": "osm"
+  },
+  {
+   "id": "a9012772141",
+   "nom": "札幌市道路元標",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0641938,141.3493831",
+   "lat": 43.0641938,
+   "lng": 141.3493831,
+   "source": "osm"
+  },
+  {
+   "id": "a12591941269",
+   "nom": "重要文化財北海道庁旧本庁舎",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0644202,141.3480133",
+   "lat": 43.0644202,
+   "lng": 141.3480133,
+   "source": "osm"
+  },
+  {
+   "id": "a5628197721",
+   "nom": "観覧車",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.056191,141.3510469",
+   "lat": 43.056191,
+   "lng": 141.3510469,
+   "source": "osm"
+  },
+  {
+   "id": "a12591780477",
+   "nom": "さっぽろ名所 新ラーメン横丁",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0554795,141.3541995",
+   "lat": 43.0554795,
+   "lng": 141.3541995,
+   "source": "osm"
+  },
+  {
+   "id": "a13658759804",
+   "nom": "ニッカウヰスキー",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.0554048,141.3536128",
+   "lat": 43.0554048,
+   "lng": 141.3536128,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

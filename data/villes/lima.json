@@ -20,8 +20,8 @@
  "imageAVenir": true,
  "imageCredit": "",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 5,
+  "mosquees": 1,
   "hotels": 0
  },
  "infoPratique": {
@@ -34,10 +34,291 @@
   "ville non-musulmane",
   "amérique du sud"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Arabic Fast Food",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-12.0507181,-77.0345818",
+   "lat": -12.0507181,
+   "lng": -77.0345818,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Marhaba",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-12.0847448,-77.0347268",
+   "lat": -12.0847448,
+   "lng": -77.0347268,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bereket Doner",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-12.0969193,-77.0355534",
+   "lat": -12.0969193,
+   "lng": -77.0355534,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Yala Food",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-12.1086634,-77.0383939",
+   "lat": -12.1086634,
+   "lng": -77.0383939,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Yiye Warma fast food",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-11.980371,-77.0699352",
+   "lat": -11.980371,
+   "lng": -77.0699352,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m1315440869",
+   "nom": "Asociación Islámica del Perú",
+   "type": "Mosquée",
+   "adresse": "Jirón Tacna",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-12.0938762,-77.0721275",
+   "lat": -12.0938762,
+   "lng": -77.0721275,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a6338630732",
+   "nom": "Combate del Dos de Mayo",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0463851,-77.0427655",
+   "lat": -12.0463851,
+   "lng": -77.0427655,
+   "source": "osm"
+  },
+  {
+   "id": "a1109179923",
+   "nom": "Museo Nacional de la Cultura Peruana",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0479085,-77.0431177",
+   "lat": -12.0479085,
+   "lng": -77.0431177,
+   "source": "osm"
+  },
+  {
+   "id": "a1932068272",
+   "nom": "Museo Universitario UNFV",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0474923,-77.0407621",
+   "lat": -12.0474923,
+   "lng": -77.0407621,
+   "source": "osm"
+  },
+  {
+   "id": "a7271080746",
+   "nom": "Mariscal Ramón Castilla",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.043382,-77.0428533",
+   "lat": -12.043382,
+   "lng": -77.0428533,
+   "source": "osm"
+  },
+  {
+   "id": "a620426792",
+   "nom": "Museo Gráfico El Peruano",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0507328,-77.041577",
+   "lat": -12.0507328,
+   "lng": -77.041577,
+   "source": "osm"
+  },
+  {
+   "id": "a4228842200",
+   "nom": "Museo Señor de los Milagros",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0451544,-77.0376031",
+   "lat": -12.0451544,
+   "lng": -77.0376031,
+   "source": "osm"
+  },
+  {
+   "id": "a4403558234",
+   "nom": "Federico Elguera",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0508457,-77.0384726",
+   "lat": -12.0508457,
+   "lng": -77.0384726,
+   "source": "osm"
+  },
+  {
+   "id": "a1932068196",
+   "nom": "Museo Etnográfico Amazónico del Centro Cultural José Pío Aza",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0431266,-77.0360474",
+   "lat": -12.0431266,
+   "lng": -77.0360474,
+   "source": "osm"
+  },
+  {
+   "id": "a4228842891",
+   "nom": "Casa de nacimiento de San Martin de Porres",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0433918,-77.0359022",
+   "lat": -12.0433918,
+   "lng": -77.0359022,
+   "source": "osm"
+  },
+  {
+   "id": "a4103930937",
+   "nom": "Museo Municipal del Teatro",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0464236,-77.0351358",
+   "lat": -12.0464236,
+   "lng": -77.0351358,
+   "source": "osm"
+  },
+  {
+   "id": "a4407581796",
+   "nom": "Casa Fernandini",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0450471,-77.0351457",
+   "lat": -12.0450471,
+   "lng": -77.0351457,
+   "source": "osm"
+  },
+  {
+   "id": "a5415986321",
+   "nom": "Yacana",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0505004,-77.0361479",
+   "lat": -12.0505004,
+   "lng": -77.0361479,
+   "source": "osm"
+  },
+  {
+   "id": "a5415977525",
+   "nom": "Don Lucho",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0512122,-77.0366397",
+   "lat": -12.0512122,
+   "lng": -77.0366397,
+   "source": "osm"
+  },
+  {
+   "id": "a13966203832",
+   "nom": "Santa Rosa de Lima",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0431018,-77.0356142",
+   "lat": -12.0431018,
+   "lng": -77.0356142,
+   "source": "osm"
+  },
+  {
+   "id": "a4458788105",
+   "nom": "Queirolo",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0513982,-77.036626",
+   "lat": -12.0513982,
+   "lng": -77.036626,
+   "source": "osm"
+  },
+  {
+   "id": "a5869082690",
+   "nom": "Pozo de los Deseos",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0426233,-77.0357339",
+   "lat": -12.0426233,
+   "lng": -77.0357339,
+   "source": "osm"
+  },
+  {
+   "id": "a466948890",
+   "nom": "Museo de Arqueología Josefina Ramos de Cox",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.052707,-77.0379193",
+   "lat": -12.052707,
+   "lng": -77.0379193,
+   "source": "osm"
+  },
+  {
+   "id": "a4404532345",
+   "nom": "Casa de nacimiento de Antonio Alarco",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-12.0437109,-77.0351083",
+   "lat": -12.0437109,
+   "lng": -77.0351083,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

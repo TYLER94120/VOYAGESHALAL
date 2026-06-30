@@ -19,7 +19,7 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Art_Deco_Buildings%2C_Ocean_Drive%2C_Miami_Beach%2C_Florida.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
+  "restaurants_halal": 4,
   "mosquees": 0,
   "hotels": 0
  },
@@ -33,10 +33,269 @@
   "ville non-musulmane",
   "amérique du nord"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Pollo Campero",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.7649174,-80.2404436",
+   "lat": 25.7649174,
+   "lng": -80.2404436,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Spitfire-Turkish Halal Food",
+   "type": "german, turkish, mediterranean, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.7877109,-80.1322152",
+   "lat": 25.7877109,
+   "lng": -80.1322152,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Basha Grill Kebab",
+   "type": "chicken, oriental, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.78819,-80.1315888",
+   "lat": 25.78819,
+   "lng": -80.1315888,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pita Pockets KB",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.6979871,-80.1639935",
+   "lat": 25.6979871,
+   "lng": -80.1639935,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
  "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "activites": [
+  {
+   "id": "a7639000811",
+   "nom": "Historic South Miami Avenue Sign",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7582809,-80.1946874",
+   "lat": 25.7582809,
+   "lng": -80.1946874,
+   "source": "osm"
+  },
+  {
+   "id": "a6583009095",
+   "nom": "Miami Riverwalk",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7689462,-80.1958978",
+   "lat": 25.7689462,
+   "lng": -80.1958978,
+   "source": "osm"
+  },
+  {
+   "id": "a6583009092",
+   "nom": "Street Art",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7700877,-80.1935302",
+   "lat": 25.7700877,
+   "lng": -80.1935302,
+   "source": "osm"
+  },
+  {
+   "id": "a6583012889",
+   "nom": "Julia B. Tuttle's Homestead",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7709148,-80.1923196",
+   "lat": 25.7709148,
+   "lng": -80.1923196,
+   "source": "osm"
+  },
+  {
+   "id": "a4595559141",
+   "nom": "Challenger Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7731491,-80.1865919",
+   "lat": 25.7731491,
+   "lng": -80.1865919,
+   "source": "osm"
+  },
+  {
+   "id": "a6583012985",
+   "nom": "The Liberty Column",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7728325,-80.1850685",
+   "lat": 25.7728325,
+   "lng": -80.1850685,
+   "source": "osm"
+  },
+  {
+   "id": "a6583012885",
+   "nom": "Claude D. Pepper",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7733234,-80.1854172",
+   "lat": 25.7733234,
+   "lng": -80.1854172,
+   "source": "osm"
+  },
+  {
+   "id": "a6583009086",
+   "nom": "Julia Sturtevant Tuttle",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7734474,-80.1856014",
+   "lat": 25.7734474,
+   "lng": -80.1856014,
+   "source": "osm"
+  },
+  {
+   "id": "a4880364621",
+   "nom": "Dade County War Memorial",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7740384,-80.186048",
+   "lat": 25.7740384,
+   "lng": -80.186048,
+   "source": "osm"
+  },
+  {
+   "id": "a648249520",
+   "nom": "HistoryMiami Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7745642,-80.1965921",
+   "lat": 25.7745642,
+   "lng": -80.1965921,
+   "source": "osm"
+  },
+  {
+   "id": "a5613530547",
+   "nom": "Mildred and Claude Pepper Fountain",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.774401,-80.185476",
+   "lat": 25.774401,
+   "lng": -80.185476,
+   "source": "osm"
+  },
+  {
+   "id": "a7639000812",
+   "nom": "Historic South Miami Avenue Sign",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.752073,-80.203714",
+   "lat": 25.752073,
+   "lng": -80.203714,
+   "source": "osm"
+  },
+  {
+   "id": "a367827603",
+   "nom": "Museum of the Americas",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.765691,-80.207946",
+   "lat": 25.765691,
+   "lng": -80.207946,
+   "source": "osm"
+  },
+  {
+   "id": "a12507229031",
+   "nom": "Section of the Berlin Wall",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7773686,-80.19054",
+   "lat": 25.7773686,
+   "lng": -80.19054,
+   "source": "osm"
+  },
+  {
+   "id": "a4595581948",
+   "nom": "Simon Bolivar",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7773873,-80.1876179",
+   "lat": 25.7773873,
+   "lng": -80.1876179,
+   "source": "osm"
+  },
+  {
+   "id": "a4595581949",
+   "nom": "The Torch of Friendship",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7776507,-80.1876392",
+   "lat": 25.7776507,
+   "lng": -80.1876392,
+   "source": "osm"
+  },
+  {
+   "id": "a8871944117",
+   "nom": "Thriller Miami Speedboat Adventures",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7776843,-80.185741",
+   "lat": 25.7776843,
+   "lng": -80.185741,
+   "source": "osm"
+  },
+  {
+   "id": "a2308861708",
+   "nom": "Tour Boat Boarding",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.7782099,-80.1861767",
+   "lat": 25.7782099,
+   "lng": -80.1861767,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

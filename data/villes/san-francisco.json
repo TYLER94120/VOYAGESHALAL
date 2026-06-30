@@ -11,7 +11,7 @@
  },
  "codeISO": "US",
  "score_halal": 3.5,
- "halalScore": 7.0,
+ "halalScore": 7,
  "villeNonMusulmane": true,
  "description": "Ville de la baie et de la tech. Communauté musulmane diverse et bonnes adresses halal dans le Tenderloin et Mission.",
  "metaDescription": "Ville de la baie et de la tech. Communauté musulmane diverse et bonnes adresses halal dans le Tenderloin et Mission.",
@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Market_Street_San_Francisco_From_Twin_Peaks.jpg/1920px-Market_Street_San_Francisco_From_Twin_Peaks.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 4,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,674 @@
   "ville non-musulmane",
   "amérique du nord"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Halal Spot",
+   "type": "pizza, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.782887,-122.4125475",
+   "lat": 37.782887,
+   "lng": -122.4125475,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Modena Pizza",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7815871,-122.4097814",
+   "lat": 37.7815871,
+   "lng": -122.4097814,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Piccolo Italia",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7850977,-122.4177837",
+   "lat": 37.7850977,
+   "lng": -122.4177837,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Pakwan",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7856875,-122.4131188",
+   "lat": 37.7856875,
+   "lng": -122.4131188,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chutney",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7860341,-122.413173",
+   "lat": 37.7860341,
+   "lng": -122.413173,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Red Chilli",
+   "type": "indian, pakistani, nepalese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7861715,-122.4129236",
+   "lat": 37.7861715,
+   "lng": -122.4129236,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Wings Plus",
+   "type": "wings, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7863082,-122.413235",
+   "lat": 37.7863082,
+   "lng": -122.413235,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Halal Fried Chicken",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7866202,-122.413301",
+   "lat": 37.7866202,
+   "lng": -122.413301,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Pharaohs Mediterranean Sandwiches",
+   "type": "mediterranean, egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7868113,-122.4135614",
+   "lat": 37.7868113,
+   "lng": -122.4135614,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sliders",
+   "type": "burger, falafel, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7878494,-122.4203205",
+   "lat": 37.7878494,
+   "lng": -122.4203205,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "The Halal Guys",
+   "type": "chicken, falafel, gyros",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7862637,-122.4104324",
+   "lat": 37.7862637,
+   "lng": -122.4104324,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Oasis Grill",
+   "type": "mediterranean, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7830398,-122.4027114",
+   "lat": 37.7830398,
+   "lng": -122.4027114,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ayola",
+   "type": "mediterranean, greek",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7911413,-122.4042854",
+   "lat": 37.7911413,
+   "lng": -122.4042854,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chicken G's",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7914507,-122.404057",
+   "lat": 37.7914507,
+   "lng": -122.404057,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mediterranean Aroma",
+   "type": "mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7666634,-122.395538",
+   "lat": 37.7666634,
+   "lng": -122.395538,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Oasis Grill",
+   "type": "mediterranean, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7892978,-122.3972655",
+   "lat": 37.7892978,
+   "lng": -122.3972655,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Abu Salim Middle Eastern Grill",
+   "type": "middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7697111,-122.4484122",
+   "lat": 37.7697111,
+   "lng": -122.4484122,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Viva Goa",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7994263,-122.4414619",
+   "lat": 37.7994263,
+   "lng": -122.4414619,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Turquaz",
+   "type": "turkish, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7777492,-122.4131421",
+   "lat": 37.7777492,
+   "lng": -122.4131421,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Anton's Falafel House",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7752247,-122.4100116",
+   "lat": 37.7752247,
+   "lng": -122.4100116,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mezze and Mooore",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7680917,-122.4245857",
+   "lat": 37.7680917,
+   "lng": -122.4245857,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Beit Rima",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7687313,-122.4292618",
+   "lat": 37.7687313,
+   "lng": -122.4292618,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Yemen Kitchen",
+   "type": "arab, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7833244,-122.4126199",
+   "lat": 37.7833244,
+   "lng": -122.4126199,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pakwan",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7649453,-122.4236628",
+   "lat": 37.7649453,
+   "lng": -122.4236628,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "A La Turca",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7860796,-122.4175502",
+   "lat": 37.7860796,
+   "lng": -122.4175502,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Punjab Kabab House",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7842248,-122.4094626",
+   "lat": 37.7842248,
+   "lng": -122.4094626,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shalimar",
+   "type": "pakistani, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7862553,-122.4129259",
+   "lat": 37.7862553,
+   "lng": -122.4129259,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrakech",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7858554,-122.4117764",
+   "lat": 37.7858554,
+   "lng": -122.4117764,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Alborz",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.787382,-122.4219743",
+   "lat": 37.787382,
+   "lng": -122.4219743,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aicha",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7888701,-122.4204876",
+   "lat": 37.7888701,
+   "lng": -122.4204876,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Karahi House",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7897985,-122.4207014",
+   "lat": 37.7897985,
+   "lng": -122.4207014,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mourad",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7868659,-122.4000306",
+   "lat": 37.7868659,
+   "lng": -122.4000306,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "DeAfghanan",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7910708,-122.404271",
+   "lat": 37.7910708,
+   "lng": -122.404271,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Delam",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7544797,-122.4211054",
+   "lat": 37.7544797,
+   "lng": -122.4211054,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Reem’s California - Mission",
+   "type": "arab, coffee shop",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7505445,-122.418138",
+   "lat": 37.7505445,
+   "lng": -122.418138,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Maykadeh Persian Restaurant",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7998833,-122.4069896",
+   "lat": 37.7998833,
+   "lng": -122.4069896,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Komaaj",
+   "type": "northern iranian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7441479,-122.4210102",
+   "lat": 37.7441479,
+   "lng": -122.4210102,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Geary Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7810196,-122.4602753",
+   "lat": 37.7810196,
+   "lng": -122.4602753,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Savor",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.7640977,-122.4621735",
+   "lat": 37.7640977,
+   "lng": -122.4621735,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kitchen Istanbul",
+   "type": "turkish, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.782891,-122.4632006",
+   "lat": 37.782891,
+   "lng": -122.4632006,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m32864985",
+   "nom": "Islamic Society of San Francisco",
+   "type": "Mosquée",
+   "adresse": "Jones Street",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=37.7814413,-122.4118068",
+   "lat": 37.7814413,
+   "lng": -122.4118068,
+   "source": "osm"
+  },
+  {
+   "id": "m942674800",
+   "nom": "Alsabeel Masjid Noor Al Islam",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=37.7824382,-122.4120676",
+   "lat": 37.7824382,
+   "lng": -122.4120676,
+   "source": "osm"
+  },
+  {
+   "id": "m148428441",
+   "nom": "Al Tawheed Mosque",
+   "type": "Mosquée",
+   "adresse": "Sutter Street",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=37.7874343,-122.4206115",
+   "lat": 37.7874343,
+   "lng": -122.4206115,
+   "source": "osm"
+  },
+  {
+   "id": "m273163284",
+   "nom": "Islamic Center of San Francisco",
+   "type": "Mosquée",
+   "adresse": "Crescent Avenue, San Francisco",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=37.7347308,-122.4166813",
+   "lat": 37.7347308,
+   "lng": -122.4166813,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a9672970883",
+   "nom": "Tint Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7747795,-122.4227285",
+   "lat": 37.7747795,
+   "lng": -122.4227285,
+   "source": "osm"
+  },
+  {
+   "id": "a1901905716",
+   "nom": "Abraham Lincoln",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7789014,-122.4185377",
+   "lat": 37.7789014,
+   "lng": -122.4185377,
+   "source": "osm"
+  },
+  {
+   "id": "a13111181571",
+   "nom": "Portrait of a Phenomenal Woman",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7791398,-122.4164676",
+   "lat": 37.7791398,
+   "lng": -122.4164676,
+   "source": "osm"
+  },
+  {
+   "id": "a6604085460",
+   "nom": "Mr. and Mrs. George F. Jewett, Jr. Exhibit Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7789259,-122.415593",
+   "lat": 37.7789259,
+   "lng": -122.415593,
+   "source": "osm"
+  },
+  {
+   "id": "a4018889724",
+   "nom": "Matthew Hall McAllister",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.780017,-122.4193891",
+   "lat": 37.780017,
+   "lng": -122.4193891,
+   "source": "osm"
+  },
+  {
+   "id": "a13481001521",
+   "nom": "California Native Americans",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7797141,-122.4158332",
+   "lat": 37.7797141,
+   "lng": -122.4158332,
+   "source": "osm"
+  },
+  {
+   "id": "a6465902729",
+   "nom": "Ashurbanipal",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7798937,-122.415985",
+   "lat": 37.7798937,
+   "lng": -122.415985,
+   "source": "osm"
+  },
+  {
+   "id": "a24588037",
+   "nom": "Asian Art Museum of San Francisco",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7802455,-122.4159975",
+   "lat": 37.7802455,
+   "lng": -122.4159975,
+   "source": "osm"
+  },
+  {
+   "id": "a4370393289",
+   "nom": "Alter Space",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7770557,-122.4108319",
+   "lat": 37.7770557,
+   "lng": -122.4108319,
+   "source": "osm"
+  },
+  {
+   "id": "a4370295596",
+   "nom": "Langton Labs",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7770629,-122.4094384",
+   "lat": 37.7770629,
+   "lng": -122.4094384,
+   "source": "osm"
+  },
+  {
+   "id": "a12637192282",
+   "nom": "Hailey Malaika Olympia Clarke",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7723395,-122.4294183",
+   "lat": 37.7723395,
+   "lng": -122.4294183,
+   "source": "osm"
+  },
+  {
+   "id": "a358803219",
+   "nom": "California Volunteers Memorial",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7688708,-122.4268065",
+   "lat": 37.7688708,
+   "lng": -122.4268065,
+   "source": "osm"
+  },
+  {
+   "id": "a10623964563",
+   "nom": "Modernism",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7843341,-122.4182541",
+   "lat": 37.7843341,
+   "lng": -122.4182541,
+   "source": "osm"
+  },
+  {
+   "id": "a5134506932",
+   "nom": "International Art Museum of America",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7814568,-122.4107385",
+   "lat": 37.7814568,
+   "lng": -122.4107385,
+   "source": "osm"
+  },
+  {
+   "id": "a5134621034",
+   "nom": "Tenderloin Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.783915,-122.4141209",
+   "lat": 37.783915,
+   "lng": -122.4141209,
+   "source": "osm"
+  },
+  {
+   "id": "a10695669958",
+   "nom": "Luggage Store Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.781934,-122.4103655",
+   "lat": 37.781934,
+   "lng": -122.4103655,
+   "source": "osm"
+  },
+  {
+   "id": "a11777394368",
+   "nom": "Victoria Manalo Draves",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7776646,-122.4063743",
+   "lat": 37.7776646,
+   "lng": -122.4063743,
+   "source": "osm"
+  },
+  {
+   "id": "a822484002",
+   "nom": "Painted Ladies",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=37.7762241,-122.4327862",
+   "lat": 37.7762241,
+   "lng": -122.4327862,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

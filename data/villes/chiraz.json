@@ -1,76 +1,338 @@
 {
-  "slug": "chiraz",
-  "nom": "Chiraz",
-  "pays": "Iran",
-  "pays_slug": "iran",
-  "continent": "Asie",
-  "region": "Iran",
-  "coordonnees": {
-    "lat": 29.5918,
-    "lng": 52.5837
+ "slug": "chiraz",
+ "nom": "Chiraz",
+ "pays": "Iran",
+ "pays_slug": "iran",
+ "continent": "Asie",
+ "region": "Iran",
+ "coordonnees": {
+  "lat": 29.5918,
+  "lng": 52.5837
+ },
+ "codeISO": "",
+ "score_halal": 4.6,
+ "halalScore": 9.2,
+ "description": "Ville des poètes et des roses, Chiraz séduit par la mosquée Nasir-ol-Molk aux vitraux colorés et sa proximité avec Persépolis.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/20101229_Naqsh_e_Rostam_Shiraz_Iran_more_Panoramic.jpg/1920px-20101229_Naqsh_e_Rostam_Shiraz_Iran_more_Panoramic.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/20101229_Naqsh_e_Rostam_Shiraz_Iran_more_Panoramic.jpg/1920px-20101229_Naqsh_e_Rostam_Shiraz_Iran_more_Panoramic.jpg",
+ "metaDescription": "Ville des poètes et des roses, Chiraz séduit par la mosquée Nasir-ol-Molk aux vitraux colorés et sa proximité avec Persépolis.",
+ "statistiques": {
+  "restaurants_halal": 26,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "رستوران باباطاهر",
+   "type": "regional, chicken, kebab, salad",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6190381,52.5519686",
+   "lat": 29.6190381,
+   "lng": 52.5519686,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.6,
-  "halalScore": 9.2,
-  "description": "Ville des poètes et des roses, Chiraz séduit par la mosquée Nasir-ol-Molk aux vitraux colorés et sa proximité avec Persépolis.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/20101229_Naqsh_e_Rostam_Shiraz_Iran_more_Panoramic.jpg/1920px-20101229_Naqsh_e_Rostam_Shiraz_Iran_more_Panoramic.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/20101229_Naqsh_e_Rostam_Shiraz_Iran_more_Panoramic.jpg/1920px-20101229_Naqsh_e_Rostam_Shiraz_Iran_more_Panoramic.jpg",
-  "metaDescription": "Ville des poètes et des roses, Chiraz séduit par la mosquée Nasir-ol-Molk aux vitraux colorés et sa proximité avec Persépolis.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "رویال برگر شیراز",
+   "type": "burger, hot dog, fries, roasted mushroom, roasted beef",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6274178,52.5551339",
+   "lat": 29.6274178,
+   "lng": 52.5551339,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "بیرون بر وصال",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6093532,52.5321917",
+   "lat": 29.6093532,
+   "lng": 52.5321917,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Chiraz",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Chiraz",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Chiraz%20Chiraz"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Nasir-ol-Molk",
-      "categorie": "Spirituel",
-      "description": "La 'mosquée rose' illuminée de vitraux au lever du soleil.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Nasir-ol-Molk%20Chiraz"
-    },
-    {
-      "id": "a2",
-      "nom": "Mausolée de Shah Cheragh",
-      "categorie": "Spirituel",
-      "description": "Sanctuaire aux miroirs étincelants.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e%20de%20Shah%20Cheragh%20Chiraz"
-    },
-    {
-      "id": "a3",
-      "nom": "Persépolis (UNESCO)",
-      "categorie": "Histoire",
-      "description": "Capitale de l'empire perse antique, à proximité.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Pers%C3%A9polis%20%28UNESCO%29%20Chiraz"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "بیرون بر امین علی",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.5813389,52.5737253",
+   "lat": 29.5813389,
+   "lng": 52.5737253,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب سرای مجید",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.5788729,52.56409",
+   "lat": 29.5788729,
+   "lng": 52.56409,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب دربار",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.5870539,52.542431",
+   "lat": 29.5870539,
+   "lng": 52.542431,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "لقمه کباب ایران ۶۳",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6274104,52.5639515",
+   "lat": 29.6274104,
+   "lng": 52.5639515,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "سالن غذاخوری میلاد",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6110675,52.5431313",
+   "lat": 29.6110675,
+   "lng": 52.5431313,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران عمارت فتح الملوکی",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6200528,52.5466396",
+   "lat": 29.6200528,
+   "lng": 52.5466396,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "سفره خانه شب های شیراز",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6296719,52.5574994",
+   "lat": 29.6296719,
+   "lng": 52.5574994,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب زعفرانی",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6333353,52.5583875",
+   "lat": 29.6333353,
+   "lng": 52.5583875,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "خوراک حبیب",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6196355,52.5399977",
+   "lat": 29.6196355,
+   "lng": 52.5399977,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کافه رستوران باغ ایرونی",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6336915,52.5581222",
+   "lat": 29.6336915,
+   "lng": 52.5581222,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب سلطان",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6321109,52.5543884",
+   "lat": 29.6321109,
+   "lng": 52.5543884,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "نان و کباب گلپایگانی",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6321585,52.554475",
+   "lat": 29.6321585,
+   "lng": 52.554475,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران شاندیز",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6357598,52.5568235",
+   "lat": 29.6357598,
+   "lng": 52.5568235,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران سنتی حاجی بابا",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.620739,52.5370784",
+   "lat": 29.620739,
+   "lng": 52.5370784,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "شاور لند",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6189944,52.5309983",
+   "lat": 29.6189944,
+   "lng": 52.5309983,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "غذای ایرانی",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6288563,52.5365223",
+   "lat": 29.6288563,
+   "lng": 52.5365223,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب شیراز قدیم حاجی زاده",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6193043,52.5282969",
+   "lat": 29.6193043,
+   "lng": 52.5282969,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "فست فود میچکا",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6192038,52.5282179",
+   "lat": 29.6192038,
+   "lng": 52.5282179,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "ترکلند دونر",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6321374,52.5394515",
+   "lat": 29.6321374,
+   "lng": 52.5394515,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کبابی شاطرمحمد",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.6321812,52.539255",
+   "lat": 29.6321812,
+   "lng": 52.539255,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "بیرون بر بزرگ ابریشمی",
+   "type": "kebab, seafood, salad",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.634735,52.5402284",
+   "lat": 29.634735,
+   "lng": 52.5402284,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "شهر کباب",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.5871665,52.5080216",
+   "lat": 29.5871665,
+   "lng": 52.5080216,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "فلافلی. فست فود سلف سرویس فلی خپلو",
+   "type": "arab, indian, persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=29.5891658,52.5057436",
+   "lat": 29.5891658,
+   "lng": 52.5057436,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Chiraz",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Chiraz",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Chiraz%20Chiraz"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Nasir-ol-Molk",
+   "categorie": "Spirituel",
+   "description": "La 'mosquée rose' illuminée de vitraux au lever du soleil.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Nasir-ol-Molk%20Chiraz"
+  },
+  {
+   "id": "a2",
+   "nom": "Mausolée de Shah Cheragh",
+   "categorie": "Spirituel",
+   "description": "Sanctuaire aux miroirs étincelants.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e%20de%20Shah%20Cheragh%20Chiraz"
+  },
+  {
+   "id": "a3",
+   "nom": "Persépolis (UNESCO)",
+   "categorie": "Histoire",
+   "description": "Capitale de l'empire perse antique, à proximité.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Pers%C3%A9polis%20%28UNESCO%29%20Chiraz"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

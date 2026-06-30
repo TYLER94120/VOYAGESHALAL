@@ -1,76 +1,478 @@
 {
-  "slug": "sydney",
-  "nom": "Sydney",
-  "pays": "Australie",
-  "pays_slug": "australie",
-  "continent": "Océanie",
-  "region": "Australie",
-  "coordonnees": {
-    "lat": -33.8688,
-    "lng": 151.2093
+ "slug": "sydney",
+ "nom": "Sydney",
+ "pays": "Australie",
+ "pays_slug": "australie",
+ "continent": "Océanie",
+ "region": "Australie",
+ "coordonnees": {
+  "lat": -33.8688,
+  "lng": 151.2093
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.6,
+ "description": "Plus grande ville d'Australie, Sydney possède une communauté musulmane dynamique (Lakemba, Auburn) et de nombreuses adresses halal.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Sydney_Harbour_Bridge_night.jpg/1920px-Sydney_Harbour_Bridge_night.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Sydney_Harbour_Bridge_night.jpg/1920px-Sydney_Harbour_Bridge_night.jpg",
+ "metaDescription": "Plus grande ville d'Australie, Sydney possède une communauté musulmane dynamique (Lakemba, Auburn) et de nombreuses adresses halal.",
+ "statistiques": {
+  "restaurants_halal": 40,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Made in Italy Sydney CBD",
+   "type": "pizza, italian, pasta",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8663263,151.2053926",
+   "lat": -33.8663263,
+   "lng": 151.2053926,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.6,
-  "description": "Plus grande ville d'Australie, Sydney possède une communauté musulmane dynamique (Lakemba, Auburn) et de nombreuses adresses halal.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Sydney_Harbour_Bridge_night.jpg/1920px-Sydney_Harbour_Bridge_night.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Sydney_Harbour_Bridge_night.jpg/1920px-Sydney_Harbour_Bridge_night.jpg",
-  "metaDescription": "Plus grande ville d'Australie, Sydney possède une communauté musulmane dynamique (Lakemba, Auburn) et de nombreuses adresses halal.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "It's Time for Thai",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.882012,151.2042771",
+   "lat": -33.882012,
+   "lng": 151.2042771,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Ogalo",
+   "type": "portuguese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9090909,151.2236645",
+   "lat": -33.9090909,
+   "lng": 151.2236645,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Sydney",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Sydney",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Sydney%20Sydney"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Lakemba & Haldon Street",
-      "categorie": "Culture",
-      "description": "Quartier musulman réputé pour sa street food halal.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Lakemba%20%26%20Haldon%20Street%20Sydney"
-    },
-    {
-      "id": "a2",
-      "nom": "Gallipoli Mosque (Auburn)",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée de style ottoman.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Gallipoli%20Mosque%20%28Auburn%29%20Sydney"
-    },
-    {
-      "id": "a3",
-      "nom": "Opéra & port de Sydney",
-      "categorie": "Culture",
-      "description": "Sites emblématiques au bord de l'eau.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Op%C3%A9ra%20%26%20port%20de%20Sydney%20Sydney"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Baba's Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9132001,151.2244777",
+   "lat": -33.9132001,
+   "lng": 151.2244777,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Zaffi",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8652601,151.207725",
+   "lat": -33.8652601,
+   "lng": 151.207725,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sinbad Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8710739,151.205419",
+   "lat": -33.8710739,
+   "lng": 151.205419,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کابل;Kabul Social",
+   "type": "afghan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8649541,151.2064364",
+   "lat": -33.8649541,
+   "lng": 151.2064364,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Feast of Istanbul",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8655312,151.2040068",
+   "lat": -33.8655312,
+   "lng": 151.2040068,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Anason",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8645975,151.2012827",
+   "lat": -33.8645975,
+   "lng": 151.2012827,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ataman Kebab and Burgers",
+   "type": "pizza, burger, kebab, hsp",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8763752,151.2066567",
+   "lat": -33.8763752,
+   "lng": 151.2066567,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Foodoomooloo",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8693725,151.2200891",
+   "lat": -33.8693725,
+   "lng": 151.2200891,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "One Stop Kebabz",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8780099,151.2059516",
+   "lat": -33.8780099,
+   "lng": 151.2059516,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Spitz Kebab & Grill",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8746857,151.2228036",
+   "lat": -33.8746857,
+   "lng": 151.2228036,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Iconic Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8806493,151.2150593",
+   "lat": -33.8806493,
+   "lng": 151.2150593,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Metro Kebabs & Burgers",
+   "type": "kebab, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8743079,151.2231873",
+   "lat": -33.8743079,
+   "lng": 151.2231873,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kings Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8747804,151.223168",
+   "lat": -33.8747804,
+   "lng": 151.223168,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Five Star Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8814495,151.2050837",
+   "lat": -33.8814495,
+   "lng": 151.2050837,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Five Star Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8735713,151.2241221",
+   "lat": -33.8735713,
+   "lng": 151.2241221,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shop 8 Manoushi Espresso",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.882292,151.2064894",
+   "lat": -33.882292,
+   "lng": 151.2064894,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Metro Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8836422,151.2027153",
+   "lat": -33.8836422,
+   "lng": 151.2027153,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Metro Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8862134,151.2083666",
+   "lat": -33.8862134,
+   "lng": 151.2083666,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nour",
+   "type": "arab, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8867534,151.2138646",
+   "lat": -33.8867534,
+   "lng": 151.2138646,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nada's Restaurant",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8898774,151.2080663",
+   "lat": -33.8898774,
+   "lng": 151.2080663,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Prophet",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8899459,151.208236",
+   "lat": -33.8899459,
+   "lng": 151.208236,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Spice Hub",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.889964,151.208287",
+   "lat": -33.889964,
+   "lng": 151.208287,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fatima's",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8901075,151.2087026",
+   "lat": -33.8901075,
+   "lng": 151.2087026,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Emad's",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8901343,151.2087843",
+   "lat": -33.8901343,
+   "lng": 151.2087843,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Erciyes",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8917064,151.2129564",
+   "lat": -33.8917064,
+   "lng": 151.2129564,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Wilson's Lebanese Restaurant",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8930113,151.2041192",
+   "lat": -33.8930113,
+   "lng": 151.2041192,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Redfern Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8925861,151.2015823",
+   "lat": -33.8925861,
+   "lng": 151.2015823,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Oz Turk Jnr",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8910349,151.1960694",
+   "lat": -33.8910349,
+   "lng": 151.1960694,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Aseel",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8928701,151.1830374",
+   "lat": -33.8928701,
+   "lng": 151.1830374,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Falafel Zaman",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8311376,151.2239435",
+   "lat": -33.8311376,
+   "lng": 151.2239435,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kayra",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8986712,151.1741472",
+   "lat": -33.8986712,
+   "lng": 151.1741472,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arabella",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9022988,151.1789523",
+   "lat": -33.9022988,
+   "lng": 151.1789523,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Turka",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8274585,151.2006993",
+   "lat": -33.8274585,
+   "lng": 151.2006993,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Turkuaz Turkish Cuisine",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8987217,151.1737141",
+   "lat": -33.8987217,
+   "lng": 151.1737141,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tajla Bangladeshi Grill",
+   "type": "bangladeshi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8988395,151.1726683",
+   "lat": -33.8988395,
+   "lng": 151.1726683,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Sultan’s Table",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.8988836,151.1722533",
+   "lat": -33.8988836,
+   "lng": 151.1722533,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Roseberry Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9127981,151.2016074",
+   "lat": -33.9127981,
+   "lng": 151.2016074,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Sydney",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Sydney",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Sydney%20Sydney"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Lakemba & Haldon Street",
+   "categorie": "Culture",
+   "description": "Quartier musulman réputé pour sa street food halal.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Lakemba%20%26%20Haldon%20Street%20Sydney"
+  },
+  {
+   "id": "a2",
+   "nom": "Gallipoli Mosque (Auburn)",
+   "categorie": "Spirituel",
+   "description": "Grande mosquée de style ottoman.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Gallipoli%20Mosque%20%28Auburn%29%20Sydney"
+  },
+  {
+   "id": "a3",
+   "nom": "Opéra & port de Sydney",
+   "categorie": "Culture",
+   "description": "Sites emblématiques au bord de l'eau.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Op%C3%A9ra%20%26%20port%20de%20Sydney%20Sydney"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

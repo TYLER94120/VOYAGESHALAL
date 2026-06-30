@@ -1,76 +1,98 @@
 {
-  "slug": "sharm-el-sheikh",
-  "nom": "Charm el-Cheikh",
-  "pays": "Égypte",
-  "pays_slug": "egypte",
-  "continent": "Afrique",
-  "region": "Mer Rouge",
-  "coordonnees": {
-    "lat": 27.9158,
-    "lng": 34.33
+ "slug": "sharm-el-sheikh",
+ "nom": "Charm el-Cheikh",
+ "pays": "Égypte",
+ "pays_slug": "egypte",
+ "continent": "Afrique",
+ "region": "Mer Rouge",
+ "coordonnees": {
+  "lat": 27.9158,
+  "lng": 34.33
+ },
+ "codeISO": "",
+ "score_halal": 4.4,
+ "halalScore": 8.8,
+ "description": "Station balnéaire de la mer Rouge, Charm el-Cheikh offre récifs coralliens, plages et la mosquée Al Sahaba aux dômes orientaux.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Naama_Bay_R01.jpg/1920px-Naama_Bay_R01.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Naama_Bay_R01.jpg/1920px-Naama_Bay_R01.jpg",
+ "metaDescription": "Station balnéaire de la mer Rouge, Charm el-Cheikh offre récifs coralliens, plages et la mosquée Al Sahaba aux dômes orientaux.",
+ "statistiques": {
+  "restaurants_halal": 2,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "El MASRIEN",
+   "type": "arab, italian, tea",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8658892,34.2937701",
+   "lat": 27.8658892,
+   "lng": 34.2937701,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.4,
-  "halalScore": 8.8,
-  "description": "Station balnéaire de la mer Rouge, Charm el-Cheikh offre récifs coralliens, plages et la mosquée Al Sahaba aux dômes orientaux.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Naama_Bay_R01.jpg/1920px-Naama_Bay_R01.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Naama_Bay_R01.jpg/1920px-Naama_Bay_R01.jpg",
-  "metaDescription": "Station balnéaire de la mer Rouge, Charm el-Cheikh offre récifs coralliens, plages et la mosquée Al Sahaba aux dômes orientaux.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Main Restaurant",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.8631794,34.2968333",
+   "lat": 27.8631794,
+   "lng": 34.2968333,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Charm el-Cheikh",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Charm el-Cheikh",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Charm%20el-Cheikh%20Charm%20el-Cheikh"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Al Sahaba",
+   "categorie": "Spirituel",
+   "description": "Mosquée moderne d'architecture fatimide-ottomane.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Al%20Sahaba%20Charm%20el-Cheikh"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "id": "a2",
+   "nom": "Récifs de Ras Mohammed",
+   "categorie": "Nature",
+   "description": "Parc marin réputé pour la plongée et le snorkeling.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=R%C3%A9cifs%20de%20Ras%20Mohammed%20Charm%20el-Cheikh"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Charm el-Cheikh",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Charm el-Cheikh",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Charm%20el-Cheikh%20Charm%20el-Cheikh"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Al Sahaba",
-      "categorie": "Spirituel",
-      "description": "Mosquée moderne d'architecture fatimide-ottomane.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Al%20Sahaba%20Charm%20el-Cheikh"
-    },
-    {
-      "id": "a2",
-      "nom": "Récifs de Ras Mohammed",
-      "categorie": "Nature",
-      "description": "Parc marin réputé pour la plongée et le snorkeling.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=R%C3%A9cifs%20de%20Ras%20Mohammed%20Charm%20el-Cheikh"
-    },
-    {
-      "id": "a3",
-      "nom": "Baie de Naama",
-      "categorie": "Loisirs",
-      "description": "Promenade animée en bord de mer.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Baie%20de%20Naama%20Charm%20el-Cheikh"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "id": "a3",
+   "nom": "Baie de Naama",
+   "categorie": "Loisirs",
+   "description": "Promenade animée en bord de mer.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Baie%20de%20Naama%20Charm%20el-Cheikh"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

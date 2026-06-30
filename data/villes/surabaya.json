@@ -1,76 +1,118 @@
 {
-  "slug": "surabaya",
-  "nom": "Surabaya",
-  "pays": "Indonésie",
-  "pays_slug": "indonesie",
-  "continent": "Asie",
-  "region": "Indonésie",
-  "coordonnees": {
-    "lat": -7.2575,
-    "lng": 112.7521
+ "slug": "surabaya",
+ "nom": "Surabaya",
+ "pays": "Indonésie",
+ "pays_slug": "indonesie",
+ "continent": "Asie",
+ "region": "Indonésie",
+ "coordonnees": {
+  "lat": -7.2575,
+  "lng": 112.7521
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "Deuxième ville d'Indonésie, Surabaya abrite la grande mosquée Al-Akbar et le sanctuaire de Sunan Ampel, foyer de l'islam à Java.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Makam_Belanda_Peneleh._Surabaya_Indonesia.jpg/1920px-Makam_Belanda_Peneleh._Surabaya_Indonesia.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Makam_Belanda_Peneleh._Surabaya_Indonesia.jpg/1920px-Makam_Belanda_Peneleh._Surabaya_Indonesia.jpg",
+ "metaDescription": "Deuxième ville d'Indonésie, Surabaya abrite la grande mosquée Al-Akbar et le sanctuaire de Sunan Ampel, foyer de l'islam à Java.",
+ "statistiques": {
+  "restaurants_halal": 4,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.2352228,112.7328555",
+   "lat": -7.2352228,
+   "lng": 112.7328555,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.0,
-  "description": "Deuxième ville d'Indonésie, Surabaya abrite la grande mosquée Al-Akbar et le sanctuaire de Sunan Ampel, foyer de l'islam à Java.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Makam_Belanda_Peneleh._Surabaya_Indonesia.jpg/1920px-Makam_Belanda_Peneleh._Surabaya_Indonesia.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Makam_Belanda_Peneleh._Surabaya_Indonesia.jpg/1920px-Makam_Belanda_Peneleh._Surabaya_Indonesia.jpg",
-  "metaDescription": "Deuxième ville d'Indonésie, Surabaya abrite la grande mosquée Al-Akbar et le sanctuaire de Sunan Ampel, foyer de l'islam à Java.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Gubug Makan Mang Engking Yani Golf Surabaya",
+   "type": "traditional, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.3018131,112.714989",
+   "lat": -7.3018131,
+   "lng": 112.714989,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Container Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.2796989,112.7627581",
+   "lat": -7.2796989,
+   "lng": 112.7627581,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Surabaya",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Surabaya",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Surabaya%20Surabaya"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Al-Akbar",
-      "categorie": "Spirituel",
-      "description": "Immense mosquée au dôme bleu, vue depuis le minaret.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Al-Akbar%20Surabaya"
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée et tombe de Sunan Ampel",
-      "categorie": "Spirituel",
-      "description": "Sanctuaire d'un des saints fondateurs de l'islam javanais.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20et%20tombe%20de%20Sunan%20Ampel%20Surabaya"
-    },
-    {
-      "id": "a3",
-      "nom": "Vieille ville arabe",
-      "categorie": "Culture",
-      "description": "Quartier marchand historique et bazars.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20arabe%20Surabaya"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Finjan",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-7.2296843,112.7405928",
+   "lat": -7.2296843,
+   "lng": 112.7405928,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Surabaya",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Surabaya",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Surabaya%20Surabaya"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Al-Akbar",
+   "categorie": "Spirituel",
+   "description": "Immense mosquée au dôme bleu, vue depuis le minaret.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Al-Akbar%20Surabaya"
+  },
+  {
+   "id": "a2",
+   "nom": "Mosquée et tombe de Sunan Ampel",
+   "categorie": "Spirituel",
+   "description": "Sanctuaire d'un des saints fondateurs de l'islam javanais.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20et%20tombe%20de%20Sunan%20Ampel%20Surabaya"
+  },
+  {
+   "id": "a3",
+   "nom": "Vieille ville arabe",
+   "categorie": "Culture",
+   "description": "Quartier marchand historique et bazars.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20arabe%20Surabaya"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

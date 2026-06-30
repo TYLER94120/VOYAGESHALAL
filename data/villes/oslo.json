@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Oslo_harbour_colors_modified.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 6,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,696 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Spor av Nord",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.909927,10.746587",
+   "lat": 59.909927,
+   "lng": 10.746587,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Azadi",
+   "type": "middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9123072,10.7639223",
+   "lat": 59.9123072,
+   "lng": 10.7639223,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bislett Kebab House",
+   "type": "kebab, pizza, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.919711,10.759215",
+   "lat": 59.919711,
+   "lng": 10.759215,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bislett Kebab House Carl Berner",
+   "type": "kebab, burger, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.929482,10.778343",
+   "lat": 59.929482,
+   "lng": 10.778343,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Zam Zam avd Hasle",
+   "type": "pizza, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.919906,10.7913528",
+   "lat": 59.919906,
+   "lng": 10.7913528,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Crispy Crust",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.927633,10.715317",
+   "lat": 59.927633,
+   "lng": 10.715317,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bislett Kebab House Sandaker",
+   "type": "fast food, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.942339,10.770051",
+   "lat": 59.942339,
+   "lng": 10.770051,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "HOT SPICY GRILL",
+   "type": "pizza, burger, kebab, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.8797672,10.8055523",
+   "lat": 59.8797672,
+   "lng": 10.8055523,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bislett Kebab House Linderud",
+   "type": "fast food, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.944043,10.832866",
+   "lat": 59.944043,
+   "lng": 10.832866,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Din Pizza Kebab & Grill",
+   "type": "pizza, kebab, burger, pakistani, chicken, salad",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.8714343,10.8208618",
+   "lat": 59.8714343,
+   "lng": 10.8208618,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bislett Kebab House Kalbakken",
+   "type": "kebab, pizza, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.952086,10.867836",
+   "lat": 59.952086,
+   "lng": 10.867836,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Izgara",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9143835,10.7537977",
+   "lat": 59.9143835,
+   "lng": 10.7537977,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Vinny's Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9134696,10.7538702",
+   "lat": 59.9134696,
+   "lng": 10.7538702,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lett & Mett",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9140861,10.7542781",
+   "lat": 59.9140861,
+   "lng": 10.7542781,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lett og God",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9120748,10.7520208",
+   "lat": 59.9120748,
+   "lng": 10.7520208,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "New Beirut Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9141041,10.7469809",
+   "lat": 59.9141041,
+   "lng": 10.7469809,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Habibi Restaurant",
+   "type": "palestinian, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.914414,10.747056",
+   "lat": 59.914414,
+   "lng": 10.747056,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Carmel Grill",
+   "type": "kebab, falafel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.912363,10.747907",
+   "lat": 59.912363,
+   "lng": 10.747907,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mela Café",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9167832,10.7505866",
+   "lat": 59.9167832,
+   "lng": 10.7505866,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Parthenon - Pizza & Grillbar",
+   "type": "pizza, burger, kebab, grill",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9171023,10.7532459",
+   "lat": 59.9171023,
+   "lng": 10.7532459,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dronningens kebab",
+   "type": "kebab, falafel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.911168,10.7484022",
+   "lat": 59.911168,
+   "lng": 10.7484022,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mediterranean grill",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9172644,10.7535691",
+   "lat": 59.9172644,
+   "lng": 10.7535691,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarma House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9124062,10.7589167",
+   "lat": 59.9124062,
+   "lng": 10.7589167,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hungry Birds",
+   "type": "pizza, burger, kebab, falafel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9166356,10.7572509",
+   "lat": 59.9166356,
+   "lng": 10.7572509,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Kebab",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.913115,10.76109",
+   "lat": 59.913115,
+   "lng": 10.76109,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Beirut Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9125472,10.7610756",
+   "lat": 59.9125472,
+   "lng": 10.7610756,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Happy Ending",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.919319,10.7511998",
+   "lat": 59.919319,
+   "lng": 10.7511998,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Marinosa Grill As",
+   "type": "greek, kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9193816,10.7509992",
+   "lat": 59.9193816,
+   "lng": 10.7509992,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mehfel",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9103025,10.7435978",
+   "lat": 59.9103025,
+   "lng": 10.7435978,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Persia Classic Restaurant",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9169122,10.7423823",
+   "lat": 59.9169122,
+   "lng": 10.7423823,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Villa",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.912668,10.763699",
+   "lat": 59.912668,
+   "lng": 10.763699,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zarathustra Meyhane",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.918573,10.759595",
+   "lat": 59.918573,
+   "lng": 10.759595,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Oslo kebab og pizzahus",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9126076,10.7640047",
+   "lat": 59.9126076,
+   "lng": 10.7640047,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Happy Time",
+   "type": "kebab, pizza, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9190949,10.7595715",
+   "lat": 59.9190949,
+   "lng": 10.7595715,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Asia kebab grill & pizzahus",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9123743,10.7651236",
+   "lat": 59.9123743,
+   "lng": 10.7651236,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Grønland pizza & kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9123509,10.7652227",
+   "lat": 59.9123509,
+   "lng": 10.7652227,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lahori Dera",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9131307,10.7655019",
+   "lat": 59.9131307,
+   "lng": 10.7655019,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sultan Food & Sweets",
+   "type": "burger, pizza, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9123095,10.7654021",
+   "lat": 59.9123095,
+   "lng": 10.7654021,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Waaberi Restaurant",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9123269,10.7666502",
+   "lat": 59.9123269,
+   "lng": 10.7666502,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Raffiné",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9171387,10.7384996",
+   "lat": 59.9171387,
+   "lng": 10.7384996,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m111308430",
+   "nom": "ICC Islamic Cultural Centre Norway",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.9119495,10.762522",
+   "lat": 59.9119495,
+   "lng": 10.762522,
+   "source": "osm"
+  },
+  {
+   "id": "m111283053",
+   "nom": "Central Jamaat-E Ahl-E sunnat Norway",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.9146855,10.7638786",
+   "lat": 59.9146855,
+   "lng": 10.7638786,
+   "source": "osm"
+  },
+  {
+   "id": "m111394416",
+   "nom": "Central Jam-E-Mosque World Islamic Mission Norway",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.9105575,10.774057",
+   "lat": 59.9105575,
+   "lng": 10.774057,
+   "source": "osm"
+  },
+  {
+   "id": "m215789663",
+   "nom": "Tawfiiq Islamsk Senter",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.9098435,10.775916",
+   "lat": 59.9098435,
+   "lng": 10.775916,
+   "source": "osm"
+  },
+  {
+   "id": "m113728313",
+   "nom": "Madani Masjid",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.9263735,10.7681905",
+   "lat": 59.9263735,
+   "lng": 10.7681905,
+   "source": "osm"
+  },
+  {
+   "id": "m133307944",
+   "nom": "Nor Moské",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.921918,10.705941",
+   "lat": 59.921918,
+   "lng": 10.705941,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a4736654297",
+   "nom": "Pionerstatuen",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9150734,10.7495874",
+   "lat": 59.9150734,
+   "lng": 10.7495874,
+   "source": "osm"
+  },
+  {
+   "id": "a4736654296",
+   "nom": "Hiroshimamonumentet",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9145696,10.7486589",
+   "lat": 59.9145696,
+   "lng": 10.7486589,
+   "source": "osm"
+  },
+  {
+   "id": "a12945442511",
+   "nom": "Eldorado Varietetheater",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9139192,10.7477911",
+   "lat": 59.9139192,
+   "lng": 10.7477911,
+   "source": "osm"
+  },
+  {
+   "id": "a7009278790",
+   "nom": "Sara Rottman",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9119052,10.7499037",
+   "lat": 59.9119052,
+   "lng": 10.7499037,
+   "source": "osm"
+  },
+  {
+   "id": "a7009278791",
+   "nom": "Leopold Rottman",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9119085,10.7498923",
+   "lat": 59.9119085,
+   "lng": 10.7498923,
+   "source": "osm"
+  },
+  {
+   "id": "a11369528420",
+   "nom": "Kirkeristen",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9128255,10.7473219",
+   "lat": 59.9128255,
+   "lng": 10.7473219,
+   "source": "osm"
+  },
+  {
+   "id": "a112401084",
+   "nom": "Jødisk museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.916338,10.7554205",
+   "lat": 59.916338,
+   "lng": 10.7554205,
+   "source": "osm"
+  },
+  {
+   "id": "a12018635755",
+   "nom": "GASSVERKET",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9157966,10.7567194",
+   "lat": 59.9157966,
+   "lng": 10.7567194,
+   "source": "osm"
+  },
+  {
+   "id": "a10974134428",
+   "nom": "VATERLANDS BRU",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9133358,10.7582458",
+   "lat": 59.9133358,
+   "lng": 10.7582458,
+   "source": "osm"
+  },
+  {
+   "id": "a13924380532",
+   "nom": "VALGKIRKE",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9126912,10.7464073",
+   "lat": 59.9126912,
+   "lng": 10.7464073,
+   "source": "osm"
+  },
+  {
+   "id": "a7575141378",
+   "nom": "Gatebarnas Far",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9106036,10.7505486",
+   "lat": 59.9106036,
+   "lng": 10.7505486,
+   "source": "osm"
+  },
+  {
+   "id": "a13924380533",
+   "nom": "BRANNVAKTEN",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9120551,10.746496",
+   "lat": 59.9120551,
+   "lng": 10.746496,
+   "source": "osm"
+  },
+  {
+   "id": "a13889660657",
+   "nom": "ELISE SEM",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9118052,10.7465947",
+   "lat": 59.9118052,
+   "lng": 10.7465947,
+   "source": "osm"
+  },
+  {
+   "id": "a3533743328",
+   "nom": "W.A. Wexels",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9121358,10.7461077",
+   "lat": 59.9121358,
+   "lng": 10.7461077,
+   "source": "osm"
+  },
+  {
+   "id": "a7505476190",
+   "nom": "L.M. Lindeman",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9121761,10.7459459",
+   "lat": 59.9121761,
+   "lng": 10.7459459,
+   "source": "osm"
+  },
+  {
+   "id": "a4754833619",
+   "nom": "Galleri Duer",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9174758,10.7519507",
+   "lat": 59.9174758,
+   "lng": 10.7519507,
+   "source": "osm"
+  },
+  {
+   "id": "a7904754751",
+   "nom": "Plata",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9102869,10.7501242",
+   "lat": 59.9102869,
+   "lng": 10.7501242,
+   "source": "osm"
+  },
+  {
+   "id": "a8776909021",
+   "nom": "Midlertidig Minnesmerke",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9155708,10.7450776",
+   "lat": 59.9155708,
+   "lng": 10.7450776,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

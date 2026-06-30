@@ -1,81 +1,153 @@
 {
-  "slug": "kenitra",
-  "nom": "Kénitra",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Centre du Maroc",
-  "coordonnees": {
-    "lat": 34.261,
-    "lng": -6.5802
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Port atlantique sur l'oued Sebou, ville universitaire bordée par la forêt de la Maâmora et des zones humides riches en oiseaux.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Kenitra_main_pic.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Kenitra_main_pic.jpg",
-  "metaDescription": "Port atlantique sur l'oued Sebou, ville universitaire bordée par la forêt de la Maâmora et des zones humides riches en oiseaux.",
+ "slug": "kenitra",
+ "nom": "Kénitra",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Centre du Maroc",
+ "coordonnees": {
+  "lat": 34.261,
+  "lng": -6.5802
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Port atlantique sur l'oued Sebou, ville universitaire bordée par la forêt de la Maâmora et des zones humides riches en oiseaux.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Kenitra_main_pic.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Kenitra_main_pic.jpg",
+ "metaDescription": "Port atlantique sur l'oued Sebou, ville universitaire bordée par la forêt de la Maâmora et des zones humides riches en oiseaux.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 7,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Chhiwate Ryad Naji",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.260994,-6.5794266",
+   "lat": 34.260994,
+   "lng": -6.5794266,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "BB parck",
+   "type": "arab, asian, french, spanish, international, italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2582403,-6.5802251",
+   "lat": 34.2582403,
+   "lng": -6.5802251,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Kénitra",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Kénitra",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20K%C3%A9nitra%20K%C3%A9nitra%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Forêt de la Maâmora",
-      "categorie": "Nature",
-      "description": "Plus grande forêt de chênes-lièges du Maroc, balades et air pur.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=For%C3%AAt%20de%20la%20Ma%C3%A2mora%20K%C3%A9nitra%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Plage de Mehdia",
-      "categorie": "Nature",
-      "description": "Plage atlantique et kasbah à l'embouchure du Sebou.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Plage%20de%20Mehdia%20K%C3%A9nitra%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Réserve de Sidi Boughaba",
-      "categorie": "Nature",
-      "description": "Lagune protégée, paradis des oiseaux migrateurs.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=R%C3%A9serve%20de%20Sidi%20Boughaba%20K%C3%A9nitra%20Maroc"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "MUZNA",
+   "type": "arab, moroccan, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2553153,-6.5821548",
+   "lat": 34.2553153,
+   "lng": -6.5821548,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "El Bayt Achami",
+   "type": "syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2590659,-6.5879016",
+   "lat": 34.2590659,
+   "lng": -6.5879016,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Snack INNO",
+   "type": "deli, crepe, french, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.253632,-6.5808724",
+   "lat": 34.253632,
+   "lng": -6.5808724,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم بدر الشام",
+   "type": "arab, grill, kebab, lebanese, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.25191,-6.6019303",
+   "lat": 34.25191,
+   "lng": -6.6019303,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "مشواة الغرب - الساكنية",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2477909,-6.5541748",
+   "lat": 34.2477909,
+   "lng": -6.5541748,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Kénitra",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Kénitra",
+   "description": "Mosquée principale de la ville, prière du vendredi.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20K%C3%A9nitra%20K%C3%A9nitra%20Maroc"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Forêt de la Maâmora",
+   "categorie": "Nature",
+   "description": "Plus grande forêt de chênes-lièges du Maroc, balades et air pur.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=For%C3%AAt%20de%20la%20Ma%C3%A2mora%20K%C3%A9nitra%20Maroc"
+  },
+  {
+   "id": "a2",
+   "nom": "Plage de Mehdia",
+   "categorie": "Nature",
+   "description": "Plage atlantique et kasbah à l'embouchure du Sebou.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Plage%20de%20Mehdia%20K%C3%A9nitra%20Maroc"
+  },
+  {
+   "id": "a3",
+   "nom": "Réserve de Sidi Boughaba",
+   "categorie": "Nature",
+   "description": "Lagune protégée, paradis des oiseaux migrateurs.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=R%C3%A9serve%20de%20Sidi%20Boughaba%20K%C3%A9nitra%20Maroc"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

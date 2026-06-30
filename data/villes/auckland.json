@@ -11,7 +11,7 @@
  },
  "codeISO": "NZ",
  "score_halal": 3.5,
- "halalScore": 7.0,
+ "halalScore": 7,
  "villeNonMusulmane": true,
  "description": "Plus grande ville néo-zélandaise. Communauté musulmane diverse et bonne offre halal au centre et à Mount Roskill.",
  "metaDescription": "Plus grande ville néo-zélandaise. Communauté musulmane diverse et bonne offre halal au centre et à Mount Roskill.",
@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Auckland_Cbd_%28217403753%29.jpeg/1920px-Auckland_Cbd_%28217403753%29.jpeg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 7,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,707 @@
   "ville non-musulmane",
   "océanie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Kebab Time",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8483055,174.7632785",
+   "lat": -36.8483055,
+   "lng": 174.7632785,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Fuga Japanese Brasserie",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8485165,174.7629834",
+   "lat": -36.8485165,
+   "lng": 174.7629834,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Izmir Kebab and Grill",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8480804,174.7627761",
+   "lat": -36.8480804,
+   "lng": 174.7627761,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Toastie",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8489044,174.764254",
+   "lat": -36.8489044,
+   "lng": 174.764254,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebabzilla",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8489845,174.7642151",
+   "lat": -36.8489845,
+   "lng": 174.7642151,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Tandoor",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8492359,174.7643606",
+   "lat": -36.8492359,
+   "lng": 174.7643606,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Dragon Boat Restaurant",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8496176,174.7639296",
+   "lat": -36.8496176,
+   "lng": 174.7639296,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Celine Mediterranean Cuisine",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8495544,174.7642892",
+   "lat": -36.8495544,
+   "lng": 174.7642892,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Raviz",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8477348,174.7615878",
+   "lat": -36.8477348,
+   "lng": 174.7615878,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Akbar Durbar Indian Takeaway",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8476416,174.761646",
+   "lat": -36.8476416,
+   "lng": 174.761646,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Denny's",
+   "type": "american",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8476641,174.7616185",
+   "lat": -36.8476641,
+   "lng": 174.7616185,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Japanese Dining You",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8501117,174.7636555",
+   "lat": -36.8501117,
+   "lng": 174.7636555,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "New Sensational Kebab & Fried Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8473219,174.7613817",
+   "lat": -36.8473219,
+   "lng": 174.7613817,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bal Ganga",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8472837,174.7612312",
+   "lat": -36.8472837,
+   "lng": 174.7612312,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dumpling House",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8493254,174.7658038",
+   "lat": -36.8493254,
+   "lng": 174.7658038,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Yoshizawa",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8493381,174.765862",
+   "lat": -36.8493381,
+   "lng": 174.765862,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sushi & Donburi",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8508731,174.7649088",
+   "lat": -36.8508731,
+   "lng": 174.7649088,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chamate Restaurant",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8460221,174.7650544",
+   "lat": -36.8460221,
+   "lng": 174.7650544,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "No. 1 Handmade Lanzhou Beef Ramen",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.849714,174.7665405",
+   "lat": -36.849714,
+   "lng": 174.7665405,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Sensational Chicken",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8504055,174.7603492",
+   "lat": -36.8504055,
+   "lng": 174.7603492,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Sushipac",
+   "type": "sushi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8513064,174.7650321",
+   "lat": -36.8513064,
+   "lng": 174.7650321,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "flip",
+   "type": "burger, soft serve",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8520438,174.7642252",
+   "lat": -36.8520438,
+   "lng": 174.7642252,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Shawarma & Woodfire Pizza",
+   "type": "shawarma, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8520817,174.7642918",
+   "lat": -36.8520817,
+   "lng": 174.7642918,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Good life",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8463764,174.7681206",
+   "lat": -36.8463764,
+   "lng": 174.7681206,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sal's Pizza",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8463724,174.7681457",
+   "lat": -36.8463724,
+   "lng": 174.7681457,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Zeta Greek Kitchen",
+   "type": "greek",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8453865,174.7676392",
+   "lat": -36.8453865,
+   "lng": 174.7676392,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Feri Cuisine",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8531323,174.7641165",
+   "lat": -36.8531323,
+   "lng": 174.7641165,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kiwi Fish & Chips and Chicken",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8531708,174.7644009",
+   "lat": -36.8531708,
+   "lng": 174.7644009,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Arbung Thai Street Food      - halal",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8436443,174.7625421",
+   "lat": -36.8436443,
+   "lng": 174.7625421,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Tanuki's Cave",
+   "type": "yakitori",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8536109,174.7631286",
+   "lat": -36.8536109,
+   "lng": 174.7631286,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Tanuki",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8536369,174.7631184",
+   "lat": -36.8536369,
+   "lng": 174.7631184,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mazi",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8436611,174.7664952",
+   "lat": -36.8436611,
+   "lng": 174.7664952,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mr. Turkish Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8543073,174.7632391",
+   "lat": -36.8543073,
+   "lng": 174.7632391,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Downtown Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8436408,174.7673642",
+   "lat": -36.8436408,
+   "lng": 174.7673642,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Harbourside Ocean Bar & Grill",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.843046,174.7669034",
+   "lat": -36.843046,
+   "lng": 174.7669034,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sensational Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8545477,174.7667053",
+   "lat": -36.8545477,
+   "lng": 174.7667053,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "The Sushi Store",
+   "type": "sushi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8541922,174.7586782",
+   "lat": -36.8541922,
+   "lng": 174.7586782,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Smash Burger",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8547477,174.7667021",
+   "lat": -36.8547477,
+   "lng": 174.7667021,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Joong Wha Ru",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.8556517,174.7627054",
+   "lat": -36.8556517,
+   "lng": 174.7627054,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Shoya",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-36.85604,174.7624868",
+   "lat": -36.85604,
+   "lng": 174.7624868,
+   "halalConfidence": "yes",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m13667982402",
+   "nom": "AUT Masjid - Muslim Prayer Hall",
+   "type": "Mosquée",
+   "adresse": "Saint Paul Street",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-36.8538335,174.7654386",
+   "lat": -36.8538335,
+   "lng": 174.7654386,
+   "source": "osm"
+  },
+  {
+   "id": "m3700497418",
+   "nom": "University Masjid",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-36.8544234,174.7668785",
+   "lat": -36.8544234,
+   "lng": 174.7668785,
+   "source": "osm"
+  },
+  {
+   "id": "m317610415",
+   "nom": "Al-Masjid Al-Jamie",
+   "type": "Mosquée",
+   "adresse": "Vermont Street, Auckland",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-36.8525956,174.7437379",
+   "lat": -36.8525956,
+   "lng": 174.7437379,
+   "source": "osm"
+  },
+  {
+   "id": "m474729168",
+   "nom": "Birkenhead Islamic Centre",
+   "type": "Mosquée",
+   "adresse": "Onewa Road, Birkenhead",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-36.8104227,174.7413139",
+   "lat": -36.8104227,
+   "lng": 174.7413139,
+   "source": "osm"
+  },
+  {
+   "id": "m3700505525",
+   "nom": "Mount Albert Islamic Centre",
+   "type": "Mosquée",
+   "adresse": "Wairere Avenue, Auckland",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-36.8794007,174.7247916",
+   "lat": -36.8794007,
+   "lng": 174.7247916,
+   "source": "osm"
+  },
+  {
+   "id": "m308373663",
+   "nom": "Masjid e Umar",
+   "type": "Mosquée",
+   "adresse": "Stoddard Road, Mt. Roskill, Mt. Eden , Auckland",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-36.9018062,174.7244192",
+   "lat": -36.9018062,
+   "lng": 174.7244192,
+   "source": "osm"
+  },
+  {
+   "id": "m5417500955",
+   "nom": "Al Hijaz Masjid",
+   "type": "Mosquée",
+   "adresse": "Richardson Road, Auckland",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-36.9007709,174.7199486",
+   "lat": -36.9007709,
+   "lng": 174.7199486,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a12427676557",
+   "nom": "The Harvey Tree",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8483354,174.7636922",
+   "lat": -36.8483354,
+   "lng": 174.7636922,
+   "source": "osm"
+  },
+  {
+   "id": "a1362143886",
+   "nom": "GoodNewsForYou Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8498361,174.7643501",
+   "lat": -36.8498361,
+   "lng": 174.7643501,
+   "source": "osm"
+  },
+  {
+   "id": "a5183728181",
+   "nom": "Lord Freyberg",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8479077,174.7666432",
+   "lat": -36.8479077,
+   "lng": 174.7666432,
+   "source": "osm"
+  },
+  {
+   "id": "a8758735744",
+   "nom": "Gow Langsford Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8511131,174.7659077",
+   "lat": -36.8511131,
+   "lng": 174.7659077,
+   "source": "osm"
+  },
+  {
+   "id": "a154430110",
+   "nom": "Toi o Tāmaki / Auckland Art Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8512757,174.7663722",
+   "lat": -36.8512757,
+   "lng": 174.7663722,
+   "source": "osm"
+  },
+  {
+   "id": "a13161276014",
+   "nom": "Horse trough",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.845017,174.7613703",
+   "lat": -36.845017,
+   "lng": 174.7613703,
+   "source": "osm"
+  },
+  {
+   "id": "a2135671125",
+   "nom": "Albert Park South African War Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8499,174.767827",
+   "lat": -36.8499,
+   "lng": 174.767827,
+   "source": "osm"
+  },
+  {
+   "id": "a4218297096",
+   "nom": "Sir George Grey",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8500888,174.7677333",
+   "lat": -36.8500888,
+   "lng": 174.7677333,
+   "source": "osm"
+  },
+  {
+   "id": "a729413110",
+   "nom": "Queen Victoria",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8502682,174.768079",
+   "lat": -36.8502682,
+   "lng": 174.768079,
+   "source": "osm"
+  },
+  {
+   "id": "a4218297325",
+   "nom": "George McCullagh Reed",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8512102,174.7675545",
+   "lat": -36.8512102,
+   "lng": 174.7675545,
+   "source": "osm"
+  },
+  {
+   "id": "a1360852789",
+   "nom": "Queen Sweet Art & Print",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8529431,174.7640084",
+   "lat": -36.8529431,
+   "lng": 174.7640084,
+   "source": "osm"
+  },
+  {
+   "id": "a13937022004",
+   "nom": "Gus Fisher",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8467937,174.7693392",
+   "lat": -36.8467937,
+   "lng": 174.7693392,
+   "source": "osm"
+  },
+  {
+   "id": "a13668188901",
+   "nom": "So / Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8452947,174.7683721",
+   "lat": -36.8452947,
+   "lng": 174.7683721,
+   "source": "osm"
+  },
+  {
+   "id": "a259134231",
+   "nom": "Churton Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8469636,174.7704422",
+   "lat": -36.8469636,
+   "lng": 174.7704422,
+   "source": "osm"
+  },
+  {
+   "id": "a8886497250",
+   "nom": "WW1 Memorial Beacon",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.842879,174.7659239",
+   "lat": -36.842879,
+   "lng": 174.7659239,
+   "source": "osm"
+  },
+  {
+   "id": "a464276992",
+   "nom": "KZ1 Yacht",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8423504,174.7635082",
+   "lat": -36.8423504,
+   "lng": 174.7635082,
+   "source": "osm"
+  },
+  {
+   "id": "a154260841",
+   "nom": "New Zealand Maritime Museum Hui Te Ananui a Tangaroa",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8415441,174.7633212",
+   "lat": -36.8415441,
+   "lng": 174.7633212,
+   "source": "osm"
+  },
+  {
+   "id": "a11242863697",
+   "nom": "Auckland Museum",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-36.8523113,174.7707293",
+   "lat": -36.8523113,
+   "lng": 174.7707293,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

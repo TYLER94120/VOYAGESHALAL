@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/7/73/Marginal_Pinheiros_e_Jockey_Club.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 6,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,696 @@
   "ville non-musulmane",
   "amérique du sud"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Curry's Culinária Indiana",
+   "type": "indian, dessert",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5576756,-46.6361841",
+   "lat": -23.5576756,
+   "lng": -46.6361841,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sultão Culinária Árabe",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5410782,-46.6384068",
+   "lat": -23.5410782,
+   "lng": -46.6384068,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Halabi",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5689076,-46.6490783",
+   "lat": -23.5689076,
+   "lng": -46.6490783,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Alyah Sweets Doceria e Cozinha Libanesa",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.6105455,-46.6513237",
+   "lat": -23.6105455,
+   "lng": -46.6513237,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Al-Gharb's Fast Food",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.552879,-46.6353994",
+   "lat": -23.552879,
+   "lng": -46.6353994,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurante Gloria",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5540511,-46.6342468",
+   "lat": -23.5540511,
+   "lng": -46.6342468,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Raful",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5432242,-46.631936",
+   "lat": -23.5432242,
+   "lng": -46.631936,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fenícia Culinária Libanesa",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.542863,-46.6318704",
+   "lat": -23.542863,
+   "lng": -46.6318704,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ponto Árabe",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5420079,-46.6302888",
+   "lat": -23.5420079,
+   "lng": -46.6302888,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aboud Síria",
+   "type": "arab, syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5427429,-46.6385625",
+   "lat": -23.5427429,
+   "lng": -46.6385625,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarma - Delícias Árabes",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.559473,-46.6310576",
+   "lat": -23.559473,
+   "lng": -46.6310576,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Esfiha do Gordo",
+   "type": "arab, sfiha",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5379672,-46.6347805",
+   "lat": -23.5379672,
+   "lng": -46.6347805,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Vovô Ali",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5413149,-46.6444452",
+   "lat": -23.5413149,
+   "lng": -46.6444452,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurante Syria",
+   "type": "syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5394593,-46.6451604",
+   "lat": -23.5394593,
+   "lng": -46.6451604,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Delícias da Miller",
+   "type": "pastel, kebab, sfiha, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5402254,-46.6173942",
+   "lat": -23.5402254,
+   "lng": -46.6173942,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Latife",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5543504,-46.6524535",
+   "lat": -23.5543504,
+   "lng": -46.6524535,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Esfiha Chic (Delivery)",
+   "type": "pizza, arab, sfiha",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5376629,-46.650621",
+   "lat": -23.5376629,
+   "lng": -46.650621,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Abu-Zuz",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.535959,-46.6176438",
+   "lat": -23.535959,
+   "lng": -46.6176438,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "All Sanduba",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5304679,-46.6382768",
+   "lat": -23.5304679,
+   "lng": -46.6382768,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Esfiha Chic",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5387438,-46.6517132",
+   "lat": -23.5387438,
+   "lng": -46.6517132,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "New Shawarma",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5340684,-46.6189858",
+   "lat": -23.5340684,
+   "lng": -46.6189858,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Adoun",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5665243,-46.6485024",
+   "lat": -23.5665243,
+   "lng": -46.6485024,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Raful",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5668322,-46.6484106",
+   "lat": -23.5668322,
+   "lng": -46.6484106,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Rossto Halal",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5331903,-46.6189448",
+   "lat": -23.5331903,
+   "lng": -46.6189448,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Naboulsi",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5337317,-46.6174349",
+   "lat": -23.5337317,
+   "lng": -46.6174349,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Amir Restaurante e Doceria Árabe",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5330268,-46.6171108",
+   "lat": -23.5330268,
+   "lng": -46.6171108,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Soltan",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5319545,-46.6181089",
+   "lat": -23.5319545,
+   "lng": -46.6181089,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Rei das Esfhiras",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.532085,-46.6178949",
+   "lat": -23.532085,
+   "lng": -46.6178949,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arabek",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5640989,-46.6542888",
+   "lat": -23.5640989,
+   "lng": -46.6542888,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Doce do Oriente",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5316967,-46.6173949",
+   "lat": -23.5316967,
+   "lng": -46.6173949,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Halim",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5719471,-46.6449821",
+   "lat": -23.5719471,
+   "lng": -46.6449821,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "York grill",
+   "type": "grill, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5568564,-46.6587637",
+   "lat": -23.5568564,
+   "lng": -46.6587637,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Soltan Ibrahim",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5325997,-46.6153088",
+   "lat": -23.5325997,
+   "lng": -46.6153088,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Barakiah",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5303163,-46.616839",
+   "lat": -23.5303163,
+   "lng": -46.616839,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Esfiha Juventus",
+   "type": "arab, sfiha",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5544347,-46.6028036",
+   "lat": -23.5544347,
+   "lng": -46.6028036,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nur El Chams",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5780296,-46.6426384",
+   "lat": -23.5780296,
+   "lng": -46.6426384,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Rosina",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5742256,-46.6561126",
+   "lat": -23.5742256,
+   "lng": -46.6561126,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Miski",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5739406,-46.6588015",
+   "lat": -23.5739406,
+   "lng": -46.6588015,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arabia",
+   "type": "arab, lebanese, moroccan, persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5632157,-46.6671174",
+   "lat": -23.5632157,
+   "lng": -46.6671174,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Frevo",
+   "type": "arab, brazilian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-23.5649283,-46.666774",
+   "lat": -23.5649283,
+   "lng": -46.666774,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m8093737",
+   "nom": "Catedral da Sé",
+   "type": "Mosquée",
+   "adresse": "Praça da Sé, São Paulo",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-23.5512574,-46.6343496",
+   "lat": -23.5512574,
+   "lng": -46.6343496,
+   "source": "osm"
+  },
+  {
+   "id": "m424632321",
+   "nom": "Capela dos Aflitos",
+   "type": "Mosquée",
+   "adresse": "Rua dos Aflitos, São Paulo",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-23.5561314,-46.6346559",
+   "lat": -23.5561314,
+   "lng": -46.6346559,
+   "source": "osm"
+  },
+  {
+   "id": "m371378692",
+   "nom": "Mesquita Brasil",
+   "type": "Mosquée",
+   "adresse": "Rua Barão de Jaguara, São Paulo",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-23.5582333,-46.6182952",
+   "lat": -23.5582333,
+   "lng": -46.6182952,
+   "source": "osm"
+  },
+  {
+   "id": "m438639819",
+   "nom": "Mesquita do Brás",
+   "type": "Mosquée",
+   "adresse": "Rua Monsenhor Andrade, São Paulo",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-23.5356496,-46.6220463",
+   "lat": -23.5356496,
+   "lng": -46.6220463,
+   "source": "osm"
+  },
+  {
+   "id": "m423244773",
+   "nom": "Capela Beneficiencia Portuguesa",
+   "type": "Mosquée",
+   "adresse": "Rua Maestro Cardim, São Paulo",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-23.5683164,-46.6419811",
+   "lat": -23.5683164,
+   "lng": -46.6419811,
+   "source": "osm"
+  },
+  {
+   "id": "m3429388406",
+   "nom": "Mesquita Omar ibn Khattab",
+   "type": "Mosquée",
+   "adresse": "Avenida Carlos de Campos, São Paulo",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-23.5306158,-46.6156383",
+   "lat": -23.5306158,
+   "lng": -46.6156383,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a75488634",
+   "nom": "Praça da Sé",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5504435,-46.6331172",
+   "lat": -23.5504435,
+   "lng": -46.6331172,
+   "source": "osm"
+  },
+  {
+   "id": "a425456141",
+   "nom": "Edifício Guinle",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5490754,-46.6341352",
+   "lat": -23.5490754,
+   "lng": -46.6341352,
+   "source": "osm"
+  },
+  {
+   "id": "a75531453",
+   "nom": "Secretaria da Justiça e da Defesa da Cidadania",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5486219,-46.6328604",
+   "lat": -23.5486219,
+   "lng": -46.6328604,
+   "source": "osm"
+  },
+  {
+   "id": "a425455864",
+   "nom": "Edifício Triângulo",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5488574,-46.6346163",
+   "lat": -23.5488574,
+   "lng": -46.6346163,
+   "source": "osm"
+  },
+  {
+   "id": "a75531452",
+   "nom": "Secretaria da Justiça e da Defesa da Cidadania",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5484964,-46.6325293",
+   "lat": -23.5484964,
+   "lng": -46.6325293,
+   "source": "osm"
+  },
+  {
+   "id": "a736841023",
+   "nom": "Beco do Pinto",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5484664,-46.6322816",
+   "lat": -23.5484664,
+   "lng": -46.6322816,
+   "source": "osm"
+  },
+  {
+   "id": "a425456078",
+   "nom": "Edifício Palacete Tereza Toledo Lara",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5487911,-46.6348924",
+   "lat": -23.5487911,
+   "lng": -46.6348924,
+   "source": "osm"
+  },
+  {
+   "id": "a2157624155",
+   "nom": "Glória Imortal aos Fundadores de São Paulo",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5481348,-46.6330584",
+   "lat": -23.5481348,
+   "lng": -46.6330584,
+   "source": "osm"
+  },
+  {
+   "id": "a205784137",
+   "nom": "Casa da Imagem",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5483508,-46.6321846",
+   "lat": -23.5483508,
+   "lng": -46.6321846,
+   "source": "osm"
+  },
+  {
+   "id": "a204072597",
+   "nom": "Beco do Pinto",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5483342,-46.6318944",
+   "lat": -23.5483342,
+   "lng": -46.6318944,
+   "source": "osm"
+  },
+  {
+   "id": "a205784140",
+   "nom": "Colégio José de Anchieta",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5480155,-46.6326088",
+   "lat": -23.5480155,
+   "lng": -46.6326088,
+   "source": "osm"
+  },
+  {
+   "id": "a10580168308",
+   "nom": "Pelorinho",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5528384,-46.634542",
+   "lat": -23.5528384,
+   "lng": -46.634542,
+   "source": "osm"
+  },
+  {
+   "id": "a5013011023",
+   "nom": "O Beijo",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5498098,-46.6366685",
+   "lat": -23.5498098,
+   "lng": -46.6366685,
+   "source": "osm"
+  },
+  {
+   "id": "a5013011024",
+   "nom": "Busto de Álvares de Azevedo",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5498657,-46.6366916",
+   "lat": -23.5498657,
+   "lng": -46.6366916,
+   "source": "osm"
+  },
+  {
+   "id": "a4973028945",
+   "nom": "Centro Cultural Banco do Brasil São Paulo",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5475552,-46.6346871",
+   "lat": -23.5475552,
+   "lng": -46.6346871,
+   "source": "osm"
+  },
+  {
+   "id": "a5013011022",
+   "nom": "XI de Agosto",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5497797,-46.6367212",
+   "lat": -23.5497797,
+   "lng": -46.6367212,
+   "source": "osm"
+  },
+  {
+   "id": "a5013029321",
+   "nom": "Menino e o Catavento",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5497625,-46.6367931",
+   "lat": -23.5497625,
+   "lng": -46.6367931,
+   "source": "osm"
+  },
+  {
+   "id": "a6389134263",
+   "nom": "Museu do Tribunal de Justiça SP",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-23.5537763,-46.6321281",
+   "lat": -23.5537763,
+   "lng": -46.6321281,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

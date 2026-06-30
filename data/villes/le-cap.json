@@ -1,76 +1,208 @@
 {
-  "slug": "le-cap",
-  "nom": "Le Cap",
-  "pays": "Afrique du Sud",
-  "pays_slug": "afrique-du-sud",
-  "continent": "Afrique",
-  "region": "Afrique australe",
-  "coordonnees": {
-    "lat": -33.9249,
-    "lng": 18.4241
+ "slug": "le-cap",
+ "nom": "Le Cap",
+ "pays": "Afrique du Sud",
+ "pays_slug": "afrique-du-sud",
+ "continent": "Afrique",
+ "region": "Afrique australe",
+ "coordonnees": {
+  "lat": -33.9249,
+  "lng": 18.4241
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.7,
+ "description": "Au pied de la Montagne de la Table, Le Cap abrite le quartier malais musulman de Bo-Kaap, berceau de l'islam en Afrique du Sud.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Afrique_du_Sud%2C_Le_Cap_de_Bonne_Esp%C3%A9rance.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Afrique_du_Sud%2C_Le_Cap_de_Bonne_Esp%C3%A9rance.jpg",
+ "metaDescription": "Au pied de la Montagne de la Table, Le Cap abrite le quartier malais musulman de Bo-Kaap, berceau de l'islam en Afrique du Sud.",
+ "statistiques": {
+  "restaurants_halal": 13,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "RocoMamas",
+   "type": "burger, wings, barbecue",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9279956,18.4234102",
+   "lat": -33.9279956,
+   "lng": 18.4234102,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.7,
-  "description": "Au pied de la Montagne de la Table, Le Cap abrite le quartier malais musulman de Bo-Kaap, berceau de l'islam en Afrique du Sud.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Afrique_du_Sud%2C_Le_Cap_de_Bonne_Esp%C3%A9rance.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Afrique_du_Sud%2C_Le_Cap_de_Bonne_Esp%C3%A9rance.jpg",
-  "metaDescription": "Au pied de la Montagne de la Table, Le Cap abrite le quartier malais musulman de Bo-Kaap, berceau de l'islam en Afrique du Sud.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Addis in Cape",
+   "type": "ethiopian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.924825,18.4152335",
+   "lat": -33.924825,
+   "lng": 18.4152335,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Feedz",
+   "type": "burger, bagel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9304396,18.443305",
+   "lat": -33.9304396,
+   "lng": 18.443305,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Le Cap",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Le Cap",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Le%20Cap%20Le%20Cap"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Bo-Kaap",
-      "categorie": "Culture",
-      "description": "Quartier malais aux maisons colorées et mosquées historiques.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Bo-Kaap%20Le%20Cap"
-    },
-    {
-      "id": "a2",
-      "nom": "Montagne de la Table",
-      "categorie": "Nature",
-      "description": "Sommet plat emblématique accessible par téléphérique.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Montagne%20de%20la%20Table%20Le%20Cap"
-    },
-    {
-      "id": "a3",
-      "nom": "Auwal Mosque",
-      "categorie": "Spirituel",
-      "description": "Première mosquée d'Afrique du Sud (1794).",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Auwal%20Mosque%20Le%20Cap"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "The Falafel Guy",
+   "type": "shawarma, middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9149852,18.390222",
+   "lat": -33.9149852,
+   "lng": 18.390222,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "MexiKaap",
+   "type": "mexican",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9341844,18.4592713",
+   "lat": -33.9341844,
+   "lng": 18.4592713,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bean Tree Cafe",
+   "type": "cake, pastry, breakfast, regional, coffee shop",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9372823,18.4627422",
+   "lat": -33.9372823,
+   "lng": 18.4627422,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "La Menara",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9281421,18.4240123",
+   "lat": -33.9281421,
+   "lng": 18.4240123,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Baran's",
+   "type": "turkish, kurdish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9223711,18.4202543",
+   "lat": -33.9223711,
+   "lng": 18.4202543,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ala Turkish",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9149846,18.4189266",
+   "lat": -33.9149846,
+   "lng": 18.4189266,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Rick's Cafe Americain",
+   "type": "burger, american, international, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9314885,18.4094247",
+   "lat": -33.9314885,
+   "lng": 18.4094247,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tasca",
+   "type": "portuguese, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9041547,18.4206303",
+   "lat": -33.9041547,
+   "lng": 18.4206303,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zeetan Turkish",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9087527,18.3969647",
+   "lat": -33.9087527,
+   "lng": 18.3969647,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sha Sha Warma",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-33.9194903,18.3854859",
+   "lat": -33.9194903,
+   "lng": 18.3854859,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Le Cap",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Le Cap",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Le%20Cap%20Le%20Cap"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Bo-Kaap",
+   "categorie": "Culture",
+   "description": "Quartier malais aux maisons colorées et mosquées historiques.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Bo-Kaap%20Le%20Cap"
+  },
+  {
+   "id": "a2",
+   "nom": "Montagne de la Table",
+   "categorie": "Nature",
+   "description": "Sommet plat emblématique accessible par téléphérique.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Montagne%20de%20la%20Table%20Le%20Cap"
+  },
+  {
+   "id": "a3",
+   "nom": "Auwal Mosque",
+   "categorie": "Spirituel",
+   "description": "Première mosquée d'Afrique du Sud (1794).",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Auwal%20Mosque%20Le%20Cap"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boston_Financial_District_skyline.jpg/1920px-Boston_Financial_District_skyline.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 28,
+  "mosquees": 4,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,554 @@
   "ville non-musulmane",
   "amérique du nord"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "The Chicken & Rice Guys - Downtown",
+   "type": "middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.353255,-71.0598437",
+   "lat": 42.353255,
+   "lng": -71.0598437,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "The Halal Guys",
+   "type": "chicken, falafel, gyros",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3512904,-71.0657649",
+   "lat": 42.3512904,
+   "lng": -71.0657649,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "South End Pita",
+   "type": "mediterranean, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3397154,-71.0650214",
+   "lat": 42.3397154,
+   "lng": -71.0650214,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Aceituna Grill",
+   "type": "mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3495341,-71.0834556",
+   "lat": 42.3495341,
+   "lng": -71.0834556,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Shah's Halal Food",
+   "type": "middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3467379,-71.0889394",
+   "lat": 42.3467379,
+   "lng": -71.0889394,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "The Halal Guys",
+   "type": "chicken, falafel, gyros",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3894576,-71.1191636",
+   "lat": 42.3894576,
+   "lng": -71.1191636,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Noodle Lab",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3521282,-71.1310882",
+   "lat": 42.3521282,
+   "lng": -71.1310882,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Zam Zam",
+   "type": "pakistani, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.4179565,-71.108311",
+   "lat": 42.4179565,
+   "lng": -71.108311,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Boston Döner",
+   "type": "shawarma, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3643327,-71.0630074",
+   "lat": 42.3643327,
+   "lng": -71.0630074,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Cafe Med",
+   "type": "mediterranean, greek, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3509109,-71.0714779",
+   "lat": 42.3509109,
+   "lng": -71.0714779,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tangierino",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3738086,-71.0626573",
+   "lat": 42.3738086,
+   "lng": -71.0626573,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Helmand",
+   "type": "afghan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.366472,-71.0780441",
+   "lat": 42.366472,
+   "lng": -71.0780441,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Baba",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.34359,-71.0651046",
+   "lat": 42.34359,
+   "lng": -71.0651046,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aceituna Grill",
+   "type": "mediterranean, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3644151,-71.0820088",
+   "lat": 42.3644151,
+   "lng": -71.0820088,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Silk Road Uyghur Cuisine",
+   "type": "uyghur",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3720663,-71.08715",
+   "lat": 42.3720663,
+   "lng": -71.08715,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Oleana",
+   "type": "turkish, middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3705673,-71.0971787",
+   "lat": 42.3705673,
+   "lng": -71.0971787,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Himalayan Kitchen",
+   "type": "kebab, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3815356,-71.0979069",
+   "lat": 42.3815356,
+   "lng": -71.0979069,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Crispy Crêpes Café",
+   "type": "crepe, sandwich, kebab, breakfast",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3496106,-71.1056579",
+   "lat": 42.3496106,
+   "lng": -71.1056579,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Jahunger Taste of Uyghur",
+   "type": "uyghur",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.357395,-71.1077988",
+   "lat": 42.357395,
+   "lng": -71.1077988,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sarma",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3881868,-71.0954753",
+   "lat": 42.3881868,
+   "lng": -71.0954753,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Koshari Mama",
+   "type": "african, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3838742,-71.1087236",
+   "lat": 42.3838742,
+   "lng": -71.1087236,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Olba",
+   "type": "kebab, lebanese, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3411584,-71.1240949",
+   "lat": 42.3411584,
+   "lng": -71.1240949,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Anatolia",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3334159,-71.1195968",
+   "lat": 42.3334159,
+   "lng": -71.1195968,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Azama Grill",
+   "type": "egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3544008,-71.132303",
+   "lat": 42.3544008,
+   "lng": -71.132303,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sound Bites Cafe",
+   "type": "breakfast, brunch, syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.399838,-71.1124092",
+   "lat": 42.399838,
+   "lng": -71.1124092,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lazuri Chicken 'N' Pizza",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.353793,-71.1372699",
+   "lat": 42.353793,
+   "lng": -71.1372699,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lavash Bar & Grill",
+   "type": "turkish, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.3880376,-71.1404881",
+   "lat": 42.3880376,
+   "lng": -71.1404881,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Diner & Cafe",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=42.4112933,-70.9980513",
+   "lat": 42.4112933,
+   "lng": -70.9980513,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m29795740",
+   "nom": "Islamic Society of Boston",
+   "type": "Mosquée",
+   "adresse": "Prospect Street, Cambridge",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=42.3702733,-71.1000727",
+   "lat": 42.3702733,
+   "lng": -71.1000727,
+   "source": "osm"
+  },
+  {
+   "id": "m5567734724",
+   "nom": "Islamic Society of Boston Cultural Center",
+   "type": "Mosquée",
+   "adresse": "Malcolm X Boulevard, Roxbury",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=42.3309021,-71.0933788",
+   "lat": 42.3309021,
+   "lng": -71.0933788,
+   "source": "osm"
+  },
+  {
+   "id": "m29930238",
+   "nom": "Arabic Jumaa Mosque",
+   "type": "Mosquée",
+   "adresse": "Quint Avenue",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=42.3517072,-71.1343998",
+   "lat": 42.3517072,
+   "lng": -71.1343998,
+   "source": "osm"
+  },
+  {
+   "id": "m9826872529",
+   "nom": "Allston Brighton Islamic Center",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=42.3544876,-71.1378352",
+   "lat": 42.3544876,
+   "lng": -71.1378352,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1325764147",
+   "nom": "Golden Teapot",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3593566,-71.0592779",
+   "lat": 42.3593566,
+   "lng": -71.0592779,
+   "source": "osm"
+  },
+  {
+   "id": "a12222757743",
+   "nom": "D.L. Moody Historic Marker",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3590926,-71.0586971",
+   "lat": 42.3590926,
+   "lng": -71.0586971,
+   "source": "osm"
+  },
+  {
+   "id": "a9648179585",
+   "nom": "Birthplace of the Telephone",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.360634,-71.0601705",
+   "lat": 42.360634,
+   "lng": -71.0601705,
+   "source": "osm"
+  },
+  {
+   "id": "a7609405348",
+   "nom": "James Michael Curley Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3605558,-71.0570327",
+   "lat": 42.3605558,
+   "lng": -71.0570327,
+   "source": "osm"
+  },
+  {
+   "id": "a4776867029",
+   "nom": "Samuel Adams",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3599824,-71.0567717",
+   "lat": 42.3599824,
+   "lng": -71.0567717,
+   "source": "osm"
+  },
+  {
+   "id": "a29608515",
+   "nom": "Old State House",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3587304,-71.0574681",
+   "lat": 42.3587304,
+   "lng": -71.0574681,
+   "source": "osm"
+  },
+  {
+   "id": "a632018853",
+   "nom": "Boston Massacre Site",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3587814,-71.0571703",
+   "lat": 42.3587814,
+   "lng": -71.0571703,
+   "source": "osm"
+  },
+  {
+   "id": "a367781413",
+   "nom": "Ancient and Honorable Artillery Company Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3601131,-71.0561189",
+   "lat": 42.3601131,
+   "lng": -71.0561189,
+   "source": "osm"
+  },
+  {
+   "id": "a7610330939",
+   "nom": "Garden of Peace",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.360031,-71.0617232",
+   "lat": 42.360031,
+   "lng": -71.0617232,
+   "source": "osm"
+  },
+  {
+   "id": "a7609707456",
+   "nom": "Boston Stone",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3617016,-71.0568342",
+   "lat": 42.3617016,
+   "lng": -71.0568342,
+   "source": "osm"
+  },
+  {
+   "id": "a3996416865",
+   "nom": "Benjamin Franklin Statue",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.357933,-71.0595681",
+   "lat": 42.357933,
+   "lng": -71.0595681,
+   "source": "osm"
+  },
+  {
+   "id": "a4496278889",
+   "nom": "First Public School Site",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3580139,-71.0600072",
+   "lat": 42.3580139,
+   "lng": -71.0600072,
+   "source": "osm"
+  },
+  {
+   "id": "a7623366404",
+   "nom": "Josiah Quincy III",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3578524,-71.0593561",
+   "lat": 42.3578524,
+   "lng": -71.0593561,
+   "source": "osm"
+  },
+  {
+   "id": "a29573399",
+   "nom": "Quincy Market",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3602163,-71.0547993",
+   "lat": 42.3602163,
+   "lng": -71.0547993,
+   "source": "osm"
+  },
+  {
+   "id": "a94483066",
+   "nom": "Faneuil Hall Marketplace",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3600766,-71.0547394",
+   "lat": 42.3600766,
+   "lng": -71.0547394,
+   "source": "osm"
+  },
+  {
+   "id": "a29620426",
+   "nom": "Old South Meeting Place",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.356988,-71.0583947",
+   "lat": 42.356988,
+   "lng": -71.0583947,
+   "source": "osm"
+  },
+  {
+   "id": "a5922346085",
+   "nom": "North End Parks",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3622805,-71.0556796",
+   "lat": 42.3622805,
+   "lng": -71.0556796,
+   "source": "osm"
+  },
+  {
+   "id": "a7607256691",
+   "nom": "Massachusetts Law Enforcement Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=42.3592615,-71.0633192",
+   "lat": 42.3592615,
+   "lng": -71.0633192,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

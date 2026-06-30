@@ -1,76 +1,378 @@
 {
-  "slug": "johor-bahru",
-  "nom": "Johor Bahru",
-  "pays": "Malaisie",
-  "pays_slug": "malaisie",
-  "continent": "Asie",
-  "region": "Malaisie",
-  "coordonnees": {
-    "lat": 1.4927,
-    "lng": 103.7414
+ "slug": "johor-bahru",
+ "nom": "Johor Bahru",
+ "pays": "Malaisie",
+ "pays_slug": "malaisie",
+ "continent": "Asie",
+ "region": "Malaisie",
+ "coordonnees": {
+  "lat": 1.4927,
+  "lng": 103.7414
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "Porte sud de la Malaisie face à Singapour, Johor Bahru offre la majestueuse mosquée d'État Sultan Abu Bakar et une scène halal foisonnante.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Johor_Bahru_city_in_2015.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Johor_Bahru_city_in_2015.jpg",
+ "metaDescription": "Porte sud de la Malaisie face à Singapour, Johor Bahru offre la majestueuse mosquée d'État Sultan Abu Bakar et une scène halal foisonnante.",
+ "statistiques": {
+  "restaurants_halal": 30,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4955119,103.7419842",
+   "lat": 1.4955119,
+   "lng": 103.7419842,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.0,
-  "description": "Porte sud de la Malaisie face à Singapour, Johor Bahru offre la majestueuse mosquée d'État Sultan Abu Bakar et une scène halal foisonnante.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Johor_Bahru_city_in_2015.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Johor_Bahru_city_in_2015.jpg",
-  "metaDescription": "Porte sud de la Malaisie face à Singapour, Johor Bahru offre la majestueuse mosquée d'État Sultan Abu Bakar et une scène halal foisonnante.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4954949,103.7422165",
+   "lat": 1.4954949,
+   "lng": 103.7422165,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4885207,103.7598954",
+   "lat": 1.4885207,
+   "lng": 103.7598954,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Johor Bahru",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Johor Bahru",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Johor%20Bahru%20Johor%20Bahru"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Sultan Abu Bakar",
-      "categorie": "Spirituel",
-      "description": "Mosquée d'État de style victorien-mauresque sur une colline.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Sultan%20Abu%20Bakar%20Johor%20Bahru"
-    },
-    {
-      "id": "a2",
-      "nom": "Galeries du patrimoine",
-      "categorie": "Culture",
-      "description": "Histoire du sultanat de Johor.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Galeries%20du%20patrimoine%20Johor%20Bahru"
-    },
-    {
-      "id": "a3",
-      "nom": "Marchés nocturnes halal",
-      "categorie": "Culture",
-      "description": "Street food malaise abondante et halal.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9s%20nocturnes%20halal%20Johor%20Bahru"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.5039395,103.7609725",
+   "lat": 1.5039395,
+   "lng": 103.7609725,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.5153756,103.7433591",
+   "lat": 1.5153756,
+   "lng": 103.7433591,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Uncle Lim Delivery JB TOWN",
+   "type": "malaysian, chinese, indian, indonesian, asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4917635,103.7671784",
+   "lat": 1.4917635,
+   "lng": 103.7671784,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4805418,103.7652225",
+   "lat": 1.4805418,
+   "lng": 103.7652225,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4838882,103.7740092",
+   "lat": 1.4838882,
+   "lng": 103.7740092,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "The Chicken Rice Shop",
+   "type": "malaysian, chicken rice",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.462323,103.7633341",
+   "lat": 1.462323,
+   "lng": 103.7633341,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4614281,103.7638645",
+   "lat": 1.4614281,
+   "lng": 103.7638645,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4565497,103.763722",
+   "lat": 1.4565497,
+   "lng": 103.763722,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "amphawa boat noodle",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4561804,103.7632595",
+   "lat": 1.4561804,
+   "lng": 103.7632595,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.5124523,103.7035546",
+   "lat": 1.5124523,
+   "lng": 103.7035546,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.5003631,103.6975976",
+   "lat": 1.5003631,
+   "lng": 103.6975976,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4674205,103.7785538",
+   "lat": 1.4674205,
+   "lng": 103.7785538,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Rasa Istimewa Waterfront Restaurant",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4539388,103.7776831",
+   "lat": 1.4539388,
+   "lng": 103.7776831,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Tea Garden Taman Molek",
+   "type": "malaysian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.5249987,103.7839842",
+   "lat": 1.5249987,
+   "lng": 103.7839842,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.5435878,103.7626244",
+   "lat": 1.5435878,
+   "lng": 103.7626244,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.5308699,103.7828139",
+   "lat": 1.5308699,
+   "lng": 103.7828139,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.552086,103.7372494",
+   "lat": 1.552086,
+   "lng": 103.7372494,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4969594,103.6810517",
+   "lat": 1.4969594,
+   "lng": 103.6810517,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.5486227,103.7150608",
+   "lat": 1.5486227,
+   "lng": 103.7150608,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.5487255,103.7142336",
+   "lat": 1.5487255,
+   "lng": 103.7142336,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "RuRu Austin JB",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.549342,103.7710212",
+   "lat": 1.549342,
+   "lng": 103.7710212,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Uncle Lim Delivery Austin",
+   "type": "asian, malaysian, chinese, indonesian, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.547633,103.7815867",
+   "lat": 1.547633,
+   "lng": 103.7815867,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.5230443,103.678377",
+   "lat": 1.5230443,
+   "lng": 103.678377,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "PastaMania",
+   "type": "italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.435784,103.7854176",
+   "lat": 1.435784,
+   "lng": 103.7854176,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Texas Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4357098,103.7854793",
+   "lat": 1.4357098,
+   "lng": 103.7854793,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "wadi hana elarabi",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4995342,103.7072351",
+   "lat": 1.4995342,
+   "lng": 103.7072351,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Stuff'd",
+   "type": "burrito, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=1.4360226,103.7858324",
+   "lat": 1.4360226,
+   "lng": 103.7858324,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Johor Bahru",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Johor Bahru",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Johor%20Bahru%20Johor%20Bahru"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Sultan Abu Bakar",
+   "categorie": "Spirituel",
+   "description": "Mosquée d'État de style victorien-mauresque sur une colline.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Sultan%20Abu%20Bakar%20Johor%20Bahru"
+  },
+  {
+   "id": "a2",
+   "nom": "Galeries du patrimoine",
+   "categorie": "Culture",
+   "description": "Histoire du sultanat de Johor.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Galeries%20du%20patrimoine%20Johor%20Bahru"
+  },
+  {
+   "id": "a3",
+   "nom": "Marchés nocturnes halal",
+   "categorie": "Culture",
+   "description": "Street food malaise abondante et halal.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9s%20nocturnes%20halal%20Johor%20Bahru"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

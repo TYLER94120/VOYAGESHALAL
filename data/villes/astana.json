@@ -1,76 +1,188 @@
 {
-  "slug": "astana",
-  "nom": "Astana",
-  "pays": "Kazakhstan",
-  "pays_slug": "kazakhstan",
-  "continent": "Asie",
-  "region": "Asie centrale",
-  "coordonnees": {
-    "lat": 51.1694,
-    "lng": 71.4491
+ "slug": "astana",
+ "nom": "Astana",
+ "pays": "Kazakhstan",
+ "pays_slug": "kazakhstan",
+ "continent": "Asie",
+ "region": "Asie centrale",
+ "coordonnees": {
+  "lat": 51.1694,
+  "lng": 71.4491
+ },
+ "codeISO": "",
+ "score_halal": 4.4,
+ "halalScore": 8.8,
+ "description": "Capitale futuriste du Kazakhstan, Astana mêle architecture audacieuse et grande mosquée Hazret Sultan, l'une des plus vastes d'Asie centrale.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg/1920px-Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg/1920px-Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg",
+ "metaDescription": "Capitale futuriste du Kazakhstan, Astana mêle architecture audacieuse et grande mosquée Hazret Sultan, l'une des plus vastes d'Asie centrale.",
+ "statistiques": {
+  "restaurants_halal": 11,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Каганат",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1729453,71.4258264",
+   "lat": 51.1729453,
+   "lng": 71.4258264,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.4,
-  "halalScore": 8.8,
-  "description": "Capitale futuriste du Kazakhstan, Astana mêle architecture audacieuse et grande mosquée Hazret Sultan, l'une des plus vastes d'Asie centrale.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg/1920px-Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg/1920px-Astana_020000%2C_Kazakhstan_-_panoramio_%2813%29.jpg",
-  "metaDescription": "Capitale futuriste du Kazakhstan, Astana mêle architecture audacieuse et grande mosquée Hazret Sultan, l'une des plus vastes d'Asie centrale.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "YumTime",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1531618,71.4658356",
+   "lat": 51.1531618,
+   "lng": 71.4658356,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "KAL'BI meat house",
+   "type": "american, pizza, sandwich, steak house, barbecue, european",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1359228,71.4029276",
+   "lat": 51.1359228,
+   "lng": 71.4029276,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Astana",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Astana",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Astana%20Astana"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Hazret Sultan",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée blanche de style islamique classique.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Hazret%20Sultan%20Astana"
-    },
-    {
-      "id": "a2",
-      "nom": "Tour Baïterek",
-      "categorie": "Loisirs",
-      "description": "Monument-observatoire emblématique de la ville.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Tour%20Ba%C3%AFterek%20Astana"
-    },
-    {
-      "id": "a3",
-      "nom": "Khan Shatyr",
-      "categorie": "Loisirs",
-      "description": "Immense tente-centre de loisirs futuriste.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Khan%20Shatyr%20Astana"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Наш Донер",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1578764,71.4419362",
+   "lat": 51.1578764,
+   "lng": 71.4419362,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "M.Doner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1634077,71.4307821",
+   "lat": 51.1634077,
+   "lng": 71.4307821,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Et-Et",
+   "type": "italian, turkish, russian, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1668309,71.4081785",
+   "lat": 51.1668309,
+   "lng": 71.4081785,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Жар Донер",
+   "type": "shawarma, fries",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1803654,71.4094581",
+   "lat": 51.1803654,
+   "lng": 71.4094581,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Багратиони",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1411764,71.4093153",
+   "lat": 51.1411764,
+   "lng": 71.4093153,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Divan",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1285928,71.4331398",
+   "lat": 51.1285928,
+   "lng": 71.4331398,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bekbota",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1216324,71.4276803",
+   "lat": 51.1216324,
+   "lng": 71.4276803,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Butcher’s street",
+   "type": "burger, diner, breakfast, kebab, coffee shop, sandwich, hot dog",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=51.1035903,71.4290304",
+   "lat": 51.1035903,
+   "lng": 71.4290304,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Astana",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Astana",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Astana%20Astana"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Hazret Sultan",
+   "categorie": "Spirituel",
+   "description": "Grande mosquée blanche de style islamique classique.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Hazret%20Sultan%20Astana"
+  },
+  {
+   "id": "a2",
+   "nom": "Tour Baïterek",
+   "categorie": "Loisirs",
+   "description": "Monument-observatoire emblématique de la ville.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Tour%20Ba%C3%AFterek%20Astana"
+  },
+  {
+   "id": "a3",
+   "nom": "Khan Shatyr",
+   "categorie": "Loisirs",
+   "description": "Immense tente-centre de loisirs futuriste.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Khan%20Shatyr%20Astana"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

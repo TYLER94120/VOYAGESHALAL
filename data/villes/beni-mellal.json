@@ -1,81 +1,82 @@
 {
-  "slug": "beni-mellal",
-  "nom": "Béni Mellal",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Intérieur du Maroc",
-  "coordonnees": {
-    "lat": 32.3373,
-    "lng": -6.3498
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9.0,
-  "description": "Au pied du Moyen Atlas et des célèbres cascades d'Ouzoud, Béni Mellal est entourée d'oliveraies et proche du grand lac Bin El Ouidane.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hartoka.jpg/1920px-Hartoka.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hartoka.jpg/1920px-Hartoka.jpg",
-  "metaDescription": "Au pied du Moyen Atlas et des célèbres cascades d'Ouzoud, Béni Mellal est entourée d'oliveraies et proche du grand lac Bin El Ouidane.",
+ "slug": "beni-mellal",
+ "nom": "Béni Mellal",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Intérieur du Maroc",
+ "coordonnees": {
+  "lat": 32.3373,
+  "lng": -6.3498
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "Au pied du Moyen Atlas et des célèbres cascades d'Ouzoud, Béni Mellal est entourée d'oliveraies et proche du grand lac Bin El Ouidane.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hartoka.jpg/1920px-Hartoka.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Hartoka.jpg/1920px-Hartoka.jpg",
+ "metaDescription": "Au pied du Moyen Atlas et des célèbres cascades d'Ouzoud, Béni Mellal est entourée d'oliveraies et proche du grand lac Bin El Ouidane.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 0,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Béni Mellal",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Béni Mellal",
+   "description": "Mosquée principale de la ville, prière du vendredi.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20B%C3%A9ni%20Mellal%20B%C3%A9ni%20Mellal%20Maroc"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Cascades d'Ouzoud",
+   "categorie": "Nature",
+   "description": "Chutes d'eau de 110m parmi les plus belles d'Afrique du Nord.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Cascades%20d%27Ouzoud%20B%C3%A9ni%20Mellal%20Maroc"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "id": "a2",
+   "nom": "Lac Bin El Ouidane",
+   "categorie": "Nature",
+   "description": "Grand lac de barrage turquoise, activités nautiques.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Lac%20Bin%20El%20Ouidane%20B%C3%A9ni%20Mellal%20Maroc"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Béni Mellal",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Béni Mellal",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20B%C3%A9ni%20Mellal%20B%C3%A9ni%20Mellal%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Cascades d'Ouzoud",
-      "categorie": "Nature",
-      "description": "Chutes d'eau de 110m parmi les plus belles d'Afrique du Nord.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Cascades%20d%27Ouzoud%20B%C3%A9ni%20Mellal%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Lac Bin El Ouidane",
-      "categorie": "Nature",
-      "description": "Grand lac de barrage turquoise, activités nautiques.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Lac%20Bin%20El%20Ouidane%20B%C3%A9ni%20Mellal%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Source Ain Asserdoun",
-      "categorie": "Nature",
-      "description": "Source aménagée en jardins au pied du kasbah de Ras El Aïn.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Source%20Ain%20Asserdoun%20B%C3%A9ni%20Mellal%20Maroc"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "id": "a3",
+   "nom": "Source Ain Asserdoun",
+   "categorie": "Nature",
+   "description": "Source aménagée en jardins au pied du kasbah de Ras El Aïn.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Source%20Ain%20Asserdoun%20B%C3%A9ni%20Mellal%20Maroc"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

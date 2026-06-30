@@ -1,81 +1,103 @@
 {
-  "slug": "taroudant",
-  "nom": "Taroudant",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Sud du Maroc",
-  "coordonnees": {
-    "lat": 30.4711,
-    "lng": -8.877
-  },
-  "codeISO": "MA",
-  "score_halal": 4.6,
-  "halalScore": 9.2,
-  "description": "Surnommée 'la petite Marrakech', Taroudant séduit par ses remparts intacts, son souk berbère authentique et sa position dans la plaine du Souss.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Taroudant-murailles.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Taroudant-murailles.jpg",
-  "metaDescription": "Surnommée 'la petite Marrakech', Taroudant séduit par ses remparts intacts, son souk berbère authentique et sa position dans la plaine du Souss.",
+ "slug": "taroudant",
+ "nom": "Taroudant",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Sud du Maroc",
+ "coordonnees": {
+  "lat": 30.4711,
+  "lng": -8.877
+ },
+ "codeISO": "MA",
+ "score_halal": 4.6,
+ "halalScore": 9.2,
+ "description": "Surnommée 'la petite Marrakech', Taroudant séduit par ses remparts intacts, son souk berbère authentique et sa position dans la plaine du Souss.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Taroudant-murailles.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Taroudant-murailles.jpg",
+ "metaDescription": "Surnommée 'la petite Marrakech', Taroudant séduit par ses remparts intacts, son souk berbère authentique et sa position dans la plaine du Souss.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 2,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "cafe restaurant/snack Al Masjid",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4688263,-8.8775461",
+   "lat": 30.4688263,
+   "lng": -8.8775461,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Restaurant Azzar",
+   "type": "steak house, moroccan, sandwich, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.4690328,-8.8824972",
+   "lat": 30.4690328,
+   "lng": -8.8824972,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Taroudant",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Taroudant",
+   "description": "Mosquée principale de la ville, prière du vendredi.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Taroudant%20Taroudant%20Maroc"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Tour des remparts",
+   "categorie": "Histoire",
+   "description": "Murailles ocres parfaitement conservées, à parcourir en calèche.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Tour%20des%20remparts%20Taroudant%20Maroc"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Taroudant",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Taroudant",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Taroudant%20Taroudant%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Tour des remparts",
-      "categorie": "Histoire",
-      "description": "Murailles ocres parfaitement conservées, à parcourir en calèche.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Tour%20des%20remparts%20Taroudant%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Souk berbère et souk arabe",
-      "categorie": "Shopping",
-      "description": "Marchés authentiques d'épices, bijoux et tapis du Souss.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Souk%20berb%C3%A8re%20et%20souk%20arabe%20Taroudant%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Jardins et palmeraies du Souss",
-      "categorie": "Nature",
-      "description": "Oasis et vergers d'agrumes autour de la ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Jardins%20et%20palmeraies%20du%20Souss%20Taroudant%20Maroc"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "id": "a2",
+   "nom": "Souk berbère et souk arabe",
+   "categorie": "Shopping",
+   "description": "Marchés authentiques d'épices, bijoux et tapis du Souss.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Souk%20berb%C3%A8re%20et%20souk%20arabe%20Taroudant%20Maroc"
+  },
+  {
+   "id": "a3",
+   "nom": "Jardins et palmeraies du Souss",
+   "categorie": "Nature",
+   "description": "Oasis et vergers d'agrumes autour de la ville.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Jardins%20et%20palmeraies%20du%20Souss%20Taroudant%20Maroc"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Sobrevuelos_CDMX_HJ2A4913_%2825514321687%29_%28cropped%29.jpg/1600px-Sobrevuelos_CDMX_HJ2A4913_%2825514321687%29_%28cropped%29.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 13,
+  "mosquees": 3,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,393 @@
   "ville non-musulmane",
   "amérique du nord"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "La cinco de mayo",
+   "type": "kebab, mexican",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.4342711,-99.1377013",
+   "lat": 19.4342711,
+   "lng": -99.1377013,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Helus",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.4286004,-99.1298986",
+   "lat": 19.4286004,
+   "lng": -99.1298986,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "al-Andalus",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.4277282,-99.1290975",
+   "lat": 19.4277282,
+   "lng": -99.1290975,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Diwan",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.4174154,-99.1568604",
+   "lat": 19.4174154,
+   "lng": -99.1568604,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Meramiyeh",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.4146138,-99.1619536",
+   "lat": 19.4146138,
+   "lng": -99.1619536,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "El Jamil",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.4141665,-99.166988",
+   "lat": 19.4141665,
+   "lng": -99.166988,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Delicias de Líbano",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.3964674,-99.1475538",
+   "lat": 19.3964674,
+   "lng": -99.1475538,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Falafelito",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.410245,-99.1692808",
+   "lat": 19.410245,
+   "lng": -99.1692808,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hayito",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.3928977,-99.1508563",
+   "lat": 19.3928977,
+   "lng": -99.1508563,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Taqueria Don Eraki",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.3934245,-99.1531522",
+   "lat": 19.3934245,
+   "lng": -99.1531522,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pitas Saleh",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.3829971,-99.1569351",
+   "lat": 19.3829971,
+   "lng": -99.1569351,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Alibaba",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.3872647,-99.1715562",
+   "lat": 19.3872647,
+   "lng": -99.1715562,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nahnu -Tacos Árabes",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.4307866,-99.1969708",
+   "lat": 19.4307866,
+   "lng": -99.1969708,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m158032446",
+   "nom": "Iglesia de San Francisco",
+   "type": "Mosquée",
+   "adresse": "Calle Francisco I. Madero, Ciudad de México",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=19.433486,-99.1399939",
+   "lat": 19.433486,
+   "lng": -99.1399939,
+   "source": "osm"
+  },
+  {
+   "id": "m1238112250",
+   "nom": "Mezquita Baitul Áfiyat",
+   "type": "Mosquée",
+   "adresse": "Avenida Insurgentes Norte, CDMX",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=19.4606746,-99.1467119",
+   "lat": 19.4606746,
+   "lng": -99.1467119,
+   "source": "osm"
+  },
+  {
+   "id": "m120733641",
+   "nom": "Basílica de Santa María de Guadalupe",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=19.4848445,-99.1178568",
+   "lat": 19.4848445,
+   "lng": -99.1178568,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a13087996382",
+   "nom": "Balcón Presidencial",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4325572,-99.1319688",
+   "lat": 19.4325572,
+   "lng": -99.1319688,
+   "source": "osm"
+  },
+  {
+   "id": "a10972922370",
+   "nom": "Museo Salón de Cabildos",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4317186,-99.1340079",
+   "lat": 19.4317186,
+   "lng": -99.1340079,
+   "source": "osm"
+  },
+  {
+   "id": "a10125131762",
+   "nom": "Monumento hipsográfico",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4339423,-99.1338696",
+   "lat": 19.4339423,
+   "lng": -99.1338696,
+   "source": "osm"
+  },
+  {
+   "id": "a11016353568",
+   "nom": "Monumento a la Mexicanidad",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4311923,-99.1324678",
+   "lat": 19.4311923,
+   "lng": -99.1324678,
+   "source": "osm"
+  },
+  {
+   "id": "a13086077152",
+   "nom": "Museo UNAM Hoy",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4337182,-99.131851",
+   "lat": 19.4337182,
+   "lng": -99.131851,
+   "source": "osm"
+  },
+  {
+   "id": "a13086077153",
+   "nom": "Fundación Herdez",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4338104,-99.1318398",
+   "lat": 19.4338104,
+   "lng": -99.1318398,
+   "source": "osm"
+  },
+  {
+   "id": "a9049361313",
+   "nom": "Juan Pablo II",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4343663,-99.1334027",
+   "lat": 19.4343663,
+   "lng": -99.1334027,
+   "source": "osm"
+  },
+  {
+   "id": "a13086077147",
+   "nom": "Museo de la Secretaría de Hacienda y Crédito Público",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4336654,-99.131352",
+   "lat": 19.4336654,
+   "lng": -99.131352,
+   "source": "osm"
+  },
+  {
+   "id": "a217317617",
+   "nom": "Casa de la Primera Imprenta de América",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4336753,-99.1307843",
+   "lat": 19.4336753,
+   "lng": -99.1307843,
+   "source": "osm"
+  },
+  {
+   "id": "a5675720122",
+   "nom": "Archivo de la Fotografía",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4350046,-99.1321427",
+   "lat": 19.4350046,
+   "lng": -99.1321427,
+   "source": "osm"
+  },
+  {
+   "id": "a6081141093",
+   "nom": "Calle Madero",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4334111,-99.1358477",
+   "lat": 19.4334111,
+   "lng": -99.1358477,
+   "source": "osm"
+  },
+  {
+   "id": "a13076849597",
+   "nom": "Galería de la SHCP",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4352312,-99.1334951",
+   "lat": 19.4352312,
+   "lng": -99.1334951,
+   "source": "osm"
+  },
+  {
+   "id": "a13086110272",
+   "nom": "Ex Teresa Arte Actual",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4340858,-99.1306533",
+   "lat": 19.4340858,
+   "lng": -99.1306533,
+   "source": "osm"
+  },
+  {
+   "id": "a217323406",
+   "nom": "Museo Estanquillo",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4332642,-99.1361213",
+   "lat": 19.4332642,
+   "lng": -99.1361213,
+   "source": "osm"
+  },
+  {
+   "id": "a13710468810",
+   "nom": "Museo Foro Valparaíso",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4316354,-99.136248",
+   "lat": 19.4316354,
+   "lng": -99.136248,
+   "source": "osm"
+  },
+  {
+   "id": "a217316690",
+   "nom": "Museo de la Caricatura",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.435663,-99.1326739",
+   "lat": 19.435663,
+   "lng": -99.1326739,
+   "source": "osm"
+  },
+  {
+   "id": "a217324707",
+   "nom": "Museo de la Ciudad de México",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4292631,-99.1321346",
+   "lat": 19.4292631,
+   "lng": -99.1321346,
+   "source": "osm"
+  },
+  {
+   "id": "a1421957023",
+   "nom": "Museo Templo Mayor",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=19.4349037,-99.1303",
+   "lat": 19.4349037,
+   "lng": -99.1303,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

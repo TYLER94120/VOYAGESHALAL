@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Fukuoka_montage.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 4,
+  "mosquees": 2,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,292 @@
   "ville non-musulmane",
   "asie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "ぐるぐるチキン",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.5875505,130.3972013",
+   "lat": 33.5875505,
+   "lng": 130.3972013,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "地鶏食堂 大名店",
+   "type": "kebab, ramen",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.5898478,130.3932711",
+   "lat": 33.5898478,
+   "lng": 130.3932711,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kafe Toruko",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.5806579,130.3790476",
+   "lat": 33.5806579,
+   "lng": 130.3790476,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "MaNa KEBAB",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.5528718,130.3615063",
+   "lat": 33.5528718,
+   "lng": 130.3615063,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m215719752",
+   "nom": "Al Noor Fukuoka Mosque",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=33.6199928,130.427118",
+   "lat": 33.6199928,
+   "lng": 130.427118,
+   "source": "osm"
+  },
+  {
+   "id": "m2251757180",
+   "nom": "福岡モスク",
+   "type": "Mosquée",
+   "adresse": "Fukuoka",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=33.6199818,130.4271371",
+   "lat": 33.6199818,
+   "lng": 130.4271371,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a11125570806",
+   "nom": "Tenjin Christmas Market",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5900329,130.40124",
+   "lat": 33.5900329,
+   "lng": 130.40124,
+   "source": "osm"
+  },
+  {
+   "id": "a3210278674",
+   "nom": "福岡県庁跡",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5907721,130.4022848",
+   "lat": 33.5907721,
+   "lng": 130.4022848,
+   "source": "osm"
+  },
+  {
+   "id": "a11190553937",
+   "nom": "Christmas market",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5889999,130.401426",
+   "lat": 33.5889999,
+   "lng": 130.401426,
+   "source": "osm"
+  },
+  {
+   "id": "a3210249861",
+   "nom": "旧福岡県庁跡",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5899689,130.4033803",
+   "lat": 33.5899689,
+   "lng": 130.4033803,
+   "source": "osm"
+  },
+  {
+   "id": "a3210292072",
+   "nom": "福岡城 堀の跡",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5908402,130.4034814",
+   "lat": 33.5908402,
+   "lng": 130.4034814,
+   "source": "osm"
+  },
+  {
+   "id": "a3211899577",
+   "nom": "福岡市役所跡石碑",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5919535,130.4012953",
+   "lat": 33.5919535,
+   "lng": 130.4012953,
+   "source": "osm"
+  },
+  {
+   "id": "a11125591805",
+   "nom": "CHRISTMAS MARKET",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5887777,130.4015519",
+   "lat": 33.5887777,
+   "lng": 130.4015519,
+   "source": "osm"
+  },
+  {
+   "id": "a3210245086",
+   "nom": "桂の影",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5920446,130.4015663",
+   "lat": 33.5920446,
+   "lng": 130.4015663,
+   "source": "osm"
+  },
+  {
+   "id": "a3210248594",
+   "nom": "福岡藩刑場跡",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5897768,130.4036146",
+   "lat": 33.5897768,
+   "lng": 130.4036146,
+   "source": "osm"
+  },
+  {
+   "id": "a3210266092",
+   "nom": "オークランド姉妹都市締結記念碑",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5903112,130.3995189",
+   "lat": 33.5903112,
+   "lng": 130.3995189,
+   "source": "osm"
+  },
+  {
+   "id": "a6660678885",
+   "nom": "tenjin underground Mall",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5900773,130.3994748",
+   "lat": 33.5900773,
+   "lng": 130.3994748,
+   "source": "osm"
+  },
+  {
+   "id": "a3210273928",
+   "nom": "天神中央公園記念碑",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5920959,130.402847",
+   "lat": 33.5920959,
+   "lng": 130.402847,
+   "source": "osm"
+  },
+  {
+   "id": "a5846447885",
+   "nom": "天神",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5906668,130.3992905",
+   "lat": 33.5906668,
+   "lng": 130.3992905,
+   "source": "osm"
+  },
+  {
+   "id": "a5504541421",
+   "nom": "天神地下街",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5882597,130.4007789",
+   "lat": 33.5882597,
+   "lng": 130.4007789,
+   "source": "osm"
+  },
+  {
+   "id": "a3210300095",
+   "nom": "ソラリアに眠るアンモナイト",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5902881,130.3989515",
+   "lat": 33.5902881,
+   "lng": 130.3989515,
+   "source": "osm"
+  },
+  {
+   "id": "a3210248627",
+   "nom": "日清戦争記念碑",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5927175,130.4018726",
+   "lat": 33.5927175,
+   "lng": 130.4018726,
+   "source": "osm"
+  },
+  {
+   "id": "a3210248637",
+   "nom": "猿田彦大神の碑",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5927569,130.4018582",
+   "lat": 33.5927569,
+   "lng": 130.4018582,
+   "source": "osm"
+  },
+  {
+   "id": "a3210260438",
+   "nom": "日本の道 記念碑",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.5923916,130.4037065",
+   "lat": 33.5923916,
+   "lng": 130.4037065,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

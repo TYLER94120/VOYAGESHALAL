@@ -1,76 +1,468 @@
 {
-  "slug": "sharjah",
-  "nom": "Sharjah",
-  "pays": "Émirats Arabes Unis",
-  "pays_slug": "emirats-arabes-unis",
-  "continent": "Asie",
-  "region": "Moyen-Orient",
-  "coordonnees": {
-    "lat": 25.3463,
-    "lng": 55.4209
+ "slug": "sharjah",
+ "nom": "Sharjah",
+ "pays": "Émirats Arabes Unis",
+ "pays_slug": "emirats-arabes-unis",
+ "continent": "Asie",
+ "region": "Moyen-Orient",
+ "coordonnees": {
+  "lat": 25.3463,
+  "lng": 55.4209
+ },
+ "codeISO": "",
+ "score_halal": 4.7,
+ "halalScore": 9.4,
+ "description": "Capitale culturelle des Émirats, Sharjah est la ville la plus traditionnelle du Golfe : 100% sans alcool, art islamique et grandes mosquées. Idéale pour un séjour halal serein à 20 min de Dubaï.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sharjah_city_skyline_in_2015.jpg/1920px-Sharjah_city_skyline_in_2015.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sharjah_city_skyline_in_2015.jpg/1920px-Sharjah_city_skyline_in_2015.jpg",
+ "metaDescription": "Capitale culturelle des Émirats, Sharjah est la ville la plus traditionnelle du Golfe : 100% sans alcool, art islamique et grandes mosquées. Idéale pour un séjo",
+ "statistiques": {
+  "restaurants_halal": 39,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Al Baik",
+   "type": "fried chicken, fast food",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3289981,55.3892797",
+   "lat": 25.3289981,
+   "lng": 55.3892797,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.7,
-  "halalScore": 9.4,
-  "description": "Capitale culturelle des Émirats, Sharjah est la ville la plus traditionnelle du Golfe : 100% sans alcool, art islamique et grandes mosquées. Idéale pour un séjour halal serein à 20 min de Dubaï.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sharjah_city_skyline_in_2015.jpg/1920px-Sharjah_city_skyline_in_2015.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sharjah_city_skyline_in_2015.jpg/1920px-Sharjah_city_skyline_in_2015.jpg",
-  "metaDescription": "Capitale culturelle des Émirats, Sharjah est la ville la plus traditionnelle du Golfe : 100% sans alcool, art islamique et grandes mosquées. Idéale pour un séjo",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Pizza Hut",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3287552,55.3892746",
+   "lat": 25.3287552,
+   "lng": 55.3892746,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Filli",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3280812,55.3895756",
+   "lat": 25.3280812,
+   "lng": 55.3895756,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Sharjah",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Sharjah",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Sharjah%20Sharjah"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée de Sharjah",
-      "categorie": "Spirituel",
-      "description": "Plus grande mosquée de l'émirat, architecture moderne majestueuse.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20de%20Sharjah%20Sharjah"
-    },
-    {
-      "id": "a2",
-      "nom": "Musée de la Civilisation Islamique",
-      "categorie": "Culture",
-      "description": "Riches collections d'art et de sciences islamiques sous un dôme doré.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e%20de%20la%20Civilisation%20Islamique%20Sharjah"
-    },
-    {
-      "id": "a3",
-      "nom": "Souk Al Arsah & corniche",
-      "categorie": "Culture",
-      "description": "Souk traditionnel restauré et promenade au bord de l'eau.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Souk%20Al%20Arsah%20%26%20corniche%20Sharjah"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Shawerman",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3234564,55.3803049",
+   "lat": 25.3234564,
+   "lng": 55.3803049,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3462227,55.4748617",
+   "lat": 25.3462227,
+   "lng": 55.4748617,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "TALAL",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3867364,55.4585761",
+   "lat": 25.3867364,
+   "lng": 55.4585761,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Hamdan Cafeteria and REstaurant",
+   "type": "regional, pizza, burger, sandwich, coffee shop, chicken, chinese, kebab, indian, asian, ice cream, seafood, arabic",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3840698,55.461962",
+   "lat": 25.3840698,
+   "lng": 55.461962,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mandina mandi restaurant",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3869012,55.4591547",
+   "lat": 25.3869012,
+   "lng": 55.4591547,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "al bait al malaki mandi restaurant",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3874421,55.4592304",
+   "lat": 25.3874421,
+   "lng": 55.4592304,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "AL RUMMAN CAFETERIA",
+   "type": "burger, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3882014,55.459567",
+   "lat": 25.3882014,
+   "lng": 55.459567,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "سماتج",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3300981,55.3583685",
+   "lat": 25.3300981,
+   "lng": 55.3583685,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ajwaa Cafeteria",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3074714,55.3711791",
+   "lat": 25.3074714,
+   "lng": 55.3711791,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Ajmal Restaurant",
+   "type": "indian, chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.2995303,55.3769274",
+   "lat": 25.2995303,
+   "lng": 55.3769274,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Baik",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.2927898,55.3713378",
+   "lat": 25.2927898,
+   "lng": 55.3713378,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Red Chicken",
+   "type": "arab, indian, phillipino",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3326212,55.3914532",
+   "lat": 25.3326212,
+   "lng": 55.3914532,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dawar Al Umdah",
+   "type": "egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3743767,55.4056029",
+   "lat": 25.3743767,
+   "lng": 55.4056029,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shakarji",
+   "type": "turkish, arab, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3288736,55.389481",
+   "lat": 25.3288736,
+   "lng": 55.389481,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sasu cafe",
+   "type": "chicken, burger, noodles, asian, oriental, kebab, breakfast, grill, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3539624,55.3844117",
+   "lat": 25.3539624,
+   "lng": 55.3844117,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sadaf Restaurant",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3565523,55.3801487",
+   "lat": 25.3565523,
+   "lng": 55.3801487,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sadaf Restaurant",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3841723,55.4083587",
+   "lat": 25.3841723,
+   "lng": 55.4083587,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sufrat Al Mandi",
+   "type": "oriental, grill, asian, chicken, arab, kebab, curry, barbecue",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.335809,55.3732875",
+   "lat": 25.335809,
+   "lng": 55.3732875,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shababeek",
+   "type": "arab, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3219543,55.3765779",
+   "lat": 25.3219543,
+   "lng": 55.3765779,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Themar Al Bahar",
+   "type": "arab, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3967957,55.4262473",
+   "lat": 25.3967957,
+   "lng": 55.4262473,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Ward Restaurant",
+   "type": "arab, chicken, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3118726,55.3790254",
+   "lat": 25.3118726,
+   "lng": 55.3790254,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fresh Lebanese",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3890555,55.4572617",
+   "lat": 25.3890555,
+   "lng": 55.4572617,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "shawarma istanbul",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3877737,55.4591502",
+   "lat": 25.3877737,
+   "lng": 55.4591502,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sanobar Restaurant",
+   "type": "fish, burger, seafood, local, fish and chips, chicken, kebab, barbecue",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3343924,55.3624361",
+   "lat": 25.3343924,
+   "lng": 55.3624361,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم دلهي و كراتشي",
+   "type": "arab, chinese, indian, tea, seafood, sandwich, kebab, fish, diner, curry, coffee shop, chicken, asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.2947171,55.4420174",
+   "lat": 25.2947171,
+   "lng": 55.4420174,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Familypalace Restaurant",
+   "type": "arab, breakfast, chicken, chinese, coffee shop, curry, fish, fish and chips, ice cream, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.2928563,55.4421368",
+   "lat": 25.2928563,
+   "lng": 55.4421368,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "كشري و حلواني السيد حنفي",
+   "type": "egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3893981,55.4642695",
+   "lat": 25.3893981,
+   "lng": 55.4642695,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chenab Restaurant Ajman UAE",
+   "type": "chicken, curry, deli, diner, fish, french, fish and chips, grill, indian, international, kebab, local, regional, sandwich, seafood, tea, fine dining, barbecue, breakfast, burger, beef bowl, asian, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.4027518,55.4372451",
+   "lat": 25.4027518,
+   "lng": 55.4372451,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Thalassary Restaurant",
+   "type": "indian, chinese, pakistani, coffee shop, burger, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3066346,55.3705482",
+   "lat": 25.3066346,
+   "lng": 55.3705482,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم الكباب الأفغاني",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.29094,55.3936305",
+   "lat": 25.29094,
+   "lng": 55.3936305,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Halla Shawarma",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3029601,55.3692652",
+   "lat": 25.3029601,
+   "lng": 55.3692652,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hatam",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.297913,55.3732183",
+   "lat": 25.297913,
+   "lng": 55.3732183,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Laffah",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.2974006,55.3735644",
+   "lat": 25.2974006,
+   "lng": 55.3735644,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Farooj Al Shami",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.2973707,55.373114",
+   "lat": 25.2973707,
+   "lng": 55.373114,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Najmat Al Khaleej",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.3995308,55.4658843",
+   "lat": 25.3995308,
+   "lng": 55.4658843,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Karachi Darbar",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.2917369,55.3703901",
+   "lat": 25.2917369,
+   "lng": 55.3703901,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Sharjah",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Sharjah",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Sharjah%20Sharjah"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée de Sharjah",
+   "categorie": "Spirituel",
+   "description": "Plus grande mosquée de l'émirat, architecture moderne majestueuse.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20de%20Sharjah%20Sharjah"
+  },
+  {
+   "id": "a2",
+   "nom": "Musée de la Civilisation Islamique",
+   "categorie": "Culture",
+   "description": "Riches collections d'art et de sciences islamiques sous un dôme doré.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e%20de%20la%20Civilisation%20Islamique%20Sharjah"
+  },
+  {
+   "id": "a3",
+   "nom": "Souk Al Arsah & corniche",
+   "categorie": "Culture",
+   "description": "Souk traditionnel restauré et promenade au bord de l'eau.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Souk%20Al%20Arsah%20%26%20corniche%20Sharjah"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

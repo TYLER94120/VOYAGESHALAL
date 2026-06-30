@@ -1,76 +1,478 @@
 {
-  "slug": "manchester",
-  "nom": "Manchester",
-  "pays": "Royaume-Uni",
-  "pays_slug": "royaume-uni",
-  "continent": "Europe",
-  "region": "Royaume-Uni",
-  "coordonnees": {
-    "lat": 53.4808,
-    "lng": -2.2426
+ "slug": "manchester",
+ "nom": "Manchester",
+ "pays": "Royaume-Uni",
+ "pays_slug": "royaume-uni",
+ "continent": "Europe",
+ "region": "Royaume-Uni",
+ "coordonnees": {
+  "lat": 53.4808,
+  "lng": -2.2426
+ },
+ "codeISO": "",
+ "score_halal": 4.4,
+ "halalScore": 8.8,
+ "description": "Grande ville du nord de l'Angleterre à forte communauté musulmane, Manchester offre le 'Curry Mile' halal et de nombreuses mosquées.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/The_Manchester_Museum.jpg/1920px-The_Manchester_Museum.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/The_Manchester_Museum.jpg/1920px-The_Manchester_Museum.jpg",
+ "metaDescription": "Grande ville du nord de l'Angleterre à forte communauté musulmane, Manchester offre le 'Curry Mile' halal et de nombreuses mosquées.",
+ "statistiques": {
+  "restaurants_halal": 40,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Eat Italian Manchester",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4799543,-2.2373414",
+   "lat": 53.4799543,
+   "lng": -2.2373414,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.4,
-  "halalScore": 8.8,
-  "description": "Grande ville du nord de l'Angleterre à forte communauté musulmane, Manchester offre le 'Curry Mile' halal et de nombreuses mosquées.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/The_Manchester_Museum.jpg/1920px-The_Manchester_Museum.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/The_Manchester_Museum.jpg/1920px-The_Manchester_Museum.jpg",
-  "metaDescription": "Grande ville du nord de l'Angleterre à forte communauté musulmane, Manchester offre le 'Curry Mile' halal et de nombreuses mosquées.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Honest Burgers",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4811148,-2.250371",
+   "lat": 53.4811148,
+   "lng": -2.250371,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4848836,-2.2382475",
+   "lat": 53.4848836,
+   "lng": -2.2382475,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Manchester",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Manchester",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Manchester%20Manchester"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Curry Mile (Rusholme)",
-      "categorie": "Culture",
-      "description": "Avenue célèbre pour ses restaurants halal sud-asiatiques.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Curry%20Mile%20%28Rusholme%29%20Manchester"
-    },
-    {
-      "id": "a2",
-      "nom": "Manchester Central Mosque",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée Victoria Park.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Manchester%20Central%20Mosque%20Manchester"
-    },
-    {
-      "id": "a3",
-      "nom": "Centre-ville historique",
-      "categorie": "Culture",
-      "description": "Architecture industrielle et musées gratuits.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Centre-ville%20historique%20Manchester"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4703959,-2.2370935",
+   "lat": 53.4703959,
+   "lng": -2.2370935,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.493238,-2.2495841",
+   "lat": 53.493238,
+   "lng": -2.2495841,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Lahori Butt Karahi",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4937986,-2.2392818",
+   "lat": 53.4937986,
+   "lng": -2.2392818,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Munch",
+   "type": "pizza, kebab, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4654909,-2.2151985",
+   "lat": 53.4654909,
+   "lng": -2.2151985,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4592397,-2.2572166",
+   "lat": 53.4592397,
+   "lng": -2.2572166,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4576084,-2.2264025",
+   "lat": 53.4576084,
+   "lng": -2.2264025,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dexters",
+   "type": "american, pizza, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4867941,-2.2945582",
+   "lat": 53.4867941,
+   "lng": -2.2945582,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Paradise Takeaway",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4557899,-2.1993666",
+   "lat": 53.4557899,
+   "lng": -2.1993666,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Peter Pan",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4544634,-2.2988237",
+   "lat": 53.4544634,
+   "lng": -2.2988237,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4426085,-2.2764896",
+   "lat": 53.4426085,
+   "lng": -2.2764896,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Peri Pit",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4536546,-2.2996311",
+   "lat": 53.4536546,
+   "lng": -2.2996311,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Moon",
+   "type": "indian, curry",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4344936,-2.2280177",
+   "lat": 53.4344936,
+   "lng": -2.2280177,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Golden Fish and Chips",
+   "type": "fish and chips",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4685219,-2.165977",
+   "lat": 53.4685219,
+   "lng": -2.165977,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Peri Fried Cottage",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4657631,-2.1640407",
+   "lat": 53.4657631,
+   "lng": -2.1640407,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Lotus plant based",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4307927,-2.2289133",
+   "lat": 53.4307927,
+   "lng": -2.2289133,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kuttanad Taste",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4591348,-2.1632657",
+   "lat": 53.4591348,
+   "lng": -2.1632657,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Corner Slice",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.502061,-2.1568941",
+   "lat": 53.502061,
+   "lng": -2.1568941,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Doner Shack",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4831859,-2.241467",
+   "lat": 53.4831859,
+   "lng": -2.241467,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Janam",
+   "type": "pizza, burger, kebab, wraps",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4779,-2.2397812",
+   "lat": 53.4779,
+   "lng": -2.2397812,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Cafe Istanbul",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.481079,-2.2489553",
+   "lat": 53.481079,
+   "lng": -2.2489553,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arndale Shawarma",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4839532,-2.2384783",
+   "lat": 53.4839532,
+   "lng": -2.2384783,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Deansgate Lounge",
+   "type": "curry, pizza, burger, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4813874,-2.2495178",
+   "lat": 53.4813874,
+   "lng": -2.2495178,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Topkapi Takeaway & Cafe",
+   "type": "turkish, burger, chicken, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4786237,-2.2488615",
+   "lat": 53.4786237,
+   "lng": -2.2488615,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Topkapi Palace",
+   "type": "turkish, burger, pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4787806,-2.2491324",
+   "lat": 53.4787806,
+   "lng": -2.2491324,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Express",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4771163,-2.2371769",
+   "lat": 53.4771163,
+   "lng": -2.2371769,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Comptoir Libanais",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4801086,-2.2508806",
+   "lat": 53.4801086,
+   "lng": -2.2508806,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Kebab Lab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4835934,-2.2356784",
+   "lat": 53.4835934,
+   "lng": -2.2356784,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Golden Tandoori",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4836054,-2.2309573",
+   "lat": 53.4836054,
+   "lng": -2.2309573,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "German Doner Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4726455,-2.2395772",
+   "lat": 53.4726455,
+   "lng": -2.2395772,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mr. Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4871728,-2.2544676",
+   "lat": 53.4871728,
+   "lng": -2.2544676,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sultain Turkish Grill",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4913322,-2.248339",
+   "lat": 53.4913322,
+   "lng": -2.248339,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lahori Badsha",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4936859,-2.2393442",
+   "lat": 53.4936859,
+   "lng": -2.2393442,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Maidah",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4940893,-2.2495656",
+   "lat": 53.4940893,
+   "lng": -2.2495656,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mughali Taste",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4939483,-2.2505543",
+   "lat": 53.4939483,
+   "lng": -2.2505543,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Munchies Pizza & Kebab House",
+   "type": "pizza, kebab, burger, pasta",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4670377,-2.2503128",
+   "lat": 53.4670377,
+   "lng": -2.2503128,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Zain Shawarma",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4560541,-2.2252856",
+   "lat": 53.4560541,
+   "lng": -2.2252856,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aadams authentic grill and kebab",
+   "type": "indian, pizza, burger, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.4686034,-2.2828393",
+   "lat": 53.4686034,
+   "lng": -2.2828393,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Manchester",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Manchester",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Manchester%20Manchester"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Curry Mile (Rusholme)",
+   "categorie": "Culture",
+   "description": "Avenue célèbre pour ses restaurants halal sud-asiatiques.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Curry%20Mile%20%28Rusholme%29%20Manchester"
+  },
+  {
+   "id": "a2",
+   "nom": "Manchester Central Mosque",
+   "categorie": "Spirituel",
+   "description": "Grande mosquée Victoria Park.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Manchester%20Central%20Mosque%20Manchester"
+  },
+  {
+   "id": "a3",
+   "nom": "Centre-ville historique",
+   "categorie": "Culture",
+   "description": "Architecture industrielle et musées gratuits.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Centre-ville%20historique%20Manchester"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

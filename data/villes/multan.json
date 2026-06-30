@@ -1,76 +1,88 @@
 {
-  "slug": "multan",
-  "nom": "Multan",
-  "pays": "Pakistan",
-  "pays_slug": "pakistan",
-  "continent": "Asie",
-  "region": "Pakistan",
-  "coordonnees": {
-    "lat": 30.1575,
-    "lng": 71.5249
+ "slug": "multan",
+ "nom": "Multan",
+ "pays": "Pakistan",
+ "pays_slug": "pakistan",
+ "continent": "Asie",
+ "region": "Pakistan",
+ "coordonnees": {
+  "lat": 30.1575,
+  "lng": 71.5249
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "'Cité des saints', Multan est célèbre pour ses sanctuaires soufis aux dômes bleus et son riche patrimoine spirituel.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Clock_Tower_-_Ghanta_Ghar%2C_Multan_-_Multan_Pakistan.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Clock_Tower_-_Ghanta_Ghar%2C_Multan_-_Multan_Pakistan.jpg",
+ "metaDescription": "'Cité des saints', Multan est célèbre pour ses sanctuaires soufis aux dômes bleus et son riche patrimoine spirituel.",
+ "statistiques": {
+  "restaurants_halal": 1,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Zaytoon Garden Resturant Multan",
+   "type": "pakistani, chinese, kebab, asian, ice cream, seafood, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.101682,71.4940934",
+   "lat": 30.101682,
+   "lng": 71.4940934,
+   "halalConfidence": "yes",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Multan",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Multan",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Multan%20Multan"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Sanctuaire de Shah Rukn-e-Alam",
+   "categorie": "Spirituel",
+   "description": "Mausolée soufi monumental aux faïences bleues.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20Shah%20Rukn-e-Alam%20Multan"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "'Cité des saints', Multan est célèbre pour ses sanctuaires soufis aux dômes bleus et son riche patrimoine spirituel.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Clock_Tower_-_Ghanta_Ghar%2C_Multan_-_Multan_Pakistan.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Clock_Tower_-_Ghanta_Ghar%2C_Multan_-_Multan_Pakistan.jpg",
-  "metaDescription": "'Cité des saints', Multan est célèbre pour ses sanctuaires soufis aux dômes bleus et son riche patrimoine spirituel.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "id": "a2",
+   "nom": "Sanctuaire de Bahauddin Zakariya",
+   "categorie": "Spirituel",
+   "description": "Tombeau d'un grand saint soufi.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20Bahauddin%20Zakariya%20Multan"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
-  },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Multan",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Multan",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Multan%20Multan"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Sanctuaire de Shah Rukn-e-Alam",
-      "categorie": "Spirituel",
-      "description": "Mausolée soufi monumental aux faïences bleues.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20Shah%20Rukn-e-Alam%20Multan"
-    },
-    {
-      "id": "a2",
-      "nom": "Sanctuaire de Bahauddin Zakariya",
-      "categorie": "Spirituel",
-      "description": "Tombeau d'un grand saint soufi.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20Bahauddin%20Zakariya%20Multan"
-    },
-    {
-      "id": "a3",
-      "nom": "Fort de Multan",
-      "categorie": "Histoire",
-      "description": "Anciennes fortifications surplombant la ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Fort%20de%20Multan%20Multan"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "id": "a3",
+   "nom": "Fort de Multan",
+   "categorie": "Histoire",
+   "description": "Anciennes fortifications surplombant la ville.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Fort%20de%20Multan%20Multan"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

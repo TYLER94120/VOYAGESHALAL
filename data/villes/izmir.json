@@ -1,76 +1,478 @@
 {
-  "slug": "izmir",
-  "nom": "Izmir",
-  "pays": "Turquie",
-  "pays_slug": "turquie",
-  "continent": "Asie",
-  "region": "Turquie",
-  "coordonnees": {
-    "lat": 38.4237,
-    "lng": 27.1428
+ "slug": "izmir",
+ "nom": "Izmir",
+ "pays": "Turquie",
+ "pays_slug": "turquie",
+ "continent": "Asie",
+ "region": "Turquie",
+ "coordonnees": {
+  "lat": 38.4237,
+  "lng": 27.1428
+ },
+ "codeISO": "",
+ "score_halal": 4.4,
+ "halalScore": 8.8,
+ "description": "Grande ville égéenne de Turquie, Izmir mêle front de mer animé, bazar historique de Kemeralti et proximité d'Éphèse.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Izmir_01.jpg/1920px-Izmir_01.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Izmir_01.jpg/1920px-Izmir_01.jpg",
+ "metaDescription": "Grande ville égéenne de Turquie, Izmir mêle front de mer animé, bazar historique de Kemeralti et proximité d'Éphèse.",
+ "statistiques": {
+  "restaurants_halal": 40,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Oz ızmir Lokma",
+   "type": "seafood, tatlı, izmir lokma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.3987465,27.1814906",
+   "lat": 38.3987465,
+   "lng": 27.1814906,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.4,
-  "halalScore": 8.8,
-  "description": "Grande ville égéenne de Turquie, Izmir mêle front de mer animé, bazar historique de Kemeralti et proximité d'Éphèse.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Izmir_01.jpg/1920px-Izmir_01.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Izmir_01.jpg/1920px-Izmir_01.jpg",
-  "metaDescription": "Grande ville égéenne de Turquie, Izmir mêle front de mer animé, bazar historique de Kemeralti et proximité d'Éphèse.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "lemanyak ızgara",
+   "type": "sandwich, steak house, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.3972714,27.082309",
+   "lat": 38.3972714,
+   "lng": 27.082309,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "ØDEGARD",
+   "type": "fine dining",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4055711,27.065687",
+   "lat": 38.4055711,
+   "lng": 27.065687,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Izmir",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Izmir",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Izmir%20Izmir"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Bazar de Kemeralti",
-      "categorie": "Culture",
-      "description": "Labyrinthe de souks, caravansérails et mosquées ottomanes.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Bazar%20de%20Kemeralti%20Izmir"
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée Hisar",
-      "categorie": "Spirituel",
-      "description": "Plus grande mosquée ottomane du vieux bazar.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Hisar%20Izmir"
-    },
-    {
-      "id": "a3",
-      "nom": "Éphèse (à proximité)",
-      "categorie": "Histoire",
-      "description": "Cité antique parmi les mieux conservées au monde.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=%C3%89ph%C3%A8se%20%28%C3%A0%20proximit%C3%A9%29%20Izmir"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Sevinç Kebap & Dürüm Salonu",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4231596,27.1437992",
+   "lat": 38.4231596,
+   "lng": 27.1437992,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sindibad (Falafelrestaurant)",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4221222,27.1430531",
+   "lat": 38.4221222,
+   "lng": 27.1430531,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "myDöner",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4234407,27.1372604",
+   "lat": 38.4234407,
+   "lng": 27.1372604,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Köfteci Yusuf",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4263464,27.1366621",
+   "lat": 38.4263464,
+   "lng": 27.1366621,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ustabași",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4205804,27.1366528",
+   "lat": 38.4205804,
+   "lng": 27.1366528,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Gül Kebap",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4212782,27.1356999",
+   "lat": 38.4212782,
+   "lng": 27.1356999,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Meşhur Adnan Usta",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.419227,27.1359533",
+   "lat": 38.419227,
+   "lng": 27.1359533,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Komagene",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4306521,27.1398729",
+   "lat": 38.4306521,
+   "lng": 27.1398729,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kumrucu Sabri",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4251758,27.1333974",
+   "lat": 38.4251758,
+   "lng": 27.1333974,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Murat'ın Yeri",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4285786,27.1504787",
+   "lat": 38.4285786,
+   "lng": 27.1504787,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kemeraltı Kent Lokantası",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4194354,27.1335161",
+   "lat": 38.4194354,
+   "lng": 27.1335161,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sakız Alsancak",
+   "type": "turkish, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4283642,27.1332481",
+   "lat": 38.4283642,
+   "lng": 27.1332481,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kumrucu",
+   "type": "turkish, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4281241,27.1330363",
+   "lat": 38.4281241,
+   "lng": 27.1330363,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Energy Vitamin",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4349569,27.1425451",
+   "lat": 38.4349569,
+   "lng": 27.1425451,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Can Döner",
+   "type": "doner",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4181437,27.1296048",
+   "lat": 38.4181437,
+   "lng": 27.1296048,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "İsmail'in Melemencisi",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4170677,27.1303456",
+   "lat": 38.4170677,
+   "lng": 27.1303456,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "HD İskender",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4357787,27.1428398",
+   "lat": 38.4357787,
+   "lng": 27.1428398,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Meyhane Batti",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4367294,27.1415922",
+   "lat": 38.4367294,
+   "lng": 27.1415922,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Baydöner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4368468,27.1430094",
+   "lat": 38.4368468,
+   "lng": 27.1430094,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Deli's",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4369236,27.1412047",
+   "lat": 38.4369236,
+   "lng": 27.1412047,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Local diners",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4368027,27.1458409",
+   "lat": 38.4368027,
+   "lng": 27.1458409,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Alsancak Eski Konak Pide Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4376049,27.144687",
+   "lat": 38.4376049,
+   "lng": 27.144687,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Manisalı Bir Tat",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4377252,27.1434292",
+   "lat": 38.4377252,
+   "lng": 27.1434292,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Özlem Lokantasi",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4231557,27.1626418",
+   "lat": 38.4231557,
+   "lng": 27.1626418,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Varuna Gezgin",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4392532,27.143474",
+   "lat": 38.4392532,
+   "lng": 27.143474,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Meşhur Tavacı Recep Usta",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4404463,27.1425871",
+   "lat": 38.4404463,
+   "lng": 27.1425871,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Köşebaşı",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4328369,27.1629531",
+   "lat": 38.4328369,
+   "lng": 27.1629531,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Komagene",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4114597,27.1218973",
+   "lat": 38.4114597,
+   "lng": 27.1218973,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Göveçte Yöresel Yemekler",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.411206,27.1217816",
+   "lat": 38.411206,
+   "lng": 27.1217816,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tarihi Adana Kebapçısı",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.3932737,27.1477552",
+   "lat": 38.3932737,
+   "lng": 27.1477552,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Şirinyer Pide Salonu",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.3930592,27.1493644",
+   "lat": 38.3930592,
+   "lng": 27.1493644,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Komagene",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4013287,27.1049454",
+   "lat": 38.4013287,
+   "lng": 27.1049454,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Keb Up",
+   "type": "kebab, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4481645,27.178941",
+   "lat": 38.4481645,
+   "lng": 27.178941,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pide Bank",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4556731,27.1178699",
+   "lat": 38.4556731,
+   "lng": 27.1178699,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Çatal",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4009822,27.1040196",
+   "lat": 38.4009822,
+   "lng": 27.1040196,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Manisali Birtat",
+   "type": "kebab, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4013032,27.1036501",
+   "lat": 38.4013032,
+   "lng": 27.1036501,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kaptan Börek",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.4572974,27.1171824",
+   "lat": 38.4572974,
+   "lng": 27.1171824,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Izmir",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Izmir",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Izmir%20Izmir"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Bazar de Kemeralti",
+   "categorie": "Culture",
+   "description": "Labyrinthe de souks, caravansérails et mosquées ottomanes.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Bazar%20de%20Kemeralti%20Izmir"
+  },
+  {
+   "id": "a2",
+   "nom": "Mosquée Hisar",
+   "categorie": "Spirituel",
+   "description": "Plus grande mosquée ottomane du vieux bazar.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Hisar%20Izmir"
+  },
+  {
+   "id": "a3",
+   "nom": "Éphèse (à proximité)",
+   "categorie": "Histoire",
+   "description": "Cité antique parmi les mieux conservées au monde.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=%C3%89ph%C3%A8se%20%28%C3%A0%20proximit%C3%A9%29%20Izmir"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

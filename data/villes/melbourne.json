@@ -1,75 +1,477 @@
 {
-  "slug": "melbourne",
-  "nom": "Melbourne",
-  "pays": "Australie",
-  "pays_slug": "australie",
-  "continent": "Océanie",
-  "region": "Australie",
-  "coordonnees": {
-    "lat": -37.8136,
-    "lng": 144.9631
+ "slug": "melbourne",
+ "nom": "Melbourne",
+ "pays": "Australie",
+ "pays_slug": "australie",
+ "continent": "Océanie",
+ "region": "Australie",
+ "coordonnees": {
+  "lat": -37.8136,
+  "lng": 144.9631
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.6,
+ "description": "Capitale culturelle de l'Australie, Melbourne offre une scène halal foisonnante (Sydney Road, Broadmeadows) et de grandes mosquées.",
+ "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+ "metaDescription": "Capitale culturelle de l'Australie, Melbourne offre une scène halal foisonnante (Sydney Road, Broadmeadows) et de grandes mosquées.",
+ "statistiques": {
+  "restaurants_halal": 40,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8102367,144.9623332",
+   "lat": -37.8102367,
+   "lng": 144.9623332,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.6,
-  "description": "Capitale culturelle de l'Australie, Melbourne offre une scène halal foisonnante (Sydney Road, Broadmeadows) et de grandes mosquées.",
-  "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
-  "metaDescription": "Capitale culturelle de l'Australie, Melbourne offre une scène halal foisonnante (Sydney Road, Broadmeadows) et de grandes mosquées.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8101966,144.9638986",
+   "lat": -37.8101966,
+   "lng": 144.9638986,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Swanston Halal Food Centre",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8162697,144.9667103",
+   "lat": -37.8162697,
+   "lng": 144.9667103,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Melbourne",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Melbourne",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Melbourne%20Melbourne"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Sydney Road (Brunswick)",
-      "categorie": "Culture",
-      "description": "Avenue multiculturelle aux nombreux restaurants halal.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Sydney%20Road%20%28Brunswick%29%20Melbourne"
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée de Broadmeadows",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée de la communauté.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20de%20Broadmeadows%20Melbourne"
-    },
-    {
-      "id": "a3",
-      "nom": "Centre-ville & Yarra",
-      "categorie": "Culture",
-      "description": "Ruelles d'art, marchés et bords de fleuve.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Centre-ville%20%26%20Yarra%20Melbourne"
-    }
-  ],
-  "donneesAVenir": true
+  {
+   "nom": "Mofo Burgers",
+   "type": "burger, coffee shop, juice",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8036835,144.9606121",
+   "lat": -37.8036835,
+   "lng": 144.9606121,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kabana",
+   "type": "Afghan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8017966,144.9665445",
+   "lat": -37.8017966,
+   "lng": 144.9665445,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ho Ho's Xpress (Level 1)",
+   "type": "salad, lebanese, coffee shop, regional, sandwich, pizza, juice",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.7987131,144.9635507",
+   "lat": -37.7987131,
+   "lng": 144.9635507,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chase Docklands",
+   "type": "middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8148552,144.9415241",
+   "lat": -37.8148552,
+   "lng": 144.9415241,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Docklands Den",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8140951,144.9403455",
+   "lat": -37.8140951,
+   "lng": 144.9403455,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Likya - Turkish Eatery",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.795314,144.971083",
+   "lat": -37.795314,
+   "lng": 144.971083,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Bilal",
+   "type": "indian, malaysian, Singapore",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.7563309,144.9641306",
+   "lat": -37.7563309,
+   "lng": 144.9641306,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Masitta",
+   "type": "korean, fried chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.7498698,145.0030954",
+   "lat": -37.7498698,
+   "lng": 145.0030954,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab World",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8152475,144.9630486",
+   "lat": -37.8152475,
+   "lng": 144.9630486,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Melbourne halal kebab & pizza take away food",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8173546,144.9647951",
+   "lat": -37.8173546,
+   "lng": 144.9647951,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Collins Juice Breakfast",
+   "type": "sandwich, juice, persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8177206,144.9580246",
+   "lat": -37.8177206,
+   "lng": 144.9580246,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Collins Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8177864,144.9579362",
+   "lat": -37.8177864,
+   "lng": 144.9579362,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Society",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8151468,144.9549323",
+   "lat": -37.8151468,
+   "lng": 144.9549323,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Drago's",
+   "type": "pizza, sandwich, fish and chips, kebab, balkan, burger, coffee shop, hot dog, wings",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8069387,144.9592482",
+   "lat": -37.8069387,
+   "lng": 144.9592482,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Southern Xross Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8185569,144.954146",
+   "lat": -37.8185569,
+   "lng": 144.954146,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Flinder's Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8204695,144.9563388",
+   "lat": -37.8204695,
+   "lng": 144.9563388,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "I Love Istanbul",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8047137,144.9660421",
+   "lat": -37.8047137,
+   "lng": 144.9660421,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nefes",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.803018,144.966732",
+   "lat": -37.803018,
+   "lng": 144.966732,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Byblos",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8231828,144.9534292",
+   "lat": -37.8231828,
+   "lng": 144.9534292,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Loyalina",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8011563,144.9666561",
+   "lat": -37.8011563,
+   "lng": 144.9666561,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Achelya",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8142338,144.9426755",
+   "lat": -37.8142338,
+   "lng": 144.9426755,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Stick It Grill",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8075006,144.9830369",
+   "lat": -37.8075006,
+   "lng": 144.9830369,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Abla's",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.7977,144.971073",
+   "lat": -37.7977,
+   "lng": 144.971073,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8061257,144.9828481",
+   "lat": -37.8061257,
+   "lng": 144.9828481,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Smith Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8060539,144.9832992",
+   "lat": -37.8060539,
+   "lng": 144.9832992,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Maha Bar",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8057587,144.9833384",
+   "lat": -37.8057587,
+   "lng": 144.9833384,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Corniche",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8244089,144.9440834",
+   "lat": -37.8244089,
+   "lng": 144.9440834,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Baba Kebab Palace",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.798283,144.97671",
+   "lat": -37.798283,
+   "lng": 144.97671,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Almina",
+   "type": "lebanese, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8156359,144.9388687",
+   "lat": -37.8156359,
+   "lng": 144.9388687,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebabs on Clarendon",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.833275,144.960564",
+   "lat": -37.833275,
+   "lng": 144.960564,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Market Borek",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8328582,144.9559213",
+   "lat": -37.8328582,
+   "lng": 144.9559213,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hasir Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8003328,144.9838621",
+   "lat": -37.8003328,
+   "lng": 144.9838621,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebabs Galore",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.7990124,144.9837392",
+   "lat": -37.7990124,
+   "lng": 144.9837392,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Kebab & Cafe",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.7949466,144.9485869",
+   "lat": -37.7949466,
+   "lng": 144.9485869,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Kingz",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.8113496,144.9912795",
+   "lat": -37.8113496,
+   "lng": 144.9912795,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aysel",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.7983237,144.9842227",
+   "lat": -37.7983237,
+   "lng": 144.9842227,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Jabelle",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-37.7900565,144.971501",
+   "lat": -37.7900565,
+   "lng": 144.971501,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Melbourne",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Melbourne",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Melbourne%20Melbourne"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Sydney Road (Brunswick)",
+   "categorie": "Culture",
+   "description": "Avenue multiculturelle aux nombreux restaurants halal.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Sydney%20Road%20%28Brunswick%29%20Melbourne"
+  },
+  {
+   "id": "a2",
+   "nom": "Mosquée de Broadmeadows",
+   "categorie": "Spirituel",
+   "description": "Grande mosquée de la communauté.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20de%20Broadmeadows%20Melbourne"
+  },
+  {
+   "id": "a3",
+   "nom": "Centre-ville & Yarra",
+   "categorie": "Culture",
+   "description": "Ruelles d'art, marchés et bords de fleuve.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Centre-ville%20%26%20Yarra%20Melbourne"
+  }
+ ],
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

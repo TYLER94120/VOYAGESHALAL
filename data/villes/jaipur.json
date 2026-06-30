@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Albert_Hall_%28Museum%29.JPG/1920px-Albert_Hall_%28Museum%29.JPG",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 1,
+  "mosquees": 7,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,317 @@
   "ville non-musulmane",
   "asie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "TVG AMER RESTAURANT",
+   "type": "north indian, mexican, multicusion, pizza, italian, indian, kebab, ice cream, fine dining, regional, fries, pasta",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=26.9415187,75.8386718",
+   "lat": 26.9415187,
+   "lng": 75.8386718,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m2777043242",
+   "nom": "Iswari Minar Swarga Sali",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=26.9244425,75.8208167",
+   "lat": 26.9244425,
+   "lng": 75.8208167,
+   "source": "osm"
+  },
+  {
+   "id": "m272783000",
+   "nom": "Jama Masjid",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=26.9217019,75.8261538",
+   "lat": 26.9217019,
+   "lng": 75.8261538,
+   "source": "osm"
+  },
+  {
+   "id": "m1391748699",
+   "nom": "Bilal Masjid",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=26.94612,75.8067091",
+   "lat": 26.94612,
+   "lng": 75.8067091,
+   "source": "osm"
+  },
+  {
+   "id": "m1489339452",
+   "nom": "Firdaus Masjid",
+   "type": "Mosquée",
+   "adresse": "Jaipur",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=26.9480991,75.8049368",
+   "lat": 26.9480991,
+   "lng": 75.8049368,
+   "source": "osm"
+  },
+  {
+   "id": "m1204917996",
+   "nom": "Nalbandan Masjid",
+   "type": "Mosquée",
+   "adresse": "Char Darwaja, Chokdi Gangapol, Jaipur",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=26.9318671,75.8360191",
+   "lat": 26.9318671,
+   "lng": 75.8360191,
+   "source": "osm"
+  },
+  {
+   "id": "m12669189233",
+   "nom": "Madina Masjid",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=26.947552,75.7496994",
+   "lat": 26.947552,
+   "lng": 75.7496994,
+   "source": "osm"
+  },
+  {
+   "id": "m12669189230",
+   "nom": "Masjid e Ilahi",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=26.9501257,75.7490895",
+   "lat": 26.9501257,
+   "lng": 75.7490895,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a9867154017",
+   "nom": "Amrapali Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9150126,75.8019066",
+   "lat": 26.9150126,
+   "lng": 75.8019066,
+   "source": "osm"
+  },
+  {
+   "id": "a10904671039",
+   "nom": "amrapali museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9150439,75.8019015",
+   "lat": 26.9150439,
+   "lng": 75.8019015,
+   "source": "osm"
+  },
+  {
+   "id": "a6081535814",
+   "nom": "Paanch Batti",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9162485,75.8098572",
+   "lat": 26.9162485,
+   "lng": 75.8098572,
+   "source": "osm"
+  },
+  {
+   "id": "a6081395486",
+   "nom": "M",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9170488,75.8167405",
+   "lat": 26.9170488,
+   "lng": 75.8167405,
+   "source": "osm"
+  },
+  {
+   "id": "a1496872519",
+   "nom": "एल्बर्ट हॉल",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9117053,75.8194973",
+   "lat": 26.9117053,
+   "lng": 75.8194973,
+   "source": "osm"
+  },
+  {
+   "id": "a229590208",
+   "nom": "Albert Hall Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9116797,75.8195026",
+   "lat": 26.9116797,
+   "lng": 75.8195026,
+   "source": "osm"
+  },
+  {
+   "id": "a7019850674",
+   "nom": "S R C Museum of indology",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9021795,75.8193059",
+   "lat": 26.9021795,
+   "lng": 75.8193059,
+   "source": "osm"
+  },
+  {
+   "id": "a10748448111",
+   "nom": "Chhoti roundabout view",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9242036,75.8186173",
+   "lat": 26.9242036,
+   "lng": 75.8186173,
+   "source": "osm"
+  },
+  {
+   "id": "a5238991728",
+   "nom": "Pink city",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9246636,75.818417",
+   "lat": 26.9246636,
+   "lng": 75.818417,
+   "source": "osm"
+  },
+  {
+   "id": "a11533709370",
+   "nom": "rooftop view metal staircase",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9238157,75.8206609",
+   "lat": 26.9238157,
+   "lng": 75.8206609,
+   "source": "osm"
+  },
+  {
+   "id": "a12367918008",
+   "nom": "rooftop view",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9240911,75.8207688",
+   "lat": 26.9240911,
+   "lng": 75.8207688,
+   "source": "osm"
+  },
+  {
+   "id": "a6971310985",
+   "nom": "Sunset Point",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9367309,75.8122387",
+   "lat": 26.9367309,
+   "lng": 75.8122387,
+   "source": "osm"
+  },
+  {
+   "id": "a956223020",
+   "nom": "गुलाबी नगरी (पिंक सिटी)",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9232015,75.8243929",
+   "lat": 26.9232015,
+   "lng": 75.8243929,
+   "source": "osm"
+  },
+  {
+   "id": "a170191935",
+   "nom": "Mubarak Mahal",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9257301,75.8236319",
+   "lat": 26.9257301,
+   "lng": 75.8236319,
+   "source": "osm"
+  },
+  {
+   "id": "a542886857",
+   "nom": "जंतर मंतर, जयपुर",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9247389,75.8244663",
+   "lat": 26.9247389,
+   "lng": 75.8244663,
+   "source": "osm"
+  },
+  {
+   "id": "a455720627",
+   "nom": "City Palace",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9262372,75.8238122",
+   "lat": 26.9262372,
+   "lng": 75.8238122,
+   "source": "osm"
+  },
+  {
+   "id": "a4784713722",
+   "nom": "Maharaja Sawai Mansingh II",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.926828,75.8238676",
+   "lat": 26.926828,
+   "lng": 75.8238676,
+   "source": "osm"
+  },
+  {
+   "id": "a12365223401",
+   "nom": "dune",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=26.9401153,75.8131635",
+   "lat": 26.9401153,
+   "lng": 75.8131635,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

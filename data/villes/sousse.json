@@ -1,76 +1,108 @@
 {
-  "slug": "sousse",
-  "nom": "Sousse",
-  "pays": "Tunisie",
-  "pays_slug": "tunisie",
-  "continent": "Afrique",
-  "region": "Afrique du Nord",
-  "coordonnees": {
-    "lat": 35.8256,
-    "lng": 10.6369
+ "slug": "sousse",
+ "nom": "Sousse",
+ "pays": "Tunisie",
+ "pays_slug": "tunisie",
+ "continent": "Afrique",
+ "region": "Afrique du Nord",
+ "coordonnees": {
+  "lat": 35.8256,
+  "lng": 10.6369
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "'Perle du Sahel' tunisien, Sousse possède une médina classée UNESCO avec sa grande mosquée et son ribat, le long de plages méditerranéennes.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mus%C3%A9e_arch%C3%A9logique_de_Sousse%2C_Tunisie%2C_9_f%C3%A9vrier_2023%2C_ZVE02124.jpg/1920px-Mus%C3%A9e_arch%C3%A9logique_de_Sousse%2C_Tunisie%2C_9_f%C3%A9vrier_2023%2C_ZVE02124.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mus%C3%A9e_arch%C3%A9logique_de_Sousse%2C_Tunisie%2C_9_f%C3%A9vrier_2023%2C_ZVE02124.jpg/1920px-Mus%C3%A9e_arch%C3%A9logique_de_Sousse%2C_Tunisie%2C_9_f%C3%A9vrier_2023%2C_ZVE02124.jpg",
+ "metaDescription": "'Perle du Sahel' tunisien, Sousse possède une médina classée UNESCO avec sa grande mosquée et son ribat, le long de plages méditerranéennes.",
+ "statistiques": {
+  "restaurants_halal": 3,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "KFC Sousse Vicomte",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.8475346,10.6185512",
+   "lat": 35.8475346,
+   "lng": 10.6185512,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.0,
-  "description": "'Perle du Sahel' tunisien, Sousse possède une médina classée UNESCO avec sa grande mosquée et son ribat, le long de plages méditerranéennes.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mus%C3%A9e_arch%C3%A9logique_de_Sousse%2C_Tunisie%2C_9_f%C3%A9vrier_2023%2C_ZVE02124.jpg/1920px-Mus%C3%A9e_arch%C3%A9logique_de_Sousse%2C_Tunisie%2C_9_f%C3%A9vrier_2023%2C_ZVE02124.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Mus%C3%A9e_arch%C3%A9logique_de_Sousse%2C_Tunisie%2C_9_f%C3%A9vrier_2023%2C_ZVE02124.jpg/1920px-Mus%C3%A9e_arch%C3%A9logique_de_Sousse%2C_Tunisie%2C_9_f%C3%A9vrier_2023%2C_ZVE02124.jpg",
-  "metaDescription": "'Perle du Sahel' tunisien, Sousse possède une médina classée UNESCO avec sa grande mosquée et son ribat, le long de plages méditerranéennes.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "WONDERFOOD",
+   "type": "pizza, sandwich, chicken, regional, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.8140167,10.6233646",
+   "lat": 35.8140167,
+   "lng": 10.6233646,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "مشاوي الغزالي",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.8127525,10.605972",
+   "lat": 35.8127525,
+   "lng": 10.605972,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Sousse",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Sousse",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Sousse%20Sousse"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Médina de Sousse (UNESCO)",
+   "categorie": "Culture",
+   "description": "Remparts, souks et ruelles blanches.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20de%20Sousse%20%28UNESCO%29%20Sousse"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Sousse",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Sousse",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Sousse%20Sousse"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Médina de Sousse (UNESCO)",
-      "categorie": "Culture",
-      "description": "Remparts, souks et ruelles blanches.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20de%20Sousse%20%28UNESCO%29%20Sousse"
-    },
-    {
-      "id": "a2",
-      "nom": "Ribat de Sousse",
-      "categorie": "Histoire",
-      "description": "Forteresse-monastère du VIIIe siècle.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Ribat%20de%20Sousse%20Sousse"
-    },
-    {
-      "id": "a3",
-      "nom": "Grande Mosquée de Sousse",
-      "categorie": "Spirituel",
-      "description": "Mosquée fortifiée du IXe siècle.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20de%20Sousse%20Sousse"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "id": "a2",
+   "nom": "Ribat de Sousse",
+   "categorie": "Histoire",
+   "description": "Forteresse-monastère du VIIIe siècle.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Ribat%20de%20Sousse%20Sousse"
+  },
+  {
+   "id": "a3",
+   "nom": "Grande Mosquée de Sousse",
+   "categorie": "Spirituel",
+   "description": "Mosquée fortifiée du IXe siècle.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20de%20Sousse%20Sousse"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

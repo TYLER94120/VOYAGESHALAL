@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Hanoi_Vietnam_Mausoleum-of-Ho-Chi-Minh-01.jpg/1920px-Hanoi_Vietnam_Mausoleum-of-Ho-Chi-Minh-01.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 13,
+  "mosquees": 3,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,393 @@
   "ville non-musulmane",
   "asie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Ưu Đàm Chay",
+   "type": "vietnamese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0187719,105.84814",
+   "lat": 21.0187719,
+   "lng": 105.84814,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chay Vỉa Hè",
+   "type": "vietnamese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0457732,105.8426269",
+   "lat": 21.0457732,
+   "lng": 105.8426269,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Donar Kebab Antony",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0167367,105.8506815",
+   "lat": 21.0167367,
+   "lng": 105.8506815,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Cửa Hàng Bánh Mì Döner Kebab",
+   "type": "german, barbecue, kebab, lao, grill, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0394225,105.8509697",
+   "lat": 21.0394225,
+   "lng": 105.8509697,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Đồ Ăn Nhanh Kebab Anh Hùng",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0326733,105.8545328",
+   "lat": 21.0326733,
+   "lng": 105.8545328,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Cửa Hàng Doner Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0121897,105.8213505",
+   "lat": 21.0121897,
+   "lng": 105.8213505,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Cửa Hàng Doner Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0348886,105.8539657",
+   "lat": 21.0348886,
+   "lng": 105.8539657,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tasty Lebangon",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0587435,105.8354571",
+   "lat": 21.0587435,
+   "lng": 105.8354571,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nhà Hàng Grill Mapa",
+   "type": "turkish, grill",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0163305,105.7997975",
+   "lat": 21.0163305,
+   "lng": 105.7997975,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nan n Kabab",
+   "type": "arab, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0639035,105.8284405",
+   "lat": 21.0639035,
+   "lng": 105.8284405,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kiez Vegan – Hanoi",
+   "type": "coffee shop, german, turkish, vietnamese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0631814,105.8243292",
+   "lat": 21.0631814,
+   "lng": 105.8243292,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Sultan: Egyptian food",
+   "type": "egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=21.0677469,105.8261545",
+   "lat": 21.0677469,
+   "lng": 105.8261545,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Quỳnh Quán",
+   "type": "vietnamese, ice cream, kebab, sandwich, fish and chips",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=20.9735521,105.8202606",
+   "lat": 20.9735521,
+   "lng": 105.8202606,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m697326496",
+   "nom": "Chùa Một Cột",
+   "type": "Mosquée",
+   "adresse": "Phố Ông Ích Khiêm, Hà Nội",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=21.0358556,105.8336144",
+   "lat": 21.0358556,
+   "lng": 105.8336144,
+   "source": "osm"
+  },
+  {
+   "id": "m698018249",
+   "nom": "Nhà thờ Cửa Bắc",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=21.0414535,105.8405062",
+   "lat": 21.0414535,
+   "lng": 105.8405062,
+   "source": "osm"
+  },
+  {
+   "id": "m700620997",
+   "nom": "Thánh đường Hồi giáo Al-Noor",
+   "type": "Mosquée",
+   "adresse": "Phố Hàng Lược, Hà Nội",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=21.0379481,105.8475552",
+   "lat": 21.0379481,
+   "lng": 105.8475552,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a702185155",
+   "nom": "Khuê Văn Các",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0285826,105.8358894",
+   "lat": 21.0285826,
+   "lng": 105.8358894,
+   "source": "osm"
+  },
+  {
+   "id": "a1000087403",
+   "nom": "Nguyen Art Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0285199,105.8364926",
+   "lat": 21.0285199,
+   "lng": 105.8364926,
+   "source": "osm"
+  },
+  {
+   "id": "a700145152",
+   "nom": "Bảo tàng Mỹ thuật Việt Nam",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0306532,105.8370317",
+   "lat": 21.0306532,
+   "lng": 105.8370317,
+   "source": "osm"
+  },
+  {
+   "id": "a12090398186",
+   "nom": "Lunet Art Galerie",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.029912,105.8387223",
+   "lat": 21.029912,
+   "lng": 105.8387223,
+   "source": "osm"
+  },
+  {
+   "id": "a12057863165",
+   "nom": "Bia tưởng niệm liệt sĩ phường Điện Biên",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0327149,105.8327812",
+   "lat": 21.0327149,
+   "lng": 105.8327812,
+   "source": "osm"
+  },
+  {
+   "id": "a2810302635",
+   "nom": "Bảo tàng Binh chủng Thông tin liên lạc",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0303429,105.8266305",
+   "lat": 21.0303429,
+   "lng": 105.8266305,
+   "source": "osm"
+  },
+  {
+   "id": "a37629143",
+   "nom": "Bảo tàng Hồ Chí Minh",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0356178,105.8326247",
+   "lat": 21.0356178,
+   "lng": 105.8326247,
+   "source": "osm"
+  },
+  {
+   "id": "a1247135450",
+   "nom": "Phố đường tàu Hà Nội",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0299738,105.8431281",
+   "lat": 21.0299738,
+   "lng": 105.8431281,
+   "source": "osm"
+  },
+  {
+   "id": "a37625751",
+   "nom": "Lăng Chủ tịch Hồ Chí Minh",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0367617,105.8346919",
+   "lat": 21.0367617,
+   "lng": 105.8346919,
+   "source": "osm"
+  },
+  {
+   "id": "a1162603502",
+   "nom": "Quảng trường Ba Đình",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0369875,105.8358029",
+   "lat": 21.0369875,
+   "lng": 105.8358029,
+   "source": "osm"
+  },
+  {
+   "id": "a696389268",
+   "nom": "Đoan Môn",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0352574,105.8402519",
+   "lat": 21.0352574,
+   "lng": 105.8402519,
+   "source": "osm"
+  },
+  {
+   "id": "a185536369",
+   "nom": "Triển lãm Tranh dân gian Việt Nam",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.036378,105.8401087",
+   "lat": 21.036378,
+   "lng": 105.8401087,
+   "source": "osm"
+  },
+  {
+   "id": "a207178342",
+   "nom": "Nhà sàn Bác Hồ",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0381713,105.833152",
+   "lat": 21.0381713,
+   "lng": 105.833152,
+   "source": "osm"
+  },
+  {
+   "id": "a6546220354",
+   "nom": "Rồng đá",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0365276,105.8404068",
+   "lat": 21.0365276,
+   "lng": 105.8404068,
+   "source": "osm"
+  },
+  {
+   "id": "a11806619236",
+   "nom": "B-52 Stratofortress Relic",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0351239,105.8258594",
+   "lat": 21.0351239,
+   "lng": 105.8258594,
+   "source": "osm"
+  },
+  {
+   "id": "a1019050231",
+   "nom": "Bảo tàng Chiến thắng B52",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0355531,105.8260825",
+   "lat": 21.0355531,
+   "lng": 105.8260825,
+   "source": "osm"
+  },
+  {
+   "id": "a228075195",
+   "nom": "Cung Văn hóa Lao động Hữu nghị Việt Xô",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0222196,105.8442397",
+   "lat": 21.0222196,
+   "lng": 105.8442397,
+   "source": "osm"
+  },
+  {
+   "id": "a185535416",
+   "nom": "Nhà D67",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=21.0373231,105.8404825",
+   "lat": 21.0373231,
+   "lng": 105.8404825,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

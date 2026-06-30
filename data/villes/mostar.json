@@ -1,76 +1,218 @@
 {
-  "slug": "mostar",
-  "nom": "Mostar",
-  "pays": "Bosnie-Herzégovine",
-  "pays_slug": "bosnie-herzegovine",
-  "continent": "Europe",
-  "region": "Balkans",
-  "coordonnees": {
-    "lat": 43.3438,
-    "lng": 17.8078
+ "slug": "mostar",
+ "nom": "Mostar",
+ "pays": "Bosnie-Herzégovine",
+ "pays_slug": "bosnie-herzegovine",
+ "continent": "Europe",
+ "region": "Balkans",
+ "coordonnees": {
+  "lat": 43.3438,
+  "lng": 17.8078
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "Symbole de la Bosnie, Mostar est célèbre pour son Vieux Pont ottoman classé UNESCO enjambant la Neretva, et sa vieille ville orientale.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/1920px-Mostar_Old_Town_Panorama_2007.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/1920px-Mostar_Old_Town_Panorama_2007.jpg",
+ "metaDescription": "Symbole de la Bosnie, Mostar est célèbre pour son Vieux Pont ottoman classé UNESCO enjambant la Neretva, et sa vieille ville orientale.",
+ "statistiques": {
+  "restaurants_halal": 14,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Pasta to go",
+   "type": "italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3425058,17.8129792",
+   "lat": 43.3425058,
+   "lng": 17.8129792,
+   "halalConfidence": "only",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.0,
-  "description": "Symbole de la Bosnie, Mostar est célèbre pour son Vieux Pont ottoman classé UNESCO enjambant la Neretva, et sa vieille ville orientale.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/1920px-Mostar_Old_Town_Panorama_2007.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Mostar_Old_Town_Panorama_2007.jpg/1920px-Mostar_Old_Town_Panorama_2007.jpg",
-  "metaDescription": "Symbole de la Bosnie, Mostar est célèbre pour son Vieux Pont ottoman classé UNESCO enjambant la Neretva, et sa vieille ville orientale.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Aščinica Misal",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3388845,17.8149032",
+   "lat": 43.3388845,
+   "lng": 17.8149032,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Behar 2",
+   "type": "breakfast, grill, local, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3367583,17.813635",
+   "lat": 43.3367583,
+   "lng": 17.813635,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Mostar",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Mostar",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Mostar%20Mostar"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Stari Most (Vieux Pont)",
-      "categorie": "Histoire",
-      "description": "Pont ottoman emblématique reconstruit, UNESCO.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Stari%20Most%20%28Vieux%20Pont%29%20Mostar"
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée Koski Mehmed Pacha",
-      "categorie": "Spirituel",
-      "description": "Mosquée ottomane avec vue sur le pont.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Koski%20Mehmed%20Pacha%20Mostar"
-    },
-    {
-      "id": "a3",
-      "nom": "Vieux bazar Kujundziluk",
-      "categorie": "Culture",
-      "description": "Ruelles pavées, cuivre et artisanat ottoman.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Vieux%20bazar%20Kujundziluk%20Mostar"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Slastičarna Palma",
+   "type": "ice cream, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.344631,17.8085929",
+   "lat": 43.344631,
+   "lng": 17.8085929,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Palma",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3445304,17.8087918",
+   "lat": 43.3445304,
+   "lng": 17.8087918,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Donkebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.343818,17.8099886",
+   "lat": 43.343818,
+   "lng": 17.8099886,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Žeks Doner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3463619,17.8005504",
+   "lat": 43.3463619,
+   "lng": 17.8005504,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3371348,17.8138069",
+   "lat": 43.3371348,
+   "lng": 17.8138069,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dönerland",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3362978,17.8134357",
+   "lat": 43.3362978,
+   "lng": 17.8134357,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zalik Doner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3558861,17.813477",
+   "lat": 43.3558861,
+   "lng": 17.813477,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "No.1 Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3637679,17.8189237",
+   "lat": 43.3637679,
+   "lng": 17.8189237,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab M17",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3200791,17.8307907",
+   "lat": 43.3200791,
+   "lng": 17.8307907,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab 2.0",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3070932,17.8320158",
+   "lat": 43.3070932,
+   "lng": 17.8320158,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Žeks doner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.3063513,17.8316243",
+   "lat": 43.3063513,
+   "lng": 17.8316243,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Mostar",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Mostar",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Mostar%20Mostar"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Stari Most (Vieux Pont)",
+   "categorie": "Histoire",
+   "description": "Pont ottoman emblématique reconstruit, UNESCO.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Stari%20Most%20%28Vieux%20Pont%29%20Mostar"
+  },
+  {
+   "id": "a2",
+   "nom": "Mosquée Koski Mehmed Pacha",
+   "categorie": "Spirituel",
+   "description": "Mosquée ottomane avec vue sur le pont.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Koski%20Mehmed%20Pacha%20Mostar"
+  },
+  {
+   "id": "a3",
+   "nom": "Vieux bazar Kujundziluk",
+   "categorie": "Culture",
+   "description": "Ruelles pavées, cuivre et artisanat ottoman.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Vieux%20bazar%20Kujundziluk%20Mostar"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/8/86/Rio_de_Janeiro_from_Sugarloaf_mountain%2C_May_2004.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 10,
+  "mosquees": 10,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,440 @@
   "ville non-musulmane",
   "amérique du sud"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Bar do Elias",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-22.9323491,-43.1772824",
+   "lat": -22.9323491,
+   "lng": -43.1772824,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Futura lanchonete",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-22.9361606,-43.1774118",
+   "lat": -22.9361606,
+   "lng": -43.1774118,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ben Ali",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-22.9484843,-43.1826709",
+   "lat": -22.9484843,
+   "lng": -43.1826709,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Elias Gourmet",
+   "type": "international, arabic, salad",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-22.9491574,-43.1852559",
+   "lat": -22.9491574,
+   "lng": -43.1852559,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Árabe Carioca",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-22.9178965,-43.2244798",
+   "lat": -22.9178965,
+   "lng": -43.2244798,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Camelo's",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-22.9248011,-43.2314873",
+   "lat": -22.9248011,
+   "lng": -43.2314873,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Basha",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-22.9651609,-43.1770668",
+   "lat": -22.9651609,
+   "lng": -43.1770668,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Amir",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-22.965539,-43.176642",
+   "lat": -22.965539,
+   "lng": -43.176642,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ibra Árabe",
+   "type": "arab, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-22.9730362,-43.1922396",
+   "lat": -22.9730362,
+   "lng": -43.1922396,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Stambul",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-22.975576,-43.188609",
+   "lat": -22.975576,
+   "lng": -43.188609,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m140538722",
+   "nom": "Igreja do Glorioso Patriarca São José",
+   "type": "Mosquée",
+   "adresse": "Avenida Presidente Antônio Carlos, Rio de Janeiro",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-22.9044197,-43.1739568",
+   "lat": -22.9044197,
+   "lng": -43.1739568,
+   "source": "osm"
+  },
+  {
+   "id": "m198746798",
+   "nom": "Igreja de Nossa Senhora do Monte do Carmo",
+   "type": "Mosquée",
+   "adresse": "Rua Primeiro de Março, Rio de Janeiro",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-22.9034301,-43.1754843",
+   "lat": -22.9034301,
+   "lng": -43.1754843,
+   "source": "osm"
+  },
+  {
+   "id": "m198745876",
+   "nom": "Igreja de Nossa Senhora da Lapa dos Mercadores",
+   "type": "Mosquée",
+   "adresse": "Rua do Ouvidor",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-22.9021923,-43.1752886",
+   "lat": -22.9021923,
+   "lng": -43.1752886,
+   "source": "osm"
+  },
+  {
+   "id": "m1052067544",
+   "nom": "Igreja da Santa Cruz dos Militares",
+   "type": "Mosquée",
+   "adresse": "Rua Primeiro de Março",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-22.9021274,-43.1756079",
+   "lat": -22.9021274,
+   "lng": -43.1756079,
+   "source": "osm"
+  },
+  {
+   "id": "m198749587",
+   "nom": "Igreja da Ordem Terceira de São Francisco da Penitência",
+   "type": "Mosquée",
+   "adresse": "Largo da Carioca",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-22.9069153,-43.1792559",
+   "lat": -22.9069153,
+   "lng": -43.1792559,
+   "source": "osm"
+  },
+  {
+   "id": "m49859977",
+   "nom": "Igreja de São Francisco de Paula",
+   "type": "Mosquée",
+   "adresse": "Largo São Francisco de Paula",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-22.905612,-43.1805396",
+   "lat": -22.905612,
+   "lng": -43.1805396,
+   "source": "osm"
+  },
+  {
+   "id": "m30839484",
+   "nom": "Igreja de Nossa Senhora da Candelária",
+   "type": "Mosquée",
+   "adresse": "Praça Pio X",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-22.9008464,-43.1777938",
+   "lat": -22.9008464,
+   "lng": -43.1777938,
+   "source": "osm"
+  },
+  {
+   "id": "m30621926",
+   "nom": "Catedral de São Sebastião",
+   "type": "Mosquée",
+   "adresse": "Avenida República do Chile",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-22.9107984,-43.1806914",
+   "lat": -22.9107984,
+   "lng": -43.1806914,
+   "source": "osm"
+  },
+  {
+   "id": "m30775624",
+   "nom": "Igreja e Mosteiro de São Bento",
+   "type": "Mosquée",
+   "adresse": "Rua Dom Gerardo",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-22.8968236,-43.1779064",
+   "lat": -22.8968236,
+   "lng": -43.1779064,
+   "source": "osm"
+  },
+  {
+   "id": "m30626207",
+   "nom": "Igreja de Nossa Senhora da Glória do Outeiro",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-22.9215166,-43.1753928",
+   "lat": -22.9215166,
+   "lng": -43.1753928,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a5176976397",
+   "nom": "Barão do Rio Branco",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9065548,-43.1721121",
+   "lat": -22.9065548,
+   "lng": -43.1721121,
+   "source": "osm"
+  },
+  {
+   "id": "a9270800766",
+   "nom": "Rui Barbosa",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9069286,-43.1719316",
+   "lat": -22.9069286,
+   "lng": -43.1719316,
+   "source": "osm"
+  },
+  {
+   "id": "a468787011",
+   "nom": "Museu da Imagem e do Som",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9058248,-43.1709345",
+   "lat": -22.9058248,
+   "lng": -43.1709345,
+   "source": "osm"
+  },
+  {
+   "id": "a5244576059",
+   "nom": "Museu da Farmacia da Santa Casa de Misericórdia",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9077034,-43.170701",
+   "lat": -22.9077034,
+   "lng": -43.170701,
+   "source": "osm"
+  },
+  {
+   "id": "a506239957",
+   "nom": "Tiradentes",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9042048,-43.1743466",
+   "lat": -22.9042048,
+   "lng": -43.1743466,
+   "source": "osm"
+  },
+  {
+   "id": "a30839053",
+   "nom": "Museu Naval",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9038552,-43.1730099",
+   "lat": -22.9038552,
+   "lng": -43.1730099,
+   "source": "osm"
+  },
+  {
+   "id": "a1051455251",
+   "nom": "Museu Histórico Nacional",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9057967,-43.1697089",
+   "lat": -22.9057967,
+   "lng": -43.1697089,
+   "source": "osm"
+  },
+  {
+   "id": "a9270800770",
+   "nom": "Manuel Bandeira",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9100468,-43.1725252",
+   "lat": -22.9100468,
+   "lng": -43.1725252,
+   "source": "osm"
+  },
+  {
+   "id": "a9270800763",
+   "nom": "Joaquim Nabuco",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9101234,-43.1724326",
+   "lat": -22.9101234,
+   "lng": -43.1724326,
+   "source": "osm"
+  },
+  {
+   "id": "a10279776291",
+   "nom": "Lions",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9061711,-43.1765253",
+   "lat": -22.9061711,
+   "lng": -43.1765253,
+   "source": "osm"
+  },
+  {
+   "id": "a4618587289",
+   "nom": "Museu Judaico",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9097789,-43.1747382",
+   "lat": -22.9097789,
+   "lng": -43.1747382,
+   "source": "osm"
+  },
+  {
+   "id": "a12434239967",
+   "nom": "Monumento à Primeira Foto na América do Sul",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9032579,-43.1732625",
+   "lat": -22.9032579,
+   "lng": -43.1732625,
+   "source": "osm"
+  },
+  {
+   "id": "a460622010",
+   "nom": "Antigo Convento de Nossa Senhora do Carmo",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9037721,-43.1750152",
+   "lat": -22.9037721,
+   "lng": -43.1750152,
+   "source": "osm"
+  },
+  {
+   "id": "a1229035013",
+   "nom": "Biblioteca Nacional",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9097047,-43.1754182",
+   "lat": -22.9097047,
+   "lng": -43.1754182,
+   "source": "osm"
+  },
+  {
+   "id": "a6146058219",
+   "nom": "Cápsula do Tempo (1969–2019) da Federação de Bandeirantes",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9093835,-43.1699034",
+   "lat": -22.9093835,
+   "lng": -43.1699034,
+   "source": "osm"
+  },
+  {
+   "id": "a4977864450",
+   "nom": "Augusto Teixeira de Freitas",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9091009,-43.1696322",
+   "lat": -22.9091009,
+   "lng": -43.1696322,
+   "source": "osm"
+  },
+  {
+   "id": "a9270800759",
+   "nom": "Machado de Assis",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9106113,-43.1730388",
+   "lat": -22.9106113,
+   "lng": -43.1730388,
+   "source": "osm"
+  },
+  {
+   "id": "a460622011",
+   "nom": "Antigo Convento de Nossa Senhora do Carmo",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-22.9037068,-43.1753827",
+   "lat": -22.9037068,
+   "lng": -43.1753827,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -1,75 +1,237 @@
 {
-  "slug": "machhad",
-  "nom": "Machhad",
-  "pays": "Iran",
-  "pays_slug": "iran",
-  "continent": "Asie",
-  "region": "Iran",
-  "coordonnees": {
-    "lat": 36.2605,
-    "lng": 59.6168
+ "slug": "machhad",
+ "nom": "Machhad",
+ "pays": "Iran",
+ "pays_slug": "iran",
+ "continent": "Asie",
+ "region": "Iran",
+ "coordonnees": {
+  "lat": 36.2605,
+  "lng": 59.6168
+ },
+ "codeISO": "",
+ "score_halal": 4.7,
+ "halalScore": 9.4,
+ "description": "Ville sainte d'Iran, Machhad accueille des millions de pèlerins au sanctuaire de l'Imam Reza, l'un des plus vastes complexes religieux du monde.",
+ "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
+ "metaDescription": "Ville sainte d'Iran, Machhad accueille des millions de pèlerins au sanctuaire de l'Imam Reza, l'un des plus vastes complexes religieux du monde.",
+ "statistiques": {
+  "restaurants_halal": 16,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "رستوران معین درباری",
+   "type": "kebab, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2871135,59.5980574",
+   "lat": 36.2871135,
+   "lng": 59.5980574,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.7,
-  "halalScore": 9.4,
-  "description": "Ville sainte d'Iran, Machhad accueille des millions de pèlerins au sanctuaire de l'Imam Reza, l'un des plus vastes complexes religieux du monde.",
-  "image": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1600&q=80",
-  "metaDescription": "Ville sainte d'Iran, Machhad accueille des millions de pèlerins au sanctuaire de l'Imam Reza, l'un des plus vastes complexes religieux du monde.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "ساندویچ بار فاخته",
+   "type": "sandwich, ساندویچ سرد",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3033511,59.5711228",
+   "lat": 36.3033511,
+   "lng": 59.5711228,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "رستوران پسران کریم (فرهاد)",
+   "type": "kebab, meat",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3120588,59.5599301",
+   "lat": 36.3120588,
+   "lng": 59.5599301,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Machhad",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Machhad",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Machhad%20Machhad"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Sanctuaire de l'Imam Reza",
-      "categorie": "Spirituel",
-      "description": "Immense complexe sacré aux dômes et minarets dorés.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20l%27Imam%20Reza%20Machhad"
-    },
-    {
-      "id": "a2",
-      "nom": "Grand bazar Reza",
-      "categorie": "Shopping",
-      "description": "Safran, tapis et souvenirs religieux.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Grand%20bazar%20Reza%20Machhad"
-    },
-    {
-      "id": "a3",
-      "nom": "Mausolée de Ferdowsi (Tous)",
-      "categorie": "Culture",
-      "description": "Tombeau du grand poète à proximité.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e%20de%20Ferdowsi%20%28Tous%29%20Machhad"
-    }
-  ],
-  "donneesAVenir": true
+  {
+   "nom": "کترینگ به پخت",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2775149,59.6221875",
+   "lat": 36.2775149,
+   "lng": 59.6221875,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب طیب",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2764697,59.6309941",
+   "lat": 36.2764697,
+   "lng": 59.6309941,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "طباخی حقیقت",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2682329,59.5875628",
+   "lat": 36.2682329,
+   "lng": 59.5875628,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "چلوکباب هاتف",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2209466,59.616975",
+   "lat": 36.2209466,
+   "lng": 59.616975,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران درویش",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2893143,59.580234",
+   "lat": 36.2893143,
+   "lng": 59.580234,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب حلیم شله رضوان",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3029137,59.6196503",
+   "lat": 36.3029137,
+   "lng": 59.6196503,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب سرا",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.309988,59.6136486",
+   "lat": 36.309988,
+   "lng": 59.6136486,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران البیک",
+   "type": "arabic",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2923524,59.5669491",
+   "lat": 36.2923524,
+   "lng": 59.5669491,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب شهرما",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3020291,59.5764315",
+   "lat": 36.3020291,
+   "lng": 59.5764315,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "نان داغ کباب داغ امید رضاشهر",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.2847432,59.5500401",
+   "lat": 36.2847432,
+   "lng": 59.5500401,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران لذیذ (الماس)",
+   "type": "pizza, burger, italian, kebab, chicken, asian, international, steak house, coffee shop, fish and chips, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3052094,59.5677116",
+   "lat": 36.3052094,
+   "lng": 59.5677116,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب وحلیم تک بهارستان",
+   "type": "kebab, حلیم",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3128253,59.5627045",
+   "lat": 36.3128253,
+   "lng": 59.5627045,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "معین درباری",
+   "type": "kebab, chicken, asian, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.297534,59.543371",
+   "lat": 36.297534,
+   "lng": 59.543371,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Machhad",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Machhad",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Machhad%20Machhad"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Sanctuaire de l'Imam Reza",
+   "categorie": "Spirituel",
+   "description": "Immense complexe sacré aux dômes et minarets dorés.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Sanctuaire%20de%20l%27Imam%20Reza%20Machhad"
+  },
+  {
+   "id": "a2",
+   "nom": "Grand bazar Reza",
+   "categorie": "Shopping",
+   "description": "Safran, tapis et souvenirs religieux.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Grand%20bazar%20Reza%20Machhad"
+  },
+  {
+   "id": "a3",
+   "nom": "Mausolée de Ferdowsi (Tous)",
+   "categorie": "Culture",
+   "description": "Tombeau du grand poète à proximité.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e%20de%20Ferdowsi%20%28Tous%29%20Machhad"
+  }
+ ],
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

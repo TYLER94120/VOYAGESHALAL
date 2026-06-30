@@ -1,76 +1,198 @@
 {
-  "slug": "medan",
-  "nom": "Medan",
-  "pays": "Indonésie",
-  "pays_slug": "indonesie",
-  "continent": "Asie",
-  "region": "Indonésie",
-  "coordonnees": {
-    "lat": 3.5952,
-    "lng": 98.6722
+ "slug": "medan",
+ "nom": "Medan",
+ "pays": "Indonésie",
+ "pays_slug": "indonesie",
+ "continent": "Asie",
+ "region": "Indonésie",
+ "coordonnees": {
+  "lat": 3.5952,
+  "lng": 98.6722
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Porte de Sumatra, Medan possède la splendide Grande Mosquée Al-Mashun et le palais Maimun du sultanat de Deli.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Medan_Montage.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Medan_Montage.jpg",
+ "metaDescription": "Porte de Sumatra, Medan possède la splendide Grande Mosquée Al-Mashun et le palais Maimun du sultanat de Deli.",
+ "statistiques": {
+  "restaurants_halal": 12,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Warung Halimah",
+   "type": "regional, indonesian, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.5865286,98.6634069",
+   "lat": 3.5865286,
+   "lng": 98.6634069,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Porte de Sumatra, Medan possède la splendide Grande Mosquée Al-Mashun et le palais Maimun du sultanat de Deli.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Medan_Montage.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Medan_Montage.jpg",
-  "metaDescription": "Porte de Sumatra, Medan possède la splendide Grande Mosquée Al-Mashun et le palais Maimun du sultanat de Deli.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Ayam Goreng Kalasan",
+   "type": "indonesian, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.5885872,98.6616232",
+   "lat": 3.5885872,
+   "lng": 98.6616232,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Pondo Klep 002",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.5791813,98.6289843",
+   "lat": 3.5791813,
+   "lng": 98.6289843,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Medan",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Medan",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Medan%20Medan"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Grande Mosquée Al-Mashun",
-      "categorie": "Spirituel",
-      "description": "Mosquée du sultanat aux influences mauresques et indiennes.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Al-Mashun%20Medan"
-    },
-    {
-      "id": "a2",
-      "nom": "Palais Maimun",
-      "categorie": "Histoire",
-      "description": "Palais jaune du sultan de Deli.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Palais%20Maimun%20Medan"
-    },
-    {
-      "id": "a3",
-      "nom": "Cuisine halal de Medan",
-      "categorie": "Culture",
-      "description": "Spécialités malaises et indo-musulmanes.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Cuisine%20halal%20de%20Medan%20Medan"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Pondo Klep 002",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.5791282,98.6289989",
+   "lat": 3.5791282,
+   "lng": 98.6289989,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Komplek Barakuda Blok DD 05",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.6457773,98.6759832",
+   "lat": 3.6457773,
+   "lng": 98.6759832,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Salero Cafe ( Ikan Bakar Khas Sibolga )",
+   "type": "seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.5549757,98.6299932",
+   "lat": 3.5549757,
+   "lng": 98.6299932,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dapoer Momzu",
+   "type": "donut, cake",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.545261,98.7058541",
+   "lat": 3.545261,
+   "lng": 98.7058541,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dimsum Juara Medan Johor",
+   "type": "dumplings",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.5351819,98.6779478",
+   "lat": 3.5351819,
+   "lng": 98.6779478,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dragon Lady Food Court",
+   "type": "burger, tea, local, coffee shop, indonesian, noodles, chicken, diner, kebab, curry",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.5962329,98.665244",
+   "lat": 3.5962329,
+   "lng": 98.665244,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mie Pangsit Awai",
+   "type": "noodle, non-halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.5881024,98.6677356",
+   "lat": 3.5881024,
+   "lng": 98.6677356,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dragon Lady Food Court",
+   "type": "burger, tea, coffee shop, indonesian, diner, chicken, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.598557,98.6636428",
+   "lat": 3.598557,
+   "lng": 98.6636428,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Warung Sate Madura \"Bintang Timur\"",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=3.5936306,98.7114791",
+   "lat": 3.5936306,
+   "lng": 98.7114791,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Medan",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Medan",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Medan%20Medan"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Grande Mosquée Al-Mashun",
+   "categorie": "Spirituel",
+   "description": "Mosquée du sultanat aux influences mauresques et indiennes.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Al-Mashun%20Medan"
+  },
+  {
+   "id": "a2",
+   "nom": "Palais Maimun",
+   "categorie": "Histoire",
+   "description": "Palais jaune du sultan de Deli.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Palais%20Maimun%20Medan"
+  },
+  {
+   "id": "a3",
+   "nom": "Cuisine halal de Medan",
+   "categorie": "Culture",
+   "description": "Spécialités malaises et indo-musulmanes.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Cuisine%20halal%20de%20Medan%20Medan"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

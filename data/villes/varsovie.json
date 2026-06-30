@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Warsaw_07-13_img29_View_from_Palace_of_Culture_and_Science.jpg/1920px-Warsaw_07-13_img29_View_from_Palace_of_Culture_and_Science.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 2,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,652 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Pianka",
+   "type": "pizza, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2336575,21.0113549",
+   "lat": 52.2336575,
+   "lng": 21.0113549,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Youmiko",
+   "type": "sushi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2255495,21.0105318",
+   "lat": 52.2255495,
+   "lng": 21.0105318,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "KFC",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2302442,21.002591",
+   "lat": 52.2302442,
+   "lng": 21.002591,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Eid Kebab",
+   "type": "kebab, uzbek",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.220232,21.0128405",
+   "lat": 52.220232,
+   "lng": 21.0128405,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Black King's Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2294261,21.0140916",
+   "lat": 52.2294261,
+   "lng": 21.0140916,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Efez Express",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2282079,21.013367",
+   "lat": 52.2282079,
+   "lng": 21.013367,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Leila",
+   "type": "barbecue, arab, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2282282,21.0136412",
+   "lat": 52.2282282,
+   "lng": 21.0136412,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab King",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2309362,21.0156175",
+   "lat": 52.2309362,
+   "lng": 21.0156175,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tendur",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2320573,21.0136955",
+   "lat": 52.2320573,
+   "lng": 21.0136955,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bliski Wschód",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2322418,21.0114376",
+   "lat": 52.2322418,
+   "lng": 21.0114376,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mama Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2321985,21.0134532",
+   "lat": 52.2321985,
+   "lng": 21.0134532,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nar",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.227125,21.011054",
+   "lat": 52.227125,
+   "lng": 21.011054,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tikka",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2296017,21.0166201",
+   "lat": 52.2296017,
+   "lng": 21.0166201,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hello Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2295826,21.0076899",
+   "lat": 52.2295826,
+   "lng": 21.0076899,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lokanta",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2277942,21.0084892",
+   "lat": 52.2277942,
+   "lng": 21.0084892,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kura Warzyw",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2327059,21.0168318",
+   "lat": 52.2327059,
+   "lng": 21.0168318,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Vebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2327364,21.017005",
+   "lat": 52.2327364,
+   "lng": 21.017005,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Alibaba",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2255776,21.0137548",
+   "lat": 52.2255776,
+   "lng": 21.0137548,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Jinn & Joy",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2330764,21.018632",
+   "lat": 52.2330764,
+   "lng": 21.018632,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab King",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.23241,21.0197913",
+   "lat": 52.23241,
+   "lng": 21.0197913,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Meat Maxx",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2313262,21.0031886",
+   "lat": 52.2313262,
+   "lng": 21.0031886,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Astana Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2331605,21.0197456",
+   "lat": 52.2331605,
+   "lng": 21.0197456,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kobiety Wędrowne",
+   "type": "asian, ukrainian, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.223748,21.0098738",
+   "lat": 52.223748,
+   "lng": 21.0098738,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Berlin Döner Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.23068,21.002287",
+   "lat": 52.23068,
+   "lng": 21.002287,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Gemüse Haus Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2356805,21.0087772",
+   "lat": 52.2356805,
+   "lng": 21.0087772,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Taksim",
+   "type": "turkish, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2360673,21.0114512",
+   "lat": 52.2360673,
+   "lng": 21.0114512,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Alibaba Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2357416,21.0087442",
+   "lat": 52.2357416,
+   "lng": 21.0087442,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Bajka",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2357802,21.0087213",
+   "lat": 52.2357802,
+   "lng": 21.0087213,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Isfahan Bar",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2290416,21.0013389",
+   "lat": 52.2290416,
+   "lng": 21.0013389,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dubai",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2279212,21.0015892",
+   "lat": 52.2279212,
+   "lng": 21.0015892,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Big Szef",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2361071,21.0084954",
+   "lat": 52.2361071,
+   "lng": 21.0084954,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Miss Döner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2352321,21.0187311",
+   "lat": 52.2352321,
+   "lng": 21.0187311,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tehran",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2352466,21.0192838",
+   "lat": 52.2352466,
+   "lng": 21.0192838,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fenicja",
+   "type": "lebanese, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2343952,21.0031732",
+   "lat": 52.2343952,
+   "lng": 21.0031732,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aden",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2293401,21.0002892",
+   "lat": 52.2293401,
+   "lng": 21.0002892,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zachodni Brzeg",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2224384,21.0106564",
+   "lat": 52.2224384,
+   "lng": 21.0106564,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Moon Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2294723,21.0002145",
+   "lat": 52.2294723,
+   "lng": 21.0002145,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Cantina Meyhane",
+   "type": "turkish, italian, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2362958,21.0183807",
+   "lat": 52.2362958,
+   "lng": 21.0183807,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aayat Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.223517,21.020193",
+   "lat": 52.223517,
+   "lng": 21.020193,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Patila",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.2339885,21.0009732",
+   "lat": 52.2339885,
+   "lng": 21.0009732,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m32792753",
+   "nom": "Synagoga Nożyków",
+   "type": "Mosquée",
+   "adresse": "Twarda, Warszawa",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=52.2360578,21.0010751",
+   "lat": 52.2360578,
+   "lng": 21.0010751,
+   "source": "osm"
+  },
+  {
+   "id": "m329329101",
+   "nom": "Ośrodek Kultury Muzułmańskiej w Warszawie",
+   "type": "Mosquée",
+   "adresse": "Aleja Bohaterów Września, Warszawa",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=52.2152204,20.9598306",
+   "lat": 52.2152204,
+   "lng": 20.9598306,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a9051468468",
+   "nom": "Pál Domszky",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.22865,21.0112481",
+   "lat": 52.22865,
+   "lng": 21.0112481,
+   "source": "osm"
+  },
+  {
+   "id": "a8957963010",
+   "nom": "Henryk Bereza",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2309782,21.0133664",
+   "lat": 52.2309782,
+   "lng": 21.0133664,
+   "source": "osm"
+  },
+  {
+   "id": "a9051468470",
+   "nom": "Miron Białoszewski",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2288309,21.0098063",
+   "lat": 52.2288309,
+   "lng": 21.0098063,
+   "source": "osm"
+  },
+  {
+   "id": "a9995498181",
+   "nom": "Mikołaj Čiurlionis",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2276137,21.0116452",
+   "lat": 52.2276137,
+   "lng": 21.0116452,
+   "source": "osm"
+  },
+  {
+   "id": "a9051468471",
+   "nom": "Irena Kosmowska",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2282971,21.0096136",
+   "lat": 52.2282971,
+   "lng": 21.0096136,
+   "source": "osm"
+  },
+  {
+   "id": "a9995498184",
+   "nom": "Batalion Warszawski POW",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.227653,21.010986",
+   "lat": 52.227653,
+   "lng": 21.010986,
+   "source": "osm"
+  },
+  {
+   "id": "a9995498160",
+   "nom": "Komenda Główna Straży Granicznej",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2276187,21.0108205",
+   "lat": 52.2276187,
+   "lng": 21.0108205,
+   "source": "osm"
+  },
+  {
+   "id": "a8951851483",
+   "nom": "August Agboola Browne",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2319404,21.0115881",
+   "lat": 52.2319404,
+   "lng": 21.0115881,
+   "source": "osm"
+  },
+  {
+   "id": "a11047037008",
+   "nom": "Żegota",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.228518,21.0154116",
+   "lat": 52.228518,
+   "lng": 21.0154116,
+   "source": "osm"
+  },
+  {
+   "id": "a8975032905",
+   "nom": "Jan Wyżykowski",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2320074,21.0124643",
+   "lat": 52.2320074,
+   "lng": 21.0124643,
+   "source": "osm"
+  },
+  {
+   "id": "a587282867",
+   "nom": "Fotoplastikon Warszawski",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2285899,21.0086432",
+   "lat": 52.2285899,
+   "lng": 21.0086432,
+   "source": "osm"
+  },
+  {
+   "id": "a5670154539",
+   "nom": "Dworzec Wiedeński",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2293579,21.0081008",
+   "lat": 52.2293579,
+   "lng": 21.0081008,
+   "source": "osm"
+  },
+  {
+   "id": "a10162157098",
+   "nom": "Gwardia Ludowa",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2295614,21.0163455",
+   "lat": 52.2295614,
+   "lng": 21.0163455,
+   "source": "osm"
+  },
+  {
+   "id": "a6354251277",
+   "nom": "Roman Podoski",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2296393,21.0079423",
+   "lat": 52.2296393,
+   "lng": 21.0079423,
+   "source": "osm"
+  },
+  {
+   "id": "a9615042528",
+   "nom": "Szkoła Spółdzielcza im. Romualda Mielczarskiego",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2283891,21.0078281",
+   "lat": 52.2283891,
+   "lng": 21.0078281,
+   "source": "osm"
+  },
+  {
+   "id": "a9140805144",
+   "nom": "Batalion AK \"Zaremba-Piorun\"",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2267925,21.0104726",
+   "lat": 52.2267925,
+   "lng": 21.0104726,
+   "source": "osm"
+  },
+  {
+   "id": "a5250754691",
+   "nom": "Kino Palladium",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2327982,21.0117809",
+   "lat": 52.2327982,
+   "lng": 21.0117809,
+   "source": "osm"
+  },
+  {
+   "id": "a6354251276",
+   "nom": "Czesław Jaworski",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=52.2294617,21.0070616",
+   "lat": 52.2294617,
+   "lng": 21.0070616,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

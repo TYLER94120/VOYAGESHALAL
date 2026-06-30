@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/3/30/Prague_Metro_between_Luziny_and_Hurka.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 5,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,685 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Habibi Bistro",
+   "type": "arab, lebanese, oriental",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0664058,14.4191055",
+   "lat": 50.0664058,
+   "lng": 14.4191055,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "CzecHouse Grill & Rotisserie",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0933839,14.4397851",
+   "lat": 50.0933839,
+   "lng": 14.4397851,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Star’s Restaurant & Lounge",
+   "type": "international",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0673393,14.4051443",
+   "lat": 50.0673393,
+   "lng": 14.4051443,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Black Bull Kebab & Pizza",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0775327,14.4400139",
+   "lat": 50.0775327,
+   "lng": 14.4400139,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Gemüse Corner Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0741101,14.4337315",
+   "lat": 50.0741101,
+   "lng": 14.4337315,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Šéf Kemal",
+   "type": "turkish, grill",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0772331,14.4324134",
+   "lat": 50.0772331,
+   "lng": 14.4324134,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner Kebab house",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0730917,14.433064",
+   "lat": 50.0730917,
+   "lng": 14.433064,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "U Houmra",
+   "type": "american, burger, chicken, friture, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0748493,14.4440814",
+   "lat": 50.0748493,
+   "lng": 14.4440814,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "PizzaRoma",
+   "type": "kebab, chicken, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0753235,14.4313121",
+   "lat": 50.0753235,
+   "lng": 14.4313121,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mangal Restaurant",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0793328,14.4295775",
+   "lat": 50.0793328,
+   "lng": 14.4295775,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Galata Restaurant",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0814928,14.4303106",
+   "lat": 50.0814928,
+   "lng": 14.4303106,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0822253,14.4308017",
+   "lat": 50.0822253,
+   "lng": 14.4308017,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab 4 You",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0754206,14.4248714",
+   "lat": 50.0754206,
+   "lng": 14.4248714,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aspendos",
+   "type": "kebab, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0774511,14.4241049",
+   "lat": 50.0774511,
+   "lng": 14.4241049,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tasty Doner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0716785,14.451238",
+   "lat": 50.0716785,
+   "lng": 14.451238,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Ječna",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0757337,14.4228721",
+   "lat": 50.0757337,
+   "lng": 14.4228721,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pizza Kebab La Kabylie",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0698007,14.4513098",
+   "lat": 50.0698007,
+   "lng": 14.4513098,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Top Doner Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.077512,14.4539676",
+   "lat": 50.077512,
+   "lng": 14.4539676,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Domácí Shawarma",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0851576,14.4447131",
+   "lat": 50.0851576,
+   "lng": 14.4447131,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Alanya Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0774926,14.4198661",
+   "lat": 50.0774926,
+   "lng": 14.4198661,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Azad Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0845998,14.449613",
+   "lat": 50.0845998,
+   "lng": 14.449613,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Side Kebab Grill",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0768562,14.419116",
+   "lat": 50.0768562,
+   "lng": 14.419116,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner Kebab Žižkov",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0845026,14.4503445",
+   "lat": 50.0845026,
+   "lng": 14.4503445,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Royal Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0790458,14.4198007",
+   "lat": 50.0790458,
+   "lng": 14.4198007,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "El Emir",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0843218,14.4248309",
+   "lat": 50.0843218,
+   "lng": 14.4248309,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Top Shawarma",
+   "type": "shawarma, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0868813,14.4446979",
+   "lat": 50.0868813,
+   "lng": 14.4446979,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Amis",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0794173,14.4193982",
+   "lat": 50.0794173,
+   "lng": 14.4193982,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mailsi",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0836374,14.4528238",
+   "lat": 50.0836374,
+   "lng": 14.4528238,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Manni's Kitchen",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0777116,14.4184195",
+   "lat": 50.0777116,
+   "lng": 14.4184195,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mahir Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0689055,14.4548824",
+   "lat": 50.0689055,
+   "lng": 14.4548824,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Národní",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0828894,14.4212593",
+   "lat": 50.0828894,
+   "lng": 14.4212593,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Azar Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0837544,14.4539753",
+   "lat": 50.0837544,
+   "lng": 14.4539753,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sayf",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0848033,14.4225371",
+   "lat": 50.0848033,
+   "lng": 14.4225371,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sayf",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0848308,14.4224617",
+   "lat": 50.0848308,
+   "lng": 14.4224617,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Factory",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0898959,14.4351566",
+   "lat": 50.0898959,
+   "lng": 14.4351566,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Baba Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0896665,14.4320495",
+   "lat": 50.0896665,
+   "lng": 14.4320495,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Star & Pizza",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.082021,14.4172507",
+   "lat": 50.082021,
+   "lng": 14.4172507,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Šeherezád",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0663157,14.4563806",
+   "lat": 50.0663157,
+   "lng": 14.4563806,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bursa Iskender Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0872566,14.4534664",
+   "lat": 50.0872566,
+   "lng": 14.4534664,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "KM Pizza & Super Döner",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0898887,14.428201",
+   "lat": 50.0898887,
+   "lng": 14.428201,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m379512802",
+   "nom": "Matka Boží před Týnem",
+   "type": "Mosquée",
+   "adresse": "Staroměstské náměstí, Praha",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0877109,14.4227066",
+   "lat": 50.0877109,
+   "lng": 14.4227066,
+   "source": "osm"
+  },
+  {
+   "id": "m1296022796",
+   "nom": "Zrcadlová kaple",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0869464,14.4165174",
+   "lat": 50.0869464,
+   "lng": 14.4165174,
+   "source": "osm"
+  },
+  {
+   "id": "m28517451",
+   "nom": "Španělská synagoga",
+   "type": "Mosquée",
+   "adresse": "Vězeňská, Praha",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0903713,14.4208199",
+   "lat": 50.0903713,
+   "lng": 14.4208199,
+   "source": "osm"
+  },
+  {
+   "id": "m179183380",
+   "nom": "Pinkasova synagoga",
+   "type": "Mosquée",
+   "adresse": "U Staré Školy, Praha",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0892563,14.4170036",
+   "lat": 50.0892563,
+   "lng": 14.4170036,
+   "source": "osm"
+  },
+  {
+   "id": "m7645355",
+   "nom": "svatý Mikuláš",
+   "type": "Mosquée",
+   "adresse": "Malostranské náměstí, Praha",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0879758,14.4032039",
+   "lat": 50.0879758,
+   "lng": 14.4032039,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a10131912050",
+   "nom": "Na věčnou paměť!",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0753468,14.4366678",
+   "lat": 50.0753468,
+   "lng": 14.4366678,
+   "source": "osm"
+  },
+  {
+   "id": "a1186903145",
+   "nom": "Karel a Josef Čapek",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0757202,14.4364538",
+   "lat": 50.0757202,
+   "lng": 14.4364538,
+   "source": "osm"
+  },
+  {
+   "id": "a9817896083",
+   "nom": "Růžena Jelínková",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.074651,14.4389214",
+   "lat": 50.074651,
+   "lng": 14.4389214,
+   "source": "osm"
+  },
+  {
+   "id": "a9817896084",
+   "nom": "Emilie Jelínková",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0746458,14.4389382",
+   "lat": 50.0746458,
+   "lng": 14.4389382,
+   "source": "osm"
+  },
+  {
+   "id": "a9817896082",
+   "nom": "Jiřina Zorinová",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.074633,14.4389229",
+   "lat": 50.074633,
+   "lng": 14.4389229,
+   "source": "osm"
+  },
+  {
+   "id": "a12361227129",
+   "nom": "Viktor Glauber",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0765545,14.4366992",
+   "lat": 50.0765545,
+   "lng": 14.4366992,
+   "source": "osm"
+  },
+  {
+   "id": "a12361233533",
+   "nom": "Pauline Glauber",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0765548,14.4366992",
+   "lat": 50.0765548,
+   "lng": 14.4366992,
+   "source": "osm"
+  },
+  {
+   "id": "a12361383819",
+   "nom": "Anna Goltzová",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0769675,14.4367851",
+   "lat": 50.0769675,
+   "lng": 14.4367851,
+   "source": "osm"
+  },
+  {
+   "id": "a12361384504",
+   "nom": "Otto Goltz",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0769677,14.4367843",
+   "lat": 50.0769677,
+   "lng": 14.4367843,
+   "source": "osm"
+  },
+  {
+   "id": "a12361438588",
+   "nom": "Miloš Lederer",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0760918,14.4401942",
+   "lat": 50.0760918,
+   "lng": 14.4401942,
+   "source": "osm"
+  },
+  {
+   "id": "a12051851704",
+   "nom": "Jaroslav Foglar",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0752102,14.4407818",
+   "lat": 50.0752102,
+   "lng": 14.4407818,
+   "source": "osm"
+  },
+  {
+   "id": "a9817919883",
+   "nom": "Petr Štěpán Witrofský",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.077438,14.4375815",
+   "lat": 50.077438,
+   "lng": 14.4375815,
+   "source": "osm"
+  },
+  {
+   "id": "a9817919884",
+   "nom": "František Witrofský",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0775003,14.4376032",
+   "lat": 50.0775003,
+   "lng": 14.4376032,
+   "source": "osm"
+  },
+  {
+   "id": "a13485145891",
+   "nom": "Elisabeth Biedl",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.077525,14.4376044",
+   "lat": 50.077525,
+   "lng": 14.4376044,
+   "source": "osm"
+  },
+  {
+   "id": "a12361317951",
+   "nom": "Alfred Löw",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0768408,14.4352884",
+   "lat": 50.0768408,
+   "lng": 14.4352884,
+   "source": "osm"
+  },
+  {
+   "id": "a12361336457",
+   "nom": "Arnošt Löw",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0768414,14.4352887",
+   "lat": 50.0768414,
+   "lng": 14.4352887,
+   "source": "osm"
+  },
+  {
+   "id": "a13459978363",
+   "nom": "Therese Wilhelm",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0768823,14.4353144",
+   "lat": 50.0768823,
+   "lng": 14.4353144,
+   "source": "osm"
+  },
+  {
+   "id": "a12361301962",
+   "nom": "Arnošt Brunner",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0777214,14.435874",
+   "lat": 50.0777214,
+   "lng": 14.435874,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

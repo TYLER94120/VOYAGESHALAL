@@ -1,76 +1,458 @@
 {
-  "slug": "seville",
-  "nom": "Séville",
-  "pays": "Espagne",
-  "pays_slug": "espagne",
-  "continent": "Europe",
-  "region": "Andalousie",
-  "coordonnees": {
-    "lat": 37.3891,
-    "lng": -5.9845
+ "slug": "seville",
+ "nom": "Séville",
+ "pays": "Espagne",
+ "pays_slug": "espagne",
+ "continent": "Europe",
+ "region": "Andalousie",
+ "coordonnees": {
+  "lat": 37.3891,
+  "lng": -5.9845
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Capitale andalouse à l'héritage musulman éclatant, Séville abrite la Giralda (ancien minaret almohade) et l'Alcázar aux jardins mauresques.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Espagne_S%C3%A9ville_Place_d%27Espagne.JPG/1920px-Espagne_S%C3%A9ville_Place_d%27Espagne.JPG",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Espagne_S%C3%A9ville_Place_d%27Espagne.JPG/1920px-Espagne_S%C3%A9ville_Place_d%27Espagne.JPG",
+ "metaDescription": "Capitale andalouse à l'héritage musulman éclatant, Séville abrite la Giralda (ancien minaret almohade) et l'Alcázar aux jardins mauresques.",
+ "statistiques": {
+  "restaurants_halal": 38,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "El Rincón de Beirut",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.382018,-5.9910428",
+   "lat": 37.382018,
+   "lng": -5.9910428,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Capitale andalouse à l'héritage musulman éclatant, Séville abrite la Giralda (ancien minaret almohade) et l'Alcázar aux jardins mauresques.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Espagne_S%C3%A9ville_Place_d%27Espagne.JPG/1920px-Espagne_S%C3%A9ville_Place_d%27Espagne.JPG",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Espagne_S%C3%A9ville_Place_d%27Espagne.JPG/1920px-Espagne_S%C3%A9ville_Place_d%27Espagne.JPG",
-  "metaDescription": "Capitale andalouse à l'héritage musulman éclatant, Séville abrite la Giralda (ancien minaret almohade) et l'Alcázar aux jardins mauresques.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Arabesca",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3819504,-5.9909458",
+   "lat": 37.3819504,
+   "lng": -5.9909458,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "La Alcoba",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.401061,-5.9963559",
+   "lat": 37.401061,
+   "lng": -5.9963559,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Séville",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Séville",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20S%C3%A9ville%20S%C3%A9ville"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "La Giralda",
-      "categorie": "Histoire",
-      "description": "Ancien minaret almohade devenu clocher de la cathédrale.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=La%20Giralda%20S%C3%A9ville"
-    },
-    {
-      "id": "a2",
-      "nom": "Alcázar de Séville (UNESCO)",
-      "categorie": "Culture",
-      "description": "Palais royal aux décors et jardins mauresques.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Alc%C3%A1zar%20de%20S%C3%A9ville%20%28UNESCO%29%20S%C3%A9ville"
-    },
-    {
-      "id": "a3",
-      "nom": "Quartier de Santa Cruz",
-      "categorie": "Culture",
-      "description": "Ruelles de l'ancienne médina andalouse.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20Santa%20Cruz%20S%C3%A9ville"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Ozturk Kebab Fast Food",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.4064836,-5.9343823",
+   "lat": 37.4064836,
+   "lng": -5.9343823,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Fez",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3895531,-5.9852314",
+   "lat": 37.3895531,
+   "lng": -5.9852314,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Zizou",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3899925,-5.9902654",
+   "lat": 37.3899925,
+   "lng": -5.9902654,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Abbasy Doner Kebab",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3932468,-5.9913222",
+   "lat": 37.3932468,
+   "lng": -5.9913222,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Alqamar Döner Kebab",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3872836,-5.9760431",
+   "lat": 37.3872836,
+   "lng": -5.9760431,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Baraka",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3941292,-5.9917849",
+   "lat": 37.3941292,
+   "lng": -5.9917849,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Wadi",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3867752,-5.994808",
+   "lat": 37.3867752,
+   "lng": -5.994808,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Wadi",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.386765,-5.9949222",
+   "lat": 37.386765,
+   "lng": -5.9949222,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "M4 Street Food",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3977442,-5.9922503",
+   "lat": 37.3977442,
+   "lng": -5.9922503,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Medina",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3916133,-5.9992762",
+   "lat": 37.3916133,
+   "lng": -5.9992762,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "El Zapatazo",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.399392,-5.9924364",
+   "lat": 37.399392,
+   "lng": -5.9924364,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Casa del Dolma",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3817474,-5.9987759",
+   "lat": 37.3817474,
+   "lng": -5.9987759,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Don Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3933395,-6.0010686",
+   "lat": 37.3933395,
+   "lng": -6.0010686,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fast Food La Pita",
+   "type": "arab, kebab, moroccan, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.4012651,-5.9938107",
+   "lat": 37.4012651,
+   "lng": -5.9938107,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Auténtico Döner Kebap Nervión",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3771625,-5.9741145",
+   "lat": 37.3771625,
+   "lng": -5.9741145,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shoarma Bar Jerusalén",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3793463,-6.0005626",
+   "lat": 37.3793463,
+   "lng": -6.0005626,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Take Away Aliha",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3777417,-6.0007194",
+   "lat": 37.3777417,
+   "lng": -6.0007194,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Doner Kebap Auténtico",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3787469,-6.0029625",
+   "lat": 37.3787469,
+   "lng": -6.0029625,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner Kebab Bab Mansour",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3768385,-6.0018648",
+   "lat": 37.3768385,
+   "lng": -6.0018648,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Doner Kebab Autentico",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.383331,-6.0098709",
+   "lat": 37.383331,
+   "lng": -6.0098709,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fast Food Doner Kebab",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3794608,-6.0080837",
+   "lat": 37.3794608,
+   "lng": -6.0080837,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurante La Paz",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3934905,-5.9534294",
+   "lat": 37.3934905,
+   "lng": -5.9534294,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ishbiliya Doner Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3612248,-5.985921",
+   "lat": 37.3612248,
+   "lng": -5.985921,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner Kebab El Turco",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3579844,-5.9861208",
+   "lat": 37.3579844,
+   "lng": -5.9861208,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mundo",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.368183,-5.9532466",
+   "lat": 37.368183,
+   "lng": -5.9532466,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "ClickKebab Negrilla",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3759193,-5.9414472",
+   "lat": 37.3759193,
+   "lng": -5.9414472,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Auténtico Döner Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.4279833,-5.9679798",
+   "lat": 37.4279833,
+   "lng": -5.9679798,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Donner Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3691388,-6.0399515",
+   "lat": 37.3691388,
+   "lng": -6.0399515,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurante Turkey Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.4111393,-5.9212989",
+   "lat": 37.4111393,
+   "lng": -5.9212989,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3483881,-6.0390028",
+   "lat": 37.3483881,
+   "lng": -6.0390028,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Cavaleri",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3525404,-6.0470429",
+   "lat": 37.3525404,
+   "lng": -6.0470429,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Durum Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3523247,-6.0469316",
+   "lat": 37.3523247,
+   "lng": -6.0469316,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Karim Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3248935,-5.9678704",
+   "lat": 37.3248935,
+   "lng": -5.9678704,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "El Caballo Blanco",
+   "type": "coffee shop, diner, african, spanish, international, local, moroccan, arab, friture, burger, seafood, fish, tapas, tea",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3246891,-5.96856",
+   "lat": 37.3246891,
+   "lng": -5.96856,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pepe Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=37.3799848,-6.0723177",
+   "lat": 37.3799848,
+   "lng": -6.0723177,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Séville",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Séville",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20S%C3%A9ville%20S%C3%A9ville"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "La Giralda",
+   "categorie": "Histoire",
+   "description": "Ancien minaret almohade devenu clocher de la cathédrale.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=La%20Giralda%20S%C3%A9ville"
+  },
+  {
+   "id": "a2",
+   "nom": "Alcázar de Séville (UNESCO)",
+   "categorie": "Culture",
+   "description": "Palais royal aux décors et jardins mauresques.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Alc%C3%A1zar%20de%20S%C3%A9ville%20%28UNESCO%29%20S%C3%A9ville"
+  },
+  {
+   "id": "a3",
+   "nom": "Quartier de Santa Cruz",
+   "categorie": "Culture",
+   "description": "Ruelles de l'ancienne médina andalouse.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20Santa%20Cruz%20S%C3%A9ville"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

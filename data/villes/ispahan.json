@@ -1,76 +1,478 @@
 {
-  "slug": "ispahan",
-  "nom": "Ispahan",
-  "pays": "Iran",
-  "pays_slug": "iran",
-  "continent": "Asie",
-  "region": "Iran",
-  "coordonnees": {
-    "lat": 32.6539,
-    "lng": 51.666
+ "slug": "ispahan",
+ "nom": "Ispahan",
+ "pays": "Iran",
+ "pays_slug": "iran",
+ "continent": "Asie",
+ "region": "Iran",
+ "coordonnees": {
+  "lat": 32.6539,
+  "lng": 51.666
+ },
+ "codeISO": "",
+ "score_halal": 4.7,
+ "halalScore": 9.3,
+ "description": "'Ispahan, moitié du monde' : joyau de l'architecture islamique persane avec sa place Naghch-e Djahan, ses mosquées aux dômes turquoise et ses ponts safavides.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Naghshe_Jahan_Square_Isfahan_modified2.jpg/1920px-Naghshe_Jahan_Square_Isfahan_modified2.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Naghshe_Jahan_Square_Isfahan_modified2.jpg/1920px-Naghshe_Jahan_Square_Isfahan_modified2.jpg",
+ "metaDescription": "'Ispahan, moitié du monde' : joyau de l'architecture islamique persane avec sa place Naghch-e Djahan, ses mosquées aux dômes turquoise et ses ponts safavides.",
+ "statistiques": {
+  "restaurants_halal": 40,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "رستوران شمعدونی",
+   "type": "international",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6354509,51.6677526",
+   "lat": 32.6354509,
+   "lng": 51.6677526,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.7,
-  "halalScore": 9.3,
-  "description": "'Ispahan, moitié du monde' : joyau de l'architecture islamique persane avec sa place Naghch-e Djahan, ses mosquées aux dômes turquoise et ses ponts safavides.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Naghshe_Jahan_Square_Isfahan_modified2.jpg/1920px-Naghshe_Jahan_Square_Isfahan_modified2.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Naghshe_Jahan_Square_Isfahan_modified2.jpg/1920px-Naghshe_Jahan_Square_Isfahan_modified2.jpg",
-  "metaDescription": "'Ispahan, moitié du monde' : joyau de l'architecture islamique persane avec sa place Naghch-e Djahan, ses mosquées aux dômes turquoise et ses ponts safavides.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "بریان حاج محمود",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6679332,51.6839727",
+   "lat": 32.6679332,
+   "lng": 51.6839727,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "برگر تایم (فست فود)",
+   "type": "burger, sandwich, pasta, juice, salad, hot dog, diner, fries",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6520125,51.6992794",
+   "lat": 32.6520125,
+   "lng": 51.6992794,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Ispahan",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Ispahan",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Ispahan%20Ispahan"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Place Naghch-e Djahan (UNESCO)",
-      "categorie": "Culture",
-      "description": "Immense place royale bordée de mosquées et de bazars.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Place%20Naghch-e%20Djahan%20%28UNESCO%29%20Ispahan"
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée du Chah (Imam)",
-      "categorie": "Spirituel",
-      "description": "Mosquée safavide aux faïences bleues éblouissantes.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20du%20Chah%20%28Imam%29%20Ispahan"
-    },
-    {
-      "id": "a3",
-      "nom": "Pont Si-o-se Pol",
-      "categorie": "Histoire",
-      "description": "Pont aux 33 arches enjambant le Zayandeh.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Pont%20Si-o-se%20Pol%20Ispahan"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "خانه معلم شماره یک اصفهان",
+   "type": "pizza, burger, sandwich, chicken, kebab, fish, salad, dessert, pasta",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6226768,51.6426085",
+   "lat": 32.6226768,
+   "lng": 51.6426085,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "خانه معلم شماره دو اصفهان",
+   "type": "pizza, burger, sandwich, chicken, kebab, fish, salad, dessert, pasta",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.702196,51.6646256",
+   "lat": 32.702196,
+   "lng": 51.6646256,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "خانه معلم شماره دو اصفهان",
+   "type": "pizza, burger, sandwich, chicken, kebab, fish, salad, dessert, pasta",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.7022085,51.6646457",
+   "lat": 32.7022085,
+   "lng": 51.6646457,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "خانه معلم شماره سه اصفهان",
+   "type": "pizza, burger, sandwich, chicken, kebab, fish, salad, dessert, pasta",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6803062,51.7247313",
+   "lat": 32.6803062,
+   "lng": 51.7247313,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "فست فود دولپی",
+   "type": "pizza, sandwich, regional, burger, italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.7071537,51.6399995",
+   "lat": 32.7071537,
+   "lng": 51.6399995,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران هتل سیزنز",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6835241,51.7393381",
+   "lat": 32.6835241,
+   "lng": 51.7393381,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "فست فود میلانو",
+   "type": "pizza, sandwich, wings, chicken, burger, hot dog, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6505891,51.6680165",
+   "lat": 32.6505891,
+   "lng": 51.6680165,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران شهرزاد",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6487725,51.6674278",
+   "lat": 32.6487725,
+   "lng": 51.6674278,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bagh Homayoun",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6546603,51.6755225",
+   "lat": 32.6546603,
+   "lng": 51.6755225,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران فیروز",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6536124,51.6756988",
+   "lat": 32.6536124,
+   "lng": 51.6756988,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کافه رستوران خانه مینیاتور اصفهان",
+   "type": "pizza, coffee shop, italian, persian, kebab, cake",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6554238,51.6768487",
+   "lat": 32.6554238,
+   "lng": 51.6768487,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب بریانی ترخون",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6621919,51.6737462",
+   "lat": 32.6621919,
+   "lng": 51.6737462,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران نگارستان",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6513115,51.6538218",
+   "lat": 32.6513115,
+   "lng": 51.6538218,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران کباب",
+   "type": "kebab, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.655577,51.6788772",
+   "lat": 32.655577,
+   "lng": 51.6788772,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "سفره خانه سنتی نقش جهان",
+   "type": "kebab, persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6580174,51.6784519",
+   "lat": 32.6580174,
+   "lng": 51.6784519,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران سی و سه پل",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6422801,51.6675293",
+   "lat": 32.6422801,
+   "lng": 51.6675293,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "بریانی شهرزاد",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6417339,51.6673196",
+   "lat": 32.6417339,
+   "lng": 51.6673196,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب بریانی عشایر شعبه ۴",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6567714,51.6831323",
+   "lat": 32.6567714,
+   "lng": 51.6831323,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Somira",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6600307,51.683203",
+   "lat": 32.6600307,
+   "lng": 51.683203,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب سنتی بناب",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6390382,51.6539411",
+   "lat": 32.6390382,
+   "lng": 51.6539411,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب سنتی بناب آذربایجان",
+   "type": "kebab, persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6385536,51.6540018",
+   "lat": 32.6385536,
+   "lng": 51.6540018,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "اسنک آرپا",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6377779,51.6540744",
+   "lat": 32.6377779,
+   "lng": 51.6540744,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "آرابو",
+   "type": "arabo",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6365401,51.6552294",
+   "lat": 32.6365401,
+   "lng": 51.6552294,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران شاندیز آمیتیس",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6370852,51.6528834",
+   "lat": 32.6370852,
+   "lng": 51.6528834,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "مجموعه غذایی پارکلند",
+   "type": "kebab, coffee shop, regional, pizza, seafood, breakfast, cake, pasta, fish, salad, juice, tea, fine dining, wings, persian, middle eastern, soup, fries, brunch",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6392696,51.6482409",
+   "lat": 32.6392696,
+   "lng": 51.6482409,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "جوجه کباب نقش جهان",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6429906,51.6442033",
+   "lat": 32.6429906,
+   "lng": 51.6442033,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کباب خانه ساحل",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6437055,51.6436543",
+   "lat": 32.6437055,
+   "lng": 51.6436543,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "کله پزی خیام",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6431555,51.6436779",
+   "lat": 32.6431555,
+   "lng": 51.6436779,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "غذای مارنان",
+   "type": "kebab, persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6428521,51.643794",
+   "lat": 32.6428521,
+   "lng": 51.643794,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "جوجه کباب بوستان",
+   "type": "kebab, persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6397298,51.6453251",
+   "lat": 32.6397298,
+   "lng": 51.6453251,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "رستوران فودسان",
+   "type": "kebab, chicken, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6341662,51.6816339",
+   "lat": 32.6341662,
+   "lng": 51.6816339,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "فودسان خانه کباب",
+   "type": "kebab, chicken, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.634157,51.6816696",
+   "lat": 32.634157,
+   "lng": 51.6816696,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "خوانسالار",
+   "type": "kebab, fish and chips",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6300466,51.6657037",
+   "lat": 32.6300466,
+   "lng": 51.6657037,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "خورش ماست سنتی تاج الملوک",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6300945,51.6717682",
+   "lat": 32.6300945,
+   "lng": 51.6717682,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "غذای جنوب",
+   "type": "persian, kebab, pasta",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6380978,51.6429942",
+   "lat": 32.6380978,
+   "lng": 51.6429942,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "جگرکده خاطره ها",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6271389,51.671805",
+   "lat": 32.6271389,
+   "lng": 51.671805,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "آشپزی زاینده رود",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=32.6353807,51.6401757",
+   "lat": 32.6353807,
+   "lng": 51.6401757,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Ispahan",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Ispahan",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Ispahan%20Ispahan"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Place Naghch-e Djahan (UNESCO)",
+   "categorie": "Culture",
+   "description": "Immense place royale bordée de mosquées et de bazars.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Place%20Naghch-e%20Djahan%20%28UNESCO%29%20Ispahan"
+  },
+  {
+   "id": "a2",
+   "nom": "Mosquée du Chah (Imam)",
+   "categorie": "Spirituel",
+   "description": "Mosquée safavide aux faïences bleues éblouissantes.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20du%20Chah%20%28Imam%29%20Ispahan"
+  },
+  {
+   "id": "a3",
+   "nom": "Pont Si-o-se Pol",
+   "categorie": "Histoire",
+   "description": "Pont aux 33 arches enjambant le Zayandeh.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Pont%20Si-o-se%20Pol%20Ispahan"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

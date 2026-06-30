@@ -1,76 +1,98 @@
 {
-  "slug": "agra",
-  "nom": "Agra",
-  "pays": "Inde",
-  "pays_slug": "inde",
-  "continent": "Asie",
-  "region": "Inde",
-  "coordonnees": {
-    "lat": 27.1767,
-    "lng": 78.0081
+ "slug": "agra",
+ "nom": "Agra",
+ "pays": "Inde",
+ "pays_slug": "inde",
+ "continent": "Asie",
+ "region": "Inde",
+ "coordonnees": {
+  "lat": 27.1767,
+  "lng": 78.0081
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "Ville du Taj Mahal, chef-d'oeuvre de l'architecture moghole et islamique, Agra fut la capitale de l'empire moghol avec son fort rouge classé UNESCO.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Taj_Mahal-Agra_India0023.JPG/1920px-El_Taj_Mahal-Agra_India0023.JPG",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Taj_Mahal-Agra_India0023.JPG/1920px-El_Taj_Mahal-Agra_India0023.JPG",
+ "metaDescription": "Ville du Taj Mahal, chef-d'oeuvre de l'architecture moghole et islamique, Agra fut la capitale de l'empire moghol avec son fort rouge classé UNESCO.",
+ "statistiques": {
+  "restaurants_halal": 2,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Mama Franky (Time2Eat)",
+   "type": "chicken, kebab, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1606493,78.0114653",
+   "lat": 27.1606493,
+   "lng": 78.0114653,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "Ville du Taj Mahal, chef-d'oeuvre de l'architecture moghole et islamique, Agra fut la capitale de l'empire moghol avec son fort rouge classé UNESCO.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Taj_Mahal-Agra_India0023.JPG/1920px-El_Taj_Mahal-Agra_India0023.JPG",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Taj_Mahal-Agra_India0023.JPG/1920px-El_Taj_Mahal-Agra_India0023.JPG",
-  "metaDescription": "Ville du Taj Mahal, chef-d'oeuvre de l'architecture moghole et islamique, Agra fut la capitale de l'empire moghol avec son fort rouge classé UNESCO.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "The Global Savour Restaurant",
+   "type": "italian, chinese, indian, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.1639827,78.0537341",
+   "lat": 27.1639827,
+   "lng": 78.0537341,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Agra",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Agra",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Agra%20Agra"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Taj Mahal (UNESCO)",
+   "categorie": "Histoire",
+   "description": "Mausolée de marbre blanc, merveille du monde.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Taj%20Mahal%20%28UNESCO%29%20Agra"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "id": "a2",
+   "nom": "Fort d'Agra (UNESCO)",
+   "categorie": "Histoire",
+   "description": "Citadelle moghole en grès rouge.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Fort%20d%27Agra%20%28UNESCO%29%20Agra"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Agra",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Agra",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Agra%20Agra"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Taj Mahal (UNESCO)",
-      "categorie": "Histoire",
-      "description": "Mausolée de marbre blanc, merveille du monde.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Taj%20Mahal%20%28UNESCO%29%20Agra"
-    },
-    {
-      "id": "a2",
-      "nom": "Fort d'Agra (UNESCO)",
-      "categorie": "Histoire",
-      "description": "Citadelle moghole en grès rouge.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Fort%20d%27Agra%20%28UNESCO%29%20Agra"
-    },
-    {
-      "id": "a3",
-      "nom": "Itimad-ud-Daulah",
-      "categorie": "Histoire",
-      "description": "'Petit Taj', tombeau moghol finement incrusté.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Itimad-ud-Daulah%20Agra"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "id": "a3",
+   "nom": "Itimad-ud-Daulah",
+   "categorie": "Histoire",
+   "description": "'Petit Taj', tombeau moghol finement incrusté.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Itimad-ud-Daulah%20Agra"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Las_Vegas_Strip_panorama.jpg/1920px-Las_Vegas_Strip_panorama.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 6,
+  "mosquees": 1,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,301 @@
   "ville non-musulmane",
   "amérique du nord"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "The Halal Guys",
+   "type": "chicken, falafel, gyros",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.1178489,-115.175712",
+   "lat": 36.1178489,
+   "lng": -115.175712,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "The Halal Guys",
+   "type": "chicken, falafel, gyros",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.1259608,-115.189752",
+   "lat": 36.1259608,
+   "lng": -115.189752,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kabob Korner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.1689436,-115.1403593",
+   "lat": 36.1689436,
+   "lng": -115.1403593,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pro Kabob",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.1457542,-115.1918974",
+   "lat": 36.1457542,
+   "lng": -115.1918974,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Marakesh",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.1177772,-115.1546882",
+   "lat": 36.1177772,
+   "lng": -115.1546882,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hafez Persian Cuisine",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.12707,-115.192467",
+   "lat": 36.12707,
+   "lng": -115.192467,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m810514599",
+   "nom": "Graceland Wedding Chapel",
+   "type": "Mosquée",
+   "adresse": "South Las Vegas Boulevard, Las Vegas",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=36.1626635,-115.144679",
+   "lat": 36.1626635,
+   "lng": -115.144679,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a5132308421",
+   "nom": "Axehole Vegas",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1702311,-115.1405469",
+   "lat": 36.1702311,
+   "lng": -115.1405469,
+   "source": "osm"
+  },
+  {
+   "id": "a204346640",
+   "nom": "Emergency Arts",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1691099,-115.1395961",
+   "lat": 36.1691099,
+   "lng": -115.1395961,
+   "source": "osm"
+  },
+  {
+   "id": "a1426918441",
+   "nom": "Fremont East Gateway",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1691616,-115.1404945",
+   "lat": 36.1691616,
+   "lng": -115.1404945,
+   "source": "osm"
+  },
+  {
+   "id": "a206147646",
+   "nom": "Fremont Street Experience",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1704582,-115.1435014",
+   "lat": 36.1704582,
+   "lng": -115.1435014,
+   "source": "osm"
+  },
+  {
+   "id": "a206128504",
+   "nom": "The Mob Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1727972,-115.14127",
+   "lat": 36.1727972,
+   "lng": -115.14127,
+   "source": "osm"
+  },
+  {
+   "id": "a1426918440",
+   "nom": "Slotzilla Zipline",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1705669,-115.143748",
+   "lat": 36.1705669,
+   "lng": -115.143748,
+   "source": "osm"
+  },
+  {
+   "id": "a266824889",
+   "nom": "Neon Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1766859,-115.1352127",
+   "lat": 36.1766859,
+   "lng": -115.1352127,
+   "source": "osm"
+  },
+  {
+   "id": "a543178405",
+   "nom": "Neon Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1769329,-115.1352758",
+   "lat": 36.1769329,
+   "lng": -115.1352758,
+   "source": "osm"
+  },
+  {
+   "id": "a182464620",
+   "nom": "Discovery Children's Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1687157,-115.1525751",
+   "lat": 36.1687157,
+   "lng": -115.1525751,
+   "source": "osm"
+  },
+  {
+   "id": "a925732138",
+   "nom": "Las Vegas Natural History Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1799391,-115.1338241",
+   "lat": 36.1799391,
+   "lng": -115.1338241,
+   "source": "osm"
+  },
+  {
+   "id": "a806953202",
+   "nom": "Zak Bagan's The Haunted Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1583815,-115.1456381",
+   "lat": 36.1583815,
+   "lng": -115.1456381,
+   "source": "osm"
+  },
+  {
+   "id": "a864026044",
+   "nom": "Burlesque Hall of Fame",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.160158,-115.1528682",
+   "lat": 36.160158,
+   "lng": -115.1528682,
+   "source": "osm"
+  },
+  {
+   "id": "a208084753",
+   "nom": "The Arts Factory",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1592084,-115.1532055",
+   "lat": 36.1592084,
+   "lng": -115.1532055,
+   "source": "osm"
+  },
+  {
+   "id": "a1941815811",
+   "nom": "GYPSY DEN VINTAGE",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1558622,-115.1514616",
+   "lat": 36.1558622,
+   "lng": -115.1514616,
+   "source": "osm"
+  },
+  {
+   "id": "a751365152",
+   "nom": "Las Vegas mural",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.155892,-115.1542724",
+   "lat": 36.155892,
+   "lng": -115.1542724,
+   "source": "osm"
+  },
+  {
+   "id": "a1941765088",
+   "nom": "Swm n Pool",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1551345,-115.1540151",
+   "lat": 36.1551345,
+   "lng": -115.1540151,
+   "source": "osm"
+  },
+  {
+   "id": "a1941763853",
+   "nom": "Classic Vdubs",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.154944,-115.1540151",
+   "lat": 36.154944,
+   "lng": -115.1540151,
+   "source": "osm"
+  },
+  {
+   "id": "a1941739670",
+   "nom": "Salon De Belleza",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.1526396,-115.1541438",
+   "lat": 36.1526396,
+   "lng": -115.1541438,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

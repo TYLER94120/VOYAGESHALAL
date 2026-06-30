@@ -1,76 +1,168 @@
 {
-  "slug": "damas",
-  "nom": "Damas",
-  "pays": "Syrie",
-  "pays_slug": "syrie",
-  "continent": "Asie",
-  "region": "Moyen-Orient",
-  "coordonnees": {
-    "lat": 33.5138,
-    "lng": 36.2765
+ "slug": "damas",
+ "nom": "Damas",
+ "pays": "Syrie",
+ "pays_slug": "syrie",
+ "continent": "Asie",
+ "region": "Moyen-Orient",
+ "coordonnees": {
+  "lat": 33.5138,
+  "lng": 36.2765
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "L'une des plus anciennes capitales habitées au monde, Damas abrite la grande Mosquée des Omeyyades et une médina millénaire au coeur de l'histoire islamique.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Damascus%2C_Syria%2C_The_Umayyad_Mosque%2C_The_Courtyard%2C_Islamic_Art.jpg/1920px-Damascus%2C_Syria%2C_The_Umayyad_Mosque%2C_The_Courtyard%2C_Islamic_Art.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Damascus%2C_Syria%2C_The_Umayyad_Mosque%2C_The_Courtyard%2C_Islamic_Art.jpg/1920px-Damascus%2C_Syria%2C_The_Umayyad_Mosque%2C_The_Courtyard%2C_Islamic_Art.jpg",
+ "metaDescription": "L'une des plus anciennes capitales habitées au monde, Damas abrite la grande Mosquée des Omeyyades et une médina millénaire au coeur de l'histoire islamique.",
+ "statistiques": {
+  "restaurants_halal": 9,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "مأكولات الشروق",
+   "type": "رأس خاروف, مقادم, نخاعات, نيفا الراس",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.4860037,36.2857893",
+   "lat": 33.4860037,
+   "lng": 36.2857893,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.0,
-  "description": "L'une des plus anciennes capitales habitées au monde, Damas abrite la grande Mosquée des Omeyyades et une médina millénaire au coeur de l'histoire islamique.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Damascus%2C_Syria%2C_The_Umayyad_Mosque%2C_The_Courtyard%2C_Islamic_Art.jpg/1920px-Damascus%2C_Syria%2C_The_Umayyad_Mosque%2C_The_Courtyard%2C_Islamic_Art.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Damascus%2C_Syria%2C_The_Umayyad_Mosque%2C_The_Courtyard%2C_Islamic_Art.jpg/1920px-Damascus%2C_Syria%2C_The_Umayyad_Mosque%2C_The_Courtyard%2C_Islamic_Art.jpg",
-  "metaDescription": "L'une des plus anciennes capitales habitées au monde, Damas abrite la grande Mosquée des Omeyyades et une médina millénaire au coeur de l'histoire islamique.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "جمّيزة",
+   "type": "arab, barbecue, breakfast, chicken, coffee shop, diner, oriental, grill, ice cream, kebab, lebanese, sandwich, tea",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.5226423,36.31279",
+   "lat": 33.5226423,
+   "lng": 36.31279,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "أمية",
+   "type": "lebanese, arab, regional, local, oriental",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.5094513,36.3167445",
+   "lat": 33.5094513,
+   "lng": 36.3167445,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Damas",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Damas",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Damas%20Damas"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée des Omeyyades",
-      "categorie": "Spirituel",
-      "description": "Chef-d'oeuvre du VIIIe siècle, l'une des plus anciennes mosquées du monde.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20des%20Omeyyades%20Damas"
-    },
-    {
-      "id": "a2",
-      "nom": "Vieille ville de Damas (UNESCO)",
-      "categorie": "Culture",
-      "description": "Souk Al-Hamidiyya, ruelles antiques et khans historiques.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20de%20Damas%20%28UNESCO%29%20Damas"
-    },
-    {
-      "id": "a3",
-      "nom": "Mausolée de Saladin",
-      "categorie": "Histoire",
-      "description": "Tombeau du célèbre sultan, près de la grande mosquée.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e%20de%20Saladin%20Damas"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "مطعم جورميت",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.4916348,36.2448329",
+   "lat": 33.4916348,
+   "lng": 36.2448329,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "مزاج",
+   "type": "american, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.5398477,36.3057195",
+   "lat": 33.5398477,
+   "lng": 36.3057195,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "كزاميزا",
+   "type": "shawarma, fried chicken, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.4735366,36.3030668",
+   "lat": 33.4735366,
+   "lng": 36.3030668,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "الشاطر حسن",
+   "type": "shawarma, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.4735176,36.3031478",
+   "lat": 33.4735176,
+   "lng": 36.3031478,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "فروج كرم",
+   "type": "chicken, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.473423,36.3031535",
+   "lat": 33.473423,
+   "lng": 36.3031535,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "قهونجي كافيه",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.5402693,36.2014474",
+   "lat": 33.5402693,
+   "lng": 36.2014474,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Damas",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Damas",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Damas%20Damas"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée des Omeyyades",
+   "categorie": "Spirituel",
+   "description": "Chef-d'oeuvre du VIIIe siècle, l'une des plus anciennes mosquées du monde.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20des%20Omeyyades%20Damas"
+  },
+  {
+   "id": "a2",
+   "nom": "Vieille ville de Damas (UNESCO)",
+   "categorie": "Culture",
+   "description": "Souk Al-Hamidiyya, ruelles antiques et khans historiques.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20de%20Damas%20%28UNESCO%29%20Damas"
+  },
+  {
+   "id": "a3",
+   "nom": "Mausolée de Saladin",
+   "categorie": "Histoire",
+   "description": "Tombeau du célèbre sultan, près de la grande mosquée.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e%20de%20Saladin%20Damas"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -19,7 +19,7 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Oia%2C_Santorini_-_David_Spender.jpg/1920px-Oia%2C_Santorini_-_David_Spender.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
+  "restaurants_halal": 1,
   "mosquees": 0,
   "hotels": 0
  },
@@ -33,10 +33,239 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Gyros Place",
+   "type": "burger, kebab, friture, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=36.3562747,25.4743974",
+   "lat": 36.3562747,
+   "lng": 25.4743974,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
  "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "activites": [
+  {
+   "id": "a4002146536",
+   "nom": "Wine Museum Koutsoyannopoulos - Winery",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3970006,25.4598575",
+   "lat": 36.3970006,
+   "lng": 25.4598575,
+   "source": "osm"
+  },
+  {
+   "id": "a6734653385",
+   "nom": "Winery and Art Space",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3862525,25.4596475",
+   "lat": 36.3862525,
+   "lng": 25.4596475,
+   "source": "osm"
+  },
+  {
+   "id": "a4493984792",
+   "nom": "Donkey Brewery",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3841895,25.4646503",
+   "lat": 36.3841895,
+   "lng": 25.4646503,
+   "source": "osm"
+  },
+  {
+   "id": "a4493984990",
+   "nom": "Hiking trails (2)",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3816653,25.4653889",
+   "lat": 36.3816653,
+   "lng": 25.4653889,
+   "source": "osm"
+  },
+  {
+   "id": "a9979217871",
+   "nom": "Καστέλι Πύργου Καλλίστης",
+   "categorie": "castle",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3834395,25.4510497",
+   "lat": 36.3834395,
+   "lng": 25.4510497,
+   "source": "osm"
+  },
+  {
+   "id": "a432099901",
+   "nom": "Pyrgos Venetian Castle",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3834832,25.4509266",
+   "lat": 36.3834832,
+   "lng": 25.4509266,
+   "source": "osm"
+  },
+  {
+   "id": "a10111516665",
+   "nom": "Asmis Kolaitou",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.4036773,25.4366916",
+   "lat": 36.4036773,
+   "lng": 25.4366916,
+   "source": "osm"
+  },
+  {
+   "id": "a13665316901",
+   "nom": "Adolf, the cat",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3772951,25.4860506",
+   "lat": 36.3772951,
+   "lng": 25.4860506,
+   "source": "osm"
+  },
+  {
+   "id": "a6709971795",
+   "nom": "Venetsanos winery",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3826643,25.4316313",
+   "lat": 36.3826643,
+   "lng": 25.4316313,
+   "source": "osm"
+  },
+  {
+   "id": "a13620648001",
+   "nom": "Seis Campanas de Megalochori",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3773845,25.4322141",
+   "lat": 36.3773845,
+   "lng": 25.4322141,
+   "source": "osm"
+  },
+  {
+   "id": "a9900839617",
+   "nom": "Heroon  of Artimedoros",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3668176,25.4754308",
+   "lat": 36.3668176,
+   "lng": 25.4754308,
+   "source": "osm"
+  },
+  {
+   "id": "a9900839717",
+   "nom": "Sanctuary of Arphodite",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3667011,25.4752455",
+   "lat": 36.3667011,
+   "lng": 25.4752455,
+   "source": "osm"
+  },
+  {
+   "id": "a6734653185",
+   "nom": "Cave museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.376438,25.4322211",
+   "lat": 36.376438,
+   "lng": 25.4322211,
+   "source": "osm"
+  },
+  {
+   "id": "a5779334154",
+   "nom": "ΣΥΜΠΟΣΙΟΝ",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3763661,25.431065",
+   "lat": 36.3763661,
+   "lng": 25.431065,
+   "source": "osm"
+  },
+  {
+   "id": "a10911862376",
+   "nom": "Diapla Viewpoint",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3643515,25.4507826",
+   "lat": 36.3643515,
+   "lng": 25.4507826,
+   "source": "osm"
+  },
+  {
+   "id": "a9632352503",
+   "nom": "Ιερό Αρτεμιδώρου",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3659271,25.4775792",
+   "lat": 36.3659271,
+   "lng": 25.4775792,
+   "source": "osm"
+  },
+  {
+   "id": "a8780901418",
+   "nom": "Xylo Wood Design Santorini",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3750381,25.4313401",
+   "lat": 36.3750381,
+   "lng": 25.4313401,
+   "source": "osm"
+  },
+  {
+   "id": "a9900839817",
+   "nom": "Ptolemaic Garrison Post",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=36.3647787,25.4772304",
+   "lat": 36.3647787,
+   "lng": 25.4772304,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

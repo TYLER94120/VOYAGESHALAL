@@ -1,76 +1,478 @@
 {
-  "slug": "birmingham",
-  "nom": "Birmingham",
-  "pays": "Royaume-Uni",
-  "pays_slug": "royaume-uni",
-  "continent": "Europe",
-  "region": "Royaume-Uni",
-  "coordonnees": {
-    "lat": 52.4862,
-    "lng": -1.8904
+ "slug": "birmingham",
+ "nom": "Birmingham",
+ "pays": "Royaume-Uni",
+ "pays_slug": "royaume-uni",
+ "continent": "Europe",
+ "region": "Royaume-Uni",
+ "coordonnees": {
+  "lat": 52.4862,
+  "lng": -1.8904
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Deuxième ville du Royaume-Uni avec l'une des plus grandes communautés musulmanes d'Europe, Birmingham abrite la grande mosquée centrale et le Balti Triangle.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Birmingham-Skyline-from-Edgbaston-crop.jpg/1920px-Birmingham-Skyline-from-Edgbaston-crop.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Birmingham-Skyline-from-Edgbaston-crop.jpg/1920px-Birmingham-Skyline-from-Edgbaston-crop.jpg",
+ "metaDescription": "Deuxième ville du Royaume-Uni avec l'une des plus grandes communautés musulmanes d'Europe, Birmingham abrite la grande mosquée centrale et le Balti Triangle.",
+ "statistiques": {
+  "restaurants_halal": 40,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4840605,-1.8929378",
+   "lat": 52.4840605,
+   "lng": -1.8929378,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Deuxième ville du Royaume-Uni avec l'une des plus grandes communautés musulmanes d'Europe, Birmingham abrite la grande mosquée centrale et le Balti Triangle.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Birmingham-Skyline-from-Edgbaston-crop.jpg/1920px-Birmingham-Skyline-from-Edgbaston-crop.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Birmingham-Skyline-from-Edgbaston-crop.jpg/1920px-Birmingham-Skyline-from-Edgbaston-crop.jpg",
-  "metaDescription": "Deuxième ville du Royaume-Uni avec l'une des plus grandes communautés musulmanes d'Europe, Birmingham abrite la grande mosquée centrale et le Balti Triangle.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4828135,-1.8939674",
+   "lat": 52.4828135,
+   "lng": -1.8939674,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Al Arabi Grill House Express",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4803154,-1.8948245",
+   "lat": 52.4803154,
+   "lng": -1.8948245,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Birmingham",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Birmingham",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Birmingham%20Birmingham"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Birmingham Central Mosque",
-      "categorie": "Spirituel",
-      "description": "Grande mosquée historique de la ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Birmingham%20Central%20Mosque%20Birmingham"
-    },
-    {
-      "id": "a2",
-      "nom": "Balti Triangle",
-      "categorie": "Culture",
-      "description": "Quartier réputé pour sa cuisine halal balti.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Balti%20Triangle%20Birmingham"
-    },
-    {
-      "id": "a3",
-      "nom": "Bullring & marchés",
-      "categorie": "Shopping",
-      "description": "Grand centre commercial et marché historique.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Bullring%20%26%20march%C3%A9s%20Birmingham"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Popeyes",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4794717,-1.9012991",
+   "lat": 52.4794717,
+   "lng": -1.9012991,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Thai Express",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4773704,-1.8978873",
+   "lat": 52.4773704,
+   "lng": -1.8978873,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4890675,-1.872062",
+   "lat": 52.4890675,
+   "lng": -1.872062,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4751314,-1.8981853",
+   "lat": 52.4751314,
+   "lng": -1.8981853,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4760434,-1.9129022",
+   "lat": 52.4760434,
+   "lng": -1.9129022,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4729126,-1.8661571",
+   "lat": 52.4729126,
+   "lng": -1.8661571,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4650414,-1.8919885",
+   "lat": 52.4650414,
+   "lng": -1.8919885,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4891458,-1.8513421",
+   "lat": 52.4891458,
+   "lng": -1.8513421,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Taste of Pakistan",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4593447,-1.8764886",
+   "lat": 52.4593447,
+   "lng": -1.8764886,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Haute Dolci",
+   "type": "dessert",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5048634,-1.8548963",
+   "lat": 52.5048634,
+   "lng": -1.8548963,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Subway",
+   "type": "sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4720855,-1.9319095",
+   "lat": 52.4720855,
+   "lng": -1.9319095,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Colbeh Persian Kitchen",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4721426,-1.9327443",
+   "lat": 52.4721426,
+   "lng": -1.9327443,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4560885,-1.8767445",
+   "lat": 52.4560885,
+   "lng": -1.8767445,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5035876,-1.9366483",
+   "lat": 52.5035876,
+   "lng": -1.9366483,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Roti Mahl",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4527395,-1.8786099",
+   "lat": 52.4527395,
+   "lng": -1.8786099,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4799473,-1.8340216",
+   "lat": 52.4799473,
+   "lng": -1.8340216,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4936555,-1.8332199",
+   "lat": 52.4936555,
+   "lng": -1.8332199,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Lal Qela",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4882646,-1.8313425",
+   "lat": 52.4882646,
+   "lng": -1.8313425,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Boo.",
+   "type": "burger, american",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4467108,-1.888382",
+   "lat": 52.4467108,
+   "lng": -1.888382,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4461941,-1.8595812",
+   "lat": 52.4461941,
+   "lng": -1.8595812,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Aphamia",
+   "type": "middle eastern, falafel, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5218882,-1.8431736",
+   "lat": 52.5218882,
+   "lng": -1.8431736,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4461433,-1.9324096",
+   "lat": 52.4461433,
+   "lng": -1.9324096,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chicking Selly Oak",
+   "type": "chicken, wings, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4454496,-1.9334942",
+   "lat": 52.4454496,
+   "lng": -1.9334942,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Hagley Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4725672,-1.967812",
+   "lat": 52.4725672,
+   "lng": -1.967812,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Karachi Kebab And Pizza",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4767577,-1.9696337",
+   "lat": 52.4767577,
+   "lng": -1.9696337,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4740195,-1.9687791",
+   "lat": 52.4740195,
+   "lng": -1.9687791,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Burger & Sauce",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4744272,-1.9693651",
+   "lat": 52.4744272,
+   "lng": -1.9693651,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4365289,-1.8927883",
+   "lat": 52.4365289,
+   "lng": -1.8927883,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5404021,-1.8703996",
+   "lat": 52.5404021,
+   "lng": -1.8703996,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Taste of Chennai",
+   "type": "indian, south indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4384204,-1.9400682",
+   "lat": 52.4384204,
+   "lng": -1.9400682,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.4237349,-1.9217248",
+   "lat": 52.4237349,
+   "lng": -1.9217248,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "New Oceana Fish Bar",
+   "type": "fish and chips",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5024191,-2.0029931",
+   "lat": 52.5024191,
+   "lng": -2.0029931,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dixy Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.518371,-1.9942654",
+   "lat": 52.518371,
+   "lng": -1.9942654,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Spice of Asia",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5574996,-1.8922719",
+   "lat": 52.5574996,
+   "lng": -1.8922719,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "M.A.K. Halal",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5192304,-1.9945264",
+   "lat": 52.5192304,
+   "lng": -1.9945264,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Jerk & Grill / Cookielicious",
+   "type": "burger, chicken, steak house, dessert",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5191999,-1.9955258",
+   "lat": 52.5191999,
+   "lng": -1.9955258,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chicking Westbromwich",
+   "type": "wings, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=52.5164049,-1.9978215",
+   "lat": 52.5164049,
+   "lng": -1.9978215,
+   "halalConfidence": "yes",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Birmingham",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Birmingham",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Birmingham%20Birmingham"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Birmingham Central Mosque",
+   "categorie": "Spirituel",
+   "description": "Grande mosquée historique de la ville.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Birmingham%20Central%20Mosque%20Birmingham"
+  },
+  {
+   "id": "a2",
+   "nom": "Balti Triangle",
+   "categorie": "Culture",
+   "description": "Quartier réputé pour sa cuisine halal balti.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Balti%20Triangle%20Birmingham"
+  },
+  {
+   "id": "a3",
+   "nom": "Bullring & marchés",
+   "categorie": "Shopping",
+   "description": "Grand centre commercial et marché historique.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Bullring%20%26%20march%C3%A9s%20Birmingham"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

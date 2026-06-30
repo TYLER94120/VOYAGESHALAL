@@ -20,7 +20,7 @@
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
   "restaurants_halal": 0,
-  "mosquees": 0,
+  "mosquees": 1,
   "hotels": 0
  },
  "infoPratique": {
@@ -35,8 +35,34 @@
  ],
  "restaurants": [],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m1104566297",
+   "nom": "Sunni Jamiya Masjid",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=15.25668,74.1118817",
+   "lat": 15.25668,
+   "lng": 74.1118817,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a4319289847",
+   "nom": "Kuskem Waterfall",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=15.2992143,74.1240471",
+   "lat": 15.2992143,
+   "lng": 74.1240471,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

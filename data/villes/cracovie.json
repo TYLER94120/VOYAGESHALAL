@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Krakow_Rynek_Glowny_panorama_2.jpg/1600px-Krakow_Rynek_Glowny_panorama_2.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 10,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,740 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Kebab Hamis",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.068382,19.9135394",
+   "lat": 50.068382,
+   "lng": 19.9135394,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Baba",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0737076,19.9114393",
+   "lat": 50.0737076,
+   "lng": 19.9114393,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Fast Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0645806,19.9449741",
+   "lat": 50.0645806,
+   "lng": 19.9449741,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ciro",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0641232,19.9420779",
+   "lat": 50.0641232,
+   "lng": 19.9420779,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Beirut Shawarma Kebab & Falafel",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0644284,19.9411693",
+   "lat": 50.0644284,
+   "lng": 19.9411693,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Efendi",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0673452,19.9446193",
+   "lat": 50.0673452,
+   "lng": 19.9446193,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Berlin Döner Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0672802,19.9465471",
+   "lat": 50.0672802,
+   "lng": 19.9465471,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0620384,19.9422394",
+   "lat": 50.0620384,
+   "lng": 19.9422394,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Królewski",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0635389,19.940227",
+   "lat": 50.0635389,
+   "lng": 19.940227,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Efes",
+   "type": "kebab, grill, salad",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0663549,19.9401631",
+   "lat": 50.0663549,
+   "lng": 19.9401631,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sevi Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0681883,19.9463164",
+   "lat": 50.0681883,
+   "lng": 19.9463164,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arabia",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0665404,19.9396264",
+   "lat": 50.0665404,
+   "lng": 19.9396264,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "U Szwagra",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0671798,19.9499875",
+   "lat": 50.0671798,
+   "lng": 19.9499875,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Butcher grill",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0625977,19.9394993",
+   "lat": 50.0625977,
+   "lng": 19.9394993,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Soltan Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0697226,19.9434616",
+   "lat": 50.0697226,
+   "lng": 19.9434616,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mersin Tantuni",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0637615,19.9370824",
+   "lat": 50.0637615,
+   "lng": 19.9370824,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kraft Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0698876,19.9435052",
+   "lat": 50.0698876,
+   "lng": 19.9435052,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Baba",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0703141,19.943511",
+   "lat": 50.0703141,
+   "lng": 19.943511,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Baba",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0625372,19.9351647",
+   "lat": 50.0625372,
+   "lng": 19.9351647,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mazaya Falafel",
+   "type": "turkish, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0580012,19.9439519",
+   "lat": 50.0580012,
+   "lng": 19.9439519,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Akropolis",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0597321,19.9376383",
+   "lat": 50.0597321,
+   "lng": 19.9376383,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab King",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0627603,19.9346149",
+   "lat": 50.0627603,
+   "lng": 19.9346149,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Faraon",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0628678,19.934341",
+   "lat": 50.0628678,
+   "lng": 19.934341,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawerma",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0610882,19.9351056",
+   "lat": 50.0610882,
+   "lng": 19.9351056,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ugur Döner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0603049,19.934655",
+   "lat": 50.0603049,
+   "lng": 19.934655,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Faraon",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0579177,19.9379059",
+   "lat": 50.0579177,
+   "lng": 19.9379059,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Baba",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0634251,19.9317239",
+   "lat": 50.0634251,
+   "lng": 19.9317239,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zaytouna",
+   "type": "syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0634278,19.9313269",
+   "lat": 50.0634278,
+   "lng": 19.9313269,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Baba",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0651115,19.9310572",
+   "lat": 50.0651115,
+   "lng": 19.9310572,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zaytouna",
+   "type": "syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0553792,19.9467711",
+   "lat": 50.0553792,
+   "lng": 19.9467711,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Türk Döner Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0672335,19.9597855",
+   "lat": 50.0672335,
+   "lng": 19.9597855,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Premium Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.072814,19.9362157",
+   "lat": 50.072814,
+   "lng": 19.9362157,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0727269,19.9356325",
+   "lat": 50.0727269,
+   "lng": 19.9356325,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mazaya",
+   "type": "arabic",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0633953,19.9289802",
+   "lat": 50.0633953,
+   "lng": 19.9289802,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Asia",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0736583,19.9360886",
+   "lat": 50.0736583,
+   "lng": 19.9360886,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dian Kebab & Falafel",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0669243,19.9288071",
+   "lat": 50.0669243,
+   "lng": 19.9288071,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Polenez",
+   "type": "turkish, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0640331,19.9278484",
+   "lat": 50.0640331,
+   "lng": 19.9278484,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Doon Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0580004,19.93122",
+   "lat": 50.0580004,
+   "lng": 19.93122,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Viral",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0675351,19.9280875",
+   "lat": 50.0675351,
+   "lng": 19.9280875,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nogor Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=50.0630919,19.9274828",
+   "lat": 50.0630919,
+   "lng": 19.9274828,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m26195267",
+   "nom": "Bazylika Wniebowzięcia Najświętszej Maryi Panny",
+   "type": "Mosquée",
+   "adresse": "Plac Mariacki, Kraków",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0616572,19.93945",
+   "lat": 50.0616572,
+   "lng": 19.93945,
+   "source": "osm"
+  },
+  {
+   "id": "m138365337",
+   "nom": "Kościół pw. Świętej Barbary",
+   "type": "Mosquée",
+   "adresse": "Mały Rynek, Kraków",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0613121,19.9398407",
+   "lat": 50.0613121,
+   "lng": 19.9398407,
+   "source": "osm"
+  },
+  {
+   "id": "m29271113",
+   "nom": "Kościół pw. Świętego Wojciecha Biskupa i Męczennika",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.060888,19.9377429",
+   "lat": 50.060888,
+   "lng": 19.9377429,
+   "source": "osm"
+  },
+  {
+   "id": "m5537610769",
+   "nom": "I Centrum Muzułmańskie",
+   "type": "Mosquée",
+   "adresse": "Jana Sobieskiego, Kraków",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0681994,19.9310387",
+   "lat": 50.0681994,
+   "lng": 19.9310387,
+   "source": "osm"
+  },
+  {
+   "id": "m85151350",
+   "nom": "Kościół pw. Świętych Stanisława i Wacława",
+   "type": "Mosquée",
+   "adresse": "Kraków",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0546439,19.9354796",
+   "lat": 50.0546439,
+   "lng": 19.9354796,
+   "source": "osm"
+  },
+  {
+   "id": "m33291029",
+   "nom": "Kościół pw. Bożego Ciała",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0497673,19.9449767",
+   "lat": 50.0497673,
+   "lng": 19.9449767,
+   "source": "osm"
+  },
+  {
+   "id": "m231922142",
+   "nom": "Kościół pw. Najświętszego Salwatora",
+   "type": "Mosquée",
+   "adresse": "Świętej Bronisławy, Kraków",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0534265,19.9123321",
+   "lat": 50.0534265,
+   "lng": 19.9123321,
+   "source": "osm"
+  },
+  {
+   "id": "m231919306",
+   "nom": "Kaplica Świętej Małgorzaty i Świętej Judyty",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0525566,19.9126736",
+   "lat": 50.0525566,
+   "lng": 19.9126736,
+   "source": "osm"
+  },
+  {
+   "id": "m231922023",
+   "nom": "Kaplica pw. Błogosławionej Bronisławy",
+   "type": "Mosquée",
+   "adresse": "Aleja Jerzego Waszyngtona, Kraków",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0548884,19.892714",
+   "lat": 50.0548884,
+   "lng": 19.892714,
+   "source": "osm"
+  },
+  {
+   "id": "m231216865",
+   "nom": "II Centrum Muzułmańskie",
+   "type": "Mosquée",
+   "adresse": "Groszkowa, Kraków",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=50.0889355,19.8837178",
+   "lat": 50.0889355,
+   "lng": 19.8837178,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a273536893",
+   "nom": "Florian Straszewski",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0643367,19.9443353",
+   "lat": 50.0643367,
+   "lng": 19.9443353,
+   "source": "osm"
+  },
+  {
+   "id": "a12381936480",
+   "nom": "Legendy Krakowa",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0654291,19.9448428",
+   "lat": 50.0654291,
+   "lng": 19.9448428,
+   "source": "osm"
+  },
+  {
+   "id": "a279024104",
+   "nom": "Zajścia Krakowskie 1936 r.",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0648716,19.9433911",
+   "lat": 50.0648716,
+   "lng": 19.9433911,
+   "source": "osm"
+  },
+  {
+   "id": "a11330042315",
+   "nom": "Skwer Andrzeja Wajdy",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0646449,19.9431982",
+   "lat": 50.0646449,
+   "lng": 19.9431982,
+   "source": "osm"
+  },
+  {
+   "id": "a5601369239",
+   "nom": "Ryszard Kukliński",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0652205,19.9466322",
+   "lat": 50.0652205,
+   "lng": 19.9466322,
+   "source": "osm"
+  },
+  {
+   "id": "a11718099151",
+   "nom": "Wisława Szymborska",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0640447,19.9467344",
+   "lat": 50.0640447,
+   "lng": 19.9467344,
+   "source": "osm"
+  },
+  {
+   "id": "a277498336",
+   "nom": "Michał Bałucki",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0633678,19.9440087",
+   "lat": 50.0633678,
+   "lng": 19.9440087,
+   "source": "osm"
+  },
+  {
+   "id": "a51790158",
+   "nom": "Zabytkowy Dworzec Główny",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0655079,19.9471442",
+   "lat": 50.0655079,
+   "lng": 19.9471442,
+   "source": "osm"
+  },
+  {
+   "id": "a3083014623",
+   "nom": "Aleksander Fredro",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0641418,19.9424572",
+   "lat": 50.0641418,
+   "lng": 19.9424572,
+   "source": "osm"
+  },
+  {
+   "id": "a200814803",
+   "nom": "Baszta Pasamoników",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0647421,19.9422443",
+   "lat": 50.0647421,
+   "lng": 19.9422443,
+   "source": "osm"
+  },
+  {
+   "id": "a11360712316",
+   "nom": "Mury Obronne",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.064753,19.9422405",
+   "lat": 50.064753,
+   "lng": 19.9422405,
+   "source": "osm"
+  },
+  {
+   "id": "a7293805858",
+   "nom": "Skwer Zbigniewa Wodeckiego",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0628888,19.9444579",
+   "lat": 50.0628888,
+   "lng": 19.9444579,
+   "source": "osm"
+  },
+  {
+   "id": "a1013618099",
+   "nom": "Floriańska",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0651968,19.9414982",
+   "lat": 50.0651968,
+   "lng": 19.9414982,
+   "source": "osm"
+  },
+  {
+   "id": "a359169341",
+   "nom": "Floriańska",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0650456,19.9414328",
+   "lat": 50.0650456,
+   "lng": 19.9414328,
+   "source": "osm"
+  },
+  {
+   "id": "a234974342",
+   "nom": "Floriańska",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0648564,19.941353",
+   "lat": 50.0648564,
+   "lng": 19.941353,
+   "source": "osm"
+  },
+  {
+   "id": "a39357538",
+   "nom": "Brama Floriańska",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0648565,19.941353",
+   "lat": 50.0648565,
+   "lng": 19.941353,
+   "source": "osm"
+  },
+  {
+   "id": "a274088761",
+   "nom": "Grób Nieznanego Żołnierza",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0662689,19.9420508",
+   "lat": 50.0662689,
+   "lng": 19.9420508,
+   "source": "osm"
+  },
+  {
+   "id": "a274088760",
+   "nom": "Pomnik Grunwaldzki",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=50.0664155,19.942144",
+   "lat": 50.0664155,
+   "lng": 19.942144,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

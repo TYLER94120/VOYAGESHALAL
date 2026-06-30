@@ -11,7 +11,7 @@
  },
  "codeISO": "SE",
  "score_halal": 3.5,
- "halalScore": 7.0,
+ "halalScore": 7,
  "villeNonMusulmane": true,
  "description": "Capitale bâtie sur l'eau. Importante communauté musulmane et restaurants halal, notamment à Rinkeby et au centre.",
  "metaDescription": "Capitale bâtie sur l'eau. Importante communauté musulmane et restaurants halal, notamment à Rinkeby et au centre.",
@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Stockholm_photochrom2.jpg/1920px-Stockholm_photochrom2.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 5,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,685 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Scandwich",
+   "type": "sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3331956,18.0660589",
+   "lat": 59.3331956,
+   "lng": 18.0660589,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Habibi Bar",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3125775,18.0811146",
+   "lat": 59.3125775,
+   "lng": 18.0811146,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Fayana Kitchen",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3293298,18.0031482",
+   "lat": 59.3293298,
+   "lng": 18.0031482,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Jerusalem",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3251534,18.0688329",
+   "lat": 59.3251534,
+   "lng": 18.0688329,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lebanon Meza Lounge",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3330846,18.0741946",
+   "lat": 59.3330846,
+   "lng": 18.0741946,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Oummi",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3239422,18.0685606",
+   "lat": 59.3239422,
+   "lng": 18.0685606,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lilla Karachi",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3237149,18.0686151",
+   "lat": 59.3237149,
+   "lng": 18.0686151,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nivå",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3236611,18.0690285",
+   "lat": 59.3236611,
+   "lng": 18.0690285,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ankara Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3344754,18.0626454",
+   "lat": 59.3344754,
+   "lng": 18.0626454,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hisar Fastfood",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3345149,18.0626022",
+   "lat": 59.3345149,
+   "lng": 18.0626022,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Izmir Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3345892,18.0624533",
+   "lat": 59.3345892,
+   "lng": 18.0624533,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3342834,18.0614926",
+   "lat": 59.3342834,
+   "lng": 18.0614926,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Maestro Kebab",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3342424,18.0579239",
+   "lat": 59.3342424,
+   "lng": 18.0579239,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tabbouli",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3366699,18.0676331",
+   "lat": 59.3366699,
+   "lng": 18.0676331,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sahara",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3366147,18.0612798",
+   "lat": 59.3366147,
+   "lng": 18.0612798,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3391644,18.0682747",
+   "lat": 59.3391644,
+   "lng": 18.0682747,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Malakeh",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3374643,18.0576958",
+   "lat": 59.3374643,
+   "lng": 18.0576958,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tabbouli",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3197716,18.060935",
+   "lat": 59.3197716,
+   "lng": 18.060935,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Underbar",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3383029,18.0571692",
+   "lat": 59.3383029,
+   "lng": 18.0571692,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tehran Grill",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3196141,18.0594865",
+   "lat": 59.3196141,
+   "lng": 18.0594865,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Gyros Sthlm",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.318435,18.0705069",
+   "lat": 59.318435,
+   "lng": 18.0705069,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "62:ans Grill Kebab & Pizza",
+   "type": "grill, pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3188037,18.0609483",
+   "lat": 59.3188037,
+   "lng": 18.0609483,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Almaza",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3294686,18.0432188",
+   "lat": 59.3294686,
+   "lng": 18.0432188,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tabbouli",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3320634,18.0426741",
+   "lat": 59.3320634,
+   "lng": 18.0426741,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Coup d'Etat",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.342962,18.0715681",
+   "lat": 59.342962,
+   "lng": 18.0715681,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Folkets kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3178039,18.052775",
+   "lat": 59.3178039,
+   "lng": 18.052775,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.316907,18.0554228",
+   "lat": 59.316907,
+   "lng": 18.0554228,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shanti Gossip Kungsholmen",
+   "type": "bangladeshi, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3294788,18.0387903",
+   "lat": 59.3294788,
+   "lng": 18.0387903,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "le kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3418251,18.0491309",
+   "lat": 59.3418251,
+   "lng": 18.0491309,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Jerusalem Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3132601,18.0741418",
+   "lat": 59.3132601,
+   "lng": 18.0741418,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebabkungen",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3438482,18.054205",
+   "lat": 59.3438482,
+   "lng": 18.054205,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Midan",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3435686,18.0530499",
+   "lat": 59.3435686,
+   "lng": 18.0530499,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Byblos",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3451725,18.0570476",
+   "lat": 59.3451725,
+   "lng": 18.0570476,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Kitchen",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.346387,18.069639",
+   "lat": 59.346387,
+   "lng": 18.069639,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tajrish",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3386714,18.0395272",
+   "lat": 59.3386714,
+   "lng": 18.0395272,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "SUNdeVICH",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3454906,18.0538394",
+   "lat": 59.3454906,
+   "lng": 18.0538394,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dino",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.347335,18.0669831",
+   "lat": 59.347335,
+   "lng": 18.0669831,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebabkungen",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3112339,18.0744659",
+   "lat": 59.3112339,
+   "lng": 18.0744659,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sthlm Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3329435,18.0319624",
+   "lat": 59.3329435,
+   "lng": 18.0319624,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Agapi",
+   "type": "greek, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.3107344,18.0588742",
+   "lat": 59.3107344,
+   "lng": 18.0588742,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m8049504",
+   "nom": "Storkyrkan",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.3257708,18.0703866",
+   "lat": 59.3257708,
+   "lng": 18.0703866,
+   "source": "osm"
+  },
+  {
+   "id": "m23841420",
+   "nom": "Riddarholmskyrkan",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.3246833,18.0645814",
+   "lat": 59.3246833,
+   "lng": 18.0645814,
+   "source": "osm"
+  },
+  {
+   "id": "m8049509",
+   "nom": "Tyska kyrkan",
+   "type": "Mosquée",
+   "adresse": "Stockholm",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.324139,18.0717171",
+   "lat": 59.324139,
+   "lng": 18.0717171,
+   "source": "osm"
+  },
+  {
+   "id": "m37079169",
+   "nom": "Katarina kyrka",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.3170609,18.07813",
+   "lat": 59.3170609,
+   "lng": 18.07813,
+   "source": "osm"
+  },
+  {
+   "id": "m37079917",
+   "nom": "Stockholms moské",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.3158314,18.0751403",
+   "lat": 59.3158314,
+   "lng": 18.0751403,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a304609719",
+   "nom": "Medelhavsmuseet",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3294531,18.0672982",
+   "lat": 59.3294531,
+   "lng": 18.0672982,
+   "source": "osm"
+  },
+  {
+   "id": "a304610243",
+   "nom": "Dansmuseet",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3297418,18.0653366",
+   "lat": 59.3297418,
+   "lng": 18.0653366,
+   "source": "osm"
+  },
+  {
+   "id": "a300169645",
+   "nom": "Karl XII",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3300115,18.0722205",
+   "lat": 59.3300115,
+   "lng": 18.0722205,
+   "source": "osm"
+  },
+  {
+   "id": "a304608689",
+   "nom": "Konstakademien",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3287664,18.0643695",
+   "lat": 59.3287664,
+   "lng": 18.0643695,
+   "source": "osm"
+  },
+  {
+   "id": "a304607835",
+   "nom": "Tre Kronor",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3274107,18.0710534",
+   "lat": 59.3274107,
+   "lng": 18.0710534,
+   "source": "osm"
+  },
+  {
+   "id": "a8860280280",
+   "nom": "Wetterling",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3314546,18.0702628",
+   "lat": 59.3314546,
+   "lng": 18.0702628,
+   "source": "osm"
+  },
+  {
+   "id": "a1815123227",
+   "nom": "Gustav III:s antikmuseum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3275418,18.0720537",
+   "lat": 59.3275418,
+   "lng": 18.0720537,
+   "source": "osm"
+  },
+  {
+   "id": "a271321021",
+   "nom": "Karl XIII",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3314457,18.0713785",
+   "lat": 59.3314457,
+   "lng": 18.0713785,
+   "source": "osm"
+  },
+  {
+   "id": "a40859302",
+   "nom": "Kulturhuset",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.332047,18.0649268",
+   "lat": 59.332047,
+   "lng": 18.0649268,
+   "source": "osm"
+  },
+  {
+   "id": "a2106971722",
+   "nom": "Skattkammaren",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3263371,18.0720615",
+   "lat": 59.3263371,
+   "lng": 18.0720615,
+   "source": "osm"
+  },
+  {
+   "id": "a9043732017",
+   "nom": "Lars Johan Hierta",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3258984,18.0672395",
+   "lat": 59.3258984,
+   "lng": 18.0672395,
+   "source": "osm"
+  },
+  {
+   "id": "a304606190",
+   "nom": "Livrustkammaren",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3266147,18.0730777",
+   "lat": 59.3266147,
+   "lng": 18.0730777,
+   "source": "osm"
+  },
+  {
+   "id": "a6570360013",
+   "nom": "Axel Oxenstierna",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3261914,18.0653011",
+   "lat": 59.3261914,
+   "lng": 18.0653011,
+   "source": "osm"
+  },
+  {
+   "id": "a4396148482",
+   "nom": "Olaus Petri",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3258578,18.0709671",
+   "lat": 59.3258578,
+   "lng": 18.0709671,
+   "source": "osm"
+  },
+  {
+   "id": "a8049544",
+   "nom": "Riddarhuset",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3259312,18.0657197",
+   "lat": 59.3259312,
+   "lng": 18.0657197,
+   "source": "osm"
+  },
+  {
+   "id": "a12435330802",
+   "nom": "Gustaf III och Gustaf IV Adolph",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3258395,18.0713416",
+   "lat": 59.3258395,
+   "lng": 18.0713416,
+   "source": "osm"
+  },
+  {
+   "id": "a300162703",
+   "nom": "Obelisken",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3258668,18.0715057",
+   "lat": 59.3258668,
+   "lng": 18.0715057,
+   "source": "osm"
+  },
+  {
+   "id": "a927383042",
+   "nom": "Karl XIV Johan",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.3261171,18.0725027",
+   "lat": 59.3261171,
+   "lng": 18.0725027,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

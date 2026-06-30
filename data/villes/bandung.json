@@ -1,76 +1,458 @@
 {
-  "slug": "bandung",
-  "nom": "Bandung",
-  "pays": "Indonésie",
-  "pays_slug": "indonesie",
-  "continent": "Asie",
-  "region": "Indonésie",
-  "coordonnees": {
-    "lat": -6.9175,
-    "lng": 107.6191
+ "slug": "bandung",
+ "nom": "Bandung",
+ "pays": "Indonésie",
+ "pays_slug": "indonesie",
+ "continent": "Asie",
+ "region": "Indonésie",
+ "coordonnees": {
+  "lat": -6.9175,
+  "lng": 107.6191
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Ville fraîche des hauts plateaux de Java, Bandung séduit par sa grande mosquée et ses paysages volcaniques verdoyants.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Bandung_city_at_night_%282517163687%29.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Bandung_city_at_night_%282517163687%29.jpg",
+ "metaDescription": "Ville fraîche des hauts plateaux de Java, Bandung séduit par sa grande mosquée et ses paysages volcaniques verdoyants.",
+ "statistiques": {
+  "restaurants_halal": 38,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Mie Gacoan",
+   "type": "noodle",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9175928,107.6129749",
+   "lat": -6.9175928,
+   "lng": 107.6129749,
+   "halalConfidence": "only",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Ville fraîche des hauts plateaux de Java, Bandung séduit par sa grande mosquée et ses paysages volcaniques verdoyants.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Bandung_city_at_night_%282517163687%29.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Bandung_city_at_night_%282517163687%29.jpg",
-  "metaDescription": "Ville fraîche des hauts plateaux de Java, Bandung séduit par sa grande mosquée et ses paysages volcaniques verdoyants.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Braga Permai",
+   "type": "regional, indonesian, western",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.917356,107.6095198",
+   "lat": -6.917356,
+   "lng": 107.6095198,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Sate Ahmad Naswawi",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9125227,107.6286872",
+   "lat": -6.9125227,
+   "lng": 107.6286872,
+   "halalConfidence": "only",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Bandung",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Bandung",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Bandung%20Bandung"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Grande Mosquée de Bandung",
-      "categorie": "Spirituel",
-      "description": "Mosquée centrale aux minarets panoramiques.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20de%20Bandung%20Bandung"
-    },
-    {
-      "id": "a2",
-      "nom": "Volcan Tangkuban Perahu",
-      "categorie": "Nature",
-      "description": "Cratère accessible aux abords de la ville.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Volcan%20Tangkuban%20Perahu%20Bandung"
-    },
-    {
-      "id": "a3",
-      "nom": "Marchés et street food halal",
-      "categorie": "Culture",
-      "description": "Cuisine soundanaise halal réputée.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9s%20et%20street%20food%20halal%20Bandung"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "J.Co",
+   "type": "donut, coffee shop",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9094945,107.6108579",
+   "lat": -6.9094945,
+   "lng": 107.6108579,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Burger King",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9089623,107.6109418",
+   "lat": -6.9089623,
+   "lng": 107.6109418,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Lontong Kari Gempol",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9031083,107.6154995",
+   "lat": -6.9031083,
+   "lng": 107.6154995,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bolen lilit",
+   "type": "roti lapissandwich, ice cream, cake",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9027069,107.6142188",
+   "lat": -6.9027069,
+   "lng": 107.6142188,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Roti'O",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9136423,107.6024432",
+   "lat": -6.9136423,
+   "lng": 107.6024432,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Roti'O",
+   "type": "bread",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9145711,107.6021311",
+   "lat": -6.9145711,
+   "lng": 107.6021311,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Mie Gacoan",
+   "type": "noodle",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8979106,107.6135268",
+   "lat": -6.8979106,
+   "lng": 107.6135268,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Richeese Factory",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9002713,107.6340985",
+   "lat": -6.9002713,
+   "lng": 107.6340985,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "SEBLAK PAHLAWAN",
+   "type": "indonesian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8990525,107.6340568",
+   "lat": -6.8990525,
+   "lng": 107.6340568,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9061592,107.5972523",
+   "lat": -6.9061592,
+   "lng": 107.5972523,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Bakso Beranak Raja & Ratu",
+   "type": "bakso",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9374728,107.6027325",
+   "lat": -6.9374728,
+   "lng": 107.6027325,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Toko Kue Anugrah Cipta Rasa",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9070138,107.5950209",
+   "lat": -6.9070138,
+   "lng": 107.5950209,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Warung Nasi Tegal AR",
+   "type": "indonesian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9423915,107.6276803",
+   "lat": -6.9423915,
+   "lng": 107.6276803,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mie Gacoan",
+   "type": "noodle",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9013685,107.59712",
+   "lat": -6.9013685,
+   "lng": 107.59712,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Ayam Kalasan 727",
+   "type": "indonesian, coffee shop, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9434542,107.6286947",
+   "lat": -6.9434542,
+   "lng": 107.6286947,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "BSA Bakso Semar Asli",
+   "type": "indonesian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9437801,107.6289202",
+   "lat": -6.9437801,
+   "lng": 107.6289202,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "kosan jojo",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8967323,107.6381555",
+   "lat": -6.8967323,
+   "lng": 107.6381555,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bakso Balowo",
+   "type": "indonesian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8922779,107.6343196",
+   "lat": -6.8922779,
+   "lng": 107.6343196,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Warung Nenek",
+   "type": "western",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8865621,107.6200137",
+   "lat": -6.8865621,
+   "lng": 107.6200137,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8849496,107.6134558",
+   "lat": -6.8849496,
+   "lng": 107.6134558,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "BARBAR WINGS",
+   "type": "burger, coffee shop, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8893865,107.6013508",
+   "lat": -6.8893865,
+   "lng": 107.6013508,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Siomay Mii x Dimsum Moii",
+   "type": "japanese, korean, indonesian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8844753,107.6140509",
+   "lat": -6.8844753,
+   "lng": 107.6140509,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Wizzmie",
+   "type": "noodle",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9039042,107.6527236",
+   "lat": -6.9039042,
+   "lng": 107.6527236,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Vibes Chicken",
+   "type": "chicken, fried chicken, korean, japanese, american",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9538241,107.6205361",
+   "lat": -6.9538241,
+   "lng": 107.6205361,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "RM. Sederhana",
+   "type": "asian, padang",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8948659,107.5890237",
+   "lat": -6.8948659,
+   "lng": 107.5890237,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "CRISBAR",
+   "type": "food, fried food, ayam geprek",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8788461,107.612631",
+   "lat": -6.8788461,
+   "lng": 107.612631,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Mie Jakarta",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8748506,107.6043625",
+   "lat": -6.8748506,
+   "lng": 107.6043625,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "KFC",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9393281,107.6673281",
+   "lat": -6.9393281,
+   "lng": 107.6673281,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "ES TEH POCI CIKONENG PESONA BALI",
+   "type": "es teh",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9809135,107.6349699",
+   "lat": -6.9809135,
+   "lng": 107.6349699,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Qahwa",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9044472,107.6173065",
+   "lat": -6.9044472,
+   "lng": 107.6173065,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kabobs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9406925,107.6265764",
+   "lat": -6.9406925,
+   "lng": 107.6265764,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Turki Baba Rafi",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8898697,107.6132228",
+   "lat": -6.8898697,
+   "lng": 107.6132228,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kabobs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.887948,107.6155054",
+   "lat": -6.887948,
+   "lng": 107.6155054,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kambing Bakar Cairo",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.8703438,107.5917527",
+   "lat": -6.8703438,
+   "lng": 107.5917527,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Alfahim Frozen",
+   "type": "arab, cake",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-6.9309559,107.676151",
+   "lat": -6.9309559,
+   "lng": 107.676151,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Bandung",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Bandung",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Bandung%20Bandung"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Grande Mosquée de Bandung",
+   "categorie": "Spirituel",
+   "description": "Mosquée centrale aux minarets panoramiques.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20de%20Bandung%20Bandung"
+  },
+  {
+   "id": "a2",
+   "nom": "Volcan Tangkuban Perahu",
+   "categorie": "Nature",
+   "description": "Cratère accessible aux abords de la ville.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Volcan%20Tangkuban%20Perahu%20Bandung"
+  },
+  {
+   "id": "a3",
+   "nom": "Marchés et street food halal",
+   "categorie": "Culture",
+   "description": "Cuisine soundanaise halal réputée.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9s%20et%20street%20food%20halal%20Bandung"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

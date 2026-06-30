@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/4/42/La_mosqu%C3%A9e_de_Saint-P%C3%A9tersbourg_%28Russie%29_%285640729291%29.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 2,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,652 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Mr India",
+   "type": "indian, asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9256974,30.3430941",
+   "lat": 59.9256974,
+   "lng": 30.3430941,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Выпечка",
+   "type": "pastry",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9235281,30.31044",
+   "lat": 59.9235281,
+   "lng": 30.31044,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Tandoori Nights",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9353683,30.3087161",
+   "lat": 59.9353683,
+   "lng": 30.3087161,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Персия",
+   "type": "asian, persian, georgian, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9220321,30.3046282",
+   "lat": 59.9220321,
+   "lng": 30.3046282,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Мостъ",
+   "type": "russian, european",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9210223,30.3035555",
+   "lat": 59.9210223,
+   "lng": 30.3035555,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Кебаб",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9120758,30.3069223",
+   "lat": 59.9120758,
+   "lng": 30.3069223,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Delish",
+   "type": "kebab, asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9201186,30.2974499",
+   "lat": 59.9201186,
+   "lng": 30.2974499,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Каир",
+   "type": "shawarma, mexican, egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9176086,30.2973385",
+   "lat": 59.9176086,
+   "lng": 30.2973385,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Выпечка",
+   "type": "pastry, friture",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9083336,30.301012",
+   "lat": 59.9083336,
+   "lng": 30.301012,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Донер City",
+   "type": "doner",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9290154,30.3592758",
+   "lat": 59.9290154,
+   "lng": 30.3592758,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lale",
+   "type": "turkish,  european",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.930357,30.3652292",
+   "lat": 59.930357,
+   "lng": 30.3652292,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Vлаvаше",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9309105,30.3554203",
+   "lat": 59.9309105,
+   "lng": 30.3554203,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Шаверно",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9284749,30.3589621",
+   "lat": 59.9284749,
+   "lng": 30.3589621,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Кус-Кус",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9341559,30.3615223",
+   "lat": 59.9341559,
+   "lng": 30.3615223,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Царская шаверма",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9289531,30.3671161",
+   "lat": 59.9289531,
+   "lng": 30.3671161,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Meze",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9296988,30.3688774",
+   "lat": 59.9296988,
+   "lng": 30.3688774,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Wag",
+   "type": "falafel, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9270313,30.3580638",
+   "lat": 59.9270313,
+   "lng": 30.3580638,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Memet & Pir",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9316112,30.3695093",
+   "lat": 59.9316112,
+   "lng": 30.3695093,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawatel",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9265984,30.3571551",
+   "lat": 59.9265984,
+   "lng": 30.3571551,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Шаверма 12",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9272892,30.3699814",
+   "lat": 59.9272892,
+   "lng": 30.3699814,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Кебаб",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9249778,30.359285",
+   "lat": 59.9249778,
+   "lng": 30.359285,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Шаверма",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9329804,30.3482103",
+   "lat": 59.9329804,
+   "lng": 30.3482103,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Шаверма на Литейном",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9330193,30.347618",
+   "lat": 59.9330193,
+   "lng": 30.347618,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Дон Педро",
+   "type": "doner, mexican, falafel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9289776,30.3472697",
+   "lat": 59.9289776,
+   "lng": 30.3472697,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Донер",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9382227,30.3586833",
+   "lat": 59.9382227,
+   "lng": 30.3586833,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Technodöner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9389245,30.3577401",
+   "lat": 59.9389245,
+   "lng": 30.3577401,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sabiha",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9389356,30.3571726",
+   "lat": 59.9389356,
+   "lng": 30.3571726,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Турбо Шаверма",
+   "type": "doner",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9360187,30.3478303",
+   "lat": 59.9360187,
+   "lng": 30.3478303,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Кебаб",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9367844,30.3727287",
+   "lat": 59.9367844,
+   "lng": 30.3727287,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Истамбул",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9279434,30.3452303",
+   "lat": 59.9279434,
+   "lng": 30.3452303,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Кебаб",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9251554,30.373367",
+   "lat": 59.9251554,
+   "lng": 30.373367,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Влаваше",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9219814,30.3555368",
+   "lat": 59.9219814,
+   "lng": 30.3555368,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Шаверма с локоть",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9235152,30.3485329",
+   "lat": 59.9235152,
+   "lng": 30.3485329,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Шаверма №1",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9391926,30.3480284",
+   "lat": 59.9391926,
+   "lng": 30.3480284,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Кебаб",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9215921,30.3524646",
+   "lat": 59.9215921,
+   "lng": 30.3524646,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Макшава",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9269436,30.3405118",
+   "lat": 59.9269436,
+   "lng": 30.3405118,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Вертимский",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9271117,30.3400963",
+   "lat": 59.9271117,
+   "lng": 30.3400963,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Завертелли",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9396247,30.3448885",
+   "lat": 59.9396247,
+   "lng": 30.3448885,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Влаваше",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.9343651,30.3367445",
+   "lat": 59.9343651,
+   "lng": 30.3367445,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Шаверма от души",
+   "type": "kebab, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=59.919247,30.3526891",
+   "lat": 59.919247,
+   "lng": 30.3526891,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m28966446",
+   "nom": "Собор Воскресения Христова на Крови",
+   "type": "Mosquée",
+   "adresse": "набережная канала Грибоедова, Санкт-Петербург",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.9400907,30.3288445",
+   "lat": 59.9400907,
+   "lng": 30.3288445,
+   "source": "osm"
+  },
+  {
+   "id": "m28712430",
+   "nom": "Соборная мечеть",
+   "type": "Mosquée",
+   "adresse": "Кронверкский проспект, Санкт-Петербург",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=59.9551886,30.3239227",
+   "lat": 59.9551886,
+   "lng": 30.3239227,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a6025581762",
+   "nom": "К. А. Тону",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9301151,30.3611861",
+   "lat": 59.9301151,
+   "lng": 30.3611861,
+   "source": "osm"
+  },
+  {
+   "id": "a2462663672",
+   "nom": "МузЭрос",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9302177,30.3598504",
+   "lat": 59.9302177,
+   "lng": 30.3598504,
+   "source": "osm"
+  },
+  {
+   "id": "a6204100696",
+   "nom": "Пётр I",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9297214,30.3621779",
+   "lat": 59.9297214,
+   "lng": 30.3621779,
+   "source": "osm"
+  },
+  {
+   "id": "a11673112887",
+   "nom": "В. П. Кондрашину",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9311774,30.3577843",
+   "lat": 59.9311774,
+   "lng": 30.3577843,
+   "source": "osm"
+  },
+  {
+   "id": "a13092952615",
+   "nom": "Галерея экспериментального звука (ГЭЗ-21)",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.929672,30.3588708",
+   "lat": 59.929672,
+   "lng": 30.3588708,
+   "source": "osm"
+  },
+  {
+   "id": "a10262675401",
+   "nom": "В. С. Набутову",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9304161,30.3573856",
+   "lat": 59.9304161,
+   "lng": 30.3573856,
+   "source": "osm"
+  },
+  {
+   "id": "a6533612689",
+   "nom": "Арт-центр Пушкинская 10",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9294913,30.3586166",
+   "lat": 59.9294913,
+   "lng": 30.3586166,
+   "source": "osm"
+  },
+  {
+   "id": "a13092905144",
+   "nom": "Музей «Битлз» Коли Васина",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9293775,30.3588452",
+   "lat": 59.9293775,
+   "lng": 30.3588452,
+   "source": "osm"
+  },
+  {
+   "id": "a6036415886",
+   "nom": "Улица Джона Леннона",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9293554,30.3589039",
+   "lat": 59.9293554,
+   "lng": 30.3589039,
+   "source": "osm"
+  },
+  {
+   "id": "a2992077359",
+   "nom": "Арт Галерея Путешествий",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9317164,30.3651222",
+   "lat": 59.9317164,
+   "lng": 30.3651222,
+   "source": "osm"
+  },
+  {
+   "id": "a6203908696",
+   "nom": "Н. О. Крафту",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9289239,30.3619412",
+   "lat": 59.9289239,
+   "lng": 30.3619412,
+   "source": "osm"
+  },
+  {
+   "id": "a6203908697",
+   "nom": "Николаю I",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9289248,30.3619505",
+   "lat": 59.9289248,
+   "lng": 30.3619505,
+   "source": "osm"
+  },
+  {
+   "id": "a6203908698",
+   "nom": "П. П. Мельникову",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9289255,30.3619579",
+   "lat": 59.9289255,
+   "lng": 30.3619579,
+   "source": "osm"
+  },
+  {
+   "id": "a3514714653",
+   "nom": "Музей нонконформистского искусства",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9293827,30.3575184",
+   "lat": 59.9293827,
+   "lng": 30.3575184,
+   "source": "osm"
+  },
+  {
+   "id": "a6443153852",
+   "nom": "П. А. Стрепетовой",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9293123,30.3571569",
+   "lat": 59.9293123,
+   "lng": 30.3571569,
+   "source": "osm"
+  },
+  {
+   "id": "a6443153840",
+   "nom": "А. Г. Неболсину",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.929095,30.3572243",
+   "lat": 59.929095,
+   "lng": 30.3572243,
+   "source": "osm"
+  },
+  {
+   "id": "a893852053",
+   "nom": "А. С. Пушкину",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9289378,30.356763",
+   "lat": 59.9289378,
+   "lng": 30.356763,
+   "source": "osm"
+  },
+  {
+   "id": "a1699889759",
+   "nom": "А. А. Ахматова",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=59.9344075,30.3598163",
+   "lat": 59.9344075,
+   "lng": 30.3598163,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

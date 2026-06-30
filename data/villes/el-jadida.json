@@ -1,81 +1,113 @@
 {
-  "slug": "el-jadida",
-  "nom": "El Jadida",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Centre du Maroc",
-  "coordonnees": {
-    "lat": 33.2316,
-    "lng": -8.5007
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Ancienne cité portugaise de Mazagan classée UNESCO sur la côte atlantique. Citerne souterraine spectaculaire et longue plage.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Morocco_-_El_Jadida_-_Medina.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Morocco_-_El_Jadida_-_Medina.jpg",
-  "metaDescription": "Ancienne cité portugaise de Mazagan classée UNESCO sur la côte atlantique. Citerne souterraine spectaculaire et longue plage.",
+ "slug": "el-jadida",
+ "nom": "El Jadida",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Centre du Maroc",
+ "coordonnees": {
+  "lat": 33.2316,
+  "lng": -8.5007
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Ancienne cité portugaise de Mazagan classée UNESCO sur la côte atlantique. Citerne souterraine spectaculaire et longue plage.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Morocco_-_El_Jadida_-_Medina.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Morocco_-_El_Jadida_-_Medina.jpg",
+ "metaDescription": "Ancienne cité portugaise de Mazagan classée UNESCO sur la côte atlantique. Citerne souterraine spectaculaire et longue plage.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 3,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Snack Al Massira",
+   "type": "moroccan, pizza, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2425,-8.498013",
+   "lat": 33.2425,
+   "lng": -8.498013,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Snack Elbraija",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2536814,-8.5026094",
+   "lat": 33.2536814,
+   "lng": -8.5026094,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de El Jadida",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, El Jadida",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20El%20Jadida%20El%20Jadida%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Citerne portugaise",
-      "categorie": "Histoire",
-      "description": "Citerne souterraine aux reflets d'eau, décor de cinéma.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Citerne%20portugaise%20El%20Jadida%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Cité portugaise (UNESCO)",
-      "categorie": "Culture",
-      "description": "Remparts et bastions de la forteresse de Mazagan.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Cit%C3%A9%20portugaise%20%28UNESCO%29%20El%20Jadida%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Plage d'El Jadida & Oualidia",
-      "categorie": "Nature",
-      "description": "Plages atlantiques et lagune d'Oualidia réputée pour les huîtres.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Plage%20d%27El%20Jadida%20%26%20Oualidia%20El%20Jadida%20Maroc"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Snack Bismillah",
+   "type": "moroccan, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.2558431,-8.5044118",
+   "lat": 33.2558431,
+   "lng": -8.5044118,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de El Jadida",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, El Jadida",
+   "description": "Mosquée principale de la ville, prière du vendredi.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20El%20Jadida%20El%20Jadida%20Maroc"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Citerne portugaise",
+   "categorie": "Histoire",
+   "description": "Citerne souterraine aux reflets d'eau, décor de cinéma.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Citerne%20portugaise%20El%20Jadida%20Maroc"
+  },
+  {
+   "id": "a2",
+   "nom": "Cité portugaise (UNESCO)",
+   "categorie": "Culture",
+   "description": "Remparts et bastions de la forteresse de Mazagan.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Cit%C3%A9%20portugaise%20%28UNESCO%29%20El%20Jadida%20Maroc"
+  },
+  {
+   "id": "a3",
+   "nom": "Plage d'El Jadida & Oualidia",
+   "categorie": "Nature",
+   "description": "Plages atlantiques et lagune d'Oualidia réputée pour les huîtres.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Plage%20d%27El%20Jadida%20%26%20Oualidia%20El%20Jadida%20Maroc"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

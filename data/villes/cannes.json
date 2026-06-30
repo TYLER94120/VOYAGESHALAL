@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Cannes_-_port_et_croisette.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 19,
+  "mosquees": 2,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,442 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "La Fleur d'Oranger",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5527286,6.9574463",
+   "lat": 43.5527286,
+   "lng": 6.9574463,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Taj Mahal",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.6092184,6.9821991",
+   "lat": 43.6092184,
+   "lng": 6.9821991,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mavi food",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5527709,7.0161942",
+   "lat": 43.5527709,
+   "lng": 7.0161942,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sylane kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5534647,7.0224965",
+   "lat": 43.5534647,
+   "lng": 7.0224965,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Djerba la douce",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5554445,7.023352",
+   "lat": 43.5554445,
+   "lng": 7.023352,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Turkish Istanbul Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5564319,7.023262",
+   "lat": 43.5564319,
+   "lng": 7.023262,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Beryte",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5491395,7.0288427",
+   "lat": 43.5491395,
+   "lng": 7.0288427,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Charq",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5493103,7.0300453",
+   "lat": 43.5493103,
+   "lng": 7.0300453,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Charq / pâtisserie",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5491733,7.0300012",
+   "lat": 43.5491733,
+   "lng": 7.0300012,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Traiteur Libanais",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5789432,7.0531316",
+   "lat": 43.5789432,
+   "lng": 7.0531316,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zin Grill",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5663952,7.0748913",
+   "lat": 43.5663952,
+   "lng": 7.0748913,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Cigale du Golfe",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.566327,7.0756486",
+   "lat": 43.566327,
+   "lng": 7.0756486,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Beirut Xpress",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5724599,7.0893379",
+   "lat": 43.5724599,
+   "lng": 7.0893379,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Turka",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5467947,6.9389368",
+   "lat": 43.5467947,
+   "lng": 6.9389368,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "L'Atelier",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.6012312,7.0859476",
+   "lat": 43.6012312,
+   "lng": 7.0859476,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "O' Petit Liban",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5706286,7.1109074",
+   "lat": 43.5706286,
+   "lng": 7.1109074,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dutch",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5705336,7.1111679",
+   "lat": 43.5705336,
+   "lng": 7.1111679,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bistro Libanais",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.6213279,7.0399898",
+   "lat": 43.6213279,
+   "lng": 7.0399898,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aux ingrédients libanais",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=43.5067756,6.9418161",
+   "lat": 43.5067756,
+   "lng": 6.9418161,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m13948031201",
+   "nom": "Mosquée (Association Culturelle Franco-Turque de Cannes - DITIB Cannes)",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=43.5595465,6.9688553",
+   "lat": 43.5595465,
+   "lng": 6.9688553,
+   "source": "osm"
+  },
+  {
+   "id": "m340000486",
+   "nom": "Centre Iqraa",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=43.5604441,6.9660563",
+   "lat": 43.5604441,
+   "lng": 6.9660563,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a6419653782",
+   "nom": "Walk of Fame",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5511921,7.0173269",
+   "lat": 43.5511921,
+   "lng": 7.0173269,
+   "source": "osm"
+  },
+  {
+   "id": "a12246373050",
+   "nom": "Général De Gaulle",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5517247,7.0156438",
+   "lat": 43.5517247,
+   "lng": 7.0156438,
+   "source": "osm"
+  },
+  {
+   "id": "a12617883114",
+   "nom": "Francl Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5517079,7.0196785",
+   "lat": 43.5517079,
+   "lng": 7.0196785,
+   "source": "osm"
+  },
+  {
+   "id": "a207986791",
+   "nom": "Tapis rouge",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5508082,7.0183583",
+   "lat": 43.5508082,
+   "lng": 7.0183583,
+   "source": "osm"
+  },
+  {
+   "id": "a13728169401",
+   "nom": "Tapis rouge - Red carpet",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.550801,7.0183335",
+   "lat": 43.550801,
+   "lng": 7.0183335,
+   "source": "osm"
+  },
+  {
+   "id": "a64947425",
+   "nom": "Palais des Festivals et des Congrès",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5506798,7.0177463",
+   "lat": 43.5506798,
+   "lng": 7.0177463,
+   "source": "osm"
+  },
+  {
+   "id": "a13697641228",
+   "nom": "Galerie 20",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5529854,7.0208273",
+   "lat": 43.5529854,
+   "lng": 7.0208273,
+   "source": "osm"
+  },
+  {
+   "id": "a10992103436",
+   "nom": "Plaque commémorative Groupe Jean Marie",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5560398,7.0165897",
+   "lat": 43.5560398,
+   "lng": 7.0165897,
+   "source": "osm"
+  },
+  {
+   "id": "a4040655961",
+   "nom": "Alain Gerbault",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5489086,7.0174671",
+   "lat": 43.5489086,
+   "lng": 7.0174671,
+   "source": "osm"
+  },
+  {
+   "id": "a6577595661",
+   "nom": "Virginie Hériot",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5487036,7.0171811",
+   "lat": 43.5487036,
+   "lng": 7.0171811,
+   "source": "osm"
+  },
+  {
+   "id": "a6461706126",
+   "nom": "Galerie Arista",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5524464,7.0109024",
+   "lat": 43.5524464,
+   "lng": 7.0109024,
+   "source": "osm"
+  },
+  {
+   "id": "a64918098",
+   "nom": "La Tour du Masque",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5500184,7.0114887",
+   "lat": 43.5500184,
+   "lng": 7.0114887,
+   "source": "osm"
+  },
+  {
+   "id": "a2913439415",
+   "nom": "Jetée Albert Edouard Sud",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.547648,7.016188",
+   "lat": 43.547648,
+   "lng": 7.016188,
+   "source": "osm"
+  },
+  {
+   "id": "a952751739",
+   "nom": "Place de la Castre",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.550571,7.0106982",
+   "lat": 43.550571,
+   "lng": 7.0106982,
+   "source": "osm"
+  },
+  {
+   "id": "a8019041240",
+   "nom": "Roger Stiegler",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5508245,7.0104783",
+   "lat": 43.5508245,
+   "lng": 7.0104783,
+   "source": "osm"
+  },
+  {
+   "id": "a64917198",
+   "nom": "Musée des explorations du monde",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5501469,7.0103782",
+   "lat": 43.5501469,
+   "lng": 7.0103782,
+   "source": "osm"
+  },
+  {
+   "id": "a8960315203",
+   "nom": "Chapelle Sainte-Anne",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5500757,7.0103076",
+   "lat": 43.5500757,
+   "lng": 7.0103076,
+   "source": "osm"
+  },
+  {
+   "id": "a2853508319",
+   "nom": "Statue de Jeanne d'Arc",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=43.5481897,7.0122089",
+   "lat": 43.5481897,
+   "lng": 7.0122089,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

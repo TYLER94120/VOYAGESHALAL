@@ -1,90 +1,162 @@
 {
-  "slug": "ouarzazate",
-  "nom": "Ouarzazate",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Sud du Maroc",
-  "coordonnees": {
-    "lat": 30.9335,
-    "lng": -6.937
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "'Porte du désert' et 'Hollywood d'Afrique', célèbre pour ses studios de cinéma et la kasbah d'Aït Benhaddou classée UNESCO.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ouarzazate_%28avril_2005%29_%281%29.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ouarzazate_%28avril_2005%29_%281%29.jpg",
-  "metaDescription": "'Porte du désert' et 'Hollywood d'Afrique', célèbre pour ses studios de cinéma et la kasbah d'Aït Benhaddou classée UNESCO.",
+ "slug": "ouarzazate",
+ "nom": "Ouarzazate",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Sud du Maroc",
+ "coordonnees": {
+  "lat": 30.9335,
+  "lng": -6.937
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "'Porte du désert' et 'Hollywood d'Afrique', célèbre pour ses studios de cinéma et la kasbah d'Aït Benhaddou classée UNESCO.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ouarzazate_%28avril_2005%29_%281%29.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Ouarzazate_%28avril_2005%29_%281%29.jpg",
+ "metaDescription": "'Porte du désert' et 'Hollywood d'Afrique', célèbre pour ses studios de cinéma et la kasbah d'Aït Benhaddou classée UNESCO.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 7,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Special Grillades El Bahja",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.922655,-6.9273264",
+   "lat": 30.922655,
+   "lng": -6.9273264,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Snack Resto Elbahja",
+   "type": "moroccan, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9242531,-6.9248932",
+   "lat": 30.9242531,
+   "lng": -6.9248932,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Ouarzazate",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Ouarzazate",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Ouarzazate%20Ouarzazate%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Kasbah d'Aït Benhaddou (UNESCO)",
-      "categorie": "Histoire",
-      "description": "Ksar de terre crue emblématique, décor de nombreux films.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Kasbah%20d%27A%C3%AFt%20Benhaddou%20%28UNESCO%29%20Ouarzazate%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Studios Atlas",
-      "categorie": "Loisirs",
-      "description": "Plus grands studios de cinéma du monde par la superficie.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Studios%20Atlas%20Ouarzazate%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Kasbah de Taourirt",
-      "categorie": "Histoire",
-      "description": "Ancienne demeure du Glaoui aux décors raffinés.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Kasbah%20de%20Taourirt%20Ouarzazate%20Maroc"
-    },
-    {
-      "id": "a4",
-      "nom": "Vallée du Drâa",
-      "categorie": "Nature",
-      "description": "Route des palmeraies vers le désert.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e%20du%20Dr%C3%A2a%20Ouarzazate%20Maroc"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "La Gironde",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9213545,-6.9195626",
+   "lat": 30.9213545,
+   "lng": -6.9195626,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Snack Souss",
+   "type": "sandwich, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9213596,-6.9150544",
+   "lat": 30.9213596,
+   "lng": -6.9150544,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Oscar Fast Food",
+   "type": "pizza, moroccan, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9202604,-6.9155221",
+   "lat": 30.9202604,
+   "lng": -6.9155221,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Afoulki افولكي",
+   "type": "arab, moroccan, coffee shop, french",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9271947,-6.9033941",
+   "lat": 30.9271947,
+   "lng": -6.9033941,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Kasbah",
+   "type": "moroccan, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.9208891,-6.8998854",
+   "lat": 30.9208891,
+   "lng": -6.8998854,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Ouarzazate",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Ouarzazate",
+   "description": "Mosquée principale de la ville, prière du vendredi.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Ouarzazate%20Ouarzazate%20Maroc"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Kasbah d'Aït Benhaddou (UNESCO)",
+   "categorie": "Histoire",
+   "description": "Ksar de terre crue emblématique, décor de nombreux films.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Kasbah%20d%27A%C3%AFt%20Benhaddou%20%28UNESCO%29%20Ouarzazate%20Maroc"
+  },
+  {
+   "id": "a2",
+   "nom": "Studios Atlas",
+   "categorie": "Loisirs",
+   "description": "Plus grands studios de cinéma du monde par la superficie.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Studios%20Atlas%20Ouarzazate%20Maroc"
+  },
+  {
+   "id": "a3",
+   "nom": "Kasbah de Taourirt",
+   "categorie": "Histoire",
+   "description": "Ancienne demeure du Glaoui aux décors raffinés.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Kasbah%20de%20Taourirt%20Ouarzazate%20Maroc"
+  },
+  {
+   "id": "a4",
+   "nom": "Vallée du Drâa",
+   "categorie": "Nature",
+   "description": "Route des palmeraies vers le désert.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e%20du%20Dr%C3%A2a%20Ouarzazate%20Maroc"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

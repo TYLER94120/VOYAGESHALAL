@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/7/7c/ETH_Zurich_from_Polyterrace.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 8,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,718 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Marronistand",
+   "type": "roasted chestnut",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3771803,8.5414903",
+   "lat": 47.3771803,
+   "lng": 8.5414903,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Zürich Fried Chicken",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.375049,8.543749",
+   "lat": 47.375049,
+   "lng": 8.543749,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Richi's Kiosk",
+   "type": "barbecue, burger, hot dog, ice cream, sandwich, soup",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3504628,8.5181774",
+   "lat": 47.3504628,
+   "lng": 8.5181774,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Peking Garden",
+   "type": "asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3992293,8.6211314",
+   "lat": 47.3992293,
+   "lng": 8.6211314,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Qualitäts Kebab Haus",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.4020417,8.6265976",
+   "lat": 47.4020417,
+   "lng": 8.6265976,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ayverdi's",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3768376,8.5409094",
+   "lat": 47.3768376,
+   "lng": 8.5409094,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Food Corner",
+   "type": "barbecue, kebab, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3759873,8.5439456",
+   "lat": 47.3759873,
+   "lng": 8.5439456,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "1001 Take Away",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3753239,8.5438222",
+   "lat": 47.3753239,
+   "lng": 8.5438222,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "mit&ohne",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3777548,8.5386128",
+   "lat": 47.3777548,
+   "lng": 8.5386128,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Weinberg Bistro Zürich",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3789263,8.5444555",
+   "lat": 47.3789263,
+   "lng": 8.5444555,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Orient Catering",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3789144,8.5448353",
+   "lat": 47.3789144,
+   "lng": 8.5448353,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Orient World",
+   "type": "lebanese, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3788419,8.545135",
+   "lat": 47.3788419,
+   "lng": 8.545135,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sesam Falafel",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.374336,8.5380261",
+   "lat": 47.374336,
+   "lng": 8.5380261,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "1001",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3728579,8.5438241",
+   "lat": 47.3728579,
+   "lng": 8.5438241,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sham",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3800785,8.5370948",
+   "lat": 47.3800785,
+   "lng": 8.5370948,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Züri Bistro",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.38053,8.5479785",
+   "lat": 47.38053,
+   "lng": 8.5479785,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Cèdre Maurice",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3723494,8.5356968",
+   "lat": 47.3723494,
+   "lng": 8.5356968,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Libanon il-Achdar",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.380844,8.5347582",
+   "lat": 47.380844,
+   "lng": 8.5347582,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "tat",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3716812,8.5357324",
+   "lat": 47.3716812,
+   "lng": 8.5357324,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bella Imbiss",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3748997,8.5518595",
+   "lat": 47.3748997,
+   "lng": 8.5518595,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bei Moudi am Kunsthaus",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3707349,8.5479863",
+   "lat": 47.3707349,
+   "lng": 8.5479863,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "TheBab",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3703079,8.5362399",
+   "lat": 47.3703079,
+   "lng": 8.5362399,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Cèdre",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3686275,8.5444063",
+   "lat": 47.3686275,
+   "lng": 8.5444063,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Edy's",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3737038,8.5300022",
+   "lat": 47.3737038,
+   "lng": 8.5300022,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Noon",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3686967,8.5454206",
+   "lat": 47.3686967,
+   "lng": 8.5454206,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Gül",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3784912,8.5291495",
+   "lat": 47.3784912,
+   "lng": 8.5291495,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Moudi",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3697863,8.5343368",
+   "lat": 47.3697863,
+   "lng": 8.5343368,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zum goldenen Taschenbrot",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3788366,8.5291393",
+   "lat": 47.3788366,
+   "lng": 8.5291393,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Afghan Anar",
+   "type": "afghan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3840078,8.5318712",
+   "lat": 47.3840078,
+   "lng": 8.5318712,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Vegitat",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3822487,8.5296459",
+   "lat": 47.3822487,
+   "lng": 8.5296459,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Best Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3827549,8.5300757",
+   "lat": 47.3827549,
+   "lng": 8.5300757,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Victoria Brezelbäckerei",
+   "type": "burger, kebab, hot dog",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3674846,8.5464889",
+   "lat": 47.3674846,
+   "lng": 8.5464889,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Happy Chef",
+   "type": "kebab, burger, italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3679354,8.5350652",
+   "lat": 47.3679354,
+   "lng": 8.5350652,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Afghan Anar",
+   "type": "afghan, oriental",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3697919,8.5529812",
+   "lat": 47.3697919,
+   "lng": 8.5529812,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Cèdre",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3738833,8.5264947",
+   "lat": 47.3738833,
+   "lng": 8.5264947,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "SimSim",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3878521,8.5392302",
+   "lat": 47.3878521,
+   "lng": 8.5392302,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ristorante 33",
+   "type": "arab, italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3668389,8.5339821",
+   "lat": 47.3668389,
+   "lng": 8.5339821,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Za'atar",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3790069,8.5249463",
+   "lat": 47.3790069,
+   "lng": 8.5249463,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurant Pyramids",
+   "type": "egyptian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3715877,8.5261787",
+   "lat": 47.3715877,
+   "lng": 8.5261787,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fattoush",
+   "type": "syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.3715683,8.5255105",
+   "lat": 47.3715683,
+   "lng": 8.5255105,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m13084185191",
+   "nom": "Forum des Orients",
+   "type": "Mosquée",
+   "adresse": "Hafnerstrasse, Zürich",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=47.3817072,8.5360504",
+   "lat": 47.3817072,
+   "lng": 8.5360504,
+   "source": "osm"
+  },
+  {
+   "id": "m4563424065",
+   "nom": "Islamisches Zentrum",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=47.3776941,8.5315119",
+   "lat": 47.3776941,
+   "lng": 8.5315119,
+   "source": "osm"
+  },
+  {
+   "id": "m11166104823",
+   "nom": "Madni Masjid Zurich",
+   "type": "Mosquée",
+   "adresse": "Weinbergstrasse, Zürich",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=47.3898219,8.5396647",
+   "lat": 47.3898219,
+   "lng": 8.5396647,
+   "source": "osm"
+  },
+  {
+   "id": "m7198147276",
+   "nom": "Stiftung Islamische Gemeinschaft Zürich",
+   "type": "Mosquée",
+   "adresse": "Rötelstrasse, Zürich",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=47.3948626,8.5331339",
+   "lat": 47.3948626,
+   "lng": 8.5331339,
+   "source": "osm"
+  },
+  {
+   "id": "m4948524508",
+   "nom": "Islamisches Kulturzentrum",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=47.3696531,8.51151",
+   "lat": 47.3696531,
+   "lng": 8.51151,
+   "source": "osm"
+  },
+  {
+   "id": "m89530459",
+   "nom": "Diyanet Moschee Zürich Nord",
+   "type": "Mosquée",
+   "adresse": "Schwamendingenstrasse, Zürich",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=47.4047438,8.5557966",
+   "lat": 47.4047438,
+   "lng": 8.5557966,
+   "source": "osm"
+  },
+  {
+   "id": "m125200736",
+   "nom": "Mahmud Moschee",
+   "type": "Mosquée",
+   "adresse": "Forchstrasse, Zürich",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=47.355159,8.5749144",
+   "lat": 47.355159,
+   "lng": 8.5749144,
+   "source": "osm"
+  },
+  {
+   "id": "m5502017684",
+   "nom": "Albanisch-Islamische Gemeinschaft Zürich",
+   "type": "Mosquée",
+   "adresse": "Rautistrasse, Zürich",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=47.381793,8.4907493",
+   "lat": 47.381793,
+   "lng": 8.4907493,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a4153870401",
+   "nom": "Meilenstein Berlin/Zürich",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3766572,8.5432089",
+   "lat": 47.3766572,
+   "lng": 8.5432089,
+   "source": "osm"
+  },
+  {
+   "id": "a356298160",
+   "nom": "Alfred Escher-Statue",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3771287,8.5399549",
+   "lat": 47.3771287,
+   "lng": 8.5399549,
+   "source": "osm"
+  },
+  {
+   "id": "a693318547",
+   "nom": "WOW Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3750223,8.5403296",
+   "lat": 47.3750223,
+   "lng": 8.5403296,
+   "source": "osm"
+  },
+  {
+   "id": "a2959847756",
+   "nom": "Pestalozzi-Denkmal",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3756083,8.5387287",
+   "lat": 47.3756083,
+   "lng": 8.5387287,
+   "source": "osm"
+  },
+  {
+   "id": "a9660484860",
+   "nom": "Marschall Józef Piłsudski",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3781938,8.5446908",
+   "lat": 47.3781938,
+   "lng": 8.5446908,
+   "source": "osm"
+  },
+  {
+   "id": "a11806564986",
+   "nom": "Studio Omelani Art Gallery Beauty & Massage",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3786363,8.5444455",
+   "lat": 47.3786363,
+   "lng": 8.5444455,
+   "source": "osm"
+  },
+  {
+   "id": "a7050244186",
+   "nom": "Stadtmodell Zürich Heute",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3741346,8.540185",
+   "lat": 47.3741346,
+   "lng": 8.540185,
+   "source": "osm"
+  },
+  {
+   "id": "a10680579405",
+   "nom": "Urania Observatoire Zürich",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3743137,8.5393918",
+   "lat": 47.3743137,
+   "lng": 8.5393918,
+   "source": "osm"
+  },
+  {
+   "id": "a1584068320",
+   "nom": "Polyterrasse",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3760957,8.5465161",
+   "lat": 47.3760957,
+   "lng": 8.5465161,
+   "source": "osm"
+  },
+  {
+   "id": "a5046778512",
+   "nom": "Täufergedenkplatte",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3735112,8.5419236",
+   "lat": 47.3735112,
+   "lng": 8.5419236,
+   "source": "osm"
+  },
+  {
+   "id": "a8178623056",
+   "nom": "Alain Beer",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3791444,8.5460322",
+   "lat": 47.3791444,
+   "lng": 8.5460322,
+   "source": "osm"
+  },
+  {
+   "id": "a8184197134",
+   "nom": "Léa Josefina Berr",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3791418,8.5460357",
+   "lat": 47.3791418,
+   "lng": 8.5460357,
+   "source": "osm"
+  },
+  {
+   "id": "a1031293132",
+   "nom": "Lindenhof",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3730646,8.5413876",
+   "lat": 47.3730646,
+   "lng": 8.5413876,
+   "source": "osm"
+  },
+  {
+   "id": "a11758825733",
+   "nom": "Häusler Contemporary",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3808857,8.5422315",
+   "lat": 47.3808857,
+   "lng": 8.5422315,
+   "source": "osm"
+  },
+  {
+   "id": "a7423846036",
+   "nom": "Sodbrunnen",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3730554,8.5395733",
+   "lat": 47.3730554,
+   "lng": 8.5395733,
+   "source": "osm"
+  },
+  {
+   "id": "a2326150629",
+   "nom": "Focus Terra",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3783567,8.5474566",
+   "lat": 47.3783567,
+   "lng": 8.5474566,
+   "source": "osm"
+  },
+  {
+   "id": "a4792460822",
+   "nom": "museé Visionnnaire",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.373488,8.5452815",
+   "lat": 47.373488,
+   "lng": 8.5452815,
+   "source": "osm"
+  },
+  {
+   "id": "a11309285796",
+   "nom": "Schauplatz Brunngasse",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=47.3731453,8.5445227",
+   "lat": 47.3731453,
+   "lng": 8.5445227,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

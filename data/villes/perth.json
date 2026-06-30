@@ -11,7 +11,7 @@
  },
  "codeISO": "AU",
  "score_halal": 3.5,
- "halalScore": 7.0,
+ "halalScore": 7,
  "villeNonMusulmane": true,
  "description": "Ville isolée de la côte ouest. Communauté musulmane établie, mosquées et restaurants halal variés.",
  "metaDescription": "Ville isolée de la côte ouest. Communauté musulmane établie, mosquées et restaurants halal variés.",
@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Perth_City_Cbd_Panorama_%2826135877%29.jpeg/1920px-Perth_City_Cbd_Panorama_%2826135877%29.jpeg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 25,
+  "mosquees": 1,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,491 @@
   "ville non-musulmane",
   "océanie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Downtown Cafe",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9493276,115.8589938",
+   "lat": -31.9493276,
+   "lng": 115.8589938,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hadiqa",
+   "type": "moroccan, greek, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9551173,115.8640317",
+   "lat": -31.9551173,
+   "lng": 115.8640317,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Prestige Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.948904,115.8586554",
+   "lat": -31.948904,
+   "lng": 115.8586554,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Blue Sea Cafe",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9488537,115.8585527",
+   "lat": -31.9488537,
+   "lng": 115.8585527,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Efes Bir",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9481931,115.8570434",
+   "lat": -31.9481931,
+   "lng": 115.8570434,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "City Kebabs",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9516314,115.8543316",
+   "lat": -31.9516314,
+   "lng": 115.8543316,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Cafe",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9475476,115.8563173",
+   "lat": -31.9475476,
+   "lng": 115.8563173,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Kitchen",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9332077,115.8593498",
+   "lat": -31.9332077,
+   "lng": 115.8593498,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Roj Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9726586,115.8525941",
+   "lat": -31.9726586,
+   "lng": 115.8525941,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Cosmos Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9372606,115.8410818",
+   "lat": -31.9372606,
+   "lng": 115.8410818,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arik's Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9811593,115.8643874",
+   "lat": -31.9811593,
+   "lng": 115.8643874,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ankara Kebabs and Bakery",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9251029,115.8812943",
+   "lat": -31.9251029,
+   "lng": 115.8812943,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tasty Kebab & Pizza Subiaco",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9468954,115.8235466",
+   "lat": -31.9468954,
+   "lng": 115.8235466,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Perth Kebab Station",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.944107,115.8235785",
+   "lat": -31.944107,
+   "lng": 115.8235785,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Turkish Oven",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9722526,115.8949025",
+   "lat": -31.9722526,
+   "lng": 115.8949025,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Marrakech",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9727415,115.8958404",
+   "lat": -31.9727415,
+   "lng": 115.8958404,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Shop",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9409194,115.8094537",
+   "lat": -31.9409194,
+   "lng": 115.8094537,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Campus Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9808229,115.8194459",
+   "lat": -31.9808229,
+   "lng": 115.8194459,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Antep Mangal",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9864144,115.9040548",
+   "lat": -31.9864144,
+   "lng": 115.9040548,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Saltan Restaurant",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9770797,115.9123193",
+   "lat": -31.9770797,
+   "lng": 115.9123193,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ararat Kebabs",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9838995,115.8153608",
+   "lat": -31.9838995,
+   "lng": 115.8153608,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "George's Kebabs",
+   "type": "kebab, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-32.0042312,115.8935415",
+   "lat": -32.0042312,
+   "lng": 115.8935415,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Abra Kedabra",
+   "type": "burger, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.8987694,115.8899564",
+   "lat": -31.8987694,
+   "lng": 115.8899564,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Health freak cafe lounge",
+   "type": "moroccan, cake",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.9364824,115.7929608",
+   "lat": -31.9364824,
+   "lng": 115.7929608,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Little Lebanon",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=-31.89785,115.8286298",
+   "lat": -31.89785,
+   "lng": 115.8286298,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m150558747",
+   "nom": "Perth Mosque",
+   "type": "Mosquée",
+   "adresse": "William Street",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=-31.9435558,115.8623195",
+   "lat": -31.9435558,
+   "lng": 115.8623195,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a30736563",
+   "nom": "Main Gallery Building",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9506181,115.8609039",
+   "lat": -31.9506181,
+   "lng": 115.8609039,
+   "source": "osm"
+  },
+  {
+   "id": "a147657144",
+   "nom": "Perth Institute of Contemporary Arts",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9498206,115.8602382",
+   "lat": -31.9498206,
+   "lng": 115.8602382,
+   "source": "osm"
+  },
+  {
+   "id": "a563455636",
+   "nom": "Western Australian Museum Boola Bardip",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9494585,115.8617986",
+   "lat": -31.9494585,
+   "lng": 115.8617986,
+   "source": "osm"
+  },
+  {
+   "id": "a11009558326",
+   "nom": "Moore Contemporary",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.955324,115.8613958",
+   "lat": -31.955324,
+   "lng": 115.8613958,
+   "source": "osm"
+  },
+  {
+   "id": "a11009558327",
+   "nom": "Art Collective WA",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9553745,115.8615536",
+   "lat": -31.9553745,
+   "lng": 115.8615536,
+   "source": "osm"
+  },
+  {
+   "id": "a13454089104",
+   "nom": "Old Central Fire Station Heritage Centre",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.954836,115.8643686",
+   "lat": -31.954836,
+   "lng": 115.8643686,
+   "source": "osm"
+  },
+  {
+   "id": "a5387725431",
+   "nom": "Monkey - 1st level balcony",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9489377,115.8592745",
+   "lat": -31.9489377,
+   "lng": 115.8592745,
+   "source": "osm"
+  },
+  {
+   "id": "a3266637593",
+   "nom": "Chinatown Paifang",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9491981,115.8571212",
+   "lat": -31.9491981,
+   "lng": 115.8571212,
+   "source": "osm"
+  },
+  {
+   "id": "a68874563",
+   "nom": "Government House",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9570333,115.861431",
+   "lat": -31.9570333,
+   "lng": 115.861431,
+   "source": "osm"
+  },
+  {
+   "id": "a3823720858",
+   "nom": "Museum of Perth",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9564247,115.8579813",
+   "lat": -31.9564247,
+   "lng": 115.8579813,
+   "source": "osm"
+  },
+  {
+   "id": "a6366389386",
+   "nom": "Northbridge Piazza",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9477607,115.8570775",
+   "lat": -31.9477607,
+   "lng": 115.8570775,
+   "source": "osm"
+  },
+  {
+   "id": "a4418314790",
+   "nom": "Talbot Hobbs Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9579904,115.8588267",
+   "lat": -31.9579904,
+   "lng": 115.8588267,
+   "source": "osm"
+  },
+  {
+   "id": "a13903373944",
+   "nom": "Museum of Perth",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9510525,115.8536669",
+   "lat": -31.9510525,
+   "lng": 115.8536669,
+   "source": "osm"
+  },
+  {
+   "id": "a147704624",
+   "nom": "The Bell Tower",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9589591,115.8582207",
+   "lat": -31.9589591,
+   "lng": 115.8582207,
+   "source": "osm"
+  },
+  {
+   "id": "a3294728781",
+   "nom": "Narrows Interchange",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9586181,115.8507246",
+   "lat": -31.9586181,
+   "lng": 115.8507246,
+   "source": "osm"
+  },
+  {
+   "id": "a3429779114",
+   "nom": "AIDS Memorial Perth",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9413914,115.8554686",
+   "lat": -31.9413914,
+   "lng": 115.8554686,
+   "source": "osm"
+  },
+  {
+   "id": "a4467255594",
+   "nom": "Jacob's Ladder",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9557882,115.8459133",
+   "lat": -31.9557882,
+   "lng": 115.8459133,
+   "source": "osm"
+  },
+  {
+   "id": "a4448887673",
+   "nom": "South African War Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=-31.9550541,115.8446217",
+   "lat": -31.9550541,
+   "lng": 115.8446217,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

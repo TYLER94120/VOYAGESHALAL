@@ -10,8 +10,8 @@
   "lng": 85.324
  },
  "codeISO": "NP",
- "score_halal": 3.0,
- "halalScore": 6.0,
+ "score_halal": 3,
+ "halalScore": 6,
  "villeNonMusulmane": true,
  "description": "Capitale himalayenne aux temples. Mosquée Jame et adresses halal autour de Thamel pour les voyageurs.",
  "metaDescription": "Capitale himalayenne aux temples. Mosquée Jame et adresses halal autour de Thamel pour les voyageurs.",
@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Kathmandu-35.JPG/1920px-Kathmandu-35.JPG",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 5,
+  "mosquees": 3,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,313 @@
   "ville non-musulmane",
   "asie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Al Madina Halal Foods",
+   "type": "fish, breakfast, grill, tea, asian, diner, kebab, curry, indian, barbecue",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.7173026,85.3120868",
+   "lat": 27.7173026,
+   "lng": 85.3120868,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Merhaba",
+   "type": "mediterranean, german, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.7175501,85.3098975",
+   "lat": 27.7175501,
+   "lng": 85.3098975,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Anatolia",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.7119628,85.3096675",
+   "lat": 27.7119628,
+   "lng": 85.3096675,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sherpa sekuwa corner",
+   "type": "asian, chicken, coffee shop, fish, fish and chips, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.7367712,85.3869545",
+   "lat": 27.7367712,
+   "lng": 85.3869545,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Talchhikhel Kathi Roll and Paratha Center",
+   "type": "indian, arab, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=27.6573593,85.3195318",
+   "lat": 27.6573593,
+   "lng": 85.3195318,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m2989993605",
+   "nom": "कश्मीरी मस्जिद",
+   "type": "Mosquée",
+   "adresse": "Durbar Marg, Kathmandu",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=27.7088591,85.3174738",
+   "lat": 27.7088591,
+   "lng": 85.3174738,
+   "source": "osm"
+  },
+  {
+   "id": "m146196568",
+   "nom": "Jame Mosque",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=27.7068235,85.3168669",
+   "lat": 27.7068235,
+   "lng": 85.3168669,
+   "source": "osm"
+  },
+  {
+   "id": "m56688296",
+   "nom": "Boudhanāth Stupa",
+   "type": "Mosquée",
+   "adresse": "Boudha Main Road",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=27.7214431,85.3620441",
+   "lat": 27.7214431,
+   "lng": 85.3620441,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a5602334821",
+   "nom": "Star Banquet and Party Palace",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7165585,85.3258502",
+   "lat": 27.7165585,
+   "lng": 85.3258502,
+   "source": "osm"
+  },
+  {
+   "id": "a4790943724",
+   "nom": "Golchha Organisation",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7154193,85.3249789",
+   "lat": 27.7154193,
+   "lng": 85.3249789,
+   "source": "osm"
+  },
+  {
+   "id": "a5009767235",
+   "nom": "Nagpokhari",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.713488,85.324369",
+   "lat": 27.713488,
+   "lng": 85.324369,
+   "source": "osm"
+  },
+  {
+   "id": "a24758025",
+   "nom": "Narayanhiti Palace Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7156608,85.3201611",
+   "lat": 27.7156608,
+   "lng": 85.3201611,
+   "source": "osm"
+  },
+  {
+   "id": "a206868352",
+   "nom": "Narayanhiti Palace Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7156159,85.3201159",
+   "lat": 27.7156159,
+   "lng": 85.3201159,
+   "source": "osm"
+  },
+  {
+   "id": "a2164874168",
+   "nom": "Narayanhiti Palace Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7148956,85.3181031",
+   "lat": 27.7148956,
+   "lng": 85.3181031,
+   "source": "osm"
+  },
+  {
+   "id": "a2084372303",
+   "nom": "Chunni Devi",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7192529,85.3308204",
+   "lat": 27.7192529,
+   "lng": 85.3308204,
+   "source": "osm"
+  },
+  {
+   "id": "a2084372330",
+   "nom": "Siddhi Ganesh",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7192401,85.3308584",
+   "lat": 27.7192401,
+   "lng": 85.3308584,
+   "source": "osm"
+  },
+  {
+   "id": "a9447489417",
+   "nom": "Siwangi Pradhan",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7169029,85.331411",
+   "lat": 27.7169029,
+   "lng": 85.331411,
+   "source": "osm"
+  },
+  {
+   "id": "a2852782177",
+   "nom": "The City Museum Kathmandu",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7110138,85.3182587",
+   "lat": 27.7110138,
+   "lng": 85.3182587,
+   "source": "osm"
+  },
+  {
+   "id": "a4943542421",
+   "nom": "Gahana Pokhari",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7168843,85.3330423",
+   "lat": 27.7168843,
+   "lng": 85.3330423,
+   "source": "osm"
+  },
+  {
+   "id": "a85650618",
+   "nom": "Garden of Dreams",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7141051,85.3148269",
+   "lat": 27.7141051,
+   "lng": 85.3148269,
+   "source": "osm"
+  },
+  {
+   "id": "a1962909336",
+   "nom": "Keshar Mahal",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7146983,85.314299",
+   "lat": 27.7146983,
+   "lng": 85.314299,
+   "source": "osm"
+  },
+  {
+   "id": "a2087434219",
+   "nom": "Buddha stupa",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7183569,85.3348353",
+   "lat": 27.7183569,
+   "lng": 85.3348353,
+   "source": "osm"
+  },
+  {
+   "id": "a4616139789",
+   "nom": "Subisu Customer Care",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.724969,85.3314464",
+   "lat": 27.724969,
+   "lng": 85.3314464,
+   "source": "osm"
+  },
+  {
+   "id": "a4686199738",
+   "nom": "Prizma Digital Media",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7198217,85.3352484",
+   "lat": 27.7198217,
+   "lng": 85.3352484,
+   "source": "osm"
+  },
+  {
+   "id": "a6052389400",
+   "nom": "Socialtours Hub",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.713693,85.3124162",
+   "lat": 27.713693,
+   "lng": 85.3124162,
+   "source": "osm"
+  },
+  {
+   "id": "a4699485091",
+   "nom": "Solution Wizard Services",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=27.7060516,85.3230087",
+   "lat": 27.7060516,
+   "lng": 85.3230087,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

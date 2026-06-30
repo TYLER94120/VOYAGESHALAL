@@ -1,81 +1,82 @@
 {
-  "slug": "errachidia",
-  "nom": "Errachidia",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Sud du Maroc / Sahara",
-  "coordonnees": {
-    "lat": 31.9314,
-    "lng": -4.4244
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "Porte de la vallée du Ziz et de la route des kasbahs, Errachidia ouvre sur les palmeraies, les ksour de terre et les paysages du pré-Sahara.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ZL_PHotoGraphy-87.jpg/1920px-ZL_PHotoGraphy-87.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ZL_PHotoGraphy-87.jpg/1920px-ZL_PHotoGraphy-87.jpg",
-  "metaDescription": "Porte de la vallée du Ziz et de la route des kasbahs, Errachidia ouvre sur les palmeraies, les ksour de terre et les paysages du pré-Sahara.",
+ "slug": "errachidia",
+ "nom": "Errachidia",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Sud du Maroc / Sahara",
+ "coordonnees": {
+  "lat": 31.9314,
+  "lng": -4.4244
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "Porte de la vallée du Ziz et de la route des kasbahs, Errachidia ouvre sur les palmeraies, les ksour de terre et les paysages du pré-Sahara.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ZL_PHotoGraphy-87.jpg/1920px-ZL_PHotoGraphy-87.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/ZL_PHotoGraphy-87.jpg/1920px-ZL_PHotoGraphy-87.jpg",
+ "metaDescription": "Porte de la vallée du Ziz et de la route des kasbahs, Errachidia ouvre sur les palmeraies, les ksour de terre et les paysages du pré-Sahara.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 0,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Errachidia",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Errachidia",
+   "description": "Mosquée principale de la ville, prière du vendredi.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Errachidia%20Errachidia%20Maroc"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Vallée du Ziz",
+   "categorie": "Nature",
+   "description": "Immense palmeraie le long de l'oued Ziz, panoramas spectaculaires.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e%20du%20Ziz%20Errachidia%20Maroc"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "id": "a2",
+   "nom": "Source Bleue de Meski",
+   "categorie": "Nature",
+   "description": "Oasis et bassin naturel au bord de la palmeraie.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Source%20Bleue%20de%20Meski%20Errachidia%20Maroc"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Errachidia",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Errachidia",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Errachidia%20Errachidia%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Vallée du Ziz",
-      "categorie": "Nature",
-      "description": "Immense palmeraie le long de l'oued Ziz, panoramas spectaculaires.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e%20du%20Ziz%20Errachidia%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Source Bleue de Meski",
-      "categorie": "Nature",
-      "description": "Oasis et bassin naturel au bord de la palmeraie.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Source%20Bleue%20de%20Meski%20Errachidia%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Ksour de terre (route des kasbahs)",
-      "categorie": "Histoire",
-      "description": "Villages fortifiés berbères en pisé.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Ksour%20de%20terre%20%28route%20des%20kasbahs%29%20Errachidia%20Maroc"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "id": "a3",
+   "nom": "Ksour de terre (route des kasbahs)",
+   "categorie": "Histoire",
+   "description": "Villages fortifiés berbères en pisé.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Ksour%20de%20terre%20%28route%20des%20kasbahs%29%20Errachidia%20Maroc"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

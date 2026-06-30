@@ -1,81 +1,103 @@
 {
-  "slug": "nador",
-  "nom": "Nador",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Nord du Maroc",
-  "coordonnees": {
-    "lat": 35.1681,
-    "lng": -2.9335
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9.0,
-  "description": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
-  "metaDescription": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
+ "slug": "nador",
+ "nom": "Nador",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Nord du Maroc",
+ "coordonnees": {
+  "lat": 35.1681,
+  "lng": -2.9335
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9,
+ "description": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
+ "metaDescription": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 2,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Marbella",
+   "type": "fish, kebab, pizza, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1713933,-2.928498",
+   "lat": 35.1713933,
+   "lng": -2.928498,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Las Belgas",
+   "type": "burger, ice cream, moroccan, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.1789717,-2.9220735",
+   "lat": 35.1789717,
+   "lng": -2.9220735,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Nador",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Nador",
+   "description": "Mosquée principale de la ville, prière du vendredi.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Nador%20Nador%20Maroc"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Lagune de Marchica",
+   "categorie": "Nature",
+   "description": "Vaste lagune protégée, oiseaux migrateurs, promenade et sports nautiques.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Lagune%20de%20Marchica%20Nador%20Maroc"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Nador",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Nador",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Nador%20Nador%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Lagune de Marchica",
-      "categorie": "Nature",
-      "description": "Vaste lagune protégée, oiseaux migrateurs, promenade et sports nautiques.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Lagune%20de%20Marchica%20Nador%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Marchica Parc",
-      "categorie": "Loisirs",
-      "description": "Aménagements de loisirs et corniche au bord de la lagune.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Marchica%20Parc%20Nador%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Corniche de Nador",
-      "categorie": "Loisirs",
-      "description": "Promenade animée le soir face à l'eau.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Corniche%20de%20Nador%20Nador%20Maroc"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "id": "a2",
+   "nom": "Marchica Parc",
+   "categorie": "Loisirs",
+   "description": "Aménagements de loisirs et corniche au bord de la lagune.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Marchica%20Parc%20Nador%20Maroc"
+  },
+  {
+   "id": "a3",
+   "nom": "Corniche de Nador",
+   "categorie": "Loisirs",
+   "description": "Promenade animée le soir face à l'eau.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Corniche%20de%20Nador%20Nador%20Maroc"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

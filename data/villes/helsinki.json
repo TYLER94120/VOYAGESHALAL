@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Helsinki_Metro_bridge.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 6,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,696 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Lasipalatsi",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1703705,24.9369528",
+   "lat": 60.1703705,
+   "lng": 24.9369528,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Thai Vegan Kitchen",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1667357,24.9293987",
+   "lat": 60.1667357,
+   "lng": 24.9293987,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Flavour Heaven",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1796731,24.9588779",
+   "lat": 60.1796731,
+   "lng": 24.9588779,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sen Viet",
+   "type": "vietnamese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1533508,24.9103932",
+   "lat": 60.1533508,
+   "lng": 24.9103932,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Elias Döner Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.169371,24.9415912",
+   "lat": 60.169371,
+   "lng": 24.9415912,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "King Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1703901,24.9418605",
+   "lat": 60.1703901,
+   "lng": 24.9418605,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Annan Pippuri",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1680536,24.9355076",
+   "lat": 60.1680536,
+   "lng": 24.9355076,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fredi Pizzeria",
+   "type": "pizza, kebab, burger, vöner",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1678465,24.9322975",
+   "lat": 60.1678465,
+   "lng": 24.9322975,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Eerikin pippuri",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1665111,24.9329111",
+   "lat": 60.1665111,
+   "lng": 24.9329111,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Karaz",
+   "type": "syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.16563,24.9360282",
+   "lat": 60.16563,
+   "lng": 24.9360282,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Baba Döner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1716967,24.9468172",
+   "lat": 60.1716967,
+   "lng": 24.9468172,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nefer Nefer Nefer",
+   "type": "persian, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1660454,24.943352",
+   "lat": 60.1660454,
+   "lng": 24.943352,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Levant",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1641956,24.9361548",
+   "lat": 60.1641956,
+   "lng": 24.9361548,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "DIF Doner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1638567,24.9443503",
+   "lat": 60.1638567,
+   "lng": 24.9443503,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Grill",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1629831,24.9391073",
+   "lat": 60.1629831,
+   "lng": 24.9391073,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Halikarnas",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1650075,24.9260949",
+   "lat": 60.1650075,
+   "lng": 24.9260949,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Humu'z & Döners Hakaniemi",
+   "type": "kebab, mediterranean, pita",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1786523,24.9493334",
+   "lat": 60.1786523,
+   "lng": 24.9493334,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hani Cafe'Chi",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1743731,24.9590926",
+   "lat": 60.1743731,
+   "lng": 24.9590926,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner Osman",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1808222,24.949884",
+   "lat": 60.1808222,
+   "lng": 24.949884,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ravintola Lafal",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1807234,24.9517872",
+   "lat": 60.1807234,
+   "lng": 24.9517872,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ani",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1572825,24.9334173",
+   "lat": 60.1572825,
+   "lng": 24.9334173,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Uyghur Noodle House",
+   "type": "uyghur",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1817835,24.949821",
+   "lat": 60.1817835,
+   "lng": 24.949821,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ravintola Merihaka",
+   "type": "burger, pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1797376,24.9610528",
+   "lat": 60.1797376,
+   "lng": 24.9610528,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Elias döner kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1581094,24.9132354",
+   "lat": 60.1581094,
+   "lng": 24.9132354,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ismet",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1577894,24.9120669",
+   "lat": 60.1577894,
+   "lng": 24.9120669,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Banu Cafe",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1571617,24.9122746",
+   "lat": 60.1571617,
+   "lng": 24.9122746,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Katajanokan Pizzapalvelu",
+   "type": "burger, pasta, pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1681057,24.9753665",
+   "lat": 60.1681057,
+   "lng": 24.9753665,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner Harju",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1886904,24.9532196",
+   "lat": 60.1886904,
+   "lng": 24.9532196,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ravintola Almas",
+   "type": "pizza, persian, burger, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.179996,24.9746999",
+   "lat": 60.179996,
+   "lng": 24.9746999,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Apollo",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1882423,24.9577686",
+   "lat": 60.1882423,
+   "lng": 24.9577686,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bröner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1884772,24.9579686",
+   "lat": 60.1884772,
+   "lng": 24.9579686,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "King Kebab",
+   "type": "kebab, pizza, falafel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1950072,24.9565826",
+   "lat": 60.1950072,
+   "lng": 24.9565826,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Basisa Pizza ja Burger",
+   "type": "burger, kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1871197,24.9823992",
+   "lat": 60.1871197,
+   "lng": 24.9823992,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ravintola Mäkenlänkulma",
+   "type": "pizza, kebab, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1969909,24.9517405",
+   "lat": 60.1969909,
+   "lng": 24.9517405,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lebanese food",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1972187,24.9511653",
+   "lat": 60.1972187,
+   "lng": 24.9511653,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hermannin Pizza",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1947551,24.9665342",
+   "lat": 60.1947551,
+   "lng": 24.9665342,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kirkuk",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1506842,24.8863892",
+   "lat": 60.1506842,
+   "lng": 24.8863892,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Vanha Munkki",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.1952603,24.8732632",
+   "lat": 60.1952603,
+   "lng": 24.8732632,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ravello",
+   "type": "pizza, italian, burger, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.2130639,24.9439246",
+   "lat": 60.2130639,
+   "lng": 24.9439246,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Käpylän Pizza & Kebab Palvelu",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=60.2162709,24.9586512",
+   "lat": 60.2162709,
+   "lng": 24.9586512,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m3055478176",
+   "nom": "Suomen Islam-seurakunta",
+   "type": "Mosquée",
+   "adresse": "Fredrikinkatu, Helsinki",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=60.1634718,24.9385134",
+   "lat": 60.1634718,
+   "lng": 24.9385134,
+   "source": "osm"
+  },
+  {
+   "id": "m419479428",
+   "nom": "Helsingin tuomiokirkko",
+   "type": "Mosquée",
+   "adresse": "Unioninkatu, Helsinki",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=60.170378,24.9521768",
+   "lat": 60.170378,
+   "lng": 24.9521768,
+   "source": "osm"
+  },
+  {
+   "id": "m124143121",
+   "nom": "Temppeliaukion kirkko",
+   "type": "Mosquée",
+   "adresse": "Lutherinkatu, Helsinki",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=60.1729665,24.9252044",
+   "lat": 60.1729665,
+   "lng": 24.9252044,
+   "source": "osm"
+  },
+  {
+   "id": "m15242921",
+   "nom": "Uspenskin katedraali",
+   "type": "Mosquée",
+   "adresse": "Kanavakatu, Helsinki",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=60.1684504,24.959952",
+   "lat": 60.1684504,
+   "lng": 24.959952,
+   "source": "osm"
+  },
+  {
+   "id": "m277575650",
+   "nom": "Helsingin Islam-keskus",
+   "type": "Mosquée",
+   "adresse": "Helsinki",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=60.1996823,24.9372129",
+   "lat": 60.1996823,
+   "lng": 24.9372129,
+   "source": "osm"
+  },
+  {
+   "id": "m307963893",
+   "nom": "Al-Iman moskeija",
+   "type": "Mosquée",
+   "adresse": "Munkkiniemen puistotie, Helsinki",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=60.1964524,24.8830704",
+   "lat": 60.1964524,
+   "lng": 24.8830704,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a5887336141",
+   "nom": "Amos Rex",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1706865,24.9364447",
+   "lat": 60.1706865,
+   "lng": 24.9364447,
+   "source": "osm"
+  },
+  {
+   "id": "a5335369099",
+   "nom": "Rakuuna-reliefi",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1702241,24.9352982",
+   "lat": 60.1702241,
+   "lng": 24.9352982,
+   "source": "osm"
+  },
+  {
+   "id": "a302566824",
+   "nom": "Itä ja Länsi / J. K. Paasikiven muistomerkki",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1708847,24.93585",
+   "lat": 60.1708847,
+   "lng": 24.93585,
+   "source": "osm"
+  },
+  {
+   "id": "a5371072877",
+   "nom": "Lastensiirrot 1939-1945",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1713703,24.9399225",
+   "lat": 60.1713703,
+   "lng": 24.9399225,
+   "source": "osm"
+  },
+  {
+   "id": "a10612313222",
+   "nom": "Uusi metsätoimisto",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.168204,24.9374421",
+   "lat": 60.168204,
+   "lng": 24.9374421,
+   "source": "osm"
+  },
+  {
+   "id": "a5371115666",
+   "nom": "VR:n 100-vuotismuistolaatta",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1707479,24.9416832",
+   "lat": 60.1707479,
+   "lng": 24.9416832,
+   "source": "osm"
+  },
+  {
+   "id": "a6787944216",
+   "nom": "Elias Kopelowsky",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.167949,24.9385975",
+   "lat": 60.167949,
+   "lng": 24.9385975,
+   "source": "osm"
+  },
+  {
+   "id": "a8327198107",
+   "nom": "Kyösti Kallio",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1713174,24.9420605",
+   "lat": 60.1713174,
+   "lng": 24.9420605,
+   "source": "osm"
+  },
+  {
+   "id": "a297278238",
+   "nom": "Menneet ritarit",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1716222,24.9352549",
+   "lat": 60.1716222,
+   "lng": 24.9352549,
+   "source": "osm"
+  },
+  {
+   "id": "a8042215",
+   "nom": "Kiasma",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1720445,24.9365811",
+   "lat": 60.1720445,
+   "lng": 24.9365811,
+   "source": "osm"
+  },
+  {
+   "id": "a8033120",
+   "nom": "Ateneum",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1700224,24.9440678",
+   "lat": 60.1700224,
+   "lng": 24.9440678,
+   "source": "osm"
+  },
+  {
+   "id": "a60131839",
+   "nom": "Albert Edelfelt",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1702393,24.9441082",
+   "lat": 60.1702393,
+   "lng": 24.9441082,
+   "source": "osm"
+  },
+  {
+   "id": "a60133671",
+   "nom": "Elias Lönnrot",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1667779,24.9387994",
+   "lat": 60.1667779,
+   "lng": 24.9387994,
+   "source": "osm"
+  },
+  {
+   "id": "a11739026340",
+   "nom": "Marttojen muistokivi",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1667791,24.9391066",
+   "lat": 60.1667791,
+   "lng": 24.9391066,
+   "source": "osm"
+  },
+  {
+   "id": "a319780239",
+   "nom": "P. E. Svinhufvud",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1723468,24.9342941",
+   "lat": 60.1723468,
+   "lng": 24.9342941,
+   "source": "osm"
+  },
+  {
+   "id": "a60131847",
+   "nom": "Aleksis Kiven muistopatsas",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1716831,24.9439197",
+   "lat": 60.1716831,
+   "lng": 24.9439197,
+   "source": "osm"
+  },
+  {
+   "id": "a12113075725",
+   "nom": "Punkmuseo",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1696784,24.9315947",
+   "lat": 60.1696784,
+   "lng": 24.9315947,
+   "source": "osm"
+  },
+  {
+   "id": "a4747221564",
+   "nom": "Galleria Halmetoja",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=60.1666464,24.9363607",
+   "lat": 60.1666464,
+   "lng": 24.9363607,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

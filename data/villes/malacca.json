@@ -1,76 +1,248 @@
 {
-  "slug": "malacca",
-  "nom": "Malacca",
-  "pays": "Malaisie",
-  "pays_slug": "malaisie",
-  "continent": "Asie",
-  "region": "Malaisie",
-  "coordonnees": {
-    "lat": 2.1896,
-    "lng": 102.2501
+ "slug": "malacca",
+ "nom": "Malacca",
+ "pays": "Malaisie",
+ "pays_slug": "malaisie",
+ "continent": "Asie",
+ "region": "Malaisie",
+ "coordonnees": {
+  "lat": 2.1896,
+  "lng": 102.2501
+ },
+ "codeISO": "",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "Cité historique du détroit classée UNESCO, Malacca mêle héritages malais, et abrite la mosquée flottante du détroit face à la mer.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/CHRIST_CHURCH_MALACCA_0872.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/2/20/CHRIST_CHURCH_MALACCA_0872.jpg",
+ "metaDescription": "Cité historique du détroit classée UNESCO, Malacca mêle héritages malais, et abrite la mosquée flottante du détroit face à la mer.",
+ "statistiques": {
+  "restaurants_halal": 17,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.1892296,102.2494958",
+   "lat": 2.1892296,
+   "lng": 102.2494958,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "Cité historique du détroit classée UNESCO, Malacca mêle héritages malais, et abrite la mosquée flottante du détroit face à la mer.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/CHRIST_CHURCH_MALACCA_0872.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/2/20/CHRIST_CHURCH_MALACCA_0872.jpg",
-  "metaDescription": "Cité historique du détroit classée UNESCO, Malacca mêle héritages malais, et abrite la mosquée flottante du détroit face à la mer.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.1904753,102.2489486",
+   "lat": 2.1904753,
+   "lng": 102.2489486,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.1901774,102.2527822",
+   "lat": 2.1901774,
+   "lng": 102.2527822,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Malacca",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Malacca",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Malacca%20Malacca"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée du détroit de Malacca",
-      "categorie": "Spirituel",
-      "description": "Mosquée semblant flotter sur l'eau, magnifique au couchant.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20du%20d%C3%A9troit%20de%20Malacca%20Malacca"
-    },
-    {
-      "id": "a2",
-      "nom": "Vieille ville (UNESCO)",
-      "categorie": "Culture",
-      "description": "Jonker Street, maisons-boutiques et patrimoine du détroit.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20%28UNESCO%29%20Malacca"
-    },
-    {
-      "id": "a3",
-      "nom": "Mosquée Kampung Kling",
-      "categorie": "Spirituel",
-      "description": "Ancienne mosquée au minaret de style pagode.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Kampung%20Kling%20Malacca"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Marrybrown",
+   "type": "malaysian, chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.1900884,102.252853",
+   "lat": 2.1900884,
+   "lng": 102.252853,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mochee Dim Sum House",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.1949817,102.2542653",
+   "lat": 2.1949817,
+   "lng": 102.2542653,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Sushi Hut",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.1968854,102.2635055",
+   "lat": 2.1968854,
+   "lng": 102.2635055,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Cengkerang Seafood Jumble",
+   "type": "seafood, international",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.1978644,102.2331426",
+   "lat": 2.1978644,
+   "lng": 102.2331426,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.202795,102.2232813",
+   "lat": 2.202795,
+   "lng": 102.2232813,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.2214757,102.2499708",
+   "lat": 2.2214757,
+   "lng": 102.2499708,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ikan Bakar Muara",
+   "type": "seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.1743603,102.289239",
+   "lat": 2.1743603,
+   "lng": 102.289239,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.2316832,102.2813221",
+   "lat": 2.2316832,
+   "lng": 102.2813221,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bukit Beruang Heights",
+   "type": "malay",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.2371523,102.2786529",
+   "lat": 2.2371523,
+   "lng": 102.2786529,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Capy Fried Chicken",
+   "type": "burger, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.2165793,102.1965525",
+   "lat": 2.2165793,
+   "lng": 102.1965525,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.251864,102.245857",
+   "lat": 2.251864,
+   "lng": 102.245857,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "McDonald's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.2536748,102.2220753",
+   "lat": 2.2536748,
+   "lng": 102.2220753,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sandwich Spot",
+   "type": "arab, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.1964945,102.2481955",
+   "lat": 2.1964945,
+   "lng": 102.2481955,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Andalus kitchen",
+   "type": "arab, italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=2.1970802,102.250228",
+   "lat": 2.1970802,
+   "lng": 102.250228,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Malacca",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Malacca",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Malacca%20Malacca"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée du détroit de Malacca",
+   "categorie": "Spirituel",
+   "description": "Mosquée semblant flotter sur l'eau, magnifique au couchant.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20du%20d%C3%A9troit%20de%20Malacca%20Malacca"
+  },
+  {
+   "id": "a2",
+   "nom": "Vieille ville (UNESCO)",
+   "categorie": "Culture",
+   "description": "Jonker Street, maisons-boutiques et patrimoine du détroit.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20%28UNESCO%29%20Malacca"
+  },
+  {
+   "id": "a3",
+   "nom": "Mosquée Kampung Kling",
+   "categorie": "Spirituel",
+   "description": "Ancienne mosquée au minaret de style pagode.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Kampung%20Kling%20Malacca"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

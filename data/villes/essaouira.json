@@ -1,90 +1,412 @@
 {
-  "slug": "essaouira",
-  "nom": "Essaouira",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Sud du Maroc",
-  "coordonnees": {
-    "lat": 31.5085,
-    "lng": -9.7595
-  },
-  "codeISO": "MA",
-  "score_halal": 4.4,
-  "halalScore": 8.8,
-  "description": "'La cité des vents', médina atlantique classée UNESCO, port de pêche animé, artistes et spot de kitesurf mondial. Arganiers alentour.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Maroc_Essaouira_Luc_Viatour_1.JPG/1920px-Maroc_Essaouira_Luc_Viatour_1.JPG",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Maroc_Essaouira_Luc_Viatour_1.JPG/1920px-Maroc_Essaouira_Luc_Viatour_1.JPG",
-  "metaDescription": "'La cité des vents', médina atlantique classée UNESCO, port de pêche animé, artistes et spot de kitesurf mondial. Arganiers alentour.",
+ "slug": "essaouira",
+ "nom": "Essaouira",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Sud du Maroc",
+ "coordonnees": {
+  "lat": 31.5085,
+  "lng": -9.7595
+ },
+ "codeISO": "MA",
+ "score_halal": 4.4,
+ "halalScore": 8.8,
+ "description": "'La cité des vents', médina atlantique classée UNESCO, port de pêche animé, artistes et spot de kitesurf mondial. Arganiers alentour.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Maroc_Essaouira_Luc_Viatour_1.JPG/1920px-Maroc_Essaouira_Luc_Viatour_1.JPG",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Maroc_Essaouira_Luc_Viatour_1.JPG/1920px-Maroc_Essaouira_Luc_Viatour_1.JPG",
+ "metaDescription": "'La cité des vents', médina atlantique classée UNESCO, port de pêche animé, artistes et spot de kitesurf mondial. Arganiers alentour.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 32,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Restaurant Le Chacal Chez Mizar",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5054433,-9.7568424",
+   "lat": 31.5054433,
+   "lng": -9.7568424,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "L'arôme des Alizés",
+   "type": "arab, moroccan, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5044455,-9.7575577",
+   "lat": 31.5044455,
+   "lng": -9.7575577,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Essaouira",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Essaouira",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Essaouira%20Essaouira%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Médina & remparts (UNESCO)",
-      "categorie": "Culture",
-      "description": "Skala de la ville, ruelles bleues et galeries d'art.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20%26%20remparts%20%28UNESCO%29%20Essaouira%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Port de pêche",
-      "categorie": "Culture",
-      "description": "Barques bleues, criée du poisson, ambiance authentique.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Port%20de%20p%C3%AAche%20Essaouira%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Kitesurf & planche à voile",
-      "categorie": "Sport nautique",
-      "description": "Spot mondial pour les sports de glisse grâce aux alizés.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Kitesurf%20%26%20planche%20%C3%A0%20voile%20Essaouira%20Maroc"
-    },
-    {
-      "id": "a4",
-      "nom": "Coopératives d'huile d'argan",
-      "categorie": "Agritourisme",
-      "description": "Découverte de la production d'huile d'argan par les femmes berbères.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Coop%C3%A9ratives%20d%27huile%20d%27argan%20Essaouira%20Maroc"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Snack la Plage",
+   "type": "falafel, moroccan, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.505412,-9.7633306",
+   "lat": 31.505412,
+   "lng": -9.7633306,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Riat Yantiri",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5038203,-9.7566237",
+   "lat": 31.5038203,
+   "lng": -9.7566237,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Vague Bleue",
+   "type": "italian, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5132102,-9.7667714",
+   "lat": 31.5132102,
+   "lng": -9.7667714,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurant Izzaella",
+   "type": "moroccan, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5141613,-9.7662419",
+   "lat": 31.5141613,
+   "lng": -9.7662419,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Loubna",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5135546,-9.768081",
+   "lat": 31.5135546,
+   "lng": -9.768081,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Brixi",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5144998,-9.767608",
+   "lat": 31.5144998,
+   "lng": -9.767608,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Miloud",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5138284,-9.7686731",
+   "lat": 31.5138284,
+   "lng": -9.7686731,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Fondouk By Dar l'Oussia",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5112997,-9.7703138",
+   "lat": 31.5112997,
+   "lng": -9.7703138,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Salma & kaltoum",
+   "type": "moroccan, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5144693,-9.7685225",
+   "lat": 31.5144693,
+   "lng": -9.7685225,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tara Cafe",
+   "type": "african, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5154054,-9.7681698",
+   "lat": 31.5154054,
+   "lng": -9.7681698,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Delices et saveurs de mogador",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5153832,-9.7682026",
+   "lat": 31.5153832,
+   "lng": -9.7682026,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Café Tara",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5155014,-9.7681239",
+   "lat": 31.5155014,
+   "lng": -9.7681239,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Delices et saveurs",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5154799,-9.7681672",
+   "lat": 31.5154799,
+   "lng": -9.7681672,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "restaurant libanais",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5116742,-9.7708654",
+   "lat": 31.5116742,
+   "lng": -9.7708654,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "les saveurs de ma mére",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5143151,-9.7694518",
+   "lat": 31.5143151,
+   "lng": -9.7694518,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Trees little Birds",
+   "type": "moroccan, international",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5150603,-9.768794",
+   "lat": 31.5150603,
+   "lng": -9.768794,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "L'Horloge",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5123175,-9.7708562",
+   "lat": 31.5123175,
+   "lng": -9.7708562,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurant Dar Tawrirte",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5149228,-9.7692117",
+   "lat": 31.5149228,
+   "lng": -9.7692117,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Petite Perle",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5124742,-9.7711049",
+   "lat": 31.5124742,
+   "lng": -9.7711049,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Keltoum",
+   "type": "french, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5129646,-9.7709217",
+   "lat": 31.5129646,
+   "lng": -9.7709217,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Al Houma",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5125827,-9.7712085",
+   "lat": 31.5125827,
+   "lng": -9.7712085,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Adwak",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5129204,-9.7711223",
+   "lat": 31.5129204,
+   "lng": -9.7711223,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Said",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5127529,-9.7712576",
+   "lat": 31.5127529,
+   "lng": -9.7712576,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "café restaurant Teranga",
+   "type": "coffee shop, diner, african, local, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5138684,-9.7709761",
+   "lat": 31.5138684,
+   "lng": -9.7709761,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Corail at Latifa",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5139115,-9.7709946",
+   "lat": 31.5139115,
+   "lng": -9.7709946,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Kherfa",
+   "type": "italian pizza, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.513764,-9.7710943",
+   "lat": 31.513764,
+   "lng": -9.7710943,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "L'or vert",
+   "type": "moroccan, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5137676,-9.771234",
+   "lat": 31.5137676,
+   "lng": -9.771234,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Marrakech",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5121979,-9.7720695",
+   "lat": 31.5121979,
+   "lng": -9.7720695,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Sirocco",
+   "type": "moroccan, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5134623,-9.7720267",
+   "lat": 31.5134623,
+   "lng": -9.7720267,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "d'Orient et d'Ailleurs",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=31.5146849,-9.7717909",
+   "lat": 31.5146849,
+   "lng": -9.7717909,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Essaouira",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Essaouira",
+   "description": "Mosquée principale de la ville, prière du vendredi.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Essaouira%20Essaouira%20Maroc"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Médina & remparts (UNESCO)",
+   "categorie": "Culture",
+   "description": "Skala de la ville, ruelles bleues et galeries d'art.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20%26%20remparts%20%28UNESCO%29%20Essaouira%20Maroc"
+  },
+  {
+   "id": "a2",
+   "nom": "Port de pêche",
+   "categorie": "Culture",
+   "description": "Barques bleues, criée du poisson, ambiance authentique.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Port%20de%20p%C3%AAche%20Essaouira%20Maroc"
+  },
+  {
+   "id": "a3",
+   "nom": "Kitesurf & planche à voile",
+   "categorie": "Sport nautique",
+   "description": "Spot mondial pour les sports de glisse grâce aux alizés.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Kitesurf%20%26%20planche%20%C3%A0%20voile%20Essaouira%20Maroc"
+  },
+  {
+   "id": "a4",
+   "nom": "Coopératives d'huile d'argan",
+   "categorie": "Agritourisme",
+   "description": "Découverte de la production d'huile d'argan par les femmes berbères.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Coop%C3%A9ratives%20d%27huile%20d%27argan%20Essaouira%20Maroc"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

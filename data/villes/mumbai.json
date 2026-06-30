@@ -1,75 +1,317 @@
 {
-  "slug": "mumbai",
-  "nom": "Mumbai",
-  "pays": "Inde",
-  "pays_slug": "inde",
-  "continent": "Asie",
-  "region": "Inde",
-  "coordonnees": {
-    "lat": 19.076,
-    "lng": 72.8777
+ "slug": "mumbai",
+ "nom": "Mumbai",
+ "pays": "Inde",
+ "pays_slug": "inde",
+ "continent": "Asie",
+ "region": "Inde",
+ "coordonnees": {
+  "lat": 19.076,
+  "lng": 72.8777
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.7,
+ "description": "Mégapole cosmopolite de l'Inde, Mumbai abrite la mosquée Haji Ali sur son îlot et de nombreuses adresses halal dans les quartiers musulmans animés.",
+ "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+ "metaDescription": "Mégapole cosmopolite de l'Inde, Mumbai abrite la mosquée Haji Ali sur son îlot et de nombreuses adresses halal dans les quartiers musulmans animés.",
+ "statistiques": {
+  "restaurants_halal": 24,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Istanbul Darbar",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0790685,72.8799913",
+   "lat": 19.0790685,
+   "lng": 72.8799913,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.7,
-  "description": "Mégapole cosmopolite de l'Inde, Mumbai abrite la mosquée Haji Ali sur son îlot et de nombreuses adresses halal dans les quartiers musulmans animés.",
-  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
-  "metaDescription": "Mégapole cosmopolite de l'Inde, Mumbai abrite la mosquée Haji Ali sur son îlot et de nombreuses adresses halal dans les quartiers musulmans animés.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Persian Darbar",
+   "type": "indian, chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.1076768,72.8833929",
+   "lat": 19.1076768,
+   "lng": 72.8833929,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Shawarma House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0531306,72.8292027",
+   "lat": 19.0531306,
+   "lng": 72.8292027,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Mumbai",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Mumbai",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Mumbai%20Mumbai"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Haji Ali",
-      "categorie": "Spirituel",
-      "description": "Sanctuaire sur un îlot relié par une digue.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Haji%20Ali%20Mumbai"
-    },
-    {
-      "id": "a2",
-      "nom": "Porte de l'Inde",
-      "categorie": "Histoire",
-      "description": "Arc monumental face à la mer d'Arabie.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Porte%20de%20l%27Inde%20Mumbai"
-    },
-    {
-      "id": "a3",
-      "nom": "Quartier de Mohammed Ali Road",
-      "categorie": "Culture",
-      "description": "Rue gastronomique halal très réputée le soir.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20Mohammed%20Ali%20Road%20Mumbai"
-    }
-  ],
-  "donneesAVenir": true
+  {
+   "nom": "Punjabi Chandu Halwai",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0183404,72.8478121",
+   "lat": 19.0183404,
+   "lng": 72.8478121,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Celejor",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0183258,72.8475984",
+   "lat": 19.0183258,
+   "lng": 72.8475984,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Delhi Darbar",
+   "type": "kebab, indian, asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.1356062,72.8476525",
+   "lat": 19.1356062,
+   "lng": 72.8476525,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Knoshh - The Food Hall",
+   "type": "burger, regional, pizza, chinese, sandwich, chicken, seafood, indian, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.126962,72.829047",
+   "lat": 19.126962,
+   "lng": 72.829047,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarma's & More",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0770035,72.8659697",
+   "lat": 19.0770035,
+   "lng": 72.8659697,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Deep Punjab Dhaba",
+   "type": "chicken, kebab, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.1039038,72.8869689",
+   "lat": 19.1039038,
+   "lng": 72.8869689,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Amar Fast Food And Juice Center",
+   "type": "pizza, burger, sandwich, chicken, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.1070411,72.86426",
+   "lat": 19.1070411,
+   "lng": 72.86426,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arbab",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0598873,72.834083",
+   "lat": 19.0598873,
+   "lng": 72.834083,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aromas",
+   "type": "coffee shop, sandwich, fish and chips, burger, pasta, mediterranean, lebanese, chinese, cake, brunch, italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.116857,72.9098143",
+   "lat": 19.116857,
+   "lng": 72.9098143,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Carter's Blue",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0707235,72.8229574",
+   "lat": 19.0707235,
+   "lng": 72.8229574,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mezbaan",
+   "type": "lebanese, chinese, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0707547,72.8224918",
+   "lat": 19.0707547,
+   "lng": 72.8224918,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrakesh",
+   "type": "lebanese, chinese, mughlai, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0511682,72.8276033",
+   "lat": 19.0511682,
+   "lng": 72.8276033,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Wraps junction",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.119617,72.9114202",
+   "lat": 19.119617,
+   "lng": 72.9114202,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ayaz's The Kebab Palace",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0545043,72.824945",
+   "lat": 19.0545043,
+   "lng": 72.824945,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarmaji",
+   "type": "chinese, indian, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0257975,72.85527",
+   "lat": 19.0257975,
+   "lng": 72.85527,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hit n Run",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.1032311,72.8270155",
+   "lat": 19.1032311,
+   "lng": 72.8270155,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hit n Run",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.1032478,72.8270016",
+   "lat": 19.1032478,
+   "lng": 72.8270016,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Cafe Gulshan",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0258324,72.8503463",
+   "lat": 19.0258324,
+   "lng": 72.8503463,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Shawarma and Momo Factory",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.0473801,72.8250462",
+   "lat": 19.0473801,
+   "lng": 72.8250462,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Za'atar",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.1176258,72.8291858",
+   "lat": 19.1176258,
+   "lng": 72.8291858,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab and Biryani Station",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=19.1272199,72.9192179",
+   "lat": 19.1272199,
+   "lng": 72.9192179,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Mumbai",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Mumbai",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Mumbai%20Mumbai"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Haji Ali",
+   "categorie": "Spirituel",
+   "description": "Sanctuaire sur un îlot relié par une digue.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Haji%20Ali%20Mumbai"
+  },
+  {
+   "id": "a2",
+   "nom": "Porte de l'Inde",
+   "categorie": "Histoire",
+   "description": "Arc monumental face à la mer d'Arabie.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Porte%20de%20l%27Inde%20Mumbai"
+  },
+  {
+   "id": "a3",
+   "nom": "Quartier de Mohammed Ali Road",
+   "categorie": "Culture",
+   "description": "Rue gastronomique halal très réputée le soir.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Quartier%20de%20Mohammed%20Ali%20Road%20Mumbai"
+  }
+ ],
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Geneva_from_Mount_Sal%C3%A8ve.jpg/1920px-Geneva_from_Mount_Sal%C3%A8ve.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 5,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,685 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Meyhanè",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2015675,6.1421016",
+   "lat": 46.2015675,
+   "lng": 6.1421016,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "CADMUS",
+   "type": "middle eastern, lebanese, arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.200424,6.1345895",
+   "lat": 46.200424,
+   "lng": 6.1345895,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Food Adict",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2579834,6.1131128",
+   "lat": 46.2579834,
+   "lng": 6.1131128,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "B-Chef",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.1971433,6.2358288",
+   "lat": 46.1971433,
+   "lng": 6.2358288,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Quick",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.1824099,6.2310853",
+   "lat": 46.1824099,
+   "lng": 6.2310853,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Chrono PIzza",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.1977173,6.2366762",
+   "lat": 46.1977173,
+   "lng": 6.2366762,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Burger's",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.1796609,6.2339505",
+   "lat": 46.1796609,
+   "lng": 6.2339505,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Restô Beirut",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2063942,6.1413661",
+   "lat": 46.2063942,
+   "lng": 6.1413661,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sam's Tacos Burger Kebab",
+   "type": "burger, kebab, mexican",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2080235,6.1441102",
+   "lat": 46.2080235,
+   "lng": 6.1441102,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le phare",
+   "type": "tapas, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2080154,6.1442005",
+   "lat": 46.2080154,
+   "lng": 6.1442005,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Street Beirut",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2004711,6.1397543",
+   "lat": 46.2004711,
+   "lng": 6.1397543,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab Instanbul",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2091142,6.143346",
+   "lat": 46.2091142,
+   "lng": 6.143346,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "L'atlas",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2097484,6.1453048",
+   "lat": 46.2097484,
+   "lng": 6.1453048,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2023213,6.1509912",
+   "lat": 46.2023213,
+   "lng": 6.1509912,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Parfums de Beyrouth",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.209953,6.1458983",
+   "lat": 46.209953,
+   "lng": 6.1458983,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Saj Eat",
+   "type": "lebanese, syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2101562,6.1449928",
+   "lat": 46.2101562,
+   "lng": 6.1449928,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurant Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2082341,6.1361618",
+   "lat": 46.2082341,
+   "lng": 6.1361618,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sultan Beyrouth",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2103829,6.1459237",
+   "lat": 46.2103829,
+   "lng": 6.1459237,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Silver Kebab Gare",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2097454,6.1379912",
+   "lat": 46.2097454,
+   "lng": 6.1379912,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pacha",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2105782,6.1460727",
+   "lat": 46.2105782,
+   "lng": 6.1460727,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nomades",
+   "type": "lebanese, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2105156,6.1394189",
+   "lat": 46.2105156,
+   "lng": 6.1394189,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Deniz",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2081141,6.1351112",
+   "lat": 46.2081141,
+   "lng": 6.1351112,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Amir",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2108166,6.1462452",
+   "lat": 46.2108166,
+   "lng": 6.1462452,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Les Trois Phéniciens",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2106754,6.1388985",
+   "lat": 46.2106754,
+   "lng": 6.1388985,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ankara",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2107042,6.1476557",
+   "lat": 46.2107042,
+   "lng": 6.1476557,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chez Sami",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2112461,6.1454881",
+   "lat": 46.2112461,
+   "lng": 6.1454881,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zem",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.1973877,6.1421653",
+   "lat": 46.1973877,
+   "lng": 6.1421653,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fattoush",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2116106,6.1422116",
+   "lat": 46.2116106,
+   "lng": 6.1422116,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurant Tehran",
+   "type": "iranian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2114537,6.1458335",
+   "lat": 46.2114537,
+   "lng": 6.1458335,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pidé Factory",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2012184,6.1336376",
+   "lat": 46.2012184,
+   "lng": 6.1336376,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "O’Liban",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.1966418,6.1440428",
+   "lat": 46.1966418,
+   "lng": 6.1440428,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali haydar",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2121891,6.1450419",
+   "lat": 46.2121891,
+   "lng": 6.1450419,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Bodrum",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.1969409,6.1382792",
+   "lat": 46.1969409,
+   "lng": 6.1382792,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Au bon kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.1960771,6.1420608",
+   "lat": 46.1960771,
+   "lng": 6.1420608,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sofra Restaurant",
+   "type": "lebanese, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.1996018,6.1333",
+   "lat": 46.1996018,
+   "lng": 6.1333,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Levantine",
+   "type": "kebab, lebanese, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.1961809,6.1402919",
+   "lat": 46.1961809,
+   "lng": 6.1402919,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "A La Turca",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2003746,6.1313381",
+   "lat": 46.2003746,
+   "lng": 6.1313381,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mezze du Liban",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2114686,6.1339756",
+   "lat": 46.2114686,
+   "lng": 6.1339756,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "El Baraka",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.2010022,6.1297082",
+   "lat": 46.2010022,
+   "lng": 6.1297082,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fouad Le Snack",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=46.203101,6.1578075",
+   "lat": 46.203101,
+   "lng": 6.1578075,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m79211037",
+   "nom": "Église du Sacré-Coeur",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=46.2005421,6.1415643",
+   "lat": 46.2005421,
+   "lng": 6.1415643,
+   "source": "osm"
+  },
+  {
+   "id": "m397737238",
+   "nom": "Cathédrale Saint-Pierre",
+   "type": "Mosquée",
+   "adresse": "Cour de Saint-Pierre, Genève",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=46.2010953,6.1484955",
+   "lat": 46.2010953,
+   "lng": 6.1484955,
+   "source": "osm"
+  },
+  {
+   "id": "m13121309201",
+   "nom": "Mosquée de Genève-Nations CCSIG",
+   "type": "Mosquée",
+   "adresse": "Rue de Vermont",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=46.2169621,6.1361486",
+   "lat": 46.2169621,
+   "lng": 6.1361486,
+   "source": "osm"
+  },
+  {
+   "id": "m36249470",
+   "nom": "Mosquée du Petit-Saconnex",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=46.2236216,6.1219455",
+   "lat": 46.2236216,
+   "lng": 6.1219455,
+   "source": "osm"
+  },
+  {
+   "id": "m194217757",
+   "nom": "Mosquée du Centre Culturel des Musulmans d'Annemasse",
+   "type": "Mosquée",
+   "adresse": "Rue des Alpes",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=46.1966094,6.2269461",
+   "lat": 46.1966094,
+   "lng": 6.2269461,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a13440116190",
+   "nom": "Philibert Berthelier",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2049311,6.1432142",
+   "lat": 46.2049311,
+   "lng": 6.1432142,
+   "source": "osm"
+  },
+  {
+   "id": "a118832299",
+   "nom": "Tour de l'Ile",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2049794,6.1432375",
+   "lat": 46.2049794,
+   "lng": 6.1432375,
+   "source": "osm"
+  },
+  {
+   "id": "a13680439871",
+   "nom": "César De Bello Gallico",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2049843,6.1433024",
+   "lat": 46.2049843,
+   "lng": 6.1433024,
+   "source": "osm"
+  },
+  {
+   "id": "a6228915469",
+   "nom": "Fontaine de l'Escalade",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2037283,6.1437439",
+   "lat": 46.2037283,
+   "lng": 6.1437439,
+   "source": "osm"
+  },
+  {
+   "id": "a13471389593",
+   "nom": "Place de Hollande",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2040126,6.1421028",
+   "lat": 46.2040126,
+   "lng": 6.1421028,
+   "source": "osm"
+  },
+  {
+   "id": "a13448998265",
+   "nom": "Daniel Jenny",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2054953,6.1424916",
+   "lat": 46.2054953,
+   "lng": 6.1424916,
+   "source": "osm"
+  },
+  {
+   "id": "a9519037975",
+   "nom": "Quartier Libre Services Industriels de Genève",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2053806,6.1448741",
+   "lat": 46.2053806,
+   "lng": 6.1448741,
+   "source": "osm"
+  },
+  {
+   "id": "a12098168515",
+   "nom": "Galerie Papiers Gras",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2047609,6.1409525",
+   "lat": 46.2047609,
+   "lng": 6.1409525,
+   "source": "osm"
+  },
+  {
+   "id": "a15258238",
+   "nom": "Cité du Temps",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2055356,6.1448336",
+   "lat": 46.2055356,
+   "lng": 6.1448336,
+   "source": "osm"
+  },
+  {
+   "id": "a13448998266",
+   "nom": "Théodore Turrettini",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2054281,6.1413306",
+   "lat": 46.2054281,
+   "lng": 6.1413306,
+   "source": "osm"
+  },
+  {
+   "id": "a1475328301",
+   "nom": "Adrien Vallin",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2062404,6.1418424",
+   "lat": 46.2062404,
+   "lng": 6.1418424,
+   "source": "osm"
+  },
+  {
+   "id": "a13427219871",
+   "nom": "Horace-Bénédict de Saussure",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2024109,6.1441378",
+   "lat": 46.2024109,
+   "lng": 6.1441378,
+   "source": "osm"
+  },
+  {
+   "id": "a5734016022",
+   "nom": "Horloge animée",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2036701,6.1463671",
+   "lat": 46.2036701,
+   "lng": 6.1463671,
+   "source": "osm"
+  },
+  {
+   "id": "a13480383080",
+   "nom": "Escalade",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2064651,6.1412321",
+   "lat": 46.2064651,
+   "lng": 6.1412321,
+   "source": "osm"
+  },
+  {
+   "id": "a13480383085",
+   "nom": "Rousseau",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2068497,6.1423413",
+   "lat": 46.2068497,
+   "lng": 6.1423413,
+   "source": "osm"
+  },
+  {
+   "id": "a15256715",
+   "nom": "Musée Rath",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.201751,6.1435068",
+   "lat": 46.201751,
+   "lng": 6.1435068,
+   "source": "osm"
+  },
+  {
+   "id": "a13480383079",
+   "nom": "Philippe Stanhope de Mahon",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2065758,6.1409122",
+   "lat": 46.2065758,
+   "lng": 6.1409122,
+   "source": "osm"
+  },
+  {
+   "id": "a13429039285",
+   "nom": "Valérie Boissier",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=46.2018387,6.1444733",
+   "lat": 46.2018387,
+   "lng": 6.1444733,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

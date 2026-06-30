@@ -1,90 +1,462 @@
 {
-  "slug": "rabat",
-  "nom": "Rabat",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Centre du Maroc",
-  "coordonnees": {
-    "lat": 34.0209,
-    "lng": -6.8416
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 9.1,
-  "description": "Capitale administrative du Maroc, ville royale classée UNESCO mêlant monuments historiques et modernité apaisée. Jardins, kasbah andalouse et bord de mer.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Boulevard_Mohamed_V%2C_Rabat%2C_Maroc.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Boulevard_Mohamed_V%2C_Rabat%2C_Maroc.jpg",
-  "metaDescription": "Capitale administrative du Maroc, ville royale classée UNESCO mêlant monuments historiques et modernité apaisée. Jardins, kasbah andalouse et bord de mer.",
+ "slug": "rabat",
+ "nom": "Rabat",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Centre du Maroc",
+ "coordonnees": {
+  "lat": 34.0209,
+  "lng": -6.8416
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 9.1,
+ "description": "Capitale administrative du Maroc, ville royale classée UNESCO mêlant monuments historiques et modernité apaisée. Jardins, kasbah andalouse et bord de mer.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Boulevard_Mohamed_V%2C_Rabat%2C_Maroc.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Boulevard_Mohamed_V%2C_Rabat%2C_Maroc.jpg",
+ "metaDescription": "Capitale administrative du Maroc, ville royale classée UNESCO mêlant monuments historiques et modernité apaisée. Jardins, kasbah andalouse et bord de mer.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 37,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Les Saveurs de Chine",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0163634,-6.8325103",
+   "lat": 34.0163634,
+   "lng": -6.8325103,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Primos Chicken",
+   "type": "chicken, fast food, fried chicken, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9998339,-6.8504201",
+   "lat": 33.9998339,
+   "lng": -6.8504201,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Rabat",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Rabat",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Rabat%20Rabat%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Tour Hassan & Mausolée Mohammed V",
-      "categorie": "Histoire",
-      "description": "Minaret inachevé du XIIe siècle et mausolée royal en marbre blanc.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Tour%20Hassan%20%26%20Mausol%C3%A9e%20Mohammed%20V%20Rabat%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Kasbah des Oudayas",
-      "categorie": "Culture",
-      "description": "Forteresse andalouse aux ruelles bleues et blanches surplombant l'océan.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Kasbah%20des%20Oudayas%20Rabat%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Nécropole de Chellah",
-      "categorie": "Histoire",
-      "description": "Ruines romaines et mérinides dans un jardin habité par les cigognes.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=N%C3%A9cropole%20de%20Chellah%20Rabat%20Maroc"
-    },
-    {
-      "id": "a4",
-      "nom": "Médina de Rabat",
-      "categorie": "Culture",
-      "description": "Souks, artisanat et remparts au coeur de la ville.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20de%20Rabat%20Rabat%20Maroc"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Little Mamma Agdal",
+   "type": "italian, pasta, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9989185,-6.8491499",
+   "lat": 33.9989185,
+   "lng": -6.8491499,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "First Pizza",
+   "type": "pizza, panini, tacos, sandwich, couscous (le vendredi)",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.996765,-6.8467668",
+   "lat": 33.996765,
+   "lng": -6.8467668,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurant Gardenia",
+   "type": "mediterranean, coffee shop",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9962299,-6.8474284",
+   "lat": 33.9962299,
+   "lng": -6.8474284,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Delish'bun",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9954533,-6.8467761",
+   "lat": 33.9954533,
+   "lng": -6.8467761,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "GOLDEN FISH",
+   "type": "international, gastronomique, brunch",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9899813,-6.8376905",
+   "lat": 33.9899813,
+   "lng": -6.8376905,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "واينوت",
+   "type": "sandwich, tacos",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9816809,-6.8643669",
+   "lat": 33.9816809,
+   "lng": -6.8643669,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "La Ola",
+   "type": "moroccan, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9746719,-6.8293635",
+   "lat": 33.9746719,
+   "lng": -6.8293635,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "مطعم النرجس",
+   "type": "burger, pizza, sandwich, coffee shop, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9691647,-6.8799189",
+   "lat": 33.9691647,
+   "lng": -6.8799189,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Panda",
+   "type": "asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9562005,-6.8679194",
+   "lat": 33.9562005,
+   "lng": -6.8679194,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Snack Lwalida",
+   "type": "regional, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9688905,-6.8980937",
+   "lat": 33.9688905,
+   "lng": -6.8980937,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Yamal Acham",
+   "type": "syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0205096,-6.8431608",
+   "lat": 34.0205096,
+   "lng": -6.8431608,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Al Fawakih",
+   "type": "moroccan, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0203191,-6.8438873",
+   "lat": 34.0203191,
+   "lng": -6.8438873,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Restaurant de la Liberation",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0235955,-6.8388874",
+   "lat": 34.0235955,
+   "lng": -6.8388874,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Petit Beur",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0178088,-6.8350104",
+   "lat": 34.0178088,
+   "lng": -6.8350104,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Rbatia",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0270404,-6.8395515",
+   "lat": 34.0270404,
+   "lng": -6.8395515,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Fanous",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0182035,-6.8341182",
+   "lat": 34.0182035,
+   "lng": -6.8341182,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "911",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.015618,-6.8355673",
+   "lat": 34.015618,
+   "lng": -6.8355673,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "شاورما أبطال الشام المدينة",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0163506,-6.8345568",
+   "lat": 34.0163506,
+   "lng": -6.8345568,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Baba Ghannouge",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0161227,-6.8346761",
+   "lat": 34.0161227,
+   "lng": -6.8346761,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Säidoune",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0160161,-6.8345992",
+   "lat": 34.0160161,
+   "lng": -6.8345992,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Midi soir",
+   "type": "italian pizza, pizza, moroccan, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0155281,-6.8351045",
+   "lat": 34.0155281,
+   "lng": -6.8351045,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar El Medina",
+   "type": "african, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0263347,-6.8336183",
+   "lat": 34.0263347,
+   "lng": -6.8336183,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Ziryab",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0274972,-6.8342086",
+   "lat": 34.0274972,
+   "lng": -6.8342086,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Snack Figuid",
+   "type": "italian pizza, barbecue, chicken, pizza, burger, pasta, moroccan, local",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0251745,-6.8291619",
+   "lat": 34.0251745,
+   "lng": -6.8291619,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chawermatti",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0208885,-6.8266483",
+   "lat": 34.0208885,
+   "lng": -6.8266483,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Javanaise",
+   "type": "breakfast, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0060569,-6.8562358",
+   "lat": 34.0060569,
+   "lng": -6.8562358,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Yamal Acham",
+   "type": "arab, syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0024606,-6.8509401",
+   "lat": 34.0024606,
+   "lng": -6.8509401,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Maison Beyrouth",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0013525,-6.8467198",
+   "lat": 34.0013525,
+   "lng": -6.8467198,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Citirusta",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0020281,-6.8518914",
+   "lat": 34.0020281,
+   "lng": -6.8518914,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Express - Turkish Restaurant",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0013919,-6.8503468",
+   "lat": 34.0013919,
+   "lng": -6.8503468,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "سناك أدرار",
+   "type": "arab, american, burger, breakfast, cake, chicken, crepe, diner, fish, french, italian, kebab, moroccan, soba",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.996654,-6.8712261",
+   "lat": 33.996654,
+   "lng": -6.8712261,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Buvette de l'INAU",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9882947,-6.8612731",
+   "lat": 33.9882947,
+   "lng": -6.8612731,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Buvette de l'ENA",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9878532,-6.8619473",
+   "lat": 33.9878532,
+   "lng": -6.8619473,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "سناك مرحبا",
+   "type": "sandwich, sausage, moroccan, tea, local, fine dining, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.0404622,-6.7899008",
+   "lat": 34.0404622,
+   "lng": -6.7899008,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Beyti Istanbul",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.9564364,-6.8674722",
+   "lat": 33.9564364,
+   "lng": -6.8674722,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Rabat",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Rabat",
+   "description": "Mosquée principale de la ville, prière du vendredi.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Rabat%20Rabat%20Maroc"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Tour Hassan & Mausolée Mohammed V",
+   "categorie": "Histoire",
+   "description": "Minaret inachevé du XIIe siècle et mausolée royal en marbre blanc.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Tour%20Hassan%20%26%20Mausol%C3%A9e%20Mohammed%20V%20Rabat%20Maroc"
+  },
+  {
+   "id": "a2",
+   "nom": "Kasbah des Oudayas",
+   "categorie": "Culture",
+   "description": "Forteresse andalouse aux ruelles bleues et blanches surplombant l'océan.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Kasbah%20des%20Oudayas%20Rabat%20Maroc"
+  },
+  {
+   "id": "a3",
+   "nom": "Nécropole de Chellah",
+   "categorie": "Histoire",
+   "description": "Ruines romaines et mérinides dans un jardin habité par les cigognes.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=N%C3%A9cropole%20de%20Chellah%20Rabat%20Maroc"
+  },
+  {
+   "id": "a4",
+   "nom": "Médina de Rabat",
+   "categorie": "Culture",
+   "description": "Souks, artisanat et remparts au coeur de la ville.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20de%20Rabat%20Rabat%20Maroc"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

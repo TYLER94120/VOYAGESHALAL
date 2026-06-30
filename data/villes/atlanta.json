@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Atlanta_centre_ville.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 9,
+  "mosquees": 4,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,364 @@
   "ville non-musulmane",
   "amérique du nord"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Baraka Shawarma Mediterranean Cuisine",
+   "type": "shawarma, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.756456,-84.3910642",
+   "lat": 33.756456,
+   "lng": -84.3910642,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mukhtaro Beef Burger",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.7664862,-84.3943639",
+   "lat": 33.7664862,
+   "lng": -84.3943639,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Blue India",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.7796273,-84.3838628",
+   "lat": 33.7796273,
+   "lng": -84.3838628,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mediterranean Grill",
+   "type": "kebab, mediterranean, greek",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.7812614,-84.3683173",
+   "lat": 33.7812614,
+   "lng": -84.3683173,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Divan Restaurant & Bar",
+   "type": "mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.7881975,-84.3847419",
+   "lat": 33.7881975,
+   "lng": -84.3847419,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Baba Mediterranean",
+   "type": "turkish, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.7637965,-84.3510303",
+   "lat": 33.7637965,
+   "lng": -84.3510303,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Aleppo Kitchen",
+   "type": "syrian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.7385222,-84.3444816",
+   "lat": 33.7385222,
+   "lng": -84.3444816,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Rumi's Kitchen",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.786834,-84.3830426",
+   "lat": 33.786834,
+   "lng": -84.3830426,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Falafel King",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=33.7884331,-84.3263646",
+   "lat": 33.7884331,
+   "lng": -84.3263646,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m3503081325",
+   "nom": "5 Points Islamic Center (Masjid Jami Islamic Center)",
+   "type": "Mosquée",
+   "adresse": "Broad Street Southwest, Atlanta",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=33.751802,-84.3934938",
+   "lat": 33.751802,
+   "lng": -84.3934938,
+   "source": "osm"
+  },
+  {
+   "id": "m272293462",
+   "nom": "Masjid Al-Mu'minun",
+   "type": "Mosquée",
+   "adresse": "Hank Aaron Drive Southwest, Atlanta",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=33.7236772,-84.3884839",
+   "lat": 33.7236772,
+   "lng": -84.3884839,
+   "source": "osm"
+  },
+  {
+   "id": "m272388688",
+   "nom": "Masjid Al-Quran",
+   "type": "Mosquée",
+   "adresse": "McDonough Boulevard Southeast, Atlanta",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=33.7142048,-84.3717896",
+   "lat": 33.7142048,
+   "lng": -84.3717896,
+   "source": "osm"
+  },
+  {
+   "id": "m269845515",
+   "nom": "Al-Farooq Masjid of Atlanta",
+   "type": "Mosquée",
+   "adresse": "14th Street Northwest, Atlanta",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=33.7858323,-84.4015416",
+   "lat": 33.7858323,
+   "lng": -84.4015416,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a5074658722",
+   "nom": "Martin Luther King Jr.",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7491846,-84.387619",
+   "lat": 33.7491846,
+   "lng": -84.387619,
+   "source": "osm"
+  },
+  {
+   "id": "a7928624971",
+   "nom": "President Jimmy Carter",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7494065,-84.3882692",
+   "lat": 33.7494065,
+   "lng": -84.3882692,
+   "source": "osm"
+  },
+  {
+   "id": "a7928624943",
+   "nom": "Ellis G. Arnall",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7490383,-84.3886178",
+   "lat": 33.7490383,
+   "lng": -84.3886178,
+   "source": "osm"
+  },
+  {
+   "id": "a7057284318",
+   "nom": "Eugene Talmadge",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7484197,-84.3879684",
+   "lat": 33.7484197,
+   "lng": -84.3879684,
+   "source": "osm"
+  },
+  {
+   "id": "a7928624942",
+   "nom": "Richard B. Russell",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.749199,-84.3888685",
+   "lat": 33.749199,
+   "lng": -84.3888685,
+   "source": "osm"
+  },
+  {
+   "id": "a7928624972",
+   "nom": "John Brown Gordon",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7497383,-84.3884051",
+   "lat": 33.7497383,
+   "lng": -84.3884051,
+   "source": "osm"
+  },
+  {
+   "id": "a10093485433",
+   "nom": "Joseph and Elizabeth Brown",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7489903,-84.3890026",
+   "lat": 33.7489903,
+   "lng": -84.3890026,
+   "source": "osm"
+  },
+  {
+   "id": "a6204563887",
+   "nom": "Liberty Plaza Bell",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7481179,-84.3874379",
+   "lat": 33.7481179,
+   "lng": -84.3874379,
+   "source": "osm"
+  },
+  {
+   "id": "a11805813726",
+   "nom": "The March To The Sea",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7487043,-84.3896898",
+   "lat": 33.7487043,
+   "lng": -84.3896898,
+   "source": "osm"
+  },
+  {
+   "id": "a8977984822",
+   "nom": "Shining Light",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7535598,-84.3855888",
+   "lat": 33.7535598,
+   "lng": -84.3855888,
+   "source": "osm"
+  },
+  {
+   "id": "a8199608282",
+   "nom": "APD Officers Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7557579,-84.3886184",
+   "lat": 33.7557579,
+   "lng": -84.3886184,
+   "source": "osm"
+  },
+  {
+   "id": "a367915487",
+   "nom": "African American Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7553355,-84.3831172",
+   "lat": 33.7553355,
+   "lng": -84.3831172,
+   "source": "osm"
+  },
+  {
+   "id": "a7495598472",
+   "nom": "Alonzo Herndon",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7556628,-84.383776",
+   "lat": 33.7556628,
+   "lng": -84.383776,
+   "source": "osm"
+  },
+  {
+   "id": "a1179197041",
+   "nom": "Apex Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7554342,-84.383103",
+   "lat": 33.7554342,
+   "lng": -84.383103,
+   "source": "osm"
+  },
+  {
+   "id": "a367915545",
+   "nom": "Atlanta History Center-Downtown",
+   "categorie": "museum-former",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7576013,-84.3873346",
+   "lat": 33.7576013,
+   "lng": -84.3873346,
+   "source": "osm"
+  },
+  {
+   "id": "a367915489",
+   "nom": "High Museum of Art at Georgia-Pacific Center",
+   "categorie": "museum-former",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7576085,-84.387429",
+   "lat": 33.7576085,
+   "lng": -84.387429,
+   "source": "osm"
+  },
+  {
+   "id": "a12911846439",
+   "nom": "The Winecoff Fire",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7581405,-84.3878575",
+   "lat": 33.7581405,
+   "lng": -84.3878575,
+   "source": "osm"
+  },
+  {
+   "id": "a7476200729",
+   "nom": "Hanley's Funeral Home Historical Marker",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=33.7550753,-84.3793377",
+   "lat": 33.7550753,
+   "lng": -84.3793377,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

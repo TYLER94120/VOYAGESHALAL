@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/e/e4/12-07-13-washington-by-RalfR-08.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 5,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,685 @@
   "ville non-musulmane",
   "amérique du nord"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "Shah's Halal Food",
+   "type": "middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9081346,-77.042299",
+   "lat": 38.9081346,
+   "lng": -77.042299,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Safa Halal",
+   "type": "middle eastern, american",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9160883,-77.0414741",
+   "lat": 38.9160883,
+   "lng": -77.0414741,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Spice 6",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.8994228,-77.0201205",
+   "lat": 38.8994228,
+   "lng": -77.0201205,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Busboys and Poets",
+   "type": "sandwich, chicken, american, middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9023202,-77.0179932",
+   "lat": 38.9023202,
+   "lng": -77.0179932,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sharbat Bakery & Café",
+   "type": "sandwich, azerbaijani, middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9223241,-77.0423621",
+   "lat": 38.9223241,
+   "lng": -77.0423621,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bantam King",
+   "type": "noodle",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.8984619,-77.0191292",
+   "lat": 38.8984619,
+   "lng": -77.0191292,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "New York Grill",
+   "type": "middle eastern, american",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9235621,-77.040989",
+   "lat": 38.9235621,
+   "lng": -77.040989,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "DC Tasty Corner",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9077227,-77.062995",
+   "lat": 38.9077227,
+   "lng": -77.062995,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Georgetown Pizza & Grill",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9077275,-77.0639035",
+   "lat": 38.9077275,
+   "lng": -77.0639035,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Halal Wrist",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9287637,-77.0229743",
+   "lat": 38.9287637,
+   "lng": -77.0229743,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "The Halal Guys",
+   "type": "chicken, falafel, gyros",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.8975706,-77.0065491",
+   "lat": 38.8975706,
+   "lng": -77.0065491,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Citi Pizza",
+   "type": "pizza, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.900383,-76.999166",
+   "lat": 38.900383,
+   "lng": -76.999166,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Halal Shack",
+   "type": "mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9371763,-77.0888801",
+   "lat": 38.9371763,
+   "lng": -77.0888801,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Baba's Pizza",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9371492,-77.0889558",
+   "lat": 38.9371492,
+   "lng": -77.0889558,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Wonder",
+   "type": "international",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.8375105,-77.0510558",
+   "lat": 38.8375105,
+   "lng": -77.0510558,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Darvish Kitchen",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9051588,-77.0405433",
+   "lat": 38.9051588,
+   "lng": -77.0405433,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Agora",
+   "type": "turkish, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9106296,-77.0382506",
+   "lat": 38.9106296,
+   "lng": -77.0382506,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Moby Dick House of Kabob",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.907382,-77.0428287",
+   "lat": 38.907382,
+   "lng": -77.0428287,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "ala",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9080838,-77.0436669",
+   "lat": 38.9080838,
+   "lng": -77.0436669,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Grill Kabob",
+   "type": "afghan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.903455,-77.0436693",
+   "lat": 38.903455,
+   "lng": -77.0436693,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "LebTav",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9010451,-77.0396954",
+   "lat": 38.9010451,
+   "lng": -77.0396954,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Capital Doner",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9097936,-77.0464416",
+   "lat": 38.9097936,
+   "lng": -77.0464416,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Marrakesh",
+   "type": "moroccan, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9003956,-77.0307147",
+   "lat": 38.9003956,
+   "lng": -77.0307147,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Astoria's Kitchen by 54",
+   "type": "moroccan, spanish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9027672,-77.047121",
+   "lat": 38.9027672,
+   "lng": -77.047121,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Vegz",
+   "type": "pakistani, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9185379,-77.0418325",
+   "lat": 38.9185379,
+   "lng": -77.0418325,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Rumi’s Kitchen",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9040129,-77.020809",
+   "lat": 38.9040129,
+   "lng": -77.020809,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Meze",
+   "type": "mediterranean, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9214638,-77.0419909",
+   "lat": 38.9214638,
+   "lng": -77.0419909,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lapis",
+   "type": "afghan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9213,-77.043828",
+   "lat": 38.9213,
+   "lng": -77.043828,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Oh Mama Grill",
+   "type": "mediterranean, kebab, falafel, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9217237,-77.043728",
+   "lat": 38.9217237,
+   "lng": -77.043728,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Afghania",
+   "type": "afghan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.905397,-77.057421",
+   "lat": 38.905397,
+   "lng": -77.057421,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Villa Yara",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9053956,-77.0575419",
+   "lat": 38.9053956,
+   "lng": -77.0575419,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ottoman Taverna",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9016723,-77.0163471",
+   "lat": 38.9016723,
+   "lng": -77.0163471,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Muncheez",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9046202,-77.0626169",
+   "lat": 38.9046202,
+   "lng": -77.0626169,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sofra",
+   "type": "kebab, mediterranean",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9241859,-77.0516329",
+   "lat": 38.9241859,
+   "lng": -77.0516329,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Salt and Pepper Grill",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.925042,-77.022882",
+   "lat": 38.925042,
+   "lng": -77.022882,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "My Little Chamomile",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9036755,-77.0634415",
+   "lat": 38.9036755,
+   "lng": -77.0634415,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "O'Kabul",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9158993,-77.0123486",
+   "lat": 38.9158993,
+   "lng": -77.0123486,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lebanese Taverna",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9247116,-77.0519049",
+   "lat": 38.9247116,
+   "lng": -77.0519049,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mâmân Joon",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9285714,-77.0335287",
+   "lat": 38.9285714,
+   "lng": -77.0335287,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kookoo",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9307114,-77.0329229",
+   "lat": 38.9307114,
+   "lng": -77.0329229,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m66790109",
+   "nom": "American Fazl Mosque",
+   "type": "Mosquée",
+   "adresse": "Leroy Place Northwest, Washington",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=38.9155228,-77.0482411",
+   "lat": 38.9155228,
+   "lng": -77.0482411,
+   "source": "osm"
+  },
+  {
+   "id": "m67247033",
+   "nom": "Masjid Muhammad",
+   "type": "Mosquée",
+   "adresse": "4th Street Northwest",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=38.9103218,-77.0158875",
+   "lat": 38.9103218,
+   "lng": -77.0158875,
+   "source": "osm"
+  },
+  {
+   "id": "m70070852",
+   "nom": "First Hijrah Muslim Community Center",
+   "type": "Mosquée",
+   "adresse": "Georgia Avenue Northwest, Washington",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=38.9436358,-77.0262388",
+   "lat": 38.9436358,
+   "lng": -77.0262388,
+   "source": "osm"
+  },
+  {
+   "id": "m4675269753",
+   "nom": "Masjid Ahlul Quran Wal Hadeeth",
+   "type": "Mosquée",
+   "adresse": "18th Street Northeast",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=38.9326931,-76.979324",
+   "lat": 38.9326931,
+   "lng": -76.979324,
+   "source": "osm"
+  },
+  {
+   "id": "m473409352",
+   "nom": "Avondale Islamic Center",
+   "type": "Mosquée",
+   "adresse": "Eastern Avenue, Mount Rainier",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=38.9462957,-76.9771126",
+   "lat": 38.9462957,
+   "lng": -76.9771126,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a13018143648",
+   "nom": "Old Chancery of the Embassy of the Republic of the Philippines in the United States",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9077188,-77.0374574",
+   "lat": 38.9077188,
+   "lng": -77.0374574,
+   "source": "osm"
+  },
+  {
+   "id": "a367144492",
+   "nom": "B'Nai B'Rith Klutznick Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9062227,-77.0383102",
+   "lat": 38.9062227,
+   "lng": -77.0383102,
+   "source": "osm"
+  },
+  {
+   "id": "a55327098",
+   "nom": "Sumner School",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9059393,-77.0381414",
+   "lat": 38.9059393,
+   "lng": -77.0381414,
+   "source": "osm"
+  },
+  {
+   "id": "a358960393",
+   "nom": "Samuel D Gross Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.907056,-77.034699",
+   "lat": 38.907056,
+   "lng": -77.034699,
+   "source": "osm"
+  },
+  {
+   "id": "a55326926",
+   "nom": "National Geographic Society",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9051501,-77.0381091",
+   "lat": 38.9051501,
+   "lng": -77.0381091,
+   "source": "osm"
+  },
+  {
+   "id": "a13956093325",
+   "nom": "Nuns of the Battlefield",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9057974,-77.0402294",
+   "lat": 38.9057974,
+   "lng": -77.0402294,
+   "source": "osm"
+  },
+  {
+   "id": "a358958523",
+   "nom": "Henry Wadsworth Longfellow Statue",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9058571,-77.0415147",
+   "lat": 38.9058571,
+   "lng": -77.0415147,
+   "source": "osm"
+  },
+  {
+   "id": "a11546654467",
+   "nom": "Nijad Huseynov",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9038255,-77.0400578",
+   "lat": 38.9038255,
+   "lng": -77.0400578,
+   "source": "osm"
+  },
+  {
+   "id": "a810438094",
+   "nom": "Transformer",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9095036,-77.032374",
+   "lat": 38.9095036,
+   "lng": -77.032374,
+   "source": "osm"
+  },
+  {
+   "id": "a2316449632",
+   "nom": "Major General James B. McPherson",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.901961,-77.0341135",
+   "lat": 38.901961,
+   "lng": -77.0341135,
+   "source": "osm"
+  },
+  {
+   "id": "a11141661205",
+   "nom": "Jamya Williams",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9027709,-77.0318267",
+   "lat": 38.9027709,
+   "lng": -77.0318267,
+   "source": "osm"
+  },
+  {
+   "id": "a4085826612",
+   "nom": "Heurich House Museum",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9080298,-77.0445843",
+   "lat": 38.9080298,
+   "lng": -77.0445843,
+   "source": "osm"
+  },
+  {
+   "id": "a6439821537",
+   "nom": "Dupont Underground Art Space",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9104845,-77.0435233",
+   "lat": 38.9104845,
+   "lng": -77.0435233,
+   "source": "osm"
+  },
+  {
+   "id": "a358959871",
+   "nom": "Almas Temple",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9027752,-77.0313202",
+   "lat": 38.9027752,
+   "lng": -77.0313202,
+   "source": "osm"
+  },
+  {
+   "id": "a358960420",
+   "nom": "Sonny Bono",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9084776,-77.0447189",
+   "lat": 38.9084776,
+   "lng": -77.0447189,
+   "source": "osm"
+  },
+  {
+   "id": "a66833998",
+   "nom": "National Museum Of American Jewish Military History",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9128128,-77.0421135",
+   "lat": 38.9128128,
+   "lng": -77.0421135,
+   "source": "osm"
+  },
+  {
+   "id": "a358960376",
+   "nom": "Kossuth Lajos",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9104925,-77.0450257",
+   "lat": 38.9104925,
+   "lng": -77.0450257,
+   "source": "osm"
+  },
+  {
+   "id": "a1341584665",
+   "nom": "Decatur House",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=38.9000154,-77.0383892",
+   "lat": 38.9000154,
+   "lng": -77.0383892,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

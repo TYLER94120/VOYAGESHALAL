@@ -1,76 +1,478 @@
 {
-  "slug": "lisbonne",
-  "nom": "Lisbonne",
-  "pays": "Portugal",
-  "pays_slug": "portugal",
-  "continent": "Europe",
-  "region": "Europe du Sud",
-  "coordonnees": {
-    "lat": 38.7223,
-    "lng": -9.1393
+ "slug": "lisbonne",
+ "nom": "Lisbonne",
+ "pays": "Portugal",
+ "pays_slug": "portugal",
+ "continent": "Europe",
+ "region": "Europe du Sud",
+ "coordonnees": {
+  "lat": 38.7223,
+  "lng": -9.1393
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.6,
+ "description": "Capitale portugaise aux racines mauresques, Lisbonne charme par son quartier d'Alfama (ancienne médina) et sa Mosquée Centrale.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Lisbonne_%28Portugal%29_%285493354099%29.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/7/79/Lisbonne_%28Portugal%29_%285493354099%29.jpg",
+ "metaDescription": "Capitale portugaise aux racines mauresques, Lisbonne charme par son quartier d'Alfama (ancienne médina) et sa Mosquée Centrale.",
+ "statistiques": {
+  "restaurants_halal": 40,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Tasty Hut Halal food",
+   "type": "indian, pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7187804,-9.1350633",
+   "lat": 38.7187804,
+   "lng": -9.1350633,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.6,
-  "description": "Capitale portugaise aux racines mauresques, Lisbonne charme par son quartier d'Alfama (ancienne médina) et sa Mosquée Centrale.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Lisbonne_%28Portugal%29_%285493354099%29.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/7/79/Lisbonne_%28Portugal%29_%285493354099%29.jpg",
-  "metaDescription": "Capitale portugaise aux racines mauresques, Lisbonne charme par son quartier d'Alfama (ancienne médina) et sa Mosquée Centrale.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Olá Népal",
+   "type": "indian, nepalese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7254322,-9.1459256",
+   "lat": 38.7254322,
+   "lng": -9.1459256,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Café Ni'lin",
+   "type": "palestinian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7185001,-9.1322987",
+   "lat": 38.7185001,
+   "lng": -9.1322987,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Lisbonne",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Lisbonne",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Lisbonne%20Lisbonne"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Quartier d'Alfama",
-      "categorie": "Culture",
-      "description": "Dédale de ruelles hérité de la médina maure.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Quartier%20d%27Alfama%20Lisbonne"
-    },
-    {
-      "id": "a2",
-      "nom": "Château São Jorge",
-      "categorie": "Histoire",
-      "description": "Forteresse mauresque dominant la ville.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Ch%C3%A2teau%20S%C3%A3o%20Jorge%20Lisbonne"
-    },
-    {
-      "id": "a3",
-      "nom": "Mosquée Centrale de Lisbonne",
-      "categorie": "Spirituel",
-      "description": "Principale mosquée de la capitale.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Centrale%20de%20Lisbonne%20Lisbonne"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Zaafran",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7318172,-9.1411663",
+   "lat": 38.7318172,
+   "lng": -9.1411663,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Dawat Indian & Grill Restaurant",
+   "type": "indian, nepalese, asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7324841,-9.1323454",
+   "lat": 38.7324841,
+   "lng": -9.1323454,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ola Nepal House",
+   "type": "indian, nepalese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.735119,-9.1342042",
+   "lat": 38.735119,
+   "lng": -9.1342042,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mezze",
+   "type": "syrian, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7349501,-9.1326583",
+   "lat": 38.7349501,
+   "lng": -9.1326583,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sala de Refeiçoês da Mesquita",
+   "type": "indian, portuguese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7355843,-9.1581383",
+   "lat": 38.7355843,
+   "lng": -9.1581383,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Sunbird Cafe",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7202789,-9.1650513",
+   "lat": 38.7202789,
+   "lng": -9.1650513,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Zahir Kebab",
+   "type": "kebab, dessert, salad, coffee shop",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7426659,-9.1381269",
+   "lat": 38.7426659,
+   "lng": -9.1381269,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "1001 Nights",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7451033,-9.1405396",
+   "lat": 38.7451033,
+   "lng": -9.1405396,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Café Anatolia",
+   "type": "portuguese, middle eastern",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7042365,-9.1760088",
+   "lat": 38.7042365,
+   "lng": -9.1760088,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "DOM KEBAB GRILL",
+   "type": "international, kebab, grill, pizza, hamburger, salad",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7772593,-9.094501",
+   "lat": 38.7772593,
+   "lng": -9.094501,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Tikka Boti Halal Restaurant",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7878833,-9.176919",
+   "lat": 38.7878833,
+   "lng": -9.176919,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Zahir Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7224268,-9.1391496",
+   "lat": 38.7224268,
+   "lng": -9.1391496,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sajna",
+   "type": "ethiopian, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7245085,-9.1360892",
+   "lat": 38.7245085,
+   "lng": -9.1360892,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Jahan Kebab-Pizza",
+   "type": "pizza, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7189219,-9.1368296",
+   "lat": 38.7189219,
+   "lng": -9.1368296,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebabish",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7193708,-9.1353657",
+   "lat": 38.7193708,
+   "lng": -9.1353657,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tuz Good Food",
+   "type": "falafel, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7249483,-9.1348157",
+   "lat": 38.7249483,
+   "lng": -9.1348157,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Turkish Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7250446,-9.1348472",
+   "lat": 38.7250446,
+   "lng": -9.1348472,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Istanbul Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7189117,-9.143079",
+   "lat": 38.7189117,
+   "lng": -9.143079,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Al Baik Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7181257,-9.1360017",
+   "lat": 38.7181257,
+   "lng": -9.1360017,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kumar",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7269875,-9.1366741",
+   "lat": 38.7269875,
+   "lng": -9.1366741,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fenícios",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7249987,-9.1459329",
+   "lat": 38.7249987,
+   "lng": -9.1459329,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebabish",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7254353,-9.1462481",
+   "lat": 38.7254353,
+   "lng": -9.1462481,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Casa dos Cedros",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7290239,-9.1437424",
+   "lat": 38.7290239,
+   "lng": -9.1437424,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sumaya",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7173899,-9.1499381",
+   "lat": 38.7173899,
+   "lng": -9.1499381,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zaataria Lebanese Eats",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7318591,-9.1413254",
+   "lat": 38.7318591,
+   "lng": -9.1413254,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "LKS Lisboa Kebab Station",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7131226,-9.1451161",
+   "lat": 38.7131226,
+   "lng": -9.1451161,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Castle Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7144644,-9.1307421",
+   "lat": 38.7144644,
+   "lng": -9.1307421,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Kebaberie (closed)",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7323839,-9.142182",
+   "lat": 38.7323839,
+   "lng": -9.142182,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Khayyam",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7151466,-9.1493363",
+   "lat": 38.7151466,
+   "lng": -9.1493363,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hunger Station",
+   "type": "pizza, burger, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7126296,-9.1449586",
+   "lat": 38.7126296,
+   "lng": -9.1449586,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner Bar",
+   "type": "kebab, noodle",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7326599,-9.1341145",
+   "lat": 38.7326599,
+   "lng": -9.1341145,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebab House",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7334102,-9.1349514",
+   "lat": 38.7334102,
+   "lng": -9.1349514,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Original Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7330331,-9.1450664",
+   "lat": 38.7330331,
+   "lng": -9.1450664,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Atlantic Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7112023,-9.1441927",
+   "lat": 38.7112023,
+   "lng": -9.1441927,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pali Baba Kebab and Pizza House",
+   "type": "kebab, pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7332779,-9.133174",
+   "lat": 38.7332779,
+   "lng": -9.133174,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lebabese corner",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7204701,-9.1545232",
+   "lat": 38.7204701,
+   "lng": -9.1545232,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Cafeh Tehran",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.7151652,-9.1519342",
+   "lat": 38.7151652,
+   "lng": -9.1519342,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Lisbonne",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Lisbonne",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Lisbonne%20Lisbonne"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Quartier d'Alfama",
+   "categorie": "Culture",
+   "description": "Dédale de ruelles hérité de la médina maure.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Quartier%20d%27Alfama%20Lisbonne"
+  },
+  {
+   "id": "a2",
+   "nom": "Château São Jorge",
+   "categorie": "Histoire",
+   "description": "Forteresse mauresque dominant la ville.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Ch%C3%A2teau%20S%C3%A3o%20Jorge%20Lisbonne"
+  },
+  {
+   "id": "a3",
+   "nom": "Mosquée Centrale de Lisbonne",
+   "categorie": "Spirituel",
+   "description": "Principale mosquée de la capitale.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Centrale%20de%20Lisbonne%20Lisbonne"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

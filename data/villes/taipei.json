@@ -11,7 +11,7 @@
  },
  "codeISO": "TW",
  "score_halal": 3.5,
- "halalScore": 7.0,
+ "halalScore": 7,
  "villeNonMusulmane": true,
  "description": "Capitale dynamique et accueillante. Grande mosquée de Taipei et restaurants halal certifiés en centre-ville.",
  "metaDescription": "Capitale dynamique et accueillante. Grande mosquée de Taipei et restaurants halal certifiés en centre-ville.",
@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Taipei_Story_House_face_20060303.jpg/1920px-Taipei_Story_House_face_20060303.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 7,
+  "mosquees": 3,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,333 @@
   "ville non-musulmane",
   "asie"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "埃及沙威瑪王",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.0171141,121.5322016",
+   "lat": 25.0171141,
+   "lng": 121.5322016,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "一鷺炭火燒鳥工房",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.0620712,121.5347725",
+   "lat": 25.0620712,
+   "lng": 121.5347725,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "馬太郎燒肉",
+   "type": "japanese, kebab, barbecue",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.0503851,121.522192",
+   "lat": 25.0503851,
+   "lng": 121.522192,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "烤雞霸葷",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=24.9892224,121.5633025",
+   "lat": 24.9892224,
+   "lng": 121.5633025,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "MADO",
+   "type": "turkish, ice cream",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.0582155,121.6131331",
+   "lat": 25.0582155,
+   "lng": 121.6131331,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "宮城亮串燒",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.0070504,121.5150849",
+   "lat": 25.0070504,
+   "lng": 121.5150849,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "平哥炭烤",
+   "type": "barbecue, buschenschank, grill, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=25.0433515,121.5080725",
+   "lat": 25.0433515,
+   "lng": 121.5080725,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m2760112868",
+   "nom": "義光教會",
+   "type": "Mosquée",
+   "adresse": "信義路三段31巷, 臺北市",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=25.0351154,121.5345873",
+   "lat": 25.0351154,
+   "lng": 121.5345873,
+   "source": "osm"
+  },
+  {
+   "id": "m1447867753",
+   "nom": "穆斯林祈禱室",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=25.0427439,121.5341791",
+   "lat": 25.0427439,
+   "lng": 121.5341791,
+   "source": "osm"
+  },
+  {
+   "id": "m353651093",
+   "nom": "台北文化清真寺",
+   "type": "Mosquée",
+   "adresse": "辛亥路一段25巷, 臺北市",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=25.0194444,121.5279436",
+   "lat": 25.0194444,
+   "lng": 121.5279436,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a6200330712",
+   "nom": "幾米月亮公車",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0326896,121.565655",
+   "lat": 25.0326896,
+   "lng": 121.565655,
+   "source": "osm"
+  },
+  {
+   "id": "a4584957701",
+   "nom": "台北101觀景台",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0335248,121.5648104",
+   "lat": 25.0335248,
+   "lng": 121.5648104,
+   "source": "osm"
+  },
+  {
+   "id": "a1159328965",
+   "nom": "台北101",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0339453,121.5645469",
+   "lat": 25.0339453,
+   "lng": 121.5645469,
+   "source": "osm"
+  },
+  {
+   "id": "a248210267",
+   "nom": "台北101",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0338865,121.5644607",
+   "lat": 25.0338865,
+   "lng": 121.5644607,
+   "source": "osm"
+  },
+  {
+   "id": "a330187862",
+   "nom": "四四南村",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0313132,121.5619467",
+   "lat": 25.0313132,
+   "lng": 121.5619467,
+   "source": "osm"
+  },
+  {
+   "id": "a10018598704",
+   "nom": "象山公園",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0322054,121.5699165",
+   "lat": 25.0322054,
+   "lng": 121.5699165,
+   "source": "osm"
+  },
+  {
+   "id": "a5162506699",
+   "nom": "台北探索館",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0374227,121.5641067",
+   "lat": 25.0374227,
+   "lng": 121.5641067,
+   "source": "osm"
+  },
+  {
+   "id": "a3655111511",
+   "nom": "石油展示館",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0394556,121.5696281",
+   "lat": 25.0394556,
+   "lng": 121.5696281,
+   "source": "osm"
+  },
+  {
+   "id": "a11494598769",
+   "nom": "Fireworks Lookout",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0288502,121.5727191",
+   "lat": 25.0288502,
+   "lng": 121.5727191,
+   "source": "osm"
+  },
+  {
+   "id": "a1131522120",
+   "nom": "富邦美術館",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0392836,121.571232",
+   "lat": 25.0392836,
+   "lng": 121.571232,
+   "source": "osm"
+  },
+  {
+   "id": "a189788192",
+   "nom": "國父紀念館",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0400096,121.5602923",
+   "lat": 25.0400096,
+   "lng": 121.5602923,
+   "source": "osm"
+  },
+  {
+   "id": "a457483394",
+   "nom": "臨江街觀光夜市",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0298876,121.5553933",
+   "lat": 25.0298876,
+   "lng": 121.5553933,
+   "source": "osm"
+  },
+  {
+   "id": "a11494598869",
+   "nom": "On the Rock",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0268994,121.5741936",
+   "lat": 25.0268994,
+   "lng": 121.5741936,
+   "source": "osm"
+  },
+  {
+   "id": "a11398965033",
+   "nom": "101、102賞景平台",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0314805,121.5769749",
+   "lat": 25.0314805,
+   "lng": 121.5769749,
+   "source": "osm"
+  },
+  {
+   "id": "a3259507066",
+   "nom": "一線天",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0282361,121.5764559",
+   "lat": 25.0282361,
+   "lng": 121.5764559,
+   "source": "osm"
+  },
+  {
+   "id": "a10017923755",
+   "nom": "象山峯",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0265499,121.5755496",
+   "lat": 25.0265499,
+   "lng": 121.5755496,
+   "source": "osm"
+  },
+  {
+   "id": "a3954827293",
+   "nom": "永春崗平台",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0290014,121.5769931",
+   "lat": 25.0290014,
+   "lng": 121.5769931,
+   "source": "osm"
+  },
+  {
+   "id": "a3997514463",
+   "nom": "巨石園",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=25.0288457,121.577365",
+   "lat": 25.0288457,
+   "lng": 121.577365,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

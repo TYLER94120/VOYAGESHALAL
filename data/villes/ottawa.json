@@ -19,8 +19,8 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/a/a9/National_Gallery_of_Canada_glass_tower_2005.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 0,
+  "restaurants_halal": 40,
+  "mosquees": 7,
   "hotels": 0
  },
  "infoPratique": {
@@ -33,10 +33,707 @@
   "ville non-musulmane",
   "amérique du nord"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "DZ House",
+   "type": "sandwich, african, algerian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4296297,-75.6833034",
+   "lat": 45.4296297,
+   "lng": -75.6833034,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Cafe Tehran",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4311143,-75.6796725",
+   "lat": 45.4311143,
+   "lng": -75.6796725,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sugar & Slice",
+   "type": "pizza, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4212244,-75.6723425",
+   "lat": 45.4212244,
+   "lng": -75.6723425,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Alnawaeer Sweets",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.3799249,-75.6674205",
+   "lat": 45.3799249,
+   "lng": -75.6674205,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Yemen Gate",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.3798391,-75.6674571",
+   "lat": 45.3798391,
+   "lng": -75.6674571,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kara Mia",
+   "type": "italian, northern italian, southern italian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.3988684,-75.624712",
+   "lat": 45.3988684,
+   "lng": -75.624712,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kebob Kebob",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4213829,-75.6976057",
+   "lat": 45.4213829,
+   "lng": -75.6976057,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Tasha's Fine Foods",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4213241,-75.697794",
+   "lat": 45.4213241,
+   "lng": -75.697794,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarma Express",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.420931,-75.6963782",
+   "lat": 45.420931,
+   "lng": -75.6963782,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fattoush Lady",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4216073,-75.6948766",
+   "lat": 45.4216073,
+   "lng": -75.6948766,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Olly Fresco's",
+   "type": "sandwich, salad, chicken, pasta, kebab, pastry",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4206267,-75.6992224",
+   "lat": 45.4206267,
+   "lng": -75.6992224,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Mr. Fez Shawarma",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4192729,-75.6995136",
+   "lat": 45.4192729,
+   "lng": -75.6995136,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarma Royale",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4204795,-75.7017652",
+   "lat": 45.4204795,
+   "lng": -75.7017652,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ya Habibi",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4197639,-75.6929141",
+   "lat": 45.4197639,
+   "lng": -75.6929141,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "King Shawarma",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4175465,-75.6980545",
+   "lat": 45.4175465,
+   "lng": -75.6980545,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Afghani Kabob Express",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4163623,-75.6970621",
+   "lat": 45.4163623,
+   "lng": -75.6970621,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarma Andalos",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4175284,-75.7025844",
+   "lat": 45.4175284,
+   "lng": -75.7025844,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Elite Kitchen",
+   "type": "persian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4174959,-75.7026638",
+   "lat": 45.4174959,
+   "lng": -75.7026638,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "German Doner Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4175474,-75.6902941",
+   "lat": 45.4175474,
+   "lng": -75.6902941,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Eddy Authentic Lebanese Cuisine",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4274974,-75.692811",
+   "lat": 45.4274974,
+   "lng": -75.692811,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Fairouz Cafe",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4283892,-75.6951079",
+   "lat": 45.4283892,
+   "lng": -75.6951079,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "A La Istanbul Turkish Cuisine",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4266319,-75.6902108",
+   "lat": 45.4266319,
+   "lng": -75.6902108,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "3 Brothers Shawarma",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4269142,-75.6897008",
+   "lat": 45.4269142,
+   "lng": -75.6897008,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Boustan",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4273661,-75.6894792",
+   "lat": 45.4273661,
+   "lng": -75.6894792,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Osmow's",
+   "type": "mediterranean, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4282411,-75.6904235",
+   "lat": 45.4282411,
+   "lng": -75.6904235,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarma King",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4133466,-75.6944446",
+   "lat": 45.4133466,
+   "lng": -75.6944446,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "The Shawarma Place",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4298879,-75.6921664",
+   "lat": 45.4298879,
+   "lng": -75.6921664,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarma Palace",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.411239,-75.693248",
+   "lat": 45.411239,
+   "lng": -75.693248,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Paramount",
+   "type": "middle eastern, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4216972,-75.6818774",
+   "lat": 45.4216972,
+   "lng": -75.6818774,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "3 Brothers Shawarma & Poutine",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4238721,-75.6807891",
+   "lat": 45.4238721,
+   "lng": -75.6807891,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Hot Crispy Chicken",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4260538,-75.6815277",
+   "lat": 45.4260538,
+   "lng": -75.6815277,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ottawa Kabab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4094309,-75.7009365",
+   "lat": 45.4094309,
+   "lng": -75.7009365,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sultan Ahmet Turkish Cuisine",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4083575,-75.6911365",
+   "lat": 45.4083575,
+   "lng": -75.6911365,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "La Joie Shawarma",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4264243,-75.7156359",
+   "lat": 45.4264243,
+   "lng": -75.7156359,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarma Palace",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.430956,-75.6799327",
+   "lat": 45.430956,
+   "lng": -75.6799327,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "3 Brothers Shawarma",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4318511,-75.6778831",
+   "lat": 45.4318511,
+   "lng": -75.6778831,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Laheeb",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4081049,-75.7155581",
+   "lat": 45.4081049,
+   "lng": -75.7155581,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "K&W Shawarma & Restaurant",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4151819,-75.6711614",
+   "lat": 45.4151819,
+   "lng": -75.6711614,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "3 Brothers Shawarma & Poutine",
+   "type": "shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4000046,-75.6864912",
+   "lat": 45.4000046,
+   "lng": -75.6864912,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Shawarma King",
+   "type": "kebab, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=45.4401502,-75.6758777",
+   "lat": 45.4401502,
+   "lng": -75.6758777,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "mosqueesPrincipales": [
+  {
+   "id": "m4781941921",
+   "nom": "Islam Care Centre",
+   "type": "Mosquée",
+   "adresse": "Somerset Street West",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=45.4152723,-75.6968804",
+   "lat": 45.4152723,
+   "lng": -75.6968804,
+   "source": "osm"
+  },
+  {
+   "id": "m68588551",
+   "nom": "Centre Islamique de L'Outaouais",
+   "type": "Mosquée",
+   "adresse": "Rue Lois, Gatineau",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=45.4290273,-75.7321088",
+   "lat": 45.4290273,
+   "lng": -75.7321088,
+   "source": "osm"
+  },
+  {
+   "id": "m249272479",
+   "nom": "Ottawa South Mosque",
+   "type": "Mosquée",
+   "adresse": "Fairbairn Street",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=45.3948791,-75.6812937",
+   "lat": 45.3948791,
+   "lng": -75.6812937,
+   "source": "osm"
+  },
+  {
+   "id": "m305805121",
+   "nom": "Abu Thar al-Gofary Mosque, Ottawa",
+   "type": "Mosquée",
+   "adresse": "Donald Street",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=45.4282963,-75.6568356",
+   "lat": 45.4282963,
+   "lng": -75.6568356,
+   "source": "osm"
+  },
+  {
+   "id": "m79880277",
+   "nom": "Ottawa Muslim Association",
+   "type": "Mosquée",
+   "adresse": "Northwestern Avenue",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=45.401468,-75.7413381",
+   "lat": 45.401468,
+   "lng": -75.7413381,
+   "source": "osm"
+  },
+  {
+   "id": "m5995855529",
+   "nom": "East Ottawa Masjid",
+   "type": "Mosquée",
+   "adresse": "St-Laurent Boulevard",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=45.4298022,-75.6401819",
+   "lat": 45.4298022,
+   "lng": -75.6401819,
+   "source": "osm"
+  },
+  {
+   "id": "m483702355",
+   "nom": "Iman Ali (As) Masjid",
+   "type": "Mosquée",
+   "adresse": "Walkley Road",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=45.3771035,-75.6459075",
+   "lat": 45.3771035,
+   "lng": -75.6459075,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a5987012985",
+   "nom": "Thomas D'Arcy McGee Assassination location",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4221387,-75.6988865",
+   "lat": 45.4221387,
+   "lng": -75.6988865,
+   "source": "osm"
+  },
+  {
+   "id": "a6103824318",
+   "nom": "Carleton University",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4205155,-75.6952556",
+   "lat": 45.4205155,
+   "lng": -75.6952556,
+   "source": "osm"
+  },
+  {
+   "id": "a6152749737",
+   "nom": "Capital Art Fair",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4233055,-75.6966396",
+   "lat": 45.4233055,
+   "lng": -75.6966396,
+   "source": "osm"
+  },
+  {
+   "id": "a765366981",
+   "nom": "The Haunted Walk of Ottawa",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4233767,-75.6958957",
+   "lat": 45.4233767,
+   "lng": -75.6958957,
+   "source": "osm"
+  },
+  {
+   "id": "a4430151394",
+   "nom": "Henry Harbour Monument",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4233436,-75.6987029",
+   "lat": 45.4233436,
+   "lng": -75.6987029,
+   "source": "osm"
+  },
+  {
+   "id": "a2379648379",
+   "nom": "Oscar Peterson",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.422664,-75.6939499",
+   "lat": 45.422664,
+   "lng": -75.6939499,
+   "source": "osm"
+  },
+  {
+   "id": "a1676177213",
+   "nom": "Tomb of the Unknown Soldier",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.423945,-75.6954344",
+   "lat": 45.423945,
+   "lng": -75.6954344,
+   "source": "osm"
+  },
+  {
+   "id": "a4777144397",
+   "nom": "Bank Street Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4201625,-75.7006655",
+   "lat": 45.4201625,
+   "lng": -75.7006655,
+   "source": "osm"
+  },
+  {
+   "id": "a948187547",
+   "nom": "National War Memorial",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4240475,-75.6955211",
+   "lat": 45.4240475,
+   "lng": -75.6955211,
+   "source": "osm"
+  },
+  {
+   "id": "a292324492",
+   "nom": "Parliament Hill",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4241179,-75.6990272",
+   "lat": 45.4241179,
+   "lng": -75.6990272,
+   "source": "osm"
+  },
+  {
+   "id": "a1676174386",
+   "nom": "Brigadier Andrew Hamilton Gault",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4237487,-75.694516",
+   "lat": 45.4237487,
+   "lng": -75.694516,
+   "source": "osm"
+  },
+  {
+   "id": "a1449007333",
+   "nom": "National Aboriginal Veterans Monument",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4216868,-75.6929632",
+   "lat": 45.4216868,
+   "lng": -75.6929632,
+   "source": "osm"
+  },
+  {
+   "id": "a6499864130",
+   "nom": "Corporal Nathan Cirillo",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4240544,-75.6950109",
+   "lat": 45.4240544,
+   "lng": -75.6950109,
+   "source": "osm"
+  },
+  {
+   "id": "a2801290337",
+   "nom": "Kwakiutl Totem",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.422072,-75.6929191",
+   "lat": 45.422072,
+   "lng": -75.6929191,
+   "source": "osm"
+  },
+  {
+   "id": "a6499864176",
+   "nom": "Pierre Le Moyne d'Iberville",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4242921,-75.6950262",
+   "lat": 45.4242921,
+   "lng": -75.6950262,
+   "source": "osm"
+  },
+  {
+   "id": "a5987652486",
+   "nom": "Valiants Memorial",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4243583,-75.6951922",
+   "lat": 45.4243583,
+   "lng": -75.6951922,
+   "source": "osm"
+  },
+  {
+   "id": "a6499864178",
+   "nom": "Captain John Wallace Thomas",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4243305,-75.6950742",
+   "lat": 45.4243305,
+   "lng": -75.6950742,
+   "source": "osm"
+  },
+  {
+   "id": "a6499864179",
+   "nom": "Matron Georgina Paul",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=45.4243508,-75.6951051",
+   "lat": 45.4243508,
+   "lng": -75.6951051,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

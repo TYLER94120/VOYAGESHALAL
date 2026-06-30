@@ -1,81 +1,123 @@
 {
-  "slug": "asilah",
-  "nom": "Asilah",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "continent": "Afrique",
-  "region": "Nord du Maroc",
-  "coordonnees": {
-    "lat": 35.465,
-    "lng": -6.0341
-  },
-  "codeISO": "MA",
-  "score_halal": 4.5,
-  "halalScore": 8.9,
-  "description": "Petite cité atlantique fortifiée à la médina blanche couverte de fresques murales. Ville d'artistes réputée pour son festival culturel d'été.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Assilah_Waterfront1.jpg/1920px-Assilah_Waterfront1.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Assilah_Waterfront1.jpg/1920px-Assilah_Waterfront1.jpg",
-  "metaDescription": "Petite cité atlantique fortifiée à la médina blanche couverte de fresques murales. Ville d'artistes réputée pour son festival culturel d'été.",
+ "slug": "asilah",
+ "nom": "Asilah",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "continent": "Afrique",
+ "region": "Nord du Maroc",
+ "coordonnees": {
+  "lat": 35.465,
+  "lng": -6.0341
+ },
+ "codeISO": "MA",
+ "score_halal": 4.5,
+ "halalScore": 8.9,
+ "description": "Petite cité atlantique fortifiée à la médina blanche couverte de fresques murales. Ville d'artistes réputée pour son festival culturel d'été.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Assilah_Waterfront1.jpg/1920px-Assilah_Waterfront1.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Assilah_Waterfront1.jpg/1920px-Assilah_Waterfront1.jpg",
+ "metaDescription": "Petite cité atlantique fortifiée à la médina blanche couverte de fresques murales. Ville d'artistes réputée pour son festival culturel d'été.",
+ "monnaie": "MAD (Dirham marocain)",
+ "langue": "Arabe, Tamazight, Français",
+ "statistiques": {
+  "restaurants_halal": 4,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+  "meilleureEpoque": "Printemps et automne (climat doux)."
+ },
+ "tags": [
+  "halal",
+  "Maroc"
+ ],
+ "restaurants": [
+  {
+   "nom": "Dar Al Maghrebia",
+   "type": "moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.4660937,-6.0340566",
+   "lat": 35.4660937,
+   "lng": -6.0340566,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "monnaie": "MAD (Dirham marocain)",
-    "langue": "Arabe, Tamazight, Français",
-    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-    "meilleureEpoque": "Printemps et automne (climat doux)."
+  {
+   "nom": "Lixus",
+   "type": "pizza, tapas, pasta, fish, moroccan",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.4663504,-6.0340553",
+   "lat": 35.4663504,
+   "lng": -6.0340553,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "Maroc"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Asilah",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Asilah",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Asilah%20Asilah%20Maroc"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Médina fortifiée et fresques",
-      "categorie": "Culture",
-      "description": "Remparts portugais et murs peints par des artistes du monde entier.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20fortifi%C3%A9e%20et%20fresques%20Asilah%20Maroc"
-    },
-    {
-      "id": "a2",
-      "nom": "Festival culturel d'Asilah",
-      "categorie": "Événement",
-      "description": "Festival d'arts en août : peinture murale, musique, poésie.",
-      "prix": "Payant",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Festival%20culturel%20d%27Asilah%20Asilah%20Maroc"
-    },
-    {
-      "id": "a3",
-      "nom": "Plage d'Asilah",
-      "categorie": "Nature",
-      "description": "Longue plage atlantique au sable doré.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Plage%20d%27Asilah%20Asilah%20Maroc"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Tipico locale fish S/N",
+   "type": "arab, fish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.4662183,-6.0319567",
+   "lat": 35.4662183,
+   "lng": -6.0319567,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Casa la Place",
+   "type": "moroccan, seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.4670599,-6.0358686",
+   "lat": 35.4670599,
+   "lng": -6.0358686,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Asilah",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Asilah",
+   "description": "Mosquée principale de la ville, prière du vendredi.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Asilah%20Asilah%20Maroc"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Médina fortifiée et fresques",
+   "categorie": "Culture",
+   "description": "Remparts portugais et murs peints par des artistes du monde entier.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20fortifi%C3%A9e%20et%20fresques%20Asilah%20Maroc"
+  },
+  {
+   "id": "a2",
+   "nom": "Festival culturel d'Asilah",
+   "categorie": "Événement",
+   "description": "Festival d'arts en août : peinture murale, musique, poésie.",
+   "prix": "Payant",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Festival%20culturel%20d%27Asilah%20Asilah%20Maroc"
+  },
+  {
+   "id": "a3",
+   "nom": "Plage d'Asilah",
+   "categorie": "Nature",
+   "description": "Longue plage atlantique au sable doré.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Plage%20d%27Asilah%20Asilah%20Maroc"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

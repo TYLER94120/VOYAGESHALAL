@@ -19,7 +19,7 @@
  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Salou_boulevard.jpg/1920px-Salou_boulevard.jpg",
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
-  "restaurants_halal": 0,
+  "restaurants_halal": 5,
   "mosquees": 0,
   "hotels": 0
  },
@@ -33,10 +33,279 @@
   "ville non-musulmane",
   "europe"
  ],
- "restaurants": [],
+ "restaurants": [
+  {
+   "nom": "KPC",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.0665426,1.0666176",
+   "lat": 41.0665426,
+   "lng": 1.0666176,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "XL Burger Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.0733138,1.1448527",
+   "lat": 41.0733138,
+   "lng": 1.1448527,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Antalya 2",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.070975,1.1530774",
+   "lat": 41.070975,
+   "lng": 1.1530774,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pak Cambrils",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.0747434,1.0531505",
+   "lat": 41.0747434,
+   "lng": 1.0531505,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "KPC",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.1448835,1.1137721",
+   "lat": 41.1448835,
+   "lng": 1.1137721,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
  "hotels": [],
  "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true,
- "scoreIndicatif": true
+ "activites": [
+  {
+   "id": "a1348996201",
+   "nom": "Monument a Jaume I",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0744483,1.1393186",
+   "lat": 41.0744483,
+   "lng": 1.1393186,
+   "source": "osm"
+  },
+  {
+   "id": "a4437663489",
+   "nom": "Dos Anclas Náuticas",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.074575,1.1365163",
+   "lat": 41.074575,
+   "lng": 1.1365163,
+   "source": "osm"
+  },
+  {
+   "id": "a9925649058",
+   "nom": "Lletres Salou",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0743588,1.1363105",
+   "lat": 41.0743588,
+   "lng": 1.1363105,
+   "source": "osm"
+  },
+  {
+   "id": "a1349021159",
+   "nom": "Monument al pescador",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.073173,1.1324301",
+   "lat": 41.073173,
+   "lng": 1.1324301,
+   "source": "osm"
+  },
+  {
+   "id": "a1674038923",
+   "nom": "El Carrilet",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0778583,1.1305426",
+   "lat": 41.0778583,
+   "lng": 1.1305426,
+   "source": "osm"
+  },
+  {
+   "id": "a1349030185",
+   "nom": "Torre Vella de Salou",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0780814,1.1288337",
+   "lat": 41.0780814,
+   "lng": 1.1288337,
+   "source": "osm"
+  },
+  {
+   "id": "a12636139276",
+   "nom": "Katleen de Vlaminck",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0677018,1.1493376",
+   "lat": 41.0677018,
+   "lng": 1.1493376,
+   "source": "osm"
+  },
+  {
+   "id": "a4437665590",
+   "nom": "Masia Catalana",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0701359,1.1531561",
+   "lat": 41.0701359,
+   "lng": 1.1531561,
+   "source": "osm"
+  },
+  {
+   "id": "a3688468007",
+   "nom": "Woody Woodpecker",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0868483,1.1461521",
+   "lat": 41.0868483,
+   "lng": 1.1461521,
+   "source": "osm"
+  },
+  {
+   "id": "a6412703617",
+   "nom": "Ferrari Land Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0848904,1.1517314",
+   "lat": 41.0848904,
+   "lng": 1.1517314,
+   "source": "osm"
+  },
+  {
+   "id": "a6413587371",
+   "nom": "Photo Gallery",
+   "categorie": "gallery",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0848117,1.1518997",
+   "lat": 41.0848117,
+   "lng": 1.1518997,
+   "source": "osm"
+  },
+  {
+   "id": "a684463083",
+   "nom": "Colosseo",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0847812,1.1520101",
+   "lat": 41.0847812,
+   "lng": 1.1520101,
+   "source": "osm"
+  },
+  {
+   "id": "a12636139277",
+   "nom": "Punta de Porroig",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0657554,1.1480273",
+   "lat": 41.0657554,
+   "lng": 1.1480273,
+   "source": "osm"
+  },
+  {
+   "id": "a3697608534",
+   "nom": "Woody Woodpecker",
+   "categorie": "memorial",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0858186,1.154016",
+   "lat": 41.0858186,
+   "lng": 1.154016,
+   "source": "osm"
+  },
+  {
+   "id": "a704870715",
+   "nom": "El galeón pirata",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0891789,1.1533828",
+   "lat": 41.0891789,
+   "lng": 1.1533828,
+   "source": "osm"
+  },
+  {
+   "id": "a3703500498",
+   "nom": "Woody Woodpecker",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.1004433,1.1552513",
+   "lat": 41.1004433,
+   "lng": 1.1552513,
+   "source": "osm"
+  },
+  {
+   "id": "a194312920",
+   "nom": "Torre d'En Dolça",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0989128,1.1599214",
+   "lat": 41.0989128,
+   "lng": 1.1599214,
+   "source": "osm"
+  },
+  {
+   "id": "a182928328",
+   "nom": "Aquopolis Costa Daurada",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=41.0730289,1.1773027",
+   "lat": 41.0730289,
+   "lng": 1.1773027,
+   "source": "osm"
+  }
+ ],
+ "scoreIndicatif": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -1,76 +1,298 @@
 {
-  "slug": "tirana",
-  "nom": "Tirana",
-  "pays": "Albanie",
-  "pays_slug": "albanie",
-  "continent": "Europe",
-  "region": "Balkans",
-  "coordonnees": {
-    "lat": 41.3275,
-    "lng": 19.8187
+ "slug": "tirana",
+ "nom": "Tirana",
+ "pays": "Albanie",
+ "pays_slug": "albanie",
+ "continent": "Europe",
+ "region": "Balkans",
+ "coordonnees": {
+  "lat": 41.3275,
+  "lng": 19.8187
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.7,
+ "description": "Capitale colorée de l'Albanie, pays à majorité musulmane d'Europe, Tirana possède la nouvelle Grande Mosquée et un centre animé.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Skanderbeg_Square_in_Tirana.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/7/79/Skanderbeg_Square_in_Tirana.jpg",
+ "metaDescription": "Capitale colorée de l'Albanie, pays à majorité musulmane d'Europe, Tirana possède la nouvelle Grande Mosquée et un centre animé.",
+ "statistiques": {
+  "restaurants_halal": 22,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Shije Fshati",
+   "type": "regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3311812,19.8209777",
+   "lat": 41.3311812,
+   "lng": 19.8209777,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.7,
-  "description": "Capitale colorée de l'Albanie, pays à majorité musulmane d'Europe, Tirana possède la nouvelle Grande Mosquée et un centre animé.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Skanderbeg_Square_in_Tirana.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/7/79/Skanderbeg_Square_in_Tirana.jpg",
-  "metaDescription": "Capitale colorée de l'Albanie, pays à majorité musulmane d'Europe, Tirana possède la nouvelle Grande Mosquée et un centre animé.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "La Famiglia - Pizzeri - Kreperi",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3319887,19.8370606",
+   "lat": 41.3319887,
+   "lng": 19.8370606,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Fast Food - Pizzeri Agimi",
+   "type": "pizza, regional, sandwich, mediterranean, balkan, fries",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3004808,19.848563",
+   "lat": 41.3004808,
+   "lng": 19.848563,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Tirana",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Tirana",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Tirana%20Tirana"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Grande Mosquée de Tirana",
-      "categorie": "Spirituel",
-      "description": "L'une des plus grandes mosquées des Balkans.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20de%20Tirana%20Tirana"
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée Et'hem Bey",
-      "categorie": "Spirituel",
-      "description": "Petite mosquée ornée de fresques, place Skanderbeg.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Et%27hem%20Bey%20Tirana"
-    },
-    {
-      "id": "a3",
-      "nom": "Bazar Pazari i Ri",
-      "categorie": "Culture",
-      "description": "Marché rénové, restaurants et produits locaux.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Bazar%20Pazari%20i%20Ri%20Tirana"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Nona Plot me Gjona",
+   "type": "fish, chicken, burger, sushi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.2839364,19.8581443",
+   "lat": 41.2839364,
+   "lng": 19.8581443,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Grill & Souvlaki Stop",
+   "type": "souvlaki, pizza, burger, chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.2836502,19.8579744",
+   "lat": 41.2836502,
+   "lng": 19.8579744,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Falafel House Tirana",
+   "type": "lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3249085,19.8169229",
+   "lat": 41.3249085,
+   "lng": 19.8169229,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "GO ZIP",
+   "type": "italian, grill, friture, oriental, greek, fish and chips, fish, international, pasta, fine dining, coffee shop, turkish, diner, steak house, balkan, seafood, regional, mediterranean, barbecue",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3322154,19.816835",
+   "lat": 41.3322154,
+   "lng": 19.816835,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sufllaqe",
+   "type": "kebab, souvlaki",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3293071,19.825561",
+   "lat": 41.3293071,
+   "lng": 19.825561,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Antioch Doner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3311334,19.8124113",
+   "lat": 41.3311334,
+   "lng": 19.8124113,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Arabesque",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3277378,19.810368",
+   "lat": 41.3277378,
+   "lng": 19.810368,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Naldi",
+   "type": "kebab, barbecue",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3240413,19.8065944",
+   "lat": 41.3240413,
+   "lng": 19.8065944,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Babba",
+   "type": "burger, kebab, regional, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3235594,19.8055368",
+   "lat": 41.3235594,
+   "lng": 19.8055368,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Chic's",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3260678,19.8039062",
+   "lat": 41.3260678,
+   "lng": 19.8039062,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Lu & Fla",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3378465,19.8259275",
+   "lat": 41.3378465,
+   "lng": 19.8259275,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "1000 Buzëqeshje",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.321987,19.8048683",
+   "lat": 41.321987,
+   "lng": 19.8048683,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sufllaqe te Brryli",
+   "type": "hot dog, burger, chicken, kebab, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3307006,19.8340916",
+   "lat": 41.3307006,
+   "lng": 19.8340916,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Merakliu",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3257406,19.8027348",
+   "lat": 41.3257406,
+   "lng": 19.8027348,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zgara Familjare",
+   "type": "balkan, grill, chicken, sausage, kebab, barbecue",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3343923,19.8349577",
+   "lat": 41.3343923,
+   "lng": 19.8349577,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Ajni",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3395157,19.8284852",
+   "lat": 41.3395157,
+   "lng": 19.8284852,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Capitol",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3403416,19.8291607",
+   "lat": 41.3403416,
+   "lng": 19.8291607,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Zgara 5 Maj",
+   "type": "regional, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.344843,19.8255105",
+   "lat": 41.344843,
+   "lng": 19.8255105,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Pita Klasike",
+   "type": "burger, grill, hotdog, kebab, sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=41.3460191,19.8560539",
+   "lat": 41.3460191,
+   "lng": 19.8560539,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Tirana",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Tirana",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Tirana%20Tirana"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Grande Mosquée de Tirana",
+   "categorie": "Spirituel",
+   "description": "L'une des plus grandes mosquées des Balkans.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20de%20Tirana%20Tirana"
+  },
+  {
+   "id": "a2",
+   "nom": "Mosquée Et'hem Bey",
+   "categorie": "Spirituel",
+   "description": "Petite mosquée ornée de fresques, place Skanderbeg.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Et%27hem%20Bey%20Tirana"
+  },
+  {
+   "id": "a3",
+   "nom": "Bazar Pazari i Ri",
+   "categorie": "Culture",
+   "description": "Marché rénové, restaurants et produits locaux.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Bazar%20Pazari%20i%20Ri%20Tirana"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -1,76 +1,418 @@
 {
-  "slug": "bandar-seri-begawan",
-  "nom": "Bandar Seri Begawan",
-  "pays": "Brunei",
-  "pays_slug": "brunei",
-  "continent": "Asie",
-  "region": "Asie du Sud-Est",
-  "coordonnees": {
-    "lat": 4.9031,
-    "lng": 114.9398
+ "slug": "bandar-seri-begawan",
+ "nom": "Bandar Seri Begawan",
+ "pays": "Brunei",
+ "pays_slug": "brunei",
+ "continent": "Asie",
+ "region": "Asie du Sud-Est",
+ "coordonnees": {
+  "lat": 4.9031,
+  "lng": 114.9398
+ },
+ "codeISO": "",
+ "score_halal": 4.7,
+ "halalScore": 9.4,
+ "description": "Capitale du sultanat de Brunei, riche et paisible, célèbre pour ses mosquées dorées et le village lacustre de Kampong Ayer.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg/1920px-Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg/1920px-Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg",
+ "metaDescription": "Capitale du sultanat de Brunei, riche et paisible, célèbre pour ses mosquées dorées et le village lacustre de Kampong Ayer.",
+ "statistiques": {
+  "restaurants_halal": 34,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Burger King",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9084624,114.9425764",
+   "lat": 4.9084624,
+   "lng": 114.9425764,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.7,
-  "halalScore": 9.4,
-  "description": "Capitale du sultanat de Brunei, riche et paisible, célèbre pour ses mosquées dorées et le village lacustre de Kampong Ayer.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg/1920px-Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg/1920px-Sultan_Omar_Ali_Saifuddin_Mosque_02.jpg",
-  "metaDescription": "Capitale du sultanat de Brunei, riche et paisible, célèbre pour ses mosquées dorées et le village lacustre de Kampong Ayer.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Lan Zhou La Mian",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9017863,114.9290485",
+   "lat": 4.9017863,
+   "lng": 114.9290485,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Richfe",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.901704,114.9289334",
+   "lat": 4.901704,
+   "lng": 114.9289334,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Bandar Seri Begawan",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Bandar Seri Begawan",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Bandar%20Seri%20Begawan%20Bandar%20Seri%20Begawan"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Omar Ali Saifuddien",
-      "categorie": "Spirituel",
-      "description": "Mosquée emblématique au dôme d'or, sur un lagon.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Omar%20Ali%20Saifuddien%20Bandar%20Seri%20Begawan"
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée Jame'Asr Hassanil Bolkiah",
-      "categorie": "Spirituel",
-      "description": "Plus grande mosquée du pays, 29 coupoles dorées.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Jame%27Asr%20Hassanil%20Bolkiah%20Bandar%20Seri%20Begawan"
-    },
-    {
-      "id": "a3",
-      "nom": "Kampong Ayer",
-      "categorie": "Culture",
-      "description": "Plus grand village sur pilotis du monde.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Kampong%20Ayer%20Bandar%20Seri%20Begawan"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Ice Bar Shabu Shabu",
+   "type": "seafood",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9020503,114.9287278",
+   "lat": 4.9020503,
+   "lng": 114.9287278,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Nadi Utama",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8919701,114.9374617",
+   "lat": 4.8919701,
+   "lng": 114.9374617,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Aomori Ramen",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.902482,114.927955",
+   "lat": 4.902482,
+   "lng": 114.927955,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Express",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9001074,114.9267113",
+   "lat": 4.9001074,
+   "lng": 114.9267113,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Haider Sdn Bhd",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8881634,114.9427529",
+   "lat": 4.8881634,
+   "lng": 114.9427529,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Oldtime Kopitiam",
+   "type": "asian, regional",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.909513,114.9257298",
+   "lat": 4.909513,
+   "lng": 114.9257298,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Bali Pit-Stop",
+   "type": "indonesian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9017996,114.9204195",
+   "lat": 4.9017996,
+   "lng": 114.9204195,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Subbs Kitchen",
+   "type": "sandwich",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8963906,114.9197911",
+   "lat": 4.8963906,
+   "lng": 114.9197911,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Abydo's Food Messenger",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9108306,114.9176696",
+   "lat": 4.9108306,
+   "lng": 114.9176696,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Baan Thai",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9056666,114.9160477",
+   "lat": 4.9056666,
+   "lng": 114.9160477,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "SugarBun",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9081139,114.9157857",
+   "lat": 4.9081139,
+   "lng": 114.9157857,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Xinyuen Foodstall",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9087426,114.913676",
+   "lat": 4.9087426,
+   "lng": 114.913676,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Saiba Jaya",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9165082,114.9135321",
+   "lat": 4.9165082,
+   "lng": 114.9135321,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Vanda Chinese Restaurant",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9327552,114.9448202",
+   "lat": 4.9327552,
+   "lng": 114.9448202,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kitaro",
+   "type": "japanese, sushi",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9173594,114.9111443",
+   "lat": 4.9173594,
+   "lng": 114.9111443,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Infinitea x I Say Yatta!",
+   "type": "japanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9441911,114.9458742",
+   "lat": 4.9441911,
+   "lng": 114.9458742,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Phở Hòa",
+   "type": "noodle, vietnamese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9442131,114.9481206",
+   "lat": 4.9442131,
+   "lng": 114.9481206,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "SugarBun",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9470707,114.9608728",
+   "lat": 4.9470707,
+   "lng": 114.9608728,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Pelita Surya Sdn Bhd",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.878516,114.8937019",
+   "lat": 4.878516,
+   "lng": 114.8937019,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Impian Rasa",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8805055,114.8899455",
+   "lat": 4.8805055,
+   "lng": 114.8899455,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Thai Kitchen",
+   "type": "thai",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8586549,114.8942532",
+   "lat": 4.8586549,
+   "lng": 114.8942532,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Jollibee",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9658305,114.9517084",
+   "lat": 4.9658305,
+   "lng": 114.9517084,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Serikandi Xpress",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9015837,114.9348101",
+   "lat": 4.9015837,
+   "lng": 114.9348101,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Saung Kebab",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9009173,114.9294156",
+   "lat": 4.9009173,
+   "lng": 114.9294156,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Sugar & Spice",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.90282,114.9285543",
+   "lat": 4.90282,
+   "lng": 114.9285543,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Kofta Diva",
+   "type": "arab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9182579,114.9242697",
+   "lat": 4.9182579,
+   "lng": 114.9242697,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Serikandi Xpress",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9078979,114.9171702",
+   "lat": 4.9078979,
+   "lng": 114.9171702,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Seri Damai",
+   "type": "pakistani",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9433928,114.9460271",
+   "lat": 4.9433928,
+   "lng": 114.9460271,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Casbah",
+   "type": "fish, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9606041,114.9443362",
+   "lat": 4.9606041,
+   "lng": 114.9443362,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Uum Umiyati",
+   "type": "burger, kebab, kueh malaya, roti john",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.9664931,114.9466661",
+   "lat": 4.9664931,
+   "lng": 114.9466661,
+   "halalConfidence": "likely",
+   "source": "osm"
+  },
+  {
+   "nom": "Nadj",
+   "type": "arab, indian, malay",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=4.8544408,114.8908941",
+   "lat": 4.8544408,
+   "lng": 114.8908941,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Bandar Seri Begawan",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Bandar Seri Begawan",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Bandar%20Seri%20Begawan%20Bandar%20Seri%20Begawan"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Omar Ali Saifuddien",
+   "categorie": "Spirituel",
+   "description": "Mosquée emblématique au dôme d'or, sur un lagon.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Omar%20Ali%20Saifuddien%20Bandar%20Seri%20Begawan"
+  },
+  {
+   "id": "a2",
+   "nom": "Mosquée Jame'Asr Hassanil Bolkiah",
+   "categorie": "Spirituel",
+   "description": "Plus grande mosquée du pays, 29 coupoles dorées.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e%20Jame%27Asr%20Hassanil%20Bolkiah%20Bandar%20Seri%20Begawan"
+  },
+  {
+   "id": "a3",
+   "nom": "Kampong Ayer",
+   "categorie": "Culture",
+   "description": "Plus grand village sur pilotis du monde.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Kampong%20Ayer%20Bandar%20Seri%20Begawan"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

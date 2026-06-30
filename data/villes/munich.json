@@ -1,76 +1,478 @@
 {
-  "slug": "munich",
-  "nom": "Munich",
-  "pays": "Allemagne",
-  "pays_slug": "allemagne",
-  "continent": "Europe",
-  "region": "Allemagne",
-  "coordonnees": {
-    "lat": 48.1351,
-    "lng": 11.582
+ "slug": "munich",
+ "nom": "Munich",
+ "pays": "Allemagne",
+ "pays_slug": "allemagne",
+ "continent": "Europe",
+ "region": "Allemagne",
+ "coordonnees": {
+  "lat": 48.1351,
+  "lng": 11.582
+ },
+ "codeISO": "",
+ "score_halal": 4.3,
+ "halalScore": 8.6,
+ "description": "Capitale de la Bavière, Munich allie élégance, parcs et une offre halal croissante autour de ses quartiers cosmopolites.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Allianz_arena_daylight_Richard_Bartz.jpg/1920px-Allianz_arena_daylight_Richard_Bartz.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Allianz_arena_daylight_Richard_Bartz.jpg/1920px-Allianz_arena_daylight_Richard_Bartz.jpg",
+ "metaDescription": "Capitale de la Bavière, Munich allie élégance, parcs et une offre halal croissante autour de ses quartiers cosmopolites.",
+ "statistiques": {
+  "restaurants_halal": 40,
+  "mosquees": 1,
+  "hotels": 0
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion / transports locaux.",
+  "meilleureEpoque": "Printemps et automne."
+ },
+ "tags": [
+  "halal"
+ ],
+ "restaurants": [
+  {
+   "nom": "Pommesfreunde",
+   "type": "fries",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1336253,11.5827815",
+   "lat": 48.1336253,
+   "lng": 11.5827815,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "",
-  "score_halal": 4.3,
-  "halalScore": 8.6,
-  "description": "Capitale de la Bavière, Munich allie élégance, parcs et une offre halal croissante autour de ses quartiers cosmopolites.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Allianz_arena_daylight_Richard_Bartz.jpg/1920px-Allianz_arena_daylight_Richard_Bartz.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Allianz_arena_daylight_Richard_Bartz.jpg/1920px-Allianz_arena_daylight_Richard_Bartz.jpg",
-  "metaDescription": "Capitale de la Bavière, Munich allie élégance, parcs et une offre halal croissante autour de ses quartiers cosmopolites.",
-  "statistiques": {
-    "restaurants_halal": 0,
-    "mosquees": 1,
-    "hotels": 0
+  {
+   "nom": "Goa",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1340942,11.5841028",
+   "lat": 48.1340942,
+   "lng": 11.5841028,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion / transports locaux.",
-    "meilleureEpoque": "Printemps et automne."
+  {
+   "nom": "Hans Kebab",
+   "type": "kebab, turkish, falafel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1350737,11.5774185",
+   "lat": 48.1350737,
+   "lng": 11.5774185,
+   "halalConfidence": "only",
+   "source": "osm"
   },
-  "tags": [
-    "halal"
-  ],
-  "restaurants": [],
-  "hotels": [],
-  "mosqueesPrincipales": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Munich",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Munich",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Munich%20Munich"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Marienplatz",
-      "categorie": "Culture",
-      "description": "Place centrale et hôtel de ville néogothique.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Marienplatz%20Munich"
-    },
-    {
-      "id": "a2",
-      "nom": "Forum islamique de Munich",
-      "categorie": "Spirituel",
-      "description": "Centre et mosquée de la communauté.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Forum%20islamique%20de%20Munich%20Munich"
-    },
-    {
-      "id": "a3",
-      "nom": "Jardin Anglais",
-      "categorie": "Nature",
-      "description": "Vaste parc urbain idéal en famille.",
-      "prix": "Gratuit",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=Jardin%20Anglais%20Munich"
-    }
-  ],
-  "donneesAVenir": true,
-  "imageCredit": "Wikimedia Commons"
+  {
+   "nom": "Beef Crew",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1314287,11.588288",
+   "lat": 48.1314287,
+   "lng": 11.588288,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sitar",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1397803,11.5894626",
+   "lat": 48.1397803,
+   "lng": 11.5894626,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sila restaurant",
+   "type": "turkish, kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1340002,11.5655549",
+   "lat": 48.1340002,
+   "lng": 11.5655549,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Berlin Döner Express",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1323609,11.5648878",
+   "lat": 48.1323609,
+   "lng": 11.5648878,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Smash it!",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.124214,11.5897952",
+   "lat": 48.124214,
+   "lng": 11.5897952,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Döner Öz urfa",
+   "type": "kebab, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1485911,11.5736131",
+   "lat": 48.1485911,
+   "lng": 11.5736131,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Staro Pizza & Pasta",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1486047,11.5735643",
+   "lat": 48.1486047,
+   "lng": 11.5735643,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Deluxe Kebab",
+   "type": "kebab, turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1488082,11.5728292",
+   "lat": 48.1488082,
+   "lng": 11.5728292,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Deeba",
+   "type": "pakistani, indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1492358,11.5722843",
+   "lat": 48.1492358,
+   "lng": 11.5722843,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Çavuşoğlu",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.136457,11.5587585",
+   "lat": 48.136457,
+   "lng": 11.5587585,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Kashgar",
+   "type": "kebab, chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1419844,11.5605877",
+   "lat": 48.1419844,
+   "lng": 11.5605877,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sarajevo Imbiss",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1364575,11.5561049",
+   "lat": 48.1364575,
+   "lng": 11.5561049,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Pizzeria Regina",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1365274,11.5560651",
+   "lat": 48.1365274,
+   "lng": 11.5560651,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Wing Nation",
+   "type": "chicken",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.149511,11.5654077",
+   "lat": 48.149511,
+   "lng": 11.5654077,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mamma Bao",
+   "type": "chinese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1476652,11.5617619",
+   "lat": 48.1476652,
+   "lng": 11.5617619,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Mlem Bun",
+   "type": "american, burger, sandwich, salad, asian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1454299,11.558773",
+   "lat": 48.1454299,
+   "lng": 11.558773,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sam's Falafel",
+   "type": "falafel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1492165,11.5631795",
+   "lat": 48.1492165,
+   "lng": 11.5631795,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Tikka N Talk",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1247176,11.6058202",
+   "lat": 48.1247176,
+   "lng": 11.6058202,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Natursaftbar & Falafel Amer",
+   "type": "falafel, juice",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1497157,11.5631091",
+   "lat": 48.1497157,
+   "lng": 11.5631091,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Sim Sim",
+   "type": "falafel, shawarma",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1499491,11.5632553",
+   "lat": 48.1499491,
+   "lng": 11.5632553,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ali Bey",
+   "type": "turkish",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.155289,11.5744993",
+   "lat": 48.155289,
+   "lng": 11.5744993,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Delicious Burger",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1535438,11.5656622",
+   "lat": 48.1535438,
+   "lng": 11.5656622,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Pommesfreunde",
+   "type": "fries",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1422907,11.5507652",
+   "lat": 48.1422907,
+   "lng": 11.5507652,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Baban Döner Giesing",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1130297,11.5773535",
+   "lat": 48.1130297,
+   "lng": 11.5773535,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Unique Burger",
+   "type": "burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1100987,11.5780858",
+   "lat": 48.1100987,
+   "lng": 11.5780858,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Akse Fein & Food",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1101234,11.5756735",
+   "lat": 48.1101234,
+   "lng": 11.5756735,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Ercan Döner & Vegan Döner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1378611,11.543238",
+   "lat": 48.1378611,
+   "lng": 11.543238,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "SPRING TIME",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1537501,11.554167",
+   "lat": 48.1537501,
+   "lng": 11.554167,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "The Tandoori Lounge",
+   "type": "indian",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1179858,11.6145413",
+   "lat": 48.1179858,
+   "lng": 11.6145413,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "König’s Kebap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1608888,11.5666139",
+   "lat": 48.1608888,
+   "lng": 11.5666139,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Habib‘s Imbiss",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.155259,11.5528765",
+   "lat": 48.155259,
+   "lng": 11.5528765,
+   "halalConfidence": "only",
+   "source": "osm"
+  },
+  {
+   "nom": "Karim Döner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1619991,11.5687922",
+   "lat": 48.1619991,
+   "lng": 11.5687922,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "M Grill Haus",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1081098,11.5954174",
+   "lat": 48.1081098,
+   "lng": 11.5954174,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Uyghur Kebap",
+   "type": "Restaurant halal",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1622445,11.563508",
+   "lat": 48.1622445,
+   "lng": 11.563508,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Faruk Döner",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.1625445,11.5636251",
+   "lat": 48.1625445,
+   "lng": 11.5636251,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "Antep Kabap",
+   "type": "kebab",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.168738,11.5739803",
+   "lat": 48.168738,
+   "lng": 11.5739803,
+   "halalConfidence": "yes",
+   "source": "osm"
+  },
+  {
+   "nom": "La Barca",
+   "type": "pizza",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=48.146487,11.6321218",
+   "lat": 48.146487,
+   "lng": 11.6321218,
+   "halalConfidence": "yes",
+   "source": "osm"
+  }
+ ],
+ "hotels": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Munich",
+   "type": "Mosquée",
+   "adresse": "Centre-ville, Munich",
+   "description": "Mosquée principale de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "mapsUrl": "https://maps.google.com/?q=Mosque%20Munich%20Munich"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Marienplatz",
+   "categorie": "Culture",
+   "description": "Place centrale et hôtel de ville néogothique.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Marienplatz%20Munich"
+  },
+  {
+   "id": "a2",
+   "nom": "Forum islamique de Munich",
+   "categorie": "Spirituel",
+   "description": "Centre et mosquée de la communauté.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Forum%20islamique%20de%20Munich%20Munich"
+  },
+  {
+   "id": "a3",
+   "nom": "Jardin Anglais",
+   "categorie": "Nature",
+   "description": "Vaste parc urbain idéal en famille.",
+   "prix": "Gratuit",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=Jardin%20Anglais%20Munich"
+  }
+ ],
+ "imageCredit": "Wikimedia Commons",
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }
