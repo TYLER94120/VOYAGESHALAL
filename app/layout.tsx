@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { DM_Sans, Playfair_Display } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react'
 import RegisterSW from '@/components/pwa/RegisterSW'
 import InstallPrompt from '@/components/pwa/InstallPrompt'
 import './globals.css'
@@ -83,6 +84,7 @@ export default function RootLayout({
            </AdhanProvider>
           </LocationProvider>
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   )
