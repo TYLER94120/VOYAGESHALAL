@@ -1227,6 +1227,330 @@ export const blogPosts: BlogPost[] = [
     tags: ['Paris', 'Restaurants', 'France'],
     content: `Paris est l'une des villes les plus riches au monde en matière de restauration halal certifiée. Avec plus de 1 500 restaurants halal dans la capitale et sa proche banlieue, les voyageurs musulmans n'ont que l'embarras du choix. Des grandes tablées familiales de la rue de la Roquette (11e) aux adresses branchées de Pigalle (9e), en passant par les incontournables de Barbès (18e) et les restaurants gastronomiques du Triangle d'Or (8e), Paris offre un panorama culinaire halal d'une diversité inégalée : cuisine française halal, libanaise, turque, pakistanaise, sénégalaise, japonaise halal et bien plus encore. Notre guide recense les meilleures adresses par arrondissement, avec certification et spécialités.`,
   },
+  {
+    slug: "voyage-halal-maroc-2026-guide-complet",
+    title: "Voyage Halal au Maroc 2026 : Le Guide Complet pour Voyager en Musulman",
+    description: "Tout ce qu'il faut savoir pour un voyage halal au Maroc en 2026 : restaurants, mosquées, villes à visiter, conseils pratiques et budget. Guide complet par VoyagesHalal.fr",
+    coverImage: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80",
+    category: "Destinations",
+    readTime: "9 min",
+    publishedAt: "2026-02-02",
+    tags: ["Maroc", "Voyage halal", "2026"],
+    content: `<p>Le <strong>voyage halal au Maroc en 2026</strong> est sans doute l'expérience la plus simple et la plus apaisante qui soit pour un voyageur musulman. Pays à 99 % musulman, le Maroc rend le quotidien naturellement conforme : la nourriture est halal par défaut, l'appel à la prière rythme les journées, et les mosquées sont partout. Vous n'avez pas à chercher : vous n'avez qu'à profiter.</p>
+<h2>Pourquoi le Maroc est une destination halal idéale</h2>
+<p>Au Maroc, la question « est-ce halal ? » ne se pose presque jamais. La viande vendue dans les restaurants, les marchés et les hôtels est halal par tradition et par loi. L'alcool existe dans certains établissements touristiques, mais il est facile de l'éviter en choisissant des adresses familiales et populaires. Les horaires de la vie sociale suivent les cinq prières, ce qui facilite grandement l'organisation d'une journée.</p>
+<h2>Les meilleures villes à visiter</h2>
+<h3>Marrakech</h3>
+<p>La ville rouge reste la porte d'entrée du tourisme marocain : la place Jemaa el-Fna, les souks, la médersa Ben Youssef et la mosquée Koutoubia. Découvrez notre guide complet de <a href="/destinations/marrakech">Marrakech</a>.</p>
+<h3>Fès</h3>
+<p>Capitale spirituelle et intellectuelle, Fès abrite la <strong>Qarawiyyin</strong>, considérée comme la plus ancienne université du monde encore en activité. Sa médina labyrinthique est un voyage dans le temps. Voir <a href="/destinations/fes">Fès</a>.</p>
+<h3>Casablanca</h3>
+<p>La métropole économique abrite la majestueuse <strong>mosquée Hassan II</strong>, l'une des plus grandes du monde, en partie bâtie sur l'océan. Voir <a href="/destinations/casablanca">Casablanca</a>.</p>
+<h3>Tanger et le Nord</h3>
+<p>Entre Méditerranée et Atlantique, Tanger offre douceur de vivre et patrimoine andalou. Voir <a href="/destinations/tanger">Tanger</a>.</p>
+<h2>La cuisine marocaine halal</h2>
+<p>La gastronomie marocaine est un trésor à elle seule, entièrement halal :</p>
+<ul>
+<li><strong>Tajine</strong> : agneau aux pruneaux, poulet citron-olives, kefta aux Å“ufs.</li>
+<li><strong>Couscous</strong> du vendredi, plat de partage par excellence.</li>
+<li><strong>Pastilla</strong> sucrée-salée au poulet ou au poisson.</li>
+<li><strong>Msemen, baghrir et harcha</strong> au petit-déjeuner, avec thé à la menthe.</li>
+</ul>
+<h2>Mosquées incontournables</h2>
+<p>La mosquée <strong>Hassan II</strong> à Casablanca (visite possible pour les non-résidents), la <strong>Koutoubia</strong> de Marrakech et la <strong>Qarawiyyin</strong> de Fès figurent parmi les lieux les plus marquants. Pour trouver une mosquée où que vous soyez, utilisez notre outil <a href="/mosquee-proche">Mosquée la plus proche</a>.</p>
+<h2>Conseils pratiques : budget, transport, Ramadan</h2>
+<p><strong>Budget</strong> : le Maroc reste abordable. Comptez 40 à 120 MAD pour un repas, davantage dans les adresses gastronomiques. <strong>Transport</strong> : le train ONCF relie efficacement Tanger, Rabat, Casablanca et Marrakech ; les grands taxis assurent les liaisons régionales. <strong>Tenue</strong> : une tenue modeste est appréciée, surtout dans les médinas et près des lieux de culte. <strong>Ramadan</strong> : voyager pendant le Ramadan offre une ambiance unique, mais beaucoup de commerces ferment la journée ; lisez notre <a href="/blog/voyager-pendant-ramadan-guide-complet">guide Ramadan</a>.</p>
+<h2>La région de l'Oriental : Berkane, Saïdia, Tafoughalt</h2>
+<p>Souvent absente des guides classiques, la région de l'<strong>Oriental</strong> est une pépite. <a href="/destinations/berkane">Berkane</a>, capitale de l'orange, offre une authenticité rare et une cuisine du terroir remarquable. <a href="/destinations/saidia">Saïdia</a> et sa « perle bleue » déroulent des kilomètres de plage. <a href="/destinations/tafoughalt">Tafoughalt</a>, en montagne, séduit par sa fraîcheur et ses paysages. C'est un créneau unique : peu de contenu existe en ligne, et l'expérience halal y est totale.</p>
+<h2>Conclusion</h2>
+<p>Le Maroc coche toutes les cases du voyage halal : foi facile à pratiquer, cuisine somptueuse, hospitalité légendaire et diversité de paysages. Commencez par notre <a href="/destinations/berkane">guide complet de Berkane</a> pour explorer une facette encore méconnue du royaume.</p>`,
+  },
+  {
+    slug: "restaurants-halal-berkane-guide",
+    title: "Les Meilleurs Restaurants Halal à Berkane — Guide 2026",
+    description: "Découvrez les meilleurs restaurants halal à Berkane, Maroc. Adresses, spécialités locales, prix et conseils. Guide complet 2026 par VoyagesHalal.fr.",
+    coverImage: "https://images.unsplash.com/photo-1547514701-42782101795e?w=1200&q=80",
+    category: "Gastronomie",
+    readTime: "7 min",
+    publishedAt: "2026-02-03",
+    tags: ["Berkane", "Restaurants", "Maroc"],
+    content: `<p>Capitale de l'orange et joyau de la région de l'Oriental, <strong>Berkane</strong> est une ville 100 % halal par défaut, où la cuisine du terroir se déguste dans une ambiance familiale et chaleureuse. Voici notre guide des <strong>meilleurs restaurants halal à Berkane</strong> en 2026.</p>
+<h2>Berkane, terre d'agrumes et de saveurs</h2>
+<p>Réputée pour ses oranges parmi les meilleures du monde, Berkane offre une gastronomie ancrée dans le terroir : produits frais, viandes halal, poissons venus de la voisine <a href="/destinations/saidia">Saïdia</a> et plats berbères transmis de génération en génération. Comme partout au Maroc, la viande servie est halal sans exception.</p>
+<h2>Les spécialités locales à goûter</h2>
+<ul>
+<li><strong>Oranges de Berkane</strong> : en jus pressé, en salade ou en dessert parfumé à la cannelle.</li>
+<li><strong>Poissons de Saïdia</strong> : grillés ou en tajine, frais de la Méditerranée toute proche.</li>
+<li><strong>Tajines berbères</strong> : agneau aux légumes du marché, poulet aux olives.</li>
+<li><strong>Pain maison et msemen</strong> : incontournables au petit-déjeuner.</li>
+</ul>
+<h2>Où manger selon votre budget</h2>
+<h3>Petits budgets (moins de 50 MAD)</h3>
+<p>Les gargotes et sandwicheries du centre proposent brochettes, kefta et sandwichs généreux pour quelques dirhams. Idéal pour un déjeuner rapide entre deux visites.</p>
+<h3>Budget moyen (50 à 100 MAD)</h3>
+<p>Les restaurants familiaux servent tajines, couscous du vendredi et grillades dans une ambiance conviviale. C'est le meilleur rapport qualité-prix pour découvrir la cuisine locale.</p>
+<h3>Pour se faire plaisir (plus de 100 MAD)</h3>
+<p>Quelques adresses plus soignées proposent menus complets, poissons nobles et pâtisseries marocaines. Parfait pour un dîner en famille.</p>
+<h2>Conseils pour bien manger halal à Berkane</h2>
+<p>À Berkane, la quasi-totalité des établissements sont halal. Pour une tranquillité totale, privilégiez les restaurants familiaux et populaires, vérifiez la fraîcheur des produits et n'hésitez pas à demander les spécialités du jour. Notre rappel : les informations sont données à titre indicatif, vérifiez toujours localement.</p>
+<h2>Que faire autour des repas</h2>
+<p>Profitez de votre séjour pour explorer les vergers d'agrumes, la grotte du Chameau à <a href="/destinations/tafoughalt">Tafoughalt</a> et les plages de <a href="/destinations/saidia">Saïdia</a>. Pour vos prières, retrouvez les mosquées de la ville via notre outil <a href="/mosquee-proche">Mosquée la plus proche</a> et les <a href="/horaires-priere">horaires de prière</a> en temps réel.</p>
+<h2>Conclusion</h2>
+<p>Berkane est une destination gourmande, authentique et entièrement halal, encore préservée du tourisme de masse. Découvrez notre <a href="/destinations/berkane">guide complet de Berkane</a> pour préparer votre séjour.</p>`,
+  },
+  {
+    slug: "horaires-priere-voyage-guide-musulman",
+    title: "Horaires de Prière en Voyage : Comment Ne Jamais Rater une Prière ?",
+    description: "Guide complet pour gérer les horaires de prière en voyage : décalage horaire, prière en avion, qasr, jam' et outils gratuits pour le voyageur musulman.",
+    coverImage: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80",
+    category: "Pratique",
+    readTime: "8 min",
+    publishedAt: "2026-02-04",
+    tags: ["Prière", "Voyage", "Qibla"],
+    content: `<p>Voyager ne dispense pas de la prière, mais l'islam prévoit des facilités précieuses pour le voyageur. Décalage horaire, vols longs, escales : voici comment <strong>ne jamais rater une prière en voyage</strong>, sereinement.</p>
+<h2>La prière du voyageur : une obligation allégée</h2>
+<p>Le voyageur (musafir) bénéficie de deux facilités principales accordées par la tradition prophétique : le <strong>qasr</strong> et le <strong>jam'</strong>. Loin d'être une contrainte, ce sont des miséricordes qui rendent la pratique aisée même en déplacement.</p>
+<h2>Le qasr : raccourcir les prières</h2>
+<p>En voyage, les prières de quatre unités (Dhuhr, Asr, Isha) peuvent être raccourcies à deux unités. C'est une pratique bien établie, valable dès lors que l'on s'éloigne suffisamment de son lieu de résidence. Maghrib (trois unités) et Fajr (deux unités) restent inchangées.</p>
+<h2>Le jam' : regrouper les prières</h2>
+<p>Il est également permis de regrouper Dhuhr et Asr, ainsi que Maghrib et Isha, soit en avançant, soit en retardant l'une des deux. C'est particulièrement utile lors d'un vol, d'un long trajet en train ou d'un programme touristique chargé.</p>
+<h2>Prier en avion</h2>
+<p>En vol, faites de votre mieux : accomplissez les ablutions avant l'embarquement (ou le tayammum si l'eau manque), orientez-vous vers la Qibla autant que possible au début de la prière, et priez assis si vous ne pouvez pas vous lever. L'intention et l'effort priment. Notre <a href="/qibla">calculateur de Qibla</a> vous aide à trouver la direction de La Mecque où que vous soyez.</p>
+<h2>Gérer le décalage horaire</h2>
+<p>Le piège du voyage, c'est le décalage horaire : les horaires de prière changent avec la longitude et la latitude. Ne vous fiez pas à l'heure de votre ville de départ. Calculez toujours les horaires <strong>en fonction de votre position réelle</strong>. Notre outil <a href="/horaires-priere">horaires de prière</a> se base sur votre position GPS pour un résultat précis, à la minute près, avec choix de la méthode de calcul et de l'école juridique.</p>
+<h2>Trouver une mosquée sur place</h2>
+<p>Dans une ville inconnue, localiser une mosquée peut être délicat. Notre outil <a href="/mosquee-proche">Mosquée la plus proche</a> détecte votre position et liste les mosquées autour de vous, triées par distance, avec itinéraire.</p>
+<h2>Par destination</h2>
+<p>Les horaires varient fortement selon les pays : journées longues l'été en Turquie (<a href="/destinations/istanbul">Istanbul</a>), rythme régulier toute l'année au <a href="/destinations/dubai">Dubaï</a>, vie sociale calée sur la prière au <a href="/destinations/marrakech">Maroc</a> et en <a href="/destinations/kuala-lumpur">Malaisie</a>. Préparez vos prières en consultant nos guides destination.</p>
+<h2>Conclusion</h2>
+<p>Avec le qasr, le jam' et les bons outils, la prière en voyage devient simple et naturelle. Gardez toujours sous la main notre <a href="/horaires-priere">calculateur d'horaires</a> et notre <a href="/qibla">boussole Qibla</a> pour voyager l'esprit tranquille.</p>`,
+  },
+  {
+    slug: "top-10-destinations-halal-2026",
+    title: "Top 10 Destinations Halal 2026 : Notre Sélection des Meilleures Villes",
+    description: "Notre classement des 10 meilleures destinations halal en 2026 : Médine, Kuala Lumpur, Istanbul, Dubaï, Maroc... Basé sur le Halal Trust Score, un système unique.",
+    coverImage: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80",
+    category: "Destinations",
+    readTime: "8 min",
+    publishedAt: "2026-02-05",
+    tags: ["Classement", "Destinations", "2026"],
+    content: `<p>Quelles sont les <strong>meilleures destinations halal en 2026</strong> ? Pour répondre objectivement, nous avons conçu le <strong>Halal Trust Score</strong>, un indice qui évalue chaque ville selon l'offre de restaurants halal, le nombre de mosquées, la facilité de prière et l'accueil des voyageurs musulmans.</p>
+<h2>Le Halal Trust Score, un système unique</h2>
+<p>Plutôt que des avis subjectifs, notre score agrège des critères concrets : densité de restaurants certifiés, accessibilité des mosquées, disponibilité des horaires de prière et environnement global. Voici notre top 10.</p>
+<h2>1. Médine</h2>
+<p>La ville du Prophète, sommet absolu de la sérénité spirituelle, autour de la Mosquée du Prophète. Voir <a href="/destinations/medine">Médine</a>.</p>
+<h2>2. Kuala Lumpur</h2>
+<p>La capitale malaisienne mêle modernité, street food halal omniprésente et mosquées magnifiques. Une référence mondiale du tourisme musulman. Voir <a href="/destinations/kuala-lumpur">Kuala Lumpur</a>.</p>
+<h2>3. Istanbul</h2>
+<p>Au carrefour de l'Europe et de l'Asie, Istanbul offre un patrimoine islamique exceptionnel et une cuisine entièrement halal. Voir <a href="/destinations/istanbul">Istanbul</a>.</p>
+<h2>4. Dubaï</h2>
+<p>Luxe, mosquées somptueuses et infrastructures pensées pour les familles musulmanes. Voir <a href="/destinations/dubai">Dubaï</a>.</p>
+<h2>5. Marrakech</h2>
+<p>L'âme du Maroc, ses souks, sa médina et la Koutoubia. Voir <a href="/destinations/marrakech">Marrakech</a>.</p>
+<h2>6. Le Caire</h2>
+<p>Mille minarets, Al-Azhar et une histoire islamique millénaire. Voir <a href="/destinations/le-caire">Le Caire</a>.</p>
+<h2>7. Doha</h2>
+<p>Élégante et familiale, Doha conjugue tradition et raffinement. Voir <a href="/destinations/doha">Doha</a>.</p>
+<h2>8. Casablanca</h2>
+<p>La mosquée Hassan II, entre océan et ciel, vaut à elle seule le détour. Voir <a href="/destinations/casablanca">Casablanca</a>.</p>
+<h2>9. Abou Dabi</h2>
+<p>La Grande Mosquée Cheikh Zayed est l'un des plus beaux édifices du monde musulman. Voir <a href="/destinations/abu-dhabi">Abou Dabi</a>.</p>
+<h2>10. Fès</h2>
+<p>Capitale spirituelle du Maroc, berceau de la Qarawiyyin. Voir <a href="/destinations/fes">Fès</a>.</p>
+<h2>Comment choisir votre destination 2026</h2>
+<p>Pour un premier voyage halal, privilégiez une ville à forte densité halal comme Istanbul, Kuala Lumpur ou Marrakech. Pour une retraite spirituelle, Médine est sans égale. Pour un séjour famille avec enfants, Dubaï et Doha offrent un confort optimal. Explorez nos 157 destinations sur la page <a href="/destinations">Destinations</a>.</p>
+<h2>Conclusion</h2>
+<p>Ce classement évolue chaque année avec nos données. Une constante : partout, le voyage halal est possible, agréable et enrichissant. Préparez vos prières avec nos <a href="/horaires-priere">horaires</a> et la <a href="/qibla">Qibla</a>.</p>`,
+  },
+  {
+    slug: "voyager-pendant-ramadan-guide-complet",
+    title: "Voyager Pendant le Ramadan : Guide Complet 2026",
+    description: "Tout savoir pour voyager pendant le Ramadan 2026 : pays idéaux, jeûne et décalage horaire, iftar, suhoor et Tarawih. Conseils pratiques pour un Ramadan serein.",
+    coverImage: "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1200&q=80",
+    category: "Pratique",
+    readTime: "8 min",
+    publishedAt: "2026-02-06",
+    tags: ["Ramadan", "Voyage", "2026"],
+    content: `<p>Voyager pendant le <strong>Ramadan 2026</strong> est une expérience spirituelle intense, à condition de bien s'organiser. Entre choix de la destination, gestion du jeûne et recherche d'un iftar, voici notre guide complet pour un Ramadan en voyage serein.</p>
+<h2>Les pays idéaux pendant le Ramadan</h2>
+<p>Dans les pays à majorité musulmane, le Ramadan transforme l'atmosphère : décorations, marchés nocturnes, repas partagés et vie qui s'anime après le coucher du soleil.</p>
+<ul>
+<li><strong>Maroc</strong> : médinas illuminées, harira au coucher du soleil, ambiance familiale. Voir <a href="/destinations/marrakech">Marrakech</a>.</li>
+<li><strong>Turquie</strong> : tables d'iftar géantes, mosquées illuminées de messages lumineux. Voir <a href="/destinations/istanbul">Istanbul</a>.</li>
+<li><strong>Émirats</strong> : tentes de Ramadan, hôtels adaptés, suhoor jusqu'à l'aube. Voir <a href="/destinations/dubai">Dubaï</a>.</li>
+<li><strong>Égypte</strong> : lanternes fanous, ambiance populaire unique au Caire. Voir <a href="/destinations/le-caire">Le Caire</a>.</li>
+</ul>
+<h2>Gérer le jeûne avec le décalage horaire</h2>
+<p>Le défi majeur en voyage est de connaître précisément l'heure du <strong>Fajr</strong> (début du jeûne) et du <strong>Maghrib</strong> (rupture). Ces horaires dépendent de votre position exacte. Ne vous fiez jamais à l'heure de votre pays d'origine : calculez toujours selon votre localisation via notre outil <a href="/horaires-priere">horaires de prière</a>, basé sur le GPS.</p>
+<h2>Trouver un iftar en voyage</h2>
+<p>Dans les pays musulmans, l'iftar est partout : restaurants, mosquées, tentes communautaires offrent souvent des repas. Repérez à l'avance les restaurants halal autour de vous et localisez les mosquées avec notre outil <a href="/mosquee-proche">Mosquée la plus proche</a>, beaucoup proposant des repas de rupture du jeûne.</p>
+<h2>Suhoor : le repas avant l'aube</h2>
+<p>Ne négligez pas le suhoor, qui donne l'énergie pour la journée. En voyage, prévoyez des provisions (dattes, eau, fruits, féculents) si les commerces sont fermés à cette heure. De nombreux hôtels en pays musulman proposent un service de suhoor pendant le Ramadan.</p>
+<h2>Les Tarawih : prières nocturnes</h2>
+<p>Les prières de <strong>Tarawih</strong> après l'Isha sont un moment fort du Ramadan. Vivre une Tarawih dans une grande mosquée d'Istanbul, de Casablanca ou de Médine est une expérience inoubliable. Repérez les mosquées via <a href="/mosquee-proche">notre outil</a>.</p>
+<h2>Conseils pratiques</h2>
+<p>Adaptez votre programme touristique : visites le matin, repos l'après-midi, vie nocturne après l'iftar. Hydratez-vous abondamment entre Maghrib et Fajr. Et profitez de l'ambiance spirituelle unique de cette période.</p>
+<h2>Conclusion</h2>
+<p>Voyager pendant le Ramadan, c'est vivre sa foi avec une intensité particulière, entouré d'une communauté en fête. Préparez votre séjour avec nos <a href="/horaires-priere">horaires de prière</a> et explorez nos <a href="/destinations">destinations</a>.</p>`,
+  },
+  {
+    slug: "halal-travel-morocco-2026-complete-guide",
+    title: "Halal Travel in Morocco 2026: The Complete Muslim Traveler's Guide",
+    description: "Everything you need for halal travel in Morocco 2026: certified restaurants, mosques, best cities and practical tips. Complete guide by GoHalalTravel.",
+    coverImage: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80",
+    category: "Destinations",
+    readTime: "9 min",
+    publishedAt: "2026-02-02",
+    tags: ["Morocco", "Halal travel", "2026"],
+    content: `<p><strong>Halal travel in Morocco in 2026</strong> is one of the easiest and most peaceful experiences a Muslim traveler can have. A country that is 99% Muslim, Morocco makes daily life effortlessly compliant: food is halal by default, the call to prayer shapes the day, and mosques are everywhere.</p>
+<h2>Why Morocco is an ideal halal destination</h2>
+<p>In Morocco, you rarely need to ask whether something is halal. Meat sold in restaurants, markets and hotels is halal by tradition and by law. Alcohol exists in some tourist venues but is easy to avoid by choosing family-run, local spots. Social life follows the five daily prayers, which makes organizing your day simple.</p>
+<h2>Best cities to visit</h2>
+<h3>Marrakech</h3>
+<p>The red city is the gateway to Moroccan tourism: Jemaa el-Fna square, the souks and the Koutoubia mosque. See our full <a href="/destinations/marrakech">Marrakech guide</a>.</p>
+<h3>Fez</h3>
+<p>The spiritual capital, home to <strong>Al-Qarawiyyin</strong>, considered the world's oldest continuously operating university. See <a href="/destinations/fes">Fez</a>.</p>
+<h3>Casablanca</h3>
+<p>The economic hub hosts the magnificent <strong>Hassan II Mosque</strong>, one of the largest in the world, partly built over the ocean. See <a href="/destinations/casablanca">Casablanca</a>.</p>
+<h3>Tangier and the North</h3>
+<p>Between the Mediterranean and the Atlantic, Tangier blends Andalusian heritage and gentle living. See <a href="/destinations/tanger">Tangier</a>.</p>
+<h2>Moroccan halal cuisine</h2>
+<ul>
+<li><strong>Tagine</strong>: lamb with prunes, chicken with lemon and olives.</li>
+<li><strong>Couscous</strong>, the Friday dish of sharing.</li>
+<li><strong>Pastilla</strong>, a sweet-and-savory pie.</li>
+<li><strong>Msemen and baghrir</strong> for breakfast with mint tea.</li>
+</ul>
+<h2>Must-see mosques</h2>
+<p>The <strong>Hassan II Mosque</strong> in Casablanca (open to non-residents), the <strong>Koutoubia</strong> in Marrakech and <strong>Al-Qarawiyyin</strong> in Fez are unforgettable. To find a mosque anywhere, use our <a href="/mosquee-proche">Nearest Mosque</a> tool.</p>
+<h2>Practical tips: budget, transport, Ramadan</h2>
+<p><strong>Budget</strong>: Morocco is affordable. <strong>Transport</strong>: the ONCF train network links Tangier, Rabat, Casablanca and Marrakech. <strong>Dress</strong>: modest clothing is appreciated near religious sites. <strong>Ramadan</strong>: traveling during Ramadan offers a unique atmosphere; read our <a href="/blog/halal-travel-guide-beginners">beginner's guide</a>.</p>
+<h2>The Oriental region: Berkane, Saidia, Tafoughalt</h2>
+<p>Often missing from classic guides, the <strong>Oriental region</strong> is a hidden gem. <a href="/destinations/berkane">Berkane</a>, the orange capital, offers rare authenticity. <a href="/destinations/saidia">Saidia</a> unrolls miles of beaches, and <a href="/destinations/tafoughalt">Tafoughalt</a> charms with cool mountain landscapes.</p>
+<h2>Conclusion</h2>
+<p>Morocco ticks every box for halal travel: easy worship, superb cuisine and legendary hospitality. Start with our <a href="/destinations/berkane">Berkane guide</a> and plan your prayers with our <a href="/horaires-priere">prayer times</a> tool.</p>`,
+  },
+  {
+    slug: "best-halal-restaurants-istanbul-2026",
+    title: "Best Halal Restaurants in Istanbul 2026 — A Complete Food Guide",
+    description: "The best halal restaurants in Istanbul 2026: from street food to fine dining, prices and specialties. Updated guide by GoHalalTravel.",
+    coverImage: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1200&q=80",
+    category: "Food",
+    readTime: "7 min",
+    publishedAt: "2026-02-03",
+    tags: ["Istanbul", "Restaurants", "Turkey"],
+    content: `<p>Istanbul is a paradise for Muslim food lovers: in this city straddling Europe and Asia, the food is <strong>halal by default</strong>. From legendary street food to refined Bosphorus dining, here is our guide to the <strong>best halal restaurants in Istanbul in 2026</strong>.</p>
+<h2>Istanbul, a naturally halal food city</h2>
+<p>In Istanbul, meat served in restaurants is overwhelmingly halal. You can wander through Sultanahmet, Fatih or Eminonu and eat freely. Alcohol is served in some tourist venues, so simply choose family restaurants and traditional lokantas for full peace of mind.</p>
+<h2>Street food you must try</h2>
+<ul>
+<li><strong>Doner kebab</strong>, carved fresh and served in bread or on a plate.</li>
+<li><strong>Balik ekmek</strong>, the famous grilled fish sandwich by the Galata Bridge.</li>
+<li><strong>Simit</strong>, the sesame bread ring, perfect with Turkish tea.</li>
+<li><strong>Lahmacun and pide</strong>, Turkish flatbreads topped with spiced meat.</li>
+</ul>
+<h2>Traditional lokantas (mid-range)</h2>
+<p>The lokanta is the heart of Turkish dining: home-style stews, grilled meats, stuffed vegetables and fresh salads at fair prices. Districts like Fatih and Uskudar offer the most authentic, family-friendly options.</p>
+<h2>Fine dining with a view</h2>
+<p>For a special evening, several Bosphorus restaurants offer refined Ottoman cuisine, grilled meats and mezze with stunning views, many of them alcohol-free and family oriented.</p>
+<h2>Sweets and desserts</h2>
+<p>No visit is complete without <strong>baklava</strong>, <strong>kunefe</strong> (cheese pastry in syrup) and Turkish delight. Pair them with Turkish coffee or tea.</p>
+<h2>Tips for eating halal in Istanbul</h2>
+<p>Choose traditional, family-run venues, look for busy local spots, and when in doubt, ask. Our reminder: information is indicative, always verify locally. Between meals, find mosques with our <a href="/mosquee-proche">Nearest Mosque</a> tool and check <a href="/horaires-priere">prayer times</a> based on your location.</p>
+<h2>Conclusion</h2>
+<p>Istanbul combines an extraordinary food scene with an effortless halal experience. Explore our full <a href="/destinations/istanbul">Istanbul guide</a> and discover more in our <a href="/destinations">destinations</a>.</p>`,
+  },
+  {
+    slug: "halal-travel-guide-beginners",
+    title: "Halal Travel for Beginners: Everything You Need to Know Before You Go",
+    description: "New to halal travel? This complete beginner's guide covers finding halal food, mosques, prayer times and Muslim-friendly hotels anywhere in the world.",
+    coverImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80",
+    category: "Practical",
+    readTime: "8 min",
+    publishedAt: "2026-02-04",
+    tags: ["Beginners", "Halal travel", "Guide"],
+    content: `<p>Planning your first trip as a Muslim traveler? <strong>Halal travel</strong> simply means traveling in a way that respects your values: halal food, easy prayer, modesty and comfort. This beginner's guide covers everything you need to know before you go.</p>
+<h2>What does halal travel mean?</h2>
+<p>Halal travel is about being able to eat halal, pray on time, find mosques, and stay in Muslim-friendly accommodation, anywhere in the world. It is not about limiting your horizons; it is about traveling with peace of mind.</p>
+<h2>Finding halal food abroad</h2>
+<p>In Muslim-majority countries, food is halal by default. Elsewhere, look for certified halal restaurants, Turkish, Pakistani, Lebanese or Malaysian eateries, and vegetarian or seafood options when in doubt. Always check certification and, if unsure, ask. Our destination guides list verified halal spots in 157+ cities.</p>
+<h2>Praying while traveling</h2>
+<p>Islam grants the traveler real facilities: you may <strong>shorten</strong> (qasr) and <strong>combine</strong> (jam') prayers. Always calculate prayer times based on your real location, not your home city. Use our <a href="/horaires-priere">prayer times</a> tool, powered by GPS, and our <a href="/qibla">Qibla compass</a> to find the direction of Mecca.</p>
+<h2>Finding a mosque</h2>
+<p>In an unfamiliar city, our <a href="/mosquee-proche">Nearest Mosque</a> tool detects your location and lists nearby mosques sorted by distance, with directions.</p>
+<h2>Choosing Muslim-friendly hotels</h2>
+<p>Look for hotels offering halal breakfast options, prayer mats, Qibla direction in the room, and ideally no alcohol in shared spaces. Family-run hotels and those near mosques are often the most comfortable.</p>
+<h2>Modesty and respect</h2>
+<p>Modest clothing is appreciated, especially near religious sites. Respect local customs and you will be warmly welcomed throughout the Muslim world.</p>
+<h2>Best beginner destinations</h2>
+<p>For a first halal trip, choose easy, welcoming cities such as <a href="/destinations/istanbul">Istanbul</a>, <a href="/destinations/kuala-lumpur">Kuala Lumpur</a>, <a href="/destinations/dubai">Dubai</a> or <a href="/destinations/marrakech">Marrakech</a>.</p>
+<h2>Conclusion</h2>
+<p>Halal travel is simpler than it looks. With the right tools and a little preparation, the whole world opens up. Browse our <a href="/destinations">destinations</a> and plan your first journey today.</p>`,
+  },
+  {
+    slug: "prayer-times-while-traveling-muslim-guide",
+    title: "Prayer Times While Traveling: How to Never Miss a Prayer",
+    description: "Complete guide to managing prayer times while traveling: shortening and combining prayers, praying on planes, finding the Qibla and mosques worldwide.",
+    coverImage: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80",
+    category: "Practical",
+    readTime: "8 min",
+    publishedAt: "2026-02-05",
+    tags: ["Prayer", "Travel", "Qibla"],
+    content: `<p>Traveling does not exempt you from prayer, but Islam offers valuable facilities for the traveler. Time-zone changes, long flights, layovers: here is how to <strong>never miss a prayer while traveling</strong>.</p>
+<h2>The traveler's prayer: an eased obligation</h2>
+<p>The traveler (musafir) benefits from two main facilities rooted in the Prophetic tradition: <strong>qasr</strong> and <strong>jam'</strong>. These are mercies that make worship easy on the move.</p>
+<h2>Qasr: shortening prayers</h2>
+<p>While traveling, the four-unit prayers (Dhuhr, Asr, Isha) may be shortened to two units. Maghrib (three units) and Fajr (two units) remain unchanged.</p>
+<h2>Jam': combining prayers</h2>
+<p>You may also combine Dhuhr with Asr, and Maghrib with Isha, either earlier or later. This is especially useful during flights, long train rides or busy sightseeing days.</p>
+<h2>Praying on a plane</h2>
+<p>On board, do your best: perform ablutions before boarding (or tayammum if water is unavailable), face the Qibla as much as possible at the start, and pray seated if you cannot stand. Intention and effort come first. Our <a href="/qibla">Qibla calculator</a> helps you find the direction of Mecca anywhere.</p>
+<h2>Handling time-zone changes</h2>
+<p>The biggest pitfall is the time difference: prayer times change with longitude and latitude. Never rely on your home city's schedule. Always calculate based on your <strong>real position</strong>. Our <a href="/horaires-priere">prayer times</a> tool uses your GPS location for minute-accurate results, with method and school selectors.</p>
+<h2>Finding a mosque worldwide</h2>
+<p>In a new city, our <a href="/mosquee-proche">Nearest Mosque</a> tool detects your position and lists mosques around you, sorted by distance, with directions.</p>
+<h2>By destination</h2>
+<p>Prayer times vary widely by country: long summer days in <a href="/destinations/istanbul">Istanbul</a>, steady year-round timing in <a href="/destinations/dubai">Dubai</a>, and prayer-centered life in <a href="/destinations/kuala-lumpur">Kuala Lumpur</a> and Morocco.</p>
+<h2>Conclusion</h2>
+<p>With qasr, jam' and the right tools, prayer on the road becomes simple. Keep our <a href="/horaires-priere">prayer times</a> and <a href="/qibla">Qibla compass</a> handy and travel with peace of mind.</p>`,
+  },
+  {
+    slug: "top-10-halal-destinations-2026",
+    title: "Top 10 Halal Travel Destinations in 2026 — Ranked by Halal Trust Score",
+    description: "Our ranking of the 10 best halal travel destinations in 2026: Madinah, Kuala Lumpur, Istanbul, Dubai, Morocco... Based on our unique Halal Trust Score.",
+    coverImage: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80",
+    category: "Destinations",
+    readTime: "8 min",
+    publishedAt: "2026-02-06",
+    tags: ["Ranking", "Destinations", "2026"],
+    content: `<p>What are the <strong>best halal travel destinations in 2026</strong>? To answer objectively, we built the <strong>Halal Trust Score</strong>, an index rating each city by halal restaurant offering, number of mosques, ease of prayer and welcome for Muslim travelers.</p>
+<h2>The Halal Trust Score, a unique system</h2>
+<p>Rather than subjective opinions, our score aggregates concrete criteria: density of certified restaurants, mosque accessibility, availability of prayer times and the overall environment. Here is our top 10.</p>
+<h2>1. Madinah</h2>
+<p>The city of the Prophet, the ultimate peak of spiritual serenity around the Prophet's Mosque. See <a href="/destinations/medine">Madinah</a>.</p>
+<h2>2. Kuala Lumpur</h2>
+<p>The Malaysian capital blends modernity, ubiquitous halal street food and beautiful mosques. See <a href="/destinations/kuala-lumpur">Kuala Lumpur</a>.</p>
+<h2>3. Istanbul</h2>
+<p>At the crossroads of Europe and Asia, with exceptional Islamic heritage and fully halal cuisine. See <a href="/destinations/istanbul">Istanbul</a>.</p>
+<h2>4. Dubai</h2>
+<p>Luxury, stunning mosques and family-friendly infrastructure. See <a href="/destinations/dubai">Dubai</a>.</p>
+<h2>5. Marrakech</h2>
+<p>The soul of Morocco: souks, medina and the Koutoubia. See <a href="/destinations/marrakech">Marrakech</a>.</p>
+<h2>6. Cairo</h2>
+<p>A thousand minarets, Al-Azhar and a millennium of Islamic history. See <a href="/destinations/le-caire">Cairo</a>.</p>
+<h2>7. Doha</h2>
+<p>Elegant and family-friendly, blending tradition and refinement. See <a href="/destinations/doha">Doha</a>.</p>
+<h2>8. Casablanca</h2>
+<p>The Hassan II Mosque, between ocean and sky, is worth the trip alone. See <a href="/destinations/casablanca">Casablanca</a>.</p>
+<h2>9. Abu Dhabi</h2>
+<p>The Sheikh Zayed Grand Mosque is one of the most beautiful buildings in the Muslim world. See <a href="/destinations/abu-dhabi">Abu Dhabi</a>.</p>
+<h2>10. Fez</h2>
+<p>Morocco's spiritual capital, birthplace of Al-Qarawiyyin. See <a href="/destinations/fes">Fez</a>.</p>
+<h2>How to choose your 2026 destination</h2>
+<p>For a first halal trip, pick a high-density city like Istanbul, Kuala Lumpur or Marrakech. For a spiritual retreat, Madinah is unmatched. For a family stay, Dubai and Doha offer top comfort. Explore all 157 cities on our <a href="/destinations">destinations</a> page.</p>
+<h2>Conclusion</h2>
+<p>This ranking evolves yearly with our data. One constant: halal travel is possible, enjoyable and enriching everywhere. Plan your prayers with our <a href="/horaires-priere">prayer times</a> and <a href="/qibla">Qibla</a> tools.</p>`,
+  },
 ]
 
 export function getDestinationBySlug(slug: string): Destination | undefined {

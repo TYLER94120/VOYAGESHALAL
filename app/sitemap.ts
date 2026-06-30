@@ -24,17 +24,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/blog`, changeFrequency: 'daily', priority: 0.8 },
     { url: `${SITE_URL}/application`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE_URL}/omra`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${SITE_URL}/horaires-priere`, changeFrequency: 'daily', priority: 0.8 },
-    { url: `${SITE_URL}/qibla`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${SITE_URL}/mosquee-proche`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${SITE_URL}/horaires-priere`, changeFrequency: 'daily', priority: 0.9 },
+    { url: `${SITE_URL}/qibla`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${SITE_URL}/mosquee-proche`, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/contact`, changeFrequency: 'yearly', priority: 0.4 },
   ]
 
   // All city pages now live under /destinations/[slug], sourced from data/villes
   const villePages: MetadataRoute.Sitemap = getVilleSlugs().map((slug) => ({
     url: `${SITE_URL}/destinations/${slug}`,
-    changeFrequency: 'monthly',
-    priority: 0.9,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 0.8,
   }))
 
   const guidePages: MetadataRoute.Sitemap = guides.map((g) => ({

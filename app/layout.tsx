@@ -15,43 +15,53 @@ import { LocationProvider } from '@/components/location/LocationProvider'
 import { AdhanProvider } from '@/components/adhan/AdhanProvider'
 import PrayerCountdownBar from '@/components/prayer/PrayerCountdownBar'
 import { RamadanBanner } from '@/components/RamadanBanner'
-import { SITE_NAME, DEFAULT_DESCRIPTION, SITE_URL } from '@/lib/seo'
+import { DEFAULT_DESCRIPTION, EN_DESCRIPTION as EN_DEFAULT_DESCRIPTION } from '@/lib/seo'
 import { getDomainSEO } from '@/lib/domain'
 
 const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-inter' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
-export const metadata: Metadata = {
-  metadataBase: new URL(SITE_URL),
-  title: {
-    default: 'VoyagesHalal.fr — Guide Voyage Halal #1 | Restaurants, Mosquées & Destinations',
-    template: '%s | VoyagesHalal.fr',
-  },
-  description: DEFAULT_DESCRIPTION,
-  keywords: ['voyage halal', 'tourisme halal', 'destinations halal', 'restaurant halal', 'hébergement halal', 'guide voyage musulman'],
-  authors: [{ name: SITE_NAME }],
-  creator: SITE_NAME,
-  openGraph: {
-    type: 'website',
-    locale: 'fr_FR',
-    url: SITE_URL,
-    siteName: SITE_NAME,
-    images: [{ url: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630 }],
-  },
-  twitter: { card: 'summary_large_image' },
-  robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large' } },
-  // Lien croisé SEO entre les deux domaines (FR ↔ EN)
-  alternates: {
-    languages: {
-      fr: 'https://www.voyageshalal.fr',
-      en: 'https://www.gohalaltravel.com',
-      'x-default': 'https://www.gohalaltravel.com',
+export async function generateMetadata(): Promise<Metadata> {
+  const { isEN, brand, siteUrl } = await getDomainSEO()
+  return {
+    metadataBase: new URL(siteUrl),
+    title: isEN
+      ? {
+          default: 'GoHalalTravel — #1 Halal Travel Guide | Restaurants, Mosques & Destinations',
+          template: '%s | GoHalalTravel',
+        }
+      : {
+          default: 'VoyagesHalal.fr — Guide Voyage Halal #1 | Restaurants, Mosquées & Destinations',
+          template: '%s | VoyagesHalal.fr',
+        },
+    description: isEN ? EN_DEFAULT_DESCRIPTION : DEFAULT_DESCRIPTION,
+    keywords: isEN
+      ? ['halal travel', 'halal restaurants', 'muslim travel guide', 'halal food', 'prayer times', 'mosque finder', 'muslim friendly hotels', 'halal destinations 2026']
+      : ['voyage halal', 'tourisme halal', 'destinations halal', 'restaurant halal', 'hébergement halal', 'guide voyage musulman'],
+    authors: [{ name: brand }],
+    creator: brand,
+    openGraph: {
+      type: 'website',
+      locale: isEN ? 'en_US' : 'fr_FR',
+      url: siteUrl,
+      siteName: brand,
+      images: [{ url: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630 }],
     },
-  },
-  appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: 'VoyagesHalal' },
-  ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION && {
-    verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION },
-  }),
+    twitter: { card: 'summary_large_image' },
+    robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large' } },
+    // Lien croisé SEO entre les deux domaines (FR ↔ EN)
+    alternates: {
+      languages: {
+        fr: 'https://www.voyageshalal.fr',
+        en: 'https://www.gohalaltravel.com',
+        'x-default': 'https://www.gohalaltravel.com',
+      },
+    },
+    appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: isEN ? 'GoHalalTravel' : 'VoyagesHalal' },
+    ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION && {
+      verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION },
+    }),
+  }
 }
 
 export const viewport: Viewport = {
