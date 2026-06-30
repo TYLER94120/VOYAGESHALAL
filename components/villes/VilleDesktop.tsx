@@ -1,7 +1,6 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useRef } from 'react'
-import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useToast } from '@/components/Toast'
@@ -28,13 +27,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const displayTab = activeTab ?? 'restaurants' // contenu affiché par défaut (sans orange)
   const [activeFilter, setActiveFilter] = useState('Tous')
   const toast = useToast()
-  const router = useRouter()
   const contentRef = useRef<HTMLDivElement>(null)
 
-  // Clic sur un onglet → Mosquées renvoie vers le chercheur de mosquée proche ;
-  // les autres changent l'onglet et descendent vers le contenu.
+  // Clic sur un onglet → affiche le contenu de la fiche (mosquées incluses : on a les
+  // vraies données OSM bakées, plus besoin de la géoloc qui pouvait échouer).
   const goToTab = (id: string) => {
-    if (id === 'mosquees') { router.push('/mosquee-proche'); return }
     setActiveTab(id)
     setTimeout(() => contentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
   }
@@ -217,6 +214,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         )}
         {displayTab === 'mosquees' && mosquees.length > 0 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 8 }}>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '24px', fontWeight: 900, color: 'var(--nuit)', margin: 0 }}>Mosquées à {ville.nom}</h2>
+              <a href="/mosquee-proche" style={{ fontSize: '13px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>📍 Autour de moi (GPS) →</a>
+            </div>
             {mosquees.map((m: any, i: number) => (
               <div key={i} style={card}>
                 <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '19px', color: 'var(--nuit)', marginBottom: '6px' }}>🕌 {m.nom}</p>
