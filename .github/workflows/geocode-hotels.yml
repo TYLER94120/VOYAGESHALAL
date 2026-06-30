@@ -1,0 +1,30 @@
+name: Géocoder les hôtels curés (Nominatim)
+
+# Ajoute lat/lng aux hôtels curés qui n'en ont pas (villes phares : Tokyo, Istanbul…).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  geocode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Géocodage Nominatim
+        run: node scripts/geocode-hotels.mjs
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/villes
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "data(osm): géocodage des hôtels curés (lat/lng via Nominatim)"
+            git push
+          fi
