@@ -49,13 +49,17 @@ function buildQuery(lat, lng) {
 async function overpass(query) {
   for (let attempt = 0; attempt < ENDPOINTS.length * 2; attempt++) {
     const url = ENDPOINTS[attempt % ENDPOINTS.length]
+    // Timeout client par requête : un fetch bloqué est avorté au bout de 30s,
+    // on bascule alors sur l'endpoint suivant (évite tout blocage du job).
+    const ac = new AbortController()
+    const timer = setTimeout(() => ac.abort(), 30000)
     try {
-      const res = await fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(query), headers: { 'Content-Type': 'application/x-www-form-urlencoded' } })
-      if (res.status === 429 || res.status === 504) { await sleep(4000); continue }
+      const res = await fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(query), headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, signal: ac.signal })
+      if (res.status === 429 || res.status === 504) { await sleep(3000); continue }
       if (!res.ok) { await sleep(1500); continue }
       const j = await res.json()
       return j.elements || []
-    } catch { await sleep(2000) }
+    } catch { await sleep(1500) } finally { clearTimeout(timer) }
   }
   return null
 }
