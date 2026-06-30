@@ -55,6 +55,22 @@ GET /api/villes/{slug}
 Prière en temps réel (si besoin réseau) : AlAdhan `https://api.aladhan.com/v1/timings/{ts}?latitude=&longitude=&method=&school=`.
 Mosquées proches : Overpass `https://overpass-api.de/api/interpreter` (requête `amenity=place_of_worship` `religion=muslim`).
 
+### ⭐ Restaurants halal sur la carte = OpenStreetMap (comme les mosquées)
+**Décision produit (validée) :** les PINS de restaurants/hôtels halal viennent d'**OSM Overpass en temps réel**, pas de la base. OSM fournit de **vrais noms + vraies coordonnées + tag halal**, pour toute ville, sans fabrication. Les listes curées de `/api/villes/{slug}` (ex. Naritaya à Tokyo) restent affichées comme **« Sélection éditoriale »** (liste + bouton « Ouvrir dans Maps » via `mapsUrl`), sans coordonnées stockées.
+
+Requête Overpass (restaurants halal dans un rayon autour de la position) :
+```
+[out:json][timeout:25];
+(
+  node["amenity"~"restaurant|fast_food|cafe"]["diet:halal"~"yes|only"](around:5000,{lat},{lng});
+  way ["amenity"~"restaurant|fast_food|cafe"]["diet:halal"~"yes|only"](around:5000,{lat},{lng});
+);
+out center 60;
+```
+Chaque résultat OSM donne `lat`/`lon` (ou `center` pour les `way`), `tags.name`, `tags.cuisine`, `tags."diet:halal"`. → directement affichable sur `react-native-maps`. Filtrer `diet:halal=only` pour le plus strict, `yes` pour l'offre élargie. Afficher le rappel « Vérifiez le statut halal localement ».
+
+> Pourquoi pas de lat/lng dans la base ? Inventer des coordonnées de restaurants enverrait un voyageur musulman vers une mauvaise adresse. OSM est la source de vérité géolocalisée ; la base reste la couche éditoriale (score, contexte halal de la ville, sélection).
+
 ---
 
 ## 4. Design system

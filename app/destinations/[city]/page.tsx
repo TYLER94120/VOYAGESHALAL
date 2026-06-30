@@ -119,7 +119,7 @@ export default async function DestinationPage({ params }: Props) {
               Autres destinations halal
             </h2>
             <a href="/destinations?all=1" style={{ fontSize: '14px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
-              Voir les 157 destinations →
+              Voir toutes les destinations →
             </a>
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '9px' }}>

@@ -112,7 +112,7 @@ export function buildBreadcrumbSchema(
 }
 
 interface SchemaOpts { en?: boolean; siteUrl?: string; name?: string }
-const EN_DESCRIPTION = 'Certified halal restaurants, mosques, prayer times and practical guides in 157+ destinations worldwide — for Muslim travelers.'
+const EN_DESCRIPTION = 'Certified halal restaurants, mosques, prayer times and practical guides in 220+ destinations worldwide — for Muslim travelers.'
 
 export function buildOrganizationSchema(opts: SchemaOpts = {}) {
   const url = opts.siteUrl ?? SITE_URL

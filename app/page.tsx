@@ -20,8 +20,8 @@ export async function generateMetadata(): Promise<Metadata> {
     ? 'GoHalalTravel — #1 Halal Travel Guide | Restaurants, Mosques & Destinations'
     : 'VoyagesHalal.fr — Guide Voyage Halal #1 | Restaurants, Mosquées & Destinations'
   const description = isEN
-    ? 'Certified halal restaurants, mosques, prayer times and practical guides in 157+ destinations worldwide — for Muslim travelers.'
-    : 'Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans 157+ destinations — pour les musulmans du monde entier.'
+    ? 'Certified halal restaurants, mosques, prayer times and practical guides in 220+ destinations worldwide — for Muslim travelers.'
+    : 'Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans 220+ destinations — pour les musulmans du monde entier.'
   const keywords = isEN
     ? ['halal travel', 'halal travel guide', 'halal restaurants', 'halal destinations', 'muslim travel', 'prayer times', 'mosques near me', 'muslim friendly hotels']
     : ['voyage halal', 'tourisme halal', 'destinations halal', 'restaurant halal', 'hébergement halal', 'guide voyage musulman', 'horaires de prière']
