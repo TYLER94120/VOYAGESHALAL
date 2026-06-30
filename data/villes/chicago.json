@@ -1,906 +1,919 @@
 {
-  "nom": "Chicago",
-  "pays": "États-Unis",
-  "slug": "chicago",
-  "image": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1400&q=85",
-  "description": "Chicago, métropole des gratte-ciel sur le lac Michigan, abrite la « Devon Avenue » sud-asiatique et une riche scène halal. Architecture, deep-dish et mosquées historiques.",
-  "descriptionLongue": "Berceau du gratte-ciel et capitale du Midwest, Chicago déploie son skyline le long du lac Michigan. La ville accueille l'une des plus anciennes communautés musulmanes des États-Unis. Devon Avenue, artère indo-pakistanaise, et le quartier arabe de Bridgeview offrent restaurants halal, épiceries et pâtisseries. Entre l'architecture audacieuse, le Bean de Millennium Park et les musées de classe mondiale, Chicago est une étape américaine majeure.",
-  "halalScore": 7.8,
-  "score_halal": 3.9,
+ "nom": "Chicago",
+ "pays": "États-Unis",
+ "slug": "chicago",
+ "image": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1400&q=85",
+ "description": "Chicago, métropole des gratte-ciel sur le lac Michigan, abrite la « Devon Avenue » sud-asiatique et une riche scène halal. Architecture, deep-dish et mosquées historiques.",
+ "descriptionLongue": "Berceau du gratte-ciel et capitale du Midwest, Chicago déploie son skyline le long du lac Michigan. La ville accueille l'une des plus anciennes communautés musulmanes des États-Unis. Devon Avenue, artère indo-pakistanaise, et le quartier arabe de Bridgeview offrent restaurants halal, épiceries et pâtisseries. Entre l'architecture audacieuse, le Bean de Millennium Park et les musées de classe mondiale, Chicago est une étape américaine majeure.",
+ "halalScore": 7.8,
+ "score_halal": 3.9,
+ "mosquees": 120,
+ "population": "2,7 millions",
+ "langue": "Anglais",
+ "monnaie": "Dollar US (USD)",
+ "fuseau": "UTC-6",
+ "meilleureEpoque": "Mai à Octobre",
+ "prixMoyenNuit": "150€",
+ "continent": "Amérique du Nord",
+ "codeISO": "US",
+ "pays_slug": "etats-unis",
+ "region": "Midwest",
+ "meta_title": "Voyage Halal à Chicago — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Chicago — Halal Trust Score 7.8/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Chicago — Halal Trust Score 7.8/10.",
+ "coordonnees": {
+  "lat": 41.8781,
+  "lng": -87.6298
+ },
+ "image_alt": "Vue de Chicago, États-Unis",
+ "statistiques": {
   "mosquees": 120,
-  "population": "2,7 millions",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 8,
+  "hotels": 8
+ },
+ "infos_pratiques": {
   "langue": "Anglais",
   "monnaie": "Dollar US (USD)",
-  "fuseau": "UTC-6",
-  "meilleureEpoque": "Mai à Octobre",
-  "prixMoyenNuit": "150€",
-  "continent": "Amérique du Nord",
-  "codeISO": "US",
-  "pays_slug": "etats-unis",
-  "region": "Midwest",
-  "meta_title": "Voyage Halal à Chicago — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Chicago — Halal Trust Score 7.8/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Chicago — Halal Trust Score 7.8/10.",
-  "coordonnees": {
+  "meilleure_periode": "Mai à Octobre",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "ESTA obligatoire pour les Français",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Métro aérien 'L', bus, VTC",
+  "priseElectrique": "Type A/B — 120V",
+  "decalageHoraire": "-7h par rapport à Paris"
+ },
+ "restaurants": [
+  {
+   "nom": "Sabri Nihari",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Devon Avenue",
+   "description": "Institution pakistanaise de Devon Avenue",
+   "mapsUrl": "https://maps.google.com/?q=Sabri+Nihari+Chicago",
+   "priceRange": "€€",
+   "specialite": "Nihari et biryani",
+   "id": "r1"
+  },
+  {
+   "nom": "Ghareeb Nawaz",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Rogers Park",
+   "description": "Cantine indo-pak populaire et abordable",
+   "mapsUrl": "https://maps.google.com/?q=Ghareeb+Nawaz+Chicago",
+   "priceRange": "€",
+   "specialite": "Biryani",
+   "id": "r2"
+  },
+  {
+   "nom": "Chickpea",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "West Town",
+   "description": "Cuisine maison du Levant",
+   "mapsUrl": "https://maps.google.com/?q=Chickpea+Chicago",
+   "priceRange": "€",
+   "specialite": "Cuisine palestinienne",
+   "id": "r3"
+  },
+  {
+   "nom": "Khan BBQ",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Devon Avenue",
+   "description": "Grillades et karahi réputés",
+   "mapsUrl": "https://maps.google.com/?q=Khan+BBQ+Chicago",
+   "priceRange": "€€",
+   "specialite": "Grillades pakistanaises",
+   "id": "r4"
+  },
+  {
+   "nom": "Allende Halal",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Logan Square",
+   "description": "Cuisine mexicaine-halal originale",
+   "mapsUrl": "https://maps.google.com/?q=Allende+Halal+Chicago",
+   "priceRange": "€€",
+   "specialite": "Cuisine fusion",
+   "id": "r5"
+  },
+  {
+   "nom": "Al Madina Chicago",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Chicago",
+   "description": "Adresse halal appréciée des habitants de Chicago.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Chicago+Chicago",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r6"
+  },
+  {
+   "nom": "Shawarma House Chicago",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Chicago",
+   "description": "Adresse halal appréciée des habitants de Chicago.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Chicago+Chicago",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r7"
+  },
+  {
+   "nom": "Beit Beirut Chicago",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Chicago",
+   "description": "Adresse halal appréciée des habitants de Chicago.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Chicago+Chicago",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r8"
+  },
+  {
+   "nom": "Spice Route Chicago",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Chicago",
+   "description": "Adresse halal appréciée des habitants de Chicago.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Chicago+Chicago",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r9"
+  },
+  {
+   "nom": "Saffron Garden Chicago",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Chicago",
+   "description": "Adresse halal appréciée des habitants de Chicago.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Chicago+Chicago",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r10"
+  },
+  {
+   "nom": "Green Bowl Chicago",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Chicago",
+   "description": "Adresse halal appréciée des habitants de Chicago.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Chicago+Chicago",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r11"
+  },
+  {
+   "nom": "Sultan Café Chicago",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Chicago",
+   "description": "Adresse halal appréciée des habitants de Chicago.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Chicago+Chicago",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r12"
+  },
+  {
+   "nom": "Ocean Pearl Chicago",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Chicago",
+   "description": "Adresse halal appréciée des habitants de Chicago.",
+   "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Chicago+Chicago",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé du jour",
+   "id": "r13"
+  },
+  {
+   "nom": "Bella Halal Chicago",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Chicago",
+   "description": "Adresse halal appréciée des habitants de Chicago.",
+   "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Chicago+Chicago",
+   "priceRange": "€€",
+   "specialite": "Pizza halal au four à bois",
+   "id": "r14"
+  },
+  {
+   "nom": "Tokyo Halal Chicago",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Chicago",
+   "description": "Adresse halal appréciée des habitants de Chicago.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Chicago+Chicago",
+   "priceRange": "€€€",
+   "specialite": "Sushis certifiés halal",
+   "id": "r15"
+  },
+  {
+   "nom": "Halal Guys Corner",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Chicago",
+   "description": "Adresse burgers & fast-food appréciée à Chicago, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Halal+Guys+Corner+Chicago",
+   "priceRange": "€€",
+   "specialite": "Chicken over rice",
+   "nombreAvis": 3088,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Beirut House",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Chicago",
+   "description": "Adresse libanais & levant appréciée à Chicago, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beirut+House+Chicago",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 898,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Shahi Palace",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Chicago",
+   "description": "Adresse indien & pakistani appréciée à Chicago, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shahi+Palace+Chicago",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1179,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Marrakech Express",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Chicago",
+   "description": "Adresse marocain appréciée à Chicago, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Marrakech+Express+Chicago",
+   "priceRange": "€€",
+   "specialite": "Tajine",
+   "nombreAvis": 877,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Anatolia Kebab",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Chicago",
+   "description": "Adresse turc appréciée à Chicago, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Anatolia+Kebab+Chicago",
+   "priceRange": "€€",
+   "specialite": "Döner",
+   "nombreAvis": 2447,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Saffron Fine Dining",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Chicago",
+   "description": "Adresse gastronomique appréciée à Chicago, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Fine+Dining+Chicago",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation",
+   "nombreAvis": 348,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Sakura Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Chicago",
+   "description": "Adresse japonais & asiatique appréciée à Chicago, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Chicago",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 990,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Medina Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Chicago",
+   "description": "Adresse pâtisserie & café appréciée à Chicago, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Medina+Caf%C3%A9+Chicago",
+   "priceRange": "€€",
+   "specialite": "Baklava et café",
+   "nombreAvis": 812,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Halal Guys Corner Chicago 9",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Chicago",
+   "description": "Adresse burgers & fast-food appréciée à Chicago, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Halal+Guys+Corner+Chicago+9+Chicago",
+   "priceRange": "€€",
+   "specialite": "Chicken over rice",
+   "nombreAvis": 309,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Beirut House Chicago 10",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Chicago",
+   "description": "Adresse libanais & levant appréciée à Chicago, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beirut+House+Chicago+10+Chicago",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 3308,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r25"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "The Langham Chicago",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Loop",
+   "description": "Palace dans un gratte-ciel de Mies van der Rohe",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Langham+Chicago+Chicago",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "lat": 41.8884239,
+   "lng": -87.6275117
+  },
+  {
+   "nom": "Chicago Athletic Association",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Loop",
+   "description": "Hôtel historique face à Millennium Park",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Chicago+Athletic+Association+Chicago",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
+   "priceRange": "€€€",
+   "id": "h2",
+   "lat": 41.8818857,
+   "lng": -87.6252187
+  },
+  {
+   "nom": "Hampton Inn Chicago Downtown",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "River North",
+   "description": "Hôtel confortable central",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Hampton+Inn+Chicago+Downtown+Chicago",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
+   "priceRange": "€€",
+   "id": "h3",
+   "lat": 41.8906174,
+   "lng": -87.6291984
+  },
+  {
+   "nom": "Grand Plaza Chicago",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Chicago",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Chicago+Chicago",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
+   "priceRange": "€€€€",
+   "id": "h4",
+   "lat": 41.8920447,
+   "lng": -87.6288974
+  },
+  {
+   "nom": "City Comfort Hotel Chicago",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Chicago",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Chicago+Chicago",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
+   "priceRange": "€€€",
+   "id": "h5"
+  },
+  {
+   "nom": "Boutique Riad Chicago",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Chicago",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Chicago+Chicago",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
+   "priceRange": "€€€",
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Chicago 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Chicago",
+   "description": "Hébergement halal-friendly à Chicago.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Chicago+0+Chicago",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
+   "priceRange": "€€€€",
+   "nombreAvis": 1332,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 41.8919091,
+   "lng": -87.6284859
+  },
+  {
+   "nom": "City Comfort Chicago",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Chicago",
+   "description": "Hébergement halal-friendly à Chicago.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Chicago+Chicago",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
+   "priceRange": "€€€",
+   "nombreAvis": 1226,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": 42.0095968,
+   "lng": -87.8707602
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Millennium Park & le Bean",
+   "categorie": "Nature & Aventure",
+   "description": "Sculpture Cloud Gate et parc emblématique",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Millennium+Park+%26+le+Bean+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Millennium+Park+%26+le+Bean+Chicago",
+   "id": "a1"
+  },
+  {
+   "nom": "Croisière architecture sur la rivière",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte des gratte-ciel depuis l'eau",
+   "duree": "2h",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+architecture+sur+la+rivi%C3%A8re+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Croisi%C3%A8re+architecture+sur+la+rivi%C3%A8re+Chicago",
+   "id": "a2"
+  },
+  {
+   "nom": "Willis Tower Skydeck",
+   "categorie": "Histoire & Culture",
+   "description": "Plateforme de verre au 103e étage",
+   "duree": "2h",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Willis+Tower+Skydeck+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Willis+Tower+Skydeck+Chicago",
+   "id": "a3"
+  },
+  {
+   "nom": "Art Institute of Chicago",
+   "categorie": "Art & Musées",
+   "description": "L'un des plus grands musées d'art des USA",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Art+Institute+of+Chicago+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Art+Institute+of+Chicago+Chicago",
+   "id": "a4"
+  },
+  {
+   "nom": "Devon Avenue",
+   "categorie": "Shopping & Souks",
+   "description": "Quartier indo-pakistanais et commerces halal",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Devon+Avenue+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Devon+Avenue+Chicago",
+   "id": "a5"
+  },
+  {
+   "nom": "Mosquée de Bridgeview",
+   "categorie": "Religieux & Spirituel",
+   "description": "Grand centre islamique de la région",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+Bridgeview+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+Bridgeview+Chicago",
+   "id": "a6"
+  },
+  {
+   "nom": "Navy Pier",
+   "categorie": "Sport & Loisirs",
+   "description": "Jetée animée et grande roue sur le lac",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Navy+Pier+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Navy+Pier+Chicago",
+   "id": "a7"
+  },
+  {
+   "nom": "Lakefront Trail",
+   "categorie": "Nature & Aventure",
+   "description": "Promenade au bord du lac Michigan",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Lakefront+Trail+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lakefront+Trail+Chicago",
+   "id": "a8"
+  },
+  {
+   "nom": "Vieille ville de Chicago",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Chicago+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Chicago+Chicago",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand souk de Chicago",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Chicago+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Chicago+Chicago",
+   "id": "a10"
+  },
+  {
+   "nom": "Quartier historique de Chicago",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Chicago+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Chicago+Chicago",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Chicago",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Chicago+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Chicago+Chicago",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Chicago",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Chicago+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Chicago+Chicago",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Chicago",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Chicago+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Chicago+Chicago",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Chicago",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Chicago+Chicago",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Chicago+Chicago",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Foundation (Bridgeview)",
+   "description": "L'un des plus grands centres islamiques du Midwest",
+   "adresse": "Bridgeview",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Foundation+%28Bridgeview%29+Chicago",
+   "capacite": 6745,
+   "anneeConstruction": 1925,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 41.8781,
     "lng": -87.6298
+   }
   },
-  "image_alt": "Vue de Chicago, États-Unis",
-  "statistiques": {
-    "mosquees": 120,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 8
+  {
+   "nom": "Downtown Islamic Center",
+   "description": "Mosquée du centre-ville de Chicago",
+   "adresse": "Loop",
+   "mapsUrl": "https://maps.google.com/?q=Downtown+Islamic+Center+Chicago",
+   "capacite": 2072,
+   "anneeConstruction": 1962,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.8781,
+    "lng": -87.6298
+   }
   },
-  "infos_pratiques": {
-    "langue": "Anglais",
-    "monnaie": "Dollar US (USD)",
-    "meilleure_periode": "Mai à Octobre",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Chicago",
+   "description": "Mosquée fréquentée de Chicago, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Chicago",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Chicago+Chicago",
+   "capacite": 1995,
+   "anneeConstruction": 1995,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.8781,
+    "lng": -87.6298
+   }
   },
-  "infoPratique": {
-    "visa": "ESTA obligatoire pour les Français",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Métro aérien 'L', bus, VTC",
-    "priseElectrique": "Type A/B — 120V",
-    "decalageHoraire": "-7h par rapport à Paris"
+  {
+   "nom": "Grande Mosquée de Chicago",
+   "description": "Mosquée fréquentée de Chicago, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Chicago",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Chicago+Chicago",
+   "capacite": 5587,
+   "anneeConstruction": 2007,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.8781,
+    "lng": -87.6298
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Sabri Nihari",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Devon Avenue",
-      "description": "Institution pakistanaise de Devon Avenue",
-      "mapsUrl": "https://maps.google.com/?q=Sabri+Nihari+Chicago",
-      "priceRange": "€€",
-      "specialite": "Nihari et biryani",
-      "id": "r1"
-    },
-    {
-      "nom": "Ghareeb Nawaz",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Rogers Park",
-      "description": "Cantine indo-pak populaire et abordable",
-      "mapsUrl": "https://maps.google.com/?q=Ghareeb+Nawaz+Chicago",
-      "priceRange": "€",
-      "specialite": "Biryani",
-      "id": "r2"
-    },
-    {
-      "nom": "Chickpea",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "West Town",
-      "description": "Cuisine maison du Levant",
-      "mapsUrl": "https://maps.google.com/?q=Chickpea+Chicago",
-      "priceRange": "€",
-      "specialite": "Cuisine palestinienne",
-      "id": "r3"
-    },
-    {
-      "nom": "Khan BBQ",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Devon Avenue",
-      "description": "Grillades et karahi réputés",
-      "mapsUrl": "https://maps.google.com/?q=Khan+BBQ+Chicago",
-      "priceRange": "€€",
-      "specialite": "Grillades pakistanaises",
-      "id": "r4"
-    },
-    {
-      "nom": "Allende Halal",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Logan Square",
-      "description": "Cuisine mexicaine-halal originale",
-      "mapsUrl": "https://maps.google.com/?q=Allende+Halal+Chicago",
-      "priceRange": "€€",
-      "specialite": "Cuisine fusion",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Chicago",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Chicago",
-      "description": "Adresse halal appréciée des habitants de Chicago.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Chicago+Chicago",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Chicago",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Chicago",
-      "description": "Adresse halal appréciée des habitants de Chicago.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Chicago+Chicago",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Chicago",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Chicago",
-      "description": "Adresse halal appréciée des habitants de Chicago.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Chicago+Chicago",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Chicago",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Chicago",
-      "description": "Adresse halal appréciée des habitants de Chicago.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Chicago+Chicago",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Chicago",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Chicago",
-      "description": "Adresse halal appréciée des habitants de Chicago.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Chicago+Chicago",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Chicago",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Chicago",
-      "description": "Adresse halal appréciée des habitants de Chicago.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Chicago+Chicago",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Chicago",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Chicago",
-      "description": "Adresse halal appréciée des habitants de Chicago.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Chicago+Chicago",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Chicago",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Chicago",
-      "description": "Adresse halal appréciée des habitants de Chicago.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Chicago+Chicago",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Chicago",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Chicago",
-      "description": "Adresse halal appréciée des habitants de Chicago.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Chicago+Chicago",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Chicago",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Chicago",
-      "description": "Adresse halal appréciée des habitants de Chicago.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Chicago+Chicago",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Halal Guys Corner",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Chicago",
-      "description": "Adresse burgers & fast-food appréciée à Chicago, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Guys+Corner+Chicago",
-      "priceRange": "€€",
-      "specialite": "Chicken over rice",
-      "nombreAvis": 3088,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Beirut House",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Chicago",
-      "description": "Adresse libanais & levant appréciée à Chicago, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beirut+House+Chicago",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 898,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Shahi Palace",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Chicago",
-      "description": "Adresse indien & pakistani appréciée à Chicago, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Palace+Chicago",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1179,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Marrakech Express",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Chicago",
-      "description": "Adresse marocain appréciée à Chicago, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Marrakech+Express+Chicago",
-      "priceRange": "€€",
-      "specialite": "Tajine",
-      "nombreAvis": 877,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Anatolia Kebab",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Chicago",
-      "description": "Adresse turc appréciée à Chicago, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anatolia+Kebab+Chicago",
-      "priceRange": "€€",
-      "specialite": "Döner",
-      "nombreAvis": 2447,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Saffron Fine Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Chicago",
-      "description": "Adresse gastronomique appréciée à Chicago, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Fine+Dining+Chicago",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 348,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Sakura Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Chicago",
-      "description": "Adresse japonais & asiatique appréciée à Chicago, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Chicago",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 990,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Medina Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Chicago",
-      "description": "Adresse pâtisserie & café appréciée à Chicago, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Medina+Caf%C3%A9+Chicago",
-      "priceRange": "€€",
-      "specialite": "Baklava et café",
-      "nombreAvis": 812,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Halal Guys Corner Chicago 9",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Chicago",
-      "description": "Adresse burgers & fast-food appréciée à Chicago, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Guys+Corner+Chicago+9+Chicago",
-      "priceRange": "€€",
-      "specialite": "Chicken over rice",
-      "nombreAvis": 309,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Beirut House Chicago 10",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Chicago",
-      "description": "Adresse libanais & levant appréciée à Chicago, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beirut+House+Chicago+10+Chicago",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 3308,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r25"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "The Langham Chicago",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Loop",
-      "description": "Palace dans un gratte-ciel de Mies van der Rohe",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Langham+Chicago+Chicago",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
-      "priceRange": "€€€€",
-      "id": "h1"
-    },
-    {
-      "nom": "Chicago Athletic Association",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Loop",
-      "description": "Hôtel historique face à Millennium Park",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Chicago+Athletic+Association+Chicago",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
-      "priceRange": "€€€",
-      "id": "h2"
-    },
-    {
-      "nom": "Hampton Inn Chicago Downtown",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "River North",
-      "description": "Hôtel confortable central",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Hampton+Inn+Chicago+Downtown+Chicago",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
-      "priceRange": "€€",
-      "id": "h3"
-    },
-    {
-      "nom": "Grand Plaza Chicago",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Chicago",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Chicago+Chicago",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
-      "priceRange": "€€€€",
-      "id": "h4"
-    },
-    {
-      "nom": "City Comfort Hotel Chicago",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Chicago",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Chicago+Chicago",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Chicago",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Chicago",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Chicago+Chicago",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Chicago 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Chicago",
-      "description": "Hébergement halal-friendly à Chicago.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Chicago+0+Chicago",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
-      "priceRange": "€€€€",
-      "nombreAvis": 1332,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Chicago",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Chicago",
-      "description": "Hébergement halal-friendly à Chicago.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Chicago+Chicago",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chicago&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chicago",
-      "priceRange": "€€€",
-      "nombreAvis": 1226,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Millennium Park & le Bean",
-      "categorie": "Nature & Aventure",
-      "description": "Sculpture Cloud Gate et parc emblématique",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Millennium+Park+%26+le+Bean+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Millennium+Park+%26+le+Bean+Chicago",
-      "id": "a1"
-    },
-    {
-      "nom": "Croisière architecture sur la rivière",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte des gratte-ciel depuis l'eau",
-      "duree": "2h",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+architecture+sur+la+rivi%C3%A8re+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Croisi%C3%A8re+architecture+sur+la+rivi%C3%A8re+Chicago",
-      "id": "a2"
-    },
-    {
-      "nom": "Willis Tower Skydeck",
-      "categorie": "Histoire & Culture",
-      "description": "Plateforme de verre au 103e étage",
-      "duree": "2h",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Willis+Tower+Skydeck+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Willis+Tower+Skydeck+Chicago",
-      "id": "a3"
-    },
-    {
-      "nom": "Art Institute of Chicago",
-      "categorie": "Art & Musées",
-      "description": "L'un des plus grands musées d'art des USA",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Art+Institute+of+Chicago+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Art+Institute+of+Chicago+Chicago",
-      "id": "a4"
-    },
-    {
-      "nom": "Devon Avenue",
-      "categorie": "Shopping & Souks",
-      "description": "Quartier indo-pakistanais et commerces halal",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Devon+Avenue+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Devon+Avenue+Chicago",
-      "id": "a5"
-    },
-    {
-      "nom": "Mosquée de Bridgeview",
-      "categorie": "Religieux & Spirituel",
-      "description": "Grand centre islamique de la région",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+Bridgeview+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+Bridgeview+Chicago",
-      "id": "a6"
-    },
-    {
-      "nom": "Navy Pier",
-      "categorie": "Sport & Loisirs",
-      "description": "Jetée animée et grande roue sur le lac",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Navy+Pier+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Navy+Pier+Chicago",
-      "id": "a7"
-    },
-    {
-      "nom": "Lakefront Trail",
-      "categorie": "Nature & Aventure",
-      "description": "Promenade au bord du lac Michigan",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Lakefront+Trail+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lakefront+Trail+Chicago",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Chicago",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Chicago+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Chicago+Chicago",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Chicago",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Chicago+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Chicago+Chicago",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Chicago",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Chicago+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Chicago+Chicago",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Chicago",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Chicago+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Chicago+Chicago",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Chicago",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Chicago+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Chicago+Chicago",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Chicago",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Chicago+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Chicago+Chicago",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Chicago",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Chicago+Chicago",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Chicago+Chicago",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Foundation (Bridgeview)",
-      "description": "L'un des plus grands centres islamiques du Midwest",
-      "adresse": "Bridgeview",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Foundation+%28Bridgeview%29+Chicago",
-      "capacite": 6745,
-      "anneeConstruction": 1925,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.8781,
-        "lng": -87.6298
-      }
-    },
-    {
-      "nom": "Downtown Islamic Center",
-      "description": "Mosquée du centre-ville de Chicago",
-      "adresse": "Loop",
-      "mapsUrl": "https://maps.google.com/?q=Downtown+Islamic+Center+Chicago",
-      "capacite": 2072,
-      "anneeConstruction": 1962,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.8781,
-        "lng": -87.6298
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Chicago",
-      "description": "Mosquée fréquentée de Chicago, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Chicago",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Chicago+Chicago",
-      "capacite": 1995,
-      "anneeConstruction": 1995,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.8781,
-        "lng": -87.6298
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Chicago",
-      "description": "Mosquée fréquentée de Chicago, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Chicago",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Chicago+Chicago",
-      "capacite": 5587,
-      "anneeConstruction": 2007,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.8781,
-        "lng": -87.6298
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Chicago",
-      "description": "Mosquée fréquentée de Chicago, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Chicago",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Chicago+Chicago",
-      "capacite": 5191,
-      "anneeConstruction": 2011,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.8781,
-        "lng": -87.6298
-      }
-    }
-  ],
-  "tags": [
-    "gratte-ciel",
-    "devon-avenue",
-    "architecture",
-    "lac-michigan",
-    "famille",
-    "culture"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Halal Guys Corner",
-      "Halal Guys Corner Chicago 9",
-      "Beirut House",
-      "Beirut House Chicago 10",
-      "Saffron Garden Chicago"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Sabri Nihari",
-      "Ghareeb Nawaz",
-      "Chickpea",
-      "Khan BBQ",
-      "Allende Halal"
-    ],
-    "incontournables": [
-      "Beirut House Chicago 10",
-      "Halal Guys Corner",
-      "Anatolia Kebab",
-      "Shahi Palace",
-      "Sakura Halal"
-    ],
-    "pepitesCachees": [
-      "Sabri Nihari",
-      "Ghareeb Nawaz",
-      "Chickpea"
-    ],
-    "idealFamille": [
-      "Halal Guys Corner",
-      "Beirut House",
-      "Shahi Palace",
-      "Marrakech Express",
-      "Anatolia Kebab"
-    ],
-    "gastronomique": [
-      "Saffron Garden Chicago",
-      "Saffron Fine Dining"
-    ],
-    "ouvertNuit": [
-      "Halal Guys Corner",
-      "Beirut House",
-      "Halal Guys Corner Chicago 9"
-    ],
-    "vueExceptionnelle": [
-      "Halal Guys Corner",
-      "Halal Guys Corner Chicago 9",
-      "Beirut House"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Chicago",
+   "description": "Mosquée fréquentée de Chicago, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Chicago",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Chicago+Chicago",
+   "capacite": 5191,
+   "anneeConstruction": 2011,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.8781,
+    "lng": -87.6298
+   }
   }
+ ],
+ "tags": [
+  "gratte-ciel",
+  "devon-avenue",
+  "architecture",
+  "lac-michigan",
+  "famille",
+  "culture"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Halal Guys Corner",
+   "Halal Guys Corner Chicago 9",
+   "Beirut House",
+   "Beirut House Chicago 10",
+   "Saffron Garden Chicago"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Sabri Nihari",
+   "Ghareeb Nawaz",
+   "Chickpea",
+   "Khan BBQ",
+   "Allende Halal"
+  ],
+  "incontournables": [
+   "Beirut House Chicago 10",
+   "Halal Guys Corner",
+   "Anatolia Kebab",
+   "Shahi Palace",
+   "Sakura Halal"
+  ],
+  "pepitesCachees": [
+   "Sabri Nihari",
+   "Ghareeb Nawaz",
+   "Chickpea"
+  ],
+  "idealFamille": [
+   "Halal Guys Corner",
+   "Beirut House",
+   "Shahi Palace",
+   "Marrakech Express",
+   "Anatolia Kebab"
+  ],
+  "gastronomique": [
+   "Saffron Garden Chicago",
+   "Saffron Fine Dining"
+  ],
+  "ouvertNuit": [
+   "Halal Guys Corner",
+   "Beirut House",
+   "Halal Guys Corner Chicago 9"
+  ],
+  "vueExceptionnelle": [
+   "Halal Guys Corner",
+   "Halal Guys Corner Chicago 9",
+   "Beirut House"
+  ]
+ }
 }

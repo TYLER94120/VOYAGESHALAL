@@ -1,1563 +1,1570 @@
 {
-  "nom": "Trabzon",
-  "pays": "Turquie",
-  "slug": "trabzon",
-  "image": "https://images.unsplash.com/photo-1605022936264-d57a9e20942a?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1605022936264-d57a9e20942a?w=1600&q=80",
-  "description": "Trabzon, perle verte de la mer Noire, séduit par le monastère de Sümela accroché à la falaise et ses montagnes brumeuses. Nature et authenticité.",
-  "descriptionLongue": "Ancienne cité pontique sur la route de la Soie, Trabzon ouvre la Turquie sur la mer Noire. Son arrière-pays de montagnes verdoyantes, lacs et plateaux (yaylas) attire les voyageurs en quête de fraîcheur. Le monastère de Sümela, suspendu à une falaise, et Sainte-Sophie de Trabzon témoignent d'un riche passé. La cuisine pontique — anchois (hamsi), beurre, pain de maïs — est généreuse. Ville entièrement halal, prisée des familles du Golfe en été.",
-  "halalScore": 8.9,
-  "score_halal": 4.5,
+ "nom": "Trabzon",
+ "pays": "Turquie",
+ "slug": "trabzon",
+ "image": "https://images.unsplash.com/photo-1605022936264-d57a9e20942a?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1605022936264-d57a9e20942a?w=1600&q=80",
+ "description": "Trabzon, perle verte de la mer Noire, séduit par le monastère de Sümela accroché à la falaise et ses montagnes brumeuses. Nature et authenticité.",
+ "descriptionLongue": "Ancienne cité pontique sur la route de la Soie, Trabzon ouvre la Turquie sur la mer Noire. Son arrière-pays de montagnes verdoyantes, lacs et plateaux (yaylas) attire les voyageurs en quête de fraîcheur. Le monastère de Sümela, suspendu à une falaise, et Sainte-Sophie de Trabzon témoignent d'un riche passé. La cuisine pontique — anchois (hamsi), beurre, pain de maïs — est généreuse. Ville entièrement halal, prisée des familles du Golfe en été.",
+ "halalScore": 8.9,
+ "score_halal": 4.5,
+ "mosquees": 900,
+ "population": "810 000",
+ "langue": "Turc",
+ "monnaie": "Livre turque (TRY)",
+ "fuseau": "UTC+3",
+ "meilleureEpoque": "Mai à Septembre",
+ "prixMoyenNuit": "65€",
+ "continent": "Asie",
+ "codeISO": "TR",
+ "pays_slug": "turquie",
+ "region": "Mer Noire",
+ "meta_title": "Voyage Halal à Trabzon — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Trabzon — Halal Trust Score 8.3/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Trabzon — Halal Trust Score 8.3/10.",
+ "coordonnees": {
+  "lat": 41.0027,
+  "lng": 39.7168
+ },
+ "image_alt": "Vue de Trabzon, Turquie",
+ "statistiques": {
   "mosquees": 900,
-  "population": "810 000",
+  "restaurants_halal": 800,
+  "habitants_musulmans_pct": 99,
+  "hotels": 10
+ },
+ "infos_pratiques": {
   "langue": "Turc",
   "monnaie": "Livre turque (TRY)",
-  "fuseau": "UTC+3",
-  "meilleureEpoque": "Mai à Septembre",
-  "prixMoyenNuit": "65€",
-  "continent": "Asie",
-  "codeISO": "TR",
-  "pays_slug": "turquie",
-  "region": "Mer Noire",
-  "meta_title": "Voyage Halal à Trabzon — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Trabzon — Halal Trust Score 8.3/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Trabzon — Halal Trust Score 8.3/10.",
-  "coordonnees": {
+  "meilleure_periode": "Mai à Septembre",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible mais discret",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "e-Visa turc ou exemption selon nationalité",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Bus, taxis, aéroport, location de voiture pour l'arrière-pays",
+  "priseElectrique": "Type C/F — 230V",
+  "decalageHoraire": "+2h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Trabzon Hasret",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Trabzon",
+   "description": "Cuisine mer Noire traditionnelle à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Trabzon+Hasret+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Cuisine mer noire traditionnelle",
+   "nombreAvis": 1633,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Cemilzade",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Trabzon",
+   "description": "Hamsi et anchois variées, légendaire à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Cemilzade+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Hamsi et anchois variées",
+   "nombreAvis": 1548,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Büyük Otel Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Trabzon",
+   "description": "Vue mer Noire à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=B%C3%BCy%C3%BCk+Otel+Restaurant+Trabzon",
+   "priceRange": "€€€€",
+   "specialite": "Vue mer noire",
+   "nombreAvis": 1504,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Dost Pide",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Trabzon",
+   "description": "Pide mer Noire à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Dost+Pide+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Pide mer noire",
+   "nombreAvis": 360,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Hamsiköy Yaylası",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Trabzon",
+   "description": "Yayla cuisine d'altitude à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Hamsik%C3%B6y+Yaylas%C4%B1+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Yayla cuisine d'altitude",
+   "nombreAvis": 1899,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Boztepe Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Trabzon",
+   "description": "Vue panoramique colline à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Boztepe+Caf%C3%A9+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Vue panoramique colline",
+   "nombreAvis": 2322,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Sumela Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Trabzon",
+   "description": "Près monastère à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Sumela+Restaurant+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Près monastère",
+   "nombreAvis": 1914,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Karadeniz Mutfağı",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Trabzon",
+   "description": "Cuisine régionale à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Karadeniz+Mutfa%C4%9F%C4%B1+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Cuisine régionale",
+   "nombreAvis": 141,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Laz Böreği Ustası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Trabzon",
+   "description": "Börek marin à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Laz+B%C3%B6re%C4%9Fi+Ustas%C4%B1+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Börek marin",
+   "nombreAvis": 2331,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Kuymak Evi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Trabzon",
+   "description": "Fondue mer Noire à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Kuymak+Evi+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Fondue mer noire",
+   "nombreAvis": 616,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Tarihi Trabzon Lokantası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Trabzon",
+   "description": "Classique à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Tarihi+Trabzon+Lokantas%C4%B1+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Classique",
+   "nombreAvis": 676,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Çay Bahçesi Boztepe",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Trabzon",
+   "description": "Thé altitude à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=%C3%87ay+Bah%C3%A7esi+Boztepe+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Thé altitude",
+   "nombreAvis": 1432,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Balıkçı Ahmet",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Trabzon",
+   "description": "Pêcheur restaurant à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Bal%C4%B1k%C3%A7%C4%B1+Ahmet+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Pêcheur restaurant",
+   "nombreAvis": 1794,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Araklı Yemekleri",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Trabzon",
+   "description": "Cuisine Araklı à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Arakl%C4%B1+Yemekleri+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Cuisine araklı",
+   "nombreAvis": 1545,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Maçka Sofrası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Trabzon",
+   "description": "Cuisine montagne à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Ma%C3%A7ka+Sofras%C4%B1+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Cuisine montagne",
+   "nombreAvis": 285,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Ayder Yaylası Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Trabzon",
+   "description": "Plateau altitude à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Ayder+Yaylas%C4%B1+Caf%C3%A9+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Plateau altitude",
+   "nombreAvis": 96,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Rize Çayı Evi",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Trabzon",
+   "description": "Thé de Rize à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Rize+%C3%87ay%C4%B1+Evi+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Thé de rize",
+   "nombreAvis": 790,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Akçaabat Köftesi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Trabzon",
+   "description": "Köfte mer Noire style à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Ak%C3%A7aabat+K%C3%B6ftesi+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Köfte mer noire style",
+   "nombreAvis": 1059,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Çöloğlu Restaurant",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Trabzon",
+   "description": "Hamsi specialiste à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=%C3%87%C3%B6lo%C4%9Flu+Restaurant+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Hamsi specialiste",
+   "nombreAvis": 522,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Sera Gölü Restaurant",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Trabzon",
+   "description": "Lac de Trabzon à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Sera+G%C3%B6l%C3%BC+Restaurant+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Lac de trabzon",
+   "nombreAvis": 552,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Zağnos Vadisi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Trabzon",
+   "description": "Vallée restaurant à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Za%C4%9Fnos+Vadisi+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Vallée restaurant",
+   "nombreAvis": 1542,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Özgüven Et Mangal",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Trabzon",
+   "description": "Grillades à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=%C3%96zg%C3%BCven+Et+Mangal+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Grillades",
+   "nombreAvis": 3179,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Kalelerin Altında",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Trabzon",
+   "description": "Sous les châteaux à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Kalelerin+Alt%C4%B1nda+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Sous les châteaux",
+   "nombreAvis": 1571,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Denizci Kafe",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Trabzon",
+   "description": "Marin café à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Denizci+Kafe+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Marin café",
+   "nombreAvis": 1467,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Trabzon Çarşı Lokantası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Trabzon",
+   "description": "Bazar centre à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Trabzon+%C3%87ar%C5%9F%C4%B1+Lokantas%C4%B1+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Bazar centre",
+   "nombreAvis": 146,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Hıdırnebi Yaylası Kahvaltı",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Trabzon",
+   "description": "Petit-dej plateau à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=H%C4%B1d%C4%B1rnebi+Yaylas%C4%B1+Kahvalt%C4%B1+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Petit-dej plateau",
+   "nombreAvis": 789,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Pelitli Köy Evi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Trabzon",
+   "description": "Maison village à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Pelitli+K%C3%B6y+Evi+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Maison village",
+   "nombreAvis": 1141,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Şimşirlik Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Trabzon",
+   "description": "Parc à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=%C5%9Eim%C5%9Firlik+Restaurant+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Parc",
+   "nombreAvis": 1360,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Forum Trabzon AVM",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Trabzon",
+   "description": "Mall food court à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Forum+Trabzon+AVM+Trabzon",
+   "priceRange": "€",
+   "specialite": "Mall food court",
+   "nombreAvis": 370,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Avrasya Oteli Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Trabzon",
+   "description": "Standard à Trabzon.",
+   "mapsUrl": "https://maps.google.com/?q=Avrasya+Oteli+Restaurant+Trabzon",
+   "priceRange": "€",
+   "specialite": "Standard",
+   "nombreAvis": 1162,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Anadolu Sofrası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Trabzon",
+   "description": "Adresse traditionnel local appréciée à Trabzon, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Anadolu+Sofras%C4%B1+Trabzon",
+   "priceRange": "€€",
+   "specialite": "Mantı et dolma",
+   "nombreAvis": 1500,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Meşhur Kebapçı",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Trabzon",
+   "description": "Adresse grillades & kebab appréciée à Trabzon, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Me%C5%9Fhur+Kebap%C3%A7%C4%B1+Trabzon",
+   "priceRange": "€€",
+   "specialite": "İskender kebab",
+   "nombreAvis": 3358,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Boğaziçi Balık",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Trabzon",
+   "description": "Adresse fruits de mer appréciée à Trabzon, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bo%C4%9Fazi%C3%A7i+Bal%C4%B1k+Trabzon",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé",
+   "nombreAvis": 2067,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Saray Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Trabzon",
+   "description": "Adresse gastronomique appréciée à Trabzon, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saray+Restaurant+Trabzon",
+   "priceRange": "€€€",
+   "specialite": "Cuisine ottomane",
+   "nombreAvis": 1869,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Baklava Sarayı",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Trabzon",
+   "description": "Adresse pâtisserie & café appréciée à Trabzon, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Baklava+Saray%C4%B1+Trabzon",
+   "priceRange": "€",
+   "specialite": "Baklava à la pistache",
+   "nombreAvis": 1229,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r35"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Radisson Blu Trabzon",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Centre-ville, Trabzon",
+   "description": "Hôtel moderne en bord de mer, spa et restauration halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Trabzon+Trabzon",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "nombreAvis": 1846,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 40.9970848,
+   "lng": 39.7299701
+  },
+  {
+   "nom": "Zorlu Grand Hotel",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Centre-ville, Trabzon",
+   "description": "Hôtel élégant au centre, service haut de gamme.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Zorlu+Grand+Hotel+Trabzon",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
+   "priceRange": "€€€€",
+   "id": "h2",
+   "nombreAvis": 1560,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 41.0053451,
+   "lng": 39.728796
+  },
+  {
+   "nom": "Büyük Sümela Oteli",
+   "categorie": "Standard",
+   "score": 4.2,
+   "adresse": "Maçka, Trabzon",
+   "description": "Hôtel proche de la nature, base pour Sümela.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=B%C3%BCy%C3%BCk+S%C3%BCmela+Oteli+Trabzon",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
+   "priceRange": "€€€",
+   "id": "h3",
+   "nombreAvis": 1164,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Nur Hotel",
+   "categorie": "Budget",
+   "score": 4.1,
+   "adresse": "Trabzon",
+   "description": "Hôtel économique central et propre.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Nur+Hotel+Trabzon",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
+   "priceRange": "€€",
+   "id": "h4",
+   "nombreAvis": 207,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 41.004741,
+   "lng": 39.7324258
+  },
+  {
+   "nom": "Villa de Pelit",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Akçaabat, Trabzon",
+   "description": "Petit hôtel de charme au calme, sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Villa+de+Pelit+Trabzon",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
+   "priceRange": "€€€",
+   "id": "h5",
+   "nombreAvis": 736,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Trabzon",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Trabzon",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Trabzon+Trabzon",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
+   "priceRange": "€€€€",
+   "id": "h6",
+   "nombreAvis": 831,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Trabzon 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Trabzon",
+   "description": "Hébergement halal-friendly à Trabzon.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Trabzon+0+Trabzon",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
+   "priceRange": "€€€€",
+   "nombreAvis": 1304,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Trabzon",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Trabzon",
+   "description": "Hébergement halal-friendly à Trabzon.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Trabzon+Trabzon",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
+   "priceRange": "€€€",
+   "nombreAvis": 690,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Trabzon",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Trabzon",
+   "description": "Hébergement halal-friendly à Trabzon.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Trabzon+Trabzon",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
+   "priceRange": "€€€",
+   "nombreAvis": 309,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Trabzon",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Trabzon",
+   "description": "Hébergement halal-friendly à Trabzon.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Trabzon+Trabzon",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
+   "priceRange": "€€",
+   "nombreAvis": 2201,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Monastère de Sümela",
+   "categorie": "Histoire & Culture",
+   "description": "Monastère byzantin spectaculaire accroché à une falaise dans la forêt.",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Monast%C3%A8re+de+S%C3%BCmela+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Monast%C3%A8re+de+S%C3%BCmela+Trabzon",
+   "id": "a1",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Sainte-Sophie de Trabzon",
+   "categorie": "Histoire & Culture",
+   "description": "Ancienne église byzantine aux fresques, aujourd'hui mosquée.",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Sainte-Sophie+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Sainte-Sophie+de+Trabzon+Trabzon",
+   "id": "a2",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Plateau d'Ayder (yayla)",
+   "categorie": "Nature & Aventure",
+   "description": "Prairies d'altitude brumeuses, sources thermales et nature verdoyante.",
+   "duree": "Journée",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Plateau+d%27Ayder+%28yayla%29+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plateau+d%27Ayder+%28yayla%29+Trabzon",
+   "id": "a3",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Lac d'Uzungöl",
+   "categorie": "Nature & Aventure",
+   "description": "Lac de montagne entouré de forêts, l'un des plus beaux paysages de Turquie.",
+   "duree": "Demi-journée",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Lac+d%27Uzung%C3%B6l+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lac+d%27Uzung%C3%B6l+Trabzon",
+   "id": "a4",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Çarşı (Grand Bazar)",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée centrale au cœur du bazar animé de Trabzon.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+%C3%87ar%C5%9F%C4%B1+%28Grand+Bazar%29+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+%C3%87ar%C5%9F%C4%B1+%28Grand+Bazar%29+Trabzon",
+   "id": "a5",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Palais d'Atatürk",
+   "categorie": "Art & Musées",
+   "description": "Villa blanche au milieu d'un parc boisé, vue sur la mer.",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Palais+d%27Atat%C3%BCrk+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+d%27Atat%C3%BCrk+Trabzon",
+   "id": "a6",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Téléphérique de Boztepe",
+   "categorie": "Nature & Aventure",
+   "description": "Colline panoramique surplombant la ville et la mer Noire.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=T%C3%A9l%C3%A9ph%C3%A9rique+de+Boztepe+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=T%C3%A9l%C3%A9ph%C3%A9rique+de+Boztepe+Trabzon",
+   "id": "a7",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Bazar de Trabzon",
+   "categorie": "Shopping & Souks",
+   "description": "Marché animé, bijouterie en filigrane (kazaziye) typique.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Bazar+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Bazar+de+Trabzon+Trabzon",
+   "id": "a8",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Trabzon",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Trabzon+Trabzon",
+   "id": "a9",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Trabzon",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Trabzon+Trabzon",
+   "id": "a10",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Trabzon",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Trabzon+Trabzon",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Trabzon",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Trabzon+Trabzon",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Trabzon",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Trabzon+Trabzon",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Trabzon",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Trabzon+Trabzon",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Trabzon",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Trabzon+Trabzon",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Trabzon",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Trabzon+Trabzon",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Trabzon",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Trabzon+Trabzon",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Trabzon",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Trabzon+Trabzon",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Trabzon",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Trabzon+Trabzon",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Trabzon",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Trabzon+Trabzon",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Trabzon+Trabzon",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Çarşı",
+   "description": "Principale mosquée du centre, au cœur du bazar.",
+   "adresse": "Centre-ville, Trabzon",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+%C3%87ar%C5%9F%C4%B1+Trabzon",
+   "capacite": 3228,
+   "anneeConstruction": 1908,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 41.0027,
     "lng": 39.7168
+   }
   },
-  "image_alt": "Vue de Trabzon, Turquie",
-  "statistiques": {
-    "mosquees": 900,
-    "restaurants_halal": 800,
-    "habitants_musulmans_pct": 99
+  {
+   "nom": "Sainte-Sophie de Trabzon",
+   "description": "Ancienne église byzantine convertie en mosquée, fresques remarquables.",
+   "adresse": "Trabzon",
+   "mapsUrl": "https://maps.google.com/?q=Sainte-Sophie+de+Trabzon+Trabzon",
+   "capacite": 4232,
+   "anneeConstruction": 1862,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0027,
+    "lng": 39.7168
+   }
   },
-  "infos_pratiques": {
-    "langue": "Turc",
-    "monnaie": "Livre turque (TRY)",
-    "meilleure_periode": "Mai à Septembre",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible mais discret",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Trabzon",
+   "description": "Mosquée fréquentée de Trabzon, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Trabzon",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Trabzon+Trabzon",
+   "capacite": 3795,
+   "anneeConstruction": 1935,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0027,
+    "lng": 39.7168
+   }
   },
-  "infoPratique": {
-    "visa": "e-Visa turc ou exemption selon nationalité",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Bus, taxis, aéroport, location de voiture pour l'arrière-pays",
-    "priseElectrique": "Type C/F — 230V",
-    "decalageHoraire": "+2h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Trabzon",
+   "description": "Mosquée fréquentée de Trabzon, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Trabzon",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Trabzon+Trabzon",
+   "capacite": 6270,
+   "anneeConstruction": 1890,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0027,
+    "lng": 39.7168
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Trabzon Hasret",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Trabzon",
-      "description": "Cuisine mer Noire traditionnelle à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Trabzon+Hasret+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Cuisine mer noire traditionnelle",
-      "nombreAvis": 1633,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Cemilzade",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Trabzon",
-      "description": "Hamsi et anchois variées, légendaire à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Cemilzade+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Hamsi et anchois variées",
-      "nombreAvis": 1548,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Büyük Otel Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Trabzon",
-      "description": "Vue mer Noire à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=B%C3%BCy%C3%BCk+Otel+Restaurant+Trabzon",
-      "priceRange": "€€€€",
-      "specialite": "Vue mer noire",
-      "nombreAvis": 1504,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Dost Pide",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Trabzon",
-      "description": "Pide mer Noire à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Dost+Pide+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Pide mer noire",
-      "nombreAvis": 360,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Hamsiköy Yaylası",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Trabzon",
-      "description": "Yayla cuisine d'altitude à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Hamsik%C3%B6y+Yaylas%C4%B1+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Yayla cuisine d'altitude",
-      "nombreAvis": 1899,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Boztepe Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Trabzon",
-      "description": "Vue panoramique colline à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Boztepe+Caf%C3%A9+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Vue panoramique colline",
-      "nombreAvis": 2322,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Sumela Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Trabzon",
-      "description": "Près monastère à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Sumela+Restaurant+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Près monastère",
-      "nombreAvis": 1914,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Karadeniz Mutfağı",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Trabzon",
-      "description": "Cuisine régionale à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Karadeniz+Mutfa%C4%9F%C4%B1+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Cuisine régionale",
-      "nombreAvis": 141,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Laz Böreği Ustası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Trabzon",
-      "description": "Börek marin à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Laz+B%C3%B6re%C4%9Fi+Ustas%C4%B1+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Börek marin",
-      "nombreAvis": 2331,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Kuymak Evi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Trabzon",
-      "description": "Fondue mer Noire à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Kuymak+Evi+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Fondue mer noire",
-      "nombreAvis": 616,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Tarihi Trabzon Lokantası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Trabzon",
-      "description": "Classique à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Tarihi+Trabzon+Lokantas%C4%B1+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Classique",
-      "nombreAvis": 676,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Çay Bahçesi Boztepe",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Trabzon",
-      "description": "Thé altitude à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=%C3%87ay+Bah%C3%A7esi+Boztepe+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Thé altitude",
-      "nombreAvis": 1432,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Balıkçı Ahmet",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Trabzon",
-      "description": "Pêcheur restaurant à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Bal%C4%B1k%C3%A7%C4%B1+Ahmet+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Pêcheur restaurant",
-      "nombreAvis": 1794,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Araklı Yemekleri",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Trabzon",
-      "description": "Cuisine Araklı à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Arakl%C4%B1+Yemekleri+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Cuisine araklı",
-      "nombreAvis": 1545,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Maçka Sofrası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Trabzon",
-      "description": "Cuisine montagne à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Ma%C3%A7ka+Sofras%C4%B1+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Cuisine montagne",
-      "nombreAvis": 285,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Ayder Yaylası Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Trabzon",
-      "description": "Plateau altitude à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Ayder+Yaylas%C4%B1+Caf%C3%A9+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Plateau altitude",
-      "nombreAvis": 96,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Rize Çayı Evi",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Trabzon",
-      "description": "Thé de Rize à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Rize+%C3%87ay%C4%B1+Evi+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Thé de rize",
-      "nombreAvis": 790,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Akçaabat Köftesi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Trabzon",
-      "description": "Köfte mer Noire style à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Ak%C3%A7aabat+K%C3%B6ftesi+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Köfte mer noire style",
-      "nombreAvis": 1059,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Çöloğlu Restaurant",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Trabzon",
-      "description": "Hamsi specialiste à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=%C3%87%C3%B6lo%C4%9Flu+Restaurant+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Hamsi specialiste",
-      "nombreAvis": 522,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Sera Gölü Restaurant",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Trabzon",
-      "description": "Lac de Trabzon à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Sera+G%C3%B6l%C3%BC+Restaurant+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Lac de trabzon",
-      "nombreAvis": 552,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Zağnos Vadisi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Trabzon",
-      "description": "Vallée restaurant à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Za%C4%9Fnos+Vadisi+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Vallée restaurant",
-      "nombreAvis": 1542,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Özgüven Et Mangal",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Trabzon",
-      "description": "Grillades à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=%C3%96zg%C3%BCven+Et+Mangal+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Grillades",
-      "nombreAvis": 3179,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Kalelerin Altında",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Trabzon",
-      "description": "Sous les châteaux à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Kalelerin+Alt%C4%B1nda+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Sous les châteaux",
-      "nombreAvis": 1571,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Denizci Kafe",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Trabzon",
-      "description": "Marin café à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Denizci+Kafe+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Marin café",
-      "nombreAvis": 1467,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Trabzon Çarşı Lokantası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Trabzon",
-      "description": "Bazar centre à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Trabzon+%C3%87ar%C5%9F%C4%B1+Lokantas%C4%B1+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Bazar centre",
-      "nombreAvis": 146,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Hıdırnebi Yaylası Kahvaltı",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Trabzon",
-      "description": "Petit-dej plateau à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=H%C4%B1d%C4%B1rnebi+Yaylas%C4%B1+Kahvalt%C4%B1+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Petit-dej plateau",
-      "nombreAvis": 789,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Pelitli Köy Evi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Trabzon",
-      "description": "Maison village à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Pelitli+K%C3%B6y+Evi+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Maison village",
-      "nombreAvis": 1141,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Şimşirlik Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Trabzon",
-      "description": "Parc à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=%C5%9Eim%C5%9Firlik+Restaurant+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Parc",
-      "nombreAvis": 1360,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Forum Trabzon AVM",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Trabzon",
-      "description": "Mall food court à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Forum+Trabzon+AVM+Trabzon",
-      "priceRange": "€",
-      "specialite": "Mall food court",
-      "nombreAvis": 370,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Avrasya Oteli Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Trabzon",
-      "description": "Standard à Trabzon.",
-      "mapsUrl": "https://maps.google.com/?q=Avrasya+Oteli+Restaurant+Trabzon",
-      "priceRange": "€",
-      "specialite": "Standard",
-      "nombreAvis": 1162,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Anadolu Sofrası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Trabzon",
-      "description": "Adresse traditionnel local appréciée à Trabzon, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anadolu+Sofras%C4%B1+Trabzon",
-      "priceRange": "€€",
-      "specialite": "Mantı et dolma",
-      "nombreAvis": 1500,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Meşhur Kebapçı",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Trabzon",
-      "description": "Adresse grillades & kebab appréciée à Trabzon, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Me%C5%9Fhur+Kebap%C3%A7%C4%B1+Trabzon",
-      "priceRange": "€€",
-      "specialite": "İskender kebab",
-      "nombreAvis": 3358,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Boğaziçi Balık",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Trabzon",
-      "description": "Adresse fruits de mer appréciée à Trabzon, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bo%C4%9Fazi%C3%A7i+Bal%C4%B1k+Trabzon",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé",
-      "nombreAvis": 2067,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Saray Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Trabzon",
-      "description": "Adresse gastronomique appréciée à Trabzon, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saray+Restaurant+Trabzon",
-      "priceRange": "€€€",
-      "specialite": "Cuisine ottomane",
-      "nombreAvis": 1869,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Baklava Sarayı",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Trabzon",
-      "description": "Adresse pâtisserie & café appréciée à Trabzon, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Baklava+Saray%C4%B1+Trabzon",
-      "priceRange": "€",
-      "specialite": "Baklava à la pistache",
-      "nombreAvis": 1229,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r35"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Radisson Blu Trabzon",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Centre-ville, Trabzon",
-      "description": "Hôtel moderne en bord de mer, spa et restauration halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Trabzon+Trabzon",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
-      "priceRange": "€€€€",
-      "id": "h1",
-      "nombreAvis": 1846,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Zorlu Grand Hotel",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Centre-ville, Trabzon",
-      "description": "Hôtel élégant au centre, service haut de gamme.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Zorlu+Grand+Hotel+Trabzon",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
-      "priceRange": "€€€€",
-      "id": "h2",
-      "nombreAvis": 1560,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Büyük Sümela Oteli",
-      "categorie": "Standard",
-      "score": 4.2,
-      "adresse": "Maçka, Trabzon",
-      "description": "Hôtel proche de la nature, base pour Sümela.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=B%C3%BCy%C3%BCk+S%C3%BCmela+Oteli+Trabzon",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
-      "priceRange": "€€€",
-      "id": "h3",
-      "nombreAvis": 1164,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Nur Hotel",
-      "categorie": "Budget",
-      "score": 4.1,
-      "adresse": "Trabzon",
-      "description": "Hôtel économique central et propre.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Nur+Hotel+Trabzon",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
-      "priceRange": "€€",
-      "id": "h4",
-      "nombreAvis": 207,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Villa de Pelit",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Akçaabat, Trabzon",
-      "description": "Petit hôtel de charme au calme, sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Villa+de+Pelit+Trabzon",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
-      "priceRange": "€€€",
-      "id": "h5",
-      "nombreAvis": 736,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Trabzon",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Trabzon",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Trabzon+Trabzon",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
-      "priceRange": "€€€€",
-      "id": "h6",
-      "nombreAvis": 831,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Trabzon 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Trabzon",
-      "description": "Hébergement halal-friendly à Trabzon.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Trabzon+0+Trabzon",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
-      "priceRange": "€€€€",
-      "nombreAvis": 1304,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Trabzon",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Trabzon",
-      "description": "Hébergement halal-friendly à Trabzon.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Trabzon+Trabzon",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
-      "priceRange": "€€€",
-      "nombreAvis": 690,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Trabzon",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Trabzon",
-      "description": "Hébergement halal-friendly à Trabzon.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Trabzon+Trabzon",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
-      "priceRange": "€€€",
-      "nombreAvis": 309,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Trabzon",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Trabzon",
-      "description": "Hébergement halal-friendly à Trabzon.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Trabzon+Trabzon",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Trabzon&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=trabzon",
-      "priceRange": "€€",
-      "nombreAvis": 2201,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Monastère de Sümela",
-      "categorie": "Histoire & Culture",
-      "description": "Monastère byzantin spectaculaire accroché à une falaise dans la forêt.",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Monast%C3%A8re+de+S%C3%BCmela+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Monast%C3%A8re+de+S%C3%BCmela+Trabzon",
-      "id": "a1",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Sainte-Sophie de Trabzon",
-      "categorie": "Histoire & Culture",
-      "description": "Ancienne église byzantine aux fresques, aujourd'hui mosquée.",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Sainte-Sophie+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Sainte-Sophie+de+Trabzon+Trabzon",
-      "id": "a2",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Plateau d'Ayder (yayla)",
-      "categorie": "Nature & Aventure",
-      "description": "Prairies d'altitude brumeuses, sources thermales et nature verdoyante.",
-      "duree": "Journée",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Plateau+d%27Ayder+%28yayla%29+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plateau+d%27Ayder+%28yayla%29+Trabzon",
-      "id": "a3",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Lac d'Uzungöl",
-      "categorie": "Nature & Aventure",
-      "description": "Lac de montagne entouré de forêts, l'un des plus beaux paysages de Turquie.",
-      "duree": "Demi-journée",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Lac+d%27Uzung%C3%B6l+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lac+d%27Uzung%C3%B6l+Trabzon",
-      "id": "a4",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Çarşı (Grand Bazar)",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée centrale au cœur du bazar animé de Trabzon.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+%C3%87ar%C5%9F%C4%B1+%28Grand+Bazar%29+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+%C3%87ar%C5%9F%C4%B1+%28Grand+Bazar%29+Trabzon",
-      "id": "a5",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Palais d'Atatürk",
-      "categorie": "Art & Musées",
-      "description": "Villa blanche au milieu d'un parc boisé, vue sur la mer.",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Palais+d%27Atat%C3%BCrk+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+d%27Atat%C3%BCrk+Trabzon",
-      "id": "a6",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Téléphérique de Boztepe",
-      "categorie": "Nature & Aventure",
-      "description": "Colline panoramique surplombant la ville et la mer Noire.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=T%C3%A9l%C3%A9ph%C3%A9rique+de+Boztepe+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=T%C3%A9l%C3%A9ph%C3%A9rique+de+Boztepe+Trabzon",
-      "id": "a7",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Bazar de Trabzon",
-      "categorie": "Shopping & Souks",
-      "description": "Marché animé, bijouterie en filigrane (kazaziye) typique.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Bazar+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Bazar+de+Trabzon+Trabzon",
-      "id": "a8",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Trabzon",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Trabzon+Trabzon",
-      "id": "a9",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Trabzon",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Trabzon+Trabzon",
-      "id": "a10",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Trabzon",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Trabzon+Trabzon",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Trabzon",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Trabzon+Trabzon",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Trabzon",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Trabzon+Trabzon",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Trabzon",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Trabzon+Trabzon",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Trabzon",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Trabzon+Trabzon",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Trabzon",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Trabzon+Trabzon",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Trabzon",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Trabzon+Trabzon",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Trabzon",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Trabzon+Trabzon",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Trabzon",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Trabzon+Trabzon",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Trabzon",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Trabzon+Trabzon",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Trabzon+Trabzon",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Çarşı",
-      "description": "Principale mosquée du centre, au cœur du bazar.",
-      "adresse": "Centre-ville, Trabzon",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+%C3%87ar%C5%9F%C4%B1+Trabzon",
-      "capacite": 3228,
-      "anneeConstruction": 1908,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0027,
-        "lng": 39.7168
-      }
-    },
-    {
-      "nom": "Sainte-Sophie de Trabzon",
-      "description": "Ancienne église byzantine convertie en mosquée, fresques remarquables.",
-      "adresse": "Trabzon",
-      "mapsUrl": "https://maps.google.com/?q=Sainte-Sophie+de+Trabzon+Trabzon",
-      "capacite": 4232,
-      "anneeConstruction": 1862,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0027,
-        "lng": 39.7168
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Trabzon",
-      "description": "Mosquée fréquentée de Trabzon, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Trabzon",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Trabzon+Trabzon",
-      "capacite": 3795,
-      "anneeConstruction": 1935,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0027,
-        "lng": 39.7168
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Trabzon",
-      "description": "Mosquée fréquentée de Trabzon, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Trabzon",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Trabzon+Trabzon",
-      "capacite": 6270,
-      "anneeConstruction": 1890,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0027,
-        "lng": 39.7168
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Trabzon",
-      "description": "Mosquée fréquentée de Trabzon, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Trabzon",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Trabzon+Trabzon",
-      "capacite": 4913,
-      "anneeConstruction": 1953,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0027,
-        "lng": 39.7168
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Trabzon",
-      "description": "Mosquée fréquentée de Trabzon, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Trabzon",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Trabzon+Trabzon",
-      "capacite": 6068,
-      "anneeConstruction": 1988,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0027,
-        "lng": 39.7168
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Trabzon",
-      "description": "Mosquée fréquentée de Trabzon, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Trabzon",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Trabzon+Trabzon",
-      "capacite": 6560,
-      "anneeConstruction": 2000,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0027,
-        "lng": 39.7168
-      }
-    }
-  ],
-  "tags": [
-    "nature",
-    "mer-noire",
-    "montagne",
-    "famille",
-    "histoire",
-    "plateaux"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Anadolu Sofrası",
-      "Trabzon Hasret",
-      "Hamsiköy Yaylası",
-      "Boztepe Café",
-      "Araklı Yemekleri"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Trabzon Hasret",
-      "Cemilzade",
-      "Dost Pide",
-      "Hamsiköy Yaylası",
-      "Boztepe Café"
-    ],
-    "incontournables": [
-      "Meşhur Kebapçı",
-      "Özgüven Et Mangal",
-      "Laz Böreği Ustası",
-      "Boztepe Café",
-      "Boğaziçi Balık"
-    ],
-    "pepitesCachees": [
-      "Dost Pide",
-      "Karadeniz Mutfağı"
-    ],
-    "idealFamille": [
-      "Trabzon Hasret",
-      "Cemilzade",
-      "Dost Pide",
-      "Hamsiköy Yaylası",
-      "Boztepe Café"
-    ],
-    "gastronomique": [
-      "Büyük Otel Restaurant",
-      "Saray Restaurant"
-    ],
-    "ouvertNuit": [
-      "Özgüven Et Mangal",
-      "Forum Trabzon AVM",
-      "Avrasya Oteli Restaurant"
-    ],
-    "vueExceptionnelle": [
-      "Cemilzade",
-      "Hamsiköy Yaylası",
-      "Karadeniz Mutfağı"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Trabzon",
+   "description": "Mosquée fréquentée de Trabzon, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Trabzon",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Trabzon+Trabzon",
+   "capacite": 4913,
+   "anneeConstruction": 1953,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0027,
+    "lng": 39.7168
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Trabzon",
+   "description": "Mosquée fréquentée de Trabzon, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Trabzon",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Trabzon+Trabzon",
+   "capacite": 6068,
+   "anneeConstruction": 1988,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0027,
+    "lng": 39.7168
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Trabzon",
+   "description": "Mosquée fréquentée de Trabzon, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Trabzon",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Trabzon+Trabzon",
+   "capacite": 6560,
+   "anneeConstruction": 2000,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0027,
+    "lng": 39.7168
+   }
   }
+ ],
+ "tags": [
+  "nature",
+  "mer-noire",
+  "montagne",
+  "famille",
+  "histoire",
+  "plateaux"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Anadolu Sofrası",
+   "Trabzon Hasret",
+   "Hamsiköy Yaylası",
+   "Boztepe Café",
+   "Araklı Yemekleri"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Trabzon Hasret",
+   "Cemilzade",
+   "Dost Pide",
+   "Hamsiköy Yaylası",
+   "Boztepe Café"
+  ],
+  "incontournables": [
+   "Meşhur Kebapçı",
+   "Özgüven Et Mangal",
+   "Laz Böreği Ustası",
+   "Boztepe Café",
+   "Boğaziçi Balık"
+  ],
+  "pepitesCachees": [
+   "Dost Pide",
+   "Karadeniz Mutfağı"
+  ],
+  "idealFamille": [
+   "Trabzon Hasret",
+   "Cemilzade",
+   "Dost Pide",
+   "Hamsiköy Yaylası",
+   "Boztepe Café"
+  ],
+  "gastronomique": [
+   "Büyük Otel Restaurant",
+   "Saray Restaurant"
+  ],
+  "ouvertNuit": [
+   "Özgüven Et Mangal",
+   "Forum Trabzon AVM",
+   "Avrasya Oteli Restaurant"
+  ],
+  "vueExceptionnelle": [
+   "Cemilzade",
+   "Hamsiköy Yaylası",
+   "Karadeniz Mutfağı"
+  ]
+ }
 }

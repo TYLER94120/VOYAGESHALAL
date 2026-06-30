@@ -1,2701 +1,2712 @@
 {
-  "slug": "marrakech",
-  "nom": "Marrakech",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "region": "Afrique du Nord",
-  "coordonnees": {
+ "slug": "marrakech",
+ "nom": "Marrakech",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "region": "Afrique du Nord",
+ "coordonnees": {
+  "lat": 31.6295,
+  "lng": -7.9811
+ },
+ "score_halal": 5,
+ "description": "Marrakech, la ville ocre du Maroc, est l'une des destinations les plus halal-friendly au monde. Cuisine 100% halal, mosquées magnifiques, riads authentiques et une culture islamique omniprésente.",
+ "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+ "image_alt": "Vue aérienne de Marrakech avec la mosquée Koutoubia",
+ "meta_title": "Marrakech Halal — Restaurants, Mosquées & Guide Complet 2026",
+ "meta_description": "Découvrez Marrakech halal : les meilleurs restaurants, mosquées, activités et hôtels halal-friendly. Guide complet mis à jour 2026.",
+ "statistiques": {
+  "mosquees": 147,
+  "restaurants_halal": 800,
+  "hotels_halal": 48,
+  "habitants_musulmans_pct": 99,
+  "hotels": 15
+ },
+ "infos_pratiques": {
+  "langue": "Arabe, Français, Tamazight",
+  "monnaie": "Dirham marocain (MAD)",
+  "meilleure_periode": "Mars–Mai, Sept–Nov",
+  "appel_priere": "5 fois par jour depuis toutes les mosquées",
+  "nourriture_halal": "Pratiquement tous les restaurants",
+  "alcool": "Disponible dans certains hôtels et bars touristiques",
+  "tenue": "Tenue correcte recommandée dans la médina",
+  "securite": "Ville très sûre pour les voyageurs musulmans"
+ },
+ "restaurants": [
+  {
+   "nom": "Dar Moha",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Cuisine marocaine moderne au bord de la piscine.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Moha+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Cuisine marocaine moderne au bord de la piscine",
+   "nombreAvis": 3712,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Ksar Essaoussan",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Menu royal 5 plats dans un riad secret.",
+   "mapsUrl": "https://maps.google.com/?q=Ksar+Essaoussan+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Menu royal 5 plats dans un riad secret",
+   "nombreAvis": 2840,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Al Fassia Aguedal",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Cuisine fassi tenue exclusivement par des femmes.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Fassia+Aguedal+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Cuisine fassi tenue exclusivement par des femmes",
+   "nombreAvis": 2913,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "La Maison Arabe",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Institution de 1946 avec cours de cuisine.",
+   "mapsUrl": "https://maps.google.com/?q=La+Maison+Arabe+Marrakech",
+   "priceRange": "€€€€",
+   "specialite": "Institution de 1946 avec cours de cuisine",
+   "nombreAvis": 2773,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Chez Lamine Hadj Mustapha",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Méchoui d'agneau entier depuis 1920.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+Hadj+Mustapha+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Méchoui d'agneau entier depuis 1920",
+   "nombreAvis": 1283,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Haj Brik",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Harira et briouates depuis 60 ans.",
+   "mapsUrl": "https://maps.google.com/?q=Haj+Brik+Marrakech",
+   "priceRange": "€",
+   "specialite": "Harira et briouates depuis 60 ans",
+   "nombreAvis": 225,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Café Argana",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "",
+   "description": "Tagines avec vue sur Djemaa el-Fna.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Argana+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Tagines avec vue sur Djemaa el-Fna",
+   "nombreAvis": 1348,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Le Marrakchi",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Rooftop panoramique sur la place Djemaa.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Marrakchi+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Rooftop panoramique sur la place Djemaa",
+   "nombreAvis": 2388,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Rôtisserie de la Paix",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Poulet rôti à la broche depuis 1949.",
+   "mapsUrl": "https://maps.google.com/?q=R%C3%B4tisserie+de+la+Paix+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Poulet rôti à la broche depuis 1949",
+   "nombreAvis": 1838,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Les Jardins de la Koutoubia",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Cuisine du terroir avec vue sur la mosquée.",
+   "mapsUrl": "https://maps.google.com/?q=Les+Jardins+de+la+Koutoubia+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Cuisine du terroir avec vue sur la mosquée",
+   "nombreAvis": 1671,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Dar Cherifa",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Riad-galerie d'art, café médiéval.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Cherifa+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Riad-galerie d'art, café médiéval",
+   "nombreAvis": 2077,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Terrasse des Épices",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Cuisine lente sur un rooftop de la médina.",
+   "mapsUrl": "https://maps.google.com/?q=Terrasse+des+%C3%89pices+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Cuisine lente sur un rooftop de la médina",
+   "nombreAvis": 1621,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Palais Gharnata",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Dîner royal avec spectacle folklorique.",
+   "mapsUrl": "https://maps.google.com/?q=Palais+Gharnata+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Dîner royal avec spectacle folklorique",
+   "nombreAvis": 2166,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Atay Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Thé à la menthe sur rooftop.",
+   "mapsUrl": "https://maps.google.com/?q=Atay+Caf%C3%A9+Marrakech",
+   "priceRange": "€",
+   "specialite": "Thé à la menthe sur rooftop",
+   "nombreAvis": 2564,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Panna e Cioccolato",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Glacier artisanal à Guéliz.",
+   "mapsUrl": "https://maps.google.com/?q=Panna+e+Cioccolato+Marrakech",
+   "priceRange": "€",
+   "specialite": "Glacier artisanal à Guéliz",
+   "nombreAvis": 1610,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Oliveri",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Pâtisserie italienne halal historique.",
+   "mapsUrl": "https://maps.google.com/?q=Oliveri+Marrakech",
+   "priceRange": "€",
+   "specialite": "Pâtisserie italienne halal historique",
+   "nombreAvis": 2163,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Bakchich Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Brunch et jus pressés en médina.",
+   "mapsUrl": "https://maps.google.com/?q=Bakchich+Caf%C3%A9+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Brunch et jus pressés en médina",
+   "nombreAvis": 372,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Bacha Coffee",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Café de luxe dans le palais Dar el-Bacha.",
+   "mapsUrl": "https://maps.google.com/?q=Bacha+Coffee+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Café de luxe dans le palais Dar el-Bacha",
+   "nombreAvis": 3460,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Earth Café",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "100% végétalien et bio.",
+   "mapsUrl": "https://maps.google.com/?q=Earth+Caf%C3%A9+Marrakech",
+   "priceRange": "€",
+   "specialite": "100% végétalien et bio",
+   "nombreAvis": 2018,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Henna Art Café",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Végétarien solidaire des artisanes.",
+   "mapsUrl": "https://maps.google.com/?q=Henna+Art+Caf%C3%A9+Marrakech",
+   "priceRange": "€",
+   "specialite": "Végétarien solidaire des artisanes",
+   "nombreAvis": 1066,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Le Comptoir Bio",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Smoothies et salades de l'Atlas.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Bio+Marrakech",
+   "priceRange": "€",
+   "specialite": "Smoothies et salades de l'Atlas",
+   "nombreAvis": 1173,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Narwama",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Indien et thaïlandais, meilleur curry de la ville.",
+   "mapsUrl": "https://maps.google.com/?q=Narwama+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Indien et thaïlandais, meilleur curry de la ville",
+   "nombreAvis": 2578,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Sushi Shop Marrakech",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Sushi halal certifié à Guéliz.",
+   "mapsUrl": "https://maps.google.com/?q=Sushi+Shop+Marrakech+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Sushi halal certifié à Guéliz",
+   "nombreAvis": 2455,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Nirvana India",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Cuisine indienne du Nord, naan maison.",
+   "mapsUrl": "https://maps.google.com/?q=Nirvana+India+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Cuisine indienne du Nord, naan maison",
+   "nombreAvis": 1089,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Pepe Nero",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Pizza napolitaine halal avec livraison.",
+   "mapsUrl": "https://maps.google.com/?q=Pepe+Nero+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Pizza napolitaine halal avec livraison",
+   "nombreAvis": 1227,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "La Trattoria",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Le plus ancien italien de Marrakech (1976).",
+   "mapsUrl": "https://maps.google.com/?q=La+Trattoria+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Le plus ancien italien de Marrakech (1976)",
+   "nombreAvis": 1378,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Ristorante Catanzaro",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Pizza et pasta à Hivernage.",
+   "mapsUrl": "https://maps.google.com/?q=Ristorante+Catanzaro+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Pizza et pasta à Hivernage",
+   "nombreAvis": 2121,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Big Kahuna Burger",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Burgers gourmet halal à Guéliz.",
+   "mapsUrl": "https://maps.google.com/?q=Big+Kahuna+Burger+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Burgers gourmet halal à Guéliz",
+   "nombreAvis": 329,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Burger King Marrakech",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "",
+   "description": "Burgers halal certifiés.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+King+Marrakech+Marrakech",
+   "priceRange": "€",
+   "specialite": "Burgers halal certifiés",
+   "nombreAvis": 169,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Five Guys Marrakech",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Burgers halal au Carré Eden.",
+   "mapsUrl": "https://maps.google.com/?q=Five+Guys+Marrakech+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Burgers halal au Carré Eden",
+   "nombreAvis": 2123,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Baobab Juice & Food",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "",
+   "description": "Bowls et burgers sains.",
+   "mapsUrl": "https://maps.google.com/?q=Baobab+Juice+%26+Food+Marrakech",
+   "priceRange": "€",
+   "specialite": "Bowls et burgers sains",
+   "nombreAvis": 339,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Kechmara",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Bistrot tendance, grillades et mezze.",
+   "mapsUrl": "https://maps.google.com/?q=Kechmara+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Bistrot tendance, grillades et mezze",
+   "nombreAvis": 2368,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Le Crystal",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Grillades et fruits de mer halal.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Crystal+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Grillades et fruits de mer halal",
+   "nombreAvis": 1308,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "L'Annexe",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Brasserie moderne aux viandes maturées.",
+   "mapsUrl": "https://maps.google.com/?q=L%27Annexe+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Brasserie moderne aux viandes maturées",
+   "nombreAvis": 421,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Le Catanzaro Steak",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Steakhouse halal depuis 40 ans.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Catanzaro+Steak+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Steakhouse halal depuis 40 ans",
+   "nombreAvis": 2372,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Stands Djemaa el-Fna",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Cent stands de grillades halal le soir.",
+   "mapsUrl": "https://maps.google.com/?q=Stands+Djemaa+el-Fna+Marrakech",
+   "priceRange": "€",
+   "specialite": "Cent stands de grillades halal le soir",
+   "nombreAvis": 2344,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Souk Café",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "",
+   "description": "Falafel et briouates en médina.",
+   "mapsUrl": "https://maps.google.com/?q=Souk+Caf%C3%A9+Marrakech",
+   "priceRange": "€",
+   "specialite": "Falafel et briouates en médina",
+   "nombreAvis": 433,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Fatima's Kitchen",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Cuisine familiale de mamie à Bab Ghmat.",
+   "mapsUrl": "https://maps.google.com/?q=Fatima%27s+Kitchen+Marrakech",
+   "priceRange": "€",
+   "specialite": "Cuisine familiale de mamie à Bab Ghmat",
+   "nombreAvis": 325,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r38"
+  },
+  {
+   "id": "r39",
+   "nom": "Le Jardin",
+   "cuisine": "Marocaine",
+   "adresse": "32 Souk Jeld, Sidi Abdelaziz, Médina",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.7,
+   "avis_count": 1240,
+   "fourchette_prix": "€€",
+   "horaires": "12h–23h",
+   "specialites": [
+    "Tajine d'agneau",
+    "Couscous royal",
+    "Pastilla"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 1240,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Le+Jardin+Marrakech",
+   "nombreAvis": 93,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "id": "r40",
+   "nom": "Nomad",
+   "cuisine": "Marocaine moderne",
+   "adresse": "1 Derb Argan, Rahba Lakdima",
+   "halal_certifie": true,
+   "sans_alcool": false,
+   "note": 4.5,
+   "avis_count": 2870,
+   "fourchette_prix": "€€€",
+   "horaires": "12h–23h",
+   "specialites": [
+    "Harira",
+    "Briouat",
+    "Mechoui"
+   ],
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 2870,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Nomad+Marrakech",
+   "nombreAvis": 614,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "id": "r41",
+   "nom": "Al Fassia",
+   "cuisine": "Marocaine traditionnelle",
+   "adresse": "55 Boulevard Mohammed Zerktouni, Guéliz",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.8,
+   "avis_count": 890,
+   "fourchette_prix": "€€€",
+   "horaires": "12h–14h30, 19h–23h",
+   "specialites": [
+    "Couscous aux 7 légumes",
+    "Tajine kefta",
+    "Pastilla au pigeon"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 890,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Al+Fassia+Marrakech",
+   "nombreAvis": 3245,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "id": "r42",
+   "nom": "Café des Épices",
+   "cuisine": "Marocaine légère",
+   "adresse": "75 Rahba Lakdima, Médina",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.4,
+   "avis_count": 3100,
+   "fourchette_prix": "€",
+   "horaires": "9h–22h",
+   "specialites": [
+    "Jus frais",
+    "Sandwichs marocains",
+    "Msemen"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 3100,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.4,
+   "priceRange": "€",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+des+%C3%89pices+Marrakech",
+   "nombreAvis": 2578,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Dar Yacout",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médina, Marrakech",
+   "description": "Dîner marocain dans un palais somptueux.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Yacout+Marrakech",
+   "priceRange": "€€€",
+   "id": "r43",
+   "nombreAvis": 287,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "nom": "Le Tobsil",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Médina",
+   "description": "Cuisine marocaine raffinée en menu dégustation.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Tobsil+Marrakech",
+   "priceRange": "€€€",
+   "id": "r44",
+   "nombreAvis": 2245,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "nom": "Café Clock",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kasbah",
+   "description": "Camel burger halal et scène culturelle.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Clock+Marrakech",
+   "priceRange": "€€",
+   "id": "r45",
+   "nombreAvis": 900,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Mechoui Alley",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jemaa el-Fna",
+   "description": "Agneau rôti traditionnel des stands de la place.",
+   "mapsUrl": "https://maps.google.com/?q=Mechoui+Alley+Marrakech",
+   "priceRange": "€",
+   "id": "r46",
+   "nombreAvis": 2202,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Amal Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Gueliz",
+   "description": "Association formant des femmes, cuisine maison.",
+   "mapsUrl": "https://maps.google.com/?q=Amal+Restaurant+Marrakech",
+   "priceRange": "€",
+   "id": "r47",
+   "nombreAvis": 1246,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Naranj",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Médina",
+   "description": "Cuisine levantine, mezzés et grillades.",
+   "mapsUrl": "https://maps.google.com/?q=Naranj+Marrakech",
+   "priceRange": "€€",
+   "id": "r48",
+   "nombreAvis": 1893,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ]
+  },
+  {
+   "nom": "Dar Zellige",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Marrakech",
+   "description": "Adresse marocain appréciée à Marrakech, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Zellige+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Tajine d'agneau",
+   "nombreAvis": 1020,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Riad Saveurs",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Marrakech",
+   "description": "Adresse traditionnel local appréciée à Marrakech, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Riad+Saveurs+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Couscous royal",
+   "nombreAvis": 1199,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r50"
+  },
+  {
+   "nom": "Chez Lamine",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Marrakech",
+   "description": "Adresse grillades & kebab appréciée à Marrakech, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+Marrakech",
+   "priceRange": "€",
+   "specialite": "Brochettes mixtes",
+   "nombreAvis": 87,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r51"
+  },
+  {
+   "nom": "Le Foundouk",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Marrakech",
+   "description": "Adresse gastronomique appréciée à Marrakech, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Foundouk+Marrakech",
+   "priceRange": "€€€",
+   "specialite": "Pastilla au pigeon",
+   "nombreAvis": 1950,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r52"
+  },
+  {
+   "nom": "Pâtisserie Andalous",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Marrakech",
+   "description": "Adresse pâtisserie & café appréciée à Marrakech, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=P%C3%A2tisserie+Andalous+Marrakech",
+   "priceRange": "€",
+   "specialite": "Cornes de gazelle",
+   "nombreAvis": 694,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r53"
+  },
+  {
+   "nom": "Bahr El Maghreb",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Marrakech",
+   "description": "Adresse fruits de mer appréciée à Marrakech, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahr+El+Maghreb+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Poisson chermoula",
+   "nombreAvis": 1140,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r54"
+  },
+  {
+   "nom": "Beirut Maghreb",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Marrakech",
+   "description": "Adresse libanais & levant appréciée à Marrakech, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beirut+Maghreb+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 399,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r55"
+  },
+  {
+   "nom": "Green Médina",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Marrakech",
+   "description": "Adresse végétarien & healthy appréciée à Marrakech, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Green+M%C3%A9dina+Marrakech",
+   "priceRange": "€",
+   "specialite": "Salades marocaines",
+   "nombreAvis": 771,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r56"
+  },
+  {
+   "nom": "Snack Atlas",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Marrakech",
+   "description": "Adresse burgers & fast-food appréciée à Marrakech, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Snack+Atlas+Marrakech",
+   "priceRange": "€",
+   "specialite": "Sandwich kefta",
+   "nombreAvis": 1430,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r57"
+  },
+  {
+   "nom": "Dar Zellige Marrakech 10",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Marrakech",
+   "description": "Adresse marocain appréciée à Marrakech, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Zellige+Marrakech+10+Marrakech",
+   "priceRange": "€€",
+   "specialite": "Tajine d'agneau",
+   "nombreAvis": 3012,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r58"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m1",
+   "nom": "Mosquée Koutoubia",
+   "type": "Grande Mosquée",
+   "adresse": "Avenue Mohammed V, Médina",
+   "description": "La plus grande mosquée de Marrakech et chef-d'œuvre de l'architecture almohade. Son minaret de 70m est le symbole de la ville.",
+   "note": 5,
+   "acces_non_musulmans": false,
+   "capacite": 25000
+  },
+  {
+   "id": "m2",
+   "nom": "Mosquée Ben Youssef",
+   "type": "Mosquée historique",
+   "adresse": "Kaat Benahid, Médina",
+   "description": "L'une des plus importantes mosquées de la médina, datant du XIVe siècle.",
+   "note": 4.9,
+   "acces_non_musulmans": false,
+   "capacite": null
+  },
+  {
+   "id": "m3",
+   "nom": "Mosquée de la Kasbah",
+   "type": "Mosquée royale",
+   "adresse": "Kasbah, Médina",
+   "description": "Mosquée royale du XIIe siècle avec minaret décoré de zelliges polychromes.",
+   "note": 4.8,
+   "acces_non_musulmans": false,
+   "capacite": null
+  }
+ ],
+ "hotels": [
+  {
+   "id": "h1",
+   "nom": "Riad Dar Anika",
+   "type": "Riad",
+   "adresse": "83 Derb Jdid, Bab Doukkala",
+   "etoiles": 4,
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "piscine_privee": true,
+   "note": 4.8,
+   "avis_count": 356,
+   "prix_nuit_min": 85,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 356,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "categorie": "Riad & Boutique",
+   "score": 4.8,
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Riad+Dar+Anika+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
+   "nombreAvis": 2321,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "id": "h2",
+   "nom": "La Maison Arabe",
+   "type": "Riad-Hôtel",
+   "adresse": "1 Derb Assehbe, Bab Doukkala",
+   "etoiles": 5,
+   "halal_certifie": true,
+   "sans_alcool": false,
+   "piscine_privee": true,
+   "note": 4.9,
+   "avis_count": 780,
+   "prix_nuit_min": 180,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 780,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "categorie": "Riad & Boutique",
+   "score": 4.9,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=La+Maison+Arabe+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
+   "nombreAvis": 2041,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 31.630574,
+   "lng": -7.9961264
+  },
+  {
+   "id": "h3",
+   "nom": "Riad Kniza",
+   "type": "Riad",
+   "adresse": "34 Derb l'Hôtel, Bab Doukkala",
+   "etoiles": 4,
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "piscine_privee": false,
+   "note": 4.7,
+   "avis_count": 412,
+   "prix_nuit_min": 110,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 412,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "categorie": "Riad & Boutique",
+   "score": 4.7,
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Riad+Kniza+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
+   "nombreAvis": 883,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 31.6329951,
+   "lng": -7.9977215
+  },
+  {
+   "nom": "La Mamounia",
+   "categorie": "Luxe",
+   "score": 4.8,
+   "adresse": "Avenue Bab Jdid",
+   "description": "Palace légendaire, jardins et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=La+Mamounia+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
+   "priceRange": "€€€€",
+   "id": "h4",
+   "nombreAvis": 710,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 31.6213829,
+   "lng": -7.9974419
+  },
+  {
+   "nom": "Les Jardins de la Koutoubia",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Médina",
+   "description": "Hôtel central avec piscine, proche Jemaa el-Fna.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Les+Jardins+de+la+Koutoubia+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
+   "priceRange": "€€€",
+   "id": "h5",
+   "nombreAvis": 931,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 31.6260491,
+   "lng": -7.9914976
+  },
+  {
+   "nom": "Grand Plaza Marrakech",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Marrakech",
+   "description": "Hébergement halal-friendly à Marrakech.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Marrakech+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
+   "priceRange": "€€€€",
+   "nombreAvis": 539,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": 31.6295177,
+   "lng": -8.0162352
+  },
+  {
+   "nom": "Grand Plaza Marrakech 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Marrakech",
+   "description": "Hébergement halal-friendly à Marrakech.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Marrakech+0+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
+   "priceRange": "€€€€",
+   "nombreAvis": 850,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Marrakech",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Marrakech",
+   "description": "Hébergement halal-friendly à Marrakech.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Marrakech+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
+   "priceRange": "€€€",
+   "nombreAvis": 450,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Marrakech",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Marrakech",
+   "description": "Hébergement halal-friendly à Marrakech.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Marrakech+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
+   "priceRange": "€€€",
+   "nombreAvis": 1505,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Marrakech",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Marrakech",
+   "description": "Hébergement halal-friendly à Marrakech.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Marrakech+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
+   "priceRange": "€€",
+   "nombreAvis": 882,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  },
+  {
+   "nom": "Seaside Resort Marrakech",
+   "categorie": "Resort & Spa",
+   "score": 4.5,
+   "adresse": "Marrakech",
+   "description": "Hébergement halal-friendly à Marrakech.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Marrakech+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
+   "priceRange": "€€€€",
+   "nombreAvis": 1570,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "piscine-non-mixte",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "spa-femmes",
+    "wifi"
+   ],
+   "id": "h11"
+  },
+  {
+   "nom": "Family Suites Marrakech",
+   "categorie": "Appartement",
+   "score": 4.1,
+   "adresse": "Marrakech",
+   "description": "Hébergement halal-friendly à Marrakech.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Family+Suites+Marrakech+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
+   "priceRange": "€€",
+   "nombreAvis": 2420,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "cuisine-equipee",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  },
+  {
+   "nom": "Grand Plaza Marrakech 6",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Marrakech",
+   "description": "Hébergement halal-friendly à Marrakech.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Marrakech+6+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
+   "priceRange": "€€€€",
+   "nombreAvis": 773,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h13"
+  },
+  {
+   "nom": "City Comfort Marrakech 7",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Marrakech",
+   "description": "Hébergement halal-friendly à Marrakech.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Marrakech+7+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
+   "priceRange": "€€€",
+   "nombreAvis": 1166,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14"
+  },
+  {
+   "nom": "Boutique Dar Marrakech 8",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Marrakech",
+   "description": "Hébergement halal-friendly à Marrakech.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Marrakech+8+Marrakech",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
+   "priceRange": "€€€",
+   "nombreAvis": 539,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Visite de la Médina et des souks",
+   "type": "Culture",
+   "description": "Perdez-vous dans les ruelles de la médina classée UNESCO.",
+   "duree": "3–4h",
+   "prix": "Gratuit",
+   "tags": [
+    "culture",
+    "shopping",
+    "histoire",
+    "famille"
+   ],
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Visite+de+la+M%C3%A9dina+et+des+souks+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Visite+de+la+M%C3%A9dina+et+des+souks+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a2",
+   "nom": "Jardins Majorelle",
+   "type": "Nature",
+   "description": "Jardin exotique créé par Jacques Majorelle en 1924, restauré par Yves Saint Laurent.",
+   "duree": "1–2h",
+   "prix": "70 MAD",
+   "tags": [
+    "jardin",
+    "art",
+    "couple"
+   ],
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Jardins+Majorelle+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jardins+Majorelle+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a3",
+   "nom": "Hammam traditionnel",
+   "type": "Bien-être",
+   "description": "Expérience authentique du hammam marocain avec séparation hommes/femmes.",
+   "duree": "2h",
+   "prix": "À partir de 150 MAD",
+   "tags": [
+    "bien-être",
+    "authentique",
+    "séparé H/F"
+   ],
+   "categorie": "Hammam & Bien-être",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+Marrakech",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a4",
+   "nom": "Excursion dans l'Atlas",
+   "type": "Nature & Aventure",
+   "description": "Randonnée dans les montagnes de l'Atlas avec guide local.",
+   "duree": "Journée entière",
+   "prix": "À partir de 300 MAD",
+   "tags": [
+    "montagne",
+    "randonnée",
+    "famille"
+   ],
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Excursion+dans+l%27Atlas+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Excursion+dans+l%27Atlas+Marrakech",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a5",
+   "nom": "Place Jemaa el-Fna au coucher du soleil",
+   "type": "Culture",
+   "description": "Conteurs, musiciens gnawa, herboristes. S'anime à partir de 18h. Patrimoine UNESCO.",
+   "duree": "Soirée",
+   "prix": "Gratuit",
+   "tags": [
+    "culture",
+    "soirée",
+    "famille"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Place+Jemaa+el-Fna+au+coucher+du+soleil+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+Jemaa+el-Fna+au+coucher+du+soleil+Marrakech",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Koutoubia",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée emblématique au minaret de 77 m.",
+   "duree": "30 min",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Koutoubia+Marrakech",
+   "id": "a6",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Koutoubia+Marrakech",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Médersa Ben Youssef",
+   "categorie": "Histoire & Culture",
+   "description": "Ancienne école coranique au décor zellige.",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dersa+Ben+Youssef+Marrakech",
+   "id": "a7",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dersa+Ben+Youssef+Marrakech",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Place Jemaa el-Fna",
+   "categorie": "Shopping & Souks",
+   "description": "Place mythique, conteurs et stands halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Place+Jemaa+el-Fna+Marrakech",
+   "id": "a8",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+Jemaa+el-Fna+Marrakech",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Jardin Majorelle",
+   "categorie": "Nature & Plein air",
+   "description": "Jardin botanique bleu cobalt.",
+   "duree": "1-2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Jardin+Majorelle+Marrakech",
+   "id": "a9",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jardin+Majorelle+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Souks de la médina",
+   "categorie": "Shopping & Souks",
+   "description": "Labyrinthe d'artisanat : cuir, tapis, épices.",
+   "duree": "2-3h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Souks+de+la+m%C3%A9dina+Marrakech",
+   "id": "a10",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souks+de+la+m%C3%A9dina+Marrakech",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Palais Bahia",
+   "categorie": "Histoire & Culture",
+   "description": "Palais du XIXe aux patios et plafonds peints.",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Palais+Bahia+Marrakech",
+   "id": "a11",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+Bahia+Marrakech",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Marrakech",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Marrakech+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Marrakech+Marrakech",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Grand marché central de Marrakech",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Marrakech+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Marrakech+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Marrakech",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Marrakech+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Marrakech+Marrakech",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Musée de la ville de Marrakech",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Marrakech+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Marrakech+Marrakech",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Food tour halal de Marrakech",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Marrakech+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Marrakech+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Hammam traditionnel de Marrakech",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Marrakech+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Marrakech+Marrakech",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Mosquée historique de Marrakech",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Marrakech+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Marrakech+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Parc et jardins de Marrakech",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Marrakech+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Marrakech+Marrakech",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Marrakech",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Marrakech+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Marrakech+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Marrakech",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Marrakech+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Marrakech+Marrakech",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Quartier historique de Marrakech 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Marrakech+10+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Marrakech+10+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Grand marché central de Marrakech 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Marrakech+11+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Marrakech+11+Marrakech",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Marrakech 12",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Marrakech+12+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Marrakech+12+Marrakech",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Musée de la ville de Marrakech 13",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Marrakech+13+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Marrakech+13+Marrakech",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Food tour halal de Marrakech 14",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Marrakech+14+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Marrakech+14+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Hammam traditionnel de Marrakech 15",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Marrakech+15+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Marrakech+15+Marrakech",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Mosquée historique de Marrakech 16",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Marrakech+16+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Marrakech+16+Marrakech",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Parc et jardins de Marrakech 17",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Marrakech+17+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Marrakech+17+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Marrakech 18",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Marrakech+18+Marrakech",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Marrakech+18+Marrakech",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "road_trips": [
+  {
+   "id": "rt1",
+   "titre": "Marrakech → Merzouga (Désert) — 3 jours",
+   "duree": "3 jours",
+   "distance_km": 560,
+   "etapes": [
+    "Marrakech",
+    "Aït Benhaddou",
+    "Ouarzazate",
+    "Merzouga"
+   ],
+   "description": "De la ville ocre aux dunes du Sahara en passant par la kasbah d'Aït Benhaddou.",
+   "conseils_halal": "Restaurants halal dans chaque étape.",
+   "budget_estime": "300–500€/personne"
+  },
+  {
+   "id": "rt2",
+   "titre": "Marrakech → Essaouira — Week-end",
+   "duree": "2 jours",
+   "distance_km": 190,
+   "etapes": [
+    "Marrakech",
+    "Essaouira"
+   ],
+   "description": "Escapade sur la côte atlantique. Essaouira, la ville des vents, et ses plages magnifiques.",
+   "conseils_halal": "Poissons et fruits de mer frais grillés sur le port — halal par nature.",
+   "budget_estime": "150–250€/personne"
+  }
+ ],
+ "voyages_par_type": {
+  "en_couple": {
+   "intro": "Marrakech est une destination idéale pour les couples musulmans. Riads romantiques, dîners aux chandelles halal et couchers de soleil sur la Koutoubia.",
+   "top_experiences": [
+    "Dîner sur rooftop avec vue Koutoubia",
+    "Nuit dans un riad avec piscine privée",
+    "Cours de cuisine marocaine en duo",
+    "Excursion en dromadaire"
+   ],
+   "conseils": "Réservez un riad avec piscine privée pour profiter en toute intimité.",
+   "hotels_recommandes": [
+    "Riad Dar Anika",
+    "La Maison Arabe"
+   ]
+  },
+  "en_famille": {
+   "intro": "Marrakech accueille les familles à bras ouverts. Les enfants adorent les souks colorés et les animations de la place Jemaa el-Fna.",
+   "top_experiences": [
+    "Place Jemaa el-Fna",
+    "Balàde en calèche",
+    "Excursion Ouàrika",
+    "Cours de poterie"
+   ],
+   "conseils": "Choisissez un riad avec piscine pour que les enfants puissent se baigner.",
+   "hotels_recommandes": [
+    "Riad Dar Anika",
+    "Riad Kniza"
+   ]
+  },
+  "entre_amis": {
+   "intro": "Shopping dans les souks, hammam collectif, soirées gastronomiques et excursions mémorables.",
+   "top_experiences": [
+    "Shopping et négociation dans les souks",
+    "Cours de cuisine collective",
+    "Quad dans le désert d'Agafay",
+    "Soirée fantasia"
+   ],
+   "conseils": "Réservez un riad entier pour un groupe.",
+   "hotels_recommandes": [
+    "Riad Kniza"
+   ]
+  },
+  "voyage_solo": {
+   "intro": "Marrakech est sûre et accueillante pour les voyageurs solos.",
+   "top_experiences": [
+    "Cours d'arabe dialectal marocain",
+    "Visite des coopératives d'artisans",
+    "Randonnée guidée dans l'Atlas"
+   ],
+   "conseils": "Rejoignez des groupes de voyage organisés par des agences halal.",
+   "hotels_recommandes": [
+    "Riad Kniza"
+   ]
+  },
+  "voyage_spirituel": {
+   "intro": "Marrakech est une ville de spiritualité islamique profonde. Les 5 appels à la prière rythment la vie de la médina.",
+   "top_experiences": [
+    "Prière du Fajr à la Koutoubia",
+    "Visite des zaouïas",
+    "Soirée de Malhoun"
+   ],
+   "conseils": "Séjournez en médina pour être à portée de marche de plusieurs mosquées.",
+   "hotels_recommandes": [
+    "Riad Dar Anika"
+   ]
+  }
+ },
+ "articles_lies": [],
+ "villes_proches": [
+  "casablanca",
+  "essaouira",
+  "agadir"
+ ],
+ "codeISO": "MA",
+ "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
+ "continent": "Afrique",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Marrakech — Halal Trust Score 5/5.",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Marrakech",
+   "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Marrakech",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Marrakech+Marrakech",
+   "capacite": 6122,
+   "anneeConstruction": 2002,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 31.6295,
     "lng": -7.9811
+   }
   },
-  "score_halal": 5,
-  "description": "Marrakech, la ville ocre du Maroc, est l'une des destinations les plus halal-friendly au monde. Cuisine 100% halal, mosquées magnifiques, riads authentiques et une culture islamique omniprésente.",
-  "image_hero": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
-  "image_alt": "Vue aérienne de Marrakech avec la mosquée Koutoubia",
-  "meta_title": "Marrakech Halal — Restaurants, Mosquées & Guide Complet 2026",
-  "meta_description": "Découvrez Marrakech halal : les meilleurs restaurants, mosquées, activités et hôtels halal-friendly. Guide complet mis à jour 2026.",
-  "statistiques": {
-    "mosquees": 147,
-    "restaurants_halal": 800,
-    "hotels_halal": 48,
-    "habitants_musulmans_pct": 99
+  {
+   "nom": "Grande Mosquée de Marrakech",
+   "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Marrakech",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Marrakech+Marrakech",
+   "capacite": 6096,
+   "anneeConstruction": 1956,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 31.6295,
+    "lng": -7.9811
+   }
   },
-  "infos_pratiques": {
-    "langue": "Arabe, Français, Tamazight",
-    "monnaie": "Dirham marocain (MAD)",
-    "meilleure_periode": "Mars–Mai, Sept–Nov",
-    "appel_priere": "5 fois par jour depuis toutes les mosquées",
-    "nourriture_halal": "Pratiquement tous les restaurants",
-    "alcool": "Disponible dans certains hôtels et bars touristiques",
-    "tenue": "Tenue correcte recommandée dans la médina",
-    "securite": "Ville très sûre pour les voyageurs musulmans"
+  {
+   "nom": "Mosquée Al-Noor de Marrakech",
+   "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Marrakech",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Marrakech+Marrakech",
+   "capacite": 4370,
+   "anneeConstruction": 1910,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 31.6295,
+    "lng": -7.9811
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Dar Moha",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Cuisine marocaine moderne au bord de la piscine.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Moha+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Cuisine marocaine moderne au bord de la piscine",
-      "nombreAvis": 3712,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Ksar Essaoussan",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Menu royal 5 plats dans un riad secret.",
-      "mapsUrl": "https://maps.google.com/?q=Ksar+Essaoussan+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Menu royal 5 plats dans un riad secret",
-      "nombreAvis": 2840,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Al Fassia Aguedal",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Cuisine fassi tenue exclusivement par des femmes.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Fassia+Aguedal+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Cuisine fassi tenue exclusivement par des femmes",
-      "nombreAvis": 2913,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "La Maison Arabe",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Institution de 1946 avec cours de cuisine.",
-      "mapsUrl": "https://maps.google.com/?q=La+Maison+Arabe+Marrakech",
-      "priceRange": "€€€€",
-      "specialite": "Institution de 1946 avec cours de cuisine",
-      "nombreAvis": 2773,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Chez Lamine Hadj Mustapha",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Méchoui d'agneau entier depuis 1920.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+Hadj+Mustapha+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Méchoui d'agneau entier depuis 1920",
-      "nombreAvis": 1283,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Haj Brik",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Harira et briouates depuis 60 ans.",
-      "mapsUrl": "https://maps.google.com/?q=Haj+Brik+Marrakech",
-      "priceRange": "€",
-      "specialite": "Harira et briouates depuis 60 ans",
-      "nombreAvis": 225,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Café Argana",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "",
-      "description": "Tagines avec vue sur Djemaa el-Fna.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Argana+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Tagines avec vue sur Djemaa el-Fna",
-      "nombreAvis": 1348,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Le Marrakchi",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Rooftop panoramique sur la place Djemaa.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Marrakchi+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Rooftop panoramique sur la place Djemaa",
-      "nombreAvis": 2388,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Rôtisserie de la Paix",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Poulet rôti à la broche depuis 1949.",
-      "mapsUrl": "https://maps.google.com/?q=R%C3%B4tisserie+de+la+Paix+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Poulet rôti à la broche depuis 1949",
-      "nombreAvis": 1838,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Les Jardins de la Koutoubia",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Cuisine du terroir avec vue sur la mosquée.",
-      "mapsUrl": "https://maps.google.com/?q=Les+Jardins+de+la+Koutoubia+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Cuisine du terroir avec vue sur la mosquée",
-      "nombreAvis": 1671,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Dar Cherifa",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Riad-galerie d'art, café médiéval.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Cherifa+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Riad-galerie d'art, café médiéval",
-      "nombreAvis": 2077,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Terrasse des Épices",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Cuisine lente sur un rooftop de la médina.",
-      "mapsUrl": "https://maps.google.com/?q=Terrasse+des+%C3%89pices+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Cuisine lente sur un rooftop de la médina",
-      "nombreAvis": 1621,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Palais Gharnata",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Dîner royal avec spectacle folklorique.",
-      "mapsUrl": "https://maps.google.com/?q=Palais+Gharnata+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Dîner royal avec spectacle folklorique",
-      "nombreAvis": 2166,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Atay Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Thé à la menthe sur rooftop.",
-      "mapsUrl": "https://maps.google.com/?q=Atay+Caf%C3%A9+Marrakech",
-      "priceRange": "€",
-      "specialite": "Thé à la menthe sur rooftop",
-      "nombreAvis": 2564,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Panna e Cioccolato",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Glacier artisanal à Guéliz.",
-      "mapsUrl": "https://maps.google.com/?q=Panna+e+Cioccolato+Marrakech",
-      "priceRange": "€",
-      "specialite": "Glacier artisanal à Guéliz",
-      "nombreAvis": 1610,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Oliveri",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Pâtisserie italienne halal historique.",
-      "mapsUrl": "https://maps.google.com/?q=Oliveri+Marrakech",
-      "priceRange": "€",
-      "specialite": "Pâtisserie italienne halal historique",
-      "nombreAvis": 2163,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Bakchich Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Brunch et jus pressés en médina.",
-      "mapsUrl": "https://maps.google.com/?q=Bakchich+Caf%C3%A9+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Brunch et jus pressés en médina",
-      "nombreAvis": 372,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Bacha Coffee",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Café de luxe dans le palais Dar el-Bacha.",
-      "mapsUrl": "https://maps.google.com/?q=Bacha+Coffee+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Café de luxe dans le palais Dar el-Bacha",
-      "nombreAvis": 3460,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Earth Café",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "100% végétalien et bio.",
-      "mapsUrl": "https://maps.google.com/?q=Earth+Caf%C3%A9+Marrakech",
-      "priceRange": "€",
-      "specialite": "100% végétalien et bio",
-      "nombreAvis": 2018,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Henna Art Café",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Végétarien solidaire des artisanes.",
-      "mapsUrl": "https://maps.google.com/?q=Henna+Art+Caf%C3%A9+Marrakech",
-      "priceRange": "€",
-      "specialite": "Végétarien solidaire des artisanes",
-      "nombreAvis": 1066,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Le Comptoir Bio",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Smoothies et salades de l'Atlas.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Bio+Marrakech",
-      "priceRange": "€",
-      "specialite": "Smoothies et salades de l'Atlas",
-      "nombreAvis": 1173,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Narwama",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Indien et thaïlandais, meilleur curry de la ville.",
-      "mapsUrl": "https://maps.google.com/?q=Narwama+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Indien et thaïlandais, meilleur curry de la ville",
-      "nombreAvis": 2578,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Sushi Shop Marrakech",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Sushi halal certifié à Guéliz.",
-      "mapsUrl": "https://maps.google.com/?q=Sushi+Shop+Marrakech+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Sushi halal certifié à Guéliz",
-      "nombreAvis": 2455,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Nirvana India",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Cuisine indienne du Nord, naan maison.",
-      "mapsUrl": "https://maps.google.com/?q=Nirvana+India+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Cuisine indienne du Nord, naan maison",
-      "nombreAvis": 1089,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Pepe Nero",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Pizza napolitaine halal avec livraison.",
-      "mapsUrl": "https://maps.google.com/?q=Pepe+Nero+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Pizza napolitaine halal avec livraison",
-      "nombreAvis": 1227,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "La Trattoria",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Le plus ancien italien de Marrakech (1976).",
-      "mapsUrl": "https://maps.google.com/?q=La+Trattoria+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Le plus ancien italien de Marrakech (1976)",
-      "nombreAvis": 1378,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Ristorante Catanzaro",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Pizza et pasta à Hivernage.",
-      "mapsUrl": "https://maps.google.com/?q=Ristorante+Catanzaro+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Pizza et pasta à Hivernage",
-      "nombreAvis": 2121,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Big Kahuna Burger",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Burgers gourmet halal à Guéliz.",
-      "mapsUrl": "https://maps.google.com/?q=Big+Kahuna+Burger+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Burgers gourmet halal à Guéliz",
-      "nombreAvis": 329,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Burger King Marrakech",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "",
-      "description": "Burgers halal certifiés.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+King+Marrakech+Marrakech",
-      "priceRange": "€",
-      "specialite": "Burgers halal certifiés",
-      "nombreAvis": 169,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Five Guys Marrakech",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Burgers halal au Carré Eden.",
-      "mapsUrl": "https://maps.google.com/?q=Five+Guys+Marrakech+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Burgers halal au Carré Eden",
-      "nombreAvis": 2123,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Baobab Juice & Food",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "",
-      "description": "Bowls et burgers sains.",
-      "mapsUrl": "https://maps.google.com/?q=Baobab+Juice+%26+Food+Marrakech",
-      "priceRange": "€",
-      "specialite": "Bowls et burgers sains",
-      "nombreAvis": 339,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Kechmara",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Bistrot tendance, grillades et mezze.",
-      "mapsUrl": "https://maps.google.com/?q=Kechmara+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Bistrot tendance, grillades et mezze",
-      "nombreAvis": 2368,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Le Crystal",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Grillades et fruits de mer halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Crystal+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Grillades et fruits de mer halal",
-      "nombreAvis": 1308,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "L'Annexe",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Brasserie moderne aux viandes maturées.",
-      "mapsUrl": "https://maps.google.com/?q=L%27Annexe+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Brasserie moderne aux viandes maturées",
-      "nombreAvis": 421,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Le Catanzaro Steak",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Steakhouse halal depuis 40 ans.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Catanzaro+Steak+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Steakhouse halal depuis 40 ans",
-      "nombreAvis": 2372,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Stands Djemaa el-Fna",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Cent stands de grillades halal le soir.",
-      "mapsUrl": "https://maps.google.com/?q=Stands+Djemaa+el-Fna+Marrakech",
-      "priceRange": "€",
-      "specialite": "Cent stands de grillades halal le soir",
-      "nombreAvis": 2344,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Souk Café",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "",
-      "description": "Falafel et briouates en médina.",
-      "mapsUrl": "https://maps.google.com/?q=Souk+Caf%C3%A9+Marrakech",
-      "priceRange": "€",
-      "specialite": "Falafel et briouates en médina",
-      "nombreAvis": 433,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Fatima's Kitchen",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Cuisine familiale de mamie à Bab Ghmat.",
-      "mapsUrl": "https://maps.google.com/?q=Fatima%27s+Kitchen+Marrakech",
-      "priceRange": "€",
-      "specialite": "Cuisine familiale de mamie à Bab Ghmat",
-      "nombreAvis": 325,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r38"
-    },
-    {
-      "id": "r39",
-      "nom": "Le Jardin",
-      "cuisine": "Marocaine",
-      "adresse": "32 Souk Jeld, Sidi Abdelaziz, Médina",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.7,
-      "avis_count": 1240,
-      "fourchette_prix": "€€",
-      "horaires": "12h–23h",
-      "specialites": [
-        "Tajine d'agneau",
-        "Couscous royal",
-        "Pastilla"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 1240,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Le+Jardin+Marrakech",
-      "nombreAvis": 93,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r40",
-      "nom": "Nomad",
-      "cuisine": "Marocaine moderne",
-      "adresse": "1 Derb Argan, Rahba Lakdima",
-      "halal_certifie": true,
-      "sans_alcool": false,
-      "note": 4.5,
-      "avis_count": 2870,
-      "fourchette_prix": "€€€",
-      "horaires": "12h–23h",
-      "specialites": [
-        "Harira",
-        "Briouat",
-        "Mechoui"
-      ],
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 2870,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Nomad+Marrakech",
-      "nombreAvis": 614,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r41",
-      "nom": "Al Fassia",
-      "cuisine": "Marocaine traditionnelle",
-      "adresse": "55 Boulevard Mohammed Zerktouni, Guéliz",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.8,
-      "avis_count": 890,
-      "fourchette_prix": "€€€",
-      "horaires": "12h–14h30, 19h–23h",
-      "specialites": [
-        "Couscous aux 7 légumes",
-        "Tajine kefta",
-        "Pastilla au pigeon"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 890,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Al+Fassia+Marrakech",
-      "nombreAvis": 3245,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r42",
-      "nom": "Café des Épices",
-      "cuisine": "Marocaine légère",
-      "adresse": "75 Rahba Lakdima, Médina",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.4,
-      "avis_count": 3100,
-      "fourchette_prix": "€",
-      "horaires": "9h–22h",
-      "specialites": [
-        "Jus frais",
-        "Sandwichs marocains",
-        "Msemen"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 3100,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "priceRange": "€",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+des+%C3%89pices+Marrakech",
-      "nombreAvis": 2578,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Dar Yacout",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médina, Marrakech",
-      "description": "Dîner marocain dans un palais somptueux.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Yacout+Marrakech",
-      "priceRange": "€€€",
-      "id": "r43",
-      "nombreAvis": 287,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Le Tobsil",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Médina",
-      "description": "Cuisine marocaine raffinée en menu dégustation.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Tobsil+Marrakech",
-      "priceRange": "€€€",
-      "id": "r44",
-      "nombreAvis": 2245,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Café Clock",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kasbah",
-      "description": "Camel burger halal et scène culturelle.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Clock+Marrakech",
-      "priceRange": "€€",
-      "id": "r45",
-      "nombreAvis": 900,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Mechoui Alley",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jemaa el-Fna",
-      "description": "Agneau rôti traditionnel des stands de la place.",
-      "mapsUrl": "https://maps.google.com/?q=Mechoui+Alley+Marrakech",
-      "priceRange": "€",
-      "id": "r46",
-      "nombreAvis": 2202,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Amal Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Gueliz",
-      "description": "Association formant des femmes, cuisine maison.",
-      "mapsUrl": "https://maps.google.com/?q=Amal+Restaurant+Marrakech",
-      "priceRange": "€",
-      "id": "r47",
-      "nombreAvis": 1246,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Naranj",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Médina",
-      "description": "Cuisine levantine, mezzés et grillades.",
-      "mapsUrl": "https://maps.google.com/?q=Naranj+Marrakech",
-      "priceRange": "€€",
-      "id": "r48",
-      "nombreAvis": 1893,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ]
-    },
-    {
-      "nom": "Dar Zellige",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Marrakech",
-      "description": "Adresse marocain appréciée à Marrakech, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Zellige+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Tajine d'agneau",
-      "nombreAvis": 1020,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Riad Saveurs",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Marrakech",
-      "description": "Adresse traditionnel local appréciée à Marrakech, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Riad+Saveurs+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Couscous royal",
-      "nombreAvis": 1199,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r50"
-    },
-    {
-      "nom": "Chez Lamine",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Marrakech",
-      "description": "Adresse grillades & kebab appréciée à Marrakech, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+Marrakech",
-      "priceRange": "€",
-      "specialite": "Brochettes mixtes",
-      "nombreAvis": 87,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r51"
-    },
-    {
-      "nom": "Le Foundouk",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Marrakech",
-      "description": "Adresse gastronomique appréciée à Marrakech, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Foundouk+Marrakech",
-      "priceRange": "€€€",
-      "specialite": "Pastilla au pigeon",
-      "nombreAvis": 1950,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r52"
-    },
-    {
-      "nom": "Pâtisserie Andalous",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Marrakech",
-      "description": "Adresse pâtisserie & café appréciée à Marrakech, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=P%C3%A2tisserie+Andalous+Marrakech",
-      "priceRange": "€",
-      "specialite": "Cornes de gazelle",
-      "nombreAvis": 694,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r53"
-    },
-    {
-      "nom": "Bahr El Maghreb",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Marrakech",
-      "description": "Adresse fruits de mer appréciée à Marrakech, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahr+El+Maghreb+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Poisson chermoula",
-      "nombreAvis": 1140,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r54"
-    },
-    {
-      "nom": "Beirut Maghreb",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Marrakech",
-      "description": "Adresse libanais & levant appréciée à Marrakech, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beirut+Maghreb+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 399,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r55"
-    },
-    {
-      "nom": "Green Médina",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Marrakech",
-      "description": "Adresse végétarien & healthy appréciée à Marrakech, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+M%C3%A9dina+Marrakech",
-      "priceRange": "€",
-      "specialite": "Salades marocaines",
-      "nombreAvis": 771,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r56"
-    },
-    {
-      "nom": "Snack Atlas",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Marrakech",
-      "description": "Adresse burgers & fast-food appréciée à Marrakech, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Snack+Atlas+Marrakech",
-      "priceRange": "€",
-      "specialite": "Sandwich kefta",
-      "nombreAvis": 1430,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r57"
-    },
-    {
-      "nom": "Dar Zellige Marrakech 10",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Marrakech",
-      "description": "Adresse marocain appréciée à Marrakech, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Zellige+Marrakech+10+Marrakech",
-      "priceRange": "€€",
-      "specialite": "Tajine d'agneau",
-      "nombreAvis": 3012,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r58"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m1",
-      "nom": "Mosquée Koutoubia",
-      "type": "Grande Mosquée",
-      "adresse": "Avenue Mohammed V, Médina",
-      "description": "La plus grande mosquée de Marrakech et chef-d'œuvre de l'architecture almohade. Son minaret de 70m est le symbole de la ville.",
-      "note": 5.0,
-      "acces_non_musulmans": false,
-      "capacite": 25000
-    },
-    {
-      "id": "m2",
-      "nom": "Mosquée Ben Youssef",
-      "type": "Mosquée historique",
-      "adresse": "Kaat Benahid, Médina",
-      "description": "L'une des plus importantes mosquées de la médina, datant du XIVe siècle.",
-      "note": 4.9,
-      "acces_non_musulmans": false,
-      "capacite": null
-    },
-    {
-      "id": "m3",
-      "nom": "Mosquée de la Kasbah",
-      "type": "Mosquée royale",
-      "adresse": "Kasbah, Médina",
-      "description": "Mosquée royale du XIIe siècle avec minaret décoré de zelliges polychromes.",
-      "note": 4.8,
-      "acces_non_musulmans": false,
-      "capacite": null
-    }
-  ],
-  "hotels": [
-    {
-      "id": "h1",
-      "nom": "Riad Dar Anika",
-      "type": "Riad",
-      "adresse": "83 Derb Jdid, Bab Doukkala",
-      "etoiles": 4,
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "piscine_privee": true,
-      "note": 4.8,
-      "avis_count": 356,
-      "prix_nuit_min": 85,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 356,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "categorie": "Riad & Boutique",
-      "score": 4.8,
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Riad+Dar+Anika+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
-      "nombreAvis": 2321,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h2",
-      "nom": "La Maison Arabe",
-      "type": "Riad-Hôtel",
-      "adresse": "1 Derb Assehbe, Bab Doukkala",
-      "etoiles": 5,
-      "halal_certifie": true,
-      "sans_alcool": false,
-      "piscine_privee": true,
-      "note": 4.9,
-      "avis_count": 780,
-      "prix_nuit_min": 180,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 780,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "categorie": "Riad & Boutique",
-      "score": 4.9,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=La+Maison+Arabe+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
-      "nombreAvis": 2041,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h3",
-      "nom": "Riad Kniza",
-      "type": "Riad",
-      "adresse": "34 Derb l'Hôtel, Bab Doukkala",
-      "etoiles": 4,
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "piscine_privee": false,
-      "note": 4.7,
-      "avis_count": 412,
-      "prix_nuit_min": 110,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 412,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "categorie": "Riad & Boutique",
-      "score": 4.7,
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Riad+Kniza+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
-      "nombreAvis": 883,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "La Mamounia",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Avenue Bab Jdid",
-      "description": "Palace légendaire, jardins et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=La+Mamounia+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
-      "priceRange": "€€€€",
-      "id": "h4",
-      "nombreAvis": 710,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Les Jardins de la Koutoubia",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Médina",
-      "description": "Hôtel central avec piscine, proche Jemaa el-Fna.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Les+Jardins+de+la+Koutoubia+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Marrakech",
-      "priceRange": "€€€",
-      "id": "h5",
-      "nombreAvis": 931,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Marrakech",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Marrakech",
-      "description": "Hébergement halal-friendly à Marrakech.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Marrakech+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
-      "priceRange": "€€€€",
-      "nombreAvis": 539,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Marrakech 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Marrakech",
-      "description": "Hébergement halal-friendly à Marrakech.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Marrakech+0+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
-      "priceRange": "€€€€",
-      "nombreAvis": 850,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Marrakech",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Marrakech",
-      "description": "Hébergement halal-friendly à Marrakech.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Marrakech+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
-      "priceRange": "€€€",
-      "nombreAvis": 450,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Marrakech",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Marrakech",
-      "description": "Hébergement halal-friendly à Marrakech.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Marrakech+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
-      "priceRange": "€€€",
-      "nombreAvis": 1505,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Marrakech",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Marrakech",
-      "description": "Hébergement halal-friendly à Marrakech.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Marrakech+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
-      "priceRange": "€€",
-      "nombreAvis": 882,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Seaside Resort Marrakech",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Marrakech",
-      "description": "Hébergement halal-friendly à Marrakech.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Marrakech+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
-      "priceRange": "€€€€",
-      "nombreAvis": 1570,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "piscine-non-mixte",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "spa-femmes",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Family Suites Marrakech",
-      "categorie": "Appartement",
-      "score": 4.1,
-      "adresse": "Marrakech",
-      "description": "Hébergement halal-friendly à Marrakech.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Family+Suites+Marrakech+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
-      "priceRange": "€€",
-      "nombreAvis": 2420,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "cuisine-equipee",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Grand Plaza Marrakech 6",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Marrakech",
-      "description": "Hébergement halal-friendly à Marrakech.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Marrakech+6+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
-      "priceRange": "€€€€",
-      "nombreAvis": 773,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "City Comfort Marrakech 7",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Marrakech",
-      "description": "Hébergement halal-friendly à Marrakech.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Marrakech+7+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
-      "priceRange": "€€€",
-      "nombreAvis": 1166,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Boutique Dar Marrakech 8",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Marrakech",
-      "description": "Hébergement halal-friendly à Marrakech.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Marrakech+8+Marrakech",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Marrakech&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=marrakech",
-      "priceRange": "€€€",
-      "nombreAvis": 539,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Visite de la Médina et des souks",
-      "type": "Culture",
-      "description": "Perdez-vous dans les ruelles de la médina classée UNESCO.",
-      "duree": "3–4h",
-      "prix": "Gratuit",
-      "tags": [
-        "culture",
-        "shopping",
-        "histoire",
-        "famille"
-      ],
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Visite+de+la+M%C3%A9dina+et+des+souks+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Visite+de+la+M%C3%A9dina+et+des+souks+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Jardins Majorelle",
-      "type": "Nature",
-      "description": "Jardin exotique créé par Jacques Majorelle en 1924, restauré par Yves Saint Laurent.",
-      "duree": "1–2h",
-      "prix": "70 MAD",
-      "tags": [
-        "jardin",
-        "art",
-        "couple"
-      ],
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Jardins+Majorelle+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jardins+Majorelle+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Hammam traditionnel",
-      "type": "Bien-être",
-      "description": "Expérience authentique du hammam marocain avec séparation hommes/femmes.",
-      "duree": "2h",
-      "prix": "À partir de 150 MAD",
-      "tags": [
-        "bien-être",
-        "authentique",
-        "séparé H/F"
-      ],
-      "categorie": "Hammam & Bien-être",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+Marrakech",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Excursion dans l'Atlas",
-      "type": "Nature & Aventure",
-      "description": "Randonnée dans les montagnes de l'Atlas avec guide local.",
-      "duree": "Journée entière",
-      "prix": "À partir de 300 MAD",
-      "tags": [
-        "montagne",
-        "randonnée",
-        "famille"
-      ],
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Excursion+dans+l%27Atlas+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Excursion+dans+l%27Atlas+Marrakech",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a5",
-      "nom": "Place Jemaa el-Fna au coucher du soleil",
-      "type": "Culture",
-      "description": "Conteurs, musiciens gnawa, herboristes. S'anime à partir de 18h. Patrimoine UNESCO.",
-      "duree": "Soirée",
-      "prix": "Gratuit",
-      "tags": [
-        "culture",
-        "soirée",
-        "famille"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Place+Jemaa+el-Fna+au+coucher+du+soleil+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+Jemaa+el-Fna+au+coucher+du+soleil+Marrakech",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Koutoubia",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée emblématique au minaret de 77 m.",
-      "duree": "30 min",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Koutoubia+Marrakech",
-      "id": "a6",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Koutoubia+Marrakech",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Médersa Ben Youssef",
-      "categorie": "Histoire & Culture",
-      "description": "Ancienne école coranique au décor zellige.",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dersa+Ben+Youssef+Marrakech",
-      "id": "a7",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dersa+Ben+Youssef+Marrakech",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Place Jemaa el-Fna",
-      "categorie": "Shopping & Souks",
-      "description": "Place mythique, conteurs et stands halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Place+Jemaa+el-Fna+Marrakech",
-      "id": "a8",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+Jemaa+el-Fna+Marrakech",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Jardin Majorelle",
-      "categorie": "Nature & Plein air",
-      "description": "Jardin botanique bleu cobalt.",
-      "duree": "1-2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Jardin+Majorelle+Marrakech",
-      "id": "a9",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jardin+Majorelle+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Souks de la médina",
-      "categorie": "Shopping & Souks",
-      "description": "Labyrinthe d'artisanat : cuir, tapis, épices.",
-      "duree": "2-3h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Souks+de+la+m%C3%A9dina+Marrakech",
-      "id": "a10",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souks+de+la+m%C3%A9dina+Marrakech",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Palais Bahia",
-      "categorie": "Histoire & Culture",
-      "description": "Palais du XIXe aux patios et plafonds peints.",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Palais+Bahia+Marrakech",
-      "id": "a11",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+Bahia+Marrakech",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Marrakech",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Marrakech+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Marrakech+Marrakech",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Grand marché central de Marrakech",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Marrakech+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Marrakech+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Marrakech",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Marrakech+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Marrakech+Marrakech",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Musée de la ville de Marrakech",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Marrakech+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Marrakech+Marrakech",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Food tour halal de Marrakech",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Marrakech+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Marrakech+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Hammam traditionnel de Marrakech",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Marrakech+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Marrakech+Marrakech",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Mosquée historique de Marrakech",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Marrakech+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Marrakech+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Parc et jardins de Marrakech",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Marrakech+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Marrakech+Marrakech",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Marrakech",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Marrakech+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Marrakech+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Marrakech",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Marrakech+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Marrakech+Marrakech",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Quartier historique de Marrakech 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Marrakech+10+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Marrakech+10+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Grand marché central de Marrakech 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Marrakech+11+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Marrakech+11+Marrakech",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Marrakech 12",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Marrakech+12+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Marrakech+12+Marrakech",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Musée de la ville de Marrakech 13",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Marrakech+13+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Marrakech+13+Marrakech",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Food tour halal de Marrakech 14",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Marrakech+14+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Marrakech+14+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Hammam traditionnel de Marrakech 15",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Marrakech+15+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Marrakech+15+Marrakech",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Mosquée historique de Marrakech 16",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Marrakech+16+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Marrakech+16+Marrakech",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Parc et jardins de Marrakech 17",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Marrakech+17+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Marrakech+17+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Marrakech 18",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Marrakech+18+Marrakech",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Marrakech+18+Marrakech",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "road_trips": [
-    {
-      "id": "rt1",
-      "titre": "Marrakech → Merzouga (Désert) — 3 jours",
-      "duree": "3 jours",
-      "distance_km": 560,
-      "etapes": [
-        "Marrakech",
-        "Aït Benhaddou",
-        "Ouarzazate",
-        "Merzouga"
-      ],
-      "description": "De la ville ocre aux dunes du Sahara en passant par la kasbah d'Aït Benhaddou.",
-      "conseils_halal": "Restaurants halal dans chaque étape.",
-      "budget_estime": "300–500€/personne"
-    },
-    {
-      "id": "rt2",
-      "titre": "Marrakech → Essaouira — Week-end",
-      "duree": "2 jours",
-      "distance_km": 190,
-      "etapes": [
-        "Marrakech",
-        "Essaouira"
-      ],
-      "description": "Escapade sur la côte atlantique. Essaouira, la ville des vents, et ses plages magnifiques.",
-      "conseils_halal": "Poissons et fruits de mer frais grillés sur le port — halal par nature.",
-      "budget_estime": "150–250€/personne"
-    }
-  ],
-  "voyages_par_type": {
-    "en_couple": {
-      "intro": "Marrakech est une destination idéale pour les couples musulmans. Riads romantiques, dîners aux chandelles halal et couchers de soleil sur la Koutoubia.",
-      "top_experiences": [
-        "Dîner sur rooftop avec vue Koutoubia",
-        "Nuit dans un riad avec piscine privée",
-        "Cours de cuisine marocaine en duo",
-        "Excursion en dromadaire"
-      ],
-      "conseils": "Réservez un riad avec piscine privée pour profiter en toute intimité.",
-      "hotels_recommandes": [
-        "Riad Dar Anika",
-        "La Maison Arabe"
-      ]
-    },
-    "en_famille": {
-      "intro": "Marrakech accueille les familles à bras ouverts. Les enfants adorent les souks colorés et les animations de la place Jemaa el-Fna.",
-      "top_experiences": [
-        "Place Jemaa el-Fna",
-        "Balàde en calèche",
-        "Excursion Ouàrika",
-        "Cours de poterie"
-      ],
-      "conseils": "Choisissez un riad avec piscine pour que les enfants puissent se baigner.",
-      "hotels_recommandes": [
-        "Riad Dar Anika",
-        "Riad Kniza"
-      ]
-    },
-    "entre_amis": {
-      "intro": "Shopping dans les souks, hammam collectif, soirées gastronomiques et excursions mémorables.",
-      "top_experiences": [
-        "Shopping et négociation dans les souks",
-        "Cours de cuisine collective",
-        "Quad dans le désert d'Agafay",
-        "Soirée fantasia"
-      ],
-      "conseils": "Réservez un riad entier pour un groupe.",
-      "hotels_recommandes": [
-        "Riad Kniza"
-      ]
-    },
-    "voyage_solo": {
-      "intro": "Marrakech est sûre et accueillante pour les voyageurs solos.",
-      "top_experiences": [
-        "Cours d'arabe dialectal marocain",
-        "Visite des coopératives d'artisans",
-        "Randonnée guidée dans l'Atlas"
-      ],
-      "conseils": "Rejoignez des groupes de voyage organisés par des agences halal.",
-      "hotels_recommandes": [
-        "Riad Kniza"
-      ]
-    },
-    "voyage_spirituel": {
-      "intro": "Marrakech est une ville de spiritualité islamique profonde. Les 5 appels à la prière rythment la vie de la médina.",
-      "top_experiences": [
-        "Prière du Fajr à la Koutoubia",
-        "Visite des zaouïas",
-        "Soirée de Malhoun"
-      ],
-      "conseils": "Séjournez en médina pour être à portée de marche de plusieurs mosquées.",
-      "hotels_recommandes": [
-        "Riad Dar Anika"
-      ]
-    }
+  {
+   "nom": "Mosquée Al-Salam de Marrakech",
+   "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Marrakech",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Marrakech+Marrakech",
+   "capacite": 6052,
+   "anneeConstruction": 1972,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 31.6295,
+    "lng": -7.9811
+   }
   },
-  "articles_lies": [],
-  "villes_proches": [
-    "casablanca",
-    "essaouira",
-    "agadir"
-  ],
-  "codeISO": "MA",
-  "image": "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1600&q=80",
-  "continent": "Afrique",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Marrakech — Halal Trust Score 5/5.",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Marrakech",
-      "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Marrakech",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Marrakech+Marrakech",
-      "capacite": 6122,
-      "anneeConstruction": 2002,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.6295,
-        "lng": -7.9811
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Marrakech",
-      "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Marrakech",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Marrakech+Marrakech",
-      "capacite": 6096,
-      "anneeConstruction": 1956,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.6295,
-        "lng": -7.9811
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Marrakech",
-      "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Marrakech",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Marrakech+Marrakech",
-      "capacite": 4370,
-      "anneeConstruction": 1910,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.6295,
-        "lng": -7.9811
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Marrakech",
-      "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Marrakech",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Marrakech+Marrakech",
-      "capacite": 6052,
-      "anneeConstruction": 1972,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.6295,
-        "lng": -7.9811
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Marrakech",
-      "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Marrakech",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Marrakech+Marrakech",
-      "capacite": 4215,
-      "anneeConstruction": 1915,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.6295,
-        "lng": -7.9811
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Marrakech",
-      "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Marrakech",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Marrakech+Marrakech",
-      "capacite": 4113,
-      "anneeConstruction": 1893,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.6295,
-        "lng": -7.9811
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Marrakech",
-      "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Marrakech",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Marrakech+Marrakech",
-      "capacite": 6146,
-      "anneeConstruction": 1966,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.6295,
-        "lng": -7.9811
-      }
-    },
-    {
-      "nom": "Mosquée historique de Marrakech",
-      "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Marrakech",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Marrakech+Marrakech",
-      "capacite": 1329,
-      "anneeConstruction": 1909,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.6295,
-        "lng": -7.9811
-      }
-    },
-    {
-      "nom": "Mosquée du vendredi de Marrakech",
-      "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Marrakech",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Marrakech+Marrakech",
-      "capacite": 5716,
-      "anneeConstruction": 1956,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.6295,
-        "lng": -7.9811
-      }
-    },
-    {
-      "nom": "Mosquée Al-Hidaya de Marrakech",
-      "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Marrakech",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Marrakech+Marrakech",
-      "capacite": 3812,
-      "anneeConstruction": 1992,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.6295,
-        "lng": -7.9811
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Al Fassia",
-      "Dar Zellige",
-      "Snack Atlas",
-      "Dar Moha",
-      "Ksar Essaoussan"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Chez Lamine Hadj Mustapha",
-      "Haj Brik",
-      "Rôtisserie de la Paix",
-      "Dar Cherifa",
-      "Terrasse des Épices"
-    ],
-    "incontournables": [
-      "Dar Moha",
-      "Bacha Coffee",
-      "Al Fassia",
-      "Dar Zellige Marrakech 10",
-      "Al Fassia Aguedal"
-    ],
-    "pepitesCachees": [
-      "Haj Brik",
-      "Bakchich Café",
-      "Big Kahuna Burger"
-    ],
-    "idealFamille": [
-      "Al Fassia Aguedal",
-      "Chez Lamine Hadj Mustapha",
-      "Haj Brik",
-      "Café Argana",
-      "Le Marrakchi"
-    ],
-    "gastronomique": [
-      "Dar Moha",
-      "Ksar Essaoussan",
-      "La Maison Arabe",
-      "Dar Yacout",
-      "Le Tobsil"
-    ],
-    "ouvertNuit": [
-      "Haj Brik",
-      "Rôtisserie de la Paix",
-      "Atay Café"
-    ],
-    "vueExceptionnelle": [
-      "Bahr El Maghreb"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Marrakech",
+   "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Marrakech",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Marrakech+Marrakech",
+   "capacite": 4215,
+   "anneeConstruction": 1915,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 31.6295,
+    "lng": -7.9811
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Marrakech",
+   "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Marrakech",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Marrakech+Marrakech",
+   "capacite": 4113,
+   "anneeConstruction": 1893,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 31.6295,
+    "lng": -7.9811
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Marrakech",
+   "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Marrakech",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Marrakech+Marrakech",
+   "capacite": 6146,
+   "anneeConstruction": 1966,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 31.6295,
+    "lng": -7.9811
+   }
+  },
+  {
+   "nom": "Mosquée historique de Marrakech",
+   "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Marrakech",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Marrakech+Marrakech",
+   "capacite": 1329,
+   "anneeConstruction": 1909,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 31.6295,
+    "lng": -7.9811
+   }
+  },
+  {
+   "nom": "Mosquée du vendredi de Marrakech",
+   "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Marrakech",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Marrakech+Marrakech",
+   "capacite": 5716,
+   "anneeConstruction": 1956,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 31.6295,
+    "lng": -7.9811
+   }
+  },
+  {
+   "nom": "Mosquée Al-Hidaya de Marrakech",
+   "description": "Mosquée fréquentée de Marrakech, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Marrakech",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Marrakech+Marrakech",
+   "capacite": 3812,
+   "anneeConstruction": 1992,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 31.6295,
+    "lng": -7.9811
+   }
   }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Al Fassia",
+   "Dar Zellige",
+   "Snack Atlas",
+   "Dar Moha",
+   "Ksar Essaoussan"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Chez Lamine Hadj Mustapha",
+   "Haj Brik",
+   "Rôtisserie de la Paix",
+   "Dar Cherifa",
+   "Terrasse des Épices"
+  ],
+  "incontournables": [
+   "Dar Moha",
+   "Bacha Coffee",
+   "Al Fassia",
+   "Dar Zellige Marrakech 10",
+   "Al Fassia Aguedal"
+  ],
+  "pepitesCachees": [
+   "Haj Brik",
+   "Bakchich Café",
+   "Big Kahuna Burger"
+  ],
+  "idealFamille": [
+   "Al Fassia Aguedal",
+   "Chez Lamine Hadj Mustapha",
+   "Haj Brik",
+   "Café Argana",
+   "Le Marrakchi"
+  ],
+  "gastronomique": [
+   "Dar Moha",
+   "Ksar Essaoussan",
+   "La Maison Arabe",
+   "Dar Yacout",
+   "Le Tobsil"
+  ],
+  "ouvertNuit": [
+   "Haj Brik",
+   "Rôtisserie de la Paix",
+   "Atay Café"
+  ],
+  "vueExceptionnelle": [
+   "Bahr El Maghreb"
+  ]
+ }
 }

@@ -1,1274 +1,1287 @@
 {
-  "nom": "Chefchaouen",
-  "pays": "Maroc",
-  "slug": "chefchaouen",
-  "image": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=1600&q=80",
-  "description": "Chefchaouen, la ville bleue du Rif, enchante par sa médina photogénique aux murs azur. Calme, artisanat et montagnes en font un havre halal-friendly.",
-  "descriptionLongue": "Nichée dans les montagnes du Rif, Chefchaouen doit sa renommée à sa médina entièrement peinte en bleu. Fondée au XVe siècle par des réfugiés andalous, elle conserve une atmosphère paisible et spirituelle. Ses ruelles, ses ateliers d'artisanat (laine, cuir) et ses sources de montagne attirent les voyageurs en quête de sérénité. Cuisine rifaine généreuse et hospitalité chaleureuse : une perle marocaine entièrement halal.",
-  "halalScore": 8.8,
-  "score_halal": 4.4,
+ "nom": "Chefchaouen",
+ "pays": "Maroc",
+ "slug": "chefchaouen",
+ "image": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1569383746724-6f1b882b8f46?w=1600&q=80",
+ "description": "Chefchaouen, la ville bleue du Rif, enchante par sa médina photogénique aux murs azur. Calme, artisanat et montagnes en font un havre halal-friendly.",
+ "descriptionLongue": "Nichée dans les montagnes du Rif, Chefchaouen doit sa renommée à sa médina entièrement peinte en bleu. Fondée au XVe siècle par des réfugiés andalous, elle conserve une atmosphère paisible et spirituelle. Ses ruelles, ses ateliers d'artisanat (laine, cuir) et ses sources de montagne attirent les voyageurs en quête de sérénité. Cuisine rifaine généreuse et hospitalité chaleureuse : une perle marocaine entièrement halal.",
+ "halalScore": 8.8,
+ "score_halal": 4.4,
+ "mosquees": 30,
+ "population": "45 000",
+ "langue": "Arabe (berbère, espagnol)",
+ "monnaie": "Dirham marocain (MAD)",
+ "fuseau": "UTC+1",
+ "meilleureEpoque": "Mars à Juin, Sept à Nov",
+ "prixMoyenNuit": "55€",
+ "continent": "Afrique",
+ "codeISO": "MA",
+ "pays_slug": "maroc",
+ "region": "Rif",
+ "meta_title": "Voyage Halal à Chefchaouen — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Chefchaouen — Halal Trust Score 8.8/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Chefchaouen — Halal Trust Score 8.8/10.",
+ "coordonnees": {
+  "lat": 35.1688,
+  "lng": -5.2636
+ },
+ "image_alt": "Vue de Chefchaouen, Maroc",
+ "statistiques": {
   "mosquees": 30,
-  "population": "45 000",
+  "restaurants_halal": 800,
+  "habitants_musulmans_pct": 99,
+  "hotels": 8
+ },
+ "infos_pratiques": {
   "langue": "Arabe (berbère, espagnol)",
   "monnaie": "Dirham marocain (MAD)",
-  "fuseau": "UTC+1",
-  "meilleureEpoque": "Mars à Juin, Sept à Nov",
-  "prixMoyenNuit": "55€",
-  "continent": "Afrique",
-  "codeISO": "MA",
-  "pays_slug": "maroc",
-  "region": "Rif",
-  "meta_title": "Voyage Halal à Chefchaouen — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Chefchaouen — Halal Trust Score 8.8/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Chefchaouen — Halal Trust Score 8.8/10.",
-  "coordonnees": {
+  "meilleure_periode": "Mars à Juin, Sept à Nov",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Réglementé",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Pas de visa requis pour les Français/Belges/Suisses (90 jours)",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Bus, grands taxis depuis Tanger/Fès, à pied dans la médina",
+  "priseElectrique": "Type C/E — 220V",
+  "decalageHoraire": "Même heure que Paris (variable selon DST)"
+ },
+ "restaurants": [
+  {
+   "nom": "Restaurant Tissemlal",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Chefchaouen",
+   "description": "Marocain, vue bleue à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Tissemlal+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Marocain",
+   "nombreAvis": 645,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Bab Ssour Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Chefchaouen",
+   "description": "Terrasse bleue emblématique à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Bab+Ssour+Restaurant+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Terrasse bleue emblématique",
+   "nombreAvis": 1549,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Sofia Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Chefchaouen",
+   "description": "Tajines et poulet à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Sofia+Restaurant+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Tajines et poulet",
+   "nombreAvis": 834,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Restaurant Assaada",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Chefchaouen",
+   "description": "Populaire médina à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Assaada+Chefchaouen",
+   "priceRange": "€",
+   "specialite": "Populaire médina",
+   "nombreAvis": 1068,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Restaurant Al-Kasbah",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Chefchaouen",
+   "description": "Rooftop kasbah à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Al-Kasbah+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Rooftop kasbah",
+   "nombreAvis": 280,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Chez Abdelmalek",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Chefchaouen",
+   "description": "Populaire locaux à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Abdelmalek+Chefchaouen",
+   "priceRange": "€",
+   "specialite": "Populaire locaux",
+   "nombreAvis": 713,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Restaurant Beldi",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Chefchaouen",
+   "description": "Produits locaux à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Beldi+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Produits locaux",
+   "nombreAvis": 1036,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "La Lampe Magique",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Chefchaouen",
+   "description": "Fusion à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=La+Lampe+Magique+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Fusion",
+   "nombreAvis": 513,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Restaurant Chaouen",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Chefchaouen",
+   "description": "Traditionnel central à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Chaouen+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Traditionnel central",
+   "nombreAvis": 1877,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Café Lala",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Chefchaouen",
+   "description": "Vue mosquée, thé à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Lala+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Vue mosquée",
+   "nombreAvis": 1799,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Chez Hicham",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Chefchaouen",
+   "description": "Familial traditionnel à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Hicham+Chefchaouen",
+   "priceRange": "€",
+   "specialite": "Familial traditionnel",
+   "nombreAvis": 274,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Ryad Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Chefchaouen",
+   "description": "Riad dining à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Ryad+Restaurant+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Riad dining",
+   "nombreAvis": 1182,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Casa Hassan Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Chefchaouen",
+   "description": "Riad 3 étoiles à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Casa+Hassan+Restaurant+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Riad 3 étoiles",
+   "nombreAvis": 2609,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Dar Echchaouen Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Chefchaouen",
+   "description": "Maison à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Echchaouen+Restaurant+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Maison",
+   "nombreAvis": 832,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Bab Ainchater Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Chefchaouen",
+   "description": "Porte historique à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Bab+Ainchater+Caf%C3%A9+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Porte historique",
+   "nombreAvis": 1198,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Café Clock Chaouen",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Chefchaouen",
+   "description": "Nouvelle succursale à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Clock+Chaouen+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Nouvelle succursale",
+   "nombreAvis": 1836,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Restaurant Moulay Ali Ben Rachid",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Chefchaouen",
+   "description": "Palais à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Moulay+Ali+Ben+Rachid+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Palais",
+   "nombreAvis": 403,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "La Terraza",
+   "type": "Espagnol",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Chefchaouen",
+   "description": "Espagnole halal vue à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=La+Terraza+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Espagnole halal vue",
+   "nombreAvis": 2348,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Restaurant Oued Laou",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Chefchaouen",
+   "description": "Poissons de rivière à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Oued+Laou+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Poissons de rivière",
+   "nombreAvis": 169,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Akel Chaouen",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Chefchaouen",
+   "description": "Fast-food marocain à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Akel+Chaouen+Chefchaouen",
+   "priceRange": "€",
+   "specialite": "Fast-food marocain",
+   "nombreAvis": 1080,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Restaurant Amazigh",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Chefchaouen",
+   "description": "Berbère authentique à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Amazigh+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Berbère authentique",
+   "nombreAvis": 1296,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Café Bleu",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Chefchaouen",
+   "description": "Tout bleu, instagram à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Bleu+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Tout bleu",
+   "nombreAvis": 1115,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Restaurant Tissemlal Annex",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Chefchaouen",
+   "description": "Annexe à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Tissemlal+Annex+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Annexe",
+   "nombreAvis": 397,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Chez Fouad",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Chefchaouen",
+   "description": "Simple et copieux à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Fouad+Chefchaouen",
+   "priceRange": "€",
+   "specialite": "Simple et copieux",
+   "nombreAvis": 3340,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Al Manzah",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Chefchaouen",
+   "description": "Terrasse jardin à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Manzah+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Terrasse jardin",
+   "nombreAvis": 373,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Restaurant Zouar",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Chefchaouen",
+   "description": "Local à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Zouar+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Local",
+   "nombreAvis": 553,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Café Rif",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Chefchaouen",
+   "description": "Panoramique à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Rif+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Panoramique",
+   "nombreAvis": 3165,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Souk Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Chefchaouen",
+   "description": "Marché couvert à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Souk+Restaurant+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Marché couvert",
+   "nombreAvis": 2154,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "El Oued Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Chefchaouen",
+   "description": "Bord de rivière à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=El+Oued+Caf%C3%A9+Chefchaouen",
+   "priceRange": "€€",
+   "specialite": "Bord de rivière",
+   "nombreAvis": 594,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Pension Caraibes Dining",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Chefchaouen",
+   "description": "Budget à Chefchaouen.",
+   "mapsUrl": "https://maps.google.com/?q=Pension+Caraibes+Dining+Chefchaouen",
+   "priceRange": "€",
+   "specialite": "Budget",
+   "nombreAvis": 1110,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r30"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Dar Echchaouen",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Chefchaouen",
+   "description": "Boutique luxe à Chefchaouen.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Dar+Echchaouen+Chefchaouen",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
+   "priceRange": "€€€",
+   "nombreAvis": 1527,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h1",
+   "lat": 35.1687532,
+   "lng": -5.2564912
+  },
+  {
+   "nom": "Riad Dar Echchaouen",
+   "categorie": "Riad & Boutique",
+   "score": 4.8,
+   "adresse": "Chefchaouen",
+   "description": "Riad charme à Chefchaouen.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Riad+Dar+Echchaouen+Chefchaouen",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
+   "priceRange": "€€€",
+   "nombreAvis": 560,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h2"
+  },
+  {
+   "nom": "Casa Hassan",
+   "categorie": "Riad & Boutique",
+   "score": 4.7,
+   "adresse": "Chefchaouen",
+   "description": "Riad 3 étoiles à Chefchaouen.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Casa+Hassan+Chefchaouen",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
+   "priceRange": "€€€",
+   "nombreAvis": 1670,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": 35.1694632,
+   "lng": -5.2620914
+  },
+  {
+   "nom": "Riad Hicham",
+   "categorie": "Riad & Boutique",
+   "score": 4.7,
+   "adresse": "Chefchaouen",
+   "description": "Boutique à Chefchaouen.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Riad+Hicham+Chefchaouen",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
+   "priceRange": "€€€",
+   "nombreAvis": 1908,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h4",
+   "lat": 35.1688181,
+   "lng": -5.2611142
+  },
+  {
+   "nom": "Hotel Parador",
+   "categorie": "Standard",
+   "score": 4.6,
+   "adresse": "Chefchaouen",
+   "description": "Vue panoramique à Chefchaouen.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Parador+Chefchaouen",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
+   "priceRange": "€€€",
+   "nombreAvis": 2432,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h5",
+   "lat": 35.1688212,
+   "lng": -5.2606977
+  },
+  {
+   "nom": "Hotel Marrakech",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Chefchaouen",
+   "description": "Centre budget à Chefchaouen.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Marrakech+Chefchaouen",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
+   "priceRange": "€€",
+   "nombreAvis": 2130,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": 35.1677585,
+   "lng": -5.2614206
+  },
+  {
+   "nom": "Hostal Guernika",
+   "categorie": "Budget",
+   "score": 4.6,
+   "adresse": "Chefchaouen",
+   "description": "Budget backpacker à Chefchaouen.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Hostal+Guernika+Chefchaouen",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
+   "priceRange": "€€",
+   "nombreAvis": 1641,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "Camping Azilan",
+   "categorie": "Budget",
+   "score": 4.8,
+   "adresse": "Chefchaouen",
+   "description": "Nature budget à Chefchaouen.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Camping+Azilan+Chefchaouen",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
+   "priceRange": "€€",
+   "nombreAvis": 276,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": 35.1757064,
+   "lng": -5.2666178
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Médina bleue",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans le dédale de ruelles azur, l'une des plus photogéniques au monde.",
+   "duree": "2-3h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina+bleue+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dina+bleue+Chefchaouen",
+   "id": "a1",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Place Outa el Hammam & Kasbah",
+   "categorie": "Histoire & Culture",
+   "description": "Place centrale animée et kasbah avec jardins andalous et petit musée.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Place+Outa+el+Hammam+%26+Kasbah+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+Outa+el+Hammam+%26+Kasbah+Chefchaouen",
+   "id": "a2",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grande Mosquée de Chefchaouen",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée du XVe siècle au minaret octogonal unique.",
+   "duree": "30 min",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Chefchaouen+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+de+Chefchaouen+Chefchaouen",
+   "id": "a3",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Cascades d'Akchour",
+   "categorie": "Nature & Aventure",
+   "description": "Randonnée vers cascades et Pont de Dieu dans le parc de Talassemtane.",
+   "duree": "Journée",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Cascades+d%27Akchour+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cascades+d%27Akchour+Chefchaouen",
+   "id": "a4",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée espagnole (point de vue)",
+   "categorie": "Nature & Aventure",
+   "description": "Montée au coucher du soleil pour la plus belle vue sur la ville bleue.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+espagnole+%28point+de+vue%29+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+espagnole+%28point+de+vue%29+Chefchaouen",
+   "id": "a5",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Ateliers d'artisanat du Rif",
+   "categorie": "Shopping & Souks",
+   "description": "Laine, couvertures et cuir teints à la main, spécialités locales.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Ateliers+d%27artisanat+du+Rif+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ateliers+d%27artisanat+du+Rif+Chefchaouen",
+   "id": "a6",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Source Ras el Maa",
+   "categorie": "Nature & Aventure",
+   "description": "Source de montagne où les habitants lavent le linge, ambiance authentique.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Source+Ras+el+Maa+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Source+Ras+el+Maa+Chefchaouen",
+   "id": "a7",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Randonnée parc Talassemtane",
+   "categorie": "Nature & Aventure",
+   "description": "Forêts de sapins et sommets du Rif, nature préservée.",
+   "duree": "Journée",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Randonn%C3%A9e+parc+Talassemtane+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Randonn%C3%A9e+parc+Talassemtane+Chefchaouen",
+   "id": "a8",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Chefchaouen",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Chefchaouen+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Chefchaouen+Chefchaouen",
+   "id": "a9",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Chefchaouen",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Chefchaouen+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Chefchaouen+Chefchaouen",
+   "id": "a10",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Chefchaouen",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Chefchaouen+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Chefchaouen+Chefchaouen",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Chefchaouen",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Chefchaouen+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Chefchaouen+Chefchaouen",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Chefchaouen",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Chefchaouen+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Chefchaouen+Chefchaouen",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Chefchaouen",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Chefchaouen+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Chefchaouen+Chefchaouen",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Chefchaouen",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Chefchaouen+Chefchaouen",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Chefchaouen+Chefchaouen",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Grande Mosquée de Chefchaouen",
+   "description": "Mosquée historique du XVe siècle au minaret octogonal, sur la place centrale.",
+   "adresse": "Outa el Hammam, Chefchaouen",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Chefchaouen+Chefchaouen",
+   "capacite": 3507,
+   "anneeConstruction": 1897,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 35.1688,
     "lng": -5.2636
+   }
   },
-  "image_alt": "Vue de Chefchaouen, Maroc",
-  "statistiques": {
-    "mosquees": 30,
-    "restaurants_halal": 800,
-    "habitants_musulmans_pct": 99
+  {
+   "nom": "Mosquée centrale de Chefchaouen",
+   "description": "Mosquée fréquentée de Chefchaouen, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Chefchaouen",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Chefchaouen+Chefchaouen",
+   "capacite": 5188,
+   "anneeConstruction": 1968,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 35.1688,
+    "lng": -5.2636
+   }
   },
-  "infos_pratiques": {
-    "langue": "Arabe (berbère, espagnol)",
-    "monnaie": "Dirham marocain (MAD)",
-    "meilleure_periode": "Mars à Juin, Sept à Nov",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Réglementé",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée Al-Noor de Chefchaouen",
+   "description": "Mosquée fréquentée de Chefchaouen, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Chefchaouen",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Chefchaouen+Chefchaouen",
+   "capacite": 6325,
+   "anneeConstruction": 1945,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 35.1688,
+    "lng": -5.2636
+   }
   },
-  "infoPratique": {
-    "visa": "Pas de visa requis pour les Français/Belges/Suisses (90 jours)",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Bus, grands taxis depuis Tanger/Fès, à pied dans la médina",
-    "priseElectrique": "Type C/E — 220V",
-    "decalageHoraire": "Même heure que Paris (variable selon DST)"
+  {
+   "nom": "Mosquée Al-Salam de Chefchaouen",
+   "description": "Mosquée fréquentée de Chefchaouen, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Chefchaouen",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Chefchaouen+Chefchaouen",
+   "capacite": 872,
+   "anneeConstruction": 1912,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 35.1688,
+    "lng": -5.2636
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Restaurant Tissemlal",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Chefchaouen",
-      "description": "Marocain, vue bleue à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Tissemlal+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Marocain",
-      "nombreAvis": 645,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Bab Ssour Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Chefchaouen",
-      "description": "Terrasse bleue emblématique à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Bab+Ssour+Restaurant+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Terrasse bleue emblématique",
-      "nombreAvis": 1549,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Sofia Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Chefchaouen",
-      "description": "Tajines et poulet à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Sofia+Restaurant+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Tajines et poulet",
-      "nombreAvis": 834,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Restaurant Assaada",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Chefchaouen",
-      "description": "Populaire médina à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Assaada+Chefchaouen",
-      "priceRange": "€",
-      "specialite": "Populaire médina",
-      "nombreAvis": 1068,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Restaurant Al-Kasbah",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Chefchaouen",
-      "description": "Rooftop kasbah à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Al-Kasbah+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Rooftop kasbah",
-      "nombreAvis": 280,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Chez Abdelmalek",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Chefchaouen",
-      "description": "Populaire locaux à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Abdelmalek+Chefchaouen",
-      "priceRange": "€",
-      "specialite": "Populaire locaux",
-      "nombreAvis": 713,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Restaurant Beldi",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Chefchaouen",
-      "description": "Produits locaux à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Beldi+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Produits locaux",
-      "nombreAvis": 1036,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "La Lampe Magique",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Chefchaouen",
-      "description": "Fusion à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=La+Lampe+Magique+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Fusion",
-      "nombreAvis": 513,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Restaurant Chaouen",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Chefchaouen",
-      "description": "Traditionnel central à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Chaouen+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Traditionnel central",
-      "nombreAvis": 1877,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Café Lala",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Chefchaouen",
-      "description": "Vue mosquée, thé à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Lala+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Vue mosquée",
-      "nombreAvis": 1799,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Chez Hicham",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Chefchaouen",
-      "description": "Familial traditionnel à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Hicham+Chefchaouen",
-      "priceRange": "€",
-      "specialite": "Familial traditionnel",
-      "nombreAvis": 274,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Ryad Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Chefchaouen",
-      "description": "Riad dining à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Ryad+Restaurant+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Riad dining",
-      "nombreAvis": 1182,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Casa Hassan Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Chefchaouen",
-      "description": "Riad 3 étoiles à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Casa+Hassan+Restaurant+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Riad 3 étoiles",
-      "nombreAvis": 2609,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Dar Echchaouen Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Chefchaouen",
-      "description": "Maison à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Echchaouen+Restaurant+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Maison",
-      "nombreAvis": 832,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Bab Ainchater Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Chefchaouen",
-      "description": "Porte historique à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Bab+Ainchater+Caf%C3%A9+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Porte historique",
-      "nombreAvis": 1198,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Café Clock Chaouen",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Chefchaouen",
-      "description": "Nouvelle succursale à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Clock+Chaouen+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Nouvelle succursale",
-      "nombreAvis": 1836,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Restaurant Moulay Ali Ben Rachid",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Chefchaouen",
-      "description": "Palais à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Moulay+Ali+Ben+Rachid+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Palais",
-      "nombreAvis": 403,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "La Terraza",
-      "type": "Espagnol",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Chefchaouen",
-      "description": "Espagnole halal vue à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=La+Terraza+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Espagnole halal vue",
-      "nombreAvis": 2348,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Restaurant Oued Laou",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Chefchaouen",
-      "description": "Poissons de rivière à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Oued+Laou+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Poissons de rivière",
-      "nombreAvis": 169,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Akel Chaouen",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Chefchaouen",
-      "description": "Fast-food marocain à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Akel+Chaouen+Chefchaouen",
-      "priceRange": "€",
-      "specialite": "Fast-food marocain",
-      "nombreAvis": 1080,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Restaurant Amazigh",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Chefchaouen",
-      "description": "Berbère authentique à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Amazigh+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Berbère authentique",
-      "nombreAvis": 1296,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Café Bleu",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Chefchaouen",
-      "description": "Tout bleu, instagram à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Bleu+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Tout bleu",
-      "nombreAvis": 1115,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Restaurant Tissemlal Annex",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Chefchaouen",
-      "description": "Annexe à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Tissemlal+Annex+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Annexe",
-      "nombreAvis": 397,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Chez Fouad",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Chefchaouen",
-      "description": "Simple et copieux à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Fouad+Chefchaouen",
-      "priceRange": "€",
-      "specialite": "Simple et copieux",
-      "nombreAvis": 3340,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Al Manzah",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Chefchaouen",
-      "description": "Terrasse jardin à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Manzah+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Terrasse jardin",
-      "nombreAvis": 373,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Restaurant Zouar",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Chefchaouen",
-      "description": "Local à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Zouar+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Local",
-      "nombreAvis": 553,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Café Rif",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Chefchaouen",
-      "description": "Panoramique à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Rif+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Panoramique",
-      "nombreAvis": 3165,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Souk Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Chefchaouen",
-      "description": "Marché couvert à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Souk+Restaurant+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Marché couvert",
-      "nombreAvis": 2154,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "El Oued Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Chefchaouen",
-      "description": "Bord de rivière à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=El+Oued+Caf%C3%A9+Chefchaouen",
-      "priceRange": "€€",
-      "specialite": "Bord de rivière",
-      "nombreAvis": 594,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Pension Caraibes Dining",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Chefchaouen",
-      "description": "Budget à Chefchaouen.",
-      "mapsUrl": "https://maps.google.com/?q=Pension+Caraibes+Dining+Chefchaouen",
-      "priceRange": "€",
-      "specialite": "Budget",
-      "nombreAvis": 1110,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r30"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Dar Echchaouen",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Chefchaouen",
-      "description": "Boutique luxe à Chefchaouen.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Dar+Echchaouen+Chefchaouen",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
-      "priceRange": "€€€",
-      "nombreAvis": 1527,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Riad Dar Echchaouen",
-      "categorie": "Riad & Boutique",
-      "score": 4.8,
-      "adresse": "Chefchaouen",
-      "description": "Riad charme à Chefchaouen.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Riad+Dar+Echchaouen+Chefchaouen",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
-      "priceRange": "€€€",
-      "nombreAvis": 560,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Casa Hassan",
-      "categorie": "Riad & Boutique",
-      "score": 4.7,
-      "adresse": "Chefchaouen",
-      "description": "Riad 3 étoiles à Chefchaouen.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Casa+Hassan+Chefchaouen",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
-      "priceRange": "€€€",
-      "nombreAvis": 1670,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Riad Hicham",
-      "categorie": "Riad & Boutique",
-      "score": 4.7,
-      "adresse": "Chefchaouen",
-      "description": "Boutique à Chefchaouen.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Riad+Hicham+Chefchaouen",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
-      "priceRange": "€€€",
-      "nombreAvis": 1908,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Hotel Parador",
-      "categorie": "Standard",
-      "score": 4.6,
-      "adresse": "Chefchaouen",
-      "description": "Vue panoramique à Chefchaouen.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Parador+Chefchaouen",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
-      "priceRange": "€€€",
-      "nombreAvis": 2432,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Hotel Marrakech",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Chefchaouen",
-      "description": "Centre budget à Chefchaouen.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Marrakech+Chefchaouen",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
-      "priceRange": "€€",
-      "nombreAvis": 2130,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Hostal Guernika",
-      "categorie": "Budget",
-      "score": 4.6,
-      "adresse": "Chefchaouen",
-      "description": "Budget backpacker à Chefchaouen.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Hostal+Guernika+Chefchaouen",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
-      "priceRange": "€€",
-      "nombreAvis": 1641,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "Camping Azilan",
-      "categorie": "Budget",
-      "score": 4.8,
-      "adresse": "Chefchaouen",
-      "description": "Nature budget à Chefchaouen.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Camping+Azilan+Chefchaouen",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Chefchaouen&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=chefchaouen",
-      "priceRange": "€€",
-      "nombreAvis": 276,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Médina bleue",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans le dédale de ruelles azur, l'une des plus photogéniques au monde.",
-      "duree": "2-3h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina+bleue+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dina+bleue+Chefchaouen",
-      "id": "a1",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Place Outa el Hammam & Kasbah",
-      "categorie": "Histoire & Culture",
-      "description": "Place centrale animée et kasbah avec jardins andalous et petit musée.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Place+Outa+el+Hammam+%26+Kasbah+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+Outa+el+Hammam+%26+Kasbah+Chefchaouen",
-      "id": "a2",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grande Mosquée de Chefchaouen",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée du XVe siècle au minaret octogonal unique.",
-      "duree": "30 min",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Chefchaouen+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+de+Chefchaouen+Chefchaouen",
-      "id": "a3",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Cascades d'Akchour",
-      "categorie": "Nature & Aventure",
-      "description": "Randonnée vers cascades et Pont de Dieu dans le parc de Talassemtane.",
-      "duree": "Journée",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Cascades+d%27Akchour+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cascades+d%27Akchour+Chefchaouen",
-      "id": "a4",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée espagnole (point de vue)",
-      "categorie": "Nature & Aventure",
-      "description": "Montée au coucher du soleil pour la plus belle vue sur la ville bleue.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+espagnole+%28point+de+vue%29+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+espagnole+%28point+de+vue%29+Chefchaouen",
-      "id": "a5",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Ateliers d'artisanat du Rif",
-      "categorie": "Shopping & Souks",
-      "description": "Laine, couvertures et cuir teints à la main, spécialités locales.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Ateliers+d%27artisanat+du+Rif+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ateliers+d%27artisanat+du+Rif+Chefchaouen",
-      "id": "a6",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Source Ras el Maa",
-      "categorie": "Nature & Aventure",
-      "description": "Source de montagne où les habitants lavent le linge, ambiance authentique.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Source+Ras+el+Maa+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Source+Ras+el+Maa+Chefchaouen",
-      "id": "a7",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Randonnée parc Talassemtane",
-      "categorie": "Nature & Aventure",
-      "description": "Forêts de sapins et sommets du Rif, nature préservée.",
-      "duree": "Journée",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Randonn%C3%A9e+parc+Talassemtane+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Randonn%C3%A9e+parc+Talassemtane+Chefchaouen",
-      "id": "a8",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Chefchaouen",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Chefchaouen+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Chefchaouen+Chefchaouen",
-      "id": "a9",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Chefchaouen",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Chefchaouen+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Chefchaouen+Chefchaouen",
-      "id": "a10",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Chefchaouen",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Chefchaouen+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Chefchaouen+Chefchaouen",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Chefchaouen",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Chefchaouen+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Chefchaouen+Chefchaouen",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Chefchaouen",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Chefchaouen+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Chefchaouen+Chefchaouen",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Chefchaouen",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Chefchaouen+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Chefchaouen+Chefchaouen",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Chefchaouen",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Chefchaouen+Chefchaouen",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Chefchaouen+Chefchaouen",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Grande Mosquée de Chefchaouen",
-      "description": "Mosquée historique du XVe siècle au minaret octogonal, sur la place centrale.",
-      "adresse": "Outa el Hammam, Chefchaouen",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Chefchaouen+Chefchaouen",
-      "capacite": 3507,
-      "anneeConstruction": 1897,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 35.1688,
-        "lng": -5.2636
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Chefchaouen",
-      "description": "Mosquée fréquentée de Chefchaouen, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Chefchaouen",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Chefchaouen+Chefchaouen",
-      "capacite": 5188,
-      "anneeConstruction": 1968,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 35.1688,
-        "lng": -5.2636
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Chefchaouen",
-      "description": "Mosquée fréquentée de Chefchaouen, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Chefchaouen",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Chefchaouen+Chefchaouen",
-      "capacite": 6325,
-      "anneeConstruction": 1945,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 35.1688,
-        "lng": -5.2636
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Chefchaouen",
-      "description": "Mosquée fréquentée de Chefchaouen, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Chefchaouen",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Chefchaouen+Chefchaouen",
-      "capacite": 872,
-      "anneeConstruction": 1912,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 35.1688,
-        "lng": -5.2636
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Chefchaouen",
-      "description": "Mosquée fréquentée de Chefchaouen, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Chefchaouen",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Chefchaouen+Chefchaouen",
-      "capacite": 4972,
-      "anneeConstruction": 1952,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 35.1688,
-        "lng": -5.2636
-      }
-    }
-  ],
-  "tags": [
-    "ville-bleue",
-    "medina",
-    "nature",
-    "calme",
-    "artisanat",
-    "rif"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Souk Restaurant",
-      "Café Clock Chaouen",
-      "Chez Fouad",
-      "Café Rif",
-      "Restaurant Tissemlal"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Restaurant Tissemlal",
-      "Sofia Restaurant",
-      "Restaurant Assaada",
-      "La Lampe Magique",
-      "Restaurant Chaouen"
-    ],
-    "incontournables": [
-      "Chez Fouad",
-      "Café Rif",
-      "Casa Hassan Restaurant",
-      "La Terraza",
-      "Souk Restaurant"
-    ],
-    "pepitesCachees": [
-      "Restaurant Tissemlal Annex",
-      "Al Manzah"
-    ],
-    "idealFamille": [
-      "Restaurant Tissemlal",
-      "Bab Ssour Restaurant",
-      "Sofia Restaurant",
-      "Restaurant Assaada",
-      "Restaurant Al-Kasbah"
-    ],
-    "gastronomique": [
-      "Souk Restaurant",
-      "Café Clock Chaouen",
-      "Chez Fouad"
-    ],
-    "ouvertNuit": [
-      "Restaurant Assaada",
-      "Chez Abdelmalek",
-      "Chez Hicham"
-    ],
-    "vueExceptionnelle": [
-      "Restaurant Oued Laou"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Chefchaouen",
+   "description": "Mosquée fréquentée de Chefchaouen, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Chefchaouen",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Chefchaouen+Chefchaouen",
+   "capacite": 4972,
+   "anneeConstruction": 1952,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 35.1688,
+    "lng": -5.2636
+   }
   }
+ ],
+ "tags": [
+  "ville-bleue",
+  "medina",
+  "nature",
+  "calme",
+  "artisanat",
+  "rif"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Souk Restaurant",
+   "Café Clock Chaouen",
+   "Chez Fouad",
+   "Café Rif",
+   "Restaurant Tissemlal"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Restaurant Tissemlal",
+   "Sofia Restaurant",
+   "Restaurant Assaada",
+   "La Lampe Magique",
+   "Restaurant Chaouen"
+  ],
+  "incontournables": [
+   "Chez Fouad",
+   "Café Rif",
+   "Casa Hassan Restaurant",
+   "La Terraza",
+   "Souk Restaurant"
+  ],
+  "pepitesCachees": [
+   "Restaurant Tissemlal Annex",
+   "Al Manzah"
+  ],
+  "idealFamille": [
+   "Restaurant Tissemlal",
+   "Bab Ssour Restaurant",
+   "Sofia Restaurant",
+   "Restaurant Assaada",
+   "Restaurant Al-Kasbah"
+  ],
+  "gastronomique": [
+   "Souk Restaurant",
+   "Café Clock Chaouen",
+   "Chez Fouad"
+  ],
+  "ouvertNuit": [
+   "Restaurant Assaada",
+   "Chez Abdelmalek",
+   "Chez Hicham"
+  ],
+  "vueExceptionnelle": [
+   "Restaurant Oued Laou"
+  ]
+ }
 }

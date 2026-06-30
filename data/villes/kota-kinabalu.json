@@ -1,909 +1,918 @@
 {
-  "nom": "Kota Kinabalu",
-  "pays": "Malaisie",
-  "slug": "kota-kinabalu",
-  "image": "https://images.unsplash.com/photo-1559628233-1009d3a6b9b3?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1559628233-1009d3a6b9b3?w=1400&q=85",
-  "description": "Kota Kinabalu, porte du Bornéo malaisien, marie mont Kinabalu, îles tropicales et couchers de soleil. Mosquées et fruits de mer halal complètent le tableau.",
-  "descriptionLongue": "Capitale du Sabah, Kota Kinabalu ouvre les portes du Bornéo : le majestueux mont Kinabalu, les récifs du parc Tunku Abdul Rahman et des couchers de soleil parmi les plus beaux d'Asie. La ville, multiculturelle et largement musulmane, offre marchés nocturnes, fruits de mer halal et la superbe mosquée flottante. Idéale pour les amoureux de nature.",
-  "halalScore": 8.3,
-  "score_halal": 4.2,
+ "nom": "Kota Kinabalu",
+ "pays": "Malaisie",
+ "slug": "kota-kinabalu",
+ "image": "https://images.unsplash.com/photo-1559628233-1009d3a6b9b3?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1559628233-1009d3a6b9b3?w=1400&q=85",
+ "description": "Kota Kinabalu, porte du Bornéo malaisien, marie mont Kinabalu, îles tropicales et couchers de soleil. Mosquées et fruits de mer halal complètent le tableau.",
+ "descriptionLongue": "Capitale du Sabah, Kota Kinabalu ouvre les portes du Bornéo : le majestueux mont Kinabalu, les récifs du parc Tunku Abdul Rahman et des couchers de soleil parmi les plus beaux d'Asie. La ville, multiculturelle et largement musulmane, offre marchés nocturnes, fruits de mer halal et la superbe mosquée flottante. Idéale pour les amoureux de nature.",
+ "halalScore": 8.3,
+ "score_halal": 4.2,
+ "mosquees": 300,
+ "population": "500 000",
+ "langue": "Malais, Anglais",
+ "monnaie": "Ringgit (MYR)",
+ "fuseau": "UTC+8",
+ "meilleureEpoque": "Mars à Septembre",
+ "prixMoyenNuit": "55€",
+ "continent": "Asie",
+ "codeISO": "MY",
+ "pays_slug": "malaisie",
+ "region": "Asie du Sud-Est",
+ "meta_title": "Voyage Halal à Kota Kinabalu — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Kota Kinabalu — Halal Trust Score 8.3/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Kota Kinabalu — Halal Trust Score 8.3/10.",
+ "coordonnees": {
+  "lat": 5.9804,
+  "lng": 116.0735
+ },
+ "image_alt": "Vue de Kota Kinabalu, Malaisie",
+ "statistiques": {
   "mosquees": 300,
-  "population": "500 000",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 65,
+  "hotels": 8
+ },
+ "infos_pratiques": {
   "langue": "Malais, Anglais",
   "monnaie": "Ringgit (MYR)",
-  "fuseau": "UTC+8",
-  "meilleureEpoque": "Mars à Septembre",
-  "prixMoyenNuit": "55€",
-  "continent": "Asie",
-  "codeISO": "MY",
-  "pays_slug": "malaisie",
-  "region": "Asie du Sud-Est",
-  "meta_title": "Voyage Halal à Kota Kinabalu — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Kota Kinabalu — Halal Trust Score 8.3/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Kota Kinabalu — Halal Trust Score 8.3/10.",
-  "coordonnees": {
+  "meilleure_periode": "Mars à Septembre",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Réglementé",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Exemption de visa pour les Français (90 jours)",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Grab, bus, ferry pour les îles",
+  "priseElectrique": "Type G — 240V",
+  "decalageHoraire": "+7h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Welcome Seafood",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre-ville",
+   "description": "Fruits de mer halal réputés de KK",
+   "mapsUrl": "https://maps.google.com/?q=Welcome+Seafood+Kota+Kinabalu",
+   "priceRange": "€€",
+   "specialite": "Fruits de mer",
+   "id": "r1"
+  },
+  {
+   "nom": "Kedai Kopi Melanian",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre-ville",
+   "description": "Cuisine locale du Sabah",
+   "mapsUrl": "https://maps.google.com/?q=Kedai+Kopi+Melanian+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Nasi campur",
+   "id": "r2"
+  },
+  {
+   "nom": "Nasi Kandar Bestari",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre-ville",
+   "description": "Nasi kandar et roti",
+   "mapsUrl": "https://maps.google.com/?q=Nasi+Kandar+Bestari+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Nasi kandar",
+   "id": "r3"
+  },
+  {
+   "nom": "Sri Latha Curry House",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre-ville",
+   "description": "Banana leaf rice halal",
+   "mapsUrl": "https://maps.google.com/?q=Sri+Latha+Curry+House+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Curry banane",
+   "id": "r4"
+  },
+  {
+   "nom": "Yu Kee Bak Kut Teh Halal",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre-ville",
+   "description": "Version halal du bak kut teh",
+   "mapsUrl": "https://maps.google.com/?q=Yu+Kee+Bak+Kut+Teh+Halal+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Soupe d'herbes",
+   "id": "r5"
+  },
+  {
+   "nom": "Al Madina Kota Kinabalu",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Kota+Kinabalu+Kota+Kinabalu",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r6"
+  },
+  {
+   "nom": "Shawarma House Kota Kinabalu",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Kota+Kinabalu+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r7"
+  },
+  {
+   "nom": "Beit Beirut Kota Kinabalu",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Kota+Kinabalu+Kota+Kinabalu",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r8"
+  },
+  {
+   "nom": "Spice Route Kota Kinabalu",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Kota+Kinabalu+Kota+Kinabalu",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r9"
+  },
+  {
+   "nom": "Saffron Garden Kota Kinabalu",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Kota+Kinabalu+Kota+Kinabalu",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r10"
+  },
+  {
+   "nom": "Green Bowl Kota Kinabalu",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Kota+Kinabalu+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r11"
+  },
+  {
+   "nom": "Sultan Café Kota Kinabalu",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Kota+Kinabalu+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r12"
+  },
+  {
+   "nom": "Ocean Pearl Kota Kinabalu",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
+   "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Kota+Kinabalu+Kota+Kinabalu",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé du jour",
+   "id": "r13"
+  },
+  {
+   "nom": "Bella Halal Kota Kinabalu",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
+   "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Kota+Kinabalu+Kota+Kinabalu",
+   "priceRange": "€€",
+   "specialite": "Pizza halal au four à bois",
+   "id": "r14"
+  },
+  {
+   "nom": "Tokyo Halal Kota Kinabalu",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Kota+Kinabalu+Kota+Kinabalu",
+   "priceRange": "€€€",
+   "specialite": "Sushis certifiés halal",
+   "id": "r15"
+  },
+  {
+   "nom": "Warung Selera",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse traditionnel local appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Nasi campur",
+   "nombreAvis": 659,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Restoran Nusantara",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse traditionnel local appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Restoran+Nusantara+Kota+Kinabalu",
+   "priceRange": "€€",
+   "specialite": "Rendang",
+   "nombreAvis": 3060,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Rakuzen Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse japonais & asiatique appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Rakuzen+Halal+Kota+Kinabalu",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 1060,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Spice Darbar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse indien & pakistani appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Kota+Kinabalu",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1283,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Bahari Seafood",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse fruits de mer appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahari+Seafood+Kota+Kinabalu",
+   "priceRange": "€€",
+   "specialite": "Crevettes sambal",
+   "nombreAvis": 1944,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Seri Gastronomi",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse gastronomique appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Seri+Gastronomi+Kota+Kinabalu",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation",
+   "nombreAvis": 541,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Teh Tarik Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse pâtisserie & café appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Teh+Tarik+Caf%C3%A9+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Teh tarik et kuih",
+   "nombreAvis": 429,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Green Leaf",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse végétarien & healthy appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Leaf+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Bowl tropical",
+   "nombreAvis": 1159,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Ramly Burger",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse burgers & fast-food appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Ramly+Burger+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Burger halal",
+   "nombreAvis": 1080,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Warung Selera Kota Kinabalu 10",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Kota Kinabalu",
+   "description": "Adresse traditionnel local appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Kota+Kinabalu+10+Kota+Kinabalu",
+   "priceRange": "€",
+   "specialite": "Nasi campur",
+   "nombreAvis": 2494,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r25"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Shangri-La Tanjung Aru",
+   "categorie": "Resort & Spa",
+   "score": 4.5,
+   "adresse": "Tanjung Aru",
+   "description": "Resort balnéaire face au coucher de soleil",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Shangri-La+Tanjung+Aru+Kota+Kinabalu",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "lat": 5.940917,
+   "lng": 116.058704
+  },
+  {
+   "nom": "Hyatt Regency Kinabalu",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Centre-ville",
+   "description": "Hôtel central front de mer",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hyatt+Regency+Kinabalu+Kota+Kinabalu",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
+   "priceRange": "€€€",
+   "id": "h2",
+   "lat": 5.9850916,
+   "lng": 116.075214
+  },
+  {
+   "nom": "Cititel Express",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Centre-ville",
+   "description": "Hôtel économique central",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Cititel+Express+Kota+Kinabalu",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
+   "priceRange": "€€",
+   "id": "h3",
+   "lat": 5.9759482,
+   "lng": 116.0729222
+  },
+  {
+   "nom": "Grand Plaza Kota Kinabalu",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Kota Kinabalu",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Kota+Kinabalu+Kota+Kinabalu",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
+   "priceRange": "€€€€",
+   "id": "h4",
+   "lat": 5.9281172,
+   "lng": 116.0767422
+  },
+  {
+   "nom": "City Comfort Hotel Kota Kinabalu",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Kota Kinabalu",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Kota+Kinabalu+Kota+Kinabalu",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
+   "priceRange": "€€€",
+   "id": "h5"
+  },
+  {
+   "nom": "Boutique Riad Kota Kinabalu",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Kota Kinabalu",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Kota+Kinabalu+Kota+Kinabalu",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
+   "priceRange": "€€€",
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Kota Kinabalu 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Kota Kinabalu",
+   "description": "Hébergement halal-friendly à Kota Kinabalu.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Kota+Kinabalu+0+Kota+Kinabalu",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
+   "priceRange": "€€€€",
+   "nombreAvis": 1765,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Kota Kinabalu",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Kota Kinabalu",
+   "description": "Hébergement halal-friendly à Kota Kinabalu.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Kota+Kinabalu+Kota+Kinabalu",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
+   "priceRange": "€€€",
+   "nombreAvis": 1966,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Parc national du Kinabalu",
+   "categorie": "Nature & Aventure",
+   "description": "Plus haut sommet d'Asie du Sud-Est, site UNESCO",
+   "duree": "Journée",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Parc+national+du+Kinabalu+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+national+du+Kinabalu+Kota+Kinabalu",
+   "id": "a1"
+  },
+  {
+   "nom": "Parc Tunku Abdul Rahman",
+   "categorie": "Nature & Aventure",
+   "description": "Îles tropicales et snorkeling près de la ville",
+   "duree": "Journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Parc+Tunku+Abdul+Rahman+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+Tunku+Abdul+Rahman+Kota+Kinabalu",
+   "id": "a2"
+  },
+  {
+   "nom": "Mosquée de la ville (City Mosque)",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée flottante au bord du lagon",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+la+ville+%28City+Mosque%29+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+la+ville+%28City+Mosque%29+Kota+Kinabalu",
+   "id": "a3"
+  },
+  {
+   "nom": "Marché nocturne de KK",
+   "categorie": "Shopping & Souks",
+   "description": "Street food halal et fruits de mer",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9+nocturne+de+KK+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+nocturne+de+KK+Kota+Kinabalu",
+   "id": "a4"
+  },
+  {
+   "nom": "Coucher de soleil à Tanjung Aru",
+   "categorie": "Nature & Aventure",
+   "description": "L'un des plus beaux couchers de soleil d'Asie",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Coucher+de+soleil+%C3%A0+Tanjung+Aru+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Coucher+de+soleil+%C3%A0+Tanjung+Aru+Kota+Kinabalu",
+   "id": "a5"
+  },
+  {
+   "nom": "Mari Mari Cultural Village",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte des ethnies du Bornéo",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Mari+Mari+Cultural+Village+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mari+Mari+Cultural+Village+Kota+Kinabalu",
+   "id": "a6"
+  },
+  {
+   "nom": "Réserve de Lok Kawi",
+   "categorie": "Sport & Loisirs",
+   "description": "Parc animalier familial du Sabah",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=R%C3%A9serve+de+Lok+Kawi+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=R%C3%A9serve+de+Lok+Kawi+Kota+Kinabalu",
+   "id": "a7"
+  },
+  {
+   "nom": "Signal Hill Observatory",
+   "categorie": "Nature & Aventure",
+   "description": "Panorama sur la ville et la mer",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Signal+Hill+Observatory+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Signal+Hill+Observatory+Kota+Kinabalu",
+   "id": "a8"
+  },
+  {
+   "nom": "Vieille ville de Kota Kinabalu",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Kota+Kinabalu+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Kota+Kinabalu+Kota+Kinabalu",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand souk de Kota Kinabalu",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Kota+Kinabalu+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Kota+Kinabalu+Kota+Kinabalu",
+   "id": "a10"
+  },
+  {
+   "nom": "Quartier historique de Kota Kinabalu",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Kota+Kinabalu+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Kota+Kinabalu+Kota+Kinabalu",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Kota Kinabalu",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Kota+Kinabalu+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Kota+Kinabalu+Kota+Kinabalu",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Kota Kinabalu",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Kota+Kinabalu+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Kota+Kinabalu+Kota+Kinabalu",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Kota Kinabalu",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Kota+Kinabalu+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Kota+Kinabalu+Kota+Kinabalu",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Kota Kinabalu",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Kota+Kinabalu+Kota+Kinabalu",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Kota+Kinabalu+Kota+Kinabalu",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée d'État du Sabah",
+   "description": "Grande mosquée provinciale au dôme doré",
+   "adresse": "Sembulan",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+d%27%C3%89tat+du+Sabah+Kota+Kinabalu",
+   "capacite": 3356,
+   "anneeConstruction": 1896,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 5.9804,
     "lng": 116.0735
+   }
   },
-  "image_alt": "Vue de Kota Kinabalu, Malaisie",
-  "statistiques": {
-    "mosquees": 300,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 65
+  {
+   "nom": "Mosquée de la ville de KK",
+   "description": "Mosquée flottante posée sur un lagon artificiel",
+   "adresse": "Likas Bay",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+la+ville+de+KK+Kota+Kinabalu",
+   "capacite": 1707,
+   "anneeConstruction": 1887,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 5.9804,
+    "lng": 116.0735
+   }
   },
-  "infos_pratiques": {
-    "langue": "Malais, Anglais",
-    "monnaie": "Ringgit (MYR)",
-    "meilleure_periode": "Mars à Septembre",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Réglementé",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Kota Kinabalu",
+   "description": "Mosquée fréquentée de Kota Kinabalu, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kota Kinabalu",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Kota+Kinabalu+Kota+Kinabalu",
+   "capacite": 4938,
+   "anneeConstruction": 1938,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 5.9804,
+    "lng": 116.0735
+   }
   },
-  "infoPratique": {
-    "visa": "Exemption de visa pour les Français (90 jours)",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Grab, bus, ferry pour les îles",
-    "priseElectrique": "Type G — 240V",
-    "decalageHoraire": "+7h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Kota Kinabalu",
+   "description": "Mosquée fréquentée de Kota Kinabalu, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kota Kinabalu",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Kota+Kinabalu+Kota+Kinabalu",
+   "capacite": 1093,
+   "anneeConstruction": 1913,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 5.9804,
+    "lng": 116.0735
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Welcome Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre-ville",
-      "description": "Fruits de mer halal réputés de KK",
-      "mapsUrl": "https://maps.google.com/?q=Welcome+Seafood+Kota+Kinabalu",
-      "priceRange": "€€",
-      "specialite": "Fruits de mer",
-      "id": "r1"
-    },
-    {
-      "nom": "Kedai Kopi Melanian",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre-ville",
-      "description": "Cuisine locale du Sabah",
-      "mapsUrl": "https://maps.google.com/?q=Kedai+Kopi+Melanian+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Nasi campur",
-      "id": "r2"
-    },
-    {
-      "nom": "Nasi Kandar Bestari",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre-ville",
-      "description": "Nasi kandar et roti",
-      "mapsUrl": "https://maps.google.com/?q=Nasi+Kandar+Bestari+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Nasi kandar",
-      "id": "r3"
-    },
-    {
-      "nom": "Sri Latha Curry House",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre-ville",
-      "description": "Banana leaf rice halal",
-      "mapsUrl": "https://maps.google.com/?q=Sri+Latha+Curry+House+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Curry banane",
-      "id": "r4"
-    },
-    {
-      "nom": "Yu Kee Bak Kut Teh Halal",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre-ville",
-      "description": "Version halal du bak kut teh",
-      "mapsUrl": "https://maps.google.com/?q=Yu+Kee+Bak+Kut+Teh+Halal+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Soupe d'herbes",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Kota Kinabalu",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Kota+Kinabalu+Kota+Kinabalu",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Kota Kinabalu",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Kota+Kinabalu+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Kota Kinabalu",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Kota+Kinabalu+Kota+Kinabalu",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Kota Kinabalu",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Kota+Kinabalu+Kota+Kinabalu",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Kota Kinabalu",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Kota+Kinabalu+Kota+Kinabalu",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Kota Kinabalu",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Kota+Kinabalu+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Kota Kinabalu",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Kota+Kinabalu+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Kota Kinabalu",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Kota+Kinabalu+Kota+Kinabalu",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Kota Kinabalu",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Kota+Kinabalu+Kota+Kinabalu",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Kota Kinabalu",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse halal appréciée des habitants de Kota Kinabalu.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Kota+Kinabalu+Kota+Kinabalu",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Warung Selera",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse traditionnel local appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Nasi campur",
-      "nombreAvis": 659,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Restoran Nusantara",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse traditionnel local appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Nusantara+Kota+Kinabalu",
-      "priceRange": "€€",
-      "specialite": "Rendang",
-      "nombreAvis": 3060,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Rakuzen Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse japonais & asiatique appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Rakuzen+Halal+Kota+Kinabalu",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1060,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Spice Darbar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse indien & pakistani appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Kota+Kinabalu",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1283,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Bahari Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse fruits de mer appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahari+Seafood+Kota+Kinabalu",
-      "priceRange": "€€",
-      "specialite": "Crevettes sambal",
-      "nombreAvis": 1944,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Seri Gastronomi",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse gastronomique appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Seri+Gastronomi+Kota+Kinabalu",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 541,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Teh Tarik Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse pâtisserie & café appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Teh+Tarik+Caf%C3%A9+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Teh tarik et kuih",
-      "nombreAvis": 429,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Green Leaf",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse végétarien & healthy appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Leaf+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Bowl tropical",
-      "nombreAvis": 1159,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Ramly Burger",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse burgers & fast-food appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Ramly+Burger+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Burger halal",
-      "nombreAvis": 1080,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Warung Selera Kota Kinabalu 10",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Kota Kinabalu",
-      "description": "Adresse traditionnel local appréciée à Kota Kinabalu, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Selera+Kota+Kinabalu+10+Kota+Kinabalu",
-      "priceRange": "€",
-      "specialite": "Nasi campur",
-      "nombreAvis": 2494,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r25"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Shangri-La Tanjung Aru",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Tanjung Aru",
-      "description": "Resort balnéaire face au coucher de soleil",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Shangri-La+Tanjung+Aru+Kota+Kinabalu",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
-      "priceRange": "€€€€",
-      "id": "h1"
-    },
-    {
-      "nom": "Hyatt Regency Kinabalu",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Centre-ville",
-      "description": "Hôtel central front de mer",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hyatt+Regency+Kinabalu+Kota+Kinabalu",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
-      "priceRange": "€€€",
-      "id": "h2"
-    },
-    {
-      "nom": "Cititel Express",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Centre-ville",
-      "description": "Hôtel économique central",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Cititel+Express+Kota+Kinabalu",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
-      "priceRange": "€€",
-      "id": "h3"
-    },
-    {
-      "nom": "Grand Plaza Kota Kinabalu",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Kota Kinabalu",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Kota+Kinabalu+Kota+Kinabalu",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
-      "priceRange": "€€€€",
-      "id": "h4"
-    },
-    {
-      "nom": "City Comfort Hotel Kota Kinabalu",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Kota Kinabalu",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Kota+Kinabalu+Kota+Kinabalu",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Kota Kinabalu",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Kota Kinabalu",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Kota+Kinabalu+Kota+Kinabalu",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Kota Kinabalu 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Kota Kinabalu",
-      "description": "Hébergement halal-friendly à Kota Kinabalu.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Kota+Kinabalu+0+Kota+Kinabalu",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
-      "priceRange": "€€€€",
-      "nombreAvis": 1765,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Kota Kinabalu",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Kota Kinabalu",
-      "description": "Hébergement halal-friendly à Kota Kinabalu.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Kota+Kinabalu+Kota+Kinabalu",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kota+Kinabalu&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kota-kinabalu",
-      "priceRange": "€€€",
-      "nombreAvis": 1966,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Parc national du Kinabalu",
-      "categorie": "Nature & Aventure",
-      "description": "Plus haut sommet d'Asie du Sud-Est, site UNESCO",
-      "duree": "Journée",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Parc+national+du+Kinabalu+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+national+du+Kinabalu+Kota+Kinabalu",
-      "id": "a1"
-    },
-    {
-      "nom": "Parc Tunku Abdul Rahman",
-      "categorie": "Nature & Aventure",
-      "description": "Îles tropicales et snorkeling près de la ville",
-      "duree": "Journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Parc+Tunku+Abdul+Rahman+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+Tunku+Abdul+Rahman+Kota+Kinabalu",
-      "id": "a2"
-    },
-    {
-      "nom": "Mosquée de la ville (City Mosque)",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée flottante au bord du lagon",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+la+ville+%28City+Mosque%29+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+la+ville+%28City+Mosque%29+Kota+Kinabalu",
-      "id": "a3"
-    },
-    {
-      "nom": "Marché nocturne de KK",
-      "categorie": "Shopping & Souks",
-      "description": "Street food halal et fruits de mer",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+nocturne+de+KK+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+nocturne+de+KK+Kota+Kinabalu",
-      "id": "a4"
-    },
-    {
-      "nom": "Coucher de soleil à Tanjung Aru",
-      "categorie": "Nature & Aventure",
-      "description": "L'un des plus beaux couchers de soleil d'Asie",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Coucher+de+soleil+%C3%A0+Tanjung+Aru+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Coucher+de+soleil+%C3%A0+Tanjung+Aru+Kota+Kinabalu",
-      "id": "a5"
-    },
-    {
-      "nom": "Mari Mari Cultural Village",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte des ethnies du Bornéo",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Mari+Mari+Cultural+Village+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mari+Mari+Cultural+Village+Kota+Kinabalu",
-      "id": "a6"
-    },
-    {
-      "nom": "Réserve de Lok Kawi",
-      "categorie": "Sport & Loisirs",
-      "description": "Parc animalier familial du Sabah",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=R%C3%A9serve+de+Lok+Kawi+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=R%C3%A9serve+de+Lok+Kawi+Kota+Kinabalu",
-      "id": "a7"
-    },
-    {
-      "nom": "Signal Hill Observatory",
-      "categorie": "Nature & Aventure",
-      "description": "Panorama sur la ville et la mer",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Signal+Hill+Observatory+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Signal+Hill+Observatory+Kota+Kinabalu",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Kota Kinabalu",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Kota+Kinabalu+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Kota+Kinabalu+Kota+Kinabalu",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Kota Kinabalu",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Kota+Kinabalu+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Kota+Kinabalu+Kota+Kinabalu",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Kota Kinabalu",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Kota+Kinabalu+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Kota+Kinabalu+Kota+Kinabalu",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Kota Kinabalu",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Kota+Kinabalu+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Kota+Kinabalu+Kota+Kinabalu",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Kota Kinabalu",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Kota+Kinabalu+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Kota+Kinabalu+Kota+Kinabalu",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Kota Kinabalu",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Kota+Kinabalu+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Kota+Kinabalu+Kota+Kinabalu",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Kota Kinabalu",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Kota+Kinabalu+Kota+Kinabalu",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Kota+Kinabalu+Kota+Kinabalu",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée d'État du Sabah",
-      "description": "Grande mosquée provinciale au dôme doré",
-      "adresse": "Sembulan",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+d%27%C3%89tat+du+Sabah+Kota+Kinabalu",
-      "capacite": 3356,
-      "anneeConstruction": 1896,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 5.9804,
-        "lng": 116.0735
-      }
-    },
-    {
-      "nom": "Mosquée de la ville de KK",
-      "description": "Mosquée flottante posée sur un lagon artificiel",
-      "adresse": "Likas Bay",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+la+ville+de+KK+Kota+Kinabalu",
-      "capacite": 1707,
-      "anneeConstruction": 1887,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 5.9804,
-        "lng": 116.0735
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Kota Kinabalu",
-      "description": "Mosquée fréquentée de Kota Kinabalu, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kota Kinabalu",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Kota+Kinabalu+Kota+Kinabalu",
-      "capacite": 4938,
-      "anneeConstruction": 1938,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 5.9804,
-        "lng": 116.0735
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Kota Kinabalu",
-      "description": "Mosquée fréquentée de Kota Kinabalu, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kota Kinabalu",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Kota+Kinabalu+Kota+Kinabalu",
-      "capacite": 1093,
-      "anneeConstruction": 1913,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 5.9804,
-        "lng": 116.0735
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Kota Kinabalu",
-      "description": "Mosquée fréquentée de Kota Kinabalu, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kota Kinabalu",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Kota+Kinabalu+Kota+Kinabalu",
-      "capacite": 6437,
-      "anneeConstruction": 1917,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 5.9804,
-        "lng": 116.0735
-      }
-    }
-  ],
-  "tags": [
-    "nature",
-    "bornéo",
-    "plage",
-    "montagne",
-    "iles",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Warung Selera",
-      "Ramly Burger",
-      "Restoran Nusantara",
-      "Warung Selera Kota Kinabalu 10",
-      "Saffron Garden Kota Kinabalu"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Welcome Seafood",
-      "Kedai Kopi Melanian",
-      "Nasi Kandar Bestari",
-      "Sri Latha Curry House",
-      "Yu Kee Bak Kut Teh Halal"
-    ],
-    "incontournables": [
-      "Restoran Nusantara",
-      "Warung Selera Kota Kinabalu 10",
-      "Bahari Seafood",
-      "Spice Darbar",
-      "Green Leaf"
-    ],
-    "pepitesCachees": [
-      "Welcome Seafood",
-      "Kedai Kopi Melanian",
-      "Nasi Kandar Bestari"
-    ],
-    "idealFamille": [
-      "Warung Selera",
-      "Restoran Nusantara",
-      "Spice Darbar",
-      "Bahari Seafood",
-      "Teh Tarik Café"
-    ],
-    "gastronomique": [
-      "Saffron Garden Kota Kinabalu",
-      "Seri Gastronomi"
-    ],
-    "ouvertNuit": [
-      "Warung Selera",
-      "Teh Tarik Café",
-      "Green Leaf"
-    ],
-    "vueExceptionnelle": [
-      "Bahari Seafood"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Kota Kinabalu",
+   "description": "Mosquée fréquentée de Kota Kinabalu, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kota Kinabalu",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Kota+Kinabalu+Kota+Kinabalu",
+   "capacite": 6437,
+   "anneeConstruction": 1917,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 5.9804,
+    "lng": 116.0735
+   }
   }
+ ],
+ "tags": [
+  "nature",
+  "bornéo",
+  "plage",
+  "montagne",
+  "iles",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Warung Selera",
+   "Ramly Burger",
+   "Restoran Nusantara",
+   "Warung Selera Kota Kinabalu 10",
+   "Saffron Garden Kota Kinabalu"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Welcome Seafood",
+   "Kedai Kopi Melanian",
+   "Nasi Kandar Bestari",
+   "Sri Latha Curry House",
+   "Yu Kee Bak Kut Teh Halal"
+  ],
+  "incontournables": [
+   "Restoran Nusantara",
+   "Warung Selera Kota Kinabalu 10",
+   "Bahari Seafood",
+   "Spice Darbar",
+   "Green Leaf"
+  ],
+  "pepitesCachees": [
+   "Welcome Seafood",
+   "Kedai Kopi Melanian",
+   "Nasi Kandar Bestari"
+  ],
+  "idealFamille": [
+   "Warung Selera",
+   "Restoran Nusantara",
+   "Spice Darbar",
+   "Bahari Seafood",
+   "Teh Tarik Café"
+  ],
+  "gastronomique": [
+   "Saffron Garden Kota Kinabalu",
+   "Seri Gastronomi"
+  ],
+  "ouvertNuit": [
+   "Warung Selera",
+   "Teh Tarik Café",
+   "Green Leaf"
+  ],
+  "vueExceptionnelle": [
+   "Bahari Seafood"
+  ]
+ }
 }

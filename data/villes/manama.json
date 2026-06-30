@@ -1,1581 +1,1588 @@
 {
-  "nom": "Manama",
-  "pays": "Bahreïn",
-  "slug": "manama",
-  "image": "https://images.unsplash.com/photo-1713008975532-b379f8bd8c37?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1713008975532-b379f8bd8c37?w=1600&q=80",
-  "description": "Manama, capitale insulaire du Bahreïn, conjugue hub financier moderne et patrimoine millénaire. Le fort de Bahreïn (UNESCO) et le gold souk en font une étape halal raffinée.",
-  "descriptionLongue": "Île-carrefour du Golfe depuis l'Antiquité, le Bahreïn fut le cœur de la civilisation de Dilmun. Manama mêle tours d'affaires, vieux souks et la majestueuse mosquée Al-Fateh. Le Qal'at al-Bahrain, inscrit à l'UNESCO, témoigne de 4000 ans d'histoire. La cuisine bahreïnie — machboos de poisson, halwa, perles de la mer — reflète une culture maritime raffinée. Ville accueillante et largement halal.",
-  "halalScore": 8.8,
-  "score_halal": 4.4,
+ "nom": "Manama",
+ "pays": "Bahreïn",
+ "slug": "manama",
+ "image": "https://images.unsplash.com/photo-1713008975532-b379f8bd8c37?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1713008975532-b379f8bd8c37?w=1600&q=80",
+ "description": "Manama, capitale insulaire du Bahreïn, conjugue hub financier moderne et patrimoine millénaire. Le fort de Bahreïn (UNESCO) et le gold souk en font une étape halal raffinée.",
+ "descriptionLongue": "Île-carrefour du Golfe depuis l'Antiquité, le Bahreïn fut le cœur de la civilisation de Dilmun. Manama mêle tours d'affaires, vieux souks et la majestueuse mosquée Al-Fateh. Le Qal'at al-Bahrain, inscrit à l'UNESCO, témoigne de 4000 ans d'histoire. La cuisine bahreïnie — machboos de poisson, halwa, perles de la mer — reflète une culture maritime raffinée. Ville accueillante et largement halal.",
+ "halalScore": 8.8,
+ "score_halal": 4.4,
+ "mosquees": 600,
+ "population": "700 000",
+ "langue": "Arabe",
+ "monnaie": "Dinar bahreïni (BHD)",
+ "fuseau": "UTC+3",
+ "meilleureEpoque": "Novembre à Mars",
+ "prixMoyenNuit": "100€",
+ "continent": "Asie",
+ "codeISO": "BH",
+ "pays_slug": "bahrein",
+ "region": "Golfe",
+ "meta_title": "Voyage Halal à Manama — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Manama — Halal Trust Score 8.8/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Manama — Halal Trust Score 8.8/10.",
+ "coordonnees": {
+  "lat": 26.2235,
+  "lng": 50.5876
+ },
+ "image_alt": "Vue de Manama, Bahreïn",
+ "statistiques": {
   "mosquees": 600,
-  "population": "700 000",
+  "restaurants_halal": 800,
+  "habitants_musulmans_pct": 99,
+  "hotels": 10
+ },
+ "infos_pratiques": {
   "langue": "Arabe",
   "monnaie": "Dinar bahreïni (BHD)",
-  "fuseau": "UTC+3",
-  "meilleureEpoque": "Novembre à Mars",
-  "prixMoyenNuit": "100€",
-  "continent": "Asie",
-  "codeISO": "BH",
-  "pays_slug": "bahrein",
-  "region": "Golfe",
-  "meta_title": "Voyage Halal à Manama — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Manama — Halal Trust Score 8.8/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Manama — Halal Trust Score 8.8/10.",
-  "coordonnees": {
+  "meilleure_periode": "Novembre à Mars",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible mais discret",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "e-Visa ou visa à l'arrivée pour de nombreuses nationalités",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Taxis, Uber, bus, location de voiture",
+  "priseElectrique": "Type G — 230V",
+  "decalageHoraire": "+2h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Haji Gahwa",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Manama Souk, Manama",
+   "description": "Cuisine bahreïnie traditionnelle, plats du Golfe servis à la perfection.",
+   "mapsUrl": "https://maps.google.com/?q=Haji+Gahwa+Manama",
+   "priceRange": "€€",
+   "specialite": "Machboos de poisson",
+   "id": "r1",
+   "nombreAvis": 863,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Saffron by Jena",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Adliya, Manama",
+   "description": "Cuisine indienne élégante très réputée, cadre raffiné.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+by+Jena+Manama",
+   "priceRange": "€€€",
+   "specialite": "Biryani royal",
+   "id": "r2",
+   "nombreAvis": 2408,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Mirai",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Seef, Manama",
+   "description": "Restaurant japonais haut de gamme, poisson certifié halal.",
+   "mapsUrl": "https://maps.google.com/?q=Mirai+Manama",
+   "priceRange": "€€€€",
+   "specialite": "Sushis halal",
+   "id": "r3",
+   "nombreAvis": 1202,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ]
+  },
+  {
+   "nom": "Emmawash",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Muharraq, Manama",
+   "description": "Adresse populaire de cuisine bahreïnie matinale, abordable.",
+   "mapsUrl": "https://maps.google.com/?q=Emmawash+Manama",
+   "priceRange": "€",
+   "specialite": "Mahyawa et khubz",
+   "id": "r4",
+   "nombreAvis": 941,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Villa Mamas",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Adliya, Manama",
+   "description": "Recettes familiales bahreïnies dans une villa élégante.",
+   "mapsUrl": "https://maps.google.com/?q=Villa+Mamas+Manama",
+   "priceRange": "€€€",
+   "specialite": "Cuisine bahreïnie maison",
+   "id": "r5",
+   "nombreAvis": 2383,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Cantina Kahlo",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Adliya, Manama",
+   "description": "Adresse colorée et conviviale du quartier branché d'Adliya.",
+   "mapsUrl": "https://maps.google.com/?q=Cantina+Kahlo+Manama",
+   "priceRange": "€€",
+   "specialite": "Cuisine mexicaine halal",
+   "id": "r6",
+   "nombreAvis": 1193,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Al Abraaj",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Gudaibiya, Manama",
+   "description": "Grand classique levantin, mezze copieux et grillades.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Abraaj+Manama",
+   "priceRange": "€€",
+   "specialite": "Grillades et mezze",
+   "id": "r7",
+   "nombreAvis": 2434,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ]
+  },
+  {
+   "nom": "Mosaic",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Seef, Manama",
+   "description": "Buffet somptueux du Ritz-Carlton, large choix halal.",
+   "mapsUrl": "https://maps.google.com/?q=Mosaic+Manama",
+   "priceRange": "€€€€",
+   "specialite": "Buffet international halal",
+   "id": "r8",
+   "nombreAvis": 1202,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "nom": "Naseef Cafe",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Manama Souk, Manama",
+   "description": "Pâtisserie historique, célèbre halwa traditionnel.",
+   "mapsUrl": "https://maps.google.com/?q=Naseef+Cafe+Manama",
+   "priceRange": "€",
+   "specialite": "Halwa bahreïni",
+   "id": "r9",
+   "nombreAvis": 256,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Lanterns",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Budaiya, Manama",
+   "description": "Institution indienne familiale depuis 1981.",
+   "mapsUrl": "https://maps.google.com/?q=Lanterns+Manama",
+   "priceRange": "€€€",
+   "specialite": "Thali végétarien",
+   "id": "r10",
+   "nombreAvis": 1315,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Al Madina Manama",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Manama",
+   "description": "Adresse halal appréciée des habitants de Manama.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Manama+Manama",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r11",
+   "nombreAvis": 297,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Shawarma House Manama",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Manama",
+   "description": "Adresse halal appréciée des habitants de Manama.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Manama+Manama",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r12",
+   "nombreAvis": 802,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Beit Beirut Manama",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Manama",
+   "description": "Adresse halal appréciée des habitants de Manama.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Manama+Manama",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r13",
+   "nombreAvis": 771,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ]
+  },
+  {
+   "nom": "Spice Route Manama",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Manama",
+   "description": "Adresse halal appréciée des habitants de Manama.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Manama+Manama",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r14",
+   "nombreAvis": 1020,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Saffron Garden Manama",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Manama",
+   "description": "Adresse halal appréciée des habitants de Manama.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Manama+Manama",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r15",
+   "nombreAvis": 133,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "nom": "Bait Al Karam",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Manama",
+   "description": "Adresse traditionnel local appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Manama",
+   "priceRange": "€€",
+   "specialite": "Plat mijoté maison",
+   "nombreAvis": 3306,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Shawarma Al Reef",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Manama",
+   "description": "Adresse grillades & kebab appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Manama",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "nombreAvis": 1832,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Beit Cham",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Manama",
+   "description": "Adresse libanais & levant appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Manama",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "nombreAvis": 1952,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Saffron Majlis",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Manama",
+   "description": "Adresse gastronomique appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Manama",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation halal",
+   "nombreAvis": 1849,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Sultan Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Manama",
+   "description": "Adresse pâtisserie & café appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Manama",
+   "priceRange": "€",
+   "specialite": "Kunafa et café arabe",
+   "nombreAvis": 2040,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Bait Al Karam Manama 1",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Manama",
+   "description": "Adresse traditionnel local appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Manama+1+Manama",
+   "priceRange": "€€",
+   "specialite": "Plat mijoté maison",
+   "nombreAvis": 2081,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Shawarma Al Reef Manama 2",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Manama",
+   "description": "Adresse grillades & kebab appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Manama+2+Manama",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "nombreAvis": 2508,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Beit Cham Manama 3",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Manama",
+   "description": "Adresse libanais & levant appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Manama+3+Manama",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "nombreAvis": 678,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Saffron Majlis Manama 4",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Manama",
+   "description": "Adresse gastronomique appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Manama+4+Manama",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation halal",
+   "nombreAvis": 1884,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Sultan Sweets Manama 5",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Manama",
+   "description": "Adresse pâtisserie & café appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Manama+5+Manama",
+   "priceRange": "€",
+   "specialite": "Kunafa et café arabe",
+   "nombreAvis": 1820,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Bahr Seafood",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Manama",
+   "description": "Adresse fruits de mer appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Manama",
+   "priceRange": "€€€",
+   "specialite": "Poisson du jour grillé",
+   "nombreAvis": 1444,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Mughal Spice",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Manama",
+   "description": "Adresse indien & pakistani appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Manama",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 666,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Green Yasmine",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Manama",
+   "description": "Adresse végétarien & healthy appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Manama",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "nombreAvis": 1412,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Burger Najma",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Manama",
+   "description": "Adresse burgers & fast-food appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Manama",
+   "priceRange": "€€",
+   "specialite": "Smash burger halal",
+   "nombreAvis": 905,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Tokyo Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Manama",
+   "description": "Adresse japonais & asiatique appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Manama",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 1709,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Bait Al Karam Manama 11",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Manama",
+   "description": "Adresse traditionnel local appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Manama+11+Manama",
+   "priceRange": "€€",
+   "specialite": "Plat mijoté maison",
+   "nombreAvis": 1707,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Shawarma Al Reef Manama 12",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Manama",
+   "description": "Adresse grillades & kebab appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Manama+12+Manama",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "nombreAvis": 336,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Beit Cham Manama 13",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Manama",
+   "description": "Adresse libanais & levant appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Manama+13+Manama",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "nombreAvis": 1510,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Saffron Majlis Manama 14",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Manama",
+   "description": "Adresse gastronomique appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Manama+14+Manama",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation halal",
+   "nombreAvis": 126,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Sultan Sweets Manama 15",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Manama",
+   "description": "Adresse pâtisserie & café appréciée à Manama, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Manama+15+Manama",
+   "priceRange": "€",
+   "specialite": "Kunafa et café arabe",
+   "nombreAvis": 1509,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r35"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "The Ritz-Carlton Bahrain",
+   "categorie": "Resort & Spa",
+   "score": 4.7,
+   "adresse": "Seef, Manama",
+   "description": "Resort de luxe avec plage privée, lagon et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Ritz-Carlton+Bahrain+Manama",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "nombreAvis": 2317,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "piscine-non-mixte",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "spa-femmes",
+    "wifi"
+   ],
+   "lat": 26.2441578,
+   "lng": 50.5383863
+  },
+  {
+   "nom": "Four Seasons Bahrain Bay",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Bahrain Bay, Manama",
+   "description": "Tour emblématique sur une île privée, vue sur la baie.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Bahrain+Bay+Manama",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
+   "priceRange": "€€€€",
+   "id": "h2",
+   "nombreAvis": 1314,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Gulf Hotel Bahrain",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Adliya, Manama",
+   "description": "Institution hôtelière, nombreux restaurants halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Gulf+Hotel+Bahrain+Manama",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
+   "priceRange": "€€€",
+   "id": "h3",
+   "nombreAvis": 1652,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 26.2163095,
+   "lng": 50.5946539
+  },
+  {
+   "nom": "Ibis Seef",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Seef, Manama",
+   "description": "Hébergement économique proche des centres commerciaux.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Ibis+Seef+Manama",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
+   "priceRange": "€€",
+   "id": "h4",
+   "nombreAvis": 2322,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 26.229502,
+   "lng": 50.551185
+  },
+  {
+   "nom": "Wyndham Grand Manama",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Bahrain Bay, Manama",
+   "description": "Hôtel moderne au bord de l'eau, central.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Wyndham+Grand+Manama+Manama",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
+   "priceRange": "€€€",
+   "id": "h5",
+   "nombreAvis": 157,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Manama",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Manama",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Manama+Manama",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
+   "priceRange": "€€€€",
+   "id": "h6",
+   "nombreAvis": 595,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Manama 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Manama",
+   "description": "Hébergement halal-friendly à Manama.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Manama+0+Manama",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
+   "priceRange": "€€€€",
+   "nombreAvis": 776,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Manama",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Manama",
+   "description": "Hébergement halal-friendly à Manama.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Manama+Manama",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
+   "priceRange": "€€€",
+   "nombreAvis": 909,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Manama",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Manama",
+   "description": "Hébergement halal-friendly à Manama.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Manama+Manama",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
+   "priceRange": "€€€",
+   "nombreAvis": 1843,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Manama",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Manama",
+   "description": "Hébergement halal-friendly à Manama.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Manama+Manama",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
+   "priceRange": "€€",
+   "nombreAvis": 372,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Mosquée Al-Fateh",
+   "categorie": "Religieux & Spirituel",
+   "description": "Grande mosquée pouvant accueillir 7000 fidèles, visites guidées et dôme en fibre de verre.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fateh+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Al-Fateh+Manama",
+   "id": "a1",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Qal'at al-Bahrain (UNESCO)",
+   "categorie": "Histoire & Culture",
+   "description": "Fort antique sur le site de l'ancienne Dilmun, musée et vue sur la mer.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Qal%27at+al-Bahrain+%28UNESCO%29+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Qal%27at+al-Bahrain+%28UNESCO%29+Manama",
+   "id": "a2",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Souk de Manama & Gold Souk",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, tissus et or, cœur commerçant de la ville.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Souk+de+Manama+%26+Gold+Souk+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+de+Manama+%26+Gold+Souk+Manama",
+   "id": "a3",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Bab Al Bahrain",
+   "categorie": "Histoire & Culture",
+   "description": "Porte historique marquant l'entrée du vieux souk de Manama.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Bab+Al+Bahrain+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Bab+Al+Bahrain+Manama",
+   "id": "a4",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée National du Bahreïn",
+   "categorie": "Art & Musées",
+   "description": "Patrimoine de Dilmun, art islamique et tradition de la perle.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+National+du+Bahre%C3%AFn+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+National+du+Bahre%C3%AFn+Manama",
+   "id": "a5",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Tree of Life",
+   "categorie": "Nature & Aventure",
+   "description": "Arbre millénaire isolé dans le désert, mystère botanique.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Tree+of+Life+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tree+of+Life+Manama",
+   "id": "a6",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Maison du Coran (Beit Al Quran)",
+   "categorie": "Religieux & Spirituel",
+   "description": "Musée abritant une exceptionnelle collection de manuscrits coraniques.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Maison+du+Coran+%28Beit+Al+Quran%29+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Maison+du+Coran+%28Beit+Al+Quran%29+Manama",
+   "id": "a7",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Muharraq & maisons des perles",
+   "categorie": "Histoire & Culture",
+   "description": "Parcours UNESCO de l'économie de la perle dans la vieille Muharraq.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Muharraq+%26+maisons+des+perles+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Muharraq+%26+maisons+des+perles+Manama",
+   "id": "a8",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Manama",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Manama+Manama",
+   "id": "a9",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Manama",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Manama+Manama",
+   "id": "a10",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Manama",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Manama+Manama",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Manama",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Manama+Manama",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Manama",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Manama+Manama",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Manama",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Manama+Manama",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Manama",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Manama+Manama",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Manama",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Manama+Manama",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Manama",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Manama+Manama",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Manama",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Manama+Manama",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Manama",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Manama+Manama",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Manama",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Manama+Manama",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Manama+Manama",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Al-Fateh",
+   "description": "L'une des plus grandes mosquées du monde (7000 fidèles), visites guidées gratuites.",
+   "adresse": "Juffair, Manama",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fateh+Manama",
+   "capacite": 4516,
+   "anneeConstruction": 1986,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 26.2235,
     "lng": 50.5876
+   }
   },
-  "image_alt": "Vue de Manama, Bahreïn",
-  "statistiques": {
-    "mosquees": 600,
-    "restaurants_halal": 800,
-    "habitants_musulmans_pct": 99
+  {
+   "nom": "Mosquée Al-Khamis",
+   "description": "L'une des plus anciennes mosquées du Golfe, doubles minarets historiques.",
+   "adresse": "Al-Khamis, Manama",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Khamis+Manama",
+   "capacite": 2743,
+   "anneeConstruction": 1913,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 26.2235,
+    "lng": 50.5876
+   }
   },
-  "infos_pratiques": {
-    "langue": "Arabe",
-    "monnaie": "Dinar bahreïni (BHD)",
-    "meilleure_periode": "Novembre à Mars",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible mais discret",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Manama",
+   "description": "Mosquée fréquentée de Manama, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Manama",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Manama+Manama",
+   "capacite": 1309,
+   "anneeConstruction": 1989,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 26.2235,
+    "lng": 50.5876
+   }
   },
-  "infoPratique": {
-    "visa": "e-Visa ou visa à l'arrivée pour de nombreuses nationalités",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Taxis, Uber, bus, location de voiture",
-    "priseElectrique": "Type G — 230V",
-    "decalageHoraire": "+2h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Manama",
+   "description": "Mosquée fréquentée de Manama, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Manama",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Manama+Manama",
+   "capacite": 2276,
+   "anneeConstruction": 1916,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 26.2235,
+    "lng": 50.5876
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Haji Gahwa",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Manama Souk, Manama",
-      "description": "Cuisine bahreïnie traditionnelle, plats du Golfe servis à la perfection.",
-      "mapsUrl": "https://maps.google.com/?q=Haji+Gahwa+Manama",
-      "priceRange": "€€",
-      "specialite": "Machboos de poisson",
-      "id": "r1",
-      "nombreAvis": 863,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Saffron by Jena",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Adliya, Manama",
-      "description": "Cuisine indienne élégante très réputée, cadre raffiné.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+by+Jena+Manama",
-      "priceRange": "€€€",
-      "specialite": "Biryani royal",
-      "id": "r2",
-      "nombreAvis": 2408,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Mirai",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Seef, Manama",
-      "description": "Restaurant japonais haut de gamme, poisson certifié halal.",
-      "mapsUrl": "https://maps.google.com/?q=Mirai+Manama",
-      "priceRange": "€€€€",
-      "specialite": "Sushis halal",
-      "id": "r3",
-      "nombreAvis": 1202,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ]
-    },
-    {
-      "nom": "Emmawash",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Muharraq, Manama",
-      "description": "Adresse populaire de cuisine bahreïnie matinale, abordable.",
-      "mapsUrl": "https://maps.google.com/?q=Emmawash+Manama",
-      "priceRange": "€",
-      "specialite": "Mahyawa et khubz",
-      "id": "r4",
-      "nombreAvis": 941,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Villa Mamas",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Adliya, Manama",
-      "description": "Recettes familiales bahreïnies dans une villa élégante.",
-      "mapsUrl": "https://maps.google.com/?q=Villa+Mamas+Manama",
-      "priceRange": "€€€",
-      "specialite": "Cuisine bahreïnie maison",
-      "id": "r5",
-      "nombreAvis": 2383,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Cantina Kahlo",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Adliya, Manama",
-      "description": "Adresse colorée et conviviale du quartier branché d'Adliya.",
-      "mapsUrl": "https://maps.google.com/?q=Cantina+Kahlo+Manama",
-      "priceRange": "€€",
-      "specialite": "Cuisine mexicaine halal",
-      "id": "r6",
-      "nombreAvis": 1193,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Al Abraaj",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Gudaibiya, Manama",
-      "description": "Grand classique levantin, mezze copieux et grillades.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Abraaj+Manama",
-      "priceRange": "€€",
-      "specialite": "Grillades et mezze",
-      "id": "r7",
-      "nombreAvis": 2434,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ]
-    },
-    {
-      "nom": "Mosaic",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Seef, Manama",
-      "description": "Buffet somptueux du Ritz-Carlton, large choix halal.",
-      "mapsUrl": "https://maps.google.com/?q=Mosaic+Manama",
-      "priceRange": "€€€€",
-      "specialite": "Buffet international halal",
-      "id": "r8",
-      "nombreAvis": 1202,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Naseef Cafe",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Manama Souk, Manama",
-      "description": "Pâtisserie historique, célèbre halwa traditionnel.",
-      "mapsUrl": "https://maps.google.com/?q=Naseef+Cafe+Manama",
-      "priceRange": "€",
-      "specialite": "Halwa bahreïni",
-      "id": "r9",
-      "nombreAvis": 256,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Lanterns",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Budaiya, Manama",
-      "description": "Institution indienne familiale depuis 1981.",
-      "mapsUrl": "https://maps.google.com/?q=Lanterns+Manama",
-      "priceRange": "€€€",
-      "specialite": "Thali végétarien",
-      "id": "r10",
-      "nombreAvis": 1315,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Al Madina Manama",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Manama",
-      "description": "Adresse halal appréciée des habitants de Manama.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Manama+Manama",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r11",
-      "nombreAvis": 297,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Shawarma House Manama",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Manama",
-      "description": "Adresse halal appréciée des habitants de Manama.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Manama+Manama",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r12",
-      "nombreAvis": 802,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Beit Beirut Manama",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Manama",
-      "description": "Adresse halal appréciée des habitants de Manama.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Manama+Manama",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r13",
-      "nombreAvis": 771,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ]
-    },
-    {
-      "nom": "Spice Route Manama",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Manama",
-      "description": "Adresse halal appréciée des habitants de Manama.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Manama+Manama",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r14",
-      "nombreAvis": 1020,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Saffron Garden Manama",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Manama",
-      "description": "Adresse halal appréciée des habitants de Manama.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Manama+Manama",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r15",
-      "nombreAvis": 133,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Bait Al Karam",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Manama",
-      "description": "Adresse traditionnel local appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Manama",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 3306,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Shawarma Al Reef",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Manama",
-      "description": "Adresse grillades & kebab appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Manama",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 1832,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Beit Cham",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Manama",
-      "description": "Adresse libanais & levant appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Manama",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 1952,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Saffron Majlis",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Manama",
-      "description": "Adresse gastronomique appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Manama",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 1849,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Sultan Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Manama",
-      "description": "Adresse pâtisserie & café appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Manama",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 2040,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Bait Al Karam Manama 1",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Manama",
-      "description": "Adresse traditionnel local appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Manama+1+Manama",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 2081,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Shawarma Al Reef Manama 2",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Manama",
-      "description": "Adresse grillades & kebab appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Manama+2+Manama",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 2508,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Beit Cham Manama 3",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Manama",
-      "description": "Adresse libanais & levant appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Manama+3+Manama",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 678,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Saffron Majlis Manama 4",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Manama",
-      "description": "Adresse gastronomique appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Manama+4+Manama",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 1884,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Sultan Sweets Manama 5",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Manama",
-      "description": "Adresse pâtisserie & café appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Manama+5+Manama",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 1820,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Bahr Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Manama",
-      "description": "Adresse fruits de mer appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Manama",
-      "priceRange": "€€€",
-      "specialite": "Poisson du jour grillé",
-      "nombreAvis": 1444,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Mughal Spice",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Manama",
-      "description": "Adresse indien & pakistani appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Manama",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 666,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Green Yasmine",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Manama",
-      "description": "Adresse végétarien & healthy appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Manama",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "nombreAvis": 1412,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Burger Najma",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Manama",
-      "description": "Adresse burgers & fast-food appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Manama",
-      "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 905,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Tokyo Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Manama",
-      "description": "Adresse japonais & asiatique appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Manama",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1709,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Bait Al Karam Manama 11",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Manama",
-      "description": "Adresse traditionnel local appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Manama+11+Manama",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 1707,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Shawarma Al Reef Manama 12",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Manama",
-      "description": "Adresse grillades & kebab appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Manama+12+Manama",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 336,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Beit Cham Manama 13",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Manama",
-      "description": "Adresse libanais & levant appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Manama+13+Manama",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 1510,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Saffron Majlis Manama 14",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Manama",
-      "description": "Adresse gastronomique appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Manama+14+Manama",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 126,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Sultan Sweets Manama 15",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Manama",
-      "description": "Adresse pâtisserie & café appréciée à Manama, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Manama+15+Manama",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 1509,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r35"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "The Ritz-Carlton Bahrain",
-      "categorie": "Resort & Spa",
-      "score": 4.7,
-      "adresse": "Seef, Manama",
-      "description": "Resort de luxe avec plage privée, lagon et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Ritz-Carlton+Bahrain+Manama",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
-      "priceRange": "€€€€",
-      "id": "h1",
-      "nombreAvis": 2317,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "piscine-non-mixte",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "spa-femmes",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Four Seasons Bahrain Bay",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Bahrain Bay, Manama",
-      "description": "Tour emblématique sur une île privée, vue sur la baie.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Bahrain+Bay+Manama",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
-      "priceRange": "€€€€",
-      "id": "h2",
-      "nombreAvis": 1314,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Gulf Hotel Bahrain",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Adliya, Manama",
-      "description": "Institution hôtelière, nombreux restaurants halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Gulf+Hotel+Bahrain+Manama",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
-      "priceRange": "€€€",
-      "id": "h3",
-      "nombreAvis": 1652,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Ibis Seef",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Seef, Manama",
-      "description": "Hébergement économique proche des centres commerciaux.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Ibis+Seef+Manama",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
-      "priceRange": "€€",
-      "id": "h4",
-      "nombreAvis": 2322,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Wyndham Grand Manama",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Bahrain Bay, Manama",
-      "description": "Hôtel moderne au bord de l'eau, central.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Wyndham+Grand+Manama+Manama",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
-      "priceRange": "€€€",
-      "id": "h5",
-      "nombreAvis": 157,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Manama",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Manama",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Manama+Manama",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
-      "priceRange": "€€€€",
-      "id": "h6",
-      "nombreAvis": 595,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Manama 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Manama",
-      "description": "Hébergement halal-friendly à Manama.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Manama+0+Manama",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
-      "priceRange": "€€€€",
-      "nombreAvis": 776,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Manama",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Manama",
-      "description": "Hébergement halal-friendly à Manama.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Manama+Manama",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
-      "priceRange": "€€€",
-      "nombreAvis": 909,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Manama",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Manama",
-      "description": "Hébergement halal-friendly à Manama.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Manama+Manama",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
-      "priceRange": "€€€",
-      "nombreAvis": 1843,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Manama",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Manama",
-      "description": "Hébergement halal-friendly à Manama.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Manama+Manama",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Manama&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=manama",
-      "priceRange": "€€",
-      "nombreAvis": 372,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Mosquée Al-Fateh",
-      "categorie": "Religieux & Spirituel",
-      "description": "Grande mosquée pouvant accueillir 7000 fidèles, visites guidées et dôme en fibre de verre.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fateh+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Al-Fateh+Manama",
-      "id": "a1",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Qal'at al-Bahrain (UNESCO)",
-      "categorie": "Histoire & Culture",
-      "description": "Fort antique sur le site de l'ancienne Dilmun, musée et vue sur la mer.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Qal%27at+al-Bahrain+%28UNESCO%29+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Qal%27at+al-Bahrain+%28UNESCO%29+Manama",
-      "id": "a2",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Souk de Manama & Gold Souk",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, tissus et or, cœur commerçant de la ville.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Souk+de+Manama+%26+Gold+Souk+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+de+Manama+%26+Gold+Souk+Manama",
-      "id": "a3",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Bab Al Bahrain",
-      "categorie": "Histoire & Culture",
-      "description": "Porte historique marquant l'entrée du vieux souk de Manama.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Bab+Al+Bahrain+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Bab+Al+Bahrain+Manama",
-      "id": "a4",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée National du Bahreïn",
-      "categorie": "Art & Musées",
-      "description": "Patrimoine de Dilmun, art islamique et tradition de la perle.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+National+du+Bahre%C3%AFn+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+National+du+Bahre%C3%AFn+Manama",
-      "id": "a5",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Tree of Life",
-      "categorie": "Nature & Aventure",
-      "description": "Arbre millénaire isolé dans le désert, mystère botanique.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Tree+of+Life+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tree+of+Life+Manama",
-      "id": "a6",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Maison du Coran (Beit Al Quran)",
-      "categorie": "Religieux & Spirituel",
-      "description": "Musée abritant une exceptionnelle collection de manuscrits coraniques.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Maison+du+Coran+%28Beit+Al+Quran%29+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Maison+du+Coran+%28Beit+Al+Quran%29+Manama",
-      "id": "a7",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Muharraq & maisons des perles",
-      "categorie": "Histoire & Culture",
-      "description": "Parcours UNESCO de l'économie de la perle dans la vieille Muharraq.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Muharraq+%26+maisons+des+perles+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Muharraq+%26+maisons+des+perles+Manama",
-      "id": "a8",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Manama",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Manama+Manama",
-      "id": "a9",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Manama",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Manama+Manama",
-      "id": "a10",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Manama",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Manama+Manama",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Manama",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Manama+Manama",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Manama",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Manama+Manama",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Manama",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Manama+Manama",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Manama",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Manama+Manama",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Manama",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Manama+Manama",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Manama",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Manama+Manama",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Manama",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Manama+Manama",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Manama",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Manama+Manama",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Manama",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Manama+Manama",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Manama+Manama",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Al-Fateh",
-      "description": "L'une des plus grandes mosquées du monde (7000 fidèles), visites guidées gratuites.",
-      "adresse": "Juffair, Manama",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fateh+Manama",
-      "capacite": 4516,
-      "anneeConstruction": 1986,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 26.2235,
-        "lng": 50.5876
-      }
-    },
-    {
-      "nom": "Mosquée Al-Khamis",
-      "description": "L'une des plus anciennes mosquées du Golfe, doubles minarets historiques.",
-      "adresse": "Al-Khamis, Manama",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Khamis+Manama",
-      "capacite": 2743,
-      "anneeConstruction": 1913,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 26.2235,
-        "lng": 50.5876
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Manama",
-      "description": "Mosquée fréquentée de Manama, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Manama",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Manama+Manama",
-      "capacite": 1309,
-      "anneeConstruction": 1989,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 26.2235,
-        "lng": 50.5876
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Manama",
-      "description": "Mosquée fréquentée de Manama, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Manama",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Manama+Manama",
-      "capacite": 2276,
-      "anneeConstruction": 1916,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 26.2235,
-        "lng": 50.5876
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Manama",
-      "description": "Mosquée fréquentée de Manama, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Manama",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Manama+Manama",
-      "capacite": 896,
-      "anneeConstruction": 1976,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 26.2235,
-        "lng": 50.5876
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Manama",
-      "description": "Mosquée fréquentée de Manama, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Manama",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Manama+Manama",
-      "capacite": 3627,
-      "anneeConstruction": 1927,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 26.2235,
-        "lng": 50.5876
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Manama",
-      "description": "Mosquée fréquentée de Manama, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Manama",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Manama+Manama",
-      "capacite": 3342,
-      "anneeConstruction": 1902,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 26.2235,
-        "lng": 50.5876
-      }
-    }
-  ],
-  "tags": [
-    "golfe",
-    "patrimoine",
-    "unesco",
-    "perle",
-    "famille",
-    "souk"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Bait Al Karam",
-      "Bait Al Karam Manama 1",
-      "Burger Najma",
-      "Shawarma Al Reef",
-      "Shawarma Al Reef Manama 2"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Haji Gahwa",
-      "Emmawash",
-      "Al Abraaj",
-      "Naseef Cafe",
-      "Beit Beirut Manama"
-    ],
-    "incontournables": [
-      "Bait Al Karam",
-      "Shawarma Al Reef Manama 2",
-      "Al Abraaj",
-      "Saffron by Jena",
-      "Villa Mamas"
-    ],
-    "pepitesCachees": [
-      "Naseef Cafe",
-      "Saffron Garden Manama",
-      "Shawarma Al Reef Manama 12"
-    ],
-    "idealFamille": [
-      "Haji Gahwa",
-      "Saffron by Jena",
-      "Emmawash",
-      "Villa Mamas",
-      "Cantina Kahlo"
-    ],
-    "gastronomique": [
-      "Mosaic",
-      "Saffron Garden Manama",
-      "Saffron Majlis",
-      "Saffron Majlis Manama 4",
-      "Saffron Majlis Manama 14"
-    ],
-    "ouvertNuit": [
-      "Emmawash",
-      "Cantina Kahlo",
-      "Al Abraaj"
-    ],
-    "vueExceptionnelle": [
-      "Bahr Seafood"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Manama",
+   "description": "Mosquée fréquentée de Manama, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Manama",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Manama+Manama",
+   "capacite": 896,
+   "anneeConstruction": 1976,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 26.2235,
+    "lng": 50.5876
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Manama",
+   "description": "Mosquée fréquentée de Manama, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Manama",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Manama+Manama",
+   "capacite": 3627,
+   "anneeConstruction": 1927,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 26.2235,
+    "lng": 50.5876
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Manama",
+   "description": "Mosquée fréquentée de Manama, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Manama",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Manama+Manama",
+   "capacite": 3342,
+   "anneeConstruction": 1902,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 26.2235,
+    "lng": 50.5876
+   }
   }
+ ],
+ "tags": [
+  "golfe",
+  "patrimoine",
+  "unesco",
+  "perle",
+  "famille",
+  "souk"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Bait Al Karam",
+   "Bait Al Karam Manama 1",
+   "Burger Najma",
+   "Shawarma Al Reef",
+   "Shawarma Al Reef Manama 2"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Haji Gahwa",
+   "Emmawash",
+   "Al Abraaj",
+   "Naseef Cafe",
+   "Beit Beirut Manama"
+  ],
+  "incontournables": [
+   "Bait Al Karam",
+   "Shawarma Al Reef Manama 2",
+   "Al Abraaj",
+   "Saffron by Jena",
+   "Villa Mamas"
+  ],
+  "pepitesCachees": [
+   "Naseef Cafe",
+   "Saffron Garden Manama",
+   "Shawarma Al Reef Manama 12"
+  ],
+  "idealFamille": [
+   "Haji Gahwa",
+   "Saffron by Jena",
+   "Emmawash",
+   "Villa Mamas",
+   "Cantina Kahlo"
+  ],
+  "gastronomique": [
+   "Mosaic",
+   "Saffron Garden Manama",
+   "Saffron Majlis",
+   "Saffron Majlis Manama 4",
+   "Saffron Majlis Manama 14"
+  ],
+  "ouvertNuit": [
+   "Emmawash",
+   "Cantina Kahlo",
+   "Al Abraaj"
+  ],
+  "vueExceptionnelle": [
+   "Bahr Seafood"
+  ]
+ }
 }

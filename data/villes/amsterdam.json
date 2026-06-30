@@ -1,2263 +1,2280 @@
 {
-  "nom": "Amsterdam",
-  "pays": "Pays-Bas",
-  "slug": "amsterdam",
-  "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=1400&q=85",
-  "description": "Amsterdam, capitale des canaux, abrite une importante communauté musulmane (turque, marocaine, surinamaise). Quartiers Oud-West et De Pijp riches en adresses halal.",
-  "descriptionLongue": "Ville des canaux classés UNESCO, Amsterdam est cosmopolite et tolérante. Ses quartiers d'Oud-West, De Pijp et Nieuw-West concentrent restaurants halal turcs, marocains et surinamais, marchés et mosquées. Entre musées de classe mondiale (Rijksmuseum, Van Gogh), balades à vélo et héritage multiculturel, la ville séduit les voyageurs musulmans.",
-  "halalScore": 7.5,
-  "score_halal": 3.8,
+ "nom": "Amsterdam",
+ "pays": "Pays-Bas",
+ "slug": "amsterdam",
+ "image": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=1400&q=85",
+ "description": "Amsterdam, capitale des canaux, abrite une importante communauté musulmane (turque, marocaine, surinamaise). Quartiers Oud-West et De Pijp riches en adresses halal.",
+ "descriptionLongue": "Ville des canaux classés UNESCO, Amsterdam est cosmopolite et tolérante. Ses quartiers d'Oud-West, De Pijp et Nieuw-West concentrent restaurants halal turcs, marocains et surinamais, marchés et mosquées. Entre musées de classe mondiale (Rijksmuseum, Van Gogh), balades à vélo et héritage multiculturel, la ville séduit les voyageurs musulmans.",
+ "halalScore": 7.5,
+ "score_halal": 3.8,
+ "mosquees": 50,
+ "population": "920 000",
+ "langue": "Néerlandais",
+ "monnaie": "Euro (EUR)",
+ "fuseau": "UTC+1",
+ "meilleureEpoque": "Avril à Septembre",
+ "prixMoyenNuit": "130€",
+ "continent": "Europe",
+ "codeISO": "NL",
+ "pays_slug": "pays-bas",
+ "region": "Europe de l'Ouest",
+ "meta_title": "Voyage Halal à Amsterdam — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Amsterdam — Halal Trust Score 7.5/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Amsterdam — Halal Trust Score 7.5/10.",
+ "coordonnees": {
+  "lat": 52.3676,
+  "lng": 4.9041
+ },
+ "image_alt": "Vue de Amsterdam, Pays-Bas",
+ "statistiques": {
   "mosquees": 50,
-  "population": "920 000",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 12,
+  "hotels": 15
+ },
+ "infos_pratiques": {
   "langue": "Néerlandais",
   "monnaie": "Euro (EUR)",
-  "fuseau": "UTC+1",
-  "meilleureEpoque": "Avril à Septembre",
-  "prixMoyenNuit": "130€",
-  "continent": "Europe",
-  "codeISO": "NL",
-  "pays_slug": "pays-bas",
-  "region": "Europe de l'Ouest",
-  "meta_title": "Voyage Halal à Amsterdam — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Amsterdam — Halal Trust Score 7.5/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Amsterdam — Halal Trust Score 7.5/10.",
-  "coordonnees": {
+  "meilleure_periode": "Avril à Septembre",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Espace Schengen — pas de visa pour les Français",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Tram, métro, vélo, train",
+  "priseElectrique": "Type C/F — 230V",
+  "decalageHoraire": "Même heure que Paris"
+ },
+ "restaurants": [
+  {
+   "nom": "Bazar Amsterdam",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Amsterdam",
+   "description": "Levant et nord-africain, iconique à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Bazar+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Levant et nord-africain",
+   "nombreAvis": 61,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Sama Sebo",
+   "type": "Néerlandais & Indonésien",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Amsterdam",
+   "description": "Indonésien rijsttafel halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Sama+Sebo+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Indonésien rijsttafel halal",
+   "nombreAvis": 1398,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Café de Klos",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Amsterdam",
+   "description": "Sans alcool, burgers halal à Amsterdam. Options halal disponibles.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+de+Klos+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Sans alcool",
+   "nombreAvis": 1301,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Restaurant Yamazato",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Amsterdam",
+   "description": "Japonais halal, Okura à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Yamazato+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Japonais halal",
+   "nombreAvis": 951,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Moeders Restaurant",
+   "type": "Néerlandais & Indonésien",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Amsterdam",
+   "description": "Néerlandais halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Moeders+Restaurant+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Néerlandais halal",
+   "nombreAvis": 1237,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "De Kas",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Amsterdam",
+   "description": "Jardin bio halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=De+Kas+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Jardin bio halal",
+   "nombreAvis": 1086,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Rijsel",
+   "type": "Néerlandais & International",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Bistro halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Rijsel+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Bistro halal",
+   "nombreAvis": 2822,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Van Vlaanderen",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Néerlandais gastronomique à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Van+Vlaanderen+Amsterdam",
+   "priceRange": "€€€€",
+   "specialite": "Néerlandais gastronomique",
+   "nombreAvis": 3385,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Haesje Claes",
+   "type": "Néerlandais & Indonésien",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Amsterdam",
+   "description": "Néerlandais traditionnel à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Haesje+Claes+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Néerlandais traditionnel",
+   "nombreAvis": 73,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Café Winkel 43",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Apple pie hollandaise à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Winkel+43+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Apple pie hollandaise",
+   "nombreAvis": 694,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Al Jawahir Restaurant",
+   "type": "Marocain & Maghreb",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Amsterdam",
+   "description": "Marocain populaire à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Jawahir+Restaurant+Amsterdam",
+   "priceRange": "€",
+   "specialite": "Marocain populaire",
+   "nombreAvis": 2161,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Restaurant Marrakech Amsterdam",
+   "type": "Marocain & Maghreb",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Amsterdam",
+   "description": "Marocain à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Marrakech+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Marocain",
+   "nombreAvis": 1189,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Eetcafé de Orient",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Marocain-levant à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Eetcaf%C3%A9+de+Orient+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Marocain-levant",
+   "nombreAvis": 2458,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Ottoman Amsterdam",
+   "type": "Turc",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Turc gastronomique à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Ottoman+Amsterdam+Amsterdam",
+   "priceRange": "€€€€",
+   "specialite": "Turc gastronomique",
+   "nombreAvis": 2576,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "CZN Burak Amsterdam",
+   "type": "Turc",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Amsterdam",
+   "description": "Turc viral à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=CZN+Burak+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Turc viral",
+   "nombreAvis": 435,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Dürüm Nazar",
+   "type": "Turc",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Amsterdam",
+   "description": "Turc populaire à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=D%C3%BCr%C3%BCm+Nazar+Amsterdam",
+   "priceRange": "€",
+   "specialite": "Turc populaire",
+   "nombreAvis": 2091,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Kebab Usta Amsterdam",
+   "type": "Turc",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Kebab premium à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Kebab+Usta+Amsterdam+Amsterdam",
+   "priceRange": "€€€€",
+   "specialite": "Kebab premium",
+   "nombreAvis": 2550,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "New Deli Amsterdam",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Amsterdam",
+   "description": "Indien halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=New+Deli+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Indien halal",
+   "nombreAvis": 1390,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Bollywood Indian Kitchen",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Indien populaire à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Bollywood+Indian+Kitchen+Amsterdam",
+   "priceRange": "€",
+   "specialite": "Indien populaire",
+   "nombreAvis": 1337,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Taj Mahal Amsterdam",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Indien classique à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Taj+Mahal+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Indien classique",
+   "nombreAvis": 3206,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Sichuan Food Amsterdam",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Sichuan halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Sichuan+Food+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Sichuan halal",
+   "nombreAvis": 3172,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "China Town Amsterdam",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Amsterdam",
+   "description": "Cantonais halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=China+Town+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Cantonais halal",
+   "nombreAvis": 754,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Sumo Amsterdam",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Amsterdam",
+   "description": "Sushi halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Sumo+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Sushi halal",
+   "nombreAvis": 287,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Sapporo Amsterdam",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Japonais halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Sapporo+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Japonais halal",
+   "nombreAvis": 3533,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Burger & Lobster Amsterdam",
+   "type": "Néerlandais & International",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Amsterdam",
+   "description": "Option halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+%26+Lobster+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Option halal",
+   "nombreAvis": 577,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Dampkring Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Amsterdam",
+   "description": "Sans alcool, café à Amsterdam. Options halal disponibles.",
+   "mapsUrl": "https://maps.google.com/?q=Dampkring+Caf%C3%A9+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Sans alcool",
+   "nombreAvis": 592,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Albert Cuypmarkt Food",
+   "type": "Néerlandais & International",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Marché diversifié à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Albert+Cuypmarkt+Food+Amsterdam",
+   "priceRange": "€",
+   "specialite": "Marché diversifié",
+   "nombreAvis": 1405,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "De Pijp Restaurants",
+   "type": "Néerlandais & International",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Quartier multiculturel à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=De+Pijp+Restaurants+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Quartier multiculturel",
+   "nombreAvis": 224,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Westerpark Terrasse",
+   "type": "Néerlandais & International",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Été, halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Westerpark+Terrasse+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Été",
+   "nombreAvis": 3320,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Foodhallen Amsterdam",
+   "type": "Néerlandais & International",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Amsterdam",
+   "description": "Food hall, options halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Foodhallen+Amsterdam+Amsterdam",
+   "priceRange": "€",
+   "specialite": "Food hall",
+   "nombreAvis": 371,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Pllek Amsterdam",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Amsterdam",
+   "description": "Café bord de l'IJ à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Pllek+Amsterdam+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Café bord de l'ij",
+   "nombreAvis": 1220,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Café Brecht Amsterdam",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Amsterdam",
+   "description": "Ambiance halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Brecht+Amsterdam+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Ambiance halal",
+   "nombreAvis": 199,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "MOMO Amsterdam",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Amsterdam",
+   "description": "Asiatique fusion à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=MOMO+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Asiatique fusion",
+   "nombreAvis": 91,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Envy Amsterdam",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Amsterdam",
+   "description": "Gastronomique à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Envy+Amsterdam+Amsterdam",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique",
+   "nombreAvis": 1497,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "The Dylan Amsterdam Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Amsterdam",
+   "description": "Luxe à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=The+Dylan+Amsterdam+Restaurant+Amsterdam",
+   "priceRange": "€€€€",
+   "specialite": "Luxe",
+   "nombreAvis": 1118,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Sofitel Legend The Grand Dining",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Amsterdam",
+   "description": "Luxe à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Sofitel+Legend+The+Grand+Dining+Amsterdam",
+   "priceRange": "€€€€",
+   "specialite": "Luxe",
+   "nombreAvis": 417,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Hotel V Food",
+   "type": "Néerlandais & International",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Amsterdam",
+   "description": "Moderne halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Hotel+V+Food+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Moderne halal",
+   "nombreAvis": 2461,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Kholossal",
+   "type": "Cuisine du monde",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Street food africain halal à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Kholossal+Amsterdam",
+   "priceRange": "€",
+   "specialite": "Street food africain halal",
+   "nombreAvis": 3246,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Al Andalus Amsterdam",
+   "type": "Marocain & Maghreb",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Amsterdam",
+   "description": "Marocain-andalou à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Andalus+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Marocain-andalou",
+   "nombreAvis": 360,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Sahara Grill Amsterdam",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Amsterdam",
+   "description": "Levant grillades à Amsterdam.",
+   "mapsUrl": "https://maps.google.com/?q=Sahara+Grill+Amsterdam+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Levant grillades",
+   "nombreAvis": 470,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Le Comptoir Halal",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Adresse traditionnel local appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Spécialité du pays",
+   "nombreAvis": 1325,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Beit Beirut",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Adresse libanais & levant appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1533,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Shahi Tandoor",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Amsterdam",
+   "description": "Adresse indien & pakistani appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1862,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Dar Marrakech",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Amsterdam",
+   "description": "Adresse marocain appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Tajine",
+   "nombreAvis": 1959,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Anatolia Grill",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Amsterdam",
+   "description": "Adresse turc appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "İskender kebab",
+   "nombreAvis": 1339,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Halal Burger Co",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Amsterdam",
+   "description": "Adresse burgers & fast-food appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Halal+Burger+Co+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Smash burger halal",
+   "nombreAvis": 121,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Sakura Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Amsterdam",
+   "description": "Adresse japonais & asiatique appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Amsterdam",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 868,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Saveurs Gastronomiques",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Amsterdam",
+   "description": "Adresse gastronomique appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saveurs+Gastronomiques+Amsterdam",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation",
+   "nombreAvis": 714,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Maison du Thé",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Adresse pâtisserie & café appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+du+Th%C3%A9+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries orientales",
+   "nombreAvis": 3409,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Le Comptoir Halal Amsterdam 10",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Adresse traditionnel local appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Amsterdam+10+Amsterdam",
+   "priceRange": "€€",
+   "specialite": "Spécialité du pays",
+   "nombreAvis": 656,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r50"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Hotel De L'Europe Amsterdam",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Ultra-luxe à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+De+L%27Europe+Amsterdam+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€€",
+   "nombreAvis": 940,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h1",
+   "lat": 52.3676444,
+   "lng": 4.8944657
+  },
+  {
+   "nom": "Sofitel Legend The Grand",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Amsterdam",
+   "description": "Luxe à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Sofitel+Legend+The+Grand+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€€",
+   "nombreAvis": 2093,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h2"
+  },
+  {
+   "nom": "The Dylan Amsterdam",
+   "categorie": "Riad & Boutique",
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Boutique luxe à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=The+Dylan+Amsterdam+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€",
+   "nombreAvis": 977,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": 52.3692835,
+   "lng": 4.8840074
+  },
+  {
+   "nom": "Conservatorium Hotel",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Luxe à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Conservatorium+Hotel+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€€",
+   "nombreAvis": 2196,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4",
+   "lat": 52.3587108,
+   "lng": 4.8785502
+  },
+  {
+   "nom": "Pulitzer Amsterdam",
+   "categorie": "Luxe",
+   "score": 4.8,
+   "adresse": "Amsterdam",
+   "description": "Luxe à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Pulitzer+Amsterdam+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€€",
+   "nombreAvis": 579,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5",
+   "lat": 52.3728089,
+   "lng": 4.8834291
+  },
+  {
+   "nom": "NH Hotel Amsterdam Centraal",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Amsterdam",
+   "description": "Standard à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=NH+Hotel+Amsterdam+Centraal+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€",
+   "nombreAvis": 673,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": 52.376792,
+   "lng": 4.9048729
+  },
+  {
+   "nom": "Citadel by NH",
+   "categorie": "Standard",
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Standard à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Citadel+by+NH+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€",
+   "nombreAvis": 716,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "ibis Amsterdam Centre",
+   "categorie": "Budget",
+   "score": 4.4,
+   "adresse": "Amsterdam",
+   "description": "Budget à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=ibis+Amsterdam+Centre+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€",
+   "nombreAvis": 1337,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": 52.3795085,
+   "lng": 4.8971731
+  },
+  {
+   "nom": "Stay Okay Amsterdam",
+   "categorie": "Budget",
+   "score": 4.7,
+   "adresse": "Amsterdam",
+   "description": "Budget à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Stay+Okay+Amsterdam+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€",
+   "nombreAvis": 227,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "ClinkNOORD",
+   "categorie": "Budget",
+   "score": 4.3,
+   "adresse": "Amsterdam",
+   "description": "Budget design à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=ClinkNOORD+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€",
+   "nombreAvis": 1409,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10",
+   "lat": 52.3841845,
+   "lng": 4.9036707
+  },
+  {
+   "nom": "Grand Plaza Amsterdam",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Amsterdam",
+   "description": "Hébergement halal-friendly à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Amsterdam+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€€",
+   "nombreAvis": 1131,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h11"
+  },
+  {
+   "nom": "City Comfort Amsterdam",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Amsterdam",
+   "description": "Hébergement halal-friendly à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Amsterdam+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€",
+   "nombreAvis": 781,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  },
+  {
+   "nom": "Boutique Dar Amsterdam",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Amsterdam",
+   "description": "Hébergement halal-friendly à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Amsterdam+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€",
+   "nombreAvis": 1089,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h13"
+  },
+  {
+   "nom": "Budget Inn Amsterdam",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Amsterdam",
+   "description": "Hébergement halal-friendly à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Amsterdam+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€",
+   "nombreAvis": 279,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14",
+   "lat": 52.3761988,
+   "lng": 4.892246
+  },
+  {
+   "nom": "Seaside Resort Amsterdam",
+   "categorie": "Resort & Spa",
+   "score": 4.5,
+   "adresse": "Amsterdam",
+   "description": "Hébergement halal-friendly à Amsterdam.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Amsterdam+Amsterdam",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
+   "priceRange": "€€€€",
+   "nombreAvis": 855,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Rijksmuseum",
+   "categorie": "Art & Musées",
+   "description": "Grand musée national néerlandais",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Rijksmuseum+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Rijksmuseum+Amsterdam",
+   "id": "a1",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Canaux d'Amsterdam (croisière)",
+   "categorie": "Nature & Aventure",
+   "description": "Tour des canaux UNESCO",
+   "duree": "1-2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Canaux+d%27Amsterdam+%28croisi%C3%A8re%29+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Canaux+d%27Amsterdam+%28croisi%C3%A8re%29+Amsterdam",
+   "id": "a2",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Blue (Westermoskee)",
+   "categorie": "Religieux & Spirituel",
+   "description": "Grande mosquée ottomane d'Amsterdam",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Blue+%28Westermoskee%29+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Blue+%28Westermoskee%29+Amsterdam",
+   "id": "a3",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier De Pijp & Albert Cuypmarkt",
+   "categorie": "Shopping & Souks",
+   "description": "Marché et quartier multiculturel",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+De+Pijp+%26+Albert+Cuypmarkt+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+De+Pijp+%26+Albert+Cuypmarkt+Amsterdam",
+   "id": "a4",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Amsterdam",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Amsterdam+Amsterdam",
+   "id": "a5",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Amsterdam",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Amsterdam+Amsterdam",
+   "id": "a6",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Corniche & front de mer de Amsterdam",
+   "categorie": "Nature & Aventure",
+   "description": "Promenade au bord de l'eau au coucher du soleil.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Corniche+%26+front+de+mer+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+%26+front+de+mer+de+Amsterdam+Amsterdam",
+   "id": "a7",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée national de Amsterdam",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et l'art islamique de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+national+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+national+de+Amsterdam+Amsterdam",
+   "id": "a8",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Atelier cuisine halal de Amsterdam",
+   "categorie": "Gastronomie",
+   "description": "Cours de cuisine locale avec un chef, déjeuner inclus.",
+   "duree": "3h",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+cuisine+halal+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+cuisine+halal+de+Amsterdam+Amsterdam",
+   "id": "a9",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Hammam traditionnel de Amsterdam",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Amsterdam+Amsterdam",
+   "id": "a10",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Amsterdam",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Amsterdam+Amsterdam",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Amsterdam",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Amsterdam+Amsterdam",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Amsterdam",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Amsterdam+Amsterdam",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Amsterdam",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Amsterdam+Amsterdam",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Amsterdam",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Amsterdam+Amsterdam",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Mosquée historique de Amsterdam",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Amsterdam+Amsterdam",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Parc et jardins de Amsterdam",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Amsterdam+Amsterdam",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Amsterdam",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Amsterdam+Amsterdam",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Amsterdam",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Amsterdam+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Amsterdam+Amsterdam",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Quartier historique de Amsterdam 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Amsterdam+10+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Amsterdam+10+Amsterdam",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Grand marché central de Amsterdam 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Amsterdam+11+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Amsterdam+11+Amsterdam",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Amsterdam 12",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Amsterdam+12+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Amsterdam+12+Amsterdam",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Musée de la ville de Amsterdam 13",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Amsterdam+13+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Amsterdam+13+Amsterdam",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Food tour halal de Amsterdam 14",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Amsterdam+14+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Amsterdam+14+Amsterdam",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Hammam traditionnel de Amsterdam 15",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Amsterdam+15+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Amsterdam+15+Amsterdam",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Mosquée historique de Amsterdam 16",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Amsterdam+16+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Amsterdam+16+Amsterdam",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Parc et jardins de Amsterdam 17",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Amsterdam+17+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Amsterdam+17+Amsterdam",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Amsterdam 18",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Amsterdam+18+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Amsterdam+18+Amsterdam",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Amsterdam 19",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Amsterdam+19+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Amsterdam+19+Amsterdam",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Quartier historique de Amsterdam 20",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Amsterdam+20+Amsterdam",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Amsterdam+20+Amsterdam",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Westermoskee (Mosquée Aya Sofya)",
+   "description": "Plus grande mosquée d'Amsterdam, style ottoman",
+   "adresse": "De Baarsjes",
+   "mapsUrl": "https://maps.google.com/?q=Westermoskee+%28Mosqu%C3%A9e+Aya+Sofya%29+Amsterdam",
+   "capacite": 1301,
+   "anneeConstruction": 1971,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 52.3676,
     "lng": 4.9041
+   }
   },
-  "image_alt": "Vue de Amsterdam, Pays-Bas",
-  "statistiques": {
-    "mosquees": 50,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 12
+  {
+   "nom": "Mosquée Fatih",
+   "description": "Mosquée communautaire du centre",
+   "adresse": "Oud-West",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Fatih+Amsterdam",
+   "capacite": 7384,
+   "anneeConstruction": 2014,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 52.3676,
+    "lng": 4.9041
+   }
   },
-  "infos_pratiques": {
-    "langue": "Néerlandais",
-    "monnaie": "Euro (EUR)",
-    "meilleure_periode": "Avril à Septembre",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Amsterdam",
+   "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Amsterdam",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Amsterdam+Amsterdam",
+   "capacite": 4625,
+   "anneeConstruction": 1985,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 52.3676,
+    "lng": 4.9041
+   }
   },
-  "infoPratique": {
-    "visa": "Espace Schengen — pas de visa pour les Français",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Tram, métro, vélo, train",
-    "priseElectrique": "Type C/F — 230V",
-    "decalageHoraire": "Même heure que Paris"
+  {
+   "nom": "Grande Mosquée de Amsterdam",
+   "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Amsterdam",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Amsterdam+Amsterdam",
+   "capacite": 2718,
+   "anneeConstruction": 1938,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 52.3676,
+    "lng": 4.9041
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Bazar Amsterdam",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Amsterdam",
-      "description": "Levant et nord-africain, iconique à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Bazar+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Levant et nord-africain",
-      "nombreAvis": 61,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Sama Sebo",
-      "type": "Néerlandais & Indonésien",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Amsterdam",
-      "description": "Indonésien rijsttafel halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Sama+Sebo+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Indonésien rijsttafel halal",
-      "nombreAvis": 1398,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Café de Klos",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Amsterdam",
-      "description": "Sans alcool, burgers halal à Amsterdam. Options halal disponibles.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+de+Klos+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Sans alcool",
-      "nombreAvis": 1301,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Restaurant Yamazato",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Amsterdam",
-      "description": "Japonais halal, Okura à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Yamazato+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Japonais halal",
-      "nombreAvis": 951,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Moeders Restaurant",
-      "type": "Néerlandais & Indonésien",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Amsterdam",
-      "description": "Néerlandais halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Moeders+Restaurant+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Néerlandais halal",
-      "nombreAvis": 1237,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "De Kas",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Amsterdam",
-      "description": "Jardin bio halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=De+Kas+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Jardin bio halal",
-      "nombreAvis": 1086,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Rijsel",
-      "type": "Néerlandais & International",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Bistro halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Rijsel+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Bistro halal",
-      "nombreAvis": 2822,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Van Vlaanderen",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Néerlandais gastronomique à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Van+Vlaanderen+Amsterdam",
-      "priceRange": "€€€€",
-      "specialite": "Néerlandais gastronomique",
-      "nombreAvis": 3385,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Haesje Claes",
-      "type": "Néerlandais & Indonésien",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Amsterdam",
-      "description": "Néerlandais traditionnel à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Haesje+Claes+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Néerlandais traditionnel",
-      "nombreAvis": 73,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Café Winkel 43",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Apple pie hollandaise à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Winkel+43+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Apple pie hollandaise",
-      "nombreAvis": 694,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Al Jawahir Restaurant",
-      "type": "Marocain & Maghreb",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Amsterdam",
-      "description": "Marocain populaire à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Jawahir+Restaurant+Amsterdam",
-      "priceRange": "€",
-      "specialite": "Marocain populaire",
-      "nombreAvis": 2161,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Restaurant Marrakech Amsterdam",
-      "type": "Marocain & Maghreb",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Amsterdam",
-      "description": "Marocain à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Marrakech+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Marocain",
-      "nombreAvis": 1189,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Eetcafé de Orient",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Marocain-levant à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Eetcaf%C3%A9+de+Orient+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Marocain-levant",
-      "nombreAvis": 2458,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Ottoman Amsterdam",
-      "type": "Turc",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Turc gastronomique à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Ottoman+Amsterdam+Amsterdam",
-      "priceRange": "€€€€",
-      "specialite": "Turc gastronomique",
-      "nombreAvis": 2576,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "CZN Burak Amsterdam",
-      "type": "Turc",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Amsterdam",
-      "description": "Turc viral à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=CZN+Burak+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Turc viral",
-      "nombreAvis": 435,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Dürüm Nazar",
-      "type": "Turc",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Amsterdam",
-      "description": "Turc populaire à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=D%C3%BCr%C3%BCm+Nazar+Amsterdam",
-      "priceRange": "€",
-      "specialite": "Turc populaire",
-      "nombreAvis": 2091,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Kebab Usta Amsterdam",
-      "type": "Turc",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Kebab premium à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Kebab+Usta+Amsterdam+Amsterdam",
-      "priceRange": "€€€€",
-      "specialite": "Kebab premium",
-      "nombreAvis": 2550,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "New Deli Amsterdam",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Amsterdam",
-      "description": "Indien halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=New+Deli+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Indien halal",
-      "nombreAvis": 1390,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Bollywood Indian Kitchen",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Indien populaire à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Bollywood+Indian+Kitchen+Amsterdam",
-      "priceRange": "€",
-      "specialite": "Indien populaire",
-      "nombreAvis": 1337,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Taj Mahal Amsterdam",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Indien classique à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Taj+Mahal+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Indien classique",
-      "nombreAvis": 3206,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Sichuan Food Amsterdam",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Sichuan halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Sichuan+Food+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Sichuan halal",
-      "nombreAvis": 3172,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "China Town Amsterdam",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Amsterdam",
-      "description": "Cantonais halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=China+Town+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Cantonais halal",
-      "nombreAvis": 754,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Sumo Amsterdam",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Amsterdam",
-      "description": "Sushi halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Sumo+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Sushi halal",
-      "nombreAvis": 287,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Sapporo Amsterdam",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Japonais halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Sapporo+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Japonais halal",
-      "nombreAvis": 3533,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Burger & Lobster Amsterdam",
-      "type": "Néerlandais & International",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Amsterdam",
-      "description": "Option halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+%26+Lobster+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Option halal",
-      "nombreAvis": 577,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Dampkring Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Amsterdam",
-      "description": "Sans alcool, café à Amsterdam. Options halal disponibles.",
-      "mapsUrl": "https://maps.google.com/?q=Dampkring+Caf%C3%A9+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Sans alcool",
-      "nombreAvis": 592,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Albert Cuypmarkt Food",
-      "type": "Néerlandais & International",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Marché diversifié à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Albert+Cuypmarkt+Food+Amsterdam",
-      "priceRange": "€",
-      "specialite": "Marché diversifié",
-      "nombreAvis": 1405,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "De Pijp Restaurants",
-      "type": "Néerlandais & International",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Quartier multiculturel à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=De+Pijp+Restaurants+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Quartier multiculturel",
-      "nombreAvis": 224,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Westerpark Terrasse",
-      "type": "Néerlandais & International",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Été, halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Westerpark+Terrasse+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Été",
-      "nombreAvis": 3320,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Foodhallen Amsterdam",
-      "type": "Néerlandais & International",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Amsterdam",
-      "description": "Food hall, options halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Foodhallen+Amsterdam+Amsterdam",
-      "priceRange": "€",
-      "specialite": "Food hall",
-      "nombreAvis": 371,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Pllek Amsterdam",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Amsterdam",
-      "description": "Café bord de l'IJ à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Pllek+Amsterdam+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Café bord de l'ij",
-      "nombreAvis": 1220,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Café Brecht Amsterdam",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Amsterdam",
-      "description": "Ambiance halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Brecht+Amsterdam+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Ambiance halal",
-      "nombreAvis": 199,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "MOMO Amsterdam",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Amsterdam",
-      "description": "Asiatique fusion à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=MOMO+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Asiatique fusion",
-      "nombreAvis": 91,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Envy Amsterdam",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Amsterdam",
-      "description": "Gastronomique à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Envy+Amsterdam+Amsterdam",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 1497,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "The Dylan Amsterdam Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Amsterdam",
-      "description": "Luxe à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=The+Dylan+Amsterdam+Restaurant+Amsterdam",
-      "priceRange": "€€€€",
-      "specialite": "Luxe",
-      "nombreAvis": 1118,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Sofitel Legend The Grand Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Amsterdam",
-      "description": "Luxe à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Sofitel+Legend+The+Grand+Dining+Amsterdam",
-      "priceRange": "€€€€",
-      "specialite": "Luxe",
-      "nombreAvis": 417,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Hotel V Food",
-      "type": "Néerlandais & International",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Amsterdam",
-      "description": "Moderne halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Hotel+V+Food+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Moderne halal",
-      "nombreAvis": 2461,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Kholossal",
-      "type": "Cuisine du monde",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Street food africain halal à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Kholossal+Amsterdam",
-      "priceRange": "€",
-      "specialite": "Street food africain halal",
-      "nombreAvis": 3246,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Al Andalus Amsterdam",
-      "type": "Marocain & Maghreb",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Amsterdam",
-      "description": "Marocain-andalou à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Andalus+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Marocain-andalou",
-      "nombreAvis": 360,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Sahara Grill Amsterdam",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Amsterdam",
-      "description": "Levant grillades à Amsterdam.",
-      "mapsUrl": "https://maps.google.com/?q=Sahara+Grill+Amsterdam+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Levant grillades",
-      "nombreAvis": 470,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Le Comptoir Halal",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Adresse traditionnel local appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Spécialité du pays",
-      "nombreAvis": 1325,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Beit Beirut",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Adresse libanais & levant appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1533,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Shahi Tandoor",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Amsterdam",
-      "description": "Adresse indien & pakistani appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1862,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Dar Marrakech",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Amsterdam",
-      "description": "Adresse marocain appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Tajine",
-      "nombreAvis": 1959,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Anatolia Grill",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Amsterdam",
-      "description": "Adresse turc appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "İskender kebab",
-      "nombreAvis": 1339,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Halal Burger Co",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Amsterdam",
-      "description": "Adresse burgers & fast-food appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Burger+Co+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 121,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Sakura Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Amsterdam",
-      "description": "Adresse japonais & asiatique appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Amsterdam",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 868,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Saveurs Gastronomiques",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Amsterdam",
-      "description": "Adresse gastronomique appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saveurs+Gastronomiques+Amsterdam",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 714,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Maison du Thé",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Adresse pâtisserie & café appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+du+Th%C3%A9+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries orientales",
-      "nombreAvis": 3409,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Le Comptoir Halal Amsterdam 10",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Adresse traditionnel local appréciée à Amsterdam, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Amsterdam+10+Amsterdam",
-      "priceRange": "€€",
-      "specialite": "Spécialité du pays",
-      "nombreAvis": 656,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r50"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Hotel De L'Europe Amsterdam",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Ultra-luxe à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+De+L%27Europe+Amsterdam+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€€",
-      "nombreAvis": 940,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Sofitel Legend The Grand",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Amsterdam",
-      "description": "Luxe à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Sofitel+Legend+The+Grand+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€€",
-      "nombreAvis": 2093,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "The Dylan Amsterdam",
-      "categorie": "Riad & Boutique",
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Boutique luxe à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=The+Dylan+Amsterdam+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€",
-      "nombreAvis": 977,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Conservatorium Hotel",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Luxe à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Conservatorium+Hotel+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€€",
-      "nombreAvis": 2196,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Pulitzer Amsterdam",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Amsterdam",
-      "description": "Luxe à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Pulitzer+Amsterdam+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€€",
-      "nombreAvis": 579,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "NH Hotel Amsterdam Centraal",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Amsterdam",
-      "description": "Standard à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=NH+Hotel+Amsterdam+Centraal+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€",
-      "nombreAvis": 673,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Citadel by NH",
-      "categorie": "Standard",
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Standard à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Citadel+by+NH+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€",
-      "nombreAvis": 716,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "ibis Amsterdam Centre",
-      "categorie": "Budget",
-      "score": 4.4,
-      "adresse": "Amsterdam",
-      "description": "Budget à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=ibis+Amsterdam+Centre+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€",
-      "nombreAvis": 1337,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Stay Okay Amsterdam",
-      "categorie": "Budget",
-      "score": 4.7,
-      "adresse": "Amsterdam",
-      "description": "Budget à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Stay+Okay+Amsterdam+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€",
-      "nombreAvis": 227,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "ClinkNOORD",
-      "categorie": "Budget",
-      "score": 4.3,
-      "adresse": "Amsterdam",
-      "description": "Budget design à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=ClinkNOORD+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€",
-      "nombreAvis": 1409,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Grand Plaza Amsterdam",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Amsterdam",
-      "description": "Hébergement halal-friendly à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Amsterdam+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€€",
-      "nombreAvis": 1131,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "City Comfort Amsterdam",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Amsterdam",
-      "description": "Hébergement halal-friendly à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Amsterdam+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€",
-      "nombreAvis": 781,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Boutique Dar Amsterdam",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Amsterdam",
-      "description": "Hébergement halal-friendly à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Amsterdam+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€",
-      "nombreAvis": 1089,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "Budget Inn Amsterdam",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Amsterdam",
-      "description": "Hébergement halal-friendly à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Amsterdam+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€",
-      "nombreAvis": 279,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Seaside Resort Amsterdam",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Amsterdam",
-      "description": "Hébergement halal-friendly à Amsterdam.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Amsterdam+Amsterdam",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Amsterdam&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=amsterdam",
-      "priceRange": "€€€€",
-      "nombreAvis": 855,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Rijksmuseum",
-      "categorie": "Art & Musées",
-      "description": "Grand musée national néerlandais",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Rijksmuseum+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Rijksmuseum+Amsterdam",
-      "id": "a1",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Canaux d'Amsterdam (croisière)",
-      "categorie": "Nature & Aventure",
-      "description": "Tour des canaux UNESCO",
-      "duree": "1-2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Canaux+d%27Amsterdam+%28croisi%C3%A8re%29+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Canaux+d%27Amsterdam+%28croisi%C3%A8re%29+Amsterdam",
-      "id": "a2",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Blue (Westermoskee)",
-      "categorie": "Religieux & Spirituel",
-      "description": "Grande mosquée ottomane d'Amsterdam",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Blue+%28Westermoskee%29+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Blue+%28Westermoskee%29+Amsterdam",
-      "id": "a3",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier De Pijp & Albert Cuypmarkt",
-      "categorie": "Shopping & Souks",
-      "description": "Marché et quartier multiculturel",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+De+Pijp+%26+Albert+Cuypmarkt+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+De+Pijp+%26+Albert+Cuypmarkt+Amsterdam",
-      "id": "a4",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Amsterdam",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Amsterdam+Amsterdam",
-      "id": "a5",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Amsterdam",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Amsterdam+Amsterdam",
-      "id": "a6",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Corniche & front de mer de Amsterdam",
-      "categorie": "Nature & Aventure",
-      "description": "Promenade au bord de l'eau au coucher du soleil.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Corniche+%26+front+de+mer+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+%26+front+de+mer+de+Amsterdam+Amsterdam",
-      "id": "a7",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée national de Amsterdam",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et l'art islamique de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+national+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+national+de+Amsterdam+Amsterdam",
-      "id": "a8",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Atelier cuisine halal de Amsterdam",
-      "categorie": "Gastronomie",
-      "description": "Cours de cuisine locale avec un chef, déjeuner inclus.",
-      "duree": "3h",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+cuisine+halal+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+cuisine+halal+de+Amsterdam+Amsterdam",
-      "id": "a9",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Hammam traditionnel de Amsterdam",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Amsterdam+Amsterdam",
-      "id": "a10",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Amsterdam",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Amsterdam+Amsterdam",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Amsterdam",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Amsterdam+Amsterdam",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Amsterdam",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Amsterdam+Amsterdam",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Amsterdam",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Amsterdam+Amsterdam",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Amsterdam",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Amsterdam+Amsterdam",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Mosquée historique de Amsterdam",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Amsterdam+Amsterdam",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Parc et jardins de Amsterdam",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Amsterdam+Amsterdam",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Amsterdam",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Amsterdam+Amsterdam",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Amsterdam",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Amsterdam+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Amsterdam+Amsterdam",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Quartier historique de Amsterdam 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Amsterdam+10+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Amsterdam+10+Amsterdam",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Grand marché central de Amsterdam 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Amsterdam+11+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Amsterdam+11+Amsterdam",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Amsterdam 12",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Amsterdam+12+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Amsterdam+12+Amsterdam",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Musée de la ville de Amsterdam 13",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Amsterdam+13+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Amsterdam+13+Amsterdam",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Food tour halal de Amsterdam 14",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Amsterdam+14+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Amsterdam+14+Amsterdam",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Hammam traditionnel de Amsterdam 15",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Amsterdam+15+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Amsterdam+15+Amsterdam",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Mosquée historique de Amsterdam 16",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Amsterdam+16+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Amsterdam+16+Amsterdam",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Parc et jardins de Amsterdam 17",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Amsterdam+17+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Amsterdam+17+Amsterdam",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Amsterdam 18",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Amsterdam+18+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Amsterdam+18+Amsterdam",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Amsterdam 19",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Amsterdam+19+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Amsterdam+19+Amsterdam",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Quartier historique de Amsterdam 20",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Amsterdam+20+Amsterdam",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Amsterdam+20+Amsterdam",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Westermoskee (Mosquée Aya Sofya)",
-      "description": "Plus grande mosquée d'Amsterdam, style ottoman",
-      "adresse": "De Baarsjes",
-      "mapsUrl": "https://maps.google.com/?q=Westermoskee+%28Mosqu%C3%A9e+Aya+Sofya%29+Amsterdam",
-      "capacite": 1301,
-      "anneeConstruction": 1971,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 52.3676,
-        "lng": 4.9041
-      }
-    },
-    {
-      "nom": "Mosquée Fatih",
-      "description": "Mosquée communautaire du centre",
-      "adresse": "Oud-West",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Fatih+Amsterdam",
-      "capacite": 7384,
-      "anneeConstruction": 2014,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 52.3676,
-        "lng": 4.9041
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Amsterdam",
-      "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Amsterdam",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Amsterdam+Amsterdam",
-      "capacite": 4625,
-      "anneeConstruction": 1985,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 52.3676,
-        "lng": 4.9041
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Amsterdam",
-      "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Amsterdam",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Amsterdam+Amsterdam",
-      "capacite": 2718,
-      "anneeConstruction": 1938,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 52.3676,
-        "lng": 4.9041
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Amsterdam",
-      "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Amsterdam",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Amsterdam+Amsterdam",
-      "capacite": 1872,
-      "anneeConstruction": 1952,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 52.3676,
-        "lng": 4.9041
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Amsterdam",
-      "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Amsterdam",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Amsterdam+Amsterdam",
-      "capacite": 4419,
-      "anneeConstruction": 1999,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 52.3676,
-        "lng": 4.9041
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Amsterdam",
-      "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Amsterdam",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Amsterdam+Amsterdam",
-      "capacite": 2721,
-      "anneeConstruction": 1941,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 52.3676,
-        "lng": 4.9041
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Amsterdam",
-      "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Amsterdam",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Amsterdam+Amsterdam",
-      "capacite": 2684,
-      "anneeConstruction": 1924,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 52.3676,
-        "lng": 4.9041
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Amsterdam",
-      "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Amsterdam",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Amsterdam+Amsterdam",
-      "capacite": 4714,
-      "anneeConstruction": 1994,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 52.3676,
-        "lng": 4.9041
-      }
-    },
-    {
-      "nom": "Mosquée historique de Amsterdam",
-      "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Amsterdam",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Amsterdam+Amsterdam",
-      "capacite": 6236,
-      "anneeConstruction": 1996,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 52.3676,
-        "lng": 4.9041
-      }
-    }
-  ],
-  "tags": [
-    "canaux",
-    "multiculturel",
-    "musees",
-    "velo",
-    "oud-west",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Rijsel",
-      "Café Winkel 43",
-      "Eetcafé de Orient",
-      "Ottoman Amsterdam",
-      "Kebab Usta Amsterdam"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Café de Klos",
-      "De Kas",
-      "Café Winkel 43",
-      "Al Jawahir Restaurant",
-      "Dürüm Nazar"
-    ],
-    "incontournables": [
-      "Sapporo Amsterdam",
-      "Maison du Thé",
-      "Van Vlaanderen",
-      "Westerpark Terrasse",
-      "Kholossal"
-    ],
-    "pepitesCachees": [
-      "Bazar Amsterdam",
-      "Sumo Amsterdam",
-      "De Pijp Restaurants"
-    ],
-    "idealFamille": [
-      "Bazar Amsterdam",
-      "Sama Sebo",
-      "Café de Klos",
-      "Moeders Restaurant",
-      "Rijsel"
-    ],
-    "gastronomique": [
-      "Van Vlaanderen",
-      "Envy Amsterdam",
-      "The Dylan Amsterdam Restaurant",
-      "Sofitel Legend The Grand Dining",
-      "Saveurs Gastronomiques"
-    ],
-    "ouvertNuit": [
-      "Bazar Amsterdam",
-      "Al Jawahir Restaurant",
-      "Eetcafé de Orient"
-    ],
-    "vueExceptionnelle": [
-      "Rijsel",
-      "Café Winkel 43",
-      "Eetcafé de Orient"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Amsterdam",
+   "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Amsterdam",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Amsterdam+Amsterdam",
+   "capacite": 1872,
+   "anneeConstruction": 1952,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 52.3676,
+    "lng": 4.9041
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Amsterdam",
+   "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Amsterdam",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Amsterdam+Amsterdam",
+   "capacite": 4419,
+   "anneeConstruction": 1999,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 52.3676,
+    "lng": 4.9041
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Amsterdam",
+   "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Amsterdam",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Amsterdam+Amsterdam",
+   "capacite": 2721,
+   "anneeConstruction": 1941,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 52.3676,
+    "lng": 4.9041
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Amsterdam",
+   "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Amsterdam",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Amsterdam+Amsterdam",
+   "capacite": 2684,
+   "anneeConstruction": 1924,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 52.3676,
+    "lng": 4.9041
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Amsterdam",
+   "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Amsterdam",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Amsterdam+Amsterdam",
+   "capacite": 4714,
+   "anneeConstruction": 1994,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 52.3676,
+    "lng": 4.9041
+   }
+  },
+  {
+   "nom": "Mosquée historique de Amsterdam",
+   "description": "Mosquée fréquentée de Amsterdam, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Amsterdam",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Amsterdam+Amsterdam",
+   "capacite": 6236,
+   "anneeConstruction": 1996,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 52.3676,
+    "lng": 4.9041
+   }
   }
+ ],
+ "tags": [
+  "canaux",
+  "multiculturel",
+  "musees",
+  "velo",
+  "oud-west",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Rijsel",
+   "Café Winkel 43",
+   "Eetcafé de Orient",
+   "Ottoman Amsterdam",
+   "Kebab Usta Amsterdam"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Café de Klos",
+   "De Kas",
+   "Café Winkel 43",
+   "Al Jawahir Restaurant",
+   "Dürüm Nazar"
+  ],
+  "incontournables": [
+   "Sapporo Amsterdam",
+   "Maison du Thé",
+   "Van Vlaanderen",
+   "Westerpark Terrasse",
+   "Kholossal"
+  ],
+  "pepitesCachees": [
+   "Bazar Amsterdam",
+   "Sumo Amsterdam",
+   "De Pijp Restaurants"
+  ],
+  "idealFamille": [
+   "Bazar Amsterdam",
+   "Sama Sebo",
+   "Café de Klos",
+   "Moeders Restaurant",
+   "Rijsel"
+  ],
+  "gastronomique": [
+   "Van Vlaanderen",
+   "Envy Amsterdam",
+   "The Dylan Amsterdam Restaurant",
+   "Sofitel Legend The Grand Dining",
+   "Saveurs Gastronomiques"
+  ],
+  "ouvertNuit": [
+   "Bazar Amsterdam",
+   "Al Jawahir Restaurant",
+   "Eetcafé de Orient"
+  ],
+  "vueExceptionnelle": [
+   "Rijsel",
+   "Café Winkel 43",
+   "Eetcafé de Orient"
+  ]
+ }
 }

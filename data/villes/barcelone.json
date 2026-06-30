@@ -1,2262 +1,2283 @@
 {
-  "nom": "Barcelone",
-  "pays": "Espagne",
-  "slug": "barcelone",
-  "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1400&q=85",
-  "description": "Barcelone, capitale catalane de Gaudí, mêle plages, Sagrada Família et une scène halal vibrante au quartier d'El Raval. Communauté pakistanaise et marocaine animée.",
-  "descriptionLongue": "Joyau méditerranéen, Barcelone éblouit par l'architecture de Gaudí (Sagrada Família, Park Güell). Le quartier d'El Raval et le Raval concentrent une importante communauté pakistanaise et maghrébine, avec restaurants halal, épiceries et la mosquée Tarek Ben Ziyad. Entre Ramblas, plages de la Barceloneta et tapas, la ville est festive et accueillante.",
-  "halalScore": 7.2,
-  "score_halal": 3.6,
+ "nom": "Barcelone",
+ "pays": "Espagne",
+ "slug": "barcelone",
+ "image": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1400&q=85",
+ "description": "Barcelone, capitale catalane de Gaudí, mêle plages, Sagrada Família et une scène halal vibrante au quartier d'El Raval. Communauté pakistanaise et marocaine animée.",
+ "descriptionLongue": "Joyau méditerranéen, Barcelone éblouit par l'architecture de Gaudí (Sagrada Família, Park Güell). Le quartier d'El Raval et le Raval concentrent une importante communauté pakistanaise et maghrébine, avec restaurants halal, épiceries et la mosquée Tarek Ben Ziyad. Entre Ramblas, plages de la Barceloneta et tapas, la ville est festive et accueillante.",
+ "halalScore": 7.2,
+ "score_halal": 3.6,
+ "mosquees": 30,
+ "population": "1,6 million",
+ "langue": "Espagnol, Catalan",
+ "monnaie": "Euro (EUR)",
+ "fuseau": "UTC+1",
+ "meilleureEpoque": "Mai à Octobre",
+ "prixMoyenNuit": "120€",
+ "continent": "Europe",
+ "codeISO": "ES",
+ "pays_slug": "espagne",
+ "region": "Catalogne",
+ "meta_title": "Voyage Halal à Barcelone — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Barcelone — Halal Trust Score 7.2/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Barcelone — Halal Trust Score 7.2/10.",
+ "coordonnees": {
+  "lat": 41.3851,
+  "lng": 2.1734
+ },
+ "image_alt": "Vue de Barcelone, Espagne",
+ "statistiques": {
   "mosquees": 30,
-  "population": "1,6 million",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 8,
+  "hotels": 15
+ },
+ "infos_pratiques": {
   "langue": "Espagnol, Catalan",
   "monnaie": "Euro (EUR)",
-  "fuseau": "UTC+1",
-  "meilleureEpoque": "Mai à Octobre",
-  "prixMoyenNuit": "120€",
-  "continent": "Europe",
-  "codeISO": "ES",
-  "pays_slug": "espagne",
-  "region": "Catalogne",
-  "meta_title": "Voyage Halal à Barcelone — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Barcelone — Halal Trust Score 7.2/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Barcelone — Halal Trust Score 7.2/10.",
-  "coordonnees": {
+  "meilleure_periode": "Mai à Octobre",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Espace Schengen — pas de visa pour les Français",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Métro, bus, téléphérique, vélo",
+  "priseElectrique": "Type C/F — 230V",
+  "decalageHoraire": "Même heure que Paris"
+ },
+ "restaurants": [
+  {
+   "nom": "Mesón David",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Barcelone",
+   "description": "Espagnol halal classique à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Mes%C3%B3n+David+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Espagnol halal classique",
+   "nombreAvis": 45,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Restaurante Shunka",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Barcelone",
+   "description": "Japonais halal certifié à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurante+Shunka+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Japonais halal certifié",
+   "nombreAvis": 1865,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Tickets Barcelona",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Barcelone",
+   "description": "Tapas, options halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Tickets+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Tapas",
+   "nombreAvis": 932,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Restaurant Al-Medina",
+   "type": "Marocain & Maghreb",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Barcelone",
+   "description": "Marocain premium à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Al-Medina+Barcelone",
+   "priceRange": "€€€€",
+   "specialite": "Marocain premium",
+   "nombreAvis": 787,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "familial"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Almoixàvena Barcelone",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Barcelone",
+   "description": "Levant-marocain à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Almoix%C3%A0vena+Barcelone+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Levant-marocain",
+   "nombreAvis": 823,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Marroc Restaurant",
+   "type": "Marocain & Maghreb",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Barcelone",
+   "description": "Marocain populaire à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Marroc+Restaurant+Barcelone",
+   "priceRange": "€",
+   "specialite": "Marocain populaire",
+   "nombreAvis": 1183,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "El Raval Halal Restaurant",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Barcelone",
+   "description": "Quartier El Raval à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=El+Raval+Halal+Restaurant+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Quartier el raval",
+   "nombreAvis": 515,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Restaurant Istanbul Barcelona",
+   "type": "Turc",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Barcelone",
+   "description": "Turc halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Istanbul+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Turc halal",
+   "nombreAvis": 319,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Casa Taksim",
+   "type": "Turc",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Barcelone",
+   "description": "Turc moderne à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Casa+Taksim+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Turc moderne",
+   "nombreAvis": 1468,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "CZN Burak Barcelona",
+   "type": "Turc",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Turc viral à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=CZN+Burak+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Turc viral",
+   "nombreAvis": 2395,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Punjabi's Barcelona",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Indien halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Punjabi%27s+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Indien halal",
+   "nombreAvis": 2551,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Taj Mahal Barcelona",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Indien classique à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Taj+Mahal+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Indien classique",
+   "nombreAvis": 2043,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Bombay Palace Barcelona",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Barcelone",
+   "description": "Indien premium à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Bombay+Palace+Barcelona+Barcelone",
+   "priceRange": "€€€€",
+   "specialite": "Indien premium",
+   "nombreAvis": 1552,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Restaurant Islamabad",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Barcelone",
+   "description": "Pakistanais à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Islamabad+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Pakistanais",
+   "nombreAvis": 1068,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Pakistan Restaurant Nou de la Rambla",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Barcelone",
+   "description": "Populaire à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Pakistan+Restaurant+Nou+de+la+Rambla+Barcelone",
+   "priceRange": "€",
+   "specialite": "Populaire",
+   "nombreAvis": 881,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Al Shamal Barcelona",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Barcelone",
+   "description": "Levant halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Shamal+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Levant halal",
+   "nombreAvis": 318,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Omar Al-Khayyam",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Perso-libanais à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Omar+Al-Khayyam+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Perso-libanais",
+   "nombreAvis": 1795,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Mesón Andaluz",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Barcelone",
+   "description": "Andalou halal moderne à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Mes%C3%B3n+Andaluz+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Andalou halal moderne",
+   "nombreAvis": 481,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Txirimiri Barcelona",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Pintxos basques, options halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Txirimiri+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Pintxos basques",
+   "nombreAvis": 1373,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "El Nacional Barcelona",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Catalan, options halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=El+Nacional+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Catalan",
+   "nombreAvis": 184,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Bodega Sepúlveda",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Tapas sans alcool à Barcelone. Options halal disponibles.",
+   "mapsUrl": "https://maps.google.com/?q=Bodega+Sep%C3%BAlveda+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Tapas sans alcool",
+   "nombreAvis": 565,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "La Mar Salada",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Barcelone",
+   "description": "Fruits de mer halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=La+Mar+Salada+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Fruits de mer halal",
+   "nombreAvis": 599,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Restaurant 7 Portes",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Barcelone",
+   "description": "Valencien, depuis 1836 à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+7+Portes+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Valencien",
+   "nombreAvis": 422,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Cervecería Catalana",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Tapas, options halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Cervecer%C3%ADa+Catalana+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Tapas",
+   "nombreAvis": 2518,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Bar Mut Barcelona",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Barcelone",
+   "description": "Moderniste, options halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Bar+Mut+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Moderniste",
+   "nombreAvis": 539,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Café Zurich",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Place Catalunya à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Zurich+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Place catalunya",
+   "nombreAvis": 2632,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Federal Café",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Barcelone",
+   "description": "Brunch australien à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Federal+Caf%C3%A9+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Brunch australien",
+   "nombreAvis": 1519,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Milk Bar Barcelona",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Barcelone",
+   "description": "Brunch à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Milk+Bar+Barcelona+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Brunch",
+   "nombreAvis": 1124,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Benedict",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Barcelone",
+   "description": "Eggs benedict, brunch à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Benedict+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Eggs benedict",
+   "nombreAvis": 825,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Parking Pizza",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Barcelone",
+   "description": "Pizza artisanale halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Parking+Pizza+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Pizza artisanale halal",
+   "nombreAvis": 3348,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Wildburg",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Barcelone",
+   "description": "Burgers halal premium à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Wildburg+Barcelone",
+   "priceRange": "€€€€",
+   "specialite": "Burgers halal premium",
+   "nombreAvis": 2146,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Kiosk Barcelona",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Barcelone",
+   "description": "Burgers halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Kiosk+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Burgers halal",
+   "nombreAvis": 568,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Makamaka Beach Burger",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Barcelone",
+   "description": "Plage halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Makamaka+Beach+Burger+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Plage halal",
+   "nombreAvis": 1572,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Sushita Barcelona",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Sushi halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Sushita+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Sushi halal",
+   "nombreAvis": 2071,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Kibuka Sushi",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Japonais halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Kibuka+Sushi+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Japonais halal",
+   "nombreAvis": 1132,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "China Crown Barcelona",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Cantonais halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=China+Crown+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Cantonais halal",
+   "nombreAvis": 1849,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Wagamama Barcelona",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Barcelone",
+   "description": "Pan-asiatique, options halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Wagamama+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Pan-asiatique",
+   "nombreAvis": 1530,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Noodle House Barcelona",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Barcelone",
+   "description": "Pan-asiatique halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Noodle+House+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Pan-asiatique halal",
+   "nombreAvis": 1114,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "The Good Burger Barcelona",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Barcelone",
+   "description": "Halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=The+Good+Burger+Barcelona+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Halal",
+   "nombreAvis": 1135,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Honest Greens Barcelona",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Barcelone",
+   "description": "Healthy, options halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Honest+Greens+Barcelona+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Healthy",
+   "nombreAvis": 782,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "veggie"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Flax & Kale",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Barcelone",
+   "description": "Végétarien healthy à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Flax+%26+Kale+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Végétarien healthy",
+   "nombreAvis": 2661,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "veggie"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Teresa Carles Barcelona",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Barcelone",
+   "description": "Végétarien à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Teresa+Carles+Barcelona+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Végétarien",
+   "nombreAvis": 1358,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "La Paradeta",
+   "type": "Fruits de mer",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Barcelone",
+   "description": "Fruits de mer, sans alcool à Barcelone. Options halal disponibles.",
+   "mapsUrl": "https://maps.google.com/?q=La+Paradeta+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Fruits de mer",
+   "nombreAvis": 1011,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Rías de Galicia",
+   "type": "Fruits de mer",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Barcelone",
+   "description": "Poissons galiciens, options halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=R%C3%ADas+de+Galicia+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Poissons galiciens",
+   "nombreAvis": 1491,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Bilbao Berria Barcelona",
+   "type": "Espagnol & Tapas",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Barcelone",
+   "description": "Pintxos basques, options halal à Barcelone.",
+   "mapsUrl": "https://maps.google.com/?q=Bilbao+Berria+Barcelona+Barcelone",
+   "priceRange": "€€€",
+   "specialite": "Pintxos basques",
+   "nombreAvis": 1034,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Le Comptoir Halal",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Barcelone",
+   "description": "Adresse traditionnel local appréciée à Barcelone, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Spécialité du pays",
+   "nombreAvis": 2450,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Beit Beirut",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Barcelone",
+   "description": "Adresse libanais & levant appréciée à Barcelone, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1050,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Shahi Tandoor",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Barcelone",
+   "description": "Adresse indien & pakistani appréciée à Barcelone, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 2080,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Dar Marrakech",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Adresse marocain appréciée à Barcelone, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Barcelone",
+   "priceRange": "€€",
+   "specialite": "Tajine",
+   "nombreAvis": 2520,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Anatolia Grill",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Adresse turc appréciée à Barcelone, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Barcelone",
+   "priceRange": "€€",
+   "specialite": "İskender kebab",
+   "nombreAvis": 276,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r50"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Hotel Arts Barcelona",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Ultra-luxe à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Arts+Barcelona+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€€",
+   "nombreAvis": 808,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h1",
+   "lat": 41.3868915,
+   "lng": 2.1962221
+  },
+  {
+   "nom": "W Barcelona",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Barcelone",
+   "description": "Luxe bord de mer à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=W+Barcelona+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€€",
+   "nombreAvis": 2257,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h2",
+   "lat": 41.3688328,
+   "lng": 2.1901152
+  },
+  {
+   "nom": "Mandarin Oriental Barcelona",
+   "categorie": "Luxe",
+   "score": 4.8,
+   "adresse": "Barcelone",
+   "description": "Ultra-luxe à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Barcelona+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€€",
+   "nombreAvis": 528,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": 41.391381,
+   "lng": 2.166914
+  },
+  {
+   "nom": "Hotel Casa Fuster",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Luxe moderniste à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Casa+Fuster+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€€",
+   "nombreAvis": 1359,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4",
+   "lat": 41.3981762,
+   "lng": 2.1581098
+  },
+  {
+   "nom": "El Palace Barcelona",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Luxe historique à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=El+Palace+Barcelona+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€€",
+   "nombreAvis": 2052,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5",
+   "lat": 41.3890696,
+   "lng": 2.1671823
+  },
+  {
+   "nom": "Hotel 1898",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Luxe design à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+1898+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€€",
+   "nombreAvis": 1989,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": 41.3833716,
+   "lng": 2.1709098
+  },
+  {
+   "nom": "Ohla Barcelona",
+   "categorie": "Riad & Boutique",
+   "score": 4.7,
+   "adresse": "Barcelone",
+   "description": "Boutique luxe à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Ohla+Barcelona+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€",
+   "nombreAvis": 1179,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 41.3870175,
+   "lng": 2.1742047
+  },
+  {
+   "nom": "Hotel Granados 83",
+   "categorie": "Riad & Boutique",
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Boutique à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Granados+83+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€",
+   "nombreAvis": 1403,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": 41.3918188,
+   "lng": 2.156787
+  },
+  {
+   "nom": "Barceló Raval",
+   "categorie": "Budget",
+   "score": 4.8,
+   "adresse": "Barcelone",
+   "description": "Design budget à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Barcel%C3%B3+Raval+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€",
+   "nombreAvis": 2212,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9",
+   "lat": 41.3790285,
+   "lng": 2.1696369
+  },
+  {
+   "nom": "Eurostars Grand Marina",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Standard à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Eurostars+Grand+Marina+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€",
+   "nombreAvis": 1838,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10",
+   "lat": 41.3717119,
+   "lng": 2.1808851
+  },
+  {
+   "nom": "Grand Plaza Barcelone",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Barcelone",
+   "description": "Hébergement halal-friendly à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Barcelone+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€€",
+   "nombreAvis": 2030,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h11"
+  },
+  {
+   "nom": "City Comfort Barcelone",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Barcelone",
+   "description": "Hébergement halal-friendly à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Barcelone+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€",
+   "nombreAvis": 1324,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  },
+  {
+   "nom": "Boutique Dar Barcelone",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Barcelone",
+   "description": "Hébergement halal-friendly à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Barcelone+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€",
+   "nombreAvis": 1372,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h13"
+  },
+  {
+   "nom": "Budget Inn Barcelone",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Barcelone",
+   "description": "Hébergement halal-friendly à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Barcelone+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€",
+   "nombreAvis": 710,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14"
+  },
+  {
+   "nom": "Seaside Resort Barcelone",
+   "categorie": "Resort & Spa",
+   "score": 4.5,
+   "adresse": "Barcelone",
+   "description": "Hébergement halal-friendly à Barcelone.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Barcelone+Barcelone",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
+   "priceRange": "€€€€",
+   "nombreAvis": 1232,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Sagrada Família",
+   "categorie": "Histoire & Culture",
+   "description": "Chef-d'œuvre inachevé de Gaudí, UNESCO",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Sagrada+Fam%C3%ADlia+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Sagrada+Fam%C3%ADlia+Barcelone",
+   "id": "a1",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Park Güell",
+   "categorie": "Nature & Aventure",
+   "description": "Parc mosaïque de Gaudí",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Park+G%C3%BCell+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Park+G%C3%BCell+Barcelone",
+   "id": "a2",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Tarek Ben Ziyad",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée du quartier d'El Raval",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Tarek+Ben+Ziyad+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Tarek+Ben+Ziyad+Barcelone",
+   "id": "a3",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Las Ramblas & Boqueria",
+   "categorie": "Shopping & Souks",
+   "description": "Avenue animée et marché couvert",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Las+Ramblas+%26+Boqueria+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Las+Ramblas+%26+Boqueria+Barcelone",
+   "id": "a4",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Plage de la Barceloneta",
+   "categorie": "Nature & Aventure",
+   "description": "Plage urbaine méditerranéenne",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Plage+de+la+Barceloneta+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+la+Barceloneta+Barcelone",
+   "id": "a5",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Barcelone",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Barcelone+Barcelone",
+   "id": "a6",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Barcelone",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Barcelone+Barcelone",
+   "id": "a7",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Corniche & front de mer de Barcelone",
+   "categorie": "Nature & Aventure",
+   "description": "Promenade au bord de l'eau au coucher du soleil.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Corniche+%26+front+de+mer+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+%26+front+de+mer+de+Barcelone+Barcelone",
+   "id": "a8",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée national de Barcelone",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et l'art islamique de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+national+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+national+de+Barcelone+Barcelone",
+   "id": "a9",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Atelier cuisine halal de Barcelone",
+   "categorie": "Gastronomie",
+   "description": "Cours de cuisine locale avec un chef, déjeuner inclus.",
+   "duree": "3h",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+cuisine+halal+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+cuisine+halal+de+Barcelone+Barcelone",
+   "id": "a10",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Barcelone",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Barcelone+Barcelone",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Barcelone",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Barcelone+Barcelone",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Barcelone",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Barcelone+Barcelone",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Barcelone",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Barcelone+Barcelone",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Barcelone",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Barcelone+Barcelone",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Barcelone",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Barcelone+Barcelone",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Barcelone",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Barcelone+Barcelone",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Barcelone",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Barcelone+Barcelone",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Barcelone",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Barcelone+Barcelone",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Barcelone",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Barcelone+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Barcelone+Barcelone",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Quartier historique de Barcelone 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Barcelone+10+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Barcelone+10+Barcelone",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Grand marché central de Barcelone 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Barcelone+11+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Barcelone+11+Barcelone",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Barcelone 12",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Barcelone+12+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Barcelone+12+Barcelone",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Musée de la ville de Barcelone 13",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Barcelone+13+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Barcelone+13+Barcelone",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Food tour halal de Barcelone 14",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Barcelone+14+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Barcelone+14+Barcelone",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Hammam traditionnel de Barcelone 15",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Barcelone+15+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Barcelone+15+Barcelone",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Mosquée historique de Barcelone 16",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Barcelone+16+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Barcelone+16+Barcelone",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Parc et jardins de Barcelone 17",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Barcelone+17+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Barcelone+17+Barcelone",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Barcelone 18",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Barcelone+18+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Barcelone+18+Barcelone",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Barcelone 19",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Barcelone+19+Barcelone",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Barcelone+19+Barcelone",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Tarek Ben Ziyad",
+   "description": "Importante mosquée d'El Raval",
+   "adresse": "El Raval",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Tarek+Ben+Ziyad+Barcelone",
+   "capacite": 6714,
+   "anneeConstruction": 1894,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 41.3851,
     "lng": 2.1734
+   }
   },
-  "image_alt": "Vue de Barcelone, Espagne",
-  "statistiques": {
-    "mosquees": 30,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 8
+  {
+   "nom": "Centre islamique Camí de la Pau",
+   "description": "Centre communautaire musulman",
+   "adresse": "Barcelone",
+   "mapsUrl": "https://maps.google.com/?q=Centre+islamique+Cam%C3%AD+de+la+Pau+Barcelone",
+   "capacite": 1001,
+   "anneeConstruction": 1881,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.3851,
+    "lng": 2.1734
+   }
   },
-  "infos_pratiques": {
-    "langue": "Espagnol, Catalan",
-    "monnaie": "Euro (EUR)",
-    "meilleure_periode": "Mai à Octobre",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Barcelone",
+   "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Barcelone",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Barcelone+Barcelone",
+   "capacite": 4490,
+   "anneeConstruction": 1930,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.3851,
+    "lng": 2.1734
+   }
   },
-  "infoPratique": {
-    "visa": "Espace Schengen — pas de visa pour les Français",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Métro, bus, téléphérique, vélo",
-    "priseElectrique": "Type C/F — 230V",
-    "decalageHoraire": "Même heure que Paris"
+  {
+   "nom": "Grande Mosquée de Barcelone",
+   "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Barcelone",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Barcelone+Barcelone",
+   "capacite": 2077,
+   "anneeConstruction": 1997,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.3851,
+    "lng": 2.1734
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Mesón David",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Barcelone",
-      "description": "Espagnol halal classique à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Mes%C3%B3n+David+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Espagnol halal classique",
-      "nombreAvis": 45,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Restaurante Shunka",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Barcelone",
-      "description": "Japonais halal certifié à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurante+Shunka+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Japonais halal certifié",
-      "nombreAvis": 1865,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Tickets Barcelona",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Barcelone",
-      "description": "Tapas, options halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Tickets+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Tapas",
-      "nombreAvis": 932,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Restaurant Al-Medina",
-      "type": "Marocain & Maghreb",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Barcelone",
-      "description": "Marocain premium à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Al-Medina+Barcelone",
-      "priceRange": "€€€€",
-      "specialite": "Marocain premium",
-      "nombreAvis": 787,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "familial"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Almoixàvena Barcelone",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Barcelone",
-      "description": "Levant-marocain à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Almoix%C3%A0vena+Barcelone+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Levant-marocain",
-      "nombreAvis": 823,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Marroc Restaurant",
-      "type": "Marocain & Maghreb",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Barcelone",
-      "description": "Marocain populaire à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Marroc+Restaurant+Barcelone",
-      "priceRange": "€",
-      "specialite": "Marocain populaire",
-      "nombreAvis": 1183,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "El Raval Halal Restaurant",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Barcelone",
-      "description": "Quartier El Raval à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=El+Raval+Halal+Restaurant+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Quartier el raval",
-      "nombreAvis": 515,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Restaurant Istanbul Barcelona",
-      "type": "Turc",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Barcelone",
-      "description": "Turc halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Istanbul+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Turc halal",
-      "nombreAvis": 319,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Casa Taksim",
-      "type": "Turc",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Barcelone",
-      "description": "Turc moderne à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Casa+Taksim+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Turc moderne",
-      "nombreAvis": 1468,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "CZN Burak Barcelona",
-      "type": "Turc",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Turc viral à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=CZN+Burak+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Turc viral",
-      "nombreAvis": 2395,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Punjabi's Barcelona",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Indien halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Punjabi%27s+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Indien halal",
-      "nombreAvis": 2551,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Taj Mahal Barcelona",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Indien classique à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Taj+Mahal+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Indien classique",
-      "nombreAvis": 2043,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Bombay Palace Barcelona",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Barcelone",
-      "description": "Indien premium à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Bombay+Palace+Barcelona+Barcelone",
-      "priceRange": "€€€€",
-      "specialite": "Indien premium",
-      "nombreAvis": 1552,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Restaurant Islamabad",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Barcelone",
-      "description": "Pakistanais à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Islamabad+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Pakistanais",
-      "nombreAvis": 1068,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Pakistan Restaurant Nou de la Rambla",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Barcelone",
-      "description": "Populaire à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Pakistan+Restaurant+Nou+de+la+Rambla+Barcelone",
-      "priceRange": "€",
-      "specialite": "Populaire",
-      "nombreAvis": 881,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Al Shamal Barcelona",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Barcelone",
-      "description": "Levant halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Shamal+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Levant halal",
-      "nombreAvis": 318,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Omar Al-Khayyam",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Perso-libanais à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Omar+Al-Khayyam+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Perso-libanais",
-      "nombreAvis": 1795,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Mesón Andaluz",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Barcelone",
-      "description": "Andalou halal moderne à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Mes%C3%B3n+Andaluz+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Andalou halal moderne",
-      "nombreAvis": 481,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Txirimiri Barcelona",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Pintxos basques, options halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Txirimiri+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Pintxos basques",
-      "nombreAvis": 1373,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "El Nacional Barcelona",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Catalan, options halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=El+Nacional+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Catalan",
-      "nombreAvis": 184,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Bodega Sepúlveda",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Tapas sans alcool à Barcelone. Options halal disponibles.",
-      "mapsUrl": "https://maps.google.com/?q=Bodega+Sep%C3%BAlveda+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Tapas sans alcool",
-      "nombreAvis": 565,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "La Mar Salada",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Barcelone",
-      "description": "Fruits de mer halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=La+Mar+Salada+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Fruits de mer halal",
-      "nombreAvis": 599,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Restaurant 7 Portes",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Barcelone",
-      "description": "Valencien, depuis 1836 à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+7+Portes+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Valencien",
-      "nombreAvis": 422,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Cervecería Catalana",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Tapas, options halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Cervecer%C3%ADa+Catalana+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Tapas",
-      "nombreAvis": 2518,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Bar Mut Barcelona",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Barcelone",
-      "description": "Moderniste, options halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Bar+Mut+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Moderniste",
-      "nombreAvis": 539,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Café Zurich",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Place Catalunya à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Zurich+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Place catalunya",
-      "nombreAvis": 2632,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Federal Café",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Barcelone",
-      "description": "Brunch australien à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Federal+Caf%C3%A9+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Brunch australien",
-      "nombreAvis": 1519,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Milk Bar Barcelona",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Barcelone",
-      "description": "Brunch à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Milk+Bar+Barcelona+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Brunch",
-      "nombreAvis": 1124,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Benedict",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Barcelone",
-      "description": "Eggs benedict, brunch à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Benedict+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Eggs benedict",
-      "nombreAvis": 825,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Parking Pizza",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Barcelone",
-      "description": "Pizza artisanale halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Parking+Pizza+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Pizza artisanale halal",
-      "nombreAvis": 3348,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Wildburg",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Barcelone",
-      "description": "Burgers halal premium à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Wildburg+Barcelone",
-      "priceRange": "€€€€",
-      "specialite": "Burgers halal premium",
-      "nombreAvis": 2146,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Kiosk Barcelona",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Barcelone",
-      "description": "Burgers halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Kiosk+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Burgers halal",
-      "nombreAvis": 568,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Makamaka Beach Burger",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Barcelone",
-      "description": "Plage halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Makamaka+Beach+Burger+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Plage halal",
-      "nombreAvis": 1572,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Sushita Barcelona",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Sushi halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Sushita+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Sushi halal",
-      "nombreAvis": 2071,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Kibuka Sushi",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Japonais halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Kibuka+Sushi+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Japonais halal",
-      "nombreAvis": 1132,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "China Crown Barcelona",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Cantonais halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=China+Crown+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Cantonais halal",
-      "nombreAvis": 1849,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Wagamama Barcelona",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Barcelone",
-      "description": "Pan-asiatique, options halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Wagamama+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Pan-asiatique",
-      "nombreAvis": 1530,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Noodle House Barcelona",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Barcelone",
-      "description": "Pan-asiatique halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Noodle+House+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Pan-asiatique halal",
-      "nombreAvis": 1114,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "The Good Burger Barcelona",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Barcelone",
-      "description": "Halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=The+Good+Burger+Barcelona+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 1135,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Honest Greens Barcelona",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Barcelone",
-      "description": "Healthy, options halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Honest+Greens+Barcelona+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Healthy",
-      "nombreAvis": 782,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Flax & Kale",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Barcelone",
-      "description": "Végétarien healthy à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Flax+%26+Kale+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Végétarien healthy",
-      "nombreAvis": 2661,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Teresa Carles Barcelona",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Barcelone",
-      "description": "Végétarien à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Teresa+Carles+Barcelona+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Végétarien",
-      "nombreAvis": 1358,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "La Paradeta",
-      "type": "Fruits de mer",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Barcelone",
-      "description": "Fruits de mer, sans alcool à Barcelone. Options halal disponibles.",
-      "mapsUrl": "https://maps.google.com/?q=La+Paradeta+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Fruits de mer",
-      "nombreAvis": 1011,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Rías de Galicia",
-      "type": "Fruits de mer",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Barcelone",
-      "description": "Poissons galiciens, options halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=R%C3%ADas+de+Galicia+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Poissons galiciens",
-      "nombreAvis": 1491,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Bilbao Berria Barcelona",
-      "type": "Espagnol & Tapas",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Barcelone",
-      "description": "Pintxos basques, options halal à Barcelone.",
-      "mapsUrl": "https://maps.google.com/?q=Bilbao+Berria+Barcelona+Barcelone",
-      "priceRange": "€€€",
-      "specialite": "Pintxos basques",
-      "nombreAvis": 1034,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Le Comptoir Halal",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Barcelone",
-      "description": "Adresse traditionnel local appréciée à Barcelone, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Spécialité du pays",
-      "nombreAvis": 2450,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Beit Beirut",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Barcelone",
-      "description": "Adresse libanais & levant appréciée à Barcelone, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1050,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Shahi Tandoor",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Barcelone",
-      "description": "Adresse indien & pakistani appréciée à Barcelone, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 2080,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Dar Marrakech",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Adresse marocain appréciée à Barcelone, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Barcelone",
-      "priceRange": "€€",
-      "specialite": "Tajine",
-      "nombreAvis": 2520,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Anatolia Grill",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Adresse turc appréciée à Barcelone, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Barcelone",
-      "priceRange": "€€",
-      "specialite": "İskender kebab",
-      "nombreAvis": 276,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r50"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Hotel Arts Barcelona",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Ultra-luxe à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Arts+Barcelona+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€€",
-      "nombreAvis": 808,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "W Barcelona",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Barcelone",
-      "description": "Luxe bord de mer à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=W+Barcelona+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€€",
-      "nombreAvis": 2257,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Mandarin Oriental Barcelona",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Barcelone",
-      "description": "Ultra-luxe à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Barcelona+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€€",
-      "nombreAvis": 528,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Hotel Casa Fuster",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Luxe moderniste à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Casa+Fuster+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€€",
-      "nombreAvis": 1359,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "El Palace Barcelona",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Luxe historique à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=El+Palace+Barcelona+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€€",
-      "nombreAvis": 2052,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Hotel 1898",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Luxe design à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+1898+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€€",
-      "nombreAvis": 1989,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Ohla Barcelona",
-      "categorie": "Riad & Boutique",
-      "score": 4.7,
-      "adresse": "Barcelone",
-      "description": "Boutique luxe à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Ohla+Barcelona+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€",
-      "nombreAvis": 1179,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "Hotel Granados 83",
-      "categorie": "Riad & Boutique",
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Boutique à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Granados+83+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€",
-      "nombreAvis": 1403,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Barceló Raval",
-      "categorie": "Budget",
-      "score": 4.8,
-      "adresse": "Barcelone",
-      "description": "Design budget à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Barcel%C3%B3+Raval+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€",
-      "nombreAvis": 2212,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Eurostars Grand Marina",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Standard à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Eurostars+Grand+Marina+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€",
-      "nombreAvis": 1838,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Grand Plaza Barcelone",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Barcelone",
-      "description": "Hébergement halal-friendly à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Barcelone+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€€",
-      "nombreAvis": 2030,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "City Comfort Barcelone",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Barcelone",
-      "description": "Hébergement halal-friendly à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Barcelone+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€",
-      "nombreAvis": 1324,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Boutique Dar Barcelone",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Barcelone",
-      "description": "Hébergement halal-friendly à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Barcelone+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€",
-      "nombreAvis": 1372,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "Budget Inn Barcelone",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Barcelone",
-      "description": "Hébergement halal-friendly à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Barcelone+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€",
-      "nombreAvis": 710,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Seaside Resort Barcelone",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Barcelone",
-      "description": "Hébergement halal-friendly à Barcelone.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Barcelone+Barcelone",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Barcelone&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=barcelone",
-      "priceRange": "€€€€",
-      "nombreAvis": 1232,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Sagrada Família",
-      "categorie": "Histoire & Culture",
-      "description": "Chef-d'œuvre inachevé de Gaudí, UNESCO",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Sagrada+Fam%C3%ADlia+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Sagrada+Fam%C3%ADlia+Barcelone",
-      "id": "a1",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Park Güell",
-      "categorie": "Nature & Aventure",
-      "description": "Parc mosaïque de Gaudí",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Park+G%C3%BCell+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Park+G%C3%BCell+Barcelone",
-      "id": "a2",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Tarek Ben Ziyad",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée du quartier d'El Raval",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Tarek+Ben+Ziyad+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Tarek+Ben+Ziyad+Barcelone",
-      "id": "a3",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Las Ramblas & Boqueria",
-      "categorie": "Shopping & Souks",
-      "description": "Avenue animée et marché couvert",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Las+Ramblas+%26+Boqueria+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Las+Ramblas+%26+Boqueria+Barcelone",
-      "id": "a4",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Plage de la Barceloneta",
-      "categorie": "Nature & Aventure",
-      "description": "Plage urbaine méditerranéenne",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Plage+de+la+Barceloneta+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+la+Barceloneta+Barcelone",
-      "id": "a5",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Barcelone",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Barcelone+Barcelone",
-      "id": "a6",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Barcelone",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Barcelone+Barcelone",
-      "id": "a7",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Corniche & front de mer de Barcelone",
-      "categorie": "Nature & Aventure",
-      "description": "Promenade au bord de l'eau au coucher du soleil.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Corniche+%26+front+de+mer+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+%26+front+de+mer+de+Barcelone+Barcelone",
-      "id": "a8",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée national de Barcelone",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et l'art islamique de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+national+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+national+de+Barcelone+Barcelone",
-      "id": "a9",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Atelier cuisine halal de Barcelone",
-      "categorie": "Gastronomie",
-      "description": "Cours de cuisine locale avec un chef, déjeuner inclus.",
-      "duree": "3h",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+cuisine+halal+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+cuisine+halal+de+Barcelone+Barcelone",
-      "id": "a10",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Barcelone",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Barcelone+Barcelone",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Barcelone",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Barcelone+Barcelone",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Barcelone",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Barcelone+Barcelone",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Barcelone",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Barcelone+Barcelone",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Barcelone",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Barcelone+Barcelone",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Barcelone",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Barcelone+Barcelone",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Barcelone",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Barcelone+Barcelone",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Barcelone",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Barcelone+Barcelone",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Barcelone",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Barcelone+Barcelone",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Barcelone",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Barcelone+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Barcelone+Barcelone",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Quartier historique de Barcelone 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Barcelone+10+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Barcelone+10+Barcelone",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Grand marché central de Barcelone 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Barcelone+11+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Barcelone+11+Barcelone",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Barcelone 12",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Barcelone+12+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Barcelone+12+Barcelone",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Musée de la ville de Barcelone 13",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Barcelone+13+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Barcelone+13+Barcelone",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Food tour halal de Barcelone 14",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Barcelone+14+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Barcelone+14+Barcelone",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Hammam traditionnel de Barcelone 15",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Barcelone+15+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Barcelone+15+Barcelone",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Mosquée historique de Barcelone 16",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Barcelone+16+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Barcelone+16+Barcelone",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Parc et jardins de Barcelone 17",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Barcelone+17+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Barcelone+17+Barcelone",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Barcelone 18",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Barcelone+18+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Barcelone+18+Barcelone",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Barcelone 19",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Barcelone+19+Barcelone",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Barcelone+19+Barcelone",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Tarek Ben Ziyad",
-      "description": "Importante mosquée d'El Raval",
-      "adresse": "El Raval",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Tarek+Ben+Ziyad+Barcelone",
-      "capacite": 6714,
-      "anneeConstruction": 1894,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.3851,
-        "lng": 2.1734
-      }
-    },
-    {
-      "nom": "Centre islamique Camí de la Pau",
-      "description": "Centre communautaire musulman",
-      "adresse": "Barcelone",
-      "mapsUrl": "https://maps.google.com/?q=Centre+islamique+Cam%C3%AD+de+la+Pau+Barcelone",
-      "capacite": 1001,
-      "anneeConstruction": 1881,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.3851,
-        "lng": 2.1734
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Barcelone",
-      "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Barcelone",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Barcelone+Barcelone",
-      "capacite": 4490,
-      "anneeConstruction": 1930,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.3851,
-        "lng": 2.1734
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Barcelone",
-      "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Barcelone",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Barcelone+Barcelone",
-      "capacite": 2077,
-      "anneeConstruction": 1997,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.3851,
-        "lng": 2.1734
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Barcelone",
-      "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Barcelone",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Barcelone+Barcelone",
-      "capacite": 4370,
-      "anneeConstruction": 1950,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.3851,
-        "lng": 2.1734
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Barcelone",
-      "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Barcelone",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Barcelone+Barcelone",
-      "capacite": 5896,
-      "anneeConstruction": 1996,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.3851,
-        "lng": 2.1734
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Barcelone",
-      "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Barcelone",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Barcelone+Barcelone",
-      "capacite": 5578,
-      "anneeConstruction": 1938,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.3851,
-        "lng": 2.1734
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Barcelone",
-      "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Barcelone",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Barcelone+Barcelone",
-      "capacite": 3952,
-      "anneeConstruction": 1932,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.3851,
-        "lng": 2.1734
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Barcelone",
-      "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Barcelone",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Barcelone+Barcelone",
-      "capacite": 3600,
-      "anneeConstruction": 1960,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.3851,
-        "lng": 2.1734
-      }
-    },
-    {
-      "nom": "Mosquée historique de Barcelone",
-      "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Barcelone",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Barcelone+Barcelone",
-      "capacite": 2728,
-      "anneeConstruction": 1968,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.3851,
-        "lng": 2.1734
-      }
-    }
-  ],
-  "tags": [
-    "gaudi",
-    "plage",
-    "mediterranee",
-    "el-raval",
-    "tapas",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Marroc Restaurant",
-      "Restaurant 7 Portes",
-      "Bar Mut Barcelona",
-      "Parking Pizza",
-      "Flax & Kale"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Marroc Restaurant",
-      "Café Zurich",
-      "Makamaka Beach Burger",
-      "Honest Greens Barcelona",
-      "Flax & Kale"
-    ],
-    "incontournables": [
-      "Parking Pizza",
-      "Flax & Kale",
-      "Café Zurich",
-      "Punjabi's Barcelona",
-      "Dar Marrakech"
-    ],
-    "pepitesCachees": [
-      "El Nacional Barcelona",
-      "Anatolia Grill"
-    ],
-    "idealFamille": [
-      "Mesón David",
-      "Tickets Barcelona",
-      "Restaurant Al-Medina",
-      "Almoixàvena Barcelone",
-      "Marroc Restaurant"
-    ],
-    "gastronomique": [
-      "Marroc Restaurant",
-      "Restaurant 7 Portes",
-      "Bar Mut Barcelona"
-    ],
-    "ouvertNuit": [
-      "Almoixàvena Barcelone",
-      "Marroc Restaurant",
-      "Pakistan Restaurant Nou de la Rambla"
-    ],
-    "vueExceptionnelle": [
-      "La Mar Salada",
-      "La Paradeta",
-      "Rías de Galicia"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Barcelone",
+   "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Barcelone",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Barcelone+Barcelone",
+   "capacite": 4370,
+   "anneeConstruction": 1950,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.3851,
+    "lng": 2.1734
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Barcelone",
+   "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Barcelone",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Barcelone+Barcelone",
+   "capacite": 5896,
+   "anneeConstruction": 1996,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.3851,
+    "lng": 2.1734
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Barcelone",
+   "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Barcelone",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Barcelone+Barcelone",
+   "capacite": 5578,
+   "anneeConstruction": 1938,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.3851,
+    "lng": 2.1734
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Barcelone",
+   "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Barcelone",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Barcelone+Barcelone",
+   "capacite": 3952,
+   "anneeConstruction": 1932,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.3851,
+    "lng": 2.1734
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Barcelone",
+   "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Barcelone",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Barcelone+Barcelone",
+   "capacite": 3600,
+   "anneeConstruction": 1960,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.3851,
+    "lng": 2.1734
+   }
+  },
+  {
+   "nom": "Mosquée historique de Barcelone",
+   "description": "Mosquée fréquentée de Barcelone, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Barcelone",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Barcelone+Barcelone",
+   "capacite": 2728,
+   "anneeConstruction": 1968,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.3851,
+    "lng": 2.1734
+   }
   }
+ ],
+ "tags": [
+  "gaudi",
+  "plage",
+  "mediterranee",
+  "el-raval",
+  "tapas",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Marroc Restaurant",
+   "Restaurant 7 Portes",
+   "Bar Mut Barcelona",
+   "Parking Pizza",
+   "Flax & Kale"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Marroc Restaurant",
+   "Café Zurich",
+   "Makamaka Beach Burger",
+   "Honest Greens Barcelona",
+   "Flax & Kale"
+  ],
+  "incontournables": [
+   "Parking Pizza",
+   "Flax & Kale",
+   "Café Zurich",
+   "Punjabi's Barcelona",
+   "Dar Marrakech"
+  ],
+  "pepitesCachees": [
+   "El Nacional Barcelona",
+   "Anatolia Grill"
+  ],
+  "idealFamille": [
+   "Mesón David",
+   "Tickets Barcelona",
+   "Restaurant Al-Medina",
+   "Almoixàvena Barcelone",
+   "Marroc Restaurant"
+  ],
+  "gastronomique": [
+   "Marroc Restaurant",
+   "Restaurant 7 Portes",
+   "Bar Mut Barcelona"
+  ],
+  "ouvertNuit": [
+   "Almoixàvena Barcelone",
+   "Marroc Restaurant",
+   "Pakistan Restaurant Nou de la Rambla"
+  ],
+  "vueExceptionnelle": [
+   "La Mar Salada",
+   "La Paradeta",
+   "Rías de Galicia"
+  ]
+ }
 }

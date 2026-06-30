@@ -1,1281 +1,1284 @@
 {
-  "nom": "Dakar",
-  "pays": "Sénégal",
-  "slug": "dakar",
-  "image": "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=1400&q=85",
-  "description": "Dakar, capitale du Sénégal à la pointe ouest de l'Afrique, marie Grande Mosquée, île de Gorée et thiéboudienne. Terre de la Teranga musulmane et chaleureuse.",
-  "descriptionLongue": "Posée sur la presqu'île du Cap-Vert, Dakar est une capitale vibrante et largement musulmane, terre des confréries mouride et tidjane. La Grande Mosquée de Dakar et la mosquée de la Divinité veillent sur l'océan. L'île mémorielle de Gorée, le marché Sandaga et la cuisine sénégalaise — thiéboudienne, yassa, mafé — incarnent la fameuse Teranga (hospitalité). Ville côtière au climat doux.",
-  "halalScore": 9.0,
-  "score_halal": 4.5,
+ "nom": "Dakar",
+ "pays": "Sénégal",
+ "slug": "dakar",
+ "image": "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1568454537842-d933259bb258?w=1400&q=85",
+ "description": "Dakar, capitale du Sénégal à la pointe ouest de l'Afrique, marie Grande Mosquée, île de Gorée et thiéboudienne. Terre de la Teranga musulmane et chaleureuse.",
+ "descriptionLongue": "Posée sur la presqu'île du Cap-Vert, Dakar est une capitale vibrante et largement musulmane, terre des confréries mouride et tidjane. La Grande Mosquée de Dakar et la mosquée de la Divinité veillent sur l'océan. L'île mémorielle de Gorée, le marché Sandaga et la cuisine sénégalaise — thiéboudienne, yassa, mafé — incarnent la fameuse Teranga (hospitalité). Ville côtière au climat doux.",
+ "halalScore": 9,
+ "score_halal": 4.5,
+ "mosquees": 2000,
+ "population": "3,1 millions",
+ "langue": "Français, Wolof",
+ "monnaie": "Franc CFA (XOF)",
+ "fuseau": "UTC+0",
+ "meilleureEpoque": "Novembre à Mai",
+ "prixMoyenNuit": "55€",
+ "continent": "Afrique",
+ "codeISO": "SN",
+ "pays_slug": "senegal",
+ "region": "Afrique de l'Ouest",
+ "meta_title": "Voyage Halal à Dakar — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Dakar — Halal Trust Score 9.0/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Dakar — Halal Trust Score 9.0/10.",
+ "coordonnees": {
+  "lat": 14.7167,
+  "lng": -17.4677
+ },
+ "image_alt": "Vue de Dakar, Sénégal",
+ "statistiques": {
   "mosquees": 2000,
-  "population": "3,1 millions",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 96,
+  "hotels": 10
+ },
+ "infos_pratiques": {
   "langue": "Français, Wolof",
   "monnaie": "Franc CFA (XOF)",
-  "fuseau": "UTC+0",
-  "meilleureEpoque": "Novembre à Mai",
-  "prixMoyenNuit": "55€",
-  "continent": "Afrique",
-  "codeISO": "SN",
-  "pays_slug": "senegal",
-  "region": "Afrique de l'Ouest",
-  "meta_title": "Voyage Halal à Dakar — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Dakar — Halal Trust Score 9.0/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Dakar — Halal Trust Score 9.0/10.",
-  "coordonnees": {
+  "meilleure_periode": "Novembre à Mai",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Réglementé",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Exemption de visa pour les Français (90 jours)",
+  "vaccins": "Fièvre jaune recommandée",
+  "transport": "Taxis, cars rapides, VTC Yango",
+  "priseElectrique": "Type C/D/E/K — 230V",
+  "decalageHoraire": "-1h à -2h par rapport à Paris"
+ },
+ "restaurants": [
+  {
+   "nom": "Chez Loutcha",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Plateau",
+   "description": "Institution du thiéboudienne au centre-ville",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Loutcha+Dakar",
+   "priceRange": "€",
+   "specialite": "Cuisine sénégalaise",
+   "id": "r1"
+  },
+  {
+   "nom": "La Calebasse",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Almadies",
+   "description": "Cuisine sénégalaise généreuse",
+   "mapsUrl": "https://maps.google.com/?q=La+Calebasse+Dakar",
+   "priceRange": "€€",
+   "specialite": "Yassa et mafé",
+   "id": "r2"
+  },
+  {
+   "nom": "Le Lagon 1",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Corniche",
+   "description": "Restaurant les pieds dans l'eau",
+   "mapsUrl": "https://maps.google.com/?q=Le+Lagon+1+Dakar",
+   "priceRange": "€€",
+   "specialite": "Poisson grillé",
+   "id": "r3"
+  },
+  {
+   "nom": "Layepos",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Yoff",
+   "description": "Cantine populaire prisée",
+   "mapsUrl": "https://maps.google.com/?q=Layepos+Dakar",
+   "priceRange": "€",
+   "specialite": "Thiéboudienne",
+   "id": "r4"
+  },
+  {
+   "nom": "Caesar's Almadies",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Almadies",
+   "description": "Grillades et cuisine internationale halal",
+   "mapsUrl": "https://maps.google.com/?q=Caesar%27s+Almadies+Dakar",
+   "priceRange": "€€",
+   "specialite": "Grillades",
+   "id": "r5"
+  },
+  {
+   "nom": "Al Madina Dakar",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Dakar",
+   "description": "Adresse halal appréciée des habitants de Dakar.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Dakar+Dakar",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r6"
+  },
+  {
+   "nom": "Shawarma House Dakar",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Dakar",
+   "description": "Adresse halal appréciée des habitants de Dakar.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Dakar+Dakar",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r7"
+  },
+  {
+   "nom": "Beit Beirut Dakar",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Dakar",
+   "description": "Adresse halal appréciée des habitants de Dakar.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Dakar+Dakar",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r8"
+  },
+  {
+   "nom": "Spice Route Dakar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Dakar",
+   "description": "Adresse halal appréciée des habitants de Dakar.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Dakar+Dakar",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r9"
+  },
+  {
+   "nom": "Saffron Garden Dakar",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Dakar",
+   "description": "Adresse halal appréciée des habitants de Dakar.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Dakar+Dakar",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r10"
+  },
+  {
+   "nom": "Green Bowl Dakar",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Dakar",
+   "description": "Adresse halal appréciée des habitants de Dakar.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Dakar+Dakar",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r11"
+  },
+  {
+   "nom": "Sultan Café Dakar",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Dakar",
+   "description": "Adresse halal appréciée des habitants de Dakar.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Dakar+Dakar",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r12"
+  },
+  {
+   "nom": "Ocean Pearl Dakar",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Dakar",
+   "description": "Adresse halal appréciée des habitants de Dakar.",
+   "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Dakar+Dakar",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé du jour",
+   "id": "r13"
+  },
+  {
+   "nom": "Bella Halal Dakar",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Dakar",
+   "description": "Adresse halal appréciée des habitants de Dakar.",
+   "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Dakar+Dakar",
+   "priceRange": "€€",
+   "specialite": "Pizza halal au four à bois",
+   "id": "r14"
+  },
+  {
+   "nom": "Tokyo Halal Dakar",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Dakar",
+   "description": "Adresse halal appréciée des habitants de Dakar.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Dakar+Dakar",
+   "priceRange": "€€€",
+   "specialite": "Sushis certifiés halal",
+   "id": "r15"
+  },
+  {
+   "nom": "Chez Teranga",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Dakar",
+   "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Dakar",
+   "priceRange": "€",
+   "specialite": "Thiéboudienne",
+   "nombreAvis": 2154,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Maison Baobab",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Dakar",
+   "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Dakar",
+   "priceRange": "€€",
+   "specialite": "Yassa poulet",
+   "nombreAvis": 3162,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Sahel Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Dakar",
+   "description": "Adresse grillades & kebab appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Dakar",
+   "priceRange": "€",
+   "specialite": "Dibi et brochettes",
+   "nombreAvis": 1887,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Beit Cham",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Dakar",
+   "description": "Adresse libanais & levant appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Dakar",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 550,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Jollof House",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Dakar",
+   "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Jollof+House+Dakar",
+   "priceRange": "€",
+   "specialite": "Jollof rice",
+   "nombreAvis": 2065,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Spice Darbar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Dakar",
+   "description": "Adresse indien & pakistani appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Dakar",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1251,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Café Teranga",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Dakar",
+   "description": "Adresse pâtisserie & café appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Dakar",
+   "priceRange": "€",
+   "specialite": "Café Touba",
+   "nombreAvis": 228,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Chez Teranga Dakar 8",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Dakar",
+   "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Dakar+8+Dakar",
+   "priceRange": "€",
+   "specialite": "Thiéboudienne",
+   "nombreAvis": 138,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Maison Baobab Dakar 9",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Dakar",
+   "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Dakar+9+Dakar",
+   "priceRange": "€€",
+   "specialite": "Yassa poulet",
+   "nombreAvis": 1257,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Sahel Grill Dakar 10",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Dakar",
+   "description": "Adresse grillades & kebab appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Dakar+10+Dakar",
+   "priceRange": "€",
+   "specialite": "Dibi et brochettes",
+   "nombreAvis": 2809,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Beit Cham Dakar 11",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Dakar",
+   "description": "Adresse libanais & levant appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Dakar+11+Dakar",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1542,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Jollof House Dakar 12",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Dakar",
+   "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Jollof+House+Dakar+12+Dakar",
+   "priceRange": "€",
+   "specialite": "Jollof rice",
+   "nombreAvis": 953,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Spice Darbar Dakar 13",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Dakar",
+   "description": "Adresse indien & pakistani appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Dakar+13+Dakar",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1378,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Café Teranga Dakar 14",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Dakar",
+   "description": "Adresse pâtisserie & café appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Dakar+14+Dakar",
+   "priceRange": "€",
+   "specialite": "Café Touba",
+   "nombreAvis": 1013,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Chez Teranga Dakar 15",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Dakar",
+   "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Dakar+15+Dakar",
+   "priceRange": "€",
+   "specialite": "Thiéboudienne",
+   "nombreAvis": 939,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Maison Baobab Dakar 16",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Dakar",
+   "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Dakar+16+Dakar",
+   "priceRange": "€€",
+   "specialite": "Yassa poulet",
+   "nombreAvis": 179,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Sahel Grill Dakar 17",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Dakar",
+   "description": "Adresse grillades & kebab appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Dakar+17+Dakar",
+   "priceRange": "€",
+   "specialite": "Dibi et brochettes",
+   "nombreAvis": 3546,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Beit Cham Dakar 18",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Dakar",
+   "description": "Adresse libanais & levant appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Dakar+18+Dakar",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 2574,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Jollof House Dakar 19",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Dakar",
+   "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Jollof+House+Dakar+19+Dakar",
+   "priceRange": "€",
+   "specialite": "Jollof rice",
+   "nombreAvis": 1342,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Spice Darbar Dakar 20",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Dakar",
+   "description": "Adresse indien & pakistani appréciée à Dakar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Dakar+20+Dakar",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1768,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r35"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Radisson Blu Dakar",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Corniche Ouest",
+   "description": "Hôtel cinq étoiles sur la corniche",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Dakar+Dakar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
+   "priceRange": "€€€",
+   "id": "h1",
+   "lat": 14.6951414,
+   "lng": -17.473454
+  },
+  {
+   "nom": "Pullman Dakar Teranga",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Plateau",
+   "description": "Grand hôtel central face à l'océan",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Pullman+Dakar+Teranga+Dakar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
+   "priceRange": "€€€",
+   "id": "h2"
+  },
+  {
+   "nom": "Hôtel Saint-Louis Sun",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Plateau",
+   "description": "Hôtel confortable et abordable",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Saint-Louis+Sun+Dakar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
+   "priceRange": "€€",
+   "id": "h3"
+  },
+  {
+   "nom": "Grand Plaza Dakar",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Dakar",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Dakar+Dakar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
+   "priceRange": "€€€€",
+   "id": "h4"
+  },
+  {
+   "nom": "City Comfort Hotel Dakar",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Dakar",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Dakar+Dakar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
+   "priceRange": "€€€",
+   "id": "h5"
+  },
+  {
+   "nom": "Boutique Riad Dakar",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Dakar",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Dakar+Dakar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
+   "priceRange": "€€€",
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Dakar 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Dakar",
+   "description": "Hébergement halal-friendly à Dakar.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Dakar+0+Dakar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
+   "priceRange": "€€€€",
+   "nombreAvis": 1301,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Dakar",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Dakar",
+   "description": "Hébergement halal-friendly à Dakar.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Dakar+Dakar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
+   "priceRange": "€€€",
+   "nombreAvis": 1995,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Dakar",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Dakar",
+   "description": "Hébergement halal-friendly à Dakar.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Dakar+Dakar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
+   "priceRange": "€€€",
+   "nombreAvis": 1482,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Dakar",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Dakar",
+   "description": "Hébergement halal-friendly à Dakar.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Dakar+Dakar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
+   "priceRange": "€€",
+   "nombreAvis": 2321,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Île de Gorée",
+   "categorie": "Histoire & Culture",
+   "description": "Île mémorielle de la traite, classée UNESCO",
+   "duree": "Demi-journée",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=%C3%8Ele+de+Gor%C3%A9e+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=%C3%8Ele+de+Gor%C3%A9e+Dakar",
+   "id": "a1"
+  },
+  {
+   "nom": "Grande Mosquée de Dakar",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée emblématique au minaret de 67 m",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+de+Dakar+Dakar",
+   "id": "a2"
+  },
+  {
+   "nom": "Monument de la Renaissance africaine",
+   "categorie": "Histoire & Culture",
+   "description": "Statue panoramique dominant la ville",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Monument+de+la+Renaissance+africaine+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Monument+de+la+Renaissance+africaine+Dakar",
+   "id": "a3"
+  },
+  {
+   "nom": "Marché Sandaga",
+   "categorie": "Shopping & Souks",
+   "description": "Grand marché coloré de tissus et d'artisanat",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Sandaga+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+Sandaga+Dakar",
+   "id": "a4"
+  },
+  {
+   "nom": "Lac Rose (Retba)",
+   "categorie": "Nature & Aventure",
+   "description": "Lac rose salé aux abords de Dakar",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Lac+Rose+%28Retba%29+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lac+Rose+%28Retba%29+Dakar",
+   "id": "a5"
+  },
+  {
+   "nom": "Mosquée de la Divinité",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée posée face à l'océan à Ouakam",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+la+Divinit%C3%A9+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+la+Divinit%C3%A9+Dakar",
+   "id": "a6"
+  },
+  {
+   "nom": "Plage de Yoff",
+   "categorie": "Nature & Aventure",
+   "description": "Plage de pêcheurs et village lébou",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Plage+de+Yoff+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Yoff+Dakar",
+   "id": "a7"
+  },
+  {
+   "nom": "Village des Arts",
+   "categorie": "Art & Musées",
+   "description": "Ateliers d'artistes contemporains sénégalais",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Village+des+Arts+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Village+des+Arts+Dakar",
+   "id": "a8"
+  },
+  {
+   "nom": "Vieille ville de Dakar",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Dakar+Dakar",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand souk de Dakar",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Dakar+Dakar",
+   "id": "a10"
+  },
+  {
+   "nom": "Quartier historique de Dakar",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Dakar+Dakar",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Dakar",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Dakar+Dakar",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Dakar",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Dakar+Dakar",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Dakar",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Dakar+Dakar",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Dakar",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Dakar+Dakar",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Dakar",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Dakar+Dakar",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Dakar",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Dakar+Dakar",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Dakar",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Dakar+Dakar",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Dakar",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Dakar+Dakar",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Dakar",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Dakar+Dakar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Dakar+Dakar",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Grande Mosquée de Dakar",
+   "description": "Mosquée de 1964 d'inspiration marocaine, minaret de 67 m",
+   "adresse": "Allées du Centenaire",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Dakar+Dakar",
+   "capacite": 8193,
+   "anneeConstruction": 1853,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 14.7167,
     "lng": -17.4677
+   }
   },
-  "image_alt": "Vue de Dakar, Sénégal",
-  "statistiques": {
-    "mosquees": 2000,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 96
+  {
+   "nom": "Mosquée de la Divinité",
+   "description": "Mosquée moderne posée face à l'Atlantique",
+   "adresse": "Ouakam",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+la+Divinit%C3%A9+Dakar",
+   "capacite": 2489,
+   "anneeConstruction": 2009,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 14.7167,
+    "lng": -17.4677
+   }
   },
-  "infos_pratiques": {
-    "langue": "Français, Wolof",
-    "monnaie": "Franc CFA (XOF)",
-    "meilleure_periode": "Novembre à Mai",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Réglementé",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Dakar",
+   "description": "Mosquée fréquentée de Dakar, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dakar",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Dakar+Dakar",
+   "capacite": 4266,
+   "anneeConstruction": 1946,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 14.7167,
+    "lng": -17.4677
+   }
   },
-  "infoPratique": {
-    "visa": "Exemption de visa pour les Français (90 jours)",
-    "vaccins": "Fièvre jaune recommandée",
-    "transport": "Taxis, cars rapides, VTC Yango",
-    "priseElectrique": "Type C/D/E/K — 230V",
-    "decalageHoraire": "-1h à -2h par rapport à Paris"
+  {
+   "nom": "Mosquée Al-Noor de Dakar",
+   "description": "Mosquée fréquentée de Dakar, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dakar",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Dakar+Dakar",
+   "capacite": 4644,
+   "anneeConstruction": 2004,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 14.7167,
+    "lng": -17.4677
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Chez Loutcha",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Plateau",
-      "description": "Institution du thiéboudienne au centre-ville",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Loutcha+Dakar",
-      "priceRange": "€",
-      "specialite": "Cuisine sénégalaise",
-      "id": "r1"
-    },
-    {
-      "nom": "La Calebasse",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Almadies",
-      "description": "Cuisine sénégalaise généreuse",
-      "mapsUrl": "https://maps.google.com/?q=La+Calebasse+Dakar",
-      "priceRange": "€€",
-      "specialite": "Yassa et mafé",
-      "id": "r2"
-    },
-    {
-      "nom": "Le Lagon 1",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Corniche",
-      "description": "Restaurant les pieds dans l'eau",
-      "mapsUrl": "https://maps.google.com/?q=Le+Lagon+1+Dakar",
-      "priceRange": "€€",
-      "specialite": "Poisson grillé",
-      "id": "r3"
-    },
-    {
-      "nom": "Layepos",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Yoff",
-      "description": "Cantine populaire prisée",
-      "mapsUrl": "https://maps.google.com/?q=Layepos+Dakar",
-      "priceRange": "€",
-      "specialite": "Thiéboudienne",
-      "id": "r4"
-    },
-    {
-      "nom": "Caesar's Almadies",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Almadies",
-      "description": "Grillades et cuisine internationale halal",
-      "mapsUrl": "https://maps.google.com/?q=Caesar%27s+Almadies+Dakar",
-      "priceRange": "€€",
-      "specialite": "Grillades",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Dakar",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Dakar",
-      "description": "Adresse halal appréciée des habitants de Dakar.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Dakar+Dakar",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Dakar",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Dakar",
-      "description": "Adresse halal appréciée des habitants de Dakar.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Dakar+Dakar",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Dakar",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Dakar",
-      "description": "Adresse halal appréciée des habitants de Dakar.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Dakar+Dakar",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Dakar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Dakar",
-      "description": "Adresse halal appréciée des habitants de Dakar.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Dakar+Dakar",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Dakar",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Dakar",
-      "description": "Adresse halal appréciée des habitants de Dakar.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Dakar+Dakar",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Dakar",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Dakar",
-      "description": "Adresse halal appréciée des habitants de Dakar.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Dakar+Dakar",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Dakar",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Dakar",
-      "description": "Adresse halal appréciée des habitants de Dakar.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Dakar+Dakar",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Dakar",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Dakar",
-      "description": "Adresse halal appréciée des habitants de Dakar.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Dakar+Dakar",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Dakar",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Dakar",
-      "description": "Adresse halal appréciée des habitants de Dakar.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Dakar+Dakar",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Dakar",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Dakar",
-      "description": "Adresse halal appréciée des habitants de Dakar.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Dakar+Dakar",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Chez Teranga",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Dakar",
-      "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Dakar",
-      "priceRange": "€",
-      "specialite": "Thiéboudienne",
-      "nombreAvis": 2154,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Maison Baobab",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Dakar",
-      "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Dakar",
-      "priceRange": "€€",
-      "specialite": "Yassa poulet",
-      "nombreAvis": 3162,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Sahel Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Dakar",
-      "description": "Adresse grillades & kebab appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Dakar",
-      "priceRange": "€",
-      "specialite": "Dibi et brochettes",
-      "nombreAvis": 1887,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Beit Cham",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Dakar",
-      "description": "Adresse libanais & levant appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Dakar",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 550,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Jollof House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Dakar",
-      "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Jollof+House+Dakar",
-      "priceRange": "€",
-      "specialite": "Jollof rice",
-      "nombreAvis": 2065,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Spice Darbar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Dakar",
-      "description": "Adresse indien & pakistani appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Dakar",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1251,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Café Teranga",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Dakar",
-      "description": "Adresse pâtisserie & café appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Dakar",
-      "priceRange": "€",
-      "specialite": "Café Touba",
-      "nombreAvis": 228,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Chez Teranga Dakar 8",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Dakar",
-      "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Dakar+8+Dakar",
-      "priceRange": "€",
-      "specialite": "Thiéboudienne",
-      "nombreAvis": 138,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Maison Baobab Dakar 9",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Dakar",
-      "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Dakar+9+Dakar",
-      "priceRange": "€€",
-      "specialite": "Yassa poulet",
-      "nombreAvis": 1257,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Sahel Grill Dakar 10",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Dakar",
-      "description": "Adresse grillades & kebab appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Dakar+10+Dakar",
-      "priceRange": "€",
-      "specialite": "Dibi et brochettes",
-      "nombreAvis": 2809,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Beit Cham Dakar 11",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Dakar",
-      "description": "Adresse libanais & levant appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Dakar+11+Dakar",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1542,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Jollof House Dakar 12",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Dakar",
-      "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Jollof+House+Dakar+12+Dakar",
-      "priceRange": "€",
-      "specialite": "Jollof rice",
-      "nombreAvis": 953,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Spice Darbar Dakar 13",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Dakar",
-      "description": "Adresse indien & pakistani appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Dakar+13+Dakar",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1378,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Café Teranga Dakar 14",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Dakar",
-      "description": "Adresse pâtisserie & café appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Dakar+14+Dakar",
-      "priceRange": "€",
-      "specialite": "Café Touba",
-      "nombreAvis": 1013,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Chez Teranga Dakar 15",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Dakar",
-      "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Dakar+15+Dakar",
-      "priceRange": "€",
-      "specialite": "Thiéboudienne",
-      "nombreAvis": 939,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Maison Baobab Dakar 16",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Dakar",
-      "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Dakar+16+Dakar",
-      "priceRange": "€€",
-      "specialite": "Yassa poulet",
-      "nombreAvis": 179,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Sahel Grill Dakar 17",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Dakar",
-      "description": "Adresse grillades & kebab appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Dakar+17+Dakar",
-      "priceRange": "€",
-      "specialite": "Dibi et brochettes",
-      "nombreAvis": 3546,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Beit Cham Dakar 18",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Dakar",
-      "description": "Adresse libanais & levant appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Dakar+18+Dakar",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 2574,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Jollof House Dakar 19",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Dakar",
-      "description": "Adresse traditionnel local appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Jollof+House+Dakar+19+Dakar",
-      "priceRange": "€",
-      "specialite": "Jollof rice",
-      "nombreAvis": 1342,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Spice Darbar Dakar 20",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Dakar",
-      "description": "Adresse indien & pakistani appréciée à Dakar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Dakar+20+Dakar",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1768,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r35"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Radisson Blu Dakar",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Corniche Ouest",
-      "description": "Hôtel cinq étoiles sur la corniche",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Dakar+Dakar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
-      "priceRange": "€€€",
-      "id": "h1"
-    },
-    {
-      "nom": "Pullman Dakar Teranga",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Plateau",
-      "description": "Grand hôtel central face à l'océan",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Pullman+Dakar+Teranga+Dakar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
-      "priceRange": "€€€",
-      "id": "h2"
-    },
-    {
-      "nom": "Hôtel Saint-Louis Sun",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Plateau",
-      "description": "Hôtel confortable et abordable",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Saint-Louis+Sun+Dakar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
-      "priceRange": "€€",
-      "id": "h3"
-    },
-    {
-      "nom": "Grand Plaza Dakar",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Dakar",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Dakar+Dakar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
-      "priceRange": "€€€€",
-      "id": "h4"
-    },
-    {
-      "nom": "City Comfort Hotel Dakar",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Dakar",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Dakar+Dakar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Dakar",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Dakar",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Dakar+Dakar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Dakar 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Dakar",
-      "description": "Hébergement halal-friendly à Dakar.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Dakar+0+Dakar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
-      "priceRange": "€€€€",
-      "nombreAvis": 1301,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Dakar",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Dakar",
-      "description": "Hébergement halal-friendly à Dakar.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Dakar+Dakar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
-      "priceRange": "€€€",
-      "nombreAvis": 1995,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Dakar",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Dakar",
-      "description": "Hébergement halal-friendly à Dakar.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Dakar+Dakar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
-      "priceRange": "€€€",
-      "nombreAvis": 1482,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Dakar",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Dakar",
-      "description": "Hébergement halal-friendly à Dakar.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Dakar+Dakar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Dakar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dakar",
-      "priceRange": "€€",
-      "nombreAvis": 2321,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Île de Gorée",
-      "categorie": "Histoire & Culture",
-      "description": "Île mémorielle de la traite, classée UNESCO",
-      "duree": "Demi-journée",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=%C3%8Ele+de+Gor%C3%A9e+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=%C3%8Ele+de+Gor%C3%A9e+Dakar",
-      "id": "a1"
-    },
-    {
-      "nom": "Grande Mosquée de Dakar",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée emblématique au minaret de 67 m",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+de+Dakar+Dakar",
-      "id": "a2"
-    },
-    {
-      "nom": "Monument de la Renaissance africaine",
-      "categorie": "Histoire & Culture",
-      "description": "Statue panoramique dominant la ville",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Monument+de+la+Renaissance+africaine+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Monument+de+la+Renaissance+africaine+Dakar",
-      "id": "a3"
-    },
-    {
-      "nom": "Marché Sandaga",
-      "categorie": "Shopping & Souks",
-      "description": "Grand marché coloré de tissus et d'artisanat",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Sandaga+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+Sandaga+Dakar",
-      "id": "a4"
-    },
-    {
-      "nom": "Lac Rose (Retba)",
-      "categorie": "Nature & Aventure",
-      "description": "Lac rose salé aux abords de Dakar",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Lac+Rose+%28Retba%29+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lac+Rose+%28Retba%29+Dakar",
-      "id": "a5"
-    },
-    {
-      "nom": "Mosquée de la Divinité",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée posée face à l'océan à Ouakam",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+la+Divinit%C3%A9+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+la+Divinit%C3%A9+Dakar",
-      "id": "a6"
-    },
-    {
-      "nom": "Plage de Yoff",
-      "categorie": "Nature & Aventure",
-      "description": "Plage de pêcheurs et village lébou",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Plage+de+Yoff+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Yoff+Dakar",
-      "id": "a7"
-    },
-    {
-      "nom": "Village des Arts",
-      "categorie": "Art & Musées",
-      "description": "Ateliers d'artistes contemporains sénégalais",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Village+des+Arts+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Village+des+Arts+Dakar",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Dakar",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Dakar+Dakar",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Dakar",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Dakar+Dakar",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Dakar",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Dakar+Dakar",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Dakar",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Dakar+Dakar",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Dakar",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Dakar+Dakar",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Dakar",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Dakar+Dakar",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Dakar",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Dakar+Dakar",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Dakar",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Dakar+Dakar",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Dakar",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Dakar+Dakar",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Dakar",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Dakar+Dakar",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Dakar",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Dakar+Dakar",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Dakar",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Dakar+Dakar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Dakar+Dakar",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Grande Mosquée de Dakar",
-      "description": "Mosquée de 1964 d'inspiration marocaine, minaret de 67 m",
-      "adresse": "Allées du Centenaire",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Dakar+Dakar",
-      "capacite": 8193,
-      "anneeConstruction": 1853,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 14.7167,
-        "lng": -17.4677
-      }
-    },
-    {
-      "nom": "Mosquée de la Divinité",
-      "description": "Mosquée moderne posée face à l'Atlantique",
-      "adresse": "Ouakam",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+la+Divinit%C3%A9+Dakar",
-      "capacite": 2489,
-      "anneeConstruction": 2009,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 14.7167,
-        "lng": -17.4677
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Dakar",
-      "description": "Mosquée fréquentée de Dakar, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dakar",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Dakar+Dakar",
-      "capacite": 4266,
-      "anneeConstruction": 1946,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 14.7167,
-        "lng": -17.4677
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Dakar",
-      "description": "Mosquée fréquentée de Dakar, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dakar",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Dakar+Dakar",
-      "capacite": 4644,
-      "anneeConstruction": 2004,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 14.7167,
-        "lng": -17.4677
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Dakar",
-      "description": "Mosquée fréquentée de Dakar, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dakar",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Dakar+Dakar",
-      "capacite": 2640,
-      "anneeConstruction": 1920,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 14.7167,
-        "lng": -17.4677
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Dakar",
-      "description": "Mosquée fréquentée de Dakar, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dakar",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Dakar+Dakar",
-      "capacite": 3377,
-      "anneeConstruction": 2017,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 14.7167,
-        "lng": -17.4677
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Dakar",
-      "description": "Mosquée fréquentée de Dakar, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dakar",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Dakar+Dakar",
-      "capacite": 1293,
-      "anneeConstruction": 2013,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 14.7167,
-        "lng": -17.4677
-      }
-    }
-  ],
-  "tags": [
-    "teranga",
-    "cote-atlantique",
-    "gorée",
-    "confreries",
-    "spirituel",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Chez Teranga",
-      "Maison Baobab Dakar 9",
-      "Sahel Grill Dakar 17",
-      "Maison Baobab",
-      "Sahel Grill Dakar 10"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Chez Loutcha",
-      "La Calebasse",
-      "Le Lagon 1",
-      "Layepos",
-      "Caesar's Almadies"
-    ],
-    "incontournables": [
-      "Sahel Grill Dakar 17",
-      "Maison Baobab",
-      "Sahel Grill Dakar 10",
-      "Beit Cham Dakar 18",
-      "Chez Teranga"
-    ],
-    "pepitesCachees": [
-      "Chez Loutcha",
-      "La Calebasse",
-      "Le Lagon 1"
-    ],
-    "idealFamille": [
-      "Chez Teranga",
-      "Maison Baobab",
-      "Sahel Grill",
-      "Beit Cham",
-      "Jollof House"
-    ],
-    "gastronomique": [
-      "Saffron Garden Dakar"
-    ],
-    "ouvertNuit": [
-      "Chez Teranga",
-      "Sahel Grill",
-      "Beit Cham"
-    ],
-    "vueExceptionnelle": [
-      "Chez Teranga",
-      "Maison Baobab Dakar 9",
-      "Sahel Grill Dakar 17"
-    ]
+  {
+   "nom": "Mosquée Al-Salam de Dakar",
+   "description": "Mosquée fréquentée de Dakar, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dakar",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Dakar+Dakar",
+   "capacite": 2640,
+   "anneeConstruction": 1920,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 14.7167,
+    "lng": -17.4677
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Dakar",
+   "description": "Mosquée fréquentée de Dakar, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dakar",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Dakar+Dakar",
+   "capacite": 3377,
+   "anneeConstruction": 2017,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 14.7167,
+    "lng": -17.4677
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Dakar",
+   "description": "Mosquée fréquentée de Dakar, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dakar",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Dakar+Dakar",
+   "capacite": 1293,
+   "anneeConstruction": 2013,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 14.7167,
+    "lng": -17.4677
+   }
   }
+ ],
+ "tags": [
+  "teranga",
+  "cote-atlantique",
+  "gorée",
+  "confreries",
+  "spirituel",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Chez Teranga",
+   "Maison Baobab Dakar 9",
+   "Sahel Grill Dakar 17",
+   "Maison Baobab",
+   "Sahel Grill Dakar 10"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Chez Loutcha",
+   "La Calebasse",
+   "Le Lagon 1",
+   "Layepos",
+   "Caesar's Almadies"
+  ],
+  "incontournables": [
+   "Sahel Grill Dakar 17",
+   "Maison Baobab",
+   "Sahel Grill Dakar 10",
+   "Beit Cham Dakar 18",
+   "Chez Teranga"
+  ],
+  "pepitesCachees": [
+   "Chez Loutcha",
+   "La Calebasse",
+   "Le Lagon 1"
+  ],
+  "idealFamille": [
+   "Chez Teranga",
+   "Maison Baobab",
+   "Sahel Grill",
+   "Beit Cham",
+   "Jollof House"
+  ],
+  "gastronomique": [
+   "Saffron Garden Dakar"
+  ],
+  "ouvertNuit": [
+   "Chez Teranga",
+   "Sahel Grill",
+   "Beit Cham"
+  ],
+  "vueExceptionnelle": [
+   "Chez Teranga",
+   "Maison Baobab Dakar 9",
+   "Sahel Grill Dakar 17"
+  ]
+ }
 }

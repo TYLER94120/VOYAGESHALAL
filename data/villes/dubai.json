@@ -1,2520 +1,2535 @@
 {
-  "slug": "dubai",
-  "nom": "Dubaï",
-  "pays": "Émirats Arabes Unis",
-  "pays_slug": "emirats-arabes-unis",
-  "region": "Moyen-Orient",
-  "coordonnees": {
+ "slug": "dubai",
+ "nom": "Dubaï",
+ "pays": "Émirats Arabes Unis",
+ "pays_slug": "emirats-arabes-unis",
+ "region": "Moyen-Orient",
+ "coordonnees": {
+  "lat": 25.2048,
+  "lng": 55.2708
+ },
+ "score_halal": 5,
+ "description": "Dubaï est la vitrine du monde islamique moderne : gratte-ciels vertigineux, souks traditionnels et une gastronomie halal d'exception.",
+ "image_hero": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&q=80",
+ "image_alt": "Skyline de Dubaï avec le Burj Khalifa au coucher du soleil",
+ "meta_title": "Dubaï Halal — Restaurants, Mosquées & Guide Complet 2026",
+ "meta_description": "Guide complet Dubaï halal 2026 : meilleurs restaurants halal, mosquées, hôtels.",
+ "statistiques": {
+  "mosquees": 950,
+  "restaurants_halal": 12000,
+  "hotels_halal": 680,
+  "habitants_musulmans_pct": 76,
+  "hotels": 15
+ },
+ "infos_pratiques": {
+  "langue": "Arabe (anglais très répandu)",
+  "monnaie": "Dirham émirati (AED)",
+  "meilleure_periode": "Novembre–Mars",
+  "appel_priere": "5 fois par jour — diffusé dans toute la ville",
+  "nourriture_halal": "95%+ des restaurants sont halal",
+  "alcool": "Uniquement dans les hôtels et bars licenciés",
+  "tenue": "Tenue décente dans les lieux publics",
+  "securite": "Très sûre — l'une des villes les plus sûres au monde"
+ },
+ "restaurants": [
+  {
+   "nom": "Nobu Dubai",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Japonais-péruvien halal à l'Atlantis.",
+   "mapsUrl": "https://maps.google.com/?q=Nobu+Dubai+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Japonais-péruvien halal à l'Atlantis",
+   "nombreAvis": 1840,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Zuma Dubai",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Japonais contemporain au DIFC.",
+   "mapsUrl": "https://maps.google.com/?q=Zuma+Dubai+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Japonais contemporain au DIFC",
+   "nombreAvis": 702,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Nusr-Et Steakhouse",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Steakhouse de Salt Bae au DIFC.",
+   "mapsUrl": "https://maps.google.com/?q=Nusr-Et+Steakhouse+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Steakhouse de Salt Bae au DIFC",
+   "nombreAvis": 1479,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Ossiano",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "",
+   "description": "Restaurant sous-marin de l'Atlantis.",
+   "mapsUrl": "https://maps.google.com/?q=Ossiano+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Restaurant sous-marin de l'Atlantis",
+   "nombreAvis": 2206,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "At.mosphere",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Le plus haut restaurant au monde, Burj Khalifa.",
+   "mapsUrl": "https://maps.google.com/?q=At.mosphere+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Le plus haut restaurant au monde, Burj Khalifa",
+   "nombreAvis": 674,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Trèsind Studio",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "",
+   "description": "Cuisine indienne avant-gardiste au DIFC.",
+   "mapsUrl": "https://maps.google.com/?q=Tr%C3%A8sind+Studio+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Cuisine indienne avant-gardiste au DIFC",
+   "nombreAvis": 1528,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Torno Subito",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Massimo Bottura au W Palm.",
+   "mapsUrl": "https://maps.google.com/?q=Torno+Subito+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Massimo Bottura au W Palm",
+   "nombreAvis": 3358,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "CÉ LA VI",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Rooftop de l'Address Sky View.",
+   "mapsUrl": "https://maps.google.com/?q=C%C3%89+LA+VI+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Rooftop de l'Address Sky View",
+   "nombreAvis": 2319,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "1484 by Mezlai",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Cuisine émiratie raffinée en altitude.",
+   "mapsUrl": "https://maps.google.com/?q=1484+by+Mezlai+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Cuisine émiratie raffinée en altitude",
+   "nombreAvis": 3360,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Al Fanar",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Cuisine émiratie dans un décor années 60.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Fanar+Duba%C3%AF",
+   "priceRange": "€€€",
+   "specialite": "Cuisine émiratie dans un décor années 60",
+   "nombreAvis": 1452,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Seven Sands",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Spécialités émiraties.",
+   "mapsUrl": "https://maps.google.com/?q=Seven+Sands+Duba%C3%AF",
+   "priceRange": "€€€",
+   "specialite": "Spécialités émiraties",
+   "nombreAvis": 1700,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Rang Mahal",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Cuisine moghole au JW Marriott.",
+   "mapsUrl": "https://maps.google.com/?q=Rang+Mahal+Duba%C3%AF",
+   "priceRange": "€€€",
+   "specialite": "Cuisine moghole au JW Marriott",
+   "nombreAvis": 113,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Bombay Brasserie",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Street food de Mumbai premium.",
+   "mapsUrl": "https://maps.google.com/?q=Bombay+Brasserie+Duba%C3%AF",
+   "priceRange": "€€€",
+   "specialite": "Street food de Mumbai premium",
+   "nombreAvis": 1903,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Special Ostadi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Cuisine irano-persane à Deira.",
+   "mapsUrl": "https://maps.google.com/?q=Special+Ostadi+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Cuisine irano-persane à Deira",
+   "nombreAvis": 2381,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Em Sherif",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Libanais premium au Bulgari Resort.",
+   "mapsUrl": "https://maps.google.com/?q=Em+Sherif+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Libanais premium au Bulgari Resort",
+   "nombreAvis": 681,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Babel",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Libanais contemporain à City Walk.",
+   "mapsUrl": "https://maps.google.com/?q=Babel+Duba%C3%AF",
+   "priceRange": "€€€",
+   "specialite": "Libanais contemporain à City Walk",
+   "nombreAvis": 67,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Al Halabi",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Libanais authentique.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Halabi+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Libanais authentique",
+   "nombreAvis": 2485,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Al Mallah",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Shawarma légendaire depuis 1979 à Satwa.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Mallah+Duba%C3%AF",
+   "priceRange": "€",
+   "specialite": "Shawarma légendaire depuis 1979 à Satwa",
+   "nombreAvis": 368,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Morimoto",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Iron Chef au Waldorf Astoria.",
+   "mapsUrl": "https://maps.google.com/?q=Morimoto+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Iron Chef au Waldorf Astoria",
+   "nombreAvis": 3196,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Katana",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Sushi halal au Habtoor Palace.",
+   "mapsUrl": "https://maps.google.com/?q=Katana+Duba%C3%AF",
+   "priceRange": "€€€",
+   "specialite": "Sushi halal au Habtoor Palace",
+   "nombreAvis": 2064,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Moshi Moshi",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Sushi halal au Dubai Mall.",
+   "mapsUrl": "https://maps.google.com/?q=Moshi+Moshi+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Sushi halal au Dubai Mall",
+   "nombreAvis": 2620,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Wild & the Moon",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Cold press organic à City Walk.",
+   "mapsUrl": "https://maps.google.com/?q=Wild+%26+the+Moon+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Cold press organic à City Walk",
+   "nombreAvis": 964,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Friends Avenue",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Végétarien indien à Al Barsha.",
+   "mapsUrl": "https://maps.google.com/?q=Friends+Avenue+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Végétarien indien à Al Barsha",
+   "nombreAvis": 1314,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Five Guys Dubai",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Burgers halal au Dubai Mall.",
+   "mapsUrl": "https://maps.google.com/?q=Five+Guys+Dubai+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Burgers halal au Dubai Mall",
+   "nombreAvis": 1425,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Shake Shack Dubai",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Burgers halal certifiés.",
+   "mapsUrl": "https://maps.google.com/?q=Shake+Shack+Dubai+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Burgers halal certifiés",
+   "nombreAvis": 1885,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "id": "r26",
+   "nom": "Al Fanar Restaurant",
+   "cuisine": "Émiratie traditionnelle",
+   "adresse": "Festival City Mall, Al Khail Road",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.6,
+   "avis_count": 7200,
+   "fourchette_prix": "€€",
+   "horaires": "12h–23h",
+   "specialites": [
+    "Machboos à l'agneau",
+    "Harees",
+    "Luqaimat"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 7200,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "ESMA Halal"
+   },
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Al+Fanar+Restaurant+Duba%C3%AF",
+   "nombreAvis": 424,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "id": "r27",
+   "nom": "Logma",
+   "cuisine": "Émiratie contemporaine",
+   "adresse": "Box Park, Al Wasl Road",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.7,
+   "avis_count": 4800,
+   "fourchette_prix": "€€",
+   "horaires": "8h–22h",
+   "specialites": [
+    "Karak Chai",
+    "Balaleet",
+    "Shakshuka émiratie"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 4800,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "ESMA Halal"
+   },
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Logma+Duba%C3%AF",
+   "nombreAvis": 2067,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "id": "r28",
+   "nom": "Arabian Tea House",
+   "cuisine": "Levantine & Émiratie",
+   "adresse": "Al Fahidi Street, Bur Dubai",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.8,
+   "avis_count": 9100,
+   "fourchette_prix": "€",
+   "horaires": "7h–22h",
+   "specialites": [
+    "Foul mudammas",
+    "Fatteh",
+    "Thés arabes"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 9100,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "ESMA Halal"
+   },
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.8,
+   "priceRange": "€",
+   "mapsUrl": "https://maps.google.com/?q=Arabian+Tea+House+Duba%C3%AF",
+   "nombreAvis": 3339,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ]
+  },
+  {
+   "id": "r29",
+   "nom": "Operation Falafel",
+   "cuisine": "Levantine",
+   "adresse": "Downtown Dubai, Sheikh Mohammed Bin Rashid Blvd",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.5,
+   "avis_count": 6300,
+   "fourchette_prix": "€",
+   "horaires": "10h–24h",
+   "specialites": [
+    "Falafel wrap",
+    "Hummus maison",
+    "Fattoush"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 6300,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "ESMA Halal"
+   },
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "priceRange": "€",
+   "mapsUrl": "https://maps.google.com/?q=Operation+Falafel+Duba%C3%AF",
+   "nombreAvis": 2161,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Al Ustad Special Kabab",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bur Dubai",
+   "description": "Institution iranienne du kebab depuis 1978.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Ustad+Special+Kabab+Duba%C3%AF",
+   "priceRange": "€€",
+   "id": "r30",
+   "nombreAvis": 2617,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Ravi Restaurant",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Satwa",
+   "description": "Légende pakistanaise abordable de Dubaï.",
+   "mapsUrl": "https://maps.google.com/?q=Ravi+Restaurant+Duba%C3%AF",
+   "priceRange": "€",
+   "id": "r31",
+   "nombreAvis": 1551,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Pierchic",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Al Qasr, Madinat",
+   "description": "Fruits de mer raffinés au bout d'une jetée.",
+   "mapsUrl": "https://maps.google.com/?q=Pierchic+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "id": "r32",
+   "nombreAvis": 132,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "nom": "Bu Qtair",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Fishing Harbour",
+   "description": "Poisson frais grillé, adresse culte.",
+   "mapsUrl": "https://maps.google.com/?q=Bu+Qtair+Duba%C3%AF",
+   "priceRange": "€€",
+   "id": "r33",
+   "nombreAvis": 2392,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Zaroob",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Sheikh Zayed Road",
+   "description": "Street food levantine colorée.",
+   "mapsUrl": "https://maps.google.com/?q=Zaroob+Duba%C3%AF",
+   "priceRange": "€",
+   "id": "r34",
+   "nombreAvis": 946,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "3 Fils",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jumeirah Fishing Harbour",
+   "description": "Asiatique fusion primé, sans alcool.",
+   "mapsUrl": "https://maps.google.com/?q=3+Fils+Duba%C3%AF",
+   "priceRange": "€€€",
+   "id": "r35",
+   "nombreAvis": 883,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ]
+  },
+  {
+   "nom": "Bait Al Karam",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Dubaï",
+   "description": "Adresse traditionnel local appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Plat mijoté maison",
+   "nombreAvis": 2147,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Shawarma Al Reef",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Dubaï",
+   "description": "Adresse grillades & kebab appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Duba%C3%AF",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "nombreAvis": 3613,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Beit Cham",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Dubaï",
+   "description": "Adresse libanais & levant appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "nombreAvis": 859,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Saffron Majlis",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Dubaï",
+   "description": "Adresse gastronomique appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation halal",
+   "nombreAvis": 1564,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Sultan Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Dubaï",
+   "description": "Adresse pâtisserie & café appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Duba%C3%AF",
+   "priceRange": "€",
+   "specialite": "Kunafa et café arabe",
+   "nombreAvis": 1329,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Bahr Seafood",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Dubaï",
+   "description": "Adresse fruits de mer appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Duba%C3%AF",
+   "priceRange": "€€€",
+   "specialite": "Poisson du jour grillé",
+   "nombreAvis": 1019,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Mughal Spice",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Dubaï",
+   "description": "Adresse indien & pakistani appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1194,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Green Yasmine",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Dubaï",
+   "description": "Adresse végétarien & healthy appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Duba%C3%AF",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "nombreAvis": 574,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Burger Najma",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Dubaï",
+   "description": "Adresse burgers & fast-food appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Smash burger halal",
+   "nombreAvis": 1006,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Tokyo Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Dubaï",
+   "description": "Adresse japonais & asiatique appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Duba%C3%AF",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 100,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Bait Al Karam Dubaï 1",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Dubaï",
+   "description": "Adresse traditionnel local appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Duba%C3%AF+1+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Plat mijoté maison",
+   "nombreAvis": 1586,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Shawarma Al Reef Dubaï 2",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Dubaï",
+   "description": "Adresse grillades & kebab appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Duba%C3%AF+2+Duba%C3%AF",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "nombreAvis": 1660,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Beit Cham Dubaï 3",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Dubaï",
+   "description": "Adresse libanais & levant appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Duba%C3%AF+3+Duba%C3%AF",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "nombreAvis": 325,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Saffron Majlis Dubaï 4",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Dubaï",
+   "description": "Adresse gastronomique appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Duba%C3%AF+4+Duba%C3%AF",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation halal",
+   "nombreAvis": 1438,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Sultan Sweets Dubaï 5",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Dubaï",
+   "description": "Adresse pâtisserie & café appréciée à Dubaï, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Duba%C3%AF+5+Duba%C3%AF",
+   "priceRange": "€",
+   "specialite": "Kunafa et café arabe",
+   "nombreAvis": 1209,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r50"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Jumeirah",
+   "type": "Mosquée principale",
+   "adresse": "Jumeirah Beach Road, Jumeirah",
+   "description": "La seule mosquée de Dubaï ouverte aux non-musulmans. Visites guidées quotidiennes.",
+   "note": 4.9,
+   "acces_non_musulmans": true,
+   "capacite": 1200
+  },
+  {
+   "id": "m2",
+   "nom": "Mosquée Al Farooq Omar Bin Al Khattab",
+   "type": "Grande Mosquée",
+   "adresse": "Al Safa Street, Al Safa",
+   "description": "Surnommée la 'mini Mosquée Bleue', inspirée de Sultanahmet d'Istanbul.",
+   "note": 4.8,
+   "acces_non_musulmans": false,
+   "capacite": 2000
+  },
+  {
+   "id": "m3",
+   "nom": "Mosquée Ibn Battuta",
+   "type": "Mosquée de quartier",
+   "adresse": "Sheikh Zayed Road, Jebel Ali",
+   "description": "Mosquée moderne près du mall Ibn Battuta.",
+   "note": 4.6,
+   "acces_non_musulmans": false,
+   "capacite": 800
+  }
+ ],
+ "hotels": [
+  {
+   "id": "h1",
+   "nom": "Burj Al Arab Jumeirah",
+   "type": "Hôtel ultra-luxe",
+   "adresse": "Jumeirah Beach Road",
+   "etoiles": 5,
+   "halal_certifie": true,
+   "sans_alcool": false,
+   "piscine_privee": true,
+   "note": 4.9,
+   "avis_count": 4200,
+   "prix_nuit_min": 1200,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 4200,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "ESMA Halal"
+   },
+   "categorie": "Luxe",
+   "score": 4.9,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Burj+Al+Arab+Jumeirah+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
+   "nombreAvis": 2007,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 25.1413271,
+   "lng": 55.1853967
+  },
+  {
+   "id": "h2",
+   "nom": "Raffles Dubai",
+   "type": "Hôtel de luxe",
+   "adresse": "Sheikh Rashid Road, Wafi",
+   "etoiles": 5,
+   "halal_certifie": true,
+   "sans_alcool": false,
+   "piscine_privee": false,
+   "note": 4.8,
+   "avis_count": 2800,
+   "prix_nuit_min": 350,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 2800,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "ESMA Halal"
+   },
+   "categorie": "Luxe",
+   "score": 4.8,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Raffles+Dubai+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
+   "nombreAvis": 1995,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 25.2279299,
+   "lng": 55.3204805
+  },
+  {
+   "id": "h3",
+   "nom": "Premier Inn Dubai Al Jadaf",
+   "type": "Hôtel",
+   "adresse": "Al Jaddaf, Culture Village",
+   "etoiles": 3,
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "piscine_privee": false,
+   "note": 4.4,
+   "avis_count": 3100,
+   "prix_nuit_min": 65,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 3100,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "ESMA Halal"
+   },
+   "categorie": "Standard",
+   "score": 4.4,
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Premier+Inn+Dubai+Al+Jadaf+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
+   "nombreAvis": 1877,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 25.2214439,
+   "lng": 55.3319287
+  },
+  {
+   "nom": "Jumeirah Al Qasr",
+   "categorie": "Luxe",
+   "score": 4.8,
+   "adresse": "Madinat Jumeirah",
+   "description": "Palais arabe face au Burj Al Arab.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Jumeirah+Al+Qasr+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
+   "priceRange": "€€€€",
+   "id": "h4",
+   "nombreAvis": 491,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 25.131031,
+   "lng": 55.1838897
+  },
+  {
+   "nom": "Rove Downtown",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Downtown Dubai",
+   "description": "Hôtel moderne abordable près du Burj Khalifa.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Rove+Downtown+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
+   "priceRange": "€€",
+   "id": "h5",
+   "nombreAvis": 2380,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 25.202846,
+   "lng": 55.2793415
+  },
+  {
+   "nom": "Al Seef Heritage Hotel",
+   "categorie": "Riad & Boutique",
+   "score": 4.6,
+   "adresse": "Al Seef",
+   "description": "Hôtel patrimonial au bord de la crique.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Al+Seef+Heritage+Hotel+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
+   "priceRange": "€€€",
+   "id": "h6",
+   "nombreAvis": 2398,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 25.2639693,
+   "lng": 55.3048893
+  },
+  {
+   "nom": "Grand Plaza Dubaï",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Dubaï",
+   "description": "Hébergement halal-friendly à Dubaï.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Duba%C3%AF+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
+   "priceRange": "€€€€",
+   "nombreAvis": 1080,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 25.2704588,
+   "lng": 55.3804969
+  },
+  {
+   "nom": "City Comfort Dubaï",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Dubaï",
+   "description": "Hébergement halal-friendly à Dubaï.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Duba%C3%AF+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
+   "priceRange": "€€€",
+   "nombreAvis": 1493,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Dubaï",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Dubaï",
+   "description": "Hébergement halal-friendly à Dubaï.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Duba%C3%AF+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
+   "priceRange": "€€€",
+   "nombreAvis": 2517,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Dubaï",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Dubaï",
+   "description": "Hébergement halal-friendly à Dubaï.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Duba%C3%AF+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
+   "priceRange": "€€",
+   "nombreAvis": 2462,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  },
+  {
+   "nom": "Seaside Resort Dubaï",
+   "categorie": "Resort & Spa",
+   "score": 4.5,
+   "adresse": "Dubaï",
+   "description": "Hébergement halal-friendly à Dubaï.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Duba%C3%AF+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
+   "priceRange": "€€€€",
+   "nombreAvis": 673,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "piscine-non-mixte",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "spa-femmes",
+    "wifi"
+   ],
+   "id": "h11"
+  },
+  {
+   "nom": "Family Suites Dubaï",
+   "categorie": "Appartement",
+   "score": 4.1,
+   "adresse": "Dubaï",
+   "description": "Hébergement halal-friendly à Dubaï.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Family+Suites+Duba%C3%AF+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
+   "priceRange": "€€",
+   "nombreAvis": 450,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "cuisine-equipee",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  },
+  {
+   "nom": "Grand Plaza Dubaï 6",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Dubaï",
+   "description": "Hébergement halal-friendly à Dubaï.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Duba%C3%AF+6+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
+   "priceRange": "€€€€",
+   "nombreAvis": 259,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h13"
+  },
+  {
+   "nom": "City Comfort Dubaï 7",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Dubaï",
+   "description": "Hébergement halal-friendly à Dubaï.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Duba%C3%AF+7+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
+   "priceRange": "€€€",
+   "nombreAvis": 1587,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14"
+  },
+  {
+   "nom": "Boutique Dar Dubaï 8",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Dubaï",
+   "description": "Hébergement halal-friendly à Dubaï.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Duba%C3%AF+8+Duba%C3%AF",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
+   "priceRange": "€€€",
+   "nombreAvis": 953,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Vieux Dubaï — Al Fahidi et Creek",
+   "type": "Culture & Histoire",
+   "description": "Al Fahidi Historic District, Dubai Museum et traversée du Creek en abra traditionnel.",
+   "duree": "3–4h",
+   "prix": "Gratuit (Abra 1 AED)",
+   "tags": [
+    "histoire",
+    "culture",
+    "famille"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Vieux+Duba%C3%AF+%E2%80%94+Al+Fahidi+et+Creek+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieux+Duba%C3%AF+%E2%80%94+Al+Fahidi+et+Creek+Duba%C3%AF",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a2",
+   "nom": "Burj Khalifa — Observation Deck",
+   "type": "Vue",
+   "description": "Vue à 360° depuis le plus haut bâtiment du monde (828m).",
+   "duree": "1–2h",
+   "prix": "30–150€",
+   "tags": [
+    "vue",
+    "incontournable",
+    "photo"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Burj+Khalifa+%E2%80%94+Observation+Deck+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Burj+Khalifa+%E2%80%94+Observation+Deck+Duba%C3%AF",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a3",
+   "nom": "Souk de l'Or et Souk des Épices",
+   "type": "Shopping",
+   "description": "Le plus grand marché d'or au monde avec 350 bijouteries.",
+   "duree": "2–3h",
+   "prix": "Gratuit",
+   "tags": [
+    "shopping",
+    "traditionnel"
+   ],
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Souk+de+l%27Or+et+Souk+des+%C3%89pices+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+de+l%27Or+et+Souk+des+%C3%89pices+Duba%C3%AF",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a4",
+   "nom": "Safari dans le Désert",
+   "type": "Nature & Aventure",
+   "description": "Dune bashing, coucher de soleil sur les dunes, dîner bédouin sous les étoiles. Repas halal garanti.",
+   "duree": "6–8h",
+   "prix": "50–120€",
+   "tags": [
+    "désert",
+    "aventure",
+    "famille"
+   ],
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Safari+dans+le+D%C3%A9sert+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Safari+dans+le+D%C3%A9sert+Duba%C3%AF",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a5",
+   "nom": "Dubai Mall & Fontaine de Dubaï",
+   "type": "Shopping & Loisirs",
+   "description": "Le plus grand centre commercial du monde et la plus grande fontaine du monde.",
+   "duree": "3–6h",
+   "prix": "Gratuit (spectacle)",
+   "tags": [
+    "shopping",
+    "famille",
+    "soirée"
+   ],
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Dubai+Mall+%26+Fontaine+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Dubai+Mall+%26+Fontaine+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grande Mosquée de Jumeirah",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visites guidées ouvertes aux non-musulmans.",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Jumeirah+Duba%C3%AF",
+   "id": "a6",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+de+Jumeirah+Duba%C3%AF",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Burj Khalifa At The Top",
+   "categorie": "Histoire & Culture",
+   "description": "Plus haute tour du monde, vue à 555 m.",
+   "duree": "1-2h",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Burj+Khalifa+At+The+Top+Duba%C3%AF",
+   "id": "a7",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Burj+Khalifa+At+The+Top+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique Al Fahidi",
+   "categorie": "Histoire & Culture",
+   "description": "Maisons à tours à vent, ruelles anciennes.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+Al+Fahidi+Duba%C3%AF",
+   "id": "a8",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+Al+Fahidi+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Souk de l'or & des épices",
+   "categorie": "Shopping & Souks",
+   "description": "Souks traditionnels de Deira.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Souk+de+l%27or+%26+des+%C3%A9pices+Duba%C3%AF",
+   "id": "a9",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+de+l%27or+%26+des+%C3%A9pices+Duba%C3%AF",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Dubaï",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a10"
+  },
+  {
+   "nom": "Grand marché central de Dubaï",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Dubaï",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Musée de la ville de Dubaï",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Food tour halal de Dubaï",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Hammam traditionnel de Dubaï",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Mosquée historique de Dubaï",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Parc et jardins de Dubaï",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Dubaï",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Dubaï",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Duba%C3%AF+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Duba%C3%AF+Duba%C3%AF",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Quartier historique de Dubaï 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Duba%C3%AF+10+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Duba%C3%AF+10+Duba%C3%AF",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Grand marché central de Dubaï 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Duba%C3%AF+11+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Duba%C3%AF+11+Duba%C3%AF",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Dubaï 12",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Duba%C3%AF+12+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Duba%C3%AF+12+Duba%C3%AF",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Musée de la ville de Dubaï 13",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Duba%C3%AF+13+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Duba%C3%AF+13+Duba%C3%AF",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Food tour halal de Dubaï 14",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Duba%C3%AF+14+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Duba%C3%AF+14+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Hammam traditionnel de Dubaï 15",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Duba%C3%AF+15+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Duba%C3%AF+15+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Mosquée historique de Dubaï 16",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Duba%C3%AF+16+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Duba%C3%AF+16+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Parc et jardins de Dubaï 17",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Duba%C3%AF+17+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Duba%C3%AF+17+Duba%C3%AF",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Dubaï 18",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Duba%C3%AF+18+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Duba%C3%AF+18+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Dubaï 19",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Duba%C3%AF+19+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Duba%C3%AF+19+Duba%C3%AF",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Quartier historique de Dubaï 20",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Duba%C3%AF+20+Duba%C3%AF",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Duba%C3%AF+20+Duba%C3%AF",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "road_trips": [
+  {
+   "id": "rt1",
+   "titre": "Dubaï → Abu Dhabi — Week-end",
+   "duree": "2 jours",
+   "distance_km": 140,
+   "etapes": [
+    "Dubaï",
+    "Abu Dhabi"
+   ],
+   "description": "La grande mosquée Sheikh Zayed est l'une des plus belles du monde.",
+   "conseils_halal": "Abu Dhabi est 100% halal friendly.",
+   "budget_estime": "150–400€/personne"
+  },
+  {
+   "id": "rt2",
+   "titre": "Dubaï → Oman (Muscat) — 3 jours",
+   "duree": "3 jours",
+   "distance_km": 380,
+   "etapes": [
+    "Dubaï",
+    "Al Ain",
+    "Muscat"
+   ],
+   "description": "Grande Mosquée Sultan Qaboos, vieux souk Muttrah, forteresses historiques.",
+   "conseils_halal": "L'Oman est à 95%+ halal.",
+   "budget_estime": "300–600€/personne"
+  }
+ ],
+ "voyages_par_type": {
+  "en_couple": {
+   "intro": "Dubaï est la destination romantique par excellence du monde arabe.",
+   "top_experiences": [
+    "Dîner au sommet du Burj Khalifa",
+    "Croisière privée Creek",
+    "Spa de luxe",
+    "Lever de soleil dunes"
+   ],
+   "conseils": "Réservez At.mosphere (122e Burj Khalifa) 2 semaines à l'avance.",
+   "hotels_recommandes": [
+    "Burj Al Arab Jumeirah",
+    "Raffles Dubai"
+   ]
+  },
+  "en_famille": {
+   "intro": "Dubaï est faite pour les familles musulmanes : parcs thématiques et 95% halal.",
+   "top_experiences": [
+    "IMG Worlds of Adventure",
+    "Aquarium Dubai Mall",
+    "Safari désert",
+    "Ski Dubai"
+   ],
+   "conseils": "La nol Card couvre métro, tram et bus.",
+   "hotels_recommandes": [
+    "Raffles Dubai",
+    "Premier Inn Dubai Al Jadaf"
+   ]
+  },
+  "entre_amis": {
+   "intro": "Shopping de luxe, aventures sportives et gastronomie mondiale.",
+   "top_experiences": [
+    "Rooftop halal Downtown",
+    "Skydive Dubai",
+    "Shopping Festival"
+   ],
+   "conseils": "The Beach à JBR et City Walk sont les plus animés.",
+   "hotels_recommandes": [
+    "Premier Inn Dubai Al Jadaf"
+   ]
+  },
+  "voyage_solo": {
+   "intro": "Dubaï est extrêmement sûre pour les voyageurs solo.",
+   "top_experiences": [
+    "Vieux Dubaï autonome",
+    "Free tour Al Fahidi",
+    "Prière vendredi Grande Mosquée"
+   ],
+   "conseils": "Dubai Pass regroupe les meilleures attractions.",
+   "hotels_recommandes": [
+    "Premier Inn Dubai Al Jadaf"
+   ]
+  },
+  "voyage_spirituel": {
+   "intro": "Dubaï : mosquées contemporaines, appel à la prière partout, Ramadan extraordinaire.",
+   "top_experiences": [
+    "Mosquée Grande Jumeirah",
+    "Fajr mosquée Al Farooq",
+    "Ramadan Dubaï (iftar palaces)",
+    "Abu Dhabi — Mosquée Sheikh Zayed"
+   ],
+   "conseils": "Le Ramadan à Dubaï est unique : iftars somptueux dans les palaces.",
+   "hotels_recommandes": [
+    "Raffles Dubai"
+   ]
+  }
+ },
+ "articles_lies": [],
+ "villes_proches": [
+  "abu-dhabi",
+  "sharjah",
+  "muscat",
+  "doha"
+ ],
+ "codeISO": "AE",
+ "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&q=80",
+ "continent": "Asie",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Dubaï — Halal Trust Score 5/5.",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Dubaï",
+   "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dubaï",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Duba%C3%AF+Duba%C3%AF",
+   "capacite": 1663,
+   "anneeConstruction": 1903,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 25.2048,
     "lng": 55.2708
+   }
   },
-  "score_halal": 5,
-  "description": "Dubaï est la vitrine du monde islamique moderne : gratte-ciels vertigineux, souks traditionnels et une gastronomie halal d'exception.",
-  "image_hero": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&q=80",
-  "image_alt": "Skyline de Dubaï avec le Burj Khalifa au coucher du soleil",
-  "meta_title": "Dubaï Halal — Restaurants, Mosquées & Guide Complet 2026",
-  "meta_description": "Guide complet Dubaï halal 2026 : meilleurs restaurants halal, mosquées, hôtels.",
-  "statistiques": {
-    "mosquees": 950,
-    "restaurants_halal": 12000,
-    "hotels_halal": 680,
-    "habitants_musulmans_pct": 76
+  {
+   "nom": "Grande Mosquée de Dubaï",
+   "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dubaï",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Duba%C3%AF+Duba%C3%AF",
+   "capacite": 2076,
+   "anneeConstruction": 1976,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 25.2048,
+    "lng": 55.2708
+   }
   },
-  "infos_pratiques": {
-    "langue": "Arabe (anglais très répandu)",
-    "monnaie": "Dirham émirati (AED)",
-    "meilleure_periode": "Novembre–Mars",
-    "appel_priere": "5 fois par jour — diffusé dans toute la ville",
-    "nourriture_halal": "95%+ des restaurants sont halal",
-    "alcool": "Uniquement dans les hôtels et bars licenciés",
-    "tenue": "Tenue décente dans les lieux publics",
-    "securite": "Très sûre — l'une des villes les plus sûres au monde"
+  {
+   "nom": "Mosquée Al-Noor de Dubaï",
+   "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dubaï",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Duba%C3%AF+Duba%C3%AF",
+   "capacite": 4485,
+   "anneeConstruction": 1965,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 25.2048,
+    "lng": 55.2708
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Nobu Dubai",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Japonais-péruvien halal à l'Atlantis.",
-      "mapsUrl": "https://maps.google.com/?q=Nobu+Dubai+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Japonais-péruvien halal à l'Atlantis",
-      "nombreAvis": 1840,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Zuma Dubai",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Japonais contemporain au DIFC.",
-      "mapsUrl": "https://maps.google.com/?q=Zuma+Dubai+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Japonais contemporain au DIFC",
-      "nombreAvis": 702,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Nusr-Et Steakhouse",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Steakhouse de Salt Bae au DIFC.",
-      "mapsUrl": "https://maps.google.com/?q=Nusr-Et+Steakhouse+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Steakhouse de Salt Bae au DIFC",
-      "nombreAvis": 1479,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Ossiano",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "",
-      "description": "Restaurant sous-marin de l'Atlantis.",
-      "mapsUrl": "https://maps.google.com/?q=Ossiano+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Restaurant sous-marin de l'Atlantis",
-      "nombreAvis": 2206,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "At.mosphere",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Le plus haut restaurant au monde, Burj Khalifa.",
-      "mapsUrl": "https://maps.google.com/?q=At.mosphere+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Le plus haut restaurant au monde, Burj Khalifa",
-      "nombreAvis": 674,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Trèsind Studio",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "",
-      "description": "Cuisine indienne avant-gardiste au DIFC.",
-      "mapsUrl": "https://maps.google.com/?q=Tr%C3%A8sind+Studio+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Cuisine indienne avant-gardiste au DIFC",
-      "nombreAvis": 1528,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Torno Subito",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Massimo Bottura au W Palm.",
-      "mapsUrl": "https://maps.google.com/?q=Torno+Subito+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Massimo Bottura au W Palm",
-      "nombreAvis": 3358,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "CÉ LA VI",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Rooftop de l'Address Sky View.",
-      "mapsUrl": "https://maps.google.com/?q=C%C3%89+LA+VI+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Rooftop de l'Address Sky View",
-      "nombreAvis": 2319,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "1484 by Mezlai",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Cuisine émiratie raffinée en altitude.",
-      "mapsUrl": "https://maps.google.com/?q=1484+by+Mezlai+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Cuisine émiratie raffinée en altitude",
-      "nombreAvis": 3360,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Al Fanar",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Cuisine émiratie dans un décor années 60.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Fanar+Duba%C3%AF",
-      "priceRange": "€€€",
-      "specialite": "Cuisine émiratie dans un décor années 60",
-      "nombreAvis": 1452,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Seven Sands",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Spécialités émiraties.",
-      "mapsUrl": "https://maps.google.com/?q=Seven+Sands+Duba%C3%AF",
-      "priceRange": "€€€",
-      "specialite": "Spécialités émiraties",
-      "nombreAvis": 1700,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Rang Mahal",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Cuisine moghole au JW Marriott.",
-      "mapsUrl": "https://maps.google.com/?q=Rang+Mahal+Duba%C3%AF",
-      "priceRange": "€€€",
-      "specialite": "Cuisine moghole au JW Marriott",
-      "nombreAvis": 113,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Bombay Brasserie",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Street food de Mumbai premium.",
-      "mapsUrl": "https://maps.google.com/?q=Bombay+Brasserie+Duba%C3%AF",
-      "priceRange": "€€€",
-      "specialite": "Street food de Mumbai premium",
-      "nombreAvis": 1903,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Special Ostadi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Cuisine irano-persane à Deira.",
-      "mapsUrl": "https://maps.google.com/?q=Special+Ostadi+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Cuisine irano-persane à Deira",
-      "nombreAvis": 2381,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Em Sherif",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Libanais premium au Bulgari Resort.",
-      "mapsUrl": "https://maps.google.com/?q=Em+Sherif+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Libanais premium au Bulgari Resort",
-      "nombreAvis": 681,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Babel",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Libanais contemporain à City Walk.",
-      "mapsUrl": "https://maps.google.com/?q=Babel+Duba%C3%AF",
-      "priceRange": "€€€",
-      "specialite": "Libanais contemporain à City Walk",
-      "nombreAvis": 67,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Al Halabi",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Libanais authentique.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Halabi+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Libanais authentique",
-      "nombreAvis": 2485,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Al Mallah",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Shawarma légendaire depuis 1979 à Satwa.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Mallah+Duba%C3%AF",
-      "priceRange": "€",
-      "specialite": "Shawarma légendaire depuis 1979 à Satwa",
-      "nombreAvis": 368,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Morimoto",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Iron Chef au Waldorf Astoria.",
-      "mapsUrl": "https://maps.google.com/?q=Morimoto+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Iron Chef au Waldorf Astoria",
-      "nombreAvis": 3196,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Katana",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Sushi halal au Habtoor Palace.",
-      "mapsUrl": "https://maps.google.com/?q=Katana+Duba%C3%AF",
-      "priceRange": "€€€",
-      "specialite": "Sushi halal au Habtoor Palace",
-      "nombreAvis": 2064,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Moshi Moshi",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Sushi halal au Dubai Mall.",
-      "mapsUrl": "https://maps.google.com/?q=Moshi+Moshi+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Sushi halal au Dubai Mall",
-      "nombreAvis": 2620,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Wild & the Moon",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Cold press organic à City Walk.",
-      "mapsUrl": "https://maps.google.com/?q=Wild+%26+the+Moon+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Cold press organic à City Walk",
-      "nombreAvis": 964,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Friends Avenue",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Végétarien indien à Al Barsha.",
-      "mapsUrl": "https://maps.google.com/?q=Friends+Avenue+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Végétarien indien à Al Barsha",
-      "nombreAvis": 1314,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Five Guys Dubai",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Burgers halal au Dubai Mall.",
-      "mapsUrl": "https://maps.google.com/?q=Five+Guys+Dubai+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Burgers halal au Dubai Mall",
-      "nombreAvis": 1425,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Shake Shack Dubai",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Burgers halal certifiés.",
-      "mapsUrl": "https://maps.google.com/?q=Shake+Shack+Dubai+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Burgers halal certifiés",
-      "nombreAvis": 1885,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "id": "r26",
-      "nom": "Al Fanar Restaurant",
-      "cuisine": "Émiratie traditionnelle",
-      "adresse": "Festival City Mall, Al Khail Road",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.6,
-      "avis_count": 7200,
-      "fourchette_prix": "€€",
-      "horaires": "12h–23h",
-      "specialites": [
-        "Machboos à l'agneau",
-        "Harees",
-        "Luqaimat"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 7200,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ESMA Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Al+Fanar+Restaurant+Duba%C3%AF",
-      "nombreAvis": 424,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r27",
-      "nom": "Logma",
-      "cuisine": "Émiratie contemporaine",
-      "adresse": "Box Park, Al Wasl Road",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.7,
-      "avis_count": 4800,
-      "fourchette_prix": "€€",
-      "horaires": "8h–22h",
-      "specialites": [
-        "Karak Chai",
-        "Balaleet",
-        "Shakshuka émiratie"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 4800,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ESMA Halal"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Logma+Duba%C3%AF",
-      "nombreAvis": 2067,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r28",
-      "nom": "Arabian Tea House",
-      "cuisine": "Levantine & Émiratie",
-      "adresse": "Al Fahidi Street, Bur Dubai",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.8,
-      "avis_count": 9100,
-      "fourchette_prix": "€",
-      "horaires": "7h–22h",
-      "specialites": [
-        "Foul mudammas",
-        "Fatteh",
-        "Thés arabes"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 9100,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ESMA Halal"
-      },
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.8,
-      "priceRange": "€",
-      "mapsUrl": "https://maps.google.com/?q=Arabian+Tea+House+Duba%C3%AF",
-      "nombreAvis": 3339,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ]
-    },
-    {
-      "id": "r29",
-      "nom": "Operation Falafel",
-      "cuisine": "Levantine",
-      "adresse": "Downtown Dubai, Sheikh Mohammed Bin Rashid Blvd",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.5,
-      "avis_count": 6300,
-      "fourchette_prix": "€",
-      "horaires": "10h–24h",
-      "specialites": [
-        "Falafel wrap",
-        "Hummus maison",
-        "Fattoush"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 6300,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ESMA Halal"
-      },
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "priceRange": "€",
-      "mapsUrl": "https://maps.google.com/?q=Operation+Falafel+Duba%C3%AF",
-      "nombreAvis": 2161,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Al Ustad Special Kabab",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bur Dubai",
-      "description": "Institution iranienne du kebab depuis 1978.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Ustad+Special+Kabab+Duba%C3%AF",
-      "priceRange": "€€",
-      "id": "r30",
-      "nombreAvis": 2617,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Ravi Restaurant",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Satwa",
-      "description": "Légende pakistanaise abordable de Dubaï.",
-      "mapsUrl": "https://maps.google.com/?q=Ravi+Restaurant+Duba%C3%AF",
-      "priceRange": "€",
-      "id": "r31",
-      "nombreAvis": 1551,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Pierchic",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Al Qasr, Madinat",
-      "description": "Fruits de mer raffinés au bout d'une jetée.",
-      "mapsUrl": "https://maps.google.com/?q=Pierchic+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "id": "r32",
-      "nombreAvis": 132,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Bu Qtair",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Fishing Harbour",
-      "description": "Poisson frais grillé, adresse culte.",
-      "mapsUrl": "https://maps.google.com/?q=Bu+Qtair+Duba%C3%AF",
-      "priceRange": "€€",
-      "id": "r33",
-      "nombreAvis": 2392,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Zaroob",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Sheikh Zayed Road",
-      "description": "Street food levantine colorée.",
-      "mapsUrl": "https://maps.google.com/?q=Zaroob+Duba%C3%AF",
-      "priceRange": "€",
-      "id": "r34",
-      "nombreAvis": 946,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "3 Fils",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jumeirah Fishing Harbour",
-      "description": "Asiatique fusion primé, sans alcool.",
-      "mapsUrl": "https://maps.google.com/?q=3+Fils+Duba%C3%AF",
-      "priceRange": "€€€",
-      "id": "r35",
-      "nombreAvis": 883,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ]
-    },
-    {
-      "nom": "Bait Al Karam",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Dubaï",
-      "description": "Adresse traditionnel local appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 2147,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Shawarma Al Reef",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Dubaï",
-      "description": "Adresse grillades & kebab appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Duba%C3%AF",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 3613,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Beit Cham",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Dubaï",
-      "description": "Adresse libanais & levant appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 859,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Saffron Majlis",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Dubaï",
-      "description": "Adresse gastronomique appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 1564,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Sultan Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Dubaï",
-      "description": "Adresse pâtisserie & café appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Duba%C3%AF",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 1329,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Bahr Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Dubaï",
-      "description": "Adresse fruits de mer appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Duba%C3%AF",
-      "priceRange": "€€€",
-      "specialite": "Poisson du jour grillé",
-      "nombreAvis": 1019,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Mughal Spice",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Dubaï",
-      "description": "Adresse indien & pakistani appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1194,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Green Yasmine",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Dubaï",
-      "description": "Adresse végétarien & healthy appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Duba%C3%AF",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "nombreAvis": 574,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Burger Najma",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Dubaï",
-      "description": "Adresse burgers & fast-food appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 1006,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Tokyo Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Dubaï",
-      "description": "Adresse japonais & asiatique appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Duba%C3%AF",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 100,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Bait Al Karam Dubaï 1",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Dubaï",
-      "description": "Adresse traditionnel local appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Duba%C3%AF+1+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 1586,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Shawarma Al Reef Dubaï 2",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Dubaï",
-      "description": "Adresse grillades & kebab appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Duba%C3%AF+2+Duba%C3%AF",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 1660,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Beit Cham Dubaï 3",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Dubaï",
-      "description": "Adresse libanais & levant appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Duba%C3%AF+3+Duba%C3%AF",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 325,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Saffron Majlis Dubaï 4",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Dubaï",
-      "description": "Adresse gastronomique appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Duba%C3%AF+4+Duba%C3%AF",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 1438,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Sultan Sweets Dubaï 5",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Dubaï",
-      "description": "Adresse pâtisserie & café appréciée à Dubaï, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Duba%C3%AF+5+Duba%C3%AF",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 1209,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r50"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Jumeirah",
-      "type": "Mosquée principale",
-      "adresse": "Jumeirah Beach Road, Jumeirah",
-      "description": "La seule mosquée de Dubaï ouverte aux non-musulmans. Visites guidées quotidiennes.",
-      "note": 4.9,
-      "acces_non_musulmans": true,
-      "capacite": 1200
-    },
-    {
-      "id": "m2",
-      "nom": "Mosquée Al Farooq Omar Bin Al Khattab",
-      "type": "Grande Mosquée",
-      "adresse": "Al Safa Street, Al Safa",
-      "description": "Surnommée la 'mini Mosquée Bleue', inspirée de Sultanahmet d'Istanbul.",
-      "note": 4.8,
-      "acces_non_musulmans": false,
-      "capacite": 2000
-    },
-    {
-      "id": "m3",
-      "nom": "Mosquée Ibn Battuta",
-      "type": "Mosquée de quartier",
-      "adresse": "Sheikh Zayed Road, Jebel Ali",
-      "description": "Mosquée moderne près du mall Ibn Battuta.",
-      "note": 4.6,
-      "acces_non_musulmans": false,
-      "capacite": 800
-    }
-  ],
-  "hotels": [
-    {
-      "id": "h1",
-      "nom": "Burj Al Arab Jumeirah",
-      "type": "Hôtel ultra-luxe",
-      "adresse": "Jumeirah Beach Road",
-      "etoiles": 5,
-      "halal_certifie": true,
-      "sans_alcool": false,
-      "piscine_privee": true,
-      "note": 4.9,
-      "avis_count": 4200,
-      "prix_nuit_min": 1200,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 4200,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ESMA Halal"
-      },
-      "categorie": "Luxe",
-      "score": 4.9,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Burj+Al+Arab+Jumeirah+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
-      "nombreAvis": 2007,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h2",
-      "nom": "Raffles Dubai",
-      "type": "Hôtel de luxe",
-      "adresse": "Sheikh Rashid Road, Wafi",
-      "etoiles": 5,
-      "halal_certifie": true,
-      "sans_alcool": false,
-      "piscine_privee": false,
-      "note": 4.8,
-      "avis_count": 2800,
-      "prix_nuit_min": 350,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 2800,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ESMA Halal"
-      },
-      "categorie": "Luxe",
-      "score": 4.8,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Raffles+Dubai+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
-      "nombreAvis": 1995,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h3",
-      "nom": "Premier Inn Dubai Al Jadaf",
-      "type": "Hôtel",
-      "adresse": "Al Jaddaf, Culture Village",
-      "etoiles": 3,
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "piscine_privee": false,
-      "note": 4.4,
-      "avis_count": 3100,
-      "prix_nuit_min": 65,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 3100,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "ESMA Halal"
-      },
-      "categorie": "Standard",
-      "score": 4.4,
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Premier+Inn+Dubai+Al+Jadaf+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
-      "nombreAvis": 1877,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Jumeirah Al Qasr",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Madinat Jumeirah",
-      "description": "Palais arabe face au Burj Al Arab.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Jumeirah+Al+Qasr+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
-      "priceRange": "€€€€",
-      "id": "h4",
-      "nombreAvis": 491,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Rove Downtown",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Downtown Dubai",
-      "description": "Hôtel moderne abordable près du Burj Khalifa.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Rove+Downtown+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
-      "priceRange": "€€",
-      "id": "h5",
-      "nombreAvis": 2380,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Al Seef Heritage Hotel",
-      "categorie": "Riad & Boutique",
-      "score": 4.6,
-      "adresse": "Al Seef",
-      "description": "Hôtel patrimonial au bord de la crique.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Al+Seef+Heritage+Hotel+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Duba%C3%AF",
-      "priceRange": "€€€",
-      "id": "h6",
-      "nombreAvis": 2398,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Dubaï",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Dubaï",
-      "description": "Hébergement halal-friendly à Dubaï.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Duba%C3%AF+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
-      "priceRange": "€€€€",
-      "nombreAvis": 1080,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Dubaï",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Dubaï",
-      "description": "Hébergement halal-friendly à Dubaï.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Duba%C3%AF+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
-      "priceRange": "€€€",
-      "nombreAvis": 1493,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Dubaï",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Dubaï",
-      "description": "Hébergement halal-friendly à Dubaï.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Duba%C3%AF+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
-      "priceRange": "€€€",
-      "nombreAvis": 2517,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Dubaï",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Dubaï",
-      "description": "Hébergement halal-friendly à Dubaï.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Duba%C3%AF+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
-      "priceRange": "€€",
-      "nombreAvis": 2462,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Seaside Resort Dubaï",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Dubaï",
-      "description": "Hébergement halal-friendly à Dubaï.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Duba%C3%AF+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
-      "priceRange": "€€€€",
-      "nombreAvis": 673,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "piscine-non-mixte",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "spa-femmes",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Family Suites Dubaï",
-      "categorie": "Appartement",
-      "score": 4.1,
-      "adresse": "Dubaï",
-      "description": "Hébergement halal-friendly à Dubaï.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Family+Suites+Duba%C3%AF+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
-      "priceRange": "€€",
-      "nombreAvis": 450,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "cuisine-equipee",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Grand Plaza Dubaï 6",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Dubaï",
-      "description": "Hébergement halal-friendly à Dubaï.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Duba%C3%AF+6+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
-      "priceRange": "€€€€",
-      "nombreAvis": 259,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "City Comfort Dubaï 7",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Dubaï",
-      "description": "Hébergement halal-friendly à Dubaï.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Duba%C3%AF+7+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
-      "priceRange": "€€€",
-      "nombreAvis": 1587,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Boutique Dar Dubaï 8",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Dubaï",
-      "description": "Hébergement halal-friendly à Dubaï.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Duba%C3%AF+8+Duba%C3%AF",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Duba%C3%AF&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=dubai",
-      "priceRange": "€€€",
-      "nombreAvis": 953,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Vieux Dubaï — Al Fahidi et Creek",
-      "type": "Culture & Histoire",
-      "description": "Al Fahidi Historic District, Dubai Museum et traversée du Creek en abra traditionnel.",
-      "duree": "3–4h",
-      "prix": "Gratuit (Abra 1 AED)",
-      "tags": [
-        "histoire",
-        "culture",
-        "famille"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Vieux+Duba%C3%AF+%E2%80%94+Al+Fahidi+et+Creek+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieux+Duba%C3%AF+%E2%80%94+Al+Fahidi+et+Creek+Duba%C3%AF",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Burj Khalifa — Observation Deck",
-      "type": "Vue",
-      "description": "Vue à 360° depuis le plus haut bâtiment du monde (828m).",
-      "duree": "1–2h",
-      "prix": "30–150€",
-      "tags": [
-        "vue",
-        "incontournable",
-        "photo"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Burj+Khalifa+%E2%80%94+Observation+Deck+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Burj+Khalifa+%E2%80%94+Observation+Deck+Duba%C3%AF",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Souk de l'Or et Souk des Épices",
-      "type": "Shopping",
-      "description": "Le plus grand marché d'or au monde avec 350 bijouteries.",
-      "duree": "2–3h",
-      "prix": "Gratuit",
-      "tags": [
-        "shopping",
-        "traditionnel"
-      ],
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Souk+de+l%27Or+et+Souk+des+%C3%89pices+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+de+l%27Or+et+Souk+des+%C3%89pices+Duba%C3%AF",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Safari dans le Désert",
-      "type": "Nature & Aventure",
-      "description": "Dune bashing, coucher de soleil sur les dunes, dîner bédouin sous les étoiles. Repas halal garanti.",
-      "duree": "6–8h",
-      "prix": "50–120€",
-      "tags": [
-        "désert",
-        "aventure",
-        "famille"
-      ],
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Safari+dans+le+D%C3%A9sert+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Safari+dans+le+D%C3%A9sert+Duba%C3%AF",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a5",
-      "nom": "Dubai Mall & Fontaine de Dubaï",
-      "type": "Shopping & Loisirs",
-      "description": "Le plus grand centre commercial du monde et la plus grande fontaine du monde.",
-      "duree": "3–6h",
-      "prix": "Gratuit (spectacle)",
-      "tags": [
-        "shopping",
-        "famille",
-        "soirée"
-      ],
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Dubai+Mall+%26+Fontaine+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Dubai+Mall+%26+Fontaine+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grande Mosquée de Jumeirah",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visites guidées ouvertes aux non-musulmans.",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Jumeirah+Duba%C3%AF",
-      "id": "a6",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+de+Jumeirah+Duba%C3%AF",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Burj Khalifa At The Top",
-      "categorie": "Histoire & Culture",
-      "description": "Plus haute tour du monde, vue à 555 m.",
-      "duree": "1-2h",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Burj+Khalifa+At+The+Top+Duba%C3%AF",
-      "id": "a7",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Burj+Khalifa+At+The+Top+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique Al Fahidi",
-      "categorie": "Histoire & Culture",
-      "description": "Maisons à tours à vent, ruelles anciennes.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+Al+Fahidi+Duba%C3%AF",
-      "id": "a8",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+Al+Fahidi+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Souk de l'or & des épices",
-      "categorie": "Shopping & Souks",
-      "description": "Souks traditionnels de Deira.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Souk+de+l%27or+%26+des+%C3%A9pices+Duba%C3%AF",
-      "id": "a9",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+de+l%27or+%26+des+%C3%A9pices+Duba%C3%AF",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Dubaï",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Grand marché central de Dubaï",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Dubaï",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Musée de la ville de Dubaï",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Food tour halal de Dubaï",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Hammam traditionnel de Dubaï",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Mosquée historique de Dubaï",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Parc et jardins de Dubaï",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Dubaï",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Dubaï",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Duba%C3%AF+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Duba%C3%AF+Duba%C3%AF",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Quartier historique de Dubaï 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Duba%C3%AF+10+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Duba%C3%AF+10+Duba%C3%AF",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Grand marché central de Dubaï 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Duba%C3%AF+11+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Duba%C3%AF+11+Duba%C3%AF",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Dubaï 12",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Duba%C3%AF+12+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Duba%C3%AF+12+Duba%C3%AF",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Musée de la ville de Dubaï 13",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Duba%C3%AF+13+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Duba%C3%AF+13+Duba%C3%AF",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Food tour halal de Dubaï 14",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Duba%C3%AF+14+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Duba%C3%AF+14+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Hammam traditionnel de Dubaï 15",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Duba%C3%AF+15+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Duba%C3%AF+15+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Mosquée historique de Dubaï 16",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Duba%C3%AF+16+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Duba%C3%AF+16+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Parc et jardins de Dubaï 17",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Duba%C3%AF+17+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Duba%C3%AF+17+Duba%C3%AF",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Dubaï 18",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Duba%C3%AF+18+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Duba%C3%AF+18+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Dubaï 19",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Duba%C3%AF+19+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Duba%C3%AF+19+Duba%C3%AF",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Quartier historique de Dubaï 20",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Duba%C3%AF+20+Duba%C3%AF",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Duba%C3%AF+20+Duba%C3%AF",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "road_trips": [
-    {
-      "id": "rt1",
-      "titre": "Dubaï → Abu Dhabi — Week-end",
-      "duree": "2 jours",
-      "distance_km": 140,
-      "etapes": [
-        "Dubaï",
-        "Abu Dhabi"
-      ],
-      "description": "La grande mosquée Sheikh Zayed est l'une des plus belles du monde.",
-      "conseils_halal": "Abu Dhabi est 100% halal friendly.",
-      "budget_estime": "150–400€/personne"
-    },
-    {
-      "id": "rt2",
-      "titre": "Dubaï → Oman (Muscat) — 3 jours",
-      "duree": "3 jours",
-      "distance_km": 380,
-      "etapes": [
-        "Dubaï",
-        "Al Ain",
-        "Muscat"
-      ],
-      "description": "Grande Mosquée Sultan Qaboos, vieux souk Muttrah, forteresses historiques.",
-      "conseils_halal": "L'Oman est à 95%+ halal.",
-      "budget_estime": "300–600€/personne"
-    }
-  ],
-  "voyages_par_type": {
-    "en_couple": {
-      "intro": "Dubaï est la destination romantique par excellence du monde arabe.",
-      "top_experiences": [
-        "Dîner au sommet du Burj Khalifa",
-        "Croisière privée Creek",
-        "Spa de luxe",
-        "Lever de soleil dunes"
-      ],
-      "conseils": "Réservez At.mosphere (122e Burj Khalifa) 2 semaines à l'avance.",
-      "hotels_recommandes": [
-        "Burj Al Arab Jumeirah",
-        "Raffles Dubai"
-      ]
-    },
-    "en_famille": {
-      "intro": "Dubaï est faite pour les familles musulmanes : parcs thématiques et 95% halal.",
-      "top_experiences": [
-        "IMG Worlds of Adventure",
-        "Aquarium Dubai Mall",
-        "Safari désert",
-        "Ski Dubai"
-      ],
-      "conseils": "La nol Card couvre métro, tram et bus.",
-      "hotels_recommandes": [
-        "Raffles Dubai",
-        "Premier Inn Dubai Al Jadaf"
-      ]
-    },
-    "entre_amis": {
-      "intro": "Shopping de luxe, aventures sportives et gastronomie mondiale.",
-      "top_experiences": [
-        "Rooftop halal Downtown",
-        "Skydive Dubai",
-        "Shopping Festival"
-      ],
-      "conseils": "The Beach à JBR et City Walk sont les plus animés.",
-      "hotels_recommandes": [
-        "Premier Inn Dubai Al Jadaf"
-      ]
-    },
-    "voyage_solo": {
-      "intro": "Dubaï est extrêmement sûre pour les voyageurs solo.",
-      "top_experiences": [
-        "Vieux Dubaï autonome",
-        "Free tour Al Fahidi",
-        "Prière vendredi Grande Mosquée"
-      ],
-      "conseils": "Dubai Pass regroupe les meilleures attractions.",
-      "hotels_recommandes": [
-        "Premier Inn Dubai Al Jadaf"
-      ]
-    },
-    "voyage_spirituel": {
-      "intro": "Dubaï : mosquées contemporaines, appel à la prière partout, Ramadan extraordinaire.",
-      "top_experiences": [
-        "Mosquée Grande Jumeirah",
-        "Fajr mosquée Al Farooq",
-        "Ramadan Dubaï (iftar palaces)",
-        "Abu Dhabi — Mosquée Sheikh Zayed"
-      ],
-      "conseils": "Le Ramadan à Dubaï est unique : iftars somptueux dans les palaces.",
-      "hotels_recommandes": [
-        "Raffles Dubai"
-      ]
-    }
+  {
+   "nom": "Mosquée Al-Salam de Dubaï",
+   "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dubaï",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Duba%C3%AF+Duba%C3%AF",
+   "capacite": 3965,
+   "anneeConstruction": 1965,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 25.2048,
+    "lng": 55.2708
+   }
   },
-  "articles_lies": [],
-  "villes_proches": [
-    "abu-dhabi",
-    "sharjah",
-    "muscat",
-    "doha"
-  ],
-  "codeISO": "AE",
-  "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1600&q=80",
-  "continent": "Asie",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Dubaï — Halal Trust Score 5/5.",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Dubaï",
-      "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dubaï",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Duba%C3%AF+Duba%C3%AF",
-      "capacite": 1663,
-      "anneeConstruction": 1903,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 25.2048,
-        "lng": 55.2708
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Dubaï",
-      "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dubaï",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Duba%C3%AF+Duba%C3%AF",
-      "capacite": 2076,
-      "anneeConstruction": 1976,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 25.2048,
-        "lng": 55.2708
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Dubaï",
-      "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dubaï",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Duba%C3%AF+Duba%C3%AF",
-      "capacite": 4485,
-      "anneeConstruction": 1965,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 25.2048,
-        "lng": 55.2708
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Dubaï",
-      "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dubaï",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Duba%C3%AF+Duba%C3%AF",
-      "capacite": 3965,
-      "anneeConstruction": 1965,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 25.2048,
-        "lng": 55.2708
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Dubaï",
-      "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dubaï",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Duba%C3%AF+Duba%C3%AF",
-      "capacite": 5459,
-      "anneeConstruction": 1959,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 25.2048,
-        "lng": 55.2708
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Dubaï",
-      "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dubaï",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Duba%C3%AF+Duba%C3%AF",
-      "capacite": 6538,
-      "anneeConstruction": 1918,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 25.2048,
-        "lng": 55.2708
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Dubaï",
-      "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dubaï",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Duba%C3%AF+Duba%C3%AF",
-      "capacite": 5070,
-      "anneeConstruction": 1930,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 25.2048,
-        "lng": 55.2708
-      }
-    },
-    {
-      "nom": "Mosquée historique de Dubaï",
-      "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dubaï",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Duba%C3%AF+Duba%C3%AF",
-      "capacite": 2469,
-      "anneeConstruction": 1929,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 25.2048,
-        "lng": 55.2708
-      }
-    },
-    {
-      "nom": "Mosquée du vendredi de Dubaï",
-      "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dubaï",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Duba%C3%AF+Duba%C3%AF",
-      "capacite": 2247,
-      "anneeConstruction": 1907,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 25.2048,
-        "lng": 55.2708
-      }
-    },
-    {
-      "nom": "Mosquée Al-Hidaya de Dubaï",
-      "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Dubaï",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Duba%C3%AF+Duba%C3%AF",
-      "capacite": 1199,
-      "anneeConstruction": 2019,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 25.2048,
-        "lng": 55.2708
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Ossiano",
-      "Trèsind Studio",
-      "Nobu Dubai",
-      "Zuma Dubai",
-      "Torno Subito"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Special Ostadi",
-      "Al Halabi",
-      "Al Mallah",
-      "Moshi Moshi",
-      "Wild & the Moon"
-    ],
-    "incontournables": [
-      "Shawarma Al Reef",
-      "1484 by Mezlai",
-      "Torno Subito",
-      "Arabian Tea House",
-      "Morimoto"
-    ],
-    "pepitesCachees": [
-      "Rang Mahal",
-      "Babel",
-      "Al Mallah"
-    ],
-    "idealFamille": [
-      "Nusr-Et Steakhouse",
-      "Ossiano",
-      "Torno Subito",
-      "1484 by Mezlai",
-      "Al Fanar"
-    ],
-    "gastronomique": [
-      "At.mosphere",
-      "Trèsind Studio",
-      "CÉ LA VI",
-      "Pierchic",
-      "Saffron Majlis"
-    ],
-    "ouvertNuit": [
-      "Nusr-Et Steakhouse",
-      "Torno Subito",
-      "Em Sherif"
-    ],
-    "vueExceptionnelle": [
-      "Ossiano",
-      "Bahr Seafood"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Dubaï",
+   "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dubaï",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Duba%C3%AF+Duba%C3%AF",
+   "capacite": 5459,
+   "anneeConstruction": 1959,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 25.2048,
+    "lng": 55.2708
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Dubaï",
+   "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dubaï",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Duba%C3%AF+Duba%C3%AF",
+   "capacite": 6538,
+   "anneeConstruction": 1918,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 25.2048,
+    "lng": 55.2708
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Dubaï",
+   "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dubaï",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Duba%C3%AF+Duba%C3%AF",
+   "capacite": 5070,
+   "anneeConstruction": 1930,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 25.2048,
+    "lng": 55.2708
+   }
+  },
+  {
+   "nom": "Mosquée historique de Dubaï",
+   "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dubaï",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Duba%C3%AF+Duba%C3%AF",
+   "capacite": 2469,
+   "anneeConstruction": 1929,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 25.2048,
+    "lng": 55.2708
+   }
+  },
+  {
+   "nom": "Mosquée du vendredi de Dubaï",
+   "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dubaï",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Duba%C3%AF+Duba%C3%AF",
+   "capacite": 2247,
+   "anneeConstruction": 1907,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 25.2048,
+    "lng": 55.2708
+   }
+  },
+  {
+   "nom": "Mosquée Al-Hidaya de Dubaï",
+   "description": "Mosquée fréquentée de Dubaï, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Dubaï",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Duba%C3%AF+Duba%C3%AF",
+   "capacite": 1199,
+   "anneeConstruction": 2019,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 25.2048,
+    "lng": 55.2708
+   }
   }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Ossiano",
+   "Trèsind Studio",
+   "Nobu Dubai",
+   "Zuma Dubai",
+   "Torno Subito"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Special Ostadi",
+   "Al Halabi",
+   "Al Mallah",
+   "Moshi Moshi",
+   "Wild & the Moon"
+  ],
+  "incontournables": [
+   "Shawarma Al Reef",
+   "1484 by Mezlai",
+   "Torno Subito",
+   "Arabian Tea House",
+   "Morimoto"
+  ],
+  "pepitesCachees": [
+   "Rang Mahal",
+   "Babel",
+   "Al Mallah"
+  ],
+  "idealFamille": [
+   "Nusr-Et Steakhouse",
+   "Ossiano",
+   "Torno Subito",
+   "1484 by Mezlai",
+   "Al Fanar"
+  ],
+  "gastronomique": [
+   "At.mosphere",
+   "Trèsind Studio",
+   "CÉ LA VI",
+   "Pierchic",
+   "Saffron Majlis"
+  ],
+  "ouvertNuit": [
+   "Nusr-Et Steakhouse",
+   "Torno Subito",
+   "Em Sherif"
+  ],
+  "vueExceptionnelle": [
+   "Ossiano",
+   "Bahr Seafood"
+  ]
+ }
 }

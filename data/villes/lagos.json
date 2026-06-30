@@ -1,1289 +1,1294 @@
 {
-  "nom": "Lagos",
-  "pays": "Nigéria",
-  "slug": "lagos",
-  "image": "https://images.unsplash.com/photo-1618828665347-d8cb2c5a0f0d?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1618828665347-d8cb2c5a0f0d?w=1400&q=85",
-  "description": "Lagos, mégapole bouillonnante du Nigéria, est la capitale culturelle de l'Afrique de l'Ouest. Marchés, Afrobeats, plages et cuisine yoruba halal jollof.",
-  "descriptionLongue": "Plus grande ville d'Afrique subsaharienne, Lagos est un volcan d'énergie créative : berceau de l'Afrobeats, de Nollywood et d'une scène artistique foisonnante. La ville compte une forte communauté musulmane yoruba, ses mosquées et ses restaurants halal de jollof rice et suya. Entre l'île animée de Victoria Island, les plages de Lekki et les marchés tentaculaires, Lagos est une plongée dans l'Afrique urbaine.",
-  "halalScore": 7.5,
-  "score_halal": 3.8,
+ "nom": "Lagos",
+ "pays": "Nigéria",
+ "slug": "lagos",
+ "image": "https://images.unsplash.com/photo-1618828665347-d8cb2c5a0f0d?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1618828665347-d8cb2c5a0f0d?w=1400&q=85",
+ "description": "Lagos, mégapole bouillonnante du Nigéria, est la capitale culturelle de l'Afrique de l'Ouest. Marchés, Afrobeats, plages et cuisine yoruba halal jollof.",
+ "descriptionLongue": "Plus grande ville d'Afrique subsaharienne, Lagos est un volcan d'énergie créative : berceau de l'Afrobeats, de Nollywood et d'une scène artistique foisonnante. La ville compte une forte communauté musulmane yoruba, ses mosquées et ses restaurants halal de jollof rice et suya. Entre l'île animée de Victoria Island, les plages de Lekki et les marchés tentaculaires, Lagos est une plongée dans l'Afrique urbaine.",
+ "halalScore": 7.5,
+ "score_halal": 3.8,
+ "mosquees": 3000,
+ "population": "15 millions",
+ "langue": "Anglais, Yoruba",
+ "monnaie": "Naira (NGN)",
+ "fuseau": "UTC+1",
+ "meilleureEpoque": "Novembre à Mars",
+ "prixMoyenNuit": "70€",
+ "continent": "Afrique",
+ "codeISO": "NG",
+ "pays_slug": "nigeria",
+ "region": "Afrique de l'Ouest",
+ "meta_title": "Voyage Halal à Lagos — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Lagos — Halal Trust Score 7.5/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Lagos — Halal Trust Score 7.5/10.",
+ "coordonnees": {
+  "lat": 6.5244,
+  "lng": 3.3792
+ },
+ "image_alt": "Vue de Lagos, Nigéria",
+ "statistiques": {
   "mosquees": 3000,
-  "population": "15 millions",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 45,
+  "hotels": 10
+ },
+ "infos_pratiques": {
   "langue": "Anglais, Yoruba",
   "monnaie": "Naira (NGN)",
-  "fuseau": "UTC+1",
-  "meilleureEpoque": "Novembre à Mars",
-  "prixMoyenNuit": "70€",
-  "continent": "Afrique",
-  "codeISO": "NG",
-  "pays_slug": "nigeria",
-  "region": "Afrique de l'Ouest",
-  "meta_title": "Voyage Halal à Lagos — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Lagos — Halal Trust Score 7.5/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Lagos — Halal Trust Score 7.5/10.",
-  "coordonnees": {
+  "meilleure_periode": "Novembre à Mars",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Visa nigérian obligatoire (e-Visa disponible)",
+  "vaccins": "Fièvre jaune obligatoire, paludisme",
+  "transport": "VTC Bolt/Uber, danfo, ferry lagunaire",
+  "priseElectrique": "Type D/G — 230V",
+  "decalageHoraire": "Même heure que Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Yakoyo",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ikeja",
+   "description": "Cuisine nigériane traditionnelle",
+   "mapsUrl": "https://maps.google.com/?q=Yakoyo+Lagos",
+   "priceRange": "€",
+   "specialite": "Cuisine yoruba",
+   "id": "r1"
+  },
+  {
+   "nom": "The Yellow Chilli",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Victoria Island",
+   "description": "Cuisine nigériane moderne réputée",
+   "mapsUrl": "https://maps.google.com/?q=The+Yellow+Chilli+Lagos",
+   "priceRange": "€€",
+   "specialite": "Jollof rice",
+   "id": "r2"
+  },
+  {
+   "nom": "Suya Spot Lagos",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Lekki",
+   "description": "Brochettes épicées suya halal",
+   "mapsUrl": "https://maps.google.com/?q=Suya+Spot+Lagos+Lagos",
+   "priceRange": "€",
+   "specialite": "Suya",
+   "id": "r3"
+  },
+  {
+   "nom": "Cilantro Lagos",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Victoria Island",
+   "description": "Cuisine internationale halal",
+   "mapsUrl": "https://maps.google.com/?q=Cilantro+Lagos+Lagos",
+   "priceRange": "€€",
+   "specialite": "Grillades",
+   "id": "r4"
+  },
+  {
+   "nom": "Amala Skye",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ikeja",
+   "description": "Cantine yoruba populaire",
+   "mapsUrl": "https://maps.google.com/?q=Amala+Skye+Lagos",
+   "priceRange": "€",
+   "specialite": "Amala et ewedu",
+   "id": "r5"
+  },
+  {
+   "nom": "Al Madina Lagos",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Lagos",
+   "description": "Adresse halal appréciée des habitants de Lagos.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Lagos+Lagos",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r6"
+  },
+  {
+   "nom": "Shawarma House Lagos",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Lagos",
+   "description": "Adresse halal appréciée des habitants de Lagos.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Lagos+Lagos",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r7"
+  },
+  {
+   "nom": "Beit Beirut Lagos",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Lagos",
+   "description": "Adresse halal appréciée des habitants de Lagos.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Lagos+Lagos",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r8"
+  },
+  {
+   "nom": "Spice Route Lagos",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Lagos",
+   "description": "Adresse halal appréciée des habitants de Lagos.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Lagos+Lagos",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r9"
+  },
+  {
+   "nom": "Saffron Garden Lagos",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Lagos",
+   "description": "Adresse halal appréciée des habitants de Lagos.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Lagos+Lagos",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r10"
+  },
+  {
+   "nom": "Green Bowl Lagos",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Lagos",
+   "description": "Adresse halal appréciée des habitants de Lagos.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Lagos+Lagos",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r11"
+  },
+  {
+   "nom": "Sultan Café Lagos",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Lagos",
+   "description": "Adresse halal appréciée des habitants de Lagos.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Lagos+Lagos",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r12"
+  },
+  {
+   "nom": "Ocean Pearl Lagos",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Lagos",
+   "description": "Adresse halal appréciée des habitants de Lagos.",
+   "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Lagos+Lagos",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé du jour",
+   "id": "r13"
+  },
+  {
+   "nom": "Bella Halal Lagos",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Lagos",
+   "description": "Adresse halal appréciée des habitants de Lagos.",
+   "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Lagos+Lagos",
+   "priceRange": "€€",
+   "specialite": "Pizza halal au four à bois",
+   "id": "r14"
+  },
+  {
+   "nom": "Tokyo Halal Lagos",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Lagos",
+   "description": "Adresse halal appréciée des habitants de Lagos.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Lagos+Lagos",
+   "priceRange": "€€€",
+   "specialite": "Sushis certifiés halal",
+   "id": "r15"
+  },
+  {
+   "nom": "Bait Al Karam",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Lagos",
+   "description": "Adresse traditionnel local appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Lagos",
+   "priceRange": "€€",
+   "specialite": "Plat mijoté maison",
+   "nombreAvis": 1670,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Shawarma Al Reef",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Lagos",
+   "description": "Adresse grillades & kebab appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Lagos",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "nombreAvis": 2249,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Beit Cham",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Lagos",
+   "description": "Adresse libanais & levant appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Lagos",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "nombreAvis": 1279,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Saffron Majlis",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Lagos",
+   "description": "Adresse gastronomique appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Lagos",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation halal",
+   "nombreAvis": 2526,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Sultan Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Lagos",
+   "description": "Adresse pâtisserie & café appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Lagos",
+   "priceRange": "€",
+   "specialite": "Kunafa et café arabe",
+   "nombreAvis": 2422,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Bahr Seafood",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Lagos",
+   "description": "Adresse fruits de mer appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Lagos",
+   "priceRange": "€€€",
+   "specialite": "Poisson du jour grillé",
+   "nombreAvis": 257,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Mughal Spice",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Lagos",
+   "description": "Adresse indien & pakistani appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Lagos",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 498,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Green Yasmine",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Lagos",
+   "description": "Adresse végétarien & healthy appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Lagos",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "nombreAvis": 892,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Burger Najma",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Lagos",
+   "description": "Adresse burgers & fast-food appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Lagos",
+   "priceRange": "€€",
+   "specialite": "Smash burger halal",
+   "nombreAvis": 2396,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Tokyo Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Lagos",
+   "description": "Adresse japonais & asiatique appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Lagos",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 638,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Bait Al Karam Lagos 11",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Lagos",
+   "description": "Adresse traditionnel local appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Lagos+11+Lagos",
+   "priceRange": "€€",
+   "specialite": "Plat mijoté maison",
+   "nombreAvis": 1212,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Shawarma Al Reef Lagos 12",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Lagos",
+   "description": "Adresse grillades & kebab appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Lagos+12+Lagos",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "nombreAvis": 614,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Beit Cham Lagos 13",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Lagos",
+   "description": "Adresse libanais & levant appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Lagos+13+Lagos",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "nombreAvis": 1534,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Saffron Majlis Lagos 14",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Lagos",
+   "description": "Adresse gastronomique appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Lagos+14+Lagos",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation halal",
+   "nombreAvis": 519,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Sultan Sweets Lagos 15",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Lagos",
+   "description": "Adresse pâtisserie & café appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Lagos+15+Lagos",
+   "priceRange": "€",
+   "specialite": "Kunafa et café arabe",
+   "nombreAvis": 216,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Bahr Seafood Lagos 16",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Lagos",
+   "description": "Adresse fruits de mer appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Lagos+16+Lagos",
+   "priceRange": "€€€",
+   "specialite": "Poisson du jour grillé",
+   "nombreAvis": 1245,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Mughal Spice Lagos 17",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Lagos",
+   "description": "Adresse indien & pakistani appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Lagos+17+Lagos",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 482,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Green Yasmine Lagos 18",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Lagos",
+   "description": "Adresse végétarien & healthy appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Lagos+18+Lagos",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "nombreAvis": 3570,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Burger Najma Lagos 19",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Lagos",
+   "description": "Adresse burgers & fast-food appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Lagos+19+Lagos",
+   "priceRange": "€€",
+   "specialite": "Smash burger halal",
+   "nombreAvis": 1976,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Tokyo Halal Lagos 20",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Lagos",
+   "description": "Adresse japonais & asiatique appréciée à Lagos, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Lagos+20+Lagos",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 1940,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r35"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Eko Hotel & Suites",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Victoria Island",
+   "description": "Grand complexe en bord de lagune",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Eko+Hotel+%26+Suites+Lagos",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
+   "priceRange": "€€€",
+   "id": "h1"
+  },
+  {
+   "nom": "Radisson Blu Lagos",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Ikeja GRA",
+   "description": "Hôtel cinq étoiles d'affaires",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Lagos+Lagos",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
+   "priceRange": "€€€",
+   "id": "h2",
+   "lat": 6.4368874,
+   "lng": 3.4169181
+  },
+  {
+   "nom": "Lagos Continental",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Victoria Island",
+   "description": "Hôtel confortable de Victoria Island",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Lagos+Continental+Lagos",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
+   "priceRange": "€€",
+   "id": "h3",
+   "lat": 6.4349121,
+   "lng": 3.4228469
+  },
+  {
+   "nom": "Grand Plaza Lagos",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Lagos",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Lagos+Lagos",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
+   "priceRange": "€€€€",
+   "id": "h4"
+  },
+  {
+   "nom": "City Comfort Hotel Lagos",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Lagos",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Lagos+Lagos",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
+   "priceRange": "€€€",
+   "id": "h5"
+  },
+  {
+   "nom": "Boutique Riad Lagos",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Lagos",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Lagos+Lagos",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
+   "priceRange": "€€€",
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Lagos 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Lagos",
+   "description": "Hébergement halal-friendly à Lagos.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Lagos+0+Lagos",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
+   "priceRange": "€€€€",
+   "nombreAvis": 415,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Lagos",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Lagos",
+   "description": "Hébergement halal-friendly à Lagos.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Lagos+Lagos",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
+   "priceRange": "€€€",
+   "nombreAvis": 1006,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Lagos",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Lagos",
+   "description": "Hébergement halal-friendly à Lagos.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Lagos+Lagos",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
+   "priceRange": "€€€",
+   "nombreAvis": 2259,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Lagos",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Lagos",
+   "description": "Hébergement halal-friendly à Lagos.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Lagos+Lagos",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
+   "priceRange": "€€",
+   "nombreAvis": 2500,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Plage de Lekki & Elegushi",
+   "categorie": "Nature & Aventure",
+   "description": "Plages animées de la péninsule de Lekki",
+   "duree": "Demi-journée",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Plage+de+Lekki+%26+Elegushi+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Lekki+%26+Elegushi+Lagos",
+   "id": "a1"
+  },
+  {
+   "nom": "Lekki Conservation Centre",
+   "categorie": "Nature & Aventure",
+   "description": "Réserve et plus longue passerelle de canopée d'Afrique",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Lekki+Conservation+Centre+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lekki+Conservation+Centre+Lagos",
+   "id": "a2"
+  },
+  {
+   "nom": "Mosquée centrale de Lagos",
+   "categorie": "Religieux & Spirituel",
+   "description": "Grande mosquée du quartier de Lagos Island",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+centrale+de+Lagos+Lagos",
+   "id": "a3"
+  },
+  {
+   "nom": "Marché de Balogun",
+   "categorie": "Shopping & Souks",
+   "description": "Immense marché de tissus et de pagnes",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Balogun+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Balogun+Lagos",
+   "id": "a4"
+  },
+  {
+   "nom": "Nike Art Gallery",
+   "categorie": "Art & Musées",
+   "description": "Plus grande galerie d'art d'Afrique de l'Ouest",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Nike+Art+Gallery+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Nike+Art+Gallery+Lagos",
+   "id": "a5"
+  },
+  {
+   "nom": "Île de Victoria Island",
+   "categorie": "Histoire & Culture",
+   "description": "Cœur des affaires et de la vie nocturne diurne",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=%C3%8Ele+de+Victoria+Island+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=%C3%8Ele+de+Victoria+Island+Lagos",
+   "id": "a6"
+  },
+  {
+   "nom": "New Afrika Shrine",
+   "categorie": "Art & Musées",
+   "description": "Lieu mythique de l'Afrobeat de la famille Kuti",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=New+Afrika+Shrine+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=New+Afrika+Shrine+Lagos",
+   "id": "a7"
+  },
+  {
+   "nom": "Tarkwa Bay (en bateau)",
+   "categorie": "Nature & Aventure",
+   "description": "Plage paisible accessible en bateau",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Tarkwa+Bay+%28en+bateau%29+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tarkwa+Bay+%28en+bateau%29+Lagos",
+   "id": "a8"
+  },
+  {
+   "nom": "Vieille ville de Lagos",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Lagos+Lagos",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand souk de Lagos",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Lagos+Lagos",
+   "id": "a10"
+  },
+  {
+   "nom": "Quartier historique de Lagos",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Lagos+Lagos",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Lagos",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Lagos+Lagos",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Lagos",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Lagos+Lagos",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Lagos",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Lagos+Lagos",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Lagos",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Lagos+Lagos",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Lagos",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Lagos+Lagos",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Lagos",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Lagos+Lagos",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Lagos",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Lagos+Lagos",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Lagos",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Lagos+Lagos",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Lagos",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Lagos+Lagos",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Lagos+Lagos",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Lagos",
+   "description": "Grande mosquée de Lagos Island, dômes dorés",
+   "adresse": "Lagos Island",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Lagos+Lagos",
+   "capacite": 4162,
+   "anneeConstruction": 2012,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 6.5244,
     "lng": 3.3792
+   }
   },
-  "image_alt": "Vue de Lagos, Nigéria",
-  "statistiques": {
-    "mosquees": 3000,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 45
+  {
+   "nom": "Mosquée d'Onike",
+   "description": "Mosquée importante de la communauté yoruba",
+   "adresse": "Yaba",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+d%27Onike+Lagos",
+   "capacite": 3812,
+   "anneeConstruction": 1972,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 6.5244,
+    "lng": 3.3792
+   }
   },
-  "infos_pratiques": {
-    "langue": "Anglais, Yoruba",
-    "monnaie": "Naira (NGN)",
-    "meilleure_periode": "Novembre à Mars",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Grande Mosquée de Lagos",
+   "description": "Mosquée fréquentée de Lagos, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Lagos",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Lagos+Lagos",
+   "capacite": 5705,
+   "anneeConstruction": 1965,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 6.5244,
+    "lng": 3.3792
+   }
   },
-  "infoPratique": {
-    "visa": "Visa nigérian obligatoire (e-Visa disponible)",
-    "vaccins": "Fièvre jaune obligatoire, paludisme",
-    "transport": "VTC Bolt/Uber, danfo, ferry lagunaire",
-    "priseElectrique": "Type D/G — 230V",
-    "decalageHoraire": "Même heure que Paris (hiver)"
+  {
+   "nom": "Mosquée Al-Noor de Lagos",
+   "description": "Mosquée fréquentée de Lagos, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Lagos",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Lagos+Lagos",
+   "capacite": 6178,
+   "anneeConstruction": 1998,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 6.5244,
+    "lng": 3.3792
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Yakoyo",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ikeja",
-      "description": "Cuisine nigériane traditionnelle",
-      "mapsUrl": "https://maps.google.com/?q=Yakoyo+Lagos",
-      "priceRange": "€",
-      "specialite": "Cuisine yoruba",
-      "id": "r1"
-    },
-    {
-      "nom": "The Yellow Chilli",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Victoria Island",
-      "description": "Cuisine nigériane moderne réputée",
-      "mapsUrl": "https://maps.google.com/?q=The+Yellow+Chilli+Lagos",
-      "priceRange": "€€",
-      "specialite": "Jollof rice",
-      "id": "r2"
-    },
-    {
-      "nom": "Suya Spot Lagos",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Lekki",
-      "description": "Brochettes épicées suya halal",
-      "mapsUrl": "https://maps.google.com/?q=Suya+Spot+Lagos+Lagos",
-      "priceRange": "€",
-      "specialite": "Suya",
-      "id": "r3"
-    },
-    {
-      "nom": "Cilantro Lagos",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Victoria Island",
-      "description": "Cuisine internationale halal",
-      "mapsUrl": "https://maps.google.com/?q=Cilantro+Lagos+Lagos",
-      "priceRange": "€€",
-      "specialite": "Grillades",
-      "id": "r4"
-    },
-    {
-      "nom": "Amala Skye",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ikeja",
-      "description": "Cantine yoruba populaire",
-      "mapsUrl": "https://maps.google.com/?q=Amala+Skye+Lagos",
-      "priceRange": "€",
-      "specialite": "Amala et ewedu",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Lagos",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Lagos",
-      "description": "Adresse halal appréciée des habitants de Lagos.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Lagos+Lagos",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Lagos",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Lagos",
-      "description": "Adresse halal appréciée des habitants de Lagos.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Lagos+Lagos",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Lagos",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Lagos",
-      "description": "Adresse halal appréciée des habitants de Lagos.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Lagos+Lagos",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Lagos",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Lagos",
-      "description": "Adresse halal appréciée des habitants de Lagos.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Lagos+Lagos",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Lagos",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Lagos",
-      "description": "Adresse halal appréciée des habitants de Lagos.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Lagos+Lagos",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Lagos",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Lagos",
-      "description": "Adresse halal appréciée des habitants de Lagos.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Lagos+Lagos",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Lagos",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Lagos",
-      "description": "Adresse halal appréciée des habitants de Lagos.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Lagos+Lagos",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Lagos",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Lagos",
-      "description": "Adresse halal appréciée des habitants de Lagos.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Lagos+Lagos",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Lagos",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Lagos",
-      "description": "Adresse halal appréciée des habitants de Lagos.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Lagos+Lagos",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Lagos",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Lagos",
-      "description": "Adresse halal appréciée des habitants de Lagos.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Lagos+Lagos",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Bait Al Karam",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Lagos",
-      "description": "Adresse traditionnel local appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Lagos",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 1670,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Shawarma Al Reef",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Lagos",
-      "description": "Adresse grillades & kebab appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Lagos",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 2249,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Beit Cham",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Lagos",
-      "description": "Adresse libanais & levant appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Lagos",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 1279,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Saffron Majlis",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Lagos",
-      "description": "Adresse gastronomique appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Lagos",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 2526,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Sultan Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Lagos",
-      "description": "Adresse pâtisserie & café appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Lagos",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 2422,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Bahr Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Lagos",
-      "description": "Adresse fruits de mer appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Lagos",
-      "priceRange": "€€€",
-      "specialite": "Poisson du jour grillé",
-      "nombreAvis": 257,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Mughal Spice",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Lagos",
-      "description": "Adresse indien & pakistani appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Lagos",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 498,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Green Yasmine",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Lagos",
-      "description": "Adresse végétarien & healthy appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Lagos",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "nombreAvis": 892,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Burger Najma",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Lagos",
-      "description": "Adresse burgers & fast-food appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Lagos",
-      "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 2396,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Tokyo Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Lagos",
-      "description": "Adresse japonais & asiatique appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Lagos",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 638,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Bait Al Karam Lagos 11",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Lagos",
-      "description": "Adresse traditionnel local appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Lagos+11+Lagos",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 1212,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Shawarma Al Reef Lagos 12",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Lagos",
-      "description": "Adresse grillades & kebab appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Lagos+12+Lagos",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 614,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Beit Cham Lagos 13",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Lagos",
-      "description": "Adresse libanais & levant appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Lagos+13+Lagos",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 1534,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Saffron Majlis Lagos 14",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Lagos",
-      "description": "Adresse gastronomique appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Lagos+14+Lagos",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 519,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Sultan Sweets Lagos 15",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Lagos",
-      "description": "Adresse pâtisserie & café appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Lagos+15+Lagos",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 216,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Bahr Seafood Lagos 16",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Lagos",
-      "description": "Adresse fruits de mer appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Lagos+16+Lagos",
-      "priceRange": "€€€",
-      "specialite": "Poisson du jour grillé",
-      "nombreAvis": 1245,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Mughal Spice Lagos 17",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Lagos",
-      "description": "Adresse indien & pakistani appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Lagos+17+Lagos",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 482,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Green Yasmine Lagos 18",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Lagos",
-      "description": "Adresse végétarien & healthy appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Lagos+18+Lagos",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "nombreAvis": 3570,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Burger Najma Lagos 19",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Lagos",
-      "description": "Adresse burgers & fast-food appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Lagos+19+Lagos",
-      "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 1976,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Tokyo Halal Lagos 20",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Lagos",
-      "description": "Adresse japonais & asiatique appréciée à Lagos, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Lagos+20+Lagos",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1940,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r35"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Eko Hotel & Suites",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Victoria Island",
-      "description": "Grand complexe en bord de lagune",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Eko+Hotel+%26+Suites+Lagos",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
-      "priceRange": "€€€",
-      "id": "h1"
-    },
-    {
-      "nom": "Radisson Blu Lagos",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Ikeja GRA",
-      "description": "Hôtel cinq étoiles d'affaires",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Lagos+Lagos",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
-      "priceRange": "€€€",
-      "id": "h2"
-    },
-    {
-      "nom": "Lagos Continental",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Victoria Island",
-      "description": "Hôtel confortable de Victoria Island",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Lagos+Continental+Lagos",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
-      "priceRange": "€€",
-      "id": "h3"
-    },
-    {
-      "nom": "Grand Plaza Lagos",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Lagos",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Lagos+Lagos",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
-      "priceRange": "€€€€",
-      "id": "h4"
-    },
-    {
-      "nom": "City Comfort Hotel Lagos",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Lagos",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Lagos+Lagos",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Lagos",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Lagos",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Lagos+Lagos",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Lagos 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Lagos",
-      "description": "Hébergement halal-friendly à Lagos.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Lagos+0+Lagos",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
-      "priceRange": "€€€€",
-      "nombreAvis": 415,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Lagos",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Lagos",
-      "description": "Hébergement halal-friendly à Lagos.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Lagos+Lagos",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
-      "priceRange": "€€€",
-      "nombreAvis": 1006,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Lagos",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Lagos",
-      "description": "Hébergement halal-friendly à Lagos.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Lagos+Lagos",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
-      "priceRange": "€€€",
-      "nombreAvis": 2259,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Lagos",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Lagos",
-      "description": "Hébergement halal-friendly à Lagos.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Lagos+Lagos",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Lagos&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=lagos",
-      "priceRange": "€€",
-      "nombreAvis": 2500,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Plage de Lekki & Elegushi",
-      "categorie": "Nature & Aventure",
-      "description": "Plages animées de la péninsule de Lekki",
-      "duree": "Demi-journée",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Plage+de+Lekki+%26+Elegushi+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Lekki+%26+Elegushi+Lagos",
-      "id": "a1"
-    },
-    {
-      "nom": "Lekki Conservation Centre",
-      "categorie": "Nature & Aventure",
-      "description": "Réserve et plus longue passerelle de canopée d'Afrique",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Lekki+Conservation+Centre+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lekki+Conservation+Centre+Lagos",
-      "id": "a2"
-    },
-    {
-      "nom": "Mosquée centrale de Lagos",
-      "categorie": "Religieux & Spirituel",
-      "description": "Grande mosquée du quartier de Lagos Island",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+centrale+de+Lagos+Lagos",
-      "id": "a3"
-    },
-    {
-      "nom": "Marché de Balogun",
-      "categorie": "Shopping & Souks",
-      "description": "Immense marché de tissus et de pagnes",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Balogun+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Balogun+Lagos",
-      "id": "a4"
-    },
-    {
-      "nom": "Nike Art Gallery",
-      "categorie": "Art & Musées",
-      "description": "Plus grande galerie d'art d'Afrique de l'Ouest",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Nike+Art+Gallery+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Nike+Art+Gallery+Lagos",
-      "id": "a5"
-    },
-    {
-      "nom": "Île de Victoria Island",
-      "categorie": "Histoire & Culture",
-      "description": "Cœur des affaires et de la vie nocturne diurne",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=%C3%8Ele+de+Victoria+Island+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=%C3%8Ele+de+Victoria+Island+Lagos",
-      "id": "a6"
-    },
-    {
-      "nom": "New Afrika Shrine",
-      "categorie": "Art & Musées",
-      "description": "Lieu mythique de l'Afrobeat de la famille Kuti",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=New+Afrika+Shrine+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=New+Afrika+Shrine+Lagos",
-      "id": "a7"
-    },
-    {
-      "nom": "Tarkwa Bay (en bateau)",
-      "categorie": "Nature & Aventure",
-      "description": "Plage paisible accessible en bateau",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Tarkwa+Bay+%28en+bateau%29+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tarkwa+Bay+%28en+bateau%29+Lagos",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Lagos",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Lagos+Lagos",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Lagos",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Lagos+Lagos",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Lagos",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Lagos+Lagos",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Lagos",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Lagos+Lagos",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Lagos",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Lagos+Lagos",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Lagos",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Lagos+Lagos",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Lagos",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Lagos+Lagos",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Lagos",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Lagos+Lagos",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Lagos",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Lagos+Lagos",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Lagos",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Lagos+Lagos",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Lagos",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Lagos+Lagos",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Lagos",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Lagos+Lagos",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Lagos+Lagos",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Lagos",
-      "description": "Grande mosquée de Lagos Island, dômes dorés",
-      "adresse": "Lagos Island",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Lagos+Lagos",
-      "capacite": 4162,
-      "anneeConstruction": 2012,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 6.5244,
-        "lng": 3.3792
-      }
-    },
-    {
-      "nom": "Mosquée d'Onike",
-      "description": "Mosquée importante de la communauté yoruba",
-      "adresse": "Yaba",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+d%27Onike+Lagos",
-      "capacite": 3812,
-      "anneeConstruction": 1972,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 6.5244,
-        "lng": 3.3792
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Lagos",
-      "description": "Mosquée fréquentée de Lagos, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Lagos",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Lagos+Lagos",
-      "capacite": 5705,
-      "anneeConstruction": 1965,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 6.5244,
-        "lng": 3.3792
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Lagos",
-      "description": "Mosquée fréquentée de Lagos, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Lagos",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Lagos+Lagos",
-      "capacite": 6178,
-      "anneeConstruction": 1998,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 6.5244,
-        "lng": 3.3792
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Lagos",
-      "description": "Mosquée fréquentée de Lagos, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Lagos",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Lagos+Lagos",
-      "capacite": 5745,
-      "anneeConstruction": 1945,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 6.5244,
-        "lng": 3.3792
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Lagos",
-      "description": "Mosquée fréquentée de Lagos, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Lagos",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Lagos+Lagos",
-      "capacite": 5377,
-      "anneeConstruction": 1897,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 6.5244,
-        "lng": 3.3792
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Lagos",
-      "description": "Mosquée fréquentée de Lagos, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Lagos",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Lagos+Lagos",
-      "capacite": 3013,
-      "anneeConstruction": 1953,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 6.5244,
-        "lng": 3.3792
-      }
-    }
-  ],
-  "tags": [
-    "mega-ville",
-    "afrobeats",
-    "afrique-de-louest",
-    "marches",
-    "plage",
-    "culture"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Bait Al Karam",
-      "Burger Najma",
-      "Mughal Spice Lagos 17",
-      "Shawarma Al Reef",
-      "Tokyo Halal"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Yakoyo",
-      "The Yellow Chilli",
-      "Suya Spot Lagos",
-      "Cilantro Lagos",
-      "Amala Skye"
-    ],
-    "incontournables": [
-      "Green Yasmine Lagos 18",
-      "Saffron Majlis",
-      "Sultan Sweets",
-      "Burger Najma",
-      "Shawarma Al Reef"
-    ],
-    "pepitesCachees": [
-      "Yakoyo",
-      "The Yellow Chilli",
-      "Suya Spot Lagos"
-    ],
-    "idealFamille": [
-      "Bait Al Karam",
-      "Shawarma Al Reef",
-      "Beit Cham",
-      "Sultan Sweets",
-      "Bahr Seafood"
-    ],
-    "gastronomique": [
-      "Saffron Garden Lagos",
-      "Saffron Majlis",
-      "Saffron Majlis Lagos 14"
-    ],
-    "ouvertNuit": [
-      "Shawarma Al Reef",
-      "Beit Cham",
-      "Sultan Sweets"
-    ],
-    "vueExceptionnelle": [
-      "Bahr Seafood",
-      "Bahr Seafood Lagos 16"
-    ]
+  {
+   "nom": "Mosquée Al-Salam de Lagos",
+   "description": "Mosquée fréquentée de Lagos, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Lagos",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Lagos+Lagos",
+   "capacite": 5745,
+   "anneeConstruction": 1945,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 6.5244,
+    "lng": 3.3792
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Lagos",
+   "description": "Mosquée fréquentée de Lagos, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Lagos",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Lagos+Lagos",
+   "capacite": 5377,
+   "anneeConstruction": 1897,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 6.5244,
+    "lng": 3.3792
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Lagos",
+   "description": "Mosquée fréquentée de Lagos, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Lagos",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Lagos+Lagos",
+   "capacite": 3013,
+   "anneeConstruction": 1953,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 6.5244,
+    "lng": 3.3792
+   }
   }
+ ],
+ "tags": [
+  "mega-ville",
+  "afrobeats",
+  "afrique-de-louest",
+  "marches",
+  "plage",
+  "culture"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Bait Al Karam",
+   "Burger Najma",
+   "Mughal Spice Lagos 17",
+   "Shawarma Al Reef",
+   "Tokyo Halal"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Yakoyo",
+   "The Yellow Chilli",
+   "Suya Spot Lagos",
+   "Cilantro Lagos",
+   "Amala Skye"
+  ],
+  "incontournables": [
+   "Green Yasmine Lagos 18",
+   "Saffron Majlis",
+   "Sultan Sweets",
+   "Burger Najma",
+   "Shawarma Al Reef"
+  ],
+  "pepitesCachees": [
+   "Yakoyo",
+   "The Yellow Chilli",
+   "Suya Spot Lagos"
+  ],
+  "idealFamille": [
+   "Bait Al Karam",
+   "Shawarma Al Reef",
+   "Beit Cham",
+   "Sultan Sweets",
+   "Bahr Seafood"
+  ],
+  "gastronomique": [
+   "Saffron Garden Lagos",
+   "Saffron Majlis",
+   "Saffron Majlis Lagos 14"
+  ],
+  "ouvertNuit": [
+   "Shawarma Al Reef",
+   "Beit Cham",
+   "Sultan Sweets"
+  ],
+  "vueExceptionnelle": [
+   "Bahr Seafood",
+   "Bahr Seafood Lagos 16"
+  ]
+ }
 }

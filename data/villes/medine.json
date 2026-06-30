@@ -1,2933 +1,2950 @@
 {
-  "slug": "medine",
-  "nom": "Médine",
-  "nom_arabe": "المدينة المنورة",
-  "pays": "Arabie Saoudite",
-  "pays_slug": "arabie-saoudite",
-  "drapeau": "🇸🇦",
-  "region": "Péninsule Arabique",
-  "coordonnees": {
+ "slug": "medine",
+ "nom": "Médine",
+ "nom_arabe": "المدينة المنورة",
+ "pays": "Arabie Saoudite",
+ "pays_slug": "arabie-saoudite",
+ "drapeau": "🇸🇦",
+ "region": "Péninsule Arabique",
+ "coordonnees": {
+  "lat": 24.5247,
+  "lng": 39.5692
+ },
+ "score_halal": 4.9,
+ "score_securite": 5,
+ "score_famille": 4,
+ "score_budget": 3,
+ "description": "La Cité Lumineuse — ville du Prophète Muhammad ﷺ. Masjid al-Nabawi, tombeau du Prophète et lieu de naissance de la première communauté islamique. Accessible aux musulmans uniquement.",
+ "description_courte": "La ville du Prophète, Al-Madinah Al-Munawwarah",
+ "description_longue": "Médine (Al-Madinah Al-Munawwarah) est la deuxième ville sainte de l'Islam, où le Prophète Muhammad ﷺ émigra de La Mecque en 622 (l'Hégire) et établit la première communauté musulmane. Sa mosquée — Masjid al-Nabawi — est la 2ème plus sacrée au monde, et son tombeau s'y trouve. La ville est entourée de sites historiques de l'islam primitif : Uhud, Quba, Qiblatayn. Accessible aux musulmans uniquement dans la zone du Haram.",
+ "image_hero": "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1600&q=80",
+ "image_alt": "Dôme vert de Masjid al-Nabawi la nuit, Médine, Arabie Saoudite",
+ "meta_title": "Médine 2025 — Guide Pèlerinage Ziyara & Omra",
+ "meta_description": "Guide complet Médine : Masjid al-Nabawi, tombeau du Prophète, Uhud, Quba. La ville sainte du Prophète ﷺ réservée aux musulmans.",
+ "statistiques": {
+  "mosquees": 300,
+  "restaurants_halal": 3000,
+  "hotels_halal": 150,
+  "boucheries_halal": 300,
+  "habitants_musulmans_pct": 100,
+  "habitants": 1300000,
+  "altitude_m": 608,
+  "superficie_km2": 589,
+  "hotels": 15
+ },
+ "infos_pratiques": {
+  "langue_officielle": "Arabe",
+  "langues_parlees": [
+   "Arabe",
+   "Ourdou",
+   "Anglais",
+   "Français",
+   "Indonésien"
+  ],
+  "monnaie": "Riyal saoudien (SAR)",
+  "taux_change_eur": "1 EUR ≈ 4.10 SAR",
+  "meilleure_periode": "Octobre-Février (températures plus clémentes, 20-30°C)",
+  "a_eviter": "Juin-Août (jusqu'à 45°C), sauf obligation spirituelle",
+  "fuseau_horaire": "AST (UTC+3)",
+  "appel_priere": "L'adhan du Masjid al-Nabawi résonne dans toute la ville 5 fois par jour",
+  "nourriture_halal": "100% halal — ville 100% islamique",
+  "alcool": "Strictement interdit dans toute l'Arabie Saoudite",
+  "tenue_recommandee": "Tenue modeste obligatoire. Femmes : abaya + hijab dans la zone du Haram. Hommes : tenue propre et décente.",
+  "securite": "Excellente — forces de sécurité saoudiennes spécialisées, zone du Haram très surveillée",
+  "transport_local": "Bus Al-Haramain, taxis blancs, Uber, navettes hôtels",
+  "aeroport": "Aéroport Prince Mohammed bin Abdulaziz (MED) — 15 km du centre",
+  "visa": "Visa Omra ou Hajj obligatoire. Non-musulmans interdits d'accès à la zone du Haram."
+ },
+ "meteo_par_mois": [
+  {
+   "mois": "Janvier",
+   "temp_max": 26,
+   "temp_min": 10,
+   "pluie_jours": 1,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Février",
+   "temp_max": 28,
+   "temp_min": 12,
+   "pluie_jours": 1,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Mars",
+   "temp_max": 32,
+   "temp_min": 16,
+   "pluie_jours": 1,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Avril",
+   "temp_max": 37,
+   "temp_min": 20,
+   "pluie_jours": 0,
+   "emoji": "🌞"
+  },
+  {
+   "mois": "Mai",
+   "temp_max": 41,
+   "temp_min": 24,
+   "pluie_jours": 0,
+   "emoji": "🌞"
+  },
+  {
+   "mois": "Juin",
+   "temp_max": 44,
+   "temp_min": 28,
+   "pluie_jours": 0,
+   "emoji": "🌡️"
+  },
+  {
+   "mois": "Juillet",
+   "temp_max": 44,
+   "temp_min": 28,
+   "pluie_jours": 0,
+   "emoji": "🌡️"
+  },
+  {
+   "mois": "Août",
+   "temp_max": 43,
+   "temp_min": 27,
+   "pluie_jours": 0,
+   "emoji": "🌡️"
+  },
+  {
+   "mois": "Septembre",
+   "temp_max": 40,
+   "temp_min": 25,
+   "pluie_jours": 0,
+   "emoji": "🌞"
+  },
+  {
+   "mois": "Octobre",
+   "temp_max": 35,
+   "temp_min": 20,
+   "pluie_jours": 0,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Novembre",
+   "temp_max": 29,
+   "temp_min": 15,
+   "pluie_jours": 1,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Décembre",
+   "temp_max": 25,
+   "temp_min": 10,
+   "pluie_jours": 1,
+   "emoji": "⛅"
+  }
+ ],
+ "restaurants": [
+  {
+   "nom": "Al-Baik Médine",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Médine",
+   "description": "Institution saoudienne, succursale à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Baik+M%C3%A9dine+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Institution saoudienne",
+   "nombreAvis": 2058,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Madinah Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Agneau et kebabs du Hijaz à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Madinah+Grill+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Agneau et kebabs du hijaz",
+   "nombreAvis": 110,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Al-Noor Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Traditionnel médinois à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Noor+Restaurant+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Traditionnel médinois",
+   "nombreAvis": 2074,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Dar Al-Madinah",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Gastronomique saoudien à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Al-Madinah+M%C3%A9dine",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique saoudien",
+   "nombreAvis": 832,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Al-Ansar Kitchen",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Cuisine des Ansars, traditionnel à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Ansar+Kitchen+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Cuisine des ansars",
+   "nombreAvis": 235,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Lebanese Cedar",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Médine",
+   "description": "Libanais premium à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Lebanese+Cedar+M%C3%A9dine",
+   "priceRange": "€€€€",
+   "specialite": "Libanais premium",
+   "nombreAvis": 3390,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Indian Spice Madinah",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Indien authentique à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Indian+Spice+Madinah+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Indien authentique",
+   "nombreAvis": 136,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Biryani Palace Medina",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Médine",
+   "description": "Biryani spécialisé à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Biryani+Palace+Medina+M%C3%A9dine",
+   "priceRange": "€€€€",
+   "specialite": "Biryani spécialisé",
+   "nombreAvis": 1544,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Al-Haram Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Médine",
+   "description": "Pâtisseries orientales à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Haram+Sweets+M%C3%A9dine",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries orientales",
+   "nombreAvis": 1285,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Zaytoun Restaurant",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Huile d'olive et mezze à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Zaytoun+Restaurant+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Huile d'olive et mezze",
+   "nombreAvis": 633,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Turkish Corner Medina",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Médine",
+   "description": "Döner et kebab turc à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Turkish+Corner+Medina+M%C3%A9dine",
+   "priceRange": "€",
+   "specialite": "Döner et kebab turc",
+   "nombreAvis": 286,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Pakistani Dhaba Medina",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Dhal et chapati à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Pakistani+Dhaba+Medina+M%C3%A9dine",
+   "priceRange": "€",
+   "specialite": "Dhal et chapati",
+   "nombreAvis": 1581,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Shwarma King Medina",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Médine",
+   "description": "Shawarma express à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Shwarma+King+Medina+M%C3%A9dine",
+   "priceRange": "€",
+   "specialite": "Shawarma express",
+   "nombreAvis": 604,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Al-Rawda Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Médine",
+   "description": "Thé et narguilé halal à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Rawda+Caf%C3%A9+M%C3%A9dine",
+   "priceRange": "€€",
+   "specialite": "Thé et narguilé halal",
+   "nombreAvis": 1044,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Yemeni Feast",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Saltah et fahsa à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Yemeni+Feast+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Saltah et fahsa",
+   "nombreAvis": 294,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Fish House Medina",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Poissons de la Mer Rouge à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Fish+House+Medina+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Poissons de la mer rouge",
+   "nombreAvis": 1333,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Al-Wasl Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Médine",
+   "description": "Gastronomique du Golfe à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Wasl+Restaurant+M%C3%A9dine",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique du golfe",
+   "nombreAvis": 789,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Samboosa Corner",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Samboosa et fatayer à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Samboosa+Corner+M%C3%A9dine",
+   "priceRange": "€",
+   "specialite": "Samboosa et fatayer",
+   "nombreAvis": 1836,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Kabsa Palace",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Médine",
+   "description": "Kabsa agneau traditionnel à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Kabsa+Palace+M%C3%A9dine",
+   "priceRange": "€€€€",
+   "specialite": "Kabsa agneau traditionnel",
+   "nombreAvis": 2511,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Harees & Jareesh House",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Médine",
+   "description": "Plats saoudiens anciens à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Harees+%26+Jareesh+House+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Plats saoudiens anciens",
+   "nombreAvis": 499,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Fattah Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Médine",
+   "description": "Fattah yéménite à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Fattah+Restaurant+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Fattah yéménite",
+   "nombreAvis": 1135,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Mansaf Corner",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Jordanien authentique à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Mansaf+Corner+M%C3%A9dine",
+   "priceRange": "€",
+   "specialite": "Jordanien authentique",
+   "nombreAvis": 2407,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Al-Madani Bakery",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Médine",
+   "description": "Khubz et pain frais à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Madani+Bakery+M%C3%A9dine",
+   "priceRange": "€€",
+   "specialite": "Khubz et pain frais",
+   "nombreAvis": 3638,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Mutabbaq Express",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Crêpe saoudienne farcie à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Mutabbaq+Express+M%C3%A9dine",
+   "priceRange": "€",
+   "specialite": "Crêpe saoudienne farcie",
+   "nombreAvis": 2461,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Syrian Grill Medina",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Médine",
+   "description": "Grillades syriennes à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Syrian+Grill+Medina+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Grillades syriennes",
+   "nombreAvis": 741,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Al-Barakah Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Médine",
+   "description": "Baklava et mamoul à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Barakah+Sweets+M%C3%A9dine",
+   "priceRange": "€€",
+   "specialite": "Baklava et mamoul",
+   "nombreAvis": 1242,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Golden Dates Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Café et dattes premium à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Golden+Dates+Caf%C3%A9+M%C3%A9dine",
+   "priceRange": "€€€€",
+   "specialite": "Café et dattes premium",
+   "nombreAvis": 2190,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Madinah Rooftop",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Vue Masjid al-Nabawi à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Madinah+Rooftop+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Vue masjid al-nabawi",
+   "nombreAvis": 528,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Moroccan Spices Medina",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Tajine et couscous à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Moroccan+Spices+Medina+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Tajine et couscous",
+   "nombreAvis": 824,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Egyptian Koshari House",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Koshari et ful medammes à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Egyptian+Koshari+House+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Koshari et ful medammes",
+   "nombreAvis": 1913,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Desi Kitchen Medina",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Pakistanais épicé à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Desi+Kitchen+Medina+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Pakistanais épicé",
+   "nombreAvis": 1108,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Somali Restaurant Medina",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Cuisine somalienne à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Somali+Restaurant+Medina+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Cuisine somalienne",
+   "nombreAvis": 1646,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Sudanese Eats Medina",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Médine",
+   "description": "Asida et mola à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Sudanese+Eats+Medina+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Asida et mola",
+   "nombreAvis": 150,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Iranian Chello Kebab",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Chelow kabab persan à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Iranian+Chello+Kebab+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Chelow kabab persan",
+   "nombreAvis": 1981,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Uzbek Plov House",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Plov et samsa à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Uzbek+Plov+House+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Plov et samsa",
+   "nombreAvis": 952,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Malaysian Corner Medina",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Médine",
+   "description": "Nasi lemak halal à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Malaysian+Corner+Medina+M%C3%A9dine",
+   "priceRange": "€",
+   "specialite": "Nasi lemak halal",
+   "nombreAvis": 1245,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Indonesian Warung",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Médine",
+   "description": "Rendang et nasi goreng à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Indonesian+Warung+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Rendang et nasi goreng",
+   "nombreAvis": 187,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Bangladeshi Kitchen",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Hilsa et biryani à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Bangladeshi+Kitchen+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Hilsa et biryani",
+   "nombreAvis": 2135,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "African Feast Medina",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Cuisine africaine à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=African+Feast+Medina+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Cuisine africaine",
+   "nombreAvis": 1509,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Al-Nur Manakish",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Manoushé et pain chaud à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Nur+Manakish+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Manoushé et pain chaud",
+   "nombreAvis": 564,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Kabab & Kofta Palace",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Grillades levantines à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Kabab+%26+Kofta+Palace+M%C3%A9dine",
+   "priceRange": "€€€€",
+   "specialite": "Grillades levantines",
+   "nombreAvis": 1815,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Hummus House Medina",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Médine",
+   "description": "Hummus et falafel à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Hummus+House+Medina+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Hummus et falafel",
+   "nombreAvis": 1029,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Masjid Nabawi Area Cafeteria",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Café rapide pèlerins à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Masjid+Nabawi+Area+Cafeteria+M%C3%A9dine",
+   "priceRange": "€",
+   "specialite": "Café rapide pèlerins",
+   "nombreAvis": 1446,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Al-Hejazi Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Grillades du Hedjaz à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Hejazi+Grill+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Grillades du hedjaz",
+   "nombreAvis": 2250,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Date Paradise",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Dattes, miel et café arabe à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Date+Paradise+M%C3%A9dine",
+   "priceRange": "€€",
+   "specialite": "Dattes",
+   "nombreAvis": 915,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Chicken Street Medina",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Médine",
+   "description": "Poulet grillé street à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Chicken+Street+Medina+M%C3%A9dine",
+   "priceRange": "€",
+   "specialite": "Poulet grillé street",
+   "nombreAvis": 3438,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Al-Madinah Al-Munawwarah Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Gastronomique à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Madinah+Al-Munawwarah+Restaurant+M%C3%A9dine",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique",
+   "nombreAvis": 437,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Ottoman Feast Medina",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Médine",
+   "description": "Cuisine ottomane à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Ottoman+Feast+Medina+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Cuisine ottomane",
+   "nombreAvis": 173,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Somali Hilib House",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Médine",
+   "description": "Viandes et riz somaliens à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Somali+Hilib+House+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Viandes et riz somaliens",
+   "nombreAvis": 1540,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Tahini & Falafel Bar",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Végétarien levant à Médine.",
+   "mapsUrl": "https://maps.google.com/?q=Tahini+%26+Falafel+Bar+M%C3%A9dine",
+   "priceRange": "€€€",
+   "specialite": "Végétarien levant",
+   "nombreAvis": 2298,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r50"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m1",
+   "nom": "Masjid al-Nabawi (Mosquée du Prophète)",
+   "nom_arabe": "المسجد النبوي",
+   "type": "2ème mosquée la plus sacrée de l'Islam",
+   "statut": "Mosquée du Prophète ﷺ",
+   "adresse": "Centre de Médine",
+   "quartier": "Haram",
+   "capacite": 1000000,
+   "annee_construction": "622 (originale), expansions continues",
+   "style_architectural": "Islamique saoudien avec éléments ottomans",
+   "hauteur_minaret_m": 105,
+   "coordonnees": {
     "lat": 24.5247,
     "lng": 39.5692
+   },
+   "acces_non_musulmans": false,
+   "note": 5,
+   "avis_count": 999999,
+   "description": "La mosquée du Prophète Muhammad ﷺ, construite par lui-même en 622. Abrite le tombeau du Prophète sous le célèbre Dôme Vert. La 2ème mosquée la plus sacrée de l'Islam, capacité actuelle d'1 million de fidèles. Al-Rawdah al-Sharifah (le Jardin Paradisiaque) est entre la chaire et le tombeau.",
+   "anecdote": "Le hadith dit : 'Entre ma maison et ma chaire se trouve un jardin des jardins du Paradis.' Al-Rawdah al-Sharifah est le seul endroit sur terre considéré comme un morceau du Paradis de son vivant. La prière dedans équivaut à 1000 prières ailleurs.",
+   "image": "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600"
   },
-  "score_halal": 4.9,
-  "score_securite": 5,
-  "score_famille": 4,
-  "score_budget": 3,
-  "description": "La Cité Lumineuse — ville du Prophète Muhammad ﷺ. Masjid al-Nabawi, tombeau du Prophète et lieu de naissance de la première communauté islamique. Accessible aux musulmans uniquement.",
-  "description_courte": "La ville du Prophète, Al-Madinah Al-Munawwarah",
-  "description_longue": "Médine (Al-Madinah Al-Munawwarah) est la deuxième ville sainte de l'Islam, où le Prophète Muhammad ﷺ émigra de La Mecque en 622 (l'Hégire) et établit la première communauté musulmane. Sa mosquée — Masjid al-Nabawi — est la 2ème plus sacrée au monde, et son tombeau s'y trouve. La ville est entourée de sites historiques de l'islam primitif : Uhud, Quba, Qiblatayn. Accessible aux musulmans uniquement dans la zone du Haram.",
-  "image_hero": "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1600&q=80",
-  "image_alt": "Dôme vert de Masjid al-Nabawi la nuit, Médine, Arabie Saoudite",
-  "meta_title": "Médine 2025 — Guide Pèlerinage Ziyara & Omra",
-  "meta_description": "Guide complet Médine : Masjid al-Nabawi, tombeau du Prophète, Uhud, Quba. La ville sainte du Prophète ﷺ réservée aux musulmans.",
-  "statistiques": {
-    "mosquees": 300,
-    "restaurants_halal": 3000,
-    "hotels_halal": 150,
-    "boucheries_halal": 300,
-    "habitants_musulmans_pct": 100,
-    "habitants": 1300000,
-    "altitude_m": 608,
-    "superficie_km2": 589
+  {
+   "id": "m2",
+   "nom": "Masjid Quba (première mosquée de l'Islam)",
+   "nom_arabe": "مسجد قباء",
+   "type": "1ère mosquée construite dans l'Islam",
+   "adresse": "Quba, Médine",
+   "quartier": "Quba",
+   "annee_construction": "622",
+   "style_architectural": "Islamique saoudien moderne sur base historique",
+   "coordonnees": {
+    "lat": 24.5024,
+    "lng": 39.5555
+   },
+   "acces_non_musulmans": false,
+   "note": 4.9,
+   "avis_count": 56789,
+   "description": "La première mosquée construite dans l'Islam — le Prophète ﷺ posa lui-même les premières pierres à son arrivée à Médine en 622. Prier 2 raka'at ici équivaut à une Omra selon le hadith.",
+   "anecdote": "Le Prophète ﷺ se rendait à Masjid Quba chaque samedi pour y prier. Il dit : 'Celui qui se purifie chez lui, puis se rend à Masjid Quba et y prie deux raka'at obtient la récompense d'une Omra.' (Hadith d'Ibn Majah)"
   },
-  "infos_pratiques": {
-    "langue_officielle": "Arabe",
-    "langues_parlees": [
-      "Arabe",
-      "Ourdou",
-      "Anglais",
-      "Français",
-      "Indonésien"
-    ],
-    "monnaie": "Riyal saoudien (SAR)",
-    "taux_change_eur": "1 EUR ≈ 4.10 SAR",
-    "meilleure_periode": "Octobre-Février (températures plus clémentes, 20-30°C)",
-    "a_eviter": "Juin-Août (jusqu'à 45°C), sauf obligation spirituelle",
-    "fuseau_horaire": "AST (UTC+3)",
-    "appel_priere": "L'adhan du Masjid al-Nabawi résonne dans toute la ville 5 fois par jour",
-    "nourriture_halal": "100% halal — ville 100% islamique",
-    "alcool": "Strictement interdit dans toute l'Arabie Saoudite",
-    "tenue_recommandee": "Tenue modeste obligatoire. Femmes : abaya + hijab dans la zone du Haram. Hommes : tenue propre et décente.",
-    "securite": "Excellente — forces de sécurité saoudiennes spécialisées, zone du Haram très surveillée",
-    "transport_local": "Bus Al-Haramain, taxis blancs, Uber, navettes hôtels",
-    "aeroport": "Aéroport Prince Mohammed bin Abdulaziz (MED) — 15 km du centre",
-    "visa": "Visa Omra ou Hajj obligatoire. Non-musulmans interdits d'accès à la zone du Haram."
+  {
+   "id": "m3",
+   "nom": "Masjid al-Qiblatayn (des Deux Qibla)",
+   "nom_arabe": "مسجد القبلتين",
+   "type": "Mosquée historique des deux directions",
+   "adresse": "Médine",
+   "quartier": "Médine",
+   "annee_construction": "623",
+   "coordonnees": {
+    "lat": 24.5423,
+    "lng": 39.5801
+   },
+   "acces_non_musulmans": false,
+   "note": 4.8,
+   "avis_count": 23456,
+   "description": "La mosquée 'des Deux Qiblas' — c'est ici que la direction de prière (qibla) changea de Jérusalem vers La Mecque en 623, sur ordre divin pendant la prière.",
+   "anecdote": "En l'an 2 de l'Hégire (623), pendant la prière du Dhuhr, la révélation changea la qibla de Jérusalem vers La Mecque (Coran 2:144). Les Compagnons qui priaient dans cette mosquée pivotèrent à 180° en pleine prière — un moment historique unique."
   },
-  "meteo_par_mois": [
-    {
-      "mois": "Janvier",
-      "temp_max": 26,
-      "temp_min": 10,
-      "pluie_jours": 1,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Février",
-      "temp_max": 28,
-      "temp_min": 12,
-      "pluie_jours": 1,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Mars",
-      "temp_max": 32,
-      "temp_min": 16,
-      "pluie_jours": 1,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Avril",
-      "temp_max": 37,
-      "temp_min": 20,
-      "pluie_jours": 0,
-      "emoji": "🌞"
-    },
-    {
-      "mois": "Mai",
-      "temp_max": 41,
-      "temp_min": 24,
-      "pluie_jours": 0,
-      "emoji": "🌞"
-    },
-    {
-      "mois": "Juin",
-      "temp_max": 44,
-      "temp_min": 28,
-      "pluie_jours": 0,
-      "emoji": "🌡️"
-    },
-    {
-      "mois": "Juillet",
-      "temp_max": 44,
-      "temp_min": 28,
-      "pluie_jours": 0,
-      "emoji": "🌡️"
-    },
-    {
-      "mois": "Août",
-      "temp_max": 43,
-      "temp_min": 27,
-      "pluie_jours": 0,
-      "emoji": "🌡️"
-    },
-    {
-      "mois": "Septembre",
-      "temp_max": 40,
-      "temp_min": 25,
-      "pluie_jours": 0,
-      "emoji": "🌞"
-    },
-    {
-      "mois": "Octobre",
-      "temp_max": 35,
-      "temp_min": 20,
-      "pluie_jours": 0,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Novembre",
-      "temp_max": 29,
-      "temp_min": 15,
-      "pluie_jours": 1,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Décembre",
-      "temp_max": 25,
-      "temp_min": 10,
-      "pluie_jours": 1,
-      "emoji": "⛅"
-    }
-  ],
-  "restaurants": [
-    {
-      "nom": "Al-Baik Médine",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Médine",
-      "description": "Institution saoudienne, succursale à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Baik+M%C3%A9dine+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Institution saoudienne",
-      "nombreAvis": 2058,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Madinah Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Agneau et kebabs du Hijaz à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Madinah+Grill+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Agneau et kebabs du hijaz",
-      "nombreAvis": 110,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Al-Noor Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Traditionnel médinois à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Noor+Restaurant+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Traditionnel médinois",
-      "nombreAvis": 2074,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Dar Al-Madinah",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Gastronomique saoudien à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Al-Madinah+M%C3%A9dine",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique saoudien",
-      "nombreAvis": 832,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Al-Ansar Kitchen",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Cuisine des Ansars, traditionnel à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Ansar+Kitchen+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Cuisine des ansars",
-      "nombreAvis": 235,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Lebanese Cedar",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Médine",
-      "description": "Libanais premium à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Lebanese+Cedar+M%C3%A9dine",
-      "priceRange": "€€€€",
-      "specialite": "Libanais premium",
-      "nombreAvis": 3390,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Indian Spice Madinah",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Indien authentique à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Indian+Spice+Madinah+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Indien authentique",
-      "nombreAvis": 136,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Biryani Palace Medina",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Médine",
-      "description": "Biryani spécialisé à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Biryani+Palace+Medina+M%C3%A9dine",
-      "priceRange": "€€€€",
-      "specialite": "Biryani spécialisé",
-      "nombreAvis": 1544,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Al-Haram Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Médine",
-      "description": "Pâtisseries orientales à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Haram+Sweets+M%C3%A9dine",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries orientales",
-      "nombreAvis": 1285,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Zaytoun Restaurant",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Huile d'olive et mezze à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Zaytoun+Restaurant+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Huile d'olive et mezze",
-      "nombreAvis": 633,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Turkish Corner Medina",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Médine",
-      "description": "Döner et kebab turc à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Turkish+Corner+Medina+M%C3%A9dine",
-      "priceRange": "€",
-      "specialite": "Döner et kebab turc",
-      "nombreAvis": 286,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Pakistani Dhaba Medina",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Dhal et chapati à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Pakistani+Dhaba+Medina+M%C3%A9dine",
-      "priceRange": "€",
-      "specialite": "Dhal et chapati",
-      "nombreAvis": 1581,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Shwarma King Medina",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Médine",
-      "description": "Shawarma express à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Shwarma+King+Medina+M%C3%A9dine",
-      "priceRange": "€",
-      "specialite": "Shawarma express",
-      "nombreAvis": 604,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Al-Rawda Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Médine",
-      "description": "Thé et narguilé halal à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Rawda+Caf%C3%A9+M%C3%A9dine",
-      "priceRange": "€€",
-      "specialite": "Thé et narguilé halal",
-      "nombreAvis": 1044,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Yemeni Feast",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Saltah et fahsa à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Yemeni+Feast+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Saltah et fahsa",
-      "nombreAvis": 294,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Fish House Medina",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Poissons de la Mer Rouge à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Fish+House+Medina+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Poissons de la mer rouge",
-      "nombreAvis": 1333,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Al-Wasl Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Médine",
-      "description": "Gastronomique du Golfe à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Wasl+Restaurant+M%C3%A9dine",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique du golfe",
-      "nombreAvis": 789,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Samboosa Corner",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Samboosa et fatayer à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Samboosa+Corner+M%C3%A9dine",
-      "priceRange": "€",
-      "specialite": "Samboosa et fatayer",
-      "nombreAvis": 1836,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Kabsa Palace",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Médine",
-      "description": "Kabsa agneau traditionnel à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Kabsa+Palace+M%C3%A9dine",
-      "priceRange": "€€€€",
-      "specialite": "Kabsa agneau traditionnel",
-      "nombreAvis": 2511,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Harees & Jareesh House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Médine",
-      "description": "Plats saoudiens anciens à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Harees+%26+Jareesh+House+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Plats saoudiens anciens",
-      "nombreAvis": 499,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Fattah Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Médine",
-      "description": "Fattah yéménite à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Fattah+Restaurant+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Fattah yéménite",
-      "nombreAvis": 1135,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Mansaf Corner",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Jordanien authentique à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Mansaf+Corner+M%C3%A9dine",
-      "priceRange": "€",
-      "specialite": "Jordanien authentique",
-      "nombreAvis": 2407,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Al-Madani Bakery",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Médine",
-      "description": "Khubz et pain frais à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Madani+Bakery+M%C3%A9dine",
-      "priceRange": "€€",
-      "specialite": "Khubz et pain frais",
-      "nombreAvis": 3638,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Mutabbaq Express",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Crêpe saoudienne farcie à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Mutabbaq+Express+M%C3%A9dine",
-      "priceRange": "€",
-      "specialite": "Crêpe saoudienne farcie",
-      "nombreAvis": 2461,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Syrian Grill Medina",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Médine",
-      "description": "Grillades syriennes à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Syrian+Grill+Medina+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Grillades syriennes",
-      "nombreAvis": 741,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Al-Barakah Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Médine",
-      "description": "Baklava et mamoul à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Barakah+Sweets+M%C3%A9dine",
-      "priceRange": "€€",
-      "specialite": "Baklava et mamoul",
-      "nombreAvis": 1242,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Golden Dates Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Café et dattes premium à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Golden+Dates+Caf%C3%A9+M%C3%A9dine",
-      "priceRange": "€€€€",
-      "specialite": "Café et dattes premium",
-      "nombreAvis": 2190,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Madinah Rooftop",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Vue Masjid al-Nabawi à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Madinah+Rooftop+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Vue masjid al-nabawi",
-      "nombreAvis": 528,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Moroccan Spices Medina",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Tajine et couscous à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Moroccan+Spices+Medina+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Tajine et couscous",
-      "nombreAvis": 824,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Egyptian Koshari House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Koshari et ful medammes à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Egyptian+Koshari+House+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Koshari et ful medammes",
-      "nombreAvis": 1913,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Desi Kitchen Medina",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Pakistanais épicé à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Desi+Kitchen+Medina+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Pakistanais épicé",
-      "nombreAvis": 1108,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Somali Restaurant Medina",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Cuisine somalienne à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Somali+Restaurant+Medina+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Cuisine somalienne",
-      "nombreAvis": 1646,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Sudanese Eats Medina",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Médine",
-      "description": "Asida et mola à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Sudanese+Eats+Medina+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Asida et mola",
-      "nombreAvis": 150,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Iranian Chello Kebab",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Chelow kabab persan à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Iranian+Chello+Kebab+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Chelow kabab persan",
-      "nombreAvis": 1981,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Uzbek Plov House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Plov et samsa à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Uzbek+Plov+House+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Plov et samsa",
-      "nombreAvis": 952,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Malaysian Corner Medina",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Médine",
-      "description": "Nasi lemak halal à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Malaysian+Corner+Medina+M%C3%A9dine",
-      "priceRange": "€",
-      "specialite": "Nasi lemak halal",
-      "nombreAvis": 1245,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Indonesian Warung",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Médine",
-      "description": "Rendang et nasi goreng à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Indonesian+Warung+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Rendang et nasi goreng",
-      "nombreAvis": 187,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Bangladeshi Kitchen",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Hilsa et biryani à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Bangladeshi+Kitchen+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Hilsa et biryani",
-      "nombreAvis": 2135,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "African Feast Medina",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Cuisine africaine à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=African+Feast+Medina+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Cuisine africaine",
-      "nombreAvis": 1509,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Al-Nur Manakish",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Manoushé et pain chaud à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Nur+Manakish+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Manoushé et pain chaud",
-      "nombreAvis": 564,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Kabab & Kofta Palace",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Grillades levantines à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Kabab+%26+Kofta+Palace+M%C3%A9dine",
-      "priceRange": "€€€€",
-      "specialite": "Grillades levantines",
-      "nombreAvis": 1815,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Hummus House Medina",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Médine",
-      "description": "Hummus et falafel à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Hummus+House+Medina+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Hummus et falafel",
-      "nombreAvis": 1029,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Masjid Nabawi Area Cafeteria",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Café rapide pèlerins à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Masjid+Nabawi+Area+Cafeteria+M%C3%A9dine",
-      "priceRange": "€",
-      "specialite": "Café rapide pèlerins",
-      "nombreAvis": 1446,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Al-Hejazi Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Grillades du Hedjaz à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Hejazi+Grill+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Grillades du hedjaz",
-      "nombreAvis": 2250,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Date Paradise",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Dattes, miel et café arabe à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Date+Paradise+M%C3%A9dine",
-      "priceRange": "€€",
-      "specialite": "Dattes",
-      "nombreAvis": 915,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Chicken Street Medina",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Médine",
-      "description": "Poulet grillé street à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Chicken+Street+Medina+M%C3%A9dine",
-      "priceRange": "€",
-      "specialite": "Poulet grillé street",
-      "nombreAvis": 3438,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Al-Madinah Al-Munawwarah Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Gastronomique à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Madinah+Al-Munawwarah+Restaurant+M%C3%A9dine",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 437,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Ottoman Feast Medina",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Médine",
-      "description": "Cuisine ottomane à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Ottoman+Feast+Medina+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Cuisine ottomane",
-      "nombreAvis": 173,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Somali Hilib House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Médine",
-      "description": "Viandes et riz somaliens à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Somali+Hilib+House+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Viandes et riz somaliens",
-      "nombreAvis": 1540,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Tahini & Falafel Bar",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Végétarien levant à Médine.",
-      "mapsUrl": "https://maps.google.com/?q=Tahini+%26+Falafel+Bar+M%C3%A9dine",
-      "priceRange": "€€€",
-      "specialite": "Végétarien levant",
-      "nombreAvis": 2298,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r50"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m1",
-      "nom": "Masjid al-Nabawi (Mosquée du Prophète)",
-      "nom_arabe": "المسجد النبوي",
-      "type": "2ème mosquée la plus sacrée de l'Islam",
-      "statut": "Mosquée du Prophète ﷺ",
-      "adresse": "Centre de Médine",
-      "quartier": "Haram",
-      "capacite": 1000000,
-      "annee_construction": "622 (originale), expansions continues",
-      "style_architectural": "Islamique saoudien avec éléments ottomans",
-      "hauteur_minaret_m": 105,
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      },
-      "acces_non_musulmans": false,
-      "note": 5.0,
-      "avis_count": 999999,
-      "description": "La mosquée du Prophète Muhammad ﷺ, construite par lui-même en 622. Abrite le tombeau du Prophète sous le célèbre Dôme Vert. La 2ème mosquée la plus sacrée de l'Islam, capacité actuelle d'1 million de fidèles. Al-Rawdah al-Sharifah (le Jardin Paradisiaque) est entre la chaire et le tombeau.",
-      "anecdote": "Le hadith dit : 'Entre ma maison et ma chaire se trouve un jardin des jardins du Paradis.' Al-Rawdah al-Sharifah est le seul endroit sur terre considéré comme un morceau du Paradis de son vivant. La prière dedans équivaut à 1000 prières ailleurs.",
-      "image": "https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600"
-    },
-    {
-      "id": "m2",
-      "nom": "Masjid Quba (première mosquée de l'Islam)",
-      "nom_arabe": "مسجد قباء",
-      "type": "1ère mosquée construite dans l'Islam",
-      "adresse": "Quba, Médine",
-      "quartier": "Quba",
-      "annee_construction": "622",
-      "style_architectural": "Islamique saoudien moderne sur base historique",
-      "coordonnees": {
-        "lat": 24.5024,
-        "lng": 39.5555
-      },
-      "acces_non_musulmans": false,
-      "note": 4.9,
-      "avis_count": 56789,
-      "description": "La première mosquée construite dans l'Islam — le Prophète ﷺ posa lui-même les premières pierres à son arrivée à Médine en 622. Prier 2 raka'at ici équivaut à une Omra selon le hadith.",
-      "anecdote": "Le Prophète ﷺ se rendait à Masjid Quba chaque samedi pour y prier. Il dit : 'Celui qui se purifie chez lui, puis se rend à Masjid Quba et y prie deux raka'at obtient la récompense d'une Omra.' (Hadith d'Ibn Majah)"
-    },
-    {
-      "id": "m3",
-      "nom": "Masjid al-Qiblatayn (des Deux Qibla)",
-      "nom_arabe": "مسجد القبلتين",
-      "type": "Mosquée historique des deux directions",
-      "adresse": "Médine",
-      "quartier": "Médine",
-      "annee_construction": "623",
-      "coordonnees": {
-        "lat": 24.5423,
-        "lng": 39.5801
-      },
-      "acces_non_musulmans": false,
-      "note": 4.8,
-      "avis_count": 23456,
-      "description": "La mosquée 'des Deux Qiblas' — c'est ici que la direction de prière (qibla) changea de Jérusalem vers La Mecque en 623, sur ordre divin pendant la prière.",
-      "anecdote": "En l'an 2 de l'Hégire (623), pendant la prière du Dhuhr, la révélation changea la qibla de Jérusalem vers La Mecque (Coran 2:144). Les Compagnons qui priaient dans cette mosquée pivotèrent à 180° en pleine prière — un moment historique unique."
-    },
-    {
-      "id": "m4",
-      "nom": "Masjid al-Ghamama",
-      "type": "Mosquée du nuage de pluie",
-      "adresse": "Place Al-Ghamama, Médine",
-      "quartier": "Centre",
-      "annee_construction": "679",
-      "coordonnees": {
-        "lat": 24.5234,
-        "lng": 39.5689
-      },
-      "acces_non_musulmans": false,
-      "note": 4.7,
-      "avis_count": 8901,
-      "description": "Construite à l'endroit où le Prophète ﷺ fit sa prière de l'Aïd al-Adha. 'Ghamama' signifie nuage — un nuage de pluie était apparu miraculeuseement au-dessus du Prophète lors d'une prière sous la chaleur."
-    },
-    {
-      "id": "m5",
-      "nom": "Masjid al-Fath (des Ahzab)",
-      "type": "Mosquée des Confédérés",
-      "adresse": "Montagne Sel'a, Médine",
-      "quartier": "Sel'a",
-      "annee_construction": "627",
-      "coordonnees": {
-        "lat": 24.5378,
-        "lng": 39.5712
-      },
-      "acces_non_musulmans": false,
-      "note": 4.7,
-      "avis_count": 5678,
-      "description": "Construite au sommet de la colline Sel'a où le Prophète ﷺ pria lors de la Bataille des Coalisés (Al-Ahzab / Fossé) en 627. Lieu où il fit des du'as qui furent exaucées."
-    },
-    {
-      "id": "m6",
-      "nom": "Masjid Bilal",
-      "type": "Mosquée du premier muezzin",
-      "adresse": "Médine",
-      "quartier": "Centre",
-      "annee_construction": "630",
-      "coordonnees": {
-        "lat": 24.5256,
-        "lng": 39.5701
-      },
-      "acces_non_musulmans": false,
-      "note": 4.6,
-      "avis_count": 3456,
-      "description": "Mosquée construite à l'emplacement de la maison de Bilal ibn Rabah, l'esclave affranchi devenu premier muezzin de l'Islam, dont la voix résonnait de Médine."
-    },
-    {
-      "id": "m7",
-      "nom": "Masjid Abu Bakr Al-Siddiq",
-      "type": "Mosquée du premier Calife",
-      "adresse": "Médine",
-      "quartier": "Médine",
-      "annee_construction": "630",
-      "coordonnees": {
-        "lat": 24.5267,
-        "lng": 39.5712
-      },
-      "acces_non_musulmans": false,
-      "note": 4.6,
-      "avis_count": 2134,
-      "description": "Mosquée construite sur l'emplacement de la maison d'Abu Bakr, le plus proche Compagnon du Prophète et premier Calife de l'Islam."
-    },
-    {
-      "id": "m8",
-      "nom": "Masjid Salman Al-Farisi",
-      "type": "Mosquée des Compagnons persans",
-      "adresse": "Médine",
-      "quartier": "Médine",
-      "annee_construction": "630",
-      "coordonnees": {
-        "lat": 24.5289,
-        "lng": 39.5734
-      },
-      "acces_non_musulmans": false,
-      "note": 4.5,
-      "avis_count": 1678,
-      "description": "Mosquée construite à l'emplacement du secteur de la tranchée (Khandaq) creusée par Salman Al-Farisi le Persan, premier Compagnon non-arabe majeur. Très visitée par les pèlerins iraniens."
-    },
-    {
-      "id": "m9",
-      "nom": "Masjid Al-Ijabah",
-      "type": "Mosquée de l'exaucement",
-      "adresse": "Médine",
-      "quartier": "Banu Mu'awiya",
-      "annee_construction": "627",
-      "coordonnees": {
-        "lat": 24.5312,
-        "lng": 39.5756
-      },
-      "acces_non_musulmans": false,
-      "note": 4.7,
-      "avis_count": 4567,
-      "description": "Mosquée où le Prophète ﷺ pria et fit 3 supplications (du'as). Deux lui furent exaucées immédiatement, la 3ème différée. Lieu de prière intense pour tous les visiteurs."
-    },
-    {
-      "id": "m10",
-      "nom": "Masjid Al-Suqya (Mosquée du puits)",
-      "type": "Mosquée historique",
-      "adresse": "Médine",
-      "quartier": "Al-Suqya",
-      "annee_construction": "622",
-      "coordonnees": {
-        "lat": 24.5189,
-        "lng": 39.5645
-      },
-      "acces_non_musulmans": false,
-      "note": 4.5,
-      "avis_count": 2345,
-      "description": "Construite près du puits où le Prophète ﷺ fit ses ablutions avant la Bataille de Badr (624). Lieu de prière et de bénédiction avant les grandes épreuves de la communauté naissante."
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Anwar Al Madinah Mövenpick Hotel",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Médine",
-      "description": "Luxe, à 300m du Prophète à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Anwar+Al+Madinah+M%C3%B6venpick+Hotel+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€€",
-      "nombreAvis": 188,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Hilton Madinah",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Médine",
-      "description": "Luxe vue Masjid al-Nabawi à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hilton+Madinah+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€€",
-      "nombreAvis": 1985,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Pullman Zamzam Madinah",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Luxe à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Pullman+Zamzam+Madinah+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€€",
-      "nombreAvis": 1121,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Oberoi Madinah",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Ultra-luxe à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Oberoi+Madinah+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€€",
-      "nombreAvis": 1081,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Le Méridien Madinah",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Luxe à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Le+M%C3%A9ridien+Madinah+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€€",
-      "nombreAvis": 2007,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Shaza Hotel Madinah",
-      "categorie": "Riad & Boutique",
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Boutique luxe à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Shaza+Hotel+Madinah+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€",
-      "nombreAvis": 1294,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Al-Salam Royal Hotel Medina",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Médine",
-      "description": "Standard luxe à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Al-Salam+Royal+Hotel+Medina+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€€",
-      "nombreAvis": 1473,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "Marriott Madinah",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Médine",
-      "description": "Luxe standard à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Marriott+Madinah+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€€",
-      "nombreAvis": 2007,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Concorde Al Salam Hotel",
-      "categorie": "Standard",
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Standard à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Concorde+Al+Salam+Hotel+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€",
-      "nombreAvis": 1939,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Al-Haram Tower Hotel",
-      "categorie": "Standard",
-      "score": 4.8,
-      "adresse": "Médine",
-      "description": "Standard pèlerins à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Al-Haram+Tower+Hotel+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€",
-      "nombreAvis": 2073,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Madina Hilton",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Standard confort à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Madina+Hilton+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€€",
-      "nombreAvis": 1557,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Dar Al-Eiman Hotel",
-      "categorie": "Budget",
-      "score": 4.4,
-      "adresse": "Médine",
-      "description": "Budget confort à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Dar+Al-Eiman+Hotel+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€",
-      "nombreAvis": 1584,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Al-Anwar Hotel Madinah",
-      "categorie": "Budget",
-      "score": 4.8,
-      "adresse": "Médine",
-      "description": "Budget à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Al-Anwar+Hotel+Madinah+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€",
-      "nombreAvis": 1667,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "Royal Inn Madinah",
-      "categorie": "Budget",
-      "score": 4.8,
-      "adresse": "Médine",
-      "description": "Budget à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Royal+Inn+Madinah+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€",
-      "nombreAvis": 915,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Al-Rawdha Inn",
-      "categorie": "Budget",
-      "score": 4.6,
-      "adresse": "Médine",
-      "description": "Économique à Médine.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Al-Rawdha+Inn+M%C3%A9dine",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
-      "priceRange": "€€",
-      "nombreAvis": 2286,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Masjid al-Nabawi — prière et recueillement",
-      "categorie": "Religieux & Spirituel",
-      "description": "Masjid al-Nabawi — prière et recueillement — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Masjid+al-Nabawi+%E2%80%94+pri%C3%A8re+et+recueillement+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+al-Nabawi+%E2%80%94+pri%C3%A8re+et+recueillement+M%C3%A9dine",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a1"
-    },
-    {
-      "nom": "Rawda Sharifa",
-      "categorie": "Religieux & Spirituel",
-      "description": "Rawda Sharifa — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Rawda+Sharifa+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Rawda+Sharifa+M%C3%A9dine",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a2"
-    },
-    {
-      "nom": "Tombeau du Prophète Mohammed",
-      "categorie": "Religieux & Spirituel",
-      "description": "Tombeau du Prophète Mohammed — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Tombeau+du+Proph%C3%A8te+Mohammed+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tombeau+du+Proph%C3%A8te+Mohammed+M%C3%A9dine",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a3"
-    },
-    {
-      "nom": "Masjid Quba",
-      "categorie": "Religieux & Spirituel",
-      "description": "Masjid Quba — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Masjid+Quba+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+Quba+M%C3%A9dine",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a4"
-    },
-    {
-      "nom": "Masjid Al-Qiblatayn",
-      "categorie": "Religieux & Spirituel",
-      "description": "Masjid Al-Qiblatayn — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Masjid+Al-Qiblatayn+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+Al-Qiblatayn+M%C3%A9dine",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a5"
-    },
-    {
-      "nom": "Masjid Al-Ghamama",
-      "categorie": "Religieux & Spirituel",
-      "description": "Masjid Al-Ghamama — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Masjid+Al-Ghamama+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+Al-Ghamama+M%C3%A9dine",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a6"
-    },
-    {
-      "nom": "Cimetière Al-Baqi",
-      "categorie": "Religieux & Spirituel",
-      "description": "Cimetière Al-Baqi — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Cimeti%C3%A8re+Al-Baqi+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cimeti%C3%A8re+Al-Baqi+M%C3%A9dine",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a7"
-    },
-    {
-      "nom": "Mont Uhud et champ de bataille",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mont Uhud et champ de bataille — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mont+Uhud+et+champ+de+bataille+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mont+Uhud+et+champ+de+bataille+M%C3%A9dine",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a8"
-    },
-    {
-      "nom": "Mosquée des martyrs d'Uhud",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée des martyrs d'Uhud — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+des+martyrs+d%27Uhud+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+des+martyrs+d%27Uhud+M%C3%A9dine",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a9"
-    },
-    {
-      "nom": "Jabal al-Nour",
-      "categorie": "Religieux & Spirituel",
-      "description": "Jabal al-Nour — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Jabal+al-Nour+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jabal+al-Nour+M%C3%A9dine",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Musée de Médine",
-      "categorie": "Art & Musées",
-      "description": "Musée de Médine — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Bibliothèque de Médine",
-      "categorie": "Art & Musées",
-      "description": "Bibliothèque de Médine — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Biblioth%C3%A8que+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Biblioth%C3%A8que+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Souk Al-Noor",
-      "categorie": "Shopping & Souks",
-      "description": "Souk Al-Noor — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Souk+Al-Noor+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+Al-Noor+M%C3%A9dine",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Centre commercial Al-Rashid Mall Medina",
-      "categorie": "Shopping & Souks",
-      "description": "Centre commercial Al-Rashid Mall Medina — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+Al-Rashid+Mall+Medina+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+Al-Rashid+Mall+Medina+M%C3%A9dine",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Quartier historique Al-Uthmaniyah",
-      "categorie": "Histoire & Culture",
-      "description": "Quartier historique Al-Uthmaniyah — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+Al-Uthmaniyah+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+Al-Uthmaniyah+M%C3%A9dine",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Musée des mosquées historiques",
-      "categorie": "Religieux & Spirituel",
-      "description": "Musée des mosquées historiques — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+des+mosqu%C3%A9es+historiques+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+des+mosqu%C3%A9es+historiques+M%C3%A9dine",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Dar Al-Madinah Museum",
-      "categorie": "Art & Musées",
-      "description": "Dar Al-Madinah Museum — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Al-Madinah+Museum+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Dar+Al-Madinah+Museum+M%C3%A9dine",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Masjid al-Fatah",
-      "categorie": "Religieux & Spirituel",
-      "description": "Masjid al-Fatah — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Masjid+al-Fatah+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+al-Fatah+M%C3%A9dine",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Promenade Al-Hejaz",
-      "categorie": "Nature & Aventure",
-      "description": "Promenade Al-Hejaz — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+Al-Hejaz+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+Al-Hejaz+M%C3%A9dine",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Centre islamique King Fahd",
-      "categorie": "Religieux & Spirituel",
-      "description": "Centre islamique King Fahd — étape incontournable du séjour à Médine.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+islamique+King+Fahd+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+islamique+King+Fahd+M%C3%A9dine",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Quartier historique de Médine",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Grand marché central de Médine",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Médine",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Musée de la ville de Médine",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Food tour halal de Médine",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Hammam traditionnel de Médine",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Mosquée historique de Médine",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Parc et jardins de Médine",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Médine",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Médine",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+M%C3%A9dine+M%C3%A9dine",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+M%C3%A9dine+M%C3%A9dine",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "road_trips": [
-    {
-      "id": "rt1",
-      "titre": "Circuit Islamique Hijaz Complet",
-      "emoji": "🕌",
-      "duree": "7 jours",
-      "distance_km": 800,
-      "difficulte": "Facile",
-      "budget_estime_eur": "500-800€",
-      "etapes": [
-        {
-          "ville": "Médine",
-          "nuits": 3,
-          "highlights": [
-            "Masjid al-Nabawi",
-            "Quba",
-            "Uhud",
-            "Al-Baqi"
-          ]
-        },
-        {
-          "ville": "La Mecque",
-          "nuits": 3,
-          "highlights": [
-            "Tawaf Kaaba",
-            "Safa-Marwa",
-            "Zamzam",
-            "Jabal al-Nour"
-          ]
-        },
-        {
-          "ville": "Djeddah",
-          "nuits": 1,
-          "highlights": [
-            "Vieille ville UNESCO",
-            "Corniche",
-            "Mosquée Flottante"
-          ]
-        }
-      ],
-      "conseils_halal": "Package Omra classique — agences françaises proposent ce circuit clé-en-main avec guide francophone.",
-      "tags": [
-        "Omra",
-        "Hijaz",
-        "Complet"
-      ]
-    },
-    {
-      "id": "rt2",
-      "titre": "Sur les pas de la Bataille de Badr",
-      "emoji": "⚔️",
-      "duree": "2 jours",
-      "distance_km": 200,
-      "difficulte": "Facile",
-      "budget_estime_eur": "80-150€",
-      "etapes": [
-        {
-          "ville": "Médine",
-          "nuits": 1,
-          "highlights": [
-            "Départ pour Badr"
-          ]
-        },
-        {
-          "ville": "Badr",
-          "nuits": 1,
-          "highlights": [
-            "Puits de Badr",
-            "Cimetière des Martyrs de Badr 624",
-            "Mosquée Asfan"
-          ]
-        }
-      ],
-      "conseils_halal": "Excursion historique depuis Médine. Route halal, restaurants sur l'autoroute.",
-      "tags": [
-        "Badr",
-        "Bataille",
-        "Historique"
-      ]
-    },
-    {
-      "id": "rt3",
-      "titre": "Médine — Khaybar — Al-Ula",
-      "emoji": "🏜️",
-      "duree": "3 jours",
-      "distance_km": 500,
-      "difficulte": "Aventureux",
-      "budget_estime_eur": "200-350€",
-      "etapes": [
-        {
-          "ville": "Médine",
-          "nuits": 1,
-          "highlights": [
-            "Départ matin"
-          ]
-        },
-        {
-          "ville": "Khaybar",
-          "nuits": 1,
-          "highlights": [
-            "Forteresses juives de Khaybar (628)",
-            "Oasis palmiers",
-            "Paysage volcanique"
-          ]
-        },
-        {
-          "ville": "Al-Ula",
-          "nuits": 1,
-          "highlights": [
-            "Hégra (Madâin Sâlih) nabatéen UNESCO",
-            "Al-Ula historique",
-            "Désert de Hisma"
-          ]
-        }
-      ],
-      "conseils_halal": "Toute la route est 100% halal. Al-Ula a des restaurants récents depuis le développement touristique Vision 2030.",
-      "tags": [
-        "Désert",
-        "Khaybar",
-        "Al-Ula"
-      ]
-    }
-  ],
-  "voyages_par_type": {
-    "en_couple": {
-      "emoji": "💑",
-      "couleur": "#e91e8c",
-      "intro": "Médine pour un couple de musulmans représente l'acte de piété conjugale ultime — faire ses salutations au Prophète ﷺ ensemble, prier côte à côte dans sa mosquée et partager les dattes Ajwa de sa propre terre.",
-      "top_experiences": [
-        {
-          "titre": "Prière commune au Nabawi",
-          "details": "Dans la mosquée du Prophète, hommes et femmes séparés mais ensemble",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Coucher de soleil au Dôme Vert",
-          "details": "Moment de recueillement et de reconnaissance",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Dattes Ajwa à la palmeraie",
-          "details": "Offrir les dattes du Prophète à son épouse",
-          "prix": "20€"
-        }
-      ],
-      "hotels_recommandes": [
-        "Anwar Al Madinah Mövenpick",
-        "Oberoi Médine"
-      ],
-      "conseils": "Couples mariés — preuve de mariage recommandée aux hôtels. Chambre double légale pour époux."
-    },
-    "en_famille": {
-      "emoji": "👨‍👩‍👧‍👦",
-      "couleur": "#4CAF50",
-      "intro": "Emmener ses enfants à Médine est transmettre l'amour du Prophète ﷺ de génération en génération — leur faire visiter sa mosquée, voir son Dôme Vert et boire l'eau Zamzam.",
-      "top_experiences": [
-        {
-          "titre": "Voir le Dôme Vert ensemble",
-          "details": "L'émerveiller de la Grande Mosquée pour les enfants",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Masjid Quba en famille",
-          "details": "La première mosquée de l'Islam",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Dattes Ajwa les enfants adorent",
-          "details": "Les plus douces et meilleures du monde",
-          "prix": "5€"
-        }
-      ],
-      "hotels_recommandes": [
-        "Dar Al Iman Hotel",
-        "InterContinental Dar Al Hijra"
-      ],
-      "conseils": "Poussettes autorisées dans le Haram. Espace familial dans les hôtels. La mosquée est très accessible avec enfants."
-    },
-    "entre_amis": {
-      "emoji": "👫",
-      "couleur": "#9C27B0",
-      "intro": "Un groupe d'amis à Médine pour l'Omra — frères et soeurs en Islam qui accomplissent ensemble un acte de dévotion, se soutiennent mutuellement et créent des souvenirs à vie.",
-      "top_experiences": [
-        {
-          "titre": "Tahajjud de nuit ensemble",
-          "details": "Prière nocturne volontaire dans la mosquée du Prophète",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Tour des mosquées historiques",
-          "details": "Quba, Qiblatayn, Al-Fath, Ghamama",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Dîner halal group Mandi",
-          "details": "Grand plateau partagé — tradition islamique",
-          "prix": "10€/pers"
-        }
-      ],
-      "conseils": "Les groupes de femmes sans mahram sont légaux pour l'Omra (réformes 2021). Agences françaises spécialisées groupes."
-    },
-    "voyage_solo": {
-      "emoji": "🎒",
-      "couleur": "#FF9800",
-      "intro": "L'Omra en solo est souvent le voyage le plus transformateur d'une vie. Seul face au tombeau du Prophète ﷺ, seul dans Al-Rawdah, les pleurs viennent naturellement.",
-      "top_experiences": [
-        {
-          "titre": "Itikaf d'une nuit au Nabawi",
-          "details": "Rester jusqu'à l'aube en prière et récitation",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Marcher seul vers Quba samedi",
-          "details": "Reproduire la marche du Prophète",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Écrire ses du'as à Al-Rawdah",
-          "details": "Supplications personnelles écrites et lues",
-          "prix": "Gratuit"
-        }
-      ],
-      "conseil_securite": "Médine est très sûre. La police religieuse est bienveillante. Garder visa et passeport sur soi."
-    },
-    "voyage_spirituel": {
-      "emoji": "🕌",
-      "couleur": "#2196F3",
-      "intro": "Médine EST la destination spirituelle islamique absolue après La Mecque. Voir la mosquée du Prophète ﷺ, se tenir sur sa terre bénie et lui offrir ses salutations — l'objectif de toute une vie.",
-      "top_experiences": [
-        {
-          "titre": "Salutation au Prophète ﷺ (Al-Rawdah)",
-          "details": "Salam sur le Prophète, Abu Bakr et Omar",
-          "prix": "Gratuit (réservation Nusuk)"
-        },
-        {
-          "titre": "40 prières consécutives au Nabawi",
-          "details": "40 Salah sans absence — récompense de la protection du Prophète",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Lire Surah Yassin au cimetière Al-Baqi",
-          "details": "Pour les défunts des Sahaba et de la famille du Prophète",
-          "prix": "Gratuit"
-        }
-      ],
-      "conseil_pratique": "Prévoir minimum 8 jours à Médine pour les 40 prières consécutives (Arba'een). La plupart des packages Omra incluent Médine avant ou après La Mecque."
-    }
+  {
+   "id": "m4",
+   "nom": "Masjid al-Ghamama",
+   "type": "Mosquée du nuage de pluie",
+   "adresse": "Place Al-Ghamama, Médine",
+   "quartier": "Centre",
+   "annee_construction": "679",
+   "coordonnees": {
+    "lat": 24.5234,
+    "lng": 39.5689
+   },
+   "acces_non_musulmans": false,
+   "note": 4.7,
+   "avis_count": 8901,
+   "description": "Construite à l'endroit où le Prophète ﷺ fit sa prière de l'Aïd al-Adha. 'Ghamama' signifie nuage — un nuage de pluie était apparu miraculeuseement au-dessus du Prophète lors d'une prière sous la chaleur."
   },
-  "boucheries": [
-    {
-      "id": "b1",
-      "nom": "Marché de viande Haram Médine",
-      "adresse": "Haram Area Market",
-      "quartier": "Haram",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau saoudien",
-        "Chameau (viande et lait)",
-        "Poulet fermier local"
-      ],
-      "note": 4.6,
-      "horaires": "6h-midnight"
-    },
-    {
-      "id": "b2",
-      "nom": "Boucherie Al-Madinah Ajwa",
-      "adresse": "King Faisal Road, Médine",
-      "quartier": "Centre",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau frais",
-        "Veau importé",
-        "Chèvre locale"
-      ],
-      "note": 4.4,
-      "horaires": "7h-22h"
-    },
-    {
-      "id": "b3",
-      "nom": "Souq Al-Jum'ah Viandes",
-      "adresse": "Friday Market, Médine",
-      "quartier": "Centre",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau du vendredi",
-        "Safran rouge saoudien",
-        "Epices Hijaz"
-      ],
-      "note": 4.7,
-      "horaires": "Vendredi uniquement 8h-15h"
-    },
-    {
-      "id": "b4",
-      "nom": "Halal Wholesale Medina",
-      "adresse": "Anbariya District, Médine",
-      "quartier": "Anbariya",
-      "halal_certifie": true,
-      "produits": [
-        "Viandes importées certifiées",
-        "Dindes",
-        "Saucisses halal"
-      ],
-      "note": 4.3,
-      "horaires": "8h-21h"
-    },
-    {
-      "id": "b5",
-      "nom": "Marché du Producteur Quba",
-      "adresse": "Quba Road, Médine",
-      "quartier": "Quba",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau fermier local",
-        "Chèvre fraîche",
-        "Lapin halal"
-      ],
-      "note": 4.5,
-      "horaires": "5h-14h"
-    }
-  ],
-  "boulangeries": [
-    {
-      "id": "bo1",
-      "nom": "Khobz Taboon (four en terre)",
-      "adresse": "Old Quarter, Médine",
-      "quartier": "Vieille ville",
-      "description": "Pain taboon (four en terre) médinois — pain plat cuit sur galets de basalte volcanique, tradition millénaire.",
-      "specialites": [
-        "Khobz taboon volcanique",
-        "Regheef saoudien",
-        "Khameer au sucre"
-      ],
-      "prix": "0.50-2 SAR",
-      "horaires": "5h-21h",
-      "note": 4.7
-    },
-    {
-      "id": "bo2",
-      "nom": "Bakery Al-Nour",
-      "adresse": "Haram Area",
-      "quartier": "Haram",
-      "description": "Boulangerie ouverte 24h/24 pendant Ramadan et Hajj — sandwichs et viennoiseries halal pour pèlerins.",
-      "specialites": [
-        "Croissant halal",
-        "Pain de mie",
-        "Brioche dattes"
-      ],
-      "prix": "2-8 SAR",
-      "horaires": "5h-midnight (24h Ramadan)",
-      "note": 4.3
-    },
-    {
-      "id": "bo3",
-      "nom": "Ma'amoul Specialist Al-Madinah",
-      "adresse": "King Abdul Aziz Road",
-      "quartier": "Centre",
-      "description": "Spécialiste des ma'amoul — biscuits fourrés dattes, pistaches ou noix, le biscuit islamique traditionnel offert à l'Aïd.",
-      "specialites": [
-        "Ma'amoul dattes",
-        "Ma'amoul pistache",
-        "Kaak anis"
-      ],
-      "prix": "20-80 SAR/boite",
-      "horaires": "9h-22h",
-      "note": 4.6
-    },
-    {
-      "id": "bo4",
-      "nom": "Mekki Sweets",
-      "adresse": "Anbariya, Médine",
-      "quartier": "Anbariya",
-      "specialites": [
-        "Halwa médine",
-        "Zlabia",
-        "Basboussa semoule"
-      ],
-      "prix": "5-25 SAR",
-      "horaires": "8h-midnight",
-      "note": 4.4
-    },
-    {
-      "id": "bo5",
-      "nom": "Tamr Al-Hilwa (Dattes sucrées)",
-      "adresse": "Haram Mall, Médine",
-      "quartier": "Haram",
-      "description": "Boutique de dattes transformées — dattes enrobées chocolat halal, dattes fourrées amandes, dattes au safran.",
-      "specialites": [
-        "Dattes chocolat",
-        "Dattes amandes",
-        "Dattes Ajwa premium"
-      ],
-      "prix": "30-200 SAR",
-      "horaires": "10h-midnight",
-      "note": 4.8
-    }
-  ],
-  "articles_lies": [
-    "guide-omra-debutant",
-    "medine-ziyara-sites",
-    "dattes-ajwa-bienfaits"
-  ],
-  "villes_proches": [
-    "la-mecque",
-    "djeddah"
-  ],
-  "destinations_combiner": [
-    {
-      "ville": "La Mecque",
-      "distance_km": 450,
-      "raison": "Combinaison obligatoire — package Omra inclut toujours les deux villes saintes"
-    },
-    {
-      "ville": "Djeddah",
-      "distance_km": 430,
-      "raison": "Porte d'entrée via l'aéroport, ville moderne avec restaurants et shopping"
-    },
-    {
-      "ville": "Badr",
-      "distance_km": 155,
-      "raison": "Site de la première grande bataille de l'Islam (624) — excursion historique d'une journée"
-    }
-  ],
-  "conseils_halal": "Médine est 100% halal et islamique — la ville du Prophète ﷺ lui-même. Tout alcool, porc ou comportement contraire à l'Islam est strictement interdit et puni. La ville est parmi les plus propres et les plus sûres du monde. Conseil essentiel : arriver en état de pureté (wudhu), avoir ses supplications prêtes, et emporter des livres de du'as recommandées.",
-  "codeISO": "SA",
-  "image": "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1600&q=80",
-  "continent": "Asie",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Médine — Halal Trust Score 5/5.",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Médine",
-      "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Médine",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+M%C3%A9dine+M%C3%A9dine",
-      "capacite": 3992,
-      "anneeConstruction": 1932,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Médine",
-      "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Médine",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+M%C3%A9dine+M%C3%A9dine",
-      "capacite": 2798,
-      "anneeConstruction": 1998,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Médine",
-      "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Médine",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+M%C3%A9dine+M%C3%A9dine",
-      "capacite": 2280,
-      "anneeConstruction": 1960,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Médine",
-      "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Médine",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+M%C3%A9dine+M%C3%A9dine",
-      "capacite": 909,
-      "anneeConstruction": 1949,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Médine",
-      "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Médine",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+M%C3%A9dine+M%C3%A9dine",
-      "capacite": 6016,
-      "anneeConstruction": 1936,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Médine",
-      "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Médine",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+M%C3%A9dine+M%C3%A9dine",
-      "capacite": 2154,
-      "anneeConstruction": 1894,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Médine",
-      "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Médine",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+M%C3%A9dine+M%C3%A9dine",
-      "capacite": 1592,
-      "anneeConstruction": 1892,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      }
-    },
-    {
-      "nom": "Mosquée historique de Médine",
-      "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Médine",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+M%C3%A9dine+M%C3%A9dine",
-      "capacite": 1311,
-      "anneeConstruction": 1911,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      }
-    },
-    {
-      "nom": "Mosquée du vendredi de Médine",
-      "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Médine",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+M%C3%A9dine+M%C3%A9dine",
-      "capacite": 1860,
-      "anneeConstruction": 1880,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      }
-    },
-    {
-      "nom": "Mosquée Al-Hidaya de Médine",
-      "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Médine",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+M%C3%A9dine+M%C3%A9dine",
-      "capacite": 1234,
-      "anneeConstruction": 1934,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.5247,
-        "lng": 39.5692
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Al-Wasl Restaurant",
-      "Al-Baik Médine",
-      "Lebanese Cedar",
-      "Kabsa Palace",
-      "Al-Madani Bakery"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Pakistani Dhaba Medina",
-      "Samboosa Corner",
-      "Mansaf Corner",
-      "Al-Madani Bakery",
-      "Mutabbaq Express"
-    ],
-    "incontournables": [
-      "Al-Madani Bakery",
-      "Chicken Street Medina",
-      "Lebanese Cedar",
-      "Kabsa Palace",
-      "Mutabbaq Express"
-    ],
-    "pepitesCachees": [
-      "Madinah Grill",
-      "Al-Ansar Kitchen",
-      "Indian Spice Madinah"
-    ],
-    "idealFamille": [
-      "Al-Baik Médine",
-      "Madinah Grill",
-      "Al-Noor Restaurant",
-      "Al-Ansar Kitchen",
-      "Lebanese Cedar"
-    ],
-    "gastronomique": [
-      "Dar Al-Madinah",
-      "Al-Wasl Restaurant",
-      "Al-Madinah Al-Munawwarah Restaurant"
-    ],
-    "ouvertNuit": [
-      "Madinah Grill",
-      "Lebanese Cedar",
-      "Zaytoun Restaurant"
-    ],
-    "vueExceptionnelle": [
-      "Fish House Medina"
-    ]
+  {
+   "id": "m5",
+   "nom": "Masjid al-Fath (des Ahzab)",
+   "type": "Mosquée des Confédérés",
+   "adresse": "Montagne Sel'a, Médine",
+   "quartier": "Sel'a",
+   "annee_construction": "627",
+   "coordonnees": {
+    "lat": 24.5378,
+    "lng": 39.5712
+   },
+   "acces_non_musulmans": false,
+   "note": 4.7,
+   "avis_count": 5678,
+   "description": "Construite au sommet de la colline Sel'a où le Prophète ﷺ pria lors de la Bataille des Coalisés (Al-Ahzab / Fossé) en 627. Lieu où il fit des du'as qui furent exaucées."
   },
-  "halalScore": 9.8
+  {
+   "id": "m6",
+   "nom": "Masjid Bilal",
+   "type": "Mosquée du premier muezzin",
+   "adresse": "Médine",
+   "quartier": "Centre",
+   "annee_construction": "630",
+   "coordonnees": {
+    "lat": 24.5256,
+    "lng": 39.5701
+   },
+   "acces_non_musulmans": false,
+   "note": 4.6,
+   "avis_count": 3456,
+   "description": "Mosquée construite à l'emplacement de la maison de Bilal ibn Rabah, l'esclave affranchi devenu premier muezzin de l'Islam, dont la voix résonnait de Médine."
+  },
+  {
+   "id": "m7",
+   "nom": "Masjid Abu Bakr Al-Siddiq",
+   "type": "Mosquée du premier Calife",
+   "adresse": "Médine",
+   "quartier": "Médine",
+   "annee_construction": "630",
+   "coordonnees": {
+    "lat": 24.5267,
+    "lng": 39.5712
+   },
+   "acces_non_musulmans": false,
+   "note": 4.6,
+   "avis_count": 2134,
+   "description": "Mosquée construite sur l'emplacement de la maison d'Abu Bakr, le plus proche Compagnon du Prophète et premier Calife de l'Islam."
+  },
+  {
+   "id": "m8",
+   "nom": "Masjid Salman Al-Farisi",
+   "type": "Mosquée des Compagnons persans",
+   "adresse": "Médine",
+   "quartier": "Médine",
+   "annee_construction": "630",
+   "coordonnees": {
+    "lat": 24.5289,
+    "lng": 39.5734
+   },
+   "acces_non_musulmans": false,
+   "note": 4.5,
+   "avis_count": 1678,
+   "description": "Mosquée construite à l'emplacement du secteur de la tranchée (Khandaq) creusée par Salman Al-Farisi le Persan, premier Compagnon non-arabe majeur. Très visitée par les pèlerins iraniens."
+  },
+  {
+   "id": "m9",
+   "nom": "Masjid Al-Ijabah",
+   "type": "Mosquée de l'exaucement",
+   "adresse": "Médine",
+   "quartier": "Banu Mu'awiya",
+   "annee_construction": "627",
+   "coordonnees": {
+    "lat": 24.5312,
+    "lng": 39.5756
+   },
+   "acces_non_musulmans": false,
+   "note": 4.7,
+   "avis_count": 4567,
+   "description": "Mosquée où le Prophète ﷺ pria et fit 3 supplications (du'as). Deux lui furent exaucées immédiatement, la 3ème différée. Lieu de prière intense pour tous les visiteurs."
+  },
+  {
+   "id": "m10",
+   "nom": "Masjid Al-Suqya (Mosquée du puits)",
+   "type": "Mosquée historique",
+   "adresse": "Médine",
+   "quartier": "Al-Suqya",
+   "annee_construction": "622",
+   "coordonnees": {
+    "lat": 24.5189,
+    "lng": 39.5645
+   },
+   "acces_non_musulmans": false,
+   "note": 4.5,
+   "avis_count": 2345,
+   "description": "Construite près du puits où le Prophète ﷺ fit ses ablutions avant la Bataille de Badr (624). Lieu de prière et de bénédiction avant les grandes épreuves de la communauté naissante."
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Anwar Al Madinah Mövenpick Hotel",
+   "categorie": "Luxe",
+   "score": 4.8,
+   "adresse": "Médine",
+   "description": "Luxe, à 300m du Prophète à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Anwar+Al+Madinah+M%C3%B6venpick+Hotel+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€€",
+   "nombreAvis": 188,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h1",
+   "lat": 24.4713757,
+   "lng": 39.6078202
+  },
+  {
+   "nom": "Hilton Madinah",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Médine",
+   "description": "Luxe vue Masjid al-Nabawi à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hilton+Madinah+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€€",
+   "nombreAvis": 1985,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h2",
+   "lat": 24.4720818,
+   "lng": 39.6107978
+  },
+  {
+   "nom": "Pullman Zamzam Madinah",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Luxe à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Pullman+Zamzam+Madinah+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€€",
+   "nombreAvis": 1121,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": 24.4644758,
+   "lng": 39.6117903
+  },
+  {
+   "nom": "Oberoi Madinah",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Ultra-luxe à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Oberoi+Madinah+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€€",
+   "nombreAvis": 1081,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4"
+  },
+  {
+   "nom": "Le Méridien Madinah",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Luxe à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Le+M%C3%A9ridien+Madinah+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€€",
+   "nombreAvis": 2007,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5",
+   "lat": 24.4893827,
+   "lng": 39.5639423
+  },
+  {
+   "nom": "Shaza Hotel Madinah",
+   "categorie": "Riad & Boutique",
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Boutique luxe à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Shaza+Hotel+Madinah+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€",
+   "nombreAvis": 1294,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": 24.4737844,
+   "lng": 39.6102474
+  },
+  {
+   "nom": "Al-Salam Royal Hotel Medina",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Médine",
+   "description": "Standard luxe à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Al-Salam+Royal+Hotel+Medina+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€€",
+   "nombreAvis": 1473,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "Marriott Madinah",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Médine",
+   "description": "Luxe standard à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Marriott+Madinah+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€€",
+   "nombreAvis": 2007,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Concorde Al Salam Hotel",
+   "categorie": "Standard",
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Standard à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Concorde+Al+Salam+Hotel+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€",
+   "nombreAvis": 1939,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Al-Haram Tower Hotel",
+   "categorie": "Standard",
+   "score": 4.8,
+   "adresse": "Médine",
+   "description": "Standard pèlerins à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Al-Haram+Tower+Hotel+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€",
+   "nombreAvis": 2073,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  },
+  {
+   "nom": "Madina Hilton",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Standard confort à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Madina+Hilton+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€€",
+   "nombreAvis": 1557,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h11"
+  },
+  {
+   "nom": "Dar Al-Eiman Hotel",
+   "categorie": "Budget",
+   "score": 4.4,
+   "adresse": "Médine",
+   "description": "Budget confort à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Dar+Al-Eiman+Hotel+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€",
+   "nombreAvis": 1584,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12",
+   "lat": 24.4713651,
+   "lng": 39.6085754
+  },
+  {
+   "nom": "Al-Anwar Hotel Madinah",
+   "categorie": "Budget",
+   "score": 4.8,
+   "adresse": "Médine",
+   "description": "Budget à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Al-Anwar+Hotel+Madinah+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€",
+   "nombreAvis": 1667,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h13",
+   "lat": 24.4638666,
+   "lng": 39.6056127
+  },
+  {
+   "nom": "Royal Inn Madinah",
+   "categorie": "Budget",
+   "score": 4.8,
+   "adresse": "Médine",
+   "description": "Budget à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Royal+Inn+Madinah+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€",
+   "nombreAvis": 915,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14",
+   "lat": 24.4728029,
+   "lng": 39.6104785
+  },
+  {
+   "nom": "Al-Rawdha Inn",
+   "categorie": "Budget",
+   "score": 4.6,
+   "adresse": "Médine",
+   "description": "Économique à Médine.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Al-Rawdha+Inn+M%C3%A9dine",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Médine&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=medine",
+   "priceRange": "€€",
+   "nombreAvis": 2286,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Masjid al-Nabawi — prière et recueillement",
+   "categorie": "Religieux & Spirituel",
+   "description": "Masjid al-Nabawi — prière et recueillement — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Masjid+al-Nabawi+%E2%80%94+pri%C3%A8re+et+recueillement+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+al-Nabawi+%E2%80%94+pri%C3%A8re+et+recueillement+M%C3%A9dine",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a1"
+  },
+  {
+   "nom": "Rawda Sharifa",
+   "categorie": "Religieux & Spirituel",
+   "description": "Rawda Sharifa — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Rawda+Sharifa+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Rawda+Sharifa+M%C3%A9dine",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a2"
+  },
+  {
+   "nom": "Tombeau du Prophète Mohammed",
+   "categorie": "Religieux & Spirituel",
+   "description": "Tombeau du Prophète Mohammed — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Tombeau+du+Proph%C3%A8te+Mohammed+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tombeau+du+Proph%C3%A8te+Mohammed+M%C3%A9dine",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a3"
+  },
+  {
+   "nom": "Masjid Quba",
+   "categorie": "Religieux & Spirituel",
+   "description": "Masjid Quba — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Masjid+Quba+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+Quba+M%C3%A9dine",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a4"
+  },
+  {
+   "nom": "Masjid Al-Qiblatayn",
+   "categorie": "Religieux & Spirituel",
+   "description": "Masjid Al-Qiblatayn — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Masjid+Al-Qiblatayn+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+Al-Qiblatayn+M%C3%A9dine",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a5"
+  },
+  {
+   "nom": "Masjid Al-Ghamama",
+   "categorie": "Religieux & Spirituel",
+   "description": "Masjid Al-Ghamama — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Masjid+Al-Ghamama+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+Al-Ghamama+M%C3%A9dine",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a6"
+  },
+  {
+   "nom": "Cimetière Al-Baqi",
+   "categorie": "Religieux & Spirituel",
+   "description": "Cimetière Al-Baqi — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Cimeti%C3%A8re+Al-Baqi+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cimeti%C3%A8re+Al-Baqi+M%C3%A9dine",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a7"
+  },
+  {
+   "nom": "Mont Uhud et champ de bataille",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mont Uhud et champ de bataille — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mont+Uhud+et+champ+de+bataille+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mont+Uhud+et+champ+de+bataille+M%C3%A9dine",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a8"
+  },
+  {
+   "nom": "Mosquée des martyrs d'Uhud",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée des martyrs d'Uhud — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+des+martyrs+d%27Uhud+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+des+martyrs+d%27Uhud+M%C3%A9dine",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a9"
+  },
+  {
+   "nom": "Jabal al-Nour",
+   "categorie": "Religieux & Spirituel",
+   "description": "Jabal al-Nour — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Jabal+al-Nour+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jabal+al-Nour+M%C3%A9dine",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a10"
+  },
+  {
+   "nom": "Musée de Médine",
+   "categorie": "Art & Musées",
+   "description": "Musée de Médine — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Bibliothèque de Médine",
+   "categorie": "Art & Musées",
+   "description": "Bibliothèque de Médine — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Biblioth%C3%A8que+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Biblioth%C3%A8que+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Souk Al-Noor",
+   "categorie": "Shopping & Souks",
+   "description": "Souk Al-Noor — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Souk+Al-Noor+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+Al-Noor+M%C3%A9dine",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Centre commercial Al-Rashid Mall Medina",
+   "categorie": "Shopping & Souks",
+   "description": "Centre commercial Al-Rashid Mall Medina — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+Al-Rashid+Mall+Medina+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+Al-Rashid+Mall+Medina+M%C3%A9dine",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Quartier historique Al-Uthmaniyah",
+   "categorie": "Histoire & Culture",
+   "description": "Quartier historique Al-Uthmaniyah — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+Al-Uthmaniyah+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+Al-Uthmaniyah+M%C3%A9dine",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Musée des mosquées historiques",
+   "categorie": "Religieux & Spirituel",
+   "description": "Musée des mosquées historiques — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+des+mosqu%C3%A9es+historiques+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+des+mosqu%C3%A9es+historiques+M%C3%A9dine",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Dar Al-Madinah Museum",
+   "categorie": "Art & Musées",
+   "description": "Dar Al-Madinah Museum — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Al-Madinah+Museum+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Dar+Al-Madinah+Museum+M%C3%A9dine",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Masjid al-Fatah",
+   "categorie": "Religieux & Spirituel",
+   "description": "Masjid al-Fatah — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Masjid+al-Fatah+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+al-Fatah+M%C3%A9dine",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Promenade Al-Hejaz",
+   "categorie": "Nature & Aventure",
+   "description": "Promenade Al-Hejaz — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+Al-Hejaz+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+Al-Hejaz+M%C3%A9dine",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Centre islamique King Fahd",
+   "categorie": "Religieux & Spirituel",
+   "description": "Centre islamique King Fahd — étape incontournable du séjour à Médine.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+islamique+King+Fahd+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+islamique+King+Fahd+M%C3%A9dine",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Quartier historique de Médine",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Grand marché central de Médine",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Médine",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Musée de la ville de Médine",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Food tour halal de Médine",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Hammam traditionnel de Médine",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Mosquée historique de Médine",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Parc et jardins de Médine",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Médine",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Médine",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+M%C3%A9dine+M%C3%A9dine",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+M%C3%A9dine+M%C3%A9dine",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "road_trips": [
+  {
+   "id": "rt1",
+   "titre": "Circuit Islamique Hijaz Complet",
+   "emoji": "🕌",
+   "duree": "7 jours",
+   "distance_km": 800,
+   "difficulte": "Facile",
+   "budget_estime_eur": "500-800€",
+   "etapes": [
+    {
+     "ville": "Médine",
+     "nuits": 3,
+     "highlights": [
+      "Masjid al-Nabawi",
+      "Quba",
+      "Uhud",
+      "Al-Baqi"
+     ]
+    },
+    {
+     "ville": "La Mecque",
+     "nuits": 3,
+     "highlights": [
+      "Tawaf Kaaba",
+      "Safa-Marwa",
+      "Zamzam",
+      "Jabal al-Nour"
+     ]
+    },
+    {
+     "ville": "Djeddah",
+     "nuits": 1,
+     "highlights": [
+      "Vieille ville UNESCO",
+      "Corniche",
+      "Mosquée Flottante"
+     ]
+    }
+   ],
+   "conseils_halal": "Package Omra classique — agences françaises proposent ce circuit clé-en-main avec guide francophone.",
+   "tags": [
+    "Omra",
+    "Hijaz",
+    "Complet"
+   ]
+  },
+  {
+   "id": "rt2",
+   "titre": "Sur les pas de la Bataille de Badr",
+   "emoji": "⚔️",
+   "duree": "2 jours",
+   "distance_km": 200,
+   "difficulte": "Facile",
+   "budget_estime_eur": "80-150€",
+   "etapes": [
+    {
+     "ville": "Médine",
+     "nuits": 1,
+     "highlights": [
+      "Départ pour Badr"
+     ]
+    },
+    {
+     "ville": "Badr",
+     "nuits": 1,
+     "highlights": [
+      "Puits de Badr",
+      "Cimetière des Martyrs de Badr 624",
+      "Mosquée Asfan"
+     ]
+    }
+   ],
+   "conseils_halal": "Excursion historique depuis Médine. Route halal, restaurants sur l'autoroute.",
+   "tags": [
+    "Badr",
+    "Bataille",
+    "Historique"
+   ]
+  },
+  {
+   "id": "rt3",
+   "titre": "Médine — Khaybar — Al-Ula",
+   "emoji": "🏜️",
+   "duree": "3 jours",
+   "distance_km": 500,
+   "difficulte": "Aventureux",
+   "budget_estime_eur": "200-350€",
+   "etapes": [
+    {
+     "ville": "Médine",
+     "nuits": 1,
+     "highlights": [
+      "Départ matin"
+     ]
+    },
+    {
+     "ville": "Khaybar",
+     "nuits": 1,
+     "highlights": [
+      "Forteresses juives de Khaybar (628)",
+      "Oasis palmiers",
+      "Paysage volcanique"
+     ]
+    },
+    {
+     "ville": "Al-Ula",
+     "nuits": 1,
+     "highlights": [
+      "Hégra (Madâin Sâlih) nabatéen UNESCO",
+      "Al-Ula historique",
+      "Désert de Hisma"
+     ]
+    }
+   ],
+   "conseils_halal": "Toute la route est 100% halal. Al-Ula a des restaurants récents depuis le développement touristique Vision 2030.",
+   "tags": [
+    "Désert",
+    "Khaybar",
+    "Al-Ula"
+   ]
+  }
+ ],
+ "voyages_par_type": {
+  "en_couple": {
+   "emoji": "💑",
+   "couleur": "#e91e8c",
+   "intro": "Médine pour un couple de musulmans représente l'acte de piété conjugale ultime — faire ses salutations au Prophète ﷺ ensemble, prier côte à côte dans sa mosquée et partager les dattes Ajwa de sa propre terre.",
+   "top_experiences": [
+    {
+     "titre": "Prière commune au Nabawi",
+     "details": "Dans la mosquée du Prophète, hommes et femmes séparés mais ensemble",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Coucher de soleil au Dôme Vert",
+     "details": "Moment de recueillement et de reconnaissance",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Dattes Ajwa à la palmeraie",
+     "details": "Offrir les dattes du Prophète à son épouse",
+     "prix": "20€"
+    }
+   ],
+   "hotels_recommandes": [
+    "Anwar Al Madinah Mövenpick",
+    "Oberoi Médine"
+   ],
+   "conseils": "Couples mariés — preuve de mariage recommandée aux hôtels. Chambre double légale pour époux."
+  },
+  "en_famille": {
+   "emoji": "👨‍👩‍👧‍👦",
+   "couleur": "#4CAF50",
+   "intro": "Emmener ses enfants à Médine est transmettre l'amour du Prophète ﷺ de génération en génération — leur faire visiter sa mosquée, voir son Dôme Vert et boire l'eau Zamzam.",
+   "top_experiences": [
+    {
+     "titre": "Voir le Dôme Vert ensemble",
+     "details": "L'émerveiller de la Grande Mosquée pour les enfants",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Masjid Quba en famille",
+     "details": "La première mosquée de l'Islam",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Dattes Ajwa les enfants adorent",
+     "details": "Les plus douces et meilleures du monde",
+     "prix": "5€"
+    }
+   ],
+   "hotels_recommandes": [
+    "Dar Al Iman Hotel",
+    "InterContinental Dar Al Hijra"
+   ],
+   "conseils": "Poussettes autorisées dans le Haram. Espace familial dans les hôtels. La mosquée est très accessible avec enfants."
+  },
+  "entre_amis": {
+   "emoji": "👫",
+   "couleur": "#9C27B0",
+   "intro": "Un groupe d'amis à Médine pour l'Omra — frères et soeurs en Islam qui accomplissent ensemble un acte de dévotion, se soutiennent mutuellement et créent des souvenirs à vie.",
+   "top_experiences": [
+    {
+     "titre": "Tahajjud de nuit ensemble",
+     "details": "Prière nocturne volontaire dans la mosquée du Prophète",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Tour des mosquées historiques",
+     "details": "Quba, Qiblatayn, Al-Fath, Ghamama",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Dîner halal group Mandi",
+     "details": "Grand plateau partagé — tradition islamique",
+     "prix": "10€/pers"
+    }
+   ],
+   "conseils": "Les groupes de femmes sans mahram sont légaux pour l'Omra (réformes 2021). Agences françaises spécialisées groupes."
+  },
+  "voyage_solo": {
+   "emoji": "🎒",
+   "couleur": "#FF9800",
+   "intro": "L'Omra en solo est souvent le voyage le plus transformateur d'une vie. Seul face au tombeau du Prophète ﷺ, seul dans Al-Rawdah, les pleurs viennent naturellement.",
+   "top_experiences": [
+    {
+     "titre": "Itikaf d'une nuit au Nabawi",
+     "details": "Rester jusqu'à l'aube en prière et récitation",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Marcher seul vers Quba samedi",
+     "details": "Reproduire la marche du Prophète",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Écrire ses du'as à Al-Rawdah",
+     "details": "Supplications personnelles écrites et lues",
+     "prix": "Gratuit"
+    }
+   ],
+   "conseil_securite": "Médine est très sûre. La police religieuse est bienveillante. Garder visa et passeport sur soi."
+  },
+  "voyage_spirituel": {
+   "emoji": "🕌",
+   "couleur": "#2196F3",
+   "intro": "Médine EST la destination spirituelle islamique absolue après La Mecque. Voir la mosquée du Prophète ﷺ, se tenir sur sa terre bénie et lui offrir ses salutations — l'objectif de toute une vie.",
+   "top_experiences": [
+    {
+     "titre": "Salutation au Prophète ﷺ (Al-Rawdah)",
+     "details": "Salam sur le Prophète, Abu Bakr et Omar",
+     "prix": "Gratuit (réservation Nusuk)"
+    },
+    {
+     "titre": "40 prières consécutives au Nabawi",
+     "details": "40 Salah sans absence — récompense de la protection du Prophète",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Lire Surah Yassin au cimetière Al-Baqi",
+     "details": "Pour les défunts des Sahaba et de la famille du Prophète",
+     "prix": "Gratuit"
+    }
+   ],
+   "conseil_pratique": "Prévoir minimum 8 jours à Médine pour les 40 prières consécutives (Arba'een). La plupart des packages Omra incluent Médine avant ou après La Mecque."
+  }
+ },
+ "boucheries": [
+  {
+   "id": "b1",
+   "nom": "Marché de viande Haram Médine",
+   "adresse": "Haram Area Market",
+   "quartier": "Haram",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau saoudien",
+    "Chameau (viande et lait)",
+    "Poulet fermier local"
+   ],
+   "note": 4.6,
+   "horaires": "6h-midnight"
+  },
+  {
+   "id": "b2",
+   "nom": "Boucherie Al-Madinah Ajwa",
+   "adresse": "King Faisal Road, Médine",
+   "quartier": "Centre",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau frais",
+    "Veau importé",
+    "Chèvre locale"
+   ],
+   "note": 4.4,
+   "horaires": "7h-22h"
+  },
+  {
+   "id": "b3",
+   "nom": "Souq Al-Jum'ah Viandes",
+   "adresse": "Friday Market, Médine",
+   "quartier": "Centre",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau du vendredi",
+    "Safran rouge saoudien",
+    "Epices Hijaz"
+   ],
+   "note": 4.7,
+   "horaires": "Vendredi uniquement 8h-15h"
+  },
+  {
+   "id": "b4",
+   "nom": "Halal Wholesale Medina",
+   "adresse": "Anbariya District, Médine",
+   "quartier": "Anbariya",
+   "halal_certifie": true,
+   "produits": [
+    "Viandes importées certifiées",
+    "Dindes",
+    "Saucisses halal"
+   ],
+   "note": 4.3,
+   "horaires": "8h-21h"
+  },
+  {
+   "id": "b5",
+   "nom": "Marché du Producteur Quba",
+   "adresse": "Quba Road, Médine",
+   "quartier": "Quba",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau fermier local",
+    "Chèvre fraîche",
+    "Lapin halal"
+   ],
+   "note": 4.5,
+   "horaires": "5h-14h"
+  }
+ ],
+ "boulangeries": [
+  {
+   "id": "bo1",
+   "nom": "Khobz Taboon (four en terre)",
+   "adresse": "Old Quarter, Médine",
+   "quartier": "Vieille ville",
+   "description": "Pain taboon (four en terre) médinois — pain plat cuit sur galets de basalte volcanique, tradition millénaire.",
+   "specialites": [
+    "Khobz taboon volcanique",
+    "Regheef saoudien",
+    "Khameer au sucre"
+   ],
+   "prix": "0.50-2 SAR",
+   "horaires": "5h-21h",
+   "note": 4.7
+  },
+  {
+   "id": "bo2",
+   "nom": "Bakery Al-Nour",
+   "adresse": "Haram Area",
+   "quartier": "Haram",
+   "description": "Boulangerie ouverte 24h/24 pendant Ramadan et Hajj — sandwichs et viennoiseries halal pour pèlerins.",
+   "specialites": [
+    "Croissant halal",
+    "Pain de mie",
+    "Brioche dattes"
+   ],
+   "prix": "2-8 SAR",
+   "horaires": "5h-midnight (24h Ramadan)",
+   "note": 4.3
+  },
+  {
+   "id": "bo3",
+   "nom": "Ma'amoul Specialist Al-Madinah",
+   "adresse": "King Abdul Aziz Road",
+   "quartier": "Centre",
+   "description": "Spécialiste des ma'amoul — biscuits fourrés dattes, pistaches ou noix, le biscuit islamique traditionnel offert à l'Aïd.",
+   "specialites": [
+    "Ma'amoul dattes",
+    "Ma'amoul pistache",
+    "Kaak anis"
+   ],
+   "prix": "20-80 SAR/boite",
+   "horaires": "9h-22h",
+   "note": 4.6
+  },
+  {
+   "id": "bo4",
+   "nom": "Mekki Sweets",
+   "adresse": "Anbariya, Médine",
+   "quartier": "Anbariya",
+   "specialites": [
+    "Halwa médine",
+    "Zlabia",
+    "Basboussa semoule"
+   ],
+   "prix": "5-25 SAR",
+   "horaires": "8h-midnight",
+   "note": 4.4
+  },
+  {
+   "id": "bo5",
+   "nom": "Tamr Al-Hilwa (Dattes sucrées)",
+   "adresse": "Haram Mall, Médine",
+   "quartier": "Haram",
+   "description": "Boutique de dattes transformées — dattes enrobées chocolat halal, dattes fourrées amandes, dattes au safran.",
+   "specialites": [
+    "Dattes chocolat",
+    "Dattes amandes",
+    "Dattes Ajwa premium"
+   ],
+   "prix": "30-200 SAR",
+   "horaires": "10h-midnight",
+   "note": 4.8
+  }
+ ],
+ "articles_lies": [
+  "guide-omra-debutant",
+  "medine-ziyara-sites",
+  "dattes-ajwa-bienfaits"
+ ],
+ "villes_proches": [
+  "la-mecque",
+  "djeddah"
+ ],
+ "destinations_combiner": [
+  {
+   "ville": "La Mecque",
+   "distance_km": 450,
+   "raison": "Combinaison obligatoire — package Omra inclut toujours les deux villes saintes"
+  },
+  {
+   "ville": "Djeddah",
+   "distance_km": 430,
+   "raison": "Porte d'entrée via l'aéroport, ville moderne avec restaurants et shopping"
+  },
+  {
+   "ville": "Badr",
+   "distance_km": 155,
+   "raison": "Site de la première grande bataille de l'Islam (624) — excursion historique d'une journée"
+  }
+ ],
+ "conseils_halal": "Médine est 100% halal et islamique — la ville du Prophète ﷺ lui-même. Tout alcool, porc ou comportement contraire à l'Islam est strictement interdit et puni. La ville est parmi les plus propres et les plus sûres du monde. Conseil essentiel : arriver en état de pureté (wudhu), avoir ses supplications prêtes, et emporter des livres de du'as recommandées.",
+ "codeISO": "SA",
+ "image": "https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1600&q=80",
+ "continent": "Asie",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Médine — Halal Trust Score 5/5.",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Médine",
+   "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Médine",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+M%C3%A9dine+M%C3%A9dine",
+   "capacite": 3992,
+   "anneeConstruction": 1932,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.5247,
+    "lng": 39.5692
+   }
+  },
+  {
+   "nom": "Grande Mosquée de Médine",
+   "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Médine",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+M%C3%A9dine+M%C3%A9dine",
+   "capacite": 2798,
+   "anneeConstruction": 1998,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.5247,
+    "lng": 39.5692
+   }
+  },
+  {
+   "nom": "Mosquée Al-Noor de Médine",
+   "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Médine",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+M%C3%A9dine+M%C3%A9dine",
+   "capacite": 2280,
+   "anneeConstruction": 1960,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.5247,
+    "lng": 39.5692
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Médine",
+   "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Médine",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+M%C3%A9dine+M%C3%A9dine",
+   "capacite": 909,
+   "anneeConstruction": 1949,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.5247,
+    "lng": 39.5692
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Médine",
+   "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Médine",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+M%C3%A9dine+M%C3%A9dine",
+   "capacite": 6016,
+   "anneeConstruction": 1936,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.5247,
+    "lng": 39.5692
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Médine",
+   "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Médine",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+M%C3%A9dine+M%C3%A9dine",
+   "capacite": 2154,
+   "anneeConstruction": 1894,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.5247,
+    "lng": 39.5692
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Médine",
+   "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Médine",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+M%C3%A9dine+M%C3%A9dine",
+   "capacite": 1592,
+   "anneeConstruction": 1892,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.5247,
+    "lng": 39.5692
+   }
+  },
+  {
+   "nom": "Mosquée historique de Médine",
+   "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Médine",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+M%C3%A9dine+M%C3%A9dine",
+   "capacite": 1311,
+   "anneeConstruction": 1911,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.5247,
+    "lng": 39.5692
+   }
+  },
+  {
+   "nom": "Mosquée du vendredi de Médine",
+   "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Médine",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+M%C3%A9dine+M%C3%A9dine",
+   "capacite": 1860,
+   "anneeConstruction": 1880,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.5247,
+    "lng": 39.5692
+   }
+  },
+  {
+   "nom": "Mosquée Al-Hidaya de Médine",
+   "description": "Mosquée fréquentée de Médine, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Médine",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+M%C3%A9dine+M%C3%A9dine",
+   "capacite": 1234,
+   "anneeConstruction": 1934,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.5247,
+    "lng": 39.5692
+   }
+  }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Al-Wasl Restaurant",
+   "Al-Baik Médine",
+   "Lebanese Cedar",
+   "Kabsa Palace",
+   "Al-Madani Bakery"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Pakistani Dhaba Medina",
+   "Samboosa Corner",
+   "Mansaf Corner",
+   "Al-Madani Bakery",
+   "Mutabbaq Express"
+  ],
+  "incontournables": [
+   "Al-Madani Bakery",
+   "Chicken Street Medina",
+   "Lebanese Cedar",
+   "Kabsa Palace",
+   "Mutabbaq Express"
+  ],
+  "pepitesCachees": [
+   "Madinah Grill",
+   "Al-Ansar Kitchen",
+   "Indian Spice Madinah"
+  ],
+  "idealFamille": [
+   "Al-Baik Médine",
+   "Madinah Grill",
+   "Al-Noor Restaurant",
+   "Al-Ansar Kitchen",
+   "Lebanese Cedar"
+  ],
+  "gastronomique": [
+   "Dar Al-Madinah",
+   "Al-Wasl Restaurant",
+   "Al-Madinah Al-Munawwarah Restaurant"
+  ],
+  "ouvertNuit": [
+   "Madinah Grill",
+   "Lebanese Cedar",
+   "Zaytoun Restaurant"
+  ],
+  "vueExceptionnelle": [
+   "Fish House Medina"
+  ]
+ },
+ "halalScore": 9.8
 }

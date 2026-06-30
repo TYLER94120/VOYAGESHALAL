@@ -1,1677 +1,1680 @@
 {
-  "slug": "agadir",
-  "nom": "Agadir",
-  "nom_arabe": "أكادير",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "drapeau": "🇲🇦",
-  "region": "Afrique du Nord",
-  "coordonnees": {
+ "slug": "agadir",
+ "nom": "Agadir",
+ "nom_arabe": "أكادير",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "drapeau": "🇲🇦",
+ "region": "Afrique du Nord",
+ "coordonnees": {
+  "lat": 30.4278,
+  "lng": -9.5981
+ },
+ "score_halal": 4.1,
+ "score_securite": 5,
+ "score_famille": 5,
+ "score_budget": 4,
+ "description": {
+  "court": "La capitale balnéaire du Maroc, 300 jours de soleil par an",
+  "long": "Agadir est la station balnéaire la plus fréquentée du Maroc, réputée pour ses 300 jours de soleil annuels et ses 10 km de plage dorée. Reconstruite après le séisme de 1960, la ville moderne offre d'excellentes infrastructures touristiques. Pays à majorité musulmane, le halal est la norme. Idéale pour les familles, Agadir combine détente balnéaire, excursions dans la vallée du Souss et découverte de la culture amazigh (berbère)."
+ },
+ "statistiques": {
+  "mosquees": 180,
+  "restaurants_halal": 800,
+  "hotels_halal_friendly": 120,
+  "population": "700 000",
+  "hotels": 10
+ },
+ "infos_pratiques": {
+  "langue": "Arabe, Berbère (Tachelhit), Français",
+  "monnaie": "Dirham marocain (MAD)",
+  "fuseau_horaire": "GMT+1",
+  "meilleure_periode": "Toute l'année (meilleur : mars–mai, octobre–novembre)",
+  "visa": "Entrée libre pour ressortissants français, belges, canadiens",
+  "transport": "Taxi, bus, location de voiture recommandée"
+ },
+ "restaurants": [
+  {
+   "nom": "La Scala Agadir",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Agadir",
+   "description": "Gastronomique vue port à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=La+Scala+Agadir+Agadir",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique vue port",
+   "nombreAvis": 1910,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Le Jardin d'Agadir",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Agadir",
+   "description": "Franco-marocain halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Jardin+d%27Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Franco-marocain halal",
+   "nombreAvis": 2161,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Restaurant Jour et Nuit",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Agadir",
+   "description": "Brasserie 24h à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Jour+et+Nuit+Agadir",
+   "priceRange": "€€",
+   "specialite": "Brasserie 24h",
+   "nombreAvis": 67,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Little Switzerland Agadir",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Agadir",
+   "description": "Fondues suisses halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Little+Switzerland+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Fondues suisses halal",
+   "nombreAvis": 526,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Mezzo di Pasta",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Agadir",
+   "description": "Italien halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Mezzo+di+Pasta+Agadir",
+   "priceRange": "€€",
+   "specialite": "Italien halal",
+   "nombreAvis": 2388,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "La Table d'Hôte",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Agadir",
+   "description": "Gourmet halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=La+Table+d%27H%C3%B4te+Agadir",
+   "priceRange": "€€",
+   "specialite": "Gourmet halal",
+   "nombreAvis": 1077,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Pure Passion",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Agadir",
+   "description": "Brunch moderne halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Pure+Passion+Agadir",
+   "priceRange": "€€",
+   "specialite": "Brunch moderne halal",
+   "nombreAvis": 1565,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "veggie"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Tikka Café Agadir",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Agadir",
+   "description": "Indien halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Tikka+Caf%C3%A9+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Indien halal",
+   "nombreAvis": 2150,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Sushishop Agadir",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Agadir",
+   "description": "Japonais halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Sushishop+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Japonais halal",
+   "nombreAvis": 362,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Chinatown Agadir",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Agadir",
+   "description": "Chinois halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Chinatown+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Chinois halal",
+   "nombreAvis": 1446,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Restaurant Marina",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Agadir",
+   "description": "Port de plaisance à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Marina+Agadir",
+   "priceRange": "€€",
+   "specialite": "Port de plaisance",
+   "nombreAvis": 1135,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Ao Nhà",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Agadir",
+   "description": "Vietnamien halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Ao+Nh%C3%A0+Agadir",
+   "priceRange": "€€",
+   "specialite": "Vietnamien halal",
+   "nombreAvis": 1460,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Agadir Halal BBQ",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Agadir",
+   "description": "Barbecue à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Agadir+Halal+BBQ+Agadir",
+   "priceRange": "€€",
+   "specialite": "Barbecue",
+   "nombreAvis": 2382,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Fish & Chips Agadir",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Agadir",
+   "description": "Poissons atlantique à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Fish+%26+Chips+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Poissons atlantique",
+   "nombreAvis": 583,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Port Halal Seafood",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Agadir",
+   "description": "Port de pêche à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Port+Halal+Seafood+Agadir",
+   "priceRange": "€€",
+   "specialite": "Port de pêche",
+   "nombreAvis": 523,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Boulangerie Pâtisserie Abdi",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Agadir",
+   "description": "Tradition à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Boulangerie+P%C3%A2tisserie+Abdi+Agadir",
+   "priceRange": "€€",
+   "specialite": "Tradition",
+   "nombreAvis": 334,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Café Tafarnout",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Agadir",
+   "description": "Berbère à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Tafarnout+Agadir",
+   "priceRange": "€€",
+   "specialite": "Berbère",
+   "nombreAvis": 1146,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Chez Mama",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Agadir",
+   "description": "Marocain populaire à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Mama+Agadir",
+   "priceRange": "€",
+   "specialite": "Marocain populaire",
+   "nombreAvis": 510,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Bleu de Fez",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Agadir",
+   "description": "Marocain Agadir à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Bleu+de+Fez+Agadir",
+   "priceRange": "€€",
+   "specialite": "Marocain agadir",
+   "nombreAvis": 1067,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Le Mirador",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Agadir",
+   "description": "Vue panoramique à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Mirador+Agadir",
+   "priceRange": "€€",
+   "specialite": "Vue panoramique",
+   "nombreAvis": 595,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "La Villa Blanche",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Agadir",
+   "description": "Blanc et élégant à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=La+Villa+Blanche+Agadir",
+   "priceRange": "€€€€",
+   "specialite": "Blanc et élégant",
+   "nombreAvis": 1604,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Restaurant Atlas",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Agadir",
+   "description": "Marocain standard à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Atlas+Agadir",
+   "priceRange": "€",
+   "specialite": "Marocain standard",
+   "nombreAvis": 2537,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "La Palmeraie Agadir",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Agadir",
+   "description": "Jardin luxuriant à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=La+Palmeraie+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Jardin luxuriant",
+   "nombreAvis": 1117,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Club Med Agadir Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Agadir",
+   "description": "Resort halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Club+Med+Agadir+Restaurant+Agadir",
+   "priceRange": "€€",
+   "specialite": "Resort halal",
+   "nombreAvis": 2188,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Riu Tikida Beach Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Agadir",
+   "description": "Resort à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Riu+Tikida+Beach+Restaurant+Agadir",
+   "priceRange": "€€",
+   "specialite": "Resort",
+   "nombreAvis": 1153,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Sofitel Agadir Royal Bay Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Agadir",
+   "description": "Gastronomique à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Sofitel+Agadir+Royal+Bay+Restaurant+Agadir",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique",
+   "nombreAvis": 488,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Iberostar Agadir Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Agadir",
+   "description": "Resort à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Iberostar+Agadir+Restaurant+Agadir",
+   "priceRange": "€€",
+   "specialite": "Resort",
+   "nombreAvis": 394,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Sol Beach House Agadir",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Agadir",
+   "description": "Resort à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Sol+Beach+House+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Resort",
+   "nombreAvis": 399,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Kenzi Europa Hotel Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Agadir",
+   "description": "Hôtel à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Kenzi+Europa+Hotel+Restaurant+Agadir",
+   "priceRange": "€€",
+   "specialite": "Hôtel",
+   "nombreAvis": 872,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Anezi Tower Hotel Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Agadir",
+   "description": "Hôtel à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Anezi+Tower+Hotel+Restaurant+Agadir",
+   "priceRange": "€€",
+   "specialite": "Hôtel",
+   "nombreAvis": 924,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Pizza Roma Agadir",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Agadir",
+   "description": "Pizza halal à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Pizza+Roma+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Pizza halal",
+   "nombreAvis": 2200,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Burger King Agadir",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Agadir",
+   "description": "Halal Maroc à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+King+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Halal maroc",
+   "nombreAvis": 1422,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "McDonald's Agadir",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Agadir",
+   "description": "Halal Maroc à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Halal maroc",
+   "nombreAvis": 1515,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "KFC Agadir",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Agadir",
+   "description": "Halal Maroc à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=KFC+Agadir+Agadir",
+   "priceRange": "€€",
+   "specialite": "Halal maroc",
+   "nombreAvis": 1227,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Snack Amlou",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Agadir",
+   "description": "Amlou et msemen, bio à Agadir.",
+   "mapsUrl": "https://maps.google.com/?q=Snack+Amlou+Agadir",
+   "priceRange": "€",
+   "specialite": "Amlou et msemen",
+   "nombreAvis": 824,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r35"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m-001",
+   "nom": "Grande Mosquée d'Agadir",
+   "adresse": "Quartier central Agadir",
+   "type": "Grande mosquée",
+   "capacite": 8000,
+   "annee_construction": 1985,
+   "style_architectural": "Marocain moderne",
+   "note": 4.7
+  },
+  {
+   "id": "m-002",
+   "nom": "Mosquée Salam",
+   "adresse": "Secteur touristique",
+   "type": "Mosquée de quartier",
+   "capacite": 2000,
+   "annee_construction": 1990,
+   "style_architectural": "Marocain",
+   "note": 4.4
+  },
+  {
+   "id": "m-003",
+   "nom": "Mosquée Al Fath",
+   "adresse": "Talborjt, Agadir",
+   "type": "Mosquée historique",
+   "capacite": 3000,
+   "annee_construction": 1975,
+   "style_architectural": "Mauresque",
+   "note": 4.5
+  },
+  {
+   "id": "m-004",
+   "nom": "Mosquée Hay Dakhla",
+   "adresse": "Quartier Hay Dakhla",
+   "type": "Mosquée de quartier",
+   "capacite": 1500,
+   "annee_construction": 2000,
+   "style_architectural": "Contemporain",
+   "note": 4.3
+  },
+  {
+   "id": "m-005",
+   "nom": "Mosquée Mohammed VI (Inezgane)",
+   "adresse": "Inezgane",
+   "type": "Grande mosquée",
+   "capacite": 5000,
+   "annee_construction": 2005,
+   "style_architectural": "Royal marocain",
+   "note": 4.8
+  }
+ ],
+ "hotels": [
+  {
+   "id": "h1",
+   "nom": "Sofitel Agadir Royal Bay",
+   "adresse": "Baie d'Agadir",
+   "categorie": "Standard",
+   "prix_nuit": "180–400 €",
+   "halal_friendly": true,
+   "sans_alcool": false,
+   "piscine": true,
+   "note": 4.8,
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 576,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "score": 4.8,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Sofitel+Agadir+Royal+Bay+Agadir",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
+   "nombreAvis": 1877,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 30.3932497,
+   "lng": -9.5970754
+  },
+  {
+   "id": "h2",
+   "nom": "Royal Atlas Agadir",
+   "adresse": "Front de mer",
+   "categorie": "Standard",
+   "prix_nuit": "150–320 €",
+   "halal_friendly": true,
+   "sans_alcool": false,
+   "piscine": true,
+   "note": 4.7,
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 564,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "score": 4.7,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Royal+Atlas+Agadir+Agadir",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
+   "nombreAvis": 2388,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "id": "h3",
+   "nom": "Hôtel Riu Palace Tikida Bay",
+   "adresse": "Baie des Palmiers",
+   "categorie": "Standard",
+   "prix_nuit": "120–280 €",
+   "halal_friendly": true,
+   "sans_alcool": false,
+   "piscine": true,
+   "note": 4.5,
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 540,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "score": 4.5,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Riu+Palace+Tikida+Bay+Agadir",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
+   "nombreAvis": 1940,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "id": "h4",
+   "nom": "Ibis Agadir",
+   "adresse": "Ave Mohammed V",
+   "categorie": "Standard",
+   "prix_nuit": "50–120 €",
+   "halal_friendly": true,
+   "sans_alcool": false,
+   "piscine": false,
+   "note": 4.2,
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 504,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "score": 4.2,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Ibis+Agadir+Agadir",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
+   "nombreAvis": 303,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "id": "h5",
+   "nom": "Résidence Aqua Fun",
+   "adresse": "Secteur balnéaire",
+   "categorie": "Standard",
+   "prix_nuit": "60–130 €",
+   "halal_friendly": true,
+   "sans_alcool": false,
+   "piscine": true,
+   "note": 4.1,
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 492,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "ONSSA Halal"
+   },
+   "score": 4.1,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=R%C3%A9sidence+Aqua+Fun+Agadir",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
+   "nombreAvis": 1947,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Agadir",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Agadir",
+   "description": "Hébergement halal-friendly à Agadir.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Agadir+Agadir",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=agadir",
+   "priceRange": "€€€€",
+   "nombreAvis": 1226,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Agadir 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Agadir",
+   "description": "Hébergement halal-friendly à Agadir.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Agadir+0+Agadir",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=agadir",
+   "priceRange": "€€€€",
+   "nombreAvis": 1076,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Agadir",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Agadir",
+   "description": "Hébergement halal-friendly à Agadir.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Agadir+Agadir",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=agadir",
+   "priceRange": "€€€",
+   "nombreAvis": 469,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Agadir",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Agadir",
+   "description": "Hébergement halal-friendly à Agadir.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Agadir+Agadir",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=agadir",
+   "priceRange": "€€€",
+   "nombreAvis": 1368,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Agadir",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Agadir",
+   "description": "Hébergement halal-friendly à Agadir.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Agadir+Agadir",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=agadir",
+   "priceRange": "€€",
+   "nombreAvis": 1655,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Plage d'Agadir (10 km de sable)",
+   "type": "Plage",
+   "duree": "Journée",
+   "prix": "Gratuit",
+   "note": 4.8,
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Plage+d%27Agadir+%2810+km+de+sable%29+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+d%27Agadir+%2810+km+de+sable%29+Agadir",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a2",
+   "nom": "Kasbah d'Agadir Oufella",
+   "type": "Histoire & vue panoramique",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "note": 4.7,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Kasbah+d%27Agadir+Oufella+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kasbah+d%27Agadir+Oufella+Agadir",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a3",
+   "nom": "Souk El Had (grand marché)",
+   "type": "Shopping & culture",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "note": 4.6,
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Souk+El+Had+%28grand+march%C3%A9%29+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+El+Had+%28grand+march%C3%A9%29+Agadir",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a4",
+   "nom": "Vallée du Paradis (excursion)",
+   "type": "Nature & randonnée",
+   "duree": "Journée",
+   "prix": "200–400 MAD par personne",
+   "note": 4.8,
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e+du+Paradis+%28excursion%29+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vall%C3%A9e+du+Paradis+%28excursion%29+Agadir",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a5",
+   "nom": "Taroudant (ville ancienne, 90 km)",
+   "type": "Excursion culturelle",
+   "duree": "Journée",
+   "prix": "Transport variable",
+   "note": 4.7,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Taroudant+%28ville+ancienne%2C+90+km%29+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Taroudant+%28ville+ancienne%2C+90+km%29+Agadir",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a6",
+   "nom": "Crocoparc (parc de crocodiles)",
+   "type": "Nature & famille",
+   "duree": "2h",
+   "prix": "80 MAD adulte",
+   "note": 4.3,
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Crocoparc+%28parc+de+crocodiles%29+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Crocoparc+%28parc+de+crocodiles%29+Agadir",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a7",
+   "nom": "Randonée dans l'Anti-Atlas",
+   "type": "Randonnée",
+   "duree": "Journée à 3 jours",
+   "prix": "Variable",
+   "note": 4.7,
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Randon%C3%A9e+dans+l%27Anti-Atlas+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Randon%C3%A9e+dans+l%27Anti-Atlas+Agadir",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a8",
+   "nom": "Surf et sports nautiques",
+   "type": "Sport",
+   "duree": "2h",
+   "prix": "150–300 MAD cours",
+   "note": 4.5,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Surf+et+sports+nautiques+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Surf+et+sports+nautiques+Agadir",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Agadir",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Agadir+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Agadir+Agadir",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand marché central de Agadir",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Agadir+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Agadir+Agadir",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a10"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Agadir",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Agadir+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Agadir+Agadir",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Musée de la ville de Agadir",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Agadir+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Agadir+Agadir",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Food tour halal de Agadir",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Agadir+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Agadir+Agadir",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Hammam traditionnel de Agadir",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Agadir+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Agadir+Agadir",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Mosquée historique de Agadir",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Agadir+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Agadir+Agadir",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Parc et jardins de Agadir",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Agadir+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Agadir+Agadir",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Agadir",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Agadir+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Agadir+Agadir",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Agadir",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Agadir+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Agadir+Agadir",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Quartier historique de Agadir 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Agadir+10+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Agadir+10+Agadir",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Grand marché central de Agadir 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Agadir+11+Agadir",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Agadir+11+Agadir",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "codeISO": "MA",
+ "image": "https://images.unsplash.com/photo-1710092538995-4af0c11a3f3c?w=1600&q=80",
+ "continent": "Afrique",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Agadir — Halal Trust Score 5/5.",
+ "image_hero": "https://images.unsplash.com/photo-1710092538995-4af0c11a3f3c?w=1600&q=80",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Agadir",
+   "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Agadir",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Agadir+Agadir",
+   "capacite": 4699,
+   "anneeConstruction": 1959,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 30.4278,
     "lng": -9.5981
+   }
   },
-  "score_halal": 4.1,
-  "score_securite": 5,
-  "score_famille": 5,
-  "score_budget": 4,
-  "description": {
-    "court": "La capitale balnéaire du Maroc, 300 jours de soleil par an",
-    "long": "Agadir est la station balnéaire la plus fréquentée du Maroc, réputée pour ses 300 jours de soleil annuels et ses 10 km de plage dorée. Reconstruite après le séisme de 1960, la ville moderne offre d'excellentes infrastructures touristiques. Pays à majorité musulmane, le halal est la norme. Idéale pour les familles, Agadir combine détente balnéaire, excursions dans la vallée du Souss et découverte de la culture amazigh (berbère)."
+  {
+   "nom": "Grande Mosquée de Agadir",
+   "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Agadir",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Agadir+Agadir",
+   "capacite": 1268,
+   "anneeConstruction": 1948,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 30.4278,
+    "lng": -9.5981
+   }
   },
-  "statistiques": {
-    "mosquees": 180,
-    "restaurants_halal": 800,
-    "hotels_halal_friendly": 120,
-    "population": "700 000"
+  {
+   "nom": "Mosquée Al-Noor de Agadir",
+   "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Agadir",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Agadir+Agadir",
+   "capacite": 2419,
+   "anneeConstruction": 1979,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 30.4278,
+    "lng": -9.5981
+   }
   },
-  "infos_pratiques": {
-    "langue": "Arabe, Berbère (Tachelhit), Français",
-    "monnaie": "Dirham marocain (MAD)",
-    "fuseau_horaire": "GMT+1",
-    "meilleure_periode": "Toute l'année (meilleur : mars–mai, octobre–novembre)",
-    "visa": "Entrée libre pour ressortissants français, belges, canadiens",
-    "transport": "Taxi, bus, location de voiture recommandée"
+  {
+   "nom": "Mosquée Al-Salam de Agadir",
+   "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Agadir",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Agadir+Agadir",
+   "capacite": 2640,
+   "anneeConstruction": 1880,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 30.4278,
+    "lng": -9.5981
+   }
   },
-  "restaurants": [
-    {
-      "nom": "La Scala Agadir",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Agadir",
-      "description": "Gastronomique vue port à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=La+Scala+Agadir+Agadir",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique vue port",
-      "nombreAvis": 1910,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Le Jardin d'Agadir",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Agadir",
-      "description": "Franco-marocain halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Jardin+d%27Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Franco-marocain halal",
-      "nombreAvis": 2161,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Restaurant Jour et Nuit",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Brasserie 24h à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Jour+et+Nuit+Agadir",
-      "priceRange": "€€",
-      "specialite": "Brasserie 24h",
-      "nombreAvis": 67,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Little Switzerland Agadir",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Agadir",
-      "description": "Fondues suisses halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Little+Switzerland+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Fondues suisses halal",
-      "nombreAvis": 526,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Mezzo di Pasta",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Italien halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Mezzo+di+Pasta+Agadir",
-      "priceRange": "€€",
-      "specialite": "Italien halal",
-      "nombreAvis": 2388,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "La Table d'Hôte",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Gourmet halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=La+Table+d%27H%C3%B4te+Agadir",
-      "priceRange": "€€",
-      "specialite": "Gourmet halal",
-      "nombreAvis": 1077,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Pure Passion",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Brunch moderne halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Pure+Passion+Agadir",
-      "priceRange": "€€",
-      "specialite": "Brunch moderne halal",
-      "nombreAvis": 1565,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Tikka Café Agadir",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Indien halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Tikka+Caf%C3%A9+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Indien halal",
-      "nombreAvis": 2150,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Sushishop Agadir",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Agadir",
-      "description": "Japonais halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Sushishop+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Japonais halal",
-      "nombreAvis": 362,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Chinatown Agadir",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Agadir",
-      "description": "Chinois halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Chinatown+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Chinois halal",
-      "nombreAvis": 1446,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Restaurant Marina",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Agadir",
-      "description": "Port de plaisance à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Marina+Agadir",
-      "priceRange": "€€",
-      "specialite": "Port de plaisance",
-      "nombreAvis": 1135,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Ao Nhà",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Agadir",
-      "description": "Vietnamien halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Ao+Nh%C3%A0+Agadir",
-      "priceRange": "€€",
-      "specialite": "Vietnamien halal",
-      "nombreAvis": 1460,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Agadir Halal BBQ",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Agadir",
-      "description": "Barbecue à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Agadir+Halal+BBQ+Agadir",
-      "priceRange": "€€",
-      "specialite": "Barbecue",
-      "nombreAvis": 2382,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Fish & Chips Agadir",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Poissons atlantique à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Fish+%26+Chips+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Poissons atlantique",
-      "nombreAvis": 583,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Port Halal Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Port de pêche à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Port+Halal+Seafood+Agadir",
-      "priceRange": "€€",
-      "specialite": "Port de pêche",
-      "nombreAvis": 523,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Boulangerie Pâtisserie Abdi",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Agadir",
-      "description": "Tradition à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Boulangerie+P%C3%A2tisserie+Abdi+Agadir",
-      "priceRange": "€€",
-      "specialite": "Tradition",
-      "nombreAvis": 334,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Café Tafarnout",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Berbère à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Tafarnout+Agadir",
-      "priceRange": "€€",
-      "specialite": "Berbère",
-      "nombreAvis": 1146,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Chez Mama",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Marocain populaire à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Mama+Agadir",
-      "priceRange": "€",
-      "specialite": "Marocain populaire",
-      "nombreAvis": 510,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Bleu de Fez",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Agadir",
-      "description": "Marocain Agadir à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Bleu+de+Fez+Agadir",
-      "priceRange": "€€",
-      "specialite": "Marocain agadir",
-      "nombreAvis": 1067,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Le Mirador",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Vue panoramique à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Mirador+Agadir",
-      "priceRange": "€€",
-      "specialite": "Vue panoramique",
-      "nombreAvis": 595,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "La Villa Blanche",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Agadir",
-      "description": "Blanc et élégant à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=La+Villa+Blanche+Agadir",
-      "priceRange": "€€€€",
-      "specialite": "Blanc et élégant",
-      "nombreAvis": 1604,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Restaurant Atlas",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Agadir",
-      "description": "Marocain standard à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Atlas+Agadir",
-      "priceRange": "€",
-      "specialite": "Marocain standard",
-      "nombreAvis": 2537,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "La Palmeraie Agadir",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Agadir",
-      "description": "Jardin luxuriant à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=La+Palmeraie+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Jardin luxuriant",
-      "nombreAvis": 1117,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Club Med Agadir Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Agadir",
-      "description": "Resort halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Club+Med+Agadir+Restaurant+Agadir",
-      "priceRange": "€€",
-      "specialite": "Resort halal",
-      "nombreAvis": 2188,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Riu Tikida Beach Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Resort à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Riu+Tikida+Beach+Restaurant+Agadir",
-      "priceRange": "€€",
-      "specialite": "Resort",
-      "nombreAvis": 1153,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Sofitel Agadir Royal Bay Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Agadir",
-      "description": "Gastronomique à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Sofitel+Agadir+Royal+Bay+Restaurant+Agadir",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 488,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Iberostar Agadir Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Resort à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Iberostar+Agadir+Restaurant+Agadir",
-      "priceRange": "€€",
-      "specialite": "Resort",
-      "nombreAvis": 394,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Sol Beach House Agadir",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Resort à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Sol+Beach+House+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Resort",
-      "nombreAvis": 399,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Kenzi Europa Hotel Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Hôtel à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Kenzi+Europa+Hotel+Restaurant+Agadir",
-      "priceRange": "€€",
-      "specialite": "Hôtel",
-      "nombreAvis": 872,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Anezi Tower Hotel Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Hôtel à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Anezi+Tower+Hotel+Restaurant+Agadir",
-      "priceRange": "€€",
-      "specialite": "Hôtel",
-      "nombreAvis": 924,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Pizza Roma Agadir",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Pizza halal à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Pizza+Roma+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Pizza halal",
-      "nombreAvis": 2200,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Burger King Agadir",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Halal Maroc à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+King+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Halal maroc",
-      "nombreAvis": 1422,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "McDonald's Agadir",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Halal Maroc à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Halal maroc",
-      "nombreAvis": 1515,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "KFC Agadir",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Halal Maroc à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=KFC+Agadir+Agadir",
-      "priceRange": "€€",
-      "specialite": "Halal maroc",
-      "nombreAvis": 1227,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Snack Amlou",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Agadir",
-      "description": "Amlou et msemen, bio à Agadir.",
-      "mapsUrl": "https://maps.google.com/?q=Snack+Amlou+Agadir",
-      "priceRange": "€",
-      "specialite": "Amlou et msemen",
-      "nombreAvis": 824,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r35"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m-001",
-      "nom": "Grande Mosquée d'Agadir",
-      "adresse": "Quartier central Agadir",
-      "type": "Grande mosquée",
-      "capacite": 8000,
-      "annee_construction": 1985,
-      "style_architectural": "Marocain moderne",
-      "note": 4.7
-    },
-    {
-      "id": "m-002",
-      "nom": "Mosquée Salam",
-      "adresse": "Secteur touristique",
-      "type": "Mosquée de quartier",
-      "capacite": 2000,
-      "annee_construction": 1990,
-      "style_architectural": "Marocain",
-      "note": 4.4
-    },
-    {
-      "id": "m-003",
-      "nom": "Mosquée Al Fath",
-      "adresse": "Talborjt, Agadir",
-      "type": "Mosquée historique",
-      "capacite": 3000,
-      "annee_construction": 1975,
-      "style_architectural": "Mauresque",
-      "note": 4.5
-    },
-    {
-      "id": "m-004",
-      "nom": "Mosquée Hay Dakhla",
-      "adresse": "Quartier Hay Dakhla",
-      "type": "Mosquée de quartier",
-      "capacite": 1500,
-      "annee_construction": 2000,
-      "style_architectural": "Contemporain",
-      "note": 4.3
-    },
-    {
-      "id": "m-005",
-      "nom": "Mosquée Mohammed VI (Inezgane)",
-      "adresse": "Inezgane",
-      "type": "Grande mosquée",
-      "capacite": 5000,
-      "annee_construction": 2005,
-      "style_architectural": "Royal marocain",
-      "note": 4.8
-    }
-  ],
-  "hotels": [
-    {
-      "id": "h1",
-      "nom": "Sofitel Agadir Royal Bay",
-      "adresse": "Baie d'Agadir",
-      "categorie": "Standard",
-      "prix_nuit": "180–400 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.8,
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 576,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "score": 4.8,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Sofitel+Agadir+Royal+Bay+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
-      "nombreAvis": 1877,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h2",
-      "nom": "Royal Atlas Agadir",
-      "adresse": "Front de mer",
-      "categorie": "Standard",
-      "prix_nuit": "150–320 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.7,
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 564,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "score": 4.7,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Royal+Atlas+Agadir+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
-      "nombreAvis": 2388,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h3",
-      "nom": "Hôtel Riu Palace Tikida Bay",
-      "adresse": "Baie des Palmiers",
-      "categorie": "Standard",
-      "prix_nuit": "120–280 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.5,
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 540,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "score": 4.5,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Riu+Palace+Tikida+Bay+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
-      "nombreAvis": 1940,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h4",
-      "nom": "Ibis Agadir",
-      "adresse": "Ave Mohammed V",
-      "categorie": "Standard",
-      "prix_nuit": "50–120 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": false,
-      "note": 4.2,
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 504,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "score": 4.2,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Ibis+Agadir+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
-      "nombreAvis": 303,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h5",
-      "nom": "Résidence Aqua Fun",
-      "adresse": "Secteur balnéaire",
-      "categorie": "Standard",
-      "prix_nuit": "60–130 €",
-      "halal_friendly": true,
-      "sans_alcool": false,
-      "piscine": true,
-      "note": 4.1,
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 492,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "ONSSA Halal"
-      },
-      "score": 4.1,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=R%C3%A9sidence+Aqua+Fun+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Agadir",
-      "nombreAvis": 1947,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Agadir",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Agadir",
-      "description": "Hébergement halal-friendly à Agadir.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Agadir+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=agadir",
-      "priceRange": "€€€€",
-      "nombreAvis": 1226,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Agadir 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Agadir",
-      "description": "Hébergement halal-friendly à Agadir.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Agadir+0+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=agadir",
-      "priceRange": "€€€€",
-      "nombreAvis": 1076,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Agadir",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Agadir",
-      "description": "Hébergement halal-friendly à Agadir.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Agadir+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=agadir",
-      "priceRange": "€€€",
-      "nombreAvis": 469,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Agadir",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Agadir",
-      "description": "Hébergement halal-friendly à Agadir.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Agadir+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=agadir",
-      "priceRange": "€€€",
-      "nombreAvis": 1368,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Agadir",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Agadir",
-      "description": "Hébergement halal-friendly à Agadir.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Agadir+Agadir",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Agadir&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=agadir",
-      "priceRange": "€€",
-      "nombreAvis": 1655,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Plage d'Agadir (10 km de sable)",
-      "type": "Plage",
-      "duree": "Journée",
-      "prix": "Gratuit",
-      "note": 4.8,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Plage+d%27Agadir+%2810+km+de+sable%29+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+d%27Agadir+%2810+km+de+sable%29+Agadir",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Kasbah d'Agadir Oufella",
-      "type": "Histoire & vue panoramique",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "note": 4.7,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Kasbah+d%27Agadir+Oufella+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kasbah+d%27Agadir+Oufella+Agadir",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Souk El Had (grand marché)",
-      "type": "Shopping & culture",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "note": 4.6,
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Souk+El+Had+%28grand+march%C3%A9%29+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+El+Had+%28grand+march%C3%A9%29+Agadir",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Vallée du Paradis (excursion)",
-      "type": "Nature & randonnée",
-      "duree": "Journée",
-      "prix": "200–400 MAD par personne",
-      "note": 4.8,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e+du+Paradis+%28excursion%29+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vall%C3%A9e+du+Paradis+%28excursion%29+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a5",
-      "nom": "Taroudant (ville ancienne, 90 km)",
-      "type": "Excursion culturelle",
-      "duree": "Journée",
-      "prix": "Transport variable",
-      "note": 4.7,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Taroudant+%28ville+ancienne%2C+90+km%29+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Taroudant+%28ville+ancienne%2C+90+km%29+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a6",
-      "nom": "Crocoparc (parc de crocodiles)",
-      "type": "Nature & famille",
-      "duree": "2h",
-      "prix": "80 MAD adulte",
-      "note": 4.3,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Crocoparc+%28parc+de+crocodiles%29+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Crocoparc+%28parc+de+crocodiles%29+Agadir",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a7",
-      "nom": "Randonée dans l'Anti-Atlas",
-      "type": "Randonnée",
-      "duree": "Journée à 3 jours",
-      "prix": "Variable",
-      "note": 4.7,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Randon%C3%A9e+dans+l%27Anti-Atlas+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Randon%C3%A9e+dans+l%27Anti-Atlas+Agadir",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a8",
-      "nom": "Surf et sports nautiques",
-      "type": "Sport",
-      "duree": "2h",
-      "prix": "150–300 MAD cours",
-      "note": 4.5,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Surf+et+sports+nautiques+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Surf+et+sports+nautiques+Agadir",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Agadir",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Agadir+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand marché central de Agadir",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Agadir+Agadir",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Agadir",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Agadir+Agadir",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Musée de la ville de Agadir",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Agadir+Agadir",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Food tour halal de Agadir",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Agadir+Agadir",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Hammam traditionnel de Agadir",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Agadir+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Mosquée historique de Agadir",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Agadir+Agadir",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Parc et jardins de Agadir",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Agadir+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Agadir",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Agadir+Agadir",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Agadir",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Agadir+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Agadir+Agadir",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Quartier historique de Agadir 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Agadir+10+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Agadir+10+Agadir",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Grand marché central de Agadir 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Agadir+11+Agadir",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Agadir+11+Agadir",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "codeISO": "MA",
-  "image": "https://images.unsplash.com/photo-1710092538995-4af0c11a3f3c?w=1600&q=80",
-  "continent": "Afrique",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Agadir — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1710092538995-4af0c11a3f3c?w=1600&q=80",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Agadir",
-      "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Agadir",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Agadir+Agadir",
-      "capacite": 4699,
-      "anneeConstruction": 1959,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 30.4278,
-        "lng": -9.5981
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Agadir",
-      "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Agadir",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Agadir+Agadir",
-      "capacite": 1268,
-      "anneeConstruction": 1948,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 30.4278,
-        "lng": -9.5981
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Agadir",
-      "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Agadir",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Agadir+Agadir",
-      "capacite": 2419,
-      "anneeConstruction": 1979,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 30.4278,
-        "lng": -9.5981
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Agadir",
-      "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Agadir",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Agadir+Agadir",
-      "capacite": 2640,
-      "anneeConstruction": 1880,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 30.4278,
-        "lng": -9.5981
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Agadir",
-      "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Agadir",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Agadir+Agadir",
-      "capacite": 2085,
-      "anneeConstruction": 1945,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 30.4278,
-        "lng": -9.5981
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Agadir",
-      "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Agadir",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Agadir+Agadir",
-      "capacite": 5490,
-      "anneeConstruction": 1970,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 30.4278,
-        "lng": -9.5981
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Agadir",
-      "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Agadir",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Agadir+Agadir",
-      "capacite": 5835,
-      "anneeConstruction": 2015,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 30.4278,
-        "lng": -9.5981
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "La Scala Agadir",
-      "Sofitel Agadir Royal Bay Restaurant",
-      "Ao Nhà",
-      "Little Switzerland Agadir",
-      "Chinatown Agadir"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Le Jardin d'Agadir",
-      "Little Switzerland Agadir",
-      "Mezzo di Pasta",
-      "Tikka Café Agadir",
-      "Chinatown Agadir"
-    ],
-    "incontournables": [
-      "Restaurant Atlas",
-      "Mezzo di Pasta",
-      "Agadir Halal BBQ",
-      "Pizza Roma Agadir",
-      "Club Med Agadir Restaurant"
-    ],
-    "pepitesCachees": [
-      "Iberostar Agadir Restaurant"
-    ],
-    "idealFamille": [
-      "Le Jardin d'Agadir",
-      "Restaurant Jour et Nuit",
-      "Little Switzerland Agadir",
-      "Mezzo di Pasta",
-      "La Table d'Hôte"
-    ],
-    "gastronomique": [
-      "La Scala Agadir",
-      "La Villa Blanche",
-      "Sofitel Agadir Royal Bay Restaurant"
-    ],
-    "ouvertNuit": [
-      "Little Switzerland Agadir",
-      "Mezzo di Pasta",
-      "Agadir Halal BBQ"
-    ],
-    "vueExceptionnelle": [
-      "Fish & Chips Agadir",
-      "Port Halal Seafood"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Agadir",
+   "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Agadir",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Agadir+Agadir",
+   "capacite": 2085,
+   "anneeConstruction": 1945,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 30.4278,
+    "lng": -9.5981
+   }
   },
-  "halalScore": 8.2
+  {
+   "nom": "Mosquée Al-Fath de Agadir",
+   "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Agadir",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Agadir+Agadir",
+   "capacite": 5490,
+   "anneeConstruction": 1970,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 30.4278,
+    "lng": -9.5981
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Agadir",
+   "description": "Mosquée fréquentée de Agadir, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Agadir",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Agadir+Agadir",
+   "capacite": 5835,
+   "anneeConstruction": 2015,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 30.4278,
+    "lng": -9.5981
+   }
+  }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "La Scala Agadir",
+   "Sofitel Agadir Royal Bay Restaurant",
+   "Ao Nhà",
+   "Little Switzerland Agadir",
+   "Chinatown Agadir"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Le Jardin d'Agadir",
+   "Little Switzerland Agadir",
+   "Mezzo di Pasta",
+   "Tikka Café Agadir",
+   "Chinatown Agadir"
+  ],
+  "incontournables": [
+   "Restaurant Atlas",
+   "Mezzo di Pasta",
+   "Agadir Halal BBQ",
+   "Pizza Roma Agadir",
+   "Club Med Agadir Restaurant"
+  ],
+  "pepitesCachees": [
+   "Iberostar Agadir Restaurant"
+  ],
+  "idealFamille": [
+   "Le Jardin d'Agadir",
+   "Restaurant Jour et Nuit",
+   "Little Switzerland Agadir",
+   "Mezzo di Pasta",
+   "La Table d'Hôte"
+  ],
+  "gastronomique": [
+   "La Scala Agadir",
+   "La Villa Blanche",
+   "Sofitel Agadir Royal Bay Restaurant"
+  ],
+  "ouvertNuit": [
+   "Little Switzerland Agadir",
+   "Mezzo di Pasta",
+   "Agadir Halal BBQ"
+  ],
+  "vueExceptionnelle": [
+   "Fish & Chips Agadir",
+   "Port Halal Seafood"
+  ]
+ },
+ "halalScore": 8.2
 }

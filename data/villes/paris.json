@@ -1,2494 +1,2505 @@
 {
-  "slug": "paris",
-  "nom": "Paris",
-  "pays": "France",
-  "pays_slug": "france",
-  "region": "Europe de l'Ouest",
-  "coordonnees": {
+ "slug": "paris",
+ "nom": "Paris",
+ "pays": "France",
+ "pays_slug": "france",
+ "region": "Europe de l'Ouest",
+ "coordonnees": {
+  "lat": 48.8566,
+  "lng": 2.3522
+ },
+ "score_halal": 4,
+ "description": "Paris abrite la plus grande communauté musulmane d'Europe occidentale avec plus de 1,7 million de musulmans. La ville lumière offre une scène halal exceptionnelle.",
+ "image_hero": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&q=80",
+ "image_alt": "Tour Eiffel illuminée au coucher du soleil sur la Seine",
+ "meta_title": "Paris Halal — Restaurants, Mosquées & Guide Complet 2026",
+ "meta_description": "Guide complet Paris halal 2026 : meilleurs restaurants halal, mosquées, quartiers musulmans.",
+ "statistiques": {
+  "mosquees": 87,
+  "restaurants_halal": 3800,
+  "hotels_halal": 45,
+  "habitants_musulmans_pct": 15,
+  "hotels": 15
+ },
+ "infos_pratiques": {
+  "langue": "Français",
+  "monnaie": "Euro (EUR)",
+  "meilleure_periode": "Avril–Juin, Septembre–Octobre",
+  "appel_priere": "Applications (Muslim Pro, Athan) — pas d'appel public",
+  "nourriture_halal": "Très abondante dans les 10e, 18e, 19e, 20e arrondissements",
+  "alcool": "Omniprésent — vigilance dans les restaurants non-halal",
+  "tenue": "Liberté de tenue",
+  "securite": "Normale — vigilance dans les zones touristiques"
+ },
+ "restaurants": [
+  {
+   "nom": "La Médina",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Marocain gastronomique dans le 17e.",
+   "mapsUrl": "https://maps.google.com/?q=La+M%C3%A9dina+Paris",
+   "priceRange": "€€€",
+   "specialite": "Marocain gastronomique dans le 17e",
+   "nombreAvis": 2128,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Dar Mima",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Tajines premium dans le 5e.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Mima+Paris",
+   "priceRange": "€€€",
+   "specialite": "Tajines premium dans le 5e",
+   "nombreAvis": 2079,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Chez Omar",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Couscous mythique depuis 1970 dans le 3e.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Omar+Paris",
+   "priceRange": "€€",
+   "specialite": "Couscous mythique depuis 1970 dans le 3e",
+   "nombreAvis": 2181,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Mansouria",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Cuisine fassi de Fatéma Hal dans le 11e.",
+   "mapsUrl": "https://maps.google.com/?q=Mansouria+Paris",
+   "priceRange": "€€€",
+   "specialite": "Cuisine fassi de Fatéma Hal dans le 11e",
+   "nombreAvis": 1030,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Liza",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Libanais contemporain dans le 2e.",
+   "mapsUrl": "https://maps.google.com/?q=Liza+Paris",
+   "priceRange": "€€€",
+   "specialite": "Libanais contemporain dans le 2e",
+   "nombreAvis": 2787,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Al Diwan",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Libanais depuis 1981 dans le 8e.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Diwan+Paris",
+   "priceRange": "€€€",
+   "specialite": "Libanais depuis 1981 dans le 8e",
+   "nombreAvis": 2082,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Comptoir Libanais",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Chaîne libanaise premium.",
+   "mapsUrl": "https://maps.google.com/?q=Comptoir+Libanais+Paris",
+   "priceRange": "€€",
+   "specialite": "Chaîne libanaise premium",
+   "nombreAvis": 138,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Maison de l'Inde",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Indien gastronomique dans le 14e.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+de+l%27Inde+Paris",
+   "priceRange": "€€€",
+   "specialite": "Indien gastronomique dans le 14e",
+   "nombreAvis": 872,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Jaipur Café",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Indien premium dans le 6e.",
+   "mapsUrl": "https://maps.google.com/?q=Jaipur+Caf%C3%A9+Paris",
+   "priceRange": "€€",
+   "specialite": "Indien premium dans le 6e",
+   "nombreAvis": 1439,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Indra",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Indien raffiné depuis 1963 dans le 8e.",
+   "mapsUrl": "https://maps.google.com/?q=Indra+Paris",
+   "priceRange": "€€€",
+   "specialite": "Indien raffiné depuis 1963 dans le 8e",
+   "nombreAvis": 769,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Anarkali",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Indien du Passage Brady, 10e.",
+   "mapsUrl": "https://maps.google.com/?q=Anarkali+Paris",
+   "priceRange": "€€",
+   "specialite": "Indien du Passage Brady, 10e",
+   "nombreAvis": 1880,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Chez Marianne",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Falafels et mezze au Marais.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Marianne+Paris",
+   "priceRange": "€€",
+   "specialite": "Falafels et mezze au Marais",
+   "nombreAvis": 868,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Mi-Va-Mi",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Falafel star du Marais.",
+   "mapsUrl": "https://maps.google.com/?q=Mi-Va-Mi+Paris",
+   "priceRange": "€",
+   "specialite": "Falafel star du Marais",
+   "nombreAvis": 1531,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "404",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Marocain branché dans le 3e.",
+   "mapsUrl": "https://maps.google.com/?q=404+Paris",
+   "priceRange": "€€€",
+   "specialite": "Marocain branché dans le 3e",
+   "nombreAvis": 803,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Al Mounia",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Marocain depuis 1968 dans le 16e.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Mounia+Paris",
+   "priceRange": "€€€",
+   "specialite": "Marocain depuis 1968 dans le 16e",
+   "nombreAvis": 1489,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Timgad",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Algérien gastronomique dans le 17e.",
+   "mapsUrl": "https://maps.google.com/?q=Timgad+Paris",
+   "priceRange": "€€€",
+   "specialite": "Algérien gastronomique dans le 17e",
+   "nombreAvis": 808,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Le Caroubier",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Cuisine berbère dans le 15e.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Caroubier+Paris",
+   "priceRange": "€€",
+   "specialite": "Cuisine berbère dans le 15e",
+   "nombreAvis": 1531,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Bosphore",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Turc gastronomique dans le 16e.",
+   "mapsUrl": "https://maps.google.com/?q=Bosphore+Paris",
+   "priceRange": "€€€",
+   "specialite": "Turc gastronomique dans le 16e",
+   "nombreAvis": 369,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Anatolie",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Kebab et mezze dans le 11e.",
+   "mapsUrl": "https://maps.google.com/?q=Anatolie+Paris",
+   "priceRange": "€€",
+   "specialite": "Kebab et mezze dans le 11e",
+   "nombreAvis": 2289,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Nanashi",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Bento japonais halal-friendly dans le 3e.",
+   "mapsUrl": "https://maps.google.com/?q=Nanashi+Paris",
+   "priceRange": "€€",
+   "specialite": "Bento japonais halal-friendly dans le 3e",
+   "nombreAvis": 2087,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Higuma",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Ramen près de l'Opéra.",
+   "mapsUrl": "https://maps.google.com/?q=Higuma+Paris",
+   "priceRange": "€€",
+   "specialite": "Ramen près de l'Opéra",
+   "nombreAvis": 774,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Sapporo",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Ramen halal dans le 9e.",
+   "mapsUrl": "https://maps.google.com/?q=Sapporo+Paris",
+   "priceRange": "€€",
+   "specialite": "Ramen halal dans le 9e",
+   "nombreAvis": 989,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Waly Fay",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Cuisine d'Afrique de l'Ouest dans le 11e.",
+   "mapsUrl": "https://maps.google.com/?q=Waly+Fay+Paris",
+   "priceRange": "€€",
+   "specialite": "Cuisine d'Afrique de l'Ouest dans le 11e",
+   "nombreAvis": 495,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Le Dakar",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Sénégalais dans le 18e.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Dakar+Paris",
+   "priceRange": "€€",
+   "specialite": "Sénégalais dans le 18e",
+   "nombreAvis": 558,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Big Fernand",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Burger gourmet halal.",
+   "mapsUrl": "https://maps.google.com/?q=Big+Fernand+Paris",
+   "priceRange": "€€",
+   "specialite": "Burger gourmet halal",
+   "nombreAvis": 514,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Blend",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Burger gastronomique halal dans le 2e.",
+   "mapsUrl": "https://maps.google.com/?q=Blend+Paris",
+   "priceRange": "€€",
+   "specialite": "Burger gastronomique halal dans le 2e",
+   "nombreAvis": 1428,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "PNY",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Paris New York burger halal.",
+   "mapsUrl": "https://maps.google.com/?q=PNY+Paris",
+   "priceRange": "€€",
+   "specialite": "Paris New York burger halal",
+   "nombreAvis": 1740,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Homer Lobster",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Burger de homard halal au Marais.",
+   "mapsUrl": "https://maps.google.com/?q=Homer+Lobster+Paris",
+   "priceRange": "€€",
+   "specialite": "Burger de homard halal au Marais",
+   "nombreAvis": 2161,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Wild & the Moon Paris",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Vegan organic dans le 3e.",
+   "mapsUrl": "https://maps.google.com/?q=Wild+%26+the+Moon+Paris+Paris",
+   "priceRange": "€€",
+   "specialite": "Vegan organic dans le 3e",
+   "nombreAvis": 2318,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Supernature",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Cuisine bio dans le 2e.",
+   "mapsUrl": "https://maps.google.com/?q=Supernature+Paris",
+   "priceRange": "€€",
+   "specialite": "Cuisine bio dans le 2e",
+   "nombreAvis": 468,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r30"
+  },
+  {
+   "id": "r31",
+   "nom": "Le Diamant Rose",
+   "cuisine": "Gastronomique franco-maghrebine",
+   "adresse": "8 Rue Myrha, 75018 Paris",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.7,
+   "avis_count": 2400,
+   "fourchette_prix": "€€€",
+   "horaires": "12h–14h30, 19h–22h30",
+   "specialites": [
+    "Agneau de lait rôti",
+    "Couscous royal",
+    "Pastilla au pigeon"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 2400,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "Mosquée de Paris / AVS"
+   },
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Le+Diamant+Rose+Paris",
+   "nombreAvis": 2591,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "id": "r32",
+   "nom": "Tintilou",
+   "cuisine": "Cuisine française halal",
+   "adresse": "37 Rue de Montreuil, 75011 Paris",
+   "halal_certifie": true,
+   "sans_alcool": false,
+   "note": 4.6,
+   "avis_count": 1800,
+   "fourchette_prix": "€€",
+   "horaires": "12h–14h, 19h30–22h",
+   "specialites": [
+    "Entrecote charolaise",
+    "Tartare de bœuf",
+    "Blanquette de veau"
+   ],
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 1800,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "Mosquée de Paris / AVS"
+   },
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Tintilou+Paris",
+   "nombreAvis": 2040,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "id": "r33",
+   "nom": "Noura",
+   "cuisine": "Libanaise",
+   "adresse": "21 Avenue Marceau, 75016 Paris",
+   "halal_certifie": true,
+   "sans_alcool": false,
+   "note": 4.5,
+   "avis_count": 3200,
+   "fourchette_prix": "€€",
+   "horaires": "12h–23h30",
+   "specialites": [
+    "Mezze variés",
+    "Chich taouk",
+    "Kibbé au four"
+   ],
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 3200,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "Mosquée de Paris / AVS"
+   },
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Noura+Paris",
+   "nombreAvis": 1964,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ]
+  },
+  {
+   "id": "r34",
+   "nom": "Breakfast in America",
+   "cuisine": "Américaine halal",
+   "adresse": "17 Rue des Écoles, 75005 Paris",
+   "halal_certifie": true,
+   "sans_alcool": false,
+   "note": 4.4,
+   "avis_count": 5600,
+   "fourchette_prix": "€",
+   "horaires": "8h30–22h30",
+   "specialites": [
+    "Burger halal",
+    "Pancakes",
+    "Bacon de dinde"
+   ],
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 5600,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "Mosquée de Paris / AVS"
+   },
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.4,
+   "priceRange": "€",
+   "mapsUrl": "https://maps.google.com/?q=Breakfast+in+America+Paris",
+   "nombreAvis": 1842,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "L'As du Fallafel",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Rue des Rosiers, 75004",
+   "description": "Le falafel le plus réputé de Paris.",
+   "mapsUrl": "https://maps.google.com/?q=L%27As+du+Fallafel+Paris",
+   "priceRange": "€",
+   "id": "r35",
+   "nombreAvis": 1655,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Chez Hamadi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "75005",
+   "description": "Couscous et tajines tunisiens conviviaux.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Hamadi+Paris",
+   "priceRange": "€€",
+   "id": "r36",
+   "nombreAvis": 1578,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Urfa Dürüm",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Faubourg Saint-Denis",
+   "description": "Dürüm kurde grillé au feu de bois.",
+   "mapsUrl": "https://maps.google.com/?q=Urfa+D%C3%BCr%C3%BCm+Paris",
+   "priceRange": "€",
+   "id": "r37",
+   "nombreAvis": 1799,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Le Camondo",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "75008",
+   "description": "Cuisine levantine raffinée près du parc Monceau.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Camondo+Paris",
+   "priceRange": "€€€",
+   "id": "r38",
+   "nombreAvis": 1376,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "nom": "Gemini Halal Burger",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "75011",
+   "description": "Smash burgers halal très populaires.",
+   "mapsUrl": "https://maps.google.com/?q=Gemini+Halal+Burger+Paris",
+   "priceRange": "€€",
+   "id": "r39",
+   "nombreAvis": 417,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Sadarnac",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "75020",
+   "description": "Bistro de saison, options végétariennes.",
+   "mapsUrl": "https://maps.google.com/?q=Sadarnac+Paris",
+   "priceRange": "€€",
+   "id": "r40",
+   "nombreAvis": 1973,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "veggie"
+   ]
+  },
+  {
+   "nom": "Mosquée de Paris — Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Rue Geoffroy, 75005",
+   "description": "Thé à la menthe et cuisine nord-africaine.",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+Paris+%E2%80%94+Restaurant+Paris",
+   "priceRange": "€€",
+   "id": "r41",
+   "nombreAvis": 1595,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Le Comptoir Halal",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Paris",
+   "description": "Adresse traditionnel local appréciée à Paris, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Paris",
+   "priceRange": "€€",
+   "specialite": "Spécialité du pays",
+   "nombreAvis": 3642,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Beit Beirut",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Paris",
+   "description": "Adresse libanais & levant appréciée à Paris, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Paris",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 667,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Shahi Tandoor",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Paris",
+   "description": "Adresse indien & pakistani appréciée à Paris, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Paris",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 2021,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Dar Marrakech",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Paris",
+   "description": "Adresse marocain appréciée à Paris, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Paris",
+   "priceRange": "€€",
+   "specialite": "Tajine",
+   "nombreAvis": 705,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Anatolia Grill",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Paris",
+   "description": "Adresse turc appréciée à Paris, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Paris",
+   "priceRange": "€€",
+   "specialite": "İskender kebab",
+   "nombreAvis": 1095,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Halal Burger Co",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Paris",
+   "description": "Adresse burgers & fast-food appréciée à Paris, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Halal+Burger+Co+Paris",
+   "priceRange": "€€",
+   "specialite": "Smash burger halal",
+   "nombreAvis": 729,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Sakura Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Paris",
+   "description": "Adresse japonais & asiatique appréciée à Paris, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Paris",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 703,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Saveurs Gastronomiques",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Paris",
+   "description": "Adresse gastronomique appréciée à Paris, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saveurs+Gastronomiques+Paris",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation",
+   "nombreAvis": 911,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Maison du Thé",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Paris",
+   "description": "Adresse pâtisserie & café appréciée à Paris, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+du+Th%C3%A9+Paris",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries orientales",
+   "nombreAvis": 3354,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r50"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m1",
+   "nom": "Grande Mosquée de Paris",
+   "type": "Mosquée historique",
+   "adresse": "2bis Place du Puits de l'Ermite, 75005",
+   "description": "La plus ancienne et préstigieuse mosquée de France, fondée en 1926. Architecture hispano-mauresque, café maure, hammam.",
+   "note": 4.8,
+   "acces_non_musulmans": true,
+   "capacite": 1000
+  },
+  {
+   "id": "m2",
+   "nom": "Mosquée de la Villette",
+   "type": "Mosquée de quartier",
+   "adresse": "53 Rue Petit, 75019 Paris",
+   "description": "L'une des plus grandes mosquées de Paris, moderne et bien équipée.",
+   "note": 4.6,
+   "acces_non_musulmans": false,
+   "capacite": 2500
+  },
+  {
+   "id": "m3",
+   "nom": "Mosquée Omar",
+   "type": "Mosquée de quartier",
+   "adresse": "7 Rue de Jean Pierre Timbaud, 75011",
+   "description": "Mosquée bien fréquentée du 11e arrondissement.",
+   "note": 4.5,
+   "acces_non_musulmans": false,
+   "capacite": 1200
+  }
+ ],
+ "hotels": [
+  {
+   "id": "h1",
+   "nom": "Hôtel Marignan Champs-Élysées",
+   "type": "Hôtel de luxe",
+   "adresse": "12 Rue de Marignan, 75008 Paris",
+   "etoiles": 5,
+   "halal_certifie": false,
+   "sans_alcool": false,
+   "piscine_privee": false,
+   "note": 4.8,
+   "avis_count": 1200,
+   "prix_nuit_min": 550,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 3,
+    "sourceViande": 3,
+    "certifie": false,
+    "sansAlcool": false,
+    "proprietaireMusulman": false,
+    "avisMusulmans": 1200,
+    "derniereVerification": "2026-05",
+    "badge": "À VÉRIFIER"
+   },
+   "categorie": "Luxe",
+   "score": 4.8,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Marignan+Champs-%C3%89lys%C3%A9es+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
+   "nombreAvis": 1759,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 48.8684803,
+   "lng": 2.3066591
+  },
+  {
+   "id": "h2",
+   "nom": "Hôtel Elysées Opéra",
+   "type": "Hôtel",
+   "adresse": "1 Rue Gomboust, 75001 Paris",
+   "etoiles": 4,
+   "halal_certifie": false,
+   "sans_alcool": false,
+   "piscine_privee": false,
+   "note": 4.5,
+   "avis_count": 1800,
+   "prix_nuit_min": 180,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 3,
+    "sourceViande": 3,
+    "certifie": false,
+    "sansAlcool": false,
+    "proprietaireMusulman": false,
+    "avisMusulmans": 1800,
+    "derniereVerification": "2026-05",
+    "badge": "À VÉRIFIER"
+   },
+   "categorie": "Standard",
+   "score": 4.5,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Elys%C3%A9es+Op%C3%A9ra+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
+   "nombreAvis": 1433,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 48.8814368,
+   "lng": 2.3244527
+  },
+  {
+   "id": "h3",
+   "nom": "ibis Paris Gare du Nord",
+   "type": "Hôtel",
+   "adresse": "16 Rue de Saint-Quentin, 75010 Paris",
+   "etoiles": 3,
+   "halal_certifie": false,
+   "sans_alcool": false,
+   "piscine_privee": false,
+   "note": 4.2,
+   "avis_count": 6400,
+   "prix_nuit_min": 80,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 3,
+    "sourceViande": 3,
+    "certifie": false,
+    "sansAlcool": false,
+    "proprietaireMusulman": false,
+    "avisMusulmans": 6400,
+    "derniereVerification": "2026-05",
+    "badge": "À VÉRIFIER"
+   },
+   "categorie": "Standard",
+   "score": 4.2,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=ibis+Paris+Gare+du+Nord+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
+   "nombreAvis": 2452,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Le Royal Monceau",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Avenue Hoche, 75008",
+   "description": "Palace contemporain près des Champs-Élysées.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Le+Royal+Monceau+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
+   "priceRange": "€€€€",
+   "id": "h4",
+   "nombreAvis": 2096,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 48.875549,
+   "lng": 2.29986
+  },
+  {
+   "nom": "Hôtel Dupond-Smith",
+   "categorie": "Riad & Boutique",
+   "score": 4.6,
+   "adresse": "Le Marais, 75004",
+   "description": "Boutique-hôtel intime au cœur du Marais.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Dupond-Smith+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
+   "priceRange": "€€€",
+   "id": "h5",
+   "nombreAvis": 830,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 48.8578917,
+   "lng": 2.3572127
+  },
+  {
+   "nom": "Hôtel Magenta 38",
+   "categorie": "Budget",
+   "score": 4.3,
+   "adresse": "Gare du Nord, 75010",
+   "description": "Hôtel propre et central, bon rapport qualité-prix.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Magenta+38+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
+   "priceRange": "€€",
+   "id": "h6",
+   "nombreAvis": 790,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 48.8721738,
+   "lng": 2.3602738
+  },
+  {
+   "nom": "Grand Plaza Paris",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Paris",
+   "description": "Hébergement halal-friendly à Paris.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Paris+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
+   "priceRange": "€€€€",
+   "nombreAvis": 465,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Paris",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Paris",
+   "description": "Hébergement halal-friendly à Paris.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Paris+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
+   "priceRange": "€€€",
+   "nombreAvis": 2475,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Paris",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Paris",
+   "description": "Hébergement halal-friendly à Paris.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Paris+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
+   "priceRange": "€€€",
+   "nombreAvis": 2460,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Paris",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Paris",
+   "description": "Hébergement halal-friendly à Paris.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Paris+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
+   "priceRange": "€€",
+   "nombreAvis": 2051,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  },
+  {
+   "nom": "Seaside Resort Paris",
+   "categorie": "Resort & Spa",
+   "score": 4.5,
+   "adresse": "Paris",
+   "description": "Hébergement halal-friendly à Paris.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Paris+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
+   "priceRange": "€€€€",
+   "nombreAvis": 2312,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h11"
+  },
+  {
+   "nom": "Family Suites Paris",
+   "categorie": "Appartement",
+   "score": 4.1,
+   "adresse": "Paris",
+   "description": "Hébergement halal-friendly à Paris.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Family+Suites+Paris+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
+   "priceRange": "€€",
+   "nombreAvis": 218,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "cuisine-equipee",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  },
+  {
+   "nom": "Grand Plaza Paris 6",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Paris",
+   "description": "Hébergement halal-friendly à Paris.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Paris+6+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
+   "priceRange": "€€€€",
+   "nombreAvis": 185,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h13"
+  },
+  {
+   "nom": "City Comfort Paris 7",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Paris",
+   "description": "Hébergement halal-friendly à Paris.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Paris+7+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
+   "priceRange": "€€€",
+   "nombreAvis": 1424,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14"
+  },
+  {
+   "nom": "Boutique Dar Paris 8",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Paris",
+   "description": "Hébergement halal-friendly à Paris.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Paris+8+Paris",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
+   "priceRange": "€€€",
+   "nombreAvis": 2284,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Tour Eiffel & Trocadéro",
+   "type": "Tourisme & Vue",
+   "description": "L'incontournable absolu de Paris. Vue à 360° depuis le 3e étage.",
+   "duree": "2–3h",
+   "prix": "11–28€",
+   "tags": [
+    "incontournable",
+    "vue",
+    "famille"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Tour+Eiffel+%26+Trocad%C3%A9ro+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+Eiffel+%26+Trocad%C3%A9ro+Paris",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a2",
+   "nom": "Musée du Louvre",
+   "type": "Culture & Art",
+   "description": "Le plus grand musée du monde. Département des antiquités islamiques exceptionnel.",
+   "duree": "3–5h",
+   "prix": "17€",
+   "tags": [
+    "culture",
+    "art islamique",
+    "incontournable"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+du+Louvre+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+du+Louvre+Paris",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a3",
+   "nom": "Quartier du Marais",
+   "type": "Balade",
+   "description": "Place des Vosges, hôtels particuliers, boutiques. Nombreux restaurants halal.",
+   "duree": "2–3h",
+   "prix": "Gratuit",
+   "tags": [
+    "balade",
+    "histoire",
+    "shopping"
+   ],
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+du+Marais+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+du+Marais+Paris",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a4",
+   "nom": "Croisière sur la Seine",
+   "type": "Détente",
+   "description": "Paris depuis la Seine. Notre-Dame, Louvre, Tour Eiffel scintillante la nuit.",
+   "duree": "1h",
+   "prix": "17€",
+   "tags": [
+    "romantique",
+    "famille",
+    "soir"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+la+Seine+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Croisi%C3%A8re+sur+la+Seine+Paris",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grande Mosquée de Paris",
+   "categorie": "Religieux & Spirituel",
+   "description": "Joyau hispano-mauresque de 1926, patio et salon de thé.",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Paris+Paris",
+   "id": "a5",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+de+Paris+Paris",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Institut du Monde Arabe",
+   "categorie": "Histoire & Culture",
+   "description": "Architecture de Jean Nouvel, art et terrasse panoramique.",
+   "duree": "1-2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Institut+du+Monde+Arabe+Paris",
+   "id": "a6",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Institut+du+Monde+Arabe+Paris",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée du Louvre — Arts de l'Islam",
+   "categorie": "Histoire & Culture",
+   "description": "Collection d'art islamique sous la verrière dorée.",
+   "duree": "2-3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+du+Louvre+%E2%80%94+Arts+de+l%27Islam+Paris",
+   "id": "a7",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+du+Louvre+%E2%80%94+Arts+de+l%27Islam+Paris",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Tour Eiffel",
+   "categorie": "Histoire & Culture",
+   "description": "Le monument emblématique de Paris.",
+   "duree": "1-2h",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Tour+Eiffel+Paris",
+   "id": "a8",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+Eiffel+Paris",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier de Belleville",
+   "categorie": "Gastronomie",
+   "description": "Quartier cosmopolite, nombreuses adresses halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+de+Belleville+Paris",
+   "id": "a9",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Belleville+Paris",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Jardin du Luxembourg",
+   "categorie": "Nature & Plein air",
+   "description": "Grand jardin à la française.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Jardin+du+Luxembourg+Paris",
+   "id": "a10",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jardin+du+Luxembourg+Paris",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Paris",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Paris+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Paris+Paris",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Paris",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Paris+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Paris+Paris",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Paris",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Paris+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Paris+Paris",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Paris",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Paris+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Paris+Paris",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Paris",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Paris+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Paris+Paris",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Paris",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Paris+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Paris+Paris",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Paris",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Paris+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Paris+Paris",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Paris",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Paris+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Paris+Paris",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Paris",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Paris+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Paris+Paris",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Paris",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Paris+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Paris+Paris",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Quartier historique de Paris 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Paris+10+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Paris+10+Paris",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Grand marché central de Paris 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Paris+11+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Paris+11+Paris",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Paris 12",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Paris+12+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Paris+12+Paris",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Musée de la ville de Paris 13",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Paris+13+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Paris+13+Paris",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Food tour halal de Paris 14",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Paris+14+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Paris+14+Paris",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Hammam traditionnel de Paris 15",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Paris+15+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Paris+15+Paris",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Mosquée historique de Paris 16",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Paris+16+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Paris+16+Paris",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Parc et jardins de Paris 17",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Paris+17+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Paris+17+Paris",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Paris 18",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Paris+18+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Paris+18+Paris",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Paris 19",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Paris+19+Paris",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Paris+19+Paris",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "road_trips": [
+  {
+   "id": "rt1",
+   "titre": "Paris → Versailles → Loire",
+   "duree": "2 jours",
+   "distance_km": 250,
+   "etapes": [
+    "Paris",
+    "Versailles",
+    "Blois",
+    "Chambord"
+   ],
+   "description": "Les châteaux de la Loire en passant par Versailles.",
+   "conseils_halal": "Épiceries halal dans toutes les grandes villes de la Loire.",
+   "budget_estime": "150–350€/personne"
+  },
+  {
+   "id": "rt2",
+   "titre": "Paris → Bruxelles",
+   "duree": "2 jours",
+   "distance_km": 320,
+   "etapes": [
+    "Paris",
+    "Bruxelles"
+   ],
+   "description": "2h en Thalys pour Bruxelles, capitale de l'Europe avec une scène halal développée.",
+   "conseils_halal": "Bruxelles très halal-friendly — Molenbeek regorge de restaurants halal certifiés.",
+   "budget_estime": "200–400€/personne"
+  }
+ ],
+ "voyages_par_type": {
+  "en_couple": {
+   "intro": "Paris, ville de l'amour, est particulièrement accessible aux couples musulmans.",
+   "top_experiences": [
+    "Dîner vue Tour Eiffel",
+    "Promenade nocturne Seine",
+    "Louvre late opening",
+    "Week-end Versailles"
+   ],
+   "conseils": "Réservez les restaurants halal gastronomiques à l'avance.",
+   "hotels_recommandes": [
+    "Hôtel Marignan Champs-Élysées",
+    "Hôtel Elysées Opéra"
+   ]
+  },
+  "en_famille": {
+   "intro": "Paris idéale en famille : musées gratuits enfants, Disneyland à 45 min, nourriture halal abondante.",
+   "top_experiences": [
+    "Disneyland Paris",
+    "Cité des Sciences",
+    "Tour Eiffel",
+    "Parc Astérix"
+   ],
+   "conseils": "18e, 19e, 20e pour les meilleures options halal budget.",
+   "hotels_recommandes": [
+    "ibis Paris Gare du Nord"
+   ]
+  },
+  "entre_amis": {
+   "intro": "Paris entre amis : musées, shopping, gastronomie halal internationale.",
+   "top_experiences": [
+    "Shopping Marais",
+    "Louvre ensemble",
+    "Soirée Iftar",
+    "Escape game"
+   ],
+   "conseils": "Goutte d'Or pour les saveurs authentiques.",
+   "hotels_recommandes": [
+    "ibis Paris Gare du Nord"
+   ]
+  },
+  "voyage_solo": {
+   "intro": "Paris en solo : musées, cafés, promenades autonomes. Très sûre.",
+   "top_experiences": [
+    "Louvre solo",
+    "Café du 5e",
+    "Grande Mosquée vendredi",
+    "Marché d'Aligre"
+   ],
+   "conseils": "Pass Navigo semaine (22€) pour explorer à son rythme.",
+   "hotels_recommandes": [
+    "ibis Paris Gare du Nord"
+   ]
+  },
+  "voyage_spirituel": {
+   "intro": "Paris : Grande Mosquée (1926), art islamique Louvre, Institut du Monde Arabe.",
+   "top_experiences": [
+    "Prière Grande Mosquée",
+    "Galerie islamique Louvre",
+    "Institut du Monde Arabe",
+    "Ramadan dans le 18e"
+   ],
+   "conseils": "Le Ramadan dans le 18e est une expérience culturelle et spirituelle extraordinaire.",
+   "hotels_recommandes": [
+    "ibis Paris Gare du Nord"
+   ]
+  }
+ },
+ "articles_lies": [],
+ "villes_proches": [
+  "bruxelles",
+  "amsterdam",
+  "londres"
+ ],
+ "codeISO": "FR",
+ "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&q=80",
+ "continent": "Europe",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Paris — Halal Trust Score 4/5.",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Paris",
+   "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Paris",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Paris+Paris",
+   "capacite": 6133,
+   "anneeConstruction": 1933,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 48.8566,
     "lng": 2.3522
+   }
   },
-  "score_halal": 4,
-  "description": "Paris abrite la plus grande communauté musulmane d'Europe occidentale avec plus de 1,7 million de musulmans. La ville lumière offre une scène halal exceptionnelle.",
-  "image_hero": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&q=80",
-  "image_alt": "Tour Eiffel illuminée au coucher du soleil sur la Seine",
-  "meta_title": "Paris Halal — Restaurants, Mosquées & Guide Complet 2026",
-  "meta_description": "Guide complet Paris halal 2026 : meilleurs restaurants halal, mosquées, quartiers musulmans.",
-  "statistiques": {
-    "mosquees": 87,
-    "restaurants_halal": 3800,
-    "hotels_halal": 45,
-    "habitants_musulmans_pct": 15
+  {
+   "nom": "Grande Mosquée de Paris",
+   "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Paris",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Paris+Paris",
+   "capacite": 4837,
+   "anneeConstruction": 1897,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.8566,
+    "lng": 2.3522
+   }
   },
-  "infos_pratiques": {
-    "langue": "Français",
-    "monnaie": "Euro (EUR)",
-    "meilleure_periode": "Avril–Juin, Septembre–Octobre",
-    "appel_priere": "Applications (Muslim Pro, Athan) — pas d'appel public",
-    "nourriture_halal": "Très abondante dans les 10e, 18e, 19e, 20e arrondissements",
-    "alcool": "Omniprésent — vigilance dans les restaurants non-halal",
-    "tenue": "Liberté de tenue",
-    "securite": "Normale — vigilance dans les zones touristiques"
+  {
+   "nom": "Mosquée Al-Noor de Paris",
+   "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Paris",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Paris+Paris",
+   "capacite": 6712,
+   "anneeConstruction": 1932,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.8566,
+    "lng": 2.3522
+   }
   },
-  "restaurants": [
-    {
-      "nom": "La Médina",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Marocain gastronomique dans le 17e.",
-      "mapsUrl": "https://maps.google.com/?q=La+M%C3%A9dina+Paris",
-      "priceRange": "€€€",
-      "specialite": "Marocain gastronomique dans le 17e",
-      "nombreAvis": 2128,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Dar Mima",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Tajines premium dans le 5e.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Mima+Paris",
-      "priceRange": "€€€",
-      "specialite": "Tajines premium dans le 5e",
-      "nombreAvis": 2079,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Chez Omar",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Couscous mythique depuis 1970 dans le 3e.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Omar+Paris",
-      "priceRange": "€€",
-      "specialite": "Couscous mythique depuis 1970 dans le 3e",
-      "nombreAvis": 2181,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Mansouria",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Cuisine fassi de Fatéma Hal dans le 11e.",
-      "mapsUrl": "https://maps.google.com/?q=Mansouria+Paris",
-      "priceRange": "€€€",
-      "specialite": "Cuisine fassi de Fatéma Hal dans le 11e",
-      "nombreAvis": 1030,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Liza",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Libanais contemporain dans le 2e.",
-      "mapsUrl": "https://maps.google.com/?q=Liza+Paris",
-      "priceRange": "€€€",
-      "specialite": "Libanais contemporain dans le 2e",
-      "nombreAvis": 2787,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Al Diwan",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Libanais depuis 1981 dans le 8e.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Diwan+Paris",
-      "priceRange": "€€€",
-      "specialite": "Libanais depuis 1981 dans le 8e",
-      "nombreAvis": 2082,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Comptoir Libanais",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Chaîne libanaise premium.",
-      "mapsUrl": "https://maps.google.com/?q=Comptoir+Libanais+Paris",
-      "priceRange": "€€",
-      "specialite": "Chaîne libanaise premium",
-      "nombreAvis": 138,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Maison de l'Inde",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Indien gastronomique dans le 14e.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+de+l%27Inde+Paris",
-      "priceRange": "€€€",
-      "specialite": "Indien gastronomique dans le 14e",
-      "nombreAvis": 872,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Jaipur Café",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Indien premium dans le 6e.",
-      "mapsUrl": "https://maps.google.com/?q=Jaipur+Caf%C3%A9+Paris",
-      "priceRange": "€€",
-      "specialite": "Indien premium dans le 6e",
-      "nombreAvis": 1439,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Indra",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Indien raffiné depuis 1963 dans le 8e.",
-      "mapsUrl": "https://maps.google.com/?q=Indra+Paris",
-      "priceRange": "€€€",
-      "specialite": "Indien raffiné depuis 1963 dans le 8e",
-      "nombreAvis": 769,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Anarkali",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Indien du Passage Brady, 10e.",
-      "mapsUrl": "https://maps.google.com/?q=Anarkali+Paris",
-      "priceRange": "€€",
-      "specialite": "Indien du Passage Brady, 10e",
-      "nombreAvis": 1880,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Chez Marianne",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Falafels et mezze au Marais.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Marianne+Paris",
-      "priceRange": "€€",
-      "specialite": "Falafels et mezze au Marais",
-      "nombreAvis": 868,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Mi-Va-Mi",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Falafel star du Marais.",
-      "mapsUrl": "https://maps.google.com/?q=Mi-Va-Mi+Paris",
-      "priceRange": "€",
-      "specialite": "Falafel star du Marais",
-      "nombreAvis": 1531,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "404",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Marocain branché dans le 3e.",
-      "mapsUrl": "https://maps.google.com/?q=404+Paris",
-      "priceRange": "€€€",
-      "specialite": "Marocain branché dans le 3e",
-      "nombreAvis": 803,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Al Mounia",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Marocain depuis 1968 dans le 16e.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Mounia+Paris",
-      "priceRange": "€€€",
-      "specialite": "Marocain depuis 1968 dans le 16e",
-      "nombreAvis": 1489,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Timgad",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Algérien gastronomique dans le 17e.",
-      "mapsUrl": "https://maps.google.com/?q=Timgad+Paris",
-      "priceRange": "€€€",
-      "specialite": "Algérien gastronomique dans le 17e",
-      "nombreAvis": 808,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Le Caroubier",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Cuisine berbère dans le 15e.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Caroubier+Paris",
-      "priceRange": "€€",
-      "specialite": "Cuisine berbère dans le 15e",
-      "nombreAvis": 1531,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Bosphore",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Turc gastronomique dans le 16e.",
-      "mapsUrl": "https://maps.google.com/?q=Bosphore+Paris",
-      "priceRange": "€€€",
-      "specialite": "Turc gastronomique dans le 16e",
-      "nombreAvis": 369,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Anatolie",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Kebab et mezze dans le 11e.",
-      "mapsUrl": "https://maps.google.com/?q=Anatolie+Paris",
-      "priceRange": "€€",
-      "specialite": "Kebab et mezze dans le 11e",
-      "nombreAvis": 2289,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Nanashi",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Bento japonais halal-friendly dans le 3e.",
-      "mapsUrl": "https://maps.google.com/?q=Nanashi+Paris",
-      "priceRange": "€€",
-      "specialite": "Bento japonais halal-friendly dans le 3e",
-      "nombreAvis": 2087,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Higuma",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Ramen près de l'Opéra.",
-      "mapsUrl": "https://maps.google.com/?q=Higuma+Paris",
-      "priceRange": "€€",
-      "specialite": "Ramen près de l'Opéra",
-      "nombreAvis": 774,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Sapporo",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Ramen halal dans le 9e.",
-      "mapsUrl": "https://maps.google.com/?q=Sapporo+Paris",
-      "priceRange": "€€",
-      "specialite": "Ramen halal dans le 9e",
-      "nombreAvis": 989,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Waly Fay",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Cuisine d'Afrique de l'Ouest dans le 11e.",
-      "mapsUrl": "https://maps.google.com/?q=Waly+Fay+Paris",
-      "priceRange": "€€",
-      "specialite": "Cuisine d'Afrique de l'Ouest dans le 11e",
-      "nombreAvis": 495,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Le Dakar",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Sénégalais dans le 18e.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Dakar+Paris",
-      "priceRange": "€€",
-      "specialite": "Sénégalais dans le 18e",
-      "nombreAvis": 558,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Big Fernand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Burger gourmet halal.",
-      "mapsUrl": "https://maps.google.com/?q=Big+Fernand+Paris",
-      "priceRange": "€€",
-      "specialite": "Burger gourmet halal",
-      "nombreAvis": 514,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Blend",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Burger gastronomique halal dans le 2e.",
-      "mapsUrl": "https://maps.google.com/?q=Blend+Paris",
-      "priceRange": "€€",
-      "specialite": "Burger gastronomique halal dans le 2e",
-      "nombreAvis": 1428,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "PNY",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Paris New York burger halal.",
-      "mapsUrl": "https://maps.google.com/?q=PNY+Paris",
-      "priceRange": "€€",
-      "specialite": "Paris New York burger halal",
-      "nombreAvis": 1740,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Homer Lobster",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Burger de homard halal au Marais.",
-      "mapsUrl": "https://maps.google.com/?q=Homer+Lobster+Paris",
-      "priceRange": "€€",
-      "specialite": "Burger de homard halal au Marais",
-      "nombreAvis": 2161,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Wild & the Moon Paris",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Vegan organic dans le 3e.",
-      "mapsUrl": "https://maps.google.com/?q=Wild+%26+the+Moon+Paris+Paris",
-      "priceRange": "€€",
-      "specialite": "Vegan organic dans le 3e",
-      "nombreAvis": 2318,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Supernature",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Cuisine bio dans le 2e.",
-      "mapsUrl": "https://maps.google.com/?q=Supernature+Paris",
-      "priceRange": "€€",
-      "specialite": "Cuisine bio dans le 2e",
-      "nombreAvis": 468,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r30"
-    },
-    {
-      "id": "r31",
-      "nom": "Le Diamant Rose",
-      "cuisine": "Gastronomique franco-maghrebine",
-      "adresse": "8 Rue Myrha, 75018 Paris",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.7,
-      "avis_count": 2400,
-      "fourchette_prix": "€€€",
-      "horaires": "12h–14h30, 19h–22h30",
-      "specialites": [
-        "Agneau de lait rôti",
-        "Couscous royal",
-        "Pastilla au pigeon"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 2400,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "Mosquée de Paris / AVS"
-      },
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Le+Diamant+Rose+Paris",
-      "nombreAvis": 2591,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "id": "r32",
-      "nom": "Tintilou",
-      "cuisine": "Cuisine française halal",
-      "adresse": "37 Rue de Montreuil, 75011 Paris",
-      "halal_certifie": true,
-      "sans_alcool": false,
-      "note": 4.6,
-      "avis_count": 1800,
-      "fourchette_prix": "€€",
-      "horaires": "12h–14h, 19h30–22h",
-      "specialites": [
-        "Entrecote charolaise",
-        "Tartare de bœuf",
-        "Blanquette de veau"
-      ],
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 1800,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "Mosquée de Paris / AVS"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Tintilou+Paris",
-      "nombreAvis": 2040,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r33",
-      "nom": "Noura",
-      "cuisine": "Libanaise",
-      "adresse": "21 Avenue Marceau, 75016 Paris",
-      "halal_certifie": true,
-      "sans_alcool": false,
-      "note": 4.5,
-      "avis_count": 3200,
-      "fourchette_prix": "€€",
-      "horaires": "12h–23h30",
-      "specialites": [
-        "Mezze variés",
-        "Chich taouk",
-        "Kibbé au four"
-      ],
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 3200,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "Mosquée de Paris / AVS"
-      },
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Noura+Paris",
-      "nombreAvis": 1964,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ]
-    },
-    {
-      "id": "r34",
-      "nom": "Breakfast in America",
-      "cuisine": "Américaine halal",
-      "adresse": "17 Rue des Écoles, 75005 Paris",
-      "halal_certifie": true,
-      "sans_alcool": false,
-      "note": 4.4,
-      "avis_count": 5600,
-      "fourchette_prix": "€",
-      "horaires": "8h30–22h30",
-      "specialites": [
-        "Burger halal",
-        "Pancakes",
-        "Bacon de dinde"
-      ],
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 5600,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "Mosquée de Paris / AVS"
-      },
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "priceRange": "€",
-      "mapsUrl": "https://maps.google.com/?q=Breakfast+in+America+Paris",
-      "nombreAvis": 1842,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "L'As du Fallafel",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Rue des Rosiers, 75004",
-      "description": "Le falafel le plus réputé de Paris.",
-      "mapsUrl": "https://maps.google.com/?q=L%27As+du+Fallafel+Paris",
-      "priceRange": "€",
-      "id": "r35",
-      "nombreAvis": 1655,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Chez Hamadi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "75005",
-      "description": "Couscous et tajines tunisiens conviviaux.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Hamadi+Paris",
-      "priceRange": "€€",
-      "id": "r36",
-      "nombreAvis": 1578,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Urfa Dürüm",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Faubourg Saint-Denis",
-      "description": "Dürüm kurde grillé au feu de bois.",
-      "mapsUrl": "https://maps.google.com/?q=Urfa+D%C3%BCr%C3%BCm+Paris",
-      "priceRange": "€",
-      "id": "r37",
-      "nombreAvis": 1799,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Le Camondo",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "75008",
-      "description": "Cuisine levantine raffinée près du parc Monceau.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Camondo+Paris",
-      "priceRange": "€€€",
-      "id": "r38",
-      "nombreAvis": 1376,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Gemini Halal Burger",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "75011",
-      "description": "Smash burgers halal très populaires.",
-      "mapsUrl": "https://maps.google.com/?q=Gemini+Halal+Burger+Paris",
-      "priceRange": "€€",
-      "id": "r39",
-      "nombreAvis": 417,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Sadarnac",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "75020",
-      "description": "Bistro de saison, options végétariennes.",
-      "mapsUrl": "https://maps.google.com/?q=Sadarnac+Paris",
-      "priceRange": "€€",
-      "id": "r40",
-      "nombreAvis": 1973,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ]
-    },
-    {
-      "nom": "Mosquée de Paris — Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Rue Geoffroy, 75005",
-      "description": "Thé à la menthe et cuisine nord-africaine.",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+Paris+%E2%80%94+Restaurant+Paris",
-      "priceRange": "€€",
-      "id": "r41",
-      "nombreAvis": 1595,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Le Comptoir Halal",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Paris",
-      "description": "Adresse traditionnel local appréciée à Paris, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Paris",
-      "priceRange": "€€",
-      "specialite": "Spécialité du pays",
-      "nombreAvis": 3642,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Beit Beirut",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Paris",
-      "description": "Adresse libanais & levant appréciée à Paris, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Paris",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 667,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Shahi Tandoor",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Paris",
-      "description": "Adresse indien & pakistani appréciée à Paris, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Paris",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 2021,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Dar Marrakech",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Paris",
-      "description": "Adresse marocain appréciée à Paris, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Paris",
-      "priceRange": "€€",
-      "specialite": "Tajine",
-      "nombreAvis": 705,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Anatolia Grill",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Paris",
-      "description": "Adresse turc appréciée à Paris, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Paris",
-      "priceRange": "€€",
-      "specialite": "İskender kebab",
-      "nombreAvis": 1095,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Halal Burger Co",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Paris",
-      "description": "Adresse burgers & fast-food appréciée à Paris, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Burger+Co+Paris",
-      "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 729,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Sakura Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Paris",
-      "description": "Adresse japonais & asiatique appréciée à Paris, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Paris",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 703,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Saveurs Gastronomiques",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Paris",
-      "description": "Adresse gastronomique appréciée à Paris, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saveurs+Gastronomiques+Paris",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 911,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Maison du Thé",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Paris",
-      "description": "Adresse pâtisserie & café appréciée à Paris, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+du+Th%C3%A9+Paris",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries orientales",
-      "nombreAvis": 3354,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r50"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m1",
-      "nom": "Grande Mosquée de Paris",
-      "type": "Mosquée historique",
-      "adresse": "2bis Place du Puits de l'Ermite, 75005",
-      "description": "La plus ancienne et préstigieuse mosquée de France, fondée en 1926. Architecture hispano-mauresque, café maure, hammam.",
-      "note": 4.8,
-      "acces_non_musulmans": true,
-      "capacite": 1000
-    },
-    {
-      "id": "m2",
-      "nom": "Mosquée de la Villette",
-      "type": "Mosquée de quartier",
-      "adresse": "53 Rue Petit, 75019 Paris",
-      "description": "L'une des plus grandes mosquées de Paris, moderne et bien équipée.",
-      "note": 4.6,
-      "acces_non_musulmans": false,
-      "capacite": 2500
-    },
-    {
-      "id": "m3",
-      "nom": "Mosquée Omar",
-      "type": "Mosquée de quartier",
-      "adresse": "7 Rue de Jean Pierre Timbaud, 75011",
-      "description": "Mosquée bien fréquentée du 11e arrondissement.",
-      "note": 4.5,
-      "acces_non_musulmans": false,
-      "capacite": 1200
-    }
-  ],
-  "hotels": [
-    {
-      "id": "h1",
-      "nom": "Hôtel Marignan Champs-Élysées",
-      "type": "Hôtel de luxe",
-      "adresse": "12 Rue de Marignan, 75008 Paris",
-      "etoiles": 5,
-      "halal_certifie": false,
-      "sans_alcool": false,
-      "piscine_privee": false,
-      "note": 4.8,
-      "avis_count": 1200,
-      "prix_nuit_min": 550,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 3.0,
-        "sourceViande": 3,
-        "certifie": false,
-        "sansAlcool": false,
-        "proprietaireMusulman": false,
-        "avisMusulmans": 1200,
-        "derniereVerification": "2026-05",
-        "badge": "À VÉRIFIER"
-      },
-      "categorie": "Luxe",
-      "score": 4.8,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Marignan+Champs-%C3%89lys%C3%A9es+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
-      "nombreAvis": 1759,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h2",
-      "nom": "Hôtel Elysées Opéra",
-      "type": "Hôtel",
-      "adresse": "1 Rue Gomboust, 75001 Paris",
-      "etoiles": 4,
-      "halal_certifie": false,
-      "sans_alcool": false,
-      "piscine_privee": false,
-      "note": 4.5,
-      "avis_count": 1800,
-      "prix_nuit_min": 180,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 3.0,
-        "sourceViande": 3,
-        "certifie": false,
-        "sansAlcool": false,
-        "proprietaireMusulman": false,
-        "avisMusulmans": 1800,
-        "derniereVerification": "2026-05",
-        "badge": "À VÉRIFIER"
-      },
-      "categorie": "Standard",
-      "score": 4.5,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Elys%C3%A9es+Op%C3%A9ra+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
-      "nombreAvis": 1433,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h3",
-      "nom": "ibis Paris Gare du Nord",
-      "type": "Hôtel",
-      "adresse": "16 Rue de Saint-Quentin, 75010 Paris",
-      "etoiles": 3,
-      "halal_certifie": false,
-      "sans_alcool": false,
-      "piscine_privee": false,
-      "note": 4.2,
-      "avis_count": 6400,
-      "prix_nuit_min": 80,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 3.0,
-        "sourceViande": 3,
-        "certifie": false,
-        "sansAlcool": false,
-        "proprietaireMusulman": false,
-        "avisMusulmans": 6400,
-        "derniereVerification": "2026-05",
-        "badge": "À VÉRIFIER"
-      },
-      "categorie": "Standard",
-      "score": 4.2,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=ibis+Paris+Gare+du+Nord+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
-      "nombreAvis": 2452,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Le Royal Monceau",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Avenue Hoche, 75008",
-      "description": "Palace contemporain près des Champs-Élysées.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Le+Royal+Monceau+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
-      "priceRange": "€€€€",
-      "id": "h4",
-      "nombreAvis": 2096,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Hôtel Dupond-Smith",
-      "categorie": "Riad & Boutique",
-      "score": 4.6,
-      "adresse": "Le Marais, 75004",
-      "description": "Boutique-hôtel intime au cœur du Marais.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Dupond-Smith+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
-      "priceRange": "€€€",
-      "id": "h5",
-      "nombreAvis": 830,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Hôtel Magenta 38",
-      "categorie": "Budget",
-      "score": 4.3,
-      "adresse": "Gare du Nord, 75010",
-      "description": "Hôtel propre et central, bon rapport qualité-prix.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Magenta+38+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Paris",
-      "priceRange": "€€",
-      "id": "h6",
-      "nombreAvis": 790,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Paris",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Paris",
-      "description": "Hébergement halal-friendly à Paris.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Paris+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
-      "priceRange": "€€€€",
-      "nombreAvis": 465,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Paris",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Paris",
-      "description": "Hébergement halal-friendly à Paris.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Paris+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
-      "priceRange": "€€€",
-      "nombreAvis": 2475,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Paris",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Paris",
-      "description": "Hébergement halal-friendly à Paris.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Paris+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
-      "priceRange": "€€€",
-      "nombreAvis": 2460,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Paris",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Paris",
-      "description": "Hébergement halal-friendly à Paris.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Paris+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
-      "priceRange": "€€",
-      "nombreAvis": 2051,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Seaside Resort Paris",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Paris",
-      "description": "Hébergement halal-friendly à Paris.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Paris+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
-      "priceRange": "€€€€",
-      "nombreAvis": 2312,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Family Suites Paris",
-      "categorie": "Appartement",
-      "score": 4.1,
-      "adresse": "Paris",
-      "description": "Hébergement halal-friendly à Paris.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Family+Suites+Paris+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
-      "priceRange": "€€",
-      "nombreAvis": 218,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "cuisine-equipee",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Grand Plaza Paris 6",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Paris",
-      "description": "Hébergement halal-friendly à Paris.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Paris+6+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
-      "priceRange": "€€€€",
-      "nombreAvis": 185,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "City Comfort Paris 7",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Paris",
-      "description": "Hébergement halal-friendly à Paris.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Paris+7+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
-      "priceRange": "€€€",
-      "nombreAvis": 1424,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Boutique Dar Paris 8",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Paris",
-      "description": "Hébergement halal-friendly à Paris.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Paris+8+Paris",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Paris&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=paris",
-      "priceRange": "€€€",
-      "nombreAvis": 2284,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Tour Eiffel & Trocadéro",
-      "type": "Tourisme & Vue",
-      "description": "L'incontournable absolu de Paris. Vue à 360° depuis le 3e étage.",
-      "duree": "2–3h",
-      "prix": "11–28€",
-      "tags": [
-        "incontournable",
-        "vue",
-        "famille"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Tour+Eiffel+%26+Trocad%C3%A9ro+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+Eiffel+%26+Trocad%C3%A9ro+Paris",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Musée du Louvre",
-      "type": "Culture & Art",
-      "description": "Le plus grand musée du monde. Département des antiquités islamiques exceptionnel.",
-      "duree": "3–5h",
-      "prix": "17€",
-      "tags": [
-        "culture",
-        "art islamique",
-        "incontournable"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+du+Louvre+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+du+Louvre+Paris",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Quartier du Marais",
-      "type": "Balade",
-      "description": "Place des Vosges, hôtels particuliers, boutiques. Nombreux restaurants halal.",
-      "duree": "2–3h",
-      "prix": "Gratuit",
-      "tags": [
-        "balade",
-        "histoire",
-        "shopping"
-      ],
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+du+Marais+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+du+Marais+Paris",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Croisière sur la Seine",
-      "type": "Détente",
-      "description": "Paris depuis la Seine. Notre-Dame, Louvre, Tour Eiffel scintillante la nuit.",
-      "duree": "1h",
-      "prix": "17€",
-      "tags": [
-        "romantique",
-        "famille",
-        "soir"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+la+Seine+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Croisi%C3%A8re+sur+la+Seine+Paris",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grande Mosquée de Paris",
-      "categorie": "Religieux & Spirituel",
-      "description": "Joyau hispano-mauresque de 1926, patio et salon de thé.",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Paris+Paris",
-      "id": "a5",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+de+Paris+Paris",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Institut du Monde Arabe",
-      "categorie": "Histoire & Culture",
-      "description": "Architecture de Jean Nouvel, art et terrasse panoramique.",
-      "duree": "1-2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Institut+du+Monde+Arabe+Paris",
-      "id": "a6",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Institut+du+Monde+Arabe+Paris",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée du Louvre — Arts de l'Islam",
-      "categorie": "Histoire & Culture",
-      "description": "Collection d'art islamique sous la verrière dorée.",
-      "duree": "2-3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+du+Louvre+%E2%80%94+Arts+de+l%27Islam+Paris",
-      "id": "a7",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+du+Louvre+%E2%80%94+Arts+de+l%27Islam+Paris",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Tour Eiffel",
-      "categorie": "Histoire & Culture",
-      "description": "Le monument emblématique de Paris.",
-      "duree": "1-2h",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Tour+Eiffel+Paris",
-      "id": "a8",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+Eiffel+Paris",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier de Belleville",
-      "categorie": "Gastronomie",
-      "description": "Quartier cosmopolite, nombreuses adresses halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+de+Belleville+Paris",
-      "id": "a9",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Belleville+Paris",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Jardin du Luxembourg",
-      "categorie": "Nature & Plein air",
-      "description": "Grand jardin à la française.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Jardin+du+Luxembourg+Paris",
-      "id": "a10",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jardin+du+Luxembourg+Paris",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Paris",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Paris+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Paris+Paris",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Paris",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Paris+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Paris+Paris",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Paris",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Paris+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Paris+Paris",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Paris",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Paris+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Paris+Paris",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Paris",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Paris+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Paris+Paris",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Paris",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Paris+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Paris+Paris",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Paris",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Paris+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Paris+Paris",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Paris",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Paris+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Paris+Paris",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Paris",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Paris+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Paris+Paris",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Paris",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Paris+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Paris+Paris",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Quartier historique de Paris 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Paris+10+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Paris+10+Paris",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Grand marché central de Paris 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Paris+11+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Paris+11+Paris",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Paris 12",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Paris+12+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Paris+12+Paris",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Musée de la ville de Paris 13",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Paris+13+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Paris+13+Paris",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Food tour halal de Paris 14",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Paris+14+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Paris+14+Paris",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Hammam traditionnel de Paris 15",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Paris+15+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Paris+15+Paris",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Mosquée historique de Paris 16",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Paris+16+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Paris+16+Paris",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Parc et jardins de Paris 17",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Paris+17+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Paris+17+Paris",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Paris 18",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Paris+18+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Paris+18+Paris",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Paris 19",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Paris+19+Paris",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Paris+19+Paris",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "road_trips": [
-    {
-      "id": "rt1",
-      "titre": "Paris → Versailles → Loire",
-      "duree": "2 jours",
-      "distance_km": 250,
-      "etapes": [
-        "Paris",
-        "Versailles",
-        "Blois",
-        "Chambord"
-      ],
-      "description": "Les châteaux de la Loire en passant par Versailles.",
-      "conseils_halal": "Épiceries halal dans toutes les grandes villes de la Loire.",
-      "budget_estime": "150–350€/personne"
-    },
-    {
-      "id": "rt2",
-      "titre": "Paris → Bruxelles",
-      "duree": "2 jours",
-      "distance_km": 320,
-      "etapes": [
-        "Paris",
-        "Bruxelles"
-      ],
-      "description": "2h en Thalys pour Bruxelles, capitale de l'Europe avec une scène halal développée.",
-      "conseils_halal": "Bruxelles très halal-friendly — Molenbeek regorge de restaurants halal certifiés.",
-      "budget_estime": "200–400€/personne"
-    }
-  ],
-  "voyages_par_type": {
-    "en_couple": {
-      "intro": "Paris, ville de l'amour, est particulièrement accessible aux couples musulmans.",
-      "top_experiences": [
-        "Dîner vue Tour Eiffel",
-        "Promenade nocturne Seine",
-        "Louvre late opening",
-        "Week-end Versailles"
-      ],
-      "conseils": "Réservez les restaurants halal gastronomiques à l'avance.",
-      "hotels_recommandes": [
-        "Hôtel Marignan Champs-Élysées",
-        "Hôtel Elysées Opéra"
-      ]
-    },
-    "en_famille": {
-      "intro": "Paris idéale en famille : musées gratuits enfants, Disneyland à 45 min, nourriture halal abondante.",
-      "top_experiences": [
-        "Disneyland Paris",
-        "Cité des Sciences",
-        "Tour Eiffel",
-        "Parc Astérix"
-      ],
-      "conseils": "18e, 19e, 20e pour les meilleures options halal budget.",
-      "hotels_recommandes": [
-        "ibis Paris Gare du Nord"
-      ]
-    },
-    "entre_amis": {
-      "intro": "Paris entre amis : musées, shopping, gastronomie halal internationale.",
-      "top_experiences": [
-        "Shopping Marais",
-        "Louvre ensemble",
-        "Soirée Iftar",
-        "Escape game"
-      ],
-      "conseils": "Goutte d'Or pour les saveurs authentiques.",
-      "hotels_recommandes": [
-        "ibis Paris Gare du Nord"
-      ]
-    },
-    "voyage_solo": {
-      "intro": "Paris en solo : musées, cafés, promenades autonomes. Très sûre.",
-      "top_experiences": [
-        "Louvre solo",
-        "Café du 5e",
-        "Grande Mosquée vendredi",
-        "Marché d'Aligre"
-      ],
-      "conseils": "Pass Navigo semaine (22€) pour explorer à son rythme.",
-      "hotels_recommandes": [
-        "ibis Paris Gare du Nord"
-      ]
-    },
-    "voyage_spirituel": {
-      "intro": "Paris : Grande Mosquée (1926), art islamique Louvre, Institut du Monde Arabe.",
-      "top_experiences": [
-        "Prière Grande Mosquée",
-        "Galerie islamique Louvre",
-        "Institut du Monde Arabe",
-        "Ramadan dans le 18e"
-      ],
-      "conseils": "Le Ramadan dans le 18e est une expérience culturelle et spirituelle extraordinaire.",
-      "hotels_recommandes": [
-        "ibis Paris Gare du Nord"
-      ]
-    }
+  {
+   "nom": "Mosquée Al-Salam de Paris",
+   "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Paris",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Paris+Paris",
+   "capacite": 6775,
+   "anneeConstruction": 1975,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.8566,
+    "lng": 2.3522
+   }
   },
-  "articles_lies": [],
-  "villes_proches": [
-    "bruxelles",
-    "amsterdam",
-    "londres"
-  ],
-  "codeISO": "FR",
-  "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1600&q=80",
-  "continent": "Europe",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Paris — Halal Trust Score 4/5.",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Paris",
-      "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Paris",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Paris+Paris",
-      "capacite": 6133,
-      "anneeConstruction": 1933,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.8566,
-        "lng": 2.3522
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Paris",
-      "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Paris",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Paris+Paris",
-      "capacite": 4837,
-      "anneeConstruction": 1897,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.8566,
-        "lng": 2.3522
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Paris",
-      "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Paris",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Paris+Paris",
-      "capacite": 6712,
-      "anneeConstruction": 1932,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.8566,
-        "lng": 2.3522
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Paris",
-      "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Paris",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Paris+Paris",
-      "capacite": 6775,
-      "anneeConstruction": 1975,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.8566,
-        "lng": 2.3522
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Paris",
-      "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Paris",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Paris+Paris",
-      "capacite": 1944,
-      "anneeConstruction": 1924,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.8566,
-        "lng": 2.3522
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Paris",
-      "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Paris",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Paris+Paris",
-      "capacite": 1367,
-      "anneeConstruction": 1927,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.8566,
-        "lng": 2.3522
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Paris",
-      "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Paris",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Paris+Paris",
-      "capacite": 5168,
-      "anneeConstruction": 1988,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.8566,
-        "lng": 2.3522
-      }
-    },
-    {
-      "nom": "Mosquée historique de Paris",
-      "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Paris",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Paris+Paris",
-      "capacite": 4032,
-      "anneeConstruction": 2012,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.8566,
-        "lng": 2.3522
-      }
-    },
-    {
-      "nom": "Mosquée du vendredi de Paris",
-      "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Paris",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Paris+Paris",
-      "capacite": 5177,
-      "anneeConstruction": 1937,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.8566,
-        "lng": 2.3522
-      }
-    },
-    {
-      "nom": "Mosquée Al-Hidaya de Paris",
-      "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Paris",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Paris+Paris",
-      "capacite": 4586,
-      "anneeConstruction": 2006,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.8566,
-        "lng": 2.3522
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Liza",
-      "Le Comptoir Halal",
-      "Maison du Thé",
-      "La Médina",
-      "Chez Omar"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Chez Omar",
-      "Comptoir Libanais",
-      "Jaipur Café",
-      "Anarkali",
-      "Chez Marianne"
-    ],
-    "incontournables": [
-      "Le Comptoir Halal",
-      "Maison du Thé",
-      "Liza",
-      "Le Diamant Rose",
-      "Wild & the Moon Paris"
-    ],
-    "pepitesCachees": [
-      "Comptoir Libanais",
-      "Bosphore"
-    ],
-    "idealFamille": [
-      "La Médina",
-      "Dar Mima",
-      "Chez Omar",
-      "Mansouria",
-      "Liza"
-    ],
-    "gastronomique": [
-      "Le Diamant Rose",
-      "Le Camondo",
-      "Saveurs Gastronomiques"
-    ],
-    "ouvertNuit": [
-      "Liza",
-      "Al Diwan",
-      "Comptoir Libanais"
-    ],
-    "vueExceptionnelle": [
-      "Homer Lobster"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Paris",
+   "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Paris",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Paris+Paris",
+   "capacite": 1944,
+   "anneeConstruction": 1924,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.8566,
+    "lng": 2.3522
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Paris",
+   "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Paris",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Paris+Paris",
+   "capacite": 1367,
+   "anneeConstruction": 1927,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.8566,
+    "lng": 2.3522
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Paris",
+   "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Paris",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Paris+Paris",
+   "capacite": 5168,
+   "anneeConstruction": 1988,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.8566,
+    "lng": 2.3522
+   }
+  },
+  {
+   "nom": "Mosquée historique de Paris",
+   "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Paris",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Paris+Paris",
+   "capacite": 4032,
+   "anneeConstruction": 2012,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.8566,
+    "lng": 2.3522
+   }
+  },
+  {
+   "nom": "Mosquée du vendredi de Paris",
+   "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Paris",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Paris+Paris",
+   "capacite": 5177,
+   "anneeConstruction": 1937,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.8566,
+    "lng": 2.3522
+   }
+  },
+  {
+   "nom": "Mosquée Al-Hidaya de Paris",
+   "description": "Mosquée fréquentée de Paris, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Paris",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Paris+Paris",
+   "capacite": 4586,
+   "anneeConstruction": 2006,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.8566,
+    "lng": 2.3522
+   }
   }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Liza",
+   "Le Comptoir Halal",
+   "Maison du Thé",
+   "La Médina",
+   "Chez Omar"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Chez Omar",
+   "Comptoir Libanais",
+   "Jaipur Café",
+   "Anarkali",
+   "Chez Marianne"
+  ],
+  "incontournables": [
+   "Le Comptoir Halal",
+   "Maison du Thé",
+   "Liza",
+   "Le Diamant Rose",
+   "Wild & the Moon Paris"
+  ],
+  "pepitesCachees": [
+   "Comptoir Libanais",
+   "Bosphore"
+  ],
+  "idealFamille": [
+   "La Médina",
+   "Dar Mima",
+   "Chez Omar",
+   "Mansouria",
+   "Liza"
+  ],
+  "gastronomique": [
+   "Le Diamant Rose",
+   "Le Camondo",
+   "Saveurs Gastronomiques"
+  ],
+  "ouvertNuit": [
+   "Liza",
+   "Al Diwan",
+   "Comptoir Libanais"
+  ],
+  "vueExceptionnelle": [
+   "Homer Lobster"
+  ]
+ }
 }

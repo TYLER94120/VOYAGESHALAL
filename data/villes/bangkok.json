@@ -1,1480 +1,1489 @@
 {
-  "nom": "Bangkok",
-  "pays": "Thaïlande",
-  "slug": "bangkok",
-  "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1400&q=85",
-  "description": "Bangkok cache une vibrante communauté musulmane autour de Ban Krua et Bangrak. Street food halal, marchés et temples en font une étape exotique et abordable.",
-  "descriptionLongue": "Capitale trépidante de la Thaïlande, Bangkok possède des quartiers musulmans historiques comme Ban Krua, fondé par des Chams. Les restaurants halal certifiés y servent currys, roti et khao mok gai (biryani thaï). Entre marchés flottants, temples dorés et centres commerciaux, la ville offre un dépaysement total à petit prix. De nombreuses mosquées jalonnent la métropole.",
-  "halalScore": 7.5,
-  "score_halal": 3.8,
+ "nom": "Bangkok",
+ "pays": "Thaïlande",
+ "slug": "bangkok",
+ "image": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1400&q=85",
+ "description": "Bangkok cache une vibrante communauté musulmane autour de Ban Krua et Bangrak. Street food halal, marchés et temples en font une étape exotique et abordable.",
+ "descriptionLongue": "Capitale trépidante de la Thaïlande, Bangkok possède des quartiers musulmans historiques comme Ban Krua, fondé par des Chams. Les restaurants halal certifiés y servent currys, roti et khao mok gai (biryani thaï). Entre marchés flottants, temples dorés et centres commerciaux, la ville offre un dépaysement total à petit prix. De nombreuses mosquées jalonnent la métropole.",
+ "halalScore": 7.5,
+ "score_halal": 3.8,
+ "mosquees": 200,
+ "population": "10,7 millions",
+ "langue": "Thaï",
+ "monnaie": "Baht thaïlandais (THB)",
+ "fuseau": "UTC+7",
+ "meilleureEpoque": "Novembre à Février",
+ "prixMoyenNuit": "60€",
+ "continent": "Asie",
+ "codeISO": "TH",
+ "pays_slug": "thailande",
+ "region": "Asie du Sud-Est",
+ "meta_title": "Voyage Halal à Bangkok — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Bangkok — Halal Trust Score 7.5/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Bangkok — Halal Trust Score 7.5/10.",
+ "coordonnees": {
+  "lat": 13.7563,
+  "lng": 100.5018
+ },
+ "image_alt": "Vue de Bangkok, Thaïlande",
+ "statistiques": {
   "mosquees": 200,
-  "population": "10,7 millions",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 5,
+  "hotels": 8
+ },
+ "infos_pratiques": {
   "langue": "Thaï",
   "monnaie": "Baht thaïlandais (THB)",
-  "fuseau": "UTC+7",
-  "meilleureEpoque": "Novembre à Février",
-  "prixMoyenNuit": "60€",
-  "continent": "Asie",
-  "codeISO": "TH",
-  "pays_slug": "thailande",
-  "region": "Asie du Sud-Est",
-  "meta_title": "Voyage Halal à Bangkok — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Bangkok — Halal Trust Score 7.5/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Bangkok — Halal Trust Score 7.5/10.",
-  "coordonnees": {
+  "meilleure_periode": "Novembre à Février",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Exemption de visa pour les Français (30 jours)",
+  "vaccins": "Aucun obligatoire (vérifier recommandations)",
+  "transport": "BTS Skytrain, MRT, bateaux-bus, tuk-tuk",
+  "priseElectrique": "Type A/B/C — 220V",
+  "decalageHoraire": "+6h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Shoshana Restaurant",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Bangkok",
+   "description": "Israélien-arabe halal, Khao San à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Shoshana+Restaurant+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Israélien-arabe halal",
+   "nombreAvis": 2671,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Gianni Ristorante",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bangkok",
+   "description": "Italien halal premium à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Gianni+Ristorante+Bangkok",
+   "priceRange": "€€€€",
+   "specialite": "Italien halal premium",
+   "nombreAvis": 937,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Naj",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bangkok",
+   "description": "Thaï gastronomique halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Naj+Bangkok",
+   "priceRange": "€€€€",
+   "specialite": "Thaï gastronomique halal",
+   "nombreAvis": 821,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Sirocco",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Bangkok",
+   "description": "Rooftop panoramique halal-friendly à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Sirocco+Bangkok",
+   "priceRange": "€€€€",
+   "specialite": "Rooftop panoramique halal-friendly",
+   "nombreAvis": 325,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Chef Man",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Bangkok",
+   "description": "Cantonais halal certifié à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Chef+Man+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Cantonais halal certifié",
+   "nombreAvis": 187,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Ruen Mallika",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bangkok",
+   "description": "Thaï royal halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Ruen+Mallika+Bangkok",
+   "priceRange": "€",
+   "specialite": "Thaï royal halal",
+   "nombreAvis": 461,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "D'sens Restaurant",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bangkok",
+   "description": "Français halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=D%27sens+Restaurant+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Français halal",
+   "nombreAvis": 1223,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Le Normandie",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Bangkok",
+   "description": "Français ultra-luxe halal, Mandarin à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Normandie+Bangkok",
+   "priceRange": "€€€€",
+   "specialite": "Français ultra-luxe halal",
+   "nombreAvis": 1134,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "CRU Champagne Bar Bangkok",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Bangkok",
+   "description": "Sans alcool halal-friendly à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=CRU+Champagne+Bar+Bangkok+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Sans alcool halal-friendly",
+   "nombreAvis": 1638,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Muslim Restaurant Silom",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bangkok",
+   "description": "Thaï musulman à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Muslim+Restaurant+Silom+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Thaï musulman",
+   "nombreAvis": 1990,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Siam Halal",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bangkok",
+   "description": "Thaï halal certifié à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Siam+Halal+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Thaï halal certifié",
+   "nombreAvis": 447,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Krua Aroy",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bangkok",
+   "description": "Thaï populaire halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Krua+Aroy+Bangkok",
+   "priceRange": "€",
+   "specialite": "Thaï populaire halal",
+   "nombreAvis": 1199,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Kay Kay's Kitchen",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bangkok",
+   "description": "Thaï maison halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Kay+Kay%27s+Kitchen+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Thaï maison halal",
+   "nombreAvis": 1218,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Bangkok Muslim Food",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Bangkok",
+   "description": "Communauté à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Bangkok+Muslim+Food+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Communauté",
+   "nombreAvis": 436,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Pak Nam Seafood",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bangkok",
+   "description": "Fruits de mer halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Pak+Nam+Seafood+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Fruits de mer halal",
+   "nombreAvis": 911,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Isaan Corner",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Bangkok",
+   "description": "Cuisine nord-est thaï halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Isaan+Corner+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Cuisine nord-est thaï halal",
+   "nombreAvis": 2471,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Pad See Ew Muslim",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Bangkok",
+   "description": "Nouilles halal populaires à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Pad+See+Ew+Muslim+Bangkok",
+   "priceRange": "€",
+   "specialite": "Nouilles halal populaires",
+   "nombreAvis": 123,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Green Garden Vegetarian",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Bangkok",
+   "description": "Végétarien halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Garden+Vegetarian+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Végétarien halal",
+   "nombreAvis": 172,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "veggie"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Govinda's Bangkok",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Bangkok",
+   "description": "Végétarien halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Govinda%27s+Bangkok+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Végétarien halal",
+   "nombreAvis": 703,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "veggie"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Indian Hut Bangkok",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Bangkok",
+   "description": "Indien halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Indian+Hut+Bangkok+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Indien halal",
+   "nombreAvis": 82,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Rang Mahal Bangkok",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Bangkok",
+   "description": "Indien gastronomique à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Rang+Mahal+Bangkok+Bangkok",
+   "priceRange": "€€€€",
+   "specialite": "Indien gastronomique",
+   "nombreAvis": 1075,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Passage To India",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Bangkok",
+   "description": "Indien premium halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Passage+To+India+Bangkok",
+   "priceRange": "€€€€",
+   "specialite": "Indien premium halal",
+   "nombreAvis": 899,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Mughal Room",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bangkok",
+   "description": "Moghol-indien halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Mughal+Room+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Moghol-indien halal",
+   "nombreAvis": 2205,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Madras New Woodlands",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Bangkok",
+   "description": "Indien végé à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Madras+New+Woodlands+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Indien végé",
+   "nombreAvis": 3012,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Turkish Restaurant Bangkok",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Bangkok",
+   "description": "Turc halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Turkish+Restaurant+Bangkok+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Turc halal",
+   "nombreAvis": 336,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Ali Baba Turkish",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bangkok",
+   "description": "Kebab turc à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Ali+Baba+Turkish+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Kebab turc",
+   "nombreAvis": 1067,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Bosphorus Bangkok",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bangkok",
+   "description": "Ottoman à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Bosphorus+Bangkok+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Ottoman",
+   "nombreAvis": 659,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Mosque Area Bang Rak",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Bangkok",
+   "description": "Halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Mosque+Area+Bang+Rak+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Halal",
+   "nombreAvis": 2434,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Haroon Mosque Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Bangkok",
+   "description": "Halal mosquée à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Haroon+Mosque+Caf%C3%A9+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Halal mosquée",
+   "nombreAvis": 532,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Ton Son Road Halal",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Bangkok",
+   "description": "Quartier musulman à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Ton+Son+Road+Halal+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Quartier musulman",
+   "nombreAvis": 3574,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Korea House Bangkok",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Bangkok",
+   "description": "Coréen halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Korea+House+Bangkok+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Coréen halal",
+   "nombreAvis": 1383,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Todai Thailand",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bangkok",
+   "description": "Coréen-japonais halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Todai+Thailand+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Coréen-japonais halal",
+   "nombreAvis": 1796,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Yoshinoya Thailand",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Bangkok",
+   "description": "Japonais halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Yoshinoya+Thailand+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Japonais halal",
+   "nombreAvis": 2107,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "MK Restaurant",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bangkok",
+   "description": "Shabu shabu halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=MK+Restaurant+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Shabu shabu halal",
+   "nombreAvis": 2158,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Coca Restaurant",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Bangkok",
+   "description": "Fondue thaï halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Coca+Restaurant+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Fondue thaï halal",
+   "nombreAvis": 585,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "The Pizza Company Thailand",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bangkok",
+   "description": "Halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=The+Pizza+Company+Thailand+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Halal",
+   "nombreAvis": 749,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "KFC Thailand",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Bangkok",
+   "description": "Halal certifié à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=KFC+Thailand+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Halal certifié",
+   "nombreAvis": 2836,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "McDonald's Thailand",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Bangkok",
+   "description": "Halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Thailand+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Halal",
+   "nombreAvis": 3109,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Burger King Thailand",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Bangkok",
+   "description": "Halal à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+King+Thailand+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Halal",
+   "nombreAvis": 962,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Krua Thai Halal",
+   "type": "Thaï",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bangkok",
+   "description": "Thaï maison à Bangkok.",
+   "mapsUrl": "https://maps.google.com/?q=Krua+Thai+Halal+Bangkok",
+   "priceRange": "€€",
+   "specialite": "Thaï maison",
+   "nombreAvis": 1641,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r40"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Mandarin Oriental Bangkok",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Riverside",
+   "description": "Palace historique au bord du Chao Phraya",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Bangkok+Bangkok",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "nombreAvis": 286,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 13.7238854,
+   "lng": 100.5141549
+  },
+  {
+   "nom": "Novotel Bangkok Sukhumvit",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Sukhumvit",
+   "description": "Hôtel central proche du BTS",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Novotel+Bangkok+Sukhumvit+Bangkok",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
+   "priceRange": "€€€",
+   "id": "h2",
+   "nombreAvis": 1574,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 13.7394044,
+   "lng": 100.5533461
+  },
+  {
+   "nom": "Ibis Bangkok Riverside",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Riverside",
+   "description": "Hôtel économique au bord du fleuve",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Ibis+Bangkok+Riverside+Bangkok",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
+   "priceRange": "€€",
+   "id": "h3",
+   "nombreAvis": 1454,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 13.7173806,
+   "lng": 100.5096857
+  },
+  {
+   "nom": "Grand Plaza Bangkok",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Bangkok",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bangkok+Bangkok",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
+   "priceRange": "€€€€",
+   "id": "h4",
+   "nombreAvis": 754,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 13.8183224,
+   "lng": 100.559737
+  },
+  {
+   "nom": "City Comfort Hotel Bangkok",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Bangkok",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Bangkok+Bangkok",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
+   "priceRange": "€€€",
+   "id": "h5",
+   "nombreAvis": 2092,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Boutique Riad Bangkok",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Bangkok",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Bangkok+Bangkok",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
+   "priceRange": "€€€",
+   "id": "h6",
+   "nombreAvis": 1199,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Bangkok 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Bangkok",
+   "description": "Hébergement halal-friendly à Bangkok.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bangkok+0+Bangkok",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
+   "priceRange": "€€€€",
+   "nombreAvis": 260,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Bangkok",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Bangkok",
+   "description": "Hébergement halal-friendly à Bangkok.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Bangkok+Bangkok",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
+   "priceRange": "€€€",
+   "nombreAvis": 597,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Grand Palais & Wat Phra Kaew",
+   "categorie": "Histoire & Culture",
+   "description": "Palais royal et temple du Bouddha d'Émeraude",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Grand+Palais+%26+Wat+Phra+Kaew+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+Palais+%26+Wat+Phra+Kaew+Bangkok",
+   "id": "a1",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Marché de Chatuchak",
+   "categorie": "Shopping & Souks",
+   "description": "L'un des plus grands marchés week-end du monde",
+   "duree": "3h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Chatuchak+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Chatuchak+Bangkok",
+   "id": "a2",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Haroon",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée historique du vieux quartier musulman de Bangrak",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Haroon+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Haroon+Bangkok",
+   "id": "a3",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier Ban Krua",
+   "categorie": "Histoire & Culture",
+   "description": "Plus ancienne communauté musulmane cham de Bangkok",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+Ban+Krua+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+Ban+Krua+Bangkok",
+   "id": "a4",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Wat Arun",
+   "categorie": "Histoire & Culture",
+   "description": "Temple de l'Aube au bord du fleuve",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Wat+Arun+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Wat+Arun+Bangkok",
+   "id": "a5",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Marché flottant de Taling Chan",
+   "categorie": "Nature & Aventure",
+   "description": "Marché sur l'eau, street food halal",
+   "duree": "Demi-journée",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9+flottant+de+Taling+Chan+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+flottant+de+Taling+Chan+Bangkok",
+   "id": "a6",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Jim Thompson House",
+   "categorie": "Art & Musées",
+   "description": "Maison-musée de la soie thaïe",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Jim+Thompson+House+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jim+Thompson+House+Bangkok",
+   "id": "a7",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Food tour halal Bangrak",
+   "categorie": "Gastronomie",
+   "description": "Découverte des adresses halal du vieux Bangkok",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+Bangrak+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+Bangrak+Bangkok",
+   "id": "a8",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Bangkok",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Bangkok+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Bangkok+Bangkok",
+   "id": "a9",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Bangkok",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Bangkok+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Bangkok+Bangkok",
+   "id": "a10",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Bangkok",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bangkok+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bangkok+Bangkok",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Bangkok",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bangkok+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bangkok+Bangkok",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Bangkok",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Bangkok+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Bangkok+Bangkok",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Bangkok",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Bangkok+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Bangkok+Bangkok",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Bangkok",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Bangkok+Bangkok",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Bangkok+Bangkok",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Haroon",
+   "description": "Mosquée historique au cœur de Bangrak, communauté ancienne",
+   "adresse": "Charoen Krung Soi 36",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Haroon+Bangkok",
+   "capacite": 6696,
+   "anneeConstruction": 1856,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 13.7563,
     "lng": 100.5018
+   }
   },
-  "image_alt": "Vue de Bangkok, Thaïlande",
-  "statistiques": {
-    "mosquees": 200,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 5
+  {
+   "nom": "Mosquée Tonson",
+   "description": "La plus ancienne mosquée de Bangkok, fondée au XVIIe siècle",
+   "adresse": "Thonburi",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Tonson+Bangkok",
+   "capacite": 9353,
+   "anneeConstruction": 1863,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 13.7563,
+    "lng": 100.5018
+   }
   },
-  "infos_pratiques": {
-    "langue": "Thaï",
-    "monnaie": "Baht thaïlandais (THB)",
-    "meilleure_periode": "Novembre à Février",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Bangkok",
+   "description": "Mosquée fréquentée de Bangkok, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bangkok",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Bangkok+Bangkok",
+   "capacite": 5990,
+   "anneeConstruction": 1930,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 13.7563,
+    "lng": 100.5018
+   }
   },
-  "infoPratique": {
-    "visa": "Exemption de visa pour les Français (30 jours)",
-    "vaccins": "Aucun obligatoire (vérifier recommandations)",
-    "transport": "BTS Skytrain, MRT, bateaux-bus, tuk-tuk",
-    "priseElectrique": "Type A/B/C — 220V",
-    "decalageHoraire": "+6h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Bangkok",
+   "description": "Mosquée fréquentée de Bangkok, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bangkok",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Bangkok+Bangkok",
+   "capacite": 5594,
+   "anneeConstruction": 2014,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 13.7563,
+    "lng": 100.5018
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Shoshana Restaurant",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Israélien-arabe halal, Khao San à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Shoshana+Restaurant+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Israélien-arabe halal",
-      "nombreAvis": 2671,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Gianni Ristorante",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Italien halal premium à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Gianni+Ristorante+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Italien halal premium",
-      "nombreAvis": 937,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Naj",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï gastronomique halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Naj+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Thaï gastronomique halal",
-      "nombreAvis": 821,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Sirocco",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Rooftop panoramique halal-friendly à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Sirocco+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Rooftop panoramique halal-friendly",
-      "nombreAvis": 325,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Chef Man",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Cantonais halal certifié à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Chef+Man+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Cantonais halal certifié",
-      "nombreAvis": 187,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Ruen Mallika",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï royal halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Ruen+Mallika+Bangkok",
-      "priceRange": "€",
-      "specialite": "Thaï royal halal",
-      "nombreAvis": 461,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "D'sens Restaurant",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Français halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=D%27sens+Restaurant+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Français halal",
-      "nombreAvis": 1223,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Le Normandie",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Français ultra-luxe halal, Mandarin à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Normandie+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Français ultra-luxe halal",
-      "nombreAvis": 1134,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "CRU Champagne Bar Bangkok",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Sans alcool halal-friendly à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=CRU+Champagne+Bar+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Sans alcool halal-friendly",
-      "nombreAvis": 1638,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Muslim Restaurant Silom",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï musulman à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Muslim+Restaurant+Silom+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Thaï musulman",
-      "nombreAvis": 1990,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Siam Halal",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï halal certifié à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Siam+Halal+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Thaï halal certifié",
-      "nombreAvis": 447,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Krua Aroy",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Thaï populaire halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Krua+Aroy+Bangkok",
-      "priceRange": "€",
-      "specialite": "Thaï populaire halal",
-      "nombreAvis": 1199,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Kay Kay's Kitchen",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï maison halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Kay+Kay%27s+Kitchen+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Thaï maison halal",
-      "nombreAvis": 1218,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Bangkok Muslim Food",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bangkok",
-      "description": "Communauté à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Bangkok+Muslim+Food+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Communauté",
-      "nombreAvis": 436,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Pak Nam Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Fruits de mer halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Pak+Nam+Seafood+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Fruits de mer halal",
-      "nombreAvis": 911,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Isaan Corner",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bangkok",
-      "description": "Cuisine nord-est thaï halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Isaan+Corner+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Cuisine nord-est thaï halal",
-      "nombreAvis": 2471,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Pad See Ew Muslim",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bangkok",
-      "description": "Nouilles halal populaires à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Pad+See+Ew+Muslim+Bangkok",
-      "priceRange": "€",
-      "specialite": "Nouilles halal populaires",
-      "nombreAvis": 123,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Green Garden Vegetarian",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Végétarien halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Garden+Vegetarian+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Végétarien halal",
-      "nombreAvis": 172,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Govinda's Bangkok",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Végétarien halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Govinda%27s+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Végétarien halal",
-      "nombreAvis": 703,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Indian Hut Bangkok",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bangkok",
-      "description": "Indien halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Indian+Hut+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Indien halal",
-      "nombreAvis": 82,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Rang Mahal Bangkok",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Indien gastronomique à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Rang+Mahal+Bangkok+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Indien gastronomique",
-      "nombreAvis": 1075,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Passage To India",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bangkok",
-      "description": "Indien premium halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Passage+To+India+Bangkok",
-      "priceRange": "€€€€",
-      "specialite": "Indien premium halal",
-      "nombreAvis": 899,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Mughal Room",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Moghol-indien halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Room+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Moghol-indien halal",
-      "nombreAvis": 2205,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Madras New Woodlands",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Indien végé à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Madras+New+Woodlands+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Indien végé",
-      "nombreAvis": 3012,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Turkish Restaurant Bangkok",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bangkok",
-      "description": "Turc halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Turkish+Restaurant+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Turc halal",
-      "nombreAvis": 336,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Ali Baba Turkish",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Kebab turc à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Ali+Baba+Turkish+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Kebab turc",
-      "nombreAvis": 1067,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Bosphorus Bangkok",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Ottoman à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Bosphorus+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Ottoman",
-      "nombreAvis": 659,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Mosque Area Bang Rak",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Mosque+Area+Bang+Rak+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 2434,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Haroon Mosque Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bangkok",
-      "description": "Halal mosquée à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Haroon+Mosque+Caf%C3%A9+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal mosquée",
-      "nombreAvis": 532,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Ton Son Road Halal",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bangkok",
-      "description": "Quartier musulman à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Ton+Son+Road+Halal+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Quartier musulman",
-      "nombreAvis": 3574,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Korea House Bangkok",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bangkok",
-      "description": "Coréen halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Korea+House+Bangkok+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Coréen halal",
-      "nombreAvis": 1383,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Todai Thailand",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Coréen-japonais halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Todai+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Coréen-japonais halal",
-      "nombreAvis": 1796,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Yoshinoya Thailand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bangkok",
-      "description": "Japonais halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Yoshinoya+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Japonais halal",
-      "nombreAvis": 2107,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "MK Restaurant",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Shabu shabu halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=MK+Restaurant+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Shabu shabu halal",
-      "nombreAvis": 2158,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Coca Restaurant",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bangkok",
-      "description": "Fondue thaï halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Coca+Restaurant+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Fondue thaï halal",
-      "nombreAvis": 585,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "The Pizza Company Thailand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=The+Pizza+Company+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 749,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "KFC Thailand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bangkok",
-      "description": "Halal certifié à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=KFC+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal certifié",
-      "nombreAvis": 2836,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "McDonald's Thailand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bangkok",
-      "description": "Halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 3109,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Burger King Thailand",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bangkok",
-      "description": "Halal à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+King+Thailand+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 962,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Krua Thai Halal",
-      "type": "Thaï",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Thaï maison à Bangkok.",
-      "mapsUrl": "https://maps.google.com/?q=Krua+Thai+Halal+Bangkok",
-      "priceRange": "€€",
-      "specialite": "Thaï maison",
-      "nombreAvis": 1641,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r40"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Mandarin Oriental Bangkok",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Riverside",
-      "description": "Palace historique au bord du Chao Phraya",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Bangkok+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€€€",
-      "id": "h1",
-      "nombreAvis": 286,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Novotel Bangkok Sukhumvit",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Sukhumvit",
-      "description": "Hôtel central proche du BTS",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Novotel+Bangkok+Sukhumvit+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€€",
-      "id": "h2",
-      "nombreAvis": 1574,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Ibis Bangkok Riverside",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Riverside",
-      "description": "Hôtel économique au bord du fleuve",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Ibis+Bangkok+Riverside+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€",
-      "id": "h3",
-      "nombreAvis": 1454,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Bangkok",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Bangkok",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bangkok+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€€€",
-      "id": "h4",
-      "nombreAvis": 754,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "City Comfort Hotel Bangkok",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Bangkok",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Bangkok+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€€",
-      "id": "h5",
-      "nombreAvis": 2092,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Boutique Riad Bangkok",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Bangkok",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Bangkok+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€€",
-      "id": "h6",
-      "nombreAvis": 1199,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Bangkok 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Bangkok",
-      "description": "Hébergement halal-friendly à Bangkok.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bangkok+0+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€€€",
-      "nombreAvis": 260,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Bangkok",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Bangkok",
-      "description": "Hébergement halal-friendly à Bangkok.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Bangkok+Bangkok",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bangkok&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bangkok",
-      "priceRange": "€€€",
-      "nombreAvis": 597,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Grand Palais & Wat Phra Kaew",
-      "categorie": "Histoire & Culture",
-      "description": "Palais royal et temple du Bouddha d'Émeraude",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Grand+Palais+%26+Wat+Phra+Kaew+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+Palais+%26+Wat+Phra+Kaew+Bangkok",
-      "id": "a1",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Marché de Chatuchak",
-      "categorie": "Shopping & Souks",
-      "description": "L'un des plus grands marchés week-end du monde",
-      "duree": "3h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Chatuchak+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Chatuchak+Bangkok",
-      "id": "a2",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Haroon",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée historique du vieux quartier musulman de Bangrak",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Haroon+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Haroon+Bangkok",
-      "id": "a3",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier Ban Krua",
-      "categorie": "Histoire & Culture",
-      "description": "Plus ancienne communauté musulmane cham de Bangkok",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+Ban+Krua+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+Ban+Krua+Bangkok",
-      "id": "a4",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Wat Arun",
-      "categorie": "Histoire & Culture",
-      "description": "Temple de l'Aube au bord du fleuve",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Wat+Arun+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Wat+Arun+Bangkok",
-      "id": "a5",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Marché flottant de Taling Chan",
-      "categorie": "Nature & Aventure",
-      "description": "Marché sur l'eau, street food halal",
-      "duree": "Demi-journée",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+flottant+de+Taling+Chan+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+flottant+de+Taling+Chan+Bangkok",
-      "id": "a6",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Jim Thompson House",
-      "categorie": "Art & Musées",
-      "description": "Maison-musée de la soie thaïe",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Jim+Thompson+House+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jim+Thompson+House+Bangkok",
-      "id": "a7",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Food tour halal Bangrak",
-      "categorie": "Gastronomie",
-      "description": "Découverte des adresses halal du vieux Bangkok",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+Bangrak+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+Bangrak+Bangkok",
-      "id": "a8",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Bangkok",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Bangkok+Bangkok",
-      "id": "a9",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Bangkok",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Bangkok+Bangkok",
-      "id": "a10",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Bangkok",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bangkok+Bangkok",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Bangkok",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bangkok+Bangkok",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Bangkok",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Bangkok+Bangkok",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Bangkok",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Bangkok+Bangkok",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Bangkok",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Bangkok+Bangkok",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Bangkok+Bangkok",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Haroon",
-      "description": "Mosquée historique au cœur de Bangrak, communauté ancienne",
-      "adresse": "Charoen Krung Soi 36",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Haroon+Bangkok",
-      "capacite": 6696,
-      "anneeConstruction": 1856,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 13.7563,
-        "lng": 100.5018
-      }
-    },
-    {
-      "nom": "Mosquée Tonson",
-      "description": "La plus ancienne mosquée de Bangkok, fondée au XVIIe siècle",
-      "adresse": "Thonburi",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Tonson+Bangkok",
-      "capacite": 9353,
-      "anneeConstruction": 1863,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 13.7563,
-        "lng": 100.5018
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Bangkok",
-      "description": "Mosquée fréquentée de Bangkok, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bangkok",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Bangkok+Bangkok",
-      "capacite": 5990,
-      "anneeConstruction": 1930,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 13.7563,
-        "lng": 100.5018
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Bangkok",
-      "description": "Mosquée fréquentée de Bangkok, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bangkok",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Bangkok+Bangkok",
-      "capacite": 5594,
-      "anneeConstruction": 2014,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 13.7563,
-        "lng": 100.5018
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Bangkok",
-      "description": "Mosquée fréquentée de Bangkok, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bangkok",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Bangkok+Bangkok",
-      "capacite": 6021,
-      "anneeConstruction": 1941,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 13.7563,
-        "lng": 100.5018
-      }
-    }
-  ],
-  "tags": [
-    "street-food",
-    "exotique",
-    "budget",
-    "temples",
-    "communaute-musulmane",
-    "marches"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Bangkok Muslim Food",
-      "Korea House Bangkok",
-      "Yoshinoya Thailand",
-      "KFC Thailand",
-      "McDonald's Thailand"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Shoshana Restaurant",
-      "Ruen Mallika",
-      "CRU Champagne Bar Bangkok",
-      "Muslim Restaurant Silom",
-      "Siam Halal"
-    ],
-    "incontournables": [
-      "Ton Son Road Halal",
-      "McDonald's Thailand",
-      "Madras New Woodlands",
-      "KFC Thailand",
-      "Shoshana Restaurant"
-    ],
-    "pepitesCachees": [
-      "Pad See Ew Muslim"
-    ],
-    "idealFamille": [
-      "Shoshana Restaurant",
-      "Gianni Ristorante",
-      "Ruen Mallika",
-      "D'sens Restaurant",
-      "Le Normandie"
-    ],
-    "gastronomique": [
-      "Naj",
-      "Sirocco"
-    ],
-    "ouvertNuit": [
-      "Gianni Ristorante",
-      "Ruen Mallika",
-      "Krua Aroy"
-    ],
-    "vueExceptionnelle": [
-      "Pak Nam Seafood"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Bangkok",
+   "description": "Mosquée fréquentée de Bangkok, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bangkok",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Bangkok+Bangkok",
+   "capacite": 6021,
+   "anneeConstruction": 1941,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 13.7563,
+    "lng": 100.5018
+   }
   }
+ ],
+ "tags": [
+  "street-food",
+  "exotique",
+  "budget",
+  "temples",
+  "communaute-musulmane",
+  "marches"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Bangkok Muslim Food",
+   "Korea House Bangkok",
+   "Yoshinoya Thailand",
+   "KFC Thailand",
+   "McDonald's Thailand"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Shoshana Restaurant",
+   "Ruen Mallika",
+   "CRU Champagne Bar Bangkok",
+   "Muslim Restaurant Silom",
+   "Siam Halal"
+  ],
+  "incontournables": [
+   "Ton Son Road Halal",
+   "McDonald's Thailand",
+   "Madras New Woodlands",
+   "KFC Thailand",
+   "Shoshana Restaurant"
+  ],
+  "pepitesCachees": [
+   "Pad See Ew Muslim"
+  ],
+  "idealFamille": [
+   "Shoshana Restaurant",
+   "Gianni Ristorante",
+   "Ruen Mallika",
+   "D'sens Restaurant",
+   "Le Normandie"
+  ],
+  "gastronomique": [
+   "Naj",
+   "Sirocco"
+  ],
+  "ouvertNuit": [
+   "Gianni Ristorante",
+   "Ruen Mallika",
+   "Krua Aroy"
+  ],
+  "vueExceptionnelle": [
+   "Pak Nam Seafood"
+  ]
+ }
 }

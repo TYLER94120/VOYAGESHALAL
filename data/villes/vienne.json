@@ -1,900 +1,907 @@
 {
-  "nom": "Vienne",
-  "pays": "Autriche",
-  "slug": "vienne",
-  "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=1400&q=85",
-  "description": "Vienne, capitale impériale de l'Autriche, marie palais des Habsbourg, valses et café viennois. Communauté turque et arabe, mosquée du Danube et cuisine halal.",
-  "descriptionLongue": "Ancienne capitale de l'Empire austro-hongrois, Vienne séduit par ses palais baroques, son Ring majestueux et sa tradition musicale. La ville abrite une importante communauté musulmane turque, bosniaque et arabe, et le Centre islamique du Danube, l'une des premières grandes mosquées d'Europe centrale. Schönbrunn, le café viennois et les marchés comme le Naschmarkt, riche en stands halal, en font une capitale élégante et accueillante.",
-  "halalScore": 7.5,
-  "score_halal": 3.8,
+ "nom": "Vienne",
+ "pays": "Autriche",
+ "slug": "vienne",
+ "image": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=1400&q=85",
+ "description": "Vienne, capitale impériale de l'Autriche, marie palais des Habsbourg, valses et café viennois. Communauté turque et arabe, mosquée du Danube et cuisine halal.",
+ "descriptionLongue": "Ancienne capitale de l'Empire austro-hongrois, Vienne séduit par ses palais baroques, son Ring majestueux et sa tradition musicale. La ville abrite une importante communauté musulmane turque, bosniaque et arabe, et le Centre islamique du Danube, l'une des premières grandes mosquées d'Europe centrale. Schönbrunn, le café viennois et les marchés comme le Naschmarkt, riche en stands halal, en font une capitale élégante et accueillante.",
+ "halalScore": 7.5,
+ "score_halal": 3.8,
+ "mosquees": 70,
+ "population": "1,9 million",
+ "langue": "Allemand",
+ "monnaie": "Euro (EUR)",
+ "fuseau": "UTC+1",
+ "meilleureEpoque": "Avril à Octobre",
+ "prixMoyenNuit": "110€",
+ "continent": "Europe",
+ "codeISO": "AT",
+ "pays_slug": "autriche",
+ "region": "Europe centrale",
+ "meta_title": "Voyage Halal à Vienne — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Vienne — Halal Trust Score 7.5/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Vienne — Halal Trust Score 7.5/10.",
+ "coordonnees": {
+  "lat": 48.2082,
+  "lng": 16.3738
+ },
+ "image_alt": "Vue de Vienne, Autriche",
+ "statistiques": {
   "mosquees": 70,
-  "population": "1,9 million",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 14,
+  "hotels": 8
+ },
+ "infos_pratiques": {
   "langue": "Allemand",
   "monnaie": "Euro (EUR)",
-  "fuseau": "UTC+1",
-  "meilleureEpoque": "Avril à Octobre",
-  "prixMoyenNuit": "110€",
-  "continent": "Europe",
-  "codeISO": "AT",
-  "pays_slug": "autriche",
-  "region": "Europe centrale",
-  "meta_title": "Voyage Halal à Vienne — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Vienne — Halal Trust Score 7.5/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Vienne — Halal Trust Score 7.5/10.",
-  "coordonnees": {
+  "meilleure_periode": "Avril à Octobre",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Espace Schengen — pas de visa pour les Français",
+  "vaccins": "Aucun obligatoire",
+  "transport": "U-Bahn, tram, bus, vélo",
+  "priseElectrique": "Type C/F — 230V",
+  "decalageHoraire": "Même heure que Paris"
+ },
+ "restaurants": [
+  {
+   "nom": "Kent Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Brunnenmarkt",
+   "description": "Institution turque de Vienne",
+   "mapsUrl": "https://maps.google.com/?q=Kent+Restaurant+Vienne",
+   "priceRange": "€€",
+   "specialite": "Cuisine turque",
+   "id": "r1"
+  },
+  {
+   "nom": "Der Wiener Deewan",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Alsergrund",
+   "description": "Buffet pakistanais au prix libre",
+   "mapsUrl": "https://maps.google.com/?q=Der+Wiener+Deewan+Vienne",
+   "priceRange": "€",
+   "specialite": "Cuisine pakistanaise",
+   "id": "r2"
+  },
+  {
+   "nom": "Etap Restaurant",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Favoriten",
+   "description": "Grillades anatoliennes réputées",
+   "mapsUrl": "https://maps.google.com/?q=Etap+Restaurant+Vienne",
+   "priceRange": "€€",
+   "specialite": "Grillades turques",
+   "id": "r3"
+  },
+  {
+   "nom": "Habibi & Hawara",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre",
+   "description": "Cuisine orientale moderne",
+   "mapsUrl": "https://maps.google.com/?q=Habibi+%26+Hawara+Vienne",
+   "priceRange": "€€",
+   "specialite": "Cuisine du Levant",
+   "id": "r4"
+  },
+  {
+   "nom": "Naschmarkt Halal Deli",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Naschmarkt",
+   "description": "Stands halal du marché historique",
+   "mapsUrl": "https://maps.google.com/?q=Naschmarkt+Halal+Deli+Vienne",
+   "priceRange": "€",
+   "specialite": "Mezzés",
+   "id": "r5"
+  },
+  {
+   "nom": "Al Madina Vienne",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Vienne",
+   "description": "Adresse halal appréciée des habitants de Vienne.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Vienne+Vienne",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r6"
+  },
+  {
+   "nom": "Shawarma House Vienne",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Vienne",
+   "description": "Adresse halal appréciée des habitants de Vienne.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Vienne+Vienne",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r7"
+  },
+  {
+   "nom": "Beit Beirut Vienne",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Vienne",
+   "description": "Adresse halal appréciée des habitants de Vienne.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Vienne+Vienne",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r8"
+  },
+  {
+   "nom": "Spice Route Vienne",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Vienne",
+   "description": "Adresse halal appréciée des habitants de Vienne.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Vienne+Vienne",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r9"
+  },
+  {
+   "nom": "Saffron Garden Vienne",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Vienne",
+   "description": "Adresse halal appréciée des habitants de Vienne.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Vienne+Vienne",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r10"
+  },
+  {
+   "nom": "Green Bowl Vienne",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Vienne",
+   "description": "Adresse halal appréciée des habitants de Vienne.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Vienne+Vienne",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r11"
+  },
+  {
+   "nom": "Sultan Café Vienne",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Vienne",
+   "description": "Adresse halal appréciée des habitants de Vienne.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Vienne+Vienne",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r12"
+  },
+  {
+   "nom": "Ocean Pearl Vienne",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Vienne",
+   "description": "Adresse halal appréciée des habitants de Vienne.",
+   "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Vienne+Vienne",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé du jour",
+   "id": "r13"
+  },
+  {
+   "nom": "Bella Halal Vienne",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Vienne",
+   "description": "Adresse halal appréciée des habitants de Vienne.",
+   "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Vienne+Vienne",
+   "priceRange": "€€",
+   "specialite": "Pizza halal au four à bois",
+   "id": "r14"
+  },
+  {
+   "nom": "Tokyo Halal Vienne",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Vienne",
+   "description": "Adresse halal appréciée des habitants de Vienne.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Vienne+Vienne",
+   "priceRange": "€€€",
+   "specialite": "Sushis certifiés halal",
+   "id": "r15"
+  },
+  {
+   "nom": "Le Comptoir Halal",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Vienne",
+   "description": "Adresse traditionnel local appréciée à Vienne, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Vienne",
+   "priceRange": "€€",
+   "specialite": "Spécialité du pays",
+   "nombreAvis": 3061,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Beit Beirut",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Vienne",
+   "description": "Adresse libanais & levant appréciée à Vienne, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Vienne",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 3565,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Shahi Tandoor",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Vienne",
+   "description": "Adresse indien & pakistani appréciée à Vienne, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Vienne",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 2237,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Dar Marrakech",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Vienne",
+   "description": "Adresse marocain appréciée à Vienne, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Vienne",
+   "priceRange": "€€",
+   "specialite": "Tajine",
+   "nombreAvis": 1605,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Anatolia Grill",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Vienne",
+   "description": "Adresse turc appréciée à Vienne, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Vienne",
+   "priceRange": "€€",
+   "specialite": "İskender kebab",
+   "nombreAvis": 373,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Halal Burger Co",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Vienne",
+   "description": "Adresse burgers & fast-food appréciée à Vienne, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Halal+Burger+Co+Vienne",
+   "priceRange": "€€",
+   "specialite": "Smash burger halal",
+   "nombreAvis": 119,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Sakura Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Vienne",
+   "description": "Adresse japonais & asiatique appréciée à Vienne, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Vienne",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 347,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Saveurs Gastronomiques",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Vienne",
+   "description": "Adresse gastronomique appréciée à Vienne, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saveurs+Gastronomiques+Vienne",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation",
+   "nombreAvis": 1013,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Maison du Thé",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Vienne",
+   "description": "Adresse pâtisserie & café appréciée à Vienne, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+du+Th%C3%A9+Vienne",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries orientales",
+   "nombreAvis": 617,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Le Comptoir Halal Vienne 10",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Vienne",
+   "description": "Adresse traditionnel local appréciée à Vienne, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Vienne+10+Vienne",
+   "priceRange": "€€",
+   "specialite": "Spécialité du pays",
+   "nombreAvis": 1667,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r25"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Hotel Sacher Wien",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Centre",
+   "description": "Palace légendaire de la Sachertorte",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Sacher+Wien+Vienne",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "lat": 48.2040427,
+   "lng": 16.3697708
+  },
+  {
+   "nom": "The Ritz-Carlton Vienna",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Centre",
+   "description": "Palace sur le Ring",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Ritz-Carlton+Vienna+Vienne",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
+   "priceRange": "€€€€",
+   "id": "h2",
+   "lat": 48.2022505,
+   "lng": 16.3760702
+  },
+  {
+   "nom": "Motel One Wien-Staatsoper",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Centre",
+   "description": "Hôtel design près de l'Opéra",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Motel+One+Wien-Staatsoper+Vienne",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
+   "priceRange": "€€",
+   "id": "h3",
+   "lat": 48.2015932,
+   "lng": 16.3679838
+  },
+  {
+   "nom": "Grand Plaza Vienne",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Vienne",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Vienne+Vienne",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
+   "priceRange": "€€€€",
+   "id": "h4"
+  },
+  {
+   "nom": "City Comfort Hotel Vienne",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Vienne",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Vienne+Vienne",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
+   "priceRange": "€€€",
+   "id": "h5"
+  },
+  {
+   "nom": "Boutique Riad Vienne",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Vienne",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Vienne+Vienne",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
+   "priceRange": "€€€",
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Vienne 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Vienne",
+   "description": "Hébergement halal-friendly à Vienne.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Vienne+0+Vienne",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
+   "priceRange": "€€€€",
+   "nombreAvis": 1206,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Vienne",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Vienne",
+   "description": "Hébergement halal-friendly à Vienne.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Vienne+Vienne",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
+   "priceRange": "€€€",
+   "nombreAvis": 1572,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Château de Schönbrunn",
+   "categorie": "Histoire & Culture",
+   "description": "Palais impérial des Habsbourg et jardins, UNESCO",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Ch%C3%A2teau+de+Sch%C3%B6nbrunn+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ch%C3%A2teau+de+Sch%C3%B6nbrunn+Vienne",
+   "id": "a1"
+  },
+  {
+   "nom": "Centre islamique du Danube",
+   "categorie": "Religieux & Spirituel",
+   "description": "Première grande mosquée d'Autriche, dôme et minaret",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+islamique+du+Danube+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+islamique+du+Danube+Vienne",
+   "id": "a2"
+  },
+  {
+   "nom": "Cathédrale Saint-Étienne",
+   "categorie": "Histoire & Culture",
+   "description": "Cathédrale gothique au cœur de Vienne",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Cath%C3%A9drale+Saint-%C3%89tienne+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cath%C3%A9drale+Saint-%C3%89tienne+Vienne",
+   "id": "a3"
+  },
+  {
+   "nom": "Palais de la Hofburg",
+   "categorie": "Histoire & Culture",
+   "description": "Résidence impériale et trésor des Habsbourg",
+   "duree": "2-3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Palais+de+la+Hofburg+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+de+la+Hofburg+Vienne",
+   "id": "a4"
+  },
+  {
+   "nom": "Naschmarkt",
+   "categorie": "Shopping & Souks",
+   "description": "Plus grand marché de Vienne, nombreux stands halal",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Naschmarkt+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Naschmarkt+Vienne",
+   "id": "a5"
+  },
+  {
+   "nom": "Belvédère & Le Baiser de Klimt",
+   "categorie": "Art & Musées",
+   "description": "Palais baroque et chef-d'œuvre de Klimt",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Belv%C3%A9d%C3%A8re+%26+Le+Baiser+de+Klimt+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Belv%C3%A9d%C3%A8re+%26+Le+Baiser+de+Klimt+Vienne",
+   "id": "a6"
+  },
+  {
+   "nom": "Prater & grande roue",
+   "categorie": "Sport & Loisirs",
+   "description": "Parc et roue panoramique historique",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Prater+%26+grande+roue+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Prater+%26+grande+roue+Vienne",
+   "id": "a7"
+  },
+  {
+   "nom": "Café viennois traditionnel",
+   "categorie": "Gastronomie",
+   "description": "Sachertorte et mélange dans un café classé UNESCO",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+viennois+traditionnel+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Caf%C3%A9+viennois+traditionnel+Vienne",
+   "id": "a8"
+  },
+  {
+   "nom": "Vieille ville de Vienne",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Vienne+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Vienne+Vienne",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand souk de Vienne",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Vienne+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Vienne+Vienne",
+   "id": "a10"
+  },
+  {
+   "nom": "Quartier historique de Vienne",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Vienne+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Vienne+Vienne",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Vienne",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Vienne+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Vienne+Vienne",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Vienne",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Vienne+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Vienne+Vienne",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Vienne",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Vienne+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Vienne+Vienne",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Vienne",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Vienne+Vienne",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Vienne+Vienne",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Centre islamique de Vienne",
+   "description": "Mosquée du Danube de 1979, première grande mosquée d'Autriche",
+   "adresse": "Floridsdorf",
+   "mapsUrl": "https://maps.google.com/?q=Centre+islamique+de+Vienne+Vienne",
+   "capacite": 7382,
+   "anneeConstruction": 1932,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 48.2082,
     "lng": 16.3738
+   }
   },
-  "image_alt": "Vue de Vienne, Autriche",
-  "statistiques": {
-    "mosquees": 70,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 14
+  {
+   "nom": "Mosquée Tewhid",
+   "description": "Importante mosquée communautaire de Vienne",
+   "adresse": "Favoriten",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Tewhid+Vienne",
+   "capacite": 2251,
+   "anneeConstruction": 1981,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.2082,
+    "lng": 16.3738
+   }
   },
-  "infos_pratiques": {
-    "langue": "Allemand",
-    "monnaie": "Euro (EUR)",
-    "meilleure_periode": "Avril à Octobre",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Vienne",
+   "description": "Mosquée fréquentée de Vienne, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Vienne",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Vienne+Vienne",
+   "capacite": 913,
+   "anneeConstruction": 1993,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.2082,
+    "lng": 16.3738
+   }
   },
-  "infoPratique": {
-    "visa": "Espace Schengen — pas de visa pour les Français",
-    "vaccins": "Aucun obligatoire",
-    "transport": "U-Bahn, tram, bus, vélo",
-    "priseElectrique": "Type C/F — 230V",
-    "decalageHoraire": "Même heure que Paris"
+  {
+   "nom": "Grande Mosquée de Vienne",
+   "description": "Mosquée fréquentée de Vienne, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Vienne",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Vienne+Vienne",
+   "capacite": 3306,
+   "anneeConstruction": 1986,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.2082,
+    "lng": 16.3738
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Kent Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Brunnenmarkt",
-      "description": "Institution turque de Vienne",
-      "mapsUrl": "https://maps.google.com/?q=Kent+Restaurant+Vienne",
-      "priceRange": "€€",
-      "specialite": "Cuisine turque",
-      "id": "r1"
-    },
-    {
-      "nom": "Der Wiener Deewan",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Alsergrund",
-      "description": "Buffet pakistanais au prix libre",
-      "mapsUrl": "https://maps.google.com/?q=Der+Wiener+Deewan+Vienne",
-      "priceRange": "€",
-      "specialite": "Cuisine pakistanaise",
-      "id": "r2"
-    },
-    {
-      "nom": "Etap Restaurant",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Favoriten",
-      "description": "Grillades anatoliennes réputées",
-      "mapsUrl": "https://maps.google.com/?q=Etap+Restaurant+Vienne",
-      "priceRange": "€€",
-      "specialite": "Grillades turques",
-      "id": "r3"
-    },
-    {
-      "nom": "Habibi & Hawara",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre",
-      "description": "Cuisine orientale moderne",
-      "mapsUrl": "https://maps.google.com/?q=Habibi+%26+Hawara+Vienne",
-      "priceRange": "€€",
-      "specialite": "Cuisine du Levant",
-      "id": "r4"
-    },
-    {
-      "nom": "Naschmarkt Halal Deli",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Naschmarkt",
-      "description": "Stands halal du marché historique",
-      "mapsUrl": "https://maps.google.com/?q=Naschmarkt+Halal+Deli+Vienne",
-      "priceRange": "€",
-      "specialite": "Mezzés",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Vienne",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Vienne",
-      "description": "Adresse halal appréciée des habitants de Vienne.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Vienne+Vienne",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Vienne",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Vienne",
-      "description": "Adresse halal appréciée des habitants de Vienne.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Vienne+Vienne",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Vienne",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Vienne",
-      "description": "Adresse halal appréciée des habitants de Vienne.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Vienne+Vienne",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Vienne",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Vienne",
-      "description": "Adresse halal appréciée des habitants de Vienne.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Vienne+Vienne",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Vienne",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Vienne",
-      "description": "Adresse halal appréciée des habitants de Vienne.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Vienne+Vienne",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Vienne",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Vienne",
-      "description": "Adresse halal appréciée des habitants de Vienne.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Vienne+Vienne",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Vienne",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Vienne",
-      "description": "Adresse halal appréciée des habitants de Vienne.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Vienne+Vienne",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Vienne",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Vienne",
-      "description": "Adresse halal appréciée des habitants de Vienne.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Vienne+Vienne",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Vienne",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Vienne",
-      "description": "Adresse halal appréciée des habitants de Vienne.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Vienne+Vienne",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Vienne",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Vienne",
-      "description": "Adresse halal appréciée des habitants de Vienne.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Vienne+Vienne",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Le Comptoir Halal",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Vienne",
-      "description": "Adresse traditionnel local appréciée à Vienne, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Vienne",
-      "priceRange": "€€",
-      "specialite": "Spécialité du pays",
-      "nombreAvis": 3061,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Beit Beirut",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Vienne",
-      "description": "Adresse libanais & levant appréciée à Vienne, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Vienne",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 3565,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Shahi Tandoor",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Vienne",
-      "description": "Adresse indien & pakistani appréciée à Vienne, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Vienne",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 2237,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Dar Marrakech",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Vienne",
-      "description": "Adresse marocain appréciée à Vienne, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Vienne",
-      "priceRange": "€€",
-      "specialite": "Tajine",
-      "nombreAvis": 1605,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Anatolia Grill",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Vienne",
-      "description": "Adresse turc appréciée à Vienne, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Vienne",
-      "priceRange": "€€",
-      "specialite": "İskender kebab",
-      "nombreAvis": 373,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Halal Burger Co",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Vienne",
-      "description": "Adresse burgers & fast-food appréciée à Vienne, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Burger+Co+Vienne",
-      "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 119,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Sakura Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Vienne",
-      "description": "Adresse japonais & asiatique appréciée à Vienne, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Vienne",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 347,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Saveurs Gastronomiques",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Vienne",
-      "description": "Adresse gastronomique appréciée à Vienne, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saveurs+Gastronomiques+Vienne",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 1013,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Maison du Thé",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Vienne",
-      "description": "Adresse pâtisserie & café appréciée à Vienne, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+du+Th%C3%A9+Vienne",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries orientales",
-      "nombreAvis": 617,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Le Comptoir Halal Vienne 10",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Vienne",
-      "description": "Adresse traditionnel local appréciée à Vienne, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Vienne+10+Vienne",
-      "priceRange": "€€",
-      "specialite": "Spécialité du pays",
-      "nombreAvis": 1667,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r25"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Hotel Sacher Wien",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Centre",
-      "description": "Palace légendaire de la Sachertorte",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Sacher+Wien+Vienne",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
-      "priceRange": "€€€€",
-      "id": "h1"
-    },
-    {
-      "nom": "The Ritz-Carlton Vienna",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Centre",
-      "description": "Palace sur le Ring",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Ritz-Carlton+Vienna+Vienne",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
-      "priceRange": "€€€€",
-      "id": "h2"
-    },
-    {
-      "nom": "Motel One Wien-Staatsoper",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Centre",
-      "description": "Hôtel design près de l'Opéra",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Motel+One+Wien-Staatsoper+Vienne",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
-      "priceRange": "€€",
-      "id": "h3"
-    },
-    {
-      "nom": "Grand Plaza Vienne",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Vienne",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Vienne+Vienne",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
-      "priceRange": "€€€€",
-      "id": "h4"
-    },
-    {
-      "nom": "City Comfort Hotel Vienne",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Vienne",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Vienne+Vienne",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Vienne",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Vienne",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Vienne+Vienne",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Vienne 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Vienne",
-      "description": "Hébergement halal-friendly à Vienne.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Vienne+0+Vienne",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
-      "priceRange": "€€€€",
-      "nombreAvis": 1206,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Vienne",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Vienne",
-      "description": "Hébergement halal-friendly à Vienne.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Vienne+Vienne",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Vienne&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=vienne",
-      "priceRange": "€€€",
-      "nombreAvis": 1572,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Château de Schönbrunn",
-      "categorie": "Histoire & Culture",
-      "description": "Palais impérial des Habsbourg et jardins, UNESCO",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Ch%C3%A2teau+de+Sch%C3%B6nbrunn+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ch%C3%A2teau+de+Sch%C3%B6nbrunn+Vienne",
-      "id": "a1"
-    },
-    {
-      "nom": "Centre islamique du Danube",
-      "categorie": "Religieux & Spirituel",
-      "description": "Première grande mosquée d'Autriche, dôme et minaret",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+islamique+du+Danube+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+islamique+du+Danube+Vienne",
-      "id": "a2"
-    },
-    {
-      "nom": "Cathédrale Saint-Étienne",
-      "categorie": "Histoire & Culture",
-      "description": "Cathédrale gothique au cœur de Vienne",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Cath%C3%A9drale+Saint-%C3%89tienne+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cath%C3%A9drale+Saint-%C3%89tienne+Vienne",
-      "id": "a3"
-    },
-    {
-      "nom": "Palais de la Hofburg",
-      "categorie": "Histoire & Culture",
-      "description": "Résidence impériale et trésor des Habsbourg",
-      "duree": "2-3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Palais+de+la+Hofburg+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+de+la+Hofburg+Vienne",
-      "id": "a4"
-    },
-    {
-      "nom": "Naschmarkt",
-      "categorie": "Shopping & Souks",
-      "description": "Plus grand marché de Vienne, nombreux stands halal",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Naschmarkt+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Naschmarkt+Vienne",
-      "id": "a5"
-    },
-    {
-      "nom": "Belvédère & Le Baiser de Klimt",
-      "categorie": "Art & Musées",
-      "description": "Palais baroque et chef-d'œuvre de Klimt",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Belv%C3%A9d%C3%A8re+%26+Le+Baiser+de+Klimt+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Belv%C3%A9d%C3%A8re+%26+Le+Baiser+de+Klimt+Vienne",
-      "id": "a6"
-    },
-    {
-      "nom": "Prater & grande roue",
-      "categorie": "Sport & Loisirs",
-      "description": "Parc et roue panoramique historique",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Prater+%26+grande+roue+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Prater+%26+grande+roue+Vienne",
-      "id": "a7"
-    },
-    {
-      "nom": "Café viennois traditionnel",
-      "categorie": "Gastronomie",
-      "description": "Sachertorte et mélange dans un café classé UNESCO",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+viennois+traditionnel+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Caf%C3%A9+viennois+traditionnel+Vienne",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Vienne",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Vienne+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Vienne+Vienne",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Vienne",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Vienne+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Vienne+Vienne",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Vienne",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Vienne+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Vienne+Vienne",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Vienne",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Vienne+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Vienne+Vienne",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Vienne",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Vienne+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Vienne+Vienne",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Vienne",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Vienne+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Vienne+Vienne",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Vienne",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Vienne+Vienne",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Vienne+Vienne",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Centre islamique de Vienne",
-      "description": "Mosquée du Danube de 1979, première grande mosquée d'Autriche",
-      "adresse": "Floridsdorf",
-      "mapsUrl": "https://maps.google.com/?q=Centre+islamique+de+Vienne+Vienne",
-      "capacite": 7382,
-      "anneeConstruction": 1932,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.2082,
-        "lng": 16.3738
-      }
-    },
-    {
-      "nom": "Mosquée Tewhid",
-      "description": "Importante mosquée communautaire de Vienne",
-      "adresse": "Favoriten",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Tewhid+Vienne",
-      "capacite": 2251,
-      "anneeConstruction": 1981,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.2082,
-        "lng": 16.3738
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Vienne",
-      "description": "Mosquée fréquentée de Vienne, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Vienne",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Vienne+Vienne",
-      "capacite": 913,
-      "anneeConstruction": 1993,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.2082,
-        "lng": 16.3738
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Vienne",
-      "description": "Mosquée fréquentée de Vienne, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Vienne",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Vienne+Vienne",
-      "capacite": 3306,
-      "anneeConstruction": 1986,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.2082,
-        "lng": 16.3738
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Vienne",
-      "description": "Mosquée fréquentée de Vienne, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Vienne",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Vienne+Vienne",
-      "capacite": 4222,
-      "anneeConstruction": 1962,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 48.2082,
-        "lng": 16.3738
-      }
-    }
-  ],
-  "tags": [
-    "imperiale",
-    "habsbourg",
-    "communaute-turque",
-    "cafe-viennois",
-    "culture",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Le Comptoir Halal",
-      "Maison du Thé",
-      "Beit Beirut",
-      "Le Comptoir Halal Vienne 10",
-      "Saffron Garden Vienne"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Kent Restaurant",
-      "Der Wiener Deewan",
-      "Etap Restaurant",
-      "Habibi & Hawara",
-      "Naschmarkt Halal Deli"
-    ],
-    "incontournables": [
-      "Beit Beirut",
-      "Le Comptoir Halal",
-      "Shahi Tandoor",
-      "Le Comptoir Halal Vienne 10",
-      "Dar Marrakech"
-    ],
-    "pepitesCachees": [
-      "Kent Restaurant",
-      "Der Wiener Deewan",
-      "Etap Restaurant"
-    ],
-    "idealFamille": [
-      "Le Comptoir Halal",
-      "Beit Beirut",
-      "Shahi Tandoor",
-      "Dar Marrakech",
-      "Anatolia Grill"
-    ],
-    "gastronomique": [
-      "Saffron Garden Vienne",
-      "Saveurs Gastronomiques"
-    ],
-    "ouvertNuit": [
-      "Beit Beirut",
-      "Halal Burger Co"
-    ],
-    "vueExceptionnelle": [
-      "Le Comptoir Halal",
-      "Maison du Thé",
-      "Beit Beirut"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Vienne",
+   "description": "Mosquée fréquentée de Vienne, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Vienne",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Vienne+Vienne",
+   "capacite": 4222,
+   "anneeConstruction": 1962,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 48.2082,
+    "lng": 16.3738
+   }
   }
+ ],
+ "tags": [
+  "imperiale",
+  "habsbourg",
+  "communaute-turque",
+  "cafe-viennois",
+  "culture",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Le Comptoir Halal",
+   "Maison du Thé",
+   "Beit Beirut",
+   "Le Comptoir Halal Vienne 10",
+   "Saffron Garden Vienne"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Kent Restaurant",
+   "Der Wiener Deewan",
+   "Etap Restaurant",
+   "Habibi & Hawara",
+   "Naschmarkt Halal Deli"
+  ],
+  "incontournables": [
+   "Beit Beirut",
+   "Le Comptoir Halal",
+   "Shahi Tandoor",
+   "Le Comptoir Halal Vienne 10",
+   "Dar Marrakech"
+  ],
+  "pepitesCachees": [
+   "Kent Restaurant",
+   "Der Wiener Deewan",
+   "Etap Restaurant"
+  ],
+  "idealFamille": [
+   "Le Comptoir Halal",
+   "Beit Beirut",
+   "Shahi Tandoor",
+   "Dar Marrakech",
+   "Anatolia Grill"
+  ],
+  "gastronomique": [
+   "Saffron Garden Vienne",
+   "Saveurs Gastronomiques"
+  ],
+  "ouvertNuit": [
+   "Beit Beirut",
+   "Halal Burger Co"
+  ],
+  "vueExceptionnelle": [
+   "Le Comptoir Halal",
+   "Maison du Thé",
+   "Beit Beirut"
+  ]
+ }
 }

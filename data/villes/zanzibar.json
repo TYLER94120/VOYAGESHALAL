@@ -1,1286 +1,1291 @@
 {
-  "nom": "Zanzibar",
-  "pays": "Tanzanie",
-  "slug": "zanzibar",
-  "image": "https://images.unsplash.com/photo-1572125675722-238a4f1f4ea2?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1572125675722-238a4f1f4ea2?w=1400&q=85",
-  "description": "Zanzibar, île aux épices de l'océan Indien, marie Stone Town swahilie, plages turquoise et mosquées. Archipel musulman à l'âme arabo-africaine envoûtante.",
-  "descriptionLongue": "Joyau de l'océan Indien, Zanzibar est un archipel à très large majorité musulmane, ancien sultanat omanais et carrefour de la route des épices. Stone Town, sa capitale labyrinthique classée UNESCO, déploie portes sculptées, bazars et mosquées. Plages de sable blanc à Nungwi et Paje, plantations d'épices et fruits de mer halal composent un séjour balnéaire enchanteur à l'identité swahilie.",
-  "halalScore": 9.0,
-  "score_halal": 4.5,
+ "nom": "Zanzibar",
+ "pays": "Tanzanie",
+ "slug": "zanzibar",
+ "image": "https://images.unsplash.com/photo-1572125675722-238a4f1f4ea2?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1572125675722-238a4f1f4ea2?w=1400&q=85",
+ "description": "Zanzibar, île aux épices de l'océan Indien, marie Stone Town swahilie, plages turquoise et mosquées. Archipel musulman à l'âme arabo-africaine envoûtante.",
+ "descriptionLongue": "Joyau de l'océan Indien, Zanzibar est un archipel à très large majorité musulmane, ancien sultanat omanais et carrefour de la route des épices. Stone Town, sa capitale labyrinthique classée UNESCO, déploie portes sculptées, bazars et mosquées. Plages de sable blanc à Nungwi et Paje, plantations d'épices et fruits de mer halal composent un séjour balnéaire enchanteur à l'identité swahilie.",
+ "halalScore": 9,
+ "score_halal": 4.5,
+ "mosquees": 300,
+ "population": "900 000",
+ "langue": "Swahili, Anglais",
+ "monnaie": "Shilling tanzanien (TZS)",
+ "fuseau": "UTC+3",
+ "meilleureEpoque": "Juin à Octobre",
+ "prixMoyenNuit": "70€",
+ "continent": "Afrique",
+ "codeISO": "TZ",
+ "pays_slug": "tanzanie",
+ "region": "Afrique de l'Est",
+ "meta_title": "Voyage Halal à Zanzibar — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Zanzibar — Halal Trust Score 9.0/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Zanzibar — Halal Trust Score 9.0/10.",
+ "coordonnees": {
+  "lat": -6.1659,
+  "lng": 39.2026
+ },
+ "image_alt": "Vue de Zanzibar, Tanzanie",
+ "statistiques": {
   "mosquees": 300,
-  "population": "900 000",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 98,
+  "hotels": 10
+ },
+ "infos_pratiques": {
   "langue": "Swahili, Anglais",
   "monnaie": "Shilling tanzanien (TZS)",
-  "fuseau": "UTC+3",
-  "meilleureEpoque": "Juin à Octobre",
-  "prixMoyenNuit": "70€",
-  "continent": "Afrique",
-  "codeISO": "TZ",
-  "pays_slug": "tanzanie",
-  "region": "Afrique de l'Est",
-  "meta_title": "Voyage Halal à Zanzibar — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Zanzibar — Halal Trust Score 9.0/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Zanzibar — Halal Trust Score 9.0/10.",
-  "coordonnees": {
+  "meilleure_periode": "Juin à Octobre",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Réglementé",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Visa à l'arrivée ou e-Visa tanzanien",
+  "vaccins": "Fièvre jaune si provenance zone à risque, paludisme",
+  "transport": "Taxi, dala-dala, transferts privés",
+  "priseElectrique": "Type D/G — 230V",
+  "decalageHoraire": "+1h à +2h par rapport à Paris"
+ },
+ "restaurants": [
+  {
+   "nom": "Lukmaan Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Stone Town",
+   "description": "Cantine swahilie réputée de Stone Town",
+   "mapsUrl": "https://maps.google.com/?q=Lukmaan+Restaurant+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Cuisine swahilie",
+   "id": "r1"
+  },
+  {
+   "nom": "Forodhani Gardens",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Stone Town",
+   "description": "Marché nocturne de street food en bord de mer",
+   "mapsUrl": "https://maps.google.com/?q=Forodhani+Gardens+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Brochettes de mer",
+   "id": "r2"
+  },
+  {
+   "nom": "Zanzibar Coffee House",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Stone Town",
+   "description": "Café d'altitude et douceurs",
+   "mapsUrl": "https://maps.google.com/?q=Zanzibar+Coffee+House+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Café et pâtisseries",
+   "id": "r3"
+  },
+  {
+   "nom": "Maru Maru Rooftop",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Stone Town",
+   "description": "Rooftop avec vue sur les toits de pierre",
+   "mapsUrl": "https://maps.google.com/?q=Maru+Maru+Rooftop+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Poisson grillé",
+   "id": "r4"
+  },
+  {
+   "nom": "The Rock (version halal)",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Michamvi",
+   "description": "Restaurant iconique sur un rocher",
+   "mapsUrl": "https://maps.google.com/?q=The+Rock+%28version+halal%29+Zanzibar",
+   "priceRange": "€€€",
+   "specialite": "Fruits de mer",
+   "id": "r5"
+  },
+  {
+   "nom": "Al Madina Zanzibar",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Zanzibar",
+   "description": "Adresse halal appréciée des habitants de Zanzibar.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Zanzibar+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r6"
+  },
+  {
+   "nom": "Shawarma House Zanzibar",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Zanzibar",
+   "description": "Adresse halal appréciée des habitants de Zanzibar.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Zanzibar+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r7"
+  },
+  {
+   "nom": "Beit Beirut Zanzibar",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Zanzibar",
+   "description": "Adresse halal appréciée des habitants de Zanzibar.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Zanzibar+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r8"
+  },
+  {
+   "nom": "Spice Route Zanzibar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Zanzibar",
+   "description": "Adresse halal appréciée des habitants de Zanzibar.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Zanzibar+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r9"
+  },
+  {
+   "nom": "Saffron Garden Zanzibar",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Zanzibar",
+   "description": "Adresse halal appréciée des habitants de Zanzibar.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Zanzibar+Zanzibar",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r10"
+  },
+  {
+   "nom": "Green Bowl Zanzibar",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Zanzibar",
+   "description": "Adresse halal appréciée des habitants de Zanzibar.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Zanzibar+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r11"
+  },
+  {
+   "nom": "Sultan Café Zanzibar",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Zanzibar",
+   "description": "Adresse halal appréciée des habitants de Zanzibar.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Zanzibar+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r12"
+  },
+  {
+   "nom": "Ocean Pearl Zanzibar",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Zanzibar",
+   "description": "Adresse halal appréciée des habitants de Zanzibar.",
+   "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Zanzibar+Zanzibar",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé du jour",
+   "id": "r13"
+  },
+  {
+   "nom": "Bella Halal Zanzibar",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Zanzibar",
+   "description": "Adresse halal appréciée des habitants de Zanzibar.",
+   "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Zanzibar+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Pizza halal au four à bois",
+   "id": "r14"
+  },
+  {
+   "nom": "Tokyo Halal Zanzibar",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Zanzibar",
+   "description": "Adresse halal appréciée des habitants de Zanzibar.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Zanzibar+Zanzibar",
+   "priceRange": "€€€",
+   "specialite": "Sushis certifiés halal",
+   "id": "r15"
+  },
+  {
+   "nom": "Chez Teranga",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Zanzibar",
+   "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Thiéboudienne",
+   "nombreAvis": 2086,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Maison Baobab",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Zanzibar",
+   "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Yassa poulet",
+   "nombreAvis": 915,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Sahel Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Zanzibar",
+   "description": "Adresse grillades & kebab appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Dibi et brochettes",
+   "nombreAvis": 2008,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Beit Cham",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Zanzibar",
+   "description": "Adresse libanais & levant appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1938,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Jollof House",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Zanzibar",
+   "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Jollof+House+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Jollof rice",
+   "nombreAvis": 643,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Spice Darbar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Zanzibar",
+   "description": "Adresse indien & pakistani appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 441,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Café Teranga",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Zanzibar",
+   "description": "Adresse pâtisserie & café appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Café Touba",
+   "nombreAvis": 1013,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Chez Teranga Zanzibar 8",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Zanzibar",
+   "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Zanzibar+8+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Thiéboudienne",
+   "nombreAvis": 108,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Maison Baobab Zanzibar 9",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Zanzibar",
+   "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Zanzibar+9+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Yassa poulet",
+   "nombreAvis": 2343,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Sahel Grill Zanzibar 10",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Zanzibar",
+   "description": "Adresse grillades & kebab appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Zanzibar+10+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Dibi et brochettes",
+   "nombreAvis": 3509,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Beit Cham Zanzibar 11",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Zanzibar",
+   "description": "Adresse libanais & levant appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Zanzibar+11+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1447,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Jollof House Zanzibar 12",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Zanzibar",
+   "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Jollof+House+Zanzibar+12+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Jollof rice",
+   "nombreAvis": 1170,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Spice Darbar Zanzibar 13",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Zanzibar",
+   "description": "Adresse indien & pakistani appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Zanzibar+13+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1578,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Café Teranga Zanzibar 14",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Zanzibar",
+   "description": "Adresse pâtisserie & café appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Zanzibar+14+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Café Touba",
+   "nombreAvis": 286,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Chez Teranga Zanzibar 15",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Zanzibar",
+   "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Zanzibar+15+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Thiéboudienne",
+   "nombreAvis": 46,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Maison Baobab Zanzibar 16",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Zanzibar",
+   "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Zanzibar+16+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Yassa poulet",
+   "nombreAvis": 941,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Sahel Grill Zanzibar 17",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Zanzibar",
+   "description": "Adresse grillades & kebab appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Zanzibar+17+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Dibi et brochettes",
+   "nombreAvis": 1926,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Beit Cham Zanzibar 18",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Zanzibar",
+   "description": "Adresse libanais & levant appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Zanzibar+18+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1219,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Jollof House Zanzibar 19",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Zanzibar",
+   "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Jollof+House+Zanzibar+19+Zanzibar",
+   "priceRange": "€",
+   "specialite": "Jollof rice",
+   "nombreAvis": 648,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Spice Darbar Zanzibar 20",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Zanzibar",
+   "description": "Adresse indien & pakistani appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Zanzibar+20+Zanzibar",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 782,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r35"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Park Hyatt Zanzibar",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Stone Town",
+   "description": "Palace en bord de mer à Stone Town",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Park+Hyatt+Zanzibar+Zanzibar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "lat": -6.1624587,
+   "lng": 39.1861058
+  },
+  {
+   "nom": "Zuri Zanzibar",
+   "categorie": "Resort & Spa",
+   "score": 4.5,
+   "adresse": "Kendwa",
+   "description": "Resort de plage haut de gamme",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Zuri+Zanzibar+Zanzibar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
+   "priceRange": "€€€€",
+   "id": "h2",
+   "lat": -6.2214791,
+   "lng": 39.2215892
+  },
+  {
+   "nom": "Zanzibar Grand Palace",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Stone Town",
+   "description": "Hôtel boutique au cœur de Stone Town",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Zanzibar+Grand+Palace+Zanzibar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
+   "priceRange": "€€",
+   "id": "h3"
+  },
+  {
+   "nom": "Grand Plaza Zanzibar",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Zanzibar",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Zanzibar+Zanzibar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
+   "priceRange": "€€€€",
+   "id": "h4"
+  },
+  {
+   "nom": "City Comfort Hotel Zanzibar",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Zanzibar",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Zanzibar+Zanzibar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
+   "priceRange": "€€€",
+   "id": "h5"
+  },
+  {
+   "nom": "Boutique Riad Zanzibar",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Zanzibar",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Zanzibar+Zanzibar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
+   "priceRange": "€€€",
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Zanzibar 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Zanzibar",
+   "description": "Hébergement halal-friendly à Zanzibar.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Zanzibar+0+Zanzibar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
+   "priceRange": "€€€€",
+   "nombreAvis": 898,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Zanzibar",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Zanzibar",
+   "description": "Hébergement halal-friendly à Zanzibar.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Zanzibar+Zanzibar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
+   "priceRange": "€€€",
+   "nombreAvis": 2284,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Zanzibar",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Zanzibar",
+   "description": "Hébergement halal-friendly à Zanzibar.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Zanzibar+Zanzibar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
+   "priceRange": "€€€",
+   "nombreAvis": 1563,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Zanzibar",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Zanzibar",
+   "description": "Hébergement halal-friendly à Zanzibar.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Zanzibar+Zanzibar",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
+   "priceRange": "€€",
+   "nombreAvis": 1649,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Stone Town (UNESCO)",
+   "categorie": "Histoire & Culture",
+   "description": "Vieille ville swahilie aux portes sculptées",
+   "duree": "3h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Stone+Town+%28UNESCO%29+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Stone+Town+%28UNESCO%29+Zanzibar",
+   "id": "a1"
+  },
+  {
+   "nom": "Tour des épices",
+   "categorie": "Nature & Aventure",
+   "description": "Plantations de girofle, vanille et cannelle",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Tour+des+%C3%A9pices+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+des+%C3%A9pices+Zanzibar",
+   "id": "a2"
+  },
+  {
+   "nom": "Plage de Nungwi",
+   "categorie": "Nature & Aventure",
+   "description": "Plage de sable blanc au nord de l'île",
+   "duree": "Journée",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Plage+de+Nungwi+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Nungwi+Zanzibar",
+   "id": "a3"
+  },
+  {
+   "nom": "Mosquée Malindi & front de mer",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquées historiques de Stone Town",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Malindi+%26+front+de+mer+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Malindi+%26+front+de+mer+Zanzibar",
+   "id": "a4"
+  },
+  {
+   "nom": "Île de la prison (Changuu)",
+   "categorie": "Nature & Aventure",
+   "description": "Tortues géantes et snorkeling",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=%C3%8Ele+de+la+prison+%28Changuu%29+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=%C3%8Ele+de+la+prison+%28Changuu%29+Zanzibar",
+   "id": "a5"
+  },
+  {
+   "nom": "Forêt de Jozani",
+   "categorie": "Nature & Aventure",
+   "description": "Singes colobes rouges endémiques",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=For%C3%AAt+de+Jozani+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=For%C3%AAt+de+Jozani+Zanzibar",
+   "id": "a6"
+  },
+  {
+   "nom": "Banc de sable de Nakupenda",
+   "categorie": "Nature & Aventure",
+   "description": "Langue de sable au milieu du lagon",
+   "duree": "Demi-journée",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Banc+de+sable+de+Nakupenda+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Banc+de+sable+de+Nakupenda+Zanzibar",
+   "id": "a7"
+  },
+  {
+   "nom": "Marché de Darajani",
+   "categorie": "Shopping & Souks",
+   "description": "Marché aux épices et produits locaux",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Darajani+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Darajani+Zanzibar",
+   "id": "a8"
+  },
+  {
+   "nom": "Vieille ville de Zanzibar",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Zanzibar+Zanzibar",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand souk de Zanzibar",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Zanzibar+Zanzibar",
+   "id": "a10"
+  },
+  {
+   "nom": "Quartier historique de Zanzibar",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Zanzibar+Zanzibar",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Zanzibar",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Zanzibar+Zanzibar",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Zanzibar",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Zanzibar+Zanzibar",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Zanzibar",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Zanzibar+Zanzibar",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Zanzibar",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Zanzibar+Zanzibar",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Zanzibar",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Zanzibar+Zanzibar",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Zanzibar",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Zanzibar+Zanzibar",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Zanzibar",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Zanzibar+Zanzibar",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Zanzibar",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Zanzibar+Zanzibar",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Zanzibar",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Zanzibar+Zanzibar",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Zanzibar+Zanzibar",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Malindi",
+   "description": "Ancienne mosquée du port de Stone Town",
+   "adresse": "Malindi, Stone Town",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Malindi+Zanzibar",
+   "capacite": 1058,
+   "anneeConstruction": 1918,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": -6.1659,
     "lng": 39.2026
+   }
   },
-  "image_alt": "Vue de Zanzibar, Tanzanie",
-  "statistiques": {
-    "mosquees": 300,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 98
+  {
+   "nom": "Mosquée Gofu Juu",
+   "description": "Mosquée historique au cœur de la vieille ville",
+   "adresse": "Stone Town",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Gofu+Juu+Zanzibar",
+   "capacite": 1772,
+   "anneeConstruction": 1982,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.1659,
+    "lng": 39.2026
+   }
   },
-  "infos_pratiques": {
-    "langue": "Swahili, Anglais",
-    "monnaie": "Shilling tanzanien (TZS)",
-    "meilleure_periode": "Juin à Octobre",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Réglementé",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Zanzibar",
+   "description": "Mosquée fréquentée de Zanzibar, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Zanzibar",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Zanzibar+Zanzibar",
+   "capacite": 3856,
+   "anneeConstruction": 2016,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.1659,
+    "lng": 39.2026
+   }
   },
-  "infoPratique": {
-    "visa": "Visa à l'arrivée ou e-Visa tanzanien",
-    "vaccins": "Fièvre jaune si provenance zone à risque, paludisme",
-    "transport": "Taxi, dala-dala, transferts privés",
-    "priseElectrique": "Type D/G — 230V",
-    "decalageHoraire": "+1h à +2h par rapport à Paris"
+  {
+   "nom": "Grande Mosquée de Zanzibar",
+   "description": "Mosquée fréquentée de Zanzibar, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Zanzibar",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Zanzibar+Zanzibar",
+   "capacite": 1267,
+   "anneeConstruction": 1987,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.1659,
+    "lng": 39.2026
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Lukmaan Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Stone Town",
-      "description": "Cantine swahilie réputée de Stone Town",
-      "mapsUrl": "https://maps.google.com/?q=Lukmaan+Restaurant+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Cuisine swahilie",
-      "id": "r1"
-    },
-    {
-      "nom": "Forodhani Gardens",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Stone Town",
-      "description": "Marché nocturne de street food en bord de mer",
-      "mapsUrl": "https://maps.google.com/?q=Forodhani+Gardens+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Brochettes de mer",
-      "id": "r2"
-    },
-    {
-      "nom": "Zanzibar Coffee House",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Stone Town",
-      "description": "Café d'altitude et douceurs",
-      "mapsUrl": "https://maps.google.com/?q=Zanzibar+Coffee+House+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Café et pâtisseries",
-      "id": "r3"
-    },
-    {
-      "nom": "Maru Maru Rooftop",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Stone Town",
-      "description": "Rooftop avec vue sur les toits de pierre",
-      "mapsUrl": "https://maps.google.com/?q=Maru+Maru+Rooftop+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Poisson grillé",
-      "id": "r4"
-    },
-    {
-      "nom": "The Rock (version halal)",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Michamvi",
-      "description": "Restaurant iconique sur un rocher",
-      "mapsUrl": "https://maps.google.com/?q=The+Rock+%28version+halal%29+Zanzibar",
-      "priceRange": "€€€",
-      "specialite": "Fruits de mer",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Zanzibar",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Zanzibar",
-      "description": "Adresse halal appréciée des habitants de Zanzibar.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Zanzibar+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Zanzibar",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Zanzibar",
-      "description": "Adresse halal appréciée des habitants de Zanzibar.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Zanzibar+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Zanzibar",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Zanzibar",
-      "description": "Adresse halal appréciée des habitants de Zanzibar.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Zanzibar+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Zanzibar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Zanzibar",
-      "description": "Adresse halal appréciée des habitants de Zanzibar.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Zanzibar+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Zanzibar",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Zanzibar",
-      "description": "Adresse halal appréciée des habitants de Zanzibar.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Zanzibar+Zanzibar",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Zanzibar",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Zanzibar",
-      "description": "Adresse halal appréciée des habitants de Zanzibar.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Zanzibar+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Zanzibar",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Zanzibar",
-      "description": "Adresse halal appréciée des habitants de Zanzibar.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Zanzibar+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Zanzibar",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Zanzibar",
-      "description": "Adresse halal appréciée des habitants de Zanzibar.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Zanzibar+Zanzibar",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Zanzibar",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Zanzibar",
-      "description": "Adresse halal appréciée des habitants de Zanzibar.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Zanzibar+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Zanzibar",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Zanzibar",
-      "description": "Adresse halal appréciée des habitants de Zanzibar.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Zanzibar+Zanzibar",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Chez Teranga",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Zanzibar",
-      "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Thiéboudienne",
-      "nombreAvis": 2086,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Maison Baobab",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Zanzibar",
-      "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Yassa poulet",
-      "nombreAvis": 915,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Sahel Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Zanzibar",
-      "description": "Adresse grillades & kebab appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Dibi et brochettes",
-      "nombreAvis": 2008,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Beit Cham",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Zanzibar",
-      "description": "Adresse libanais & levant appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1938,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Jollof House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Zanzibar",
-      "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Jollof+House+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Jollof rice",
-      "nombreAvis": 643,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Spice Darbar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Zanzibar",
-      "description": "Adresse indien & pakistani appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 441,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Café Teranga",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Zanzibar",
-      "description": "Adresse pâtisserie & café appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Café Touba",
-      "nombreAvis": 1013,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Chez Teranga Zanzibar 8",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Zanzibar",
-      "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Zanzibar+8+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Thiéboudienne",
-      "nombreAvis": 108,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Maison Baobab Zanzibar 9",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Zanzibar",
-      "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Zanzibar+9+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Yassa poulet",
-      "nombreAvis": 2343,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Sahel Grill Zanzibar 10",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Zanzibar",
-      "description": "Adresse grillades & kebab appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Zanzibar+10+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Dibi et brochettes",
-      "nombreAvis": 3509,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Beit Cham Zanzibar 11",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Zanzibar",
-      "description": "Adresse libanais & levant appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Zanzibar+11+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1447,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Jollof House Zanzibar 12",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Zanzibar",
-      "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Jollof+House+Zanzibar+12+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Jollof rice",
-      "nombreAvis": 1170,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Spice Darbar Zanzibar 13",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Zanzibar",
-      "description": "Adresse indien & pakistani appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Zanzibar+13+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1578,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Café Teranga Zanzibar 14",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Zanzibar",
-      "description": "Adresse pâtisserie & café appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Zanzibar+14+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Café Touba",
-      "nombreAvis": 286,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Chez Teranga Zanzibar 15",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Zanzibar",
-      "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Zanzibar+15+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Thiéboudienne",
-      "nombreAvis": 46,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Maison Baobab Zanzibar 16",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Zanzibar",
-      "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Zanzibar+16+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Yassa poulet",
-      "nombreAvis": 941,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Sahel Grill Zanzibar 17",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Zanzibar",
-      "description": "Adresse grillades & kebab appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Zanzibar+17+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Dibi et brochettes",
-      "nombreAvis": 1926,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Beit Cham Zanzibar 18",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Zanzibar",
-      "description": "Adresse libanais & levant appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Zanzibar+18+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1219,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Jollof House Zanzibar 19",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Zanzibar",
-      "description": "Adresse traditionnel local appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Jollof+House+Zanzibar+19+Zanzibar",
-      "priceRange": "€",
-      "specialite": "Jollof rice",
-      "nombreAvis": 648,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Spice Darbar Zanzibar 20",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Zanzibar",
-      "description": "Adresse indien & pakistani appréciée à Zanzibar, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Zanzibar+20+Zanzibar",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 782,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r35"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Park Hyatt Zanzibar",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Stone Town",
-      "description": "Palace en bord de mer à Stone Town",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Park+Hyatt+Zanzibar+Zanzibar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
-      "priceRange": "€€€€",
-      "id": "h1"
-    },
-    {
-      "nom": "Zuri Zanzibar",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Kendwa",
-      "description": "Resort de plage haut de gamme",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Zuri+Zanzibar+Zanzibar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
-      "priceRange": "€€€€",
-      "id": "h2"
-    },
-    {
-      "nom": "Zanzibar Grand Palace",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Stone Town",
-      "description": "Hôtel boutique au cœur de Stone Town",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Zanzibar+Grand+Palace+Zanzibar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
-      "priceRange": "€€",
-      "id": "h3"
-    },
-    {
-      "nom": "Grand Plaza Zanzibar",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Zanzibar",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Zanzibar+Zanzibar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
-      "priceRange": "€€€€",
-      "id": "h4"
-    },
-    {
-      "nom": "City Comfort Hotel Zanzibar",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Zanzibar",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Zanzibar+Zanzibar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Zanzibar",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Zanzibar",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Zanzibar+Zanzibar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Zanzibar 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Zanzibar",
-      "description": "Hébergement halal-friendly à Zanzibar.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Zanzibar+0+Zanzibar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
-      "priceRange": "€€€€",
-      "nombreAvis": 898,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Zanzibar",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Zanzibar",
-      "description": "Hébergement halal-friendly à Zanzibar.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Zanzibar+Zanzibar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
-      "priceRange": "€€€",
-      "nombreAvis": 2284,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Zanzibar",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Zanzibar",
-      "description": "Hébergement halal-friendly à Zanzibar.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Zanzibar+Zanzibar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
-      "priceRange": "€€€",
-      "nombreAvis": 1563,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Zanzibar",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Zanzibar",
-      "description": "Hébergement halal-friendly à Zanzibar.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Zanzibar+Zanzibar",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Zanzibar&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=zanzibar",
-      "priceRange": "€€",
-      "nombreAvis": 1649,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Stone Town (UNESCO)",
-      "categorie": "Histoire & Culture",
-      "description": "Vieille ville swahilie aux portes sculptées",
-      "duree": "3h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Stone+Town+%28UNESCO%29+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Stone+Town+%28UNESCO%29+Zanzibar",
-      "id": "a1"
-    },
-    {
-      "nom": "Tour des épices",
-      "categorie": "Nature & Aventure",
-      "description": "Plantations de girofle, vanille et cannelle",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Tour+des+%C3%A9pices+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+des+%C3%A9pices+Zanzibar",
-      "id": "a2"
-    },
-    {
-      "nom": "Plage de Nungwi",
-      "categorie": "Nature & Aventure",
-      "description": "Plage de sable blanc au nord de l'île",
-      "duree": "Journée",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Plage+de+Nungwi+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+Nungwi+Zanzibar",
-      "id": "a3"
-    },
-    {
-      "nom": "Mosquée Malindi & front de mer",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquées historiques de Stone Town",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Malindi+%26+front+de+mer+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Malindi+%26+front+de+mer+Zanzibar",
-      "id": "a4"
-    },
-    {
-      "nom": "Île de la prison (Changuu)",
-      "categorie": "Nature & Aventure",
-      "description": "Tortues géantes et snorkeling",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=%C3%8Ele+de+la+prison+%28Changuu%29+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=%C3%8Ele+de+la+prison+%28Changuu%29+Zanzibar",
-      "id": "a5"
-    },
-    {
-      "nom": "Forêt de Jozani",
-      "categorie": "Nature & Aventure",
-      "description": "Singes colobes rouges endémiques",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=For%C3%AAt+de+Jozani+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=For%C3%AAt+de+Jozani+Zanzibar",
-      "id": "a6"
-    },
-    {
-      "nom": "Banc de sable de Nakupenda",
-      "categorie": "Nature & Aventure",
-      "description": "Langue de sable au milieu du lagon",
-      "duree": "Demi-journée",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Banc+de+sable+de+Nakupenda+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Banc+de+sable+de+Nakupenda+Zanzibar",
-      "id": "a7"
-    },
-    {
-      "nom": "Marché de Darajani",
-      "categorie": "Shopping & Souks",
-      "description": "Marché aux épices et produits locaux",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Darajani+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Darajani+Zanzibar",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Zanzibar",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Zanzibar+Zanzibar",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Zanzibar",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Zanzibar+Zanzibar",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Zanzibar",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Zanzibar+Zanzibar",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Zanzibar",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Zanzibar+Zanzibar",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Zanzibar",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Zanzibar+Zanzibar",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Zanzibar",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Zanzibar+Zanzibar",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Zanzibar",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Zanzibar+Zanzibar",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Zanzibar",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Zanzibar+Zanzibar",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Zanzibar",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Zanzibar+Zanzibar",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Zanzibar",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Zanzibar+Zanzibar",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Zanzibar",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Zanzibar+Zanzibar",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Zanzibar",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Zanzibar+Zanzibar",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Zanzibar+Zanzibar",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Malindi",
-      "description": "Ancienne mosquée du port de Stone Town",
-      "adresse": "Malindi, Stone Town",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Malindi+Zanzibar",
-      "capacite": 1058,
-      "anneeConstruction": 1918,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.1659,
-        "lng": 39.2026
-      }
-    },
-    {
-      "nom": "Mosquée Gofu Juu",
-      "description": "Mosquée historique au cœur de la vieille ville",
-      "adresse": "Stone Town",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Gofu+Juu+Zanzibar",
-      "capacite": 1772,
-      "anneeConstruction": 1982,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.1659,
-        "lng": 39.2026
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Zanzibar",
-      "description": "Mosquée fréquentée de Zanzibar, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Zanzibar",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Zanzibar+Zanzibar",
-      "capacite": 3856,
-      "anneeConstruction": 2016,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.1659,
-        "lng": 39.2026
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Zanzibar",
-      "description": "Mosquée fréquentée de Zanzibar, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Zanzibar",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Zanzibar+Zanzibar",
-      "capacite": 1267,
-      "anneeConstruction": 1987,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.1659,
-        "lng": 39.2026
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Zanzibar",
-      "description": "Mosquée fréquentée de Zanzibar, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Zanzibar",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Zanzibar+Zanzibar",
-      "capacite": 6339,
-      "anneeConstruction": 2019,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.1659,
-        "lng": 39.2026
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Zanzibar",
-      "description": "Mosquée fréquentée de Zanzibar, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Zanzibar",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Zanzibar+Zanzibar",
-      "capacite": 5695,
-      "anneeConstruction": 1975,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.1659,
-        "lng": 39.2026
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Zanzibar",
-      "description": "Mosquée fréquentée de Zanzibar, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Zanzibar",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Zanzibar+Zanzibar",
-      "capacite": 2260,
-      "anneeConstruction": 1940,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.1659,
-        "lng": 39.2026
-      }
-    }
-  ],
-  "tags": [
-    "ile-aux-epices",
-    "plage",
-    "swahili",
-    "unesco",
-    "sultanat",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Chez Teranga",
-      "Maison Baobab Zanzibar 9",
-      "Sahel Grill Zanzibar 17",
-      "Maison Baobab",
-      "Sahel Grill Zanzibar 10"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Lukmaan Restaurant",
-      "Forodhani Gardens",
-      "Zanzibar Coffee House",
-      "Maru Maru Rooftop",
-      "Beit Beirut Zanzibar"
-    ],
-    "incontournables": [
-      "Sahel Grill Zanzibar 10",
-      "Maison Baobab Zanzibar 9",
-      "Chez Teranga",
-      "Sahel Grill",
-      "Beit Cham"
-    ],
-    "pepitesCachees": [
-      "Lukmaan Restaurant",
-      "Forodhani Gardens",
-      "Zanzibar Coffee House"
-    ],
-    "idealFamille": [
-      "Chez Teranga",
-      "Maison Baobab",
-      "Sahel Grill",
-      "Beit Cham",
-      "Jollof House"
-    ],
-    "gastronomique": [
-      "Saffron Garden Zanzibar"
-    ],
-    "ouvertNuit": [
-      "Chez Teranga",
-      "Sahel Grill",
-      "Beit Cham"
-    ],
-    "vueExceptionnelle": [
-      "Chez Teranga",
-      "Maison Baobab Zanzibar 9",
-      "Sahel Grill Zanzibar 17"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Zanzibar",
+   "description": "Mosquée fréquentée de Zanzibar, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Zanzibar",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Zanzibar+Zanzibar",
+   "capacite": 6339,
+   "anneeConstruction": 2019,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.1659,
+    "lng": 39.2026
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Zanzibar",
+   "description": "Mosquée fréquentée de Zanzibar, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Zanzibar",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Zanzibar+Zanzibar",
+   "capacite": 5695,
+   "anneeConstruction": 1975,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.1659,
+    "lng": 39.2026
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Zanzibar",
+   "description": "Mosquée fréquentée de Zanzibar, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Zanzibar",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Zanzibar+Zanzibar",
+   "capacite": 2260,
+   "anneeConstruction": 1940,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.1659,
+    "lng": 39.2026
+   }
   }
+ ],
+ "tags": [
+  "ile-aux-epices",
+  "plage",
+  "swahili",
+  "unesco",
+  "sultanat",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Chez Teranga",
+   "Maison Baobab Zanzibar 9",
+   "Sahel Grill Zanzibar 17",
+   "Maison Baobab",
+   "Sahel Grill Zanzibar 10"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Lukmaan Restaurant",
+   "Forodhani Gardens",
+   "Zanzibar Coffee House",
+   "Maru Maru Rooftop",
+   "Beit Beirut Zanzibar"
+  ],
+  "incontournables": [
+   "Sahel Grill Zanzibar 10",
+   "Maison Baobab Zanzibar 9",
+   "Chez Teranga",
+   "Sahel Grill",
+   "Beit Cham"
+  ],
+  "pepitesCachees": [
+   "Lukmaan Restaurant",
+   "Forodhani Gardens",
+   "Zanzibar Coffee House"
+  ],
+  "idealFamille": [
+   "Chez Teranga",
+   "Maison Baobab",
+   "Sahel Grill",
+   "Beit Cham",
+   "Jollof House"
+  ],
+  "gastronomique": [
+   "Saffron Garden Zanzibar"
+  ],
+  "ouvertNuit": [
+   "Chez Teranga",
+   "Sahel Grill",
+   "Beit Cham"
+  ],
+  "vueExceptionnelle": [
+   "Chez Teranga",
+   "Maison Baobab Zanzibar 9",
+   "Sahel Grill Zanzibar 17"
+  ]
+ }
 }

@@ -1,2082 +1,2099 @@
 {
-  "nom": "Riyadh",
-  "pays": "Arabie Saoudite",
-  "slug": "riyadh",
-  "image": "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=1400&q=85",
-  "description": "Riyadh, capitale du royaume, marie gratte-ciel futuristes et patrimoine najdi. Diriyah, berceau de l'État saoudien, est classée à l'UNESCO.",
-  "descriptionLongue": "Riyadh incarne la transformation de l'Arabie : la Kingdom Centre Tower et les nouveaux quartiers côtoient les forteresses de terre du vieux Najd. Diriyah, fondée au XVe siècle et inscrite à l'UNESCO, raconte les origines du royaume. La cuisine najdie — kabsa, jareesh, dattes — y est reine. Ville entièrement halal, Riyadh offre musées modernes, souks traditionnels et l'impressionnant Edge of the World aux portes du désert.",
-  "halalScore": 9.3,
-  "score_halal": 4.7,
+ "nom": "Riyadh",
+ "pays": "Arabie Saoudite",
+ "slug": "riyadh",
+ "image": "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1586724237569-f3d0c1dee8c6?w=1400&q=85",
+ "description": "Riyadh, capitale du royaume, marie gratte-ciel futuristes et patrimoine najdi. Diriyah, berceau de l'État saoudien, est classée à l'UNESCO.",
+ "descriptionLongue": "Riyadh incarne la transformation de l'Arabie : la Kingdom Centre Tower et les nouveaux quartiers côtoient les forteresses de terre du vieux Najd. Diriyah, fondée au XVe siècle et inscrite à l'UNESCO, raconte les origines du royaume. La cuisine najdie — kabsa, jareesh, dattes — y est reine. Ville entièrement halal, Riyadh offre musées modernes, souks traditionnels et l'impressionnant Edge of the World aux portes du désert.",
+ "halalScore": 9.3,
+ "score_halal": 4.7,
+ "mosquees": 4000,
+ "population": "7,7 millions",
+ "langue": "Arabe",
+ "monnaie": "Riyal saoudien (SAR)",
+ "fuseau": "UTC+3",
+ "meilleureEpoque": "Novembre à Mars",
+ "prixMoyenNuit": "130€",
+ "continent": "Asie",
+ "codeISO": "SA",
+ "pays_slug": "arabie-saoudite",
+ "region": "Najd",
+ "meta_title": "Voyage Halal à Riyadh — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Riyadh — Halal Trust Score 9.3/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Riyadh — Halal Trust Score 9.3/10.",
+ "coordonnees": {
+  "lat": 24.7136,
+  "lng": 46.6753
+ },
+ "image_alt": "Vue de Riyadh, Arabie Saoudite",
+ "statistiques": {
   "mosquees": 4000,
-  "population": "7,7 millions",
+  "restaurants_halal": 800,
+  "habitants_musulmans_pct": 99,
+  "hotels": 15
+ },
+ "infos_pratiques": {
   "langue": "Arabe",
   "monnaie": "Riyal saoudien (SAR)",
-  "fuseau": "UTC+3",
-  "meilleureEpoque": "Novembre à Mars",
-  "prixMoyenNuit": "130€",
-  "continent": "Asie",
-  "codeISO": "SA",
-  "pays_slug": "arabie-saoudite",
-  "region": "Najd",
-  "meta_title": "Voyage Halal à Riyadh — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Riyadh — Halal Trust Score 9.3/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Riyadh — Halal Trust Score 9.3/10.",
-  "coordonnees": {
+  "meilleure_periode": "Novembre à Mars",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Interdit",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "e-Visa touristique disponible en ligne",
+  "vaccins": "Aucun obligatoire (hors Hajj)",
+  "transport": "Nouveau métro de Riyadh, taxis, Uber/Careem",
+  "priseElectrique": "Type G — 220V",
+  "decalageHoraire": "+2h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Najd Village",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Cuisine najdie traditionnelle, ambiance tente à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Najd+Village+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Cuisine najdie traditionnelle",
+   "nombreAvis": 1377,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Al-Orjouan",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Riyadh",
+   "description": "Oriental gastronomique, Riyadh InterContinental à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Orjouan+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Oriental gastronomique",
+   "nombreAvis": 1564,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Nozomi Riyadh",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Riyadh",
+   "description": "Japonais halal premium à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Nozomi+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Japonais halal premium",
+   "nombreAvis": 1092,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Coya Riyadh",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Riyadh",
+   "description": "Péruvien halal luxe à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Coya+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Péruvien halal luxe",
+   "nombreAvis": 2002,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Zuma Riyadh",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Japonais contemporain halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Zuma+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Japonais contemporain halal",
+   "nombreAvis": 595,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Cielo Sky Lounge",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Gastronomique, vue panoramique à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Cielo+Sky+Lounge+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique",
+   "nombreAvis": 1992,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Globe Restaurant Riyadh",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Vue tour Kingdom à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Globe+Restaurant+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Vue tour kingdom",
+   "nombreAvis": 194,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Spazio 77",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Riyadh",
+   "description": "Italien halal, The Village à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Spazio+77+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Italien halal",
+   "nombreAvis": 2059,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Fuego Latino",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Riyadh",
+   "description": "Grill latin halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Fuego+Latino+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Grill latin halal",
+   "nombreAvis": 1066,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "PF Chang's Riyadh",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Asiatique américain halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=PF+Chang%27s+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Asiatique américain halal",
+   "nombreAvis": 173,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "TGI Fridays Riyadh",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Américain halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=TGI+Fridays+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Américain halal",
+   "nombreAvis": 1318,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Benihana Riyadh",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Japonais teppanyaki halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Benihana+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Japonais teppanyaki halal",
+   "nombreAvis": 1417,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Sakura Japanese Restaurant",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Sushi halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Sakura+Japanese+Restaurant+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Sushi halal",
+   "nombreAvis": 2640,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Kei Japanese",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Kaiseki halal premium à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Kei+Japanese+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Kaiseki halal premium",
+   "nombreAvis": 1328,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "The Grill Room",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Riyadh",
+   "description": "Steakhouse halal anglais à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=The+Grill+Room+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Steakhouse halal anglais",
+   "nombreAvis": 719,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Marakesh Restaurant Riyadh",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Marocain authentique à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Marakesh+Restaurant+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Marocain authentique",
+   "nombreAvis": 891,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Al-Baik Riyadh",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Riyadh",
+   "description": "Franchise légendaire à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Baik+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Franchise légendaire",
+   "nombreAvis": 1129,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Herfy Riyadh",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Riyadh",
+   "description": "Burger saoudien à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Herfy+Riyadh+Riyadh",
+   "priceRange": "€€",
+   "specialite": "Burger saoudien",
+   "nombreAvis": 2074,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Kudu Riyadh",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Riyadh",
+   "description": "Fast premium saoudien à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Kudu+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Fast premium saoudien",
+   "nombreAvis": 796,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Mama Noura Riyadh",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Riyadh",
+   "description": "Shawarma réputé à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Mama+Noura+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Shawarma réputé",
+   "nombreAvis": 100,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Karachi Darbar Riyadh",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Riyadh",
+   "description": "Pakistanais populaire à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Karachi+Darbar+Riyadh+Riyadh",
+   "priceRange": "€",
+   "specialite": "Pakistanais populaire",
+   "nombreAvis": 2094,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Moti Mahal Riyadh",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Indien nord premium à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Moti+Mahal+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Indien nord premium",
+   "nombreAvis": 271,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Bukhara Riyadh",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Riyadh",
+   "description": "Indien signature à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Bukhara+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Indien signature",
+   "nombreAvis": 984,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Beirut Restaurant Riyadh",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Riyadh",
+   "description": "Libanais à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Beirut+Restaurant+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Libanais",
+   "nombreAvis": 447,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Mouneh Lebanese",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Libanais traditionnel à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Mouneh+Lebanese+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Libanais traditionnel",
+   "nombreAvis": 2119,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Damascus Gate Riyadh",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Syrien gastronomique à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Damascus+Gate+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Syrien gastronomique",
+   "nombreAvis": 2163,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Arabian Nights Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Riyadh",
+   "description": "Saoudien show culinaire à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Arabian+Nights+Restaurant+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Saoudien show culinaire",
+   "nombreAvis": 1528,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Al-Khayma",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Riyadh",
+   "description": "Expérience bédouine en tente à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Khayma+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Expérience bédouine en tente",
+   "nombreAvis": 1644,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Matam Al-Aqeeq",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Traditionnel Najd à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Matam+Al-Aqeeq+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Traditionnel najd",
+   "nombreAvis": 1426,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Maison Landemaine Riyadh",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Boulangerie française halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Landemaine+Riyadh+Riyadh",
+   "priceRange": "€€",
+   "specialite": "Boulangerie française halal",
+   "nombreAvis": 1022,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Paul Riyadh",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Patisserie française halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Paul+Riyadh+Riyadh",
+   "priceRange": "€€",
+   "specialite": "Patisserie française halal",
+   "nombreAvis": 868,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Chocolat Macarons",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Pâtisseries halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Chocolat+Macarons+Riyadh",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries halal",
+   "nombreAvis": 1410,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Bateel Riyadh",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Café-dattes premium à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Bateel+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Café-dattes premium",
+   "nombreAvis": 1308,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Sketch Riyadh",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Brunch branché à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Sketch+Riyadh+Riyadh",
+   "priceRange": "€€",
+   "specialite": "Brunch branché",
+   "nombreAvis": 890,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "99 Sushi Bar Riyadh",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Riyadh",
+   "description": "Japonais fusion halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=99+Sushi+Bar+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Japonais fusion halal",
+   "nombreAvis": 998,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Shang Palace Riyadh",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Riyadh",
+   "description": "Chinois premium halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Shang+Palace+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Chinois premium halal",
+   "nombreAvis": 2571,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Long Feng Chinese",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Cantonais halal classique à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Long+Feng+Chinese+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Cantonais halal classique",
+   "nombreAvis": 198,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Korean Village Riyadh",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Coréen authentique halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Korean+Village+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Coréen authentique halal",
+   "nombreAvis": 1348,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Thai Orchid Riyadh",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Thaï premium halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Thai+Orchid+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Thaï premium halal",
+   "nombreAvis": 151,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Sultanahmet Kebap Riyadh",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Turc authentique à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Sultanahmet+Kebap+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Turc authentique",
+   "nombreAvis": 1584,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Günaydın Riyadh",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Riyadh",
+   "description": "Steakhouse turc halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=G%C3%BCnayd%C4%B1n+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Steakhouse turc halal",
+   "nombreAvis": 2521,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Bosphorus Riyadh",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Riyadh",
+   "description": "Ottoman gastronomique à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Bosphorus+Riyadh+Riyadh",
+   "priceRange": "€€€€",
+   "specialite": "Ottoman gastronomique",
+   "nombreAvis": 3339,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Yemen Club Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Yéménite traditionnel à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Yemen+Club+Restaurant+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Yéménite traditionnel",
+   "nombreAvis": 1301,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Iraqi Delight Riyadh",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Mezzeh irakien à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Iraqi+Delight+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Mezzeh irakien",
+   "nombreAvis": 347,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Egyptian Cuisine Riyadh",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Riyadh",
+   "description": "Koshari et ful à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Egyptian+Cuisine+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Koshari et ful",
+   "nombreAvis": 1967,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Moroccan Spice Riyadh",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Tajines variés à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Moroccan+Spice+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Tajines variés",
+   "nombreAvis": 2075,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Cheesecake Factory Riyadh",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Riyadh",
+   "description": "Américain halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Cheesecake+Factory+Riyadh+Riyadh",
+   "priceRange": "€€",
+   "specialite": "Américain halal",
+   "nombreAvis": 95,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Applebee's Riyadh",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Américain halal à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Applebee%27s+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Américain halal",
+   "nombreAvis": 2142,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Johnny Rockets Riyadh",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Burgers halal américains à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Johnny+Rockets+Riyadh+Riyadh",
+   "priceRange": "€€",
+   "specialite": "Burgers halal américains",
+   "nombreAvis": 979,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Al-Romansiah Riyadh",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Grillades saoudiennes chain à Riyadh.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Romansiah+Riyadh+Riyadh",
+   "priceRange": "€€€",
+   "specialite": "Grillades saoudiennes chain",
+   "nombreAvis": 1154,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r50"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Four Seasons Hotel Riyadh",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Ultra-luxe Kingdom Tower à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Hotel+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€€",
+   "nombreAvis": 151,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h1",
+   "lat": 24.711037,
+   "lng": 46.6733604
+  },
+  {
+   "nom": "Ritz-Carlton Riyadh",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Luxe palais à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Ritz-Carlton+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€€",
+   "nombreAvis": 2453,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h2"
+  },
+  {
+   "nom": "Waldorf Astoria Riyadh",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Riyadh",
+   "description": "Luxe à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Waldorf+Astoria+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€€",
+   "nombreAvis": 549,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h3"
+  },
+  {
+   "nom": "Mandarin Oriental Riyadh",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Ultra-luxe à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€€",
+   "nombreAvis": 1545,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4"
+  },
+  {
+   "nom": "Park Hyatt Riyadh",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Luxe à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Park+Hyatt+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€€",
+   "nombreAvis": 313,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5"
+  },
+  {
+   "nom": "InterContinental Riyadh",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Riyadh",
+   "description": "Luxe classique à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=InterContinental+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€€",
+   "nombreAvis": 2400,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": 24.6671024,
+   "lng": 46.6913095
+  },
+  {
+   "nom": "JW Marriott Hotel Riyadh",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Riyadh",
+   "description": "Luxe à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=JW+Marriott+Hotel+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€€",
+   "nombreAvis": 2183,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "Hilton Riyadh Hotel Residences",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Luxe à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hilton+Riyadh+Hotel+Residences+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€€",
+   "nombreAvis": 1130,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": 24.7851909,
+   "lng": 46.7281813
+  },
+  {
+   "nom": "Sheraton Riyadh",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Riyadh",
+   "description": "Standard-luxe à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Sheraton+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€€",
+   "nombreAvis": 1649,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h9",
+   "lat": 24.7273498,
+   "lng": 46.6653935
+  },
+  {
+   "nom": "Radisson Blu Hotel Riyadh",
+   "categorie": "Standard",
+   "score": 4.8,
+   "adresse": "Riyadh",
+   "description": "Standard à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Hotel+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€",
+   "nombreAvis": 209,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10",
+   "lat": 24.7523077,
+   "lng": 46.7250531
+  },
+  {
+   "nom": "Crowne Plaza Riyadh",
+   "categorie": "Standard",
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Standard à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Crowne+Plaza+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€",
+   "nombreAvis": 1304,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h11",
+   "lat": 24.7385543,
+   "lng": 46.6355009
+  },
+  {
+   "nom": "Holiday Inn Riyadh",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Standard à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Holiday+Inn+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€",
+   "nombreAvis": 2334,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12",
+   "lat": 24.6838987,
+   "lng": 46.6879789
+  },
+  {
+   "nom": "Novotel Riyadh",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Riyadh",
+   "description": "Standard abordable à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Novotel+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€€",
+   "nombreAvis": 1908,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h13",
+   "lat": 24.6844763,
+   "lng": 46.6900921
+  },
+  {
+   "nom": "Centro Riyadh by Rotana",
+   "categorie": "Budget",
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Budget confort à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Centro+Riyadh+by+Rotana+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€",
+   "nombreAvis": 1454,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14"
+  },
+  {
+   "nom": "Al-Hamra Suites Riyadh",
+   "categorie": "Budget",
+   "score": 4.7,
+   "adresse": "Riyadh",
+   "description": "Budget à Riyadh.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Al-Hamra+Suites+Riyadh+Riyadh",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
+   "priceRange": "€€",
+   "nombreAvis": 654,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Diriyah & At-Turaif UNESCO",
+   "categorie": "Histoire & Culture",
+   "description": "Berceau de l'État saoudien, citadelle de terre classée à l'UNESCO.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Diriyah+%26+At-Turaif+UNESCO+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Diriyah+%26+At-Turaif+UNESCO+Riyadh",
+   "id": "a1",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Kingdom Centre Sky Bridge",
+   "categorie": "Histoire & Culture",
+   "description": "Passerelle panoramique au sommet de la tour emblématique de Riyadh.",
+   "duree": "1-2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Kingdom+Centre+Sky+Bridge+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kingdom+Centre+Sky+Bridge+Riyadh",
+   "id": "a2",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Edge of the World",
+   "categorie": "Nature & Aventure",
+   "description": "Falaises spectaculaires du désert, à 1h30 de la ville, excursion encadrée.",
+   "duree": "Journée",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Edge+of+the+World+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Edge+of+the+World+Riyadh",
+   "id": "a3",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Souk Al Zal",
+   "categorie": "Shopping & Souks",
+   "description": "Souk historique d'antiquités, tapis et artisanat najdi.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Souk+Al+Zal+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+Al+Zal+Riyadh",
+   "id": "a4",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée National d'Arabie",
+   "categorie": "Art & Musées",
+   "description": "Vaste musée retraçant l'histoire de la péninsule et de l'Islam.",
+   "duree": "2-3h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+National+d%27Arabie+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+National+d%27Arabie+Riyadh",
+   "id": "a5",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Masmak Fortress",
+   "categorie": "Histoire & Culture",
+   "description": "Forteresse de terre du XIXe siècle, symbole de l'unification du royaume.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Masmak+Fortress+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masmak+Fortress+Riyadh",
+   "id": "a6",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Wadi Hanifah",
+   "categorie": "Nature & Aventure",
+   "description": "Vallée verdoyante aménagée, promenades et pique-niques en famille.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Wadi+Hanifah+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Wadi+Hanifah+Riyadh",
+   "id": "a7",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Boulevard World",
+   "categorie": "Sport & Loisirs",
+   "description": "Parc de divertissement géant aux quartiers du monde, animations familiales.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Boulevard+World+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Boulevard+World+Riyadh",
+   "id": "a8",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Riyadh",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Riyadh+Riyadh",
+   "id": "a9",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Riyadh",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Riyadh+Riyadh",
+   "id": "a10",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Riyadh",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Riyadh+Riyadh",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Riyadh",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Riyadh+Riyadh",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Riyadh",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Riyadh+Riyadh",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Riyadh",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Riyadh+Riyadh",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Riyadh",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Riyadh+Riyadh",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Riyadh",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Riyadh+Riyadh",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Riyadh",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Riyadh+Riyadh",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Riyadh",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Riyadh+Riyadh",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Riyadh",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Riyadh+Riyadh",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Riyadh",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Riyadh+Riyadh",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Riyadh+Riyadh",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Imam Turki bin Abdullah",
+   "description": "Grande mosquée du centre de Riyadh, vaste cour et architecture najdie.",
+   "adresse": "Al Hukm, Riyadh",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Imam+Turki+bin+Abdullah+Riyadh",
+   "capacite": 7434,
+   "anneeConstruction": 1994,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 24.7136,
     "lng": 46.6753
+   }
   },
-  "image_alt": "Vue de Riyadh, Arabie Saoudite",
-  "statistiques": {
-    "mosquees": 4000,
-    "restaurants_halal": 800,
-    "habitants_musulmans_pct": 99
+  {
+   "nom": "Mosquée du Roi Khaled",
+   "description": "Mosquée monumentale à l'aéroport, repère pour les voyageurs.",
+   "adresse": "Aéroport King Khalid, Riyadh",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+Roi+Khaled+Riyadh",
+   "capacite": 7461,
+   "anneeConstruction": 1871,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.7136,
+    "lng": 46.6753
+   }
   },
-  "infos_pratiques": {
-    "langue": "Arabe",
-    "monnaie": "Riyal saoudien (SAR)",
-    "meilleure_periode": "Novembre à Mars",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Interdit",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Riyadh",
+   "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Riyadh",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Riyadh+Riyadh",
+   "capacite": 6682,
+   "anneeConstruction": 1942,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.7136,
+    "lng": 46.6753
+   }
   },
-  "infoPratique": {
-    "visa": "e-Visa touristique disponible en ligne",
-    "vaccins": "Aucun obligatoire (hors Hajj)",
-    "transport": "Nouveau métro de Riyadh, taxis, Uber/Careem",
-    "priseElectrique": "Type G — 220V",
-    "decalageHoraire": "+2h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Riyadh",
+   "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Riyadh",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Riyadh+Riyadh",
+   "capacite": 2644,
+   "anneeConstruction": 1904,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.7136,
+    "lng": 46.6753
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Najd Village",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Cuisine najdie traditionnelle, ambiance tente à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Najd+Village+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Cuisine najdie traditionnelle",
-      "nombreAvis": 1377,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Al-Orjouan",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Riyadh",
-      "description": "Oriental gastronomique, Riyadh InterContinental à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Orjouan+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Oriental gastronomique",
-      "nombreAvis": 1564,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Nozomi Riyadh",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Riyadh",
-      "description": "Japonais halal premium à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Nozomi+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Japonais halal premium",
-      "nombreAvis": 1092,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Coya Riyadh",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Riyadh",
-      "description": "Péruvien halal luxe à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Coya+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Péruvien halal luxe",
-      "nombreAvis": 2002,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Zuma Riyadh",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Japonais contemporain halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Zuma+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Japonais contemporain halal",
-      "nombreAvis": 595,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Cielo Sky Lounge",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Gastronomique, vue panoramique à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Cielo+Sky+Lounge+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 1992,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Globe Restaurant Riyadh",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Vue tour Kingdom à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Globe+Restaurant+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Vue tour kingdom",
-      "nombreAvis": 194,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Spazio 77",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Riyadh",
-      "description": "Italien halal, The Village à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Spazio+77+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Italien halal",
-      "nombreAvis": 2059,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Fuego Latino",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Riyadh",
-      "description": "Grill latin halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Fuego+Latino+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Grill latin halal",
-      "nombreAvis": 1066,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "PF Chang's Riyadh",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Asiatique américain halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=PF+Chang%27s+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Asiatique américain halal",
-      "nombreAvis": 173,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "TGI Fridays Riyadh",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Américain halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=TGI+Fridays+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Américain halal",
-      "nombreAvis": 1318,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Benihana Riyadh",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Japonais teppanyaki halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Benihana+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Japonais teppanyaki halal",
-      "nombreAvis": 1417,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Sakura Japanese Restaurant",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Sushi halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Sakura+Japanese+Restaurant+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Sushi halal",
-      "nombreAvis": 2640,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Kei Japanese",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Kaiseki halal premium à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Kei+Japanese+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Kaiseki halal premium",
-      "nombreAvis": 1328,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "The Grill Room",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Riyadh",
-      "description": "Steakhouse halal anglais à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=The+Grill+Room+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Steakhouse halal anglais",
-      "nombreAvis": 719,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Marakesh Restaurant Riyadh",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Marocain authentique à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Marakesh+Restaurant+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Marocain authentique",
-      "nombreAvis": 891,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Al-Baik Riyadh",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Riyadh",
-      "description": "Franchise légendaire à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Baik+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Franchise légendaire",
-      "nombreAvis": 1129,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Herfy Riyadh",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Riyadh",
-      "description": "Burger saoudien à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Herfy+Riyadh+Riyadh",
-      "priceRange": "€€",
-      "specialite": "Burger saoudien",
-      "nombreAvis": 2074,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Kudu Riyadh",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Riyadh",
-      "description": "Fast premium saoudien à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Kudu+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Fast premium saoudien",
-      "nombreAvis": 796,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Mama Noura Riyadh",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Riyadh",
-      "description": "Shawarma réputé à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Mama+Noura+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Shawarma réputé",
-      "nombreAvis": 100,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Karachi Darbar Riyadh",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Riyadh",
-      "description": "Pakistanais populaire à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Karachi+Darbar+Riyadh+Riyadh",
-      "priceRange": "€",
-      "specialite": "Pakistanais populaire",
-      "nombreAvis": 2094,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Moti Mahal Riyadh",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Indien nord premium à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Moti+Mahal+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Indien nord premium",
-      "nombreAvis": 271,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Bukhara Riyadh",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Riyadh",
-      "description": "Indien signature à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Bukhara+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Indien signature",
-      "nombreAvis": 984,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Beirut Restaurant Riyadh",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Riyadh",
-      "description": "Libanais à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Beirut+Restaurant+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Libanais",
-      "nombreAvis": 447,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Mouneh Lebanese",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Libanais traditionnel à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Mouneh+Lebanese+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Libanais traditionnel",
-      "nombreAvis": 2119,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Damascus Gate Riyadh",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Syrien gastronomique à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Damascus+Gate+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Syrien gastronomique",
-      "nombreAvis": 2163,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Arabian Nights Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Riyadh",
-      "description": "Saoudien show culinaire à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Arabian+Nights+Restaurant+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Saoudien show culinaire",
-      "nombreAvis": 1528,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Al-Khayma",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Riyadh",
-      "description": "Expérience bédouine en tente à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Khayma+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Expérience bédouine en tente",
-      "nombreAvis": 1644,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Matam Al-Aqeeq",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Traditionnel Najd à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Matam+Al-Aqeeq+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Traditionnel najd",
-      "nombreAvis": 1426,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Maison Landemaine Riyadh",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Boulangerie française halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Landemaine+Riyadh+Riyadh",
-      "priceRange": "€€",
-      "specialite": "Boulangerie française halal",
-      "nombreAvis": 1022,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Paul Riyadh",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Patisserie française halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Paul+Riyadh+Riyadh",
-      "priceRange": "€€",
-      "specialite": "Patisserie française halal",
-      "nombreAvis": 868,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Chocolat Macarons",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Pâtisseries halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Chocolat+Macarons+Riyadh",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries halal",
-      "nombreAvis": 1410,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Bateel Riyadh",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Café-dattes premium à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Bateel+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Café-dattes premium",
-      "nombreAvis": 1308,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Sketch Riyadh",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Brunch branché à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Sketch+Riyadh+Riyadh",
-      "priceRange": "€€",
-      "specialite": "Brunch branché",
-      "nombreAvis": 890,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "99 Sushi Bar Riyadh",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Riyadh",
-      "description": "Japonais fusion halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=99+Sushi+Bar+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Japonais fusion halal",
-      "nombreAvis": 998,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Shang Palace Riyadh",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Riyadh",
-      "description": "Chinois premium halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Shang+Palace+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Chinois premium halal",
-      "nombreAvis": 2571,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Long Feng Chinese",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Cantonais halal classique à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Long+Feng+Chinese+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Cantonais halal classique",
-      "nombreAvis": 198,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Korean Village Riyadh",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Coréen authentique halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Korean+Village+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Coréen authentique halal",
-      "nombreAvis": 1348,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Thai Orchid Riyadh",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Thaï premium halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Thai+Orchid+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Thaï premium halal",
-      "nombreAvis": 151,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Sultanahmet Kebap Riyadh",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Turc authentique à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Sultanahmet+Kebap+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Turc authentique",
-      "nombreAvis": 1584,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Günaydın Riyadh",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Riyadh",
-      "description": "Steakhouse turc halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=G%C3%BCnayd%C4%B1n+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Steakhouse turc halal",
-      "nombreAvis": 2521,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Bosphorus Riyadh",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Riyadh",
-      "description": "Ottoman gastronomique à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Bosphorus+Riyadh+Riyadh",
-      "priceRange": "€€€€",
-      "specialite": "Ottoman gastronomique",
-      "nombreAvis": 3339,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Yemen Club Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Yéménite traditionnel à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Yemen+Club+Restaurant+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Yéménite traditionnel",
-      "nombreAvis": 1301,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Iraqi Delight Riyadh",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Mezzeh irakien à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Iraqi+Delight+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Mezzeh irakien",
-      "nombreAvis": 347,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Egyptian Cuisine Riyadh",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Riyadh",
-      "description": "Koshari et ful à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Egyptian+Cuisine+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Koshari et ful",
-      "nombreAvis": 1967,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Moroccan Spice Riyadh",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Tajines variés à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Moroccan+Spice+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Tajines variés",
-      "nombreAvis": 2075,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Cheesecake Factory Riyadh",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Riyadh",
-      "description": "Américain halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Cheesecake+Factory+Riyadh+Riyadh",
-      "priceRange": "€€",
-      "specialite": "Américain halal",
-      "nombreAvis": 95,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Applebee's Riyadh",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Américain halal à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Applebee%27s+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Américain halal",
-      "nombreAvis": 2142,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Johnny Rockets Riyadh",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Burgers halal américains à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Johnny+Rockets+Riyadh+Riyadh",
-      "priceRange": "€€",
-      "specialite": "Burgers halal américains",
-      "nombreAvis": 979,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Al-Romansiah Riyadh",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Grillades saoudiennes chain à Riyadh.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Romansiah+Riyadh+Riyadh",
-      "priceRange": "€€€",
-      "specialite": "Grillades saoudiennes chain",
-      "nombreAvis": 1154,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r50"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Four Seasons Hotel Riyadh",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Ultra-luxe Kingdom Tower à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Hotel+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€€",
-      "nombreAvis": 151,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Ritz-Carlton Riyadh",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Luxe palais à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Ritz-Carlton+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€€",
-      "nombreAvis": 2453,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Waldorf Astoria Riyadh",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Riyadh",
-      "description": "Luxe à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Waldorf+Astoria+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€€",
-      "nombreAvis": 549,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Mandarin Oriental Riyadh",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Ultra-luxe à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€€",
-      "nombreAvis": 1545,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Park Hyatt Riyadh",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Luxe à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Park+Hyatt+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€€",
-      "nombreAvis": 313,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "InterContinental Riyadh",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Riyadh",
-      "description": "Luxe classique à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=InterContinental+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€€",
-      "nombreAvis": 2400,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "JW Marriott Hotel Riyadh",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Riyadh",
-      "description": "Luxe à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=JW+Marriott+Hotel+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€€",
-      "nombreAvis": 2183,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "Hilton Riyadh Hotel Residences",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Luxe à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hilton+Riyadh+Hotel+Residences+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€€",
-      "nombreAvis": 1130,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Sheraton Riyadh",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Riyadh",
-      "description": "Standard-luxe à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Sheraton+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€€",
-      "nombreAvis": 1649,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Radisson Blu Hotel Riyadh",
-      "categorie": "Standard",
-      "score": 4.8,
-      "adresse": "Riyadh",
-      "description": "Standard à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Hotel+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€",
-      "nombreAvis": 209,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Crowne Plaza Riyadh",
-      "categorie": "Standard",
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Standard à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Crowne+Plaza+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€",
-      "nombreAvis": 1304,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Holiday Inn Riyadh",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Standard à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Holiday+Inn+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€",
-      "nombreAvis": 2334,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Novotel Riyadh",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Riyadh",
-      "description": "Standard abordable à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Novotel+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€€",
-      "nombreAvis": 1908,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "Centro Riyadh by Rotana",
-      "categorie": "Budget",
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Budget confort à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Centro+Riyadh+by+Rotana+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€",
-      "nombreAvis": 1454,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Al-Hamra Suites Riyadh",
-      "categorie": "Budget",
-      "score": 4.7,
-      "adresse": "Riyadh",
-      "description": "Budget à Riyadh.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Al-Hamra+Suites+Riyadh+Riyadh",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Riyadh&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=riyadh",
-      "priceRange": "€€",
-      "nombreAvis": 654,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Diriyah & At-Turaif UNESCO",
-      "categorie": "Histoire & Culture",
-      "description": "Berceau de l'État saoudien, citadelle de terre classée à l'UNESCO.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Diriyah+%26+At-Turaif+UNESCO+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Diriyah+%26+At-Turaif+UNESCO+Riyadh",
-      "id": "a1",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Kingdom Centre Sky Bridge",
-      "categorie": "Histoire & Culture",
-      "description": "Passerelle panoramique au sommet de la tour emblématique de Riyadh.",
-      "duree": "1-2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Kingdom+Centre+Sky+Bridge+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kingdom+Centre+Sky+Bridge+Riyadh",
-      "id": "a2",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Edge of the World",
-      "categorie": "Nature & Aventure",
-      "description": "Falaises spectaculaires du désert, à 1h30 de la ville, excursion encadrée.",
-      "duree": "Journée",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Edge+of+the+World+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Edge+of+the+World+Riyadh",
-      "id": "a3",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Souk Al Zal",
-      "categorie": "Shopping & Souks",
-      "description": "Souk historique d'antiquités, tapis et artisanat najdi.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Souk+Al+Zal+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+Al+Zal+Riyadh",
-      "id": "a4",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée National d'Arabie",
-      "categorie": "Art & Musées",
-      "description": "Vaste musée retraçant l'histoire de la péninsule et de l'Islam.",
-      "duree": "2-3h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+National+d%27Arabie+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+National+d%27Arabie+Riyadh",
-      "id": "a5",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Masmak Fortress",
-      "categorie": "Histoire & Culture",
-      "description": "Forteresse de terre du XIXe siècle, symbole de l'unification du royaume.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Masmak+Fortress+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masmak+Fortress+Riyadh",
-      "id": "a6",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Wadi Hanifah",
-      "categorie": "Nature & Aventure",
-      "description": "Vallée verdoyante aménagée, promenades et pique-niques en famille.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Wadi+Hanifah+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Wadi+Hanifah+Riyadh",
-      "id": "a7",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Boulevard World",
-      "categorie": "Sport & Loisirs",
-      "description": "Parc de divertissement géant aux quartiers du monde, animations familiales.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Boulevard+World+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Boulevard+World+Riyadh",
-      "id": "a8",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Riyadh",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Riyadh+Riyadh",
-      "id": "a9",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Riyadh",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Riyadh+Riyadh",
-      "id": "a10",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Riyadh",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Riyadh+Riyadh",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Riyadh",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Riyadh+Riyadh",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Riyadh",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Riyadh+Riyadh",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Riyadh",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Riyadh+Riyadh",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Riyadh",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Riyadh+Riyadh",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Riyadh",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Riyadh+Riyadh",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Riyadh",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Riyadh+Riyadh",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Riyadh",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Riyadh+Riyadh",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Riyadh",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Riyadh+Riyadh",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Riyadh",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Riyadh+Riyadh",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Riyadh+Riyadh",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Imam Turki bin Abdullah",
-      "description": "Grande mosquée du centre de Riyadh, vaste cour et architecture najdie.",
-      "adresse": "Al Hukm, Riyadh",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Imam+Turki+bin+Abdullah+Riyadh",
-      "capacite": 7434,
-      "anneeConstruction": 1994,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.7136,
-        "lng": 46.6753
-      }
-    },
-    {
-      "nom": "Mosquée du Roi Khaled",
-      "description": "Mosquée monumentale à l'aéroport, repère pour les voyageurs.",
-      "adresse": "Aéroport King Khalid, Riyadh",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+Roi+Khaled+Riyadh",
-      "capacite": 7461,
-      "anneeConstruction": 1871,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.7136,
-        "lng": 46.6753
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Riyadh",
-      "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Riyadh",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Riyadh+Riyadh",
-      "capacite": 6682,
-      "anneeConstruction": 1942,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.7136,
-        "lng": 46.6753
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Riyadh",
-      "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Riyadh",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Riyadh+Riyadh",
-      "capacite": 2644,
-      "anneeConstruction": 1904,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.7136,
-        "lng": 46.6753
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Riyadh",
-      "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Riyadh",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Riyadh+Riyadh",
-      "capacite": 1362,
-      "anneeConstruction": 2002,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.7136,
-        "lng": 46.6753
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Riyadh",
-      "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Riyadh",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Riyadh+Riyadh",
-      "capacite": 6254,
-      "anneeConstruction": 1934,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.7136,
-        "lng": 46.6753
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Riyadh",
-      "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Riyadh",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Riyadh+Riyadh",
-      "capacite": 1953,
-      "anneeConstruction": 2013,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.7136,
-        "lng": 46.6753
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Riyadh",
-      "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Riyadh",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Riyadh+Riyadh",
-      "capacite": 2984,
-      "anneeConstruction": 1924,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.7136,
-        "lng": 46.6753
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Riyadh",
-      "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Riyadh",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Riyadh+Riyadh",
-      "capacite": 3242,
-      "anneeConstruction": 2002,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.7136,
-        "lng": 46.6753
-      }
-    },
-    {
-      "nom": "Mosquée historique de Riyadh",
-      "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Riyadh",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Riyadh+Riyadh",
-      "capacite": 4946,
-      "anneeConstruction": 2006,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 24.7136,
-        "lng": 46.6753
-      }
-    }
-  ],
-  "tags": [
-    "capitale",
-    "modernite",
-    "najd",
-    "unesco",
-    "desert",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Bukhara Riyadh",
-      "Bosphorus Riyadh",
-      "Najd Village",
-      "Cielo Sky Lounge",
-      "PF Chang's Riyadh"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Herfy Riyadh",
-      "Karachi Darbar Riyadh",
-      "Maison Landemaine Riyadh",
-      "Chocolat Macarons",
-      "Johnny Rockets Riyadh"
-    ],
-    "incontournables": [
-      "Bosphorus Riyadh",
-      "Sakura Japanese Restaurant",
-      "Shang Palace Riyadh",
-      "Günaydın Riyadh",
-      "Damascus Gate Riyadh"
-    ],
-    "pepitesCachees": [
-      "Globe Restaurant Riyadh",
-      "PF Chang's Riyadh",
-      "Mama Noura Riyadh"
-    ],
-    "idealFamille": [
-      "Najd Village",
-      "Cielo Sky Lounge",
-      "Spazio 77",
-      "Fuego Latino",
-      "TGI Fridays Riyadh"
-    ],
-    "gastronomique": [
-      "Al-Orjouan",
-      "Coya Riyadh",
-      "Globe Restaurant Riyadh",
-      "Damascus Gate Riyadh"
-    ],
-    "ouvertNuit": [
-      "Spazio 77",
-      "Fuego Latino",
-      "The Grill Room"
-    ],
-    "vueExceptionnelle": [
-      "Bukhara Riyadh",
-      "Bosphorus Riyadh",
-      "Najd Village"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Riyadh",
+   "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Riyadh",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Riyadh+Riyadh",
+   "capacite": 1362,
+   "anneeConstruction": 2002,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.7136,
+    "lng": 46.6753
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Riyadh",
+   "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Riyadh",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Riyadh+Riyadh",
+   "capacite": 6254,
+   "anneeConstruction": 1934,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.7136,
+    "lng": 46.6753
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Riyadh",
+   "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Riyadh",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Riyadh+Riyadh",
+   "capacite": 1953,
+   "anneeConstruction": 2013,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.7136,
+    "lng": 46.6753
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Riyadh",
+   "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Riyadh",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Riyadh+Riyadh",
+   "capacite": 2984,
+   "anneeConstruction": 1924,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.7136,
+    "lng": 46.6753
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Riyadh",
+   "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Riyadh",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Riyadh+Riyadh",
+   "capacite": 3242,
+   "anneeConstruction": 2002,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.7136,
+    "lng": 46.6753
+   }
+  },
+  {
+   "nom": "Mosquée historique de Riyadh",
+   "description": "Mosquée fréquentée de Riyadh, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Riyadh",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Riyadh+Riyadh",
+   "capacite": 4946,
+   "anneeConstruction": 2006,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 24.7136,
+    "lng": 46.6753
+   }
   }
+ ],
+ "tags": [
+  "capitale",
+  "modernite",
+  "najd",
+  "unesco",
+  "desert",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Bukhara Riyadh",
+   "Bosphorus Riyadh",
+   "Najd Village",
+   "Cielo Sky Lounge",
+   "PF Chang's Riyadh"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Herfy Riyadh",
+   "Karachi Darbar Riyadh",
+   "Maison Landemaine Riyadh",
+   "Chocolat Macarons",
+   "Johnny Rockets Riyadh"
+  ],
+  "incontournables": [
+   "Bosphorus Riyadh",
+   "Sakura Japanese Restaurant",
+   "Shang Palace Riyadh",
+   "Günaydın Riyadh",
+   "Damascus Gate Riyadh"
+  ],
+  "pepitesCachees": [
+   "Globe Restaurant Riyadh",
+   "PF Chang's Riyadh",
+   "Mama Noura Riyadh"
+  ],
+  "idealFamille": [
+   "Najd Village",
+   "Cielo Sky Lounge",
+   "Spazio 77",
+   "Fuego Latino",
+   "TGI Fridays Riyadh"
+  ],
+  "gastronomique": [
+   "Al-Orjouan",
+   "Coya Riyadh",
+   "Globe Restaurant Riyadh",
+   "Damascus Gate Riyadh"
+  ],
+  "ouvertNuit": [
+   "Spazio 77",
+   "Fuego Latino",
+   "The Grill Room"
+  ],
+  "vueExceptionnelle": [
+   "Bukhara Riyadh",
+   "Bosphorus Riyadh",
+   "Najd Village"
+  ]
+ }
 }

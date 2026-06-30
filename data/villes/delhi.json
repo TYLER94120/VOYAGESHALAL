@@ -1,1290 +1,1295 @@
 {
-  "nom": "Delhi",
-  "pays": "Inde",
-  "slug": "delhi",
-  "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1400&q=85",
-  "description": "Delhi, capitale millénaire de l'Inde, abrite la Jama Masjid et le patrimoine moghol de Old Delhi. Chandni Chowk et sa cuisine moghole en font un voyage dans l'histoire islamique.",
-  "descriptionLongue": "Carrefour d'empires, Delhi conserve un riche héritage musulman moghol. La majestueuse Jama Masjid, plus grande mosquée d'Inde, domine Old Delhi et son bazar de Chandni Chowk, paradis de la street food halal. Le Fort Rouge, le tombeau d'Humayun et le Qutub Minar (UNESCO) témoignent de siècles d'art indo-islamique. Une communauté musulmane de plusieurs millions y est vivante.",
-  "halalScore": 8.0,
-  "score_halal": 4.0,
+ "nom": "Delhi",
+ "pays": "Inde",
+ "slug": "delhi",
+ "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1400&q=85",
+ "description": "Delhi, capitale millénaire de l'Inde, abrite la Jama Masjid et le patrimoine moghol de Old Delhi. Chandni Chowk et sa cuisine moghole en font un voyage dans l'histoire islamique.",
+ "descriptionLongue": "Carrefour d'empires, Delhi conserve un riche héritage musulman moghol. La majestueuse Jama Masjid, plus grande mosquée d'Inde, domine Old Delhi et son bazar de Chandni Chowk, paradis de la street food halal. Le Fort Rouge, le tombeau d'Humayun et le Qutub Minar (UNESCO) témoignent de siècles d'art indo-islamique. Une communauté musulmane de plusieurs millions y est vivante.",
+ "halalScore": 8,
+ "score_halal": 4,
+ "mosquees": 2000,
+ "population": "32 millions",
+ "langue": "Hindi, Ourdou, Anglais",
+ "monnaie": "Roupie indienne (INR)",
+ "fuseau": "UTC+5",
+ "meilleureEpoque": "Octobre à Mars",
+ "prixMoyenNuit": "45€",
+ "continent": "Asie",
+ "codeISO": "IN",
+ "pays_slug": "inde",
+ "region": "Asie du Sud",
+ "meta_title": "Voyage Halal à Delhi — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Delhi — Halal Trust Score 8.0/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Delhi — Halal Trust Score 8.0/10.",
+ "coordonnees": {
+  "lat": 28.6139,
+  "lng": 77.209
+ },
+ "image_alt": "Vue de Delhi, Inde",
+ "statistiques": {
   "mosquees": 2000,
-  "population": "32 millions",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 13,
+  "hotels": 10
+ },
+ "infos_pratiques": {
   "langue": "Hindi, Ourdou, Anglais",
   "monnaie": "Roupie indienne (INR)",
-  "fuseau": "UTC+5",
-  "meilleureEpoque": "Octobre à Mars",
-  "prixMoyenNuit": "45€",
-  "continent": "Asie",
-  "codeISO": "IN",
-  "pays_slug": "inde",
-  "region": "Asie du Sud",
-  "meta_title": "Voyage Halal à Delhi — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Delhi — Halal Trust Score 8.0/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Delhi — Halal Trust Score 8.0/10.",
-  "coordonnees": {
+  "meilleure_periode": "Octobre à Mars",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "e-Visa touristique indien obligatoire",
+  "vaccins": "Aucun obligatoire (vérifier recommandations)",
+  "transport": "Métro de Delhi efficace, rickshaw, Ola/Uber",
+  "priseElectrique": "Type C/D/M — 230V",
+  "decalageHoraire": "+4h30 par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Karim's",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Old Delhi",
+   "description": "Légende moghole depuis 1913 près de Jama Masjid",
+   "mapsUrl": "https://maps.google.com/?q=Karim%27s+Delhi",
+   "priceRange": "€€",
+   "specialite": "Cuisine moghole",
+   "id": "r1"
+  },
+  {
+   "nom": "Al Jawahar",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Old Delhi",
+   "description": "Voisin de Karim's, cuisine moghole",
+   "mapsUrl": "https://maps.google.com/?q=Al+Jawahar+Delhi",
+   "priceRange": "€",
+   "specialite": "Korma et biryani",
+   "id": "r2"
+  },
+  {
+   "nom": "Andhra Bhavan Halal",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre",
+   "description": "Thali du sud généreux",
+   "mapsUrl": "https://maps.google.com/?q=Andhra+Bhavan+Halal+Delhi",
+   "priceRange": "€",
+   "specialite": "Thali",
+   "id": "r3"
+  },
+  {
+   "nom": "Gulati Restaurant",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Pandara Road",
+   "description": "Cuisine moghole-pendjabie réputée",
+   "mapsUrl": "https://maps.google.com/?q=Gulati+Restaurant+Delhi",
+   "priceRange": "€€",
+   "specialite": "Butter chicken",
+   "id": "r4"
+  },
+  {
+   "nom": "Dilli 6 by Sita Ram",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Old Delhi",
+   "description": "Street food de Chandni Chowk",
+   "mapsUrl": "https://maps.google.com/?q=Dilli+6+by+Sita+Ram+Delhi",
+   "priceRange": "€",
+   "specialite": "Chaat",
+   "id": "r5"
+  },
+  {
+   "nom": "Al Madina Delhi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Delhi",
+   "description": "Adresse halal appréciée des habitants de Delhi.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Delhi+Delhi",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r6"
+  },
+  {
+   "nom": "Shawarma House Delhi",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Delhi",
+   "description": "Adresse halal appréciée des habitants de Delhi.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Delhi+Delhi",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r7"
+  },
+  {
+   "nom": "Beit Beirut Delhi",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Delhi",
+   "description": "Adresse halal appréciée des habitants de Delhi.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Delhi+Delhi",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r8"
+  },
+  {
+   "nom": "Spice Route Delhi",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Delhi",
+   "description": "Adresse halal appréciée des habitants de Delhi.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Delhi+Delhi",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r9"
+  },
+  {
+   "nom": "Saffron Garden Delhi",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Delhi",
+   "description": "Adresse halal appréciée des habitants de Delhi.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Delhi+Delhi",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r10"
+  },
+  {
+   "nom": "Green Bowl Delhi",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Delhi",
+   "description": "Adresse halal appréciée des habitants de Delhi.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Delhi+Delhi",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r11"
+  },
+  {
+   "nom": "Sultan Café Delhi",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Delhi",
+   "description": "Adresse halal appréciée des habitants de Delhi.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Delhi+Delhi",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r12"
+  },
+  {
+   "nom": "Ocean Pearl Delhi",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Delhi",
+   "description": "Adresse halal appréciée des habitants de Delhi.",
+   "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Delhi+Delhi",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé du jour",
+   "id": "r13"
+  },
+  {
+   "nom": "Bella Halal Delhi",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Delhi",
+   "description": "Adresse halal appréciée des habitants de Delhi.",
+   "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Delhi+Delhi",
+   "priceRange": "€€",
+   "specialite": "Pizza halal au four à bois",
+   "id": "r14"
+  },
+  {
+   "nom": "Tokyo Halal Delhi",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Delhi",
+   "description": "Adresse halal appréciée des habitants de Delhi.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Delhi+Delhi",
+   "priceRange": "€€€",
+   "specialite": "Sushis certifiés halal",
+   "id": "r15"
+  },
+  {
+   "nom": "Shahi Darbar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Delhi",
+   "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shahi+Darbar+Delhi",
+   "priceRange": "€€",
+   "specialite": "Biryani royal",
+   "nombreAvis": 1916,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Lahori Karahi",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Delhi",
+   "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Lahori+Karahi+Delhi",
+   "priceRange": "€",
+   "specialite": "Karahi poulet",
+   "nombreAvis": 3473,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Bismillah Hotel",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Delhi",
+   "description": "Adresse traditionnel local appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bismillah+Hotel+Delhi",
+   "priceRange": "€",
+   "specialite": "Nihari",
+   "nombreAvis": 492,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Mughal Mahal",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Delhi",
+   "description": "Adresse gastronomique appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Mughal+Mahal+Delhi",
+   "priceRange": "€€€",
+   "specialite": "Thali moghol",
+   "nombreAvis": 1611,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Al-Madina Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Delhi",
+   "description": "Adresse pâtisserie & café appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Madina+Sweets+Delhi",
+   "priceRange": "€",
+   "specialite": "Jalebi et chai",
+   "nombreAvis": 2502,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Bahar Seafood",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Delhi",
+   "description": "Adresse fruits de mer appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahar+Seafood+Delhi",
+   "priceRange": "€€",
+   "specialite": "Poisson masala",
+   "nombreAvis": 652,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Bait Beirut",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Delhi",
+   "description": "Adresse libanais & levant appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Beirut+Delhi",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1359,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Sabzi Healthy",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Delhi",
+   "description": "Adresse végétarien & healthy appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sabzi+Healthy+Delhi",
+   "priceRange": "€",
+   "specialite": "Thali végétarien",
+   "nombreAvis": 205,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Tikka Express",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Delhi",
+   "description": "Adresse grillades & kebab appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Tikka+Express+Delhi",
+   "priceRange": "€",
+   "specialite": "Seekh kebab",
+   "nombreAvis": 1351,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Shahi Darbar Delhi 10",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Delhi",
+   "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shahi+Darbar+Delhi+10+Delhi",
+   "priceRange": "€€",
+   "specialite": "Biryani royal",
+   "nombreAvis": 3665,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Lahori Karahi Delhi 11",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Delhi",
+   "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Lahori+Karahi+Delhi+11+Delhi",
+   "priceRange": "€",
+   "specialite": "Karahi poulet",
+   "nombreAvis": 474,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Bismillah Hotel Delhi 12",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Delhi",
+   "description": "Adresse traditionnel local appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bismillah+Hotel+Delhi+12+Delhi",
+   "priceRange": "€",
+   "specialite": "Nihari",
+   "nombreAvis": 1114,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Mughal Mahal Delhi 13",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Delhi",
+   "description": "Adresse gastronomique appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Mughal+Mahal+Delhi+13+Delhi",
+   "priceRange": "€€€",
+   "specialite": "Thali moghol",
+   "nombreAvis": 1954,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Al-Madina Sweets Delhi 14",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Delhi",
+   "description": "Adresse pâtisserie & café appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Madina+Sweets+Delhi+14+Delhi",
+   "priceRange": "€",
+   "specialite": "Jalebi et chai",
+   "nombreAvis": 465,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Bahar Seafood Delhi 15",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Delhi",
+   "description": "Adresse fruits de mer appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahar+Seafood+Delhi+15+Delhi",
+   "priceRange": "€€",
+   "specialite": "Poisson masala",
+   "nombreAvis": 1264,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Bait Beirut Delhi 16",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Delhi",
+   "description": "Adresse libanais & levant appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Beirut+Delhi+16+Delhi",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1498,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Sabzi Healthy Delhi 17",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Delhi",
+   "description": "Adresse végétarien & healthy appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sabzi+Healthy+Delhi+17+Delhi",
+   "priceRange": "€",
+   "specialite": "Thali végétarien",
+   "nombreAvis": 292,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Tikka Express Delhi 18",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Delhi",
+   "description": "Adresse grillades & kebab appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Tikka+Express+Delhi+18+Delhi",
+   "priceRange": "€",
+   "specialite": "Seekh kebab",
+   "nombreAvis": 779,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Shahi Darbar Delhi 19",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Delhi",
+   "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shahi+Darbar+Delhi+19+Delhi",
+   "priceRange": "€€",
+   "specialite": "Biryani royal",
+   "nombreAvis": 2241,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Lahori Karahi Delhi 20",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Delhi",
+   "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Lahori+Karahi+Delhi+20+Delhi",
+   "priceRange": "€",
+   "specialite": "Karahi poulet",
+   "nombreAvis": 535,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r35"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "The Imperial New Delhi",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Janpath",
+   "description": "Palace colonial historique",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Imperial+New+Delhi+Delhi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "lat": 28.6330344,
+   "lng": 77.2226693
+  },
+  {
+   "nom": "The Leela Palace New Delhi",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Diplomatic Enclave",
+   "description": "Palace moderne raffiné",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Leela+Palace+New+Delhi+Delhi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
+   "priceRange": "€€€€",
+   "id": "h2",
+   "lat": 28.5799184,
+   "lng": 77.1892613
+  },
+  {
+   "nom": "Bloomrooms Janpath",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Janpath",
+   "description": "Hôtel design abordable et central",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Bloomrooms+Janpath+Delhi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
+   "priceRange": "€€",
+   "id": "h3"
+  },
+  {
+   "nom": "Grand Plaza Delhi",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Delhi",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Delhi+Delhi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
+   "priceRange": "€€€€",
+   "id": "h4"
+  },
+  {
+   "nom": "City Comfort Hotel Delhi",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Delhi",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Delhi+Delhi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
+   "priceRange": "€€€",
+   "id": "h5"
+  },
+  {
+   "nom": "Boutique Riad Delhi",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Delhi",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Delhi+Delhi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
+   "priceRange": "€€€",
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Delhi 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Delhi",
+   "description": "Hébergement halal-friendly à Delhi.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Delhi+0+Delhi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
+   "priceRange": "€€€€",
+   "nombreAvis": 2348,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Delhi",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Delhi",
+   "description": "Hébergement halal-friendly à Delhi.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Delhi+Delhi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
+   "priceRange": "€€€",
+   "nombreAvis": 1580,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Delhi",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Delhi",
+   "description": "Hébergement halal-friendly à Delhi.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Delhi+Delhi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
+   "priceRange": "€€€",
+   "nombreAvis": 200,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Delhi",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Delhi",
+   "description": "Hébergement halal-friendly à Delhi.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Delhi+Delhi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
+   "priceRange": "€€",
+   "nombreAvis": 1062,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Jama Masjid",
+   "categorie": "Religieux & Spirituel",
+   "description": "Plus grande mosquée d'Inde, chef-d'œuvre moghol de 1656",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Jama+Masjid+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jama+Masjid+Delhi",
+   "id": "a1"
+  },
+  {
+   "nom": "Fort Rouge (Red Fort)",
+   "categorie": "Histoire & Culture",
+   "description": "Citadelle moghole classée UNESCO",
+   "duree": "2-3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Fort+Rouge+%28Red+Fort%29+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fort+Rouge+%28Red+Fort%29+Delhi",
+   "id": "a2"
+  },
+  {
+   "nom": "Tombeau d'Humayun",
+   "categorie": "Histoire & Culture",
+   "description": "Mausolée moghol précurseur du Taj Mahal, UNESCO",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Tombeau+d%27Humayun+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tombeau+d%27Humayun+Delhi",
+   "id": "a3"
+  },
+  {
+   "nom": "Chandni Chowk",
+   "categorie": "Shopping & Souks",
+   "description": "Bazar historique, street food et épices",
+   "duree": "3h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Chandni+Chowk+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Chandni+Chowk+Delhi",
+   "id": "a4"
+  },
+  {
+   "nom": "Qutub Minar",
+   "categorie": "Histoire & Culture",
+   "description": "Minaret de victoire du XIIe siècle, UNESCO",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Qutub+Minar+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Qutub+Minar+Delhi",
+   "id": "a5"
+  },
+  {
+   "nom": "Nizamuddin Dargah",
+   "categorie": "Religieux & Spirituel",
+   "description": "Sanctuaire soufi et qawwali en soirée",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Nizamuddin+Dargah+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Nizamuddin+Dargah+Delhi",
+   "id": "a6"
+  },
+  {
+   "nom": "India Gate & Rajpath",
+   "categorie": "Nature & Aventure",
+   "description": "Mémorial et grande esplanade de la capitale",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=India+Gate+%26+Rajpath+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=India+Gate+%26+Rajpath+Delhi",
+   "id": "a7"
+  },
+  {
+   "nom": "Food tour halal de Old Delhi",
+   "categorie": "Gastronomie",
+   "description": "Découverte de la cuisine moghole de Purani Dilli",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Old+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Old+Delhi+Delhi",
+   "id": "a8"
+  },
+  {
+   "nom": "Vieille ville de Delhi",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Delhi+Delhi",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand souk de Delhi",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Delhi+Delhi",
+   "id": "a10"
+  },
+  {
+   "nom": "Quartier historique de Delhi",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Delhi+Delhi",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Delhi",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Delhi+Delhi",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Delhi",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Delhi+Delhi",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Delhi",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Delhi+Delhi",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Delhi",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Delhi+Delhi",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Delhi",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Delhi+Delhi",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Delhi",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Delhi+Delhi",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Delhi",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Delhi+Delhi",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Delhi",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Delhi+Delhi",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Delhi",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Delhi+Delhi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Delhi+Delhi",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Jama Masjid",
+   "description": "Grande mosquée moghole de 1656, capacité 25000 fidèles",
+   "adresse": "Old Delhi",
+   "mapsUrl": "https://maps.google.com/?q=Jama+Masjid+Delhi",
+   "capacite": 3007,
+   "anneeConstruction": 2017,
+   "styleArchitectural": "Moghol",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 28.6139,
     "lng": 77.209
+   }
   },
-  "image_alt": "Vue de Delhi, Inde",
-  "statistiques": {
-    "mosquees": 2000,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 13
+  {
+   "nom": "Mosquée Fatehpuri",
+   "description": "Mosquée moghole du XVIIe à l'extrémité de Chandni Chowk",
+   "adresse": "Chandni Chowk",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Fatehpuri+Delhi",
+   "capacite": 8501,
+   "anneeConstruction": 1931,
+   "styleArchitectural": "Moghol",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 28.6139,
+    "lng": 77.209
+   }
   },
-  "infos_pratiques": {
-    "langue": "Hindi, Ourdou, Anglais",
-    "monnaie": "Roupie indienne (INR)",
-    "meilleure_periode": "Octobre à Mars",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Delhi",
+   "description": "Mosquée fréquentée de Delhi, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Delhi",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Delhi+Delhi",
+   "capacite": 2666,
+   "anneeConstruction": 1986,
+   "styleArchitectural": "Moghol",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 28.6139,
+    "lng": 77.209
+   }
   },
-  "infoPratique": {
-    "visa": "e-Visa touristique indien obligatoire",
-    "vaccins": "Aucun obligatoire (vérifier recommandations)",
-    "transport": "Métro de Delhi efficace, rickshaw, Ola/Uber",
-    "priseElectrique": "Type C/D/M — 230V",
-    "decalageHoraire": "+4h30 par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Delhi",
+   "description": "Mosquée fréquentée de Delhi, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Delhi",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Delhi+Delhi",
+   "capacite": 6270,
+   "anneeConstruction": 1990,
+   "styleArchitectural": "Moghol",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 28.6139,
+    "lng": 77.209
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Karim's",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Old Delhi",
-      "description": "Légende moghole depuis 1913 près de Jama Masjid",
-      "mapsUrl": "https://maps.google.com/?q=Karim%27s+Delhi",
-      "priceRange": "€€",
-      "specialite": "Cuisine moghole",
-      "id": "r1"
-    },
-    {
-      "nom": "Al Jawahar",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Old Delhi",
-      "description": "Voisin de Karim's, cuisine moghole",
-      "mapsUrl": "https://maps.google.com/?q=Al+Jawahar+Delhi",
-      "priceRange": "€",
-      "specialite": "Korma et biryani",
-      "id": "r2"
-    },
-    {
-      "nom": "Andhra Bhavan Halal",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre",
-      "description": "Thali du sud généreux",
-      "mapsUrl": "https://maps.google.com/?q=Andhra+Bhavan+Halal+Delhi",
-      "priceRange": "€",
-      "specialite": "Thali",
-      "id": "r3"
-    },
-    {
-      "nom": "Gulati Restaurant",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Pandara Road",
-      "description": "Cuisine moghole-pendjabie réputée",
-      "mapsUrl": "https://maps.google.com/?q=Gulati+Restaurant+Delhi",
-      "priceRange": "€€",
-      "specialite": "Butter chicken",
-      "id": "r4"
-    },
-    {
-      "nom": "Dilli 6 by Sita Ram",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Old Delhi",
-      "description": "Street food de Chandni Chowk",
-      "mapsUrl": "https://maps.google.com/?q=Dilli+6+by+Sita+Ram+Delhi",
-      "priceRange": "€",
-      "specialite": "Chaat",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Delhi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Delhi",
-      "description": "Adresse halal appréciée des habitants de Delhi.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Delhi+Delhi",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Delhi",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Delhi",
-      "description": "Adresse halal appréciée des habitants de Delhi.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Delhi+Delhi",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Delhi",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Delhi",
-      "description": "Adresse halal appréciée des habitants de Delhi.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Delhi+Delhi",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Delhi",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Delhi",
-      "description": "Adresse halal appréciée des habitants de Delhi.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Delhi+Delhi",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Delhi",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Delhi",
-      "description": "Adresse halal appréciée des habitants de Delhi.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Delhi+Delhi",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Delhi",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Delhi",
-      "description": "Adresse halal appréciée des habitants de Delhi.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Delhi+Delhi",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Delhi",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Delhi",
-      "description": "Adresse halal appréciée des habitants de Delhi.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Delhi+Delhi",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Delhi",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Delhi",
-      "description": "Adresse halal appréciée des habitants de Delhi.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Delhi+Delhi",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Delhi",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Delhi",
-      "description": "Adresse halal appréciée des habitants de Delhi.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Delhi+Delhi",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Delhi",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Delhi",
-      "description": "Adresse halal appréciée des habitants de Delhi.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Delhi+Delhi",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Shahi Darbar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Delhi",
-      "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Darbar+Delhi",
-      "priceRange": "€€",
-      "specialite": "Biryani royal",
-      "nombreAvis": 1916,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Lahori Karahi",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Delhi",
-      "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Lahori+Karahi+Delhi",
-      "priceRange": "€",
-      "specialite": "Karahi poulet",
-      "nombreAvis": 3473,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Bismillah Hotel",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Delhi",
-      "description": "Adresse traditionnel local appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bismillah+Hotel+Delhi",
-      "priceRange": "€",
-      "specialite": "Nihari",
-      "nombreAvis": 492,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Mughal Mahal",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Delhi",
-      "description": "Adresse gastronomique appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Mahal+Delhi",
-      "priceRange": "€€€",
-      "specialite": "Thali moghol",
-      "nombreAvis": 1611,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Al-Madina Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Delhi",
-      "description": "Adresse pâtisserie & café appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Madina+Sweets+Delhi",
-      "priceRange": "€",
-      "specialite": "Jalebi et chai",
-      "nombreAvis": 2502,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Bahar Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Delhi",
-      "description": "Adresse fruits de mer appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahar+Seafood+Delhi",
-      "priceRange": "€€",
-      "specialite": "Poisson masala",
-      "nombreAvis": 652,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Bait Beirut",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Delhi",
-      "description": "Adresse libanais & levant appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Beirut+Delhi",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1359,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Sabzi Healthy",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Delhi",
-      "description": "Adresse végétarien & healthy appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sabzi+Healthy+Delhi",
-      "priceRange": "€",
-      "specialite": "Thali végétarien",
-      "nombreAvis": 205,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Tikka Express",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Delhi",
-      "description": "Adresse grillades & kebab appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Tikka+Express+Delhi",
-      "priceRange": "€",
-      "specialite": "Seekh kebab",
-      "nombreAvis": 1351,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Shahi Darbar Delhi 10",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Delhi",
-      "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Darbar+Delhi+10+Delhi",
-      "priceRange": "€€",
-      "specialite": "Biryani royal",
-      "nombreAvis": 3665,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Lahori Karahi Delhi 11",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Delhi",
-      "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Lahori+Karahi+Delhi+11+Delhi",
-      "priceRange": "€",
-      "specialite": "Karahi poulet",
-      "nombreAvis": 474,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Bismillah Hotel Delhi 12",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Delhi",
-      "description": "Adresse traditionnel local appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bismillah+Hotel+Delhi+12+Delhi",
-      "priceRange": "€",
-      "specialite": "Nihari",
-      "nombreAvis": 1114,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Mughal Mahal Delhi 13",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Delhi",
-      "description": "Adresse gastronomique appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Mahal+Delhi+13+Delhi",
-      "priceRange": "€€€",
-      "specialite": "Thali moghol",
-      "nombreAvis": 1954,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Al-Madina Sweets Delhi 14",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Delhi",
-      "description": "Adresse pâtisserie & café appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Madina+Sweets+Delhi+14+Delhi",
-      "priceRange": "€",
-      "specialite": "Jalebi et chai",
-      "nombreAvis": 465,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Bahar Seafood Delhi 15",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Delhi",
-      "description": "Adresse fruits de mer appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahar+Seafood+Delhi+15+Delhi",
-      "priceRange": "€€",
-      "specialite": "Poisson masala",
-      "nombreAvis": 1264,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Bait Beirut Delhi 16",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Delhi",
-      "description": "Adresse libanais & levant appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Beirut+Delhi+16+Delhi",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1498,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Sabzi Healthy Delhi 17",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Delhi",
-      "description": "Adresse végétarien & healthy appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sabzi+Healthy+Delhi+17+Delhi",
-      "priceRange": "€",
-      "specialite": "Thali végétarien",
-      "nombreAvis": 292,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Tikka Express Delhi 18",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Delhi",
-      "description": "Adresse grillades & kebab appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Tikka+Express+Delhi+18+Delhi",
-      "priceRange": "€",
-      "specialite": "Seekh kebab",
-      "nombreAvis": 779,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Shahi Darbar Delhi 19",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Delhi",
-      "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Darbar+Delhi+19+Delhi",
-      "priceRange": "€€",
-      "specialite": "Biryani royal",
-      "nombreAvis": 2241,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Lahori Karahi Delhi 20",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Delhi",
-      "description": "Adresse indien & pakistani appréciée à Delhi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Lahori+Karahi+Delhi+20+Delhi",
-      "priceRange": "€",
-      "specialite": "Karahi poulet",
-      "nombreAvis": 535,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r35"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "The Imperial New Delhi",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Janpath",
-      "description": "Palace colonial historique",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Imperial+New+Delhi+Delhi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
-      "priceRange": "€€€€",
-      "id": "h1"
-    },
-    {
-      "nom": "The Leela Palace New Delhi",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Diplomatic Enclave",
-      "description": "Palace moderne raffiné",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Leela+Palace+New+Delhi+Delhi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
-      "priceRange": "€€€€",
-      "id": "h2"
-    },
-    {
-      "nom": "Bloomrooms Janpath",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Janpath",
-      "description": "Hôtel design abordable et central",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Bloomrooms+Janpath+Delhi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
-      "priceRange": "€€",
-      "id": "h3"
-    },
-    {
-      "nom": "Grand Plaza Delhi",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Delhi",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Delhi+Delhi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
-      "priceRange": "€€€€",
-      "id": "h4"
-    },
-    {
-      "nom": "City Comfort Hotel Delhi",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Delhi",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Delhi+Delhi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Delhi",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Delhi",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Delhi+Delhi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Delhi 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Delhi",
-      "description": "Hébergement halal-friendly à Delhi.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Delhi+0+Delhi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
-      "priceRange": "€€€€",
-      "nombreAvis": 2348,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Delhi",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Delhi",
-      "description": "Hébergement halal-friendly à Delhi.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Delhi+Delhi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
-      "priceRange": "€€€",
-      "nombreAvis": 1580,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Delhi",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Delhi",
-      "description": "Hébergement halal-friendly à Delhi.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Delhi+Delhi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
-      "priceRange": "€€€",
-      "nombreAvis": 200,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Delhi",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Delhi",
-      "description": "Hébergement halal-friendly à Delhi.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Delhi+Delhi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Delhi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=delhi",
-      "priceRange": "€€",
-      "nombreAvis": 1062,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Jama Masjid",
-      "categorie": "Religieux & Spirituel",
-      "description": "Plus grande mosquée d'Inde, chef-d'œuvre moghol de 1656",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Jama+Masjid+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jama+Masjid+Delhi",
-      "id": "a1"
-    },
-    {
-      "nom": "Fort Rouge (Red Fort)",
-      "categorie": "Histoire & Culture",
-      "description": "Citadelle moghole classée UNESCO",
-      "duree": "2-3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Fort+Rouge+%28Red+Fort%29+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fort+Rouge+%28Red+Fort%29+Delhi",
-      "id": "a2"
-    },
-    {
-      "nom": "Tombeau d'Humayun",
-      "categorie": "Histoire & Culture",
-      "description": "Mausolée moghol précurseur du Taj Mahal, UNESCO",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Tombeau+d%27Humayun+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tombeau+d%27Humayun+Delhi",
-      "id": "a3"
-    },
-    {
-      "nom": "Chandni Chowk",
-      "categorie": "Shopping & Souks",
-      "description": "Bazar historique, street food et épices",
-      "duree": "3h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Chandni+Chowk+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Chandni+Chowk+Delhi",
-      "id": "a4"
-    },
-    {
-      "nom": "Qutub Minar",
-      "categorie": "Histoire & Culture",
-      "description": "Minaret de victoire du XIIe siècle, UNESCO",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Qutub+Minar+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Qutub+Minar+Delhi",
-      "id": "a5"
-    },
-    {
-      "nom": "Nizamuddin Dargah",
-      "categorie": "Religieux & Spirituel",
-      "description": "Sanctuaire soufi et qawwali en soirée",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Nizamuddin+Dargah+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Nizamuddin+Dargah+Delhi",
-      "id": "a6"
-    },
-    {
-      "nom": "India Gate & Rajpath",
-      "categorie": "Nature & Aventure",
-      "description": "Mémorial et grande esplanade de la capitale",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=India+Gate+%26+Rajpath+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=India+Gate+%26+Rajpath+Delhi",
-      "id": "a7"
-    },
-    {
-      "nom": "Food tour halal de Old Delhi",
-      "categorie": "Gastronomie",
-      "description": "Découverte de la cuisine moghole de Purani Dilli",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Old+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Old+Delhi+Delhi",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Delhi",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Delhi+Delhi",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Delhi",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Delhi+Delhi",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Delhi",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Delhi+Delhi",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Delhi",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Delhi+Delhi",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Delhi",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Delhi+Delhi",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Delhi",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Delhi+Delhi",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Delhi",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Delhi+Delhi",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Delhi",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Delhi+Delhi",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Delhi",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Delhi+Delhi",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Delhi",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Delhi+Delhi",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Delhi",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Delhi+Delhi",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Delhi",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Delhi+Delhi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Delhi+Delhi",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Jama Masjid",
-      "description": "Grande mosquée moghole de 1656, capacité 25000 fidèles",
-      "adresse": "Old Delhi",
-      "mapsUrl": "https://maps.google.com/?q=Jama+Masjid+Delhi",
-      "capacite": 3007,
-      "anneeConstruction": 2017,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 28.6139,
-        "lng": 77.209
-      }
-    },
-    {
-      "nom": "Mosquée Fatehpuri",
-      "description": "Mosquée moghole du XVIIe à l'extrémité de Chandni Chowk",
-      "adresse": "Chandni Chowk",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Fatehpuri+Delhi",
-      "capacite": 8501,
-      "anneeConstruction": 1931,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 28.6139,
-        "lng": 77.209
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Delhi",
-      "description": "Mosquée fréquentée de Delhi, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Delhi",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Delhi+Delhi",
-      "capacite": 2666,
-      "anneeConstruction": 1986,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 28.6139,
-        "lng": 77.209
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Delhi",
-      "description": "Mosquée fréquentée de Delhi, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Delhi",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Delhi+Delhi",
-      "capacite": 6270,
-      "anneeConstruction": 1990,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 28.6139,
-        "lng": 77.209
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Delhi",
-      "description": "Mosquée fréquentée de Delhi, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Delhi",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Delhi+Delhi",
-      "capacite": 3452,
-      "anneeConstruction": 1912,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 28.6139,
-        "lng": 77.209
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Delhi",
-      "description": "Mosquée fréquentée de Delhi, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Delhi",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Delhi+Delhi",
-      "capacite": 831,
-      "anneeConstruction": 1951,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 28.6139,
-        "lng": 77.209
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Delhi",
-      "description": "Mosquée fréquentée de Delhi, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Delhi",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Delhi+Delhi",
-      "capacite": 5708,
-      "anneeConstruction": 1988,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 28.6139,
-        "lng": 77.209
-      }
-    }
-  ],
-  "tags": [
-    "moghol",
-    "unesco",
-    "histoire",
-    "street-food",
-    "spirituel",
-    "culture"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Shahi Darbar",
-      "Tikka Express",
-      "Sabzi Healthy Delhi 17",
-      "Lahori Karahi",
-      "Shahi Darbar Delhi 10"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Karim's",
-      "Al Jawahar",
-      "Andhra Bhavan Halal",
-      "Gulati Restaurant",
-      "Dilli 6 by Sita Ram"
-    ],
-    "incontournables": [
-      "Shahi Darbar Delhi 10",
-      "Lahori Karahi",
-      "Al-Madina Sweets",
-      "Shahi Darbar Delhi 19",
-      "Mughal Mahal Delhi 13"
-    ],
-    "pepitesCachees": [
-      "Karim's",
-      "Al Jawahar",
-      "Andhra Bhavan Halal"
-    ],
-    "idealFamille": [
-      "Shahi Darbar",
-      "Lahori Karahi",
-      "Bismillah Hotel",
-      "Al-Madina Sweets",
-      "Bahar Seafood"
-    ],
-    "gastronomique": [
-      "Saffron Garden Delhi",
-      "Mughal Mahal",
-      "Mughal Mahal Delhi 13"
-    ],
-    "ouvertNuit": [
-      "Lahori Karahi",
-      "Bismillah Hotel",
-      "Al-Madina Sweets"
-    ],
-    "vueExceptionnelle": [
-      "Bahar Seafood",
-      "Bahar Seafood Delhi 15"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Delhi",
+   "description": "Mosquée fréquentée de Delhi, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Delhi",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Delhi+Delhi",
+   "capacite": 3452,
+   "anneeConstruction": 1912,
+   "styleArchitectural": "Moghol",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 28.6139,
+    "lng": 77.209
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Delhi",
+   "description": "Mosquée fréquentée de Delhi, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Delhi",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Delhi+Delhi",
+   "capacite": 831,
+   "anneeConstruction": 1951,
+   "styleArchitectural": "Moghol",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 28.6139,
+    "lng": 77.209
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Delhi",
+   "description": "Mosquée fréquentée de Delhi, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Delhi",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Delhi+Delhi",
+   "capacite": 5708,
+   "anneeConstruction": 1988,
+   "styleArchitectural": "Moghol",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 28.6139,
+    "lng": 77.209
+   }
   }
+ ],
+ "tags": [
+  "moghol",
+  "unesco",
+  "histoire",
+  "street-food",
+  "spirituel",
+  "culture"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Shahi Darbar",
+   "Tikka Express",
+   "Sabzi Healthy Delhi 17",
+   "Lahori Karahi",
+   "Shahi Darbar Delhi 10"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Karim's",
+   "Al Jawahar",
+   "Andhra Bhavan Halal",
+   "Gulati Restaurant",
+   "Dilli 6 by Sita Ram"
+  ],
+  "incontournables": [
+   "Shahi Darbar Delhi 10",
+   "Lahori Karahi",
+   "Al-Madina Sweets",
+   "Shahi Darbar Delhi 19",
+   "Mughal Mahal Delhi 13"
+  ],
+  "pepitesCachees": [
+   "Karim's",
+   "Al Jawahar",
+   "Andhra Bhavan Halal"
+  ],
+  "idealFamille": [
+   "Shahi Darbar",
+   "Lahori Karahi",
+   "Bismillah Hotel",
+   "Al-Madina Sweets",
+   "Bahar Seafood"
+  ],
+  "gastronomique": [
+   "Saffron Garden Delhi",
+   "Mughal Mahal",
+   "Mughal Mahal Delhi 13"
+  ],
+  "ouvertNuit": [
+   "Lahori Karahi",
+   "Bismillah Hotel",
+   "Al-Madina Sweets"
+  ],
+  "vueExceptionnelle": [
+   "Bahar Seafood",
+   "Bahar Seafood Delhi 15"
+  ]
+ }
 }

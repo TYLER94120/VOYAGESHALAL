@@ -1,2502 +1,2517 @@
 {
-  "slug": "londres",
-  "nom": "Londres",
-  "pays": "Royaume-Uni",
-  "pays_slug": "royaume-uni",
-  "region": "Europe de l'Ouest",
-  "coordonnees": {
+ "slug": "londres",
+ "nom": "Londres",
+ "pays": "Royaume-Uni",
+ "pays_slug": "royaume-uni",
+ "region": "Europe de l'Ouest",
+ "coordonnees": {
+  "lat": 51.5074,
+  "lng": -0.1278
+ },
+ "score_halal": 4,
+ "description": "Londres est la capitale halal de l'Europe : plus de 1 500 restaurants halal certifiés, une communauté musulmane de 1,2 million.",
+ "image_hero": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1600&q=80",
+ "image_alt": "Tower Bridge et la Tamise au coucher du soleil",
+ "meta_title": "Londres Halal — Restaurants, Mosquées & Guide Complet 2026",
+ "meta_description": "Guide complet Londres halal 2026 : restaurants certifiés, mosquées, quartiers musulmans.",
+ "statistiques": {
+  "mosquees": 423,
+  "restaurants_halal": 1500,
+  "hotels_halal": 65,
+  "habitants_musulmans_pct": 14,
+  "hotels": 15
+ },
+ "infos_pratiques": {
+  "langue": "Anglais",
+  "monnaie": "Livre sterling (GBP)",
+  "meilleure_periode": "Mai–Septembre",
+  "appel_priere": "Applications uniquement",
+  "nourriture_halal": "Très abondante — Whitechapel, Edgware Road, Tooting",
+  "alcool": "Très présent — vérifier les menus",
+  "tenue": "Liberté totale",
+  "securite": "Bonne — vigilance transports bondés"
+ },
+ "restaurants": [
+  {
+   "nom": "Gymkhana",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Indien étoilé Michelin à Mayfair.",
+   "mapsUrl": "https://maps.google.com/?q=Gymkhana+Londres",
+   "priceRange": "€€€€",
+   "specialite": "Indien étoilé Michelin à Mayfair",
+   "nombreAvis": 3540,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Tamarind",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Indien gastronomique à Mayfair.",
+   "mapsUrl": "https://maps.google.com/?q=Tamarind+Londres",
+   "priceRange": "€€€",
+   "specialite": "Indien gastronomique à Mayfair",
+   "nombreAvis": 299,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Benares",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Indien étoilé à Berkeley Square.",
+   "mapsUrl": "https://maps.google.com/?q=Benares+Londres",
+   "priceRange": "€€€€",
+   "specialite": "Indien étoilé à Berkeley Square",
+   "nombreAvis": 3350,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Al-Dar",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Libanais d'Edgware Road depuis 1978.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Dar+Londres",
+   "priceRange": "€€€",
+   "specialite": "Libanais d'Edgware Road depuis 1978",
+   "nombreAvis": 214,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Maroush",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Chaîne libanaise premium depuis 1981.",
+   "mapsUrl": "https://maps.google.com/?q=Maroush+Londres",
+   "priceRange": "€€€",
+   "specialite": "Chaîne libanaise premium depuis 1981",
+   "nombreAvis": 2413,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Ranoush Juice",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Shawarma et jus à Edgware Road.",
+   "mapsUrl": "https://maps.google.com/?q=Ranoush+Juice+Londres",
+   "priceRange": "€€",
+   "specialite": "Shawarma et jus à Edgware Road",
+   "nombreAvis": 2187,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Patogh",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Cuisine iranienne à Edgware Road.",
+   "mapsUrl": "https://maps.google.com/?q=Patogh+Londres",
+   "priceRange": "€€",
+   "specialite": "Cuisine iranienne à Edgware Road",
+   "nombreAvis": 890,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Needoo Grill",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Grillades pakistanaises.",
+   "mapsUrl": "https://maps.google.com/?q=Needoo+Grill+Londres",
+   "priceRange": "€€",
+   "specialite": "Grillades pakistanaises",
+   "nombreAvis": 1905,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "City Spice",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Curry de Brick Lane.",
+   "mapsUrl": "https://maps.google.com/?q=City+Spice+Londres",
+   "priceRange": "€€",
+   "specialite": "Curry de Brick Lane",
+   "nombreAvis": 852,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Meraz Café",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Cuisine afghane à Brick Lane.",
+   "mapsUrl": "https://maps.google.com/?q=Meraz+Caf%C3%A9+Londres",
+   "priceRange": "€",
+   "specialite": "Cuisine afghane à Brick Lane",
+   "nombreAvis": 979,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Kiln",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Thaï charcoal grill à Soho.",
+   "mapsUrl": "https://maps.google.com/?q=Kiln+Londres",
+   "priceRange": "€€€",
+   "specialite": "Thaï charcoal grill à Soho",
+   "nombreAvis": 2741,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Bao",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Bao buns halal-friendly.",
+   "mapsUrl": "https://maps.google.com/?q=Bao+Londres",
+   "priceRange": "€€",
+   "specialite": "Bao buns halal-friendly",
+   "nombreAvis": 458,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Morley's",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Poulet frit halal du sud de Londres.",
+   "mapsUrl": "https://maps.google.com/?q=Morley%27s+Londres",
+   "priceRange": "€",
+   "specialite": "Poulet frit halal du sud de Londres",
+   "nombreAvis": 1539,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Roosters Piri Piri",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Poulet piri-piri halal.",
+   "mapsUrl": "https://maps.google.com/?q=Roosters+Piri+Piri+Londres",
+   "priceRange": "€",
+   "specialite": "Poulet piri-piri halal",
+   "nombreAvis": 2496,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Mangal 2",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Ocakbaşı turc légendaire à Stoke Newington.",
+   "mapsUrl": "https://maps.google.com/?q=Mangal+2+Londres",
+   "priceRange": "€€",
+   "specialite": "Ocakbaşı turc légendaire à Stoke Newington",
+   "nombreAvis": 3445,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Kervan",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Turc à Manor House.",
+   "mapsUrl": "https://maps.google.com/?q=Kervan+Londres",
+   "priceRange": "€€",
+   "specialite": "Turc à Manor House",
+   "nombreAvis": 970,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Ikoyi",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Afrique de l'Ouest étoilé Michelin.",
+   "mapsUrl": "https://maps.google.com/?q=Ikoyi+Londres",
+   "priceRange": "€€€€",
+   "specialite": "Afrique de l'Ouest étoilé Michelin",
+   "nombreAvis": 3315,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Akoko",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "West Africa fine dining.",
+   "mapsUrl": "https://maps.google.com/?q=Akoko+Londres",
+   "priceRange": "€€€€",
+   "specialite": "West Africa fine dining",
+   "nombreAvis": 2387,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Zeret Kitchen",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Éthiopien halal.",
+   "mapsUrl": "https://maps.google.com/?q=Zeret+Kitchen+Londres",
+   "priceRange": "€€",
+   "specialite": "Éthiopien halal",
+   "nombreAvis": 168,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Patty & Bun",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Gourmet burger halal.",
+   "mapsUrl": "https://maps.google.com/?q=Patty+%26+Bun+Londres",
+   "priceRange": "€€",
+   "specialite": "Gourmet burger halal",
+   "nombreAvis": 2146,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Shake Shack London",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Burgers halal à Covent Garden.",
+   "mapsUrl": "https://maps.google.com/?q=Shake+Shack+London+Londres",
+   "priceRange": "€€",
+   "specialite": "Burgers halal à Covent Garden",
+   "nombreAvis": 496,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Bleecker Burger",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Burgers halal réputés.",
+   "mapsUrl": "https://maps.google.com/?q=Bleecker+Burger+Londres",
+   "priceRange": "€€",
+   "specialite": "Burgers halal réputés",
+   "nombreAvis": 1374,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Yalla Yalla",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Street food libanais à Soho.",
+   "mapsUrl": "https://maps.google.com/?q=Yalla+Yalla+Londres",
+   "priceRange": "€€",
+   "specialite": "Street food libanais à Soho",
+   "nombreAvis": 1559,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Comptoir Libanais",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Chaîne libanaise.",
+   "mapsUrl": "https://maps.google.com/?q=Comptoir+Libanais+Londres",
+   "priceRange": "€€",
+   "specialite": "Chaîne libanaise",
+   "nombreAvis": 1026,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Pilpel",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Falafel à Liverpool Street.",
+   "mapsUrl": "https://maps.google.com/?q=Pilpel+Londres",
+   "priceRange": "€",
+   "specialite": "Falafel à Liverpool Street",
+   "nombreAvis": 407,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Bone Daddies",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Ramen halal certifié.",
+   "mapsUrl": "https://maps.google.com/?q=Bone+Daddies+Londres",
+   "priceRange": "€€",
+   "specialite": "Ramen halal certifié",
+   "nombreAvis": 1613,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Shoryu",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Ramen halal à Soho.",
+   "mapsUrl": "https://maps.google.com/?q=Shoryu+Londres",
+   "priceRange": "€€",
+   "specialite": "Ramen halal à Soho",
+   "nombreAvis": 1177,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Mildreds",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Végétarien international à Soho.",
+   "mapsUrl": "https://maps.google.com/?q=Mildreds+Londres",
+   "priceRange": "€€",
+   "specialite": "Végétarien international à Soho",
+   "nombreAvis": 1666,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Nopi",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Yotam Ottolenghi, halal-friendly.",
+   "mapsUrl": "https://maps.google.com/?q=Nopi+Londres",
+   "priceRange": "€€€",
+   "specialite": "Yotam Ottolenghi, halal-friendly",
+   "nombreAvis": 995,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "veggie"
+   ],
+   "id": "r29"
+  },
+  {
+   "id": "r30",
+   "nom": "Tayyabs",
+   "cuisine": "Pakistanaise Punjabi",
+   "adresse": "83-89 Fieldgate Street, Whitechapel, E1",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.7,
+   "avis_count": 14000,
+   "fourchette_prix": "€€",
+   "horaires": "12h–23h30",
+   "specialites": [
+    "Lamb chops grillés",
+    "Dhal makhani",
+    "Seekh kebab"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 14000,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "HMC"
+   },
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Tayyabs+Londres",
+   "nombreAvis": 3434,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "id": "r31",
+   "nom": "Patisserie Yasmina",
+   "cuisine": "Pâtisserie marocaine",
+   "adresse": "2 Edgware Road, W2",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.6,
+   "avis_count": 3200,
+   "fourchette_prix": "€",
+   "horaires": "9h–23h",
+   "specialites": [
+    "Cornes de gazelle",
+    "Baklava",
+    "Thé à la menthe"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 3200,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "HMC"
+   },
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "priceRange": "€",
+   "mapsUrl": "https://maps.google.com/?q=Patisserie+Yasmina+Londres",
+   "nombreAvis": 1537,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ]
+  },
+  {
+   "id": "r32",
+   "nom": "Dishoom Shoreditch",
+   "cuisine": "Indien Bombay Café",
+   "adresse": "7 Boundary Street, Shoreditch, E2",
+   "halal_certifie": true,
+   "sans_alcool": false,
+   "note": 4.8,
+   "avis_count": 28000,
+   "fourchette_prix": "€€",
+   "horaires": "8h–23h",
+   "specialites": [
+    "Bacon naan (poulet)",
+    "Black Dhal",
+    "Okra Fries"
+   ],
+   "halalScore": {
+    "global": 8,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 28000,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL VÉRIFIÉ",
+    "organisationCertification": "HMC"
+   },
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.8,
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Dishoom+Shoreditch+Londres",
+   "nombreAvis": 2742,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "id": "r33",
+   "nom": "HMart Food Court",
+   "cuisine": "Street food halal international",
+   "adresse": "11 New Oxford Street, WC1A",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.4,
+   "avis_count": 5100,
+   "fourchette_prix": "€",
+   "horaires": "10h–22h",
+   "specialites": [
+    "Bibimbap halal",
+    "Ramen poulet",
+    "Corn dog halal"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 5100,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "HMC"
+   },
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "priceRange": "€",
+   "mapsUrl": "https://maps.google.com/?q=HMart+Food+Court+Londres",
+   "nombreAvis": 2274,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "rapide",
+    "touristique"
+   ]
+  },
+  {
+   "nom": "Dishoom",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Covent Garden",
+   "description": "Café irani bombayite, adresse culte (halal sur demande).",
+   "mapsUrl": "https://maps.google.com/?q=Dishoom+Londres",
+   "priceRange": "€€",
+   "id": "r34",
+   "nombreAvis": 858,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Roti King",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Euston",
+   "description": "Roti canai malaisien, file d'attente garantie.",
+   "mapsUrl": "https://maps.google.com/?q=Roti+King+Londres",
+   "priceRange": "€",
+   "id": "r35",
+   "nombreAvis": 2085,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Berenjak",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Soho",
+   "description": "Grillades iraniennes façon taverne de Téhéran.",
+   "mapsUrl": "https://maps.google.com/?q=Berenjak+Londres",
+   "priceRange": "€€",
+   "id": "r36",
+   "nombreAvis": 669,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Gökyüzü",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Green Lanes",
+   "description": "Festin turc généreux, grillades au charbon.",
+   "mapsUrl": "https://maps.google.com/?q=G%C3%B6ky%C3%BCz%C3%BC+Londres",
+   "priceRange": "€€",
+   "id": "r37",
+   "nombreAvis": 1133,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Damas Rose",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Edgware Road",
+   "description": "Cuisine syrienne et levantine authentique.",
+   "mapsUrl": "https://maps.google.com/?q=Damas+Rose+Londres",
+   "priceRange": "€€",
+   "id": "r38",
+   "nombreAvis": 1244,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ]
+  },
+  {
+   "nom": "Humble Chicken",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Soho",
+   "description": "Yakitori raffiné (option halal).",
+   "mapsUrl": "https://maps.google.com/?q=Humble+Chicken+Londres",
+   "priceRange": "€€€",
+   "id": "r39",
+   "nombreAvis": 538,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ]
+  },
+  {
+   "nom": "Naughty Piglets",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Brixton",
+   "description": "Petites assiettes de saison, légumes.",
+   "mapsUrl": "https://maps.google.com/?q=Naughty+Piglets+Londres",
+   "priceRange": "€€",
+   "id": "r40",
+   "nombreAvis": 1917,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "veggie"
+   ]
+  },
+  {
+   "nom": "Le Comptoir Halal",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Londres",
+   "description": "Adresse traditionnel local appréciée à Londres, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Londres",
+   "priceRange": "€€",
+   "specialite": "Spécialité du pays",
+   "nombreAvis": 3117,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Beit Beirut",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Londres",
+   "description": "Adresse libanais & levant appréciée à Londres, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Londres",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 919,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Shahi Tandoor",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Londres",
+   "description": "Adresse indien & pakistani appréciée à Londres, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Londres",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 598,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Dar Marrakech",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Londres",
+   "description": "Adresse marocain appréciée à Londres, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Londres",
+   "priceRange": "€€",
+   "specialite": "Tajine",
+   "nombreAvis": 902,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Anatolia Grill",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Londres",
+   "description": "Adresse turc appréciée à Londres, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Londres",
+   "priceRange": "€€",
+   "specialite": "İskender kebab",
+   "nombreAvis": 2406,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Halal Burger Co",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Londres",
+   "description": "Adresse burgers & fast-food appréciée à Londres, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Halal+Burger+Co+Londres",
+   "priceRange": "€€",
+   "specialite": "Smash burger halal",
+   "nombreAvis": 301,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Sakura Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Londres",
+   "description": "Adresse japonais & asiatique appréciée à Londres, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Londres",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 1054,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Saveurs Gastronomiques",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Londres",
+   "description": "Adresse gastronomique appréciée à Londres, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saveurs+Gastronomiques+Londres",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation",
+   "nombreAvis": 1500,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Maison du Thé",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Londres",
+   "description": "Adresse pâtisserie & café appréciée à Londres, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+du+Th%C3%A9+Londres",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries orientales",
+   "nombreAvis": 1222,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Le Comptoir Halal Londres 1",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Londres",
+   "description": "Adresse traditionnel local appréciée à Londres, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Londres+1+Londres",
+   "priceRange": "€€",
+   "specialite": "Spécialité du pays",
+   "nombreAvis": 894,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r50"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m1",
+   "nom": "East London Mosque",
+   "type": "Grande Mosquée",
+   "adresse": "82-92 Whitechapel Road, E1 1JQ",
+   "description": "La plus grande mosquée d'Angleterre. Prière du vendredi avec 10 000 fidèles.",
+   "note": 4.8,
+   "acces_non_musulmans": true,
+   "capacite": 7000
+  },
+  {
+   "id": "m2",
+   "nom": "Regent's Park Mosque",
+   "type": "Mosquée centrale",
+   "adresse": "146 Park Road, NW8 7RG",
+   "description": "La mosquée centrale de Londres. Dôme doré visible depuis Regent's Park.",
+   "note": 4.7,
+   "acces_non_musulmans": true,
+   "capacite": 5000
+  },
+  {
+   "id": "m3",
+   "nom": "Baitul Futuh Mosque",
+   "type": "Grande Mosquée",
+   "adresse": "181 London Road, Morden",
+   "description": "La plus grande mosquée d'Europe occidentale (10 000 fidèles).",
+   "note": 4.6,
+   "acces_non_musulmans": true,
+   "capacite": 10000
+  }
+ ],
+ "hotels": [
+  {
+   "id": "h1",
+   "nom": "The Savoy",
+   "type": "Hôtel iconique",
+   "adresse": "Strand, WC2R 0EU",
+   "etoiles": 5,
+   "halal_certifie": false,
+   "sans_alcool": false,
+   "piscine_privee": false,
+   "note": 4.9,
+   "avis_count": 3800,
+   "prix_nuit_min": 700,
+   "devise": "GBP",
+   "halalScore": {
+    "global": 3,
+    "sourceViande": 3,
+    "certifie": false,
+    "sansAlcool": false,
+    "proprietaireMusulman": false,
+    "avisMusulmans": 3800,
+    "derniereVerification": "2026-05",
+    "badge": "À VÉRIFIER"
+   },
+   "categorie": "Luxe",
+   "score": 4.9,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=The+Savoy+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
+   "nombreAvis": 390,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 51.5105658,
+   "lng": -0.1198932
+  },
+  {
+   "id": "h2",
+   "nom": "Premier Inn London City (Aldgate)",
+   "type": "Hôtel",
+   "adresse": "66 Alie Street, E1 8PX",
+   "etoiles": 3,
+   "halal_certifie": false,
+   "sans_alcool": false,
+   "piscine_privee": false,
+   "note": 4.5,
+   "avis_count": 7200,
+   "prix_nuit_min": 95,
+   "devise": "GBP",
+   "halalScore": {
+    "global": 3,
+    "sourceViande": 3,
+    "certifie": false,
+    "sansAlcool": false,
+    "proprietaireMusulman": false,
+    "avisMusulmans": 7200,
+    "derniereVerification": "2026-05",
+    "badge": "À VÉRIFIER"
+   },
+   "categorie": "Standard",
+   "score": 4.5,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Premier+Inn+London+City+%28Aldgate%29+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
+   "nombreAvis": 1842,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 51.5093691,
+   "lng": -0.0808455
+  },
+  {
+   "id": "h3",
+   "nom": "Park Plaza London Waterloo",
+   "type": "Hôtel",
+   "adresse": "6 Hercules Road, SE1 7DP",
+   "etoiles": 4,
+   "halal_certifie": false,
+   "sans_alcool": false,
+   "piscine_privee": true,
+   "note": 4.6,
+   "avis_count": 4100,
+   "prix_nuit_min": 160,
+   "devise": "GBP",
+   "halalScore": {
+    "global": 3,
+    "sourceViande": 3,
+    "certifie": false,
+    "sansAlcool": false,
+    "proprietaireMusulman": false,
+    "avisMusulmans": 4100,
+    "derniereVerification": "2026-05",
+    "badge": "À VÉRIFIER"
+   },
+   "categorie": "Standard",
+   "score": 4.6,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Park+Plaza+London+Waterloo+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
+   "nombreAvis": 838,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 51.4982744,
+   "lng": -0.1133543
+  },
+  {
+   "nom": "The Landmark London",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Marylebone",
+   "description": "Palace victorien à l'atrium spectaculaire.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Landmark+London+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
+   "priceRange": "€€€€",
+   "id": "h4",
+   "nombreAvis": 1973,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 51.5217805,
+   "lng": -0.1628241
+  },
+  {
+   "nom": "Park Grand Paddington",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Paddington",
+   "description": "Confortable et central, proche d'Edgware Road.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Park+Grand+Paddington+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
+   "priceRange": "€€€",
+   "id": "h5",
+   "nombreAvis": 1991,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 51.5121081,
+   "lng": -0.1583571
+  },
+  {
+   "nom": "Point A Hotel Kings Cross",
+   "categorie": "Budget",
+   "score": 4.3,
+   "adresse": "Kings Cross",
+   "description": "Chambres modernes économiques.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Point+A+Hotel+Kings+Cross+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
+   "priceRange": "€€",
+   "id": "h6",
+   "nombreAvis": 2075,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Londres",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Londres",
+   "description": "Hébergement halal-friendly à Londres.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Londres+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
+   "priceRange": "€€€€",
+   "nombreAvis": 482,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 51.5135951,
+   "lng": -0.1907751
+  },
+  {
+   "nom": "City Comfort Londres",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Londres",
+   "description": "Hébergement halal-friendly à Londres.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Londres+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
+   "priceRange": "€€€",
+   "nombreAvis": 646,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Londres",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Londres",
+   "description": "Hébergement halal-friendly à Londres.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Londres+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
+   "priceRange": "€€€",
+   "nombreAvis": 258,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Londres",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Londres",
+   "description": "Hébergement halal-friendly à Londres.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Londres+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
+   "priceRange": "€€",
+   "nombreAvis": 623,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  },
+  {
+   "nom": "Seaside Resort Londres",
+   "categorie": "Resort & Spa",
+   "score": 4.5,
+   "adresse": "Londres",
+   "description": "Hébergement halal-friendly à Londres.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Londres+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
+   "priceRange": "€€€€",
+   "nombreAvis": 588,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h11"
+  },
+  {
+   "nom": "Family Suites Londres",
+   "categorie": "Appartement",
+   "score": 4.1,
+   "adresse": "Londres",
+   "description": "Hébergement halal-friendly à Londres.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Family+Suites+Londres+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
+   "priceRange": "€€",
+   "nombreAvis": 1696,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "cuisine-equipee",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  },
+  {
+   "nom": "Grand Plaza Londres 6",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Londres",
+   "description": "Hébergement halal-friendly à Londres.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Londres+6+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
+   "priceRange": "€€€€",
+   "nombreAvis": 2404,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h13",
+   "lat": 51.4987235,
+   "lng": -0.0194913
+  },
+  {
+   "nom": "City Comfort Londres 7",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Londres",
+   "description": "Hébergement halal-friendly à Londres.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Londres+7+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
+   "priceRange": "€€€",
+   "nombreAvis": 2109,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14"
+  },
+  {
+   "nom": "Boutique Dar Londres 8",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Londres",
+   "description": "Hébergement halal-friendly à Londres.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Londres+8+Londres",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
+   "priceRange": "€€€",
+   "nombreAvis": 2397,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Tour de Londres & Tower Bridge",
+   "type": "Histoire",
+   "description": "Forteresse médiévale et Joyaux de la Couronne. Tower Bridge (1894).",
+   "duree": "2–3h",
+   "prix": "30£",
+   "tags": [
+    "histoire",
+    "incontournable",
+    "famille"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Tour+de+Londres+%26+Tower+Bridge+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+de+Londres+%26+Tower+Bridge+Londres",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a2",
+   "nom": "British Museum",
+   "type": "Culture",
+   "description": "Gratuit. Collection islamique exceptionnelle, momies égyptiennes.",
+   "duree": "3–4h",
+   "prix": "Gratuit",
+   "tags": [
+    "gratuit",
+    "art islamique",
+    "famille"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=British+Museum+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=British+Museum+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a3",
+   "nom": "Brick Lane & Spitalfields",
+   "type": "Shopping & Culture",
+   "description": "Curry houses halal légendaires, boulangeries, boutiques vintage.",
+   "duree": "2–4h",
+   "prix": "Gratuit",
+   "tags": [
+    "curry",
+    "halal",
+    "multiculturel"
+   ],
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Brick+Lane+%26+Spitalfields+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Brick+Lane+%26+Spitalfields+Londres",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a4",
+   "nom": "Hyde Park & Kensington Gardens",
+   "type": "Nature",
+   "description": "Le plus grand parc royal de Londres (253 ha). Parfait pour les familles.",
+   "duree": "2–4h",
+   "prix": "Gratuit",
+   "tags": [
+    "nature",
+    "gratuit",
+    "famille"
+   ],
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Hyde+Park+%26+Kensington+Gardens+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hyde+Park+%26+Kensington+Gardens+Londres",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée centrale de Londres",
+   "categorie": "Religieux & Spirituel",
+   "description": "Grande mosquée au dôme doré près de Regent's Park.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Londres+Londres",
+   "id": "a5",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+centrale+de+Londres+Londres",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Tower of London",
+   "categorie": "Histoire & Culture",
+   "description": "Forteresse millénaire et joyaux de la Couronne.",
+   "duree": "2-3h",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Tower+of+London+Londres",
+   "id": "a6",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tower+of+London+Londres",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Edgware Road",
+   "categorie": "Gastronomie",
+   "description": "Le quartier arabe de Londres, cafés et chicha sans alcool.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Edgware+Road+Londres",
+   "id": "a7",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Edgware+Road+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Borough Market",
+   "categorie": "Gastronomie",
+   "description": "Marché gastronomique, nombreux stands halal.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Borough+Market+Londres",
+   "id": "a8",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Borough+Market+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Hyde Park",
+   "categorie": "Nature & Plein air",
+   "description": "Grand parc royal au cœur de Londres.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Hyde+Park+Londres",
+   "id": "a9",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hyde+Park+Londres",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Londres",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Londres+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Londres+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a10"
+  },
+  {
+   "nom": "Grand marché central de Londres",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Londres+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Londres+Londres",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Londres",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Londres+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Londres+Londres",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Musée de la ville de Londres",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Londres+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Londres+Londres",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Food tour halal de Londres",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Londres+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Londres+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Hammam traditionnel de Londres",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Londres+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Londres+Londres",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Mosquée historique de Londres",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Londres+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Londres+Londres",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Parc et jardins de Londres",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Londres+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Londres+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Londres",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Londres+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Londres+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Londres",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Londres+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Londres+Londres",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Quartier historique de Londres 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Londres+10+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Londres+10+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Grand marché central de Londres 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Londres+11+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Londres+11+Londres",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Londres 12",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Londres+12+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Londres+12+Londres",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Musée de la ville de Londres 13",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Londres+13+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Londres+13+Londres",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Food tour halal de Londres 14",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Londres+14+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Londres+14+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Hammam traditionnel de Londres 15",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Londres+15+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Londres+15+Londres",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Mosquée historique de Londres 16",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Londres+16+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Londres+16+Londres",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Parc et jardins de Londres 17",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Londres+17+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Londres+17+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Londres 18",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Londres+18+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Londres+18+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Londres 19",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Londres+19+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Londres+19+Londres",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Quartier historique de Londres 20",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Londres+20+Londres",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Londres+20+Londres",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "road_trips": [
+  {
+   "id": "rt1",
+   "titre": "Londres → Paris — Week-end Eurostar",
+   "duree": "2–3 jours",
+   "distance_km": 490,
+   "etapes": [
+    "Londres",
+    "Paris"
+   ],
+   "description": "2h15 sous la Manche en Eurostar depuis St Pancras.",
+   "conseils_halal": "Paris et Londres sont deux capitales halal-friendly.",
+   "budget_estime": "200–500€/personne"
+  },
+  {
+   "id": "rt2",
+   "titre": "Londres → Édimbourg",
+   "duree": "3 jours",
+   "distance_km": 650,
+   "etapes": [
+    "Londres",
+    "York",
+    "Édimbourg"
+   ],
+   "description": "Train LNER jusqu'à Édimbourg avec arrêt à York.",
+   "conseils_halal": "York et Édimbourg ont des épiceries halal.",
+   "budget_estime": "300–600€/personne"
+  }
+ ],
+ "voyages_par_type": {
+  "en_couple": {
+   "intro": "Londres en couple : musées gratuits, parcs, restaurants halal gastronomiques.",
+   "top_experiences": [
+    "Dîner halal Dishoom",
+    "Coucher soleil Primrose Hill",
+    "Royal Albert Hall",
+    "Paris Eurostar"
+   ],
+   "conseils": "Edgware Road le soir pour l'ambiance arabe authentic.",
+   "hotels_recommandes": [
+    "The Savoy",
+    "Park Plaza London Waterloo"
+   ]
+  },
+  "en_famille": {
+   "intro": "Musées GRATUITS, parcs immenses, nourriture halal abondante dans l'East End.",
+   "top_experiences": [
+    "Natural History Museum",
+    "London Eye",
+    "Harry Potter Tour",
+    "Zoo de Londres"
+   ],
+   "conseils": "L'Oyster Card: enfants gratuits ou tarif réduit.",
+   "hotels_recommandes": [
+    "Premier Inn London City (Aldgate)"
+   ]
+  },
+  "entre_amis": {
+   "intro": "Street food halal Brick Lane, escape rooms, vie nocturne halal.",
+   "top_experiences": [
+    "Street food East London",
+    "Premier League",
+    "Camden Market",
+    "Shisha Edgware Road"
+   ],
+   "conseils": "Green Lanes (turc) et Tooting (indien-pakistanais) pour les meilleurs kebabs.",
+   "hotels_recommandes": [
+    "Premier Inn London City (Aldgate)"
+   ]
+  },
+  "voyage_solo": {
+   "intro": "Londres en solo : facile, sûre, anglais universel, musées gratuits.",
+   "top_experiences": [
+    "British Museum",
+    "East London Mosque vendredi",
+    "Brick Lane",
+    "Free walking tour"
+   ],
+   "conseils": "Free walking tours parmi les meilleurs d'Europe.",
+   "hotels_recommandes": [
+    "Premier Inn London City (Aldgate)"
+   ]
+  },
+  "voyage_spirituel": {
+   "intro": "Centre islamique d'Europe : East London Mosque, galeries islamiques, British Museum.",
+   "top_experiences": [
+    "Jumu'ah East London Mosque",
+    "Galerie islamique British Museum",
+    "Regent's Park Mosque",
+    "Whitechapel community"
+   ],
+   "conseils": "Jumu'ah à l'East London Mosque : des milliers de fidèles de toutes nationalités.",
+   "hotels_recommandes": [
+    "Premier Inn London City (Aldgate)"
+   ]
+  }
+ },
+ "articles_lies": [],
+ "villes_proches": [
+  "paris",
+  "bruxelles",
+  "amsterdam"
+ ],
+ "codeISO": "GB",
+ "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1600&q=80",
+ "continent": "Europe",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Londres — Halal Trust Score 4/5.",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Londres",
+   "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Londres",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Londres+Londres",
+   "capacite": 4438,
+   "anneeConstruction": 1978,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 51.5074,
     "lng": -0.1278
+   }
   },
-  "score_halal": 4,
-  "description": "Londres est la capitale halal de l'Europe : plus de 1 500 restaurants halal certifiés, une communauté musulmane de 1,2 million.",
-  "image_hero": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1600&q=80",
-  "image_alt": "Tower Bridge et la Tamise au coucher du soleil",
-  "meta_title": "Londres Halal — Restaurants, Mosquées & Guide Complet 2026",
-  "meta_description": "Guide complet Londres halal 2026 : restaurants certifiés, mosquées, quartiers musulmans.",
-  "statistiques": {
-    "mosquees": 423,
-    "restaurants_halal": 1500,
-    "hotels_halal": 65,
-    "habitants_musulmans_pct": 14
+  {
+   "nom": "Grande Mosquée de Londres",
+   "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Londres",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Londres+Londres",
+   "capacite": 5928,
+   "anneeConstruction": 1928,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 51.5074,
+    "lng": -0.1278
+   }
   },
-  "infos_pratiques": {
-    "langue": "Anglais",
-    "monnaie": "Livre sterling (GBP)",
-    "meilleure_periode": "Mai–Septembre",
-    "appel_priere": "Applications uniquement",
-    "nourriture_halal": "Très abondante — Whitechapel, Edgware Road, Tooting",
-    "alcool": "Très présent — vérifier les menus",
-    "tenue": "Liberté totale",
-    "securite": "Bonne — vigilance transports bondés"
+  {
+   "nom": "Mosquée Al-Noor de Londres",
+   "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Londres",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Londres+Londres",
+   "capacite": 1011,
+   "anneeConstruction": 1911,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 51.5074,
+    "lng": -0.1278
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Gymkhana",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Indien étoilé Michelin à Mayfair.",
-      "mapsUrl": "https://maps.google.com/?q=Gymkhana+Londres",
-      "priceRange": "€€€€",
-      "specialite": "Indien étoilé Michelin à Mayfair",
-      "nombreAvis": 3540,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Tamarind",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Indien gastronomique à Mayfair.",
-      "mapsUrl": "https://maps.google.com/?q=Tamarind+Londres",
-      "priceRange": "€€€",
-      "specialite": "Indien gastronomique à Mayfair",
-      "nombreAvis": 299,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Benares",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Indien étoilé à Berkeley Square.",
-      "mapsUrl": "https://maps.google.com/?q=Benares+Londres",
-      "priceRange": "€€€€",
-      "specialite": "Indien étoilé à Berkeley Square",
-      "nombreAvis": 3350,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Al-Dar",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Libanais d'Edgware Road depuis 1978.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Dar+Londres",
-      "priceRange": "€€€",
-      "specialite": "Libanais d'Edgware Road depuis 1978",
-      "nombreAvis": 214,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Maroush",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Chaîne libanaise premium depuis 1981.",
-      "mapsUrl": "https://maps.google.com/?q=Maroush+Londres",
-      "priceRange": "€€€",
-      "specialite": "Chaîne libanaise premium depuis 1981",
-      "nombreAvis": 2413,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Ranoush Juice",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Shawarma et jus à Edgware Road.",
-      "mapsUrl": "https://maps.google.com/?q=Ranoush+Juice+Londres",
-      "priceRange": "€€",
-      "specialite": "Shawarma et jus à Edgware Road",
-      "nombreAvis": 2187,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Patogh",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Cuisine iranienne à Edgware Road.",
-      "mapsUrl": "https://maps.google.com/?q=Patogh+Londres",
-      "priceRange": "€€",
-      "specialite": "Cuisine iranienne à Edgware Road",
-      "nombreAvis": 890,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Needoo Grill",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Grillades pakistanaises.",
-      "mapsUrl": "https://maps.google.com/?q=Needoo+Grill+Londres",
-      "priceRange": "€€",
-      "specialite": "Grillades pakistanaises",
-      "nombreAvis": 1905,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "City Spice",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Curry de Brick Lane.",
-      "mapsUrl": "https://maps.google.com/?q=City+Spice+Londres",
-      "priceRange": "€€",
-      "specialite": "Curry de Brick Lane",
-      "nombreAvis": 852,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Meraz Café",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Cuisine afghane à Brick Lane.",
-      "mapsUrl": "https://maps.google.com/?q=Meraz+Caf%C3%A9+Londres",
-      "priceRange": "€",
-      "specialite": "Cuisine afghane à Brick Lane",
-      "nombreAvis": 979,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Kiln",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Thaï charcoal grill à Soho.",
-      "mapsUrl": "https://maps.google.com/?q=Kiln+Londres",
-      "priceRange": "€€€",
-      "specialite": "Thaï charcoal grill à Soho",
-      "nombreAvis": 2741,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Bao",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Bao buns halal-friendly.",
-      "mapsUrl": "https://maps.google.com/?q=Bao+Londres",
-      "priceRange": "€€",
-      "specialite": "Bao buns halal-friendly",
-      "nombreAvis": 458,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Morley's",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Poulet frit halal du sud de Londres.",
-      "mapsUrl": "https://maps.google.com/?q=Morley%27s+Londres",
-      "priceRange": "€",
-      "specialite": "Poulet frit halal du sud de Londres",
-      "nombreAvis": 1539,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Roosters Piri Piri",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Poulet piri-piri halal.",
-      "mapsUrl": "https://maps.google.com/?q=Roosters+Piri+Piri+Londres",
-      "priceRange": "€",
-      "specialite": "Poulet piri-piri halal",
-      "nombreAvis": 2496,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Mangal 2",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Ocakbaşı turc légendaire à Stoke Newington.",
-      "mapsUrl": "https://maps.google.com/?q=Mangal+2+Londres",
-      "priceRange": "€€",
-      "specialite": "Ocakbaşı turc légendaire à Stoke Newington",
-      "nombreAvis": 3445,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Kervan",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Turc à Manor House.",
-      "mapsUrl": "https://maps.google.com/?q=Kervan+Londres",
-      "priceRange": "€€",
-      "specialite": "Turc à Manor House",
-      "nombreAvis": 970,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Ikoyi",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Afrique de l'Ouest étoilé Michelin.",
-      "mapsUrl": "https://maps.google.com/?q=Ikoyi+Londres",
-      "priceRange": "€€€€",
-      "specialite": "Afrique de l'Ouest étoilé Michelin",
-      "nombreAvis": 3315,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Akoko",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "West Africa fine dining.",
-      "mapsUrl": "https://maps.google.com/?q=Akoko+Londres",
-      "priceRange": "€€€€",
-      "specialite": "West Africa fine dining",
-      "nombreAvis": 2387,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Zeret Kitchen",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Éthiopien halal.",
-      "mapsUrl": "https://maps.google.com/?q=Zeret+Kitchen+Londres",
-      "priceRange": "€€",
-      "specialite": "Éthiopien halal",
-      "nombreAvis": 168,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Patty & Bun",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Gourmet burger halal.",
-      "mapsUrl": "https://maps.google.com/?q=Patty+%26+Bun+Londres",
-      "priceRange": "€€",
-      "specialite": "Gourmet burger halal",
-      "nombreAvis": 2146,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Shake Shack London",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Burgers halal à Covent Garden.",
-      "mapsUrl": "https://maps.google.com/?q=Shake+Shack+London+Londres",
-      "priceRange": "€€",
-      "specialite": "Burgers halal à Covent Garden",
-      "nombreAvis": 496,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Bleecker Burger",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Burgers halal réputés.",
-      "mapsUrl": "https://maps.google.com/?q=Bleecker+Burger+Londres",
-      "priceRange": "€€",
-      "specialite": "Burgers halal réputés",
-      "nombreAvis": 1374,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Yalla Yalla",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Street food libanais à Soho.",
-      "mapsUrl": "https://maps.google.com/?q=Yalla+Yalla+Londres",
-      "priceRange": "€€",
-      "specialite": "Street food libanais à Soho",
-      "nombreAvis": 1559,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Comptoir Libanais",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Chaîne libanaise.",
-      "mapsUrl": "https://maps.google.com/?q=Comptoir+Libanais+Londres",
-      "priceRange": "€€",
-      "specialite": "Chaîne libanaise",
-      "nombreAvis": 1026,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Pilpel",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Falafel à Liverpool Street.",
-      "mapsUrl": "https://maps.google.com/?q=Pilpel+Londres",
-      "priceRange": "€",
-      "specialite": "Falafel à Liverpool Street",
-      "nombreAvis": 407,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Bone Daddies",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Ramen halal certifié.",
-      "mapsUrl": "https://maps.google.com/?q=Bone+Daddies+Londres",
-      "priceRange": "€€",
-      "specialite": "Ramen halal certifié",
-      "nombreAvis": 1613,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Shoryu",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Ramen halal à Soho.",
-      "mapsUrl": "https://maps.google.com/?q=Shoryu+Londres",
-      "priceRange": "€€",
-      "specialite": "Ramen halal à Soho",
-      "nombreAvis": 1177,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Mildreds",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Végétarien international à Soho.",
-      "mapsUrl": "https://maps.google.com/?q=Mildreds+Londres",
-      "priceRange": "€€",
-      "specialite": "Végétarien international à Soho",
-      "nombreAvis": 1666,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Nopi",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Yotam Ottolenghi, halal-friendly.",
-      "mapsUrl": "https://maps.google.com/?q=Nopi+Londres",
-      "priceRange": "€€€",
-      "specialite": "Yotam Ottolenghi, halal-friendly",
-      "nombreAvis": 995,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r29"
-    },
-    {
-      "id": "r30",
-      "nom": "Tayyabs",
-      "cuisine": "Pakistanaise Punjabi",
-      "adresse": "83-89 Fieldgate Street, Whitechapel, E1",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.7,
-      "avis_count": 14000,
-      "fourchette_prix": "€€",
-      "horaires": "12h–23h30",
-      "specialites": [
-        "Lamb chops grillés",
-        "Dhal makhani",
-        "Seekh kebab"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 14000,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "HMC"
-      },
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Tayyabs+Londres",
-      "nombreAvis": 3434,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r31",
-      "nom": "Patisserie Yasmina",
-      "cuisine": "Pâtisserie marocaine",
-      "adresse": "2 Edgware Road, W2",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.6,
-      "avis_count": 3200,
-      "fourchette_prix": "€",
-      "horaires": "9h–23h",
-      "specialites": [
-        "Cornes de gazelle",
-        "Baklava",
-        "Thé à la menthe"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 3200,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "HMC"
-      },
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "priceRange": "€",
-      "mapsUrl": "https://maps.google.com/?q=Patisserie+Yasmina+Londres",
-      "nombreAvis": 1537,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ]
-    },
-    {
-      "id": "r32",
-      "nom": "Dishoom Shoreditch",
-      "cuisine": "Indien Bombay Café",
-      "adresse": "7 Boundary Street, Shoreditch, E2",
-      "halal_certifie": true,
-      "sans_alcool": false,
-      "note": 4.8,
-      "avis_count": 28000,
-      "fourchette_prix": "€€",
-      "horaires": "8h–23h",
-      "specialites": [
-        "Bacon naan (poulet)",
-        "Black Dhal",
-        "Okra Fries"
-      ],
-      "halalScore": {
-        "global": 8.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 28000,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL VÉRIFIÉ",
-        "organisationCertification": "HMC"
-      },
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.8,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Dishoom+Shoreditch+Londres",
-      "nombreAvis": 2742,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r33",
-      "nom": "HMart Food Court",
-      "cuisine": "Street food halal international",
-      "adresse": "11 New Oxford Street, WC1A",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.4,
-      "avis_count": 5100,
-      "fourchette_prix": "€",
-      "horaires": "10h–22h",
-      "specialites": [
-        "Bibimbap halal",
-        "Ramen poulet",
-        "Corn dog halal"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 5100,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "HMC"
-      },
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "priceRange": "€",
-      "mapsUrl": "https://maps.google.com/?q=HMart+Food+Court+Londres",
-      "nombreAvis": 2274,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "touristique"
-      ]
-    },
-    {
-      "nom": "Dishoom",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Covent Garden",
-      "description": "Café irani bombayite, adresse culte (halal sur demande).",
-      "mapsUrl": "https://maps.google.com/?q=Dishoom+Londres",
-      "priceRange": "€€",
-      "id": "r34",
-      "nombreAvis": 858,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Roti King",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Euston",
-      "description": "Roti canai malaisien, file d'attente garantie.",
-      "mapsUrl": "https://maps.google.com/?q=Roti+King+Londres",
-      "priceRange": "€",
-      "id": "r35",
-      "nombreAvis": 2085,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Berenjak",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Soho",
-      "description": "Grillades iraniennes façon taverne de Téhéran.",
-      "mapsUrl": "https://maps.google.com/?q=Berenjak+Londres",
-      "priceRange": "€€",
-      "id": "r36",
-      "nombreAvis": 669,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Gökyüzü",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Green Lanes",
-      "description": "Festin turc généreux, grillades au charbon.",
-      "mapsUrl": "https://maps.google.com/?q=G%C3%B6ky%C3%BCz%C3%BC+Londres",
-      "priceRange": "€€",
-      "id": "r37",
-      "nombreAvis": 1133,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Damas Rose",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Edgware Road",
-      "description": "Cuisine syrienne et levantine authentique.",
-      "mapsUrl": "https://maps.google.com/?q=Damas+Rose+Londres",
-      "priceRange": "€€",
-      "id": "r38",
-      "nombreAvis": 1244,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ]
-    },
-    {
-      "nom": "Humble Chicken",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Soho",
-      "description": "Yakitori raffiné (option halal).",
-      "mapsUrl": "https://maps.google.com/?q=Humble+Chicken+Londres",
-      "priceRange": "€€€",
-      "id": "r39",
-      "nombreAvis": 538,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ]
-    },
-    {
-      "nom": "Naughty Piglets",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Brixton",
-      "description": "Petites assiettes de saison, légumes.",
-      "mapsUrl": "https://maps.google.com/?q=Naughty+Piglets+Londres",
-      "priceRange": "€€",
-      "id": "r40",
-      "nombreAvis": 1917,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ]
-    },
-    {
-      "nom": "Le Comptoir Halal",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Londres",
-      "description": "Adresse traditionnel local appréciée à Londres, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Londres",
-      "priceRange": "€€",
-      "specialite": "Spécialité du pays",
-      "nombreAvis": 3117,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Beit Beirut",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Londres",
-      "description": "Adresse libanais & levant appréciée à Londres, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Londres",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 919,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Shahi Tandoor",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Londres",
-      "description": "Adresse indien & pakistani appréciée à Londres, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shahi+Tandoor+Londres",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 598,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Dar Marrakech",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Londres",
-      "description": "Adresse marocain appréciée à Londres, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Marrakech+Londres",
-      "priceRange": "€€",
-      "specialite": "Tajine",
-      "nombreAvis": 902,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Anatolia Grill",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Londres",
-      "description": "Adresse turc appréciée à Londres, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anatolia+Grill+Londres",
-      "priceRange": "€€",
-      "specialite": "İskender kebab",
-      "nombreAvis": 2406,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Halal Burger Co",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Londres",
-      "description": "Adresse burgers & fast-food appréciée à Londres, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Halal+Burger+Co+Londres",
-      "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 301,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Sakura Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Londres",
-      "description": "Adresse japonais & asiatique appréciée à Londres, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sakura+Halal+Londres",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 1054,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Saveurs Gastronomiques",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Londres",
-      "description": "Adresse gastronomique appréciée à Londres, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saveurs+Gastronomiques+Londres",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation",
-      "nombreAvis": 1500,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Maison du Thé",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Londres",
-      "description": "Adresse pâtisserie & café appréciée à Londres, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+du+Th%C3%A9+Londres",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries orientales",
-      "nombreAvis": 1222,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Le Comptoir Halal Londres 1",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Londres",
-      "description": "Adresse traditionnel local appréciée à Londres, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Comptoir+Halal+Londres+1+Londres",
-      "priceRange": "€€",
-      "specialite": "Spécialité du pays",
-      "nombreAvis": 894,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r50"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m1",
-      "nom": "East London Mosque",
-      "type": "Grande Mosquée",
-      "adresse": "82-92 Whitechapel Road, E1 1JQ",
-      "description": "La plus grande mosquée d'Angleterre. Prière du vendredi avec 10 000 fidèles.",
-      "note": 4.8,
-      "acces_non_musulmans": true,
-      "capacite": 7000
-    },
-    {
-      "id": "m2",
-      "nom": "Regent's Park Mosque",
-      "type": "Mosquée centrale",
-      "adresse": "146 Park Road, NW8 7RG",
-      "description": "La mosquée centrale de Londres. Dôme doré visible depuis Regent's Park.",
-      "note": 4.7,
-      "acces_non_musulmans": true,
-      "capacite": 5000
-    },
-    {
-      "id": "m3",
-      "nom": "Baitul Futuh Mosque",
-      "type": "Grande Mosquée",
-      "adresse": "181 London Road, Morden",
-      "description": "La plus grande mosquée d'Europe occidentale (10 000 fidèles).",
-      "note": 4.6,
-      "acces_non_musulmans": true,
-      "capacite": 10000
-    }
-  ],
-  "hotels": [
-    {
-      "id": "h1",
-      "nom": "The Savoy",
-      "type": "Hôtel iconique",
-      "adresse": "Strand, WC2R 0EU",
-      "etoiles": 5,
-      "halal_certifie": false,
-      "sans_alcool": false,
-      "piscine_privee": false,
-      "note": 4.9,
-      "avis_count": 3800,
-      "prix_nuit_min": 700,
-      "devise": "GBP",
-      "halalScore": {
-        "global": 3.0,
-        "sourceViande": 3,
-        "certifie": false,
-        "sansAlcool": false,
-        "proprietaireMusulman": false,
-        "avisMusulmans": 3800,
-        "derniereVerification": "2026-05",
-        "badge": "À VÉRIFIER"
-      },
-      "categorie": "Luxe",
-      "score": 4.9,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=The+Savoy+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
-      "nombreAvis": 390,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h2",
-      "nom": "Premier Inn London City (Aldgate)",
-      "type": "Hôtel",
-      "adresse": "66 Alie Street, E1 8PX",
-      "etoiles": 3,
-      "halal_certifie": false,
-      "sans_alcool": false,
-      "piscine_privee": false,
-      "note": 4.5,
-      "avis_count": 7200,
-      "prix_nuit_min": 95,
-      "devise": "GBP",
-      "halalScore": {
-        "global": 3.0,
-        "sourceViande": 3,
-        "certifie": false,
-        "sansAlcool": false,
-        "proprietaireMusulman": false,
-        "avisMusulmans": 7200,
-        "derniereVerification": "2026-05",
-        "badge": "À VÉRIFIER"
-      },
-      "categorie": "Standard",
-      "score": 4.5,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Premier+Inn+London+City+%28Aldgate%29+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
-      "nombreAvis": 1842,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h3",
-      "nom": "Park Plaza London Waterloo",
-      "type": "Hôtel",
-      "adresse": "6 Hercules Road, SE1 7DP",
-      "etoiles": 4,
-      "halal_certifie": false,
-      "sans_alcool": false,
-      "piscine_privee": true,
-      "note": 4.6,
-      "avis_count": 4100,
-      "prix_nuit_min": 160,
-      "devise": "GBP",
-      "halalScore": {
-        "global": 3.0,
-        "sourceViande": 3,
-        "certifie": false,
-        "sansAlcool": false,
-        "proprietaireMusulman": false,
-        "avisMusulmans": 4100,
-        "derniereVerification": "2026-05",
-        "badge": "À VÉRIFIER"
-      },
-      "categorie": "Standard",
-      "score": 4.6,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Park+Plaza+London+Waterloo+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
-      "nombreAvis": 838,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "The Landmark London",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Marylebone",
-      "description": "Palace victorien à l'atrium spectaculaire.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Landmark+London+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
-      "priceRange": "€€€€",
-      "id": "h4",
-      "nombreAvis": 1973,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Park Grand Paddington",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Paddington",
-      "description": "Confortable et central, proche d'Edgware Road.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Park+Grand+Paddington+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
-      "priceRange": "€€€",
-      "id": "h5",
-      "nombreAvis": 1991,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Point A Hotel Kings Cross",
-      "categorie": "Budget",
-      "score": 4.3,
-      "adresse": "Kings Cross",
-      "description": "Chambres modernes économiques.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Point+A+Hotel+Kings+Cross+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Londres",
-      "priceRange": "€€",
-      "id": "h6",
-      "nombreAvis": 2075,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Londres",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Londres",
-      "description": "Hébergement halal-friendly à Londres.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Londres+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
-      "priceRange": "€€€€",
-      "nombreAvis": 482,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Londres",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Londres",
-      "description": "Hébergement halal-friendly à Londres.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Londres+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
-      "priceRange": "€€€",
-      "nombreAvis": 646,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Londres",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Londres",
-      "description": "Hébergement halal-friendly à Londres.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Londres+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
-      "priceRange": "€€€",
-      "nombreAvis": 258,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Londres",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Londres",
-      "description": "Hébergement halal-friendly à Londres.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Londres+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
-      "priceRange": "€€",
-      "nombreAvis": 623,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Seaside Resort Londres",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Londres",
-      "description": "Hébergement halal-friendly à Londres.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Londres+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
-      "priceRange": "€€€€",
-      "nombreAvis": 588,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Family Suites Londres",
-      "categorie": "Appartement",
-      "score": 4.1,
-      "adresse": "Londres",
-      "description": "Hébergement halal-friendly à Londres.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Family+Suites+Londres+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
-      "priceRange": "€€",
-      "nombreAvis": 1696,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "cuisine-equipee",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Grand Plaza Londres 6",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Londres",
-      "description": "Hébergement halal-friendly à Londres.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Londres+6+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
-      "priceRange": "€€€€",
-      "nombreAvis": 2404,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "City Comfort Londres 7",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Londres",
-      "description": "Hébergement halal-friendly à Londres.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Londres+7+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
-      "priceRange": "€€€",
-      "nombreAvis": 2109,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Boutique Dar Londres 8",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Londres",
-      "description": "Hébergement halal-friendly à Londres.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Londres+8+Londres",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Londres&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=londres",
-      "priceRange": "€€€",
-      "nombreAvis": 2397,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Tour de Londres & Tower Bridge",
-      "type": "Histoire",
-      "description": "Forteresse médiévale et Joyaux de la Couronne. Tower Bridge (1894).",
-      "duree": "2–3h",
-      "prix": "30£",
-      "tags": [
-        "histoire",
-        "incontournable",
-        "famille"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Tour+de+Londres+%26+Tower+Bridge+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+de+Londres+%26+Tower+Bridge+Londres",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "British Museum",
-      "type": "Culture",
-      "description": "Gratuit. Collection islamique exceptionnelle, momies égyptiennes.",
-      "duree": "3–4h",
-      "prix": "Gratuit",
-      "tags": [
-        "gratuit",
-        "art islamique",
-        "famille"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=British+Museum+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=British+Museum+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Brick Lane & Spitalfields",
-      "type": "Shopping & Culture",
-      "description": "Curry houses halal légendaires, boulangeries, boutiques vintage.",
-      "duree": "2–4h",
-      "prix": "Gratuit",
-      "tags": [
-        "curry",
-        "halal",
-        "multiculturel"
-      ],
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Brick+Lane+%26+Spitalfields+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Brick+Lane+%26+Spitalfields+Londres",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Hyde Park & Kensington Gardens",
-      "type": "Nature",
-      "description": "Le plus grand parc royal de Londres (253 ha). Parfait pour les familles.",
-      "duree": "2–4h",
-      "prix": "Gratuit",
-      "tags": [
-        "nature",
-        "gratuit",
-        "famille"
-      ],
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Hyde+Park+%26+Kensington+Gardens+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hyde+Park+%26+Kensington+Gardens+Londres",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée centrale de Londres",
-      "categorie": "Religieux & Spirituel",
-      "description": "Grande mosquée au dôme doré près de Regent's Park.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Londres+Londres",
-      "id": "a5",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+centrale+de+Londres+Londres",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Tower of London",
-      "categorie": "Histoire & Culture",
-      "description": "Forteresse millénaire et joyaux de la Couronne.",
-      "duree": "2-3h",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Tower+of+London+Londres",
-      "id": "a6",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tower+of+London+Londres",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Edgware Road",
-      "categorie": "Gastronomie",
-      "description": "Le quartier arabe de Londres, cafés et chicha sans alcool.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Edgware+Road+Londres",
-      "id": "a7",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Edgware+Road+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Borough Market",
-      "categorie": "Gastronomie",
-      "description": "Marché gastronomique, nombreux stands halal.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Borough+Market+Londres",
-      "id": "a8",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Borough+Market+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Hyde Park",
-      "categorie": "Nature & Plein air",
-      "description": "Grand parc royal au cœur de Londres.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Hyde+Park+Londres",
-      "id": "a9",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hyde+Park+Londres",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Londres",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Londres+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Londres+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Grand marché central de Londres",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Londres+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Londres+Londres",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Londres",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Londres+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Londres+Londres",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Musée de la ville de Londres",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Londres+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Londres+Londres",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Food tour halal de Londres",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Londres+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Londres+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Hammam traditionnel de Londres",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Londres+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Londres+Londres",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Mosquée historique de Londres",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Londres+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Londres+Londres",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Parc et jardins de Londres",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Londres+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Londres+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Londres",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Londres+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Londres+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Londres",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Londres+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Londres+Londres",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Quartier historique de Londres 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Londres+10+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Londres+10+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Grand marché central de Londres 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Londres+11+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Londres+11+Londres",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Londres 12",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Londres+12+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Londres+12+Londres",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Musée de la ville de Londres 13",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Londres+13+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Londres+13+Londres",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Food tour halal de Londres 14",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Londres+14+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Londres+14+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Hammam traditionnel de Londres 15",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Londres+15+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Londres+15+Londres",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Mosquée historique de Londres 16",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Londres+16+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Londres+16+Londres",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Parc et jardins de Londres 17",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Londres+17+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Londres+17+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Londres 18",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Londres+18+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Londres+18+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Londres 19",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Londres+19+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Londres+19+Londres",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Quartier historique de Londres 20",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Londres+20+Londres",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Londres+20+Londres",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "road_trips": [
-    {
-      "id": "rt1",
-      "titre": "Londres → Paris — Week-end Eurostar",
-      "duree": "2–3 jours",
-      "distance_km": 490,
-      "etapes": [
-        "Londres",
-        "Paris"
-      ],
-      "description": "2h15 sous la Manche en Eurostar depuis St Pancras.",
-      "conseils_halal": "Paris et Londres sont deux capitales halal-friendly.",
-      "budget_estime": "200–500€/personne"
-    },
-    {
-      "id": "rt2",
-      "titre": "Londres → Édimbourg",
-      "duree": "3 jours",
-      "distance_km": 650,
-      "etapes": [
-        "Londres",
-        "York",
-        "Édimbourg"
-      ],
-      "description": "Train LNER jusqu'à Édimbourg avec arrêt à York.",
-      "conseils_halal": "York et Édimbourg ont des épiceries halal.",
-      "budget_estime": "300–600€/personne"
-    }
-  ],
-  "voyages_par_type": {
-    "en_couple": {
-      "intro": "Londres en couple : musées gratuits, parcs, restaurants halal gastronomiques.",
-      "top_experiences": [
-        "Dîner halal Dishoom",
-        "Coucher soleil Primrose Hill",
-        "Royal Albert Hall",
-        "Paris Eurostar"
-      ],
-      "conseils": "Edgware Road le soir pour l'ambiance arabe authentic.",
-      "hotels_recommandes": [
-        "The Savoy",
-        "Park Plaza London Waterloo"
-      ]
-    },
-    "en_famille": {
-      "intro": "Musées GRATUITS, parcs immenses, nourriture halal abondante dans l'East End.",
-      "top_experiences": [
-        "Natural History Museum",
-        "London Eye",
-        "Harry Potter Tour",
-        "Zoo de Londres"
-      ],
-      "conseils": "L'Oyster Card: enfants gratuits ou tarif réduit.",
-      "hotels_recommandes": [
-        "Premier Inn London City (Aldgate)"
-      ]
-    },
-    "entre_amis": {
-      "intro": "Street food halal Brick Lane, escape rooms, vie nocturne halal.",
-      "top_experiences": [
-        "Street food East London",
-        "Premier League",
-        "Camden Market",
-        "Shisha Edgware Road"
-      ],
-      "conseils": "Green Lanes (turc) et Tooting (indien-pakistanais) pour les meilleurs kebabs.",
-      "hotels_recommandes": [
-        "Premier Inn London City (Aldgate)"
-      ]
-    },
-    "voyage_solo": {
-      "intro": "Londres en solo : facile, sûre, anglais universel, musées gratuits.",
-      "top_experiences": [
-        "British Museum",
-        "East London Mosque vendredi",
-        "Brick Lane",
-        "Free walking tour"
-      ],
-      "conseils": "Free walking tours parmi les meilleurs d'Europe.",
-      "hotels_recommandes": [
-        "Premier Inn London City (Aldgate)"
-      ]
-    },
-    "voyage_spirituel": {
-      "intro": "Centre islamique d'Europe : East London Mosque, galeries islamiques, British Museum.",
-      "top_experiences": [
-        "Jumu'ah East London Mosque",
-        "Galerie islamique British Museum",
-        "Regent's Park Mosque",
-        "Whitechapel community"
-      ],
-      "conseils": "Jumu'ah à l'East London Mosque : des milliers de fidèles de toutes nationalités.",
-      "hotels_recommandes": [
-        "Premier Inn London City (Aldgate)"
-      ]
-    }
+  {
+   "nom": "Mosquée Al-Salam de Londres",
+   "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Londres",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Londres+Londres",
+   "capacite": 3925,
+   "anneeConstruction": 1925,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 51.5074,
+    "lng": -0.1278
+   }
   },
-  "articles_lies": [],
-  "villes_proches": [
-    "paris",
-    "bruxelles",
-    "amsterdam"
-  ],
-  "codeISO": "GB",
-  "image": "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=1600&q=80",
-  "continent": "Europe",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Londres — Halal Trust Score 4/5.",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Londres",
-      "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Londres",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Londres+Londres",
-      "capacite": 4438,
-      "anneeConstruction": 1978,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 51.5074,
-        "lng": -0.1278
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Londres",
-      "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Londres",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Londres+Londres",
-      "capacite": 5928,
-      "anneeConstruction": 1928,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 51.5074,
-        "lng": -0.1278
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Londres",
-      "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Londres",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Londres+Londres",
-      "capacite": 1011,
-      "anneeConstruction": 1911,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 51.5074,
-        "lng": -0.1278
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Londres",
-      "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Londres",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Londres+Londres",
-      "capacite": 3925,
-      "anneeConstruction": 1925,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 51.5074,
-        "lng": -0.1278
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Londres",
-      "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Londres",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Londres+Londres",
-      "capacite": 1726,
-      "anneeConstruction": 2006,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 51.5074,
-        "lng": -0.1278
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Londres",
-      "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Londres",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Londres+Londres",
-      "capacite": 4549,
-      "anneeConstruction": 2009,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 51.5074,
-        "lng": -0.1278
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Londres",
-      "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Londres",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Londres+Londres",
-      "capacite": 1847,
-      "anneeConstruction": 2007,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 51.5074,
-        "lng": -0.1278
-      }
-    },
-    {
-      "nom": "Mosquée historique de Londres",
-      "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Londres",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Londres+Londres",
-      "capacite": 4954,
-      "anneeConstruction": 1894,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 51.5074,
-        "lng": -0.1278
-      }
-    },
-    {
-      "nom": "Mosquée du vendredi de Londres",
-      "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Londres",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Londres+Londres",
-      "capacite": 1104,
-      "anneeConstruction": 2004,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 51.5074,
-        "lng": -0.1278
-      }
-    },
-    {
-      "nom": "Mosquée Al-Hidaya de Londres",
-      "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Londres",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Londres+Londres",
-      "capacite": 2456,
-      "anneeConstruction": 2016,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 51.5074,
-        "lng": -0.1278
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Gymkhana",
-      "Ikoyi",
-      "Dishoom Shoreditch",
-      "Le Comptoir Halal",
-      "Maison du Thé"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Ranoush Juice",
-      "Patogh",
-      "Needoo Grill",
-      "City Spice",
-      "Meraz Café"
-    ],
-    "incontournables": [
-      "Gymkhana",
-      "Mangal 2",
-      "Tayyabs",
-      "Benares",
-      "Ikoyi"
-    ],
-    "pepitesCachees": [
-      "Tamarind",
-      "Al-Dar",
-      "Zeret Kitchen"
-    ],
-    "idealFamille": [
-      "Gymkhana",
-      "Tamarind",
-      "Benares",
-      "Al-Dar",
-      "Maroush"
-    ],
-    "gastronomique": [
-      "Ikoyi",
-      "Akoko",
-      "Saveurs Gastronomiques"
-    ],
-    "ouvertNuit": [
-      "Al-Dar",
-      "Maroush",
-      "Ranoush Juice"
-    ],
-    "vueExceptionnelle": [
-      "Gymkhana",
-      "Ikoyi",
-      "Dishoom Shoreditch"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Londres",
+   "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Londres",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Londres+Londres",
+   "capacite": 1726,
+   "anneeConstruction": 2006,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 51.5074,
+    "lng": -0.1278
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Londres",
+   "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Londres",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Londres+Londres",
+   "capacite": 4549,
+   "anneeConstruction": 2009,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 51.5074,
+    "lng": -0.1278
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Londres",
+   "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Londres",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Londres+Londres",
+   "capacite": 1847,
+   "anneeConstruction": 2007,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 51.5074,
+    "lng": -0.1278
+   }
+  },
+  {
+   "nom": "Mosquée historique de Londres",
+   "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Londres",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Londres+Londres",
+   "capacite": 4954,
+   "anneeConstruction": 1894,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 51.5074,
+    "lng": -0.1278
+   }
+  },
+  {
+   "nom": "Mosquée du vendredi de Londres",
+   "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Londres",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Londres+Londres",
+   "capacite": 1104,
+   "anneeConstruction": 2004,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 51.5074,
+    "lng": -0.1278
+   }
+  },
+  {
+   "nom": "Mosquée Al-Hidaya de Londres",
+   "description": "Mosquée fréquentée de Londres, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Londres",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Londres+Londres",
+   "capacite": 2456,
+   "anneeConstruction": 2016,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 51.5074,
+    "lng": -0.1278
+   }
   }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Gymkhana",
+   "Ikoyi",
+   "Dishoom Shoreditch",
+   "Le Comptoir Halal",
+   "Maison du Thé"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Ranoush Juice",
+   "Patogh",
+   "Needoo Grill",
+   "City Spice",
+   "Meraz Café"
+  ],
+  "incontournables": [
+   "Gymkhana",
+   "Mangal 2",
+   "Tayyabs",
+   "Benares",
+   "Ikoyi"
+  ],
+  "pepitesCachees": [
+   "Tamarind",
+   "Al-Dar",
+   "Zeret Kitchen"
+  ],
+  "idealFamille": [
+   "Gymkhana",
+   "Tamarind",
+   "Benares",
+   "Al-Dar",
+   "Maroush"
+  ],
+  "gastronomique": [
+   "Ikoyi",
+   "Akoko",
+   "Saveurs Gastronomiques"
+  ],
+  "ouvertNuit": [
+   "Al-Dar",
+   "Maroush",
+   "Ranoush Juice"
+  ],
+  "vueExceptionnelle": [
+   "Gymkhana",
+   "Ikoyi",
+   "Dishoom Shoreditch"
+  ]
+ }
 }

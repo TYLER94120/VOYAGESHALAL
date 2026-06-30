@@ -1,909 +1,916 @@
 {
-  "nom": "Almaty",
-  "pays": "Kazakhstan",
-  "slug": "almaty",
-  "image": "https://images.unsplash.com/photo-1596393395144-3c2e3a9b4c2f?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1596393395144-3c2e3a9b4c2f?w=1400&q=85",
-  "description": "Almaty, ancienne capitale du Kazakhstan au pied des monts Tian Shan, mêle modernité, mosquées et nature alpine. Beshbarmak halal et marchés colorés d'Asie centrale.",
-  "descriptionLongue": "Nichée au pied des sommets enneigés du Tian Shan, Almaty est la capitale culturelle et économique du Kazakhstan. Ville verdoyante et largement musulmane, elle offre la grande mosquée centrale, le marché vert (Zelyony Bazar) et une cuisine d'Asie centrale halal — beshbarmak, plov, manti. Téléphérique, patinoire de Medeu et stations de ski toutes proches en font une porte vers la nature des steppes et des montagnes.",
-  "halalScore": 8.3,
-  "score_halal": 4.2,
+ "nom": "Almaty",
+ "pays": "Kazakhstan",
+ "slug": "almaty",
+ "image": "https://images.unsplash.com/photo-1596393395144-3c2e3a9b4c2f?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1596393395144-3c2e3a9b4c2f?w=1400&q=85",
+ "description": "Almaty, ancienne capitale du Kazakhstan au pied des monts Tian Shan, mêle modernité, mosquées et nature alpine. Beshbarmak halal et marchés colorés d'Asie centrale.",
+ "descriptionLongue": "Nichée au pied des sommets enneigés du Tian Shan, Almaty est la capitale culturelle et économique du Kazakhstan. Ville verdoyante et largement musulmane, elle offre la grande mosquée centrale, le marché vert (Zelyony Bazar) et une cuisine d'Asie centrale halal — beshbarmak, plov, manti. Téléphérique, patinoire de Medeu et stations de ski toutes proches en font une porte vers la nature des steppes et des montagnes.",
+ "halalScore": 8.3,
+ "score_halal": 4.2,
+ "mosquees": 200,
+ "population": "2 millions",
+ "langue": "Kazakh, Russe",
+ "monnaie": "Tenge (KZT)",
+ "fuseau": "UTC+5",
+ "meilleureEpoque": "Mai à Septembre",
+ "prixMoyenNuit": "65€",
+ "continent": "Asie",
+ "codeISO": "KZ",
+ "pays_slug": "kazakhstan",
+ "region": "Asie centrale",
+ "meta_title": "Voyage Halal à Almaty — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Almaty — Halal Trust Score 8.3/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Almaty — Halal Trust Score 8.3/10.",
+ "coordonnees": {
+  "lat": 43.2389,
+  "lng": 76.8897
+ },
+ "image_alt": "Vue de Almaty, Kazakhstan",
+ "statistiques": {
   "mosquees": 200,
-  "population": "2 millions",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 70,
+  "hotels": 8
+ },
+ "infos_pratiques": {
   "langue": "Kazakh, Russe",
   "monnaie": "Tenge (KZT)",
-  "fuseau": "UTC+5",
-  "meilleureEpoque": "Mai à Septembre",
-  "prixMoyenNuit": "65€",
-  "continent": "Asie",
-  "codeISO": "KZ",
-  "pays_slug": "kazakhstan",
-  "region": "Asie centrale",
-  "meta_title": "Voyage Halal à Almaty — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Almaty — Halal Trust Score 8.3/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Almaty — Halal Trust Score 8.3/10.",
-  "coordonnees": {
+  "meilleure_periode": "Mai à Septembre",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Exemption de visa pour les Français (court séjour)",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Métro, bus, Yandex Go",
+  "priseElectrique": "Type C/F — 220V",
+  "decalageHoraire": "+4h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Navat",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre",
+   "description": "Cuisine kazakhe et ouzbèke réputée",
+   "mapsUrl": "https://maps.google.com/?q=Navat+Almaty",
+   "priceRange": "€€",
+   "specialite": "Cuisine d'Asie centrale",
+   "id": "r1"
+  },
+  {
+   "nom": "Daredzhani",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre",
+   "description": "Khachapuri et plats géorgiens halal",
+   "mapsUrl": "https://maps.google.com/?q=Daredzhani+Almaty",
+   "priceRange": "€€",
+   "specialite": "Cuisine géorgienne",
+   "id": "r2"
+  },
+  {
+   "nom": "Alasha",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre",
+   "description": "Cuisine kazakhe traditionnelle raffinée",
+   "mapsUrl": "https://maps.google.com/?q=Alasha+Almaty",
+   "priceRange": "€€€",
+   "specialite": "Beshbarmak",
+   "id": "r3"
+  },
+  {
+   "nom": "Kaganat",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Multiples adresses",
+   "description": "Cantine populaire d'Asie centrale",
+   "mapsUrl": "https://maps.google.com/?q=Kaganat+Almaty",
+   "priceRange": "€",
+   "specialite": "Plov et manti",
+   "id": "r4"
+  },
+  {
+   "nom": "Mimino",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre",
+   "description": "Brochettes et cuisine du Caucase",
+   "mapsUrl": "https://maps.google.com/?q=Mimino+Almaty",
+   "priceRange": "€€",
+   "specialite": "Grillades caucasiennes",
+   "id": "r5"
+  },
+  {
+   "nom": "Al Madina Almaty",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Almaty",
+   "description": "Adresse halal appréciée des habitants de Almaty.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Almaty+Almaty",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r6"
+  },
+  {
+   "nom": "Shawarma House Almaty",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Almaty",
+   "description": "Adresse halal appréciée des habitants de Almaty.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Almaty+Almaty",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r7"
+  },
+  {
+   "nom": "Beit Beirut Almaty",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Almaty",
+   "description": "Adresse halal appréciée des habitants de Almaty.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Almaty+Almaty",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r8"
+  },
+  {
+   "nom": "Spice Route Almaty",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Almaty",
+   "description": "Adresse halal appréciée des habitants de Almaty.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Almaty+Almaty",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r9"
+  },
+  {
+   "nom": "Saffron Garden Almaty",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Almaty",
+   "description": "Adresse halal appréciée des habitants de Almaty.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Almaty+Almaty",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r10"
+  },
+  {
+   "nom": "Green Bowl Almaty",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Almaty",
+   "description": "Adresse halal appréciée des habitants de Almaty.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Almaty+Almaty",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r11"
+  },
+  {
+   "nom": "Sultan Café Almaty",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Almaty",
+   "description": "Adresse halal appréciée des habitants de Almaty.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Almaty+Almaty",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r12"
+  },
+  {
+   "nom": "Ocean Pearl Almaty",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Almaty",
+   "description": "Adresse halal appréciée des habitants de Almaty.",
+   "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Almaty+Almaty",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé du jour",
+   "id": "r13"
+  },
+  {
+   "nom": "Bella Halal Almaty",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Almaty",
+   "description": "Adresse halal appréciée des habitants de Almaty.",
+   "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Almaty+Almaty",
+   "priceRange": "€€",
+   "specialite": "Pizza halal au four à bois",
+   "id": "r14"
+  },
+  {
+   "nom": "Tokyo Halal Almaty",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Almaty",
+   "description": "Adresse halal appréciée des habitants de Almaty.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Almaty+Almaty",
+   "priceRange": "€€€",
+   "specialite": "Sushis certifiés halal",
+   "id": "r15"
+  },
+  {
+   "nom": "Choyxona Milliy",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Almaty",
+   "description": "Adresse traditionnel local appréciée à Almaty, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Choyxona+Milliy+Almaty",
+   "priceRange": "€€",
+   "specialite": "Plov ouzbek",
+   "nombreAvis": 765,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Registon Osh",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Almaty",
+   "description": "Adresse traditionnel local appréciée à Almaty, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Registon+Osh+Almaty",
+   "priceRange": "€",
+   "specialite": "Osh et samsa",
+   "nombreAvis": 2391,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Navruz Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Almaty",
+   "description": "Adresse gastronomique appréciée à Almaty, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Navruz+Restaurant+Almaty",
+   "priceRange": "€€€",
+   "specialite": "Menu national",
+   "nombreAvis": 594,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Bahor Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Almaty",
+   "description": "Adresse pâtisserie & café appréciée à Almaty, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahor+Caf%C3%A9+Almaty",
+   "priceRange": "€",
+   "specialite": "Thé et baklava",
+   "nombreAvis": 1766,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Sharq Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Almaty",
+   "description": "Adresse grillades & kebab appréciée à Almaty, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sharq+Grill+Almaty",
+   "priceRange": "€€",
+   "specialite": "Chachlik",
+   "nombreAvis": 2549,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Beit Levant",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Almaty",
+   "description": "Adresse libanais & levant appréciée à Almaty, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Levant+Almaty",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 306,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Yashil Healthy",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Almaty",
+   "description": "Adresse végétarien & healthy appréciée à Almaty, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Yashil+Healthy+Almaty",
+   "priceRange": "€",
+   "specialite": "Salades",
+   "nombreAvis": 1338,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Sea Caspian",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Almaty",
+   "description": "Adresse fruits de mer appréciée à Almaty, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sea+Caspian+Almaty",
+   "priceRange": "€€",
+   "specialite": "Esturgeon grillé",
+   "nombreAvis": 896,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Choyxona Milliy Almaty 9",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Almaty",
+   "description": "Adresse traditionnel local appréciée à Almaty, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Choyxona+Milliy+Almaty+9+Almaty",
+   "priceRange": "€€",
+   "specialite": "Plov ouzbek",
+   "nombreAvis": 1223,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Registon Osh Almaty 10",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Almaty",
+   "description": "Adresse traditionnel local appréciée à Almaty, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Registon+Osh+Almaty+10+Almaty",
+   "priceRange": "€",
+   "specialite": "Osh et samsa",
+   "nombreAvis": 1514,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r25"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "The Ritz-Carlton Almaty",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Centre",
+   "description": "Palace dans la plus haute tour de la ville",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Ritz-Carlton+Almaty+Almaty",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
+   "priceRange": "€€€€",
+   "id": "h1"
+  },
+  {
+   "nom": "Rixos Almaty",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Centre",
+   "description": "Grand hôtel cinq étoiles central",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Rixos+Almaty+Almaty",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
+   "priceRange": "€€€",
+   "id": "h2",
+   "lat": 43.2495051,
+   "lng": 76.9346325
+  },
+  {
+   "nom": "Kazzhol Hotel Almaty",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Centre",
+   "description": "Hôtel confortable et central",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Kazzhol+Hotel+Almaty+Almaty",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
+   "priceRange": "€€",
+   "id": "h3",
+   "lat": 43.2603184,
+   "lng": 76.9336434
+  },
+  {
+   "nom": "Grand Plaza Almaty",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Almaty",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Almaty+Almaty",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
+   "priceRange": "€€€€",
+   "id": "h4"
+  },
+  {
+   "nom": "City Comfort Hotel Almaty",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Almaty",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Almaty+Almaty",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
+   "priceRange": "€€€",
+   "id": "h5"
+  },
+  {
+   "nom": "Boutique Riad Almaty",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Almaty",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Almaty+Almaty",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
+   "priceRange": "€€€",
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Almaty 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Almaty",
+   "description": "Hébergement halal-friendly à Almaty.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Almaty+0+Almaty",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
+   "priceRange": "€€€€",
+   "nombreAvis": 1838,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Almaty",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Almaty",
+   "description": "Hébergement halal-friendly à Almaty.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Almaty+Almaty",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
+   "priceRange": "€€€",
+   "nombreAvis": 2308,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": 43.2008354,
+   "lng": 76.9007002
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Mosquée centrale d'Almaty",
+   "categorie": "Religieux & Spirituel",
+   "description": "Grande mosquée bleue et or de la ville",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+d%27Almaty+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+centrale+d%27Almaty+Almaty",
+   "id": "a1"
+  },
+  {
+   "nom": "Patinoire de Medeu",
+   "categorie": "Sport & Loisirs",
+   "description": "Plus haute patinoire du monde en montagne",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Patinoire+de+Medeu+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Patinoire+de+Medeu+Almaty",
+   "id": "a2"
+  },
+  {
+   "nom": "Téléphérique de Kok-Tobe",
+   "categorie": "Nature & Aventure",
+   "description": "Colline panoramique au-dessus d'Almaty",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=T%C3%A9l%C3%A9ph%C3%A9rique+de+Kok-Tobe+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=T%C3%A9l%C3%A9ph%C3%A9rique+de+Kok-Tobe+Almaty",
+   "id": "a3"
+  },
+  {
+   "nom": "Lac Big Almaty",
+   "categorie": "Nature & Aventure",
+   "description": "Lac turquoise d'altitude dans le Tian Shan",
+   "duree": "Journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Lac+Big+Almaty+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lac+Big+Almaty+Almaty",
+   "id": "a4"
+  },
+  {
+   "nom": "Marché vert (Zelyony Bazar)",
+   "categorie": "Shopping & Souks",
+   "description": "Bazar coloré de fruits secs et d'épices",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9+vert+%28Zelyony+Bazar%29+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+vert+%28Zelyony+Bazar%29+Almaty",
+   "id": "a5"
+  },
+  {
+   "nom": "Cathédrale Zenkov & parc Panfilov",
+   "categorie": "Histoire & Culture",
+   "description": "Cathédrale en bois et parc central",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Cath%C3%A9drale+Zenkov+%26+parc+Panfilov+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cath%C3%A9drale+Zenkov+%26+parc+Panfilov+Almaty",
+   "id": "a6"
+  },
+  {
+   "nom": "Station de ski de Shymbulak",
+   "categorie": "Sport & Loisirs",
+   "description": "Domaine skiable à 30 min de la ville",
+   "duree": "Journée",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Station+de+ski+de+Shymbulak+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Station+de+ski+de+Shymbulak+Almaty",
+   "id": "a7"
+  },
+  {
+   "nom": "Musée central d'État",
+   "categorie": "Art & Musées",
+   "description": "Histoire et trésors des nomades kazakhs",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+central+d%27%C3%89tat+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+central+d%27%C3%89tat+Almaty",
+   "id": "a8"
+  },
+  {
+   "nom": "Vieille ville de Almaty",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Almaty+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Almaty+Almaty",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand souk de Almaty",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Almaty+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Almaty+Almaty",
+   "id": "a10"
+  },
+  {
+   "nom": "Quartier historique de Almaty",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Almaty+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Almaty+Almaty",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Almaty",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Almaty+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Almaty+Almaty",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Almaty",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Almaty+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Almaty+Almaty",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Almaty",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Almaty+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Almaty+Almaty",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Almaty",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Almaty+Almaty",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Almaty+Almaty",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale d'Almaty",
+   "description": "Grande mosquée de 1999, dôme bleu et minarets dorés, capacité 7000",
+   "adresse": "Centre",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+d%27Almaty+Almaty",
+   "capacite": 9443,
+   "anneeConstruction": 2003,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 43.2389,
     "lng": 76.8897
+   }
   },
-  "image_alt": "Vue de Almaty, Kazakhstan",
-  "statistiques": {
-    "mosquees": 200,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 70
+  {
+   "nom": "Mosquée du marché",
+   "description": "Mosquée historique proche du bazar vert",
+   "adresse": "Centre",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+march%C3%A9+Almaty",
+   "capacite": 3382,
+   "anneeConstruction": 2002,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 43.2389,
+    "lng": 76.8897
+   }
   },
-  "infos_pratiques": {
-    "langue": "Kazakh, Russe",
-    "monnaie": "Tenge (KZT)",
-    "meilleure_periode": "Mai à Septembre",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Almaty",
+   "description": "Mosquée fréquentée de Almaty, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Almaty",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Almaty+Almaty",
+   "capacite": 6088,
+   "anneeConstruction": 1988,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 43.2389,
+    "lng": 76.8897
+   }
   },
-  "infoPratique": {
-    "visa": "Exemption de visa pour les Français (court séjour)",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Métro, bus, Yandex Go",
-    "priseElectrique": "Type C/F — 220V",
-    "decalageHoraire": "+4h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Almaty",
+   "description": "Mosquée fréquentée de Almaty, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Almaty",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Almaty+Almaty",
+   "capacite": 5946,
+   "anneeConstruction": 1886,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 43.2389,
+    "lng": 76.8897
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Navat",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre",
-      "description": "Cuisine kazakhe et ouzbèke réputée",
-      "mapsUrl": "https://maps.google.com/?q=Navat+Almaty",
-      "priceRange": "€€",
-      "specialite": "Cuisine d'Asie centrale",
-      "id": "r1"
-    },
-    {
-      "nom": "Daredzhani",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre",
-      "description": "Khachapuri et plats géorgiens halal",
-      "mapsUrl": "https://maps.google.com/?q=Daredzhani+Almaty",
-      "priceRange": "€€",
-      "specialite": "Cuisine géorgienne",
-      "id": "r2"
-    },
-    {
-      "nom": "Alasha",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre",
-      "description": "Cuisine kazakhe traditionnelle raffinée",
-      "mapsUrl": "https://maps.google.com/?q=Alasha+Almaty",
-      "priceRange": "€€€",
-      "specialite": "Beshbarmak",
-      "id": "r3"
-    },
-    {
-      "nom": "Kaganat",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Multiples adresses",
-      "description": "Cantine populaire d'Asie centrale",
-      "mapsUrl": "https://maps.google.com/?q=Kaganat+Almaty",
-      "priceRange": "€",
-      "specialite": "Plov et manti",
-      "id": "r4"
-    },
-    {
-      "nom": "Mimino",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre",
-      "description": "Brochettes et cuisine du Caucase",
-      "mapsUrl": "https://maps.google.com/?q=Mimino+Almaty",
-      "priceRange": "€€",
-      "specialite": "Grillades caucasiennes",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Almaty",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Almaty",
-      "description": "Adresse halal appréciée des habitants de Almaty.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Almaty+Almaty",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Almaty",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Almaty",
-      "description": "Adresse halal appréciée des habitants de Almaty.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Almaty+Almaty",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Almaty",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Almaty",
-      "description": "Adresse halal appréciée des habitants de Almaty.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Almaty+Almaty",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Almaty",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Almaty",
-      "description": "Adresse halal appréciée des habitants de Almaty.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Almaty+Almaty",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Almaty",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Almaty",
-      "description": "Adresse halal appréciée des habitants de Almaty.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Almaty+Almaty",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Almaty",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Almaty",
-      "description": "Adresse halal appréciée des habitants de Almaty.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Almaty+Almaty",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Almaty",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Almaty",
-      "description": "Adresse halal appréciée des habitants de Almaty.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Almaty+Almaty",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Almaty",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Almaty",
-      "description": "Adresse halal appréciée des habitants de Almaty.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Almaty+Almaty",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Almaty",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Almaty",
-      "description": "Adresse halal appréciée des habitants de Almaty.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Almaty+Almaty",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Almaty",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Almaty",
-      "description": "Adresse halal appréciée des habitants de Almaty.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Almaty+Almaty",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Choyxona Milliy",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Almaty",
-      "description": "Adresse traditionnel local appréciée à Almaty, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Choyxona+Milliy+Almaty",
-      "priceRange": "€€",
-      "specialite": "Plov ouzbek",
-      "nombreAvis": 765,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Registon Osh",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Almaty",
-      "description": "Adresse traditionnel local appréciée à Almaty, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Registon+Osh+Almaty",
-      "priceRange": "€",
-      "specialite": "Osh et samsa",
-      "nombreAvis": 2391,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Navruz Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Almaty",
-      "description": "Adresse gastronomique appréciée à Almaty, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Navruz+Restaurant+Almaty",
-      "priceRange": "€€€",
-      "specialite": "Menu national",
-      "nombreAvis": 594,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Bahor Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Almaty",
-      "description": "Adresse pâtisserie & café appréciée à Almaty, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahor+Caf%C3%A9+Almaty",
-      "priceRange": "€",
-      "specialite": "Thé et baklava",
-      "nombreAvis": 1766,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Sharq Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Almaty",
-      "description": "Adresse grillades & kebab appréciée à Almaty, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sharq+Grill+Almaty",
-      "priceRange": "€€",
-      "specialite": "Chachlik",
-      "nombreAvis": 2549,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Beit Levant",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Almaty",
-      "description": "Adresse libanais & levant appréciée à Almaty, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Levant+Almaty",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 306,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Yashil Healthy",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Almaty",
-      "description": "Adresse végétarien & healthy appréciée à Almaty, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Yashil+Healthy+Almaty",
-      "priceRange": "€",
-      "specialite": "Salades",
-      "nombreAvis": 1338,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Sea Caspian",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Almaty",
-      "description": "Adresse fruits de mer appréciée à Almaty, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sea+Caspian+Almaty",
-      "priceRange": "€€",
-      "specialite": "Esturgeon grillé",
-      "nombreAvis": 896,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Choyxona Milliy Almaty 9",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Almaty",
-      "description": "Adresse traditionnel local appréciée à Almaty, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Choyxona+Milliy+Almaty+9+Almaty",
-      "priceRange": "€€",
-      "specialite": "Plov ouzbek",
-      "nombreAvis": 1223,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Registon Osh Almaty 10",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Almaty",
-      "description": "Adresse traditionnel local appréciée à Almaty, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Registon+Osh+Almaty+10+Almaty",
-      "priceRange": "€",
-      "specialite": "Osh et samsa",
-      "nombreAvis": 1514,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r25"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "The Ritz-Carlton Almaty",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Centre",
-      "description": "Palace dans la plus haute tour de la ville",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Ritz-Carlton+Almaty+Almaty",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
-      "priceRange": "€€€€",
-      "id": "h1"
-    },
-    {
-      "nom": "Rixos Almaty",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Centre",
-      "description": "Grand hôtel cinq étoiles central",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Rixos+Almaty+Almaty",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
-      "priceRange": "€€€",
-      "id": "h2"
-    },
-    {
-      "nom": "Kazzhol Hotel Almaty",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Centre",
-      "description": "Hôtel confortable et central",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Kazzhol+Hotel+Almaty+Almaty",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
-      "priceRange": "€€",
-      "id": "h3"
-    },
-    {
-      "nom": "Grand Plaza Almaty",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Almaty",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Almaty+Almaty",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
-      "priceRange": "€€€€",
-      "id": "h4"
-    },
-    {
-      "nom": "City Comfort Hotel Almaty",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Almaty",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Almaty+Almaty",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Almaty",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Almaty",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Almaty+Almaty",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Almaty 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Almaty",
-      "description": "Hébergement halal-friendly à Almaty.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Almaty+0+Almaty",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
-      "priceRange": "€€€€",
-      "nombreAvis": 1838,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Almaty",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Almaty",
-      "description": "Hébergement halal-friendly à Almaty.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Almaty+Almaty",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Almaty&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=almaty",
-      "priceRange": "€€€",
-      "nombreAvis": 2308,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Mosquée centrale d'Almaty",
-      "categorie": "Religieux & Spirituel",
-      "description": "Grande mosquée bleue et or de la ville",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+d%27Almaty+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+centrale+d%27Almaty+Almaty",
-      "id": "a1"
-    },
-    {
-      "nom": "Patinoire de Medeu",
-      "categorie": "Sport & Loisirs",
-      "description": "Plus haute patinoire du monde en montagne",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Patinoire+de+Medeu+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Patinoire+de+Medeu+Almaty",
-      "id": "a2"
-    },
-    {
-      "nom": "Téléphérique de Kok-Tobe",
-      "categorie": "Nature & Aventure",
-      "description": "Colline panoramique au-dessus d'Almaty",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=T%C3%A9l%C3%A9ph%C3%A9rique+de+Kok-Tobe+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=T%C3%A9l%C3%A9ph%C3%A9rique+de+Kok-Tobe+Almaty",
-      "id": "a3"
-    },
-    {
-      "nom": "Lac Big Almaty",
-      "categorie": "Nature & Aventure",
-      "description": "Lac turquoise d'altitude dans le Tian Shan",
-      "duree": "Journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Lac+Big+Almaty+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lac+Big+Almaty+Almaty",
-      "id": "a4"
-    },
-    {
-      "nom": "Marché vert (Zelyony Bazar)",
-      "categorie": "Shopping & Souks",
-      "description": "Bazar coloré de fruits secs et d'épices",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+vert+%28Zelyony+Bazar%29+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+vert+%28Zelyony+Bazar%29+Almaty",
-      "id": "a5"
-    },
-    {
-      "nom": "Cathédrale Zenkov & parc Panfilov",
-      "categorie": "Histoire & Culture",
-      "description": "Cathédrale en bois et parc central",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Cath%C3%A9drale+Zenkov+%26+parc+Panfilov+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cath%C3%A9drale+Zenkov+%26+parc+Panfilov+Almaty",
-      "id": "a6"
-    },
-    {
-      "nom": "Station de ski de Shymbulak",
-      "categorie": "Sport & Loisirs",
-      "description": "Domaine skiable à 30 min de la ville",
-      "duree": "Journée",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Station+de+ski+de+Shymbulak+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Station+de+ski+de+Shymbulak+Almaty",
-      "id": "a7"
-    },
-    {
-      "nom": "Musée central d'État",
-      "categorie": "Art & Musées",
-      "description": "Histoire et trésors des nomades kazakhs",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+central+d%27%C3%89tat+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+central+d%27%C3%89tat+Almaty",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Almaty",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Almaty+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Almaty+Almaty",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Almaty",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Almaty+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Almaty+Almaty",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Almaty",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Almaty+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Almaty+Almaty",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Almaty",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Almaty+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Almaty+Almaty",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Almaty",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Almaty+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Almaty+Almaty",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Almaty",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Almaty+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Almaty+Almaty",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Almaty",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Almaty+Almaty",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Almaty+Almaty",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale d'Almaty",
-      "description": "Grande mosquée de 1999, dôme bleu et minarets dorés, capacité 7000",
-      "adresse": "Centre",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+d%27Almaty+Almaty",
-      "capacite": 9443,
-      "anneeConstruction": 2003,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 43.2389,
-        "lng": 76.8897
-      }
-    },
-    {
-      "nom": "Mosquée du marché",
-      "description": "Mosquée historique proche du bazar vert",
-      "adresse": "Centre",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+march%C3%A9+Almaty",
-      "capacite": 3382,
-      "anneeConstruction": 2002,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 43.2389,
-        "lng": 76.8897
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Almaty",
-      "description": "Mosquée fréquentée de Almaty, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Almaty",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Almaty+Almaty",
-      "capacite": 6088,
-      "anneeConstruction": 1988,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 43.2389,
-        "lng": 76.8897
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Almaty",
-      "description": "Mosquée fréquentée de Almaty, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Almaty",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Almaty+Almaty",
-      "capacite": 5946,
-      "anneeConstruction": 1886,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 43.2389,
-        "lng": 76.8897
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Almaty",
-      "description": "Mosquée fréquentée de Almaty, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Almaty",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Almaty+Almaty",
-      "capacite": 2369,
-      "anneeConstruction": 1969,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 43.2389,
-        "lng": 76.8897
-      }
-    }
-  ],
-  "tags": [
-    "asie-centrale",
-    "montagnes",
-    "tian-shan",
-    "nature",
-    "bazars",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Choyxona Milliy",
-      "Choyxona Milliy Almaty 9",
-      "Registon Osh",
-      "Registon Osh Almaty 10",
-      "Saffron Garden Almaty"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Navat",
-      "Daredzhani",
-      "Kaganat",
-      "Mimino",
-      "Beit Beirut Almaty"
-    ],
-    "incontournables": [
-      "Sharq Grill",
-      "Registon Osh",
-      "Bahor Café",
-      "Registon Osh Almaty 10",
-      "Yashil Healthy"
-    ],
-    "pepitesCachees": [
-      "Navat",
-      "Daredzhani",
-      "Alasha"
-    ],
-    "idealFamille": [
-      "Choyxona Milliy",
-      "Registon Osh",
-      "Bahor Café",
-      "Sharq Grill",
-      "Beit Levant"
-    ],
-    "gastronomique": [
-      "Alasha",
-      "Saffron Garden Almaty",
-      "Navruz Restaurant"
-    ],
-    "ouvertNuit": [
-      "Registon Osh",
-      "Bahor Café",
-      "Sharq Grill"
-    ],
-    "vueExceptionnelle": [
-      "Sea Caspian"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Almaty",
+   "description": "Mosquée fréquentée de Almaty, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Almaty",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Almaty+Almaty",
+   "capacite": 2369,
+   "anneeConstruction": 1969,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 43.2389,
+    "lng": 76.8897
+   }
   }
+ ],
+ "tags": [
+  "asie-centrale",
+  "montagnes",
+  "tian-shan",
+  "nature",
+  "bazars",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Choyxona Milliy",
+   "Choyxona Milliy Almaty 9",
+   "Registon Osh",
+   "Registon Osh Almaty 10",
+   "Saffron Garden Almaty"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Navat",
+   "Daredzhani",
+   "Kaganat",
+   "Mimino",
+   "Beit Beirut Almaty"
+  ],
+  "incontournables": [
+   "Sharq Grill",
+   "Registon Osh",
+   "Bahor Café",
+   "Registon Osh Almaty 10",
+   "Yashil Healthy"
+  ],
+  "pepitesCachees": [
+   "Navat",
+   "Daredzhani",
+   "Alasha"
+  ],
+  "idealFamille": [
+   "Choyxona Milliy",
+   "Registon Osh",
+   "Bahor Café",
+   "Sharq Grill",
+   "Beit Levant"
+  ],
+  "gastronomique": [
+   "Alasha",
+   "Saffron Garden Almaty",
+   "Navruz Restaurant"
+  ],
+  "ouvertNuit": [
+   "Registon Osh",
+   "Bahor Café",
+   "Sharq Grill"
+  ],
+  "vueExceptionnelle": [
+   "Sea Caspian"
+  ]
+ }
 }

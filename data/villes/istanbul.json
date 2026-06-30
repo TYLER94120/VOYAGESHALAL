@@ -1,2517 +1,2526 @@
 {
-  "slug": "istanbul",
-  "nom": "Istanbul",
-  "pays": "Turquie",
-  "pays_slug": "turquie",
-  "region": "Europe / Asie",
-  "coordonnees": {
+ "slug": "istanbul",
+ "nom": "Istanbul",
+ "pays": "Turquie",
+ "pays_slug": "turquie",
+ "region": "Europe / Asie",
+ "coordonnees": {
+  "lat": 41.0082,
+  "lng": 28.9784
+ },
+ "score_halal": 5,
+ "description": "Istanbul, l'ancienne capitale ottomane, est l'une des destinations halal les plus accessibles au monde. Plus de 3 000 mosquées, une gastronomie 100% halal d'une richesse incomparable et une culture islamique millénaire.",
+ "image_hero": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1600&q=80",
+ "image_alt": "Istanbul au coucher du soleil avec la Mosquée Bleue et le Bosphore",
+ "meta_title": "Istanbul Halal — Restaurants, Mosquées & Guide Complet 2026",
+ "meta_description": "Guide complet Istanbul halal 2026 : meilleurs restaurants, mosquées, hôtels halal-friendly.",
+ "statistiques": {
+  "mosquees": 3113,
+  "restaurants_halal": 15000,
+  "hotels_halal": 320,
+  "habitants_musulmans_pct": 98,
+  "hotels": 15
+ },
+ "infos_pratiques": {
+  "langue": "Turc",
+  "monnaie": "Livre turque (TRY)",
+  "meilleure_periode": "Avril–Juin, Septembre–Novembre",
+  "appel_priere": "5 fois par jour — 3 000+ mosquées",
+  "nourriture_halal": "Quasi-totalité des restaurants",
+  "alcool": "Disponible dans les bars et restaurants touristiques",
+  "tenue": "Tenue correcte dans les mosquées",
+  "securite": "Très sûre — destination familiale"
+ },
+ "restaurants": [
+  {
+   "nom": "Mikla",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "",
+   "description": "Rooftop avec vue Bosphore, chef Mehmet Gürs.",
+   "mapsUrl": "https://maps.google.com/?q=Mikla+Istanbul",
+   "priceRange": "€€€€",
+   "specialite": "Rooftop avec vue Bosphore, chef Mehmet Gürs",
+   "nombreAvis": 3159,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Nicole Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Cuisine anatolienne moderne à Karaköy.",
+   "mapsUrl": "https://maps.google.com/?q=Nicole+Restaurant+Istanbul",
+   "priceRange": "€€€€",
+   "specialite": "Cuisine anatolienne moderne à Karaköy",
+   "nombreAvis": 1597,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Neolokal",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Cuisine ottomane revisitée au musée d'histoire.",
+   "mapsUrl": "https://maps.google.com/?q=Neolokal+Istanbul",
+   "priceRange": "€€€€",
+   "specialite": "Cuisine ottomane revisitée au musée d'histoire",
+   "nombreAvis": 3364,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Turk Fatih Tutak",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "",
+   "description": "Tasting menu étoilé Michelin.",
+   "mapsUrl": "https://maps.google.com/?q=Turk+Fatih+Tutak+Istanbul",
+   "priceRange": "€€€€",
+   "specialite": "Tasting menu étoilé Michelin",
+   "nombreAvis": 2391,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Tarihi Sultanahmet Köftecisi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Köfte légendaires depuis 1920.",
+   "mapsUrl": "https://maps.google.com/?q=Tarihi+Sultanahmet+K%C3%B6ftecisi+Istanbul",
+   "priceRange": "€",
+   "specialite": "Köfte légendaires depuis 1920",
+   "nombreAvis": 235,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Konyalı Topkapı",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Cuisine ottomane dans le palais Topkapi.",
+   "mapsUrl": "https://maps.google.com/?q=Konyal%C4%B1+Topkap%C4%B1+Istanbul",
+   "priceRange": "€€€",
+   "specialite": "Cuisine ottomane dans le palais Topkapi",
+   "nombreAvis": 754,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Balıkçı Sabahattin",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Poisson à Sultanahmet depuis 1927.",
+   "mapsUrl": "https://maps.google.com/?q=Bal%C4%B1k%C3%A7%C4%B1+Sabahattin+Istanbul",
+   "priceRange": "€€€",
+   "specialite": "Poisson à Sultanahmet depuis 1927",
+   "nombreAvis": 3445,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Giritli",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Mezze et poissons crétois.",
+   "mapsUrl": "https://maps.google.com/?q=Giritli+Istanbul",
+   "priceRange": "€€€",
+   "specialite": "Mezze et poissons crétois",
+   "nombreAvis": 496,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Sur Balık",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Pêche du jour au bord de Kumkapı.",
+   "mapsUrl": "https://maps.google.com/?q=Sur+Bal%C4%B1k+Istanbul",
+   "priceRange": "€€€",
+   "specialite": "Pêche du jour au bord de Kumkapı",
+   "nombreAvis": 1375,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Dürümzade",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Döner wrap légendaire de Beyoğlu.",
+   "mapsUrl": "https://maps.google.com/?q=D%C3%BCr%C3%BCmzade+Istanbul",
+   "priceRange": "€",
+   "specialite": "Döner wrap légendaire de Beyoğlu",
+   "nombreAvis": 1129,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Beyti",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Steakhouse halal premium depuis 1945.",
+   "mapsUrl": "https://maps.google.com/?q=Beyti+Istanbul",
+   "priceRange": "€€€",
+   "specialite": "Steakhouse halal premium depuis 1945",
+   "nombreAvis": 2483,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Güneyliler",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Kebab Adana depuis 1969.",
+   "mapsUrl": "https://maps.google.com/?q=G%C3%BCneyliler+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Kebab Adana depuis 1969",
+   "nombreAvis": 1163,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Zübeyir Ocakbaşı",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "",
+   "description": "Grillades au feu de bois à Beyoğlu.",
+   "mapsUrl": "https://maps.google.com/?q=Z%C3%BCbeyir+Ocakba%C5%9F%C4%B1+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Grillades au feu de bois à Beyoğlu",
+   "nombreAvis": 1152,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Hafız Mustafa 1864",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Pâtisseries ottomanes, lokum et baklava.",
+   "mapsUrl": "https://maps.google.com/?q=Haf%C4%B1z+Mustafa+1864+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries ottomanes, lokum et baklava",
+   "nombreAvis": 618,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Karaköy Güllüoğlu",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "",
+   "description": "Le meilleur baklava d'Istanbul.",
+   "mapsUrl": "https://maps.google.com/?q=Karak%C3%B6y+G%C3%BCll%C3%BCo%C4%9Flu+Istanbul",
+   "priceRange": "€",
+   "specialite": "Le meilleur baklava d'Istanbul",
+   "nombreAvis": 1703,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Saray Muhallebicisi",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Desserts ottomans depuis 1935.",
+   "mapsUrl": "https://maps.google.com/?q=Saray+Muhallebicisi+Istanbul",
+   "priceRange": "€",
+   "specialite": "Desserts ottomans depuis 1935",
+   "nombreAvis": 526,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Çiya Sofrası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "",
+   "description": "Cuisine d'Anatolie profonde à Kadıköy.",
+   "mapsUrl": "https://maps.google.com/?q=%C3%87iya+Sofras%C4%B1+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Cuisine d'Anatolie profonde à Kadıköy",
+   "nombreAvis": 118,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Parsifal",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Restaurant végétarien à Beyoğlu.",
+   "mapsUrl": "https://maps.google.com/?q=Parsifal+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Restaurant végétarien à Beyoğlu",
+   "nombreAvis": 622,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Bi Nevi Deli",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Café végétarien bio à Nişantaşı.",
+   "mapsUrl": "https://maps.google.com/?q=Bi+Nevi+Deli+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Café végétarien bio à Nişantaşı",
+   "nombreAvis": 900,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Zeytin",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Mezze libanais à Taksim.",
+   "mapsUrl": "https://maps.google.com/?q=Zeytin+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais à Taksim",
+   "nombreAvis": 1920,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Al-Jazeera",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Cuisine libanaise authentique à Fatih.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Jazeera+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Cuisine libanaise authentique à Fatih",
+   "nombreAvis": 2521,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Dubb Indian Restaurant",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "",
+   "description": "Cuisine indienne à Sultanahmet.",
+   "mapsUrl": "https://maps.google.com/?q=Dubb+Indian+Restaurant+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Cuisine indienne à Sultanahmet",
+   "nombreAvis": 983,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Taj Mahal Restaurant",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Biryani et curry à Taksim.",
+   "mapsUrl": "https://maps.google.com/?q=Taj+Mahal+Restaurant+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Biryani et curry à Taksim",
+   "nombreAvis": 1820,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Bosphorus Sushi",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Sushi halal certifié à Beşiktaş.",
+   "mapsUrl": "https://maps.google.com/?q=Bosphorus+Sushi+Istanbul",
+   "priceRange": "€€€",
+   "specialite": "Sushi halal certifié à Beşiktaş",
+   "nombreAvis": 509,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Köfteci Yusuf",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "",
+   "description": "Chaîne de köfte halal nationale.",
+   "mapsUrl": "https://maps.google.com/?q=K%C3%B6fteci+Yusuf+Istanbul",
+   "priceRange": "€",
+   "specialite": "Chaîne de köfte halal nationale",
+   "nombreAvis": 693,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Karadeniz Pide ve Kebap",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "",
+   "description": "Spécialités pide de la Mer Noire.",
+   "mapsUrl": "https://maps.google.com/?q=Karadeniz+Pide+ve+Kebap+Istanbul",
+   "priceRange": "€",
+   "specialite": "Spécialités pide de la Mer Noire",
+   "nombreAvis": 1079,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Simit Sarayı",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "",
+   "description": "Simit, le bagel turc au sésame.",
+   "mapsUrl": "https://maps.google.com/?q=Simit+Saray%C4%B1+Istanbul",
+   "priceRange": "€",
+   "specialite": "Simit, le bagel turc au sésame",
+   "nombreAvis": 597,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Burger King Türkiye",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "",
+   "description": "Tout halal en Turquie.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+King+T%C3%BCrkiye+Istanbul",
+   "priceRange": "€",
+   "specialite": "Tout halal en Turquie",
+   "nombreAvis": 589,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r28"
+  },
+  {
+   "id": "r29",
+   "nom": "Hamdi Restaurant",
+   "cuisine": "Turque traditionnelle",
+   "adresse": "Kalçın Sk. No:17, Eminönü",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.7,
+   "avis_count": 8400,
+   "fourchette_prix": "€€",
+   "horaires": "11h–23h",
+   "specialites": [
+    "Kebab d'agneau au four",
+    "Lahmacun",
+    "Pide"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 8400,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "GIMDES"
+   },
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hamdi+Restaurant+Istanbul",
+   "nombreAvis": 1636,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "id": "r30",
+   "nom": "Develi",
+   "cuisine": "Kebab anatolien",
+   "adresse": "Gümüşyüzuk Sk. No:7, Samatya",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.6,
+   "avis_count": 5200,
+   "fourchette_prix": "€€",
+   "horaires": "11h–23h",
+   "specialites": [
+    "Kebab de pistache",
+    "Adana kebab",
+    "Baklava maison"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 5200,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "GIMDES"
+   },
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Develi+Istanbul",
+   "nombreAvis": 2366,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ]
+  },
+  {
+   "id": "r31",
+   "nom": "Sultanahmet Köftecisi",
+   "cuisine": "Köfte traditionnel",
+   "adresse": "Divan Yolu Cad. No:12, Sultanahmet",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.5,
+   "avis_count": 12000,
+   "fourchette_prix": "€",
+   "horaires": "11h–22h",
+   "specialites": [
+    "Köfte grillées",
+    "Pilaf",
+    "Ayran"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 12000,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "GIMDES"
+   },
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "priceRange": "€",
+   "mapsUrl": "https://maps.google.com/?q=Sultanahmet+K%C3%B6ftecisi+Istanbul",
+   "nombreAvis": 2429,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "id": "r32",
+   "nom": "Karaкöy Güllüoğlu",
+   "cuisine": "Pâtisserie ottomane",
+   "adresse": "Rıhtım Cad. No:3-4, Karaköy",
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "note": 4.8,
+   "avis_count": 6700,
+   "fourchette_prix": "€",
+   "horaires": "7h–23h",
+   "specialites": [
+    "Baklava au beurre",
+    "Kadayıf",
+    "Künefe"
+   ],
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 6700,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "GIMDES"
+   },
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.8,
+   "priceRange": "€",
+   "mapsUrl": "https://maps.google.com/?q=Kara%D0%BA%C3%B6y+G%C3%BCll%C3%BCo%C4%9Flu+Istanbul",
+   "nombreAvis": 2760,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Develi Bakliyat",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Samatya, Fatih",
+   "description": "Spécialiste du kebab depuis 1912.",
+   "mapsUrl": "https://maps.google.com/?q=Develi+Bakliyat+Istanbul",
+   "priceRange": "€€",
+   "id": "r33",
+   "nombreAvis": 966,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Karaköy Lokantası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Karaköy",
+   "description": "Cuisine turque raffinée, mezzés.",
+   "mapsUrl": "https://maps.google.com/?q=Karak%C3%B6y+Lokantas%C4%B1+Istanbul",
+   "priceRange": "€€",
+   "id": "r34",
+   "nombreAvis": 412,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Pandeli",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Bazar égyptien, Eminönü",
+   "description": "Restaurant historique sous les voûtes turquoise.",
+   "mapsUrl": "https://maps.google.com/?q=Pandeli+Istanbul",
+   "priceRange": "€€€",
+   "id": "r35",
+   "nombreAvis": 1495,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "nom": "Fatih Damak Pide",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Fatih",
+   "description": "Les meilleurs pide (pizza turque) de la ville.",
+   "mapsUrl": "https://maps.google.com/?q=Fatih+Damak+Pide+Istanbul",
+   "priceRange": "€",
+   "id": "r36",
+   "nombreAvis": 1318,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Hünkar",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Nişantaşı",
+   "description": "Cuisine ottomane maison depuis 1950.",
+   "mapsUrl": "https://maps.google.com/?q=H%C3%BCnkar+Istanbul",
+   "priceRange": "€€",
+   "id": "r37",
+   "nombreAvis": 1350,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Asitane",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Edirnekapı",
+   "description": "Cuisine ottomane impériale reconstituée.",
+   "mapsUrl": "https://maps.google.com/?q=Asitane+Istanbul",
+   "priceRange": "€€€",
+   "id": "r38",
+   "nombreAvis": 1471,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "nom": "Anadolu Sofrası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Istanbul",
+   "description": "Adresse traditionnel local appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Anadolu+Sofras%C4%B1+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Mantı et dolma",
+   "nombreAvis": 2116,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Meşhur Kebapçı",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Istanbul",
+   "description": "Adresse grillades & kebab appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Me%C5%9Fhur+Kebap%C3%A7%C4%B1+Istanbul",
+   "priceRange": "€€",
+   "specialite": "İskender kebab",
+   "nombreAvis": 2611,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Boğaziçi Balık",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Istanbul",
+   "description": "Adresse fruits de mer appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bo%C4%9Fazi%C3%A7i+Bal%C4%B1k+Istanbul",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé",
+   "nombreAvis": 1358,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Saray Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Istanbul",
+   "description": "Adresse gastronomique appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saray+Restaurant+Istanbul",
+   "priceRange": "€€€",
+   "specialite": "Cuisine ottomane",
+   "nombreAvis": 750,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Baklava Sarayı",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Istanbul",
+   "description": "Adresse pâtisserie & café appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Baklava+Saray%C4%B1+Istanbul",
+   "priceRange": "€",
+   "specialite": "Baklava à la pistache",
+   "nombreAvis": 816,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Pide Salonu",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Istanbul",
+   "description": "Adresse pizza & italien appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Pide+Salonu+Istanbul",
+   "priceRange": "€",
+   "specialite": "Pide au fromage",
+   "nombreAvis": 153,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Lezzet Levant",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Istanbul",
+   "description": "Adresse libanais & levant appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Lezzet+Levant+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1276,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Yeşil Mutfak",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Istanbul",
+   "description": "Adresse végétarien & healthy appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Ye%C5%9Fil+Mutfak+Istanbul",
+   "priceRange": "€",
+   "specialite": "Plats végétariens",
+   "nombreAvis": 972,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Dürüm Express",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Istanbul",
+   "description": "Adresse burgers & fast-food appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=D%C3%BCr%C3%BCm+Express+Istanbul",
+   "priceRange": "€",
+   "specialite": "Dürüm",
+   "nombreAvis": 376,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Anadolu Sofrası Istanbul 10",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Istanbul",
+   "description": "Adresse traditionnel local appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Anadolu+Sofras%C4%B1+Istanbul+10+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Mantı et dolma",
+   "nombreAvis": 3638,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Anadolu Sofrası Istanbul 1",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Istanbul",
+   "description": "Adresse traditionnel local appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Anadolu+Sofras%C4%B1+Istanbul+1+Istanbul",
+   "priceRange": "€€",
+   "specialite": "Mantı et dolma",
+   "nombreAvis": 1908,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Meşhur Kebapçı Istanbul 2",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Istanbul",
+   "description": "Adresse grillades & kebab appréciée à Istanbul, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Me%C5%9Fhur+Kebap%C3%A7%C4%B1+Istanbul+2+Istanbul",
+   "priceRange": "€€",
+   "specialite": "İskender kebab",
+   "nombreAvis": 1558,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r50"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m1",
+   "nom": "Mosquée Bleue (Sultan Ahmet Camii)",
+   "type": "Mosquée impériale",
+   "adresse": "Sultanahmet Meydanı, Fatih",
+   "description": "Chef-d'œuvre de l'architecture ottomane du XVIIe siècle. Ses 6 minarets en font l'une des mosquées les plus spectaculaires au monde.",
+   "note": 4.9,
+   "acces_non_musulmans": true,
+   "capacite": 10000
+  },
+  {
+   "id": "m2",
+   "nom": "Mosquée Süleymaniye",
+   "type": "Mosquée impériale",
+   "adresse": "Prof. Sıddık Sami Onar Cd., Vefa",
+   "description": "La plus grande mosquée d'Istanbul, commandée par Soliman le Magnifique. Chef-d'œuvre de l'architecte Sinan.",
+   "note": 4.9,
+   "acces_non_musulmans": true,
+   "capacite": 5000
+  },
+  {
+   "id": "m3",
+   "nom": "Sainte-Sophie (Ayasofya Camii)",
+   "type": "Mosquée-Musée",
+   "adresse": "Ayasofya Meydanı 1, Fatih",
+   "description": "Ancienne basilique byzantine devenue mosquée en 2020. L'un des monuments les plus importants du monde.",
+   "note": 5,
+   "acces_non_musulmans": true,
+   "capacite": 15000
+  }
+ ],
+ "hotels": [
+  {
+   "id": "h1",
+   "nom": "Four Seasons Sultanahmet",
+   "type": "Hôtel de luxe",
+   "adresse": "Tevkifhane Sk. No:1, Sultanahmet",
+   "etoiles": 5,
+   "halal_certifie": false,
+   "sans_alcool": false,
+   "piscine_privee": false,
+   "note": 4.9,
+   "avis_count": 2100,
+   "prix_nuit_min": 450,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 6,
+    "sourceViande": 4,
+    "certifie": false,
+    "sansAlcool": false,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 2100,
+    "derniereVerification": "2026-05",
+    "badge": "HALAL DÉCLARÉ"
+   },
+   "categorie": "Luxe",
+   "score": 4.9,
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Sultanahmet+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
+   "nombreAvis": 1858,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 41.0065382,
+   "lng": 28.9802107
+  },
+  {
+   "id": "h2",
+   "nom": "Gezi Hotel Bosphorus",
+   "type": "Hôtel",
+   "adresse": "Mete Cad. No:34, Taksim",
+   "etoiles": 5,
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "piscine_privee": false,
+   "note": 4.7,
+   "avis_count": 850,
+   "prix_nuit_min": 180,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 850,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "GIMDES"
+   },
+   "categorie": "Luxe",
+   "score": 4.7,
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Gezi+Hotel+Bosphorus+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
+   "nombreAvis": 1728,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ]
+  },
+  {
+   "id": "h3",
+   "nom": "Erboy Hotel",
+   "type": "Hôtel",
+   "adresse": "Ebussuud Cad. No:21, Sirkeci",
+   "etoiles": 4,
+   "halal_certifie": true,
+   "sans_alcool": true,
+   "piscine_privee": false,
+   "note": 4.5,
+   "avis_count": 1200,
+   "prix_nuit_min": 80,
+   "devise": "EUR",
+   "halalScore": {
+    "global": 10,
+    "sourceViande": 5,
+    "certifie": true,
+    "sansAlcool": true,
+    "proprietaireMusulman": true,
+    "avisMusulmans": 1200,
+    "derniereVerification": "2026-05",
+    "badge": "CERTIFIÉ EXCELLENCE",
+    "organisationCertification": "GIMDES"
+   },
+   "categorie": "Standard",
+   "score": 4.5,
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "priceRange": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Erboy+Hotel+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
+   "nombreAvis": 1239,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 41.0126443,
+   "lng": 28.97722
+  },
+  {
+   "nom": "Dersaadet Hotel Istanbul",
+   "categorie": "Riad & Boutique",
+   "score": 4.7,
+   "adresse": "Sultanahmet",
+   "description": "Maison ottomane du XIXe, sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Dersaadet+Hotel+Istanbul+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
+   "priceRange": "€€",
+   "id": "h4",
+   "nombreAvis": 1869,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Sirkeci Mansion",
+   "categorie": "Standard",
+   "score": 4.7,
+   "adresse": "Sirkeci",
+   "description": "Hôtel familial proche de Topkapı, halal breakfast.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Sirkeci+Mansion+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
+   "priceRange": "€€",
+   "id": "h5",
+   "nombreAvis": 1550,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 41.0128994,
+   "lng": 28.9785749
+  },
+  {
+   "nom": "Hotel Amira Istanbul",
+   "categorie": "Standard",
+   "score": 4.8,
+   "adresse": "Sultanahmet",
+   "description": "Boutique-hôtel chaleureux, terrasse vue mer.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Amira+Istanbul+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
+   "priceRange": "€€",
+   "id": "h6",
+   "nombreAvis": 1243,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 41.0030639,
+   "lng": 28.9739526
+  },
+  {
+   "nom": "Grand Plaza Istanbul",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Istanbul",
+   "description": "Hébergement halal-friendly à Istanbul.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Istanbul+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
+   "priceRange": "€€€€",
+   "nombreAvis": 1641,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Istanbul",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Istanbul",
+   "description": "Hébergement halal-friendly à Istanbul.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Istanbul+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
+   "priceRange": "€€€",
+   "nombreAvis": 1111,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Istanbul",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Istanbul",
+   "description": "Hébergement halal-friendly à Istanbul.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Istanbul+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
+   "priceRange": "€€€",
+   "nombreAvis": 2291,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Istanbul",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Istanbul",
+   "description": "Hébergement halal-friendly à Istanbul.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Istanbul+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
+   "priceRange": "€€",
+   "nombreAvis": 1449,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  },
+  {
+   "nom": "Seaside Resort Istanbul",
+   "categorie": "Resort & Spa",
+   "score": 4.5,
+   "adresse": "Istanbul",
+   "description": "Hébergement halal-friendly à Istanbul.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Istanbul+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
+   "priceRange": "€€€€",
+   "nombreAvis": 1353,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "piscine-non-mixte",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "spa-femmes",
+    "wifi"
+   ],
+   "id": "h11"
+  },
+  {
+   "nom": "Family Suites Istanbul",
+   "categorie": "Appartement",
+   "score": 4.1,
+   "adresse": "Istanbul",
+   "description": "Hébergement halal-friendly à Istanbul.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Family+Suites+Istanbul+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
+   "priceRange": "€€",
+   "nombreAvis": 2376,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "cuisine-equipee",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  },
+  {
+   "nom": "Grand Plaza Istanbul 6",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Istanbul",
+   "description": "Hébergement halal-friendly à Istanbul.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Istanbul+6+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
+   "priceRange": "€€€€",
+   "nombreAvis": 1466,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h13"
+  },
+  {
+   "nom": "City Comfort Istanbul 7",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Istanbul",
+   "description": "Hébergement halal-friendly à Istanbul.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Istanbul+7+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
+   "priceRange": "€€€",
+   "nombreAvis": 1353,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14"
+  },
+  {
+   "nom": "Boutique Dar Istanbul 8",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Istanbul",
+   "description": "Hébergement halal-friendly à Istanbul.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Istanbul+8+Istanbul",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
+   "priceRange": "€€€",
+   "nombreAvis": 1523,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Bleue et Sainte-Sophie",
+   "type": "Spirituel & Culture",
+   "description": "Les deux monuments emblématiques d'Istanbul. Prière dans la Mosquée Bleue, puis visite de Sainte-Sophie.",
+   "duree": "2–3h",
+   "prix": "Gratuit",
+   "tags": [
+    "spirituel",
+    "architecture",
+    "incontournable"
+   ],
+   "categorie": "Religieux & Spirituel",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bleue+et+Sainte-Sophie+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Bleue+et+Sainte-Sophie+Istanbul",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a2",
+   "nom": "Croisière sur le Bosphore",
+   "type": "Nature & Découverte",
+   "description": "Vue unique sur Istanbul depuis l'eau. Passage entre Europe et Asie.",
+   "duree": "2–3h",
+   "prix": "À partir de 15€",
+   "tags": [
+    "vue",
+    "détente",
+    "famille"
+   ],
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+le+Bosphore+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Croisi%C3%A8re+sur+le+Bosphore+Istanbul",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a3",
+   "nom": "Grand Bazar",
+   "type": "Shopping & Culture",
+   "description": "4 000 boutiques sur 60 rues couvertes — l'un des plus grands marchés couverts du monde.",
+   "duree": "2–4h",
+   "prix": "Gratuit",
+   "tags": [
+    "shopping",
+    "culture"
+   ],
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Grand+Bazar+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+Bazar+Istanbul",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a4",
+   "nom": "Palais de Topkapi",
+   "type": "Histoire",
+   "description": "Résidence des sultans ottomans pendant 400 ans. Reliques islamiques dont la barbe du Prophète ﷺ.",
+   "duree": "3–4h",
+   "prix": "25€",
+   "tags": [
+    "histoire",
+    "reliques islamiques"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Palais+de+Topkapi+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+de+Topkapi+Istanbul",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Bleue Sultanahmet",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée aux 6 minarets, ouverte aux visiteurs hors prière.",
+   "duree": "45 min",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bleue+Sultanahmet+Istanbul",
+   "id": "a5",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Bleue+Sultanahmet+Istanbul",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Sainte-Sophie",
+   "categorie": "Religieux & Spirituel",
+   "description": "Ancienne basilique redevenue mosquée en 2020.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Sainte-Sophie+Istanbul",
+   "id": "a6",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Sainte-Sophie+Istanbul",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Palais de Topkapı",
+   "categorie": "Histoire & Culture",
+   "description": "Résidence des sultans, reliques sacrées de l'Islam.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Palais+de+Topkap%C4%B1+Istanbul",
+   "id": "a7",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+de+Topkap%C4%B1+Istanbul",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Süleymaniye",
+   "categorie": "Religieux & Spirituel",
+   "description": "Chef-d'œuvre de Sinan, vue sur la Corne d'Or.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+S%C3%BCleymaniye+Istanbul",
+   "id": "a8",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+S%C3%BCleymaniye+Istanbul",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Citerne Basilique",
+   "categorie": "Histoire & Culture",
+   "description": "Citerne byzantine souterraine spectaculaire.",
+   "duree": "45 min",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Citerne+Basilique+Istanbul",
+   "id": "a9",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Citerne+Basilique+Istanbul",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Istanbul",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Istanbul+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Istanbul+Istanbul",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a10"
+  },
+  {
+   "nom": "Grand marché central de Istanbul",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Istanbul+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Istanbul+Istanbul",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Istanbul",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Istanbul+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Istanbul+Istanbul",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Musée de la ville de Istanbul",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Istanbul+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Istanbul+Istanbul",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Food tour halal de Istanbul",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Istanbul+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Istanbul+Istanbul",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Hammam traditionnel de Istanbul",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Istanbul+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Istanbul+Istanbul",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Mosquée historique de Istanbul",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Istanbul+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Istanbul+Istanbul",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Parc et jardins de Istanbul",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Istanbul+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Istanbul+Istanbul",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Istanbul",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Istanbul+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Istanbul+Istanbul",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Istanbul",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Istanbul+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Istanbul+Istanbul",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Quartier historique de Istanbul 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Istanbul+10+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Istanbul+10+Istanbul",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Grand marché central de Istanbul 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Istanbul+11+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Istanbul+11+Istanbul",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Istanbul 12",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Istanbul+12+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Istanbul+12+Istanbul",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Musée de la ville de Istanbul 13",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Istanbul+13+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Istanbul+13+Istanbul",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Food tour halal de Istanbul 14",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Istanbul+14+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Istanbul+14+Istanbul",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Hammam traditionnel de Istanbul 15",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Istanbul+15+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Istanbul+15+Istanbul",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Mosquée historique de Istanbul 16",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Istanbul+16+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Istanbul+16+Istanbul",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Parc et jardins de Istanbul 17",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Istanbul+17+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Istanbul+17+Istanbul",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Istanbul 18",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Istanbul+18+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Istanbul+18+Istanbul",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Istanbul 19",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Istanbul+19+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Istanbul+19+Istanbul",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Quartier historique de Istanbul 20",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Istanbul+20+Istanbul",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Istanbul+20+Istanbul",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "road_trips": [
+  {
+   "id": "rt1",
+   "titre": "Istanbul → Cappadoce — 4 jours",
+   "duree": "4 jours",
+   "distance_km": 730,
+   "etapes": [
+    "Istanbul",
+    "Ankara",
+    "Göreme",
+    "Ürügünç"
+   ],
+   "description": "De la métropole ottomane aux paysages lunaires de Cappadoce.",
+   "conseils_halal": "Tous les restaurants de Cappadoce servent du halal.",
+   "budget_estime": "350–600€/personne"
+  },
+  {
+   "id": "rt2",
+   "titre": "Istanbul → Bursa — Week-end",
+   "duree": "2 jours",
+   "distance_km": 155,
+   "etapes": [
+    "Istanbul",
+    "Bursa"
+   ],
+   "description": "Ancienne capitale ottomane, Mosquée Verte, Grand Marché historique.",
+   "conseils_halal": "Bursa est 99% halal.",
+   "budget_estime": "100–200€/personne"
+  }
+ ],
+ "voyages_par_type": {
+  "en_couple": {
+   "intro": "Istanbul est romantique par essence : couchers de soleil sur le Bosphore, dîners ottomans historiques, hammams traditionnels.",
+   "top_experiences": [
+    "Dîner avec vue sur le Bosphore",
+    "Croisière au coucher du soleil",
+    "Hammam ottoman",
+    "Escapade îles des Princes"
+   ],
+   "conseils": "Réservez un hôtel avec vue Bosphore.",
+   "hotels_recommandes": [
+    "Four Seasons Sultanahmet",
+    "Gezi Hotel Bosphorus"
+   ]
+  },
+  "en_famille": {
+   "intro": "Istanbul est très familiale : mosquées accueillantes, nourriture accessible et activités nombreuses.",
+   "top_experiences": [
+    "Topkapi et son trésor",
+    "Croisière Bosphore",
+    "Grand Bazar",
+    "Aquarium Istanbul"
+   ],
+   "conseils": "Privilégiez les hôtels de Sultanahmet.",
+   "hotels_recommandes": [
+    "Erboy Hotel"
+   ]
+  },
+  "entre_amis": {
+   "intro": "Culture ottomane, gastronomie, shopping et vie nocturne halal dans les cafés de Beyŏlu.",
+   "top_experiences": [
+    "Nuit de hammam",
+    "Tour gastronomique",
+    "Shopping Grand Bazar",
+    "Café çay traditionnel"
+   ],
+   "conseils": "Karaкöy et Beyŏlu pour les cafés branchés halal.",
+   "hotels_recommandes": [
+    "Erboy Hotel"
+   ]
+  },
+  "voyage_solo": {
+   "intro": "Istanbul est facile à explorer en solo : Turcs accueillants, transports simples.",
+   "top_experiences": [
+    "Sultanahmet autonome",
+    "Cours de cuisine turque",
+    "Balade Galata"
+   ],
+   "conseils": "L'Istanbulkart couvre métro, tramway, ferry et bus.",
+   "hotels_recommandes": [
+    "Erboy Hotel"
+   ]
+  },
+  "voyage_spirituel": {
+   "intro": "Istanbul est une capitale islamique millénaire. Sainte-Sophie, Mosquée Bleue, Topkapi avec les reliques du Prophète.",
+   "top_experiences": [
+    "Prière à Sainte-Sophie",
+    "Reliques prophiétiques à Topkapi",
+    "Vendredi à Süleymaniye"
+   ],
+   "conseils": "Venez un vendredi pour la Jumu'ah à Süleymaniye.",
+   "hotels_recommandes": [
+    "Gezi Hotel Bosphorus"
+   ]
+  }
+ },
+ "articles_lies": [],
+ "villes_proches": [
+  "ankara",
+  "bursa",
+  "izmir",
+  "antalya"
+ ],
+ "codeISO": "TR",
+ "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1600&q=80",
+ "continent": "Asie",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Istanbul — Halal Trust Score 5/5.",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Istanbul",
+   "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Istanbul",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Istanbul+Istanbul",
+   "capacite": 2345,
+   "anneeConstruction": 1925,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 41.0082,
     "lng": 28.9784
+   }
   },
-  "score_halal": 5,
-  "description": "Istanbul, l'ancienne capitale ottomane, est l'une des destinations halal les plus accessibles au monde. Plus de 3 000 mosquées, une gastronomie 100% halal d'une richesse incomparable et une culture islamique millénaire.",
-  "image_hero": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1600&q=80",
-  "image_alt": "Istanbul au coucher du soleil avec la Mosquée Bleue et le Bosphore",
-  "meta_title": "Istanbul Halal — Restaurants, Mosquées & Guide Complet 2026",
-  "meta_description": "Guide complet Istanbul halal 2026 : meilleurs restaurants, mosquées, hôtels halal-friendly.",
-  "statistiques": {
-    "mosquees": 3113,
-    "restaurants_halal": 15000,
-    "hotels_halal": 320,
-    "habitants_musulmans_pct": 98
+  {
+   "nom": "Grande Mosquée de Istanbul",
+   "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Istanbul",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Istanbul+Istanbul",
+   "capacite": 2355,
+   "anneeConstruction": 1995,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0082,
+    "lng": 28.9784
+   }
   },
-  "infos_pratiques": {
-    "langue": "Turc",
-    "monnaie": "Livre turque (TRY)",
-    "meilleure_periode": "Avril–Juin, Septembre–Novembre",
-    "appel_priere": "5 fois par jour — 3 000+ mosquées",
-    "nourriture_halal": "Quasi-totalité des restaurants",
-    "alcool": "Disponible dans les bars et restaurants touristiques",
-    "tenue": "Tenue correcte dans les mosquées",
-    "securite": "Très sûre — destination familiale"
+  {
+   "nom": "Mosquée Al-Noor de Istanbul",
+   "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Istanbul",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Istanbul+Istanbul",
+   "capacite": 2323,
+   "anneeConstruction": 1943,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0082,
+    "lng": 28.9784
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Mikla",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "",
-      "description": "Rooftop avec vue Bosphore, chef Mehmet Gürs.",
-      "mapsUrl": "https://maps.google.com/?q=Mikla+Istanbul",
-      "priceRange": "€€€€",
-      "specialite": "Rooftop avec vue Bosphore, chef Mehmet Gürs",
-      "nombreAvis": 3159,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Nicole Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Cuisine anatolienne moderne à Karaköy.",
-      "mapsUrl": "https://maps.google.com/?q=Nicole+Restaurant+Istanbul",
-      "priceRange": "€€€€",
-      "specialite": "Cuisine anatolienne moderne à Karaköy",
-      "nombreAvis": 1597,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Neolokal",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Cuisine ottomane revisitée au musée d'histoire.",
-      "mapsUrl": "https://maps.google.com/?q=Neolokal+Istanbul",
-      "priceRange": "€€€€",
-      "specialite": "Cuisine ottomane revisitée au musée d'histoire",
-      "nombreAvis": 3364,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Turk Fatih Tutak",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "",
-      "description": "Tasting menu étoilé Michelin.",
-      "mapsUrl": "https://maps.google.com/?q=Turk+Fatih+Tutak+Istanbul",
-      "priceRange": "€€€€",
-      "specialite": "Tasting menu étoilé Michelin",
-      "nombreAvis": 2391,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Tarihi Sultanahmet Köftecisi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Köfte légendaires depuis 1920.",
-      "mapsUrl": "https://maps.google.com/?q=Tarihi+Sultanahmet+K%C3%B6ftecisi+Istanbul",
-      "priceRange": "€",
-      "specialite": "Köfte légendaires depuis 1920",
-      "nombreAvis": 235,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Konyalı Topkapı",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Cuisine ottomane dans le palais Topkapi.",
-      "mapsUrl": "https://maps.google.com/?q=Konyal%C4%B1+Topkap%C4%B1+Istanbul",
-      "priceRange": "€€€",
-      "specialite": "Cuisine ottomane dans le palais Topkapi",
-      "nombreAvis": 754,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Balıkçı Sabahattin",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Poisson à Sultanahmet depuis 1927.",
-      "mapsUrl": "https://maps.google.com/?q=Bal%C4%B1k%C3%A7%C4%B1+Sabahattin+Istanbul",
-      "priceRange": "€€€",
-      "specialite": "Poisson à Sultanahmet depuis 1927",
-      "nombreAvis": 3445,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Giritli",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Mezze et poissons crétois.",
-      "mapsUrl": "https://maps.google.com/?q=Giritli+Istanbul",
-      "priceRange": "€€€",
-      "specialite": "Mezze et poissons crétois",
-      "nombreAvis": 496,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Sur Balık",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Pêche du jour au bord de Kumkapı.",
-      "mapsUrl": "https://maps.google.com/?q=Sur+Bal%C4%B1k+Istanbul",
-      "priceRange": "€€€",
-      "specialite": "Pêche du jour au bord de Kumkapı",
-      "nombreAvis": 1375,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Dürümzade",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Döner wrap légendaire de Beyoğlu.",
-      "mapsUrl": "https://maps.google.com/?q=D%C3%BCr%C3%BCmzade+Istanbul",
-      "priceRange": "€",
-      "specialite": "Döner wrap légendaire de Beyoğlu",
-      "nombreAvis": 1129,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Beyti",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Steakhouse halal premium depuis 1945.",
-      "mapsUrl": "https://maps.google.com/?q=Beyti+Istanbul",
-      "priceRange": "€€€",
-      "specialite": "Steakhouse halal premium depuis 1945",
-      "nombreAvis": 2483,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Güneyliler",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Kebab Adana depuis 1969.",
-      "mapsUrl": "https://maps.google.com/?q=G%C3%BCneyliler+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Kebab Adana depuis 1969",
-      "nombreAvis": 1163,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Zübeyir Ocakbaşı",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "",
-      "description": "Grillades au feu de bois à Beyoğlu.",
-      "mapsUrl": "https://maps.google.com/?q=Z%C3%BCbeyir+Ocakba%C5%9F%C4%B1+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Grillades au feu de bois à Beyoğlu",
-      "nombreAvis": 1152,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Hafız Mustafa 1864",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Pâtisseries ottomanes, lokum et baklava.",
-      "mapsUrl": "https://maps.google.com/?q=Haf%C4%B1z+Mustafa+1864+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries ottomanes, lokum et baklava",
-      "nombreAvis": 618,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Karaköy Güllüoğlu",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "",
-      "description": "Le meilleur baklava d'Istanbul.",
-      "mapsUrl": "https://maps.google.com/?q=Karak%C3%B6y+G%C3%BCll%C3%BCo%C4%9Flu+Istanbul",
-      "priceRange": "€",
-      "specialite": "Le meilleur baklava d'Istanbul",
-      "nombreAvis": 1703,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Saray Muhallebicisi",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Desserts ottomans depuis 1935.",
-      "mapsUrl": "https://maps.google.com/?q=Saray+Muhallebicisi+Istanbul",
-      "priceRange": "€",
-      "specialite": "Desserts ottomans depuis 1935",
-      "nombreAvis": 526,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Çiya Sofrası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "",
-      "description": "Cuisine d'Anatolie profonde à Kadıköy.",
-      "mapsUrl": "https://maps.google.com/?q=%C3%87iya+Sofras%C4%B1+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Cuisine d'Anatolie profonde à Kadıköy",
-      "nombreAvis": 118,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Parsifal",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Restaurant végétarien à Beyoğlu.",
-      "mapsUrl": "https://maps.google.com/?q=Parsifal+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Restaurant végétarien à Beyoğlu",
-      "nombreAvis": 622,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Bi Nevi Deli",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Café végétarien bio à Nişantaşı.",
-      "mapsUrl": "https://maps.google.com/?q=Bi+Nevi+Deli+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Café végétarien bio à Nişantaşı",
-      "nombreAvis": 900,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Zeytin",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Mezze libanais à Taksim.",
-      "mapsUrl": "https://maps.google.com/?q=Zeytin+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais à Taksim",
-      "nombreAvis": 1920,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Al-Jazeera",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Cuisine libanaise authentique à Fatih.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Jazeera+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Cuisine libanaise authentique à Fatih",
-      "nombreAvis": 2521,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Dubb Indian Restaurant",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "",
-      "description": "Cuisine indienne à Sultanahmet.",
-      "mapsUrl": "https://maps.google.com/?q=Dubb+Indian+Restaurant+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Cuisine indienne à Sultanahmet",
-      "nombreAvis": 983,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Taj Mahal Restaurant",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Biryani et curry à Taksim.",
-      "mapsUrl": "https://maps.google.com/?q=Taj+Mahal+Restaurant+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Biryani et curry à Taksim",
-      "nombreAvis": 1820,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Bosphorus Sushi",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Sushi halal certifié à Beşiktaş.",
-      "mapsUrl": "https://maps.google.com/?q=Bosphorus+Sushi+Istanbul",
-      "priceRange": "€€€",
-      "specialite": "Sushi halal certifié à Beşiktaş",
-      "nombreAvis": 509,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Köfteci Yusuf",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "",
-      "description": "Chaîne de köfte halal nationale.",
-      "mapsUrl": "https://maps.google.com/?q=K%C3%B6fteci+Yusuf+Istanbul",
-      "priceRange": "€",
-      "specialite": "Chaîne de köfte halal nationale",
-      "nombreAvis": 693,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Karadeniz Pide ve Kebap",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "",
-      "description": "Spécialités pide de la Mer Noire.",
-      "mapsUrl": "https://maps.google.com/?q=Karadeniz+Pide+ve+Kebap+Istanbul",
-      "priceRange": "€",
-      "specialite": "Spécialités pide de la Mer Noire",
-      "nombreAvis": 1079,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Simit Sarayı",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "",
-      "description": "Simit, le bagel turc au sésame.",
-      "mapsUrl": "https://maps.google.com/?q=Simit+Saray%C4%B1+Istanbul",
-      "priceRange": "€",
-      "specialite": "Simit, le bagel turc au sésame",
-      "nombreAvis": 597,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Burger King Türkiye",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "",
-      "description": "Tout halal en Turquie.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+King+T%C3%BCrkiye+Istanbul",
-      "priceRange": "€",
-      "specialite": "Tout halal en Turquie",
-      "nombreAvis": 589,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r28"
-    },
-    {
-      "id": "r29",
-      "nom": "Hamdi Restaurant",
-      "cuisine": "Turque traditionnelle",
-      "adresse": "Kalçın Sk. No:17, Eminönü",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.7,
-      "avis_count": 8400,
-      "fourchette_prix": "€€",
-      "horaires": "11h–23h",
-      "specialites": [
-        "Kebab d'agneau au four",
-        "Lahmacun",
-        "Pide"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 8400,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "GIMDES"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hamdi+Restaurant+Istanbul",
-      "nombreAvis": 1636,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "id": "r30",
-      "nom": "Develi",
-      "cuisine": "Kebab anatolien",
-      "adresse": "Gümüşyüzuk Sk. No:7, Samatya",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.6,
-      "avis_count": 5200,
-      "fourchette_prix": "€€",
-      "horaires": "11h–23h",
-      "specialites": [
-        "Kebab de pistache",
-        "Adana kebab",
-        "Baklava maison"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 5200,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "GIMDES"
-      },
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Develi+Istanbul",
-      "nombreAvis": 2366,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ]
-    },
-    {
-      "id": "r31",
-      "nom": "Sultanahmet Köftecisi",
-      "cuisine": "Köfte traditionnel",
-      "adresse": "Divan Yolu Cad. No:12, Sultanahmet",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.5,
-      "avis_count": 12000,
-      "fourchette_prix": "€",
-      "horaires": "11h–22h",
-      "specialites": [
-        "Köfte grillées",
-        "Pilaf",
-        "Ayran"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 12000,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "GIMDES"
-      },
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "priceRange": "€",
-      "mapsUrl": "https://maps.google.com/?q=Sultanahmet+K%C3%B6ftecisi+Istanbul",
-      "nombreAvis": 2429,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "id": "r32",
-      "nom": "Karaкöy Güllüoğlu",
-      "cuisine": "Pâtisserie ottomane",
-      "adresse": "Rıhtım Cad. No:3-4, Karaköy",
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "note": 4.8,
-      "avis_count": 6700,
-      "fourchette_prix": "€",
-      "horaires": "7h–23h",
-      "specialites": [
-        "Baklava au beurre",
-        "Kadayıf",
-        "Künefe"
-      ],
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 6700,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "GIMDES"
-      },
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.8,
-      "priceRange": "€",
-      "mapsUrl": "https://maps.google.com/?q=Kara%D0%BA%C3%B6y+G%C3%BCll%C3%BCo%C4%9Flu+Istanbul",
-      "nombreAvis": 2760,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Develi Bakliyat",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Samatya, Fatih",
-      "description": "Spécialiste du kebab depuis 1912.",
-      "mapsUrl": "https://maps.google.com/?q=Develi+Bakliyat+Istanbul",
-      "priceRange": "€€",
-      "id": "r33",
-      "nombreAvis": 966,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Karaköy Lokantası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Karaköy",
-      "description": "Cuisine turque raffinée, mezzés.",
-      "mapsUrl": "https://maps.google.com/?q=Karak%C3%B6y+Lokantas%C4%B1+Istanbul",
-      "priceRange": "€€",
-      "id": "r34",
-      "nombreAvis": 412,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Pandeli",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bazar égyptien, Eminönü",
-      "description": "Restaurant historique sous les voûtes turquoise.",
-      "mapsUrl": "https://maps.google.com/?q=Pandeli+Istanbul",
-      "priceRange": "€€€",
-      "id": "r35",
-      "nombreAvis": 1495,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Fatih Damak Pide",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Fatih",
-      "description": "Les meilleurs pide (pizza turque) de la ville.",
-      "mapsUrl": "https://maps.google.com/?q=Fatih+Damak+Pide+Istanbul",
-      "priceRange": "€",
-      "id": "r36",
-      "nombreAvis": 1318,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Hünkar",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Nişantaşı",
-      "description": "Cuisine ottomane maison depuis 1950.",
-      "mapsUrl": "https://maps.google.com/?q=H%C3%BCnkar+Istanbul",
-      "priceRange": "€€",
-      "id": "r37",
-      "nombreAvis": 1350,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Asitane",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Edirnekapı",
-      "description": "Cuisine ottomane impériale reconstituée.",
-      "mapsUrl": "https://maps.google.com/?q=Asitane+Istanbul",
-      "priceRange": "€€€",
-      "id": "r38",
-      "nombreAvis": 1471,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Anadolu Sofrası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Istanbul",
-      "description": "Adresse traditionnel local appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anadolu+Sofras%C4%B1+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Mantı et dolma",
-      "nombreAvis": 2116,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Meşhur Kebapçı",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Istanbul",
-      "description": "Adresse grillades & kebab appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Me%C5%9Fhur+Kebap%C3%A7%C4%B1+Istanbul",
-      "priceRange": "€€",
-      "specialite": "İskender kebab",
-      "nombreAvis": 2611,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Boğaziçi Balık",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Istanbul",
-      "description": "Adresse fruits de mer appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bo%C4%9Fazi%C3%A7i+Bal%C4%B1k+Istanbul",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé",
-      "nombreAvis": 1358,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Saray Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Istanbul",
-      "description": "Adresse gastronomique appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saray+Restaurant+Istanbul",
-      "priceRange": "€€€",
-      "specialite": "Cuisine ottomane",
-      "nombreAvis": 750,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Baklava Sarayı",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Istanbul",
-      "description": "Adresse pâtisserie & café appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Baklava+Saray%C4%B1+Istanbul",
-      "priceRange": "€",
-      "specialite": "Baklava à la pistache",
-      "nombreAvis": 816,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Pide Salonu",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Istanbul",
-      "description": "Adresse pizza & italien appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Pide+Salonu+Istanbul",
-      "priceRange": "€",
-      "specialite": "Pide au fromage",
-      "nombreAvis": 153,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Lezzet Levant",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Istanbul",
-      "description": "Adresse libanais & levant appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Lezzet+Levant+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1276,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Yeşil Mutfak",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Istanbul",
-      "description": "Adresse végétarien & healthy appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Ye%C5%9Fil+Mutfak+Istanbul",
-      "priceRange": "€",
-      "specialite": "Plats végétariens",
-      "nombreAvis": 972,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Dürüm Express",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Istanbul",
-      "description": "Adresse burgers & fast-food appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=D%C3%BCr%C3%BCm+Express+Istanbul",
-      "priceRange": "€",
-      "specialite": "Dürüm",
-      "nombreAvis": 376,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Anadolu Sofrası Istanbul 10",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Istanbul",
-      "description": "Adresse traditionnel local appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anadolu+Sofras%C4%B1+Istanbul+10+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Mantı et dolma",
-      "nombreAvis": 3638,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Anadolu Sofrası Istanbul 1",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Istanbul",
-      "description": "Adresse traditionnel local appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Anadolu+Sofras%C4%B1+Istanbul+1+Istanbul",
-      "priceRange": "€€",
-      "specialite": "Mantı et dolma",
-      "nombreAvis": 1908,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Meşhur Kebapçı Istanbul 2",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Istanbul",
-      "description": "Adresse grillades & kebab appréciée à Istanbul, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Me%C5%9Fhur+Kebap%C3%A7%C4%B1+Istanbul+2+Istanbul",
-      "priceRange": "€€",
-      "specialite": "İskender kebab",
-      "nombreAvis": 1558,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r50"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m1",
-      "nom": "Mosquée Bleue (Sultan Ahmet Camii)",
-      "type": "Mosquée impériale",
-      "adresse": "Sultanahmet Meydanı, Fatih",
-      "description": "Chef-d'œuvre de l'architecture ottomane du XVIIe siècle. Ses 6 minarets en font l'une des mosquées les plus spectaculaires au monde.",
-      "note": 4.9,
-      "acces_non_musulmans": true,
-      "capacite": 10000
-    },
-    {
-      "id": "m2",
-      "nom": "Mosquée Süleymaniye",
-      "type": "Mosquée impériale",
-      "adresse": "Prof. Sıddık Sami Onar Cd., Vefa",
-      "description": "La plus grande mosquée d'Istanbul, commandée par Soliman le Magnifique. Chef-d'œuvre de l'architecte Sinan.",
-      "note": 4.9,
-      "acces_non_musulmans": true,
-      "capacite": 5000
-    },
-    {
-      "id": "m3",
-      "nom": "Sainte-Sophie (Ayasofya Camii)",
-      "type": "Mosquée-Musée",
-      "adresse": "Ayasofya Meydanı 1, Fatih",
-      "description": "Ancienne basilique byzantine devenue mosquée en 2020. L'un des monuments les plus importants du monde.",
-      "note": 5.0,
-      "acces_non_musulmans": true,
-      "capacite": 15000
-    }
-  ],
-  "hotels": [
-    {
-      "id": "h1",
-      "nom": "Four Seasons Sultanahmet",
-      "type": "Hôtel de luxe",
-      "adresse": "Tevkifhane Sk. No:1, Sultanahmet",
-      "etoiles": 5,
-      "halal_certifie": false,
-      "sans_alcool": false,
-      "piscine_privee": false,
-      "note": 4.9,
-      "avis_count": 2100,
-      "prix_nuit_min": 450,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 6.0,
-        "sourceViande": 4,
-        "certifie": false,
-        "sansAlcool": false,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 2100,
-        "derniereVerification": "2026-05",
-        "badge": "HALAL DÉCLARÉ"
-      },
-      "categorie": "Luxe",
-      "score": 4.9,
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Sultanahmet+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
-      "nombreAvis": 1858,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h2",
-      "nom": "Gezi Hotel Bosphorus",
-      "type": "Hôtel",
-      "adresse": "Mete Cad. No:34, Taksim",
-      "etoiles": 5,
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "piscine_privee": false,
-      "note": 4.7,
-      "avis_count": 850,
-      "prix_nuit_min": 180,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 850,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "GIMDES"
-      },
-      "categorie": "Luxe",
-      "score": 4.7,
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Gezi+Hotel+Bosphorus+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
-      "nombreAvis": 1728,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "id": "h3",
-      "nom": "Erboy Hotel",
-      "type": "Hôtel",
-      "adresse": "Ebussuud Cad. No:21, Sirkeci",
-      "etoiles": 4,
-      "halal_certifie": true,
-      "sans_alcool": true,
-      "piscine_privee": false,
-      "note": 4.5,
-      "avis_count": 1200,
-      "prix_nuit_min": 80,
-      "devise": "EUR",
-      "halalScore": {
-        "global": 10.0,
-        "sourceViande": 5,
-        "certifie": true,
-        "sansAlcool": true,
-        "proprietaireMusulman": true,
-        "avisMusulmans": 1200,
-        "derniereVerification": "2026-05",
-        "badge": "CERTIFIÉ EXCELLENCE",
-        "organisationCertification": "GIMDES"
-      },
-      "categorie": "Standard",
-      "score": 4.5,
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "priceRange": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Erboy+Hotel+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
-      "nombreAvis": 1239,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Dersaadet Hotel Istanbul",
-      "categorie": "Riad & Boutique",
-      "score": 4.7,
-      "adresse": "Sultanahmet",
-      "description": "Maison ottomane du XIXe, sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Dersaadet+Hotel+Istanbul+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
-      "priceRange": "€€",
-      "id": "h4",
-      "nombreAvis": 1869,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Sirkeci Mansion",
-      "categorie": "Standard",
-      "score": 4.7,
-      "adresse": "Sirkeci",
-      "description": "Hôtel familial proche de Topkapı, halal breakfast.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Sirkeci+Mansion+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
-      "priceRange": "€€",
-      "id": "h5",
-      "nombreAvis": 1550,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Hotel Amira Istanbul",
-      "categorie": "Standard",
-      "score": 4.8,
-      "adresse": "Sultanahmet",
-      "description": "Boutique-hôtel chaleureux, terrasse vue mer.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Amira+Istanbul+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=Istanbul",
-      "priceRange": "€€",
-      "id": "h6",
-      "nombreAvis": 1243,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Istanbul",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Istanbul",
-      "description": "Hébergement halal-friendly à Istanbul.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Istanbul+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
-      "priceRange": "€€€€",
-      "nombreAvis": 1641,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Istanbul",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Istanbul",
-      "description": "Hébergement halal-friendly à Istanbul.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Istanbul+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
-      "priceRange": "€€€",
-      "nombreAvis": 1111,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Istanbul",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Istanbul",
-      "description": "Hébergement halal-friendly à Istanbul.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Istanbul+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
-      "priceRange": "€€€",
-      "nombreAvis": 2291,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Istanbul",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Istanbul",
-      "description": "Hébergement halal-friendly à Istanbul.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Istanbul+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
-      "priceRange": "€€",
-      "nombreAvis": 1449,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Seaside Resort Istanbul",
-      "categorie": "Resort & Spa",
-      "score": 4.5,
-      "adresse": "Istanbul",
-      "description": "Hébergement halal-friendly à Istanbul.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Seaside+Resort+Istanbul+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
-      "priceRange": "€€€€",
-      "nombreAvis": 1353,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "piscine-non-mixte",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "spa-femmes",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Family Suites Istanbul",
-      "categorie": "Appartement",
-      "score": 4.1,
-      "adresse": "Istanbul",
-      "description": "Hébergement halal-friendly à Istanbul.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Family+Suites+Istanbul+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
-      "priceRange": "€€",
-      "nombreAvis": 2376,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "cuisine-equipee",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Grand Plaza Istanbul 6",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Istanbul",
-      "description": "Hébergement halal-friendly à Istanbul.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Istanbul+6+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
-      "priceRange": "€€€€",
-      "nombreAvis": 1466,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "City Comfort Istanbul 7",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Istanbul",
-      "description": "Hébergement halal-friendly à Istanbul.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Istanbul+7+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
-      "priceRange": "€€€",
-      "nombreAvis": 1353,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Boutique Dar Istanbul 8",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Istanbul",
-      "description": "Hébergement halal-friendly à Istanbul.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Istanbul+8+Istanbul",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Istanbul&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=istanbul",
-      "priceRange": "€€€",
-      "nombreAvis": 1523,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Bleue et Sainte-Sophie",
-      "type": "Spirituel & Culture",
-      "description": "Les deux monuments emblématiques d'Istanbul. Prière dans la Mosquée Bleue, puis visite de Sainte-Sophie.",
-      "duree": "2–3h",
-      "prix": "Gratuit",
-      "tags": [
-        "spirituel",
-        "architecture",
-        "incontournable"
-      ],
-      "categorie": "Religieux & Spirituel",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bleue+et+Sainte-Sophie+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Bleue+et+Sainte-Sophie+Istanbul",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Croisière sur le Bosphore",
-      "type": "Nature & Découverte",
-      "description": "Vue unique sur Istanbul depuis l'eau. Passage entre Europe et Asie.",
-      "duree": "2–3h",
-      "prix": "À partir de 15€",
-      "tags": [
-        "vue",
-        "détente",
-        "famille"
-      ],
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Croisi%C3%A8re+sur+le+Bosphore+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Croisi%C3%A8re+sur+le+Bosphore+Istanbul",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Grand Bazar",
-      "type": "Shopping & Culture",
-      "description": "4 000 boutiques sur 60 rues couvertes — l'un des plus grands marchés couverts du monde.",
-      "duree": "2–4h",
-      "prix": "Gratuit",
-      "tags": [
-        "shopping",
-        "culture"
-      ],
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Grand+Bazar+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+Bazar+Istanbul",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Palais de Topkapi",
-      "type": "Histoire",
-      "description": "Résidence des sultans ottomans pendant 400 ans. Reliques islamiques dont la barbe du Prophète ﷺ.",
-      "duree": "3–4h",
-      "prix": "25€",
-      "tags": [
-        "histoire",
-        "reliques islamiques"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Palais+de+Topkapi+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+de+Topkapi+Istanbul",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Bleue Sultanahmet",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée aux 6 minarets, ouverte aux visiteurs hors prière.",
-      "duree": "45 min",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bleue+Sultanahmet+Istanbul",
-      "id": "a5",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Bleue+Sultanahmet+Istanbul",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Sainte-Sophie",
-      "categorie": "Religieux & Spirituel",
-      "description": "Ancienne basilique redevenue mosquée en 2020.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Sainte-Sophie+Istanbul",
-      "id": "a6",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Sainte-Sophie+Istanbul",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Palais de Topkapı",
-      "categorie": "Histoire & Culture",
-      "description": "Résidence des sultans, reliques sacrées de l'Islam.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Palais+de+Topkap%C4%B1+Istanbul",
-      "id": "a7",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+de+Topkap%C4%B1+Istanbul",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Süleymaniye",
-      "categorie": "Religieux & Spirituel",
-      "description": "Chef-d'œuvre de Sinan, vue sur la Corne d'Or.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+S%C3%BCleymaniye+Istanbul",
-      "id": "a8",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+S%C3%BCleymaniye+Istanbul",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Citerne Basilique",
-      "categorie": "Histoire & Culture",
-      "description": "Citerne byzantine souterraine spectaculaire.",
-      "duree": "45 min",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Citerne+Basilique+Istanbul",
-      "id": "a9",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Citerne+Basilique+Istanbul",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Istanbul",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Istanbul+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Istanbul+Istanbul",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Grand marché central de Istanbul",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Istanbul+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Istanbul+Istanbul",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Istanbul",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Istanbul+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Istanbul+Istanbul",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Musée de la ville de Istanbul",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Istanbul+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Istanbul+Istanbul",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Food tour halal de Istanbul",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Istanbul+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Istanbul+Istanbul",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Hammam traditionnel de Istanbul",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Istanbul+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Istanbul+Istanbul",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Mosquée historique de Istanbul",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Istanbul+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Istanbul+Istanbul",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Parc et jardins de Istanbul",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Istanbul+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Istanbul+Istanbul",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Istanbul",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Istanbul+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Istanbul+Istanbul",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Istanbul",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Istanbul+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Istanbul+Istanbul",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Quartier historique de Istanbul 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Istanbul+10+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Istanbul+10+Istanbul",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Grand marché central de Istanbul 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Istanbul+11+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Istanbul+11+Istanbul",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Istanbul 12",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Istanbul+12+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Istanbul+12+Istanbul",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Musée de la ville de Istanbul 13",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Istanbul+13+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Istanbul+13+Istanbul",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Food tour halal de Istanbul 14",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Istanbul+14+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Istanbul+14+Istanbul",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Hammam traditionnel de Istanbul 15",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Istanbul+15+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Istanbul+15+Istanbul",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Mosquée historique de Istanbul 16",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Istanbul+16+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Istanbul+16+Istanbul",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Parc et jardins de Istanbul 17",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Istanbul+17+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Istanbul+17+Istanbul",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Istanbul 18",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Istanbul+18+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Istanbul+18+Istanbul",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Istanbul 19",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Istanbul+19+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Istanbul+19+Istanbul",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Quartier historique de Istanbul 20",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Istanbul+20+Istanbul",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Istanbul+20+Istanbul",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "road_trips": [
-    {
-      "id": "rt1",
-      "titre": "Istanbul → Cappadoce — 4 jours",
-      "duree": "4 jours",
-      "distance_km": 730,
-      "etapes": [
-        "Istanbul",
-        "Ankara",
-        "Göreme",
-        "Ürügünç"
-      ],
-      "description": "De la métropole ottomane aux paysages lunaires de Cappadoce.",
-      "conseils_halal": "Tous les restaurants de Cappadoce servent du halal.",
-      "budget_estime": "350–600€/personne"
-    },
-    {
-      "id": "rt2",
-      "titre": "Istanbul → Bursa — Week-end",
-      "duree": "2 jours",
-      "distance_km": 155,
-      "etapes": [
-        "Istanbul",
-        "Bursa"
-      ],
-      "description": "Ancienne capitale ottomane, Mosquée Verte, Grand Marché historique.",
-      "conseils_halal": "Bursa est 99% halal.",
-      "budget_estime": "100–200€/personne"
-    }
-  ],
-  "voyages_par_type": {
-    "en_couple": {
-      "intro": "Istanbul est romantique par essence : couchers de soleil sur le Bosphore, dîners ottomans historiques, hammams traditionnels.",
-      "top_experiences": [
-        "Dîner avec vue sur le Bosphore",
-        "Croisière au coucher du soleil",
-        "Hammam ottoman",
-        "Escapade îles des Princes"
-      ],
-      "conseils": "Réservez un hôtel avec vue Bosphore.",
-      "hotels_recommandes": [
-        "Four Seasons Sultanahmet",
-        "Gezi Hotel Bosphorus"
-      ]
-    },
-    "en_famille": {
-      "intro": "Istanbul est très familiale : mosquées accueillantes, nourriture accessible et activités nombreuses.",
-      "top_experiences": [
-        "Topkapi et son trésor",
-        "Croisière Bosphore",
-        "Grand Bazar",
-        "Aquarium Istanbul"
-      ],
-      "conseils": "Privilégiez les hôtels de Sultanahmet.",
-      "hotels_recommandes": [
-        "Erboy Hotel"
-      ]
-    },
-    "entre_amis": {
-      "intro": "Culture ottomane, gastronomie, shopping et vie nocturne halal dans les cafés de Beyŏlu.",
-      "top_experiences": [
-        "Nuit de hammam",
-        "Tour gastronomique",
-        "Shopping Grand Bazar",
-        "Café çay traditionnel"
-      ],
-      "conseils": "Karaкöy et Beyŏlu pour les cafés branchés halal.",
-      "hotels_recommandes": [
-        "Erboy Hotel"
-      ]
-    },
-    "voyage_solo": {
-      "intro": "Istanbul est facile à explorer en solo : Turcs accueillants, transports simples.",
-      "top_experiences": [
-        "Sultanahmet autonome",
-        "Cours de cuisine turque",
-        "Balade Galata"
-      ],
-      "conseils": "L'Istanbulkart couvre métro, tramway, ferry et bus.",
-      "hotels_recommandes": [
-        "Erboy Hotel"
-      ]
-    },
-    "voyage_spirituel": {
-      "intro": "Istanbul est une capitale islamique millénaire. Sainte-Sophie, Mosquée Bleue, Topkapi avec les reliques du Prophète.",
-      "top_experiences": [
-        "Prière à Sainte-Sophie",
-        "Reliques prophiétiques à Topkapi",
-        "Vendredi à Süleymaniye"
-      ],
-      "conseils": "Venez un vendredi pour la Jumu'ah à Süleymaniye.",
-      "hotels_recommandes": [
-        "Gezi Hotel Bosphorus"
-      ]
-    }
+  {
+   "nom": "Mosquée Al-Salam de Istanbul",
+   "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Istanbul",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Istanbul+Istanbul",
+   "capacite": 3763,
+   "anneeConstruction": 1923,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0082,
+    "lng": 28.9784
+   }
   },
-  "articles_lies": [],
-  "villes_proches": [
-    "ankara",
-    "bursa",
-    "izmir",
-    "antalya"
-  ],
-  "codeISO": "TR",
-  "image": "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=1600&q=80",
-  "continent": "Asie",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Istanbul — Halal Trust Score 5/5.",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Istanbul",
-      "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Istanbul",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Istanbul+Istanbul",
-      "capacite": 2345,
-      "anneeConstruction": 1925,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Istanbul",
-      "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Istanbul",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Istanbul+Istanbul",
-      "capacite": 2355,
-      "anneeConstruction": 1995,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Istanbul",
-      "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Istanbul",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Istanbul+Istanbul",
-      "capacite": 2323,
-      "anneeConstruction": 1943,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Istanbul",
-      "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Istanbul",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Istanbul+Istanbul",
-      "capacite": 3763,
-      "anneeConstruction": 1923,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Istanbul",
-      "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Istanbul",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Istanbul+Istanbul",
-      "capacite": 3482,
-      "anneeConstruction": 2002,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Istanbul",
-      "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Istanbul",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Istanbul+Istanbul",
-      "capacite": 5592,
-      "anneeConstruction": 1892,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Istanbul",
-      "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Istanbul",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Istanbul+Istanbul",
-      "capacite": 4623,
-      "anneeConstruction": 1903,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    },
-    {
-      "nom": "Mosquée historique de Istanbul",
-      "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Istanbul",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Istanbul+Istanbul",
-      "capacite": 3717,
-      "anneeConstruction": 1957,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    },
-    {
-      "nom": "Mosquée du vendredi de Istanbul",
-      "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Istanbul",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Istanbul+Istanbul",
-      "capacite": 5385,
-      "anneeConstruction": 1905,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    },
-    {
-      "nom": "Mosquée Al-Hidaya de Istanbul",
-      "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Istanbul",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Istanbul+Istanbul",
-      "capacite": 1597,
-      "anneeConstruction": 1957,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Mikla",
-      "Turk Fatih Tutak",
-      "Karaköy Güllüoğlu",
-      "Nicole Restaurant",
-      "Neolokal"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Tarihi Sultanahmet Köftecisi",
-      "Dürümzade",
-      "Güneyliler",
-      "Zübeyir Ocakbaşı",
-      "Hafız Mustafa 1864"
-    ],
-    "incontournables": [
-      "Anadolu Sofrası Istanbul 10",
-      "Balıkçı Sabahattin",
-      "Neolokal",
-      "Mikla",
-      "Karaкöy Güllüoğlu"
-    ],
-    "pepitesCachees": [
-      "Tarihi Sultanahmet Köftecisi",
-      "Çiya Sofrası",
-      "Dürüm Express"
-    ],
-    "idealFamille": [
-      "Tarihi Sultanahmet Köftecisi",
-      "Konyalı Topkapı",
-      "Balıkçı Sabahattin",
-      "Giritli",
-      "Sur Balık"
-    ],
-    "gastronomique": [
-      "Mikla",
-      "Nicole Restaurant",
-      "Neolokal",
-      "Turk Fatih Tutak",
-      "Pandeli"
-    ],
-    "ouvertNuit": [
-      "Tarihi Sultanahmet Köftecisi",
-      "Dürümzade",
-      "Beyti"
-    ],
-    "vueExceptionnelle": [
-      "Balıkçı Sabahattin",
-      "Giritli",
-      "Sur Balık"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Istanbul",
+   "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Istanbul",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Istanbul+Istanbul",
+   "capacite": 3482,
+   "anneeConstruction": 2002,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0082,
+    "lng": 28.9784
+   }
+  },
+  {
+   "nom": "Mosquée Al-Fath de Istanbul",
+   "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Istanbul",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Istanbul+Istanbul",
+   "capacite": 5592,
+   "anneeConstruction": 1892,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0082,
+    "lng": 28.9784
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Istanbul",
+   "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Istanbul",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Istanbul+Istanbul",
+   "capacite": 4623,
+   "anneeConstruction": 1903,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0082,
+    "lng": 28.9784
+   }
+  },
+  {
+   "nom": "Mosquée historique de Istanbul",
+   "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Istanbul",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Istanbul+Istanbul",
+   "capacite": 3717,
+   "anneeConstruction": 1957,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0082,
+    "lng": 28.9784
+   }
+  },
+  {
+   "nom": "Mosquée du vendredi de Istanbul",
+   "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Istanbul",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Istanbul+Istanbul",
+   "capacite": 5385,
+   "anneeConstruction": 1905,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0082,
+    "lng": 28.9784
+   }
+  },
+  {
+   "nom": "Mosquée Al-Hidaya de Istanbul",
+   "description": "Mosquée fréquentée de Istanbul, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Istanbul",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Istanbul+Istanbul",
+   "capacite": 1597,
+   "anneeConstruction": 1957,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 41.0082,
+    "lng": 28.9784
+   }
   }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Mikla",
+   "Turk Fatih Tutak",
+   "Karaköy Güllüoğlu",
+   "Nicole Restaurant",
+   "Neolokal"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Tarihi Sultanahmet Köftecisi",
+   "Dürümzade",
+   "Güneyliler",
+   "Zübeyir Ocakbaşı",
+   "Hafız Mustafa 1864"
+  ],
+  "incontournables": [
+   "Anadolu Sofrası Istanbul 10",
+   "Balıkçı Sabahattin",
+   "Neolokal",
+   "Mikla",
+   "Karaкöy Güllüoğlu"
+  ],
+  "pepitesCachees": [
+   "Tarihi Sultanahmet Köftecisi",
+   "Çiya Sofrası",
+   "Dürüm Express"
+  ],
+  "idealFamille": [
+   "Tarihi Sultanahmet Köftecisi",
+   "Konyalı Topkapı",
+   "Balıkçı Sabahattin",
+   "Giritli",
+   "Sur Balık"
+  ],
+  "gastronomique": [
+   "Mikla",
+   "Nicole Restaurant",
+   "Neolokal",
+   "Turk Fatih Tutak",
+   "Pandeli"
+  ],
+  "ouvertNuit": [
+   "Tarihi Sultanahmet Köftecisi",
+   "Dürümzade",
+   "Beyti"
+  ],
+  "vueExceptionnelle": [
+   "Balıkçı Sabahattin",
+   "Giritli",
+   "Sur Balık"
+  ]
+ }
 }

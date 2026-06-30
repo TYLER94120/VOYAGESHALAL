@@ -1,1738 +1,1761 @@
 {
-  "nom": "Ankara",
-  "pays": "Turquie",
-  "slug": "ankara",
-  "image": "https://images.unsplash.com/photo-1579886797203-ceb84da62310?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1579886797203-ceb84da62310?w=1600&q=80",
-  "description": "Ankara, capitale de la Turquie, offre une expérience authentique loin des foules. Le mausolée d'Atatürk et la cuisine anatolienne en font une étape sincère.",
-  "descriptionLongue": "Capitale politique choisie par Atatürk, Ankara cultive une identité turque profonde et moins touristique qu'Istanbul. L'imposant Anıtkabir, mausolée du fondateur de la République, domine la ville. La vieille citadelle (Hisar) et le musée des civilisations anatoliennes plongent dans des millénaires d'histoire. La cuisine de l'Anatolie centrale — döner, mantı, pâtisseries — y est savoureuse et abordable. Ville entièrement halal et chaleureuse.",
-  "halalScore": 8.8,
-  "score_halal": 4.4,
+ "nom": "Ankara",
+ "pays": "Turquie",
+ "slug": "ankara",
+ "image": "https://images.unsplash.com/photo-1579886797203-ceb84da62310?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1579886797203-ceb84da62310?w=1600&q=80",
+ "description": "Ankara, capitale de la Turquie, offre une expérience authentique loin des foules. Le mausolée d'Atatürk et la cuisine anatolienne en font une étape sincère.",
+ "descriptionLongue": "Capitale politique choisie par Atatürk, Ankara cultive une identité turque profonde et moins touristique qu'Istanbul. L'imposant Anıtkabir, mausolée du fondateur de la République, domine la ville. La vieille citadelle (Hisar) et le musée des civilisations anatoliennes plongent dans des millénaires d'histoire. La cuisine de l'Anatolie centrale — döner, mantı, pâtisseries — y est savoureuse et abordable. Ville entièrement halal et chaleureuse.",
+ "halalScore": 8.8,
+ "score_halal": 4.4,
+ "mosquees": 3000,
+ "population": "5,7 millions",
+ "langue": "Turc",
+ "monnaie": "Livre turque (TRY)",
+ "fuseau": "UTC+3",
+ "meilleureEpoque": "Avril à Juin, Sept à Oct",
+ "prixMoyenNuit": "70€",
+ "continent": "Asie",
+ "codeISO": "TR",
+ "pays_slug": "turquie",
+ "region": "Anatolie centrale",
+ "meta_title": "Voyage Halal à Ankara — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Ankara — Halal Trust Score 8.5/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Ankara — Halal Trust Score 8.5/10.",
+ "coordonnees": {
+  "lat": 39.9334,
+  "lng": 32.8597
+ },
+ "image_alt": "Vue de Ankara, Turquie",
+ "statistiques": {
   "mosquees": 3000,
-  "population": "5,7 millions",
+  "restaurants_halal": 800,
+  "habitants_musulmans_pct": 99,
+  "hotels": 12
+ },
+ "infos_pratiques": {
   "langue": "Turc",
   "monnaie": "Livre turque (TRY)",
-  "fuseau": "UTC+3",
-  "meilleureEpoque": "Avril à Juin, Sept à Oct",
-  "prixMoyenNuit": "70€",
-  "continent": "Asie",
-  "codeISO": "TR",
-  "pays_slug": "turquie",
-  "region": "Anatolie centrale",
-  "meta_title": "Voyage Halal à Ankara — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Ankara — Halal Trust Score 8.5/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Ankara — Halal Trust Score 8.5/10.",
-  "coordonnees": {
+  "meilleure_periode": "Avril à Juin, Sept à Oct",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible mais discret",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "e-Visa turc en ligne ou exemption selon nationalité",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Métro, Ankaray, bus, taxis",
+  "priseElectrique": "Type C/F — 230V",
+  "decalageHoraire": "+2h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Zenger Paşa Konağı",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Ottoman historique, maison 18e siècle à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Zenger+Pa%C5%9Fa+Kona%C4%9F%C4%B1+Ankara",
+   "priceRange": "€€",
+   "specialite": "Ottoman historique",
+   "nombreAvis": 399,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Kalbur Lokantası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Ankara traditionnel, institution à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Kalbur+Lokantas%C4%B1+Ankara",
+   "priceRange": "€€",
+   "specialite": "Ankara traditionnel",
+   "nombreAvis": 338,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Hacı Arif Bey",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Ankara",
+   "description": "Köfte d'Ankara légendaire à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Hac%C4%B1+Arif+Bey+Ankara",
+   "priceRange": "€€",
+   "specialite": "Köfte d'ankara légendaire",
+   "nombreAvis": 1687,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Trilye Ankara",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Ankara",
+   "description": "Poissons et fruits de mer à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Trilye+Ankara+Ankara",
+   "priceRange": "€€",
+   "specialite": "Poissons et fruits de mer",
+   "nombreAvis": 859,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Mücver",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Ankara",
+   "description": "Végétarien turc moderne à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=M%C3%BCcver+Ankara",
+   "priceRange": "€€",
+   "specialite": "Végétarien turc moderne",
+   "nombreAvis": 1246,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Ankara Palas Restoran",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Ankara",
+   "description": "Classique depuis 1924 à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Ankara+Palas+Restoran+Ankara",
+   "priceRange": "€€",
+   "specialite": "Classique depuis 1924",
+   "nombreAvis": 1094,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Uludağ Kebapçısı",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Ankara",
+   "description": "Kebab ankarien à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Uluda%C4%9F+Kebap%C3%A7%C4%B1s%C4%B1+Ankara",
+   "priceRange": "€€",
+   "specialite": "Kebab ankarien",
+   "nombreAvis": 691,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Develi Ankara",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Ankara",
+   "description": "Gaziantep kebab chain premium à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Develi+Ankara+Ankara",
+   "priceRange": "€€€€",
+   "specialite": "Gaziantep kebab chain premium",
+   "nombreAvis": 802,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "İmren Lokantası",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Ankara",
+   "description": "Turc familial traditionnel à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=%C4%B0mren+Lokantas%C4%B1+Ankara",
+   "priceRange": "€€",
+   "specialite": "Turc familial traditionnel",
+   "nombreAvis": 1699,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Köşk Fasıl",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Ankara",
+   "description": "Divertissement et cuisine à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=K%C3%B6%C5%9Fk+Fas%C4%B1l+Ankara",
+   "priceRange": "€€",
+   "specialite": "Divertissement et cuisine",
+   "nombreAvis": 1033,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Günaydın Ankara",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Steakhouse turc halal à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=G%C3%BCnayd%C4%B1n+Ankara+Ankara",
+   "priceRange": "€€",
+   "specialite": "Steakhouse turc halal",
+   "nombreAvis": 1005,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Nusr-Et Ankara",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Salt Bae halal à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Nusr-Et+Ankara+Ankara",
+   "priceRange": "€€",
+   "specialite": "Salt bae halal",
+   "nombreAvis": 1402,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Sur Balık",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Ankara",
+   "description": "Poissons du lac Eymir à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Sur+Bal%C4%B1k+Ankara",
+   "priceRange": "€€",
+   "specialite": "Poissons du lac eymir",
+   "nombreAvis": 960,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Cevizlibağ Et Mangal",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Ankara",
+   "description": "Grillades classiques à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Cevizliba%C4%9F+Et+Mangal+Ankara",
+   "priceRange": "€€",
+   "specialite": "Grillades classiques",
+   "nombreAvis": 57,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Neyzen Terrace",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Vue citadelle d'Ankara à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Neyzen+Terrace+Ankara",
+   "priceRange": "€€€€",
+   "specialite": "Vue citadelle d'ankara",
+   "nombreAvis": 1917,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Yeni Lokanta Ankara",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Ankara",
+   "description": "Anatolien moderne à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Yeni+Lokanta+Ankara+Ankara",
+   "priceRange": "€€",
+   "specialite": "Anatolien moderne",
+   "nombreAvis": 630,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Kazan Dibi",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Ankara",
+   "description": "Desserts ottomans à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Kazan+Dibi+Ankara",
+   "priceRange": "€€",
+   "specialite": "Desserts ottomans",
+   "nombreAvis": 49,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Leman Kültür",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Ankara",
+   "description": "Café culturel turc à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Leman+K%C3%BClt%C3%BCr+Ankara",
+   "priceRange": "€€",
+   "specialite": "Café culturel turc",
+   "nombreAvis": 870,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Kafkasya",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Géorgien et caucasien halal à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Kafkasya+Ankara",
+   "priceRange": "€€",
+   "specialite": "Géorgien et caucasien halal",
+   "nombreAvis": 2344,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Azerbaijani House Ankara",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Ankara",
+   "description": "Azerbaïdjanais halal à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Azerbaijani+House+Ankara+Ankara",
+   "priceRange": "€€",
+   "specialite": "Azerbaïdjanais halal",
+   "nombreAvis": 2196,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Pakistan Restoran Ankara",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Pakistanais halal à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Pakistan+Restoran+Ankara+Ankara",
+   "priceRange": "€€",
+   "specialite": "Pakistanais halal",
+   "nombreAvis": 2304,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Indian Corner Ankara",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Ankara",
+   "description": "Indien halal à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Indian+Corner+Ankara+Ankara",
+   "priceRange": "€",
+   "specialite": "Indien halal",
+   "nombreAvis": 2026,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Çin Restoran Ankara",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Ankara",
+   "description": "Chinois halal à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=%C3%87in+Restoran+Ankara+Ankara",
+   "priceRange": "€€",
+   "specialite": "Chinois halal",
+   "nombreAvis": 2076,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Yaprak Döner",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Ankara",
+   "description": "Döner premium Ankara à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Yaprak+D%C3%B6ner+Ankara",
+   "priceRange": "€€€€",
+   "specialite": "Döner premium ankara",
+   "nombreAvis": 891,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Çorbacı Hüseyin",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Ankara",
+   "description": "Soupe turque et bouillons à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=%C3%87orbac%C4%B1+H%C3%BCseyin+Ankara",
+   "priceRange": "€€",
+   "specialite": "Soupe turque et bouillons",
+   "nombreAvis": 1302,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Pide Kaleci",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Ankara",
+   "description": "Pide anatolien à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Pide+Kaleci+Ankara",
+   "priceRange": "€€",
+   "specialite": "Pide anatolien",
+   "nombreAvis": 2461,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Lahmacun Ustası",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Ankara",
+   "description": "Lahmacun Urfa style à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Lahmacun+Ustas%C4%B1+Ankara",
+   "priceRange": "€€",
+   "specialite": "Lahmacun urfa style",
+   "nombreAvis": 498,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Gülhane Kebap",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Ankara",
+   "description": "Kebap garden à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=G%C3%BClhane+Kebap+Ankara",
+   "priceRange": "€€",
+   "specialite": "Kebap garden",
+   "nombreAvis": 539,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Atakule Café-Restaurant",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Vue panoramique tour à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Atakule+Caf%C3%A9-Restaurant+Ankara",
+   "priceRange": "€€",
+   "specialite": "Vue panoramique tour",
+   "nombreAvis": 1239,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Hacı Musa",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Ankara",
+   "description": "Ankara uykuluk à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Hac%C4%B1+Musa+Ankara",
+   "priceRange": "€€",
+   "specialite": "Ankara uykuluk",
+   "nombreAvis": 617,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Altındağ Köftecisi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Ankara",
+   "description": "Köfte quartier historique à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Alt%C4%B1nda%C4%9F+K%C3%B6ftecisi+Ankara",
+   "priceRange": "€€",
+   "specialite": "Köfte quartier historique",
+   "nombreAvis": 2187,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Çubuk Turşu ve Döner",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Ankara",
+   "description": "Specialité turşu à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=%C3%87ubuk+Tur%C5%9Fu+ve+D%C3%B6ner+Ankara",
+   "priceRange": "€€",
+   "specialite": "Specialité turşu",
+   "nombreAvis": 145,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Bursa İskenderci",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Ankara",
+   "description": "İskender kebap original à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Bursa+%C4%B0skenderci+Ankara",
+   "priceRange": "€€",
+   "specialite": "İskender kebap original",
+   "nombreAvis": 1179,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Karadeniz Pide Salonu",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Ankara",
+   "description": "Pide mer Noire à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Karadeniz+Pide+Salonu+Ankara",
+   "priceRange": "€€",
+   "specialite": "Pide mer noire",
+   "nombreAvis": 1395,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Fırın Kebap Ustası",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Ankara",
+   "description": "Fırın kebap fournil à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=F%C4%B1r%C4%B1n+Kebap+Ustas%C4%B1+Ankara",
+   "priceRange": "€€",
+   "specialite": "Fırın kebap fournil",
+   "nombreAvis": 1417,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Mevlana Sofra",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Ankara",
+   "description": "Konya-anatolien à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Mevlana+Sofra+Ankara",
+   "priceRange": "€€",
+   "specialite": "Konya-anatolien",
+   "nombreAvis": 430,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Boğaziçi Restoran Ankara",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Ankara",
+   "description": "Vue bosphore style à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Bo%C4%9Fazi%C3%A7i+Restoran+Ankara+Ankara",
+   "priceRange": "€€€€",
+   "specialite": "Vue bosphore style",
+   "nombreAvis": 1251,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Sheraton Ankara Resta",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Ankara",
+   "description": "Gastronomique hotel à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Sheraton+Ankara+Resta+Ankara",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique hotel",
+   "nombreAvis": 1050,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Hilton Ankara Brasserie",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "International halal à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=Hilton+Ankara+Brasserie+Ankara",
+   "priceRange": "€€€€",
+   "specialite": "International halal",
+   "nombreAvis": 1086,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "JW Marriott Ankara Dining",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Ankara",
+   "description": "Gastronomique à Ankara.",
+   "mapsUrl": "https://maps.google.com/?q=JW+Marriott+Ankara+Dining+Ankara",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique",
+   "nombreAvis": 2284,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r40"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "JW Marriott Ankara",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Luxe à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=JW+Marriott+Ankara+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€€€",
+   "nombreAvis": 976,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h1",
+   "lat": 39.9096118,
+   "lng": 32.806565
+  },
+  {
+   "nom": "Sheraton Ankara",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Ankara",
+   "description": "Luxe à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Sheraton+Ankara+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€€€",
+   "nombreAvis": 2141,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h2",
+   "lat": 39.9002991,
+   "lng": 32.8647062
+  },
+  {
+   "nom": "Hilton Ankara",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Ankara",
+   "description": "Luxe à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hilton+Ankara+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€€€",
+   "nombreAvis": 684,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": 39.9016807,
+   "lng": 32.8643652
+  },
+  {
+   "nom": "Crowne Plaza Ankara",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Standard-luxe à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Crowne+Plaza+Ankara+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€€€",
+   "nombreAvis": 1152,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4",
+   "lat": 39.9467747,
+   "lng": 32.7681077
+  },
+  {
+   "nom": "Swissôtel Ankara",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Ankara",
+   "description": "Luxe à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Swiss%C3%B4tel+Ankara+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€€€",
+   "nombreAvis": 1117,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5"
+  },
+  {
+   "nom": "Divan Ankara",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Ankara",
+   "description": "Luxe turc à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Divan+Ankara+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€€€",
+   "nombreAvis": 1255,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": 39.9374151,
+   "lng": 32.8633773
+  },
+  {
+   "nom": "Radisson Blu Ankara",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Ankara",
+   "description": "Standard à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Ankara+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€€",
+   "nombreAvis": 1187,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 39.9397637,
+   "lng": 32.8515134
+  },
+  {
+   "nom": "Movenpick Ankara",
+   "categorie": "Standard",
+   "score": 4.8,
+   "adresse": "Ankara",
+   "description": "Standard à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Movenpick+Ankara+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€€",
+   "nombreAvis": 1515,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": 39.9118191,
+   "lng": 32.8081677
+  },
+  {
+   "nom": "Best Western Ankara",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Ankara",
+   "description": "Standard à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Best+Western+Ankara+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€€",
+   "nombreAvis": 1468,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9",
+   "lat": 39.9096068,
+   "lng": 32.85907
+  },
+  {
+   "nom": "Dedeman Ankara",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Ankara",
+   "description": "Standard à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Dedeman+Ankara+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€€",
+   "nombreAvis": 1619,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10",
+   "lat": 39.8960929,
+   "lng": 32.8403852
+  },
+  {
+   "nom": "Büyük Ankara Oteli",
+   "categorie": "Budget",
+   "score": 4.3,
+   "adresse": "Ankara",
+   "description": "Classique budget à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=B%C3%BCy%C3%BCk+Ankara+Oteli+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€",
+   "nombreAvis": 1326,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h11",
+   "lat": 39.9118584,
+   "lng": 32.8555323
+  },
+  {
+   "nom": "Hotel Mithat",
+   "categorie": "Budget",
+   "score": 4.7,
+   "adresse": "Ankara",
+   "description": "Budget à Ankara.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Mithat+Ankara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
+   "priceRange": "€€",
+   "nombreAvis": 535,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12",
+   "lat": 39.9361687,
+   "lng": 32.856425
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Anıtkabir (Mausolée d'Atatürk)",
+   "categorie": "Histoire & Culture",
+   "description": "Mémorial monumental du fondateur de la Turquie, musée et esplanade.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=An%C4%B1tkabir+%28Mausol%C3%A9e+d%27Atat%C3%BCrk%29+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=An%C4%B1tkabir+%28Mausol%C3%A9e+d%27Atat%C3%BCrk%29+Ankara",
+   "id": "a1",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Citadelle d'Ankara (Hisar)",
+   "categorie": "Histoire & Culture",
+   "description": "Forteresse ancienne aux ruelles ottomanes et vue panoramique.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Citadelle+d%27Ankara+%28Hisar%29+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Citadelle+d%27Ankara+%28Hisar%29+Ankara",
+   "id": "a2",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée des civilisations anatoliennes",
+   "categorie": "Art & Musées",
+   "description": "Collection mondiale d'archéologie, des Hittites aux Phrygiens.",
+   "duree": "2-3h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+des+civilisations+anatoliennes+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+des+civilisations+anatoliennes+Ankara",
+   "id": "a3",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Kocatepe",
+   "categorie": "Religieux & Spirituel",
+   "description": "Plus grande mosquée d'Ankara, style ottoman classique.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Kocatepe+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Kocatepe+Ankara",
+   "id": "a4",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier de Hamamönü",
+   "categorie": "Shopping & Souks",
+   "description": "Ruelles restaurées, maisons ottomanes et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+de+Hamam%C3%B6n%C3%BC+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Hamam%C3%B6n%C3%BC+Ankara",
+   "id": "a5",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Parc Gençlik",
+   "categorie": "Nature & Aventure",
+   "description": "Grand parc central avec lac, détente en famille.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+Gen%C3%A7lik+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+Gen%C3%A7lik+Ankara",
+   "id": "a6",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Hacı Bayram",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée vénérée à côté du temple d'Auguste, lieu spirituel.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Hac%C4%B1+Bayram+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Hac%C4%B1+Bayram+Ankara",
+   "id": "a7",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "CerModern",
+   "categorie": "Art & Musées",
+   "description": "Centre d'art contemporain dans une ancienne gare.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=CerModern+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=CerModern+Ankara",
+   "id": "a8",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Ankara",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Ankara+Ankara",
+   "id": "a9",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Ankara",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Ankara+Ankara",
+   "id": "a10",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Ankara",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Ankara+Ankara",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Ankara",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Ankara+Ankara",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Ankara",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Ankara+Ankara",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Ankara",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Ankara+Ankara",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Ankara",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Ankara+Ankara",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Ankara",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Ankara+Ankara",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Ankara",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Ankara+Ankara",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Ankara",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Ankara+Ankara",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Ankara",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Ankara+Ankara",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Ankara",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Ankara+Ankara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Ankara+Ankara",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Kocatepe",
+   "description": "Plus grande mosquée d'Ankara (24 000 fidèles), quatre minarets.",
+   "adresse": "Kocatepe, Ankara",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Kocatepe+Ankara",
+   "capacite": 9803,
+   "anneeConstruction": 1983,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 39.9334,
     "lng": 32.8597
+   }
   },
-  "image_alt": "Vue de Ankara, Turquie",
-  "statistiques": {
-    "mosquees": 3000,
-    "restaurants_halal": 800,
-    "habitants_musulmans_pct": 99
+  {
+   "nom": "Mosquée Hacı Bayram",
+   "description": "Mosquée historique très vénérée, cœur spirituel de la vieille ville.",
+   "adresse": "Ulus, Ankara",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Hac%C4%B1+Bayram+Ankara",
+   "capacite": 5815,
+   "anneeConstruction": 1905,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 39.9334,
+    "lng": 32.8597
+   }
   },
-  "infos_pratiques": {
-    "langue": "Turc",
-    "monnaie": "Livre turque (TRY)",
-    "meilleure_periode": "Avril à Juin, Sept à Oct",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible mais discret",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Ankara",
+   "description": "Mosquée fréquentée de Ankara, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Ankara",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Ankara+Ankara",
+   "capacite": 5652,
+   "anneeConstruction": 1932,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 39.9334,
+    "lng": 32.8597
+   }
   },
-  "infoPratique": {
-    "visa": "e-Visa turc en ligne ou exemption selon nationalité",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Métro, Ankaray, bus, taxis",
-    "priseElectrique": "Type C/F — 230V",
-    "decalageHoraire": "+2h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Ankara",
+   "description": "Mosquée fréquentée de Ankara, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Ankara",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Ankara+Ankara",
+   "capacite": 6632,
+   "anneeConstruction": 1892,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 39.9334,
+    "lng": 32.8597
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Zenger Paşa Konağı",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Ottoman historique, maison 18e siècle à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Zenger+Pa%C5%9Fa+Kona%C4%9F%C4%B1+Ankara",
-      "priceRange": "€€",
-      "specialite": "Ottoman historique",
-      "nombreAvis": 399,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Kalbur Lokantası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Ankara traditionnel, institution à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Kalbur+Lokantas%C4%B1+Ankara",
-      "priceRange": "€€",
-      "specialite": "Ankara traditionnel",
-      "nombreAvis": 338,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Hacı Arif Bey",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Ankara",
-      "description": "Köfte d'Ankara légendaire à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Hac%C4%B1+Arif+Bey+Ankara",
-      "priceRange": "€€",
-      "specialite": "Köfte d'ankara légendaire",
-      "nombreAvis": 1687,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Trilye Ankara",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Ankara",
-      "description": "Poissons et fruits de mer à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Trilye+Ankara+Ankara",
-      "priceRange": "€€",
-      "specialite": "Poissons et fruits de mer",
-      "nombreAvis": 859,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Mücver",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Ankara",
-      "description": "Végétarien turc moderne à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%BCcver+Ankara",
-      "priceRange": "€€",
-      "specialite": "Végétarien turc moderne",
-      "nombreAvis": 1246,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Ankara Palas Restoran",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Ankara",
-      "description": "Classique depuis 1924 à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Ankara+Palas+Restoran+Ankara",
-      "priceRange": "€€",
-      "specialite": "Classique depuis 1924",
-      "nombreAvis": 1094,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Uludağ Kebapçısı",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Ankara",
-      "description": "Kebab ankarien à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Uluda%C4%9F+Kebap%C3%A7%C4%B1s%C4%B1+Ankara",
-      "priceRange": "€€",
-      "specialite": "Kebab ankarien",
-      "nombreAvis": 691,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Develi Ankara",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Ankara",
-      "description": "Gaziantep kebab chain premium à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Develi+Ankara+Ankara",
-      "priceRange": "€€€€",
-      "specialite": "Gaziantep kebab chain premium",
-      "nombreAvis": 802,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "İmren Lokantası",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Ankara",
-      "description": "Turc familial traditionnel à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=%C4%B0mren+Lokantas%C4%B1+Ankara",
-      "priceRange": "€€",
-      "specialite": "Turc familial traditionnel",
-      "nombreAvis": 1699,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Köşk Fasıl",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Ankara",
-      "description": "Divertissement et cuisine à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=K%C3%B6%C5%9Fk+Fas%C4%B1l+Ankara",
-      "priceRange": "€€",
-      "specialite": "Divertissement et cuisine",
-      "nombreAvis": 1033,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Günaydın Ankara",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Steakhouse turc halal à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=G%C3%BCnayd%C4%B1n+Ankara+Ankara",
-      "priceRange": "€€",
-      "specialite": "Steakhouse turc halal",
-      "nombreAvis": 1005,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Nusr-Et Ankara",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Salt Bae halal à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Nusr-Et+Ankara+Ankara",
-      "priceRange": "€€",
-      "specialite": "Salt bae halal",
-      "nombreAvis": 1402,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Sur Balık",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Ankara",
-      "description": "Poissons du lac Eymir à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Sur+Bal%C4%B1k+Ankara",
-      "priceRange": "€€",
-      "specialite": "Poissons du lac eymir",
-      "nombreAvis": 960,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Cevizlibağ Et Mangal",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Ankara",
-      "description": "Grillades classiques à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Cevizliba%C4%9F+Et+Mangal+Ankara",
-      "priceRange": "€€",
-      "specialite": "Grillades classiques",
-      "nombreAvis": 57,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Neyzen Terrace",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Vue citadelle d'Ankara à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Neyzen+Terrace+Ankara",
-      "priceRange": "€€€€",
-      "specialite": "Vue citadelle d'ankara",
-      "nombreAvis": 1917,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Yeni Lokanta Ankara",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Ankara",
-      "description": "Anatolien moderne à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Yeni+Lokanta+Ankara+Ankara",
-      "priceRange": "€€",
-      "specialite": "Anatolien moderne",
-      "nombreAvis": 630,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Kazan Dibi",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Ankara",
-      "description": "Desserts ottomans à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Kazan+Dibi+Ankara",
-      "priceRange": "€€",
-      "specialite": "Desserts ottomans",
-      "nombreAvis": 49,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Leman Kültür",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Ankara",
-      "description": "Café culturel turc à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Leman+K%C3%BClt%C3%BCr+Ankara",
-      "priceRange": "€€",
-      "specialite": "Café culturel turc",
-      "nombreAvis": 870,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Kafkasya",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Géorgien et caucasien halal à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Kafkasya+Ankara",
-      "priceRange": "€€",
-      "specialite": "Géorgien et caucasien halal",
-      "nombreAvis": 2344,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Azerbaijani House Ankara",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Ankara",
-      "description": "Azerbaïdjanais halal à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Azerbaijani+House+Ankara+Ankara",
-      "priceRange": "€€",
-      "specialite": "Azerbaïdjanais halal",
-      "nombreAvis": 2196,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Pakistan Restoran Ankara",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Pakistanais halal à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Pakistan+Restoran+Ankara+Ankara",
-      "priceRange": "€€",
-      "specialite": "Pakistanais halal",
-      "nombreAvis": 2304,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Indian Corner Ankara",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Ankara",
-      "description": "Indien halal à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Indian+Corner+Ankara+Ankara",
-      "priceRange": "€",
-      "specialite": "Indien halal",
-      "nombreAvis": 2026,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Çin Restoran Ankara",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Ankara",
-      "description": "Chinois halal à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=%C3%87in+Restoran+Ankara+Ankara",
-      "priceRange": "€€",
-      "specialite": "Chinois halal",
-      "nombreAvis": 2076,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Yaprak Döner",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Ankara",
-      "description": "Döner premium Ankara à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Yaprak+D%C3%B6ner+Ankara",
-      "priceRange": "€€€€",
-      "specialite": "Döner premium ankara",
-      "nombreAvis": 891,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Çorbacı Hüseyin",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Ankara",
-      "description": "Soupe turque et bouillons à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=%C3%87orbac%C4%B1+H%C3%BCseyin+Ankara",
-      "priceRange": "€€",
-      "specialite": "Soupe turque et bouillons",
-      "nombreAvis": 1302,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Pide Kaleci",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Ankara",
-      "description": "Pide anatolien à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Pide+Kaleci+Ankara",
-      "priceRange": "€€",
-      "specialite": "Pide anatolien",
-      "nombreAvis": 2461,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Lahmacun Ustası",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Ankara",
-      "description": "Lahmacun Urfa style à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Lahmacun+Ustas%C4%B1+Ankara",
-      "priceRange": "€€",
-      "specialite": "Lahmacun urfa style",
-      "nombreAvis": 498,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Gülhane Kebap",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Ankara",
-      "description": "Kebap garden à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=G%C3%BClhane+Kebap+Ankara",
-      "priceRange": "€€",
-      "specialite": "Kebap garden",
-      "nombreAvis": 539,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Atakule Café-Restaurant",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Vue panoramique tour à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Atakule+Caf%C3%A9-Restaurant+Ankara",
-      "priceRange": "€€",
-      "specialite": "Vue panoramique tour",
-      "nombreAvis": 1239,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Hacı Musa",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Ankara",
-      "description": "Ankara uykuluk à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Hac%C4%B1+Musa+Ankara",
-      "priceRange": "€€",
-      "specialite": "Ankara uykuluk",
-      "nombreAvis": 617,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Altındağ Köftecisi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Ankara",
-      "description": "Köfte quartier historique à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Alt%C4%B1nda%C4%9F+K%C3%B6ftecisi+Ankara",
-      "priceRange": "€€",
-      "specialite": "Köfte quartier historique",
-      "nombreAvis": 2187,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Çubuk Turşu ve Döner",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Ankara",
-      "description": "Specialité turşu à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=%C3%87ubuk+Tur%C5%9Fu+ve+D%C3%B6ner+Ankara",
-      "priceRange": "€€",
-      "specialite": "Specialité turşu",
-      "nombreAvis": 145,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Bursa İskenderci",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Ankara",
-      "description": "İskender kebap original à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Bursa+%C4%B0skenderci+Ankara",
-      "priceRange": "€€",
-      "specialite": "İskender kebap original",
-      "nombreAvis": 1179,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Karadeniz Pide Salonu",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Ankara",
-      "description": "Pide mer Noire à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Karadeniz+Pide+Salonu+Ankara",
-      "priceRange": "€€",
-      "specialite": "Pide mer noire",
-      "nombreAvis": 1395,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Fırın Kebap Ustası",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Ankara",
-      "description": "Fırın kebap fournil à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=F%C4%B1r%C4%B1n+Kebap+Ustas%C4%B1+Ankara",
-      "priceRange": "€€",
-      "specialite": "Fırın kebap fournil",
-      "nombreAvis": 1417,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Mevlana Sofra",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Ankara",
-      "description": "Konya-anatolien à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Mevlana+Sofra+Ankara",
-      "priceRange": "€€",
-      "specialite": "Konya-anatolien",
-      "nombreAvis": 430,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Boğaziçi Restoran Ankara",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Ankara",
-      "description": "Vue bosphore style à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Bo%C4%9Fazi%C3%A7i+Restoran+Ankara+Ankara",
-      "priceRange": "€€€€",
-      "specialite": "Vue bosphore style",
-      "nombreAvis": 1251,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Sheraton Ankara Resta",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Ankara",
-      "description": "Gastronomique hotel à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Sheraton+Ankara+Resta+Ankara",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique hotel",
-      "nombreAvis": 1050,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Hilton Ankara Brasserie",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "International halal à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=Hilton+Ankara+Brasserie+Ankara",
-      "priceRange": "€€€€",
-      "specialite": "International halal",
-      "nombreAvis": 1086,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "JW Marriott Ankara Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Ankara",
-      "description": "Gastronomique à Ankara.",
-      "mapsUrl": "https://maps.google.com/?q=JW+Marriott+Ankara+Dining+Ankara",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 2284,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r40"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "JW Marriott Ankara",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Luxe à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=JW+Marriott+Ankara+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€€€",
-      "nombreAvis": 976,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Sheraton Ankara",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Ankara",
-      "description": "Luxe à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Sheraton+Ankara+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€€€",
-      "nombreAvis": 2141,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Hilton Ankara",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Ankara",
-      "description": "Luxe à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hilton+Ankara+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€€€",
-      "nombreAvis": 684,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Crowne Plaza Ankara",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Standard-luxe à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Crowne+Plaza+Ankara+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€€€",
-      "nombreAvis": 1152,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Swissôtel Ankara",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Ankara",
-      "description": "Luxe à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Swiss%C3%B4tel+Ankara+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€€€",
-      "nombreAvis": 1117,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Divan Ankara",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Ankara",
-      "description": "Luxe turc à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Divan+Ankara+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€€€",
-      "nombreAvis": 1255,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Radisson Blu Ankara",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Ankara",
-      "description": "Standard à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Ankara+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€€",
-      "nombreAvis": 1187,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "Movenpick Ankara",
-      "categorie": "Standard",
-      "score": 4.8,
-      "adresse": "Ankara",
-      "description": "Standard à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Movenpick+Ankara+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€€",
-      "nombreAvis": 1515,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Best Western Ankara",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Ankara",
-      "description": "Standard à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Best+Western+Ankara+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€€",
-      "nombreAvis": 1468,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Dedeman Ankara",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Ankara",
-      "description": "Standard à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Dedeman+Ankara+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€€",
-      "nombreAvis": 1619,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Büyük Ankara Oteli",
-      "categorie": "Budget",
-      "score": 4.3,
-      "adresse": "Ankara",
-      "description": "Classique budget à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=B%C3%BCy%C3%BCk+Ankara+Oteli+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€",
-      "nombreAvis": 1326,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Hotel Mithat",
-      "categorie": "Budget",
-      "score": 4.7,
-      "adresse": "Ankara",
-      "description": "Budget à Ankara.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Mithat+Ankara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Ankara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=ankara",
-      "priceRange": "€€",
-      "nombreAvis": 535,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Anıtkabir (Mausolée d'Atatürk)",
-      "categorie": "Histoire & Culture",
-      "description": "Mémorial monumental du fondateur de la Turquie, musée et esplanade.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=An%C4%B1tkabir+%28Mausol%C3%A9e+d%27Atat%C3%BCrk%29+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=An%C4%B1tkabir+%28Mausol%C3%A9e+d%27Atat%C3%BCrk%29+Ankara",
-      "id": "a1",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Citadelle d'Ankara (Hisar)",
-      "categorie": "Histoire & Culture",
-      "description": "Forteresse ancienne aux ruelles ottomanes et vue panoramique.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Citadelle+d%27Ankara+%28Hisar%29+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Citadelle+d%27Ankara+%28Hisar%29+Ankara",
-      "id": "a2",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée des civilisations anatoliennes",
-      "categorie": "Art & Musées",
-      "description": "Collection mondiale d'archéologie, des Hittites aux Phrygiens.",
-      "duree": "2-3h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+des+civilisations+anatoliennes+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+des+civilisations+anatoliennes+Ankara",
-      "id": "a3",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Kocatepe",
-      "categorie": "Religieux & Spirituel",
-      "description": "Plus grande mosquée d'Ankara, style ottoman classique.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Kocatepe+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Kocatepe+Ankara",
-      "id": "a4",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier de Hamamönü",
-      "categorie": "Shopping & Souks",
-      "description": "Ruelles restaurées, maisons ottomanes et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+de+Hamam%C3%B6n%C3%BC+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Hamam%C3%B6n%C3%BC+Ankara",
-      "id": "a5",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Parc Gençlik",
-      "categorie": "Nature & Aventure",
-      "description": "Grand parc central avec lac, détente en famille.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+Gen%C3%A7lik+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+Gen%C3%A7lik+Ankara",
-      "id": "a6",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Hacı Bayram",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée vénérée à côté du temple d'Auguste, lieu spirituel.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Hac%C4%B1+Bayram+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Hac%C4%B1+Bayram+Ankara",
-      "id": "a7",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "CerModern",
-      "categorie": "Art & Musées",
-      "description": "Centre d'art contemporain dans une ancienne gare.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=CerModern+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=CerModern+Ankara",
-      "id": "a8",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Ankara",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Ankara+Ankara",
-      "id": "a9",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Ankara",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Ankara+Ankara",
-      "id": "a10",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Ankara",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Ankara+Ankara",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Ankara",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Ankara+Ankara",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Ankara",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Ankara+Ankara",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Ankara",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Ankara+Ankara",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Ankara",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Ankara+Ankara",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Ankara",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Ankara+Ankara",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Ankara",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Ankara+Ankara",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Ankara",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Ankara+Ankara",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Ankara",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Ankara+Ankara",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Ankara",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Ankara+Ankara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Ankara+Ankara",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Kocatepe",
-      "description": "Plus grande mosquée d'Ankara (24 000 fidèles), quatre minarets.",
-      "adresse": "Kocatepe, Ankara",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Kocatepe+Ankara",
-      "capacite": 9803,
-      "anneeConstruction": 1983,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.9334,
-        "lng": 32.8597
-      }
-    },
-    {
-      "nom": "Mosquée Hacı Bayram",
-      "description": "Mosquée historique très vénérée, cœur spirituel de la vieille ville.",
-      "adresse": "Ulus, Ankara",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Hac%C4%B1+Bayram+Ankara",
-      "capacite": 5815,
-      "anneeConstruction": 1905,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.9334,
-        "lng": 32.8597
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Ankara",
-      "description": "Mosquée fréquentée de Ankara, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Ankara",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Ankara+Ankara",
-      "capacite": 5652,
-      "anneeConstruction": 1932,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.9334,
-        "lng": 32.8597
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Ankara",
-      "description": "Mosquée fréquentée de Ankara, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Ankara",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Ankara+Ankara",
-      "capacite": 6632,
-      "anneeConstruction": 1892,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.9334,
-        "lng": 32.8597
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Ankara",
-      "description": "Mosquée fréquentée de Ankara, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Ankara",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Ankara+Ankara",
-      "capacite": 2843,
-      "anneeConstruction": 1963,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.9334,
-        "lng": 32.8597
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Ankara",
-      "description": "Mosquée fréquentée de Ankara, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Ankara",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Ankara+Ankara",
-      "capacite": 1598,
-      "anneeConstruction": 1918,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.9334,
-        "lng": 32.8597
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Ankara",
-      "description": "Mosquée fréquentée de Ankara, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Ankara",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Ankara+Ankara",
-      "capacite": 1146,
-      "anneeConstruction": 1986,
-      "styleArchitectural": "Ottoman",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.9334,
-        "lng": 32.8597
-      }
-    }
-  ],
-  "tags": [
-    "capitale",
-    "authentique",
-    "histoire",
-    "anatolie",
-    "spirituel",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Sheraton Ankara Resta",
-      "Azerbaijani House Ankara",
-      "Pide Kaleci",
-      "Karadeniz Pide Salonu",
-      "Boğaziçi Restoran Ankara"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Zenger Paşa Konağı",
-      "Kalbur Lokantası",
-      "Hacı Arif Bey",
-      "Mücver",
-      "Ankara Palas Restoran"
-    ],
-    "incontournables": [
-      "Pide Kaleci",
-      "Kafkasya",
-      "Pakistan Restoran Ankara",
-      "JW Marriott Ankara Dining",
-      "Azerbaijani House Ankara"
-    ],
-    "pepitesCachees": [
-      "Zenger Paşa Konağı",
-      "Kalbur Lokantası",
-      "Çubuk Turşu ve Döner"
-    ],
-    "idealFamille": [
-      "Zenger Paşa Konağı",
-      "Kalbur Lokantası",
-      "Hacı Arif Bey",
-      "Trilye Ankara",
-      "Mücver"
-    ],
-    "gastronomique": [
-      "Neyzen Terrace",
-      "Boğaziçi Restoran Ankara",
-      "Sheraton Ankara Resta",
-      "Hilton Ankara Brasserie",
-      "JW Marriott Ankara Dining"
-    ],
-    "ouvertNuit": [
-      "Uludağ Kebapçısı",
-      "Köşk Fasıl",
-      "Nusr-Et Ankara"
-    ],
-    "vueExceptionnelle": [
-      "Trilye Ankara",
-      "Sur Balık",
-      "Karadeniz Pide Salonu"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Ankara",
+   "description": "Mosquée fréquentée de Ankara, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Ankara",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Ankara+Ankara",
+   "capacite": 2843,
+   "anneeConstruction": 1963,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 39.9334,
+    "lng": 32.8597
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Ankara",
+   "description": "Mosquée fréquentée de Ankara, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Ankara",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Ankara+Ankara",
+   "capacite": 1598,
+   "anneeConstruction": 1918,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 39.9334,
+    "lng": 32.8597
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Ankara",
+   "description": "Mosquée fréquentée de Ankara, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Ankara",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Ankara+Ankara",
+   "capacite": 1146,
+   "anneeConstruction": 1986,
+   "styleArchitectural": "Ottoman",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 39.9334,
+    "lng": 32.8597
+   }
   }
+ ],
+ "tags": [
+  "capitale",
+  "authentique",
+  "histoire",
+  "anatolie",
+  "spirituel",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Sheraton Ankara Resta",
+   "Azerbaijani House Ankara",
+   "Pide Kaleci",
+   "Karadeniz Pide Salonu",
+   "Boğaziçi Restoran Ankara"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Zenger Paşa Konağı",
+   "Kalbur Lokantası",
+   "Hacı Arif Bey",
+   "Mücver",
+   "Ankara Palas Restoran"
+  ],
+  "incontournables": [
+   "Pide Kaleci",
+   "Kafkasya",
+   "Pakistan Restoran Ankara",
+   "JW Marriott Ankara Dining",
+   "Azerbaijani House Ankara"
+  ],
+  "pepitesCachees": [
+   "Zenger Paşa Konağı",
+   "Kalbur Lokantası",
+   "Çubuk Turşu ve Döner"
+  ],
+  "idealFamille": [
+   "Zenger Paşa Konağı",
+   "Kalbur Lokantası",
+   "Hacı Arif Bey",
+   "Trilye Ankara",
+   "Mücver"
+  ],
+  "gastronomique": [
+   "Neyzen Terrace",
+   "Boğaziçi Restoran Ankara",
+   "Sheraton Ankara Resta",
+   "Hilton Ankara Brasserie",
+   "JW Marriott Ankara Dining"
+  ],
+  "ouvertNuit": [
+   "Uludağ Kebapçısı",
+   "Köşk Fasıl",
+   "Nusr-Et Ankara"
+  ],
+  "vueExceptionnelle": [
+   "Trilye Ankara",
+   "Sur Balık",
+   "Karadeniz Pide Salonu"
+  ]
+ }
 }

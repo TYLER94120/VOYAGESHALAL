@@ -1,1487 +1,1494 @@
 {
-  "nom": "Penang",
-  "pays": "Malaisie",
-  "slug": "penang",
-  "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=1400&q=85",
-  "description": "Penang, capitale gastronomique de l'Asie, offre une street food halal légendaire et George Town classée UNESCO. Mosquées, temples et plages se côtoient.",
-  "descriptionLongue": "Île multiculturelle du nord de la Malaisie, Penang est célèbre pour sa cuisine de rue, souvent élue meilleure d'Asie. George Town, son cœur historique UNESCO, mêle maisons-boutiques, street art, mosquées et temples. Le nasi kandar, le char kway teow halal et le laksa y sont rois. Entre Penang Hill, Kek Lok Si et les plages de Batu Ferringhi, l'île séduit les familles musulmanes.",
-  "halalScore": 8.8,
-  "score_halal": 4.4,
+ "nom": "Penang",
+ "pays": "Malaisie",
+ "slug": "penang",
+ "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=1400&q=85",
+ "description": "Penang, capitale gastronomique de l'Asie, offre une street food halal légendaire et George Town classée UNESCO. Mosquées, temples et plages se côtoient.",
+ "descriptionLongue": "Île multiculturelle du nord de la Malaisie, Penang est célèbre pour sa cuisine de rue, souvent élue meilleure d'Asie. George Town, son cœur historique UNESCO, mêle maisons-boutiques, street art, mosquées et temples. Le nasi kandar, le char kway teow halal et le laksa y sont rois. Entre Penang Hill, Kek Lok Si et les plages de Batu Ferringhi, l'île séduit les familles musulmanes.",
+ "halalScore": 8.8,
+ "score_halal": 4.4,
+ "mosquees": 200,
+ "population": "1,8 million",
+ "langue": "Malais, Anglais",
+ "monnaie": "Ringgit (MYR)",
+ "fuseau": "UTC+8",
+ "meilleureEpoque": "Décembre à Février",
+ "prixMoyenNuit": "55€",
+ "continent": "Asie",
+ "codeISO": "MY",
+ "pays_slug": "malaisie",
+ "region": "Asie du Sud-Est",
+ "meta_title": "Voyage Halal à Penang — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Penang — Halal Trust Score 8.8/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Penang — Halal Trust Score 8.8/10.",
+ "coordonnees": {
+  "lat": 5.4164,
+  "lng": 100.3327
+ },
+ "image_alt": "Vue de Penang, Malaisie",
+ "statistiques": {
   "mosquees": 200,
-  "population": "1,8 million",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 45,
+  "hotels": 8
+ },
+ "infos_pratiques": {
   "langue": "Malais, Anglais",
   "monnaie": "Ringgit (MYR)",
-  "fuseau": "UTC+8",
-  "meilleureEpoque": "Décembre à Février",
-  "prixMoyenNuit": "55€",
-  "continent": "Asie",
-  "codeISO": "MY",
-  "pays_slug": "malaisie",
-  "region": "Asie du Sud-Est",
-  "meta_title": "Voyage Halal à Penang — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Penang — Halal Trust Score 8.8/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Penang — Halal Trust Score 8.8/10.",
-  "coordonnees": {
+  "meilleure_periode": "Décembre à Février",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Réglementé",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Exemption de visa pour les Français (90 jours)",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Bus Rapid Penang, Grab, ferry",
+  "priseElectrique": "Type G — 240V",
+  "decalageHoraire": "+7h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Hameediyah Restaurant",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Penang",
+   "description": "Nasi kandar depuis 1907, légendaire à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Hameediyah+Restaurant+Penang",
+   "priceRange": "€€",
+   "specialite": "Nasi kandar depuis 1907",
+   "nombreAvis": 3686,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Sup Hameed",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Penang",
+   "description": "Soupe populaire à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Sup+Hameed+Penang",
+   "priceRange": "€",
+   "specialite": "Soupe populaire",
+   "nombreAvis": 242,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Nasi Kandar Line Clear",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Penang",
+   "description": "24h, George Town à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Nasi+Kandar+Line+Clear+Penang",
+   "priceRange": "€",
+   "specialite": "24h",
+   "nombreAvis": 385,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Tajuddin Hussain Nasi Kandar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Penang",
+   "description": "Premium à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Tajuddin+Hussain+Nasi+Kandar+Penang",
+   "priceRange": "€€€€",
+   "specialite": "Premium",
+   "nombreAvis": 157,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Deen Maju",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Penang",
+   "description": "Briyani populaire à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Deen+Maju+Penang",
+   "priceRange": "€",
+   "specialite": "Briyani populaire",
+   "nombreAvis": 2586,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Restoran Sri Weld",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Penang",
+   "description": "Fish head curry halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Restoran+Sri+Weld+Penang",
+   "priceRange": "€€",
+   "specialite": "Fish head curry halal",
+   "nombreAvis": 540,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Kayu Nasi Kandar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Penang",
+   "description": "Chaîne premium à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Kayu+Nasi+Kandar+Penang",
+   "priceRange": "€€€€",
+   "specialite": "Chaîne premium",
+   "nombreAvis": 895,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Penang Road Famous Laksa",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Penang",
+   "description": "Asam laksa à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Penang+Road+Famous+Laksa+Penang",
+   "priceRange": "€€",
+   "specialite": "Asam laksa",
+   "nombreAvis": 576,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Khuntai Muslim Thai",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Penang",
+   "description": "Thaï halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Khuntai+Muslim+Thai+Penang",
+   "priceRange": "€€",
+   "specialite": "Thaï halal",
+   "nombreAvis": 2545,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Top Hat Restaurant Penang",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Penang",
+   "description": "Colonial halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Top+Hat+Restaurant+Penang+Penang",
+   "priceRange": "€€",
+   "specialite": "Colonial halal",
+   "nombreAvis": 1007,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "1885 Restaurant",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Penang",
+   "description": "E&O Hotel, gastronomique à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=1885+Restaurant+Penang",
+   "priceRange": "€€€€",
+   "specialite": "E&o hotel",
+   "nombreAvis": 1254,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Sarkies Corner",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Penang",
+   "description": "Colonial brunch halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Sarkies+Corner+Penang",
+   "priceRange": "€€",
+   "specialite": "Colonial brunch halal",
+   "nombreAvis": 1075,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Feringgi Grill",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Penang",
+   "description": "Luxe Rasa Sayang à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Feringgi+Grill+Penang",
+   "priceRange": "€€€€",
+   "specialite": "Luxe rasa sayang",
+   "nombreAvis": 703,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "familial"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Bora Bora Restaurant",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Penang",
+   "description": "Plage halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Bora+Bora+Restaurant+Penang",
+   "priceRange": "€€",
+   "specialite": "Plage halal",
+   "nombreAvis": 1140,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Eden Seafood Village",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Penang",
+   "description": "Fruits de mer à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Eden+Seafood+Village+Penang",
+   "priceRange": "€€",
+   "specialite": "Fruits de mer",
+   "nombreAvis": 690,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Gurney Drive Hawker",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Penang",
+   "description": "Hawker halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Gurney+Drive+Hawker+Penang",
+   "priceRange": "€",
+   "specialite": "Hawker halal",
+   "nombreAvis": 1384,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Ah Weng Koh Hainan Tea",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Penang",
+   "description": "Kopitiam halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Ah+Weng+Koh+Hainan+Tea+Penang",
+   "priceRange": "€",
+   "specialite": "Kopitiam halal",
+   "nombreAvis": 1064,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "BJ Penang Street Buffet",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Penang",
+   "description": "Buffet diversifié à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=BJ+Penang+Street+Buffet+Penang",
+   "priceRange": "€",
+   "specialite": "Buffet diversifié",
+   "nombreAvis": 276,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "The Batu Ferringhi Village",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Penang",
+   "description": "Village dining à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=The+Batu+Ferringhi+Village+Penang",
+   "priceRange": "€€",
+   "specialite": "Village dining",
+   "nombreAvis": 1326,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Lucky Garden Penang",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Penang",
+   "description": "Jardin halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Lucky+Garden+Penang+Penang",
+   "priceRange": "€€",
+   "specialite": "Jardin halal",
+   "nombreAvis": 2585,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Sup Torpedo Penang",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Penang",
+   "description": "Soupe spéciale à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Sup+Torpedo+Penang+Penang",
+   "priceRange": "€€",
+   "specialite": "Soupe spéciale",
+   "nombreAvis": 712,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Maqbool Mee",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Penang",
+   "description": "Mee goreng légendaire à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Maqbool+Mee+Penang",
+   "priceRange": "€€",
+   "specialite": "Mee goreng légendaire",
+   "nombreAvis": 2069,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Mak Piah Laksa",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Penang",
+   "description": "Laksa maison à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Mak+Piah+Laksa+Penang",
+   "priceRange": "€€",
+   "specialite": "Laksa maison",
+   "nombreAvis": 1334,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Sup Kambing Hamid",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Penang",
+   "description": "Soupe d'agneau à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Sup+Kambing+Hamid+Penang",
+   "priceRange": "€€",
+   "specialite": "Soupe d'agneau",
+   "nombreAvis": 3354,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Char Kway Teow Halal",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Penang",
+   "description": "Street food icône à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Char+Kway+Teow+Halal+Penang",
+   "priceRange": "€",
+   "specialite": "Street food icône",
+   "nombreAvis": 3116,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Pasembur Arab Street",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Penang",
+   "description": "Rojak halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Pasembur+Arab+Street+Penang",
+   "priceRange": "€",
+   "specialite": "Rojak halal",
+   "nombreAvis": 346,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Penang Gurney Plaza Food Court",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Penang",
+   "description": "Mall à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Penang+Gurney+Plaza+Food+Court+Penang",
+   "priceRange": "€",
+   "specialite": "Mall",
+   "nombreAvis": 80,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "1st Avenue Mall Food",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Penang",
+   "description": "Modern halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=1st+Avenue+Mall+Food+Penang",
+   "priceRange": "€",
+   "specialite": "Modern halal",
+   "nombreAvis": 1121,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Komtar JBCC Food",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Penang",
+   "description": "Food court à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Komtar+JBCC+Food+Penang",
+   "priceRange": "€",
+   "specialite": "Food court",
+   "nombreAvis": 777,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Penang Times Square Dining",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Penang",
+   "description": "Mall à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Penang+Times+Square+Dining+Penang",
+   "priceRange": "€",
+   "specialite": "Mall",
+   "nombreAvis": 911,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Spice Garden Restaurant",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Penang",
+   "description": "Épices locales à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Garden+Restaurant+Penang",
+   "priceRange": "€€",
+   "specialite": "Épices locales",
+   "nombreAvis": 2568,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Entopia Butterfly Farm Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Penang",
+   "description": "Attraction à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Entopia+Butterfly+Farm+Caf%C3%A9+Penang",
+   "priceRange": "€€",
+   "specialite": "Attraction",
+   "nombreAvis": 2737,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Penang Hill Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Penang",
+   "description": "Sommet de la colline à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Penang+Hill+Caf%C3%A9+Penang",
+   "priceRange": "€€",
+   "specialite": "Sommet de la colline",
+   "nombreAvis": 1341,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Blue Mansion Restaurant",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Penang",
+   "description": "Cheong Fatt Tze à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Blue+Mansion+Restaurant+Penang",
+   "priceRange": "€€",
+   "specialite": "Cheong fatt tze",
+   "nombreAvis": 1272,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Clan Jetties Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Penang",
+   "description": "Village sur pilotis à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Clan+Jetties+Caf%C3%A9+Penang",
+   "priceRange": "€€",
+   "specialite": "Village sur pilotis",
+   "nombreAvis": 614,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Mughal Mahal",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Penang",
+   "description": "Indien moghol halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Mughal+Mahal+Penang",
+   "priceRange": "€€",
+   "specialite": "Indien moghol halal",
+   "nombreAvis": 947,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "The Warehouse",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Penang",
+   "description": "Indien fusion halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=The+Warehouse+Penang",
+   "priceRange": "€€",
+   "specialite": "Indien fusion halal",
+   "nombreAvis": 1570,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Passage Through India Penang",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Penang",
+   "description": "Indien à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Passage+Through+India+Penang+Penang",
+   "priceRange": "€€",
+   "specialite": "Indien",
+   "nombreAvis": 813,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Bombay Brasserie Penang",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Penang",
+   "description": "Indien halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Bombay+Brasserie+Penang+Penang",
+   "priceRange": "€€",
+   "specialite": "Indien halal",
+   "nombreAvis": 1584,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Tokyo Kitchen Penang",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Penang",
+   "description": "Japonais halal à Penang.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Kitchen+Penang+Penang",
+   "priceRange": "€€",
+   "specialite": "Japonais halal",
+   "nombreAvis": 2485,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r40"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Eastern & Oriental Hotel",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "George Town",
+   "description": "Hôtel colonial historique de 1885",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Eastern+%26+Oriental+Hotel+Penang",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "nombreAvis": 2234,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 5.4234635,
+   "lng": 100.3355596
+  },
+  {
+   "nom": "The Prestige Hotel",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "George Town",
+   "description": "Hôtel design au cœur de George Town",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Prestige+Hotel+Penang",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
+   "priceRange": "€€€",
+   "id": "h2",
+   "nombreAvis": 882,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 5.4164008,
+   "lng": 100.3427711
+  },
+  {
+   "nom": "Tune Hotel Penang",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "George Town",
+   "description": "Hôtel économique central",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Tune+Hotel+Penang+Penang",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
+   "priceRange": "€€",
+   "id": "h3",
+   "nombreAvis": 1178,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 5.4195689,
+   "lng": 100.3272515
+  },
+  {
+   "nom": "Grand Plaza Penang",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Penang",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Penang+Penang",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
+   "priceRange": "€€€€",
+   "id": "h4",
+   "nombreAvis": 1730,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "City Comfort Hotel Penang",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Penang",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Penang+Penang",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
+   "priceRange": "€€€",
+   "id": "h5",
+   "nombreAvis": 2008,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Boutique Riad Penang",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Penang",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Penang+Penang",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
+   "priceRange": "€€€",
+   "id": "h6",
+   "nombreAvis": 1926,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Penang 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Penang",
+   "description": "Hébergement halal-friendly à Penang.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Penang+0+Penang",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
+   "priceRange": "€€€€",
+   "nombreAvis": 2092,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Penang",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Penang",
+   "description": "Hébergement halal-friendly à Penang.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Penang+Penang",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
+   "priceRange": "€€€",
+   "nombreAvis": 1239,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "George Town UNESCO",
+   "categorie": "Histoire & Culture",
+   "description": "Maisons-boutiques, street art et patrimoine multiculturel",
+   "duree": "3h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=George+Town+UNESCO+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=George+Town+UNESCO+Penang",
+   "id": "a1",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Kapitan Keling",
+   "categorie": "Religieux & Spirituel",
+   "description": "Plus grande mosquée historique de George Town",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Kapitan+Keling+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Kapitan+Keling+Penang",
+   "id": "a2",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Kek Lok Si & Penang Hill",
+   "categorie": "Nature & Aventure",
+   "description": "Temple et funiculaire vers le sommet de l'île",
+   "duree": "Demi-journée",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Kek+Lok+Si+%26+Penang+Hill+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kek+Lok+Si+%26+Penang+Hill+Penang",
+   "id": "a3",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Street art de George Town",
+   "categorie": "Art & Musées",
+   "description": "Fresques murales emblématiques de l'île",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Street+art+de+George+Town+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Street+art+de+George+Town+Penang",
+   "id": "a4",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Batu Ferringhi Beach",
+   "categorie": "Nature & Aventure",
+   "description": "Plage et marché nocturne",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Batu+Ferringhi+Beach+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Batu+Ferringhi+Beach+Penang",
+   "id": "a5",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Food tour de Penang",
+   "categorie": "Gastronomie",
+   "description": "Parcours de la meilleure street food halal d'Asie",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+de+Penang+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+de+Penang+Penang",
+   "id": "a6",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Fort Cornwallis",
+   "categorie": "Histoire & Culture",
+   "description": "Fort colonial britannique au bord de mer",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Fort+Cornwallis+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fort+Cornwallis+Penang",
+   "id": "a7",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Marché de Chowrasta",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices et de nyonya",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Chowrasta+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Chowrasta+Penang",
+   "id": "a8",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Penang",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Penang+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Penang+Penang",
+   "id": "a9",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Penang",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Penang+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Penang+Penang",
+   "id": "a10",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Penang",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Penang+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Penang+Penang",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Penang",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Penang+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Penang+Penang",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Penang",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Penang+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Penang+Penang",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Penang",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Penang+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Penang+Penang",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Penang",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Penang+Penang",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Penang+Penang",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Kapitan Keling",
+   "description": "Mosquée indo-musulmane de 1801, dôme moghol",
+   "adresse": "Buckingham Street",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Kapitan+Keling+Penang",
+   "capacite": 7698,
+   "anneeConstruction": 1958,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 5.4164,
     "lng": 100.3327
+   }
   },
-  "image_alt": "Vue de Penang, Malaisie",
-  "statistiques": {
-    "mosquees": 200,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 45
+  {
+   "nom": "Mosquée flottante de Tanjung Bungah",
+   "description": "Mosquée moderne posée sur la mer",
+   "adresse": "Tanjung Bungah",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+flottante+de+Tanjung+Bungah+Penang",
+   "capacite": 2125,
+   "anneeConstruction": 2005,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 5.4164,
+    "lng": 100.3327
+   }
   },
-  "infos_pratiques": {
-    "langue": "Malais, Anglais",
-    "monnaie": "Ringgit (MYR)",
-    "meilleure_periode": "Décembre à Février",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Réglementé",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Penang",
+   "description": "Mosquée fréquentée de Penang, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Penang",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Penang+Penang",
+   "capacite": 910,
+   "anneeConstruction": 1950,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 5.4164,
+    "lng": 100.3327
+   }
   },
-  "infoPratique": {
-    "visa": "Exemption de visa pour les Français (90 jours)",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Bus Rapid Penang, Grab, ferry",
-    "priseElectrique": "Type G — 240V",
-    "decalageHoraire": "+7h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Penang",
+   "description": "Mosquée fréquentée de Penang, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Penang",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Penang+Penang",
+   "capacite": 2217,
+   "anneeConstruction": 1997,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 5.4164,
+    "lng": 100.3327
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Hameediyah Restaurant",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Penang",
-      "description": "Nasi kandar depuis 1907, légendaire à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Hameediyah+Restaurant+Penang",
-      "priceRange": "€€",
-      "specialite": "Nasi kandar depuis 1907",
-      "nombreAvis": 3686,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Sup Hameed",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Penang",
-      "description": "Soupe populaire à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Sup+Hameed+Penang",
-      "priceRange": "€",
-      "specialite": "Soupe populaire",
-      "nombreAvis": 242,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Nasi Kandar Line Clear",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Penang",
-      "description": "24h, George Town à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Nasi+Kandar+Line+Clear+Penang",
-      "priceRange": "€",
-      "specialite": "24h",
-      "nombreAvis": 385,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Tajuddin Hussain Nasi Kandar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Penang",
-      "description": "Premium à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Tajuddin+Hussain+Nasi+Kandar+Penang",
-      "priceRange": "€€€€",
-      "specialite": "Premium",
-      "nombreAvis": 157,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Deen Maju",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Penang",
-      "description": "Briyani populaire à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Deen+Maju+Penang",
-      "priceRange": "€",
-      "specialite": "Briyani populaire",
-      "nombreAvis": 2586,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Restoran Sri Weld",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Penang",
-      "description": "Fish head curry halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Sri+Weld+Penang",
-      "priceRange": "€€",
-      "specialite": "Fish head curry halal",
-      "nombreAvis": 540,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Kayu Nasi Kandar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Penang",
-      "description": "Chaîne premium à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Kayu+Nasi+Kandar+Penang",
-      "priceRange": "€€€€",
-      "specialite": "Chaîne premium",
-      "nombreAvis": 895,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Penang Road Famous Laksa",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Penang",
-      "description": "Asam laksa à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Penang+Road+Famous+Laksa+Penang",
-      "priceRange": "€€",
-      "specialite": "Asam laksa",
-      "nombreAvis": 576,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Khuntai Muslim Thai",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Penang",
-      "description": "Thaï halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Khuntai+Muslim+Thai+Penang",
-      "priceRange": "€€",
-      "specialite": "Thaï halal",
-      "nombreAvis": 2545,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Top Hat Restaurant Penang",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Penang",
-      "description": "Colonial halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Top+Hat+Restaurant+Penang+Penang",
-      "priceRange": "€€",
-      "specialite": "Colonial halal",
-      "nombreAvis": 1007,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "1885 Restaurant",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Penang",
-      "description": "E&O Hotel, gastronomique à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=1885+Restaurant+Penang",
-      "priceRange": "€€€€",
-      "specialite": "E&o hotel",
-      "nombreAvis": 1254,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Sarkies Corner",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Penang",
-      "description": "Colonial brunch halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Sarkies+Corner+Penang",
-      "priceRange": "€€",
-      "specialite": "Colonial brunch halal",
-      "nombreAvis": 1075,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Feringgi Grill",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Penang",
-      "description": "Luxe Rasa Sayang à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Feringgi+Grill+Penang",
-      "priceRange": "€€€€",
-      "specialite": "Luxe rasa sayang",
-      "nombreAvis": 703,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "familial"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Bora Bora Restaurant",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Penang",
-      "description": "Plage halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Bora+Bora+Restaurant+Penang",
-      "priceRange": "€€",
-      "specialite": "Plage halal",
-      "nombreAvis": 1140,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Eden Seafood Village",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Penang",
-      "description": "Fruits de mer à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Eden+Seafood+Village+Penang",
-      "priceRange": "€€",
-      "specialite": "Fruits de mer",
-      "nombreAvis": 690,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Gurney Drive Hawker",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Penang",
-      "description": "Hawker halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Gurney+Drive+Hawker+Penang",
-      "priceRange": "€",
-      "specialite": "Hawker halal",
-      "nombreAvis": 1384,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Ah Weng Koh Hainan Tea",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Penang",
-      "description": "Kopitiam halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Ah+Weng+Koh+Hainan+Tea+Penang",
-      "priceRange": "€",
-      "specialite": "Kopitiam halal",
-      "nombreAvis": 1064,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "BJ Penang Street Buffet",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Penang",
-      "description": "Buffet diversifié à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=BJ+Penang+Street+Buffet+Penang",
-      "priceRange": "€",
-      "specialite": "Buffet diversifié",
-      "nombreAvis": 276,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "The Batu Ferringhi Village",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Penang",
-      "description": "Village dining à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=The+Batu+Ferringhi+Village+Penang",
-      "priceRange": "€€",
-      "specialite": "Village dining",
-      "nombreAvis": 1326,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Lucky Garden Penang",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Penang",
-      "description": "Jardin halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Lucky+Garden+Penang+Penang",
-      "priceRange": "€€",
-      "specialite": "Jardin halal",
-      "nombreAvis": 2585,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Sup Torpedo Penang",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Penang",
-      "description": "Soupe spéciale à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Sup+Torpedo+Penang+Penang",
-      "priceRange": "€€",
-      "specialite": "Soupe spéciale",
-      "nombreAvis": 712,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Maqbool Mee",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Penang",
-      "description": "Mee goreng légendaire à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Maqbool+Mee+Penang",
-      "priceRange": "€€",
-      "specialite": "Mee goreng légendaire",
-      "nombreAvis": 2069,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Mak Piah Laksa",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Penang",
-      "description": "Laksa maison à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Mak+Piah+Laksa+Penang",
-      "priceRange": "€€",
-      "specialite": "Laksa maison",
-      "nombreAvis": 1334,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Sup Kambing Hamid",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Penang",
-      "description": "Soupe d'agneau à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Sup+Kambing+Hamid+Penang",
-      "priceRange": "€€",
-      "specialite": "Soupe d'agneau",
-      "nombreAvis": 3354,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Char Kway Teow Halal",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Penang",
-      "description": "Street food icône à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Char+Kway+Teow+Halal+Penang",
-      "priceRange": "€",
-      "specialite": "Street food icône",
-      "nombreAvis": 3116,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Pasembur Arab Street",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Penang",
-      "description": "Rojak halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Pasembur+Arab+Street+Penang",
-      "priceRange": "€",
-      "specialite": "Rojak halal",
-      "nombreAvis": 346,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Penang Gurney Plaza Food Court",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Penang",
-      "description": "Mall à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Penang+Gurney+Plaza+Food+Court+Penang",
-      "priceRange": "€",
-      "specialite": "Mall",
-      "nombreAvis": 80,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "1st Avenue Mall Food",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Penang",
-      "description": "Modern halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=1st+Avenue+Mall+Food+Penang",
-      "priceRange": "€",
-      "specialite": "Modern halal",
-      "nombreAvis": 1121,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Komtar JBCC Food",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Penang",
-      "description": "Food court à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Komtar+JBCC+Food+Penang",
-      "priceRange": "€",
-      "specialite": "Food court",
-      "nombreAvis": 777,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Penang Times Square Dining",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Penang",
-      "description": "Mall à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Penang+Times+Square+Dining+Penang",
-      "priceRange": "€",
-      "specialite": "Mall",
-      "nombreAvis": 911,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Spice Garden Restaurant",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Penang",
-      "description": "Épices locales à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Garden+Restaurant+Penang",
-      "priceRange": "€€",
-      "specialite": "Épices locales",
-      "nombreAvis": 2568,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Entopia Butterfly Farm Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Penang",
-      "description": "Attraction à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Entopia+Butterfly+Farm+Caf%C3%A9+Penang",
-      "priceRange": "€€",
-      "specialite": "Attraction",
-      "nombreAvis": 2737,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Penang Hill Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Penang",
-      "description": "Sommet de la colline à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Penang+Hill+Caf%C3%A9+Penang",
-      "priceRange": "€€",
-      "specialite": "Sommet de la colline",
-      "nombreAvis": 1341,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Blue Mansion Restaurant",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Penang",
-      "description": "Cheong Fatt Tze à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Blue+Mansion+Restaurant+Penang",
-      "priceRange": "€€",
-      "specialite": "Cheong fatt tze",
-      "nombreAvis": 1272,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Clan Jetties Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Penang",
-      "description": "Village sur pilotis à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Clan+Jetties+Caf%C3%A9+Penang",
-      "priceRange": "€€",
-      "specialite": "Village sur pilotis",
-      "nombreAvis": 614,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Mughal Mahal",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Penang",
-      "description": "Indien moghol halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Mahal+Penang",
-      "priceRange": "€€",
-      "specialite": "Indien moghol halal",
-      "nombreAvis": 947,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "The Warehouse",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Penang",
-      "description": "Indien fusion halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=The+Warehouse+Penang",
-      "priceRange": "€€",
-      "specialite": "Indien fusion halal",
-      "nombreAvis": 1570,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Passage Through India Penang",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Penang",
-      "description": "Indien à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Passage+Through+India+Penang+Penang",
-      "priceRange": "€€",
-      "specialite": "Indien",
-      "nombreAvis": 813,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Bombay Brasserie Penang",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Penang",
-      "description": "Indien halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Bombay+Brasserie+Penang+Penang",
-      "priceRange": "€€",
-      "specialite": "Indien halal",
-      "nombreAvis": 1584,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Tokyo Kitchen Penang",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Penang",
-      "description": "Japonais halal à Penang.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Kitchen+Penang+Penang",
-      "priceRange": "€€",
-      "specialite": "Japonais halal",
-      "nombreAvis": 2485,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r40"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Eastern & Oriental Hotel",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "George Town",
-      "description": "Hôtel colonial historique de 1885",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Eastern+%26+Oriental+Hotel+Penang",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
-      "priceRange": "€€€€",
-      "id": "h1",
-      "nombreAvis": 2234,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "The Prestige Hotel",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "George Town",
-      "description": "Hôtel design au cœur de George Town",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Prestige+Hotel+Penang",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
-      "priceRange": "€€€",
-      "id": "h2",
-      "nombreAvis": 882,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Tune Hotel Penang",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "George Town",
-      "description": "Hôtel économique central",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Tune+Hotel+Penang+Penang",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
-      "priceRange": "€€",
-      "id": "h3",
-      "nombreAvis": 1178,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Penang",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Penang",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Penang+Penang",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
-      "priceRange": "€€€€",
-      "id": "h4",
-      "nombreAvis": 1730,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "City Comfort Hotel Penang",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Penang",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Penang+Penang",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
-      "priceRange": "€€€",
-      "id": "h5",
-      "nombreAvis": 2008,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Boutique Riad Penang",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Penang",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Penang+Penang",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
-      "priceRange": "€€€",
-      "id": "h6",
-      "nombreAvis": 1926,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Penang 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Penang",
-      "description": "Hébergement halal-friendly à Penang.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Penang+0+Penang",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
-      "priceRange": "€€€€",
-      "nombreAvis": 2092,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Penang",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Penang",
-      "description": "Hébergement halal-friendly à Penang.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Penang+Penang",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Penang&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=penang",
-      "priceRange": "€€€",
-      "nombreAvis": 1239,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "George Town UNESCO",
-      "categorie": "Histoire & Culture",
-      "description": "Maisons-boutiques, street art et patrimoine multiculturel",
-      "duree": "3h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=George+Town+UNESCO+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=George+Town+UNESCO+Penang",
-      "id": "a1",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Kapitan Keling",
-      "categorie": "Religieux & Spirituel",
-      "description": "Plus grande mosquée historique de George Town",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Kapitan+Keling+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Kapitan+Keling+Penang",
-      "id": "a2",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Kek Lok Si & Penang Hill",
-      "categorie": "Nature & Aventure",
-      "description": "Temple et funiculaire vers le sommet de l'île",
-      "duree": "Demi-journée",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Kek+Lok+Si+%26+Penang+Hill+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kek+Lok+Si+%26+Penang+Hill+Penang",
-      "id": "a3",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Street art de George Town",
-      "categorie": "Art & Musées",
-      "description": "Fresques murales emblématiques de l'île",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Street+art+de+George+Town+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Street+art+de+George+Town+Penang",
-      "id": "a4",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Batu Ferringhi Beach",
-      "categorie": "Nature & Aventure",
-      "description": "Plage et marché nocturne",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Batu+Ferringhi+Beach+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Batu+Ferringhi+Beach+Penang",
-      "id": "a5",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Food tour de Penang",
-      "categorie": "Gastronomie",
-      "description": "Parcours de la meilleure street food halal d'Asie",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+de+Penang+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+de+Penang+Penang",
-      "id": "a6",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Fort Cornwallis",
-      "categorie": "Histoire & Culture",
-      "description": "Fort colonial britannique au bord de mer",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Fort+Cornwallis+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fort+Cornwallis+Penang",
-      "id": "a7",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Marché de Chowrasta",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices et de nyonya",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+de+Chowrasta+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+de+Chowrasta+Penang",
-      "id": "a8",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Penang",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Penang+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Penang+Penang",
-      "id": "a9",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Penang",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Penang+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Penang+Penang",
-      "id": "a10",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Penang",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Penang+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Penang+Penang",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Penang",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Penang+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Penang+Penang",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Penang",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Penang+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Penang+Penang",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Penang",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Penang+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Penang+Penang",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Penang",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Penang+Penang",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Penang+Penang",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Kapitan Keling",
-      "description": "Mosquée indo-musulmane de 1801, dôme moghol",
-      "adresse": "Buckingham Street",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Kapitan+Keling+Penang",
-      "capacite": 7698,
-      "anneeConstruction": 1958,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 5.4164,
-        "lng": 100.3327
-      }
-    },
-    {
-      "nom": "Mosquée flottante de Tanjung Bungah",
-      "description": "Mosquée moderne posée sur la mer",
-      "adresse": "Tanjung Bungah",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+flottante+de+Tanjung+Bungah+Penang",
-      "capacite": 2125,
-      "anneeConstruction": 2005,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 5.4164,
-        "lng": 100.3327
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Penang",
-      "description": "Mosquée fréquentée de Penang, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Penang",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Penang+Penang",
-      "capacite": 910,
-      "anneeConstruction": 1950,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 5.4164,
-        "lng": 100.3327
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Penang",
-      "description": "Mosquée fréquentée de Penang, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Penang",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Penang+Penang",
-      "capacite": 2217,
-      "anneeConstruction": 1997,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 5.4164,
-        "lng": 100.3327
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Penang",
-      "description": "Mosquée fréquentée de Penang, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Penang",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Penang+Penang",
-      "capacite": 1779,
-      "anneeConstruction": 1999,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 5.4164,
-        "lng": 100.3327
-      }
-    }
-  ],
-  "tags": [
-    "gastronomie",
-    "unesco",
-    "street-food",
-    "plage",
-    "multiculturel",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Hameediyah Restaurant",
-      "Sup Hameed",
-      "Restoran Sri Weld",
-      "Penang Road Famous Laksa",
-      "Ah Weng Koh Hainan Tea"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Hameediyah Restaurant",
-      "Sup Hameed",
-      "Nasi Kandar Line Clear",
-      "Deen Maju",
-      "Restoran Sri Weld"
-    ],
-    "incontournables": [
-      "Hameediyah Restaurant",
-      "Sup Kambing Hamid",
-      "Char Kway Teow Halal",
-      "Entopia Butterfly Farm Café",
-      "Deen Maju"
-    ],
-    "pepitesCachees": [
-      "Sup Hameed",
-      "Nasi Kandar Line Clear",
-      "Tajuddin Hussain Nasi Kandar"
-    ],
-    "idealFamille": [
-      "Hameediyah Restaurant",
-      "Sup Hameed",
-      "Nasi Kandar Line Clear",
-      "Tajuddin Hussain Nasi Kandar",
-      "Deen Maju"
-    ],
-    "gastronomique": [
-      "Hameediyah Restaurant",
-      "Sup Hameed",
-      "Restoran Sri Weld"
-    ],
-    "ouvertNuit": [
-      "Sup Hameed",
-      "Nasi Kandar Line Clear",
-      "Deen Maju"
-    ],
-    "vueExceptionnelle": [
-      "Restoran Sri Weld",
-      "Eden Seafood Village"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Penang",
+   "description": "Mosquée fréquentée de Penang, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Penang",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Penang+Penang",
+   "capacite": 1779,
+   "anneeConstruction": 1999,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 5.4164,
+    "lng": 100.3327
+   }
   }
+ ],
+ "tags": [
+  "gastronomie",
+  "unesco",
+  "street-food",
+  "plage",
+  "multiculturel",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Hameediyah Restaurant",
+   "Sup Hameed",
+   "Restoran Sri Weld",
+   "Penang Road Famous Laksa",
+   "Ah Weng Koh Hainan Tea"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Hameediyah Restaurant",
+   "Sup Hameed",
+   "Nasi Kandar Line Clear",
+   "Deen Maju",
+   "Restoran Sri Weld"
+  ],
+  "incontournables": [
+   "Hameediyah Restaurant",
+   "Sup Kambing Hamid",
+   "Char Kway Teow Halal",
+   "Entopia Butterfly Farm Café",
+   "Deen Maju"
+  ],
+  "pepitesCachees": [
+   "Sup Hameed",
+   "Nasi Kandar Line Clear",
+   "Tajuddin Hussain Nasi Kandar"
+  ],
+  "idealFamille": [
+   "Hameediyah Restaurant",
+   "Sup Hameed",
+   "Nasi Kandar Line Clear",
+   "Tajuddin Hussain Nasi Kandar",
+   "Deen Maju"
+  ],
+  "gastronomique": [
+   "Hameediyah Restaurant",
+   "Sup Hameed",
+   "Restoran Sri Weld"
+  ],
+  "ouvertNuit": [
+   "Sup Hameed",
+   "Nasi Kandar Line Clear",
+   "Deen Maju"
+  ],
+  "vueExceptionnelle": [
+   "Restoran Sri Weld",
+   "Eden Seafood Village"
+  ]
+ }
 }

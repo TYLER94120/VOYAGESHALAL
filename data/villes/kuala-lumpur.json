@@ -1,2386 +1,2413 @@
 {
-  "slug": "kuala-lumpur",
-  "nom": "Kuala Lumpur",
-  "pays": "Malaisie",
-  "pays_slug": "malaisie",
-  "region": "Asie du Sud-Est",
-  "coordonnees": {
+ "slug": "kuala-lumpur",
+ "nom": "Kuala Lumpur",
+ "pays": "Malaisie",
+ "pays_slug": "malaisie",
+ "region": "Asie du Sud-Est",
+ "coordonnees": {
+  "lat": 3.139,
+  "lng": 101.6869
+ },
+ "score_halal": 4.5,
+ "description": "Capitale cosmopolite de la Malaisie, Kuala Lumpur est l'une des meilleures destinations halal au monde, avec une nourriture halal omniprésente certifiée JAKIM et les emblématiques Tours Petronas.",
+ "image_hero": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1600&q=80",
+ "image_alt": "Tours Petronas de Kuala Lumpur illuminées la nuit",
+ "meta_title": "Kuala Lumpur Halal — Restaurants, Mosquées & Guide Pratique",
+ "meta_description": "Guide complet de Kuala Lumpur halal : restaurants certifiés JAKIM, mosquées, hôtels.",
+ "statistiques": {
+  "mosquees": 850,
+  "restaurants_halal": 8000,
+  "hotels_halal": 120,
+  "habitants_musulmans_pct": 61,
+  "hotels": 15
+ },
+ "infos_pratiques": {
+  "langue": "Malais, Anglais courant partout",
+  "monnaie": "Ringgit malaisien (MYR) — 1€ ≈ 5,1 MYR",
+  "meilleure_periode": "Décembre à avril",
+  "appel_priere": "5 fois par jour via haut-parleurs",
+  "nourriture_halal": "Certification JAKIM obligatoire",
+  "alcool": "Disponible dans certains restaurants non-musulmans",
+  "tenue": "Tenue respectueuse dans les mosquées",
+  "securite": "Très sûre pour les touristes"
+ },
+ "restaurants": [
+  {
+   "nom": "Nasi Lemak Antarabangsa",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Kuala Lumpur",
+   "description": "Nasi lemak 24h, légendaire à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Nasi+Lemak+Antarabangsa+Kuala+Lumpur",
+   "priceRange": "€",
+   "specialite": "Nasi lemak 24h",
+   "nombreAvis": 976,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Jalan Alor Food Street",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Kuala Lumpur",
+   "description": "Rue gastronomique halal nocturne à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Jalan+Alor+Food+Street+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Rue gastronomique halal nocturne",
+   "nombreAvis": 2598,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Village Park Restaurant",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Kuala Lumpur",
+   "description": "Nasi lemak primé à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Village+Park+Restaurant+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Nasi lemak primé",
+   "nombreAvis": 449,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Madam Kwan's",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kuala Lumpur",
+   "description": "Malais fusion, emblématique à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Madam+Kwan%27s+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Malais fusion",
+   "nombreAvis": 1662,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Entier French Rotisserie",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Kuala Lumpur",
+   "description": "Français halal premium à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Entier+French+Rotisserie+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Français halal premium",
+   "nombreAvis": 1792,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Sitka",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Kuala Lumpur",
+   "description": "Farm-to-table halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Sitka+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Farm-to-table halal",
+   "nombreAvis": 1044,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Nobu KL",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Kuala Lumpur",
+   "description": "Japonais halal ultra-luxe à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Nobu+KL+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Japonais halal ultra-luxe",
+   "nombreAvis": 1189,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Cantaloupe Troika Sky Dining",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Kuala Lumpur",
+   "description": "Vue KL, gastronomique à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Cantaloupe+Troika+Sky+Dining+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Vue kl",
+   "nombreAvis": 1007,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Fuego KL",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Kuala Lumpur",
+   "description": "Latin-fusion halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Fuego+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Latin-fusion halal",
+   "nombreAvis": 237,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "DC Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Kuala Lumpur",
+   "description": "Gastronomique malais à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=DC+Restaurant+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique malais",
+   "nombreAvis": 1009,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Renja Dining",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kuala Lumpur",
+   "description": "Malais moderne gastronomique à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Renja+Dining+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Malais moderne gastronomique",
+   "nombreAvis": 1539,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Cilantro Restaurant",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Kuala Lumpur",
+   "description": "Français-asiatique halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Cilantro+Restaurant+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Français-asiatique halal",
+   "nombreAvis": 1222,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Hakka Restaurant KL",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Kuala Lumpur",
+   "description": "Hakka-chinois halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Hakka+Restaurant+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Hakka-chinois halal",
+   "nombreAvis": 2130,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Ming Palace KL",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Kuala Lumpur",
+   "description": "Cantonais halal premium à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Ming+Palace+KL+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Cantonais halal premium",
+   "nombreAvis": 1256,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Enak KL",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Kuala Lumpur",
+   "description": "Malais authentique à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Enak+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Malais authentique",
+   "nombreAvis": 3299,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Atmosphere 360",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Kuala Lumpur",
+   "description": "Tour KL panoramique à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Atmosphere+360+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Tour kl panoramique",
+   "nombreAvis": 468,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "SkyDining Banyan Tree",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Kuala Lumpur",
+   "description": "Gastronomique à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=SkyDining+Banyan+Tree+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique",
+   "nombreAvis": 1286,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Thirty8 Grand Hyatt KL",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Kuala Lumpur",
+   "description": "Gastronomique vue à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Thirty8+Grand+Hyatt+KL+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique vue",
+   "nombreAvis": 1579,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Bijan Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Kuala Lumpur",
+   "description": "Malais fine dining à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Bijan+Restaurant+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Malais fine dining",
+   "nombreAvis": 1289,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Iketeru KL",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kuala Lumpur",
+   "description": "Japonais halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Iketeru+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Japonais halal",
+   "nombreAvis": 2412,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Zipangu KL",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Kuala Lumpur",
+   "description": "Japonais Shangri-La halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Zipangu+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Japonais shangri-la halal",
+   "nombreAvis": 3364,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Srisun Express",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Kuala Lumpur",
+   "description": "Indien malaysia halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Srisun+Express+Kuala+Lumpur",
+   "priceRange": "€",
+   "specialite": "Indien malaysia halal",
+   "nombreAvis": 2344,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Syed Bistro",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Kuala Lumpur",
+   "description": "Naan et curry populaire à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Syed+Bistro+Kuala+Lumpur",
+   "priceRange": "€",
+   "specialite": "Naan et curry populaire",
+   "nombreAvis": 444,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Pelita Nasi Kandar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Kuala Lumpur",
+   "description": "Nasi kandar halal 24h à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Pelita+Nasi+Kandar+Kuala+Lumpur",
+   "priceRange": "€",
+   "specialite": "Nasi kandar halal 24h",
+   "nombreAvis": 417,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Rasa Utara",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Kuala Lumpur",
+   "description": "Malais du nord à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Rasa+Utara+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Malais du nord",
+   "nombreAvis": 299,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Original Kayu Nasi Kandar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Kuala Lumpur",
+   "description": "Style kedah à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Original+Kayu+Nasi+Kandar+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Style kedah",
+   "nombreAvis": 3526,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Restoran Yusoof dan Zakhir",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kuala Lumpur",
+   "description": "Kopitiam légendaire à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Restoran+Yusoof+dan+Zakhir+Kuala+Lumpur",
+   "priceRange": "€",
+   "specialite": "Kopitiam légendaire",
+   "nombreAvis": 1314,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Nasi Kandar Pelita",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Kuala Lumpur",
+   "description": "Institution KL à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Nasi+Kandar+Pelita+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Institution kl",
+   "nombreAvis": 1682,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Ali Maju Nasi Kandar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Kuala Lumpur",
+   "description": "Populaire à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Ali+Maju+Nasi+Kandar+Kuala+Lumpur",
+   "priceRange": "€",
+   "specialite": "Populaire",
+   "nombreAvis": 2409,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Kedai Kopi Yut Kee",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Kuala Lumpur",
+   "description": "Kopitiam halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Kedai+Kopi+Yut+Kee+Kuala+Lumpur",
+   "priceRange": "€",
+   "specialite": "Kopitiam halal",
+   "nombreAvis": 2860,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Murni Discovery",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Kuala Lumpur",
+   "description": "Murtabak géant viral à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Murni+Discovery+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Murtabak géant viral",
+   "nombreAvis": 579,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "D'Village Restaurant",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Kuala Lumpur",
+   "description": "Style kampung à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=D%27Village+Restaurant+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Style kampung",
+   "nombreAvis": 363,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "The Diner KL",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Kuala Lumpur",
+   "description": "Américain halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=The+Diner+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Américain halal",
+   "nombreAvis": 1460,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Burger Bakar",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Kuala Lumpur",
+   "description": "Burgers malais grillés à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+Bakar+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Burgers malais grillés",
+   "nombreAvis": 1038,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "MyBurgerLab",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Kuala Lumpur",
+   "description": "Burgers halal premium à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=MyBurgerLab+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Burgers halal premium",
+   "nombreAvis": 597,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "The Big Smoke KL",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kuala Lumpur",
+   "description": "Brunch halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=The+Big+Smoke+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Brunch halal",
+   "nombreAvis": 87,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Limapulo",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Kuala Lumpur",
+   "description": "Malais hawker premium à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Limapulo+Kuala+Lumpur",
+   "priceRange": "€€€€",
+   "specialite": "Malais hawker premium",
+   "nombreAvis": 145,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Yarl Restaurant",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Kuala Lumpur",
+   "description": "Tamoul-ceylan halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Yarl+Restaurant+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Tamoul-ceylan halal",
+   "nombreAvis": 1062,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Kashmir Fine Indian Dining",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Kuala Lumpur",
+   "description": "Nord-indien halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Kashmir+Fine+Indian+Dining+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Nord-indien halal",
+   "nombreAvis": 3334,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Annalakshmi",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kuala Lumpur",
+   "description": "Indien végétarien halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Annalakshmi+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Indien végétarien halal",
+   "nombreAvis": 2246,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Bunn Choon",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Kuala Lumpur",
+   "description": "Char kway teow halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Bunn+Choon+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Char kway teow halal",
+   "nombreAvis": 80,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Sek Yuen Restaurant",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Kuala Lumpur",
+   "description": "Hakka halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Sek+Yuen+Restaurant+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Hakka halal",
+   "nombreAvis": 470,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Restoran Oversea",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Kuala Lumpur",
+   "description": "Cantonais halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Restoran+Oversea+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Cantonais halal",
+   "nombreAvis": 1255,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Miam Miam KL",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Kuala Lumpur",
+   "description": "Franco-japonais halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Miam+Miam+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Franco-japonais halal",
+   "nombreAvis": 930,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Alexis Bistro KL",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Kuala Lumpur",
+   "description": "Brunch à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Alexis+Bistro+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Brunch",
+   "nombreAvis": 1290,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Ante Kitchen KL",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Kuala Lumpur",
+   "description": "Fusion moderne à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Ante+Kitchen+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Fusion moderne",
+   "nombreAvis": 256,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Pinchos KL",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Kuala Lumpur",
+   "description": "Tapas sans alcool halal à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Pinchos+KL+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Tapas sans alcool halal",
+   "nombreAvis": 584,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Padi Restaurant",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Kuala Lumpur",
+   "description": "Malais haut de gamme à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Padi+Restaurant+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Malais haut de gamme",
+   "nombreAvis": 500,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Penang Road Famous Laksa",
+   "type": "Malaisien",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Kuala Lumpur",
+   "description": "Laksa spécialisé à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Penang+Road+Famous+Laksa+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Laksa spécialisé",
+   "nombreAvis": 1498,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Mahbub Restaurant",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Kuala Lumpur",
+   "description": "Biryani réputé à Kuala Lumpur.",
+   "mapsUrl": "https://maps.google.com/?q=Mahbub+Restaurant+Kuala+Lumpur",
+   "priceRange": "€€",
+   "specialite": "Biryani réputé",
+   "nombreAvis": 812,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r50"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m1",
+   "nom": "Masjid Negara (Mosquée Nationale)",
+   "type": "Grande Mosquée",
+   "adresse": "Jalan Perdana",
+   "description": "La mosquée nationale de Malaisie, symbole de l'indépendance, toit en étoile à 18 branches.",
+   "note": 4.7,
+   "acces_non_musulmans": true,
+   "capacite": 15000
+  },
+  {
+   "id": "m2",
+   "nom": "Masjid Jamek",
+   "type": "Mosquée historique",
+   "adresse": "Jalan Tun Perak",
+   "description": "La plus ancienne mosquée de KL (1907), à la confluence des rivières Klang et Gombak.",
+   "note": 4.6,
+   "acces_non_musulmans": true,
+   "capacite": 2000
+  },
+  {
+   "id": "m3",
+   "nom": "Masjid Wilayah Persekutuan",
+   "type": "Grande Mosquée",
+   "adresse": "Jalan Duta",
+   "description": "Imposante mosquée bleue et blanche au nord de KL.",
+   "note": 4.8,
+   "acces_non_musulmans": true,
+   "capacite": 17000
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Mandarin Oriental Kuala Lumpur",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Kuala Lumpur",
+   "description": "Ultra-luxe à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Kuala+Lumpur+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€€",
+   "nombreAvis": 504,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h1",
+   "lat": 3.1557412,
+   "lng": 101.7118967
+  },
+  {
+   "nom": "Four Seasons Hotel KL",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Kuala Lumpur",
+   "description": "Ultra-luxe à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Hotel+KL+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€€",
+   "nombreAvis": 2483,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h2",
+   "lat": 3.1580799,
+   "lng": 101.7138657
+  },
+  {
+   "nom": "Ritz-Carlton Kuala Lumpur",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Kuala Lumpur",
+   "description": "Luxe à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Ritz-Carlton+Kuala+Lumpur+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€€",
+   "nombreAvis": 2276,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": 3.1469728,
+   "lng": 101.7153426
+  },
+  {
+   "nom": "Shangri-La Hotel KL",
+   "categorie": "Luxe",
+   "score": 4.8,
+   "adresse": "Kuala Lumpur",
+   "description": "Luxe à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Shangri-La+Hotel+KL+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€€",
+   "nombreAvis": 2026,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4",
+   "lat": 3.1541033,
+   "lng": 101.7150455
+  },
+  {
+   "nom": "Grand Hyatt Kuala Lumpur",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Kuala Lumpur",
+   "description": "Luxe à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Hyatt+Kuala+Lumpur+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€€",
+   "nombreAvis": 949,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5",
+   "lat": 3.1536113,
+   "lng": 101.7121373
+  },
+  {
+   "nom": "Hilton KL City Centre",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Kuala Lumpur",
+   "description": "Luxe à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hilton+KL+City+Centre+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€€",
+   "nombreAvis": 1647,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": 3.1398778,
+   "lng": 101.7091022
+  },
+  {
+   "nom": "Traders Hotel KL",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Kuala Lumpur",
+   "description": "Luxe vue Petronas à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Traders+Hotel+KL+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€€",
+   "nombreAvis": 617,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 3.1541033,
+   "lng": 101.7150455
+  },
+  {
+   "nom": "InterContinental KL",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Kuala Lumpur",
+   "description": "Luxe à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=InterContinental+KL+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€€",
+   "nombreAvis": 1915,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": 3.1594561,
+   "lng": 101.7179652
+  },
+  {
+   "nom": "W Kuala Lumpur",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Kuala Lumpur",
+   "description": "Luxe design à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=W+Kuala+Lumpur+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€€",
+   "nombreAvis": 2412,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h9",
+   "lat": 3.1585832,
+   "lng": 101.7093619
+  },
+  {
+   "nom": "Banyan Tree KL",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Kuala Lumpur",
+   "description": "Boutique luxe à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Banyan+Tree+KL+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€",
+   "nombreAvis": 2301,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10",
+   "lat": 3.150231,
+   "lng": 101.7138394
+  },
+  {
+   "nom": "Aloft KL Sentral",
+   "categorie": "Standard",
+   "score": 4.8,
+   "adresse": "Kuala Lumpur",
+   "description": "Standard branché à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Aloft+KL+Sentral+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€",
+   "nombreAvis": 1107,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h11",
+   "lat": 3.1329651,
+   "lng": 101.6860698
+  },
+  {
+   "nom": "Doubletree by Hilton KL",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Kuala Lumpur",
+   "description": "Standard à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Doubletree+by+Hilton+KL+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€",
+   "nombreAvis": 785,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12",
+   "lat": 3.1617227,
+   "lng": 101.719828
+  },
+  {
+   "nom": "Pullman KL City Centre",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Kuala Lumpur",
+   "description": "Standard-luxe à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Pullman+KL+City+Centre+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€€",
+   "nombreAvis": 1635,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h13"
+  },
+  {
+   "nom": "Hotel Maya KL",
+   "categorie": "Riad & Boutique",
+   "score": 4.7,
+   "adresse": "Kuala Lumpur",
+   "description": "Boutique à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Maya+KL+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€€",
+   "nombreAvis": 690,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14",
+   "lat": 3.1587507,
+   "lng": 101.708746
+  },
+  {
+   "nom": "Ibis KLCC",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Kuala Lumpur",
+   "description": "Budget confort à Kuala Lumpur.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Ibis+KLCC+Kuala+Lumpur",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
+   "priceRange": "€€",
+   "nombreAvis": 1600,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Tours Petronas — Skybridge & Observation Deck",
+   "type": "Panorama",
+   "description": "Skybridge au 41e étage, vue 360° au 86e.",
+   "duree": "2h",
+   "prix": "80 MYR (~16€)",
+   "tags": [
+    "panorama",
+    "incontournable"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Tours+Petronas+%E2%80%94+Skybridge+%26+Observation+Deck+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tours+Petronas+%E2%80%94+Skybridge+%26+Observation+Deck+Kuala+Lumpur",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a2",
+   "nom": "Batu Caves",
+   "type": "Culture & Nature",
+   "description": "Grotte calcaire avec temple hindou, 272 marches, singes.",
+   "duree": "3h",
+   "prix": "Gratuit",
+   "tags": [
+    "nature",
+    "culture",
+    "famille"
+   ],
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Batu+Caves+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Batu+Caves+Kuala+Lumpur",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a3",
+   "nom": "Jalan Alor — Street Food Halal",
+   "type": "Gastronomie",
+   "description": "La rue la plus célèbre de KL pour le street food halal (actif dès 17h).",
+   "duree": "2h",
+   "prix": "20–50 MYR",
+   "tags": [
+    "gastronomie",
+    "soirée"
+   ],
+   "categorie": "Gastronomie",
+   "mapsUrl": "https://maps.google.com/?q=Jalan+Alor+%E2%80%94+Street+Food+Halal+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jalan+Alor+%E2%80%94+Street+Food+Halal+Kuala+Lumpur",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a4",
+   "nom": "KL Bird Park",
+   "type": "Nature & Famille",
+   "description": "Le plus grand parc à oiseaux en vol libre du monde (21 ha).",
+   "duree": "3h",
+   "prix": "67 MYR (~13€)",
+   "tags": [
+    "famille",
+    "nature"
+   ],
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=KL+Bird+Park+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=KL+Bird+Park+Kuala+Lumpur",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a5",
+   "nom": "Kampung Baru",
+   "type": "Immersion culturelle",
+   "description": "Village malais au cœur de KL, marchés du vendredi, restaurants halal authentiques.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "tags": [
+    "culture",
+    "authentique"
+   ],
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Kampung+Baru+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kampung+Baru+Kuala+Lumpur",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Nationale Masjid Negara",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée nationale, capacité 15 000 fidèles.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Nationale+Masjid+Negara+Kuala+Lumpur",
+   "id": "a6",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Nationale+Masjid+Negara+Kuala+Lumpur",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Rose Masjid Wilayah",
+   "categorie": "Religieux & Spirituel",
+   "description": "L'une des plus belles mosquées de KL, dôme rosé.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Rose+Masjid+Wilayah+Kuala+Lumpur",
+   "id": "a7",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Rose+Masjid+Wilayah+Kuala+Lumpur",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Jalan Petaling Chinatown",
+   "categorie": "Shopping & Souks",
+   "description": "Shopping de rue, nombreux stands halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Jalan+Petaling+Chinatown+Kuala+Lumpur",
+   "id": "a8",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jalan+Petaling+Chinatown+Kuala+Lumpur",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Menara KL Tower",
+   "categorie": "Histoire & Culture",
+   "description": "Pont de verre, vue 360° sur KL.",
+   "duree": "1-2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Menara+KL+Tower+Kuala+Lumpur",
+   "id": "a9",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Menara+KL+Tower+Kuala+Lumpur",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Kuala Lumpur",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Kuala+Lumpur+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Kuala+Lumpur+Kuala+Lumpur",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a10"
+  },
+  {
+   "nom": "Grand marché central de Kuala Lumpur",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Kuala+Lumpur+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Kuala+Lumpur+Kuala+Lumpur",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Kuala Lumpur",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Kuala+Lumpur+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Kuala+Lumpur+Kuala+Lumpur",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Musée de la ville de Kuala Lumpur",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Kuala+Lumpur+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Kuala+Lumpur+Kuala+Lumpur",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Food tour halal de Kuala Lumpur",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Kuala+Lumpur+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Kuala+Lumpur+Kuala+Lumpur",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Hammam traditionnel de Kuala Lumpur",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Kuala+Lumpur+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Kuala+Lumpur+Kuala+Lumpur",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Mosquée historique de Kuala Lumpur",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Kuala+Lumpur+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Kuala+Lumpur+Kuala+Lumpur",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Parc et jardins de Kuala Lumpur",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Kuala+Lumpur+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Kuala+Lumpur+Kuala+Lumpur",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Kuala Lumpur",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Kuala+Lumpur+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Kuala+Lumpur+Kuala+Lumpur",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Kuala Lumpur",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Kuala+Lumpur+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Kuala+Lumpur+Kuala+Lumpur",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Quartier historique de Kuala Lumpur 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Kuala+Lumpur+10+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Kuala+Lumpur+10+Kuala+Lumpur",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Grand marché central de Kuala Lumpur 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Kuala+Lumpur+11+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Kuala+Lumpur+11+Kuala+Lumpur",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Kuala Lumpur 12",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Kuala+Lumpur+12+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Kuala+Lumpur+12+Kuala+Lumpur",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Musée de la ville de Kuala Lumpur 13",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Kuala+Lumpur+13+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Kuala+Lumpur+13+Kuala+Lumpur",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Food tour halal de Kuala Lumpur 14",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Kuala+Lumpur+14+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Kuala+Lumpur+14+Kuala+Lumpur",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Hammam traditionnel de Kuala Lumpur 15",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Kuala+Lumpur+15+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Kuala+Lumpur+15+Kuala+Lumpur",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Mosquée historique de Kuala Lumpur 16",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Kuala+Lumpur+16+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Kuala+Lumpur+16+Kuala+Lumpur",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Parc et jardins de Kuala Lumpur 17",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Kuala+Lumpur+17+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Kuala+Lumpur+17+Kuala+Lumpur",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Kuala Lumpur 18",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Kuala+Lumpur+18+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Kuala+Lumpur+18+Kuala+Lumpur",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Kuala Lumpur 19",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Kuala+Lumpur+19+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Kuala+Lumpur+19+Kuala+Lumpur",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Quartier historique de Kuala Lumpur 20",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Kuala+Lumpur+20+Kuala+Lumpur",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Kuala+Lumpur+20+Kuala+Lumpur",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "road_trips": [
+  {
+   "id": "rt1",
+   "titre": "KL → Malacca → Johor Bahru",
+   "duree": "3 jours",
+   "distance_km": 380,
+   "etapes": [
+    "Kuala Lumpur",
+    "Malacca",
+    "Johor Bahru"
+   ],
+   "description": "Malacca (UNESCO) puis Johor Bahru aux portes de Singapour.",
+   "conseils_halal": "Nombreux restaurants halal dans la vieille ville de Malacca.",
+   "budget_estime": "150–250€ par personne"
+  },
+  {
+   "id": "rt2",
+   "titre": "KL → Cameron Highlands → Penang",
+   "duree": "4 jours",
+   "distance_km": 450,
+   "etapes": [
+    "Kuala Lumpur",
+    "Cameron Highlands",
+    "Ipoh",
+    "Penang"
+   ],
+   "description": "Plantations de thé en altitude puis street food légendaire de Penang.",
+   "conseils_halal": "Penang : des dizaines d'échoppes avec certification JAKIM.",
+   "budget_estime": "200–350€ par personne"
+  }
+ ],
+ "voyages_par_type": {
+  "en_couple": {
+   "intro": "KL est romantique et accessible, entre dîners halal avec vue Petronas et spas de luxe.",
+   "top_experiences": [
+    "Dîner panoramique Petronas",
+    "Spa traditionnel malais",
+    "Croisière Putrajaya"
+   ],
+   "conseils": "Atmosphere 360 (tour de télécom KL) : dîner rotatif entièrement halal.",
+   "hotels_recommandes": [
+    "The RuMa Hotel & Residences",
+    "Mandarin Oriental Kuala Lumpur"
+   ]
+  },
+  "en_famille": {
+   "intro": "KL famille par excellence : Aquaria KLCC, KL Bird Park, Petronas.",
+   "top_experiences": [
+    "Aquaria KLCC",
+    "KL Bird Park",
+    "Batu Caves",
+    "Petrosains"
+   ],
+   "conseils": "KL City Pass pour accès réduit aux attractions.",
+   "hotels_recommandes": [
+    "Mandarin Oriental Kuala Lumpur",
+    "Dorsett Bukit Bintang"
+   ]
+  },
+  "entre_amis": {
+   "intro": "Street food mythique, shopping de luxe et activités outdoor.",
+   "top_experiences": [
+    "Food crawl Jalan Alor",
+    "Shopping KLCC",
+    "Marché nocturne Kampung Baru"
+   ],
+   "conseils": "Marché du vendredi à Kampung Baru, entièrement halal dès 20h.",
+   "hotels_recommandes": [
+    "Dorsett Bukit Bintang"
+   ]
+  },
+  "voyage_solo": {
+   "intro": "KL très safe et pratique : métro excellent, wifi partout, coûts modérés.",
+   "top_experiences": [
+    "Exploration vélo KL Bike Share",
+    "Cours de cuisine malaisienne",
+    "Randonnée Parc National"
+   ],
+   "conseils": "Le métro MRT/LRT permet d'aller partout à moins de 5 MYR.",
+   "hotels_recommandes": [
+    "Dorsett Bukit Bintang"
+   ]
+  },
+  "voyage_spirituel": {
+   "intro": "Malaisie modèle mondial : infrastructure halal JAKIM, mosquées majestueuses.",
+   "top_experiences": [
+    "Jumu'ah à Masjid Negara",
+    "Institut IKIM",
+    "Université Islamique Internationale"
+   ],
+   "conseils": "KL totalement halal-compatible : même les malls ont des salles de prière.",
+   "hotels_recommandes": [
+    "The RuMa Hotel & Residences"
+   ]
+  }
+ },
+ "articles_lies": [],
+ "villes_proches": [
+  "singapore",
+  "penang",
+  "malacca"
+ ],
+ "codeISO": "MY",
+ "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1600&q=80",
+ "continent": "Asie",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Kuala Lumpur — Halal Trust Score 5/5.",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Kuala Lumpur",
+   "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kuala Lumpur",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Kuala+Lumpur+Kuala+Lumpur",
+   "capacite": 1867,
+   "anneeConstruction": 1947,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 3.139,
     "lng": 101.6869
+   }
   },
-  "score_halal": 4.5,
-  "description": "Capitale cosmopolite de la Malaisie, Kuala Lumpur est l'une des meilleures destinations halal au monde, avec une nourriture halal omniprésente certifiée JAKIM et les emblématiques Tours Petronas.",
-  "image_hero": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1600&q=80",
-  "image_alt": "Tours Petronas de Kuala Lumpur illuminées la nuit",
-  "meta_title": "Kuala Lumpur Halal — Restaurants, Mosquées & Guide Pratique",
-  "meta_description": "Guide complet de Kuala Lumpur halal : restaurants certifiés JAKIM, mosquées, hôtels.",
-  "statistiques": {
-    "mosquees": 850,
-    "restaurants_halal": 8000,
-    "hotels_halal": 120,
-    "habitants_musulmans_pct": 61
+  {
+   "nom": "Grande Mosquée de Kuala Lumpur",
+   "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kuala Lumpur",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Kuala+Lumpur+Kuala+Lumpur",
+   "capacite": 6027,
+   "anneeConstruction": 1987,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 3.139,
+    "lng": 101.6869
+   }
   },
-  "infos_pratiques": {
-    "langue": "Malais, Anglais courant partout",
-    "monnaie": "Ringgit malaisien (MYR) — 1€ ≈ 5,1 MYR",
-    "meilleure_periode": "Décembre à avril",
-    "appel_priere": "5 fois par jour via haut-parleurs",
-    "nourriture_halal": "Certification JAKIM obligatoire",
-    "alcool": "Disponible dans certains restaurants non-musulmans",
-    "tenue": "Tenue respectueuse dans les mosquées",
-    "securite": "Très sûre pour les touristes"
+  {
+   "nom": "Mosquée Al-Noor de Kuala Lumpur",
+   "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kuala Lumpur",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Kuala+Lumpur+Kuala+Lumpur",
+   "capacite": 3078,
+   "anneeConstruction": 1998,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 3.139,
+    "lng": 101.6869
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Nasi Lemak Antarabangsa",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Kuala Lumpur",
-      "description": "Nasi lemak 24h, légendaire à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Nasi+Lemak+Antarabangsa+Kuala+Lumpur",
-      "priceRange": "€",
-      "specialite": "Nasi lemak 24h",
-      "nombreAvis": 976,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Jalan Alor Food Street",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Kuala Lumpur",
-      "description": "Rue gastronomique halal nocturne à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Jalan+Alor+Food+Street+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Rue gastronomique halal nocturne",
-      "nombreAvis": 2598,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Village Park Restaurant",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Kuala Lumpur",
-      "description": "Nasi lemak primé à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Village+Park+Restaurant+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Nasi lemak primé",
-      "nombreAvis": 449,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Madam Kwan's",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kuala Lumpur",
-      "description": "Malais fusion, emblématique à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Madam+Kwan%27s+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Malais fusion",
-      "nombreAvis": 1662,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Entier French Rotisserie",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Kuala Lumpur",
-      "description": "Français halal premium à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Entier+French+Rotisserie+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Français halal premium",
-      "nombreAvis": 1792,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Sitka",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Kuala Lumpur",
-      "description": "Farm-to-table halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Sitka+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Farm-to-table halal",
-      "nombreAvis": 1044,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Nobu KL",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Kuala Lumpur",
-      "description": "Japonais halal ultra-luxe à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Nobu+KL+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Japonais halal ultra-luxe",
-      "nombreAvis": 1189,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Cantaloupe Troika Sky Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Kuala Lumpur",
-      "description": "Vue KL, gastronomique à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Cantaloupe+Troika+Sky+Dining+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Vue kl",
-      "nombreAvis": 1007,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Fuego KL",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Kuala Lumpur",
-      "description": "Latin-fusion halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Fuego+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Latin-fusion halal",
-      "nombreAvis": 237,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "DC Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Kuala Lumpur",
-      "description": "Gastronomique malais à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=DC+Restaurant+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique malais",
-      "nombreAvis": 1009,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Renja Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kuala Lumpur",
-      "description": "Malais moderne gastronomique à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Renja+Dining+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Malais moderne gastronomique",
-      "nombreAvis": 1539,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Cilantro Restaurant",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Kuala Lumpur",
-      "description": "Français-asiatique halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Cilantro+Restaurant+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Français-asiatique halal",
-      "nombreAvis": 1222,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Hakka Restaurant KL",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Kuala Lumpur",
-      "description": "Hakka-chinois halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Hakka+Restaurant+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Hakka-chinois halal",
-      "nombreAvis": 2130,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Ming Palace KL",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Kuala Lumpur",
-      "description": "Cantonais halal premium à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Ming+Palace+KL+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Cantonais halal premium",
-      "nombreAvis": 1256,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Enak KL",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Kuala Lumpur",
-      "description": "Malais authentique à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Enak+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Malais authentique",
-      "nombreAvis": 3299,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Atmosphere 360",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Kuala Lumpur",
-      "description": "Tour KL panoramique à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Atmosphere+360+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Tour kl panoramique",
-      "nombreAvis": 468,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "SkyDining Banyan Tree",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Kuala Lumpur",
-      "description": "Gastronomique à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=SkyDining+Banyan+Tree+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 1286,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Thirty8 Grand Hyatt KL",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Kuala Lumpur",
-      "description": "Gastronomique vue à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Thirty8+Grand+Hyatt+KL+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique vue",
-      "nombreAvis": 1579,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Bijan Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Kuala Lumpur",
-      "description": "Malais fine dining à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Bijan+Restaurant+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Malais fine dining",
-      "nombreAvis": 1289,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Iketeru KL",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kuala Lumpur",
-      "description": "Japonais halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Iketeru+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Japonais halal",
-      "nombreAvis": 2412,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Zipangu KL",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Kuala Lumpur",
-      "description": "Japonais Shangri-La halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Zipangu+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Japonais shangri-la halal",
-      "nombreAvis": 3364,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Srisun Express",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Kuala Lumpur",
-      "description": "Indien malaysia halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Srisun+Express+Kuala+Lumpur",
-      "priceRange": "€",
-      "specialite": "Indien malaysia halal",
-      "nombreAvis": 2344,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Syed Bistro",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Kuala Lumpur",
-      "description": "Naan et curry populaire à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Syed+Bistro+Kuala+Lumpur",
-      "priceRange": "€",
-      "specialite": "Naan et curry populaire",
-      "nombreAvis": 444,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Pelita Nasi Kandar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Kuala Lumpur",
-      "description": "Nasi kandar halal 24h à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Pelita+Nasi+Kandar+Kuala+Lumpur",
-      "priceRange": "€",
-      "specialite": "Nasi kandar halal 24h",
-      "nombreAvis": 417,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Rasa Utara",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Kuala Lumpur",
-      "description": "Malais du nord à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Rasa+Utara+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Malais du nord",
-      "nombreAvis": 299,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Original Kayu Nasi Kandar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Kuala Lumpur",
-      "description": "Style kedah à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Original+Kayu+Nasi+Kandar+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Style kedah",
-      "nombreAvis": 3526,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Restoran Yusoof dan Zakhir",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kuala Lumpur",
-      "description": "Kopitiam légendaire à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Yusoof+dan+Zakhir+Kuala+Lumpur",
-      "priceRange": "€",
-      "specialite": "Kopitiam légendaire",
-      "nombreAvis": 1314,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Nasi Kandar Pelita",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Kuala Lumpur",
-      "description": "Institution KL à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Nasi+Kandar+Pelita+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Institution kl",
-      "nombreAvis": 1682,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Ali Maju Nasi Kandar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Kuala Lumpur",
-      "description": "Populaire à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Ali+Maju+Nasi+Kandar+Kuala+Lumpur",
-      "priceRange": "€",
-      "specialite": "Populaire",
-      "nombreAvis": 2409,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Kedai Kopi Yut Kee",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Kuala Lumpur",
-      "description": "Kopitiam halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Kedai+Kopi+Yut+Kee+Kuala+Lumpur",
-      "priceRange": "€",
-      "specialite": "Kopitiam halal",
-      "nombreAvis": 2860,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Murni Discovery",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Kuala Lumpur",
-      "description": "Murtabak géant viral à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Murni+Discovery+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Murtabak géant viral",
-      "nombreAvis": 579,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "D'Village Restaurant",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Kuala Lumpur",
-      "description": "Style kampung à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=D%27Village+Restaurant+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Style kampung",
-      "nombreAvis": 363,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "The Diner KL",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Kuala Lumpur",
-      "description": "Américain halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=The+Diner+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Américain halal",
-      "nombreAvis": 1460,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Burger Bakar",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Kuala Lumpur",
-      "description": "Burgers malais grillés à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+Bakar+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Burgers malais grillés",
-      "nombreAvis": 1038,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "MyBurgerLab",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Kuala Lumpur",
-      "description": "Burgers halal premium à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=MyBurgerLab+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Burgers halal premium",
-      "nombreAvis": 597,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "The Big Smoke KL",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kuala Lumpur",
-      "description": "Brunch halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=The+Big+Smoke+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Brunch halal",
-      "nombreAvis": 87,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Limapulo",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Kuala Lumpur",
-      "description": "Malais hawker premium à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Limapulo+Kuala+Lumpur",
-      "priceRange": "€€€€",
-      "specialite": "Malais hawker premium",
-      "nombreAvis": 145,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Yarl Restaurant",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Kuala Lumpur",
-      "description": "Tamoul-ceylan halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Yarl+Restaurant+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Tamoul-ceylan halal",
-      "nombreAvis": 1062,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Kashmir Fine Indian Dining",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Kuala Lumpur",
-      "description": "Nord-indien halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Kashmir+Fine+Indian+Dining+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Nord-indien halal",
-      "nombreAvis": 3334,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Annalakshmi",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kuala Lumpur",
-      "description": "Indien végétarien halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Annalakshmi+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Indien végétarien halal",
-      "nombreAvis": 2246,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Bunn Choon",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Kuala Lumpur",
-      "description": "Char kway teow halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Bunn+Choon+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Char kway teow halal",
-      "nombreAvis": 80,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Sek Yuen Restaurant",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Kuala Lumpur",
-      "description": "Hakka halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Sek+Yuen+Restaurant+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Hakka halal",
-      "nombreAvis": 470,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Restoran Oversea",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Kuala Lumpur",
-      "description": "Cantonais halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Oversea+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Cantonais halal",
-      "nombreAvis": 1255,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Miam Miam KL",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Kuala Lumpur",
-      "description": "Franco-japonais halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Miam+Miam+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Franco-japonais halal",
-      "nombreAvis": 930,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Alexis Bistro KL",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Kuala Lumpur",
-      "description": "Brunch à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Alexis+Bistro+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Brunch",
-      "nombreAvis": 1290,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Ante Kitchen KL",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Kuala Lumpur",
-      "description": "Fusion moderne à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Ante+Kitchen+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Fusion moderne",
-      "nombreAvis": 256,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Pinchos KL",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Kuala Lumpur",
-      "description": "Tapas sans alcool halal à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Pinchos+KL+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Tapas sans alcool halal",
-      "nombreAvis": 584,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Padi Restaurant",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Kuala Lumpur",
-      "description": "Malais haut de gamme à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Padi+Restaurant+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Malais haut de gamme",
-      "nombreAvis": 500,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Penang Road Famous Laksa",
-      "type": "Malaisien",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Kuala Lumpur",
-      "description": "Laksa spécialisé à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Penang+Road+Famous+Laksa+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Laksa spécialisé",
-      "nombreAvis": 1498,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Mahbub Restaurant",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Kuala Lumpur",
-      "description": "Biryani réputé à Kuala Lumpur.",
-      "mapsUrl": "https://maps.google.com/?q=Mahbub+Restaurant+Kuala+Lumpur",
-      "priceRange": "€€",
-      "specialite": "Biryani réputé",
-      "nombreAvis": 812,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r50"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m1",
-      "nom": "Masjid Negara (Mosquée Nationale)",
-      "type": "Grande Mosquée",
-      "adresse": "Jalan Perdana",
-      "description": "La mosquée nationale de Malaisie, symbole de l'indépendance, toit en étoile à 18 branches.",
-      "note": 4.7,
-      "acces_non_musulmans": true,
-      "capacite": 15000
-    },
-    {
-      "id": "m2",
-      "nom": "Masjid Jamek",
-      "type": "Mosquée historique",
-      "adresse": "Jalan Tun Perak",
-      "description": "La plus ancienne mosquée de KL (1907), à la confluence des rivières Klang et Gombak.",
-      "note": 4.6,
-      "acces_non_musulmans": true,
-      "capacite": 2000
-    },
-    {
-      "id": "m3",
-      "nom": "Masjid Wilayah Persekutuan",
-      "type": "Grande Mosquée",
-      "adresse": "Jalan Duta",
-      "description": "Imposante mosquée bleue et blanche au nord de KL.",
-      "note": 4.8,
-      "acces_non_musulmans": true,
-      "capacite": 17000
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Mandarin Oriental Kuala Lumpur",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Kuala Lumpur",
-      "description": "Ultra-luxe à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Kuala+Lumpur+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€€",
-      "nombreAvis": 504,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Four Seasons Hotel KL",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Kuala Lumpur",
-      "description": "Ultra-luxe à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Hotel+KL+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€€",
-      "nombreAvis": 2483,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Ritz-Carlton Kuala Lumpur",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Kuala Lumpur",
-      "description": "Luxe à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Ritz-Carlton+Kuala+Lumpur+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€€",
-      "nombreAvis": 2276,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Shangri-La Hotel KL",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Kuala Lumpur",
-      "description": "Luxe à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Shangri-La+Hotel+KL+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€€",
-      "nombreAvis": 2026,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Grand Hyatt Kuala Lumpur",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Kuala Lumpur",
-      "description": "Luxe à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Hyatt+Kuala+Lumpur+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€€",
-      "nombreAvis": 949,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Hilton KL City Centre",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Kuala Lumpur",
-      "description": "Luxe à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hilton+KL+City+Centre+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€€",
-      "nombreAvis": 1647,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Traders Hotel KL",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Kuala Lumpur",
-      "description": "Luxe vue Petronas à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Traders+Hotel+KL+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€€",
-      "nombreAvis": 617,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "InterContinental KL",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Kuala Lumpur",
-      "description": "Luxe à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=InterContinental+KL+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€€",
-      "nombreAvis": 1915,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "W Kuala Lumpur",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Kuala Lumpur",
-      "description": "Luxe design à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=W+Kuala+Lumpur+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€€",
-      "nombreAvis": 2412,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Banyan Tree KL",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Kuala Lumpur",
-      "description": "Boutique luxe à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Banyan+Tree+KL+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€",
-      "nombreAvis": 2301,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Aloft KL Sentral",
-      "categorie": "Standard",
-      "score": 4.8,
-      "adresse": "Kuala Lumpur",
-      "description": "Standard branché à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Aloft+KL+Sentral+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€",
-      "nombreAvis": 1107,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Doubletree by Hilton KL",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Kuala Lumpur",
-      "description": "Standard à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Doubletree+by+Hilton+KL+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€",
-      "nombreAvis": 785,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Pullman KL City Centre",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Kuala Lumpur",
-      "description": "Standard-luxe à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Pullman+KL+City+Centre+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€€",
-      "nombreAvis": 1635,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "Hotel Maya KL",
-      "categorie": "Riad & Boutique",
-      "score": 4.7,
-      "adresse": "Kuala Lumpur",
-      "description": "Boutique à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Maya+KL+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€€",
-      "nombreAvis": 690,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Ibis KLCC",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Kuala Lumpur",
-      "description": "Budget confort à Kuala Lumpur.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Ibis+KLCC+Kuala+Lumpur",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Kuala+Lumpur&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=kuala-lumpur",
-      "priceRange": "€€",
-      "nombreAvis": 1600,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Tours Petronas — Skybridge & Observation Deck",
-      "type": "Panorama",
-      "description": "Skybridge au 41e étage, vue 360° au 86e.",
-      "duree": "2h",
-      "prix": "80 MYR (~16€)",
-      "tags": [
-        "panorama",
-        "incontournable"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Tours+Petronas+%E2%80%94+Skybridge+%26+Observation+Deck+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tours+Petronas+%E2%80%94+Skybridge+%26+Observation+Deck+Kuala+Lumpur",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Batu Caves",
-      "type": "Culture & Nature",
-      "description": "Grotte calcaire avec temple hindou, 272 marches, singes.",
-      "duree": "3h",
-      "prix": "Gratuit",
-      "tags": [
-        "nature",
-        "culture",
-        "famille"
-      ],
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Batu+Caves+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Batu+Caves+Kuala+Lumpur",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Jalan Alor — Street Food Halal",
-      "type": "Gastronomie",
-      "description": "La rue la plus célèbre de KL pour le street food halal (actif dès 17h).",
-      "duree": "2h",
-      "prix": "20–50 MYR",
-      "tags": [
-        "gastronomie",
-        "soirée"
-      ],
-      "categorie": "Gastronomie",
-      "mapsUrl": "https://maps.google.com/?q=Jalan+Alor+%E2%80%94+Street+Food+Halal+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jalan+Alor+%E2%80%94+Street+Food+Halal+Kuala+Lumpur",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "KL Bird Park",
-      "type": "Nature & Famille",
-      "description": "Le plus grand parc à oiseaux en vol libre du monde (21 ha).",
-      "duree": "3h",
-      "prix": "67 MYR (~13€)",
-      "tags": [
-        "famille",
-        "nature"
-      ],
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=KL+Bird+Park+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=KL+Bird+Park+Kuala+Lumpur",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a5",
-      "nom": "Kampung Baru",
-      "type": "Immersion culturelle",
-      "description": "Village malais au cœur de KL, marchés du vendredi, restaurants halal authentiques.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "tags": [
-        "culture",
-        "authentique"
-      ],
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Kampung+Baru+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kampung+Baru+Kuala+Lumpur",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Nationale Masjid Negara",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée nationale, capacité 15 000 fidèles.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Nationale+Masjid+Negara+Kuala+Lumpur",
-      "id": "a6",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Nationale+Masjid+Negara+Kuala+Lumpur",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Rose Masjid Wilayah",
-      "categorie": "Religieux & Spirituel",
-      "description": "L'une des plus belles mosquées de KL, dôme rosé.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Rose+Masjid+Wilayah+Kuala+Lumpur",
-      "id": "a7",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Rose+Masjid+Wilayah+Kuala+Lumpur",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Jalan Petaling Chinatown",
-      "categorie": "Shopping & Souks",
-      "description": "Shopping de rue, nombreux stands halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Jalan+Petaling+Chinatown+Kuala+Lumpur",
-      "id": "a8",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jalan+Petaling+Chinatown+Kuala+Lumpur",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Menara KL Tower",
-      "categorie": "Histoire & Culture",
-      "description": "Pont de verre, vue 360° sur KL.",
-      "duree": "1-2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Menara+KL+Tower+Kuala+Lumpur",
-      "id": "a9",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Menara+KL+Tower+Kuala+Lumpur",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Kuala Lumpur",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Kuala+Lumpur+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Kuala+Lumpur+Kuala+Lumpur",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Grand marché central de Kuala Lumpur",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Kuala+Lumpur+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Kuala+Lumpur+Kuala+Lumpur",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Kuala Lumpur",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Kuala+Lumpur+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Kuala+Lumpur+Kuala+Lumpur",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Musée de la ville de Kuala Lumpur",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Kuala+Lumpur+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Kuala+Lumpur+Kuala+Lumpur",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Food tour halal de Kuala Lumpur",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Kuala+Lumpur+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Kuala+Lumpur+Kuala+Lumpur",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Hammam traditionnel de Kuala Lumpur",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Kuala+Lumpur+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Kuala+Lumpur+Kuala+Lumpur",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Mosquée historique de Kuala Lumpur",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Kuala+Lumpur+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Kuala+Lumpur+Kuala+Lumpur",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Parc et jardins de Kuala Lumpur",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Kuala+Lumpur+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Kuala+Lumpur+Kuala+Lumpur",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Kuala Lumpur",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Kuala+Lumpur+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Kuala+Lumpur+Kuala+Lumpur",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Kuala Lumpur",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Kuala+Lumpur+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Kuala+Lumpur+Kuala+Lumpur",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Quartier historique de Kuala Lumpur 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Kuala+Lumpur+10+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Kuala+Lumpur+10+Kuala+Lumpur",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Grand marché central de Kuala Lumpur 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Kuala+Lumpur+11+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Kuala+Lumpur+11+Kuala+Lumpur",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Kuala Lumpur 12",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Kuala+Lumpur+12+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Kuala+Lumpur+12+Kuala+Lumpur",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Musée de la ville de Kuala Lumpur 13",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Kuala+Lumpur+13+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Kuala+Lumpur+13+Kuala+Lumpur",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Food tour halal de Kuala Lumpur 14",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Kuala+Lumpur+14+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Kuala+Lumpur+14+Kuala+Lumpur",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Hammam traditionnel de Kuala Lumpur 15",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Kuala+Lumpur+15+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Kuala+Lumpur+15+Kuala+Lumpur",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Mosquée historique de Kuala Lumpur 16",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Kuala+Lumpur+16+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Kuala+Lumpur+16+Kuala+Lumpur",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Parc et jardins de Kuala Lumpur 17",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Kuala+Lumpur+17+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Kuala+Lumpur+17+Kuala+Lumpur",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Kuala Lumpur 18",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Kuala+Lumpur+18+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Kuala+Lumpur+18+Kuala+Lumpur",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Kuala Lumpur 19",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Kuala+Lumpur+19+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Kuala+Lumpur+19+Kuala+Lumpur",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Quartier historique de Kuala Lumpur 20",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Kuala+Lumpur+20+Kuala+Lumpur",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Kuala+Lumpur+20+Kuala+Lumpur",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "road_trips": [
-    {
-      "id": "rt1",
-      "titre": "KL → Malacca → Johor Bahru",
-      "duree": "3 jours",
-      "distance_km": 380,
-      "etapes": [
-        "Kuala Lumpur",
-        "Malacca",
-        "Johor Bahru"
-      ],
-      "description": "Malacca (UNESCO) puis Johor Bahru aux portes de Singapour.",
-      "conseils_halal": "Nombreux restaurants halal dans la vieille ville de Malacca.",
-      "budget_estime": "150–250€ par personne"
-    },
-    {
-      "id": "rt2",
-      "titre": "KL → Cameron Highlands → Penang",
-      "duree": "4 jours",
-      "distance_km": 450,
-      "etapes": [
-        "Kuala Lumpur",
-        "Cameron Highlands",
-        "Ipoh",
-        "Penang"
-      ],
-      "description": "Plantations de thé en altitude puis street food légendaire de Penang.",
-      "conseils_halal": "Penang : des dizaines d'échoppes avec certification JAKIM.",
-      "budget_estime": "200–350€ par personne"
-    }
-  ],
-  "voyages_par_type": {
-    "en_couple": {
-      "intro": "KL est romantique et accessible, entre dîners halal avec vue Petronas et spas de luxe.",
-      "top_experiences": [
-        "Dîner panoramique Petronas",
-        "Spa traditionnel malais",
-        "Croisière Putrajaya"
-      ],
-      "conseils": "Atmosphere 360 (tour de télécom KL) : dîner rotatif entièrement halal.",
-      "hotels_recommandes": [
-        "The RuMa Hotel & Residences",
-        "Mandarin Oriental Kuala Lumpur"
-      ]
-    },
-    "en_famille": {
-      "intro": "KL famille par excellence : Aquaria KLCC, KL Bird Park, Petronas.",
-      "top_experiences": [
-        "Aquaria KLCC",
-        "KL Bird Park",
-        "Batu Caves",
-        "Petrosains"
-      ],
-      "conseils": "KL City Pass pour accès réduit aux attractions.",
-      "hotels_recommandes": [
-        "Mandarin Oriental Kuala Lumpur",
-        "Dorsett Bukit Bintang"
-      ]
-    },
-    "entre_amis": {
-      "intro": "Street food mythique, shopping de luxe et activités outdoor.",
-      "top_experiences": [
-        "Food crawl Jalan Alor",
-        "Shopping KLCC",
-        "Marché nocturne Kampung Baru"
-      ],
-      "conseils": "Marché du vendredi à Kampung Baru, entièrement halal dès 20h.",
-      "hotels_recommandes": [
-        "Dorsett Bukit Bintang"
-      ]
-    },
-    "voyage_solo": {
-      "intro": "KL très safe et pratique : métro excellent, wifi partout, coûts modérés.",
-      "top_experiences": [
-        "Exploration vélo KL Bike Share",
-        "Cours de cuisine malaisienne",
-        "Randonnée Parc National"
-      ],
-      "conseils": "Le métro MRT/LRT permet d'aller partout à moins de 5 MYR.",
-      "hotels_recommandes": [
-        "Dorsett Bukit Bintang"
-      ]
-    },
-    "voyage_spirituel": {
-      "intro": "Malaisie modèle mondial : infrastructure halal JAKIM, mosquées majestueuses.",
-      "top_experiences": [
-        "Jumu'ah à Masjid Negara",
-        "Institut IKIM",
-        "Université Islamique Internationale"
-      ],
-      "conseils": "KL totalement halal-compatible : même les malls ont des salles de prière.",
-      "hotels_recommandes": [
-        "The RuMa Hotel & Residences"
-      ]
-    }
+  {
+   "nom": "Mosquée Al-Salam de Kuala Lumpur",
+   "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kuala Lumpur",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Kuala+Lumpur+Kuala+Lumpur",
+   "capacite": 2292,
+   "anneeConstruction": 2012,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 3.139,
+    "lng": 101.6869
+   }
   },
-  "articles_lies": [],
-  "villes_proches": [
-    "singapore",
-    "penang",
-    "malacca"
-  ],
-  "codeISO": "MY",
-  "image": "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1600&q=80",
-  "continent": "Asie",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Kuala Lumpur — Halal Trust Score 5/5.",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Kuala Lumpur",
-      "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kuala Lumpur",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Kuala+Lumpur+Kuala+Lumpur",
-      "capacite": 1867,
-      "anneeConstruction": 1947,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 3.139,
-        "lng": 101.6869
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Kuala Lumpur",
-      "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kuala Lumpur",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Kuala+Lumpur+Kuala+Lumpur",
-      "capacite": 6027,
-      "anneeConstruction": 1987,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 3.139,
-        "lng": 101.6869
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Kuala Lumpur",
-      "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kuala Lumpur",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Kuala+Lumpur+Kuala+Lumpur",
-      "capacite": 3078,
-      "anneeConstruction": 1998,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 3.139,
-        "lng": 101.6869
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Kuala Lumpur",
-      "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kuala Lumpur",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Kuala+Lumpur+Kuala+Lumpur",
-      "capacite": 2292,
-      "anneeConstruction": 2012,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 3.139,
-        "lng": 101.6869
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Kuala Lumpur",
-      "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kuala Lumpur",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Kuala+Lumpur+Kuala+Lumpur",
-      "capacite": 3093,
-      "anneeConstruction": 1953,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 3.139,
-        "lng": 101.6869
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Kuala Lumpur",
-      "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kuala Lumpur",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Kuala+Lumpur+Kuala+Lumpur",
-      "capacite": 1464,
-      "anneeConstruction": 1924,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 3.139,
-        "lng": 101.6869
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Kuala Lumpur",
-      "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kuala Lumpur",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Kuala+Lumpur+Kuala+Lumpur",
-      "capacite": 856,
-      "anneeConstruction": 1976,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 3.139,
-        "lng": 101.6869
-      }
-    },
-    {
-      "nom": "Mosquée historique de Kuala Lumpur",
-      "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kuala Lumpur",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Kuala+Lumpur+Kuala+Lumpur",
-      "capacite": 2262,
-      "anneeConstruction": 2002,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 3.139,
-        "lng": 101.6869
-      }
-    },
-    {
-      "nom": "Mosquée du vendredi de Kuala Lumpur",
-      "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kuala Lumpur",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Kuala+Lumpur+Kuala+Lumpur",
-      "capacite": 5110,
-      "anneeConstruction": 1990,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 3.139,
-        "lng": 101.6869
-      }
-    },
-    {
-      "nom": "Mosquée Al-Hidaya de Kuala Lumpur",
-      "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Kuala Lumpur",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Kuala+Lumpur+Kuala+Lumpur",
-      "capacite": 6415,
-      "anneeConstruction": 1955,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 3.139,
-        "lng": 101.6869
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Village Park Restaurant",
-      "Murni Discovery",
-      "Mahbub Restaurant",
-      "Cantaloupe Troika Sky Dining",
-      "Original Kayu Nasi Kandar"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Nasi Lemak Antarabangsa",
-      "Village Park Restaurant",
-      "Madam Kwan's",
-      "Fuego KL",
-      "Hakka Restaurant KL"
-    ],
-    "incontournables": [
-      "Original Kayu Nasi Kandar",
-      "Zipangu KL",
-      "Kashmir Fine Indian Dining",
-      "Enak KL",
-      "Kedai Kopi Yut Kee"
-    ],
-    "pepitesCachees": [
-      "Fuego KL",
-      "Rasa Utara",
-      "The Big Smoke KL"
-    ],
-    "idealFamille": [
-      "Nasi Lemak Antarabangsa",
-      "Village Park Restaurant",
-      "Madam Kwan's",
-      "Entier French Rotisserie",
-      "Fuego KL"
-    ],
-    "gastronomique": [
-      "Jalan Alor Food Street",
-      "Sitka",
-      "Cantaloupe Troika Sky Dining",
-      "DC Restaurant",
-      "Renja Dining"
-    ],
-    "ouvertNuit": [
-      "Nasi Lemak Antarabangsa",
-      "Srisun Express",
-      "Syed Bistro"
-    ],
-    "vueExceptionnelle": [
-      "Village Park Restaurant",
-      "Murni Discovery",
-      "Mahbub Restaurant"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Kuala Lumpur",
+   "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kuala Lumpur",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Kuala+Lumpur+Kuala+Lumpur",
+   "capacite": 3093,
+   "anneeConstruction": 1953,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 3.139,
+    "lng": 101.6869
+   }
   },
-  "halalScore": 9.0
+  {
+   "nom": "Mosquée Al-Fath de Kuala Lumpur",
+   "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kuala Lumpur",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Kuala+Lumpur+Kuala+Lumpur",
+   "capacite": 1464,
+   "anneeConstruction": 1924,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 3.139,
+    "lng": 101.6869
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Kuala Lumpur",
+   "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kuala Lumpur",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Kuala+Lumpur+Kuala+Lumpur",
+   "capacite": 856,
+   "anneeConstruction": 1976,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 3.139,
+    "lng": 101.6869
+   }
+  },
+  {
+   "nom": "Mosquée historique de Kuala Lumpur",
+   "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kuala Lumpur",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Kuala+Lumpur+Kuala+Lumpur",
+   "capacite": 2262,
+   "anneeConstruction": 2002,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 3.139,
+    "lng": 101.6869
+   }
+  },
+  {
+   "nom": "Mosquée du vendredi de Kuala Lumpur",
+   "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kuala Lumpur",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Kuala+Lumpur+Kuala+Lumpur",
+   "capacite": 5110,
+   "anneeConstruction": 1990,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 3.139,
+    "lng": 101.6869
+   }
+  },
+  {
+   "nom": "Mosquée Al-Hidaya de Kuala Lumpur",
+   "description": "Mosquée fréquentée de Kuala Lumpur, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Kuala Lumpur",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Kuala+Lumpur+Kuala+Lumpur",
+   "capacite": 6415,
+   "anneeConstruction": 1955,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 3.139,
+    "lng": 101.6869
+   }
+  }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Village Park Restaurant",
+   "Murni Discovery",
+   "Mahbub Restaurant",
+   "Cantaloupe Troika Sky Dining",
+   "Original Kayu Nasi Kandar"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Nasi Lemak Antarabangsa",
+   "Village Park Restaurant",
+   "Madam Kwan's",
+   "Fuego KL",
+   "Hakka Restaurant KL"
+  ],
+  "incontournables": [
+   "Original Kayu Nasi Kandar",
+   "Zipangu KL",
+   "Kashmir Fine Indian Dining",
+   "Enak KL",
+   "Kedai Kopi Yut Kee"
+  ],
+  "pepitesCachees": [
+   "Fuego KL",
+   "Rasa Utara",
+   "The Big Smoke KL"
+  ],
+  "idealFamille": [
+   "Nasi Lemak Antarabangsa",
+   "Village Park Restaurant",
+   "Madam Kwan's",
+   "Entier French Rotisserie",
+   "Fuego KL"
+  ],
+  "gastronomique": [
+   "Jalan Alor Food Street",
+   "Sitka",
+   "Cantaloupe Troika Sky Dining",
+   "DC Restaurant",
+   "Renja Dining"
+  ],
+  "ouvertNuit": [
+   "Nasi Lemak Antarabangsa",
+   "Srisun Express",
+   "Syed Bistro"
+  ],
+  "vueExceptionnelle": [
+   "Village Park Restaurant",
+   "Murni Discovery",
+   "Mahbub Restaurant"
+  ]
+ },
+ "halalScore": 9
 }

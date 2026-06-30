@@ -1,2950 +1,2969 @@
 {
-  "slug": "la-mecque",
-  "nom": "La Mecque",
-  "nom_arabe": "مكة المكرمة",
-  "pays": "Arabie Saoudite",
-  "pays_slug": "arabie-saoudite",
-  "drapeau": "🇸🇦",
-  "region": "Péninsule Arabique",
-  "coordonnees": {
+ "slug": "la-mecque",
+ "nom": "La Mecque",
+ "nom_arabe": "مكة المكرمة",
+ "pays": "Arabie Saoudite",
+ "pays_slug": "arabie-saoudite",
+ "drapeau": "🇸🇦",
+ "region": "Péninsule Arabique",
+ "coordonnees": {
+  "lat": 21.3891,
+  "lng": 39.8579
+ },
+ "score_halal": 4.9,
+ "score_securite": 5,
+ "score_famille": 4,
+ "score_budget": 3,
+ "description": "La ville la plus sacrée de l'Islam — Masjid al-Haram, Kaaba et le pèlerinage du Hajj. Accessible uniquement aux musulmans. Lieu de naissance du Prophète Muhammad ﷺ.",
+ "description_courte": "La ville sainte, destination ultime du musulman",
+ "description_longue": "La Mecque est la destination spirituelle suprême pour 1,8 milliard de musulmans dans le monde. Chaque prière de la journée, les musulmans se tournent vers la Kaaba. Chaque musulman qui en a les moyens doit accomplir le Hajj au moins une fois dans sa vie. La ville est interdite aux non-musulmans. L'enceinte de la Grande Mosquée (Masjid al-Haram) est la plus grande mosquée au monde, pouvant accueillir jusqu'à 4 millions de fidèles pendant le Hajj.",
+ "image_hero": "https://images.unsplash.com/photo-1693590614566-1d3ea9ef32f7?w=1600&q=80",
+ "image_alt": "La Kaaba illuminée au coeur de la Grande Mosquée de La Mecque",
+ "meta_title": "La Mecque 2025 — Guide Pèlerinage Hajj & Omra",
+ "meta_description": "Guide complet pour La Mecque : Hajj, Omra, Masjid al-Haram, Kaaba, hôtels, restaurants. La ville sainte réservée aux musulmans.",
+ "statistiques": {
+  "mosquees": 400,
+  "restaurants_halal": 5000,
+  "hotels_halal": 200,
+  "boucheries_halal": 500,
+  "habitants_musulmans_pct": 100,
+  "habitants": 2000000,
+  "altitude_m": 277,
+  "superficie_km2": 1200,
+  "hotels": 15
+ },
+ "infos_pratiques": {
+  "langue_officielle": "Arabe",
+  "langues_parlees": [
+   "Arabe",
+   "Ourdou",
+   "Indonésien",
+   "Français",
+   "Anglais (guides)"
+  ],
+  "monnaie": "Riyal saoudien (SAR)",
+  "taux_change_eur": "1 EUR ≈ 4.10 SAR",
+  "meilleure_periode": "Omra : novembre-février (températures douces). Hajj : date fixe du calendrier islamique (varie chaque année grégorienne)",
+  "a_eviter": "Juillet-Août (températures extrêmes 45°C+, sauf Hajj obligatoire)",
+  "fuseau_horaire": "AST (UTC+3)",
+  "appel_priere": "Appel depuis la Grande Mosquée diffusé dans toute la ville — les 5 prières rythment la vie",
+  "nourriture_halal": "100% halal — tout est halal par essence divine",
+  "alcool": "Strictement interdit dans toute l'Arabie Saoudite",
+  "tenue_recommandee": "Hommes : ihram pour Hajj/Omra (2 pièces de tissu blanc). Femmes : abaya + hijab, niqab courant mais non obligatoire légalement",
+  "securite": "Excellente — police spéciale du Haram, forces de sécurité saoudiennes partout",
+  "transport_local": "Bus Al-Mashaaer El-Moqaddassah (ligne Hajj/Omra), taxis, voitures de location. Train pour Hajj.",
+  "aeroport": "Aéroport international King Abdulaziz (JED) à Djeddah — 80 km, Terminal Hajj spécial",
+  "visa": "VISA SPÉCIAL OBLIGATOIRE — Visa Omra (toute l'année), Visa Hajj (période du pèlerinage uniquement). NON-MUSULMANS INTERDITS D'ENTRÉE."
+ },
+ "meteo_par_mois": [
+  {
+   "mois": "Janvier",
+   "temp_max": 31,
+   "temp_min": 18,
+   "pluie_jours": 1,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Février",
+   "temp_max": 33,
+   "temp_min": 19,
+   "pluie_jours": 1,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Mars",
+   "temp_max": 37,
+   "temp_min": 22,
+   "pluie_jours": 1,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Avril",
+   "temp_max": 40,
+   "temp_min": 25,
+   "pluie_jours": 0,
+   "emoji": "🌞"
+  },
+  {
+   "mois": "Mai",
+   "temp_max": 43,
+   "temp_min": 28,
+   "pluie_jours": 0,
+   "emoji": "🌞"
+  },
+  {
+   "mois": "Juin",
+   "temp_max": 45,
+   "temp_min": 31,
+   "pluie_jours": 0,
+   "emoji": "🌡️"
+  },
+  {
+   "mois": "Juillet",
+   "temp_max": 43,
+   "temp_min": 30,
+   "pluie_jours": 0,
+   "emoji": "🌡️"
+  },
+  {
+   "mois": "Août",
+   "temp_max": 43,
+   "temp_min": 29,
+   "pluie_jours": 0,
+   "emoji": "🌡️"
+  },
+  {
+   "mois": "Septembre",
+   "temp_max": 41,
+   "temp_min": 27,
+   "pluie_jours": 0,
+   "emoji": "🌞"
+  },
+  {
+   "mois": "Octobre",
+   "temp_max": 37,
+   "temp_min": 24,
+   "pluie_jours": 1,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Novembre",
+   "temp_max": 33,
+   "temp_min": 20,
+   "pluie_jours": 1,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Décembre",
+   "temp_max": 30,
+   "temp_min": 17,
+   "pluie_jours": 1,
+   "emoji": "⛅"
+  }
+ ],
+ "restaurants": [
+  {
+   "nom": "Al-Baik",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "La Mecque",
+   "description": "Poulet frit halal légendaire, institution saoudienne à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Baik+La+Mecque",
+   "priceRange": "€€",
+   "specialite": "Poulet frit halal légendaire",
+   "nombreAvis": 2455,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Herfy Restaurants",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "La Mecque",
+   "description": "Burgers halal saoudiens à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Herfy+Restaurants+La+Mecque",
+   "priceRange": "€€",
+   "specialite": "Burgers halal saoudiens",
+   "nombreAvis": 678,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Kudu",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "La Mecque",
+   "description": "Fast-food saoudien premium à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Kudu+La+Mecque",
+   "priceRange": "€€€€",
+   "specialite": "Fast-food saoudien premium",
+   "nombreAvis": 1735,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Fakieh Aquarium Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "La Mecque",
+   "description": "Vue à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Fakieh+Aquarium+Restaurant+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Vue",
+   "nombreAvis": 453,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Al-Romansiah",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "La Mecque",
+   "description": "Grillades traditionnelles à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Romansiah+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Grillades traditionnelles",
+   "nombreAvis": 2091,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Makkah Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Grillades royales à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Makkah+Grill+La+Mecque",
+   "priceRange": "€€€€",
+   "specialite": "Grillades royales",
+   "nombreAvis": 601,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Bab Al-Makkah",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Marocain authentique à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Bab+Al-Makkah+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Marocain authentique",
+   "nombreAvis": 1636,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Dar Al-Maqam Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Vue Masjid al-Haram, gastronomique à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Al-Maqam+Restaurant+La+Mecque",
+   "priceRange": "€€€€",
+   "specialite": "Vue masjid al-haram",
+   "nombreAvis": 269,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Zamzam Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Traditionnel saoudien à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Zamzam+Restaurant+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Traditionnel saoudien",
+   "nombreAvis": 1538,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Hilton Makkah Buffet",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "La Mecque",
+   "description": "Copieux, idéal pèlerins à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Hilton+Makkah+Buffet+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Copieux",
+   "nombreAvis": 481,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Al-Safa Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "La Mecque",
+   "description": "Yéménite traditionnel à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Safa+Restaurant+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Yéménite traditionnel",
+   "nombreAvis": 1793,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Al-Marwa Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "La Mecque",
+   "description": "Pâtisseries orientales à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Marwa+Sweets+La+Mecque",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries orientales",
+   "nombreAvis": 1536,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Lebanese House",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Libanais authentique à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Lebanese+House+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Libanais authentique",
+   "nombreAvis": 725,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Indian Palace Makkah",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Indien premium à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Indian+Palace+Makkah+La+Mecque",
+   "priceRange": "€€€€",
+   "specialite": "Indien premium",
+   "nombreAvis": 2507,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Biryani House",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "La Mecque",
+   "description": "Biryani spécialisé à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Biryani+House+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Biryani spécialisé",
+   "nombreAvis": 100,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Al-Andalus Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "La Mecque",
+   "description": "Pâtisseries andalouses à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Andalus+Sweets+La+Mecque",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries andalouses",
+   "nombreAvis": 487,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Safa Shwarma",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "La Mecque",
+   "description": "Shawarma express à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Safa+Shwarma+La+Mecque",
+   "priceRange": "€",
+   "specialite": "Shawarma express",
+   "nombreAvis": 2038,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Makkah Towers Food Court",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Food court panoramique à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Makkah+Towers+Food+Court+La+Mecque",
+   "priceRange": "€",
+   "specialite": "Food court panoramique",
+   "nombreAvis": 1407,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Al-Qasr Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Luxe, vue Kaaba à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Qasr+Restaurant+La+Mecque",
+   "priceRange": "€€€€",
+   "specialite": "Luxe",
+   "nombreAvis": 1096,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Royal Feast",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Saoudien gastronomique à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Royal+Feast+La+Mecque",
+   "priceRange": "€€€€",
+   "specialite": "Saoudien gastronomique",
+   "nombreAvis": 928,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Lahm B3ajeen House",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Manoushé et pains arabes à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Lahm+B3ajeen+House+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Manoushé et pains arabes",
+   "nombreAvis": 860,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Falafel Corner Makkah",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Végétarien rapide à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Falafel+Corner+Makkah+La+Mecque",
+   "priceRange": "€",
+   "specialite": "Végétarien rapide",
+   "nombreAvis": 1631,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Al-Nakheel Restaurant",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "La Mecque",
+   "description": "Dattes et tradition à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Nakheel+Restaurant+La+Mecque",
+   "priceRange": "€€",
+   "specialite": "Dattes et tradition",
+   "nombreAvis": 1388,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Turki Biryani",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "La Mecque",
+   "description": "Biryani saoudien à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Turki+Biryani+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Biryani saoudien",
+   "nombreAvis": 955,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Kabab & Tikka Palace",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Pakistanais-indien à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Kabab+%26+Tikka+Palace+La+Mecque",
+   "priceRange": "€€€€",
+   "specialite": "Pakistanais-indien",
+   "nombreAvis": 2026,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Yemeni Kitchen",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "La Mecque",
+   "description": "Haneeth et salta à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Yemeni+Kitchen+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Haneeth et salta",
+   "nombreAvis": 1624,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Golden Fork Makkah",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "La Mecque",
+   "description": "Fish & chips halal à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Golden+Fork+Makkah+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Fish & chips halal",
+   "nombreAvis": 2447,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Al-Farhan Bakery",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Pain et viennoiserie halal à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Farhan+Bakery+La+Mecque",
+   "priceRange": "€€",
+   "specialite": "Pain et viennoiserie halal",
+   "nombreAvis": 881,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Mandalay Myanmar",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Asiatique halal à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Mandalay+Myanmar+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Asiatique halal",
+   "nombreAvis": 893,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Pizza Roma Halal",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Pizza italienne halal à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Pizza+Roma+Halal+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Pizza italienne halal",
+   "nombreAvis": 258,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Shish Taouk Express",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "La Mecque",
+   "description": "Brochettes libanaises rapides à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Shish+Taouk+Express+La+Mecque",
+   "priceRange": "€",
+   "specialite": "Brochettes libanaises rapides",
+   "nombreAvis": 587,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Al-Farouk Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Baklava et ma'amoul à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Farouk+Sweets+La+Mecque",
+   "priceRange": "€€",
+   "specialite": "Baklava et ma'amoul",
+   "nombreAvis": 695,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Jeddawi Seafood Makkah",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "La Mecque",
+   "description": "Poissons du Hijaz à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Jeddawi+Seafood+Makkah+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Poissons du hijaz",
+   "nombreAvis": 936,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Turkish Delights Restaurant",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "La Mecque",
+   "description": "Turc premium à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Turkish+Delights+Restaurant+La+Mecque",
+   "priceRange": "€€€€",
+   "specialite": "Turc premium",
+   "nombreAvis": 520,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Mandarin Halal Makkah",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Chinois certifié à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Mandarin+Halal+Makkah+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Chinois certifié",
+   "nombreAvis": 2267,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Sajj Restaurant",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "La Mecque",
+   "description": "Pain sajj et mezze à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Sajj+Restaurant+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Pain sajj et mezze",
+   "nombreAvis": 1078,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Kebab Express",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "La Mecque",
+   "description": "Doner turc rapide à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Kebab+Express+La+Mecque",
+   "priceRange": "€",
+   "specialite": "Doner turc rapide",
+   "nombreAvis": 858,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Al-Rayyan Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Agneau et veau à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Rayyan+Grill+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Agneau et veau",
+   "nombreAvis": 1944,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Taste of Pakistan",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "La Mecque",
+   "description": "Spécialités pakistanaises à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Taste+of+Pakistan+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Spécialités pakistanaises",
+   "nombreAvis": 2382,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Lebanese Nights",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "La Mecque",
+   "description": "Mezzé libanais copieux à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Lebanese+Nights+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Mezzé libanais copieux",
+   "nombreAvis": 2246,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Makkah Rooftop Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "La Mecque",
+   "description": "Thé arabe, vue à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Makkah+Rooftop+Caf%C3%A9+La+Mecque",
+   "priceRange": "€€",
+   "specialite": "Thé arabe",
+   "nombreAvis": 729,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Fattah House",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "La Mecque",
+   "description": "Fattah yéménite traditionnel à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Fattah+House+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Fattah yéménite traditionnel",
+   "nombreAvis": 2146,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Sweet Palace Makkah",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "La Mecque",
+   "description": "Desserts orientaux à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Sweet+Palace+Makkah+La+Mecque",
+   "priceRange": "€€€€",
+   "specialite": "Desserts orientaux",
+   "nombreAvis": 619,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Mushkak Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "La Mecque",
+   "description": "Grillades saoudiennes de rue à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Mushkak+Grill+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Grillades saoudiennes de rue",
+   "nombreAvis": 1055,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Al-Diyafah",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Hospitalité saoudienne traditionnelle à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Diyafah+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Hospitalité saoudienne traditionnelle",
+   "nombreAvis": 1982,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Sindhi Biryani Makkah",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "La Mecque",
+   "description": "Biryani sindhi épicé à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Sindhi+Biryani+Makkah+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Biryani sindhi épicé",
+   "nombreAvis": 711,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Manakish Express",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "La Mecque",
+   "description": "Manoushé à emporter à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Manakish+Express+La+Mecque",
+   "priceRange": "€",
+   "specialite": "Manoushé à emporter",
+   "nombreAvis": 744,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Harees House",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "La Mecque",
+   "description": "Harees traditionnel à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Harees+House+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Harees traditionnel",
+   "nombreAvis": 910,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Jareesh Palace",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Jareesh saoudien à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Jareesh+Palace+La+Mecque",
+   "priceRange": "€€€€",
+   "specialite": "Jareesh saoudien",
+   "nombreAvis": 478,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Kharouf Al-Kabeer",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "La Mecque",
+   "description": "Méchoui entier, grand format à La Mecque.",
+   "mapsUrl": "https://maps.google.com/?q=Kharouf+Al-Kabeer+La+Mecque",
+   "priceRange": "€€€",
+   "specialite": "Méchoui entier",
+   "nombreAvis": 987,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r50"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m1",
+   "nom": "Masjid al-Haram (Grande Mosquée)",
+   "nom_arabe": "المسجد الحرام",
+   "type": "La plus grande mosquée du monde",
+   "statut": "La mosquée la plus sacrée de l'Islam",
+   "adresse": "Centre de La Mecque",
+   "quartier": "Al Haram",
+   "capacite": 4000000,
+   "annee_construction": "638 (reconstruction perpétuelle)",
+   "style_architectural": "Islamique saoudien moderne + sections historiques",
+   "hauteur_minaret_m": 89,
+   "coordonnees": {
+    "lat": 21.4225,
+    "lng": 39.8262
+   },
+   "acces_non_musulmans": false,
+   "note": 5,
+   "avis_count": 999999,
+   "description": "La Grande Mosquée de La Mecque est la mosquée la plus grande du monde (360 000 m²) et la plus sacrée pour l'Islam. Elle contient la Kaaba, la Pierre Noire (Al-Hajar Al-Aswad), le Puits Zamzam et Safa-Marwa. Pendant le Hajj, 4 millions de fidèles peuvent s'y rassembler simultanément.",
+   "anecdote": "La Kaaba est le point central vers lequel se tournent 1,8 milliard de musulmans dans le monde entier lors de chaque prière. La Pierre Noire est considérée comme remontant au temps d'Ibrahim (Abraham). Le puits Zamzam coule depuis 4000 ans sans jamais se tarir.",
+   "image": "https://images.unsplash.com/photo-1564769625392-651b89765b80?w=600"
+  },
+  {
+   "id": "m2",
+   "nom": "Masjid Namira (Arafat)",
+   "nom_arabe": "مسجد نمرة",
+   "type": "Mosquée du Hajj",
+   "adresse": "Plaine d'Arafat, La Mecque",
+   "quartier": "Arafat",
+   "capacite": 350000,
+   "annee_construction": "630",
+   "style_architectural": "Islamique saoudien",
+   "coordonnees": {
+    "lat": 21.3551,
+    "lng": 39.9845
+   },
+   "acces_non_musulmans": false,
+   "note": 4.9,
+   "avis_count": 45678,
+   "description": "Sur la plaine d'Arafat — lieu du plus grand rassemblement humain de la Terre pendant le Hajj. C'est ici que le Prophète ﷺ a prononcé son Sermon d'Adieu le 9 Dhoul Hijja. Le Waquf (station debout) est le coeur du Hajj.",
+   "anecdote": "Le 9 Dhoul Hijja, jusqu'à 3 millions de pèlerins se rassemblent sur la plaine d'Arafat pour le Waquf (station). C'est le moment clé du Hajj — sans Arafat, pas de Hajj selon le hadith."
+  },
+  {
+   "id": "m3",
+   "nom": "Masjid Al-Khaif (Mina)",
+   "type": "Mosquée de Mina",
+   "adresse": "Vallée de Mina, La Mecque",
+   "quartier": "Mina",
+   "annee_construction": "630",
+   "coordonnees": {
+    "lat": 21.4101,
+    "lng": 39.8834
+   },
+   "acces_non_musulmans": false,
+   "note": 4.8,
+   "avis_count": 23456,
+   "description": "La grande mosquée de la vallée de Mina où les pèlerins passent les nuits du 10 au 13 Dhoul Hijja. La tradition dit que 70 prophètes y ont prié. Capacité de 25 000 fidèles.",
+   "anecdote": "Selon la tradition islamique, soixante-dix prophètes et messagers ont prié dans cette mosquée au cours des âges. C'est l'une des mosquées les plus spirituellement chargées du monde islamique."
+  },
+  {
+   "id": "m4",
+   "nom": "Masjid Al-Jinn",
+   "type": "Mosquée historique",
+   "adresse": "Hara Bab Al-Jinn, La Mecque",
+   "quartier": "La Mecque",
+   "annee_construction": "760",
+   "coordonnees": {
+    "lat": 21.4367,
+    "lng": 39.8423
+   },
+   "acces_non_musulmans": false,
+   "note": 4.7,
+   "avis_count": 5678,
+   "description": "Construite à l'endroit où le Prophète ﷺ a récité le Coran devant un groupe de djinns (sourate Al-Jinn, verset 1). Mosquée peu connue mais très visitée par les pèlerins soufis."
+  },
+  {
+   "id": "m5",
+   "nom": "Masjid Bilal (ancienne mosquée Hamza)",
+   "type": "Mosquée des Compagnons",
+   "adresse": "La Mecque",
+   "quartier": "La Mecque",
+   "annee_construction": "630",
+   "coordonnees": {
+    "lat": 21.4289,
+    "lng": 39.8312
+   },
+   "acces_non_musulmans": false,
+   "note": 4.6,
+   "avis_count": 3456,
+   "description": "Mosquée construite à l'emplacement de la maison de Bilal ibn Rabah — premier muezzin de l'Islam. Son adhan résonnait depuis La Mecque vers 622."
+  },
+  {
+   "id": "m6",
+   "nom": "Masjid Al-Ijabah",
+   "type": "Mosquée de l'exaucement",
+   "adresse": "La Mecque",
+   "quartier": "La Mecque",
+   "annee_construction": "630",
+   "coordonnees": {
+    "lat": 21.4312,
+    "lng": 39.8345
+   },
+   "acces_non_musulmans": false,
+   "note": 4.7,
+   "avis_count": 2134,
+   "description": "Mosquée construite à l'endroit où le Prophète ﷺ a fait 3 du'as — trois supplications dont deux ont été exaucées. Lieu de prière intense pour les pèlerins."
+  },
+  {
+   "id": "m7",
+   "nom": "Masjid Al-Ray (Mosquée du Drapeau)",
+   "type": "Mosquée historique",
+   "adresse": "Al-Mudda'a, La Mecque",
+   "quartier": "La Mecque",
+   "annee_construction": "630",
+   "coordonnees": {
+    "lat": 21.4156,
+    "lng": 39.8267
+   },
+   "acces_non_musulmans": false,
+   "note": 4.5,
+   "avis_count": 1234,
+   "description": "Mosquée construite là où le Prophète ﷺ a planté son drapeau lors de la conquête de La Mecque en 630. Lieu de début de la prière du Fajr pendant le Hajj."
+  },
+  {
+   "id": "m8",
+   "nom": "Masjid Al-Mash'ar Al-Haram (Muzdalifah)",
+   "type": "Mosquée de Muzdalifah",
+   "adresse": "Muzdalifah, La Mecque",
+   "quartier": "Muzdalifah",
+   "annee_construction": "630",
+   "coordonnees": {
+    "lat": 21.3789,
+    "lng": 39.9312
+   },
+   "acces_non_musulmans": false,
+   "note": 4.8,
+   "avis_count": 18901,
+   "description": "À Muzdalifah, les pèlerins passent la nuit à ciel ouvert après Arafat. Cette mosquée marque le Mash'ar al-Haram où se fait la prière du Fajr puis la collecte des pierres pour la lapidation."
+  },
+  {
+   "id": "m9",
+   "nom": "Mosquée Miqat Dhul Hulayfah (côté Médine)",
+   "type": "Mosquée du Miqat",
+   "adresse": "Bir Ali, proche Médine",
+   "quartier": "Miqat",
+   "annee_construction": "630",
+   "coordonnees": {
+    "lat": 24.4256,
+    "lng": 39.5634
+   },
+   "acces_non_musulmans": false,
+   "note": 4.7,
+   "avis_count": 34567,
+   "description": "Le Miqat est la frontière où les pèlerins venant de Médine revêtent l'ihram avant d'entrer en état sacré. Lieu de prière et de purification rituelle avant l'entrée à La Mecque."
+  },
+  {
+   "id": "m10",
+   "nom": "Mosquée de la Frontière (Miqat Yalamlam)",
+   "type": "Mosquée du Miqat Sud",
+   "adresse": "Yalamlam, direction Yémen",
+   "quartier": "Sud de La Mecque",
+   "annee_construction": "630",
+   "coordonnees": {
+    "lat": 20.5234,
+    "lng": 39.8234
+   },
+   "acces_non_musulmans": false,
+   "note": 4.6,
+   "avis_count": 8901,
+   "description": "Mosquée du Miqat pour les pèlerins venant du Yémen et de l'Inde. Revêtement de l'ihram et double intention (niyyah) avant d'entrer dans la zone sacrée."
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Swissôtel Al Maqam",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Luxe, vue directe Kaaba à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Swiss%C3%B4tel+Al+Maqam+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€€",
+   "nombreAvis": 356,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h1",
+   "lat": 21.4184744,
+   "lng": 39.8244146
+  },
+  {
+   "nom": "Fairmont Makkah Clock Royal Tower",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Ultra-luxe, icônique à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Fairmont+Makkah+Clock+Royal+Tower+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€€",
+   "nombreAvis": 2109,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h2",
+   "lat": 21.4180383,
+   "lng": 39.825302
+  },
+  {
+   "nom": "Hilton Suites Makkah",
+   "categorie": "Budget",
+   "score": 4.6,
+   "adresse": "La Mecque",
+   "description": "Luxe, pèlerins VIP à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Hilton+Suites+Makkah+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€",
+   "nombreAvis": 776,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": 21.4210649,
+   "lng": 39.8214375
+  },
+  {
+   "nom": "Pullman ZamZam Makkah",
+   "categorie": "Luxe",
+   "score": 4.8,
+   "adresse": "La Mecque",
+   "description": "Standard-luxe à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Pullman+ZamZam+Makkah+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€€",
+   "nombreAvis": 1893,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4"
+  },
+  {
+   "nom": "Mövenpick Hotel & Residences Hajar Tower",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Luxe à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=M%C3%B6venpick+Hotel+%26+Residences+Hajar+Tower+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€€",
+   "nombreAvis": 2174,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5"
+  },
+  {
+   "nom": "Sheraton Makkah Jabal Al Kaaba",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "La Mecque",
+   "description": "Luxe à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Sheraton+Makkah+Jabal+Al+Kaaba+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€€",
+   "nombreAvis": 254,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h6"
+  },
+  {
+   "nom": "Makkah Millennium Hotel",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Standard premium à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Makkah+Millennium+Hotel+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€",
+   "nombreAvis": 1118,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 21.4189959,
+   "lng": 39.8235531
+  },
+  {
+   "nom": "Dar Al-Tawhid Intercontinental",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "La Mecque",
+   "description": "Luxe historique à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Dar+Al-Tawhid+Intercontinental+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€€",
+   "nombreAvis": 2008,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": 21.4209909,
+   "lng": 39.822716
+  },
+  {
+   "nom": "Al-Safwah Royale Orchid Hotel",
+   "categorie": "Riad & Boutique",
+   "score": 4.6,
+   "adresse": "La Mecque",
+   "description": "Boutique luxe à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Al-Safwah+Royale+Orchid+Hotel+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€",
+   "nombreAvis": 546,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Le Méridien Towers Makkah",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "La Mecque",
+   "description": "Luxe moderne à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Le+M%C3%A9ridien+Towers+Makkah+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€€",
+   "nombreAvis": 897,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h10"
+  },
+  {
+   "nom": "Conrad Makkah",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "La Mecque",
+   "description": "Luxe Conrad à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Conrad+Makkah+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€€",
+   "nombreAvis": 401,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h11",
+   "lat": 21.4193293,
+   "lng": 39.8220789
+  },
+  {
+   "nom": "Anjum Hotel Makkah",
+   "categorie": "Standard",
+   "score": 4.8,
+   "adresse": "La Mecque",
+   "description": "Standard à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Anjum+Hotel+Makkah+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€",
+   "nombreAvis": 780,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12",
+   "lat": 21.4246115,
+   "lng": 39.819791
+  },
+  {
+   "nom": "Elaf Ajyad Hotel",
+   "categorie": "Budget",
+   "score": 4.3,
+   "adresse": "La Mecque",
+   "description": "Budget confort à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Elaf+Ajyad+Hotel+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€",
+   "nombreAvis": 578,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h13",
+   "lat": 21.4181641,
+   "lng": 39.8287733
+  },
+  {
+   "nom": "Al-Marwa Rayhaan by Rotana",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "La Mecque",
+   "description": "Standard-luxe à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Al-Marwa+Rayhaan+by+Rotana+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€€€",
+   "nombreAvis": 2369,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h14",
+   "lat": 21.4191648,
+   "lng": 39.8260952
+  },
+  {
+   "nom": "Makkah House Hotel",
+   "categorie": "Budget",
+   "score": 4.8,
+   "adresse": "La Mecque",
+   "description": "Budget à La Mecque.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Makkah+House+Hotel+La+Mecque",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
+   "priceRange": "€€",
+   "nombreAvis": 1498,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Masjid al-Haram et Tawaf autour de la Kaaba",
+   "categorie": "Religieux & Spirituel",
+   "description": "Masjid al-Haram et Tawaf autour de la Kaaba — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Masjid+al-Haram+et+Tawaf+autour+de+la+Kaaba+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+al-Haram+et+Tawaf+autour+de+la+Kaaba+La+Mecque",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a1"
+  },
+  {
+   "nom": "Zamzam — puits sacré",
+   "categorie": "Religieux & Spirituel",
+   "description": "Zamzam — puits sacré — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Zamzam+%E2%80%94+puits+sacr%C3%A9+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Zamzam+%E2%80%94+puits+sacr%C3%A9+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a2"
+  },
+  {
+   "nom": "Mont Arafat",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mont Arafat — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mont+Arafat+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mont+Arafat+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a3"
+  },
+  {
+   "nom": "Mina — tente des pèlerins",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mina — tente des pèlerins — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mina+%E2%80%94+tente+des+p%C3%A8lerins+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mina+%E2%80%94+tente+des+p%C3%A8lerins+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a4"
+  },
+  {
+   "nom": "Muzdalifah — nuit à la belle étoile",
+   "categorie": "Religieux & Spirituel",
+   "description": "Muzdalifah — nuit à la belle étoile — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Muzdalifah+%E2%80%94+nuit+%C3%A0+la+belle+%C3%A9toile+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Muzdalifah+%E2%80%94+nuit+%C3%A0+la+belle+%C3%A9toile+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a5"
+  },
+  {
+   "nom": "Jabal al-Nour et grotte de Hira",
+   "categorie": "Religieux & Spirituel",
+   "description": "Jabal al-Nour et grotte de Hira — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Jabal+al-Nour+et+grotte+de+Hira+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jabal+al-Nour+et+grotte+de+Hira+La+Mecque",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a6"
+  },
+  {
+   "nom": "Jabal Thawr",
+   "categorie": "Religieux & Spirituel",
+   "description": "Jabal Thawr — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Jabal+Thawr+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jabal+Thawr+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a7"
+  },
+  {
+   "nom": "Musée de la Mecque",
+   "categorie": "Art & Musées",
+   "description": "Musée de la Mecque — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+Mecque+La+Mecque",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a8"
+  },
+  {
+   "nom": "Bibliothèque du roi Fahd de la Mecque",
+   "categorie": "Art & Musées",
+   "description": "Bibliothèque du roi Fahd de la Mecque — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Biblioth%C3%A8que+du+roi+Fahd+de+la+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Biblioth%C3%A8que+du+roi+Fahd+de+la+Mecque+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a9"
+  },
+  {
+   "nom": "Tour de l'Horloge Royale",
+   "categorie": "Nature & Aventure",
+   "description": "Tour de l'Horloge Royale — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Tour+de+l%27Horloge+Royale+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+de+l%27Horloge+Royale+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a10"
+  },
+  {
+   "nom": "Abraj Al-Bait Mall",
+   "categorie": "Shopping & Souks",
+   "description": "Abraj Al-Bait Mall — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Abraj+Al-Bait+Mall+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Abraj+Al-Bait+Mall+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Marché Al-Zaidi",
+   "categorie": "Shopping & Souks",
+   "description": "Marché Al-Zaidi — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Al-Zaidi+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+Al-Zaidi+La+Mecque",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Fondation du Roi Abdulaziz pour la Recherche",
+   "categorie": "Art & Musées",
+   "description": "Fondation du Roi Abdulaziz pour la Recherche — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Fondation+du+Roi+Abdulaziz+pour+la+Recherche+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fondation+du+Roi+Abdulaziz+pour+la+Recherche+La+Mecque",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la Kaaba",
+   "categorie": "Religieux & Spirituel",
+   "description": "Musée de la Kaaba — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+Kaaba+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+Kaaba+La+Mecque",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Zamzam Water Factory",
+   "categorie": "Religieux & Spirituel",
+   "description": "Zamzam Water Factory — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Zamzam+Water+Factory+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Zamzam+Water+Factory+La+Mecque",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Quartier historique d'Al-Mu'abidah",
+   "categorie": "Histoire & Culture",
+   "description": "Quartier historique d'Al-Mu'abidah — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+d%27Al-Mu%27abidah+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+d%27Al-Mu%27abidah+La+Mecque",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Promenade Al-Safa",
+   "categorie": "Religieux & Spirituel",
+   "description": "Promenade Al-Safa — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+Al-Safa+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+Al-Safa+La+Mecque",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Masjid al-Khayf à Mina",
+   "categorie": "Religieux & Spirituel",
+   "description": "Masjid al-Khayf à Mina — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Masjid+al-Khayf+%C3%A0+Mina+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+al-Khayf+%C3%A0+Mina+La+Mecque",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Masjid al-Nimrah à Arafat",
+   "categorie": "Religieux & Spirituel",
+   "description": "Masjid al-Nimrah à Arafat — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Masjid+al-Nimrah+%C3%A0+Arafat+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+al-Nimrah+%C3%A0+Arafat+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Souk Al-Lail",
+   "categorie": "Shopping & Souks",
+   "description": "Souk Al-Lail — étape incontournable du séjour à La Mecque.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Souk+Al-Lail+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+Al-Lail+La+Mecque",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Quartier historique de La Mecque",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+La+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+La+Mecque+La+Mecque",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Grand marché central de La Mecque",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+La+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+La+Mecque+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de La Mecque",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+La+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+La+Mecque+La+Mecque",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Musée de la ville de La Mecque",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+La+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+La+Mecque+La+Mecque",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Food tour halal de La Mecque",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+La+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+La+Mecque+La+Mecque",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Hammam traditionnel de La Mecque",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+La+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+La+Mecque+La+Mecque",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Mosquée historique de La Mecque",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+La+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+La+Mecque+La+Mecque",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Parc et jardins de La Mecque",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+La+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+La+Mecque+La+Mecque",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de La Mecque",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+La+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+La+Mecque+La+Mecque",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Atelier d'artisanat local de La Mecque",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+La+Mecque+La+Mecque",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+La+Mecque+La+Mecque",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "road_trips": [
+  {
+   "id": "rt1",
+   "titre": "La Mecque — Médine : Le Chemin des Prophètes",
+   "emoji": "🕌",
+   "duree": "2-3 jours",
+   "distance_km": 450,
+   "difficulte": "Facile",
+   "budget_estime_eur": "100-200€ (hors package Hajj)",
+   "etapes": [
+    {
+     "ville": "La Mecque",
+     "nuits": 1,
+     "highlights": [
+      "Grande Mosquée",
+      "Kaaba",
+      "Safa-Marwa"
+     ]
+    },
+    {
+     "ville": "Badr",
+     "nuits": 0,
+     "highlights": [
+      "Champ de bataille de Badr 624",
+      "Cimetière des martyrs"
+     ]
+    },
+    {
+     "ville": "Médine",
+     "nuits": 2,
+     "highlights": [
+      "Masjid al-Nabawi",
+      "Masjid Quba",
+      "Cimetière Al-Baqi"
+     ]
+    }
+   ],
+   "conseils_halal": "Route 100% halal, autoroute Makkah-Madinah avec mosquées et restaurants halal aux stations.",
+   "tags": [
+    "Spirituel",
+    "Prophètes",
+    "Hajj"
+   ]
+  },
+  {
+   "id": "rt2",
+   "titre": "Circuit Sites Islamiques Hijaz",
+   "emoji": "🏜️",
+   "duree": "5 jours",
+   "distance_km": 800,
+   "difficulte": "Modéré",
+   "budget_estime_eur": "200-350€",
+   "etapes": [
+    {
+     "ville": "La Mecque",
+     "nuits": 2,
+     "highlights": [
+      "Hajj/Omra rites",
+      "Arafat",
+      "Mina"
+     ]
+    },
+    {
+     "ville": "Taïf",
+     "nuits": 1,
+     "highlights": [
+      "Jardin de roses",
+      "Masjid Addas",
+      "Souk Al-Taif"
+     ]
+    },
+    {
+     "ville": "Djeddah",
+     "nuits": 1,
+     "highlights": [
+      "Jeddah historique UNESCO",
+      "Mosquée Flottante",
+      "Corniche"
+     ]
+    }
+   ],
+   "conseils_halal": "Djeddah est la porte maritime du Hajj — restaurants halal excellents dans la Vieille Ville UNESCO.",
+   "tags": [
+    "Hijaz",
+    "Taïf",
+    "Djeddah"
+   ]
+  },
+  {
+   "id": "rt3",
+   "titre": "Djeddah — La Mecque — Médine Express",
+   "emoji": "✈️",
+   "duree": "7 jours",
+   "distance_km": 600,
+   "difficulte": "Facile",
+   "budget_estime_eur": "300-500€ (hors Hajj)",
+   "etapes": [
+    {
+     "ville": "Djeddah",
+     "nuits": 2,
+     "highlights": [
+      "Vieille Ville UNESCO",
+      "King Fahd Fountain (plus haute du monde)",
+      "Corniche"
+     ]
+    },
+    {
+     "ville": "La Mecque",
+     "nuits": 3,
+     "highlights": [
+      "Omra",
+      "Kaaba",
+      "Safa-Marwa"
+     ]
+    },
+    {
+     "ville": "Médine",
+     "nuits": 2,
+     "highlights": [
+      "Masjid al-Nabawi",
+      "Prière verte",
+      "Dates Ajwa"
+     ]
+    }
+   ],
+   "conseils_halal": "Package Omra inclut hébergement, transport La Mecque-Médine et guide. Réserver 6 mois à l'avance en haute saison.",
+   "tags": [
+    "Omra",
+    "Djeddah",
+    "Package"
+   ]
+  }
+ ],
+ "voyages_par_type": {
+  "en_couple": {
+   "emoji": "💑",
+   "couleur": "#e91e8c",
+   "intro": "La Mecque pour un couple de musulmans, c'est le voyage de l'âme — accomplir l'Omra ensemble, prier côte à côte dans la Grande Mosquée et se retrouver spirituellement à l'endroit le plus sacré de la Terre.",
+   "top_experiences": [
+    {
+     "titre": "Tawaf de nuit à 3h du matin",
+     "details": "La Kaaba illuminée, quasiment seuls, moment magique",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Prière Fajr côte à côte",
+     "details": "Face à la Kaaba, au lever du soleil",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Eau Zamzam à deux",
+     "details": "Boire l'eau de la source éternelle ensemble",
+     "prix": "Gratuit"
+    }
+   ],
+   "hotels_recommandes": [
+    "Raffles Makkah Palace",
+    "Fairmont Clock Tower"
+   ],
+   "conseils": "Les couples mariés peuvent partager une chambre — preuve de mariage conseillée. L'Omra ensemble renforce le lien spirituel et conjugal."
+  },
+  "en_famille": {
+   "emoji": "👨‍👩‍👧‍👦",
+   "couleur": "#4CAF50",
+   "intro": "Emmener ses enfants à La Mecque est un acte éducatif et spirituel majeur. Même les nourrissons peuvent accompagner leurs parents pour l'Omra.",
+   "top_experiences": [
+    {
+     "titre": "Tawaf avec les enfants",
+     "details": "Expliquer la signification à chaque tour",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Eau Zamzam pour les enfants",
+     "details": "Leur expliquer l'histoire d'Hajar et Ismaël",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Jabal Al-Nour (parents adultes)",
+     "details": "Pendant que les enfants se reposent à l'hôtel",
+     "prix": "Gratuit"
+    }
+   ],
+   "hotels_recommandes": [
+    "Hotel Anjum Makkah",
+    "Millennium Hotel"
+   ],
+   "conseils": "Poussettes autorisées dans le Haram (niveau 0 et niveaux supérieurs). Réserver des chambres familiales. Halte-garderie à certains hôtels."
+  },
+  "entre_amis": {
+   "emoji": "👫",
+   "couleur": "#9C27B0",
+   "intro": "Un groupe d'amis à La Mecque pour l'Omra est une tradition centenaire. Soutien mutuel, prières collectives et dîners partagés de spécialités du monde entier.",
+   "top_experiences": [
+    {
+     "titre": "Omra de groupe avec guide",
+     "details": "Guide francophone disponible",
+     "prix": "50-100€/pers"
+    },
+    {
+     "titre": "Dîner interculturel Hajj",
+     "details": "Rencontrer des pèlerins du monde entier",
+     "prix": "10-20€"
+    },
+    {
+     "titre": "Shopping cadeaux du Haram",
+     "details": "Dattes, tasbihs, tapis de prière pour les familles",
+     "prix": "Variable"
+    }
+   ],
+   "conseils": "Voyager en groupe réduit la coût. Groupe de femmes uniquement: un mahram (tuteur masculin) est recommandé mais certaines agences proposent des Omra féminines encadrées."
+  },
+  "voyage_solo": {
+   "emoji": "🎒",
+   "couleur": "#FF9800",
+   "intro": "L'Omra en solo est une expérience profondément introspective — se retrouver seul face à la Kaaba est un moment de vérité pour beaucoup de musulmans.",
+   "top_experiences": [
+    {
+     "titre": "Itikaf (retraite spirituelle)",
+     "details": "S'isoler pour lire le Coran et prier",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Tawaf nocturne solitaire",
+     "details": "La Kaaba à 2h du matin, presque seul",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Du'a personnel devant la Kaaba",
+     "details": "Supplications intimes et personnelles",
+     "prix": "Gratuit"
+    }
+   ],
+   "conseil_securite": "La Mecque est très sûre. La police du Haram est nombreuse. Garder son visa Omra sur soi. Les femmes voyageant seules sont de plus en plus acceptées depuis les réformes Vision 2030."
+  },
+  "voyage_spirituel": {
+   "emoji": "🕌",
+   "couleur": "#2196F3",
+   "intro": "La Mecque EST le voyage spirituel par excellence. Chaque instant, chaque respiration dans la ville sainte est un acte d'adoration. L'objectif d'une vie pour tout musulman.",
+   "top_experiences": [
+    {
+     "titre": "Hajj — Le 5ème pilier de l'Islam",
+     "details": "Arafat, Muzdalifah, Mina, Djamarat — complet",
+     "prix": "Package Hajj 3000-8000€"
+    },
+    {
+     "titre": "Omra pendant Ramadan = Hajj en récompense",
+     "details": "Hadith du Prophète ﷺ",
+     "prix": "Package Omra 800-2000€"
+    },
+    {
+     "titre": "Prière de 2 raka'at derrière le Maqam Ibrahim",
+     "details": "Derrière la Kaaba, face à Ibrahim",
+     "prix": "Gratuit"
+    }
+   ],
+   "conseil_pratique": "Réserver le package Hajj/Omra via une agence agréée par le Ministère du Hajj saoudien. Éviter les packages non-officiels frauduleux."
+  }
+ },
+ "boucheries": [
+  {
+   "id": "b1",
+   "nom": "Abattoir Al-Haram (Hajj)",
+   "adresse": "Mina, La Mecque",
+   "quartier": "Mina",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau de sacrifice (Udhiyya/Qurbani)",
+    "Chèvre de sacrifice"
+   ],
+   "note": 4.8,
+   "horaires": "Pendant le Hajj uniquement (10 Dhoul Hijja)"
+  },
+  {
+   "id": "b2",
+   "nom": "Marché Souq Al-Lail Viandes",
+   "adresse": "Souq Al-Lail, Al Haram",
+   "quartier": "Al Haram",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau grillé",
+    "Poulet rôti",
+    "Viandes diverses"
+   ],
+   "note": 4.5,
+   "horaires": "20h-3h"
+  },
+  {
+   "id": "b3",
+   "nom": "Boucherie Ajyad Premium",
+   "adresse": "Ajyad Street",
+   "quartier": "Ajyad",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau saoudien",
+    "Chameau (jus de chameau ou viande)",
+    "Veau importé"
+   ],
+   "note": 4.6,
+   "horaires": "6h-midnight"
+  },
+  {
+   "id": "b4",
+   "nom": "Halal Butchery Aziziyah",
+   "adresse": "Aziziyah District",
+   "quartier": "Aziziyah",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau australien",
+    "Poulet fermier",
+    "Viande séchée (qadid)"
+   ],
+   "note": 4.4,
+   "horaires": "7h-22h"
+  },
+  {
+   "id": "b5",
+   "nom": "Misfalah Meat Market",
+   "adresse": "Misfalah, La Mecque",
+   "quartier": "Misfalah",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau entier",
+    "Chèvre",
+    "Dinde halal"
+   ],
+   "note": 4.3,
+   "horaires": "5h-19h"
+  }
+ ],
+ "boulangeries": [
+  {
+   "id": "bo1",
+   "nom": "Pain Saoudien Samoun",
+   "adresse": "Marché Al Haram",
+   "quartier": "Al Haram",
+   "description": "Samoun — pain plat saoudien cuit au four à bois, companion du kabsa et du mandi.",
+   "specialites": [
+    "Samoun",
+    "Khobz arabe",
+    "Taftan persan"
+   ],
+   "prix": "0.50-2 SAR",
+   "horaires": "5h-23h",
+   "note": 4.5
+  },
+  {
+   "id": "bo2",
+   "nom": "Boulangerie Turque Istanbul",
+   "adresse": "Jarwal, La Mecque",
+   "quartier": "Jarwal",
+   "description": "Simit turc (couronne de sésame) et pide maison pour les pèlerins turcs — un peu de Constantinople à La Mecque.",
+   "specialites": [
+    "Simit au sésame",
+    "Pide au fromage",
+    "Baklava"
+   ],
+   "prix": "2-8 SAR",
+   "horaires": "7h-22h",
+   "note": 4.4
+  },
+  {
+   "id": "bo3",
+   "nom": "Boulangerie Marocaine Msemmen",
+   "adresse": "Ajyad Area",
+   "quartier": "Ajyad",
+   "description": "Msemmen, baghrir et harcha marocains pour les pèlerins du Maghreb.",
+   "specialites": [
+    "Msemmen feuilleté",
+    "Baghrir mille trous",
+    "Harcha semoule"
+   ],
+   "prix": "2-5 SAR",
+   "horaires": "6h-14h",
+   "note": 4.6
+  },
+  {
+   "id": "bo4",
+   "nom": "Pâtisserie Al-Hilal",
+   "adresse": "Makkah Mall",
+   "quartier": "Al Haram",
+   "specialites": [
+    "Zlabia de Hajj",
+    "Ma'amoul dattes",
+    "Ghraybeh beurre"
+   ],
+   "prix": "5-20 SAR",
+   "horaires": "9h-midnight",
+   "note": 4.5
+  },
+  {
+   "id": "bo5",
+   "nom": "Dates Specialists Tamr Al-Madinah",
+   "adresse": "Abraj Al-Bait Mall",
+   "quartier": "Al Haram",
+   "description": "Spécialiste des dattes saoudiennes de tous types — Ajwa, Medjool, Sukkari — conditionnées en cadeaux magnifiques.",
+   "specialites": [
+    "Dattes Ajwa Médine",
+    "Dattes Medjool",
+    "Dattes enrobées chocolat halal"
+   ],
+   "prix": "30-200 SAR/boite",
+   "horaires": "10h-23h",
+   "note": 4.8
+  }
+ ],
+ "articles_lies": [
+  "guide-hajj-complet",
+  "omra-guide-pratique",
+  "la-mecque-histoire"
+ ],
+ "villes_proches": [
+  "medine",
+  "djeddah"
+ ],
+ "destinations_combiner": [
+  {
+   "ville": "Médine",
+   "distance_km": 450,
+   "raison": "Package Omra La Mecque + Médine classique — Masjid al-Nabawi du Prophète ﷺ"
+  },
+  {
+   "ville": "Djeddah",
+   "distance_km": 80,
+   "raison": "Porte d'entrée du Hajj, Vieille Ville UNESCO, grande métropole moderne"
+  },
+  {
+   "ville": "Taïf",
+   "distance_km": 90,
+   "raison": "Ville des roses à 1800m d'altitude, fraîcheur et jardins, Masjid Addas historique"
+  }
+ ],
+ "conseils_halal": "La Mecque est 100% halal par essence divine — c'est la ville la plus sainte de l'Islam. Aucun alcool, porc ou comportement interdit n'est toléré. Tout est organisé pour les besoins spirituels et matériels des pèlerins musulmans du monde entier. IMPORTANT : L'entrée à La Mecque est strictement réservée aux musulmans — un contrôle de foi est exercé aux points d'entrée.",
+ "codeISO": "SA",
+ "image": "https://images.unsplash.com/photo-1693590614566-1d3ea9ef32f7?w=1600&q=80",
+ "continent": "Asie",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour La Mecque — Halal Trust Score 5/5.",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de La Mecque",
+   "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "La Mecque",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+La+Mecque+La+Mecque",
+   "capacite": 2089,
+   "anneeConstruction": 1989,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 21.3891,
     "lng": 39.8579
+   }
   },
-  "score_halal": 4.9,
-  "score_securite": 5,
-  "score_famille": 4,
-  "score_budget": 3,
-  "description": "La ville la plus sacrée de l'Islam — Masjid al-Haram, Kaaba et le pèlerinage du Hajj. Accessible uniquement aux musulmans. Lieu de naissance du Prophète Muhammad ﷺ.",
-  "description_courte": "La ville sainte, destination ultime du musulman",
-  "description_longue": "La Mecque est la destination spirituelle suprême pour 1,8 milliard de musulmans dans le monde. Chaque prière de la journée, les musulmans se tournent vers la Kaaba. Chaque musulman qui en a les moyens doit accomplir le Hajj au moins une fois dans sa vie. La ville est interdite aux non-musulmans. L'enceinte de la Grande Mosquée (Masjid al-Haram) est la plus grande mosquée au monde, pouvant accueillir jusqu'à 4 millions de fidèles pendant le Hajj.",
-  "image_hero": "https://images.unsplash.com/photo-1693590614566-1d3ea9ef32f7?w=1600&q=80",
-  "image_alt": "La Kaaba illuminée au coeur de la Grande Mosquée de La Mecque",
-  "meta_title": "La Mecque 2025 — Guide Pèlerinage Hajj & Omra",
-  "meta_description": "Guide complet pour La Mecque : Hajj, Omra, Masjid al-Haram, Kaaba, hôtels, restaurants. La ville sainte réservée aux musulmans.",
-  "statistiques": {
-    "mosquees": 400,
-    "restaurants_halal": 5000,
-    "hotels_halal": 200,
-    "boucheries_halal": 500,
-    "habitants_musulmans_pct": 100,
-    "habitants": 2000000,
-    "altitude_m": 277,
-    "superficie_km2": 1200
+  {
+   "nom": "Grande Mosquée de La Mecque",
+   "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "La Mecque",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+La+Mecque+La+Mecque",
+   "capacite": 3225,
+   "anneeConstruction": 1965,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.3891,
+    "lng": 39.8579
+   }
   },
-  "infos_pratiques": {
-    "langue_officielle": "Arabe",
-    "langues_parlees": [
-      "Arabe",
-      "Ourdou",
-      "Indonésien",
-      "Français",
-      "Anglais (guides)"
-    ],
-    "monnaie": "Riyal saoudien (SAR)",
-    "taux_change_eur": "1 EUR ≈ 4.10 SAR",
-    "meilleure_periode": "Omra : novembre-février (températures douces). Hajj : date fixe du calendrier islamique (varie chaque année grégorienne)",
-    "a_eviter": "Juillet-Août (températures extrêmes 45°C+, sauf Hajj obligatoire)",
-    "fuseau_horaire": "AST (UTC+3)",
-    "appel_priere": "Appel depuis la Grande Mosquée diffusé dans toute la ville — les 5 prières rythment la vie",
-    "nourriture_halal": "100% halal — tout est halal par essence divine",
-    "alcool": "Strictement interdit dans toute l'Arabie Saoudite",
-    "tenue_recommandee": "Hommes : ihram pour Hajj/Omra (2 pièces de tissu blanc). Femmes : abaya + hijab, niqab courant mais non obligatoire légalement",
-    "securite": "Excellente — police spéciale du Haram, forces de sécurité saoudiennes partout",
-    "transport_local": "Bus Al-Mashaaer El-Moqaddassah (ligne Hajj/Omra), taxis, voitures de location. Train pour Hajj.",
-    "aeroport": "Aéroport international King Abdulaziz (JED) à Djeddah — 80 km, Terminal Hajj spécial",
-    "visa": "VISA SPÉCIAL OBLIGATOIRE — Visa Omra (toute l'année), Visa Hajj (période du pèlerinage uniquement). NON-MUSULMANS INTERDITS D'ENTRÉE."
+  {
+   "nom": "Mosquée Al-Noor de La Mecque",
+   "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "La Mecque",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+La+Mecque+La+Mecque",
+   "capacite": 6592,
+   "anneeConstruction": 1912,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.3891,
+    "lng": 39.8579
+   }
   },
-  "meteo_par_mois": [
-    {
-      "mois": "Janvier",
-      "temp_max": 31,
-      "temp_min": 18,
-      "pluie_jours": 1,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Février",
-      "temp_max": 33,
-      "temp_min": 19,
-      "pluie_jours": 1,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Mars",
-      "temp_max": 37,
-      "temp_min": 22,
-      "pluie_jours": 1,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Avril",
-      "temp_max": 40,
-      "temp_min": 25,
-      "pluie_jours": 0,
-      "emoji": "🌞"
-    },
-    {
-      "mois": "Mai",
-      "temp_max": 43,
-      "temp_min": 28,
-      "pluie_jours": 0,
-      "emoji": "🌞"
-    },
-    {
-      "mois": "Juin",
-      "temp_max": 45,
-      "temp_min": 31,
-      "pluie_jours": 0,
-      "emoji": "🌡️"
-    },
-    {
-      "mois": "Juillet",
-      "temp_max": 43,
-      "temp_min": 30,
-      "pluie_jours": 0,
-      "emoji": "🌡️"
-    },
-    {
-      "mois": "Août",
-      "temp_max": 43,
-      "temp_min": 29,
-      "pluie_jours": 0,
-      "emoji": "🌡️"
-    },
-    {
-      "mois": "Septembre",
-      "temp_max": 41,
-      "temp_min": 27,
-      "pluie_jours": 0,
-      "emoji": "🌞"
-    },
-    {
-      "mois": "Octobre",
-      "temp_max": 37,
-      "temp_min": 24,
-      "pluie_jours": 1,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Novembre",
-      "temp_max": 33,
-      "temp_min": 20,
-      "pluie_jours": 1,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Décembre",
-      "temp_max": 30,
-      "temp_min": 17,
-      "pluie_jours": 1,
-      "emoji": "⛅"
-    }
-  ],
-  "restaurants": [
-    {
-      "nom": "Al-Baik",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "La Mecque",
-      "description": "Poulet frit halal légendaire, institution saoudienne à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Baik+La+Mecque",
-      "priceRange": "€€",
-      "specialite": "Poulet frit halal légendaire",
-      "nombreAvis": 2455,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Herfy Restaurants",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "La Mecque",
-      "description": "Burgers halal saoudiens à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Herfy+Restaurants+La+Mecque",
-      "priceRange": "€€",
-      "specialite": "Burgers halal saoudiens",
-      "nombreAvis": 678,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Kudu",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "La Mecque",
-      "description": "Fast-food saoudien premium à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Kudu+La+Mecque",
-      "priceRange": "€€€€",
-      "specialite": "Fast-food saoudien premium",
-      "nombreAvis": 1735,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Fakieh Aquarium Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "La Mecque",
-      "description": "Vue à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Fakieh+Aquarium+Restaurant+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Vue",
-      "nombreAvis": 453,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Al-Romansiah",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "La Mecque",
-      "description": "Grillades traditionnelles à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Romansiah+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Grillades traditionnelles",
-      "nombreAvis": 2091,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Makkah Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Grillades royales à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Makkah+Grill+La+Mecque",
-      "priceRange": "€€€€",
-      "specialite": "Grillades royales",
-      "nombreAvis": 601,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Bab Al-Makkah",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Marocain authentique à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Bab+Al-Makkah+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Marocain authentique",
-      "nombreAvis": 1636,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Dar Al-Maqam Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Vue Masjid al-Haram, gastronomique à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Al-Maqam+Restaurant+La+Mecque",
-      "priceRange": "€€€€",
-      "specialite": "Vue masjid al-haram",
-      "nombreAvis": 269,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Zamzam Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Traditionnel saoudien à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Zamzam+Restaurant+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Traditionnel saoudien",
-      "nombreAvis": 1538,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Hilton Makkah Buffet",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "La Mecque",
-      "description": "Copieux, idéal pèlerins à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Hilton+Makkah+Buffet+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Copieux",
-      "nombreAvis": 481,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Al-Safa Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "La Mecque",
-      "description": "Yéménite traditionnel à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Safa+Restaurant+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Yéménite traditionnel",
-      "nombreAvis": 1793,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Al-Marwa Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "La Mecque",
-      "description": "Pâtisseries orientales à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Marwa+Sweets+La+Mecque",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries orientales",
-      "nombreAvis": 1536,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Lebanese House",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Libanais authentique à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Lebanese+House+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Libanais authentique",
-      "nombreAvis": 725,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Indian Palace Makkah",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Indien premium à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Indian+Palace+Makkah+La+Mecque",
-      "priceRange": "€€€€",
-      "specialite": "Indien premium",
-      "nombreAvis": 2507,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Biryani House",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "La Mecque",
-      "description": "Biryani spécialisé à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Biryani+House+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Biryani spécialisé",
-      "nombreAvis": 100,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Al-Andalus Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "La Mecque",
-      "description": "Pâtisseries andalouses à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Andalus+Sweets+La+Mecque",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries andalouses",
-      "nombreAvis": 487,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Safa Shwarma",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "La Mecque",
-      "description": "Shawarma express à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Safa+Shwarma+La+Mecque",
-      "priceRange": "€",
-      "specialite": "Shawarma express",
-      "nombreAvis": 2038,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Makkah Towers Food Court",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Food court panoramique à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Makkah+Towers+Food+Court+La+Mecque",
-      "priceRange": "€",
-      "specialite": "Food court panoramique",
-      "nombreAvis": 1407,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Al-Qasr Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Luxe, vue Kaaba à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Qasr+Restaurant+La+Mecque",
-      "priceRange": "€€€€",
-      "specialite": "Luxe",
-      "nombreAvis": 1096,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Royal Feast",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Saoudien gastronomique à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Royal+Feast+La+Mecque",
-      "priceRange": "€€€€",
-      "specialite": "Saoudien gastronomique",
-      "nombreAvis": 928,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Lahm B3ajeen House",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Manoushé et pains arabes à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Lahm+B3ajeen+House+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Manoushé et pains arabes",
-      "nombreAvis": 860,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Falafel Corner Makkah",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Végétarien rapide à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Falafel+Corner+Makkah+La+Mecque",
-      "priceRange": "€",
-      "specialite": "Végétarien rapide",
-      "nombreAvis": 1631,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Al-Nakheel Restaurant",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "La Mecque",
-      "description": "Dattes et tradition à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Nakheel+Restaurant+La+Mecque",
-      "priceRange": "€€",
-      "specialite": "Dattes et tradition",
-      "nombreAvis": 1388,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Turki Biryani",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "La Mecque",
-      "description": "Biryani saoudien à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Turki+Biryani+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Biryani saoudien",
-      "nombreAvis": 955,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Kabab & Tikka Palace",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Pakistanais-indien à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Kabab+%26+Tikka+Palace+La+Mecque",
-      "priceRange": "€€€€",
-      "specialite": "Pakistanais-indien",
-      "nombreAvis": 2026,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Yemeni Kitchen",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "La Mecque",
-      "description": "Haneeth et salta à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Yemeni+Kitchen+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Haneeth et salta",
-      "nombreAvis": 1624,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Golden Fork Makkah",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "La Mecque",
-      "description": "Fish & chips halal à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Golden+Fork+Makkah+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Fish & chips halal",
-      "nombreAvis": 2447,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Al-Farhan Bakery",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Pain et viennoiserie halal à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Farhan+Bakery+La+Mecque",
-      "priceRange": "€€",
-      "specialite": "Pain et viennoiserie halal",
-      "nombreAvis": 881,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Mandalay Myanmar",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Asiatique halal à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Mandalay+Myanmar+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Asiatique halal",
-      "nombreAvis": 893,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Pizza Roma Halal",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Pizza italienne halal à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Pizza+Roma+Halal+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Pizza italienne halal",
-      "nombreAvis": 258,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Shish Taouk Express",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "La Mecque",
-      "description": "Brochettes libanaises rapides à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Shish+Taouk+Express+La+Mecque",
-      "priceRange": "€",
-      "specialite": "Brochettes libanaises rapides",
-      "nombreAvis": 587,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Al-Farouk Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Baklava et ma'amoul à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Farouk+Sweets+La+Mecque",
-      "priceRange": "€€",
-      "specialite": "Baklava et ma'amoul",
-      "nombreAvis": 695,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Jeddawi Seafood Makkah",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "La Mecque",
-      "description": "Poissons du Hijaz à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Jeddawi+Seafood+Makkah+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Poissons du hijaz",
-      "nombreAvis": 936,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Turkish Delights Restaurant",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "La Mecque",
-      "description": "Turc premium à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Turkish+Delights+Restaurant+La+Mecque",
-      "priceRange": "€€€€",
-      "specialite": "Turc premium",
-      "nombreAvis": 520,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Mandarin Halal Makkah",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Chinois certifié à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Mandarin+Halal+Makkah+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Chinois certifié",
-      "nombreAvis": 2267,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Sajj Restaurant",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "La Mecque",
-      "description": "Pain sajj et mezze à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Sajj+Restaurant+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Pain sajj et mezze",
-      "nombreAvis": 1078,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Kebab Express",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "La Mecque",
-      "description": "Doner turc rapide à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Kebab+Express+La+Mecque",
-      "priceRange": "€",
-      "specialite": "Doner turc rapide",
-      "nombreAvis": 858,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Al-Rayyan Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Agneau et veau à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Rayyan+Grill+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Agneau et veau",
-      "nombreAvis": 1944,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Taste of Pakistan",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "La Mecque",
-      "description": "Spécialités pakistanaises à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Taste+of+Pakistan+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Spécialités pakistanaises",
-      "nombreAvis": 2382,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Lebanese Nights",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "La Mecque",
-      "description": "Mezzé libanais copieux à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Lebanese+Nights+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Mezzé libanais copieux",
-      "nombreAvis": 2246,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Makkah Rooftop Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "La Mecque",
-      "description": "Thé arabe, vue à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Makkah+Rooftop+Caf%C3%A9+La+Mecque",
-      "priceRange": "€€",
-      "specialite": "Thé arabe",
-      "nombreAvis": 729,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Fattah House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "La Mecque",
-      "description": "Fattah yéménite traditionnel à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Fattah+House+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Fattah yéménite traditionnel",
-      "nombreAvis": 2146,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Sweet Palace Makkah",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "La Mecque",
-      "description": "Desserts orientaux à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Sweet+Palace+Makkah+La+Mecque",
-      "priceRange": "€€€€",
-      "specialite": "Desserts orientaux",
-      "nombreAvis": 619,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Mushkak Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "La Mecque",
-      "description": "Grillades saoudiennes de rue à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Mushkak+Grill+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Grillades saoudiennes de rue",
-      "nombreAvis": 1055,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Al-Diyafah",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Hospitalité saoudienne traditionnelle à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Diyafah+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Hospitalité saoudienne traditionnelle",
-      "nombreAvis": 1982,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Sindhi Biryani Makkah",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "La Mecque",
-      "description": "Biryani sindhi épicé à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Sindhi+Biryani+Makkah+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Biryani sindhi épicé",
-      "nombreAvis": 711,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Manakish Express",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "La Mecque",
-      "description": "Manoushé à emporter à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Manakish+Express+La+Mecque",
-      "priceRange": "€",
-      "specialite": "Manoushé à emporter",
-      "nombreAvis": 744,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Harees House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "La Mecque",
-      "description": "Harees traditionnel à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Harees+House+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Harees traditionnel",
-      "nombreAvis": 910,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Jareesh Palace",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Jareesh saoudien à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Jareesh+Palace+La+Mecque",
-      "priceRange": "€€€€",
-      "specialite": "Jareesh saoudien",
-      "nombreAvis": 478,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Kharouf Al-Kabeer",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "La Mecque",
-      "description": "Méchoui entier, grand format à La Mecque.",
-      "mapsUrl": "https://maps.google.com/?q=Kharouf+Al-Kabeer+La+Mecque",
-      "priceRange": "€€€",
-      "specialite": "Méchoui entier",
-      "nombreAvis": 987,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r50"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m1",
-      "nom": "Masjid al-Haram (Grande Mosquée)",
-      "nom_arabe": "المسجد الحرام",
-      "type": "La plus grande mosquée du monde",
-      "statut": "La mosquée la plus sacrée de l'Islam",
-      "adresse": "Centre de La Mecque",
-      "quartier": "Al Haram",
-      "capacite": 4000000,
-      "annee_construction": "638 (reconstruction perpétuelle)",
-      "style_architectural": "Islamique saoudien moderne + sections historiques",
-      "hauteur_minaret_m": 89,
-      "coordonnees": {
-        "lat": 21.4225,
-        "lng": 39.8262
-      },
-      "acces_non_musulmans": false,
-      "note": 5.0,
-      "avis_count": 999999,
-      "description": "La Grande Mosquée de La Mecque est la mosquée la plus grande du monde (360 000 m²) et la plus sacrée pour l'Islam. Elle contient la Kaaba, la Pierre Noire (Al-Hajar Al-Aswad), le Puits Zamzam et Safa-Marwa. Pendant le Hajj, 4 millions de fidèles peuvent s'y rassembler simultanément.",
-      "anecdote": "La Kaaba est le point central vers lequel se tournent 1,8 milliard de musulmans dans le monde entier lors de chaque prière. La Pierre Noire est considérée comme remontant au temps d'Ibrahim (Abraham). Le puits Zamzam coule depuis 4000 ans sans jamais se tarir.",
-      "image": "https://images.unsplash.com/photo-1564769625392-651b89765b80?w=600"
-    },
-    {
-      "id": "m2",
-      "nom": "Masjid Namira (Arafat)",
-      "nom_arabe": "مسجد نمرة",
-      "type": "Mosquée du Hajj",
-      "adresse": "Plaine d'Arafat, La Mecque",
-      "quartier": "Arafat",
-      "capacite": 350000,
-      "annee_construction": "630",
-      "style_architectural": "Islamique saoudien",
-      "coordonnees": {
-        "lat": 21.3551,
-        "lng": 39.9845
-      },
-      "acces_non_musulmans": false,
-      "note": 4.9,
-      "avis_count": 45678,
-      "description": "Sur la plaine d'Arafat — lieu du plus grand rassemblement humain de la Terre pendant le Hajj. C'est ici que le Prophète ﷺ a prononcé son Sermon d'Adieu le 9 Dhoul Hijja. Le Waquf (station debout) est le coeur du Hajj.",
-      "anecdote": "Le 9 Dhoul Hijja, jusqu'à 3 millions de pèlerins se rassemblent sur la plaine d'Arafat pour le Waquf (station). C'est le moment clé du Hajj — sans Arafat, pas de Hajj selon le hadith."
-    },
-    {
-      "id": "m3",
-      "nom": "Masjid Al-Khaif (Mina)",
-      "type": "Mosquée de Mina",
-      "adresse": "Vallée de Mina, La Mecque",
-      "quartier": "Mina",
-      "annee_construction": "630",
-      "coordonnees": {
-        "lat": 21.4101,
-        "lng": 39.8834
-      },
-      "acces_non_musulmans": false,
-      "note": 4.8,
-      "avis_count": 23456,
-      "description": "La grande mosquée de la vallée de Mina où les pèlerins passent les nuits du 10 au 13 Dhoul Hijja. La tradition dit que 70 prophètes y ont prié. Capacité de 25 000 fidèles.",
-      "anecdote": "Selon la tradition islamique, soixante-dix prophètes et messagers ont prié dans cette mosquée au cours des âges. C'est l'une des mosquées les plus spirituellement chargées du monde islamique."
-    },
-    {
-      "id": "m4",
-      "nom": "Masjid Al-Jinn",
-      "type": "Mosquée historique",
-      "adresse": "Hara Bab Al-Jinn, La Mecque",
-      "quartier": "La Mecque",
-      "annee_construction": "760",
-      "coordonnees": {
-        "lat": 21.4367,
-        "lng": 39.8423
-      },
-      "acces_non_musulmans": false,
-      "note": 4.7,
-      "avis_count": 5678,
-      "description": "Construite à l'endroit où le Prophète ﷺ a récité le Coran devant un groupe de djinns (sourate Al-Jinn, verset 1). Mosquée peu connue mais très visitée par les pèlerins soufis."
-    },
-    {
-      "id": "m5",
-      "nom": "Masjid Bilal (ancienne mosquée Hamza)",
-      "type": "Mosquée des Compagnons",
-      "adresse": "La Mecque",
-      "quartier": "La Mecque",
-      "annee_construction": "630",
-      "coordonnees": {
-        "lat": 21.4289,
-        "lng": 39.8312
-      },
-      "acces_non_musulmans": false,
-      "note": 4.6,
-      "avis_count": 3456,
-      "description": "Mosquée construite à l'emplacement de la maison de Bilal ibn Rabah — premier muezzin de l'Islam. Son adhan résonnait depuis La Mecque vers 622."
-    },
-    {
-      "id": "m6",
-      "nom": "Masjid Al-Ijabah",
-      "type": "Mosquée de l'exaucement",
-      "adresse": "La Mecque",
-      "quartier": "La Mecque",
-      "annee_construction": "630",
-      "coordonnees": {
-        "lat": 21.4312,
-        "lng": 39.8345
-      },
-      "acces_non_musulmans": false,
-      "note": 4.7,
-      "avis_count": 2134,
-      "description": "Mosquée construite à l'endroit où le Prophète ﷺ a fait 3 du'as — trois supplications dont deux ont été exaucées. Lieu de prière intense pour les pèlerins."
-    },
-    {
-      "id": "m7",
-      "nom": "Masjid Al-Ray (Mosquée du Drapeau)",
-      "type": "Mosquée historique",
-      "adresse": "Al-Mudda'a, La Mecque",
-      "quartier": "La Mecque",
-      "annee_construction": "630",
-      "coordonnees": {
-        "lat": 21.4156,
-        "lng": 39.8267
-      },
-      "acces_non_musulmans": false,
-      "note": 4.5,
-      "avis_count": 1234,
-      "description": "Mosquée construite là où le Prophète ﷺ a planté son drapeau lors de la conquête de La Mecque en 630. Lieu de début de la prière du Fajr pendant le Hajj."
-    },
-    {
-      "id": "m8",
-      "nom": "Masjid Al-Mash'ar Al-Haram (Muzdalifah)",
-      "type": "Mosquée de Muzdalifah",
-      "adresse": "Muzdalifah, La Mecque",
-      "quartier": "Muzdalifah",
-      "annee_construction": "630",
-      "coordonnees": {
-        "lat": 21.3789,
-        "lng": 39.9312
-      },
-      "acces_non_musulmans": false,
-      "note": 4.8,
-      "avis_count": 18901,
-      "description": "À Muzdalifah, les pèlerins passent la nuit à ciel ouvert après Arafat. Cette mosquée marque le Mash'ar al-Haram où se fait la prière du Fajr puis la collecte des pierres pour la lapidation."
-    },
-    {
-      "id": "m9",
-      "nom": "Mosquée Miqat Dhul Hulayfah (côté Médine)",
-      "type": "Mosquée du Miqat",
-      "adresse": "Bir Ali, proche Médine",
-      "quartier": "Miqat",
-      "annee_construction": "630",
-      "coordonnees": {
-        "lat": 24.4256,
-        "lng": 39.5634
-      },
-      "acces_non_musulmans": false,
-      "note": 4.7,
-      "avis_count": 34567,
-      "description": "Le Miqat est la frontière où les pèlerins venant de Médine revêtent l'ihram avant d'entrer en état sacré. Lieu de prière et de purification rituelle avant l'entrée à La Mecque."
-    },
-    {
-      "id": "m10",
-      "nom": "Mosquée de la Frontière (Miqat Yalamlam)",
-      "type": "Mosquée du Miqat Sud",
-      "adresse": "Yalamlam, direction Yémen",
-      "quartier": "Sud de La Mecque",
-      "annee_construction": "630",
-      "coordonnees": {
-        "lat": 20.5234,
-        "lng": 39.8234
-      },
-      "acces_non_musulmans": false,
-      "note": 4.6,
-      "avis_count": 8901,
-      "description": "Mosquée du Miqat pour les pèlerins venant du Yémen et de l'Inde. Revêtement de l'ihram et double intention (niyyah) avant d'entrer dans la zone sacrée."
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Swissôtel Al Maqam",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Luxe, vue directe Kaaba à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Swiss%C3%B4tel+Al+Maqam+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€€",
-      "nombreAvis": 356,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Fairmont Makkah Clock Royal Tower",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Ultra-luxe, icônique à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Fairmont+Makkah+Clock+Royal+Tower+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€€",
-      "nombreAvis": 2109,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Hilton Suites Makkah",
-      "categorie": "Budget",
-      "score": 4.6,
-      "adresse": "La Mecque",
-      "description": "Luxe, pèlerins VIP à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Hilton+Suites+Makkah+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€",
-      "nombreAvis": 776,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Pullman ZamZam Makkah",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "La Mecque",
-      "description": "Standard-luxe à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Pullman+ZamZam+Makkah+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€€",
-      "nombreAvis": 1893,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Mövenpick Hotel & Residences Hajar Tower",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Luxe à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=M%C3%B6venpick+Hotel+%26+Residences+Hajar+Tower+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€€",
-      "nombreAvis": 2174,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Sheraton Makkah Jabal Al Kaaba",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "La Mecque",
-      "description": "Luxe à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Sheraton+Makkah+Jabal+Al+Kaaba+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€€",
-      "nombreAvis": 254,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Makkah Millennium Hotel",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Standard premium à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Makkah+Millennium+Hotel+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€",
-      "nombreAvis": 1118,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "Dar Al-Tawhid Intercontinental",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "La Mecque",
-      "description": "Luxe historique à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Dar+Al-Tawhid+Intercontinental+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€€",
-      "nombreAvis": 2008,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Al-Safwah Royale Orchid Hotel",
-      "categorie": "Riad & Boutique",
-      "score": 4.6,
-      "adresse": "La Mecque",
-      "description": "Boutique luxe à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Al-Safwah+Royale+Orchid+Hotel+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€",
-      "nombreAvis": 546,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Le Méridien Towers Makkah",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "La Mecque",
-      "description": "Luxe moderne à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Le+M%C3%A9ridien+Towers+Makkah+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€€",
-      "nombreAvis": 897,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Conrad Makkah",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "La Mecque",
-      "description": "Luxe Conrad à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Conrad+Makkah+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€€",
-      "nombreAvis": 401,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Anjum Hotel Makkah",
-      "categorie": "Standard",
-      "score": 4.8,
-      "adresse": "La Mecque",
-      "description": "Standard à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Anjum+Hotel+Makkah+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€",
-      "nombreAvis": 780,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Elaf Ajyad Hotel",
-      "categorie": "Budget",
-      "score": 4.3,
-      "adresse": "La Mecque",
-      "description": "Budget confort à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Elaf+Ajyad+Hotel+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€",
-      "nombreAvis": 578,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "Al-Marwa Rayhaan by Rotana",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "La Mecque",
-      "description": "Standard-luxe à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Al-Marwa+Rayhaan+by+Rotana+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€€€",
-      "nombreAvis": 2369,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Makkah House Hotel",
-      "categorie": "Budget",
-      "score": 4.8,
-      "adresse": "La Mecque",
-      "description": "Budget à La Mecque.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Makkah+House+Hotel+La+Mecque",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=La+Mecque&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=la-mecque",
-      "priceRange": "€€",
-      "nombreAvis": 1498,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Masjid al-Haram et Tawaf autour de la Kaaba",
-      "categorie": "Religieux & Spirituel",
-      "description": "Masjid al-Haram et Tawaf autour de la Kaaba — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Masjid+al-Haram+et+Tawaf+autour+de+la+Kaaba+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+al-Haram+et+Tawaf+autour+de+la+Kaaba+La+Mecque",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a1"
-    },
-    {
-      "nom": "Zamzam — puits sacré",
-      "categorie": "Religieux & Spirituel",
-      "description": "Zamzam — puits sacré — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Zamzam+%E2%80%94+puits+sacr%C3%A9+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Zamzam+%E2%80%94+puits+sacr%C3%A9+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a2"
-    },
-    {
-      "nom": "Mont Arafat",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mont Arafat — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mont+Arafat+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mont+Arafat+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a3"
-    },
-    {
-      "nom": "Mina — tente des pèlerins",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mina — tente des pèlerins — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mina+%E2%80%94+tente+des+p%C3%A8lerins+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mina+%E2%80%94+tente+des+p%C3%A8lerins+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a4"
-    },
-    {
-      "nom": "Muzdalifah — nuit à la belle étoile",
-      "categorie": "Religieux & Spirituel",
-      "description": "Muzdalifah — nuit à la belle étoile — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Muzdalifah+%E2%80%94+nuit+%C3%A0+la+belle+%C3%A9toile+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Muzdalifah+%E2%80%94+nuit+%C3%A0+la+belle+%C3%A9toile+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a5"
-    },
-    {
-      "nom": "Jabal al-Nour et grotte de Hira",
-      "categorie": "Religieux & Spirituel",
-      "description": "Jabal al-Nour et grotte de Hira — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Jabal+al-Nour+et+grotte+de+Hira+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jabal+al-Nour+et+grotte+de+Hira+La+Mecque",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a6"
-    },
-    {
-      "nom": "Jabal Thawr",
-      "categorie": "Religieux & Spirituel",
-      "description": "Jabal Thawr — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Jabal+Thawr+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Jabal+Thawr+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a7"
-    },
-    {
-      "nom": "Musée de la Mecque",
-      "categorie": "Art & Musées",
-      "description": "Musée de la Mecque — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+Mecque+La+Mecque",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a8"
-    },
-    {
-      "nom": "Bibliothèque du roi Fahd de la Mecque",
-      "categorie": "Art & Musées",
-      "description": "Bibliothèque du roi Fahd de la Mecque — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Biblioth%C3%A8que+du+roi+Fahd+de+la+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Biblioth%C3%A8que+du+roi+Fahd+de+la+Mecque+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a9"
-    },
-    {
-      "nom": "Tour de l'Horloge Royale",
-      "categorie": "Nature & Aventure",
-      "description": "Tour de l'Horloge Royale — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Tour+de+l%27Horloge+Royale+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+de+l%27Horloge+Royale+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Abraj Al-Bait Mall",
-      "categorie": "Shopping & Souks",
-      "description": "Abraj Al-Bait Mall — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Abraj+Al-Bait+Mall+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Abraj+Al-Bait+Mall+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Marché Al-Zaidi",
-      "categorie": "Shopping & Souks",
-      "description": "Marché Al-Zaidi — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Al-Zaidi+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+Al-Zaidi+La+Mecque",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Fondation du Roi Abdulaziz pour la Recherche",
-      "categorie": "Art & Musées",
-      "description": "Fondation du Roi Abdulaziz pour la Recherche — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Fondation+du+Roi+Abdulaziz+pour+la+Recherche+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fondation+du+Roi+Abdulaziz+pour+la+Recherche+La+Mecque",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la Kaaba",
-      "categorie": "Religieux & Spirituel",
-      "description": "Musée de la Kaaba — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+Kaaba+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+Kaaba+La+Mecque",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Zamzam Water Factory",
-      "categorie": "Religieux & Spirituel",
-      "description": "Zamzam Water Factory — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Zamzam+Water+Factory+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Zamzam+Water+Factory+La+Mecque",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Quartier historique d'Al-Mu'abidah",
-      "categorie": "Histoire & Culture",
-      "description": "Quartier historique d'Al-Mu'abidah — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+d%27Al-Mu%27abidah+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+d%27Al-Mu%27abidah+La+Mecque",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Promenade Al-Safa",
-      "categorie": "Religieux & Spirituel",
-      "description": "Promenade Al-Safa — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+Al-Safa+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+Al-Safa+La+Mecque",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Masjid al-Khayf à Mina",
-      "categorie": "Religieux & Spirituel",
-      "description": "Masjid al-Khayf à Mina — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Masjid+al-Khayf+%C3%A0+Mina+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+al-Khayf+%C3%A0+Mina+La+Mecque",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Masjid al-Nimrah à Arafat",
-      "categorie": "Religieux & Spirituel",
-      "description": "Masjid al-Nimrah à Arafat — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Masjid+al-Nimrah+%C3%A0+Arafat+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Masjid+al-Nimrah+%C3%A0+Arafat+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Souk Al-Lail",
-      "categorie": "Shopping & Souks",
-      "description": "Souk Al-Lail — étape incontournable du séjour à La Mecque.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Souk+Al-Lail+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+Al-Lail+La+Mecque",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Quartier historique de La Mecque",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+La+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+La+Mecque+La+Mecque",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Grand marché central de La Mecque",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+La+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+La+Mecque+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de La Mecque",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+La+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+La+Mecque+La+Mecque",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Musée de la ville de La Mecque",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+La+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+La+Mecque+La+Mecque",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Food tour halal de La Mecque",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+La+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+La+Mecque+La+Mecque",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Hammam traditionnel de La Mecque",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+La+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+La+Mecque+La+Mecque",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Mosquée historique de La Mecque",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+La+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+La+Mecque+La+Mecque",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Parc et jardins de La Mecque",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+La+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+La+Mecque+La+Mecque",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de La Mecque",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+La+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+La+Mecque+La+Mecque",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Atelier d'artisanat local de La Mecque",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+La+Mecque+La+Mecque",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+La+Mecque+La+Mecque",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "road_trips": [
-    {
-      "id": "rt1",
-      "titre": "La Mecque — Médine : Le Chemin des Prophètes",
-      "emoji": "🕌",
-      "duree": "2-3 jours",
-      "distance_km": 450,
-      "difficulte": "Facile",
-      "budget_estime_eur": "100-200€ (hors package Hajj)",
-      "etapes": [
-        {
-          "ville": "La Mecque",
-          "nuits": 1,
-          "highlights": [
-            "Grande Mosquée",
-            "Kaaba",
-            "Safa-Marwa"
-          ]
-        },
-        {
-          "ville": "Badr",
-          "nuits": 0,
-          "highlights": [
-            "Champ de bataille de Badr 624",
-            "Cimetière des martyrs"
-          ]
-        },
-        {
-          "ville": "Médine",
-          "nuits": 2,
-          "highlights": [
-            "Masjid al-Nabawi",
-            "Masjid Quba",
-            "Cimetière Al-Baqi"
-          ]
-        }
-      ],
-      "conseils_halal": "Route 100% halal, autoroute Makkah-Madinah avec mosquées et restaurants halal aux stations.",
-      "tags": [
-        "Spirituel",
-        "Prophètes",
-        "Hajj"
-      ]
-    },
-    {
-      "id": "rt2",
-      "titre": "Circuit Sites Islamiques Hijaz",
-      "emoji": "🏜️",
-      "duree": "5 jours",
-      "distance_km": 800,
-      "difficulte": "Modéré",
-      "budget_estime_eur": "200-350€",
-      "etapes": [
-        {
-          "ville": "La Mecque",
-          "nuits": 2,
-          "highlights": [
-            "Hajj/Omra rites",
-            "Arafat",
-            "Mina"
-          ]
-        },
-        {
-          "ville": "Taïf",
-          "nuits": 1,
-          "highlights": [
-            "Jardin de roses",
-            "Masjid Addas",
-            "Souk Al-Taif"
-          ]
-        },
-        {
-          "ville": "Djeddah",
-          "nuits": 1,
-          "highlights": [
-            "Jeddah historique UNESCO",
-            "Mosquée Flottante",
-            "Corniche"
-          ]
-        }
-      ],
-      "conseils_halal": "Djeddah est la porte maritime du Hajj — restaurants halal excellents dans la Vieille Ville UNESCO.",
-      "tags": [
-        "Hijaz",
-        "Taïf",
-        "Djeddah"
-      ]
-    },
-    {
-      "id": "rt3",
-      "titre": "Djeddah — La Mecque — Médine Express",
-      "emoji": "✈️",
-      "duree": "7 jours",
-      "distance_km": 600,
-      "difficulte": "Facile",
-      "budget_estime_eur": "300-500€ (hors Hajj)",
-      "etapes": [
-        {
-          "ville": "Djeddah",
-          "nuits": 2,
-          "highlights": [
-            "Vieille Ville UNESCO",
-            "King Fahd Fountain (plus haute du monde)",
-            "Corniche"
-          ]
-        },
-        {
-          "ville": "La Mecque",
-          "nuits": 3,
-          "highlights": [
-            "Omra",
-            "Kaaba",
-            "Safa-Marwa"
-          ]
-        },
-        {
-          "ville": "Médine",
-          "nuits": 2,
-          "highlights": [
-            "Masjid al-Nabawi",
-            "Prière verte",
-            "Dates Ajwa"
-          ]
-        }
-      ],
-      "conseils_halal": "Package Omra inclut hébergement, transport La Mecque-Médine et guide. Réserver 6 mois à l'avance en haute saison.",
-      "tags": [
-        "Omra",
-        "Djeddah",
-        "Package"
-      ]
-    }
-  ],
-  "voyages_par_type": {
-    "en_couple": {
-      "emoji": "💑",
-      "couleur": "#e91e8c",
-      "intro": "La Mecque pour un couple de musulmans, c'est le voyage de l'âme — accomplir l'Omra ensemble, prier côte à côte dans la Grande Mosquée et se retrouver spirituellement à l'endroit le plus sacré de la Terre.",
-      "top_experiences": [
-        {
-          "titre": "Tawaf de nuit à 3h du matin",
-          "details": "La Kaaba illuminée, quasiment seuls, moment magique",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Prière Fajr côte à côte",
-          "details": "Face à la Kaaba, au lever du soleil",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Eau Zamzam à deux",
-          "details": "Boire l'eau de la source éternelle ensemble",
-          "prix": "Gratuit"
-        }
-      ],
-      "hotels_recommandes": [
-        "Raffles Makkah Palace",
-        "Fairmont Clock Tower"
-      ],
-      "conseils": "Les couples mariés peuvent partager une chambre — preuve de mariage conseillée. L'Omra ensemble renforce le lien spirituel et conjugal."
-    },
-    "en_famille": {
-      "emoji": "👨‍👩‍👧‍👦",
-      "couleur": "#4CAF50",
-      "intro": "Emmener ses enfants à La Mecque est un acte éducatif et spirituel majeur. Même les nourrissons peuvent accompagner leurs parents pour l'Omra.",
-      "top_experiences": [
-        {
-          "titre": "Tawaf avec les enfants",
-          "details": "Expliquer la signification à chaque tour",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Eau Zamzam pour les enfants",
-          "details": "Leur expliquer l'histoire d'Hajar et Ismaël",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Jabal Al-Nour (parents adultes)",
-          "details": "Pendant que les enfants se reposent à l'hôtel",
-          "prix": "Gratuit"
-        }
-      ],
-      "hotels_recommandes": [
-        "Hotel Anjum Makkah",
-        "Millennium Hotel"
-      ],
-      "conseils": "Poussettes autorisées dans le Haram (niveau 0 et niveaux supérieurs). Réserver des chambres familiales. Halte-garderie à certains hôtels."
-    },
-    "entre_amis": {
-      "emoji": "👫",
-      "couleur": "#9C27B0",
-      "intro": "Un groupe d'amis à La Mecque pour l'Omra est une tradition centenaire. Soutien mutuel, prières collectives et dîners partagés de spécialités du monde entier.",
-      "top_experiences": [
-        {
-          "titre": "Omra de groupe avec guide",
-          "details": "Guide francophone disponible",
-          "prix": "50-100€/pers"
-        },
-        {
-          "titre": "Dîner interculturel Hajj",
-          "details": "Rencontrer des pèlerins du monde entier",
-          "prix": "10-20€"
-        },
-        {
-          "titre": "Shopping cadeaux du Haram",
-          "details": "Dattes, tasbihs, tapis de prière pour les familles",
-          "prix": "Variable"
-        }
-      ],
-      "conseils": "Voyager en groupe réduit la coût. Groupe de femmes uniquement: un mahram (tuteur masculin) est recommandé mais certaines agences proposent des Omra féminines encadrées."
-    },
-    "voyage_solo": {
-      "emoji": "🎒",
-      "couleur": "#FF9800",
-      "intro": "L'Omra en solo est une expérience profondément introspective — se retrouver seul face à la Kaaba est un moment de vérité pour beaucoup de musulmans.",
-      "top_experiences": [
-        {
-          "titre": "Itikaf (retraite spirituelle)",
-          "details": "S'isoler pour lire le Coran et prier",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Tawaf nocturne solitaire",
-          "details": "La Kaaba à 2h du matin, presque seul",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Du'a personnel devant la Kaaba",
-          "details": "Supplications intimes et personnelles",
-          "prix": "Gratuit"
-        }
-      ],
-      "conseil_securite": "La Mecque est très sûre. La police du Haram est nombreuse. Garder son visa Omra sur soi. Les femmes voyageant seules sont de plus en plus acceptées depuis les réformes Vision 2030."
-    },
-    "voyage_spirituel": {
-      "emoji": "🕌",
-      "couleur": "#2196F3",
-      "intro": "La Mecque EST le voyage spirituel par excellence. Chaque instant, chaque respiration dans la ville sainte est un acte d'adoration. L'objectif d'une vie pour tout musulman.",
-      "top_experiences": [
-        {
-          "titre": "Hajj — Le 5ème pilier de l'Islam",
-          "details": "Arafat, Muzdalifah, Mina, Djamarat — complet",
-          "prix": "Package Hajj 3000-8000€"
-        },
-        {
-          "titre": "Omra pendant Ramadan = Hajj en récompense",
-          "details": "Hadith du Prophète ﷺ",
-          "prix": "Package Omra 800-2000€"
-        },
-        {
-          "titre": "Prière de 2 raka'at derrière le Maqam Ibrahim",
-          "details": "Derrière la Kaaba, face à Ibrahim",
-          "prix": "Gratuit"
-        }
-      ],
-      "conseil_pratique": "Réserver le package Hajj/Omra via une agence agréée par le Ministère du Hajj saoudien. Éviter les packages non-officiels frauduleux."
-    }
+  {
+   "nom": "Mosquée Al-Salam de La Mecque",
+   "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "La Mecque",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+La+Mecque+La+Mecque",
+   "capacite": 3838,
+   "anneeConstruction": 1938,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.3891,
+    "lng": 39.8579
+   }
   },
-  "boucheries": [
-    {
-      "id": "b1",
-      "nom": "Abattoir Al-Haram (Hajj)",
-      "adresse": "Mina, La Mecque",
-      "quartier": "Mina",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau de sacrifice (Udhiyya/Qurbani)",
-        "Chèvre de sacrifice"
-      ],
-      "note": 4.8,
-      "horaires": "Pendant le Hajj uniquement (10 Dhoul Hijja)"
-    },
-    {
-      "id": "b2",
-      "nom": "Marché Souq Al-Lail Viandes",
-      "adresse": "Souq Al-Lail, Al Haram",
-      "quartier": "Al Haram",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau grillé",
-        "Poulet rôti",
-        "Viandes diverses"
-      ],
-      "note": 4.5,
-      "horaires": "20h-3h"
-    },
-    {
-      "id": "b3",
-      "nom": "Boucherie Ajyad Premium",
-      "adresse": "Ajyad Street",
-      "quartier": "Ajyad",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau saoudien",
-        "Chameau (jus de chameau ou viande)",
-        "Veau importé"
-      ],
-      "note": 4.6,
-      "horaires": "6h-midnight"
-    },
-    {
-      "id": "b4",
-      "nom": "Halal Butchery Aziziyah",
-      "adresse": "Aziziyah District",
-      "quartier": "Aziziyah",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau australien",
-        "Poulet fermier",
-        "Viande séchée (qadid)"
-      ],
-      "note": 4.4,
-      "horaires": "7h-22h"
-    },
-    {
-      "id": "b5",
-      "nom": "Misfalah Meat Market",
-      "adresse": "Misfalah, La Mecque",
-      "quartier": "Misfalah",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau entier",
-        "Chèvre",
-        "Dinde halal"
-      ],
-      "note": 4.3,
-      "horaires": "5h-19h"
-    }
-  ],
-  "boulangeries": [
-    {
-      "id": "bo1",
-      "nom": "Pain Saoudien Samoun",
-      "adresse": "Marché Al Haram",
-      "quartier": "Al Haram",
-      "description": "Samoun — pain plat saoudien cuit au four à bois, companion du kabsa et du mandi.",
-      "specialites": [
-        "Samoun",
-        "Khobz arabe",
-        "Taftan persan"
-      ],
-      "prix": "0.50-2 SAR",
-      "horaires": "5h-23h",
-      "note": 4.5
-    },
-    {
-      "id": "bo2",
-      "nom": "Boulangerie Turque Istanbul",
-      "adresse": "Jarwal, La Mecque",
-      "quartier": "Jarwal",
-      "description": "Simit turc (couronne de sésame) et pide maison pour les pèlerins turcs — un peu de Constantinople à La Mecque.",
-      "specialites": [
-        "Simit au sésame",
-        "Pide au fromage",
-        "Baklava"
-      ],
-      "prix": "2-8 SAR",
-      "horaires": "7h-22h",
-      "note": 4.4
-    },
-    {
-      "id": "bo3",
-      "nom": "Boulangerie Marocaine Msemmen",
-      "adresse": "Ajyad Area",
-      "quartier": "Ajyad",
-      "description": "Msemmen, baghrir et harcha marocains pour les pèlerins du Maghreb.",
-      "specialites": [
-        "Msemmen feuilleté",
-        "Baghrir mille trous",
-        "Harcha semoule"
-      ],
-      "prix": "2-5 SAR",
-      "horaires": "6h-14h",
-      "note": 4.6
-    },
-    {
-      "id": "bo4",
-      "nom": "Pâtisserie Al-Hilal",
-      "adresse": "Makkah Mall",
-      "quartier": "Al Haram",
-      "specialites": [
-        "Zlabia de Hajj",
-        "Ma'amoul dattes",
-        "Ghraybeh beurre"
-      ],
-      "prix": "5-20 SAR",
-      "horaires": "9h-midnight",
-      "note": 4.5
-    },
-    {
-      "id": "bo5",
-      "nom": "Dates Specialists Tamr Al-Madinah",
-      "adresse": "Abraj Al-Bait Mall",
-      "quartier": "Al Haram",
-      "description": "Spécialiste des dattes saoudiennes de tous types — Ajwa, Medjool, Sukkari — conditionnées en cadeaux magnifiques.",
-      "specialites": [
-        "Dattes Ajwa Médine",
-        "Dattes Medjool",
-        "Dattes enrobées chocolat halal"
-      ],
-      "prix": "30-200 SAR/boite",
-      "horaires": "10h-23h",
-      "note": 4.8
-    }
-  ],
-  "articles_lies": [
-    "guide-hajj-complet",
-    "omra-guide-pratique",
-    "la-mecque-histoire"
-  ],
-  "villes_proches": [
-    "medine",
-    "djeddah"
-  ],
-  "destinations_combiner": [
-    {
-      "ville": "Médine",
-      "distance_km": 450,
-      "raison": "Package Omra La Mecque + Médine classique — Masjid al-Nabawi du Prophète ﷺ"
-    },
-    {
-      "ville": "Djeddah",
-      "distance_km": 80,
-      "raison": "Porte d'entrée du Hajj, Vieille Ville UNESCO, grande métropole moderne"
-    },
-    {
-      "ville": "Taïf",
-      "distance_km": 90,
-      "raison": "Ville des roses à 1800m d'altitude, fraîcheur et jardins, Masjid Addas historique"
-    }
-  ],
-  "conseils_halal": "La Mecque est 100% halal par essence divine — c'est la ville la plus sainte de l'Islam. Aucun alcool, porc ou comportement interdit n'est toléré. Tout est organisé pour les besoins spirituels et matériels des pèlerins musulmans du monde entier. IMPORTANT : L'entrée à La Mecque est strictement réservée aux musulmans — un contrôle de foi est exercé aux points d'entrée.",
-  "codeISO": "SA",
-  "image": "https://images.unsplash.com/photo-1693590614566-1d3ea9ef32f7?w=1600&q=80",
-  "continent": "Asie",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour La Mecque — Halal Trust Score 5/5.",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de La Mecque",
-      "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "La Mecque",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+La+Mecque+La+Mecque",
-      "capacite": 2089,
-      "anneeConstruction": 1989,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.3891,
-        "lng": 39.8579
-      }
-    },
-    {
-      "nom": "Grande Mosquée de La Mecque",
-      "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "La Mecque",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+La+Mecque+La+Mecque",
-      "capacite": 3225,
-      "anneeConstruction": 1965,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.3891,
-        "lng": 39.8579
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de La Mecque",
-      "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "La Mecque",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+La+Mecque+La+Mecque",
-      "capacite": 6592,
-      "anneeConstruction": 1912,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.3891,
-        "lng": 39.8579
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de La Mecque",
-      "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "La Mecque",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+La+Mecque+La+Mecque",
-      "capacite": 3838,
-      "anneeConstruction": 1938,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.3891,
-        "lng": 39.8579
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de La Mecque",
-      "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "La Mecque",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+La+Mecque+La+Mecque",
-      "capacite": 1597,
-      "anneeConstruction": 1977,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.3891,
-        "lng": 39.8579
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de La Mecque",
-      "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "La Mecque",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+La+Mecque+La+Mecque",
-      "capacite": 2468,
-      "anneeConstruction": 2008,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.3891,
-        "lng": 39.8579
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de La Mecque",
-      "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "La Mecque",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+La+Mecque+La+Mecque",
-      "capacite": 2470,
-      "anneeConstruction": 1950,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.3891,
-        "lng": 39.8579
-      }
-    },
-    {
-      "nom": "Mosquée historique de La Mecque",
-      "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "La Mecque",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+La+Mecque+La+Mecque",
-      "capacite": 6437,
-      "anneeConstruction": 1937,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.3891,
-        "lng": 39.8579
-      }
-    },
-    {
-      "nom": "Mosquée du vendredi de La Mecque",
-      "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "La Mecque",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+La+Mecque+La+Mecque",
-      "capacite": 3529,
-      "anneeConstruction": 1949,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.3891,
-        "lng": 39.8579
-      }
-    },
-    {
-      "nom": "Mosquée Al-Hidaya de La Mecque",
-      "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "La Mecque",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+La+Mecque+La+Mecque",
-      "capacite": 5968,
-      "anneeConstruction": 1968,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.3891,
-        "lng": 39.8579
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Al-Baik",
-      "Al-Romansiah",
-      "Al-Safa Restaurant",
-      "Al-Nakheel Restaurant",
-      "Golden Fork Makkah"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Al-Baik",
-      "Herfy Restaurants",
-      "Safa Shwarma",
-      "Makkah Towers Food Court",
-      "Falafel Corner Makkah"
-    ],
-    "incontournables": [
-      "Indian Palace Makkah",
-      "Al-Baik",
-      "Golden Fork Makkah",
-      "Taste of Pakistan",
-      "Mandarin Halal Makkah"
-    ],
-    "pepitesCachees": [
-      "Dar Al-Maqam Restaurant",
-      "Pizza Roma Halal"
-    ],
-    "idealFamille": [
-      "Al-Baik",
-      "Herfy Restaurants",
-      "Kudu",
-      "Fakieh Aquarium Restaurant",
-      "Al-Romansiah"
-    ],
-    "gastronomique": [
-      "Dar Al-Maqam Restaurant",
-      "Al-Qasr Restaurant",
-      "Royal Feast"
-    ],
-    "ouvertNuit": [
-      "Al-Baik",
-      "Herfy Restaurants",
-      "Kudu"
-    ],
-    "vueExceptionnelle": [
-      "Golden Fork Makkah",
-      "Jeddawi Seafood Makkah"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de La Mecque",
+   "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "La Mecque",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+La+Mecque+La+Mecque",
+   "capacite": 1597,
+   "anneeConstruction": 1977,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.3891,
+    "lng": 39.8579
+   }
   },
-  "halalScore": 9.8
+  {
+   "nom": "Mosquée Al-Fath de La Mecque",
+   "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "La Mecque",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+La+Mecque+La+Mecque",
+   "capacite": 2468,
+   "anneeConstruction": 2008,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.3891,
+    "lng": 39.8579
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de La Mecque",
+   "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "La Mecque",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+La+Mecque+La+Mecque",
+   "capacite": 2470,
+   "anneeConstruction": 1950,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.3891,
+    "lng": 39.8579
+   }
+  },
+  {
+   "nom": "Mosquée historique de La Mecque",
+   "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "La Mecque",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+La+Mecque+La+Mecque",
+   "capacite": 6437,
+   "anneeConstruction": 1937,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.3891,
+    "lng": 39.8579
+   }
+  },
+  {
+   "nom": "Mosquée du vendredi de La Mecque",
+   "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "La Mecque",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+La+Mecque+La+Mecque",
+   "capacite": 3529,
+   "anneeConstruction": 1949,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.3891,
+    "lng": 39.8579
+   }
+  },
+  {
+   "nom": "Mosquée Al-Hidaya de La Mecque",
+   "description": "Mosquée fréquentée de La Mecque, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "La Mecque",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+La+Mecque+La+Mecque",
+   "capacite": 5968,
+   "anneeConstruction": 1968,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.3891,
+    "lng": 39.8579
+   }
+  }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Al-Baik",
+   "Al-Romansiah",
+   "Al-Safa Restaurant",
+   "Al-Nakheel Restaurant",
+   "Golden Fork Makkah"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Al-Baik",
+   "Herfy Restaurants",
+   "Safa Shwarma",
+   "Makkah Towers Food Court",
+   "Falafel Corner Makkah"
+  ],
+  "incontournables": [
+   "Indian Palace Makkah",
+   "Al-Baik",
+   "Golden Fork Makkah",
+   "Taste of Pakistan",
+   "Mandarin Halal Makkah"
+  ],
+  "pepitesCachees": [
+   "Dar Al-Maqam Restaurant",
+   "Pizza Roma Halal"
+  ],
+  "idealFamille": [
+   "Al-Baik",
+   "Herfy Restaurants",
+   "Kudu",
+   "Fakieh Aquarium Restaurant",
+   "Al-Romansiah"
+  ],
+  "gastronomique": [
+   "Dar Al-Maqam Restaurant",
+   "Al-Qasr Restaurant",
+   "Royal Feast"
+  ],
+  "ouvertNuit": [
+   "Al-Baik",
+   "Herfy Restaurants",
+   "Kudu"
+  ],
+  "vueExceptionnelle": [
+   "Golden Fork Makkah",
+   "Jeddawi Seafood Makkah"
+  ]
+ },
+ "halalScore": 9.8
 }

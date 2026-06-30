@@ -1,1574 +1,1581 @@
 {
-  "nom": "Bagdad",
-  "pays": "Irak",
-  "slug": "bagdad",
-  "image": "https://images.unsplash.com/photo-1737314417275-92a2657112c8?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1737314417275-92a2657112c8?w=1600&q=80",
-  "description": "Bagdad, ancienne capitale de l'âge d'or islamique, renaît. Berceau de la civilisation, la ville séduit par sa rue al-Mutanabbi, ses mosquées et son hospitalité légendaire.",
-  "descriptionLongue": "Fondée au VIIIe siècle, Bagdad fut le cœur du califat abbasside et le phare scientifique du monde médiéval. Aujourd'hui, la ville se relève : la rue al-Mutanabbi, dédiée aux livres, vibre chaque vendredi, et la mosquée al-Kadhimiya attire les pèlerins. Le long du Tigre, les masgouf (carpe grillée) embaument les berges. Ville profondément musulmane à l'hospitalité célèbre, Bagdad offre une plongée unique dans l'histoire de l'Islam.",
-  "halalScore": 8.5,
-  "score_halal": 4.2,
+ "nom": "Bagdad",
+ "pays": "Irak",
+ "slug": "bagdad",
+ "image": "https://images.unsplash.com/photo-1737314417275-92a2657112c8?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1737314417275-92a2657112c8?w=1600&q=80",
+ "description": "Bagdad, ancienne capitale de l'âge d'or islamique, renaît. Berceau de la civilisation, la ville séduit par sa rue al-Mutanabbi, ses mosquées et son hospitalité légendaire.",
+ "descriptionLongue": "Fondée au VIIIe siècle, Bagdad fut le cœur du califat abbasside et le phare scientifique du monde médiéval. Aujourd'hui, la ville se relève : la rue al-Mutanabbi, dédiée aux livres, vibre chaque vendredi, et la mosquée al-Kadhimiya attire les pèlerins. Le long du Tigre, les masgouf (carpe grillée) embaument les berges. Ville profondément musulmane à l'hospitalité célèbre, Bagdad offre une plongée unique dans l'histoire de l'Islam.",
+ "halalScore": 8.5,
+ "score_halal": 4.2,
+ "mosquees": 1000,
+ "population": "8 millions",
+ "langue": "Arabe",
+ "monnaie": "Dinar irakien (IQD)",
+ "fuseau": "UTC+3",
+ "meilleureEpoque": "Mars à Mai, Oct à Nov",
+ "prixMoyenNuit": "70€",
+ "continent": "Asie",
+ "codeISO": "IQ",
+ "pays_slug": "irak",
+ "region": "Mésopotamie",
+ "meta_title": "Voyage Halal à Bagdad — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Bagdad — Halal Trust Score 8.5/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Bagdad — Halal Trust Score 8.5/10.",
+ "coordonnees": {
+  "lat": 33.3152,
+  "lng": 44.3661
+ },
+ "image_alt": "Vue de Bagdad, Irak",
+ "statistiques": {
   "mosquees": 1000,
-  "population": "8 millions",
+  "restaurants_halal": 800,
+  "habitants_musulmans_pct": 98,
+  "hotels": 10
+ },
+ "infos_pratiques": {
   "langue": "Arabe",
   "monnaie": "Dinar irakien (IQD)",
-  "fuseau": "UTC+3",
-  "meilleureEpoque": "Mars à Mai, Oct à Nov",
-  "prixMoyenNuit": "70€",
-  "continent": "Asie",
-  "codeISO": "IQ",
-  "pays_slug": "irak",
-  "region": "Mésopotamie",
-  "meta_title": "Voyage Halal à Bagdad — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Bagdad — Halal Trust Score 8.5/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Bagdad — Halal Trust Score 8.5/10.",
-  "coordonnees": {
+  "meilleure_periode": "Mars à Mai, Oct à Nov",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Très réglementé",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Visa à l'arrivée disponible pour de nombreuses nationalités",
+  "vaccins": "Aucun obligatoire ; consulter les recommandations en vigueur",
+  "transport": "Taxis, voiture avec chauffeur recommandée",
+  "priseElectrique": "Type C/D/G — 230V",
+  "decalageHoraire": "+2h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Mahar Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Abu Nuwas, Bagdad",
+   "description": "Spécialiste du masgouf, la carpe grillée emblématique de Bagdad.",
+   "mapsUrl": "https://maps.google.com/?q=Mahar+Restaurant+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Masgouf du Tigre",
+   "id": "r1",
+   "nombreAvis": 85,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Saj Al Reef",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Karrada, Bagdad",
+   "description": "Cuisine irakienne populaire, pains saj et brochettes.",
+   "mapsUrl": "https://maps.google.com/?q=Saj+Al+Reef+Bagdad",
+   "priceRange": "€",
+   "specialite": "Saj et grillades",
+   "id": "r2",
+   "nombreAvis": 1469,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Beiruti Restaurant",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Mansour, Bagdad",
+   "description": "Adresse levantine appréciée, mezze et grillades.",
+   "mapsUrl": "https://maps.google.com/?q=Beiruti+Restaurant+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "id": "r3",
+   "nombreAvis": 1042,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ]
+  },
+  {
+   "nom": "Al Faqma",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Karrada, Bagdad",
+   "description": "Glacier historique de Bagdad, institution familiale.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Faqma+Bagdad",
+   "priceRange": "€",
+   "specialite": "Glaces et douceurs",
+   "id": "r4",
+   "nombreAvis": 262,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "White Palace",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jadriya, Bagdad",
+   "description": "Cuisine irakienne raffinée, quzi (agneau et riz) de fête.",
+   "mapsUrl": "https://maps.google.com/?q=White+Palace+Bagdad",
+   "priceRange": "€€€",
+   "specialite": "Quzi à l'agneau",
+   "id": "r5",
+   "nombreAvis": 2229,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "nom": "Tikka House",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Zayouna, Bagdad",
+   "description": "Grillades irakiennes généreuses, ambiance conviviale.",
+   "mapsUrl": "https://maps.google.com/?q=Tikka+House+Bagdad",
+   "priceRange": "€",
+   "specialite": "Tikka et kebab",
+   "id": "r6",
+   "nombreAvis": 264,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Pizza Roma Baghdad",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Mansour, Bagdad",
+   "description": "Pizzeria moderne appréciée des familles.",
+   "mapsUrl": "https://maps.google.com/?q=Pizza+Roma+Baghdad+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Pizza halal",
+   "id": "r7",
+   "nombreAvis": 201,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Dijlah Cafe",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Abu Nuwas, Bagdad",
+   "description": "Café au bord du Tigre, thé sucré et pâtisseries du matin.",
+   "mapsUrl": "https://maps.google.com/?q=Dijlah+Cafe+Bagdad",
+   "priceRange": "€",
+   "specialite": "Thé irakien et kahi",
+   "id": "r8",
+   "nombreAvis": 339,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Al Madina Bagdad",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bagdad",
+   "description": "Adresse halal appréciée des habitants de Bagdad.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Bagdad+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r9",
+   "nombreAvis": 606,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Shawarma House Bagdad",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Bagdad",
+   "description": "Adresse halal appréciée des habitants de Bagdad.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Bagdad+Bagdad",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r10",
+   "nombreAvis": 1092,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Beit Beirut Bagdad",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Bagdad",
+   "description": "Adresse halal appréciée des habitants de Bagdad.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Bagdad+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r11",
+   "nombreAvis": 1001,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ]
+  },
+  {
+   "nom": "Spice Route Bagdad",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Bagdad",
+   "description": "Adresse halal appréciée des habitants de Bagdad.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Bagdad+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r12",
+   "nombreAvis": 2080,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ]
+  },
+  {
+   "nom": "Saffron Garden Bagdad",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Bagdad",
+   "description": "Adresse halal appréciée des habitants de Bagdad.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Bagdad+Bagdad",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r13",
+   "nombreAvis": 834,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ]
+  },
+  {
+   "nom": "Green Bowl Bagdad",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bagdad",
+   "description": "Adresse halal appréciée des habitants de Bagdad.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Bagdad+Bagdad",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r14",
+   "nombreAvis": 1245,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "rapide",
+    "veggie"
+   ]
+  },
+  {
+   "nom": "Sultan Café Bagdad",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Bagdad",
+   "description": "Adresse halal appréciée des habitants de Bagdad.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Bagdad+Bagdad",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r15",
+   "nombreAvis": 670,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ]
+  },
+  {
+   "nom": "Bait Al Karam",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Bagdad",
+   "description": "Adresse traditionnel local appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Plat mijoté maison",
+   "nombreAvis": 1286,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Shawarma Al Reef",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Bagdad",
+   "description": "Adresse grillades & kebab appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Bagdad",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "nombreAvis": 1971,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Beit Cham",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bagdad",
+   "description": "Adresse libanais & levant appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "nombreAvis": 63,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Saffron Majlis",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Bagdad",
+   "description": "Adresse gastronomique appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Bagdad",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation halal",
+   "nombreAvis": 932,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Sultan Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Bagdad",
+   "description": "Adresse pâtisserie & café appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Bagdad",
+   "priceRange": "€",
+   "specialite": "Kunafa et café arabe",
+   "nombreAvis": 105,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Bait Al Karam Bagdad 1",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Bagdad",
+   "description": "Adresse traditionnel local appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Bagdad+1+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Plat mijoté maison",
+   "nombreAvis": 1835,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Shawarma Al Reef Bagdad 2",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Bagdad",
+   "description": "Adresse grillades & kebab appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Bagdad+2+Bagdad",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "nombreAvis": 1379,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Beit Cham Bagdad 3",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bagdad",
+   "description": "Adresse libanais & levant appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Bagdad+3+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "nombreAvis": 602,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Saffron Majlis Bagdad 4",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Bagdad",
+   "description": "Adresse gastronomique appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Bagdad+4+Bagdad",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation halal",
+   "nombreAvis": 1875,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Sultan Sweets Bagdad 5",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Bagdad",
+   "description": "Adresse pâtisserie & café appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Bagdad+5+Bagdad",
+   "priceRange": "€",
+   "specialite": "Kunafa et café arabe",
+   "nombreAvis": 1632,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Bahr Seafood",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Bagdad",
+   "description": "Adresse fruits de mer appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Bagdad",
+   "priceRange": "€€€",
+   "specialite": "Poisson du jour grillé",
+   "nombreAvis": 793,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Mughal Spice",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bagdad",
+   "description": "Adresse indien & pakistani appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 786,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Green Yasmine",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Bagdad",
+   "description": "Adresse végétarien & healthy appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Bagdad",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "nombreAvis": 1315,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Burger Najma",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Bagdad",
+   "description": "Adresse burgers & fast-food appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Smash burger halal",
+   "nombreAvis": 2043,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Tokyo Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Bagdad",
+   "description": "Adresse japonais & asiatique appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Bagdad",
+   "priceRange": "€€€",
+   "specialite": "Sushis halal",
+   "nombreAvis": 2314,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Bait Al Karam Bagdad 11",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Bagdad",
+   "description": "Adresse traditionnel local appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Bagdad+11+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Plat mijoté maison",
+   "nombreAvis": 2622,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Shawarma Al Reef Bagdad 12",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Bagdad",
+   "description": "Adresse grillades & kebab appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Bagdad+12+Bagdad",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "nombreAvis": 703,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Beit Cham Bagdad 13",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Bagdad",
+   "description": "Adresse libanais & levant appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Bagdad+13+Bagdad",
+   "priceRange": "€€",
+   "specialite": "Mezze levantin",
+   "nombreAvis": 797,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Saffron Majlis Bagdad 14",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Bagdad",
+   "description": "Adresse gastronomique appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Bagdad+14+Bagdad",
+   "priceRange": "€€€€",
+   "specialite": "Menu dégustation halal",
+   "nombreAvis": 985,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Sultan Sweets Bagdad 15",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Bagdad",
+   "description": "Adresse pâtisserie & café appréciée à Bagdad, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Bagdad+15+Bagdad",
+   "priceRange": "€",
+   "specialite": "Kunafa et café arabe",
+   "nombreAvis": 1295,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r35"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Babylon Rotana",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Karrada, Bagdad",
+   "description": "Hôtel international au bord du Tigre, restauration halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Babylon+Rotana+Bagdad",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "nombreAvis": 658,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 33.2912242,
+   "lng": 44.3904889
+  },
+  {
+   "nom": "Baghdad International Hotel",
+   "categorie": "Standard",
+   "score": 4.1,
+   "adresse": "Jadriya, Bagdad",
+   "description": "Grand hôtel central, classique et fonctionnel.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Baghdad+International+Hotel+Bagdad",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
+   "priceRange": "€€€",
+   "id": "h2",
+   "nombreAvis": 762,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Coral Boutique Hotel",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Arasat, Bagdad",
+   "description": "Boutique-hôtel calme et soigné, sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Coral+Boutique+Hotel+Bagdad",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
+   "priceRange": "€€€",
+   "id": "h3",
+   "nombreAvis": 824,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Cristal Grand Ishtar",
+   "categorie": "Standard",
+   "score": 4.2,
+   "adresse": "Karrada, Bagdad",
+   "description": "Tour emblématique rénovée surplombant la ville.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Cristal+Grand+Ishtar+Bagdad",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
+   "priceRange": "€€€",
+   "id": "h4",
+   "nombreAvis": 1254,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Dijlah Hotel",
+   "categorie": "Budget",
+   "score": 4,
+   "adresse": "Karrada, Bagdad",
+   "description": "Hébergement économique proche du centre.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Dijlah+Hotel+Bagdad",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
+   "priceRange": "€€",
+   "id": "h5",
+   "nombreAvis": 2244,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Bagdad",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Bagdad",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bagdad+Bagdad",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
+   "priceRange": "€€€€",
+   "id": "h6",
+   "nombreAvis": 2117,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 33.3057386,
+   "lng": 44.382628
+  },
+  {
+   "nom": "Grand Plaza Bagdad 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Bagdad",
+   "description": "Hébergement halal-friendly à Bagdad.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bagdad+0+Bagdad",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
+   "priceRange": "€€€€",
+   "nombreAvis": 866,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 33.3057386,
+   "lng": 44.382628
+  },
+  {
+   "nom": "City Comfort Bagdad",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Bagdad",
+   "description": "Hébergement halal-friendly à Bagdad.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Bagdad+Bagdad",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
+   "priceRange": "€€€",
+   "nombreAvis": 1311,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Bagdad",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Bagdad",
+   "description": "Hébergement halal-friendly à Bagdad.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Bagdad+Bagdad",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
+   "priceRange": "€€€",
+   "nombreAvis": 1838,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Bagdad",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Bagdad",
+   "description": "Hébergement halal-friendly à Bagdad.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Bagdad+Bagdad",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
+   "priceRange": "€€",
+   "nombreAvis": 2512,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Rue al-Mutanabbi",
+   "categorie": "Histoire & Culture",
+   "description": "Rue historique des libraires, vibrante le vendredi, cœur intellectuel de Bagdad.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Rue+al-Mutanabbi+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Rue+al-Mutanabbi+Bagdad",
+   "id": "a1",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Al-Kadhimiya",
+   "categorie": "Religieux & Spirituel",
+   "description": "Sanctuaire aux dômes dorés, important lieu de pèlerinage.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Kadhimiya+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Al-Kadhimiya+Bagdad",
+   "id": "a2",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée National d'Irak",
+   "categorie": "Art & Musées",
+   "description": "Trésors de Mésopotamie : Sumer, Babylone, Assyrie et art islamique.",
+   "duree": "2-3h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+National+d%27Irak+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+National+d%27Irak+Bagdad",
+   "id": "a3",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Berges du Tigre (Abu Nuwas)",
+   "categorie": "Nature & Aventure",
+   "description": "Promenade et restaurants de masgouf le long du fleuve mythique.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Berges+du+Tigre+%28Abu+Nuwas%29+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Berges+du+Tigre+%28Abu+Nuwas%29+Bagdad",
+   "id": "a4",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Place Tahrir & Monument de la Liberté",
+   "categorie": "Histoire & Culture",
+   "description": "Place centrale et fresque monumentale de Jawad Saleem.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Place+Tahrir+%26+Monument+de+la+Libert%C3%A9+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+Tahrir+%26+Monument+de+la+Libert%C3%A9+Bagdad",
+   "id": "a5",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée Umm al-Qura",
+   "categorie": "Religieux & Spirituel",
+   "description": "Grande mosquée moderne aux minarets distinctifs.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Umm+al-Qura+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Umm+al-Qura+Bagdad",
+   "id": "a6",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Souk al-Ghazel",
+   "categorie": "Shopping & Souks",
+   "description": "Ancien souk de la laine et de l'artisanat au cœur de la vieille ville.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Souk+al-Ghazel+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+al-Ghazel+Bagdad",
+   "id": "a7",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Maison du patrimoine bagdadien",
+   "categorie": "Art & Musées",
+   "description": "Demeure traditionnelle illustrant la vie d'autrefois à Bagdad.",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Maison+du+patrimoine+bagdadien+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Maison+du+patrimoine+bagdadien+Bagdad",
+   "id": "a8",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Bagdad",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Bagdad+Bagdad",
+   "id": "a9",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Bagdad",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Bagdad+Bagdad",
+   "id": "a10",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Bagdad",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bagdad+Bagdad",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Bagdad",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bagdad+Bagdad",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Bagdad",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Bagdad+Bagdad",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Bagdad",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Bagdad+Bagdad",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Bagdad",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Bagdad+Bagdad",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Bagdad",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Bagdad+Bagdad",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Bagdad",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Bagdad+Bagdad",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Bagdad",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Bagdad+Bagdad",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Bagdad",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Bagdad+Bagdad",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Bagdad",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Bagdad+Bagdad",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Bagdad+Bagdad",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Al-Kadhimiya",
+   "description": "Sanctuaire majeur aux dômes et minarets dorés, haut lieu de pèlerinage.",
+   "adresse": "Kadhimiya, Bagdad",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Kadhimiya+Bagdad",
+   "capacite": 5557,
+   "anneeConstruction": 1987,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 33.3152,
     "lng": 44.3661
+   }
   },
-  "image_alt": "Vue de Bagdad, Irak",
-  "statistiques": {
-    "mosquees": 1000,
-    "restaurants_halal": 800,
-    "habitants_musulmans_pct": 98
+  {
+   "nom": "Mosquée Abu Hanifa",
+   "description": "Importante mosquée sunnite abritant le mausolée de l'imam Abu Hanifa.",
+   "adresse": "Adhamiyah, Bagdad",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Abu+Hanifa+Bagdad",
+   "capacite": 5896,
+   "anneeConstruction": 1936,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.3152,
+    "lng": 44.3661
+   }
   },
-  "infos_pratiques": {
-    "langue": "Arabe",
-    "monnaie": "Dinar irakien (IQD)",
-    "meilleure_periode": "Mars à Mai, Oct à Nov",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Très réglementé",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Bagdad",
+   "description": "Mosquée fréquentée de Bagdad, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bagdad",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Bagdad+Bagdad",
+   "capacite": 2904,
+   "anneeConstruction": 1984,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.3152,
+    "lng": 44.3661
+   }
   },
-  "infoPratique": {
-    "visa": "Visa à l'arrivée disponible pour de nombreuses nationalités",
-    "vaccins": "Aucun obligatoire ; consulter les recommandations en vigueur",
-    "transport": "Taxis, voiture avec chauffeur recommandée",
-    "priseElectrique": "Type C/D/G — 230V",
-    "decalageHoraire": "+2h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Bagdad",
+   "description": "Mosquée fréquentée de Bagdad, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bagdad",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Bagdad+Bagdad",
+   "capacite": 2078,
+   "anneeConstruction": 1998,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.3152,
+    "lng": 44.3661
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Mahar Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Abu Nuwas, Bagdad",
-      "description": "Spécialiste du masgouf, la carpe grillée emblématique de Bagdad.",
-      "mapsUrl": "https://maps.google.com/?q=Mahar+Restaurant+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Masgouf du Tigre",
-      "id": "r1",
-      "nombreAvis": 85,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Saj Al Reef",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Karrada, Bagdad",
-      "description": "Cuisine irakienne populaire, pains saj et brochettes.",
-      "mapsUrl": "https://maps.google.com/?q=Saj+Al+Reef+Bagdad",
-      "priceRange": "€",
-      "specialite": "Saj et grillades",
-      "id": "r2",
-      "nombreAvis": 1469,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Beiruti Restaurant",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Mansour, Bagdad",
-      "description": "Adresse levantine appréciée, mezze et grillades.",
-      "mapsUrl": "https://maps.google.com/?q=Beiruti+Restaurant+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "id": "r3",
-      "nombreAvis": 1042,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ]
-    },
-    {
-      "nom": "Al Faqma",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Karrada, Bagdad",
-      "description": "Glacier historique de Bagdad, institution familiale.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Faqma+Bagdad",
-      "priceRange": "€",
-      "specialite": "Glaces et douceurs",
-      "id": "r4",
-      "nombreAvis": 262,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "White Palace",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jadriya, Bagdad",
-      "description": "Cuisine irakienne raffinée, quzi (agneau et riz) de fête.",
-      "mapsUrl": "https://maps.google.com/?q=White+Palace+Bagdad",
-      "priceRange": "€€€",
-      "specialite": "Quzi à l'agneau",
-      "id": "r5",
-      "nombreAvis": 2229,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Tikka House",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Zayouna, Bagdad",
-      "description": "Grillades irakiennes généreuses, ambiance conviviale.",
-      "mapsUrl": "https://maps.google.com/?q=Tikka+House+Bagdad",
-      "priceRange": "€",
-      "specialite": "Tikka et kebab",
-      "id": "r6",
-      "nombreAvis": 264,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Pizza Roma Baghdad",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Mansour, Bagdad",
-      "description": "Pizzeria moderne appréciée des familles.",
-      "mapsUrl": "https://maps.google.com/?q=Pizza+Roma+Baghdad+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Pizza halal",
-      "id": "r7",
-      "nombreAvis": 201,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Dijlah Cafe",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Abu Nuwas, Bagdad",
-      "description": "Café au bord du Tigre, thé sucré et pâtisseries du matin.",
-      "mapsUrl": "https://maps.google.com/?q=Dijlah+Cafe+Bagdad",
-      "priceRange": "€",
-      "specialite": "Thé irakien et kahi",
-      "id": "r8",
-      "nombreAvis": 339,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Al Madina Bagdad",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bagdad",
-      "description": "Adresse halal appréciée des habitants de Bagdad.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Bagdad+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r9",
-      "nombreAvis": 606,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Shawarma House Bagdad",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bagdad",
-      "description": "Adresse halal appréciée des habitants de Bagdad.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Bagdad+Bagdad",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r10",
-      "nombreAvis": 1092,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Beit Beirut Bagdad",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bagdad",
-      "description": "Adresse halal appréciée des habitants de Bagdad.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Bagdad+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r11",
-      "nombreAvis": 1001,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ]
-    },
-    {
-      "nom": "Spice Route Bagdad",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bagdad",
-      "description": "Adresse halal appréciée des habitants de Bagdad.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Bagdad+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r12",
-      "nombreAvis": 2080,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ]
-    },
-    {
-      "nom": "Saffron Garden Bagdad",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Bagdad",
-      "description": "Adresse halal appréciée des habitants de Bagdad.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Bagdad+Bagdad",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r13",
-      "nombreAvis": 834,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ]
-    },
-    {
-      "nom": "Green Bowl Bagdad",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bagdad",
-      "description": "Adresse halal appréciée des habitants de Bagdad.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Bagdad+Bagdad",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r14",
-      "nombreAvis": 1245,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "veggie"
-      ]
-    },
-    {
-      "nom": "Sultan Café Bagdad",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bagdad",
-      "description": "Adresse halal appréciée des habitants de Bagdad.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Bagdad+Bagdad",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r15",
-      "nombreAvis": 670,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ]
-    },
-    {
-      "nom": "Bait Al Karam",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bagdad",
-      "description": "Adresse traditionnel local appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 1286,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Shawarma Al Reef",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bagdad",
-      "description": "Adresse grillades & kebab appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Bagdad",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 1971,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Beit Cham",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bagdad",
-      "description": "Adresse libanais & levant appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 63,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Saffron Majlis",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bagdad",
-      "description": "Adresse gastronomique appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Bagdad",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 932,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Sultan Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bagdad",
-      "description": "Adresse pâtisserie & café appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Bagdad",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 105,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Bait Al Karam Bagdad 1",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bagdad",
-      "description": "Adresse traditionnel local appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Bagdad+1+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 1835,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Shawarma Al Reef Bagdad 2",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bagdad",
-      "description": "Adresse grillades & kebab appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Bagdad+2+Bagdad",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 1379,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Beit Cham Bagdad 3",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bagdad",
-      "description": "Adresse libanais & levant appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Bagdad+3+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 602,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Saffron Majlis Bagdad 4",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bagdad",
-      "description": "Adresse gastronomique appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Bagdad+4+Bagdad",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 1875,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Sultan Sweets Bagdad 5",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bagdad",
-      "description": "Adresse pâtisserie & café appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Bagdad+5+Bagdad",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 1632,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Bahr Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bagdad",
-      "description": "Adresse fruits de mer appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahr+Seafood+Bagdad",
-      "priceRange": "€€€",
-      "specialite": "Poisson du jour grillé",
-      "nombreAvis": 793,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Mughal Spice",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bagdad",
-      "description": "Adresse indien & pakistani appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Mughal+Spice+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 786,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Green Yasmine",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Bagdad",
-      "description": "Adresse végétarien & healthy appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Yasmine+Bagdad",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "nombreAvis": 1315,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Burger Najma",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Bagdad",
-      "description": "Adresse burgers & fast-food appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+Najma+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Smash burger halal",
-      "nombreAvis": 2043,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Tokyo Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Bagdad",
-      "description": "Adresse japonais & asiatique appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Bagdad",
-      "priceRange": "€€€",
-      "specialite": "Sushis halal",
-      "nombreAvis": 2314,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Bait Al Karam Bagdad 11",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Bagdad",
-      "description": "Adresse traditionnel local appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bait+Al+Karam+Bagdad+11+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Plat mijoté maison",
-      "nombreAvis": 2622,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Shawarma Al Reef Bagdad 12",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Bagdad",
-      "description": "Adresse grillades & kebab appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+Al+Reef+Bagdad+12+Bagdad",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "nombreAvis": 703,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Beit Cham Bagdad 13",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Bagdad",
-      "description": "Adresse libanais & levant appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Bagdad+13+Bagdad",
-      "priceRange": "€€",
-      "specialite": "Mezze levantin",
-      "nombreAvis": 797,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Saffron Majlis Bagdad 14",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Bagdad",
-      "description": "Adresse gastronomique appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Majlis+Bagdad+14+Bagdad",
-      "priceRange": "€€€€",
-      "specialite": "Menu dégustation halal",
-      "nombreAvis": 985,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Sultan Sweets Bagdad 15",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Bagdad",
-      "description": "Adresse pâtisserie & café appréciée à Bagdad, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Sweets+Bagdad+15+Bagdad",
-      "priceRange": "€",
-      "specialite": "Kunafa et café arabe",
-      "nombreAvis": 1295,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r35"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Babylon Rotana",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Karrada, Bagdad",
-      "description": "Hôtel international au bord du Tigre, restauration halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Babylon+Rotana+Bagdad",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
-      "priceRange": "€€€€",
-      "id": "h1",
-      "nombreAvis": 658,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Baghdad International Hotel",
-      "categorie": "Standard",
-      "score": 4.1,
-      "adresse": "Jadriya, Bagdad",
-      "description": "Grand hôtel central, classique et fonctionnel.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Baghdad+International+Hotel+Bagdad",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
-      "priceRange": "€€€",
-      "id": "h2",
-      "nombreAvis": 762,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Coral Boutique Hotel",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Arasat, Bagdad",
-      "description": "Boutique-hôtel calme et soigné, sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Coral+Boutique+Hotel+Bagdad",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
-      "priceRange": "€€€",
-      "id": "h3",
-      "nombreAvis": 824,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Cristal Grand Ishtar",
-      "categorie": "Standard",
-      "score": 4.2,
-      "adresse": "Karrada, Bagdad",
-      "description": "Tour emblématique rénovée surplombant la ville.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Cristal+Grand+Ishtar+Bagdad",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
-      "priceRange": "€€€",
-      "id": "h4",
-      "nombreAvis": 1254,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Dijlah Hotel",
-      "categorie": "Budget",
-      "score": 4.0,
-      "adresse": "Karrada, Bagdad",
-      "description": "Hébergement économique proche du centre.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Dijlah+Hotel+Bagdad",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
-      "priceRange": "€€",
-      "id": "h5",
-      "nombreAvis": 2244,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Bagdad",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Bagdad",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bagdad+Bagdad",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
-      "priceRange": "€€€€",
-      "id": "h6",
-      "nombreAvis": 2117,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Bagdad 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Bagdad",
-      "description": "Hébergement halal-friendly à Bagdad.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bagdad+0+Bagdad",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
-      "priceRange": "€€€€",
-      "nombreAvis": 866,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Bagdad",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Bagdad",
-      "description": "Hébergement halal-friendly à Bagdad.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Bagdad+Bagdad",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
-      "priceRange": "€€€",
-      "nombreAvis": 1311,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Bagdad",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Bagdad",
-      "description": "Hébergement halal-friendly à Bagdad.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Bagdad+Bagdad",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
-      "priceRange": "€€€",
-      "nombreAvis": 1838,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Bagdad",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Bagdad",
-      "description": "Hébergement halal-friendly à Bagdad.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Bagdad+Bagdad",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bagdad&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bagdad",
-      "priceRange": "€€",
-      "nombreAvis": 2512,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Rue al-Mutanabbi",
-      "categorie": "Histoire & Culture",
-      "description": "Rue historique des libraires, vibrante le vendredi, cœur intellectuel de Bagdad.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Rue+al-Mutanabbi+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Rue+al-Mutanabbi+Bagdad",
-      "id": "a1",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Al-Kadhimiya",
-      "categorie": "Religieux & Spirituel",
-      "description": "Sanctuaire aux dômes dorés, important lieu de pèlerinage.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Kadhimiya+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Al-Kadhimiya+Bagdad",
-      "id": "a2",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée National d'Irak",
-      "categorie": "Art & Musées",
-      "description": "Trésors de Mésopotamie : Sumer, Babylone, Assyrie et art islamique.",
-      "duree": "2-3h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+National+d%27Irak+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+National+d%27Irak+Bagdad",
-      "id": "a3",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Berges du Tigre (Abu Nuwas)",
-      "categorie": "Nature & Aventure",
-      "description": "Promenade et restaurants de masgouf le long du fleuve mythique.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Berges+du+Tigre+%28Abu+Nuwas%29+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Berges+du+Tigre+%28Abu+Nuwas%29+Bagdad",
-      "id": "a4",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Place Tahrir & Monument de la Liberté",
-      "categorie": "Histoire & Culture",
-      "description": "Place centrale et fresque monumentale de Jawad Saleem.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Place+Tahrir+%26+Monument+de+la+Libert%C3%A9+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Place+Tahrir+%26+Monument+de+la+Libert%C3%A9+Bagdad",
-      "id": "a5",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée Umm al-Qura",
-      "categorie": "Religieux & Spirituel",
-      "description": "Grande mosquée moderne aux minarets distinctifs.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Umm+al-Qura+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Umm+al-Qura+Bagdad",
-      "id": "a6",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Souk al-Ghazel",
-      "categorie": "Shopping & Souks",
-      "description": "Ancien souk de la laine et de l'artisanat au cœur de la vieille ville.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Souk+al-Ghazel+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+al-Ghazel+Bagdad",
-      "id": "a7",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Maison du patrimoine bagdadien",
-      "categorie": "Art & Musées",
-      "description": "Demeure traditionnelle illustrant la vie d'autrefois à Bagdad.",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Maison+du+patrimoine+bagdadien+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Maison+du+patrimoine+bagdadien+Bagdad",
-      "id": "a8",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Bagdad",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Bagdad+Bagdad",
-      "id": "a9",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Bagdad",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Bagdad+Bagdad",
-      "id": "a10",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Bagdad",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bagdad+Bagdad",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Bagdad",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bagdad+Bagdad",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Bagdad",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Bagdad+Bagdad",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Bagdad",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Bagdad+Bagdad",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Bagdad",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Bagdad+Bagdad",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Bagdad",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Bagdad+Bagdad",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Bagdad",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Bagdad+Bagdad",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Bagdad",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Bagdad+Bagdad",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Bagdad",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Bagdad+Bagdad",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Bagdad",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Bagdad+Bagdad",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Bagdad+Bagdad",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Al-Kadhimiya",
-      "description": "Sanctuaire majeur aux dômes et minarets dorés, haut lieu de pèlerinage.",
-      "adresse": "Kadhimiya, Bagdad",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Kadhimiya+Bagdad",
-      "capacite": 5557,
-      "anneeConstruction": 1987,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.3152,
-        "lng": 44.3661
-      }
-    },
-    {
-      "nom": "Mosquée Abu Hanifa",
-      "description": "Importante mosquée sunnite abritant le mausolée de l'imam Abu Hanifa.",
-      "adresse": "Adhamiyah, Bagdad",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Abu+Hanifa+Bagdad",
-      "capacite": 5896,
-      "anneeConstruction": 1936,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.3152,
-        "lng": 44.3661
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Bagdad",
-      "description": "Mosquée fréquentée de Bagdad, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bagdad",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Bagdad+Bagdad",
-      "capacite": 2904,
-      "anneeConstruction": 1984,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.3152,
-        "lng": 44.3661
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Bagdad",
-      "description": "Mosquée fréquentée de Bagdad, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bagdad",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Bagdad+Bagdad",
-      "capacite": 2078,
-      "anneeConstruction": 1998,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.3152,
-        "lng": 44.3661
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Bagdad",
-      "description": "Mosquée fréquentée de Bagdad, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bagdad",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Bagdad+Bagdad",
-      "capacite": 1996,
-      "anneeConstruction": 1936,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.3152,
-        "lng": 44.3661
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Bagdad",
-      "description": "Mosquée fréquentée de Bagdad, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bagdad",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Bagdad+Bagdad",
-      "capacite": 2416,
-      "anneeConstruction": 1956,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.3152,
-        "lng": 44.3661
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Bagdad",
-      "description": "Mosquée fréquentée de Bagdad, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bagdad",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Bagdad+Bagdad",
-      "capacite": 6337,
-      "anneeConstruction": 1977,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.3152,
-        "lng": 44.3661
-      }
-    }
-  ],
-  "tags": [
-    "histoire",
-    "age-dor-islamique",
-    "spirituel",
-    "mesopotamie",
-    "culture",
-    "hospitalite"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Bait Al Karam",
-      "Bait Al Karam Bagdad 1",
-      "Burger Najma",
-      "Shawarma Al Reef",
-      "Shawarma Al Reef Bagdad 2"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Mahar Restaurant",
-      "Al Faqma",
-      "Dijlah Cafe",
-      "Beit Beirut Bagdad",
-      "Spice Route Bagdad"
-    ],
-    "incontournables": [
-      "Bait Al Karam Bagdad 11",
-      "Tokyo Halal",
-      "White Palace",
-      "Spice Route Bagdad",
-      "Burger Najma"
-    ],
-    "pepitesCachees": [
-      "Mahar Restaurant",
-      "Al Faqma",
-      "Dijlah Cafe"
-    ],
-    "idealFamille": [
-      "Mahar Restaurant",
-      "Saj Al Reef",
-      "Beiruti Restaurant",
-      "Al Faqma",
-      "Tikka House"
-    ],
-    "gastronomique": [
-      "White Palace",
-      "Saffron Garden Bagdad",
-      "Saffron Majlis",
-      "Saffron Majlis Bagdad 4",
-      "Saffron Majlis Bagdad 14"
-    ],
-    "ouvertNuit": [
-      "Saj Al Reef",
-      "Beiruti Restaurant",
-      "Al Faqma"
-    ],
-    "vueExceptionnelle": [
-      "Bahr Seafood"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Bagdad",
+   "description": "Mosquée fréquentée de Bagdad, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bagdad",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Bagdad+Bagdad",
+   "capacite": 1996,
+   "anneeConstruction": 1936,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.3152,
+    "lng": 44.3661
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Bagdad",
+   "description": "Mosquée fréquentée de Bagdad, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bagdad",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Bagdad+Bagdad",
+   "capacite": 2416,
+   "anneeConstruction": 1956,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.3152,
+    "lng": 44.3661
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Bagdad",
+   "description": "Mosquée fréquentée de Bagdad, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bagdad",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Bagdad+Bagdad",
+   "capacite": 6337,
+   "anneeConstruction": 1977,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.3152,
+    "lng": 44.3661
+   }
   }
+ ],
+ "tags": [
+  "histoire",
+  "age-dor-islamique",
+  "spirituel",
+  "mesopotamie",
+  "culture",
+  "hospitalite"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Bait Al Karam",
+   "Bait Al Karam Bagdad 1",
+   "Burger Najma",
+   "Shawarma Al Reef",
+   "Shawarma Al Reef Bagdad 2"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Mahar Restaurant",
+   "Al Faqma",
+   "Dijlah Cafe",
+   "Beit Beirut Bagdad",
+   "Spice Route Bagdad"
+  ],
+  "incontournables": [
+   "Bait Al Karam Bagdad 11",
+   "Tokyo Halal",
+   "White Palace",
+   "Spice Route Bagdad",
+   "Burger Najma"
+  ],
+  "pepitesCachees": [
+   "Mahar Restaurant",
+   "Al Faqma",
+   "Dijlah Cafe"
+  ],
+  "idealFamille": [
+   "Mahar Restaurant",
+   "Saj Al Reef",
+   "Beiruti Restaurant",
+   "Al Faqma",
+   "Tikka House"
+  ],
+  "gastronomique": [
+   "White Palace",
+   "Saffron Garden Bagdad",
+   "Saffron Majlis",
+   "Saffron Majlis Bagdad 4",
+   "Saffron Majlis Bagdad 14"
+  ],
+  "ouvertNuit": [
+   "Saj Al Reef",
+   "Beiruti Restaurant",
+   "Al Faqma"
+  ],
+  "vueExceptionnelle": [
+   "Bahr Seafood"
+  ]
+ }
 }

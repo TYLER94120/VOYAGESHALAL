@@ -1,2292 +1,2315 @@
 {
-  "slug": "jakarta",
-  "nom": "Jakarta",
-  "nom_arabe": "جاكرتا",
-  "pays": "Indonésie",
-  "pays_slug": "indonesie",
-  "drapeau": "🇮🇩",
-  "region": "Asie du Sud-Est",
-  "coordonnees": {
+ "slug": "jakarta",
+ "nom": "Jakarta",
+ "nom_arabe": "جاكرتا",
+ "pays": "Indonésie",
+ "pays_slug": "indonesie",
+ "drapeau": "🇮🇩",
+ "region": "Asie du Sud-Est",
+ "coordonnees": {
+  "lat": -6.2088,
+  "lng": 106.8456
+ },
+ "score_halal": 4.4,
+ "score_securite": 4,
+ "score_famille": 4,
+ "score_budget": 5,
+ "description": {
+  "court": "La mégalopole musulmane d'Asie du Sud-Est, capitale de la plus grande nation islamique du monde",
+  "long": "Jakarta est la capitale de l'Indonésie, le pays qui compte le plus grand nombre de musulmans au monde (230 millions). C'est une métropole dynamique de 30 millions d'habitants où le halal est omniprésent et certifié par le MUI (Majelis Ulama Indonesia). La ville offre une scène culinaire extraordinaire — des warungs de rue aux restaurants gastronomiques — avec pratiquement 100% de la nourriture halal. Jakarta est aussi le point de départ idéal pour explorer l'île de Java."
+ },
+ "statistiques": {
+  "mosquees": 3000,
+  "restaurants_halal": 50000,
+  "hotels_halal_friendly": 800,
+  "population": "30 millions (aire métropolitaine)",
+  "hotels": 15
+ },
+ "infos_pratiques": {
+  "langue": "Bahasa Indonesia (officiel), Anglais dans les zones touristiques",
+  "monnaie": "Roupie indonésienne (IDR) — 1 € ≈ 17 000 IDR",
+  "fuseau_horaire": "WIB (GMT+7)",
+  "meilleure_periode": "Juin–septembre (saison sèche)",
+  "visa": "Visa à l'arrivée (Visa on Arrival) 35 USD pour 30 jours",
+  "transport": "MRT, Transjakarta (BRT), ojek (moto-taxi), Gojek/Grab"
+ },
+ "restaurants": [
+  {
+   "nom": "Sate Khas Senayan",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Saté premium, institution à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Sate+Khas+Senayan+Jakarta",
+   "priceRange": "€€€€",
+   "specialite": "Saté premium",
+   "nombreAvis": 218,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Restoran Garuda",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Padang depuis 1958 à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Restoran+Garuda+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Padang depuis 1958",
+   "nombreAvis": 967,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Sederhana Padang",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Padang populaire à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Sederhana+Padang+Jakarta",
+   "priceRange": "€",
+   "specialite": "Padang populaire",
+   "nombreAvis": 2167,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "RM Pagi Sore",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jakarta",
+   "description": "Padang comfort food à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=RM+Pagi+Sore+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Padang comfort food",
+   "nombreAvis": 745,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Warung Pohon Jambu",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Jakarta",
+   "description": "Betawi traditionnel à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Warung+Pohon+Jambu+Jakarta",
+   "priceRange": "€",
+   "specialite": "Betawi traditionnel",
+   "nombreAvis": 120,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Betawi Baper",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Betawi moderne à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Betawi+Baper+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Betawi moderne",
+   "nombreAvis": 680,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Soto Betawi H. Ma'ruf",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Soto légendaire à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Soto+Betawi+H.+Ma%27ruf+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Soto légendaire",
+   "nombreAvis": 1552,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Gudeg Kantin",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Gudeg jogja à Jakarta à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Gudeg+Kantin+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Gudeg jogja à jakarta",
+   "nombreAvis": 3451,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Soto Ayam Lamongan",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Jakarta",
+   "description": "Soupe légendaire à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Soto+Ayam+Lamongan+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Soupe légendaire",
+   "nombreAvis": 2549,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Rawon Nguling",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jakarta",
+   "description": "Rawon surabaya à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Rawon+Nguling+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Rawon surabaya",
+   "nombreAvis": 310,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Ayam Penyet Ria",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jakarta",
+   "description": "Poulet frit populaire à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Ayam+Penyet+Ria+Jakarta",
+   "priceRange": "€",
+   "specialite": "Poulet frit populaire",
+   "nombreAvis": 145,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Bebek Goreng Pak Ndut",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Canard frit à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Bebek+Goreng+Pak+Ndut+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Canard frit",
+   "nombreAvis": 88,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Laksana Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jakarta",
+   "description": "Betawi gastronomique à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Laksana+Restaurant+Jakarta",
+   "priceRange": "€€€€",
+   "specialite": "Betawi gastronomique",
+   "nombreAvis": 1015,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "SKYE Bar Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Jakarta",
+   "description": "Gastronomique rooftop à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=SKYE+Bar+Restaurant+Jakarta",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique rooftop",
+   "nombreAvis": 435,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Altitude GIA",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jakarta",
+   "description": "Rooftop, vue Jakarta à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Altitude+GIA+Jakarta",
+   "priceRange": "€€€€",
+   "specialite": "Rooftop",
+   "nombreAvis": 2120,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Kaum Jakarta",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Nusantara à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Kaum+Jakarta+Jakarta",
+   "priceRange": "€€€€",
+   "specialite": "Nusantara",
+   "nombreAvis": 2125,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Nusa Gastronomy",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jakarta",
+   "description": "Indonésien gastronomique à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Nusa+Gastronomy+Jakarta",
+   "priceRange": "€€€€",
+   "specialite": "Indonésien gastronomique",
+   "nombreAvis": 529,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Tesate",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jakarta",
+   "description": "Desserts et café moderne à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Tesate+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Desserts et café moderne",
+   "nombreAvis": 1736,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Hakkasan Jakarta",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jakarta",
+   "description": "Cantonais ultra-luxe halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Hakkasan+Jakarta+Jakarta",
+   "priceRange": "€€€€",
+   "specialite": "Cantonais ultra-luxe halal",
+   "nombreAvis": 1605,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Benihana Jakarta",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jakarta",
+   "description": "Japonais teppanyaki à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Benihana+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Japonais teppanyaki",
+   "nombreAvis": 2429,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Nobu Jakarta",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jakarta",
+   "description": "Japonais halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Nobu+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Japonais halal",
+   "nombreAvis": 442,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Namaaz Dining",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Gastronomique moléculaire halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Namaaz+Dining+Jakarta",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique moléculaire halal",
+   "nombreAvis": 2184,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Gerai Masakan Indonesia",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jakarta",
+   "description": "Plats de l'archipel à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Gerai+Masakan+Indonesia+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Plats de l'archipel",
+   "nombreAvis": 163,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Bakmi GM",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Jakarta",
+   "description": "Bakmi depuis 1959 à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Bakmi+GM+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Bakmi depuis 1959",
+   "nombreAvis": 842,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Mie Tek Tek",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Nouilles de rue à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Mie+Tek+Tek+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Nouilles de rue",
+   "nombreAvis": 3246,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Masakan Padang Sederhana",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jakarta",
+   "description": "Chaîne padang à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Masakan+Padang+Sederhana+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Chaîne padang",
+   "nombreAvis": 665,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Solaria Jakarta",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jakarta",
+   "description": "Indonésien mall chain à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Solaria+Jakarta+Jakarta",
+   "priceRange": "€",
+   "specialite": "Indonésien mall chain",
+   "nombreAvis": 1434,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Bakso Ojo Lali",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jakarta",
+   "description": "Boulettes en soupe à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Bakso+Ojo+Lali+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Boulettes en soupe",
+   "nombreAvis": 820,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Warmindo",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jakarta",
+   "description": "Warung mi instan à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Warmindo+Jakarta",
+   "priceRange": "€",
+   "specialite": "Warung mi instan",
+   "nombreAvis": 2270,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Waroeng Steak Shake",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Jakarta",
+   "description": "Steak local halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Waroeng+Steak+Shake+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Steak local halal",
+   "nombreAvis": 241,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Holycow Steakhouse",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Wagyu halal Jakarta à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Holycow+Steakhouse+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Wagyu halal jakarta",
+   "nombreAvis": 2926,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Hook Coffee Jakarta",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jakarta",
+   "description": "Coffee chain à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Hook+Coffee+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Coffee chain",
+   "nombreAvis": 528,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Anomali Coffee",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Café specialty halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Anomali+Coffee+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Café specialty halal",
+   "nombreAvis": 3117,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Kopitiam Jakarta",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jakarta",
+   "description": "Kopitiam halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Kopitiam+Jakarta+Jakarta",
+   "priceRange": "€",
+   "specialite": "Kopitiam halal",
+   "nombreAvis": 1246,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Punjab Restaurant Jakarta",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jakarta",
+   "description": "Indien du nord à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Punjab+Restaurant+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Indien du nord",
+   "nombreAvis": 1406,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Rang Mahal Jakarta",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jakarta",
+   "description": "Indien fine dining à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Rang+Mahal+Jakarta+Jakarta",
+   "priceRange": "€€€€",
+   "specialite": "Indien fine dining",
+   "nombreAvis": 1412,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Royal China Jakarta",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jakarta",
+   "description": "Cantonais halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Royal+China+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Cantonais halal",
+   "nombreAvis": 637,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Hanamasa Jakarta",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Shabu halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Hanamasa+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Shabu halal",
+   "nombreAvis": 1892,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Sushi Tei Jakarta",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jakarta",
+   "description": "Japonais halal chain à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Sushi+Tei+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Japonais halal chain",
+   "nombreAvis": 1132,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Roppan Jakarta",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Ramen halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Roppan+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Ramen halal",
+   "nombreAvis": 1500,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Turkey Kebab Jakarta",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Jakarta",
+   "description": "Turc chain à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Turkey+Kebab+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Turc chain",
+   "nombreAvis": 553,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Hardrock Café Jakarta",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Américain halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Hardrock+Caf%C3%A9+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Américain halal",
+   "nombreAvis": 2511,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Pizza Express Jakarta",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jakarta",
+   "description": "Halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Pizza+Express+Jakarta+Jakarta",
+   "priceRange": "€",
+   "specialite": "Halal",
+   "nombreAvis": 158,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Burger King Jakarta",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Jakarta",
+   "description": "Halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+King+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Halal",
+   "nombreAvis": 717,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "McDonald's Indonesia",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Halal officiel à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Indonesia+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Halal officiel",
+   "nombreAvis": 112,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "KFC Indonesia",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=KFC+Indonesia+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Halal",
+   "nombreAvis": 2692,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Texas Chicken Jakarta",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Halal à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Texas+Chicken+Jakarta+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Halal",
+   "nombreAvis": 1600,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Es Teler 77",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jakarta",
+   "description": "Jus et desserts indonésiens à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Es+Teler+77+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Jus et desserts indonésiens",
+   "nombreAvis": 263,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Bakso Lapangan Tembak Senayan",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jakarta",
+   "description": "Boulettes à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Bakso+Lapangan+Tembak+Senayan+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Boulettes",
+   "nombreAvis": 2162,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Restoran Padang Garuda",
+   "type": "Indonésien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Padang historique à Jakarta.",
+   "mapsUrl": "https://maps.google.com/?q=Restoran+Padang+Garuda+Jakarta",
+   "priceRange": "€€",
+   "specialite": "Padang historique",
+   "nombreAvis": 464,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r50"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m-001",
+   "nom": "Mosquée Istiqlal",
+   "adresse": "Jl. Taman Wijaya Kusuma, Jakarta Pusat",
+   "type": "Mosquée nationale & plus grande d'Asie du Sud-Est",
+   "capacite": 200000,
+   "annee_construction": 1978,
+   "style_architectural": "Islamique moderne",
+   "note": 5
+  },
+  {
+   "id": "m-002",
+   "nom": "Mosquée Sunda Kelapa",
+   "adresse": "Menteng, Jakarta",
+   "type": "Historique emblématique",
+   "capacite": 8000,
+   "annee_construction": 1971,
+   "style_architectural": "Moderniste",
+   "note": 4.7
+  },
+  {
+   "id": "m-003",
+   "nom": "Mosquée Al-Azhar Jakarta",
+   "adresse": "Kebayoran Baru, Jakarta Selatan",
+   "type": "Universelle & éducative",
+   "capacite": 15000,
+   "annee_construction": 1958,
+   "style_architectural": "Islamique classique",
+   "note": 4.8
+  },
+  {
+   "id": "m-004",
+   "nom": "Mosquée Raya Pondok Indah",
+   "adresse": "Pondok Indah, Jakarta Selatan",
+   "type": "Grande mosquée moderne",
+   "capacite": 12000,
+   "annee_construction": 1999,
+   "style_architectural": "Islamique contemporain",
+   "note": 4.7
+  },
+  {
+   "id": "m-005",
+   "nom": "Mosquée Kubah Emas (Dian Al-Mahri)",
+   "adresse": "Depok (banlieue Jakarta)",
+   "type": "Mosquée aux dômes dorés",
+   "capacite": 20000,
+   "annee_construction": 2006,
+   "style_architectural": "Islamique luxe (dômes en or)",
+   "note": 4.9
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "The Apurva Kempinski Jakarta",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Jakarta",
+   "description": "Ultra-luxe à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Apurva+Kempinski+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 1338,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h1"
+  },
+  {
+   "nom": "Four Seasons Hotel Jakarta",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Jakarta",
+   "description": "Ultra-luxe à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Hotel+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 505,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h2",
+   "lat": -6.2326597,
+   "lng": 106.8194973
+  },
+  {
+   "nom": "The Ritz-Carlton Jakarta",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Jakarta",
+   "description": "Luxe à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Ritz-Carlton+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 1244,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": -6.2285283,
+   "lng": 106.8271551
+  },
+  {
+   "nom": "Mandarin Oriental Jakarta",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Jakarta",
+   "description": "Luxe à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 2471,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4",
+   "lat": -6.1960325,
+   "lng": 106.8236526
+  },
+  {
+   "nom": "Grand Hyatt Jakarta",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Jakarta",
+   "description": "Luxe à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Hyatt+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 2212,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5",
+   "lat": -6.1938636,
+   "lng": 106.8223156
+  },
+  {
+   "nom": "Hotel Indonesia Kempinski",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Jakarta",
+   "description": "Luxe historique à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Indonesia+Kempinski+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 1147,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": -6.1952483,
+   "lng": 106.821907
+  },
+  {
+   "nom": "Shangri-La Jakarta",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Jakarta",
+   "description": "Luxe à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Shangri-La+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 859,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": -6.203098,
+   "lng": 106.8188226
+  },
+  {
+   "nom": "InterContinental Jakarta",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Jakarta",
+   "description": "Luxe à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=InterContinental+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 2071,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": -6.2647805,
+   "lng": 106.7824612
+  },
+  {
+   "nom": "Westin Jakarta",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Jakarta",
+   "description": "Luxe à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Westin+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 1913,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h9",
+   "lat": -6.2238064,
+   "lng": 106.8335263
+  },
+  {
+   "nom": "JW Marriott Jakarta",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Jakarta",
+   "description": "Luxe à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=JW+Marriott+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 2022,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h10",
+   "lat": -6.2270735,
+   "lng": 106.8271706
+  },
+  {
+   "nom": "Pullman Jakarta Central Park",
+   "categorie": "Luxe",
+   "score": 4.4,
+   "adresse": "Jakarta",
+   "description": "Standard-luxe à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Pullman+Jakarta+Central+Park+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€€",
+   "nombreAvis": 500,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h11"
+  },
+  {
+   "nom": "Aloft Jakarta SCBD",
+   "categorie": "Standard",
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Standard branché à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Aloft+Jakarta+SCBD+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€€",
+   "nombreAvis": 162,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  },
+  {
+   "nom": "Ibis Jakarta Kemayoran",
+   "categorie": "Budget",
+   "score": 4.4,
+   "adresse": "Jakarta",
+   "description": "Budget à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Ibis+Jakarta+Kemayoran+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€",
+   "nombreAvis": 1584,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h13"
+  },
+  {
+   "nom": "Fave Hotel Jakarta",
+   "categorie": "Budget",
+   "score": 4.7,
+   "adresse": "Jakarta",
+   "description": "Budget à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Fave+Hotel+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€",
+   "nombreAvis": 2439,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14",
+   "lat": -6.1735035,
+   "lng": 106.811847
+  },
+  {
+   "nom": "RedDoorz Jakarta",
+   "categorie": "Budget",
+   "score": 4.8,
+   "adresse": "Jakarta",
+   "description": "Budget à Jakarta.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=RedDoorz+Jakarta+Jakarta",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
+   "priceRange": "€€",
+   "nombreAvis": 2320,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15",
+   "lat": -6.2093902,
+   "lng": 106.827002
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Mosquée Istiqlal + Cathédrale (symbole harmonie)",
+   "type": "Spirituel & culture",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "note": 4.9,
+   "categorie": "Religieux & Spirituel",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Istiqlal+%2B+Cath%C3%A9drale+%28symbole+harmonie%29+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Istiqlal+%2B+Cath%C3%A9drale+%28symbole+harmonie%29+Jakarta",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a2",
+   "nom": "Kota Tua (vieille ville hollandaise)",
+   "type": "Histoire",
+   "duree": "3h",
+   "prix": "Gratuit",
+   "note": 4.6,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Kota+Tua+%28vieille+ville+hollandaise%29+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kota+Tua+%28vieille+ville+hollandaise%29+Jakarta",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a3",
+   "nom": "National Museum of Indonesia",
+   "type": "Musée",
+   "duree": "2h",
+   "prix": "15 000 IDR",
+   "note": 4.5,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=National+Museum+of+Indonesia+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=National+Museum+of+Indonesia+Jakarta",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a4",
+   "nom": "Ancol Dreamland (parc de loisirs)",
+   "type": "Loisir famille",
+   "duree": "4h",
+   "prix": "25 000–150 000 IDR",
+   "note": 4.3,
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Ancol+Dreamland+%28parc+de+loisirs%29+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ancol+Dreamland+%28parc+de+loisirs%29+Jakarta",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a5",
+   "nom": "Tour Monas (monument national)",
+   "type": "Monument",
+   "duree": "1h30",
+   "prix": "25 000 IDR",
+   "note": 4.4,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Tour+Monas+%28monument+national%29+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+Monas+%28monument+national%29+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a6",
+   "nom": "Shopping dans les grands malls halal",
+   "type": "Shopping",
+   "duree": "4h",
+   "prix": "Variable",
+   "note": 4.5,
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Shopping+dans+les+grands+malls+halal+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Shopping+dans+les+grands+malls+halal+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a7",
+   "nom": "Excursion à Borobudur (temple bouddhiste UNESCO)",
+   "type": "Culture",
+   "duree": "2 jours depuis Jakarta",
+   "prix": "350 000 IDR + transport",
+   "note": 4.9,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Excursion+%C3%A0+Borobudur+%28temple+bouddhiste+UNESCO%29+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Excursion+%C3%A0+Borobudur+%28temple+bouddhiste+UNESCO%29+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a8",
+   "nom": "Kepulauan Seribu (îles aux mille)",
+   "type": "Nature marine",
+   "duree": "1–2 jours",
+   "prix": "200 000–500 000 IDR",
+   "note": 4.6,
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Kepulauan+Seribu+%28%C3%AEles+aux+mille%29+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kepulauan+Seribu+%28%C3%AEles+aux+mille%29+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Jakarta",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Jakarta+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Jakarta+Jakarta",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand marché central de Jakarta",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Jakarta+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Jakarta+Jakarta",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a10"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Jakarta",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Jakarta+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Jakarta+Jakarta",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Musée de la ville de Jakarta",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Jakarta+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Jakarta+Jakarta",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Food tour halal de Jakarta",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Jakarta+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Jakarta+Jakarta",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Hammam traditionnel de Jakarta",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Jakarta+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Jakarta+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Mosquée historique de Jakarta",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Jakarta+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Jakarta+Jakarta",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Parc et jardins de Jakarta",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Jakarta+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Jakarta+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Jakarta",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Jakarta+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Jakarta+Jakarta",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Jakarta",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Jakarta+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Jakarta+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Quartier historique de Jakarta 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Jakarta+10+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Jakarta+10+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Grand marché central de Jakarta 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Jakarta+11+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Jakarta+11+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Jakarta 12",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Jakarta+12+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Jakarta+12+Jakarta",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a21"
+  },
+  {
+   "nom": "Musée de la ville de Jakarta 13",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Jakarta+13+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Jakarta+13+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a22"
+  },
+  {
+   "nom": "Food tour halal de Jakarta 14",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Jakarta+14+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Jakarta+14+Jakarta",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a23"
+  },
+  {
+   "nom": "Hammam traditionnel de Jakarta 15",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Jakarta+15+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Jakarta+15+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a24"
+  },
+  {
+   "nom": "Mosquée historique de Jakarta 16",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Jakarta+16+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Jakarta+16+Jakarta",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a25"
+  },
+  {
+   "nom": "Parc et jardins de Jakarta 17",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Jakarta+17+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Jakarta+17+Jakarta",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a26"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Jakarta 18",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Jakarta+18+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Jakarta+18+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a27"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Jakarta 19",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Jakarta+19+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Jakarta+19+Jakarta",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a28"
+  },
+  {
+   "nom": "Quartier historique de Jakarta 20",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Jakarta+20+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Jakarta+20+Jakarta",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a29"
+  },
+  {
+   "nom": "Grand marché central de Jakarta 21",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Jakarta+21+Jakarta",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Jakarta+21+Jakarta",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a30"
+  }
+ ],
+ "codeISO": "ID",
+ "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=1400&q=85",
+ "continent": "Asie",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Jakarta — Halal Trust Score 5/5.",
+ "image_hero": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=1400&q=85",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Jakarta",
+   "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jakarta",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Jakarta+Jakarta",
+   "capacite": 2640,
+   "anneeConstruction": 1900,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": -6.2088,
     "lng": 106.8456
+   }
   },
-  "score_halal": 4.4,
-  "score_securite": 4,
-  "score_famille": 4,
-  "score_budget": 5,
-  "description": {
-    "court": "La mégalopole musulmane d'Asie du Sud-Est, capitale de la plus grande nation islamique du monde",
-    "long": "Jakarta est la capitale de l'Indonésie, le pays qui compte le plus grand nombre de musulmans au monde (230 millions). C'est une métropole dynamique de 30 millions d'habitants où le halal est omniprésent et certifié par le MUI (Majelis Ulama Indonesia). La ville offre une scène culinaire extraordinaire — des warungs de rue aux restaurants gastronomiques — avec pratiquement 100% de la nourriture halal. Jakarta est aussi le point de départ idéal pour explorer l'île de Java."
+  {
+   "nom": "Grande Mosquée de Jakarta",
+   "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jakarta",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Jakarta+Jakarta",
+   "capacite": 2372,
+   "anneeConstruction": 1892,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.2088,
+    "lng": 106.8456
+   }
   },
-  "statistiques": {
-    "mosquees": 3000,
-    "restaurants_halal": 50000,
-    "hotels_halal_friendly": 800,
-    "population": "30 millions (aire métropolitaine)"
+  {
+   "nom": "Mosquée Al-Noor de Jakarta",
+   "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jakarta",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Jakarta+Jakarta",
+   "capacite": 5848,
+   "anneeConstruction": 1968,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.2088,
+    "lng": 106.8456
+   }
   },
-  "infos_pratiques": {
-    "langue": "Bahasa Indonesia (officiel), Anglais dans les zones touristiques",
-    "monnaie": "Roupie indonésienne (IDR) — 1 € ≈ 17 000 IDR",
-    "fuseau_horaire": "WIB (GMT+7)",
-    "meilleure_periode": "Juin–septembre (saison sèche)",
-    "visa": "Visa à l'arrivée (Visa on Arrival) 35 USD pour 30 jours",
-    "transport": "MRT, Transjakarta (BRT), ojek (moto-taxi), Gojek/Grab"
+  {
+   "nom": "Mosquée Al-Salam de Jakarta",
+   "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jakarta",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Jakarta+Jakarta",
+   "capacite": 2967,
+   "anneeConstruction": 1947,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.2088,
+    "lng": 106.8456
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Sate Khas Senayan",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Saté premium, institution à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Sate+Khas+Senayan+Jakarta",
-      "priceRange": "€€€€",
-      "specialite": "Saté premium",
-      "nombreAvis": 218,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Restoran Garuda",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Padang depuis 1958 à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Garuda+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Padang depuis 1958",
-      "nombreAvis": 967,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Sederhana Padang",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Padang populaire à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Sederhana+Padang+Jakarta",
-      "priceRange": "€",
-      "specialite": "Padang populaire",
-      "nombreAvis": 2167,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "RM Pagi Sore",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jakarta",
-      "description": "Padang comfort food à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=RM+Pagi+Sore+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Padang comfort food",
-      "nombreAvis": 745,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Warung Pohon Jambu",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Jakarta",
-      "description": "Betawi traditionnel à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Warung+Pohon+Jambu+Jakarta",
-      "priceRange": "€",
-      "specialite": "Betawi traditionnel",
-      "nombreAvis": 120,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Betawi Baper",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Betawi moderne à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Betawi+Baper+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Betawi moderne",
-      "nombreAvis": 680,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Soto Betawi H. Ma'ruf",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Soto légendaire à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Soto+Betawi+H.+Ma%27ruf+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Soto légendaire",
-      "nombreAvis": 1552,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Gudeg Kantin",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Gudeg jogja à Jakarta à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Gudeg+Kantin+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Gudeg jogja à jakarta",
-      "nombreAvis": 3451,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Soto Ayam Lamongan",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Jakarta",
-      "description": "Soupe légendaire à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Soto+Ayam+Lamongan+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Soupe légendaire",
-      "nombreAvis": 2549,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Rawon Nguling",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jakarta",
-      "description": "Rawon surabaya à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Rawon+Nguling+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Rawon surabaya",
-      "nombreAvis": 310,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Ayam Penyet Ria",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jakarta",
-      "description": "Poulet frit populaire à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Ayam+Penyet+Ria+Jakarta",
-      "priceRange": "€",
-      "specialite": "Poulet frit populaire",
-      "nombreAvis": 145,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Bebek Goreng Pak Ndut",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Canard frit à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Bebek+Goreng+Pak+Ndut+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Canard frit",
-      "nombreAvis": 88,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Laksana Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jakarta",
-      "description": "Betawi gastronomique à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Laksana+Restaurant+Jakarta",
-      "priceRange": "€€€€",
-      "specialite": "Betawi gastronomique",
-      "nombreAvis": 1015,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "SKYE Bar Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Jakarta",
-      "description": "Gastronomique rooftop à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=SKYE+Bar+Restaurant+Jakarta",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique rooftop",
-      "nombreAvis": 435,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Altitude GIA",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jakarta",
-      "description": "Rooftop, vue Jakarta à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Altitude+GIA+Jakarta",
-      "priceRange": "€€€€",
-      "specialite": "Rooftop",
-      "nombreAvis": 2120,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Kaum Jakarta",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Nusantara à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Kaum+Jakarta+Jakarta",
-      "priceRange": "€€€€",
-      "specialite": "Nusantara",
-      "nombreAvis": 2125,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Nusa Gastronomy",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jakarta",
-      "description": "Indonésien gastronomique à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Nusa+Gastronomy+Jakarta",
-      "priceRange": "€€€€",
-      "specialite": "Indonésien gastronomique",
-      "nombreAvis": 529,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Tesate",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jakarta",
-      "description": "Desserts et café moderne à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Tesate+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Desserts et café moderne",
-      "nombreAvis": 1736,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Hakkasan Jakarta",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jakarta",
-      "description": "Cantonais ultra-luxe halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Hakkasan+Jakarta+Jakarta",
-      "priceRange": "€€€€",
-      "specialite": "Cantonais ultra-luxe halal",
-      "nombreAvis": 1605,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Benihana Jakarta",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jakarta",
-      "description": "Japonais teppanyaki à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Benihana+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Japonais teppanyaki",
-      "nombreAvis": 2429,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Nobu Jakarta",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jakarta",
-      "description": "Japonais halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Nobu+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Japonais halal",
-      "nombreAvis": 442,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Namaaz Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Gastronomique moléculaire halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Namaaz+Dining+Jakarta",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique moléculaire halal",
-      "nombreAvis": 2184,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Gerai Masakan Indonesia",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jakarta",
-      "description": "Plats de l'archipel à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Gerai+Masakan+Indonesia+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Plats de l'archipel",
-      "nombreAvis": 163,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Bakmi GM",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Jakarta",
-      "description": "Bakmi depuis 1959 à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Bakmi+GM+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Bakmi depuis 1959",
-      "nombreAvis": 842,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Mie Tek Tek",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Nouilles de rue à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Mie+Tek+Tek+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Nouilles de rue",
-      "nombreAvis": 3246,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Masakan Padang Sederhana",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jakarta",
-      "description": "Chaîne padang à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Masakan+Padang+Sederhana+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Chaîne padang",
-      "nombreAvis": 665,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Solaria Jakarta",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jakarta",
-      "description": "Indonésien mall chain à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Solaria+Jakarta+Jakarta",
-      "priceRange": "€",
-      "specialite": "Indonésien mall chain",
-      "nombreAvis": 1434,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Bakso Ojo Lali",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jakarta",
-      "description": "Boulettes en soupe à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Bakso+Ojo+Lali+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Boulettes en soupe",
-      "nombreAvis": 820,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Warmindo",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jakarta",
-      "description": "Warung mi instan à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Warmindo+Jakarta",
-      "priceRange": "€",
-      "specialite": "Warung mi instan",
-      "nombreAvis": 2270,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Waroeng Steak Shake",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Jakarta",
-      "description": "Steak local halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Waroeng+Steak+Shake+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Steak local halal",
-      "nombreAvis": 241,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Holycow Steakhouse",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Wagyu halal Jakarta à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Holycow+Steakhouse+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Wagyu halal jakarta",
-      "nombreAvis": 2926,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Hook Coffee Jakarta",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jakarta",
-      "description": "Coffee chain à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Hook+Coffee+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Coffee chain",
-      "nombreAvis": 528,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Anomali Coffee",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Café specialty halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Anomali+Coffee+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Café specialty halal",
-      "nombreAvis": 3117,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Kopitiam Jakarta",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jakarta",
-      "description": "Kopitiam halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Kopitiam+Jakarta+Jakarta",
-      "priceRange": "€",
-      "specialite": "Kopitiam halal",
-      "nombreAvis": 1246,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Punjab Restaurant Jakarta",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jakarta",
-      "description": "Indien du nord à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Punjab+Restaurant+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Indien du nord",
-      "nombreAvis": 1406,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Rang Mahal Jakarta",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jakarta",
-      "description": "Indien fine dining à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Rang+Mahal+Jakarta+Jakarta",
-      "priceRange": "€€€€",
-      "specialite": "Indien fine dining",
-      "nombreAvis": 1412,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Royal China Jakarta",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jakarta",
-      "description": "Cantonais halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Royal+China+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Cantonais halal",
-      "nombreAvis": 637,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Hanamasa Jakarta",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Shabu halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Hanamasa+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Shabu halal",
-      "nombreAvis": 1892,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Sushi Tei Jakarta",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jakarta",
-      "description": "Japonais halal chain à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Sushi+Tei+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Japonais halal chain",
-      "nombreAvis": 1132,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Roppan Jakarta",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Ramen halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Roppan+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Ramen halal",
-      "nombreAvis": 1500,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Turkey Kebab Jakarta",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Jakarta",
-      "description": "Turc chain à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Turkey+Kebab+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Turc chain",
-      "nombreAvis": 553,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Hardrock Café Jakarta",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Américain halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Hardrock+Caf%C3%A9+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Américain halal",
-      "nombreAvis": 2511,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Pizza Express Jakarta",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jakarta",
-      "description": "Halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Pizza+Express+Jakarta+Jakarta",
-      "priceRange": "€",
-      "specialite": "Halal",
-      "nombreAvis": 158,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Burger King Jakarta",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Jakarta",
-      "description": "Halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+King+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 717,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "McDonald's Indonesia",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Halal officiel à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Indonesia+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Halal officiel",
-      "nombreAvis": 112,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "KFC Indonesia",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=KFC+Indonesia+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 2692,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Texas Chicken Jakarta",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Halal à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Texas+Chicken+Jakarta+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 1600,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Es Teler 77",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jakarta",
-      "description": "Jus et desserts indonésiens à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Es+Teler+77+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Jus et desserts indonésiens",
-      "nombreAvis": 263,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Bakso Lapangan Tembak Senayan",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jakarta",
-      "description": "Boulettes à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Bakso+Lapangan+Tembak+Senayan+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Boulettes",
-      "nombreAvis": 2162,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Restoran Padang Garuda",
-      "type": "Indonésien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Padang historique à Jakarta.",
-      "mapsUrl": "https://maps.google.com/?q=Restoran+Padang+Garuda+Jakarta",
-      "priceRange": "€€",
-      "specialite": "Padang historique",
-      "nombreAvis": 464,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r50"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m-001",
-      "nom": "Mosquée Istiqlal",
-      "adresse": "Jl. Taman Wijaya Kusuma, Jakarta Pusat",
-      "type": "Mosquée nationale & plus grande d'Asie du Sud-Est",
-      "capacite": 200000,
-      "annee_construction": 1978,
-      "style_architectural": "Islamique moderne",
-      "note": 5.0
-    },
-    {
-      "id": "m-002",
-      "nom": "Mosquée Sunda Kelapa",
-      "adresse": "Menteng, Jakarta",
-      "type": "Historique emblématique",
-      "capacite": 8000,
-      "annee_construction": 1971,
-      "style_architectural": "Moderniste",
-      "note": 4.7
-    },
-    {
-      "id": "m-003",
-      "nom": "Mosquée Al-Azhar Jakarta",
-      "adresse": "Kebayoran Baru, Jakarta Selatan",
-      "type": "Universelle & éducative",
-      "capacite": 15000,
-      "annee_construction": 1958,
-      "style_architectural": "Islamique classique",
-      "note": 4.8
-    },
-    {
-      "id": "m-004",
-      "nom": "Mosquée Raya Pondok Indah",
-      "adresse": "Pondok Indah, Jakarta Selatan",
-      "type": "Grande mosquée moderne",
-      "capacite": 12000,
-      "annee_construction": 1999,
-      "style_architectural": "Islamique contemporain",
-      "note": 4.7
-    },
-    {
-      "id": "m-005",
-      "nom": "Mosquée Kubah Emas (Dian Al-Mahri)",
-      "adresse": "Depok (banlieue Jakarta)",
-      "type": "Mosquée aux dômes dorés",
-      "capacite": 20000,
-      "annee_construction": 2006,
-      "style_architectural": "Islamique luxe (dômes en or)",
-      "note": 4.9
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "The Apurva Kempinski Jakarta",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Jakarta",
-      "description": "Ultra-luxe à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Apurva+Kempinski+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 1338,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Four Seasons Hotel Jakarta",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Jakarta",
-      "description": "Ultra-luxe à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Hotel+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 505,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "The Ritz-Carlton Jakarta",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Jakarta",
-      "description": "Luxe à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Ritz-Carlton+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 1244,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Mandarin Oriental Jakarta",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Jakarta",
-      "description": "Luxe à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Mandarin+Oriental+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 2471,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Grand Hyatt Jakarta",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Jakarta",
-      "description": "Luxe à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Hyatt+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 2212,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Hotel Indonesia Kempinski",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Jakarta",
-      "description": "Luxe historique à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Indonesia+Kempinski+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 1147,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Shangri-La Jakarta",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Jakarta",
-      "description": "Luxe à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Shangri-La+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 859,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "InterContinental Jakarta",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Jakarta",
-      "description": "Luxe à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=InterContinental+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 2071,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Westin Jakarta",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Jakarta",
-      "description": "Luxe à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Westin+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 1913,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "JW Marriott Jakarta",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Jakarta",
-      "description": "Luxe à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=JW+Marriott+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 2022,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Pullman Jakarta Central Park",
-      "categorie": "Luxe",
-      "score": 4.4,
-      "adresse": "Jakarta",
-      "description": "Standard-luxe à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Pullman+Jakarta+Central+Park+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€€",
-      "nombreAvis": 500,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Aloft Jakarta SCBD",
-      "categorie": "Standard",
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Standard branché à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Aloft+Jakarta+SCBD+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€€",
-      "nombreAvis": 162,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Ibis Jakarta Kemayoran",
-      "categorie": "Budget",
-      "score": 4.4,
-      "adresse": "Jakarta",
-      "description": "Budget à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Ibis+Jakarta+Kemayoran+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€",
-      "nombreAvis": 1584,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "Fave Hotel Jakarta",
-      "categorie": "Budget",
-      "score": 4.7,
-      "adresse": "Jakarta",
-      "description": "Budget à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Fave+Hotel+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€",
-      "nombreAvis": 2439,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "RedDoorz Jakarta",
-      "categorie": "Budget",
-      "score": 4.8,
-      "adresse": "Jakarta",
-      "description": "Budget à Jakarta.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=RedDoorz+Jakarta+Jakarta",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jakarta&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jakarta",
-      "priceRange": "€€",
-      "nombreAvis": 2320,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Mosquée Istiqlal + Cathédrale (symbole harmonie)",
-      "type": "Spirituel & culture",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "note": 4.9,
-      "categorie": "Religieux & Spirituel",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Istiqlal+%2B+Cath%C3%A9drale+%28symbole+harmonie%29+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Istiqlal+%2B+Cath%C3%A9drale+%28symbole+harmonie%29+Jakarta",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Kota Tua (vieille ville hollandaise)",
-      "type": "Histoire",
-      "duree": "3h",
-      "prix": "Gratuit",
-      "note": 4.6,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Kota+Tua+%28vieille+ville+hollandaise%29+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kota+Tua+%28vieille+ville+hollandaise%29+Jakarta",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "National Museum of Indonesia",
-      "type": "Musée",
-      "duree": "2h",
-      "prix": "15 000 IDR",
-      "note": 4.5,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=National+Museum+of+Indonesia+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=National+Museum+of+Indonesia+Jakarta",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Ancol Dreamland (parc de loisirs)",
-      "type": "Loisir famille",
-      "duree": "4h",
-      "prix": "25 000–150 000 IDR",
-      "note": 4.3,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Ancol+Dreamland+%28parc+de+loisirs%29+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Ancol+Dreamland+%28parc+de+loisirs%29+Jakarta",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a5",
-      "nom": "Tour Monas (monument national)",
-      "type": "Monument",
-      "duree": "1h30",
-      "prix": "25 000 IDR",
-      "note": 4.4,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Tour+Monas+%28monument+national%29+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+Monas+%28monument+national%29+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a6",
-      "nom": "Shopping dans les grands malls halal",
-      "type": "Shopping",
-      "duree": "4h",
-      "prix": "Variable",
-      "note": 4.5,
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Shopping+dans+les+grands+malls+halal+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Shopping+dans+les+grands+malls+halal+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a7",
-      "nom": "Excursion à Borobudur (temple bouddhiste UNESCO)",
-      "type": "Culture",
-      "duree": "2 jours depuis Jakarta",
-      "prix": "350 000 IDR + transport",
-      "note": 4.9,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Excursion+%C3%A0+Borobudur+%28temple+bouddhiste+UNESCO%29+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Excursion+%C3%A0+Borobudur+%28temple+bouddhiste+UNESCO%29+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a8",
-      "nom": "Kepulauan Seribu (îles aux mille)",
-      "type": "Nature marine",
-      "duree": "1–2 jours",
-      "prix": "200 000–500 000 IDR",
-      "note": 4.6,
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Kepulauan+Seribu+%28%C3%AEles+aux+mille%29+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Kepulauan+Seribu+%28%C3%AEles+aux+mille%29+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Jakarta",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Jakarta+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Jakarta+Jakarta",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand marché central de Jakarta",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Jakarta+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Jakarta+Jakarta",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Jakarta",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Jakarta+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Jakarta+Jakarta",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Musée de la ville de Jakarta",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Jakarta+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Jakarta+Jakarta",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Food tour halal de Jakarta",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Jakarta+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Jakarta+Jakarta",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Hammam traditionnel de Jakarta",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Jakarta+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Jakarta+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Mosquée historique de Jakarta",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Jakarta+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Jakarta+Jakarta",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Parc et jardins de Jakarta",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Jakarta+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Jakarta+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Jakarta",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Jakarta+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Jakarta+Jakarta",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Jakarta",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Jakarta+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Jakarta+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Quartier historique de Jakarta 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Jakarta+10+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Jakarta+10+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Grand marché central de Jakarta 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Jakarta+11+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Jakarta+11+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Jakarta 12",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Jakarta+12+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Jakarta+12+Jakarta",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a21"
-    },
-    {
-      "nom": "Musée de la ville de Jakarta 13",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Jakarta+13+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Jakarta+13+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a22"
-    },
-    {
-      "nom": "Food tour halal de Jakarta 14",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Jakarta+14+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Jakarta+14+Jakarta",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a23"
-    },
-    {
-      "nom": "Hammam traditionnel de Jakarta 15",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Jakarta+15+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Jakarta+15+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a24"
-    },
-    {
-      "nom": "Mosquée historique de Jakarta 16",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Jakarta+16+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Jakarta+16+Jakarta",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a25"
-    },
-    {
-      "nom": "Parc et jardins de Jakarta 17",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Jakarta+17+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Jakarta+17+Jakarta",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a26"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Jakarta 18",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Jakarta+18+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Jakarta+18+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a27"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Jakarta 19",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Jakarta+19+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Jakarta+19+Jakarta",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a28"
-    },
-    {
-      "nom": "Quartier historique de Jakarta 20",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Jakarta+20+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Jakarta+20+Jakarta",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a29"
-    },
-    {
-      "nom": "Grand marché central de Jakarta 21",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Jakarta+21+Jakarta",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Jakarta+21+Jakarta",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a30"
-    }
-  ],
-  "codeISO": "ID",
-  "image": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=1400&q=85",
-  "continent": "Asie",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Jakarta — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=1400&q=85",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Jakarta",
-      "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jakarta",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Jakarta+Jakarta",
-      "capacite": 2640,
-      "anneeConstruction": 1900,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.2088,
-        "lng": 106.8456
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Jakarta",
-      "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jakarta",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Jakarta+Jakarta",
-      "capacite": 2372,
-      "anneeConstruction": 1892,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.2088,
-        "lng": 106.8456
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Jakarta",
-      "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jakarta",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Jakarta+Jakarta",
-      "capacite": 5848,
-      "anneeConstruction": 1968,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.2088,
-        "lng": 106.8456
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Jakarta",
-      "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jakarta",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Jakarta+Jakarta",
-      "capacite": 2967,
-      "anneeConstruction": 1947,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.2088,
-        "lng": 106.8456
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Jakarta",
-      "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jakarta",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Jakarta+Jakarta",
-      "capacite": 3631,
-      "anneeConstruction": 1931,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.2088,
-        "lng": 106.8456
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Jakarta",
-      "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jakarta",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Jakarta+Jakarta",
-      "capacite": 5547,
-      "anneeConstruction": 1927,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.2088,
-        "lng": 106.8456
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Jakarta",
-      "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jakarta",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Jakarta+Jakarta",
-      "capacite": 1710,
-      "anneeConstruction": 1970,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.2088,
-        "lng": 106.8456
-      }
-    },
-    {
-      "nom": "Mosquée historique de Jakarta",
-      "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jakarta",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Jakarta+Jakarta",
-      "capacite": 4788,
-      "anneeConstruction": 1988,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.2088,
-        "lng": 106.8456
-      }
-    },
-    {
-      "nom": "Mosquée du vendredi de Jakarta",
-      "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jakarta",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Jakarta+Jakarta",
-      "capacite": 4152,
-      "anneeConstruction": 1932,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.2088,
-        "lng": 106.8456
-      }
-    },
-    {
-      "nom": "Mosquée Al-Hidaya de Jakarta",
-      "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jakarta",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Jakarta+Jakarta",
-      "capacite": 6069,
-      "anneeConstruction": 1889,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -6.2088,
-        "lng": 106.8456
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Soto Ayam Lamongan",
-      "Bakmi GM",
-      "Sate Khas Senayan",
-      "Betawi Baper",
-      "Gudeg Kantin"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Restoran Garuda",
-      "Sederhana Padang",
-      "Betawi Baper",
-      "Soto Betawi H. Ma'ruf",
-      "Gudeg Kantin"
-    ],
-    "incontournables": [
-      "Gudeg Kantin",
-      "Mie Tek Tek",
-      "Anomali Coffee",
-      "Holycow Steakhouse",
-      "KFC Indonesia"
-    ],
-    "pepitesCachees": [
-      "Sate Khas Senayan",
-      "Rawon Nguling",
-      "Bebek Goreng Pak Ndut"
-    ],
-    "idealFamille": [
-      "Sate Khas Senayan",
-      "Restoran Garuda",
-      "Sederhana Padang",
-      "RM Pagi Sore",
-      "Warung Pohon Jambu"
-    ],
-    "gastronomique": [
-      "Laksana Restaurant",
-      "SKYE Bar Restaurant",
-      "Altitude GIA",
-      "Kaum Jakarta",
-      "Nusa Gastronomy"
-    ],
-    "ouvertNuit": [
-      "Sate Khas Senayan",
-      "Sederhana Padang",
-      "Warung Pohon Jambu"
-    ],
-    "vueExceptionnelle": [
-      "Soto Ayam Lamongan",
-      "Bakmi GM",
-      "Sate Khas Senayan"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Jakarta",
+   "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jakarta",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Jakarta+Jakarta",
+   "capacite": 3631,
+   "anneeConstruction": 1931,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.2088,
+    "lng": 106.8456
+   }
   },
-  "halalScore": 8.8
+  {
+   "nom": "Mosquée Al-Fath de Jakarta",
+   "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jakarta",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Jakarta+Jakarta",
+   "capacite": 5547,
+   "anneeConstruction": 1927,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.2088,
+    "lng": 106.8456
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Jakarta",
+   "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jakarta",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Jakarta+Jakarta",
+   "capacite": 1710,
+   "anneeConstruction": 1970,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.2088,
+    "lng": 106.8456
+   }
+  },
+  {
+   "nom": "Mosquée historique de Jakarta",
+   "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jakarta",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Jakarta+Jakarta",
+   "capacite": 4788,
+   "anneeConstruction": 1988,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.2088,
+    "lng": 106.8456
+   }
+  },
+  {
+   "nom": "Mosquée du vendredi de Jakarta",
+   "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jakarta",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+vendredi+de+Jakarta+Jakarta",
+   "capacite": 4152,
+   "anneeConstruction": 1932,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.2088,
+    "lng": 106.8456
+   }
+  },
+  {
+   "nom": "Mosquée Al-Hidaya de Jakarta",
+   "description": "Mosquée fréquentée de Jakarta, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jakarta",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Hidaya+de+Jakarta+Jakarta",
+   "capacite": 6069,
+   "anneeConstruction": 1889,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -6.2088,
+    "lng": 106.8456
+   }
+  }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Soto Ayam Lamongan",
+   "Bakmi GM",
+   "Sate Khas Senayan",
+   "Betawi Baper",
+   "Gudeg Kantin"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Restoran Garuda",
+   "Sederhana Padang",
+   "Betawi Baper",
+   "Soto Betawi H. Ma'ruf",
+   "Gudeg Kantin"
+  ],
+  "incontournables": [
+   "Gudeg Kantin",
+   "Mie Tek Tek",
+   "Anomali Coffee",
+   "Holycow Steakhouse",
+   "KFC Indonesia"
+  ],
+  "pepitesCachees": [
+   "Sate Khas Senayan",
+   "Rawon Nguling",
+   "Bebek Goreng Pak Ndut"
+  ],
+  "idealFamille": [
+   "Sate Khas Senayan",
+   "Restoran Garuda",
+   "Sederhana Padang",
+   "RM Pagi Sore",
+   "Warung Pohon Jambu"
+  ],
+  "gastronomique": [
+   "Laksana Restaurant",
+   "SKYE Bar Restaurant",
+   "Altitude GIA",
+   "Kaum Jakarta",
+   "Nusa Gastronomy"
+  ],
+  "ouvertNuit": [
+   "Sate Khas Senayan",
+   "Sederhana Padang",
+   "Warung Pohon Jambu"
+  ],
+  "vueExceptionnelle": [
+   "Soto Ayam Lamongan",
+   "Bakmi GM",
+   "Sate Khas Senayan"
+  ]
+ },
+ "halalScore": 8.8
 }

@@ -1,907 +1,910 @@
 {
-  "nom": "Boukhara",
-  "pays": "Ouzbékistan",
-  "slug": "boukhara",
-  "image": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=1400&q=85",
-  "description": "Boukhara, ville-musée de la Route de la Soie, conserve un centre médiéval intact classé UNESCO. Mosquée Kalon, médersas et bains anciens dans une cité sainte.",
-  "descriptionLongue": "Cité sainte de l'islam d'Asie centrale, Boukhara a vu naître Imam al-Bukhari et abrité des centaines de médersas. Son centre historique, préservé à plus de 90% et classé UNESCO, déploie le minaret Kalon, l'Ark (citadelle), les coupoles de marchands et les bassins de Lyab-i Hauz. Cité mystique du soufisme, entièrement halal, elle plonge le voyageur dans mille ans d'histoire islamique.",
-  "halalScore": 9.0,
-  "score_halal": 4.5,
+ "nom": "Boukhara",
+ "pays": "Ouzbékistan",
+ "slug": "boukhara",
+ "image": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1604152135912-04a022e23696?w=1400&q=85",
+ "description": "Boukhara, ville-musée de la Route de la Soie, conserve un centre médiéval intact classé UNESCO. Mosquée Kalon, médersas et bains anciens dans une cité sainte.",
+ "descriptionLongue": "Cité sainte de l'islam d'Asie centrale, Boukhara a vu naître Imam al-Bukhari et abrité des centaines de médersas. Son centre historique, préservé à plus de 90% et classé UNESCO, déploie le minaret Kalon, l'Ark (citadelle), les coupoles de marchands et les bassins de Lyab-i Hauz. Cité mystique du soufisme, entièrement halal, elle plonge le voyageur dans mille ans d'histoire islamique.",
+ "halalScore": 9,
+ "score_halal": 4.5,
+ "mosquees": 300,
+ "population": "280 000",
+ "langue": "Ouzbek, Tadjik",
+ "monnaie": "Sum (UZS)",
+ "fuseau": "UTC+5",
+ "meilleureEpoque": "Avril à Juin, Sept à Oct",
+ "prixMoyenNuit": "45€",
+ "continent": "Asie",
+ "codeISO": "UZ",
+ "pays_slug": "ouzbekistan",
+ "region": "Asie centrale",
+ "meta_title": "Voyage Halal à Boukhara — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Boukhara — Halal Trust Score 9.0/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Boukhara — Halal Trust Score 9.0/10.",
+ "coordonnees": {
+  "lat": 39.7747,
+  "lng": 64.4286
+ },
+ "image_alt": "Vue de Boukhara, Ouzbékistan",
+ "statistiques": {
   "mosquees": 300,
-  "population": "280 000",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 96,
+  "hotels": 8
+ },
+ "infos_pratiques": {
   "langue": "Ouzbek, Tadjik",
   "monnaie": "Sum (UZS)",
-  "fuseau": "UTC+5",
-  "meilleureEpoque": "Avril à Juin, Sept à Oct",
-  "prixMoyenNuit": "45€",
-  "continent": "Asie",
-  "codeISO": "UZ",
-  "pays_slug": "ouzbekistan",
-  "region": "Asie centrale",
-  "meta_title": "Voyage Halal à Boukhara — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Boukhara — Halal Trust Score 9.0/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Boukhara — Halal Trust Score 9.0/10.",
-  "coordonnees": {
+  "meilleure_periode": "Avril à Juin, Sept à Oct",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Réglementé",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Exemption de visa pour les Français (30 jours)",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Train Afrosiyob, taxis, vieille ville à pied",
+  "priseElectrique": "Type C/F — 220V",
+  "decalageHoraire": "+4h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Old Bukhara Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Vieille ville",
+   "description": "Cuisine ouzbèke près de Lyab-i Hauz",
+   "mapsUrl": "https://maps.google.com/?q=Old+Bukhara+Restaurant+Boukhara",
+   "priceRange": "€",
+   "specialite": "Plov et chachlik",
+   "id": "r1"
+  },
+  {
+   "nom": "Chasmai Mirob",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Vieille ville",
+   "description": "Terrasse avec vue sur le minaret Kalon",
+   "mapsUrl": "https://maps.google.com/?q=Chasmai+Mirob+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Cuisine boukhariote",
+   "id": "r2"
+  },
+  {
+   "nom": "Lyabi House",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Lyab-i Hauz",
+   "description": "Restaurant traditionnel au bord du bassin",
+   "mapsUrl": "https://maps.google.com/?q=Lyabi+House+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Manti",
+   "id": "r3"
+  },
+  {
+   "nom": "Minzifa Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Vieille ville",
+   "description": "Rooftop panoramique sur la vieille ville",
+   "mapsUrl": "https://maps.google.com/?q=Minzifa+Restaurant+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Cuisine de la Soie",
+   "id": "r4"
+  },
+  {
+   "nom": "Dolon Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Centre",
+   "description": "Cuisine d'Asie centrale conviviale",
+   "mapsUrl": "https://maps.google.com/?q=Dolon+Restaurant+Boukhara",
+   "priceRange": "€",
+   "specialite": "Lagman",
+   "id": "r5"
+  },
+  {
+   "nom": "Al Madina Boukhara",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Boukhara",
+   "description": "Adresse halal appréciée des habitants de Boukhara.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Boukhara+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r6"
+  },
+  {
+   "nom": "Shawarma House Boukhara",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Boukhara",
+   "description": "Adresse halal appréciée des habitants de Boukhara.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Boukhara+Boukhara",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r7"
+  },
+  {
+   "nom": "Beit Beirut Boukhara",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Boukhara",
+   "description": "Adresse halal appréciée des habitants de Boukhara.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Boukhara+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r8"
+  },
+  {
+   "nom": "Spice Route Boukhara",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Boukhara",
+   "description": "Adresse halal appréciée des habitants de Boukhara.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Boukhara+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r9"
+  },
+  {
+   "nom": "Saffron Garden Boukhara",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Boukhara",
+   "description": "Adresse halal appréciée des habitants de Boukhara.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Boukhara+Boukhara",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r10"
+  },
+  {
+   "nom": "Green Bowl Boukhara",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Boukhara",
+   "description": "Adresse halal appréciée des habitants de Boukhara.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Boukhara+Boukhara",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r11"
+  },
+  {
+   "nom": "Sultan Café Boukhara",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Boukhara",
+   "description": "Adresse halal appréciée des habitants de Boukhara.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Boukhara+Boukhara",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r12"
+  },
+  {
+   "nom": "Ocean Pearl Boukhara",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Boukhara",
+   "description": "Adresse halal appréciée des habitants de Boukhara.",
+   "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Boukhara+Boukhara",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé du jour",
+   "id": "r13"
+  },
+  {
+   "nom": "Bella Halal Boukhara",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Boukhara",
+   "description": "Adresse halal appréciée des habitants de Boukhara.",
+   "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Boukhara+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Pizza halal au four à bois",
+   "id": "r14"
+  },
+  {
+   "nom": "Tokyo Halal Boukhara",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Boukhara",
+   "description": "Adresse halal appréciée des habitants de Boukhara.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Boukhara+Boukhara",
+   "priceRange": "€€€",
+   "specialite": "Sushis certifiés halal",
+   "id": "r15"
+  },
+  {
+   "nom": "Choyxona Milliy",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Boukhara",
+   "description": "Adresse traditionnel local appréciée à Boukhara, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Choyxona+Milliy+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Plov ouzbek",
+   "nombreAvis": 2882,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Registon Osh",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Boukhara",
+   "description": "Adresse traditionnel local appréciée à Boukhara, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Registon+Osh+Boukhara",
+   "priceRange": "€",
+   "specialite": "Osh et samsa",
+   "nombreAvis": 2965,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Navruz Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Boukhara",
+   "description": "Adresse gastronomique appréciée à Boukhara, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Navruz+Restaurant+Boukhara",
+   "priceRange": "€€€",
+   "specialite": "Menu national",
+   "nombreAvis": 1493,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Bahor Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Boukhara",
+   "description": "Adresse pâtisserie & café appréciée à Boukhara, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Bahor+Caf%C3%A9+Boukhara",
+   "priceRange": "€",
+   "specialite": "Thé et baklava",
+   "nombreAvis": 1339,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Sharq Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Boukhara",
+   "description": "Adresse grillades & kebab appréciée à Boukhara, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sharq+Grill+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Chachlik",
+   "nombreAvis": 2487,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Beit Levant",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Boukhara",
+   "description": "Adresse libanais & levant appréciée à Boukhara, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Levant+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 819,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Yashil Healthy",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Boukhara",
+   "description": "Adresse végétarien & healthy appréciée à Boukhara, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Yashil+Healthy+Boukhara",
+   "priceRange": "€",
+   "specialite": "Salades",
+   "nombreAvis": 1014,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "rapide",
+    "veggie"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Sea Caspian",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Boukhara",
+   "description": "Adresse fruits de mer appréciée à Boukhara, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sea+Caspian+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Esturgeon grillé",
+   "nombreAvis": 1252,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Choyxona Milliy Boukhara 9",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Boukhara",
+   "description": "Adresse traditionnel local appréciée à Boukhara, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Choyxona+Milliy+Boukhara+9+Boukhara",
+   "priceRange": "€€",
+   "specialite": "Plov ouzbek",
+   "nombreAvis": 401,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Registon Osh Boukhara 10",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Boukhara",
+   "description": "Adresse traditionnel local appréciée à Boukhara, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Registon+Osh+Boukhara+10+Boukhara",
+   "priceRange": "€",
+   "specialite": "Osh et samsa",
+   "nombreAvis": 1443,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r25"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Hotel Boukhara Palace",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Centre",
+   "description": "Hôtel confortable proche du centre",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Boukhara+Palace+Boukhara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
+   "priceRange": "€€",
+   "id": "h1"
+  },
+  {
+   "nom": "Lyabi House Hotel",
+   "categorie": "Riad & Boutique",
+   "score": 4.5,
+   "adresse": "Lyab-i Hauz",
+   "description": "Maison d'hôtes historique au bord du bassin",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Lyabi+House+Hotel+Boukhara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
+   "priceRange": "€€",
+   "id": "h2",
+   "lat": 39.7723878,
+   "lng": 64.4207917
+  },
+  {
+   "nom": "Komil Boutique Hotel",
+   "categorie": "Riad & Boutique",
+   "score": 4.5,
+   "adresse": "Vieille ville",
+   "description": "Demeure de marchand restaurée",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Komil+Boutique+Hotel+Boukhara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
+   "priceRange": "€€",
+   "id": "h3"
+  },
+  {
+   "nom": "Grand Plaza Boukhara",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Boukhara",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Boukhara+Boukhara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
+   "priceRange": "€€€€",
+   "id": "h4"
+  },
+  {
+   "nom": "City Comfort Hotel Boukhara",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Boukhara",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Boukhara+Boukhara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
+   "priceRange": "€€€",
+   "id": "h5"
+  },
+  {
+   "nom": "Boutique Riad Boukhara",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Boukhara",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Boukhara+Boukhara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
+   "priceRange": "€€€",
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Boukhara 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Boukhara",
+   "description": "Hébergement halal-friendly à Boukhara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Boukhara+0+Boukhara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
+   "priceRange": "€€€€",
+   "nombreAvis": 2328,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Boukhara",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Boukhara",
+   "description": "Hébergement halal-friendly à Boukhara.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Boukhara+Boukhara",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
+   "priceRange": "€€€",
+   "nombreAvis": 1535,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Minaret et mosquée Kalon",
+   "categorie": "Religieux & Spirituel",
+   "description": "Minaret de 1127 et grande mosquée à 288 coupoles",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Minaret+et+mosqu%C3%A9e+Kalon+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Minaret+et+mosqu%C3%A9e+Kalon+Boukhara",
+   "id": "a1"
+  },
+  {
+   "nom": "Citadelle de l'Ark",
+   "categorie": "Histoire & Culture",
+   "description": "Forteresse royale des émirs de Boukhara",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Citadelle+de+l%27Ark+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Citadelle+de+l%27Ark+Boukhara",
+   "id": "a2"
+  },
+  {
+   "nom": "Lyab-i Hauz",
+   "categorie": "Histoire & Culture",
+   "description": "Place autour d'un bassin entourée de médersas",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Lyab-i+Hauz+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lyab-i+Hauz+Boukhara",
+   "id": "a3"
+  },
+  {
+   "nom": "Médersa Mir-i-Arab",
+   "categorie": "Religieux & Spirituel",
+   "description": "Médersa active aux dômes bleus emblématiques",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dersa+Mir-i-Arab+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dersa+Mir-i-Arab+Boukhara",
+   "id": "a4"
+  },
+  {
+   "nom": "Mausolée des Samanides",
+   "categorie": "Histoire & Culture",
+   "description": "Chef-d'œuvre de brique du Xe siècle",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e+des+Samanides+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mausol%C3%A9e+des+Samanides+Boukhara",
+   "id": "a5"
+  },
+  {
+   "nom": "Coupoles des marchands",
+   "categorie": "Shopping & Souks",
+   "description": "Bazars couverts de tapis, soie et orfèvrerie",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Coupoles+des+marchands+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Coupoles+des+marchands+Boukhara",
+   "id": "a6"
+  },
+  {
+   "nom": "Palais d'été Sitorai Mokhi-Khosa",
+   "categorie": "Art & Musées",
+   "description": "Résidence du dernier émir de Boukhara",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Palais+d%27%C3%A9t%C3%A9+Sitorai+Mokhi-Khosa+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+d%27%C3%A9t%C3%A9+Sitorai+Mokhi-Khosa+Boukhara",
+   "id": "a7"
+  },
+  {
+   "nom": "Mosquée Bolo Haouz",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée aux colonnes de bois sculpté face à l'Ark",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bolo+Haouz+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Bolo+Haouz+Boukhara",
+   "id": "a8"
+  },
+  {
+   "nom": "Vieille ville de Boukhara",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Boukhara+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Boukhara+Boukhara",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand souk de Boukhara",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Boukhara+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Boukhara+Boukhara",
+   "id": "a10"
+  },
+  {
+   "nom": "Quartier historique de Boukhara",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Boukhara+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Boukhara+Boukhara",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Boukhara",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Boukhara+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Boukhara+Boukhara",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Boukhara",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Boukhara+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Boukhara+Boukhara",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Boukhara",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Boukhara+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Boukhara+Boukhara",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Boukhara",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Boukhara+Boukhara",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Boukhara+Boukhara",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Kalon",
+   "description": "Grande mosquée de 1514 à 288 coupoles, capacité 12000",
+   "adresse": "Vieille ville",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Kalon+Boukhara",
+   "capacite": 5295,
+   "anneeConstruction": 1985,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 39.7747,
     "lng": 64.4286
+   }
   },
-  "image_alt": "Vue de Boukhara, Ouzbékistan",
-  "statistiques": {
-    "mosquees": 300,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 96
+  {
+   "nom": "Mosquée Bolo Haouz",
+   "description": "Mosquée de 1712 aux vingt colonnes de bois (les quarante)",
+   "adresse": "Place du Registan",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bolo+Haouz+Boukhara",
+   "capacite": 3137,
+   "anneeConstruction": 1917,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 39.7747,
+    "lng": 64.4286
+   }
   },
-  "infos_pratiques": {
-    "langue": "Ouzbek, Tadjik",
-    "monnaie": "Sum (UZS)",
-    "meilleure_periode": "Avril à Juin, Sept à Oct",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Réglementé",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Boukhara",
+   "description": "Mosquée fréquentée de Boukhara, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Boukhara",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Boukhara+Boukhara",
+   "capacite": 1847,
+   "anneeConstruction": 1987,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 39.7747,
+    "lng": 64.4286
+   }
   },
-  "infoPratique": {
-    "visa": "Exemption de visa pour les Français (30 jours)",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Train Afrosiyob, taxis, vieille ville à pied",
-    "priseElectrique": "Type C/F — 220V",
-    "decalageHoraire": "+4h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Boukhara",
+   "description": "Mosquée fréquentée de Boukhara, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Boukhara",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Boukhara+Boukhara",
+   "capacite": 2720,
+   "anneeConstruction": 1980,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 39.7747,
+    "lng": 64.4286
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Old Bukhara Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Vieille ville",
-      "description": "Cuisine ouzbèke près de Lyab-i Hauz",
-      "mapsUrl": "https://maps.google.com/?q=Old+Bukhara+Restaurant+Boukhara",
-      "priceRange": "€",
-      "specialite": "Plov et chachlik",
-      "id": "r1"
-    },
-    {
-      "nom": "Chasmai Mirob",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Vieille ville",
-      "description": "Terrasse avec vue sur le minaret Kalon",
-      "mapsUrl": "https://maps.google.com/?q=Chasmai+Mirob+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Cuisine boukhariote",
-      "id": "r2"
-    },
-    {
-      "nom": "Lyabi House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Lyab-i Hauz",
-      "description": "Restaurant traditionnel au bord du bassin",
-      "mapsUrl": "https://maps.google.com/?q=Lyabi+House+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Manti",
-      "id": "r3"
-    },
-    {
-      "nom": "Minzifa Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Vieille ville",
-      "description": "Rooftop panoramique sur la vieille ville",
-      "mapsUrl": "https://maps.google.com/?q=Minzifa+Restaurant+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Cuisine de la Soie",
-      "id": "r4"
-    },
-    {
-      "nom": "Dolon Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Centre",
-      "description": "Cuisine d'Asie centrale conviviale",
-      "mapsUrl": "https://maps.google.com/?q=Dolon+Restaurant+Boukhara",
-      "priceRange": "€",
-      "specialite": "Lagman",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Boukhara",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Boukhara",
-      "description": "Adresse halal appréciée des habitants de Boukhara.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Boukhara+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Boukhara",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Boukhara",
-      "description": "Adresse halal appréciée des habitants de Boukhara.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Boukhara+Boukhara",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Boukhara",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Boukhara",
-      "description": "Adresse halal appréciée des habitants de Boukhara.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Boukhara+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Boukhara",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Boukhara",
-      "description": "Adresse halal appréciée des habitants de Boukhara.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Boukhara+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Boukhara",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Boukhara",
-      "description": "Adresse halal appréciée des habitants de Boukhara.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Boukhara+Boukhara",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Boukhara",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Boukhara",
-      "description": "Adresse halal appréciée des habitants de Boukhara.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Boukhara+Boukhara",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Boukhara",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Boukhara",
-      "description": "Adresse halal appréciée des habitants de Boukhara.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Boukhara+Boukhara",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Boukhara",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Boukhara",
-      "description": "Adresse halal appréciée des habitants de Boukhara.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Boukhara+Boukhara",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Boukhara",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Boukhara",
-      "description": "Adresse halal appréciée des habitants de Boukhara.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Boukhara+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Boukhara",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Boukhara",
-      "description": "Adresse halal appréciée des habitants de Boukhara.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Boukhara+Boukhara",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Choyxona Milliy",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Boukhara",
-      "description": "Adresse traditionnel local appréciée à Boukhara, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Choyxona+Milliy+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Plov ouzbek",
-      "nombreAvis": 2882,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Registon Osh",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Boukhara",
-      "description": "Adresse traditionnel local appréciée à Boukhara, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Registon+Osh+Boukhara",
-      "priceRange": "€",
-      "specialite": "Osh et samsa",
-      "nombreAvis": 2965,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Navruz Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Boukhara",
-      "description": "Adresse gastronomique appréciée à Boukhara, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Navruz+Restaurant+Boukhara",
-      "priceRange": "€€€",
-      "specialite": "Menu national",
-      "nombreAvis": 1493,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Bahor Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Boukhara",
-      "description": "Adresse pâtisserie & café appréciée à Boukhara, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Bahor+Caf%C3%A9+Boukhara",
-      "priceRange": "€",
-      "specialite": "Thé et baklava",
-      "nombreAvis": 1339,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Sharq Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Boukhara",
-      "description": "Adresse grillades & kebab appréciée à Boukhara, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sharq+Grill+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Chachlik",
-      "nombreAvis": 2487,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Beit Levant",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Boukhara",
-      "description": "Adresse libanais & levant appréciée à Boukhara, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Levant+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 819,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Yashil Healthy",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Boukhara",
-      "description": "Adresse végétarien & healthy appréciée à Boukhara, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Yashil+Healthy+Boukhara",
-      "priceRange": "€",
-      "specialite": "Salades",
-      "nombreAvis": 1014,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "rapide",
-        "veggie"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Sea Caspian",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Boukhara",
-      "description": "Adresse fruits de mer appréciée à Boukhara, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sea+Caspian+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Esturgeon grillé",
-      "nombreAvis": 1252,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Choyxona Milliy Boukhara 9",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Boukhara",
-      "description": "Adresse traditionnel local appréciée à Boukhara, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Choyxona+Milliy+Boukhara+9+Boukhara",
-      "priceRange": "€€",
-      "specialite": "Plov ouzbek",
-      "nombreAvis": 401,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Registon Osh Boukhara 10",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Boukhara",
-      "description": "Adresse traditionnel local appréciée à Boukhara, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Registon+Osh+Boukhara+10+Boukhara",
-      "priceRange": "€",
-      "specialite": "Osh et samsa",
-      "nombreAvis": 1443,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r25"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Hotel Boukhara Palace",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Centre",
-      "description": "Hôtel confortable proche du centre",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Boukhara+Palace+Boukhara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
-      "priceRange": "€€",
-      "id": "h1"
-    },
-    {
-      "nom": "Lyabi House Hotel",
-      "categorie": "Riad & Boutique",
-      "score": 4.5,
-      "adresse": "Lyab-i Hauz",
-      "description": "Maison d'hôtes historique au bord du bassin",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Lyabi+House+Hotel+Boukhara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
-      "priceRange": "€€",
-      "id": "h2"
-    },
-    {
-      "nom": "Komil Boutique Hotel",
-      "categorie": "Riad & Boutique",
-      "score": 4.5,
-      "adresse": "Vieille ville",
-      "description": "Demeure de marchand restaurée",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Komil+Boutique+Hotel+Boukhara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
-      "priceRange": "€€",
-      "id": "h3"
-    },
-    {
-      "nom": "Grand Plaza Boukhara",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Boukhara",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Boukhara+Boukhara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
-      "priceRange": "€€€€",
-      "id": "h4"
-    },
-    {
-      "nom": "City Comfort Hotel Boukhara",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Boukhara",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Boukhara+Boukhara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Boukhara",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Boukhara",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Boukhara+Boukhara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Boukhara 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Boukhara",
-      "description": "Hébergement halal-friendly à Boukhara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Boukhara+0+Boukhara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
-      "priceRange": "€€€€",
-      "nombreAvis": 2328,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Boukhara",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Boukhara",
-      "description": "Hébergement halal-friendly à Boukhara.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Boukhara+Boukhara",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Boukhara&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=boukhara",
-      "priceRange": "€€€",
-      "nombreAvis": 1535,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Minaret et mosquée Kalon",
-      "categorie": "Religieux & Spirituel",
-      "description": "Minaret de 1127 et grande mosquée à 288 coupoles",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Minaret+et+mosqu%C3%A9e+Kalon+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Minaret+et+mosqu%C3%A9e+Kalon+Boukhara",
-      "id": "a1"
-    },
-    {
-      "nom": "Citadelle de l'Ark",
-      "categorie": "Histoire & Culture",
-      "description": "Forteresse royale des émirs de Boukhara",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Citadelle+de+l%27Ark+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Citadelle+de+l%27Ark+Boukhara",
-      "id": "a2"
-    },
-    {
-      "nom": "Lyab-i Hauz",
-      "categorie": "Histoire & Culture",
-      "description": "Place autour d'un bassin entourée de médersas",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Lyab-i+Hauz+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Lyab-i+Hauz+Boukhara",
-      "id": "a3"
-    },
-    {
-      "nom": "Médersa Mir-i-Arab",
-      "categorie": "Religieux & Spirituel",
-      "description": "Médersa active aux dômes bleus emblématiques",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dersa+Mir-i-Arab+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dersa+Mir-i-Arab+Boukhara",
-      "id": "a4"
-    },
-    {
-      "nom": "Mausolée des Samanides",
-      "categorie": "Histoire & Culture",
-      "description": "Chef-d'œuvre de brique du Xe siècle",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mausol%C3%A9e+des+Samanides+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mausol%C3%A9e+des+Samanides+Boukhara",
-      "id": "a5"
-    },
-    {
-      "nom": "Coupoles des marchands",
-      "categorie": "Shopping & Souks",
-      "description": "Bazars couverts de tapis, soie et orfèvrerie",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Coupoles+des+marchands+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Coupoles+des+marchands+Boukhara",
-      "id": "a6"
-    },
-    {
-      "nom": "Palais d'été Sitorai Mokhi-Khosa",
-      "categorie": "Art & Musées",
-      "description": "Résidence du dernier émir de Boukhara",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Palais+d%27%C3%A9t%C3%A9+Sitorai+Mokhi-Khosa+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Palais+d%27%C3%A9t%C3%A9+Sitorai+Mokhi-Khosa+Boukhara",
-      "id": "a7"
-    },
-    {
-      "nom": "Mosquée Bolo Haouz",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée aux colonnes de bois sculpté face à l'Ark",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bolo+Haouz+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Bolo+Haouz+Boukhara",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Boukhara",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Boukhara+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Boukhara+Boukhara",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Boukhara",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Boukhara+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Boukhara+Boukhara",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Boukhara",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Boukhara+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Boukhara+Boukhara",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Boukhara",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Boukhara+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Boukhara+Boukhara",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Boukhara",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Boukhara+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Boukhara+Boukhara",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Boukhara",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Boukhara+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Boukhara+Boukhara",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Boukhara",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Boukhara+Boukhara",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Boukhara+Boukhara",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Kalon",
-      "description": "Grande mosquée de 1514 à 288 coupoles, capacité 12000",
-      "adresse": "Vieille ville",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Kalon+Boukhara",
-      "capacite": 5295,
-      "anneeConstruction": 1985,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.7747,
-        "lng": 64.4286
-      }
-    },
-    {
-      "nom": "Mosquée Bolo Haouz",
-      "description": "Mosquée de 1712 aux vingt colonnes de bois (les quarante)",
-      "adresse": "Place du Registan",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Bolo+Haouz+Boukhara",
-      "capacite": 3137,
-      "anneeConstruction": 1917,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.7747,
-        "lng": 64.4286
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Boukhara",
-      "description": "Mosquée fréquentée de Boukhara, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Boukhara",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Boukhara+Boukhara",
-      "capacite": 1847,
-      "anneeConstruction": 1987,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.7747,
-        "lng": 64.4286
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Boukhara",
-      "description": "Mosquée fréquentée de Boukhara, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Boukhara",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Boukhara+Boukhara",
-      "capacite": 2720,
-      "anneeConstruction": 1980,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.7747,
-        "lng": 64.4286
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Boukhara",
-      "description": "Mosquée fréquentée de Boukhara, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Boukhara",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Boukhara+Boukhara",
-      "capacite": 833,
-      "anneeConstruction": 1973,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 39.7747,
-        "lng": 64.4286
-      }
-    }
-  ],
-  "tags": [
-    "route-de-la-soie",
-    "unesco",
-    "ville-sainte",
-    "soufisme",
-    "histoire",
-    "spirituel"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Choyxona Milliy",
-      "Choyxona Milliy Boukhara 9",
-      "Registon Osh",
-      "Registon Osh Boukhara 10",
-      "Saffron Garden Boukhara"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Old Bukhara Restaurant",
-      "Chasmai Mirob",
-      "Lyabi House",
-      "Minzifa Restaurant",
-      "Dolon Restaurant"
-    ],
-    "incontournables": [
-      "Registon Osh",
-      "Choyxona Milliy",
-      "Sharq Grill",
-      "Navruz Restaurant",
-      "Registon Osh Boukhara 10"
-    ],
-    "pepitesCachees": [
-      "Old Bukhara Restaurant",
-      "Chasmai Mirob",
-      "Lyabi House"
-    ],
-    "idealFamille": [
-      "Choyxona Milliy",
-      "Registon Osh",
-      "Bahor Café",
-      "Sharq Grill",
-      "Beit Levant"
-    ],
-    "gastronomique": [
-      "Chasmai Mirob",
-      "Minzifa Restaurant",
-      "Saffron Garden Boukhara",
-      "Navruz Restaurant"
-    ],
-    "ouvertNuit": [
-      "Registon Osh",
-      "Bahor Café",
-      "Sharq Grill"
-    ],
-    "vueExceptionnelle": [
-      "Sea Caspian"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Boukhara",
+   "description": "Mosquée fréquentée de Boukhara, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Boukhara",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Boukhara+Boukhara",
+   "capacite": 833,
+   "anneeConstruction": 1973,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 39.7747,
+    "lng": 64.4286
+   }
   }
+ ],
+ "tags": [
+  "route-de-la-soie",
+  "unesco",
+  "ville-sainte",
+  "soufisme",
+  "histoire",
+  "spirituel"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Choyxona Milliy",
+   "Choyxona Milliy Boukhara 9",
+   "Registon Osh",
+   "Registon Osh Boukhara 10",
+   "Saffron Garden Boukhara"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Old Bukhara Restaurant",
+   "Chasmai Mirob",
+   "Lyabi House",
+   "Minzifa Restaurant",
+   "Dolon Restaurant"
+  ],
+  "incontournables": [
+   "Registon Osh",
+   "Choyxona Milliy",
+   "Sharq Grill",
+   "Navruz Restaurant",
+   "Registon Osh Boukhara 10"
+  ],
+  "pepitesCachees": [
+   "Old Bukhara Restaurant",
+   "Chasmai Mirob",
+   "Lyabi House"
+  ],
+  "idealFamille": [
+   "Choyxona Milliy",
+   "Registon Osh",
+   "Bahor Café",
+   "Sharq Grill",
+   "Beit Levant"
+  ],
+  "gastronomique": [
+   "Chasmai Mirob",
+   "Minzifa Restaurant",
+   "Saffron Garden Boukhara",
+   "Navruz Restaurant"
+  ],
+  "ouvertNuit": [
+   "Registon Osh",
+   "Bahor Café",
+   "Sharq Grill"
+  ],
+  "vueExceptionnelle": [
+   "Sea Caspian"
+  ]
+ }
 }

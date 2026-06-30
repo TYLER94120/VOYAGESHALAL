@@ -1,1875 +1,1890 @@
 {
-  "slug": "fes",
-  "nom": "Fès",
-  "nom_arabe": "فاس",
-  "pays": "Maroc",
-  "pays_slug": "maroc",
-  "drapeau": "🇲🇦",
-  "region": "Afrique du Nord",
-  "coordonnees": {
+ "slug": "fes",
+ "nom": "Fès",
+ "nom_arabe": "فاس",
+ "pays": "Maroc",
+ "pays_slug": "maroc",
+ "drapeau": "🇲🇦",
+ "region": "Afrique du Nord",
+ "coordonnees": {
+  "lat": 34.0181,
+  "lng": -5.0078
+ },
+ "score_halal": 4.5,
+ "score_securite": 4,
+ "score_famille": 5,
+ "score_budget": 5,
+ "description": {
+  "court": "La capitale spirituelle et intellectuelle du Maroc, fondée en 789",
+  "long": "Fès est la plus ancienne des villes impériales du Maroc et l'une des villes médiévales les mieux préservées au monde. Sa médina, inscrite au patrimoine mondial de l'UNESCO, abrite la plus ancienne université du monde — la Qarawiyyin, fondée en 859. Pays à majorité musulmane, le halal est la norme absolue dans toute la ville. Fès est une destination spirituelle et culturelle de premier ordre pour les voyageurs musulmans."
+ },
+ "statistiques": {
+  "mosquees": 785,
+  "restaurants_halal": 1200,
+  "hotels_halal_friendly": 95,
+  "population": "1,2 million",
+  "hotels": 12
+ },
+ "infos_pratiques": {
+  "langue": "Arabe, Berbère, Français",
+  "monnaie": "Dirham marocain (MAD)",
+  "fuseau_horaire": "GMT+1",
+  "meilleure_periode": "Mars–mai, Septembre–novembre",
+  "visa": "Entrée libre pour ressortissants français, belges, canadiens",
+  "transport": "Taxi, bus, à pied dans la médina"
+ },
+ "restaurants": [
+  {
+   "nom": "Dar Roumana",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Fès",
+   "description": "Riad gastronomique, vue médina à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Roumana+F%C3%A8s",
+   "priceRange": "€€€€",
+   "specialite": "Riad gastronomique",
+   "nombreAvis": 1101,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Restaurant Nur",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Fès",
+   "description": "Marocain gastronomique étoilé à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Nur+F%C3%A8s",
+   "priceRange": "€€€€",
+   "specialite": "Marocain gastronomique étoilé",
+   "nombreAvis": 2432,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Dar Hatim",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Fès",
+   "description": "Fassi traditionnel à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Hatim+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Fassi traditionnel",
+   "nombreAvis": 852,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Riad Fès Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Fès",
+   "description": "Gastronomique luxe à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Riad+F%C3%A8s+Restaurant+F%C3%A8s",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique luxe",
+   "nombreAvis": 1526,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Al Fassia Fès",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Fès",
+   "description": "Cuisine fassi authentique à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Fassia+F%C3%A8s+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Cuisine fassi authentique",
+   "nombreAvis": 1624,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Maison Bleue Restaurant",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Fès",
+   "description": "Riad 5 étoiles à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Bleue+Restaurant+F%C3%A8s",
+   "priceRange": "€€€€",
+   "specialite": "Riad 5 étoiles",
+   "nombreAvis": 1029,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Dar Bensouda",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Fès",
+   "description": "Maison seigneuriale cuisine à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Bensouda+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Maison seigneuriale cuisine",
+   "nombreAvis": 3029,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Le Jardin de la Kairaouane",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Fès",
+   "description": "Jardin médiéval à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Jardin+de+la+Kairaouane+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Jardin médiéval",
+   "nombreAvis": 2536,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Café Clock Fès",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Fès",
+   "description": "Fusion moderne, shows à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Clock+F%C3%A8s+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Fusion moderne",
+   "nombreAvis": 1703,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Restaurant Palais M'nebhi",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Fès",
+   "description": "Palais fassi à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Palais+M%27nebhi+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Palais fassi",
+   "nombreAvis": 1660,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Dar Zitoun Fès",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Fès",
+   "description": "Riad gastronomique à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Zitoun+F%C3%A8s+F%C3%A8s",
+   "priceRange": "€€€€",
+   "specialite": "Riad gastronomique",
+   "nombreAvis": 1909,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Restaurant Ruined Garden Fès",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Fès",
+   "description": "Jardin à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Ruined+Garden+F%C3%A8s+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Jardin",
+   "nombreAvis": 1266,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Chez Rachida",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Fès",
+   "description": "Marocain populaire médina à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Rachida+F%C3%A8s",
+   "priceRange": "€",
+   "specialite": "Marocain populaire médina",
+   "nombreAvis": 775,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Café Restaurant Atlas",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Fès",
+   "description": "Vue médina à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Restaurant+Atlas+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Vue médina",
+   "nombreAvis": 3709,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "La Madrasa",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Fès",
+   "description": "Vue medina rooftop à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=La+Madrasa+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Vue medina rooftop",
+   "nombreAvis": 180,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Restaurant des Mérinides",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Fès",
+   "description": "Vue panoramique à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+des+M%C3%A9rinides+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Vue panoramique",
+   "nombreAvis": 1635,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Restaurant Bouayad",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Fès",
+   "description": "Tajine traditionnel à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Bouayad+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Tajine traditionnel",
+   "nombreAvis": 586,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Café Fassi",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Fès",
+   "description": "Thé et msemen à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Fassi+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Thé et msemen",
+   "nombreAvis": 1323,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Snack Ain Azliten",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Fès",
+   "description": "Rapide médina à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Snack+Ain+Azliten+F%C3%A8s",
+   "priceRange": "€",
+   "specialite": "Rapide médina",
+   "nombreAvis": 737,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Chez Lamine Fès",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Fès",
+   "description": "Méchoui populaire à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+F%C3%A8s+F%C3%A8s",
+   "priceRange": "€",
+   "specialite": "Méchoui populaire",
+   "nombreAvis": 261,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Dar Roumana Terrace",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Fès",
+   "description": "Rooftop fassi à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Roumana+Terrace+F%C3%A8s",
+   "priceRange": "€€€€",
+   "specialite": "Rooftop fassi",
+   "nombreAvis": 1203,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Al Baraka",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Fès",
+   "description": "Marocain festif à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Baraka+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Marocain festif",
+   "nombreAvis": 592,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Restaurant Batha",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Fès",
+   "description": "Cuisine près de Batha à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Batha+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Cuisine près de batha",
+   "nombreAvis": 734,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Dar Janane",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Fès",
+   "description": "Maison jardin à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Janane+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Maison jardin",
+   "nombreAvis": 1155,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "La Maison Arabe Fès",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Fès",
+   "description": "Riad luxe à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=La+Maison+Arabe+F%C3%A8s+F%C3%A8s",
+   "priceRange": "€€€€",
+   "specialite": "Riad luxe",
+   "nombreAvis": 1597,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Dar Adal Fès",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Fès",
+   "description": "Cours de cuisine et table à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Adal+F%C3%A8s+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Cours de cuisine et table",
+   "nombreAvis": 1408,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Layalina Restaurant",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Fès",
+   "description": "Oriental musical à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Layalina+Restaurant+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Oriental musical",
+   "nombreAvis": 876,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Restaurant la Kasbah",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Fès",
+   "description": "Touristique à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+la+Kasbah+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Touristique",
+   "nombreAvis": 1170,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Lounge Alcazar Fès",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Fès",
+   "description": "Moderne à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Lounge+Alcazar+F%C3%A8s+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Moderne",
+   "nombreAvis": 2118,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Restaurant Dar Saada",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Fès",
+   "description": "Table d'hôte à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Dar+Saada+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Table d'hôte",
+   "nombreAvis": 655,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Thé à la Menthe",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Fès",
+   "description": "Classique touristique à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Th%C3%A9+%C3%A0+la+Menthe+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Classique touristique",
+   "nombreAvis": 441,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Pizza Najma",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Fès",
+   "description": "Pizza halal fès à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Pizza+Najma+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Pizza halal fès",
+   "nombreAvis": 1310,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Sandwich Lahm",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Fès",
+   "description": "Sandwich marocain à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Sandwich+Lahm+F%C3%A8s",
+   "priceRange": "€",
+   "specialite": "Sandwich marocain",
+   "nombreAvis": 2774,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Boulangerie Fassia",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Fès",
+   "description": "Pâtisseries fassi à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Boulangerie+Fassia+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries fassi",
+   "nombreAvis": 489,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Aïssaoua Sweets",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Fès",
+   "description": "Confiseries traditionnelles à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=A%C3%AFssaoua+Sweets+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Confiseries traditionnelles",
+   "nombreAvis": 1101,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Dar Mriss",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Fès",
+   "description": "Table gastronomique à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Mriss+F%C3%A8s",
+   "priceRange": "€€€€",
+   "specialite": "Table gastronomique",
+   "nombreAvis": 123,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Riad Maison Bleue Dining",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Fès",
+   "description": "Palace fassi à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Riad+Maison+Bleue+Dining+F%C3%A8s",
+   "priceRange": "€€€€",
+   "specialite": "Palace fassi",
+   "nombreAvis": 1584,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Restaurant Sablier",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Fès",
+   "description": "Ambiance riad à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Sablier+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Ambiance riad",
+   "nombreAvis": 1217,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Cafe Nora",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Fès",
+   "description": "Moderne près Qarawiyyin à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Cafe+Nora+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Moderne près qarawiyyin",
+   "nombreAvis": 1159,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Chez Moha Fès",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Fès",
+   "description": "Chef fassi contemporain à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Moha+F%C3%A8s+F%C3%A8s",
+   "priceRange": "€",
+   "specialite": "Chef fassi contemporain",
+   "nombreAvis": 978,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Restaurant Firdaus",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Fès",
+   "description": "Jardin paradisiaque à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Firdaus+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Jardin paradisiaque",
+   "nombreAvis": 993,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Art Deco Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Fès",
+   "description": "Ville nouvelle à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Art+Deco+Caf%C3%A9+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Ville nouvelle",
+   "nombreAvis": 1618,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Chez Badi",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Fès",
+   "description": "Populaire médina à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Badi+F%C3%A8s",
+   "priceRange": "€",
+   "specialite": "Populaire médina",
+   "nombreAvis": 357,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Al Qaouakib",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Fès",
+   "description": "Soirée fassi traditionnelle à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Qaouakib+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Soirée fassi traditionnelle",
+   "nombreAvis": 861,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Dar Jamai Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Fès",
+   "description": "Musée, pause culturelle à Fès.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Jamai+Caf%C3%A9+F%C3%A8s",
+   "priceRange": "€€",
+   "specialite": "Musée",
+   "nombreAvis": 1038,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r45"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m-001",
+   "nom": "Mosquée Qarawiyyin (Al-Qarawiyyin)",
+   "adresse": "Médina de Fès, Rue Boukhessisat",
+   "type": "Historique & université",
+   "capacite": 20000,
+   "annee_construction": 859,
+   "style_architectural": "Andalou-mauresque",
+   "note": 5
+  },
+  {
+   "id": "m-002",
+   "nom": "Mosquée des Andalous",
+   "adresse": "Quartier Andalous, Médina",
+   "type": "Historique",
+   "capacite": 5000,
+   "annee_construction": 860,
+   "style_architectural": "Mauresque",
+   "note": 4.9
+  },
+  {
+   "id": "m-003",
+   "nom": "Mosquée Moulay Idriss II",
+   "adresse": "Médina, Zaoui Moulay Idriss",
+   "type": "Mausolée & mosquée",
+   "capacite": 3000,
+   "annee_construction": 828,
+   "style_architectural": "Mauresque",
+   "note": 4.8
+  },
+  {
+   "id": "m-004",
+   "nom": "Mosquée Bou Inania",
+   "adresse": "Talaa Kbira, Médina",
+   "type": "Médersa-Mosquée",
+   "capacite": 2000,
+   "annee_construction": 1351,
+   "style_architectural": "Mérinide",
+   "note": 4.9
+  },
+  {
+   "id": "m-005",
+   "nom": "Mosquée Chrabliyine",
+   "adresse": "Souk Chrabliyine, Médina",
+   "type": "Mosquée de quartier",
+   "capacite": 1000,
+   "annee_construction": 1342,
+   "style_architectural": "Mérinide",
+   "note": 4.5
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Palais Faraj",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Fès",
+   "description": "Ultra-luxe riad palais à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Palais+Faraj+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€€€",
+   "nombreAvis": 1943,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h1",
+   "lat": 34.0574964,
+   "lng": -4.9760898
+  },
+  {
+   "nom": "Riad Fès",
+   "categorie": "Riad & Boutique",
+   "score": 4.7,
+   "adresse": "Fès",
+   "description": "Luxe 5 étoiles à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Riad+F%C3%A8s+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€€",
+   "nombreAvis": 765,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h2",
+   "lat": 34.0615569,
+   "lng": -4.9794653
+  },
+  {
+   "nom": "Maison Bleue",
+   "categorie": "Riad & Boutique",
+   "score": 4.8,
+   "adresse": "Fès",
+   "description": "Luxe boutique à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Maison+Bleue+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€€",
+   "nombreAvis": 1532,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": 34.060642,
+   "lng": -4.9818415
+  },
+  {
+   "nom": "Sofitel Fès Palais Jamaï",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Fès",
+   "description": "Luxe historique à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Sofitel+F%C3%A8s+Palais+Jama%C3%AF+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€€€",
+   "nombreAvis": 746,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4"
+  },
+  {
+   "nom": "Mövenpick Hotel Fès",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Fès",
+   "description": "Luxe à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=M%C3%B6venpick+Hotel+F%C3%A8s+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€€€",
+   "nombreAvis": 1101,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5"
+  },
+  {
+   "nom": "Dar Roumana",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Fès",
+   "description": "Boutique riad à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Dar+Roumana+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€€",
+   "nombreAvis": 561,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": 34.0668985,
+   "lng": -4.9781907
+  },
+  {
+   "nom": "Riad Laaroussa",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Fès",
+   "description": "Boutique à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Riad+Laaroussa+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€€",
+   "nombreAvis": 1889,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 34.0634056,
+   "lng": -4.9792615
+  },
+  {
+   "nom": "La Maison de la Plume",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Fès",
+   "description": "Riad charme à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=La+Maison+de+la+Plume+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€€",
+   "nombreAvis": 1511,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Riad Idrissy",
+   "categorie": "Riad & Boutique",
+   "score": 4.8,
+   "adresse": "Fès",
+   "description": "Standard charme à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Riad+Idrissy+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€€",
+   "nombreAvis": 1476,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Hôtel Batha",
+   "categorie": "Standard",
+   "score": 4.7,
+   "adresse": "Fès",
+   "description": "Standard à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Batha+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€€",
+   "nombreAvis": 703,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10",
+   "lat": 34.0601753,
+   "lng": -4.9819166
+  },
+  {
+   "nom": "Hôtel Mounia",
+   "categorie": "Budget",
+   "score": 4.7,
+   "adresse": "Fès",
+   "description": "Budget à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Mounia+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€",
+   "nombreAvis": 1610,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h11",
+   "lat": 34.0363086,
+   "lng": -4.9967841
+  },
+  {
+   "nom": "Auberge Bou Inania",
+   "categorie": "Budget",
+   "score": 4.6,
+   "adresse": "Fès",
+   "description": "Budget à Fès.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Auberge+Bou+Inania+F%C3%A8s",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
+   "priceRange": "€€",
+   "nombreAvis": 894,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Visite de la Qarawiyyin",
+   "type": "Culture & spirituel",
+   "duree": "2h",
+   "prix": "Gratuit (extérieur uniquement pour non-musulmans)",
+   "note": 4.9,
+   "categorie": "Religieux & Spirituel",
+   "mapsUrl": "https://maps.google.com/?q=Visite+de+la+Qarawiyyin+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Visite+de+la+Qarawiyyin+F%C3%A8s",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a2",
+   "nom": "Tanneries Chouara",
+   "type": "Artisanat",
+   "duree": "1h30",
+   "prix": "Gratuit depuis les terrasses des boutiques de cuir",
+   "note": 4.7,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Tanneries+Chouara+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tanneries+Chouara+F%C3%A8s",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a3",
+   "nom": "Médersa Bou Inania",
+   "type": "Architecture islamique",
+   "duree": "1h",
+   "prix": "20 MAD",
+   "note": 4.8,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dersa+Bou+Inania+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dersa+Bou+Inania+F%C3%A8s",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a4",
+   "nom": "Fondouk Nejjarine (Musée du Bois)",
+   "type": "Musée",
+   "duree": "1h30",
+   "prix": "20 MAD",
+   "note": 4.5,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Fondouk+Nejjarine+%28Mus%C3%A9e+du+Bois%29+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fondouk+Nejjarine+%28Mus%C3%A9e+du+Bois%29+F%C3%A8s",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a5",
+   "nom": "Vue panoramique Tombeaux Mérinides",
+   "type": "Point de vue",
+   "duree": "45 min",
+   "prix": "Gratuit",
+   "note": 4.6,
+   "categorie": "Religieux & Spirituel",
+   "mapsUrl": "https://maps.google.com/?q=Vue+panoramique+Tombeaux+M%C3%A9rinides+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vue+panoramique+Tombeaux+M%C3%A9rinides+F%C3%A8s",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a6",
+   "nom": "Souks de la médina",
+   "type": "Shopping & artisanat",
+   "duree": "3h",
+   "prix": "Variable",
+   "note": 4.8,
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Souks+de+la+m%C3%A9dina+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souks+de+la+m%C3%A9dina+F%C3%A8s",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a7",
+   "nom": "Zaoui Moulay Idriss II",
+   "type": "Site spirituel",
+   "duree": "45 min",
+   "prix": "Gratuit",
+   "note": 4.9,
+   "categorie": "Religieux & Spirituel",
+   "mapsUrl": "https://maps.google.com/?q=Zaoui+Moulay+Idriss+II+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Zaoui+Moulay+Idriss+II+F%C3%A8s",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a8",
+   "nom": "Mellah (ancien quartier juif)",
+   "type": "Histoire",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "note": 4.3,
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Mellah+%28ancien+quartier+juif%29+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mellah+%28ancien+quartier+juif%29+F%C3%A8s",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Fès",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+F%C3%A8s+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+F%C3%A8s+F%C3%A8s",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand marché central de Fès",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+F%C3%A8s+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+F%C3%A8s+F%C3%A8s",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a10"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Fès",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+F%C3%A8s+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+F%C3%A8s+F%C3%A8s",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Musée de la ville de Fès",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+F%C3%A8s+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+F%C3%A8s+F%C3%A8s",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Food tour halal de Fès",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+F%C3%A8s+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+F%C3%A8s+F%C3%A8s",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Hammam traditionnel de Fès",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+F%C3%A8s+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+F%C3%A8s+F%C3%A8s",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Mosquée historique de Fès",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+F%C3%A8s+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+F%C3%A8s+F%C3%A8s",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Parc et jardins de Fès",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+F%C3%A8s+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+F%C3%A8s+F%C3%A8s",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Fès",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+F%C3%A8s+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+F%C3%A8s+F%C3%A8s",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Fès",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+F%C3%A8s+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+F%C3%A8s+F%C3%A8s",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Quartier historique de Fès 10",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+F%C3%A8s+10+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+F%C3%A8s+10+F%C3%A8s",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Grand marché central de Fès 11",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+F%C3%A8s+11+F%C3%A8s",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+F%C3%A8s+11+F%C3%A8s",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "codeISO": "MA",
+ "image": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
+ "continent": "Afrique",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Fès — Halal Trust Score 5/5.",
+ "image_hero": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Fès",
+   "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Fès",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+F%C3%A8s+F%C3%A8s",
+   "capacite": 6559,
+   "anneeConstruction": 2019,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 34.0181,
     "lng": -5.0078
+   }
   },
-  "score_halal": 4.5,
-  "score_securite": 4,
-  "score_famille": 5,
-  "score_budget": 5,
-  "description": {
-    "court": "La capitale spirituelle et intellectuelle du Maroc, fondée en 789",
-    "long": "Fès est la plus ancienne des villes impériales du Maroc et l'une des villes médiévales les mieux préservées au monde. Sa médina, inscrite au patrimoine mondial de l'UNESCO, abrite la plus ancienne université du monde — la Qarawiyyin, fondée en 859. Pays à majorité musulmane, le halal est la norme absolue dans toute la ville. Fès est une destination spirituelle et culturelle de premier ordre pour les voyageurs musulmans."
+  {
+   "nom": "Grande Mosquée de Fès",
+   "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Fès",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+F%C3%A8s+F%C3%A8s",
+   "capacite": 1945,
+   "anneeConstruction": 1945,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 34.0181,
+    "lng": -5.0078
+   }
   },
-  "statistiques": {
-    "mosquees": 785,
-    "restaurants_halal": 1200,
-    "hotels_halal_friendly": 95,
-    "population": "1,2 million"
+  {
+   "nom": "Mosquée Al-Noor de Fès",
+   "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Fès",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+F%C3%A8s+F%C3%A8s",
+   "capacite": 3597,
+   "anneeConstruction": 1997,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 34.0181,
+    "lng": -5.0078
+   }
   },
-  "infos_pratiques": {
-    "langue": "Arabe, Berbère, Français",
-    "monnaie": "Dirham marocain (MAD)",
-    "fuseau_horaire": "GMT+1",
-    "meilleure_periode": "Mars–mai, Septembre–novembre",
-    "visa": "Entrée libre pour ressortissants français, belges, canadiens",
-    "transport": "Taxi, bus, à pied dans la médina"
+  {
+   "nom": "Mosquée Al-Salam de Fès",
+   "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Fès",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+F%C3%A8s+F%C3%A8s",
+   "capacite": 5808,
+   "anneeConstruction": 2008,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 34.0181,
+    "lng": -5.0078
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Dar Roumana",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Fès",
-      "description": "Riad gastronomique, vue médina à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Roumana+F%C3%A8s",
-      "priceRange": "€€€€",
-      "specialite": "Riad gastronomique",
-      "nombreAvis": 1101,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Restaurant Nur",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Fès",
-      "description": "Marocain gastronomique étoilé à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Nur+F%C3%A8s",
-      "priceRange": "€€€€",
-      "specialite": "Marocain gastronomique étoilé",
-      "nombreAvis": 2432,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Dar Hatim",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Fès",
-      "description": "Fassi traditionnel à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Hatim+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Fassi traditionnel",
-      "nombreAvis": 852,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Riad Fès Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Fès",
-      "description": "Gastronomique luxe à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Riad+F%C3%A8s+Restaurant+F%C3%A8s",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique luxe",
-      "nombreAvis": 1526,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Al Fassia Fès",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Fès",
-      "description": "Cuisine fassi authentique à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Fassia+F%C3%A8s+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Cuisine fassi authentique",
-      "nombreAvis": 1624,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Maison Bleue Restaurant",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Fès",
-      "description": "Riad 5 étoiles à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Bleue+Restaurant+F%C3%A8s",
-      "priceRange": "€€€€",
-      "specialite": "Riad 5 étoiles",
-      "nombreAvis": 1029,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Dar Bensouda",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Fès",
-      "description": "Maison seigneuriale cuisine à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Bensouda+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Maison seigneuriale cuisine",
-      "nombreAvis": 3029,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Le Jardin de la Kairaouane",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Fès",
-      "description": "Jardin médiéval à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Jardin+de+la+Kairaouane+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Jardin médiéval",
-      "nombreAvis": 2536,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Café Clock Fès",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Fès",
-      "description": "Fusion moderne, shows à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Clock+F%C3%A8s+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Fusion moderne",
-      "nombreAvis": 1703,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Restaurant Palais M'nebhi",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Fès",
-      "description": "Palais fassi à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Palais+M%27nebhi+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Palais fassi",
-      "nombreAvis": 1660,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Dar Zitoun Fès",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Fès",
-      "description": "Riad gastronomique à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Zitoun+F%C3%A8s+F%C3%A8s",
-      "priceRange": "€€€€",
-      "specialite": "Riad gastronomique",
-      "nombreAvis": 1909,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Restaurant Ruined Garden Fès",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Fès",
-      "description": "Jardin à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Ruined+Garden+F%C3%A8s+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Jardin",
-      "nombreAvis": 1266,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Chez Rachida",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Fès",
-      "description": "Marocain populaire médina à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Rachida+F%C3%A8s",
-      "priceRange": "€",
-      "specialite": "Marocain populaire médina",
-      "nombreAvis": 775,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Café Restaurant Atlas",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Fès",
-      "description": "Vue médina à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Restaurant+Atlas+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Vue médina",
-      "nombreAvis": 3709,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "La Madrasa",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Fès",
-      "description": "Vue medina rooftop à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=La+Madrasa+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Vue medina rooftop",
-      "nombreAvis": 180,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Restaurant des Mérinides",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Fès",
-      "description": "Vue panoramique à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+des+M%C3%A9rinides+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Vue panoramique",
-      "nombreAvis": 1635,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Restaurant Bouayad",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Fès",
-      "description": "Tajine traditionnel à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Bouayad+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Tajine traditionnel",
-      "nombreAvis": 586,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Café Fassi",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Fès",
-      "description": "Thé et msemen à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Fassi+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Thé et msemen",
-      "nombreAvis": 1323,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Snack Ain Azliten",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Fès",
-      "description": "Rapide médina à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Snack+Ain+Azliten+F%C3%A8s",
-      "priceRange": "€",
-      "specialite": "Rapide médina",
-      "nombreAvis": 737,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Chez Lamine Fès",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Fès",
-      "description": "Méchoui populaire à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Lamine+F%C3%A8s+F%C3%A8s",
-      "priceRange": "€",
-      "specialite": "Méchoui populaire",
-      "nombreAvis": 261,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Dar Roumana Terrace",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Fès",
-      "description": "Rooftop fassi à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Roumana+Terrace+F%C3%A8s",
-      "priceRange": "€€€€",
-      "specialite": "Rooftop fassi",
-      "nombreAvis": 1203,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Al Baraka",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Fès",
-      "description": "Marocain festif à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Baraka+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Marocain festif",
-      "nombreAvis": 592,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Restaurant Batha",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Fès",
-      "description": "Cuisine près de Batha à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Batha+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Cuisine près de batha",
-      "nombreAvis": 734,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Dar Janane",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Fès",
-      "description": "Maison jardin à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Janane+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Maison jardin",
-      "nombreAvis": 1155,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "La Maison Arabe Fès",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Fès",
-      "description": "Riad luxe à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=La+Maison+Arabe+F%C3%A8s+F%C3%A8s",
-      "priceRange": "€€€€",
-      "specialite": "Riad luxe",
-      "nombreAvis": 1597,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Dar Adal Fès",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Fès",
-      "description": "Cours de cuisine et table à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Adal+F%C3%A8s+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Cours de cuisine et table",
-      "nombreAvis": 1408,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Layalina Restaurant",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Fès",
-      "description": "Oriental musical à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Layalina+Restaurant+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Oriental musical",
-      "nombreAvis": 876,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Restaurant la Kasbah",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Fès",
-      "description": "Touristique à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+la+Kasbah+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Touristique",
-      "nombreAvis": 1170,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Lounge Alcazar Fès",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Fès",
-      "description": "Moderne à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Lounge+Alcazar+F%C3%A8s+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Moderne",
-      "nombreAvis": 2118,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Restaurant Dar Saada",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Fès",
-      "description": "Table d'hôte à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Dar+Saada+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Table d'hôte",
-      "nombreAvis": 655,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Thé à la Menthe",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Fès",
-      "description": "Classique touristique à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Th%C3%A9+%C3%A0+la+Menthe+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Classique touristique",
-      "nombreAvis": 441,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Pizza Najma",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Fès",
-      "description": "Pizza halal fès à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Pizza+Najma+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Pizza halal fès",
-      "nombreAvis": 1310,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Sandwich Lahm",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Fès",
-      "description": "Sandwich marocain à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Sandwich+Lahm+F%C3%A8s",
-      "priceRange": "€",
-      "specialite": "Sandwich marocain",
-      "nombreAvis": 2774,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Boulangerie Fassia",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Fès",
-      "description": "Pâtisseries fassi à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Boulangerie+Fassia+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries fassi",
-      "nombreAvis": 489,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Aïssaoua Sweets",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Fès",
-      "description": "Confiseries traditionnelles à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=A%C3%AFssaoua+Sweets+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Confiseries traditionnelles",
-      "nombreAvis": 1101,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Dar Mriss",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Fès",
-      "description": "Table gastronomique à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Mriss+F%C3%A8s",
-      "priceRange": "€€€€",
-      "specialite": "Table gastronomique",
-      "nombreAvis": 123,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Riad Maison Bleue Dining",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Fès",
-      "description": "Palace fassi à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Riad+Maison+Bleue+Dining+F%C3%A8s",
-      "priceRange": "€€€€",
-      "specialite": "Palace fassi",
-      "nombreAvis": 1584,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Restaurant Sablier",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Fès",
-      "description": "Ambiance riad à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Sablier+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Ambiance riad",
-      "nombreAvis": 1217,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Cafe Nora",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Fès",
-      "description": "Moderne près Qarawiyyin à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Cafe+Nora+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Moderne près qarawiyyin",
-      "nombreAvis": 1159,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Chez Moha Fès",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Fès",
-      "description": "Chef fassi contemporain à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Moha+F%C3%A8s+F%C3%A8s",
-      "priceRange": "€",
-      "specialite": "Chef fassi contemporain",
-      "nombreAvis": 978,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Restaurant Firdaus",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Fès",
-      "description": "Jardin paradisiaque à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Firdaus+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Jardin paradisiaque",
-      "nombreAvis": 993,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Art Deco Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Fès",
-      "description": "Ville nouvelle à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Art+Deco+Caf%C3%A9+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Ville nouvelle",
-      "nombreAvis": 1618,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Chez Badi",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Fès",
-      "description": "Populaire médina à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Badi+F%C3%A8s",
-      "priceRange": "€",
-      "specialite": "Populaire médina",
-      "nombreAvis": 357,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Al Qaouakib",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Fès",
-      "description": "Soirée fassi traditionnelle à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Qaouakib+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Soirée fassi traditionnelle",
-      "nombreAvis": 861,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Dar Jamai Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Fès",
-      "description": "Musée, pause culturelle à Fès.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Jamai+Caf%C3%A9+F%C3%A8s",
-      "priceRange": "€€",
-      "specialite": "Musée",
-      "nombreAvis": 1038,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r45"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m-001",
-      "nom": "Mosquée Qarawiyyin (Al-Qarawiyyin)",
-      "adresse": "Médina de Fès, Rue Boukhessisat",
-      "type": "Historique & université",
-      "capacite": 20000,
-      "annee_construction": 859,
-      "style_architectural": "Andalou-mauresque",
-      "note": 5.0
-    },
-    {
-      "id": "m-002",
-      "nom": "Mosquée des Andalous",
-      "adresse": "Quartier Andalous, Médina",
-      "type": "Historique",
-      "capacite": 5000,
-      "annee_construction": 860,
-      "style_architectural": "Mauresque",
-      "note": 4.9
-    },
-    {
-      "id": "m-003",
-      "nom": "Mosquée Moulay Idriss II",
-      "adresse": "Médina, Zaoui Moulay Idriss",
-      "type": "Mausolée & mosquée",
-      "capacite": 3000,
-      "annee_construction": 828,
-      "style_architectural": "Mauresque",
-      "note": 4.8
-    },
-    {
-      "id": "m-004",
-      "nom": "Mosquée Bou Inania",
-      "adresse": "Talaa Kbira, Médina",
-      "type": "Médersa-Mosquée",
-      "capacite": 2000,
-      "annee_construction": 1351,
-      "style_architectural": "Mérinide",
-      "note": 4.9
-    },
-    {
-      "id": "m-005",
-      "nom": "Mosquée Chrabliyine",
-      "adresse": "Souk Chrabliyine, Médina",
-      "type": "Mosquée de quartier",
-      "capacite": 1000,
-      "annee_construction": 1342,
-      "style_architectural": "Mérinide",
-      "note": 4.5
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Palais Faraj",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Fès",
-      "description": "Ultra-luxe riad palais à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Palais+Faraj+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€€€",
-      "nombreAvis": 1943,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Riad Fès",
-      "categorie": "Riad & Boutique",
-      "score": 4.7,
-      "adresse": "Fès",
-      "description": "Luxe 5 étoiles à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Riad+F%C3%A8s+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€€",
-      "nombreAvis": 765,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Maison Bleue",
-      "categorie": "Riad & Boutique",
-      "score": 4.8,
-      "adresse": "Fès",
-      "description": "Luxe boutique à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Maison+Bleue+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€€",
-      "nombreAvis": 1532,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Sofitel Fès Palais Jamaï",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Fès",
-      "description": "Luxe historique à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Sofitel+F%C3%A8s+Palais+Jama%C3%AF+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€€€",
-      "nombreAvis": 746,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Mövenpick Hotel Fès",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Fès",
-      "description": "Luxe à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=M%C3%B6venpick+Hotel+F%C3%A8s+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€€€",
-      "nombreAvis": 1101,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Dar Roumana",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Fès",
-      "description": "Boutique riad à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Dar+Roumana+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€€",
-      "nombreAvis": 561,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "Riad Laaroussa",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Fès",
-      "description": "Boutique à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Riad+Laaroussa+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€€",
-      "nombreAvis": 1889,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "La Maison de la Plume",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Fès",
-      "description": "Riad charme à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=La+Maison+de+la+Plume+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€€",
-      "nombreAvis": 1511,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Riad Idrissy",
-      "categorie": "Riad & Boutique",
-      "score": 4.8,
-      "adresse": "Fès",
-      "description": "Standard charme à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Riad+Idrissy+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€€",
-      "nombreAvis": 1476,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Hôtel Batha",
-      "categorie": "Standard",
-      "score": 4.7,
-      "adresse": "Fès",
-      "description": "Standard à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Batha+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€€",
-      "nombreAvis": 703,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Hôtel Mounia",
-      "categorie": "Budget",
-      "score": 4.7,
-      "adresse": "Fès",
-      "description": "Budget à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Mounia+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€",
-      "nombreAvis": 1610,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Auberge Bou Inania",
-      "categorie": "Budget",
-      "score": 4.6,
-      "adresse": "Fès",
-      "description": "Budget à Fès.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Auberge+Bou+Inania+F%C3%A8s",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Fès&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=fes",
-      "priceRange": "€€",
-      "nombreAvis": 894,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Visite de la Qarawiyyin",
-      "type": "Culture & spirituel",
-      "duree": "2h",
-      "prix": "Gratuit (extérieur uniquement pour non-musulmans)",
-      "note": 4.9,
-      "categorie": "Religieux & Spirituel",
-      "mapsUrl": "https://maps.google.com/?q=Visite+de+la+Qarawiyyin+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Visite+de+la+Qarawiyyin+F%C3%A8s",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Tanneries Chouara",
-      "type": "Artisanat",
-      "duree": "1h30",
-      "prix": "Gratuit depuis les terrasses des boutiques de cuir",
-      "note": 4.7,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Tanneries+Chouara+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tanneries+Chouara+F%C3%A8s",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Médersa Bou Inania",
-      "type": "Architecture islamique",
-      "duree": "1h",
-      "prix": "20 MAD",
-      "note": 4.8,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dersa+Bou+Inania+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dersa+Bou+Inania+F%C3%A8s",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Fondouk Nejjarine (Musée du Bois)",
-      "type": "Musée",
-      "duree": "1h30",
-      "prix": "20 MAD",
-      "note": 4.5,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Fondouk+Nejjarine+%28Mus%C3%A9e+du+Bois%29+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fondouk+Nejjarine+%28Mus%C3%A9e+du+Bois%29+F%C3%A8s",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a5",
-      "nom": "Vue panoramique Tombeaux Mérinides",
-      "type": "Point de vue",
-      "duree": "45 min",
-      "prix": "Gratuit",
-      "note": 4.6,
-      "categorie": "Religieux & Spirituel",
-      "mapsUrl": "https://maps.google.com/?q=Vue+panoramique+Tombeaux+M%C3%A9rinides+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vue+panoramique+Tombeaux+M%C3%A9rinides+F%C3%A8s",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a6",
-      "nom": "Souks de la médina",
-      "type": "Shopping & artisanat",
-      "duree": "3h",
-      "prix": "Variable",
-      "note": 4.8,
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Souks+de+la+m%C3%A9dina+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souks+de+la+m%C3%A9dina+F%C3%A8s",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a7",
-      "nom": "Zaoui Moulay Idriss II",
-      "type": "Site spirituel",
-      "duree": "45 min",
-      "prix": "Gratuit",
-      "note": 4.9,
-      "categorie": "Religieux & Spirituel",
-      "mapsUrl": "https://maps.google.com/?q=Zaoui+Moulay+Idriss+II+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Zaoui+Moulay+Idriss+II+F%C3%A8s",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a8",
-      "nom": "Mellah (ancien quartier juif)",
-      "type": "Histoire",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "note": 4.3,
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Mellah+%28ancien+quartier+juif%29+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mellah+%28ancien+quartier+juif%29+F%C3%A8s",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Fès",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+F%C3%A8s+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+F%C3%A8s+F%C3%A8s",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand marché central de Fès",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+F%C3%A8s+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+F%C3%A8s+F%C3%A8s",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a10"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Fès",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+F%C3%A8s+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+F%C3%A8s+F%C3%A8s",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Musée de la ville de Fès",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+F%C3%A8s+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+F%C3%A8s+F%C3%A8s",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Food tour halal de Fès",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+F%C3%A8s+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+F%C3%A8s+F%C3%A8s",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Hammam traditionnel de Fès",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+F%C3%A8s+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+F%C3%A8s+F%C3%A8s",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Mosquée historique de Fès",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+F%C3%A8s+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+F%C3%A8s+F%C3%A8s",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Parc et jardins de Fès",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+F%C3%A8s+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+F%C3%A8s+F%C3%A8s",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Fès",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+F%C3%A8s+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+F%C3%A8s+F%C3%A8s",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Fès",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+F%C3%A8s+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+F%C3%A8s+F%C3%A8s",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Quartier historique de Fès 10",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+F%C3%A8s+10+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+F%C3%A8s+10+F%C3%A8s",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Grand marché central de Fès 11",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+F%C3%A8s+11+F%C3%A8s",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+F%C3%A8s+11+F%C3%A8s",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "codeISO": "MA",
-  "image": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
-  "continent": "Afrique",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Fès — Halal Trust Score 5/5.",
-  "image_hero": "https://images.unsplash.com/photo-1675782357250-8329a7677819?w=1600&q=80",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Fès",
-      "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Fès",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+F%C3%A8s+F%C3%A8s",
-      "capacite": 6559,
-      "anneeConstruction": 2019,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 34.0181,
-        "lng": -5.0078
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Fès",
-      "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Fès",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+F%C3%A8s+F%C3%A8s",
-      "capacite": 1945,
-      "anneeConstruction": 1945,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 34.0181,
-        "lng": -5.0078
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Fès",
-      "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Fès",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+F%C3%A8s+F%C3%A8s",
-      "capacite": 3597,
-      "anneeConstruction": 1997,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 34.0181,
-        "lng": -5.0078
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Fès",
-      "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Fès",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+F%C3%A8s+F%C3%A8s",
-      "capacite": 5808,
-      "anneeConstruction": 2008,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 34.0181,
-        "lng": -5.0078
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Fès",
-      "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Fès",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+F%C3%A8s+F%C3%A8s",
-      "capacite": 6721,
-      "anneeConstruction": 1941,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 34.0181,
-        "lng": -5.0078
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Fès",
-      "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Fès",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+F%C3%A8s+F%C3%A8s",
-      "capacite": 6130,
-      "anneeConstruction": 1990,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 34.0181,
-        "lng": -5.0078
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Fès",
-      "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Fès",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+F%C3%A8s+F%C3%A8s",
-      "capacite": 6465,
-      "anneeConstruction": 1945,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 34.0181,
-        "lng": -5.0078
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Al Fassia Fès",
-      "Dar Bensouda",
-      "Café Restaurant Atlas",
-      "Restaurant Bouayad",
-      "Restaurant Dar Saada"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Dar Hatim",
-      "Al Fassia Fès",
-      "Dar Bensouda",
-      "Le Jardin de la Kairaouane",
-      "Café Clock Fès"
-    ],
-    "incontournables": [
-      "Café Restaurant Atlas",
-      "Dar Bensouda",
-      "Sandwich Lahm",
-      "Le Jardin de la Kairaouane",
-      "Restaurant Nur"
-    ],
-    "pepitesCachees": [
-      "Chez Lamine Fès",
-      "Chez Badi"
-    ],
-    "idealFamille": [
-      "Dar Hatim",
-      "Al Fassia Fès",
-      "Dar Bensouda",
-      "Le Jardin de la Kairaouane",
-      "Café Clock Fès"
-    ],
-    "gastronomique": [
-      "Dar Roumana",
-      "Restaurant Nur",
-      "Riad Fès Restaurant",
-      "Maison Bleue Restaurant",
-      "Dar Zitoun Fès"
-    ],
-    "ouvertNuit": [
-      "Chez Rachida",
-      "Snack Ain Azliten",
-      "Chez Lamine Fès"
-    ],
-    "vueExceptionnelle": [
-      "Al Fassia Fès",
-      "Dar Bensouda",
-      "Café Restaurant Atlas"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Fès",
+   "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Fès",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+F%C3%A8s+F%C3%A8s",
+   "capacite": 6721,
+   "anneeConstruction": 1941,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 34.0181,
+    "lng": -5.0078
+   }
   },
-  "halalScore": 8.9
+  {
+   "nom": "Mosquée Al-Fath de Fès",
+   "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Fès",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+F%C3%A8s+F%C3%A8s",
+   "capacite": 6130,
+   "anneeConstruction": 1990,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 34.0181,
+    "lng": -5.0078
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Fès",
+   "description": "Mosquée fréquentée de Fès, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Fès",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+F%C3%A8s+F%C3%A8s",
+   "capacite": 6465,
+   "anneeConstruction": 1945,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 34.0181,
+    "lng": -5.0078
+   }
+  }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Al Fassia Fès",
+   "Dar Bensouda",
+   "Café Restaurant Atlas",
+   "Restaurant Bouayad",
+   "Restaurant Dar Saada"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Dar Hatim",
+   "Al Fassia Fès",
+   "Dar Bensouda",
+   "Le Jardin de la Kairaouane",
+   "Café Clock Fès"
+  ],
+  "incontournables": [
+   "Café Restaurant Atlas",
+   "Dar Bensouda",
+   "Sandwich Lahm",
+   "Le Jardin de la Kairaouane",
+   "Restaurant Nur"
+  ],
+  "pepitesCachees": [
+   "Chez Lamine Fès",
+   "Chez Badi"
+  ],
+  "idealFamille": [
+   "Dar Hatim",
+   "Al Fassia Fès",
+   "Dar Bensouda",
+   "Le Jardin de la Kairaouane",
+   "Café Clock Fès"
+  ],
+  "gastronomique": [
+   "Dar Roumana",
+   "Restaurant Nur",
+   "Riad Fès Restaurant",
+   "Maison Bleue Restaurant",
+   "Dar Zitoun Fès"
+  ],
+  "ouvertNuit": [
+   "Chez Rachida",
+   "Snack Ain Azliten",
+   "Chez Lamine Fès"
+  ],
+  "vueExceptionnelle": [
+   "Al Fassia Fès",
+   "Dar Bensouda",
+   "Café Restaurant Atlas"
+  ]
+ },
+ "halalScore": 8.9
 }

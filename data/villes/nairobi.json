@@ -1,1286 +1,1293 @@
 {
-  "nom": "Nairobi",
-  "pays": "Kenya",
-  "slug": "nairobi",
-  "image": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=1400&q=85",
-  "description": "Nairobi, capitale verte du Kenya, est la seule grande ville au monde dotée d'un parc national à safari. Quartier somali d'Eastleigh et cuisine swahilie halal.",
-  "descriptionLongue": "Capitale dynamique de l'Afrique de l'Est, Nairobi est la porte des safaris : son parc national abrite lions et rhinocéros aux portes de la ville. Le quartier d'Eastleigh, surnommé « petite Mogadiscio », concentre une importante communauté musulmane somalie et ses restaurants halal. Entre orphelinat d'éléphants, girafes du Giraffe Centre et mosquée Jamia, Nairobi mêle nature et urbanité.",
-  "halalScore": 7.5,
-  "score_halal": 3.8,
+ "nom": "Nairobi",
+ "pays": "Kenya",
+ "slug": "nairobi",
+ "image": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1611348586804-61bf6c080437?w=1400&q=85",
+ "description": "Nairobi, capitale verte du Kenya, est la seule grande ville au monde dotée d'un parc national à safari. Quartier somali d'Eastleigh et cuisine swahilie halal.",
+ "descriptionLongue": "Capitale dynamique de l'Afrique de l'Est, Nairobi est la porte des safaris : son parc national abrite lions et rhinocéros aux portes de la ville. Le quartier d'Eastleigh, surnommé « petite Mogadiscio », concentre une importante communauté musulmane somalie et ses restaurants halal. Entre orphelinat d'éléphants, girafes du Giraffe Centre et mosquée Jamia, Nairobi mêle nature et urbanité.",
+ "halalScore": 7.5,
+ "score_halal": 3.8,
+ "mosquees": 600,
+ "population": "4,7 millions",
+ "langue": "Swahili, Anglais",
+ "monnaie": "Shilling kényan (KES)",
+ "fuseau": "UTC+3",
+ "meilleureEpoque": "Juin à Octobre, Janvier-Février",
+ "prixMoyenNuit": "75€",
+ "continent": "Afrique",
+ "codeISO": "KE",
+ "pays_slug": "kenya",
+ "region": "Afrique de l'Est",
+ "meta_title": "Voyage Halal à Nairobi — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Nairobi — Halal Trust Score 7.5/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Nairobi — Halal Trust Score 7.5/10.",
+ "coordonnees": {
+  "lat": -1.2864,
+  "lng": 36.8172
+ },
+ "image_alt": "Vue de Nairobi, Kenya",
+ "statistiques": {
   "mosquees": 600,
-  "population": "4,7 millions",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 10,
+  "hotels": 10
+ },
+ "infos_pratiques": {
   "langue": "Swahili, Anglais",
   "monnaie": "Shilling kényan (KES)",
-  "fuseau": "UTC+3",
-  "meilleureEpoque": "Juin à Octobre, Janvier-Février",
-  "prixMoyenNuit": "75€",
-  "continent": "Afrique",
-  "codeISO": "KE",
-  "pays_slug": "kenya",
-  "region": "Afrique de l'Est",
-  "meta_title": "Voyage Halal à Nairobi — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Nairobi — Halal Trust Score 7.5/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Nairobi — Halal Trust Score 7.5/10.",
-  "coordonnees": {
+  "meilleure_periode": "Juin à Octobre, Janvier-Février",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "e-Visa / ETA kényan obligatoire",
+  "vaccins": "Fièvre jaune recommandée, paludisme selon zones",
+  "transport": "VTC Uber/Bolt, matatu, taxi",
+  "priseElectrique": "Type G — 240V",
+  "decalageHoraire": "+1h à +2h par rapport à Paris"
+ },
+ "restaurants": [
+  {
+   "nom": "Al-Yusra Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Eastleigh",
+   "description": "Cuisine somalie et swahilie à Eastleigh",
+   "mapsUrl": "https://maps.google.com/?q=Al-Yusra+Restaurant+Nairobi",
+   "priceRange": "€",
+   "specialite": "Cuisine somalie",
+   "id": "r1"
+  },
+  {
+   "nom": "Swahili Plate",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Kilimani",
+   "description": "Cuisine de la côte swahilie",
+   "mapsUrl": "https://maps.google.com/?q=Swahili+Plate+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Pilau et biryani",
+   "id": "r2"
+  },
+  {
+   "nom": "Mediterraneo Halal",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Westlands",
+   "description": "Italien halal apprécié",
+   "mapsUrl": "https://maps.google.com/?q=Mediterraneo+Halal+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Cuisine italienne",
+   "id": "r3"
+  },
+  {
+   "nom": "Habesha",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Hurlingham",
+   "description": "Cuisine éthiopienne halal",
+   "mapsUrl": "https://maps.google.com/?q=Habesha+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Cuisine éthiopienne",
+   "id": "r4"
+  },
+  {
+   "nom": "Nyama Mama",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Westlands",
+   "description": "Cuisine kényane moderne halal",
+   "mapsUrl": "https://maps.google.com/?q=Nyama+Mama+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Nyama choma",
+   "id": "r5"
+  },
+  {
+   "nom": "Al Madina Nairobi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Nairobi",
+   "description": "Adresse halal appréciée des habitants de Nairobi.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Madina+Nairobi+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Plat du jour maison",
+   "id": "r6"
+  },
+  {
+   "nom": "Shawarma House Nairobi",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Nairobi",
+   "description": "Adresse halal appréciée des habitants de Nairobi.",
+   "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Nairobi+Nairobi",
+   "priceRange": "€",
+   "specialite": "Shawarma poulet",
+   "id": "r7"
+  },
+  {
+   "nom": "Beit Beirut Nairobi",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Nairobi",
+   "description": "Adresse halal appréciée des habitants de Nairobi.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Nairobi+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais",
+   "id": "r8"
+  },
+  {
+   "nom": "Spice Route Nairobi",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Nairobi",
+   "description": "Adresse halal appréciée des habitants de Nairobi.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Route+Nairobi+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "id": "r9"
+  },
+  {
+   "nom": "Saffron Garden Nairobi",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Nairobi",
+   "description": "Adresse halal appréciée des habitants de Nairobi.",
+   "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Nairobi+Nairobi",
+   "priceRange": "€€€",
+   "specialite": "Menu dégustation halal",
+   "id": "r10"
+  },
+  {
+   "nom": "Green Bowl Nairobi",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Nairobi",
+   "description": "Adresse halal appréciée des habitants de Nairobi.",
+   "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Nairobi+Nairobi",
+   "priceRange": "€",
+   "specialite": "Bowl méditerranéen",
+   "id": "r11"
+  },
+  {
+   "nom": "Sultan Café Nairobi",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Nairobi",
+   "description": "Adresse halal appréciée des habitants de Nairobi.",
+   "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Nairobi+Nairobi",
+   "priceRange": "€",
+   "specialite": "Café arabe et baklava",
+   "id": "r12"
+  },
+  {
+   "nom": "Ocean Pearl Nairobi",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Nairobi",
+   "description": "Adresse halal appréciée des habitants de Nairobi.",
+   "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Nairobi+Nairobi",
+   "priceRange": "€€€",
+   "specialite": "Poisson grillé du jour",
+   "id": "r13"
+  },
+  {
+   "nom": "Bella Halal Nairobi",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Nairobi",
+   "description": "Adresse halal appréciée des habitants de Nairobi.",
+   "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Nairobi+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Pizza halal au four à bois",
+   "id": "r14"
+  },
+  {
+   "nom": "Tokyo Halal Nairobi",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.6000000000000005,
+   "adresse": "Nairobi",
+   "description": "Adresse halal appréciée des habitants de Nairobi.",
+   "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Nairobi+Nairobi",
+   "priceRange": "€€€",
+   "specialite": "Sushis certifiés halal",
+   "id": "r15"
+  },
+  {
+   "nom": "Chez Teranga",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Nairobi",
+   "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Nairobi",
+   "priceRange": "€",
+   "specialite": "Thiéboudienne",
+   "nombreAvis": 750,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Maison Baobab",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Nairobi",
+   "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Yassa poulet",
+   "nombreAvis": 2998,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Sahel Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Nairobi",
+   "description": "Adresse grillades & kebab appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Nairobi",
+   "priceRange": "€",
+   "specialite": "Dibi et brochettes",
+   "nombreAvis": 2067,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Beit Cham",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Nairobi",
+   "description": "Adresse libanais & levant appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1746,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Jollof House",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Nairobi",
+   "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Jollof+House+Nairobi",
+   "priceRange": "€",
+   "specialite": "Jollof rice",
+   "nombreAvis": 1280,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Spice Darbar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Nairobi",
+   "description": "Adresse indien & pakistani appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1158,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Café Teranga",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Nairobi",
+   "description": "Adresse pâtisserie & café appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Nairobi",
+   "priceRange": "€",
+   "specialite": "Café Touba",
+   "nombreAvis": 1196,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Chez Teranga Nairobi 8",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Nairobi",
+   "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Nairobi+8+Nairobi",
+   "priceRange": "€",
+   "specialite": "Thiéboudienne",
+   "nombreAvis": 1528,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Maison Baobab Nairobi 9",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Nairobi",
+   "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Nairobi+9+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Yassa poulet",
+   "nombreAvis": 439,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Sahel Grill Nairobi 10",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Nairobi",
+   "description": "Adresse grillades & kebab appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Nairobi+10+Nairobi",
+   "priceRange": "€",
+   "specialite": "Dibi et brochettes",
+   "nombreAvis": 379,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Beit Cham Nairobi 11",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Nairobi",
+   "description": "Adresse libanais & levant appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Nairobi+11+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1970,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Jollof House Nairobi 12",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Nairobi",
+   "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Jollof+House+Nairobi+12+Nairobi",
+   "priceRange": "€",
+   "specialite": "Jollof rice",
+   "nombreAvis": 2083,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Spice Darbar Nairobi 13",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Nairobi",
+   "description": "Adresse indien & pakistani appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Nairobi+13+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1473,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Café Teranga Nairobi 14",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Nairobi",
+   "description": "Adresse pâtisserie & café appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Nairobi+14+Nairobi",
+   "priceRange": "€",
+   "specialite": "Café Touba",
+   "nombreAvis": 633,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Chez Teranga Nairobi 15",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Nairobi",
+   "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Nairobi+15+Nairobi",
+   "priceRange": "€",
+   "specialite": "Thiéboudienne",
+   "nombreAvis": 307,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Maison Baobab Nairobi 16",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Nairobi",
+   "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Nairobi+16+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Yassa poulet",
+   "nombreAvis": 1528,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Sahel Grill Nairobi 17",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Nairobi",
+   "description": "Adresse grillades & kebab appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Nairobi+17+Nairobi",
+   "priceRange": "€",
+   "specialite": "Dibi et brochettes",
+   "nombreAvis": 399,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Beit Cham Nairobi 18",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Nairobi",
+   "description": "Adresse libanais & levant appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Nairobi+18+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Mezze",
+   "nombreAvis": 1982,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Jollof House Nairobi 19",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Nairobi",
+   "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Jollof+House+Nairobi+19+Nairobi",
+   "priceRange": "€",
+   "specialite": "Jollof rice",
+   "nombreAvis": 1205,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Spice Darbar Nairobi 20",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Nairobi",
+   "description": "Adresse indien & pakistani appréciée à Nairobi, ambiance conviviale et cuisine halal.",
+   "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Nairobi+20+Nairobi",
+   "priceRange": "€€",
+   "specialite": "Biryani",
+   "nombreAvis": 1597,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r35"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Villa Rosa Kempinski",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Westlands",
+   "description": "Hôtel cinq étoiles raffiné",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Villa+Rosa+Kempinski+Nairobi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "lat": -1.2714834,
+   "lng": 36.8090925
+  },
+  {
+   "nom": "Sarova Stanley",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "CBD",
+   "description": "Hôtel historique du centre-ville",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Sarova+Stanley+Nairobi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
+   "priceRange": "€€€",
+   "id": "h2",
+   "lat": -1.2843832,
+   "lng": 36.82274
+  },
+  {
+   "nom": "Eka Hotel Nairobi",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Mombasa Road",
+   "description": "Hôtel confortable sur Mombasa Road",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Eka+Hotel+Nairobi+Nairobi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
+   "priceRange": "€€",
+   "id": "h3",
+   "lat": -1.3243132,
+   "lng": 36.8445308
+  },
+  {
+   "nom": "Grand Plaza Nairobi",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Nairobi",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Nairobi+Nairobi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
+   "priceRange": "€€€€",
+   "id": "h4"
+  },
+  {
+   "nom": "City Comfort Hotel Nairobi",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Nairobi",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Nairobi+Nairobi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
+   "priceRange": "€€€",
+   "id": "h5"
+  },
+  {
+   "nom": "Boutique Riad Nairobi",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Nairobi",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Nairobi+Nairobi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
+   "priceRange": "€€€",
+   "id": "h6"
+  },
+  {
+   "nom": "Grand Plaza Nairobi 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Nairobi",
+   "description": "Hébergement halal-friendly à Nairobi.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Nairobi+0+Nairobi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
+   "priceRange": "€€€€",
+   "nombreAvis": 708,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Nairobi",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Nairobi",
+   "description": "Hébergement halal-friendly à Nairobi.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Nairobi+Nairobi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
+   "priceRange": "€€€",
+   "nombreAvis": 1158,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Nairobi",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Nairobi",
+   "description": "Hébergement halal-friendly à Nairobi.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Nairobi+Nairobi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
+   "priceRange": "€€€",
+   "nombreAvis": 1810,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Nairobi",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Nairobi",
+   "description": "Hébergement halal-friendly à Nairobi.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Nairobi+Nairobi",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
+   "priceRange": "€€",
+   "nombreAvis": 549,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Parc national de Nairobi",
+   "categorie": "Nature & Aventure",
+   "description": "Safari aux portes de la ville",
+   "duree": "Demi-journée",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Parc+national+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+national+de+Nairobi+Nairobi",
+   "id": "a1"
+  },
+  {
+   "nom": "Orphelinat d'éléphants Sheldrick",
+   "categorie": "Nature & Aventure",
+   "description": "Sanctuaire d'éléphanteaux orphelins",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Orphelinat+d%27%C3%A9l%C3%A9phants+Sheldrick+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Orphelinat+d%27%C3%A9l%C3%A9phants+Sheldrick+Nairobi",
+   "id": "a2"
+  },
+  {
+   "nom": "Giraffe Centre",
+   "categorie": "Nature & Aventure",
+   "description": "Rencontre avec les girafes de Rothschild",
+   "duree": "1-2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Giraffe+Centre+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Giraffe+Centre+Nairobi",
+   "id": "a3"
+  },
+  {
+   "nom": "Mosquée Jamia",
+   "categorie": "Religieux & Spirituel",
+   "description": "Principale mosquée du centre de Nairobi",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Jamia+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Jamia+Nairobi",
+   "id": "a4"
+  },
+  {
+   "nom": "Marché Maasai",
+   "categorie": "Shopping & Souks",
+   "description": "Artisanat et perles maasaï",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Maasai+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+Maasai+Nairobi",
+   "id": "a5"
+  },
+  {
+   "nom": "Musée national du Kenya",
+   "categorie": "Art & Musées",
+   "description": "Histoire naturelle et culturelle du pays",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+national+du+Kenya+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+national+du+Kenya+Nairobi",
+   "id": "a6"
+  },
+  {
+   "nom": "Karura Forest",
+   "categorie": "Nature & Aventure",
+   "description": "Forêt urbaine, cascades et pistes",
+   "duree": "Demi-journée",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Karura+Forest+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Karura+Forest+Nairobi",
+   "id": "a7"
+  },
+  {
+   "nom": "Bomas of Kenya",
+   "categorie": "Histoire & Culture",
+   "description": "Spectacle des cultures et villages kényans",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Bomas+of+Kenya+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Bomas+of+Kenya+Nairobi",
+   "id": "a8"
+  },
+  {
+   "nom": "Vieille ville de Nairobi",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Nairobi+Nairobi",
+   "id": "a9"
+  },
+  {
+   "nom": "Grand souk de Nairobi",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Nairobi+Nairobi",
+   "id": "a10"
+  },
+  {
+   "nom": "Quartier historique de Nairobi",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Nairobi+Nairobi",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Nairobi",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Nairobi+Nairobi",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Nairobi",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Nairobi+Nairobi",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Nairobi",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Nairobi+Nairobi",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Nairobi",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Nairobi+Nairobi",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Nairobi",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Nairobi+Nairobi",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Nairobi",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Nairobi+Nairobi",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Nairobi",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Nairobi+Nairobi",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Nairobi",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Nairobi+Nairobi",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Nairobi",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Nairobi+Nairobi",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Nairobi+Nairobi",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Jamia",
+   "description": "Mosquée principale du centre de Nairobi, dômes argentés",
+   "adresse": "Banda Street",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Jamia+Nairobi",
+   "capacite": 5283,
+   "anneeConstruction": 1993,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": -1.2864,
     "lng": 36.8172
+   }
   },
-  "image_alt": "Vue de Nairobi, Kenya",
-  "statistiques": {
-    "mosquees": 600,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 10
+  {
+   "nom": "Mosquée d'Eastleigh",
+   "description": "Grande mosquée du quartier somali",
+   "adresse": "Eastleigh",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+d%27Eastleigh+Nairobi",
+   "capacite": 9541,
+   "anneeConstruction": 1851,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -1.2864,
+    "lng": 36.8172
+   }
   },
-  "infos_pratiques": {
-    "langue": "Swahili, Anglais",
-    "monnaie": "Shilling kényan (KES)",
-    "meilleure_periode": "Juin à Octobre, Janvier-Février",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Nairobi",
+   "description": "Mosquée fréquentée de Nairobi, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Nairobi",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Nairobi+Nairobi",
+   "capacite": 6291,
+   "anneeConstruction": 1911,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -1.2864,
+    "lng": 36.8172
+   }
   },
-  "infoPratique": {
-    "visa": "e-Visa / ETA kényan obligatoire",
-    "vaccins": "Fièvre jaune recommandée, paludisme selon zones",
-    "transport": "VTC Uber/Bolt, matatu, taxi",
-    "priseElectrique": "Type G — 240V",
-    "decalageHoraire": "+1h à +2h par rapport à Paris"
+  {
+   "nom": "Grande Mosquée de Nairobi",
+   "description": "Mosquée fréquentée de Nairobi, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Nairobi",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Nairobi+Nairobi",
+   "capacite": 5023,
+   "anneeConstruction": 2003,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -1.2864,
+    "lng": 36.8172
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Al-Yusra Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Eastleigh",
-      "description": "Cuisine somalie et swahilie à Eastleigh",
-      "mapsUrl": "https://maps.google.com/?q=Al-Yusra+Restaurant+Nairobi",
-      "priceRange": "€",
-      "specialite": "Cuisine somalie",
-      "id": "r1"
-    },
-    {
-      "nom": "Swahili Plate",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Kilimani",
-      "description": "Cuisine de la côte swahilie",
-      "mapsUrl": "https://maps.google.com/?q=Swahili+Plate+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Pilau et biryani",
-      "id": "r2"
-    },
-    {
-      "nom": "Mediterraneo Halal",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Westlands",
-      "description": "Italien halal apprécié",
-      "mapsUrl": "https://maps.google.com/?q=Mediterraneo+Halal+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Cuisine italienne",
-      "id": "r3"
-    },
-    {
-      "nom": "Habesha",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Hurlingham",
-      "description": "Cuisine éthiopienne halal",
-      "mapsUrl": "https://maps.google.com/?q=Habesha+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Cuisine éthiopienne",
-      "id": "r4"
-    },
-    {
-      "nom": "Nyama Mama",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Westlands",
-      "description": "Cuisine kényane moderne halal",
-      "mapsUrl": "https://maps.google.com/?q=Nyama+Mama+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Nyama choma",
-      "id": "r5"
-    },
-    {
-      "nom": "Al Madina Nairobi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Nairobi",
-      "description": "Adresse halal appréciée des habitants de Nairobi.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Madina+Nairobi+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Plat du jour maison",
-      "id": "r6"
-    },
-    {
-      "nom": "Shawarma House Nairobi",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Nairobi",
-      "description": "Adresse halal appréciée des habitants de Nairobi.",
-      "mapsUrl": "https://maps.google.com/?q=Shawarma+House+Nairobi+Nairobi",
-      "priceRange": "€",
-      "specialite": "Shawarma poulet",
-      "id": "r7"
-    },
-    {
-      "nom": "Beit Beirut Nairobi",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Nairobi",
-      "description": "Adresse halal appréciée des habitants de Nairobi.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Nairobi+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais",
-      "id": "r8"
-    },
-    {
-      "nom": "Spice Route Nairobi",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Nairobi",
-      "description": "Adresse halal appréciée des habitants de Nairobi.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Route+Nairobi+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "id": "r9"
-    },
-    {
-      "nom": "Saffron Garden Nairobi",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Nairobi",
-      "description": "Adresse halal appréciée des habitants de Nairobi.",
-      "mapsUrl": "https://maps.google.com/?q=Saffron+Garden+Nairobi+Nairobi",
-      "priceRange": "€€€",
-      "specialite": "Menu dégustation halal",
-      "id": "r10"
-    },
-    {
-      "nom": "Green Bowl Nairobi",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Nairobi",
-      "description": "Adresse halal appréciée des habitants de Nairobi.",
-      "mapsUrl": "https://maps.google.com/?q=Green+Bowl+Nairobi+Nairobi",
-      "priceRange": "€",
-      "specialite": "Bowl méditerranéen",
-      "id": "r11"
-    },
-    {
-      "nom": "Sultan Café Nairobi",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Nairobi",
-      "description": "Adresse halal appréciée des habitants de Nairobi.",
-      "mapsUrl": "https://maps.google.com/?q=Sultan+Caf%C3%A9+Nairobi+Nairobi",
-      "priceRange": "€",
-      "specialite": "Café arabe et baklava",
-      "id": "r12"
-    },
-    {
-      "nom": "Ocean Pearl Nairobi",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Nairobi",
-      "description": "Adresse halal appréciée des habitants de Nairobi.",
-      "mapsUrl": "https://maps.google.com/?q=Ocean+Pearl+Nairobi+Nairobi",
-      "priceRange": "€€€",
-      "specialite": "Poisson grillé du jour",
-      "id": "r13"
-    },
-    {
-      "nom": "Bella Halal Nairobi",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Nairobi",
-      "description": "Adresse halal appréciée des habitants de Nairobi.",
-      "mapsUrl": "https://maps.google.com/?q=Bella+Halal+Nairobi+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Pizza halal au four à bois",
-      "id": "r14"
-    },
-    {
-      "nom": "Tokyo Halal Nairobi",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.6000000000000005,
-      "adresse": "Nairobi",
-      "description": "Adresse halal appréciée des habitants de Nairobi.",
-      "mapsUrl": "https://maps.google.com/?q=Tokyo+Halal+Nairobi+Nairobi",
-      "priceRange": "€€€",
-      "specialite": "Sushis certifiés halal",
-      "id": "r15"
-    },
-    {
-      "nom": "Chez Teranga",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Nairobi",
-      "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Nairobi",
-      "priceRange": "€",
-      "specialite": "Thiéboudienne",
-      "nombreAvis": 750,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Maison Baobab",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Nairobi",
-      "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Yassa poulet",
-      "nombreAvis": 2998,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Sahel Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Nairobi",
-      "description": "Adresse grillades & kebab appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Nairobi",
-      "priceRange": "€",
-      "specialite": "Dibi et brochettes",
-      "nombreAvis": 2067,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Beit Cham",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Nairobi",
-      "description": "Adresse libanais & levant appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1746,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Jollof House",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Nairobi",
-      "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Jollof+House+Nairobi",
-      "priceRange": "€",
-      "specialite": "Jollof rice",
-      "nombreAvis": 1280,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Spice Darbar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Nairobi",
-      "description": "Adresse indien & pakistani appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1158,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Café Teranga",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Nairobi",
-      "description": "Adresse pâtisserie & café appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Nairobi",
-      "priceRange": "€",
-      "specialite": "Café Touba",
-      "nombreAvis": 1196,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Chez Teranga Nairobi 8",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Nairobi",
-      "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Nairobi+8+Nairobi",
-      "priceRange": "€",
-      "specialite": "Thiéboudienne",
-      "nombreAvis": 1528,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Maison Baobab Nairobi 9",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Nairobi",
-      "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Nairobi+9+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Yassa poulet",
-      "nombreAvis": 439,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Sahel Grill Nairobi 10",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Nairobi",
-      "description": "Adresse grillades & kebab appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Nairobi+10+Nairobi",
-      "priceRange": "€",
-      "specialite": "Dibi et brochettes",
-      "nombreAvis": 379,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Beit Cham Nairobi 11",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Nairobi",
-      "description": "Adresse libanais & levant appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Nairobi+11+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1970,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Jollof House Nairobi 12",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Nairobi",
-      "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Jollof+House+Nairobi+12+Nairobi",
-      "priceRange": "€",
-      "specialite": "Jollof rice",
-      "nombreAvis": 2083,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Spice Darbar Nairobi 13",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Nairobi",
-      "description": "Adresse indien & pakistani appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Nairobi+13+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1473,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Café Teranga Nairobi 14",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Nairobi",
-      "description": "Adresse pâtisserie & café appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Teranga+Nairobi+14+Nairobi",
-      "priceRange": "€",
-      "specialite": "Café Touba",
-      "nombreAvis": 633,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Chez Teranga Nairobi 15",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Nairobi",
-      "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Teranga+Nairobi+15+Nairobi",
-      "priceRange": "€",
-      "specialite": "Thiéboudienne",
-      "nombreAvis": 307,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Maison Baobab Nairobi 16",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Nairobi",
-      "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Baobab+Nairobi+16+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Yassa poulet",
-      "nombreAvis": 1528,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Sahel Grill Nairobi 17",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Nairobi",
-      "description": "Adresse grillades & kebab appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Sahel+Grill+Nairobi+17+Nairobi",
-      "priceRange": "€",
-      "specialite": "Dibi et brochettes",
-      "nombreAvis": 399,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Beit Cham Nairobi 18",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Nairobi",
-      "description": "Adresse libanais & levant appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Cham+Nairobi+18+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Mezze",
-      "nombreAvis": 1982,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Jollof House Nairobi 19",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Nairobi",
-      "description": "Adresse traditionnel local appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Jollof+House+Nairobi+19+Nairobi",
-      "priceRange": "€",
-      "specialite": "Jollof rice",
-      "nombreAvis": 1205,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Spice Darbar Nairobi 20",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Nairobi",
-      "description": "Adresse indien & pakistani appréciée à Nairobi, ambiance conviviale et cuisine halal.",
-      "mapsUrl": "https://maps.google.com/?q=Spice+Darbar+Nairobi+20+Nairobi",
-      "priceRange": "€€",
-      "specialite": "Biryani",
-      "nombreAvis": 1597,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r35"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Villa Rosa Kempinski",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Westlands",
-      "description": "Hôtel cinq étoiles raffiné",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Villa+Rosa+Kempinski+Nairobi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
-      "priceRange": "€€€€",
-      "id": "h1"
-    },
-    {
-      "nom": "Sarova Stanley",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "CBD",
-      "description": "Hôtel historique du centre-ville",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Sarova+Stanley+Nairobi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
-      "priceRange": "€€€",
-      "id": "h2"
-    },
-    {
-      "nom": "Eka Hotel Nairobi",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Mombasa Road",
-      "description": "Hôtel confortable sur Mombasa Road",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Eka+Hotel+Nairobi+Nairobi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
-      "priceRange": "€€",
-      "id": "h3"
-    },
-    {
-      "nom": "Grand Plaza Nairobi",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Nairobi",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Nairobi+Nairobi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
-      "priceRange": "€€€€",
-      "id": "h4"
-    },
-    {
-      "nom": "City Comfort Hotel Nairobi",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Nairobi",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Nairobi+Nairobi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
-      "priceRange": "€€€",
-      "id": "h5"
-    },
-    {
-      "nom": "Boutique Riad Nairobi",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Nairobi",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Nairobi+Nairobi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
-      "priceRange": "€€€",
-      "id": "h6"
-    },
-    {
-      "nom": "Grand Plaza Nairobi 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Nairobi",
-      "description": "Hébergement halal-friendly à Nairobi.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Nairobi+0+Nairobi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
-      "priceRange": "€€€€",
-      "nombreAvis": 708,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Nairobi",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Nairobi",
-      "description": "Hébergement halal-friendly à Nairobi.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Nairobi+Nairobi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
-      "priceRange": "€€€",
-      "nombreAvis": 1158,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Nairobi",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Nairobi",
-      "description": "Hébergement halal-friendly à Nairobi.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Nairobi+Nairobi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
-      "priceRange": "€€€",
-      "nombreAvis": 1810,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Nairobi",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Nairobi",
-      "description": "Hébergement halal-friendly à Nairobi.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Nairobi+Nairobi",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Nairobi&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=nairobi",
-      "priceRange": "€€",
-      "nombreAvis": 549,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Parc national de Nairobi",
-      "categorie": "Nature & Aventure",
-      "description": "Safari aux portes de la ville",
-      "duree": "Demi-journée",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Parc+national+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+national+de+Nairobi+Nairobi",
-      "id": "a1"
-    },
-    {
-      "nom": "Orphelinat d'éléphants Sheldrick",
-      "categorie": "Nature & Aventure",
-      "description": "Sanctuaire d'éléphanteaux orphelins",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Orphelinat+d%27%C3%A9l%C3%A9phants+Sheldrick+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Orphelinat+d%27%C3%A9l%C3%A9phants+Sheldrick+Nairobi",
-      "id": "a2"
-    },
-    {
-      "nom": "Giraffe Centre",
-      "categorie": "Nature & Aventure",
-      "description": "Rencontre avec les girafes de Rothschild",
-      "duree": "1-2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Giraffe+Centre+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Giraffe+Centre+Nairobi",
-      "id": "a3"
-    },
-    {
-      "nom": "Mosquée Jamia",
-      "categorie": "Religieux & Spirituel",
-      "description": "Principale mosquée du centre de Nairobi",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Jamia+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Jamia+Nairobi",
-      "id": "a4"
-    },
-    {
-      "nom": "Marché Maasai",
-      "categorie": "Shopping & Souks",
-      "description": "Artisanat et perles maasaï",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=March%C3%A9+Maasai+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=March%C3%A9+Maasai+Nairobi",
-      "id": "a5"
-    },
-    {
-      "nom": "Musée national du Kenya",
-      "categorie": "Art & Musées",
-      "description": "Histoire naturelle et culturelle du pays",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+national+du+Kenya+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+national+du+Kenya+Nairobi",
-      "id": "a6"
-    },
-    {
-      "nom": "Karura Forest",
-      "categorie": "Nature & Aventure",
-      "description": "Forêt urbaine, cascades et pistes",
-      "duree": "Demi-journée",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Karura+Forest+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Karura+Forest+Nairobi",
-      "id": "a7"
-    },
-    {
-      "nom": "Bomas of Kenya",
-      "categorie": "Histoire & Culture",
-      "description": "Spectacle des cultures et villages kényans",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Bomas+of+Kenya+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Bomas+of+Kenya+Nairobi",
-      "id": "a8"
-    },
-    {
-      "nom": "Vieille ville de Nairobi",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Nairobi+Nairobi",
-      "id": "a9"
-    },
-    {
-      "nom": "Grand souk de Nairobi",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Nairobi+Nairobi",
-      "id": "a10"
-    },
-    {
-      "nom": "Quartier historique de Nairobi",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Nairobi+Nairobi",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Nairobi",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Nairobi+Nairobi",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Nairobi",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Nairobi+Nairobi",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Nairobi",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Nairobi+Nairobi",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Nairobi",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Nairobi+Nairobi",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Nairobi",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Nairobi+Nairobi",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Nairobi",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Nairobi+Nairobi",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Nairobi",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Nairobi+Nairobi",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Nairobi",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Nairobi+Nairobi",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Nairobi",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Nairobi+Nairobi",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Nairobi+Nairobi",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Jamia",
-      "description": "Mosquée principale du centre de Nairobi, dômes argentés",
-      "adresse": "Banda Street",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Jamia+Nairobi",
-      "capacite": 5283,
-      "anneeConstruction": 1993,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -1.2864,
-        "lng": 36.8172
-      }
-    },
-    {
-      "nom": "Mosquée d'Eastleigh",
-      "description": "Grande mosquée du quartier somali",
-      "adresse": "Eastleigh",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+d%27Eastleigh+Nairobi",
-      "capacite": 9541,
-      "anneeConstruction": 1851,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -1.2864,
-        "lng": 36.8172
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Nairobi",
-      "description": "Mosquée fréquentée de Nairobi, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Nairobi",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Nairobi+Nairobi",
-      "capacite": 6291,
-      "anneeConstruction": 1911,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -1.2864,
-        "lng": 36.8172
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Nairobi",
-      "description": "Mosquée fréquentée de Nairobi, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Nairobi",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Nairobi+Nairobi",
-      "capacite": 5023,
-      "anneeConstruction": 2003,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -1.2864,
-        "lng": 36.8172
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Nairobi",
-      "description": "Mosquée fréquentée de Nairobi, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Nairobi",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Nairobi+Nairobi",
-      "capacite": 3003,
-      "anneeConstruction": 2003,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -1.2864,
-        "lng": 36.8172
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Nairobi",
-      "description": "Mosquée fréquentée de Nairobi, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Nairobi",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Nairobi+Nairobi",
-      "capacite": 4850,
-      "anneeConstruction": 2010,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -1.2864,
-        "lng": 36.8172
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Nairobi",
-      "description": "Mosquée fréquentée de Nairobi, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Nairobi",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Nairobi+Nairobi",
-      "capacite": 1135,
-      "anneeConstruction": 1995,
-      "styleArchitectural": "Africain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": -1.2864,
-        "lng": 36.8172
-      }
-    }
-  ],
-  "tags": [
-    "safari",
-    "nature",
-    "afrique-de-lest",
-    "eastleigh",
-    "famille",
-    "swahili"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Chez Teranga",
-      "Maison Baobab Nairobi 9",
-      "Sahel Grill Nairobi 17",
-      "Maison Baobab",
-      "Sahel Grill Nairobi 10"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Al-Yusra Restaurant",
-      "Swahili Plate",
-      "Mediterraneo Halal",
-      "Habesha",
-      "Nyama Mama"
-    ],
-    "incontournables": [
-      "Maison Baobab",
-      "Jollof House Nairobi 12",
-      "Sahel Grill",
-      "Beit Cham Nairobi 18",
-      "Beit Cham Nairobi 11"
-    ],
-    "pepitesCachees": [
-      "Al-Yusra Restaurant",
-      "Swahili Plate",
-      "Mediterraneo Halal"
-    ],
-    "idealFamille": [
-      "Chez Teranga",
-      "Maison Baobab",
-      "Sahel Grill",
-      "Beit Cham",
-      "Jollof House"
-    ],
-    "gastronomique": [
-      "Saffron Garden Nairobi"
-    ],
-    "ouvertNuit": [
-      "Chez Teranga",
-      "Sahel Grill",
-      "Beit Cham"
-    ],
-    "vueExceptionnelle": [
-      "Chez Teranga",
-      "Maison Baobab Nairobi 9",
-      "Sahel Grill Nairobi 17"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Nairobi",
+   "description": "Mosquée fréquentée de Nairobi, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Nairobi",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Nairobi+Nairobi",
+   "capacite": 3003,
+   "anneeConstruction": 2003,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -1.2864,
+    "lng": 36.8172
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Nairobi",
+   "description": "Mosquée fréquentée de Nairobi, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Nairobi",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Nairobi+Nairobi",
+   "capacite": 4850,
+   "anneeConstruction": 2010,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -1.2864,
+    "lng": 36.8172
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Nairobi",
+   "description": "Mosquée fréquentée de Nairobi, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Nairobi",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Nairobi+Nairobi",
+   "capacite": 1135,
+   "anneeConstruction": 1995,
+   "styleArchitectural": "Africain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": -1.2864,
+    "lng": 36.8172
+   }
   }
+ ],
+ "tags": [
+  "safari",
+  "nature",
+  "afrique-de-lest",
+  "eastleigh",
+  "famille",
+  "swahili"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Chez Teranga",
+   "Maison Baobab Nairobi 9",
+   "Sahel Grill Nairobi 17",
+   "Maison Baobab",
+   "Sahel Grill Nairobi 10"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Al-Yusra Restaurant",
+   "Swahili Plate",
+   "Mediterraneo Halal",
+   "Habesha",
+   "Nyama Mama"
+  ],
+  "incontournables": [
+   "Maison Baobab",
+   "Jollof House Nairobi 12",
+   "Sahel Grill",
+   "Beit Cham Nairobi 18",
+   "Beit Cham Nairobi 11"
+  ],
+  "pepitesCachees": [
+   "Al-Yusra Restaurant",
+   "Swahili Plate",
+   "Mediterraneo Halal"
+  ],
+  "idealFamille": [
+   "Chez Teranga",
+   "Maison Baobab",
+   "Sahel Grill",
+   "Beit Cham",
+   "Jollof House"
+  ],
+  "gastronomique": [
+   "Saffron Garden Nairobi"
+  ],
+  "ouvertNuit": [
+   "Chez Teranga",
+   "Sahel Grill",
+   "Beit Cham"
+  ],
+  "vueExceptionnelle": [
+   "Chez Teranga",
+   "Maison Baobab Nairobi 9",
+   "Sahel Grill Nairobi 17"
+  ]
+ }
 }

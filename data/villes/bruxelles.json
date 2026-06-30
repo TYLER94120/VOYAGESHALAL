@@ -1,1406 +1,1417 @@
 {
-  "nom": "Bruxelles",
-  "pays": "Belgique",
-  "slug": "bruxelles",
-  "image": "https://images.unsplash.com/photo-1559113202-c916b8e44373?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1559113202-c916b8e44373?w=1400&q=85",
-  "description": "Bruxelles, capitale de l'Europe, possède une forte communauté maghrébine. Molenbeek, Grand-Place et cuisine halal côtoient gaufres et chocolat dans une ville cosmopolite.",
-  "descriptionLongue": "Capitale de la Belgique et de l'Union européenne, Bruxelles est profondément cosmopolite avec une importante communauté musulmane d'origine marocaine et turque. Les quartiers de Molenbeek et de la chaussée de Gand regorgent de restaurants halal, de boucheries et de pâtisseries orientales. Entre la Grand-Place classée UNESCO, l'Atomium et la Grande Mosquée du Cinquantenaire, la ville mêle patrimoine, gastronomie et diversité.",
-  "halalScore": 7.5,
-  "score_halal": 3.8,
+ "nom": "Bruxelles",
+ "pays": "Belgique",
+ "slug": "bruxelles",
+ "image": "https://images.unsplash.com/photo-1559113202-c916b8e44373?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1559113202-c916b8e44373?w=1400&q=85",
+ "description": "Bruxelles, capitale de l'Europe, possède une forte communauté maghrébine. Molenbeek, Grand-Place et cuisine halal côtoient gaufres et chocolat dans une ville cosmopolite.",
+ "descriptionLongue": "Capitale de la Belgique et de l'Union européenne, Bruxelles est profondément cosmopolite avec une importante communauté musulmane d'origine marocaine et turque. Les quartiers de Molenbeek et de la chaussée de Gand regorgent de restaurants halal, de boucheries et de pâtisseries orientales. Entre la Grand-Place classée UNESCO, l'Atomium et la Grande Mosquée du Cinquantenaire, la ville mêle patrimoine, gastronomie et diversité.",
+ "halalScore": 7.5,
+ "score_halal": 3.8,
+ "mosquees": 80,
+ "population": "1,2 million",
+ "langue": "Français, Néerlandais",
+ "monnaie": "Euro (EUR)",
+ "fuseau": "UTC+1",
+ "meilleureEpoque": "Mai à Septembre",
+ "prixMoyenNuit": "100€",
+ "continent": "Europe",
+ "codeISO": "BE",
+ "pays_slug": "belgique",
+ "region": "Europe de l'Ouest",
+ "meta_title": "Voyage Halal à Bruxelles — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Bruxelles — Halal Trust Score 7.8/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Bruxelles — Halal Trust Score 7.8/10.",
+ "coordonnees": {
+  "lat": 50.8503,
+  "lng": 4.3517
+ },
+ "image_alt": "Vue de Bruxelles, Belgique",
+ "statistiques": {
   "mosquees": 80,
-  "population": "1,2 million",
+  "restaurants_halal": 750,
+  "habitants_musulmans_pct": 25,
+  "hotels": 8
+ },
+ "infos_pratiques": {
   "langue": "Français, Néerlandais",
   "monnaie": "Euro (EUR)",
-  "fuseau": "UTC+1",
-  "meilleureEpoque": "Mai à Septembre",
-  "prixMoyenNuit": "100€",
-  "continent": "Europe",
-  "codeISO": "BE",
-  "pays_slug": "belgique",
-  "region": "Europe de l'Ouest",
-  "meta_title": "Voyage Halal à Bruxelles — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Bruxelles — Halal Trust Score 7.8/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Bruxelles — Halal Trust Score 7.8/10.",
-  "coordonnees": {
+  "meilleure_periode": "Mai à Septembre",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Espace Schengen — pas de visa pour les Français",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Métro, tram, bus STIB, train",
+  "priseElectrique": "Type C/E — 230V",
+  "decalageHoraire": "Même heure que Paris"
+ },
+ "restaurants": [
+  {
+   "nom": "À l'Ombre de la Ville",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Bruxelles",
+   "description": "Belge halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=%C3%80+l%27Ombre+de+la+Ville+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Belge halal",
+   "nombreAvis": 1431,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Sea Grill Brussels",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Bruxelles",
+   "description": "Fruits de mer gastronomique à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Sea+Grill+Brussels+Bruxelles",
+   "priceRange": "€€€€",
+   "specialite": "Fruits de mer gastronomique",
+   "nombreAvis": 2218,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Comme Chez Soi",
+   "type": "Belge",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.9,
+   "adresse": "Bruxelles",
+   "description": "Français 3 étoiles, options halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Comme+Chez+Soi+Bruxelles",
+   "priceRange": "€€€€",
+   "specialite": "Français 3 étoiles",
+   "nombreAvis": 1071,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "familial"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "La Maison du Cygne",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Bruxelles",
+   "description": "Gastronomique belge à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=La+Maison+du+Cygne+Bruxelles",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique belge",
+   "nombreAvis": 1429,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "familial"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Brasserie de la Roue d'Or",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Bruxelles",
+   "description": "Moules-frites halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Brasserie+de+la+Roue+d%27Or+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Moules-frites halal",
+   "nombreAvis": 1243,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Le Pain et le Vin",
+   "type": "Belge",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Bruxelles",
+   "description": "Belge, options halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Pain+et+le+Vin+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Belge",
+   "nombreAvis": 2260,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Belga Queen",
+   "type": "Belge",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Bruxelles",
+   "description": "Belge moderne, sans alcool à Bruxelles. Options halal disponibles.",
+   "mapsUrl": "https://maps.google.com/?q=Belga+Queen+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Belge moderne",
+   "nombreAvis": 627,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "L'Idiot du Village",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Bruxelles",
+   "description": "Bistro belge à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=L%27Idiot+du+Village+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Bistro belge",
+   "nombreAvis": 2125,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Le Chalet de la Forêt",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Bruxelles",
+   "description": "Gastronomique à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Chalet+de+la+For%C3%AAt+Bruxelles",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique",
+   "nombreAvis": 1566,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Taverne du Passage",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Bruxelles",
+   "description": "Brasserie halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Taverne+du+Passage+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Brasserie halal",
+   "nombreAvis": 976,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Restaurant Al-Boustane",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Bruxelles",
+   "description": "Levant premium à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Al-Boustane+Bruxelles",
+   "priceRange": "€€€€",
+   "specialite": "Levant premium",
+   "nombreAvis": 2067,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Chez Marianne Bruxelles",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Bruxelles",
+   "description": "Libanais populaire à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Marianne+Bruxelles+Bruxelles",
+   "priceRange": "€",
+   "specialite": "Libanais populaire",
+   "nombreAvis": 489,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Al Basha Bruxelles",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Bruxelles",
+   "description": "Libanais gastronomique à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Basha+Bruxelles+Bruxelles",
+   "priceRange": "€€€€",
+   "specialite": "Libanais gastronomique",
+   "nombreAvis": 2131,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Istanbul Restaurant Bruxelles",
+   "type": "Turc",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Bruxelles",
+   "description": "Turc à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Istanbul+Restaurant+Bruxelles+Bruxelles",
+   "priceRange": "€€€",
+   "specialite": "Turc",
+   "nombreAvis": 1146,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "CZN Burak Bruxelles",
+   "type": "Turc",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Bruxelles",
+   "description": "Turc viral à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=CZN+Burak+Bruxelles+Bruxelles",
+   "priceRange": "€€€",
+   "specialite": "Turc viral",
+   "nombreAvis": 1768,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Maison Antoine",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Bruxelles",
+   "description": "Frites belges, pas de porc à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Maison+Antoine+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Frites belges",
+   "nombreAvis": 2982,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Friterie Tabora",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Bruxelles",
+   "description": "Frites belges tradition à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Friterie+Tabora+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Frites belges tradition",
+   "nombreAvis": 1608,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Pharmacie Anglaise",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Bruxelles",
+   "description": "Burger halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Pharmacie+Anglaise+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Burger halal",
+   "nombreAvis": 1379,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Nüetnigenough",
+   "type": "Belge",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Bruxelles",
+   "description": "Belge, options halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=N%C3%BCetnigenough+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Belge",
+   "nombreAvis": 484,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Café des Spores",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.2,
+   "adresse": "Bruxelles",
+   "description": "Champignons, végé halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+des+Spores+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Champignons",
+   "nombreAvis": 1227,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "veggie"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Comptoir des Galeries",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Bruxelles",
+   "description": "Moderne halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Comptoir+des+Galeries+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Moderne halal",
+   "nombreAvis": 884,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Amen Restaurant",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.8,
+   "adresse": "Bruxelles",
+   "description": "Méditerranéen halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Amen+Restaurant+Bruxelles",
+   "priceRange": "€€€",
+   "specialite": "Méditerranéen halal",
+   "nombreAvis": 1163,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Ma Maison Bruxelles",
+   "type": "Marocain & Maghreb",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Bruxelles",
+   "description": "Marocain populaire à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Ma+Maison+Bruxelles+Bruxelles",
+   "priceRange": "€",
+   "specialite": "Marocain populaire",
+   "nombreAvis": 1470,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Tangerine Brussels",
+   "type": "Marocain & Maghreb",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Bruxelles",
+   "description": "Marocain gastronomique à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Tangerine+Brussels+Bruxelles",
+   "priceRange": "€€€€",
+   "specialite": "Marocain gastronomique",
+   "nombreAvis": 98,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Marrakech Express Bruxelles",
+   "type": "Marocain & Maghreb",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Bruxelles",
+   "description": "Marocain rapide à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Marrakech+Express+Bruxelles+Bruxelles",
+   "priceRange": "€",
+   "specialite": "Marocain rapide",
+   "nombreAvis": 391,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Restaurant Bombay Bruxelles",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Bruxelles",
+   "description": "Indien à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Bombay+Bruxelles+Bruxelles",
+   "priceRange": "€€€",
+   "specialite": "Indien",
+   "nombreAvis": 1383,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Spicy Kitchen Bruxelles",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Bruxelles",
+   "description": "Indien halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Spicy+Kitchen+Bruxelles+Bruxelles",
+   "priceRange": "€€€",
+   "specialite": "Indien halal",
+   "nombreAvis": 996,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Namur Station Kebab",
+   "type": "Turc",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Bruxelles",
+   "description": "Kebab populaire à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Namur+Station+Kebab+Bruxelles",
+   "priceRange": "€",
+   "specialite": "Kebab populaire",
+   "nombreAvis": 2438,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Le Chalet Robinson",
+   "type": "Belge",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.4,
+   "adresse": "Bruxelles",
+   "description": "Nature, options halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Chalet+Robinson+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Nature",
+   "nombreAvis": 499,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Brasserie du Lombard",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Bruxelles",
+   "description": "Belge classique à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Brasserie+du+Lombard+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Belge classique",
+   "nombreAvis": 3662,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Moeder Lambic",
+   "type": "Belge",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.6,
+   "adresse": "Bruxelles",
+   "description": "Sans alcool à Bruxelles. Options halal disponibles.",
+   "mapsUrl": "https://maps.google.com/?q=Moeder+Lambic+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Sans alcool",
+   "nombreAvis": 2004,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "Café de l'Hôtel de Ville",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.5,
+   "adresse": "Bruxelles",
+   "description": "Classique à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+de+l%27H%C3%B4tel+de+Ville+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Classique",
+   "nombreAvis": 102,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Resto du Parlement",
+   "type": "Belge",
+   "certificationHalal": false,
+   "halalFriendly": true,
+   "score": 4.7,
+   "adresse": "Bruxelles",
+   "description": "Officiel, options halal à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Resto+du+Parlement+Bruxelles",
+   "priceRange": "€€",
+   "specialite": "Officiel",
+   "nombreAvis": 3318,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Au Vieux Saint-Martin",
+   "type": "Belge",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.3,
+   "adresse": "Bruxelles",
+   "description": "Belge populaire à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=Au+Vieux+Saint-Martin+Bruxelles",
+   "priceRange": "€",
+   "specialite": "Belge populaire",
+   "nombreAvis": 319,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "La Bouche d'Or",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "halalFriendly": true,
+   "score": 4.1,
+   "adresse": "Bruxelles",
+   "description": "Halal gastronomique à Bruxelles.",
+   "mapsUrl": "https://maps.google.com/?q=La+Bouche+d%27Or+Bruxelles",
+   "priceRange": "€€€€",
+   "specialite": "Halal gastronomique",
+   "nombreAvis": 1184,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r35"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Hotel Amigo (Rocco Forte)",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Centre",
+   "description": "Palace près de la Grand-Place",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hotel+Amigo+%28Rocco+Forte%29+Bruxelles",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "nombreAvis": 978,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 50.846177,
+   "lng": 4.3513683
+  },
+  {
+   "nom": "The Hoxton Brussels",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Centre",
+   "description": "Hôtel design dans un immeuble Art déco",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=The+Hoxton+Brussels+Bruxelles",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
+   "priceRange": "€€€",
+   "id": "h2",
+   "nombreAvis": 2429,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 50.8557187,
+   "lng": 4.3632631
+  },
+  {
+   "nom": "Motel One Brussels",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Centre",
+   "description": "Hôtel design abordable et central",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Motel+One+Brussels+Bruxelles",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
+   "priceRange": "€€",
+   "id": "h3",
+   "nombreAvis": 1060,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 50.8486892,
+   "lng": 4.3631176
+  },
+  {
+   "nom": "Grand Plaza Bruxelles",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Bruxelles",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bruxelles+Bruxelles",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
+   "priceRange": "€€€€",
+   "id": "h4",
+   "nombreAvis": 1704,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 50.8467291,
+   "lng": 4.3524081
+  },
+  {
+   "nom": "City Comfort Hotel Bruxelles",
+   "categorie": "Standard",
+   "score": 4.3,
+   "adresse": "Bruxelles",
+   "description": "Confortable et bien situé, petit-déjeuner halal.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Bruxelles+Bruxelles",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
+   "priceRange": "€€€",
+   "id": "h5",
+   "nombreAvis": 1383,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Boutique Riad Bruxelles",
+   "categorie": "Riad & Boutique",
+   "score": 4.4,
+   "adresse": "Bruxelles",
+   "description": "Maison d'hôtes intime sans alcool.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Bruxelles+Bruxelles",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
+   "priceRange": "€€€",
+   "id": "h6",
+   "nombreAvis": 420,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Bruxelles 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Bruxelles",
+   "description": "Hébergement halal-friendly à Bruxelles.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bruxelles+0+Bruxelles",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
+   "priceRange": "€€€€",
+   "nombreAvis": 1597,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 50.8467139,
+   "lng": 4.3525151
+  },
+  {
+   "nom": "City Comfort Bruxelles",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Bruxelles",
+   "description": "Hébergement halal-friendly à Bruxelles.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Bruxelles+Bruxelles",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
+   "priceRange": "€€€",
+   "nombreAvis": 790,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Grand-Place",
+   "categorie": "Histoire & Culture",
+   "description": "Place baroque classée UNESCO, l'une des plus belles d'Europe",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand-Place+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand-Place+Bruxelles",
+   "id": "a1",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Atomium",
+   "categorie": "Histoire & Culture",
+   "description": "Monument iconique de l'Expo 58",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Atomium+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atomium+Bruxelles",
+   "id": "a2",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grande Mosquée du Cinquantenaire",
+   "categorie": "Religieux & Spirituel",
+   "description": "Principale mosquée de Bruxelles dans le parc",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+du+Cinquantenaire+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+du+Cinquantenaire+Bruxelles",
+   "id": "a3",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Manneken-Pis & vieille ville",
+   "categorie": "Histoire & Culture",
+   "description": "Ruelles, galeries Saint-Hubert et statue célèbre",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Manneken-Pis+%26+vieille+ville+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Manneken-Pis+%26+vieille+ville+Bruxelles",
+   "id": "a4",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée Magritte",
+   "categorie": "Art & Musées",
+   "description": "Œuvres du maître surréaliste belge",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+Magritte+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+Magritte+Bruxelles",
+   "id": "a5",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier de Matonge & Saint-Josse",
+   "categorie": "Histoire & Culture",
+   "description": "Quartiers cosmopolites et commerces halal",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+de+Matonge+%26+Saint-Josse+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Matonge+%26+Saint-Josse+Bruxelles",
+   "id": "a6",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Parc du Cinquantenaire",
+   "categorie": "Nature & Aventure",
+   "description": "Arc de triomphe et musées dans un grand parc",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+du+Cinquantenaire+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+du+Cinquantenaire+Bruxelles",
+   "id": "a7",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Atelier de gaufres & chocolat",
+   "categorie": "Gastronomie",
+   "description": "Dégustation des spécialités belges",
+   "duree": "1h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+de+gaufres+%26+chocolat+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+de+gaufres+%26+chocolat+Bruxelles",
+   "id": "a8",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Bruxelles",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Bruxelles+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Bruxelles+Bruxelles",
+   "id": "a9",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Bruxelles",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Bruxelles+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Bruxelles+Bruxelles",
+   "id": "a10",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Bruxelles",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bruxelles+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bruxelles+Bruxelles",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Bruxelles",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bruxelles+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bruxelles+Bruxelles",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Bruxelles",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Bruxelles+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Bruxelles+Bruxelles",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Bruxelles",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Bruxelles+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Bruxelles+Bruxelles",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Bruxelles",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Bruxelles+Bruxelles",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Bruxelles+Bruxelles",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Grande Mosquée de Bruxelles",
+   "description": "Mosquée du Cinquantenaire, siège historique du culte musulman",
+   "adresse": "Parc du Cinquantenaire",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Bruxelles+Bruxelles",
+   "capacite": 1551,
+   "anneeConstruction": 1951,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 50.8503,
     "lng": 4.3517
+   }
   },
-  "image_alt": "Vue de Bruxelles, Belgique",
-  "statistiques": {
-    "mosquees": 80,
-    "restaurants_halal": 750,
-    "habitants_musulmans_pct": 25
+  {
+   "nom": "Mosquée Attadamoun",
+   "description": "Importante mosquée de Molenbeek",
+   "adresse": "Molenbeek",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Attadamoun+Bruxelles",
+   "capacite": 2326,
+   "anneeConstruction": 1986,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 50.8503,
+    "lng": 4.3517
+   }
   },
-  "infos_pratiques": {
-    "langue": "Français, Néerlandais",
-    "monnaie": "Euro (EUR)",
-    "meilleure_periode": "Mai à Septembre",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Bruxelles",
+   "description": "Mosquée fréquentée de Bruxelles, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bruxelles",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Bruxelles+Bruxelles",
+   "capacite": 3910,
+   "anneeConstruction": 1890,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 50.8503,
+    "lng": 4.3517
+   }
   },
-  "infoPratique": {
-    "visa": "Espace Schengen — pas de visa pour les Français",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Métro, tram, bus STIB, train",
-    "priseElectrique": "Type C/E — 230V",
-    "decalageHoraire": "Même heure que Paris"
+  {
+   "nom": "Mosquée Al-Noor de Bruxelles",
+   "description": "Mosquée fréquentée de Bruxelles, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bruxelles",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Bruxelles+Bruxelles",
+   "capacite": 2761,
+   "anneeConstruction": 1881,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 50.8503,
+    "lng": 4.3517
+   }
   },
-  "restaurants": [
-    {
-      "nom": "À l'Ombre de la Ville",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Bruxelles",
-      "description": "Belge halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=%C3%80+l%27Ombre+de+la+Ville+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Belge halal",
-      "nombreAvis": 1431,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Sea Grill Brussels",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Bruxelles",
-      "description": "Fruits de mer gastronomique à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Sea+Grill+Brussels+Bruxelles",
-      "priceRange": "€€€€",
-      "specialite": "Fruits de mer gastronomique",
-      "nombreAvis": 2218,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Comme Chez Soi",
-      "type": "Belge",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.9,
-      "adresse": "Bruxelles",
-      "description": "Français 3 étoiles, options halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Comme+Chez+Soi+Bruxelles",
-      "priceRange": "€€€€",
-      "specialite": "Français 3 étoiles",
-      "nombreAvis": 1071,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "familial"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "La Maison du Cygne",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Bruxelles",
-      "description": "Gastronomique belge à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=La+Maison+du+Cygne+Bruxelles",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique belge",
-      "nombreAvis": 1429,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "familial"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Brasserie de la Roue d'Or",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Bruxelles",
-      "description": "Moules-frites halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Brasserie+de+la+Roue+d%27Or+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Moules-frites halal",
-      "nombreAvis": 1243,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Le Pain et le Vin",
-      "type": "Belge",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Bruxelles",
-      "description": "Belge, options halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Pain+et+le+Vin+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Belge",
-      "nombreAvis": 2260,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Belga Queen",
-      "type": "Belge",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Bruxelles",
-      "description": "Belge moderne, sans alcool à Bruxelles. Options halal disponibles.",
-      "mapsUrl": "https://maps.google.com/?q=Belga+Queen+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Belge moderne",
-      "nombreAvis": 627,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "L'Idiot du Village",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Bruxelles",
-      "description": "Bistro belge à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=L%27Idiot+du+Village+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Bistro belge",
-      "nombreAvis": 2125,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Le Chalet de la Forêt",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Bruxelles",
-      "description": "Gastronomique à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Chalet+de+la+For%C3%AAt+Bruxelles",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 1566,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Taverne du Passage",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Bruxelles",
-      "description": "Brasserie halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Taverne+du+Passage+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Brasserie halal",
-      "nombreAvis": 976,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Restaurant Al-Boustane",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Bruxelles",
-      "description": "Levant premium à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Al-Boustane+Bruxelles",
-      "priceRange": "€€€€",
-      "specialite": "Levant premium",
-      "nombreAvis": 2067,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Chez Marianne Bruxelles",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Bruxelles",
-      "description": "Libanais populaire à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Marianne+Bruxelles+Bruxelles",
-      "priceRange": "€",
-      "specialite": "Libanais populaire",
-      "nombreAvis": 489,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Al Basha Bruxelles",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Bruxelles",
-      "description": "Libanais gastronomique à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Basha+Bruxelles+Bruxelles",
-      "priceRange": "€€€€",
-      "specialite": "Libanais gastronomique",
-      "nombreAvis": 2131,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Istanbul Restaurant Bruxelles",
-      "type": "Turc",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Bruxelles",
-      "description": "Turc à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Istanbul+Restaurant+Bruxelles+Bruxelles",
-      "priceRange": "€€€",
-      "specialite": "Turc",
-      "nombreAvis": 1146,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "CZN Burak Bruxelles",
-      "type": "Turc",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Bruxelles",
-      "description": "Turc viral à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=CZN+Burak+Bruxelles+Bruxelles",
-      "priceRange": "€€€",
-      "specialite": "Turc viral",
-      "nombreAvis": 1768,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Maison Antoine",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Bruxelles",
-      "description": "Frites belges, pas de porc à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Maison+Antoine+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Frites belges",
-      "nombreAvis": 2982,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Friterie Tabora",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Bruxelles",
-      "description": "Frites belges tradition à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Friterie+Tabora+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Frites belges tradition",
-      "nombreAvis": 1608,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Pharmacie Anglaise",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Bruxelles",
-      "description": "Burger halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Pharmacie+Anglaise+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Burger halal",
-      "nombreAvis": 1379,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Nüetnigenough",
-      "type": "Belge",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Bruxelles",
-      "description": "Belge, options halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=N%C3%BCetnigenough+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Belge",
-      "nombreAvis": 484,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Café des Spores",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.2,
-      "adresse": "Bruxelles",
-      "description": "Champignons, végé halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+des+Spores+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Champignons",
-      "nombreAvis": 1227,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "veggie"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Comptoir des Galeries",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Bruxelles",
-      "description": "Moderne halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Comptoir+des+Galeries+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Moderne halal",
-      "nombreAvis": 884,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Amen Restaurant",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.8,
-      "adresse": "Bruxelles",
-      "description": "Méditerranéen halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Amen+Restaurant+Bruxelles",
-      "priceRange": "€€€",
-      "specialite": "Méditerranéen halal",
-      "nombreAvis": 1163,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Ma Maison Bruxelles",
-      "type": "Marocain & Maghreb",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Bruxelles",
-      "description": "Marocain populaire à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Ma+Maison+Bruxelles+Bruxelles",
-      "priceRange": "€",
-      "specialite": "Marocain populaire",
-      "nombreAvis": 1470,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Tangerine Brussels",
-      "type": "Marocain & Maghreb",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Bruxelles",
-      "description": "Marocain gastronomique à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Tangerine+Brussels+Bruxelles",
-      "priceRange": "€€€€",
-      "specialite": "Marocain gastronomique",
-      "nombreAvis": 98,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Marrakech Express Bruxelles",
-      "type": "Marocain & Maghreb",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Bruxelles",
-      "description": "Marocain rapide à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Marrakech+Express+Bruxelles+Bruxelles",
-      "priceRange": "€",
-      "specialite": "Marocain rapide",
-      "nombreAvis": 391,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Restaurant Bombay Bruxelles",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Bruxelles",
-      "description": "Indien à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Bombay+Bruxelles+Bruxelles",
-      "priceRange": "€€€",
-      "specialite": "Indien",
-      "nombreAvis": 1383,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Spicy Kitchen Bruxelles",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Bruxelles",
-      "description": "Indien halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Spicy+Kitchen+Bruxelles+Bruxelles",
-      "priceRange": "€€€",
-      "specialite": "Indien halal",
-      "nombreAvis": 996,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Namur Station Kebab",
-      "type": "Turc",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Bruxelles",
-      "description": "Kebab populaire à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Namur+Station+Kebab+Bruxelles",
-      "priceRange": "€",
-      "specialite": "Kebab populaire",
-      "nombreAvis": 2438,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Le Chalet Robinson",
-      "type": "Belge",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.4,
-      "adresse": "Bruxelles",
-      "description": "Nature, options halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Chalet+Robinson+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Nature",
-      "nombreAvis": 499,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Brasserie du Lombard",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Bruxelles",
-      "description": "Belge classique à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Brasserie+du+Lombard+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Belge classique",
-      "nombreAvis": 3662,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Moeder Lambic",
-      "type": "Belge",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.6,
-      "adresse": "Bruxelles",
-      "description": "Sans alcool à Bruxelles. Options halal disponibles.",
-      "mapsUrl": "https://maps.google.com/?q=Moeder+Lambic+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Sans alcool",
-      "nombreAvis": 2004,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "Café de l'Hôtel de Ville",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.5,
-      "adresse": "Bruxelles",
-      "description": "Classique à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+de+l%27H%C3%B4tel+de+Ville+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Classique",
-      "nombreAvis": 102,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Resto du Parlement",
-      "type": "Belge",
-      "certificationHalal": false,
-      "halalFriendly": true,
-      "score": 4.7,
-      "adresse": "Bruxelles",
-      "description": "Officiel, options halal à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Resto+du+Parlement+Bruxelles",
-      "priceRange": "€€",
-      "specialite": "Officiel",
-      "nombreAvis": 3318,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Au Vieux Saint-Martin",
-      "type": "Belge",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.3,
-      "adresse": "Bruxelles",
-      "description": "Belge populaire à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=Au+Vieux+Saint-Martin+Bruxelles",
-      "priceRange": "€",
-      "specialite": "Belge populaire",
-      "nombreAvis": 319,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "La Bouche d'Or",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "halalFriendly": true,
-      "score": 4.1,
-      "adresse": "Bruxelles",
-      "description": "Halal gastronomique à Bruxelles.",
-      "mapsUrl": "https://maps.google.com/?q=La+Bouche+d%27Or+Bruxelles",
-      "priceRange": "€€€€",
-      "specialite": "Halal gastronomique",
-      "nombreAvis": 1184,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r35"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Hotel Amigo (Rocco Forte)",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Centre",
-      "description": "Palace près de la Grand-Place",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hotel+Amigo+%28Rocco+Forte%29+Bruxelles",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
-      "priceRange": "€€€€",
-      "id": "h1",
-      "nombreAvis": 978,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "The Hoxton Brussels",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Centre",
-      "description": "Hôtel design dans un immeuble Art déco",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=The+Hoxton+Brussels+Bruxelles",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
-      "priceRange": "€€€",
-      "id": "h2",
-      "nombreAvis": 2429,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Motel One Brussels",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Centre",
-      "description": "Hôtel design abordable et central",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Motel+One+Brussels+Bruxelles",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
-      "priceRange": "€€",
-      "id": "h3",
-      "nombreAvis": 1060,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Bruxelles",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Bruxelles",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bruxelles+Bruxelles",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
-      "priceRange": "€€€€",
-      "id": "h4",
-      "nombreAvis": 1704,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "City Comfort Hotel Bruxelles",
-      "categorie": "Standard",
-      "score": 4.3,
-      "adresse": "Bruxelles",
-      "description": "Confortable et bien situé, petit-déjeuner halal.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Hotel+Bruxelles+Bruxelles",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
-      "priceRange": "€€€",
-      "id": "h5",
-      "nombreAvis": 1383,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Boutique Riad Bruxelles",
-      "categorie": "Riad & Boutique",
-      "score": 4.4,
-      "adresse": "Bruxelles",
-      "description": "Maison d'hôtes intime sans alcool.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Riad+Bruxelles+Bruxelles",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
-      "priceRange": "€€€",
-      "id": "h6",
-      "nombreAvis": 420,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Bruxelles 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Bruxelles",
-      "description": "Hébergement halal-friendly à Bruxelles.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Bruxelles+0+Bruxelles",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
-      "priceRange": "€€€€",
-      "nombreAvis": 1597,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Bruxelles",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Bruxelles",
-      "description": "Hébergement halal-friendly à Bruxelles.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Bruxelles+Bruxelles",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Bruxelles&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=bruxelles",
-      "priceRange": "€€€",
-      "nombreAvis": 790,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Grand-Place",
-      "categorie": "Histoire & Culture",
-      "description": "Place baroque classée UNESCO, l'une des plus belles d'Europe",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand-Place+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand-Place+Bruxelles",
-      "id": "a1",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Atomium",
-      "categorie": "Histoire & Culture",
-      "description": "Monument iconique de l'Expo 58",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Atomium+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atomium+Bruxelles",
-      "id": "a2",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grande Mosquée du Cinquantenaire",
-      "categorie": "Religieux & Spirituel",
-      "description": "Principale mosquée de Bruxelles dans le parc",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+du+Cinquantenaire+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grande+Mosqu%C3%A9e+du+Cinquantenaire+Bruxelles",
-      "id": "a3",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Manneken-Pis & vieille ville",
-      "categorie": "Histoire & Culture",
-      "description": "Ruelles, galeries Saint-Hubert et statue célèbre",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Manneken-Pis+%26+vieille+ville+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Manneken-Pis+%26+vieille+ville+Bruxelles",
-      "id": "a4",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée Magritte",
-      "categorie": "Art & Musées",
-      "description": "Œuvres du maître surréaliste belge",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+Magritte+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+Magritte+Bruxelles",
-      "id": "a5",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier de Matonge & Saint-Josse",
-      "categorie": "Histoire & Culture",
-      "description": "Quartiers cosmopolites et commerces halal",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+de+Matonge+%26+Saint-Josse+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Matonge+%26+Saint-Josse+Bruxelles",
-      "id": "a6",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Parc du Cinquantenaire",
-      "categorie": "Nature & Aventure",
-      "description": "Arc de triomphe et musées dans un grand parc",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+du+Cinquantenaire+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+du+Cinquantenaire+Bruxelles",
-      "id": "a7",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Atelier de gaufres & chocolat",
-      "categorie": "Gastronomie",
-      "description": "Dégustation des spécialités belges",
-      "duree": "1h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+de+gaufres+%26+chocolat+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+de+gaufres+%26+chocolat+Bruxelles",
-      "id": "a8",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Bruxelles",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Bruxelles+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Bruxelles+Bruxelles",
-      "id": "a9",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Bruxelles",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Bruxelles+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Bruxelles+Bruxelles",
-      "id": "a10",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Bruxelles",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Bruxelles+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Bruxelles+Bruxelles",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Bruxelles",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Bruxelles+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Bruxelles+Bruxelles",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Bruxelles",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Bruxelles+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Bruxelles+Bruxelles",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Bruxelles",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Bruxelles+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Bruxelles+Bruxelles",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Bruxelles",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Bruxelles+Bruxelles",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Bruxelles+Bruxelles",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Grande Mosquée de Bruxelles",
-      "description": "Mosquée du Cinquantenaire, siège historique du culte musulman",
-      "adresse": "Parc du Cinquantenaire",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Bruxelles+Bruxelles",
-      "capacite": 1551,
-      "anneeConstruction": 1951,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 50.8503,
-        "lng": 4.3517
-      }
-    },
-    {
-      "nom": "Mosquée Attadamoun",
-      "description": "Importante mosquée de Molenbeek",
-      "adresse": "Molenbeek",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Attadamoun+Bruxelles",
-      "capacite": 2326,
-      "anneeConstruction": 1986,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 50.8503,
-        "lng": 4.3517
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Bruxelles",
-      "description": "Mosquée fréquentée de Bruxelles, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bruxelles",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Bruxelles+Bruxelles",
-      "capacite": 3910,
-      "anneeConstruction": 1890,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 50.8503,
-        "lng": 4.3517
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Bruxelles",
-      "description": "Mosquée fréquentée de Bruxelles, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bruxelles",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Bruxelles+Bruxelles",
-      "capacite": 2761,
-      "anneeConstruction": 1881,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 50.8503,
-        "lng": 4.3517
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Bruxelles",
-      "description": "Mosquée fréquentée de Bruxelles, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Bruxelles",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Bruxelles+Bruxelles",
-      "capacite": 3079,
-      "anneeConstruction": 1919,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 50.8503,
-        "lng": 4.3517
-      }
-    }
-  ],
-  "tags": [
-    "capitale-europe",
-    "communaute-maghrebine",
-    "grand-place",
-    "gastronomie",
-    "cosmopolite",
-    "famille"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Comme Chez Soi",
-      "Le Chalet de la Forêt",
-      "Restaurant Al-Boustane",
-      "CZN Burak Bruxelles",
-      "Maison Antoine"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Brasserie de la Roue d'Or",
-      "Le Pain et le Vin",
-      "L'Idiot du Village",
-      "Maison Antoine",
-      "Friterie Tabora"
-    ],
-    "incontournables": [
-      "Brasserie du Lombard",
-      "Resto du Parlement",
-      "Maison Antoine",
-      "Namur Station Kebab",
-      "Le Pain et le Vin"
-    ],
-    "pepitesCachees": [
-      "Tangerine Brussels",
-      "Marrakech Express Bruxelles",
-      "Café de l'Hôtel de Ville"
-    ],
-    "idealFamille": [
-      "À l'Ombre de la Ville",
-      "Sea Grill Brussels",
-      "Comme Chez Soi",
-      "La Maison du Cygne",
-      "Brasserie de la Roue d'Or"
-    ],
-    "gastronomique": [
-      "Le Chalet de la Forêt",
-      "La Bouche d'Or"
-    ],
-    "ouvertNuit": [
-      "Restaurant Al-Boustane",
-      "Chez Marianne Bruxelles",
-      "Al Basha Bruxelles"
-    ],
-    "vueExceptionnelle": [
-      "Sea Grill Brussels"
-    ]
+  {
+   "nom": "Mosquée Al-Salam de Bruxelles",
+   "description": "Mosquée fréquentée de Bruxelles, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Bruxelles",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Bruxelles+Bruxelles",
+   "capacite": 3079,
+   "anneeConstruction": 1919,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 50.8503,
+    "lng": 4.3517
+   }
   }
+ ],
+ "tags": [
+  "capitale-europe",
+  "communaute-maghrebine",
+  "grand-place",
+  "gastronomie",
+  "cosmopolite",
+  "famille"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Comme Chez Soi",
+   "Le Chalet de la Forêt",
+   "Restaurant Al-Boustane",
+   "CZN Burak Bruxelles",
+   "Maison Antoine"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Brasserie de la Roue d'Or",
+   "Le Pain et le Vin",
+   "L'Idiot du Village",
+   "Maison Antoine",
+   "Friterie Tabora"
+  ],
+  "incontournables": [
+   "Brasserie du Lombard",
+   "Resto du Parlement",
+   "Maison Antoine",
+   "Namur Station Kebab",
+   "Le Pain et le Vin"
+  ],
+  "pepitesCachees": [
+   "Tangerine Brussels",
+   "Marrakech Express Bruxelles",
+   "Café de l'Hôtel de Ville"
+  ],
+  "idealFamille": [
+   "À l'Ombre de la Ville",
+   "Sea Grill Brussels",
+   "Comme Chez Soi",
+   "La Maison du Cygne",
+   "Brasserie de la Roue d'Or"
+  ],
+  "gastronomique": [
+   "Le Chalet de la Forêt",
+   "La Bouche d'Or"
+  ],
+  "ouvertNuit": [
+   "Restaurant Al-Boustane",
+   "Chez Marianne Bruxelles",
+   "Al Basha Bruxelles"
+  ],
+  "vueExceptionnelle": [
+   "Sea Grill Brussels"
+  ]
+ }
 }

@@ -1,2026 +1,2041 @@
 {
-  "nom": "Jeddah",
-  "pays": "Arabie Saoudite",
-  "slug": "jeddah",
-  "image": "https://images.unsplash.com/photo-1578895101408-47d8af21e4f8?w=1400&q=85",
-  "image_hero": "https://images.unsplash.com/photo-1578895101408-47d8af21e4f8?w=1400&q=85",
-  "description": "Jeddah est la porte d'entrée historique vers La Mecque, sur les rives de la mer Rouge. Sa vieille ville Al-Balad, inscrite à l'UNESCO, témoigne de siècles d'accueil des pèlerins.",
-  "descriptionLongue": "Surnommée « la fiancée de la mer Rouge », Jeddah accueille depuis des siècles les pèlerins en route vers La Mecque. Le quartier historique d'Al-Balad, avec ses maisons de corail et ses moucharabiehs, est classé au patrimoine mondial. La corniche moderne, la plus longue du Golfe, alterne mosquées flottantes, œuvres d'art et restaurants de fruits de mer. Ville 100% halal, Jeddah mêle tradition hedjazienne et modernité saoudienne.",
-  "halalScore": 9.2,
-  "score_halal": 4.6,
+ "nom": "Jeddah",
+ "pays": "Arabie Saoudite",
+ "slug": "jeddah",
+ "image": "https://images.unsplash.com/photo-1578895101408-47d8af21e4f8?w=1400&q=85",
+ "image_hero": "https://images.unsplash.com/photo-1578895101408-47d8af21e4f8?w=1400&q=85",
+ "description": "Jeddah est la porte d'entrée historique vers La Mecque, sur les rives de la mer Rouge. Sa vieille ville Al-Balad, inscrite à l'UNESCO, témoigne de siècles d'accueil des pèlerins.",
+ "descriptionLongue": "Surnommée « la fiancée de la mer Rouge », Jeddah accueille depuis des siècles les pèlerins en route vers La Mecque. Le quartier historique d'Al-Balad, avec ses maisons de corail et ses moucharabiehs, est classé au patrimoine mondial. La corniche moderne, la plus longue du Golfe, alterne mosquées flottantes, œuvres d'art et restaurants de fruits de mer. Ville 100% halal, Jeddah mêle tradition hedjazienne et modernité saoudienne.",
+ "halalScore": 9.2,
+ "score_halal": 4.6,
+ "mosquees": 1300,
+ "population": "4,7 millions",
+ "langue": "Arabe",
+ "monnaie": "Riyal saoudien (SAR)",
+ "fuseau": "UTC+3",
+ "meilleureEpoque": "Novembre à Mars",
+ "prixMoyenNuit": "120€",
+ "continent": "Asie",
+ "codeISO": "SA",
+ "pays_slug": "arabie-saoudite",
+ "region": "Hedjaz",
+ "meta_title": "Voyage Halal à Jeddah — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Jeddah — Halal Trust Score 9.5/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Jeddah — Halal Trust Score 9.5/10.",
+ "coordonnees": {
+  "lat": 21.4858,
+  "lng": 39.1925
+ },
+ "image_alt": "Vue de Jeddah, Arabie Saoudite",
+ "statistiques": {
   "mosquees": 1300,
-  "population": "4,7 millions",
+  "restaurants_halal": 800,
+  "habitants_musulmans_pct": 99,
+  "hotels": 15
+ },
+ "infos_pratiques": {
   "langue": "Arabe",
   "monnaie": "Riyal saoudien (SAR)",
-  "fuseau": "UTC+3",
-  "meilleureEpoque": "Novembre à Mars",
-  "prixMoyenNuit": "120€",
-  "continent": "Asie",
-  "codeISO": "SA",
-  "pays_slug": "arabie-saoudite",
-  "region": "Hedjaz",
-  "meta_title": "Voyage Halal à Jeddah — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Jeddah — Halal Trust Score 9.5/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Jeddah — Halal Trust Score 9.5/10.",
-  "coordonnees": {
+  "meilleure_periode": "Novembre à Mars",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Interdit",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "e-Visa touristique ou visa Omra disponible en ligne",
+  "vaccins": "Méningite obligatoire pour la Omra/Hajj",
+  "transport": "Taxis, Uber/Careem, nouveau métro en développement",
+  "priseElectrique": "Type G — 220V",
+  "decalageHoraire": "+2h par rapport à Paris (hiver)"
+ },
+ "restaurants": [
+  {
+   "nom": "Al-Nakheel Restaurant",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jeddah",
+   "description": "Fruits de mer, bord de mer à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Nakheel+Restaurant+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Fruits de mer",
+   "nombreAvis": 886,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Fakieh Seafood",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Jeddah",
+   "description": "Poissons de la Mer Rouge, institution à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Fakieh+Seafood+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Poissons de la mer rouge",
+   "nombreAvis": 777,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Al-Khayam",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Traditionnel saoudien, 50 ans à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Khayam+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Traditionnel saoudien",
+   "nombreAvis": 227,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Matam Al-Wael",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Grillades et kabsa, populaire à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Matam+Al-Wael+Jeddah",
+   "priceRange": "€",
+   "specialite": "Grillades et kabsa",
+   "nombreAvis": 397,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Assaha Lebanese Village",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Jeddah",
+   "description": "Libanais gastronomique à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Assaha+Lebanese+Village+Jeddah",
+   "priceRange": "€€€€",
+   "specialite": "Libanais gastronomique",
+   "nombreAvis": 1152,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Café Bateel",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Dattes et café de luxe à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Bateel+Jeddah",
+   "priceRange": "€€€€",
+   "specialite": "Dattes et café de luxe",
+   "nombreAvis": 658,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Nola's Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jeddah",
+   "description": "Fusion halal branchée à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Nola%27s+Caf%C3%A9+Jeddah",
+   "priceRange": "€€",
+   "specialite": "Fusion halal branchée",
+   "nombreAvis": 1447,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Asian Garden Jeddah",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jeddah",
+   "description": "Asiatique premium halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Asian+Garden+Jeddah+Jeddah",
+   "priceRange": "€€€€",
+   "specialite": "Asiatique premium halal",
+   "nombreAvis": 41,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Al-Habasha Ethiopian",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jeddah",
+   "description": "Éthiopien halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Habasha+Ethiopian+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Éthiopien halal",
+   "nombreAvis": 1146,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Turkish House Jeddah",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Osmanli cuisine à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Turkish+House+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Osmanli cuisine",
+   "nombreAvis": 317,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Saz Turkish",
+   "type": "Turc",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jeddah",
+   "description": "Turc modern à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Saz+Turkish+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Turc modern",
+   "nombreAvis": 2811,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "The Globe",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jeddah",
+   "description": "Gastronomique vue mer à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=The+Globe+Jeddah",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique vue mer",
+   "nombreAvis": 3334,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Ristorante Al Fanara",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Italien halal premium à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Ristorante+Al+Fanara+Jeddah",
+   "priceRange": "€€€€",
+   "specialite": "Italien halal premium",
+   "nombreAvis": 99,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "La Vela Jeddah",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Pizzeria halal front de mer à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=La+Vela+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Pizzeria halal front de mer",
+   "nombreAvis": 1456,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Sushiro Halal",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jeddah",
+   "description": "Japonais certifié halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Sushiro+Halal+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Japonais certifié halal",
+   "nombreAvis": 1463,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Nobu Jeddah",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jeddah",
+   "description": "Japonais fusion halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Nobu+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Japonais fusion halal",
+   "nombreAvis": 525,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "IndoChinese Kitchen",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Indien-chinois halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=IndoChinese+Kitchen+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Indien-chinois halal",
+   "nombreAvis": 1067,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Al-Moudhi",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jeddah",
+   "description": "Kapsa agneau, légende locale à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Moudhi+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Kapsa agneau",
+   "nombreAvis": 433,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Chicken Republic Jeddah",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jeddah",
+   "description": "Poulet grillé fast à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Chicken+Republic+Jeddah+Jeddah",
+   "priceRange": "€",
+   "specialite": "Poulet grillé fast",
+   "nombreAvis": 433,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Fuego Latin Grill",
+   "type": "Grillades & Kebab",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Grillades latines halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Fuego+Latin+Grill+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Grillades latines halal",
+   "nombreAvis": 690,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Eataly Jeddah",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Italien premium halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Eataly+Jeddah+Jeddah",
+   "priceRange": "€€€€",
+   "specialite": "Italien premium halal",
+   "nombreAvis": 1942,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Al-Andalus Mall Food Court",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jeddah",
+   "description": "Diversité à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Andalus+Mall+Food+Court+Jeddah",
+   "priceRange": "€",
+   "specialite": "Diversité",
+   "nombreAvis": 817,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Herfy Jeddah",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jeddah",
+   "description": "Burgers saoudiens à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Herfy+Jeddah+Jeddah",
+   "priceRange": "€€",
+   "specialite": "Burgers saoudiens",
+   "nombreAvis": 1403,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "KFC Jeddah Red Sea Mall",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jeddah",
+   "description": "Certifié halal KSA à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=KFC+Jeddah+Red+Sea+Mall+Jeddah",
+   "priceRange": "€€",
+   "specialite": "Certifié halal ksa",
+   "nombreAvis": 1249,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Shake Shack Jeddah",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jeddah",
+   "description": "Halal officiel à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Shake+Shack+Jeddah+Jeddah",
+   "priceRange": "€€",
+   "specialite": "Halal officiel",
+   "nombreAvis": 1113,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "The Melting Pot Jeddah",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Fondue halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=The+Melting+Pot+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Fondue halal",
+   "nombreAvis": 294,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Sofra Resto",
+   "type": "Marocain",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jeddah",
+   "description": "Marocain authentique à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Sofra+Resto+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Marocain authentique",
+   "nombreAvis": 185,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Beirut Restaurant Jeddah",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jeddah",
+   "description": "Libanais populaire à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Beirut+Restaurant+Jeddah+Jeddah",
+   "priceRange": "€",
+   "specialite": "Libanais populaire",
+   "nombreAvis": 489,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Karachi Darbar Jeddah",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Pakistanais mass appeal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Karachi+Darbar+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Pakistanais mass appeal",
+   "nombreAvis": 2499,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Moti Mahal Jeddah",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Indien nord premium à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Moti+Mahal+Jeddah+Jeddah",
+   "priceRange": "€€€€",
+   "specialite": "Indien nord premium",
+   "nombreAvis": 2002,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Bukhara Jeddah",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Indien du nord-ouest à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Bukhara+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Indien du nord-ouest",
+   "nombreAvis": 806,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "China Sea Restaurant",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Cantonais halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=China+Sea+Restaurant+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Cantonais halal",
+   "nombreAvis": 1270,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Korean BBQ Halal Jeddah",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jeddah",
+   "description": "Coréen certifié à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Korean+BBQ+Halal+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Coréen certifié",
+   "nombreAvis": 2392,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Sukhothai Jeddah",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Thaï halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Sukhothai+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Thaï halal",
+   "nombreAvis": 1501,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Mama Noura",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Shawarma légendaire de Jeddah à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Mama+Noura+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Shawarma légendaire de jeddah",
+   "nombreAvis": 2035,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Al-Baik Jeddah",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Original fondateur à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Baik+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Original fondateur",
+   "nombreAvis": 562,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Shalimar Restaurant",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Pakistanais traditionnel à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Shalimar+Restaurant+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Pakistanais traditionnel",
+   "nombreAvis": 1646,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Al-Surf Restaurant",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Poissons grillés, port à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Surf+Restaurant+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Poissons grillés",
+   "nombreAvis": 1486,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "19 Café Restaurant",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Fusion moderne à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=19+Caf%C3%A9+Restaurant+Jeddah",
+   "priceRange": "€€",
+   "specialite": "Fusion moderne",
+   "nombreAvis": 1396,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Harvest Restaurant",
+   "type": "Végétarien & Healthy",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Salade et healthy halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Harvest+Restaurant+Jeddah",
+   "priceRange": "€€",
+   "specialite": "Salade et healthy halal",
+   "nombreAvis": 895,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "veggie"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "Wagamama Jeddah",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Jeddah",
+   "description": "Pan-asiatique halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Wagamama+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Pan-asiatique halal",
+   "nombreAvis": 3660,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "touristique"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "PF Chang's Jeddah",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Jeddah",
+   "description": "Américain-asiatique halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=PF+Chang%27s+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Américain-asiatique halal",
+   "nombreAvis": 201,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "Hard Rock Café Jeddah",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Burgers halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Hard+Rock+Caf%C3%A9+Jeddah+Jeddah",
+   "priceRange": "€€",
+   "specialite": "Burgers halal",
+   "nombreAvis": 1284,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Chili's Jeddah",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Tex-mex halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Chili%27s+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Tex-mex halal",
+   "nombreAvis": 1096,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "TGI Fridays Jeddah",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Américain halal à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=TGI+Fridays+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Américain halal",
+   "nombreAvis": 381,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r45"
+  },
+  {
+   "nom": "Al-Matbakh Al-Asli",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Cuisine maison saoudienne à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Matbakh+Al-Asli+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Cuisine maison saoudienne",
+   "nombreAvis": 2226,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r46"
+  },
+  {
+   "nom": "Yemeni Corner Jeddah",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Yéménite authentique à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Yemeni+Corner+Jeddah+Jeddah",
+   "priceRange": "€",
+   "specialite": "Yéménite authentique",
+   "nombreAvis": 192,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique",
+    "rapide"
+   ],
+   "id": "r47"
+  },
+  {
+   "nom": "Somali Kitchen Jeddah",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Cuisine de la Corne à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Somali+Kitchen+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Cuisine de la corne",
+   "nombreAvis": 206,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r48"
+  },
+  {
+   "nom": "Iraqi Mazgouf House",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Jeddah",
+   "description": "Mazgouf et dolma à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Iraqi+Mazgouf+House+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Mazgouf et dolma",
+   "nombreAvis": 2155,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r49"
+  },
+  {
+   "nom": "Egyptian House Jeddah",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Koshari et ful à Jeddah.",
+   "mapsUrl": "https://maps.google.com/?q=Egyptian+House+Jeddah+Jeddah",
+   "priceRange": "€€€",
+   "specialite": "Koshari et ful",
+   "nombreAvis": 783,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r50"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Park Hyatt Jeddah",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Jeddah",
+   "description": "Ultra-luxe marina à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Park+Hyatt+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€€",
+   "nombreAvis": 2146,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h1",
+   "lat": 21.5136948,
+   "lng": 39.1546991
+  },
+  {
+   "nom": "Rosewood Jeddah",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Jeddah",
+   "description": "Luxe à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Rosewood+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€€",
+   "nombreAvis": 709,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h2",
+   "lat": 21.5765069,
+   "lng": 39.1103106
+  },
+  {
+   "nom": "Waldorf Astoria Jeddah",
+   "categorie": "Luxe",
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Luxe emblématique à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Waldorf+Astoria+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€€",
+   "nombreAvis": 1074,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": 21.6034936,
+   "lng": 39.1089321
+  },
+  {
+   "nom": "InterContinental Jeddah",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Luxe classique à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=InterContinental+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€€",
+   "nombreAvis": 159,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4"
+  },
+  {
+   "nom": "Hilton Jeddah",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Jeddah",
+   "description": "Luxe front de mer à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Hilton+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€€",
+   "nombreAvis": 130,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5",
+   "lat": 21.6047904,
+   "lng": 39.1088936
+  },
+  {
+   "nom": "Four Seasons Jeddah",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Ultra-luxe à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€€",
+   "nombreAvis": 1193,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h6",
+   "lat": 21.5718501,
+   "lng": 39.1126235
+  },
+  {
+   "nom": "JW Marriott Jeddah",
+   "categorie": "Luxe",
+   "score": 4.8,
+   "adresse": "Jeddah",
+   "description": "Luxe business à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=JW+Marriott+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€€",
+   "nombreAvis": 1462,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "Sofitel Jeddah Corniche",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Luxe français à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Sofitel+Jeddah+Corniche+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€€",
+   "nombreAvis": 1950,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Radisson Blu Hotel Jeddah",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Standard-luxe à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Hotel+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€€",
+   "nombreAvis": 2217,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h9",
+   "lat": 21.5113214,
+   "lng": 39.2275388
+  },
+  {
+   "nom": "Crowne Plaza Jeddah",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Jeddah",
+   "description": "Standard à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Crowne+Plaza+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€",
+   "nombreAvis": 422,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  },
+  {
+   "nom": "Holiday Inn Jeddah",
+   "categorie": "Budget",
+   "score": 4.3,
+   "adresse": "Jeddah",
+   "description": "Standard confort à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Holiday+Inn+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€",
+   "nombreAvis": 1558,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h11",
+   "lat": 21.5061701,
+   "lng": 39.1661789
+  },
+  {
+   "nom": "Coral Hotel Jeddah",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Jeddah",
+   "description": "Standard à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Coral+Hotel+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€",
+   "nombreAvis": 710,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  },
+  {
+   "nom": "Golden Tulip Jeddah",
+   "categorie": "Standard",
+   "score": 4.7,
+   "adresse": "Jeddah",
+   "description": "Standard à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Golden+Tulip+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€€",
+   "nombreAvis": 2389,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h13"
+  },
+  {
+   "nom": "Taiba Hotel Jeddah",
+   "categorie": "Budget",
+   "score": 4.4,
+   "adresse": "Jeddah",
+   "description": "Budget confort à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Taiba+Hotel+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€",
+   "nombreAvis": 2355,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h14"
+  },
+  {
+   "nom": "Al-Hamra Suites Jeddah",
+   "categorie": "Budget",
+   "score": 4.6,
+   "adresse": "Jeddah",
+   "description": "Budget à Jeddah.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Al-Hamra+Suites+Jeddah+Jeddah",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
+   "priceRange": "€€",
+   "nombreAvis": 2437,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h15"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Al-Balad — vieille ville UNESCO",
+   "categorie": "Histoire & Culture",
+   "description": "Quartier historique aux maisons de corail et moucharabiehs, cœur de la vieille Jeddah.",
+   "duree": "3h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Al-Balad+%E2%80%94+vieille+ville+UNESCO+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Al-Balad+%E2%80%94+vieille+ville+UNESCO+Jeddah",
+   "id": "a1",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Mosquée flottante Al-Rahma",
+   "categorie": "Religieux & Spirituel",
+   "description": "Mosquée blanche posée sur la mer Rouge, magnifique au coucher du soleil.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+flottante+Al-Rahma+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+flottante+Al-Rahma+Jeddah",
+   "id": "a2",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Corniche de Jeddah",
+   "categorie": "Nature & Aventure",
+   "description": "La plus longue corniche du Golfe, œuvres d'art et front de mer aménagé.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Corniche+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+de+Jeddah+Jeddah",
+   "id": "a3",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Souk Al-Alawi",
+   "categorie": "Shopping & Souks",
+   "description": "Souk historique d'Al-Balad : épices, encens, tissus et or.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Souk+Al-Alawi+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+Al-Alawi+Jeddah",
+   "id": "a4",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "King Fahd Fountain",
+   "categorie": "Nature & Aventure",
+   "description": "La plus haute fontaine du monde (312 m), spectacle au crépuscule.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=King+Fahd+Fountain+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=King+Fahd+Fountain+Jeddah",
+   "id": "a5",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée Tayebat",
+   "categorie": "Art & Musées",
+   "description": "Musée d'art islamique et du patrimoine hedjazien dans une demeure traditionnelle.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+Tayebat+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+Tayebat+Jeddah",
+   "id": "a6",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Plongée en mer Rouge",
+   "categorie": "Sport & Loisirs",
+   "description": "Récifs coralliens parmi les plus préservés du monde, sorties encadrées.",
+   "duree": "Journée",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Plong%C3%A9e+en+mer+Rouge+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plong%C3%A9e+en+mer+Rouge+Jeddah",
+   "id": "a7",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Fakieh Aquarium",
+   "categorie": "Sport & Loisirs",
+   "description": "Aquarium familial présentant la faune de la mer Rouge.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Fakieh+Aquarium+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fakieh+Aquarium+Jeddah",
+   "id": "a8",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Jeddah",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Jeddah+Jeddah",
+   "id": "a9",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Jeddah",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Jeddah+Jeddah",
+   "id": "a10",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Jeddah",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Jeddah+Jeddah",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Jeddah",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Jeddah+Jeddah",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Jeddah",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Jeddah+Jeddah",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Jeddah",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Jeddah+Jeddah",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Jeddah",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Jeddah+Jeddah",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Jeddah",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Jeddah+Jeddah",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Jeddah",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Jeddah+Jeddah",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Jeddah",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Jeddah+Jeddah",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Jeddah",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Jeddah+Jeddah",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Jeddah",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Jeddah+Jeddah",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Jeddah+Jeddah",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée flottante Al-Rahma",
+   "description": "Mosquée blanche sur pilotis au-dessus de la mer Rouge, ouverte aux visiteurs hors prière.",
+   "adresse": "Corniche, Jeddah",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+flottante+Al-Rahma+Jeddah",
+   "capacite": 9432,
+   "anneeConstruction": 1902,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 21.4858,
     "lng": 39.1925
+   }
   },
-  "image_alt": "Vue de Jeddah, Arabie Saoudite",
-  "statistiques": {
-    "mosquees": 1300,
-    "restaurants_halal": 800,
-    "habitants_musulmans_pct": 99
+  {
+   "nom": "Mosquée du Roi Saoud",
+   "description": "L'une des plus grandes mosquées de Jeddah, vaste salle de prière et dôme imposant.",
+   "adresse": "Al Andalus, Jeddah",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+Roi+Saoud+Jeddah",
+   "capacite": 7491,
+   "anneeConstruction": 1901,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.4858,
+    "lng": 39.1925
+   }
   },
-  "infos_pratiques": {
-    "langue": "Arabe",
-    "monnaie": "Riyal saoudien (SAR)",
-    "meilleure_periode": "Novembre à Mars",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Interdit",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Jeddah",
+   "description": "Mosquée fréquentée de Jeddah, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jeddah",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Jeddah+Jeddah",
+   "capacite": 3877,
+   "anneeConstruction": 1997,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.4858,
+    "lng": 39.1925
+   }
   },
-  "infoPratique": {
-    "visa": "e-Visa touristique ou visa Omra disponible en ligne",
-    "vaccins": "Méningite obligatoire pour la Omra/Hajj",
-    "transport": "Taxis, Uber/Careem, nouveau métro en développement",
-    "priseElectrique": "Type G — 220V",
-    "decalageHoraire": "+2h par rapport à Paris (hiver)"
+  {
+   "nom": "Grande Mosquée de Jeddah",
+   "description": "Mosquée fréquentée de Jeddah, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jeddah",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Jeddah+Jeddah",
+   "capacite": 2699,
+   "anneeConstruction": 1959,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.4858,
+    "lng": 39.1925
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Al-Nakheel Restaurant",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jeddah",
-      "description": "Fruits de mer, bord de mer à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Nakheel+Restaurant+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Fruits de mer",
-      "nombreAvis": 886,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Fakieh Seafood",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Jeddah",
-      "description": "Poissons de la Mer Rouge, institution à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Fakieh+Seafood+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Poissons de la mer rouge",
-      "nombreAvis": 777,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Al-Khayam",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Traditionnel saoudien, 50 ans à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Khayam+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Traditionnel saoudien",
-      "nombreAvis": 227,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Matam Al-Wael",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Grillades et kabsa, populaire à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Matam+Al-Wael+Jeddah",
-      "priceRange": "€",
-      "specialite": "Grillades et kabsa",
-      "nombreAvis": 397,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Assaha Lebanese Village",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Jeddah",
-      "description": "Libanais gastronomique à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Assaha+Lebanese+Village+Jeddah",
-      "priceRange": "€€€€",
-      "specialite": "Libanais gastronomique",
-      "nombreAvis": 1152,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Café Bateel",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Dattes et café de luxe à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Bateel+Jeddah",
-      "priceRange": "€€€€",
-      "specialite": "Dattes et café de luxe",
-      "nombreAvis": 658,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Nola's Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jeddah",
-      "description": "Fusion halal branchée à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Nola%27s+Caf%C3%A9+Jeddah",
-      "priceRange": "€€",
-      "specialite": "Fusion halal branchée",
-      "nombreAvis": 1447,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Asian Garden Jeddah",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jeddah",
-      "description": "Asiatique premium halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Asian+Garden+Jeddah+Jeddah",
-      "priceRange": "€€€€",
-      "specialite": "Asiatique premium halal",
-      "nombreAvis": 41,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Al-Habasha Ethiopian",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jeddah",
-      "description": "Éthiopien halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Habasha+Ethiopian+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Éthiopien halal",
-      "nombreAvis": 1146,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Turkish House Jeddah",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Osmanli cuisine à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Turkish+House+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Osmanli cuisine",
-      "nombreAvis": 317,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Saz Turkish",
-      "type": "Turc",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jeddah",
-      "description": "Turc modern à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Saz+Turkish+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Turc modern",
-      "nombreAvis": 2811,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "The Globe",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jeddah",
-      "description": "Gastronomique vue mer à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=The+Globe+Jeddah",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique vue mer",
-      "nombreAvis": 3334,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Ristorante Al Fanara",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Italien halal premium à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Ristorante+Al+Fanara+Jeddah",
-      "priceRange": "€€€€",
-      "specialite": "Italien halal premium",
-      "nombreAvis": 99,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "La Vela Jeddah",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Pizzeria halal front de mer à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=La+Vela+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Pizzeria halal front de mer",
-      "nombreAvis": 1456,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Sushiro Halal",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jeddah",
-      "description": "Japonais certifié halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Sushiro+Halal+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Japonais certifié halal",
-      "nombreAvis": 1463,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Nobu Jeddah",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jeddah",
-      "description": "Japonais fusion halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Nobu+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Japonais fusion halal",
-      "nombreAvis": 525,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "IndoChinese Kitchen",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Indien-chinois halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=IndoChinese+Kitchen+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Indien-chinois halal",
-      "nombreAvis": 1067,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Al-Moudhi",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jeddah",
-      "description": "Kapsa agneau, légende locale à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Moudhi+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Kapsa agneau",
-      "nombreAvis": 433,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Chicken Republic Jeddah",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jeddah",
-      "description": "Poulet grillé fast à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Chicken+Republic+Jeddah+Jeddah",
-      "priceRange": "€",
-      "specialite": "Poulet grillé fast",
-      "nombreAvis": 433,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Fuego Latin Grill",
-      "type": "Grillades & Kebab",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Grillades latines halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Fuego+Latin+Grill+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Grillades latines halal",
-      "nombreAvis": 690,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Eataly Jeddah",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Italien premium halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Eataly+Jeddah+Jeddah",
-      "priceRange": "€€€€",
-      "specialite": "Italien premium halal",
-      "nombreAvis": 1942,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Al-Andalus Mall Food Court",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jeddah",
-      "description": "Diversité à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Andalus+Mall+Food+Court+Jeddah",
-      "priceRange": "€",
-      "specialite": "Diversité",
-      "nombreAvis": 817,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Herfy Jeddah",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jeddah",
-      "description": "Burgers saoudiens à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Herfy+Jeddah+Jeddah",
-      "priceRange": "€€",
-      "specialite": "Burgers saoudiens",
-      "nombreAvis": 1403,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "KFC Jeddah Red Sea Mall",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jeddah",
-      "description": "Certifié halal KSA à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=KFC+Jeddah+Red+Sea+Mall+Jeddah",
-      "priceRange": "€€",
-      "specialite": "Certifié halal ksa",
-      "nombreAvis": 1249,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Shake Shack Jeddah",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jeddah",
-      "description": "Halal officiel à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Shake+Shack+Jeddah+Jeddah",
-      "priceRange": "€€",
-      "specialite": "Halal officiel",
-      "nombreAvis": 1113,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "The Melting Pot Jeddah",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Fondue halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=The+Melting+Pot+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Fondue halal",
-      "nombreAvis": 294,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Sofra Resto",
-      "type": "Marocain",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jeddah",
-      "description": "Marocain authentique à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Sofra+Resto+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Marocain authentique",
-      "nombreAvis": 185,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Beirut Restaurant Jeddah",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jeddah",
-      "description": "Libanais populaire à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Beirut+Restaurant+Jeddah+Jeddah",
-      "priceRange": "€",
-      "specialite": "Libanais populaire",
-      "nombreAvis": 489,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Karachi Darbar Jeddah",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Pakistanais mass appeal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Karachi+Darbar+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Pakistanais mass appeal",
-      "nombreAvis": 2499,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Moti Mahal Jeddah",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Indien nord premium à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Moti+Mahal+Jeddah+Jeddah",
-      "priceRange": "€€€€",
-      "specialite": "Indien nord premium",
-      "nombreAvis": 2002,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Bukhara Jeddah",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Indien du nord-ouest à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Bukhara+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Indien du nord-ouest",
-      "nombreAvis": 806,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "China Sea Restaurant",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Cantonais halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=China+Sea+Restaurant+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Cantonais halal",
-      "nombreAvis": 1270,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Korean BBQ Halal Jeddah",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jeddah",
-      "description": "Coréen certifié à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Korean+BBQ+Halal+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Coréen certifié",
-      "nombreAvis": 2392,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Sukhothai Jeddah",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Thaï halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Sukhothai+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Thaï halal",
-      "nombreAvis": 1501,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Mama Noura",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Shawarma légendaire de Jeddah à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Mama+Noura+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Shawarma légendaire de jeddah",
-      "nombreAvis": 2035,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Al-Baik Jeddah",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Original fondateur à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Baik+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Original fondateur",
-      "nombreAvis": 562,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Shalimar Restaurant",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Pakistanais traditionnel à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Shalimar+Restaurant+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Pakistanais traditionnel",
-      "nombreAvis": 1646,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Al-Surf Restaurant",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Poissons grillés, port à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Surf+Restaurant+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Poissons grillés",
-      "nombreAvis": 1486,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "19 Café Restaurant",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Fusion moderne à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=19+Caf%C3%A9+Restaurant+Jeddah",
-      "priceRange": "€€",
-      "specialite": "Fusion moderne",
-      "nombreAvis": 1396,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Harvest Restaurant",
-      "type": "Végétarien & Healthy",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Salade et healthy halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Harvest+Restaurant+Jeddah",
-      "priceRange": "€€",
-      "specialite": "Salade et healthy halal",
-      "nombreAvis": 895,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "veggie"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "Wagamama Jeddah",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Jeddah",
-      "description": "Pan-asiatique halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Wagamama+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Pan-asiatique halal",
-      "nombreAvis": 3660,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "touristique"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "PF Chang's Jeddah",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Jeddah",
-      "description": "Américain-asiatique halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=PF+Chang%27s+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Américain-asiatique halal",
-      "nombreAvis": 201,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "Hard Rock Café Jeddah",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Burgers halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Hard+Rock+Caf%C3%A9+Jeddah+Jeddah",
-      "priceRange": "€€",
-      "specialite": "Burgers halal",
-      "nombreAvis": 1284,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Chili's Jeddah",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Tex-mex halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Chili%27s+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Tex-mex halal",
-      "nombreAvis": 1096,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "TGI Fridays Jeddah",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Américain halal à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=TGI+Fridays+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Américain halal",
-      "nombreAvis": 381,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r45"
-    },
-    {
-      "nom": "Al-Matbakh Al-Asli",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Cuisine maison saoudienne à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Matbakh+Al-Asli+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Cuisine maison saoudienne",
-      "nombreAvis": 2226,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r46"
-    },
-    {
-      "nom": "Yemeni Corner Jeddah",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Yéménite authentique à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Yemeni+Corner+Jeddah+Jeddah",
-      "priceRange": "€",
-      "specialite": "Yéménite authentique",
-      "nombreAvis": 192,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique",
-        "rapide"
-      ],
-      "id": "r47"
-    },
-    {
-      "nom": "Somali Kitchen Jeddah",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Cuisine de la Corne à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Somali+Kitchen+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Cuisine de la corne",
-      "nombreAvis": 206,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r48"
-    },
-    {
-      "nom": "Iraqi Mazgouf House",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Jeddah",
-      "description": "Mazgouf et dolma à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Iraqi+Mazgouf+House+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Mazgouf et dolma",
-      "nombreAvis": 2155,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r49"
-    },
-    {
-      "nom": "Egyptian House Jeddah",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Koshari et ful à Jeddah.",
-      "mapsUrl": "https://maps.google.com/?q=Egyptian+House+Jeddah+Jeddah",
-      "priceRange": "€€€",
-      "specialite": "Koshari et ful",
-      "nombreAvis": 783,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r50"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Park Hyatt Jeddah",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Jeddah",
-      "description": "Ultra-luxe marina à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Park+Hyatt+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€€",
-      "nombreAvis": 2146,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Rosewood Jeddah",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Jeddah",
-      "description": "Luxe à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Rosewood+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€€",
-      "nombreAvis": 709,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Waldorf Astoria Jeddah",
-      "categorie": "Luxe",
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Luxe emblématique à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Waldorf+Astoria+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€€",
-      "nombreAvis": 1074,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "InterContinental Jeddah",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Luxe classique à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=InterContinental+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€€",
-      "nombreAvis": 159,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Hilton Jeddah",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Jeddah",
-      "description": "Luxe front de mer à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Hilton+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€€",
-      "nombreAvis": 130,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Four Seasons Jeddah",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Ultra-luxe à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Four+Seasons+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€€",
-      "nombreAvis": 1193,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "JW Marriott Jeddah",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Jeddah",
-      "description": "Luxe business à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=JW+Marriott+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€€",
-      "nombreAvis": 1462,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "Sofitel Jeddah Corniche",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Luxe français à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Sofitel+Jeddah+Corniche+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€€",
-      "nombreAvis": 1950,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Radisson Blu Hotel Jeddah",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Standard-luxe à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Radisson+Blu+Hotel+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€€",
-      "nombreAvis": 2217,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Crowne Plaza Jeddah",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Jeddah",
-      "description": "Standard à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Crowne+Plaza+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€",
-      "nombreAvis": 422,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Holiday Inn Jeddah",
-      "categorie": "Budget",
-      "score": 4.3,
-      "adresse": "Jeddah",
-      "description": "Standard confort à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Holiday+Inn+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€",
-      "nombreAvis": 1558,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Coral Hotel Jeddah",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Jeddah",
-      "description": "Standard à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Coral+Hotel+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€",
-      "nombreAvis": 710,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    },
-    {
-      "nom": "Golden Tulip Jeddah",
-      "categorie": "Standard",
-      "score": 4.7,
-      "adresse": "Jeddah",
-      "description": "Standard à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Golden+Tulip+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€€",
-      "nombreAvis": 2389,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h13"
-    },
-    {
-      "nom": "Taiba Hotel Jeddah",
-      "categorie": "Budget",
-      "score": 4.4,
-      "adresse": "Jeddah",
-      "description": "Budget confort à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Taiba+Hotel+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€",
-      "nombreAvis": 2355,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h14"
-    },
-    {
-      "nom": "Al-Hamra Suites Jeddah",
-      "categorie": "Budget",
-      "score": 4.6,
-      "adresse": "Jeddah",
-      "description": "Budget à Jeddah.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Al-Hamra+Suites+Jeddah+Jeddah",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Jeddah&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=jeddah",
-      "priceRange": "€€",
-      "nombreAvis": 2437,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h15"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Al-Balad — vieille ville UNESCO",
-      "categorie": "Histoire & Culture",
-      "description": "Quartier historique aux maisons de corail et moucharabiehs, cœur de la vieille Jeddah.",
-      "duree": "3h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Al-Balad+%E2%80%94+vieille+ville+UNESCO+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Al-Balad+%E2%80%94+vieille+ville+UNESCO+Jeddah",
-      "id": "a1",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Mosquée flottante Al-Rahma",
-      "categorie": "Religieux & Spirituel",
-      "description": "Mosquée blanche posée sur la mer Rouge, magnifique au coucher du soleil.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+flottante+Al-Rahma+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+flottante+Al-Rahma+Jeddah",
-      "id": "a2",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Corniche de Jeddah",
-      "categorie": "Nature & Aventure",
-      "description": "La plus longue corniche du Golfe, œuvres d'art et front de mer aménagé.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Corniche+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+de+Jeddah+Jeddah",
-      "id": "a3",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Souk Al-Alawi",
-      "categorie": "Shopping & Souks",
-      "description": "Souk historique d'Al-Balad : épices, encens, tissus et or.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Souk+Al-Alawi+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+Al-Alawi+Jeddah",
-      "id": "a4",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "King Fahd Fountain",
-      "categorie": "Nature & Aventure",
-      "description": "La plus haute fontaine du monde (312 m), spectacle au crépuscule.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=King+Fahd+Fountain+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=King+Fahd+Fountain+Jeddah",
-      "id": "a5",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée Tayebat",
-      "categorie": "Art & Musées",
-      "description": "Musée d'art islamique et du patrimoine hedjazien dans une demeure traditionnelle.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+Tayebat+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+Tayebat+Jeddah",
-      "id": "a6",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Plongée en mer Rouge",
-      "categorie": "Sport & Loisirs",
-      "description": "Récifs coralliens parmi les plus préservés du monde, sorties encadrées.",
-      "duree": "Journée",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Plong%C3%A9e+en+mer+Rouge+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plong%C3%A9e+en+mer+Rouge+Jeddah",
-      "id": "a7",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Fakieh Aquarium",
-      "categorie": "Sport & Loisirs",
-      "description": "Aquarium familial présentant la faune de la mer Rouge.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Fakieh+Aquarium+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Fakieh+Aquarium+Jeddah",
-      "id": "a8",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Jeddah",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Jeddah+Jeddah",
-      "id": "a9",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Jeddah",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Jeddah+Jeddah",
-      "id": "a10",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Jeddah",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Jeddah+Jeddah",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Jeddah",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Jeddah+Jeddah",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Jeddah",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Jeddah+Jeddah",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Jeddah",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Jeddah+Jeddah",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Jeddah",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Jeddah+Jeddah",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Jeddah",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Jeddah+Jeddah",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Jeddah",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Jeddah+Jeddah",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Jeddah",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Jeddah+Jeddah",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Jeddah",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Jeddah+Jeddah",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Jeddah",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Jeddah+Jeddah",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Jeddah+Jeddah",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée flottante Al-Rahma",
-      "description": "Mosquée blanche sur pilotis au-dessus de la mer Rouge, ouverte aux visiteurs hors prière.",
-      "adresse": "Corniche, Jeddah",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+flottante+Al-Rahma+Jeddah",
-      "capacite": 9432,
-      "anneeConstruction": 1902,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.4858,
-        "lng": 39.1925
-      }
-    },
-    {
-      "nom": "Mosquée du Roi Saoud",
-      "description": "L'une des plus grandes mosquées de Jeddah, vaste salle de prière et dôme imposant.",
-      "adresse": "Al Andalus, Jeddah",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+du+Roi+Saoud+Jeddah",
-      "capacite": 7491,
-      "anneeConstruction": 1901,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.4858,
-        "lng": 39.1925
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Jeddah",
-      "description": "Mosquée fréquentée de Jeddah, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jeddah",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Jeddah+Jeddah",
-      "capacite": 3877,
-      "anneeConstruction": 1997,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.4858,
-        "lng": 39.1925
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Jeddah",
-      "description": "Mosquée fréquentée de Jeddah, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jeddah",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Jeddah+Jeddah",
-      "capacite": 2699,
-      "anneeConstruction": 1959,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.4858,
-        "lng": 39.1925
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Jeddah",
-      "description": "Mosquée fréquentée de Jeddah, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jeddah",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Jeddah+Jeddah",
-      "capacite": 6779,
-      "anneeConstruction": 1919,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.4858,
-        "lng": 39.1925
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Jeddah",
-      "description": "Mosquée fréquentée de Jeddah, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jeddah",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Jeddah+Jeddah",
-      "capacite": 813,
-      "anneeConstruction": 1973,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.4858,
-        "lng": 39.1925
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Jeddah",
-      "description": "Mosquée fréquentée de Jeddah, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Jeddah",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Jeddah+Jeddah",
-      "capacite": 3430,
-      "anneeConstruction": 1910,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 21.4858,
-        "lng": 39.1925
-      }
-    }
-  ],
-  "tags": [
-    "patrimoine-islamique",
-    "mer-rouge",
-    "pelerinage",
-    "gastronomie",
-    "famille",
-    "unesco"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Fakieh Seafood",
-      "Assaha Lebanese Village",
-      "Saz Turkish",
-      "The Globe",
-      "Korean BBQ Halal Jeddah"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Al-Andalus Mall Food Court",
-      "Herfy Jeddah",
-      "KFC Jeddah Red Sea Mall",
-      "Shake Shack Jeddah",
-      "Harvest Restaurant"
-    ],
-    "incontournables": [
-      "Wagamama Jeddah",
-      "The Globe",
-      "Saz Turkish",
-      "Karachi Darbar Jeddah",
-      "Korean BBQ Halal Jeddah"
-    ],
-    "pepitesCachees": [
-      "Ristorante Al Fanara",
-      "The Melting Pot Jeddah",
-      "Sofra Resto"
-    ],
-    "idealFamille": [
-      "Al-Nakheel Restaurant",
-      "Fakieh Seafood",
-      "Al-Khayam",
-      "Matam Al-Wael",
-      "Assaha Lebanese Village"
-    ],
-    "gastronomique": [
-      "The Globe"
-    ],
-    "ouvertNuit": [
-      "Matam Al-Wael",
-      "Assaha Lebanese Village",
-      "Ristorante Al Fanara"
-    ],
-    "vueExceptionnelle": [
-      "Al-Nakheel Restaurant",
-      "Fakieh Seafood",
-      "Al-Surf Restaurant"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Jeddah",
+   "description": "Mosquée fréquentée de Jeddah, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jeddah",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Jeddah+Jeddah",
+   "capacite": 6779,
+   "anneeConstruction": 1919,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.4858,
+    "lng": 39.1925
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Jeddah",
+   "description": "Mosquée fréquentée de Jeddah, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jeddah",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Jeddah+Jeddah",
+   "capacite": 813,
+   "anneeConstruction": 1973,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.4858,
+    "lng": 39.1925
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Jeddah",
+   "description": "Mosquée fréquentée de Jeddah, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Jeddah",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Jeddah+Jeddah",
+   "capacite": 3430,
+   "anneeConstruction": 1910,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 21.4858,
+    "lng": 39.1925
+   }
   }
+ ],
+ "tags": [
+  "patrimoine-islamique",
+  "mer-rouge",
+  "pelerinage",
+  "gastronomie",
+  "famille",
+  "unesco"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Fakieh Seafood",
+   "Assaha Lebanese Village",
+   "Saz Turkish",
+   "The Globe",
+   "Korean BBQ Halal Jeddah"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Al-Andalus Mall Food Court",
+   "Herfy Jeddah",
+   "KFC Jeddah Red Sea Mall",
+   "Shake Shack Jeddah",
+   "Harvest Restaurant"
+  ],
+  "incontournables": [
+   "Wagamama Jeddah",
+   "The Globe",
+   "Saz Turkish",
+   "Karachi Darbar Jeddah",
+   "Korean BBQ Halal Jeddah"
+  ],
+  "pepitesCachees": [
+   "Ristorante Al Fanara",
+   "The Melting Pot Jeddah",
+   "Sofra Resto"
+  ],
+  "idealFamille": [
+   "Al-Nakheel Restaurant",
+   "Fakieh Seafood",
+   "Al-Khayam",
+   "Matam Al-Wael",
+   "Assaha Lebanese Village"
+  ],
+  "gastronomique": [
+   "The Globe"
+  ],
+  "ouvertNuit": [
+   "Matam Al-Wael",
+   "Assaha Lebanese Village",
+   "Ristorante Al Fanara"
+  ],
+  "vueExceptionnelle": [
+   "Al-Nakheel Restaurant",
+   "Fakieh Seafood",
+   "Al-Surf Restaurant"
+  ]
+ }
 }

@@ -1,2684 +1,2701 @@
 {
-  "slug": "tunis",
-  "nom": "Tunis",
-  "nom_arabe": "تونس",
-  "pays": "Tunisie",
-  "pays_slug": "tunisie",
-  "drapeau": "🇹🇳",
-  "region": "Afrique du Nord",
-  "coordonnees": {
+ "slug": "tunis",
+ "nom": "Tunis",
+ "nom_arabe": "تونس",
+ "pays": "Tunisie",
+ "pays_slug": "tunisie",
+ "drapeau": "🇹🇳",
+ "region": "Afrique du Nord",
+ "coordonnees": {
+  "lat": 36.819,
+  "lng": 10.1658
+ },
+ "score_halal": 4.3,
+ "score_securite": 4,
+ "score_famille": 4,
+ "score_budget": 5,
+ "description": "La médina de Tunis classée UNESCO, la Mosquée de la Zitouna millénaire et une cuisine maghrébine parmi les plus raffinées du monde arabe.",
+ "description_courte": "La médina dorée, capitale du jasmin",
+ "description_longue": "Tunis est une ville à double visage — la médina médiévale classée UNESCO avec ses souks labyrinthiques et ses zaouïas soufies, et la ville moderne coloniale avec ses cafés art déco et ses villas blanches. La Tunisie est un pays à 99% musulman mais avec une longue tradition d'ouverture — laïcité constitutionnelle, femmes voilées et non voilées côte à côte, cuisine fine mêlant influences berbères, arabes, ottomanes et méditerranéennes.",
+ "image_hero": "https://images.unsplash.com/photo-1580836738558-e6c749ca8e53?w=1400&q=85",
+ "image_alt": "Médina de Tunis avec minarets de la mosquée Zitouna",
+ "meta_title": "Tunis Halal 2025 — Guide Voyage Musulman",
+ "meta_description": "Guide halal Tunis : restaurants, mosquée Zitouna, médina UNESCO, boulangeries, activités. La capitale tunisienne authentique.",
+ "statistiques": {
+  "mosquees": 800,
+  "restaurants_halal": 5000,
+  "hotels_halal": 100,
+  "boucheries_halal": 1000,
+  "habitants_musulmans_pct": 99,
+  "habitants": 2800000,
+  "superficie_km2": 346,
+  "hotels": 12
+ },
+ "infos_pratiques": {
+  "langue_officielle": "Arabe",
+  "langues_parlees": [
+   "Arabe",
+   "Français",
+   "Tunisien (darija)"
+  ],
+  "monnaie": "Dinar tunisien (TND)",
+  "taux_change_eur": "1 EUR ≈ 3.40 TND",
+  "meilleure_periode": "Avril-Juin et Septembre-Novembre",
+  "a_eviter": "Juillet-Août (très chaud, 38°C+, tourists)",
+  "fuseau_horaire": "CET (UTC+1)",
+  "appel_priere": "Oui, dans toute la médina",
+  "nourriture_halal": "Très majoritairement halal — vérifier dans hôtels et restaurants internationaux",
+  "alcool": "Légal et disponible dans restaurants touristiques, supermarchés. Restaurants populaires tunisiens sans alcool.",
+  "tenue_recommandee": "Décontractée acceptable, tenue modeste dans la médina et les mosquées",
+  "securite": "Bonne sécurité depuis 2015, présence policière visible",
+  "transport_local": "Métro léger, bus, louage (taxi collectif), taxis jaunes",
+  "aeroport": "Aéroport Tunis-Carthage (TUN) — 8 km du centre",
+  "visa": "Exemption visa 3 mois pour les ressortissants français, belges, suisses"
+ },
+ "meteo_par_mois": [
+  {
+   "mois": "Janvier",
+   "temp_max": 14,
+   "temp_min": 6,
+   "pluie_jours": 9,
+   "emoji": "🌧️"
+  },
+  {
+   "mois": "Février",
+   "temp_max": 15,
+   "temp_min": 7,
+   "pluie_jours": 7,
+   "emoji": "🌦️"
+  },
+  {
+   "mois": "Mars",
+   "temp_max": 18,
+   "temp_min": 9,
+   "pluie_jours": 7,
+   "emoji": "🌤️"
+  },
+  {
+   "mois": "Avril",
+   "temp_max": 21,
+   "temp_min": 12,
+   "pluie_jours": 5,
+   "emoji": "⛅"
+  },
+  {
+   "mois": "Mai",
+   "temp_max": 26,
+   "temp_min": 16,
+   "pluie_jours": 3,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Juin",
+   "temp_max": 31,
+   "temp_min": 20,
+   "pluie_jours": 1,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Juillet",
+   "temp_max": 33,
+   "temp_min": 23,
+   "pluie_jours": 0,
+   "emoji": "🌞"
+  },
+  {
+   "mois": "Août",
+   "temp_max": 34,
+   "temp_min": 23,
+   "pluie_jours": 1,
+   "emoji": "🌞"
+  },
+  {
+   "mois": "Septembre",
+   "temp_max": 29,
+   "temp_min": 20,
+   "pluie_jours": 3,
+   "emoji": "☀️"
+  },
+  {
+   "mois": "Octobre",
+   "temp_max": 24,
+   "temp_min": 15,
+   "pluie_jours": 5,
+   "emoji": "⛅"
+  },
+  {
+   "mois": "Novembre",
+   "temp_max": 18,
+   "temp_min": 10,
+   "pluie_jours": 8,
+   "emoji": "🌧️"
+  },
+  {
+   "mois": "Décembre",
+   "temp_max": 14,
+   "temp_min": 7,
+   "pluie_jours": 9,
+   "emoji": "🌧️"
+  }
+ ],
+ "restaurants": [
+  {
+   "nom": "Dar El Jeld",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Tunis",
+   "description": "Gastronomique tunisien, palais historique à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+El+Jeld+Tunis",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique tunisien",
+   "nombreAvis": 2802,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Essaraya",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Tunis",
+   "description": "Riad XIXe, cuisine tunisienne d'exception à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Essaraya+Tunis",
+   "priceRange": "€€€€",
+   "specialite": "Riad xixe",
+   "nombreAvis": 1567,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "La Closerie des Jasmin",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Tunis",
+   "description": "Villa jardin, gastronomique à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=La+Closerie+des+Jasmin+Tunis",
+   "priceRange": "€€€€",
+   "specialite": "Villa jardin",
+   "nombreAvis": 322,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "El Ali",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Tunis",
+   "description": "Halwa et sweets depuis 1949 à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=El+Ali+Tunis",
+   "priceRange": "€€",
+   "specialite": "Halwa et sweets depuis 1949",
+   "nombreAvis": 2994,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Le Baroque",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Tunis",
+   "description": "Français-tunisien fusion halal à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Baroque+Tunis",
+   "priceRange": "€€",
+   "specialite": "Français-tunisien fusion halal",
+   "nombreAvis": 3306,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "La Tour d'Ivoire",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Vue mer, moderne à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=La+Tour+d%27Ivoire+Tunis",
+   "priceRange": "€€€€",
+   "specialite": "Vue mer",
+   "nombreAvis": 1277,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Diwan Restaurant",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Traditionnel médina à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Diwan+Restaurant+Tunis",
+   "priceRange": "€€",
+   "specialite": "Traditionnel médina",
+   "nombreAvis": 2074,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Chez Slah",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Poissons et fruits de mer à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Slah+Tunis",
+   "priceRange": "€",
+   "specialite": "Poissons et fruits de mer",
+   "nombreAvis": 2066,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide",
+    "vue-mer"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Chez Nous",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Brasserie franco-tunisienne à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Nous+Tunis",
+   "priceRange": "€",
+   "specialite": "Brasserie franco-tunisienne",
+   "nombreAvis": 3585,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Restaurant Carthage",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Ambiance antique à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Carthage+Tunis",
+   "priceRange": "€€",
+   "specialite": "Ambiance antique",
+   "nombreAvis": 1762,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Le Petit Cardinal",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Tunis",
+   "description": "Bistro halal à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Petit+Cardinal+Tunis",
+   "priceRange": "€€",
+   "specialite": "Bistro halal",
+   "nombreAvis": 2249,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Le Pirate",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Tunis",
+   "description": "Fruits de mer à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Le+Pirate+Tunis",
+   "priceRange": "€€",
+   "specialite": "Fruits de mer",
+   "nombreAvis": 492,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "vue-mer"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Gastronomia",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Tunis",
+   "description": "Gastronomique moderne à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Gastronomia+Tunis",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique moderne",
+   "nombreAvis": 1643,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "El Mankal",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Traditionnel de quartier à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=El+Mankal+Tunis",
+   "priceRange": "€€",
+   "specialite": "Traditionnel de quartier",
+   "nombreAvis": 296,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "La Marsa Fish & Chips",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Tunis",
+   "description": "Poissons La Marsa à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=La+Marsa+Fish+%26+Chips+Tunis",
+   "priceRange": "€€",
+   "specialite": "Poissons la marsa",
+   "nombreAvis": 542,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Café des Nattes Sidi Bou Said",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Tunis",
+   "description": "Panoramique à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+des+Nattes+Sidi+Bou+Said+Tunis",
+   "priceRange": "€€",
+   "specialite": "Panoramique",
+   "nombreAvis": 1144,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Dar Zarrouk",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Tunis",
+   "description": "Vue baie de Tunis, gastronomique à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Dar+Zarrouk+Tunis",
+   "priceRange": "€€€€",
+   "specialite": "Vue baie de tunis",
+   "nombreAvis": 1815,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "L'Aghlabide",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Tunis",
+   "description": "Cuisine historique à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=L%27Aghlabide+Tunis",
+   "priceRange": "€€",
+   "specialite": "Cuisine historique",
+   "nombreAvis": 1188,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Les 3 Chefs",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Tunis",
+   "description": "Gastronomique à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Les+3+Chefs+Tunis",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique",
+   "nombreAvis": 3284,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Maji Restaurant",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Fusion tunisio-méditerranée à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Maji+Restaurant+Tunis",
+   "priceRange": "€€",
+   "specialite": "Fusion tunisio-méditerranée",
+   "nombreAvis": 795,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Restaurant El Kalout",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Salle Kairouan à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+El+Kalout+Tunis",
+   "priceRange": "€€",
+   "specialite": "Salle kairouan",
+   "nombreAvis": 2881,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Plats Locaux Hafsia",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Tunis",
+   "description": "Médina halal à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Plats+Locaux+Hafsia+Tunis",
+   "priceRange": "€€",
+   "specialite": "Médina halal",
+   "nombreAvis": 1024,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "Ksksi House",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Couscous spécialisé à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Ksksi+House+Tunis",
+   "priceRange": "€€",
+   "specialite": "Couscous spécialisé",
+   "nombreAvis": 2499,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Restaurant Dar Bchir",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Maison bourgeoise à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Dar+Bchir+Tunis",
+   "priceRange": "€€",
+   "specialite": "Maison bourgeoise",
+   "nombreAvis": 431,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Chez Aziz",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Friterie de la mer à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Chez+Aziz+Tunis",
+   "priceRange": "€",
+   "specialite": "Friterie de la mer",
+   "nombreAvis": 665,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Snack 9 Décembre",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Tunis",
+   "description": "Populaire à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Snack+9+D%C3%A9cembre+Tunis",
+   "priceRange": "€",
+   "specialite": "Populaire",
+   "nombreAvis": 361,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "rapide"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "Fondouk El Attarine",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Tunis",
+   "description": "Médina à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Fondouk+El+Attarine+Tunis",
+   "priceRange": "€€",
+   "specialite": "Médina",
+   "nombreAvis": 1252,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "L'Authentique Tunisien",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Copieux local à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=L%27Authentique+Tunisien+Tunis",
+   "priceRange": "€€",
+   "specialite": "Copieux local",
+   "nombreAvis": 893,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "Pasta Palace Tunis",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Tunis",
+   "description": "Pâtes tunisiennes à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Pasta+Palace+Tunis+Tunis",
+   "priceRange": "€€€€",
+   "specialite": "Pâtes tunisiennes",
+   "nombreAvis": 1253,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Indien Palace Tunis",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Indien halal à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Indien+Palace+Tunis+Tunis",
+   "priceRange": "€€€€",
+   "specialite": "Indien halal",
+   "nombreAvis": 3670,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Restaurant Shalimar",
+   "type": "Indien & Pakistani",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Tunis",
+   "description": "Pakistanais-indien à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Restaurant+Shalimar+Tunis",
+   "priceRange": "€€",
+   "specialite": "Pakistanais-indien",
+   "nombreAvis": 2021,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "China Garden Tunis",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Tunis",
+   "description": "Chinois halal à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=China+Garden+Tunis+Tunis",
+   "priceRange": "€€",
+   "specialite": "Chinois halal",
+   "nombreAvis": 866,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Japanese Corner Tunis",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Sushi halal à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Japanese+Corner+Tunis+Tunis",
+   "priceRange": "€€",
+   "specialite": "Sushi halal",
+   "nombreAvis": 627,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "livraison",
+    "touristique"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Léon de Bruxelles Tunis",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Tunis",
+   "description": "Moules-frites halal à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=L%C3%A9on+de+Bruxelles+Tunis+Tunis",
+   "priceRange": "€€",
+   "specialite": "Moules-frites halal",
+   "nombreAvis": 1719,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Pizza Hut Tunis",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Tunis",
+   "description": "Halal Tunisie à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Pizza+Hut+Tunis+Tunis",
+   "priceRange": "€€",
+   "specialite": "Halal tunisie",
+   "nombreAvis": 703,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Domino's Pizza Tunis",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Tunis",
+   "description": "Halal à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Domino%27s+Pizza+Tunis+Tunis",
+   "priceRange": "€€",
+   "specialite": "Halal",
+   "nombreAvis": 1332,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Burger King Tunis",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Tunis",
+   "description": "Halal Tunisie à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Burger+King+Tunis+Tunis",
+   "priceRange": "€€",
+   "specialite": "Halal tunisie",
+   "nombreAvis": 341,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "McDonald's Tunis",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Halal à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Tunis+Tunis",
+   "priceRange": "€€",
+   "specialite": "Halal",
+   "nombreAvis": 620,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Macarons & Co. Tunis",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Tunis",
+   "description": "Pâtisseries françaises à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Macarons+%26+Co.+Tunis+Tunis",
+   "priceRange": "€€",
+   "specialite": "Pâtisseries françaises",
+   "nombreAvis": 624,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Paul Tunis",
+   "type": "Cuisine française",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Tunis",
+   "description": "Café français halal à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Paul+Tunis+Tunis",
+   "priceRange": "€€",
+   "specialite": "Café français halal",
+   "nombreAvis": 128,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r40"
+  },
+  {
+   "nom": "L'Arbre à Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Tunis",
+   "description": "Café spécialisé à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=L%27Arbre+%C3%A0+Caf%C3%A9+Tunis",
+   "priceRange": "€€",
+   "specialite": "Café spécialisé",
+   "nombreAvis": 936,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r41"
+  },
+  {
+   "nom": "Kafe Kalsa",
+   "type": "Tunisien",
+   "certificationHalal": true,
+   "score": 4.1,
+   "adresse": "Tunis",
+   "description": "Culturel, art à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Kafe+Kalsa+Tunis",
+   "priceRange": "€€",
+   "specialite": "Culturel",
+   "nombreAvis": 1406,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison"
+   ],
+   "id": "r42"
+  },
+  {
+   "nom": "M'rabet Café",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Tunis",
+   "description": "Ottoman, historique à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=M%27rabet+Caf%C3%A9+Tunis",
+   "priceRange": "€€",
+   "specialite": "Ottoman",
+   "nombreAvis": 1135,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial"
+   ],
+   "id": "r43"
+  },
+  {
+   "nom": "Patisserie Le Bonheur",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Tunis",
+   "description": "Tunisienne sucrée à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Patisserie+Le+Bonheur+Tunis",
+   "priceRange": "€€",
+   "specialite": "Tunisienne sucrée",
+   "nombreAvis": 1670,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r44"
+  },
+  {
+   "nom": "Café Sidi Bou Said",
+   "type": "Pâtisserie & Café",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Thé aux pignons à Tunis.",
+   "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Sidi+Bou+Said+Tunis",
+   "priceRange": "€€",
+   "specialite": "Thé aux pignons",
+   "nombreAvis": 2274,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "calme",
+    "familial",
+    "livraison"
+   ],
+   "id": "r45"
+  }
+ ],
+ "mosquees": [
+  {
+   "id": "m1",
+   "nom": "Mosquée de la Zitouna (Grande Mosquée de Tunis)",
+   "nom_arabe": "جامع الزيتونة",
+   "type": "Mosquée historique universitaire",
+   "statut": "Plus ancienne mosquée de Tunisie",
+   "adresse": "Médina de Tunis",
+   "quartier": "Médina",
+   "capacite": 8000,
+   "annee_construction": "734",
+   "style_architectural": "Arabo-islamique avec influences byzantines",
+   "coordonnees": {
+    "lat": 36.7989,
+    "lng": 10.1723
+   },
+   "acces_non_musulmans": false,
+   "note": 4.9,
+   "avis_count": 23456,
+   "description": "La Grande Mosquée de Tunis fondée en 734, mère de l'université islamique de la Zitouna. 184 colonnes romaines récupérées de Carthage et d'autres sites antiques. Centre du savoir islamique en Afrique du Nord pendant des siècles.",
+   "anecdote": "Les colonnes de la salle de prière proviennent des temples romains de Carthage et d'autres cités antiques — un recyclage architectural extraordinaire. Ibn Khaldoun y étudia au 14ème siècle.",
+   "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=600"
+  },
+  {
+   "id": "m2",
+   "nom": "Mosquée des Teinturiers (Hmida Dey)",
+   "type": "Mosquée ottomane",
+   "adresse": "Souk des Teinturiers, Médina",
+   "quartier": "Médina",
+   "annee_construction": "1726",
+   "style_architectural": "Ottoman-hussinite",
+   "coordonnees": {
+    "lat": 36.7978,
+    "lng": 10.1734
+   },
+   "acces_non_musulmans": false,
+   "note": 4.7,
+   "avis_count": 3456,
+   "description": "Mosquée du bey Hussin Bel Ali construite en 1726 dans le souk des teinturiers. Minaret octogonal ottoman, décor de majolique et plâtre sculpté."
+  },
+  {
+   "id": "m3",
+   "nom": "Mosquée de Sidi Youssef Dey",
+   "type": "Mosquée ottomane historique",
+   "adresse": "Médina, Tunis",
+   "quartier": "Médina",
+   "annee_construction": "1616",
+   "style_architectural": "Ottoman pur",
+   "hauteur_minaret_m": 28,
+   "coordonnees": {
+    "lat": 36.7967,
+    "lng": 10.1723
+   },
+   "acces_non_musulmans": false,
+   "note": 4.6,
+   "avis_count": 1678,
+   "description": "La première mosquée ottomane de Tunisie (1616), construite par le bey Youssef Dey. Le minaret octogonal turc contrastait avec les minarets carrés nord-africains — une innovation architecturale."
+  },
+  {
+   "id": "m4",
+   "nom": "Mosquée de la Kasbah",
+   "type": "Mosquée almohade",
+   "adresse": "Place de la Kasbah, Médina",
+   "quartier": "Kasbah",
+   "annee_construction": "1231",
+   "style_architectural": "Almohade nord-africain",
+   "coordonnees": {
+    "lat": 36.7945,
+    "lng": 10.1701
+   },
+   "acces_non_musulmans": false,
+   "note": 4.7,
+   "avis_count": 4567,
+   "description": "Mosquée almohade du 13ème siècle face au palais de la Kasbah (gouvernement tunisien actuel). Minaret carré à lambrequins, décor de zelliges et stuc sculpté. Style maghrébin pur."
+  },
+  {
+   "id": "m5",
+   "nom": "Zaouïa de Sidi Ben Arous",
+   "type": "Zaouïa soufie",
+   "adresse": "Médina, Tunis",
+   "quartier": "Médina",
+   "annee_construction": "15ème siècle",
+   "coordonnees": {
+    "lat": 36.7985,
+    "lng": 10.1728
+   },
+   "acces_non_musulmans": true,
+   "note": 4.5,
+   "avis_count": 1234,
+   "description": "Zaouïa soufie de la confrérie Qadiriyya — rituel du Dhikr le jeudi soir avec chants et mouvements de dévotion."
+  },
+  {
+   "id": "m6",
+   "nom": "Mosquée Halfaouine (Sidi Mehrez)",
+   "type": "Mosquée historique",
+   "adresse": "Halfaouine, Tunis",
+   "quartier": "Halfaouine",
+   "annee_construction": "1692",
+   "style_architectural": "Hussinite ottomano-africain",
+   "coordonnees": {
+    "lat": 36.8034,
+    "lng": 10.1712
+   },
+   "acces_non_musulmans": false,
+   "note": 4.6,
+   "avis_count": 2134,
+   "description": "La mosquée Sidi Mehrez dans le quartier populaire de Halfaouine — dômes en faïence verte, piliers de marbre, lieu du film tunisien éponyme de Férid Boughedir (1990)."
+  },
+  {
+   "id": "m7",
+   "nom": "Grande Mosquée de La Marsa",
+   "type": "Mosquée balnéaire moderne",
+   "adresse": "La Marsa, Tunis",
+   "quartier": "La Marsa",
+   "annee_construction": "1928",
+   "coordonnees": {
+    "lat": 36.8823,
+    "lng": 10.3245
+   },
+   "acces_non_musulmans": false,
+   "note": 4.4,
+   "avis_count": 1234,
+   "description": "Mosquée de la ville balnéaire de La Marsa, fréquentée par les familles tunisiennes les week-ends. Beau jardin entourant le lieu de culte."
+  },
+  {
+   "id": "m8",
+   "nom": "Mosquée Ksar Saïd",
+   "type": "Mosquée de palais beylical",
+   "adresse": "Ksar Saïd, La Manouba",
+   "quartier": "Manouba",
+   "annee_construction": "19ème siècle",
+   "coordonnees": {
+    "lat": 36.8123,
+    "lng": 10.1023
+   },
+   "acces_non_musulmans": false,
+   "note": 4.3,
+   "avis_count": 567,
+   "description": "Mosquée attachée à l'ancien palais d'été des beys de Tunis à Ksar Saïd — architecture hussinite avec jardins et fontaines."
+  },
+  {
+   "id": "m9",
+   "nom": "Mosquée de Carthage",
+   "type": "Mosquée moderne sur site antique",
+   "adresse": "Carthage, Tunis",
+   "quartier": "Carthage",
+   "annee_construction": "1980",
+   "coordonnees": {
+    "lat": 36.8523,
+    "lng": 10.3289
+   },
+   "acces_non_musulmans": false,
+   "note": 4.3,
+   "avis_count": 345,
+   "description": "Mosquée moderne construite sur la colline de Carthage, non loin des ruines puniques et romaines. Symbolise la continuité islamique sur les sites antiques."
+  },
+  {
+   "id": "m10",
+   "nom": "Mosquée Sidi Bou Saïd",
+   "type": "Mosquée du village bleu",
+   "adresse": "Sidi Bou Saïd",
+   "quartier": "Sidi Bou Saïd",
+   "annee_construction": "14ème siècle",
+   "coordonnees": {
+    "lat": 36.8712,
+    "lng": 10.3423
+   },
+   "acces_non_musulmans": false,
+   "note": 4.6,
+   "avis_count": 2134,
+   "description": "La mosquée historique du village des peintres, avec son minaret blanc et bleu qui se confond avec les maisons. Saint Sidi Bou Saïd (Abu Said al-Baji) est enterré dans la zaouïa attenante."
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Hôtel La Kasbah Tunis",
+   "categorie": "Riad & Boutique",
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Boutique luxe médina à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+La+Kasbah+Tunis+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€€",
+   "nombreAvis": 612,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h1"
+  },
+  {
+   "nom": "Selman Hammamet",
+   "categorie": "Resort & Spa",
+   "score": 4.4,
+   "adresse": "Tunis",
+   "description": "Luxe resort à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Selman+Hammamet+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€€€",
+   "nombreAvis": 1163,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "piscine-non-mixte",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "spa-femmes",
+    "wifi"
+   ],
+   "id": "h2"
+  },
+  {
+   "nom": "Dar El Medina",
+   "categorie": "Riad & Boutique",
+   "score": 4.6,
+   "adresse": "Tunis",
+   "description": "Boutique riad à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Dar+El+Medina+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€€",
+   "nombreAvis": 204,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h3",
+   "lat": 36.7991869,
+   "lng": 10.1695242
+  },
+  {
+   "nom": "Hôtel Africa Meridien",
+   "categorie": "Luxe",
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Luxe à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Africa+Meridien+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€€€",
+   "nombreAvis": 415,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h4",
+   "lat": 36.7994353,
+   "lng": 10.1831772
+  },
+  {
+   "nom": "Mövenpick Hotel du Lac Tunis",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Luxe lac à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=M%C3%B6venpick+Hotel+du+Lac+Tunis+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€€€",
+   "nombreAvis": 2131,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h5",
+   "lat": 36.8354925,
+   "lng": 10.2488672
+  },
+  {
+   "nom": "Regency Tunis Hotel",
+   "categorie": "Luxe",
+   "score": 4.8,
+   "adresse": "Tunis",
+   "description": "Luxe à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Regency+Tunis+Hotel+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€€€",
+   "nombreAvis": 578,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h6"
+  },
+  {
+   "nom": "El Mouradi Gammarth",
+   "categorie": "Resort & Spa",
+   "score": 4.3,
+   "adresse": "Tunis",
+   "description": "Resort à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=El+Mouradi+Gammarth+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€€€",
+   "nombreAvis": 205,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "piscine-non-mixte",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "spa-femmes",
+    "wifi"
+   ],
+   "id": "h7",
+   "lat": 36.9217115,
+   "lng": 10.2877774
+  },
+  {
+   "nom": "Laico Tunis",
+   "categorie": "Luxe",
+   "score": 4.7,
+   "adresse": "Tunis",
+   "description": "Standard-luxe à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Laico+Tunis+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€€€",
+   "nombreAvis": 1172,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h8",
+   "lat": 36.3731796,
+   "lng": 10.5410894
+  },
+  {
+   "nom": "Hôtel Ibis Tunis",
+   "categorie": "Standard",
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Standard à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Ibis+Tunis+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€€",
+   "nombreAvis": 2512,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9",
+   "lat": 36.8114001,
+   "lng": 10.1837885
+  },
+  {
+   "nom": "Hôtel Majestic",
+   "categorie": "Budget",
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Classique budget à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Majestic+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€",
+   "nombreAvis": 2071,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10",
+   "lat": 36.8043087,
+   "lng": 10.1804445
+  },
+  {
+   "nom": "Tunis Grand Hôtel",
+   "categorie": "Budget",
+   "score": 4.8,
+   "adresse": "Tunis",
+   "description": "Centre budget à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Tunis+Grand+H%C3%B4tel+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€",
+   "nombreAvis": 1280,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h11",
+   "lat": 36.8550301,
+   "lng": 10.1623096
+  },
+  {
+   "nom": "Hôtel Eriadh Tunis",
+   "categorie": "Riad & Boutique",
+   "score": 4.5,
+   "adresse": "Tunis",
+   "description": "Budget à Tunis.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Eriadh+Tunis+Tunis",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
+   "priceRange": "€€€",
+   "nombreAvis": 225,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h12"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a1",
+   "nom": "Médina de Tunis — UNESCO Patrimoine",
+   "type": "Patrimoine",
+   "emoji": "🏛️",
+   "duree": "Demi-journée",
+   "prix": "Gratuit",
+   "description": "Se perdre dans les 700 rues de la médina médiévale classée UNESCO — souks d'épices, artisans, mosquées et maisons à patio.",
+   "adapte_famille": true,
+   "adapte_seniors": false,
+   "meilleur_moment": "Matin (9h-12h) pour les souks actifs",
+   "tags": [
+    "UNESCO",
+    "Médina",
+    "Souks"
+   ],
+   "categorie": "Religieux & Spirituel",
+   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina+de+Tunis+%E2%80%94+UNESCO+Patrimoine+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dina+de+Tunis+%E2%80%94+UNESCO+Patrimoine+Tunis",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a2",
+   "nom": "Mosquée de la Zitouna — Extérieur",
+   "type": "Spirituel",
+   "emoji": "🕌",
+   "duree": "30 minutes",
+   "prix": "Gratuit (extérieur)",
+   "description": "La grande mosquée de Tunis (734) — voir le minaret carré et les colonnes romaines depuis l'entrée. Accès aux non-musulmans limité aux salles d'exposition.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "tags": [
+    "Zitouna",
+    "Histoire",
+    "Colonnes romaines"
+   ],
+   "categorie": "Religieux & Spirituel",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+la+Zitouna+%E2%80%94+Ext%C3%A9rieur+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+la+Zitouna+%E2%80%94+Ext%C3%A9rieur+Tunis",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a3",
+   "nom": "Sidi Bou Saïd — Village Bleu et Blanc",
+   "type": "Culture",
+   "emoji": "🏡",
+   "duree": "2-3 heures",
+   "prix": "Gratuit",
+   "description": "Le plus beau village de Tunisie — maisons blanches et bleues sur les falaises, inspiré de Santorini. Cafés, galeries et coucher de soleil sur la Méditerranée.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "tags": [
+    "Village",
+    "Bleu-blanc",
+    "Vue mer"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Sidi+Bou+Sa%C3%AFd+%E2%80%94+Village+Bleu+et+Blanc+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Sidi+Bou+Sa%C3%AFd+%E2%80%94+Village+Bleu+et+Blanc+Tunis",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a4",
+   "nom": "Carthage — Ruines Antiques UNESCO",
+   "type": "Archéologie",
+   "emoji": "🏛️",
+   "duree": "4 heures",
+   "prix": "12 TND (4€)",
+   "description": "Ruines phéniciennes et romaines de Carthage — thermes d'Antonin, tophet, amphithéâtre romain. Musée de Carthage sur la colline de Byrsa.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "adapte_handicap": true,
+   "tags": [
+    "UNESCO",
+    "Carthage",
+    "Romain"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Carthage+%E2%80%94+Ruines+Antiques+UNESCO+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Carthage+%E2%80%94+Ruines+Antiques+UNESCO+Tunis",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a5",
+   "nom": "Musée du Bardo",
+   "type": "Musée",
+   "emoji": "🏺",
+   "duree": "3 heures",
+   "prix": "11 TND (3€)",
+   "description": "Un des plus grands musées du monde pour les mosaïques romaines — 46 salles, collection de 3000 mosaïques, plus grande collection de mosaïques romano-africaines au monde.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "adapte_handicap": true,
+   "tags": [
+    "Mosaïques",
+    "Romain",
+    "Monde"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+du+Bardo+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+du+Bardo+Tunis",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a6",
+   "nom": "Souk des Parfums et Épices — Médina",
+   "type": "Shopping",
+   "emoji": "🛍️",
+   "duree": "2 heures",
+   "prix": "Variable",
+   "description": "Le souk des parfumeurs de la médina — jasmin tunisien, rose de Damas, oud, eau de fleur d'oranger et épices.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "tags": [
+    "Parfums",
+    "Épices",
+    "Médina"
+   ],
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Souk+des+Parfums+et+%C3%89pices+%E2%80%94+M%C3%A9dina+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+des+Parfums+et+%C3%89pices+%E2%80%94+M%C3%A9dina+Tunis",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a7",
+   "nom": "Hammam Slimania — Médina historique",
+   "type": "Bien-être",
+   "emoji": "♨️",
+   "duree": "2 heures",
+   "prix": "10-25 TND (3-7€)",
+   "description": "Hammam ottoman du 18ème siècle dans la médina — gommage et massage à l'huile d'argan dans une atmosphère médiévale.",
+   "adapte_famille": false,
+   "adapte_seniors": true,
+   "a_savoir": "Séances séparées homme/femme, horaires selon les jours",
+   "tags": [
+    "Hammam",
+    "Ottoman",
+    "Gommage"
+   ],
+   "categorie": "Hammam & Bien-être",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+Slimania+%E2%80%94+M%C3%A9dina+historique+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+Slimania+%E2%80%94+M%C3%A9dina+historique+Tunis",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a8",
+   "nom": "Promenade avenue Bourguiba",
+   "type": "Promenade",
+   "emoji": "🚶",
+   "duree": "1 heure",
+   "prix": "Gratuit",
+   "description": "L'avenue coloniale de 1,5 km avec platanes centenaires — la 'Champs-Élysées de Tunis' avec fontaines, cafés et théâtre municipal.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "adapte_handicap": true,
+   "tags": [
+    "Promenade",
+    "Colonial",
+    "Platanes"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+avenue+Bourguiba+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+avenue+Bourguiba+Tunis",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a9",
+   "nom": "Tour de Tunis en voiture de chevaux",
+   "type": "Tourisme",
+   "emoji": "🐴",
+   "duree": "2 heures",
+   "prix": "40 TND (12€)",
+   "description": "Calèche depuis la médina jusqu'aux bains romains de Carthage — une façon romantique de découvrir la Tunis historique.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "tags": [
+    "Calèche",
+    "Romantique",
+    "Carthage"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Tour+de+Tunis+en+voiture+de+chevaux+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+de+Tunis+en+voiture+de+chevaux+Tunis",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a10",
+   "nom": "Concert Malouf — Musique Andalouse de Tunis",
+   "type": "Culture",
+   "emoji": "🎵",
+   "duree": "3 heures",
+   "prix": "20-50 TND (6-15€)",
+   "description": "Le malouf est la musique classique andalouse transmise par les exilés de 1492 — concerts au Théâtre Municipal ou dans les cafés de la médina.",
+   "adapte_famille": false,
+   "adapte_seniors": true,
+   "tags": [
+    "Malouf",
+    "Andalou",
+    "Concert"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Concert+Malouf+%E2%80%94+Musique+Andalouse+de+Tunis+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Concert+Malouf+%E2%80%94+Musique+Andalouse+de+Tunis+Tunis",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a11",
+   "nom": "Plage de La Marsa",
+   "type": "Plage",
+   "emoji": "🏖️",
+   "duree": "Demi-journée",
+   "prix": "Gratuit",
+   "description": "Plage balnéaire populaire à 20 minutes de Tunis — familles tunisiennes, cafés bord de mer et baignade en Méditerranée.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "meilleur_moment": "Mai-Juin ou Septembre (moins bondé)",
+   "tags": [
+    "Plage",
+    "Famille",
+    "Méditerranée"
+   ],
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Plage+de+La+Marsa+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+La+Marsa+Tunis",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a12",
+   "nom": "Atelier poterie Nabeul (excursion)",
+   "type": "Artisanat",
+   "emoji": "🏺",
+   "duree": "Journée",
+   "prix": "50-80 TND (15-24€)",
+   "description": "Excursion à Nabeul (60 km) — capitale tunisienne de la poterie et des céramiques, ateliers d'artisans, marché du vendredi.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "tags": [
+    "Artisanat",
+    "Poterie",
+    "Nabeul"
+   ],
+   "categorie": "Shopping & Souks",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+poterie+Nabeul+%28excursion%29+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+poterie+Nabeul+%28excursion%29+Tunis",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a13",
+   "nom": "Visite Dar Ben Abdallah — Musée Cité",
+   "type": "Musée",
+   "emoji": "🏛️",
+   "duree": "1 heure",
+   "prix": "5 TND (1.50€)",
+   "description": "Palais du 18ème siècle abritant le Musée des Arts et Traditions populaires — costumes régionaux, bijoux berbères et vie tunisienne traditionnelle.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "tags": [
+    "Musée",
+    "Arts populaires",
+    "Palais"
+   ],
+   "categorie": "Histoire & Culture",
+   "mapsUrl": "https://maps.google.com/?q=Visite+Dar+Ben+Abdallah+%E2%80%94+Mus%C3%A9e+Cit%C3%A9+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Visite+Dar+Ben+Abdallah+%E2%80%94+Mus%C3%A9e+Cit%C3%A9+Tunis",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a14",
+   "nom": "Dégustation Huile d'Olive Tunisienne",
+   "type": "Gastronomie",
+   "emoji": "🫒",
+   "duree": "2 heures",
+   "prix": "30 TND (9€)",
+   "description": "La Tunisie est le 4ème producteur mondial d'huile d'olive — dégustation de 10 huiles AOC dans une huilerie traditionnelle de la médina.",
+   "adapte_famille": true,
+   "adapte_seniors": true,
+   "tags": [
+    "Huile d'olive",
+    "Dégustation",
+    "Artisanat"
+   ],
+   "categorie": "Gastronomie",
+   "mapsUrl": "https://maps.google.com/?q=D%C3%A9gustation+Huile+d%27Olive+Tunisienne+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=D%C3%A9gustation+Huile+d%27Olive+Tunisienne+Tunis",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "id": "a15",
+   "nom": "Excursion Lac de Tunis Kayak",
+   "type": "Nature",
+   "emoji": "🚣",
+   "duree": "2 heures",
+   "prix": "40 TND (12€)",
+   "description": "Kayak sur le lac de Tunis avec vue sur la médina et les flamants roses — la capitale vue de l'eau dans un paysage unique.",
+   "adapte_famille": true,
+   "adapte_seniors": false,
+   "tags": [
+    "Lac",
+    "Kayak",
+    "Flamants roses"
+   ],
+   "categorie": "Nature & Plein air",
+   "mapsUrl": "https://maps.google.com/?q=Excursion+Lac+de+Tunis+Kayak+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Excursion+Lac+de+Tunis+Kayak+Tunis",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Tunis",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Tunis+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Tunis+Tunis",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Grand marché central de Tunis",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Tunis+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Tunis+Tunis",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Tunis",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Tunis+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Tunis+Tunis",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Musée de la ville de Tunis",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Tunis+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Tunis+Tunis",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Food tour halal de Tunis",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Tunis+Tunis",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Tunis+Tunis",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "road_trips": [
+  {
+   "id": "rt1",
+   "titre": "Circuit Médinas du Nord",
+   "emoji": "🏰",
+   "duree": "5 jours",
+   "distance_km": 600,
+   "difficulte": "Facile",
+   "budget_estime_eur": "200-350€",
+   "etapes": [
+    {
+     "ville": "Tunis",
+     "nuits": 2,
+     "highlights": [
+      "Médina UNESCO",
+      "Zitouna",
+      "Carthage",
+      "Sidi Bou Saïd"
+     ]
+    },
+    {
+     "ville": "Bizerte",
+     "nuits": 1,
+     "highlights": [
+      "Vieux port",
+      "Lac de Bizerte",
+      "Corniche"
+     ]
+    },
+    {
+     "ville": "Hammamet",
+     "nuits": 2,
+     "highlights": [
+      "Médina de Hammamet",
+      "Plages",
+      "Souk jasmin"
+     ]
+    }
+   ],
+   "conseils_halal": "Toutes les médinas tunisiennes sont 100% halal. Restaurants de la médina sans alcool généralement. Cafés avec thé à la menthe partout.",
+   "tags": [
+    "Médinas",
+    "Côte",
+    "Jasmin"
+   ]
+  },
+  {
+   "id": "rt2",
+   "titre": "Grand Tour Tunisie — Nord au Sud",
+   "emoji": "🐪",
+   "duree": "10 jours",
+   "distance_km": 2000,
+   "difficulte": "Modéré",
+   "budget_estime_eur": "400-700€",
+   "etapes": [
+    {
+     "ville": "Tunis",
+     "nuits": 2,
+     "highlights": [
+      "Médina",
+      "Bardo"
+     ]
+    },
+    {
+     "ville": "Kairouan",
+     "nuits": 1,
+     "highlights": [
+      "Grande Mosquée de Kairouan (670)",
+      "Aghlabide",
+      "Sbeitla"
+     ]
+    },
+    {
+     "ville": "Sfax",
+     "nuits": 1,
+     "highlights": [
+      "Médina Sfax",
+      "Kerkennah"
+     ]
+    },
+    {
+     "ville": "Djerba",
+     "nuits": 2,
+     "highlights": [
+      "El Ghriba",
+      "Houmt Souk",
+      "Plages"
+     ]
+    },
+    {
+     "ville": "Douz",
+     "nuits": 2,
+     "highlights": [
+      "Porte du Sahara",
+      "Chameau",
+      "Coucher de soleil dunes"
+     ]
+    }
+   ],
+   "conseils_halal": "Kairouan est la 4ème ville sainte de l'Islam — 100% halal. Toute la Tunisie est halal-majority.",
+   "tags": [
+    "Grand tour",
+    "Sahara",
+    "Kairouan"
+   ]
+  },
+  {
+   "id": "rt3",
+   "titre": "Côte Bleue Méditerranéenne",
+   "emoji": "🌊",
+   "duree": "4 jours",
+   "distance_km": 400,
+   "difficulte": "Facile",
+   "budget_estime_eur": "150-280€",
+   "etapes": [
+    {
+     "ville": "Tunis",
+     "nuits": 1,
+     "highlights": [
+      "Sidi Bou Saïd",
+      "La Marsa"
+     ]
+    },
+    {
+     "ville": "Nabeul",
+     "nuits": 1,
+     "highlights": [
+      "Poterie",
+      "Marché vendredi"
+     ]
+    },
+    {
+     "ville": "Hammamet",
+     "nuits": 2,
+     "highlights": [
+      "Médina",
+      "Plage",
+      "Jasmin"
+     ]
+    }
+   ],
+   "conseils_halal": "La côte Cap Bon est très touristic — vérifier logo halal dans restaurants de bord de mer.",
+   "tags": [
+    "Côte",
+    "Méditerranée",
+    "Cap Bon"
+   ]
+  }
+ ],
+ "voyages_par_type": {
+  "en_couple": {
+   "emoji": "💑",
+   "couleur": "#e91e8c",
+   "intro": "Tunis pour un couple c'est Sidi Bou Saïd au coucher du soleil, un dîner dans un palais de la médina et les parfums de jasmin de la médina au printemps.",
+   "top_experiences": [
+    {
+     "titre": "Sidi Bou Saïd coucher de soleil",
+     "details": "Terrasse avec vue sur la mer",
+     "prix": "5€ café"
+    },
+    {
+     "titre": "Dîner Dar El Jeld",
+     "details": "Gastronomique dans palais beylical",
+     "prix": "45€/pers"
+    },
+    {
+     "titre": "Hammam couple médina",
+     "details": "Gommage à l'argan à deux",
+     "prix": "25€"
+    }
+   ],
+   "hotels_recommandes": [
+    "Maison d'Hôtes Sidi Bou Saïd",
+    "Dar El Medina"
+   ],
+   "conseils": "Printemps idéal (mars-mai) pour le jasmin en fleur et les températures parfaites."
+  },
+  "en_famille": {
+   "emoji": "👨‍👩‍👧‍👦",
+   "couleur": "#4CAF50",
+   "intro": "Tunis est une destination excellente pour les familles — plages à 20 minutes, musées pour enfants, cuisine douce et prix très abordables.",
+   "top_experiences": [
+    {
+     "titre": "Plage de La Marsa",
+     "details": "Plage familiale à 20 min",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Musée du Bardo mosaïques",
+     "details": "Les enfants adorent les mosaïques colorées",
+     "prix": "3€"
+    },
+    {
+     "titre": "Médina découverte",
+     "details": "Artisans et souks vivants",
+     "prix": "Gratuit"
+    }
+   ],
+   "hotels_recommandes": [
+    "El Mouradi Gammarth",
+    "Hôtel Africa Meridien"
+   ],
+   "conseils": "Juillet-Août chaud mais plages excellentes pour enfants. Éviter la médina en milieu d'après-midi (chaleur et foule)."
+  },
+  "entre_amis": {
+   "emoji": "👫",
+   "couleur": "#9C27B0",
+   "intro": "Tunis entre amis c'est les cafés de l'avenue Bourguiba à minuit, les concerts de malouf dans la médina et le karting sur la côte de Gammarth.",
+   "top_experiences": [
+    {
+     "titre": "Café Zitouna nuit",
+     "details": "Chicha et thé sous les étoiles",
+     "prix": "8€"
+    },
+    {
+     "titre": "Food tour médina",
+     "details": "Brik, lablabi et makroud",
+     "prix": "15€"
+    },
+    {
+     "titre": "Concert malouf médina",
+     "details": "Musique andalouse en live",
+     "prix": "10€"
+    }
+   ],
+   "conseils": "La vie nocturne de Tunis est active et mixte — alcool disponible dans certains restaurants mais nombreux cafés sans alcool."
+  },
+  "voyage_solo": {
+   "emoji": "🎒",
+   "couleur": "#FF9800",
+   "intro": "Tunis solo c'est la médina et ses habitants accueillants, les cafés où les étrangers sont toujours bien accueillis et les transports publics pratiques.",
+   "top_experiences": [
+    {
+     "titre": "Se perdre dans la médina seul",
+     "details": "La médina révèle ses secrets peu à peu",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Café des Nattes Sidi Bou Saïd",
+     "details": "L'endroit à photographier",
+     "prix": "5€"
+    },
+    {
+     "titre": "Musée du Bardo en solo",
+     "details": "3h de mosaïques en paix",
+     "prix": "3€"
+    }
+   ],
+   "conseil_securite": "Tunis est sûre pour les voyageurs solos y compris femmes. Rester vigilant la nuit dans certains quartiers."
+  },
+  "voyage_spirituel": {
+   "emoji": "🕌",
+   "couleur": "#2196F3",
+   "intro": "Tunis est une capitale islamique de la connaissance — la Zitouna millénaire, les zaouïas soufies et la tradition du malouf islamique offrent une expérience spirituelle unique.",
+   "top_experiences": [
+    {
+     "titre": "Mosquée de la Zitouna",
+     "details": "1300 ans d'enseignement islamique",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Zaouïa soufie jeudi soir",
+     "details": "Dhikr et chants de dévotion",
+     "prix": "Gratuit"
+    },
+    {
+     "titre": "Kairouan Omra du Maghreb",
+     "details": "7 visites = 1 Omra (tradition locale)",
+     "prix": "50 TND trajet"
+    }
+   ],
+   "conseil_pratique": "Kairouan (160 km) est la 4ème ville sainte — excursion spirituelle indispensable depuis Tunis."
+  }
+ },
+ "boucheries": [
+  {
+   "id": "b1",
+   "nom": "Boucherie Sidi Ben Arous",
+   "adresse": "Médina de Tunis",
+   "quartier": "Médina",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau berbère",
+    "Veau de lait",
+    "Mergez maison",
+    "Abats"
+   ],
+   "note": 4.6,
+   "horaires": "6h-18h (fermé vendredi matin)"
+  },
+  {
+   "id": "b2",
+   "nom": "Boucherie du Marché Central",
+   "adresse": "Marché Central, Tunis",
+   "quartier": "Centre-ville",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau frais",
+    "Veau",
+    "Poulet fermier"
+   ],
+   "note": 4.5,
+   "horaires": "7h-18h (fermé dimanche)"
+  },
+  {
+   "id": "b3",
+   "nom": "Halal Premium Mutuelleville",
+   "adresse": "Mutuelleville, Tunis",
+   "quartier": "Mutuelleville",
+   "halal_certifie": true,
+   "produits": [
+    "Viandes importées",
+    "Poulet Label",
+    "Dinde"
+   ],
+   "note": 4.4,
+   "horaires": "8h-20h"
+  },
+  {
+   "id": "b4",
+   "nom": "Boucherie Sidi El Béchir",
+   "adresse": "Bab El Khadra, Tunis",
+   "quartier": "Bab El Khadra",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau populaire",
+    "Merguez traditionnelles",
+    "Tripes"
+   ],
+   "note": 4.3,
+   "horaires": "5h-17h"
+  },
+  {
+   "id": "b5",
+   "nom": "Marché du vendredi La Marsa",
+   "adresse": "La Marsa, Tunis",
+   "quartier": "La Marsa",
+   "halal_certifie": true,
+   "produits": [
+    "Agneau fermier",
+    "Volailles locales",
+    "Oeufs frais"
+   ],
+   "note": 4.5,
+   "horaires": "Vendredi 6h-13h uniquement"
+  }
+ ],
+ "boulangeries": [
+  {
+   "id": "bo1",
+   "nom": "Pâtisserie M'rabet (médina)",
+   "adresse": "Souk des Chéchias, Médina",
+   "quartier": "Médina",
+   "description": "La plus ancienne pâtisserie de la médina — baklava de Tunis, makroudh dattes, zlabia fraîche.",
+   "specialites": [
+    "Baklava huile d'argan",
+    "Makroudh (semoule-dattes)",
+    "Kaak bil warqa"
+   ],
+   "prix": "1-5 TND",
+   "horaires": "8h-19h",
+   "note": 4.8
+  },
+  {
+   "id": "bo2",
+   "nom": "Boulangerie Nationale de Tunis",
+   "adresse": "Avenue Bourguiba, Tunis",
+   "quartier": "Centre-ville",
+   "description": "Baguette tunisienne (la fameuse baguette du pain à 250 grammes) et pain arabe depuis 1960.",
+   "specialites": [
+    "Baguette tunisienne",
+    "Pain de seigle",
+    "Croissant au beurre"
+   ],
+   "prix": "0.3-1 TND",
+   "horaires": "5h-20h",
+   "note": 4.3
+  },
+  {
+   "id": "bo3",
+   "nom": "Samali Patisserie",
+   "adresse": "Les Berges du Lac, Tunis",
+   "quartier": "Berges du Lac",
+   "description": "Pâtisseries tunisiennes modernes et orientales dans le quartier d'affaires.",
+   "specialites": [
+    "Baklava moderne",
+    "Ghriba",
+    "Mhalbiya rose"
+   ],
+   "prix": "3-15 TND",
+   "horaires": "9h-22h",
+   "note": 4.5
+  },
+  {
+   "id": "bo4",
+   "nom": "Msemmen de Halfaouine",
+   "adresse": "Halfaouine, Tunis",
+   "quartier": "Halfaouine",
+   "description": "Msemmen feuilleté et ftir au beurre préparés à la main depuis le matin dans le quartier populaire.",
+   "specialites": [
+    "Msemmen feuilleté",
+    "Ftir au beurre-miel",
+    "Harcha semoule"
+   ],
+   "prix": "0.5-1.5 TND",
+   "horaires": "6h-14h",
+   "note": 4.7
+  },
+  {
+   "id": "bo5",
+   "nom": "Pain Artisan Sidi Bou Saïd",
+   "adresse": "Sidi Bou Saïd village",
+   "quartier": "Sidi Bou Saïd",
+   "description": "Boulangerie artisanale du village bleu — pain kabyle à l'huile d'olive et kaak à l'anis.",
+   "specialites": [
+    "Pain à l'huile d'olive",
+    "Kaak anis",
+    "Macaron jasmin"
+   ],
+   "prix": "1-5 TND",
+   "horaires": "7h-19h",
+   "note": 4.6
+  }
+ ],
+ "articles_lies": [
+  "guide-halal-tunisie",
+  "medina-tunis-guide",
+  "cuisine-tunisienne"
+ ],
+ "villes_proches": [
+  "alger",
+  "casablanca",
+  "marrakech"
+ ],
+ "destinations_combiner": [
+  {
+   "ville": "Kairouan",
+   "distance_km": 160,
+   "raison": "4ème ville sainte de l'Islam, Grande Mosquée de 670, Aghlabides — incontournable"
+  },
+  {
+   "ville": "Djerba",
+   "distance_km": 510,
+   "raison": "Île paradisiaque, médina de Houmt Souk, synagogue El Ghriba, plages"
+  },
+  {
+   "ville": "Hammamet",
+   "distance_km": 65,
+   "raison": "Station balnéaire méditerranéenne, médina fleurie, jasmin"
+  }
+ ],
+ "conseils_halal": "La Tunisie est un pays musulman à 99% mais laïc — la nourriture est majoritairement halal mais l'alcool est légal. Dans les restaurants de la médina et les cafés populaires, tout est halal. Dans les hôtels internationaux et restaurants touristiques, vérifier. Les boucheries du marché central sont toutes halal par tradition.",
+ "codeISO": "TN",
+ "image": "https://images.unsplash.com/photo-1580836738558-e6c749ca8e53?w=1400&q=85",
+ "continent": "Afrique",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Tunis — Halal Trust Score 4/5.",
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée centrale de Tunis",
+   "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Tunis",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Tunis+Tunis",
+   "capacite": 3803,
+   "anneeConstruction": 2003,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 36.819,
     "lng": 10.1658
+   }
   },
-  "score_halal": 4.3,
-  "score_securite": 4,
-  "score_famille": 4,
-  "score_budget": 5,
-  "description": "La médina de Tunis classée UNESCO, la Mosquée de la Zitouna millénaire et une cuisine maghrébine parmi les plus raffinées du monde arabe.",
-  "description_courte": "La médina dorée, capitale du jasmin",
-  "description_longue": "Tunis est une ville à double visage — la médina médiévale classée UNESCO avec ses souks labyrinthiques et ses zaouïas soufies, et la ville moderne coloniale avec ses cafés art déco et ses villas blanches. La Tunisie est un pays à 99% musulman mais avec une longue tradition d'ouverture — laïcité constitutionnelle, femmes voilées et non voilées côte à côte, cuisine fine mêlant influences berbères, arabes, ottomanes et méditerranéennes.",
-  "image_hero": "https://images.unsplash.com/photo-1580836738558-e6c749ca8e53?w=1400&q=85",
-  "image_alt": "Médina de Tunis avec minarets de la mosquée Zitouna",
-  "meta_title": "Tunis Halal 2025 — Guide Voyage Musulman",
-  "meta_description": "Guide halal Tunis : restaurants, mosquée Zitouna, médina UNESCO, boulangeries, activités. La capitale tunisienne authentique.",
-  "statistiques": {
-    "mosquees": 800,
-    "restaurants_halal": 5000,
-    "hotels_halal": 100,
-    "boucheries_halal": 1000,
-    "habitants_musulmans_pct": 99,
-    "habitants": 2800000,
-    "superficie_km2": 346
+  {
+   "nom": "Grande Mosquée de Tunis",
+   "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Tunis",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Tunis+Tunis",
+   "capacite": 4299,
+   "anneeConstruction": 1979,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 36.819,
+    "lng": 10.1658
+   }
   },
-  "infos_pratiques": {
-    "langue_officielle": "Arabe",
-    "langues_parlees": [
-      "Arabe",
-      "Français",
-      "Tunisien (darija)"
-    ],
-    "monnaie": "Dinar tunisien (TND)",
-    "taux_change_eur": "1 EUR ≈ 3.40 TND",
-    "meilleure_periode": "Avril-Juin et Septembre-Novembre",
-    "a_eviter": "Juillet-Août (très chaud, 38°C+, tourists)",
-    "fuseau_horaire": "CET (UTC+1)",
-    "appel_priere": "Oui, dans toute la médina",
-    "nourriture_halal": "Très majoritairement halal — vérifier dans hôtels et restaurants internationaux",
-    "alcool": "Légal et disponible dans restaurants touristiques, supermarchés. Restaurants populaires tunisiens sans alcool.",
-    "tenue_recommandee": "Décontractée acceptable, tenue modeste dans la médina et les mosquées",
-    "securite": "Bonne sécurité depuis 2015, présence policière visible",
-    "transport_local": "Métro léger, bus, louage (taxi collectif), taxis jaunes",
-    "aeroport": "Aéroport Tunis-Carthage (TUN) — 8 km du centre",
-    "visa": "Exemption visa 3 mois pour les ressortissants français, belges, suisses"
+  {
+   "nom": "Mosquée Al-Noor de Tunis",
+   "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Tunis",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Tunis+Tunis",
+   "capacite": 6756,
+   "anneeConstruction": 1936,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 36.819,
+    "lng": 10.1658
+   }
   },
-  "meteo_par_mois": [
-    {
-      "mois": "Janvier",
-      "temp_max": 14,
-      "temp_min": 6,
-      "pluie_jours": 9,
-      "emoji": "🌧️"
-    },
-    {
-      "mois": "Février",
-      "temp_max": 15,
-      "temp_min": 7,
-      "pluie_jours": 7,
-      "emoji": "🌦️"
-    },
-    {
-      "mois": "Mars",
-      "temp_max": 18,
-      "temp_min": 9,
-      "pluie_jours": 7,
-      "emoji": "🌤️"
-    },
-    {
-      "mois": "Avril",
-      "temp_max": 21,
-      "temp_min": 12,
-      "pluie_jours": 5,
-      "emoji": "⛅"
-    },
-    {
-      "mois": "Mai",
-      "temp_max": 26,
-      "temp_min": 16,
-      "pluie_jours": 3,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Juin",
-      "temp_max": 31,
-      "temp_min": 20,
-      "pluie_jours": 1,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Juillet",
-      "temp_max": 33,
-      "temp_min": 23,
-      "pluie_jours": 0,
-      "emoji": "🌞"
-    },
-    {
-      "mois": "Août",
-      "temp_max": 34,
-      "temp_min": 23,
-      "pluie_jours": 1,
-      "emoji": "🌞"
-    },
-    {
-      "mois": "Septembre",
-      "temp_max": 29,
-      "temp_min": 20,
-      "pluie_jours": 3,
-      "emoji": "☀️"
-    },
-    {
-      "mois": "Octobre",
-      "temp_max": 24,
-      "temp_min": 15,
-      "pluie_jours": 5,
-      "emoji": "⛅"
-    },
-    {
-      "mois": "Novembre",
-      "temp_max": 18,
-      "temp_min": 10,
-      "pluie_jours": 8,
-      "emoji": "🌧️"
-    },
-    {
-      "mois": "Décembre",
-      "temp_max": 14,
-      "temp_min": 7,
-      "pluie_jours": 9,
-      "emoji": "🌧️"
-    }
-  ],
-  "restaurants": [
-    {
-      "nom": "Dar El Jeld",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Tunis",
-      "description": "Gastronomique tunisien, palais historique à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+El+Jeld+Tunis",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique tunisien",
-      "nombreAvis": 2802,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Essaraya",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Tunis",
-      "description": "Riad XIXe, cuisine tunisienne d'exception à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Essaraya+Tunis",
-      "priceRange": "€€€€",
-      "specialite": "Riad xixe",
-      "nombreAvis": 1567,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "La Closerie des Jasmin",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Tunis",
-      "description": "Villa jardin, gastronomique à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=La+Closerie+des+Jasmin+Tunis",
-      "priceRange": "€€€€",
-      "specialite": "Villa jardin",
-      "nombreAvis": 322,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "El Ali",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Tunis",
-      "description": "Halwa et sweets depuis 1949 à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=El+Ali+Tunis",
-      "priceRange": "€€",
-      "specialite": "Halwa et sweets depuis 1949",
-      "nombreAvis": 2994,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Le Baroque",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Tunis",
-      "description": "Français-tunisien fusion halal à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Baroque+Tunis",
-      "priceRange": "€€",
-      "specialite": "Français-tunisien fusion halal",
-      "nombreAvis": 3306,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "La Tour d'Ivoire",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Vue mer, moderne à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=La+Tour+d%27Ivoire+Tunis",
-      "priceRange": "€€€€",
-      "specialite": "Vue mer",
-      "nombreAvis": 1277,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Diwan Restaurant",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Traditionnel médina à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Diwan+Restaurant+Tunis",
-      "priceRange": "€€",
-      "specialite": "Traditionnel médina",
-      "nombreAvis": 2074,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Chez Slah",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Poissons et fruits de mer à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Slah+Tunis",
-      "priceRange": "€",
-      "specialite": "Poissons et fruits de mer",
-      "nombreAvis": 2066,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide",
-        "vue-mer"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Chez Nous",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Brasserie franco-tunisienne à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Nous+Tunis",
-      "priceRange": "€",
-      "specialite": "Brasserie franco-tunisienne",
-      "nombreAvis": 3585,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Restaurant Carthage",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Ambiance antique à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Carthage+Tunis",
-      "priceRange": "€€",
-      "specialite": "Ambiance antique",
-      "nombreAvis": 1762,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Le Petit Cardinal",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Tunis",
-      "description": "Bistro halal à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Petit+Cardinal+Tunis",
-      "priceRange": "€€",
-      "specialite": "Bistro halal",
-      "nombreAvis": 2249,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Le Pirate",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Tunis",
-      "description": "Fruits de mer à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Le+Pirate+Tunis",
-      "priceRange": "€€",
-      "specialite": "Fruits de mer",
-      "nombreAvis": 492,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "vue-mer"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Gastronomia",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Tunis",
-      "description": "Gastronomique moderne à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Gastronomia+Tunis",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique moderne",
-      "nombreAvis": 1643,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "El Mankal",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Traditionnel de quartier à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=El+Mankal+Tunis",
-      "priceRange": "€€",
-      "specialite": "Traditionnel de quartier",
-      "nombreAvis": 296,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "La Marsa Fish & Chips",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Tunis",
-      "description": "Poissons La Marsa à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=La+Marsa+Fish+%26+Chips+Tunis",
-      "priceRange": "€€",
-      "specialite": "Poissons la marsa",
-      "nombreAvis": 542,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Café des Nattes Sidi Bou Said",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Tunis",
-      "description": "Panoramique à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+des+Nattes+Sidi+Bou+Said+Tunis",
-      "priceRange": "€€",
-      "specialite": "Panoramique",
-      "nombreAvis": 1144,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Dar Zarrouk",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Tunis",
-      "description": "Vue baie de Tunis, gastronomique à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Dar+Zarrouk+Tunis",
-      "priceRange": "€€€€",
-      "specialite": "Vue baie de tunis",
-      "nombreAvis": 1815,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "L'Aghlabide",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Tunis",
-      "description": "Cuisine historique à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=L%27Aghlabide+Tunis",
-      "priceRange": "€€",
-      "specialite": "Cuisine historique",
-      "nombreAvis": 1188,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Les 3 Chefs",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Tunis",
-      "description": "Gastronomique à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Les+3+Chefs+Tunis",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique",
-      "nombreAvis": 3284,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Maji Restaurant",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Fusion tunisio-méditerranée à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Maji+Restaurant+Tunis",
-      "priceRange": "€€",
-      "specialite": "Fusion tunisio-méditerranée",
-      "nombreAvis": 795,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Restaurant El Kalout",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Salle Kairouan à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+El+Kalout+Tunis",
-      "priceRange": "€€",
-      "specialite": "Salle kairouan",
-      "nombreAvis": 2881,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Plats Locaux Hafsia",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Tunis",
-      "description": "Médina halal à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Plats+Locaux+Hafsia+Tunis",
-      "priceRange": "€€",
-      "specialite": "Médina halal",
-      "nombreAvis": 1024,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "Ksksi House",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Couscous spécialisé à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Ksksi+House+Tunis",
-      "priceRange": "€€",
-      "specialite": "Couscous spécialisé",
-      "nombreAvis": 2499,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Restaurant Dar Bchir",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Maison bourgeoise à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Dar+Bchir+Tunis",
-      "priceRange": "€€",
-      "specialite": "Maison bourgeoise",
-      "nombreAvis": 431,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Chez Aziz",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Friterie de la mer à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Chez+Aziz+Tunis",
-      "priceRange": "€",
-      "specialite": "Friterie de la mer",
-      "nombreAvis": 665,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Snack 9 Décembre",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Tunis",
-      "description": "Populaire à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Snack+9+D%C3%A9cembre+Tunis",
-      "priceRange": "€",
-      "specialite": "Populaire",
-      "nombreAvis": 361,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "rapide"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "Fondouk El Attarine",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Tunis",
-      "description": "Médina à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Fondouk+El+Attarine+Tunis",
-      "priceRange": "€€",
-      "specialite": "Médina",
-      "nombreAvis": 1252,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "L'Authentique Tunisien",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Copieux local à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=L%27Authentique+Tunisien+Tunis",
-      "priceRange": "€€",
-      "specialite": "Copieux local",
-      "nombreAvis": 893,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "Pasta Palace Tunis",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Tunis",
-      "description": "Pâtes tunisiennes à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Pasta+Palace+Tunis+Tunis",
-      "priceRange": "€€€€",
-      "specialite": "Pâtes tunisiennes",
-      "nombreAvis": 1253,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Indien Palace Tunis",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Indien halal à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Indien+Palace+Tunis+Tunis",
-      "priceRange": "€€€€",
-      "specialite": "Indien halal",
-      "nombreAvis": 3670,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Restaurant Shalimar",
-      "type": "Indien & Pakistani",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Tunis",
-      "description": "Pakistanais-indien à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Restaurant+Shalimar+Tunis",
-      "priceRange": "€€",
-      "specialite": "Pakistanais-indien",
-      "nombreAvis": 2021,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "China Garden Tunis",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Tunis",
-      "description": "Chinois halal à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=China+Garden+Tunis+Tunis",
-      "priceRange": "€€",
-      "specialite": "Chinois halal",
-      "nombreAvis": 866,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Japanese Corner Tunis",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Sushi halal à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Japanese+Corner+Tunis+Tunis",
-      "priceRange": "€€",
-      "specialite": "Sushi halal",
-      "nombreAvis": 627,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "livraison",
-        "touristique"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Léon de Bruxelles Tunis",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Tunis",
-      "description": "Moules-frites halal à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=L%C3%A9on+de+Bruxelles+Tunis+Tunis",
-      "priceRange": "€€",
-      "specialite": "Moules-frites halal",
-      "nombreAvis": 1719,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Pizza Hut Tunis",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Tunis",
-      "description": "Halal Tunisie à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Pizza+Hut+Tunis+Tunis",
-      "priceRange": "€€",
-      "specialite": "Halal tunisie",
-      "nombreAvis": 703,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Domino's Pizza Tunis",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Tunis",
-      "description": "Halal à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Domino%27s+Pizza+Tunis+Tunis",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 1332,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Burger King Tunis",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Tunis",
-      "description": "Halal Tunisie à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Burger+King+Tunis+Tunis",
-      "priceRange": "€€",
-      "specialite": "Halal tunisie",
-      "nombreAvis": 341,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "McDonald's Tunis",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Halal à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=McDonald%27s+Tunis+Tunis",
-      "priceRange": "€€",
-      "specialite": "Halal",
-      "nombreAvis": 620,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Macarons & Co. Tunis",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Tunis",
-      "description": "Pâtisseries françaises à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Macarons+%26+Co.+Tunis+Tunis",
-      "priceRange": "€€",
-      "specialite": "Pâtisseries françaises",
-      "nombreAvis": 624,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Paul Tunis",
-      "type": "Cuisine française",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Tunis",
-      "description": "Café français halal à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Paul+Tunis+Tunis",
-      "priceRange": "€€",
-      "specialite": "Café français halal",
-      "nombreAvis": 128,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r40"
-    },
-    {
-      "nom": "L'Arbre à Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Tunis",
-      "description": "Café spécialisé à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=L%27Arbre+%C3%A0+Caf%C3%A9+Tunis",
-      "priceRange": "€€",
-      "specialite": "Café spécialisé",
-      "nombreAvis": 936,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r41"
-    },
-    {
-      "nom": "Kafe Kalsa",
-      "type": "Tunisien",
-      "certificationHalal": true,
-      "score": 4.1,
-      "adresse": "Tunis",
-      "description": "Culturel, art à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Kafe+Kalsa+Tunis",
-      "priceRange": "€€",
-      "specialite": "Culturel",
-      "nombreAvis": 1406,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison"
-      ],
-      "id": "r42"
-    },
-    {
-      "nom": "M'rabet Café",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Tunis",
-      "description": "Ottoman, historique à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=M%27rabet+Caf%C3%A9+Tunis",
-      "priceRange": "€€",
-      "specialite": "Ottoman",
-      "nombreAvis": 1135,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial"
-      ],
-      "id": "r43"
-    },
-    {
-      "nom": "Patisserie Le Bonheur",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Tunis",
-      "description": "Tunisienne sucrée à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Patisserie+Le+Bonheur+Tunis",
-      "priceRange": "€€",
-      "specialite": "Tunisienne sucrée",
-      "nombreAvis": 1670,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r44"
-    },
-    {
-      "nom": "Café Sidi Bou Said",
-      "type": "Pâtisserie & Café",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Thé aux pignons à Tunis.",
-      "mapsUrl": "https://maps.google.com/?q=Caf%C3%A9+Sidi+Bou+Said+Tunis",
-      "priceRange": "€€",
-      "specialite": "Thé aux pignons",
-      "nombreAvis": 2274,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "calme",
-        "familial",
-        "livraison"
-      ],
-      "id": "r45"
-    }
-  ],
-  "mosquees": [
-    {
-      "id": "m1",
-      "nom": "Mosquée de la Zitouna (Grande Mosquée de Tunis)",
-      "nom_arabe": "جامع الزيتونة",
-      "type": "Mosquée historique universitaire",
-      "statut": "Plus ancienne mosquée de Tunisie",
-      "adresse": "Médina de Tunis",
-      "quartier": "Médina",
-      "capacite": 8000,
-      "annee_construction": "734",
-      "style_architectural": "Arabo-islamique avec influences byzantines",
-      "coordonnees": {
-        "lat": 36.7989,
-        "lng": 10.1723
-      },
-      "acces_non_musulmans": false,
-      "note": 4.9,
-      "avis_count": 23456,
-      "description": "La Grande Mosquée de Tunis fondée en 734, mère de l'université islamique de la Zitouna. 184 colonnes romaines récupérées de Carthage et d'autres sites antiques. Centre du savoir islamique en Afrique du Nord pendant des siècles.",
-      "anecdote": "Les colonnes de la salle de prière proviennent des temples romains de Carthage et d'autres cités antiques — un recyclage architectural extraordinaire. Ibn Khaldoun y étudia au 14ème siècle.",
-      "image": "https://images.unsplash.com/photo-1548013146-72479768bada?w=600"
-    },
-    {
-      "id": "m2",
-      "nom": "Mosquée des Teinturiers (Hmida Dey)",
-      "type": "Mosquée ottomane",
-      "adresse": "Souk des Teinturiers, Médina",
-      "quartier": "Médina",
-      "annee_construction": "1726",
-      "style_architectural": "Ottoman-hussinite",
-      "coordonnees": {
-        "lat": 36.7978,
-        "lng": 10.1734
-      },
-      "acces_non_musulmans": false,
-      "note": 4.7,
-      "avis_count": 3456,
-      "description": "Mosquée du bey Hussin Bel Ali construite en 1726 dans le souk des teinturiers. Minaret octogonal ottoman, décor de majolique et plâtre sculpté."
-    },
-    {
-      "id": "m3",
-      "nom": "Mosquée de Sidi Youssef Dey",
-      "type": "Mosquée ottomane historique",
-      "adresse": "Médina, Tunis",
-      "quartier": "Médina",
-      "annee_construction": "1616",
-      "style_architectural": "Ottoman pur",
-      "hauteur_minaret_m": 28,
-      "coordonnees": {
-        "lat": 36.7967,
-        "lng": 10.1723
-      },
-      "acces_non_musulmans": false,
-      "note": 4.6,
-      "avis_count": 1678,
-      "description": "La première mosquée ottomane de Tunisie (1616), construite par le bey Youssef Dey. Le minaret octogonal turc contrastait avec les minarets carrés nord-africains — une innovation architecturale."
-    },
-    {
-      "id": "m4",
-      "nom": "Mosquée de la Kasbah",
-      "type": "Mosquée almohade",
-      "adresse": "Place de la Kasbah, Médina",
-      "quartier": "Kasbah",
-      "annee_construction": "1231",
-      "style_architectural": "Almohade nord-africain",
-      "coordonnees": {
-        "lat": 36.7945,
-        "lng": 10.1701
-      },
-      "acces_non_musulmans": false,
-      "note": 4.7,
-      "avis_count": 4567,
-      "description": "Mosquée almohade du 13ème siècle face au palais de la Kasbah (gouvernement tunisien actuel). Minaret carré à lambrequins, décor de zelliges et stuc sculpté. Style maghrébin pur."
-    },
-    {
-      "id": "m5",
-      "nom": "Zaouïa de Sidi Ben Arous",
-      "type": "Zaouïa soufie",
-      "adresse": "Médina, Tunis",
-      "quartier": "Médina",
-      "annee_construction": "15ème siècle",
-      "coordonnees": {
-        "lat": 36.7985,
-        "lng": 10.1728
-      },
-      "acces_non_musulmans": true,
-      "note": 4.5,
-      "avis_count": 1234,
-      "description": "Zaouïa soufie de la confrérie Qadiriyya — rituel du Dhikr le jeudi soir avec chants et mouvements de dévotion."
-    },
-    {
-      "id": "m6",
-      "nom": "Mosquée Halfaouine (Sidi Mehrez)",
-      "type": "Mosquée historique",
-      "adresse": "Halfaouine, Tunis",
-      "quartier": "Halfaouine",
-      "annee_construction": "1692",
-      "style_architectural": "Hussinite ottomano-africain",
-      "coordonnees": {
-        "lat": 36.8034,
-        "lng": 10.1712
-      },
-      "acces_non_musulmans": false,
-      "note": 4.6,
-      "avis_count": 2134,
-      "description": "La mosquée Sidi Mehrez dans le quartier populaire de Halfaouine — dômes en faïence verte, piliers de marbre, lieu du film tunisien éponyme de Férid Boughedir (1990)."
-    },
-    {
-      "id": "m7",
-      "nom": "Grande Mosquée de La Marsa",
-      "type": "Mosquée balnéaire moderne",
-      "adresse": "La Marsa, Tunis",
-      "quartier": "La Marsa",
-      "annee_construction": "1928",
-      "coordonnees": {
-        "lat": 36.8823,
-        "lng": 10.3245
-      },
-      "acces_non_musulmans": false,
-      "note": 4.4,
-      "avis_count": 1234,
-      "description": "Mosquée de la ville balnéaire de La Marsa, fréquentée par les familles tunisiennes les week-ends. Beau jardin entourant le lieu de culte."
-    },
-    {
-      "id": "m8",
-      "nom": "Mosquée Ksar Saïd",
-      "type": "Mosquée de palais beylical",
-      "adresse": "Ksar Saïd, La Manouba",
-      "quartier": "Manouba",
-      "annee_construction": "19ème siècle",
-      "coordonnees": {
-        "lat": 36.8123,
-        "lng": 10.1023
-      },
-      "acces_non_musulmans": false,
-      "note": 4.3,
-      "avis_count": 567,
-      "description": "Mosquée attachée à l'ancien palais d'été des beys de Tunis à Ksar Saïd — architecture hussinite avec jardins et fontaines."
-    },
-    {
-      "id": "m9",
-      "nom": "Mosquée de Carthage",
-      "type": "Mosquée moderne sur site antique",
-      "adresse": "Carthage, Tunis",
-      "quartier": "Carthage",
-      "annee_construction": "1980",
-      "coordonnees": {
-        "lat": 36.8523,
-        "lng": 10.3289
-      },
-      "acces_non_musulmans": false,
-      "note": 4.3,
-      "avis_count": 345,
-      "description": "Mosquée moderne construite sur la colline de Carthage, non loin des ruines puniques et romaines. Symbolise la continuité islamique sur les sites antiques."
-    },
-    {
-      "id": "m10",
-      "nom": "Mosquée Sidi Bou Saïd",
-      "type": "Mosquée du village bleu",
-      "adresse": "Sidi Bou Saïd",
-      "quartier": "Sidi Bou Saïd",
-      "annee_construction": "14ème siècle",
-      "coordonnees": {
-        "lat": 36.8712,
-        "lng": 10.3423
-      },
-      "acces_non_musulmans": false,
-      "note": 4.6,
-      "avis_count": 2134,
-      "description": "La mosquée historique du village des peintres, avec son minaret blanc et bleu qui se confond avec les maisons. Saint Sidi Bou Saïd (Abu Said al-Baji) est enterré dans la zaouïa attenante."
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Hôtel La Kasbah Tunis",
-      "categorie": "Riad & Boutique",
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Boutique luxe médina à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+La+Kasbah+Tunis+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€€",
-      "nombreAvis": 612,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h1"
-    },
-    {
-      "nom": "Selman Hammamet",
-      "categorie": "Resort & Spa",
-      "score": 4.4,
-      "adresse": "Tunis",
-      "description": "Luxe resort à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Selman+Hammamet+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€€€",
-      "nombreAvis": 1163,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "piscine-non-mixte",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "spa-femmes",
-        "wifi"
-      ],
-      "id": "h2"
-    },
-    {
-      "nom": "Dar El Medina",
-      "categorie": "Riad & Boutique",
-      "score": 4.6,
-      "adresse": "Tunis",
-      "description": "Boutique riad à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Dar+El+Medina+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€€",
-      "nombreAvis": 204,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h3"
-    },
-    {
-      "nom": "Hôtel Africa Meridien",
-      "categorie": "Luxe",
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Luxe à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Africa+Meridien+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€€€",
-      "nombreAvis": 415,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h4"
-    },
-    {
-      "nom": "Mövenpick Hotel du Lac Tunis",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Luxe lac à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=M%C3%B6venpick+Hotel+du+Lac+Tunis+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€€€",
-      "nombreAvis": 2131,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h5"
-    },
-    {
-      "nom": "Regency Tunis Hotel",
-      "categorie": "Luxe",
-      "score": 4.8,
-      "adresse": "Tunis",
-      "description": "Luxe à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Regency+Tunis+Hotel+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€€€",
-      "nombreAvis": 578,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h6"
-    },
-    {
-      "nom": "El Mouradi Gammarth",
-      "categorie": "Resort & Spa",
-      "score": 4.3,
-      "adresse": "Tunis",
-      "description": "Resort à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=El+Mouradi+Gammarth+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€€€",
-      "nombreAvis": 205,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "piscine-non-mixte",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "spa-femmes",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "Laico Tunis",
-      "categorie": "Luxe",
-      "score": 4.7,
-      "adresse": "Tunis",
-      "description": "Standard-luxe à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Laico+Tunis+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€€€",
-      "nombreAvis": 1172,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Hôtel Ibis Tunis",
-      "categorie": "Standard",
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Standard à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Ibis+Tunis+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€€",
-      "nombreAvis": 2512,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Hôtel Majestic",
-      "categorie": "Budget",
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Classique budget à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Majestic+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€",
-      "nombreAvis": 2071,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    },
-    {
-      "nom": "Tunis Grand Hôtel",
-      "categorie": "Budget",
-      "score": 4.8,
-      "adresse": "Tunis",
-      "description": "Centre budget à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Tunis+Grand+H%C3%B4tel+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€",
-      "nombreAvis": 1280,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h11"
-    },
-    {
-      "nom": "Hôtel Eriadh Tunis",
-      "categorie": "Riad & Boutique",
-      "score": 4.5,
-      "adresse": "Tunis",
-      "description": "Budget à Tunis.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=H%C3%B4tel+Eriadh+Tunis+Tunis",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Tunis&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=tunis",
-      "priceRange": "€€€",
-      "nombreAvis": 225,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h12"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a1",
-      "nom": "Médina de Tunis — UNESCO Patrimoine",
-      "type": "Patrimoine",
-      "emoji": "🏛️",
-      "duree": "Demi-journée",
-      "prix": "Gratuit",
-      "description": "Se perdre dans les 700 rues de la médina médiévale classée UNESCO — souks d'épices, artisans, mosquées et maisons à patio.",
-      "adapte_famille": true,
-      "adapte_seniors": false,
-      "meilleur_moment": "Matin (9h-12h) pour les souks actifs",
-      "tags": [
-        "UNESCO",
-        "Médina",
-        "Souks"
-      ],
-      "categorie": "Religieux & Spirituel",
-      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina+de+Tunis+%E2%80%94+UNESCO+Patrimoine+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=M%C3%A9dina+de+Tunis+%E2%80%94+UNESCO+Patrimoine+Tunis",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a2",
-      "nom": "Mosquée de la Zitouna — Extérieur",
-      "type": "Spirituel",
-      "emoji": "🕌",
-      "duree": "30 minutes",
-      "prix": "Gratuit (extérieur)",
-      "description": "La grande mosquée de Tunis (734) — voir le minaret carré et les colonnes romaines depuis l'entrée. Accès aux non-musulmans limité aux salles d'exposition.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "tags": [
-        "Zitouna",
-        "Histoire",
-        "Colonnes romaines"
-      ],
-      "categorie": "Religieux & Spirituel",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+de+la+Zitouna+%E2%80%94+Ext%C3%A9rieur+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+de+la+Zitouna+%E2%80%94+Ext%C3%A9rieur+Tunis",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a3",
-      "nom": "Sidi Bou Saïd — Village Bleu et Blanc",
-      "type": "Culture",
-      "emoji": "🏡",
-      "duree": "2-3 heures",
-      "prix": "Gratuit",
-      "description": "Le plus beau village de Tunisie — maisons blanches et bleues sur les falaises, inspiré de Santorini. Cafés, galeries et coucher de soleil sur la Méditerranée.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "tags": [
-        "Village",
-        "Bleu-blanc",
-        "Vue mer"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Sidi+Bou+Sa%C3%AFd+%E2%80%94+Village+Bleu+et+Blanc+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Sidi+Bou+Sa%C3%AFd+%E2%80%94+Village+Bleu+et+Blanc+Tunis",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a4",
-      "nom": "Carthage — Ruines Antiques UNESCO",
-      "type": "Archéologie",
-      "emoji": "🏛️",
-      "duree": "4 heures",
-      "prix": "12 TND (4€)",
-      "description": "Ruines phéniciennes et romaines de Carthage — thermes d'Antonin, tophet, amphithéâtre romain. Musée de Carthage sur la colline de Byrsa.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "adapte_handicap": true,
-      "tags": [
-        "UNESCO",
-        "Carthage",
-        "Romain"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Carthage+%E2%80%94+Ruines+Antiques+UNESCO+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Carthage+%E2%80%94+Ruines+Antiques+UNESCO+Tunis",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a5",
-      "nom": "Musée du Bardo",
-      "type": "Musée",
-      "emoji": "🏺",
-      "duree": "3 heures",
-      "prix": "11 TND (3€)",
-      "description": "Un des plus grands musées du monde pour les mosaïques romaines — 46 salles, collection de 3000 mosaïques, plus grande collection de mosaïques romano-africaines au monde.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "adapte_handicap": true,
-      "tags": [
-        "Mosaïques",
-        "Romain",
-        "Monde"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+du+Bardo+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+du+Bardo+Tunis",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a6",
-      "nom": "Souk des Parfums et Épices — Médina",
-      "type": "Shopping",
-      "emoji": "🛍️",
-      "duree": "2 heures",
-      "prix": "Variable",
-      "description": "Le souk des parfumeurs de la médina — jasmin tunisien, rose de Damas, oud, eau de fleur d'oranger et épices.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "tags": [
-        "Parfums",
-        "Épices",
-        "Médina"
-      ],
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Souk+des+Parfums+et+%C3%89pices+%E2%80%94+M%C3%A9dina+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souk+des+Parfums+et+%C3%89pices+%E2%80%94+M%C3%A9dina+Tunis",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a7",
-      "nom": "Hammam Slimania — Médina historique",
-      "type": "Bien-être",
-      "emoji": "♨️",
-      "duree": "2 heures",
-      "prix": "10-25 TND (3-7€)",
-      "description": "Hammam ottoman du 18ème siècle dans la médina — gommage et massage à l'huile d'argan dans une atmosphère médiévale.",
-      "adapte_famille": false,
-      "adapte_seniors": true,
-      "a_savoir": "Séances séparées homme/femme, horaires selon les jours",
-      "tags": [
-        "Hammam",
-        "Ottoman",
-        "Gommage"
-      ],
-      "categorie": "Hammam & Bien-être",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+Slimania+%E2%80%94+M%C3%A9dina+historique+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+Slimania+%E2%80%94+M%C3%A9dina+historique+Tunis",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a8",
-      "nom": "Promenade avenue Bourguiba",
-      "type": "Promenade",
-      "emoji": "🚶",
-      "duree": "1 heure",
-      "prix": "Gratuit",
-      "description": "L'avenue coloniale de 1,5 km avec platanes centenaires — la 'Champs-Élysées de Tunis' avec fontaines, cafés et théâtre municipal.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "adapte_handicap": true,
-      "tags": [
-        "Promenade",
-        "Colonial",
-        "Platanes"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+avenue+Bourguiba+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+avenue+Bourguiba+Tunis",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a9",
-      "nom": "Tour de Tunis en voiture de chevaux",
-      "type": "Tourisme",
-      "emoji": "🐴",
-      "duree": "2 heures",
-      "prix": "40 TND (12€)",
-      "description": "Calèche depuis la médina jusqu'aux bains romains de Carthage — une façon romantique de découvrir la Tunis historique.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "tags": [
-        "Calèche",
-        "Romantique",
-        "Carthage"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Tour+de+Tunis+en+voiture+de+chevaux+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Tour+de+Tunis+en+voiture+de+chevaux+Tunis",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a10",
-      "nom": "Concert Malouf — Musique Andalouse de Tunis",
-      "type": "Culture",
-      "emoji": "🎵",
-      "duree": "3 heures",
-      "prix": "20-50 TND (6-15€)",
-      "description": "Le malouf est la musique classique andalouse transmise par les exilés de 1492 — concerts au Théâtre Municipal ou dans les cafés de la médina.",
-      "adapte_famille": false,
-      "adapte_seniors": true,
-      "tags": [
-        "Malouf",
-        "Andalou",
-        "Concert"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Concert+Malouf+%E2%80%94+Musique+Andalouse+de+Tunis+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Concert+Malouf+%E2%80%94+Musique+Andalouse+de+Tunis+Tunis",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a11",
-      "nom": "Plage de La Marsa",
-      "type": "Plage",
-      "emoji": "🏖️",
-      "duree": "Demi-journée",
-      "prix": "Gratuit",
-      "description": "Plage balnéaire populaire à 20 minutes de Tunis — familles tunisiennes, cafés bord de mer et baignade en Méditerranée.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "meilleur_moment": "Mai-Juin ou Septembre (moins bondé)",
-      "tags": [
-        "Plage",
-        "Famille",
-        "Méditerranée"
-      ],
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Plage+de+La+Marsa+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Plage+de+La+Marsa+Tunis",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a12",
-      "nom": "Atelier poterie Nabeul (excursion)",
-      "type": "Artisanat",
-      "emoji": "🏺",
-      "duree": "Journée",
-      "prix": "50-80 TND (15-24€)",
-      "description": "Excursion à Nabeul (60 km) — capitale tunisienne de la poterie et des céramiques, ateliers d'artisans, marché du vendredi.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "tags": [
-        "Artisanat",
-        "Poterie",
-        "Nabeul"
-      ],
-      "categorie": "Shopping & Souks",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+poterie+Nabeul+%28excursion%29+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+poterie+Nabeul+%28excursion%29+Tunis",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a13",
-      "nom": "Visite Dar Ben Abdallah — Musée Cité",
-      "type": "Musée",
-      "emoji": "🏛️",
-      "duree": "1 heure",
-      "prix": "5 TND (1.50€)",
-      "description": "Palais du 18ème siècle abritant le Musée des Arts et Traditions populaires — costumes régionaux, bijoux berbères et vie tunisienne traditionnelle.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "tags": [
-        "Musée",
-        "Arts populaires",
-        "Palais"
-      ],
-      "categorie": "Histoire & Culture",
-      "mapsUrl": "https://maps.google.com/?q=Visite+Dar+Ben+Abdallah+%E2%80%94+Mus%C3%A9e+Cit%C3%A9+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Visite+Dar+Ben+Abdallah+%E2%80%94+Mus%C3%A9e+Cit%C3%A9+Tunis",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a14",
-      "nom": "Dégustation Huile d'Olive Tunisienne",
-      "type": "Gastronomie",
-      "emoji": "🫒",
-      "duree": "2 heures",
-      "prix": "30 TND (9€)",
-      "description": "La Tunisie est le 4ème producteur mondial d'huile d'olive — dégustation de 10 huiles AOC dans une huilerie traditionnelle de la médina.",
-      "adapte_famille": true,
-      "adapte_seniors": true,
-      "tags": [
-        "Huile d'olive",
-        "Dégustation",
-        "Artisanat"
-      ],
-      "categorie": "Gastronomie",
-      "mapsUrl": "https://maps.google.com/?q=D%C3%A9gustation+Huile+d%27Olive+Tunisienne+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=D%C3%A9gustation+Huile+d%27Olive+Tunisienne+Tunis",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "id": "a15",
-      "nom": "Excursion Lac de Tunis Kayak",
-      "type": "Nature",
-      "emoji": "🚣",
-      "duree": "2 heures",
-      "prix": "40 TND (12€)",
-      "description": "Kayak sur le lac de Tunis avec vue sur la médina et les flamants roses — la capitale vue de l'eau dans un paysage unique.",
-      "adapte_famille": true,
-      "adapte_seniors": false,
-      "tags": [
-        "Lac",
-        "Kayak",
-        "Flamants roses"
-      ],
-      "categorie": "Nature & Plein air",
-      "mapsUrl": "https://maps.google.com/?q=Excursion+Lac+de+Tunis+Kayak+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Excursion+Lac+de+Tunis+Kayak+Tunis",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Tunis",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Tunis+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Tunis+Tunis",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Grand marché central de Tunis",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Tunis+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Tunis+Tunis",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Tunis",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Tunis+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Tunis+Tunis",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Musée de la ville de Tunis",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Tunis+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Tunis+Tunis",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Food tour halal de Tunis",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Tunis+Tunis",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Tunis+Tunis",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "road_trips": [
-    {
-      "id": "rt1",
-      "titre": "Circuit Médinas du Nord",
-      "emoji": "🏰",
-      "duree": "5 jours",
-      "distance_km": 600,
-      "difficulte": "Facile",
-      "budget_estime_eur": "200-350€",
-      "etapes": [
-        {
-          "ville": "Tunis",
-          "nuits": 2,
-          "highlights": [
-            "Médina UNESCO",
-            "Zitouna",
-            "Carthage",
-            "Sidi Bou Saïd"
-          ]
-        },
-        {
-          "ville": "Bizerte",
-          "nuits": 1,
-          "highlights": [
-            "Vieux port",
-            "Lac de Bizerte",
-            "Corniche"
-          ]
-        },
-        {
-          "ville": "Hammamet",
-          "nuits": 2,
-          "highlights": [
-            "Médina de Hammamet",
-            "Plages",
-            "Souk jasmin"
-          ]
-        }
-      ],
-      "conseils_halal": "Toutes les médinas tunisiennes sont 100% halal. Restaurants de la médina sans alcool généralement. Cafés avec thé à la menthe partout.",
-      "tags": [
-        "Médinas",
-        "Côte",
-        "Jasmin"
-      ]
-    },
-    {
-      "id": "rt2",
-      "titre": "Grand Tour Tunisie — Nord au Sud",
-      "emoji": "🐪",
-      "duree": "10 jours",
-      "distance_km": 2000,
-      "difficulte": "Modéré",
-      "budget_estime_eur": "400-700€",
-      "etapes": [
-        {
-          "ville": "Tunis",
-          "nuits": 2,
-          "highlights": [
-            "Médina",
-            "Bardo"
-          ]
-        },
-        {
-          "ville": "Kairouan",
-          "nuits": 1,
-          "highlights": [
-            "Grande Mosquée de Kairouan (670)",
-            "Aghlabide",
-            "Sbeitla"
-          ]
-        },
-        {
-          "ville": "Sfax",
-          "nuits": 1,
-          "highlights": [
-            "Médina Sfax",
-            "Kerkennah"
-          ]
-        },
-        {
-          "ville": "Djerba",
-          "nuits": 2,
-          "highlights": [
-            "El Ghriba",
-            "Houmt Souk",
-            "Plages"
-          ]
-        },
-        {
-          "ville": "Douz",
-          "nuits": 2,
-          "highlights": [
-            "Porte du Sahara",
-            "Chameau",
-            "Coucher de soleil dunes"
-          ]
-        }
-      ],
-      "conseils_halal": "Kairouan est la 4ème ville sainte de l'Islam — 100% halal. Toute la Tunisie est halal-majority.",
-      "tags": [
-        "Grand tour",
-        "Sahara",
-        "Kairouan"
-      ]
-    },
-    {
-      "id": "rt3",
-      "titre": "Côte Bleue Méditerranéenne",
-      "emoji": "🌊",
-      "duree": "4 jours",
-      "distance_km": 400,
-      "difficulte": "Facile",
-      "budget_estime_eur": "150-280€",
-      "etapes": [
-        {
-          "ville": "Tunis",
-          "nuits": 1,
-          "highlights": [
-            "Sidi Bou Saïd",
-            "La Marsa"
-          ]
-        },
-        {
-          "ville": "Nabeul",
-          "nuits": 1,
-          "highlights": [
-            "Poterie",
-            "Marché vendredi"
-          ]
-        },
-        {
-          "ville": "Hammamet",
-          "nuits": 2,
-          "highlights": [
-            "Médina",
-            "Plage",
-            "Jasmin"
-          ]
-        }
-      ],
-      "conseils_halal": "La côte Cap Bon est très touristic — vérifier logo halal dans restaurants de bord de mer.",
-      "tags": [
-        "Côte",
-        "Méditerranée",
-        "Cap Bon"
-      ]
-    }
-  ],
-  "voyages_par_type": {
-    "en_couple": {
-      "emoji": "💑",
-      "couleur": "#e91e8c",
-      "intro": "Tunis pour un couple c'est Sidi Bou Saïd au coucher du soleil, un dîner dans un palais de la médina et les parfums de jasmin de la médina au printemps.",
-      "top_experiences": [
-        {
-          "titre": "Sidi Bou Saïd coucher de soleil",
-          "details": "Terrasse avec vue sur la mer",
-          "prix": "5€ café"
-        },
-        {
-          "titre": "Dîner Dar El Jeld",
-          "details": "Gastronomique dans palais beylical",
-          "prix": "45€/pers"
-        },
-        {
-          "titre": "Hammam couple médina",
-          "details": "Gommage à l'argan à deux",
-          "prix": "25€"
-        }
-      ],
-      "hotels_recommandes": [
-        "Maison d'Hôtes Sidi Bou Saïd",
-        "Dar El Medina"
-      ],
-      "conseils": "Printemps idéal (mars-mai) pour le jasmin en fleur et les températures parfaites."
-    },
-    "en_famille": {
-      "emoji": "👨‍👩‍👧‍👦",
-      "couleur": "#4CAF50",
-      "intro": "Tunis est une destination excellente pour les familles — plages à 20 minutes, musées pour enfants, cuisine douce et prix très abordables.",
-      "top_experiences": [
-        {
-          "titre": "Plage de La Marsa",
-          "details": "Plage familiale à 20 min",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Musée du Bardo mosaïques",
-          "details": "Les enfants adorent les mosaïques colorées",
-          "prix": "3€"
-        },
-        {
-          "titre": "Médina découverte",
-          "details": "Artisans et souks vivants",
-          "prix": "Gratuit"
-        }
-      ],
-      "hotels_recommandes": [
-        "El Mouradi Gammarth",
-        "Hôtel Africa Meridien"
-      ],
-      "conseils": "Juillet-Août chaud mais plages excellentes pour enfants. Éviter la médina en milieu d'après-midi (chaleur et foule)."
-    },
-    "entre_amis": {
-      "emoji": "👫",
-      "couleur": "#9C27B0",
-      "intro": "Tunis entre amis c'est les cafés de l'avenue Bourguiba à minuit, les concerts de malouf dans la médina et le karting sur la côte de Gammarth.",
-      "top_experiences": [
-        {
-          "titre": "Café Zitouna nuit",
-          "details": "Chicha et thé sous les étoiles",
-          "prix": "8€"
-        },
-        {
-          "titre": "Food tour médina",
-          "details": "Brik, lablabi et makroud",
-          "prix": "15€"
-        },
-        {
-          "titre": "Concert malouf médina",
-          "details": "Musique andalouse en live",
-          "prix": "10€"
-        }
-      ],
-      "conseils": "La vie nocturne de Tunis est active et mixte — alcool disponible dans certains restaurants mais nombreux cafés sans alcool."
-    },
-    "voyage_solo": {
-      "emoji": "🎒",
-      "couleur": "#FF9800",
-      "intro": "Tunis solo c'est la médina et ses habitants accueillants, les cafés où les étrangers sont toujours bien accueillis et les transports publics pratiques.",
-      "top_experiences": [
-        {
-          "titre": "Se perdre dans la médina seul",
-          "details": "La médina révèle ses secrets peu à peu",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Café des Nattes Sidi Bou Saïd",
-          "details": "L'endroit à photographier",
-          "prix": "5€"
-        },
-        {
-          "titre": "Musée du Bardo en solo",
-          "details": "3h de mosaïques en paix",
-          "prix": "3€"
-        }
-      ],
-      "conseil_securite": "Tunis est sûre pour les voyageurs solos y compris femmes. Rester vigilant la nuit dans certains quartiers."
-    },
-    "voyage_spirituel": {
-      "emoji": "🕌",
-      "couleur": "#2196F3",
-      "intro": "Tunis est une capitale islamique de la connaissance — la Zitouna millénaire, les zaouïas soufies et la tradition du malouf islamique offrent une expérience spirituelle unique.",
-      "top_experiences": [
-        {
-          "titre": "Mosquée de la Zitouna",
-          "details": "1300 ans d'enseignement islamique",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Zaouïa soufie jeudi soir",
-          "details": "Dhikr et chants de dévotion",
-          "prix": "Gratuit"
-        },
-        {
-          "titre": "Kairouan Omra du Maghreb",
-          "details": "7 visites = 1 Omra (tradition locale)",
-          "prix": "50 TND trajet"
-        }
-      ],
-      "conseil_pratique": "Kairouan (160 km) est la 4ème ville sainte — excursion spirituelle indispensable depuis Tunis."
-    }
+  {
+   "nom": "Mosquée Al-Salam de Tunis",
+   "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Tunis",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Tunis+Tunis",
+   "capacite": 5335,
+   "anneeConstruction": 2015,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 36.819,
+    "lng": 10.1658
+   }
   },
-  "boucheries": [
-    {
-      "id": "b1",
-      "nom": "Boucherie Sidi Ben Arous",
-      "adresse": "Médina de Tunis",
-      "quartier": "Médina",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau berbère",
-        "Veau de lait",
-        "Mergez maison",
-        "Abats"
-      ],
-      "note": 4.6,
-      "horaires": "6h-18h (fermé vendredi matin)"
-    },
-    {
-      "id": "b2",
-      "nom": "Boucherie du Marché Central",
-      "adresse": "Marché Central, Tunis",
-      "quartier": "Centre-ville",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau frais",
-        "Veau",
-        "Poulet fermier"
-      ],
-      "note": 4.5,
-      "horaires": "7h-18h (fermé dimanche)"
-    },
-    {
-      "id": "b3",
-      "nom": "Halal Premium Mutuelleville",
-      "adresse": "Mutuelleville, Tunis",
-      "quartier": "Mutuelleville",
-      "halal_certifie": true,
-      "produits": [
-        "Viandes importées",
-        "Poulet Label",
-        "Dinde"
-      ],
-      "note": 4.4,
-      "horaires": "8h-20h"
-    },
-    {
-      "id": "b4",
-      "nom": "Boucherie Sidi El Béchir",
-      "adresse": "Bab El Khadra, Tunis",
-      "quartier": "Bab El Khadra",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau populaire",
-        "Merguez traditionnelles",
-        "Tripes"
-      ],
-      "note": 4.3,
-      "horaires": "5h-17h"
-    },
-    {
-      "id": "b5",
-      "nom": "Marché du vendredi La Marsa",
-      "adresse": "La Marsa, Tunis",
-      "quartier": "La Marsa",
-      "halal_certifie": true,
-      "produits": [
-        "Agneau fermier",
-        "Volailles locales",
-        "Oeufs frais"
-      ],
-      "note": 4.5,
-      "horaires": "Vendredi 6h-13h uniquement"
-    }
-  ],
-  "boulangeries": [
-    {
-      "id": "bo1",
-      "nom": "Pâtisserie M'rabet (médina)",
-      "adresse": "Souk des Chéchias, Médina",
-      "quartier": "Médina",
-      "description": "La plus ancienne pâtisserie de la médina — baklava de Tunis, makroudh dattes, zlabia fraîche.",
-      "specialites": [
-        "Baklava huile d'argan",
-        "Makroudh (semoule-dattes)",
-        "Kaak bil warqa"
-      ],
-      "prix": "1-5 TND",
-      "horaires": "8h-19h",
-      "note": 4.8
-    },
-    {
-      "id": "bo2",
-      "nom": "Boulangerie Nationale de Tunis",
-      "adresse": "Avenue Bourguiba, Tunis",
-      "quartier": "Centre-ville",
-      "description": "Baguette tunisienne (la fameuse baguette du pain à 250 grammes) et pain arabe depuis 1960.",
-      "specialites": [
-        "Baguette tunisienne",
-        "Pain de seigle",
-        "Croissant au beurre"
-      ],
-      "prix": "0.3-1 TND",
-      "horaires": "5h-20h",
-      "note": 4.3
-    },
-    {
-      "id": "bo3",
-      "nom": "Samali Patisserie",
-      "adresse": "Les Berges du Lac, Tunis",
-      "quartier": "Berges du Lac",
-      "description": "Pâtisseries tunisiennes modernes et orientales dans le quartier d'affaires.",
-      "specialites": [
-        "Baklava moderne",
-        "Ghriba",
-        "Mhalbiya rose"
-      ],
-      "prix": "3-15 TND",
-      "horaires": "9h-22h",
-      "note": 4.5
-    },
-    {
-      "id": "bo4",
-      "nom": "Msemmen de Halfaouine",
-      "adresse": "Halfaouine, Tunis",
-      "quartier": "Halfaouine",
-      "description": "Msemmen feuilleté et ftir au beurre préparés à la main depuis le matin dans le quartier populaire.",
-      "specialites": [
-        "Msemmen feuilleté",
-        "Ftir au beurre-miel",
-        "Harcha semoule"
-      ],
-      "prix": "0.5-1.5 TND",
-      "horaires": "6h-14h",
-      "note": 4.7
-    },
-    {
-      "id": "bo5",
-      "nom": "Pain Artisan Sidi Bou Saïd",
-      "adresse": "Sidi Bou Saïd village",
-      "quartier": "Sidi Bou Saïd",
-      "description": "Boulangerie artisanale du village bleu — pain kabyle à l'huile d'olive et kaak à l'anis.",
-      "specialites": [
-        "Pain à l'huile d'olive",
-        "Kaak anis",
-        "Macaron jasmin"
-      ],
-      "prix": "1-5 TND",
-      "horaires": "7h-19h",
-      "note": 4.6
-    }
-  ],
-  "articles_lies": [
-    "guide-halal-tunisie",
-    "medina-tunis-guide",
-    "cuisine-tunisienne"
-  ],
-  "villes_proches": [
-    "alger",
-    "casablanca",
-    "marrakech"
-  ],
-  "destinations_combiner": [
-    {
-      "ville": "Kairouan",
-      "distance_km": 160,
-      "raison": "4ème ville sainte de l'Islam, Grande Mosquée de 670, Aghlabides — incontournable"
-    },
-    {
-      "ville": "Djerba",
-      "distance_km": 510,
-      "raison": "Île paradisiaque, médina de Houmt Souk, synagogue El Ghriba, plages"
-    },
-    {
-      "ville": "Hammamet",
-      "distance_km": 65,
-      "raison": "Station balnéaire méditerranéenne, médina fleurie, jasmin"
-    }
-  ],
-  "conseils_halal": "La Tunisie est un pays musulman à 99% mais laïc — la nourriture est majoritairement halal mais l'alcool est légal. Dans les restaurants de la médina et les cafés populaires, tout est halal. Dans les hôtels internationaux et restaurants touristiques, vérifier. Les boucheries du marché central sont toutes halal par tradition.",
-  "codeISO": "TN",
-  "image": "https://images.unsplash.com/photo-1580836738558-e6c749ca8e53?w=1400&q=85",
-  "continent": "Afrique",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Tunis — Halal Trust Score 4/5.",
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée centrale de Tunis",
-      "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Tunis",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Tunis+Tunis",
-      "capacite": 3803,
-      "anneeConstruction": 2003,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 36.819,
-        "lng": 10.1658
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Tunis",
-      "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Tunis",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Tunis+Tunis",
-      "capacite": 4299,
-      "anneeConstruction": 1979,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 36.819,
-        "lng": 10.1658
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Tunis",
-      "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Tunis",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Tunis+Tunis",
-      "capacite": 6756,
-      "anneeConstruction": 1936,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 36.819,
-        "lng": 10.1658
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Tunis",
-      "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Tunis",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Tunis+Tunis",
-      "capacite": 5335,
-      "anneeConstruction": 2015,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 36.819,
-        "lng": 10.1658
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Tunis",
-      "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Tunis",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Tunis+Tunis",
-      "capacite": 1890,
-      "anneeConstruction": 2010,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 36.819,
-        "lng": 10.1658
-      }
-    },
-    {
-      "nom": "Mosquée Al-Fath de Tunis",
-      "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Tunis",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Tunis+Tunis",
-      "capacite": 5631,
-      "anneeConstruction": 1951,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 36.819,
-        "lng": 10.1658
-      }
-    },
-    {
-      "nom": "Mosquée Al-Iman de Tunis",
-      "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Tunis",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Tunis+Tunis",
-      "capacite": 6474,
-      "anneeConstruction": 1974,
-      "styleArchitectural": "Marocain",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 36.819,
-        "lng": 10.1658
-      }
-    }
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Dar El Jeld",
-      "El Ali",
-      "Gastronomia",
-      "M'rabet Café",
-      "La Closerie des Jasmin"
-    ],
-    "meilleurRapportQualitePrix": [
-      "El Ali",
-      "Le Baroque",
-      "Diwan Restaurant",
-      "Chez Slah",
-      "Chez Nous"
-    ],
-    "incontournables": [
-      "Indien Palace Tunis",
-      "Chez Nous",
-      "Le Baroque",
-      "Les 3 Chefs",
-      "El Ali"
-    ],
-    "pepitesCachees": [
-      "La Closerie des Jasmin",
-      "El Mankal",
-      "Snack 9 Décembre"
-    ],
-    "idealFamille": [
-      "La Closerie des Jasmin",
-      "El Ali",
-      "Le Baroque",
-      "Diwan Restaurant",
-      "Chez Slah"
-    ],
-    "gastronomique": [
-      "Dar El Jeld",
-      "Essaraya",
-      "La Tour d'Ivoire",
-      "Gastronomia",
-      "Dar Zarrouk"
-    ],
-    "ouvertNuit": [
-      "Chez Slah",
-      "Chez Nous",
-      "Chez Aziz"
-    ],
-    "vueExceptionnelle": [
-      "Chez Slah",
-      "Le Pirate",
-      "La Marsa Fish & Chips"
-    ]
+  {
+   "nom": "Mosquée Al-Rahma de Tunis",
+   "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Tunis",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Tunis+Tunis",
+   "capacite": 1890,
+   "anneeConstruction": 2010,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 36.819,
+    "lng": 10.1658
+   }
   },
-  "halalScore": 8.7
+  {
+   "nom": "Mosquée Al-Fath de Tunis",
+   "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Tunis",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Fath+de+Tunis+Tunis",
+   "capacite": 5631,
+   "anneeConstruction": 1951,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 36.819,
+    "lng": 10.1658
+   }
+  },
+  {
+   "nom": "Mosquée Al-Iman de Tunis",
+   "description": "Mosquée fréquentée de Tunis, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Tunis",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Iman+de+Tunis+Tunis",
+   "capacite": 6474,
+   "anneeConstruction": 1974,
+   "styleArchitectural": "Marocain",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 36.819,
+    "lng": 10.1658
+   }
+  }
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Dar El Jeld",
+   "El Ali",
+   "Gastronomia",
+   "M'rabet Café",
+   "La Closerie des Jasmin"
+  ],
+  "meilleurRapportQualitePrix": [
+   "El Ali",
+   "Le Baroque",
+   "Diwan Restaurant",
+   "Chez Slah",
+   "Chez Nous"
+  ],
+  "incontournables": [
+   "Indien Palace Tunis",
+   "Chez Nous",
+   "Le Baroque",
+   "Les 3 Chefs",
+   "El Ali"
+  ],
+  "pepitesCachees": [
+   "La Closerie des Jasmin",
+   "El Mankal",
+   "Snack 9 Décembre"
+  ],
+  "idealFamille": [
+   "La Closerie des Jasmin",
+   "El Ali",
+   "Le Baroque",
+   "Diwan Restaurant",
+   "Chez Slah"
+  ],
+  "gastronomique": [
+   "Dar El Jeld",
+   "Essaraya",
+   "La Tour d'Ivoire",
+   "Gastronomia",
+   "Dar Zarrouk"
+  ],
+  "ouvertNuit": [
+   "Chez Slah",
+   "Chez Nous",
+   "Chez Aziz"
+  ],
+  "vueExceptionnelle": [
+   "Chez Slah",
+   "Le Pirate",
+   "La Marsa Fish & Chips"
+  ]
+ },
+ "halalScore": 8.7
 }

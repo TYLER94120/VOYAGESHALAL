@@ -1,1662 +1,1669 @@
 {
-  "nom": "Beyrouth",
-  "pays": "Liban",
-  "slug": "beyrouth",
-  "image": "https://images.unsplash.com/photo-1594746007983-6b8dc74f7826?w=1600&q=80",
-  "image_hero": "https://images.unsplash.com/photo-1594746007983-6b8dc74f7826?w=1600&q=80",
-  "description": "Beyrouth, capitale résiliente du Liban, offre l'une des meilleures cuisines du monde. Entre mosquée Al-Amine et corniche méditerranéenne, la ville séduit les gourmets musulmans.",
-  "descriptionLongue": "Phénix renaissant de ses cendres, Beyrouth conjugue histoire millénaire et énergie débordante. La majestueuse mosquée Mohammed Al-Amine domine le centre-ville reconstruit. La cuisine libanaise — mezze, manousheh, grillades — y atteint des sommets. Hamra, Gemmayzeh et la corniche battent au rythme d'une ville cosmopolite. Si l'alcool est présent, les innombrables tables halal et la culture de l'accueil en font une destination gourmande de premier ordre.",
-  "halalScore": 7.5,
-  "score_halal": 3.8,
+ "nom": "Beyrouth",
+ "pays": "Liban",
+ "slug": "beyrouth",
+ "image": "https://images.unsplash.com/photo-1594746007983-6b8dc74f7826?w=1600&q=80",
+ "image_hero": "https://images.unsplash.com/photo-1594746007983-6b8dc74f7826?w=1600&q=80",
+ "description": "Beyrouth, capitale résiliente du Liban, offre l'une des meilleures cuisines du monde. Entre mosquée Al-Amine et corniche méditerranéenne, la ville séduit les gourmets musulmans.",
+ "descriptionLongue": "Phénix renaissant de ses cendres, Beyrouth conjugue histoire millénaire et énergie débordante. La majestueuse mosquée Mohammed Al-Amine domine le centre-ville reconstruit. La cuisine libanaise — mezze, manousheh, grillades — y atteint des sommets. Hamra, Gemmayzeh et la corniche battent au rythme d'une ville cosmopolite. Si l'alcool est présent, les innombrables tables halal et la culture de l'accueil en font une destination gourmande de premier ordre.",
+ "halalScore": 7.5,
+ "score_halal": 3.8,
+ "mosquees": 150,
+ "population": "2,4 millions",
+ "langue": "Arabe (français/anglais courants)",
+ "monnaie": "Livre libanaise (LBP)",
+ "fuseau": "UTC+2",
+ "meilleureEpoque": "Avril à Juin, Sept à Nov",
+ "prixMoyenNuit": "80€",
+ "continent": "Asie",
+ "codeISO": "LB",
+ "pays_slug": "liban",
+ "region": "Levant",
+ "meta_title": "Voyage Halal à Beyrouth — Guide Complet 2026",
+ "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Beyrouth — Halal Trust Score 7.5/10.",
+ "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Beyrouth — Halal Trust Score 7.5/10.",
+ "coordonnees": {
+  "lat": 33.8938,
+  "lng": 35.5018
+ },
+ "image_alt": "Vue de Beyrouth, Liban",
+ "statistiques": {
   "mosquees": 150,
-  "population": "2,4 millions",
+  "restaurants_halal": 800,
+  "habitants_musulmans_pct": 60,
+  "hotels": 10
+ },
+ "infos_pratiques": {
   "langue": "Arabe (français/anglais courants)",
   "monnaie": "Livre libanaise (LBP)",
-  "fuseau": "UTC+2",
-  "meilleureEpoque": "Avril à Juin, Sept à Nov",
-  "prixMoyenNuit": "80€",
-  "continent": "Asie",
-  "codeISO": "LB",
-  "pays_slug": "liban",
-  "region": "Levant",
-  "meta_title": "Voyage Halal à Beyrouth — Guide Complet 2026",
-  "meta_description": "Restaurants halal certifiés, mosquées et guide pratique pour Beyrouth — Halal Trust Score 7.5/10.",
-  "metaDescription": "Restaurants halal certifiés, mosquées et guide pratique pour Beyrouth — Halal Trust Score 7.5/10.",
-  "coordonnees": {
+  "meilleure_periode": "Avril à Juin, Sept à Nov",
+  "appel_priere": "5 fois par jour",
+  "nourriture_halal": "Largement disponible",
+  "alcool": "Disponible",
+  "securite": "Précautions habituelles"
+ },
+ "infoPratique": {
+  "visa": "Visa gratuit à l'arrivée pour les Français (1 mois)",
+  "vaccins": "Aucun obligatoire",
+  "transport": "Taxis-service, Uber/Bolt, voiture",
+  "priseElectrique": "Type C/D/G — 220V",
+  "decalageHoraire": "+1h par rapport à Paris"
+ },
+ "restaurants": [
+  {
+   "nom": "Em Sherif",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Gastronomique libanais, le meilleur à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Em+Sherif+Beyrouth",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique libanais",
+   "nombreAvis": 647,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r1"
+  },
+  {
+   "nom": "Tawlet",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Cuisine des régions libanaises, buffet à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Tawlet+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Cuisine des régions libanaises",
+   "nombreAvis": 652,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r2"
+  },
+  {
+   "nom": "Al Falamanki",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Beyrouth",
+   "description": "Tradition libanaise, narguilé halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Al+Falamanki+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Tradition libanaise",
+   "nombreAvis": 663,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r3"
+  },
+  {
+   "nom": "Leila Restaurant Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Libanais gastronomique à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Leila+Restaurant+Beyrouth+Beyrouth",
+   "priceRange": "€€€€",
+   "specialite": "Libanais gastronomique",
+   "nombreAvis": 615,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r4"
+  },
+  {
+   "nom": "Abdel Wahab El Inglizi",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Mezze libanais historique à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Abdel+Wahab+El+Inglizi+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Mezze libanais historique",
+   "nombreAvis": 521,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r5"
+  },
+  {
+   "nom": "Al-Balad",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Beyrouth",
+   "description": "Traditionnel Beyrouth à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Balad+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Traditionnel beyrouth",
+   "nombreAvis": 2325,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r6"
+  },
+  {
+   "nom": "Barbar",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.9,
+   "adresse": "Beyrouth",
+   "description": "Shawarma légendaire 24h à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Barbar+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Shawarma légendaire 24h",
+   "nombreAvis": 2000,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r7"
+  },
+  {
+   "nom": "Falafel M. Sahyoun",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Falafel légendaire à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Falafel+M.+Sahyoun+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Falafel légendaire",
+   "nombreAvis": 253,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r8"
+  },
+  {
+   "nom": "Snack Faysal",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Street food libanais à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Snack+Faysal+Beyrouth",
+   "priceRange": "€",
+   "specialite": "Street food libanais",
+   "nombreAvis": 1481,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ],
+   "id": "r9"
+  },
+  {
+   "nom": "Kababji Grill",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Beyrouth",
+   "description": "Grillades libanaises à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Kababji+Grill+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Grillades libanaises",
+   "nombreAvis": 3123,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r10"
+  },
+  {
+   "nom": "Ferdinand",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Beyrouth",
+   "description": "Bistrot halal moderne à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Ferdinand+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Bistrot halal moderne",
+   "nombreAvis": 3179,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r11"
+  },
+  {
+   "nom": "Urbanista Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Café brunch halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Urbanista+Beyrouth+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Café brunch halal",
+   "nombreAvis": 319,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r12"
+  },
+  {
+   "nom": "Mayrig",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Arménien gastronomique à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Mayrig+Beyrouth",
+   "priceRange": "€€€€",
+   "specialite": "Arménien gastronomique",
+   "nombreAvis": 2238,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "livraison",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r13"
+  },
+  {
+   "nom": "Onno",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Américain-arménien halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Onno+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Américain-arménien halal",
+   "nombreAvis": 1050,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r14"
+  },
+  {
+   "nom": "Burgundy",
+   "type": "Gastronomique",
+   "certificationHalal": true,
+   "score": 4.8,
+   "adresse": "Beyrouth",
+   "description": "Gastronomique français halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Burgundy+Beyrouth",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique français halal",
+   "nombreAvis": 1566,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": true,
+   "tags": [
+    "calme",
+    "reservation-requise",
+    "romantique"
+   ],
+   "id": "r15"
+  },
+  {
+   "nom": "Kitchen Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Beyrouth",
+   "description": "Fusion halal moderne à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Kitchen+Beyrouth+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Fusion halal moderne",
+   "nombreAvis": 1185,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r16"
+  },
+  {
+   "nom": "Ichiban Halal",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Japonais halal Beyrouth à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Ichiban+Halal+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Japonais halal beyrouth",
+   "nombreAvis": 2322,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r17"
+  },
+  {
+   "nom": "Osaka Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Beyrouth",
+   "description": "Sushi halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Osaka+Beyrouth+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Sushi halal",
+   "nombreAvis": 397,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r18"
+  },
+  {
+   "nom": "Chinese Dragon Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Beyrouth",
+   "description": "Cantonais halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Chinese+Dragon+Beyrouth+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Cantonais halal",
+   "nombreAvis": 1569,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r19"
+  },
+  {
+   "nom": "Indian Palace Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Indien premium à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Indian+Palace+Beyrouth+Beyrouth",
+   "priceRange": "€€€€",
+   "specialite": "Indien premium",
+   "nombreAvis": 1568,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r20"
+  },
+  {
+   "nom": "Rangoli Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Indien populaire à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Rangoli+Beyrouth+Beyrouth",
+   "priceRange": "€",
+   "specialite": "Indien populaire",
+   "nombreAvis": 1595,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ],
+   "id": "r21"
+  },
+  {
+   "nom": "Al-Ajami",
+   "type": "Fruits de mer",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Poissons et fruits de mer à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Ajami+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Poissons et fruits de mer",
+   "nombreAvis": 138,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "vue-mer"
+   ],
+   "id": "r22"
+  },
+  {
+   "nom": "La Posta",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Italien halal historique à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=La+Posta+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Italien halal historique",
+   "nombreAvis": 2615,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r23"
+  },
+  {
+   "nom": "Enab",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Beyrouth",
+   "description": "Libanais et levant fine dining à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Enab+Beyrouth",
+   "priceRange": "€€€€",
+   "specialite": "Libanais et levant fine dining",
+   "nombreAvis": 1312,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r24"
+  },
+  {
+   "nom": "Centrale Restaurant",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Beyrouth",
+   "description": "Modern halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Centrale+Restaurant+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Modern halal",
+   "nombreAvis": 406,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "local-authentique"
+   ],
+   "id": "r25"
+  },
+  {
+   "nom": "Appetito Trattoria",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.4,
+   "adresse": "Beyrouth",
+   "description": "Trattoria italienne halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Appetito+Trattoria+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Trattoria italienne halal",
+   "nombreAvis": 2371,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r26"
+  },
+  {
+   "nom": "La Table d'Hôte",
+   "type": "Traditionnel local",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Français casual halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=La+Table+d%27H%C3%B4te+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Français casual halal",
+   "nombreAvis": 1885,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "local-authentique"
+   ],
+   "id": "r27"
+  },
+  {
+   "nom": "Torino Express",
+   "type": "Pizza & Italien",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Beyrouth",
+   "description": "Café italien halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Torino+Express+Beyrouth",
+   "priceRange": "€",
+   "specialite": "Café italien halal",
+   "nombreAvis": 702,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r28"
+  },
+  {
+   "nom": "BAB Beirut Café",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Bar à jus et snacks à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=BAB+Beirut+Caf%C3%A9+Beyrouth",
+   "priceRange": "€",
+   "specialite": "Bar à jus et snacks",
+   "nombreAvis": 433,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ],
+   "id": "r29"
+  },
+  {
+   "nom": "Zaatar W Zeit Hamra",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Libanais fast halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Zaatar+W+Zeit+Hamra+Beyrouth",
+   "priceRange": "€",
+   "specialite": "Libanais fast halal",
+   "nombreAvis": 1462,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r30"
+  },
+  {
+   "nom": "Roadster Diner",
+   "type": "Burgers & Fast-food",
+   "certificationHalal": true,
+   "score": 4.3,
+   "adresse": "Beyrouth",
+   "description": "Burgers libanais halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Roadster+Diner+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Burgers libanais halal",
+   "nombreAvis": 295,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "a-emporter",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r31"
+  },
+  {
+   "nom": "T-Marbouta",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Libanais intime à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=T-Marbouta+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Libanais intime",
+   "nombreAvis": 2299,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r32"
+  },
+  {
+   "nom": "Karam Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Gastronomique levant à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Karam+Beyrouth+Beyrouth",
+   "priceRange": "€€€€",
+   "specialite": "Gastronomique levant",
+   "nombreAvis": 514,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r33"
+  },
+  {
+   "nom": "Babel Restaurant",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Beyrouth",
+   "description": "Libanais et levant luxe à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Babel+Restaurant+Beyrouth",
+   "priceRange": "€€€€",
+   "specialite": "Libanais et levant luxe",
+   "nombreAvis": 854,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": true,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r34"
+  },
+  {
+   "nom": "Al-Dente Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Pasta italienne halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Al-Dente+Beyrouth+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Pasta italienne halal",
+   "nombreAvis": 2164,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison"
+   ],
+   "id": "r35"
+  },
+  {
+   "nom": "Sato Sushi",
+   "type": "Japonais & Asiatique",
+   "certificationHalal": true,
+   "score": 4.7,
+   "adresse": "Beyrouth",
+   "description": "Sushi halal populaire à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Sato+Sushi+Beyrouth",
+   "priceRange": "€",
+   "specialite": "Sushi halal populaire",
+   "nombreAvis": 695,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "calme",
+    "rapide",
+    "touristique"
+   ],
+   "id": "r36"
+  },
+  {
+   "nom": "Sushi Bar Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Fusion halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Sushi+Bar+Beyrouth+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Fusion halal",
+   "nombreAvis": 455,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r37"
+  },
+  {
+   "nom": "Thai Garden Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.2,
+   "adresse": "Beyrouth",
+   "description": "Thaï certifié halal à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Thai+Garden+Beyrouth+Beyrouth",
+   "priceRange": "€€",
+   "specialite": "Thaï certifié halal",
+   "nombreAvis": 43,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial"
+   ],
+   "id": "r38"
+  },
+  {
+   "nom": "Turkish Pasha Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.5,
+   "adresse": "Beyrouth",
+   "description": "Turc populaire à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Turkish+Pasha+Beyrouth+Beyrouth",
+   "priceRange": "€",
+   "specialite": "Turc populaire",
+   "nombreAvis": 1866,
+   "ouvertureRamadan": true,
+   "livraison": true,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "livraison",
+    "rapide"
+   ],
+   "id": "r39"
+  },
+  {
+   "nom": "Casablanca Beyrouth",
+   "type": "Libanais & Levant",
+   "certificationHalal": true,
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Marocain populaire à Beyrouth.",
+   "mapsUrl": "https://maps.google.com/?q=Casablanca+Beyrouth+Beyrouth",
+   "priceRange": "€",
+   "specialite": "Marocain populaire",
+   "nombreAvis": 693,
+   "ouvertureRamadan": true,
+   "livraison": false,
+   "reservationRequise": false,
+   "tags": [
+    "animé",
+    "familial",
+    "rapide"
+   ],
+   "id": "r40"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Le Gray Beirut",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Centre-ville, Beyrouth",
+   "description": "Hôtel design au cœur du centre-ville, toit-terrasse panoramique.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Le+Gray+Beirut+Beyrouth",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
+   "priceRange": "€€€€",
+   "id": "h1",
+   "nombreAvis": 1709,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 33.8972007,
+   "lng": 35.5066245
+  },
+  {
+   "nom": "Phoenicia Hotel",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Minet El Hosn, Beyrouth",
+   "description": "Palace historique face à la marina, institution beyrouthine.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Phoenicia+Hotel+Beyrouth",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
+   "priceRange": "€€€€",
+   "id": "h2",
+   "nombreAvis": 1458,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "lat": 33.9006542,
+   "lng": 35.4947072
+  },
+  {
+   "nom": "Saifi Suites",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Saifi Village, Beyrouth",
+   "description": "Appart-hôtel calme dans le quartier des arts de Saifi.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Saifi+Suites+Beyrouth",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
+   "priceRange": "€€€",
+   "id": "h3",
+   "nombreAvis": 2352,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Hamra Urbain",
+   "categorie": "Budget",
+   "score": 4.1,
+   "adresse": "Hamra, Beyrouth",
+   "description": "Hébergement abordable au cœur animé de Hamra.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Hamra+Urbain+Beyrouth",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
+   "priceRange": "€€",
+   "id": "h4",
+   "nombreAvis": 2445,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "O Monot Boutique",
+   "categorie": "Riad & Boutique",
+   "score": 4.5,
+   "adresse": "Monot, Beyrouth",
+   "description": "Boutique-hôtel design et intimiste à Achrafieh.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=O+Monot+Boutique+Beyrouth",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
+   "priceRange": "€€€",
+   "id": "h5",
+   "nombreAvis": 2080,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "lat": 33.8919341,
+   "lng": 35.5074092
+  },
+  {
+   "nom": "Grand Plaza Beyrouth",
+   "categorie": "Luxe",
+   "score": 4.2,
+   "adresse": "Beyrouth",
+   "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Beyrouth+Beyrouth",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
+   "priceRange": "€€€€",
+   "id": "h6",
+   "nombreAvis": 550,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ]
+  },
+  {
+   "nom": "Grand Plaza Beyrouth 0",
+   "categorie": "Luxe",
+   "score": 4.6,
+   "adresse": "Beyrouth",
+   "description": "Hébergement halal-friendly à Beyrouth.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Beyrouth+0+Beyrouth",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
+   "priceRange": "€€€€",
+   "nombreAvis": 1973,
+   "piscineNonMixte": true,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "navette-aeroport",
+    "parking",
+    "piscine",
+    "restaurant-halal",
+    "salle-sport",
+    "spa",
+    "wifi"
+   ],
+   "id": "h7"
+  },
+  {
+   "nom": "City Comfort Beyrouth",
+   "categorie": "Standard",
+   "score": 4.4,
+   "adresse": "Beyrouth",
+   "description": "Hébergement halal-friendly à Beyrouth.",
+   "halalFriendly": true,
+   "sansAlcool": false,
+   "mapsUrl": "https://maps.google.com/?q=City+Comfort+Beyrouth+Beyrouth",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
+   "priceRange": "€€€",
+   "nombreAvis": 2503,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h8"
+  },
+  {
+   "nom": "Boutique Dar Beyrouth",
+   "categorie": "Riad & Boutique",
+   "score": 4.3,
+   "adresse": "Beyrouth",
+   "description": "Hébergement halal-friendly à Beyrouth.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Beyrouth+Beyrouth",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
+   "priceRange": "€€€",
+   "nombreAvis": 2220,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h9"
+  },
+  {
+   "nom": "Budget Inn Beyrouth",
+   "categorie": "Budget",
+   "score": 4.2,
+   "adresse": "Beyrouth",
+   "description": "Hébergement halal-friendly à Beyrouth.",
+   "halalFriendly": true,
+   "sansAlcool": true,
+   "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Beyrouth+Beyrouth",
+   "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
+   "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
+   "priceRange": "€€",
+   "nombreAvis": 1394,
+   "piscineNonMixte": false,
+   "salleDePreiere": true,
+   "qiblaIndicateur": true,
+   "petitDejeunerHalal": true,
+   "services": [
+    "centre-ville",
+    "conciergerie",
+    "parking",
+    "restaurant-halal",
+    "wifi"
+   ],
+   "id": "h10"
+  }
+ ],
+ "activites": [
+  {
+   "nom": "Mosquée Mohammed Al-Amine",
+   "categorie": "Religieux & Spirituel",
+   "description": "Majestueuse mosquée aux dômes bleus dominant le centre-ville reconstruit.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Mohammed+Al-Amine+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Mohammed+Al-Amine+Beyrouth",
+   "id": "a1",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Corniche de Beyrouth",
+   "categorie": "Nature & Aventure",
+   "description": "Promenade méditerranéenne face à la Grotte aux Pigeons (Raouché).",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Corniche+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+de+Beyrouth+Beyrouth",
+   "id": "a2",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Musée National de Beyrouth",
+   "categorie": "Art & Musées",
+   "description": "Trésors phéniciens, romains et islamiques du Liban.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+National+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+National+de+Beyrouth+Beyrouth",
+   "id": "a3",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Souks de Beyrouth",
+   "categorie": "Shopping & Souks",
+   "description": "Quartier commerçant reconstruit sur les anciens souks historiques.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Souks+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souks+de+Beyrouth+Beyrouth",
+   "id": "a4",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier de Gemmayzeh",
+   "categorie": "Histoire & Culture",
+   "description": "Ruelles d'escaliers, maisons ottomanes et scène culturelle.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+de+Gemmayzeh+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Gemmayzeh+Beyrouth",
+   "id": "a5",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Pigeon Rocks (Raouché)",
+   "categorie": "Nature & Aventure",
+   "description": "Arches rocheuses emblématiques au large de la corniche.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Pigeon+Rocks+%28Raouch%C3%A9%29+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Pigeon+Rocks+%28Raouch%C3%A9%29+Beyrouth",
+   "id": "a6",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Beit Beirut",
+   "categorie": "Art & Musées",
+   "description": "Mémorial-musée dans une maison emblématique de la ligne de démarcation.",
+   "duree": "1-2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Beit+Beirut+Beyrouth",
+   "id": "a7",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Cours de cuisine libanaise",
+   "categorie": "Gastronomie",
+   "description": "Atelier mezze et manousheh avec un chef, dégustation incluse.",
+   "duree": "3h",
+   "prix": "€€€",
+   "mapsUrl": "https://maps.google.com/?q=Cours+de+cuisine+libanaise+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cours+de+cuisine+libanaise+Beyrouth",
+   "id": "a8",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Vieille ville de Beyrouth",
+   "categorie": "Histoire & Culture",
+   "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Beyrouth+Beyrouth",
+   "id": "a9",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Grand souk de Beyrouth",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Beyrouth+Beyrouth",
+   "id": "a10",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
+  },
+  {
+   "nom": "Quartier historique de Beyrouth",
+   "categorie": "Histoire & Culture",
+   "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Beyrouth+Beyrouth",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a11"
+  },
+  {
+   "nom": "Grand marché central de Beyrouth",
+   "categorie": "Shopping & Souks",
+   "description": "Marché traditionnel d'épices, textiles et artisanat local.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Beyrouth+Beyrouth",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a12"
+  },
+  {
+   "nom": "Promenade au bord de l'eau de Beyrouth",
+   "categorie": "Nature & Aventure",
+   "description": "Balade au coucher du soleil le long du front d'eau.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Beyrouth+Beyrouth",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a13"
+  },
+  {
+   "nom": "Musée de la ville de Beyrouth",
+   "categorie": "Art & Musées",
+   "description": "Collections retraçant l'histoire et la culture islamique locale.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Beyrouth+Beyrouth",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a14"
+  },
+  {
+   "nom": "Food tour halal de Beyrouth",
+   "categorie": "Gastronomie",
+   "description": "Parcours des meilleures adresses de street food halal avec un guide.",
+   "duree": "3h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Beyrouth+Beyrouth",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a15"
+  },
+  {
+   "nom": "Hammam traditionnel de Beyrouth",
+   "categorie": "Bien-être & Spa",
+   "description": "Bain de vapeur et gommage selon la tradition orientale.",
+   "duree": "2h",
+   "prix": "€€",
+   "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Beyrouth+Beyrouth",
+   "meilleureEpoque": "Hiver",
+   "idealPour": [
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a16"
+  },
+  {
+   "nom": "Mosquée historique de Beyrouth",
+   "categorie": "Religieux & Spirituel",
+   "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
+   "duree": "1h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Beyrouth+Beyrouth",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "solo",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a17"
+  },
+  {
+   "nom": "Parc et jardins de Beyrouth",
+   "categorie": "Nature & Aventure",
+   "description": "Espace vert paisible idéal pour les familles.",
+   "duree": "1-2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Beyrouth+Beyrouth",
+   "meilleureEpoque": "Printemps-Automne",
+   "idealPour": [
+    "famille",
+    "groupe",
+    "couple"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a18"
+  },
+  {
+   "nom": "Centre commercial halal-friendly de Beyrouth",
+   "categorie": "Shopping & Souks",
+   "description": "Grand mall avec salle de prière et food court halal.",
+   "duree": "2h",
+   "prix": "Gratuit",
+   "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Beyrouth+Beyrouth",
+   "meilleureEpoque": "Toute l'année",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a19"
+  },
+  {
+   "nom": "Atelier d'artisanat local de Beyrouth",
+   "categorie": "Art & Musées",
+   "description": "Découverte des savoir-faire traditionnels de la région.",
+   "duree": "2h",
+   "prix": "€",
+   "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Beyrouth+Beyrouth",
+   "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Beyrouth+Beyrouth",
+   "meilleureEpoque": "Été",
+   "idealPour": [
+    "famille",
+    "couple",
+    "solo"
+   ],
+   "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
+   "id": "a20"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "nom": "Mosquée Mohammed Al-Amine",
+   "description": "Mosquée emblématique aux dômes bleus, capacité de plusieurs milliers de fidèles.",
+   "adresse": "Place des Martyrs, Beyrouth",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Mohammed+Al-Amine+Beyrouth",
+   "capacite": 4900,
+   "anneeConstruction": 1960,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
     "lat": 33.8938,
     "lng": 35.5018
+   }
   },
-  "image_alt": "Vue de Beyrouth, Liban",
-  "statistiques": {
-    "mosquees": 150,
-    "restaurants_halal": 800,
-    "habitants_musulmans_pct": 60
+  {
+   "nom": "Mosquée Al-Omari",
+   "description": "Ancienne mosquée du centre historique, héritage des époques successives.",
+   "adresse": "Centre-ville, Beyrouth",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Omari+Beyrouth",
+   "capacite": 8690,
+   "anneeConstruction": 1960,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.8938,
+    "lng": 35.5018
+   }
   },
-  "infos_pratiques": {
-    "langue": "Arabe (français/anglais courants)",
-    "monnaie": "Livre libanaise (LBP)",
-    "meilleure_periode": "Avril à Juin, Sept à Nov",
-    "appel_priere": "5 fois par jour",
-    "nourriture_halal": "Largement disponible",
-    "alcool": "Disponible",
-    "securite": "Précautions habituelles"
+  {
+   "nom": "Mosquée centrale de Beyrouth",
+   "description": "Mosquée fréquentée de Beyrouth, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Beyrouth",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Beyrouth+Beyrouth",
+   "capacite": 5172,
+   "anneeConstruction": 2012,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.8938,
+    "lng": 35.5018
+   }
   },
-  "infoPratique": {
-    "visa": "Visa gratuit à l'arrivée pour les Français (1 mois)",
-    "vaccins": "Aucun obligatoire",
-    "transport": "Taxis-service, Uber/Bolt, voiture",
-    "priseElectrique": "Type C/D/G — 220V",
-    "decalageHoraire": "+1h par rapport à Paris"
+  {
+   "nom": "Grande Mosquée de Beyrouth",
+   "description": "Mosquée fréquentée de Beyrouth, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Beyrouth",
+   "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Beyrouth+Beyrouth",
+   "capacite": 2876,
+   "anneeConstruction": 1956,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.8938,
+    "lng": 35.5018
+   }
   },
-  "restaurants": [
-    {
-      "nom": "Em Sherif",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Gastronomique libanais, le meilleur à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Em+Sherif+Beyrouth",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique libanais",
-      "nombreAvis": 647,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r1"
-    },
-    {
-      "nom": "Tawlet",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Cuisine des régions libanaises, buffet à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Tawlet+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Cuisine des régions libanaises",
-      "nombreAvis": 652,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r2"
-    },
-    {
-      "nom": "Al Falamanki",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Beyrouth",
-      "description": "Tradition libanaise, narguilé halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Al+Falamanki+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Tradition libanaise",
-      "nombreAvis": 663,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r3"
-    },
-    {
-      "nom": "Leila Restaurant Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Libanais gastronomique à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Leila+Restaurant+Beyrouth+Beyrouth",
-      "priceRange": "€€€€",
-      "specialite": "Libanais gastronomique",
-      "nombreAvis": 615,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r4"
-    },
-    {
-      "nom": "Abdel Wahab El Inglizi",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Mezze libanais historique à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Abdel+Wahab+El+Inglizi+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Mezze libanais historique",
-      "nombreAvis": 521,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r5"
-    },
-    {
-      "nom": "Al-Balad",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Beyrouth",
-      "description": "Traditionnel Beyrouth à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Balad+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Traditionnel beyrouth",
-      "nombreAvis": 2325,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r6"
-    },
-    {
-      "nom": "Barbar",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.9,
-      "adresse": "Beyrouth",
-      "description": "Shawarma légendaire 24h à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Barbar+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Shawarma légendaire 24h",
-      "nombreAvis": 2000,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r7"
-    },
-    {
-      "nom": "Falafel M. Sahyoun",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Falafel légendaire à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Falafel+M.+Sahyoun+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Falafel légendaire",
-      "nombreAvis": 253,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r8"
-    },
-    {
-      "nom": "Snack Faysal",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Street food libanais à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Snack+Faysal+Beyrouth",
-      "priceRange": "€",
-      "specialite": "Street food libanais",
-      "nombreAvis": 1481,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ],
-      "id": "r9"
-    },
-    {
-      "nom": "Kababji Grill",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Beyrouth",
-      "description": "Grillades libanaises à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Kababji+Grill+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Grillades libanaises",
-      "nombreAvis": 3123,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r10"
-    },
-    {
-      "nom": "Ferdinand",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Beyrouth",
-      "description": "Bistrot halal moderne à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Ferdinand+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Bistrot halal moderne",
-      "nombreAvis": 3179,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r11"
-    },
-    {
-      "nom": "Urbanista Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Café brunch halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Urbanista+Beyrouth+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Café brunch halal",
-      "nombreAvis": 319,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r12"
-    },
-    {
-      "nom": "Mayrig",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Arménien gastronomique à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Mayrig+Beyrouth",
-      "priceRange": "€€€€",
-      "specialite": "Arménien gastronomique",
-      "nombreAvis": 2238,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "livraison",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r13"
-    },
-    {
-      "nom": "Onno",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Américain-arménien halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Onno+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Américain-arménien halal",
-      "nombreAvis": 1050,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r14"
-    },
-    {
-      "nom": "Burgundy",
-      "type": "Gastronomique",
-      "certificationHalal": true,
-      "score": 4.8,
-      "adresse": "Beyrouth",
-      "description": "Gastronomique français halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Burgundy+Beyrouth",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique français halal",
-      "nombreAvis": 1566,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": true,
-      "tags": [
-        "calme",
-        "reservation-requise",
-        "romantique"
-      ],
-      "id": "r15"
-    },
-    {
-      "nom": "Kitchen Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Beyrouth",
-      "description": "Fusion halal moderne à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Kitchen+Beyrouth+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Fusion halal moderne",
-      "nombreAvis": 1185,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r16"
-    },
-    {
-      "nom": "Ichiban Halal",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Japonais halal Beyrouth à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Ichiban+Halal+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Japonais halal beyrouth",
-      "nombreAvis": 2322,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r17"
-    },
-    {
-      "nom": "Osaka Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Beyrouth",
-      "description": "Sushi halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Osaka+Beyrouth+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Sushi halal",
-      "nombreAvis": 397,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r18"
-    },
-    {
-      "nom": "Chinese Dragon Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Beyrouth",
-      "description": "Cantonais halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Chinese+Dragon+Beyrouth+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Cantonais halal",
-      "nombreAvis": 1569,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r19"
-    },
-    {
-      "nom": "Indian Palace Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Indien premium à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Indian+Palace+Beyrouth+Beyrouth",
-      "priceRange": "€€€€",
-      "specialite": "Indien premium",
-      "nombreAvis": 1568,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r20"
-    },
-    {
-      "nom": "Rangoli Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Indien populaire à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Rangoli+Beyrouth+Beyrouth",
-      "priceRange": "€",
-      "specialite": "Indien populaire",
-      "nombreAvis": 1595,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ],
-      "id": "r21"
-    },
-    {
-      "nom": "Al-Ajami",
-      "type": "Fruits de mer",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Poissons et fruits de mer à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Ajami+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Poissons et fruits de mer",
-      "nombreAvis": 138,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "vue-mer"
-      ],
-      "id": "r22"
-    },
-    {
-      "nom": "La Posta",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Italien halal historique à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=La+Posta+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Italien halal historique",
-      "nombreAvis": 2615,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r23"
-    },
-    {
-      "nom": "Enab",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Beyrouth",
-      "description": "Libanais et levant fine dining à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Enab+Beyrouth",
-      "priceRange": "€€€€",
-      "specialite": "Libanais et levant fine dining",
-      "nombreAvis": 1312,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r24"
-    },
-    {
-      "nom": "Centrale Restaurant",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Beyrouth",
-      "description": "Modern halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Centrale+Restaurant+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Modern halal",
-      "nombreAvis": 406,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "local-authentique"
-      ],
-      "id": "r25"
-    },
-    {
-      "nom": "Appetito Trattoria",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.4,
-      "adresse": "Beyrouth",
-      "description": "Trattoria italienne halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Appetito+Trattoria+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Trattoria italienne halal",
-      "nombreAvis": 2371,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r26"
-    },
-    {
-      "nom": "La Table d'Hôte",
-      "type": "Traditionnel local",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Français casual halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=La+Table+d%27H%C3%B4te+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Français casual halal",
-      "nombreAvis": 1885,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "local-authentique"
-      ],
-      "id": "r27"
-    },
-    {
-      "nom": "Torino Express",
-      "type": "Pizza & Italien",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Beyrouth",
-      "description": "Café italien halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Torino+Express+Beyrouth",
-      "priceRange": "€",
-      "specialite": "Café italien halal",
-      "nombreAvis": 702,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r28"
-    },
-    {
-      "nom": "BAB Beirut Café",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Bar à jus et snacks à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=BAB+Beirut+Caf%C3%A9+Beyrouth",
-      "priceRange": "€",
-      "specialite": "Bar à jus et snacks",
-      "nombreAvis": 433,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ],
-      "id": "r29"
-    },
-    {
-      "nom": "Zaatar W Zeit Hamra",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Libanais fast halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Zaatar+W+Zeit+Hamra+Beyrouth",
-      "priceRange": "€",
-      "specialite": "Libanais fast halal",
-      "nombreAvis": 1462,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r30"
-    },
-    {
-      "nom": "Roadster Diner",
-      "type": "Burgers & Fast-food",
-      "certificationHalal": true,
-      "score": 4.3,
-      "adresse": "Beyrouth",
-      "description": "Burgers libanais halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Roadster+Diner+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Burgers libanais halal",
-      "nombreAvis": 295,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "a-emporter",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r31"
-    },
-    {
-      "nom": "T-Marbouta",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Libanais intime à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=T-Marbouta+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Libanais intime",
-      "nombreAvis": 2299,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r32"
-    },
-    {
-      "nom": "Karam Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Gastronomique levant à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Karam+Beyrouth+Beyrouth",
-      "priceRange": "€€€€",
-      "specialite": "Gastronomique levant",
-      "nombreAvis": 514,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r33"
-    },
-    {
-      "nom": "Babel Restaurant",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Beyrouth",
-      "description": "Libanais et levant luxe à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Babel+Restaurant+Beyrouth",
-      "priceRange": "€€€€",
-      "specialite": "Libanais et levant luxe",
-      "nombreAvis": 854,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": true,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r34"
-    },
-    {
-      "nom": "Al-Dente Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Pasta italienne halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Al-Dente+Beyrouth+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Pasta italienne halal",
-      "nombreAvis": 2164,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison"
-      ],
-      "id": "r35"
-    },
-    {
-      "nom": "Sato Sushi",
-      "type": "Japonais & Asiatique",
-      "certificationHalal": true,
-      "score": 4.7,
-      "adresse": "Beyrouth",
-      "description": "Sushi halal populaire à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Sato+Sushi+Beyrouth",
-      "priceRange": "€",
-      "specialite": "Sushi halal populaire",
-      "nombreAvis": 695,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "calme",
-        "rapide",
-        "touristique"
-      ],
-      "id": "r36"
-    },
-    {
-      "nom": "Sushi Bar Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Fusion halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Sushi+Bar+Beyrouth+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Fusion halal",
-      "nombreAvis": 455,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r37"
-    },
-    {
-      "nom": "Thai Garden Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.2,
-      "adresse": "Beyrouth",
-      "description": "Thaï certifié halal à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Thai+Garden+Beyrouth+Beyrouth",
-      "priceRange": "€€",
-      "specialite": "Thaï certifié halal",
-      "nombreAvis": 43,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial"
-      ],
-      "id": "r38"
-    },
-    {
-      "nom": "Turkish Pasha Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.5,
-      "adresse": "Beyrouth",
-      "description": "Turc populaire à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Turkish+Pasha+Beyrouth+Beyrouth",
-      "priceRange": "€",
-      "specialite": "Turc populaire",
-      "nombreAvis": 1866,
-      "ouvertureRamadan": true,
-      "livraison": true,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "livraison",
-        "rapide"
-      ],
-      "id": "r39"
-    },
-    {
-      "nom": "Casablanca Beyrouth",
-      "type": "Libanais & Levant",
-      "certificationHalal": true,
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Marocain populaire à Beyrouth.",
-      "mapsUrl": "https://maps.google.com/?q=Casablanca+Beyrouth+Beyrouth",
-      "priceRange": "€",
-      "specialite": "Marocain populaire",
-      "nombreAvis": 693,
-      "ouvertureRamadan": true,
-      "livraison": false,
-      "reservationRequise": false,
-      "tags": [
-        "animé",
-        "familial",
-        "rapide"
-      ],
-      "id": "r40"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Le Gray Beirut",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Centre-ville, Beyrouth",
-      "description": "Hôtel design au cœur du centre-ville, toit-terrasse panoramique.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Le+Gray+Beirut+Beyrouth",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
-      "priceRange": "€€€€",
-      "id": "h1",
-      "nombreAvis": 1709,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Phoenicia Hotel",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Minet El Hosn, Beyrouth",
-      "description": "Palace historique face à la marina, institution beyrouthine.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Phoenicia+Hotel+Beyrouth",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
-      "priceRange": "€€€€",
-      "id": "h2",
-      "nombreAvis": 1458,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Saifi Suites",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Saifi Village, Beyrouth",
-      "description": "Appart-hôtel calme dans le quartier des arts de Saifi.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Saifi+Suites+Beyrouth",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
-      "priceRange": "€€€",
-      "id": "h3",
-      "nombreAvis": 2352,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Hamra Urbain",
-      "categorie": "Budget",
-      "score": 4.1,
-      "adresse": "Hamra, Beyrouth",
-      "description": "Hébergement abordable au cœur animé de Hamra.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Hamra+Urbain+Beyrouth",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
-      "priceRange": "€€",
-      "id": "h4",
-      "nombreAvis": 2445,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "O Monot Boutique",
-      "categorie": "Riad & Boutique",
-      "score": 4.5,
-      "adresse": "Monot, Beyrouth",
-      "description": "Boutique-hôtel design et intimiste à Achrafieh.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=O+Monot+Boutique+Beyrouth",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
-      "priceRange": "€€€",
-      "id": "h5",
-      "nombreAvis": 2080,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Beyrouth",
-      "categorie": "Luxe",
-      "score": 4.2,
-      "adresse": "Beyrouth",
-      "description": "Hôtel 5 étoiles central, cuisine halal et spa.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Beyrouth+Beyrouth",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
-      "priceRange": "€€€€",
-      "id": "h6",
-      "nombreAvis": 550,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ]
-    },
-    {
-      "nom": "Grand Plaza Beyrouth 0",
-      "categorie": "Luxe",
-      "score": 4.6,
-      "adresse": "Beyrouth",
-      "description": "Hébergement halal-friendly à Beyrouth.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=Grand+Plaza+Beyrouth+0+Beyrouth",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
-      "priceRange": "€€€€",
-      "nombreAvis": 1973,
-      "piscineNonMixte": true,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "navette-aeroport",
-        "parking",
-        "piscine",
-        "restaurant-halal",
-        "salle-sport",
-        "spa",
-        "wifi"
-      ],
-      "id": "h7"
-    },
-    {
-      "nom": "City Comfort Beyrouth",
-      "categorie": "Standard",
-      "score": 4.4,
-      "adresse": "Beyrouth",
-      "description": "Hébergement halal-friendly à Beyrouth.",
-      "halalFriendly": true,
-      "sansAlcool": false,
-      "mapsUrl": "https://maps.google.com/?q=City+Comfort+Beyrouth+Beyrouth",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
-      "priceRange": "€€€",
-      "nombreAvis": 2503,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h8"
-    },
-    {
-      "nom": "Boutique Dar Beyrouth",
-      "categorie": "Riad & Boutique",
-      "score": 4.3,
-      "adresse": "Beyrouth",
-      "description": "Hébergement halal-friendly à Beyrouth.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Boutique+Dar+Beyrouth+Beyrouth",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
-      "priceRange": "€€€",
-      "nombreAvis": 2220,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h9"
-    },
-    {
-      "nom": "Budget Inn Beyrouth",
-      "categorie": "Budget",
-      "score": 4.2,
-      "adresse": "Beyrouth",
-      "description": "Hébergement halal-friendly à Beyrouth.",
-      "halalFriendly": true,
-      "sansAlcool": true,
-      "mapsUrl": "https://maps.google.com/?q=Budget+Inn+Beyrouth+Beyrouth",
-      "bookingUrl": "https://www.booking.com/searchresults.fr.html?ss=Beyrouth&label=voyageshalal",
-      "halalBookingUrl": "https://www.halalbooking.com/search?city=beyrouth",
-      "priceRange": "€€",
-      "nombreAvis": 1394,
-      "piscineNonMixte": false,
-      "salleDePreiere": true,
-      "qiblaIndicateur": true,
-      "petitDejeunerHalal": true,
-      "services": [
-        "centre-ville",
-        "conciergerie",
-        "parking",
-        "restaurant-halal",
-        "wifi"
-      ],
-      "id": "h10"
-    }
-  ],
-  "activites": [
-    {
-      "nom": "Mosquée Mohammed Al-Amine",
-      "categorie": "Religieux & Spirituel",
-      "description": "Majestueuse mosquée aux dômes bleus dominant le centre-ville reconstruit.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Mohammed+Al-Amine+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+Mohammed+Al-Amine+Beyrouth",
-      "id": "a1",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Corniche de Beyrouth",
-      "categorie": "Nature & Aventure",
-      "description": "Promenade méditerranéenne face à la Grotte aux Pigeons (Raouché).",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Corniche+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Corniche+de+Beyrouth+Beyrouth",
-      "id": "a2",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Musée National de Beyrouth",
-      "categorie": "Art & Musées",
-      "description": "Trésors phéniciens, romains et islamiques du Liban.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+National+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+National+de+Beyrouth+Beyrouth",
-      "id": "a3",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Souks de Beyrouth",
-      "categorie": "Shopping & Souks",
-      "description": "Quartier commerçant reconstruit sur les anciens souks historiques.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Souks+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Souks+de+Beyrouth+Beyrouth",
-      "id": "a4",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier de Gemmayzeh",
-      "categorie": "Histoire & Culture",
-      "description": "Ruelles d'escaliers, maisons ottomanes et scène culturelle.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+de+Gemmayzeh+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+de+Gemmayzeh+Beyrouth",
-      "id": "a5",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Pigeon Rocks (Raouché)",
-      "categorie": "Nature & Aventure",
-      "description": "Arches rocheuses emblématiques au large de la corniche.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Pigeon+Rocks+%28Raouch%C3%A9%29+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Pigeon+Rocks+%28Raouch%C3%A9%29+Beyrouth",
-      "id": "a6",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Beit Beirut",
-      "categorie": "Art & Musées",
-      "description": "Mémorial-musée dans une maison emblématique de la ligne de démarcation.",
-      "duree": "1-2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Beit+Beirut+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Beit+Beirut+Beyrouth",
-      "id": "a7",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Cours de cuisine libanaise",
-      "categorie": "Gastronomie",
-      "description": "Atelier mezze et manousheh avec un chef, dégustation incluse.",
-      "duree": "3h",
-      "prix": "€€€",
-      "mapsUrl": "https://maps.google.com/?q=Cours+de+cuisine+libanaise+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Cours+de+cuisine+libanaise+Beyrouth",
-      "id": "a8",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Vieille ville de Beyrouth",
-      "categorie": "Histoire & Culture",
-      "description": "Flânerie dans les ruelles historiques et l'architecture locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Vieille+ville+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Vieille+ville+de+Beyrouth+Beyrouth",
-      "id": "a9",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Grand souk de Beyrouth",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+souk+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+souk+de+Beyrouth+Beyrouth",
-      "id": "a10",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule."
-    },
-    {
-      "nom": "Quartier historique de Beyrouth",
-      "categorie": "Histoire & Culture",
-      "description": "Découverte du cœur ancien de la ville, architecture et ambiance locale.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Quartier+historique+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Quartier+historique+de+Beyrouth+Beyrouth",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a11"
-    },
-    {
-      "nom": "Grand marché central de Beyrouth",
-      "categorie": "Shopping & Souks",
-      "description": "Marché traditionnel d'épices, textiles et artisanat local.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Grand+march%C3%A9+central+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Grand+march%C3%A9+central+de+Beyrouth+Beyrouth",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a12"
-    },
-    {
-      "nom": "Promenade au bord de l'eau de Beyrouth",
-      "categorie": "Nature & Aventure",
-      "description": "Balade au coucher du soleil le long du front d'eau.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Promenade+au+bord+de+l%27eau+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Promenade+au+bord+de+l%27eau+de+Beyrouth+Beyrouth",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a13"
-    },
-    {
-      "nom": "Musée de la ville de Beyrouth",
-      "categorie": "Art & Musées",
-      "description": "Collections retraçant l'histoire et la culture islamique locale.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e+de+la+ville+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mus%C3%A9e+de+la+ville+de+Beyrouth+Beyrouth",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a14"
-    },
-    {
-      "nom": "Food tour halal de Beyrouth",
-      "categorie": "Gastronomie",
-      "description": "Parcours des meilleures adresses de street food halal avec un guide.",
-      "duree": "3h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Food+tour+halal+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Food+tour+halal+de+Beyrouth+Beyrouth",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a15"
-    },
-    {
-      "nom": "Hammam traditionnel de Beyrouth",
-      "categorie": "Bien-être & Spa",
-      "description": "Bain de vapeur et gommage selon la tradition orientale.",
-      "duree": "2h",
-      "prix": "€€",
-      "mapsUrl": "https://maps.google.com/?q=Hammam+traditionnel+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Hammam+traditionnel+de+Beyrouth+Beyrouth",
-      "meilleureEpoque": "Hiver",
-      "idealPour": [
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a16"
-    },
-    {
-      "nom": "Mosquée historique de Beyrouth",
-      "categorie": "Religieux & Spirituel",
-      "description": "Visite d'une mosquée emblématique, joyau du patrimoine local.",
-      "duree": "1h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+historique+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Mosqu%C3%A9e+historique+de+Beyrouth+Beyrouth",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "solo",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a17"
-    },
-    {
-      "nom": "Parc et jardins de Beyrouth",
-      "categorie": "Nature & Aventure",
-      "description": "Espace vert paisible idéal pour les familles.",
-      "duree": "1-2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Parc+et+jardins+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Parc+et+jardins+de+Beyrouth+Beyrouth",
-      "meilleureEpoque": "Printemps-Automne",
-      "idealPour": [
-        "famille",
-        "groupe",
-        "couple"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a18"
-    },
-    {
-      "nom": "Centre commercial halal-friendly de Beyrouth",
-      "categorie": "Shopping & Souks",
-      "description": "Grand mall avec salle de prière et food court halal.",
-      "duree": "2h",
-      "prix": "Gratuit",
-      "mapsUrl": "https://maps.google.com/?q=Centre+commercial+halal-friendly+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Centre+commercial+halal-friendly+de+Beyrouth+Beyrouth",
-      "meilleureEpoque": "Toute l'année",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a19"
-    },
-    {
-      "nom": "Atelier d'artisanat local de Beyrouth",
-      "categorie": "Art & Musées",
-      "description": "Découverte des savoir-faire traditionnels de la région.",
-      "duree": "2h",
-      "prix": "€",
-      "mapsUrl": "https://maps.google.com/?q=Atelier+d%27artisanat+local+de+Beyrouth+Beyrouth",
-      "tripadvisorUrl": "https://www.tripadvisor.fr/Search?q=Atelier+d%27artisanat+local+de+Beyrouth+Beyrouth",
-      "meilleureEpoque": "Été",
-      "idealPour": [
-        "famille",
-        "couple",
-        "solo"
-      ],
-      "conseil": "Venez tôt le matin pour profiter du calme et éviter la foule.",
-      "id": "a20"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "nom": "Mosquée Mohammed Al-Amine",
-      "description": "Mosquée emblématique aux dômes bleus, capacité de plusieurs milliers de fidèles.",
-      "adresse": "Place des Martyrs, Beyrouth",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Mohammed+Al-Amine+Beyrouth",
-      "capacite": 4900,
-      "anneeConstruction": 1960,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.8938,
-        "lng": 35.5018
-      }
-    },
-    {
-      "nom": "Mosquée Al-Omari",
-      "description": "Ancienne mosquée du centre historique, héritage des époques successives.",
-      "adresse": "Centre-ville, Beyrouth",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Omari+Beyrouth",
-      "capacite": 8690,
-      "anneeConstruction": 1960,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.8938,
-        "lng": 35.5018
-      }
-    },
-    {
-      "nom": "Mosquée centrale de Beyrouth",
-      "description": "Mosquée fréquentée de Beyrouth, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Beyrouth",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Beyrouth+Beyrouth",
-      "capacite": 5172,
-      "anneeConstruction": 2012,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.8938,
-        "lng": 35.5018
-      }
-    },
-    {
-      "nom": "Grande Mosquée de Beyrouth",
-      "description": "Mosquée fréquentée de Beyrouth, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Beyrouth",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Beyrouth+Beyrouth",
-      "capacite": 2876,
-      "anneeConstruction": 1956,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.8938,
-        "lng": 35.5018
-      }
-    },
-    {
-      "nom": "Mosquée Al-Noor de Beyrouth",
-      "description": "Mosquée fréquentée de Beyrouth, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Beyrouth",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Beyrouth+Beyrouth",
-      "capacite": 6094,
-      "anneeConstruction": 1934,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.8938,
-        "lng": 35.5018
-      }
-    },
-    {
-      "nom": "Mosquée Al-Salam de Beyrouth",
-      "description": "Mosquée fréquentée de Beyrouth, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Beyrouth",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Beyrouth+Beyrouth",
-      "capacite": 813,
-      "anneeConstruction": 2013,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.8938,
-        "lng": 35.5018
-      }
-    },
-    {
-      "nom": "Mosquée Al-Rahma de Beyrouth",
-      "description": "Mosquée fréquentée de Beyrouth, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Beyrouth",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Beyrouth+Beyrouth",
-      "capacite": 6438,
-      "anneeConstruction": 1958,
-      "styleArchitectural": "Moderne",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 33.8938,
-        "lng": 35.5018
-      }
-    }
-  ],
-  "tags": [
-    "gastronomie",
-    "levant",
-    "mediterranee",
-    "culture",
-    "cosmopolite",
-    "mezze"
-  ],
-  "selectionsPremium": {
-    "mieuxNotes": [
-      "Barbar",
-      "Burgundy",
-      "Kababji Grill",
-      "Ferdinand",
-      "Sato Sushi"
-    ],
-    "meilleurRapportQualitePrix": [
-      "Tawlet",
-      "Abdel Wahab El Inglizi",
-      "Al-Balad",
-      "Barbar",
-      "Falafel M. Sahyoun"
-    ],
-    "incontournables": [
-      "Ferdinand",
-      "Kababji Grill",
-      "La Posta",
-      "Appetito Trattoria",
-      "Al-Balad"
-    ],
-    "pepitesCachees": [
-      "Falafel M. Sahyoun",
-      "Urbanista Beyrouth",
-      "Al-Ajami"
-    ],
-    "idealFamille": [
-      "Em Sherif",
-      "Tawlet",
-      "Al Falamanki",
-      "Leila Restaurant Beyrouth",
-      "Abdel Wahab El Inglizi"
-    ],
-    "gastronomique": [
-      "Mayrig",
-      "Burgundy"
-    ],
-    "ouvertNuit": [
-      "Em Sherif",
-      "Tawlet",
-      "Al Falamanki"
-    ],
-    "vueExceptionnelle": [
-      "Al-Ajami"
-    ]
+  {
+   "nom": "Mosquée Al-Noor de Beyrouth",
+   "description": "Mosquée fréquentée de Beyrouth, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Beyrouth",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Beyrouth+Beyrouth",
+   "capacite": 6094,
+   "anneeConstruction": 1934,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.8938,
+    "lng": 35.5018
+   }
+  },
+  {
+   "nom": "Mosquée Al-Salam de Beyrouth",
+   "description": "Mosquée fréquentée de Beyrouth, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Beyrouth",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Beyrouth+Beyrouth",
+   "capacite": 813,
+   "anneeConstruction": 2013,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.8938,
+    "lng": 35.5018
+   }
+  },
+  {
+   "nom": "Mosquée Al-Rahma de Beyrouth",
+   "description": "Mosquée fréquentée de Beyrouth, accueillant les fidèles pour les cinq prières quotidiennes.",
+   "adresse": "Beyrouth",
+   "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Beyrouth+Beyrouth",
+   "capacite": 6438,
+   "anneeConstruction": 1958,
+   "styleArchitectural": "Moderne",
+   "ouvertureVisiteurs": true,
+   "horaires": "05h00 - 22h00",
+   "coordonnees": {
+    "lat": 33.8938,
+    "lng": 35.5018
+   }
   }
+ ],
+ "tags": [
+  "gastronomie",
+  "levant",
+  "mediterranee",
+  "culture",
+  "cosmopolite",
+  "mezze"
+ ],
+ "selectionsPremium": {
+  "mieuxNotes": [
+   "Barbar",
+   "Burgundy",
+   "Kababji Grill",
+   "Ferdinand",
+   "Sato Sushi"
+  ],
+  "meilleurRapportQualitePrix": [
+   "Tawlet",
+   "Abdel Wahab El Inglizi",
+   "Al-Balad",
+   "Barbar",
+   "Falafel M. Sahyoun"
+  ],
+  "incontournables": [
+   "Ferdinand",
+   "Kababji Grill",
+   "La Posta",
+   "Appetito Trattoria",
+   "Al-Balad"
+  ],
+  "pepitesCachees": [
+   "Falafel M. Sahyoun",
+   "Urbanista Beyrouth",
+   "Al-Ajami"
+  ],
+  "idealFamille": [
+   "Em Sherif",
+   "Tawlet",
+   "Al Falamanki",
+   "Leila Restaurant Beyrouth",
+   "Abdel Wahab El Inglizi"
+  ],
+  "gastronomique": [
+   "Mayrig",
+   "Burgundy"
+  ],
+  "ouvertNuit": [
+   "Em Sherif",
+   "Tawlet",
+   "Al Falamanki"
+  ],
+  "vueExceptionnelle": [
+   "Al-Ajami"
+  ]
+ }
 }
