@@ -94,7 +94,8 @@ function categorize(elements, lat, lng) {
   mosquees.sort((a, b) => a._d - b._d)
   activites.sort((a, b) => a._d - b._d)
   const strip = (arr) => arr.map(({ _d, ...r }) => r)
-  return { restos: strip(restos).slice(0, 40), mosquees: strip(mosquees).slice(0, 20), activites: strip(activites).slice(0, 18) }
+  // Plafonds généreux (premium) : on baque un maximum de vraies adresses OSM.
+  return { restos: strip(restos).slice(0, 60), mosquees: strip(mosquees).slice(0, 60), activites: strip(activites).slice(0, 30) }
 }
 
 async function main() {
@@ -107,15 +108,22 @@ async function main() {
     const v = JSON.parse(readFileSync(fp, 'utf-8'))
     const co = v.coordonnees
     if (!co || typeof co.lat !== 'number' || typeof co.lng !== 'number') continue
-    const isEmpty = !(v.restaurants?.length) // cibles : fiches sans restaurants
-    if (SCOPE !== 'all' && !isEmpty) continue
+    // Ville à la main (restaurants curés, jamais touchée par OSM) → on ne clobbe jamais.
+    const curated = (v.restaurants?.length) && !v.osmEnriched
+    if (curated) continue
+    // Périmètre 'empty' : on saute les villes déjà enrichies ; 'all' : on rafraîchit tout.
+    if (SCOPE !== 'all' && v.osmEnriched) continue
+    if (SCOPE !== 'all' && (v.restaurants?.length)) continue
     processed++
     const els = await overpass(buildQuery(co.lat, co.lng))
     if (els === null) { console.log('⚠️  Overpass KO pour', v.slug); await sleep(2000); continue }
     const { restos, mosquees, activites } = categorize(els, co.lat, co.lng)
-    if (!(v.restaurants?.length)) v.restaurants = restos
-    if (!(v.mosqueesPrincipales?.length)) v.mosqueesPrincipales = mosquees
-    if (!(v.activites?.length)) v.activites = activites
+    // Remplace un tableau si l'OSM ramène mieux ET que l'existant est vide ou déjà d'origine OSM
+    // (préserve les éléments curés à la main qui n'ont pas de champ source:'osm').
+    const osmOrigin = (arr) => arr && arr.length && arr[0] && arr[0].source === 'osm'
+    if (restos.length && (!(v.restaurants?.length) || osmOrigin(v.restaurants))) v.restaurants = restos
+    if (mosquees.length && (!(v.mosqueesPrincipales?.length) || osmOrigin(v.mosqueesPrincipales))) v.mosqueesPrincipales = mosquees
+    if (activites.length && (!(v.activites?.length) || osmOrigin(v.activites))) v.activites = activites
     v.statistiques = {
       restaurants_halal: v.restaurants.length,
       mosquees: v.mosqueesPrincipales.length,
