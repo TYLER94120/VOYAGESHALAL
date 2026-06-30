@@ -193,7 +193,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '6px' }}>
                   <div><p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '19px', color: 'var(--texte)' }}>{h.nom}</p>
                     <p style={{ fontSize: '12.5px', color: 'var(--texte-2)', marginTop: '2px' }}>{h.categorie} · {h.priceRange}</p></div>
-                  <span style={{ fontSize: '16px', fontWeight: 700, color: 'var(--or)' }}>★ {h.score ?? h.note}</span>
+                  {(h.score ?? h.note) != null && <span style={{ fontSize: '16px', fontWeight: 700, color: 'var(--or)' }}>★ {h.score ?? h.note}</span>}
                 </div>
                 {h.description && <p style={{ fontSize: '13px', color: 'var(--texte-2)', lineHeight: 1.6, marginBottom: '12px' }}>{h.description}</p>}
                 <div style={{ display: 'flex', gap: '7px', flexWrap: 'wrap', marginBottom: '12px' }}>
@@ -201,7 +201,14 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                   {(h.sansAlcool ?? h.sans_alcool) && <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 9px' }}>🚫 Sans alcool</span>}
                 </div>
                 <div style={{ display: 'flex', gap: '8px' }}>
-                  <a href={h.bookingUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture de Booking.com…', 'success')} style={{ flex: 1, padding: '12px 0', background: 'var(--booking)', color: '#fff', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>📖 Booking</a>
+                  {/* Lien carte toujours dispo (hôtels OSM ont mapsUrl + lat/lng) */}
+                  {(h.mapsUrl || (h.lat != null && h.lng != null)) && (
+                    <a href={h.mapsUrl || `https://maps.google.com/?q=${h.lat},${h.lng}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, padding: '12px 0', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🗺 Carte</a>
+                  )}
+                  {/* Bouton réservation : Booking si lien réel, sinon site web officiel */}
+                  {h.bookingUrl && !/maps\.google\.com/.test(h.bookingUrl) && (
+                    <a href={h.bookingUrl} target="_blank" rel="noopener noreferrer" style={{ flex: 1, padding: '12px 0', background: 'var(--booking)', color: '#fff', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>{/booking\.com/.test(h.bookingUrl) ? '📖 Booking' : '🌐 Réserver'}</a>
+                  )}
                   {h.halalBookingUrl && <a href={h.halalBookingUrl} target="_blank" rel="noopener noreferrer" style={{ flex: 1, padding: '12px 0', background: 'var(--foret)', color: 'var(--creme)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🕌 HalalBooking</a>}
                 </div>
               </div>
