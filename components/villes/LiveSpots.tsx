@@ -10,17 +10,26 @@ interface Spot {
   name: string
   subtitle?: string
   distance: number
-  halal?: 'only' | 'yes'
+  halal?: 'only' | 'yes' | 'likely'
 }
+
+// Cuisines très majoritairement halal (sert à élargir les résultats dans les villes
+// non-musulmanes où le tag diet:halal est rare). Affichées avec la mention « à vérifier ».
+const HALAL_CUISINE = /kebab|turkish|lebanese|arab|syrian|persian|iranian|afghan|pakistani|bangladeshi|indian|egyptian|moroccan|uyghur|uighur|halal|doner|shawarma|tagine|biryani/i
 
 // Données réelles depuis OpenStreetMap (vrais noms + vraies coordonnées, monde entier).
 // Aucune donnée inventée : on n'affiche que ce qu'OSM connaît, avec un rappel de vérification.
 const CONF: Record<Kind, { radius: number; query: (r: number, lat: number, lng: number) => string; title: string; icon: string; empty: string }> = {
   restaurants: {
-    radius: 6000,
+    radius: 8000,
     query: (r, lat, lng) =>
-      `[out:json][timeout:25];(node["amenity"~"restaurant|fast_food|cafe"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});way["amenity"~"restaurant|fast_food|cafe"]["diet:halal"~"yes|only"](around:${r},${lat},${lng}););out center 40;`,
-    title: 'Restaurants halal à proximité',
+      `[out:json][timeout:25];(` +
+      `node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});` +
+      `way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});` +
+      `node["amenity"~"restaurant|fast_food"]["cuisine"~"kebab|turkish|lebanese|arab|syrian|persian|iranian|afghan|pakistani|bangladeshi|egyptian|moroccan|uyghur|halal|doner|shawarma|biryani",i](around:${r},${lat},${lng});` +
+      `way["amenity"~"restaurant|fast_food"]["cuisine"~"kebab|turkish|lebanese|arab|syrian|persian|iranian|afghan|pakistani|bangladeshi|egyptian|moroccan|uyghur|halal|doner|shawarma|biryani",i](around:${r},${lat},${lng});` +
+      `);out center 70;`,
+    title: 'Restaurants halal & halal-friendly à proximité',
     icon: '🍽️',
     empty: "OpenStreetMap ne référence pas encore de restaurant halal ici. Utilise l'outil Mosquée la plus proche et les applications locales sur place.",
   },
@@ -80,15 +89,23 @@ export default function LiveSpots({ kind, lat, lng, ville }: { kind: Kind; lat: 
               kind === 'restaurants' ? (t.cuisine ? String(t.cuisine).replace(/_/g, ' ').replace(/;/g, ', ') : 'Restaurant halal')
               : kind === 'mosquees' ? (t['addr:street'] ? `${t['addr:housenumber'] ? t['addr:housenumber'] + ' ' : ''}${t['addr:street']}` : 'Lieu de prière')
               : (t.tourism || t.historic || 'Site').toString().replace(/_/g, ' ')
+            const halal: Spot['halal'] =
+              t['diet:halal'] === 'only' ? 'only'
+              : t['diet:halal'] === 'yes' ? 'yes'
+              : kind === 'restaurants' && HALAL_CUISINE.test(String(t.cuisine || '')) ? 'likely'
+              : undefined
             return {
               id: el.id, lat: elLat, lng: elLng, name, subtitle: sub,
-              distance: haversine(lat, lng, elLat, elLng),
-              halal: t['diet:halal'] === 'only' ? 'only' : t['diet:halal'] === 'yes' ? 'yes' : undefined,
+              distance: haversine(lat, lng, elLat, elLng), halal,
             } as Spot
           })
           .filter((s): s is Spot => s !== null)
-          .sort((a, b) => a.distance - b.distance)
-          .slice(0, 30)
+          // confirmés halal d'abord, puis « à vérifier », puis par distance
+          .sort((a, b) => {
+            const rank = (h: Spot['halal']) => (h === 'only' || h === 'yes' ? 0 : h === 'likely' ? 1 : 2)
+            return rank(a.halal) - rank(b.halal) || a.distance - b.distance
+          })
+          .slice(0, 36)
         if (cancelled) return
         setSpots(list)
         setState(list.length ? 'ok' : 'empty')
@@ -136,7 +153,9 @@ export default function LiveSpots({ kind, lat, lng, ville }: { kind: Kind; lat: 
               <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 16.5, color: 'var(--texte)', margin: 0, lineHeight: 1.2 }}>{s.name}</p>
               <p style={{ fontSize: 12.5, color: 'var(--texte-2)', margin: '2px 0 8px', textTransform: 'capitalize', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{s.subtitle}</p>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
-                {s.halal && <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 9px' }}>{s.halal === 'only' ? '✓ 100% halal' : '✓ Halal'}</span>}
+                {s.halal === 'likely'
+                  ? <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 9px' }}>≈ Halal courant · à vérifier</span>
+                  : s.halal && <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 9px' }}>{s.halal === 'only' ? '✓ 100% halal' : '✓ Halal'}</span>}
                 <span style={{ fontSize: 12.5, color: 'var(--foret)', fontWeight: 700 }}>📍 {fmt(s.distance)}</span>
                 <a href={`https://maps.google.com/?q=${s.lat},${s.lng}`} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, color: 'var(--foret)', fontWeight: 700, textDecoration: 'none', marginLeft: 'auto' }}>Itinéraire →</a>
               </div>
@@ -145,7 +164,7 @@ export default function LiveSpots({ kind, lat, lng, ville }: { kind: Kind; lat: 
         ))}
       </div>
       <p style={{ fontSize: 11.5, color: 'var(--texte-2)', textAlign: 'center', marginTop: 14, lineHeight: 1.5 }}>
-        Données OpenStreetMap (contributeurs). {kind === 'restaurants' && 'Vérifiez toujours le statut halal sur place. '}Liste mise à jour en direct.
+        Données OpenStreetMap (contributeurs). {kind === 'restaurants' && '« ✓ Halal » = certifié dans OSM ; « ≈ à vérifier » = cuisine généralement halal, confirmez sur place. '}Liste mise à jour en direct.
       </p>
     </div>
   )
