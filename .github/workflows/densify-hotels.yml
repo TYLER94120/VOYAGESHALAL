@@ -1,0 +1,30 @@
+name: Densifier les hôtels (OSM)
+
+# Ajoute les hôtels OSM (avec coords) à chaque ville, en gardant les curés géolocalisés.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  densify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Densification hôtels OSM
+        run: node scripts/densify-hotels.mjs
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/villes data/index-villes.json
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "data(osm): densification des hôtels (curés géolocalisés + OSM)"
+            git push
+          fi
