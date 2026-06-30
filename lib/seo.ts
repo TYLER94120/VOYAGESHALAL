@@ -112,7 +112,7 @@ export function buildBreadcrumbSchema(
 }
 
 interface SchemaOpts { en?: boolean; siteUrl?: string; name?: string }
-const EN_DESCRIPTION = 'Certified halal restaurants, mosques, prayer times and practical guides in 220+ destinations worldwide — for Muslim travelers.'
+const EN_DESCRIPTION = 'Certified halal restaurants, mosques, prayer times and practical guides in 354+ destinations worldwide — for Muslim travelers.'
 
 export function buildOrganizationSchema(opts: SchemaOpts = {}) {
   const url = opts.siteUrl ?? SITE_URL
@@ -140,9 +140,11 @@ export function buildWebSiteSchema(opts: SchemaOpts = {}) {
     url,
     description: opts.en ? EN_DESCRIPTION : DEFAULT_DESCRIPTION,
     inLanguage: opts.en ? 'en' : 'fr-FR',
+    // Lien croisé entre les deux domaines (FR ↔ EN) pour Google
+    sameAs: [opts.en ? 'https://www.voyageshalal.fr' : 'https://www.gohalaltravel.com'],
     potentialAction: {
       '@type': 'SearchAction',
-      target: { '@type': 'EntryPoint', urlTemplate: `${url}/search?q={search_term_string}` },
+      target: { '@type': 'EntryPoint', urlTemplate: `${url}/destinations?q={search_term_string}` },
       'query-input': 'required name=search_term_string',
     },
   }

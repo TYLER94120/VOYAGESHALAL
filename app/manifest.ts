@@ -6,7 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: 'VoyagesHalal.fr — Guide Voyage Halal',
     short_name: 'VoyagesHalal',
     description:
-      'Restaurants halal, mosquées proches, horaires de prière et Qibla dans 220+ destinations. Le guide voyage musulman.',
+      'Restaurants halal, mosquées proches, horaires de prière et Qibla dans 354+ destinations. Le guide voyage musulman.',
     start_url: '/',
     scope: '/',
     display: 'standalone',
