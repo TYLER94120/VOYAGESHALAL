@@ -6,6 +6,7 @@ import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useToast } from '@/components/Toast'
 import EbookButton from '@/components/villes/EbookButton'
+import LiveSpots from '@/components/villes/LiveSpots'
 
 const TABS = [
   { id: 'mosquees', icon: '🕌', label: 'Mosquées' },
@@ -44,6 +45,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const mosquees = ville.mosqueesPrincipales ?? []
   const hotels = ville.hotels ?? []
   const activites = ville.activites ?? []
+  const coords = ville.coordonnees ?? null
+  const hasCoords = coords && typeof coords.lat === 'number' && typeof coords.lng === 'number'
   const ip = ville.infoPratique ?? {}
   const legacyIp = ville.infos_pratiques ?? {}
   const descShort = typeof ville.description === 'string' ? ville.description : (ville.description?.court ?? ville.description?.long ?? '')
@@ -122,11 +125,14 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       <div ref={contentRef} style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px', scrollMarginTop: '12px' }}>
         {displayTab === 'restaurants' && (
           <>
+            {restaurants.length > 0 && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '16px' }}>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '26px', fontWeight: 900, color: 'var(--nuit)' }}>Restaurants halal</h2>
               <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} adresses vérifiées</span>
             </div>
+            )}
             {/* filtres catégories en pills */}
+            {restaurants.length > 0 && (
             <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginBottom: '22px' }}>
               {categories.map((cat) => {
                 const active = activeFilter === cat
@@ -137,6 +143,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 )
               })}
             </div>
+            )}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
               {restosFiltres.map((r: any, i: number) => (
                 <div key={i} className="card-halal" style={{ ...card, display: 'flex', gap: '16px' }}>
@@ -161,11 +168,15 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               ))}
             </div>
             {restaurants.length === 0 && (
-              <div style={{ ...card, textAlign: 'center', padding: '40px 22px' }}>
-                <div style={{ fontSize: 34, marginBottom: 10 }}>🍽️</div>
-                <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: 'var(--nuit)', fontSize: 18, margin: '0 0 6px' }}>Restaurants en cours d’ajout</p>
-                <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.6, margin: 0 }}>Nous ajoutons les adresses halal vérifiées de {ville.nom}. En attendant, découvre les activités et mosquées ci-dessus. 🤲</p>
-              </div>
+              hasCoords ? (
+                <LiveSpots kind="restaurants" lat={coords.lat} lng={coords.lng} ville={ville.nom} />
+              ) : (
+                <div style={{ ...card, textAlign: 'center', padding: '40px 22px' }}>
+                  <div style={{ fontSize: 34, marginBottom: 10 }}>🍽️</div>
+                  <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: 'var(--nuit)', fontSize: 18, margin: '0 0 6px' }}>Restaurants en cours d’ajout</p>
+                  <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.6, margin: 0 }}>Nous ajoutons les adresses halal vérifiées de {ville.nom}. 🤲</p>
+                </div>
+              )
             )}
           </>
         )}
@@ -199,7 +210,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           </div>
         ))}
 
-        {displayTab === 'mosquees' && (
+        {displayTab === 'mosquees' && mosquees.length === 0 && hasCoords && (
+          <LiveSpots kind="mosquees" lat={coords.lat} lng={coords.lng} ville={ville.nom} />
+        )}
+        {displayTab === 'mosquees' && mosquees.length > 0 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             {mosquees.map((m: any, i: number) => (
               <div key={i} style={card}>
@@ -211,7 +225,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           </div>
         )}
 
-        {displayTab === 'activites' && (
+        {displayTab === 'activites' && activites.length === 0 && hasCoords && (
+          <LiveSpots kind="activites" lat={coords.lat} lng={coords.lng} ville={ville.nom} />
+        )}
+        {displayTab === 'activites' && activites.length > 0 && (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px' }}>
             {activites.map((a: any, i: number) => (
               <div key={i} style={card}>
