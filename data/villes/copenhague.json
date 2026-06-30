@@ -21,7 +21,7 @@
  "statistiques": {
   "restaurants_halal": 60,
   "mosquees": 20,
-  "hotels": 0
+  "hotels": 30
  },
  "infoPratique": {
   "transport": "Accessible par avion et transports en commun locaux.",
@@ -635,7 +635,341 @@
    "source": "osm"
   }
  ],
- "hotels": [],
+ "hotels": [
+  {
+   "nom": "The Square",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=55.6761571,12.5669727",
+   "lat": 55.6761571,
+   "lng": 12.5669727,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thesquare.dk",
+   "source": "osm"
+  },
+  {
+   "nom": "Scandic Palace Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6762339,12.5703021",
+   "lat": 55.6762339,
+   "lng": 12.5703021,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.scandichotels.dk/Hotels/Danmark/Kobenhavn/Palace-Hotel/",
+   "source": "osm"
+  },
+  {
+   "nom": "CitizenM Rådhuspladsen",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.676601,12.566396",
+   "lat": 55.676601,
+   "lng": 12.566396,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.citizenm.com/destinations/copenhagen/copenhagen-radhuspladsen-hotel",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Bella Grande",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6775123,12.5676777",
+   "lat": 55.6775123,
+   "lng": 12.5676777,
+   "halalFriendly": false,
+   "bookingUrl": "https://hotelbellagrande.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Alexandra",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.67701,12.56607",
+   "lat": 55.67701,
+   "lng": 12.56607,
+   "halalFriendly": false,
+   "bookingUrl": "https://hotelalexandra.dk/",
+   "source": "osm"
+  },
+  {
+   "nom": "Ascot Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.67687,12.56538",
+   "lat": 55.67687,
+   "lng": 12.56538,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ascot-hotel.dk/",
+   "source": "osm"
+  },
+  {
+   "nom": "Motel One Copenhagen",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6752804,12.5727071",
+   "lat": 55.6752804,
+   "lng": 12.5727071,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.motel-one.com/en/hotels/copenhagen/hotel-copenhagen/",
+   "source": "osm"
+  },
+  {
+   "nom": "Nimb Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6735259,12.5664399",
+   "lat": 55.6735259,
+   "lng": 12.5664399,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.nimb.dk/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel SP34",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6787261,12.566462",
+   "lat": 55.6787261,
+   "lng": 12.566462,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.brochner-hotels.dk/hotel-sp34/",
+   "source": "osm"
+  },
+  {
+   "nom": "Radisson SAS Royal",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6750673,12.5634225",
+   "lat": 55.6750673,
+   "lng": 12.5634225,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.radissonblu.com/royalhotel-copenhagen",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Danmark",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6747227,12.5730368",
+   "lat": 55.6747227,
+   "lng": 12.5730368,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=55.6747227,12.5730368",
+   "source": "osm"
+  },
+  {
+   "nom": "Copenhagen Plaza",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6738613,12.5646287",
+   "lat": 55.6738613,
+   "lng": 12.5646287,
+   "halalFriendly": false,
+   "bookingUrl": "https://ligula.se/profilhotels/copenhagen-plaza/",
+   "source": "osm"
+  },
+  {
+   "nom": "Copenhagen Downtown Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6759488,12.5742396",
+   "lat": 55.6759488,
+   "lng": 12.5742396,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.copenhagendowntown.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Mercur Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6765536,12.561795",
+   "lat": 55.6765536,
+   "lng": 12.561795,
+   "halalFriendly": false,
+   "bookingUrl": "https://ligula.se/profilhotels/mercur-hotel/",
+   "source": "osm"
+  },
+  {
+   "nom": "Imperial",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=55.6756448,12.5616263",
+   "lat": 55.6756448,
+   "lng": 12.5616263,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.imperial-hotel-copenhagen.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Astoria",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6734251,12.5631089",
+   "lat": 55.6734251,
+   "lng": 12.5631089,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=55.6734251,12.5631089",
+   "source": "osm"
+  },
+  {
+   "nom": "Richmond Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.678613,12.562586",
+   "lat": 55.678613,
+   "lng": 12.562586,
+   "halalFriendly": false,
+   "bookingUrl": "https://ligula.se/profilhotels/richmond-hotel/",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6735499,12.5624651",
+   "lat": 55.6735499,
+   "lng": 12.5624651,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=55.6735499,12.5624651",
+   "source": "osm"
+  },
+  {
+   "nom": "Steel House",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.676257,12.560096",
+   "lat": 55.676257,
+   "lng": 12.560096,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.steelhousecopenhagen.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Villa Copenhagen",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 5,
+   "mapsUrl": "https://maps.google.com/?q=55.6714034,12.5677356",
+   "lat": 55.6714034,
+   "lng": 12.5677356,
+   "halalFriendly": false,
+   "bookingUrl": "https://villacopenhagen.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Nobis Hotel Copenhagen",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6723955,12.5734895",
+   "lat": 55.6723955,
+   "lng": 12.5734895,
+   "halalFriendly": false,
+   "bookingUrl": "https://nobishotel.dk/",
+   "source": "osm"
+  },
+  {
+   "nom": "City Hotel Nebo",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6723046,12.5627761",
+   "lat": 55.6723046,
+   "lng": 12.5627761,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.nebo.dk/",
+   "source": "osm"
+  },
+  {
+   "nom": "Scandic Copenhagen",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6749964,12.5596357",
+   "lat": 55.6749964,
+   "lng": 12.5596357,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.scandichotels.com/Hotels/Denmark/Copenhagen/Scandic-Copenhagen/",
+   "source": "osm"
+  },
+  {
+   "nom": "Comfort Hotel Excelsior",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6726087,12.5616921",
+   "lat": 55.6726087,
+   "lng": 12.5616921,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=55.6726087,12.5616921",
+   "source": "osm"
+  },
+  {
+   "nom": "Scandic Webers Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.673118,12.5608649",
+   "lat": 55.673118,
+   "lng": 12.5608649,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=55.673118,12.5608649",
+   "source": "osm"
+  },
+  {
+   "nom": "Meiniger Hotel Copenhagen (former Urban House Copenhagen)",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6722103,12.5623271",
+   "lat": 55.6722103,
+   "lng": 12.5623271,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.meininger-hotels.com/en/hotels/copenhagen/hotel-copenhagen-urban-house/",
+   "source": "osm"
+  },
+  {
+   "nom": "Turist Hotellet",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6716956,12.5634589",
+   "lat": 55.6716956,
+   "lng": 12.5634589,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=55.6716956,12.5634589",
+   "source": "osm"
+  },
+  {
+   "nom": "1 Hotel Copenhagen",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6808491,12.5720614",
+   "lat": 55.6808491,
+   "lng": 12.5720614,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.1hotels.com/copenhagen",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Mayfair",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6727461,12.5611509",
+   "lat": 55.6727461,
+   "lng": 12.5611509,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hotelmayfair.dk/",
+   "source": "osm"
+  },
+  {
+   "nom": "Good Morning City Copenhagen Star",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=55.6719041,12.5625434",
+   "lat": 55.6719041,
+   "lng": 12.5625434,
+   "halalFriendly": false,
+   "bookingUrl": "https://ligula.se/da/goodmorninghotels/copenhagen-star/",
+   "source": "osm"
+  }
+ ],
  "mosqueesPrincipales": [
   {
    "id": "m25451190",

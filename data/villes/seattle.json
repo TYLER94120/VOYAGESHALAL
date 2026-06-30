@@ -21,7 +21,7 @@
  "statistiques": {
   "restaurants_halal": 16,
   "mosquees": 3,
-  "hotels": 0
+  "hotels": 30
  },
  "infoPratique": {
   "transport": "Accessible par avion et transports en commun locaux.",
@@ -195,7 +195,338 @@
    "source": "osm"
   }
  ],
- "hotels": [],
+ "hotels": [
+  {
+   "nom": "Renaissance Seattle Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.60659,-122.3307703",
+   "lat": 47.60659,
+   "lng": -122.3307703,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/hotels/travel/seasm-renaissance-seattle-hotel",
+   "source": "osm"
+  },
+  {
+   "nom": "Executive Hotel Pacific",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6070822,-122.333387",
+   "lat": 47.6070822,
+   "lng": -122.333387,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.executivehotels.net/seattle-downtown-hotel/",
+   "source": "osm"
+  },
+  {
+   "nom": "Lotte Hotel Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6052518,-122.33084",
+   "lat": 47.6052518,
+   "lng": -122.33084,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.lottehotel.com/seattle-hotel/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Vintage",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6075438,-122.3322749",
+   "lat": 47.6075438,
+   "lng": -122.3322749,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.kimptonhotels.com/stay/hotel-vintage-seattle-wa",
+   "source": "osm"
+  },
+  {
+   "nom": "Kimpton Hotel Monaco Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6069385,-122.3341143",
+   "lat": 47.6069385,
+   "lng": -122.3341143,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.monaco-seattle.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "W Hotel Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6073872,-122.333648",
+   "lat": 47.6073872,
+   "lng": -122.333648,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/hotels/travel/seawh-w-seattle/",
+   "source": "osm"
+  },
+  {
+   "nom": "Crowne Plaza Seattle Downtown",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6080905,-122.3321214",
+   "lat": 47.6080905,
+   "lng": -122.3321214,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.cphotelseattle.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6072739,-122.3344649",
+   "lat": 47.6072739,
+   "lng": -122.3344649,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=47.6072739,-122.3344649",
+   "source": "osm"
+  },
+  {
+   "nom": "Fairmont Olympic Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6080973,-122.3339606",
+   "lat": 47.6080973,
+   "lng": -122.3339606,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.fairmont.com/seattle",
+   "source": "osm"
+  },
+  {
+   "nom": "The Arctic Club Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6037534,-122.331959",
+   "lat": 47.6037534,
+   "lng": -122.331959,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/seaacdt-the-arctic-club-seattle/",
+   "source": "osm"
+  },
+  {
+   "nom": "Madison Tower/Hotel 1000",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6050647,-122.3361284",
+   "lat": 47.6050647,
+   "lng": -122.3361284,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hotel1000seattle.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6093252,-122.3332463",
+   "lat": 47.6093252,
+   "lng": -122.3332463,
+   "halalFriendly": false,
+   "bookingUrl": "https://www3.hilton.com/en/hotels/washington/hilton-seattle-SEASHHF/index.html",
+   "source": "osm"
+  },
+  {
+   "nom": "Courtyard",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.602875,-122.332802",
+   "lat": 47.602875,
+   "lng": -122.332802,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/seaps",
+   "source": "osm"
+  },
+  {
+   "nom": "The Alexis Royal Sonesta Hotel Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6047711,-122.3367717",
+   "lat": 47.6047711,
+   "lng": -122.3367717,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.sonesta.com/royal-sonesta/wa/seattle/alexis-royal-sonesta-hotel-seattle/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Corona",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6026275,-122.332563",
+   "lat": 47.6026275,
+   "lng": -122.332563,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=47.6026275,-122.332563",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Motif Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6100147,-122.3355346",
+   "lat": 47.6100147,
+   "lng": -122.3355346,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/seamfhh-hilton-motif-seattle/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Sorrento",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6089617,-122.3268468",
+   "lat": 47.6089617,
+   "lng": -122.3268468,
+   "halalFriendly": false,
+   "bookingUrl": "https://hotelsorrento.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheraton Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6108757,-122.3334629",
+   "lat": 47.6108757,
+   "lng": -122.3334629,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.sheratonseattle.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "citizenM Seattle Pioneer Square",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.602007,-122.335857",
+   "lat": 47.602007,
+   "lng": -122.335857,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.citizenm.com/hotels/united-states/seattle/seattle-pioneer-square-hotel",
+   "source": "osm"
+  },
+  {
+   "nom": "Four Seasons Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6073807,-122.3391648",
+   "lat": 47.6073807,
+   "lng": -122.3391648,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.fourseasons.com/seattle/",
+   "source": "osm"
+  },
+  {
+   "nom": "Best Western Pioneer Square Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6016155,-122.335257",
+   "lat": 47.6016155,
+   "lng": -122.335257,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.pioneersquare.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Baroness Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6095894,-122.3264693",
+   "lat": 47.6095894,
+   "lng": -122.3264693,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.baronesshotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Inn at Virginia Mason",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6098554,-122.3267252",
+   "lat": 47.6098554,
+   "lng": -122.3267252,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.innatvirginiamason.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "State Hotel Seattle",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6011543,-122.3338963",
+   "lat": 47.6011543,
+   "lng": -122.3338963,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=47.6011543,-122.3338963",
+   "source": "osm"
+  },
+  {
+   "nom": "Green Tortoise Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6088346,-122.339592",
+   "lat": 47.6088346,
+   "lng": -122.339592,
+   "halalFriendly": false,
+   "bookingUrl": "https://greentortoise.net/",
+   "source": "osm"
+  },
+  {
+   "nom": "The State Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6093592,-122.3392078",
+   "lat": 47.6093592,
+   "lng": -122.3392078,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.statehotel.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Theodore",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6122929,-122.3344232",
+   "lat": 47.6122929,
+   "lng": -122.3344232,
+   "halalFriendly": false,
+   "bookingUrl": "https://hoteltheodore.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Hyatt Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6125018,-122.3334479",
+   "lat": 47.6125018,
+   "lng": -122.3334479,
+   "halalFriendly": false,
+   "bookingUrl": "https://seattle.grand.hyatt.com/en/hotel/home.html",
+   "source": "osm"
+  },
+  {
+   "nom": "The Paramount Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6131504,-122.3336395",
+   "lat": 47.6131504,
+   "lng": -122.3336395,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.paramounthotelseattle.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Charter Hotel Seattle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=47.6109352,-122.3401156",
+   "lat": 47.6109352,
+   "lng": -122.3401156,
+   "halalFriendly": false,
+   "bookingUrl": "https://curiocollection3.hilton.com/en/hotels/washington/the-charter-hotel-seattle-curio-collection-by-hilton-SEACUQQ/",
+   "source": "osm"
+  }
+ ],
  "mosqueesPrincipales": [
   {
    "id": "m228765032",

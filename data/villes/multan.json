@@ -19,7 +19,7 @@
  "statistiques": {
   "restaurants_halal": 1,
   "mosquees": 1,
-  "hotels": 0
+  "hotels": 2
  },
  "infoPratique": {
   "transport": "Accessible par avion / transports locaux.",
@@ -40,7 +40,30 @@
    "source": "osm"
   }
  ],
- "hotels": [],
+ "hotels": [
+  {
+   "nom": "Multan Rest House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.1617593,71.4718694",
+   "lat": 30.1617593,
+   "lng": 71.4718694,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.1617593,71.4718694",
+   "source": "osm"
+  },
+  {
+   "nom": "SNGPL Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=30.2026132,71.5374072",
+   "lat": 30.2026132,
+   "lng": 71.5374072,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=30.2026132,71.5374072",
+   "source": "osm"
+  }
+ ],
  "mosqueesPrincipales": [
   {
    "id": "m1",

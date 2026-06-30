@@ -21,7 +21,7 @@
  "statistiques": {
   "restaurants_halal": 60,
   "mosquees": 25,
-  "hotels": 0
+  "hotels": 30
  },
  "infoPratique": {
   "transport": "Accessible par avion et transports en commun locaux.",
@@ -635,7 +635,340 @@
    "source": "osm"
   }
  ],
- "hotels": [],
+ "hotels": [
+  {
+   "nom": "Pension am Rathaus",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5498223,9.9956517",
+   "lat": 53.5498223,
+   "lng": 9.9956517,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5498223,9.9956517",
+   "source": "osm"
+  },
+  {
+   "nom": "Renaissance",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5525975,9.9877447",
+   "lat": 53.5525975,
+   "lng": 9.9877447,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5525975,9.9877447",
+   "source": "osm"
+  },
+  {
+   "nom": "Tortue",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5514425,9.9863983",
+   "lat": 53.5514425,
+   "lng": 9.9863983,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.tortue.de/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Cloud One Hamburg-Kontorhaus",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5479038,9.999302",
+   "lat": 53.5479038,
+   "lng": 9.999302,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.the-cloud-one.com/de/hotels/hamburg/hotel-hamburg-kontorhaus/",
+   "source": "osm"
+  },
+  {
+   "nom": "Adina Apartment Hotel Hamburg Speicherstadt",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.547278,9.9980659",
+   "lat": 53.547278,
+   "lng": 9.9980659,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.547278,9.9980659",
+   "source": "osm"
+  },
+  {
+   "nom": "Ruby Lotti Hotel Hamburg",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5509079,9.9855677",
+   "lat": 53.5509079,
+   "lng": 9.9855677,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.ruby-hotels.com",
+   "source": "osm"
+  },
+  {
+   "nom": "SiR Nikolai Hamburg",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5460519,9.992435",
+   "lat": 53.5460519,
+   "lng": 9.992435,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5460519,9.992435",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Steigenberger",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5492048,9.985633",
+   "lat": 53.5492048,
+   "lng": 9.985633,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5492048,9.985633",
+   "source": "osm"
+  },
+  {
+   "nom": "Premier Inn Hamburg City (Zentrum)",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5473738,9.9997194",
+   "lat": 53.5473738,
+   "lng": 9.9997194,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.premierinn.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Henri Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5505877,10.002354",
+   "lat": 53.5505877,
+   "lng": 10.002354,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.henri-hotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hapimag",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5502774,10.0023381",
+   "lat": 53.5502774,
+   "lng": 10.0023381,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.hapimag.ch/",
+   "source": "osm"
+  },
+  {
+   "nom": "Marriott Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.554764,9.9873605",
+   "lat": 53.554764,
+   "lng": 9.9873605,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.marriot.de/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Barceló Hamburg",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=53.5542413,10.0008318",
+   "lat": 53.5542413,
+   "lng": 10.0008318,
+   "halalFriendly": false,
+   "bookingUrl": "https://barcelo.com/de-de/hotels/hamburg",
+   "source": "osm"
+  },
+  {
+   "nom": "Boardinghouse Rosenstraße",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5532821,10.0021866",
+   "lat": 53.5532821,
+   "lng": 10.0021866,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5532821,10.0021866",
+   "source": "osm"
+  },
+  {
+   "nom": "Conrad Hamburg",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5508264,10.0031752",
+   "lat": 53.5508264,
+   "lng": 10.0031752,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/hamshci-conrad-hamburg/",
+   "source": "osm"
+  },
+  {
+   "nom": "IntercityHotel Hamburg Hauptbahnhof",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5539364,10.003106",
+   "lat": 53.5539364,
+   "lng": 10.003106,
+   "halalFriendly": false,
+   "bookingUrl": "https://hrewards.com/de/intercityhotel-hamburg-hauptbahnhof/",
+   "source": "osm"
+  },
+  {
+   "nom": "Baseler Hof",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5574986,9.9913751",
+   "lat": 53.5574986,
+   "lng": 9.9913751,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.baselerhof.de/",
+   "source": "osm"
+  },
+  {
+   "nom": "Alster-Hof",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.557582,9.9911414",
+   "lat": 53.557582,
+   "lng": 9.9911414,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.alster-hof.de/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Alameda",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5573636,9.9898938",
+   "lat": 53.5573636,
+   "lng": 9.9898938,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5573636,9.9898938",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Michaelishof",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5487622,9.9828572",
+   "lat": 53.5487622,
+   "lng": 9.9828572,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.michaelishof-hamburg.de/",
+   "source": "osm"
+  },
+  {
+   "nom": "SIDE Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5567624,9.98671",
+   "lat": 53.5567624,
+   "lng": 9.98671,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.side-hamburg.de/",
+   "source": "osm"
+  },
+  {
+   "nom": "AMERON Hotel Speicherstadt Hamburg",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5437409,9.9953538",
+   "lat": 53.5437409,
+   "lng": 9.9953538,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hotel-speicherstadt.de/",
+   "source": "osm"
+  },
+  {
+   "nom": "Motel One Hamburg-Fleetinsel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5467789,9.982953",
+   "lat": 53.5467789,
+   "lng": 9.982953,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5467789,9.982953",
+   "source": "osm"
+  },
+  {
+   "nom": "Pierdrei",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5434157,9.9960123",
+   "lat": 53.5434157,
+   "lng": 9.9960123,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.pierdrei-hotel.de/",
+   "source": "osm"
+  },
+  {
+   "nom": "Citadines Michel Hamburg",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5486208,9.9810121",
+   "lat": 53.5486208,
+   "lng": 9.9810121,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5486208,9.9810121",
+   "source": "osm"
+  },
+  {
+   "nom": "Scandic Hamburg Emporio",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.556102,9.982517",
+   "lat": 53.556102,
+   "lng": 9.982517,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.scandichotels.de/hotelsuche/deutschland/hamburg/scandic-hamburg-emporio/besondere-bedurfnisse",
+   "source": "osm"
+  },
+  {
+   "nom": "Deutsches Seemannsheim Hamburg",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5483507,9.9803851",
+   "lat": 53.5483507,
+   "lng": 9.9803851,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.seemannsheim-hamburg.de/",
+   "source": "osm"
+  },
+  {
+   "nom": "Frauenhotel Hanseatin",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5554305,9.9815829",
+   "lat": 53.5554305,
+   "lng": 9.9815829,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5554305,9.9815829",
+   "source": "osm"
+  },
+  {
+   "nom": "ibis Hamburg Alster Centrum",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "score": 2,
+   "mapsUrl": "https://maps.google.com/?q=53.5567478,10.0042891",
+   "lat": 53.5567478,
+   "lng": 10.0042891,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5567478,10.0042891",
+   "source": "osm"
+  },
+  {
+   "nom": "Steen's Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=53.5559626,10.0061136",
+   "lat": 53.5559626,
+   "lng": 10.0061136,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=53.5559626,10.0061136",
+   "source": "osm"
+  }
+ ],
  "mosqueesPrincipales": [
   {
    "id": "m22731336",

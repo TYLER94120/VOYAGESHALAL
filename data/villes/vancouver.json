@@ -21,7 +21,7 @@
  "statistiques": {
   "restaurants_halal": 58,
   "mosquees": 2,
-  "hotels": 0
+  "hotels": 30
  },
  "infoPratique": {
   "transport": "Accessible par avion et transports en commun locaux.",
@@ -615,7 +615,339 @@
    "source": "osm"
   }
  ],
- "hotels": [],
+ "hotels": [
+  {
+   "nom": "Fairmont Hotel Vancouver",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2837717,-123.1211093",
+   "lat": 49.2837717,
+   "lng": -123.1211093,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.fairmont.com/hotel-vancouver/",
+   "source": "osm"
+  },
+  {
+   "nom": "Rosewood Hotel Georgia",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2835501,-123.119045",
+   "lat": 49.2835501,
+   "lng": -123.119045,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.rosewoodhotels.com/en/hotel-georgia-vancouver",
+   "source": "osm"
+  },
+  {
+   "nom": "Wedgewood Hotel & Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2823646,-123.1227725",
+   "lat": 49.2823646,
+   "lng": -123.1227725,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.wedgewoodhotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Metropolitan Hotel Vancouver",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2840106,-123.1183233",
+   "lat": 49.2840106,
+   "lng": -123.1183233,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/hotels/travel/yvrbr-metropolitan-hotel-vancouver/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Sutton Place Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.282958,-123.124276",
+   "lat": 49.282958,
+   "lng": -123.124276,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.suttonplace.com/hotels/sutton-place-hotel-vancouver-van",
+   "source": "osm"
+  },
+  {
+   "nom": "Hyatt Regency Vancouver",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2851852,-123.120638",
+   "lat": 49.2851852,
+   "lng": -123.120638,
+   "halalFriendly": false,
+   "bookingUrl": "https://vancouver.regency.hyatt.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Kingston Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2808096,-123.1173509",
+   "lat": 49.2808096,
+   "lng": -123.1173509,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.kingstonhotelvancouver.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Soleil Hotel and Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2853081,-123.1183154",
+   "lat": 49.2853081,
+   "lng": -123.1183154,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hotellesoleil.com/vancouver/home/",
+   "source": "osm"
+  },
+  {
+   "nom": "St. Regis Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2829955,-123.1159071",
+   "lat": 49.2829955,
+   "lng": -123.1159071,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.stregishotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "L' Hermitage",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2805221,-123.116967",
+   "lat": 49.2805221,
+   "lng": -123.116967,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.lhermitagevancouver.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Moda Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2793959,-123.1204145",
+   "lat": 49.2793959,
+   "lng": -123.1204145,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.modahotel.ca/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hyatt Vancouver Downtown Alberni",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2857303,-123.1237762",
+   "lat": 49.2857303,
+   "lng": -123.1237762,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.hyattvancouverdowntownalberni.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Vancouver Downtown",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2798648,-123.116926",
+   "lat": 49.2798648,
+   "lng": -123.116926,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/yvrwghh-hilton-vancouver-downtown/",
+   "source": "osm"
+  },
+  {
+   "nom": "Embarc Vancouver",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2805081,-123.125404",
+   "lat": 49.2805081,
+   "lng": -123.125404,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.diamondresorts.com/destinations/property/Embarc-Vancouver",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Belmont Vancouver",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2789156,-123.1227879",
+   "lat": 49.2789156,
+   "lng": -123.1227879,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hotelbelmont.ca/",
+   "source": "osm"
+  },
+  {
+   "nom": "Samesun Vancouver",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.278951,-123.123211",
+   "lat": 49.278951,
+   "lng": -123.123211,
+   "halalFriendly": false,
+   "bookingUrl": "https://samesun.com/vancouver-hostel/",
+   "source": "osm"
+  },
+  {
+   "nom": "Carmana Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2857277,-123.1249902",
+   "lat": 49.2857277,
+   "lng": -123.1249902,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.carmanahotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Urban Hideaway",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2826242,-123.1142864",
+   "lat": 49.2826242,
+   "lng": -123.1142864,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=49.2826242,-123.1142864",
+   "source": "osm"
+  },
+  {
+   "nom": "St Clair Hotel-Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2826907,-123.1142231",
+   "lat": 49.2826907,
+   "lng": -123.1142231,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.stclairvancouver.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Azur Legacy Collection Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2858953,-123.11622",
+   "lat": 49.2858953,
+   "lng": -123.11622,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=49.2858953,-123.11622",
+   "source": "osm"
+  },
+  {
+   "nom": "Sheraton Vancouver Wall Centre Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=49.2803114,-123.1262671",
+   "lat": 49.2803114,
+   "lng": -123.1262671,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/en-us/hotels/yvrws-sheraton-vancouver-wall-centre/overview/",
+   "source": "osm"
+  },
+  {
+   "nom": "Exchange Hotel Vancouver",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2856155,-123.115708",
+   "lat": 49.2856155,
+   "lng": -123.115708,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.exchangehotelvan.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Days Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2863204,-123.1168694",
+   "lat": 49.2863204,
+   "lng": -123.1168694,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.daysinnvancouver.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "WorldMark Vancouver - The Canadian",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2797517,-123.12574",
+   "lat": 49.2797517,
+   "lng": -123.12574,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=49.2797517,-123.12574",
+   "source": "osm"
+  },
+  {
+   "nom": "Seymour Hostel",
+   "categorie": "Auberge",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2839749,-123.114217",
+   "lat": 49.2839749,
+   "lng": -123.114217,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.cambiehostels.com/downtown-hostel",
+   "source": "osm"
+  },
+  {
+   "nom": "Century Plaza Hotel and Spa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2808331,-123.1270521",
+   "lat": 49.2808331,
+   "lng": -123.1270521,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.century-plaza.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "O Canada House Bed & Breakfast",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2833366,-123.127672",
+   "lat": 49.2833366,
+   "lng": -123.127672,
+   "halalFriendly": false,
+   "bookingUrl": "https://ocanadahouse.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Vogue Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2785224,-123.1238337",
+   "lat": 49.2785224,
+   "lng": -123.1238337,
+   "halalFriendly": false,
+   "bookingUrl": "https://thevoguehotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Level",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.2781552,-123.122394",
+   "lat": 49.2781552,
+   "lng": -123.122394,
+   "halalFriendly": false,
+   "bookingUrl": "https://stayinglevel.com/destinations/vancouver/seymour/",
+   "source": "osm"
+  },
+  {
+   "nom": "Paradox Hotel Vancouver",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=49.286925,-123.1240507",
+   "lat": 49.286925,
+   "lng": -123.1240507,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.paradoxhotels.com/vancouver",
+   "source": "osm"
+  }
+ ],
  "mosqueesPrincipales": [
   {
    "id": "m309517994",

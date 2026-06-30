@@ -21,7 +21,7 @@
  "statistiques": {
   "restaurants_halal": 0,
   "mosquees": 1,
-  "hotels": 0
+  "hotels": 2
  },
  "infoPratique": {
   "transport": "Accessible par avion et transports en commun locaux.",
@@ -34,7 +34,30 @@
   "asie"
  ],
  "restaurants": [],
- "hotels": [],
+ "hotels": [
+  {
+   "nom": "Chatrapati Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=15.2575414,74.1084987",
+   "lat": 15.2575414,
+   "lng": 74.1084987,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=15.2575414,74.1084987",
+   "source": "osm"
+  },
+  {
+   "nom": "Dudhsagar Plantation",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=15.32935,74.1606063",
+   "lat": 15.32935,
+   "lng": 74.1606063,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.dudhsagarplantation.com/",
+   "source": "osm"
+  }
+ ],
  "mosqueesPrincipales": [
   {
    "id": "m1104566297",

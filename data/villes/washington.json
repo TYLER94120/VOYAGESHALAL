@@ -21,7 +21,7 @@
  "statistiques": {
   "restaurants_halal": 60,
   "mosquees": 5,
-  "hotels": 0
+  "hotels": 30
  },
  "infoPratique": {
   "transport": "Accessible par avion et transports en commun locaux.",
@@ -635,7 +635,338 @@
    "source": "osm"
   }
  ],
- "hotels": [],
+ "hotels": [
+  {
+   "nom": "Canopy",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9066662,-77.0369714",
+   "lat": 38.9066662,
+   "lng": -77.0369714,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/dcaempy-canopy-washington-dc-embassy-row/",
+   "source": "osm"
+  },
+  {
+   "nom": "Beacon Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.907049,-77.0380497",
+   "lat": 38.907049,
+   "lng": -77.0380497,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.beaconhotelwdc.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Kimpton Banneker Hotel by IHG",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.908266,-77.0361302",
+   "lat": 38.908266,
+   "lng": -77.0361302,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thebanneker.com/?utm_source=kh.com&utm_medium=referral&utm_campaign=hotel-links",
+   "source": "osm"
+  },
+  {
+   "nom": "The Jefferson",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9059489,-77.0369364",
+   "lat": 38.9059489,
+   "lng": -77.0369364,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.9059489,-77.0369364",
+   "source": "osm"
+  },
+  {
+   "nom": "Jefferson Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9059379,-77.0369558",
+   "lat": 38.9059379,
+   "lng": -77.0369558,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.thejeffersonwashingtondc.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Darcy",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9080583,-77.0354295",
+   "lat": 38.9080583,
+   "lng": -77.0354295,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thedarcyhotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Holiday Inn Washington DC - Central / White House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9081157,-77.0349707",
+   "lat": 38.9081157,
+   "lng": -77.0349707,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.inndc.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Courtyard Washington, DC Dupont Circle",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9074198,-77.0397084",
+   "lat": 38.9074198,
+   "lng": -77.0397084,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/hotels/travel/wasnc-courtyard-washington-dc-dupont-circle/",
+   "source": "osm"
+  },
+  {
+   "nom": "Tabard Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9075037,-77.0399539",
+   "lat": 38.9075037,
+   "lng": -77.0399539,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.tabardinn.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Homewood Suites By Hilton",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9066076,-77.0334979",
+   "lat": 38.9066076,
+   "lng": -77.0334979,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.9066076,-77.0334979",
+   "source": "osm"
+  },
+  {
+   "nom": "Le Méridien Washington, D.C., The Madison",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.905369,-77.03406",
+   "lat": 38.905369,
+   "lng": -77.03406,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/en-us/hotels/wasmm-le-meridien-washington-dc-the-madison/overview/",
+   "source": "osm"
+  },
+  {
+   "nom": "District Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.908122,-77.033312",
+   "lat": 38.908122,
+   "lng": -77.033312,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.districthotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Viceroy Washington DC",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9081758,-77.0330469",
+   "lat": 38.9081758,
+   "lng": -77.0330469,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.viceroyhotelsandresorts.com/washington-dc",
+   "source": "osm"
+  },
+  {
+   "nom": "The Westin Washington, D.C City Center",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9053158,-77.0334359",
+   "lat": 38.9053158,
+   "lng": -77.0334359,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/en-us/hotels/wascw-the-westin-washington-dc-city-center/overview/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Mayflower Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9044444,-77.0394719",
+   "lat": 38.9044444,
+   "lng": -77.0394719,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.renaissancehotels.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Capital Hilton",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9031717,-77.0359751",
+   "lat": 38.9031717,
+   "lng": -77.0359751,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Architect Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9035746,-77.0343633",
+   "lat": 38.9035746,
+   "lng": -77.0343633,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.thearchitecthotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Residence Inn Washington, DC Downtown",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9044943,-77.0323451",
+   "lat": 38.9044943,
+   "lng": -77.0323451,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/en-us/hotels/wasdc-residence-inn-washington-dc-downtown/overview/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Zena Washington DC",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9051023,-77.0315742",
+   "lat": 38.9051023,
+   "lng": -77.0315742,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.viceroyhotelsandresorts.com/zena",
+   "source": "osm"
+  },
+  {
+   "nom": "Starwood Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9029968,-77.0342499",
+   "lat": 38.9029968,
+   "lng": -77.0342499,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.9029968,-77.0342499",
+   "source": "osm"
+  },
+  {
+   "nom": "Washington Plaza Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9062426,-77.0309188",
+   "lat": 38.9062426,
+   "lng": -77.0309188,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.washingtonplazahotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Mint House Washington, D.C. – Downtown",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9030333,-77.0337928",
+   "lat": 38.9030333,
+   "lng": -77.0337928,
+   "halalFriendly": false,
+   "bookingUrl": "https://minthouse.com/washingtondc/downtown/",
+   "source": "osm"
+  },
+  {
+   "nom": "Sonder at FOUND",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9122314,-77.03605",
+   "lat": 38.9122314,
+   "lng": -77.03605,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.sonder.com/destinations/washington_dc/WDC-NW-16TH1627-404/c34358",
+   "source": "osm"
+  },
+  {
+   "nom": "Hyatt Place Washington DC/White House",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9021983,-77.0357112",
+   "lat": 38.9021983,
+   "lng": -77.0357112,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hyatt.com/hyatt-place/en-us/waszw-hyatt-place-washington-dc-white-house",
+   "source": "osm"
+  },
+  {
+   "nom": "The Washington Club",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9098921,-77.0424753",
+   "lat": 38.9098921,
+   "lng": -77.0424753,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.9098921,-77.0424753",
+   "source": "osm"
+  },
+  {
+   "nom": "The St. Regis Washington, D.C.",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9021044,-77.0360883",
+   "lat": 38.9021044,
+   "lng": -77.0360883,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.marriott.com/hotels/travel/wassx-the-st-regis-washington-dc/",
+   "source": "osm"
+  },
+  {
+   "nom": "Embassy Inn",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9121001,-77.0343325",
+   "lat": 38.9121001,
+   "lng": -77.0343325,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.9121001,-77.0343325",
+   "source": "osm"
+  },
+  {
+   "nom": "Inn At Dupont South",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9077421,-77.0436943",
+   "lat": 38.9077421,
+   "lng": -77.0436943,
+   "halalFriendly": false,
+   "bookingUrl": "https://thedupontcollection.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "The Quincy, Ascend Hotel Collection",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.9039919,-77.0427061",
+   "lat": 38.9039919,
+   "lng": -77.0427061,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=38.9039919,-77.0427061",
+   "source": "osm"
+  },
+  {
+   "nom": "Dupont Circle Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=38.910652,-77.0430104",
+   "lat": 38.910652,
+   "lng": -77.0430104,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.doylecollection.com/Washington",
+   "source": "osm"
+  }
+ ],
  "mosqueesPrincipales": [
   {
    "id": "m66790109",

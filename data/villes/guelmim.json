@@ -21,7 +21,7 @@
  "statistiques": {
   "restaurants_halal": 0,
   "mosquees": 1,
-  "hotels": 0
+  "hotels": 2
  },
  "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
@@ -34,7 +34,30 @@
   "Maroc"
  ],
  "restaurants": [],
- "hotels": [],
+ "hotels": [
+  {
+   "nom": "فندق الملتقى",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=28.9873499,-10.0574477",
+   "lat": 28.9873499,
+   "lng": -10.0574477,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=28.9873499,-10.0574477",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Qoods",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=28.9891358,-10.0561276",
+   "lat": 28.9891358,
+   "lng": -10.0561276,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=28.9891358,-10.0561276",
+   "source": "osm"
+  }
+ ],
  "mosqueesPrincipales": [
   {
    "id": "m1",

@@ -21,7 +21,7 @@
  "statistiques": {
   "restaurants_halal": 0,
   "mosquees": 1,
-  "hotels": 0
+  "hotels": 7
  },
  "infoPratique": {
   "monnaie": "MAD (Dirham marocain)",
@@ -34,7 +34,85 @@
   "Maroc"
  ],
  "restaurants": [],
- "hotels": [],
+ "hotels": [
+  {
+   "nom": "friouato",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2099754,-4.0058283",
+   "lat": 34.2099754,
+   "lng": -4.0058283,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2099754,-4.0058283",
+   "source": "osm"
+  },
+  {
+   "nom": "فندة البريد",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2216704,-4.0077155",
+   "lat": 34.2216704,
+   "lng": -4.0077155,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2216704,-4.0077155",
+   "source": "osm"
+  },
+  {
+   "nom": "Grand Hôtel Du Dauphiné",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2221154,-4.0094951",
+   "lat": 34.2221154,
+   "lng": -4.0094951,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2221154,-4.0094951",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Guillaume Tell",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.222525,-4.0086682",
+   "lat": 34.222525,
+   "lng": -4.0086682,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.222525,-4.0086682",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Boujida",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2249676,-4.0086281",
+   "lat": 34.2249676,
+   "lng": -4.0086281,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2249676,-4.0086281",
+   "source": "osm"
+  },
+  {
+   "nom": "La Tour Eiffel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2325683,-4.0181463",
+   "lat": 34.2325683,
+   "lng": -4.0181463,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2325683,-4.0181463",
+   "source": "osm"
+  },
+  {
+   "nom": "المنزل",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=34.2326328,-4.0370968",
+   "lat": 34.2326328,
+   "lng": -4.0370968,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=34.2326328,-4.0370968",
+   "source": "osm"
+  }
+ ],
  "mosqueesPrincipales": [
   {
    "id": "m1",
