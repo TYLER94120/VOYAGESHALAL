@@ -4,16 +4,29 @@ import { blogPosts, guides } from '@/lib/data'
 import { buildMetadata } from '@/lib/seo'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import BlogClient, { type BlogCard } from '@/components/blog/BlogClient'
+import { getDomainSEO } from '@/lib/domain'
 
-export const metadata: Metadata = buildMetadata({
-  title: 'Blog Voyage Halal — Conseils, Guides & Destinations 2026',
-  description: 'Articles et conseils voyage halal : hôtels, restaurants, mosquées, destinations et astuces pratiques. Tout pour voyager en accord avec vos valeurs islamiques.',
-  path: '/blog',
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { isEN } = await getDomainSEO()
+  return buildMetadata({
+    title: isEN
+      ? 'Halal Travel Blog — Tips, Guides & Destinations 2026'
+      : 'Blog Voyage Halal — Conseils, Guides & Destinations 2026',
+    description: isEN
+      ? 'Halal travel articles and tips: hotels, restaurants, mosques, destinations and practical advice for Muslim travelers worldwide.'
+      : 'Articles et conseils voyage halal : hôtels, restaurants, mosquées, destinations et astuces pratiques. Tout pour voyager en accord avec vos valeurs islamiques.',
+    path: '/blog',
+  })
+}
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const { isEN } = await getDomainSEO()
+  // On n'affiche que les articles rédigés dans la langue du domaine.
+  // Les guides existants sont en français → masqués sur le domaine EN.
+  const domainPosts = blogPosts.filter((p) => (p.lang ?? 'fr') === (isEN ? 'en' : 'fr'))
+  const domainGuides = isEN ? [] : guides
   const articles: BlogCard[] = [
-    ...guides.map((g) => ({
+    ...domainGuides.map((g) => ({
       slug: g.slug,
       href: `/guides/${g.slug}`,
       title: g.title,
@@ -23,7 +36,7 @@ export default function BlogPage() {
       publishedAt: g.publishedAt,
       coverImage: g.coverImage,
     })),
-    ...blogPosts.map((p) => ({
+    ...domainPosts.map((p) => ({
       slug: p.slug,
       href: `/blog/${p.slug}`,
       title: p.title,

@@ -11,14 +11,18 @@ export function buildMetadata({
   path = '',
   image,
   type = 'website',
+  canonical,
+  languages,
 }: {
   title: string
   description?: string
   path?: string
   image?: string
   type?: 'website' | 'article'
+  canonical?: string
+  languages?: Record<string, string>
 }): Metadata {
-  const url = `${SITE_URL}${path}`
+  const url = canonical || `${SITE_URL}${path}`
   // Image OG par défaut : une vraie image (le fichier local n'existe pas) → aperçus de partage corrects
   const ogImage = image || 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&h=630&fit=crop&q=80'
 
@@ -27,7 +31,7 @@ export function buildMetadata({
     title,
     description,
     metadataBase: new URL(SITE_URL),
-    alternates: { canonical: url },
+    alternates: { canonical: url, ...(languages ? { languages } : {}) },
     openGraph: {
       title,
       description,

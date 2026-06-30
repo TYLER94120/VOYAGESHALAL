@@ -6,6 +6,7 @@ import { buildMetadata, buildArticleSchema, buildBreadcrumbSchema } from '@/lib/
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { ShareButtons } from '@/components/ShareButtons'
+import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -23,11 +24,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getBlogPostBySlug(slug) || guides.find((g) => g.slug === slug)
   if (!post) return {}
 
+  const { siteUrl } = await getDomainSEO()
   return buildMetadata({
     title: post.title,
     description: post.description,
     path: `/blog/${post.slug}`,
     type: 'article',
+    canonical: `${siteUrl}/blog/${post.slug}`,
+    languages: {
+      fr: `${FR_URL}/blog/${post.slug}`,
+      en: `${EN_URL}/blog/${post.slug}`,
+      'x-default': `${EN_URL}/blog/${post.slug}`,
+    },
   })
 }
 
@@ -37,10 +45,19 @@ export default async function BlogPostPage({ params }: Props) {
 
   if (!post) notFound()
 
+  const { siteUrl } = await getDomainSEO()
+  // Libellés bilingues selon la langue de l'article (article EN → fil d'Ariane EN)
+  const isEN = 'lang' in post && post.lang === 'en'
+  const L = {
+    home: isEN ? 'Home' : 'Accueil',
+    blog: isEN ? 'Blog' : 'Blog & Guides',
+    read: isEN ? 'read' : 'de lecture',
+  }
+
   const articleSchema = buildArticleSchema({ ...post, type: 'blog' })
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Accueil', url: '/' },
-    { name: 'Blog & Guides', url: '/blog' },
+    { name: L.home, url: '/' },
+    { name: L.blog, url: '/blog' },
     { name: post.title, url: `/blog/${post.slug}` },
   ])
 
@@ -53,9 +70,9 @@ export default async function BlogPostPage({ params }: Props) {
         {/* Breadcrumb */}
         <div className="bg-white border-b border-gray-100 px-8 sm:px-16 py-3">
           <nav className="flex items-center gap-2 text-xs text-gray-400">
-            <Link href="/" className="hover:text-[#1a3a2a]">Accueil</Link>
+            <Link href="/" className="hover:text-[#1a3a2a]">{L.home}</Link>
             <span>›</span>
-            <Link href="/blog" className="hover:text-[#1a3a2a]">Blog & Guides</Link>
+            <Link href="/blog" className="hover:text-[#1a3a2a]">{L.blog}</Link>
             <span>›</span>
             <span className="text-gray-700 truncate max-w-[200px]">{post.title}</span>
           </nav>
@@ -71,7 +88,7 @@ export default async function BlogPostPage({ params }: Props) {
               >
                 {post.category}
               </span>
-              <span className="text-gray-400 text-xs">⏱ {post.readTime} de lecture</span>
+              <span className="text-gray-400 text-xs">⏱ {post.readTime} {L.read}</span>
               <span className="text-gray-300 text-xs">·</span>
               <span className="text-gray-400 text-xs">
                 {new Date(post.publishedAt).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' })}
@@ -95,7 +112,7 @@ export default async function BlogPostPage({ params }: Props) {
 
           <ShareButtons
             titre={post.title}
-            url={`https://www.voyageshalal.fr/blog/${post.slug}`}
+            url={`${siteUrl}/blog/${post.slug}`}
             description={post.description}
           />
 

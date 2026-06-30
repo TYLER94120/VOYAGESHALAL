@@ -55,4 +55,6 @@ export interface BlogPost {
   publishedAt: string
   content: string
   tags: string[]
+  /** Langue de rédaction de l'article. Absent = 'fr'. Sert au filtrage par domaine. */
+  lang?: 'fr' | 'en'
 }

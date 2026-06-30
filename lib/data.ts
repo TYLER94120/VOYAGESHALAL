@@ -1395,6 +1395,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "halal-travel-morocco-2026-complete-guide",
+    lang: "en",
     title: "Halal Travel in Morocco 2026: The Complete Muslim Traveler's Guide",
     description: "Everything you need for halal travel in Morocco 2026: certified restaurants, mosques, best cities and practical tips. Complete guide by GoHalalTravel.",
     coverImage: "https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=1200&q=80",
@@ -1432,6 +1433,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "best-halal-restaurants-istanbul-2026",
+    lang: "en",
     title: "Best Halal Restaurants in Istanbul 2026 — A Complete Food Guide",
     description: "The best halal restaurants in Istanbul 2026: from street food to fine dining, prices and specialties. Updated guide by GoHalalTravel.",
     coverImage: "https://images.unsplash.com/photo-1541432901042-2d8bd64b4a9b?w=1200&q=80",
@@ -1462,6 +1464,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "halal-travel-guide-beginners",
+    lang: "en",
     title: "Halal Travel for Beginners: Everything You Need to Know Before You Go",
     description: "New to halal travel? This complete beginner's guide covers finding halal food, mosques, prayer times and Muslim-friendly hotels anywhere in the world.",
     coverImage: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80",
@@ -1489,6 +1492,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "prayer-times-while-traveling-muslim-guide",
+    lang: "en",
     title: "Prayer Times While Traveling: How to Never Miss a Prayer",
     description: "Complete guide to managing prayer times while traveling: shortening and combining prayers, praying on planes, finding the Qibla and mosques worldwide.",
     coverImage: "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80",
@@ -1516,6 +1520,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "top-10-halal-destinations-2026",
+    lang: "en",
     title: "Top 10 Halal Travel Destinations in 2026 — Ranked by Halal Trust Score",
     description: "Our ranking of the 10 best halal travel destinations in 2026: Madinah, Kuala Lumpur, Istanbul, Dubai, Morocco... Based on our unique Halal Trust Score.",
     coverImage: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80",
