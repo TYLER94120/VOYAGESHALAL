@@ -21,8 +21,8 @@
  "scoreIndicatif": true,
  "statistiques": {
   "restaurants_halal": 0,
-  "mosquees": 0,
-  "hotels": 0
+  "mosquees": 13,
+  "hotels": 9
  },
  "infoPratique": {
   "transport": "Accessible par avion et transports locaux.",
@@ -34,8 +34,447 @@
   "afrique"
  ],
  "restaurants": [],
- "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true
+ "hotels": [
+  {
+   "nom": "Hotel La Kasbah",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6800296,10.0992197",
+   "lat": 35.6800296,
+   "lng": 10.0992197,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.6800296,10.0992197",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar Hassine Allani",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6796037,10.1024162",
+   "lat": 35.6796037,
+   "lng": 10.1024162,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.6796037,10.1024162",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Sabra",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6736466,10.1010115",
+   "lat": 35.6736466,
+   "lng": 10.1010115,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.6736466,10.1010115",
+   "source": "osm"
+  },
+  {
+   "nom": "Tunisia Hôtel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6724594,10.1016795",
+   "lat": 35.6724594,
+   "lng": 10.1016795,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.6724594,10.1016795",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Splendid",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6716028,10.1007486",
+   "lat": 35.6716028,
+   "lng": 10.1007486,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.6716028,10.1007486",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق كنتيننتال",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=35.6855077,10.0979161",
+   "lat": 35.6855077,
+   "lng": 10.0979161,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.6855077,10.0979161",
+   "source": "osm"
+  },
+  {
+   "nom": "Dar HAJRI",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.670165,10.087072",
+   "lat": 35.670165,
+   "lng": 10.087072,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.670165,10.087072",
+   "source": "osm"
+  },
+  {
+   "nom": "Hôtel Amina",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6924059,10.103677",
+   "lat": 35.6924059,
+   "lng": 10.103677,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.6924059,10.103677",
+   "source": "osm"
+  },
+  {
+   "nom": "Cité Universitaire Ibn El-Jazzar 1",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=35.6532471,10.0858152",
+   "lat": 35.6532471,
+   "lng": 10.0858152,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=35.6532471,10.0858152",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "id": "m322933377",
+   "nom": "Sidi amor Abada",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6771977,10.0949875",
+   "lat": 35.6771977,
+   "lng": 10.0949875,
+   "source": "osm"
+  },
+  {
+   "id": "m594778091",
+   "nom": "جامع الزيتونة",
+   "type": "Mosquée",
+   "adresse": "القيروان",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6760794,10.0968228",
+   "lat": 35.6760794,
+   "lng": 10.0968228,
+   "source": "osm"
+  },
+  {
+   "id": "m5670901132",
+   "nom": "مسجد الملك",
+   "type": "Mosquée",
+   "adresse": "القيروان",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6764901,10.0997774",
+   "lat": 35.6764901,
+   "lng": 10.0997774,
+   "source": "osm"
+  },
+  {
+   "id": "m5670890233",
+   "nom": "مسجد الباي",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6762504,10.100425",
+   "lat": 35.6762504,
+   "lng": 10.100425,
+   "source": "osm"
+  },
+  {
+   "id": "m12658246737",
+   "nom": "جامع الولب",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6760424,10.1007908",
+   "lat": 35.6760424,
+   "lng": 10.1007908,
+   "source": "osm"
+  },
+  {
+   "id": "m5670881750",
+   "nom": "مسجد الثلاثة أبواب",
+   "type": "Mosquée",
+   "adresse": "القيروان",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6773314,10.1027543",
+   "lat": 35.6773314,
+   "lng": 10.1027543,
+   "source": "osm"
+  },
+  {
+   "id": "m679286534",
+   "nom": "Mosquée Bémri",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6637897,10.0931731",
+   "lat": 35.6637897,
+   "lng": 10.0931731,
+   "source": "osm"
+  },
+  {
+   "id": "m9727721705",
+   "nom": "Mosquée El Bemri",
+   "type": "Mosquée",
+   "adresse": "شارع بيت الحكمة, Kairouan",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.663721,10.0932289",
+   "lat": 35.663721,
+   "lng": 10.0932289,
+   "source": "osm"
+  },
+  {
+   "id": "m2105795919",
+   "nom": "Mosquée de Sabra",
+   "type": "Mosquée",
+   "adresse": "القيروان",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6573589,10.0901342",
+   "lat": 35.6573589,
+   "lng": 10.0901342,
+   "source": "osm"
+  },
+  {
+   "id": "m679286531",
+   "nom": "Mosquée Sobhan Allah",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.654571,10.0859908",
+   "lat": 35.654571,
+   "lng": 10.0859908,
+   "source": "osm"
+  },
+  {
+   "id": "m8169692792",
+   "nom": "جامع الحمد رقادة",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6206002,10.0725988",
+   "lat": 35.6206002,
+   "lng": 10.0725988,
+   "source": "osm"
+  },
+  {
+   "id": "m8169692796",
+   "nom": "جامع اولاد عياد",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6416378,9.9928502",
+   "lat": 35.6416378,
+   "lng": 9.9928502,
+   "source": "osm"
+  },
+  {
+   "id": "m8227067708",
+   "nom": "جامع العوامرية",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=35.6748041,9.9791473",
+   "lat": 35.6748041,
+   "lng": 9.9791473,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a322932307",
+   "nom": "بئر بروطة",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6762223,10.1008329",
+   "lat": 35.6762223,
+   "lng": 10.1008329,
+   "source": "osm"
+  },
+  {
+   "id": "a12241139301",
+   "nom": "Bir Barrouta",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6759837,10.1007714",
+   "lat": 35.6759837,
+   "lng": 10.1007714,
+   "source": "osm"
+  },
+  {
+   "id": "a322930940",
+   "nom": "Sidi Abid el-Ghariani Zaouia",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6752729,10.1017179",
+   "lat": 35.6752729,
+   "lng": 10.1017179,
+   "source": "osm"
+  },
+  {
+   "id": "a2105783742",
+   "nom": "زاوية سيدي عبد القادر",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6808347,10.101832",
+   "lat": 35.6808347,
+   "lng": 10.101832,
+   "source": "osm"
+  },
+  {
+   "id": "a679322174",
+   "nom": "Kids Land",
+   "categorie": "theme park",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6824525,10.0917225",
+   "lat": 35.6824525,
+   "lng": 10.0917225,
+   "source": "osm"
+  },
+  {
+   "id": "a5670813995",
+   "nom": "Bab Jedid",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6758433,10.1029259",
+   "lat": 35.6758433,
+   "lng": 10.1029259,
+   "source": "osm"
+  },
+  {
+   "id": "a322936524",
+   "nom": "Entrée de Sidi Sahbi",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.682054,10.0907631",
+   "lat": 35.682054,
+   "lng": 10.0907631,
+   "source": "osm"
+  },
+  {
+   "id": "a94481603",
+   "nom": "Musée du Tapis",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6725331,10.0991747",
+   "lat": 35.6725331,
+   "lng": 10.0991747,
+   "source": "osm"
+  },
+  {
+   "id": "a6361214898",
+   "nom": "زاوية سيدي الصاحب",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6819214,10.0904862",
+   "lat": 35.6819214,
+   "lng": 10.0904862,
+   "source": "osm"
+  },
+  {
+   "id": "a5670890232",
+   "nom": "Mausoleum of Sidi Khedidi",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6788912,10.1038009",
+   "lat": 35.6788912,
+   "lng": 10.1038009,
+   "source": "osm"
+  },
+  {
+   "id": "a11830510369",
+   "nom": "Twin Canons",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6823087,10.1024665",
+   "lat": 35.6823087,
+   "lng": 10.1024665,
+   "source": "osm"
+  },
+  {
+   "id": "a5670890236",
+   "nom": "Mausoleum of Sidi Sioumi",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6808344,10.1055223",
+   "lat": 35.6808344,
+   "lng": 10.1055223,
+   "source": "osm"
+  },
+  {
+   "id": "a2105741557",
+   "nom": "فسقيات الأغالبة",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6870183,10.0968672",
+   "lat": 35.6870183,
+   "lng": 10.0968672,
+   "source": "osm"
+  },
+  {
+   "id": "a94481650",
+   "nom": "فسقيات الأغالبة",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6872125,10.0966942",
+   "lat": 35.6872125,
+   "lng": 10.0966942,
+   "source": "osm"
+  },
+  {
+   "id": "a5112123922",
+   "nom": "بيت فتحيه",
+   "categorie": "viewpoint",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6726999,10.1091608",
+   "lat": 35.6726999,
+   "lng": 10.1091608,
+   "source": "osm"
+  },
+  {
+   "id": "a4657901989",
+   "nom": "Terrain des forces armées",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=35.6889305,10.0776364",
+   "lat": 35.6889305,
+   "lng": 10.0776364,
+   "source": "osm"
+  }
+ ],
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }

@@ -20,8 +20,8 @@
  "imageCredit": "Wikimedia Commons",
  "statistiques": {
   "restaurants_halal": 0,
-  "mosquees": 1,
-  "hotels": 2
+  "mosquees": 2,
+  "hotels": 3
  },
  "infoPratique": {
   "transport": "Accessible par avion et transports en commun locaux.",
@@ -56,6 +56,17 @@
    "halalFriendly": false,
    "bookingUrl": "https://www.dudhsagarplantation.com/",
    "source": "osm"
+  },
+  {
+   "nom": "Casa de Fernandes",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=15.2369756,74.0937133",
+   "lat": 15.2369756,
+   "lng": 74.0937133,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=15.2369756,74.0937133",
+   "source": "osm"
   }
  ],
  "mosqueesPrincipales": [
@@ -68,6 +79,17 @@
    "mapsUrl": "https://maps.google.com/?q=15.25668,74.1118817",
    "lat": 15.25668,
    "lng": 74.1118817,
+   "source": "osm"
+  },
+  {
+   "id": "m776624878",
+   "nom": "Jama Masjid",
+   "type": "Mosquée",
+   "adresse": "Sanguem",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=15.2290096,74.1497881",
+   "lat": 15.2290096,
+   "lng": 74.1497881,
    "source": "osm"
   }
  ],
@@ -82,6 +104,54 @@
    "mapsUrl": "https://maps.google.com/?q=15.2992143,74.1240471",
    "lat": 15.2992143,
    "lng": 74.1240471,
+   "source": "osm"
+  },
+  {
+   "id": "a7286268495",
+   "nom": "Shivaji",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=15.2578786,74.110541",
+   "lat": 15.2578786,
+   "lng": 74.110541,
+   "source": "osm"
+  },
+  {
+   "id": "a7286268494",
+   "nom": "Dr. B. R. Ambedkar",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=15.2584792,74.1053212",
+   "lat": 15.2584792,
+   "lng": 74.1053212,
+   "source": "osm"
+  },
+  {
+   "id": "a13383525907",
+   "nom": "Headless Nandi",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=15.2581367,74.0549648",
+   "lat": 15.2581367,
+   "lng": 74.0549648,
+   "source": "osm"
+  },
+  {
+   "id": "a1459313559",
+   "nom": "Chandor Excavated Site",
+   "categorie": "archaeological site",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=15.2581432,74.0549606",
+   "lat": 15.2581432,
+   "lng": 74.0549606,
    "source": "osm"
   }
  ],

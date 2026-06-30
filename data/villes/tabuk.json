@@ -21,8 +21,8 @@
  "scoreIndicatif": true,
  "statistiques": {
   "restaurants_halal": 0,
-  "mosquees": 0,
-  "hotels": 0
+  "mosquees": 17,
+  "hotels": 6
  },
  "infoPratique": {
   "transport": "Accessible par avion et transports locaux.",
@@ -34,8 +34,339 @@
   "moyen-orient"
  ],
  "restaurants": [],
- "hotels": [],
- "mosqueesPrincipales": [],
- "activites": [],
- "donneesAVenir": true
+ "hotels": [
+  {
+   "nom": "الاندلس",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=28.3878253,36.5678211",
+   "lat": 28.3878253,
+   "lng": 36.5678211,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=28.3878253,36.5678211",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق تبوك بلازا",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=28.4049355,36.5681405",
+   "lat": 28.4049355,
+   "lng": 36.5681405,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=28.4049355,36.5681405",
+   "source": "osm"
+  },
+  {
+   "nom": "فندق سحاب",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=28.3946223,36.5813197",
+   "lat": 28.3946223,
+   "lng": 36.5813197,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=28.3946223,36.5813197",
+   "source": "osm"
+  },
+  {
+   "nom": "Hilton Garden Inn Tabuk",
+   "categorie": "Hôtel",
+   "priceRange": "€€€€",
+   "score": 4,
+   "mapsUrl": "https://maps.google.com/?q=28.4027455,36.5941723",
+   "lat": 28.4027455,
+   "lng": 36.5941723,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.hilton.com/en/hotels/tuugigi-hilton-garden-inn-tabuk/",
+   "source": "osm"
+  },
+  {
+   "nom": "المواسم الأربعة للوحدات السكنية المفروشة",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=28.4207114,36.5790998",
+   "lat": 28.4207114,
+   "lng": 36.5790998,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=28.4207114,36.5790998",
+   "source": "osm"
+  },
+  {
+   "nom": "جراند ميلينيوم",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=28.3683194,36.4675553",
+   "lat": 28.3683194,
+   "lng": 36.4675553,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.millenniumhotels.com",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "id": "m848018918",
+   "nom": "مسجد التوبة",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.384023,36.5576568",
+   "lat": 28.384023,
+   "lng": 36.5576568,
+   "source": "osm"
+  },
+  {
+   "id": "m7913143084",
+   "nom": "جامع ناصر الجفن",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4043405,36.5405522",
+   "lat": 28.4043405,
+   "lng": 36.5405522,
+   "source": "osm"
+  },
+  {
+   "id": "m5507216746",
+   "nom": "Star Mosque",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.3984792,36.5312801",
+   "lat": 28.3984792,
+   "lng": 36.5312801,
+   "source": "osm"
+  },
+  {
+   "id": "m847955390",
+   "nom": "مصلى العيد",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.3426339,36.5575113",
+   "lat": 28.3426339,
+   "lng": 36.5575113,
+   "source": "osm"
+  },
+  {
+   "id": "m7065973899",
+   "nom": "جامع اللحيدان",
+   "type": "Mosquée",
+   "adresse": "تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4251303,36.5638829",
+   "lat": 28.4251303,
+   "lng": 36.5638829,
+   "source": "osm"
+  },
+  {
+   "id": "m7065973900",
+   "nom": "جامع البازعي",
+   "type": "Mosquée",
+   "adresse": "طريق الملك عبد الله, تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.423601,36.5706075",
+   "lat": 28.423601,
+   "lng": 36.5706075,
+   "source": "osm"
+  },
+  {
+   "id": "m7065973901",
+   "nom": "مسجد سالم العامري",
+   "type": "Mosquée",
+   "adresse": "تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4266786,36.5689719",
+   "lat": 28.4266786,
+   "lng": 36.5689719,
+   "source": "osm"
+  },
+  {
+   "id": "m7065973898",
+   "nom": "مسجد محمد بن ابراهيم",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4285363,36.5609182",
+   "lat": 28.4285363,
+   "lng": 36.5609182,
+   "source": "osm"
+  },
+  {
+   "id": "m7065973902",
+   "nom": "مسجد الإمام الذهبي",
+   "type": "Mosquée",
+   "adresse": "تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4288448,36.5665403",
+   "lat": 28.4288448,
+   "lng": 36.5665403,
+   "source": "osm"
+  },
+  {
+   "id": "m5506811837",
+   "nom": "مسجد نورة بنت محمد اليوسف",
+   "type": "Mosquée",
+   "adresse": "تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.430689,36.5581041",
+   "lat": 28.430689,
+   "lng": 36.5581041,
+   "source": "osm"
+  },
+  {
+   "id": "m7065973903",
+   "nom": "جامع التوحيد",
+   "type": "Mosquée",
+   "adresse": "تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4310399,36.5640888",
+   "lat": 28.4310399,
+   "lng": 36.5640888,
+   "source": "osm"
+  },
+  {
+   "id": "m7065973897",
+   "nom": "مسجد غنام العطوي",
+   "type": "Mosquée",
+   "adresse": "تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4322555,36.556285",
+   "lat": 28.4322555,
+   "lng": 36.556285,
+   "source": "osm"
+  },
+  {
+   "id": "m7065973904",
+   "nom": "جامع ظافر العمري",
+   "type": "Mosquée",
+   "adresse": "تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4338622,36.5616712",
+   "lat": 28.4338622,
+   "lng": 36.5616712,
+   "source": "osm"
+  },
+  {
+   "id": "m3594396612",
+   "nom": "مسجد النور",
+   "type": "Mosquée",
+   "adresse": "تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4352612,36.5599682",
+   "lat": 28.4352612,
+   "lng": 36.5599682,
+   "source": "osm"
+  },
+  {
+   "id": "m5506597609",
+   "nom": "مسجد الإحسان",
+   "type": "Mosquée",
+   "adresse": "تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4372095,36.5606529",
+   "lat": 28.4372095,
+   "lng": 36.5606529,
+   "source": "osm"
+  },
+  {
+   "id": "m7065973905",
+   "nom": "جامع الوالدين",
+   "type": "Mosquée",
+   "adresse": "طريق الملك فيصل, تبوك",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.4373676,36.5631608",
+   "lat": 28.4373676,
+   "lng": 36.5631608,
+   "source": "osm"
+  },
+  {
+   "id": "m849601724",
+   "nom": "مصلى العيد",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=28.3392404,36.6261969",
+   "lat": 28.3392404,
+   "lng": 36.6261969,
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a848018913",
+   "nom": "قلعة تبوك",
+   "categorie": "yes",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=28.3827734,36.5566493",
+   "lat": 28.3827734,
+   "lng": 36.5566493,
+   "source": "osm"
+  },
+  {
+   "id": "a5836365098",
+   "nom": "قلعة تبوك",
+   "categorie": "yes",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=28.3824789,36.5565879",
+   "lat": 28.3824789,
+   "lng": 36.5565879,
+   "source": "osm"
+  },
+  {
+   "id": "a4205766757",
+   "nom": "my hotel ksa",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=28.3833162,36.5572667",
+   "lat": 28.3833162,
+   "lng": 36.5572667,
+   "source": "osm"
+  },
+  {
+   "id": "a7315843604",
+   "nom": "محطة تبوك - قطار الحجاز",
+   "categorie": "archaeological site",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=28.3880044,36.5607512",
+   "lat": 28.3880044,
+   "lng": 36.5607512,
+   "source": "osm"
+  },
+  {
+   "id": "a4205776975",
+   "nom": "hotel",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=28.3919993,36.5674565",
+   "lat": 28.3919993,
+   "lng": 36.5674565,
+   "source": "osm"
+  },
+  {
+   "id": "a5506353224",
+   "nom": "Lightning F53",
+   "categorie": "artwork",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=28.3872418,36.5942288",
+   "lat": 28.3872418,
+   "lng": 36.5942288,
+   "source": "osm"
+  }
+ ],
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-06-30"
 }
