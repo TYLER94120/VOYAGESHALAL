@@ -32,19 +32,23 @@ function haversine(a, b, c, d) {
 const maps = (lat, lng) => `https://maps.google.com/?q=${lat},${lng}`
 
 function buildQuery(lat, lng) {
-  const cu = 'kebab|turkish|lebanese|arab|syrian|persian|iranian|afghan|pakistani|bangladeshi|egyptian|moroccan|uyghur|halal|doner|shawarma|biryani'
-  return `[out:json][timeout:40];(` +
-    `node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:8000,${lat},${lng});` +
-    `way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:8000,${lat},${lng});` +
-    `node["amenity"~"restaurant|fast_food"]["cuisine"~"${cu}",i](around:8000,${lat},${lng});` +
-    `way["amenity"~"restaurant|fast_food"]["cuisine"~"${cu}",i](around:8000,${lat},${lng});` +
-    `node["amenity"="place_of_worship"]["religion"="muslim"](around:7000,${lat},${lng});` +
-    `way["amenity"="place_of_worship"]["religion"="muslim"](around:7000,${lat},${lng});` +
-    `node["tourism"~"attraction|museum|gallery|viewpoint"](around:6000,${lat},${lng});` +
-    `way["tourism"~"attraction|museum|gallery"](around:6000,${lat},${lng});` +
-    `node["historic"~"monument|memorial|castle|monastery"](around:6000,${lat},${lng});` +
-    `node["tourism"~"hotel|guest_house|hostel|apartment"](around:6000,${lat},${lng});` +
-    `way["tourism"~"hotel|guest_house|hostel|apartment"](around:6000,${lat},${lng});` +
+  // Run 5 — couverture x4 : rayons élargis + plus de catégories d'activités.
+  const cu = 'kebab|turkish|lebanese|arab|syrian|persian|iranian|afghan|pakistani|bangladeshi|egyptian|moroccan|uyghur|halal|doner|shawarma|biryani|indian|indonesian|malaysian|tunisian|algerian|sudanese|somali|mediterranean|tandoori|curry'
+  const act = 'attraction|museum|gallery|viewpoint|artwork|theme_park|zoo|aquarium|park|picnic_site'
+  return `[out:json][timeout:60];(` +
+    `node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:12000,${lat},${lng});` +
+    `way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:12000,${lat},${lng});` +
+    `node["amenity"~"restaurant|fast_food|cafe"]["cuisine"~"${cu}",i](around:12000,${lat},${lng});` +
+    `way["amenity"~"restaurant|fast_food|cafe"]["cuisine"~"${cu}",i](around:12000,${lat},${lng});` +
+    `node["amenity"="place_of_worship"]["religion"="muslim"](around:11000,${lat},${lng});` +
+    `way["amenity"="place_of_worship"]["religion"="muslim"](around:11000,${lat},${lng});` +
+    `node["tourism"~"${act}"](around:9000,${lat},${lng});` +
+    `way["tourism"~"${act}"](around:9000,${lat},${lng});` +
+    `node["leisure"~"park|garden"](around:9000,${lat},${lng});` +
+    `node["historic"~"monument|memorial|castle|monastery|ruins|archaeological_site|fort|citadel"](around:9000,${lat},${lng});` +
+    `way["historic"~"monument|memorial|castle|monastery|ruins|archaeological_site|fort|citadel"](around:9000,${lat},${lng});` +
+    `node["tourism"~"hotel|guest_house|hostel|apartment"](around:9000,${lat},${lng});` +
+    `way["tourism"~"hotel|guest_house|hostel|apartment"](around:9000,${lat},${lng});` +
     `);out center tags;`
 }
 
@@ -54,7 +58,7 @@ async function overpass(query) {
     // Timeout client par requête : un fetch bloqué est avorté au bout de 30s,
     // on bascule alors sur l'endpoint suivant (évite tout blocage du job).
     const ac = new AbortController()
-    const timer = setTimeout(() => ac.abort(), 30000)
+    const timer = setTimeout(() => ac.abort(), 75000)
     try {
       const res = await fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(query), headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, signal: ac.signal })
       if (res.status === 429 || res.status === 504) { await sleep(3000); continue }
@@ -100,8 +104,8 @@ function categorize(elements, lat, lng) {
       })
     } else if (t.amenity === 'place_of_worship') {
       mosquees.push({ id: 'm' + el.id, nom: name, type: 'Mosquée', adresse: [t['addr:street'], t['addr:city']].filter(Boolean).join(', '), description: 'Lieu de prière (OpenStreetMap).', mapsUrl: maps(elat, elng), lat: elat, lng: elng, source: 'osm', _d: dist })
-    } else if (t.tourism || t.historic) {
-      activites.push({ id: 'a' + el.id, nom: name, categorie: (t.tourism || t.historic).replace(/_/g, ' '), description: '', prix: '', duree: '', mapsUrl: maps(elat, elng), lat: elat, lng: elng, source: 'osm', _d: dist })
+    } else if (t.tourism || t.historic || t.leisure) {
+      activites.push({ id: 'a' + el.id, nom: name, categorie: String(t.tourism || t.historic || t.leisure).replace(/_/g, ' '), description: '', prix: '', duree: '', mapsUrl: maps(elat, elng), lat: elat, lng: elng, source: 'osm', _d: dist })
     }
   }
   const rank = (h) => (h === 'only' || h === 'yes' ? 0 : 1)
@@ -110,8 +114,8 @@ function categorize(elements, lat, lng) {
   activites.sort((a, b) => a._d - b._d)
   hotels.sort((a, b) => a._d - b._d)
   const strip = (arr) => arr.map(({ _d, ...r }) => r)
-  // Plafonds généreux (premium) : on baque un maximum de vraies adresses OSM.
-  return { restos: strip(restos).slice(0, 60), mosquees: strip(mosquees).slice(0, 60), activites: strip(activites).slice(0, 30), hotels: strip(hotels).slice(0, 30) }
+  // Run 5 — plafonds x4 : on baque un maximum de vraies adresses OSM.
+  return { restos: strip(restos).slice(0, 200), mosquees: strip(mosquees).slice(0, 150), activites: strip(activites).slice(0, 100), hotels: strip(hotels).slice(0, 120) }
 }
 
 async function main() {

@@ -30,7 +30,7 @@ async function overpass(query) {
   for (let attempt = 0; attempt < ENDPOINTS.length * 2; attempt++) {
     const url = ENDPOINTS[attempt % ENDPOINTS.length]
     const ac = new AbortController()
-    const timer = setTimeout(() => ac.abort(), 30000)
+    const timer = setTimeout(() => ac.abort(), 75000)
     try {
       const res = await fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(query), headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, signal: ac.signal })
       if (res.status === 429 || res.status === 504) { await sleep(3000); continue }
@@ -43,9 +43,9 @@ async function overpass(query) {
 }
 
 const query = (lat, lng) =>
-  `[out:json][timeout:30];(` +
-  `node["tourism"~"hotel|guest_house|hostel|apartment"](around:6000,${lat},${lng});` +
-  `way["tourism"~"hotel|guest_house|hostel|apartment"](around:6000,${lat},${lng});` +
+  `[out:json][timeout:60];(` +
+  `node["tourism"~"hotel|guest_house|hostel|apartment"](around:9000,${lat},${lng});` +
+  `way["tourism"~"hotel|guest_house|hostel|apartment"](around:9000,${lat},${lng});` +
   `);out center tags;`
 
 function osmHotels(elements, lat, lng) {
@@ -89,7 +89,7 @@ async function main() {
     const noCoords = existing.filter((h) => h.lat == null)
     const fresh = osm.filter((h) => !names.has(h.nom.toLowerCase())).map(({ _d, ...h }) => h)
     // Premium curés géolocalisés d'abord, puis OSM (par distance), puis curés sans coords en fin
-    const merged = [...withCoords, ...fresh, ...noCoords].slice(0, 40)
+    const merged = [...withCoords, ...fresh, ...noCoords].slice(0, 120)
     const before = existing.length
     v.hotels = merged
     v.statistiques = v.statistiques || {}
