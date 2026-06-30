@@ -43,6 +43,8 @@ function buildQuery(lat, lng) {
     `node["tourism"~"attraction|museum|gallery|viewpoint"](around:6000,${lat},${lng});` +
     `way["tourism"~"attraction|museum|gallery"](around:6000,${lat},${lng});` +
     `node["historic"~"monument|memorial|castle|monastery"](around:6000,${lat},${lng});` +
+    `node["tourism"~"hotel|guest_house|hostel|apartment"](around:6000,${lat},${lng});` +
+    `way["tourism"~"hotel|guest_house|hostel|apartment"](around:6000,${lat},${lng});` +
     `);out center tags;`
 }
 
@@ -64,15 +66,28 @@ async function overpass(query) {
   return null
 }
 
+const HOTEL_TOURISM = new Set(['hotel', 'guest_house', 'hostel', 'apartment'])
+
 function categorize(elements, lat, lng) {
-  const restos = [], mosquees = [], activites = []
+  const restos = [], mosquees = [], activites = [], hotels = []
   for (const el of elements) {
     const t = el.tags || {}
     const elat = el.lat ?? el.center?.lat, elng = el.lon ?? el.center?.lon
     const name = t.name || t['name:fr'] || t['name:en']
     if (!elat || !elng || !name) continue
     const dist = haversine(lat, lng, elat, elng)
-    if (t.amenity === 'restaurant' || t.amenity === 'fast_food') {
+    if (HOTEL_TOURISM.has(t.tourism)) {
+      hotels.push({
+        nom: name,
+        categorie: t.tourism === 'hotel' ? 'Hôtel' : t.tourism === 'guest_house' ? "Maison d'hôtes" : t.tourism === 'hostel' ? 'Auberge' : 'Appartement',
+        priceRange: t['price:range'] || (t.stars ? '€'.repeat(Math.min(4, Math.max(1, parseInt(t.stars) || 2))) : '€€'),
+        score: t.stars ? Number(t.stars) : undefined,
+        mapsUrl: maps(elat, elng), lat: elat, lng: elng,
+        halalFriendly: false,
+        bookingUrl: t.website || maps(elat, elng),
+        source: 'osm', _d: dist,
+      })
+    } else if (t.amenity === 'restaurant' || t.amenity === 'fast_food') {
       const certified = t['diet:halal'] === 'yes' || t['diet:halal'] === 'only'
       if (!certified && !HALAL_CUISINE.test(String(t.cuisine || ''))) continue
       restos.push({
@@ -93,9 +108,10 @@ function categorize(elements, lat, lng) {
   restos.sort((a, b) => rank(a.halalConfidence) - rank(b.halalConfidence) || a._d - b._d)
   mosquees.sort((a, b) => a._d - b._d)
   activites.sort((a, b) => a._d - b._d)
+  hotels.sort((a, b) => a._d - b._d)
   const strip = (arr) => arr.map(({ _d, ...r }) => r)
   // Plafonds généreux (premium) : on baque un maximum de vraies adresses OSM.
-  return { restos: strip(restos).slice(0, 60), mosquees: strip(mosquees).slice(0, 60), activites: strip(activites).slice(0, 30) }
+  return { restos: strip(restos).slice(0, 60), mosquees: strip(mosquees).slice(0, 60), activites: strip(activites).slice(0, 30), hotels: strip(hotels).slice(0, 30) }
 }
 
 async function main() {
@@ -117,13 +133,14 @@ async function main() {
     processed++
     const els = await overpass(buildQuery(co.lat, co.lng))
     if (els === null) { console.log('⚠️  Overpass KO pour', v.slug); await sleep(2000); continue }
-    const { restos, mosquees, activites } = categorize(els, co.lat, co.lng)
+    const { restos, mosquees, activites, hotels } = categorize(els, co.lat, co.lng)
     // Remplace un tableau si l'OSM ramène mieux ET que l'existant est vide ou déjà d'origine OSM
     // (préserve les éléments curés à la main qui n'ont pas de champ source:'osm').
     const osmOrigin = (arr) => arr && arr.length && arr[0] && arr[0].source === 'osm'
     if (restos.length && (!(v.restaurants?.length) || osmOrigin(v.restaurants))) v.restaurants = restos
     if (mosquees.length && (!(v.mosqueesPrincipales?.length) || osmOrigin(v.mosqueesPrincipales))) v.mosqueesPrincipales = mosquees
     if (activites.length && (!(v.activites?.length) || osmOrigin(v.activites))) v.activites = activites
+    if (hotels.length && (!(v.hotels?.length) || osmOrigin(v.hotels))) v.hotels = hotels
     v.statistiques = {
       restaurants_halal: v.restaurants.length,
       mosquees: v.mosqueesPrincipales.length,
