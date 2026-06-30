@@ -1,0 +1,36 @@
+name: Enrichir les villes (OpenStreetMap)
+
+# Récupère les vraies données OSM (restaurants halal, mosquées, activités) et les
+# écrit en dur dans data/villes/*.json. Lancement manuel depuis l'onglet Actions.
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "Périmètre : 'empty' (villes sans restaurants) ou 'all'"
+        required: false
+        default: 'empty'
+
+permissions:
+  contents: write
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Enrichissement OSM
+        run: node scripts/enrich-osm.mjs ${{ github.event.inputs.scope }}
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/villes data/index-villes.json
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "data(osm): enrichissement villes — restaurants/mosquées/activités réels"
+            git push
+          fi

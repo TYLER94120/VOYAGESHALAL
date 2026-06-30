@@ -128,7 +128,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             {restaurants.length > 0 && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '16px' }}>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '26px', fontWeight: 900, color: 'var(--nuit)' }}>Restaurants halal</h2>
-              <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} adresses vérifiées</span>
+              <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} adresses{ville.osmEnriched ? '' : ' vérifiées'}</span>
             </div>
             )}
             {/* filtres catégories en pills */}
@@ -155,9 +155,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                     <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '20px', color: 'var(--texte)', lineHeight: 1.15 }}>{r.nom}</p>
                     <p style={{ fontSize: '13px', color: 'var(--texte-2)', marginBottom: '9px' }}>{r.type}</p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '9px', marginBottom: '14px', flexWrap: 'wrap' }}>
-                      <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>✓ Halal</span>
-                      <span style={{ fontSize: '13px', color: '#B8860B', fontWeight: 700 }}>★ {r.score ?? r.note}</span>
-                      <span style={{ fontSize: '12px', color: 'var(--texte-2)' }}>{r.priceRange ?? r.fourchette_prix}</span>
+                      {r.halalConfidence === 'likely'
+                        ? <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>≈ Halal courant · à vérifier</span>
+                        : <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>✓ Halal</span>}
+                      {(r.score ?? r.note) != null && <span style={{ fontSize: '13px', color: '#B8860B', fontWeight: 700 }}>★ {r.score ?? r.note}</span>}
+                      {(r.priceRange ?? r.fourchette_prix) && <span style={{ fontSize: '12px', color: 'var(--texte-2)' }}>{r.priceRange ?? r.fourchette_prix}</span>}
                     </div>
                     <div style={{ display: 'flex', gap: '8px' }}>
                       <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ flex: 1, padding: '11px 0', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🗺 Maps</a>
