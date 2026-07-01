@@ -27,14 +27,27 @@ function isFabricated(arr) {
   return nonOsm.length > 0 && new Set(nonOsm.map(co)).size === 1
 }
 
+// Approche SÉQUENTIELLE avec retry + backoff sur 429/504 (identique à enrich-osm,
+// qui fonctionne — contrairement à Promise.any qui abandonne dès le 1er rejet).
+const ENDPOINTS = [
+  'https://overpass-api.de/api/interpreter',
+  'https://overpass.kumi.systems/api/interpreter',
+  'https://maps.mail.ru/osm/tools/overpass/api/interpreter',
+]
 async function overpass(query) {
-  const endpoints = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter', 'https://overpass.private.coffee/api/interpreter']
-  const ctrl = new AbortController(); const timer = setTimeout(() => ctrl.abort(), 60000)
-  const attempts = endpoints.map(async (url) => {
-    const res = await fetch(url, { method: 'POST', body: `data=${encodeURIComponent(query)}`, signal: ctrl.signal })
-    if (!res.ok) throw new Error(String(res.status)); const j = await res.json(); return j.elements || []
-  })
-  try { return await Promise.any(attempts) } catch { return null } finally { clearTimeout(timer); ctrl.abort() }
+  for (let attempt = 0; attempt < ENDPOINTS.length * 2; attempt++) {
+    const url = ENDPOINTS[attempt % ENDPOINTS.length]
+    const ac = new AbortController()
+    const timer = setTimeout(() => ac.abort(), 75000)
+    try {
+      const res = await fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(query), headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, signal: ac.signal })
+      if (res.status === 429 || res.status === 504) { await sleep(3000); continue }
+      if (!res.ok) { await sleep(1500); continue }
+      const j = await res.json()
+      return j.elements || []
+    } catch { await sleep(1500) } finally { clearTimeout(timer) }
+  }
+  return null
 }
 
 function flush(label) {
