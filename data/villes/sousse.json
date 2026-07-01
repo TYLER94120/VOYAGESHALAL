@@ -1112,17 +1112,407 @@
   ],
   "mosqueesPrincipales": [
     {
-      "id": "m1",
-      "nom": "Grande Mosquée de Sousse",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Sousse",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Sousse%20Sousse",
-      "lat": 36.0296236,
-      "lng": 10.5084589,
-      "geocoded": true
+      "nom": "Mosquée Badreddine",
+      "lat": 35.8239851,
+      "lng": 10.6382152,
+      "coordonnees": {
+        "lat": 35.8239851,
+        "lng": 10.6382152
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8239851,10.6382152",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée Bou Ftata",
+      "lat": 35.8227951,
+      "lng": 10.6380666,
+      "coordonnees": {
+        "lat": 35.8227951,
+        "lng": 10.6380666
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8227951,10.6380666",
+      "source": "osm"
+    },
+    {
+      "nom": "مسجد التوبة",
+      "lat": 35.8319076,
+      "lng": 10.6336229,
+      "coordonnees": {
+        "lat": 35.8319076,
+        "lng": 10.6336229
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8319076,10.6336229",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée",
+      "lat": 35.8281627,
+      "lng": 10.6281029,
+      "coordonnees": {
+        "lat": 35.8281627,
+        "lng": 10.6281029
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8281627,10.6281029",
+      "source": "osm"
+    },
+    {
+      "nom": "مسجد بوجعفر",
+      "lat": 35.8339082,
+      "lng": 10.6388766,
+      "coordonnees": {
+        "lat": 35.8339082,
+        "lng": 10.6388766
+      },
+      "adresse": "سوسة",
+      "mapsUrl": "https://maps.google.com/?q=35.8339082,10.6388766",
+      "source": "osm"
+    },
+    {
+      "nom": "مسجد الغفران",
+      "lat": 35.8250094,
+      "lng": 10.6249822,
+      "coordonnees": {
+        "lat": 35.8250094,
+        "lng": 10.6249822
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8250094,10.6249822",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosque Bilel Ben Rabeh",
+      "lat": 35.8121662,
+      "lng": 10.6135771,
+      "coordonnees": {
+        "lat": 35.8121662,
+        "lng": 10.6135771
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8121662,10.6135771",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع التقوى",
+      "lat": 35.803657,
+      "lng": 10.6142854,
+      "coordonnees": {
+        "lat": 35.803657,
+        "lng": 10.6142854
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.803657,10.6142854",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée El Eriane",
+      "lat": 35.8585845,
+      "lng": 10.5908531,
+      "coordonnees": {
+        "lat": 35.8585845,
+        "lng": 10.5908531
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8585845,10.5908531",
+      "source": "osm"
+    },
+    {
+      "nom": "Grande Mosquée de Hammam-Sousse",
+      "lat": 35.8604063,
+      "lng": 10.591546,
+      "coordonnees": {
+        "lat": 35.8604063,
+        "lng": 10.591546
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8604063,10.591546",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée Sidi Abdel Kader",
+      "lat": 35.8596179,
+      "lng": 10.5874801,
+      "coordonnees": {
+        "lat": 35.8596179,
+        "lng": 10.5874801
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8596179,10.5874801",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع عمر الفاروق - Mosqué Omar El Farouk",
+      "lat": 35.8737287,
+      "lng": 10.601983,
+      "coordonnees": {
+        "lat": 35.8737287,
+        "lng": 10.601983
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8737287,10.601983",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée Elizdihar Akouda",
+      "lat": 35.8707484,
+      "lng": 10.57102,
+      "coordonnees": {
+        "lat": 35.8707484,
+        "lng": 10.57102
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8707484,10.57102",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع الرحبة",
+      "lat": 35.7639037,
+      "lng": 10.5959537,
+      "coordonnees": {
+        "lat": 35.7639037,
+        "lng": 10.5959537
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7639037,10.5959537",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع السلام",
+      "lat": 35.7598123,
+      "lng": 10.5948794,
+      "coordonnees": {
+        "lat": 35.7598123,
+        "lng": 10.5948794
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7598123,10.5948794",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع الغفران الحي الشرقي",
+      "lat": 35.8733952,
+      "lng": 10.5458123,
+      "coordonnees": {
+        "lat": 35.8733952,
+        "lng": 10.5458123
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8733952,10.5458123",
+      "source": "osm"
+    },
+    {
+      "nom": "Grande Mosquée de Sahline",
+      "lat": 35.7528681,
+      "lng": 10.7096364,
+      "coordonnees": {
+        "lat": 35.7528681,
+        "lng": 10.7096364
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7528681,10.7096364",
+      "source": "osm"
+    },
+    {
+      "nom": "المسجد الجبلي",
+      "lat": 35.8723756,
+      "lng": 10.535521,
+      "coordonnees": {
+        "lat": 35.8723756,
+        "lng": 10.535521
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.8723756,10.535521",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée Essouk",
+      "lat": 35.751963,
+      "lng": 10.7119972,
+      "coordonnees": {
+        "lat": 35.751963,
+        "lng": 10.7119972
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.751963,10.7119972",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع الرحمة",
+      "lat": 35.7488907,
+      "lng": 10.7136014,
+      "coordonnees": {
+        "lat": 35.7488907,
+        "lng": 10.7136014
+      },
+      "adresse": "شارع علي بلهوان, الساحلين",
+      "mapsUrl": "https://maps.google.com/?q=35.7488907,10.7136014",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée \"El Baraka\"",
+      "lat": 35.7459351,
+      "lng": 10.7204793,
+      "coordonnees": {
+        "lat": 35.7459351,
+        "lng": 10.7204793
+      },
+      "adresse": "Ain Amara, Sahline",
+      "mapsUrl": "https://maps.google.com/?q=35.7459351,10.7204793",
+      "source": "osm"
+    },
+    {
+      "nom": "الجامع الكبير",
+      "lat": 35.7291451,
+      "lng": 10.5796662,
+      "coordonnees": {
+        "lat": 35.7291451,
+        "lng": 10.5796662
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7291451,10.5796662",
+      "source": "osm"
+    },
+    {
+      "nom": "الجامع الكبير بالوردانين",
+      "lat": 35.7092768,
+      "lng": 10.6762113,
+      "coordonnees": {
+        "lat": 35.7092768,
+        "lng": 10.6762113
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7092768,10.6762113",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع عيسى ابن مسكين",
+      "lat": 35.7216762,
+      "lng": 10.7142431,
+      "coordonnees": {
+        "lat": 35.7216762,
+        "lng": 10.7142431
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7216762,10.7142431",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع الهداية",
+      "lat": 35.7012028,
+      "lng": 10.5898934,
+      "coordonnees": {
+        "lat": 35.7012028,
+        "lng": 10.5898934
+      },
+      "adresse": "Beni Khaltoum",
+      "mapsUrl": "https://maps.google.com/?q=35.7012028,10.5898934",
+      "source": "osm"
+    },
+    {
+      "nom": "مسجد الإحسان",
+      "lat": 35.7732011,
+      "lng": 10.7893523,
+      "coordonnees": {
+        "lat": 35.7732011,
+        "lng": 10.7893523
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7732011,10.7893523",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع الصيادي",
+      "lat": 35.7748427,
+      "lng": 10.7950291,
+      "coordonnees": {
+        "lat": 35.7748427,
+        "lng": 10.7950291
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7748427,10.7950291",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع منزل خير",
+      "lat": 35.6972039,
+      "lng": 10.7099648,
+      "coordonnees": {
+        "lat": 35.6972039,
+        "lng": 10.7099648
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.6972039,10.7099648",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée Arrazzak",
+      "lat": 35.7635347,
+      "lng": 10.8033654,
+      "coordonnees": {
+        "lat": 35.7635347,
+        "lng": 10.8033654
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7635347,10.8033654",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée Omar Ibn Al Khattab",
+      "lat": 35.7023369,
+      "lng": 10.7434587,
+      "coordonnees": {
+        "lat": 35.7023369,
+        "lng": 10.7434587
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7023369,10.7434587",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع التوفيق السواني",
+      "lat": 35.778842,
+      "lng": 10.818657,
+      "coordonnees": {
+        "lat": 35.778842,
+        "lng": 10.818657
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.778842,10.818657",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع التوبة",
+      "lat": 35.7719193,
+      "lng": 10.816673,
+      "coordonnees": {
+        "lat": 35.7719193,
+        "lng": 10.816673
+      },
+      "adresse": "المنستير",
+      "mapsUrl": "https://maps.google.com/?q=35.7719193,10.816673",
+      "source": "osm"
+    },
+    {
+      "nom": "Mosquée Sidi Nasr",
+      "lat": 35.7577266,
+      "lng": 10.812249,
+      "coordonnees": {
+        "lat": 35.7577266,
+        "lng": 10.812249
+      },
+      "adresse": "المنستير",
+      "mapsUrl": "https://maps.google.com/?q=35.7577266,10.812249",
+      "source": "osm"
+    },
+    {
+      "nom": "R4",
+      "lat": 35.7719149,
+      "lng": 10.8205625,
+      "coordonnees": {
+        "lat": 35.7719149,
+        "lng": 10.8205625
+      },
+      "adresse": "المنستير",
+      "mapsUrl": "https://maps.google.com/?q=35.7719149,10.8205625",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع الغفران",
+      "lat": 35.7676684,
+      "lng": 10.818954,
+      "coordonnees": {
+        "lat": 35.7676684,
+        "lng": 10.818954
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.7676684,10.818954",
+      "source": "osm"
+    },
+    {
+      "nom": "جامع بني ربيعة",
+      "lat": 35.6752489,
+      "lng": 10.5730274,
+      "coordonnees": {
+        "lat": 35.6752489,
+        "lng": 10.5730274
+      },
+      "mapsUrl": "https://maps.google.com/?q=35.6752489,10.5730274",
+      "source": "osm"
     }
   ],
   "activites": [

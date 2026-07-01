@@ -1502,17 +1502,48 @@
   ],
   "mosqueesPrincipales": [
     {
-      "id": "m1",
-      "nom": "Grande Mosquée de Skopje",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Skopje",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Skopje%20Skopje",
-      "lat": 41.9880039,
-      "lng": 21.4807063,
-      "geocoded": true
+      "nom": "Mosque",
+      "lat": 42.0038278,
+      "lng": 21.4375316,
+      "coordonnees": {
+        "lat": 42.0038278,
+        "lng": 21.4375316
+      },
+      "mapsUrl": "https://maps.google.com/?q=42.0038278,21.4375316",
+      "source": "osm"
+    },
+    {
+      "nom": "Џамија Драчево",
+      "lat": 41.9384604,
+      "lng": 21.5135396,
+      "coordonnees": {
+        "lat": 41.9384604,
+        "lng": 21.5135396
+      },
+      "mapsUrl": "https://maps.google.com/?q=41.9384604,21.5135396",
+      "source": "osm"
+    },
+    {
+      "nom": "Султан Мехмед Џамија - Батинци",
+      "lat": 41.9188642,
+      "lng": 21.4795221,
+      "coordonnees": {
+        "lat": 41.9188642,
+        "lng": 21.4795221
+      },
+      "mapsUrl": "https://maps.google.com/?q=41.9188642,21.4795221",
+      "source": "osm"
+    },
+    {
+      "nom": "Долна Џамија - Студеничани",
+      "lat": 41.9277498,
+      "lng": 21.5380643,
+      "coordonnees": {
+        "lat": 41.9277498,
+        "lng": 21.5380643
+      },
+      "mapsUrl": "https://maps.google.com/?q=41.9277498,21.5380643",
+      "source": "osm"
     }
   ],
   "activites": [
