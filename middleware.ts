@@ -4,20 +4,20 @@ import { EN_TO_FR_SLUG, FR_TO_EN_SLUG } from '@/lib/slugs'
 // Détection de domaine côté serveur (déterministe, sans flash ni reload).
 // gohalaltravel.com → anglais ; voyageshalal.fr → français.
 //
+// L'anglais est désormais rendu EN DUR côté serveur (SSR par domaine) : on
+// n'injecte plus le cookie Google Translate. GT reste disponible à la demande
+// pour les 8 autres langues via le sélecteur, mais ne s'exécute plus par défaut.
+//
 // P0-2 (slugs EN) : sur le domaine EN, l'URL publique est le slug anglais
 // (/prayer-times…) réécrit vers la route interne FR (/horaires-priere), et les
 // anciennes URL FR sur le domaine EN sont redirigées en 301 vers le slug EN.
 export function middleware(req: NextRequest) {
   const host = req.headers.get('host') || ''
   const isEN = host.includes('gohalaltravel')
-  const hasGoogtrans = req.cookies.has('googtrans')
-  const { pathname, search } = req.nextUrl
+  const { pathname } = req.nextUrl
 
-  // Applique le cookie de langue + l'en-tête domaine à n'importe quelle réponse
+  // Applique l'en-tête domaine à n'importe quelle réponse
   const decorate = (res: NextResponse) => {
-    if (isEN && !hasGoogtrans) {
-      res.cookies.set('googtrans', '/fr/en', { path: '/', maxAge: 60 * 60 * 24 * 365 })
-    }
     res.headers.set('x-domain-lang', isEN ? 'en' : 'fr')
     return res
   }

@@ -2,11 +2,23 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect } from 'react'
 
-// Charge le moteur Google Translate (caché). La traduction réelle de toute la page
-// (interface + contenu éditorial) est déclenchée via le cookie `googtrans`,
-// positionné par le sélecteur de langue. Couvre desktop + mobile, toutes les pages.
+// Google Translate est désormais chargé UNIQUEMENT À LA DEMANDE : le moteur ne
+// s'injecte que si l'utilisateur a explicitement choisi une des 8 langues
+// secondaires (cookie `googtrans` présent, hors fr/en). Par défaut, le domaine
+// FR sert du français en dur et le domaine EN de l'anglais en dur — aucun script
+// Google Translate ne s'exécute, plus de re-traduction parasite.
+function hasActiveGoogtrans(): boolean {
+  if (typeof document === 'undefined') return false
+  const m = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/)
+  if (!m) return false
+  const val = decodeURIComponent(m[1]) // ex. /fr/ar
+  const target = val.split('/')[2]
+  return !!target && target !== 'fr' && target !== 'en'
+}
+
 export default function GoogleTranslate() {
   useEffect(() => {
+    if (!hasActiveGoogtrans()) return // langue par défaut → on ne charge pas GT
     if (document.getElementById('google-translate-script')) return
     ;(window as any).googleTranslateElementInit = () => {
       try {
