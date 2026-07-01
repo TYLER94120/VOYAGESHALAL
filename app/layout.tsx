@@ -54,7 +54,7 @@ export async function generateMetadata(): Promise<Metadata> {
         'x-default': 'https://www.gohalaltravel.com',
       },
     },
-    appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: isEN ? 'GoHalalTravel' : 'VoyagesHalal' },
+    appleWebApp: { capable: true, statusBarStyle: 'black-translucent', title: isEN ? 'GoHalalTravel.com' : 'VoyagesHalal.fr' },
     ...(process.env.NEXT_PUBLIC_GSC_VERIFICATION && {
       verification: { google: process.env.NEXT_PUBLIC_GSC_VERIFICATION },
     }),

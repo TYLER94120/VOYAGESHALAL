@@ -66,7 +66,7 @@ export default function OmraPage() {
         name: 'Guide Omra 2026',
         description: 'Guide complet pour préparer votre Omra 2026 depuis la France',
         url: `${SITE_URL}/omra`,
-        publisher: { '@type': 'Organization', name: 'Voyages Halal', url: SITE_URL },
+        publisher: { '@type': 'Organization', name: 'VoyagesHalal.fr', url: SITE_URL },
       }} />
 
       <main style={{ backgroundColor: '#faf8f4' }} className="min-h-screen">

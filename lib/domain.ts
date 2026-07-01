@@ -14,7 +14,7 @@ export async function getDomainSEO(): Promise<DomainSEO> {
   const isEN = host.includes('gohalaltravel')
   return {
     isEN,
-    brand: isEN ? 'GoHalalTravel' : 'VoyagesHalal.fr',
+    brand: isEN ? 'GoHalalTravel.com' : 'VoyagesHalal.fr',
     siteUrl: isEN ? 'https://www.gohalaltravel.com' : 'https://www.voyageshalal.fr',
   }
 }
