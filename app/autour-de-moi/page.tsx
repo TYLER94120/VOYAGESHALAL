@@ -1,10 +1,10 @@
 'use client'
-import { useState, useRef, useEffect, useCallback } from 'react'
+import { useState, useRef, useEffect, useCallback, type FormEvent } from 'react'
 import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap, Marker } from 'leaflet'
 import { useLocation } from '@/components/location/LocationProvider'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
-import SearchBarHome from '@/components/search/SearchBarHome'
+
 
 type Cat = 'mosquees' | 'restaurants' | 'hotels' | 'boucheries' | 'activites'
 interface Spot { id: number | string; lat: number; lng: number; name: string; sub?: string; dist: number; halal?: 'only' | 'yes' | 'likely' }
@@ -62,9 +62,12 @@ export default function AutourDeMoiPage() {
   const [loading, setLoading] = useState(true)
   const [geoErr, setGeoErr] = useState<GeoError | null>(null)
   const [selected, setSelected] = useState<number | string | null>(null)
+  const [q, setQ] = useState('')
+  const [searching, setSearching] = useState(false)
   const mapRef = useRef<LeafletMap | null>(null)
   const mapEl = useRef<HTMLDivElement>(null)
   const markersRef = useRef<{ id: number | string; marker: Marker }[]>([])
+  const meMarkerRef = useRef<Marker | null>(null)
   // Points pré-chargés (nos 354 villes) par catégorie — affichés instantanément
   const preRef = useRef<Partial<Record<Cat, Spot[]>>>({})
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -94,12 +97,15 @@ export default function AutourDeMoiPage() {
     } else {
       mapRef.current.setView([lat, lng], 14)
     }
-    // Marqueur « Moi » : cercle blanc, bordure bleue, 🧍, étiquette « Moi »
-    const me = L.divIcon({
-      html: `<div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;background:#fff;border:3px solid #2563eb;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px rgba(37,99,235,.18);font-size:14px">🧍</div><span style="margin-top:3px;background:#2563eb;color:#fff;font-size:10px;font-weight:700;border-radius:8px;padding:1px 7px">Moi</span></div>`,
-      className: '', iconAnchor: [13, 13],
-    })
-    L.marker([lat, lng], { icon: me, zIndexOffset: 1000 }).addTo(mapRef.current)
+    // Marqueur « Moi » (position GPS réelle) : créé UNE SEULE FOIS, ne bouge pas
+    // quand on recherche une autre ville (évite les doublons).
+    if (!meMarkerRef.current) {
+      const me = L.divIcon({
+        html: `<div style="display:flex;flex-direction:column;align-items:center"><div style="width:26px;height:26px;background:#fff;border:3px solid #2563eb;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 6px rgba(37,99,235,.18);font-size:14px">🧍</div><span style="margin-top:3px;background:#2563eb;color:#fff;font-size:10px;font-weight:700;border-radius:8px;padding:1px 7px">Moi</span></div>`,
+        className: '', iconAnchor: [13, 13],
+      })
+      meMarkerRef.current = L.marker([lat, lng], { icon: me, zIndexOffset: 1000 }).addTo(mapRef.current)
+    }
   }, [])
 
   const paint = useCallback((selId: number | string | null) => {
@@ -200,6 +206,23 @@ export default function AutourDeMoiPage() {
     await preload(c.lat, c.lng)
     await search(c.lat, c.lng, cat)
   }
+  // Recherche d'une ville : on RESTE sur la carte, on se recentre dessus et on
+  // recharge les points autour (mêmes onglets). Ex. « Berkane » → focus Berkane.
+  const goToCity = async (e: FormEvent) => {
+    e.preventDefault()
+    const query = q.trim(); if (!query || searching) return
+    setSearching(true); setGeoErr(null)
+    try {
+      const res = await fetch(`/api/geocode?q=${encodeURIComponent(query)}`)
+      if (res.ok) {
+        const j = await res.json()
+        if (typeof j.lat === 'number') {
+          setPos({ lat: j.lat, lng: j.lng }) // déclenche recentrage + rechargement
+          if (j.name) setQ(j.name)
+        }
+      }
+    } catch { /* géocodage indisponible */ } finally { setSearching(false) }
+  }
   const retry = async () => {
     setGeoErr(null); setLoading(true)
     try { const p = await getPosition(); setPos({ lat: p.lat, lng: p.lng }) } catch (code) { setGeoErr(describeGeoError(code as GeoErrorCode)); setLoading(false) }
@@ -213,9 +236,18 @@ export default function AutourDeMoiPage() {
         <div ref={mapEl} style={{ height: '62vh', minHeight: 380, width: '100%', background: '#dfe6e2', zIndex: 1 }} />
 
         <div style={{ position: 'absolute', top: 12, left: 12, right: 12, zIndex: 500, display: 'flex', flexDirection: 'column', gap: 8, pointerEvents: 'none' }}>
-          <div style={{ pointerEvents: 'auto', boxShadow: '0 6px 20px rgba(0,0,0,.15)', borderRadius: 14 }}>
-            <SearchBarHome />
-          </div>
+          <form onSubmit={goToCity} style={{ pointerEvents: 'auto', display: 'flex', gap: 6, boxShadow: '0 6px 20px rgba(0,0,0,.15)', borderRadius: 14, background: '#fff', padding: 4 }}>
+            <input
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              placeholder="Chercher une ville (Berkane, Istanbul…)"
+              aria-label="Chercher une ville sur la carte"
+              style={{ flex: 1, border: 'none', outline: 'none', fontSize: 15, padding: '10px 12px', borderRadius: 12, color: 'var(--nuit)', background: 'transparent' }}
+            />
+            <button type="submit" disabled={searching} style={{ border: 'none', background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 14, borderRadius: 12, padding: '0 16px', cursor: searching ? 'wait' : 'pointer' }}>
+              {searching ? '…' : '🔍'}
+            </button>
+          </form>
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
             <span style={{ pointerEvents: 'auto', background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 13.5, borderRadius: 30, padding: '8px 14px', boxShadow: '0 4px 14px rgba(0,0,0,.18)' }}>
               {loading ? 'Recherche…' : `${spots.length} ${conf.label} à proximité`}
