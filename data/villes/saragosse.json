@@ -33,7 +33,386 @@
     "halal",
     "europe"
   ],
-  "restaurants": [],
+  "restaurants": [
+    {
+      "nom": "Deira Dubai",
+      "lat": 41.6495128,
+      "lng": -0.8899345,
+      "type": "arab",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=41.6495128,-0.8899345",
+      "source": "osm"
+    },
+    {
+      "nom": "Jekes",
+      "lat": 41.6443079,
+      "lng": -0.8859079,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6443079,-0.8859079",
+      "source": "osm"
+    },
+    {
+      "nom": "Café del Tibet",
+      "lat": 41.6502791,
+      "lng": -0.8820985,
+      "type": "oriental, tea, indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6502791,-0.8820985",
+      "source": "osm"
+    },
+    {
+      "nom": "La Luna de Aragón",
+      "lat": 41.6545522,
+      "lng": -0.8863692,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6545522,-0.8863692",
+      "source": "osm"
+    },
+    {
+      "nom": "El Rincón de Asia",
+      "lat": 41.6430109,
+      "lng": -0.8924113,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6430109,-0.8924113",
+      "source": "osm"
+    },
+    {
+      "nom": "Hits Noodles",
+      "lat": 41.651532,
+      "lng": -0.8808438,
+      "type": "noodle",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=41.651532,-0.8808438",
+      "source": "osm"
+    },
+    {
+      "nom": "Luna de Istanbul",
+      "lat": 41.642754,
+      "lng": -0.8935412,
+      "type": "turkish, kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.642754,-0.8935412",
+      "source": "osm"
+    },
+    {
+      "nom": "King Döner Kebab Asia",
+      "lat": 41.6459068,
+      "lng": -0.8976519,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6459068,-0.8976519",
+      "source": "osm"
+    },
+    {
+      "nom": "Zenobia",
+      "lat": 41.6413965,
+      "lng": -0.8914416,
+      "type": "arab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6413965,-0.8914416",
+      "source": "osm"
+    },
+    {
+      "nom": "King Döner Kebab",
+      "lat": 41.6457726,
+      "lng": -0.8795608,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6457726,-0.8795608",
+      "source": "osm"
+    },
+    {
+      "nom": "El Teatro",
+      "lat": 41.6565779,
+      "lng": -0.8888538,
+      "type": "moroccan",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=41.6565779,-0.8888538",
+      "source": "osm"
+    },
+    {
+      "nom": "Dixy Pizzas",
+      "lat": 41.6475326,
+      "lng": -0.8993764,
+      "type": "kebab",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=41.6475326,-0.8993764",
+      "source": "osm"
+    },
+    {
+      "nom": "Luna de Estambul",
+      "lat": 41.6556182,
+      "lng": -0.8838369,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6556182,-0.8838369",
+      "source": "osm"
+    },
+    {
+      "nom": "Turkuaz Kebabish Doner",
+      "lat": 41.6408942,
+      "lng": -0.8843525,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6408942,-0.8843525",
+      "source": "osm"
+    },
+    {
+      "nom": "House Doner Kebab",
+      "lat": 41.6535622,
+      "lng": -0.8792657,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6535622,-0.8792657",
+      "source": "osm"
+    },
+    {
+      "nom": "Turco Döner Kebab",
+      "lat": 41.6398981,
+      "lng": -0.8872415,
+      "type": "kebab",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=41.6398981,-0.8872415",
+      "source": "osm"
+    },
+    {
+      "nom": "ElMañoKebab",
+      "lat": 41.6548477,
+      "lng": -0.8985332,
+      "type": "kebab",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=41.6548477,-0.8985332",
+      "source": "osm"
+    },
+    {
+      "nom": "Doner Kebab Turco",
+      "lat": 41.6551416,
+      "lng": -0.8799448,
+      "type": "kebab",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=41.6551416,-0.8799448",
+      "source": "osm"
+    },
+    {
+      "nom": "Mega Döner Kebab 3.0",
+      "lat": 41.6402107,
+      "lng": -0.89639,
+      "type": "kebab",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=41.6402107,-0.89639",
+      "source": "osm"
+    },
+    {
+      "nom": "Mayor",
+      "lat": 41.6541525,
+      "lng": -0.8772486,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6541525,-0.8772486",
+      "source": "osm"
+    },
+    {
+      "nom": "La Feria",
+      "lat": 41.6402485,
+      "lng": -0.8974679,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6402485,-0.8974679",
+      "source": "osm"
+    },
+    {
+      "nom": "Turco Doner",
+      "lat": 41.6511916,
+      "lng": -0.8751998,
+      "type": "kebab, turkish",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6511916,-0.8751998",
+      "source": "osm"
+    },
+    {
+      "nom": "Istanbul",
+      "lat": 41.6539724,
+      "lng": -0.9019831,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6539724,-0.9019831",
+      "source": "osm"
+    },
+    {
+      "nom": "FALAFILOOO",
+      "lat": 41.6523064,
+      "lng": -0.8743523,
+      "type": "lebanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6523064,-0.8743523",
+      "source": "osm"
+    },
+    {
+      "nom": "Ali",
+      "lat": 41.6472979,
+      "lng": -0.8734841,
+      "type": "kebab",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=41.6472979,-0.8734841",
+      "source": "osm"
+    },
+    {
+      "nom": "El Sabor de la india",
+      "lat": 41.6384582,
+      "lng": -0.8975376,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6384582,-0.8975376",
+      "source": "osm"
+    },
+    {
+      "nom": "King Kebab",
+      "lat": 41.6605921,
+      "lng": -0.8991306,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6605921,-0.8991306",
+      "source": "osm"
+    },
+    {
+      "nom": "El Rey Kebab",
+      "lat": 41.6459665,
+      "lng": -0.8703299,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6459665,-0.8703299",
+      "source": "osm"
+    },
+    {
+      "nom": "Zaragoza Kebab House",
+      "lat": 41.6378416,
+      "lng": -0.8763737,
+      "type": "kebab",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=41.6378416,-0.8763737",
+      "source": "osm"
+    },
+    {
+      "nom": "Laky Döner Kebab",
+      "lat": 41.6511314,
+      "lng": -0.90881,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6511314,-0.90881",
+      "source": "osm"
+    },
+    {
+      "nom": "Sami",
+      "lat": 41.6600433,
+      "lng": -0.8740173,
+      "type": "kebab",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=41.6600433,-0.8740173",
+      "source": "osm"
+    },
+    {
+      "nom": "Döner Kebab Romareda",
+      "lat": 41.6371223,
+      "lng": -0.9042395,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6371223,-0.9042395",
+      "source": "osm"
+    },
+    {
+      "nom": "Conrad's Fried Chicken",
+      "lat": 41.6518054,
+      "lng": -0.9119894,
+      "type": "chicken",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=41.6518054,-0.9119894",
+      "source": "osm"
+    },
+    {
+      "nom": "Amrit",
+      "lat": 41.6340081,
+      "lng": -0.876664,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6340081,-0.876664",
+      "source": "osm"
+    },
+    {
+      "nom": "Ankara Turco Döner Kebab",
+      "lat": 41.6339672,
+      "lng": -0.8752302,
+      "type": "kebab",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=41.6339672,-0.8752302",
+      "source": "osm"
+    },
+    {
+      "nom": "King Döner",
+      "lat": 41.6677623,
+      "lng": -0.8914752,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6677623,-0.8914752",
+      "source": "osm"
+    },
+    {
+      "nom": "Tandoori Mahal",
+      "lat": 41.6406668,
+      "lng": -0.9126232,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.6406668,-0.9126232",
+      "source": "osm"
+    },
+    {
+      "nom": "Döner Kebab Estambul",
+      "lat": 41.628963,
+      "lng": -0.8839916,
+      "type": "kebab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=41.628963,-0.8839916",
+      "source": "osm"
+    },
+    {
+      "nom": "Yamii",
+      "lat": 41.6698469,
+      "lng": -0.8896926,
+      "type": "arab",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=41.6698469,-0.8896926",
+      "source": "osm"
+    },
+    {
+      "nom": "Mega Dönner Kebab & Pizzería 2.0",
+      "lat": 41.6749287,
+      "lng": -0.8889477,
+      "type": "kebab, pizza",
+      "halalConfidence": "certified",
+      "mapsUrl": "https://maps.google.com/?q=41.6749287,-0.8889477",
+      "source": "osm"
+    },
+    {
+      "nom": "Kebabish",
+      "lat": 41.6241536,
+      "lng": -0.876068,
+      "type": "kebab",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=41.6241536,-0.876068",
+      "source": "osm"
+    },
+    {
+      "nom": "Shine",
+      "lat": 41.6584541,
+      "lng": -0.9407273,
+      "type": "kebab",
+      "halalConfidence": "high",
+      "mapsUrl": "https://maps.google.com/?q=41.6584541,-0.9407273",
+      "source": "osm"
+    }
+  ],
   "hotels": [
     {
       "nom": "Hotel Zaragoza Royal",
@@ -904,5 +1283,55 @@
   "villeNonMusulmane": true,
   "description_en": "Zaragoza may not be a Muslim-majority destination, but it welcomes Muslim travelers with real halal options. You'll find a selection of halal restaurants and several mosques nearby, plus real-time prayer times and the Qibla direction — everything to explore Zaragoza, Spain, with peace of mind.",
   "metaDescription_en": "Halal guide to Zaragoza: halal restaurants, prayer times and tips for Muslim travelers. Halal Trust Score 3.2/5.",
-  "nom_en": "Zaragoza"
+  "nom_en": "Zaragoza",
+  "boucheries": [
+    {
+      "nom": "Carnicería Rami Halal",
+      "lat": 41.6528049,
+      "lng": -0.872,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=41.6528049,-0.872",
+      "source": "osm"
+    },
+    {
+      "nom": "Carnicería Argán",
+      "lat": 41.6360927,
+      "lng": -0.8750091,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=41.6360927,-0.8750091",
+      "source": "osm"
+    },
+    {
+      "nom": "Al Andalus",
+      "lat": 41.6608264,
+      "lng": -0.8739,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=41.6608264,-0.8739",
+      "source": "osm"
+    },
+    {
+      "nom": "Marrakech",
+      "lat": 41.6464997,
+      "lng": -0.8668417,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=41.6464997,-0.8668417",
+      "source": "osm"
+    },
+    {
+      "nom": "Saif",
+      "lat": 41.630289,
+      "lng": -0.885873,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=41.630289,-0.885873",
+      "source": "osm"
+    },
+    {
+      "nom": "Saad",
+      "lat": 41.6289804,
+      "lng": -0.8852045,
+      "type": "Boucherie halal",
+      "mapsUrl": "https://maps.google.com/?q=41.6289804,-0.8852045",
+      "source": "osm"
+    }
+  ]
 }
