@@ -3,6 +3,7 @@ import { readdirSync } from 'fs'
 import path from 'path'
 import { guides, blogPosts } from '@/lib/data'
 import { getDomainSEO } from '@/lib/domain'
+import { localizedHref } from '@/lib/slugs'
 
 function getVilleSlugs(): string[] {
   try {
@@ -16,21 +17,23 @@ function getVilleSlugs(): string[] {
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Chaque domaine génère son propre sitemap avec ses URLs
-  const { siteUrl: SITE_URL } = await getDomainSEO()
+  const { siteUrl: SITE_URL, isEN } = await getDomainSEO()
+  // Sur le domaine EN, les routes au libellé FR sont listées avec leur slug anglais
+  const L = (p: string) => `${SITE_URL}${localizedHref(p, isEN)}`
   const staticPages: MetadataRoute.Sitemap = [
     { url: SITE_URL, changeFrequency: 'weekly', priority: 1 },
     { url: `${SITE_URL}/destinations`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE_URL}/guides`, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/blog`, changeFrequency: 'daily', priority: 0.8 },
-    { url: `${SITE_URL}/application`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${SITE_URL}/omra`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${SITE_URL}/horaires-priere`, changeFrequency: 'daily', priority: 0.9 },
+    { url: L('/application'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: L('/omra'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: L('/horaires-priere'), changeFrequency: 'daily', priority: 0.9 },
     { url: `${SITE_URL}/qibla`, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${SITE_URL}/mosquee-proche`, changeFrequency: 'monthly', priority: 0.9 },
+    { url: L('/mosquee-proche'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/autour-de-moi`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${SITE_URL}/a-propos`, changeFrequency: 'monthly', priority: 0.6 },
+    { url: L('/a-propos'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${SITE_URL}/contact`, changeFrequency: 'yearly', priority: 0.4 },
-    { url: `${SITE_URL}/confidentialite`, changeFrequency: 'yearly', priority: 0.3 },
+    { url: L('/confidentialite'), changeFrequency: 'yearly', priority: 0.3 },
   ]
 
   // All city pages now live under /destinations/[slug], sourced from data/villes

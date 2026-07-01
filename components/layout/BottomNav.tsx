@@ -3,10 +3,12 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { useLocation } from '@/components/location/LocationProvider'
+import { localizedHref } from '@/lib/slugs'
 
 export default function BottomNav() {
   const pathname = usePathname()
-  const { t } = useLanguage()
+  const { t, lang } = useLanguage()
+  const en = lang === 'en'
   const { city } = useLocation()
   const isActive = (path: string) => pathname === path || pathname.startsWith(path + '/')
 
@@ -21,13 +23,13 @@ export default function BottomNav() {
       </Link>
       <Link href={restosHref} className={`bottom-nav-item ${isActive('/destinations') ? 'active' : ''}`}>
         <span className="bottom-nav-icon">{city ? '📍' : '🏙️'}</span>
-        <span className="bottom-nav-label" style={{ maxWidth: 64, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{city ? city.nom : 'Ville'}</span>
+        <span className="bottom-nav-label" style={{ maxWidth: 64, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{city ? city.nom : (en ? 'City' : 'Ville')}</span>
       </Link>
-      <Link href="/mosquee-proche" className={`bottom-nav-item ${isActive('/mosquee-proche') ? 'active' : ''}`}>
+      <Link href={localizedHref('/mosquee-proche', en)} className={`bottom-nav-item ${isActive('/mosquee-proche') ? 'active' : ''}`}>
         <span className="bottom-nav-icon">🕌</span>
         <span className="bottom-nav-label">{t('bottom.mosque')}</span>
       </Link>
-      <Link href="/horaires-priere" className={`bottom-nav-item ${isActive('/horaires-priere') ? 'active' : ''}`}>
+      <Link href={localizedHref('/horaires-priere', en)} className={`bottom-nav-item ${isActive('/horaires-priere') ? 'active' : ''}`}>
         <span className="bottom-nav-icon">🕐</span>
         <span className="bottom-nav-label">{t('bottom.prayer')}</span>
       </Link>

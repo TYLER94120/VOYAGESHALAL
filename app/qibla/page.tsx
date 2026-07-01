@@ -3,10 +3,18 @@ import IslamicPattern from '@/components/ui/IslamicPattern'
 import QiblaCompass from '@/components/qibla/QiblaCompass'
 import { getDomainSEO } from '@/lib/domain'
 
-export const metadata: Metadata = {
-  title: 'Calculateur Qibla — Compas temps réel vers La Mecque',
-  description:
-    "Boussole Qibla en temps réel : l'aiguille pointe vers La Mecque grâce au capteur de votre téléphone (GPS + compas). Gratuit, précis, depuis n'importe où dans le monde.",
+export async function generateMetadata(): Promise<Metadata> {
+  const { isEN, siteUrl } = await getDomainSEO()
+  return {
+    title: isEN ? 'Qibla finder — Real-time compass to Mecca' : 'Calculateur Qibla — Compas temps réel vers La Mecque',
+    description: isEN
+      ? "Real-time Qibla compass: the needle points to Mecca using your phone's sensor (GPS + compass). Free, accurate, from anywhere in the world."
+      : "Boussole Qibla en temps réel : l'aiguille pointe vers La Mecque grâce au capteur de votre téléphone (GPS + compas). Gratuit, précis, depuis n'importe où dans le monde.",
+    alternates: {
+      canonical: `${siteUrl}/qibla`,
+      languages: { fr: 'https://www.voyageshalal.fr/qibla', en: 'https://www.gohalaltravel.com/qibla', 'x-default': 'https://www.gohalaltravel.com/qibla' },
+    },
+  }
 }
 
 export default async function QiblaPage() {

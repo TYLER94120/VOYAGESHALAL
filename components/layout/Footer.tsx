@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import BrandName from '@/components/layout/BrandName'
+import { localizedHref } from '@/lib/slugs'
 
 // Colonnes de liens, bilingues selon le domaine (FR = voyageshalal.fr, EN = gohalaltravel.com)
 function getFooterLinks(en: boolean) {
@@ -12,10 +13,10 @@ function getFooterLinks(en: boolean) {
       { href: '/destinations/dubai', label: en ? 'Dubai' : 'Dubaï' },
     ],
     [en ? 'Muslim tools' : 'Outils musulmans']: [
-      { href: '/horaires-priere', label: en ? '🕐 Prayer times' : '🕐 Horaires de prière' },
+      { href: localizedHref('/horaires-priere', en), label: en ? '🕐 Prayer times' : '🕐 Horaires de prière' },
       { href: '/qibla', label: en ? '🧭 Qibla finder' : '🧭 Calculateur Qibla' },
-      { href: '/mosquee-proche', label: en ? '🕌 Nearest mosque' : '🕌 Mosquée la plus proche' },
-      { href: '/omra', label: en ? '🕋 Umrah & Hajj' : '🕋 Omra & Hajj' },
+      { href: localizedHref('/mosquee-proche', en), label: en ? '🕌 Nearest mosque' : '🕌 Mosquée la plus proche' },
+      { href: localizedHref('/omra', en), label: en ? '🕋 Umrah & Hajj' : '🕋 Omra & Hajj' },
     ],
     [en ? 'Resources' : 'Ressources']: [
       { href: '/blog', label: en ? 'Blog & Guides' : 'Blog & Guides' },
@@ -23,9 +24,9 @@ function getFooterLinks(en: boolean) {
       { href: '/guides/ramadan-voyage-guide', label: en ? 'Travel during Ramadan' : 'Voyager en Ramadan' },
     ],
     [en ? 'Legal' : 'Légal']: [
-      { href: '/a-propos', label: en ? 'About & Trust Score' : 'À propos & Trust Score' },
-      { href: '/mentions-legales', label: en ? 'Legal notice' : 'Mentions légales' },
-      { href: '/confidentialite', label: en ? 'Privacy' : 'Confidentialité' },
+      { href: localizedHref('/a-propos', en), label: en ? 'About & Trust Score' : 'À propos & Trust Score' },
+      { href: localizedHref('/mentions-legales', en), label: en ? 'Legal notice' : 'Mentions légales' },
+      { href: localizedHref('/confidentialite', en), label: en ? 'Privacy' : 'Confidentialité' },
       { href: '/contact', label: 'Contact' },
     ],
   }

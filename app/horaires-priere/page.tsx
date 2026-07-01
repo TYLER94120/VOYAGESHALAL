@@ -3,10 +3,24 @@ import HorairesClient from './HorairesClient'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { getDomainSEO } from '@/lib/domain'
 
-export const metadata: Metadata = {
-  title: "Heures de prière aujourd'hui — Toutes les villes du monde",
-  description:
-    "Horaires de prière en temps réel (Fajr, Dhuhr, Asr, Maghrib, Isha) pour les principales destinations halal du monde. Données certifiées Aladhan, mises à jour quotidiennement.",
+export async function generateMetadata(): Promise<Metadata> {
+  const { isEN, siteUrl } = await getDomainSEO()
+  return {
+    title: isEN
+      ? "Prayer times today — Every city in the world"
+      : "Heures de prière aujourd'hui — Toutes les villes du monde",
+    description: isEN
+      ? 'Real-time prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha) for the main halal destinations worldwide. Certified Aladhan data, updated daily.'
+      : "Horaires de prière en temps réel (Fajr, Dhuhr, Asr, Maghrib, Isha) pour les principales destinations halal du monde. Données certifiées Aladhan, mises à jour quotidiennement.",
+    alternates: {
+      canonical: `${siteUrl}${isEN ? '/prayer-times' : '/horaires-priere'}`,
+      languages: {
+        fr: 'https://www.voyageshalal.fr/horaires-priere',
+        en: 'https://www.gohalaltravel.com/prayer-times',
+        'x-default': 'https://www.gohalaltravel.com/prayer-times',
+      },
+    },
+  }
 }
 
 export default async function HorairesPrierePage() {

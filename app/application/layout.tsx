@@ -6,7 +6,7 @@ import { getDomainSEO } from '@/lib/domain'
 // og:url corrects pointant vers /application (et non l'accueil).
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN, brand, siteUrl } = await getDomainSEO()
-  const url = `${siteUrl}/application`
+  const url = `${siteUrl}${isEN ? '/app' : '/application'}`
   const title = isEN
     ? `The ${brand} App — Halal Restaurants, Mosques & Prayer Times`
     : `L'application ${brand} — Restaurants halal, mosquées & horaires de prière`
@@ -20,8 +20,8 @@ export async function generateMetadata(): Promise<Metadata> {
       canonical: url,
       languages: {
         fr: 'https://www.voyageshalal.fr/application',
-        en: 'https://www.gohalaltravel.com/application',
-        'x-default': 'https://www.gohalaltravel.com/application',
+        en: 'https://www.gohalaltravel.com/app',
+        'x-default': 'https://www.gohalaltravel.com/app',
       },
     },
     openGraph: {

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { useLocation } from '@/components/location/LocationProvider'
+import { localizedHref } from '@/lib/slugs'
 
 export default function Header({ brandEN = false }: { brandEN?: boolean }) {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -36,13 +37,13 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
           <Link href="/destinations" className="nav-link">
             {t('nav.destinations')}
           </Link>
-          <Link href="/horaires-priere" className="nav-link nav-link-highlight">
+          <Link href={localizedHref('/horaires-priere', isEN)} className="nav-link nav-link-highlight">
             🕐 {t('nav.prayer')}
           </Link>
           <Link href="/qibla" className="nav-link nav-link-highlight">
             🧭 {t('nav.qibla')}
           </Link>
-          <Link href="/mosquee-proche" className="nav-link nav-link-highlight">
+          <Link href={localizedHref('/mosquee-proche', isEN)} className="nav-link nav-link-highlight">
             🕌 {t('nav.mosque')}
           </Link>
           <Link href="/blog" className="nav-link">
@@ -88,25 +89,25 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
       {menuOpen && (
         <div className="mobile-menu">
           <Link href="/" onClick={() => setMenuOpen(false)}>
-            🏠 Accueil
+            🏠 {isEN ? 'Home' : 'Accueil'}
           </Link>
           <Link href="/destinations" onClick={() => setMenuOpen(false)}>
             🗺️ Destinations
           </Link>
-          <Link href="/horaires-priere" onClick={() => setMenuOpen(false)}>
-            🕐 Horaires de prière
+          <Link href={localizedHref('/horaires-priere', isEN)} onClick={() => setMenuOpen(false)}>
+            🕐 {isEN ? 'Prayer times' : 'Horaires de prière'}
           </Link>
           <Link href="/qibla" onClick={() => setMenuOpen(false)}>
-            🧭 Calculateur Qibla
+            🧭 {isEN ? 'Qibla finder' : 'Calculateur Qibla'}
           </Link>
-          <Link href="/mosquee-proche" onClick={() => setMenuOpen(false)}>
-            🕌 Mosquée la plus proche
+          <Link href={localizedHref('/mosquee-proche', isEN)} onClick={() => setMenuOpen(false)}>
+            🕌 {isEN ? 'Nearest mosque' : 'Mosquée la plus proche'}
           </Link>
           <Link href="/blog" onClick={() => setMenuOpen(false)}>
             📖 Blog &amp; Guides
           </Link>
-          <Link href="/omra" onClick={() => setMenuOpen(false)}>
-            🕌 Omra &amp; Hajj
+          <Link href={localizedHref('/omra', isEN)} onClick={() => setMenuOpen(false)}>
+            🕌 {isEN ? 'Umrah & Hajj' : 'Omra & Hajj'}
           </Link>
           <Link href="/contact" onClick={() => setMenuOpen(false)}>
             ✉️ Contact

@@ -1,27 +1,43 @@
 import { NextResponse, type NextRequest } from 'next/server'
+import { EN_TO_FR_SLUG, FR_TO_EN_SLUG } from '@/lib/slugs'
 
 // Détection de domaine côté serveur (déterministe, sans flash ni reload).
-// gohalaltravel.com → anglais par défaut : on positionne le cookie `googtrans`
-// DÈS la première réponse, pour que Google Translate traduise toute la page
-// au premier rendu (interface + contenu éditorial). voyageshalal.fr → français.
+// gohalaltravel.com → anglais ; voyageshalal.fr → français.
 //
-// On ne touche au cookie que s'il est ABSENT : un choix de langue explicite
-// de l'utilisateur (sélecteur) pose son propre cookie et reste donc prioritaire.
+// P0-2 (slugs EN) : sur le domaine EN, l'URL publique est le slug anglais
+// (/prayer-times…) réécrit vers la route interne FR (/horaires-priere), et les
+// anciennes URL FR sur le domaine EN sont redirigées en 301 vers le slug EN.
 export function middleware(req: NextRequest) {
   const host = req.headers.get('host') || ''
   const isEN = host.includes('gohalaltravel')
   const hasGoogtrans = req.cookies.has('googtrans')
+  const { pathname, search } = req.nextUrl
 
-  const res = NextResponse.next()
-
-  if (isEN && !hasGoogtrans) {
-    // Traduire depuis le français vers l'anglais.
-    res.cookies.set('googtrans', '/fr/en', { path: '/', maxAge: 60 * 60 * 24 * 365 })
+  // Applique le cookie de langue + l'en-tête domaine à n'importe quelle réponse
+  const decorate = (res: NextResponse) => {
+    if (isEN && !hasGoogtrans) {
+      res.cookies.set('googtrans', '/fr/en', { path: '/', maxAge: 60 * 60 * 24 * 365 })
+    }
+    res.headers.set('x-domain-lang', isEN ? 'en' : 'fr')
+    return res
   }
 
-  // Indique aux composants serveur/clients la langue par défaut du domaine.
-  res.headers.set('x-domain-lang', isEN ? 'en' : 'fr')
-  return res
+  if (isEN) {
+    // 1) Ancienne URL FR sur le domaine EN → 301 vers le slug EN (SEO propre)
+    if (FR_TO_EN_SLUG[pathname]) {
+      const url = req.nextUrl.clone()
+      url.pathname = FR_TO_EN_SLUG[pathname]
+      return decorate(NextResponse.redirect(url, 301))
+    }
+    // 2) Slug EN public → réécriture interne vers la route FR (l'URL reste EN)
+    if (EN_TO_FR_SLUG[pathname]) {
+      const url = req.nextUrl.clone()
+      url.pathname = EN_TO_FR_SLUG[pathname]
+      return decorate(NextResponse.rewrite(url))
+    }
+  }
+
+  return decorate(NextResponse.next())
 }
 
 export const config = {

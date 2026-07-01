@@ -1,12 +1,24 @@
 import type { Metadata } from 'next'
 import IslamicPattern from '@/components/ui/IslamicPattern'
+import { getDomainSEO } from '@/lib/domain'
 
-export const metadata: Metadata = {
-  title: 'Politique de confidentialité',
-  description:
-    "Politique de confidentialité de VoyagesHalal : aucune donnée personnelle collectée, position jamais enregistrée, favoris et réglages stockés uniquement sur votre appareil.",
-  alternates: { canonical: 'https://www.voyageshalal.fr/confidentialite' },
-  robots: { index: true, follow: true },
+export async function generateMetadata(): Promise<Metadata> {
+  const { isEN, siteUrl } = await getDomainSEO()
+  return {
+    title: isEN ? 'Privacy policy' : 'Politique de confidentialité',
+    description: isEN
+      ? 'VoyagesHalal privacy policy: no personal data collected, location never stored, favorites and settings kept only on your device.'
+      : "Politique de confidentialité de VoyagesHalal : aucune donnée personnelle collectée, position jamais enregistrée, favoris et réglages stockés uniquement sur votre appareil.",
+    alternates: {
+      canonical: `${siteUrl}${isEN ? '/privacy' : '/confidentialite'}`,
+      languages: {
+        fr: 'https://www.voyageshalal.fr/confidentialite',
+        en: 'https://www.gohalaltravel.com/privacy',
+        'x-default': 'https://www.gohalaltravel.com/privacy',
+      },
+    },
+    robots: { index: true, follow: true },
+  }
 }
 
 const MAJ = '30 juin 2026'

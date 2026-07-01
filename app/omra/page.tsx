@@ -4,13 +4,24 @@ import { buildMetadata, buildFAQSchema, buildBreadcrumbSchema, SITE_URL } from '
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import OmraLeadForm from '@/components/omra/OmraLeadForm'
+import { getDomainSEO } from '@/lib/domain'
 
-export const metadata: Metadata = buildMetadata({
-  title: 'Omra 2026 — Guide Complet, Forfaits & Préparation',
-  description: 'Tout ce qu\'il faut savoir pour préparer votre Omra 2026 : visa, forfaits, budget, rituels, meilleures agences en France et conseils pratiques pour un pèlerinage réussi.',
-  path: '/omra',
-  type: 'article',
-})
+export async function generateMetadata(): Promise<Metadata> {
+  const { isEN, siteUrl } = await getDomainSEO()
+  return buildMetadata({
+    title: isEN ? 'Umrah 2026 — Complete Guide, Packages & Preparation' : 'Omra 2026 — Guide Complet, Forfaits & Préparation',
+    description: isEN
+      ? 'Everything to prepare your Umrah 2026: visa, packages, budget, rituals, best agencies and practical tips for a successful pilgrimage.'
+      : "Tout ce qu'il faut savoir pour préparer votre Omra 2026 : visa, forfaits, budget, rituels, meilleures agences en France et conseils pratiques pour un pèlerinage réussi.",
+    type: 'article',
+    canonical: `${siteUrl}${isEN ? '/umrah' : '/omra'}`,
+    languages: {
+      fr: 'https://www.voyageshalal.fr/omra',
+      en: 'https://www.gohalaltravel.com/umrah',
+      'x-default': 'https://www.gohalaltravel.com/umrah',
+    },
+  })
+}
 
 const FAQS = [
   {

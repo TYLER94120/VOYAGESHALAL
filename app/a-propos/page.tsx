@@ -5,7 +5,7 @@ import { buildOrganizationSchema } from '@/lib/seo'
 
 export async function generateMetadata(): Promise<Metadata> {
   const { isEN, brand, siteUrl } = await getDomainSEO()
-  const url = `${siteUrl}/a-propos`
+  const url = `${siteUrl}${isEN ? '/about' : '/a-propos'}`
   return {
     title: isEN ? `About ${brand} & our Halal Trust Score™` : `À propos de ${brand} & notre Halal Trust Score™`,
     description: isEN
@@ -15,8 +15,8 @@ export async function generateMetadata(): Promise<Metadata> {
       canonical: url,
       languages: {
         fr: 'https://www.voyageshalal.fr/a-propos',
-        en: 'https://www.gohalaltravel.com/a-propos',
-        'x-default': 'https://www.gohalaltravel.com/a-propos',
+        en: 'https://www.gohalaltravel.com/about',
+        'x-default': 'https://www.gohalaltravel.com/about',
       },
     },
     robots: { index: true, follow: true },
