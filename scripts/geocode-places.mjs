@@ -11,9 +11,25 @@
  *   node scripts/geocode-places.mjs
  */
 import { readFileSync, writeFileSync, readdirSync } from 'fs'
+import { execSync } from 'child_process'
 import path from 'path'
 
 const VDIR = path.join(process.cwd(), 'data', 'villes')
+const COMMIT_EVERY = 20 // commit+push périodique → reprenable, jamais de perte si timeout
+
+function flush(label) {
+  try {
+    execSync('git add data/villes', { stdio: 'ignore' })
+    const changed = execSync('git status --porcelain data/villes').toString().trim()
+    if (!changed) return
+    execSync('git config user.name "github-actions[bot]"', { stdio: 'ignore' })
+    execSync('git config user.email "github-actions[bot]@users.noreply.github.com"', { stdio: 'ignore' })
+    execSync(`git commit -m "data(geo): géocodage incrémental (${label})"`, { stdio: 'ignore' })
+    execSync('git pull --rebase origin main', { stdio: 'ignore' })
+    execSync('git push', { stdio: 'ignore' })
+    console.log(`  ↑ commit poussé (${label})`)
+  } catch (e) { console.log('  (commit ignoré:', String(e).slice(0, 80), ')') }
+}
 const UA = 'VoyagesHalal/1.0 (https://www.voyageshalal.fr; contact@voyageshalal.fr)'
 const KEYS = ['restaurants', 'mosqueesPrincipales', 'activites']
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -80,8 +96,12 @@ async function main() {
       citiesTouched++
       writeFileSync(fp, JSON.stringify(v, null, 2))
       console.log(`✓ ${v.nom}: mise à jour (${placesFixed} placés cumulés)`)
+      // Commit périodique → si le job est tué (timeout), rien n'est perdu et
+      // un nouveau run reprend là où on s'est arrêté (script idempotent).
+      if (citiesTouched % COMMIT_EVERY === 0) flush(`${placesFixed} lieux`)
     }
   }
+  flush(`final · ${placesFixed} lieux`)
   console.log(`\nTerminé. Requêtes: ${req} · Lieux géocodés: ${placesFixed} · Non trouvés: ${placesMiss} · Villes modifiées: ${citiesTouched}`)
 }
 
