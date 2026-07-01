@@ -23,6 +23,7 @@ function getFooterLinks(en: boolean) {
       { href: '/guides/ramadan-voyage-guide', label: en ? 'Travel during Ramadan' : 'Voyager en Ramadan' },
     ],
     [en ? 'Legal' : 'Légal']: [
+      { href: '/a-propos', label: en ? 'About & Trust Score' : 'À propos & Trust Score' },
       { href: '/mentions-legales', label: en ? 'Legal notice' : 'Mentions légales' },
       { href: '/confidentialite', label: en ? 'Privacy' : 'Confidentialité' },
       { href: '/contact', label: 'Contact' },

@@ -28,6 +28,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${SITE_URL}/qibla`, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/mosquee-proche`, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/autour-de-moi`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${SITE_URL}/a-propos`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${SITE_URL}/contact`, changeFrequency: 'yearly', priority: 0.4 },
     { url: `${SITE_URL}/confidentialite`, changeFrequency: 'yearly', priority: 0.3 },
   ]
