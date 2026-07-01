@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import { PrayerTimesWidget } from '@/components/PrayerTimesWidget'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 interface VilleOption {
   nom: string
@@ -26,11 +27,13 @@ const VILLES: VilleOption[] = [
 
 export function JeVoyageMaintenant() {
   const [selected, setSelected] = useState<VilleOption | null>(null)
+  const { lang } = useLanguage()
+  const en = lang === 'en'
 
   return (
     <section className="voyage-maintenant-section">
-      <h2>🌍 Vous êtes en voyage maintenant ?</h2>
-      <p>Sélectionnez votre ville pour obtenir les horaires de prière en temps réel</p>
+      <h2>🌍 {en ? 'Traveling right now?' : 'Vous êtes en voyage maintenant ?'}</h2>
+      <p>{en ? 'Pick your city to get real-time prayer times' : 'Sélectionnez votre ville pour obtenir les horaires de prière en temps réel'}</p>
 
       {!selected ? (
         <div className="ville-grid">
@@ -44,7 +47,7 @@ export function JeVoyageMaintenant() {
         <div>
           <PrayerTimesWidget ville={selected.apiName} pays={selected.pays} countryCode={selected.code} />
           <button onClick={() => setSelected(null)} className="btn-change-ville">
-            ← Changer de ville
+            ← {en ? 'Change city' : 'Changer de ville'}
           </button>
         </div>
       )}

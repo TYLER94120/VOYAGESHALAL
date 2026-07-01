@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useLocation } from '@/components/location/LocationProvider'
 import LanguageSwitcher from '@/components/i18n/LanguageSwitcher'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 const KEYS = ['Fajr', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const
 const LABELS: Record<string, string> = { Fajr: 'Fajr', Dhuhr: 'Dhuhr', Asr: 'ʿAsr', Maghrib: 'Maghrib', Isha: 'ʿIshâ' }
@@ -11,6 +12,8 @@ const LABELS: Record<string, string> = { Fajr: 'Fajr', Dhuhr: 'Dhuhr', Asr: 'ʿA
 // (+ accès langue sur mobile, où le header est masqué).
 export default function PrayerCountdownBar() {
   const { city } = useLocation()
+  const { lang } = useLanguage()
+  const en = lang === 'en'
   const [timings, setTimings] = useState<Record<string, string> | null>(null)
   const [now, setNow] = useState(Date.now())
 
@@ -41,9 +44,9 @@ export default function PrayerCountdownBar() {
 
   let inner: React.ReactNode
   if (!city) {
-    inner = <Link href="/horaires-priere" className="prayer-bar-main">🕌 <span style={{ opacity: 0.85 }}>Choisissez votre ville pour les horaires</span></Link>
+    inner = <Link href="/horaires-priere" className="prayer-bar-main">🕌 <span style={{ opacity: 0.85 }}>{en ? 'Choose your city for prayer times' : 'Choisissez votre ville pour les horaires'}</span></Link>
   } else if (!timings) {
-    inner = <span className="prayer-bar-main">🕌 <span style={{ opacity: 0.7 }}>Chargement des horaires…</span></span>
+    inner = <span className="prayer-bar-main">🕌 <span style={{ opacity: 0.7 }}>{en ? 'Loading prayer times…' : 'Chargement des horaires…'}</span></span>
   } else {
     const d = new Date(now)
     let nextKey = 'Fajr'
@@ -67,7 +70,7 @@ export default function PrayerCountdownBar() {
       <Link href="/horaires-priere" className="prayer-bar-main">
         <span>🕌 <strong style={{ color: 'var(--or)' }}>{LABELS[nextKey]}</strong> {timings[nextKey]}</span>
         <span style={{ opacity: 0.6 }}>·</span>
-        <span>dans <strong>{remaining}</strong></span>
+        <span>{en ? 'in' : 'dans'} <strong>{remaining}</strong></span>
         <span style={{ opacity: 0.55, fontSize: 11 }}>📍 {city.nom}</span>
       </Link>
     )

@@ -3,12 +3,15 @@ import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import SearchBarHome from '@/components/search/SearchBarHome'
 import { useLocation } from '@/components/location/LocationProvider'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 // Actions du hero d'accueil : « Localise-moi » (→ ville la plus proche) + recherche.
 // La recherche manuelle est TOUJOURS visible dessous : si la géoloc échoue, l'utilisateur
 // n'est jamais bloqué.
 export default function HomeHeroActions() {
   const { geoError } = useLocation()
+  const { lang } = useLanguage()
+  const en = lang === 'en'
   const router = useRouter()
   const [loading] = useState(false)
   const [countdown, setCountdown] = useState(8)
@@ -43,12 +46,12 @@ export default function HomeHeroActions() {
         {loading ? (
           <>
             <span style={{ display: 'inline-block', animation: 'spin 1s linear infinite' }}>⏳</span>
-            Localisation… ({countdown}s)
+            {en ? 'Locating' : 'Localisation'}… ({countdown}s)
           </>
         ) : (
           <>
             <span style={{ fontSize: 24 }}>📍</span>
-            Localise-moi
+            {en ? 'Locate me' : 'Localise-moi'}
           </>
         )}
       </button>
