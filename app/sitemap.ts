@@ -1,62 +1,74 @@
 import type { MetadataRoute } from 'next'
-import { readdirSync } from 'fs'
-import path from 'path'
 import { guides, blogPosts } from '@/lib/data'
-import { getDomainSEO } from '@/lib/domain'
+import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { localizedHref } from '@/lib/slugs'
+import cityCoords from '@/lib/cityCoords.json'
 
-function getVilleSlugs(): string[] {
-  try {
-    return readdirSync(path.join(process.cwd(), 'data', 'villes'))
-      .filter((f) => f.endsWith('.json'))
-      .map((f) => f.replace('.json', ''))
-  } catch {
-    return []
-  }
+// Liste des 354 villes depuis un import STATIQUE (bundlé au build) plutôt que via
+// readdirSync au runtime : sur Vercel le tracing de fichiers dynamiques est peu
+// fiable et tronquait le sitemap. Même source que la page /destinations.
+const CITY_SLUGS = (cityCoords as { slug: string }[]).map((c) => c.slug)
+
+// Slug de destination identique sur les deux domaines → alternate hreflang direct
+function cityAlternates(slug: string) {
+  return { languages: { fr: `${FR_URL}/destinations/${slug}`, en: `${EN_URL}/destinations/${slug}` } }
+}
+// Pages « chrome » présentes sur les deux domaines (avec slug localisé côté EN)
+function pageAlternates(frPath: string) {
+  return { languages: { fr: `${FR_URL}${frPath}`, en: `${EN_URL}${localizedHref(frPath, true)}` } }
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  // Chaque domaine génère son propre sitemap avec ses URLs
+  // Chaque domaine génère son propre sitemap avec ses URLs (slugs EN sur le .com)
   const { siteUrl: SITE_URL, isEN } = await getDomainSEO()
-  // Sur le domaine EN, les routes au libellé FR sont listées avec leur slug anglais
   const L = (p: string) => `${SITE_URL}${localizedHref(p, isEN)}`
+  const now = new Date()
+
   const staticPages: MetadataRoute.Sitemap = [
-    { url: SITE_URL, changeFrequency: 'weekly', priority: 1 },
-    { url: `${SITE_URL}/destinations`, changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${SITE_URL}/guides`, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${SITE_URL}/blog`, changeFrequency: 'daily', priority: 0.8 },
-    { url: L('/application'), changeFrequency: 'monthly', priority: 0.7 },
-    { url: L('/omra'), changeFrequency: 'monthly', priority: 0.7 },
-    { url: L('/horaires-priere'), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${SITE_URL}/qibla`, changeFrequency: 'monthly', priority: 0.9 },
-    { url: L('/mosquee-proche'), changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${SITE_URL}/autour-de-moi`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: L('/a-propos'), changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${SITE_URL}/contact`, changeFrequency: 'yearly', priority: 0.4 },
-    { url: L('/confidentialite'), changeFrequency: 'yearly', priority: 0.3 },
+    { url: SITE_URL, lastModified: now, changeFrequency: 'weekly', priority: 1, alternates: { languages: { fr: FR_URL, en: EN_URL } } },
+    { url: `${SITE_URL}/destinations`, lastModified: now, changeFrequency: 'weekly', priority: 0.9, alternates: { languages: { fr: `${FR_URL}/destinations`, en: `${EN_URL}/destinations` } } },
+    { url: `${SITE_URL}/guides`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/blog`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: L('/application'), lastModified: now, changeFrequency: 'monthly', priority: 0.7, alternates: pageAlternates('/application') },
+    { url: L('/omra'), lastModified: now, changeFrequency: 'monthly', priority: 0.7, alternates: pageAlternates('/omra') },
+    { url: L('/horaires-priere'), lastModified: now, changeFrequency: 'daily', priority: 0.9, alternates: pageAlternates('/horaires-priere') },
+    { url: `${SITE_URL}/qibla`, lastModified: now, changeFrequency: 'monthly', priority: 0.9, alternates: pageAlternates('/qibla') },
+    { url: L('/mosquee-proche'), lastModified: now, changeFrequency: 'monthly', priority: 0.9, alternates: pageAlternates('/mosquee-proche') },
+    { url: `${SITE_URL}/autour-de-moi`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: L('/a-propos'), lastModified: now, changeFrequency: 'monthly', priority: 0.6, alternates: pageAlternates('/a-propos') },
+    { url: `${SITE_URL}/contact`, lastModified: now, changeFrequency: 'yearly', priority: 0.4 },
+    { url: L('/confidentialite'), lastModified: now, changeFrequency: 'yearly', priority: 0.3, alternates: pageAlternates('/confidentialite') },
+    { url: L('/mentions-legales'), lastModified: now, changeFrequency: 'yearly', priority: 0.3, alternates: pageAlternates('/mentions-legales') },
   ]
 
-  // All city pages now live under /destinations/[slug], sourced from data/villes
-  const villePages: MetadataRoute.Sitemap = getVilleSlugs().map((slug) => ({
+  // Les 354 fiches villes (même slug sur les deux domaines) + hreflang FR↔EN
+  const villePages: MetadataRoute.Sitemap = CITY_SLUGS.map((slug) => ({
     url: `${SITE_URL}/destinations/${slug}`,
-    lastModified: new Date(),
+    lastModified: now,
     changeFrequency: 'weekly',
     priority: 0.8,
+    alternates: cityAlternates(slug),
   }))
 
-  const guidePages: MetadataRoute.Sitemap = guides.map((g) => ({
-    url: `${SITE_URL}/guides/${g.slug}`,
-    changeFrequency: 'monthly',
-    priority: 0.7,
-    lastModified: new Date(g.publishedAt),
-  }))
+  // Guides : uniquement en français (pas de version EN dédiée) → seul le domaine FR les liste
+  const guidePages: MetadataRoute.Sitemap = isEN
+    ? []
+    : guides.map((g) => ({
+        url: `${SITE_URL}/guides/${g.slug}`,
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+        lastModified: new Date(g.publishedAt),
+      }))
 
-  const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => ({
-    url: `${SITE_URL}/blog/${p.slug}`,
-    changeFrequency: 'monthly',
-    priority: 0.7,
-    lastModified: new Date(p.publishedAt),
-  }))
+  // Blog : chaque domaine ne liste que les articles rédigés dans sa langue
+  const blogPages: MetadataRoute.Sitemap = blogPosts
+    .filter((p) => (p.lang ?? 'fr') === (isEN ? 'en' : 'fr'))
+    .map((p) => ({
+      url: `${SITE_URL}/blog/${p.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+      lastModified: new Date(p.publishedAt),
+    }))
 
   return [...staticPages, ...villePages, ...guidePages, ...blogPages]
 }
