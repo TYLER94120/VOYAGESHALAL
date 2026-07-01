@@ -1,0 +1,32 @@
+name: Géocoder les lieux (restaurants, mosquées, activités)
+
+# Ajoute lat/lng aux lieux curés sans coordonnées (via Nominatim), pour qu'ils
+# apparaissent sur la carte « Autour de moi ». Priorité à l'adresse, garde-fou 60 km.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  geocode:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Géocodage Nominatim
+        run: node scripts/geocode-places.mjs
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/villes
+          if git diff --cached --quiet; then
+            echo "Aucun changement."
+          else
+            git commit -m "data(geo): géocodage des restaurants/mosquées/activités (Nominatim)"
+            git push
+          fi
