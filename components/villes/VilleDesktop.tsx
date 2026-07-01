@@ -8,6 +8,8 @@ import EbookButton from '@/components/villes/EbookButton'
 import LiveSpots from '@/components/villes/LiveSpots'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
 import HotelCTA from '@/components/affiliate/HotelCTA'
+import HotelFilter from '@/components/villes/HotelFilter'
+import { coordsOf, type LatLng } from '@/lib/hotelFilter'
 
 const TABS = [
   { id: 'mosquees', icon: '🕌', label: 'Mosquées' },
@@ -48,6 +50,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const activites = ville.activites ?? []
   const coords = ville.coordonnees ?? null
   const hasCoords = coords && typeof coords.lat === 'number' && typeof coords.lng === 'number'
+  // Coordonnées pour le score « bien situé » du filtre hôtels (mosquées + restos halal)
+  const mosquesLL: LatLng[] = mosquees.map((m: any) => coordsOf(m)).filter(Boolean) as LatLng[]
+  const restosLL: LatLng[] = restaurants.map((r: any) => coordsOf(r)).filter(Boolean) as LatLng[]
+  const centerLL: LatLng | null = hasCoords ? { lat: coords.lat, lng: coords.lng } : null
   const ip = ville.infoPratique ?? {}
   const legacyIp = ville.infos_pratiques ?? {}
   const descFr = typeof ville.description === 'string' ? ville.description : (ville.description?.court ?? ville.description?.long ?? '')
@@ -218,34 +224,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.6, margin: 0 }}>{en ? `Halal-friendly stays in ${ville.nom} are on the way.` : `Les hébergements halal-friendly de ${ville.nom} arrivent bientôt.`}</p>
           </div>
         ) : (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
-            {hotels.map((h: any, i: number) => (
-              <div key={i} style={card}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '6px' }}>
-                  <div><p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '19px', color: 'var(--texte)' }}>{h.nom}</p>
-                    <p style={{ fontSize: '12.5px', color: 'var(--texte-2)', marginTop: '2px' }}>{h.categorie} · {h.priceRange}</p></div>
-                  {(h.score ?? h.note) != null && <span style={{ fontSize: '16px', fontWeight: 700, color: 'var(--or)' }}>★ {h.score ?? h.note}</span>}
-                </div>
-                {h.description && <p style={{ fontSize: '13px', color: 'var(--texte-2)', lineHeight: 1.6, marginBottom: '12px' }}>{h.description}</p>}
-                <div style={{ display: 'flex', gap: '7px', flexWrap: 'wrap', marginBottom: '12px' }}>
-                  {(h.halalFriendly ?? h.halal_certifie) && <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 9px' }}>✓ Halal-friendly</span>}
-                  {(h.sansAlcool ?? h.sans_alcool) && <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 9px' }}>🚫 Sans alcool</span>}
-                </div>
-                <div style={{ display: 'flex', gap: '8px' }}>
-                  {/* Lien carte toujours dispo (hôtels OSM ont mapsUrl + lat/lng) */}
-                  {(h.mapsUrl || (h.lat != null && h.lng != null)) && (
-                    <a href={h.mapsUrl || `https://maps.google.com/?q=${h.lat},${h.lng}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, padding: '12px 0', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🗺 Carte</a>
-                  )}
-                  {/* Bouton réservation : Booking si lien réel, sinon site web officiel */}
-                  {h.bookingUrl && !/maps\.google\.com/.test(h.bookingUrl) && (
-                    <a href={h.bookingUrl} target="_blank" rel="noopener noreferrer" style={{ flex: 1, padding: '12px 0', background: 'var(--booking)', color: '#fff', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>{/booking\.com/.test(h.bookingUrl) ? '📖 Booking' : '🌐 Réserver'}</a>
-                  )}
-                  {h.halalBookingUrl && <a href={h.halalBookingUrl} target="_blank" rel="noopener noreferrer" style={{ flex: 1, padding: '12px 0', background: 'var(--foret)', color: 'var(--creme)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🕌 HalalBooking</a>}
-                </div>
-                <SourceLine item={h} />
-              </div>
-            ))}
-          </div>
+          <HotelFilter hotels={hotels} mosques={mosquesLL} restos={restosLL} center={centerLL} en={en} />
         ))}
 
         {displayTab === 'mosquees' && mosquees.length === 0 && hasCoords && (
