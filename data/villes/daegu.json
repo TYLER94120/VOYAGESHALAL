@@ -32,7 +32,26 @@
     "halal",
     "asie"
   ],
-  "restaurants": [],
+  "restaurants": [
+    {
+      "nom": "인도방랑기",
+      "lat": 35.8926067,
+      "lng": 128.6090705,
+      "type": "indian",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=35.8926067,128.6090705",
+      "source": "osm"
+    },
+    {
+      "nom": "딜리셔스팩토리 커리&일본식라멘",
+      "lat": 35.86749,
+      "lng": 128.7076809,
+      "type": "indian, japanese",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=35.86749,128.7076809",
+      "source": "osm"
+    }
+  ],
   "hotels": [
     {
       "nom": "Rivertain Hotel Daegu",
@@ -1859,5 +1878,6 @@
   "osmEnrichedAt": "2026-06-30",
   "description_en": "Daegu may not be a Muslim-majority destination, but it welcomes Muslim travelers with real halal options. You'll find a selection of halal restaurants and several mosques nearby, plus real-time prayer times and the Qibla direction — everything to explore Daegu, South Korea, with peace of mind.",
   "metaDescription_en": "Halal guide to Daegu: halal restaurants, prayer times and tips for Muslim travelers. Halal Trust Score 3.2/5.",
-  "nom_en": "Daegu"
+  "nom_en": "Daegu",
+  "boucheries": []
 }
