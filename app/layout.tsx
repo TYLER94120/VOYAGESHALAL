@@ -35,9 +35,6 @@ export async function generateMetadata(): Promise<Metadata> {
           template: '%s | VoyagesHalal.fr',
         },
     description: isEN ? EN_DEFAULT_DESCRIPTION : DEFAULT_DESCRIPTION,
-    keywords: isEN
-      ? ['halal travel', 'halal restaurants', 'muslim travel guide', 'halal food', 'prayer times', 'mosque finder', 'muslim friendly hotels', 'halal destinations 2026']
-      : ['voyage halal', 'tourisme halal', 'destinations halal', 'restaurant halal', 'hébergement halal', 'guide voyage musulman'],
     authors: [{ name: brand }],
     creator: brand,
     openGraph: {

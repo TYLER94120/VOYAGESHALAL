@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { destinations } from '@/lib/data'
 
-export const metadata: Metadata = { title: 'Recherche — Voyages Halal', robots: { index: false } }
+export const metadata: Metadata = { title: 'Recherche', robots: { index: false } }
 
 type Filter = 'all' | 'restaurants' | 'mosques'
 

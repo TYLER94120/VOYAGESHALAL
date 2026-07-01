@@ -3,7 +3,7 @@ import HorairesClient from './HorairesClient'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 
 export const metadata: Metadata = {
-  title: "Heures de prière aujourd'hui — Toutes les villes du monde | VoyagesHalal.fr",
+  title: "Heures de prière aujourd'hui — Toutes les villes du monde",
   description:
     "Horaires de prière en temps réel (Fajr, Dhuhr, Asr, Maghrib, Isha) pour les principales destinations halal du monde. Données certifiées Aladhan, mises à jour quotidiennement.",
 }

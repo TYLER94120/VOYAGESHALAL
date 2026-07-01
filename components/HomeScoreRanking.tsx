@@ -1,15 +1,35 @@
 import Link from 'next/link'
+import { readFileSync } from 'fs'
+import path from 'path'
 
-const TOP_DESTINATIONS = [
-  { slug: 'medine', nom: 'Médine', emoji: '🕌', score: 10.0, badge: 'VILLE SAINTE' },
-  { slug: 'kuala-lumpur', nom: 'Kuala Lumpur', emoji: '🇲🇾', score: 9.8, badge: 'MEILLEURE MONDIALE' },
-  { slug: 'istanbul', nom: 'Istanbul', emoji: '🕌', score: 9.5, badge: 'EXCELLENCE' },
-  { slug: 'dubai', nom: 'Dubaï', emoji: '🇦🇪', score: 9.3, badge: 'TOP LUXE' },
-  { slug: 'marrakech', nom: 'Marrakech', emoji: '🇲🇦', score: 9.1, badge: 'COUP DE CŒUR' },
-  { slug: 'doha', nom: 'Doha', emoji: '🇶🇦', score: 9.0, badge: 'MODERNE' },
+// Destinations mises en avant (emoji + badge éditoriaux). Le SCORE, lui, provient
+// TOUJOURS de la source unique de vérité : le champ `score_halal` (échelle 0-5) du
+// JSON de la ville, affiché en /10 (×2). Aucune valeur codée en dur → plus aucune
+// contradiction entre l'accueil, /destinations et la page de la ville.
+const CURATED = [
+  { slug: 'medine', nom: 'Médine', emoji: '🕌', badge: 'VILLE SAINTE' },
+  { slug: 'kuala-lumpur', nom: 'Kuala Lumpur', emoji: '🇲🇾', badge: 'MEILLEURE MONDIALE' },
+  { slug: 'istanbul', nom: 'Istanbul', emoji: '🕌', badge: 'EXCELLENCE' },
+  { slug: 'dubai', nom: 'Dubaï', emoji: '🇦🇪', badge: 'TOP LUXE' },
+  { slug: 'marrakech', nom: 'Marrakech', emoji: '🇲🇦', badge: 'COUP DE CŒUR' },
+  { slug: 'doha', nom: 'Doha', emoji: '🇶🇦', badge: 'MODERNE' },
 ]
 
+function scoreOf(slug: string): number {
+  try {
+    const d = JSON.parse(readFileSync(path.join(process.cwd(), 'data', 'villes', `${slug}.json`), 'utf-8'))
+    const s = d.score_halal
+    return typeof s === 'number' ? Math.round(s * 2 * 10) / 10 : 0
+  } catch {
+    return 0
+  }
+}
+
 export function HomeScoreRanking() {
+  const TOP_DESTINATIONS = CURATED
+    .map((d) => ({ ...d, score: scoreOf(d.slug) }))
+    .sort((a, b) => b.score - a.score)
+
   return (
     <section className="score-ranking-section">
       <div className="score-ranking-inner">

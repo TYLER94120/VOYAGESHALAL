@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Contact — Voyages Halal',
+  title: 'Contact',
   description: 'Contactez l\'équipe Voyages Halal : questions, partenariats, signaler un restaurant ou une mosquée.',
 }
 

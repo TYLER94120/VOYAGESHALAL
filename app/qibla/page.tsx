@@ -3,7 +3,7 @@ import IslamicPattern from '@/components/ui/IslamicPattern'
 import QiblaCompass from '@/components/qibla/QiblaCompass'
 
 export const metadata: Metadata = {
-  title: 'Calculateur Qibla — Compas temps réel vers La Mecque | VoyagesHalal.fr',
+  title: 'Calculateur Qibla — Compas temps réel vers La Mecque',
   description:
     "Boussole Qibla en temps réel : l'aiguille pointe vers La Mecque grâce au capteur de votre téléphone (GPS + compas). Gratuit, précis, depuis n'importe où dans le monde.",
 }
