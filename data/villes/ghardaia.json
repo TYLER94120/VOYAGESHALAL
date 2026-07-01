@@ -32,7 +32,17 @@
     "halal",
     "afrique"
   ],
-  "restaurants": [],
+  "restaurants": [
+    {
+      "nom": "Djurdjura",
+      "lat": 32.4863682,
+      "lng": 3.6975093,
+      "type": "arab",
+      "halalConfidence": "likely",
+      "mapsUrl": "https://maps.google.com/?q=32.4863682,3.6975093",
+      "source": "osm"
+    }
+  ],
   "hotels": [
     {
       "nom": "فندق بلعجال",
@@ -194,5 +204,6 @@
   "donneesAVenir": true,
   "description_en": "Ghardaïa, in Algeria, is a halal-friendly destination with a Halal Trust Score of 4.2/5. Muslim travelers will find a selection of halal restaurants, several mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
   "metaDescription_en": "Halal guide to Ghardaïa: halal restaurants, prayer times and tips for Muslim travelers. Halal Trust Score 4.2/5.",
-  "nom_en": "Ghardaïa"
+  "nom_en": "Ghardaïa",
+  "boucheries": []
 }
