@@ -28,5 +28,7 @@ jobs:
             echo "Aucun changement."
           else
             git commit -m "data(geo): géocodage des restaurants/mosquées/activités (Nominatim)"
+            # Rebase sur d'éventuels commits arrivés pendant le job (~50 min) avant de pousser
+            git pull --rebase origin main
             git push
           fi
