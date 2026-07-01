@@ -685,17 +685,15 @@
   ],
   "mosqueesPrincipales": [
     {
-      "id": "m1",
-      "nom": "Grande Mosquée de El Jadida",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, El Jadida",
-      "description": "Mosquée principale de la ville, prière du vendredi.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20El%20Jadida%20El%20Jadida%20Maroc",
-      "lat": 33.2482831,
-      "lng": -8.4984575,
-      "geocoded": true
+      "nom": "Mosquée Fqih Ettaleb El Aouni",
+      "lat": 33.2467937,
+      "lng": -8.5004327,
+      "coordonnees": {
+        "lat": 33.2467937,
+        "lng": -8.5004327
+      },
+      "mapsUrl": "https://maps.google.com/?q=33.2467937,-8.5004327",
+      "source": "osm"
     }
   ],
   "activites": [
