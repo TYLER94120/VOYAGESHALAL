@@ -1,4 +1,5 @@
 import type { Ville } from '@/lib/villeTypes'
+import { buildVilleFaq } from '@/lib/villeFaq'
 
 function descText(ville: Ville): string {
   if (typeof ville.description === 'string') return ville.description
@@ -81,45 +82,14 @@ export function DestinationFaqSchema({ ville, en = false }: { ville: Ville; en?:
     ],
   }))
 
-  const mosqueeCount = ville.statistiques?.mosquees
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: en
-      ? [
-          {
-            '@type': 'Question',
-            name: `Is the food halal in ${ville.nom}?`,
-            acceptedAnswer: { '@type': 'Answer', text: `${ville.nom} has a halal score of ${ville.score_halal}/5. ${descText(ville).slice(0, 200)}` },
-          },
-          {
-            '@type': 'Question',
-            name: `Where can I find a mosque in ${ville.nom}?`,
-            acceptedAnswer: { '@type': 'Answer', text: `${ville.nom} has ${mosqueeCount ? mosqueeCount.toLocaleString('en-US') : 'several'} mosques. Our guide lists the main ones with addresses and prayer times.` },
-          },
-          {
-            '@type': 'Question',
-            name: `What are the prayer times in ${ville.nom}?`,
-            acceptedAnswer: { '@type': 'Answer', text: `Prayer times in ${ville.nom} vary with the season. Check our real-time widget on this page for Fajr, Dhuhr, Asr, Maghrib and Isha.` },
-          },
-        ]
-      : [
-          {
-            '@type': 'Question',
-            name: `La nourriture est-elle halal à ${ville.nom} ?`,
-            acceptedAnswer: { '@type': 'Answer', text: `${ville.nom} est une destination avec un score halal de ${ville.score_halal}/5. ${descText(ville).slice(0, 200)}` },
-          },
-          {
-            '@type': 'Question',
-            name: `Où trouver une mosquée à ${ville.nom} ?`,
-            acceptedAnswer: { '@type': 'Answer', text: `${ville.nom} compte ${mosqueeCount ? mosqueeCount.toLocaleString('fr-FR') : 'plusieurs'} mosquées. Notre guide liste les principales avec leurs adresses et horaires.` },
-          },
-          {
-            '@type': 'Question',
-            name: `Quelles sont les heures de prière à ${ville.nom} ?`,
-            acceptedAnswer: { '@type': 'Answer', text: `Les horaires de prière à ${ville.nom} varient selon la saison. Consultez notre widget d'horaires en temps réel sur cette page pour Fajr, Dhuhr, Asr, Maghrib et Isha.` },
-          },
-        ],
+    mainEntity: buildVilleFaq(ville, en).map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
   }
 
   return (

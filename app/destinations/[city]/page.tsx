@@ -4,6 +4,7 @@ import { readdirSync, readFileSync } from 'fs'
 import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
 import VilleDesktop from '@/components/villes/VilleDesktop'
+import VilleFaq from '@/components/villes/VilleFaq'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
 import cityCoords from '@/lib/cityCoords.json'
@@ -110,6 +111,9 @@ export default async function DestinationPage({ params }: Props) {
 
       {/* Design unifié responsive (mobile + desktop : 1 colonne épurée) */}
       <VilleDesktop ville={ville} />
+
+      {/* FAQ visible (même source que le JSON-LD FAQPage) */}
+      <VilleFaq ville={ville} en={isEN} />
 
       {/* Maillage interne — autres destinations halal */}
       <nav aria-label="Autres destinations halal" style={{ background: 'var(--creme)', borderTop: '1px solid rgba(11,26,15,0.06)', padding: '28px 18px 80px' }}>
