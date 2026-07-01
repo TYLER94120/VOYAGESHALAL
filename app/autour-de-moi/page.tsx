@@ -7,7 +7,18 @@ import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from 
 import SearchBarHome from '@/components/search/SearchBarHome'
 
 type Cat = 'mosquees' | 'restaurants' | 'hotels' | 'boucheries'
-interface Spot { id: number; lat: number; lng: number; name: string; sub?: string; dist: number; halal?: 'only' | 'yes' | 'likely' }
+interface Spot { id: number | string; lat: number; lng: number; name: string; sub?: string; dist: number; halal?: 'only' | 'yes' | 'likely' }
+
+// Fusionne les points pré-chargés (instantanés) et les points live OSM en
+// dédoublonnant par nom + proximité (< 80 m) : on garde ainsi le meilleur des deux.
+function mergeSpots(base: Spot[], extra: Spot[]): Spot[] {
+  const out = [...base]
+  for (const e of extra) {
+    const dup = out.some((b) => b.name.toLowerCase() === e.name.toLowerCase() || haversine(b.lat, b.lng, e.lat, e.lng) < 80)
+    if (!dup) out.push(e)
+  }
+  return out.sort((a, b) => a.dist - b.dist).slice(0, 40)
+}
 
 // Valeurs alignées sur l'application native (Claude-app)
 const ME_RADIUS_M = 6000
@@ -84,10 +95,12 @@ export default function AutourDeMoiPage() {
   const [spots, setSpots] = useState<Spot[]>([])
   const [loading, setLoading] = useState(true)
   const [geoErr, setGeoErr] = useState<GeoError | null>(null)
-  const [selected, setSelected] = useState<number | null>(null)
+  const [selected, setSelected] = useState<number | string | null>(null)
   const mapRef = useRef<LeafletMap | null>(null)
   const mapEl = useRef<HTMLDivElement>(null)
-  const markersRef = useRef<{ id: number; marker: Marker }[]>([])
+  const markersRef = useRef<{ id: number | string; marker: Marker }[]>([])
+  // Points pré-chargés (nos 354 villes) par catégorie — affichés instantanément
+  const preRef = useRef<Partial<Record<Cat, Spot[]>>>({})
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const LRef = useRef<any>(null)
 
@@ -123,7 +136,7 @@ export default function AutourDeMoiPage() {
     L.marker([lat, lng], { icon: me, zIndexOffset: 1000 }).addTo(mapRef.current)
   }, [])
 
-  const paint = useCallback((selId: number | null) => {
+  const paint = useCallback((selId: number | string | null) => {
     const L = LRef.current; if (!L) return
     const conf = CATS.find((x) => x.id === cat)!
     markersRef.current.forEach(({ id, marker }) => marker.setIcon(pinIcon(L, conf.color, conf.icon, id === selId)))
@@ -135,12 +148,24 @@ export default function AutourDeMoiPage() {
     if (scroll) window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [paint])
 
-  const search = useCallback(async (lat: number, lng: number, c: Cat) => {
-    setLoading(true); setSelected(null)
-    const els = await overpass(buildQuery(c, lat, lng, ME_RADIUS_M))
+  // Dessine la liste de points sur la carte (remplace les marqueurs existants)
+  const render = useCallback((list: Spot[], c: Cat) => {
+    setSpots(list)
+    const L = LRef.current
+    if (!L || !mapRef.current) return
     const conf = CATS.find((x) => x.id === c)!
+    markersRef.current.forEach(({ marker }) => marker.remove()); markersRef.current = []
+    list.forEach((s) => {
+      const mk = L.marker([s.lat, s.lng], { icon: pinIcon(L, conf.color, conf.icon, false) }).addTo(mapRef.current)
+      mk.on('click', () => select(s))
+      markersRef.current.push({ id: s.id, marker: mk })
+    })
+  }, [select])
+
+  // Transforme la réponse Overpass en points
+  const parseOverpass = (els: unknown[], lat: number, lng: number, c: Cat): Spot[] =>
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const list: Spot[] = (els || []).map((el: any) => {
+    (els || []).map((el: any) => {
       const elat = el.lat ?? el.center?.lat, elng = el.lon ?? el.center?.lng ?? el.center?.lon
       const name = el.tags?.name || el.tags?.['name:fr'] || el.tags?.['name:en']
       if (!elat || !elng || !name) return null
@@ -150,24 +175,36 @@ export default function AutourDeMoiPage() {
         : c === 'hotels' ? (t.stars ? `${t.stars}★` : 'Hôtel')
         : c === 'boucheries' ? 'Boucherie halal'
         : (t['addr:street'] || 'Lieu de prière')
-      return { id: el.id, lat: elat, lng: elng, name, sub, dist: haversine(lat, lng, elat, elng), halal }
-    }).filter(Boolean).sort((a: Spot, b: Spot) => a.dist - b.dist).slice(0, 40)
-    setSpots(list)
-    const L = LRef.current
-    if (L && mapRef.current) {
-      markersRef.current.forEach(({ marker }) => marker.remove()); markersRef.current = []
-      list.forEach((s) => {
-        const mk = L.marker([s.lat, s.lng], { icon: pinIcon(L, conf.color, conf.icon, false) }).addTo(mapRef.current)
-        mk.on('click', () => select(s))
-        markersRef.current.push({ id: s.id, marker: mk })
-      })
-    }
+      return { id: el.id, lat: elat, lng: elng, name, sub, dist: haversine(lat, lng, elat, elng), halal } as Spot
+    }).filter((s): s is Spot => s !== null).sort((a, b) => a.dist - b.dist).slice(0, 40)
+
+  const search = useCallback(async (lat: number, lng: number, c: Cat) => {
+    setSelected(null)
+    // 1) Affichage INSTANTANÉ depuis nos données pré-chargées (< 1 s)
+    const pre = preRef.current[c] || []
+    if (pre.length) { render(pre, c); setLoading(false) } else { setLoading(true) }
+    // 2) Complément LIVE OpenStreetMap en arrière-plan, fusionné aux pré-chargés
+    const els = await overpass(buildQuery(c, lat, lng, ME_RADIUS_M))
+    const live = els ? parseOverpass(els, lat, lng, c) : []
+    render(mergeSpots(pre, live), c)
     setLoading(false)
-  }, [select])
+  }, [render])
+
+  // Précharge nos points (API interne, ville la plus proche) dès qu'on a la position
+  const preload = useCallback(async (lat: number, lng: number) => {
+    try {
+      const res = await fetch(`/api/autour?lat=${lat}&lng=${lng}&r=${ME_RADIUS_M}`)
+      if (res.ok) { const j = await res.json(); preRef.current = j.spots || {} }
+    } catch { /* pas de pré-chargement → on tombe sur le live seul */ }
+  }, [])
 
   useEffect(() => {
     if (!pos) return
-    ;(async () => { await initMap(pos.lat, pos.lng); await search(pos.lat, pos.lng, cat) })()
+    ;(async () => {
+      await initMap(pos.lat, pos.lng)
+      await preload(pos.lat, pos.lng)  // remplit preRef avant la 1re recherche
+      await search(pos.lat, pos.lng, cat)
+    })()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pos])
 
@@ -176,7 +213,12 @@ export default function AutourDeMoiPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cat])
 
-  const searchHere = () => { const c = mapRef.current?.getCenter(); if (c) search(c.lat, c.lng, cat) }
+  const searchHere = async () => {
+    const c = mapRef.current?.getCenter(); if (!c) return
+    setLoading(true)
+    await preload(c.lat, c.lng)
+    await search(c.lat, c.lng, cat)
+  }
   const retry = async () => {
     setGeoErr(null); setLoading(true)
     try { const p = await getPosition(); setPos({ lat: p.lat, lng: p.lng }) } catch (code) { setGeoErr(describeGeoError(code as GeoErrorCode)); setLoading(false) }
