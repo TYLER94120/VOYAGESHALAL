@@ -34,7 +34,6 @@ const CATS: { id: Cat; label: string; icon: string; color: string }[] = [
 // restaurants/hôtels/activités ; OpenStreetMap live pour mosquées & boucheries.
 const NEARBY_TYPES = new Set<Cat>(['restaurants', 'hotels', 'activites'])
 const OSM_TYPES = new Set<Cat>(['mosquees', 'boucheries', 'restaurants'])
-const HALAL_CUISINE = 'kebab|turkish|lebanese|arab|syrian|persian|iranian|afghan|pakistani|bangladeshi|egyptian|moroccan|uyghur|halal|doner|shawarma|biryani|indian'
 
 function haversine(a: number, b: number, c: number, d: number) {
   const R = 6371000, p = Math.PI / 180
@@ -43,44 +42,6 @@ function haversine(a: number, b: number, c: number, d: number) {
 }
 const fmt = (m: number) => (m < 1000 ? `${Math.round(m)} m` : `${(m / 1000).toFixed(1)} km`)
 
-function buildQuery(cat: Cat, lat: number, lng: number, r: number) {
-  if (cat === 'mosquees')
-    return `[out:json][timeout:15];(node["amenity"="place_of_worship"]["religion"="muslim"](around:${r},${lat},${lng});way["amenity"="place_of_worship"]["religion"="muslim"](around:${r},${lat},${lng}););out center;`
-  if (cat === 'hotels')
-    return `[out:json][timeout:15];(node["tourism"~"hotel|guest_house|hostel"](around:${r},${lat},${lng});way["tourism"~"hotel|guest_house|hostel"](around:${r},${lat},${lng}););out center;`
-  if (cat === 'boucheries')
-    return `[out:json][timeout:15];(node["shop"="butcher"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});node["shop"="butcher"]["halal"~"yes|only"](around:${r},${lat},${lng});way["shop"="butcher"]["diet:halal"~"yes|only"](around:${r},${lat},${lng}););out center;`
-  return `[out:json][timeout:15];(node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});node["amenity"~"restaurant|fast_food"]["cuisine"~"${HALAL_CUISINE}",i](around:${r},${lat},${lng});way["amenity"~"restaurant|fast_food"]["cuisine"~"${HALAL_CUISINE}",i](around:${r},${lat},${lng}););out center;`
-}
-
-// Interroge TOUS les miroirs Overpass EN PARALLÈLE et garde le premier qui répond
-// (les serveurs Overpass sont souvent surchargés → une requête séquentielle peut
-// bloquer plusieurs minutes). Timeout client strict à 10 s pour rester réactif.
-async function overpass(query: string) {
-  const endpoints = [
-    'https://overpass.kumi.systems/api/interpreter',
-    'https://overpass-api.de/api/interpreter',
-    'https://overpass.private.coffee/api/interpreter',
-  ]
-  const ctrl = new AbortController()
-  const timer = setTimeout(() => ctrl.abort(), 13000)
-  const attempts = endpoints.map(async (url) => {
-    const res = await fetch(url, { method: 'POST', body: `data=${encodeURIComponent(query)}`, signal: ctrl.signal })
-    if (!res.ok) throw new Error(String(res.status))
-    const j = await res.json()
-    return j.elements || []
-  })
-  try {
-    // Promise.any → le PREMIER miroir qui réussit gagne
-    const els = await Promise.any(attempts)
-    return els
-  } catch {
-    return null
-  } finally {
-    clearTimeout(timer)
-    ctrl.abort() // annule les requêtes miroirs encore en vol
-  }
-}
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function pinIcon(L: any, color: string, icon: string, selected: boolean) {
@@ -167,31 +128,19 @@ export default function AutourDeMoiPage() {
     })
   }, [select])
 
-  // Transforme la réponse Overpass en points
-  const parseOverpass = (els: unknown[], lat: number, lng: number, c: Cat): Spot[] =>
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (els || []).map((el: any) => {
-      const elat = el.lat ?? el.center?.lat, elng = el.lon ?? el.center?.lng ?? el.center?.lon
-      const name = el.tags?.name || el.tags?.['name:fr'] || el.tags?.['name:en']
-      if (!elat || !elng || !name) return null
-      const t = el.tags || {}
-      const halal = c === 'restaurants' ? (t['diet:halal'] === 'only' ? 'only' : t['diet:halal'] === 'yes' ? 'yes' : 'likely') : undefined
-      const sub = c === 'restaurants' ? (t.cuisine ? String(t.cuisine).replace(/_/g, ' ').replace(/;/g, ', ') : 'Restaurant')
-        : c === 'hotels' ? (t.stars ? `${t.stars}★` : 'Hôtel')
-        : c === 'boucheries' ? 'Boucherie halal'
-        : (t['addr:street'] || 'Lieu de prière')
-      return { id: el.id, lat: elat, lng: elng, name, sub, dist: haversine(lat, lng, elat, elng), halal } as Spot
-    }).filter((s): s is Spot => s !== null).sort((a, b) => a.dist - b.dist).slice(0, 40)
-
   const search = useCallback(async (lat: number, lng: number, c: Cat) => {
     setSelected(null)
     // 1) Affichage INSTANTANÉ depuis nos données pré-chargées (/api/nearby, < 1 s)
     const pre = preRef.current[c] || []
     if (pre.length) { render(pre, c); setLoading(false) } else { setLoading(true) }
-    // 2) Complément LIVE OpenStreetMap (mosquées, boucheries, restaurants), fusionné
-    const live = OSM_TYPES.has(c)
-      ? ((els) => els ? parseOverpass(els, lat, lng, c) : [])(await overpass(buildQuery(c, lat, lng, ME_RADIUS_M)))
-      : []
+    // 2) Complément LIVE OpenStreetMap via NOTRE proxy serveur (fiable, sans CORS)
+    let live: Spot[] = []
+    if (OSM_TYPES.has(c)) {
+      try {
+        const res = await fetch(`/api/osm?lat=${lat}&lng=${lng}&kind=${c}&radius=${ME_RADIUS_M}`)
+        if (res.ok) { const j = await res.json(); live = (j.items || []) as Spot[] }
+      } catch { /* proxy indisponible → on garde les pré-chargés */ }
+    }
     const merged = mergeSpots(pre, live)
     render(merged, c)
     // Cadre la carte pour rendre les résultats visibles (utile quand les points
