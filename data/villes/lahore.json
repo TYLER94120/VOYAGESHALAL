@@ -1854,109 +1854,570 @@
   ],
   "mosqueesPrincipales": [
     {
-      "nom": "Mosquée Badshahi",
-      "description": "Mosquée impériale moghole de 1673, capacité 100000 fidèles",
-      "adresse": "Vieille ville",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Badshahi+Lahore",
-      "capacite": 8248,
-      "anneeConstruction": 1888,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
+      "nom": "عسکری 2",
+      "lat": 31.523096,
+      "lng": 74.363553,
       "coordonnees": {
-        "lat": 31.5204,
-        "lng": 74.3587
-      }
+        "lat": 31.523096,
+        "lng": 74.363553
+      },
+      "adresse": "لاہور",
+      "mapsUrl": "https://maps.google.com/?q=31.523096,74.363553",
+      "source": "osm"
     },
     {
-      "nom": "Mosquée Wazir Khan",
-      "description": "Joyau de 1634 aux faïences kashi",
-      "adresse": "Chowk Wazir Khan",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Wazir+Khan+Lahore",
-      "capacite": 6539,
-      "anneeConstruction": 1909,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
+      "nom": "Jamia Masjid Hanfiyah",
+      "lat": 31.5209845,
+      "lng": 74.3502686,
       "coordonnees": {
-        "lat": 31.5204,
-        "lng": 74.3587
-      }
+        "lat": 31.5209845,
+        "lng": 74.3502686
+      },
+      "adresse": "Zahoor Elahi Road, Lahore",
+      "mapsUrl": "https://maps.google.com/?q=31.5209845,74.3502686",
+      "source": "osm"
     },
     {
-      "nom": "Mosquée centrale de Lahore",
-      "description": "Mosquée fréquentée de Lahore, accueillant les fidèles pour les cinq prières quotidiennes.",
+      "nom": "رحمانیہ",
+      "lat": 31.528302,
+      "lng": 74.3570935,
+      "coordonnees": {
+        "lat": 31.528302,
+        "lng": 74.3570935
+      },
+      "adresse": "کالج روڈ, لاہور",
+      "mapsUrl": "https://maps.google.com/?q=31.528302,74.3570935",
+      "source": "osm"
+    },
+    {
+      "nom": "Ghalib Market",
+      "lat": 31.5125058,
+      "lng": 74.3550126,
+      "coordonnees": {
+        "lat": 31.5125058,
+        "lng": 74.3550126
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5125058,74.3550126",
+      "source": "osm"
+    },
+    {
+      "nom": "Qadriya Rizvia",
+      "lat": 31.509507,
+      "lng": 74.3572141,
+      "coordonnees": {
+        "lat": 31.509507,
+        "lng": 74.3572141
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.509507,74.3572141",
+      "source": "osm"
+    },
+    {
+      "nom": "Main Market Mosque",
+      "lat": 31.5240223,
+      "lng": 74.3450597,
+      "coordonnees": {
+        "lat": 31.5240223,
+        "lng": 74.3450597
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5240223,74.3450597",
+      "source": "osm"
+    },
+    {
+      "nom": "گلشن رسول",
+      "lat": 31.5327506,
+      "lng": 74.3600704,
+      "coordonnees": {
+        "lat": 31.5327506,
+        "lng": 74.3600704
+      },
+      "adresse": "لاہور",
+      "mapsUrl": "https://maps.google.com/?q=31.5327506,74.3600704",
+      "source": "osm"
+    },
+    {
+      "nom": "Fortress",
+      "lat": 31.5304944,
+      "lng": 74.3692733,
+      "coordonnees": {
+        "lat": 31.5304944,
+        "lng": 74.3692733
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5304944,74.3692733",
+      "source": "osm"
+    },
+    {
+      "nom": "B Block Mosque",
+      "lat": 31.5216628,
+      "lng": 74.3425813,
+      "coordonnees": {
+        "lat": 31.5216628,
+        "lng": 74.3425813
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5216628,74.3425813",
+      "source": "osm"
+    },
+    {
+      "nom": "Imrania",
+      "lat": 31.5291958,
+      "lng": 74.3427397,
+      "coordonnees": {
+        "lat": 31.5291958,
+        "lng": 74.3427397
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5291958,74.3427397",
+      "source": "osm"
+    },
+    {
+      "nom": "Khalid Masjid",
+      "lat": 31.5000044,
+      "lng": 74.366539,
+      "coordonnees": {
+        "lat": 31.5000044,
+        "lng": 74.366539
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5000044,74.366539",
+      "source": "osm"
+    },
+    {
+      "nom": "Mall Masjid",
+      "lat": 31.5442033,
+      "lng": 74.3505193,
+      "coordonnees": {
+        "lat": 31.5442033,
+        "lng": 74.3505193
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5442033,74.3505193",
+      "source": "osm"
+    },
+    {
+      "nom": "Cantonment Board Mosque",
+      "lat": 31.5410061,
+      "lng": 74.3772989,
+      "coordonnees": {
+        "lat": 31.5410061,
+        "lng": 74.3772989
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5410061,74.3772989",
+      "source": "osm"
+    },
+    {
+      "nom": "Iqbal",
+      "lat": 31.5464252,
+      "lng": 74.3613754,
+      "coordonnees": {
+        "lat": 31.5464252,
+        "lng": 74.3613754
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5464252,74.3613754",
+      "source": "osm"
+    },
+    {
+      "nom": "Central Mosque Falcon Housing Complex",
+      "lat": 31.4946842,
+      "lng": 74.349816,
+      "coordonnees": {
+        "lat": 31.4946842,
+        "lng": 74.349816
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.4946842,74.349816",
+      "source": "osm"
+    },
+    {
+      "nom": "Shrine of Shah Muhammad",
+      "lat": 31.5475145,
+      "lng": 74.3554202,
+      "coordonnees": {
+        "lat": 31.5475145,
+        "lng": 74.3554202
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5475145,74.3554202",
+      "source": "osm"
+    },
+    {
+      "nom": "Hassan",
+      "lat": 31.5227119,
+      "lng": 74.3265451,
+      "coordonnees": {
+        "lat": 31.5227119,
+        "lng": 74.3265451
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5227119,74.3265451",
+      "source": "osm"
+    },
+    {
+      "nom": "Bab-ul-Mustjab",
+      "lat": 31.5030687,
+      "lng": 74.3314694,
+      "coordonnees": {
+        "lat": 31.5030687,
+        "lng": 74.3314694
+      },
+      "adresse": "Ferozepur Road, Lahore",
+      "mapsUrl": "https://maps.google.com/?q=31.5030687,74.3314694",
+      "source": "osm"
+    },
+    {
+      "nom": "Ibrahim",
+      "lat": 31.5500728,
+      "lng": 74.3573815,
+      "coordonnees": {
+        "lat": 31.5500728,
+        "lng": 74.3573815
+      },
+      "adresse": "UBD Canal Bank Road;Tokhar - M2 Link, Lahore",
+      "mapsUrl": "https://maps.google.com/?q=31.5500728,74.3573815",
+      "source": "osm"
+    },
+    {
+      "nom": "Jamia Mohammadia",
+      "lat": 31.4984557,
+      "lng": 74.3336039,
+      "coordonnees": {
+        "lat": 31.4984557,
+        "lng": 74.3336039
+      },
+      "adresse": "Ferozepur Road, Lahore",
+      "mapsUrl": "https://maps.google.com/?q=31.4984557,74.3336039",
+      "source": "osm"
+    },
+    {
+      "nom": "Qasim Khan",
+      "lat": 31.5466006,
+      "lng": 74.3774197,
+      "coordonnees": {
+        "lat": 31.5466006,
+        "lng": 74.3774197
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5466006,74.3774197",
+      "source": "osm"
+    },
+    {
+      "nom": "Hafiz Mansoor",
+      "lat": 31.5466706,
+      "lng": 74.3786301,
+      "coordonnees": {
+        "lat": 31.5466706,
+        "lng": 74.3786301
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5466706,74.3786301",
+      "source": "osm"
+    },
+    {
+      "nom": "سعید",
+      "lat": 31.521374,
+      "lng": 74.3215041,
+      "coordonnees": {
+        "lat": 31.521374,
+        "lng": 74.3215041
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.521374,74.3215041",
+      "source": "osm"
+    },
+    {
+      "nom": "Irfan",
+      "lat": 31.4882538,
+      "lng": 74.3566078,
+      "coordonnees": {
+        "lat": 31.4882538,
+        "lng": 74.3566078
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.4882538,74.3566078",
+      "source": "osm"
+    },
+    {
+      "nom": "Muhajireen",
+      "lat": 31.5524986,
+      "lng": 74.3657516,
+      "coordonnees": {
+        "lat": 31.5524986,
+        "lng": 74.3657516
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5524986,74.3657516",
+      "source": "osm"
+    },
+    {
+      "nom": "Bhawan Daas Complex Mosque",
+      "lat": 31.5467266,
+      "lng": 74.3817838,
+      "coordonnees": {
+        "lat": 31.5467266,
+        "lng": 74.3817838
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5467266,74.3817838",
+      "source": "osm"
+    },
+    {
+      "nom": "Qubra",
+      "lat": 31.553707,
+      "lng": 74.3628624,
+      "coordonnees": {
+        "lat": 31.553707,
+        "lng": 74.3628624
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.553707,74.3628624",
+      "source": "osm"
+    },
+    {
+      "nom": "Qasr-e-Batool Mosque & Imambargah",
+      "lat": 31.5393606,
+      "lng": 74.3259805,
+      "coordonnees": {
+        "lat": 31.5393606,
+        "lng": 74.3259805
+      },
       "adresse": "Lahore",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+centrale+de+Lahore+Lahore",
-      "capacite": 2674,
-      "anneeConstruction": 2014,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
-      "coordonnees": {
-        "lat": 31.5204,
-        "lng": 74.3587
-      }
+      "mapsUrl": "https://maps.google.com/?q=31.5393606,74.3259805",
+      "source": "osm"
     },
     {
-      "nom": "Grande Mosquée de Lahore",
-      "description": "Mosquée fréquentée de Lahore, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Lahore",
-      "mapsUrl": "https://maps.google.com/?q=Grande+Mosqu%C3%A9e+de+Lahore+Lahore",
-      "capacite": 951,
-      "anneeConstruction": 1991,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
+      "nom": "جامعہ مسجد محمدیہ حنفیہ",
+      "lat": 31.5245584,
+      "lng": 74.3193616,
       "coordonnees": {
-        "lat": 31.5204,
-        "lng": 74.3587
-      }
+        "lat": 31.5245584,
+        "lng": 74.3193616
+      },
+      "adresse": "Sultan Ahmed Rd",
+      "mapsUrl": "https://maps.google.com/?q=31.5245584,74.3193616",
+      "source": "osm"
     },
     {
-      "nom": "Mosquée Al-Noor de Lahore",
-      "description": "Mosquée fréquentée de Lahore, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Lahore",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Noor+de+Lahore+Lahore",
-      "capacite": 3240,
-      "anneeConstruction": 1880,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
+      "nom": "Hanfia Farooqia",
+      "lat": 31.5531608,
+      "lng": 74.3688005,
       "coordonnees": {
-        "lat": 31.5204,
-        "lng": 74.3587
-      }
+        "lat": 31.5531608,
+        "lng": 74.3688005
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5531608,74.3688005",
+      "source": "osm"
     },
     {
-      "nom": "Mosquée Al-Salam de Lahore",
-      "description": "Mosquée fréquentée de Lahore, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Lahore",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Salam+de+Lahore+Lahore",
-      "capacite": 1468,
-      "anneeConstruction": 1948,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
+      "nom": "جامع مسجد",
+      "lat": 31.5429926,
+      "lng": 74.3290895,
       "coordonnees": {
-        "lat": 31.5204,
-        "lng": 74.3587
-      }
+        "lat": 31.5429926,
+        "lng": 74.3290895
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5429926,74.3290895",
+      "source": "osm"
     },
     {
-      "nom": "Mosquée Al-Rahma de Lahore",
-      "description": "Mosquée fréquentée de Lahore, accueillant les fidèles pour les cinq prières quotidiennes.",
-      "adresse": "Lahore",
-      "mapsUrl": "https://maps.google.com/?q=Mosqu%C3%A9e+Al-Rahma+de+Lahore+Lahore",
-      "capacite": 2762,
-      "anneeConstruction": 1902,
-      "styleArchitectural": "Moghol",
-      "ouvertureVisiteurs": true,
-      "horaires": "05h00 - 22h00",
+      "nom": "Fountain Mosque",
+      "lat": 31.5527341,
+      "lng": 74.3711093,
       "coordonnees": {
-        "lat": 31.5204,
-        "lng": 74.3587
-      }
+        "lat": 31.5527341,
+        "lng": 74.3711093
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5527341,74.3711093",
+      "source": "osm"
+    },
+    {
+      "nom": "Ghosia",
+      "lat": 31.5471971,
+      "lng": 74.3841138,
+      "coordonnees": {
+        "lat": 31.5471971,
+        "lng": 74.3841138
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5471971,74.3841138",
+      "source": "osm"
+    },
+    {
+      "nom": "جامعہ مسجد توحید الحدیٽ",
+      "lat": 31.5246029,
+      "lng": 74.3181855,
+      "coordonnees": {
+        "lat": 31.5246029,
+        "lng": 74.3181855
+      },
+      "adresse": "Rehmanpura",
+      "mapsUrl": "https://maps.google.com/?q=31.5246029,74.3181855",
+      "source": "osm"
+    },
+    {
+      "nom": "Nagina",
+      "lat": 31.536055,
+      "lng": 74.3193352,
+      "coordonnees": {
+        "lat": 31.536055,
+        "lng": 74.3193352
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.536055,74.3193352",
+      "source": "osm"
+    },
+    {
+      "nom": "Barkat Market Masjid",
+      "lat": 31.4991583,
+      "lng": 74.3227049,
+      "coordonnees": {
+        "lat": 31.4991583,
+        "lng": 74.3227049
+      },
+      "adresse": "Main Boulevard Garden Town, Lahore",
+      "mapsUrl": "https://maps.google.com/?q=31.4991583,74.3227049",
+      "source": "osm"
+    },
+    {
+      "nom": "دار الذکر",
+      "lat": 31.5578075,
+      "lng": 74.3537644,
+      "coordonnees": {
+        "lat": 31.5578075,
+        "lng": 74.3537644
+      },
+      "adresse": "Lahore",
+      "mapsUrl": "https://maps.google.com/?q=31.5578075,74.3537644",
+      "source": "osm"
+    },
+    {
+      "nom": "Naseerabad Mosque",
+      "lat": 31.4865493,
+      "lng": 74.3392759,
+      "coordonnees": {
+        "lat": 31.4865493,
+        "lng": 74.3392759
+      },
+      "adresse": "Service Road, Lahore",
+      "mapsUrl": "https://maps.google.com/?q=31.4865493,74.3392759",
+      "source": "osm"
+    },
+    {
+      "nom": "C Block Mosque",
+      "lat": 31.4931148,
+      "lng": 74.3273243,
+      "coordonnees": {
+        "lat": 31.4931148,
+        "lng": 74.3273243
+      },
+      "adresse": "Block C Circular, Lahore",
+      "mapsUrl": "https://maps.google.com/?q=31.4931148,74.3273243",
+      "source": "osm"
+    },
+    {
+      "nom": "Jattan Waali",
+      "lat": 31.5308583,
+      "lng": 74.3154641,
+      "coordonnees": {
+        "lat": 31.5308583,
+        "lng": 74.3154641
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5308583,74.3154641",
+      "source": "osm"
+    },
+    {
+      "nom": "Barkaat-e-Madina",
+      "lat": 31.5231739,
+      "lng": 74.3138341,
+      "coordonnees": {
+        "lat": 31.5231739,
+        "lng": 74.3138341
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5231739,74.3138341",
+      "source": "osm"
+    },
+    {
+      "nom": "Shrine of Syed Ali Shah Shaheed",
+      "lat": 31.5581856,
+      "lng": 74.3502676,
+      "coordonnees": {
+        "lat": 31.5581856,
+        "lng": 74.3502676
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5581856,74.3502676",
+      "source": "osm"
+    },
+    {
+      "nom": "Shama",
+      "lat": 31.539988,
+      "lng": 74.319284,
+      "coordonnees": {
+        "lat": 31.539988,
+        "lng": 74.319284
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.539988,74.319284",
+      "source": "osm"
+    },
+    {
+      "nom": "مسجد بلال",
+      "lat": 31.5051526,
+      "lng": 74.3153684,
+      "coordonnees": {
+        "lat": 31.5051526,
+        "lng": 74.3153684
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5051526,74.3153684",
+      "source": "osm"
+    },
+    {
+      "nom": "Pir Ghazi",
+      "lat": 31.5356573,
+      "lng": 74.3153311,
+      "coordonnees": {
+        "lat": 31.5356573,
+        "lng": 74.3153311
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5356573,74.3153311",
+      "source": "osm"
+    },
+    {
+      "nom": "تاج دین",
+      "lat": 31.5606346,
+      "lng": 74.360328,
+      "coordonnees": {
+        "lat": 31.5606346,
+        "lng": 74.360328
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5606346,74.360328",
+      "source": "osm"
+    },
+    {
+      "nom": "Habibullah",
+      "lat": 31.5583472,
+      "lng": 74.3426071,
+      "coordonnees": {
+        "lat": 31.5583472,
+        "lng": 74.3426071
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5583472,74.3426071",
+      "source": "osm"
+    },
+    {
+      "nom": "Garden Mosque",
+      "lat": 31.5521889,
+      "lng": 74.3289042,
+      "coordonnees": {
+        "lat": 31.5521889,
+        "lng": 74.3289042
+      },
+      "mapsUrl": "https://maps.google.com/?q=31.5521889,74.3289042",
+      "source": "osm"
+    },
+    {
+      "nom": "Jamia Masjid e Muhammadi",
+      "lat": 31.4946787,
+      "lng": 74.395703,
+      "coordonnees": {
+        "lat": 31.4946787,
+        "lng": 74.395703
+      },
+      "adresse": "Keer Road, Lahore",
+      "mapsUrl": "https://maps.google.com/?q=31.4946787,74.395703",
+      "source": "osm"
+    },
+    {
+      "nom": "بیت النور",
+      "lat": 31.492218,
+      "lng": 74.3241845,
+      "coordonnees": {
+        "lat": 31.492218,
+        "lng": 74.3241845
+      },
+      "adresse": "Model Town Block C, Lahore",
+      "mapsUrl": "https://maps.google.com/?q=31.492218,74.3241845",
+      "source": "osm"
     }
   ],
   "tags": [

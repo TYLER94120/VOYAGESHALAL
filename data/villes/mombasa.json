@@ -1365,17 +1365,225 @@
   ],
   "mosqueesPrincipales": [
     {
-      "id": "m1",
-      "nom": "Grande Mosquée de Mombasa",
-      "type": "Mosquée",
-      "adresse": "Centre-ville, Mombasa",
-      "description": "Mosquée principale de la ville.",
-      "note": 5,
-      "acces_non_musulmans": false,
-      "mapsUrl": "https://maps.google.com/?q=Mosque%20Mombasa%20Mombasa",
-      "lat": -4.0612587,
-      "lng": 39.672237,
-      "geocoded": true
+      "nom": "Masjid Kilifi",
+      "lat": -4.0515176,
+      "lng": 39.6746181,
+      "coordonnees": {
+        "lat": -4.0515176,
+        "lng": 39.6746181
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0515176,39.6746181",
+      "source": "osm"
+    },
+    {
+      "nom": "Rahman Mosque",
+      "lat": -4.0447081,
+      "lng": 39.657357,
+      "coordonnees": {
+        "lat": -4.0447081,
+        "lng": 39.657357
+      },
+      "adresse": "Lumumba Road, Mombasa",
+      "mapsUrl": "https://maps.google.com/?q=-4.0447081,39.657357",
+      "source": "osm"
+    },
+    {
+      "nom": "Masjid Mswalani",
+      "lat": -4.0528476,
+      "lng": 39.674019,
+      "coordonnees": {
+        "lat": -4.0528476,
+        "lng": 39.674019
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0528476,39.674019",
+      "source": "osm"
+    },
+    {
+      "nom": "Masjid Azhar",
+      "lat": -4.0549719,
+      "lng": 39.6642105,
+      "coordonnees": {
+        "lat": -4.0549719,
+        "lng": 39.6642105
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0549719,39.6642105",
+      "source": "osm"
+    },
+    {
+      "nom": "Masjid Nur",
+      "lat": -4.0553064,
+      "lng": 39.6725238,
+      "coordonnees": {
+        "lat": -4.0553064,
+        "lng": 39.6725238
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0553064,39.6725238",
+      "source": "osm"
+    },
+    {
+      "nom": "Masjid Shibu",
+      "lat": -4.0565633,
+      "lng": 39.6694942,
+      "coordonnees": {
+        "lat": -4.0565633,
+        "lng": 39.6694942
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0565633,39.6694942",
+      "source": "osm"
+    },
+    {
+      "nom": "Masjid TSS",
+      "lat": -4.0603808,
+      "lng": 39.6657846,
+      "coordonnees": {
+        "lat": -4.0603808,
+        "lng": 39.6657846
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0603808,39.6657846",
+      "source": "osm"
+    },
+    {
+      "nom": "Mbaruk Mosque",
+      "lat": -4.0626096,
+      "lng": 39.674859,
+      "coordonnees": {
+        "lat": -4.0626096,
+        "lng": 39.674859
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0626096,39.674859",
+      "source": "osm"
+    },
+    {
+      "nom": "Fat-hi Mosque",
+      "lat": -4.0532605,
+      "lng": 39.6859924,
+      "coordonnees": {
+        "lat": -4.0532605,
+        "lng": 39.6859924
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0532605,39.6859924",
+      "source": "osm"
+    },
+    {
+      "nom": "Umm Kulthum Mosque",
+      "lat": -4.0716539,
+      "lng": 39.6762568,
+      "coordonnees": {
+        "lat": -4.0716539,
+        "lng": 39.6762568
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0716539,39.6762568",
+      "source": "osm"
+    },
+    {
+      "nom": "masjid fat'hi chaani",
+      "lat": -4.0316646,
+      "lng": 39.6271932,
+      "coordonnees": {
+        "lat": -4.0316646,
+        "lng": 39.6271932
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0316646,39.6271932",
+      "source": "osm"
+    },
+    {
+      "nom": "masjid noor",
+      "lat": -4.0251033,
+      "lng": 39.6245281,
+      "coordonnees": {
+        "lat": -4.0251033,
+        "lng": 39.6245281
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0251033,39.6245281",
+      "source": "osm"
+    },
+    {
+      "nom": "masjid saada",
+      "lat": -4.0242199,
+      "lng": 39.6224445,
+      "coordonnees": {
+        "lat": -4.0242199,
+        "lng": 39.6224445
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0242199,39.6224445",
+      "source": "osm"
+    },
+    {
+      "nom": "masjid taqwa",
+      "lat": -4.0284025,
+      "lng": 39.6178663,
+      "coordonnees": {
+        "lat": -4.0284025,
+        "lng": 39.6178663
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0284025,39.6178663",
+      "source": "osm"
+    },
+    {
+      "nom": "masjid Raudhwa",
+      "lat": -4.0296982,
+      "lng": 39.6164077,
+      "coordonnees": {
+        "lat": -4.0296982,
+        "lng": 39.6164077
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0296982,39.6164077",
+      "source": "osm"
+    },
+    {
+      "nom": "masjid lilah bomu",
+      "lat": -4.0257526,
+      "lng": 39.6145447,
+      "coordonnees": {
+        "lat": -4.0257526,
+        "lng": 39.6145447
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0257526,39.6145447",
+      "source": "osm"
+    },
+    {
+      "nom": "Masjid Mubarak",
+      "lat": -4.020437,
+      "lng": 39.6163584,
+      "coordonnees": {
+        "lat": -4.020437,
+        "lng": 39.6163584
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.020437,39.6163584",
+      "source": "osm"
+    },
+    {
+      "nom": "masjid salmichai",
+      "lat": -4.0294507,
+      "lng": 39.6063832,
+      "coordonnees": {
+        "lat": -4.0294507,
+        "lng": 39.6063832
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0294507,39.6063832",
+      "source": "osm"
+    },
+    {
+      "nom": "Masjid ummu kulthum bokole",
+      "lat": -4.0178853,
+      "lng": 39.6087296,
+      "coordonnees": {
+        "lat": -4.0178853,
+        "lng": 39.6087296
+      },
+      "mapsUrl": "https://maps.google.com/?q=-4.0178853,39.6087296",
+      "source": "osm"
+    },
+    {
+      "nom": "markaz",
+      "lat": -3.9961726,
+      "lng": 39.6006697,
+      "coordonnees": {
+        "lat": -3.9961726,
+        "lng": 39.6006697
+      },
+      "mapsUrl": "https://maps.google.com/?q=-3.9961726,39.6006697",
+      "source": "osm"
     }
   ],
   "activites": [
