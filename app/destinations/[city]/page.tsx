@@ -5,6 +5,7 @@ import path from 'path'
 import type { Ville } from '@/lib/villeTypes'
 import VilleDesktop from '@/components/villes/VilleDesktop'
 import VilleFaq from '@/components/villes/VilleFaq'
+import HotelCTA from '@/components/affiliate/HotelCTA'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
 import cityCoords from '@/lib/cityCoords.json'
@@ -111,6 +112,13 @@ export default async function DestinationPage({ params }: Props) {
 
       {/* Design unifié responsive (mobile + desktop : 1 colonne épurée) */}
       <VilleDesktop ville={ville} />
+
+      {/* CTA affilié hôtels (revenu n°1) — visible sur toute la page ville */}
+      <section style={{ background: 'var(--creme)', padding: '8px 18px 24px' }}>
+        <div style={{ maxWidth: 820, margin: '0 auto' }}>
+          <HotelCTA cityName={ville.nom} variant="banner" />
+        </div>
+      </section>
 
       {/* FAQ visible (même source que le JSON-LD FAQPage) */}
       <VilleFaq ville={ville} en={isEN} />

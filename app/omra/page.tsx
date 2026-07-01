@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { buildMetadata, buildFAQSchema, buildBreadcrumbSchema, SITE_URL } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
+import OmraLeadForm from '@/components/omra/OmraLeadForm'
 
 export const metadata: Metadata = buildMetadata({
   title: 'Omra 2026 — Guide Complet, Forfaits & Préparation',
@@ -107,6 +108,13 @@ export default function OmraPage() {
               >
                 Lire le guide complet →
               </Link>
+              <a
+                href="#devis"
+                style={{ backgroundColor: '#c9a870', color: '#1a3a2a' }}
+                className="font-bold text-sm px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity"
+              >
+                🕋 Recevoir des devis gratuits
+              </a>
               <Link
                 href="/destinations/medine"
                 className="border border-white/30 text-white font-semibold text-sm px-8 py-3.5 rounded-full hover:bg-white/10 transition-colors"
@@ -114,6 +122,22 @@ export default function OmraPage() {
                 Guide Médine
               </Link>
             </div>
+          </div>
+        </section>
+
+        {/* Tunnel de leads Omra/Hajj — revenu n°2 */}
+        <section id="devis" style={{ backgroundColor: '#fff' }} className="py-16 px-4">
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-8">
+              <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-3">Devis gratuit · sans engagement</p>
+              <h2 className="text-3xl font-bold" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
+                Comparez les meilleures offres Omra &amp; Hajj
+              </h2>
+              <p className="text-gray-500 mt-3 max-w-lg mx-auto">
+                Décrivez votre projet en 30 secondes : des agences partenaires vous envoient leurs propositions adaptées à votre budget.
+              </p>
+            </div>
+            <OmraLeadForm />
           </div>
         </section>
 

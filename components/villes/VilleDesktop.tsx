@@ -7,6 +7,7 @@ import { useToast } from '@/components/Toast'
 import EbookButton from '@/components/villes/EbookButton'
 import LiveSpots from '@/components/villes/LiveSpots'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
+import HotelCTA from '@/components/affiliate/HotelCTA'
 
 const TABS = [
   { id: 'mosquees', icon: '🕌', label: 'Mosquées' },
@@ -185,11 +186,16 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           </>
         )}
 
+        {displayTab === 'hotels' && (
+          <div style={{ marginBottom: 20 }}>
+            <HotelCTA cityName={ville.nom} variant="banner" />
+          </div>
+        )}
         {displayTab === 'hotels' && (hotels.length === 0 ? (
           <div style={{ ...card, textAlign: 'center', padding: '40px 22px' }}>
             <div style={{ fontSize: 34, marginBottom: 10 }}>🏨</div>
-            <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: 'var(--nuit)', fontSize: 18, margin: '0 0 6px' }}>Hôtels en cours d’ajout</p>
-            <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.6, margin: 0 }}>Les hébergements halal-friendly de {ville.nom} arrivent bientôt.</p>
+            <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: 'var(--nuit)', fontSize: 18, margin: '0 0 6px' }}>{en ? 'Hotels coming soon' : 'Hôtels en cours d’ajout'}</p>
+            <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.6, margin: 0 }}>{en ? `Halal-friendly stays in ${ville.nom} are on the way.` : `Les hébergements halal-friendly de ${ville.nom} arrivent bientôt.`}</p>
           </div>
         ) : (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
