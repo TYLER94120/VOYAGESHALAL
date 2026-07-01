@@ -6,7 +6,7 @@ import { useLocation } from '@/components/location/LocationProvider'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 import SearchBarHome from '@/components/search/SearchBarHome'
 
-type Cat = 'mosquees' | 'restaurants' | 'hotels' | 'boucheries'
+type Cat = 'mosquees' | 'restaurants' | 'hotels' | 'boucheries' | 'activites'
 interface Spot { id: number | string; lat: number; lng: number; name: string; sub?: string; dist: number; halal?: 'only' | 'yes' | 'likely' }
 
 // Fusionne les points pré-chargés (instantanés) et les points live OSM en
@@ -27,8 +27,13 @@ const CATS: { id: Cat; label: string; icon: string; color: string }[] = [
   { id: 'mosquees', label: 'Mosquées', icon: '🕌', color: '#2d6a4f' },
   { id: 'restaurants', label: 'Restaurants halal', icon: '🍽️', color: '#c05621' },
   { id: 'hotels', label: 'Hôtels', icon: '🏨', color: '#2b6cb0' },
+  { id: 'activites', label: 'À faire', icon: '🎯', color: '#6b46c1' },
   { id: 'boucheries', label: 'Boucheries halal', icon: '🥩', color: '#97266d' },
 ]
+// Sources de données : /api/nearby (nos POI géolocalisés, toutes villes) pour
+// restaurants/hôtels/activités ; OpenStreetMap live pour mosquées & boucheries.
+const NEARBY_TYPES = new Set<Cat>(['restaurants', 'hotels', 'activites'])
+const OSM_TYPES = new Set<Cat>(['mosquees', 'boucheries', 'restaurants'])
 const HALAL_CUISINE = 'kebab|turkish|lebanese|arab|syrian|persian|iranian|afghan|pakistani|bangladeshi|egyptian|moroccan|uyghur|halal|doner|shawarma|biryani|indian'
 
 function haversine(a: number, b: number, c: number, d: number) {
@@ -180,12 +185,13 @@ export default function AutourDeMoiPage() {
 
   const search = useCallback(async (lat: number, lng: number, c: Cat) => {
     setSelected(null)
-    // 1) Affichage INSTANTANÉ depuis nos données pré-chargées (< 1 s)
+    // 1) Affichage INSTANTANÉ depuis nos données pré-chargées (/api/nearby, < 1 s)
     const pre = preRef.current[c] || []
     if (pre.length) { render(pre, c); setLoading(false) } else { setLoading(true) }
-    // 2) Complément LIVE OpenStreetMap en arrière-plan, fusionné aux pré-chargés
-    const els = await overpass(buildQuery(c, lat, lng, ME_RADIUS_M))
-    const live = els ? parseOverpass(els, lat, lng, c) : []
+    // 2) Complément LIVE OpenStreetMap (mosquées, boucheries, restaurants), fusionné
+    const live = OSM_TYPES.has(c)
+      ? ((els) => els ? parseOverpass(els, lat, lng, c) : [])(await overpass(buildQuery(c, lat, lng, ME_RADIUS_M)))
+      : []
     const merged = mergeSpots(pre, live)
     render(merged, c)
     // Cadre la carte pour rendre les résultats visibles (utile quand les points
@@ -198,11 +204,29 @@ export default function AutourDeMoiPage() {
     setLoading(false)
   }, [render])
 
-  // Précharge nos points (API interne, ville la plus proche) dès qu'on a la position
+  // Précharge nos POI géolocalisés via /api/nearby (toutes villes) dès qu'on a la
+  // position. Restaurants/hôtels/activités = données réelles ; mosquées & boucheries
+  // restent sur OSM (live). Mappe le format fiche-ville vers Spot.
   const preload = useCallback(async (lat: number, lng: number) => {
     try {
-      const res = await fetch(`/api/autour?lat=${lat}&lng=${lng}&r=${ME_RADIUS_M}`)
-      if (res.ok) { const j = await res.json(); preRef.current = j.spots || {} }
+      const res = await fetch(`/api/nearby?lat=${lat}&lng=${lng}&type=all&radius=${ME_RADIUS_M / 1000}`)
+      if (!res.ok) return
+      const j = await res.json()
+      const s = j.spots || {}
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const toSpot = (o: any, c: Cat): Spot => ({
+        id: `${c[0]}-${o.nom}-${o.lat}`,
+        lat: o.lat, lng: o.lng, name: o.nom,
+        dist: (o.distanceKm ?? 0) * 1000,
+        sub: c === 'restaurants' ? (o.type || 'Restaurant') : c === 'hotels' ? (o.categorie || o.priceRange || 'Hôtel') : (o.categorie || 'À faire'),
+        halal: c === 'restaurants' ? (o.certificationHalal || o.halalConfidence === 'certified' || o.halalConfidence === 'high' ? 'yes' : 'likely') : undefined,
+      })
+      const pre: Partial<Record<Cat, Spot[]>> = {}
+      for (const c of ['restaurants', 'hotels', 'activites'] as Cat[]) {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        pre[c] = ((s[c] || []) as any[]).map((o) => toSpot(o, c))
+      }
+      preRef.current = pre
     } catch { /* pas de pré-chargement → on tombe sur le live seul */ }
   }, [])
 
