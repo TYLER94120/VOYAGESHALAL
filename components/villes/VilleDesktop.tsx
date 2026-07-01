@@ -54,6 +54,25 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   // Sur le domaine EN, on affiche la description anglaise si elle existe
   const descShort = (en && ville.description_en) ? ville.description_en : descFr
 
+  // Traçabilité : source + date de vérification affichées sur chaque adresse
+  // (crédibilise le Halal Trust Score). OSM = donnée ouverte datée ; sinon = éditorial.
+  const fmtDate = (iso?: string) => {
+    if (!iso) return ''
+    try { return new Date(iso).toLocaleDateString(en ? 'en-US' : 'fr-FR', { month: 'short', year: 'numeric' }) } catch { return '' }
+  }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const srcTag = (item: any): string => {
+    if (item?.source === 'osm') {
+      const dt = fmtDate(ville.osmEnrichedAt)
+      return en ? `OpenStreetMap${dt ? ` · verified ${dt}` : ''}` : `OpenStreetMap${dt ? ` · vérifié ${dt}` : ''}`
+    }
+    return en ? 'VoyagesHalal editorial pick' : 'Sélection éditoriale VoyagesHalal'
+  }
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const SourceLine = ({ item }: { item: any }) => (
+    <p style={{ fontSize: 11, color: 'var(--texte-2)', margin: '7px 0 0', opacity: 0.7 }}>ℹ️ {srcTag(item)}</p>
+  )
+
   const categories = ['Tous', ...Array.from(new Set(restaurants.map((r: any) => r.type).filter(Boolean)))] as string[]
   const restosFiltres = activeFilter === 'Tous' ? restaurants : restaurants.filter((r: any) => r.type === activeFilter)
   const tabCounts: Record<string, number> = { restaurants: restaurants.length, mosquees: mosquees.length, hotels: hotels.length, activites: activites.length, pratique: 0 }
@@ -168,6 +187,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                       <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ flex: 1, padding: '11px 0', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🗺 Maps</a>
                       {r.specialite && <button onClick={() => toast(`⭐ ${r.specialite}`, 'success')} style={{ flex: 1, padding: '11px 0', background: 'var(--foret)', color: 'var(--creme)', border: 'none', borderRadius: '12px', fontSize: '13px', fontWeight: 700, cursor: 'pointer' }}>⭐ Spécialité</button>}
                     </div>
+                    <SourceLine item={r} />
                   </div>
                 </div>
               ))}
@@ -222,6 +242,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                   )}
                   {h.halalBookingUrl && <a href={h.halalBookingUrl} target="_blank" rel="noopener noreferrer" style={{ flex: 1, padding: '12px 0', background: 'var(--foret)', color: 'var(--creme)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🕌 HalalBooking</a>}
                 </div>
+                <SourceLine item={h} />
               </div>
             ))}
           </div>
@@ -240,7 +261,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               <div key={i} style={card}>
                 <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '19px', color: 'var(--nuit)', marginBottom: '6px' }}>🕌 {m.nom}</p>
                 <p style={{ fontSize: '13.5px', color: 'var(--texte-2)', lineHeight: 1.6, marginBottom: '10px' }}>{m.description}</p>
-                <a href={m.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ display: 'inline-block', padding: '9px 16px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '11px', fontSize: '12.5px', fontWeight: 700, textDecoration: 'none' }}>🗺 Voir sur la carte →</a>
+                <a href={m.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ display: 'inline-block', padding: '9px 16px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '11px', fontSize: '12.5px', fontWeight: 700, textDecoration: 'none' }}>🗺 {en ? 'View on map →' : 'Voir sur la carte →'}</a>
+                <SourceLine item={m} />
               </div>
             ))}
           </div>
@@ -260,6 +282,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 <span style={{ display: 'inline-block', fontSize: '11px', color: 'var(--texte-2)', marginBottom: '6px' }}>{a.categorie} · {a.duree}</span>
                 <p style={{ fontSize: '13px', color: 'var(--texte-2)', lineHeight: 1.6, marginBottom: '12px' }}>{a.description}</p>
                 <a href={a.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ display: 'inline-block', padding: '9px 16px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '11px', fontSize: '12.5px', fontWeight: 700, textDecoration: 'none' }}>🗺 Maps →</a>
+                <SourceLine item={a} />
               </div>
             ))}
           </div>
