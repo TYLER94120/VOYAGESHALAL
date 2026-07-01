@@ -4,6 +4,7 @@ import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap, Marker } from 'leaflet'
 import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useLocation } from '@/components/location/LocationProvider'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 
 interface Mosque {
@@ -17,6 +18,8 @@ interface Mosque {
 
 export default function MosqueeProchePage() {
   const { city, clearLocation } = useLocation()
+  const { lang } = useLanguage()
+  const en = lang === 'en'
   const [step, setStep] = useState<'idle' | 'loading' | 'results' | 'error'>('idle')
   const [geoErr, setGeoErr] = useState<GeoError | null>(null)
   const [mosques, setMosques] = useState<Mosque[]>([])
@@ -144,13 +147,13 @@ export default function MosqueeProchePage() {
       <section className="relative overflow-hidden text-center" style={{ background: 'var(--nuit)', padding: '4rem 1.5rem 3rem' }}>
         <IslamicPattern opacity={0.06} />
         <div className="relative z-10">
-          <p style={{ color: 'var(--or)', fontSize: '11px', fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '1rem' }}>✦ Outils musulmans</p>
+          <p style={{ color: 'var(--or)', fontSize: '11px', fontWeight: 600, letterSpacing: '3px', textTransform: 'uppercase', marginBottom: '1rem' }}>✦ {en ? 'Muslim tools' : 'Outils musulmans'}</p>
           <h1 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(2rem, 5vw, 3rem)', fontWeight: 900, color: 'white', marginBottom: '0.75rem', lineHeight: 1.1 }}>
-            Mosquée la plus
+            {en ? 'Nearest' : 'Mosquée la plus'}
             <br />
-            <em style={{ color: 'var(--or)' }}>proche</em>
+            <em style={{ color: 'var(--or)' }}>{en ? 'mosque' : 'proche'}</em>
           </h1>
-          <p style={{ color: 'var(--or-clair)', opacity: 0.85 }}>Trouvez une mosquée partout dans le monde — en quelques secondes</p>
+          <p style={{ color: 'var(--or-clair)', opacity: 0.85 }}>{en ? 'Find a mosque anywhere in the world — in seconds' : 'Trouvez une mosquée partout dans le monde — en quelques secondes'}</p>
         </div>
       </section>
 
@@ -158,7 +161,7 @@ export default function MosqueeProchePage() {
         {step === 'idle' && (
           <div>
             <div style={{ background: 'white', borderRadius: '16px', padding: '1.25rem', marginBottom: '1rem', border: '1px solid rgba(27,67,50,0.1)' }}>
-              <p style={{ fontWeight: 600, color: 'var(--foret)', marginBottom: '0.75rem', fontSize: '14px' }}>Rayon de recherche</p>
+              <p style={{ fontWeight: 600, color: 'var(--foret)', marginBottom: '0.75rem', fontSize: '14px' }}>{en ? 'Search radius' : 'Rayon de recherche'}</p>
               <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
                 {[500, 1000, 2000, 5000].map((r) => (
                   <button key={r} onClick={() => setRadius(r)} style={{ padding: '0.4rem 1rem', borderRadius: '20px', border: 'none', background: radius === r ? 'var(--foret)' : 'rgba(27,67,50,0.07)', color: radius === r ? 'white' : 'var(--foret)', fontWeight: 600, fontSize: '13px', cursor: 'pointer' }}>
@@ -176,8 +179,8 @@ export default function MosqueeProchePage() {
         {step === 'loading' && (
           <div style={{ textAlign: 'center', padding: '4rem 0' }}>
             <div style={{ fontSize: '3rem', marginBottom: '1rem', animation: 'mpulse 1.5s ease-in-out infinite' }}>🕌</div>
-            <p style={{ color: 'var(--foret)', fontWeight: 600, fontSize: '1.1rem' }}>Recherche des mosquées…</p>
-            <p style={{ color: 'var(--texte-2)', fontSize: '13px', marginTop: '0.5rem' }}>Données OpenStreetMap — couverture mondiale</p>
+            <p style={{ color: 'var(--foret)', fontWeight: 600, fontSize: '1.1rem' }}>{en ? 'Searching for mosques…' : 'Recherche des mosquées…'}</p>
+            <p style={{ color: 'var(--texte-2)', fontSize: '13px', marginTop: '0.5rem' }}>{en ? 'OpenStreetMap data — worldwide coverage' : 'Données OpenStreetMap — couverture mondiale'}</p>
             <style>{`@keyframes mpulse { 0%,100%{transform:scale(1)} 50%{transform:scale(1.15)} }`}</style>
           </div>
         )}
@@ -187,7 +190,7 @@ export default function MosqueeProchePage() {
             {city && (
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, background: 'rgba(201,168,76,0.12)', border: '1px solid rgba(201,168,76,0.35)', borderRadius: 14, padding: '12px 18px', marginBottom: 16 }}>
                 <span style={{ fontWeight: 700, color: 'var(--foret)', fontSize: 15 }}>📍 Mosquées autour de {city.nom}</span>
-                <button onClick={() => { clearLocation(); reset() }} style={{ background: 'none', border: 'none', color: 'var(--or)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}>Changer de ville →</button>
+                <button onClick={() => { clearLocation(); reset() }} style={{ background: 'none', border: 'none', color: 'var(--or)', fontWeight: 700, fontSize: 13, cursor: 'pointer' }}>{en ? 'Change city →' : 'Changer de ville →'}</button>
               </div>
             )}
             <div ref={mapContainerRef} style={{ height: 380, borderRadius: '20px', overflow: 'hidden', marginBottom: '1.5rem', boxShadow: '0 4px 20px rgba(0,0,0,0.12)', border: '2px solid rgba(201,168,76,0.3)' }} />
@@ -206,7 +209,7 @@ export default function MosqueeProchePage() {
             </div>
 
             {mosques.length === 0 && (
-              <p style={{ textAlign: 'center', color: 'var(--texte-2)', padding: '1rem' }}>Aucune mosquée trouvée dans ce rayon. Essayez un rayon plus large.</p>
+              <p style={{ textAlign: 'center', color: 'var(--texte-2)', padding: '1rem' }}>{en ? 'No mosque found in this radius. Try a wider one.' : 'Aucune mosquée trouvée dans ce rayon. Essayez un rayon plus large.'}</p>
             )}
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
@@ -223,7 +226,7 @@ export default function MosqueeProchePage() {
                   </div>
                   <div style={{ textAlign: 'right', flexShrink: 0 }}>
                     <p style={{ fontWeight: 700, color: index === 0 ? 'var(--or)' : 'var(--foret)', fontSize: '14px', margin: 0 }}>{fmt(m.distance)}</p>
-                    <a href={`https://maps.google.com/?q=${m.lat},${m.lng}&travelmode=walking`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ fontSize: '11px', color: 'var(--foret)', fontWeight: 600, textDecoration: 'none' }}>Itinéraire →</a>
+                    <a href={`https://maps.google.com/?q=${m.lat},${m.lng}&travelmode=walking`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ fontSize: '11px', color: 'var(--foret)', fontWeight: 600, textDecoration: 'none' }}>{en ? 'Directions →' : 'Itinéraire →'}</a>
                   </div>
                 </div>
               ))}

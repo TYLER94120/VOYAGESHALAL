@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import HorairesClient from './HorairesClient'
 import IslamicPattern from '@/components/ui/IslamicPattern'
+import { getDomainSEO } from '@/lib/domain'
 
 export const metadata: Metadata = {
   title: "Heures de prière aujourd'hui — Toutes les villes du monde",
@@ -8,7 +9,8 @@ export const metadata: Metadata = {
     "Horaires de prière en temps réel (Fajr, Dhuhr, Asr, Maghrib, Isha) pour les principales destinations halal du monde. Données certifiées Aladhan, mises à jour quotidiennement.",
 }
 
-export default function HorairesPrierePage() {
+export default async function HorairesPrierePage() {
+  const { isEN: en } = await getDomainSEO()
   return (
     <main style={{ backgroundColor: '#fdfaf3' }}>
       <section className="relative overflow-hidden px-6 sm:px-16 pt-14 pb-16 text-center" style={{ backgroundColor: '#0b1a0f' }}>
@@ -21,11 +23,12 @@ export default function HorairesPrierePage() {
             className="text-4xl sm:text-5xl font-bold text-white mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
           >
-            Heures de prière <span className="gold-em">aujourd&apos;hui</span>
+            {en ? <>Prayer times <span className="gold-em">today</span></> : <>Heures de prière <span className="gold-em">aujourd&apos;hui</span></>}
           </h1>
           <p className="text-white/60 max-w-2xl mx-auto">
-            Horaires en temps réel pour les principales villes du monde — Fajr, Dhuhr, Asr, Maghrib,
-            Isha. Données Aladhan (UOIF, Umm al-Qura).
+            {en
+              ? 'Real-time times for major cities worldwide — Fajr, Dhuhr, Asr, Maghrib, Isha. Aladhan data (UOIF, Umm al-Qura).'
+              : 'Horaires en temps réel pour les principales villes du monde — Fajr, Dhuhr, Asr, Maghrib, Isha. Données Aladhan (UOIF, Umm al-Qura).'}
           </p>
         </div>
       </section>
