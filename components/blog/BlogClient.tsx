@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -29,10 +30,14 @@ interface Props {
 }
 
 export default function BlogClient({ articles }: Props) {
-  const categories = ['Tous', ...Array.from(new Set(articles.map((a) => a.category)))]
-  const [filtre, setFiltre] = useState('Tous')
+  const { lang } = useLanguage()
+  const en = lang === 'en'
+  const ALL = 'Tous'
+  const categories = [ALL, ...Array.from(new Set(articles.map((a) => a.category)))]
+  const [filtre, setFiltre] = useState(ALL)
+  const catLabel = (c: string) => (c === ALL ? (en ? 'All' : 'Tous') : c)
 
-  const filtered = filtre === 'Tous' ? articles : articles.filter((a) => a.category === filtre)
+  const filtered = filtre === ALL ? articles : articles.filter((a) => a.category === filtre)
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-8 py-12">
@@ -40,11 +45,11 @@ export default function BlogClient({ articles }: Props) {
       <div className="filtres-scroll mb-8">
         {categories.map((c) => (
           <button
-            key={c}
+            key={catLabel(c)}
             className={`filtre-btn pill-filter ${filtre === c ? 'active' : ''}`}
             onClick={() => setFiltre(c)}
           >
-            {c}
+            {catLabel(c)}
           </button>
         ))}
       </div>
@@ -87,7 +92,7 @@ export default function BlogClient({ articles }: Props) {
               </h2>
               <p className="text-sm text-gray-500 leading-relaxed line-clamp-3 mb-4">{item.description}</p>
               <span style={{ color: '#c9a84c' }} className="mt-auto text-sm font-semibold">
-                Lire →
+                {en ? 'Read →' : 'Lire →'}
               </span>
             </div>
           </Link>

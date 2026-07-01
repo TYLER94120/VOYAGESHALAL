@@ -2,6 +2,12 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
+
+// Libellés d'affichage EN (les clés internes restent en FR pour ne pas casser la logique)
+const REGION_EN: Record<string, string> = { Toutes: 'All', 'Moyen-Orient': 'Middle East', Afrique: 'Africa', Asie: 'Asia', Europe: 'Europe', Amériques: 'Americas' }
+const TYPE_EN: Record<string, string> = { famille: 'Family', omra: 'Umrah & Hajj', detente: 'Relaxation', culture: 'Culture' }
+const SORT_EN: Record<string, string> = { default: '✨ Recommended', note: '⭐ Top rated', az: '🔤 A-Z', region: '🌍 By region' }
 
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80'
 
@@ -73,6 +79,9 @@ export default function DestinationsClient({ villes }: Props) {
   const [filtre, setFiltre] = useState('Toutes')
   const [typeVoyage, setTypeVoyage] = useState<string | null>(null)
   const [sort, setSort] = useState('default')
+  const { lang } = useLanguage()
+  const en = lang === 'en'
+  const regionLabel = (r: string) => (en ? (REGION_EN[r] ?? r) : r)
 
   const matchType = (v: VilleCard): boolean => {
     if (!typeVoyage) return true
@@ -119,7 +128,7 @@ export default function DestinationsClient({ villes }: Props) {
     <div className="max-w-6xl mx-auto px-4 sm:px-8 pb-24">
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-xs text-gray-400 py-5">
-        <Link href="/" className="hover:text-[#1b4332]">Accueil</Link>
+        <Link href="/" className="hover:text-[#1b4332]">{en ? 'Home' : 'Accueil'}</Link>
         <span>›</span>
         <span className="text-gray-700">Destinations</span>
       </nav>
@@ -129,7 +138,7 @@ export default function DestinationsClient({ villes }: Props) {
         <span style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', fontSize: '18px', pointerEvents: 'none' }}>🔍</span>
         <input
           type="text"
-          placeholder="Rechercher une ville ou un pays…"
+          placeholder={en ? 'Search a city or country…' : 'Rechercher une ville ou un pays…'}
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           aria-label="Rechercher une destination"
@@ -143,13 +152,13 @@ export default function DestinationsClient({ villes }: Props) {
       {/* Tri + compteur */}
       <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
         <p style={{ color: 'var(--texte-2)', fontSize: '14px' }}>
-          <strong style={{ color: 'var(--foret)' }}>{filtered.length}</strong> destination{filtered.length > 1 ? 's' : ''}{query && ` pour « ${query} »`}
+          <strong style={{ color: 'var(--foret)' }}>{filtered.length}</strong> {en ? 'destination' : 'destination'}{filtered.length > 1 ? 's' : ''}{query && (en ? ` for “${query}”` : ` pour « ${query} »`)}
         </p>
         <div className="flex items-center gap-2">
-          <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>Trier :</span>
+          <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{en ? 'Sort:' : 'Trier :'}</span>
           <select value={sort} onChange={(e) => setSort(e.target.value)} aria-label="Trier les destinations"
             style={{ padding: '8px 12px', borderRadius: '10px', border: '1.5px solid rgba(27,67,50,0.3)', background: 'white', color: 'var(--foret)', fontSize: '13.5px', fontWeight: 600, cursor: 'pointer' }}>
-            {SORTS.map((s) => <option key={s.id} value={s.id}>{s.label}</option>)}
+            {SORTS.map((s) => <option key={s.id} value={s.id}>{en ? (SORT_EN[s.id] ?? s.label) : s.label}</option>)}
           </select>
         </div>
       </div>
@@ -158,7 +167,7 @@ export default function DestinationsClient({ villes }: Props) {
       <div className="filtres-scroll lg:hidden">
         {regions.map((r) => (
           <button key={r} className={`filtre-btn pill-filter ${filtre === r ? 'active' : ''}`} onClick={() => setFiltre(r)}>
-            {REGION_ICON[r] ?? ''}{r}
+            {REGION_ICON[r] ?? ''}{regionLabel(r)}
           </button>
         ))}
       </div>
@@ -167,7 +176,7 @@ export default function DestinationsClient({ villes }: Props) {
         {/* Sidebar Régions — desktop */}
         <aside className="dest-sidebar">
           <div className="bg-white rounded-2xl p-5 border border-[#1b4332]/5 shadow-[0_6px_20px_rgba(11,26,15,0.04)]">
-            <p className="text-base font-bold mb-3" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#0b1a0f' }}>Régions</p>
+            <p className="text-base font-bold mb-3" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#0b1a0f' }}>{en ? 'Regions' : 'Régions'}</p>
             <div className="flex flex-col gap-0.5">
               {regions.map((r) => {
                 const active = filtre === r
@@ -183,14 +192,14 @@ export default function DestinationsClient({ villes }: Props) {
           </div>
           {/* Type de voyage */}
           <div className="bg-white rounded-2xl p-5 border border-[#1b4332]/5 shadow-[0_6px_20px_rgba(11,26,15,0.04)] mt-5">
-            <p className="text-base font-bold mb-3" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#0b1a0f' }}>Type de voyage</p>
+            <p className="text-base font-bold mb-3" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#0b1a0f' }}>{en ? 'Travel type' : 'Type de voyage'}</p>
             <div className="flex flex-col gap-0.5">
               {TRAVEL_TYPES.map((tv) => {
                 const active = typeVoyage === tv.id
                 return (
                   <button key={tv.id} onClick={() => setTypeVoyage(active ? null : tv.id)} className="flex items-center gap-2.5 px-3.5 py-2.5 rounded-[10px] text-sm transition-colors text-left"
                     style={{ background: active ? '#1b4332' : 'transparent', color: active ? '#fdfaf3' : '#1a1a1a', fontWeight: active ? 700 : 500 }}>
-                    <span>{tv.icon}</span>{tv.label}
+                    <span>{tv.icon}</span>{en ? (TYPE_EN[tv.id] ?? tv.label) : tv.label}
                   </button>
                 )
               })}
@@ -199,7 +208,7 @@ export default function DestinationsClient({ villes }: Props) {
 
           <div className="relative overflow-hidden mt-5 rounded-2xl p-5" style={{ background: '#0b1a0f' }}>
             <p className="font-bold mb-1.5" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#c9a84c', fontSize: '16px' }}>Halal Score™</p>
-            <p style={{ color: '#a9b6a8', fontSize: '12.5px', lineHeight: 1.6 }}>Chaque ville est évaluée : restaurants certifiés, mosquées, accueil des familles musulmanes et absence d&apos;alcool.</p>
+            <p style={{ color: '#a9b6a8', fontSize: '12.5px', lineHeight: 1.6 }}>{en ? 'Every city is rated: certified restaurants, mosques, Muslim-family friendliness and alcohol availability.' : 'Chaque ville est évaluée : restaurants certifiés, mosquées, accueil des familles musulmanes et absence d\u2019alcool.'}</p>
           </div>
         </aside>
 
@@ -228,13 +237,13 @@ export default function DestinationsClient({ villes }: Props) {
                           On y annonce des options halal disponibles, pas une garantie globale. */}
                       {v.villeNonMusulmane ? (
                         <>
-                          <span className="ville-card-tag">✓ Options halal</span>
-                          <span className="ville-card-tag-2">Restaurants &amp; mosquées</span>
+                          <span className="ville-card-tag">{en ? '✓ Halal options' : '✓ Options halal'}</span>
+                          <span className="ville-card-tag-2">{en ? 'Restaurants & mosques' : 'Restaurants & mosquées'}</span>
                         </>
                       ) : (
                         <>
-                          <span className="ville-card-tag">✓ Halal vérifié</span>
-                          <span className="ville-card-tag-2">Sans alcool</span>
+                          <span className="ville-card-tag">{en ? '✓ Halal verified' : '✓ Halal vérifié'}</span>
+                          <span className="ville-card-tag-2">{en ? 'Alcohol-free' : 'Sans alcool'}</span>
                         </>
                       )}
                     </div>
@@ -247,7 +256,7 @@ export default function DestinationsClient({ villes }: Props) {
           {filtered.length === 0 && (
             <div style={{ textAlign: 'center', padding: '60px 20px', color: 'var(--texte-2)' }}>
               <div style={{ fontSize: '48px', marginBottom: '16px' }}>🔍</div>
-              <p>Aucune ville trouvée{query && <> pour « <strong>{query}</strong> »</>}.</p>
+              <p>{en ? 'No city found' : 'Aucune ville trouvée'}{query && (en ? <> for “<strong>{query}</strong>”</> : <> pour « <strong>{query}</strong> »</>)}.</p>
               <button onClick={() => { setQuery(''); setFiltre('Toutes'); setTypeVoyage(null) }} style={{ marginTop: '16px', padding: '10px 24px', background: 'var(--foret)', color: 'white', border: 'none', borderRadius: '10px', cursor: 'pointer', fontWeight: 600 }}>
                 Voir toutes les villes
               </button>

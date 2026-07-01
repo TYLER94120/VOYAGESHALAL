@@ -55,17 +55,18 @@ export default async function BlogPage() {
         <IslamicPattern opacity={0.07} />
         <div className="relative z-10">
           <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.3em] mb-4">
-            ✦ Ressources &amp; Guides
+            ✦ {isEN ? 'Resources & Guides' : 'Ressources & Guides'}
           </p>
           <h1
             className="text-4xl sm:text-5xl font-bold text-white leading-[1.05] mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
           >
-            Le journal du voyageur <span className="gold-em">musulman</span>
+            {isEN ? <>The Muslim traveler&apos;s <span className="gold-em">journal</span></> : <>Le journal du voyageur <span className="gold-em">musulman</span></>}
           </h1>
           <p className="text-white/60 max-w-xl mx-auto">
-            {articles.length} guides pratiques, destinations et conseils islamiques pour préparer vos
-            voyages halal.
+            {isEN
+              ? `${articles.length} practical guides, destinations and Islamic tips to plan your halal trips.`
+              : `${articles.length} guides pratiques, destinations et conseils islamiques pour préparer vos voyages halal.`}
           </p>
         </div>
       </section>
@@ -73,7 +74,7 @@ export default async function BlogPage() {
       {/* Breadcrumb */}
       <div className="bg-white border-b border-gray-100 px-6 sm:px-16 py-3">
         <nav className="flex items-center gap-2 text-xs text-gray-400 max-w-6xl mx-auto">
-          <Link href="/" className="hover:text-[#1b4332]">Accueil</Link>
+          <Link href="/" className="hover:text-[#1b4332]">{isEN ? 'Home' : 'Accueil'}</Link>
           <span>›</span>
           <span className="text-gray-700">Blog &amp; Guides</span>
         </nav>

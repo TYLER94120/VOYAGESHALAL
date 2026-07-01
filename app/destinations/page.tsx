@@ -87,8 +87,9 @@ function getAllVilles(): VilleCard[] {
 // Ordre d'affichage des filtres ; on ne garde que ceux réellement présents.
 const CONTINENT_ORDER = ['Asie', 'Afrique', 'Europe', 'Amérique du Nord', 'Amérique du Sud', 'Océanie']
 
-export default function DestinationsPage() {
+export default async function DestinationsPage() {
   const villes = getAllVilles()
+  const { isEN: en } = await getDomainSEO()
 
   // Filtres dérivés dynamiquement des continents réellement présents dans data/villes/
   const presents = new Set(villes.map((v) => v.continent).filter(Boolean) as string[])
@@ -104,17 +105,18 @@ export default function DestinationsPage() {
         <IslamicPattern opacity={0.07} />
         <div className="relative z-10">
           <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.3em] mb-4">
-            Toutes les destinations
+            {en ? 'All destinations' : 'Toutes les destinations'}
           </p>
           <h1
             className="text-4xl sm:text-5xl font-bold text-white leading-[1.05] mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
           >
-            {villes.length} destinations halal <span className="gold-em">vérifiées</span>
+            {villes.length} {en ? <>halal destinations <span className="gold-em">verified</span></> : <>destinations halal <span className="gold-em">vérifiées</span></>}
           </h1>
           <p className="text-white/60 text-base max-w-xl mx-auto leading-relaxed">
-            Restaurants halal, mosquées, guides pratiques et conseils locaux — pour voyager
-            sereinement en tant que musulman.
+            {en
+              ? 'Halal restaurants, mosques, practical guides and local tips — to travel with peace of mind as a Muslim.'
+              : 'Restaurants halal, mosquées, guides pratiques et conseils locaux — pour voyager sereinement en tant que musulman.'}
           </p>
         </div>
       </section>
