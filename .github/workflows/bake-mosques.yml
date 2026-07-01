@@ -1,0 +1,29 @@
+name: Baker les vraies mosquées OSM (villes fabriquées)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Bake mosquées Overpass
+        run: node scripts/bake-mosques.mjs
+      - name: Commit & push (filet de sécurité)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/villes
+          if git diff --cached --quiet; then echo "Aucun changement."; else
+            git commit -m "data(osm): vraies mosquées OSM (final)"
+            git pull --rebase origin main
+            git push
+          fi
