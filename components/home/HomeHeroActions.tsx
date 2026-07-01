@@ -8,9 +8,9 @@ import { useLocation } from '@/components/location/LocationProvider'
 // La recherche manuelle est TOUJOURS visible dessous : si la géoloc échoue, l'utilisateur
 // n'est jamais bloqué.
 export default function HomeHeroActions() {
-  const { geolocate, geoError } = useLocation()
+  const { geoError } = useLocation()
   const router = useRouter()
-  const [loading, setLoading] = useState(false)
+  const [loading] = useState(false)
   const [countdown, setCountdown] = useState(8)
 
   // Décompte visuel pendant la localisation (8s max)
@@ -21,11 +21,10 @@ export default function HomeHeroActions() {
     return () => clearInterval(id)
   }, [loading])
 
-  const handleLocate = async () => {
-    setLoading(true)
-    const city = await geolocate()
-    setLoading(false)
-    if (city) router.push(`/destinations/${city.slug}`)
+  // « Localise-moi » → ouvre la carte « Autour de moi » (façon 1er écran de l'app),
+  // qui gère elle-même la géolocalisation et affiche tous les points autour.
+  const handleLocate = () => {
+    router.push('/autour-de-moi')
   }
 
   return (
