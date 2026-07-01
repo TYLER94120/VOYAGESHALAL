@@ -68,6 +68,11 @@ export const viewport: Viewport = {
   viewportFit: 'cover',
 }
 
+// Site bi-domaine : la langue (et la marque) dépend de l'hôte de la requête.
+// On force le rendu dynamique sur TOUTES les routes pour qu'aucune page (dont « / »)
+// ne soit servie depuis un cache edge/build figé sur la mauvaise langue.
+export const dynamic = 'force-dynamic'
+
 export default async function RootLayout({
   children,
 }: {

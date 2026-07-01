@@ -5,6 +5,7 @@ import { useLocation } from '@/components/location/LocationProvider'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 import { PRAYER_METHODS, ASR_SCHOOLS, defaultMethodForCountry } from '@/lib/prayer'
 import AdhanSettings from '@/components/adhan/AdhanSettings'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 interface VilleOption {
   nom: string
@@ -33,6 +34,8 @@ interface Pos { lat?: number; lng?: number; label: string; pays?: string; apiNam
 
 export default function HorairesClient() {
   const { city } = useLocation()
+  const { lang } = useLanguage()
+  const en = lang === 'en'
   const [pos, setPos] = useState<Pos | null>(null)
   const [geoLoading, setGeoLoading] = useState(false)
   const [geoErr, setGeoErr] = useState<GeoError | null>(null)
@@ -76,7 +79,7 @@ export default function HorairesClient() {
     setGeoLoading(true); setGeoErr(null)
     try {
       const { lat, lng } = await getPosition({ highAccuracy: true })
-      setPos({ lat, lng, label: 'Ma position exacte' })
+      setPos({ lat, lng, label: en ? 'My exact location' : 'Ma position exacte' })
     } catch (code) {
       setGeoErr(describeGeoError(code as GeoErrorCode))
     } finally {
@@ -95,7 +98,7 @@ export default function HorairesClient() {
         disabled={geoLoading}
         style={{ width: '100%', padding: '16px', borderRadius: 14, border: 'none', cursor: geoLoading ? 'wait' : 'pointer', background: 'var(--foret)', color: '#fff', fontSize: 16, fontWeight: 700, marginBottom: 14, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8 }}
       >
-        📍 {geoLoading ? 'Localisation précise…' : 'Horaires pour ma position exacte (GPS)'}
+        📍 {geoLoading ? (en ? 'Precise location…' : 'Localisation précise…') : (en ? 'Times for my exact location (GPS)' : 'Horaires pour ma position exacte (GPS)')}
       </button>
 
       {geoErr && (
@@ -108,13 +111,13 @@ export default function HorairesClient() {
       {/* Réglages de calcul — engagent l'exactitude, donc explicites et modifiables */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 18 }}>
         <label style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 5, fontSize: 12, fontWeight: 700, color: 'var(--foret)' }}>
-          Méthode de calcul
+          {en ? 'Calculation method' : 'Méthode de calcul'}
           <select value={method} onChange={(e) => setMethodPref(Number(e.target.value))} style={{ width: '100%', padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)', textAlign: 'center', textAlignLast: 'center' }}>
             {PRAYER_METHODS.map((m) => <option key={m.id} value={m.id}>{m.label}</option>)}
           </select>
         </label>
         <label style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', gap: 5, fontSize: 12, fontWeight: 700, color: 'var(--foret)' }}>
-          École (ʿAsr)
+          {en ? 'School (ʿAsr)' : 'École (ʿAsr)'}
           <select value={school} onChange={(e) => setSchoolPref(Number(e.target.value))} style={{ width: '100%', padding: '10px 12px', borderRadius: 10, border: '1.5px solid rgba(27,67,50,0.25)', background: '#fff', fontSize: 13, color: 'var(--texte)', textAlign: 'center', textAlignLast: 'center' }}>
             {ASR_SCHOOLS.map((s) => <option key={s.id} value={s.id}>{s.label}</option>)}
           </select>
@@ -126,7 +129,7 @@ export default function HorairesClient() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 14, fontSize: 13, color: 'var(--texte-2)', flexWrap: 'wrap' }}>
             <span style={{ fontWeight: 700, color: 'var(--foret)' }}>📍 {pos.label}</span>
             {pos.lat != null && pos.lng != null && <span>· lat {pos.lat.toFixed(3)}, lng {pos.lng.toFixed(3)}</span>}
-            <button onClick={() => { setPos(null); setGeoErr(null) }} style={{ background: 'none', border: 'none', color: 'var(--or)', fontWeight: 700, fontSize: 13, cursor: 'pointer', marginLeft: 'auto' }}>Changer →</button>
+            <button onClick={() => { setPos(null); setGeoErr(null) }} style={{ background: 'none', border: 'none', color: 'var(--or)', fontWeight: 700, fontSize: 13, cursor: 'pointer', marginLeft: 'auto' }}>{en ? 'Change →' : 'Changer →'}</button>
           </div>
           <PrayerTimesWidget
             ville={pos.apiName ?? pos.label}
@@ -141,7 +144,7 @@ export default function HorairesClient() {
       ) : (
         <>
           <p style={{ fontSize: 13, color: 'var(--texte-2)', marginBottom: 10 }}>
-            Ou choisissez une ville (la position GPS reste la plus précise) :
+            {en ? 'Or pick a city (GPS location stays the most accurate):' : 'Ou choisissez une ville (la position GPS reste la plus précise) :'}
           </p>
           <div className="ville-grid" style={{ marginBottom: 18 }}>
             {VILLES.map((v) => (
@@ -154,8 +157,7 @@ export default function HorairesClient() {
       )}
 
       <p style={{ fontSize: 12, color: 'var(--texte-2)', marginTop: 16, lineHeight: 1.6 }}>
-        ⚠️ Les horaires varient selon la méthode de calcul et l’école juridique. Vérifiez la convention de votre
-        mosquée locale. Source : Aladhan.com · calcul basé sur votre position GPS.
+        {en ? '⚠️ Times vary by calculation method and juristic school. Check your local mosque\u2019s convention. Source: Aladhan.com · calculated from your GPS position.' : '⚠️ Les horaires varient selon la méthode de calcul et l\u2019école juridique. Vérifiez la convention de votre mosquée locale. Source : Aladhan.com · calcul basé sur votre position GPS.'}
       </p>
     </div>
   )
