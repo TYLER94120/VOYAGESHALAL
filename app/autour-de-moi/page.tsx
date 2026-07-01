@@ -29,25 +29,41 @@ const fmt = (m: number) => (m < 1000 ? `${Math.round(m)} m` : `${(m / 1000).toFi
 
 function buildQuery(cat: Cat, lat: number, lng: number, r: number) {
   if (cat === 'mosquees')
-    return `[out:json][timeout:25];(node["amenity"="place_of_worship"]["religion"="muslim"](around:${r},${lat},${lng});way["amenity"="place_of_worship"]["religion"="muslim"](around:${r},${lat},${lng}););out center;`
+    return `[out:json][timeout:15];(node["amenity"="place_of_worship"]["religion"="muslim"](around:${r},${lat},${lng});way["amenity"="place_of_worship"]["religion"="muslim"](around:${r},${lat},${lng}););out center;`
   if (cat === 'hotels')
-    return `[out:json][timeout:25];(node["tourism"~"hotel|guest_house|hostel"](around:${r},${lat},${lng});way["tourism"~"hotel|guest_house|hostel"](around:${r},${lat},${lng}););out center;`
+    return `[out:json][timeout:15];(node["tourism"~"hotel|guest_house|hostel"](around:${r},${lat},${lng});way["tourism"~"hotel|guest_house|hostel"](around:${r},${lat},${lng}););out center;`
   if (cat === 'boucheries')
-    return `[out:json][timeout:25];(node["shop"="butcher"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});node["shop"="butcher"]["halal"~"yes|only"](around:${r},${lat},${lng});way["shop"="butcher"]["diet:halal"~"yes|only"](around:${r},${lat},${lng}););out center;`
-  return `[out:json][timeout:25];(node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});node["amenity"~"restaurant|fast_food"]["cuisine"~"${HALAL_CUISINE}",i](around:${r},${lat},${lng});way["amenity"~"restaurant|fast_food"]["cuisine"~"${HALAL_CUISINE}",i](around:${r},${lat},${lng}););out center;`
+    return `[out:json][timeout:15];(node["shop"="butcher"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});node["shop"="butcher"]["halal"~"yes|only"](around:${r},${lat},${lng});way["shop"="butcher"]["diet:halal"~"yes|only"](around:${r},${lat},${lng}););out center;`
+  return `[out:json][timeout:15];(node["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});way["amenity"~"restaurant|fast_food"]["diet:halal"~"yes|only"](around:${r},${lat},${lng});node["amenity"~"restaurant|fast_food"]["cuisine"~"${HALAL_CUISINE}",i](around:${r},${lat},${lng});way["amenity"~"restaurant|fast_food"]["cuisine"~"${HALAL_CUISINE}",i](around:${r},${lat},${lng}););out center;`
 }
 
+// Interroge TOUS les miroirs Overpass EN PARALLÈLE et garde le premier qui répond
+// (les serveurs Overpass sont souvent surchargés → une requête séquentielle peut
+// bloquer plusieurs minutes). Timeout client strict à 10 s pour rester réactif.
 async function overpass(query: string) {
-  const endpoints = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter']
-  for (let i = 0; i < endpoints.length; i++) {
-    try {
-      const res = await fetch(endpoints[i], { method: 'POST', body: `data=${encodeURIComponent(query)}` })
-      if (!res.ok) continue
-      const j = await res.json()
-      return j.elements || []
-    } catch { /* endpoint suivant */ }
+  const endpoints = [
+    'https://overpass.kumi.systems/api/interpreter',
+    'https://overpass-api.de/api/interpreter',
+    'https://overpass.private.coffee/api/interpreter',
+  ]
+  const ctrl = new AbortController()
+  const timer = setTimeout(() => ctrl.abort(), 10000)
+  const attempts = endpoints.map(async (url) => {
+    const res = await fetch(url, { method: 'POST', body: `data=${encodeURIComponent(query)}`, signal: ctrl.signal })
+    if (!res.ok) throw new Error(String(res.status))
+    const j = await res.json()
+    return j.elements || []
+  })
+  try {
+    // Promise.any → le PREMIER miroir qui réussit gagne
+    const els = await Promise.any(attempts)
+    return els
+  } catch {
+    return null
+  } finally {
+    clearTimeout(timer)
+    ctrl.abort() // annule les requêtes miroirs encore en vol
   }
-  return null
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
