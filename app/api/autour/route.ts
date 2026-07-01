@@ -57,14 +57,20 @@ export async function GET(req: Request) {
     return NextResponse.json({ city: nearest.nom, spots: {} })
   }
 
+  const FALLBACK_RADIUS = 35000 // si rien dans le rayon serré, on montre les plus proches (banlieue)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const near = (arr: any[] | undefined, map: (o: any, dist: number) => any) => {
     if (!Array.isArray(arr)) return []
-    return arr
-      .map((o) => { const c = coordOf(o); if (!c) return null; const dist = haversine(lat, lng, c.lat, c.lng); return dist <= radius ? map({ ...o, lat: c.lat, lng: c.lng }, dist) : null })
-      .filter(Boolean)
-      .sort((a: { dist: number }, b: { dist: number }) => a.dist - b.dist)
-      .slice(0, 40)
+    // Tous les lieux géolocalisés, triés par distance à l'utilisateur
+    const all = arr
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      .map((o) => { const c = coordOf(o); return c ? { o: { ...o, lat: c.lat, lng: c.lng }, dist: haversine(lat, lng, c.lat, c.lng) } : null })
+      .filter((x): x is { o: any; dist: number } => x !== null) // eslint-disable-line @typescript-eslint/no-explicit-any
+      .sort((a, b) => a.dist - b.dist)
+    // Priorité au rayon serré ; si vide, repli sur les plus proches (≤ 35 km)
+    const within = all.filter((x) => x.dist <= radius)
+    const chosen = within.length ? within : all.filter((x) => x.dist <= FALLBACK_RADIUS)
+    return chosen.slice(0, 40).map((x) => map(x.o, x.dist))
   }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

@@ -58,7 +58,7 @@ async function overpass(query: string) {
     'https://overpass.private.coffee/api/interpreter',
   ]
   const ctrl = new AbortController()
-  const timer = setTimeout(() => ctrl.abort(), 10000)
+  const timer = setTimeout(() => ctrl.abort(), 13000)
   const attempts = endpoints.map(async (url) => {
     const res = await fetch(url, { method: 'POST', body: `data=${encodeURIComponent(query)}`, signal: ctrl.signal })
     if (!res.ok) throw new Error(String(res.status))
@@ -186,7 +186,15 @@ export default function AutourDeMoiPage() {
     // 2) Complément LIVE OpenStreetMap en arrière-plan, fusionné aux pré-chargés
     const els = await overpass(buildQuery(c, lat, lng, ME_RADIUS_M))
     const live = els ? parseOverpass(els, lat, lng, c) : []
-    render(mergeSpots(pre, live), c)
+    const merged = mergeSpots(pre, live)
+    render(merged, c)
+    // Cadre la carte pour rendre les résultats visibles (utile quand les points
+    // pré-chargés sont loin — ex. banlieue → mosquées du centre-ville).
+    const L = LRef.current
+    if (L && mapRef.current && merged.length) {
+      const pts = [[lat, lng], ...merged.slice(0, 8).map((s) => [s.lat, s.lng])]
+      try { mapRef.current.fitBounds(L.latLngBounds(pts), { padding: [50, 50], maxZoom: 15, animate: true }) } catch { /* noop */ }
+    }
     setLoading(false)
   }, [render])
 
