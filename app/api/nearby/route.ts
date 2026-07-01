@@ -17,14 +17,8 @@ import path from 'path'
 export const dynamic = 'force-dynamic'
 export const runtime = 'nodejs'
 
-type Kind = 'restaurants' | 'hotels' | 'activites' | 'boucheries'
-const KINDS: Kind[] = ['restaurants', 'hotels', 'activites', 'boucheries']
-// Champs qui contiennent des POI géolocalisables dans les JSON villes
-const SOURCE_KEYS: Record<Exclude<Kind, 'boucheries'>, string[]> = {
-  restaurants: ['restaurants'],
-  hotels: ['hotels'],
-  activites: ['activites'],
-}
+type Kind = 'restaurants' | 'hotels' | 'activites' | 'boucheries' | 'mosquees'
+const KINDS: Kind[] = ['restaurants', 'hotels', 'activites', 'boucheries', 'mosquees']
 
 interface Poi {
   kind: Kind
@@ -61,15 +55,23 @@ function buildIndex(): Poi[] {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     try { d = JSON.parse(readFileSync(path.join(dir, f), 'utf-8')) } catch { continue }
     const city = String((d as { nom?: string }).nom ?? f.replace('.json', ''))
-    for (const kind of ['restaurants', 'hotels', 'activites'] as const) {
-      for (const key of SOURCE_KEYS[kind]) {
-        const arr = d[key]
-        if (!Array.isArray(arr)) continue
-        for (const o of arr) {
-          const c = coordOf(o)
-          if (!c || !o?.nom) continue
-          out.push({ kind, lat: c.lat, lng: c.lng, city, nameKey: normName(o.nom), raw: { ...o, lat: c.lat, lng: c.lng } })
-        }
+    // POI géolocalisés : restaurants/hôtels/activités (tous), mosquées (OSM réelles
+    // uniquement — on exclut les entrées « bouche-trou » sans source, toutes au
+    // centre-ville, qui se superposeraient sur la carte).
+    const groups: [Kind, string, boolean][] = [
+      ['restaurants', 'restaurants', false],
+      ['hotels', 'hotels', false],
+      ['activites', 'activites', false],
+      ['mosquees', 'mosqueesPrincipales', true], // true = OSM réelles seulement
+    ]
+    for (const [kind, key, osmOnly] of groups) {
+      const arr = d[key]
+      if (!Array.isArray(arr)) continue
+      for (const o of arr) {
+        if (osmOnly && o?.source !== 'osm') continue
+        const c = coordOf(o)
+        if (!c || !o?.nom) continue
+        out.push({ kind, lat: c.lat, lng: c.lng, city, nameKey: normName(o.nom), raw: { ...o, lat: c.lat, lng: c.lng } })
       }
     }
   }

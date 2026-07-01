@@ -167,11 +167,11 @@ export default function AutourDeMoiPage() {
         id: `${c[0]}-${o.nom}-${o.lat}`,
         lat: o.lat, lng: o.lng, name: o.nom,
         dist: (o.distanceKm ?? 0) * 1000,
-        sub: c === 'restaurants' ? (o.type || 'Restaurant') : c === 'hotels' ? (o.categorie || o.priceRange || 'Hôtel') : (o.categorie || 'À faire'),
+        sub: c === 'restaurants' ? (o.type || 'Restaurant') : c === 'hotels' ? (o.categorie || o.priceRange || 'Hôtel') : c === 'mosquees' ? (o.adresse || 'Lieu de prière') : (o.categorie || 'À faire'),
         halal: c === 'restaurants' ? (o.certificationHalal || o.halalConfidence === 'certified' || o.halalConfidence === 'high' ? 'yes' : 'likely') : undefined,
       })
       const pre: Partial<Record<Cat, Spot[]>> = {}
-      for (const c of ['restaurants', 'hotels', 'activites'] as Cat[]) {
+      for (const c of ['restaurants', 'hotels', 'activites', 'mosquees'] as Cat[]) {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         pre[c] = ((s[c] || []) as any[]).map((o) => toSpot(o, c))
       }
