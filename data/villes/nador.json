@@ -1,303 +1,306 @@
 {
- "slug": "nador",
- "nom": "Nador",
- "pays": "Maroc",
- "pays_slug": "maroc",
- "continent": "Afrique",
- "region": "Nord du Maroc",
- "coordonnees": {
-  "lat": 35.1681,
-  "lng": -2.9335
- },
- "codeISO": "MA",
- "score_halal": 4.5,
- "halalScore": 9,
- "description": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
- "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
- "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
- "metaDescription": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
- "monnaie": "MAD (Dirham marocain)",
- "langue": "Arabe, Tamazight, Français",
- "statistiques": {
-  "restaurants_halal": 2,
-  "mosquees": 1,
-  "hotels": 18
- },
- "infoPratique": {
+  "slug": "nador",
+  "nom": "Nador",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Nord du Maroc",
+  "coordonnees": {
+    "lat": 35.1681,
+    "lng": -2.9335
+  },
+  "codeISO": "MA",
+  "score_halal": 4.5,
+  "halalScore": 9,
+  "description": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
+  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Nador_seafront.JPG/1920px-Nador_seafront.JPG",
+  "metaDescription": "Grand port de l'Oriental sur la lagune de Marchica, Nador est une ville dynamique proche de l'enclave de Melilla. Fruits de mer frais et culture rifaine.",
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-  "meilleureEpoque": "Printemps et automne (climat doux)."
- },
- "tags": [
-  "halal",
-  "Maroc"
- ],
- "restaurants": [
-  {
-   "nom": "Marbella",
-   "type": "fish, kebab, pizza, sandwich",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1713933,-2.928498",
-   "lat": 35.1713933,
-   "lng": -2.928498,
-   "halalConfidence": "likely",
-   "source": "osm"
+  "statistiques": {
+    "restaurants_halal": 2,
+    "mosquees": 1,
+    "hotels": 18
   },
-  {
-   "nom": "Las Belgas",
-   "type": "burger, ice cream, moroccan, pizza",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1789717,-2.9220735",
-   "lat": 35.1789717,
-   "lng": -2.9220735,
-   "halalConfidence": "likely",
-   "source": "osm"
-  }
- ],
- "hotels": [
-  {
-   "nom": "Hotel Lixus",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1722222,-2.9273564",
-   "lat": 35.1722222,
-   "lng": -2.9273564,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1722222,-2.9273564",
-   "source": "osm"
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
   },
-  {
-   "nom": "Hotel La Giralda",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1723142,-2.9271739",
-   "lat": 35.1723142,
-   "lng": -2.9271739,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1723142,-2.9271739",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Babel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1689558,-2.9246914",
-   "lat": 35.1689558,
-   "lng": -2.9246914,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1689558,-2.9246914",
-   "source": "osm"
-  },
-  {
-   "nom": "Al Manzah",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1765803,-2.9280754",
-   "lat": 35.1765803,
-   "lng": -2.9280754,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1765803,-2.9280754",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Annakhil",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1779981,-2.9307595",
-   "lat": 35.1779981,
-   "lng": -2.9307595,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1779981,-2.9307595",
-   "source": "osm"
-  },
-  {
-   "nom": "Al Hilal الهلال",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1735738,-2.9215789",
-   "lat": 35.1735738,
-   "lng": -2.9215789,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1735738,-2.9215789",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Nador فندق الناظور",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1740761,-2.9214681",
-   "lat": 35.1740761,
-   "lng": -2.9214681,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1740761,-2.9214681",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Al Khattabi فندق الخطابي",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1741386,-2.9212711",
-   "lat": 35.1741386,
-   "lng": -2.9212711,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1741386,-2.9212711",
-   "source": "osm"
-  },
-  {
-   "nom": "Al Andalus",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1787503,-2.9265074",
-   "lat": 35.1787503,
-   "lng": -2.9265074,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1787503,-2.9265074",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Alhabib فندق الحبيب",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1739696,-2.9205141",
-   "lat": 35.1739696,
-   "lng": -2.9205141,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1739696,-2.9205141",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Ryad",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1795913,-2.9271709",
-   "lat": 35.1795913,
-   "lng": -2.9271709,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1795913,-2.9271709",
-   "source": "osm"
-  },
-  {
-   "nom": "Corniche Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.174646,-2.919868",
-   "lat": 35.174646,
-   "lng": -2.919868,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.174646,-2.919868",
-   "source": "osm"
-  },
-  {
-   "nom": "Mercure RIF Nador Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1784125,-2.9219223",
-   "lat": 35.1784125,
-   "lng": -2.9219223,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1784125,-2.9219223",
-   "source": "osm"
-  },
-  {
-   "nom": "فندق المغرب الكبير",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.180169,-2.9245099",
-   "lat": 35.180169,
-   "lng": -2.9245099,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.180169,-2.9245099",
-   "source": "osm"
-  },
-  {
-   "nom": "Mediterannee",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1790458,-2.922049",
-   "lat": 35.1790458,
-   "lng": -2.922049,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1790458,-2.922049",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Molen Nador",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=35.1527438,-2.9256192",
-   "lat": 35.1527438,
-   "lng": -2.9256192,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1527438,-2.9256192",
-   "source": "osm"
-  },
-  {
-   "nom": "فندق المطار",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.1514112,-2.9209205",
-   "lat": 35.1514112,
-   "lng": -2.9209205,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.1514112,-2.9209205",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Marchica Lagoon Resort, Nador Morocco",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.2070058,-2.9125472",
-   "lat": 35.2070058,
-   "lng": -2.9125472,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.2070058,-2.9125472",
-   "source": "osm"
-  }
- ],
- "mosqueesPrincipales": [
-  {
-   "id": "m1",
-   "nom": "Grande Mosquée de Nador",
-   "type": "Mosquée",
-   "adresse": "Centre-ville, Nador",
-   "description": "Mosquée principale de la ville, prière du vendredi.",
-   "note": 5,
-   "acces_non_musulmans": false,
-   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Nador%20Nador%20Maroc"
-  }
- ],
- "activites": [
-  {
-   "id": "a1",
-   "nom": "Lagune de Marchica",
-   "categorie": "Nature",
-   "description": "Vaste lagune protégée, oiseaux migrateurs, promenade et sports nautiques.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Lagune%20de%20Marchica%20Nador%20Maroc"
-  },
-  {
-   "id": "a2",
-   "nom": "Marchica Parc",
-   "categorie": "Loisirs",
-   "description": "Aménagements de loisirs et corniche au bord de la lagune.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Marchica%20Parc%20Nador%20Maroc"
-  },
-  {
-   "id": "a3",
-   "nom": "Corniche de Nador",
-   "categorie": "Loisirs",
-   "description": "Promenade animée le soir face à l'eau.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Corniche%20de%20Nador%20Nador%20Maroc"
-  }
- ],
- "imageCredit": "Wikimedia Commons",
- "osmEnriched": true,
- "osmEnrichedAt": "2026-06-30"
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [
+    {
+      "nom": "Marbella",
+      "type": "fish, kebab, pizza, sandwich",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1713933,-2.928498",
+      "lat": 35.1713933,
+      "lng": -2.928498,
+      "halalConfidence": "likely",
+      "source": "osm"
+    },
+    {
+      "nom": "Las Belgas",
+      "type": "burger, ice cream, moroccan, pizza",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1789717,-2.9220735",
+      "lat": 35.1789717,
+      "lng": -2.9220735,
+      "halalConfidence": "likely",
+      "source": "osm"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Hotel Lixus",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1722222,-2.9273564",
+      "lat": 35.1722222,
+      "lng": -2.9273564,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1722222,-2.9273564",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel La Giralda",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1723142,-2.9271739",
+      "lat": 35.1723142,
+      "lng": -2.9271739,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1723142,-2.9271739",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Babel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1689558,-2.9246914",
+      "lat": 35.1689558,
+      "lng": -2.9246914,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1689558,-2.9246914",
+      "source": "osm"
+    },
+    {
+      "nom": "Al Manzah",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1765803,-2.9280754",
+      "lat": 35.1765803,
+      "lng": -2.9280754,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1765803,-2.9280754",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Annakhil",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1779981,-2.9307595",
+      "lat": 35.1779981,
+      "lng": -2.9307595,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1779981,-2.9307595",
+      "source": "osm"
+    },
+    {
+      "nom": "Al Hilal الهلال",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1735738,-2.9215789",
+      "lat": 35.1735738,
+      "lng": -2.9215789,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1735738,-2.9215789",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Nador فندق الناظور",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1740761,-2.9214681",
+      "lat": 35.1740761,
+      "lng": -2.9214681,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1740761,-2.9214681",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Al Khattabi فندق الخطابي",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1741386,-2.9212711",
+      "lat": 35.1741386,
+      "lng": -2.9212711,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1741386,-2.9212711",
+      "source": "osm"
+    },
+    {
+      "nom": "Al Andalus",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1787503,-2.9265074",
+      "lat": 35.1787503,
+      "lng": -2.9265074,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1787503,-2.9265074",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Alhabib فندق الحبيب",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1739696,-2.9205141",
+      "lat": 35.1739696,
+      "lng": -2.9205141,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1739696,-2.9205141",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Ryad",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1795913,-2.9271709",
+      "lat": 35.1795913,
+      "lng": -2.9271709,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1795913,-2.9271709",
+      "source": "osm"
+    },
+    {
+      "nom": "Corniche Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.174646,-2.919868",
+      "lat": 35.174646,
+      "lng": -2.919868,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.174646,-2.919868",
+      "source": "osm"
+    },
+    {
+      "nom": "Mercure RIF Nador Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1784125,-2.9219223",
+      "lat": 35.1784125,
+      "lng": -2.9219223,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1784125,-2.9219223",
+      "source": "osm"
+    },
+    {
+      "nom": "فندق المغرب الكبير",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.180169,-2.9245099",
+      "lat": 35.180169,
+      "lng": -2.9245099,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.180169,-2.9245099",
+      "source": "osm"
+    },
+    {
+      "nom": "Mediterannee",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1790458,-2.922049",
+      "lat": 35.1790458,
+      "lng": -2.922049,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1790458,-2.922049",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Molen Nador",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=35.1527438,-2.9256192",
+      "lat": 35.1527438,
+      "lng": -2.9256192,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1527438,-2.9256192",
+      "source": "osm"
+    },
+    {
+      "nom": "فندق المطار",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.1514112,-2.9209205",
+      "lat": 35.1514112,
+      "lng": -2.9209205,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.1514112,-2.9209205",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Marchica Lagoon Resort, Nador Morocco",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.2070058,-2.9125472",
+      "lat": 35.2070058,
+      "lng": -2.9125472,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.2070058,-2.9125472",
+      "source": "osm"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Nador",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Nador",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Nador%20Nador%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Lagune de Marchica",
+      "categorie": "Nature",
+      "description": "Vaste lagune protégée, oiseaux migrateurs, promenade et sports nautiques.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Lagune%20de%20Marchica%20Nador%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Marchica Parc",
+      "categorie": "Loisirs",
+      "description": "Aménagements de loisirs et corniche au bord de la lagune.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Marchica%20Parc%20Nador%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Corniche de Nador",
+      "categorie": "Loisirs",
+      "description": "Promenade animée le soir face à l'eau.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Corniche%20de%20Nador%20Nador%20Maroc"
+    }
+  ],
+  "imageCredit": "Wikimedia Commons",
+  "osmEnriched": true,
+  "osmEnrichedAt": "2026-06-30",
+  "description_en": "Nador, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 2 halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+  "metaDescription_en": "Halal guide to Nador: 2+ halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+  "nom_en": "Nador"
 }

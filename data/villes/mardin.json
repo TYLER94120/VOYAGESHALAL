@@ -1,375 +1,378 @@
 {
- "slug": "mardin",
- "nom": "Mardin",
- "pays": "Turquie",
- "pays_slug": "turquie",
- "continent": "Asie",
- "region": "Turquie",
- "coordonnees": {
-  "lat": 37.3122,
-  "lng": 40.7351
- },
- "codeISO": "",
- "score_halal": 4.5,
- "halalScore": 9.1,
- "description": "Ville-terrasse surplombant la plaine de Mésopotamie, Mardin est un joyau de pierre dorée aux medersas et mosquées séculaires.",
- "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/View_from_Mardin_to_the_Mesopotamian_plains.jpg",
- "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/67/View_from_Mardin_to_the_Mesopotamian_plains.jpg",
- "metaDescription": "Ville-terrasse surplombant la plaine de Mésopotamie, Mardin est un joyau de pierre dorée aux medersas et mosquées séculaires.",
- "statistiques": {
-  "restaurants_halal": 4,
-  "mosquees": 1,
-  "hotels": 23
- },
- "infoPratique": {
-  "transport": "Accessible par avion / transports locaux.",
-  "meilleureEpoque": "Printemps et automne."
- },
- "tags": [
-  "halal"
- ],
- "restaurants": [
-  {
-   "nom": "Tarihi Mardin Kahvaltıcısı",
-   "type": "turkish",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3128727,40.7354771",
-   "lat": 37.3128727,
-   "lng": 40.7354771,
-   "halalConfidence": "likely",
-   "source": "osm"
+  "slug": "mardin",
+  "nom": "Mardin",
+  "pays": "Turquie",
+  "pays_slug": "turquie",
+  "continent": "Asie",
+  "region": "Turquie",
+  "coordonnees": {
+    "lat": 37.3122,
+    "lng": 40.7351
   },
-  {
-   "nom": "Sadik Künefe",
-   "type": "local, turkish, ice cream",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3193095,40.7241108",
-   "lat": 37.3193095,
-   "lng": 40.7241108,
-   "halalConfidence": "likely",
-   "source": "osm"
+  "codeISO": "",
+  "score_halal": 4.5,
+  "halalScore": 9.1,
+  "description": "Ville-terrasse surplombant la plaine de Mésopotamie, Mardin est un joyau de pierre dorée aux medersas et mosquées séculaires.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/View_from_Mardin_to_the_Mesopotamian_plains.jpg",
+  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/6/67/View_from_Mardin_to_the_Mesopotamian_plains.jpg",
+  "metaDescription": "Ville-terrasse surplombant la plaine de Mésopotamie, Mardin est un joyau de pierre dorée aux medersas et mosquées séculaires.",
+  "statistiques": {
+    "restaurants_halal": 4,
+    "mosquees": 1,
+    "hotels": 23
   },
-  {
-   "nom": "Adana Dostlar Kebapçısı",
-   "type": "local, kebab, turkish",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3227165,40.7172709",
-   "lat": 37.3227165,
-   "lng": 40.7172709,
-   "halalConfidence": "likely",
-   "source": "osm"
+  "infoPratique": {
+    "transport": "Accessible par avion / transports locaux.",
+    "meilleureEpoque": "Printemps et automne."
   },
-  {
-   "nom": "Kasr-i Kaya",
-   "type": "turkish, breakfast, local, tea",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3258817,40.7164938",
-   "lat": 37.3258817,
-   "lng": 40.7164938,
-   "halalConfidence": "likely",
-   "source": "osm"
-  }
- ],
- "hotels": [
-  {
-   "nom": "Ulubey Konağı",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3127933,40.7370768",
-   "lat": 37.3127933,
-   "lng": 40.7370768,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3127933,40.7370768",
-   "source": "osm"
-  },
-  {
-   "nom": "Tuğhan Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.313593,40.7365879",
-   "lat": 37.313593,
-   "lng": 40.7365879,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.313593,40.7365879",
-   "source": "osm"
-  },
-  {
-   "nom": "Kadim Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3137873,40.7371239",
-   "lat": 37.3137873,
-   "lng": 40.7371239,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3137873,40.7371239",
-   "source": "osm"
-  },
-  {
-   "nom": "Kaya Ninova",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3134959,40.7375285",
-   "lat": 37.3134959,
-   "lng": 40.7375285,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.kayaninovaotel.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Merde Konağı",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3121071,40.7387526",
-   "lat": 37.3121071,
-   "lng": 40.7387526,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3121071,40.7387526",
-   "source": "osm"
-  },
-  {
-   "nom": "Başak Otel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3133945,40.7392869",
-   "lat": 37.3133945,
-   "lng": 40.7392869,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3133945,40.7392869",
-   "source": "osm"
-  },
-  {
-   "nom": "Gılgamış otel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3132608,40.7307325",
-   "lat": 37.3132608,
-   "lng": 40.7307325,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3132608,40.7307325",
-   "source": "osm"
-  },
-  {
-   "nom": "Maridin Otel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3128257,40.7303037",
-   "lat": 37.3128257,
-   "lng": 40.7303037,
-   "halalFriendly": false,
-   "bookingUrl": "http://www.maridin.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Basak Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3136004,40.7400219",
-   "lat": 37.3136004,
-   "lng": 40.7400219,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3136004,40.7400219",
-   "source": "osm"
-  },
-  {
-   "nom": "Büyük Mardin Oteli",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3099844,40.7301147",
-   "lat": 37.3099844,
-   "lng": 40.7301147,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3099844,40.7301147",
-   "source": "osm"
-  },
-  {
-   "nom": "Ro House",
-   "categorie": "Auberge",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3132804,40.7287012",
-   "lat": 37.3132804,
-   "lng": 40.7287012,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3132804,40.7287012",
-   "source": "osm"
-  },
-  {
-   "nom": "Mardin Osmanlı Konağı",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3140499,40.7423469",
-   "lat": 37.3140499,
-   "lng": 40.7423469,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3140499,40.7423469",
-   "source": "osm"
-  },
-  {
-   "nom": "Erdoba Evleri Babil Konağı",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3140115,40.7428162",
-   "lat": 37.3140115,
-   "lng": 40.7428162,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3140115,40.7428162",
-   "source": "osm"
-  },
-  {
-   "nom": "Izala Boutique Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3143939,40.7429214",
-   "lat": 37.3143939,
-   "lng": 40.7429214,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3143939,40.7429214",
-   "source": "osm"
-  },
-  {
-   "nom": "Beyt Sami Oteli",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3126741,40.7434103",
-   "lat": 37.3126741,
-   "lng": 40.7434103,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3126741,40.7434103",
-   "source": "osm"
-  },
-  {
-   "nom": "Merdin Boutique Hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3138627,40.7451705",
-   "lat": 37.3138627,
-   "lng": 40.7451705,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3138627,40.7451705",
-   "source": "osm"
-  },
-  {
-   "nom": "Mardin Apart Otel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3141514,40.7462961",
-   "lat": 37.3141514,
-   "lng": 40.7462961,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3141514,40.7462961",
-   "source": "osm"
-  },
-  {
-   "nom": "Rosa Hostel",
-   "categorie": "Auberge",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3157866,40.7473819",
-   "lat": 37.3157866,
-   "lng": 40.7473819,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=37.3157866,40.7473819",
-   "source": "osm"
-  },
-  {
-   "nom": "Mardin Öğretmenevi",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3234341,40.7249475",
-   "lat": 37.3234341,
-   "lng": 40.7249475,
-   "halalFriendly": false,
-   "bookingUrl": "https://artukluogretmenevi.com.tr/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hilton Garden Inn Mardin",
-   "categorie": "Hôtel",
-   "priceRange": "€€€€",
-   "score": 4,
-   "mapsUrl": "https://maps.google.com/?q=37.3185309,40.7138946",
-   "lat": 37.3185309,
-   "lng": 40.7138946,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hilton.com/en/hotels/mqmgigi-hilton-garden-inn-mardin/",
-   "source": "osm"
-  },
-  {
-   "nom": "Mardin Polis Evi",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=37.3253919,40.7158446",
-   "lat": 37.3253919,
-   "lng": 40.7158446,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.polisevi.com/mardin-polisevi/",
-   "source": "osm"
-  },
-  {
-   "nom": "Ramada Plaza by Wyndham Mardin",
-   "categorie": "Hôtel",
-   "priceRange": "€€€€",
-   "score": 5,
-   "mapsUrl": "https://maps.google.com/?q=37.3268794,40.7535062",
-   "lat": 37.3268794,
-   "lng": 40.7535062,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.wyndhamhotels.com/tr-tr/ramada/mardin-turkiye/ramada-plaza-mardin/overview",
-   "source": "osm"
-  },
-  {
-   "nom": "Yay Grand Otel",
-   "categorie": "Hôtel",
-   "priceRange": "€€€€",
-   "score": 4,
-   "mapsUrl": "https://maps.google.com/?q=37.3369554,40.6956477",
-   "lat": 37.3369554,
-   "lng": 40.6956477,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.yaygrand.com/tr",
-   "source": "osm"
-  }
- ],
- "mosqueesPrincipales": [
-  {
-   "id": "m1",
-   "nom": "Grande Mosquée de Mardin",
-   "type": "Mosquée",
-   "adresse": "Centre-ville, Mardin",
-   "description": "Mosquée principale de la ville.",
-   "note": 5,
-   "acces_non_musulmans": false,
-   "mapsUrl": "https://maps.google.com/?q=Mosque%20Mardin%20Mardin"
-  }
- ],
- "activites": [
-  {
-   "id": "a1",
-   "nom": "Grande Mosquée de Mardin",
-   "categorie": "Spirituel",
-   "description": "Mosquée seldjoukide au minaret historique.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20de%20Mardin%20Mardin"
-  },
-  {
-   "id": "a2",
-   "nom": "Medersa Zinciriye",
-   "categorie": "Culture",
-   "description": "École coranique aux portails sculptés et vue panoramique.",
-   "prix": "Payant",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Medersa%20Zinciriye%20Mardin"
-  },
-  {
-   "id": "a3",
-   "nom": "Vieille ville en terrasses",
-   "categorie": "Culture",
-   "description": "Ruelles, maisons de pierre et artisanat.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20en%20terrasses%20Mardin"
-  }
- ],
- "imageCredit": "Wikimedia Commons",
- "osmEnriched": true,
- "osmEnrichedAt": "2026-06-30"
+  "tags": [
+    "halal"
+  ],
+  "restaurants": [
+    {
+      "nom": "Tarihi Mardin Kahvaltıcısı",
+      "type": "turkish",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3128727,40.7354771",
+      "lat": 37.3128727,
+      "lng": 40.7354771,
+      "halalConfidence": "likely",
+      "source": "osm"
+    },
+    {
+      "nom": "Sadik Künefe",
+      "type": "local, turkish, ice cream",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3193095,40.7241108",
+      "lat": 37.3193095,
+      "lng": 40.7241108,
+      "halalConfidence": "likely",
+      "source": "osm"
+    },
+    {
+      "nom": "Adana Dostlar Kebapçısı",
+      "type": "local, kebab, turkish",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3227165,40.7172709",
+      "lat": 37.3227165,
+      "lng": 40.7172709,
+      "halalConfidence": "likely",
+      "source": "osm"
+    },
+    {
+      "nom": "Kasr-i Kaya",
+      "type": "turkish, breakfast, local, tea",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3258817,40.7164938",
+      "lat": 37.3258817,
+      "lng": 40.7164938,
+      "halalConfidence": "likely",
+      "source": "osm"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Ulubey Konağı",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3127933,40.7370768",
+      "lat": 37.3127933,
+      "lng": 40.7370768,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3127933,40.7370768",
+      "source": "osm"
+    },
+    {
+      "nom": "Tuğhan Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.313593,40.7365879",
+      "lat": 37.313593,
+      "lng": 40.7365879,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.313593,40.7365879",
+      "source": "osm"
+    },
+    {
+      "nom": "Kadim Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3137873,40.7371239",
+      "lat": 37.3137873,
+      "lng": 40.7371239,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3137873,40.7371239",
+      "source": "osm"
+    },
+    {
+      "nom": "Kaya Ninova",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3134959,40.7375285",
+      "lat": 37.3134959,
+      "lng": 40.7375285,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.kayaninovaotel.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Merde Konağı",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3121071,40.7387526",
+      "lat": 37.3121071,
+      "lng": 40.7387526,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3121071,40.7387526",
+      "source": "osm"
+    },
+    {
+      "nom": "Başak Otel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3133945,40.7392869",
+      "lat": 37.3133945,
+      "lng": 40.7392869,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3133945,40.7392869",
+      "source": "osm"
+    },
+    {
+      "nom": "Gılgamış otel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3132608,40.7307325",
+      "lat": 37.3132608,
+      "lng": 40.7307325,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3132608,40.7307325",
+      "source": "osm"
+    },
+    {
+      "nom": "Maridin Otel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3128257,40.7303037",
+      "lat": 37.3128257,
+      "lng": 40.7303037,
+      "halalFriendly": false,
+      "bookingUrl": "http://www.maridin.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Basak Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3136004,40.7400219",
+      "lat": 37.3136004,
+      "lng": 40.7400219,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3136004,40.7400219",
+      "source": "osm"
+    },
+    {
+      "nom": "Büyük Mardin Oteli",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3099844,40.7301147",
+      "lat": 37.3099844,
+      "lng": 40.7301147,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3099844,40.7301147",
+      "source": "osm"
+    },
+    {
+      "nom": "Ro House",
+      "categorie": "Auberge",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3132804,40.7287012",
+      "lat": 37.3132804,
+      "lng": 40.7287012,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3132804,40.7287012",
+      "source": "osm"
+    },
+    {
+      "nom": "Mardin Osmanlı Konağı",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3140499,40.7423469",
+      "lat": 37.3140499,
+      "lng": 40.7423469,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3140499,40.7423469",
+      "source": "osm"
+    },
+    {
+      "nom": "Erdoba Evleri Babil Konağı",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3140115,40.7428162",
+      "lat": 37.3140115,
+      "lng": 40.7428162,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3140115,40.7428162",
+      "source": "osm"
+    },
+    {
+      "nom": "Izala Boutique Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3143939,40.7429214",
+      "lat": 37.3143939,
+      "lng": 40.7429214,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3143939,40.7429214",
+      "source": "osm"
+    },
+    {
+      "nom": "Beyt Sami Oteli",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3126741,40.7434103",
+      "lat": 37.3126741,
+      "lng": 40.7434103,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3126741,40.7434103",
+      "source": "osm"
+    },
+    {
+      "nom": "Merdin Boutique Hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3138627,40.7451705",
+      "lat": 37.3138627,
+      "lng": 40.7451705,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3138627,40.7451705",
+      "source": "osm"
+    },
+    {
+      "nom": "Mardin Apart Otel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3141514,40.7462961",
+      "lat": 37.3141514,
+      "lng": 40.7462961,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3141514,40.7462961",
+      "source": "osm"
+    },
+    {
+      "nom": "Rosa Hostel",
+      "categorie": "Auberge",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3157866,40.7473819",
+      "lat": 37.3157866,
+      "lng": 40.7473819,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=37.3157866,40.7473819",
+      "source": "osm"
+    },
+    {
+      "nom": "Mardin Öğretmenevi",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3234341,40.7249475",
+      "lat": 37.3234341,
+      "lng": 40.7249475,
+      "halalFriendly": false,
+      "bookingUrl": "https://artukluogretmenevi.com.tr/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hilton Garden Inn Mardin",
+      "categorie": "Hôtel",
+      "priceRange": "€€€€",
+      "score": 4,
+      "mapsUrl": "https://maps.google.com/?q=37.3185309,40.7138946",
+      "lat": 37.3185309,
+      "lng": 40.7138946,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hilton.com/en/hotels/mqmgigi-hilton-garden-inn-mardin/",
+      "source": "osm"
+    },
+    {
+      "nom": "Mardin Polis Evi",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=37.3253919,40.7158446",
+      "lat": 37.3253919,
+      "lng": 40.7158446,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.polisevi.com/mardin-polisevi/",
+      "source": "osm"
+    },
+    {
+      "nom": "Ramada Plaza by Wyndham Mardin",
+      "categorie": "Hôtel",
+      "priceRange": "€€€€",
+      "score": 5,
+      "mapsUrl": "https://maps.google.com/?q=37.3268794,40.7535062",
+      "lat": 37.3268794,
+      "lng": 40.7535062,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.wyndhamhotels.com/tr-tr/ramada/mardin-turkiye/ramada-plaza-mardin/overview",
+      "source": "osm"
+    },
+    {
+      "nom": "Yay Grand Otel",
+      "categorie": "Hôtel",
+      "priceRange": "€€€€",
+      "score": 4,
+      "mapsUrl": "https://maps.google.com/?q=37.3369554,40.6956477",
+      "lat": 37.3369554,
+      "lng": 40.6956477,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.yaygrand.com/tr",
+      "source": "osm"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Mardin",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Mardin",
+      "description": "Mosquée principale de la ville.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Mosque%20Mardin%20Mardin"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Grande Mosquée de Mardin",
+      "categorie": "Spirituel",
+      "description": "Mosquée seldjoukide au minaret historique.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20de%20Mardin%20Mardin"
+    },
+    {
+      "id": "a2",
+      "nom": "Medersa Zinciriye",
+      "categorie": "Culture",
+      "description": "École coranique aux portails sculptés et vue panoramique.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Medersa%20Zinciriye%20Mardin"
+    },
+    {
+      "id": "a3",
+      "nom": "Vieille ville en terrasses",
+      "categorie": "Culture",
+      "description": "Ruelles, maisons de pierre et artisanat.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vieille%20ville%20en%20terrasses%20Mardin"
+    }
+  ],
+  "imageCredit": "Wikimedia Commons",
+  "osmEnriched": true,
+  "osmEnrichedAt": "2026-06-30",
+  "description_en": "Mardin, in Turkey, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 4 halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+  "metaDescription_en": "Halal guide to Mardin: 4+ halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+  "nom_en": "Mardin"
 }

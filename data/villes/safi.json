@@ -1,247 +1,250 @@
 {
- "slug": "safi",
- "nom": "Safi",
- "pays": "Maroc",
- "pays_slug": "maroc",
- "continent": "Afrique",
- "region": "Intérieur du Maroc",
- "coordonnees": {
-  "lat": 32.2994,
-  "lng": -9.2372
- },
- "codeISO": "MA",
- "score_halal": 4.5,
- "halalScore": 8.9,
- "description": "Capitale de la poterie marocaine et grand port sardinier atlantique. Colline des potiers, four traditionnels et château portugais en bord de mer.",
- "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Safi_minaret.png",
- "image_hero": "https://upload.wikimedia.org/wikipedia/commons/0/09/Safi_minaret.png",
- "metaDescription": "Capitale de la poterie marocaine et grand port sardinier atlantique. Colline des potiers, four traditionnels et château portugais en bord de mer.",
- "monnaie": "MAD (Dirham marocain)",
- "langue": "Arabe, Tamazight, Français",
- "statistiques": {
-  "restaurants_halal": 2,
-  "mosquees": 1,
-  "hotels": 13
- },
- "infoPratique": {
+  "slug": "safi",
+  "nom": "Safi",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Intérieur du Maroc",
+  "coordonnees": {
+    "lat": 32.2994,
+    "lng": -9.2372
+  },
+  "codeISO": "MA",
+  "score_halal": 4.5,
+  "halalScore": 8.9,
+  "description": "Capitale de la poterie marocaine et grand port sardinier atlantique. Colline des potiers, four traditionnels et château portugais en bord de mer.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Safi_minaret.png",
+  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/0/09/Safi_minaret.png",
+  "metaDescription": "Capitale de la poterie marocaine et grand port sardinier atlantique. Colline des potiers, four traditionnels et château portugais en bord de mer.",
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-  "meilleureEpoque": "Printemps et automne (climat doux)."
- },
- "tags": [
-  "halal",
-  "Maroc"
- ],
- "restaurants": [
-  {
-   "nom": "wzanifood",
-   "type": "fast food, pizza, burger, tacos",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.3175365,-9.2286801",
-   "lat": 32.3175365,
-   "lng": -9.2286801,
-   "halalConfidence": "yes",
-   "source": "osm"
+  "statistiques": {
+    "restaurants_halal": 2,
+    "mosquees": 1,
+    "hotels": 13
   },
-  {
-   "nom": "Chez Hosni",
-   "type": "moroccan",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.3002498,-9.2391255",
-   "lat": 32.3002498,
-   "lng": -9.2391255,
-   "halalConfidence": "likely",
-   "source": "osm"
-  }
- ],
- "hotels": [
-  {
-   "nom": "Riad Safi",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2990884,-9.2398307",
-   "lat": 32.2990884,
-   "lng": -9.2398307,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2990884,-9.2398307",
-   "source": "osm"
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
   },
-  {
-   "nom": "Golden Tulip Farah Safi",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2955745,-9.2389402",
-   "lat": 32.2955745,
-   "lng": -9.2389402,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2955745,-9.2389402",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel d'Honneur",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2985251,-9.2428822",
-   "lat": 32.2985251,
-   "lng": -9.2428822,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2985251,-9.2428822",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Le Cheval Blanc",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.29822,-9.2429025",
-   "lat": 32.29822,
-   "lng": -9.2429025,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.29822,-9.2429025",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel de Paris",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2980441,-9.2430835",
-   "lat": 32.2980441,
-   "lng": -9.2430835,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2980441,-9.2430835",
-   "source": "osm"
-  },
-  {
-   "nom": "فندق الصويرة",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2981488,-9.2431248",
-   "lat": 32.2981488,
-   "lng": -9.2431248,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2981488,-9.2431248",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Atlantide",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2946096,-9.2396795",
-   "lat": 32.2946096,
-   "lng": -9.2396795,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2946096,-9.2396795",
-   "source": "osm"
-  },
-  {
-   "nom": "Majestic",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2976709,-9.2431681",
-   "lat": 32.2976709,
-   "lng": -9.2431681,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2976709,-9.2431681",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Riad Asif",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2963242,-9.2434586",
-   "lat": 32.2963242,
-   "lng": -9.2434586,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2963242,-9.2434586",
-   "source": "osm"
-  },
-  {
-   "nom": "assif",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2940003,-9.2330517",
-   "lat": 32.2940003,
-   "lng": -9.2330517,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2940003,-9.2330517",
-   "source": "osm"
-  },
-  {
-   "nom": "les mimousas (Safi )",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2913733,-9.2333227",
-   "lat": 32.2913733,
-   "lng": -9.2333227,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2913733,-9.2333227",
-   "source": "osm"
-  },
-  {
-   "nom": "abda",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.2866377,-9.230962",
-   "lat": 32.2866377,
-   "lng": -9.230962,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.2866377,-9.230962",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Atlantique",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=32.3229746,-9.2566523",
-   "lat": 32.3229746,
-   "lng": -9.2566523,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=32.3229746,-9.2566523",
-   "source": "osm"
-  }
- ],
- "mosqueesPrincipales": [
-  {
-   "id": "m1",
-   "nom": "Grande Mosquée de Safi",
-   "type": "Mosquée",
-   "adresse": "Centre-ville, Safi",
-   "description": "Mosquée principale de la ville, prière du vendredi.",
-   "note": 5,
-   "acces_non_musulmans": false,
-   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Safi%20Safi%20Maroc"
-  }
- ],
- "activites": [
-  {
-   "id": "a1",
-   "nom": "Colline des potiers",
-   "categorie": "Artisanat",
-   "description": "Ateliers de céramique de Safi en activité, démonstrations et achats.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Colline%20des%20potiers%20Safi%20Maroc"
-  },
-  {
-   "id": "a2",
-   "nom": "Château de la Mer (Ksar el Bahr)",
-   "categorie": "Histoire",
-   "description": "Forteresse portugaise face à l'Atlantique.",
-   "prix": "Payant",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Ch%C3%A2teau%20de%20la%20Mer%20%28Ksar%20el%20Bahr%29%20Safi%20Maroc"
-  },
-  {
-   "id": "a3",
-   "nom": "Médina et souk",
-   "categorie": "Culture",
-   "description": "Souks, remparts et quartier des potiers.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20et%20souk%20Safi%20Maroc"
-  }
- ],
- "imageCredit": "Wikimedia Commons",
- "osmEnriched": true,
- "osmEnrichedAt": "2026-06-30"
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [
+    {
+      "nom": "wzanifood",
+      "type": "fast food, pizza, burger, tacos",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.3175365,-9.2286801",
+      "lat": 32.3175365,
+      "lng": -9.2286801,
+      "halalConfidence": "yes",
+      "source": "osm"
+    },
+    {
+      "nom": "Chez Hosni",
+      "type": "moroccan",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.3002498,-9.2391255",
+      "lat": 32.3002498,
+      "lng": -9.2391255,
+      "halalConfidence": "likely",
+      "source": "osm"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Riad Safi",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2990884,-9.2398307",
+      "lat": 32.2990884,
+      "lng": -9.2398307,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2990884,-9.2398307",
+      "source": "osm"
+    },
+    {
+      "nom": "Golden Tulip Farah Safi",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2955745,-9.2389402",
+      "lat": 32.2955745,
+      "lng": -9.2389402,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2955745,-9.2389402",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel d'Honneur",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2985251,-9.2428822",
+      "lat": 32.2985251,
+      "lng": -9.2428822,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2985251,-9.2428822",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Le Cheval Blanc",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.29822,-9.2429025",
+      "lat": 32.29822,
+      "lng": -9.2429025,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.29822,-9.2429025",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel de Paris",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2980441,-9.2430835",
+      "lat": 32.2980441,
+      "lng": -9.2430835,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2980441,-9.2430835",
+      "source": "osm"
+    },
+    {
+      "nom": "فندق الصويرة",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2981488,-9.2431248",
+      "lat": 32.2981488,
+      "lng": -9.2431248,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2981488,-9.2431248",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Atlantide",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2946096,-9.2396795",
+      "lat": 32.2946096,
+      "lng": -9.2396795,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2946096,-9.2396795",
+      "source": "osm"
+    },
+    {
+      "nom": "Majestic",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2976709,-9.2431681",
+      "lat": 32.2976709,
+      "lng": -9.2431681,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2976709,-9.2431681",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Riad Asif",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2963242,-9.2434586",
+      "lat": 32.2963242,
+      "lng": -9.2434586,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2963242,-9.2434586",
+      "source": "osm"
+    },
+    {
+      "nom": "assif",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2940003,-9.2330517",
+      "lat": 32.2940003,
+      "lng": -9.2330517,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2940003,-9.2330517",
+      "source": "osm"
+    },
+    {
+      "nom": "les mimousas (Safi )",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2913733,-9.2333227",
+      "lat": 32.2913733,
+      "lng": -9.2333227,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2913733,-9.2333227",
+      "source": "osm"
+    },
+    {
+      "nom": "abda",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.2866377,-9.230962",
+      "lat": 32.2866377,
+      "lng": -9.230962,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.2866377,-9.230962",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Atlantique",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=32.3229746,-9.2566523",
+      "lat": 32.3229746,
+      "lng": -9.2566523,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=32.3229746,-9.2566523",
+      "source": "osm"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Safi",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Safi",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Safi%20Safi%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Colline des potiers",
+      "categorie": "Artisanat",
+      "description": "Ateliers de céramique de Safi en activité, démonstrations et achats.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Colline%20des%20potiers%20Safi%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Château de la Mer (Ksar el Bahr)",
+      "categorie": "Histoire",
+      "description": "Forteresse portugaise face à l'Atlantique.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Ch%C3%A2teau%20de%20la%20Mer%20%28Ksar%20el%20Bahr%29%20Safi%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Médina et souk",
+      "categorie": "Culture",
+      "description": "Souks, remparts et quartier des potiers.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20et%20souk%20Safi%20Maroc"
+    }
+  ],
+  "imageCredit": "Wikimedia Commons",
+  "osmEnriched": true,
+  "osmEnrichedAt": "2026-06-30",
+  "description_en": "Safi, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 2 halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+  "metaDescription_en": "Halal guide to Safi: 2+ halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+  "nom_en": "Safi"
 }

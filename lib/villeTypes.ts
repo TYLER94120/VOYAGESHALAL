@@ -127,6 +127,9 @@ export interface Ville {
   meta_title: string
   meta_description: string
   metaDescription?: string
+  metaDescription_en?: string
+  description_en?: string
+  nom_en?: string
   statistiques: {
     mosquees?: number
     restaurants_halal?: number

@@ -1,217 +1,220 @@
 {
- "slug": "al-hoceima",
- "nom": "Al Hoceïma",
- "pays": "Maroc",
- "pays_slug": "maroc",
- "continent": "Afrique",
- "region": "Nord du Maroc",
- "coordonnees": {
-  "lat": 35.2517,
-  "lng": -3.9372
- },
- "codeISO": "MA",
- "score_halal": 4.5,
- "halalScore": 8.9,
- "description": "Perle de la baie méditerranéenne du Rif, Al Hoceïma offre des plages cachées aux eaux turquoise et un parc national montagneux. Ambiance amazighe authentique.",
- "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Al_Hoceima%2C_Maroc.jpg/1920px-Al_Hoceima%2C_Maroc.jpg",
- "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Al_Hoceima%2C_Maroc.jpg/1920px-Al_Hoceima%2C_Maroc.jpg",
- "metaDescription": "Perle de la baie méditerranéenne du Rif, Al Hoceïma offre des plages cachées aux eaux turquoise et un parc national montagneux. Ambiance amazighe authentique.",
- "monnaie": "MAD (Dirham marocain)",
- "langue": "Arabe, Tamazight, Français",
- "statistiques": {
-  "restaurants_halal": 2,
-  "mosquees": 1,
-  "hotels": 10
- },
- "infoPratique": {
+  "slug": "al-hoceima",
+  "nom": "Al Hoceïma",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Nord du Maroc",
+  "coordonnees": {
+    "lat": 35.2517,
+    "lng": -3.9372
+  },
+  "codeISO": "MA",
+  "score_halal": 4.5,
+  "halalScore": 8.9,
+  "description": "Perle de la baie méditerranéenne du Rif, Al Hoceïma offre des plages cachées aux eaux turquoise et un parc national montagneux. Ambiance amazighe authentique.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Al_Hoceima%2C_Maroc.jpg/1920px-Al_Hoceima%2C_Maroc.jpg",
+  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Al_Hoceima%2C_Maroc.jpg/1920px-Al_Hoceima%2C_Maroc.jpg",
+  "metaDescription": "Perle de la baie méditerranéenne du Rif, Al Hoceïma offre des plages cachées aux eaux turquoise et un parc national montagneux. Ambiance amazighe authentique.",
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-  "meilleureEpoque": "Printemps et automne (climat doux)."
- },
- "tags": [
-  "halal",
-  "Maroc"
- ],
- "restaurants": [
-  {
-   "nom": "Cafe Cala Iris Plaza",
-   "type": "regional, moroccan",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.2497753,-3.9243119",
-   "lat": 35.2497753,
-   "lng": -3.9243119,
-   "halalConfidence": "yes",
-   "source": "osm"
+  "statistiques": {
+    "restaurants_halal": 2,
+    "mosquees": 1,
+    "hotels": 10
   },
-  {
-   "nom": "La Vogue",
-   "type": "pizza, burger, sushi, italian, sandwich",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.2455043,-3.9596612",
-   "lat": 35.2455043,
-   "lng": -3.9596612,
-   "halalConfidence": "yes",
-   "source": "osm"
-  }
- ],
- "hotels": [
-  {
-   "nom": "Mira Palace",
-   "categorie": "Hôtel",
-   "priceRange": "€€€€",
-   "score": 4,
-   "mapsUrl": "https://maps.google.com/?q=35.2492871,-3.945557",
-   "lat": 35.2492871,
-   "lng": -3.945557,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.2492871,-3.945557",
-   "source": "osm"
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
   },
-  {
-   "nom": "Hôtel Basilic",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.245033,-3.9306214",
-   "lat": 35.245033,
-   "lng": -3.9306214,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.245033,-3.9306214",
-   "source": "osm"
-  },
-  {
-   "nom": "Mercure",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.2447289,-3.926608",
-   "lat": 35.2447289,
-   "lng": -3.926608,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.2447289,-3.926608",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel la marina",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.2335336,-3.9278648",
-   "lat": 35.2335336,
-   "lng": -3.9278648,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.2335336,-3.9278648",
-   "source": "osm"
-  },
-  {
-   "nom": "La Perla Bleue",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=35.2335156,-3.9273189",
-   "lat": 35.2335156,
-   "lng": -3.9273189,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.2335156,-3.9273189",
-   "source": "osm"
-  },
-  {
-   "nom": "شاطئ إشفارن",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.2351992,-3.9811772",
-   "lat": 35.2351992,
-   "lng": -3.9811772,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.2351992,-3.9811772",
-   "source": "osm"
-  },
-  {
-   "nom": "Casa Paca Alhucemas Guesthouse B&B",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.2106893,-3.9057986",
-   "lat": 35.2106893,
-   "lng": -3.9057986,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.casapacamarruecos.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Al Hoceima Bay",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.2089585,-3.9009073",
-   "lat": 35.2089585,
-   "lng": -3.9009073,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.2089585,-3.9009073",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Al Hoceima Bay",
-   "categorie": "Hôtel",
-   "priceRange": "€€€€",
-   "score": 4,
-   "mapsUrl": "https://maps.google.com/?q=35.207599,-3.8999147",
-   "lat": 35.207599,
-   "lng": -3.8999147,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.hotel-alhoceima-bay.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Radisson Blu Resort,Al Hoceima",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.2026105,-3.8855943",
-   "lat": 35.2026105,
-   "lng": -3.8855943,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.2026105,-3.8855943",
-   "source": "osm"
-  }
- ],
- "mosqueesPrincipales": [
-  {
-   "id": "m1",
-   "nom": "Grande Mosquée de Al Hoceïma",
-   "type": "Mosquée",
-   "adresse": "Centre-ville, Al Hoceïma",
-   "description": "Mosquée principale de la ville, prière du vendredi.",
-   "note": 5,
-   "acces_non_musulmans": false,
-   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Al%20Hoce%C3%AFma%20Al%20Hoce%C3%AFma%20Maroc"
-  }
- ],
- "activites": [
-  {
-   "id": "a1",
-   "nom": "Plage Quemado",
-   "categorie": "Nature",
-   "description": "Plage principale en croissant au pied de la ville.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Plage%20Quemado%20Al%20Hoce%C3%AFma%20Maroc"
-  },
-  {
-   "id": "a2",
-   "nom": "Parc national d'Al Hoceïma",
-   "categorie": "Nature",
-   "description": "Falaises, criques sauvages et forêts littorales à explorer.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Parc%20national%20d%27Al%20Hoce%C3%AFma%20Al%20Hoce%C3%AFma%20Maroc"
-  },
-  {
-   "id": "a3",
-   "nom": "Kayak et criques cachées",
-   "categorie": "Sport nautique",
-   "description": "Exploration en kayak des criques accessibles uniquement par la mer.",
-   "prix": "Payant",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Kayak%20et%20criques%20cach%C3%A9es%20Al%20Hoce%C3%AFma%20Maroc"
-  }
- ],
- "imageCredit": "Wikimedia Commons",
- "osmEnriched": true,
- "osmEnrichedAt": "2026-06-30"
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [
+    {
+      "nom": "Cafe Cala Iris Plaza",
+      "type": "regional, moroccan",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.2497753,-3.9243119",
+      "lat": 35.2497753,
+      "lng": -3.9243119,
+      "halalConfidence": "yes",
+      "source": "osm"
+    },
+    {
+      "nom": "La Vogue",
+      "type": "pizza, burger, sushi, italian, sandwich",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.2455043,-3.9596612",
+      "lat": 35.2455043,
+      "lng": -3.9596612,
+      "halalConfidence": "yes",
+      "source": "osm"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Mira Palace",
+      "categorie": "Hôtel",
+      "priceRange": "€€€€",
+      "score": 4,
+      "mapsUrl": "https://maps.google.com/?q=35.2492871,-3.945557",
+      "lat": 35.2492871,
+      "lng": -3.945557,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.2492871,-3.945557",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Basilic",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.245033,-3.9306214",
+      "lat": 35.245033,
+      "lng": -3.9306214,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.245033,-3.9306214",
+      "source": "osm"
+    },
+    {
+      "nom": "Mercure",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.2447289,-3.926608",
+      "lat": 35.2447289,
+      "lng": -3.926608,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.2447289,-3.926608",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel la marina",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.2335336,-3.9278648",
+      "lat": 35.2335336,
+      "lng": -3.9278648,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.2335336,-3.9278648",
+      "source": "osm"
+    },
+    {
+      "nom": "La Perla Bleue",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=35.2335156,-3.9273189",
+      "lat": 35.2335156,
+      "lng": -3.9273189,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.2335156,-3.9273189",
+      "source": "osm"
+    },
+    {
+      "nom": "شاطئ إشفارن",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.2351992,-3.9811772",
+      "lat": 35.2351992,
+      "lng": -3.9811772,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.2351992,-3.9811772",
+      "source": "osm"
+    },
+    {
+      "nom": "Casa Paca Alhucemas Guesthouse B&B",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.2106893,-3.9057986",
+      "lat": 35.2106893,
+      "lng": -3.9057986,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.casapacamarruecos.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Al Hoceima Bay",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.2089585,-3.9009073",
+      "lat": 35.2089585,
+      "lng": -3.9009073,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.2089585,-3.9009073",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Al Hoceima Bay",
+      "categorie": "Hôtel",
+      "priceRange": "€€€€",
+      "score": 4,
+      "mapsUrl": "https://maps.google.com/?q=35.207599,-3.8999147",
+      "lat": 35.207599,
+      "lng": -3.8999147,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.hotel-alhoceima-bay.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Radisson Blu Resort,Al Hoceima",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.2026105,-3.8855943",
+      "lat": 35.2026105,
+      "lng": -3.8855943,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.2026105,-3.8855943",
+      "source": "osm"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Al Hoceïma",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Al Hoceïma",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Al%20Hoce%C3%AFma%20Al%20Hoce%C3%AFma%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Plage Quemado",
+      "categorie": "Nature",
+      "description": "Plage principale en croissant au pied de la ville.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Plage%20Quemado%20Al%20Hoce%C3%AFma%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Parc national d'Al Hoceïma",
+      "categorie": "Nature",
+      "description": "Falaises, criques sauvages et forêts littorales à explorer.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Parc%20national%20d%27Al%20Hoce%C3%AFma%20Al%20Hoce%C3%AFma%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Kayak et criques cachées",
+      "categorie": "Sport nautique",
+      "description": "Exploration en kayak des criques accessibles uniquement par la mer.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Kayak%20et%20criques%20cach%C3%A9es%20Al%20Hoce%C3%AFma%20Maroc"
+    }
+  ],
+  "imageCredit": "Wikimedia Commons",
+  "osmEnriched": true,
+  "osmEnrichedAt": "2026-06-30",
+  "description_en": "Al Hoceïma, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find 2 halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+  "metaDescription_en": "Halal guide to Al Hoceïma: 2+ halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+  "nom_en": "Al Hoceïma"
 }

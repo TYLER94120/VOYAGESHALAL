@@ -1,544 +1,547 @@
 {
- "slug": "tetouan",
- "nom": "Tétouan",
- "pays": "Maroc",
- "pays_slug": "maroc",
- "continent": "Afrique",
- "region": "Nord du Maroc",
- "coordonnees": {
-  "lat": 35.5785,
-  "lng": -5.3684
- },
- "codeISO": "MA",
- "score_halal": 4.5,
- "halalScore": 9.1,
- "description": "Surnommée 'la Colombe blanche', Tétouan possède une médina classée UNESCO à la forte influence andalouse, héritée des réfugiés de Grenade. Capitale culturelle du Rif occidental, proche des plages de Cabo Negro et Martil.",
- "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tetuan_vista_desde_un_tejado.JPG/1920px-Tetuan_vista_desde_un_tejado.JPG",
- "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tetuan_vista_desde_un_tejado.JPG/1920px-Tetuan_vista_desde_un_tejado.JPG",
- "metaDescription": "Surnommée 'la Colombe blanche', Tétouan possède une médina classée UNESCO à la forte influence andalouse, héritée des réfugiés de Grenade. Capitale culturelle d",
- "monnaie": "MAD (Dirham marocain)",
- "langue": "Arabe, Tamazight, Français",
- "statistiques": {
-  "restaurants_halal": 0,
-  "mosquees": 1,
-  "hotels": 41
- },
- "infoPratique": {
+  "slug": "tetouan",
+  "nom": "Tétouan",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Nord du Maroc",
+  "coordonnees": {
+    "lat": 35.5785,
+    "lng": -5.3684
+  },
+  "codeISO": "MA",
+  "score_halal": 4.5,
+  "halalScore": 9.1,
+  "description": "Surnommée 'la Colombe blanche', Tétouan possède une médina classée UNESCO à la forte influence andalouse, héritée des réfugiés de Grenade. Capitale culturelle du Rif occidental, proche des plages de Cabo Negro et Martil.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tetuan_vista_desde_un_tejado.JPG/1920px-Tetuan_vista_desde_un_tejado.JPG",
+  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Tetuan_vista_desde_un_tejado.JPG/1920px-Tetuan_vista_desde_un_tejado.JPG",
+  "metaDescription": "Surnommée 'la Colombe blanche', Tétouan possède une médina classée UNESCO à la forte influence andalouse, héritée des réfugiés de Grenade. Capitale culturelle d",
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-  "meilleureEpoque": "Printemps et automne (climat doux)."
- },
- "tags": [
-  "halal",
-  "Maroc"
- ],
- "restaurants": [],
- "hotels": [
-  {
-   "nom": "Dar Rehla",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5727808,-5.3709446",
-   "lat": 35.5727808,
-   "lng": -5.3709446,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5727808,-5.3709446",
-   "source": "osm"
+  "statistiques": {
+    "restaurants_halal": 0,
+    "mosquees": 1,
+    "hotels": 41
   },
-  {
-   "nom": "Dar Hanae",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5718282,-5.3662552",
-   "lat": 35.5718282,
-   "lng": -5.3662552,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5718282,-5.3662552",
-   "source": "osm"
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
   },
-  {
-   "nom": "Riad Khmisa",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5717445,-5.3666424",
-   "lat": 35.5717445,
-   "lng": -5.3666424,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5717445,-5.3666424",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Soul of Tetouan",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.571881,-5.3713057",
-   "lat": 35.571881,
-   "lng": -5.3713057,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.571881,-5.3713057",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Africa",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.570737,-5.3696314",
-   "lat": 35.570737,
-   "lng": -5.3696314,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.570737,-5.3696314",
-   "source": "osm"
-  },
-  {
-   "nom": "Casa Medina Sanaa",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5710348,-5.3654332",
-   "lat": 35.5710348,
-   "lng": -5.3654332,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5710348,-5.3654332",
-   "source": "osm"
-  },
-  {
-   "nom": "Blanco Riad Hotel&Restaurante",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5707534,-5.3701323",
-   "lat": 35.5707534,
-   "lng": -5.3701323,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5707534,-5.3701323",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Afrika",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5701908,-5.3696121",
-   "lat": 35.5701908,
-   "lng": -5.3696121,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5701908,-5.3696121",
-   "source": "osm"
-  },
-  {
-   "nom": "Regina",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5705265,-5.3722409",
-   "lat": 35.5705265,
-   "lng": -5.3722409,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5705265,-5.3722409",
-   "source": "osm"
-  },
-  {
-   "nom": "Casa mima",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5729266,-5.36026",
-   "lat": 35.5729266,
-   "lng": -5.36026,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5729266,-5.36026",
-   "source": "osm"
-  },
-  {
-   "nom": "Bilbao",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5699217,-5.3709803",
-   "lat": 35.5699217,
-   "lng": -5.3709803,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5699217,-5.3709803",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Sevillana",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5691139,-5.3694197",
-   "lat": 35.5691139,
-   "lng": -5.3694197,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5691139,-5.3694197",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Nairobi",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5690989,-5.3702232",
-   "lat": 35.5690989,
-   "lng": -5.3702232,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5690989,-5.3702232",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Darna",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5692318,-5.3652197",
-   "lat": 35.5692318,
-   "lng": -5.3652197,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5692318,-5.3652197",
-   "source": "osm"
-  },
-  {
-   "nom": "Pension Camas",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5688633,-5.3683964",
-   "lat": 35.5688633,
-   "lng": -5.3683964,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5688633,-5.3683964",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Al Borj",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5686612,-5.3654492",
-   "lat": 35.5686612,
-   "lng": -5.3654492,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5686612,-5.3654492",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Trebol",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5689475,-5.3732438",
-   "lat": 35.5689475,
-   "lng": -5.3732438,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5689475,-5.3732438",
-   "source": "osm"
-  },
-  {
-   "nom": "Dar Targha",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.567952,-5.3663477",
-   "lat": 35.567952,
-   "lng": -5.3663477,
-   "halalFriendly": false,
-   "bookingUrl": "https://dar-targha.jimdo.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Marina",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5626175,-5.3685636",
-   "lat": 35.5626175,
-   "lng": -5.3685636,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5626175,-5.3685636",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Prestige",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5659882,-5.3822703",
-   "lat": 35.5659882,
-   "lng": -5.3822703,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5659882,-5.3822703",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Chams",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5811387,-5.3364849",
-   "lat": 35.5811387,
-   "lng": -5.3364849,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5811387,-5.3364849",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Dream",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5820157,-5.3352189",
-   "lat": 35.5820157,
-   "lng": -5.3352189,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5820157,-5.3352189",
-   "source": "osm"
-  },
-  {
-   "nom": "El Yacout",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5996025,-5.338332",
-   "lat": 35.5996025,
-   "lng": -5.338332,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5996025,-5.338332",
-   "source": "osm"
-  },
-  {
-   "nom": "فندق مكارم تطوان",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.567843,-5.408301",
-   "lat": 35.567843,
-   "lng": -5.408301,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.567843,-5.408301",
-   "source": "osm"
-  },
-  {
-   "nom": "Diars Tamouda",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.568431,-5.412596",
-   "lat": 35.568431,
-   "lng": -5.412596,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.568431,-5.412596",
-   "source": "osm"
-  },
-  {
-   "nom": "La Paloma",
-   "categorie": "Hôtel",
-   "priceRange": "€€€€",
-   "score": 4,
-   "mapsUrl": "https://maps.google.com/?q=35.5650179,-5.4120129",
-   "lat": 35.5650179,
-   "lng": -5.4120129,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5650179,-5.4120129",
-   "source": "osm"
-  },
-  {
-   "nom": "فندق پالوما",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.565025,-5.41215",
-   "lat": 35.565025,
-   "lng": -5.41215,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.565025,-5.41215",
-   "source": "osm"
-  },
-  {
-   "nom": "فندق پالوما",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.565005,-5.412149",
-   "lat": 35.565005,
-   "lng": -5.412149,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.565005,-5.412149",
-   "source": "osm"
-  },
-  {
-   "nom": "Hostelling International Youth Hostel",
-   "categorie": "Auberge",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5898325,-5.3216286",
-   "lat": 35.5898325,
-   "lng": -5.3216286,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5898325,-5.3216286",
-   "source": "osm"
-  },
-  {
-   "nom": "Ayoub’s Homestay",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.5569437,-5.4162422",
-   "lat": 35.5569437,
-   "lng": -5.4162422,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.5569437,-5.4162422",
-   "source": "osm"
-  },
-  {
-   "nom": "مشروع تطوان مدينة سهل وادي مرتيل قريبا",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.584794,-5.302745",
-   "lat": 35.584794,
-   "lng": -5.302745,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.584794,-5.302745",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Mandy",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.628036,-5.338149",
-   "lat": 35.628036,
-   "lng": -5.338149,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.628036,-5.338149",
-   "source": "osm"
-  },
-  {
-   "nom": "إقامة ناردينا كولدن",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.625976,-5.329873",
-   "lat": 35.625976,
-   "lng": -5.329873,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.625976,-5.329873",
-   "source": "osm"
-  },
-  {
-   "nom": "اسماعيل بنعياد",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.520386,-5.340534",
-   "lat": 35.520386,
-   "lng": -5.340534,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.520386,-5.340534",
-   "source": "osm"
-  },
-  {
-   "nom": "NB Appartements",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.612475,-5.300068",
-   "lat": 35.612475,
-   "lng": -5.300068,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.612475,-5.300068",
-   "source": "osm"
-  },
-  {
-   "nom": "Abroedies",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.6154084,-5.3014172",
-   "lat": 35.6154084,
-   "lng": -5.3014172,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.6154084,-5.3014172",
-   "source": "osm"
-  },
-  {
-   "nom": "Sakina martil",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.616876,-5.291179",
-   "lat": 35.616876,
-   "lng": -5.291179,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.616876,-5.291179",
-   "source": "osm"
-  },
-  {
-   "nom": "Martil Oasis de Lujo",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.6131016,-5.2867145",
-   "lat": 35.6131016,
-   "lng": -5.2867145,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.6131016,-5.2867145",
-   "source": "osm"
-  },
-  {
-   "nom": "Résidence palmera",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.616084,-5.287691",
-   "lat": 35.616084,
-   "lng": -5.287691,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.616084,-5.287691",
-   "source": "osm"
-  },
-  {
-   "nom": "Résidence Laurena",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.617885,-5.288857",
-   "lat": 35.617885,
-   "lng": -5.288857,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.617885,-5.288857",
-   "source": "osm"
-  },
-  {
-   "nom": "Appartement à louer à Martil / DariSmart-002 الكراء اليومي",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=35.618555,-5.282871",
-   "lat": 35.618555,
-   "lng": -5.282871,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=35.618555,-5.282871",
-   "source": "osm"
-  }
- ],
- "mosqueesPrincipales": [
-  {
-   "id": "m1",
-   "nom": "Grande Mosquée de Tétouan",
-   "type": "Mosquée",
-   "adresse": "Centre-ville, Tétouan",
-   "description": "Mosquée principale de la ville, prière du vendredi.",
-   "note": 5,
-   "acces_non_musulmans": false,
-   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20T%C3%A9touan%20T%C3%A9touan%20Maroc"
-  }
- ],
- "activites": [
-  {
-   "id": "a1",
-   "nom": "Médina UNESCO de Tétouan",
-   "categorie": "Culture",
-   "description": "Médina andalouse classée au patrimoine mondial : ruelles blanches, souks d'artisans, écoles coraniques historiques.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20UNESCO%20de%20T%C3%A9touan%20T%C3%A9touan%20Maroc"
-  },
-  {
-   "id": "a2",
-   "nom": "Musée ethnographique",
-   "categorie": "Culture",
-   "description": "Collections d'art et traditions du Rif dans une ancienne forteresse.",
-   "prix": "Payant",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e%20ethnographique%20T%C3%A9touan%20Maroc"
-  },
-  {
-   "id": "a3",
-   "nom": "Plage de Cabo Negro / Martil",
-   "categorie": "Nature",
-   "description": "Plages méditerranéennes familiales à quelques km de la ville.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Plage%20de%20Cabo%20Negro%20/%20Martil%20T%C3%A9touan%20Maroc"
-  },
-  {
-   "id": "a4",
-   "nom": "École des arts traditionnels",
-   "categorie": "Artisanat",
-   "description": "Apprentissage de la zellige, du bois sculpté et de la broderie tétouanaise.",
-   "prix": "Payant",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=%C3%89cole%20des%20arts%20traditionnels%20T%C3%A9touan%20Maroc"
-  }
- ],
- "imageCredit": "Wikimedia Commons",
- "osmEnriched": true,
- "osmEnrichedAt": "2026-06-30"
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [],
+  "hotels": [
+    {
+      "nom": "Dar Rehla",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5727808,-5.3709446",
+      "lat": 35.5727808,
+      "lng": -5.3709446,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5727808,-5.3709446",
+      "source": "osm"
+    },
+    {
+      "nom": "Dar Hanae",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5718282,-5.3662552",
+      "lat": 35.5718282,
+      "lng": -5.3662552,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5718282,-5.3662552",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Khmisa",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5717445,-5.3666424",
+      "lat": 35.5717445,
+      "lng": -5.3666424,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5717445,-5.3666424",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Soul of Tetouan",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.571881,-5.3713057",
+      "lat": 35.571881,
+      "lng": -5.3713057,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.571881,-5.3713057",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Africa",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.570737,-5.3696314",
+      "lat": 35.570737,
+      "lng": -5.3696314,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.570737,-5.3696314",
+      "source": "osm"
+    },
+    {
+      "nom": "Casa Medina Sanaa",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5710348,-5.3654332",
+      "lat": 35.5710348,
+      "lng": -5.3654332,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5710348,-5.3654332",
+      "source": "osm"
+    },
+    {
+      "nom": "Blanco Riad Hotel&Restaurante",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5707534,-5.3701323",
+      "lat": 35.5707534,
+      "lng": -5.3701323,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5707534,-5.3701323",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Afrika",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5701908,-5.3696121",
+      "lat": 35.5701908,
+      "lng": -5.3696121,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5701908,-5.3696121",
+      "source": "osm"
+    },
+    {
+      "nom": "Regina",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5705265,-5.3722409",
+      "lat": 35.5705265,
+      "lng": -5.3722409,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5705265,-5.3722409",
+      "source": "osm"
+    },
+    {
+      "nom": "Casa mima",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5729266,-5.36026",
+      "lat": 35.5729266,
+      "lng": -5.36026,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5729266,-5.36026",
+      "source": "osm"
+    },
+    {
+      "nom": "Bilbao",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5699217,-5.3709803",
+      "lat": 35.5699217,
+      "lng": -5.3709803,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5699217,-5.3709803",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Sevillana",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5691139,-5.3694197",
+      "lat": 35.5691139,
+      "lng": -5.3694197,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5691139,-5.3694197",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Nairobi",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5690989,-5.3702232",
+      "lat": 35.5690989,
+      "lng": -5.3702232,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5690989,-5.3702232",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Darna",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5692318,-5.3652197",
+      "lat": 35.5692318,
+      "lng": -5.3652197,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5692318,-5.3652197",
+      "source": "osm"
+    },
+    {
+      "nom": "Pension Camas",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5688633,-5.3683964",
+      "lat": 35.5688633,
+      "lng": -5.3683964,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5688633,-5.3683964",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Al Borj",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5686612,-5.3654492",
+      "lat": 35.5686612,
+      "lng": -5.3654492,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5686612,-5.3654492",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Trebol",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5689475,-5.3732438",
+      "lat": 35.5689475,
+      "lng": -5.3732438,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5689475,-5.3732438",
+      "source": "osm"
+    },
+    {
+      "nom": "Dar Targha",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.567952,-5.3663477",
+      "lat": 35.567952,
+      "lng": -5.3663477,
+      "halalFriendly": false,
+      "bookingUrl": "https://dar-targha.jimdo.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Marina",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5626175,-5.3685636",
+      "lat": 35.5626175,
+      "lng": -5.3685636,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5626175,-5.3685636",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Prestige",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5659882,-5.3822703",
+      "lat": 35.5659882,
+      "lng": -5.3822703,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5659882,-5.3822703",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Chams",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5811387,-5.3364849",
+      "lat": 35.5811387,
+      "lng": -5.3364849,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5811387,-5.3364849",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Dream",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5820157,-5.3352189",
+      "lat": 35.5820157,
+      "lng": -5.3352189,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5820157,-5.3352189",
+      "source": "osm"
+    },
+    {
+      "nom": "El Yacout",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5996025,-5.338332",
+      "lat": 35.5996025,
+      "lng": -5.338332,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5996025,-5.338332",
+      "source": "osm"
+    },
+    {
+      "nom": "فندق مكارم تطوان",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.567843,-5.408301",
+      "lat": 35.567843,
+      "lng": -5.408301,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.567843,-5.408301",
+      "source": "osm"
+    },
+    {
+      "nom": "Diars Tamouda",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.568431,-5.412596",
+      "lat": 35.568431,
+      "lng": -5.412596,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.568431,-5.412596",
+      "source": "osm"
+    },
+    {
+      "nom": "La Paloma",
+      "categorie": "Hôtel",
+      "priceRange": "€€€€",
+      "score": 4,
+      "mapsUrl": "https://maps.google.com/?q=35.5650179,-5.4120129",
+      "lat": 35.5650179,
+      "lng": -5.4120129,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5650179,-5.4120129",
+      "source": "osm"
+    },
+    {
+      "nom": "فندق پالوما",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.565025,-5.41215",
+      "lat": 35.565025,
+      "lng": -5.41215,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.565025,-5.41215",
+      "source": "osm"
+    },
+    {
+      "nom": "فندق پالوما",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.565005,-5.412149",
+      "lat": 35.565005,
+      "lng": -5.412149,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.565005,-5.412149",
+      "source": "osm"
+    },
+    {
+      "nom": "Hostelling International Youth Hostel",
+      "categorie": "Auberge",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5898325,-5.3216286",
+      "lat": 35.5898325,
+      "lng": -5.3216286,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5898325,-5.3216286",
+      "source": "osm"
+    },
+    {
+      "nom": "Ayoub’s Homestay",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.5569437,-5.4162422",
+      "lat": 35.5569437,
+      "lng": -5.4162422,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.5569437,-5.4162422",
+      "source": "osm"
+    },
+    {
+      "nom": "مشروع تطوان مدينة سهل وادي مرتيل قريبا",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.584794,-5.302745",
+      "lat": 35.584794,
+      "lng": -5.302745,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.584794,-5.302745",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Mandy",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.628036,-5.338149",
+      "lat": 35.628036,
+      "lng": -5.338149,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.628036,-5.338149",
+      "source": "osm"
+    },
+    {
+      "nom": "إقامة ناردينا كولدن",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.625976,-5.329873",
+      "lat": 35.625976,
+      "lng": -5.329873,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.625976,-5.329873",
+      "source": "osm"
+    },
+    {
+      "nom": "اسماعيل بنعياد",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.520386,-5.340534",
+      "lat": 35.520386,
+      "lng": -5.340534,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.520386,-5.340534",
+      "source": "osm"
+    },
+    {
+      "nom": "NB Appartements",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.612475,-5.300068",
+      "lat": 35.612475,
+      "lng": -5.300068,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.612475,-5.300068",
+      "source": "osm"
+    },
+    {
+      "nom": "Abroedies",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.6154084,-5.3014172",
+      "lat": 35.6154084,
+      "lng": -5.3014172,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.6154084,-5.3014172",
+      "source": "osm"
+    },
+    {
+      "nom": "Sakina martil",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.616876,-5.291179",
+      "lat": 35.616876,
+      "lng": -5.291179,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.616876,-5.291179",
+      "source": "osm"
+    },
+    {
+      "nom": "Martil Oasis de Lujo",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.6131016,-5.2867145",
+      "lat": 35.6131016,
+      "lng": -5.2867145,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.6131016,-5.2867145",
+      "source": "osm"
+    },
+    {
+      "nom": "Résidence palmera",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.616084,-5.287691",
+      "lat": 35.616084,
+      "lng": -5.287691,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.616084,-5.287691",
+      "source": "osm"
+    },
+    {
+      "nom": "Résidence Laurena",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.617885,-5.288857",
+      "lat": 35.617885,
+      "lng": -5.288857,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.617885,-5.288857",
+      "source": "osm"
+    },
+    {
+      "nom": "Appartement à louer à Martil / DariSmart-002 الكراء اليومي",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=35.618555,-5.282871",
+      "lat": 35.618555,
+      "lng": -5.282871,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=35.618555,-5.282871",
+      "source": "osm"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Tétouan",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Tétouan",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20T%C3%A9touan%20T%C3%A9touan%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Médina UNESCO de Tétouan",
+      "categorie": "Culture",
+      "description": "Médina andalouse classée au patrimoine mondial : ruelles blanches, souks d'artisans, écoles coraniques historiques.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=M%C3%A9dina%20UNESCO%20de%20T%C3%A9touan%20T%C3%A9touan%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Musée ethnographique",
+      "categorie": "Culture",
+      "description": "Collections d'art et traditions du Rif dans une ancienne forteresse.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Mus%C3%A9e%20ethnographique%20T%C3%A9touan%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Plage de Cabo Negro / Martil",
+      "categorie": "Nature",
+      "description": "Plages méditerranéennes familiales à quelques km de la ville.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Plage%20de%20Cabo%20Negro%20/%20Martil%20T%C3%A9touan%20Maroc"
+    },
+    {
+      "id": "a4",
+      "nom": "École des arts traditionnels",
+      "categorie": "Artisanat",
+      "description": "Apprentissage de la zellige, du bois sculpté et de la broderie tétouanaise.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=%C3%89cole%20des%20arts%20traditionnels%20T%C3%A9touan%20Maroc"
+    }
+  ],
+  "imageCredit": "Wikimedia Commons",
+  "osmEnriched": true,
+  "osmEnrichedAt": "2026-06-30",
+  "description_en": "Tetouan, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.5/5. Muslim travelers will find a selection of halal restaurants, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
+  "metaDescription_en": "Halal guide to Tetouan: halal restaurants, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.5/5.",
+  "nom_en": "Tetouan"
 }

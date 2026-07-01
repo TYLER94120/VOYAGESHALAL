@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `${ville.nom} Halal Travel Guide 2026 — Restaurants, Mosques & Tips | ${brand}`
     : `${ville.nom} Halal 2026 : Restaurants, Mosquées & Guide Complet | ${brand}`
   const description = isEN
-    ? `Complete halal guide for ${ville.nom}: ${nbRestos}+ certified halal restaurants, ${nbMosq} mosques, ${nbHotels} hotels, prayer times and practical tips for Muslim travelers.`.slice(0, 300)
+    ? (ville.metaDescription_en ?? `Complete halal guide for ${ville.nom}: ${nbRestos}+ certified halal restaurants, ${nbMosq} mosques, ${nbHotels} hotels, prayer times and practical tips for Muslim travelers.`).slice(0, 300)
     : `Guide halal complet pour ${ville.nom} : ${nbRestos}+ restaurants certifiés halal, ${nbMosq} mosquées, ${nbHotels} hôtels, horaires de prière et conseils pratiques pour voyager en musulman. ${richDesc}`.slice(0, 300)
   const ogTitle = isEN
     ? `${ville.nom} Halal Travel Guide 2026 — Muslim-Friendly`

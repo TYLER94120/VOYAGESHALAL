@@ -6,6 +6,7 @@ import IslamicPattern from '@/components/ui/IslamicPattern'
 import { useToast } from '@/components/Toast'
 import EbookButton from '@/components/villes/EbookButton'
 import LiveSpots from '@/components/villes/LiveSpots'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 const TABS = [
   { id: 'mosquees', icon: '🕌', label: 'Mosquées' },
@@ -28,6 +29,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const [activeFilter, setActiveFilter] = useState('Tous')
   const toast = useToast()
   const contentRef = useRef<HTMLDivElement>(null)
+  const { lang } = useLanguage()
+  const en = lang === 'en'
 
   // Clic sur un onglet → affiche le contenu de la fiche (mosquées incluses : on a les
   // vraies données OSM bakées, plus besoin de la géoloc qui pouvait échouer).
@@ -46,7 +49,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const hasCoords = coords && typeof coords.lat === 'number' && typeof coords.lng === 'number'
   const ip = ville.infoPratique ?? {}
   const legacyIp = ville.infos_pratiques ?? {}
-  const descShort = typeof ville.description === 'string' ? ville.description : (ville.description?.court ?? ville.description?.long ?? '')
+  const descFr = typeof ville.description === 'string' ? ville.description : (ville.description?.court ?? ville.description?.long ?? '')
+  // Sur le domaine EN, on affiche la description anglaise si elle existe
+  const descShort = (en && ville.description_en) ? ville.description_en : descFr
 
   const categories = ['Tous', ...Array.from(new Set(restaurants.map((r: any) => r.type).filter(Boolean)))] as string[]
   const restosFiltres = activeFilter === 'Tous' ? restaurants : restaurants.filter((r: any) => r.type === activeFilter)
