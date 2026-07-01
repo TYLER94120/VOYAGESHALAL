@@ -16,6 +16,25 @@ export default function LanguageSwitcher() {
     return () => document.removeEventListener('mousedown', h)
   }, [])
 
+  // FR et EN sont des DOMAINES distincts (voyageshalal.fr / gohalaltravel.com).
+  // Cliquer FR/EN doit ouvrir la MÊME page sur l'autre domaine (pas la home, pas
+  // une traduction Google en place). Les autres langues utilisent Google Translate.
+  function selectLang(code: string) {
+    setOpen(false)
+    if (code === 'fr' || code === 'en') {
+      const targetHost = code === 'en' ? 'www.gohalaltravel.com' : 'www.voyageshalal.fr'
+      const onEn = window.location.hostname.includes('gohalaltravel')
+      const alreadyThere = (code === 'en' && onEn) || (code === 'fr' && !onEn)
+      if (!alreadyThere) {
+        window.location.href = `https://${targetHost}${window.location.pathname}${window.location.search}`
+        return
+      }
+    }
+    setLang(code as typeof lang)
+    applyGoogleTranslate(code as typeof lang)
+    setTimeout(() => window.location.reload(), 60)
+  }
+
   return (
     <div ref={ref} style={{ position: 'relative' }}>
       <button onClick={() => setOpen((o) => !o)} aria-label="Changer de langue"
@@ -28,7 +47,7 @@ export default function LanguageSwitcher() {
           {LANGS.map((l) => {
             const active = l.code === lang
             return (
-              <button key={l.code} onClick={() => { setLang(l.code); applyGoogleTranslate(l.code); setOpen(false); setTimeout(() => window.location.reload(), 60) }}
+              <button key={l.code} onClick={() => selectLang(l.code)}
                 style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', padding: '9px 12px', border: 'none', borderRadius: '9px', background: active ? '#1b4332' : 'transparent', color: active ? '#fdfaf3' : '#1a1a1a', cursor: 'pointer', fontSize: '14px', fontWeight: active ? 700 : 500, textAlign: 'left' }}>
                 <span style={{ fontSize: '16px' }}>{l.flag}</span>
                 <span>{l.name}</span>
