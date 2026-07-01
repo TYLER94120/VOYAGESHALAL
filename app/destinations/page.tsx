@@ -73,6 +73,8 @@ function getAllVilles(): VilleCard[] {
           tags: Array.isArray(v.tags) ? v.tags : [],
           halalScore: v.halalScore ?? (v.score_halal ? Math.round(v.score_halal * 2 * 10) / 10 : null),
           codeISO: v.codeISO ?? '',
+          villeNonMusulmane: v.villeNonMusulmane === true
+            || (Array.isArray(v.tags) && v.tags.some((t: string) => String(t).toLowerCase() === 'ville non-musulmane')),
         } as VilleCard
       } catch {
         return null

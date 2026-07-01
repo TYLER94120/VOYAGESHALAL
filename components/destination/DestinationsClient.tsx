@@ -17,6 +17,7 @@ export interface VilleCard {
   tags?: string[]
   halalScore?: number | null
   codeISO?: string
+  villeNonMusulmane?: boolean
 }
 
 // Types de voyage (filtre secondaire sur les tags des villes)
@@ -223,8 +224,19 @@ export default function DestinationsClient({ villes }: Props) {
                     </div>
                     <p className="ville-card-pays">{v.pays}</p>
                     <div className="mt-2 flex flex-wrap gap-1.5">
-                      <span className="ville-card-tag">✓ Halal vérifié</span>
-                      <span className="ville-card-tag-2">Sans alcool</span>
+                      {/* Tags honnêtes : une ville non-musulmane n'est PAS « sans alcool ».
+                          On y annonce des options halal disponibles, pas une garantie globale. */}
+                      {v.villeNonMusulmane ? (
+                        <>
+                          <span className="ville-card-tag">✓ Options halal</span>
+                          <span className="ville-card-tag-2">Restaurants &amp; mosquées</span>
+                        </>
+                      ) : (
+                        <>
+                          <span className="ville-card-tag">✓ Halal vérifié</span>
+                          <span className="ville-card-tag-2">Sans alcool</span>
+                        </>
+                      )}
                     </div>
                   </div>
                 </Link>

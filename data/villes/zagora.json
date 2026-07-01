@@ -1,467 +1,456 @@
 {
- "slug": "zagora",
- "nom": "Zagora",
- "pays": "Maroc",
- "pays_slug": "maroc",
- "continent": "Afrique",
- "region": "Sud du Maroc / Sahara",
- "coordonnees": {
-  "lat": 30.3324,
-  "lng": -5.8386
- },
- "codeISO": "MA",
- "score_halal": 4.5,
- "halalScore": 9.1,
- "description": "'Porte du désert' dans la vallée du Drâa, célèbre pour son panneau 'Tombouctou 52 jours', ses palmeraies et la bibliothèque coranique de Tamegroute.",
- "image": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
- "image_hero": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
- "metaDescription": "'Porte du désert' dans la vallée du Drâa, célèbre pour son panneau 'Tombouctou 52 jours', ses palmeraies et la bibliothèque coranique de Tamegroute.",
- "monnaie": "MAD (Dirham marocain)",
- "langue": "Arabe, Tamazight, Français",
- "statistiques": {
-  "restaurants_halal": 2,
-  "mosquees": 1,
-  "hotels": 33
- },
- "infoPratique": {
+  "slug": "zagora",
+  "nom": "Zagora",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Sud du Maroc / Sahara",
+  "coordonnees": {
+    "lat": 30.3324,
+    "lng": -5.8386
+  },
+  "codeISO": "MA",
+  "score_halal": 4.5,
+  "halalScore": 9.1,
+  "description": "'Porte du désert' dans la vallée du Drâa, célèbre pour son panneau 'Tombouctou 52 jours', ses palmeraies et la bibliothèque coranique de Tamegroute.",
+  "image": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
+  "image_hero": "https://images.unsplash.com/photo-1597211684565-dca64d72bdfe?w=1400&q=85",
+  "metaDescription": "'Porte du désert' dans la vallée du Drâa, célèbre pour son panneau 'Tombouctou 52 jours', ses palmeraies et la bibliothèque coranique de Tamegroute.",
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-  "meilleureEpoque": "Printemps et automne (climat doux)."
- },
- "tags": [
-  "halal",
-  "Maroc"
- ],
- "restaurants": [
-  {
-   "nom": "Texas",
-   "type": "moroccan, pasta, pizza, sandwich",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3311511,-5.8375512",
-   "lat": 30.3311511,
-   "lng": -5.8375512,
-   "halalConfidence": "likely",
-   "source": "osm"
+  "statistiques": {
+    "restaurants_halal": 2,
+    "mosquees": 1,
+    "hotels": 33
   },
-  {
-   "nom": "chez Tata galette berbere",
-   "type": "moroccan",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3303567,-5.8377365",
-   "lat": 30.3303567,
-   "lng": -5.8377365,
-   "halalConfidence": "likely",
-   "source": "osm"
-  }
- ],
- "hotels": [
-  {
-   "nom": "Hôtel Riad Salam",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3336391,-5.8377416",
-   "lat": 30.3336391,
-   "lng": -5.8377416,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3336391,-5.8377416",
-   "source": "osm"
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
   },
-  {
-   "nom": "Hôtel Riad Salam",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3336996,-5.8364038",
-   "lat": 30.3336996,
-   "lng": -5.8364038,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3336996,-5.8364038",
-   "source": "osm"
-  },
-  {
-   "nom": "Rose des Sables",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3293309,-5.835647",
-   "lat": 30.3293309,
-   "lng": -5.835647,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3293309,-5.835647",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Fennec Sahara",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3325675,-5.8338643",
-   "lat": 30.3325675,
-   "lng": -5.8338643,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3325675,-5.8338643",
-   "source": "osm"
-  },
-  {
-   "nom": "Karité Sahara",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3366797,-5.83545",
-   "lat": 30.3366797,
-   "lng": -5.83545,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3366797,-5.83545",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel des Amis",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3270762,-5.8385454",
-   "lat": 30.3270762,
-   "lng": -5.8385454,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3270762,-5.8385454",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Le Tinsouline",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3278139,-5.8337592",
-   "lat": 30.3278139,
-   "lng": -5.8337592,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3278139,-5.8337592",
-   "source": "osm"
-  },
-  {
-   "nom": "Gite Hotel Prends ton temps",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3378379,-5.8319619",
-   "lat": 30.3378379,
-   "lng": -5.8319619,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3378379,-5.8319619",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Dar Zaouia ",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3246593,-5.8359536",
-   "lat": 30.3246593,
-   "lng": -5.8359536,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3246593,-5.8359536",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel La Palmeraie",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3236493,-5.8406552",
-   "lat": 30.3236493,
-   "lng": -5.8406552,
-   "halalFriendly": false,
-   "bookingUrl": "www.lapalmerie-zagora.com",
-   "source": "osm"
-  },
-  {
-   "nom": "Auberge Chez Ali",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3221836,-5.8391839",
-   "lat": 30.3221836,
-   "lng": -5.8391839,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3221836,-5.8391839",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Ternata",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3430987,-5.8375587",
-   "lat": 30.3430987,
-   "lng": -5.8375587,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3430987,-5.8375587",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Le Jasmin Du Sud",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3450968,-5.837823",
-   "lat": 30.3450968,
-   "lng": -5.837823,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3450968,-5.837823",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Le petit jardin",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3474572,-5.841683",
-   "lat": 30.3474572,
-   "lng": -5.841683,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3474572,-5.841683",
-   "source": "osm"
-  },
-  {
-   "nom": "Palais Asmaa",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3201114,-5.8275439",
-   "lat": 30.3201114,
-   "lng": -5.8275439,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3201114,-5.8275439",
-   "source": "osm"
-  },
-  {
-   "nom": "Kasbah Sirocco",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3197423,-5.8275971",
-   "lat": 30.3197423,
-   "lng": -5.8275971,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.kasbah-sirocco.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Villa Zagora - Ma Villa au Sahara",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3191338,-5.8279211",
-   "lat": 30.3191338,
-   "lng": -5.8279211,
-   "halalFriendly": false,
-   "bookingUrl": "http://mavillaausahara.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "La Fibule Zagora",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3178988,-5.8293503",
-   "lat": 30.3178988,
-   "lng": -5.8293503,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3178988,-5.8293503",
-   "source": "osm"
-  },
-  {
-   "nom": "Zagour",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.318832,-5.8273747",
-   "lat": 30.318832,
-   "lng": -5.8273747,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.318832,-5.8273747",
-   "source": "osm"
-  },
-  {
-   "nom": "Caravane du Sud",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3183881,-5.8274421",
-   "lat": 30.3183881,
-   "lng": -5.8274421,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3183881,-5.8274421",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Lamane",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.315225,-5.8305089",
-   "lat": 30.315225,
-   "lng": -5.8305089,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.315225,-5.8305089",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Soleil du Monde",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3120132,-5.8318012",
-   "lat": 30.3120132,
-   "lng": -5.8318012,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3120132,-5.8318012",
-   "source": "osm"
-  },
-  {
-   "nom": "La Petite Kashbah",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3128674,-5.8281497",
-   "lat": 30.3128674,
-   "lng": -5.8281497,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3128674,-5.8281497",
-   "source": "osm"
-  },
-  {
-   "nom": "Serenity Lodge",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3104849,-5.8312506",
-   "lat": 30.3104849,
-   "lng": -5.8312506,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3104849,-5.8312506",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Marrat",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3101581,-5.8303474",
-   "lat": 30.3101581,
-   "lng": -5.8303474,
-   "halalFriendly": false,
-   "bookingUrl": "https://riadmarrat-zagora.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Dar Raha Zagora",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3089673,-5.8259391",
-   "lat": 30.3089673,
-   "lng": -5.8259391,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3089673,-5.8259391",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Tagmadart ferme d'hóte",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3037279,-5.8246958",
-   "lat": 30.3037279,
-   "lng": -5.8246958,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3037279,-5.8246958",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel La Perle du Draa",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=30.3066018,-5.8130552",
-   "lat": 30.3066018,
-   "lng": -5.8130552,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3066018,-5.8130552",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Zagora Palm",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3772151,-5.8403409",
-   "lat": 30.3772151,
-   "lng": -5.8403409,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3772151,-5.8403409",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Sauvage Noble",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3940241,-5.8571305",
-   "lat": 30.3940241,
-   "lng": -5.8571305,
-   "halalFriendly": false,
-   "bookingUrl": "www.sauvage-noble.org",
-   "source": "osm"
-  },
-  {
-   "nom": "Kasbah Ziwana",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.3962554,-5.8596909",
-   "lat": 30.3962554,
-   "lng": -5.8596909,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.3962554,-5.8596909",
-   "source": "osm"
-  },
-  {
-   "nom": "Oasis Tilogui",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.2941229,-5.7639799",
-   "lat": 30.2941229,
-   "lng": -5.7639799,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.2941229,-5.7639799",
-   "source": "osm"
-  },
-  {
-   "nom": "Ferme Hanane جنان حنان",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.2830712,-5.7667607",
-   "lat": 30.2830712,
-   "lng": -5.7667607,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.2830712,-5.7667607",
-   "source": "osm"
-  }
- ],
- "mosqueesPrincipales": [
-  {
-   "id": "m1",
-   "nom": "Grande Mosquée de Zagora",
-   "type": "Mosquée",
-   "adresse": "Centre-ville, Zagora",
-   "description": "Mosquée principale de la ville, prière du vendredi.",
-   "note": 5,
-   "acces_non_musulmans": false,
-   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Zagora%20Zagora%20Maroc"
-  }
- ],
- "activites": [
-  {
-   "id": "a1",
-   "nom": "Vallée et palmeraies du Drâa",
-   "categorie": "Nature",
-   "description": "Oasis verdoyante le long de l'oued Drâa.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e%20et%20palmeraies%20du%20Dr%C3%A2a%20Zagora%20Maroc"
-  },
-  {
-   "id": "a2",
-   "nom": "Bibliothèque coranique de Tamegroute",
-   "categorie": "Spirituel",
-   "description": "Manuscrits anciens et poterie verte traditionnelle.",
-   "prix": "Payant",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Biblioth%C3%A8que%20coranique%20de%20Tamegroute%20Zagora%20Maroc"
-  },
-  {
-   "id": "a3",
-   "nom": "Désert de pierres & dunes de Tinfou",
-   "categorie": "Nature",
-   "description": "Étendues désertiques accessibles depuis la ville.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=D%C3%A9sert%20de%20pierres%20%26%20dunes%20de%20Tinfou%20Zagora%20Maroc"
-  }
- ],
- "osmEnriched": true,
- "osmEnrichedAt": "2026-06-30"
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [
+    {
+      "nom": "Texas",
+      "type": "moroccan, pasta, pizza, sandwich",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3311511,-5.8375512",
+      "lat": 30.3311511,
+      "lng": -5.8375512,
+      "halalConfidence": "likely",
+      "source": "osm"
+    },
+    {
+      "nom": "chez Tata galette berbere",
+      "type": "moroccan",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3303567,-5.8377365",
+      "lat": 30.3303567,
+      "lng": -5.8377365,
+      "halalConfidence": "likely",
+      "source": "osm"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Hôtel Riad Salam",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3336391,-5.8377416",
+      "lat": 30.3336391,
+      "lng": -5.8377416,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3336391,-5.8377416",
+      "source": "osm"
+    },
+    {
+      "nom": "Rose des Sables",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3293309,-5.835647",
+      "lat": 30.3293309,
+      "lng": -5.835647,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3293309,-5.835647",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Fennec Sahara",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3325675,-5.8338643",
+      "lat": 30.3325675,
+      "lng": -5.8338643,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3325675,-5.8338643",
+      "source": "osm"
+    },
+    {
+      "nom": "Karité Sahara",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3366797,-5.83545",
+      "lat": 30.3366797,
+      "lng": -5.83545,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3366797,-5.83545",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel des Amis",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3270762,-5.8385454",
+      "lat": 30.3270762,
+      "lng": -5.8385454,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3270762,-5.8385454",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Le Tinsouline",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3278139,-5.8337592",
+      "lat": 30.3278139,
+      "lng": -5.8337592,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3278139,-5.8337592",
+      "source": "osm"
+    },
+    {
+      "nom": "Gite Hotel Prends ton temps",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3378379,-5.8319619",
+      "lat": 30.3378379,
+      "lng": -5.8319619,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3378379,-5.8319619",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Dar Zaouia ",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3246593,-5.8359536",
+      "lat": 30.3246593,
+      "lng": -5.8359536,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3246593,-5.8359536",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel La Palmeraie",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3236493,-5.8406552",
+      "lat": 30.3236493,
+      "lng": -5.8406552,
+      "halalFriendly": false,
+      "bookingUrl": "www.lapalmerie-zagora.com",
+      "source": "osm"
+    },
+    {
+      "nom": "Auberge Chez Ali",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3221836,-5.8391839",
+      "lat": 30.3221836,
+      "lng": -5.8391839,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3221836,-5.8391839",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Ternata",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3430987,-5.8375587",
+      "lat": 30.3430987,
+      "lng": -5.8375587,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3430987,-5.8375587",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Le Jasmin Du Sud",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3450968,-5.837823",
+      "lat": 30.3450968,
+      "lng": -5.837823,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3450968,-5.837823",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Le petit jardin",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3474572,-5.841683",
+      "lat": 30.3474572,
+      "lng": -5.841683,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3474572,-5.841683",
+      "source": "osm"
+    },
+    {
+      "nom": "Palais Asmaa",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3201114,-5.8275439",
+      "lat": 30.3201114,
+      "lng": -5.8275439,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3201114,-5.8275439",
+      "source": "osm"
+    },
+    {
+      "nom": "Kasbah Sirocco",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3197423,-5.8275971",
+      "lat": 30.3197423,
+      "lng": -5.8275971,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.kasbah-sirocco.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Villa Zagora - Ma Villa au Sahara",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3191338,-5.8279211",
+      "lat": 30.3191338,
+      "lng": -5.8279211,
+      "halalFriendly": false,
+      "bookingUrl": "http://mavillaausahara.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "La Fibule Zagora",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3178988,-5.8293503",
+      "lat": 30.3178988,
+      "lng": -5.8293503,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3178988,-5.8293503",
+      "source": "osm"
+    },
+    {
+      "nom": "Zagour",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.318832,-5.8273747",
+      "lat": 30.318832,
+      "lng": -5.8273747,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.318832,-5.8273747",
+      "source": "osm"
+    },
+    {
+      "nom": "Caravane du Sud",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3183881,-5.8274421",
+      "lat": 30.3183881,
+      "lng": -5.8274421,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3183881,-5.8274421",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Lamane",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.315225,-5.8305089",
+      "lat": 30.315225,
+      "lng": -5.8305089,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.315225,-5.8305089",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Soleil du Monde",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3120132,-5.8318012",
+      "lat": 30.3120132,
+      "lng": -5.8318012,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3120132,-5.8318012",
+      "source": "osm"
+    },
+    {
+      "nom": "La Petite Kashbah",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3128674,-5.8281497",
+      "lat": 30.3128674,
+      "lng": -5.8281497,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3128674,-5.8281497",
+      "source": "osm"
+    },
+    {
+      "nom": "Serenity Lodge",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3104849,-5.8312506",
+      "lat": 30.3104849,
+      "lng": -5.8312506,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3104849,-5.8312506",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Marrat",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3101581,-5.8303474",
+      "lat": 30.3101581,
+      "lng": -5.8303474,
+      "halalFriendly": false,
+      "bookingUrl": "https://riadmarrat-zagora.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Dar Raha Zagora",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3089673,-5.8259391",
+      "lat": 30.3089673,
+      "lng": -5.8259391,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3089673,-5.8259391",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Tagmadart ferme d'hóte",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3037279,-5.8246958",
+      "lat": 30.3037279,
+      "lng": -5.8246958,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3037279,-5.8246958",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel La Perle du Draa",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=30.3066018,-5.8130552",
+      "lat": 30.3066018,
+      "lng": -5.8130552,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3066018,-5.8130552",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Zagora Palm",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3772151,-5.8403409",
+      "lat": 30.3772151,
+      "lng": -5.8403409,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3772151,-5.8403409",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Sauvage Noble",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3940241,-5.8571305",
+      "lat": 30.3940241,
+      "lng": -5.8571305,
+      "halalFriendly": false,
+      "bookingUrl": "www.sauvage-noble.org",
+      "source": "osm"
+    },
+    {
+      "nom": "Kasbah Ziwana",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.3962554,-5.8596909",
+      "lat": 30.3962554,
+      "lng": -5.8596909,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.3962554,-5.8596909",
+      "source": "osm"
+    },
+    {
+      "nom": "Oasis Tilogui",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.2941229,-5.7639799",
+      "lat": 30.2941229,
+      "lng": -5.7639799,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.2941229,-5.7639799",
+      "source": "osm"
+    },
+    {
+      "nom": "Ferme Hanane جنان حنان",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.2830712,-5.7667607",
+      "lat": 30.2830712,
+      "lng": -5.7667607,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.2830712,-5.7667607",
+      "source": "osm"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Zagora",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Zagora",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Zagora%20Zagora%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Vallée et palmeraies du Drâa",
+      "categorie": "Nature",
+      "description": "Oasis verdoyante le long de l'oued Drâa.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Vall%C3%A9e%20et%20palmeraies%20du%20Dr%C3%A2a%20Zagora%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Bibliothèque coranique de Tamegroute",
+      "categorie": "Spirituel",
+      "description": "Manuscrits anciens et poterie verte traditionnelle.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Biblioth%C3%A8que%20coranique%20de%20Tamegroute%20Zagora%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Désert de pierres & dunes de Tinfou",
+      "categorie": "Nature",
+      "description": "Étendues désertiques accessibles depuis la ville.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=D%C3%A9sert%20de%20pierres%20%26%20dunes%20de%20Tinfou%20Zagora%20Maroc"
+    }
+  ],
+  "osmEnriched": true,
+  "osmEnrichedAt": "2026-06-30"
 }

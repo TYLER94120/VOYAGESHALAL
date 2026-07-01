@@ -1,477 +1,466 @@
 {
- "slug": "laayoune",
- "nom": "Laâyoune",
- "pays": "Maroc",
- "pays_slug": "maroc",
- "continent": "Afrique",
- "region": "Maroc",
- "coordonnees": {
-  "lat": 27.1536,
-  "lng": -13.2033
- },
- "codeISO": "MA",
- "score_halal": 4.2,
- "halalScore": 8.4,
- "description": "Laâyoune, Maroc. Forte présence musulmane : nombreuses adresses halal et mosquées.",
- "metaDescription": "Laâyoune, Maroc. Forte présence musulmane : nombreuses adresses halal et mosquées.",
- "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Sakia_El_Hamra_River.jpg",
- "image_hero": "https://upload.wikimedia.org/wikipedia/commons/9/95/Sakia_El_Hamra_River.jpg",
- "imageCredit": "Wikimedia Commons",
- "scoreIndicatif": true,
- "statistiques": {
-  "restaurants_halal": 1,
-  "mosquees": 15,
-  "hotels": 20
- },
- "infoPratique": {
-  "transport": "Accessible par avion et transports locaux.",
-  "meilleureEpoque": "Selon la saison.",
-  "conseilHalal": "Repérez restaurants halal et mosquées via l'application."
- },
- "tags": [
-  "halal",
-  "afrique"
- ],
- "restaurants": [
-  {
-   "nom": "Via Fleuor فيا فلور",
-   "type": "fish, burger, soba, sandwich, sausage, seafood, pizza, chicken, fish and chips, spanish, arab, kebab, italian pizza",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1500448,-13.1978666",
-   "lat": 27.1500448,
-   "lng": -13.1978666,
-   "halalConfidence": "likely",
-   "source": "osm"
-  }
- ],
- "hotels": [
-  {
-   "nom": "maamoun",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1518512,-13.2021584",
-   "lat": 27.1518512,
-   "lng": -13.2021584,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1518512,-13.2021584",
-   "source": "osm"
+  "slug": "laayoune",
+  "nom": "Laâyoune",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Maroc",
+  "coordonnees": {
+    "lat": 27.1536,
+    "lng": -13.2033
   },
-  {
-   "nom": "hotel safariyat",
-   "categorie": "Auberge",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1566512,-13.2030918",
-   "lat": 27.1566512,
-   "lng": -13.2030918,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1566512,-13.2030918",
-   "source": "osm"
+  "codeISO": "MA",
+  "score_halal": 4.2,
+  "halalScore": 8.4,
+  "description": "Laâyoune, Maroc. Forte présence musulmane : nombreuses adresses halal et mosquées.",
+  "metaDescription": "Laâyoune, Maroc. Forte présence musulmane : nombreuses adresses halal et mosquées.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/Sakia_El_Hamra_River.jpg",
+  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/9/95/Sakia_El_Hamra_River.jpg",
+  "imageCredit": "Wikimedia Commons",
+  "scoreIndicatif": true,
+  "statistiques": {
+    "restaurants_halal": 1,
+    "mosquees": 15,
+    "hotels": 20
   },
-  {
-   "nom": "dar dyafa",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1577677,-13.2029227",
-   "lat": 27.1577677,
-   "lng": -13.2029227,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1577677,-13.2029227",
-   "source": "osm"
+  "infoPratique": {
+    "transport": "Accessible par avion et transports locaux.",
+    "meilleureEpoque": "Selon la saison.",
+    "conseilHalal": "Repérez restaurants halal et mosquées via l'application."
   },
-  {
-   "nom": "Hôtel Zaamour",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1500576,-13.2006593",
-   "lat": 27.1500576,
-   "lng": -13.2006593,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1500576,-13.2006593",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Dcheira",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1497245,-13.1998258",
-   "lat": 27.1497245,
-   "lng": -13.1998258,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1497245,-13.1998258",
-   "source": "osm"
-  },
-  {
-   "nom": "Nagjir",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1502274,-13.1981859",
-   "lat": 27.1502274,
-   "lng": -13.1981859,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1502274,-13.1981859",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Sahariano",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1515209,-13.1971701",
-   "lat": 27.1515209,
-   "lng": -13.1971701,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1515209,-13.1971701",
-   "source": "osm"
-  },
-  {
-   "nom": "فندق الساحل",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1489779,-13.199147",
-   "lat": 27.1489779,
-   "lng": -13.199147,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1489779,-13.199147",
-   "source": "osm"
-  },
-  {
-   "nom": "Ahl al-Makki أهل المكي",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1507448,-13.1973724",
-   "lat": 27.1507448,
-   "lng": -13.1973724,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1507448,-13.1973724",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Parador",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1599298,-13.2045936",
-   "lat": 27.1599298,
-   "lng": -13.2045936,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1599298,-13.2045936",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Parador",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1600738,-13.2042587",
-   "lat": 27.1600738,
-   "lng": -13.2042587,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1600738,-13.2042587",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Lakouara",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1622413,-13.2053585",
-   "lat": 27.1622413,
-   "lng": -13.2053585,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1622413,-13.2053585",
-   "source": "osm"
-  },
-  {
-   "nom": "Andre Luxury Apart",
-   "categorie": "Appartement",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1626384,-13.2059898",
-   "lat": 27.1626384,
-   "lng": -13.2059898,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1626384,-13.2059898",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Rif فندق الريف",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1641796,-13.2053513",
-   "lat": 27.1641796,
-   "lng": -13.2053513,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1641796,-13.2053513",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel San Mao Sahara",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "score": 2,
-   "mapsUrl": "https://maps.google.com/?q=27.1631146,-13.2163135",
-   "lat": 27.1631146,
-   "lng": -13.2163135,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1631146,-13.2163135",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Rimal Sahara فندق رمال الصحراء",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1632481,-13.2170841",
-   "lat": 27.1632481,
-   "lng": -13.2170841,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1632481,-13.2170841",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel Salwan",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1426997,-13.1873967",
-   "lat": 27.1426997,
-   "lng": -13.1873967,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1426997,-13.1873967",
-   "source": "osm"
-  },
-  {
-   "nom": "Dar al Wazir دار الوزير",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1384672,-13.1774735",
-   "lat": 27.1384672,
-   "lng": -13.1774735,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1384672,-13.1774735",
-   "source": "osm"
-  },
-  {
-   "nom": "star hotel",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1251112,-13.1844978",
-   "lat": 27.1251112,
-   "lng": -13.1844978,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1251112,-13.1844978",
-   "source": "osm"
-  },
-  {
-   "nom": "résidence BABEL",
-   "categorie": "Appartement",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=27.1300925,-13.1702105",
-   "lat": 27.1300925,
-   "lng": -13.1702105,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=27.1300925,-13.1702105",
-   "source": "osm"
-  }
- ],
- "mosqueesPrincipales": [
-  {
-   "id": "m229372356",
-   "nom": "Mosquée Moulad alah",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1571962,-13.2045392",
-   "lat": 27.1571962,
-   "lng": -13.2045392,
-   "source": "osm"
-  },
-  {
-   "id": "m1267487942",
-   "nom": "arhman muskim mosque",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1578923,-13.2022046",
-   "lat": 27.1578923,
-   "lng": -13.2022046,
-   "source": "osm"
-  },
-  {
-   "id": "m1266645421",
-   "nom": "Mosquée oum lmouminine Khadija Bint Khuwaylid",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1560362,-13.1974095",
-   "lat": 27.1560362,
-   "lng": -13.1974095,
-   "source": "osm"
-  },
-  {
-   "id": "m1266928420",
-   "nom": "Mosquée SAKIYA AL HAMRA",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.158418,-13.1875701",
-   "lat": 27.158418,
-   "lng": -13.1875701,
-   "source": "osm"
-  },
-  {
-   "id": "m229924218",
-   "nom": "Mosquée Derham",
-   "type": "Mosquée",
-   "adresse": "Rond Point El Houda, Laâyoune",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1354308,-13.1980788",
-   "lat": 27.1354308,
-   "lng": -13.1980788,
-   "source": "osm"
-  },
-  {
-   "id": "m229924696",
-   "nom": "Mosquée Miftah al Hamd",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1386464,-13.1880467",
-   "lat": 27.1386464,
-   "lng": -13.1880467,
-   "source": "osm"
-  },
-  {
-   "id": "m1266950367",
-   "nom": "Mosquée KHALID BNOU LWALID",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.134199,-13.1812297",
-   "lat": 27.134199,
-   "lng": -13.1812297,
-   "source": "osm"
-  },
-  {
-   "id": "m1268383887",
-   "nom": "Mosquée 84",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1441782,-13.1676925",
-   "lat": 27.1441782,
-   "lng": -13.1676925,
-   "source": "osm"
-  },
-  {
-   "id": "m1266932039",
-   "nom": "مسجد فاطمة بنت أسد",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1428254,-13.1640794",
-   "lat": 27.1428254,
-   "lng": -13.1640794,
-   "source": "osm"
-  },
-  {
-   "id": "m1266956305",
-   "nom": "Mosquée IMAM CHAFII",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1318347,-13.1700204",
-   "lat": 27.1318347,
-   "lng": -13.1700204,
-   "source": "osm"
-  },
-  {
-   "id": "m607707452",
-   "nom": "Mosquée Arraha مسجد الحسن الثاني",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1247442,-13.1761557",
-   "lat": 27.1247442,
-   "lng": -13.1761557,
-   "source": "osm"
-  },
-  {
-   "id": "m1266958720",
-   "nom": "Mosquée AL AMAL",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1290502,-13.1676681",
-   "lat": 27.1290502,
-   "lng": -13.1676681,
-   "source": "osm"
-  },
-  {
-   "id": "m1265947180",
-   "nom": "Mosquée EL MASSIRA",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1337639,-13.159304",
-   "lat": 27.1337639,
-   "lng": -13.159304,
-   "source": "osm"
-  },
-  {
-   "id": "m1266493378",
-   "nom": "مسجد الوحدة بلوك I",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1357385,-13.1528544",
-   "lat": 27.1357385,
-   "lng": -13.1528544,
-   "source": "osm"
-  },
-  {
-   "id": "m1266954848",
-   "nom": "مسجد الأدارسة",
-   "type": "Mosquée",
-   "adresse": "",
-   "description": "Lieu de prière (OpenStreetMap).",
-   "mapsUrl": "https://maps.google.com/?q=27.1269046,-13.151917",
-   "lat": 27.1269046,
-   "lng": -13.151917,
-   "source": "osm"
-  }
- ],
- "activites": [
-  {
-   "id": "a7178769989",
-   "nom": "Ville Marocaine de Laâyoune مدينة العيون المغربية",
-   "categorie": "attraction",
-   "description": "",
-   "prix": "",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=27.1568528,-13.1981518",
-   "lat": 27.1568528,
-   "lng": -13.1981518,
-   "source": "osm"
-  },
-  {
-   "id": "a6793975885",
-   "nom": "Sanmao Ancienne Résidence",
-   "categorie": "attraction",
-   "description": "",
-   "prix": "",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=27.1612569,-13.2137089",
-   "lat": 27.1612569,
-   "lng": -13.2137089,
-   "source": "osm"
-  },
-  {
-   "id": "a7178772089",
-   "nom": "Ville de Laâyoune مدينة العيون",
-   "categorie": "attraction",
-   "description": "",
-   "prix": "",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=27.1525859,-13.1896492",
-   "lat": 27.1525859,
-   "lng": -13.1896492,
-   "source": "osm"
-  }
- ],
- "osmEnriched": true,
- "osmEnrichedAt": "2026-06-30"
+  "tags": [
+    "halal",
+    "afrique"
+  ],
+  "restaurants": [
+    {
+      "nom": "Via Fleuor فيا فلور",
+      "type": "fish, burger, soba, sandwich, sausage, seafood, pizza, chicken, fish and chips, spanish, arab, kebab, italian pizza",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1500448,-13.1978666",
+      "lat": 27.1500448,
+      "lng": -13.1978666,
+      "halalConfidence": "likely",
+      "source": "osm"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "maamoun",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1518512,-13.2021584",
+      "lat": 27.1518512,
+      "lng": -13.2021584,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1518512,-13.2021584",
+      "source": "osm"
+    },
+    {
+      "nom": "hotel safariyat",
+      "categorie": "Auberge",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1566512,-13.2030918",
+      "lat": 27.1566512,
+      "lng": -13.2030918,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1566512,-13.2030918",
+      "source": "osm"
+    },
+    {
+      "nom": "dar dyafa",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1577677,-13.2029227",
+      "lat": 27.1577677,
+      "lng": -13.2029227,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1577677,-13.2029227",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Zaamour",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1500576,-13.2006593",
+      "lat": 27.1500576,
+      "lng": -13.2006593,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1500576,-13.2006593",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Dcheira",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1497245,-13.1998258",
+      "lat": 27.1497245,
+      "lng": -13.1998258,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1497245,-13.1998258",
+      "source": "osm"
+    },
+    {
+      "nom": "Nagjir",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1502274,-13.1981859",
+      "lat": 27.1502274,
+      "lng": -13.1981859,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1502274,-13.1981859",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Sahariano",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1515209,-13.1971701",
+      "lat": 27.1515209,
+      "lng": -13.1971701,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1515209,-13.1971701",
+      "source": "osm"
+    },
+    {
+      "nom": "فندق الساحل",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1489779,-13.199147",
+      "lat": 27.1489779,
+      "lng": -13.199147,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1489779,-13.199147",
+      "source": "osm"
+    },
+    {
+      "nom": "Ahl al-Makki أهل المكي",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1507448,-13.1973724",
+      "lat": 27.1507448,
+      "lng": -13.1973724,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1507448,-13.1973724",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Parador",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1599298,-13.2045936",
+      "lat": 27.1599298,
+      "lng": -13.2045936,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1599298,-13.2045936",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Lakouara",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1622413,-13.2053585",
+      "lat": 27.1622413,
+      "lng": -13.2053585,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1622413,-13.2053585",
+      "source": "osm"
+    },
+    {
+      "nom": "Andre Luxury Apart",
+      "categorie": "Appartement",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1626384,-13.2059898",
+      "lat": 27.1626384,
+      "lng": -13.2059898,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1626384,-13.2059898",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Rif فندق الريف",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1641796,-13.2053513",
+      "lat": 27.1641796,
+      "lng": -13.2053513,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1641796,-13.2053513",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel San Mao Sahara",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "score": 2,
+      "mapsUrl": "https://maps.google.com/?q=27.1631146,-13.2163135",
+      "lat": 27.1631146,
+      "lng": -13.2163135,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1631146,-13.2163135",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Rimal Sahara فندق رمال الصحراء",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1632481,-13.2170841",
+      "lat": 27.1632481,
+      "lng": -13.2170841,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1632481,-13.2170841",
+      "source": "osm"
+    },
+    {
+      "nom": "Hôtel Salwan",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1426997,-13.1873967",
+      "lat": 27.1426997,
+      "lng": -13.1873967,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1426997,-13.1873967",
+      "source": "osm"
+    },
+    {
+      "nom": "Dar al Wazir دار الوزير",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1384672,-13.1774735",
+      "lat": 27.1384672,
+      "lng": -13.1774735,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1384672,-13.1774735",
+      "source": "osm"
+    },
+    {
+      "nom": "star hotel",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1251112,-13.1844978",
+      "lat": 27.1251112,
+      "lng": -13.1844978,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1251112,-13.1844978",
+      "source": "osm"
+    },
+    {
+      "nom": "résidence BABEL",
+      "categorie": "Appartement",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=27.1300925,-13.1702105",
+      "lat": 27.1300925,
+      "lng": -13.1702105,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=27.1300925,-13.1702105",
+      "source": "osm"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "id": "m229372356",
+      "nom": "Mosquée Moulad alah",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1571962,-13.2045392",
+      "lat": 27.1571962,
+      "lng": -13.2045392,
+      "source": "osm"
+    },
+    {
+      "id": "m1267487942",
+      "nom": "arhman muskim mosque",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1578923,-13.2022046",
+      "lat": 27.1578923,
+      "lng": -13.2022046,
+      "source": "osm"
+    },
+    {
+      "id": "m1266645421",
+      "nom": "Mosquée oum lmouminine Khadija Bint Khuwaylid",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1560362,-13.1974095",
+      "lat": 27.1560362,
+      "lng": -13.1974095,
+      "source": "osm"
+    },
+    {
+      "id": "m1266928420",
+      "nom": "Mosquée SAKIYA AL HAMRA",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.158418,-13.1875701",
+      "lat": 27.158418,
+      "lng": -13.1875701,
+      "source": "osm"
+    },
+    {
+      "id": "m229924218",
+      "nom": "Mosquée Derham",
+      "type": "Mosquée",
+      "adresse": "Rond Point El Houda, Laâyoune",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1354308,-13.1980788",
+      "lat": 27.1354308,
+      "lng": -13.1980788,
+      "source": "osm"
+    },
+    {
+      "id": "m229924696",
+      "nom": "Mosquée Miftah al Hamd",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1386464,-13.1880467",
+      "lat": 27.1386464,
+      "lng": -13.1880467,
+      "source": "osm"
+    },
+    {
+      "id": "m1266950367",
+      "nom": "Mosquée KHALID BNOU LWALID",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.134199,-13.1812297",
+      "lat": 27.134199,
+      "lng": -13.1812297,
+      "source": "osm"
+    },
+    {
+      "id": "m1268383887",
+      "nom": "Mosquée 84",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1441782,-13.1676925",
+      "lat": 27.1441782,
+      "lng": -13.1676925,
+      "source": "osm"
+    },
+    {
+      "id": "m1266932039",
+      "nom": "مسجد فاطمة بنت أسد",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1428254,-13.1640794",
+      "lat": 27.1428254,
+      "lng": -13.1640794,
+      "source": "osm"
+    },
+    {
+      "id": "m1266956305",
+      "nom": "Mosquée IMAM CHAFII",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1318347,-13.1700204",
+      "lat": 27.1318347,
+      "lng": -13.1700204,
+      "source": "osm"
+    },
+    {
+      "id": "m607707452",
+      "nom": "Mosquée Arraha مسجد الحسن الثاني",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1247442,-13.1761557",
+      "lat": 27.1247442,
+      "lng": -13.1761557,
+      "source": "osm"
+    },
+    {
+      "id": "m1266958720",
+      "nom": "Mosquée AL AMAL",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1290502,-13.1676681",
+      "lat": 27.1290502,
+      "lng": -13.1676681,
+      "source": "osm"
+    },
+    {
+      "id": "m1265947180",
+      "nom": "Mosquée EL MASSIRA",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1337639,-13.159304",
+      "lat": 27.1337639,
+      "lng": -13.159304,
+      "source": "osm"
+    },
+    {
+      "id": "m1266493378",
+      "nom": "مسجد الوحدة بلوك I",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1357385,-13.1528544",
+      "lat": 27.1357385,
+      "lng": -13.1528544,
+      "source": "osm"
+    },
+    {
+      "id": "m1266954848",
+      "nom": "مسجد الأدارسة",
+      "type": "Mosquée",
+      "adresse": "",
+      "description": "Lieu de prière (OpenStreetMap).",
+      "mapsUrl": "https://maps.google.com/?q=27.1269046,-13.151917",
+      "lat": 27.1269046,
+      "lng": -13.151917,
+      "source": "osm"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a7178769989",
+      "nom": "Ville Marocaine de Laâyoune مدينة العيون المغربية",
+      "categorie": "attraction",
+      "description": "",
+      "prix": "",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=27.1568528,-13.1981518",
+      "lat": 27.1568528,
+      "lng": -13.1981518,
+      "source": "osm"
+    },
+    {
+      "id": "a6793975885",
+      "nom": "Sanmao Ancienne Résidence",
+      "categorie": "attraction",
+      "description": "",
+      "prix": "",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=27.1612569,-13.2137089",
+      "lat": 27.1612569,
+      "lng": -13.2137089,
+      "source": "osm"
+    },
+    {
+      "id": "a7178772089",
+      "nom": "Ville de Laâyoune مدينة العيون",
+      "categorie": "attraction",
+      "description": "",
+      "prix": "",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=27.1525859,-13.1896492",
+      "lat": 27.1525859,
+      "lng": -13.1896492,
+      "source": "osm"
+    }
+  ],
+  "osmEnriched": true,
+  "osmEnrichedAt": "2026-06-30"
 }

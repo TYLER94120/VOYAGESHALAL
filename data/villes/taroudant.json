@@ -1,536 +1,514 @@
 {
- "slug": "taroudant",
- "nom": "Taroudant",
- "pays": "Maroc",
- "pays_slug": "maroc",
- "continent": "Afrique",
- "region": "Sud du Maroc",
- "coordonnees": {
-  "lat": 30.4711,
-  "lng": -8.877
- },
- "codeISO": "MA",
- "score_halal": 4.6,
- "halalScore": 9.2,
- "description": "Surnommée 'la petite Marrakech', Taroudant séduit par ses remparts intacts, son souk berbère authentique et sa position dans la plaine du Souss.",
- "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Taroudant-murailles.jpg",
- "image_hero": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Taroudant-murailles.jpg",
- "metaDescription": "Surnommée 'la petite Marrakech', Taroudant séduit par ses remparts intacts, son souk berbère authentique et sa position dans la plaine du Souss.",
- "monnaie": "MAD (Dirham marocain)",
- "langue": "Arabe, Tamazight, Français",
- "statistiques": {
-  "restaurants_halal": 2,
-  "mosquees": 1,
-  "hotels": 39
- },
- "infoPratique": {
+  "slug": "taroudant",
+  "nom": "Taroudant",
+  "pays": "Maroc",
+  "pays_slug": "maroc",
+  "continent": "Afrique",
+  "region": "Sud du Maroc",
+  "coordonnees": {
+    "lat": 30.4711,
+    "lng": -8.877
+  },
+  "codeISO": "MA",
+  "score_halal": 4.6,
+  "halalScore": 9.2,
+  "description": "Surnommée 'la petite Marrakech', Taroudant séduit par ses remparts intacts, son souk berbère authentique et sa position dans la plaine du Souss.",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Taroudant-murailles.jpg",
+  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Taroudant-murailles.jpg",
+  "metaDescription": "Surnommée 'la petite Marrakech', Taroudant séduit par ses remparts intacts, son souk berbère authentique et sa position dans la plaine du Souss.",
   "monnaie": "MAD (Dirham marocain)",
   "langue": "Arabe, Tamazight, Français",
-  "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
-  "meilleureEpoque": "Printemps et automne (climat doux)."
- },
- "tags": [
-  "halal",
-  "Maroc"
- ],
- "restaurants": [
-  {
-   "nom": "cafe restaurant/snack Al Masjid",
-   "type": "moroccan",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4688263,-8.8775461",
-   "lat": 30.4688263,
-   "lng": -8.8775461,
-   "halalConfidence": "likely",
-   "source": "osm"
+  "statistiques": {
+    "restaurants_halal": 2,
+    "mosquees": 1,
+    "hotels": 39
   },
-  {
-   "nom": "Restaurant Azzar",
-   "type": "steak house, moroccan, sandwich, local",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4690328,-8.8824972",
-   "lat": 30.4690328,
-   "lng": -8.8824972,
-   "halalConfidence": "likely",
-   "source": "osm"
-  }
- ],
- "hotels": [
-  {
-   "nom": "Hotel Tiouit",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "score": 2,
-   "mapsUrl": "https://maps.google.com/?q=30.4692646,-8.8760728",
-   "lat": 30.4692646,
-   "lng": -8.8760728,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4692646,-8.8760728",
-   "source": "osm"
+  "infoPratique": {
+    "monnaie": "MAD (Dirham marocain)",
+    "langue": "Arabe, Tamazight, Français",
+    "transport": "Accessible en bus (CTM/Supratours), grand taxi ou voiture.",
+    "meilleureEpoque": "Printemps et automne (climat doux)."
   },
-  {
-   "nom": "Palais Taroudant",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4686785,-8.8773321",
-   "lat": 30.4686785,
-   "lng": -8.8773321,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.instagram.com/palaistaroudant/",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Maia",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4685455,-8.8760071",
-   "lat": 30.4685455,
-   "lng": -8.8760071,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4685455,-8.8760071",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Dar Fatima",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4684133,-8.876193",
-   "lat": 30.4684133,
-   "lng": -8.876193,
-   "halalFriendly": false,
-   "bookingUrl": "www.darfatima.com",
-   "source": "osm"
-  },
-  {
-   "nom": "dar fatima",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4682359,-8.8761693",
-   "lat": 30.4682359,
-   "lng": -8.8761693,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4682359,-8.8761693",
-   "source": "osm"
-  },
-  {
-   "nom": "Ennasr",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4685595,-8.8789035",
-   "lat": 30.4685595,
-   "lng": -8.8789035,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4685595,-8.8789035",
-   "source": "osm"
-  },
-  {
-   "nom": "Houara",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4686239,-8.8791128",
-   "lat": 30.4686239,
-   "lng": -8.8791128,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4686239,-8.8791128",
-   "source": "osm"
-  },
-  {
-   "nom": "Aniloul",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4687527,-8.8796827",
-   "lat": 30.4687527,
-   "lng": -8.8796827,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4687527,-8.8796827",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Tafilag",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4742968,-8.8781458",
-   "lat": 30.4742968,
-   "lng": -8.8781458,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4742968,-8.8781458",
-   "source": "osm"
-  },
-  {
-   "nom": "Palais Oumensour",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4725311,-8.8807928",
-   "lat": 30.4725311,
-   "lng": -8.8807928,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.palaisoumensour.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel El Warda",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4684894,-8.8804411",
-   "lat": 30.4684894,
-   "lng": -8.8804411,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4684894,-8.8804411",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Tafilag",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4749689,-8.8783813",
-   "lat": 30.4749689,
-   "lng": -8.8783813,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4749689,-8.8783813",
-   "source": "osm"
-  },
-  {
-   "nom": "Hôtel El Warda",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4681023,-8.8802271",
-   "lat": 30.4681023,
-   "lng": -8.8802271,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4681023,-8.8802271",
-   "source": "osm"
-  },
-  {
-   "nom": "Warda",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4681624,-8.8803052",
-   "lat": 30.4681624,
-   "lng": -8.8803052,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4681624,-8.8803052",
-   "source": "osm"
-  },
-  {
-   "nom": "Mentaga",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4680019,-8.8803418",
-   "lat": 30.4680019,
-   "lng": -8.8803418,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4680019,-8.8803418",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Atlas sgl rm 90d w bath",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4668847,-8.8760068",
-   "lat": 30.4668847,
-   "lng": -8.8760068,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4668847,-8.8760068",
-   "source": "osm"
-  },
-  {
-   "nom": "Saadiens",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4726816,-8.8818105",
-   "lat": 30.4726816,
-   "lng": -8.8818105,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4726816,-8.8818105",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad souss",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4668247,-8.8754085",
-   "lat": 30.4668247,
-   "lng": -8.8754085,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4668247,-8.8754085",
-   "source": "osm"
-  },
-  {
-   "nom": "Dar Zahia",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4740451,-8.8812039",
-   "lat": 30.4740451,
-   "lng": -8.8812039,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4740451,-8.8812039",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Amnay",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4690468,-8.8819236",
-   "lat": 30.4690468,
-   "lng": -8.8819236,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4690468,-8.8819236",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Benyara",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4665886,-8.8786879",
-   "lat": 30.4665886,
-   "lng": -8.8786879,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4665886,-8.8786879",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Les Arcades",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4696667,-8.8827123",
-   "lat": 30.4696667,
-   "lng": -8.8827123,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4696667,-8.8827123",
-   "source": "osm"
-  },
-  {
-   "nom": "Palais Salam",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4729147,-8.8713029",
-   "lat": 30.4729147,
-   "lng": -8.8713029,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4729147,-8.8713029",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Roudani",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4696118,-8.8829761",
-   "lat": 30.4696118,
-   "lng": -8.8829761,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4696118,-8.8829761",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Taroudant",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.466362,-8.8809213",
-   "lat": 30.466362,
-   "lng": -8.8809213,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.riadtaroudant.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Hotel Taroudannt",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.46919,-8.8834779",
-   "lat": 30.46919,
-   "lng": -8.8834779,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.46919,-8.8834779",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Dar Dzahra",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "score": 2,
-   "mapsUrl": "https://maps.google.com/?q=30.4677456,-8.8839288",
-   "lat": 30.4677456,
-   "lng": -8.8839288,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4677456,-8.8839288",
-   "source": "osm"
-  },
-  {
-   "nom": "Residence Roudana",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4693025,-8.884745",
-   "lat": 30.4693025,
-   "lng": -8.884745,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4693025,-8.884745",
-   "source": "osm"
-  },
-  {
-   "nom": "Dar El Hana",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4666811,-8.8834025",
-   "lat": 30.4666811,
-   "lng": -8.8834025,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4666811,-8.8834025",
-   "source": "osm"
-  },
-  {
-   "nom": "Dar Randigaba",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.472339,-8.8892213",
-   "lat": 30.472339,
-   "lng": -8.8892213,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.472339,-8.8892213",
-   "source": "osm"
-  },
-  {
-   "nom": "Le Moulin",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.476601,-8.8879341",
-   "lat": 30.476601,
-   "lng": -8.8879341,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.476601,-8.8879341",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad El Hanaoui",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4671519,-8.8574116",
-   "lat": 30.4671519,
-   "lng": -8.8574116,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4671519,-8.8574116",
-   "source": "osm"
-  },
-  {
-   "nom": "Dar Zitoune",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4521549,-8.8802196",
-   "lat": 30.4521549,
-   "lng": -8.8802196,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4521549,-8.8802196",
-   "source": "osm"
-  },
-  {
-   "nom": "Le jardin des épices",
-   "categorie": "Maison d'hôtes",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4622257,-8.9084035",
-   "lat": 30.4622257,
-   "lng": -8.9084035,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.lejardindesepices.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Kasbah Gousteau",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4393108,-8.8777953",
-   "lat": 30.4393108,
-   "lng": -8.8777953,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4393108,-8.8777953",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Le Jasmin",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.478368,-8.8311839",
-   "lat": 30.478368,
-   "lng": -8.8311839,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.riadlejasmin.com/",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad El Aissi",
-   "categorie": "Hôtel",
-   "priceRange": "€€€",
-   "score": 3,
-   "mapsUrl": "https://maps.google.com/?q=30.4775855,-8.9264948",
-   "lat": 30.4775855,
-   "lng": -8.9264948,
-   "halalFriendly": false,
-   "bookingUrl": "https://www.riadelaissi.ma/",
-   "source": "osm"
-  },
-  {
-   "nom": "Riad Anma",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.4818575,-8.8118226",
-   "lat": 30.4818575,
-   "lng": -8.8118226,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.4818575,-8.8118226",
-   "source": "osm"
-  },
-  {
-   "nom": "Palais Musée Claudio Bravo",
-   "categorie": "Hôtel",
-   "priceRange": "€€",
-   "mapsUrl": "https://maps.google.com/?q=30.5500854,-8.8770582",
-   "lat": 30.5500854,
-   "lng": -8.8770582,
-   "halalFriendly": false,
-   "bookingUrl": "https://maps.google.com/?q=30.5500854,-8.8770582",
-   "source": "osm"
-  }
- ],
- "mosqueesPrincipales": [
-  {
-   "id": "m1",
-   "nom": "Grande Mosquée de Taroudant",
-   "type": "Mosquée",
-   "adresse": "Centre-ville, Taroudant",
-   "description": "Mosquée principale de la ville, prière du vendredi.",
-   "note": 5,
-   "acces_non_musulmans": false,
-   "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Taroudant%20Taroudant%20Maroc"
-  }
- ],
- "activites": [
-  {
-   "id": "a1",
-   "nom": "Tour des remparts",
-   "categorie": "Histoire",
-   "description": "Murailles ocres parfaitement conservées, à parcourir en calèche.",
-   "prix": "Payant",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Tour%20des%20remparts%20Taroudant%20Maroc"
-  },
-  {
-   "id": "a2",
-   "nom": "Souk berbère et souk arabe",
-   "categorie": "Shopping",
-   "description": "Marchés authentiques d'épices, bijoux et tapis du Souss.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Souk%20berb%C3%A8re%20et%20souk%20arabe%20Taroudant%20Maroc"
-  },
-  {
-   "id": "a3",
-   "nom": "Jardins et palmeraies du Souss",
-   "categorie": "Nature",
-   "description": "Oasis et vergers d'agrumes autour de la ville.",
-   "prix": "Gratuit",
-   "duree": "",
-   "mapsUrl": "https://maps.google.com/?q=Jardins%20et%20palmeraies%20du%20Souss%20Taroudant%20Maroc"
-  }
- ],
- "imageCredit": "Wikimedia Commons",
- "osmEnriched": true,
- "osmEnrichedAt": "2026-06-30"
+  "tags": [
+    "halal",
+    "Maroc"
+  ],
+  "restaurants": [
+    {
+      "nom": "cafe restaurant/snack Al Masjid",
+      "type": "moroccan",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4688263,-8.8775461",
+      "lat": 30.4688263,
+      "lng": -8.8775461,
+      "halalConfidence": "likely",
+      "source": "osm"
+    },
+    {
+      "nom": "Restaurant Azzar",
+      "type": "steak house, moroccan, sandwich, local",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4690328,-8.8824972",
+      "lat": 30.4690328,
+      "lng": -8.8824972,
+      "halalConfidence": "likely",
+      "source": "osm"
+    }
+  ],
+  "hotels": [
+    {
+      "nom": "Hotel Tiouit",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "score": 2,
+      "mapsUrl": "https://maps.google.com/?q=30.4692646,-8.8760728",
+      "lat": 30.4692646,
+      "lng": -8.8760728,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4692646,-8.8760728",
+      "source": "osm"
+    },
+    {
+      "nom": "Palais Taroudant",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4686785,-8.8773321",
+      "lat": 30.4686785,
+      "lng": -8.8773321,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.instagram.com/palaistaroudant/",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Maia",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4685455,-8.8760071",
+      "lat": 30.4685455,
+      "lng": -8.8760071,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4685455,-8.8760071",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Dar Fatima",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4684133,-8.876193",
+      "lat": 30.4684133,
+      "lng": -8.876193,
+      "halalFriendly": false,
+      "bookingUrl": "www.darfatima.com",
+      "source": "osm"
+    },
+    {
+      "nom": "dar fatima",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4682359,-8.8761693",
+      "lat": 30.4682359,
+      "lng": -8.8761693,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4682359,-8.8761693",
+      "source": "osm"
+    },
+    {
+      "nom": "Ennasr",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4685595,-8.8789035",
+      "lat": 30.4685595,
+      "lng": -8.8789035,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4685595,-8.8789035",
+      "source": "osm"
+    },
+    {
+      "nom": "Houara",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4686239,-8.8791128",
+      "lat": 30.4686239,
+      "lng": -8.8791128,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4686239,-8.8791128",
+      "source": "osm"
+    },
+    {
+      "nom": "Aniloul",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4687527,-8.8796827",
+      "lat": 30.4687527,
+      "lng": -8.8796827,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4687527,-8.8796827",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Tafilag",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4742968,-8.8781458",
+      "lat": 30.4742968,
+      "lng": -8.8781458,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4742968,-8.8781458",
+      "source": "osm"
+    },
+    {
+      "nom": "Palais Oumensour",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4725311,-8.8807928",
+      "lat": 30.4725311,
+      "lng": -8.8807928,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.palaisoumensour.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel El Warda",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4684894,-8.8804411",
+      "lat": 30.4684894,
+      "lng": -8.8804411,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4684894,-8.8804411",
+      "source": "osm"
+    },
+    {
+      "nom": "Warda",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4681624,-8.8803052",
+      "lat": 30.4681624,
+      "lng": -8.8803052,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4681624,-8.8803052",
+      "source": "osm"
+    },
+    {
+      "nom": "Mentaga",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4680019,-8.8803418",
+      "lat": 30.4680019,
+      "lng": -8.8803418,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4680019,-8.8803418",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Atlas sgl rm 90d w bath",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4668847,-8.8760068",
+      "lat": 30.4668847,
+      "lng": -8.8760068,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4668847,-8.8760068",
+      "source": "osm"
+    },
+    {
+      "nom": "Saadiens",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4726816,-8.8818105",
+      "lat": 30.4726816,
+      "lng": -8.8818105,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4726816,-8.8818105",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad souss",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4668247,-8.8754085",
+      "lat": 30.4668247,
+      "lng": -8.8754085,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4668247,-8.8754085",
+      "source": "osm"
+    },
+    {
+      "nom": "Dar Zahia",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4740451,-8.8812039",
+      "lat": 30.4740451,
+      "lng": -8.8812039,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4740451,-8.8812039",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Amnay",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4690468,-8.8819236",
+      "lat": 30.4690468,
+      "lng": -8.8819236,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4690468,-8.8819236",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Benyara",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4665886,-8.8786879",
+      "lat": 30.4665886,
+      "lng": -8.8786879,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4665886,-8.8786879",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Les Arcades",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4696667,-8.8827123",
+      "lat": 30.4696667,
+      "lng": -8.8827123,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4696667,-8.8827123",
+      "source": "osm"
+    },
+    {
+      "nom": "Palais Salam",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4729147,-8.8713029",
+      "lat": 30.4729147,
+      "lng": -8.8713029,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4729147,-8.8713029",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Roudani",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4696118,-8.8829761",
+      "lat": 30.4696118,
+      "lng": -8.8829761,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4696118,-8.8829761",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Taroudant",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.466362,-8.8809213",
+      "lat": 30.466362,
+      "lng": -8.8809213,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.riadtaroudant.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Hotel Taroudannt",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.46919,-8.8834779",
+      "lat": 30.46919,
+      "lng": -8.8834779,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.46919,-8.8834779",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Dar Dzahra",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "score": 2,
+      "mapsUrl": "https://maps.google.com/?q=30.4677456,-8.8839288",
+      "lat": 30.4677456,
+      "lng": -8.8839288,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4677456,-8.8839288",
+      "source": "osm"
+    },
+    {
+      "nom": "Residence Roudana",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4693025,-8.884745",
+      "lat": 30.4693025,
+      "lng": -8.884745,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4693025,-8.884745",
+      "source": "osm"
+    },
+    {
+      "nom": "Dar El Hana",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4666811,-8.8834025",
+      "lat": 30.4666811,
+      "lng": -8.8834025,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4666811,-8.8834025",
+      "source": "osm"
+    },
+    {
+      "nom": "Dar Randigaba",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.472339,-8.8892213",
+      "lat": 30.472339,
+      "lng": -8.8892213,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.472339,-8.8892213",
+      "source": "osm"
+    },
+    {
+      "nom": "Le Moulin",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.476601,-8.8879341",
+      "lat": 30.476601,
+      "lng": -8.8879341,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.476601,-8.8879341",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad El Hanaoui",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4671519,-8.8574116",
+      "lat": 30.4671519,
+      "lng": -8.8574116,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4671519,-8.8574116",
+      "source": "osm"
+    },
+    {
+      "nom": "Dar Zitoune",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4521549,-8.8802196",
+      "lat": 30.4521549,
+      "lng": -8.8802196,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4521549,-8.8802196",
+      "source": "osm"
+    },
+    {
+      "nom": "Le jardin des épices",
+      "categorie": "Maison d'hôtes",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4622257,-8.9084035",
+      "lat": 30.4622257,
+      "lng": -8.9084035,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.lejardindesepices.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Kasbah Gousteau",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4393108,-8.8777953",
+      "lat": 30.4393108,
+      "lng": -8.8777953,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4393108,-8.8777953",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Le Jasmin",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.478368,-8.8311839",
+      "lat": 30.478368,
+      "lng": -8.8311839,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.riadlejasmin.com/",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad El Aissi",
+      "categorie": "Hôtel",
+      "priceRange": "€€€",
+      "score": 3,
+      "mapsUrl": "https://maps.google.com/?q=30.4775855,-8.9264948",
+      "lat": 30.4775855,
+      "lng": -8.9264948,
+      "halalFriendly": false,
+      "bookingUrl": "https://www.riadelaissi.ma/",
+      "source": "osm"
+    },
+    {
+      "nom": "Riad Anma",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.4818575,-8.8118226",
+      "lat": 30.4818575,
+      "lng": -8.8118226,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.4818575,-8.8118226",
+      "source": "osm"
+    },
+    {
+      "nom": "Palais Musée Claudio Bravo",
+      "categorie": "Hôtel",
+      "priceRange": "€€",
+      "mapsUrl": "https://maps.google.com/?q=30.5500854,-8.8770582",
+      "lat": 30.5500854,
+      "lng": -8.8770582,
+      "halalFriendly": false,
+      "bookingUrl": "https://maps.google.com/?q=30.5500854,-8.8770582",
+      "source": "osm"
+    }
+  ],
+  "mosqueesPrincipales": [
+    {
+      "id": "m1",
+      "nom": "Grande Mosquée de Taroudant",
+      "type": "Mosquée",
+      "adresse": "Centre-ville, Taroudant",
+      "description": "Mosquée principale de la ville, prière du vendredi.",
+      "note": 5,
+      "acces_non_musulmans": false,
+      "mapsUrl": "https://maps.google.com/?q=Grande%20Mosqu%C3%A9e%20Taroudant%20Taroudant%20Maroc"
+    }
+  ],
+  "activites": [
+    {
+      "id": "a1",
+      "nom": "Tour des remparts",
+      "categorie": "Histoire",
+      "description": "Murailles ocres parfaitement conservées, à parcourir en calèche.",
+      "prix": "Payant",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Tour%20des%20remparts%20Taroudant%20Maroc"
+    },
+    {
+      "id": "a2",
+      "nom": "Souk berbère et souk arabe",
+      "categorie": "Shopping",
+      "description": "Marchés authentiques d'épices, bijoux et tapis du Souss.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Souk%20berb%C3%A8re%20et%20souk%20arabe%20Taroudant%20Maroc"
+    },
+    {
+      "id": "a3",
+      "nom": "Jardins et palmeraies du Souss",
+      "categorie": "Nature",
+      "description": "Oasis et vergers d'agrumes autour de la ville.",
+      "prix": "Gratuit",
+      "duree": "",
+      "mapsUrl": "https://maps.google.com/?q=Jardins%20et%20palmeraies%20du%20Souss%20Taroudant%20Maroc"
+    }
+  ],
+  "imageCredit": "Wikimedia Commons",
+  "osmEnriched": true,
+  "osmEnrichedAt": "2026-06-30"
 }
