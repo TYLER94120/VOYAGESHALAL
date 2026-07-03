@@ -76,10 +76,12 @@ export function buildArticleSchema(article: {
   title: string
   description: string
   publishedAt: string
+  updatedAt?: string
   coverImage: string
   slug: string
   type: 'guide' | 'blog'
 }) {
+  const url = `${SITE_URL}/${article.type}s/${article.slug}`
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -87,12 +89,17 @@ export function buildArticleSchema(article: {
     description: article.description,
     image: article.coverImage,
     datePublished: article.publishedAt,
+    dateModified: article.updatedAt ?? article.publishedAt,
+    // Auteur éditorial = la rédaction (Organization), pas une personne inventée.
+    author: { '@type': 'Organization', name: `Rédaction ${SITE_NAME}`, url: SITE_URL },
     publisher: {
       '@type': 'Organization',
       name: SITE_NAME,
       url: SITE_URL,
+      logo: { '@type': 'ImageObject', url: `${SITE_URL}/icon-512` },
     },
-    url: `${SITE_URL}/${article.type}s/${article.slug}`,
+    mainEntityOfPage: { '@type': 'WebPage', '@id': url },
+    url,
   }
 }
 
@@ -114,17 +121,32 @@ export function buildBreadcrumbSchema(
 interface SchemaOpts { en?: boolean; siteUrl?: string; name?: string }
 const EN_DESCRIPTION = 'Certified halal restaurants, mosques, prayer times and practical guides in 354+ destinations worldwide — for Muslim travelers.'
 
+// Profils sociaux officiels → `sameAs` (aide Google à relier la marque à ses
+// réseaux). VIDE tant que les comptes n'existent pas : ne jamais déclarer un
+// profil inexistant (404 = perte de confiance). Dès que les comptes @voyageshalal
+// sont créés, décommenter les lignes correspondantes.
+export const SOCIAL_LINKS: string[] = [
+  // 'https://www.instagram.com/voyageshalal',
+  // 'https://www.tiktok.com/@voyageshalal',
+  // 'https://www.youtube.com/@voyageshalal',
+  // 'https://www.facebook.com/voyageshalal',
+  // 'https://www.pinterest.com/voyageshalal',
+]
+
 export function buildOrganizationSchema(opts: SchemaOpts = {}) {
   const url = opts.siteUrl ?? SITE_URL
+  const twin = opts.en ? 'https://www.voyageshalal.fr' : 'https://www.gohalaltravel.com'
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: opts.name ?? 'VoyagesHalal.fr',
     url,
     description: opts.en ? EN_DESCRIPTION : DEFAULT_DESCRIPTION,
-    logo: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=512&h=512&fit=crop&q=80',
+    logo: `${url}/icon-512`,
     image: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&h=630&fit=crop&q=80',
     areaServed: 'Worldwide',
+    // Domaine jumeau (FR↔EN) + réseaux sociaux officiels dès qu'ils existent.
+    sameAs: [twin, ...SOCIAL_LINKS],
     knowsAbout: opts.en
       ? ['halal travel', 'halal restaurants', 'mosques', 'prayer times', 'Qibla', 'Muslim tourism']
       : ['voyage halal', 'restaurants halal', 'mosquées', 'horaires de prière', 'Qibla', 'tourisme musulman'],
