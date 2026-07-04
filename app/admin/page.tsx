@@ -63,7 +63,7 @@ function LeadsTab({ token }: { token: string }) {
   useEffect(() => {
     fetch(`/api/admin/leads?token=${encodeURIComponent(token)}`)
       .then((r) => r.json())
-      .then((j) => { if (j.error && !j.leads) setErr(j.error); setLeads(j.leads || []); setCount(j.count || 0) })
+      .then((j) => { if (j.error) { setErr(j.error); return } setLeads(j.leads || []); setCount(j.count || 0) })
       .catch(() => setErr('Erreur réseau'))
   }, [token])
 
