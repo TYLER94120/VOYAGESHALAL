@@ -13,6 +13,15 @@ export async function GET(req: Request) {
   const redis = getRedis()
   if (!redis) return NextResponse.json({ error: 'Base non configurée (UPSTASH manquant en prod).', emails: [], leads: [], count: 0 }, { status: 200 })
 
+  // Auto-diagnostic (?diag=1) : teste si Redis est accessible EN ÉCRITURE.
+  // Un token Upstash « read-only » lit mais n'écrit pas → capture silencieusement perdue.
+  if (new URL(req.url).searchParams.get('diag') === '1') {
+    let canWrite = false, writeError = ''
+    try { await redis.set('vh:diag:write', Date.now()); canWrite = (await redis.get('vh:diag:write')) != null }
+    catch (e) { writeError = String(e).slice(0, 120) }
+    return NextResponse.json({ redisConnected: true, canWrite, writeError })
+  }
+
   const emails = (await redis.smembers('vh:leads:emails')) as string[]
   // Détail (source/ville/date) pour les 200 derniers, best-effort.
   const sample = emails.slice(0, 200)
