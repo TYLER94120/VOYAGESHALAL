@@ -8,6 +8,7 @@ import EmailCapture from '@/components/ui/EmailCapture'
 import { buildWebSiteSchema, buildOrganizationSchema } from '@/lib/seo'
 import { guides } from '@/lib/data'
 import HomeHeroActions from '@/components/home/HomeHeroActions'
+import FollowInstall from '@/components/capture/FollowInstall'
 import { JeVoyageMaintenant } from '@/components/JeVoyageMaintenant'
 import { HomeScoreRanking } from '@/components/HomeScoreRanking'
 import IslamicPattern from '@/components/ui/IslamicPattern'
@@ -275,6 +276,9 @@ export default async function HomePage() {
           <div style={{ backgroundColor: '#2d5a3d' }} className="w-48 h-80 rounded-3xl flex items-center justify-center text-6xl shrink-0">
             📱
           </div>
+        </div>
+        <div className="max-w-4xl mx-auto mt-12 px-4">
+          <FollowInstall source="home" />
         </div>
       </section>
 

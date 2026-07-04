@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { track } from '@vercel/analytics'
 
 interface Props {
   title?: string
@@ -31,6 +32,8 @@ export default function EmailCapture({
       })
       const data = await res.json()
       if (res.ok) {
+        // Événement de capture (relation captée) — métrique clé de la Phase 1.
+        try { track('lead', { type: 'email', source }) } catch { /* analytics best-effort */ }
         setStatus('success')
         setMessage('Guide envoyé ! Vérifiez votre boîte mail.')
         setEmail('')

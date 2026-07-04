@@ -8,6 +8,7 @@ import VilleFaq from '@/components/villes/VilleFaq'
 import HotelCTA from '@/components/affiliate/HotelCTA'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
+import EmailCapture from '@/components/ui/EmailCapture'
 import cityCoords from '@/lib/cityCoords.json'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 
@@ -50,7 +51,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const mosquees = ville.statistiques?.mosquees
   const richDesc =
     ville.metaDescription ??
-    `🕌 Guide halal ${ville.nom} 2026 : Halal Trust Score™ ${ville.score_halal}/5 · ${restos.toLocaleString('fr-FR')} restaurants certifiés · Horaires de prière en temps réel${mosquees ? ` · ${mosquees.toLocaleString('fr-FR')} mosquées` : ''} · Vérifié par la communauté musulmane.`
+    `🕌 Guide halal ${ville.nom} 2026 : Halal Trust Score™ ${ville.score_halal}/5 · ${restos.toLocaleString('fr-FR')} restaurants halal · Horaires de prière en temps réel${mosquees ? ` · ${mosquees.toLocaleString('fr-FR')} mosquées` : ''} · Vérifié par la communauté musulmane.`
   const ogImage = ville.image ?? ville.image_hero
   const nbRestos = ville.restaurants?.length ?? 0
   const nbMosq = ville.mosqueesPrincipales?.length ?? mosquees ?? 0
@@ -61,14 +62,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `${ville.nom} Halal Travel Guide 2026 — Restaurants, Mosques & Tips | ${brand}`
     : `${ville.nom} Halal 2026 : Restaurants, Mosquées & Guide Complet | ${brand}`
   const description = isEN
-    ? (ville.metaDescription_en ?? `Complete halal guide for ${ville.nom}: ${nbRestos}+ certified halal restaurants, ${nbMosq} mosques, ${nbHotels} hotels, prayer times and practical tips for Muslim travelers.`).slice(0, 300)
-    : `Guide halal complet pour ${ville.nom} : ${nbRestos}+ restaurants certifiés halal, ${nbMosq} mosquées, ${nbHotels} hôtels, horaires de prière et conseils pratiques pour voyager en musulman. ${richDesc}`.slice(0, 300)
+    ? (ville.metaDescription_en ?? `Complete halal guide for ${ville.nom}: ${nbRestos}+ halal restaurants, ${nbMosq} mosques, ${nbHotels} hotels, prayer times and practical tips for Muslim travelers.`).slice(0, 300)
+    : `Guide halal complet pour ${ville.nom} : ${nbRestos}+ restaurants halal, ${nbMosq} mosquées, ${nbHotels} hôtels, horaires de prière et conseils pratiques pour voyager en musulman. ${richDesc}`.slice(0, 300)
   const ogTitle = isEN
     ? `${ville.nom} Halal Travel Guide 2026 — Muslim-Friendly`
     : `${ville.nom} Halal 2026 — Guide Voyage Musulman`
   const ogDesc = isEN
-    ? `Certified halal restaurants, nearby mosques and prayer times in ${ville.nom}. The complete guide for Muslim travel.`
-    : `Restaurants halal certifiés, mosquées proches et horaires de prière à ${ville.nom}. Le guide complet pour voyager halal.`
+    ? `Halal restaurants, nearby mosques and prayer times in ${ville.nom}. The complete guide for Muslim travel.`
+    : `Restaurants halal, mosquées proches et horaires de prière à ${ville.nom}. Le guide complet pour voyager halal.`
 
   return {
     title: { absolute: title },
@@ -143,6 +144,23 @@ export default async function DestinationPage({ params }: Props) {
           </div>
         </div>
       </nav>
+
+      {/* Maillage interne : coins prière de la ville (page indexable) */}
+      <div style={{ maxWidth: 720, margin: '8px auto', padding: '0 20px' }}>
+        <a href={`/priere/${city}`} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontWeight: 700, color: '#6b21a8' }}>
+          🧭 {isEN ? `Where to pray in ${ville.nom}` : `Où prier à ${ville.nom}`} →
+        </a>
+      </div>
+
+      {/* Capture email en bas de fiche ville */}
+      <div style={{ padding: '24px 20px 8px' }}>
+        <EmailCapture
+          compact
+          source="ville"
+          title={isEN ? `Free halal guide for ${ville.nom}` : `Guide halal gratuit pour ${ville.nom}`}
+          subtitle={isEN ? 'Addresses, prayer spots and tips by email.' : 'Adresses, coins prière et astuces par email.'}
+        />
+      </div>
 
       <DestinationSchema ville={ville} slug={city} en={isEN} siteUrl={siteUrl} />
       <DestinationFaqSchema ville={ville} en={isEN} />

@@ -30,31 +30,51 @@ export default function HomeHeroActions() {
     router.push('/autour-de-moi')
   }
 
+  const planTrip = () => router.push('/destinations')
+
   return (
     <div style={{ maxWidth: 540, margin: '0 auto', width: '100%' }}>
-      <button
-        onClick={handleLocate}
-        disabled={loading}
-        style={{
-          width: '100%', height: 64, borderRadius: 16, border: 'none',
-          cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.75 : 1,
-          background: 'var(--or)', color: 'var(--nuit)', fontSize: 18, fontWeight: 800,
-          display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
-          boxShadow: '0 10px 30px rgba(201,168,76,0.3)', marginBottom: 14,
-        }}
-      >
-        {loading ? (
-          <>
-            <span style={{ display: 'inline-block', animation: 'spin 1s linear infinite' }}>⏳</span>
-            {en ? 'Locating' : 'Localisation'}… ({countdown}s)
-          </>
-        ) : (
-          <>
-            <span style={{ fontSize: 24 }}>📍</span>
-            {en ? 'Locate me' : 'Localise-moi'}
-          </>
-        )}
-      </button>
+      {/* DEUX portes d'entrée : sur place (Localise-moi) vs planification (Organise) */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginBottom: 14 }}>
+        <button
+          onClick={handleLocate}
+          disabled={loading}
+          style={{
+            height: 96, borderRadius: 16, border: 'none',
+            cursor: loading ? 'not-allowed' : 'pointer', opacity: loading ? 0.75 : 1,
+            background: 'var(--or)', color: 'var(--nuit)', fontSize: 16, fontWeight: 800,
+            display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6,
+            boxShadow: '0 10px 30px rgba(201,168,76,0.3)', padding: '0 8px', textAlign: 'center', lineHeight: 1.2,
+          }}
+        >
+          {loading ? (
+            <>
+              <span style={{ display: 'inline-block', animation: 'spin 1s linear infinite', fontSize: 22 }}>⏳</span>
+              {en ? 'Locating' : 'Localisation'}… ({countdown}s)
+            </>
+          ) : (
+            <>
+              <span style={{ fontSize: 26 }}>📍</span>
+              {en ? 'Locate me' : 'Localise-moi'}
+              <span style={{ fontSize: 11, fontWeight: 600, opacity: 0.8 }}>{en ? 'On the spot' : 'Sur place'}</span>
+            </>
+          )}
+        </button>
+        <button
+          onClick={planTrip}
+          style={{
+            height: 96, borderRadius: 16, border: '2px solid rgba(201,168,76,0.55)',
+            cursor: 'pointer', background: 'rgba(255,255,255,0.06)', color: 'var(--creme)',
+            fontSize: 16, fontWeight: 800, backdropFilter: 'blur(8px)',
+            display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 6,
+            padding: '0 8px', textAlign: 'center', lineHeight: 1.2,
+          }}
+        >
+          <span style={{ fontSize: 26 }}>🧭</span>
+          {en ? 'Plan your trip' : 'Organise ton voyage'}
+          <span style={{ fontSize: 11, fontWeight: 600, opacity: 0.75 }}>{en ? 'Destinations & guides' : 'Destinations & guides'}</span>
+        </button>
+      </div>
 
       {/* Message d'erreur clair selon le cas (permission refusée, GPS off, timeout, iOS…) */}
       {geoError && !loading && (

@@ -6,7 +6,7 @@ import { useLocation } from '@/components/location/LocationProvider'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
 
 
-type Cat = 'mosquees' | 'restaurants' | 'hotels' | 'boucheries' | 'activites'
+type Cat = 'mosquees' | 'restaurants' | 'hotels' | 'boucheries' | 'activites' | 'spots'
 interface Spot { id: number | string; lat: number; lng: number; name: string; sub?: string; dist: number; halal?: 'only' | 'yes' | 'likely' }
 
 // Fusionne les points pré-chargés (instantanés) et les points live OSM en
@@ -29,6 +29,7 @@ const CATS: { id: Cat; label: string; icon: string; color: string }[] = [
   { id: 'hotels', label: 'Hôtels', icon: '🏨', color: '#2b6cb0' },
   { id: 'activites', label: 'À faire', icon: '🎯', color: '#6b46c1' },
   { id: 'boucheries', label: 'Boucheries halal', icon: '🥩', color: '#97266d' },
+  { id: 'spots', label: 'Spots partagés', icon: '🧭', color: '#6b21a8' },
 ]
 // Sources de données : /api/nearby (nos POI géolocalisés, toutes villes) pour
 // restaurants/hôtels/activités ; OpenStreetMap live pour mosquées & boucheries.
@@ -137,6 +138,30 @@ export default function AutourDeMoiPage() {
   const search = useCallback(async (lat: number, lng: number, c: Cat) => {
     setSelected(null)
     // 1) Affichage INSTANTANÉ depuis nos données pré-chargées (/api/nearby, < 1 s)
+    // Spots partagés : couche DISTINCTE, source = /api/spots (seed admin, Redis).
+    // Séparée visuellement des données vérifiées ; pas de fusion OSM.
+    if (c === 'spots') {
+      let sp: Spot[] = []
+      try {
+        const res = await fetch(`/api/spots?lat=${lat}&lng=${lng}&radius=${ME_RADIUS_M / 1000}`)
+        if (res.ok) {
+          const j = await res.json()
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          sp = ((j.spots || []) as any[]).map((o) => ({
+            id: `sp-${o.id}`, lat: o.lat, lng: o.lng, name: o.nom,
+            sub: o.adresse || 'Coin prière partagé', dist: (o.distanceKm ?? 0) * 1000,
+          }))
+        }
+      } catch { /* pas de spots → liste vide */ }
+      render(sp, c)
+      const L2 = LRef.current
+      if (L2 && mapRef.current && sp.length) {
+        const pts = [[lat, lng], ...sp.slice(0, 8).map((s) => [s.lat, s.lng])]
+        try { mapRef.current.fitBounds(L2.latLngBounds(pts), { padding: [50, 50], maxZoom: 15, animate: true }) } catch { /* noop */ }
+      }
+      setLoading(false)
+      return
+    }
     const pre = preRef.current[c] || []
     if (pre.length) { render(pre, c); setLoading(false) } else { setLoading(true) }
     // 2) Complément LIVE OpenStreetMap via NOTRE proxy serveur (fiable, sans CORS)

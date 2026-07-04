@@ -4,11 +4,12 @@ import { useState } from 'react'
 import Link from 'next/link'
 import type { FormEvent } from 'react'
 import { useLanguage } from '@/components/i18n/LanguageProvider'
+import FollowInstall from '@/components/capture/FollowInstall'
 
 const features = [
   { icon: '🧭', title: 'Boussole Qibla', titleEn: 'Qibla compass', description: 'Direction de La Mecque en temps réel, partout dans le monde, même sans connexion internet.', descriptionEn: 'Real-time direction to Mecca, anywhere in the world, even offline.' },
   { icon: '🕌', title: 'Horaires de prière', titleEn: 'Prayer times', description: 'Calcul automatique par GPS selon votre position exacte. Notifications configurables.', descriptionEn: 'Automatic GPS-based calculation for your exact location. Configurable notifications.' },
-  { icon: '🍽', title: 'Restaurants halal', titleEn: 'Halal restaurants', description: 'Trouvez les restaurants halal certifiés autour de vous avec avis et photos.', descriptionEn: 'Find certified halal restaurants around you with reviews and photos.' },
+  { icon: '🍽', title: 'Restaurants halal', titleEn: 'Halal restaurants', description: 'Trouvez les restaurants halal autour de vous avec avis et photos.', descriptionEn: 'Find halal restaurants around you with reviews and photos.' },
   { icon: '📔', title: 'Carnet de voyage', titleEn: 'Travel notebook', description: 'Planifiez et organisez vos voyages halal : itinéraires, lieux sauvegardés, notes.', descriptionEn: 'Plan and organize your halal trips: itineraries, saved places, notes.' },
   { icon: '🗺', title: 'Carte interactive', titleEn: 'Interactive map', description: "Mosquées, restaurants et points d'intérêt halal sur une carte intuitive.", descriptionEn: 'Mosques, restaurants and halal points of interest on an intuitive map.' },
   { icon: '🔔', title: 'Rappels prière', titleEn: 'Prayer reminders', description: 'Notifications intelligentes adaptées à votre fuseau horaire pour ne jamais manquer une prière.', descriptionEn: 'Smart notifications tuned to your time zone so you never miss a prayer.' },
@@ -68,7 +69,7 @@ export default function ApplicationPage() {
             {en ? <>The app that changes<br /><span className="text-emerald-300">halal travel</span></> : <>L&apos;application qui change<br /><span className="text-emerald-300">le voyage halal</span></>}
           </h1>
           <p className="text-xl text-emerald-100 max-w-2xl mx-auto mb-10">
-            {en ? 'Everything you need to travel halal, in your pocket. Qibla, prayer times, certified halal restaurants and a travel notebook.' : 'Tout ce dont vous avez besoin pour voyager halal dans votre poche. Qibla, horaires de prière, restaurants halal certifiés et carnet de voyage.'}
+            {en ? 'Everything you need to travel halal, in your pocket. Qibla, prayer times, halal restaurants and a travel notebook.' : 'Tout ce dont vous avez besoin pour voyager halal dans votre poche. Qibla, horaires de prière, restaurants halal et carnet de voyage.'}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <a href="#waitlist" className="bg-white text-emerald-800 px-8 py-4 rounded-full font-bold text-lg hover:bg-emerald-50 transition-colors">
@@ -146,6 +147,10 @@ export default function ApplicationPage() {
             Aucun spam. Désinscription en un clic. Vos données ne sont jamais revendues.
           </p>
         </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-4 py-12">
+        <FollowInstall source="application" />
       </section>
 
       <section className="text-center py-12">

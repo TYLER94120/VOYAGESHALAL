@@ -92,6 +92,30 @@ export interface VilleActivite {
   tripadvisorUrl?: string
 }
 
+// Spot de prière partagé (coin prière : centre commercial, resto, aéroport, gare…).
+// Fondation communauté Phase 1 : seed ADMIN uniquement. `source` distingue les
+// spots curés (semés par le propriétaire) des futurs spots communautaires.
+// On ne CERTIFIE jamais : `confirmations` = « X voyageurs confirment » (honnête).
+export type PrayerSpotLieu = 'centre_commercial' | 'restaurant' | 'aeroport' | 'gare' | 'hotel' | 'parc' | 'universite' | 'bureau' | 'autre'
+export interface PrayerSpot {
+  id: string
+  slug: string            // slug unique du spot (pour l'URL)
+  nom: string
+  typeLieu: PrayerSpotLieu
+  villeSlug: string       // ville de rattachement (pour l'index /priere/[ville])
+  villeNom: string
+  lat: number
+  lng: number
+  adresse?: string
+  description?: string
+  photo?: string          // URL optionnelle (pas d'upload en v1)
+  note?: number           // 0–5, optionnel
+  source: 'curated' | 'community'
+  status: 'published' | 'hidden'
+  confirmations: number   // compteur « X voyageurs confirment » (0 par défaut)
+  createdAt: string
+}
+
 export interface VilleRoadTrip {
   id: string
   titre: string

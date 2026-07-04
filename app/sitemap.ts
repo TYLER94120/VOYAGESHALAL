@@ -3,6 +3,7 @@ import { guides, blogPosts } from '@/lib/data'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { localizedHref } from '@/lib/slugs'
 import cityCoords from '@/lib/cityCoords.json'
+import { listAllSpots } from '@/lib/prayerSpots'
 
 // Liste des 354 villes depuis un import STATIQUE (bundlé au build) plutôt que via
 // readdirSync au runtime : sur Vercel le tracing de fichiers dynamiques est peu
@@ -70,5 +71,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(p.publishedAt),
     }))
 
-  return [...staticPages, ...villePages, ...guidePages, ...blogPages]
+  // Coins prière (spots seed) : page index par ville + page détail par spot.
+  // Source Redis (une seule source app+web) → indexable, cible « où prier à … ».
+  let spotPages: MetadataRoute.Sitemap = []
+  try {
+    const spots = await listAllSpots()
+    const villes = new Set(spots.map((s) => s.villeSlug))
+    const indexPages = [...villes].map((v) => ({
+      url: `${SITE_URL}/priere/${v}`, lastModified: now, changeFrequency: 'weekly' as const, priority: 0.6,
+    }))
+    const detailPages = spots.map((s) => ({
+      url: `${SITE_URL}/priere/${s.villeSlug}/${s.slug}`,
+      lastModified: new Date(s.createdAt), changeFrequency: 'monthly' as const, priority: 0.5,
+    }))
+    spotPages = [...indexPages, ...detailPages]
+  } catch { /* Redis indisponible → pas de pages spots dans le sitemap */ }
+
+  return [...staticPages, ...villePages, ...guidePages, ...blogPages, ...spotPages]
 }

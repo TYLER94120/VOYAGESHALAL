@@ -645,3 +645,55 @@ body { top: 0 !important; }
   from { opacity: 0; transform: translateY(20px) scale(0.97); }
   to   { opacity: 1; transform: translateY(0) scale(1); }
 }
+
+/* ── Capture email (LeadCapture) ─────────────────────────────────────── */
+.lead-capture { --lc-radius: 18px; }
+.lead-card {
+  background: var(--nuit); color: var(--creme);
+  border: 1px solid rgba(201,168,76,0.35); border-radius: var(--lc-radius);
+  padding: 28px 24px; max-width: 560px; margin: 0 auto; text-align: center;
+  box-shadow: 0 12px 40px rgba(11,26,15,0.25);
+}
+.lead-inline {
+  background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.28);
+  border-radius: var(--lc-radius); padding: 20px 18px; max-width: 620px; margin: 32px auto;
+}
+.lead-title { font-size: 20px; font-weight: 800; margin: 0 0 6px; line-height: 1.25; }
+.lead-inline .lead-title { font-size: 17px; }
+.lead-sub { font-size: 14px; opacity: 0.85; margin: 0 0 16px; }
+.lead-form { display: flex; gap: 8px; flex-wrap: wrap; }
+.lead-input {
+  flex: 1 1 200px; min-width: 0; height: 48px; padding: 0 14px;
+  border-radius: 12px; border: 1px solid rgba(201,168,76,0.4);
+  background: #fff; color: #1a1a1a; font-size: 15px;
+}
+.lead-inline .lead-input { background: #fff; }
+.lead-btn {
+  height: 48px; padding: 0 22px; border: none; border-radius: 12px; cursor: pointer;
+  background: var(--or); color: var(--nuit); font-weight: 800; font-size: 15px;
+  white-space: nowrap; transition: filter .15s;
+}
+.lead-btn:hover:not(:disabled) { filter: brightness(1.06); }
+.lead-btn:disabled { opacity: .7; cursor: wait; }
+.lead-consent {
+  display: flex; align-items: flex-start; gap: 8px; margin-top: 12px;
+  font-size: 12px; opacity: 0.8; text-align: left; cursor: pointer;
+}
+.lead-consent input { margin-top: 2px; }
+.lead-msg { font-size: 13px; margin: 10px 0 0; }
+.lead-err { color: #ffb4a2; }
+.lead-done { text-align: center; padding: 28px 24px; }
+.lead-done-msg { font-size: 16px; font-weight: 700; color: var(--foret); margin: 0; }
+.lead-card.lead-done { color: var(--creme); }
+.lead-card.lead-done .lead-done-msg { color: var(--or-clair); }
+
+/* ── Follow / Install CTA ────────────────────────────────────────────── */
+.fi-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 720px; margin: 0 auto; }
+@media (max-width: 560px) { .fi-wrap { grid-template-columns: 1fr; } }
+.fi-block { background: rgba(201,168,76,0.06); border: 1px solid rgba(201,168,76,0.3); border-radius: 16px; padding: 20px; text-align: center; }
+.fi-title { font-size: 17px; font-weight: 800; margin: 0 0 4px; }
+.fi-sub { font-size: 13px; opacity: 0.8; margin: 0 0 14px; }
+.fi-socials { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.fi-social { text-transform: capitalize; font-weight: 700; font-size: 14px; padding: 8px 14px; border-radius: 10px; background: var(--nuit); color: var(--creme); }
+.fi-soon { font-size: 13px; opacity: 0.6; font-style: italic; }
+.fi-install { display: inline-block; font-weight: 800; font-size: 15px; padding: 12px 20px; border-radius: 12px; background: var(--or); color: var(--nuit); }

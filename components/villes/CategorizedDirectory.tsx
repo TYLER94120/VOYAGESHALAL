@@ -76,7 +76,7 @@ function RestaurantCard({ r, ville }: { r: VilleRestaurant; ville: string }) {
           <h3 className="text-[1.1rem] font-bold text-[#1a1a1a]" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>{r.nom}</h3>
           <div className="flex items-center gap-2 mt-1 flex-wrap">
             {(r.certificationHalal ?? r.halal_certifie) && (
-              <span className="text-[11px] font-semibold text-[#1b4332] bg-[#1b4332]/[0.08] px-2 py-0.5 rounded-full">✓ Halal certifié</span>
+              <span className="text-[11px] font-semibold text-[#1b4332] bg-[#1b4332]/[0.08] px-2 py-0.5 rounded-full">✓ Halal courant · à vérifier</span>
             )}
             {(r.priceRange ?? r.fourchette_prix) && <span className="text-xs text-gray-500">{r.priceRange ?? r.fourchette_prix}</span>}
           </div>
