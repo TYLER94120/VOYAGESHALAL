@@ -35,34 +35,35 @@ export async function POST(request: NextRequest) {
       } catch { /* stockage best-effort */ }
     }
 
-    // ── Option A : Formspree (ajoutez FORMSPREE_ENDPOINT dans .env) ──
+    // ── Option A : Formspree — best-effort (n'échoue JAMAIS l'inscription) ──
     if (process.env.FORMSPREE_ENDPOINT) {
-      const response = await fetch(process.env.FORMSPREE_ENDPOINT, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({ email: normalizedEmail, source: 'waitlist-voyageshalal' }),
-      })
-      if (!response.ok) throw new Error('Erreur Formspree')
+      try {
+        await fetch(process.env.FORMSPREE_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({ email: normalizedEmail, source: 'waitlist-voyageshalal' }),
+        })
+      } catch (e) { console.error('[WAITLIST] Formspree', e) }
     }
 
-    // ── Option B : Brevo (ajoutez BREVO_API_KEY + BREVO_LIST_ID dans .env) ──
+    // ── Option B : Brevo — best-effort (le lead est déjà stocké dans Redis) ──
     if (process.env.BREVO_API_KEY && process.env.BREVO_LIST_ID) {
-      const response = await fetch('https://api.brevo.com/v3/contacts', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'api-key': process.env.BREVO_API_KEY,
-        },
-        body: JSON.stringify({
-          email: normalizedEmail,
-          listIds: [parseInt(process.env.BREVO_LIST_ID)],
-          updateEnabled: true,
-        }),
-      })
-      if (!response.ok && response.status !== 204) {
-        const err = await response.json()
-        if (err.code !== 'duplicate_parameter') throw new Error('Erreur Brevo')
-      }
+      try {
+        const listId = parseInt(process.env.BREVO_LIST_ID, 10)
+        const response = await fetch('https://api.brevo.com/v3/contacts', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'api-key': process.env.BREVO_API_KEY },
+          body: JSON.stringify({
+            email: normalizedEmail,
+            ...(Number.isNaN(listId) ? {} : { listIds: [listId] }),
+            updateEnabled: true,
+          }),
+        })
+        if (!response.ok && response.status !== 204) {
+          const err = await response.json().catch(() => ({}))
+          if (err.code !== 'duplicate_parameter') console.error('[WAITLIST] Brevo', response.status, err)
+        }
+      } catch (e) { console.error('[WAITLIST] Brevo', e) }
     }
 
     // ── Fallback : log console si aucun service configuré ──
