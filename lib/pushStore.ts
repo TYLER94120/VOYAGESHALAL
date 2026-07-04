@@ -14,11 +14,13 @@ export interface PushSub {
 let client: Redis | null = null
 export function getRedis(): Redis | null {
   if (client) return client
-  if (!process.env.UPSTASH_REDIS_REST_URL || !process.env.UPSTASH_REDIS_REST_TOKEN) return null
-  client = new Redis({
-    url: process.env.UPSTASH_REDIS_REST_URL,
-    token: process.env.UPSTASH_REDIS_REST_TOKEN,
-  })
+  // L'intégration Vercel × Upstash crée les variables sous le préfixe KV_
+  // (KV_REST_API_URL / KV_REST_API_TOKEN). On accepte aussi les noms UPSTASH_
+  // classiques (si branché à la main). Token en ÉCRITURE (pas le read-only).
+  const url = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL
+  const token = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN
+  if (!url || !token) return null
+  client = new Redis({ url, token })
   return client
 }
 
