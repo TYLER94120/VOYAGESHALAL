@@ -51,6 +51,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     alternates: cityAlternates(slug),
   }))
 
+  // Pages « Hôtels halal à {ville} » — cible « hotel halal {ville} » (requêtes GSC)
+  const hotelPages: MetadataRoute.Sitemap = CITY_SLUGS.map((slug) => ({
+    url: `${SITE_URL}/hotels/${slug}`,
+    lastModified: now,
+    changeFrequency: 'weekly',
+    priority: 0.6,
+    alternates: { languages: { fr: `${FR_URL}/hotels/${slug}`, en: `${EN_URL}/hotels/${slug}` } },
+  }))
+
   // Guides : uniquement en français (pas de version EN dédiée) → seul le domaine FR les liste
   const guidePages: MetadataRoute.Sitemap = isEN
     ? []
@@ -87,5 +96,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     spotPages = [...indexPages, ...detailPages]
   } catch { /* Redis indisponible → pas de pages spots dans le sitemap */ }
 
-  return [...staticPages, ...villePages, ...guidePages, ...blogPages, ...spotPages]
+  return [...staticPages, ...villePages, ...hotelPages, ...guidePages, ...blogPages, ...spotPages]
 }

@@ -9,6 +9,7 @@ import HotelCTA from '@/components/affiliate/HotelCTA'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
 import EmailCapture from '@/components/ui/EmailCapture'
+import { relatedForCity, countrySlugForName } from '@/lib/relatedContent'
 import cityCoords from '@/lib/cityCoords.json'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 
@@ -71,9 +72,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? `Halal restaurants, nearby mosques and prayer times in ${ville.nom}. The complete guide for Muslim travel.`
     : `Restaurants halal, mosquées proches et horaires de prière à ${ville.nom}. Le guide complet pour voyager halal.`
 
+  // Protection qualité : une fiche sans aucun contenu réel (0 resto, 0 mosquée,
+  // 0 hôtel, 0 activité) dilue le domaine → noindex (mais on garde follow pour
+  // laisser passer le maillage). Les fiches avec du contenu restent indexables.
+  const contentCount = (ville.restaurants?.length ?? 0) + (ville.mosqueesPrincipales?.length ?? 0)
+    + (ville.hotels?.length ?? 0) + (ville.activites?.length ?? 0)
+  const thin = contentCount < 3
+
   return {
     title: { absolute: title },
     description,
+    ...(thin ? { robots: { index: false, follow: true } } : {}),
     alternates: {
       canonical: `${siteUrl}/destinations/${city}`,
       languages: {
@@ -145,12 +154,47 @@ export default async function DestinationPage({ params }: Props) {
         </div>
       </nav>
 
-      {/* Maillage interne : coins prière de la ville (page indexable) */}
-      <div style={{ maxWidth: 720, margin: '8px auto', padding: '0 20px' }}>
-        <a href={`/priere/${city}`} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontWeight: 700, color: '#6b21a8' }}>
-          🧭 {isEN ? `Where to pray in ${ville.nom}` : `Où prier à ${ville.nom}`} →
-        </a>
-      </div>
+      {/* Maillage interne : guides & articles liés + pays parent + coins prière */}
+      {(() => {
+        const guidesLies = relatedForCity(ville.nom, ville.pays)
+        const paysSlug = countrySlugForName(ville.pays)
+        return (
+          <section style={{ maxWidth: 820, margin: '0 auto', padding: '8px 20px 8px' }}>
+            {guidesLies.length > 0 && (
+              <>
+                <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 19, fontWeight: 700, color: 'var(--nuit)', margin: '8px 0 12px' }}>
+                  {isEN ? `Guides & articles for ${ville.nom}` : `Guides & articles pour ${ville.nom}`}
+                </h2>
+                <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 18px', display: 'grid', gap: 8 }}>
+                  {guidesLies.map((r) => (
+                    <li key={r.slug}>
+                      <a href={`/${r.type === 'guide' ? 'guides' : 'blog'}/${r.slug}`} style={{ display: 'flex', justifyContent: 'space-between', gap: 12, padding: '12px 16px', borderRadius: 12, border: '1px solid rgba(27,67,50,0.18)', background: '#fff', color: 'var(--foret)', fontWeight: 600, textDecoration: 'none' }}>
+                        <span>{r.type === 'guide' ? '📗' : '📝'} {r.title}</span>
+                        {r.readTime && <span style={{ opacity: 0.5, fontSize: 13, whiteSpace: 'nowrap' }}>{r.readTime}</span>}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14 }}>
+              {(ville.hotels?.length ?? 0) >= 3 && (
+                <a href={`/hotels/${city}`} style={{ fontWeight: 700, color: 'var(--foret)' }}>
+                  🏨 {isEN ? `Halal hotels in ${ville.nom}` : `Hôtels halal à ${ville.nom}`} →
+                </a>
+              )}
+              {paysSlug && (
+                <a href={`/destinations/pays/${paysSlug}`} style={{ fontWeight: 700, color: 'var(--foret)' }}>
+                  🌍 {isEN ? `Halal travel in ${ville.pays}` : `Voyage halal ${ville.pays}`} →
+                </a>
+              )}
+              <a href={`/priere/${city}`} style={{ fontWeight: 700, color: '#6b21a8' }}>
+                🧭 {isEN ? `Where to pray in ${ville.nom}` : `Où prier à ${ville.nom}`} →
+              </a>
+            </div>
+          </section>
+        )
+      })()}
 
       {/* Capture email en bas de fiche ville */}
       <div style={{ padding: '24px 20px 8px' }}>
