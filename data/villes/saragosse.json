@@ -1277,8 +1277,778 @@
       "source": "osm"
     }
   ],
-  "mosqueesPrincipales": [],
-  "activites": [],
+  "mosqueesPrincipales": [
+    {
+      "nom": "Mezquita Umar Ibn Khattab",
+      "lat": 41.6599907,
+      "lng": -0.8766222,
+      "coordonnees": {
+        "lat": 41.6599907,
+        "lng": -0.8766222
+      },
+      "adresse": "Calle José María Matheu, Zaragoza",
+      "mapsUrl": "https://maps.google.com/?q=41.6599907,-0.8766222",
+      "source": "osm"
+    },
+    {
+      "nom": "Mezquita",
+      "lat": 41.6439476,
+      "lng": -0.867965,
+      "coordonnees": {
+        "lat": 41.6439476,
+        "lng": -0.867965
+      },
+      "adresse": "Calle de Utrillas",
+      "mapsUrl": "https://maps.google.com/?q=41.6439476,-0.867965",
+      "source": "osm"
+    },
+    {
+      "nom": "Mezquita La Jota",
+      "lat": 41.6637452,
+      "lng": -0.8640854,
+      "coordonnees": {
+        "lat": 41.6637452,
+        "lng": -0.8640854
+      },
+      "adresse": "Calle Aurora",
+      "mapsUrl": "https://maps.google.com/?q=41.6637452,-0.8640854",
+      "source": "osm"
+    },
+    {
+      "nom": "Mezquita Abi Bakr",
+      "lat": 41.6750719,
+      "lng": -0.8949354,
+      "coordonnees": {
+        "lat": 41.6750719,
+        "lng": -0.8949354
+      },
+      "adresse": "Calle Juan Ramón Jiménez, Zaragoza",
+      "mapsUrl": "https://maps.google.com/?q=41.6750719,-0.8949354",
+      "source": "osm"
+    }
+  ],
+  "activites": [
+    {
+      "nom": "Puerta del Carmen",
+      "lat": 41.6498736,
+      "lng": -0.8875618,
+      "coordonnees": {
+        "lat": 41.6498736,
+        "lng": -0.8875618
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6498736,-0.8875618",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Antonia Puyó",
+      "lat": 41.6495177,
+      "lng": -0.8913743,
+      "coordonnees": {
+        "lat": 41.6495177,
+        "lng": -0.8913743
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6495177,-0.8913743",
+      "source": "osm"
+    },
+    {
+      "nom": "Museo de Ciencias Naturales de la Universidad de Zaragoza",
+      "lat": 41.6475119,
+      "lng": -0.8867122,
+      "coordonnees": {
+        "lat": 41.6475119,
+        "lng": -0.8867122
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6475119,-0.8867122",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería A del Arte",
+      "lat": 41.6468114,
+      "lng": -0.8911096,
+      "coordonnees": {
+        "lat": 41.6468114,
+        "lng": -0.8911096
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6468114,-0.8911096",
+      "source": "osm"
+    },
+    {
+      "nom": "Don Julio Monreal",
+      "lat": 41.6482953,
+      "lng": -0.8851731,
+      "coordonnees": {
+        "lat": 41.6482953,
+        "lng": -0.8851731
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6482953,-0.8851731",
+      "source": "osm"
+    },
+    {
+      "nom": "Santiago Ramón y Cajal",
+      "lat": 41.6468546,
+      "lng": -0.8860569,
+      "coordonnees": {
+        "lat": 41.6468546,
+        "lng": -0.8860569
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6468546,-0.8860569",
+      "source": "osm"
+    },
+    {
+      "nom": "Monumento a la Constitución de 1978",
+      "lat": 41.6472079,
+      "lng": -0.885052,
+      "coordonnees": {
+        "lat": 41.6472079,
+        "lng": -0.885052
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6472079,-0.885052",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería de Arte Agrupación Artística Aragonesa",
+      "lat": 41.6449561,
+      "lng": -0.8884701,
+      "coordonnees": {
+        "lat": 41.6449561,
+        "lng": -0.8884701
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6449561,-0.8884701",
+      "source": "osm"
+    },
+    {
+      "nom": "Francisco de Goya",
+      "lat": 41.6509256,
+      "lng": -0.8845662,
+      "coordonnees": {
+        "lat": 41.6509256,
+        "lng": -0.8845662
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6509256,-0.8845662",
+      "source": "osm"
+    },
+    {
+      "nom": "Sala Municipal de Arte Joven",
+      "lat": 41.6468597,
+      "lng": -0.8939293,
+      "coordonnees": {
+        "lat": 41.6468597,
+        "lng": -0.8939293
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6468597,-0.8939293",
+      "source": "osm"
+    },
+    {
+      "nom": "A los Defensores del Reducto del Pilar",
+      "lat": 41.645703,
+      "lng": -0.8852308,
+      "coordonnees": {
+        "lat": 41.645703,
+        "lng": -0.8852308
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.645703,-0.8852308",
+      "source": "osm"
+    },
+    {
+      "nom": "Mariposas",
+      "lat": 41.6479915,
+      "lng": -0.8833246,
+      "coordonnees": {
+        "lat": 41.6479915,
+        "lng": -0.8833246
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6479915,-0.8833246",
+      "source": "osm"
+    },
+    {
+      "nom": "Estatua ecuestre de José Palafox",
+      "lat": 41.6531895,
+      "lng": -0.8882677,
+      "coordonnees": {
+        "lat": 41.6531895,
+        "lng": -0.8882677
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6531895,-0.8882677",
+      "source": "osm"
+    },
+    {
+      "nom": "Heraldo de Aragón",
+      "lat": 41.6497349,
+      "lng": -0.8831881,
+      "coordonnees": {
+        "lat": 41.6497349,
+        "lng": -0.8831881
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6497349,-0.8831881",
+      "source": "osm"
+    },
+    {
+      "nom": "Museo del Fuego y de Los Bomberos",
+      "lat": 41.6534686,
+      "lng": -0.8864841,
+      "coordonnees": {
+        "lat": 41.6534686,
+        "lng": -0.8864841
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6534686,-0.8864841",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Finestra Estudio",
+      "lat": 41.6435448,
+      "lng": -0.8876896,
+      "coordonnees": {
+        "lat": 41.6435448,
+        "lng": -0.8876896
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6435448,-0.8876896",
+      "source": "osm"
+    },
+    {
+      "nom": "Mapa en Metal",
+      "lat": 41.6509153,
+      "lng": -0.8823464,
+      "coordonnees": {
+        "lat": 41.6509153,
+        "lng": -0.8823464
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6509153,-0.8823464",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Salduba",
+      "lat": 41.6466537,
+      "lng": -0.8822663,
+      "coordonnees": {
+        "lat": 41.6466537,
+        "lng": -0.8822663
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6466537,-0.8822663",
+      "source": "osm"
+    },
+    {
+      "nom": "Conjunto elevado",
+      "lat": 41.6537392,
+      "lng": -0.893051,
+      "coordonnees": {
+        "lat": 41.6537392,
+        "lng": -0.893051
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6537392,-0.893051",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Sala 8",
+      "lat": 41.6501574,
+      "lng": -0.8814042,
+      "coordonnees": {
+        "lat": 41.6501574,
+        "lng": -0.8814042
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6501574,-0.8814042",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Espacio Orienta",
+      "lat": 41.6493202,
+      "lng": -0.8808781,
+      "coordonnees": {
+        "lat": 41.6493202,
+        "lng": -0.8808781
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6493202,-0.8808781",
+      "source": "osm"
+    },
+    {
+      "nom": "Nicanor Villalta",
+      "lat": 41.6550486,
+      "lng": -0.8922316,
+      "coordonnees": {
+        "lat": 41.6550486,
+        "lng": -0.8922316
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6550486,-0.8922316",
+      "source": "osm"
+    },
+    {
+      "nom": "Gadda Galeria S.l.",
+      "lat": 41.6499794,
+      "lng": -0.8801362,
+      "coordonnees": {
+        "lat": 41.6499794,
+        "lng": -0.8801362
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6499794,-0.8801362",
+      "source": "osm"
+    },
+    {
+      "nom": "Monumento a los mártires de la religión y de la patria",
+      "lat": 41.652052,
+      "lng": -0.8810072,
+      "coordonnees": {
+        "lat": 41.652052,
+        "lng": -0.8810072
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.652052,-0.8810072",
+      "source": "osm"
+    },
+    {
+      "nom": "Monumento a las víctimas del Yak-42",
+      "lat": 41.6470961,
+      "lng": -0.8797846,
+      "coordonnees": {
+        "lat": 41.6470961,
+        "lng": -0.8797846
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6470961,-0.8797846",
+      "source": "osm"
+    },
+    {
+      "nom": "Mujer corriendo",
+      "lat": 41.6424116,
+      "lng": -0.8934651,
+      "coordonnees": {
+        "lat": 41.6424116,
+        "lng": -0.8934651
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6424116,-0.8934651",
+      "source": "osm"
+    },
+    {
+      "nom": "Monumento a los Sitios de Zaragoza",
+      "lat": 41.6488657,
+      "lng": -0.879351,
+      "coordonnees": {
+        "lat": 41.6488657,
+        "lng": -0.879351
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6488657,-0.879351",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Spectrum Sotos",
+      "lat": 41.6440995,
+      "lng": -0.89675,
+      "coordonnees": {
+        "lat": 41.6440995,
+        "lng": -0.89675
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6440995,-0.89675",
+      "source": "osm"
+    },
+    {
+      "nom": "Saludo olímpico: el atleta clásico",
+      "lat": 41.6546642,
+      "lng": -0.8822893,
+      "coordonnees": {
+        "lat": 41.6546642,
+        "lng": -0.8822893
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6546642,-0.8822893",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Arteymagen",
+      "lat": 41.6447457,
+      "lng": -0.8800462,
+      "coordonnees": {
+        "lat": 41.6447457,
+        "lng": -0.8800462
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6447457,-0.8800462",
+      "source": "osm"
+    },
+    {
+      "nom": "El Pastor y el Águila",
+      "lat": 41.6541065,
+      "lng": -0.8811434,
+      "coordonnees": {
+        "lat": 41.6541065,
+        "lng": -0.8811434
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6541065,-0.8811434",
+      "source": "osm"
+    },
+    {
+      "nom": "Zaragoza a Héroes del Silencio",
+      "lat": 41.6426036,
+      "lng": -0.8821086,
+      "coordonnees": {
+        "lat": 41.6426036,
+        "lng": -0.8821086
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6426036,-0.8821086",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Zaragoza Gráfica(espacio Víctor Mira)",
+      "lat": 41.6526419,
+      "lng": -0.8789606,
+      "coordonnees": {
+        "lat": 41.6526419,
+        "lng": -0.8789606
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6526419,-0.8789606",
+      "source": "osm"
+    },
+    {
+      "nom": "Olga Julián",
+      "lat": 41.6503651,
+      "lng": -0.8778471,
+      "coordonnees": {
+        "lat": 41.6503651,
+        "lng": -0.8778471
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6503651,-0.8778471",
+      "source": "osm"
+    },
+    {
+      "nom": "Palacio del Prior Ortal",
+      "lat": 41.653866,
+      "lng": -0.8792269,
+      "coordonnees": {
+        "lat": 41.653866,
+        "lng": -0.8792269
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.653866,-0.8792269",
+      "source": "osm"
+    },
+    {
+      "nom": "Monumento a Fernando el Católico",
+      "lat": 41.6409359,
+      "lng": -0.8949216,
+      "coordonnees": {
+        "lat": 41.6409359,
+        "lng": -0.8949216
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6409359,-0.8949216",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería de Arte San Cayetano 3",
+      "lat": 41.6561171,
+      "lng": -0.8819228,
+      "coordonnees": {
+        "lat": 41.6561171,
+        "lng": -0.8819228
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6561171,-0.8819228",
+      "source": "osm"
+    },
+    {
+      "nom": "Guitarra 3",
+      "lat": 41.6551468,
+      "lng": -0.8980188,
+      "coordonnees": {
+        "lat": 41.6551468,
+        "lng": -0.8980188
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6551468,-0.8980188",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Fernando Latorre",
+      "lat": 41.6394259,
+      "lng": -0.8876857,
+      "coordonnees": {
+        "lat": 41.6394259,
+        "lng": -0.8876857
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6394259,-0.8876857",
+      "source": "osm"
+    },
+    {
+      "nom": "Anillos de Borromeo",
+      "lat": 41.6429252,
+      "lng": -0.8990046,
+      "coordonnees": {
+        "lat": 41.6429252,
+        "lng": -0.8990046
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6429252,-0.8990046",
+      "source": "osm"
+    },
+    {
+      "nom": "Museo del Teatro de Caesaraugusta",
+      "lat": 41.6525403,
+      "lng": -0.877393,
+      "coordonnees": {
+        "lat": 41.6525403,
+        "lng": -0.877393
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6525403,-0.877393",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Margó Venegas Pérez",
+      "lat": 41.6393729,
+      "lng": -0.8852922,
+      "coordonnees": {
+        "lat": 41.6393729,
+        "lng": -0.8852922
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6393729,-0.8852922",
+      "source": "osm"
+    },
+    {
+      "nom": "Puerta al Duque de la Victoria",
+      "lat": 41.6495473,
+      "lng": -0.8759252,
+      "coordonnees": {
+        "lat": 41.6495473,
+        "lng": -0.8759252
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6495473,-0.8759252",
+      "source": "osm"
+    },
+    {
+      "nom": "Museo Goya",
+      "lat": 41.6546903,
+      "lng": -0.8784199,
+      "coordonnees": {
+        "lat": 41.6546903,
+        "lng": -0.8784199
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6546903,-0.8784199",
+      "source": "osm"
+    },
+    {
+      "nom": "En Solidaridad con el Pueblo Palestino",
+      "lat": 41.6414578,
+      "lng": -0.8983933,
+      "coordonnees": {
+        "lat": 41.6414578,
+        "lng": -0.8983933
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6414578,-0.8983933",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Aroya",
+      "lat": 41.650501,
+      "lng": -0.8755146,
+      "coordonnees": {
+        "lat": 41.650501,
+        "lng": -0.8755146
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.650501,-0.8755146",
+      "source": "osm"
+    },
+    {
+      "nom": "Mirador de las cuatro culturas",
+      "lat": 41.6575187,
+      "lng": -0.8815989,
+      "coordonnees": {
+        "lat": 41.6575187,
+        "lng": -0.8815989
+      },
+      "categorie": "Panorama",
+      "mapsUrl": "https://maps.google.com/?q=41.6575187,-0.8815989",
+      "source": "osm"
+    },
+    {
+      "nom": "Globo terráqueo",
+      "lat": 41.6566636,
+      "lng": -0.8797676,
+      "coordonnees": {
+        "lat": 41.6566636,
+        "lng": -0.8797676
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6566636,-0.8797676",
+      "source": "osm"
+    },
+    {
+      "nom": "Tre Uomini",
+      "lat": 41.6540935,
+      "lng": -0.8766771,
+      "coordonnees": {
+        "lat": 41.6540935,
+        "lng": -0.8766771
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6540935,-0.8766771",
+      "source": "osm"
+    },
+    {
+      "nom": "El Esfuerzo",
+      "lat": 41.6480022,
+      "lng": -0.9034155,
+      "coordonnees": {
+        "lat": 41.6480022,
+        "lng": -0.9034155
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6480022,-0.9034155",
+      "source": "osm"
+    },
+    {
+      "nom": "El tirador de barra",
+      "lat": 41.6404403,
+      "lng": -0.8800803,
+      "coordonnees": {
+        "lat": 41.6404403,
+        "lng": -0.8800803
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6404403,-0.8800803",
+      "source": "osm"
+    },
+    {
+      "nom": "Homenaje a Al-Mutamán",
+      "lat": 41.6578651,
+      "lng": -0.8970257,
+      "coordonnees": {
+        "lat": 41.6578651,
+        "lng": -0.8970257
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6578651,-0.8970257",
+      "source": "osm"
+    },
+    {
+      "nom": "Niños con peces",
+      "lat": 41.6562988,
+      "lng": -0.8785005,
+      "coordonnees": {
+        "lat": 41.6562988,
+        "lng": -0.8785005
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6562988,-0.8785005",
+      "source": "osm"
+    },
+    {
+      "nom": "Galería Cristina Marín",
+      "lat": 41.6494624,
+      "lng": -0.8741855,
+      "coordonnees": {
+        "lat": 41.6494624,
+        "lng": -0.8741855
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6494624,-0.8741855",
+      "source": "osm"
+    },
+    {
+      "nom": "Quetzal",
+      "lat": 41.6598218,
+      "lng": -0.8918243,
+      "coordonnees": {
+        "lat": 41.6598218,
+        "lng": -0.8918243
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6598218,-0.8918243",
+      "source": "osm"
+    },
+    {
+      "nom": "Majo",
+      "lat": 41.6556148,
+      "lng": -0.8771437,
+      "coordonnees": {
+        "lat": 41.6556148,
+        "lng": -0.8771437
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6556148,-0.8771437",
+      "source": "osm"
+    },
+    {
+      "nom": "Torre mirador del Pilar",
+      "lat": 41.6572703,
+      "lng": -0.8789744,
+      "coordonnees": {
+        "lat": 41.6572703,
+        "lng": -0.8789744
+      },
+      "categorie": "Panorama",
+      "mapsUrl": "https://maps.google.com/?q=41.6572703,-0.8789744",
+      "source": "osm"
+    },
+    {
+      "nom": "Tres gatitos",
+      "lat": 41.6376453,
+      "lng": -0.8858874,
+      "coordonnees": {
+        "lat": 41.6376453,
+        "lng": -0.8858874
+      },
+      "categorie": "À voir",
+      "mapsUrl": "https://maps.google.com/?q=41.6376453,-0.8858874",
+      "source": "osm"
+    },
+    {
+      "nom": "Homenaje a la Puerta de Sancho",
+      "lat": 41.6597801,
+      "lng": -0.8943029,
+      "coordonnees": {
+        "lat": 41.6597801,
+        "lng": -0.8943029
+      },
+      "categorie": "Histoire",
+      "mapsUrl": "https://maps.google.com/?q=41.6597801,-0.8943029",
+      "source": "osm"
+    },
+    {
+      "nom": "Museo de Tapices de La Seo",
+      "lat": 41.6544106,
+      "lng": -0.8752453,
+      "coordonnees": {
+        "lat": 41.6544106,
+        "lng": -0.8752453
+      },
+      "categorie": "Culture",
+      "mapsUrl": "https://maps.google.com/?q=41.6544106,-0.8752453",
+      "source": "osm"
+    }
+  ],
   "donneesAVenir": true,
   "villeNonMusulmane": true,
   "description_en": "Zaragoza may not be a Muslim-majority destination, but it welcomes Muslim travelers with real halal options. You'll find a selection of halal restaurants and several mosques nearby, plus real-time prayer times and the Qibla direction — everything to explore Zaragoza, Spain, with peace of mind.",
