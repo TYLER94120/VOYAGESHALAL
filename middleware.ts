@@ -39,7 +39,7 @@ export function middleware(req: NextRequest) {
     const bm = pathname.match(/^\/blog\/([^/]+)$/)
     if (bm && BLOG_FR_TO_EN[bm[1]]) {
       const url = req.nextUrl.clone()
-      url.pathname = `/blog/${BLOG_FR_TO_EN[bm[1]]}`
+      url.pathname = BLOG_FR_TO_EN[bm[1]]
       return decorate(NextResponse.redirect(url, 301))
     }
     // 2) Slug EN public → réécriture interne vers la route FR (l'URL reste EN)

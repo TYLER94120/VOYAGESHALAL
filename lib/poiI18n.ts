@@ -26,3 +26,32 @@ export function enLabel(fr: string | undefined, en: boolean): string | undefined
   if (!fr || !en) return fr
   return MAP[fr] ?? fr
 }
+
+// Noms de pays FR → EN (pages pays sur gohalaltravel.com). Fallback = identique.
+const COUNTRY_EN: Record<string, string> = {
+  Turquie: 'Türkiye', Maroc: 'Morocco', 'Émirats Arabes Unis': 'United Arab Emirates',
+  'Arabie Saoudite': 'Saudi Arabia', Malaisie: 'Malaysia', Indonésie: 'Indonesia',
+  Égypte: 'Egypt', Tunisie: 'Tunisia', Algérie: 'Algeria', Jordanie: 'Jordan',
+  Liban: 'Lebanon', Qatar: 'Qatar', Koweït: 'Kuwait', Oman: 'Oman', Bahreïn: 'Bahrain',
+  France: 'France', 'Royaume-Uni': 'United Kingdom', Espagne: 'Spain', Italie: 'Italy',
+  Allemagne: 'Germany', Belgique: 'Belgium', 'Pays-Bas': 'Netherlands', Suisse: 'Switzerland',
+  Autriche: 'Austria', Grèce: 'Greece', 'Bosnie-Herzégovine': 'Bosnia and Herzegovina',
+  Albanie: 'Albania', Turkménistan: 'Turkmenistan', Ouzbékistan: 'Uzbekistan',
+  Kazakhstan: 'Kazakhstan', Azerbaïdjan: 'Azerbaijan', Japon: 'Japan', 'Corée du Sud': 'South Korea',
+  Chine: 'China', Thaïlande: 'Thailand', Singapour: 'Singapore', Inde: 'India',
+  Pakistan: 'Pakistan', Bangladesh: 'Bangladesh', Maldives: 'Maldives', 'Sri Lanka': 'Sri Lanka',
+  'États-Unis': 'United States', Canada: 'Canada', Brésil: 'Brazil', Mexique: 'Mexico',
+  Australie: 'Australia', 'Afrique du Sud': 'South Africa', Sénégal: 'Senegal', Kenya: 'Kenya',
+  Nigéria: 'Nigeria', Éthiopie: 'Ethiopia', Russie: 'Russia', Pologne: 'Poland',
+  Hongrie: 'Hungary', Portugal: 'Portugal', Suède: 'Sweden', Norvège: 'Norway', Danemark: 'Denmark',
+}
+export const countryEn = (fr: string, en: boolean) => (en ? (COUNTRY_EN[fr] ?? fr) : fr)
+
+// Valeurs d'infos pays (échelles fermées) FR → EN.
+const COUNTRY_VALUES: Record<string, string> = {
+  Excellent: 'Excellent', Bon: 'Good', Moyen: 'Average', Difficile: 'Difficult',
+  Partout: 'Everywhere', 'Dans les villes': 'In cities', Rares: 'Rare',
+  Interdit: 'Forbidden', Rare: 'Rare', 'Disponible mais évitable': 'Available but avoidable',
+  'Très présent': 'Very present',
+}
+export const countryValueEn = (fr: string, en: boolean) => (en ? (COUNTRY_VALUES[fr] ?? fr) : fr)

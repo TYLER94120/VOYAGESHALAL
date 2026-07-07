@@ -7,6 +7,8 @@ import { buildMetadata, buildBreadcrumbSchema, buildFAQSchema } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { relatedForCountry } from '@/lib/relatedContent'
+import { getDomainSEO } from '@/lib/domain'
+import { countryEn, countryValueEn } from '@/lib/poiI18n'
 import cityCoords from '@/lib/cityCoords.json'
 
 interface Props {
@@ -21,9 +23,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { pays } = await params
   const country = getCountryBySlug(pays)
   if (!country) return {}
+  const { isEN } = await getDomainSEO()
+  const nomEN = countryEn(country.name, true)
   return buildMetadata({
-    title: `Voyage Halal en ${country.name} — Guide Complet ${new Date().getFullYear()}`,
-    description: `${country.shortDescription} Restaurants halal, mosquées, hôtels et conseils pratiques pour voyager en ${country.name}.`,
+    title: isEN
+      ? `Halal Travel in ${nomEN} — Complete Guide ${new Date().getFullYear()}`
+      : `Voyage Halal en ${country.name} — Guide Complet ${new Date().getFullYear()}`,
+    description: isEN
+      ? `Halal travel guide for ${nomEN}: halal restaurants, mosques, hotels and practical tips for Muslim travelers.`
+      : `${country.shortDescription} Restaurants halal, mosquées, hôtels et conseils pratiques pour voyager en ${country.name}.`,
     path: `/destinations/pays/${country.slug}`,
     type: 'article',
   })
@@ -55,20 +63,22 @@ export default async function CountryPage({ params }: Props) {
   const { pays } = await params
   const country = getCountryBySlug(pays)
   if (!country) notFound()
+  const { isEN: en } = await getDomainSEO()
+  const nomLoc = countryEn(country.name, en)
 
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: 'Accueil', url: '/' },
     { name: 'Destinations', url: '/destinations' },
     { name: country.name, url: `/destinations/pays/${country.slug}` },
   ])
-  const faqSchema = buildFAQSchema(country.faqs)
+  const faqSchema = en ? null : buildFAQSchema(country.faqs)
 
   // Toutes les villes de ce pays présentes dans nos 354 fiches (maillage complet),
   // pas seulement les villes curées (mainCities).
   const allCities = (cityCoords as { slug: string; nom: string; pays?: string }[])
     .filter((c) => (c.pays || '').toLowerCase() === country.name.toLowerCase())
     .sort((a, b) => a.nom.localeCompare(b.nom))
-  const paysContent = relatedForCountry(country.name)
+  const paysContent = relatedForCountry(en ? countryEn(country.name, true) : country.name, 6, en ? 'en' : 'fr')
 
   const alcoholColor = country.alcoholPolicy === 'Interdit' ? '#16a34a' : country.alcoholPolicy === 'Rare' ? '#ca8a04' : '#6b7280'
   const foodColor = country.halalFoodAvailability === 'Excellent' ? '#16a34a' : country.halalFoodAvailability === 'Bon' ? '#ca8a04' : '#dc2626'
@@ -76,13 +86,13 @@ export default async function CountryPage({ params }: Props) {
   return (
     <>
       <JsonLd data={breadcrumbSchema} />
-      <JsonLd data={faqSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
 
       <main style={{ backgroundColor: '#faf8f4' }} className="min-h-screen">
         {/* Breadcrumb */}
         <div className="bg-white border-b border-gray-100 px-6 sm:px-12 py-3">
           <nav className="flex items-center gap-2 text-xs text-gray-400 max-w-6xl mx-auto">
-            <Link href="/" className="hover:text-[#1a3a2a]">Accueil</Link>
+            <Link href="/" className="hover:text-[#1a3a2a]">{en ? 'Home' : 'Accueil'}</Link>
             <span>›</span>
             <Link href="/destinations" className="hover:text-[#1a3a2a]">Destinations</Link>
             <span>›</span>
@@ -94,7 +104,7 @@ export default async function CountryPage({ params }: Props) {
         <div className="relative h-[55vh] min-h-[380px] overflow-hidden">
           <Image
             src={country.coverImage}
-            alt={`Voyage halal en ${country.name}`}
+            alt={en ? `Halal travel in ${nomLoc}` : `Voyage halal en ${country.name}`}
             fill
             className="object-cover"
             priority
@@ -111,23 +121,23 @@ export default async function CountryPage({ params }: Props) {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 max-w-3xl"
               style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}
             >
-              Voyage Halal en {country.name}
+              {en ? <>Halal Travel in {nomLoc}</> : <>Voyage Halal en {country.name}</>}
             </h1>
             <div className="flex items-center gap-4 mb-3">
               <HalalScore score={country.halalScore} />
-              <span className="text-white/60 text-sm">Score halal</span>
+              <span className="text-white/60 text-sm">{en ? 'Halal score' : 'Score halal'}</span>
             </div>
-            <p className="text-white/70 text-base max-w-2xl leading-relaxed">{country.shortDescription}</p>
+            {!en && <p className="text-white/70 text-base max-w-2xl leading-relaxed">{country.shortDescription}</p>}
           </div>
         </div>
 
         {/* Stats bar */}
         <div className="bg-white border-b border-gray-100">
           <div className="max-w-6xl mx-auto px-6 sm:px-12 py-4 flex flex-wrap gap-8 text-sm">
-            <div><div className="font-bold text-base" style={{ color: '#1a3a2a' }}>{country.population}</div><div className="text-gray-400 text-xs mt-0.5">habitants</div></div>
-            <div><div className="font-bold text-base" style={{ color: '#1a3a2a' }}>{country.muslimPercentage}</div><div className="text-gray-400 text-xs mt-0.5">musulmans</div></div>
-            <div><div className="font-bold text-base" style={{ color: '#1a3a2a' }}>{country.currency}</div><div className="text-gray-400 text-xs mt-0.5">monnaie</div></div>
-            <div><div className="font-bold text-base" style={{ color: '#1a3a2a' }}>{country.bestTime.split('·')[0].trim()}</div><div className="text-gray-400 text-xs mt-0.5">meilleure période</div></div>
+            <div><div className="font-bold text-base" style={{ color: '#1a3a2a' }}>{country.population}</div><div className="text-gray-400 text-xs mt-0.5">{en ? 'population' : 'habitants'}</div></div>
+            <div><div className="font-bold text-base" style={{ color: '#1a3a2a' }}>{country.muslimPercentage}</div><div className="text-gray-400 text-xs mt-0.5">{en ? 'Muslim' : 'musulmans'}</div></div>
+            <div><div className="font-bold text-base" style={{ color: '#1a3a2a' }}>{country.currency}</div><div className="text-gray-400 text-xs mt-0.5">{en ? 'currency' : 'monnaie'}</div></div>
+            <div><div className="font-bold text-base" style={{ color: '#1a3a2a' }}>{country.bestTime.split('·')[0].trim()}</div><div className="text-gray-400 text-xs mt-0.5">{en ? 'best period' : 'meilleure période'}</div></div>
           </div>
         </div>
 
@@ -135,38 +145,38 @@ export default async function CountryPage({ params }: Props) {
           {/* Main */}
           <div className="lg:col-span-2 space-y-10">
             {/* Description */}
-            <section className="bg-white rounded-2xl p-6 border border-gray-100">
+            {!en && <section className="bg-white rounded-2xl p-6 border border-gray-100">
               <h2 className="font-bold text-lg mb-4" style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}>
                 Pourquoi visiter la {country.name} ?
               </h2>
               <p className="text-gray-600 leading-relaxed">{country.description}</p>
-            </section>
+            </section>}
 
             {/* Infos pratiques pour les musulmans */}
             <section>
               <h2 className="font-bold text-lg mb-4" style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-                🕌 Infos pratiques pour les voyageurs musulmans
+                {en ? '🕌 Practical info for Muslim travelers' : '🕌 Infos pratiques pour les voyageurs musulmans'}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <InfoBadge label="Nourriture halal" value={country.halalFoodAvailability} color={foodColor} />
-                <InfoBadge label="Alcool" value={country.alcoholPolicy} color={alcoholColor} />
-                <InfoBadge label="Présence de mosquées" value={country.mosquesPresence} color="#1a3a2a" />
-                <InfoBadge label="Code vestimentaire" value={country.dresscode.slice(0, 60) + (country.dresscode.length > 60 ? '…' : '')} color="#6b7280" />
+                <InfoBadge label={en ? 'Halal food' : 'Nourriture halal'} value={countryValueEn(country.halalFoodAvailability, en)} color={foodColor} />
+                <InfoBadge label={en ? 'Alcohol' : 'Alcool'} value={countryValueEn(country.alcoholPolicy, en)} color={alcoholColor} />
+                <InfoBadge label={en ? 'Mosques' : 'Présence de mosquées'} value={countryValueEn(country.mosquesPresence, en)} color="#1a3a2a" />
+                {!en && <InfoBadge label="Code vestimentaire" value={country.dresscode.slice(0, 60) + (country.dresscode.length > 60 ? '…' : '')} color="#6b7280" />}
               </div>
             </section>
 
             {/* Villes principales */}
             <section>
               <h2 className="font-bold text-lg mb-5" style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-                🏙️ Villes à visiter en {country.name}
+                {en ? <>🏙️ Cities to visit in {nomLoc}</> : <>🏙️ Villes à visiter en {country.name}</>}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {country.mainCities.map((city) => (
                   <div key={city.slug} className="bg-white rounded-2xl p-5 border border-gray-100 hover:border-[#c9a870]/40 hover:shadow-sm transition-all">
                     <Link href={`/destinations/${city.slug}`} className="group">
                       <h3 className="font-bold text-gray-900 mb-2 group-hover:text-[#1a3a2a] transition-colors">{city.name}</h3>
-                      <p className="text-sm text-gray-500 leading-relaxed">{city.description}</p>
-                      <span style={{ color: '#c9a870' }} className="text-xs font-medium mt-3 block">Voir le guide →</span>
+                      {!en && <p className="text-sm text-gray-500 leading-relaxed">{city.description}</p>}
+                      <span style={{ color: '#c9a870' }} className="text-xs font-medium mt-3 block">{en ? 'See the guide →' : 'Voir le guide →'}</span>
                     </Link>
                   </div>
                 ))}
@@ -177,7 +187,7 @@ export default async function CountryPage({ params }: Props) {
             {allCities.length > 0 && (
               <section>
                 <h2 className="font-bold text-lg mb-5" style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-                  🗺️ Toutes nos destinations en {country.name} ({allCities.length})
+                  {en ? <>🗺️ All our destinations in {nomLoc} ({allCities.length})</> : <>🗺️ Toutes nos destinations en {country.name} ({allCities.length})</>}
                 </h2>
                 <div className="flex flex-wrap gap-2">
                   {allCities.map((c) => (
@@ -200,7 +210,7 @@ export default async function CountryPage({ params }: Props) {
             {paysContent.length > 0 && (
               <section>
                 <h2 className="font-bold text-lg mb-5" style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}>
-                  📚 Guides & articles pour la {country.name}
+                  {en ? <>📚 Guides & articles for {nomLoc}</> : <>📚 Guides & articles pour la {country.name}</>}
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {paysContent.map((r) => (
@@ -213,8 +223,8 @@ export default async function CountryPage({ params }: Props) {
               </section>
             )}
 
-            {/* Conseils pratiques */}
-            <section>
+            {/* Conseils pratiques (texte FR) — masqués sur le domaine EN */}
+            {!en && <section>
               <h2 className="font-bold text-lg mb-4" style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}>
                 💡 Conseils pratiques
               </h2>
@@ -228,10 +238,10 @@ export default async function CountryPage({ params }: Props) {
                   ))}
                 </ul>
               </div>
-            </section>
+            </section>}
 
-            {/* FAQ */}
-            <section>
+            {/* FAQ (texte FR) — masquée sur le domaine EN */}
+            {!en && <section>
               <h2 className="font-bold text-lg mb-5" style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}>
                 Questions fréquentes
               </h2>
@@ -243,7 +253,7 @@ export default async function CountryPage({ params }: Props) {
                   </div>
                 ))}
               </div>
-            </section>
+            </section>}
           </div>
 
           {/* Sidebar */}

@@ -38,13 +38,26 @@ export const GUIDES_FR_TO_EN: Record<string, string> = {
   'ramadan-voyage-guide': 'traveling-during-ramadan',
   'omra-2026-guide-complet': 'umrah-2026-complete-guide',
   'malaisie-halal-destination': 'malaysia-halal-destination-guide',
+  'voyage-halal-istanbul-guide-2026': 'istanbul-halal-travel-guide',
+  'voyage-halal-dubai-guide-2026': 'dubai-halal-travel-guide-2026',
+  'voyage-halal-marrakech-guide-2026': 'marrakech-halal-travel-guide',
+  'top-destinations-halal-2026': 'top-halal-destinations-2026',
+  'lune-de-miel-halal': 'halal-honeymoon-guide',
+  'trouver-mosquee-en-voyage': 'find-a-mosque-anywhere',
+  'vacances-halal-famille-2026': 'halal-family-holidays-2026',
+  'checklist-voyage-halal': 'halal-travel-checklist',
+  'voyage-halal-solo-femme': 'solo-female-muslim-travel',
+  'tourisme-halal-definition-2026': 'what-is-halal-tourism',
 }
 
 // Articles de blog FR ayant un jumeau EN (301 sur le domaine EN).
+// Valeurs = chemin COMPLET de destination (permet blog → guide quand le vrai
+// jumeau EN est un guide). Jumelages par SUJET réel.
 export const BLOG_FR_TO_EN: Record<string, string> = {
-  'voyage-halal-maroc-2026-guide-complet': 'halal-travel-morocco-2026-complete-guide',
-  'top-10-destinations-halal-2026': 'top-10-halal-destinations-2026',
-  'voyager-pendant-ramadan-guide-complet': 'prayer-times-while-traveling-muslim-guide',
-  'restaurants-halal-paris': 'halal-travel-france-2026',
-  'meilleurs-hotels-halal-istanbul': 'best-halal-restaurants-istanbul-2026',
+  'voyage-halal-maroc-2026-guide-complet': '/blog/halal-travel-morocco-2026-complete-guide',
+  'top-10-destinations-halal-2026': '/blog/top-10-halal-destinations-2026',
+  'horaires-priere-voyage-guide-musulman': '/blog/prayer-times-while-traveling-muslim-guide',
+  'voyager-pendant-ramadan-guide-complet': '/guides/traveling-during-ramadan',
+  'restaurants-halal-paris': '/blog/halal-travel-france-2026',
+  'meilleurs-hotels-halal-istanbul': '/hotels/istanbul',
 }

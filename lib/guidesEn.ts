@@ -180,4 +180,123 @@ export const guidesEn: Guide[] = [
 <h2>Malaysia budget 2026</h2>
 <p>Food-court meal €2–4, mid-range hotel €40–80, domestic flights from €20. Two weeks of comfort rarely exceed €1,200 per person, flights aside. English is widely spoken — the easiest long-haul halal trip there is.</p>`,
   },
+  {
+    slug: 'top-halal-destinations-2026',
+    lang: 'en',
+    title: 'Top Halal Destinations 2026: Our Data-Driven Ranking',
+    description: 'The best destinations for Muslim travelers in 2026, ranked by our Halal Trust Score: restaurant density, mosque access, family friendliness and more.',
+    coverImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '6 min',
+    publishedAt: '2026-02-20',
+    tags: ['Ranking', 'Top destinations', '2026'],
+    content: `<p>Rather than subjective opinions, our ranking aggregates concrete criteria — halal restaurant density, access to mosques, ease of finding halal food, family friendliness and traveler infrastructure. Here are the 2026 leaders.</p>
+<h2>1. Kuala Lumpur, Malaysia</h2><p>The world reference: halal everywhere, JAKIM label, unbeatable value. See <a href="/destinations/kuala-lumpur">Kuala Lumpur</a> and our <a href="/guides/malaysia-halal-destination-guide">Malaysia guide</a>.</p>
+<h2>2. Istanbul, Türkiye</h2><p>History, food and faith in one city — <a href="/destinations/istanbul">Istanbul</a> remains the most complete halal city break. Full <a href="/guides/istanbul-halal-travel-guide">guide here</a>.</p>
+<h2>3. Madinah & Makkah, Saudi Arabia</h2><p>The spiritual summit. Combine with our <a href="/guides/umrah-2026-complete-guide">Umrah 2026 guide</a>.</p>
+<h2>4. Dubai, UAE</h2><p>Halal by law, family paradise, luxury at every level — <a href="/destinations/dubai">Dubai</a>.</p>
+<h2>5. Marrakesh, Morocco</h2><p>Charm, souks and naturally halal food — <a href="/destinations/marrakech">Marrakesh</a>.</p>
+<h2>Also excellent</h2><p><a href="/destinations/doha">Doha</a>, <a href="/destinations/singapour">Singapore</a>, <a href="/destinations/sarajevo">Sarajevo</a>, <a href="/destinations/jakarta">Jakarta</a> and <a href="/destinations/londres">London</a> for its huge halal scene. Browse all <a href="/destinations">destinations</a> — every city carries its own score and sources.</p>`,
+  },
+  {
+    slug: 'halal-honeymoon-guide',
+    lang: 'en',
+    title: 'Halal Honeymoon: Romantic Destinations That Respect Your Values',
+    description: 'Planning a halal honeymoon? The most romantic Muslim-friendly destinations: private villas, alcohol-free resorts, couple-friendly privacy and halal dining.',
+    coverImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '6 min',
+    publishedAt: '2026-02-24',
+    tags: ['Honeymoon', 'Couples', 'Romantic'],
+    content: `<p>A honeymoon should be unforgettable — and it can be, without compromising your values. Here is how to plan a beautiful <strong>halal honeymoon</strong>.</p>
+<h2>What to look for</h2><p>Private pool villas (privacy without mixed spaces), alcohol-free or alcohol-optional resorts, halal dining, and destinations where a Muslim couple feels at ease.</p>
+<h2>The Maldives — private-island romance</h2><p>Overwater villas with private pools, some fully halal resorts. The most private honeymoon there is.</p>
+<h2>Türkiye — Cappadocia & the coast</h2><p>Balloon sunrise over <a href="/destinations/cappadoce">Cappadocia</a>, then a halal-friendly beach resort near Antalya. Wonderful value.</p>
+<h2>Morocco — riads & desert</h2><p>A private riad in <a href="/destinations/marrakech">Marrakesh</a>, a night under the Sahara stars — intimate and naturally halal.</p>
+<h2>Dubai & Abu Dhabi — modern luxury</h2><p>Iconic hotels, private beaches, halal fine dining. See <a href="/hotels/dubai">halal hotels in Dubai</a>.</p>
+<h2>Practical tips</h2><p>Book villas with private pools; confirm alcohol policy and halal breakfast directly with the hotel — see our <a href="/guides/halal-hotels-complete-guide">halal hotels guide</a>. Keep <a href="/prayer-times">prayer times</a> handy even in paradise.</p>`,
+  },
+  {
+    slug: 'find-a-mosque-anywhere',
+    lang: 'en',
+    title: 'Find a Mosque Anywhere in the World: The Complete Guide',
+    description: 'Apps, tools and tips to locate the nearest mosque while traveling, in any country — plus what to do when there is no mosque around.',
+    coverImage: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200&q=80',
+    category: 'Practical',
+    readTime: '5 min',
+    publishedAt: '2026-02-28',
+    tags: ['Mosque', 'Practical', 'Prayer'],
+    content: `<p>Finding a place to pray is the #1 practical question of Muslim travelers. Good news: with the right tools, it takes seconds.</p>
+<h2>Our nearest-mosque tool</h2><p>Open <a href="/mosque-near-me">Mosque near me</a>: it locates you and lists the closest mosques with directions, using real OpenStreetMap data — worldwide, free.</p>
+<h2>In Muslim-majority countries</h2><p>Just follow the call to prayer — mosques are everywhere, and locals will happily point you to the closest one.</p>
+<h2>In non-Muslim countries</h2><p>Look near halal restaurant clusters and community centers. University campuses, big airports and some malls have prayer rooms. Our <a href="/destinations">city guides</a> map mosques and prayer spots together.</p>
+<h2>No mosque around?</h2><p>Any clean spot works: use the <a href="/qibla">Qibla compass</a>, a travel mat, and check <a href="/prayer-times">prayer times</a> for your exact position. Parks, quiet corners of stations and even fitting rooms have hosted many travelers\' prayers.</p>
+<h2>Etiquette when visiting</h2><p>Remove shoes, dress modestly, avoid tourist visits during prayer times. Some mosques welcome non-Muslim visitors; respect the signage.</p>`,
+  },
+  {
+    slug: 'halal-family-holidays-2026',
+    lang: 'en',
+    title: 'Halal Family Holidays 2026: The Best Destinations with Kids',
+    description: 'Where to travel as a Muslim family in 2026: destinations with halal food everywhere, kid-friendly activities, family rooms and stress-free logistics.',
+    coverImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80',
+    category: 'Family',
+    readTime: '6 min',
+    publishedAt: '2026-03-04',
+    tags: ['Family', 'Kids', 'Holidays'],
+    content: `<p>Traveling with children changes everything: you need halal food WITHOUT hunting for it, activities that thrill the kids, and logistics that do not exhaust the parents.</p>
+<h2>Dubai — the family Disneyland</h2><p>IMG Worlds, aquariums, indoor ski, desert safaris — endless activities, halal by law. Pricier, but the quality-experience ratio is unbeatable. See <a href="/destinations/dubai">Dubai</a>.</p>
+<h2>Malaysia — wonder for young eyes</h2><p>Petronas Towers, orangutans, Langkawi beaches, Batu Caves. Halal everywhere, English spoken, gentle prices. See our <a href="/guides/malaysia-halal-destination-guide">Malaysia guide</a>.</p>
+<h2>Türkiye — beaches + culture</h2><p>Family resorts near Antalya, boat days, and <a href="/destinations/istanbul">Istanbul</a> for the older kids. Halal food by default.</p>
+<h2>Morocco — close and easy (from Europe)</h2><p>Short flights, riads with pools, camel rides in <a href="/destinations/marrakech">Marrakesh</a> or <a href="/destinations/agadir">Agadir</a> beaches.</p>
+<h2>Parents\' checklist</h2><p>Family rooms or connecting rooms; halal breakfast confirmed; pool times; stroller-friendly areas; and our <a href="/guides/halal-travel-checklist">halal travel checklist</a> before departure.</p>`,
+  },
+  {
+    slug: 'halal-travel-checklist',
+    lang: 'en',
+    title: 'The Halal Travel Checklist: Everything to Prepare Before You Go',
+    description: 'The complete pre-departure checklist for Muslim travelers: food, prayer, documents, apps and the small items that save a trip.',
+    coverImage: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80',
+    category: 'Practical',
+    readTime: '5 min',
+    publishedAt: '2026-03-08',
+    tags: ['Checklist', 'Practical', 'Preparation'],
+    content: `<p>Ten minutes of preparation save hours of stress abroad. Here is the checklist we actually use.</p>
+<h2>Before booking</h2><p>✓ Check the destination\'s halal ease in our <a href="/destinations">city guides</a> · ✓ Hotel: halal breakfast + alcohol policy confirmed (see <a href="/guides/halal-hotels-complete-guide">how to choose</a>) · ✓ Flag 3-4 halal restaurants near the hotel.</p>
+<h2>Prayer kit</h2><p>✓ Travel prayer mat (100g, priceless) · ✓ <a href="/qibla">Qibla compass</a> tested · ✓ <a href="/prayer-times">Prayer times</a> for the destination · ✓ Nearest mosque located with <a href="/mosque-near-me">our tool</a>.</p>
+<h2>Food backup</h2><p>✓ Dates + nuts in the bag (airports, long transfers) · ✓ The words for « halal », « no pork/alcohol » in the local language · ✓ Vegetarian fallback list.</p>
+<h2>Documents & practical</h2><p>✓ Passport 6+ months validity · ✓ Visa checked · ✓ Offline maps downloaded · ✓ Travel insurance.</p>
+<h2>During Ramadan?</h2><p>Add our <a href="/guides/traveling-during-ramadan">Ramadan travel guide</a>: iftar reservations, suhoor plan, and lighter daytime itineraries.</p>`,
+  },
+  {
+    slug: 'solo-female-muslim-travel',
+    lang: 'en',
+    title: 'Solo Female Muslim Travel: Safe Destinations & Honest Advice',
+    description: 'Traveling solo as a Muslim woman: the destinations where it is easiest, safety-first advice, and how to keep prayer and halal food simple on the road.',
+    coverImage: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80',
+    category: 'Practical',
+    readTime: '6 min',
+    publishedAt: '2026-03-12',
+    tags: ['Solo travel', 'Women', 'Safety'],
+    content: `<p>More and more Muslim women travel solo — for study, work or the pure joy of discovering the world. Here is honest, practical guidance.</p>
+<h2>Easiest destinations to start</h2><p><strong>Malaysia</strong> and <strong>Singapore</strong>: safe, English-speaking, halal everywhere, prayer rooms in every mall. <strong>Istanbul</strong> and Türkiye: welcoming and easy to navigate. <strong>Dubai / Abu Dhabi</strong>: among the safest cities in the world, women-only metro cars and taxi options. <strong>Morocco</strong>: wonderful, best enjoyed with standard solo-travel caution.</p>
+<h2>Safety first — practical rules</h2><p>Book central accommodation near mosques and busy streets; arrive in daylight when possible; share your itinerary; trust your instinct in souks and stations. Official taxis or ride apps at night.</p>
+<h2>Prayer & food on the road</h2><p>The travel kit changes everything: mat, <a href="/qibla">Qibla</a>, <a href="/prayer-times">prayer times</a>, and mosque locations pre-checked with <a href="/mosque-near-me">Mosque near me</a>. Our <a href="/destinations">city guides</a> flag halal options honestly — every listing carries its source.</p>
+<h2>Umrah as a solo woman</h2><p>Since the mahram requirement was lifted for Umrah, many women perform it solo — see our <a href="/guides/umrah-2026-complete-guide">Umrah 2026 guide</a>.</p>`,
+  },
+  {
+    slug: 'what-is-halal-tourism',
+    lang: 'en',
+    title: 'What Is Halal Tourism? Definition, Numbers & What It Means for You',
+    description: 'Halal tourism explained: what it covers (food, prayer, environment), what it does not, the market numbers, and how to travel halal without over-complicating.',
+    coverImage: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80',
+    category: 'Practical',
+    readTime: '5 min',
+    publishedAt: '2026-03-16',
+    tags: ['Definition', 'Halal tourism', 'Basics'],
+    content: `<p><strong>Halal tourism</strong> (or Muslim-friendly travel) simply means travel that lets Muslims keep their practice: halal food, prayer facilities, and a respectful environment. It is one of the fastest-growing travel segments in the world.</p>
+<h2>What it covers</h2><p>Halal dining options · access to mosques or prayer spaces · alcohol-free environments (or the ability to avoid alcohol easily) · family-friendly facilities · modesty-aware services (e.g., women-only spa hours).</p>
+<h2>What it does NOT mean</h2><p>It is not a religious certification of an entire trip, and no serious platform can « certify » a destination. That is why we flag information honestly — « halal options available », « flagged halal · to confirm » — and every listing carries its source. Read <a href="/about">our method</a>.</p>
+<h2>The numbers</h2><p>Muslim travelers represent hundreds of billions of dollars in annual travel spending, and destinations compete for them: dedicated prayer rooms in airports, halal menus, Muslim-friendly labels from national tourism boards.</p>
+<h2>How to start</h2><p>Pick an easy destination (<a href="/destinations/istanbul">Istanbul</a>, <a href="/destinations/kuala-lumpur">Kuala Lumpur</a>, <a href="/destinations/marrakech">Marrakesh</a>), use our <a href="/guides/halal-travel-for-beginners">beginner guide</a> and <a href="/guides/halal-travel-checklist">checklist</a>, and keep the <a href="/prayer-times">prayer tools</a> at hand. That is all it takes.</p>`,
+  },
 ]
