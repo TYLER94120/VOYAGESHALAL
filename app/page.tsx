@@ -122,7 +122,7 @@ export default async function HomePage() {
       >
         {/* Image d'architecture islamique (sans personne) + voile sombre */}
         <Image
-          src="https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1920&q=80"
           alt={isEN ? "Green dome of the Prophet's Mosque in Medina" : 'Dôme vert de la Mosquée du Prophète à Médine'}
           fill
           priority

@@ -16,7 +16,7 @@ export interface BlogCard {
 }
 
 const CATEGORY_IMG: Record<string, string> = {
-  Destinations: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=600&q=80',
+  Destinations: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=600&q=80',
   Pratique: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80',
   Famille: 'https://images.unsplash.com/photo-1511895426328-dc8714191011?w=600&q=80',
   Spiritualité: 'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&q=80',
