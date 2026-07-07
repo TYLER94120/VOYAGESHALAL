@@ -1,9 +1,11 @@
 // Service worker minimal — rend le site installable (PWA) et offre un repli hors-ligne léger.
-const CACHE = 'vh-v1'
+const CACHE = 'vh-v2' // v2 : purge l'ancienne home figée (FR, CSS morts)
 const OFFLINE_URLS = ['/']
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((c) => c.addAll(OFFLINE_URLS)))
+  // On ne fige plus '/' à l'installation : la copie hors-ligne est rafraîchie
+  // à CHAQUE navigation réussie (voir fetch) → jamais de page périmée.
+  event.waitUntil(caches.open(CACHE))
   self.skipWaiting()
 })
 
@@ -20,7 +22,16 @@ self.addEventListener('fetch', (event) => {
   if (req.method !== 'GET') return
   if (req.mode === 'navigate') {
     event.respondWith(
-      fetch(req).catch(() => caches.match('/').then((r) => r || Response.error()))
+      fetch(req)
+        .then((res) => {
+          // Copie fraîche pour le repli hors-ligne (remplace l'ancienne)
+          if (res && res.ok) {
+            const clone = res.clone()
+            caches.open(CACHE).then((c) => c.put('/', clone)).catch(() => {})
+          }
+          return res
+        })
+        .catch(() => caches.match('/').then((r) => r || Response.error()))
     )
   }
 })
