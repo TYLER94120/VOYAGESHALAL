@@ -48,7 +48,7 @@ const DESTINATIONS = [
 ]
 
 const FEATURES = [
-  { icon: '🍽', title: 'Restaurants halal', titleEn: 'Halal restaurants', desc: 'Adresses halal signalées, confirmées par la communauté.', descEn: 'Halal spots reported and confirmed by the community.' },
+  { icon: '🍽', title: 'Restaurants halal', titleEn: 'Halal restaurants', desc: 'Options halal et adresses signalées — chaque adresse porte sa source.', descEn: 'Halal options and reported spots — every listing carries its source.' },
   { icon: '🕌', title: 'Mosquées proches', titleEn: 'Nearby mosques', desc: 'Localisez la mosquée la plus proche, avec horaires de prière.', descEn: 'Find the nearest mosque, with prayer times.' },
   { icon: '🧭', title: 'Guides pratiques', titleEn: 'Practical guides', desc: 'Conseils culturels, visa, transports — tout pour voyager l\'esprit libre.', descEn: 'Cultural tips, visas, transport — everything for worry-free travel.' },
 ]
