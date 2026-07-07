@@ -494,7 +494,7 @@ export const guides: Guide[] = [
     title: 'Voyager pendant le Ramadan : guide complet pour les musulmans',
     description:
       'Comment organiser et profiter de son voyage pendant le Ramadan ? Destinations, astuces pratiques et les meilleures expériences du mois sacré.',
-    coverImage: 'https://images.unsplash.com/photo-1548778052-311f4bc2b502?w=1200&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200&q=80',
     category: 'Pratique',
     readTime: '7 min',
     publishedAt: '2026-02-01',
@@ -623,7 +623,7 @@ export const guides: Guide[] = [
     slug: 'trouver-mosquee-en-voyage',
     title: 'Trouver une mosquée partout dans le monde : le guide complet',
     description: 'Applications, astuces et ressources pour localiser la mosquée la plus proche lors de vos voyages, dans n\'importe quel pays du monde.',
-    coverImage: 'https://images.unsplash.com/photo-1548778052-311f4bc2b502?w=1200&q=80',
+    coverImage: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200&q=80',
     category: 'Pratique',
     readTime: '5 min',
     publishedAt: '2026-06-15',
