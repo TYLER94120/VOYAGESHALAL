@@ -172,7 +172,28 @@ export default function AutourDeMoiPage() {
         if (res.ok) { const j = await res.json(); live = (j.items || []) as Spot[] }
       } catch { /* proxy indisponible → on garde les pré-chargés */ }
     }
-    const merged = mergeSpots(pre, live)
+    let merged = mergeSpots(pre, live)
+    // Peu de résultats (petites villes : OSM peu cartographié) → on élargit
+    // automatiquement à 20 km pour montrer ce qui existe autour (distance affichée).
+    if (merged.length < 5) {
+      try {
+        const [wideOsm, wideNear] = await Promise.all([
+          OSM_TYPES.has(c)
+            ? fetch(`/api/osm?lat=${lat}&lng=${lng}&kind=${c}&radius=20000`).then((r) => (r.ok ? r.json() : { items: [] })).catch(() => ({ items: [] }))
+            : Promise.resolve({ items: [] }),
+          fetch(`/api/nearby?lat=${lat}&lng=${lng}&type=${c}&radius=20`).then((r) => (r.ok ? r.json() : { items: [] })).catch(() => ({ items: [] })),
+        ])
+        const extra: Spot[] = [
+          ...(((wideOsm.items || []) as Spot[])),
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          ...(((wideNear.items || []) as any[]).map((o) => ({
+            id: `w-${o.nom}-${o.lat}`, lat: o.lat, lng: o.lng, name: o.nom,
+            sub: o.adresse || o.type || o.categorie || '', dist: (o.distanceKm ?? 0) * 1000,
+          }))),
+        ]
+        merged = mergeSpots(merged, extra)
+      } catch { /* élargissement best-effort */ }
+    }
     render(merged, c)
     // Cadre la carte pour rendre les résultats visibles (utile quand les points
     // pré-chargés sont loin — ex. banlieue → mosquées du centre-ville).
