@@ -6,6 +6,8 @@ import { countries, getCountryBySlug } from '@/lib/countriesData'
 import { buildMetadata, buildBreadcrumbSchema, buildFAQSchema } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
 import EmailCapture from '@/components/ui/EmailCapture'
+import { relatedForCountry } from '@/lib/relatedContent'
+import cityCoords from '@/lib/cityCoords.json'
 
 interface Props {
   params: Promise<{ pays: string }>
@@ -60,6 +62,13 @@ export default async function CountryPage({ params }: Props) {
     { name: country.name, url: `/destinations/pays/${country.slug}` },
   ])
   const faqSchema = buildFAQSchema(country.faqs)
+
+  // Toutes les villes de ce pays présentes dans nos 354 fiches (maillage complet),
+  // pas seulement les villes curées (mainCities).
+  const allCities = (cityCoords as { slug: string; nom: string; pays?: string }[])
+    .filter((c) => (c.pays || '').toLowerCase() === country.name.toLowerCase())
+    .sort((a, b) => a.nom.localeCompare(b.nom))
+  const paysContent = relatedForCountry(country.name)
 
   const alcoholColor = country.alcoholPolicy === 'Interdit' ? '#16a34a' : country.alcoholPolicy === 'Rare' ? '#ca8a04' : '#6b7280'
   const foodColor = country.halalFoodAvailability === 'Excellent' ? '#16a34a' : country.halalFoodAvailability === 'Bon' ? '#ca8a04' : '#dc2626'
@@ -163,6 +172,46 @@ export default async function CountryPage({ params }: Props) {
                 ))}
               </div>
             </section>
+
+            {/* Toutes les villes du pays (maillage complet) + lien hôtels */}
+            {allCities.length > 0 && (
+              <section>
+                <h2 className="font-bold text-lg mb-5" style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}>
+                  🗺️ Toutes nos destinations en {country.name} ({allCities.length})
+                </h2>
+                <div className="flex flex-wrap gap-2">
+                  {allCities.map((c) => (
+                    <Link key={c.slug} href={`/destinations/${c.slug}`} className="text-sm font-medium px-3.5 py-2 rounded-full bg-white border border-gray-200 text-gray-700 hover:border-[#c9a870]/50 hover:text-[#1a3a2a] transition-colors">
+                      {c.nom}
+                    </Link>
+                  ))}
+                </div>
+                <div className="mt-4 flex flex-wrap gap-3">
+                  {allCities.slice(0, 6).map((c) => (
+                    <Link key={c.slug} href={`/hotels/${c.slug}`} className="text-sm font-semibold text-[#1a3a2a] hover:underline">
+                      🏨 Hôtels halal à {c.nom} →
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
+
+            {/* Guides & articles pour le pays (maillage interne) */}
+            {paysContent.length > 0 && (
+              <section>
+                <h2 className="font-bold text-lg mb-5" style={{ color: '#1a3a2a', fontFamily: 'var(--font-playfair), Georgia, serif' }}>
+                  📚 Guides & articles pour la {country.name}
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {paysContent.map((r) => (
+                    <Link key={r.slug} href={`/${r.type === 'guide' ? 'guides' : 'blog'}/${r.slug}`} className="flex items-center justify-between gap-3 bg-white rounded-xl p-4 border border-gray-100 hover:border-[#c9a870]/40 transition-colors">
+                      <span className="text-sm font-medium text-gray-800">{r.type === 'guide' ? '📗' : '📝'} {r.title}</span>
+                      {r.readTime && <span className="text-xs text-gray-400 whitespace-nowrap">{r.readTime}</span>}
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            )}
 
             {/* Conseils pratiques */}
             <section>

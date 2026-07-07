@@ -22,6 +22,7 @@ function getFooterLinks(en: boolean) {
       { href: '/blog', label: en ? 'Blog & Guides' : 'Blog & Guides' },
       { href: '/guides/voyage-halal-debutant', label: en ? 'Beginner guide' : 'Guide débutant' },
       { href: '/guides/ramadan-voyage-guide', label: en ? 'Travel during Ramadan' : 'Voyager en Ramadan' },
+      { href: `${localizedHref('/a-propos', en)}#donnees`, label: en ? 'How we verify data' : 'Comment nous vérifions' },
     ],
     [en ? 'Legal' : 'Légal']: [
       { href: localizedHref('/a-propos', en), label: en ? 'About & Trust Score' : 'À propos & Trust Score' },

@@ -1556,6 +1556,108 @@ export const blogPosts: BlogPost[] = [
 <h2>Conclusion</h2>
 <p>This ranking evolves yearly with our data. One constant: halal travel is possible, enjoyable and enriching everywhere. Plan your prayers with our <a href="/horaires-priere">prayer times</a> and <a href="/qibla">Qibla</a> tools.</p>`,
   },
+  {
+    slug: 'halal-hotels-marrakech-2026',
+    title: 'Halal Hotels in Marrakech 2026: Where Muslim Travelers Should Stay',
+    description: 'The best halal-friendly hotels and riads in Marrakech for Muslim travelers: alcohol-free options, close to mosques, family-friendly, for every budget.',
+    coverImage: 'https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=1200&q=80',
+    category: 'Accommodation',
+    readTime: '6 min',
+    publishedAt: '2026-03-05',
+    lang: 'en',
+    tags: ['Marrakech', 'Morocco', 'Hotels', 'Halal-friendly'],
+    content: `<p>Marrakech is one of the easiest cities in the world for Muslim travelers: food is halal by default, mosques are everywhere, and the call to prayer sets the rhythm of the day. Choosing where to stay mostly comes down to atmosphere and location.</p>
+<h2>Riads in the Medina</h2>
+<p>Traditional riads around the Medina and near Jemaa el-Fna put you steps from the Koutoubia Mosque and the souks. Most family-run riads are naturally alcohol-free and serve a traditional Moroccan breakfast. Confirm the alcohol policy when booking — we never certify, so always verify on site.</p>
+<h2>Modern hotels in Guéliz and Hivernage</h2>
+<p>For pools, spas and more space, the Guéliz and Hivernage districts offer modern hotels, many with halal-friendly restaurants. Ideal for families who want comfort without leaving the halal-friendly bubble.</p>
+<h2>How to pick</h2>
+<p>Prioritize proximity to a mosque, an alcohol-free environment and a halal breakfast. Browse our full, regularly updated list on the <a href="/hotels/marrakech">halal hotels in Marrakech</a> page, and read the complete <a href="/destinations/marrakech">Marrakech travel guide</a>.</p>
+<h2>Getting around and praying</h2>
+<p>Prayer is effortless here — mosques are within walking distance almost anywhere. Use our <a href="/horaires-priere">prayer times</a> and <a href="/qibla">Qibla</a> tools to stay on schedule while exploring the gardens, palaces and souks.</p>`,
+  },
+  {
+    slug: 'muslim-friendly-dubai-2026',
+    title: 'Muslim-Friendly Dubai 2026: The Complete Halal Travel Guide',
+    description: 'Everything Muslim travelers need for Dubai: halal food everywhere, mosques, prayer facilities, family activities and where to stay. A stress-free destination.',
+    coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '7 min',
+    publishedAt: '2026-03-08',
+    lang: 'en',
+    tags: ['Dubai', 'UAE', 'Muslim-friendly', 'Family'],
+    content: `<p>Dubai is one of the most comfortable destinations in the world for Muslim travelers. Halal food is the norm across restaurants and malls, mosques and prayer rooms are everywhere, and the whole city is built around a Muslim-friendly lifestyle.</p>
+<h2>Halal food</h2>
+<p>The vast majority of restaurants serve halal meat, and prayer rooms are standard in malls, the airport and attractions. As always, we inform rather than certify — check for the halal label or ask staff when in doubt.</p>
+<h2>Mosques and prayer</h2>
+<p>From the Jumeirah Mosque to countless neighborhood mosques, prayer is effortless. Use our <a href="/horaires-priere">prayer times</a> and <a href="/qibla">Qibla</a> tools, and find the closest one with our <a href="/mosquee-proche">nearest mosque</a> finder.</p>
+<h2>Where to stay</h2>
+<p>Dubai offers everything from alcohol-free family hotels to luxury resorts. See our <a href="/hotels/dubai">halal hotels in Dubai</a> selection.</p>
+<h2>Family activities</h2>
+<p>Indoor theme parks, aquariums, desert safaris and the Burj Khalifa make Dubai a family favorite. Read the full <a href="/destinations/dubai">Dubai halal travel guide</a> for a complete itinerary.</p>`,
+  },
+  {
+    slug: 'halal-travel-france-2026',
+    title: 'Halal Travel in France 2026: Cities, Food and Practical Tips',
+    description: 'A practical guide to halal travel in France for Muslim visitors: where to find halal restaurants, mosques and prayer spaces in Paris, Lyon, Marseille and beyond.',
+    coverImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '7 min',
+    publishedAt: '2026-03-11',
+    lang: 'en',
+    tags: ['France', 'Paris', 'Halal food', 'Muslim-friendly'],
+    content: `<p>France has one of the largest Muslim communities in Europe, which means halal food, mosques and prayer spaces are widely available — especially in the big cities.</p>
+<h2>Paris and the big cities</h2>
+<p>Paris offers an exceptional range of halal restaurants across nearly every neighborhood, from artisan kebabs to fine dining. Lyon, Marseille, Lille and Strasbourg all have vibrant halal food scenes and central mosques.</p>
+<h2>Finding halal and prayer</h2>
+<p>Look for the "Halal" sign, or restaurants run by Muslim families. Prayer spaces exist in and around mosques and some transport hubs — find the closest with our <a href="/mosquee-proche">nearest mosque</a> tool and check <a href="/horaires-priere">prayer times</a>.</p>
+<h2>Where to stay and explore</h2>
+<p>Choose accommodation near neighborhoods with strong halal options. Explore city guides such as <a href="/destinations/paris">Paris</a>, and browse all our <a href="/destinations">destinations</a>. We inform on halal availability — always confirm locally.</p>`,
+  },
+  {
+    slug: 'malaisie-voyage-musulman-guide',
+    title: 'Malaisie, voyage musulman 2026 : le guide pour voyager serein',
+    description: 'Pourquoi la Malaisie est une destination halal idéale : nourriture halal partout, mosquées, nature et modernité. Villes, conseils et bonnes adresses pour un voyage musulman.',
+    coverImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '8 min',
+    publishedAt: '2026-03-14',
+    tags: ['Malaisie', 'Voyage musulman', 'Asie', '2026'],
+    content: `<p>La <strong>Malaisie</strong> est l'une des destinations les plus simples et les plus agréables pour un <strong>voyage musulman</strong> : pays à majorité musulmane, la nourriture halal y est la norme, les mosquées sont partout et l'accueil est chaleureux.</p>
+<h2>Pourquoi la Malaisie ?</h2>
+<p>La restauration est très largement halal, souvent identifiable par le logo officiel local. Les centres commerciaux, aéroports et gares disposent de salles de prière. On informe sur la disponibilité du halal — vérifiez toujours le logo ou demandez en cas de doute.</p>
+<h2>Les villes à visiter</h2>
+<h3>Kuala Lumpur</h3>
+<p>La capitale mêle tours Petronas, food courts et grande diversité culinaire halal. Voir notre guide <a href="/destinations/kuala-lumpur">Kuala Lumpur</a>.</p>
+<h3>Penang et Langkawi</h3>
+<p>Penang pour la street food, Langkawi pour les plages et la nature. Un équilibre parfait entre culture et détente.</p>
+<h2>Nature et famille</h2>
+<p>Îles, jungles, orangs-outans : la Malaisie est idéale en famille, avec l'anglais largement parlé et des prix accessibles.</p>
+<h2>Prier en voyage</h2>
+<p>Utilisez nos outils <a href="/horaires-priere">horaires de prière</a> et <a href="/qibla">Qibla</a>, et trouvez la <a href="/mosquee-proche">mosquée la plus proche</a>. Explorez toutes nos <a href="/destinations">destinations</a>.</p>`,
+  },
+  {
+    slug: 'ramadan-voyage-meilleures-villes',
+    title: 'Ramadan en voyage 2026 : les meilleures villes où vivre le mois sacré',
+    description: 'Où voyager pendant le Ramadan ? Notre sélection de villes à l\'atmosphère unique : ftour animés, mosquées, prières de Tarawih et ambiance spirituelle inoubliable.',
+    coverImage: 'https://images.unsplash.com/photo-1519817650390-64a93db51149?w=1200&q=80',
+    category: 'Spiritualité',
+    readTime: '7 min',
+    publishedAt: '2026-03-17',
+    tags: ['Ramadan', 'Voyage', 'Spiritualité', '2026'],
+    content: `<p>Voyager pendant le <strong>Ramadan</strong> offre une expérience unique : journées calmes, soirées animées après la rupture du jeûne, et une atmosphère spirituelle qu'on ne trouve à aucun autre moment de l'année.</p>
+<h2>Les meilleures villes pour le Ramadan</h2>
+<h3>Istanbul</h3>
+<p>Les mosquées historiques illuminées, les places animées pour le ftour, les prières de Tarawih dans un cadre majestueux. Voir <a href="/destinations/istanbul">Istanbul</a>.</p>
+<h3>Marrakech et le Maroc</h3>
+<p>Le rythme du Ramadan y est profondément ancré : souks vivants le soir, harira et pâtisseries au ftour. Voir <a href="/destinations/marrakech">Marrakech</a>.</p>
+<h3>Dubaï</h3>
+<p>Tentes de ftour, ambiance familiale et confort moderne. Voir <a href="/destinations/dubai">Dubaï</a>.</p>
+<h3>La Mecque et Médine</h3>
+<p>Pour ceux qui le peuvent, vivre le Ramadan dans les Lieux saints est incomparable. Voir notre <a href="/guides/omra-2026-guide-complet">guide Omra</a>.</p>
+<h2>Conseils pratiques</h2>
+<p>Réservez le ftour à l'avance dans les bonnes adresses (souvent complètes), planifiez les visites le matin, et gardez vos <a href="/horaires-priere">horaires de prière</a> à portée de main. Lisez aussi notre <a href="/guides/ramadan-voyage-guide">guide complet Voyager pendant le Ramadan</a>.</p>`,
+  },
 ]
 
 export function getDestinationBySlug(slug: string): Destination | undefined {

@@ -32,6 +32,21 @@ export function relatedForCity(villeNom: string, pays?: string, limit = 4): Rela
   return villeFirst.filter((r) => (seen.has(r.slug) ? false : seen.add(r.slug))).slice(0, limit)
 }
 
+// Contenu lié à un pays : cherche le nom du pays dans titres/tags des guides/articles.
+export function relatedForCountry(paysNom: string, limit = 6): RelatedLink[] {
+  const needles = [paysNom]
+  const out: RelatedLink[] = []
+  for (const g of guides) {
+    if (matches([g.title, ...(g.tags || [])], needles)) out.push({ slug: g.slug, title: g.title, type: 'guide', readTime: g.readTime })
+  }
+  for (const b of blogPosts) {
+    if ((b.lang ?? 'fr') !== 'fr') continue
+    if (matches([b.title, ...(b.tags || [])], needles)) out.push({ slug: b.slug, title: b.title, type: 'blog', readTime: b.readTime })
+  }
+  const seen = new Set<string>()
+  return out.filter((r) => (seen.has(r.slug) ? false : seen.add(r.slug))).slice(0, limit)
+}
+
 // Slug de la page pays à partir du nom de pays d'une ville (ex. "Maroc" → "maroc").
 const COUNTRY_BY_NAME = new Map(countries.map((c) => [norm(c.name), c.slug]))
 export function countrySlugForName(pays?: string): string | null {

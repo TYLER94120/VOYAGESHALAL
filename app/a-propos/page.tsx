@@ -86,7 +86,7 @@ export default async function AProposPage() {
             : "Note d'honnêteté importante : un score élevé ne signifie pas qu'une ville est à majorité musulmane ou sans alcool. Pour les destinations non-musulmanes, nous indiquons « options halal disponibles » plutôt que « halal vérifié », et nous n'affirmons jamais qu'une ville est « sans alcool » quand ce n'est pas le cas. Les données proviennent de nos recherches combinées aux contributeurs OpenStreetMap, et chaque point d'intérêt porte sa source."}
         </p>
 
-        <h2>{en ? 'How we build our data' : 'Comment nous construisons nos données'}</h2>
+        <h2 id="donnees">{en ? 'How we build our data' : 'Comment nous construisons nos données'}</h2>
         <p>
           {en
             ? "We combine editorial research on flagship destinations with live, open data (OpenStreetMap / Overpass) for restaurants, mosques, butchers and hotels. Duplicate and auto-generated entries are removed, and coordinates are verified so the map around you is real — we do not fabricate restaurant names or locations."
