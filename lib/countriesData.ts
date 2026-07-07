@@ -203,7 +203,7 @@ export const countries: Country[] = [
     slug: 'arabie-saoudite',
     name: 'Arabie Saoudite',
     continent: 'Moyen-Orient',
-    coverImage: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1400&q=85',
+    coverImage: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1400&q=85',
     flagEmoji: '🇸🇦',
     halalScore: 5,
     capitalCity: 'Riyad',
