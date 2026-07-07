@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!post) return {}
 
   const { siteUrl } = await getDomainSEO()
-  return buildMetadata({
+  const base = buildMetadata({
     title: post.title,
     description: post.description,
     path: `/blog/${post.slug}`,
@@ -37,6 +37,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'x-default': `${EN_URL}/blog/${post.slug}`,
     },
   })
+  const { isEN } = await getDomainSEO()
+  const postLang = ('lang' in post ? (post as { lang?: string }).lang : undefined) ?? 'fr'
+  if (postLang !== (isEN ? 'en' : 'fr')) return { ...base, robots: { index: false, follow: true } }
+  return base
 }
 
 export default async function BlogPostPage({ params }: Props) {

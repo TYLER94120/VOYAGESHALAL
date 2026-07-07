@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import type { VilleRestaurant, VilleHotel, VilleActivite } from '@/lib/villeTypes'
 import { useToast } from '@/components/Toast'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
+import { enLabel } from '@/lib/poiI18n'
 import { useReveal } from '@/hooks/useReveal'
 
 type Kind = 'resto' | 'hotel' | 'activite'
@@ -69,6 +71,7 @@ function MapsLink({ href, children }: { href: string; children: React.ReactNode 
 }
 
 function RestaurantCard({ r, ville }: { r: VilleRestaurant; ville: string }) {
+  const { lang } = useLanguage(); const en = lang === 'en'
   return (
     <CardShell>
       <div className="flex items-start justify-between mb-1">
@@ -76,7 +79,7 @@ function RestaurantCard({ r, ville }: { r: VilleRestaurant; ville: string }) {
           <h3 className="text-[1.1rem] font-bold text-[#1a1a1a]" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>{r.nom}</h3>
           <div className="flex items-center gap-2 mt-1 flex-wrap">
             {(r.certificationHalal ?? r.halal_certifie) && (
-              <span className="text-[11px] font-semibold text-[#1b4332] bg-[#1b4332]/[0.08] px-2 py-0.5 rounded-full">✓ Halal signalé · à vérifier</span>
+              <span className="text-[11px] font-semibold text-[#1b4332] bg-[#1b4332]/[0.08] px-2 py-0.5 rounded-full">{en ? '✓ Flagged halal · to confirm' : '✓ Halal signalé · à vérifier'}</span>
             )}
             {(r.priceRange ?? r.fourchette_prix) && <span className="text-xs text-gray-500">{r.priceRange ?? r.fourchette_prix}</span>}
           </div>
@@ -86,10 +89,11 @@ function RestaurantCard({ r, ville }: { r: VilleRestaurant; ville: string }) {
         )}
       </div>
       {r.adresse && <p className="text-[13px] text-gray-500 my-1">📍 {r.adresse}</p>}
-      {(r.description || r.specialite) && <p className="text-sm text-[#1a1a1a] leading-relaxed my-3">{r.description || r.specialite}</p>}
+      {/* Domaine EN : jamais de texte FR — on n'affiche la description que si une version EN existe */}
+      {!en && (r.description || r.specialite) && <p className="text-sm text-[#1a1a1a] leading-relaxed my-3">{r.description || r.specialite}</p>}
       <div className="flex gap-2 flex-wrap mt-3">
         <MapsLink href={mapsLink(r.nom, ville, r.mapsUrl)}>🗺️ Google Maps</MapsLink>
-        {r.websiteUrl && <a href={r.websiteUrl} target="_blank" rel="noopener noreferrer" style={btnOutline}>🌐 Site web</a>}
+        {r.websiteUrl && <a href={r.websiteUrl} target="_blank" rel="noopener noreferrer" style={btnOutline}>🌐 {en ? 'Website' : 'Site web'}</a>}
       </div>
     </CardShell>
   )
@@ -97,6 +101,7 @@ function RestaurantCard({ r, ville }: { r: VilleRestaurant; ville: string }) {
 
 function HotelCard({ h, ville }: { h: VilleHotel; ville: string }) {
   const toast = useToast()
+  const { lang } = useLanguage(); const en = lang === 'en'
   const booking = h.bookingUrl || `https://www.booking.com/searchresults.fr.html?ss=${encodeURIComponent(ville)}&label=voyageshalal`
   return (
     <CardShell>
@@ -104,7 +109,7 @@ function HotelCard({ h, ville }: { h: VilleHotel; ville: string }) {
         <div>
           <h3 className="text-[1.1rem] font-bold text-[#1a1a1a]" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>{h.nom}</h3>
           <div className="flex items-center gap-2 mt-1 flex-wrap">
-            {(h.sansAlcool ?? h.sans_alcool) && <span className="text-[11px] font-semibold text-[#1b4332] bg-[#1b4332]/[0.08] px-2 py-0.5 rounded-full">🚫 Sans alcool</span>}
+            {(h.sansAlcool ?? h.sans_alcool) && <span className="text-[11px] font-semibold text-[#1b4332] bg-[#1b4332]/[0.08] px-2 py-0.5 rounded-full">{'🚫 '}{en ? 'Alcohol-free' : 'Sans alcool'}</span>}
             {(h.halalFriendly ?? h.halal_certifie) && <span className="text-[11px] font-semibold text-[#c9a84c] bg-[#c9a84c]/10 px-2 py-0.5 rounded-full">✓ Halal-friendly</span>}
             {h.priceRange && <span className="text-xs text-gray-500">{h.priceRange}</span>}
           </div>
@@ -114,17 +119,18 @@ function HotelCard({ h, ville }: { h: VilleHotel; ville: string }) {
         )}
       </div>
       {h.adresse && <p className="text-[13px] text-gray-500 my-1">📍 {h.adresse}</p>}
-      {h.description && <p className="text-sm text-[#1a1a1a] leading-relaxed my-3">{h.description}</p>}
+      {!en && h.description && <p className="text-sm text-[#1a1a1a] leading-relaxed my-3">{h.description}</p>}
       <div className="flex gap-2 flex-wrap mt-3">
-        <a href={booking} target="_blank" rel="noopener noreferrer" style={{ ...btnFilled, background: '#003580' }} onClick={() => toast('Ouverture de Booking.com…')}>🏨 Réserver sur Booking</a>
+        <a href={booking} target="_blank" rel="noopener noreferrer" style={{ ...btnFilled, background: '#003580' }} onClick={() => toast('Ouverture de Booking.com…')}>{'🏨 '}{en ? 'Book on Booking' : 'Réserver sur Booking'}</a>
         {h.halalBookingUrl && <a href={h.halalBookingUrl} target="_blank" rel="noopener noreferrer" style={btnFilled}>✓ HalalBooking</a>}
-        <a href={mapsLink(h.nom, ville, h.mapsUrl)} target="_blank" rel="noopener noreferrer" style={btnOutline}>🗺️ Localiser</a>
+        <a href={mapsLink(h.nom, ville, h.mapsUrl)} target="_blank" rel="noopener noreferrer" style={btnOutline}>{'🗺️ '}{en ? 'Locate' : 'Localiser'}</a>
       </div>
     </CardShell>
   )
 }
 
 function ActivityCard({ a, ville }: { a: VilleActivite; ville: string }) {
+  const { lang } = useLanguage(); const en = lang === 'en'
   return (
     <CardShell>
       <div className="flex items-start justify-between gap-3">
@@ -134,9 +140,9 @@ function ActivityCard({ a, ville }: { a: VilleActivite; ville: string }) {
           {a.prix && <span className="font-semibold" style={{ color: a.prix === 'Gratuit' ? GREEN : '#6B7280' }}>{a.prix}</span>}
         </div>
       </div>
-      {a.description && <p className="text-sm text-[#1a1a1a] leading-relaxed my-3">{a.description}</p>}
+      {!en && a.description && <p className="text-sm text-[#1a1a1a] leading-relaxed my-3">{a.description}</p>}
       <div className="flex gap-2 flex-wrap">
-        <MapsLink href={mapsLink(a.nom, ville, a.mapsUrl)}>🗺️ Voir sur Google Maps</MapsLink>
+        <MapsLink href={mapsLink(a.nom, ville, a.mapsUrl)}>{'🗺️ '}{en ? 'View on Google Maps' : 'Voir sur Google Maps'}</MapsLink>
         {a.tripadvisorUrl && <a href={a.tripadvisorUrl} target="_blank" rel="noopener noreferrer" style={{ ...btnOutline, borderColor: '#34E0A1', color: '#00AA6C' }}>⭐ TripAdvisor</a>}
       </div>
     </CardShell>

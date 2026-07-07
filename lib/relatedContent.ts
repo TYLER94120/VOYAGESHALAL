@@ -16,14 +16,15 @@ function matches(haystack: string[], needles: string[]): boolean {
 }
 
 // Contenu lié à une ville : on cherche son nom OU son pays dans titres/tags.
-export function relatedForCity(villeNom: string, pays?: string, limit = 4): RelatedLink[] {
+export function relatedForCity(villeNom: string, pays?: string, limit = 4, lang: 'fr' | 'en' = 'fr'): RelatedLink[] {
   const needles = [villeNom, pays].filter(Boolean) as string[]
   const out: RelatedLink[] = []
   for (const g of guides) {
+    if ((g.lang ?? 'fr') !== lang) continue
     if (matches([g.title, ...(g.tags || [])], needles)) out.push({ slug: g.slug, title: g.title, type: 'guide', readTime: g.readTime })
   }
   for (const b of blogPosts) {
-    if ((b.lang ?? 'fr') !== 'fr') continue
+    if ((b.lang ?? 'fr') !== lang) continue
     if (matches([b.title, ...(b.tags || [])], needles)) out.push({ slug: b.slug, title: b.title, type: 'blog', readTime: b.readTime })
   }
   // Dédup + priorité aux matches ville avant pays
@@ -33,14 +34,15 @@ export function relatedForCity(villeNom: string, pays?: string, limit = 4): Rela
 }
 
 // Contenu lié à un pays : cherche le nom du pays dans titres/tags des guides/articles.
-export function relatedForCountry(paysNom: string, limit = 6): RelatedLink[] {
+export function relatedForCountry(paysNom: string, limit = 6, lang: 'fr' | 'en' = 'fr'): RelatedLink[] {
   const needles = [paysNom]
   const out: RelatedLink[] = []
   for (const g of guides) {
+    if ((g.lang ?? 'fr') !== lang) continue
     if (matches([g.title, ...(g.tags || [])], needles)) out.push({ slug: g.slug, title: g.title, type: 'guide', readTime: g.readTime })
   }
   for (const b of blogPosts) {
-    if ((b.lang ?? 'fr') !== 'fr') continue
+    if ((b.lang ?? 'fr') !== lang) continue
     if (matches([b.title, ...(b.tags || [])], needles)) out.push({ slug: b.slug, title: b.title, type: 'blog', readTime: b.readTime })
   }
   const seen = new Set<string>()

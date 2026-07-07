@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { guides, getGuideBySlug } from '@/lib/data'
+import { getDomainSEO } from '@/lib/domain'
 import { buildMetadata, buildArticleSchema, buildBreadcrumbSchema } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
 import AppCTA from '@/components/ui/AppCTA'
@@ -19,12 +20,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const guide = getGuideBySlug(slug)
   if (!guide) return {}
 
-  return buildMetadata({
+  const base = buildMetadata({
     title: guide.title,
     description: guide.description,
     path: `/guides/${guide.slug}`,
     type: 'article',
   })
+  // Un guide FR consulté sur le domaine EN (ou l'inverse) ne doit pas être indexé
+  const { isEN } = await getDomainSEO()
+  if ((guide.lang ?? 'fr') !== (isEN ? 'en' : 'fr')) {
+    return { ...base, robots: { index: false, follow: true } }
+  }
+  return base
 }
 
 export default async function GuidePage({ params }: Props) {

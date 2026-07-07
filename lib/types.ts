@@ -35,6 +35,8 @@ export interface Activity {
 
 export interface Guide {
   slug: string
+  /** Langue du guide. Absent = 'fr'. Sert au filtrage par domaine. */
+  lang?: 'fr' | 'en'
   title: string
   description: string
   coverImage: string

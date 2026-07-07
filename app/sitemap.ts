@@ -60,10 +60,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     alternates: { languages: { fr: `${FR_URL}/hotels/${slug}`, en: `${EN_URL}/hotels/${slug}` } },
   }))
 
-  // Guides : uniquement en français (pas de version EN dédiée) → seul le domaine FR les liste
-  const guidePages: MetadataRoute.Sitemap = isEN
-    ? []
-    : guides.map((g) => ({
+  // Guides : chaque domaine liste les guides rédigés dans SA langue
+  const guidePages: MetadataRoute.Sitemap = guides
+    .filter((g) => (g.lang ?? 'fr') === (isEN ? 'en' : 'fr'))
+    .map((g) => ({
         url: `${SITE_URL}/guides/${g.slug}`,
         changeFrequency: 'monthly' as const,
         priority: 0.7,

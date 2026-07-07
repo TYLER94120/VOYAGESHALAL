@@ -399,7 +399,9 @@ export const destinations: Destination[] = [
   },
 ]
 
-export const guides: Guide[] = [
+import { guidesEn } from './guidesEn'
+
+const guidesFr: Guide[] = [
   {
     slug: 'voyage-halal-debutant',
     title: 'Voyage halal pour débutants : tout ce qu\'il faut savoir avant de partir',
@@ -1201,6 +1203,8 @@ export const guides: Guide[] = [
 <p>Préparez votre séjour avec le <a href="/destinations/marrakech">guide halal de Marrakech</a>.</p>`,
   },
 ]
+
+export const guides: Guide[] = [...guidesFr, ...guidesEn]
 
 export const blogPosts: BlogPost[] = [
   {

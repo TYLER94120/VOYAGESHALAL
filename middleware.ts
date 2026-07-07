@@ -1,5 +1,5 @@
 import { NextResponse, type NextRequest } from 'next/server'
-import { EN_TO_FR_SLUG, FR_TO_EN_SLUG } from '@/lib/slugs'
+import { EN_TO_FR_SLUG, FR_TO_EN_SLUG, GUIDES_FR_TO_EN, BLOG_FR_TO_EN } from '@/lib/slugs'
 
 // Détection de domaine côté serveur (déterministe, sans flash ni reload).
 // gohalaltravel.com → anglais ; voyageshalal.fr → français.
@@ -27,6 +27,19 @@ export function middleware(req: NextRequest) {
     if (FR_TO_EN_SLUG[pathname]) {
       const url = req.nextUrl.clone()
       url.pathname = FR_TO_EN_SLUG[pathname]
+      return decorate(NextResponse.redirect(url, 301))
+    }
+    // 1bis) Guides/articles FR ayant un jumeau EN → 301 vers le slug anglais
+    const gm = pathname.match(/^\/guides\/([^/]+)$/)
+    if (gm && GUIDES_FR_TO_EN[gm[1]]) {
+      const url = req.nextUrl.clone()
+      url.pathname = `/guides/${GUIDES_FR_TO_EN[gm[1]]}`
+      return decorate(NextResponse.redirect(url, 301))
+    }
+    const bm = pathname.match(/^\/blog\/([^/]+)$/)
+    if (bm && BLOG_FR_TO_EN[bm[1]]) {
+      const url = req.nextUrl.clone()
+      url.pathname = `/blog/${BLOG_FR_TO_EN[bm[1]]}`
       return decorate(NextResponse.redirect(url, 301))
     }
     // 2) Slug EN public → réécriture interne vers la route FR (l'URL reste EN)

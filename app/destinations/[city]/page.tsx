@@ -156,7 +156,7 @@ export default async function DestinationPage({ params }: Props) {
 
       {/* Maillage interne : guides & articles liés + pays parent + coins prière */}
       {(() => {
-        const guidesLies = relatedForCity(ville.nom, ville.pays)
+        const guidesLies = relatedForCity(ville.nom, ville.pays, 4, isEN ? 'en' : 'fr')
         const paysSlug = countrySlugForName(ville.pays)
         return (
           <section style={{ maxWidth: 820, margin: '0 auto', padding: '8px 20px 8px' }}>

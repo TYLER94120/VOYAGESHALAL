@@ -5,6 +5,7 @@ import Link from 'next/link'
 import type { Ville } from '@/lib/villeTypes'
 import { PrayerTimesWidget } from '@/components/PrayerTimesWidget'
 import CategorizedDirectory from '@/components/villes/CategorizedDirectory'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 interface Props {
   ville: Ville
@@ -33,6 +34,7 @@ const GREEN = '#1a3a2a'
 const GOLD = '#c9a870'
 
 export default function CityTabs({ ville, apiCityName }: Props) {
+  const { lang } = useLanguage(); const en = lang === 'en'
   const [active, setActive] = useState<TabKey>('restaurants')
 
   return (
@@ -186,15 +188,24 @@ export default function CityTabs({ ville, apiCityName }: Props) {
       {active === 'pratique' && (
         <div className="space-y-6">
           <div className="bg-white rounded-2xl p-6 border border-gray-100">
-            <h2 className="font-bold text-gray-900 text-xl mb-5" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Infos pratiques</h2>
+            <h2 className="font-bold text-gray-900 text-xl mb-5" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>{en ? 'Practical info' : 'Infos pratiques'}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {Object.entries(ville.infos_pratiques).map(([key, val]) => {
-                const labels: Record<string, string> = {
+                const labels: Record<string, string> = en ? {
+                  langue: '🌐 Language', langue_officielle: '🌐 Language', monnaie: '💰 Currency',
+                  meilleure_periode: '📅 Best period', appel_priere: '🕌 Call to prayer',
+                  nourriture_halal: '🍽️ Halal food', alcool: '🚫 Alcohol', tenue: '👗 Dress code',
+                  securite: '🛡️ Safety',
+                } : {
                   langue: '🌐 Langue', langue_officielle: '🌐 Langue', monnaie: '💰 Monnaie',
                   meilleure_periode: '📅 Meilleure période', appel_priere: '🕌 Appel à la prière',
                   nourriture_halal: '🍽️ Nourriture halal', alcool: '🚫 Alcool', tenue: '👗 Tenue',
                   securite: '🛡️ Sécurité',
                 }
+                // Domaine EN : valeur traduite si dispo, sinon on MASQUE (jamais de FR)
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
+                const enVal = (ville as any).infos_pratiques_en?.[key]
+                if (en) { if (!enVal) return null; val = enVal }
                 if (!val) return null
                 return (
                   <div key={key}>
