@@ -20,6 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     robots: { index: true, follow: true },
+    openGraph: { url: url },
   }
 }
 

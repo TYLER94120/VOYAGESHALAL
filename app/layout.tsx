@@ -40,7 +40,6 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: 'website',
       locale: isEN ? 'en_US' : 'fr_FR',
-      url: siteUrl,
       siteName: brand,
       images: [{ url: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&h=630&fit=crop&q=80', width: 1200, height: 630 }],
     },

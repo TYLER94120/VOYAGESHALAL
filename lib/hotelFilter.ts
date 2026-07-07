@@ -54,7 +54,7 @@ export const noteOf = (h: HotelLike): number | null =>
   typeof h.note === 'number' ? h.note : typeof h.score === 'number' ? h.score : null
 export const reviewCountOf = (h: HotelLike): number =>
   Number(h.reviewCount ?? h.nombreAvis ?? h.avis ?? 0) || 0
-export const isCertifiedHalal = (h: HotelLike): boolean =>
+export const halalFlagged = (h: HotelLike): boolean =>
   !!(h.halal_certifie || h.halalFriendly)
 
 // §3 Score « bien situé » : proximité mosquée + restaurants halal autour
@@ -75,7 +75,7 @@ export function scoreRecommended(h: HotelLike, distToOrigin: number | null): num
   const cheapness = pr != null ? clamp((5 - pr) / 4, 0, 1) : 0.6
   const valueScore = noteScore * cheapness
   return 0.40 * noteScore + 0.35 * proxScore + 0.25 * valueScore
-    + (isCertifiedHalal(h) ? 0.05 : 0)
+    + (halalFlagged(h) ? 0.05 : 0)
     + Math.min(reviewCountOf(h) / 800, 1) * 0.04
 }
 

@@ -20,6 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
         'x-default': 'https://www.gohalaltravel.com/prayer-times',
       },
     },
+    openGraph: { url: `${siteUrl}${isEN ? '/prayer-times' : '/horaires-priere'}` },
   }
 }
 

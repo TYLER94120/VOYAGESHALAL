@@ -18,6 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
         'x-default': 'https://www.gohalaltravel.com/mosque-near-me',
       },
     },
+    openGraph: { url: `${siteUrl}${isEN ? '/mosque-near-me' : '/mosquee-proche'}` },
   }
 }
 

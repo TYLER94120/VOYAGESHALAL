@@ -14,6 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
       canonical: `${siteUrl}/qibla`,
       languages: { fr: 'https://www.voyageshalal.fr/qibla', en: 'https://www.gohalaltravel.com/qibla', 'x-default': 'https://www.gohalaltravel.com/qibla' },
     },
+    openGraph: { url: `${siteUrl}/qibla` },
   }
 }
 

@@ -23,13 +23,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = isEN
     ? 'Halal restaurants, mosques, prayer times and practical guides in 354+ destinations worldwide — for Muslim travelers.'
     : 'Restaurants halal signalés, mosquées, hébergements et guides pratiques dans 354+ destinations — pour les musulmans du monde entier.'
-  const keywords = isEN
-    ? ['halal travel', 'halal travel guide', 'halal restaurants', 'halal destinations', 'muslim travel', 'prayer times', 'mosques near me', 'muslim friendly hotels']
-    : ['voyage halal', 'tourisme halal', 'destinations halal', 'restaurant halal', 'hébergement halal', 'guide voyage musulman', 'horaires de prière']
   return {
     title: { absolute: title },
     description,
-    keywords,
     alternates: {
       canonical: siteUrl,
       languages: { fr: FR_URL, en: EN_URL, 'x-default': EN_URL },
