@@ -1,6 +1,7 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { cuisineCategory, CATEGORY_ORDER } from '@/lib/cuisineCategory'
+import { enLabel } from '@/lib/poiI18n'
 import { useState, useRef } from 'react'
 import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
@@ -172,7 +173,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 const active = activeFilter === cat
                 return (
                   <button key={cat} onClick={() => setActiveFilter(cat)} style={{ padding: '8px 16px', borderRadius: '30px', border: '1.5px solid rgba(27,67,50,0.25)', background: active ? 'var(--foret)' : '#fff', color: active ? '#fff' : 'var(--foret)', fontSize: '13.5px', fontWeight: 600, cursor: 'pointer' }}>
-                    {cat === 'Tous' ? '🍽 Tous' : `${CATEGORY_EMOJI[cat] ?? '🍽'} ${cat}`}
+                    {cat === 'Tous' ? (en ? '🍽 All' : '🍽 Tous') : `${CATEGORY_EMOJI[cat] ?? '🍽'} ${enLabel(cat, en)}`}
                   </button>
                 )
               })}
@@ -187,7 +188,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '20px', color: 'var(--texte)', lineHeight: 1.15 }}>{r.nom}</p>
-                    <p style={{ fontSize: '13px', color: 'var(--texte-2)', marginBottom: '9px' }}>{cuisineCategory(r.type)}</p>
+                    <p style={{ fontSize: '13px', color: 'var(--texte-2)', marginBottom: '9px' }}>{enLabel(cuisineCategory(r.type), en)}</p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '9px', marginBottom: '14px', flexWrap: 'wrap' }}>
                       {r.halalConfidence === 'likely'
                         ? <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>≈ Halal courant · à vérifier</span>
