@@ -164,7 +164,7 @@ export default function LiveSpots({ kind, lat, lng, ville }: { kind: Kind; lat: 
         ))}
       </div>
       <p style={{ fontSize: 11.5, color: 'var(--texte-2)', textAlign: 'center', marginTop: 14, lineHeight: 1.5 }}>
-        Données OpenStreetMap (contributeurs). {kind === 'restaurants' && '« ✓ Halal » = certifié dans OSM ; « ≈ à vérifier » = cuisine généralement halal, confirmez sur place. '}Liste mise à jour en direct.
+        Données OpenStreetMap (contributeurs). {kind === 'restaurants' && '« ✓ Halal » = signalé halal dans OSM ; « ≈ à vérifier » = cuisine généralement halal, confirmez sur place. '}Liste mise à jour en direct.
       </p>
     </div>
   )

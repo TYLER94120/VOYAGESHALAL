@@ -119,7 +119,7 @@ export function buildBreadcrumbSchema(
 }
 
 interface SchemaOpts { en?: boolean; siteUrl?: string; name?: string }
-const EN_DESCRIPTION = 'Certified halal restaurants, mosques, prayer times and practical guides in 354+ destinations worldwide — for Muslim travelers.'
+const EN_DESCRIPTION = 'Halal restaurants, mosques, prayer times and practical guides in 354+ destinations worldwide — for Muslim travelers.'
 
 // Profils sociaux officiels → `sameAs` (aide Google à relier la marque à ses
 // réseaux). VIDE tant que les comptes n'existent pas : ne jamais déclarer un

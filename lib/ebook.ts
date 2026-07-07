@@ -185,7 +185,7 @@ export async function generateEbook(ville: any, brand = 'VoyagesHalal.fr', siteU
   for (const m of mosq.slice(0, 6)) fiche(m.nom, clean(m.adresse), m.description)
 
   // ============ 06/07/08 ============
-  if (restos.length) { section('06', 'Ou manger - halal certifie'); for (const r of restos.slice(0, 18)) fiche(clean(r.nom), [clean(r.type), clean(r.priceRange ?? r.fourchette_prix), clean(r.adresse)].filter(Boolean).join('  .  '), r.specialite, r.score ?? r.note) }
+  if (restos.length) { section('06', 'Ou manger halal'); for (const r of restos.slice(0, 18)) fiche(clean(r.nom), [clean(r.type), clean(r.priceRange ?? r.fourchette_prix), clean(r.adresse)].filter(Boolean).join('  .  '), r.specialite, r.score ?? r.note) }
   if (hotels.length) { section('07', 'Ou dormir - halal-friendly'); for (const h of hotels.slice(0, 12)) fiche(clean(h.nom), [clean(h.categorie), clean(h.priceRange), (h.sansAlcool ? 'Sans alcool' : '')].filter(Boolean).join('  .  '), h.description, h.score ?? h.note) }
   if (activites.length) { section('08', 'A voir & a faire'); for (const a of activites) fiche(`${clean(a.nom)}   ${clean(a.prix) ? '[' + clean(a.prix) + ']' : ''}`, clean(a.categorie), a.description) }
 

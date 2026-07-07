@@ -10,8 +10,8 @@ export async function generateMetadata(): Promise<Metadata> {
       ? "Prayer times today — Every city in the world"
       : "Heures de prière aujourd'hui — Toutes les villes du monde",
     description: isEN
-      ? 'Real-time prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha) for the main halal destinations worldwide. Certified Aladhan data, updated daily.'
-      : "Horaires de prière en temps réel (Fajr, Dhuhr, Asr, Maghrib, Isha) pour les principales destinations halal du monde. Données certifiées Aladhan, mises à jour quotidiennement.",
+      ? 'Real-time prayer times (Fajr, Dhuhr, Asr, Maghrib, Isha) for the main halal destinations worldwide. Aladhan data, updated daily.'
+      : "Horaires de prière en temps réel (Fajr, Dhuhr, Asr, Maghrib, Isha) pour les principales destinations halal du monde. Données Aladhan, mises à jour quotidiennement.",
     alternates: {
       canonical: `${siteUrl}${isEN ? '/prayer-times' : '/horaires-priere'}`,
       languages: {

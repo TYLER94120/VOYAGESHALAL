@@ -80,8 +80,9 @@ export function HalalTrustScore({ score, compact = false }: ScoreProps) {
         <div className="htc-item">
           <span>{score.certifie ? '✅' : '❌'}</span>
           <span>
-            Certification officielle
+            Halal signalé par un organisme tiers
             {score.organisationCertification ? ` (${score.organisationCertification})` : ''}
+            {' · à vérifier sur place'}
           </span>
         </div>
         <div className="htc-item">

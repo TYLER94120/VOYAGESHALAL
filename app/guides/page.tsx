@@ -9,7 +9,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return buildMetadata({
     title: isEN ? 'Halal Travel Guides — Practical Tips for Muslim Travelers' : 'Guides Voyage Halal — Conseils Pratiques pour Voyageurs Musulmans',
     description: isEN
-      ? 'All our practical guides for halal travel: beginners, destinations, Ramadan, accommodation. Verified tips to travel with peace of mind.'
+      ? 'All our practical guides for halal travel: beginners, destinations, Ramadan, accommodation. Practical tips to travel with peace of mind.'
       : 'Tous nos guides pratiques pour voyager halal : débutants, destinations, Ramadan, hébergement. Des conseils vérifiés pour voyager sereinement.',
     path: '/guides',
   })

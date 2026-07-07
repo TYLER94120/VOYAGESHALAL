@@ -37,8 +37,8 @@ export function HomeScoreRanking({ en = false }: { en?: boolean }) {
         <h2 className="score-ranking-title">{en ? 'Top-rated destinations' : 'Les destinations les mieux notées'}</h2>
         <p className="score-ranking-sub">
           {en
-            ? 'Our multi-dimensional halal score — unique worldwide — rates every destination on traceability, certification and the Muslim experience.'
-            : "Notre score halal multi-dimensionnel — unique au monde — évalue chaque destination sur la traçabilité, la certification et l'expérience musulmane."}
+            ? 'Our multi-dimensional halal score — unique worldwide — rates every destination on traceability, halal availability and the Muslim experience.'
+            : "Notre score halal multi-dimensionnel — unique au monde — évalue chaque destination sur la traçabilité, la présence du halal et l'expérience musulmane."}
         </p>
         <div className="score-ranking-grid">
           {TOP_DESTINATIONS.map((d, i) => (

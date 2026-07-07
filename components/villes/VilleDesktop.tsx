@@ -70,7 +70,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const srcTag = (item: any): string => {
     if (item?.source === 'osm') {
       const dt = fmtDate(ville.osmEnrichedAt)
-      return en ? `OpenStreetMap${dt ? ` · verified ${dt}` : ''}` : `OpenStreetMap${dt ? ` · vérifié ${dt}` : ''}`
+      return en ? `OpenStreetMap${dt ? ` · updated ${dt}` : ''}` : `OpenStreetMap${dt ? ` · mis à jour ${dt}` : ''}`
     }
     return en ? 'VoyagesHalal editorial pick' : 'Sélection éditoriale VoyagesHalal'
   }

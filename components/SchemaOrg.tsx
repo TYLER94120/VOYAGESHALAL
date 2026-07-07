@@ -76,8 +76,10 @@ export function DestinationFaqSchema({ ville, en = false }: { ville: Ville; en?:
       },
       {
         '@type': 'PropertyValue',
-        name: 'Certification Halal',
-        value: r.halalScore?.certifie ? (en ? 'Certified' : 'Certifié') : (en ? 'Not certified' : 'Non certifié'),
+        name: en ? 'Halal status' : 'Statut halal',
+        value: r.halalScore?.certifie
+          ? (en ? 'Reported halal — verify on site' : 'Halal signalé · à vérifier')
+          : (en ? 'To verify on site' : 'À vérifier sur place'),
       },
     ],
   }))

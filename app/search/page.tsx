@@ -29,7 +29,7 @@ export default async function SearchPage({ searchParams }: { searchParams: Promi
       <section style={{ backgroundColor: '#1a3a2a' }} className="px-8 sm:px-16 pt-16 pb-20">
         <p style={{ color: '#c9a870' }} className="text-xs font-semibold uppercase tracking-[0.2em] mb-5">Recherche</p>
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5 max-w-2xl" style={{ fontFamily: 'var(--font-playfair), Georgia, serif' }}>Trouver halal en voyage</h1>
-        <p className="text-white/50 text-base max-w-lg leading-relaxed">Restaurants certifiés, mosquées et lieux adaptés aux voyageurs musulmans dans le monde entier.</p>
+        <p className="text-white/50 text-base max-w-lg leading-relaxed">Restaurants halal, mosquées et lieux adaptés aux voyageurs musulmans dans le monde entier.</p>
       </section>
 
       <div className="bg-white border-b border-gray-100 px-4 sm:px-16 py-8">

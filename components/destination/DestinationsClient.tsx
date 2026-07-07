@@ -208,7 +208,7 @@ export default function DestinationsClient({ villes }: Props) {
 
           <div className="relative overflow-hidden mt-5 rounded-2xl p-5" style={{ background: '#0b1a0f' }}>
             <p className="font-bold mb-1.5" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#c9a84c', fontSize: '16px' }}>Halal Score™</p>
-            <p style={{ color: '#a9b6a8', fontSize: '12.5px', lineHeight: 1.6 }}>{en ? 'Every city is rated: certified restaurants, mosques, Muslim-family friendliness and alcohol availability.' : 'Chaque ville est évaluée : restaurants certifiés, mosquées, accueil des familles musulmanes et absence d\u2019alcool.'}</p>
+            <p style={{ color: '#a9b6a8', fontSize: '12.5px', lineHeight: 1.6 }}>{en ? 'Every city is rated: halal restaurants, mosques, Muslim-family friendliness and alcohol availability.' : 'Chaque ville est évaluée : restaurants halal, mosquées, accueil des familles musulmanes et absence d\u2019alcool.'}</p>
           </div>
         </aside>
 
@@ -242,7 +242,7 @@ export default function DestinationsClient({ villes }: Props) {
                         </>
                       ) : (
                         <>
-                          <span className="ville-card-tag">{en ? '✓ Halal verified' : '✓ Halal vérifié'}</span>
+                          <span className="ville-card-tag">{en ? '✓ Halal reported' : '✓ Halal signalé'}</span>
                           <span className="ville-card-tag-2">{en ? 'Alcohol-free' : 'Sans alcool'}</span>
                         </>
                       )}

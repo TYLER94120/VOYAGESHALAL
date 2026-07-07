@@ -29,8 +29,8 @@ export async function generateMetadata(): Promise<Metadata> {
     ? `Halal Destinations Worldwide — ${VILLE_COUNT}+ Cities | ${brand}`
     : `Destinations Voyage Halal — Meilleures Villes du Monde | ${brand}`
   const description = isEN
-    ? `${VILLE_COUNT}+ verified halal destinations: Istanbul, Marrakech, Dubai, Kuala Lumpur, Mecca and more. Certified halal restaurants, mosques and guides for every city.`
-    : `${VILLE_COUNT}+ destinations halal vérifiées : Istanbul, Marrakech, Dubaï, Kuala Lumpur, La Mecque et bien plus. Restaurants halal certifiés, mosquées et guides pour chaque ville.`
+    ? `${VILLE_COUNT}+ hand-picked halal destinations: Istanbul, Marrakech, Dubai, Kuala Lumpur, Mecca and more. Halal restaurants, mosques and guides for every city.`
+    : `${VILLE_COUNT}+ destinations halal sélectionnées : Istanbul, Marrakech, Dubaï, Kuala Lumpur, La Mecque et bien plus. Restaurants halal signalés, mosquées et guides pour chaque ville.`
   return {
     title: { absolute: title },
     description,
@@ -111,7 +111,7 @@ export default async function DestinationsPage() {
             className="text-4xl sm:text-5xl font-bold text-white leading-[1.05] mb-4"
             style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
           >
-            {villes.length} {en ? <>halal destinations <span className="gold-em">verified</span></> : <>destinations halal <span className="gold-em">vérifiées</span></>}
+            {villes.length} {en ? <>halal destinations <span className="gold-em">hand-picked</span></> : <>destinations halal <span className="gold-em">sélectionnées</span></>}
           </h1>
           <p className="text-white/60 text-base max-w-xl mx-auto leading-relaxed">
             {en

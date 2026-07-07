@@ -155,7 +155,7 @@ export const destinations: Destination[] = [
     city: 'Dubai',
     country: 'Émirats Arabes Unis',
     slug: 'dubai',
-    shortDescription: 'Luxe, modernité et halal certifié dans la ville du futur',
+    shortDescription: 'Luxe et modernité, halal par défaut dans la ville du futur',
     description:
       "Dubaï est la destination halal la plus sophistiquée de la planète. Dans cet État islamique, la certification halal est obligatoire pour tous les établissements de restauration — une garantie unique qui permet de manger en toute confiance dans n'importe quel restaurant. La ville combine des gratte-ciels futuristes, des plages de sable blanc, le shopping de luxe et des musées de classe mondiale dans un cadre entièrement conforme aux valeurs islamiques. La Mosquée Jumeirah, ouverte aux non-musulmans, est l'une des plus belles de la région. Pour les familles aisées et les couples cherchant l'excellence, Dubaï est une évidence.",
     coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
@@ -229,7 +229,7 @@ export const destinations: Destination[] = [
       {
         name: 'Restaurants de Qasr Al Diyafah',
         address: 'Abraj Al Bait, près de Masjid an-Nabawi',
-        description: 'Complexe de restaurants proposant cuisine saoudienne et internationale halal certifiée, à quelques pas de la Mosquée du Prophète. Idéal pour les pèlerins souhaitant un repas entre les prières.',
+        description: 'Complexe de restaurants proposant cuisine saoudienne et internationale halal, à quelques pas de la Mosquée du Prophète. Idéal pour les pèlerins souhaitant un repas entre les prières.',
         rating: 4.3,
       },
       {
@@ -281,7 +281,7 @@ export const destinations: Destination[] = [
     city: 'Kuala Lumpur',
     country: 'Malaisie',
     slug: 'kuala-lumpur',
-    shortDescription: 'La capitale mondiale du tourisme halal certifié',
+    shortDescription: 'La capitale mondiale du tourisme halal',
     description:
       "Kuala Lumpur est la capitale mondiale du tourisme halal. La Malaisie est régulièrement classée première destination halal mondiale par le Global Muslim Travel Index — et KL en est le cœur battant. Le système de certification halal JAKIM (le plus rigoureux du monde) garantit que chaque restaurant certifié respecte scrupuleusement les préceptes islamiques. Ajoutez à cela une gastronomie exceptionnelle (fusion malaise-chinoise-indienne), les tours Petronas iconiques, une nature luxuriante et des prix très accessibles — KL s'impose comme une destination halal de référence en Asie.",
     coverImage: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=1200&q=80',
@@ -290,7 +290,7 @@ export const destinations: Destination[] = [
     restaurantHalalCount: 20000,
     population: '1.8 million (Grand KL : 8 millions)',
     bestTime: 'Toute l\'année (éviter mousson mai–octobre)',
-    tags: ['Halal certifié', 'Gastronomie', 'Architecture', 'Shopping'],
+    tags: ['Halal partout', 'Gastronomie', 'Architecture', 'Shopping'],
     restaurants: [
       {
         name: 'Nasi Kandar Pelita',
@@ -322,7 +322,7 @@ export const destinations: Destination[] = [
     activities: [
       {
         name: 'Tours Petronas',
-        description: 'Les tours jumelles les plus hautes du monde de 1998 à 2004 (452 mètres). La passerelle Sky Bridge au 41e étage offre une vue saisissante. Le Suria KLCC en bas est un centre commercial de luxe avec des restaurants halal certifiés JAKIM.',
+        description: 'Les tours jumelles les plus hautes du monde de 1998 à 2004 (452 mètres). La passerelle Sky Bridge au 41e étage offre une vue saisissante. Le Suria KLCC en bas est un centre commercial de luxe avec des restaurants halal signalés JAKIM.',
         duration: '2–3 heures',
       },
       {
@@ -349,7 +349,7 @@ export const destinations: Destination[] = [
     slug: 'bali',
     shortDescription: 'L\'île des dieux, une oasis halal inattendue',
     description:
-      "Bali surprend agréablement les voyageurs musulmans. Cette île principalement hindoue d'Indonésie — le plus grand pays musulman du monde — dispose d'une infrastructure halal solide, notamment dans les zones touristiques de Seminyak, Kuta et Ubud. Les restaurants halal certifiés sont nombreux (kebab, nasi goreng halal, poulpe grillé halal) et facilement identifiables. L'île offre en plus des paysages d'une beauté incomparable : rizières en terrasse, temples sur l'océan, volcans et plages paradisiaques. Bali est la preuve qu'une destination non-musulmane peut être parfaitement accessible.",
+      "Bali surprend agréablement les voyageurs musulmans. Cette île principalement hindoue d'Indonésie — le plus grand pays musulman du monde — dispose d'une infrastructure halal solide, notamment dans les zones touristiques de Seminyak, Kuta et Ubud. Les restaurants halal signalés sont nombreux (kebab, nasi goreng halal, poulpe grillé halal) et facilement identifiables. L'île offre en plus des paysages d'une beauté incomparable : rizières en terrasse, temples sur l'océan, volcans et plages paradisiaques. Bali est la preuve qu'une destination non-musulmane peut être parfaitement accessible.",
     coverImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80',
     halalScore: 3,
     mosqueeCount: 200,
@@ -416,7 +416,7 @@ export const guides: Guide[] = [
 <h2>Nourriture halal en voyage</h2>
 <p>Dans les pays à majorité musulmane (Turquie, Maroc, EAU, Malaisie, Indonésie...), la quasi-totalité de la nourriture est halal. La certification halal est la norme et non l'exception. Dans les pays non-musulmans, cherchez les labels HMC (UK), JAKIM (Malaisie) ou les certificats nationaux équivalents.</p>
 <ul>
-<li>Téléchargez l'application <strong>HalalTrip</strong> ou <strong>Zabihah</strong> pour trouver des restaurants halal certifiés dans le monde entier.</li>
+<li>Téléchargez l'application <strong>HalalTrip</strong> ou <strong>Zabihah</strong> pour trouver des restaurants halal signalés dans le monde entier.</li>
 <li>Dans les supermarchés, cherchez le label halal ou optez pour les produits végétariens, le poisson et les fruits de mer.</li>
 <li>Les fast-foods halal (Nando's, certains McDonald's en pays musulmans) peuvent dépanner.</li>
 </ul>
@@ -443,7 +443,7 @@ export const guides: Guide[] = [
 <li><strong>Turquie</strong> — Facile d'accès, halal à 99%, culture islamique riche, prix accessibles</li>
 <li><strong>Maroc</strong> — Proche de la France, halal naturel, gastronomie exceptionnelle</li>
 <li><strong>Malaisie</strong> — Halal certifié JAKIM = garantie absolue, modernité et nature</li>
-<li><strong>Émirats Arabes Unis</strong> — Luxe halal certifié, English spoken, sécurisé</li>
+<li><strong>Émirats Arabes Unis</strong> — Luxe halal, English spoken, sécurisé</li>
 </ol>`,
   },
   {
@@ -670,7 +670,7 @@ export const guides: Guide[] = [
 
 <h2>Les 7 critères d'un bon hôtel halal</h2>
 <ol>
-<li><strong>Certification halal de la restauration</strong> : le restaurant de l'hôtel doit proposer une carte halal certifiée, notamment pour le petit-déjeuner.</li>
+<li><strong>Certification halal de la restauration</strong> : le restaurant de l'hôtel doit proposer une carte halal, notamment pour le petit-déjeuner.</li>
 <li><strong>Absence d'alcool dans les espaces communs</strong> : pas de bar dans le lobby, pas d'alcool servi au restaurant.</li>
 <li><strong>Tapis de prière et indication Qibla en chambre</strong> : les meilleurs hôtels Muslim-friendly les fournissent systématiquement.</li>
 <li><strong>Piscine et salle de sport séparées</strong> : certains hôtels proposent des créneaux séparés pour hommes et femmes.</li>
@@ -754,7 +754,7 @@ export const guides: Guide[] = [
   {
     slug: 'dubai-guide-halal-2026',
     title: 'Dubai halal : guide complet 2026 — tout savoir pour votre voyage',
-    description: 'Guide complet Dubai 2026 pour les voyageurs musulmans : restaurants halal certifiés, mosquées, activités famille, budget et meilleures adresses.',
+    description: 'Guide complet Dubai 2026 pour les voyageurs musulmans : restaurants halal signalés, mosquées, activités famille, budget et meilleures adresses.',
     coverImage: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80',
     category: 'Destinations',
     readTime: '9 min',
@@ -892,7 +892,7 @@ export const guides: Guide[] = [
     category: 'Destinations',
     readTime: '8 min',
     publishedAt: '2026-06-15',
-    tags: ['Malaisie', 'JAKIM', 'Halal certifié', 'Asie', 'Gastronomie'],
+    tags: ['Malaisie', 'JAKIM', 'Halal partout', 'Asie', 'Gastronomie'],
     content: `<h2>La Malaisie : 10 fois élue meilleure destination halal mondiale</h2>
 <p>Le Global Muslim Travel Index (GMTI) couronne la Malaisie meilleure destination halal mondiale pour la 10e année consécutive. Ce n'est pas un hasard : la Malaisie a construit un écosystème halal complet, rigoureux et accessible qui n'a pas d'équivalent sur la planète.</p>
 
@@ -957,7 +957,7 @@ export const guides: Guide[] = [
 
 <h2>3. Nourriture halal</h2>
 <ul>
-<li>Identifier les restaurants halal certifiés à destination avant le départ</li>
+<li>Identifier les restaurants halal signalés à destination avant le départ</li>
 <li>Emporter des snacks halal pour les longs trajets (barres de céréales, fruits secs, dattes)</li>
 <li>Applications pour scanner les codes-barres et vérifier la composition (HalalCheck)</li>
 <li>En pays non-musulman : contacter l'hôtel à l'avance pour le petit-déjeuner halal</li>
@@ -991,7 +991,7 @@ export const guides: Guide[] = [
 <ul>
 <li>Vérifier le calendrier islamique (éviter Hajj si non-pèlerin pour La Mecque)</li>
 <li>Ramadan : restaurants fermés en journée dans les pays musulmans — adapter les horaires</li>
-<li>Réserver l'hébergement halal certifié en avance (HalalBooking.com)</li>
+<li>Réserver l'hébergement halal-friendly en avance (HalalBooking.com)</li>
 <li>Informer la famille du plan de voyage</li>
 </ul>`,
   },
@@ -1207,7 +1207,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'meilleurs-hotels-halal-istanbul',
     title: 'Les 10 meilleurs hôtels halal-friendly à Istanbul en 2026',
     description:
-      'Notre sélection des meilleurs hôtels à Istanbul pour les voyageurs musulmans : sans alcool, cuisine halal certifiée, emplacement idéal près des mosquées et budget pour tous.',
+      'Notre sélection des meilleurs hôtels à Istanbul pour les voyageurs musulmans : sans alcool, cuisine halal, emplacement idéal près des mosquées et budget pour tous.',
     coverImage: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80',
     category: 'Hébergement',
     readTime: '5 min',
@@ -1219,13 +1219,13 @@ export const blogPosts: BlogPost[] = [
     slug: 'restaurants-halal-paris',
     title: 'Les meilleurs restaurants halal à Paris en 2026 : guide par arrondissement',
     description:
-      'Guide complet et mis à jour des meilleurs restaurants halal certifiés à Paris : du kebab artisanal au gastronomique, des Grands Boulevards à la banlieue, tous les quartiers couverts.',
+      'Guide complet et mis à jour des meilleurs restaurants halal signalés à Paris : du kebab artisanal au gastronomique, des Grands Boulevards à la banlieue, tous les quartiers couverts.',
     coverImage: 'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1200&q=80',
     category: 'Gastronomie',
     readTime: '6 min',
     publishedAt: '2026-01-25',
     tags: ['Paris', 'Restaurants', 'France'],
-    content: `Paris est l'une des villes les plus riches au monde en matière de restauration halal certifiée. Avec plus de 1 500 restaurants halal dans la capitale et sa proche banlieue, les voyageurs musulmans n'ont que l'embarras du choix. Des grandes tablées familiales de la rue de la Roquette (11e) aux adresses branchées de Pigalle (9e), en passant par les incontournables de Barbès (18e) et les restaurants gastronomiques du Triangle d'Or (8e), Paris offre un panorama culinaire halal d'une diversité inégalée : cuisine française halal, libanaise, turque, pakistanaise, sénégalaise, japonaise halal et bien plus encore. Notre guide recense les meilleures adresses par arrondissement, avec certification et spécialités.`,
+    content: `Paris est l'une des villes les plus riches au monde en matière de restauration halal certifiée. Avec plus de 1 500 restaurants halal dans la capitale et sa proche banlieue, les voyageurs musulmans n'ont que l'embarras du choix. Des grandes tablées familiales de la rue de la Roquette (11e) aux adresses branchées de Pigalle (9e), en passant par les incontournables de Barbès (18e) et les restaurants gastronomiques du Triangle d'Or (8e), Paris offre un panorama culinaire halal d'une diversité inégalée : cuisine française halal, libanaise, turque, pakistanaise, sénégalaise, japonaise halal et bien plus encore. Notre guide recense les meilleures adresses par arrondissement, avec statut halal signalé et spécialités.`,
   },
   {
     slug: "voyage-halal-maroc-2026-guide-complet",

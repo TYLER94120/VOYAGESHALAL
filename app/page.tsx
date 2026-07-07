@@ -21,8 +21,8 @@ export async function generateMetadata(): Promise<Metadata> {
     ? 'GoHalalTravel — #1 Halal Travel Guide | Restaurants, Mosques & Destinations'
     : 'VoyagesHalal.fr — Guide Voyage Halal #1 | Restaurants, Mosquées & Destinations'
   const description = isEN
-    ? 'Certified halal restaurants, mosques, prayer times and practical guides in 354+ destinations worldwide — for Muslim travelers.'
-    : 'Restaurants halal certifiés, mosquées, hébergements et guides pratiques dans 354+ destinations — pour les musulmans du monde entier.'
+    ? 'Halal restaurants, mosques, prayer times and practical guides in 354+ destinations worldwide — for Muslim travelers.'
+    : 'Restaurants halal signalés, mosquées, hébergements et guides pratiques dans 354+ destinations — pour les musulmans du monde entier.'
   const keywords = isEN
     ? ['halal travel', 'halal travel guide', 'halal restaurants', 'halal destinations', 'muslim travel', 'prayer times', 'mosques near me', 'muslim friendly hotels']
     : ['voyage halal', 'tourisme halal', 'destinations halal', 'restaurant halal', 'hébergement halal', 'guide voyage musulman', 'horaires de prière']
@@ -48,7 +48,7 @@ const DESTINATIONS = [
 ]
 
 const FEATURES = [
-  { icon: '🍽', title: 'Restaurants halal', titleEn: 'Halal restaurants', desc: 'Adresses certifiées halal avec avis vérifiés et notes de la communauté.', descEn: 'Certified halal spots with verified reviews and community ratings.' },
+  { icon: '🍽', title: 'Restaurants halal', titleEn: 'Halal restaurants', desc: 'Adresses halal signalées, confirmées par la communauté.', descEn: 'Halal spots reported and confirmed by the community.' },
   { icon: '🕌', title: 'Mosquées proches', titleEn: 'Nearby mosques', desc: 'Localisez la mosquée la plus proche, avec horaires de prière.', descEn: 'Find the nearest mosque, with prayer times.' },
   { icon: '🧭', title: 'Guides pratiques', titleEn: 'Practical guides', desc: 'Conseils culturels, visa, transports — tout pour voyager l\'esprit libre.', descEn: 'Cultural tips, visas, transport — everything for worry-free travel.' },
 ]
