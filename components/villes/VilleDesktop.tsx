@@ -1,5 +1,6 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { cuisineCategory, CATEGORY_ORDER } from '@/lib/cuisineCategory'
 import { useState, useRef } from 'react'
 import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
@@ -79,8 +80,13 @@ export default function VilleDesktop({ ville }: { ville: any }) {
     <p style={{ fontSize: 11, color: 'var(--texte-2)', margin: '7px 0 0', opacity: 0.7 }}>ℹ️ {srcTag(item)}</p>
   )
 
-  const categories = ['Tous', ...Array.from(new Set(restaurants.map((r: any) => r.type).filter(Boolean)))] as string[]
-  const restosFiltres = activeFilter === 'Tous' ? restaurants : restaurants.filter((r: any) => r.type === activeFilter)
+  // Types OSM bruts (« seafood, italian pizza… ») normalisés vers nos catégories
+  // éditoriales → pastilles de filtre propres et stables.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const present = new Set(restaurants.map((r: any) => cuisineCategory(r.type)))
+  const categories = ['Tous', ...CATEGORY_ORDER.filter((c) => present.has(c))]
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const restosFiltres = activeFilter === 'Tous' ? restaurants : restaurants.filter((r: any) => cuisineCategory(r.type) === activeFilter)
   const tabCounts: Record<string, number> = { restaurants: restaurants.length, mosquees: mosquees.length, hotels: hotels.length, activites: activites.length, pratique: 0 }
 
   const pratiqueItems = [
@@ -156,7 +162,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             {restaurants.length > 0 && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '16px' }}>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '26px', fontWeight: 900, color: 'var(--nuit)' }}>Restaurants halal</h2>
-              <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} adresses{ville.osmEnriched ? '' : ' vérifiées'}</span>
+              <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} adresses</span>
             </div>
             )}
             {/* filtres catégories en pills */}
@@ -177,11 +183,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 <div key={i} className="card-halal" style={{ ...card, display: 'flex', gap: '16px' }}>
                   <div style={{ width: 62, height: 62, borderRadius: '15px', background: 'var(--nuit)', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '28px', position: 'relative', overflow: 'hidden' }}>
                     <IslamicPattern opacity={0.12} />
-                    <span style={{ position: 'relative', zIndex: 1 }}>{CATEGORY_EMOJI[r.type] ?? '🍽'}</span>
+                    <span style={{ position: 'relative', zIndex: 1 }}>{CATEGORY_EMOJI[cuisineCategory(r.type)] ?? '🍽'}</span>
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '20px', color: 'var(--texte)', lineHeight: 1.15 }}>{r.nom}</p>
-                    <p style={{ fontSize: '13px', color: 'var(--texte-2)', marginBottom: '9px' }}>{r.type}</p>
+                    <p style={{ fontSize: '13px', color: 'var(--texte-2)', marginBottom: '9px' }}>{cuisineCategory(r.type)}</p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '9px', marginBottom: '14px', flexWrap: 'wrap' }}>
                       {r.halalConfidence === 'likely'
                         ? <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>≈ Halal courant · à vérifier</span>
@@ -205,7 +211,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 <div style={{ ...card, textAlign: 'center', padding: '40px 22px' }}>
                   <div style={{ fontSize: 34, marginBottom: 10 }}>🍽️</div>
                   <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, color: 'var(--nuit)', fontSize: 18, margin: '0 0 6px' }}>Restaurants en cours d’ajout</p>
-                  <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.6, margin: 0 }}>Nous ajoutons les adresses halal vérifiées de {ville.nom}. 🤲</p>
+                  <p style={{ color: 'var(--texte-2)', fontSize: 14, lineHeight: 1.6, margin: 0 }}>Nous ajoutons les adresses halal signalées de {ville.nom}. 🤲</p>
                 </div>
               )
             )}
