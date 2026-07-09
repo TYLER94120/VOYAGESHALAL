@@ -1805,6 +1805,107 @@ export const blogPosts: BlogPost[] = [
 <h2>Conseils pratiques</h2>
 <p>Réservez le ftour à l'avance dans les bonnes adresses (souvent complètes), planifiez les visites le matin, et gardez vos <a href="/horaires-priere">horaires de prière</a> à portée de main. Lisez aussi notre <a href="/guides/ramadan-voyage-guide">guide complet Voyager pendant le Ramadan</a>.</p>`,
   },
+  {
+    slug: 'manger-halal-bangkok',
+    title: 'Manger halal à Bangkok : les quartiers et adresses à connaître',
+    description: 'Où manger halal à Bangkok : le quartier de la mosquée Haroon, les cantines halal de Nana et Silom, street food thaïe halal et nos conseils pratiques.',
+    coverImage: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&q=80',
+    category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-17',
+    tags: ['Bangkok', 'Thaïlande', 'Manger halal'],
+    content: `<p><strong>Manger halal à Bangkok</strong> est bien plus facile qu\'on ne l\'imagine : la Thaïlande compte une importante minorité musulmane et la capitale regorge de cantines halal authentiques.</p>
+<h2>Les quartiers halal de Bangkok</h2>
+<p><strong>Nana / Sukhumvit Soi 3</strong> (le « Soi Arab ») : dizaines de restaurants halal moyen-orientaux, pakistanais et thaïs, ouverts tard. <strong>Autour de la mosquée Haroon</strong> (Bang Rak, près de Charoenkrung) : cuisine thaïe-musulmane familiale — le vrai goût local en version halal. <strong>Silom et Pratunam</strong> : biryanis, curry massaman halal (plat d\'origine musulmane !) et échoppes indiennes.</p>
+<h2>La street food halal</h2>
+<p>Cherchez le logo halal thaï (certifié par le CICOT, l\'organisme officiel) sur les stands : roti mataba, satay de poulet, khao mok gai (biryani thaï). Le massaman curry est né dans la communauté musulmane thaïe — goûtez-le dans son fief.</p>
+<h2>Conseils pratiques</h2>
+<p>Évitez le porc omniprésent en demandant « mai sai muu » (sans porc) et privilégiez les stands affichant le label. Les mosquées (plus de 160 à Bangkok !) sont d\'excellents repères : les alentours regorgent toujours de halal. Toutes nos adresses géolocalisées sont sur la fiche <a href="/destinations/bangkok">Bangkok</a>, avec <a href="/horaires-priere">horaires de prière</a> et <a href="/mosquee-proche">mosquée la plus proche</a>.</p>`,
+  },
+  {
+    slug: 'manger-halal-bali',
+    title: 'Manger halal à Bali : le guide du voyageur musulman',
+    description: 'Bali est hindouiste mais manger halal y est simple : warungs musulmans, padang halal, quartiers de Denpasar et Kuta, et nos réflexes pour éviter les pièges.',
+    coverImage: 'https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=1200&q=80',
+    category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-21',
+    tags: ['Bali', 'Indonésie', 'Manger halal'],
+    content: `<p>Bali est l\'île hindouiste d\'un pays musulman : résultat, <strong>manger halal à Bali</strong> demande un peu d\'attention — mais les options sont partout.</p>
+<h2>Le réflexe n°1 : les warungs padang</h2>
+<p>Les <strong>rumah makan Padang</strong> (cuisine de Sumatra, tenue par des musulmans) sont halal par nature et présents dans toute l\'île : rendang, poulet balado, légumes au curry, prix mini. C\'est le filet de sécurité du voyageur musulman en Indonésie.</p>
+<h2>Où c\'est facile</h2>
+<p><strong>Denpasar</strong> et <strong>Kuta</strong> comptent de nombreux restaurants halal (communauté javanaise et madouraise) et plusieurs mosquées. Les zones touristiques de Seminyak et Ubud ont des adresses halal signalées — vérifiez le logo halal indonésien (MUI) ou demandez.</p>
+<h2>Les pièges à éviter</h2>
+<p>Le babi guling (cochon de lait) est LA spécialité balinaise — omniprésente ; l\'arak et le brem (alcools locaux) se glissent dans certaines sauces. En cas de doute : « halal ? » suffit, ou repli sur un warung musulman.</p>
+<h2>Prier à Bali</h2>
+<p>Mosquées à Denpasar, Kuta et près des ports ; les hôtels tenus par des musulmans indiquent la Qibla. Fiche complète : <a href="/destinations/bali">Bali</a> · nos outils <a href="/qibla">Qibla</a> et <a href="/horaires-priere">horaires</a>.</p>`,
+  },
+  {
+    slug: 'restaurant-halal-barcelone',
+    title: 'Restaurant halal à Barcelone : où manger halal dans la capitale catalane',
+    description: 'Les meilleurs quartiers pour trouver un restaurant halal à Barcelone : le Raval, ses grillades et kebabs, la paella halal, et nos conseils près de la Sagrada Família.',
+    coverImage: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=1200&q=80',
+    category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-25',
+    tags: ['Barcelone', 'Espagne', 'Restaurant halal'],
+    content: `<p>Trouver un <strong>restaurant halal à Barcelone</strong> est simple si l\'on sait où chercher : la ville compte une communauté musulmane importante et des quartiers entiers bien fournis.</p>
+<h2>Le Raval : le cœur halal de Barcelone</h2>
+<p>À deux pas des Ramblas, le Raval concentre l\'essentiel : grillades pakistanaises, kebabs, cuisine marocaine et syrienne, boucheries halal. C\'est LE quartier où manger halal sans réfléchir, midi et soir.</p>
+<h2>La paella halal, ça existe</h2>
+<p>Plusieurs adresses du Raval et du centre proposent <strong>paella au poulet halal ou aux fruits de mer</strong> — la version fruits de mer étant naturellement une option sûre partout (vérifiez l\'absence de chorizo).</p>
+<h2>Près des sites touristiques</h2>
+<p>Sagrada Família, Park Güell : des kebabs et restaurants turcs honnêtes à proximité ; pour un vrai repas, redescendez vers le centre. Les alentours de la mosquée Tariq bin Ziyad (Raval) restent la valeur sûre.</p>
+<h2>Et pour prier</h2>
+<p>Salles de prière dans le Raval et à Clot ; l\'Espagne d\'Al-Andalus se visite aussi depuis Barcelone (AVE vers <a href="/destinations/grenade">Grenade</a> et <a href="/destinations/seville">Séville</a>). Fiche complète : <a href="/destinations/barcelone">Barcelone</a> · notre guide <a href="/guides/europe-halal-friendly">Europe halal friendly</a>.</p>`,
+  },
+  {
+    slug: 'manger-halal-new-york',
+    title: 'Manger halal à New York : du street cart au steakhouse',
+    description: 'Manger halal à New York est un jeu d\'enfant : halal carts légendaires, quartiers de Jackson Heights et Bay Ridge, burgers et steakhouses halal. Le guide complet.',
+    coverImage: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1200&q=80',
+    category: 'Gastronomie', readTime: '5 min', publishedAt: '2026-04-29',
+    tags: ['New York', 'USA', 'Manger halal'],
+    content: `<p>Bonne nouvelle : <strong>manger halal à New York</strong> est l\'une des choses les plus faciles au monde. La ville compte près d\'un million de musulmans et le halal fait partie du paysage.</p>
+<h2>Les halal carts : une institution</h2>
+<p>Les chariots « chicken over rice » sont partout à Manhattan — le plus célèbre draine des files au coin de la 53e et 6e Avenue. Généreux, rapide, 8-12 $ : le déjeuner new-yorkais du voyageur musulman.</p>
+<h2>Les quartiers à connaître</h2>
+<p><strong>Jackson Heights</strong> (Queens) : biryanis et grillades d\'Asie du Sud. <strong>Bay Ridge</strong> (Brooklyn) : le quartier arabe, shawarma et pâtisseries. <strong>Astoria</strong> : Égypte et Levant. Chaque quartier a ses mosquées — et donc son halal dense autour.</p>
+<h2>Burgers, steaks et fine dining</h2>
+<p>New York compte des burger joints 100% halal, des steakhouses halal et même de la gastronomie — la scène « halal fine dining » y est la plus développée d\'Occident. Réservez le week-end.</p>
+<h2>Repères pratiques</h2>
+<p>Le label le plus courant est « halal » affiché en vitrine ; en cas de doute, demandez la source de la viande. Prier : l\'Islamic Center de NYU, les mosquées de chaque borough, et les horaires sur <a href="/horaires-priere">notre outil</a>. Fiche complète : <a href="/destinations/new-york">New York</a>.</p>`,
+  },
+  {
+    slug: 'manger-halal-lisbonne',
+    title: 'Manger halal à Lisbonne : les bonnes adresses du voyageur musulman',
+    description: 'Où manger halal à Lisbonne : le quartier de la mosquée centrale, Martim Moniz et ses cantines, poisson grillé portugais et conseils pratiques.',
+    coverImage: 'https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1200&q=80',
+    category: 'Gastronomie', readTime: '4 min', publishedAt: '2026-05-03',
+    tags: ['Lisbonne', 'Portugal', 'Manger halal'],
+    content: `<p><strong>Manger halal à Lisbonne</strong> est de plus en plus simple : la capitale portugaise compte une communauté musulmane historique (Mozambique, Guinée, Bangladesh) et des quartiers bien fournis.</p>
+<h2>Martim Moniz et la Mouraria</h2>
+<p>Le quartier « des Maures » porte bien son nom : cantines bangladaises et pakistanaises halal, épiceries, kebabs — les meilleurs biryanis de la ville à prix doux, à 10 minutes à pied de la Baixa.</p>
+<h2>Autour de la Mosquée centrale</h2>
+<p>La Mesquita Central de Lisboa (Praça de Espanha) est entourée d\'adresses halal et son restaurant associatif sert une cuisine généreuse les jours d\'affluence.</p>
+<h2>L\'atout portugais : le poisson</h2>
+<p>Sardines grillées, dourada, bacalhau : le poisson-roi portugais est votre allié halal naturel dans n\'importe quel restaurant — vérifiez juste les sauces au vin.</p>
+<h2>Pratique</h2>
+<p>Pasteis de nata : la plupart sont sans alcool ni gélatine, mais demandez pour les versions « licor ». Fiche complète : <a href="/destinations/lisbonne">Lisbonne</a> · <a href="/mosquee-proche">mosquée la plus proche</a> et <a href="/qibla">Qibla</a> toujours dans la poche.</p>`,
+  },
+  {
+    slug: 'halal-food-seoul-guide',
+    lang: 'en',
+    title: 'Halal Food in Seoul: Itaewon, Korean BBQ and Where Muslims Eat',
+    description: 'Finding halal food in Seoul is easier than you think: the Itaewon mosque district, halal Korean BBQ and fried chicken, KMF-labelled spots and practical tips.',
+    coverImage: 'https://images.unsplash.com/photo-1538485399081-7191377e8241?w=1200&q=80',
+    category: 'Food', readTime: '5 min', publishedAt: '2026-05-07',
+    tags: ['Seoul', 'South Korea', 'Halal food'],
+    content: `<p><strong>Halal food in Seoul</strong> has boomed with Muslim tourism: from the mosque district of Itaewon to halal Korean BBQ, here is where Muslims actually eat.</p>
+<h2>Itaewon: the Muslim heart of Seoul</h2>
+<p>The streets around <strong>Seoul Central Mosque</strong> are packed with halal restaurants: Korean, Turkish, Pakistani, Indonesian, Egyptian. The « Muslim street » (Usadan-ro) is the safest and richest starting point — pray at the mosque, then pick any direction.</p>
+<h2>Halal Korean food is real</h2>
+<p>Halal <strong>Korean BBQ</strong>, dakgalbi, bulgogi and the famous Korean fried chicken all exist in halal versions, mostly in Itaewon and around universities. Look for the <strong>KMF label</strong> (Korea Muslim Federation) or the « Muslim friendly » signage promoted by Korean tourism.</p>
+<h2>Watch-outs</h2>
+<p>Regular Korean food leans on pork and rice wine (mirin-like) sauces; kimchi is fine but some stews are not. Convenience stores: seaweed rice rolls with tuna and plain onigiri are safe picks.</p>
+<h2>Practical</h2>
+<p>Prayer rooms exist at Incheon airport, COEX mall and several universities. Full listings on our <a href="/destinations/seoul">Seoul city guide</a>, with <a href="/prayer-times">prayer times</a> and the <a href="/qibla">Qibla compass</a>.</p>`,
+  },
 ]
 
 export function getDestinationBySlug(slug: string): Destination | undefined {
