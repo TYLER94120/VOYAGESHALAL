@@ -106,6 +106,7 @@ export default async function CountryPage({ params }: Props) {
             src={country.coverImage}
             alt={en ? `Halal travel in ${nomLoc}` : `Voyage halal en ${country.name}`}
             fill
+            sizes="100vw"
             className="object-cover"
             priority
           />
