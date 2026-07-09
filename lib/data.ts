@@ -141,7 +141,7 @@ export const destinations: Destination[] = [
     ],
     relatedArticles: [
       { slug: 'marrakech-guide-halal', title: 'Guide halal Marrakech 2026', type: 'guide' },
-      { slug: 'lune-de-miel-halal', title: 'Lune de miel halal : destinations romantiques', type: 'guide' },
+      { slug: 'lune-de-miel-halal', title: 'Lune de miel halal : les destinations romantiques qui respectent vos valeurs', type: 'guide' },
     ],
     tips: [
       'Dans la médina, tout est halal — ne pas perdre de temps à vérifier.',
@@ -1262,6 +1262,88 @@ const guidesFr: Guide[] = [
 <p>Vérifiez le label halal local ou demandez « halal desu ka ? » ; les konbinis (7-Eleven…) proposent des options sans viande sûres (onigiri au saumon, salades) ; le poisson est votre allié. Attention au dashi (bouillon) et au mirin (alcool de cuisine) dans la cuisine classique — les restaurants halal les remplacent.</p>
 <h2>Le Japon en pratique</h2>
 <p>Sécurité exceptionnelle, propreté, trains parfaits : le Japon est un des voyages les plus agréables qui soient pour une famille musulmane préparée. Meilleure période : mars-mai (sakura) et octobre-novembre (érables).</p>`,
+  },
+  {
+    slug: 'ou-prier-disneyland-paris',
+    title: 'Où prier à Disneyland Paris ? Le guide pratique des familles musulmanes',
+    description: 'Coin prière à Disneyland Paris : les solutions concrètes dans les parcs et les hôtels, manger halal sur place et à côté, et nos astuces de familles musulmanes.',
+    coverImage: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80',
+    category: 'Pratique',
+    readTime: '5 min',
+    publishedAt: '2026-04-01',
+    tags: ['Disneyland Paris', 'Prière', 'Famille', 'Pratique'],
+    content: `<p>Journée magique aux parcs, mais une question revient chez toutes les familles musulmanes : <strong>où prier à Disneyland Paris ?</strong> Voici les solutions concrètes.</p>
+<h2>Dans les parcs : les solutions qui marchent</h2>
+<p>Disneyland Paris n\'a pas de salle de prière dédiée dans les parcs. Les familles utilisent : les <strong>espaces bébés (Baby Care Center)</strong> sur demande courtoise en heures creuses, les zones calmes et ombragées (jardins près du château, allées latérales de Discoveryland), ou un retour éclair à l\'hôtel si vous logez sur place. Tapis de poche + <a href="/qibla">boussole Qibla</a> : deux minutes suffisent.</p>
+<h2>Le bon réflexe : regrouper les prières</h2>
+<p>En déplacement, regroupez Dhuhr-Asr puis Maghrib-Isha (jam\' du voyageur) : deux pauses au lieu de quatre, aux heures où les files sont les plus longues — vos enfants ne perdront même pas une attraction. Horaires précis sur <a href="/horaires-priere">nos horaires de prière</a>.</p>
+<h2>À l\'hôtel</h2>
+<p>Dans les hôtels Disney et partenaires, priez tranquillement dans votre chambre. À la réception, demander « a quiet room for prayer » fonctionne souvent pour les prières du soir si votre chambre n\'est pas prête.</p>
+<h2>Manger halal à Disneyland Paris</h2>
+<p>Options simples dans les parcs : plats végétariens et poisson (vérifiez les cartes). Le Village (Disney Village) et Val d\'Europe à côté offrent plusieurs restaurants halal — et Paris n\'est qu\'à 35 minutes de RER : voir la fiche <a href="/destinations/paris">Paris</a>.</p>
+<h2>Vous avez trouvé un bon coin prière ?</h2>
+<p>Partagez-le : nos <a href="/autour-de-moi">spots partagés</a> aident les familles qui viendront après vous. 🤲</p>`,
+  },
+  {
+    slug: 'voyage-halal-petit-budget',
+    title: 'Voyage halal pas cher : les destinations et astuces petit budget (étudiants inclus)',
+    description: 'Voyager halal avec un petit budget : les destinations les moins chères (Turquie, Maroc, Balkans, Malaisie), astuces transport/hébergement et budgets réels par jour.',
+    coverImage: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80',
+    category: 'Pratique',
+    readTime: '6 min',
+    publishedAt: '2026-04-05',
+    tags: ['Petit budget', 'Pas cher', 'Étudiant', 'Astuces'],
+    content: `<p>Voyager halal ne coûte pas plus cher — c\'est même souvent l\'inverse : les meilleures destinations halal sont aussi parmi les <strong>moins chères du monde</strong>.</p>
+<h2>Le podium qualité-prix</h2>
+<p><strong>Turquie hors Istanbul</strong> (Bursa, Konya, la côte) : repas 3-6 €, hôtels 25-50 €. <strong>Maroc</strong> : <a href="/destinations/fes">Fès</a> et <a href="/destinations/agadir">Agadir</a> restent très douces, repas 3-8 €. <strong>Balkans musulmans</strong> : <a href="/destinations/sarajevo">Sarajevo</a> et l\'Albanie, l\'Europe à prix mini avec mosquées partout. <strong>Malaisie</strong> : 2-4 € le repas de food court labellisé — imbattable pour l\'Asie.</p>
+<h2>Budgets réels par jour (par personne, hors vols)</h2>
+<p>Routard : 25-35 €/jour (auberge/pension + street food halal). Confort simple : 45-70 €/jour. Famille de 4 : comptez 120-180 €/jour au Maroc ou en Turquie, tout compris sur place.</p>
+<h2>Les astuces qui changent tout</h2>
+<p>Vols : réservez 2-3 mois avant, partez mardi/mercredi, comparez les aéroports secondaires. Hébergement : pensions familiales et riads simples (souvent sans alcool naturellement) plutôt que les chaînes. Nourriture : marchés et street food halal = moitié prix des restaurants touristiques — et souvent meilleurs.</p>
+<h2>Gratuit et précieux</h2>
+<p>Les mosquées historiques se visitent gratuitement, les médinas et bazars sont des spectacles permanents, et nos outils (<a href="/horaires-priere">horaires</a>, <a href="/qibla">Qibla</a>, <a href="/mosquee-proche">mosquée proche</a>) sont gratuits à vie. Consultez notre <a href="/guides/top-destinations-halal-2026">Top 10 destinations</a> pour comparer.</p>`,
+  },
+  {
+    slug: 'europe-halal-friendly',
+    title: 'Pays halal friendly en Europe : où voyager musulman sereinement',
+    description: 'Bosnie, Albanie, Espagne (héritage andalou), Royaume-Uni… Le classement des pays européens les plus halal friendly : mosquées, restaurants halal, ambiance.',
+    coverImage: 'https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '7 min',
+    publishedAt: '2026-04-09',
+    tags: ['Europe', 'Halal friendly', 'Bosnie', 'Espagne', 'Andalousie'],
+    content: `<p>Pas besoin de long-courrier pour voyager halal sereinement : l\'Europe cache des destinations profondément <strong>halal friendly</strong> — dont deux pays à héritage musulman vivant.</p>
+<h2>1. Bosnie-Herzégovine — l\'Europe musulmane</h2>
+<p><a href="/destinations/sarajevo">Sarajevo</a> et <a href="/destinations/mostar">Mostar</a> : mosquées ottomanes à chaque rue, ćevapi halal par défaut, appel à la prière dans les collines. L\'immersion la plus naturelle du continent, à 2h de vol.</p>
+<h2>2. Albanie & Kosovo — la surprise</h2>
+<p>Majorité musulmane, hospitalité légendaire, plages et montagnes, prix mini. <a href="/destinations/tirana">Tirana</a> décolle.</p>
+<h2>3. Espagne — l\'héritage d\'Al-Andalus</h2>
+<p>L\'Alhambra de <a href="/destinations/grenade">Grenade</a>, la Mezquita de Cordoue, <a href="/destinations/seville">Séville</a> : le patrimoine musulman le plus émouvant d\'Europe, et une offre halal en forte croissance (Grenade compte de nombreux restaurants halal autour de l\'Albaicín).</p>
+<h2>4. Royaume-Uni — la facilité</h2>
+<p><a href="/destinations/londres">Londres</a> est l\'une des capitales halal du monde : des milliers de restaurants (label HMC répandu), mosquées majeures, quartiers entiers. Manchester et Birmingham suivent.</p>
+<h2>5. France, Allemagne, Pays-Bas</h2>
+<p>Grandes communautés = offre halal dense dans toutes les métropoles : <a href="/destinations/paris">Paris</a>, Lyon, Berlin, Amsterdam. Voir notre article <a href="/blog/restaurants-halal-paris">restaurants halal à Paris</a>.</p>
+<h2>Conseil de planification</h2>
+<p>Pour un premier city-break halal en Europe : Sarajevo (immersion), Grenade (émotion historique) ou Londres (zéro effort). Toutes nos villes européennes sont sur <a href="/destinations">la carte des destinations</a>.</p>`,
+  },
+  {
+    slug: 'voyage-aid-en-famille',
+    title: 'Voyage de l\'Aïd en famille : où partir pour un Aïd inoubliable',
+    description: 'Partir en voyage pour l\'Aïd el-Fitr ou l\'Aïd el-Adha : les meilleures destinations pour vivre la fête en famille, prière de l\'Aïd à l\'étranger et conseils de réservation.',
+    coverImage: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80',
+    category: 'Famille',
+    readTime: '6 min',
+    publishedAt: '2026-04-13',
+    tags: ['Aïd', 'Famille', 'Fête', 'Saisonnier'],
+    content: `<p>Fêter l\'<strong>Aïd en voyage</strong>, c\'est offrir à ses enfants un souvenir pour la vie : la prière de l\'Aïd dans une grande mosquée, les rues en fête, les douceurs locales. Voici où et comment.</p>
+<h2>Où vivre un Aïd mémorable</h2>
+<p><strong><a href="/destinations/istanbul">Istanbul</a></strong> : prière à Süleymaniye ou à la Mosquée Bleue, puis baklava et fête sur les places — l\'Aïd grandeur nature. <strong><a href="/destinations/marrakech">Marrakech</a></strong> : l\'Aïd marocain en famille, msemen du matin et médina en habits neufs. <strong><a href="/destinations/dubai">Dubaï</a></strong> : feux d\'artifice, festivals et activités enfants pendant toute la période. <strong><a href="/destinations/sarajevo">Sarajevo</a></strong> : l\'Aïd européen le plus authentique.</p>
+<h2>La prière de l\'Aïd à l\'étranger</h2>
+<p>Renseignez-vous la veille : l\'horaire varie selon les pays (souvent 30-60 min après le lever du soleil) et les grandes mosquées se remplissent tôt. Notre outil <a href="/mosquee-proche">Mosquée la plus proche</a> vous trouve le lieu ; arrivez en avance, repartez à pied si possible.</p>
+<h2>Réserver malin</h2>
+<p>Les dates de l\'Aïd font grimper les prix dans les destinations musulmanes : réservez vols et hôtels <strong>2-3 mois avant</strong>, et visez les jours juste après la fête pour la détente (prix redescendus, ambiance encore festive).</p>
+<h2>Avec les enfants</h2>
+<p>Prévoyez les habits de fête dans la valise, un budget cadeaux/eidiya en monnaie locale, et une matinée sans programme : l\'Aïd se vit, il ne se planifie pas à l\'heure près. Complétez avec notre guide <a href="/guides/vacances-halal-famille-2026">voyage halal en famille</a>.</p>`,
   },
 ]
 
