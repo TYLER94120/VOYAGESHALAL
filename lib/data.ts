@@ -68,7 +68,7 @@ export const destinations: Destination[] = [
     ],
     relatedArticles: [
       { slug: 'meilleurs-hotels-halal-istanbul', title: 'Les 10 meilleurs hôtels halal-friendly à Istanbul', type: 'blog' },
-      { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
+      { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026 (dont les moins chères)', type: 'guide' },
     ],
     tips: [
       'La quasi-totalité des restaurants du centre historique (Sultanahmet, Fatih, Üsküdar) est halal — pas besoin de vérifier systématiquement.',
@@ -266,8 +266,8 @@ export const destinations: Destination[] = [
       },
     ],
     relatedArticles: [
-      { slug: 'omra-2026-guide-complet', title: 'Guide complet de l\'Omra 2026', type: 'guide' },
-      { slug: 'ramadan-voyage-guide', title: 'Voyager pendant le Ramadan', type: 'guide' },
+      { slug: 'omra-2026-guide-complet', title: 'Omra 2026 : guide complet, budget pas cher & meilleure période', type: 'guide' },
+      { slug: 'ramadan-voyage-guide', title: 'Où passer le Ramadan ? Voyager pendant le mois sacré', type: 'guide' },
     ],
     tips: [
       'Prière de la Fajr (aube) à Masjid an-Nabawi : une expérience spirituelle que les voyageurs décrivent comme la plus belle de leur vie.',
@@ -386,7 +386,7 @@ export const destinations: Destination[] = [
       },
     ],
     relatedArticles: [
-      { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026', type: 'guide' },
+      { slug: 'top-destinations-halal-2026', title: 'Top 10 destinations halal 2026 (dont les moins chères)', type: 'guide' },
       { slug: 'checklist-voyage-halal', title: 'Checklist voyage halal : ne rien oublier', type: 'guide' },
     ],
     tips: [
@@ -851,7 +851,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'vacances-halal-famille-2026',
-    title: 'Vacances halal en famille 2026 : 5 idées pour des souvenirs inoubliables',
+    title: 'Voyage halal en famille 2026 : les 5 meilleures destinations avec enfants',
     description: 'Les meilleures destinations et conseils pour des vacances halal réussies en famille : sécurité, activités enfants, hébergement adapté et budget.',
     coverImage: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200&q=80',
     category: 'Famille',
@@ -999,7 +999,7 @@ const guidesFr: Guide[] = [
   },
   {
     slug: 'voyage-halal-solo-femme',
-    title: 'Voyage halal en solo pour les femmes musulmanes : destinations sûres et conseils',
+    title: 'Voyage femme musulmane seule : destinations sûres (même voilée) et conseils',
     description: 'Guide complet pour les femmes musulmanes souhaitant voyager seules : destinations les plus sûres, conseils de sécurité, question du mahram et communautés.',
     coverImage: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80',
     category: 'Pratique',
@@ -1201,6 +1201,67 @@ const guidesFr: Guide[] = [
 </ul>
 
 <p>Préparez votre séjour avec le <a href="/destinations/marrakech">guide halal de Marrakech</a>.</p>`,
+  },
+  {
+    slug: 'ou-prier-aeroport-guide',
+    title: 'Où prier à l\'aéroport ? Salles de prière de Roissy CDG, Orly et des grands aéroports',
+    description: 'Salles de prière à Roissy CDG, Orly, Lyon, Marseille, Istanbul, Dubaï… : où prier à l\'aéroport, terminal par terminal, et comment faire quand il n\'y a pas de salle dédiée.',
+    coverImage: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80',
+    category: 'Pratique',
+    readTime: '6 min',
+    publishedAt: '2026-03-20',
+    tags: ['Aéroport', 'Prière', 'CDG', 'Orly', 'Pratique'],
+    content: `<p>Prier à l\'aéroport est souvent plus simple qu\'on ne le croit : la plupart des grands hubs disposent de <strong>salles de prière ou espaces multiconfessionnels</strong>. Voici où les trouver — et quoi faire quand il n\'y en a pas.</p>
+<h2>Roissy Charles-de-Gaulle (CDG)</h2>
+<p>CDG dispose d\'espaces de prière et de lieux de culte dans plusieurs terminaux (notamment T1, T2E et T2F), généralement signalés « Espace prière / Lieu de culte » et accessibles côté embarquement. Des aumôneries musulmanes y assurent des permanences. Demandez au comptoir d\'information du terminal : le personnel vous orientera vers l\'espace le plus proche de votre porte.</p>
+<h2>Orly, Lyon, Marseille, Nice</h2>
+<p>Orly propose des espaces multiconfessionnels (zone publique et zone d\'embarquement). Lyon-Saint-Exupéry, Marseille-Provence et Nice disposent également de salles de recueillement. Le réflexe universel : chercher le pictogramme « lieu de culte » sur les plans du terminal ou demander à l\'accueil.</p>
+<h2>Les champions du monde : Istanbul, Dubaï, Doha</h2>
+<p>Dans les hubs des pays musulmans, des <strong>mescid</strong> (salles de prière) sont présents à chaque zone, hommes et femmes séparés, avec espaces d\'ablutions. À <a href="/destinations/istanbul">Istanbul</a>, <a href="/destinations/dubai">Dubaï</a> ou <a href="/destinations/doha">Doha</a>, vous n\'aurez jamais à chercher plus de deux minutes.</p>
+<h2>Pas de salle de prière ? Voici comment faire</h2>
+<p>Un coin calme près d\'une porte d\'embarquement peu fréquentée fait parfaitement l\'affaire : tapis de voyage, direction trouvée avec notre <a href="/qibla">boussole Qibla</a>, et horaires vérifiés sur <a href="/horaires-priere">nos horaires de prière</a>. En voyage, vous pouvez aussi regrouper Dhuhr-Asr et Maghrib-Isha (jam\' des voyageurs).</p>
+<h2>Partagez vos coins prière</h2>
+<p>Vous avez repéré une salle de prière dans un aéroport ? Elle aidera des milliers de voyageurs : consultez nos <a href="/autour-de-moi">spots partagés</a> sur la carte.</p>`,
+  },
+  {
+    slug: 'priere-avion-train-guide',
+    title: 'Prière en avion et en train : comment faire, concrètement',
+    description: 'Peut-on prier dans l\'avion ou le train ? Oui — assis, par gestes, en regroupant les prières. Le guide pratique du voyageur musulman, avec les règles de la prière du voyageur.',
+    coverImage: 'https://images.unsplash.com/photo-1564769625905-50e93615e769?w=1200&q=80',
+    category: 'Pratique',
+    readTime: '5 min',
+    publishedAt: '2026-03-24',
+    tags: ['Avion', 'Train', 'Prière', 'Pratique'],
+    content: `<p>Vol long-courrier, TGV, correspondances : comment ne pas manquer la prière quand on est en déplacement ? Bonne nouvelle : l\'islam a tout prévu pour le voyageur.</p>
+<h2>Les facilités du voyageur (musafir)</h2>
+<p>En voyage, vous pouvez <strong>raccourcir</strong> les prières de 4 unités à 2 (qasr) et <strong>regrouper</strong> Dhuhr avec Asr, et Maghrib avec Isha (jam\'). Ces facilités sont une miséricorde — les utiliser n\'est pas un manque de piété.</p>
+<h2>Prier en avion</h2>
+<p>Si vous pouvez vous tenir debout sans gêner (fond de cabine sur certains gros porteurs), faites-le. Sinon, <strong>priez assis à votre place</strong>, par gestes : inclinez le buste pour le rukû, davantage pour le sujûd. Pour la direction, orientez-vous vers la Qibla au takbir initial si possible ; en avion, la direction évolue — faire de son mieux suffit. Calculez les horaires selon votre position avec <a href="/horaires-priere">nos horaires</a> et la <a href="/qibla">Qibla</a>.</p>
+<h2>Prier dans le train</h2>
+<p>Le train est plus simple : espaces entre voitures, ou prière assise à votre place. Dans les grandes gares, des salles d\'attente calmes font l\'affaire ; certaines gares internationales ont des espaces multiconfessionnels. Regrouper les prières évite de prier dans de mauvaises conditions.</p>
+<h2>Le kit qui change tout</h2>
+<p>Tapis de poche, écharpe propre, chaussettes (ablutions simplifiées par khuff/masah si vous les avez enfilées en état de pureté), gourde pour les ablutions. Voir notre <a href="/guides/checklist-voyage-halal">checklist voyage halal</a> complète.</p>`,
+  },
+  {
+    slug: 'voyage-halal-japon-guide',
+    title: 'Voyage halal au Japon 2026 : manger halal à Tokyo, Osaka et Kyoto',
+    description: 'Le Japon en voyageur musulman : restaurants halal à Tokyo et Osaka, ramen et wagyu halal, mosquées, salles de prière et conseils concrets pour un séjour serein.',
+    coverImage: 'https://images.unsplash.com/photo-1557672172-298e090bd0f1?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '7 min',
+    publishedAt: '2026-03-28',
+    tags: ['Japon', 'Tokyo', 'Osaka', 'Manger halal', 'Asie'],
+    content: `<p>Le <strong>voyage halal au Japon</strong> n\'est plus un défi : la scène halal de Tokyo et d\'Osaka a explosé, portée par le tourisme musulman d\'Asie du Sud-Est. Voici comment en profiter.</p>
+<h2>Manger halal à Tokyo</h2>
+<p>Tokyo concentre l\'essentiel de l\'offre : <strong>ramen halal</strong> (plusieurs adresses spécialisées), <strong>wagyu halal</strong>, cuisines indienne, turque et indonésienne, et un nombre croissant de restaurants japonais labellisés par des organismes locaux. Les quartiers d\'Asakusa, Shinjuku et Shibuya sont les mieux fournis — toutes nos adresses sont sur la fiche <a href="/destinations/tokyo">Tokyo</a>.</p>
+<h2>Manger halal à Osaka et Kyoto</h2>
+<p>« La cuisine du Japon » s\'est mise au halal : takoyaki et okonomiyaki halal existent à <a href="/destinations/osaka">Osaka</a>, et la mosquée d\'Osaka oriente volontiers les visiteurs. <a href="/destinations/kyoto">Kyoto</a> suit, avec des adresses halal autour de la gare et des temples. Astuce universelle : les restaurants indiens et turcs sont présents dans toutes les villes moyennes.</p>
+<h2>Mosquées et salles de prière</h2>
+<p>Tokyo Camii (la grande mosquée ottomane de Shibuya), les mosquées d\'Osaka, Kobe et Nagoya, et de plus en plus de <strong>prayer rooms</strong> dans les aéroports (Narita, Haneda, Kansai), les grands magasins et certaines gares. Utilisez <a href="/mosquee-proche">Mosquée la plus proche</a> et la <a href="/qibla">Qibla</a> partout.</p>
+<h2>Conseils concrets</h2>
+<p>Vérifiez le label halal local ou demandez « halal desu ka ? » ; les konbinis (7-Eleven…) proposent des options sans viande sûres (onigiri au saumon, salades) ; le poisson est votre allié. Attention au dashi (bouillon) et au mirin (alcool de cuisine) dans la cuisine classique — les restaurants halal les remplacent.</p>
+<h2>Le Japon en pratique</h2>
+<p>Sécurité exceptionnelle, propreté, trains parfaits : le Japon est un des voyages les plus agréables qui soient pour une famille musulmane préparée. Meilleure période : mars-mai (sakura) et octobre-novembre (érables).</p>`,
   },
 ]
 
