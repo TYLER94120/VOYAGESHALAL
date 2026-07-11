@@ -1,7 +1,7 @@
 'use client'
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { cuisineCategory, CATEGORY_ORDER } from '@/lib/cuisineCategory'
-import { enLabel } from '@/lib/poiI18n'
+import { enLabel, countryEn } from '@/lib/poiI18n'
 import { useState, useRef } from 'react'
 import Image from 'next/image'
 import IslamicPattern from '@/components/ui/IslamicPattern'
@@ -77,7 +77,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
       const dt = fmtDate(ville.osmEnrichedAt)
       return en ? `OpenStreetMap${dt ? ` · updated ${dt}` : ''}` : `OpenStreetMap${dt ? ` · mis à jour ${dt}` : ''}`
     }
-    return en ? 'VoyagesHalal editorial pick' : 'Sélection éditoriale VoyagesHalal'
+    return en ? 'GoHalalTravel editorial pick' : 'Sélection éditoriale VoyagesHalal'
   }
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const SourceLine = ({ item }: { item: any }) => (
@@ -116,9 +116,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(180deg, rgba(11,26,15,0.55) 0%, rgba(11,26,15,0.82) 100%)' }} />
         <IslamicPattern opacity={0.05} />
         <div style={{ position: 'relative', maxWidth: WRAP, padding: '0 24px' }}>
-          <p style={{ color: 'var(--or)', fontSize: '12px', fontWeight: 700, letterSpacing: '2.5px', textTransform: 'uppercase', marginBottom: '12px' }}>{ville.pays}{ville.region ? ` · ${ville.region}` : ''}</p>
+          <p style={{ color: 'var(--or)', fontSize: '12px', fontWeight: 700, letterSpacing: '2.5px', textTransform: 'uppercase', marginBottom: '12px' }}>{countryEn(ville.pays, en)}{ville.region ? ` · ${ville.region}` : ''}</p>
           <h1 style={{ fontFamily: "'Playfair Display', serif", color: '#fff', lineHeight: 1.02, margin: 0 }}>
-            <span style={{ fontSize: 'clamp(14px, 4vw, 18px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}>Guide Halal </span>
+            <span style={{ fontSize: 'clamp(14px, 4vw, 18px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}>{en ? 'Halal Guide ' : 'Guide Halal '}</span>
             <span style={{ fontSize: 'clamp(38px, 11vw, 56px)', fontWeight: 900 }}>{ville.nom}</span>
             <span style={{ fontSize: 'clamp(16px, 5vw, 22px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}> 2026</span>
           </h1>
@@ -153,8 +153,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           {/* Guide PDF gratuit (aimant à emails, doré) + Vols */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginTop: '10px' }}>
             <EbookButton ville={ville} />
-            <a href={`https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`} target="_blank" rel="noopener noreferrer" className="ville-action">
-              <span className="ico">✈️</span>Vols vers {ville.nom}
+            <a href={en ? `https://www.skyscanner.net/flights-to/${ville.slug ?? ville.nom}` : `https://www.skyscanner.fr/vols-vers/${ville.slug ?? ville.nom}`} target="_blank" rel="noopener noreferrer" className="ville-action">
+              <span className="ico">✈️</span>{en ? <>Flights to {ville.nom}</> : <>Vols vers {ville.nom}</>}
             </a>
           </div>
         </div>
@@ -167,7 +167,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             {restaurants.length > 0 && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '16px' }}>
               <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '26px', fontWeight: 900, color: 'var(--nuit)' }}>{en ? 'Halal restaurants' : 'Restaurants halal'}</h2>
-              <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} adresses</span>
+              <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} {en ? 'listings' : 'adresses'}</span>
             </div>
             )}
             {/* filtres catégories en pills */}

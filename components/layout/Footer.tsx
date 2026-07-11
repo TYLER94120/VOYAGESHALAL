@@ -20,8 +20,8 @@ function getFooterLinks(en: boolean) {
     ],
     [en ? 'Resources' : 'Ressources']: [
       { href: '/blog', label: en ? 'Blog & Guides' : 'Blog & Guides' },
-      { href: '/guides/voyage-halal-debutant', label: en ? 'Beginner guide' : 'Guide débutant' },
-      { href: '/guides/ramadan-voyage-guide', label: en ? 'Travel during Ramadan' : 'Voyager en Ramadan' },
+      { href: en ? '/guides/halal-travel-for-beginners' : '/guides/voyage-halal-debutant', label: en ? 'Beginner guide' : 'Guide débutant' },
+      { href: en ? '/guides/traveling-during-ramadan' : '/guides/ramadan-voyage-guide', label: en ? 'Travel during Ramadan' : 'Voyager en Ramadan' },
       { href: `${localizedHref('/a-propos', en)}#donnees`, label: en ? 'How we verify data' : 'Comment nous vérifions' },
     ],
     [en ? 'Legal' : 'Légal']: [

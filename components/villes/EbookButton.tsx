@@ -2,9 +2,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState } from 'react'
 import { generateEbook } from '@/lib/ebook'
+import { useLanguage } from '@/components/i18n/LanguageProvider'
 
 // Bouton « Guide PDF gratuit » → pop-up email (RGPD) → stockage email + téléchargement instantané.
 export default function EbookButton({ ville }: { ville: any }) {
+  const { lang } = useLanguage(); const en = lang === 'en'
   const [open, setOpen] = useState(false)
   const [email, setEmail] = useState('')
   const [consent, setConsent] = useState(false)
@@ -34,14 +36,14 @@ export default function EbookButton({ ville }: { ville: any }) {
   return (
     <>
       <button onClick={() => setOpen(true)} className="ville-action ville-action-primary" style={{ cursor: 'pointer' }}>
-        <span className="ico">📖</span>Guide PDF gratuit
+        <span className="ico">📖</span>{en ? 'Free PDF guide' : 'Guide PDF gratuit'}
       </button>
 
       {open && (
         <div onClick={() => setOpen(false)} style={{ position: 'fixed', inset: 0, background: 'rgba(11,26,15,0.7)', zIndex: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 18 }}>
           <div onClick={(e) => e.stopPropagation()} style={{ background: '#fff', borderRadius: 20, maxWidth: 420, width: '100%', padding: 26, boxShadow: '0 20px 60px rgba(0,0,0,0.4)' }}>
             <div style={{ fontSize: 40, textAlign: 'center', marginBottom: 6 }}>📖</div>
-            <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, color: 'var(--nuit)', fontSize: 21, textAlign: 'center', margin: '0 0 6px' }}>Guide Halal {ville.nom} — gratuit</h3>
+            <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, color: 'var(--nuit)', fontSize: 21, textAlign: 'center', margin: '0 0 6px' }}>{en ? <>Free {ville.nom} Halal Guide</> : <>Guide Halal {ville.nom} — gratuit</>}</h3>
             <p style={{ color: 'var(--texte-2)', fontSize: 13.5, textAlign: 'center', lineHeight: 1.6, margin: '0 0 18px' }}>
               Restaurants, mosquées, à voir + <strong>3 road trips</strong> (famille / amis / solo). Reçois-le en PDF tout de suite.
             </p>

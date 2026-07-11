@@ -10,6 +10,7 @@ import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
 import EmailCapture from '@/components/ui/EmailCapture'
 import { relatedForCity, countrySlugForName } from '@/lib/relatedContent'
+import { cityEn, countryEn } from '@/lib/poiI18n'
 import cityCoords from '@/lib/cityCoords.json'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 
@@ -147,7 +148,7 @@ export default async function DestinationPage({ params }: Props) {
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '9px' }}>
             {related.map((c) => (
               <a key={c.slug} href={`/destinations/${c.slug}`} style={{ padding: '8px 15px', background: '#fff', border: '1px solid rgba(27,67,50,0.2)', borderRadius: '30px', fontSize: '14px', fontWeight: 600, color: 'var(--foret)', textDecoration: 'none' }}>
-                {c.nom} Halal
+                {cityEn(c.nom, isEN)} Halal
               </a>
             ))}
           </div>
@@ -185,7 +186,7 @@ export default async function DestinationPage({ params }: Props) {
               )}
               {paysSlug && (
                 <a href={`/destinations/pays/${paysSlug}`} style={{ fontWeight: 700, color: 'var(--foret)' }}>
-                  🌍 {isEN ? `Halal travel in ${ville.pays}` : `Voyage halal ${ville.pays}`} →
+                  🌍 {isEN ? `Halal travel in ${countryEn(ville.pays ?? '', true)}` : `Voyage halal ${ville.pays}`} →
                 </a>
               )}
               <a href={`/priere/${city}`} style={{ fontWeight: 700, color: '#6b21a8' }}>

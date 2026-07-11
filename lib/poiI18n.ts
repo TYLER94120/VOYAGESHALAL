@@ -57,3 +57,17 @@ const COUNTRY_VALUES: Record<string, string> = {
   'Très présent': 'Very present',
 }
 export const countryValueEn = (fr: string, en: boolean) => (en ? (COUNTRY_VALUES[fr] ?? fr) : fr)
+
+// Noms de villes FR → EN (chips « Autres destinations », en-têtes).
+const CITY_EN: Record<string, string> = {
+  'Le Caire': 'Cairo', Médine: 'Medina', 'La Mecque': 'Makkah', Dubaï: 'Dubai',
+  Cappadoce: 'Cappadocia', Séville: 'Seville', Grenade: 'Granada', Cordoue: 'Córdoba',
+  Londres: 'London', Lisbonne: 'Lisbon', Bruxelles: 'Brussels', Copenhague: 'Copenhagen',
+  Venise: 'Venice', Athènes: 'Athens', Moscou: 'Moscow', Pékin: 'Beijing',
+  'Le Cap': 'Cape Town', Marrakech: 'Marrakesh', Fès: 'Fez', Tanger: 'Tangier',
+  Alger: 'Algiers', Beyrouth: 'Beirut', Damas: 'Damascus', Bagdad: 'Baghdad',
+  Riyad: 'Riyadh', Djeddah: 'Jeddah', Mascate: 'Muscat', 'Kuala Lumpur': 'Kuala Lumpur',
+  Jérusalem: 'Jerusalem', 'Nouvelle-Delhi': 'New Delhi', Munich: 'Munich', Vienne: 'Vienna',
+  Genève: 'Geneva', Varsovie: 'Warsaw', Cracovie: 'Kraków', Prague: 'Prague', Édimbourg: 'Edinburgh',
+}
+export const cityEn = (fr: string, en: boolean) => (en ? (CITY_EN[fr] ?? fr) : fr)
