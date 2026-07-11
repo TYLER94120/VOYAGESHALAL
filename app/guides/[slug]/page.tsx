@@ -39,10 +39,11 @@ export default async function GuidePage({ params }: Props) {
   const guide = getGuideBySlug(slug)
 
   if (!guide) notFound()
+  const { isEN } = await getDomainSEO()
 
   const articleSchema = buildArticleSchema({ ...guide, type: 'guide' })
   const breadcrumbSchema = buildBreadcrumbSchema([
-    { name: 'Accueil', url: '/' },
+    { name: isEN ? 'Home' : 'Accueil', url: '/' },
     { name: 'Guides', url: '/guides' },
     { name: guide.title, url: `/guides/${guide.slug}` },
   ])
@@ -54,7 +55,7 @@ export default async function GuidePage({ params }: Props) {
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <nav className="flex items-center gap-2 text-sm text-gray-400 mb-8">
-          <Link href="/" className="hover:text-emerald-600">Accueil</Link>
+          <Link href="/" className="hover:text-emerald-600">{isEN ? 'Home' : 'Accueil'}</Link>
           <span>/</span>
           <Link href="/guides" className="hover:text-emerald-600">Guides</Link>
           <span>/</span>

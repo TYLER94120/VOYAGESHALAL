@@ -320,8 +320,8 @@ export default async function CountryPage({ params }: Props) {
 
             {/* Email CTA */}
             <EmailCapture
-              title={`Guide halal ${country.name} gratuit`}
-              subtitle="Adresses, mosquées, conseils locaux — dans votre boîte mail."
+              title={en ? `Free ${nomLoc} halal guide` : `Guide halal ${country.name} gratuit`}
+              subtitle={en ? 'Addresses, mosques, local tips — in your inbox.' : 'Adresses, mosquées, conseils locaux — dans votre boîte mail.'}
               compact
               source={`pays-${country.slug}`}
             />
@@ -332,7 +332,7 @@ export default async function CountryPage({ params }: Props) {
               style={{ backgroundColor: '#c9a870' }}
               className="flex items-center justify-center gap-2 text-[#1a3a2a] font-bold text-sm px-6 py-3.5 rounded-full hover:opacity-90 transition-opacity"
             >
-              🔍 Rechercher en {country.name}
+              🔍 {en ? <>Search in {nomLoc}</> : <>Rechercher en {country.name}</>}
             </Link>
           </aside>
         </div>
