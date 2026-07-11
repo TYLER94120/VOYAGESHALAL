@@ -29,7 +29,7 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
           </span>
         </Link>
 
-        {/* Nav desktop */}
+        {/* Nav desktop — structure identique FR/EN : pages + un groupe « Outils » */}
         <nav className="header-nav-desktop">
           <Link href="/" className="nav-link">
             {t('nav.home')}
@@ -37,18 +37,24 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
           <Link href="/destinations" className="nav-link">
             {t('nav.destinations')}
           </Link>
-          <Link href={localizedHref('/horaires-priere', isEN)} className="nav-link nav-link-highlight">
-            🕐 {t('nav.prayer')}
-          </Link>
-          <Link href="/qibla" className="nav-link nav-link-highlight">
-            🧭 {t('nav.qibla')}
-          </Link>
-          <Link href={localizedHref('/mosquee-proche', isEN)} className="nav-link nav-link-highlight">
-            🕌 {t('nav.mosque')}
+          <Link href="/guides" className="nav-link">
+            {isEN ? 'Guides' : 'Guides'}
           </Link>
           <Link href="/blog" className="nav-link">
             {t('nav.blog')}
           </Link>
+          {/* Groupe Outils : dropdown CSS pur (hover/focus-within) — zéro JS, zéro CLS */}
+          <div className="nav-tools">
+            <button className="nav-link nav-link-highlight nav-tools-btn" aria-haspopup="true">
+              🧰 {isEN ? 'Tools' : 'Outils'} ▾
+            </button>
+            <div className="nav-tools-menu" role="menu">
+              <Link href={localizedHref('/horaires-priere', isEN)} className="nav-tools-item">🕐 {t('nav.prayer')}</Link>
+              <Link href="/qibla" className="nav-tools-item">🧭 {t('nav.qibla')}</Link>
+              <Link href={localizedHref('/mosquee-proche', isEN)} className="nav-tools-item">🕌 {t('nav.mosque')}</Link>
+              <Link href="/autour-de-moi" className="nav-tools-item">📍 {isEN ? 'Around me' : 'Autour de moi'}</Link>
+            </div>
+          </div>
         </nav>
 
         {/* Actions */}
@@ -93,6 +99,9 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
           </Link>
           <Link href="/destinations" onClick={() => setMenuOpen(false)}>
             🗺️ Destinations
+          </Link>
+          <Link href="/guides" onClick={() => setMenuOpen(false)}>
+            📗 Guides
           </Link>
           <Link href={localizedHref('/horaires-priere', isEN)} onClick={() => setMenuOpen(false)}>
             🕐 {isEN ? 'Prayer times' : 'Horaires de prière'}

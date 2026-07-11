@@ -697,3 +697,22 @@ body { top: 0 !important; }
 .fi-social { text-transform: capitalize; font-weight: 700; font-size: 14px; padding: 8px 14px; border-radius: 10px; background: var(--nuit); color: var(--creme); }
 .fi-soon { font-size: 13px; opacity: 0.6; font-style: italic; }
 .fi-install { display: inline-block; font-weight: 800; font-size: 15px; padding: 12px 20px; border-radius: 12px; background: var(--or); color: var(--nuit); }
+
+/* ── Groupe « Outils » du header (dropdown CSS pur, zéro CLS) ─────────── */
+.nav-tools { position: relative; }
+.nav-tools-btn { border: none; cursor: pointer; background: #f0fdf4; font-family: inherit; }
+.nav-tools-menu {
+  position: absolute; top: calc(100% + 6px); left: 0; min-width: 220px;
+  background: #fff; border: 1px solid rgba(27,67,50,0.15); border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(11,26,15,0.14); padding: 6px;
+  opacity: 0; visibility: hidden; transform: translateY(-4px);
+  transition: opacity .15s, transform .15s, visibility .15s; z-index: 60;
+}
+.nav-tools:hover .nav-tools-menu, .nav-tools:focus-within .nav-tools-menu {
+  opacity: 1; visibility: visible; transform: translateY(0);
+}
+.nav-tools-item {
+  display: block; padding: 9px 12px; border-radius: 8px; font-size: 14px;
+  font-weight: 600; color: #1b4332; text-decoration: none;
+}
+.nav-tools-item:hover { background: #f0fdf4; }
