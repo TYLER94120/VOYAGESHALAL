@@ -10,6 +10,8 @@ const MAP: Record<string, string> = {
   'Japonais & Asiatique': 'Japanese & Asian', 'Burgers & Fast-food': 'Burgers & Fast food',
   Gastronomique: 'Fine dining', 'Végétarien & Healthy': 'Vegetarian & Healthy',
   'Pâtisserie & Café': 'Pastry & Coffee',
+  'Grillades & Kebab': 'Grill & Kebab', 'Fruits de mer': 'Seafood',
+  Marocain: 'Moroccan', Turc: 'Turkish',
   Luxe: 'Luxury', Standard: 'Standard', 'Riad & Boutique': 'Riad & Boutique',
   Budget: 'Budget', 'Resort & Spa': 'Resort & Spa',
   'Religieux & Spirituel': 'Religious & Spiritual', 'Histoire & Culture': 'History & Culture',

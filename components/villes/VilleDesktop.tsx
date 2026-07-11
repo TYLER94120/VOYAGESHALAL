@@ -14,11 +14,11 @@ import HotelFilter from '@/components/villes/HotelFilter'
 import { coordsOf, type LatLng } from '@/lib/hotelFilter'
 
 const TABS = [
-  { id: 'mosquees', icon: '🕌', label: 'Mosquées' },
-  { id: 'restaurants', icon: '🍽', label: 'Restaurants' },
-  { id: 'hotels', icon: '🏨', label: 'Hôtels' },
-  { id: 'activites', icon: '🎯', label: 'À faire' },
-  { id: 'pratique', icon: 'ℹ️', label: 'Pratique' },
+  { id: 'mosquees', icon: '🕌', label: 'Mosquées', labelEn: 'Mosques' },
+  { id: 'restaurants', icon: '🍽', label: 'Restaurants', labelEn: 'Restaurants' },
+  { id: 'hotels', icon: '🏨', label: 'Hôtels', labelEn: 'Hotels' },
+  { id: 'activites', icon: '🎯', label: 'À faire', labelEn: 'To do' },
+  { id: 'pratique', icon: 'ℹ️', label: 'Pratique', labelEn: 'Practical' },
 ]
 
 const CATEGORY_EMOJI: Record<string, string> = {
@@ -143,7 +143,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               const count = tabCounts[tab.id]
               return (
                 <button key={tab.id} onClick={() => goToTab(tab.id)} className={`ville-tab${active ? ' ville-tab--on' : ''}${tab.id === 'pratique' ? ' ville-tab--wide' : ''}`}>
-                  <span className="vt-ico">{tab.icon}</span>{tab.label}
+                  <span className="vt-ico">{tab.icon}</span>{en ? (tab as { labelEn?: string; label: string }).labelEn ?? tab.label : tab.label}
                   {count > 0 && <span className="vt-count">{count}</span>}
                 </button>
               )
@@ -166,7 +166,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
           <>
             {restaurants.length > 0 && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '16px' }}>
-              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '26px', fontWeight: 900, color: 'var(--nuit)' }}>Restaurants halal</h2>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '26px', fontWeight: 900, color: 'var(--nuit)' }}>{en ? 'Halal restaurants' : 'Restaurants halal'}</h2>
               <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} adresses</span>
             </div>
             )}
@@ -202,7 +202,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                     </div>
                     <div style={{ display: 'flex', gap: '8px' }}>
                       <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ flex: 1, padding: '11px 0', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🗺 Maps</a>
-                      {r.specialite && <button onClick={() => toast(`⭐ ${r.specialite}`, 'success')} style={{ flex: 1, padding: '11px 0', background: 'var(--foret)', color: 'var(--creme)', border: 'none', borderRadius: '12px', fontSize: '13px', fontWeight: 700, cursor: 'pointer' }}>⭐ Spécialité</button>}
+                      {r.specialite && <button onClick={() => toast(`⭐ ${r.specialite}`, 'success')} style={{ flex: 1, padding: '11px 0', background: 'var(--foret)', color: 'var(--creme)', border: 'none', borderRadius: '12px', fontSize: '13px', fontWeight: 700, cursor: 'pointer' }}>⭐ {en ? 'Specialty' : 'Spécialité'}</button>}
                     </div>
                     <SourceLine item={r} />
                   </div>
@@ -251,7 +251,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         {displayTab === 'mosquees' && mosquees.length > 0 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 8 }}>
-              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '24px', fontWeight: 900, color: 'var(--nuit)', margin: 0 }}>Mosquées à {ville.nom}</h2>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '24px', fontWeight: 900, color: 'var(--nuit)', margin: 0 }}>{en ? <>Mosques in {ville.nom}</> : <>Mosquées à {ville.nom}</>}</h2>
               <a href="/mosquee-proche" style={{ fontSize: '13px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>📍 Autour de moi (GPS) →</a>
             </div>
             {mosquees.map((m: any, i: number) => (

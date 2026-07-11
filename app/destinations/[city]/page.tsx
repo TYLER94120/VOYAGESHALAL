@@ -134,14 +134,14 @@ export default async function DestinationPage({ params }: Props) {
       <VilleFaq ville={ville} en={isEN} />
 
       {/* Maillage interne — autres destinations halal */}
-      <nav aria-label="Autres destinations halal" style={{ background: 'var(--creme)', borderTop: '1px solid rgba(11,26,15,0.06)', padding: '28px 18px 80px' }}>
+      <nav aria-label={isEN ? 'More halal destinations' : 'Autres destinations halal'} style={{ background: 'var(--creme)', borderTop: '1px solid rgba(11,26,15,0.06)', padding: '28px 18px 80px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8, marginBottom: '14px' }}>
             <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '20px', fontWeight: 700, color: 'var(--nuit)', margin: 0 }}>
-              Autres destinations halal
+              {isEN ? 'More halal destinations' : 'Autres destinations halal'}
             </h2>
             <a href="/destinations?all=1" style={{ fontSize: '14px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>
-              Voir toutes les destinations →
+              {isEN ? 'See all destinations →' : 'Voir toutes les destinations →'}
             </a>
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '9px' }}>

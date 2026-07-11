@@ -20,6 +20,10 @@ export function buildVilleFaq(ville: Ville, en: boolean): FaqItem[] {
   const mosqCount = ville.mosqueesPrincipales?.length ?? 0
   const restoCount = ville.restaurants?.length ?? 0
   const periode = ville.infos_pratiques?.meilleure_periode
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const periodeEn = (ville as any).infos_pratiques_en?.meilleure_periode
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const descEn = (ville as any).description_en as string | undefined
   const topRestos = (ville.restaurants ?? []).slice(0, 3).map((r) => r.nom).filter(Boolean)
 
   // « 1 mosque » / « 3 mosques » — « 1 restaurant » / « 15 restaurants »
@@ -29,12 +33,12 @@ export function buildVilleFaq(ville: Ville, en: boolean): FaqItem[] {
   if (en) {
     const mosqTxt = mosqCount > 0 ? plEn(mosqCount, 'mosque') : 'several mosques'
     const items: FaqItem[] = [
-      { q: `Is the food halal in ${nom}?`, a: `${nom} has a halal score of ${score}/5. ${descText(ville).slice(0, 200)}`.trim() },
+      { q: `Is the food halal in ${nom}?`, a: `${nom} has a halal score of ${score}/5. ${(descEn ?? '').slice(0, 200)}`.trim() },
       { q: `Where can I find a mosque in ${nom}?`, a: `${nom} has ${mosqTxt}. Our guide lists the main ones with their addresses and prayer times.` },
       { q: `What are the prayer times in ${nom}?`, a: `Prayer times in ${nom} change with the season. Use the real-time widget on this page for Fajr, Dhuhr, Asr, Maghrib and Isha.` },
     ]
     if (restoCount > 0) items.push({ q: `Are there many halal restaurants in ${nom}?`, a: `We list ${restoCount.toLocaleString('en-US')} halal restaurant${restoCount > 1 ? 's' : ''}${topRestos.length ? `, including ${topRestos.join(', ')}` : ''}. Each listing shows its location and a halal-confidence level.` })
-    if (periode) items.push({ q: `When is the best time to visit ${nom}?`, a: `The best time to visit ${nom} is ${periode}.` })
+    if (periodeEn) items.push({ q: `When is the best time to visit ${nom}?`, a: `The best time to visit ${nom} is ${periodeEn}.` })
     return items
   }
 
