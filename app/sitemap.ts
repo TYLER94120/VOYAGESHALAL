@@ -3,6 +3,7 @@ import { guides, blogPosts } from '@/lib/data'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import { localizedHref } from '@/lib/slugs'
 import cityCoords from '@/lib/cityCoords.json'
+import { countries } from '@/lib/countriesData'
 import { listAllSpots } from '@/lib/prayerSpots'
 
 // Liste des 354 villes depuis un import STATIQUE (bundlé au build) plutôt que via
@@ -51,6 +52,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     alternates: cityAlternates(slug),
   }))
 
+  // Pages pays (Voyage halal en {pays}) — manquaient au sitemap
+  const paysPages: MetadataRoute.Sitemap = countries.map((c) => ({
+    url: `${SITE_URL}/destinations/pays/${c.slug}`,
+    lastModified: now,
+    changeFrequency: 'weekly',
+    priority: 0.7,
+    alternates: { languages: { fr: `${FR_URL}/destinations/pays/${c.slug}`, en: `${EN_URL}/destinations/pays/${c.slug}` } },
+  }))
+
   // Pages « Hôtels halal à {ville} » — cible « hotel halal {ville} » (requêtes GSC)
   const hotelPages: MetadataRoute.Sitemap = CITY_SLUGS.map((slug) => ({
     url: `${SITE_URL}/hotels/${slug}`,
@@ -96,5 +106,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     spotPages = [...indexPages, ...detailPages]
   } catch { /* Redis indisponible → pas de pages spots dans le sitemap */ }
 
-  return [...staticPages, ...villePages, ...hotelPages, ...guidePages, ...blogPages, ...spotPages]
+  return [...staticPages, ...villePages, ...paysPages, ...hotelPages, ...guidePages, ...blogPages, ...spotPages]
 }
