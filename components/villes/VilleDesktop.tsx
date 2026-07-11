@@ -32,6 +32,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const [activeTab, setActiveTab] = useState<string | null>(null) // null = aucun onglet allumé au départ
   const displayTab = activeTab ?? 'restaurants' // contenu affiché par défaut (sans orange)
   const [activeFilter, setActiveFilter] = useState('Tous')
+  // Poids DOM / Core Web Vitals : on rend 20 restaurants (indexés en SSR),
+  // le reste s'affiche au clic « Voir plus » — même contenu, page 6× plus légère.
+  const [visibleRestos, setVisibleRestos] = useState(20)
   const toast = useToast()
   const contentRef = useRef<HTMLDivElement>(null)
   const { lang } = useLanguage()
@@ -88,6 +91,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const categories = ['Tous', ...CATEGORY_ORDER.filter((c) => present.has(c))]
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const restosFiltres = activeFilter === 'Tous' ? restaurants : restaurants.filter((r: any) => cuisineCategory(r.type) === activeFilter)
+  const restosAffiches = restosFiltres.slice(0, visibleRestos)
   const tabCounts: Record<string, number> = { restaurants: restaurants.length, mosquees: mosquees.length, hotels: hotels.length, activites: activites.length, pratique: 0 }
 
   const pratiqueItems = [
@@ -172,7 +176,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
               {categories.map((cat) => {
                 const active = activeFilter === cat
                 return (
-                  <button key={cat} onClick={() => setActiveFilter(cat)} style={{ padding: '8px 16px', borderRadius: '30px', border: '1.5px solid rgba(27,67,50,0.25)', background: active ? 'var(--foret)' : '#fff', color: active ? '#fff' : 'var(--foret)', fontSize: '13.5px', fontWeight: 600, cursor: 'pointer' }}>
+                  <button key={cat} onClick={() => (setActiveFilter(cat), setVisibleRestos(20))} style={{ padding: '8px 16px', borderRadius: '30px', border: '1.5px solid rgba(27,67,50,0.25)', background: active ? 'var(--foret)' : '#fff', color: active ? '#fff' : 'var(--foret)', fontSize: '13.5px', fontWeight: 600, cursor: 'pointer' }}>
                     {cat === 'Tous' ? (en ? '🍽 All' : '🍽 Tous') : `${CATEGORY_EMOJI[cat] ?? '🍽'} ${enLabel(cat, en)}`}
                   </button>
                 )
@@ -180,7 +184,7 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             </div>
             )}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
-              {restosFiltres.map((r: any, i: number) => (
+              {restosAffiches.map((r: any, i: number) => (
                 <div key={i} className="card-halal" style={{ ...card, display: 'flex', gap: '16px' }}>
                   <div style={{ width: 62, height: 62, borderRadius: '15px', background: 'var(--nuit)', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '28px', position: 'relative', overflow: 'hidden' }}>
                     <IslamicPattern opacity={0.12} />
@@ -205,6 +209,13 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                 </div>
               ))}
             </div>
+            {restosFiltres.length > visibleRestos && (
+              <div style={{ textAlign: 'center', marginTop: 18 }}>
+                <button onClick={() => setVisibleRestos((v) => v + 40)} style={{ padding: '13px 28px', borderRadius: 30, border: '1.5px solid var(--foret)', background: '#fff', color: 'var(--foret)', fontSize: 14, fontWeight: 700, cursor: 'pointer' }}>
+                  {en ? `Show more (${restosFiltres.length - visibleRestos} more)` : `Voir plus (${restosFiltres.length - visibleRestos} autres)`}
+                </button>
+              </div>
+            )}
             {restaurants.length === 0 && (
               hasCoords ? (
                 <LiveSpots kind="restaurants" lat={coords.lat} lng={coords.lng} ville={ville.nom} />
