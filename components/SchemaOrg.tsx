@@ -49,7 +49,9 @@ export function DestinationSchema({ ville, slug, en = false, siteUrl = FR_SITE }
 export function DestinationFaqSchema({ ville, en = false }: { ville: Ville; en?: boolean }) {
   const country = ville.codeISO ?? ''
 
-  const restaurantSchemas = (ville.restaurants ?? []).map((r) => ({
+  // Cap à 20 : aligné sur les restaurants rendus en SSR (pagination) — évite
+  // 150 blocs JSON-LD par page (poids inutile, Google n'en exploite que peu).
+  const restaurantSchemas = (ville.restaurants ?? []).slice(0, 20).map((r) => ({
     '@context': 'https://schema.org',
     '@type': 'Restaurant',
     name: r.nom,
