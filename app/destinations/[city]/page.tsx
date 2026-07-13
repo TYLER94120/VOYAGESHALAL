@@ -131,6 +131,35 @@ export default async function DestinationPage({ params }: Props) {
         </div>
       </section>
 
+      {/* Sections éditoriales long-tail : « Manger halal à X » / « Où prier à X » (SSR) */}
+      {(() => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const va = ville as any
+        const manger = isEN ? va.sectionMangerHalal_en : va.sectionMangerHalal
+        const prier = isEN ? va.sectionOuPrier_en : va.sectionOuPrier
+        if (!manger && !prier) return null
+        return (
+          <section style={{ maxWidth: 820, margin: '0 auto', padding: '10px 20px 6px' }}>
+            {manger && (
+              <>
+                <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 800, color: 'var(--nuit)', margin: '14px 0 8px' }}>
+                  {isEN ? `Eating halal in ${ville.nom}` : `Manger halal à ${ville.nom}`}
+                </h2>
+                <p style={{ color: 'var(--texte-2, #444)', lineHeight: 1.7, margin: 0 }}>{manger}</p>
+              </>
+            )}
+            {prier && (
+              <>
+                <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 800, color: 'var(--nuit)', margin: '18px 0 8px' }}>
+                  {isEN ? `Where to pray in ${ville.nom}` : `Où prier à ${ville.nom}`}
+                </h2>
+                <p style={{ color: 'var(--texte-2, #444)', lineHeight: 1.7, margin: 0 }}>{prier}</p>
+              </>
+            )}
+          </section>
+        )
+      })()}
+
       {/* FAQ visible (même source que le JSON-LD FAQPage) */}
       <VilleFaq ville={ville} en={isEN} />
 
