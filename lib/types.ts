@@ -37,6 +37,8 @@ export interface Guide {
   slug: string
   /** Langue du guide. Absent = 'fr'. Sert au filtrage par domaine. */
   lang?: 'fr' | 'en'
+  /** FAQ affichée en bas du guide + schema FAQPage (rich results). */
+  faq?: { q: string; a: string }[]
   title: string
   description: string
   coverImage: string

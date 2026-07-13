@@ -1221,7 +1221,22 @@ const guidesFr: Guide[] = [
 <h2>Pas de salle de prière ? Voici comment faire</h2>
 <p>Un coin calme près d\'une porte d\'embarquement peu fréquentée fait parfaitement l\'affaire : tapis de voyage, direction trouvée avec notre <a href="/qibla">boussole Qibla</a>, et horaires vérifiés sur <a href="/horaires-priere">nos horaires de prière</a>. En voyage, vous pouvez aussi regrouper Dhuhr-Asr et Maghrib-Isha (jam\' des voyageurs).</p>
 <h2>Partagez vos coins prière</h2>
-<p>Vous avez repéré une salle de prière dans un aéroport ? Elle aidera des milliers de voyageurs : consultez nos <a href="/autour-de-moi">spots partagés</a> sur la carte.</p>`,
+<p>Vous avez repéré une salle de prière dans un aéroport ? Elle aidera des milliers de voyageurs : consultez nos <a href="/autour-de-moi">spots partagés</a> sur la carte.</p>
+<h2>Gares : plus simple qu'on ne le croit</h2>
+<p>Les grandes gares européennes offrent rarement une salle de prière dédiée, mais toujours des solutions : à <strong>Paris Gare de Lyon ou Gare du Nord</strong>, les salons d'attente calmes et les mezzanines peu fréquentées font l'affaire pour une prière discrète ; la gare de <strong>Zurich</strong> dispose d'un espace de recueillement (« Raum der Stille »), comme plusieurs grandes gares allemandes (« Andachtsraum » — présence à vérifier gare par gare sur le plan affiché). En Turquie et dans le Golfe, les gares routières et ferroviaires ont presque toujours leur mescid signalé.</p>
+<h2>Centres commerciaux : le réflexe des pays musulmans… et des autres</h2>
+<p>Au Maroc, en Turquie, en Malaisie ou aux Émirats, <strong>chaque centre commercial a sa salle de prière</strong> (souvent au niveau parking ou à côté des sanitaires — demandez « musalla »). En Europe, c'est plus rare mais ça existe : le <strong>Westfield Stratford à Londres</strong> dispose d'une multi-faith room, et plusieurs centres britanniques suivent. En France, repli pragmatique : la prière regroupée avant/après la sortie shopping, ou un coin calme du parking.</p>
+<h2>Les 3 astuces qui changent tout</h2>
+<p>1) <strong>Repérez AVANT de partir</strong> : plan du terminal en ligne (cherchez « prayer room », « multi-faith », « lieu de culte »), et nos <a href="/destinations">fiches villes</a> pour les mosquées proches de votre point de chute. 2) <strong>Regroupez</strong> Dhuhr-Asr et Maghrib-Isha (jam' du voyageur) : deux créneaux à trouver au lieu de quatre. 3) <strong>Kit permanent</strong> dans le bagage cabine : tapis de poche, chaussettes propres, petite bouteille pour les ablutions.</p>
+<h2>Étiquette : ablutions et discrétion</h2>
+<p>Dans les sanitaires publics, faites les ablutions au lavabo avec discrétion (une bouteille remplie évite d'éclabousser) ; si l'eau est difficile d'accès, le <strong>tayammum</strong> (ablution sèche) est prévu pour ces situations. Pour la prière elle-même : un angle calme, face à la <a href="/qibla">Qibla</a>, sans bloquer le passage — deux minutes, personne n'y prête attention. Dans les espaces multiconfessionnels partagés, laissez le lieu propre et cédez la place aux heures d'affluence.</p>`,
+    faq: [
+      { q: "Peut-on prier dans un aéroport ?", a: "Oui. La plupart des grands aéroports disposent d'une salle de prière ou d'un espace multiconfessionnel (CDG, Orly, Heathrow, Istanbul, Dubaï…). À défaut, un coin calme près d'une porte d'embarquement convient parfaitement : la prière ne nécessite qu'un espace propre et la direction de la Qibla." },
+      { q: "Comment trouver la salle de prière d'un aéroport ?", a: "Consultez le plan du terminal en ligne avant le départ (mots-clés : prayer room, multi-faith room, lieu de culte), ou demandez au comptoir d'information. Le personnel connaît toujours l'emplacement." },
+      { q: "Que faire s'il n'y a pas d'eau pour les ablutions ?", a: "Utilisez le lavabo des sanitaires avec discrétion, ou une bouteille d'eau remplie à l'avance. En cas d'impossibilité réelle, le tayammum (ablution sèche sur une surface naturelle propre) est la solution prévue par la jurisprudence pour le voyageur." },
+      { q: "Peut-on regrouper les prières en voyage ?", a: "Oui, c'est une facilité établie : le voyageur peut regrouper Dhuhr avec Asr et Maghrib avec Isha (jam'), et raccourcir les prières de 4 unités à 2 (qasr). Utiliser ces facilités relève de la Sunna du voyageur." },
+      { q: "Y a-t-il des salles de prière dans les centres commerciaux en France ?", a: "C'est rare en France, contrairement au Maroc, à la Turquie ou à Londres (Westfield Stratford). Le réflexe pratique : regrouper les prières autour de la sortie, ou repérer la mosquée la plus proche avec notre outil dédié." }
+    ],
   },
   {
     slug: 'priere-avion-train-guide',
@@ -1261,7 +1276,20 @@ const guidesFr: Guide[] = [
 <h2>Conseils concrets</h2>
 <p>Vérifiez le label halal local ou demandez « halal desu ka ? » ; les konbinis (7-Eleven…) proposent des options sans viande sûres (onigiri au saumon, salades) ; le poisson est votre allié. Attention au dashi (bouillon) et au mirin (alcool de cuisine) dans la cuisine classique — les restaurants halal les remplacent.</p>
 <h2>Le Japon en pratique</h2>
-<p>Sécurité exceptionnelle, propreté, trains parfaits : le Japon est un des voyages les plus agréables qui soient pour une famille musulmane préparée. Meilleure période : mars-mai (sakura) et octobre-novembre (érables).</p>`,
+<p>Sécurité exceptionnelle, propreté, trains parfaits : le Japon est un des voyages les plus agréables qui soient pour une famille musulmane préparée. Meilleure période : mars-mai (sakura) et octobre-novembre (érables).</p>
+<h2>Tokyo Camii : le cœur musulman du Japon</h2>
+<p>Dans le quartier de Yoyogi-Uehara (Shibuya), <strong>Tokyo Camii</strong> est la plus grande mosquée du Japon — un joyau d'architecture ottomane construit avec le soutien de la Diyanet turque, ouvert aux visiteurs et aux prières quotidiennes. Son centre culturel renseigne volontiers sur les adresses halal du quartier, et le marché turc attenant dépanne en produits halal. Autres repères : la mosquée d'<strong>Otsuka</strong> (Toshima) et le <strong>Masjid Okachimachi</strong> près d'Ueno (présence à vérifier avant visite, les horaires varient).</p>
+<h2>Applis et réflexes qui sauvent un séjour</h2>
+<p>Les guides communautaires japonais (Halal Media Japan, Halal Gourmet Japan) recensent les restaurants labellisés par les organismes locaux — croisez toujours avec les avis récents, la scène évolue vite. Dans les konbini (7-Eleven, Lawson, FamilyMart), lisez les étiquettes : les onigiri au saumon ou umeboshi et les salades sans mayonnaise carnée sont des valeurs sûres. Et gardez notre trio d'outils sous la main : <a href="/horaires-priere">horaires de prière</a>, <a href="/qibla">Qibla</a>, <a href="/mosquee-proche">mosquée la plus proche</a>.</p>
+<h2>Le récap ingrédients (à photographier)</h2>
+<p><strong>À éviter</strong> : mirin (alcool de riz doux, omniprésent dans les sauces), saké et vin de cuisine, dashi à base de bonite mais parfois enrichi d'additifs douteux — demandez ; porc (buta) sous toutes ses formes, y compris le bouillon tonkotsu des ramen classiques. <strong>Compatibles</strong> : sushis au poisson cru sans marinade, tempura de légumes (vérifier l'huile partagée), soba/udon avec bouillon végétal, yakitori de poulet dans les adresses halal. Les restaurants halal remplacent mirin et saké par des alternatives sans alcool.</p>`,
+    faq: [
+      { q: "Est-ce difficile de manger halal au Japon ?", a: "Non, plus maintenant : Tokyo et Osaka comptent des dizaines de restaurants halal (ramen, wagyu, sushi) portés par le tourisme musulman d'Asie du Sud-Est. Il faut simplement connaître les quartiers (autour de Tokyo Camii, Asakusa, Shinjuku) et les ingrédients à éviter." },
+      { q: "Le poisson est-il toujours halal au Japon ?", a: "Le poisson lui-même oui, mais attention aux marinades (mirin, saké) et aux sauces. Un sushi nature au poisson cru est généralement sûr ; un plat mijoté l'est rarement sans vérification." },
+      { q: "Où prier à Tokyo ?", a: "Tokyo Camii (Yoyogi-Uehara) est la grande mosquée de la ville, ouverte aux cinq prières. Les aéroports de Narita et Haneda disposent de prayer rooms, et plusieurs grands magasins en ajoutent chaque année." },
+      { q: "Qu'est-ce que le mirin et pourquoi l'éviter ?", a: "Le mirin est un condiment à base d'alcool de riz (environ 14°) utilisé dans d'innombrables sauces japonaises (teriyaki notamment). Étant un alcool, il est à éviter — les restaurants halal utilisent des substituts sans alcool." },
+      { q: "Les konbini ont-ils des options halal ?", a: "Pas de label halal, mais des options sans viande sûres : onigiri au saumon ou à la prune, edamame, salades simples, fruits. Pratique pour dépanner entre deux vraies adresses halal." }
+    ],
   },
   {
     slug: 'ou-prier-disneyland-paris',
@@ -1344,6 +1372,34 @@ const guidesFr: Guide[] = [
 <p>Les dates de l\'Aïd font grimper les prix dans les destinations musulmanes : réservez vols et hôtels <strong>2-3 mois avant</strong>, et visez les jours juste après la fête pour la détente (prix redescendus, ambiance encore festive).</p>
 <h2>Avec les enfants</h2>
 <p>Prévoyez les habits de fête dans la valise, un budget cadeaux/eidiya en monnaie locale, et une matinée sans programme : l\'Aïd se vit, il ne se planifie pas à l\'heure près. Complétez avec notre guide <a href="/guides/vacances-halal-famille-2026">voyage halal en famille</a>.</p>`,
+  },
+  {
+    slug: 'manger-halal-thailande-guide',
+    title: 'Manger halal en Thaïlande : Bangkok, Phuket et le label à connaître',
+    description: 'Guide complet du halal en Thaïlande : quartiers musulmans de Bangkok, Phuket et sa forte communauté musulmane, street food à choisir ou éviter, et le label officiel CICOT.',
+    coverImage: 'https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=1200&q=80',
+    category: 'Destinations',
+    readTime: '8 min',
+    publishedAt: '2026-05-11',
+    tags: ['Thaïlande', 'Bangkok', 'Phuket', 'Manger halal'],
+    content: `<p>La Thaïlande surprend les voyageurs musulmans : derrière l'image de destination festive se cache l'une des offres halal les plus solides d'Asie du Sud-Est. Le pays compte plusieurs millions de musulmans, un <strong>label halal officiel géré par le CICOT</strong> (Central Islamic Council of Thailand) présent jusque dans les supermarchés, et des quartiers entiers où manger halal est la norme.</p>
+<h2>Le label CICOT : votre repère n°1</h2>
+<p>Le logo halal thaïlandais — un losange vert avec calligraphie arabe — est délivré par le Conseil islamique central de Thaïlande et couvre des dizaines de milliers de produits et restaurants. On le trouve sur les emballages en supermarché (7-Eleven inclus), sur les vitrines et jusque sur certaines chaînes de restauration. C'est l'un des systèmes les plus développés d'Asie : quand vous le voyez, vous pouvez manger sereinement.</p>
+<h2>Bangkok : les quartiers où le halal est chez lui</h2>
+<p><strong>Sukhumvit Soi 3/3-1 (Nana)</strong>, surnommé le « Soi Arab » : concentration de restaurants moyen-orientaux, égyptiens, pakistanais et thaïs halal, ouverts tard — l'endroit où atterrir le premier soir. <strong>Le quartier de la mosquée Haroon</strong> (Bang Rak, près de la rivière et de Charoenkrung) : cuisine thaïe-musulmane familiale dans les ruelles autour de la mosquée — l'expérience la plus authentique de la ville. <strong>Autour de la gare de Hua Lamphong et vers Pratunam</strong>, biryanis et échoppes indiennes-musulmanes complètent le tableau. Nos adresses géolocalisées sont sur la fiche <a href="/destinations/bangkok">Bangkok</a>.</p>
+<h2>Phuket : l'île à forte communauté musulmane</h2>
+<p>On l'ignore souvent : <strong>une part importante de la population de Phuket est musulmane</strong> — héritage malais de la région. Résultat : des mosquées dans presque chaque village de l'île, et du halal facile hors des zones de fête. Les marchés du côté de <strong>Phuket Town</strong> et les gargotes des plages de l'est servent poulet grillé, massaman et poissons halal ; plusieurs restaurants autour des mosquées affichent le label CICOT (repérez le losange vert, adresses précises à vérifier sur place — l'offre évolue vite). Évitez simplement les artères de Patong si l'ambiance alcoolisée vous dérange : le reste de l'île vit autrement.</p>
+<h2>Street food : choisir et éviter</h2>
+<p><strong>À choisir</strong> : massaman curry (plat d'origine musulmane thaïe !), khao mok gai (le « biryani » thaï), satay de poulet, roti mataba, poissons grillés des stands tenus par des musulmanes voilées — un repère visuel fiable. <strong>À éviter sans label</strong> : tout ce qui contient du porc (moo), très courant, la sauce d'huître dans les woks partagés, et les currys préparés à l'avance dont on ne connaît pas la base. La phrase magique : « <em>mai sai moo</em> » (sans porc) — mais préférez les stands visiblement musulmans ou labellisés.</p>
+<h2>Prier en Thaïlande</h2>
+<p>Bangkok compte plus de 160 mosquées ; l'aéroport Suvarnabhumi dispose de prayer rooms dans plusieurs zones. Les horaires varient peu au fil de l'année (latitude tropicale) — gardez <a href="/horaires-priere">nos horaires</a> et la <a href="/qibla">Qibla</a> à portée de main, et localisez la mosquée la plus proche avec <a href="/mosquee-proche">notre outil</a>. Voir aussi notre article <a href="/blog/manger-halal-bangkok">Manger halal à Bangkok</a> et le guide <a href="/guides/voyage-halal-petit-budget">petit budget</a> — la Thaïlande y excelle.</p>`,
+    faq: [
+      { q: "La nourriture est-elle halal en Thaïlande ?", a: "Pas par défaut (le porc est très présent), mais le pays dispose d'un label halal officiel très développé (CICOT) et de quartiers musulmans entiers à Bangkok et Phuket. En repérant le losange vert et les stands tenus par des musulmans, on mange halal facilement." },
+      { q: "Quel est le quartier halal de Bangkok ?", a: "Le « Soi Arab » (Sukhumvit Soi 3, quartier Nana) concentre des dizaines de restaurants halal, et les ruelles autour de la mosquée Haroon (Bang Rak) offrent la cuisine thaïe-musulmane la plus authentique." },
+      { q: "Phuket convient-elle aux voyageurs musulmans ?", a: "Oui — l'île abrite une forte communauté musulmane, des mosquées dans la plupart des villages et du halal facile hors des zones festives comme Patong. Les plages de l'est et Phuket Town sont les plus adaptées." },
+      { q: "Le massaman curry est-il halal ?", a: "C'est un plat d'origine musulmane thaïe, traditionnellement au bœuf ou au poulet. Dans un restaurant musulman ou labellisé CICOT, oui ; dans un stand générique, vérifiez la base du curry et l'absence de porc." },
+      { q: "Comment reconnaître le label halal thaïlandais ?", a: "Un losange vert contenant une calligraphie arabe, délivré par le Central Islamic Council of Thailand (CICOT). Il figure sur les emballages, vitrines et menus des établissements contrôlés." },
+    ],
   },
 ]
 

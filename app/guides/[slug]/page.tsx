@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { guides, getGuideBySlug } from '@/lib/data'
 import { getDomainSEO } from '@/lib/domain'
-import { buildMetadata, buildArticleSchema, buildBreadcrumbSchema } from '@/lib/seo'
+import { buildMetadata, buildArticleSchema, buildBreadcrumbSchema, buildFAQSchema } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
 import AppCTA from '@/components/ui/AppCTA'
 
@@ -42,6 +42,7 @@ export default async function GuidePage({ params }: Props) {
   const { isEN } = await getDomainSEO()
 
   const articleSchema = buildArticleSchema({ ...guide, type: 'guide' })
+  const faqSchema = guide.faq?.length ? buildFAQSchema(guide.faq.map((f) => ({ question: f.q, answer: f.a }))) : null
   const breadcrumbSchema = buildBreadcrumbSchema([
     { name: isEN ? 'Home' : 'Accueil', url: '/' },
     { name: 'Guides', url: '/guides' },
@@ -51,6 +52,7 @@ export default async function GuidePage({ params }: Props) {
   return (
     <>
       <JsonLd data={articleSchema} />
+      {faqSchema && <JsonLd data={faqSchema} />}
       <JsonLd data={breadcrumbSchema} />
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -84,6 +86,22 @@ export default async function GuidePage({ params }: Props) {
           className="prose prose-lg prose-emerald max-w-none"
           dangerouslySetInnerHTML={{ __html: guide.content.trim() }}
         />
+
+        {guide.faq?.length ? (
+          <section className="mt-12">
+            <h2 className="text-2xl font-bold mb-6" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
+              {isEN ? 'Frequently asked questions' : 'Questions fréquentes'}
+            </h2>
+            <div className="space-y-4">
+              {guide.faq.map((f, i) => (
+                <details key={i} className="bg-white rounded-2xl border border-gray-100 p-5">
+                  <summary className="font-semibold cursor-pointer text-gray-900">{f.q}</summary>
+                  <p className="text-gray-600 text-sm leading-relaxed mt-3">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <div className="mt-16">
           <AppCTA />
