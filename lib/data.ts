@@ -1046,7 +1046,20 @@ const guidesFr: Guide[] = [
 <li>Instagram : @musulmane_voyageuse, @halal_travel_sister</li>
 <li>Facebook : "Sœurs Voyageuses" (groupe privé, vérification d'identité)</li>
 <li>Blog : MuslimaTraveller.com (en anglais, la référence mondiale)</li>
-</ul>`,
+</ul>
+<h2>La question du mahram, abordée honnêtement</h2>
+<p>Les savants divergent sur le voyage d'une femme sans mahram : l'avis classique le conditionne, d'autres jurisconsultes contemporains le permettent quand la sécurité du trajet est assurée (transports modernes, destinations sûres, itinéraire organisé) — c'est notamment la logique retenue par l'Arabie Saoudite qui a ouvert l'Omra aux femmes sans mahram. Ce guide ne tranche pas à votre place : renseignez-vous auprès de personnes de science que vous suivez, puis, si vous partez, faites-le dans les meilleures conditions — c'est l'objet des sections suivantes.</p>
+<h2>Choisir son hébergement comme une pro</h2>
+<p>Quartier central et passant plutôt qu'excentré et bon marché ; réception 24h/24 (un vrai critère de sécurité) ; avis récents laissés par des femmes — filtrez les commentaires ; riads et pensions familiales au Maghreb, où l'accueil est souvent maternel ; étages élevés et chambre loin des issues de secours isolées. À Istanbul, Sultanahmet et Üsküdar sont réputés tranquilles le soir ; à Kuala Lumpur, les tours autour de KLCC offrent sécurité et salles de prière intégrées.</p>
+<h2>Communautés et ressources</h2>
+<p>Les groupes de voyageuses musulmanes (Muslim Women Travel Groups sur les réseaux, forums de solo travelers) partagent itinéraires vérifiés et bons plans en temps réel — souvent la meilleure source pour un quartier précis. Sur place, la mosquée du quartier est un point d'ancrage : les femmes de la communauté locale orientent avec bienveillance. Et nos <a href="/destinations">fiches villes</a> donnent mosquées, restaurants et hôtels géolocalisés pour préparer chaque étape.</p>`,
+    faq: [
+      { q: "Une femme musulmane peut-elle voyager seule ?", a: "Les avis divergent : l'avis classique conditionne le voyage à un mahram, des avis contemporains le permettent quand la sécurité est assurée (l'Arabie Saoudite autorise d'ailleurs l'Omra sans mahram). Renseignez-vous auprès des savants que vous suivez, puis préparez le voyage sérieusement." },
+      { q: "Quelles sont les destinations les plus sûres pour une femme voilée ?", a: "La Malaisie et Singapour (sécurité + normalité du voile), les Émirats et le Qatar, la Turquie et Istanbul, et le Maroc avec les précautions classiques du voyage solo. Le voile n'y attire aucune attention particulière." },
+      { q: "Comment choisir un hôtel sûr en solo ?", a: "Quartier central et animé, réception 24h/24, avis récents de voyageuses, étage élevé. Les riads familiaux au Maghreb et les hôtels près des mosquées offrent souvent le meilleur cadre." },
+      { q: "Que faire en cas de harcèlement ou d'insistance ?", a: "Fermeté immédiate et sans sourire, se diriger vers un lieu fréquenté (commerce, hôtel, mosquée), solliciter les femmes présentes — la solidarité féminine fonctionne partout. Taxis officiels ou VTC le soir, jamais de véhicule non identifié." },
+      { q: "L'Omra est-elle possible pour une femme seule ?", a: "Oui : l'Arabie Saoudite a levé l'exigence de mahram pour l'Omra. De nombreuses femmes la font désormais seules ou en groupes féminins organisés — voir notre guide Omra 2026." }
+    ],
   },
   {
     slug: 'tourisme-halal-definition-2026',
@@ -1255,7 +1268,18 @@ const guidesFr: Guide[] = [
 <h2>Prier dans le train</h2>
 <p>Le train est plus simple : espaces entre voitures, ou prière assise à votre place. Dans les grandes gares, des salles d\'attente calmes font l\'affaire ; certaines gares internationales ont des espaces multiconfessionnels. Regrouper les prières évite de prier dans de mauvaises conditions.</p>
 <h2>Le kit qui change tout</h2>
-<p>Tapis de poche, écharpe propre, chaussettes (ablutions simplifiées par khuff/masah si vous les avez enfilées en état de pureté), gourde pour les ablutions. Voir notre <a href="/guides/checklist-voyage-halal">checklist voyage halal</a> complète.</p>`,
+<p>Tapis de poche, écharpe propre, chaussettes (ablutions simplifiées par khuff/masah si vous les avez enfilées en état de pureté), gourde pour les ablutions. Voir notre <a href="/guides/checklist-voyage-halal">checklist voyage halal</a> complète.</p>
+<h2>Prier en avion : ce que disent les savants</h2>
+<p>Deux points font consensus : la prière ne se reporte pas au-delà de son temps quand le vol couvre tout le créneau (les vols long-courriers traversent souvent deux ou trois prières), et la validité de la prière assise <strong>quand on ne peut pas se tenir debout</strong>. Les avis divergent sur la préférence : certains recommandent de refaire la prière à l'arrivée si elle a été accomplie assise sans nécessité absolue ; d'autres la considèrent pleinement valable vu les contraintes du vol. Le plus sûr : se lever si un espace le permet (fond de cabine des gros porteurs, hors turbulences et consignes), sinon prier assis sans scrupule excessif.</p>
+<h2>Les ablutions en vol : eau ou tayammum</h2>
+<p>Les toilettes d'avion permettent des ablutions complètes avec un peu de méthode (un gobelet aide). Si l'eau est inaccessible ou que la file s'éternise à l'heure de la prière, le <strong>tayammum</strong> est prévu exactement pour cela : frapper légèrement les paumes sur une surface naturelle propre (dossier en tissu, accoudoir non métallique — les avis divergent sur les surfaces synthétiques, d'où l'intérêt d'anticiper les ablutions avant l'embarquement), puis passer les mains sur le visage et les mains. Astuce simple : faites vos ablutions en salle d'embarquement, elles tiennent tout le vol si rien ne les rompt.</p>`,
+    faq: [
+      { q: "Peut-on prier assis dans l'avion ?", a: "Oui quand on ne peut pas se tenir debout : on incline le buste pour le rukû et davantage pour le sujûd. Certains savants recommandent de refaire la prière à l'arrivée par précaution, d'autres la jugent pleinement valable — les deux positions existent." },
+      { q: "Comment connaître la direction de la Qibla en vol ?", a: "Orientez-vous vers la Qibla au takbir initial si votre siège le permet ; la direction évoluant avec l'avion, la jurisprudence retient que le voyageur fait de son mieux. Notre boussole Qibla fonctionne au sol à chaque escale." },
+      { q: "Le tayammum est-il permis en avion ?", a: "Oui, si l'eau est réellement inaccessible. Frappez légèrement les paumes sur une surface naturelle propre puis passez-les sur le visage et les mains. Le plus simple reste de faire ses ablutions avant l'embarquement." },
+      { q: "Faut-il rattraper les prières manquées en vol ?", a: "Une prière dont le temps est entièrement passé pendant le vol sans avoir pu la faire se rattrape dès que possible. Mais avec le regroupement (jam') et la prière assise, on peut presque toujours prier dans les temps." },
+      { q: "Peut-on prier dans le train ou le TGV ?", a: "Oui, c'est même plus simple : debout entre deux voitures quand c'est stable, ou assis à sa place. Les grandes gares offrent des salons calmes, et certaines des espaces multiconfessionnels." }
+    ],
   },
   {
     slug: 'voyage-halal-japon-guide',
@@ -1329,7 +1353,20 @@ const guidesFr: Guide[] = [
 <h2>Les astuces qui changent tout</h2>
 <p>Vols : réservez 2-3 mois avant, partez mardi/mercredi, comparez les aéroports secondaires. Hébergement : pensions familiales et riads simples (souvent sans alcool naturellement) plutôt que les chaînes. Nourriture : marchés et street food halal = moitié prix des restaurants touristiques — et souvent meilleurs.</p>
 <h2>Gratuit et précieux</h2>
-<p>Les mosquées historiques se visitent gratuitement, les médinas et bazars sont des spectacles permanents, et nos outils (<a href="/horaires-priere">horaires</a>, <a href="/qibla">Qibla</a>, <a href="/mosquee-proche">mosquée proche</a>) sont gratuits à vie. Consultez notre <a href="/guides/top-destinations-halal-2026">Top 10 destinations</a> pour comparer.</p>`,
+<p>Les mosquées historiques se visitent gratuitement, les médinas et bazars sont des spectacles permanents, et nos outils (<a href="/horaires-priere">horaires</a>, <a href="/qibla">Qibla</a>, <a href="/mosquee-proche">mosquée proche</a>) sont gratuits à vie. Consultez notre <a href="/guides/top-destinations-halal-2026">Top 10 destinations</a> pour comparer.</p>
+<h2>Égypte et Tunisie : les oubliées du rapport qualité-prix</h2>
+<p><strong>L'Égypte</strong> reste l'un des voyages les moins chers du monde musulman : koshari à 1-2 €, taxis et métro du Caire quasi gratuits, entrées des sites majeurs raisonnables — et une profondeur historique inégalée du <a href="/destinations/le-caire">Caire</a> à Assouan. <strong>La Tunisie</strong> combine plages, médinas et prix doux : repas complet 4-7 €, hôtels corrects dès 25-35 €, vols souvent bradés depuis la France. Deux destinations où le halal est le standard et où chaque euro va loin.</p>
+<h2>Les bons plans vols, concrètement</h2>
+<p>Réservez 6 à 10 semaines avant pour le Maghreb, 2 à 4 mois pour l'Asie ; partez mardi/mercredi, revenez en semaine. Comparez les aéroports secondaires (Beauvais, Charleroi, Bergame) et les compagnies du Golfe pour l'Asie — l'escale à Istanbul ou Doha coûte souvent moins cher que le direct et permet… une mini-visite halal. Activez les alertes prix sur votre comparateur préféré et soyez flexible de ±3 jours : c'est là que se cachent les -40 %.</p>
+<h2>Le budget type, noir sur blanc</h2>
+<p><strong>Routard</strong> (auberge/pension + street food + transports locaux) : Maroc/Tunisie/Égypte 25-35 €/jour · Turquie hors Istanbul 30-40 € · Malaisie 30-40 €. <strong>Confort simple</strong> (hôtel 3*, restaurants, quelques visites) : comptez 50-75 €/jour sur ces mêmes destinations. <strong>Famille de 4</strong> : 120-180 €/jour tout compris sur place au Maghreb. Dans tous les cas, les postes gratuits sont énormes : mosquées historiques, médinas, plages, marchés — le cœur du voyage halal ne coûte rien.</p>`,
+    faq: [
+      { q: "Quelle est la destination halal la moins chère ?", a: "L'Égypte et la Tunisie tiennent la corde (25-35 €/jour en routard, halal par défaut), suivies du Maroc et de la Turquie hors Istanbul. En Asie, la Malaisie offre le meilleur rapport confort/prix avec ses food courts à 2-4 €." },
+      { q: "Quel budget par jour pour un voyage halal pas cher ?", a: "Routard : 25-40 €/jour selon le pays (dodo + street food halal + transports). Confort simple : 50-75 €. Ces budgets excluent les vols — d'où l'importance des alertes prix et de la flexibilité de dates." },
+      { q: "Comment trouver des vols pas chers vers les destinations halal ?", a: "Réservez 6-10 semaines avant pour le Maghreb, partez en milieu de semaine, comparez les aéroports secondaires et acceptez une escale à Istanbul ou Doha : souvent moins chère que le direct, et l'occasion d'une escale halal." },
+      { q: "Manger halal pas cher, c'est possible partout ?", a: "Dans les pays musulmans, la street food halal est la moins chère ET la meilleure (1-5 € le repas). Ailleurs, les quartiers musulmans (kebabs, cantines pakistanaises) restent très abordables — voir nos fiches villes." },
+      { q: "Les auberges de jeunesse conviennent-elles aux musulmans ?", a: "Beaucoup proposent des dortoirs non mixtes — filtrez « female dorm » si besoin. Au Maghreb, les pensions familiales offrent souvent mieux pour le même prix, avec une atmosphère naturellement halal." }
+    ],
   },
   {
     slug: 'europe-halal-friendly',
