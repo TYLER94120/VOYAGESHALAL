@@ -54,6 +54,7 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
               <Link href="/qibla" className="nav-tools-item">🧭 {t('nav.qibla')}</Link>
               <Link href={localizedHref('/mosquee-proche', isEN)} className="nav-tools-item">🕌 {t('nav.mosque')}</Link>
               <Link href="/autour-de-moi" className="nav-tools-item">📍 {isEN ? 'Around me' : 'Autour de moi'}</Link>
+              <Link href={localizedHref('/carnet', isEN)} className="nav-tools-item">❤️ {isEN ? 'My notebook' : 'Mon carnet'}</Link>
             </div>
           </div>
         </nav>

@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { getSpot, listSpotsByVille, LIEU_LABELS } from '@/lib/prayerSpots'
 import { getDomainSEO } from '@/lib/domain'
 import JsonLd from '@/components/seo/JsonLd'
+import FavButton from '@/components/ui/FavButton'
 
 export const dynamic = 'force-dynamic' // lit Redis à la demande (données seed en direct)
 
@@ -72,6 +73,9 @@ export default async function PrayerSpotPage({ params }: Props) {
 
       <h1 style={{ fontSize: 30, fontWeight: 800, margin: '14px 0 6px' }}>
         {isEN ? 'Where to pray at' : 'Où prier à'} {spot.nom}
+        <span style={{ marginLeft: 6, verticalAlign: 'middle' }}>
+          <FavButton size={20} fav={{ id: `spot:${spot.id}`, kind: 'spot', nom: spot.nom, villeNom: spot.villeNom, href: `/priere/${spot.villeSlug}/${spot.slug}` }} />
+        </span>
       </h1>
       <p style={{ fontSize: 16, opacity: 0.85, margin: '0 0 4px' }}>
         {lieu.icon} {isEN ? lieu.en : lieu.fr} · {spot.villeNom}

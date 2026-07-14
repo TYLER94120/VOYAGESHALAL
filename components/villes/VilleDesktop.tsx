@@ -12,6 +12,8 @@ import { useLanguage } from '@/components/i18n/LanguageProvider'
 import HotelCTA from '@/components/affiliate/HotelCTA'
 import HotelFilter from '@/components/villes/HotelFilter'
 import { coordsOf, type LatLng } from '@/lib/hotelFilter'
+import FavButton from '@/components/ui/FavButton'
+import { favId } from '@/lib/favorites'
 
 const TABS = [
   { id: 'mosquees', icon: '🕌', label: 'Mosquées', labelEn: 'Mosques' },
@@ -121,6 +123,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             <span style={{ fontSize: 'clamp(14px, 4vw, 18px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}>{en ? 'Halal Guide ' : 'Guide Halal '}</span>
             <span style={{ fontSize: 'clamp(38px, 11vw, 56px)', fontWeight: 900 }}>{ville.nom}</span>
             <span style={{ fontSize: 'clamp(16px, 5vw, 22px)', fontWeight: 700, color: 'rgba(255,255,255,0.7)' }}> 2026</span>
+            <span style={{ marginLeft: 6, verticalAlign: 'middle' }}>
+              <FavButton size={22} fav={{ id: favId('ville', ville.slug ?? ville.nom), kind: 'ville', nom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
+            </span>
           </h1>
           {halalScore != null && (
             <span style={{ display: 'inline-flex', alignItems: 'center', gap: '7px', marginTop: '14px', padding: '7px 16px', borderRadius: '30px', background: 'rgba(201,168,76,0.18)', border: '1px solid rgba(201,168,76,0.5)', color: 'var(--or-clair)', fontSize: '13px', fontWeight: 700 }}>
@@ -191,7 +196,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                     <span style={{ position: 'relative', zIndex: 1 }}>{CATEGORY_EMOJI[cuisineCategory(r.type)] ?? '🍽'}</span>
                   </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
-                    <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '20px', color: 'var(--texte)', lineHeight: 1.15 }}>{r.nom}</p>
+                    <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
+                      <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '20px', color: 'var(--texte)', lineHeight: 1.15 }}>{r.nom}</p>
+                      <FavButton size={16} fav={{ id: favId('resto', ville.slug ?? ville.nom, r.nom), kind: 'resto', nom: r.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
+                    </div>
                     <p style={{ fontSize: '13px', color: 'var(--texte-2)', marginBottom: '9px' }}>{enLabel(cuisineCategory(r.type), en)}</p>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '9px', marginBottom: '14px', flexWrap: 'wrap' }}>
                       {r.halalConfidence === 'likely'
@@ -256,7 +264,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             </div>
             {mosquees.map((m: any, i: number) => (
               <div key={i} style={card}>
-                <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '19px', color: 'var(--nuit)', marginBottom: '6px' }}>🕌 {m.nom}</p>
+                <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
+                  <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '19px', color: 'var(--nuit)', marginBottom: '6px' }}>🕌 {m.nom}</p>
+                  <FavButton size={16} fav={{ id: favId('mosquee', ville.slug ?? ville.nom, m.nom), kind: 'mosquee', nom: m.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
+                </div>
                 <p style={{ fontSize: '13.5px', color: 'var(--texte-2)', lineHeight: 1.6, marginBottom: '10px' }}>{m.description}</p>
                 <a href={m.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ display: 'inline-block', padding: '9px 16px', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '11px', fontSize: '12.5px', fontWeight: 700, textDecoration: 'none' }}>🗺 {en ? 'View on map →' : 'Voir sur la carte →'}</a>
                 <SourceLine item={m} />

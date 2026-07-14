@@ -15,6 +15,7 @@ export const FR_TO_EN_SLUG: Record<string, string> = {
   '/mentions-legales': '/legal-notice',
   '/application': '/app',
   '/planificateur': '/trip-planner',
+  '/carnet': '/notebook',
 }
 
 export const EN_TO_FR_SLUG: Record<string, string> = Object.fromEntries(
