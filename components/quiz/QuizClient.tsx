@@ -167,7 +167,7 @@ export default function QuizClient() {
         {/* Sauvegarde / capture */}
         <form onSubmit={saveEmail} className="bg-white rounded-2xl border border-gray-200 p-4">
           <p className="font-bold text-sm mb-2" style={{ color: GREEN }}>
-            {en ? 'Get this result + our free halal travel guide by email' : 'Reçois ce résultat + notre guide voyage halal gratuit par email'}
+            {en ? 'Get the guides of your 3 destinations by email 📬' : 'Reçois les guides de tes 3 destinations par email 📬'}
           </p>
           <div className="flex flex-col sm:flex-row gap-2">
             <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)}

@@ -58,6 +58,36 @@ const TRAVEL_TYPES = [
 const HOLY = new Set(['la-mecque', 'medine'])
 const SPIRIT_SLUGS = ['la-mecque', 'medine', 'al-quds', 'kairouan', 'istanbul', 'fes']
 const ICONIC_SLUGS = ['istanbul', 'dubai', 'marrakech', 'medine', 'la-mecque', 'kuala-lumpur', 'le-caire', 'amman', 'doha', 'singapour', 'antalya', 'casablanca']
+
+// ---- Étagères émotionnelles (curations éditoriales, slugs réels) ----
+// « Halal même loin de chez nous » : grandes villes non-musulmanes emblématiques
+const LOIN_SLUGS = ['tokyo', 'new-york', 'paris', 'bangkok', 'barcelone', 'seoul', 'bali', 'londres', 'lisbonne', 'toronto', 'singapour', 'amsterdam']
+// « Sur les traces de notre histoire » : héritage islamique majeur
+const HISTOIRE_SLUGS = ['grenade', 'cordoue', 'seville', 'istanbul', 'samarcande', 'boukhara', 'le-caire', 'fes', 'al-quds', 'kairouan', 'tolede', 'mostar']
+// « Pépites que personne ne connaît »
+const PEPITES_SLUGS = ['tafoughalt', 'nizwa', 'khiva', 'mostar', 'banda-aceh', 'merzouga', 'chefchaouen', 'trabzon', 'skopje', 'tirana', 'zagora', 'salalah']
+// « Pour une lune de miel inoubliable »
+const LUNE_SLUGS = ['maldives', 'zanzibar', 'bali', 'dubai', 'marrakech', 'antalya', 'mascate', 'langkawi', 'cappadoce', 'istanbul']
+// « À moins de 4h de vol de la France » — durées réelles uniquement
+// (Dubaï ~7 h et Le Caire ~4 h 35 exclus par honnêteté)
+const PRES_FRANCE_PAYS = new Set(['Maroc', 'Tunisie', 'Algérie', 'Espagne', 'Portugal', 'Italie', 'Grèce', 'Turquie', 'Bosnie-Herzégovine', 'Albanie', 'Macédoine du Nord', 'Kosovo', 'Malte', 'Royaume-Uni', 'Belgique', 'Pays-Bas', 'Allemagne'])
+// « Sûr pour voyager seule » : villes réputées très sûres (aligné sur notre
+// guide voyage solo au féminin — repères éditoriaux, à vérifier avant départ)
+const SOLO_SLUGS = ['singapour', 'dubai', 'abu-dhabi', 'doha', 'mascate', 'kuala-lumpur', 'istanbul', 'amman', 'tokyo', 'seoul', 'medine', 'casablanca']
+// « Où partir cette saison » — par trimestre météo (hémisphère nord)
+const SAISON_SLUGS: Record<string, string[]> = {
+  hiver: ['dubai', 'doha', 'marrakech', 'louxor', 'bangkok', 'kuala-lumpur', 'maldives', 'mascate', 'dakar', 'zanzibar', 'abu-dhabi', 'agadir'],
+  printemps: ['istanbul', 'marrakech', 'grenade', 'amman', 'tokyo', 'fes', 'tunis', 'cordoue', 'samarcande', 'beyrouth', 'izmir', 'chefchaouen'],
+  ete: ['sarajevo', 'trabzon', 'antalya', 'skopje', 'tirana', 'mostar', 'londres', 'amsterdam', 'zanzibar', 'cappadoce', 'bali', 'chefchaouen'],
+  automne: ['le-caire', 'amman', 'mascate', 'istanbul', 'marrakech', 'grenade', 'samarcande', 'antalya', 'fes', 'doha', 'tunis', 'louxor'],
+}
+function saisonActuelle(): { key: string; fr: string; en: string } {
+  const m = new Date().getMonth() + 1
+  if (m === 12 || m <= 2) return { key: 'hiver', fr: 'cet hiver', en: 'this winter' }
+  if (m <= 5) return { key: 'printemps', fr: 'ce printemps', en: 'this spring' }
+  if (m <= 8) return { key: 'ete', fr: 'cet été', en: 'this summer' }
+  return { key: 'automne', fr: 'cet automne', en: 'this autumn' }
+}
 const BUDGET_COUNTRIES = new Set(['Maroc', 'Turquie', 'Égypte', 'Tunisie', 'Bosnie-Herzégovine', 'Albanie', 'Macédoine du Nord', 'Kosovo', 'Indonésie', 'Malaisie', 'Thaïlande', 'Sénégal', 'Algérie'])
 const CHEAP_QUIZ = new Set(QUIZ_DESTS.filter((d) => d.budget === 1).map((d) => d.slug))
 const SEA_QUIZ = new Set(QUIZ_DESTS.filter((d) => d.ambiances.includes('plage')).map((d) => d.slug))
@@ -165,6 +195,15 @@ export default function DestinationsClient({ villes }: Props) {
       ? [...villes].sort((a, b) => distKm(pos, a) - distKm(pos, b)).filter((v) => distKm(pos, v) < 4000)
       : byScore.filter((v) => regionOf(v) === 'Europe')
     const near = take(nearSrc, 12)
+    // Étagères émotionnelles (BLOC 3)
+    const bySlugs = (slugs: string[]) => slugs.map((s) => bySlug.get(s)).filter(Boolean) as VilleCard[]
+    const loin = take([...bySlugs(LOIN_SLUGS), ...byScore.filter((v) => v.villeNonMusulmane)], 12)
+    const histoire = take(bySlugs(HISTOIRE_SLUGS), 12)
+    const pepites = take(bySlugs(PEPITES_SLUGS), 12)
+    const lune = take(bySlugs(LUNE_SLUGS), 12)
+    const saison = take(bySlugs(SAISON_SLUGS[saisonActuelle().key] ?? []), 12)
+    const presFrance = take(byScore.filter((v) => PRES_FRANCE_PAYS.has(v.pays)), 12)
+    const solo = take(bySlugs(SOLO_SLUGS), 12)
     const spirit = take([
       ...SPIRIT_SLUGS.map((s) => bySlug.get(s)).filter(Boolean) as VilleCard[],
       ...byScore.filter((v) => hasTag(v, ['spirituel', 'pelerinage', 'sacre', 'sacré'])),
@@ -175,7 +214,7 @@ export default function DestinationsClient({ villes }: Props) {
     const europe = take(byScore.filter((v) => regionOf(v) === 'Europe'), 12)
     const asie = take(byScore.filter((v) => regionOf(v) === 'Asie' && (v.scoreHalal ?? 0) >= 4), 12)
     const ramadanShelf = ramadan ? take(byScore.filter((v) => !v.villeNonMusulmane), 12, 3) : []
-    return { iconic, near, spirit, famille, budget: budget_, mer, europe, asie, ramadanShelf }
+    return { iconic, near, spirit, famille, budget: budget_, mer, europe, asie, ramadanShelf, loin, histoire, pepites, lune, saison, presFrance, solo }
   }, [villes, bySlug, byScore, pos, ramadan])
 
   // ---- Filtres / grille ----
@@ -356,6 +395,14 @@ export default function DestinationsClient({ villes }: Props) {
             {shelves.ramadanShelf.length > 0 && (
               <Shelf id="ramadan" title={en ? '🌙 Ramadan & Eid special' : '🌙 Spécial Ramadan / Aïd'} villes={shelves.ramadanShelf} en={en} onSeeAll={() => goToGrid()} />
             )}
+            {/* BLOC 3 — étagères émotionnelles */}
+            <Shelf id="loin" title={en ? '🌍 Halal even far from home' : '🌍 Halal même loin de chez nous'} villes={shelves.loin} en={en} onSeeAll={() => goToGrid()} />
+            <Shelf id="histoire" title={en ? '🕌 In the footsteps of our history' : '🕌 Sur les traces de notre histoire'} villes={shelves.histoire} en={en} onSeeAll={() => goToGrid(() => setTypeVoyage('culture'))} />
+            <Shelf id="pepites" title={en ? '💎 Hidden gems nobody knows' : '💎 Pépites que personne ne connaît'} villes={shelves.pepites} en={en} onSeeAll={() => goToGrid()} />
+            <Shelf id="lune" title={en ? '💑 For an unforgettable honeymoon' : '💑 Pour une lune de miel inoubliable'} villes={shelves.lune} en={en} onSeeAll={() => goToGrid(() => setTypeVoyage('detente'))} />
+            <Shelf id="saison" title={en ? `☀️ Where to go ${saisonActuelle().en}` : `☀️ Où partir ${saisonActuelle().fr}`} villes={shelves.saison} en={en} onSeeAll={() => goToGrid()} />
+            <Shelf id="presfrance" title={en ? '✈️ Short flights from Western Europe' : '✈️ À moins de 4h de la France'} villes={shelves.presFrance} en={en} onSeeAll={() => goToGrid()} />
+            <Shelf id="solo" title={en ? '👩 Safe for solo female travelers' : '👩 Sûr pour voyager seule'} villes={shelves.solo} en={en} onSeeAll={() => goToGrid()} />
             <Shelf id="spirit" title={en ? '🕋 Spiritual — Umrah, Hajj & holy cities' : '🕋 Spirituel — Omra, Hajj & villes saintes'} villes={shelves.spirit} en={en} onSeeAll={() => goToGrid(() => setTypeVoyage('omra'))} />
             <Shelf id="famille" title={en ? '👨‍👩‍👧 Perfect for families' : '👨‍👩‍👧 Parfait en famille'} villes={shelves.famille} en={en} onSeeAll={() => goToGrid(() => setTypeVoyage('famille'))} />
             <Shelf id="budget" title={en ? '💶 Low budget' : '💶 Petit budget'} villes={shelves.budget} en={en} onSeeAll={() => goToGrid(() => setBudget('petit'))} />
