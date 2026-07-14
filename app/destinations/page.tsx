@@ -5,7 +5,6 @@ import path from 'path'
 import { getDomainSEO, FR_URL, EN_URL } from '@/lib/domain'
 import DestinationsClient, { type VilleCard } from '@/components/destination/DestinationsClient'
 import DestinationsRedirect from '@/components/location/DestinationsRedirect'
-import IslamicPattern from '@/components/ui/IslamicPattern'
 
 const FALLBACK_IMG = 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600&q=80'
 
@@ -73,6 +72,8 @@ function getAllVilles(): VilleCard[] {
           tags: Array.isArray(v.tags) ? v.tags : [],
           halalScore: v.halalScore ?? (v.score_halal ? Math.round(v.score_halal * 2 * 10) / 10 : null),
           codeISO: v.codeISO ?? '',
+          lat: v.coordonnees?.lat ?? null,
+          lng: v.coordonnees?.lng ?? null,
           villeNonMusulmane: v.villeNonMusulmane === true
             || (Array.isArray(v.tags) && v.tags.some((t: string) => String(t).toLowerCase() === 'ville non-musulmane')),
         } as VilleCard
@@ -89,7 +90,6 @@ const CONTINENT_ORDER = ['Asie', 'Afrique', 'Europe', 'Amérique du Nord', 'Amé
 
 export default async function DestinationsPage() {
   const villes = getAllVilles()
-  const { isEN: en } = await getDomainSEO()
 
   // Filtres dérivés dynamiquement des continents réellement présents dans data/villes/
   const presents = new Set(villes.map((v) => v.continent).filter(Boolean) as string[])
@@ -100,27 +100,8 @@ export default async function DestinationsPage() {
       <Suspense fallback={null}>
         <DestinationsRedirect />
       </Suspense>
-      {/* Hero compact nuit */}
-      <section className="relative overflow-hidden px-6 sm:px-16 pt-14 pb-16 text-center" style={{ backgroundColor: '#0b1a0f' }}>
-        <IslamicPattern opacity={0.07} />
-        <div className="relative z-10">
-          <p style={{ color: '#c9a84c' }} className="text-xs font-semibold uppercase tracking-[0.3em] mb-4">
-            {en ? 'All destinations' : 'Toutes les destinations'}
-          </p>
-          <h1
-            className="text-4xl sm:text-5xl font-bold text-white leading-[1.05] mb-4"
-            style={{ fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 900 }}
-          >
-            {villes.length} {en ? <>halal destinations <span className="gold-em">hand-picked</span></> : <>destinations halal <span className="gold-em">sélectionnées</span></>}
-          </h1>
-          <p className="text-white/60 text-base max-w-xl mx-auto leading-relaxed">
-            {en
-              ? 'Halal restaurants, mosques, practical guides and local tips — to travel with peace of mind as a Muslim.'
-              : 'Restaurants halal, mosquées, guides pratiques et conseils locaux — pour voyager sereinement en tant que musulman.'}
-          </p>
-        </div>
-      </section>
-
+      {/* Hero de recherche + étagères + grille : rendus par le client (refonte
+          « étagères » façon Netflix — voir DestinationsClient) */}
       <DestinationsClient villes={villes} continents={continents} />
     </main>
   )
