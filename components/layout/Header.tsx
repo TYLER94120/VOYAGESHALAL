@@ -49,6 +49,7 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
               🧰 {isEN ? 'Tools' : 'Outils'} ▾
             </button>
             <div className="nav-tools-menu" role="menu">
+              <Link href={localizedHref('/planificateur', isEN)} className="nav-tools-item">🗺️ {isEN ? 'Trip planner' : 'Planificateur'}</Link>
               <Link href={localizedHref('/horaires-priere', isEN)} className="nav-tools-item">🕐 {t('nav.prayer')}</Link>
               <Link href="/qibla" className="nav-tools-item">🧭 {t('nav.qibla')}</Link>
               <Link href={localizedHref('/mosquee-proche', isEN)} className="nav-tools-item">🕌 {t('nav.mosque')}</Link>
