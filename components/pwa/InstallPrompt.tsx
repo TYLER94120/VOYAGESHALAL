@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 interface BIPEvent extends Event {
   prompt: () => Promise<void>
@@ -14,6 +15,10 @@ export default function InstallPrompt() {
   const [deferred, setDeferred] = useState<BIPEvent | null>(null)
   const [show, setShow] = useState(false)
   const [iosHint, setIosHint] = useState(false)
+  const pathname = usePathname()
+  // Jamais sur la page des horaires : le bandeau ne doit pas masquer les
+  // horaires ni les boutons (fix UX prière).
+  const suppressed = pathname?.startsWith('/horaires-priere') || pathname?.startsWith('/prayer-times')
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -51,7 +56,7 @@ export default function InstallPrompt() {
     dismiss()
   }
 
-  if (!show) return null
+  if (!show || suppressed) return null
 
   return (
     <div style={{
