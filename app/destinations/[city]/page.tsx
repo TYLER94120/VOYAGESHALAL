@@ -9,6 +9,7 @@ import HotelCTA from '@/components/affiliate/HotelCTA'
 import { DestinationFaqSchema, DestinationSchema } from '@/components/SchemaOrg'
 import CitySync from '@/components/location/CitySync'
 import EmailCapture from '@/components/ui/EmailCapture'
+import ContinueExploring from '@/components/discover/ContinueExploring'
 import { relatedForCity, countrySlugForName } from '@/lib/relatedContent'
 import { cityEn, countryEn } from '@/lib/poiI18n'
 import cityCoords from '@/lib/cityCoords.json'
@@ -187,7 +188,6 @@ export default async function DestinationPage({ params }: Props) {
       {/* Maillage interne : guides & articles liés + pays parent + coins prière */}
       {(() => {
         const guidesLies = relatedForCity(ville.nom, ville.pays, 4, isEN ? 'en' : 'fr')
-        const paysSlug = countrySlugForName(ville.pays)
         return (
           <section style={{ maxWidth: 820, margin: '0 auto', padding: '8px 20px 8px' }}>
             {guidesLies.length > 0 && (
@@ -207,24 +207,22 @@ export default async function DestinationPage({ params }: Props) {
                 </ul>
               </>
             )}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 14 }}>
-              {(ville.hotels?.length ?? 0) >= 3 && (
-                <a href={`/hotels/${city}`} style={{ fontWeight: 700, color: 'var(--foret)' }}>
-                  🏨 {isEN ? `Halal hotels in ${ville.nom}` : `Hôtels halal à ${ville.nom}`} →
-                </a>
-              )}
-              {paysSlug && (
-                <a href={`/destinations/pays/${paysSlug}`} style={{ fontWeight: 700, color: 'var(--foret)' }}>
-                  🌍 {isEN ? `Halal travel in ${countryEn(ville.pays ?? '', true)}` : `Voyage halal ${ville.pays}`} →
-                </a>
-              )}
-              <a href={`/priere/${city}`} style={{ fontWeight: 700, color: '#6b21a8' }}>
-                🧭 {isEN ? `Where to pray in ${ville.nom}` : `Où prier à ${ville.nom}`} →
-              </a>
-            </div>
           </section>
         )
       })()}
+
+      {/* P2 — Continuer votre exploration : villes proches (distance réelle),
+          destinations similaires (même région / score voisin), où prier,
+          hôtels, planificateur, pays. Anti cul-de-sac. */}
+      <ContinueExploring
+        slug={city}
+        nom={isEN ? cityEn(ville.nom, true) : ville.nom}
+        pays={isEN ? countryEn(ville.pays ?? '', true) : ville.pays}
+        paysSlug={countrySlugForName(ville.pays)}
+        scoreHalal={ville.score_halal}
+        villesProches={(ville as { villes_proches?: string[] }).villes_proches}
+        isEN={isEN}
+      />
 
       {/* Capture email en bas de fiche ville */}
       <div style={{ padding: '24px 20px 8px' }}>

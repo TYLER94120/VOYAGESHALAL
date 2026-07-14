@@ -104,6 +104,39 @@ export default async function GuidePage({ params }: Props) {
           </section>
         ) : null}
 
+        {/* P2 — Continuer votre exploration : autres guides de la même langue
+            (pertinence par mots partagés du titre) + planificateur + destinations */}
+        {(() => {
+          const lang = guide.lang ?? 'fr'
+          const words = new Set(guide.title.toLowerCase().split(/[^a-zà-ÿ]+/).filter((w) => w.length > 4))
+          const related = guides
+            .filter((g) => g.slug !== guide.slug && (g.lang ?? 'fr') === lang)
+            .map((g) => ({ g, s: g.title.toLowerCase().split(/[^a-zà-ÿ]+/).filter((w) => words.has(w)).length }))
+            .sort((a, b) => b.s - a.s)
+            .slice(0, 3)
+            .map((x) => x.g)
+          return (
+            <section className="mt-12">
+              <h2 className="text-2xl font-bold mb-4" style={{ fontFamily: 'var(--font-playfair), Georgia, serif', color: '#1b4332' }}>
+                {isEN ? 'Continue your exploration' : 'Continuer votre exploration'}
+              </h2>
+              <div className="space-y-2">
+                {related.map((g) => (
+                  <Link key={g.slug} href={`/guides/${g.slug}`} className="block bg-white rounded-2xl border border-gray-100 px-4 py-3 text-sm font-semibold hover:border-[#c9a870] transition-colors" style={{ color: '#1b4332' }}>
+                    📗 {g.title}
+                  </Link>
+                ))}
+                <Link href={isEN ? '/trip-planner' : '/planificateur'} className="block bg-white rounded-2xl border border-gray-100 px-4 py-3 text-sm font-semibold hover:border-[#c9a870] transition-colors" style={{ color: '#1b4332' }}>
+                  🗺️ {isEN ? 'Build my halal itinerary day by day (free)' : 'Créer mon itinéraire halal jour par jour (gratuit)'}
+                </Link>
+                <Link href="/destinations" className="block bg-white rounded-2xl border border-gray-100 px-4 py-3 text-sm font-semibold hover:border-[#c9a870] transition-colors" style={{ color: '#1b4332' }}>
+                  🌍 {isEN ? 'Browse 354 halal destinations' : 'Explorer les 354 destinations halal'}
+                </Link>
+              </div>
+            </section>
+          )
+        })()}
+
         <div className="mt-12">
           <EmailCapture compact source="guide" />
         </div>
