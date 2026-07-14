@@ -6,6 +6,8 @@ export function checkAdmin(req: Request): boolean {
   const expected = process.env.ADMIN_TOKEN
   if (!expected) return false // pas de token configuré = accès refusé (sécurité par défaut)
   const auth = req.headers.get('authorization') || ''
-  const token = auth.startsWith('Bearer ') ? auth.slice(7) : (new URL(req.url).searchParams.get('token') || '')
+  const token = auth.startsWith('Bearer ')
+    ? auth.slice(7)
+    : (req.headers.get('x-admin-key') || new URL(req.url).searchParams.get('token') || '')
   return token === expected
 }

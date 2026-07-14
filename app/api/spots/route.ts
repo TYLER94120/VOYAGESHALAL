@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server'
 import { listAllSpots, listSpotsByVille } from '@/lib/prayerSpots'
+import { checkAdmin } from '@/lib/adminAuth'
+import { createSpotFromBody } from '@/lib/spotCreate'
 
 // GET /api/spots               → tous les spots publiés (couche carte)
 // GET /api/spots?ville=berkane → spots d'une ville
@@ -32,4 +34,15 @@ export async function GET(req: Request) {
   }
 
   return NextResponse.json({ spots }, { headers: { 'Cache-Control': 'public, max-age=60, s-maxage=120' } })
+}
+
+// POST /api/spots — création admin uniquement (x-admin-key / Bearer / ?token=).
+// Même logique que /api/admin/spots ; accepte aussi l'alias `type` pour `typeLieu`.
+export async function POST(req: Request) {
+  if (!checkAdmin(req)) return NextResponse.json({ error: 'Non autorisé' }, { status: 401 })
+  let body: Record<string, unknown>
+  try { body = await req.json() } catch { return NextResponse.json({ error: 'JSON invalide' }, { status: 400 }) }
+  const result = await createSpotFromBody(body)
+  if ('error' in result) return NextResponse.json({ error: result.error }, { status: result.status })
+  return NextResponse.json({ ok: true, spot: result.spot })
 }
