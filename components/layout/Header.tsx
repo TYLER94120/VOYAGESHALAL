@@ -50,6 +50,7 @@ export default function Header({ brandEN = false }: { brandEN?: boolean }) {
             </button>
             <div className="nav-tools-menu" role="menu">
               <Link href={localizedHref('/planificateur', isEN)} className="nav-tools-item">🗺️ {isEN ? 'Trip planner' : 'Planificateur'}</Link>
+              <Link href="/quiz" className="nav-tools-item">🎯 {isEN ? 'Destination quiz' : 'Quiz destination'}</Link>
               <Link href={localizedHref('/horaires-priere', isEN)} className="nav-tools-item">🕐 {t('nav.prayer')}</Link>
               <Link href="/qibla" className="nav-tools-item">🧭 {t('nav.qibla')}</Link>
               <Link href={localizedHref('/mosquee-proche', isEN)} className="nav-tools-item">🕌 {t('nav.mosque')}</Link>

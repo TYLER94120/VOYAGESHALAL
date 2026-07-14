@@ -36,6 +36,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: L('/planificateur'), lastModified: now, changeFrequency: 'monthly', priority: 0.9, alternates: pageAlternates('/planificateur') },
     { url: L('/horaires-priere'), lastModified: now, changeFrequency: 'daily', priority: 0.9, alternates: pageAlternates('/horaires-priere') },
     { url: `${SITE_URL}/qibla`, lastModified: now, changeFrequency: 'monthly', priority: 0.9, alternates: pageAlternates('/qibla') },
+    { url: `${SITE_URL}/quiz`, lastModified: now, changeFrequency: 'monthly', priority: 0.7, alternates: pageAlternates('/quiz') },
     { url: L('/mosquee-proche'), lastModified: now, changeFrequency: 'monthly', priority: 0.9, alternates: pageAlternates('/mosquee-proche') },
     { url: `${SITE_URL}/autour-de-moi`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: L('/a-propos'), lastModified: now, changeFrequency: 'monthly', priority: 0.6, alternates: pageAlternates('/a-propos') },
