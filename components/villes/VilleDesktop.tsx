@@ -37,6 +37,8 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   // Poids DOM / Core Web Vitals : on rend 20 restaurants (indexés en SSR),
   // le reste s'affiche au clic « Voir plus » — même contenu, page 6× plus légère.
   const [visibleRestos, setVisibleRestos] = useState(20)
+  // Correctif UX : filtre « signalé halal uniquement » (masque les « à vérifier »)
+  const [halalOnly, setHalalOnly] = useState(false)
   const toast = useToast()
   const contentRef = useRef<HTMLDivElement>(null)
   const { lang } = useLanguage()
@@ -92,7 +94,10 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const present = new Set(restaurants.map((r: any) => cuisineCategory(r.type)))
   const categories = ['Tous', ...CATEGORY_ORDER.filter((c) => present.has(c))]
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const restosFiltres = activeFilter === 'Tous' ? restaurants : restaurants.filter((r: any) => cuisineCategory(r.type) === activeFilter)
+  const restosParCat = activeFilter === 'Tous' ? restaurants : restaurants.filter((r: any) => cuisineCategory(r.type) === activeFilter)
+  // « Signalé halal » = pas marqué « à vérifier » (halalConfidence 'likely')
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const restosFiltres = halalOnly ? restosParCat.filter((r: any) => r.halalConfidence !== 'likely') : restosParCat
   const restosAffiches = restosFiltres.slice(0, visibleRestos)
   const tabCounts: Record<string, number> = { restaurants: restaurants.length, mosquees: mosquees.length, hotels: hotels.length, activites: activites.length, pratique: 0 }
 
@@ -186,6 +191,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                   </button>
                 )
               })}
+              <button onClick={() => (setHalalOnly(!halalOnly), setVisibleRestos(20))}
+                aria-pressed={halalOnly}
+                style={{ padding: '8px 16px', borderRadius: '30px', border: `1.5px solid ${halalOnly ? '#8A6D1E' : 'rgba(138,109,30,0.4)'}`, background: halalOnly ? '#8A6D1E' : '#fff', color: halalOnly ? '#fff' : '#8A6D1E', fontSize: '13.5px', fontWeight: 700, cursor: 'pointer' }}>
+                ✓ {en ? 'Reported halal only' : 'Signalé halal uniquement'}
+              </button>
             </div>
             )}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
@@ -207,6 +217,18 @@ export default function VilleDesktop({ ville }: { ville: any }) {
                         : <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>✓ Halal</span>}
                       {(r.score ?? r.note) != null && <span style={{ fontSize: '13px', color: '#B8860B', fontWeight: 700 }}>★ {r.score ?? r.note}</span>}
                       {(r.priceRange ?? r.fourchette_prix) && <span style={{ fontSize: '12px', color: 'var(--texte-2)' }}>{r.priceRange ?? r.fourchette_prix}</span>}
+                      {(() => {
+                        // Pastilles d'attributs quand la donnée existe réellement (correctif UX)
+                        const tags = (Array.isArray(r.tags) ? r.tags : []).join(' ').toLowerCase()
+                        const pill = { background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' } as const
+                        return (
+                          <>
+                            {(tags.includes('famille') || tags.includes('familles')) && <span style={pill}>👨‍👩‍👧 {en ? 'family-friendly' : 'adapté familles'}</span>}
+                            {(tags.includes('sans alcool') || r.sansAlcool === true || r.sans_alcool === true) && <span style={pill}>🚫 {en ? 'alcohol-free' : 'sans alcool'}</span>}
+                            {(tags.includes('salle de prière') || tags.includes('salle de priere')) && <span style={pill}>🕌 {en ? 'prayer room' : 'salle de prière'}</span>}
+                          </>
+                        )
+                      })()}
                     </div>
                     <div style={{ display: 'flex', gap: '8px' }}>
                       <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ flex: 1, padding: '11px 0', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🗺 Maps</a>
