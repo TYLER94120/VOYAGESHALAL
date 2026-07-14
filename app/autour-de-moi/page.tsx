@@ -2,8 +2,8 @@
 import { useState, useRef, useEffect, useCallback, type FormEvent } from 'react'
 import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap, Marker } from 'leaflet'
-import { useLocation } from '@/components/location/LocationProvider'
 import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
+import { useInstantPosition } from '@/lib/useInstantPosition'
 
 
 type Cat = 'mosquees' | 'restaurants' | 'hotels' | 'boucheries' | 'activites' | 'spots'
@@ -86,7 +86,9 @@ function pinIcon(L: any, color: string, icon: string, selected: boolean) {
 }
 
 export default function AutourDeMoiPage() {
-  const { city } = useLocation()
+  // Position instantanée (dernière position → ville → Paris → IP → GPS si permis)
+  // → les points s'affichent IMMÉDIATEMENT, le GPS n'est qu'un affinage.
+  const { pos: instantPos } = useInstantPosition()
   const [cat, setCat] = useState<Cat>('mosquees')
   const [pos, setPos] = useState<{ lat: number; lng: number } | null>(null)
   const [spots, setSpots] = useState<Spot[]>([])
@@ -107,18 +109,16 @@ export default function AutourDeMoiPage() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const LRef = useRef<any>(null)
 
+  // La position instantanée alimente la carte dès qu'elle est résolue (0 ms
+  // dans la plupart des cas) et s'affine toute seule (IP puis GPS si permis).
+  const manualMove = useRef(false)
   useEffect(() => {
-    let done = false
-    ;(async () => {
-      try { const p = await getPosition(); if (!done) { setPos({ lat: p.lat, lng: p.lng }); setGeoErr(null) } }
-      catch (code) {
-        if (city?.lat != null && city?.lng != null) setPos({ lat: city.lat, lng: city.lng })
-        else { setGeoErr(describeGeoError(code as GeoErrorCode)); setLoading(false) }
-      }
-    })()
-    return () => { done = true }
+    if (instantPos && !manualMove.current) {
+      setPos({ lat: instantPos.lat, lng: instantPos.lng })
+      setGeoErr(null)
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [instantPos])
 
   const initMap = useCallback(async (lat: number, lng: number) => {
     if (!mapEl.current) return
@@ -322,6 +322,7 @@ export default function AutourDeMoiPage() {
       if (res.ok) {
         const j = await res.json()
         if (typeof j.lat === 'number') {
+          manualMove.current = true // la ville choisie prime sur les affinages auto
           setPos({ lat: j.lat, lng: j.lng }) // déclenche recentrage + rechargement
           if (j.name) setQ(j.name)
         }

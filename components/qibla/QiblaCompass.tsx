@@ -2,8 +2,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import 'leaflet/dist/leaflet.css'
 import type { Map as LeafletMap } from 'leaflet'
-import { useLocation } from '@/components/location/LocationProvider'
-import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from '@/lib/geo'
+import { useInstantPosition } from '@/lib/useInstantPosition'
 import { getDeclination } from '@/lib/declination'
 
 // Coordonnées de La Mecque (Kaaba)
@@ -36,10 +35,9 @@ interface Pos { lat: number; lng: number; label: string }
 type Mode = 'boussole' | 'direction' | 'carte'
 
 export default function QiblaCompass() {
-  const { city } = useLocation()
-  const [pos, setPos] = useState<Pos | null>(null)
-  const [loading, setLoading] = useState(false)
-  const [geoErr, setGeoErr] = useState<GeoError | null>(null)
+  // Position instantanée (dernière position → ville → Paris → IP → GPS si permis)
+  // → la boussole + l'angle s'affichent IMMÉDIATEMENT, le GPS ne bloque jamais.
+  const { pos, source, geoLoading: loading, geoErr, refineGps } = useInstantPosition()
   const [mode, setMode] = useState<Mode>('boussole')
 
   // Boussole live
@@ -55,49 +53,17 @@ export default function QiblaCompass() {
   const needleAngle = qibla !== null ? qibla - trueHeading : 0
   const aligned = qibla !== null && (Math.abs(((needleAngle % 360) + 360) % 360) <= 6 || Math.abs(((needleAngle % 360) + 360) % 360) >= 354)
 
-  // Ville mémorisée → affichage immédiat (en attendant le GPS précis)
-  useEffect(() => {
-    if (city && city.lat != null && city.lng != null && !pos) {
-      setPos({ lat: city.lat, lng: city.lng, label: city.nom })
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [city])
-
-  // RESPONSABILITÉ : on affine TOUJOURS avec la position GPS réelle au chargement
-  // (comme HalalGuide). La ville mémorisée n'est qu'un repli si le GPS est refusé.
-  const autoTriedRef = useRef(false)
-  useEffect(() => {
-    if (autoTriedRef.current) return
-    autoTriedRef.current = true
-    ;(async () => {
-      try {
-        const { lat, lng } = await getPosition({ highAccuracy: true })
-        setPos({ lat, lng, label: 'Ma position exacte' })
-      } catch { /* on garde la ville mémorisée si elle existe */ }
-    })()
-  }, [])
-
   // Déclinaison magnétique locale (WMM) recalculée à chaque changement de position
   useEffect(() => {
     if (pos) setDeclination(getDeclination(pos.lat, pos.lng))
   }, [pos])
 
-  // Position GPS précise
-  const usePrecise = async () => {
-    setLoading(true); setGeoErr(null)
-    try {
-      const { lat, lng } = await getPosition({ highAccuracy: true })
-      setPos({ lat, lng, label: 'Ma position exacte' })
-    } catch (code) {
-      setGeoErr(describeGeoError(code as GeoErrorCode))
-    } finally {
-      setLoading(false)
-    }
-  }
+  // Position GPS précise (affinage à la demande — n'a jamais bloqué l'affichage)
+  const usePrecise = refineGps
 
   // Capteur de boussole (orientation appareil)
   const handlerRef = useRef<((e: DeviceOrientationEvent) => void) | null>(null)
-  const iosPermNeeded = typeof window !== 'undefined' &&
+  const iosPermNeeded = typeof window !== 'undefined' && typeof DeviceOrientationEvent !== 'undefined' &&
     typeof (DeviceOrientationEvent as unknown as { requestPermission?: () => Promise<string> })?.requestPermission === 'function'
 
   const attachSensor = useCallback(() => {
@@ -138,23 +104,13 @@ export default function QiblaCompass() {
     if (aligned && hasSensor && typeof navigator !== 'undefined' && navigator.vibrate) navigator.vibrate(120)
   }, [aligned, hasSensor])
 
-  // ----- Pas encore de position -----
+  // ----- Squelette le temps du 1er effet (quelques ms, zéro layout shift) -----
   if (!pos) {
     return (
-      <section style={{ maxWidth: 480, margin: '0 auto', padding: '2rem 1.5rem', textAlign: 'center' }}>
-        <div style={{ width: 200, height: 200, margin: '0 auto 1.5rem', position: 'relative', opacity: 0.4 }}>
+      <section style={{ maxWidth: 480, margin: '0 auto', padding: '1.5rem 1.5rem', minHeight: 480 }}>
+        <div style={{ width: 200, height: 200, margin: '2rem auto 0', position: 'relative', opacity: 0.35 }}>
           <CompassSVG angle={0} animated={false} />
         </div>
-        <button onClick={usePrecise} disabled={loading} style={btnPrimary}>
-          {loading ? '📍 Localisation…' : '📍 Trouver la Qibla (position précise)'}
-        </button>
-        {geoErr && (
-          <div style={{ background: 'rgba(255,100,100,0.12)', border: '1px solid rgba(255,100,100,0.3)', borderRadius: 12, padding: '12px 16px', marginTop: 16, textAlign: 'left' }}>
-            <p style={{ color: '#b91c1c', fontWeight: 700, margin: 0, fontSize: 14 }}>{geoErr.message}</p>
-            <p style={{ color: 'var(--texte-2)', fontSize: 13, margin: '4px 0 0' }}>{geoErr.detail}</p>
-          </div>
-        )}
-        <p style={{ color: 'var(--texte-2)', fontSize: 13, marginTop: 14 }}>Votre position GPS reste privée — jamais stockée ni partagée.</p>
       </section>
     )
   }
@@ -176,11 +132,18 @@ export default function QiblaCompass() {
         <p style={{ fontFamily: "'Playfair Display', serif", fontSize: '2.6rem', fontWeight: 900, color: '#fff', margin: '2px 0 0', lineHeight: 1 }}>{Math.round(qibla!)}°</p>
         <p style={{ color: 'var(--or-clair)', fontSize: 15, margin: '2px 0 0' }}>{getCardinal(qibla!)} · 📍 {pos.label}</p>
         {distance && <p style={{ color: 'rgba(253,250,243,0.6)', fontSize: 13, margin: '6px 0 0' }}>🕋 La Mecque est à {distance.toLocaleString('fr-FR')} km · angle par rapport au Nord géographique</p>}
-        {pos.label !== 'Ma position exacte' && (
+        {source !== 'gps' && (
           <p style={{ color: '#fbbf24', fontSize: 12, margin: '8px 0 0', fontWeight: 600 }}>⚠️ Position approximative ({pos.label}). Activez le GPS pour la Qibla exacte.</p>
         )}
-        <button onClick={usePrecise} disabled={loading} style={{ marginTop: 10, background: pos.label !== 'Ma position exacte' ? 'var(--or)' : 'none', border: '1px solid rgba(201,168,76,0.5)', color: pos.label !== 'Ma position exacte' ? 'var(--nuit)' : 'var(--or-clair)', borderRadius: 20, padding: '6px 16px', fontSize: 12.5, fontWeight: 700, cursor: 'pointer' }}>📍 {loading ? 'Localisation…' : 'Utiliser ma position exacte (GPS)'}</button>
+        <button onClick={usePrecise} disabled={loading} style={{ marginTop: 10, background: source !== 'gps' ? 'var(--or)' : 'none', border: '1px solid rgba(201,168,76,0.5)', color: source !== 'gps' ? 'var(--nuit)' : 'var(--or-clair)', borderRadius: 20, padding: '6px 16px', fontSize: 12.5, fontWeight: 700, cursor: 'pointer' }}>📍 {loading ? 'Localisation…' : 'Utiliser ma position exacte (GPS)'}</button>
       </div>
+
+      {geoErr && (
+        <div style={{ background: 'rgba(255,100,100,0.12)', border: '1px solid rgba(255,100,100,0.3)', borderRadius: 12, padding: '12px 16px', marginBottom: 14 }}>
+          <p style={{ color: '#b91c1c', fontWeight: 700, margin: 0, fontSize: 14 }}>{geoErr.message}</p>
+          <p style={{ color: 'var(--texte-2)', fontSize: 13, margin: '4px 0 0' }}>{geoErr.detail}</p>
+        </div>
+      )}
 
       {/* MODE BOUSSOLE — cadran live : Kaaba qui se déplace sur le cercle */}
       {mode === 'boussole' && (
@@ -232,7 +195,7 @@ export default function QiblaCompass() {
       {/* Partage + info */}
       <div style={{ display: 'flex', gap: 10, marginTop: 18 }}>
         <a href={`https://wa.me/?text=${encodeURIComponent(`🕋 Ma Qibla depuis ${pos.label} : ${Math.round(qibla!)}° ${getCardinal(qibla!)} — via VoyagesHalal.fr`)}`} target="_blank" rel="noopener noreferrer" style={{ flex: 1, padding: '0.75rem', background: '#25D366', color: '#fff', borderRadius: 12, textAlign: 'center', fontWeight: 600, fontSize: 14, textDecoration: 'none' }}>📱 Partager</a>
-        <button onClick={() => { setPos(null); setSensorAsked(false); setHasSensor(false) }} style={{ flex: 1, padding: '0.75rem', background: 'rgba(27,67,50,0.1)', color: 'var(--foret)', border: 'none', borderRadius: 12, fontWeight: 600, fontSize: 14, cursor: 'pointer' }}>🔄 Changer de lieu</button>
+        <button onClick={() => { setSensorAsked(false); setHasSensor(false); void refineGps() }} style={{ flex: 1, padding: '0.75rem', background: 'rgba(27,67,50,0.1)', color: 'var(--foret)', border: 'none', borderRadius: 12, fontWeight: 600, fontSize: 14, cursor: 'pointer' }}>🔄 Recalibrer (GPS)</button>
       </div>
 
       <div style={{ marginTop: 20, padding: '1.1rem', background: '#fff', borderRadius: 16, border: '1px solid rgba(27,67,50,0.08)' }}>

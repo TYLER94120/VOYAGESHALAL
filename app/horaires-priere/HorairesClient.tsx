@@ -62,8 +62,11 @@ export default function HorairesClient() {
     let initial: Pos | null = null
     let source: typeof posSource = 'default'
     try {
-      const saved = JSON.parse(localStorage.getItem(LAST_POS_KEY) || 'null') as Pos | null
-      if (saved && saved.label) { initial = saved; source = 'last' }
+      // Clé partagée entre tous les outils (vh_last_pos) puis clé historique
+      for (const k of ['vh_last_pos', LAST_POS_KEY]) {
+        const saved = JSON.parse(localStorage.getItem(k) || 'null') as Pos | null
+        if (saved && saved.label) { initial = saved; source = 'last'; break }
+      }
     } catch { /* stockage privé */ }
     // 2) Ville mémorisée du site
     if (!initial && city && city.lat != null && city.lng != null) {
