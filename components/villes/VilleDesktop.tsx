@@ -30,6 +30,18 @@ const CATEGORY_EMOJI: Record<string, string> = {
   'Pâtisserie & Café': '☕', 'Grillades & Kebab': '🔥', 'Fruits de mer': '🦐', Turc: '🥙',
 }
 
+// Bandeau visuel par type de cuisine (cartes restos) : dégradé chaleureux +
+// grand emoji — élégant et cohérent, sans photo non vérifiable.
+const CATEGORY_GRADIENT: Record<string, [string, string]> = {
+  'Traditionnel local': ['#7c2d12', '#c2410c'], Marocain: ['#7f1d1d', '#b45309'],
+  'Libanais & Levant': ['#365314', '#84cc16'], 'Indien & Pakistani': ['#7c2d12', '#f59e0b'],
+  'Pizza & Italien': ['#7f1d1d', '#ef4444'], 'Japonais & Asiatique': ['#1e293b', '#e11d48'],
+  'Burgers & Fast-food': ['#78350f', '#f59e0b'], Gastronomique: ['#0b1a0f', '#c9a84c'],
+  'Végétarien & Healthy': ['#14532d', '#4ade80'], 'Pâtisserie & Café': ['#44403c', '#a8846b'],
+  'Grillades & Kebab': ['#450a0a', '#ea580c'], 'Fruits de mer': ['#0c4a6e', '#38bdf8'], Turc: ['#7f1d1d', '#dc2626'],
+}
+const DEFAULT_GRADIENT: [string, string] = ['#0b1a0f', '#2d6a4f']
+
 export default function VilleDesktop({ ville }: { ville: any }) {
   const [activeTab, setActiveTab] = useState<string | null>(null) // null = aucun onglet allumé au départ
   const displayTab = activeTab ?? 'restaurants' // contenu affiché par défaut (sans orange)
@@ -199,45 +211,67 @@ export default function VilleDesktop({ ville }: { ville: any }) {
             </div>
             )}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
-              {restosAffiches.map((r: any, i: number) => (
-                <div key={i} className="card-halal" style={{ ...card, display: 'flex', gap: '16px' }}>
-                  <div style={{ width: 62, height: 62, borderRadius: '15px', background: 'var(--nuit)', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '28px', position: 'relative', overflow: 'hidden' }}>
-                    <IslamicPattern opacity={0.12} />
-                    <span style={{ position: 'relative', zIndex: 1 }}>{CATEGORY_EMOJI[cuisineCategory(r.type)] ?? '🍽'}</span>
+              {restosAffiches.map((r: any, i: number) => {
+                const cat = cuisineCategory(r.type)
+                const [g1, g2] = CATEGORY_GRADIENT[cat] ?? DEFAULT_GRADIENT
+                const photo = r.photo || r.photoUrl || r.image || null
+                return (
+                  <div key={i} className="card-halal" style={{ ...card, padding: 0, overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                    {/* Visuel : photo du resto si dispo, sinon bandeau dégradé par cuisine */}
+                    <div style={{ position: 'relative', height: 96, background: photo ? undefined : `linear-gradient(120deg, ${g1} 0%, ${g2} 130%)`, display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
+                      {photo ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={photo} alt={r.nom} loading="lazy" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }} />
+                      ) : (
+                        <>
+                          <IslamicPattern opacity={0.1} />
+                          <span style={{ position: 'relative', zIndex: 1, fontSize: 40, filter: 'drop-shadow(0 3px 6px rgba(0,0,0,0.35))' }}>{CATEGORY_EMOJI[cat] ?? '🍽'}</span>
+                        </>
+                      )}
+                      <span style={{ position: 'absolute', top: 8, right: 8, background: 'rgba(255,255,255,0.9)', borderRadius: 20, lineHeight: 0 }}>
+                        <FavButton size={14} fav={{ id: favId('resto', ville.slug ?? ville.nom, r.nom), kind: 'resto', nom: r.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
+                      </span>
+                    </div>
+
+                    <div style={{ padding: '14px 16px 16px', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                      {/* Nom + cuisine */}
+                      <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '19px', color: 'var(--texte)', lineHeight: 1.15, margin: 0 }}>{r.nom}</p>
+                      <p style={{ fontSize: '12.5px', color: 'var(--texte-2)', margin: '2px 0 10px' }}>{enLabel(cat, en)}</p>
+
+                      {/* Une seule ligne : halal + note + prix */}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '9px', marginBottom: '8px', flexWrap: 'wrap' }}>
+                        {r.halalConfidence === 'likely'
+                          ? <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>≈ {en ? 'Halal common · verify' : 'Halal courant · à vérifier'}</span>
+                          : <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>✓ Halal</span>}
+                        {(r.score ?? r.note) != null && <span style={{ fontSize: '13px', color: '#B8860B', fontWeight: 700 }}>★ {r.score ?? r.note}</span>}
+                        {(r.priceRange ?? r.fourchette_prix) && <span style={{ fontSize: '12px', color: 'var(--texte-2)' }}>{r.priceRange ?? r.fourchette_prix}</span>}
+                      </div>
+
+                      {/* Tags discrets : vraie spécialité + attributs réels */}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '12px', flexWrap: 'wrap', minHeight: 20 }}>
+                        {r.specialite && <span style={{ fontSize: '11.5px', color: 'var(--texte-2)' }}>⭐ {r.specialite}</span>}
+                        {(() => {
+                          const tags = (Array.isArray(r.tags) ? r.tags : []).join(' ').toLowerCase()
+                          const pill = { background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: '10.5px', fontWeight: 700, borderRadius: '20px', padding: '2px 8px' } as const
+                          return (
+                            <>
+                              {(tags.includes('famille') || tags.includes('familles')) && <span style={pill}>👨‍👩‍👧 {en ? 'family' : 'familles'}</span>}
+                              {(tags.includes('sans alcool') || r.sansAlcool === true || r.sans_alcool === true) && <span style={pill}>🚫 {en ? 'alcohol-free' : 'sans alcool'}</span>}
+                              {(tags.includes('salle de prière') || tags.includes('salle de priere')) && <span style={pill}>🕌 {en ? 'prayer room' : 'salle de prière'}</span>}
+                            </>
+                          )
+                        })()}
+                      </div>
+
+                      {/* UNE action principale */}
+                      <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ marginTop: 'auto', display: 'block', padding: '11px 0', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>
+                        🗺 {en ? 'Maps / Directions' : 'Maps / Itinéraire'}
+                      </a>
+                      <SourceLine item={r} />
+                    </div>
                   </div>
-                  <div style={{ flex: 1, minWidth: 0 }}>
-                    <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
-                      <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: '20px', color: 'var(--texte)', lineHeight: 1.15 }}>{r.nom}</p>
-                      <FavButton size={16} fav={{ id: favId('resto', ville.slug ?? ville.nom, r.nom), kind: 'resto', nom: r.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
-                    </div>
-                    <p style={{ fontSize: '13px', color: 'var(--texte-2)', marginBottom: '9px' }}>{enLabel(cuisineCategory(r.type), en)}</p>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '9px', marginBottom: '14px', flexWrap: 'wrap' }}>
-                      {r.halalConfidence === 'likely'
-                        ? <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>≈ Halal courant · à vérifier</span>
-                        : <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' }}>✓ Halal</span>}
-                      {(r.score ?? r.note) != null && <span style={{ fontSize: '13px', color: '#B8860B', fontWeight: 700 }}>★ {r.score ?? r.note}</span>}
-                      {(r.priceRange ?? r.fourchette_prix) && <span style={{ fontSize: '12px', color: 'var(--texte-2)' }}>{r.priceRange ?? r.fourchette_prix}</span>}
-                      {(() => {
-                        // Pastilles d'attributs quand la donnée existe réellement (correctif UX)
-                        const tags = (Array.isArray(r.tags) ? r.tags : []).join(' ').toLowerCase()
-                        const pill = { background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: '11px', fontWeight: 700, borderRadius: '20px', padding: '3px 10px' } as const
-                        return (
-                          <>
-                            {(tags.includes('famille') || tags.includes('familles')) && <span style={pill}>👨‍👩‍👧 {en ? 'family-friendly' : 'adapté familles'}</span>}
-                            {(tags.includes('sans alcool') || r.sansAlcool === true || r.sans_alcool === true) && <span style={pill}>🚫 {en ? 'alcohol-free' : 'sans alcool'}</span>}
-                            {(tags.includes('salle de prière') || tags.includes('salle de priere')) && <span style={pill}>🕌 {en ? 'prayer room' : 'salle de prière'}</span>}
-                          </>
-                        )
-                      })()}
-                    </div>
-                    <div style={{ display: 'flex', gap: '8px' }}>
-                      <a href={r.mapsUrl} target="_blank" rel="noopener noreferrer" onClick={() => toast('Ouverture dans Google Maps…', 'success')} style={{ flex: 1, padding: '11px 0', background: 'var(--halal-bg)', color: 'var(--halal-tx)', borderRadius: '12px', textAlign: 'center', fontSize: '13px', fontWeight: 700, textDecoration: 'none' }}>🗺 Maps</a>
-                      {r.specialite && <button onClick={() => toast(`⭐ ${r.specialite}`, 'success')} style={{ flex: 1, padding: '11px 0', background: 'var(--foret)', color: 'var(--creme)', border: 'none', borderRadius: '12px', fontSize: '13px', fontWeight: 700, cursor: 'pointer' }}>⭐ {en ? 'Specialty' : 'Spécialité'}</button>}
-                    </div>
-                    <SourceLine item={r} />
-                  </div>
-                </div>
-              ))}
+                )
+              })}
             </div>
             {restosFiltres.length > visibleRestos && (
               <div style={{ textAlign: 'center', marginTop: 18 }}>
