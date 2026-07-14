@@ -6,6 +6,7 @@ import { getDomainSEO } from '@/lib/domain'
 import { buildMetadata, buildArticleSchema, buildBreadcrumbSchema, buildFAQSchema } from '@/lib/seo'
 import JsonLd from '@/components/seo/JsonLd'
 import AppCTA from '@/components/ui/AppCTA'
+import EmailCapture from '@/components/ui/EmailCapture'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -102,6 +103,10 @@ export default async function GuidePage({ params }: Props) {
             </div>
           </section>
         ) : null}
+
+        <div className="mt-12">
+          <EmailCapture compact source="guide" />
+        </div>
 
         <div className="mt-16">
           <AppCTA />

@@ -23,7 +23,7 @@ export default function EbookButton({ ville }: { ville: any }) {
     try {
       await fetch('/api/waitlist', {
         method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, source: 'ebook', city: ville.slug }),
+        body: JSON.stringify({ email, source: 'ebook', city: ville.slug, lang: brand === 'GoHalalTravel' ? 'en' : 'fr' }),
       }).catch(() => {})
       await generateEbook(ville, brand, siteUrl)
       setStatus('done'); setMsg('✅ Téléchargement lancé ! Bon voyage 🤲')

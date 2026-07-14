@@ -33,7 +33,7 @@ export default function EmailCapture({
       const res = await fetch('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, source }),
+        body: JSON.stringify({ email, source, lang }),
       })
       const data = await res.json()
       if (res.ok) {

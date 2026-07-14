@@ -38,7 +38,7 @@ export default function ApplicationPage() {
       const res = await fetch('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, source: 'application', lang }),
       })
       const data = await res.json()
 
