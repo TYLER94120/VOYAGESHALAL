@@ -7,7 +7,37 @@ import { getPosition, describeGeoError, type GeoError, type GeoErrorCode } from 
 
 
 type Cat = 'mosquees' | 'restaurants' | 'hotels' | 'boucheries' | 'activites' | 'spots'
-interface Spot { id: number | string; lat: number; lng: number; name: string; sub?: string; dist: number; halal?: 'only' | 'yes' | 'likely' }
+interface Spot {
+  id: number | string; lat: number; lng: number; name: string; sub?: string; dist: number
+  halal?: 'only' | 'yes' | 'likely'
+  // Attributs pour les filtres (issus des données réelles quand disponibles)
+  price?: string; sansAlcool?: boolean; sallePriere?: boolean; famille?: boolean
+}
+
+// Filtres d'attributs (P4) — appliqués sur la liste courante, pastilles honnêtes
+interface Filters { halal: boolean; sansAlcool: boolean; sallePriere: boolean; famille: boolean; price: '' | '€' | '€€' | '€€€' }
+const NO_FILTERS: Filters = { halal: false, sansAlcool: false, sallePriere: false, famille: false, price: '' }
+function applyFilters(list: Spot[], f: Filters): Spot[] {
+  return list.filter((s) =>
+    (!f.halal || s.halal === 'yes' || s.halal === 'only') &&
+    (!f.sansAlcool || s.sansAlcool === true) &&
+    (!f.sallePriere || s.sallePriere === true) &&
+    (!f.famille || s.famille === true) &&
+    (!f.price || (s.price ?? '').startsWith(f.price) && (s.price ?? '').length === f.price.length)
+  )
+}
+// Filtres pertinents par catégorie (on ne montre que ceux que les données portent)
+const FILTERS_BY_CAT: Partial<Record<Cat, (keyof Omit<Filters, 'price'>)[]>> = {
+  restaurants: ['halal', 'famille'],
+  hotels: ['sansAlcool', 'sallePriere', 'famille'],
+  activites: ['famille'],
+}
+const FILTER_LABEL: Record<keyof Omit<Filters, 'price'>, string> = {
+  halal: '✓ Signalé halal',
+  sansAlcool: '🚫 Sans alcool',
+  sallePriere: '🕌 Salle de prière',
+  famille: '👨‍👩‍👧 Adapté familles',
+}
 
 // Fusionne les points pré-chargés (instantanés) et les points live OSM en
 // dédoublonnant par nom + proximité (< 80 m) : on garde ainsi le meilleur des deux.
@@ -63,6 +93,9 @@ export default function AutourDeMoiPage() {
   const [loading, setLoading] = useState(true)
   const [geoErr, setGeoErr] = useState<GeoError | null>(null)
   const [selected, setSelected] = useState<number | string | null>(null)
+  const [filters, setFilters] = useState<Filters>(NO_FILTERS)
+  const filtersRef = useRef<Filters>(NO_FILTERS)
+  const allRef = useRef<Spot[]>([]) // liste non filtrée de la catégorie courante
   const [q, setQ] = useState('')
   const [searching, setSearching] = useState(false)
   const mapRef = useRef<LeafletMap | null>(null)
@@ -122,7 +155,7 @@ export default function AutourDeMoiPage() {
   }, [paint])
 
   // Dessine la liste de points sur la carte (remplace les marqueurs existants)
-  const render = useCallback((list: Spot[], c: Cat) => {
+  const paintList = useCallback((list: Spot[], c: Cat) => {
     setSpots(list)
     const L = LRef.current
     if (!L || !mapRef.current) return
@@ -134,6 +167,21 @@ export default function AutourDeMoiPage() {
       markersRef.current.push({ id: s.id, marker: mk })
     })
   }, [select])
+
+  // render = mémorise la liste brute puis peint la version FILTRÉE (P4)
+  const render = useCallback((list: Spot[], c: Cat) => {
+    allRef.current = list
+    paintList(applyFilters(list, filtersRef.current), c)
+  }, [paintList])
+
+  // Changement de filtre → re-peint la liste courante (marqueurs + cartes)
+  const setFilter = useCallback((patch: Partial<Filters>) => {
+    const next = { ...filtersRef.current, ...patch }
+    filtersRef.current = next
+    setFilters(next)
+    paintList(applyFilters(allRef.current, next), cat)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [paintList, cat])
 
   const search = useCallback(async (lat: number, lng: number, c: Cat) => {
     setSelected(null)
@@ -215,13 +263,21 @@ export default function AutourDeMoiPage() {
       const j = await res.json()
       const s = j.spots || {}
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const toSpot = (o: any, c: Cat): Spot => ({
-        id: `${c[0]}-${o.nom}-${o.lat}`,
-        lat: o.lat, lng: o.lng, name: o.nom,
-        dist: (o.distanceKm ?? 0) * 1000,
-        sub: c === 'restaurants' ? (o.type || 'Restaurant') : c === 'hotels' ? (o.categorie || o.priceRange || 'Hôtel') : c === 'mosquees' ? (o.adresse || 'Lieu de prière') : (o.categorie || 'À faire'),
-        halal: c === 'restaurants' ? (o.certificationHalal || o.halalConfidence === 'certified' || o.halalConfidence === 'high' ? 'yes' : 'likely') : undefined,
-      })
+      const toSpot = (o: any, c: Cat): Spot => {
+        const tags = [...(Array.isArray(o.tags) ? o.tags : []), ...(Array.isArray(o.idealPour) ? o.idealPour : [])].join(' ').toLowerCase()
+        return {
+          id: `${c[0]}-${o.nom}-${o.lat}`,
+          lat: o.lat, lng: o.lng, name: o.nom,
+          dist: (o.distanceKm ?? 0) * 1000,
+          sub: c === 'restaurants' ? (o.type || 'Restaurant') : c === 'hotels' ? (o.categorie || o.priceRange || 'Hôtel') : c === 'mosquees' ? (o.adresse || 'Lieu de prière') : (o.categorie || 'À faire'),
+          halal: c === 'restaurants' ? (o.certificationHalal || o.halalConfidence === 'certified' || o.halalConfidence === 'high' ? 'yes' : 'likely') : undefined,
+          // Attributs filtres (P4) — uniquement quand la donnée existe vraiment
+          price: o.priceRange || o.fourchette_prix || undefined,
+          sansAlcool: o.sansAlcool === true || o.sans_alcool === true || undefined,
+          sallePriere: o.salleDePreiere === true || o.salle_de_priere === true || undefined,
+          famille: tags.includes('famille') || tags.includes('familles') || undefined,
+        }
+      }
       const pre: Partial<Record<Cat, Spot[]>> = {}
       for (const c of ['restaurants', 'hotels', 'activites', 'mosquees'] as Cat[]) {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -242,6 +298,9 @@ export default function AutourDeMoiPage() {
   }, [pos])
 
   useEffect(() => {
+    // Nouvelle catégorie → filtres remis à zéro (ils sont contextuels)
+    filtersRef.current = NO_FILTERS
+    setFilters(NO_FILTERS)
     if (pos) search(pos.lat, pos.lng, cat)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cat])
@@ -331,6 +390,34 @@ export default function AutourDeMoiPage() {
         })}
       </div>
 
+      {/* Filtres d'attributs contextuels (P4) — n'apparaissent que si la
+          catégorie porte ces données. « Signalé halal », jamais « certifié ». */}
+      {(FILTERS_BY_CAT[cat]?.length || cat === 'restaurants' || cat === 'hotels') && (
+        <div style={{ display: 'flex', gap: 6, padding: '8px 14px 0', overflowX: 'auto', alignItems: 'center' }}>
+          <span style={{ fontSize: 12, color: 'var(--texte-2)', fontWeight: 700, flexShrink: 0 }}>Filtres :</span>
+          {(FILTERS_BY_CAT[cat] ?? []).map((k) => {
+            const on = filters[k]
+            return (
+              <button key={k} onClick={() => setFilter({ [k]: !on } as Partial<Filters>)}
+                aria-pressed={on}
+                style={{ flexShrink: 0, padding: '6px 12px', borderRadius: 30, border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.2)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--texte-2)', fontWeight: 700, fontSize: 12.5, cursor: 'pointer', whiteSpace: 'nowrap' }}>
+                {FILTER_LABEL[k]}
+              </button>
+            )
+          })}
+          {(cat === 'restaurants' || cat === 'hotels') && (['€', '€€', '€€€'] as const).map((p) => {
+            const on = filters.price === p
+            return (
+              <button key={p} onClick={() => setFilter({ price: on ? '' : p })}
+                aria-pressed={on}
+                style={{ flexShrink: 0, padding: '6px 12px', borderRadius: 30, border: `1.5px solid ${on ? 'var(--foret)' : 'rgba(27,67,50,0.2)'}`, background: on ? 'var(--foret)' : '#fff', color: on ? '#fff' : 'var(--texte-2)', fontWeight: 700, fontSize: 12.5, cursor: 'pointer' }}>
+                {p}
+              </button>
+            )
+          })}
+        </div>
+      )}
+
       <div style={{ padding: '10px 14px 90px', display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: 12 }}>
         {spots.map((s, i) => (
           <div key={s.id} onClick={() => select(s, true)}
@@ -341,14 +428,26 @@ export default function AutourDeMoiPage() {
                 {s.name}{i === 0 && <span style={{ marginLeft: 6, background: SELECTED_GOLD, color: '#0B1A0F', fontSize: 10, fontWeight: 800, borderRadius: 10, padding: '1px 7px' }}>la + proche</span>}
               </p>
               <p style={{ fontSize: 12.5, color: 'var(--texte-2)', margin: '2px 0 0', textTransform: 'capitalize' }}>
-                {s.halal === 'likely' ? '≈ halal à vérifier · ' : s.halal ? '✓ halal · ' : ''}{s.sub} · <strong style={{ color: 'var(--foret)' }}>{fmt(s.dist)}</strong>
+                {s.halal === 'likely' ? '≈ halal à vérifier · ' : s.halal ? '✓ signalé halal · ' : ''}{s.sub} · <strong style={{ color: 'var(--foret)' }}>{fmt(s.dist)}</strong>
               </p>
+              {(s.sansAlcool || s.sallePriere || s.famille || s.price) && (
+                <p style={{ margin: '4px 0 0', display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+                  {s.sansAlcool && <span style={{ fontSize: 10.5, fontWeight: 700, background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', borderRadius: 10, padding: '2px 8px' }}>🚫 sans alcool</span>}
+                  {s.sallePriere && <span style={{ fontSize: 10.5, fontWeight: 700, background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', borderRadius: 10, padding: '2px 8px' }}>🕌 salle de prière</span>}
+                  {s.famille && <span style={{ fontSize: 10.5, fontWeight: 700, background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', borderRadius: 10, padding: '2px 8px' }}>👨‍👩‍👧 familles</span>}
+                  {s.price && <span style={{ fontSize: 10.5, fontWeight: 700, background: 'rgba(27,67,50,0.08)', color: 'var(--foret)', borderRadius: 10, padding: '2px 8px' }}>{s.price}</span>}
+                </p>
+              )}
             </div>
-            <a href={`https://maps.google.com/?q=${s.lat},${s.lng}&travelmode=walking`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ flexShrink: 0, background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 13, borderRadius: 10, padding: '9px 12px', textDecoration: 'none' }}>Y aller ›</a>
+            <a href={`https://www.google.com/maps/dir/?api=1&destination=${s.lat},${s.lng}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} style={{ flexShrink: 0, background: 'var(--foret)', color: '#fff', fontWeight: 700, fontSize: 13, borderRadius: 10, padding: '9px 12px', textDecoration: 'none' }} aria-label={`Itinéraire Google Maps vers ${s.name}`}>🧭 Itinéraire</a>
           </div>
         ))}
         {!loading && !geoErr && spots.length === 0 && (
-          <p style={{ gridColumn: '1/-1', textAlign: 'center', color: 'var(--texte-2)', padding: 20 }}>Rien trouvé dans cette zone. Déplace la carte puis « Rechercher dans cette zone ».</p>
+          <p style={{ gridColumn: '1/-1', textAlign: 'center', color: 'var(--texte-2)', padding: 20 }}>
+            {allRef.current.length > 0
+              ? 'Aucun lieu ne correspond à ces filtres ici — retire un filtre ou élargis la zone.'
+              : 'Rien trouvé dans cette zone. Déplace la carte puis « Rechercher dans cette zone ».'}
+          </p>
         )}
       </div>
     </main>
