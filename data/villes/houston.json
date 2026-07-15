@@ -28,7 +28,7 @@
  },
  "image_alt": "Vue de Houston, États-Unis",
  "statistiques": {
-  "mosquees": 2,
+  "mosquees": 8,
   "restaurants_halal": 17,
   "habitants_musulmans_pct": 8,
   "hotels": 84
@@ -1696,6 +1696,65 @@
    "adresse": "Hillcroft Avenue, Houston",
    "mapsUrl": "https://maps.google.com/?q=29.722096,-95.4999141",
    "source": "osm"
+  },
+  {
+   "id": "osm-260789761",
+   "nom": "Islamic Da'wah Center",
+   "type": "mosquee",
+   "adresse": "Travis Street, Houston",
+   "lat": 29.762962,
+   "lng": -95.3605815,
+   "mapsUrl": "https://maps.google.com/?q=29.762962,-95.3605815",
+   "source": "osm"
+  },
+  {
+   "id": "osm-493297860",
+   "nom": "Madrasah Islamiah Masjid Noor",
+   "type": "mosquee",
+   "adresse": "Bintliff Drive, Houston",
+   "lat": 29.7071981,
+   "lng": -95.5048381,
+   "mapsUrl": "https://maps.google.com/?q=29.7071981,-95.5048381",
+   "source": "osm"
+  },
+  {
+   "id": "osm-520283786",
+   "nom": "Islamic Society of Greater Houston",
+   "type": "mosquee",
+   "adresse": "Eastside Street, Houston",
+   "lat": 29.7368871,
+   "lng": -95.4250552,
+   "mapsUrl": "https://maps.google.com/?q=29.7368871,-95.4250552",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1411236118",
+   "nom": "Kalkan Masjid Houston",
+   "type": "mosquee",
+   "adresse": "Lazy Hollow Drive, Houston",
+   "lat": 29.7377657,
+   "lng": -95.5174069,
+   "mapsUrl": "https://maps.google.com/?q=29.7377657,-95.5174069",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1414024242",
+   "nom": "Masjid",
+   "type": "mosquee",
+   "lat": 29.6775566,
+   "lng": -95.3973955,
+   "mapsUrl": "https://maps.google.com/?q=29.6775566,-95.3973955",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1447830521",
+   "nom": "Ismaili Center Houston",
+   "type": "mosquee",
+   "adresse": "Allen Parkway Frontage Road, Houston",
+   "lat": 29.7591137,
+   "lng": -95.3917866,
+   "mapsUrl": "https://maps.google.com/?q=29.7591137,-95.3917866",
+   "source": "osm"
   }
  ],
  "tags": [
@@ -1718,5 +1777,6 @@
   "nourriture_halal": "Largement disponible",
   "alcool": "Available"
  },
- "dataPurgedAt": "2026-07-15"
+ "dataPurgedAt": "2026-07-15",
+ "osmEnrichedAt": "2026-07-15"
 }

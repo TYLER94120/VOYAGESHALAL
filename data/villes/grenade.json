@@ -28,7 +28,7 @@
  },
  "image_alt": "Vue de Grenade, Espagne",
  "statistiques": {
-  "mosquees": 0,
+  "mosquees": 2,
   "restaurants_halal": 36,
   "habitants_musulmans_pct": 5,
   "hotels": 116
@@ -2172,7 +2172,28 @@
    "source": "osm"
   }
  ],
- "mosqueesPrincipales": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "osm-197142196",
+   "nom": "Mezquita de Granada",
+   "type": "mosquee",
+   "adresse": "Plaza Mirador de San Nicolás, Granada",
+   "lat": 37.1814112,
+   "lng": -3.5920365,
+   "mapsUrl": "https://maps.google.com/?q=37.1814112,-3.5920365",
+   "source": "osm"
+  },
+  {
+   "id": "osm-618389583",
+   "nom": "Mezquita de la Vega",
+   "type": "mosquee",
+   "adresse": "Camino de la Viñuela",
+   "lat": 37.2139187,
+   "lng": -3.6813166,
+   "mapsUrl": "https://maps.google.com/?q=37.2139187,-3.6813166",
+   "source": "osm"
+  }
+ ],
  "tags": [
   "al-andalus",
   "alhambra",
@@ -2210,5 +2231,6 @@
   "nourriture_halal": "Largement disponible",
   "alcool": "Available"
  },
- "dataPurgedAt": "2026-07-15"
+ "dataPurgedAt": "2026-07-15",
+ "osmEnrichedAt": "2026-07-15"
 }
