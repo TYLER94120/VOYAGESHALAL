@@ -28,7 +28,7 @@
  },
  "image_alt": "Vue de Rome, Italie",
  "statistiques": {
-  "mosquees": 5,
+  "mosquees": 6,
   "restaurants_halal": 91,
   "habitants_musulmans_pct": 5,
   "hotels": 119
@@ -2651,6 +2651,15 @@
    "adresse": "Via dell'Airone, Roma",
    "mapsUrl": "https://maps.google.com/?q=41.866293,12.5954433",
    "source": "osm"
+  },
+  {
+   "id": "osm-23949600",
+   "nom": "Moschea di Roma",
+   "type": "mosquee",
+   "lat": 41.9353678,
+   "lng": 12.4948727,
+   "mapsUrl": "https://maps.google.com/?q=41.9353678,12.4948727",
+   "source": "osm"
   }
  ],
  "tags": [
@@ -2682,5 +2691,6 @@
   "nourriture_halal": "Largement disponible",
   "alcool": "Available"
  },
- "dataPurgedAt": "2026-07-15"
+ "dataPurgedAt": "2026-07-15",
+ "osmEnrichedAt": "2026-07-15"
 }
