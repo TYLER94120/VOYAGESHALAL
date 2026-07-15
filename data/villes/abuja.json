@@ -1,685 +1,703 @@
 {
-  "slug": "abuja",
-  "nom": "Abuja",
-  "pays": "Nigéria",
-  "pays_slug": "nigeria",
-  "continent": "Afrique",
-  "region": "Nigéria",
-  "coordonnees": {
-    "lat": 9.0765,
-    "lng": 7.3986
+ "slug": "abuja",
+ "nom": "Abuja",
+ "pays": "Nigéria",
+ "pays_slug": "nigeria",
+ "continent": "Afrique",
+ "region": "Nigéria",
+ "coordonnees": {
+  "lat": 9.0765,
+  "lng": 7.3986
+ },
+ "codeISO": "NG",
+ "score_halal": 3.2,
+ "halalScore": 6.4,
+ "description": "Abuja, Nigéria. Repérez les restaurants halal et les mosquées via l'application.",
+ "metaDescription": "Abuja, Nigéria. Repérez les restaurants halal et les mosquées via l'application.",
+ "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/View_of_Abuja_from_Katampe_hill_01.jpg/1920px-View_of_Abuja_from_Katampe_hill_01.jpg",
+ "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/View_of_Abuja_from_Katampe_hill_01.jpg/1920px-View_of_Abuja_from_Katampe_hill_01.jpg",
+ "imageCredit": "Wikimedia Commons",
+ "scoreIndicatif": true,
+ "statistiques": {
+  "restaurants_halal": 3,
+  "mosquees": 9,
+  "hotels": 37
+ },
+ "infoPratique": {
+  "transport": "Accessible par avion et transports locaux.",
+  "meilleureEpoque": "Selon la saison.",
+  "conseilHalal": "Repérez restaurants halal et mosquées via l'application."
+ },
+ "tags": [
+  "halal",
+  "afrique"
+ ],
+ "restaurants": [
+  {
+   "nom": "Shagalinku",
+   "type": "chicken, local dishes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0454066,7.5014889",
+   "lat": 9.0454066,
+   "lng": 7.5014889,
+   "halalConfidence": "yes",
+   "source": "osm"
   },
-  "codeISO": "NG",
-  "score_halal": 3.2,
-  "halalScore": 6.4,
-  "description": "Abuja, Nigéria. Repérez les restaurants halal et les mosquées via l'application.",
-  "metaDescription": "Abuja, Nigéria. Repérez les restaurants halal et les mosquées via l'application.",
-  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/View_of_Abuja_from_Katampe_hill_01.jpg/1920px-View_of_Abuja_from_Katampe_hill_01.jpg",
-  "image_hero": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/View_of_Abuja_from_Katampe_hill_01.jpg/1920px-View_of_Abuja_from_Katampe_hill_01.jpg",
-  "imageCredit": "Wikimedia Commons",
-  "scoreIndicatif": true,
-  "statistiques": {
-    "restaurants_halal": 3,
-    "mosquees": 7,
-    "hotels": 37
+  {
+   "nom": "New Yorker",
+   "type": "lebanese, pizza, burger",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0850293,7.4894896",
+   "lat": 9.0850293,
+   "lng": 7.4894896,
+   "halalConfidence": "likely",
+   "source": "osm"
   },
-  "infoPratique": {
-    "transport": "Accessible par avion et transports locaux.",
-    "meilleureEpoque": "Selon la saison.",
-    "conseilHalal": "Repérez restaurants halal et mosquées via l'application."
+  {
+   "nom": "Cilantro",
+   "type": "indian, lebanese",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0988484,7.4901994",
+   "lat": 9.0988484,
+   "lng": 7.4901994,
+   "halalConfidence": "likely",
+   "source": "osm"
+  }
+ ],
+ "hotels": [
+  {
+   "nom": "Capital Lake Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0697926,7.4141984",
+   "lat": 9.0697926,
+   "lng": 7.4141984,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0697926,7.4141984",
+   "source": "osm"
   },
-  "tags": [
-    "halal",
-    "afrique"
-  ],
-  "restaurants": [
-    {
-      "nom": "Shagalinku",
-      "type": "chicken, local dishes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0454066,7.5014889",
-      "lat": 9.0454066,
-      "lng": 7.5014889,
-      "halalConfidence": "yes",
-      "source": "osm"
-    },
-    {
-      "nom": "New Yorker",
-      "type": "lebanese, pizza, burger",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0850293,7.4894896",
-      "lat": 9.0850293,
-      "lng": 7.4894896,
-      "halalConfidence": "likely",
-      "source": "osm"
-    },
-    {
-      "nom": "Cilantro",
-      "type": "indian, lebanese",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0988484,7.4901994",
-      "lat": 9.0988484,
-      "lng": 7.4901994,
-      "halalConfidence": "likely",
-      "source": "osm"
-    }
-  ],
-  "hotels": [
-    {
-      "nom": "Capital Lake Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0697926,7.4141984",
-      "lat": 9.0697926,
-      "lng": 7.4141984,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0697926,7.4141984",
-      "source": "osm"
-    },
-    {
-      "nom": "Lake Crescent Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.069577,7.4248918",
-      "lat": 9.069577,
-      "lng": 7.4248918,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.069577,7.4248918",
-      "source": "osm"
-    },
-    {
-      "nom": "Kriscane Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.1037412,7.4052058",
-      "lat": 9.1037412,
-      "lng": 7.4052058,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.1037412,7.4052058",
-      "source": "osm"
-    },
-    {
-      "nom": "Madugu. Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0648349,7.4265988",
-      "lat": 9.0648349,
-      "lng": 7.4265988,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0648349,7.4265988",
-      "source": "osm"
-    },
-    {
-      "nom": "The Nordic Villa Residence",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "score": 2,
-      "mapsUrl": "https://maps.google.com/?q=9.071225,7.4299545",
-      "lat": 9.071225,
-      "lng": 7.4299545,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.071225,7.4299545",
-      "source": "osm"
-    },
-    {
-      "nom": "Lenne Suite",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0685837,7.4301308",
-      "lat": 9.0685837,
-      "lng": 7.4301308,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0685837,7.4301308",
-      "source": "osm"
-    },
-    {
-      "nom": "The Nordic Villa",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0719253,7.4313724",
-      "lat": 9.0719253,
-      "lng": 7.4313724,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0719253,7.4313724",
-      "source": "osm"
-    },
-    {
-      "nom": "Alpha-Plus Apartments 91",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0727692,7.4322025",
-      "lat": 9.0727692,
-      "lng": 7.4322025,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.aa91.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Sandralia Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0747851,7.4337381",
-      "lat": 9.0747851,
-      "lng": 7.4337381,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.sandraliahotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "3J's",
-      "categorie": "Hôtel",
-      "priceRange": "€€€",
-      "score": 3,
-      "mapsUrl": "https://maps.google.com/?q=9.0735419,7.4347804",
-      "lat": 9.0735419,
-      "lng": 7.4347804,
-      "halalFriendly": false,
-      "bookingUrl": "https://3jshotels.com.ng/",
-      "source": "osm"
-    },
-    {
-      "nom": "Chida International Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0716946,7.4346062",
-      "lat": 9.0716946,
-      "lng": 7.4346062,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0716946,7.4346062",
-      "source": "osm"
-    },
-    {
-      "nom": "别墅🏡余总",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.039514,7.4074472",
-      "lat": 9.039514,
-      "lng": 7.4074472,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.039514,7.4074472",
-      "source": "osm"
-    },
-    {
-      "nom": "Nordic Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0802178,7.4374072",
-      "lat": 9.0802178,
-      "lng": 7.4374072,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0802178,7.4374072",
-      "source": "osm"
-    },
-    {
-      "nom": "ACCOMODATION WING",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0866047,7.4374859",
-      "lat": 9.0866047,
-      "lng": 7.4374859,
-      "halalFriendly": false,
-      "bookingUrl": "drc.ubec.go.ng",
-      "source": "osm"
-    },
-    {
-      "nom": "Kanem Suites",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.068205,7.4395691",
-      "lat": 9.068205,
-      "lng": 7.4395691,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.068205,7.4395691",
-      "source": "osm"
-    },
-    {
-      "nom": "G Guest House",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.1172,7.3848449",
-      "lat": 9.1172,
-      "lng": 7.3848449,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.1172,7.3848449",
-      "source": "osm"
-    },
-    {
-      "nom": "G.Obreiel Apartments",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0576538,7.4396229",
-      "lat": 9.0576538,
-      "lng": 7.4396229,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.gobrielapartments.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Exclusive Serene Hotel & Suite",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.054863,7.4385056",
-      "lat": 9.054863,
-      "lng": 7.4385056,
-      "halalFriendly": false,
-      "bookingUrl": "https://exclusiveserenehotel.com/",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel De Bently",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0606989,7.4444969",
-      "lat": 9.0606989,
-      "lng": 7.4444969,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0606989,7.4444969",
-      "source": "osm"
-    },
-    {
-      "nom": "Kunduli's house",
-      "categorie": "Maison d'hôtes",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0474798,7.4497029",
-      "lat": 9.0474798,
-      "lng": 7.4497029,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0474798,7.4497029",
-      "source": "osm"
-    },
-    {
-      "nom": "Tou Adam NG",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.1278803,7.4294424",
-      "lat": 9.1278803,
-      "lng": 7.4294424,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.1278803,7.4294424",
-      "source": "osm"
-    },
-    {
-      "nom": "The Destination by Gidanka",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0808422,7.4622068",
-      "lat": 9.0808422,
-      "lng": 7.4622068,
-      "halalFriendly": false,
-      "bookingUrl": "http://www.thedestinationabuja.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Beverly Hills Holidays and Resort",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0767745,7.4623939",
-      "lat": 9.0767745,
-      "lng": 7.4623939,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0767745,7.4623939",
-      "source": "osm"
-    },
-    {
-      "nom": "Sawami Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0181774,7.4228829",
-      "lat": 9.0181774,
-      "lng": 7.4228829,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0181774,7.4228829",
-      "source": "osm"
-    },
-    {
-      "nom": "Golden Gate",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0669617,7.4627269",
-      "lat": 9.0669617,
-      "lng": 7.4627269,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0669617,7.4627269",
-      "source": "osm"
-    },
-    {
-      "nom": "Dennis hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0798811,7.4638875",
-      "lat": 9.0798811,
-      "lng": 7.4638875,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0798811,7.4638875",
-      "source": "osm"
-    },
-    {
-      "nom": "1st 40 Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0810264,7.4646736",
-      "lat": 9.0810264,
-      "lng": 7.4646736,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0810264,7.4646736",
-      "source": "osm"
-    },
-    {
-      "nom": "Promel Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0763761,7.4661582",
-      "lat": 9.0763761,
-      "lng": 7.4661582,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0763761,7.4661582",
-      "source": "osm"
-    },
-    {
-      "nom": "Grandlux Apartments",
-      "categorie": "Appartement",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0943255,7.4683691",
-      "lat": 9.0943255,
-      "lng": 7.4683691,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0943255,7.4683691",
-      "source": "osm"
-    },
-    {
-      "nom": "Bjorne Suites Ltd",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0717561,7.4716154",
-      "lat": 9.0717561,
-      "lng": 7.4716154,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0717561,7.4716154",
-      "source": "osm"
-    },
-    {
-      "nom": "The Dome",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0456978,7.4650562",
-      "lat": 9.0456978,
-      "lng": 7.4650562,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0456978,7.4650562",
-      "source": "osm"
-    },
-    {
-      "nom": "Chesbury Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0641294,7.471939",
-      "lat": 9.0641294,
-      "lng": 7.471939,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0641294,7.471939",
-      "source": "osm"
-    },
-    {
-      "nom": "Plush Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0681819,7.4725324",
-      "lat": 9.0681819,
-      "lng": 7.4725324,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.plushhotelng.com",
-      "source": "osm"
-    },
-    {
-      "nom": "Protea Hotel Abuja",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0936108,7.4765452",
-      "lat": 9.0936108,
-      "lng": 7.4765452,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.0936108,7.4765452",
-      "source": "osm"
-    },
-    {
-      "nom": "Hotel Reno",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.1019629,7.4746093",
-      "lat": 9.1019629,
-      "lng": 7.4746093,
-      "halalFriendly": false,
-      "bookingUrl": "https://maps.google.com/?q=9.1019629,7.4746093",
-      "source": "osm"
-    },
-    {
-      "nom": "Fraser Suites",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0543,7.4773246",
-      "lat": 9.0543,
-      "lng": 7.4773246,
-      "halalFriendly": false,
-      "bookingUrl": "https://www.frasershospitality.com/en/nigeria/abuja/fraser-suites-abuja/",
-      "source": "osm"
-    },
-    {
-      "nom": "Commodore Hotel",
-      "categorie": "Hôtel",
-      "priceRange": "€€",
-      "mapsUrl": "https://maps.google.com/?q=9.0824697,7.4803337",
-      "lat": 9.0824697,
-      "lng": 7.4803337,
-      "halalFriendly": false,
-      "bookingUrl": "https://commodorehotels.com/",
-      "source": "osm"
-    }
-  ],
-  "mosqueesPrincipales": [
-    {
-      "id": "m942258565",
-      "nom": "Da`awa musul",
-      "type": "Mosquée",
-      "adresse": "",
-      "description": "Lieu de prière (OpenStreetMap).",
-      "mapsUrl": "https://maps.google.com/?q=9.0167448,7.4223185",
-      "lat": 9.0167448,
-      "lng": 7.4223185,
-      "source": "osm"
-    },
-    {
-      "id": "m944876066",
-      "nom": "Kuchigoro Mosque",
-      "type": "Mosquée",
-      "adresse": "",
-      "description": "Lieu de prière (OpenStreetMap).",
-      "mapsUrl": "https://maps.google.com/?q=9.0160912,7.4208215",
-      "lat": 9.0160912,
-      "lng": 7.4208215,
-      "source": "osm"
-    },
-    {
-      "id": "m1085895661",
-      "nom": "Fouad Lababidi Mosque",
-      "type": "Mosquée",
-      "adresse": "",
-      "description": "Lieu de prière (OpenStreetMap).",
-      "mapsUrl": "https://maps.google.com/?q=9.0596339,7.4675616",
-      "lat": 9.0596339,
-      "lng": 7.4675616,
-      "source": "osm"
-    },
-    {
-      "id": "m199223405",
-      "nom": "katampe local mosque",
-      "type": "Mosquée",
-      "adresse": "",
-      "description": "Lieu de prière (OpenStreetMap).",
-      "mapsUrl": "https://maps.google.com/?q=9.0994159,7.4717992",
-      "lat": 9.0994159,
-      "lng": 7.4717992,
-      "source": "osm"
-    },
-    {
-      "id": "m176918845",
-      "nom": "Al-Nour Mosque",
-      "type": "Mosquée",
-      "adresse": "Ibrahim Babangida way",
-      "description": "Lieu de prière (OpenStreetMap).",
-      "mapsUrl": "https://maps.google.com/?q=9.0753194,7.484272",
-      "lat": 9.0753194,
-      "lng": 7.484272,
-      "source": "osm"
-    },
-    {
-      "id": "m9280432978",
-      "nom": "Yoruba Mosque",
-      "type": "Mosquée",
-      "adresse": "",
-      "description": "Lieu de prière (OpenStreetMap).",
-      "mapsUrl": "https://maps.google.com/?q=8.9945755,7.4284686",
-      "lat": 8.9945755,
-      "lng": 7.4284686,
-      "source": "osm"
-    },
-    {
-      "id": "m188837229",
-      "nom": "Abuja National Mosque",
-      "type": "Mosquée",
-      "adresse": "Central Area, Abuja",
-      "description": "Lieu de prière (OpenStreetMap).",
-      "mapsUrl": "https://maps.google.com/?q=9.0601964,7.4897944",
-      "lat": 9.0601964,
-      "lng": 7.4897944,
-      "source": "osm"
-    }
-  ],
-  "activites": [
-    {
-      "id": "a6068313289",
-      "nom": "Thought Pyramid Art Centre",
-      "categorie": "museum",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=9.0762515,7.460468",
-      "lat": 9.0762515,
-      "lng": 7.460468,
-      "source": "osm"
-    },
-    {
-      "id": "a421676471",
-      "nom": "Magicland Amusement Park",
-      "categorie": "theme park",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=9.0427974,7.4518368",
-      "lat": 9.0427974,
-      "lng": 7.4518368,
-      "source": "osm"
-    },
-    {
-      "id": "a563951535",
-      "nom": "Abuja City Gate",
-      "categorie": "monument",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=9.0356984,7.4486201",
-      "lat": 9.0356984,
-      "lng": 7.4486201,
-      "source": "osm"
-    },
-    {
-      "id": "a1494246846",
-      "nom": "Sarki Palace, Dutsen Alhaji",
-      "categorie": "castle",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=9.1396012,7.371673",
-      "lat": 9.1396012,
-      "lng": 7.371673,
-      "source": "osm"
-    },
-    {
-      "id": "a11127484226",
-      "nom": "Emab Garden",
-      "categorie": "park",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=9.0855066,7.4704326",
-      "lat": 9.0855066,
-      "lng": 7.4704326,
-      "source": "osm"
-    },
-    {
-      "id": "a6050639685",
-      "nom": "Esu Palace",
-      "categorie": "attraction",
-      "description": "",
-      "prix": "",
-      "duree": "",
-      "mapsUrl": "https://maps.google.com/?q=9.1434852,7.3728117",
-      "lat": 9.1434852,
-      "lng": 7.3728117,
-      "source": "osm"
-    },
-    {
-      "nom": "obelisk",
-      "lat": 9.0748814,
-      "lng": 7.4955988,
-      "coordonnees": {
-        "lat": 9.0748814,
-        "lng": 7.4955988
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=9.0748814,7.4955988",
-      "source": "osm"
-    },
-    {
-      "nom": "Riverpark Estate Gate",
-      "lat": 8.9704779,
-      "lng": 7.3507669,
-      "coordonnees": {
-        "lat": 8.9704779,
-        "lng": 7.3507669
-      },
-      "categorie": "Histoire",
-      "mapsUrl": "https://maps.google.com/?q=8.9704779,7.3507669",
-      "source": "osm"
-    },
-    {
-      "nom": "National Park and Zoo",
-      "lat": 9.0807378,
-      "lng": 7.5250229,
-      "coordonnees": {
-        "lat": 9.0807378,
-        "lng": 7.5250229
-      },
-      "categorie": "Nature",
-      "mapsUrl": "https://maps.google.com/?q=9.0807378,7.5250229",
-      "source": "osm"
-    },
-    {
-      "nom": "State traffic Dept\"motopol\"FCT Abuja Nigeria",
-      "lat": 8.9860583,
-      "lng": 7.5027283,
-      "coordonnees": {
-        "lat": 8.9860583,
-        "lng": 7.5027283
-      },
-      "categorie": "À voir",
-      "mapsUrl": "https://maps.google.com/?q=8.9860583,7.5027283",
-      "source": "osm"
-    }
-  ],
-  "villeNonMusulmane": true,
-  "osmEnriched": true,
-  "osmEnrichedAt": "2026-06-30",
-  "description_en": "Abuja may not be a Muslim-majority destination, but it welcomes Muslim travelers with real halal options. You'll find 3 halal restaurants and 7 mosques nearby, plus real-time prayer times and the Qibla direction — everything to explore Abuja, Nigeria, with peace of mind.",
-  "metaDescription_en": "Halal guide to Abuja: 3 halal restaurants listed, 7 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.2/5.",
-  "nom_en": "Abuja"
+  {
+   "nom": "Lake Crescent Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.069577,7.4248918",
+   "lat": 9.069577,
+   "lng": 7.4248918,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.069577,7.4248918",
+   "source": "osm"
+  },
+  {
+   "nom": "Kriscane Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.1037412,7.4052058",
+   "lat": 9.1037412,
+   "lng": 7.4052058,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.1037412,7.4052058",
+   "source": "osm"
+  },
+  {
+   "nom": "Madugu. Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0648349,7.4265988",
+   "lat": 9.0648349,
+   "lng": 7.4265988,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0648349,7.4265988",
+   "source": "osm"
+  },
+  {
+   "nom": "The Nordic Villa Residence",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "score": 2,
+   "mapsUrl": "https://maps.google.com/?q=9.071225,7.4299545",
+   "lat": 9.071225,
+   "lng": 7.4299545,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.071225,7.4299545",
+   "source": "osm"
+  },
+  {
+   "nom": "Lenne Suite",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0685837,7.4301308",
+   "lat": 9.0685837,
+   "lng": 7.4301308,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0685837,7.4301308",
+   "source": "osm"
+  },
+  {
+   "nom": "The Nordic Villa",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0719253,7.4313724",
+   "lat": 9.0719253,
+   "lng": 7.4313724,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0719253,7.4313724",
+   "source": "osm"
+  },
+  {
+   "nom": "Alpha-Plus Apartments 91",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0727692,7.4322025",
+   "lat": 9.0727692,
+   "lng": 7.4322025,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.aa91.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Sandralia Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0747851,7.4337381",
+   "lat": 9.0747851,
+   "lng": 7.4337381,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.sandraliahotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "3J's",
+   "categorie": "Hôtel",
+   "priceRange": "€€€",
+   "score": 3,
+   "mapsUrl": "https://maps.google.com/?q=9.0735419,7.4347804",
+   "lat": 9.0735419,
+   "lng": 7.4347804,
+   "halalFriendly": false,
+   "bookingUrl": "https://3jshotels.com.ng/",
+   "source": "osm"
+  },
+  {
+   "nom": "Chida International Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0716946,7.4346062",
+   "lat": 9.0716946,
+   "lng": 7.4346062,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0716946,7.4346062",
+   "source": "osm"
+  },
+  {
+   "nom": "别墅🏡余总",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.039514,7.4074472",
+   "lat": 9.039514,
+   "lng": 7.4074472,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.039514,7.4074472",
+   "source": "osm"
+  },
+  {
+   "nom": "Nordic Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0802178,7.4374072",
+   "lat": 9.0802178,
+   "lng": 7.4374072,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0802178,7.4374072",
+   "source": "osm"
+  },
+  {
+   "nom": "ACCOMODATION WING",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0866047,7.4374859",
+   "lat": 9.0866047,
+   "lng": 7.4374859,
+   "halalFriendly": false,
+   "bookingUrl": "drc.ubec.go.ng",
+   "source": "osm"
+  },
+  {
+   "nom": "Kanem Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.068205,7.4395691",
+   "lat": 9.068205,
+   "lng": 7.4395691,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.068205,7.4395691",
+   "source": "osm"
+  },
+  {
+   "nom": "G Guest House",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.1172,7.3848449",
+   "lat": 9.1172,
+   "lng": 7.3848449,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.1172,7.3848449",
+   "source": "osm"
+  },
+  {
+   "nom": "G.Obreiel Apartments",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0576538,7.4396229",
+   "lat": 9.0576538,
+   "lng": 7.4396229,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.gobrielapartments.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Exclusive Serene Hotel & Suite",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.054863,7.4385056",
+   "lat": 9.054863,
+   "lng": 7.4385056,
+   "halalFriendly": false,
+   "bookingUrl": "https://exclusiveserenehotel.com/",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel De Bently",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0606989,7.4444969",
+   "lat": 9.0606989,
+   "lng": 7.4444969,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0606989,7.4444969",
+   "source": "osm"
+  },
+  {
+   "nom": "Kunduli's house",
+   "categorie": "Maison d'hôtes",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0474798,7.4497029",
+   "lat": 9.0474798,
+   "lng": 7.4497029,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0474798,7.4497029",
+   "source": "osm"
+  },
+  {
+   "nom": "Tou Adam NG",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.1278803,7.4294424",
+   "lat": 9.1278803,
+   "lng": 7.4294424,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.1278803,7.4294424",
+   "source": "osm"
+  },
+  {
+   "nom": "The Destination by Gidanka",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0808422,7.4622068",
+   "lat": 9.0808422,
+   "lng": 7.4622068,
+   "halalFriendly": false,
+   "bookingUrl": "http://www.thedestinationabuja.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Beverly Hills Holidays and Resort",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0767745,7.4623939",
+   "lat": 9.0767745,
+   "lng": 7.4623939,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0767745,7.4623939",
+   "source": "osm"
+  },
+  {
+   "nom": "Sawami Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0181774,7.4228829",
+   "lat": 9.0181774,
+   "lng": 7.4228829,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0181774,7.4228829",
+   "source": "osm"
+  },
+  {
+   "nom": "Golden Gate",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0669617,7.4627269",
+   "lat": 9.0669617,
+   "lng": 7.4627269,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0669617,7.4627269",
+   "source": "osm"
+  },
+  {
+   "nom": "Dennis hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0798811,7.4638875",
+   "lat": 9.0798811,
+   "lng": 7.4638875,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0798811,7.4638875",
+   "source": "osm"
+  },
+  {
+   "nom": "1st 40 Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0810264,7.4646736",
+   "lat": 9.0810264,
+   "lng": 7.4646736,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0810264,7.4646736",
+   "source": "osm"
+  },
+  {
+   "nom": "Promel Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0763761,7.4661582",
+   "lat": 9.0763761,
+   "lng": 7.4661582,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0763761,7.4661582",
+   "source": "osm"
+  },
+  {
+   "nom": "Grandlux Apartments",
+   "categorie": "Appartement",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0943255,7.4683691",
+   "lat": 9.0943255,
+   "lng": 7.4683691,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0943255,7.4683691",
+   "source": "osm"
+  },
+  {
+   "nom": "Bjorne Suites Ltd",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0717561,7.4716154",
+   "lat": 9.0717561,
+   "lng": 7.4716154,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0717561,7.4716154",
+   "source": "osm"
+  },
+  {
+   "nom": "The Dome",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0456978,7.4650562",
+   "lat": 9.0456978,
+   "lng": 7.4650562,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0456978,7.4650562",
+   "source": "osm"
+  },
+  {
+   "nom": "Chesbury Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0641294,7.471939",
+   "lat": 9.0641294,
+   "lng": 7.471939,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0641294,7.471939",
+   "source": "osm"
+  },
+  {
+   "nom": "Plush Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0681819,7.4725324",
+   "lat": 9.0681819,
+   "lng": 7.4725324,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.plushhotelng.com",
+   "source": "osm"
+  },
+  {
+   "nom": "Protea Hotel Abuja",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0936108,7.4765452",
+   "lat": 9.0936108,
+   "lng": 7.4765452,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.0936108,7.4765452",
+   "source": "osm"
+  },
+  {
+   "nom": "Hotel Reno",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.1019629,7.4746093",
+   "lat": 9.1019629,
+   "lng": 7.4746093,
+   "halalFriendly": false,
+   "bookingUrl": "https://maps.google.com/?q=9.1019629,7.4746093",
+   "source": "osm"
+  },
+  {
+   "nom": "Fraser Suites",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0543,7.4773246",
+   "lat": 9.0543,
+   "lng": 7.4773246,
+   "halalFriendly": false,
+   "bookingUrl": "https://www.frasershospitality.com/en/nigeria/abuja/fraser-suites-abuja/",
+   "source": "osm"
+  },
+  {
+   "nom": "Commodore Hotel",
+   "categorie": "Hôtel",
+   "priceRange": "€€",
+   "mapsUrl": "https://maps.google.com/?q=9.0824697,7.4803337",
+   "lat": 9.0824697,
+   "lng": 7.4803337,
+   "halalFriendly": false,
+   "bookingUrl": "https://commodorehotels.com/",
+   "source": "osm"
+  }
+ ],
+ "mosqueesPrincipales": [
+  {
+   "id": "m942258565",
+   "nom": "Da`awa musul",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=9.0167448,7.4223185",
+   "lat": 9.0167448,
+   "lng": 7.4223185,
+   "source": "osm"
+  },
+  {
+   "id": "m944876066",
+   "nom": "Kuchigoro Mosque",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=9.0160912,7.4208215",
+   "lat": 9.0160912,
+   "lng": 7.4208215,
+   "source": "osm"
+  },
+  {
+   "id": "m1085895661",
+   "nom": "Fouad Lababidi Mosque",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=9.0596339,7.4675616",
+   "lat": 9.0596339,
+   "lng": 7.4675616,
+   "source": "osm"
+  },
+  {
+   "id": "m199223405",
+   "nom": "katampe local mosque",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=9.0994159,7.4717992",
+   "lat": 9.0994159,
+   "lng": 7.4717992,
+   "source": "osm"
+  },
+  {
+   "id": "m176918845",
+   "nom": "Al-Nour Mosque",
+   "type": "Mosquée",
+   "adresse": "Ibrahim Babangida way",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=9.0753194,7.484272",
+   "lat": 9.0753194,
+   "lng": 7.484272,
+   "source": "osm"
+  },
+  {
+   "id": "m9280432978",
+   "nom": "Yoruba Mosque",
+   "type": "Mosquée",
+   "adresse": "",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=8.9945755,7.4284686",
+   "lat": 8.9945755,
+   "lng": 7.4284686,
+   "source": "osm"
+  },
+  {
+   "id": "m188837229",
+   "nom": "Abuja National Mosque",
+   "type": "Mosquée",
+   "adresse": "Central Area, Abuja",
+   "description": "Lieu de prière (OpenStreetMap).",
+   "mapsUrl": "https://maps.google.com/?q=9.0601964,7.4897944",
+   "lat": 9.0601964,
+   "lng": 7.4897944,
+   "source": "osm"
+  },
+  {
+   "id": "osm-1035579954",
+   "nom": "Tradmore jummat Mosque",
+   "type": "mosquee",
+   "lat": 8.9574543,
+   "lng": 7.3702119,
+   "mapsUrl": "https://maps.google.com/?q=8.9574543,7.3702119",
+   "source": "osm"
+  },
+  {
+   "id": "osm-1122738884",
+   "nom": "Area 11 Jummat Mosque",
+   "type": "mosquee",
+   "lat": 9.0456722,
+   "lng": 7.50209,
+   "mapsUrl": "https://maps.google.com/?q=9.0456722,7.50209",
+   "source": "osm"
+  }
+ ],
+ "activites": [
+  {
+   "id": "a6068313289",
+   "nom": "Thought Pyramid Art Centre",
+   "categorie": "museum",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=9.0762515,7.460468",
+   "lat": 9.0762515,
+   "lng": 7.460468,
+   "source": "osm"
+  },
+  {
+   "id": "a421676471",
+   "nom": "Magicland Amusement Park",
+   "categorie": "theme park",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=9.0427974,7.4518368",
+   "lat": 9.0427974,
+   "lng": 7.4518368,
+   "source": "osm"
+  },
+  {
+   "id": "a563951535",
+   "nom": "Abuja City Gate",
+   "categorie": "monument",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=9.0356984,7.4486201",
+   "lat": 9.0356984,
+   "lng": 7.4486201,
+   "source": "osm"
+  },
+  {
+   "id": "a1494246846",
+   "nom": "Sarki Palace, Dutsen Alhaji",
+   "categorie": "castle",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=9.1396012,7.371673",
+   "lat": 9.1396012,
+   "lng": 7.371673,
+   "source": "osm"
+  },
+  {
+   "id": "a11127484226",
+   "nom": "Emab Garden",
+   "categorie": "park",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=9.0855066,7.4704326",
+   "lat": 9.0855066,
+   "lng": 7.4704326,
+   "source": "osm"
+  },
+  {
+   "id": "a6050639685",
+   "nom": "Esu Palace",
+   "categorie": "attraction",
+   "description": "",
+   "prix": "",
+   "duree": "",
+   "mapsUrl": "https://maps.google.com/?q=9.1434852,7.3728117",
+   "lat": 9.1434852,
+   "lng": 7.3728117,
+   "source": "osm"
+  },
+  {
+   "nom": "obelisk",
+   "lat": 9.0748814,
+   "lng": 7.4955988,
+   "coordonnees": {
+    "lat": 9.0748814,
+    "lng": 7.4955988
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=9.0748814,7.4955988",
+   "source": "osm"
+  },
+  {
+   "nom": "Riverpark Estate Gate",
+   "lat": 8.9704779,
+   "lng": 7.3507669,
+   "coordonnees": {
+    "lat": 8.9704779,
+    "lng": 7.3507669
+   },
+   "categorie": "Histoire",
+   "mapsUrl": "https://maps.google.com/?q=8.9704779,7.3507669",
+   "source": "osm"
+  },
+  {
+   "nom": "National Park and Zoo",
+   "lat": 9.0807378,
+   "lng": 7.5250229,
+   "coordonnees": {
+    "lat": 9.0807378,
+    "lng": 7.5250229
+   },
+   "categorie": "Nature",
+   "mapsUrl": "https://maps.google.com/?q=9.0807378,7.5250229",
+   "source": "osm"
+  },
+  {
+   "nom": "State traffic Dept\"motopol\"FCT Abuja Nigeria",
+   "lat": 8.9860583,
+   "lng": 7.5027283,
+   "coordonnees": {
+    "lat": 8.9860583,
+    "lng": 7.5027283
+   },
+   "categorie": "À voir",
+   "mapsUrl": "https://maps.google.com/?q=8.9860583,7.5027283",
+   "source": "osm"
+  }
+ ],
+ "villeNonMusulmane": true,
+ "osmEnriched": true,
+ "osmEnrichedAt": "2026-07-15",
+ "description_en": "Abuja may not be a Muslim-majority destination, but it welcomes Muslim travelers with real halal options. You'll find 3 halal restaurants and 7 mosques nearby, plus real-time prayer times and the Qibla direction — everything to explore Abuja, Nigeria, with peace of mind.",
+ "metaDescription_en": "Halal guide to Abuja: 3 halal restaurants listed, 7 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 3.2/5.",
+ "nom_en": "Abuja"
 }
