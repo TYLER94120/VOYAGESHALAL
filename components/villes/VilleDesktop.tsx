@@ -15,13 +15,21 @@ import { coordsOf, type LatLng } from '@/lib/hotelFilter'
 import FavButton from '@/components/ui/FavButton'
 import { favId } from '@/lib/favorites'
 
+// Sections guidées (refonte « Netflix » des fiches) — libellés orientés usage
 const TABS = [
-  { id: 'mosquees', icon: '🕌', label: 'Mosquées', labelEn: 'Mosques' },
-  { id: 'restaurants', icon: '🍽', label: 'Restaurants', labelEn: 'Restaurants' },
-  { id: 'hotels', icon: '🏨', label: 'Hôtels', labelEn: 'Hotels' },
-  { id: 'activites', icon: '🎯', label: 'À faire', labelEn: 'To do' },
-  { id: 'pratique', icon: 'ℹ️', label: 'Pratique', labelEn: 'Practical' },
+  { id: 'restaurants', icon: '🍽', label: 'Où manger', labelEn: 'Where to eat' },
+  { id: 'mosquees', icon: '🕌', label: 'Où prier', labelEn: 'Where to pray' },
+  { id: 'hotels', icon: '🏨', label: 'Où dormir', labelEn: 'Where to stay' },
+  { id: 'activites', icon: '🎯', label: 'Que faire', labelEn: 'What to do' },
+  { id: 'pratique', icon: '💡', label: 'Bon à savoir', labelEn: 'Good to know' },
 ]
+
+// Lieu « curé » = données RÉELLES suffisantes pour une vraie profondeur
+// (description rédigée non-OSM). Sinon → longue traîne honnête, jamais inventée.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function isCurated(r: any): boolean {
+  return Boolean(r?.description && String(r.description).length >= 25 && r?.source !== 'osm')
+}
 
 const CATEGORY_EMOJI: Record<string, string> = {
   'Traditionnel local': '🍜', Marocain: '🫕', 'Libanais & Levant': '🥙',
@@ -51,6 +59,9 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const [visibleRestos, setVisibleRestos] = useState(20)
   // Correctif UX : filtre « signalé halal uniquement » (masque les « à vérifier »)
   const [halalOnly, setHalalOnly] = useState(false)
+  // Vue détail des lieux CURÉS (profondeur réelle) — null = fermée
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [detail, setDetail] = useState<{ kind: 'resto' | 'mosquee' | 'activite'; item: any } | null>(null)
   const toast = useToast()
   const contentRef = useRef<HTMLDivElement>(null)
   const { lang } = useLanguage()
@@ -106,6 +117,28 @@ export default function VilleDesktop({ ville }: { ville: any }) {
   const present = new Set(restaurants.map((r: any) => cuisineCategory(r.type)))
   const categories = ['Tous', ...CATEGORY_ORDER.filter((c) => present.has(c))]
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // ── Curation « Netflix » : profondeur réelle uniquement, zéro invention ──
+  const normName = (s: string) => String(s).normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().trim()
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const curatedRestos = restaurants.filter(isCurated).sort((a: any, b: any) => Number(b.score ?? 0) - Number(a.score ?? 0))
+  // Coups de cœur = incontournables des sélections premium (si présents) puis meilleurs curés
+  const premiumNames = new Set(((ville.selectionsPremium?.incontournables ?? []) as string[]).map(normName))
+  const coupsDeCoeur = [
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    ...curatedRestos.filter((r: any) => premiumNames.has(normName(r.nom))),
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    ...curatedRestos.filter((r: any) => !premiumNames.has(normName(r.nom))),
+  ].slice(0, 10)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const actsRiches = activites.filter((a: any) => a.description && String(a.description).length >= 25)
+  // Incontournables mixtes (top 6) : 3 restos curés + mosquée iconique + 2 activités phares
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const incontournables: { kind: 'resto' | 'mosquee' | 'activite'; item: any }[] = [
+    ...coupsDeCoeur.slice(0, 3).map((r: unknown) => ({ kind: 'resto' as const, item: r })),
+    ...(mosquees[0] ? [{ kind: 'mosquee' as const, item: mosquees[0] }] : []),
+    ...actsRiches.slice(0, 2).map((a: unknown) => ({ kind: 'activite' as const, item: a })),
+  ]
+
   const restosParCat = activeFilter === 'Tous' ? restaurants : restaurants.filter((r: any) => cuisineCategory(r.type) === activeFilter)
   // « Signalé halal » = pas marqué « à vérifier » (halalConfidence 'likely')
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -182,14 +215,139 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         </div>
       </div>
 
+      {/* 🔥 Les incontournables — top mixte CURÉ (profondeur réelle), scroll horizontal */}
+      {incontournables.length >= 3 && (
+        <section style={{ maxWidth: WRAP, margin: '0 auto', padding: '26px 24px 0' }}>
+          <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 24, fontWeight: 900, color: 'var(--nuit)', margin: '0 0 12px' }}>
+            🔥 {en ? `The essentials of ${ville.nom}` : `Les incontournables de ${ville.nom}`}
+          </h2>
+          <div style={{ display: 'flex', gap: 12, overflowX: 'auto', paddingBottom: 8, scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch' }}>
+            {incontournables.map(({ kind, item }, i) => {
+              const cat = kind === 'resto' ? cuisineCategory(item.type) : ''
+              const [g1, g2] = kind === 'resto' ? (CATEGORY_GRADIENT[cat] ?? DEFAULT_GRADIENT) : kind === 'mosquee' ? ['#0b1a0f', '#2d6a4f'] : ['#312e81', '#6d28d9']
+              const emoji = kind === 'resto' ? (CATEGORY_EMOJI[cat] ?? '🍽') : kind === 'mosquee' ? '🕌' : '🎯'
+              return (
+                <button key={`${kind}-${i}`} onClick={() => setDetail({ kind, item })}
+                  style={{ width: 250, minWidth: 250, scrollSnapAlign: 'start', textAlign: 'left', background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, overflow: 'hidden', cursor: 'pointer', padding: 0, boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
+                  <div style={{ height: 84, background: `linear-gradient(120deg, ${g1} 0%, ${g2} 130%)`, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+                    <IslamicPattern opacity={0.1} />
+                    <span style={{ fontSize: 34, position: 'relative', filter: 'drop-shadow(0 3px 6px rgba(0,0,0,0.35))' }}>{emoji}</span>
+                  </div>
+                  <div style={{ padding: '11px 13px 13px' }}>
+                    <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 16, color: 'var(--texte)', margin: 0, lineHeight: 1.15 }}>{item.nom}</p>
+                    <p style={{ fontSize: 12, color: 'var(--texte-2)', margin: '3px 0 0', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                      {item.description || item.specialite || ''}
+                    </p>
+                    <p style={{ fontSize: 12, color: 'var(--foret)', fontWeight: 700, margin: '7px 0 0' }}>{en ? 'See details →' : 'Voir le détail →'}</p>
+                  </div>
+                </button>
+              )
+            })}
+          </div>
+        </section>
+      )}
+
+      {/* Vue DÉTAIL des lieux curés — n'affiche QUE les champs réellement présents */}
+      {detail && (
+        <div onClick={() => setDetail(null)} style={{ position: 'fixed', inset: 0, zIndex: 200, background: 'rgba(11,26,15,0.6)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 16 }}>
+          <div onClick={(e) => e.stopPropagation()} style={{ background: '#fdfaf3', borderRadius: 22, maxWidth: 460, width: '100%', maxHeight: '86vh', overflowY: 'auto', position: 'relative' }}>
+            {(() => {
+              const it = detail.item
+              const cat = detail.kind === 'resto' ? cuisineCategory(it.type) : ''
+              const [g1, g2] = detail.kind === 'resto' ? (CATEGORY_GRADIENT[cat] ?? DEFAULT_GRADIENT) : detail.kind === 'mosquee' ? ['#0b1a0f', '#2d6a4f'] : ['#312e81', '#6d28d9']
+              const tags = (Array.isArray(it.tags) ? it.tags : []).join(' ').toLowerCase()
+              const pill = { background: 'rgba(27,67,50,0.07)', color: 'var(--foret)', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 10px' } as const
+              return (
+                <>
+                  <div style={{ height: 110, background: `linear-gradient(120deg, ${g1} 0%, ${g2} 130%)`, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+                    <IslamicPattern opacity={0.1} />
+                    <span style={{ fontSize: 44, position: 'relative', filter: 'drop-shadow(0 3px 6px rgba(0,0,0,0.35))' }}>{detail.kind === 'resto' ? (CATEGORY_EMOJI[cat] ?? '🍽') : detail.kind === 'mosquee' ? '🕌' : '🎯'}</span>
+                    <button onClick={() => setDetail(null)} aria-label={en ? 'Close' : 'Fermer'} style={{ position: 'absolute', top: 10, right: 12, background: 'rgba(255,255,255,0.9)', border: 'none', borderRadius: 20, width: 30, height: 30, cursor: 'pointer', fontSize: 15 }}>✕</button>
+                  </div>
+                  <div style={{ padding: '16px 20px 20px' }}>
+                    <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>
+                      <h3 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 800, fontSize: 22, color: 'var(--nuit)', margin: 0 }}>{it.nom}</h3>
+                      <FavButton size={17} fav={{ id: favId(detail.kind === 'resto' ? 'resto' : detail.kind === 'mosquee' ? 'mosquee' : 'activite', ville.slug ?? ville.nom, it.nom), kind: detail.kind === 'resto' ? 'resto' : detail.kind === 'mosquee' ? 'mosquee' : 'activite', nom: it.nom, villeNom: ville.nom, href: `/destinations/${ville.slug ?? ''}` }} />
+                    </div>
+                    <p style={{ fontSize: 12.5, color: 'var(--texte-2)', margin: '2px 0 10px' }}>
+                      {detail.kind === 'resto' ? enLabel(cat, en) : detail.kind === 'mosquee' ? (en ? 'Mosque' : 'Mosquée') : (it.categorie || (en ? 'Activity' : 'Activité'))}
+                      {(it.duree || it.prix) && <> · {[it.duree, it.prix].filter(Boolean).join(' · ')}</>}
+                    </p>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 9, flexWrap: 'wrap', marginBottom: 10 }}>
+                      {detail.kind === 'resto' && (it.halalConfidence === 'likely'
+                        ? <span style={{ background: 'rgba(201,168,76,0.18)', color: '#8A6D1E', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 10px' }}>≈ {en ? 'Halal common · verify' : 'Halal courant · à vérifier'}</span>
+                        : <span style={{ background: 'var(--halal-bg)', color: 'var(--halal-tx)', fontSize: 11, fontWeight: 700, borderRadius: 20, padding: '3px 10px' }}>✓ Halal</span>)}
+                      {(it.score ?? it.note) != null && <span style={{ fontSize: 13, color: '#B8860B', fontWeight: 700 }}>★ {it.score ?? it.note}</span>}
+                      {(it.priceRange ?? it.fourchette_prix) && <span style={{ fontSize: 12, color: 'var(--texte-2)' }}>{it.priceRange ?? it.fourchette_prix}</span>}
+                    </div>
+                    {it.description && <p style={{ fontSize: 14, color: 'var(--texte)', lineHeight: 1.65, margin: '0 0 10px' }}>{it.description}</p>}
+                    {it.specialite && !(it.description && String(it.description).toLowerCase().includes(String(it.specialite).toLowerCase().slice(0, 24))) && (
+                      <p style={{ fontSize: 13.5, color: 'var(--foret)', margin: '0 0 8px' }}>⭐ <strong>{en ? 'Why go:' : 'Pourquoi y aller :'}</strong> {it.specialite}</p>
+                    )}
+                    {it.conseil && <p style={{ fontSize: 13.5, color: '#1a6b3c', margin: '0 0 8px' }}>💡 {it.conseil}</p>}
+                    {it.adresse && it.adresse !== ville.nom && <p style={{ fontSize: 13, color: 'var(--texte-2)', margin: '0 0 10px' }}>📍 {it.adresse}</p>}
+                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 14 }}>
+                      {(tags.includes('famille') || tags.includes('familles') || tags.includes('familial')) && <span style={pill}>👨‍👩‍👧 {en ? 'family-friendly' : 'adapté familles'}</span>}
+                      {(tags.includes('sans alcool') || it.sansAlcool === true || it.sans_alcool === true) && <span style={pill}>🚫 {en ? 'alcohol-free' : 'sans alcool'}</span>}
+                      {(tags.includes('salle de prière') || tags.includes('salle de priere')) && <span style={pill}>🕌 {en ? 'prayer room' : 'salle de prière'}</span>}
+                      {it.ouvertureRamadan === true && <span style={pill}>🌙 {en ? 'open during Ramadan' : 'ouvert pendant le Ramadan'}</span>}
+                    </div>
+                    {it.mapsUrl && (
+                      <a href={it.mapsUrl} target="_blank" rel="noopener noreferrer" style={{ display: 'block', padding: '12px 0', background: 'var(--foret)', color: '#fff', borderRadius: 12, textAlign: 'center', fontSize: 14, fontWeight: 700, textDecoration: 'none' }}>
+                        🗺 {en ? 'Maps / Directions' : 'Maps / Itinéraire'}
+                      </a>
+                    )}
+                    <SourceLine item={it} />
+                  </div>
+                </>
+              )
+            })()}
+          </div>
+        </div>
+      )}
+
       {/* PARTIE BAS (claire) — contenu de l'onglet sélectionné */}
       <div ref={contentRef} style={{ maxWidth: WRAP, margin: '0 auto', padding: '28px 24px 80px', scrollMarginTop: '12px' }}>
         {displayTab === 'restaurants' && (
           <>
+            {/* 🍽️ Coups de cœur (profondeur réelle) puis toutes les adresses */}
+            {coupsDeCoeur.length >= 3 && (
+              <div style={{ marginBottom: 26 }}>
+                <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '24px', fontWeight: 900, color: 'var(--nuit)', margin: '0 0 12px' }}>
+                  🍽️ {en ? 'Where to eat — our picks' : 'Où manger — coups de cœur'}
+                </h2>
+                <div style={{ display: 'flex', gap: 12, overflowX: 'auto', paddingBottom: 8, scrollSnapType: 'x mandatory', WebkitOverflowScrolling: 'touch' }}>
+                  {coupsDeCoeur.map((r: any, i: number) => {
+                    const ccat = cuisineCategory(r.type)
+                    const [g1, g2] = CATEGORY_GRADIENT[ccat] ?? DEFAULT_GRADIENT
+                    return (
+                      <button key={i} onClick={() => setDetail({ kind: 'resto', item: r })}
+                        style={{ width: 240, minWidth: 240, scrollSnapAlign: 'start', textAlign: 'left', background: '#fff', border: '1px solid rgba(27,67,50,0.1)', borderRadius: 18, overflow: 'hidden', cursor: 'pointer', padding: 0, boxShadow: '0 6px 20px rgba(11,26,15,0.06)' }}>
+                        <div style={{ height: 74, background: `linear-gradient(120deg, ${g1} 0%, ${g2} 130%)`, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+                          <IslamicPattern opacity={0.1} />
+                          <span style={{ fontSize: 30, position: 'relative', filter: 'drop-shadow(0 3px 6px rgba(0,0,0,0.35))' }}>{CATEGORY_EMOJI[ccat] ?? '🍽'}</span>
+                        </div>
+                        <div style={{ padding: '10px 13px 12px' }}>
+                          <p style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15.5, color: 'var(--texte)', margin: 0, lineHeight: 1.15 }}>{r.nom}</p>
+                          <p style={{ fontSize: 11.5, color: 'var(--texte-2)', margin: '3px 0 0', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{r.description || r.specialite}</p>
+                          <p style={{ fontSize: 11.5, color: 'var(--foret)', fontWeight: 700, margin: '6px 0 0' }}>
+                            {(r.score ?? r.note) != null && <>★ {r.score ?? r.note} · </>}{en ? 'See details →' : 'Voir le détail →'}
+                          </p>
+                        </div>
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
             {restaurants.length > 0 && (
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '16px' }}>
-              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '26px', fontWeight: 900, color: 'var(--nuit)' }}>{en ? 'Halal restaurants' : 'Restaurants halal'}</h2>
-              <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} {en ? 'listings' : 'adresses'}</span>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '22px', fontWeight: 900, color: 'var(--nuit)' }}>
+                {coupsDeCoeur.length >= 3
+                  ? (en ? `All listings (${restosFiltres.length})` : `Toutes les adresses (${restosFiltres.length})`)
+                  : (en ? 'Halal restaurants' : 'Restaurants halal')}
+              </h2>
+              {coupsDeCoeur.length < 3 && <span style={{ fontSize: '13px', color: 'var(--texte-2)' }}>{restosFiltres.length} {en ? 'listings' : 'adresses'}</span>}
             </div>
             )}
             {/* filtres catégories en pills */}
@@ -315,8 +473,11 @@ export default function VilleDesktop({ ville }: { ville: any }) {
         {displayTab === 'mosquees' && mosquees.length > 0 && (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: 8 }}>
-              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '24px', fontWeight: 900, color: 'var(--nuit)', margin: 0 }}>{en ? <>Mosques in {ville.nom}</> : <>Mosquées à {ville.nom}</>}</h2>
-              <a href="/mosquee-proche" style={{ fontSize: '13px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>📍 Autour de moi (GPS) →</a>
+              <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: '24px', fontWeight: 900, color: 'var(--nuit)', margin: 0 }}>🕌 {en ? <>Where to pray in {ville.nom}</> : <>Où prier à {ville.nom}</>}</h2>
+              <span style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
+                <a href={`/priere/${ville.slug ?? ''}`} style={{ fontSize: '13px', fontWeight: 700, color: '#6b21a8', textDecoration: 'none' }}>🧭 {en ? 'Prayer spots →' : 'Coins prière →'}</a>
+                <a href="/mosquee-proche" style={{ fontSize: '13px', fontWeight: 700, color: 'var(--foret)', textDecoration: 'none' }}>📍 {en ? 'Around me (GPS) →' : 'Autour de moi (GPS) →'}</a>
+              </span>
             </div>
             {mosquees.map((m: any, i: number) => (
               <div key={i} style={card}>
