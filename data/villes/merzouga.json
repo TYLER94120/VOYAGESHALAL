@@ -20,7 +20,7 @@
  "langue": "Arabe, Tamazight, Français",
  "statistiques": {
   "restaurants_halal": 4,
-  "mosquees": 0,
+  "mosquees": 2,
   "hotels": 76
  },
  "infoPratique": {
@@ -913,7 +913,26 @@
    "source": "osm"
   }
  ],
- "mosqueesPrincipales": [],
+ "mosqueesPrincipales": [
+  {
+   "id": "osm-125239775",
+   "nom": "Mosquée de Merzouga",
+   "type": "mosquee",
+   "lat": 31.0981537,
+   "lng": -4.0148056,
+   "mapsUrl": "https://maps.google.com/?q=31.0981537,-4.0148056",
+   "source": "osm"
+  },
+  {
+   "id": "osm-600747355",
+   "nom": "Mosquee Tighmert",
+   "type": "mosquee",
+   "lat": 31.2241773,
+   "lng": -3.9823486,
+   "mapsUrl": "https://maps.google.com/?q=31.2241773,-3.9823486",
+   "source": "osm"
+  }
+ ],
  "activites": [
   {
    "nom": "Grand Dune View Point",
@@ -1014,7 +1033,7 @@
  ],
  "imageCredit": "Wikimedia Commons",
  "osmEnriched": true,
- "osmEnrichedAt": "2026-06-30",
+ "osmEnrichedAt": "2026-07-15",
  "description_en": "Merzouga, in Morocco, is a halal-friendly destination with a Halal Trust Score of 4.7/5. Muslim travelers will find 4 halal restaurants listed, 1 mosques, real-time prayer times and the Qibla direction — a complete guide to travel with peace of mind.",
  "metaDescription_en": "Halal guide to Merzouga: 4 halal restaurants listed, 1 mosques, prayer times and tips for Muslim travelers. Halal Trust Score 4.7/5.",
  "nom_en": "Merzouga",
