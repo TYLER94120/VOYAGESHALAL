@@ -57,8 +57,23 @@ function flush(label) {
   } catch (e) { console.log('  (commit ignoré)', String(e).slice(0, 60)) }
 }
 
+// Villes PRIORITAIRES (grandes destinations + Maroc, Turquie, Golfe, Égypte,
+// Malaisie, France, Espagne, Indonésie) — bakées en premier.
+const PRIORITY = [
+  'istanbul','dubai','marrakech','la-mecque','medine','kuala-lumpur','le-caire','paris','londres','singapour',
+  'casablanca','rabat','fes','tanger','agadir','oujda','berkane','meknes','essaouira','chefchaouen',
+  'antalya','ankara','izmir','bursa','trabzon','cappadoce','konya','gaziantep',
+  'abu-dhabi','doha','riyadh','jeddah','mascate','manama','koweit-city','sharjah',
+  'alexandrie','louxor','hurghada','charm-el-cheikh',
+  'penang','langkawi','johor-bahru','malacca',
+  'marseille','lyon','lille','toulouse','strasbourg','nice',
+  'barcelone','madrid','grenade','cordoue','seville','valence',
+  'jakarta','bali','bandung','yogyakarta','lombok','surabaya',
+]
 async function main() {
-  const files = readdirSync(VDIR).filter((f) => f.endsWith('.json'))
+  const all = readdirSync(VDIR).filter((f) => f.endsWith('.json'))
+  const prio = PRIORITY.map((s2) => `${s2}.json`).filter((f) => all.includes(f))
+  const files = [...prio, ...all.filter((f) => !prio.includes(f))]
   let done = 0, added = 0
   for (const f of files) {
     if (requests >= MAX_REQUESTS) { console.log('Budget de requêtes atteint — reprendre au prochain run.'); break }
